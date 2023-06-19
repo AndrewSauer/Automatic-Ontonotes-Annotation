@@ -1,0 +1,570 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" Annabel Lee " is the last complete poem composed by American author Edgar Allan Poe .
+
+
+Treebanked sentence:
+--------------------
+" Annabel Lee " is the last complete poem composed by American author Edgar Allan Poe . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (`` ") (NNP Annabel) (NNP Lee) ('' "))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ last) (JJ complete) (NN poem))
+        (VP (VBN composed)
+          (PP (IN by)
+            (NP
+              (NML (JJ American) (NN author))
+              (NNP Edgar) (NNP Allan) (NNP Poe))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	Annabel
+			coref:	IDENT			2	1-2	Annabel Lee 
+			name:	PERSON				1-2	Annabel Lee 
+	2	Lee
+	3	"
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	" Annabel Lee " 
+			N-ARG-A2		5-15	the last complete poem composed by American author Edgar Allan Poe 
+	5	the
+	6	last
+			sense:	last.a.02
+	7	complete
+			sense:	complete.a.01
+	8	poem
+			sense:	poem.n.01
+	9	composed
+			sense:	write.v.01
+			prop:	compose.02
+			V		9-9	composed 
+			N-ARG-A1		5-8	the last complete poem 
+			N-ARG-A0		10-15	by American author Edgar Allan Poe 
+	10	by
+	11	American
+			name:	NATIONALITY				11-11	American 
+	12	author
+			name:	TITLE				12-12	author 
+			sense:	writer.n.01
+	13	Edgar
+			name:	PERSON				13-15	Edgar Allan Poe 
+	14	Allan
+	15	Poe
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Like many of Poe 's poems , it explores the theme of the death of a beautiful woman .
+
+
+Treebanked sentence:
+--------------------
+Like many of Poe 's poems , it explores the theme of the death of a beautiful woman . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Like)
+      (NP
+        (NP (JJ many))
+        (PP (IN of)
+          (NP
+            (NP (NNP Poe) (POS 's))
+            (NNS poems)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ explores)
+      (NP
+        (NP (DT the) (NN theme))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN death))
+            (PP (IN of)
+              (NP (DT a) (JJ beautiful) (NN woman)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Like
+	1	many
+			sense:	many.a.01
+	2	of
+	3	Poe
+			name:	PERSON				3-3	Poe 
+	4	's
+	5	poems
+			sense:	poem.n.01
+	6	,
+	7	it
+	8	explores
+			sense:	research.v.02
+			prop:	explore.01
+			V		8-8	explores 
+			N-ARGM-MNR		0-5	Like many of Poe 's poems 
+			N-ARG-A0		7-7	it 
+			N-ARG-A1		9-17	the theme of the death of a beautiful woman 
+	9	the
+	10	theme
+			sense:	theme.n.02
+	11	of
+	12	the
+	13	death
+			sense:	death.n.01
+	14	of
+	15	a
+	16	beautiful
+			sense:	beautiful.a.01
+	17	woman
+			sense:	woman.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The narrator , who fell in love with Annabel Lee when they were young , has a love for her so strong that even angels are envious .
+
+
+Treebanked sentence:
+--------------------
+The narrator , who fell in love with Annabel Lee when they were young , has a love for her so strong that even angels are envious . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN narrator))
+      (, ,)
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBD fell)
+            (PP (IN in)
+              (NP (NN love)))
+            (PP (IN with)
+              (NP (NNP Annabel) (NNP Lee)))
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (PRP they))
+                (VP (VBD were)
+                  (ADJP (JJ young))))))))
+      (, ,))
+    (VP (VBZ has)
+      (NP
+        (NP (DT a) (NN love))
+        (PP (IN for)
+          (NP (PRP$ her)
+            (ADJP
+              (ADJP (RB so) (JJ strong))
+              (SBAR (IN that)
+                (S
+                  (NP (RB even) (NNS angels))
+                  (VP (VBP are)
+                    (ADJP (JJ envious))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-13	The narrator , who fell in love with Annabel Lee when they were young 
+	1	narrator
+			name:	TITLE				1-1	narrator 
+			sense:	narrator.n.01
+	2	,
+	3	who
+	4	fell
+			sense:	fall.v.03
+			prop:	fall.07
+			V		4-4	fell 
+			N-ARG-A1		0-1	The narrator 
+			R-ARG-A1		3-3	who 
+			N-ARG-A2		5-9	in love with Annabel Lee 
+			N-ARGM-TMP		10-13	when they were young 
+	5	in
+	6	love
+			sense:	love.n.04
+	7	with
+	8	Annabel
+			coref:	IDENT			2	8-9	Annabel Lee 
+			name:	PERSON				8-9	Annabel Lee 
+	9	Lee
+	10	when
+	11	they
+	12	were
+			sense:	be.v.01
+			prop:	be.01
+			V		12-12	were 
+			N-ARGM-TMP		10-10	when 
+			N-ARG-A1		11-11	they 
+			N-ARG-A2		13-13	young 
+	13	young
+			sense:	young.a.01
+	14	,
+	15	has
+			sense:	have.v.01
+			prop:	have.03
+			V		15-15	has 
+			N-ARG-A0		0-13	The narrator , who fell in love with Annabel Lee when they were young 
+			N-ARG-A1		16-26	a love for her so strong that even angels are envious 
+	16	a
+			coref:	IDENT			0	16-26	a love for her so strong that even angels are envious 
+	17	love
+			sense:	love.n.01
+	18	for
+	19	her
+			coref:	IDENT			2	19-19	her 
+	20	so
+			sense:	so.r.01
+	21	strong
+			sense:	strong.a.01
+	22	that
+	23	even
+			sense:	even.r.01
+	24	angels
+			sense:	angel.n.01
+	25	are
+			sense:	be.v.01
+			prop:	be.01
+			V		25-25	are 
+			N-ARG-A1		23-24	even angels 
+			N-ARG-A2		26-26	envious 
+	26	envious
+			sense:	covetous.s.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He retains his love for her even after her death .
+
+
+Treebanked sentence:
+--------------------
+He retains his love for her even after her death . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ retains)
+      (NP (PRP$ his) (NN love))
+      (PP (IN for)
+        (NP (PRP$ her) (RB even)))
+      (PP (IN after)
+        (NP (PRP$ her) (NN death))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	retains
+			sense:	retain.v.04
+			prop:	retain.01
+			V		1-1	retains 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-5	his love for her 
+			N-ARGM-TMP		6-9	even after her death 
+	2	his
+			coref:	IDENT			0	2-3	his love 
+			coref:	IDENT			1	2-2	his 
+	3	love
+			sense:	love.n.01
+	4	for
+	5	her
+			coref:	IDENT			2	5-5	her 
+	6	even
+			sense:	even.r.01
+	7	after
+	8	her
+			coref:	IDENT			2	8-8	her 
+	9	death
+			sense:	death.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+There has been debate over who , if anyone , was the inspiration for " Annabel Lee " .
+
+
+Treebanked sentence:
+--------------------
+There has been debate over who , if anyone , was the inspiration for " Annabel Lee " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (NP
+          (NP (NN debate))
+          (PP (IN over)
+            (SBAR
+              (WHNP
+                (WHNP (WP who))
+                (, ,)
+                (SBAR (IN if)
+                  (FRAG
+                    (NP (NN anyone))))
+                (, ,))
+              (S
+                (VP (VBD was)
+                  (NP
+                    (NP (DT the) (NN inspiration))
+                    (PP (IN for)
+                      (NP (`` ") (NNP Annabel) (NNP Lee) ('' ")))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	There
+	1	has
+			sense:	have.v.11
+			prop:	have.01
+			V		1-1	has 
+	2	been
+			sense:	exist.v.01
+			prop:	be.02
+			V		2-2	been 
+			N-ARG-A1		3-17	debate over who , if anyone , was the inspiration for " Annabel Lee " 
+	3	debate
+			sense:	argument.n.03
+	4	over
+	5	who
+	6	,
+	7	if
+	8	anyone
+	9	,
+	10	was
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	was 
+			N-ARG-A1		5-8	who , if anyone 
+			N-ARG-A2		11-17	the inspiration for " Annabel Lee " 
+	11	the
+	12	inspiration
+			sense:	inspiration.n.02
+	13	for
+	14	"
+			coref:	IDENT			2	14-16	" Annabel Lee 
+	15	Annabel
+			name:	PERSON				15-16	Annabel Lee 
+	16	Lee
+	17	"
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Though many women have been suggested , Poe 's wife Virginia Eliza Clemm Poe is one of the more credible candidates .
+
+
+Treebanked sentence:
+--------------------
+Though many women have been suggested , Poe 's wife Virginia Eliza Clemm Poe is one of the more credible candidates . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN Though)
+      (S
+        (NP (JJ many) (NNS women))
+        (VP (VBP have)
+          (VP (VBN been)
+            (VP (VBN suggested))))))
+    (, ,)
+    (NP
+      (NP
+        (NP (NNP Poe) (POS 's))
+        (NN wife))
+      (NP (NNP Virginia) (NNP Eliza) (NNP Clemm) (NNP Poe)))
+    (VP (VBZ is)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP (DT the) (JJR more) (JJ credible) (NNS candidates)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Though
+	1	many
+			sense:	many.a.01
+	2	women
+			sense:	woman.n.01
+	3	have
+			sense:	have.v.01
+			prop:	have.01
+			V		3-3	have 
+	4	been
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	been 
+	5	suggested
+			sense:	suggest.v.03
+			prop:	suggest.01
+			V		5-5	suggested 
+			N-ARG-A1		1-2	many women 
+	6	,
+	7	Poe
+			name:	PERSON				7-7	Poe 
+	8	's
+	9	wife
+			sense:	wife.n.01
+	10	Virginia
+			name:	PERSON				10-13	Virginia Eliza Clemm Poe 
+	11	Eliza
+	12	Clemm
+	13	Poe
+	14	is
+			sense:	be.v.01
+			prop:	be.01
+			V		14-14	is 
+			N-ARGM-ADV		0-5	Though many women have been suggested 
+			N-ARG-A1		7-13	Poe 's wife Virginia Eliza Clemm Poe 
+			N-ARG-A2		15-20	one of the more credible candidates 
+	15	one
+			name:	NUMBER				15-15	one 
+	16	of
+	17	the
+	18	more
+			sense:	more.a.01
+	19	credible
+			sense:	credible.a.01
+	20	candidates
+			sense:	candidate.n.02
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Written in 1849 , it was not published until shortly after Poe 's death that same year .
+
+
+Treebanked sentence:
+--------------------
+Written in 1849 , it was not published until shortly after Poe 's death that same year . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Written)
+        (PP (IN in)
+          (NP (CD 1849)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was) (RB not)
+      (VP (VBN published)
+        (PP (IN until)
+          (ADVP (RB shortly)
+            (PP (IN after)
+              (NP
+                (NP (NNP Poe) (POS 's))
+                (NN death))
+              (NP-TMP (DT that) (JJ same) (NN year)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Written
+			sense:	write.v.01
+			prop:	write.01
+			V		0-0	Written 
+			N-ARGM-TMP		1-2	in 1849 
+			N-ARG-A1		4-4	it 
+	1	in
+	2	1849
+			name:	DATE				2-2	1849 
+	3	,
+	4	it
+	5	was
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	was 
+	6	not
+			sense:	not.r.01
+	7	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		7-7	published 
+			N-ARGM-PRD		0-2	Written in 1849 
+			N-ARG-A1		4-4	it 
+			N-ARGM-NEG		6-6	not 
+			N-ARGM-TMP		8-16	until shortly after Poe 's death that same year 
+	8	until
+	9	shortly
+			sense:	shortly.r.01
+	10	after
+	11	Poe
+			name:	PERSON				11-11	Poe 
+	12	's
+	13	death
+			sense:	death.n.01
+	14	that
+	15	same
+			sense:	same.a.01
+	16	year
+			name:	DURATION				16-16	year 
+			sense:	year.n.01
+	17	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.16-26	a love for her so strong that even angels are envious 
+				3.2-3	his love 
+	Chain 1 (IDENT)
+				2.0-13	The narrator , who fell in love with Annabel Lee when they were young 
+				3.0-0	He 
+				3.2-2	his 
+	Chain 2 (IDENT)
+				4.14-16	" Annabel Lee 
+				0.1-2	Annabel Lee 
+				2.8-9	Annabel Lee 
+				2.19-19	her 
+				3.5-5	her 
+				3.8-8	her 
+

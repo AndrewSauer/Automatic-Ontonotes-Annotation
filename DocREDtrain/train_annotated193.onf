@@ -1,0 +1,728 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Headquarters Marine Corps ( HQMC ) is a headquarters staff within the Department of the Navy which includes the offices of the Commandant of the Marine Corps , the Assistant Commandant of the Marine Corps and various staff functions .
+
+
+Treebanked sentence:
+--------------------
+Headquarters Marine Corps ( HQMC ) is a headquarters staff within the Department of the Navy which includes the offices of the Commandant of the Marine Corps , the Assistant Commandant of the Marine Corps and various staff functions . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN Headquarters) (NNP Marine) (NNP Corps) (-LRB- -LRB-) (NNP HQMC) (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN headquarters) (NN staff))
+        (PP (IN within)
+          (NP
+            (NP (DT the) (NNP Department))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNP Navy))
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBZ includes)
+                      (NP
+                        (NP
+                          (NP (DT the) (NNS offices))
+                          (PP (IN of)
+                            (NP
+                              (NP (DT the) (NN Commandant))
+                              (PP (IN of)
+                                (NP (DT the) (NNP Marine) (NNP Corps))))))
+                        (, ,)
+                        (NP
+                          (NP (DT the) (NNP Assistant) (NN Commandant))
+                          (PP (IN of)
+                            (NP (DT the) (NNP Marine) (NNP Corps))))
+                        (CC and)
+                        (NP (JJ various) (NN staff) (NNS functions))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Headquarters
+			coref:	IDENT			0	0-4	Headquarters Marine Corps ( HQMC 
+			coref:	IDENT			2	0-2	Headquarters Marine Corps 
+			name:	ORGANIZATION				0-2	Headquarters Marine Corps 
+			sense:	headquarters.n.01
+	1	Marine
+	2	Corps
+	3	(
+	4	HQMC
+	5	)
+	6	is
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	is 
+			N-ARG-A1		0-5	Headquarters Marine Corps ( HQMC ) 
+			N-ARG-A2		7-38	a headquarters staff within the Department of the Navy which includes the offices of the Commandant of the Marine Corps , the Assistant Commandant of the Marine Corps and various staff functions 
+	7	a
+	8	headquarters
+			sense:	headquarters.n.01
+	9	staff
+			sense:	staff.n.01
+	10	within
+	11	the
+	12	Department
+	13	of
+	14	the
+			coref:	IDENT			2	14-38	the Navy which includes the offices of the Commandant of the Marine Corps , the Assistant Commandant of the Marine Corps and various staff functions 
+	15	Navy
+			name:	ORGANIZATION				15-15	Navy 
+	16	which
+	17	includes
+			sense:	include.v.01
+			prop:	include.01
+			V		17-17	includes 
+			N-ARG-A2		7-15	a headquarters staff within the Department of the Navy 
+			R-ARG-A2		16-16	which 
+			N-ARG-A1		18-38	the offices of the Commandant of the Marine Corps , the Assistant Commandant of the Marine Corps and various staff functions 
+	18	the
+	19	offices
+			sense:	agency.n.01
+	20	of
+	21	the
+			coref:	IDENT			1	21-26	the Commandant of the Marine Corps 
+	22	Commandant
+			name:	TITLE				22-22	Commandant 
+			sense:	commanding_officer.n.01
+	23	of
+	24	the
+			coref:	IDENT			2	24-26	the Marine Corps 
+	25	Marine
+			name:	ORGANIZATION				25-26	Marine Corps 
+	26	Corps
+	27	,
+	28	the
+			coref:	IDENT			1	28-34	the Assistant Commandant of the Marine Corps 
+	29	Assistant
+			name:	TITLE				29-30	Assistant Commandant 
+	30	Commandant
+			sense:	commanding_officer.n.01
+	31	of
+	32	the
+			coref:	IDENT			2	32-34	the Marine Corps 
+	33	Marine
+			name:	ORGANIZATION				33-34	Marine Corps 
+	34	Corps
+	35	and
+	36	various
+			sense:	respective.s.01
+	37	staff
+			sense:	staff.n.01
+	38	functions
+			sense:	function.n.03
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The function , composition , and general duties of HQMC are defined in Title 10 of the United States Code , Subtitle C , Part I , Chapter 506 ( Headquarters , Marine Corps ) .
+
+
+Treebanked sentence:
+--------------------
+The function , composition , and general duties of HQMC are defined in Title 10 of the United States Code , Subtitle C , Part I , Chapter 506 ( Headquarters , Marine Corps ) . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (S
+      (NP
+        (NP (DT The) (NN function))
+        (, ,)
+        (NP (NN composition))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (JJ general) (NNS duties))
+          (PP (IN of)
+            (NP (NNP HQMC)))))
+      (VP (VBP are)
+        (VP (VBN defined)
+          (PP (IN in)
+            (NP
+              (NP (NN Title) (CD 10))
+              (PP (IN of)
+                (NP (DT the) (NNP United) (NNP States) (NNP Code))))))))
+    (, ,)
+    (FRAG
+      (NP (NNP Subtitle) (NNP C) (, ,) (NNP Part))
+      (NP (PRP I)))
+    (, ,)
+    (FRAG
+      (NP (NN Chapter) (CD 506))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NN Headquarters))
+        (, ,)
+        (NP (NNP Marine) (NNP Corps)))
+      (-RRB- -RRB-))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	function
+			sense:	function.n.03
+	2	,
+	3	composition
+			sense:	constitution.n.04
+	4	,
+	5	and
+	6	general
+			name:	TITLE				6-6	general 
+			sense:	general.a.01
+	7	duties
+			sense:	duty.n.02
+	8	of
+	9	HQMC
+			coref:	IDENT			0	9-9	HQMC 
+			name:	ORGANIZATION				9-9	HQMC 
+	10	are
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	are 
+	11	defined
+			sense:	specify.v.03
+			prop:	define.01
+			V		11-11	defined 
+			N-ARG-A1		0-9	The function , composition , and general duties of HQMC 
+			N-ARGM-LOC		12-34	in Title 10 of the United States Code , Subtitle C , Part I , Chapter 506 ( Headquarters , Marine Corps ) 
+	12	in
+	13	Title
+			sense:	title.n.01
+	14	10
+			name:	NUMBER				14-14	10 
+	15	of
+	16	the
+	17	United
+			name:	COUNTRY				17-18	United States 
+	18	States
+	19	Code
+	20	,
+	21	Subtitle
+	22	C
+	23	,
+	24	Part
+	25	I
+	26	,
+	27	Chapter
+			sense:	chapter.n.01
+	28	506
+			name:	NUMBER				28-28	506 
+	29	(
+	30	Headquarters
+			sense:	headquarters.n.01
+	31	,
+	32	Marine
+			coref:	IDENT			2	32-33	Marine Corps 
+			name:	ORGANIZATION				32-33	Marine Corps 
+	33	Corps
+	34	)
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+HQMC " consists of the Commandant of the Marine Corps and those staff agencies that advise and assist him in discharging his responsibilities prescribed by law and higher authority .
+
+
+Treebanked sentence:
+--------------------
+HQMC " consists of the Commandant of the Marine Corps and those staff agencies that advise and assist him in discharging his responsibilities prescribed by law and higher authority . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP HQMC))
+    (VP (`` ") (VBZ consists)
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NN Commandant))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP Marine) (NNP Corps))
+              (CC and)
+              (NP (DT those) (NN staff))))))
+      (NP
+        (NP (NNS agencies))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP
+              (VP (VBP advise))
+              (CC and)
+              (VP (VB assist)
+                (NP (PRP him))
+                (PP (IN in)
+                  (S
+                    (VP (VBG discharging)
+                      (NP
+                        (NP (PRP$ his) (NNS responsibilities))
+                        (VP (VBN prescribed)
+                          (PP (IN by)
+                            (NP
+                              (NP (NN law))
+                              (CC and)
+                              (NP (JJR higher) (NN authority)))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	HQMC
+			coref:	IDENT			0	0-0	HQMC 
+	1	"
+	2	consists
+			sense:	consist.v.04
+			prop:	consist.01
+			V		2-2	consists 
+			N-ARG-A1		0-1	HQMC " 
+			N-ARG-A2		3-28	of the Commandant of the Marine Corps and those staff agencies that advise and assist him in discharging his responsibilities prescribed by law and higher authority 
+	3	of
+	4	the
+	5	Commandant
+			name:	TITLE				5-5	Commandant 
+			sense:	commanding_officer.n.01
+	6	of
+	7	the
+			coref:	IDENT			2	7-9	the Marine Corps 
+	8	Marine
+			name:	ORGANIZATION				8-9	Marine Corps 
+	9	Corps
+	10	and
+	11	those
+	12	staff
+			sense:	staff.n.01
+	13	agencies
+			sense:	agency.n.01
+	14	that
+	15	advise
+			sense:	rede.v.02
+			prop:	advise.01
+			V		15-15	advise 
+			N-ARG-A0		11-13	those staff agencies 
+			R-ARG-A0		14-14	that 
+			N-ARG-A1		18-18	him 
+			N-ARG-A2		19-28	in discharging his responsibilities prescribed by law and higher authority 
+	16	and
+	17	assist
+			sense:	help.v.01
+			prop:	assist.01
+			V		17-17	assist 
+			N-ARG-A0		11-13	those staff agencies 
+			R-ARG-A0		14-14	that 
+			N-ARG-A1		18-18	him 
+			N-ARG-A2		19-28	in discharging his responsibilities prescribed by law and higher authority 
+	18	him
+			coref:	IDENT			0	18-18	him 
+	19	in
+	20	discharging
+			sense:	dispatch.v.02
+			prop:	discharge.101
+			V		20-20	discharging 
+			N-ARG-A0		18-18	him 
+	21	his
+			coref:	IDENT			0	21-21	his 
+	22	responsibilities
+			sense:	duty.n.01
+	23	prescribed
+			sense:	order.v.03
+			prop:	prescribe.01
+			V		23-23	prescribed 
+			N-ARG-A1		21-22	his responsibilities 
+			N-ARG-A0		24-28	by law and higher authority 
+	24	by
+	25	law
+			sense:	law.n.01
+	26	and
+	27	higher
+			sense:	eminent.s.01
+	28	authority
+			sense:	authority.n.01
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Commandant is directly responsible to the Secretary of the Navy for the total performance of the Marine Corps .
+
+
+Treebanked sentence:
+--------------------
+The Commandant is directly responsible to the Secretary of the Navy for the total performance of the Marine Corps . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN Commandant))
+    (VP (VBZ is)
+      (ADJP (RB directly) (JJ responsible)
+        (PP (IN to)
+          (NP
+            (NP (DT the) (NNP Secretary))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNP Navy))
+                (PP (IN for)
+                  (NP
+                    (NP (DT the) (JJ total) (NN performance))
+                    (PP (IN of)
+                      (NP (DT the) (NNP Marine) (NNP Corps)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The Commandant 
+	1	Commandant
+			name:	TITLE				1-1	Commandant 
+			sense:	commanding_officer.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The Commandant 
+			N-ARG-A2		3-18	directly responsible to the Secretary of the Navy for the total performance of the Marine Corps 
+	3	directly
+			sense:	directly.r.02
+	4	responsible
+			sense:	responsible.a.01
+	5	to
+	6	the
+	7	Secretary
+			name:	TITLE				7-10	Secretary of the Navy 
+	8	of
+	9	the
+			coref:	IDENT			2	9-18	the Navy for the total performance of the Marine Corps 
+	10	Navy
+	11	for
+	12	the
+	13	total
+			sense:	entire.s.01
+	14	performance
+			sense:	operation.n.08
+	15	of
+	16	the
+			coref:	IDENT			2	16-18	the Marine Corps 
+	17	Marine
+			name:	ORGANIZATION				17-18	Marine Corps 
+	18	Corps
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This includes the administration , discipline , internal organization , training , requirements , efficiency , and readiness of the service .
+
+
+Treebanked sentence:
+--------------------
+This includes the administration , discipline , internal organization , training , requirements , efficiency , and readiness of the service . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ includes)
+      (NP
+        (NP (DT the) (NN administration))
+        (, ,)
+        (NP (NN discipline))
+        (, ,)
+        (NP (JJ internal) (NN organization))
+        (, ,)
+        (NP (NN training))
+        (, ,)
+        (NP (NNS requirements))
+        (, ,)
+        (NP (NN efficiency))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (NN readiness))
+          (PP (IN of)
+            (NP (DT the) (NN service))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+	1	includes
+			sense:	include.v.01
+			prop:	include.01
+			V		1-1	includes 
+			N-ARG-A2		0-0	This 
+			N-ARG-A1		2-20	the administration , discipline , internal organization , training , requirements , efficiency , and readiness of the service 
+	2	the
+	3	administration
+			sense:	administration.n.01
+	4	,
+	5	discipline
+			sense:	discipline.n.02
+	6	,
+	7	internal
+			sense:	internal.s.02
+	8	organization
+			sense:	arrangement.n.03
+	9	,
+	10	training
+			sense:	training.n.01
+	11	,
+	12	requirements
+			sense:	requirement.n.01
+	13	,
+	14	efficiency
+			sense:	efficiency.n.01
+	15	,
+	16	and
+	17	readiness
+			sense:	readiness.n.01
+	18	of
+	19	the
+	20	service
+			sense:	military_service.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Commandant also is responsible for the operation of the Marine Corps material support system .
+
+
+Treebanked sentence:
+--------------------
+The Commandant also is responsible for the operation of the Marine Corps material support system . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN Commandant))
+    (ADVP (RB also))
+    (VP (VBZ is)
+      (ADJP (JJ responsible)
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NN operation))
+            (PP (IN of)
+              (NP (DT the)
+                (NML
+                  (NML (NNP Marine) (NNP Corps))
+                  (NN material))
+                (NN support) (NN system)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The Commandant 
+	1	Commandant
+			name:	TITLE				1-1	Commandant 
+			sense:	commanding_officer.n.01
+	2	also
+			sense:	besides.r.02
+	3	is
+			sense:	be.v.01
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-1	The Commandant 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A2		4-14	responsible for the operation of the Marine Corps material support system 
+	4	responsible
+			sense:	responsible.a.01
+	5	for
+	6	the
+	7	operation
+			sense:	operation.n.08
+	8	of
+	9	the
+	10	Marine
+			coref:	IDENT			2	10-11	Marine Corps 
+			name:	ORGANIZATION				10-11	Marine Corps 
+	11	Corps
+	12	material
+			sense:	material.n.01
+	13	support
+			sense:	support.n.01
+	14	system
+			sense:	system.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" 
+
+
+Treebanked sentence:
+--------------------
+" HQMC is currently spread throughout the Washington , D.C. , Virginia , and Maryland area , to include the Pentagon , Henderson Hall , Marine Barracks , Washington , D.C. , Marine Corps Base Quantico , and the Washington Navy Yard . 
+
+Tree:
+-----
+(ROOT
+  (S (`` ")
+    (NP (NN HQMC))
+    (VP (VBZ is)
+      (ADVP (RB currently))
+      (VP (VBN spread)
+        (PP (IN throughout)
+          (NP (DT the)
+            (NML (NNP Washington) (, ,) (NNP D.C.) (, ,) (NNP Virginia) (, ,)
+              (CC and)
+              (NNP Maryland))
+            (NN area)))
+        (, ,)
+        (S
+          (VP (TO to)
+            (VP (VB include)
+              (NP
+                (NP (DT the) (NNP Pentagon))
+                (, ,)
+                (NP (NNP Henderson) (NNP Hall))
+                (, ,)
+                (NP (NNP Marine) (NNPS Barracks))
+                (, ,)
+                (NP (NNP Washington))
+                (, ,)
+                (NP (NNP D.C.))
+                (, ,)
+                (NP (NNP Marine) (NNP Corps) (NNP Base) (NNP Quantico))
+                (, ,)
+                (CC and)
+                (NP (DT the) (NNP Washington) (NNP Navy) (NNP Yard))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	HQMC
+			coref:	IDENT			0	1-1	HQMC 
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	currently
+			name:	DATE				3-3	currently 
+			sense:	presently.r.02
+	4	spread
+			sense:	spread.v.01
+			prop:	spread.03
+			V		4-4	spread 
+			N-ARG-A1		1-1	HQMC 
+			N-ARGM-TMP		3-3	currently 
+			N-ARGM-LOC		5-15	throughout the Washington , D.C. , Virginia , and Maryland area 
+	5	throughout
+	6	the
+	7	Washington
+			name:	STATE_OR_PROVINCE				7-7	Washington 
+	8	,
+	9	D.C.
+			name:	LOCATION				9-9	D.C. 
+	10	,
+	11	Virginia
+			name:	STATE_OR_PROVINCE				11-11	Virginia 
+	12	,
+	13	and
+	14	Maryland
+			name:	STATE_OR_PROVINCE				14-14	Maryland 
+	15	area
+			sense:	area.n.01
+	16	,
+	17	to
+	18	include
+			sense:	include.v.01
+			prop:	include.01
+			V		18-18	include 
+			N-ARG-A2		1-1	HQMC 
+			N-ARG-A1		19-41	the Pentagon , Henderson Hall , Marine Barracks , Washington , D.C. , Marine Corps Base Quantico , and the Washington Navy Yard 
+	19	the
+	20	Pentagon
+			name:	LOCATION				20-20	Pentagon 
+	21	,
+	22	Henderson
+			name:	ORGANIZATION				22-23	Henderson Hall 
+	23	Hall
+	24	,
+	25	Marine
+			name:	ORGANIZATION				25-26	Marine Barracks 
+	26	Barracks
+	27	,
+	28	Washington
+			name:	STATE_OR_PROVINCE				28-28	Washington 
+	29	,
+	30	D.C.
+			name:	LOCATION				30-30	D.C. 
+	31	,
+	32	Marine
+			name:	ORGANIZATION				32-35	Marine Corps Base Quantico 
+	33	Corps
+	34	Base
+	35	Quantico
+	36	,
+	37	and
+	38	the
+	39	Washington
+			name:	ORGANIZATION				39-41	Washington Navy Yard 
+	40	Navy
+	41	Yard
+	42	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-4	Headquarters Marine Corps ( HQMC 
+				1.9-9	HQMC 
+				2.0-0	HQMC 
+				2.18-18	him 
+				2.21-21	his 
+				6.1-1	HQMC 
+	Chain 1 (IDENT)
+				0.28-34	the Assistant Commandant of the Marine Corps 
+				0.21-26	the Commandant of the Marine Corps 
+				3.0-1	The Commandant 
+				5.0-1	The Commandant 
+	Chain 2 (IDENT)
+				0.0-2	Headquarters Marine Corps 
+				0.14-38	the Navy which includes the offices of the Commandant of the Marine Corps , the Assistant Commandant of the Marine Corps and various staff functions 
+				0.24-26	the Marine Corps 
+				0.32-34	the Marine Corps 
+				1.32-33	Marine Corps 
+				2.7-9	the Marine Corps 
+				3.9-18	the Navy for the total performance of the Marine Corps 
+				3.16-18	the Marine Corps 
+				5.10-11	Marine Corps 
+

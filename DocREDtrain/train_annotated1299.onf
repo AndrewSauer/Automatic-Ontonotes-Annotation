@@ -1,0 +1,584 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Doctor in the House is a 1954 British comedy film directed by Ralph Thomas and produced by Betty Box .
+
+
+Treebanked sentence:
+--------------------
+Doctor in the House is a 1954 British comedy film directed by Ralph Thomas and produced by Betty Box . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NN Doctor))
+      (PP (IN in)
+        (NP (DT the) (NNP House))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (CD 1954) (JJ British) (NN comedy) (NN film))
+        (VP
+          (VP (VBN directed)
+            (PP (IN by)
+              (NP (NNP Ralph) (NNP Thomas))))
+          (CC and)
+          (VP (VBN produced)
+            (PP (IN by)
+              (NP (NNP Betty) (NNP Box)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Doctor
+			coref:	IDENT			1	0-3	Doctor in the House 
+			name:	TITLE				0-0	Doctor 
+			sense:	doctor.n.01
+	1	in
+	2	the
+			coref:	IDENT			3	2-3	the House 
+	3	House
+			name:	ORGANIZATION				3-3	House 
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	Doctor in the House 
+			N-ARG-A2		5-18	a 1954 British comedy film directed by Ralph Thomas and produced by Betty Box 
+	5	a
+	6	1954
+			name:	DATE				6-6	1954 
+	7	British
+			name:	NATIONALITY				7-7	British 
+	8	comedy
+			sense:	comedy.n.01
+	9	film
+			sense:	movie.n.01
+	10	directed
+			sense:	direct.v.03
+			prop:	direct.01
+			V		10-10	directed 
+			N-ARG-A1		5-9	a 1954 British comedy film 
+			N-ARG-A0		11-13	by Ralph Thomas 
+	11	by
+	12	Ralph
+			name:	PERSON				12-13	Ralph Thomas 
+	13	Thomas
+	14	and
+	15	produced
+			sense:	produce.v.06
+			prop:	produce.01
+			V		15-15	produced 
+			N-ARG-A1		5-9	a 1954 British comedy film 
+			N-ARG-A0		16-18	by Betty Box 
+	16	by
+	17	Betty
+			name:	PERSON				17-18	Betty Box 
+	18	Box
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The screenplay , by Nicholas Phipps , Richard Gordon and Ronald Wilkinson , is based on the novel by Gordon , and follows a group of students through medical school .
+
+
+Treebanked sentence:
+--------------------
+The screenplay , by Nicholas Phipps , Richard Gordon and Ronald Wilkinson , is based on the novel by Gordon , and follows a group of students through medical school . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN screenplay))
+    (VP
+      (VP (, ,)
+        (PP (IN by)
+          (NP
+            (NP (NNP Nicholas) (NNP Phipps))
+            (, ,)
+            (NP (NNP Richard) (NNP Gordon))
+            (CC and)
+            (NP (NNP Ronald) (NNP Wilkinson))))
+        (, ,) (VBZ is)
+        (VP (VBN based)
+          (PP (IN on)
+            (NP (DT the) (NN novel)))
+          (PP (IN by)
+            (NP (NNP Gordon)))))
+      (, ,)
+      (CC and)
+      (VP (VBZ follows)
+        (NP
+          (NP (DT a) (NN group))
+          (PP (IN of)
+            (NP (NNS students))))
+        (PP (IN through)
+          (NP (JJ medical) (NN school)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			5	0-1	The screenplay 
+	1	screenplay
+			sense:	screenplay.n.01
+	2	,
+	3	by
+	4	Nicholas
+			name:	PERSON				4-5	Nicholas Phipps 
+	5	Phipps
+	6	,
+	7	Richard
+			coref:	IDENT			0	7-8	Richard Gordon 
+			name:	PERSON				7-8	Richard Gordon 
+	8	Gordon
+	9	and
+	10	Ronald
+			name:	PERSON				10-11	Ronald Wilkinson 
+	11	Wilkinson
+	12	,
+	13	is
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	is 
+	14	based
+			sense:	establish.v.08
+			prop:	base.02
+			V		14-14	based 
+			N-ARG-A1		0-11	The screenplay , by Nicholas Phipps , Richard Gordon and Ronald Wilkinson 
+			N-ARG-A2		15-19	on the novel by Gordon 
+	15	on
+	16	the
+	17	novel
+			sense:	novel.n.01
+	18	by
+	19	Gordon
+			coref:	IDENT			0	19-19	Gordon 
+			name:	PERSON				19-19	Gordon 
+	20	,
+	21	and
+	22	follows
+			sense:	trace.v.01
+			prop:	follow.01
+			V		22-22	follows 
+			N-ARG-A0		0-12	The screenplay , by Nicholas Phipps , Richard Gordon and Ronald Wilkinson , 
+			N-ARG-A2		23-26	a group of students 
+			N-ARGM-DIR		27-29	through medical school 
+	23	a
+	24	group
+			sense:	group.n.01
+	25	of
+	26	students
+			sense:	student.n.01
+	27	through
+	28	medical
+			sense:	medical.a.01
+	29	school
+			sense:	school.n.03
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was the most popular box office film of 1954 in Great Britain .
+
+
+Treebanked sentence:
+--------------------
+It was the most popular box office film of 1954 in Great Britain . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (NP
+        (NP (DT the)
+          (ADJP (RBS most) (JJ popular))
+          (NML (NN box) (NN office))
+          (NN film))
+        (PP (IN of)
+          (NP
+            (NP (CD 1954))
+            (PP (IN in)
+              (NP (NNP Great) (NNP Britain)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			5	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-12	the most popular box office film of 1954 in Great Britain 
+	2	the
+	3	most
+			sense:	most.r.01
+	4	popular
+			sense:	popular.a.01
+	5	box
+			sense:	box.n.02
+	6	office
+			sense:	office.n.01
+	7	film
+			sense:	movie.n.01
+	8	of
+	9	1954
+			name:	DATE				9-9	1954 
+	10	in
+	11	Great
+			name:	COUNTRY				11-12	Great Britain 
+	12	Britain
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Its success spawned six sequels , and also a television and radio series entitled Doctor in the House .
+
+
+Treebanked sentence:
+--------------------
+Its success spawned six sequels , and also a television and radio series entitled Doctor in the House . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ Its) (NN success))
+    (VP (VBD spawned)
+      (NP (CD six) (NNS sequels))
+      (, ,)
+      (NAC (CC and)
+        (ADVP (RB also))
+        (NP
+          (NP (DT a)
+            (NML (NN television)
+              (CC and)
+              (NN radio))
+            (NN series))
+          (VP (VBN entitled)
+            (NP
+              (NP (NNP Doctor))
+              (PP (IN in)
+                (NP (DT the) (NNP House))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Its
+			coref:	IDENT			5	0-0	Its 
+	1	success
+			sense:	success.n.03
+	2	spawned
+			sense:	engender.v.01
+			prop:	spawn.01
+			V		2-2	spawned 
+			N-ARG-A0		0-1	Its success 
+			N-ARG-A1		3-17	six sequels , and also a television and radio series entitled Doctor in the House 
+	3	six
+			coref:	IDENT			4	3-4	six sequels 
+			name:	NUMBER				3-3	six 
+	4	sequels
+			sense:	sequel.n.01
+	5	,
+	6	and
+	7	also
+			sense:	besides.r.02
+	8	a
+	9	television
+			sense:	television.n.01
+	10	and
+	11	radio
+			sense:	radio.n.01
+	12	series
+			sense:	serial.n.01
+	13	entitled
+			sense:	entitle.v.02
+			prop:	entitle.02
+			V		13-13	entitled 
+			N-ARG-A1		8-12	a television and radio series 
+			N-ARG-A2		14-17	Doctor in the House 
+	14	Doctor
+			coref:	IDENT			1	14-17	Doctor in the House 
+			name:	TITLE				14-14	Doctor 
+	15	in
+	16	the
+			coref:	IDENT			3	16-17	the House 
+	17	House
+			name:	ORGANIZATION				17-17	House 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It made Dirk Bogarde one of the biggest British stars of the 1950s .
+
+
+Treebanked sentence:
+--------------------
+It made Dirk Bogarde one of the biggest British stars of the 1950s . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD made)
+      (NP
+        (NP (NNP Dirk) (NNP Bogarde) (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJS biggest) (JJ British) (NNS stars))
+            (PP (IN of)
+              (NP (DT the) (NNS 1950s)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			5	0-0	It 
+	1	made
+			sense:	make.v.02
+			prop:	make.02
+			V		1-1	made 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-12	Dirk Bogarde one of the biggest British stars of the 1950s 
+	2	Dirk
+			name:	PERSON				2-3	Dirk Bogarde 
+	3	Bogarde
+	4	one
+			name:	NUMBER				4-4	one 
+	5	of
+	6	the
+	7	biggest
+			sense:	big.s.02
+	8	British
+			name:	NATIONALITY				8-8	British 
+	9	stars
+			sense:	headliner.n.01
+	10	of
+	11	the
+			name:	DATE				11-12	the 1950s 
+	12	1950s
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Other well - known British actors featured in the film were Kenneth More , Donald Sinden and Donald Houston .
+
+
+Treebanked sentence:
+--------------------
+Other well - known British actors featured in the film were Kenneth More , Donald Sinden and Donald Houston . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (ADJP
+          (ADVP (RB Other) (RB well))
+          (HYPH -) (VBN known))
+        (JJ British) (NNS actors))
+      (VP (VBN featured)
+        (PP (IN in)
+          (NP (DT the) (NN film)))))
+    (VP (VBD were)
+      (NP
+        (NP
+          (NP (NNP Kenneth))
+          (ADVP (RBR More)))
+        (, ,)
+        (NP (NNP Donald) (NNP Sinden))
+        (CC and)
+        (NP (NNP Donald) (NNP Houston))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Other
+	1	well
+			sense:	well.r.02
+	2	-
+	3	known
+			sense:	know.v.04
+			prop:	know.01
+			V		3-3	known 
+			N-ARGM-EXT		1-1	well 
+			N-ARG-A1		4-5	British actors 
+	4	British
+			name:	NATIONALITY				4-4	British 
+	5	actors
+			sense:	actor.n.01
+	6	featured
+			sense:	have.v.02
+			prop:	feature.01
+			V		6-6	featured 
+			N-ARG-A1		0-5	Other well - known British actors 
+			N-ARG-A2		7-9	in the film 
+	7	in
+	8	the
+	9	film
+			sense:	movie.n.01
+	10	were
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	were 
+			N-ARG-A1		0-9	Other well - known British actors featured in the film 
+			N-ARG-A2		11-18	Kenneth More , Donald Sinden and Donald Houston 
+	11	Kenneth
+			name:	PERSON				11-12	Kenneth More 
+	12	More
+			sense:	more.r.01
+	13	,
+	14	Donald
+			name:	PERSON				14-15	Donald Sinden 
+	15	Sinden
+	16	and
+	17	Donald
+			name:	PERSON				17-18	Donald Houston 
+	18	Houston
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+James Robertson Justice appeared as the irascible chief surgeon Sir Lancelot Spratt , a role he would repeat in many of the sequels .
+
+
+Treebanked sentence:
+--------------------
+James Robertson Justice appeared as the irascible chief surgeon Sir Lancelot Spratt , a role he would repeat in many of the sequels . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP James) (NNP Robertson) (NNP Justice))
+    (VP (VBD appeared)
+      (PP (IN as)
+        (NP (DT the) (JJ irascible) (JJ chief) (NN surgeon)))
+      (NP
+        (NP (NNP Sir) (NNP Lancelot) (NNP Spratt))
+        (, ,)
+        (NP
+          (NP (DT a) (NN role))
+          (SBAR
+            (S
+              (NP (PRP he))
+              (VP (MD would)
+                (VP (VB repeat)
+                  (PP (IN in)
+                    (NP
+                      (NP (JJ many))
+                      (PP (IN of)
+                        (NP (DT the) (NNS sequels))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	James
+			coref:	IDENT			2	0-2	James Robertson Justice 
+			name:	PERSON				0-2	James Robertson Justice 
+	1	Robertson
+	2	Justice
+	3	appeared
+			sense:	appear.v.06
+			prop:	appear.01
+			V		3-3	appeared 
+			N-ARG-A1		0-2	James Robertson Justice 
+			N-ARGM-PRD		4-22	as the irascible chief surgeon Sir Lancelot Spratt , a role he would repeat in many of the sequels 
+	4	as
+	5	the
+	6	irascible
+			sense:	choleric.s.02
+	7	chief
+			sense:	chief.s.01
+	8	surgeon
+			name:	TITLE				8-8	surgeon 
+			sense:	surgeon.n.01
+	9	Sir
+	10	Lancelot
+			name:	PERSON				10-11	Lancelot Spratt 
+	11	Spratt
+	12	,
+	13	a
+	14	role
+			sense:	character.n.04
+	15	he
+			coref:	IDENT			2	15-15	he 
+	16	would
+	17	repeat
+			sense:	duplicate.v.01
+			prop:	repeat.01
+			V		17-17	repeat 
+			N-ARG-A1		13-14	a role 
+			N-ARG-A0		15-15	he 
+			N-ARGM-MOD		16-16	would 
+			N-ARGM-LOC		18-22	in many of the sequels 
+	18	in
+	19	many
+			sense:	many.a.01
+	20	of
+	21	the
+			coref:	IDENT			4	21-22	the sequels 
+	22	sequels
+			sense:	sequel.n.01
+	23	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.7-8	Richard Gordon 
+				1.19-19	Gordon 
+	Chain 1 (IDENT)
+				3.14-17	Doctor in the House 
+				0.0-3	Doctor in the House 
+	Chain 2 (IDENT)
+				6.0-2	James Robertson Justice 
+				6.15-15	he 
+	Chain 3 (IDENT)
+				0.2-3	the House 
+				3.16-17	the House 
+	Chain 4 (IDENT)
+				3.3-4	six sequels 
+				6.21-22	the sequels 
+	Chain 5 (IDENT)
+				1.0-1	The screenplay 
+				2.0-0	It 
+				3.0-0	Its 
+				4.0-0	It 
+

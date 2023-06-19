@@ -1,0 +1,460 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Winfield Township ( also called Winfield Park ) is a township in Union County , New Jersey , in the United States .
+
+
+Treebanked sentence:
+--------------------
+Winfield Township ( also called Winfield Park ) is a township in Union County , New Jersey , in the United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Winfield) (NNP Township))
+      (-LRB- -LRB-)
+      (VP
+        (ADVP (RB also))
+        (VBN called)
+        (S
+          (NP (NNP Winfield) (NNP Park))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN township))
+        (PP (IN in)
+          (NP
+            (NP (NNP Union) (NNP County))
+            (, ,)
+            (NP (NNP New) (NNP Jersey))
+            (, ,)))
+        (PP (IN in)
+          (NP (DT the) (NNP United) (NNP States)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Winfield
+			coref:	IDENT			0	0-1	Winfield Township 
+			name:	CITY				0-0	Winfield 
+	1	Township
+			name:	LOCATION				1-1	Township 
+	2	(
+	3	also
+			sense:	besides.r.02
+	4	called
+			sense:	name.v.01
+			prop:	call.01
+			V		4-4	called 
+			N-ARG-A1		0-1	Winfield Township 
+			N-ARGM-ADV		3-3	also 
+			N-ARG-A2		5-6	Winfield Park 
+	5	Winfield
+			name:	CITY				5-5	Winfield 
+	6	Park
+			name:	LOCATION				6-6	Park 
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	Winfield Township ( also called Winfield Park ) 
+			N-ARG-A2		9-21	a township in Union County , New Jersey , in the United States 
+	9	a
+	10	township
+			sense:	township.n.01
+	11	in
+	12	Union
+			name:	CITY				12-12	Union 
+	13	County
+			name:	LOCATION				13-13	County 
+	14	,
+	15	New
+			name:	STATE_OR_PROVINCE				15-16	New Jersey 
+	16	Jersey
+	17	,
+	18	in
+	19	the
+			coref:	IDENT			2	19-21	the United States 
+	20	United
+			name:	COUNTRY				20-21	United States 
+	21	States
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As of the 2010 United States Census , the township 's population decreased to 1,471 , the lowest recorded in any decennial census , reflecting a decline of 43 ( -2.8 % ) from the 1,514 counted in the 2000 Census , which had in turn declined by 62 ( -3.9 % ) from the 1,576 counted in the 1990 Census .
+
+
+Treebanked sentence:
+--------------------
+As of the 2010 United States Census , the township 's population decreased to 1,471 , the lowest recorded in any decennial census , reflecting a decline of 43 ( -2.8 % ) from the 1,514 counted in the 2000 Census , which had in turn declined by 62 ( -3.9 % ) from the 1,576 counted in the 1990 Census . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (PP (IN of)
+          (NP (DT the) (CD 2010)
+            (NML (NNP United) (NNP States))
+            (NNP Census)))
+        (, ,)
+        (NP
+          (NP (DT the) (NN township) (POS 's))
+          (NN population))
+        (VP (VBD decreased)
+          (PP (IN to)
+            (NP (CD 1,471))))))
+    (, ,)
+    (NP
+      (NP (DT the) (JJS lowest))
+      (VP (VBN recorded)
+        (PP (IN in)
+          (NP (DT any) (JJ decennial) (NN census)))
+        (, ,)
+        (S
+          (VP (VBG reflecting)
+            (NP
+              (NP (DT a) (NN decline))
+              (PP (IN of)
+                (NP (CD 43))))
+            (PRN (-LRB- -LRB-)
+              (NP (CD -2.8) (NN %))
+              (-RRB- -RRB-))
+            (PP (IN from)
+              (NP
+                (NP (DT the) (CD 1,514))
+                (VP (VBN counted)
+                  (PP (IN in)
+                    (NP
+                      (NP (DT the) (CD 2000) (NNP Census))
+                      (, ,)
+                      (SBAR
+                        (WHNP (WDT which))
+                        (S
+                          (VP (VBD had)
+                            (PP (IN in)
+                              (NP (NN turn)))))))))))))))
+    (VP (VBD declined)
+      (PP (IN by)
+        (NP (CD 62)
+          (PRN (-LRB- -LRB-)
+            (NP (CD -3.9) (NN %))
+            (-RRB- -RRB-))))
+      (PP (IN from)
+        (NP
+          (NP (DT the) (CD 1,576))
+          (VP (VBN counted)
+            (PP (IN in)
+              (NP (DT the) (CD 1990) (NNP Census)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	of
+	2	the
+	3	2010
+			name:	DATE				3-3	2010 
+	4	United
+			coref:	IDENT			2	4-5	United States 
+			name:	COUNTRY				4-5	United States 
+	5	States
+	6	Census
+	7	,
+	8	the
+			coref:	IDENT			0	8-10	the township 's 
+	9	township
+			sense:	township.n.01
+	10	's
+	11	population
+			sense:	population.n.04
+	12	decreased
+			sense:	decrease.v.01
+			prop:	decrease.01
+			V		12-12	decreased 
+			N-ARGM-TMP		0-6	As of the 2010 United States Census 
+			N-ARG-A1		8-11	the township 's population 
+			N-ARG-A4		13-22	to 1,471 , the lowest recorded in any decennial census 
+			N-ARGM-ADV		24-60	reflecting a decline of 43 ( -2.8 % ) from the 1,514 counted in the 2000 Census , which had in turn declined by 62 ( -3.9 % ) from the 1,576 counted in the 1990 Census 
+	13	to
+	14	1,471
+			name:	NUMBER				14-14	1,471 
+	15	,
+	16	the
+	17	lowest
+			sense:	low.a.01
+	18	recorded
+			sense:	record.v.01
+			prop:	record.01
+			V		18-18	recorded 
+			N-ARG-A1		16-17	the lowest 
+			N-ARGM-LOC		19-22	in any decennial census 
+	19	in
+	20	any
+	21	decennial
+	22	census
+			sense:	census.n.01
+	23	,
+	24	reflecting
+			sense:	reflect.v.01
+			prop:	reflect.01
+			V		24-24	reflecting 
+			N-ARG-A2		8-11	the township 's population 
+			N-ARG-A1		25-60	a decline of 43 ( -2.8 % ) from the 1,514 counted in the 2000 Census , which had in turn declined by 62 ( -3.9 % ) from the 1,576 counted in the 1990 Census 
+	25	a
+	26	decline
+			sense:	decline.n.01
+	27	of
+	28	43
+			name:	NUMBER				28-28	43 
+	29	(
+	30	-2.8
+			name:	PERCENT				30-31	-2.8 % 
+	31	%
+	32	)
+	33	from
+	34	the
+	35	1,514
+			name:	NUMBER				35-35	1,514 
+	36	counted
+			sense:	count.v.01
+			prop:	count.01
+			V		36-36	counted 
+			N-ARG-A1		34-35	the 1,514 
+			N-ARGM-TMP		37-40	in the 2000 Census 
+	37	in
+	38	the
+	39	2000
+			name:	DATE				39-39	2000 
+	40	Census
+	41	,
+	42	which
+	43	had
+			sense:	have.v.01
+			prop:	have.01
+			V		43-43	had 
+	44	in
+	45	turn
+			sense:	turn.n.03
+	46	declined
+			sense:	decline.v.06
+			prop:	decline.01
+			V		46-46	declined 
+			N-ARG-A1		34-40	the 1,514 counted in the 2000 Census 
+			R-ARG-A1		42-42	which 
+			N-ARGM-DIS		44-45	in turn 
+			N-ARG-A2		47-52	by 62 ( -3.9 % ) 
+			N-ARG-A3		53-60	from the 1,576 counted in the 1990 Census 
+	47	by
+	48	62
+			name:	NUMBER				48-48	62 
+	49	(
+	50	-3.9
+			name:	PERCENT				50-51	-3.9 % 
+	51	%
+	52	)
+	53	from
+	54	the
+	55	1,576
+			name:	NUMBER				55-55	1,576 
+	56	counted
+			sense:	count.v.01
+			prop:	count.01
+			V		56-56	counted 
+			N-ARG-A1		54-55	the 1,576 
+			N-ARGM-TMP		57-60	in the 1990 Census 
+	57	in
+	58	the
+	59	1990
+			name:	DATE				59-59	1990 
+	60	Census
+	61	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Winfield and Linden share the same ZIP code .
+
+
+Treebanked sentence:
+--------------------
+Winfield and Linden share the same ZIP code . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Winfield)
+      (CC and)
+      (NNP Linden))
+    (VP (VBP share)
+      (NP (DT the) (JJ same) (NN ZIP) (NN code)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Winfield
+			name:	PERSON				0-0	Winfield 
+	1	and
+	2	Linden
+			coref:	IDENT			1	2-2	Linden 
+			name:	PERSON				2-2	Linden 
+	3	share
+			sense:	share.v.01
+			prop:	share.01
+			V		3-3	share 
+			N-ARG-A0		0-2	Winfield and Linden 
+			N-ARG-A1		4-7	the same ZIP code 
+	4	the
+	5	same
+			sense:	same.a.01
+	6	ZIP
+			sense:	zip_code.n.01
+	7	code
+			sense:	code.n.02
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Winfield Township was incorporated as a township by an act of the New Jersey Legislature on August 6 , 1941 , from portions of Clark and Linden , passing over the Governor 's veto .
+
+
+Treebanked sentence:
+--------------------
+Winfield Township was incorporated as a township by an act of the New Jersey Legislature on August 6 , 1941 , from portions of Clark and Linden , passing over the Governor 's veto . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Winfield) (NNP Township))
+    (VP (VBD was)
+      (VP (VBN incorporated)
+        (PP (IN as)
+          (NP (DT a) (NN township)))
+        (PP (IN by)
+          (NP
+            (NP (DT an) (NN act))
+            (PP (IN of)
+              (NP (DT the)
+                (NML (NNP New) (NNP Jersey))
+                (NNP Legislature)))))
+        (PP (IN on)
+          (NP (NNP August) (CD 6) (, ,) (CD 1941) (, ,)))
+        (PP (IN from)
+          (NP
+            (NP (NNS portions))
+            (PP (IN of)
+              (NP (NNP Clark)
+                (CC and)
+                (NNP Linden)))))
+        (, ,)
+        (S
+          (VP (VBG passing)
+            (PP (IN over)
+              (NP
+                (NP (DT the) (NNP Governor) (POS 's))
+                (NN veto)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Winfield
+			coref:	IDENT			0	0-1	Winfield Township 
+			name:	CITY				0-0	Winfield 
+	1	Township
+			name:	LOCATION				1-1	Township 
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	incorporated
+			sense:	incorporate.v.03
+			prop:	incorporate.01
+			V		3-3	incorporated 
+			N-ARG-A1		0-1	Winfield Township 
+			N-ARGM-PRD		4-6	as a township 
+			N-ARG-A0		7-19	by an act of the New Jersey Legislature on August 6 , 1941 
+			N-ARGM-ADV		28-33	passing over the Governor 's veto 
+	4	as
+	5	a
+	6	township
+			sense:	township.n.01
+	7	by
+	8	an
+	9	act
+			sense:	act.n.01
+	10	of
+	11	the
+	12	New
+			name:	STATE_OR_PROVINCE				12-13	New Jersey 
+	13	Jersey
+	14	Legislature
+			name:	ORGANIZATION				14-14	Legislature 
+	15	on
+	16	August
+			name:	DATE				16-19	August 6 , 1941 
+	17	6
+	18	,
+	19	1941
+	20	,
+	21	from
+	22	portions
+			sense:	part.n.01
+	23	of
+	24	Clark
+			name:	PERSON				24-24	Clark 
+	25	and
+			coref:	IDENT			1	25-26	and Linden 
+	26	Linden
+			name:	PERSON				26-26	Linden 
+	27	,
+	28	passing
+			sense:	pass.v.09
+			prop:	pass.12
+			V		28-28	passing 
+			N-ARG-A0		0-1	Winfield Township 
+			N-ARG-A1		30-33	the Governor 's veto 
+	29	over
+	30	the
+	31	Governor
+			name:	TITLE				31-31	Governor 
+	32	's
+	33	veto
+			sense:	veto.n.02
+	34	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Winfield Township 
+				1.8-10	the township 's 
+				3.0-1	Winfield Township 
+	Chain 1 (IDENT)
+				3.25-26	and Linden 
+				2.2-2	Linden 
+	Chain 2 (IDENT)
+				0.19-21	the United States 
+				1.4-5	United States 
+

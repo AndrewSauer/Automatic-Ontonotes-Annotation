@@ -1,0 +1,485 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Littleberry C. Mosby Jr. ( January 28 , 1757 – October 26 , 1821 ) was an American military officer .
+
+
+Treebanked sentence:
+--------------------
+Littleberry C. Mosby Jr. ( January 28 , 1757 – October 26 , 1821 ) was an American military officer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Littleberry) (NNP C.) (NNP Mosby) (NNP Jr.))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP January) (CD 28) (, ,) (CD 1757))
+        (PP (SYM –)
+          (NP (NNP October) (CD 26) (, ,) (CD 1821))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT an) (JJ American) (JJ military) (NN officer)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Littleberry
+			coref:	IDENT			1	0-3	Littleberry C. Mosby Jr. 
+			name:	PERSON				0-3	Littleberry C. Mosby Jr. 
+	1	C.
+	2	Mosby
+	3	Jr.
+	4	(
+	5	January
+			name:	DATE				5-8	January 28 , 1757 
+	6	28
+	7	,
+	8	1757
+	9	–
+	10	October
+			name:	DATE				10-13	October 26 , 1821 
+	11	26
+	12	,
+	13	1821
+	14	)
+	15	was
+			sense:	be.v.02
+			prop:	be.01
+			V		15-15	was 
+			N-ARG-A1		0-14	Littleberry C. Mosby Jr. ( January 28 , 1757 – October 26 , 1821 ) 
+			N-ARG-A2		16-19	an American military officer 
+	16	an
+	17	American
+			name:	NATIONALITY				17-17	American 
+	18	military
+			sense:	military.a.02
+	19	officer
+			sense:	military_officer.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+During the American Revolutionary War , he served in the Continental Army as a captain in the 2nd Georgia Regiment , and was captured at the Siege of Savannah in 1778 .
+
+
+Treebanked sentence:
+--------------------
+During the American Revolutionary War , he served in the Continental Army as a captain in the 2nd Georgia Regiment , and was captured at the Siege of Savannah in 1778 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN During)
+      (NP (DT the) (NNP American) (NNP Revolutionary) (NNP War)))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD served)
+        (PP (IN in)
+          (NP (DT the) (NNP Continental) (NNP Army)))
+        (PP (IN as)
+          (NP
+            (NP (DT a) (NN captain))
+            (PP (IN in)
+              (NP (DT the) (JJ 2nd) (NNP Georgia) (NN Regiment))))))
+      (, ,)
+      (CC and)
+      (VP (VBD was)
+        (VP (VBN captured)
+          (PP (IN at)
+            (NP
+              (NP (DT the) (NN Siege))
+              (PP (IN of)
+                (NP (NNP Savannah)))))
+          (PP (IN in)
+            (NP (CD 1778))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	During
+	1	the
+	2	American
+			name:	NATIONALITY				2-2	American 
+	3	Revolutionary
+			name:	IDEOLOGY				3-3	Revolutionary 
+	4	War
+			name:	CAUSE_OF_DEATH				4-4	War 
+	5	,
+	6	he
+			coref:	IDENT			1	6-6	he 
+	7	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		7-7	served 
+			N-ARGM-TMP		0-4	During the American Revolutionary War 
+			N-ARG-A0		6-6	he 
+			N-ARG-A1		8-11	in the Continental Army 
+			N-ARGM-PRD		12-19	as a captain in the 2nd Georgia Regiment 
+	8	in
+	9	the
+	10	Continental
+			name:	ORGANIZATION				10-11	Continental Army 
+	11	Army
+	12	as
+	13	a
+	14	captain
+			name:	TITLE				14-14	captain 
+			sense:	captain.n.01
+	15	in
+	16	the
+	17	2nd
+			name:	ORDINAL				17-17	2nd 
+			sense:	second.s.01
+	18	Georgia
+			name:	ORGANIZATION				18-19	Georgia Regiment 
+	19	Regiment
+			sense:	regiment.n.01
+	20	,
+	21	and
+	22	was
+			sense:	be.v.01
+			prop:	be.03
+			V		22-22	was 
+	23	captured
+			sense:	appropriate.v.02
+			prop:	capture.01
+			V		23-23	captured 
+			N-ARGM-TMP		0-4	During the American Revolutionary War 
+			N-ARG-A1		6-6	he 
+			N-ARGM-LOC		24-28	at the Siege of Savannah 
+			N-ARGM-TMP		29-30	in 1778 
+	24	at
+	25	the
+	26	Siege
+			sense:	siege.n.01
+	27	of
+	28	Savannah
+			name:	CITY				28-28	Savannah 
+	29	in
+	30	1778
+			name:	DATE				30-30	1778 
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After his release , he served as a major commanding a cavalry battalion in the Virginia militia .
+
+
+Treebanked sentence:
+--------------------
+After his release , he served as a major commanding a cavalry battalion in the Virginia militia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP (PRP$ his) (NN release)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP (DT a) (JJ major)))
+      (S
+        (VP (VBG commanding)
+          (NP (DT a) (NN cavalry) (NN battalion))
+          (PP (IN in)
+            (NP (DT the) (NNP Virginia) (NN militia))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	his
+			coref:	IDENT			1	1-1	his 
+	2	release
+			sense:	liberation.n.01
+	3	,
+	4	he
+			coref:	IDENT			1	4-4	he 
+	5	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		5-5	served 
+			N-ARGM-TMP		0-2	After his release 
+			N-ARG-A0		4-4	he 
+			N-ARG-A1		6-16	as a major commanding a cavalry battalion in the Virginia militia 
+	6	as
+	7	a
+	8	major
+			sense:	major.a.01
+	9	commanding
+			sense:	command.v.01
+			prop:	command.02
+			V		9-9	commanding 
+			N-ARG-A0		7-8	a major 
+			N-ARG-A1		10-16	a cavalry battalion in the Virginia militia 
+	10	a
+	11	cavalry
+			sense:	cavalry.n.01
+	12	battalion
+			sense:	battalion.n.01
+	13	in
+	14	the
+			coref:	IDENT			0	14-16	the Virginia militia 
+	15	Virginia
+			name:	STATE_OR_PROVINCE				15-15	Virginia 
+	16	militia
+			sense:	militia.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+During the War of 1812 , he was a brigadier general in the Virginia militia .
+
+
+Treebanked sentence:
+--------------------
+During the War of 1812 , he was a brigadier general in the Virginia militia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN During)
+      (NP
+        (NP (DT the) (NNP War))
+        (PP (IN of)
+          (NP (CD 1812)))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN brigadier))
+        (ADJP (JJ general)
+          (PP (IN in)
+            (NP (DT the) (NNP Virginia) (NN militia))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	During
+	1	the
+	2	War
+			name:	CAUSE_OF_DEATH				2-2	War 
+	3	of
+	4	1812
+			name:	DATE				4-4	1812 
+	5	,
+	6	he
+			coref:	IDENT			1	6-6	he 
+	7	was
+			sense:	be.v.08
+			prop:	be.01
+			V		7-7	was 
+			N-ARGM-TMP		0-4	During the War of 1812 
+			N-ARG-A1		6-6	he 
+			N-ARG-A2		8-14	a brigadier general in the Virginia militia 
+	8	a
+	9	brigadier
+			name:	TITLE				9-10	brigadier general 
+			sense:	brigadier.n.01
+	10	general
+			sense:	general.a.01
+	11	in
+	12	the
+			coref:	IDENT			0	12-14	the Virginia militia 
+	13	Virginia
+			name:	STATE_OR_PROVINCE				13-13	Virginia 
+	14	militia
+			sense:	militia.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The son of Colonel Littleberry Mosby Sr .
+
+
+Treebanked sentence:
+--------------------
+The son of Colonel Littleberry Mosby Sr . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP (DT The) (NN son))
+    (PP (IN of)
+      (NP (NNP Colonel) (NNP Littleberry) (NNP Mosby) (NNP Sr)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	son
+			sense:	son.n.01
+	2	of
+	3	Colonel
+			name:	TITLE				3-3	Colonel 
+	4	Littleberry
+			coref:	IDENT			1	4-5	Littleberry Mosby 
+			name:	PERSON				4-5	Littleberry Mosby 
+	5	Mosby
+	6	Sr
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+, he lived his entire life at Mosby Tavern in Cumberland County , Virginia / Powhatan County , Virginia , Powhatan County having been created from the eastern portion of Cumberland County in May 1777 .
+
+
+Treebanked sentence:
+--------------------
+, he lived his entire life at Mosby Tavern in Cumberland County , Virginia / Powhatan County , Virginia , Powhatan County having been created from the eastern portion of Cumberland County in May 1777 . 
+
+Tree:
+-----
+(ROOT
+  (S (, ,)
+    (NP (PRP he))
+    (VP (VBD lived)
+      (NP (PRP$ his) (JJ entire) (NN life))
+      (PP (IN at)
+        (NP (NNP Mosby) (NN Tavern)))
+      (PP (IN in)
+        (NP
+          (NP (NNP Cumberland) (NNP County))
+          (, ,)
+          (NP (NNP Virginia) (HYPH /) (NNP Powhatan) (NNP County))
+          (, ,)
+          (NP (NNP Virginia))
+          (, ,)
+          (NP (NNP Powhatan) (NNP County))))
+      (S
+        (VP (VBG having)
+          (VP (VBN been)
+            (VP (VBN created)
+              (PP (IN from)
+                (NP
+                  (NP (DT the) (JJ eastern) (NN portion))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNP Cumberland) (NNP County))
+                      (PP (IN in)
+                        (NP (NNP May) (CD 1777))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	,
+	1	he
+			coref:	IDENT			1	1-1	he 
+	2	lived
+			sense:	populate.v.01
+			prop:	live.01
+			V		2-2	lived 
+			N-ARG-A0		1-1	he 
+			N-ARG-A1		3-5	his entire life 
+			N-ARGM-LOC		6-34	at Mosby Tavern in Cumberland County , Virginia / Powhatan County , Virginia , Powhatan County having been created from the eastern portion of Cumberland County in May 1777 
+	3	his
+			coref:	IDENT			1	3-3	his 
+	4	entire
+			sense:	entire.s.01
+	5	life
+			sense:	life.n.05
+	6	at
+	7	Mosby
+			name:	LOCATION				7-8	Mosby Tavern 
+	8	Tavern
+			sense:	tavern.n.01
+	9	in
+	10	Cumberland
+			name:	CITY				10-10	Cumberland 
+	11	County
+			name:	LOCATION				11-11	County 
+	12	,
+	13	Virginia
+			name:	STATE_OR_PROVINCE				13-13	Virginia 
+	14	/
+	15	Powhatan
+			name:	LOCATION				15-16	Powhatan County 
+	16	County
+	17	,
+	18	Virginia
+			name:	STATE_OR_PROVINCE				18-18	Virginia 
+	19	,
+	20	Powhatan
+			name:	LOCATION				20-21	Powhatan County 
+	21	County
+	22	having
+			sense:	have.v.01
+			prop:	shaving.01
+			V		22-22	having 
+	23	been
+			sense:	be.v.01
+			prop:	be.03
+			V		23-23	been 
+	24	created
+			sense:	create.v.02
+			prop:	create.01
+			V		24-24	created 
+			N-ARG-A1		20-21	Powhatan County 
+			N-ARG-A2		25-31	from the eastern portion of Cumberland County 
+			N-ARGM-TMP		32-34	in May 1777 
+	25	from
+	26	the
+	27	eastern
+			sense:	eastern.s.01
+	28	portion
+			sense:	part.n.01
+	29	of
+	30	Cumberland
+			name:	CITY				30-30	Cumberland 
+	31	County
+			name:	LOCATION				31-31	County 
+	32	in
+	33	May
+			name:	DATE				33-34	May 1777 
+	34	1777
+	35	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.14-16	the Virginia militia 
+				3.12-14	the Virginia militia 
+	Chain 1 (IDENT)
+				0.0-3	Littleberry C. Mosby Jr. 
+				1.6-6	he 
+				2.1-1	his 
+				2.4-4	he 
+				3.6-6	he 
+				4.4-5	Littleberry Mosby 
+				5.1-1	he 
+				5.3-3	his 
+

@@ -1,0 +1,564 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Brookston is a city in Saint Louis County , Minnesota , United States ; located along the Saint Louis River , opposite the mouth of the Artichoke River .
+
+
+Treebanked sentence:
+--------------------
+Brookston is a city in Saint Louis County , Minnesota , United States ; located along the Saint Louis River , opposite the mouth of the Artichoke River . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NNP Brookston))
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (NN city))
+          (PP (IN in)
+            (NP
+              (NML
+                (NML (NNP Saint) (NNP Louis) (NNP County))
+                (, ,)
+                (NP (NNP Minnesota))
+                (, ,))
+              (NNP United) (NNP States))))))
+    (: ;)
+    (S
+      (VP (VBN located)
+        (PP (IN along)
+          (NP (DT the) (NNP Saint) (NNP Louis) (NNP River)))
+        (, ,)
+        (PP (IN opposite)
+          (NP
+            (NP (DT the) (NN mouth))
+            (PP (IN of)
+              (NP (DT the) (NNP Artichoke) (NNP River)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Brookston
+			coref:	IDENT			2	0-0	Brookston 
+			name:	LOCATION				0-0	Brookston 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Brookston 
+			N-ARG-A2		2-27	a city in Saint Louis County , Minnesota , United States ; located along the Saint Louis River , opposite the mouth of the Artichoke River 
+	2	a
+	3	city
+			sense:	city.n.01
+	4	in
+	5	Saint
+			name:	CITY				5-6	Saint Louis 
+	6	Louis
+	7	County
+			name:	LOCATION				7-7	County 
+	8	,
+	9	Minnesota
+			name:	STATE_OR_PROVINCE				9-9	Minnesota 
+	10	,
+	11	United
+			name:	COUNTRY				11-12	United States 
+	12	States
+	13	;
+	14	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		14-14	located 
+			N-ARG-A1		2-3	a city 
+			N-ARGM-LOC		15-19	along the Saint Louis River 
+			N-ARGM-LOC		21-27	opposite the mouth of the Artichoke River 
+	15	along
+	16	the
+	17	Saint
+			name:	CITY				17-18	Saint Louis 
+	18	Louis
+	19	River
+			name:	TITLE				19-19	River 
+	20	,
+	21	opposite
+	22	the
+	23	mouth
+			sense:	mouth.n.04
+	24	of
+	25	the
+	26	Artichoke
+			name:	LOCATION				26-26	Artichoke 
+	27	River
+			name:	TITLE				27-27	River 
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The population was 141 at the 2010 census .
+
+
+Treebanked sentence:
+--------------------
+The population was 141 at the 2010 census . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN population))
+    (VP (VBD was)
+      (NP
+        (NP (CD 141))
+        (PP (IN at)
+          (NP (DT the) (CD 2010) (NN census)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	population
+			sense:	population.n.04
+	2	was
+			sense:	equal.v.01
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	The population 
+			N-ARG-A2		3-3	141 
+			N-ARGM-TMP		4-7	at the 2010 census 
+	3	141
+			name:	NUMBER				3-3	141 
+	4	at
+	5	the
+	6	2010
+			name:	DATE				6-6	2010 
+	7	census
+			sense:	census.n.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Brookston is located 27 miles west of the city of Duluth and 17 miles northwest of the city of Cloquet .
+
+
+Treebanked sentence:
+--------------------
+Brookston is located 27 miles west of the city of Duluth and 17 miles northwest of the city of Cloquet . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Brookston))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (ADVP
+          (ADVP
+            (NP (CD 27) (NNS miles))
+            (RB west)
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN city))
+                (PP (IN of)
+                  (NP (NNP Duluth))))))
+          (CC and)
+          (ADVP
+            (NP (CD 17) (NNS miles))
+            (RB northwest)))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN city))
+            (PP (IN of)
+              (NP (NNP Cloquet)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Brookston
+			coref:	IDENT			2	0-0	Brookston 
+			name:	LOCATION				0-0	Brookston 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		2-2	located 
+			N-ARG-A1		0-0	Brookston 
+			N-ARGM-LOC		3-19	27 miles west of the city of Duluth and 17 miles northwest of the city of Cloquet 
+	3	27
+			name:	NUMBER				3-3	27 
+	4	miles
+			sense:	mile.n.01
+	5	west
+			sense:	west.r.01
+	6	of
+	7	the
+			coref:	IDENT			0	7-10	the city of Duluth 
+	8	city
+			sense:	city.n.01
+	9	of
+	10	Duluth
+			name:	CITY				10-10	Duluth 
+	11	and
+	12	17
+			name:	NUMBER				12-12	17 
+	13	miles
+			sense:	mile.n.01
+	14	northwest
+			sense:	northwest.r.01
+	15	of
+	16	the
+			coref:	IDENT			0	16-19	the city of Cloquet 
+	17	city
+			sense:	city.n.01
+	18	of
+	19	Cloquet
+			name:	CITY				19-19	Cloquet 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+U.S. Highway 2 and Saint Louis County Road 31 ( CR 31 ) are two of the main routes in Brookston .
+
+
+Treebanked sentence:
+--------------------
+U.S. Highway 2 and Saint Louis County Road 31 ( CR 31 ) are two of the main routes in Brookston . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP U.S.) (NNP Highway)
+        (NML
+          (NML (CD 2))
+          (CC and)
+          (NML (NNP Saint) (NNP Louis)))
+        (NNP County) (NNP Road) (CD 31))
+      (-LRB- -LRB-)
+      (NP (NNP CR) (CD 31))
+      (-RRB- -RRB-))
+    (VP (VBP are)
+      (NP
+        (NP (CD two))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJ main) (NNS routes))
+            (PP (IN in)
+              (NP (NNP Brookston)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	U.S.
+			name:	COUNTRY				0-0	U.S. 
+	1	Highway
+	2	2
+			name:	NUMBER				2-2	2 
+	3	and
+	4	Saint
+			name:	CITY				4-5	Saint Louis 
+	5	Louis
+	6	County
+			name:	LOCATION				6-7	County Road 
+	7	Road
+	8	31
+			name:	NUMBER				8-8	31 
+	9	(
+	10	CR
+	11	31
+			name:	NUMBER				11-11	31 
+	12	)
+	13	are
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	are 
+			N-ARG-A1		0-12	U.S. Highway 2 and Saint Louis County Road 31 ( CR 31 ) 
+			N-ARG-A2		14-20	two of the main routes in Brookston 
+	14	two
+			name:	NUMBER				14-14	two 
+	15	of
+	16	the
+	17	main
+			sense:	chief.s.01
+	18	routes
+			sense:	road.n.01
+	19	in
+	20	Brookston
+			coref:	IDENT			2	20-20	Brookston 
+			name:	LOCATION				20-20	Brookston 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The city of Brookston is located within Culver Township geographically but is a separate entity .
+
+
+Treebanked sentence:
+--------------------
+The city of Brookston is located within Culver Township geographically but is a separate entity . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN city))
+      (PP (IN of)
+        (NP (NNP Brookston))))
+    (VP
+      (VP (VBZ is)
+        (VP (VBN located)
+          (PP (IN within)
+            (NP (NNP Culver) (NNP Township)))
+          (ADVP (RB geographically))))
+      (CC but)
+      (VP (VBZ is)
+        (NP (DT a) (JJ separate) (NN entity))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-3	The city of Brookston 
+	1	city
+			sense:	city.n.01
+	2	of
+	3	Brookston
+			coref:	IDENT			2	3-3	Brookston 
+			name:	LOCATION				3-3	Brookston 
+	4	is
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	is 
+	5	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		5-5	located 
+			N-ARG-A1		0-3	The city of Brookston 
+			N-ARGM-LOC		6-8	within Culver Township 
+			N-ARGM-MNR		9-9	geographically 
+	6	within
+	7	Culver
+			coref:	IDENT			1	7-8	Culver Township 
+			name:	LOCATION				7-8	Culver Township 
+	8	Township
+	9	geographically
+			sense:	geographically.r.01
+	10	but
+	11	is
+			sense:	be.v.01
+			prop:	be.01
+			V		11-11	is 
+			N-ARG-A1		0-3	The city of Brookston 
+			N-ARG-A2		12-14	a separate entity 
+	12	a
+	13	separate
+			sense:	separate.a.01
+	14	entity
+			sense:	entity.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Brookston is politically independent of the township .
+
+
+Treebanked sentence:
+--------------------
+Brookston is politically independent of the township . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Brookston))
+    (VP (VBZ is)
+      (ADJP (RB politically) (JJ independent)
+        (PP (IN of)
+          (NP (DT the) (NN township)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Brookston
+			coref:	IDENT			2	0-0	Brookston 
+			name:	LOCATION				0-0	Brookston 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Brookston 
+			N-ARG-A2		2-6	politically independent of the township 
+	2	politically
+			sense:	politically.r.02
+	3	independent
+			name:	RELIGION				3-3	independent 
+			sense:	autonomous.s.01
+	4	of
+	5	the
+			coref:	IDENT			1	5-6	the township 
+	6	township
+			sense:	township.n.01
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Brookston is located on the northern edge of the Fond du Lac Indian Reservation .
+
+
+Treebanked sentence:
+--------------------
+Brookston is located on the northern edge of the Fond du Lac Indian Reservation . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Brookston))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (JJ northern) (NN edge))
+            (PP (IN of)
+              (NP (DT the)
+                (NML (NNP Fond) (NNP du) (NNP Lac))
+                (JJ Indian) (NN Reservation)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Brookston
+			coref:	IDENT			2	0-0	Brookston 
+			name:	LOCATION				0-0	Brookston 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		2-2	located 
+			N-ARG-A1		0-0	Brookston 
+			N-ARGM-LOC		3-13	on the northern edge of the Fond du Lac Indian Reservation 
+	3	on
+	4	the
+	5	northern
+			sense:	northern.a.04
+	6	edge
+			sense:	edge.n.01
+	7	of
+	8	the
+	9	Fond
+	10	du
+	11	Lac
+	12	Indian
+			name:	NATIONALITY				12-12	Indian 
+	13	Reservation
+			sense:	reservation.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is one of three administrative centers of the reservation .
+
+
+Treebanked sentence:
+--------------------
+It is one of three administrative centers of the reservation . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (CD three) (JJ administrative) (NNS centers))
+            (PP (IN of)
+              (NP (DT the) (NN reservation)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-9	one of three administrative centers of the reservation 
+	2	one
+			name:	NUMBER				2-2	one 
+	3	of
+	4	three
+			name:	NUMBER				4-4	three 
+	5	administrative
+			sense:	administrative.a.01
+	6	centers
+			sense:	center.n.01
+	7	of
+	8	the
+	9	reservation
+			sense:	reservation.n.01
+	10	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.7-10	the city of Duluth 
+				2.16-19	the city of Cloquet 
+				4.0-3	The city of Brookston 
+	Chain 1 (IDENT)
+				4.7-8	Culver Township 
+				5.5-6	the township 
+	Chain 2 (IDENT)
+				0.0-0	Brookston 
+				2.0-0	Brookston 
+				3.20-20	Brookston 
+				4.3-3	Brookston 
+				5.0-0	Brookston 
+				6.0-0	Brookston 
+				7.0-0	It 
+

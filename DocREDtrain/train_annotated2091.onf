@@ -1,0 +1,681 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Pasi Juhani Rutanen ( born .
+
+
+Treebanked sentence:
+--------------------
+Pasi Juhani Rutanen ( born . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Pasi) (NNP Juhani) (NNP Rutanen))
+      (-LRB- -LRB-)
+      (VP (VBN born)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Pasi
+			name:	PERSON				0-2	Pasi Juhani Rutanen 
+	1	Juhani
+	2	Rutanen
+	3	(
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-2	Pasi Juhani Rutanen 
+	5	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+23 October 1936 Jyväskylä ) is a Finnish journalist and diplomat .
+
+
+Treebanked sentence:
+--------------------
+23 October 1936 Jyväskylä ) is a Finnish journalist and diplomat . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (CD 23) (NNP October) (CD 1936))
+      (NP (NNP Jyväskylä)))
+    (-RRB- -RRB-)
+    (VP (VBZ is)
+      (NP (DT a) (JJ Finnish) (NN journalist)
+        (CC and)
+        (NN diplomat)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	23
+			name:	DATE				0-2	23 October 1936 
+	1	October
+	2	1936
+	3	Jyväskylä
+	4	)
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARGM-TMP		0-2	23 October 1936 
+			N-ARG-A1		3-3	Jyväskylä 
+			N-ARG-A2		6-10	a Finnish journalist and diplomat 
+	6	a
+	7	Finnish
+			name:	NATIONALITY				7-7	Finnish 
+	8	journalist
+			name:	TITLE				8-8	journalist 
+			sense:	journalist.n.01
+	9	and
+	10	diplomat
+			name:	TITLE				10-10	diplomat 
+			sense:	diplomat.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Rutanen studied at the University of Helsinki and did same time cartoons and columns at the Ylioppilaslehti .
+
+
+Treebanked sentence:
+--------------------
+Rutanen studied at the University of Helsinki and did same time cartoons and columns at the Ylioppilaslehti . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Rutanen))
+    (VP
+      (VP (VBD studied)
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Helsinki))))))
+      (CC and)
+      (VP (VBD did)
+        (NP (JJ same) (NN time) (NNS cartoons)
+          (CC and)
+          (NNS columns))
+        (PP (IN at)
+          (NP (DT the) (NNP Ylioppilaslehti)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Rutanen
+			coref:	IDENT			1	0-0	Rutanen 
+			name:	PERSON				0-0	Rutanen 
+	1	studied
+			sense:	study.v.02
+			prop:	study.01
+			V		1-1	studied 
+			N-ARG-A0		0-0	Rutanen 
+			N-ARGM-LOC		2-6	at the University of Helsinki 
+	2	at
+	3	the
+	4	University
+			name:	ORGANIZATION				4-6	University of Helsinki 
+	5	of
+	6	Helsinki
+	7	and
+	8	did
+			sense:	perform.v.01
+			prop:	do.02
+			V		8-8	did 
+			N-ARG-A0		0-0	Rutanen 
+			N-ARG-A1		9-9	same 
+			N-ARG-A1		11-13	cartoons and columns 
+			N-ARGM-LOC		14-16	at the Ylioppilaslehti 
+	9	same
+			sense:	same.a.01
+	10	time
+			sense:	time.n.03
+	11	cartoons
+			sense:	cartoon.n.01
+	12	and
+	13	columns
+			sense:	column.n.05
+	14	at
+	15	the
+	16	Ylioppilaslehti
+			name:	LOCATION				16-16	Ylioppilaslehti 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After graduating as a bachelor of political science he went to Finnish Broadcasting Company .
+
+
+Treebanked sentence:
+--------------------
+After graduating as a bachelor of political science he went to Finnish Broadcasting Company . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG graduating)
+          (PP (IN as)
+            (NP
+              (NP (DT a) (NN bachelor))
+              (PP (IN of)
+                (NP (JJ political) (NN science))))))))
+    (NP (PRP he))
+    (VP (VBD went)
+      (PP (IN to)
+        (NP (NNP Finnish) (NNP Broadcasting) (NNP Company))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	graduating
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		1-1	graduating 
+			N-ARGM-MNR		2-7	as a bachelor of political science 
+			N-ARG-A0		8-8	he 
+	2	as
+	3	a
+	4	bachelor
+			name:	TITLE				4-4	bachelor 
+			sense:	bachelor.n.01
+	5	of
+	6	political
+			sense:	political.a.03
+	7	science
+			sense:	science.n.01
+	8	he
+			coref:	IDENT			1	8-8	he 
+	9	went
+			sense:	travel.v.01
+			prop:	go.02
+			V		9-9	went 
+			N-ARGM-TMP		0-7	After graduating as a bachelor of political science 
+			N-ARG-A0		8-8	he 
+			N-ARG-A4		10-13	to Finnish Broadcasting Company 
+	10	to
+	11	Finnish
+			coref:	IDENT			0	11-13	Finnish Broadcasting Company 
+			name:	ORGANIZATION				11-13	Finnish Broadcasting Company 
+	12	Broadcasting
+	13	Company
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the mid-1960s , he was sent to the United States as the first Washington correspondent of the Finnish Broadcasting Company , until he moved to the diplomatic service in 1970 .
+
+
+Treebanked sentence:
+--------------------
+In the mid-1960s , he was sent to the United States as the first Washington correspondent of the Finnish Broadcasting Company , until he moved to the diplomatic service in 1970 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NNS mid-1960s)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN sent)
+        (PP (IN to)
+          (NP (DT the) (NNP United) (NNP States)))
+        (PP (IN as)
+          (NP
+            (NP (DT the) (JJ first) (NNP Washington) (NN correspondent))
+            (PP (IN of)
+              (NP (DT the) (NNP Finnish) (NNP Broadcasting) (NNP Company)))))
+        (, ,)
+        (SBAR (IN until)
+          (S
+            (NP (PRP he))
+            (VP (VBD moved)
+              (PP (IN to)
+                (NP (DT the) (JJ diplomatic) (NN service)))
+              (PP (IN in)
+                (NP (CD 1970))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+			name:	DATE				1-2	the mid-1960s 
+	2	mid-1960s
+	3	,
+	4	he
+			coref:	IDENT			1	4-4	he 
+	5	was
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	was 
+	6	sent
+			sense:	send.v.01
+			prop:	send.03
+			V		6-6	sent 
+			N-ARGM-TMP		0-2	In the mid-1960s 
+			N-ARG-A1		4-4	he 
+			N-ARG-A2		7-10	to the United States 
+			N-ARGM-PRD		11-20	as the first Washington correspondent of the Finnish Broadcasting Company 
+			N-ARGM-TMP		22-30	until he moved to the diplomatic service in 1970 
+	7	to
+	8	the
+	9	United
+			name:	COUNTRY				9-10	United States 
+	10	States
+	11	as
+	12	the
+	13	first
+			name:	ORDINAL				13-13	first 
+			sense:	first.a.01
+	14	Washington
+			name:	STATE_OR_PROVINCE				14-14	Washington 
+	15	correspondent
+			name:	TITLE				15-15	correspondent 
+			sense:	correspondent.n.02
+	16	of
+	17	the
+			coref:	IDENT			0	17-20	the Finnish Broadcasting Company 
+	18	Finnish
+			name:	NATIONALITY				18-18	Finnish 
+	19	Broadcasting
+			name:	ORGANIZATION				19-20	Broadcasting Company 
+	20	Company
+	21	,
+	22	until
+	23	he
+			coref:	IDENT			1	23-23	he 
+	24	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		24-24	moved 
+			N-ARG-A0		23-23	he 
+			N-ARG-A2		25-28	to the diplomatic service 
+			N-ARGM-TMP		29-30	in 1970 
+	25	to
+	26	the
+	27	diplomatic
+			sense:	diplomatic.a.01
+	28	service
+			sense:	service.n.04
+	29	in
+	30	1970
+			name:	DATE				30-30	1970 
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Rutanen is especially remembered of the reports from Houston about of the Apollo 11 flight which landed on the moon .
+
+
+Treebanked sentence:
+--------------------
+Rutanen is especially remembered of the reports from Houston about of the Apollo 11 flight which landed on the moon . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Rutanen))
+    (VP (VBZ is)
+      (ADVP (RB especially))
+      (VP (VBN remembered)
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNS reports))
+            (PP (IN from)
+              (NP (NNP Houston)))))
+        (PP (IN about) (IN of)
+          (NP
+            (NP (DT the)
+              (NML (NNP Apollo) (CD 11))
+              (NN flight))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBD landed)
+                  (PP (IN on)
+                    (NP (DT the) (NN moon))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Rutanen
+			coref:	IDENT			1	0-0	Rutanen 
+			name:	PERSON				0-0	Rutanen 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	especially
+			sense:	particularly.r.01
+	3	remembered
+			sense:	remember.v.02
+			prop:	remember.01
+			V		3-3	remembered 
+			N-ARG-A1		0-0	Rutanen 
+			N-ARGM-ADV		2-2	especially 
+	4	of
+	5	the
+	6	reports
+			sense:	report.n.03
+	7	from
+	8	Houston
+			name:	CITY				8-8	Houston 
+	9	about
+	10	of
+	11	the
+	12	Apollo
+			name:	MISC				12-12	Apollo 
+	13	11
+			name:	NUMBER				13-13	11 
+	14	flight
+			sense:	flight.n.02
+	15	which
+	16	landed
+			sense:	land.v.01
+			prop:	land.01
+			V		16-16	landed 
+			N-ARG-A1		11-14	the Apollo 11 flight 
+			R-ARG-A1		15-15	which 
+			N-ARGM-LOC		17-19	on the moon 
+	17	on
+	18	the
+	19	moon
+			sense:	moon.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Rutanen was an Ambassador from 1984 to 1987 in Manila and served as Deputy Director General of the Development Cooperation Department in the Ministry of Foreign Affairs between 1987 and 1989 , as a negotiating officer from 1989 to 1991 , Ambassador to Bangkok in years 1984 – 1986 Finland 's ambassador to the OECD delegation in Paris 1991 – 1997 and Ambassador in Beijing 1997–2001 
+
+
+Treebanked sentence:
+--------------------
+Rutanen was an Ambassador from 1984 to 1987 in Manila and served as Deputy Director General of the Development Cooperation Department in the Ministry of Foreign Affairs between 1987 and 1989 , as a negotiating officer from 1989 to 1991 , Ambassador to Bangkok in years 1984 – 1986 Finland 's ambassador to the OECD delegation in Paris 1991 – 1997 and Ambassador in Beijing 1997 – 2001 Rutanen lives with his American wife in Paris 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PRN
+      (S
+        (NP (NNP Rutanen))
+        (VP
+          (VP (VBD was)
+            (NP
+              (NP (DT an) (NNP Ambassador))
+              (PP (IN from)
+                (NP (CD 1984))))
+            (PP (IN to)
+              (NP
+                (NP (CD 1987))
+                (PP (IN in)
+                  (NP (NNP Manila))))))
+          (CC and)
+          (VP (VBD served)
+            (PP (IN as)
+              (NP
+                (NP
+                  (NML (NNP Deputy) (NNP Director))
+                  (NNP General))
+                (PP (IN of)
+                  (NP (DT the) (NNP Development) (NNP Cooperation) (NNP Department)))))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NNP Ministry))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP Foreign) (NNPS Affairs))
+                    (PP (IN between)
+                      (NP (CD 1987)
+                        (CC and)
+                        (CD 1989))))))))
+          (, ,)
+          (PP (IN as)
+            (NP
+              (NP (DT a) (VBG negotiating) (NN officer))
+              (PP (IN from)
+                (NP
+                  (NP
+                    (NP (CD 1989))
+                    (PP (IN to)
+                      (NP (CD 1991))))
+                  (, ,)
+                  (NP
+                    (NP (NNP Ambassador))
+                    (PP (IN to)
+                      (NP
+                        (NP (NNP Bangkok))
+                        (PP (IN in)
+                          (NP (NNS years)))))
+                    (NP-TMP (CD 1984))
+                    (PP (SYM –)
+                      (NP
+                        (NP
+                          (NP (CD 1986) (NN Finland) (POS 's))
+                          (NN ambassador))
+                        (PP (IN to)
+                          (NP
+                            (NP (DT the) (NNP OECD) (NN delegation))
+                            (PP (IN in)
+                              (NP (NNP Paris) (CD 1991)))))))
+                    (PP (SYM –)
+                      (NP (CD 1997))))
+                  (CC and)
+                  (NP
+                    (NP (NNP Ambassador))
+                    (PP (IN in)
+                      (NP (NNP Beijing) (CD 1997))))))
+              (PP (SYM –)
+                (NP (CD 2001))))))))
+    (NP (NNP Rutanen))
+    (VP (VBZ lives)
+      (PP (IN with)
+        (NP
+          (NP (PRP$ his) (JJ American) (NN wife))
+          (PP (IN in)
+            (NP (NNP Paris))))))))
+
+
+Leaves:
+-------
+	0	Rutanen
+			coref:	IDENT			1	0-0	Rutanen 
+			name:	PERSON				0-0	Rutanen 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	Rutanen 
+			N-ARG-A2		2-3	an Ambassador 
+			N-ARGM-TMP		4-7	from 1984 to 1987 
+			N-ARGM-LOC		8-9	in Manila 
+	2	an
+	3	Ambassador
+			name:	TITLE				3-3	Ambassador 
+	4	from
+	5	1984
+			name:	DATE				5-7	1984 to 1987 
+	6	to
+	7	1987
+	8	in
+	9	Manila
+			name:	CITY				9-9	Manila 
+	10	and
+	11	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		11-11	served 
+			N-ARG-A0		0-0	Rutanen 
+			N-ARG-A1		12-26	as Deputy Director General of the Development Cooperation Department in the Ministry of Foreign Affairs 
+			N-ARGM-TMP		27-30	between 1987 and 1989 
+			C-ARG-A1		32-67	as a negotiating officer from 1989 to 1991 , Ambassador to Bangkok in years 1984 – 1986 Finland 's ambassador to the OECD delegation in Paris 1991 – 1997 and Ambassador in Beijing 1997 – 2001 
+	12	as
+	13	Deputy
+			name:	TITLE				13-15	Deputy Director General 
+	14	Director
+	15	General
+	16	of
+	17	the
+	18	Development
+			name:	ORGANIZATION				18-20	Development Cooperation Department 
+	19	Cooperation
+	20	Department
+	21	in
+	22	the
+	23	Ministry
+	24	of
+	25	Foreign
+	26	Affairs
+	27	between
+	28	1987
+			name:	DATE				28-30	1987 and 1989 
+	29	and
+	30	1989
+	31	,
+	32	as
+	33	a
+	34	negotiating
+			sense:	negociate.v.06
+			prop:	negotiate.01
+			V		34-34	negotiating 
+			N-ARG-A0		35-35	officer 
+	35	officer
+			sense:	officeholder.n.01
+	36	from
+	37	1989
+			name:	DATE				37-39	1989 to 1991 
+	38	to
+	39	1991
+	40	,
+	41	Ambassador
+			name:	TITLE				41-41	Ambassador 
+	42	to
+	43	Bangkok
+			name:	CITY				43-43	Bangkok 
+	44	in
+	45	years
+			name:	DATE				45-46	years 1984 
+			sense:	year.n.01
+	46	1984
+	47	–
+	48	1986
+			name:	DATE				48-48	1986 
+	49	Finland
+			name:	COUNTRY				49-49	Finland 
+			sense:	finland.n.01
+	50	's
+	51	ambassador
+			name:	TITLE				51-51	ambassador 
+			sense:	ambassador.n.01
+	52	to
+	53	the
+	54	OECD
+			name:	ORGANIZATION				54-54	OECD 
+	55	delegation
+			sense:	deputation.n.01
+	56	in
+	57	Paris
+			name:	CITY				57-57	Paris 
+	58	1991
+			name:	DATE				58-58	1991 
+	59	–
+	60	1997
+			coref:	IDENT			2	60-60	1997 
+			name:	DATE				60-60	1997 
+	61	and
+	62	Ambassador
+			name:	TITLE				62-62	Ambassador 
+	63	in
+	64	Beijing
+			name:	CITY				64-64	Beijing 
+	65	1997
+			coref:	IDENT			2	65-65	1997 
+			name:	DATE				65-65	1997 
+	66	–
+	67	2001
+			name:	DATE				67-67	2001 
+	68	Rutanen
+			coref:	IDENT			1	68-68	Rutanen 
+			name:	PERSON				68-68	Rutanen 
+	69	lives
+			sense:	populate.v.01
+			prop:	live.01
+			V		69-69	lives 
+			N-ARG-A0		68-68	Rutanen 
+			N-ARGM-MNR		70-73	with his American wife 
+			N-ARGM-LOC		74-75	in Paris 
+	70	with
+	71	his
+			coref:	IDENT			1	71-71	his 
+	72	American
+			name:	NATIONALITY				72-72	American 
+	73	wife
+			sense:	wife.n.01
+	74	in
+	75	Paris
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.17-20	the Finnish Broadcasting Company 
+				3.11-13	Finnish Broadcasting Company 
+	Chain 1 (IDENT)
+				2.0-0	Rutanen 
+				3.8-8	he 
+				4.4-4	he 
+				4.23-23	he 
+				5.0-0	Rutanen 
+				6.0-0	Rutanen 
+				6.68-68	Rutanen 
+				6.71-71	his 
+	Chain 2 (IDENT)
+				6.60-60	1997 
+				6.65-65	1997 
+

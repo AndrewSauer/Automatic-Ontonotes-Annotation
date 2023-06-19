@@ -1,0 +1,739 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+George Charles Calnan ( January 18 , 1900 – April 4 , 1933 ) was a United States Navy officer who also competed for the United States as a fencer .
+
+
+Treebanked sentence:
+--------------------
+George Charles Calnan ( January 18 , 1900 – April 4 , 1933 ) was a United States Navy officer who also competed for the United States as a fencer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP George) (NNP Charles) (NNP Calnan))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP January) (CD 18) (, ,) (CD 1900))
+        (PP (SYM –)
+          (NP (NNP April) (CD 4) (, ,) (CD 1933))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a)
+          (NML (NNP United) (NNP States) (NNP Navy))
+          (NN officer))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (ADVP (RB also))
+            (VP (VBD competed)
+              (PP (IN for)
+                (NP (DT the) (NNP United) (NNP States)))
+              (PP (IN as)
+                (NP (DT a) (NN fencer))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	George
+			coref:	IDENT			1	0-2	George Charles Calnan 
+			name:	PERSON				0-2	George Charles Calnan 
+	1	Charles
+	2	Calnan
+	3	(
+	4	January
+			name:	DATE				4-7	January 18 , 1900 
+	5	18
+	6	,
+	7	1900
+	8	–
+	9	April
+			name:	DATE				9-12	April 4 , 1933 
+	10	4
+	11	,
+	12	1933
+	13	)
+	14	was
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		0-13	George Charles Calnan ( January 18 , 1900 – April 4 , 1933 ) 
+			N-ARG-A2		15-29	a United States Navy officer who also competed for the United States as a fencer 
+	15	a
+	16	United
+			coref:	IDENT			0	16-18	United States Navy 
+			name:	ORGANIZATION				16-18	United States Navy 
+	17	States
+	18	Navy
+	19	officer
+			sense:	military_officer.n.01
+	20	who
+	21	also
+			sense:	besides.r.02
+	22	competed
+			sense:	compete.v.01
+			prop:	compete.01
+			V		22-22	competed 
+			N-ARG-A0		15-19	a United States Navy officer 
+			R-ARG-A0		20-20	who 
+			N-ARGM-DIS		21-21	also 
+			N-ARG-A2		23-26	for the United States 
+			N-ARGM-PRD		27-29	as a fencer 
+	23	for
+	24	the
+			coref:	IDENT			2	24-26	the United States 
+	25	United
+			name:	COUNTRY				25-26	United States 
+	26	States
+	27	as
+	28	a
+	29	fencer
+			sense:	fencer.n.01
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Competing in four Summer Olympics , he earned three bronze medals ( Individual épée : 1928 , Team foil : 1932 , Team épée : 1932 ) 
+
+
+Treebanked sentence:
+--------------------
+Competing in four Summer Olympics , he earned three bronze medals ( Individual épée : 1928 , Team foil : 1932 , Team épée : 1932 ) A native of Boston , Massachusetts , Calnan did not start fencing until he was a student at the United States Naval Academy in Annapolis , Maryland . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBG Competing)
+        (PP (IN in)
+          (NP (CD four)))
+        (NP
+          (NP (NNP Summer) (NNPS Olympics))
+          (, ,)
+          (PRN
+            (S
+              (NP (PRP he))
+              (VP (VBD earned)
+                (NP (CD three) (NN bronze) (NNS medals))
+                (PRN (-LRB- -LRB-)
+                  (FRAG
+                    (NP (JJ Individual) (NN épée))
+                    (: :)
+                    (NP (CD 1928)))
+                  (, ,)
+                  (FRAG
+                    (NP (NNP Team) (NN foil))
+                    (: :)
+                    (NP (CD 1932)))
+                  (, ,)
+                  (FRAG
+                    (NP (NNP Team) (NN épée))
+                    (: :)
+                    (NP (CD 1932)))
+                  (-RRB- -RRB-)))))
+          (NP
+            (NP (DT A) (NN native))
+            (PP (IN of)
+              (NP (NNP Boston) (, ,) (NNP Massachusetts)))))))
+    (, ,)
+    (NP (NNP Calnan))
+    (VP (VBD did) (RB not)
+      (VP (VB start)
+        (NP (NN fencing))
+        (SBAR (IN until)
+          (S
+            (NP (PRP he))
+            (VP (VBD was)
+              (NP
+                (NP (DT a) (NN student))
+                (PP (IN at)
+                  (NP
+                    (NP (DT the) (NNP United) (NNP States) (NNP Naval) (NNP Academy))
+                    (PP (IN in)
+                      (NP (NNP Annapolis) (, ,) (NNP Maryland)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Competing
+			sense:	compete.v.01
+			prop:	compete.01
+			V		0-0	Competing 
+			N-ARGM-LOC		1-4	in four Summer Olympics 
+			N-ARG-A0		6-6	he 
+	1	in
+	2	four
+			name:	NUMBER				2-2	four 
+	3	Summer
+			name:	DATE				3-3	Summer 
+	4	Olympics
+			name:	MISC				4-4	Olympics 
+	5	,
+	6	he
+			coref:	IDENT			1	6-6	he 
+	7	earned
+			sense:	earn.v.02
+			prop:	earn.01
+			V		7-7	earned 
+			R-ARG-A0		0-4	Competing in four Summer Olympics 
+			N-ARG-A0		6-6	he 
+			N-ARG-A1		8-26	three bronze medals ( Individual épée : 1928 , Team foil : 1932 , Team épée : 1932 ) 
+	8	three
+			name:	NUMBER				8-8	three 
+	9	bronze
+			sense:	bronze.n.01
+	10	medals
+			sense:	decoration.n.02
+	11	(
+	12	Individual
+			sense:	individual.a.01
+	13	épée
+	14	:
+	15	1928
+			name:	DATE				15-15	1928 
+	16	,
+	17	Team
+	18	foil
+			sense:	foil.n.05
+	19	:
+	20	1932
+			name:	DATE				20-20	1932 
+	21	,
+	22	Team
+	23	épée
+	24	:
+	25	1932
+			name:	DATE				25-25	1932 
+	26	)
+	27	A
+	28	native
+			sense:	native.n.02
+	29	of
+	30	Boston
+			name:	CITY				30-30	Boston 
+	31	,
+	32	Massachusetts
+			name:	STATE_OR_PROVINCE				32-32	Massachusetts 
+	33	,
+	34	Calnan
+			coref:	IDENT			1	34-34	Calnan 
+			name:	PERSON				34-34	Calnan 
+	35	did
+			sense:	make.v.01
+			prop:	do.01
+			V		35-35	did 
+	36	not
+			sense:	not.r.01
+	37	start
+			sense:	get_down.v.07
+			prop:	start.01
+			V		37-37	start 
+			R-ARG-A0		27-32	A native of Boston , Massachusetts 
+			N-ARG-A0		34-34	Calnan 
+			N-ARGM-NEG		36-36	not 
+			N-ARG-A1		38-38	fencing 
+			N-ARGM-TMP		39-53	until he was a student at the United States Naval Academy in Annapolis , Maryland 
+	38	fencing
+			sense:	fencing.n.03
+	39	until
+	40	he
+			coref:	IDENT			1	40-40	he 
+	41	was
+			sense:	be.v.01
+			prop:	be.01
+			V		41-41	was 
+			N-ARG-A1		40-40	he 
+			N-ARG-A2		42-53	a student at the United States Naval Academy in Annapolis , Maryland 
+	42	a
+	43	student
+			name:	TITLE				43-43	student 
+			sense:	student.n.01
+	44	at
+	45	the
+			coref:	IDENT			2	45-53	the United States Naval Academy in Annapolis , Maryland 
+	46	United
+			name:	COUNTRY				46-47	United States 
+	47	States
+	48	Naval
+			name:	CITY				48-48	Naval 
+	49	Academy
+			name:	LOCATION				49-49	Academy 
+	50	in
+	51	Annapolis
+			name:	CITY				51-51	Annapolis 
+	52	,
+	53	Maryland
+			name:	STATE_OR_PROVINCE				53-53	Maryland 
+	54	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+By the time he was a senior , he was captain of the Navy 's fencing team .
+
+
+Treebanked sentence:
+--------------------
+By the time he was a senior , he was captain of the Navy 's fencing team . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN By)
+        (NP (DT the) (NN time)))
+      (NP (PRP he))
+      (VP (VBD was)
+        (NP (DT a) (JJ senior))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP (NN captain))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Navy) (POS 's))
+            (NN fencing) (NN team)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	By
+	1	the
+	2	time
+			sense:	time.n.01
+	3	he
+			coref:	IDENT			1	3-3	he 
+	4	was
+			sense:	be.v.01
+			prop:	be.01
+			V		4-4	was 
+			N-ARGM-TMP		1-2	the time 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		5-6	a senior 
+	5	a
+	6	senior
+			sense:	senior.s.02
+	7	,
+	8	he
+			coref:	IDENT			1	8-8	he 
+	9	was
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	was 
+			N-ARGM-TMP		0-6	By the time he was a senior 
+			N-ARG-A1		8-8	he 
+			N-ARG-A2		10-16	captain of the Navy 's fencing team 
+	10	captain
+			name:	TITLE				10-10	captain 
+			sense:	captain.n.05
+	11	of
+	12	the
+			coref:	IDENT			0	12-14	the Navy 's 
+	13	Navy
+			name:	ORGANIZATION				13-13	Navy 
+	14	's
+	15	fencing
+			sense:	fencing.n.03
+	16	team
+			sense:	team.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Two years later , Calnan competed for the US at the 1924 Summer Olympics in Paris where he finished tied for fifth in the team épée competition .
+
+
+Treebanked sentence:
+--------------------
+Two years later , Calnan competed for the US at the 1924 Summer Olympics in Paris where he finished tied for fifth in the team épée competition . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP
+      (NP (CD Two) (NNS years))
+      (RB later))
+    (, ,)
+    (NP (NNP Calnan))
+    (VP (VBD competed)
+      (PP (IN for)
+        (NP (DT the) (NNP US)))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (CD 1924) (NNP Summer) (NNPS Olympics))
+          (PP (IN in)
+            (NP (NNP Paris)))))
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP he))
+          (VP (VBD finished)
+            (VP (VBN tied)
+              (PP (IN for)
+                (NP
+                  (ADJP (JJ fifth)
+                    (PP (IN in)
+                      (NP (DT the) (NN team) (NN épée))))
+                  (NN competition))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Two
+			name:	DATE				0-2	Two years later 
+	1	years
+			sense:	year.n.01
+	2	later
+			sense:	subsequently.r.01
+	3	,
+	4	Calnan
+			coref:	IDENT			1	4-4	Calnan 
+			name:	PERSON				4-4	Calnan 
+	5	competed
+			sense:	compete.v.01
+			prop:	compete.01
+			V		5-5	competed 
+			N-ARGM-TMP		0-2	Two years later 
+			N-ARG-A0		4-4	Calnan 
+			N-ARGM-ADV		6-8	for the US 
+			N-ARGM-LOC		9-26	at the 1924 Summer Olympics in Paris where he finished tied for fifth in the team épée competition 
+	6	for
+	7	the
+	8	US
+			name:	COUNTRY				8-8	US 
+	9	at
+	10	the
+			name:	DATE				10-12	the 1924 Summer 
+	11	1924
+	12	Summer
+	13	Olympics
+			name:	MISC				13-13	Olympics 
+	14	in
+	15	Paris
+			name:	CITY				15-15	Paris 
+	16	where
+	17	he
+			coref:	IDENT			1	17-17	he 
+	18	finished
+			sense:	end.v.01
+			prop:	finish.02
+			V		18-18	finished 
+			N-ARGM-LOC		10-15	the 1924 Summer Olympics in Paris 
+			R-ARGM-LOC		16-16	where 
+			N-ARG-A1		17-17	he 
+			N-ARGM-LOC		22-26	in the team épée competition 
+	19	tied
+			sense:	tie.v.02
+			prop:	tie.03
+			V		19-19	tied 
+			N-ARGM-LOC		22-26	in the team épée competition 
+	20	for
+	21	fifth
+			name:	ORDINAL				21-21	fifth 
+			sense:	fifth.s.01
+	22	in
+	23	the
+	24	team
+			sense:	team.n.01
+	25	épée
+	26	competition
+			sense:	contest.n.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Calnan took the Olympic Oath at the 1932 Summer Olympics in Los Angeles .
+
+
+Treebanked sentence:
+--------------------
+Calnan took the Olympic Oath at the 1932 Summer Olympics in Los Angeles . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Calnan))
+    (VP (VBD took)
+      (NP (DT the) (JJ Olympic) (NN Oath))
+      (PP (IN at)
+        (NP (DT the) (CD 1932) (NNP Summer) (NNPS Olympics)))
+      (PP (IN in)
+        (NP (NNP Los) (NNP Angeles))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Calnan
+			coref:	IDENT			1	0-0	Calnan 
+			name:	PERSON				0-0	Calnan 
+	1	took
+			sense:	take.v.01
+			prop:	take.01
+			V		1-1	took 
+			N-ARG-A0		0-0	Calnan 
+			N-ARG-A1		2-4	the Olympic Oath 
+			N-ARGM-LOC		5-12	at the 1932 Summer Olympics in Los Angeles 
+	2	the
+	3	Olympic
+			name:	MISC				3-4	Olympic Oath 
+	4	Oath
+			sense:	oath.n.03
+	5	at
+	6	the
+			name:	DATE				6-8	the 1932 Summer 
+	7	1932
+	8	Summer
+	9	Olympics
+			name:	MISC				9-9	Olympics 
+	10	in
+	11	Los
+			name:	CITY				11-12	Los Angeles 
+	12	Angeles
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Calnan was among the 73 fatalities of the USS Akron crash in 1933 .
+
+
+Treebanked sentence:
+--------------------
+Calnan was among the 73 fatalities of the USS Akron crash in 1933 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Calnan))
+    (VP (VBD was)
+      (PP (IN among)
+        (NP
+          (NP (DT the) (CD 73) (NNS fatalities))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP USS) (NNP Akron) (NN crash))
+              (PP (IN in)
+                (NP (CD 1933))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Calnan
+			coref:	IDENT			1	0-0	Calnan 
+			name:	PERSON				0-0	Calnan 
+	1	was
+			sense:	be.v.03
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	Calnan 
+			N-ARG-A2		2-12	among the 73 fatalities of the USS Akron crash in 1933 
+	2	among
+	3	the
+	4	73
+			name:	NUMBER				4-4	73 
+	5	fatalities
+			sense:	fatality.n.01
+	6	of
+	7	the
+			coref:	IDENT			3	7-12	the USS Akron crash in 1933 
+	8	USS
+	9	Akron
+	10	crash
+			name:	CAUSE_OF_DEATH				10-10	crash 
+			sense:	crash.n.02
+	11	in
+	12	1933
+			name:	DATE				12-12	1933 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He had a lieutenant 's rank at the time of the crash .
+
+
+Treebanked sentence:
+--------------------
+He had a lieutenant 's rank at the time of the crash . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD had)
+      (NP
+        (NP (DT a) (NN lieutenant) (POS 's))
+        (NN rank))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NN time))
+          (PP (IN of)
+            (NP (DT the) (NN crash))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	had
+			sense:	have.v.01
+			prop:	have.03
+			V		1-1	had 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-5	a lieutenant 's rank 
+			N-ARGM-TMP		6-11	at the time of the crash 
+	2	a
+	3	lieutenant
+			name:	TITLE				3-3	lieutenant 
+			sense:	lieutenant.n.04
+	4	's
+	5	rank
+			sense:	rank_and_file.n.01
+	6	at
+	7	the
+	8	time
+			name:	DATE				8-8	time 
+			sense:	time.n.01
+	9	of
+	10	the
+			coref:	IDENT			3	10-11	the crash 
+	11	crash
+			name:	CAUSE_OF_DEATH				11-11	crash 
+			sense:	crash.n.02
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was posthumously inducted in the US Fencing Hall of Fame in 1963 , among the first inductees .
+
+
+Treebanked sentence:
+--------------------
+He was posthumously inducted in the US Fencing Hall of Fame in 1963 , among the first inductees . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (ADVP (RB posthumously))
+      (VP (VBN inducted)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNP US) (NNP Fencing) (NNP Hall))
+            (PP (IN of)
+              (NP (NNP Fame)))))
+        (PP (IN in)
+          (NP (CD 1963)))
+        (, ,)
+        (PP (IN among)
+          (NP (DT the) (JJ first) (NNS inductees)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	posthumously
+			sense:	posthumously.r.01
+	3	inducted
+			sense:	induct.v.03
+			prop:	induct.01
+			V		3-3	inducted 
+			N-ARG-A1		0-0	He 
+			N-ARGM-MNR		2-2	posthumously 
+			N-ARG-A2		4-10	in the US Fencing Hall of Fame 
+			N-ARGM-TMP		11-12	in 1963 
+			N-ARGM-PRD		14-17	among the first inductees 
+	4	in
+	5	the
+	6	US
+			name:	COUNTRY				6-6	US 
+	7	Fencing
+			name:	ORGANIZATION				7-10	Fencing Hall of Fame 
+	8	Hall
+	9	of
+	10	Fame
+	11	in
+	12	1963
+			name:	DATE				12-12	1963 
+	13	,
+	14	among
+	15	the
+	16	first
+			name:	ORDINAL				16-16	first 
+			sense:	first.a.01
+	17	inductees
+			sense:	inductee.n.01
+	18	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.16-18	United States Navy 
+				2.12-14	the Navy 's 
+	Chain 1 (IDENT)
+				0.0-2	George Charles Calnan 
+				1.6-6	he 
+				1.34-34	Calnan 
+				1.40-40	he 
+				2.3-3	he 
+				2.8-8	he 
+				3.4-4	Calnan 
+				3.17-17	he 
+				4.0-0	Calnan 
+				5.0-0	Calnan 
+				6.0-0	He 
+				7.0-0	He 
+	Chain 2 (IDENT)
+				1.45-53	the United States Naval Academy in Annapolis , Maryland 
+				0.24-26	the United States 
+	Chain 3 (IDENT)
+				5.7-12	the USS Akron crash in 1933 
+				6.10-11	the crash 
+

@@ -1,0 +1,597 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Baltimore has been described by some as " Charm City , " by others as " Bodymore , Murderland . "
+
+
+Treebanked sentence:
+--------------------
+Baltimore has been described by some as " Charm City , " by others as " Bodymore , Murderland . " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Baltimore))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN described)
+          (PP (IN by)
+            (NP
+              (NP (DT some))
+              (PP (IN as)
+                (NP (`` ")
+                  (NP (NNP Charm) (NNP City))
+                  (, ,) ('' ")
+                  (PP (IN by)
+                    (NP
+                      (NP (NNS others))
+                      (PP (IN as)
+                        (NP (`` ") (NNP Bodymore) (, ,) (NNP Murderland))))))))))))
+    (. .) ('' ")))
+
+
+Leaves:
+-------
+	0	Baltimore
+			coref:	IDENT			1	0-0	Baltimore 
+			name:	CITY				0-0	Baltimore 
+	1	has
+			sense:	have.v.02
+			prop:	have.01
+			V		1-1	has 
+	2	been
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	been 
+	3	described
+			sense:	describe.v.01
+			prop:	describe.01
+			V		3-3	described 
+			N-ARG-A1		0-0	Baltimore 
+			N-ARG-A0		4-5	by some 
+			N-ARG-A2		6-9	as " Charm City 
+	4	by
+	5	some
+	6	as
+	7	"
+	8	Charm
+	9	City
+	10	,
+	11	"
+	12	by
+	13	others
+	14	as
+	15	"
+	16	Bodymore
+			name:	PERSON				16-16	Bodymore 
+	17	,
+	18	Murderland
+			name:	PERSON				18-18	Murderland 
+	19	.
+	20	"
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+F. Scott Fitzgerald , who lived there for five years in the 1930s , wrote of it , " I belong here , where everything is civilized and gay and rotted and polite . "
+
+
+Treebanked sentence:
+--------------------
+F. Scott Fitzgerald , who lived there for five years in the 1930s , wrote of it , " I belong here , where everything is civilized and gay and rotted and polite . " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP F.) (NNP Scott) (NNP Fitzgerald))
+      (, ,)
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBD lived)
+            (ADVP (RB there))
+            (PP (IN for)
+              (NP
+                (NP (CD five) (NNS years))
+                (PP (IN in)
+                  (NP (DT the) (NNS 1930s))))))))
+      (, ,))
+    (VP (VBD wrote)
+      (PP (IN of)
+        (NP (PRP it)))
+      (, ,) (`` ")
+      (S
+        (NP (PRP I))
+        (VP (VBP belong)
+          (ADVP (RB here))
+          (, ,)
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP (NN everything))
+              (VP (VBZ is)
+                (UCP
+                  (ADJP (JJ civilized)
+                    (CC and)
+                    (JJ gay))
+                  (CC and)
+                  (VP
+                    (VP (VBN rotted))
+                    (CC and)
+                    (VP (NN polite))))))))))
+    (. .) ('' ")))
+
+
+Leaves:
+-------
+	0	F.
+			coref:	IDENT			2	0-12	F. Scott Fitzgerald , who lived there for five years in the 1930s 
+			name:	PERSON				0-2	F. Scott Fitzgerald 
+	1	Scott
+	2	Fitzgerald
+	3	,
+	4	who
+	5	lived
+			sense:	populate.v.01
+			prop:	live.01
+			V		5-5	lived 
+			N-ARG-A0		0-2	F. Scott Fitzgerald 
+			R-ARG-A0		4-4	who 
+			N-ARGM-LOC		6-6	there 
+			N-ARGM-TMP		7-9	for five years 
+			N-ARGM-TMP		10-12	in the 1930s 
+	6	there
+			sense:	there.r.01
+	7	for
+	8	five
+			name:	DATE				8-12	five years in the 1930s 
+	9	years
+			sense:	year.n.01
+	10	in
+	11	the
+	12	1930s
+	13	,
+	14	wrote
+			sense:	write.v.02
+			prop:	write.01
+			V		14-14	wrote 
+			N-ARG-A0		0-13	F. Scott Fitzgerald , who lived there for five years in the 1930s , 
+			N-ARG-A1		19-32	I belong here , where everything is civilized and gay and rotted and polite 
+	15	of
+	16	it
+	17	,
+	18	"
+	19	I
+			coref:	IDENT			2	19-19	I 
+	20	belong
+			sense:	belong.v.03
+			prop:	belong.01
+			V		20-20	belong 
+			N-ARG-A0		19-19	I 
+			N-ARG-A1		21-32	here , where everything is civilized and gay and rotted and polite 
+	21	here
+			sense:	here.r.01
+	22	,
+	23	where
+	24	everything
+	25	is
+			sense:	be.v.01
+			prop:	be.01
+			V		25-25	is 
+			N-ARGM-LOC		21-21	here 
+			R-ARGM-LOC		23-23	where 
+			N-ARG-A1		24-24	everything 
+			N-ARG-A2		26-32	civilized and gay and rotted and polite 
+	26	civilized
+			sense:	civilized.a.01
+	27	and
+	28	gay
+			sense:	cheery.s.01
+	29	and
+	30	rotted
+			sense:	decompose.v.03
+			prop:	potter.01
+			V		30-30	rotted 
+			N-ARGM-LOC		23-23	where 
+	31	and
+	32	polite
+	33	.
+	34	"
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A recent listing of ten best movies set in Baltimore includes works by Baltimore natives such as Anne Tyler , John Waters , and Barry Levinson .
+
+
+Treebanked sentence:
+--------------------
+A recent listing of ten best movies set in Baltimore includes works by Baltimore natives such as Anne Tyler , John Waters , and Barry Levinson . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP-TMP
+      (NP (DT A) (JJ recent) (NN listing))
+      (PP (IN of)
+        (NP (CD ten))))
+    (NP
+      (NP (JJS best) (NNS movies))
+      (VP (VBN set)
+        (PP (IN in)
+          (NP (NNP Baltimore)))))
+    (VP (VBZ includes)
+      (NP (NNS works))
+      (PP (IN by)
+        (NP
+          (NP (NNP Baltimore) (NNS natives))
+          (PP (JJ such) (IN as)
+            (NP
+              (NP (NNP Anne) (NNP Tyler))
+              (, ,)
+              (NP (NNP John) (NNP Waters))
+              (, ,)
+              (CC and)
+              (NP (NNP Barry) (NNP Levinson)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	recent
+			sense:	recent.s.01
+	2	listing
+			sense:	list.n.01
+	3	of
+	4	ten
+			name:	NUMBER				4-4	ten 
+	5	best
+			sense:	good.a.01
+	6	movies
+			sense:	movie.n.01
+	7	set
+			sense:	set.v.09
+			prop:	set.01
+			V		7-7	set 
+			N-ARG-A1		4-6	ten best movies 
+			N-ARG-A2		8-9	in Baltimore 
+	8	in
+	9	Baltimore
+			coref:	IDENT			1	9-9	Baltimore 
+			name:	CITY				9-9	Baltimore 
+	10	includes
+			sense:	include.v.01
+			prop:	include.01
+			V		10-10	includes 
+			N-ARG-A2		0-9	A recent listing of ten best movies set in Baltimore 
+			N-ARG-A1		11-25	works by Baltimore natives such as Anne Tyler , John Waters , and Barry Levinson 
+	11	works
+			sense:	work.n.02
+	12	by
+	13	Baltimore
+			coref:	IDENT			1	13-13	Baltimore 
+			name:	CITY				13-13	Baltimore 
+	14	natives
+			sense:	native.n.02
+	15	such
+			sense:	such.s.01
+	16	as
+	17	Anne
+			name:	PERSON				17-18	Anne Tyler 
+	18	Tyler
+	19	,
+	20	John
+			name:	PERSON				20-21	John Waters 
+	21	Waters
+	22	,
+	23	and
+	24	Barry
+			name:	PERSON				24-25	Barry Levinson 
+	25	Levinson
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Filmmakers explained their choice of Baltimore as a setting for the 2009 movie He 's Just Not That Into You because " We were trying to think of an American urban city that did n't feel like you 'd seen it a million times before , " and " We wanted something like , not exactly every - small - town U.S.A. , but every - urban - young - center U.S.A. , so we could all see ourselves in these people . "
+
+
+Treebanked sentence:
+--------------------
+Filmmakers explained their choice of Baltimore as a setting for the 2009 movie He 's Just Not That Into You because " We were trying to think of an American urban city that did n't feel like you 'd seen it a million times before , " and " We wanted something like , not exactly every - small - town U.S.A. , but every - urban - young - center U.S.A. , so we could all see ourselves in these people . " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NNS Filmmakers))
+      (VP (VBD explained)
+        (NP
+          (NP (PRP$ their) (NN choice))
+          (PP (IN of)
+            (NP (NNP Baltimore))))
+        (PP (IN as)
+          (NP
+            (NP (DT a) (NN setting))
+            (PP (IN for)
+              (NP
+                (NP (DT the) (CD 2009) (NN movie))
+                (SBAR
+                  (S
+                    (NP (PRP He))
+                    (VP (VBZ 's)
+                      (ADVP (RB Just) (RB Not))
+                      (NP (DT That))
+                      (PP (IN Into)
+                        (NP (PRP You)))
+                      (SBAR (IN because)
+                        (S (`` ")
+                          (S
+                            (NP (PRP We))
+                            (VP (VBD were)
+                              (VP (VBG trying)
+                                (S
+                                  (VP (TO to)
+                                    (VP (VB think)
+                                      (PP (IN of)
+                                        (NP
+                                          (NP (DT an) (JJ American) (JJ urban) (NN city))
+                                          (SBAR
+                                            (WHNP (WDT that))
+                                            (S
+                                              (VP (VBD did) (RB n't)
+                                                (VP (VB feel)
+                                                  (SBAR (IN like)
+                                                    (S
+                                                      (NP (PRP you))
+                                                      (VP (MD 'd)
+                                                        (VP (VBN seen)
+                                                          (NP (PRP it))
+                                                          (NP-TMP
+                                                            (QP (DT a) (CD million))
+                                                            (NNS times)))))))))))))))
+                                (ADVP (RB before)))))
+                          (, ,) ('' ")
+                          (CC and)
+                          (`` ")
+                          (S
+                            (NP (PRP We))
+                            (VP (VBD wanted)
+                              (NP (NN something))
+                              (PP (IN like) (, ,)
+                                (NP
+                                  (NP (RB not)
+                                    (QP (RB exactly) (DT every)))
+                                  (HYPH -)
+                                  (NP
+                                    (NML (JJ small) (HYPH -) (NN town))
+                                    (NNP U.S.A.)))))))))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT every)
+        (NML
+          (PP (HYPH -)
+            (NP (JJ urban)))
+          (HYPH -)
+          (NP (JJ young) (HYPH -) (NN center)))
+        (NNP U.S.A.))
+      (, ,)
+      (ADVP (RB so))
+      (NP (PRP we))
+      (VP (MD could) (RB all)
+        (VP (VB see)
+          (NP (PRP ourselves))
+          (PP (IN in)
+            (NP (DT these) (NNS people))))))
+    (. .) ('' ")))
+
+
+Leaves:
+-------
+	0	Filmmakers
+			coref:	IDENT			3	0-0	Filmmakers 
+			sense:	film_maker.n.01
+	1	explained
+			sense:	explain.v.01
+			prop:	explain.01
+			V		1-1	explained 
+			N-ARG-A0		0-0	Filmmakers 
+			N-ARG-A1		2-19	their choice of Baltimore as a setting for the 2009 movie He 's Just Not That Into You 
+			N-ARGM-CAU		20-81	because " We were trying to think of an American urban city that did n't feel like you 'd seen it a million times before , " and " We wanted something like , not exactly every - small - town U.S.A. , but every - urban - young - center U.S.A. , so we could all see ourselves in these people 
+	2	their
+			coref:	IDENT			3	2-2	their 
+	3	choice
+			sense:	choice.n.02
+	4	of
+	5	Baltimore
+			coref:	IDENT			1	5-5	Baltimore 
+			name:	CITY				5-5	Baltimore 
+	6	as
+	7	a
+	8	setting
+			sense:	mise_en_scene.n.01
+	9	for
+	10	the
+	11	2009
+			name:	DATE				11-11	2009 
+	12	movie
+			sense:	movie.n.01
+	13	He
+	14	's
+			sense:	be.v.01
+			prop:	be.01
+			V		14-14	's 
+			N-ARG-A1		13-13	He 
+			N-ARGM-ADV		15-15	Just 
+			N-ARGM-NEG		16-16	Not 
+			N-ARG-A2		17-19	That Into You 
+	15	Just
+			sense:	merely.r.01
+	16	Not
+			sense:	not.r.01
+	17	That
+	18	Into
+	19	You
+			coref:	IDENT			0	19-19	You 
+	20	because
+	21	"
+	22	We
+	23	were
+			sense:	be.v.01
+			prop:	be.03
+			V		23-23	were 
+	24	trying
+			sense:	try.v.01
+			prop:	try.01
+			V		24-24	trying 
+			N-ARG-A0		22-22	We 
+			N-ARG-A1		25-44	to think of an American urban city that did n't feel like you 'd seen it a million times before 
+	25	to
+	26	think
+			sense:	think.v.05
+			prop:	think.01
+			V		26-26	think 
+			N-ARG-A0		22-22	We 
+			N-ARG-A1		27-44	of an American urban city that did n't feel like you 'd seen it a million times before 
+	27	of
+	28	an
+	29	American
+			name:	NATIONALITY				29-29	American 
+	30	urban
+			name:	MISC				30-30	urban 
+			sense:	urban.a.02
+	31	city
+			sense:	city.n.01
+	32	that
+	33	did
+			sense:	do.v.04
+			prop:	do.01
+			V		33-33	did 
+	34	n't
+			sense:	not.r.01
+	35	feel
+			sense:	feel.v.07
+			prop:	feel.01
+			V		35-35	feel 
+			N-ARG-A0		28-31	an American urban city 
+			R-ARG-A0		32-32	that 
+			N-ARGM-NEG		34-34	n't 
+			N-ARG-A1		36-44	like you 'd seen it a million times before 
+	36	like
+	37	you
+			coref:	IDENT			0	37-37	you 
+	38	'd
+	39	seen
+			sense:	watch.v.03
+			prop:	see.01
+			V		39-39	seen 
+			N-ARG-A0		37-37	you 
+			N-ARG-A1		40-40	it 
+			N-ARGM-TMP		41-44	a million times before 
+	40	it
+	41	a
+	42	million
+			name:	NUMBER				42-42	million 
+	43	times
+			sense:	time.n.01
+	44	before
+			sense:	earlier.r.01
+	45	,
+	46	"
+	47	and
+	48	"
+	49	We
+	50	wanted
+			sense:	desire.v.01
+			prop:	want.01
+			V		50-50	wanted 
+			N-ARG-A0		49-49	We 
+			N-ARG-A1		51-71	something like , not exactly every - small - town U.S.A. , but every - urban - young - center U.S.A. 
+			N-ARGM-PRP		73-81	so we could all see ourselves in these people 
+	51	something
+	52	like
+	53	,
+	54	not
+			sense:	not.r.01
+	55	exactly
+			sense:	precisely.r.01
+	56	every
+	57	-
+	58	small
+			sense:	small.a.01
+	59	-
+	60	town
+			sense:	town.n.01
+	61	U.S.A.
+			name:	COUNTRY				61-61	U.S.A. 
+	62	,
+	63	but
+	64	every
+	65	-
+	66	urban
+			sense:	urban.a.02
+	67	-
+	68	young
+			sense:	young.a.01
+	69	-
+	70	center
+			sense:	center.n.01
+	71	U.S.A.
+			name:	COUNTRY				71-71	U.S.A. 
+	72	,
+	73	so
+			sense:	so.r.02
+	74	we
+	75	could
+	76	all
+			sense:	wholly.r.01
+	77	see
+			sense:	visualize.v.01
+			prop:	see.01
+			V		77-77	see 
+			N-ARG-A0		74-74	we 
+			N-ARGM-MOD		75-75	could 
+			N-ARG-A1		78-78	ourselves 
+			N-ARGM-LOC		79-81	in these people 
+	78	ourselves
+	79	in
+	80	these
+	81	people
+			sense:	person.n.01
+	82	.
+	83	"
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.19-19	You 
+				3.37-37	you 
+	Chain 1 (IDENT)
+				0.0-0	Baltimore 
+				2.9-9	Baltimore 
+				2.13-13	Baltimore 
+				3.5-5	Baltimore 
+	Chain 2 (IDENT)
+				1.0-12	F. Scott Fitzgerald , who lived there for five years in the 1930s 
+				1.19-19	I 
+	Chain 3 (IDENT)
+				3.0-0	Filmmakers 
+				3.2-2	their 
+

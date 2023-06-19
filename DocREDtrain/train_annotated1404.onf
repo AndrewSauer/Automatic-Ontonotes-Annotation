@@ -1,0 +1,575 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sutka City TV is a television station broadcasting from Paris , France , in the Romani language .
+
+
+Treebanked sentence:
+--------------------
+Sutka City TV is a television station broadcasting from Paris , France , in the Romani language . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NML (NNP Sutka) (NNP City))
+      (NN TV))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a)
+          (NML (NN television) (NN station))
+          (NN broadcasting))
+        (PP (IN from)
+          (NP
+            (NP (NNP Paris) (, ,) (NNP France) (, ,))
+            (PP (IN in)
+              (NP (DT the) (NNP Romani) (NN language)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sutka
+			name:	ORGANIZATION				0-2	Sutka City TV 
+	1	City
+	2	TV
+			sense:	television.n.01
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Sutka City TV 
+			N-ARG-A2		4-16	a television station broadcasting from Paris , France , in the Romani language 
+	4	a
+	5	television
+			sense:	television.n.01
+	6	station
+			sense:	station.n.05
+	7	broadcasting
+			sense:	broadcast_medium.n.01
+	8	from
+	9	Paris
+			coref:	IDENT			0	9-9	Paris 
+			name:	CITY				9-9	Paris 
+	10	,
+	11	France
+			name:	COUNTRY				11-11	France 
+	12	,
+	13	in
+	14	the
+			coref:	IDENT			2	14-16	the Romani language 
+	15	Romani
+			name:	MISC				15-15	Romani 
+	16	language
+			sense:	language.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Andrijano Dzeladin established the station in September 2012 , to end prejudice and to provide a link for the Romani people .
+
+
+Treebanked sentence:
+--------------------
+Andrijano Dzeladin established the station in September 2012 , to end prejudice and to provide a link for the Romani people . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Andrijano) (NNP Dzeladin))
+    (VP (VBD established)
+      (NP (DT the) (NN station))
+      (PP (IN in)
+        (NP (NNP September) (CD 2012)))
+      (, ,)
+      (S
+        (VP
+          (VP (TO to)
+            (VP (VB end)
+              (NP (NN prejudice))))
+          (CC and)
+          (VP (TO to)
+            (VP (VB provide)
+              (NP
+                (NP (DT a) (NN link))
+                (PP (IN for)
+                  (NP (DT the) (NNP Romani) (NNS people)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Andrijano
+			coref:	IDENT			1	0-1	Andrijano Dzeladin 
+			name:	PERSON				0-1	Andrijano Dzeladin 
+	1	Dzeladin
+	2	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		2-2	established 
+			N-ARG-A0		0-1	Andrijano Dzeladin 
+			N-ARG-A1		3-4	the station 
+			N-ARGM-TMP		5-7	in September 2012 
+			N-ARGM-PRP		9-20	to end prejudice and to provide a link for the Romani people 
+	3	the
+	4	station
+			sense:	station.n.05
+	5	in
+	6	September
+			name:	DATE				6-7	September 2012 
+	7	2012
+	8	,
+	9	to
+	10	end
+			sense:	end.v.02
+			prop:	end.01
+			V		10-10	end 
+			N-ARG-A0		0-1	Andrijano Dzeladin 
+			N-ARG-A1		11-11	prejudice 
+	11	prejudice
+			sense:	bias.n.01
+	12	and
+	13	to
+	14	provide
+			sense:	supply.v.01
+			prop:	provide.01
+			V		14-14	provide 
+			N-ARG-A0		0-1	Andrijano Dzeladin 
+			N-ARG-A1		15-16	a link 
+			N-ARG-A2		17-20	for the Romani people 
+	15	a
+	16	link
+			sense:	liaison.n.02
+	17	for
+	18	the
+	19	Romani
+			name:	MISC				19-19	Romani 
+	20	people
+			sense:	person.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Dzeladin , a Macedonian citizen , named the television station after Sutka , a suburb of Skopje , the capital of Macedonia .
+
+
+Treebanked sentence:
+--------------------
+Dzeladin , a Macedonian citizen , named the television station after Sutka , a suburb of Skopje , the capital of Macedonia . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP (NNP Dzeladin))
+    (, ,)
+    (NP
+      (NP
+        (NP (DT a) (JJ Macedonian) (NN citizen))
+        (, ,)
+        (VP (VBN named)
+          (NP (DT the) (NN television) (NN station))
+          (PP (IN after)
+            (NP (NNP Sutka)))))
+      (, ,)
+      (NP
+        (NP (DT a) (NN suburb))
+        (PP (IN of)
+          (NP (NNP Skopje)))))
+    (, ,)
+    (NP
+      (NP (DT the) (NN capital))
+      (PP (IN of)
+        (NP (NNP Macedonia))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Dzeladin
+			name:	PERSON				0-0	Dzeladin 
+	1	,
+	2	a
+	3	Macedonian
+			name:	NATIONALITY				3-3	Macedonian 
+	4	citizen
+			sense:	citizen.n.01
+	5	,
+	6	named
+			sense:	name.v.01
+			prop:	name.02
+			V		6-6	named 
+			N-ARG-A0		0-4	Dzeladin , a Macedonian citizen 
+			N-ARG-A1		7-9	the television station 
+			N-ARG-A2		10-21	after Sutka , a suburb of Skopje , the capital of Macedonia 
+	7	the
+	8	television
+			sense:	television.n.01
+	9	station
+			sense:	station.n.05
+	10	after
+	11	Sutka
+			name:	PERSON				11-11	Sutka 
+	12	,
+	13	a
+	14	suburb
+			sense:	suburb.n.01
+	15	of
+	16	Skopje
+			name:	CITY				16-16	Skopje 
+	17	,
+	18	the
+	19	capital
+			sense:	capital.n.03
+	20	of
+	21	Macedonia
+			name:	COUNTRY				21-21	Macedonia 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He said that the Roma have " a culture , an anthem , a flag and integrity " .
+
+
+Treebanked sentence:
+--------------------
+He said that the Roma have " a culture , an anthem , a flag and integrity " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD said)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NNP Roma))
+          (VP (VBP have) (`` ")
+            (NP
+              (NP (DT a) (NN culture))
+              (, ,)
+              (NP (DT an) (NN anthem))
+              (, ,)
+              (NP
+                (NP (DT a) (NN flag))
+                (CC and)
+                (NP (NN integrity)))
+              ('' "))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	said
+			sense:	state.v.01
+			prop:	say.01
+			V		1-1	said 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-17	that the Roma have " a culture , an anthem , a flag and integrity " 
+	2	that
+	3	the
+	4	Roma
+			name:	ORGANIZATION				4-4	Roma 
+	5	have
+			sense:	have.v.01
+			prop:	have.03
+			V		5-5	have 
+			N-ARG-A0		3-4	the Roma 
+			N-ARG-A1		7-16	a culture , an anthem , a flag and integrity 
+	6	"
+	7	a
+	8	culture
+			sense:	acculturation.n.02
+	9	,
+	10	an
+	11	anthem
+			sense:	anthem.n.01
+	12	,
+	13	a
+	14	flag
+			sense:	flag.n.01
+	15	and
+	16	integrity
+			sense:	integrity.n.01
+	17	"
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He wants the Romani language to be spoken in all the programs broadcast from the television station .
+
+
+Treebanked sentence:
+--------------------
+He wants the Romani language to be spoken in all the programs broadcast from the television station . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ wants)
+      (NP (DT the) (NNP Romani) (NN language))
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (VP (VBN spoken)
+              (PP (IN in)
+                (NP
+                  (NP (PDT all) (DT the) (NNS programs))
+                  (VP (VBN broadcast)
+                    (PP (IN from)
+                      (NP (DT the) (NN television) (NN station)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	wants
+			sense:	desire.v.01
+			prop:	want.01
+			V		1-1	wants 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-16	the Romani language to be spoken in all the programs broadcast from the television station 
+	2	the
+			coref:	IDENT			2	2-4	the Romani language 
+	3	Romani
+			name:	MISC				3-3	Romani 
+	4	language
+			sense:	language.n.01
+	5	to
+	6	be
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	be 
+	7	spoken
+			sense:	speak.v.03
+			prop:	speak.01
+			V		7-7	spoken 
+			N-ARG-A1		2-4	the Romani language 
+			N-ARGM-LOC		8-16	in all the programs broadcast from the television station 
+	8	in
+	9	all
+	10	the
+	11	programs
+			sense:	broadcast.n.02
+	12	broadcast
+			sense:	air.v.03
+			prop:	broadcast.01
+			V		12-12	broadcast 
+			N-ARG-A1		9-11	all the programs 
+			N-ARGM-DIR		13-16	from the television station 
+	13	from
+	14	the
+	15	television
+			sense:	television.n.01
+	16	station
+			sense:	station.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+According to the report by France 24 , " most programs — culinary , cultural or musical — involve listeners . "
+
+
+Treebanked sentence:
+--------------------
+According to the report by France 24 , " most programs — culinary , cultural or musical — involve listeners . " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (VBG According)
+      (PP (IN to)
+        (NP
+          (NP (DT the) (NN report))
+          (PP (IN by)
+            (NP (NNP France) (CD 24))))))
+    (, ,) (`` ")
+    (S
+      (NP (RBS most) (NNS programs))
+      (VP (: —)
+        (NP
+          (NP (JJ culinary))
+          (, ,)
+          (NP
+            (NML
+              (S
+                (NP (JJ cultural)
+                  (CC or)
+                  (JJ musical))
+                (HYPH —)
+                (VP (VBP involve))))
+            (NNS listeners)))))
+    (. .) ('' ")))
+
+
+Leaves:
+-------
+	0	According
+			sense:	harmonize.v.01
+			prop:	accord.01
+			V		0-0	According 
+	1	to
+	2	the
+	3	report
+			sense:	report.n.03
+	4	by
+	5	France
+			name:	COUNTRY				5-5	France 
+	6	24
+			name:	NUMBER				6-6	24 
+	7	,
+	8	"
+	9	most
+			sense:	most.r.01
+	10	programs
+			sense:	broadcast.n.02
+	11	—
+	12	culinary
+			sense:	culinary.a.01
+	13	,
+	14	cultural
+			sense:	cultural.a.01
+	15	or
+	16	musical
+			sense:	musical.a.01
+	17	—
+	18	involve
+			sense:	involve.v.02
+			prop:	involve.01
+			V		18-18	involve 
+			N-ARGM-ADV		0-6	According to the report by France 24 
+			N-ARG-A2		9-17	most programs — culinary , cultural or musical — 
+			N-ARG-A1		19-19	listeners 
+	19	listeners
+			sense:	hearer.n.01
+	20	.
+	21	"
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Dzeladin performs almost all tasks himself , and broadcasts from a studio in an apartment in the 19th arrondissement of Paris .
+
+
+Treebanked sentence:
+--------------------
+Dzeladin performs almost all tasks himself , and broadcasts from a studio in an apartment in the 19th arrondissement of Paris . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Dzeladin))
+    (VP (VBZ performs)
+      (NP
+        (NP
+          (NP
+            (QP (RB almost) (DT all))
+            (NNS tasks))
+          (NP (PRP himself)))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (NNS broadcasts))
+          (PP (IN from)
+            (NP
+              (NP (DT a) (NN studio))
+              (PP (IN in)
+                (NP
+                  (NP (DT an) (NN apartment))
+                  (PP (IN in)
+                    (NP
+                      (NP (DT the) (JJ 19th) (NN arrondissement))
+                      (PP (IN of)
+                        (NP (NNP Paris))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Dzeladin
+			coref:	IDENT			1	0-0	Dzeladin 
+			name:	PERSON				0-0	Dzeladin 
+	1	performs
+			sense:	perform.v.02
+			prop:	perform.01
+			V		1-1	performs 
+			N-ARG-A0		0-0	Dzeladin 
+			N-ARG-A1		2-4	almost all tasks 
+			N-ARGM-REC		5-5	himself 
+	2	almost
+			sense:	about.r.07
+	3	all
+	4	tasks
+			sense:	undertaking.n.01
+	5	himself
+			coref:	IDENT			1	5-5	himself 
+	6	,
+	7	and
+	8	broadcasts
+			sense:	broadcast.n.02
+	9	from
+	10	a
+	11	studio
+			sense:	studio.n.03
+	12	in
+	13	an
+	14	apartment
+			sense:	apartment.n.01
+	15	in
+	16	the
+	17	19th
+			name:	DATE				17-18	19th arrondissement 
+			sense:	nineteenth.s.01
+	18	arrondissement
+	19	of
+	20	Paris
+			coref:	IDENT			0	20-20	Paris 
+			name:	CITY				20-20	Paris 
+	21	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.9-9	Paris 
+				6.20-20	Paris 
+	Chain 1 (IDENT)
+				1.0-1	Andrijano Dzeladin 
+				3.0-0	He 
+				4.0-0	He 
+				6.0-0	Dzeladin 
+				6.5-5	himself 
+	Chain 2 (IDENT)
+				0.14-16	the Romani language 
+				4.2-4	the Romani language 
+

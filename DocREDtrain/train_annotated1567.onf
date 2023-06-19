@@ -1,0 +1,644 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Notts County Ladies Football Club , now defunct , was a women 's football club based in Nottingham , England .
+
+
+Treebanked sentence:
+--------------------
+Notts County Ladies Football Club , now defunct , was a women 's football club based in Nottingham , England . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Notts) (NNP County) (NNP Ladies) (NNP Football) (NNP Club))
+      (, ,)
+      (ADJP (RB now) (JJ defunct))
+      (, ,))
+    (VP (VBD was)
+      (NP
+        (NP
+          (NP (DT a) (NNS women) (POS 's))
+          (NN football) (NN club))
+        (PP (VBN based)
+          (PP (IN in)
+            (NP (NNP Nottingham) (, ,) (NNP England))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Notts
+			coref:	IDENT			3	0-7	Notts County Ladies Football Club , now defunct 
+			name:	ORGANIZATION				0-4	Notts County Ladies Football Club 
+	1	County
+	2	Ladies
+	3	Football
+	4	Club
+	5	,
+	6	now
+			name:	DATE				6-6	now 
+			sense:	now.r.01
+	7	defunct
+			sense:	defunct.s.02
+	8	,
+	9	was
+			sense:	be.v.01
+			prop:	be.01
+			V		9-9	was 
+			N-ARG-A1		0-7	Notts County Ladies Football Club , now defunct 
+			N-ARG-A2		10-19	a women 's football club based in Nottingham , England 
+	10	a
+	11	women
+			sense:	womanhood.n.02
+	12	's
+	13	football
+			sense:	football.n.01
+	14	club
+			sense:	club.n.02
+	15	based
+			sense:	base.v.02
+			prop:	base.01
+			V		15-15	based 
+			N-ARG-A1		10-14	a women 's football club 
+			N-ARGM-LOC		16-19	in Nottingham , England 
+	16	in
+	17	Nottingham
+			coref:	IDENT			0	17-17	Nottingham 
+			name:	CITY				17-17	Nottingham 
+	18	,
+	19	England
+			name:	COUNTRY				19-19	England 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Like the club 's male affiliate Notts County FC , they played their home games at Meadow Lane .
+
+
+Treebanked sentence:
+--------------------
+Like the club 's male affiliate Notts County FC , they played their home games at Meadow Lane . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Like)
+      (NP
+        (NP
+          (NP (DT the) (NN club) (POS 's))
+          (JJ male) (NN affiliate))
+        (NP (NNP Notts) (NNP County) (NNP FC))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBD played)
+      (NP (PRP$ their) (NN home) (NNS games))
+      (PP (IN at)
+        (NP (NNP Meadow) (NNP Lane))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Like
+	1	the
+			coref:	IDENT			3	1-3	the club 's 
+	2	club
+			sense:	club.n.02
+	3	's
+	4	male
+			sense:	male.a.01
+	5	affiliate
+			sense:	affiliate.n.02
+	6	Notts
+			name:	ORGANIZATION				6-8	Notts County FC 
+	7	County
+	8	FC
+	9	,
+	10	they
+			coref:	IDENT			4	10-10	they 
+	11	played
+			sense:	play.v.01
+			prop:	play.01
+			V		11-11	played 
+			N-ARGM-ADV		0-8	Like the club 's male affiliate Notts County FC 
+			N-ARG-A0		10-10	they 
+			N-ARG-A1		12-14	their home games 
+			N-ARGM-LOC		15-17	at Meadow Lane 
+	12	their
+			coref:	IDENT			4	12-12	their 
+	13	home
+			sense:	home.n.01
+	14	games
+			sense:	game.n.02
+	15	at
+	16	Meadow
+			name:	LOCATION				16-17	Meadow Lane 
+	17	Lane
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Notts County Ladies were created in 2014 when Lincoln Ladies were controversially relocated from Lincoln to Nottingham and rebranded .
+
+
+Treebanked sentence:
+--------------------
+Notts County Ladies were created in 2014 when Lincoln Ladies were controversially relocated from Lincoln to Nottingham and rebranded . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NML (NNP Notts) (NNP County))
+      (NNS Ladies))
+    (VP (VBD were)
+      (VP (VBN created)
+        (PP (IN in)
+          (NP (CD 2014)))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (NNP Lincoln) (NNP Ladies))
+            (VP (VBD were)
+              (ADVP (RB controversially))
+              (VP
+                (VP (VBN relocated)
+                  (PP (IN from)
+                    (NP (NNP Lincoln)))
+                  (PP (IN to)
+                    (NP (NNP Nottingham))))
+                (CC and)
+                (VP (VBN rebranded))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Notts
+			coref:	IDENT			1	0-2	Notts County Ladies 
+			name:	ORGANIZATION				0-2	Notts County Ladies 
+	1	County
+	2	Ladies
+			sense:	lady.n.01
+	3	were
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	were 
+	4	created
+			sense:	create.v.02
+			prop:	create.01
+			V		4-4	created 
+			N-ARG-A1		0-2	Notts County Ladies 
+			N-ARGM-TMP		5-18	in 2014 when Lincoln Ladies were controversially relocated from Lincoln to Nottingham and rebranded 
+	5	in
+	6	2014
+			name:	DATE				6-6	2014 
+	7	when
+	8	Lincoln
+			coref:	IDENT			1	8-9	Lincoln Ladies 
+			name:	ORGANIZATION				8-9	Lincoln Ladies 
+	9	Ladies
+	10	were
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	were 
+	11	controversially
+			sense:	controversially.r.01
+	12	relocated
+			sense:	relocate.v.02
+			prop:	relocate.01
+			V		12-12	relocated 
+			N-ARGM-TMP		7-7	when 
+			N-ARG-A1		8-9	Lincoln Ladies 
+			N-ARGM-MNR		11-11	controversially 
+			N-ARG-A3		13-14	from Lincoln 
+			N-ARG-A2		15-16	to Nottingham 
+	13	from
+	14	Lincoln
+			coref:	IDENT			2	14-14	Lincoln 
+			name:	CITY				14-14	Lincoln 
+	15	to
+	16	Nottingham
+			coref:	IDENT			0	16-16	Nottingham 
+			name:	CITY				16-16	Nottingham 
+	17	and
+	18	rebranded
+			prop:	abrade.01
+			V		18-18	rebranded 
+			N-ARGM-TMP		7-7	when 
+			N-ARG-A1		8-9	Lincoln Ladies 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The club were originally formed in Lincoln in 1995 and also spent a period known as Lincoln City Ladies while affiliated to Lincoln City .
+
+
+Treebanked sentence:
+--------------------
+The club were originally formed in Lincoln in 1995 and also spent a period known as Lincoln City Ladies while affiliated to Lincoln City . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN club))
+    (VP
+      (VP (VBD were)
+        (ADVP (RB originally))
+        (VP (VBN formed)
+          (PP (IN in)
+            (NP (NNP Lincoln)))
+          (PP (IN in)
+            (NP (CD 1995)))))
+      (CC and)
+      (VP
+        (ADVP (RB also))
+        (VBD spent)
+        (NP
+          (NP (DT a) (NN period))
+          (VP (VBN known)
+            (PP (IN as)
+              (NP
+                (NML (NNP Lincoln) (NNP City))
+                (NNS Ladies)))
+            (SBAR (IN while)
+              (S
+                (VP (VBN affiliated)
+                  (PP (IN to)
+                    (NP (NNP Lincoln) (NNP City))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-1	The club 
+	1	club
+			sense:	club.n.02
+	2	were
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	were 
+	3	originally
+			sense:	primitively.r.01
+	4	formed
+			sense:	form.v.01
+			prop:	form.01
+			V		4-4	formed 
+			N-ARG-A1		0-1	The club 
+			N-ARGM-TMP		3-3	originally 
+			N-ARGM-LOC		5-6	in Lincoln 
+			N-ARGM-TMP		7-8	in 1995 
+	5	in
+	6	Lincoln
+			coref:	IDENT			2	6-6	Lincoln 
+			name:	ORGANIZATION				6-6	Lincoln 
+	7	in
+	8	1995
+			name:	DATE				8-8	1995 
+	9	and
+	10	also
+			sense:	besides.r.02
+	11	spent
+			sense:	spend.v.01
+			prop:	spend.02
+			V		11-11	spent 
+			N-ARG-A0		0-1	The club 
+			N-ARGM-ADV		10-10	also 
+			N-ARG-A1		12-13	a period 
+			N-ARG-A2		14-18	known as Lincoln City Ladies 
+			N-ARGM-TMP		19-23	while affiliated to Lincoln City 
+	12	a
+	13	period
+			sense:	time_period.n.01
+	14	known
+			sense:	know.v.04
+			prop:	know.01
+			V		14-14	known 
+			N-ARG-A2		15-18	as Lincoln City Ladies 
+	15	as
+	16	Lincoln
+			coref:	IDENT			1	16-18	Lincoln City Ladies 
+			name:	ORGANIZATION				16-18	Lincoln City Ladies 
+	17	City
+	18	Ladies
+			sense:	lady.n.01
+	19	while
+	20	affiliated
+			sense:	affiliate.v.02
+			prop:	affiliate.01
+			V		20-20	affiliated 
+			N-ARG-A1		0-1	The club 
+			N-ARG-A2		21-23	to Lincoln City 
+	21	to
+	22	Lincoln
+			coref:	IDENT			2	22-23	Lincoln City 
+			name:	CITY				22-22	Lincoln 
+	23	City
+			name:	LOCATION				23-23	City 
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sincil Bank and other smaller venues staged the club 's matches during their time in Lincoln .
+
+
+Treebanked sentence:
+--------------------
+Sincil Bank and other smaller venues staged the club 's matches during their time in Lincoln . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Sincil) (NNP Bank))
+      (CC and)
+      (NP (JJ other) (JJR smaller) (NNS venues)))
+    (VP (VBD staged)
+      (NP
+        (NP (DT the) (NN club) (POS 's))
+        (NNS matches))
+      (PP (IN during)
+        (NP (PRP$ their) (NN time)))
+      (PP (IN in)
+        (NP (NNP Lincoln))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sincil
+			name:	ORGANIZATION				0-1	Sincil Bank 
+	1	Bank
+	2	and
+	3	other
+			sense:	other.a.01
+	4	smaller
+			sense:	small.a.01
+	5	venues
+			sense:	venue.n.01
+	6	staged
+			sense:	stage.v.01
+			prop:	stage.01
+			V		6-6	staged 
+			N-ARG-A0		0-5	Sincil Bank and other smaller venues 
+			N-ARG-A1		7-10	the club 's matches 
+			N-ARGM-TMP		11-15	during their time in Lincoln 
+	7	the
+			coref:	IDENT			3	7-9	the club 's 
+	8	club
+			sense:	club.n.02
+	9	's
+	10	matches
+			sense:	match.n.02
+	11	during
+	12	their
+	13	time
+			sense:	time.n.02
+	14	in
+	15	Lincoln
+			coref:	IDENT			2	15-15	Lincoln 
+			name:	CITY				15-15	Lincoln 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The club was named OOH Lincoln Ladies from 2008 until 2010 , due to sponsorship from Ray Trew 's OOH Media PLC .
+
+
+Treebanked sentence:
+--------------------
+The club was named OOH Lincoln Ladies from 2008 until 2010 , due to sponsorship from Ray Trew 's OOH Media PLC . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN club))
+    (VP (VBD was)
+      (VP (VBN named)
+        (NP
+          (NP (NNP OOH) (NNP Lincoln) (NNP Ladies))
+          (PP (IN from)
+            (NP (CD 2008))))
+        (PP (IN until)
+          (NP (CD 2010)))
+        (, ,)
+        (PP (IN due)
+          (PP (IN to)
+            (NP
+              (NP (NN sponsorship))
+              (PP (IN from)
+                (NP
+                  (NP (NNP Ray) (NNP Trew) (POS 's))
+                  (NNP OOH) (NNP Media) (NNP PLC))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-1	The club 
+	1	club
+			sense:	club.n.02
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	named
+			sense:	name.v.01
+			prop:	name.01
+			V		3-3	named 
+			N-ARG-A1		0-1	The club 
+			N-ARG-A2		4-6	OOH Lincoln Ladies 
+			N-ARGM-TMP		7-10	from 2008 until 2010 
+			N-ARGM-CAU		12-21	due to sponsorship from Ray Trew 's OOH Media PLC 
+	4	OOH
+	5	Lincoln
+			name:	ORGANIZATION				5-6	Lincoln Ladies 
+	6	Ladies
+	7	from
+	8	2008
+			name:	DATE				8-8	2008 
+	9	until
+	10	2010
+			name:	DATE				10-10	2010 
+	11	,
+	12	due
+	13	to
+	14	sponsorship
+			sense:	sponsorship.n.01
+	15	from
+	16	Ray
+			name:	PERSON				16-17	Ray Trew 
+	17	Trew
+	18	's
+	19	OOH
+			name:	ORGANIZATION				19-21	OOH Media PLC 
+	20	Media
+	21	PLC
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The club withdrew from the FA WSL 1 , the top tier in the English women 's football league system , two days before the start of the FA WSL Spring Series on 21 April 2017 .
+
+
+Treebanked sentence:
+--------------------
+The club withdrew from the FA WSL 1 , the top tier in the English women 's football league system , two days before the start of the FA WSL Spring Series on 21 April 2017 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN club))
+    (VP (VBD withdrew)
+      (PP (IN from)
+        (NP (DT the) (NN FA) (NN WSL)))
+      (NP
+        (NP (CD 1))
+        (, ,)
+        (NP
+          (NP (DT the) (JJ top) (NN tier))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (JJ English) (NNS women) (POS 's))
+              (NML (NN football) (NN league))
+              (NN system))))
+        (, ,))
+      (PP
+        (NP (CD two) (NNS days))
+        (IN before)
+        (NP
+          (NP (DT the) (NN start))
+          (PP (IN of)
+            (NP (DT the)
+              (NML
+                (NML (NN FA))
+                (NNP WSL) (NNP Spring))
+              (NNP Series)))))
+      (PP (IN on)
+        (NP (CD 21)))
+      (NP-TMP (NNP April) (CD 2017)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-1	The club 
+	1	club
+			sense:	club.n.02
+	2	withdrew
+			sense:	retire.v.02
+			prop:	withdraw.01
+			V		2-2	withdrew 
+			N-ARG-A0		0-1	The club 
+			N-ARG-A2		3-19	from the FA WSL 1 , the top tier in the English women 's football league system 
+			N-ARGM-TMP		21-35	two days before the start of the FA WSL Spring Series on 21 April 2017 
+	3	from
+	4	the
+	5	FA
+			sense:	fa.n.01
+	6	WSL
+	7	1
+			name:	NUMBER				7-7	1 
+	8	,
+	9	the
+	10	top
+			sense:	top.a.01
+	11	tier
+			name:	TITLE				11-11	tier 
+			sense:	grade.n.02
+	12	in
+	13	the
+	14	English
+			name:	NATIONALITY				14-14	English 
+	15	women
+			sense:	womanhood.n.02
+	16	's
+	17	football
+			sense:	football.n.01
+	18	league
+			sense:	league.n.01
+	19	system
+			sense:	arrangement.n.03
+	20	,
+	21	two
+			name:	DURATION				21-22	two days 
+	22	days
+			sense:	day.n.01
+	23	before
+	24	the
+	25	start
+			sense:	start.n.01
+	26	of
+	27	the
+	28	FA
+			sense:	fa.n.01
+	29	WSL
+	30	Spring
+			name:	DATE				30-30	Spring 
+	31	Series
+	32	on
+	33	21
+			name:	DATE				33-35	21 April 2017 
+	34	April
+	35	2017
+	36	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.17-17	Nottingham 
+				2.16-16	Nottingham 
+	Chain 1 (IDENT)
+				2.0-2	Notts County Ladies 
+				2.8-9	Lincoln Ladies 
+				3.16-18	Lincoln City Ladies 
+	Chain 2 (IDENT)
+				3.22-23	Lincoln City 
+				2.14-14	Lincoln 
+				3.6-6	Lincoln 
+				4.15-15	Lincoln 
+	Chain 3 (IDENT)
+				0.0-7	Notts County Ladies Football Club , now defunct 
+				1.1-3	the club 's 
+				3.0-1	The club 
+				4.7-9	the club 's 
+				5.0-1	The club 
+				6.0-1	The club 
+	Chain 4 (IDENT)
+				1.10-10	they 
+				1.12-12	their 
+

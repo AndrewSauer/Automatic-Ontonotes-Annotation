@@ -1,0 +1,535 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Hanscarl Leuner ( born 1919 in Bautzen ; died 1996 in Göttingen ) was a German psychiatrist .
+
+
+Treebanked sentence:
+--------------------
+Hanscarl Leuner ( born 1919 in Bautzen ; died 1996 in Göttingen ) was a German psychiatrist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Hanscarl) (NNP Leuner))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (S
+          (NP
+            (NP (CD 1919))
+            (PP (IN in)
+              (NP (NNP Bautzen))))
+          (: ;)
+          (VP (VBD died)
+            (NP (CD 1996))
+            (PP (IN in)
+              (NP (NNP Göttingen))))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT a) (JJ German) (NN psychiatrist)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Hanscarl
+			name:	PERSON				0-1	Hanscarl Leuner 
+	1	Leuner
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Hanscarl Leuner 
+			N-ARGM-TMP		4-4	1919 
+			N-ARGM-LOC		5-6	in Bautzen 
+	4	1919
+			name:	DATE				4-4	1919 
+	5	in
+	6	Bautzen
+			name:	CITY				6-6	Bautzen 
+	7	;
+	8	died
+			sense:	die.v.01
+			prop:	die.01
+			V		8-8	died 
+			N-ARG-A1		0-1	Hanscarl Leuner 
+			N-ARGM-TMP		9-9	1996 
+			N-ARGM-LOC		10-11	in Göttingen 
+	9	1996
+			name:	DATE				9-9	1996 
+	10	in
+	11	Göttingen
+			name:	LOCATION				11-11	Göttingen 
+	12	)
+	13	was
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	was 
+			N-ARG-A1		0-12	Hanscarl Leuner ( born 1919 in Bautzen ; died 1996 in Göttingen ) 
+			N-ARG-A2		14-16	a German psychiatrist 
+	14	a
+	15	German
+			name:	NATIONALITY				15-15	German 
+	16	psychiatrist
+			name:	TITLE				16-16	psychiatrist 
+			sense:	psychiatrist.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His father was a leatherware factory owner .
+
+
+Treebanked sentence:
+--------------------
+His father was a leatherware factory owner . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His) (NN father))
+    (VP (VBD was)
+      (NP (DT a) (NN leatherware) (NN factory) (NN owner)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-0	His 
+	1	father
+			sense:	father.n.01
+	2	was
+			sense:	be.v.08
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	His father 
+			N-ARG-A2		3-6	a leatherware factory owner 
+	3	a
+	4	leatherware
+	5	factory
+			sense:	factory.n.01
+	6	owner
+			name:	TITLE				6-6	owner 
+			sense:	owner.n.01
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He studium of medicine at Frankfurt University and Marburg University ( 1939 – 1946 ) was interrupted by his military service in World War II .
+
+
+Treebanked sentence:
+--------------------
+He studium of medicine at Frankfurt University and Marburg University ( 1939 – 1946 ) was interrupted by his military service in World War II . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP He) (NN studium))
+      (PP (IN of)
+        (NP
+          (NP (NN medicine))
+          (PP (IN at)
+            (NP
+              (NP (NNP Frankfurt) (NNP University))
+              (CC and)
+              (NP (NNP Marburg) (NNP University))))))
+      (PRN (-LRB- -LRB-)
+        (NP (CD 1939) (SYM –) (CD 1946))
+        (-RRB- -RRB-)))
+    (VP (VBD was)
+      (VP (VBN interrupted)
+        (PP (IN by)
+          (NP
+            (NP (PRP$ his) (JJ military) (NN service))
+            (PP (IN in)
+              (NP (NNP World) (NNP War) (NNP II)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	studium
+	2	of
+	3	medicine
+			sense:	medicine.n.01
+	4	at
+	5	Frankfurt
+			name:	ORGANIZATION				5-6	Frankfurt University 
+	6	University
+	7	and
+	8	Marburg
+			name:	ORGANIZATION				8-9	Marburg University 
+	9	University
+	10	(
+	11	1939
+			name:	DATE				11-11	1939 
+	12	–
+	13	1946
+			name:	DATE				13-13	1946 
+	14	)
+	15	was
+			sense:	be.v.01
+			prop:	be.03
+			V		15-15	was 
+	16	interrupted
+			sense:	interrupt.v.01
+			prop:	interrupt.01
+			V		16-16	interrupted 
+			N-ARG-A1		0-14	He studium of medicine at Frankfurt University and Marburg University ( 1939 – 1946 ) 
+			N-ARG-A0		17-24	by his military service in World War II 
+	17	by
+	18	his
+			coref:	IDENT			0	18-18	his 
+	19	military
+			sense:	military.a.02
+	20	service
+			sense:	service.n.05
+	21	in
+	22	World
+			name:	MISC				22-22	World 
+	23	War
+			name:	CAUSE_OF_DEATH				23-23	War 
+	24	II
+			name:	MISC				24-24	II 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was a pioneer in using psychoactive drugs for therapy in Germany .
+
+
+Treebanked sentence:
+--------------------
+He was a pioneer in using psychoactive drugs for therapy in Germany . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN pioneer))
+        (PP (IN in)
+          (S
+            (VP (VBG using)
+              (NP (JJ psychoactive) (NNS drugs))
+              (PP (IN for)
+                (NP
+                  (NP (NN therapy))
+                  (PP (IN in)
+                    (NP (NNP Germany))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-11	a pioneer in using psychoactive drugs for therapy in Germany 
+	2	a
+	3	pioneer
+			sense:	pioneer.n.01
+	4	in
+	5	using
+			sense:	use.v.01
+			prop:	use.01
+			V		5-5	using 
+			N-ARG-A1		6-7	psychoactive drugs 
+			N-ARG-A2		8-9	for therapy 
+			N-ARGM-LOC		10-11	in Germany 
+	6	psychoactive
+			sense:	psychoactive.a.01
+	7	drugs
+			name:	CRIMINAL_CHARGE				7-7	drugs 
+			sense:	drug.n.01
+	8	for
+	9	therapy
+			sense:	therapy.n.01
+	10	in
+	11	Germany
+			name:	COUNTRY				11-11	Germany 
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He invented the so - called Psycholytic Therapy ( German : Psycholytische Therapie ) which is a combination of psychodynamic psychotherapy with some light use of hallucinogens to enhance access to preconscious contents .
+
+
+Treebanked sentence:
+--------------------
+He invented the so - called Psycholytic Therapy ( German : Psycholytische Therapie ) which is a combination of psychodynamic psychotherapy with some light use of hallucinogens to enhance access to preconscious contents . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD invented)
+      (NP
+        (NP (DT the)
+          (ADJP (RB so) (HYPH -) (VBN called))
+          (NML (NNP Psycholytic) (NNP Therapy))
+          (PRN (-LRB- -LRB-)
+            (FRAG
+              (NP (NNP German))
+              (: :)
+              (NP (NNP Psycholytische) (NNP Therapie)))
+            (-RRB- -RRB-)))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ is)
+              (NP
+                (NP (DT a) (NN combination))
+                (PP (IN of)
+                  (NP
+                    (NP (JJ psychodynamic) (NN psychotherapy))
+                    (PP (IN with)
+                      (NP
+                        (NP (DT some) (JJ light) (NN use))
+                        (PP (IN of)
+                          (NP (NNS hallucinogens)
+                            (S
+                              (VP (TO to)
+                                (VP (VB enhance)
+                                  (NP (NN access))
+                                  (PP (IN to)
+                                    (NP (JJ preconscious) (NNS contents))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	invented
+			sense:	invent.v.01
+			prop:	invent.01
+			V		1-1	invented 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-32	the so - called Psycholytic Therapy ( German : Psycholytische Therapie ) which is a combination of psychodynamic psychotherapy with some light use of hallucinogens to enhance access to preconscious contents 
+	2	the
+	3	so
+			sense:	so.r.03
+	4	-
+	5	called
+			sense:	name.v.01
+			prop:	call.01
+			V		5-5	called 
+			N-ARGM-MNR		3-3	so 
+	6	Psycholytic
+	7	Therapy
+	8	(
+	9	German
+			name:	NATIONALITY				9-9	German 
+	10	:
+	11	Psycholytische
+	12	Therapie
+	13	)
+	14	which
+	15	is
+			sense:	be.v.02
+			prop:	be.01
+			V		15-15	is 
+			N-ARG-A1		2-13	the so - called Psycholytic Therapy ( German : Psycholytische Therapie ) 
+			R-ARG-A1		14-14	which 
+			N-ARG-A2		16-32	a combination of psychodynamic psychotherapy with some light use of hallucinogens to enhance access to preconscious contents 
+	16	a
+	17	combination
+			sense:	combination.n.01
+	18	of
+	19	psychodynamic
+	20	psychotherapy
+			sense:	psychotherapy.n.02
+	21	with
+	22	some
+	23	light
+			sense:	light.a.04
+	24	use
+			sense:	use.n.01
+	25	of
+	26	hallucinogens
+			sense:	hallucinogen.n.01
+	27	to
+	28	enhance
+			sense:	enhance.v.01
+			prop:	enhance.01
+			V		28-28	enhance 
+			N-ARG-A1		29-32	access to preconscious contents 
+	29	access
+			sense:	access.n.06
+	30	to
+	31	preconscious
+	32	contents
+			sense:	contents.n.01
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After the general prohibition of hallucinogens in most countries he developed Guided Affective Imagery ( also known as : KIP , Katathym - imaginative Psychotherapy , Katathym - Psychotherapy , guided mental imagery , catathymic influences ) .
+
+
+Treebanked sentence:
+--------------------
+After the general prohibition of hallucinogens in most countries he developed Guided Affective Imagery ( also known as : KIP , Katathym - imaginative Psychotherapy , Katathym - Psychotherapy , guided mental imagery , catathymic influences ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP
+        (NP (DT the) (JJ general) (NN prohibition))
+        (PP (IN of)
+          (NP
+            (NP (NNS hallucinogens))
+            (PP (IN in)
+              (NP (JJS most) (NNS countries)))))))
+    (NP (PRP he))
+    (VP (VBD developed)
+      (NP
+        (NP (VBN Guided) (JJ Affective) (NN Imagery))
+        (-LRB- -LRB-)
+        (VP
+          (ADVP (RB also))
+          (VBN known)
+          (PP (IN as) (: :)
+            (NP
+              (NP
+                (ADJP
+                  (NP (NNP KIP) (, ,) (NNP Katathym))
+                  (HYPH -) (JJ imaginative))
+                (NN Psychotherapy))
+              (, ,)
+              (NP
+                (NP (NNP Katathym) (HYPH -) (NNP Psychotherapy))
+                (, ,)
+                (NP (VBN guided) (JJ mental) (NN imagery))
+                (, ,)
+                (NP (JJ catathymic) (NNS influences))))))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	the
+	2	general
+			name:	TITLE				2-2	general 
+			sense:	general.a.01
+	3	prohibition
+			sense:	prohibition.n.02
+	4	of
+	5	hallucinogens
+			sense:	hallucinogen.n.01
+	6	in
+	7	most
+			sense:	most.a.01
+	8	countries
+			sense:	state.n.04
+	9	he
+			coref:	IDENT			0	9-9	he 
+	10	developed
+			sense:	develop.v.01
+			prop:	develop.02
+			V		10-10	developed 
+			N-ARGM-TMP		0-8	After the general prohibition of hallucinogens in most countries 
+			N-ARG-A0		9-9	he 
+			N-ARG-A1		11-36	Guided Affective Imagery ( also known as : KIP , Katathym - imaginative Psychotherapy , Katathym - Psychotherapy , guided mental imagery , catathymic influences ) 
+	11	Guided
+			sense:	guide.v.03
+			prop:	guide.01
+			V		11-11	Guided 
+			N-ARG-A1		12-13	Affective Imagery 
+	12	Affective
+			sense:	affectional.s.01
+	13	Imagery
+			sense:	imagination.n.02
+	14	(
+	15	also
+			sense:	besides.r.02
+	16	known
+			sense:	acknowledge.v.06
+			prop:	know.01
+			V		16-16	known 
+			N-ARG-A1		11-13	Guided Affective Imagery 
+			N-ARGM-ADV		15-15	also 
+			N-ARG-A2		17-35	as : KIP , Katathym - imaginative Psychotherapy , Katathym - Psychotherapy , guided mental imagery , catathymic influences 
+	17	as
+	18	:
+	19	KIP
+	20	,
+	21	Katathym
+	22	-
+	23	imaginative
+			sense:	imaginative.s.01
+	24	Psychotherapy
+			sense:	psychotherapy.n.02
+	25	,
+	26	Katathym
+			name:	LOCATION				26-26	Katathym 
+	27	-
+	28	Psychotherapy
+	29	,
+	30	guided
+			sense:	guide.v.03
+			prop:	guide.01
+			V		30-30	guided 
+			N-ARG-A1		31-32	mental imagery 
+	31	mental
+			sense:	mental.a.01
+	32	imagery
+			sense:	imagination.n.02
+	33	,
+	34	catathymic
+	35	influences
+			sense:	influence.n.03
+	36	)
+	37	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.0-0	His 
+				2.0-0	He 
+				2.18-18	his 
+				3.0-0	He 
+				4.0-0	He 
+				5.9-9	he 
+

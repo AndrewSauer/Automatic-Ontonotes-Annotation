@@ -1,0 +1,719 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Andrea Reinkemeyer ( born 1976 ) is an American composer .
+
+
+Treebanked sentence:
+--------------------
+Andrea Reinkemeyer ( born 1976 ) is an American composer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Andrea) (NNP Reinkemeyer))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 1976)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT an) (JJ American) (NN composer)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Andrea
+			name:	PERSON				0-1	Andrea Reinkemeyer 
+	1	Reinkemeyer
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Andrea Reinkemeyer 
+			N-ARGM-TMP		4-4	1976 
+	4	1976
+			name:	DATE				4-4	1976 
+	5	)
+	6	is
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	is 
+			N-ARG-A1		0-5	Andrea Reinkemeyer ( born 1976 ) 
+			N-ARG-A2		7-9	an American composer 
+	7	an
+	8	American
+			name:	NATIONALITY				8-8	American 
+	9	composer
+			name:	TITLE				9-9	composer 
+			sense:	composer.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She was born in Portland , Oregon , and graduated with a bachelor 's degree from the University of Oregon .
+
+
+Treebanked sentence:
+--------------------
+She was born in Portland , Oregon , and graduated with a bachelor 's degree from the University of Oregon . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP
+      (VP (VBD was)
+        (VP (VBN born)
+          (PP (IN in)
+            (NP (NNP Portland) (, ,) (NNP Oregon)))))
+      (, ,)
+      (CC and)
+      (VP (VBD graduated)
+        (PP (IN with)
+          (NP
+            (NP (DT a) (NN bachelor) (POS 's))
+            (NN degree)))
+        (PP (IN from)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Oregon)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	She 
+			N-ARGM-LOC		3-6	in Portland , Oregon 
+	3	in
+	4	Portland
+			name:	CITY				4-4	Portland 
+	5	,
+	6	Oregon
+			name:	STATE_OR_PROVINCE				6-6	Oregon 
+	7	,
+	8	and
+	9	graduated
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		9-9	graduated 
+			N-ARG-A0		0-0	She 
+			N-ARGM-MNR		10-14	with a bachelor 's degree 
+			N-ARG-A1		15-19	from the University of Oregon 
+	10	with
+	11	a
+	12	bachelor
+			name:	TITLE				12-12	bachelor 
+			sense:	bachelor.n.01
+	13	's
+	14	degree
+			sense:	academic_degree.n.01
+	15	from
+	16	the
+			coref:	IDENT			1	16-19	the University of Oregon 
+	17	University
+			name:	ORGANIZATION				17-19	University of Oregon 
+	18	of
+	19	Oregon
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She continued her studies in composition at the University of Michigan , graduating with a doctorate degree .
+
+
+Treebanked sentence:
+--------------------
+She continued her studies in composition at the University of Michigan , graduating with a doctorate degree . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD continued)
+      (NP (PRP$ her) (NNS studies))
+      (PP (IN in)
+        (NP (NN composition)))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NNP University))
+          (PP (IN of)
+            (NP (NNP Michigan)))))
+      (, ,)
+      (S
+        (VP (VBG graduating)
+          (PP (IN with)
+            (NP (DT a) (NN doctorate) (NN degree))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	continued
+			sense:	continue.v.01
+			prop:	continue.01
+			V		1-1	continued 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		2-5	her studies in composition 
+			N-ARGM-LOC		6-10	at the University of Michigan 
+			N-ARGM-ADV		12-16	graduating with a doctorate degree 
+	2	her
+	3	studies
+			sense:	study.n.02
+	4	in
+	5	composition
+			sense:	composing.n.02
+	6	at
+	7	the
+			coref:	IDENT			1	7-10	the University of Michigan 
+	8	University
+			name:	ORGANIZATION				8-10	University of Michigan 
+	9	of
+	10	Michigan
+	11	,
+	12	graduating
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		12-12	graduating 
+			N-ARG-A0		0-0	She 
+			N-ARGM-MNR		13-16	with a doctorate degree 
+	13	with
+	14	a
+	15	doctorate
+			sense:	doctors_degree.n.01
+	16	degree
+			sense:	academic_degree.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As an undergraduate , she won the Outstanding Creativity in Composition Award .
+
+
+Treebanked sentence:
+--------------------
+As an undergraduate , she won the Outstanding Creativity in Composition Award . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN As)
+      (NP (DT an) (NN undergraduate)))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBD won)
+      (NP (DT the) (NNP Outstanding) (NNP Creativity))
+      (PP (IN in)
+        (NP (NNP Composition) (NNP Award))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	an
+	2	undergraduate
+			sense:	undergraduate.n.01
+	3	,
+	4	she
+	5	won
+			sense:	win.v.01
+			prop:	win.01
+			V		5-5	won 
+			N-ARGM-TMP		0-2	As an undergraduate 
+			N-ARG-A0		4-4	she 
+			N-ARG-A1		6-11	the Outstanding Creativity in Composition Award 
+	6	the
+	7	Outstanding
+			name:	MISC				7-8	Outstanding Creativity 
+	8	Creativity
+	9	in
+	10	Composition
+	11	Award
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Her music has been performed internationally .
+
+
+Treebanked sentence:
+--------------------
+Her music has been performed internationally . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ Her) (NN music))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN performed)
+          (ADVP (RB internationally)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Her
+			coref:	IDENT			0	0-1	Her music 
+	1	music
+			sense:	music.n.01
+	2	has
+			sense:	have.v.01
+			prop:	have.01
+			V		2-2	has 
+	3	been
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	been 
+	4	performed
+			sense:	perform.v.03
+			prop:	perform.01
+			V		4-4	performed 
+			N-ARG-A1		0-1	Her music 
+			N-ARGM-LOC		5-5	internationally 
+	5	internationally
+			sense:	internationally.r.01
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Her music has been described as " haunting " , " clever , funky , jazzy and virtuosic " .
+
+
+Treebanked sentence:
+--------------------
+Her music has been described as " haunting " , " clever , funky , jazzy and virtuosic " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ Her) (NN music))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN described)
+          (PP (IN as)
+            (S
+              (VP (`` ") (VBG haunting) ('' "))))
+          (, ,)
+          (ADJP (`` ") (JJ clever) (, ,) (JJ funky) (, ,) (JJ jazzy)
+            (CC and)
+            (JJ virtuosic)))))
+    ('' ") (. .)))
+
+
+Leaves:
+-------
+	0	Her
+			coref:	IDENT			0	0-1	Her music 
+	1	music
+			sense:	music.n.01
+	2	has
+			sense:	have.v.02
+			prop:	have.01
+			V		2-2	has 
+	3	been
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	been 
+	4	described
+			sense:	describe.v.01
+			prop:	describe.01
+			V		4-4	described 
+			N-ARG-A1		0-1	Her music 
+			N-ARG-A2		5-18	as " haunting " , " clever , funky , jazzy and virtuosic " 
+	5	as
+	6	"
+	7	haunting
+			sense:	haunt.v.02
+			prop:	haunt.01
+			V		7-7	haunting 
+	8	"
+	9	,
+	10	"
+	11	clever
+			sense:	clever.s.03
+	12	,
+	13	funky
+			sense:	funky.s.02
+	14	,
+	15	jazzy
+			sense:	jazzy.s.01
+	16	and
+	17	virtuosic
+	18	"
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+While at the University of Michigan , Reinkemeyer taught as a graduate student instructor in electronic composition .
+
+
+Treebanked sentence:
+--------------------
+While at the University of Michigan , Reinkemeyer taught as a graduate student instructor in electronic composition . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN While)
+      (FRAG
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Michigan)))))))
+    (, ,)
+    (NP (NNP Reinkemeyer))
+    (VP (VBD taught)
+      (PP (IN as)
+        (NP (DT a)
+          (NML (NN graduate) (NN student))
+          (NN instructor)))
+      (PP (IN in)
+        (NP (JJ electronic) (NN composition))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	While
+	1	at
+	2	the
+	3	University
+			name:	ORGANIZATION				3-5	University of Michigan 
+	4	of
+	5	Michigan
+	6	,
+	7	Reinkemeyer
+			name:	PERSON				7-7	Reinkemeyer 
+	8	taught
+			sense:	teach.v.01
+			prop:	teach.01
+			V		8-8	taught 
+			N-ARGM-TMP		0-5	While at the University of Michigan 
+			N-ARG-A0		7-7	Reinkemeyer 
+			N-ARGM-PRD		9-16	as a graduate student instructor in electronic composition 
+	9	as
+	10	a
+	11	graduate
+			sense:	alumnus.n.01
+	12	student
+			name:	TITLE				12-13	student instructor 
+			sense:	student.n.01
+	13	instructor
+			sense:	teacher.n.01
+	14	in
+	15	electronic
+			sense:	electronic.a.01
+	16	composition
+			sense:	composing.n.02
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After completing her education , she took a position teaching composition , theory and technology at Bowling Green State University in Ohio .
+
+
+Treebanked sentence:
+--------------------
+After completing her education , she took a position teaching composition , theory and technology at Bowling Green State University in Ohio . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG completing)
+          (NP (PRP$ her) (NN education)))))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBD took)
+      (NP (DT a) (NN position) (NN teaching))
+      (NP
+        (NP (NN composition) (, ,) (NN theory)
+          (CC and)
+          (NN technology))
+        (PP (IN at)
+          (NP
+            (NP (NNP Bowling) (NNP Green) (NNP State) (NNP University))
+            (PP (IN in)
+              (NP (NNP Ohio)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	completing
+			sense:	complete.v.01
+			prop:	complete.01
+			V		1-1	completing 
+			N-ARG-A1		2-3	her education 
+	2	her
+	3	education
+			sense:	education.n.04
+	4	,
+	5	she
+	6	took
+			sense:	fill.v.04
+			prop:	take.01
+			V		6-6	took 
+			N-ARGM-TMP		0-3	After completing her education 
+			N-ARG-A0		5-5	she 
+			N-ARG-A1		7-21	a position teaching composition , theory and technology at Bowling Green State University in Ohio 
+	7	a
+	8	position
+			sense:	position.n.06
+	9	teaching
+			sense:	teaching.n.01
+	10	composition
+			sense:	composing.n.02
+	11	,
+	12	theory
+			sense:	theory.n.01
+	13	and
+	14	technology
+			sense:	engineering.n.02
+	15	at
+	16	Bowling
+			name:	ORGANIZATION				16-19	Bowling Green State University 
+	17	Green
+	18	State
+	19	University
+	20	in
+	21	Ohio
+			name:	STATE_OR_PROVINCE				21-21	Ohio 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She is currently an Assistant Professor of Music Composition and Theory at Linfield College in McMinnville , Oregon .
+
+
+Treebanked sentence:
+--------------------
+She is currently an Assistant Professor of Music Composition and Theory at Linfield College in McMinnville , Oregon . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ is)
+      (ADVP (RB currently))
+      (NP
+        (NP (DT an) (NNP Assistant) (NNP Professor))
+        (PP (IN of)
+          (NP (NNP Music) (NNP Composition)
+            (CC and)
+            (NNP Theory)))
+        (PP (IN at)
+          (NP
+            (NP (NNP Linfield) (NNP College))
+            (PP (IN in)
+              (NP (NNP McMinnville) (, ,) (NNP Oregon)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	is
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	She 
+			N-ARGM-TMP		2-2	currently 
+			N-ARG-A2		3-17	an Assistant Professor of Music Composition and Theory at Linfield College in McMinnville , Oregon 
+	2	currently
+			name:	DATE				2-2	currently 
+			sense:	presently.r.02
+	3	an
+	4	Assistant
+			name:	TITLE				4-5	Assistant Professor 
+	5	Professor
+	6	of
+	7	Music
+	8	Composition
+	9	and
+	10	Theory
+	11	at
+	12	Linfield
+			name:	ORGANIZATION				12-13	Linfield College 
+	13	College
+	14	in
+	15	McMinnville
+			name:	LOCATION				15-15	McMinnville 
+	16	,
+	17	Oregon
+			name:	STATE_OR_PROVINCE				17-17	Oregon 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She married Brian Amer and has one daughter .
+
+
+Treebanked sentence:
+--------------------
+She married Brian Amer and has one daughter . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP
+      (VP (VBD married)
+        (NP (NNP Brian) (NNP Amer)))
+      (CC and)
+      (VP (VBZ has)
+        (NP (CD one) (NN daughter))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	married
+			sense:	marry.v.01
+			prop:	marry.01
+			V		1-1	married 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-3	Brian Amer 
+	2	Brian
+			name:	PERSON				2-3	Brian Amer 
+	3	Amer
+	4	and
+	5	has
+			sense:	have.v.01
+			prop:	have.03
+			V		5-5	has 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		6-7	one daughter 
+	6	one
+			name:	NUMBER				6-6	one 
+	7	daughter
+			sense:	daughter.n.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Reinkemeyer has also worked teaching music in Detroit community outreach programs .
+
+
+Treebanked sentence:
+--------------------
+Reinkemeyer has also worked teaching music in Detroit community outreach programs . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Reinkemeyer))
+    (VP (VBZ has)
+      (ADVP (RB also))
+      (VP (VBN worked)
+        (NP (NN teaching) (NN music))
+        (PP (IN in)
+          (NP (NNP Detroit) (NN community) (NN outreach) (NNS programs)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Reinkemeyer
+			name:	PERSON				0-0	Reinkemeyer 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	also
+			sense:	besides.r.02
+	3	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		3-3	worked 
+			N-ARG-A0		0-0	Reinkemeyer 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A1		4-10	teaching music in Detroit community outreach programs 
+	4	teaching
+			sense:	teaching.n.01
+	5	music
+			sense:	music.n.01
+	6	in
+	7	Detroit
+			name:	CITY				7-7	Detroit 
+	8	community
+			sense:	community.n.01
+	9	outreach
+			sense:	outreach.n.01
+	10	programs
+			sense:	program.n.02
+	11	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.0-1	Her music 
+				5.0-1	Her music 
+	Chain 1 (IDENT)
+				1.16-19	the University of Oregon 
+				2.7-10	the University of Michigan 
+

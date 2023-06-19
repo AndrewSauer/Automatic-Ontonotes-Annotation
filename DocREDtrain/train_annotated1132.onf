@@ -1,0 +1,527 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+José Biriukov ( born 3 February 1963 ) is a retired Spanish and Soviet professional basketball player .
+
+
+Treebanked sentence:
+--------------------
+José Biriukov ( born 3 February 1963 ) is a retired Spanish and Soviet professional basketball player . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP José) (NNP Biriukov))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 3))
+        (NP-TMP (NNP February) (CD 1963)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a)
+        (NML
+          (NML (JJ retired) (JJ Spanish))
+          (CC and)
+          (NML (JJ Soviet) (JJ professional) (NN basketball)))
+        (NN player)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	José
+			name:	PERSON				0-1	José Biriukov 
+	1	Biriukov
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	José Biriukov 
+			N-ARGM-TMP		4-6	3 February 1963 
+	4	3
+			name:	DATE				4-6	3 February 1963 
+	5	February
+	6	1963
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	José Biriukov ( born 3 February 1963 ) 
+			N-ARG-A2		9-16	a retired Spanish and Soviet professional basketball player 
+	9	a
+	10	retired
+			sense:	retired.s.01
+	11	Spanish
+			name:	NATIONALITY				11-11	Spanish 
+	12	and
+	13	Soviet
+			name:	MISC				13-13	Soviet 
+			sense:	soviet.a.01
+	14	professional
+			sense:	professional.a.01
+	15	basketball
+			name:	TITLE				15-16	basketball player 
+			sense:	basketball.n.01
+	16	player
+			sense:	player.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in Moscow , with a Russian father and a mother of Basque origin .
+
+
+Treebanked sentence:
+--------------------
+Born in Moscow , with a Russian father and a mother of Basque origin . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (VP (VBN Born)
+      (PP (IN in)
+        (NP (NNP Moscow)))
+      (, ,)
+      (PP (IN with)
+        (NP
+          (NP (DT a) (JJ Russian) (NN father))
+          (CC and)
+          (NP
+            (NP (DT a) (NN mother))
+            (PP (IN of)
+              (NP (JJ Basque) (NN origin)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-2	in Moscow 
+			N-ARGM-ADV		4-13	with a Russian father and a mother of Basque origin 
+	1	in
+	2	Moscow
+			name:	CITY				2-2	Moscow 
+	3	,
+	4	with
+	5	a
+	6	Russian
+			name:	NATIONALITY				6-6	Russian 
+	7	father
+			sense:	father.n.01
+	8	and
+	9	a
+	10	mother
+			sense:	mother.n.01
+	11	of
+	12	Basque
+			name:	MISC				12-12	Basque 
+	13	origin
+			sense:	origin.n.02
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Began playing basketball for Dynamo Moscow basketball team , before moving to Spain to play for Real Madrid .
+
+
+Treebanked sentence:
+--------------------
+Began playing basketball for Dynamo Moscow basketball team , before moving to Spain to play for Real Madrid . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP
+      (NP (JJ Began) (NN playing) (NN basketball))
+      (PP (IN for)
+        (NP (NNP Dynamo) (NNP Moscow))))
+    (NP (NN basketball) (NN team))
+    (, ,)
+    (PP (IN before)
+      (S
+        (VP (VBG moving)
+          (PP (IN to)
+            (NP (NNP Spain)))
+          (S
+            (VP (TO to)
+              (VP (VB play)
+                (PP (IN for)
+                  (NP (NNP Real) (NNP Madrid)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Began
+	1	playing
+			sense:	playing.n.02
+	2	basketball
+			sense:	basketball.n.01
+	3	for
+	4	Dynamo
+			name:	ORGANIZATION				4-5	Dynamo Moscow 
+	5	Moscow
+	6	basketball
+			sense:	basketball.n.01
+	7	team
+			sense:	team.n.01
+	8	,
+	9	before
+	10	moving
+			sense:	move.v.04
+			prop:	move.01
+			V		10-10	moving 
+			N-ARG-A2		11-12	to Spain 
+			N-ARGM-PRP		13-17	to play for Real Madrid 
+	11	to
+	12	Spain
+			name:	COUNTRY				12-12	Spain 
+	13	to
+	14	play
+			sense:	play.v.01
+			prop:	play.01
+			V		14-14	play 
+			N-ARGM-ADV		15-17	for Real Madrid 
+	15	for
+	16	Real
+			coref:	IDENT			0	16-17	Real Madrid 
+			name:	ORGANIZATION				16-17	Real Madrid 
+	17	Madrid
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Played for the Soviet and later Spanish national basketball team .
+
+
+Treebanked sentence:
+--------------------
+Played for the Soviet and later Spanish national basketball team . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (VP
+      (VP (VBN Played)
+        (PP (IN for)
+          (NP (DT the) (NNP Soviet))))
+      (CC and)
+      (VP
+        (ADVP (RB later))
+        (NP
+          (NML (JJ Spanish) (JJ national) (NN basketball))
+          (NN team))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Played
+			sense:	play.v.01
+			prop:	play.01
+			V		0-0	Played 
+			N-ARGM-ADV		1-9	for the Soviet and later Spanish national basketball team 
+	1	for
+	2	the
+	3	Soviet
+			name:	MISC				3-3	Soviet 
+	4	and
+	5	later
+			sense:	subsequently.r.01
+	6	Spanish
+			name:	NATIONALITY				6-6	Spanish 
+	7	national
+			sense:	national.a.01
+	8	basketball
+			sense:	basketball.n.01
+	9	team
+			sense:	team.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He played 11 seasons in Real Madrid , 22 games in the USSR national team and 57 for the Spanish one .
+
+
+Treebanked sentence:
+--------------------
+He played 11 seasons in Real Madrid , 22 games in the USSR national team and 57 for the Spanish one . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD played)
+      (NP
+        (NP
+          (NP (CD 11) (NNS seasons))
+          (PP (IN in)
+            (NP (NNP Real) (NNP Madrid))))
+        (, ,)
+        (NP
+          (NP (CD 22) (NNS games))
+          (PP (IN in)
+            (NP (DT the) (NNP USSR) (JJ national) (NN team))))
+        (CC and)
+        (NP
+          (NP (CD 57))
+          (PP (IN for)
+            (NP (DT the) (JJ Spanish) (NN one))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	played
+			sense:	play.v.01
+			prop:	play.01
+			V		1-1	played 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-3	11 seasons 
+			C-ARG-A1		8-14	22 games in the USSR national team 
+	2	11
+			name:	NUMBER				2-2	11 
+	3	seasons
+			sense:	season.n.01
+	4	in
+	5	Real
+			coref:	IDENT			0	5-6	Real Madrid 
+			name:	ORGANIZATION				5-6	Real Madrid 
+	6	Madrid
+	7	,
+	8	22
+			name:	NUMBER				8-8	22 
+	9	games
+			sense:	game.n.02
+	10	in
+	11	the
+	12	USSR
+			name:	LOCATION				12-12	USSR 
+	13	national
+			sense:	national.a.01
+	14	team
+			sense:	team.n.01
+	15	and
+	16	57
+			name:	NUMBER				16-16	57 
+	17	for
+	18	the
+	19	Spanish
+			name:	NATIONALITY				19-19	Spanish 
+	20	one
+			name:	NUMBER				20-20	one 
+			sense:	one.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He played as shooting guard and was a good three points shooter , using a particular style of shooting the ball flat to the basket .
+
+
+Treebanked sentence:
+--------------------
+He played as shooting guard and was a good three points shooter , using a particular style of shooting the ball flat to the basket . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD played)
+        (PP (IN as)
+          (NP (NN shooting) (NN guard))))
+      (CC and)
+      (VP (VBD was)
+        (NP (DT a)
+          (ADJP (JJ good)
+            (NP (CD three) (NNS points)))
+          (NN shooter))
+        (, ,)
+        (S
+          (VP (VBG using)
+            (NP
+              (NP (DT a) (JJ particular) (NN style))
+              (PP (IN of)
+                (S
+                  (VP (VBG shooting)
+                    (S
+                      (NP (DT the) (NN ball))
+                      (ADJP (JJ flat)
+                        (PP (IN to)
+                          (NP (DT the) (NN basket)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	played
+			sense:	play.v.01
+			prop:	play.01
+			V		1-1	played 
+			N-ARG-A0		0-0	He 
+			N-ARGM-PRD		2-4	as shooting guard 
+	2	as
+	3	shooting
+			name:	TITLE				3-4	shooting guard 
+			sense:	shooting.n.01
+	4	guard
+			sense:	guard.n.05
+	5	and
+	6	was
+			sense:	be.v.01
+			prop:	be.01
+			V		6-6	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		7-11	a good three points shooter 
+			N-ARGM-ADV		13-24	using a particular style of shooting the ball flat to the basket 
+	7	a
+	8	good
+			sense:	good.a.01
+	9	three
+			name:	NUMBER				9-9	three 
+	10	points
+			sense:	point.n.10
+	11	shooter
+			name:	TITLE				11-11	shooter 
+			sense:	shooter.n.04
+	12	,
+	13	using
+			sense:	use.v.01
+			prop:	use.01
+			V		13-13	using 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		14-24	a particular style of shooting the ball flat to the basket 
+	14	a
+	15	particular
+			sense:	particular.s.01
+	16	style
+			sense:	manner.n.01
+	17	of
+	18	shooting
+			sense:	shoot.v.08
+			prop:	shoot.01
+			V		18-18	shooting 
+			N-ARG-A1		19-20	the ball 
+			N-ARGM-MNR		21-21	flat 
+			N-ARGM-DIR		22-24	to the basket 
+	19	the
+	20	ball
+			sense:	ball.n.01
+	21	flat
+			sense:	flat.s.01
+	22	to
+	23	the
+	24	basket
+			sense:	basket.n.03
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+One of his most famous international games was playing the 1988 McDonald 's Open against Boston Celtics .
+
+
+Treebanked sentence:
+--------------------
+One of his most famous international games was playing the 1988 McDonald 's Open against Boston Celtics . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (CD One))
+      (PP (IN of)
+        (NP (PRP$ his)
+          (ADJP (RBS most) (JJ famous))
+          (JJ international) (NNS games))))
+    (VP (VBD was)
+      (VP (VBG playing)
+        (NP (DT the) (CD 1988)
+          (NP (NNP McDonald) (POS 's))
+          (NNP Open))
+        (PP (IN against)
+          (NP (NNP Boston) (NNPS Celtics)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	One
+			name:	NUMBER				0-0	One 
+	1	of
+	2	his
+	3	most
+			sense:	most.r.01
+	4	famous
+			sense:	celebrated.s.01
+	5	international
+			sense:	external.s.03
+	6	games
+			sense:	game.n.02
+	7	was
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	was 
+			N-ARG-A1		0-6	One of his most famous international games 
+			N-ARG-A2		8-16	playing the 1988 McDonald 's Open against Boston Celtics 
+	8	playing
+			sense:	play.v.01
+			prop:	play.01
+			V		8-8	playing 
+			N-ARG-A1		9-16	the 1988 McDonald 's Open against Boston Celtics 
+	9	the
+	10	1988
+			name:	DATE				10-10	1988 
+	11	McDonald
+			name:	ORGANIZATION				11-11	McDonald 
+	12	's
+	13	Open
+			name:	MISC				13-13	Open 
+	14	against
+	15	Boston
+			name:	ORGANIZATION				15-16	Boston Celtics 
+	16	Celtics
+	17	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.16-17	Real Madrid 
+				4.5-6	Real Madrid 
+

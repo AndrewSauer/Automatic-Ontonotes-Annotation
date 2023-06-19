@@ -1,0 +1,997 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Nairobi City Stars is an association football club based in Nairobi , Kenya .
+
+
+Treebanked sentence:
+--------------------
+Nairobi City Stars is an association football club based in Nairobi , Kenya . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Nairobi) (NNP City) (NNPS Stars))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN association) (NN football) (NN club))
+        (PP (VBN based)
+          (PP (IN in)
+            (NP (NNP Nairobi) (, ,) (NNP Kenya))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Nairobi
+			coref:	IDENT			3	0-2	Nairobi City Stars 
+			name:	ORGANIZATION				0-2	Nairobi City Stars 
+	1	City
+	2	Stars
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Nairobi City Stars 
+			N-ARG-A2		4-12	an association football club based in Nairobi , Kenya 
+	4	an
+	5	association
+			sense:	association.n.01
+	6	football
+			sense:	football.n.01
+	7	club
+			sense:	club.n.02
+	8	based
+			sense:	base.v.02
+			prop:	base.01
+			V		8-8	based 
+			N-ARG-A1		4-7	an association football club 
+			N-ARGM-LOC		9-12	in Nairobi , Kenya 
+	9	in
+	10	Nairobi
+			name:	CITY				10-10	Nairobi 
+	11	,
+	12	Kenya
+			coref:	IDENT			2	12-12	Kenya 
+			name:	COUNTRY				12-12	Kenya 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+They currently compete in the Kenyan Premier League .
+
+
+Treebanked sentence:
+--------------------
+They currently compete in the Kenyan Premier League . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP They))
+    (ADVP (RB currently))
+    (VP (VBP compete)
+      (PP (IN in)
+        (NP (DT the) (JJ Kenyan) (NNP Premier) (NNP League))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	They
+			coref:	IDENT			3	0-0	They 
+	1	currently
+			name:	DATE				1-1	currently 
+			sense:	presently.r.02
+	2	compete
+			sense:	compete.v.01
+			prop:	compete.01
+			V		2-2	compete 
+			N-ARG-A0		0-0	They 
+			N-ARGM-TMP		1-1	currently 
+			N-ARGM-LOC		3-7	in the Kenyan Premier League 
+	3	in
+	4	the
+			coref:	IDENT			4	4-7	the Kenyan Premier League 
+	5	Kenyan
+			name:	ORGANIZATION				5-7	Kenyan Premier League 
+	6	Premier
+	7	League
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The club was founded in 2003 as World Hope Football Club , when it took over Kawangware FC , who had been relegated from the Premier League .
+
+
+Treebanked sentence:
+--------------------
+The club was founded in 2003 as World Hope Football Club , when it took over Kawangware FC , who had been relegated from the Premier League . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN club))
+    (VP (VBD was)
+      (VP (VBN founded)
+        (PP (IN in)
+          (NP (CD 2003)))
+        (PP (IN as)
+          (NP
+            (NP (NNP World) (NNP Hope) (NNP Football) (NNP Club))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (PRP it))
+                (VP (VBD took)
+                  (PRT (RP over))
+                  (NP
+                    (NP (NNP Kawangware) (NNP FC))
+                    (, ,)
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (VP (VBD had)
+                          (VP (VBN been)
+                            (VP (VBN relegated)
+                              (PP (IN from)
+                                (NP (DT the) (NNP Premier) (NNP League))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The club 
+	1	club
+			sense:	club.n.02
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		3-3	founded 
+			N-ARG-A1		0-1	The club 
+			N-ARGM-TMP		4-5	in 2003 
+			N-ARGM-PRD		6-9	as World Hope Football 
+			N-ARG-A2		10-10	Club 
+			N-ARGM-TMP		12-26	when it took over Kawangware FC , who had been relegated from the Premier League 
+	4	in
+	5	2003
+			name:	DATE				5-5	2003 
+	6	as
+	7	World
+			coref:	IDENT			4	7-26	World Hope Football Club , when it took over Kawangware FC , who had been relegated from the Premier League 
+			name:	ORGANIZATION				7-10	World Hope Football Club 
+	8	Hope
+	9	Football
+	10	Club
+	11	,
+	12	when
+	13	it
+			coref:	IDENT			1	13-13	it 
+	14	took
+			sense:	fill.v.04
+			prop:	take.12
+			V		14-14	took 
+			N-ARGM-TMP		12-12	when 
+			N-ARG-A0		13-13	it 
+			N-ARG-A1		16-26	Kawangware FC , who had been relegated from the Premier League 
+	15	over
+	16	Kawangware
+			coref:	IDENT			4	16-26	Kawangware FC , who had been relegated from the Premier League 
+			name:	ORGANIZATION				16-17	Kawangware FC 
+	17	FC
+	18	,
+	19	who
+	20	had
+			sense:	have.v.11
+			prop:	have.01
+			V		20-20	had 
+	21	been
+			sense:	be.v.01
+			prop:	be.03
+			V		21-21	been 
+	22	relegated
+			sense:	demote.v.01
+			prop:	relegate.01
+			V		22-22	relegated 
+			N-ARG-A1		16-17	Kawangware FC 
+			R-ARG-A1		19-19	who 
+	23	from
+	24	the
+			coref:	IDENT			4	24-26	the Premier League 
+	25	Premier
+			name:	ORGANIZATION				25-26	Premier League 
+	26	League
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After one season in the Nationwide League , World Hope was promoted to the Kenyan Premier League .
+
+
+Treebanked sentence:
+--------------------
+After one season in the Nationwide League , World Hope was promoted to the Kenyan Premier League . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP
+        (NP (CD one) (NN season))
+        (PP (IN in)
+          (NP (DT the) (NNP Nationwide) (NNP League)))))
+    (, ,)
+    (NP (NNP World) (NNP Hope))
+    (VP (VBD was)
+      (VP (VBN promoted)
+        (PP (IN to)
+          (NP (DT the) (JJ Kenyan) (NNP Premier) (NNP League)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	one
+			name:	NUMBER				1-1	one 
+	2	season
+			sense:	season.n.01
+	3	in
+	4	the
+			coref:	IDENT			4	4-6	the Nationwide League 
+	5	Nationwide
+			name:	ORGANIZATION				5-6	Nationwide League 
+	6	League
+	7	,
+	8	World
+	9	Hope
+	10	was
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	was 
+	11	promoted
+			sense:	promote.v.02
+			prop:	promote.01
+			V		11-11	promoted 
+			N-ARGM-TMP		0-6	After one season in the Nationwide League 
+			N-ARG-A1		8-9	World Hope 
+			N-ARG-A2		12-16	to the Kenyan Premier League 
+	12	to
+	13	the
+			coref:	IDENT			4	13-16	the Kenyan Premier League 
+	14	Kenyan
+			name:	ORGANIZATION				14-16	Kenyan Premier League 
+	15	Premier
+	16	League
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The club was owned by World Hope International , a charitable organisation .
+
+
+Treebanked sentence:
+--------------------
+The club was owned by World Hope International , a charitable organisation . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN club))
+    (VP (VBD was)
+      (VP (VBN owned)
+        (PP (IN by)
+          (NP
+            (NP (NNP World) (NNP Hope) (NNP International))
+            (, ,)
+            (NP (DT a) (JJ charitable) (NN organisation))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The club 
+	1	club
+			sense:	baseball_club.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		3-3	owned 
+			N-ARG-A1		0-1	The club 
+			N-ARG-A0		4-11	by World Hope International , a charitable organisation 
+	4	by
+	5	World
+			name:	ORGANIZATION				5-7	World Hope International 
+	6	Hope
+	7	International
+	8	,
+	9	a
+	10	charitable
+			sense:	charitable.a.01
+	11	organisation
+			sense:	organization.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In October 2008 , the club was bought by Ambassadors in Sport ( AIS Kenya ) , who renamed the club to Nairobi City Stars FC after the 2008 season .
+
+
+Treebanked sentence:
+--------------------
+In October 2008 , the club was bought by Ambassadors in Sport ( AIS Kenya ) , who renamed the club to Nairobi City Stars FC after the 2008 season . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP October) (CD 2008)))
+    (, ,)
+    (NP (DT the) (NN club))
+    (VP (VBD was)
+      (VP (VBN bought)
+        (PP (IN by)
+          (NP (NNPS Ambassadors)))
+        (PP (IN in)
+          (NP
+            (NP
+              (NP (NNP Sport))
+              (-LRB- -LRB-)
+              (NP (NNP AIS) (NNP Kenya))
+              (-RRB- -RRB-))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD renamed)
+                  (NP (DT the) (NN club))
+                  (PP (IN to)
+                    (NP (NNP Nairobi) (NNP City) (NNPS Stars) (NNP FC)))
+                  (PP (IN after)
+                    (NP (DT the) (CD 2008) (NN season))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	October
+			name:	DATE				1-2	October 2008 
+	2	2008
+	3	,
+	4	the
+			coref:	IDENT			1	4-5	the club 
+	5	club
+			sense:	baseball_club.n.01
+	6	was
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	was 
+	7	bought
+			sense:	buy.v.01
+			prop:	buy.01
+			V		7-7	bought 
+			N-ARGM-TMP		0-2	In October 2008 
+			N-ARG-A1		4-5	the club 
+			N-ARG-A0		8-29	by Ambassadors in Sport ( AIS Kenya ) , who renamed the club to Nairobi City Stars FC after the 2008 season 
+	8	by
+	9	Ambassadors
+	10	in
+	11	Sport
+	12	(
+	13	AIS
+	14	Kenya
+			coref:	IDENT			2	14-14	Kenya 
+			name:	COUNTRY				14-14	Kenya 
+	15	)
+	16	,
+	17	who
+	18	renamed
+			sense:	rename.v.01
+			prop:	rename.01
+			V		18-18	renamed 
+			N-ARG-A0		9-15	Ambassadors in Sport ( AIS Kenya ) 
+			R-ARG-A0		17-17	who 
+			N-ARG-A1		19-20	the club 
+			N-ARG-A2		21-25	to Nairobi City Stars FC 
+			N-ARGM-TMP		26-29	after the 2008 season 
+	19	the
+			coref:	IDENT			1	19-20	the club 
+	20	club
+			sense:	baseball_club.n.01
+	21	to
+	22	Nairobi
+			coref:	IDENT			3	22-25	Nairobi City Stars FC 
+			name:	ORGANIZATION				22-25	Nairobi City Stars FC 
+	23	City
+	24	Stars
+	25	FC
+	26	after
+	27	the
+	28	2008
+			name:	DATE				28-28	2008 
+	29	season
+			sense:	season.n.01
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The name is after Cleveland City Stars .
+
+
+Treebanked sentence:
+--------------------
+The name is after Cleveland City Stars . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN name))
+    (VP (VBZ is)
+      (PP (IN after)
+        (NP (NNP Cleveland) (NNP City) (NNPS Stars))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	name
+			sense:	name.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The name 
+			N-ARG-A2		3-6	after Cleveland City Stars 
+	3	after
+	4	Cleveland
+			coref:	IDENT			0	4-6	Cleveland City Stars 
+			name:	ORGANIZATION				4-6	Cleveland City Stars 
+	5	City
+	6	Stars
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Musa Otieno , Kenyan international footballer who has also played for Cleveland City Stars is one of the leading figures behind the new club .
+
+
+Treebanked sentence:
+--------------------
+Musa Otieno , Kenyan international footballer who has also played for Cleveland City Stars is one of the leading figures behind the new club . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Musa) (NNP Otieno))
+      (, ,)
+      (NP
+        (NP (JJ Kenyan) (JJ international) (NN footballer))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ has)
+              (ADVP (RB also))
+              (VP (VBN played)
+                (PP (IN for)
+                  (NP (NNP Cleveland) (NNP City) (NNPS Stars)))))))))
+    (VP (VBZ is)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (VBG leading) (NNS figures))
+            (PP (IN behind)
+              (NP (DT the) (JJ new) (NN club)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Musa
+			name:	PERSON				0-1	Musa Otieno 
+	1	Otieno
+	2	,
+	3	Kenyan
+			name:	NATIONALITY				3-3	Kenyan 
+	4	international
+			sense:	international.a.01
+	5	footballer
+			name:	TITLE				5-5	footballer 
+			sense:	football_player.n.01
+	6	who
+	7	has
+			sense:	have.v.01
+			prop:	have.01
+			V		7-7	has 
+	8	also
+			sense:	besides.r.02
+	9	played
+			sense:	play.v.01
+			prop:	play.01
+			V		9-9	played 
+			N-ARG-A0		3-5	Kenyan international footballer 
+			R-ARG-A0		6-6	who 
+			N-ARGM-ADV		8-8	also 
+			N-ARGM-ADV		10-13	for Cleveland City Stars 
+	10	for
+	11	Cleveland
+			coref:	IDENT			0	11-13	Cleveland City Stars 
+			name:	ORGANIZATION				11-13	Cleveland City Stars 
+	12	City
+	13	Stars
+	14	is
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	is 
+			N-ARG-A1		0-13	Musa Otieno , Kenyan international footballer who has also played for Cleveland City Stars 
+			N-ARG-A2		15-23	one of the leading figures behind the new club 
+	15	one
+			name:	NUMBER				15-15	one 
+	16	of
+	17	the
+	18	leading
+			sense:	head.v.02
+			prop:	lead.01
+			V		18-18	leading 
+			N-ARG-A0		19-19	figures 
+	19	figures
+			sense:	name.n.04
+	20	behind
+	21	the
+			coref:	IDENT			1	21-23	the new club 
+	22	new
+			sense:	new.a.01
+	23	club
+			sense:	baseball_club.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Nairobi City Stars retained the home ground Hope Centre , located in Kawangware suburb of Nairobi .
+
+
+Treebanked sentence:
+--------------------
+Nairobi City Stars retained the home ground Hope Centre , located in Kawangware suburb of Nairobi . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Nairobi) (NNP City) (NNPS Stars))
+    (VP (VBD retained)
+      (SBAR
+        (S
+          (NP (DT the) (NN home) (NN ground))
+          (VP (VBP Hope)
+            (NP
+              (NP (NNP Centre))
+              (, ,)
+              (VP (VBN located)
+                (PP (IN in)
+                  (NP
+                    (NP (NNP Kawangware) (NN suburb))
+                    (PP (IN of)
+                      (NP (NNP Nairobi)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Nairobi
+			coref:	IDENT			3	0-2	Nairobi City Stars 
+			name:	CITY				0-0	Nairobi 
+	1	City
+			name:	LOCATION				1-2	City Stars 
+	2	Stars
+	3	retained
+			sense:	retain.v.03
+			prop:	retain.01
+			V		3-3	retained 
+			N-ARG-A0		0-2	Nairobi City Stars 
+			N-ARG-A1		4-15	the home ground Hope Centre , located in Kawangware suburb of Nairobi 
+	4	the
+	5	home
+			sense:	home.n.01
+	6	ground
+			sense:	land.n.04
+	7	Hope
+			name:	LOCATION				7-8	Hope Centre 
+			sense:	hope.v.02
+			prop:	hope.01
+			V		7-7	Hope 
+	8	Centre
+	9	,
+	10	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		10-10	located 
+			N-ARG-A1		4-8	the home ground Hope Centre 
+			N-ARGM-LOC		11-15	in Kawangware suburb of Nairobi 
+	11	in
+	12	Kawangware
+			name:	LOCATION				12-12	Kawangware 
+	13	suburb
+			sense:	suburb.n.01
+	14	of
+	15	Nairobi
+			name:	CITY				15-15	Nairobi 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Nairobi City Stars was initially coached by German manager Oliver Page , who is a former Bundesliga player .
+
+
+Treebanked sentence:
+--------------------
+Nairobi City Stars was initially coached by German manager Oliver Page , who is a former Bundesliga player . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Nairobi) (NNP City) (NNPS Stars))
+    (VP (VBD was)
+      (ADVP (RB initially))
+      (VP (VBN coached)
+        (PP (IN by)
+          (NP
+            (NP
+              (NML (JJ German) (NN manager))
+              (NNP Oliver) (NNP Page))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBZ is)
+                  (NP (DT a) (JJ former) (NNP Bundesliga) (NN player)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Nairobi
+			coref:	IDENT			3	0-2	Nairobi City Stars 
+			name:	ORGANIZATION				0-2	Nairobi City Stars 
+	1	City
+	2	Stars
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	initially
+			sense:	initially.r.01
+	5	coached
+			sense:	coach.v.01
+			prop:	coach.01
+			V		5-5	coached 
+			N-ARG-A1		0-2	Nairobi City Stars 
+			N-ARGM-TMP		4-4	initially 
+			N-ARG-A0		6-17	by German manager Oliver Page , who is a former Bundesliga player 
+	6	by
+	7	German
+			name:	NATIONALITY				7-7	German 
+	8	manager
+			name:	TITLE				8-8	manager 
+			sense:	coach.n.01
+	9	Oliver
+			name:	PERSON				9-10	Oliver Page 
+	10	Page
+	11	,
+	12	who
+	13	is
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	is 
+			N-ARG-A1		7-10	German manager Oliver Page 
+			R-ARG-A1		12-12	who 
+			N-ARG-A2		14-17	a former Bundesliga player 
+	14	a
+	15	former
+			sense:	erstwhile.s.01
+	16	Bundesliga
+			name:	MISC				16-16	Bundesliga 
+	17	player
+			sense:	player.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He resigned from the post half - season in June 2009 despite good results , citing personal issues 
+
+
+Treebanked sentence:
+--------------------
+He resigned from the post half - season in June 2009 despite good results , citing personal issues The club 's mission statement states they will use the club 's profile to raise awareness of and combat poverty , HIV / AIDS , ethnic strife and corruption . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD resigned)
+      (PP (IN from)
+        (NP
+          (NP (DT the) (NN post) (NN half) (HYPH -) (NN season))
+          (PP (IN in)
+            (NP (NNP June) (CD 2009)))))
+      (PP (IN despite)
+        (NP (JJ good) (NNS results)))
+      (, ,)
+      (S
+        (VP (VBG citing)
+          (NP
+            (NP
+              (NP (JJ personal) (NNS issues))
+              (NP
+                (NP (DT The) (NN club) (POS 's))
+                (NN mission) (NN statement) (NNS states)))
+            (SBAR
+              (S
+                (NP (PRP they))
+                (VP (MD will)
+                  (VP (VB use)
+                    (NP
+                      (NP (DT the) (NN club) (POS 's))
+                      (NN profile)
+                      (S
+                        (VP (TO to)
+                          (VP (VB raise)
+                            (NP
+                              (NP
+                                (NP (NN awareness))
+                                (PP (IN of)))
+                              (CC and)
+                              (NP
+                                (NP (NN combat) (NN poverty))
+                                (, ,)
+                                (NP (NNP HIV) (HYPH /) (NNP AIDS))
+                                (, ,)
+                                (NP (JJ ethnic) (NN strife))
+                                (CC and)
+                                (NP (NN corruption))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	resigned
+			sense:	vacate.v.01
+			prop:	resign.01
+			V		1-1	resigned 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-4	from the post 
+			N-ARGM-TMP		8-10	in June 2009 
+			N-ARGM-ADV		11-13	despite good results 
+			N-ARGM-ADV		15-17	citing personal issues 
+	2	from
+	3	the
+	4	post
+			sense:	position.n.06
+	5	half
+			sense:	half.n.02
+	6	-
+	7	season
+			sense:	season.n.01
+	8	in
+	9	June
+			name:	DATE				9-10	June 2009 
+	10	2009
+	11	despite
+	12	good
+			sense:	good.a.01
+	13	results
+			sense:	result.n.03
+	14	,
+	15	citing
+			sense:	mention.v.01
+			prop:	cite.01
+			V		15-15	citing 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		16-17	personal issues 
+	16	personal
+			sense:	personal.a.01
+	17	issues
+			sense:	issue.n.01
+	18	The
+			coref:	IDENT			1	18-20	The club 's 
+	19	club
+			sense:	club.n.02
+	20	's
+	21	mission
+			sense:	mission.n.03
+	22	statement
+			sense:	statement.n.01
+	23	states
+			sense:	state.n.02
+	24	they
+	25	will
+	26	use
+			sense:	use.v.01
+			prop:	use.01
+			V		26-26	use 
+			N-ARG-A0		24-24	they 
+			N-ARGM-MOD		25-25	will 
+			N-ARG-A1		27-30	the club 's profile 
+			N-ARG-A2		31-46	to raise awareness of and combat poverty , HIV / AIDS , ethnic strife and corruption 
+	27	the
+			coref:	IDENT			1	27-29	the club 's 
+	28	club
+			sense:	club.n.02
+	29	's
+	30	profile
+			sense:	visibility.n.02
+	31	to
+	32	raise
+			sense:	raise.v.03
+			prop:	raise.01
+			V		32-32	raise 
+			N-ARG-A0		24-24	they 
+			N-ARG-A1		33-46	awareness of and combat poverty , HIV / AIDS , ethnic strife and corruption 
+	33	awareness
+			sense:	awareness.n.01
+	34	of
+	35	and
+	36	combat
+			sense:	fight.n.02
+	37	poverty
+			sense:	poverty.n.01
+	38	,
+	39	HIV
+			name:	CAUSE_OF_DEATH				39-41	HIV / AIDS 
+	40	/
+	41	AIDS
+	42	,
+	43	ethnic
+			sense:	cultural.s.02
+	44	strife
+			sense:	strife.n.02
+	45	and
+	46	corruption
+			sense:	corruptness.n.02
+	47	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The club have an academy known as the Vapour FC .
+
+
+Treebanked sentence:
+--------------------
+The club have an academy known as the Vapour FC . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN club))
+    (VP (VBP have)
+      (NP
+        (NP (DT an) (NN academy))
+        (VP (VBN known)
+          (PP (IN as)
+            (NP (DT the) (NNP Vapour) (NNP FC))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The club 
+	1	club
+			sense:	club.n.02
+	2	have
+			sense:	have.v.01
+			prop:	have.03
+			V		2-2	have 
+			N-ARG-A0		0-1	The club 
+			N-ARG-A1		3-9	an academy known as the Vapour FC 
+	3	an
+	4	academy
+			sense:	academy.n.03
+	5	known
+			sense:	know.v.04
+			prop:	know.01
+			V		5-5	known 
+			N-ARG-A1		3-4	an academy 
+			N-ARG-A2		6-9	as the Vapour FC 
+	6	as
+	7	the
+	8	Vapour
+			name:	ORGANIZATION				8-9	Vapour FC 
+	9	FC
+	10	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				6.4-6	Cleveland City Stars 
+				7.11-13	Cleveland City Stars 
+	Chain 1 (IDENT)
+				7.21-23	the new club 
+				2.0-1	The club 
+				2.13-13	it 
+				4.0-1	The club 
+				5.4-5	the club 
+				5.19-20	the club 
+				10.18-20	The club 's 
+				10.27-29	the club 's 
+				11.0-1	The club 
+	Chain 2 (IDENT)
+				0.12-12	Kenya 
+				5.14-14	Kenya 
+	Chain 3 (IDENT)
+				5.22-25	Nairobi City Stars FC 
+				0.0-2	Nairobi City Stars 
+				1.0-0	They 
+				8.0-2	Nairobi City Stars 
+				9.0-2	Nairobi City Stars 
+	Chain 4 (IDENT)
+				2.7-26	World Hope Football Club , when it took over Kawangware FC , who had been relegated from the Premier League 
+				1.4-7	the Kenyan Premier League 
+				2.16-26	Kawangware FC , who had been relegated from the Premier League 
+				2.24-26	the Premier League 
+				3.4-6	the Nationwide League 
+				3.13-16	the Kenyan Premier League 
+

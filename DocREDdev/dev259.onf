@@ -1,0 +1,607 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+University College London Hospitals NHS Foundation Trust ( UCLH ) is an NHS foundation trust based in London , United Kingdom .
+
+
+Treebanked sentence:
+--------------------
+University College London Hospitals NHS Foundation Trust ( UCLH ) is an NHS foundation trust based in London , United Kingdom . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP University) (NNP College) (NNP London) (NNPS Hospitals))
+      (NP (NN NHS) (NNP Foundation) (NNP Trust))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP UCLH))
+        (-RRB- -RRB-)))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN NHS) (NN foundation) (NN trust))
+        (PP (VBN based)
+          (PP (IN in)
+            (NP
+              (NP (NNP London))
+              (, ,)
+              (NP (NNP United) (NNP Kingdom)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	University
+			coref:	IDENT			0	0-9	University College London Hospitals NHS Foundation Trust ( UCLH ) 
+			name:	ORGANIZATION				0-6	University College London Hospitals NHS Foundation Trust 
+	1	College
+	2	London
+	3	Hospitals
+	4	NHS
+	5	Foundation
+	6	Trust
+	7	(
+	8	UCLH
+			name:	ORGANIZATION				8-8	UCLH 
+	9	)
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	University College London Hospitals NHS Foundation Trust ( UCLH ) 
+			N-ARG-A2		11-20	an NHS foundation trust based in London , United Kingdom 
+	11	an
+	12	NHS
+			coref:	IDENT			0	12-12	NHS 
+			name:	ORGANIZATION				12-12	NHS 
+	13	foundation
+			sense:	foundation.n.02
+	14	trust
+			sense:	trust.n.04
+	15	based
+			sense:	base.v.02
+			prop:	base.01
+			V		15-15	based 
+			N-ARG-A1		11-14	an NHS foundation trust 
+			N-ARGM-LOC		16-20	in London , United Kingdom 
+	16	in
+	17	London
+			name:	CITY				17-17	London 
+	18	,
+	19	United
+			name:	COUNTRY				19-20	United Kingdom 
+	20	Kingdom
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It comprises University College Hospital , University College Hospital at Westmoreland Street , the UCH Macmillan Cancer Centre , the Eastman Dental Hospital , the Hospital for Tropical Diseases , the National Hospital for Neurology and Neurosurgery , the Royal London Hospital for Integrated Medicine and the Royal National Throat , Nose and Ear Hospital .
+
+
+Treebanked sentence:
+--------------------
+It comprises University College Hospital , University College Hospital at Westmoreland Street , the UCH Macmillan Cancer Centre , the Eastman Dental Hospital , the Hospital for Tropical Diseases , the National Hospital for Neurology and Neurosurgery , the Royal London Hospital for Integrated Medicine and the Royal National Throat , Nose and Ear Hospital . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ comprises)
+      (NP
+        (NP (NNP University) (NNP College) (NNP Hospital))
+        (, ,)
+        (NP
+          (NP (NNP University) (NNP College) (NNP Hospital))
+          (PP (IN at)
+            (NP (NNP Westmoreland) (NNP Street)))
+          (, ,)
+          (NP (DT the) (NNP UCH)
+            (NML (NNP Macmillan) (NNP Cancer))
+            (NNP Centre))
+          (, ,)
+          (NP (DT the) (NNP Eastman) (NNP Dental) (NNP Hospital))
+          (, ,)
+          (NP
+            (NP (DT the) (NNP Hospital))
+            (PP (IN for)
+              (NP (NNP Tropical) (NNPS Diseases))))
+          (, ,)
+          (NP
+            (NP (DT the) (NNP National) (NNP Hospital))
+            (PP (IN for)
+              (NP (NNP Neurology)
+                (CC and)
+                (NNP Neurosurgery))))
+          (, ,)
+          (NP
+            (NP (DT the)
+              (NML (NNP Royal) (NNP London))
+              (NN Hospital))
+            (PP (IN for)
+              (NP
+                (NP (NNP Integrated) (NNP Medicine))
+                (CC and)
+                (NP (DT the) (NNP Royal) (NNP National) (NNP Throat)))))
+          (, ,)
+          (NP (NN Nose))
+          (CC and)
+          (NP (NN Ear) (NN Hospital)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	comprises
+			sense:	consist.v.04
+			prop:	comprise.01
+			V		1-1	comprises 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-54	University College Hospital , University College Hospital at Westmoreland Street , the UCH Macmillan Cancer Centre , the Eastman Dental Hospital , the Hospital for Tropical Diseases , the National Hospital for Neurology and Neurosurgery , the Royal London Hospital for Integrated Medicine and the Royal National Throat , Nose and Ear Hospital 
+	2	University
+			name:	ORGANIZATION				2-4	University College Hospital 
+	3	College
+	4	Hospital
+	5	,
+	6	University
+			coref:	IDENT			0	6-11	University College Hospital at Westmoreland Street 
+			name:	ORGANIZATION				6-8	University College Hospital 
+	7	College
+	8	Hospital
+	9	at
+	10	Westmoreland
+			name:	LOCATION				10-11	Westmoreland Street 
+	11	Street
+	12	,
+	13	the
+	14	UCH
+	15	Macmillan
+	16	Cancer
+			name:	CAUSE_OF_DEATH				16-16	Cancer 
+	17	Centre
+	18	,
+	19	the
+	20	Eastman
+			name:	ORGANIZATION				20-22	Eastman Dental Hospital 
+	21	Dental
+	22	Hospital
+	23	,
+	24	the
+	25	Hospital
+			name:	ORGANIZATION				25-28	Hospital for Tropical Diseases 
+	26	for
+	27	Tropical
+	28	Diseases
+	29	,
+	30	the
+	31	National
+			name:	ORGANIZATION				31-36	National Hospital for Neurology and Neurosurgery 
+	32	Hospital
+	33	for
+	34	Neurology
+	35	and
+	36	Neurosurgery
+	37	,
+	38	the
+	39	Royal
+			name:	ORGANIZATION				39-44	Royal London Hospital for Integrated Medicine 
+	40	London
+	41	Hospital
+			sense:	hospital.n.02
+	42	for
+	43	Integrated
+	44	Medicine
+	45	and
+	46	the
+	47	Royal
+			name:	ORGANIZATION				47-49	Royal National Throat 
+	48	National
+	49	Throat
+	50	,
+	51	Nose
+			sense:	nose.n.01
+	52	and
+	53	Ear
+			name:	ORGANIZATION				53-54	Ear Hospital 
+			sense:	ear.n.01
+	54	Hospital
+			sense:	hospital.n.02
+	55	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Trust has an annual turnover of around £ 940 million and employs approximately 8,180 staff .
+
+
+Treebanked sentence:
+--------------------
+The Trust has an annual turnover of around £ 940 million and employs approximately 8,180 staff . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Trust))
+    (VP
+      (VP (VBZ has)
+        (NP
+          (NP (DT an) (JJ annual) (NN turnover))
+          (PP (IN of)
+            (NP
+              (QP (RB around) ($ £) (CD 940) (CD million))))))
+      (CC and)
+      (VP (VBZ employs)
+        (NP
+          (QP (RB approximately) (CD 8,180))
+          (NN staff))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Trust
+	2	has
+			sense:	have.v.02
+			prop:	have.03
+			V		2-2	has 
+			N-ARG-A0		0-1	The Trust 
+			N-ARG-A1		3-10	an annual turnover of around £ 940 million 
+	3	an
+	4	annual
+			name:	SET				4-4	annual 
+			sense:	annual.s.02
+	5	turnover
+			sense:	dollar_volume.n.01
+	6	of
+	7	around
+			sense:	approximately.r.01
+	8	£
+			name:	MONEY				8-10	£ 940 million 
+	9	940
+	10	million
+	11	and
+	12	employs
+			sense:	hire.v.01
+			prop:	employ.01
+			V		12-12	employs 
+			N-ARG-A0		0-1	The Trust 
+			N-ARG-A1		13-15	approximately 8,180 staff 
+	13	approximately
+			sense:	approximately.r.01
+	14	8,180
+			name:	NUMBER				14-14	8,180 
+	15	staff
+			sense:	staff.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Each year its hospitals treat over 500,000 outpatients appointments and admit over 100,000 patients .
+
+
+Treebanked sentence:
+--------------------
+Each year its hospitals treat over 500,000 outpatients appointments and admit over 100,000 patients . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT Each) (NN year))
+      (NP (PRP$ its) (NNS hospitals)))
+    (VP
+      (VP (VB treat)
+        (PP (IN over)
+          (NP (CD 500,000) (NNS outpatients) (NNS appointments))))
+      (CC and)
+      (VP (VBP admit)
+        (PP (IN over)
+          (NP (CD 100,000) (NNS patients)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Each
+			name:	SET				0-1	Each year 
+	1	year
+			sense:	year.n.01
+	2	its
+			coref:	IDENT			1	2-3	its hospitals 
+	3	hospitals
+			sense:	hospital.n.01
+	4	treat
+			sense:	treat.v.03
+			prop:	treat.03
+			V		4-4	treat 
+			N-ARGM-TMP		0-1	Each year 
+			N-ARG-A0		2-3	its hospitals 
+			N-ARG-A1		5-8	over 500,000 outpatients appointments 
+	5	over
+	6	500,000
+			name:	NUMBER				6-6	500,000 
+	7	outpatients
+			sense:	outpatient.n.01
+	8	appointments
+			sense:	date.n.03
+	9	and
+	10	admit
+			sense:	admit.v.02
+			prop:	admit.02
+			V		10-10	admit 
+			N-ARGM-TMP		0-1	Each year 
+			N-ARG-A0		2-3	its hospitals 
+			N-ARG-A1		11-13	over 100,000 patients 
+	11	over
+	12	100,000
+			name:	NUMBER				12-12	100,000 
+	13	patients
+			sense:	patient.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In partnership with University College London , UCLH has major research activities is part of the UCLH / UCL Biomedical Research Centre and the UCL Partners academic health science centre .
+
+
+Treebanked sentence:
+--------------------
+In partnership with University College London , UCLH has major research activities is part of the UCLH / UCL Biomedical Research Centre and the UCL Partners academic health science centre . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (NN partnership))
+        (PP (IN with)
+          (NP (NNP University) (NNP College) (NNP London)))))
+    (, ,)
+    (NP (NNP UCLH))
+    (VP (VBZ has)
+      (NP
+        (NP (JJ major) (NN research) (NNS activities))
+        (SBAR
+          (S
+            (VP (VBZ is)
+              (NP
+                (NP (NN part))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the)
+                      (NML (NN UCLH) (HYPH /) (NN UCL))
+                      (NML (NNP Biomedical) (NNP Research))
+                      (NNP Centre))
+                    (CC and)
+                    (NP (DT the)
+                      (NML (NNP UCL) (NNPS Partners))
+                      (JJ academic)
+                      (NML (NN health) (NN science))
+                      (NN centre))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	partnership
+			sense:	partnership.n.02
+	2	with
+	3	University
+			coref:	IDENT			0	3-5	University College London 
+			name:	ORGANIZATION				3-5	University College London 
+	4	College
+	5	London
+	6	,
+	7	UCLH
+			coref:	IDENT			0	7-7	UCLH 
+			name:	ORGANIZATION				7-7	UCLH 
+	8	has
+			sense:	have.v.02
+			prop:	have.03
+			V		8-8	has 
+			N-ARGM-MNR		0-5	In partnership with University College London 
+			N-ARG-A0		7-7	UCLH 
+			N-ARG-A1		9-11	major research activities 
+			N-ARGM-PRD		12-29	is part of the UCLH / UCL Biomedical Research Centre and the UCL Partners academic health science centre 
+	9	major
+			sense:	major.a.01
+	10	research
+			sense:	research.n.01
+	11	activities
+			sense:	activity.n.01
+	12	is
+			sense:	constitute.v.01
+			prop:	be.01
+			V		12-12	is 
+			N-ARGM-MNR		0-5	In partnership with University College London 
+			N-ARG-A1		7-7	UCLH 
+			N-ARG-A2		13-29	part of the UCLH / UCL Biomedical Research Centre and the UCL Partners academic health science centre 
+	13	part
+			sense:	part.n.01
+	14	of
+	15	the
+	16	UCLH
+			name:	ORGANIZATION				16-21	UCLH / UCL Biomedical Research Centre 
+	17	/
+	18	UCL
+	19	Biomedical
+	20	Research
+	21	Centre
+	22	and
+	23	the
+	24	UCL
+			name:	ORGANIZATION				24-25	UCL Partners 
+	25	Partners
+	26	academic
+			sense:	academic.a.01
+	27	health
+			sense:	health.n.01
+	28	science
+			sense:	science.n.01
+	29	centre
+			sense:	center.n.03
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Its hospitals are also major teaching centres and offer training for nurses , doctors and other health care professionals in partnership with City , University of London , Kings College London , London South Bank University and UCL Medical School .
+
+
+Treebanked sentence:
+--------------------
+Its hospitals are also major teaching centres and offer training for nurses , doctors and other health care professionals in partnership with City , University of London , Kings College London , London South Bank University and UCL Medical School . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ Its) (NNS hospitals))
+    (VP (VBP are)
+      (ADVP (RB also))
+      (NP
+        (NP (JJ major) (NN teaching) (NNS centres))
+        (CC and)
+        (NP
+          (NP
+            (NP (NN offer) (NN training))
+            (PP (IN for)
+              (NP (NNS nurses))))
+          (, ,)
+          (NP
+            (NP (NNS doctors))
+            (CC and)
+            (NP
+              (NP (JJ other)
+                (NML (NN health) (NN care))
+                (NNS professionals))
+              (PP (IN in)
+                (NP
+                  (NP (NN partnership))
+                  (PP (IN with)
+                    (NP (NNP City)))))))
+          (, ,)
+          (NP
+            (NP (NNP University))
+            (PP (IN of)
+              (NP (NNP London))))
+          (, ,)
+          (NP
+            (NP (NNS Kings))
+            (NP (NNP College) (NNP London)))
+          (, ,)
+          (NP (NNP London) (NNP South) (NNP Bank) (NNP University))
+          (CC and)
+          (NP (NNP UCL) (NNP Medical) (NNP School)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Its
+			coref:	IDENT			0	0-0	Its 
+			coref:	IDENT			1	0-1	Its hospitals 
+	1	hospitals
+			sense:	hospital.n.02
+	2	are
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	are 
+			N-ARG-A1		0-1	Its hospitals 
+			N-ARGM-ADV		3-3	also 
+			N-ARG-A2		4-6	major teaching centres 
+	3	also
+			sense:	besides.r.02
+	4	major
+			sense:	major.a.01
+	5	teaching
+			sense:	education.n.01
+	6	centres
+			sense:	center.n.03
+	7	and
+	8	offer
+			sense:	offer.n.02
+	9	training
+			sense:	training.n.01
+	10	for
+	11	nurses
+			sense:	nurse.n.01
+	12	,
+	13	doctors
+			sense:	doctor.n.01
+	14	and
+	15	other
+			sense:	other.a.01
+	16	health
+			sense:	health.n.01
+	17	care
+			sense:	care.n.01
+	18	professionals
+			sense:	professional.n.01
+	19	in
+	20	partnership
+			sense:	partnership.n.02
+	21	with
+	22	City
+	23	,
+	24	University
+			name:	ORGANIZATION				24-30	University of London , Kings College London 
+	25	of
+	26	London
+	27	,
+	28	Kings
+			sense:	king.n.01
+	29	College
+	30	London
+	31	,
+	32	London
+			name:	ORGANIZATION				32-35	London South Bank University 
+	33	South
+	34	Bank
+	35	University
+	36	and
+	37	UCL
+			name:	ORGANIZATION				37-39	UCL Medical School 
+	38	Medical
+	39	School
+	40	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-9	University College London Hospitals NHS Foundation Trust ( UCLH ) 
+				0.12-12	NHS 
+				1.0-0	It 
+				1.6-11	University College Hospital at Westmoreland Street 
+				4.3-5	University College London 
+				4.7-7	UCLH 
+				5.0-0	Its 
+	Chain 1 (IDENT)
+				3.2-3	its hospitals 
+				5.0-1	Its hospitals 
+

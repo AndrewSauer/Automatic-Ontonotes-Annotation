@@ -1,0 +1,534 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Kate Fleetwood ( born 24 September 1972 ) is an English actress .
+
+
+Treebanked sentence:
+--------------------
+Kate Fleetwood ( born 24 September 1972 ) is an English actress . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Kate) (NNP Fleetwood))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 24))
+        (NP-TMP (NNP September) (CD 1972)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT an) (JJ English) (NN actress)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Kate
+			name:	PERSON				0-1	Kate Fleetwood 
+	1	Fleetwood
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Kate Fleetwood 
+			N-ARGM-TMP		4-6	24 September 1972 
+	4	24
+			name:	DATE				4-6	24 September 1972 
+	5	September
+	6	1972
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	Kate Fleetwood ( born 24 September 1972 ) 
+			N-ARG-A2		9-11	an English actress 
+	9	an
+	10	English
+			name:	NATIONALITY				10-10	English 
+	11	actress
+			name:	TITLE				11-11	actress 
+			sense:	actress.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She was nominated for a Tony Award for her performance as Lady Macbeth in Chichester Festival Theatre 's Macbeth , which transferred to the West End and Broadway .
+
+
+Treebanked sentence:
+--------------------
+She was nominated for a Tony Award for her performance as Lady Macbeth in Chichester Festival Theatre 's Macbeth , which transferred to the West End and Broadway . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD was)
+      (VP (VBN nominated)
+        (PP (IN for)
+          (NP
+            (NP (DT a) (NNP Tony) (NNP Award))
+            (PP (IN for)
+              (NP (PRP$ her) (NN performance)))))
+        (PP (IN as)
+          (NP
+            (NP (NNP Lady) (NNP Macbeth))
+            (PP (IN in)
+              (NP
+                (NP
+                  (NP (NNP Chichester) (NNP Festival) (NNP Theatre) (POS 's))
+                  (NNP Macbeth))
+                (, ,)
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBD transferred)
+                      (PP (IN to)
+                        (NP
+                          (NP (DT the) (NNP West) (NNP End))
+                          (CC and)
+                          (NP (NNP Broadway)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	nominated
+			sense:	nominate.v.01
+			prop:	nominate.01
+			V		2-2	nominated 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		3-6	for a Tony Award 
+	3	for
+	4	a
+	5	Tony
+	6	Award
+	7	for
+	8	her
+			coref:	IDENT			0	8-9	her performance 
+	9	performance
+			sense:	performance.n.01
+	10	as
+	11	Lady
+	12	Macbeth
+	13	in
+	14	Chichester
+			name:	CITY				14-14	Chichester 
+	15	Festival
+			name:	LOCATION				15-16	Festival Theatre 
+	16	Theatre
+	17	's
+	18	Macbeth
+	19	,
+	20	which
+	21	transferred
+			sense:	transfer.v.02
+			prop:	transfer.01
+			V		21-21	transferred 
+			N-ARG-A1		14-18	Chichester Festival Theatre 's Macbeth 
+			R-ARG-A1		20-20	which 
+			N-ARG-A2		22-27	to the West End and Broadway 
+	22	to
+	23	the
+	24	West
+			name:	LOCATION				24-25	West End 
+	25	End
+	26	and
+	27	Broadway
+			name:	LOCATION				27-27	Broadway 
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She was nominated for an Olivier Award for her performance as Julie in London Road at the National Theatre .
+
+
+Treebanked sentence:
+--------------------
+She was nominated for an Olivier Award for her performance as Julie in London Road at the National Theatre . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD was)
+      (VP (VBN nominated)
+        (PP (IN for)
+          (NP
+            (NP (DT an) (NNP Olivier) (NNP Award))
+            (PP (IN for)
+              (NP (PRP$ her) (NN performance)))))
+        (PP (IN as)
+          (NP (NNP Julie)))
+        (PP (IN in)
+          (NP
+            (NP (NNP London) (NNP Road))
+            (PP (IN at)
+              (NP (DT the) (NNP National) (NNP Theatre)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	nominated
+			sense:	nominate.v.01
+			prop:	nominate.01
+			V		2-2	nominated 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		3-6	for an Olivier Award 
+	3	for
+	4	an
+	5	Olivier
+	6	Award
+	7	for
+	8	her
+			coref:	IDENT			0	8-9	her performance 
+	9	performance
+			sense:	performance.n.01
+	10	as
+	11	Julie
+			name:	PERSON				11-11	Julie 
+	12	in
+	13	London
+			name:	CITY				13-13	London 
+	14	Road
+			name:	LOCATION				14-14	Road 
+	15	at
+	16	the
+			coref:	IDENT			2	16-18	the National Theatre 
+	17	National
+	18	Theatre
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She is patron of En Masse Theatre , and joint patron of Escape Insight Arts , Stratford - upon - Avon with her husband Rupert .
+
+
+Treebanked sentence:
+--------------------
+She is patron of En Masse Theatre , and joint patron of Escape Insight Arts , Stratford - upon - Avon with her husband Rupert . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (NN patron))
+          (PP (IN of)
+            (NP (NNP En) (NNP Masse) (NNP Theatre))))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (JJ joint) (NN patron))
+          (PP (IN of)
+            (NP
+              (NP (NN Escape) (NN Insight) (NNS Arts))
+              (, ,)
+              (NP
+                (NML
+                  (NML
+                    (NML (NNP Stratford))
+                    (HYPH -)
+                    (PP (IN upon) (HYPH -)
+                      (NP (NNP Avon))))
+                  (PP (IN with)
+                    (NP (PRP$ her) (NN husband))))
+                (NNP Rupert)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-24	patron of En Masse Theatre , and joint patron of Escape Insight Arts , Stratford - upon - Avon with her husband Rupert 
+	2	patron
+			sense:	patron.n.03
+	3	of
+	4	En
+			coref:	IDENT			2	4-6	En Masse Theatre 
+			name:	ORGANIZATION				4-6	En Masse Theatre 
+	5	Masse
+	6	Theatre
+	7	,
+	8	and
+	9	joint
+			sense:	joint.a.01
+	10	patron
+			sense:	patron.n.03
+	11	of
+	12	Escape
+			name:	CRIMINAL_CHARGE				12-12	Escape 
+			sense:	escape.n.05
+	13	Insight
+			sense:	penetration.n.02
+	14	Arts
+			sense:	art.n.01
+	15	,
+	16	Stratford
+			name:	CITY				16-16	Stratford 
+	17	-
+	18	upon
+	19	-
+			coref:	IDENT			1	19-20	- Avon 
+	20	Avon
+	21	with
+	22	her
+	23	husband
+			sense:	husband.n.01
+	24	Rupert
+			name:	PERSON				24-24	Rupert 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Fleetwood was raised near Stratford - upon - Avon and is a graduate of Exeter University .
+
+
+Treebanked sentence:
+--------------------
+Fleetwood was raised near Stratford - upon - Avon and is a graduate of Exeter University . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Fleetwood))
+    (VP
+      (VP (VBD was)
+        (VP (VBN raised)
+          (PP (IN near)
+            (NP
+              (NML
+                (NML (NNP Stratford))
+                (HYPH -)
+                (PP (IN upon) (HYPH -)
+                  (NP (NNP Avon))))))))
+      (CC and)
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (NN graduate))
+          (PP (IN of)
+            (NP (NNP Exeter) (NNP University))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Fleetwood
+			name:	PERSON				0-0	Fleetwood 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	raised
+			sense:	rear.v.02
+			prop:	raise.01
+			V		2-2	raised 
+			N-ARG-A1		0-0	Fleetwood 
+			N-ARGM-LOC		3-8	near Stratford - upon - Avon 
+	3	near
+	4	Stratford
+			name:	CITY				4-4	Stratford 
+	5	-
+	6	upon
+	7	-
+			coref:	IDENT			1	7-8	- Avon 
+	8	Avon
+			name:	CITY				8-8	Avon 
+	9	and
+	10	is
+			sense:	be.v.01
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-0	Fleetwood 
+			N-ARG-A2		11-15	a graduate of Exeter University 
+	11	a
+	12	graduate
+			sense:	alumnus.n.01
+	13	of
+	14	Exeter
+			name:	ORGANIZATION				14-15	Exeter University 
+	15	University
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She is married to Rupert Goold with whom she has one son and one daughter .
+
+
+Treebanked sentence:
+--------------------
+She is married to Rupert Goold with whom she has one son and one daughter . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ is)
+      (VP (VBN married)
+        (PP (IN to)
+          (NP (NNP Rupert) (NNP Goold)))
+        (PP (IN with)
+          (SBAR
+            (WHNP (WP whom))
+            (S
+              (NP (PRP she))
+              (VP (VBZ has)
+                (NP
+                  (NP (CD one) (NN son))
+                  (CC and)
+                  (NP (CD one) (NN daughter)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-14	married to Rupert Goold with whom she has one son and one daughter 
+	2	married
+			sense:	marry.v.01
+			prop:	arrive.01
+			V		2-2	married 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		3-14	to Rupert Goold with whom she has one son and one daughter 
+	3	to
+	4	Rupert
+			name:	PERSON				4-5	Rupert Goold 
+	5	Goold
+	6	with
+	7	whom
+	8	she
+	9	has
+			sense:	have.v.01
+			prop:	have.03
+			V		9-9	has 
+			N-ARGM-COM		4-5	Rupert Goold 
+			R-ARGM-COM		6-7	with whom 
+			N-ARG-A0		8-8	she 
+			N-ARG-A1		10-14	one son and one daughter 
+	10	one
+			name:	NUMBER				10-10	one 
+	11	son
+			sense:	son.n.01
+	12	and
+	13	one
+			name:	NUMBER				13-13	one 
+	14	daughter
+			sense:	daughter.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She began her career at the Royal Shakespeare Company during her childhood .
+
+
+Treebanked sentence:
+--------------------
+She began her career at the Royal Shakespeare Company during her childhood . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD began)
+      (NP (PRP$ her) (NN career))
+      (PP (IN at)
+        (NP (DT the) (NNP Royal) (NNP Shakespeare) (NNP Company)))
+      (PP (IN during)
+        (NP (PRP$ her) (NN childhood))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		1-1	began 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		2-3	her career 
+			N-ARGM-LOC		4-8	at the Royal Shakespeare Company 
+			N-ARGM-TMP		9-11	during her childhood 
+	2	her
+	3	career
+			sense:	career.n.01
+	4	at
+	5	the
+	6	Royal
+			name:	LOCATION				6-8	Royal Shakespeare Company 
+	7	Shakespeare
+	8	Company
+	9	during
+	10	her
+	11	childhood
+			sense:	childhood.n.01
+	12	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.8-9	her performance 
+				2.8-9	her performance 
+	Chain 1 (IDENT)
+				3.19-20	- Avon 
+				4.7-8	- Avon 
+	Chain 2 (IDENT)
+				2.16-18	the National Theatre 
+				3.4-6	En Masse Theatre 
+

@@ -1,0 +1,772 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Olympic Gold is the official video game of the XXV Olympic Summer Games , hosted by Barcelona , Spain in 1992 .
+
+
+Treebanked sentence:
+--------------------
+Olympic Gold is the official video game of the XXV Olympic Summer Games , hosted by Barcelona , Spain in 1992 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (JJ Olympic) (NN Gold))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT the) (JJ official) (NN video) (NN game))
+          (PP (IN of)
+            (NP (DT the) (NNP XXV) (NNP Olympic) (NNP Summer) (NNPS Games))))
+        (, ,)
+        (VP (VBN hosted)
+          (PP (IN by)
+            (NP
+              (NP (NNP Barcelona) (, ,) (NNP Spain))
+              (PP (IN in)
+                (NP (CD 1992))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Olympic
+			coref:	IDENT			1	0-1	Olympic Gold 
+			name:	MISC				0-0	Olympic 
+	1	Gold
+			sense:	gold.n.01
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Olympic Gold 
+			N-ARG-A2		3-20	the official video game of the XXV Olympic Summer Games , hosted by Barcelona , Spain in 1992 
+	3	the
+	4	official
+			sense:	official.a.01
+	5	video
+			sense:	video_recording.n.01
+	6	game
+			sense:	game.n.03
+	7	of
+	8	the
+	9	XXV
+			name:	MISC				9-10	XXV Olympic 
+	10	Olympic
+	11	Summer
+			name:	DATE				11-11	Summer 
+	12	Games
+			name:	MISC				12-12	Games 
+	13	,
+	14	hosted
+			sense:	host.v.01
+			prop:	host.01
+			V		14-14	hosted 
+			N-ARG-A1		8-12	the XXV Olympic Summer Games 
+			N-ARG-A0		15-18	by Barcelona , Spain 
+			N-ARGM-TMP		19-20	in 1992 
+	15	by
+	16	Barcelona
+			name:	CITY				16-16	Barcelona 
+	17	,
+	18	Spain
+			name:	COUNTRY				18-18	Spain 
+	19	in
+	20	1992
+			name:	DATE				20-20	1992 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was released for the Sega consoles , Sega Genesis and Sega Master System , and Sega 's handheld , Sega Game Gear .
+
+
+Treebanked sentence:
+--------------------
+It was released for the Sega consoles , Sega Genesis and Sega Master System , and Sega 's handheld , Sega Game Gear . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN released)
+        (PP (IN for)
+          (NP
+            (NP
+              (NP (DT the) (NNP Sega))
+              (SBAR
+                (S
+                  (VP (VBZ consoles)))))
+            (, ,)
+            (NP
+              (NP (NNP Sega) (NNP Genesis))
+              (CC and)
+              (NP (NNP Sega) (NNP Master) (NNP System)))
+            (, ,)
+            (CC and)
+            (NP
+              (NP
+                (NP (NNP Sega) (POS 's))
+                (JJ handheld))
+              (, ,)
+              (NP (NNP Sega) (NNP Game) (NNP Gear)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		2-2	released 
+			N-ARG-A1		0-0	It 
+			N-ARGM-PNC		3-22	for the Sega consoles , Sega Genesis and Sega Master System , and Sega 's handheld , Sega Game Gear 
+	3	for
+	4	the
+	5	Sega
+	6	consoles
+			sense:	comfort.v.01
+			prop:	console.01
+			V		6-6	consoles 
+	7	,
+	8	Sega
+			coref:	IDENT			0	8-9	Sega Genesis 
+			name:	ORGANIZATION				8-9	Sega Genesis 
+	9	Genesis
+	10	and
+	11	Sega
+	12	Master
+	13	System
+	14	,
+	15	and
+	16	Sega
+			coref:	IDENT			0	16-17	Sega 's 
+			name:	ORGANIZATION				16-16	Sega 
+	17	's
+	18	handheld
+			sense:	hand-held.a.01
+	19	,
+	20	Sega
+	21	Game
+	22	Gear
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Developed internally by Tiertex Design Studios , the game was sponsored by Coca - Cola and the game featured both the company logo on a zeppelin above the scoreboard , as well as the company jingle .
+
+
+Treebanked sentence:
+--------------------
+Developed internally by Tiertex Design Studios , the game was sponsored by Coca - Cola and the game featured both the company logo on a zeppelin above the scoreboard , as well as the company jingle . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (S
+        (VP (VBN Developed)
+          (ADVP (RB internally))
+          (PP (IN by)
+            (NP (NNP Tiertex) (NNP Design) (NNP Studios)))))
+      (, ,)
+      (NP (DT the) (NN game))
+      (VP (VBD was)
+        (VP (VBN sponsored)
+          (PP (IN by)
+            (NP (NNP Coca) (HYPH -) (NNP Cola))))))
+    (CC and)
+    (S
+      (NP (DT the) (NN game))
+      (VP (VBD featured)
+        (NP (CC both)
+          (DT the) (NN company) (NN logo))
+        (PP (IN on)
+          (NP
+            (NP
+              (NP (DT a) (NN zeppelin))
+              (PP (IN above)
+                (NP (DT the) (NN scoreboard))))
+            (, ,)
+            (CONJP (RB as) (RB well) (IN as))
+            (NP (DT the) (NN company) (NN jingle))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Developed
+			sense:	develop.v.01
+			prop:	develop.02
+			V		0-0	Developed 
+			N-ARGM-MNR		1-1	internally 
+			N-ARG-A0		2-5	by Tiertex Design Studios 
+			N-ARG-A1		7-8	the game 
+	1	internally
+			sense:	internally.r.01
+	2	by
+	3	Tiertex
+			name:	ORGANIZATION				3-5	Tiertex Design Studios 
+	4	Design
+	5	Studios
+	6	,
+	7	the
+			coref:	IDENT			3	7-8	the game 
+	8	game
+			sense:	game.n.03
+	9	was
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	was 
+	10	sponsored
+			sense:	sponsor.v.01
+			prop:	sponsor.01
+			V		10-10	sponsored 
+			N-ARG-A1		7-8	the game 
+			N-ARG-A0		11-14	by Coca - Cola 
+	11	by
+	12	Coca
+			name:	ORGANIZATION				12-14	Coca - Cola 
+	13	-
+	14	Cola
+	15	and
+	16	the
+			coref:	IDENT			3	16-17	the game 
+	17	game
+			sense:	game.n.03
+	18	featured
+			sense:	have.v.02
+			prop:	feature.01
+			V		18-18	featured 
+			N-ARG-A0		16-17	the game 
+			N-ARG-A1		19-35	both the company logo on a zeppelin above the scoreboard , as well as the company jingle 
+	19	both
+	20	the
+	21	company
+			sense:	company.n.01
+	22	logo
+			sense:	logo.n.01
+	23	on
+	24	a
+	25	zeppelin
+			sense:	zeppelin.n.02
+	26	above
+	27	the
+	28	scoreboard
+			sense:	scoreboard.n.01
+	29	,
+	30	as
+			sense:	equally.r.01
+	31	well
+			sense:	well.r.02
+	32	as
+	33	the
+	34	company
+			sense:	company.n.01
+	35	jingle
+			sense:	doggerel.n.01
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The game uses button mashing as the main part of gameplay , but in three events it is n't used ( archery , diving ) or is slow - paced ( swimming ) .
+
+
+Treebanked sentence:
+--------------------
+The game uses button mashing as the main part of gameplay , but in three events it is n't used ( archery , diving ) or is slow - paced ( swimming ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN game))
+      (VP (VBZ uses)
+        (NP (NN button) (NN mashing))
+        (PP (IN as)
+          (NP
+            (NP (DT the) (JJ main) (NN part))
+            (PP (IN of)
+              (NP (NN gameplay)))))))
+    (, ,)
+    (CC but)
+    (S
+      (PP (IN in)
+        (NP (CD three) (NNS events)))
+      (NP (PRP it))
+      (VP
+        (VP (VBZ is) (RB n't)
+          (VP (VBN used)
+            (PRN (-LRB- -LRB-)
+              (NP (NN archery) (, ,) (NN diving))
+              (-RRB- -RRB-))))
+        (CC or)
+        (VP (VBZ is)
+          (ADJP (JJ slow) (HYPH -) (JJ paced)
+            (PRN (-LRB- -LRB-)
+              (NP (NN swimming))
+              (-RRB- -RRB-))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-1	The game 
+	1	game
+			sense:	game.n.03
+	2	uses
+			sense:	use.v.01
+			prop:	use.01
+			V		2-2	uses 
+			N-ARG-A0		0-1	The game 
+			N-ARG-A1		3-4	button mashing 
+			N-ARG-A2		5-10	as the main part of gameplay 
+	3	button
+			sense:	push_button.n.01
+	4	mashing
+	5	as
+	6	the
+	7	main
+			sense:	chief.s.01
+	8	part
+			sense:	part.n.01
+	9	of
+	10	gameplay
+	11	,
+	12	but
+	13	in
+	14	three
+			name:	NUMBER				14-14	three 
+	15	events
+			sense:	event.n.01
+	16	it
+			coref:	IDENT			3	16-16	it 
+	17	is
+			sense:	be.v.01
+			prop:	be.03
+			V		17-17	is 
+	18	n't
+			sense:	not.r.01
+	19	used
+			sense:	use.v.01
+			prop:	use.01
+			V		19-19	used 
+			N-ARGM-LOC		13-15	in three events 
+			N-ARG-A1		16-16	it 
+			N-ARGM-NEG		18-18	n't 
+	20	(
+	21	archery
+			sense:	archery.n.01
+	22	,
+	23	diving
+			sense:	diving.n.01
+	24	)
+	25	or
+	26	is
+			sense:	be.v.01
+			prop:	be.01
+			V		26-26	is 
+			N-ARGM-LOC		13-15	in three events 
+			N-ARG-A1		16-16	it 
+			N-ARGM-NEG		18-18	n't 
+			N-ARG-A2		27-29	slow - paced 
+			N-ARGM-ADV		30-32	( swimming ) 
+	27	slow
+			sense:	slow.a.01
+	28	-
+	29	paced
+	30	(
+	31	swimming
+			sense:	swimming.n.01
+	32	)
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Each computer athlete has a fictional name and nationality ( choosing from UK , France , Germany , Italy , Spain , United States , Japan and the Unified Team , everyone with its own anthem snippet ) and actual strengths and weaknesses : J. Balen , for instance , is a frequent 100 m and 110 m hurdles record breaker but only an average hammer thrower .
+
+
+Treebanked sentence:
+--------------------
+Each computer athlete has a fictional name and nationality ( choosing from UK , France , Germany , Italy , Spain , United States , Japan and the Unified Team , everyone with its own anthem snippet ) and actual strengths and weaknesses : J. Balen , for instance , is a frequent 100 m and 110 m hurdles record breaker but only an average hammer thrower . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT Each) (NN computer) (NN athlete))
+      (VP (VBZ has)
+        (NP
+          (NP
+            (NP (DT a) (JJ fictional) (NN name)
+              (CC and)
+              (NN nationality))
+            (-LRB- -LRB-)
+            (VP (VBG choosing)
+              (PP (IN from)
+                (NP
+                  (NP (NNP UK) (, ,) (NNP France) (, ,) (NNP Germany) (, ,) (NNP Italy) (, ,) (NNP Spain) (, ,) (NNP United) (NNP States))
+                  (, ,)
+                  (NP
+                    (NP (NNP Japan))
+                    (CC and)
+                    (NP (DT the) (NNP Unified) (NNP Team)))
+                  (, ,)
+                  (NP
+                    (NP (NN everyone))
+                    (PP (IN with)
+                      (NP (PRP$ its) (JJ own) (NN anthem) (NN snippet)))))))
+            (-RRB- -RRB-))
+          (CC and)
+          (NP (JJ actual) (NNS strengths)
+            (CC and)
+            (NNS weaknesses)))))
+    (: :)
+    (S
+      (NP
+        (NP (NNP J.) (NNP Balen))
+        (, ,)
+        (PP (IN for)
+          (NP (NN instance)))
+        (, ,))
+      (VP (VBZ is)
+        (NP
+          (NP (DT a)
+            (NP (JJ frequent)
+              (NML
+                (NML (CD 100) (NN m))
+                (CC and)
+                (NML (CD 110) (NN m)))
+              (NNS hurdles))
+            (NN record) (NN breaker))
+          (CONJP (CC but)
+            (RB only))
+          (NP (DT an)
+            (NML (JJ average) (NN hammer))
+            (NN thrower)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Each
+	1	computer
+			sense:	computer.n.01
+	2	athlete
+			name:	TITLE				2-2	athlete 
+			sense:	athlete.n.01
+	3	has
+			sense:	have.v.02
+			prop:	have.03
+			V		3-3	has 
+			N-ARG-A0		0-2	Each computer athlete 
+			N-ARG-A1		4-8	a fictional name and nationality 
+			N-ARGM-ADV		9-37	( choosing from UK , France , Germany , Italy , Spain , United States , Japan and the Unified Team , everyone with its own anthem snippet ) 
+			N-ARG-A1		38-42	and actual strengths and weaknesses 
+	4	a
+	5	fictional
+			sense:	fabricated.s.01
+	6	name
+			sense:	name.n.01
+	7	and
+	8	nationality
+			sense:	nationality.n.02
+	9	(
+	10	choosing
+			sense:	choose.v.01
+			prop:	choose.01
+			V		10-10	choosing 
+			N-ARG-A2		11-29	from UK , France , Germany , Italy , Spain , United States , Japan and the Unified Team 
+			N-ARGM-ADV		31-36	everyone with its own anthem snippet 
+	11	from
+	12	UK
+			name:	COUNTRY				12-12	UK 
+	13	,
+	14	France
+			name:	COUNTRY				14-14	France 
+	15	,
+	16	Germany
+			name:	COUNTRY				16-16	Germany 
+	17	,
+	18	Italy
+			name:	COUNTRY				18-18	Italy 
+	19	,
+	20	Spain
+			name:	COUNTRY				20-20	Spain 
+	21	,
+	22	United
+			name:	COUNTRY				22-23	United States 
+	23	States
+	24	,
+	25	Japan
+			name:	COUNTRY				25-25	Japan 
+	26	and
+	27	the
+	28	Unified
+			name:	ORGANIZATION				28-29	Unified Team 
+	29	Team
+	30	,
+	31	everyone
+	32	with
+	33	its
+	34	own
+			sense:	own.s.01
+	35	anthem
+			sense:	hymn.n.01
+	36	snippet
+			sense:	snip.n.01
+	37	)
+	38	and
+	39	actual
+			sense:	actual.a.01
+	40	strengths
+			sense:	strength.n.01
+	41	and
+	42	weaknesses
+			sense:	failing.n.01
+	43	:
+	44	J.
+			name:	PERSON				44-45	J. Balen 
+	45	Balen
+	46	,
+	47	for
+	48	instance
+			sense:	example.n.01
+	49	,
+	50	is
+			sense:	be.v.01
+			prop:	be.01
+			V		50-50	is 
+			N-ARG-A1		44-45	J. Balen 
+			N-ARGM-DIS		47-48	for instance 
+			N-ARG-A2		51-66	a frequent 100 m and 110 m hurdles record breaker but only an average hammer thrower 
+	51	a
+	52	frequent
+			sense:	frequent.a.01
+	53	100
+			name:	NUMBER				53-53	100 
+	54	m
+			sense:	meter.n.01
+	55	and
+	56	110
+			name:	NUMBER				56-56	110 
+	57	m
+			sense:	meter.n.01
+	58	hurdles
+			sense:	hurdle.n.01
+	59	record
+			sense:	record.n.06
+	60	breaker
+			name:	TITLE				60-60	breaker 
+			sense:	breaker.n.01
+	61	but
+	62	only
+			sense:	merely.r.01
+	63	an
+	64	average
+			sense:	average.s.03
+	65	hammer
+			sense:	hammer.n.05
+	66	thrower
+			name:	TITLE				66-66	thrower 
+			sense:	thrower.n.02
+	67	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Also , each computer - controlled player seems better in a particular event depending on his country : Germans usually take the top spots in archery , Italians on swimming , Russians on pole vault , Americans on sprinting and so on .
+
+
+Treebanked sentence:
+--------------------
+Also , each computer - controlled player seems better in a particular event depending on his country : Germans usually take the top spots in archery , Italians on swimming , Russians on pole vault , Americans on sprinting and so on . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (ADVP (RB Also))
+      (, ,)
+      (NP (DT each)
+        (ADJP (NN computer) (HYPH -) (VBN controlled))
+        (NN player))
+      (VP (VBZ seems)
+        (ADVP
+          (ADVP (RBR better))
+          (PP (IN in)
+            (NP (DT a) (JJ particular) (NN event))))
+        (PP (VBG depending)
+          (PP (IN on)
+            (NP (PRP$ his) (NN country))))))
+    (: :)
+    (S
+      (NP (NNPS Germans))
+      (ADVP (RB usually))
+      (VP
+        (VP (VBP take)
+          (NP
+            (NP (DT the) (JJ top) (NNS spots))
+            (PP (IN in)
+              (NP (NN archery)))))
+        (, ,)
+        (VP
+          (NP (NNPS Italians))
+          (PP (IN on)
+            (NP (NN swimming))))
+        (, ,)
+        (VP
+          (NP (NNPS Russians))
+          (PP (IN on)
+            (NP (NN pole) (NN vault))))
+        (, ,)
+        (VP
+          (NP (NNPS Americans))
+          (PP (IN on)
+            (NP (NN sprinting))))
+        (CC and)
+        (VP
+          (ADVP (RB so))
+          (PP (RB on)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Also
+			sense:	besides.r.02
+	1	,
+	2	each
+			coref:	IDENT			2	2-6	each computer - controlled player 
+	3	computer
+			sense:	computer.n.01
+	4	-
+	5	controlled
+			sense:	operate.v.03
+			prop:	control.01
+			V		5-5	controlled 
+			N-ARG-A0		3-3	computer 
+			N-ARG-A1		6-6	player 
+	6	player
+			sense:	player.n.01
+	7	seems
+			sense:	look.v.02
+			prop:	seem.01
+			V		7-7	seems 
+			N-ARGM-DIS		0-0	Also 
+			N-ARG-A1		8-16	better in a particular event depending on his country 
+	8	better
+			sense:	well.r.01
+	9	in
+	10	a
+	11	particular
+			sense:	particular.s.01
+	12	event
+			sense:	event.n.01
+	13	depending
+			sense:	depend.v.01
+			prop:	depend.01
+			V		13-13	depending 
+			N-ARG-A0		10-12	a particular event 
+			N-ARG-A1		14-16	on his country 
+	14	on
+	15	his
+			coref:	IDENT			2	15-15	his 
+	16	country
+			sense:	state.n.04
+	17	:
+	18	Germans
+			name:	MISC				18-18	Germans 
+	19	usually
+			sense:	normally.r.01
+	20	take
+			sense:	take.v.41
+			prop:	take.01
+			V		20-20	take 
+			N-ARG-A0		18-18	Germans 
+			N-ARGM-TMP		19-19	usually 
+			N-ARG-A1		21-25	the top spots in archery 
+	21	the
+	22	top
+			sense:	top.a.01
+	23	spots
+			sense:	topographic_point.n.01
+	24	in
+	25	archery
+			sense:	archery.n.01
+	26	,
+	27	Italians
+			name:	MISC				27-27	Italians 
+	28	on
+	29	swimming
+			sense:	swimming.n.01
+	30	,
+	31	Russians
+			name:	MISC				31-31	Russians 
+	32	on
+	33	pole
+			name:	NATIONALITY				33-33	pole 
+			sense:	pole.n.09
+	34	vault
+			sense:	vault.n.04
+	35	,
+	36	Americans
+			name:	MISC				36-36	Americans 
+	37	on
+	38	sprinting
+	39	and
+	40	so
+			sense:	so.r.03
+	41	on
+			sense:	on.r.02
+	42	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.8-9	Sega Genesis 
+				1.16-17	Sega 's 
+	Chain 1 (IDENT)
+				0.0-1	Olympic Gold 
+				1.0-0	It 
+	Chain 2 (IDENT)
+				5.2-6	each computer - controlled player 
+				5.15-15	his 
+	Chain 3 (IDENT)
+				2.7-8	the game 
+				2.16-17	the game 
+				3.0-1	The game 
+				3.16-16	it 
+

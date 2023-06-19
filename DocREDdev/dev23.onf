@@ -1,0 +1,501 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Julian Reinard ( born 5 March 1983 ) is a German footballer .
+
+
+Treebanked sentence:
+--------------------
+Julian Reinard ( born 5 March 1983 ) is a German footballer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Julian) (NNP Reinard))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 5))
+        (NP-TMP (NNP March) (CD 1983)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (JJ German) (NN footballer)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Julian
+			coref:	IDENT			0	0-1	Julian Reinard 
+			name:	PERSON				0-1	Julian Reinard 
+	1	Reinard
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Julian Reinard 
+			N-ARGM-TMP		4-6	5 March 1983 
+	4	5
+			name:	DATE				4-6	5 March 1983 
+	5	March
+	6	1983
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	Julian Reinard ( born 5 March 1983 ) 
+			N-ARG-A2		9-11	a German footballer 
+	9	a
+	10	German
+			name:	NATIONALITY				10-10	German 
+	11	footballer
+			name:	TITLE				11-11	footballer 
+			sense:	football_player.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He first appeared in the German Bundesliga on 21 March 2004 while SC Freiburg 's first and second keepers had been injured .
+
+
+Treebanked sentence:
+--------------------
+He first appeared in the German Bundesliga on 21 March 2004 while SC Freiburg 's first and second keepers had been injured . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB first))
+    (VP (VBD appeared)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (JJ German) (NN Bundesliga))
+          (PP (IN on)
+            (NP (CD 21)))))
+      (NP-TMP (NNP March) (CD 2004))
+      (SBAR (IN while)
+        (S
+          (NP
+            (NP (NN SC) (NNP Freiburg) (POS 's))
+            (ADJP (JJ first)
+              (CC and)
+              (JJ second))
+            (NNS keepers))
+          (VP (VBD had)
+            (VP (VBN been)
+              (VP (VBN injured)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	first
+			name:	ORDINAL				1-1	first 
+			sense:	first.r.02
+	2	appeared
+			sense:	appear.v.02
+			prop:	appear.01
+			V		2-2	appeared 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		1-1	first 
+			N-ARGM-LOC		3-6	in the German Bundesliga 
+			N-ARGM-TMP		7-10	on 21 March 2004 
+	3	in
+	4	the
+	5	German
+			name:	NATIONALITY				5-5	German 
+	6	Bundesliga
+			name:	MISC				6-6	Bundesliga 
+	7	on
+	8	21
+			name:	DATE				8-10	21 March 2004 
+	9	March
+	10	2004
+	11	while
+	12	SC
+			name:	ORGANIZATION				12-13	SC Freiburg 
+			sense:	south_carolina.n.02
+	13	Freiburg
+	14	's
+	15	first
+			name:	ORDINAL				15-17	first and second 
+			sense:	first.s.02
+	16	and
+	17	second
+			sense:	second.s.01
+	18	keepers
+			sense:	custodian.n.01
+	19	had
+			sense:	suffer.v.02
+			prop:	have.01
+			V		19-19	had 
+	20	been
+			sense:	be.v.01
+			prop:	be.03
+			V		20-20	been 
+	21	injured
+			sense:	injure.v.01
+			prop:	injure.01
+			V		21-21	injured 
+			N-ARG-A1		12-18	SC Freiburg 's first and second keepers 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A year later media and trainer looked upon him as the future number one of Freiburg , but his disastrous effort during a 0–7 defeat against Bayern Munich and the following massive public criticism terminated these ambitions .
+
+
+Treebanked sentence:
+--------------------
+A year later media and trainer looked upon him as the future number one of Freiburg , but his disastrous effort during a 0 – 7 defeat against Bayern Munich and the following massive public criticism terminated these ambitions . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP
+      (NP (DT A) (NN year))
+      (RBR later))
+    (NP (NNS media)
+      (CC and)
+      (NN trainer))
+    (VP
+      (VP (VBD looked)
+        (PP (IN upon)
+          (NP (PRP him)))
+        (PP (IN as)
+          (NP
+            (NP (DT the) (JJ future) (NN number) (CD one))
+            (PP (IN of)
+              (NP (NNP Freiburg))))))
+      (, ,)
+      (CC but)
+      (VP
+        (NP (PRP$ his) (JJ disastrous) (NN effort))
+        (PP (IN during)
+          (NP
+            (NP
+              (NP (DT a)
+                (NML
+                  (QP (CD 0) (SYM –) (CD 7)))
+                (NN defeat))
+              (PP (IN against)
+                (NP (NNP Bayern) (NNP Munich))))
+            (CC and)
+            (NP
+              (NP (DT the) (VBG following) (JJ massive) (JJ public) (NN criticism))
+              (VP (VBN terminated)
+                (NP (DT these) (NNS ambitions))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+			name:	DATE				0-2	A year later 
+	1	year
+			sense:	year.n.01
+	2	later
+			sense:	recently.r.01
+	3	media
+	4	and
+	5	trainer
+			name:	TITLE				5-5	trainer 
+			sense:	trainer.n.01
+	6	looked
+			sense:	look.v.02
+			prop:	look.01
+			V		6-6	looked 
+			N-ARGM-TMP		0-2	A year later 
+			N-ARG-A0		3-5	media and trainer 
+			N-ARG-A1		7-8	upon him 
+			N-ARG-A2		9-15	as the future number one of Freiburg 
+	7	upon
+	8	him
+			coref:	IDENT			0	8-8	him 
+	9	as
+	10	the
+			name:	DATE				10-11	the future 
+	11	future
+			sense:	future.s.02
+	12	number
+			sense:	number.n.02
+	13	one
+			name:	NUMBER				13-13	one 
+	14	of
+	15	Freiburg
+			name:	CITY				15-15	Freiburg 
+	16	,
+	17	but
+	18	his
+			coref:	IDENT			0	18-18	his 
+	19	disastrous
+			sense:	black.s.06
+	20	effort
+			sense:	attempt.n.01
+	21	during
+	22	a
+	23	0
+			name:	NUMBER				23-23	0 
+	24	–
+	25	7
+			name:	NUMBER				25-25	7 
+	26	defeat
+			sense:	defeat.n.01
+	27	against
+	28	Bayern
+			name:	ORGANIZATION				28-29	Bayern Munich 
+	29	Munich
+	30	and
+	31	the
+	32	following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		32-32	following 
+			N-ARG-A1		33-35	massive public criticism 
+	33	massive
+			sense:	massive.s.03
+	34	public
+			sense:	public.a.01
+	35	criticism
+			sense:	criticism.n.01
+	36	terminated
+			sense:	end.v.02
+			prop:	terminate.01
+			V		36-36	terminated 
+			N-ARG-A0		18-35	his disastrous effort during a 0 – 7 defeat against Bayern Munich and the following massive public criticism 
+			N-ARG-A1		37-38	these ambitions 
+	37	these
+	38	ambitions
+			sense:	ambition.n.01
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+While plying his trade at Hakoah Amidar / Ramat Gan on 23 October 2006 he became the first German footballer ever to play a professional match in Israel .
+
+
+Treebanked sentence:
+--------------------
+While plying his trade at Hakoah Amidar / Ramat Gan on 23 October 2006 he became the first German footballer ever to play a professional match in Israel . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (VP (VBG plying)
+          (NP (PRP$ his) (NN trade))
+          (PP (IN at)
+            (NP
+              (NP (NNP Hakoah) (NNP Amidar) (HYPH /) (NNP Ramat) (NNP Gan))
+              (PP (IN on)
+                (NP (CD 23)))
+              (NP-TMP (NNP October) (CD 2006)))))))
+    (NP (PRP he))
+    (VP (VBD became)
+      (NP (DT the) (JJ first) (JJ German) (NN footballer))
+      (ADVP (RB ever))
+      (S
+        (VP (TO to)
+          (VP (VB play)
+            (NP (DT a) (JJ professional) (NN match))
+            (PP (IN in)
+              (NP (NNP Israel)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	While
+	1	plying
+			sense:	ply.v.02
+			prop:	ply.02
+			V		1-1	plying 
+			N-ARG-A1		2-3	his trade 
+			N-ARGM-LOC		4-9	at Hakoah Amidar / Ramat Gan 
+			N-ARGM-TMP		10-13	on 23 October 2006 
+			N-ARG-A0		14-14	he 
+	2	his
+			coref:	IDENT			0	2-2	his 
+	3	trade
+			sense:	trade.n.02
+	4	at
+	5	Hakoah
+			name:	ORGANIZATION				5-9	Hakoah Amidar / Ramat Gan 
+	6	Amidar
+	7	/
+	8	Ramat
+	9	Gan
+	10	on
+	11	23
+			name:	DATE				11-13	23 October 2006 
+	12	October
+	13	2006
+	14	he
+			coref:	IDENT			0	14-14	he 
+	15	became
+			sense:	become.v.02
+			prop:	become.01
+			V		15-15	became 
+			N-ARGM-TMP		0-13	While plying his trade at Hakoah Amidar / Ramat Gan on 23 October 2006 
+			N-ARG-A1		14-14	he 
+			N-ARG-A2		16-27	the first German footballer ever to play a professional match in Israel 
+	16	the
+	17	first
+			name:	ORDINAL				17-17	first 
+			sense:	first.a.01
+	18	German
+			name:	NATIONALITY				18-18	German 
+	19	footballer
+			name:	TITLE				19-19	footballer 
+			sense:	football_player.n.01
+	20	ever
+			sense:	ever.r.01
+	21	to
+	22	play
+			sense:	play.v.01
+			prop:	play.01
+			V		22-22	play 
+			N-ARG-A0		16-19	the first German footballer 
+			N-ARGM-TMP		20-20	ever 
+			N-ARG-A1		23-25	a professional match 
+			N-ARGM-LOC		26-27	in Israel 
+	23	a
+	24	professional
+			sense:	professional.a.01
+	25	match
+			sense:	match.n.02
+	26	in
+	27	Israel
+			name:	COUNTRY				27-27	Israel 
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Due to problems with his groin he quit Ramat Gan and , after a brief spell at FC Wil , is currently without a team .
+
+
+Treebanked sentence:
+--------------------
+Due to problems with his groin he quit Ramat Gan and , after a brief spell at FC Wil , is currently without a team . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Due)
+      (PP (IN to)
+        (NP
+          (NP (NNS problems))
+          (PP (IN with)
+            (NP (PRP$ his) (NN groin))))))
+    (NP (PRP he))
+    (VP
+      (VP (VBD quit)
+        (NP (NNP Ramat) (NNP Gan)))
+      (CC and)
+      (, ,)
+      (PP (IN after)
+        (NP
+          (NP (DT a) (JJ brief) (NN spell))
+          (PP (IN at)
+            (NP (NNP FC) (NNP Wil)))))
+      (, ,)
+      (VP (VBZ is)
+        (ADVP (RB currently))
+        (PP (IN without)
+          (NP (DT a) (NN team)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Due
+	1	to
+	2	problems
+			sense:	problem.n.01
+	3	with
+	4	his
+			coref:	IDENT			0	4-4	his 
+	5	groin
+			sense:	groin.n.01
+	6	he
+			coref:	IDENT			0	6-6	he 
+	7	quit
+			sense:	discontinue.v.01
+			prop:	quit.01
+			V		7-7	quit 
+			N-ARGM-CAU		0-5	Due to problems with his groin 
+			N-ARG-A0		6-6	he 
+			N-ARG-A1		8-9	Ramat Gan 
+	8	Ramat
+			name:	PERSON				8-9	Ramat Gan 
+	9	Gan
+	10	and
+	11	,
+	12	after
+	13	a
+	14	brief
+			sense:	brief.s.01
+	15	spell
+			sense:	while.n.01
+	16	at
+	17	FC
+			name:	ORGANIZATION				17-18	FC Wil 
+	18	Wil
+	19	,
+	20	is
+			sense:	be.v.01
+			prop:	be.01
+			V		20-20	is 
+			N-ARGM-CAU		0-5	Due to problems with his groin 
+			N-ARG-A1		6-6	he 
+			N-ARGM-TMP		12-18	after a brief spell at FC Wil 
+			N-ARGM-TMP		21-21	currently 
+			N-ARG-A2		22-24	without a team 
+	21	currently
+			name:	DATE				21-21	currently 
+			sense:	presently.r.02
+	22	without
+	23	a
+	24	team
+			sense:	team.n.01
+	25	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Julian Reinard 
+				1.0-0	He 
+				2.8-8	him 
+				2.18-18	his 
+				3.2-2	his 
+				3.14-14	he 
+				4.4-4	his 
+				4.6-6	he 
+

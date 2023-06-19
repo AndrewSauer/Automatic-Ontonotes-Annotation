@@ -1,0 +1,733 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Anton Vladimirovich Antonov - Ovseyenko (; 23 February 1920 , Moscow , RSFSR – 9 July 2013 , Moscow , Russia ) was a Russian historian and writer .
+
+
+Treebanked sentence:
+--------------------
+Anton Vladimirovich Antonov - Ovseyenko ( ; 23 February 1920 , Moscow , RSFSR – 9 July 2013 , Moscow , Russia ) was a Russian historian and writer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Anton) (NNP Vladimirovich) (NNP Antonov) (HYPH -) (NNP Ovseyenko))
+      (NP (-LRB- -LRB-)
+        (PRN (: ;)
+          (FRAG
+            (NP
+              (NP (CD 23)
+                (NML
+                  (NML (NNP February) (CD 1920))
+                  (, ,)
+                  (NP (NNP Moscow))
+                  (, ,))
+                (NN RSFSR))
+              (PP (SYM –)
+                (NP (CD 9)))
+              (NP-TMP (NNP July) (CD 2013)))
+            (, ,)
+            (NP (NNP Moscow) (, ,) (NNP Russia))))
+        (-RRB- -RRB-)))
+    (VP (VBD was)
+      (NP (DT a) (JJ Russian) (NN historian)
+        (CC and)
+        (NN writer)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Anton
+			name:	PERSON				0-4	Anton Vladimirovich Antonov - Ovseyenko 
+	1	Vladimirovich
+	2	Antonov
+	3	-
+	4	Ovseyenko
+	5	(
+	6	;
+	7	23
+			coref:	IDENT			2	7-9	23 February 1920 
+			name:	DATE				7-9	23 February 1920 
+	8	February
+	9	1920
+	10	,
+	11	Moscow
+			coref:	IDENT			1	11-11	Moscow 
+			name:	CITY				11-11	Moscow 
+	12	,
+	13	RSFSR
+			name:	COUNTRY				13-13	RSFSR 
+	14	–
+	15	9
+			name:	DATE				15-17	9 July 2013 
+	16	July
+	17	2013
+	18	,
+	19	Moscow
+			coref:	IDENT			1	19-19	Moscow 
+			name:	CITY				19-19	Moscow 
+	20	,
+	21	Russia
+			name:	COUNTRY				21-21	Russia 
+	22	)
+	23	was
+			sense:	be.v.02
+			prop:	be.01
+			V		23-23	was 
+			N-ARG-A1		0-22	Anton Vladimirovich Antonov - Ovseyenko ( ; 23 February 1920 , Moscow , RSFSR – 9 July 2013 , Moscow , Russia ) 
+			N-ARG-A2		24-28	a Russian historian and writer 
+	24	a
+	25	Russian
+			name:	NATIONALITY				25-25	Russian 
+	26	historian
+			name:	TITLE				26-26	historian 
+			sense:	historian.n.01
+	27	and
+	28	writer
+			name:	TITLE				28-28	writer 
+			sense:	writer.n.01
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born on 23 February 1920 , he was the son of a Bolshevik military leader Vladimir Antonov - Ovseyenko .
+
+
+Treebanked sentence:
+--------------------
+Born on 23 February 1920 , he was the son of a Bolshevik military leader Vladimir Antonov - Ovseyenko . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN on)
+          (NP (CD 23)))
+        (NP-TMP (NNP February) (CD 1920))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (NN son))
+        (PP (IN of)
+          (NP
+            (NP (DT a) (JJ Bolshevik) (JJ military) (NN leader))
+            (NP (NNP Vladimir) (NNP Antonov) (HYPH -) (NNP Ovseyenko))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-TMP		1-4	on 23 February 1920 
+			N-ARG-A1		6-6	he 
+	1	on
+	2	23
+			coref:	IDENT			2	2-4	23 February 1920 
+			name:	DATE				2-4	23 February 1920 
+	3	February
+	4	1920
+	5	,
+	6	he
+			coref:	IDENT			0	6-6	he 
+	7	was
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	was 
+			R-ARG-A1		0-4	Born on 23 February 1920 
+			N-ARG-A1		6-6	he 
+			N-ARG-A2		8-18	the son of a Bolshevik military leader Vladimir Antonov - Ovseyenko 
+	8	the
+	9	son
+			sense:	son.n.01
+	10	of
+	11	a
+	12	Bolshevik
+			name:	MISC				12-12	Bolshevik 
+			sense:	bolshevik.a.01
+	13	military
+			sense:	military.a.02
+	14	leader
+			name:	TITLE				14-14	leader 
+			sense:	leader.n.01
+	15	Vladimir
+			name:	PERSON				15-18	Vladimir Antonov - Ovseyenko 
+	16	Antonov
+	17	-
+	18	Ovseyenko
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1935 , he joined the historical faculty of the Moscow State Pedagogical Institute .
+
+
+Treebanked sentence:
+--------------------
+In 1935 , he joined the historical faculty of the Moscow State Pedagogical Institute . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1935)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD joined)
+      (NP
+        (NP (DT the) (JJ historical) (NN faculty))
+        (PP (IN of)
+          (NP (DT the) (NNP Moscow) (NNP State) (NNP Pedagogical) (NNP Institute)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1935
+			name:	DATE				1-1	1935 
+	2	,
+	3	he
+			coref:	IDENT			0	3-3	he 
+	4	joined
+			sense:	join.v.01
+			prop:	join.01
+			V		4-4	joined 
+			N-ARGM-TMP		0-1	In 1935 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		5-13	the historical faculty of the Moscow State Pedagogical Institute 
+	5	the
+	6	historical
+			sense:	historical.a.01
+	7	faculty
+			sense:	staff.n.03
+	8	of
+	9	the
+	10	Moscow
+			name:	ORGANIZATION				10-13	Moscow State Pedagogical Institute 
+	11	State
+	12	Pedagogical
+	13	Institute
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1938 , he was expelled from Komsomol and the institute wherein , however , he was reinstated in the same year .
+
+
+Treebanked sentence:
+--------------------
+In 1938 , he was expelled from Komsomol and the institute wherein , however , he was reinstated in the same year . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1938)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN expelled)
+        (PP (IN from)
+          (NP
+            (NP (NNP Komsomol))
+            (CC and)
+            (NP (DT the) (NN institute))))
+        (SBAR
+          (WHADVP (WRB wherein))
+          (S (, ,)
+            (ADVP (RB however))
+            (, ,)
+            (NP (PRP he))
+            (VP (VBD was)
+              (VP (VBN reinstated)
+                (PP (IN in)
+                  (NP (DT the) (JJ same) (NN year)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1938
+			name:	DATE				1-1	1938 
+	2	,
+	3	he
+			coref:	IDENT			0	3-3	he 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	expelled
+			sense:	oust.v.01
+			prop:	expel.01
+			V		5-5	expelled 
+			N-ARGM-TMP		0-1	In 1938 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		6-21	from Komsomol and the institute wherein , however , he was reinstated in the same year 
+	6	from
+	7	Komsomol
+			name:	LOCATION				7-7	Komsomol 
+	8	and
+	9	the
+	10	institute
+			sense:	institute.n.01
+	11	wherein
+	12	,
+	13	however
+			sense:	however.r.01
+	14	,
+	15	he
+			coref:	IDENT			0	15-15	he 
+	16	was
+			sense:	be.v.01
+			prop:	be.03
+			V		16-16	was 
+	17	reinstated
+			sense:	reinstate.v.01
+			prop:	reinstate.01
+			V		17-17	reinstated 
+			N-ARGM-LOC		9-10	the institute 
+			R-ARGM-LOC		11-11	wherein 
+			N-ARGM-DIS		13-13	however 
+			N-ARG-A1		15-15	he 
+			N-ARGM-TMP		18-21	in the same year 
+	18	in
+	19	the
+			name:	DATE				19-21	the same year 
+	20	same
+			sense:	same.a.01
+	21	year
+			sense:	year.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was arrested in 1940 and spent 13 years in labor camps .
+
+
+Treebanked sentence:
+--------------------
+He was arrested in 1940 and spent 13 years in labor camps . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN arrested)
+          (PP (IN in)
+            (NP (CD 1940)))))
+      (CC and)
+      (VP (VBD spent)
+        (NP (CD 13) (NNS years))
+        (PP (IN in)
+          (NP (NN labor) (NNS camps)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	arrested
+			sense:	collar.v.01
+			prop:	arrest.01
+			V		2-2	arrested 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		3-4	in 1940 
+	3	in
+	4	1940
+			name:	DATE				4-4	1940 
+	5	and
+	6	spent
+			sense:	spend.v.01
+			prop:	spend.02
+			V		6-6	spent 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		7-8	13 years 
+	7	13
+			name:	DURATION				7-8	13 years 
+	8	years
+			sense:	year.n.01
+	9	in
+	10	labor
+			sense:	labor.n.02
+	11	camps
+			sense:	camp.n.05
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Antonov - Ovseyenko is best known for his biography of Lavrentiy Beria and he also wrote several books .
+
+
+Treebanked sentence:
+--------------------
+Antonov - Ovseyenko is best known for his biography of Lavrentiy Beria and he also wrote several books . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NNP Antonov) (HYPH -) (NNP Ovseyenko))
+      (VP (VBZ is)
+        (VP (RBS best) (VBN known)
+          (PP (IN for)
+            (NP
+              (NP (PRP$ his) (NN biography))
+              (PP (IN of)
+                (NP (NNP Lavrentiy) (NNP Beria))))))))
+    (CC and)
+    (S
+      (NP (PRP he))
+      (ADVP (RB also))
+      (VP (VBD wrote)
+        (NP (JJ several) (NNS books))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Antonov
+			name:	PERSON				0-2	Antonov - Ovseyenko 
+	1	-
+	2	Ovseyenko
+	3	is
+			sense:	be.v.01
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Antonov - Ovseyenko 
+			N-ARG-A2		4-11	best known for his biography of Lavrentiy Beria 
+	4	best
+			sense:	well.r.02
+	5	known
+			sense:	know.v.04
+			prop:	know.01
+			V		5-5	known 
+			N-ARG-A1		0-2	Antonov - Ovseyenko 
+			N-ARGM-MNR		4-4	best 
+			N-ARG-A2		6-11	for his biography of Lavrentiy Beria 
+	6	for
+	7	his
+			coref:	IDENT			0	7-7	his 
+	8	biography
+			sense:	biography.n.01
+	9	of
+	10	Lavrentiy
+			name:	PERSON				10-11	Lavrentiy Beria 
+	11	Beria
+	12	and
+	13	he
+			coref:	IDENT			0	13-13	he 
+	14	also
+			sense:	besides.r.02
+	15	wrote
+			sense:	publish.v.03
+			prop:	write.01
+			V		15-15	wrote 
+			N-ARG-A0		13-13	he 
+			N-ARGM-DIS		14-14	also 
+			N-ARG-A1		16-17	several books 
+	16	several
+			sense:	several.s.01
+	17	books
+			sense:	book.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Antonov - Ovseyenko operated a state museum on the Gulag , for which the Moscow administration provided a building in August 2001 .
+
+
+Treebanked sentence:
+--------------------
+Antonov - Ovseyenko operated a state museum on the Gulag , for which the Moscow administration provided a building in August 2001 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Antonov) (HYPH -) (NNP Ovseyenko))
+    (VP (VBD operated)
+      (NP (DT a) (NN state) (NN museum))
+      (PP (IN on)
+        (NP
+          (NP (DT the) (NNP Gulag))
+          (, ,)
+          (SBAR
+            (WHPP (IN for)
+              (WHNP (WDT which)))
+            (S
+              (NP (DT the) (NNP Moscow) (NN administration))
+              (VP (VBD provided)
+                (NP (DT a) (NN building))
+                (PP (IN in)
+                  (NP (NNP August) (CD 2001)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Antonov
+			name:	PERSON				0-2	Antonov - Ovseyenko 
+	1	-
+	2	Ovseyenko
+	3	operated
+			sense:	operate.v.01
+			prop:	operate.01
+			V		3-3	operated 
+			N-ARG-A0		0-2	Antonov - Ovseyenko 
+			N-ARG-A1		4-21	a state museum on the Gulag , for which the Moscow administration provided a building in August 2001 
+	4	a
+	5	state
+			sense:	state.n.04
+	6	museum
+			sense:	museum.n.01
+	7	on
+	8	the
+	9	Gulag
+	10	,
+	11	for
+	12	which
+	13	the
+	14	Moscow
+			coref:	IDENT			1	14-14	Moscow 
+			name:	CITY				14-14	Moscow 
+	15	administration
+			sense:	administration.n.02
+	16	provided
+			sense:	supply.v.01
+			prop:	provide.01
+			V		16-16	provided 
+			N-ARG-A2		4-9	a state museum on the Gulag 
+			R-ARG-A2		11-12	for which 
+			N-ARG-A0		13-15	the Moscow administration 
+			N-ARG-A1		17-18	a building 
+			N-ARGM-TMP		19-21	in August 2001 
+	17	a
+	18	building
+			sense:	building.n.01
+	19	in
+	20	August
+			name:	DATE				20-21	August 2001 
+	21	2001
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+When he died in 2013 , he was still working two full days a week to continue documenting what he called " the evils of the Soviet era " and to help with plans for a new , larger space .
+
+
+Treebanked sentence:
+--------------------
+When he died in 2013 , he was still working two full days a week to continue documenting what he called " the evils of the Soviet era " and to help with plans for a new , larger space . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP he))
+        (VP (VBD died)
+          (PP (IN in)
+            (NP (CD 2013))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (ADVP (RB still))
+      (VP (VBG working)
+        (NP (CD two) (JJ full) (NNS days))
+        (NP-TMP (DT a) (NN week))
+        (S
+          (VP
+            (VP (TO to)
+              (VP (VB continue)
+                (S
+                  (VP (VBG documenting)
+                    (SBAR
+                      (WHNP (WP what))
+                      (S
+                        (NP (PRP he))
+                        (VP (VBD called)
+                          (NP (`` ")
+                            (NP (DT the) (NNS evils))
+                            (PP (IN of)
+                              (NP (DT the) (JJ Soviet) (NN era)))
+                            ('' ")))))))))
+            (CC and)
+            (VP (TO to)
+              (VP (VB help)
+                (PP (IN with)
+                  (NP
+                    (NP (NNS plans))
+                    (PP (IN for)
+                      (NP (DT a) (JJ new) (, ,) (JJR larger) (NN space)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	When
+	1	he
+			coref:	IDENT			0	1-1	he 
+	2	died
+			sense:	die.v.01
+			prop:	die.01
+			V		2-2	died 
+			N-ARGM-TMP		0-0	When 
+			N-ARG-A1		1-1	he 
+			N-ARGM-TMP		3-4	in 2013 
+	3	in
+	4	2013
+			name:	DATE				4-4	2013 
+	5	,
+	6	he
+			coref:	IDENT			0	6-6	he 
+	7	was
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	was 
+	8	still
+			sense:	still.r.01
+	9	working
+			sense:	work.v.02
+			prop:	work.01
+			V		9-9	working 
+			N-ARGM-TMP		0-4	When he died in 2013 
+			N-ARG-A0		6-6	he 
+			N-ARGM-TMP		8-8	still 
+			N-ARGM-TMP		10-14	two full days a week 
+			N-ARGM-PRP		15-39	to continue documenting what he called " the evils of the Soviet era " and to help with plans for a new , larger space 
+	10	two
+			name:	NUMBER				10-10	two 
+	11	full
+			sense:	entire.s.01
+	12	days
+			name:	DURATION				12-14	days a week 
+			sense:	day.n.01
+	13	a
+	14	week
+			sense:	week.n.01
+	15	to
+	16	continue
+			sense:	continue.v.01
+			prop:	continue.01
+			V		16-16	continue 
+			N-ARG-A0		6-6	he 
+			N-ARG-A1		17-28	documenting what he called " the evils of the Soviet era " 
+	17	documenting
+			sense:	document.v.01
+			prop:	document.01
+			V		17-17	documenting 
+			N-ARG-A0		6-6	he 
+			N-ARG-A1		18-28	what he called " the evils of the Soviet era " 
+	18	what
+	19	he
+			coref:	IDENT			0	19-19	he 
+	20	called
+			sense:	call.v.02
+			prop:	call.01
+			V		20-20	called 
+			N-ARG-A1		18-18	what 
+			N-ARG-A0		19-19	he 
+			N-ARG-A2		21-28	" the evils of the Soviet era " 
+	21	"
+	22	the
+	23	evils
+			sense:	evil.n.01
+	24	of
+	25	the
+	26	Soviet
+			name:	MISC				26-26	Soviet 
+			sense:	soviet.a.01
+	27	era
+			sense:	era.n.01
+	28	"
+	29	and
+	30	to
+	31	help
+			sense:	help.v.01
+			prop:	help.01
+			V		31-31	help 
+			N-ARG-A0		6-6	he 
+			N-ARG-A1		32-39	with plans for a new , larger space 
+	32	with
+	33	plans
+			sense:	plan.n.01
+	34	for
+	35	a
+	36	new
+			sense:	new.a.01
+	37	,
+	38	larger
+			sense:	large.a.01
+	39	space
+			sense:	space.n.03
+	40	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.6-6	he 
+				2.3-3	he 
+				3.3-3	he 
+				3.15-15	he 
+				4.0-0	He 
+				5.7-7	his 
+				5.13-13	he 
+				7.1-1	he 
+				7.6-6	he 
+				7.19-19	he 
+	Chain 1 (IDENT)
+				0.11-11	Moscow 
+				0.19-19	Moscow 
+				6.14-14	Moscow 
+	Chain 2 (IDENT)
+				0.7-9	23 February 1920 
+				1.2-4	23 February 1920 
+

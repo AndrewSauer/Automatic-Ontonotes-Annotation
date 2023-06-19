@@ -1,0 +1,999 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ignazio Cerio ( 1841 – 1921 ) was an influential but eccentric physician and amateur philosopher on the island of Capri , in Italy .
+
+
+Treebanked sentence:
+--------------------
+Ignazio Cerio ( 1841 – 1921 ) was an influential but eccentric physician and amateur philosopher on the island of Capri , in Italy . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Ignazio) (NNP Cerio))
+      (NP (-LRB- -LRB-)
+        (QP (CD 1841) (SYM –) (CD 1921))
+        (-RRB- -RRB-)))
+    (VP (VBD was)
+      (NP
+        (NP (DT an)
+          (ADJP (JJ influential)
+            (CC but)
+            (JJ eccentric))
+          (NN physician))
+        (CC and)
+        (NP
+          (NP (NN amateur) (NN philosopher))
+          (PP (IN on)
+            (NP
+              (NP (DT the) (NN island))
+              (PP (IN of)
+                (NP (NNP Capri)))))))
+      (, ,)
+      (PP (IN in)
+        (NP (NNP Italy))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ignazio
+			coref:	IDENT			2	0-6	Ignazio Cerio ( 1841 – 1921 ) 
+			name:	PERSON				0-1	Ignazio Cerio 
+	1	Cerio
+	2	(
+	3	1841
+			name:	DATE				3-3	1841 
+	4	–
+	5	1921
+			name:	DATE				5-5	1921 
+	6	)
+	7	was
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	was 
+			N-ARG-A1		0-6	Ignazio Cerio ( 1841 – 1921 ) 
+			N-ARG-A2		8-23	an influential but eccentric physician and amateur philosopher on the island of Capri , in Italy 
+	8	an
+	9	influential
+			sense:	influential.a.01
+	10	but
+	11	eccentric
+			sense:	bizarre.s.01
+	12	physician
+			name:	TITLE				12-12	physician 
+			sense:	doctor.n.01
+	13	and
+	14	amateur
+			sense:	amateur.n.01
+	15	philosopher
+			name:	TITLE				15-15	philosopher 
+			sense:	philosopher.n.01
+	16	on
+	17	the
+	18	island
+			sense:	island.n.01
+	19	of
+	20	Capri
+			coref:	IDENT			1	20-20	Capri 
+	21	,
+	22	in
+	23	Italy
+			name:	COUNTRY				23-23	Italy 
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His father , imprisoned for his liberal beliefs , had spent his time in jail devising chemical concoctions and mechanical constructions that would never be made ; Ignazio continued the family traditions of both liberalism and idiosyncratic inventiveness .
+
+
+Treebanked sentence:
+--------------------
+His father , imprisoned for his liberal beliefs , had spent his time in jail devising chemical concoctions and mechanical constructions that would never be made ; Ignazio continued the family traditions of both liberalism and idiosyncratic inventiveness . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (PRP$ His) (NN father))
+        (, ,)
+        (VP (VBN imprisoned)
+          (PP (IN for)
+            (NP (PRP$ his) (JJ liberal) (NNS beliefs))))
+        (, ,))
+      (VP (VBD had)
+        (VP (VBN spent)
+          (NP (PRP$ his) (NN time))
+          (PP (IN in)
+            (NP (NN jail)))
+          (S
+            (VP (VBG devising)
+              (NP
+                (NP
+                  (NP (NN chemical) (NNS concoctions))
+                  (CC and)
+                  (NP (JJ mechanical) (NNS constructions)))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (MD would)
+                      (ADVP (RB never))
+                      (VP (VB be)
+                        (VP (VBN made))))))))))))
+    (: ;)
+    (S
+      (NP (NNP Ignazio))
+      (VP (VBD continued)
+        (NP
+          (NP (DT the) (NN family) (NNS traditions))
+          (PP (IN of)
+            (NP
+              (NP (DT both) (NN liberalism))
+              (CC and)
+              (NP
+                (ADJP (JJ idiosyncratic))
+                (NN inventiveness)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			2	0-0	His 
+	1	father
+			sense:	father.n.01
+	2	,
+	3	imprisoned
+			sense:	imprison.v.01
+			prop:	imprison.01
+			V		3-3	imprisoned 
+			N-ARG-A1		0-1	His father 
+			N-ARG-A3		4-7	for his liberal beliefs 
+	4	for
+	5	his
+			coref:	IDENT			2	5-5	his 
+	6	liberal
+			name:	IDEOLOGY				6-6	liberal 
+			sense:	liberal.s.02
+	7	beliefs
+			sense:	belief.n.01
+	8	,
+	9	had
+			sense:	experience.v.03
+			prop:	have.01
+			V		9-9	had 
+	10	spent
+			sense:	spend.v.01
+			prop:	spend.02
+			V		10-10	spent 
+			N-ARG-A0		0-1	His father 
+			N-ARGM-PRD		3-7	imprisoned for his liberal beliefs 
+			N-ARG-A1		11-12	his time 
+			N-ARGM-LOC		13-14	in jail 
+			N-ARG-A2		15-25	devising chemical concoctions and mechanical constructions that would never be made 
+	11	his
+			coref:	IDENT			2	11-11	his 
+	12	time
+			sense:	prison_term.n.01
+	13	in
+	14	jail
+			sense:	jail.n.01
+	15	devising
+			sense:	invent.v.01
+			prop:	devise.01
+			V		15-15	devising 
+			N-ARG-A0		0-7	His father , imprisoned for his liberal beliefs 
+			N-ARG-A1		16-25	chemical concoctions and mechanical constructions that would never be made 
+	16	chemical
+			sense:	chemical.n.01
+	17	concoctions
+			sense:	confection.n.02
+	18	and
+	19	mechanical
+			sense:	mechanical.a.03
+	20	constructions
+			sense:	structure.n.01
+	21	that
+	22	would
+	23	never
+			sense:	never.r.01
+	24	be
+			sense:	be.v.01
+			prop:	be.03
+			V		24-24	be 
+	25	made
+			sense:	produce.v.02
+			prop:	make.01
+			V		25-25	made 
+			N-ARG-A1		19-20	mechanical constructions 
+			R-ARG-A1		21-21	that 
+			N-ARGM-MOD		22-22	would 
+			N-ARGM-NEG		23-23	never 
+	26	;
+	27	Ignazio
+			coref:	IDENT			2	27-27	Ignazio 
+			name:	PERSON				27-27	Ignazio 
+	28	continued
+			sense:	continue.v.03
+			prop:	continue.01
+			V		28-28	continued 
+			N-ARG-A0		27-27	Ignazio 
+			N-ARG-A1		29-37	the family traditions of both liberalism and idiosyncratic inventiveness 
+	29	the
+	30	family
+			sense:	family.n.02
+	31	traditions
+			sense:	tradition.n.01
+	32	of
+	33	both
+	34	liberalism
+			name:	IDEOLOGY				34-34	liberalism 
+			sense:	liberalism.n.01
+	35	and
+	36	idiosyncratic
+			sense:	idiosyncratic.s.01
+	37	inventiveness
+			sense:	inventiveness.n.01
+	38	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ignazio even coined the word disutilità to refer to a human life lacking a sense of purpose but full of tension and reflection , mixing passionate pursuit of ideas with periods of lovesickness and ennui .
+
+
+Treebanked sentence:
+--------------------
+Ignazio even coined the word disutilità to refer to a human life lacking a sense of purpose but full of tension and reflection , mixing passionate pursuit of ideas with periods of lovesickness and ennui . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Ignazio))
+    (ADVP (RB even))
+    (VP (VBD coined)
+      (NP (DT the) (NN word) (NN disutilità))
+      (S
+        (VP (TO to)
+          (VP (VB refer)
+            (PP (IN to)
+              (NP
+                (NP (DT a) (JJ human) (NN life))
+                (VP (VBG lacking)
+                  (UCP
+                    (NP
+                      (NP (DT a) (NN sense))
+                      (PP (IN of)
+                        (NP (NN purpose))))
+                    (CC but)
+                    (ADJP (JJ full)
+                      (PP (IN of)
+                        (NP (NN tension)
+                          (CC and)
+                          (NN reflection)))))))))))
+      (, ,)
+      (S
+        (VP (VBG mixing)
+          (NP
+            (NP (JJ passionate) (NN pursuit))
+            (PP (IN of)
+              (NP (NNS ideas))))
+          (PP (IN with)
+            (NP
+              (NP (NNS periods))
+              (PP (IN of)
+                (NP (NN lovesickness)
+                  (CC and)
+                  (NN ennui))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ignazio
+			coref:	IDENT			2	0-0	Ignazio 
+			name:	PERSON				0-0	Ignazio 
+	1	even
+			sense:	even.r.01
+	2	coined
+			sense:	coin.v.01
+			prop:	coin.01
+			V		2-2	coined 
+			N-ARG-A0		0-0	Ignazio 
+			N-ARGM-ADV		1-1	even 
+			N-ARG-A1		3-5	the word disutilità 
+			N-ARGM-PRP		6-34	to refer to a human life lacking a sense of purpose but full of tension and reflection , mixing passionate pursuit of ideas with periods of lovesickness and ennui 
+	3	the
+	4	word
+			sense:	word.n.01
+	5	disutilità
+	6	to
+	7	refer
+			sense:	denote.v.02
+			prop:	refer.01
+			V		7-7	refer 
+			N-ARG-A0		0-0	Ignazio 
+			N-ARG-A1		8-34	to a human life lacking a sense of purpose but full of tension and reflection , mixing passionate pursuit of ideas with periods of lovesickness and ennui 
+	8	to
+	9	a
+	10	human
+			sense:	human.a.01
+	11	life
+			sense:	life.n.02
+	12	lacking
+			sense:	miss.v.06
+			prop:	lack.01
+			V		12-12	lacking 
+			N-ARG-A0		9-11	a human life 
+			N-ARG-A1		13-16	a sense of purpose 
+	13	a
+	14	sense
+			sense:	sense.n.01
+	15	of
+	16	purpose
+			sense:	purpose.n.01
+	17	but
+	18	full
+			sense:	full.a.01
+	19	of
+	20	tension
+			sense:	tension.n.01
+	21	and
+	22	reflection
+			sense:	contemplation.n.02
+	23	,
+	24	mixing
+			sense:	blend.v.03
+			prop:	mix.01
+			V		24-24	mixing 
+			N-ARG-A0		9-11	a human life 
+			N-ARG-A1		25-28	passionate pursuit of ideas 
+			N-ARG-A2		29-34	with periods of lovesickness and ennui 
+	25	passionate
+			sense:	passionate.a.01
+	26	pursuit
+			sense:	pursuit.n.02
+	27	of
+	28	ideas
+			sense:	idea.n.01
+	29	with
+	30	periods
+			sense:	time_period.n.01
+	31	of
+	32	lovesickness
+			sense:	lovesickness.n.01
+	33	and
+	34	ennui
+			sense:	boredom.n.01
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He worked for fifty years as a medical doctor on Capri , a profession he followed with his characteristically unconventional flair .
+
+
+Treebanked sentence:
+--------------------
+He worked for fifty years as a medical doctor on Capri , a profession he followed with his characteristically unconventional flair . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD worked)
+      (PP (IN for)
+        (NP
+          (NP (CD fifty) (NNS years))
+          (PP (IN as)
+            (NP (DT a) (JJ medical) (NN doctor)))))
+      (PP (IN on)
+        (NP
+          (NP (NNP Capri))
+          (, ,)
+          (NP
+            (NP (DT a) (NN profession))
+            (SBAR
+              (S
+                (NP (PRP he))
+                (VP (VBD followed)
+                  (PP (IN with)
+                    (NP (PRP$ his)
+                      (ADJP (RB characteristically) (JJ unconventional))
+                      (NN flair))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		1-1	worked 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		2-4	for fifty years 
+			N-ARG-A1		5-20	as a medical doctor on Capri , a profession he followed with his characteristically unconventional flair 
+	2	for
+	3	fifty
+			name:	DURATION				3-4	fifty years 
+	4	years
+			sense:	year.n.01
+	5	as
+	6	a
+			coref:	IDENT			0	6-8	a medical doctor 
+	7	medical
+			sense:	medical.a.01
+	8	doctor
+			name:	TITLE				8-8	doctor 
+			sense:	doctor.n.01
+	9	on
+	10	Capri
+	11	,
+	12	a
+	13	profession
+			sense:	profession.n.02
+	14	he
+			coref:	IDENT			2	14-14	he 
+	15	followed
+			sense:	adopt.v.01
+			prop:	follow.02
+			V		15-15	followed 
+			N-ARG-A1		12-13	a profession 
+			N-ARG-A0		14-14	he 
+			N-ARGM-MNR		16-20	with his characteristically unconventional flair 
+	16	with
+	17	his
+			coref:	IDENT			2	17-17	his 
+	18	characteristically
+			sense:	characteristically.r.01
+	19	unconventional
+			sense:	unconventional.a.01
+	20	flair
+			sense:	flair.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On one occasion , for example , he established a sanitorium at Pozzuoli , claiming that the sulphurous gases would cure tuberculosis .
+
+
+Treebanked sentence:
+--------------------
+On one occasion , for example , he established a sanitorium at Pozzuoli , claiming that the sulphurous gases would cure tuberculosis . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (CD one) (NN occasion)))
+    (, ,)
+    (PP (IN for)
+      (NP (NN example)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD established)
+      (NP (DT a) (NN sanitorium))
+      (PP (IN at)
+        (NP (NNP Pozzuoli)))
+      (, ,)
+      (S
+        (VP (VBG claiming)
+          (SBAR (IN that)
+            (S
+              (NP (DT the) (JJ sulphurous) (NNS gases))
+              (VP (MD would)
+                (VP (VB cure)
+                  (NP (NN tuberculosis)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	one
+			name:	NUMBER				1-1	one 
+	2	occasion
+			sense:	juncture.n.01
+	3	,
+	4	for
+	5	example
+			sense:	example.n.01
+	6	,
+	7	he
+			coref:	IDENT			2	7-7	he 
+	8	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		8-8	established 
+			N-ARGM-TMP		0-2	On one occasion 
+			N-ARGM-DIS		4-5	for example 
+			N-ARG-A0		7-7	he 
+			N-ARG-A1		9-10	a sanitorium 
+			N-ARGM-LOC		11-12	at Pozzuoli 
+			N-ARGM-ADV		14-21	claiming that the sulphurous gases would cure tuberculosis 
+	9	a
+	10	sanitorium
+	11	at
+	12	Pozzuoli
+			name:	LOCATION				12-12	Pozzuoli 
+	13	,
+	14	claiming
+			sense:	claim.v.01
+			prop:	claim.01
+			V		14-14	claiming 
+			N-ARG-A0		7-7	he 
+			N-ARG-A1		15-21	that the sulphurous gases would cure tuberculosis 
+	15	that
+	16	the
+	17	sulphurous
+			sense:	sulfurous.a.01
+	18	gases
+			sense:	gas.n.02
+	19	would
+	20	cure
+			sense:	bring_around.v.02
+			prop:	cure.01
+			V		20-20	cure 
+			N-ARG-A3		16-18	the sulphurous gases 
+			N-ARGM-MOD		19-19	would 
+			N-ARG-A2		21-21	tuberculosis 
+	21	tuberculosis
+			name:	CAUSE_OF_DEATH				21-21	tuberculosis 
+			sense:	tuberculosis.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The only patient to arrive at the sanitorium rejected the doctor 's contention that both sulphur and arsenic would be good for the health .
+
+
+Treebanked sentence:
+--------------------
+The only patient to arrive at the sanitorium rejected the doctor 's contention that both sulphur and arsenic would be good for the health . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJ only) (NN patient)
+      (S
+        (VP (TO to)
+          (VP (VB arrive)
+            (PP (IN at)
+              (NP (DT the) (NN sanitorium)))))))
+    (VP (VBD rejected)
+      (NP
+        (NP (DT the) (NN doctor) (POS 's))
+        (NN contention))
+      (SBAR (IN that)
+        (S
+          (NP (DT both) (NN sulphur)
+            (CC and)
+            (NN arsenic))
+          (VP (MD would)
+            (VP (VB be)
+              (ADJP (JJ good)
+                (PP (IN for)
+                  (NP (DT the) (NN health)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	only
+			sense:	lone.s.03
+	2	patient
+			sense:	patient.n.01
+	3	to
+	4	arrive
+			sense:	arrive.v.01
+			prop:	arrive.01
+			V		4-4	arrive 
+			N-ARG-A1		0-2	The only patient 
+			N-ARG-A4		5-7	at the sanitorium 
+	5	at
+	6	the
+	7	sanitorium
+	8	rejected
+			sense:	refuse.v.02
+			prop:	reject.01
+			V		8-8	rejected 
+			N-ARG-A0		0-7	The only patient to arrive at the sanitorium 
+			N-ARG-A1		9-23	the doctor 's contention that both sulphur and arsenic would be good for the health 
+	9	the
+			coref:	IDENT			0	9-11	the doctor 's 
+	10	doctor
+			name:	TITLE				10-10	doctor 
+			sense:	doctor.n.01
+	11	's
+	12	contention
+			sense:	contention.n.01
+	13	that
+	14	both
+	15	sulphur
+			sense:	sulfur.n.01
+	16	and
+	17	arsenic
+			sense:	arsenic.n.02
+	18	would
+	19	be
+			sense:	be.v.01
+			prop:	be.01
+			V		19-19	be 
+			N-ARG-A1		14-17	both sulphur and arsenic 
+			N-ARGM-MOD		18-18	would 
+			N-ARG-A2		20-23	good for the health 
+	20	good
+			sense:	good.s.18
+	21	for
+	22	the
+	23	health
+			sense:	health.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Nevertheless , he remains a well - remembered and much - loved figure on the island of Capri , his memory immortalised both in the writings of his son , Edwin Cerio ( particularly in La vita a la figura de un uomo ( 1921 ) ) and in the cultural Centro Caprense Ignazio Cerio , established in his name to organise conferences and meetings on medicine , Italian and foreign literature , archaeology , palaeontology , and international and local history .
+
+
+Treebanked sentence:
+--------------------
+Nevertheless , he remains a well - remembered and much - loved figure on the island of Capri , his memory immortalised both in the writings of his son , Edwin Cerio ( particularly in La vita a la figura de un uomo ( 1921 ) ) and in the cultural Centro Caprense Ignazio Cerio , established in his name to organise conferences and meetings on medicine , Italian and foreign literature , archaeology , palaeontology , and international and local history . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Nevertheless))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBZ remains)
+      (NP
+        (NP (DT a)
+          (ADJP
+            (ADJP (RB well) (HYPH -) (VBN remembered))
+            (CC and)
+            (ADJP (RB much) (HYPH -) (VBN loved)))
+          (NN figure))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN island))
+            (PP (IN of)
+              (NP (NNP Capri)))))
+        (, ,)
+        (NP
+          (NP (PRP$ his) (NN memory))
+          (VP (VBN immortalised)
+            (PP (CC both)
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NNS writings))
+                  (PP (IN of)
+                    (NP
+                      (NP (PRP$ his) (NN son))
+                      (, ,)
+                      (NP
+                        (NP (NNP Edwin) (NNP Cerio))
+                        (-LRB- -LRB-)
+                        (NP
+                          (ADVP (RB particularly)
+                            (PP (IN in)
+                              (NP (NNP La) (NNP vita) (NNP a) (NNP la) (NNP figura))))
+                          (NNP de) (NNP un) (NN uomo)
+                          (PRN (-LRB- -LRB-)
+                            (NP (CD 1921))
+                            (-RRB- -RRB-)))
+                        (-RRB- -RRB-))))))
+              (CC and)
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (JJ cultural) (NNP Centro) (NNP Caprense) (NNP Ignazio) (NNP Cerio))
+                  (, ,)
+                  (VP (VBN established)
+                    (PP (IN in)
+                      (NP (PRP$ his) (NN name)
+                        (S
+                          (VP (TO to)
+                            (VP (VB organise)
+                              (NP (NNS conferences)
+                                (CC and)
+                                (NNS meetings))
+                              (PP (IN on)
+                                (NP (NN medicine))))))))))))))
+        (, ,)
+        (NP
+          (ADJP (JJ Italian)
+            (CC and)
+            (JJ foreign))
+          (NN literature))
+        (, ,)
+        (NP (NN archaeology))
+        (, ,)
+        (NP (NN palaeontology))
+        (, ,)
+        (CC and)
+        (NP
+          (ADJP (JJ international)
+            (CC and)
+            (JJ local))
+          (NN history))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Nevertheless
+			sense:	however.r.01
+	1	,
+	2	he
+			coref:	IDENT			2	2-2	he 
+	3	remains
+			sense:	stay.v.01
+			prop:	remain.01
+			V		3-3	remains 
+			N-ARGM-DIS		0-0	Nevertheless 
+			N-ARG-A1		2-2	he 
+			N-ARG-A3		4-17	a well - remembered and much - loved figure on the island of Capri 
+			N-ARGM-ADV		19-81	his memory immortalised both in the writings of his son , Edwin Cerio ( particularly in La vita a la figura de un uomo ( 1921 ) ) and in the cultural Centro Caprense Ignazio Cerio , established in his name to organise conferences and meetings on medicine , Italian and foreign literature , archaeology , palaeontology , and international and local history 
+	4	a
+	5	well
+			sense:	well.r.02
+	6	-
+	7	remembered
+			sense:	remember.v.02
+			prop:	remember.01
+			V		7-7	remembered 
+			N-ARGM-EXT		5-5	well 
+			N-ARG-A1		12-12	figure 
+	8	and
+	9	much
+			sense:	much.r.01
+	10	-
+	11	loved
+			sense:	love.v.01
+			prop:	love.01
+			V		11-11	loved 
+			N-ARGM-ADV		9-9	much 
+			N-ARG-A1		12-12	figure 
+	12	figure
+			sense:	name.n.04
+	13	on
+	14	the
+	15	island
+			sense:	island.n.01
+	16	of
+	17	Capri
+			coref:	IDENT			1	17-17	Capri 
+			name:	LOCATION				17-17	Capri 
+	18	,
+	19	his
+			coref:	IDENT			2	19-19	his 
+	20	memory
+			sense:	memory.n.01
+	21	immortalised
+			sense:	immortalize.v.02
+			prop:	demoralize.01
+			V		21-21	immortalised 
+			N-ARG-A1		19-20	his memory 
+			N-ARGM-LOC		22-81	both in the writings of his son , Edwin Cerio ( particularly in La vita a la figura de un uomo ( 1921 ) ) and in the cultural Centro Caprense Ignazio Cerio , established in his name to organise conferences and meetings on medicine , Italian and foreign literature , archaeology , palaeontology , and international and local history 
+	22	both
+	23	in
+	24	the
+	25	writings
+			sense:	hagiographa.n.01
+	26	of
+	27	his
+			coref:	IDENT			2	27-27	his 
+	28	son
+			sense:	son.n.01
+	29	,
+	30	Edwin
+			name:	PERSON				30-31	Edwin Cerio 
+	31	Cerio
+	32	(
+	33	particularly
+			sense:	particularly.r.01
+	34	in
+	35	La
+			name:	STATE_OR_PROVINCE				35-35	La 
+	36	vita
+	37	a
+	38	la
+	39	figura
+	40	de
+	41	un
+	42	uomo
+	43	(
+	44	1921
+			name:	DATE				44-44	1921 
+	45	)
+	46	)
+	47	and
+	48	in
+	49	the
+	50	cultural
+			sense:	cultural.a.01
+	51	Centro
+			name:	PERSON				51-54	Centro Caprense Ignazio Cerio 
+	52	Caprense
+	53	Ignazio
+	54	Cerio
+	55	,
+	56	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		56-56	established 
+			N-ARG-A1		49-54	the cultural Centro Caprense Ignazio Cerio 
+			N-ARGM-MNR		57-59	in his name 
+			N-ARGM-PRP		60-81	to organise conferences and meetings on medicine , Italian and foreign literature , archaeology , palaeontology , and international and local history 
+	57	in
+	58	his
+			coref:	IDENT			2	58-58	his 
+	59	name
+			sense:	name.n.01
+	60	to
+	61	organise
+			sense:	form.v.01
+			prop:	organize.01
+			V		61-61	organise 
+			N-ARG-A1		62-81	conferences and meetings on medicine , Italian and foreign literature , archaeology , palaeontology , and international and local history 
+	62	conferences
+			sense:	conference.n.01
+	63	and
+	64	meetings
+			sense:	meeting.n.01
+	65	on
+	66	medicine
+			sense:	medicine.n.01
+	67	,
+	68	Italian
+			name:	NATIONALITY				68-68	Italian 
+	69	and
+	70	foreign
+			sense:	foreign.a.01
+	71	literature
+			sense:	literature.n.01
+	72	,
+	73	archaeology
+			sense:	archeology.n.01
+	74	,
+	75	palaeontology
+			sense:	paleontology.n.01
+	76	,
+	77	and
+	78	international
+			sense:	international.a.01
+	79	and
+	80	local
+			sense:	local.a.01
+	81	history
+			sense:	history.n.03
+	82	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Palazzo Cerio , close to the Piazzetta , hosts the Ignazio Cerio museum about Capri 's natural history .
+
+
+Treebanked sentence:
+--------------------
+Palazzo Cerio , close to the Piazzetta , hosts the Ignazio Cerio museum about Capri 's natural history . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Palazzo) (NNP Cerio))
+      (, ,)
+      (ADJP (JJ close)
+        (PP (IN to)
+          (NP (DT the) (NNP Piazzetta))))
+      (, ,))
+    (VP (VBZ hosts)
+      (NP
+        (NP (DT the) (NNP Ignazio) (NNP Cerio) (NN museum))
+        (PP (IN about)
+          (NP
+            (NP (NNP Capri) (POS 's))
+            (JJ natural) (NN history)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Palazzo
+			name:	PERSON				0-1	Palazzo Cerio 
+	1	Cerio
+	2	,
+	3	close
+			sense:	close.a.01
+	4	to
+	5	the
+	6	Piazzetta
+			name:	LOCATION				6-6	Piazzetta 
+	7	,
+	8	hosts
+			sense:	host.v.01
+			prop:	host.01
+			V		8-8	hosts 
+			N-ARG-A0		0-6	Palazzo Cerio , close to the Piazzetta 
+			N-ARG-A1		9-17	the Ignazio Cerio museum about Capri 's natural history 
+	9	the
+	10	Ignazio
+			coref:	IDENT			2	10-11	Ignazio Cerio 
+			name:	PERSON				10-11	Ignazio Cerio 
+	11	Cerio
+	12	museum
+			sense:	museum.n.01
+	13	about
+	14	Capri
+			coref:	IDENT			1	14-15	Capri 's 
+			name:	ORGANIZATION				14-14	Capri 
+	15	's
+	16	natural
+			sense:	natural.a.01
+	17	history
+			sense:	history.n.03
+	18	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.6-8	a medical doctor 
+				5.9-11	the doctor 's 
+	Chain 1 (IDENT)
+				7.14-15	Capri 's 
+				0.20-20	Capri 
+				6.17-17	Capri 
+	Chain 2 (IDENT)
+				0.0-6	Ignazio Cerio ( 1841 – 1921 ) 
+				1.0-0	His 
+				1.5-5	his 
+				1.11-11	his 
+				1.27-27	Ignazio 
+				2.0-0	Ignazio 
+				3.0-0	He 
+				3.14-14	he 
+				3.17-17	his 
+				4.7-7	he 
+				6.2-2	he 
+				6.19-19	his 
+				6.27-27	his 
+				6.58-58	his 
+				7.10-11	Ignazio Cerio 
+

@@ -1,0 +1,742 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Tourism is an important industry in Montreal , Quebec , Canada .
+
+
+Treebanked sentence:
+--------------------
+Tourism is an important industry in Montreal , Quebec , Canada . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN Tourism))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ important) (NN industry))
+        (PP (IN in)
+          (NP
+            (NML (NNP Montreal) (, ,) (NNP Quebec) (, ,))
+            (NNP Canada)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Tourism
+			sense:	tourism.n.01
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Tourism 
+			N-ARG-A2		2-4	an important industry 
+			N-ARGM-LOC		5-10	in Montreal , Quebec , Canada 
+	2	an
+	3	important
+			sense:	important.a.01
+	4	industry
+			sense:	industry.n.01
+	5	in
+	6	Montreal
+			coref:	IDENT			1	6-6	Montreal 
+			name:	CITY				6-6	Montreal 
+	7	,
+	8	Quebec
+			name:	STATE_OR_PROVINCE				8-8	Quebec 
+	9	,
+	10	Canada
+			name:	COUNTRY				10-10	Canada 
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The city welcomed 10.2 million overnight visitors in 2016 and 11,792,970 day trip visitors in 2010 .
+
+
+Treebanked sentence:
+--------------------
+The city welcomed 10.2 million overnight visitors in 2016 and 11,792,970 day trip visitors in 2010 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN city))
+    (VP (VBD welcomed)
+      (NP
+        (NP
+          (NP
+            (QP (CD 10.2) (CD million))
+            (JJ overnight) (NNS visitors))
+          (PP (IN in)
+            (NP (CD 2016))))
+        (CC and)
+        (NP
+          (NP (CD 11,792,970) (NN day) (NN trip) (NNS visitors))
+          (PP (IN in)
+            (NP (CD 2010))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	city
+			sense:	city.n.01
+	2	welcomed
+			sense:	welcome.v.03
+			prop:	welcome.01
+			V		2-2	welcomed 
+			N-ARG-A0		0-1	The city 
+			N-ARG-A1		3-6	10.2 million overnight visitors 
+			N-ARGM-TMP		7-8	in 2016 
+			N-ARG-A1		10-13	11,792,970 day trip visitors 
+	3	10.2
+			name:	NUMBER				3-4	10.2 million 
+	4	million
+	5	overnight
+			name:	TIME				5-5	overnight 
+			sense:	nightlong.s.01
+	6	visitors
+			sense:	visitor.n.01
+	7	in
+	8	2016
+			name:	DATE				8-8	2016 
+	9	and
+	10	11,792,970
+			name:	DURATION				10-11	11,792,970 day 
+	11	day
+			sense:	day.n.01
+	12	trip
+			sense:	trip.n.01
+	13	visitors
+			sense:	visitor.n.01
+	14	in
+	15	2010
+			coref:	IDENT			0	15-15	2010 
+			name:	DATE				15-15	2010 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Montreal attracted 1,770,939 international overnight visitors in 2010 , most of them from the United States , France , the United Kingdom , Germany , Mexico and Japan .
+
+
+Treebanked sentence:
+--------------------
+Montreal attracted 1,770,939 international overnight visitors in 2010 , most of them from the United States , France , the United Kingdom , Germany , Mexico and Japan . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Montreal))
+    (VP (VBD attracted)
+      (NP (CD 1,770,939) (JJ international) (JJ overnight) (NNS visitors))
+      (PP (IN in)
+        (NP
+          (NP (CD 2010))
+          (, ,)
+          (NP
+            (NP (JJS most))
+            (PP (IN of)
+              (NP (PRP them))))))
+      (PP (IN from)
+        (NP
+          (NP (DT the) (NNP United) (NNP States))
+          (, ,)
+          (NP (NNP France))
+          (, ,)
+          (NP (DT the) (NNP United) (NNP Kingdom))
+          (, ,)
+          (NP (NNP Germany))
+          (, ,)
+          (NP (NNP Mexico))
+          (CC and)
+          (NP (NNP Japan)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Montreal
+			coref:	IDENT			1	0-0	Montreal 
+			name:	CITY				0-0	Montreal 
+	1	attracted
+			sense:	attract.v.01
+			prop:	attract.01
+			V		1-1	attracted 
+			N-ARG-A0		0-0	Montreal 
+			N-ARG-A1		2-5	1,770,939 international overnight visitors 
+			N-ARGM-TMP		6-7	in 2010 
+			N-ARGM-ADV		9-27	most of them from the United States , France , the United Kingdom , Germany , Mexico and Japan 
+	2	1,770,939
+			name:	NUMBER				2-2	1,770,939 
+	3	international
+			sense:	international.a.01
+	4	overnight
+			name:	TIME				4-4	overnight 
+			sense:	nightlong.s.01
+	5	visitors
+			sense:	visitor.n.01
+	6	in
+	7	2010
+			coref:	IDENT			0	7-7	2010 
+			name:	DATE				7-7	2010 
+	8	,
+	9	most
+			sense:	most.a.01
+	10	of
+	11	them
+	12	from
+	13	the
+	14	United
+			name:	COUNTRY				14-15	United States 
+	15	States
+	16	,
+	17	France
+			name:	COUNTRY				17-17	France 
+	18	,
+	19	the
+	20	United
+			name:	COUNTRY				20-21	United Kingdom 
+	21	Kingdom
+	22	,
+	23	Germany
+			name:	COUNTRY				23-23	Germany 
+	24	,
+	25	Mexico
+			name:	COUNTRY				25-25	Mexico 
+	26	and
+	27	Japan
+			name:	COUNTRY				27-27	Japan 
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+82 740 direct jobs and 48 199 indirect jobs , in Montreal were generated by the tourism industry in 2014 .
+
+
+Treebanked sentence:
+--------------------
+82 740 direct jobs and 48 199 indirect jobs , in Montreal were generated by the tourism industry in 2014 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (QP (CD 82) (CD 740))
+        (JJ direct) (NNS jobs))
+      (CC and)
+      (NP
+        (NP
+          (QP (CD 48) (CD 199))
+          (JJ indirect) (NNS jobs))
+        (, ,)
+        (PP (IN in)
+          (NP (NNP Montreal)))))
+    (VP (VBD were)
+      (VP (VBN generated)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NN tourism) (NN industry))
+            (PP (IN in)
+              (NP (CD 2014)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	82
+			name:	NUMBER				0-1	82 740 
+	1	740
+	2	direct
+			sense:	direct.s.02
+	3	jobs
+			sense:	occupation.n.01
+	4	and
+	5	48
+			name:	NUMBER				5-6	48 199 
+	6	199
+	7	indirect
+			sense:	indirect.s.01
+	8	jobs
+			sense:	occupation.n.01
+	9	,
+	10	in
+	11	Montreal
+			coref:	IDENT			1	11-11	Montreal 
+			name:	CITY				11-11	Montreal 
+	12	were
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	were 
+	13	generated
+			sense:	generate.v.01
+			prop:	generate.01
+			V		13-13	generated 
+			N-ARG-A1		0-11	82 740 direct jobs and 48 199 indirect jobs , in Montreal 
+			N-ARG-A0		14-17	by the tourism industry 
+			N-ARGM-TMP		18-19	in 2014 
+	14	by
+	15	the
+	16	tourism
+			sense:	tourism.n.01
+	17	industry
+			sense:	industry.n.01
+	18	in
+	19	2014
+			name:	DATE				19-19	2014 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Crescent Street in Downtown Montreal is popular among tourists .
+
+
+Treebanked sentence:
+--------------------
+Crescent Street in Downtown Montreal is popular among tourists . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Crescent) (NNP Street))
+      (PP (IN in)
+        (NP (NNP Downtown) (NNP Montreal))))
+    (VP (VBZ is)
+      (ADJP (JJ popular)
+        (PP (IN among)
+          (NP (NNS tourists)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Crescent
+			coref:	IDENT			2	0-4	Crescent Street in Downtown Montreal 
+			name:	ORGANIZATION				0-1	Crescent Street 
+	1	Street
+	2	in
+	3	Downtown
+			coref:	IDENT			1	3-4	Downtown Montreal 
+			name:	LOCATION				3-3	Downtown 
+	4	Montreal
+			name:	CITY				4-4	Montreal 
+	5	is
+			sense:	be.v.01
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	Crescent Street in Downtown Montreal 
+			N-ARG-A2		6-8	popular among tourists 
+	6	popular
+			sense:	popular.a.01
+	7	among
+	8	tourists
+			sense:	tourist.n.01
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Throughout the summer , it features various street fairs and festivals .
+
+
+Treebanked sentence:
+--------------------
+Throughout the summer , it features various street fairs and festivals . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Throughout)
+      (NP (DT the) (NN summer)))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ features)
+      (NP
+        (NP (JJ various) (NN street) (NNS fairs))
+        (CC and)
+        (NP (NNS festivals))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Throughout
+	1	the
+	2	summer
+			name:	DATE				2-2	summer 
+			sense:	summer.n.01
+	3	,
+	4	it
+			coref:	IDENT			2	4-4	it 
+	5	features
+			sense:	have.v.02
+			prop:	feature.01
+			V		5-5	features 
+			N-ARGM-TMP		0-2	Throughout the summer 
+			N-ARG-A0		4-4	it 
+			N-ARG-A1		6-10	various street fairs and festivals 
+	6	various
+			sense:	assorted.s.02
+	7	street
+			sense:	street.n.01
+	8	fairs
+			sense:	bazaar.n.03
+	9	and
+	10	festivals
+			sense:	festival.n.02
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Among locals , Crescent Street is known better for its many clubs and bars .
+
+
+Treebanked sentence:
+--------------------
+Among locals , Crescent Street is known better for its many clubs and bars . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Among)
+      (NP (NNS locals)))
+    (, ,)
+    (NP (NNP Crescent) (NNP Street))
+    (VP (VBZ is)
+      (VP (VBN known)
+        (S
+          (ADJP (JJR better)))
+        (PP (IN for)
+          (NP (PRP$ its) (JJ many) (NNS clubs)
+            (CC and)
+            (NNS bars)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Among
+	1	locals
+			sense:	local.n.01
+	2	,
+	3	Crescent
+			coref:	IDENT			2	3-4	Crescent Street 
+			name:	ORGANIZATION				3-4	Crescent Street 
+	4	Street
+	5	is
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	is 
+	6	known
+			sense:	know.v.04
+			prop:	know.01
+			V		6-6	known 
+			N-ARGM-LOC		0-1	Among locals 
+			N-ARG-A1		3-4	Crescent Street 
+			N-ARGM-MNR		7-7	better 
+			N-ARG-A2		8-13	for its many clubs and bars 
+	7	better
+			sense:	good.a.01
+	8	for
+	9	its
+			coref:	IDENT			2	9-9	its 
+	10	many
+			sense:	many.a.01
+	11	clubs
+			sense:	cabaret.n.01
+	12	and
+	13	bars
+			sense:	barroom.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Saint - Laurent Boulevard and the surrounding Plateau Mont - Royal neighbourhood , are also well known for their nightlife , with many bars , nightclubs and restaurants .
+
+
+Treebanked sentence:
+--------------------
+Saint - Laurent Boulevard and the surrounding Plateau Mont - Royal neighbourhood , are also well known for their nightlife , with many bars , nightclubs and restaurants . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Saint) (HYPH -) (NNP Laurent) (NNP Boulevard))
+      (CC and)
+      (NP (DT the) (VBG surrounding) (NNP Plateau)
+        (NML (NNP Mont) (HYPH -) (NNP Royal))
+        (NN neighbourhood)))
+    (, ,)
+    (VP (VBP are)
+      (ADVP (RB also))
+      (ADVP (RB well))
+      (VP (VBN known)
+        (PP (IN for)
+          (NP (PRP$ their) (NN nightlife)))
+        (, ,)
+        (PP (IN with)
+          (NP (JJ many) (NNS bars) (, ,) (NNS nightclubs)
+            (CC and)
+            (NNS restaurants)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Saint
+			name:	TITLE				0-0	Saint 
+	1	-
+	2	Laurent
+			name:	LOCATION				2-3	Laurent Boulevard 
+	3	Boulevard
+	4	and
+	5	the
+	6	surrounding
+			sense:	surround.v.01
+			prop:	surround.01
+			V		6-6	surrounding 
+			N-ARG-A1		7-11	Plateau Mont - Royal neighbourhood 
+	7	Plateau
+			name:	LOCATION				7-7	Plateau 
+	8	Mont
+			name:	STATE_OR_PROVINCE				8-8	Mont 
+	9	-
+			name:	LOCATION				9-10	- Royal 
+	10	Royal
+	11	neighbourhood
+			sense:	vicinity.n.01
+	12	,
+	13	are
+			sense:	be.v.01
+			prop:	be.01
+			V		13-13	are 
+			N-ARG-A1		0-11	Saint - Laurent Boulevard and the surrounding Plateau Mont - Royal neighbourhood 
+			N-ARGM-DIS		14-14	also 
+			N-ARG-A2		15-21	well known for their nightlife , with 
+	14	also
+			sense:	besides.r.02
+	15	well
+			sense:	well.r.02
+	16	known
+			sense:	know.v.01
+			prop:	know.01
+			V		16-16	known 
+			N-ARG-A1		0-11	Saint - Laurent Boulevard and the surrounding Plateau Mont - Royal neighbourhood 
+			N-ARGM-DIS		14-14	also 
+			N-ARGM-MNR		15-15	well 
+			N-ARG-A2		17-19	for their nightlife 
+			N-ARGM-PRD		21-21	with 
+	17	for
+	18	their
+	19	nightlife
+			sense:	nightlife.n.01
+	20	,
+	21	with
+	22	many
+			sense:	many.a.01
+	23	bars
+			sense:	barroom.n.01
+	24	,
+	25	nightclubs
+			sense:	cabaret.n.01
+	26	and
+	27	restaurants
+			sense:	restaurant.n.01
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The main sectors that attract tourism in Montreal are Festivals drawing in 7.5 million tourists , museums accounting for 7 million visits and Old Montreal bringing in 2.5 million tourists in the year 2013 .
+
+
+Treebanked sentence:
+--------------------
+The main sectors that attract tourism in Montreal are Festivals drawing in 7.5 million tourists , museums accounting for 7 million visits and Old Montreal bringing in 2.5 million tourists in the year 2013 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ main) (NNS sectors))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBP attract)
+            (NP (NN tourism))
+            (PP (IN in)
+              (NP (NNP Montreal)))))))
+    (VP (VBP are)
+      (NP
+        (NP
+          (NP (NNS Festivals))
+          (VP (VBG drawing)
+            (PP (IN in)
+              (NP
+                (QP (CD 7.5) (CD million))
+                (NNS tourists)))))
+        (, ,)
+        (NP
+          (NP (NNS museums))
+          (VP (VBG accounting)
+            (PP (IN for)
+              (NP
+                (QP (CD 7) (CD million))
+                (NNS visits)))))
+        (CC and)
+        (NP
+          (NP (JJ Old) (NNP Montreal))
+          (VP (VBG bringing)
+            (PRT (RP in))
+            (NP
+              (NP
+                (QP (CD 2.5) (CD million))
+                (NNS tourists))
+              (PP (IN in)
+                (NP (DT the) (NN year) (CD 2013))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	main
+			sense:	chief.s.01
+	2	sectors
+			sense:	sector.n.03
+	3	that
+	4	attract
+			sense:	attract.v.01
+			prop:	attract.01
+			V		4-4	attract 
+			N-ARG-A0		0-2	The main sectors 
+			R-ARG-A0		3-3	that 
+			N-ARG-A1		5-5	tourism 
+			N-ARGM-LOC		6-7	in Montreal 
+	5	tourism
+			sense:	tourism.n.01
+	6	in
+	7	Montreal
+			coref:	IDENT			1	7-7	Montreal 
+			name:	CITY				7-7	Montreal 
+	8	are
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	are 
+			N-ARG-A1		0-7	The main sectors that attract tourism in Montreal 
+			N-ARG-A2		9-33	Festivals drawing in 7.5 million tourists , museums accounting for 7 million visits and Old Montreal bringing in 2.5 million tourists in the year 2013 
+	9	Festivals
+			sense:	festival.n.02
+	10	drawing
+			sense:	attract.v.01
+			prop:	draw.02
+			V		10-10	drawing 
+			N-ARG-A0		9-9	Festivals 
+			N-ARGM-DIR		11-11	in 
+			N-ARG-A1		12-14	7.5 million tourists 
+	11	in
+	12	7.5
+			name:	NUMBER				12-13	7.5 million 
+	13	million
+	14	tourists
+			sense:	tourist.n.01
+	15	,
+	16	museums
+			sense:	museum.n.01
+	17	accounting
+			sense:	account.v.01
+			prop:	account.01
+			V		17-17	accounting 
+			N-ARG-A0		16-16	museums 
+			N-ARG-A1		18-21	for 7 million visits 
+	18	for
+	19	7
+			name:	NUMBER				19-20	7 million 
+	20	million
+	21	visits
+			sense:	visit.n.01
+	22	and
+	23	Old
+			name:	LOCATION				23-23	Old 
+			sense:	old.a.02
+	24	Montreal
+			name:	CITY				24-24	Montreal 
+	25	bringing
+			sense:	bring.v.01
+			prop:	binding.01
+			V		25-25	bringing 
+			N-ARG-A0		23-24	Old Montreal 
+			N-ARG-A1		27-29	2.5 million tourists 
+			N-ARGM-TMP		30-33	in the year 2013 
+	26	in
+	27	2.5
+			name:	NUMBER				27-28	2.5 million 
+	28	million
+	29	tourists
+			sense:	tourist.n.01
+	30	in
+	31	the
+			name:	DATE				31-33	the year 2013 
+	32	year
+			sense:	year.n.01
+	33	2013
+	34	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.15-15	2010 
+				2.7-7	2010 
+	Chain 1 (IDENT)
+				4.3-4	Downtown Montreal 
+				0.6-6	Montreal 
+				2.0-0	Montreal 
+				3.11-11	Montreal 
+				8.7-7	Montreal 
+	Chain 2 (IDENT)
+				4.0-4	Crescent Street in Downtown Montreal 
+				5.4-4	it 
+				6.3-4	Crescent Street 
+				6.9-9	its 
+

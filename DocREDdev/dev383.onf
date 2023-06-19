@@ -1,0 +1,876 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+John Richardson Thurman ( October 6 , 1814 – July 24 , 1854 ) was a U.S. Representative from New York .
+
+
+Treebanked sentence:
+--------------------
+John Richardson Thurman ( October 6 , 1814 – July 24 , 1854 ) was a U.S. Representative from New York . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP John) (NNP Richardson) (NNP Thurman))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP October) (CD 6) (, ,) (CD 1814))
+        (PP (SYM –)
+          (NP (NNP July) (CD 24) (, ,) (CD 1854))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NNP U.S.) (NNP Representative))
+        (PP (IN from)
+          (NP (NNP New) (NNP York)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	John
+			coref:	IDENT			4	0-2	John Richardson Thurman 
+			name:	PERSON				0-2	John Richardson Thurman 
+	1	Richardson
+	2	Thurman
+	3	(
+	4	October
+			name:	DATE				4-7	October 6 , 1814 
+	5	6
+	6	,
+	7	1814
+	8	–
+	9	July
+			coref:	IDENT			2	9-12	July 24 , 1854 
+			name:	DATE				9-12	July 24 , 1854 
+	10	24
+	11	,
+	12	1854
+	13	)
+	14	was
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		0-13	John Richardson Thurman ( October 6 , 1814 – July 24 , 1854 ) 
+			N-ARG-A2		15-20	a U.S. Representative from New York 
+	15	a
+	16	U.S.
+			name:	COUNTRY				16-16	U.S. 
+	17	Representative
+			name:	TITLE				17-17	Representative 
+	18	from
+	19	New
+			coref:	IDENT			0	19-20	New York 
+			name:	STATE_OR_PROVINCE				19-20	New York 
+	20	York
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in New York City , Thurman graduated from Columbia University in 1835 .
+
+
+Treebanked sentence:
+--------------------
+Born in New York City , Thurman graduated from Columbia University in 1835 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP
+            (NML (NNP New) (NNP York))
+            (NNP City)))))
+    (, ,)
+    (NP (NNP Thurman))
+    (VP (VBD graduated)
+      (PP (IN from)
+        (NP
+          (NP (NNP Columbia) (NNP University))
+          (PP (IN in)
+            (NP (NNP 1835))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-4	in New York City 
+			N-ARG-A1		6-6	Thurman 
+	1	in
+	2	New
+			coref:	IDENT			0	2-4	New York City 
+			name:	CITY				2-4	New York City 
+	3	York
+	4	City
+	5	,
+	6	Thurman
+			coref:	IDENT			4	6-6	Thurman 
+			name:	PERSON				6-6	Thurman 
+	7	graduated
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		7-7	graduated 
+			R-ARG-A0		0-4	Born in New York City 
+			N-ARG-A0		6-6	Thurman 
+			N-ARG-A1		8-10	from Columbia University 
+			N-ARGM-TMP		11-12	in 1835 
+	8	from
+	9	Columbia
+			name:	ORGANIZATION				9-10	Columbia University 
+	10	University
+	11	in
+	12	1835
+			name:	DATE				12-12	1835 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He moved to Chestertown , Warren County and engaged in agricultural pursuits .
+
+
+Treebanked sentence:
+--------------------
+He moved to Chestertown , Warren County and engaged in agricultural pursuits . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD moved)
+        (PP (IN to)
+          (NP (NNP Chestertown) (, ,) (NNP Warren) (NNP County))))
+      (CC and)
+      (VP (VBD engaged)
+        (PP (IN in)
+          (NP (JJ agricultural) (NNS pursuits)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			4	0-0	He 
+	1	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		1-1	moved 
+			N-ARG-A0		0-0	He 
+			N-ARG-A2		2-6	to Chestertown , Warren County 
+	2	to
+	3	Chestertown
+			coref:	IDENT			1	3-3	Chestertown 
+			name:	LOCATION				3-3	Chestertown 
+	4	,
+	5	Warren
+			name:	CITY				5-5	Warren 
+	6	County
+			name:	LOCATION				6-6	County 
+	7	and
+	8	engaged
+			sense:	prosecute.v.03
+			prop:	engage.01
+			V		8-8	engaged 
+			N-ARG-A0		0-0	He 
+			N-ARG-A2		9-11	in agricultural pursuits 
+	9	in
+	10	agricultural
+			sense:	agrarian.s.01
+	11	pursuits
+			sense:	avocation.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was also involved in several businesses , including serving as a Director of the Sacket 's Harbor and Saratoga Railroad .
+
+
+Treebanked sentence:
+--------------------
+He was also involved in several businesses , including serving as a Director of the Sacket 's Harbor and Saratoga Railroad . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (ADVP (RB also))
+      (VP (VBN involved)
+        (PP (IN in)
+          (NP (JJ several) (NNS businesses)))
+        (, ,)
+        (PP (VBG including)
+          (S
+            (VP (VBG serving)
+              (PP (IN as)
+                (NP
+                  (NP (DT a) (NN Director))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT the) (NNP Sacket) (POS 's))
+                      (NNP Harbor)
+                      (CC and)
+                      (NNP Saratoga) (NNP Railroad))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			4	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		3-20	involved in several businesses , including serving as a Director of the Sacket 's Harbor and Saratoga Railroad 
+	2	also
+			sense:	besides.r.02
+	3	involved
+			sense:	involve.v.02
+			prop:	involve.01
+			V		3-3	involved 
+			N-ARG-A1		0-0	He 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A2		4-6	in several businesses 
+			N-ARGM-ADV		8-20	including serving as a Director of the Sacket 's Harbor and Saratoga Railroad 
+	4	in
+	5	several
+			sense:	several.s.01
+	6	businesses
+			sense:	business.n.01
+	7	,
+	8	including
+			sense:	include.v.01
+			prop:	include.01
+			V		8-8	including 
+			N-ARG-A2		5-6	several businesses 
+			N-ARG-A1		9-20	serving as a Director of the Sacket 's Harbor and Saratoga Railroad 
+	9	serving
+			sense:	serve.v.02
+			prop:	serve.01
+			V		9-9	serving 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		10-20	as a Director of the Sacket 's Harbor and Saratoga Railroad 
+	10	as
+	11	a
+	12	Director
+			name:	TITLE				12-12	Director 
+			sense:	director.n.02
+	13	of
+	14	the
+	15	Sacket
+	16	's
+	17	Harbor
+			name:	LOCATION				17-17	Harbor 
+	18	and
+	19	Saratoga
+			name:	CITY				19-19	Saratoga 
+	20	Railroad
+			name:	LOCATION				20-20	Railroad 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also speculated in land , as evidenced by the fact that his widow and children sold some of their holdings to the Delaware and Hudson Railroad during its construction .
+
+
+Treebanked sentence:
+--------------------
+He also speculated in land , as evidenced by the fact that his widow and children sold some of their holdings to the Delaware and Hudson Railroad during its construction . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD speculated)
+      (PP (IN in)
+        (NP (NN land)))
+      (, ,)
+      (SBAR (IN as)
+        (S
+          (VP (VBN evidenced)
+            (PP (IN by)
+              (NP (DT the) (NN fact)))
+            (SBAR (IN that)
+              (S
+                (NP (PRP$ his) (NN widow)
+                  (CC and)
+                  (NNS children))
+                (VP (VBD sold)
+                  (NP
+                    (NP (DT some))
+                    (PP (IN of)
+                      (NP (PRP$ their) (NNS holdings))))
+                  (PP (IN to)
+                    (NP
+                      (NP (DT the) (NNP Delaware))
+                      (CC and)
+                      (NP (NNP Hudson) (NNP Railroad))))
+                  (PP (IN during)
+                    (NP (PRP$ its) (NN construction))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			4	0-0	He 
+	1	also
+			sense:	besides.r.02
+	2	speculated
+			sense:	speculate.v.04
+			prop:	speculate.01
+			V		2-2	speculated 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-4	in land 
+			N-ARGM-ADV		6-29	as evidenced by the fact that his widow and children sold some of their holdings to the Delaware and Hudson Railroad during its construction 
+	3	in
+	4	land
+			sense:	land.n.01
+	5	,
+	6	as
+	7	evidenced
+			sense:	attest.v.01
+			prop:	evidence.01
+			V		7-7	evidenced 
+			N-ARG-A0		8-29	by the fact that his widow and children sold some of their holdings to the Delaware and Hudson Railroad during its construction 
+	8	by
+	9	the
+	10	fact
+			sense:	fact.n.01
+	11	that
+	12	his
+			coref:	IDENT			3	12-15	his widow and children 
+			coref:	IDENT			4	12-12	his 
+	13	widow
+			sense:	widow.n.01
+	14	and
+	15	children
+			sense:	child.n.02
+	16	sold
+			sense:	sell.v.01
+			prop:	sell.01
+			V		16-16	sold 
+			N-ARG-A0		12-15	his widow and children 
+			N-ARG-A1		17-20	some of their holdings 
+			N-ARG-A2		21-26	to the Delaware and Hudson Railroad 
+			N-ARGM-TMP		27-29	during its construction 
+	17	some
+	18	of
+	19	their
+			coref:	IDENT			3	19-19	their 
+	20	holdings
+			sense:	property.n.01
+	21	to
+	22	the
+	23	Delaware
+			name:	STATE_OR_PROVINCE				23-23	Delaware 
+	24	and
+	25	Hudson
+			name:	ORGANIZATION				25-26	Hudson Railroad 
+	26	Railroad
+	27	during
+	28	its
+	29	construction
+			sense:	construction.n.01
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He held several local offices , including Associate Judge of the Warren County Court .
+
+
+Treebanked sentence:
+--------------------
+He held several local offices , including Associate Judge of the Warren County Court . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD held)
+      (NP
+        (NP (JJ several) (JJ local) (NNS offices))
+        (, ,)
+        (PP (VBG including)
+          (NP
+            (NP
+              (NML (NN Associate))
+              (NNP Judge))
+            (PP (IN of)
+              (NP (DT the) (NNP Warren) (NNP County) (NNP Court)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			4	0-0	He 
+	1	held
+			sense:	bear.v.11
+			prop:	hold.01
+			V		1-1	held 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-13	several local offices , including Associate Judge of the Warren County Court 
+	2	several
+			sense:	several.s.01
+	3	local
+			sense:	local.a.01
+	4	offices
+			sense:	position.n.06
+	5	,
+	6	including
+			sense:	include.v.01
+			prop:	include.01
+			V		6-6	including 
+			N-ARG-A2		2-4	several local offices 
+			N-ARG-A1		7-13	Associate Judge of the Warren County Court 
+	7	Associate
+			sense:	associate.n.03
+	8	Judge
+			name:	TITLE				8-8	Judge 
+	9	of
+	10	the
+	11	Warren
+			name:	ORGANIZATION				11-13	Warren County Court 
+	12	County
+	13	Court
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Thurman was elected as a Whig to the Thirty - first Congress ( March 4 , 1849 – March 3 , 1851 ) .
+
+
+Treebanked sentence:
+--------------------
+Thurman was elected as a Whig to the Thirty - first Congress ( March 4 , 1849 – March 3 , 1851 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Thurman))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (PP (IN as)
+          (NP (DT a) (NNP Whig)))
+        (PP (IN to)
+          (NP (DT the)
+            (ADJP
+              (NP (CD Thirty))
+              (HYPH -) (JJ first))
+            (NNP Congress)))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (NNP March) (CD 4) (, ,) (CD 1849))
+            (PP (SYM –)
+              (NP (NNP March) (CD 3) (, ,) (CD 1851))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Thurman
+			coref:	IDENT			4	0-0	Thurman 
+			name:	PERSON				0-0	Thurman 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A1		0-0	Thurman 
+			N-ARG-A2		3-22	as a Whig to the Thirty - first Congress ( March 4 , 1849 – March 3 , 1851 ) 
+	3	as
+	4	a
+	5	Whig
+			name:	IDEOLOGY				5-5	Whig 
+	6	to
+	7	the
+	8	Thirty
+			name:	NUMBER				8-8	Thirty 
+	9	-
+	10	first
+			name:	ORDINAL				10-10	first 
+			sense:	first.s.02
+	11	Congress
+			name:	ORGANIZATION				11-11	Congress 
+	12	(
+	13	March
+			name:	DATE				13-16	March 4 , 1849 
+	14	4
+	15	,
+	16	1849
+	17	–
+	18	March
+			name:	DATE				18-21	March 3 , 1851 
+	19	3
+	20	,
+	21	1851
+	22	)
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He declined to be a candidate for renomination in 1850 .
+
+
+Treebanked sentence:
+--------------------
+He declined to be a candidate for renomination in 1850 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD declined)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (NP
+              (NP (DT a) (NN candidate))
+              (PP (IN for)
+                (NP
+                  (NP (NN renomination))
+                  (PP (IN in)
+                    (NP (CD 1850))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			4	0-0	He 
+	1	declined
+			sense:	refuse.v.01
+			prop:	decline.02
+			V		1-1	declined 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-9	to be a candidate for renomination in 1850 
+	2	to
+	3	be
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	be 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		4-7	a candidate for renomination 
+			N-ARGM-TMP		8-9	in 1850 
+	4	a
+	5	candidate
+			name:	TITLE				5-5	candidate 
+			sense:	campaigner.n.01
+	6	for
+	7	renomination
+	8	in
+	9	1850
+			name:	DATE				9-9	1850 
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After leaving Congress Thurman returned to managing his farm and other interests .
+
+
+Treebanked sentence:
+--------------------
+After leaving Congress Thurman returned to managing his farm and other interests . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG leaving))))
+    (NP (NNP Congress) (NNP Thurman))
+    (VP (VBD returned)
+      (PP (IN to)
+        (S
+          (VP (VBG managing)
+            (NP
+              (NP (PRP$ his) (NN farm))
+              (CC and)
+              (NP (JJ other) (NNS interests)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	leaving
+			sense:	leave.v.08
+			prop:	leave.01
+			V		1-1	leaving 
+			N-ARG-A1		2-2	Congress 
+			N-ARG-A0		3-3	Thurman 
+	2	Congress
+			coref:	IDENT			4	2-3	Congress Thurman 
+			name:	ORGANIZATION				2-2	Congress 
+	3	Thurman
+			name:	PERSON				3-3	Thurman 
+	4	returned
+			sense:	revert.v.01
+			prop:	return.01
+			V		4-4	returned 
+			N-ARGM-TMP		0-2	After leaving Congress 
+			N-ARG-A1		3-3	Thurman 
+			N-ARG-A4		5-11	to managing his farm and other interests 
+	5	to
+	6	managing
+			sense:	oversee.v.01
+			prop:	manage.01
+			V		6-6	managing 
+			N-ARG-A0		3-3	Thurman 
+			N-ARG-A1		7-11	his farm and other interests 
+	7	his
+			coref:	IDENT			4	7-7	his 
+	8	farm
+			sense:	farm.n.01
+	9	and
+	10	other
+			sense:	other.a.01
+	11	interests
+			sense:	interest.n.05
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He died at his home near Friends Lake in Chestertown on July 24 , 1854 .
+
+
+Treebanked sentence:
+--------------------
+He died at his home near Friends Lake in Chestertown on July 24 , 1854 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD died)
+      (PP (IN at)
+        (NP
+          (NP (PRP$ his) (NN home))
+          (PP (IN near)
+            (NP
+              (NP (NNS Friends))
+              (NP (NNP Lake))))))
+      (PP (IN in)
+        (NP (NNP Chestertown)))
+      (PP (IN on)
+        (NP (NNP July) (CD 24) (, ,) (CD 1854))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			4	0-0	He 
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		2-9	at his home near Friends Lake in Chestertown 
+			N-ARGM-TMP		10-14	on July 24 , 1854 
+	2	at
+	3	his
+			coref:	IDENT			4	3-3	his 
+	4	home
+			sense:	home.n.01
+	5	near
+	6	Friends
+			name:	LOCATION				6-7	Friends Lake 
+			sense:	friend.n.05
+	7	Lake
+	8	in
+	9	Chestertown
+			coref:	IDENT			1	9-9	Chestertown 
+			name:	LOCATION				9-9	Chestertown 
+	10	on
+	11	July
+			coref:	IDENT			2	11-14	July 24 , 1854 
+			name:	DATE				11-14	July 24 , 1854 
+	12	24
+	13	,
+	14	1854
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was interred in the family cemetery .
+
+
+Treebanked sentence:
+--------------------
+He was interred in the family cemetery . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN interred)
+        (PP (IN in)
+          (NP (DT the) (NN family) (NN cemetery)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			4	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	interred
+			sense:	bury.v.02
+			prop:	enter.01
+			V		2-2	interred 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-6	in the family cemetery 
+	3	in
+	4	the
+	5	family
+			sense:	family.n.01
+	6	cemetery
+			sense:	cemetery.n.01
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was reinterred in Oakwood Cemetery , Troy , New York .
+
+
+Treebanked sentence:
+--------------------
+He was reinterred in Oakwood Cemetery , Troy , New York . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN reinterred)
+        (PP (IN in)
+          (NP (NNP Oakwood) (NNP Cemetery) (, ,) (NNP Troy) (, ,) (NNP New) (NNP York)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			4	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	reinterred
+			prop:	reinforce.01
+			V		2-2	reinterred 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-10	in Oakwood Cemetery , Troy , New York 
+	3	in
+	4	Oakwood
+			name:	LOCATION				4-5	Oakwood Cemetery 
+	5	Cemetery
+	6	,
+	7	Troy
+	8	,
+	9	New
+			name:	STATE_OR_PROVINCE				9-10	New York 
+	10	York
+	11	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.2-4	New York City 
+				0.19-20	New York 
+	Chain 1 (IDENT)
+				2.3-3	Chestertown 
+				9.9-9	Chestertown 
+	Chain 2 (IDENT)
+				0.9-12	July 24 , 1854 
+				9.11-14	July 24 , 1854 
+	Chain 3 (IDENT)
+				4.12-15	his widow and children 
+				4.19-19	their 
+	Chain 4 (IDENT)
+				0.0-2	John Richardson Thurman 
+				1.6-6	Thurman 
+				2.0-0	He 
+				3.0-0	He 
+				4.0-0	He 
+				4.12-12	his 
+				5.0-0	He 
+				6.0-0	Thurman 
+				7.0-0	He 
+				8.2-3	Congress Thurman 
+				8.7-7	his 
+				9.0-0	He 
+				9.3-3	his 
+				10.0-0	He 
+				11.0-0	He 
+

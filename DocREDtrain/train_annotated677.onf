@@ -1,0 +1,526 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sporhase v. Nebraska ex rel .
+
+
+Treebanked sentence:
+--------------------
+Sporhase v. Nebraska ex rel . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP
+      (NP (NN Sporhase))
+      (PP (IN v.)
+        (NP
+          (NP (NNP Nebraska))
+          (ADVP (FW ex)))))
+    (NP (NN rel))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sporhase
+	1	v.
+	2	Nebraska
+			coref:	IDENT			0	2-2	Nebraska 
+			name:	STATE_OR_PROVINCE				2-2	Nebraska 
+	3	ex
+	4	rel
+	5	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Douglas , 458 U.S. 941 ( 1982 ) , was a case in which the United States Supreme Court decided that a Nebraska statute forbidding commercial exportation of water from Nebraska was unconstitutional in that it violated the dormant commerce clause .
+
+
+Treebanked sentence:
+--------------------
+Douglas , 458 U.S. 941 ( 1982 ) , was a case in which the United States Supreme Court decided that a Nebraska statute forbidding commercial exportation of water from Nebraska was unconstitutional in that it violated the dormant commerce clause . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Douglas))
+      (, ,)
+      (NP (CD 458)
+        (NML (NNP U.S.) (CD 941))
+        (PRN (-LRB- -LRB-)
+          (NP (CD 1982))
+          (-RRB- -RRB-)))
+      (, ,))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN case))
+        (SBAR
+          (WHPP (IN in)
+            (WHNP (WDT which)))
+          (S
+            (NP (DT the) (NNP United) (NNP States) (NNP Supreme) (NNP Court))
+            (VP (VBD decided)
+              (SBAR (IN that)
+                (S
+                  (NP
+                    (NP (DT a) (NNP Nebraska) (NN statute))
+                    (VP (VBG forbidding)
+                      (NP
+                        (NP (JJ commercial) (NN exportation))
+                        (PP (IN of)
+                          (NP (NN water))))
+                      (PP (IN from)
+                        (NP (NNP Nebraska)))))
+                  (VP (VBD was)
+                    (ADJP (JJ unconstitutional)
+                      (PP (IN in)
+                        (SBAR (IN that)
+                          (S
+                            (NP (PRP it))
+                            (VP (VBD violated)
+                              (NP (DT the) (JJ dormant) (NN commerce) (NN clause)))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Douglas
+			name:	PERSON				0-0	Douglas 
+	1	,
+	2	458
+			name:	NUMBER				2-2	458 
+	3	U.S.
+			name:	COUNTRY				3-3	U.S. 
+	4	941
+			name:	NUMBER				4-4	941 
+	5	(
+	6	1982
+			name:	DATE				6-6	1982 
+	7	)
+	8	,
+	9	was
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	was 
+			N-ARG-A1		0-8	Douglas , 458 U.S. 941 ( 1982 ) , 
+			N-ARG-A2		10-40	a case in which the United States Supreme Court decided that a Nebraska statute forbidding commercial exportation of water from Nebraska was unconstitutional in that it violated the dormant commerce clause 
+	10	a
+	11	case
+			sense:	lawsuit.n.01
+	12	in
+	13	which
+	14	the
+			coref:	IDENT			2	14-18	the United States Supreme Court 
+	15	United
+			name:	ORGANIZATION				15-18	United States Supreme Court 
+	16	States
+	17	Supreme
+	18	Court
+	19	decided
+			sense:	decide.v.01
+			prop:	decide.01
+			V		19-19	decided 
+			N-ARGM-LOC		10-11	a case 
+			R-ARGM-LOC		12-13	in which 
+			N-ARG-A0		14-18	the United States Supreme Court 
+			N-ARG-A1		20-40	that a Nebraska statute forbidding commercial exportation of water from Nebraska was unconstitutional in that it violated the dormant commerce clause 
+	20	that
+	21	a
+	22	Nebraska
+			coref:	IDENT			0	22-22	Nebraska 
+			name:	STATE_OR_PROVINCE				22-22	Nebraska 
+	23	statute
+			sense:	legislative_act.n.01
+	24	forbidding
+			sense:	forbid.v.01
+			prop:	forbid.01
+			V		24-24	forbidding 
+			N-ARG-A0		21-23	a Nebraska statute 
+			N-ARG-A1		25-30	commercial exportation of water from Nebraska 
+	25	commercial
+			sense:	commercial.a.01
+	26	exportation
+			sense:	exporting.n.01
+	27	of
+	28	water
+			sense:	water.n.01
+	29	from
+	30	Nebraska
+			coref:	IDENT			0	30-30	Nebraska 
+			name:	STATE_OR_PROVINCE				30-30	Nebraska 
+	31	was
+			sense:	be.v.01
+			prop:	be.01
+			V		31-31	was 
+			N-ARG-A1		21-30	a Nebraska statute forbidding commercial exportation of water from Nebraska 
+			N-ARG-A2		32-32	unconstitutional 
+			N-ARGM-MNR		33-40	in that it violated the dormant commerce clause 
+	32	unconstitutional
+			sense:	unconstitutional.a.01
+	33	in
+	34	that
+	35	it
+			coref:	IDENT			2	35-35	it 
+	36	violated
+			sense:	violate.v.01
+			prop:	violate.01
+			V		36-36	violated 
+			N-ARG-A0		35-35	it 
+			N-ARG-A1		37-40	the dormant commerce clause 
+	37	the
+	38	dormant
+			sense:	abeyant.s.01
+	39	commerce
+			sense:	commerce.n.01
+	40	clause
+			sense:	article.n.03
+	41	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The boundary between the states of Nebraska and Colorado passed through a farm owned by Sporhase .
+
+
+Treebanked sentence:
+--------------------
+The boundary between the states of Nebraska and Colorado passed through a farm owned by Sporhase . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN boundary))
+      (PP (IN between)
+        (NP
+          (NP (DT the) (NNS states))
+          (PP (IN of)
+            (NP (NNP Nebraska)
+              (CC and)
+              (NNP Colorado))))))
+    (VP (VBD passed)
+      (PP (IN through)
+        (NP
+          (NP (DT a) (NN farm))
+          (VP (VBN owned)
+            (PP (IN by)
+              (NP (NN Sporhase)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	boundary
+			sense:	boundary.n.01
+	2	between
+	3	the
+			coref:	IDENT			1	3-8	the states of Nebraska and Colorado 
+			name:	COUNTRY				3-4	the states 
+	4	states
+			sense:	state.n.01
+	5	of
+	6	Nebraska
+			coref:	IDENT			0	6-6	Nebraska 
+			name:	STATE_OR_PROVINCE				6-6	Nebraska 
+	7	and
+	8	Colorado
+			name:	STATE_OR_PROVINCE				8-8	Colorado 
+	9	passed
+			sense:	run.v.03
+			prop:	pass.03
+			V		9-9	passed 
+			N-ARG-A1		0-8	The boundary between the states of Nebraska and Colorado 
+			N-ARGM-DIR		10-15	through a farm owned by Sporhase 
+	10	through
+	11	a
+	12	farm
+			sense:	farm.n.01
+	13	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		13-13	owned 
+			N-ARG-A1		11-12	a farm 
+			N-ARG-A0		14-15	by Sporhase 
+	14	by
+	15	Sporhase
+			name:	PERSON				15-15	Sporhase 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He drilled a well in Nebraska and used the water to irrigate his land on both sides of the boundary .
+
+
+Treebanked sentence:
+--------------------
+He drilled a well in Nebraska and used the water to irrigate his land on both sides of the boundary . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD drilled)
+        (ADVP (DT a) (RB well))
+        (PP (IN in)
+          (NP (NNP Nebraska))))
+      (CC and)
+      (VP (VBD used)
+        (NP (DT the) (NN water))
+        (S
+          (VP (TO to)
+            (VP (VB irrigate)
+              (NP (PRP$ his) (NN land))
+              (PP (IN on)
+                (NP
+                  (NP (DT both) (NNS sides))
+                  (PP (IN of)
+                    (NP (DT the) (NN boundary))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			3	0-0	He 
+	1	drilled
+			sense:	bore.v.02
+			prop:	drill.01
+			V		1-1	drilled 
+			N-ARG-A0		0-0	He 
+			N-ARG-A4		2-3	a well 
+			N-ARGM-LOC		4-5	in Nebraska 
+	2	a
+	3	well
+			sense:	well.r.01
+	4	in
+	5	Nebraska
+			coref:	IDENT			0	5-5	Nebraska 
+			name:	STATE_OR_PROVINCE				5-5	Nebraska 
+	6	and
+	7	used
+			sense:	use.v.01
+			prop:	use.01
+			V		7-7	used 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		8-9	the water 
+			N-ARG-A2		10-19	to irrigate his land on both sides of the boundary 
+	8	the
+	9	water
+			sense:	water.n.01
+	10	to
+	11	irrigate
+			sense:	water.v.01
+			prop:	irrigate.01
+			V		11-11	irrigate 
+			N-ARG-A0		8-9	the water 
+			N-ARG-A1		12-19	his land on both sides of the boundary 
+	12	his
+			coref:	IDENT			3	12-12	his 
+	13	land
+			sense:	land.n.01
+	14	on
+	15	both
+	16	sides
+			sense:	side.n.01
+	17	of
+	18	the
+	19	boundary
+			sense:	boundary.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Under the 11th Amendment , he could not sue the state of Nebraska in a federal district court ; consequently his suit had to proceed in the state courts in Nebraska until he petitioned the United States Supreme Court to review it .
+
+
+Treebanked sentence:
+--------------------
+Under the 11th Amendment , he could not sue the state of Nebraska in a federal district court ; consequently his suit had to proceed in the state courts in Nebraska until he petitioned the United States Supreme Court to review it . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN Under)
+        (NP (DT the) (JJ 11th) (NN Amendment)))
+      (, ,)
+      (NP (PRP he))
+      (VP (MD could) (RB not)
+        (VP (VB sue)
+          (NP
+            (NP (DT the) (NN state))
+            (PP (IN of)
+              (NP (NNP Nebraska))))
+          (PP (IN in)
+            (NP (DT a) (JJ federal) (NN district) (NN court))))))
+    (: ;)
+    (S
+      (ADVP (RB consequently))
+      (NP (PRP$ his) (NN suit))
+      (VP (VBD had)
+        (S
+          (VP (TO to)
+            (VP (VB proceed)
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NN state) (NNS courts))
+                  (PP (IN in)
+                    (NP (NNP Nebraska)))))
+              (SBAR (IN until)
+                (S
+                  (NP (PRP he))
+                  (VP (VBD petitioned)
+                    (NP (DT the) (NNP United) (NNP States) (NNP Supreme) (NNP Court))
+                    (S
+                      (VP (TO to)
+                        (VP (VB review)
+                          (NP (PRP it)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Under
+	1	the
+	2	11th
+			name:	ORDINAL				2-2	11th 
+			sense:	eleventh.s.01
+	3	Amendment
+			sense:	amendment.n.02
+	4	,
+	5	he
+			coref:	IDENT			3	5-5	he 
+	6	could
+	7	not
+			sense:	not.r.01
+	8	sue
+			sense:	action.v.01
+			prop:	sue.01
+			V		8-8	sue 
+			N-ARGM-ADV		0-3	Under the 11th Amendment 
+			N-ARG-A0		5-5	he 
+			N-ARGM-MOD		6-6	could 
+			N-ARGM-NEG		7-7	not 
+			N-ARG-A1		9-12	the state of Nebraska 
+			N-ARGM-LOC		13-17	in a federal district court 
+	9	the
+			coref:	IDENT			1	9-12	the state of Nebraska 
+	10	state
+			sense:	state.n.01
+	11	of
+	12	Nebraska
+			coref:	IDENT			0	12-12	Nebraska 
+			name:	STATE_OR_PROVINCE				12-12	Nebraska 
+	13	in
+	14	a
+	15	federal
+			sense:	federal.s.01
+	16	district
+			sense:	district.n.01
+	17	court
+			sense:	court.n.01
+	18	;
+	19	consequently
+			sense:	consequently.r.01
+	20	his
+			coref:	IDENT			3	20-20	his 
+	21	suit
+			sense:	lawsuit.n.01
+	22	had
+			sense:	have.v.11
+			prop:	have.02
+			V		22-22	had 
+	23	to
+	24	proceed
+			sense:	go.v.02
+			prop:	proceed.01
+			V		24-24	proceed 
+			N-ARG-A1		20-21	his suit 
+			N-ARGM-LOC		25-30	in the state courts in Nebraska 
+			N-ARGM-TMP		31-41	until he petitioned the United States Supreme Court to review it 
+	25	in
+	26	the
+	27	state
+			sense:	state.n.01
+	28	courts
+			sense:	court.n.01
+	29	in
+	30	Nebraska
+			coref:	IDENT			0	30-30	Nebraska 
+			name:	STATE_OR_PROVINCE				30-30	Nebraska 
+	31	until
+	32	he
+			coref:	IDENT			3	32-32	he 
+	33	petitioned
+			sense:	petition.v.01
+			prop:	petition.01
+			V		33-33	petitioned 
+			N-ARG-A0		32-32	he 
+			N-ARG-A1		39-41	to review it 
+	34	the
+			coref:	IDENT			2	34-38	the United States Supreme Court 
+	35	United
+			name:	ORGANIZATION				35-38	United States Supreme Court 
+	36	States
+	37	Supreme
+	38	Court
+	39	to
+	40	review
+			sense:	review.v.02
+			prop:	review.01
+			V		40-40	review 
+			N-ARG-A0		34-38	the United States Supreme Court 
+			N-ARG-A1		41-41	it 
+	41	it
+			coref:	IDENT			2	41-41	it 
+	42	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.2-2	Nebraska 
+				1.22-22	Nebraska 
+				1.30-30	Nebraska 
+				2.6-6	Nebraska 
+				3.5-5	Nebraska 
+				4.12-12	Nebraska 
+				4.30-30	Nebraska 
+	Chain 1 (IDENT)
+				2.3-8	the states of Nebraska and Colorado 
+				4.9-12	the state of Nebraska 
+	Chain 2 (IDENT)
+				1.14-18	the United States Supreme Court 
+				1.35-35	it 
+				4.34-38	the United States Supreme Court 
+				4.41-41	it 
+	Chain 3 (IDENT)
+				3.0-0	He 
+				3.12-12	his 
+				4.5-5	he 
+				4.20-20	his 
+				4.32-32	he 
+

@@ -1,0 +1,727 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+John Harvey Tolan (; January 15 , 1877 – June 30 , 1947 ) was a U.S. Representative from California .
+
+
+Treebanked sentence:
+--------------------
+John Harvey Tolan ( ; January 15 , 1877 – June 30 , 1947 ) was a U.S. Representative from California . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP John) (NNP Harvey) (NNP Tolan))
+      (NP (-LRB- -LRB-)
+        (PRN (: ;)
+          (NP
+            (NP (NNP January) (CD 15) (, ,) (CD 1877))
+            (PP (SYM –)
+              (NP (NNP June) (CD 30) (, ,) (CD 1947)))))
+        (-RRB- -RRB-)))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NNP U.S.) (NNP Representative))
+        (PP (IN from)
+          (NP (NNP California)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	John
+			name:	PERSON				0-2	John Harvey Tolan 
+	1	Harvey
+	2	Tolan
+	3	(
+	4	;
+	5	January
+			name:	DATE				5-8	January 15 , 1877 
+	6	15
+	7	,
+	8	1877
+	9	–
+	10	June
+			coref:	IDENT			2	10-13	June 30 , 1947 
+			name:	DATE				10-13	June 30 , 1947 
+	11	30
+	12	,
+	13	1947
+	14	)
+	15	was
+			sense:	be.v.08
+			prop:	be.01
+			V		15-15	was 
+			N-ARG-A1		0-14	John Harvey Tolan ( ; January 15 , 1877 – June 30 , 1947 ) 
+			N-ARG-A2		16-20	a U.S. Representative from California 
+	16	a
+	17	U.S.
+			name:	COUNTRY				17-17	U.S. 
+	18	Representative
+			name:	TITLE				18-18	Representative 
+	19	from
+	20	California
+			coref:	IDENT			3	20-20	California 
+			name:	STATE_OR_PROVINCE				20-20	California 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in St. Peter , Minnesota , Tolan attended the public schools .
+
+
+Treebanked sentence:
+--------------------
+Born in St. Peter , Minnesota , Tolan attended the public schools . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP
+            (NP (NNP St.) (NNP Peter))
+            (, ,)
+            (NP (NNP Minnesota))))))
+    (, ,)
+    (NP (NNP Tolan))
+    (VP (VBD attended)
+      (NP (DT the) (JJ public) (NNS schools)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-5	in St. Peter , Minnesota 
+			N-ARG-A1		7-7	Tolan 
+	1	in
+	2	St.
+			name:	LOCATION				2-3	St. Peter 
+	3	Peter
+	4	,
+	5	Minnesota
+			name:	STATE_OR_PROVINCE				5-5	Minnesota 
+	6	,
+	7	Tolan
+			name:	PERSON				7-7	Tolan 
+	8	attended
+			sense:	attend.v.01
+			prop:	attend.01
+			V		8-8	attended 
+			R-ARG-A0		0-5	Born in St. Peter , Minnesota 
+			N-ARG-A0		7-7	Tolan 
+			N-ARG-A1		9-11	the public schools 
+	9	the
+	10	public
+			sense:	public.a.01
+	11	schools
+			sense:	school.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He moved to Anaconda , Montana , in 1897 .
+
+
+Treebanked sentence:
+--------------------
+He moved to Anaconda , Montana , in 1897 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD moved)
+      (PP (IN to)
+        (NP (NNP Anaconda) (, ,) (NNP Montana) (, ,)))
+      (PP (IN in)
+        (NP (CD 1897))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		1-1	moved 
+			N-ARG-A0		0-0	He 
+			N-ARG-A2		2-5	to Anaconda , Montana 
+			N-ARGM-TMP		7-8	in 1897 
+	2	to
+	3	Anaconda
+			coref:	IDENT			1	3-3	Anaconda 
+			name:	CITY				3-3	Anaconda 
+	4	,
+	5	Montana
+			name:	STATE_OR_PROVINCE				5-5	Montana 
+	6	,
+	7	in
+	8	1897
+			name:	DATE				8-8	1897 
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was graduated from the law department of the University of Kansas at Lawrence in 1902 .
+
+
+Treebanked sentence:
+--------------------
+He was graduated from the law department of the University of Kansas at Lawrence in 1902 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN graduated)
+        (PP (IN from)
+          (NP
+            (NP (DT the) (NN law) (NN department))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNP University))
+                (PP (IN of)
+                  (NP (NNP Kansas)))))))
+        (PP (IN at)
+          (NP (NNP Lawrence)))
+        (PP (IN in)
+          (NP (CD 1902)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	graduated
+			sense:	graduate.v.02
+			prop:	graduate.01
+			V		2-2	graduated 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		3-13	from the law department of the University of Kansas at Lawrence 
+			N-ARGM-TMP		14-15	in 1902 
+	3	from
+	4	the
+	5	law
+			sense:	law.n.06
+	6	department
+			sense:	department.n.01
+	7	of
+	8	the
+	9	University
+			name:	ORGANIZATION				9-11	University of Kansas 
+	10	of
+	11	Kansas
+	12	at
+	13	Lawrence
+			name:	CITY				13-13	Lawrence 
+	14	in
+	15	1902
+			name:	DATE				15-15	1902 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was admitted to the bar the same year and commenced the practice of law in Anaconda , Montana and served as attorney of Deer Lodge County , Montana from 1904 to 1906 .
+
+
+Treebanked sentence:
+--------------------
+He was admitted to the bar the same year and commenced the practice of law in Anaconda , Montana and served as attorney of Deer Lodge County , Montana from 1904 to 1906 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN admitted)
+          (PP (IN to)
+            (NP (DT the) (NN bar)))
+          (NP-TMP (DT the) (JJ same) (NN year))))
+      (CC and)
+      (VP (VBD commenced)
+        (NP
+          (NP (DT the) (NN practice))
+          (PP (IN of)
+            (NP (NN law))))
+        (PP (IN in)
+          (NP (NNP Anaconda) (, ,) (NNP Montana))))
+      (CC and)
+      (VP (VBD served)
+        (PP (IN as)
+          (NP
+            (NP (NN attorney))
+            (PP (IN of)
+              (NP
+                (NP
+                  (NP (NNS Deer))
+                  (NP (NNP Lodge) (NNP County)))
+                (, ,)
+                (NP
+                  (NP (NNP Montana))
+                  (PP (IN from)
+                    (NP (CD 1904))))))))
+        (PP (IN to)
+          (NP (CD 1906)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	admitted
+			sense:	accept.v.05
+			prop:	admit.02
+			V		2-2	admitted 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		3-5	to the bar 
+			N-ARGM-TMP		6-8	the same year 
+	3	to
+	4	the
+	5	bar
+			sense:	legal_profession.n.01
+	6	the
+			name:	DATE				6-8	the same year 
+	7	same
+			sense:	same.a.01
+	8	year
+			sense:	year.n.01
+	9	and
+	10	commenced
+			sense:	get_down.v.07
+			prop:	commence.01
+			V		10-10	commenced 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		11-14	the practice of law 
+			N-ARGM-LOC		15-18	in Anaconda , Montana 
+	11	the
+			coref:	IDENT			0	11-14	the practice of law 
+	12	practice
+			sense:	practice.n.04
+	13	of
+	14	law
+			sense:	law.n.06
+	15	in
+	16	Anaconda
+			coref:	IDENT			1	16-16	Anaconda 
+			name:	CITY				16-16	Anaconda 
+	17	,
+	18	Montana
+			name:	STATE_OR_PROVINCE				18-18	Montana 
+	19	and
+	20	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		20-20	served 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		21-28	as attorney of Deer Lodge County , Montana 
+			N-ARGM-TMP		29-32	from 1904 to 1906 
+	21	as
+	22	attorney
+			name:	TITLE				22-22	attorney 
+			sense:	lawyer.n.01
+	23	of
+	24	Deer
+			sense:	deer.n.01
+	25	Lodge
+	26	County
+	27	,
+	28	Montana
+			name:	STATE_OR_PROVINCE				28-28	Montana 
+	29	from
+	30	1904
+			name:	DATE				30-32	1904 to 1906 
+	31	to
+	32	1906
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He moved to Oakland , California , in 1914 and continued the practice of law .
+
+
+Treebanked sentence:
+--------------------
+He moved to Oakland , California , in 1914 and continued the practice of law . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD moved)
+        (PP (IN to)
+          (NP (NNP Oakland) (, ,) (NNP California) (, ,)))
+        (PP (IN in)
+          (NP (CD 1914))))
+      (CC and)
+      (VP (VBD continued)
+        (NP
+          (NP (DT the) (NN practice))
+          (PP (IN of)
+            (NP (NN law))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		1-1	moved 
+			N-ARG-A0		0-0	He 
+			N-ARG-A2		2-5	to Oakland , California 
+			N-ARGM-TMP		7-8	in 1914 
+	2	to
+	3	Oakland
+			name:	CITY				3-3	Oakland 
+	4	,
+	5	California
+			name:	STATE_OR_PROVINCE				5-5	California 
+	6	,
+	7	in
+	8	1914
+			name:	DATE				8-8	1914 
+	9	and
+	10	continued
+			sense:	continue.v.01
+			prop:	continue.01
+			V		10-10	continued 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		11-14	the practice of law 
+	11	the
+			coref:	IDENT			0	11-14	the practice of law 
+	12	practice
+			sense:	practice.n.04
+	13	of
+	14	law
+			sense:	law.n.06
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Tolan was elected as a Democrat to the Seventy - fourth and to the five succeeding Congresses ( January 3 , 1935 – January 3 , 1947 ) .
+
+
+Treebanked sentence:
+--------------------
+Tolan was elected as a Democrat to the Seventy - fourth and to the five succeeding Congresses ( January 3 , 1935 – January 3 , 1947 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Tolan))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (PP (IN as)
+          (NP (DT a) (NNP Democrat)))
+        (PP
+          (PP (IN to)
+            (NP (DT the)
+              (ADJP
+                (NP (CD Seventy))
+                (HYPH -) (JJ fourth))))
+          (CC and)
+          (PP (IN to)
+            (NP
+              (NP (DT the) (CD five))
+              (VP (VBG succeeding)
+                (NP (NNPS Congresses))))))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (NNP January) (CD 3) (, ,) (CD 1935))
+            (PP (SYM –)
+              (NP (NNP January) (CD 3) (, ,) (CD 1947))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Tolan
+			name:	PERSON				0-0	Tolan 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A1		0-0	Tolan 
+			N-ARGM-PRD		3-5	as a Democrat 
+			N-ARG-A2		6-27	to the Seventy - fourth and to the five succeeding Congresses ( January 3 , 1935 – January 3 , 1947 ) 
+	3	as
+	4	a
+	5	Democrat
+			name:	MISC				5-5	Democrat 
+	6	to
+	7	the
+	8	Seventy
+			name:	NUMBER				8-8	Seventy 
+	9	-
+	10	fourth
+			name:	ORDINAL				10-10	fourth 
+			sense:	fourth.s.01
+	11	and
+	12	to
+	13	the
+	14	five
+			name:	NUMBER				14-14	five 
+	15	succeeding
+			sense:	succeed.v.02
+			prop:	succeed.03
+			V		15-15	succeeding 
+			N-ARG-A1		16-16	Congresses 
+	16	Congresses
+	17	(
+	18	January
+			name:	DATE				18-21	January 3 , 1935 
+	19	3
+	20	,
+	21	1935
+	22	–
+	23	January
+			name:	DATE				23-26	January 3 , 1947 
+	24	3
+	25	,
+	26	1947
+	27	)
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was not a candidate for renomination in 1946 to the Eightieth Congress .
+
+
+Treebanked sentence:
+--------------------
+He was not a candidate for renomination in 1946 to the Eightieth Congress . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was) (RB not)
+      (NP
+        (NP (DT a) (NN candidate))
+        (PP (IN for)
+          (NP
+            (NP (NN renomination))
+            (PP (IN in)
+              (NP (CD 1946))))))
+      (PP (IN to)
+        (NP (DT the) (NNP Eightieth) (NNP Congress))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARGM-NEG		2-2	not 
+			N-ARG-A2		3-12	a candidate for renomination in 1946 to the Eightieth Congress 
+	2	not
+			sense:	not.r.01
+	3	a
+	4	candidate
+			name:	TITLE				4-4	candidate 
+			sense:	campaigner.n.01
+	5	for
+	6	renomination
+	7	in
+	8	1946
+			name:	DATE				8-8	1946 
+	9	to
+	10	the
+	11	Eightieth
+			name:	ORGANIZATION				11-12	Eightieth Congress 
+	12	Congress
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He died in Westwood , Los Angeles , California , on June 30 , 1947 .
+
+
+Treebanked sentence:
+--------------------
+He died in Westwood , Los Angeles , California , on June 30 , 1947 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD died)
+      (PP (IN in)
+        (NP
+          (NP (NNP Westwood))
+          (, ,)
+          (NP
+            (NML (NNP Los) (NNP Angeles))
+            (, ,) (NNP California))
+          (, ,)))
+      (PP (IN on)
+        (NP (NNP June) (CD 30) (, ,) (CD 1947))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		2-8	in Westwood , Los Angeles , California 
+			N-ARGM-TMP		10-14	on June 30 , 1947 
+	2	in
+	3	Westwood
+			name:	CITY				3-3	Westwood 
+	4	,
+	5	Los
+			coref:	IDENT			3	5-8	Los Angeles , California 
+			name:	CITY				5-6	Los Angeles 
+	6	Angeles
+	7	,
+	8	California
+			name:	STATE_OR_PROVINCE				8-8	California 
+	9	,
+	10	on
+	11	June
+			coref:	IDENT			2	11-14	June 30 , 1947 
+			name:	DATE				11-14	June 30 , 1947 
+	12	30
+	13	,
+	14	1947
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was interred at Holy Sepulchre Cemetery , Hayward , California .
+
+
+Treebanked sentence:
+--------------------
+He was interred at Holy Sepulchre Cemetery , Hayward , California . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN interred)
+        (PP (IN at)
+          (NP
+            (NP (NNP Holy) (NNP Sepulchre) (NNP Cemetery))
+            (, ,)
+            (NP (NNP Hayward) (, ,) (NNP California))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	interred
+			sense:	bury.v.02
+			prop:	enter.01
+			V		2-2	interred 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-10	at Holy Sepulchre Cemetery , Hayward , California 
+	3	at
+	4	Holy
+	5	Sepulchre
+	6	Cemetery
+	7	,
+	8	Hayward
+			name:	CITY				8-8	Hayward 
+	9	,
+	10	California
+			coref:	IDENT			3	10-10	California 
+			name:	STATE_OR_PROVINCE				10-10	California 
+	11	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.11-14	the practice of law 
+				5.11-14	the practice of law 
+	Chain 1 (IDENT)
+				2.3-3	Anaconda 
+				4.16-16	Anaconda 
+	Chain 2 (IDENT)
+				0.10-13	June 30 , 1947 
+				8.11-14	June 30 , 1947 
+	Chain 3 (IDENT)
+				8.5-8	Los Angeles , California 
+				0.20-20	California 
+				9.10-10	California 
+

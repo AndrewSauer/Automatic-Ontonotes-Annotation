@@ -1,0 +1,765 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Wild Wadi Water Park is an outdoor water park in Dubai , United Arab Emirates .
+
+
+Treebanked sentence:
+--------------------
+The Wild Wadi Water Park is an outdoor water park in Dubai , United Arab Emirates . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJ Wild) (NNP Wadi) (NNP Water) (NNP Park))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ outdoor) (NN water) (NN park))
+        (PP (IN in)
+          (NP
+            (NP (NNP Dubai))
+            (, ,)
+            (NP (NNP United) (NNP Arab) (NNPS Emirates))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-4	The Wild Wadi Water Park 
+	1	Wild
+			name:	LOCATION				1-1	Wild 
+			sense:	wild.a.02
+	2	Wadi
+			name:	CITY				2-2	Wadi 
+	3	Water
+			name:	LOCATION				3-4	Water Park 
+	4	Park
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	The Wild Wadi Water Park 
+			N-ARG-A2		6-15	an outdoor water park in Dubai , United Arab Emirates 
+	6	an
+	7	outdoor
+			sense:	outdoor.a.01
+	8	water
+			sense:	water.n.01
+	9	park
+			sense:	park.n.02
+	10	in
+	11	Dubai
+			coref:	IDENT			1	11-11	Dubai 
+			name:	CITY				11-11	Dubai 
+	12	,
+	13	United
+			name:	COUNTRY				13-15	United Arab Emirates 
+	14	Arab
+	15	Emirates
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Situated in the area of Jumeirah , next to the Burj Al Arab and the Jumeirah Beach Hotel , the water park is operated by Jumeirah International , a Dubai - based hotelier .
+
+
+Treebanked sentence:
+--------------------
+Situated in the area of Jumeirah , next to the Burj Al Arab and the Jumeirah Beach Hotel , the water park is operated by Jumeirah International , a Dubai - based hotelier . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Situated)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN area))
+            (PP (IN of)
+              (NP (NNP Jumeirah)))))
+        (, ,)
+        (ADVP (JJ next)
+          (PP (IN to)
+            (NP
+              (NP (DT the) (NNP Burj) (NNP Al) (NNP Arab))
+              (CC and)
+              (NP (DT the) (NNP Jumeirah) (NNP Beach) (NNP Hotel)))))))
+    (, ,)
+    (NP (DT the) (NN water) (NN park))
+    (VP (VBZ is)
+      (VP (VBN operated)
+        (PP (IN by)
+          (NP
+            (ADJP
+              (NP
+                (NP (NNP Jumeirah) (NNP International))
+                (, ,)
+                (NP (DT a) (NNP Dubai)))
+              (HYPH -) (VBN based))
+            (NNP hotelier)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Situated
+			sense:	situate.v.01
+			prop:	situate.01
+			V		0-0	Situated 
+			N-ARG-A2		1-5	in the area of Jumeirah 
+			N-ARGM-LOC		7-17	next to the Burj Al Arab and the Jumeirah Beach Hotel 
+			N-ARG-A1		19-21	the water park 
+	1	in
+	2	the
+	3	area
+			sense:	area.n.01
+	4	of
+	5	Jumeirah
+			name:	LOCATION				5-5	Jumeirah 
+	6	,
+	7	next
+			sense:	adjacent.s.01
+	8	to
+	9	the
+	10	Burj
+			name:	MISC				10-12	Burj Al Arab 
+	11	Al
+	12	Arab
+	13	and
+	14	the
+	15	Jumeirah
+			name:	LOCATION				15-17	Jumeirah Beach Hotel 
+	16	Beach
+	17	Hotel
+	18	,
+	19	the
+			coref:	IDENT			2	19-21	the water park 
+	20	water
+			sense:	water.n.01
+	21	park
+			sense:	park.n.02
+	22	is
+			sense:	be.v.01
+			prop:	be.03
+			V		22-22	is 
+	23	operated
+			sense:	operate.v.01
+			prop:	operate.01
+			V		23-23	operated 
+			N-ARGM-ADV		0-17	Situated in the area of Jumeirah , next to the Burj Al Arab and the Jumeirah Beach Hotel 
+			N-ARG-A1		19-21	the water park 
+			N-ARG-A0		24-32	by Jumeirah International , a Dubai - based hotelier 
+	24	by
+	25	Jumeirah
+			name:	ORGANIZATION				25-26	Jumeirah International 
+	26	International
+	27	,
+	28	a
+			coref:	IDENT			1	28-29	a Dubai 
+	29	Dubai
+			name:	CITY				29-29	Dubai 
+	30	-
+	31	based
+			sense:	base.v.02
+			prop:	base.01
+			V		31-31	based 
+			N-ARGM-LOC		29-29	Dubai 
+			N-ARG-A1		32-32	hotelier 
+	32	hotelier
+			name:	TITLE				32-32	hotelier 
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Wild Wadi has a heated / cooled wave pool , multiple water slides and two artificial surfing machines .
+
+
+Treebanked sentence:
+--------------------
+Wild Wadi has a heated / cooled wave pool , multiple water slides and two artificial surfing machines . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (JJ Wild) (NNP Wadi))
+    (VP (VBZ has)
+      (NP
+        (NP (DT a)
+          (ADJP (JJ heated) (HYPH /) (VBN cooled))
+          (NN wave) (NN pool))
+        (, ,)
+        (NP (JJ multiple) (NN water) (NNS slides))
+        (CC and)
+        (NP (CD two) (JJ artificial) (NN surfing) (NNS machines))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Wild
+			name:	PERSON				0-1	Wild Wadi 
+			sense:	wild.a.02
+	1	Wadi
+	2	has
+			sense:	have.v.02
+			prop:	have.03
+			V		2-2	has 
+			N-ARG-A0		0-1	Wild Wadi 
+			N-ARG-A1		3-17	a heated / cooled wave pool , multiple water slides and two artificial surfing machines 
+	3	a
+	4	heated
+			sense:	heated.s.01
+	5	/
+	6	cooled
+			sense:	cool.v.01
+			prop:	cool.01
+			V		6-6	cooled 
+			N-ARG-A1		7-8	wave pool 
+	7	wave
+			sense:	wave.n.01
+	8	pool
+			sense:	pool.n.01
+	9	,
+	10	multiple
+			sense:	multiple.a.01
+	11	water
+			sense:	water.n.01
+	12	slides
+			sense:	slide.n.04
+	13	and
+	14	two
+			name:	NUMBER				14-14	two 
+	15	artificial
+			sense:	artificial.a.01
+	16	surfing
+			sense:	surfing.n.01
+	17	machines
+			sense:	machine.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In addition , the park had the largest water slide outside of North America , but it has since been removed to make space for two other rides .
+
+
+Treebanked sentence:
+--------------------
+In addition , the park had the largest water slide outside of North America , but it has since been removed to make space for two other rides . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN In)
+        (NP (NN addition)))
+      (, ,)
+      (NP (DT the) (NN park))
+      (VP (VBD had)
+        (NP
+          (NP (DT the) (JJS largest) (NN water) (NN slide))
+          (ADVP (IN outside))
+          (PP (IN of)
+            (NP (NNP North) (NNP America))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ has)
+        (ADVP (RB since))
+        (VP (VBN been)
+          (VP (VBN removed)
+            (S
+              (VP (TO to)
+                (VP (VB make)
+                  (NP (NN space))
+                  (PP (IN for)
+                    (NP (CD two) (JJ other) (NNS rides))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	addition
+			sense:	accession.n.03
+	2	,
+	3	the
+			coref:	IDENT			2	3-4	the park 
+	4	park
+			sense:	park.n.01
+	5	had
+			sense:	have.v.02
+			prop:	have.03
+			V		5-5	had 
+			N-ARGM-DIS		0-1	In addition 
+			N-ARG-A0		3-4	the park 
+			N-ARG-A1		6-13	the largest water slide outside of North America 
+	6	the
+	7	largest
+			sense:	large.a.01
+	8	water
+			sense:	water.n.01
+	9	slide
+			sense:	slide.n.04
+	10	outside
+	11	of
+	12	North
+			name:	LOCATION				12-12	North 
+	13	America
+			name:	COUNTRY				13-13	America 
+	14	,
+	15	but
+	16	it
+			coref:	IDENT			2	16-16	it 
+	17	has
+			sense:	have.v.11
+			prop:	have.01
+			V		17-17	has 
+	18	since
+	19	been
+			sense:	be.v.01
+			prop:	be.03
+			V		19-19	been 
+	20	removed
+			sense:	remove.v.01
+			prop:	remove.01
+			V		20-20	removed 
+			N-ARG-A1		16-16	it 
+			N-ARGM-TMP		18-18	since 
+			N-ARGM-PRP		21-27	to make space for two other rides 
+	21	to
+	22	make
+			sense:	make.v.03
+			prop:	make.01
+			V		22-22	make 
+			N-ARG-A1		23-27	space for two other rides 
+	23	space
+			sense:	space.n.03
+	24	for
+	25	two
+			name:	NUMBER				25-25	two 
+	26	other
+			sense:	other.a.01
+	27	rides
+			sense:	ride.n.02
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Another feature of the park is an waterfall that goes off every ten minutes .
+
+
+Treebanked sentence:
+--------------------
+Another feature of the park is an waterfall that goes off every ten minutes . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT Another) (NN feature))
+      (PP (IN of)
+        (NP (DT the) (NN park))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN waterfall))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ goes)
+              (PRT (RP off))
+              (NP-TMP (DT every) (CD ten) (NNS minutes)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Another
+	1	feature
+			sense:	feature.n.01
+	2	of
+	3	the
+			coref:	IDENT			2	3-4	the park 
+	4	park
+			sense:	park.n.01
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	Another feature of the park 
+			N-ARG-A2		6-13	an waterfall that goes off every ten minutes 
+	6	an
+	7	waterfall
+			sense:	waterfall.n.01
+	8	that
+	9	goes
+			sense:	start.v.09
+			prop:	go.16
+			V		9-9	goes 
+			N-ARG-A1		6-7	an waterfall 
+			R-ARG-A1		8-8	that 
+			N-ARGM-TMP		11-13	every ten minutes 
+	10	off
+	11	every
+			name:	SET				11-13	every ten minutes 
+	12	ten
+	13	minutes
+			sense:	minute.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The water park also has two gift shops , three restaurants and two snack stands .
+
+
+Treebanked sentence:
+--------------------
+The water park also has two gift shops , three restaurants and two snack stands . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN water) (NN park))
+      (ADVP (RB also))
+      (VP (VBZ has)
+        (NP (CD two) (NN gift) (NNS shops))))
+    (, ,)
+    (NP
+      (NP (CD three) (NNS restaurants))
+      (CC and)
+      (NP (CD two) (NN snack)))
+    (VP (VBZ stands))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-2	The water park 
+	1	water
+			sense:	body_of_water.n.01
+	2	park
+			sense:	park.n.01
+	3	also
+			sense:	besides.r.02
+	4	has
+			sense:	have.v.02
+			prop:	have.03
+			V		4-4	has 
+			N-ARG-A0		0-2	The water park 
+			N-ARGM-DIS		3-3	also 
+			N-ARG-A1		5-14	two gift shops , three restaurants and two snack stands 
+	5	two
+			name:	NUMBER				5-5	two 
+	6	gift
+			sense:	gift.n.01
+	7	shops
+			sense:	shop.n.01
+	8	,
+	9	three
+			name:	NUMBER				9-9	three 
+	10	restaurants
+			sense:	restaurant.n.01
+	11	and
+	12	two
+			name:	NUMBER				12-12	two 
+	13	snack
+			sense:	bite.n.04
+	14	stands
+			sense:	stand.v.03
+			prop:	stand.01
+			V		14-14	stands 
+			N-ARGM-ADJ		12-12	two 
+			N-ARG-A1		13-13	snack 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was featured in The Amazing Race 5 and The Amazing Race Asia 1 , in which teams had to slide down a drop .
+
+
+Treebanked sentence:
+--------------------
+It was featured in The Amazing Race 5 and The Amazing Race Asia 1 , in which teams had to slide down a drop . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN featured)
+        (PP (IN in)
+          (NP
+            (NP
+              (NP (DT The) (JJ Amazing) (NN Race) (CD 5))
+              (CC and)
+              (NP (DT The) (JJ Amazing) (NN Race))
+              (NML (NNP Asia) (CD 1)))
+            (, ,)
+            (SBAR
+              (WHPP (IN in)
+                (WHNP (WDT which)))
+              (S
+                (NP (NNS teams))
+                (VP (VBD had)
+                  (S
+                    (VP (TO to)
+                      (VP (VB slide)
+                        (PRT (RP down))
+                        (NP (DT a) (NN drop))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	featured
+			sense:	have.v.02
+			prop:	feature.01
+			V		2-2	featured 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		3-23	in The Amazing Race 5 and The Amazing Race Asia 1 , in which teams had to slide down a drop 
+	3	in
+	4	The
+	5	Amazing
+			sense:	amazing.s.02
+	6	Race
+			sense:	race.n.01
+	7	5
+			name:	NUMBER				7-7	5 
+	8	and
+	9	The
+	10	Amazing
+			sense:	amazing.s.02
+	11	Race
+			sense:	race.n.01
+	12	Asia
+	13	1
+			name:	NUMBER				13-13	1 
+	14	,
+	15	in
+	16	which
+	17	teams
+			coref:	IDENT			0	17-17	teams 
+			sense:	team.n.01
+	18	had
+			sense:	have.v.11
+			prop:	have.02
+			V		18-18	had 
+	19	to
+	20	slide
+			sense:	slide.v.03
+			prop:	slide.01
+			V		20-20	slide 
+			N-ARG-A1		17-17	teams 
+			N-ARGM-DIR		21-23	down a drop 
+	21	down
+	22	a
+	23	drop
+			sense:	cliff.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was later featured in The Amazing Race Australia 2 , but instead , the teams had to ride the Surf Machine and use boogie boards to surf their way to the end where they got their next clue .
+
+
+Treebanked sentence:
+--------------------
+It was later featured in The Amazing Race Australia 2 , but instead , the teams had to ride the Surf Machine and use boogie boards to surf their way to the end where they got their next clue . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBD was)
+        (ADVP (RB later))
+        (VP (VBN featured)
+          (PP (IN in)
+            (NP
+              (NP (DT The) (JJ Amazing) (NN Race))
+              (NP (NNP Australia) (CD 2)))))))
+    (, ,)
+    (CC but)
+    (S
+      (ADVP (RB instead))
+      (, ,)
+      (NP (DT the) (NNS teams))
+      (VP (VBD had)
+        (S
+          (VP (TO to)
+            (VP
+              (VP (VB ride)
+                (NP (DT the) (NNP Surf) (NNP Machine)))
+              (CC and)
+              (VP (VB use)
+                (NP (NN boogie) (NNS boards))
+                (PP (IN to)
+                  (NP (NN surf))))
+              (NP (PRP$ their) (NN way))
+              (PP (IN to)
+                (NP
+                  (NP (DT the) (NN end))
+                  (SBAR
+                    (WHADVP (WRB where))
+                    (S
+                      (NP (PRP they))
+                      (VP (VBD got)
+                        (NP (PRP$ their) (JJ next) (NN clue))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	later
+			sense:	subsequently.r.01
+	3	featured
+			sense:	have.v.02
+			prop:	feature.01
+			V		3-3	featured 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		2-2	later 
+			N-ARG-A2		4-9	in The Amazing Race Australia 2 
+	4	in
+	5	The
+	6	Amazing
+			sense:	amazing.s.02
+	7	Race
+			sense:	race.n.01
+	8	Australia
+			name:	COUNTRY				8-8	Australia 
+	9	2
+			name:	NUMBER				9-9	2 
+	10	,
+	11	but
+	12	instead
+			sense:	rather.r.01
+	13	,
+	14	the
+			coref:	IDENT			0	14-15	the teams 
+	15	teams
+			sense:	team.n.01
+	16	had
+			sense:	have.v.11
+			prop:	have.02
+			V		16-16	had 
+	17	to
+	18	ride
+			sense:	ride.v.02
+			prop:	ride.01
+			V		18-18	ride 
+			N-ARG-A0		14-15	the teams 
+			N-ARG-A1		19-21	the Surf Machine 
+	19	the
+	20	Surf
+	21	Machine
+	22	and
+	23	use
+			sense:	use.v.01
+			prop:	use.01
+			V		23-23	use 
+			N-ARG-A0		14-15	the teams 
+			N-ARG-A1		24-25	boogie boards 
+			N-ARG-A2		26-38	to surf their way to the end where they got their next clue 
+	24	boogie
+			sense:	boogie.n.01
+	25	boards
+			sense:	board.n.03
+	26	to
+	27	surf
+			sense:	surf.n.01
+	28	their
+			coref:	IDENT			0	28-28	their 
+	29	way
+			sense:	way.n.07
+	30	to
+	31	the
+	32	end
+			sense:	end.n.01
+	33	where
+	34	they
+			coref:	IDENT			0	34-34	they 
+	35	got
+			sense:	get.v.01
+			prop:	get.01
+			V		35-35	got 
+			N-ARGM-LOC		31-32	the end 
+			R-ARGM-LOC		33-33	where 
+			N-ARG-A0		34-34	they 
+			N-ARG-A1		36-38	their next clue 
+	36	their
+			coref:	IDENT			0	36-36	their 
+	37	next
+			sense:	following.s.02
+	38	clue
+			sense:	clue.n.02
+	39	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				7.14-15	the teams 
+				6.17-17	teams 
+				7.28-28	their 
+				7.34-34	they 
+				7.36-36	their 
+	Chain 1 (IDENT)
+				1.28-29	a Dubai 
+				0.11-11	Dubai 
+	Chain 2 (IDENT)
+				0.0-4	The Wild Wadi Water Park 
+				1.19-21	the water park 
+				3.3-4	the park 
+				3.16-16	it 
+				4.3-4	the park 
+				5.0-2	The water park 
+				6.0-0	It 
+				7.0-0	It 
+

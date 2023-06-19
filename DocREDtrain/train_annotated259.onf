@@ -1,0 +1,745 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Benjamin Gibbard ( born August 11 , 1976 ) is an American singer , songwriter and guitarist .
+
+
+Treebanked sentence:
+--------------------
+Benjamin Gibbard ( born August 11 , 1976 ) is an American singer , songwriter and guitarist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Benjamin) (NNP Gibbard))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP August) (CD 11) (, ,) (CD 1976)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT an) (JJ American)
+        (NML (NN singer) (, ,) (NN songwriter)
+          (CC and)
+          (NN guitarist))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Benjamin
+			coref:	IDENT			1	0-1	Benjamin Gibbard 
+			name:	PERSON				0-1	Benjamin Gibbard 
+	1	Gibbard
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Benjamin Gibbard 
+			N-ARGM-TMP		4-7	August 11 , 1976 
+	4	August
+			name:	DATE				4-7	August 11 , 1976 
+	5	11
+	6	,
+	7	1976
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	Benjamin Gibbard ( born August 11 , 1976 ) 
+			N-ARG-A2		10-16	an American singer , songwriter and guitarist 
+	10	an
+	11	American
+			name:	NATIONALITY				11-11	American 
+	12	singer
+			name:	TITLE				12-12	singer 
+			sense:	singer.n.01
+	13	,
+	14	songwriter
+			name:	TITLE				14-14	songwriter 
+			sense:	songwriter.n.01
+	15	and
+	16	guitarist
+			name:	TITLE				16-16	guitarist 
+			sense:	guitarist.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is best known as the lead vocalist and guitarist of the indie rock band Death Cab for Cutie , with which he has recorded nine studio albums , and as one half of the electronica act the Postal Service .
+
+
+Treebanked sentence:
+--------------------
+He is best known as the lead vocalist and guitarist of the indie rock band Death Cab for Cutie , with which he has recorded nine studio albums , and as one half of the electronica act the Postal Service . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (ADVP (RBS best))
+      (VP (VBN known)
+        (PP (IN as)
+          (NP
+            (NP (DT the) (NN lead) (NN vocalist)
+              (CC and)
+              (NN guitarist))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN indie) (NN rock) (NN band) (NN Death) (NN Cab))
+                (PP (IN for)
+                  (NP (NNP Cutie)))))))
+        (, ,)
+        (SBAR
+          (SBAR
+            (WHPP (IN with)
+              (WHNP (WDT which)))
+            (S
+              (NP (PRP he))
+              (VP (VBZ has)
+                (VP (VBN recorded)
+                  (NP (CD nine) (NN studio) (NNS albums))))))
+          (, ,)
+          (CC and)
+          (SBAR (IN as)
+            (S
+              (NP
+                (NP (CD one) (NN half))
+                (PP (IN of)
+                  (NP (DT the) (NN electronica))))
+              (VP (VB act)
+                (NP (DT the) (NNP Postal) (NNP Service))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-39	best known as the lead vocalist and guitarist of the indie rock band Death Cab for Cutie , with which he has recorded nine studio albums , and as one half of the electronica act the Postal Service 
+	2	best
+			sense:	well.r.02
+	3	known
+			sense:	know.v.04
+			prop:	know.01
+			V		3-3	known 
+			N-ARG-A1		0-0	He 
+			N-ARGM-MNR		2-2	best 
+			N-ARG-A2		4-39	as the lead vocalist and guitarist of the indie rock band Death Cab for Cutie , with which he has recorded nine studio albums , and as one half of the electronica act the Postal Service 
+	4	as
+	5	the
+	6	lead
+			sense:	lead.n.04
+	7	vocalist
+			name:	TITLE				7-7	vocalist 
+			sense:	singer.n.01
+	8	and
+	9	guitarist
+			name:	TITLE				9-9	guitarist 
+			sense:	guitarist.n.01
+	10	of
+	11	the
+	12	indie
+			sense:	indie.n.01
+	13	rock
+			sense:	rock_n_roll.n.01
+	14	band
+			sense:	band.n.02
+	15	Death
+			name:	ORGANIZATION				15-18	Death Cab for Cutie 
+			sense:	death.n.03
+	16	Cab
+			sense:	cab.n.03
+	17	for
+	18	Cutie
+	19	,
+	20	with
+	21	which
+	22	he
+			coref:	IDENT			1	22-22	he 
+	23	has
+			sense:	have.v.01
+			prop:	have.01
+			V		23-23	has 
+	24	recorded
+			sense:	record.v.02
+			prop:	record.01
+			V		24-24	recorded 
+			N-ARGM-COM		11-18	the indie rock band Death Cab for Cutie 
+			R-ARGM-COM		20-21	with which 
+			N-ARG-A0		22-22	he 
+			N-ARG-A1		25-27	nine studio albums 
+	25	nine
+			name:	NUMBER				25-25	nine 
+	26	studio
+			sense:	studio.n.01
+	27	albums
+			sense:	album.n.01
+	28	,
+	29	and
+	30	as
+	31	one
+			name:	NUMBER				31-31	one 
+	32	half
+			sense:	one-half.n.01
+	33	of
+	34	the
+	35	electronica
+	36	act
+			sense:	act.v.10
+			prop:	act.02
+			V		36-36	act 
+			N-ARG-A1		35-35	electronica 
+			N-ARG-A0		37-39	the Postal Service 
+	37	the
+	38	Postal
+			name:	ORGANIZATION				38-39	Postal Service 
+	39	Service
+	40	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Gibbard released his debut solo album , Former Lives , in 2012 , and a collaborative studio album , One Fast Move or I 'm Gone ( 2009 ) , with Uncle Tupelo and Son Volt 's Jay Farrar .
+
+
+Treebanked sentence:
+--------------------
+Gibbard released his debut solo album , Former Lives , in 2012 , and a collaborative studio album , One Fast Move or I 'm Gone ( 2009 ) , with Uncle Tupelo and Son Volt 's Jay Farrar . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NNP Gibbard))
+      (VP (VBD released)
+        (NP (PRP$ his) (NN debut))
+        (NP
+          (NP
+            (NP (JJ solo) (NN album))
+            (, ,)
+            (NP (JJ Former) (NNS Lives))
+            (, ,))
+          (PP (IN in)
+            (NP (CD 2012))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (DT a) (JJ collaborative) (NN studio) (NN album))
+        (, ,)
+        (NP (CD One) (JJ Fast) (NN Move))
+        (CC or)
+        (NP (PRP I)))
+      (VP (VBP 'm)
+        (VP (VBN Gone)
+          (PRN (-LRB- -LRB-)
+            (NP (CD 2009))
+            (-RRB- -RRB-))
+          (, ,)
+          (PP (IN with)
+            (NP
+              (NP (NNP Uncle) (NNP Tupelo))
+              (CC and)
+              (NP
+                (NP (NNP Son) (NNP Volt) (POS 's))
+                (NNP Jay) (NNP Farrar)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Gibbard
+			coref:	IDENT			1	0-0	Gibbard 
+			name:	PERSON				0-0	Gibbard 
+	1	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		1-1	released 
+			N-ARG-A0		0-0	Gibbard 
+			N-ARG-A1		2-9	his debut solo album , Former Lives , 
+			N-ARGM-TMP		10-11	in 2012 
+			C-ARG-A1		13-38	and a collaborative studio album , One Fast Move or I 'm Gone ( 2009 ) , with Uncle Tupelo and Son Volt 's Jay Farrar 
+	2	his
+			coref:	IDENT			1	2-2	his 
+	3	debut
+			sense:	introduction.n.01
+	4	solo
+			sense:	solo.s.01
+	5	album
+			sense:	album.n.01
+	6	,
+	7	Former
+			sense:	erstwhile.s.01
+	8	Lives
+			sense:	life.n.05
+	9	,
+	10	in
+	11	2012
+			name:	DATE				11-11	2012 
+	12	,
+	13	and
+	14	a
+	15	collaborative
+			sense:	collaborative.s.01
+	16	studio
+			sense:	studio.n.01
+	17	album
+			sense:	album.n.01
+	18	,
+	19	One
+			name:	NUMBER				19-19	One 
+	20	Fast
+			sense:	fast.a.01
+	21	Move
+			sense:	motion.n.06
+	22	or
+	23	I
+	24	'm
+			sense:	be.v.01
+			prop:	be.01
+			V		24-24	'm 
+			N-ARG-A1		23-23	I 
+			N-ARG-A2		25-25	Gone 
+	25	Gone
+			sense:	die.v.01
+			prop:	go.13
+			V		25-25	Gone 
+			N-ARG-A1		23-23	I 
+	26	(
+	27	2009
+			name:	DATE				27-27	2009 
+	28	)
+	29	,
+	30	with
+	31	Uncle
+			name:	PERSON				31-32	Uncle Tupelo 
+	32	Tupelo
+	33	and
+	34	Son
+			name:	PERSON				34-35	Son Volt 
+	35	Volt
+	36	's
+	37	Jay
+			name:	PERSON				37-38	Jay Farrar 
+	38	Farrar
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+While performing guitar in the band Pinwheel , Gibbard recorded a demo cassette under the moniker Death Cab for Cutie , titled You Can Play These Songs with Chords ( 1997 ) .
+
+
+Treebanked sentence:
+--------------------
+While performing guitar in the band Pinwheel , Gibbard recorded a demo cassette under the moniker Death Cab for Cutie , titled You Can Play These Songs with Chords ( 1997 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (VP (VBG performing)
+          (NP (NN guitar))
+          (PP (IN in)
+            (NP (DT the) (NN band) (NNP Pinwheel))))))
+    (, ,)
+    (NP (NNP Gibbard))
+    (VP (VBD recorded)
+      (NP (DT a) (NN demo) (NN cassette))
+      (PP (IN under)
+        (NP
+          (NP
+            (NP (DT the) (NN moniker) (NN Death) (NN Cab))
+            (PP (IN for)
+              (NP (NNP Cutie))))
+          (, ,)
+          (VP (VBN titled)
+            (SBAR
+              (S
+                (NP (PRP You))
+                (VP (MD Can)
+                  (VP (VB Play)
+                    (NP (DT These) (NNS Songs))
+                    (PP (IN with)
+                      (NP (NNS Chords))))))))))
+      (PRN (-LRB- -LRB-)
+        (NP (CD 1997))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	While
+	1	performing
+			sense:	perform.v.02
+			prop:	perform.01
+			V		1-1	performing 
+			N-ARG-A1		2-2	guitar 
+			N-ARGM-LOC		3-6	in the band Pinwheel 
+			N-ARG-A0		8-8	Gibbard 
+	2	guitar
+			sense:	guitar.n.01
+	3	in
+	4	the
+	5	band
+			sense:	band.n.02
+	6	Pinwheel
+			name:	ORGANIZATION				6-6	Pinwheel 
+	7	,
+	8	Gibbard
+			coref:	IDENT			1	8-8	Gibbard 
+			name:	PERSON				8-8	Gibbard 
+	9	recorded
+			sense:	record.v.02
+			prop:	record.01
+			V		9-9	recorded 
+			N-ARGM-TMP		0-6	While performing guitar in the band Pinwheel 
+			N-ARG-A0		8-8	Gibbard 
+			N-ARG-A1		10-12	a demo cassette 
+			N-ARGM-MNR		13-19	under the moniker Death Cab for Cutie 
+			C-ARG-A1		21-31	titled You Can Play These Songs with Chords ( 1997 ) 
+	10	a
+	11	demo
+			sense:	demonstration.n.05
+	12	cassette
+			sense:	cassette.n.01
+	13	under
+	14	the
+	15	moniker
+			sense:	nickname.n.01
+	16	Death
+			sense:	death.n.03
+	17	Cab
+			sense:	cab.n.03
+	18	for
+	19	Cutie
+			name:	PERSON				19-19	Cutie 
+	20	,
+	21	titled
+			sense:	entitle.v.02
+			prop:	title.01
+			V		21-21	titled 
+			N-ARG-A1		10-12	a demo cassette 
+			N-ARG-A2		22-31	You Can Play These Songs with Chords ( 1997 ) 
+	22	You
+	23	Can
+	24	Play
+			sense:	play.v.06
+			prop:	play.01
+			V		24-24	Play 
+			N-ARG-A0		22-22	You 
+			N-ARGM-MOD		23-23	Can 
+			N-ARG-A1		25-26	These Songs 
+			N-ARGM-MNR		27-28	with Chords 
+	25	These
+	26	Songs
+			sense:	song.n.01
+	27	with
+	28	Chords
+			sense:	chord.n.02
+	29	(
+	30	1997
+			name:	DATE				30-30	1997 
+	31	)
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After receiving a positive response to the material , Gibbard expanded the project into a full band , with the addition of Chris Walla ( guitar ) , Nick Harmer ( bass ) and Nathan Good ( drums ) .
+
+
+Treebanked sentence:
+--------------------
+After receiving a positive response to the material , Gibbard expanded the project into a full band , with the addition of Chris Walla ( guitar ) , Nick Harmer ( bass ) and Nathan Good ( drums ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG receiving)
+          (NP (DT a) (JJ positive) (NN response))
+          (PP (IN to)
+            (NP (DT the) (NN material))))))
+    (, ,)
+    (NP (NNP Gibbard))
+    (VP (VBD expanded)
+      (NP (DT the) (NN project))
+      (PP (IN into)
+        (NP (DT a) (JJ full) (NN band)))
+      (, ,)
+      (PP (IN with)
+        (NP
+          (NP (DT the) (NN addition))
+          (PP (IN of)
+            (NP
+              (NP (NNP Chris) (NNP Walla)
+                (PRN (-LRB- -LRB-)
+                  (NP (NN guitar))
+                  (-RRB- -RRB-)))
+              (, ,)
+              (NP (NNP Nick) (NNP Harmer)
+                (PRN (-LRB- -LRB-)
+                  (NP (NN bass))
+                  (-RRB- -RRB-)))
+              (CC and)
+              (NP
+                (NP (NNP Nathan) (NNP Good))
+                (-LRB- -LRB-)
+                (NP (NNS drums))
+                (-RRB- -RRB-)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	receiving
+			sense:	experience.v.03
+			prop:	receive.01
+			V		1-1	receiving 
+			N-ARG-A1		2-7	a positive response to the material 
+			N-ARG-A0		9-9	Gibbard 
+	2	a
+	3	positive
+			sense:	positive.a.01
+	4	response
+			sense:	reception.n.01
+	5	to
+	6	the
+	7	material
+			sense:	material.n.02
+	8	,
+	9	Gibbard
+			coref:	IDENT			1	9-9	Gibbard 
+			name:	PERSON				9-9	Gibbard 
+	10	expanded
+			sense:	expand.v.03
+			prop:	expand.01
+			V		10-10	expanded 
+			N-ARGM-TMP		0-7	After receiving a positive response to the material 
+			N-ARG-A0		9-9	Gibbard 
+			N-ARG-A1		11-12	the project 
+			N-ARG-A4		13-16	into a full band 
+			N-ARGM-ADV		18-38	with the addition of Chris Walla ( guitar ) , Nick Harmer ( bass ) and Nathan Good ( drums ) 
+	11	the
+	12	project
+			sense:	undertaking.n.01
+	13	into
+	14	a
+	15	full
+			sense:	entire.s.01
+	16	band
+			sense:	band.n.02
+	17	,
+	18	with
+	19	the
+	20	addition
+			sense:	addition.n.02
+	21	of
+	22	Chris
+			name:	PERSON				22-23	Chris Walla 
+	23	Walla
+	24	(
+	25	guitar
+			sense:	guitar.n.01
+	26	)
+	27	,
+	28	Nick
+			name:	PERSON				28-29	Nick Harmer 
+	29	Harmer
+	30	(
+	31	bass
+			sense:	bass.n.07
+	32	)
+	33	and
+	34	Nathan
+			name:	PERSON				34-35	Nathan Good 
+	35	Good
+	36	(
+	37	drums
+			sense:	drum.n.01
+	38	)
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The following year , the band released its debut album , Something About Airplanes ( 1998 ) , on Barsuk Records , and released its follow - up , We Have the Facts and We 're Voting Yes , in 2000 .
+
+
+Treebanked sentence:
+--------------------
+The following year , the band released its debut album , Something About Airplanes ( 1998 ) , on Barsuk Records , and released its follow - up , We Have the Facts and We 're Voting Yes , in 2000 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP-TMP (DT The) (JJ following) (NN year))
+    (, ,)
+    (NP (DT the) (NN band))
+    (VP
+      (VP (VBD released)
+        (NP
+          (NP (PRP$ its) (NN debut) (NN album))
+          (, ,)
+          (NP
+            (NP (NN Something))
+            (NP (RB About) (NNPS Airplanes))
+            (PRN (-LRB- -LRB-)
+              (NP (CD 1998))
+              (-RRB- -RRB-)))
+          (, ,))
+        (PP (IN on)
+          (NP (NNP Barsuk) (NNPS Records))))
+      (, ,)
+      (CC and)
+      (VP (VBD released)
+        (NP (PRP$ its)
+          (NML (NN follow) (HYPH -) (NN up)))
+        (, ,)
+        (PRN
+          (S
+            (S
+              (NP (PRP We))
+              (VP (VBP Have)
+                (NP (DT the) (NNS Facts))))
+            (CC and)
+            (S
+              (NP (PRP We))
+              (VP (VBP 're)
+                (NP (NNP Voting))
+                (INTJ (UH Yes))))))
+        (, ,)
+        (PP (IN in)
+          (NP (CD 2000)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			name:	DATE				0-2	The following year 
+	1	following
+			sense:	following.s.02
+	2	year
+			sense:	year.n.01
+	3	,
+	4	the
+	5	band
+			sense:	band.n.02
+	6	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		6-6	released 
+			N-ARGM-TMP		0-2	The following year 
+			N-ARG-A0		4-5	the band 
+			N-ARG-A1		7-16	its debut album , Something About Airplanes ( 1998 ) 
+			N-ARGM-LOC		18-20	on Barsuk Records 
+	7	its
+	8	debut
+			sense:	introduction.n.01
+	9	album
+			sense:	album.n.01
+	10	,
+	11	Something
+	12	About
+			sense:	about.r.04
+	13	Airplanes
+	14	(
+	15	1998
+			name:	DATE				15-15	1998 
+	16	)
+	17	,
+	18	on
+	19	Barsuk
+			name:	ORGANIZATION				19-20	Barsuk Records 
+	20	Records
+	21	,
+	22	and
+	23	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		23-23	released 
+			N-ARGM-TMP		0-2	The following year 
+			N-ARG-A0		4-5	the band 
+			N-ARG-A1		24-38	its follow - up , We Have the Facts and We 're Voting Yes , 
+			N-ARGM-TMP		39-40	in 2000 
+	24	its
+	25	follow
+	26	-
+	27	up
+	28	,
+	29	We
+			coref:	IDENT			0	29-29	We 
+	30	Have
+			sense:	have.v.01
+			prop:	have.03
+			V		30-30	Have 
+			N-ARG-A0		29-29	We 
+			N-ARG-A1		31-32	the Facts 
+	31	the
+	32	Facts
+			sense:	fact.n.01
+	33	and
+	34	We
+			coref:	IDENT			0	34-34	We 
+	35	're
+			sense:	be.v.01
+			prop:	be.03
+			V		35-35	're 
+	36	Voting
+	37	Yes
+	38	,
+	39	in
+	40	2000
+			name:	DATE				40-40	2000 
+	41	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.29-29	We 
+				5.34-34	We 
+	Chain 1 (IDENT)
+				0.0-1	Benjamin Gibbard 
+				1.0-0	He 
+				1.22-22	he 
+				2.0-0	Gibbard 
+				2.2-2	his 
+				3.8-8	Gibbard 
+				4.9-9	Gibbard 
+

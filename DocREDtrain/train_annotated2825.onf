@@ -1,0 +1,746 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Viktor von Hacker ( October 21 , 1852 – May 20 , 1933 ) was an Austrian surgeon born in Vienna .
+
+
+Treebanked sentence:
+--------------------
+Viktor von Hacker ( October 21 , 1852 – May 20 , 1933 ) was an Austrian surgeon born in Vienna . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Viktor) (NNP von) (NNP Hacker))
+      (PRN (-LRB- -LRB-)
+        (NP
+          (NP
+            (NP (NNP October))
+            (NP (CD 21)))
+          (, ,)
+          (NP
+            (QP (CD 1852) (SYM –))
+            (NML (MD May) (CD 20))))
+        (, ,)
+        (NP (CD 1933))
+        (-RRB- -RRB-)))
+    (VP (VBD was)
+      (NP
+        (NP (DT an)
+          (NML (JJ Austrian) (NN surgeon)))
+        (VP (VBN born)
+          (PP (IN in)
+            (NP (NNP Vienna))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Viktor
+			coref:	IDENT			2	0-13	Viktor von Hacker ( October 21 , 1852 – May 20 , 1933 ) 
+			name:	PERSON				0-2	Viktor von Hacker 
+	1	von
+	2	Hacker
+	3	(
+	4	October
+			name:	DATE				4-7	October 21 , 1852 
+	5	21
+	6	,
+	7	1852
+	8	–
+	9	May
+			name:	DATE				9-12	May 20 , 1933 
+	10	20
+	11	,
+	12	1933
+	13	)
+	14	was
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		0-13	Viktor von Hacker ( October 21 , 1852 – May 20 , 1933 ) 
+			N-ARG-A2		15-20	an Austrian surgeon born in Vienna 
+	15	an
+	16	Austrian
+			name:	NATIONALITY				16-16	Austrian 
+	17	surgeon
+			name:	TITLE				17-17	surgeon 
+			sense:	surgeon.n.01
+	18	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		18-18	born 
+			N-ARG-A1		15-17	an Austrian surgeon 
+			N-ARGM-LOC		19-20	in Vienna 
+	19	in
+	20	Vienna
+			name:	CITY				20-20	Vienna 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1878 he received his medical doctorate at the University of Vienna , and after graduation remained in Vienna as an assistant to Theodor Billroth ( 1829 – 1894 ) .
+
+
+Treebanked sentence:
+--------------------
+In 1878 he received his medical doctorate at the University of Vienna , and after graduation remained in Vienna as an assistant to Theodor Billroth ( 1829 – 1894 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1878)))
+    (NP (PRP he))
+    (VP
+      (VP (VBD received)
+        (NP (PRP$ his) (JJ medical) (NN doctorate))
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Vienna))))))
+      (, ,)
+      (CC and)
+      (PP (IN after)
+        (NP (NN graduation)))
+      (VP (VBD remained)
+        (PP (IN in)
+          (NP (NNP Vienna)))
+        (PP (IN as)
+          (NP (DT an) (NN assistant)))
+        (PP (IN to)
+          (NP (NNP Theodor) (NNP Billroth)
+            (PRN (-LRB- -LRB-)
+              (NP
+                (QP (CD 1829) (SYM –) (CD 1894)))
+              (-RRB- -RRB-))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1878
+			name:	DATE				1-1	1878 
+	2	he
+			coref:	IDENT			2	2-2	he 
+	3	received
+			sense:	receive.v.01
+			prop:	receive.01
+			V		3-3	received 
+			N-ARGM-TMP		0-1	In 1878 
+			N-ARG-A0		2-2	he 
+			N-ARG-A1		4-6	his medical doctorate 
+			N-ARGM-LOC		7-11	at the University of Vienna 
+	4	his
+			coref:	IDENT			2	4-4	his 
+	5	medical
+			sense:	medical.a.01
+	6	doctorate
+			sense:	doctors_degree.n.01
+	7	at
+	8	the
+	9	University
+			name:	ORGANIZATION				9-11	University of Vienna 
+	10	of
+	11	Vienna
+	12	,
+	13	and
+	14	after
+	15	graduation
+			sense:	graduation.n.01
+	16	remained
+			sense:	stay.v.04
+			prop:	remain.01
+			V		16-16	remained 
+			N-ARG-A1		2-2	he 
+			N-ARGM-TMP		14-15	after graduation 
+			N-ARGM-LOC		17-18	in Vienna 
+			N-ARG-A3		19-29	as an assistant to Theodor Billroth ( 1829 – 1894 ) 
+	17	in
+	18	Vienna
+			name:	CITY				18-18	Vienna 
+	19	as
+	20	an
+	21	assistant
+			name:	TITLE				21-21	assistant 
+			sense:	assistant.n.01
+	22	to
+	23	Theodor
+			name:	PERSON				23-24	Theodor Billroth 
+	24	Billroth
+	25	(
+	26	1829
+			name:	DATE				26-26	1829 
+	27	–
+	28	1894
+			coref:	IDENT			0	28-28	1894 
+			name:	DATE				28-28	1894 
+	29	)
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Later he was a professor of surgery at the Universities of Innsbruck ( 1894 – 1903 ) and Graz ( 1904 – 1924 ) .
+
+
+Treebanked sentence:
+--------------------
+Later he was a professor of surgery at the Universities of Innsbruck ( 1894 – 1903 ) and Graz ( 1904 – 1924 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RBR Later))
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN professor))
+        (PP (IN of)
+          (NP (NN surgery))))
+      (PP (IN at)
+        (NP
+          (NP
+            (NP (DT the) (NNS Universities))
+            (PP (IN of)
+              (NP (NNP Innsbruck)))
+            (PRN (-LRB- -LRB-)
+              (NP
+                (QP (CD 1894) (SYM –) (CD 1903)))
+              (-RRB- -RRB-)))
+          (CC and)
+          (NP (NNP Graz))))
+      (PRN (-LRB- -LRB-)
+        (NP (CD 1904) (SYM –) (CD 1924))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Later
+			sense:	deep.r.02
+	1	he
+			coref:	IDENT			2	1-1	he 
+	2	was
+			sense:	be.v.08
+			prop:	be.01
+			V		2-2	was 
+			N-ARGM-TMP		0-0	Later 
+			N-ARG-A1		1-1	he 
+			N-ARG-A2		3-23	a professor of surgery at the Universities of Innsbruck ( 1894 – 1903 ) and Graz ( 1904 – 1924 ) 
+	3	a
+	4	professor
+			name:	TITLE				4-4	professor 
+			sense:	professor.n.01
+	5	of
+	6	surgery
+			name:	CAUSE_OF_DEATH				6-6	surgery 
+			sense:	surgery.n.01
+	7	at
+	8	the
+	9	Universities
+			sense:	university.n.02
+	10	of
+	11	Innsbruck
+			name:	CITY				11-11	Innsbruck 
+	12	(
+	13	1894
+			coref:	IDENT			0	13-13	1894 
+			name:	DATE				13-13	1894 
+	14	–
+	15	1903
+			name:	DATE				15-15	1903 
+	16	)
+	17	and
+	18	Graz
+			name:	CITY				18-18	Graz 
+	19	(
+	20	1904
+			name:	DATE				20-20	1904 
+	21	–
+	22	1924
+			name:	DATE				22-22	1924 
+	23	)
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Hacker is remembered for his work involving esophagoscopy , esophageal surgery and gastrointestinal surgery .
+
+
+Treebanked sentence:
+--------------------
+Hacker is remembered for his work involving esophagoscopy , esophageal surgery and gastrointestinal surgery . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Hacker))
+    (VP (VBZ is)
+      (VP (VBN remembered)
+        (PP (IN for)
+          (NP
+            (NP (PRP$ his) (NN work))
+            (PP (VBG involving)
+              (NP
+                (NP (NN esophagoscopy))
+                (, ,)
+                (NP (JJ esophageal) (NN surgery))
+                (CC and)
+                (NP (JJ gastrointestinal) (NN surgery))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Hacker
+			coref:	IDENT			2	0-0	Hacker 
+			name:	TITLE				0-0	Hacker 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	remembered
+			sense:	remember.v.02
+			prop:	remember.01
+			V		2-2	remembered 
+			N-ARG-A1		0-0	Hacker 
+			N-ARG-A2		3-13	for his work involving esophagoscopy , esophageal surgery and gastrointestinal surgery 
+	3	for
+	4	his
+			coref:	IDENT			2	4-4	his 
+	5	work
+			sense:	work.n.01
+	6	involving
+			sense:	involve.v.01
+			prop:	involve.01
+			V		6-6	involving 
+			N-ARG-A2		4-5	his work 
+			N-ARG-A1		7-13	esophagoscopy , esophageal surgery and gastrointestinal surgery 
+	7	esophagoscopy
+	8	,
+	9	esophageal
+			sense:	esophageal.a.01
+	10	surgery
+			name:	CAUSE_OF_DEATH				10-10	surgery 
+			sense:	operation.n.06
+	11	and
+	12	gastrointestinal
+			sense:	gastrointestinal.a.01
+	13	surgery
+			name:	CAUSE_OF_DEATH				13-13	surgery 
+			sense:	operation.n.06
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+With German - American surgeon Carl Beck ( 1856 – 1911 ) , he is credited with developing a surgical technique for balanic hypospadias .
+
+
+Treebanked sentence:
+--------------------
+With German - American surgeon Carl Beck ( 1856 – 1911 ) , he is credited with developing a surgical technique for balanic hypospadias . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN With)
+      (NP
+        (NP
+          (NML
+            (ADJP (JJ German) (HYPH -) (JJ American))
+            (NN surgeon))
+          (NNP Carl) (NNP Beck))
+        (-LRB- -LRB-)
+        (NP
+          (QP (CD 1856) (SYM –) (CD 1911)))
+        (-RRB- -RRB-)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBZ is)
+      (VP (VBN credited)
+        (PP (IN with)
+          (S
+            (VP (VBG developing)
+              (NP (DT a) (JJ surgical) (NN technique))
+              (PP (IN for)
+                (NP (JJ balanic) (NNS hypospadias))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	With
+	1	German
+			name:	NATIONALITY				1-1	German 
+	2	-
+	3	American
+			name:	NATIONALITY				3-3	American 
+	4	surgeon
+			name:	TITLE				4-4	surgeon 
+			sense:	surgeon.n.01
+	5	Carl
+			name:	PERSON				5-6	Carl Beck 
+	6	Beck
+	7	(
+	8	1856
+			name:	DATE				8-8	1856 
+	9	–
+	10	1911
+			name:	DATE				10-10	1911 
+	11	)
+	12	,
+	13	he
+			coref:	IDENT			2	13-13	he 
+	14	is
+			sense:	be.v.01
+			prop:	be.03
+			V		14-14	is 
+	15	credited
+			sense:	credit.v.01
+			prop:	credit.01
+			V		15-15	credited 
+			N-ARGM-ADV		0-11	With German - American surgeon Carl Beck ( 1856 – 1911 ) 
+			N-ARG-A1		13-13	he 
+			N-ARG-A2		16-23	with developing a surgical technique for balanic hypospadias 
+	16	with
+	17	developing
+			sense:	develop.v.01
+			prop:	develop.02
+			V		17-17	developing 
+			N-ARG-A0		13-13	he 
+			N-ARG-A1		18-23	a surgical technique for balanic hypospadias 
+	18	a
+	19	surgical
+			sense:	surgical.a.01
+	20	technique
+			sense:	technique.n.01
+	21	for
+	22	balanic
+	23	hypospadias
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1885 , Hacker assisted Billroth when the latter performed the first resection of the pylorus followed by posterior gastrojejunostomy .
+
+
+Treebanked sentence:
+--------------------
+In 1885 , Hacker assisted Billroth when the latter performed the first resection of the pylorus followed by posterior gastrojejunostomy . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP 1885)))
+    (, ,)
+    (NP (NNP Hacker))
+    (VP (VBD assisted)
+      (NP (NNP Billroth))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP
+            (NP (DT the) (JJ latter))
+            (VP (VBN performed)
+              (NP
+                (NP (DT the) (JJ first) (NN resection))
+                (PP (IN of)
+                  (NP (DT the) (NN pylorus))))))
+          (VP (VBN followed)
+            (PP (IN by)
+              (NP (JJ posterior) (NN gastrojejunostomy)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1885
+			name:	DATE				1-1	1885 
+	2	,
+	3	Hacker
+			coref:	IDENT			2	3-3	Hacker 
+			name:	TITLE				3-3	Hacker 
+	4	assisted
+			sense:	assist.v.02
+			prop:	assist.01
+			V		4-4	assisted 
+			N-ARGM-TMP		0-1	In 1885 
+			N-ARG-A0		3-3	Hacker 
+			N-ARG-A1		5-5	Billroth 
+			N-ARGM-TMP		6-19	when the latter performed the first resection of the pylorus followed by posterior gastrojejunostomy 
+	5	Billroth
+	6	when
+	7	the
+	8	latter
+			sense:	latter.a.01
+	9	performed
+			sense:	perform.v.01
+			prop:	perform.01
+			V		9-9	performed 
+			N-ARGM-TMP		6-6	when 
+			N-ARG-A0		7-8	the latter 
+			N-ARG-A1		10-19	the first resection of the pylorus followed by posterior gastrojejunostomy 
+	10	the
+	11	first
+			name:	ORDINAL				11-11	first 
+			sense:	first.a.01
+	12	resection
+			sense:	resection.n.01
+	13	of
+	14	the
+	15	pylorus
+			sense:	pylorus.n.01
+	16	followed
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		16-16	followed 
+			N-ARG-A1		17-19	by posterior gastrojejunostomy 
+	17	by
+	18	posterior
+			sense:	posterior.a.01
+	19	gastrojejunostomy
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Afterwards , Hacker documented a detailed account of the operation .
+
+
+Treebanked sentence:
+--------------------
+Afterwards , Hacker documented a detailed account of the operation . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Afterwards))
+    (, ,)
+    (NP (NNP Hacker))
+    (VP (VBD documented)
+      (NP
+        (NP (DT a) (JJ detailed) (NN account))
+        (PP (IN of)
+          (NP (DT the) (NN operation)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Afterwards
+			sense:	subsequently.r.01
+	1	,
+	2	Hacker
+			coref:	IDENT			2	2-2	Hacker 
+			name:	TITLE				2-2	Hacker 
+	3	documented
+			sense:	document.v.01
+			prop:	document.01
+			V		3-3	documented 
+			N-ARGM-TMP		0-0	Afterwards 
+			N-ARG-A0		2-2	Hacker 
+			N-ARG-A1		4-9	a detailed account of the operation 
+	4	a
+	5	detailed
+			sense:	detailed.s.01
+	6	account
+			sense:	history.n.02
+	7	of
+	8	the
+	9	operation
+			sense:	operation.n.06
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+With surgeon Georg Lotheissen ( 1868 – 1941 ) , he published two treatises concerning the esophagus , Angeborene Missbildungen , Verletzungen und Erkrankungen der Speiseröhre ( Congenital abnormalities , injuries and diseases of the esophagus ) and Chirurgie der Speiseröhre ( Surgery of the esophagus ) .
+
+
+Treebanked sentence:
+--------------------
+With surgeon Georg Lotheissen ( 1868 – 1941 ) , he published two treatises concerning the esophagus , Angeborene Missbildungen , Verletzungen und Erkrankungen der Speiseröhre ( Congenital abnormalities , injuries and diseases of the esophagus ) and Chirurgie der Speiseröhre ( Surgery of the esophagus ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN With)
+      (NP (NN surgeon) (NNP Georg) (NNP Lotheissen)))
+    (PRN (-LRB- -LRB-)
+      (NP (CD 1868) (SYM –) (CD 1941))
+      (-RRB- -RRB-))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD published)
+      (NP
+        (NP (CD two) (NNS treatises))
+        (PP (VBG concerning)
+          (NP
+            (NP (DT the) (NN esophagus))
+            (, ,)
+            (NP (NNP Angeborene) (NNP Missbildungen))
+            (, ,)
+            (NP
+              (NP (NNP Verletzungen) (NNP und) (NNP Erkrankungen) (NNP der) (NNP Speiseröhre))
+              (-LRB- -LRB-)
+              (NP
+                (NP (JJ Congenital) (NNS abnormalities) (, ,) (NNS injuries)
+                  (CC and)
+                  (NNS diseases))
+                (PP (IN of)
+                  (NP (DT the) (NN esophagus))))
+              (-RRB- -RRB-))
+            (CC and)
+            (NP (NNP Chirurgie) (NNP der) (NNP Speiseröhre)))))
+      (PRN (-LRB- -LRB-)
+        (NP
+          (NP (NN Surgery))
+          (PP (IN of)
+            (NP (DT the) (NN esophagus))))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	With
+	1	surgeon
+			name:	TITLE				1-1	surgeon 
+			sense:	surgeon.n.01
+	2	Georg
+			name:	PERSON				2-3	Georg Lotheissen 
+	3	Lotheissen
+	4	(
+	5	1868
+			name:	DATE				5-5	1868 
+	6	–
+	7	1941
+			name:	DATE				7-7	1941 
+	8	)
+	9	,
+	10	he
+			coref:	IDENT			2	10-10	he 
+	11	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		11-11	published 
+			N-ARGM-COM		0-8	With surgeon Georg Lotheissen ( 1868 – 1941 ) 
+			N-ARG-A0		10-10	he 
+			N-ARG-A1		12-46	two treatises concerning the esophagus , Angeborene Missbildungen , Verletzungen und Erkrankungen der Speiseröhre ( Congenital abnormalities , injuries and diseases of the esophagus ) and Chirurgie der Speiseröhre ( Surgery of the esophagus ) 
+	12	two
+			name:	NUMBER				12-12	two 
+	13	treatises
+			sense:	treatise.n.01
+	14	concerning
+			sense:	refer.v.02
+			prop:	concern.02
+			V		14-14	concerning 
+			N-ARG-A0		12-13	two treatises 
+			N-ARG-A1		15-16	the esophagus 
+	15	the
+	16	esophagus
+			sense:	esophagus.n.01
+	17	,
+	18	Angeborene
+			name:	PERSON				18-19	Angeborene Missbildungen 
+	19	Missbildungen
+	20	,
+	21	Verletzungen
+			name:	LOCATION				21-21	Verletzungen 
+	22	und
+	23	Erkrankungen
+	24	der
+	25	Speiseröhre
+	26	(
+	27	Congenital
+			name:	CAUSE_OF_DEATH				27-28	Congenital abnormalities 
+			sense:	congenital.s.01
+	28	abnormalities
+			sense:	abnormality.n.01
+	29	,
+	30	injuries
+			sense:	injury.n.02
+	31	and
+	32	diseases
+			name:	CAUSE_OF_DEATH				32-32	diseases 
+			sense:	disease.n.01
+	33	of
+	34	the
+			coref:	IDENT			1	34-35	the esophagus 
+	35	esophagus
+			sense:	esophagus.n.01
+	36	)
+	37	and
+	38	Chirurgie
+			name:	PERSON				38-38	Chirurgie 
+	39	der
+	40	Speiseröhre
+	41	(
+	42	Surgery
+			name:	CAUSE_OF_DEATH				42-42	Surgery 
+			sense:	operation.n.06
+	43	of
+	44	the
+			coref:	IDENT			1	44-45	the esophagus 
+	45	esophagus
+			sense:	esophagus.n.01
+	46	)
+	47	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.28-28	1894 
+				2.13-13	1894 
+	Chain 1 (IDENT)
+				7.34-35	the esophagus 
+				7.44-45	the esophagus 
+	Chain 2 (IDENT)
+				0.0-13	Viktor von Hacker ( October 21 , 1852 – May 20 , 1933 ) 
+				1.2-2	he 
+				1.4-4	his 
+				2.1-1	he 
+				3.0-0	Hacker 
+				3.4-4	his 
+				4.13-13	he 
+				5.3-3	Hacker 
+				6.2-2	Hacker 
+				7.10-10	he 
+

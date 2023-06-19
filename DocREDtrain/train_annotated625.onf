@@ -1,0 +1,993 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mount Carmel Cemetery is a Roman Catholic cemetery located in the Chicago suburb of Hillside , Illinois .
+
+
+Treebanked sentence:
+--------------------
+Mount Carmel Cemetery is a Roman Catholic cemetery located in the Chicago suburb of Hillside , Illinois . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Mount) (NNP Carmel) (NNP Cemetery))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ Roman) (JJ Catholic) (NN cemetery))
+        (VP (VBN located)
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NNP Chicago) (NN suburb))
+              (PP (IN of)
+                (NP (NNP Hillside) (, ,) (NNP Illinois))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mount
+			coref:	IDENT			0	0-2	Mount Carmel Cemetery 
+			name:	LOCATION				0-0	Mount 
+	1	Carmel
+			name:	CITY				1-1	Carmel 
+	2	Cemetery
+			name:	LOCATION				2-2	Cemetery 
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Mount Carmel Cemetery 
+			N-ARG-A2		4-16	a Roman Catholic cemetery located in the Chicago suburb of Hillside , Illinois 
+	4	a
+	5	Roman
+			name:	RELIGION				5-6	Roman Catholic 
+	6	Catholic
+			sense:	catholic.a.01
+	7	cemetery
+			sense:	cemetery.n.01
+	8	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		8-8	located 
+			N-ARG-A1		4-7	a Roman Catholic cemetery 
+			N-ARGM-LOC		9-16	in the Chicago suburb of Hillside , Illinois 
+	9	in
+	10	the
+	11	Chicago
+			name:	CITY				11-11	Chicago 
+	12	suburb
+			sense:	suburb.n.01
+	13	of
+	14	Hillside
+			name:	CITY				14-14	Hillside 
+	15	,
+	16	Illinois
+			name:	STATE_OR_PROVINCE				16-16	Illinois 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mount Carmel is an active cemetery , located within the jurisdiction of the Roman Catholic Archdiocese of Chicago .
+
+
+Treebanked sentence:
+--------------------
+Mount Carmel is an active cemetery , located within the jurisdiction of the Roman Catholic Archdiocese of Chicago . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Mount) (NNP Carmel))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ active) (NN cemetery))
+        (, ,)
+        (VP (VBN located)
+          (PP (IN within)
+            (NP
+              (NP (DT the) (NN jurisdiction))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NNP Roman) (NNP Catholic) (NNP Archdiocese))
+                  (PP (IN of)
+                    (NP (NNP Chicago))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mount
+			coref:	IDENT			0	0-1	Mount Carmel 
+			name:	LOCATION				0-0	Mount 
+	1	Carmel
+			name:	CITY				1-1	Carmel 
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Mount Carmel 
+			N-ARG-A2		3-17	an active cemetery , located within the jurisdiction of the Roman Catholic Archdiocese of Chicago 
+	3	an
+	4	active
+			sense:	active.a.07
+	5	cemetery
+			sense:	cemetery.n.01
+	6	,
+	7	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		7-7	located 
+			N-ARG-A1		3-5	an active cemetery 
+			N-ARGM-LOC		8-17	within the jurisdiction of the Roman Catholic Archdiocese of Chicago 
+	8	within
+	9	the
+			coref:	IDENT			2	9-17	the jurisdiction of the Roman Catholic Archdiocese of Chicago 
+	10	jurisdiction
+			sense:	jurisdiction.n.02
+	11	of
+	12	the
+	13	Roman
+			name:	ORGANIZATION				13-17	Roman Catholic Archdiocese of Chicago 
+	14	Catholic
+	15	Archdiocese
+	16	of
+	17	Chicago
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is located near the Eisenhower Expressway ( Interstate 290 ) at Wolf and Roosevelt Roads .
+
+
+Treebanked sentence:
+--------------------
+It is located near the Eisenhower Expressway ( Interstate 290 ) at Wolf and Roosevelt Roads . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN near)
+          (NP (DT the) (NNP Eisenhower) (NNP Expressway)
+            (PRN (-LRB- -LRB-)
+              (NP (NNP Interstate) (CD 290))
+              (-RRB- -RRB-))))
+        (PP (IN at)
+          (NP (NNP Wolf)
+            (CC and)
+            (NNP Roosevelt) (NNS Roads)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		2-2	located 
+			N-ARG-A1		0-0	It 
+			N-ARGM-LOC		3-15	near the Eisenhower Expressway ( Interstate 290 ) at Wolf and Roosevelt Roads 
+	3	near
+	4	the
+	5	Eisenhower
+			name:	LOCATION				5-6	Eisenhower Expressway 
+	6	Expressway
+	7	(
+	8	Interstate
+	9	290
+			name:	NUMBER				9-9	290 
+	10	)
+	11	at
+	12	Wolf
+			name:	PERSON				12-12	Wolf 
+	13	and
+	14	Roosevelt
+			name:	CITY				14-14	Roosevelt 
+	15	Roads
+			name:	LOCATION				15-15	Roads 
+			sense:	road.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Another Catholic cemetery , Queen of Heaven , is located immediately south of Mount Carmel , across Roosevelt Road .
+
+
+Treebanked sentence:
+--------------------
+Another Catholic cemetery , Queen of Heaven , is located immediately south of Mount Carmel , across Roosevelt Road . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT Another) (JJ Catholic) (NN cemetery))
+      (, ,)
+      (NP
+        (NP (NN Queen))
+        (PP (IN of)
+          (NP (NNP Heaven))))
+      (, ,))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (ADVP (RB immediately) (RB south))
+        (PP (IN of)
+          (NP (NNP Mount) (NNP Carmel)))
+        (, ,)
+        (PP (IN across)
+          (NP (NNP Roosevelt) (NNP Road)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Another
+			coref:	IDENT			1	0-6	Another Catholic cemetery , Queen of Heaven 
+	1	Catholic
+			name:	RELIGION				1-1	Catholic 
+			sense:	catholic.a.01
+	2	cemetery
+			sense:	cemetery.n.01
+	3	,
+	4	Queen
+			name:	TITLE				4-4	Queen 
+			sense:	queen.n.02
+	5	of
+	6	Heaven
+	7	,
+	8	is
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	is 
+	9	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		9-9	located 
+			N-ARG-A1		0-6	Another Catholic cemetery , Queen of Heaven 
+			N-ARGM-LOC		10-14	immediately south of Mount Carmel 
+			N-ARGM-LOC		16-18	across Roosevelt Road 
+	10	immediately
+			sense:	immediately.r.02
+	11	south
+			sense:	south.r.01
+	12	of
+	13	Mount
+			coref:	IDENT			0	13-14	Mount Carmel 
+			name:	LOCATION				13-13	Mount 
+	14	Carmel
+			name:	CITY				14-14	Carmel 
+	15	,
+	16	across
+	17	Roosevelt
+			name:	CITY				17-17	Roosevelt 
+	18	Road
+			name:	LOCATION				18-18	Road 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mount Carmel Cemetery was consecrated in 1901 and is currently in size .
+
+
+Treebanked sentence:
+--------------------
+Mount Carmel Cemetery was consecrated in 1901 and is currently in size . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Mount) (NNP Carmel) (NNP Cemetery))
+    (VP
+      (VP (VBD was)
+        (VP (VBN consecrated)
+          (PP (IN in)
+            (NP (CD 1901)))))
+      (CC and)
+      (VP (VBZ is)
+        (ADVP (RB currently))
+        (PP (IN in)
+          (NP (NN size)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mount
+			coref:	IDENT			0	0-2	Mount Carmel Cemetery 
+			name:	LOCATION				0-0	Mount 
+	1	Carmel
+			name:	CITY				1-1	Carmel 
+	2	Cemetery
+			name:	LOCATION				2-2	Cemetery 
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	consecrated
+			sense:	consecrate.v.04
+			prop:	consecrate.01
+			V		4-4	consecrated 
+			N-ARG-A1		0-2	Mount Carmel Cemetery 
+			N-ARGM-TMP		5-6	in 1901 
+	5	in
+	6	1901
+			name:	DATE				6-6	1901 
+	7	and
+	8	is
+			sense:	be.v.01
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-2	Mount Carmel Cemetery 
+			N-ARGM-TMP		9-9	currently 
+			N-ARG-A2		10-11	in size 
+	9	currently
+			name:	DATE				9-9	currently 
+			sense:	presently.r.02
+	10	in
+	11	size
+			sense:	size.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It maintained its own office until 1965 , when it combined operations with Queen of Heaven Cemetery .
+
+
+Treebanked sentence:
+--------------------
+It maintained its own office until 1965 , when it combined operations with Queen of Heaven Cemetery . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD maintained)
+      (NP (PRP$ its) (JJ own) (NN office))
+      (PP (IN until)
+        (NP (CD 1965)))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP it))
+          (VP (VBD combined)
+            (NP (NNS operations))
+            (PP (IN with)
+              (NP
+                (NP (NN Queen))
+                (PP (IN of)
+                  (NP (NNP Heaven) (NNP Cemetery)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	maintained
+			sense:	sustain.v.04
+			prop:	maintain.01
+			V		1-1	maintained 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-4	its own office 
+			N-ARGM-TMP		5-16	until 1965 , when it combined operations with Queen of Heaven Cemetery 
+	2	its
+			coref:	IDENT			0	2-2	its 
+	3	own
+			sense:	own.s.01
+	4	office
+			sense:	office.n.01
+	5	until
+	6	1965
+			name:	DATE				6-6	1965 
+	7	,
+	8	when
+	9	it
+			coref:	IDENT			0	9-9	it 
+	10	combined
+			sense:	combine.v.05
+			prop:	combine.01
+			V		10-10	combined 
+			N-ARGM-TMP		6-6	1965 
+			R-ARGM-TMP		8-8	when 
+			N-ARG-A0		9-9	it 
+			N-ARG-A1		11-11	operations 
+			N-ARG-A2		12-16	with Queen of Heaven Cemetery 
+	11	operations
+			sense:	operation.n.02
+	12	with
+	13	Queen
+			name:	TITLE				13-13	Queen 
+			sense:	queen.n.02
+	14	of
+	15	Heaven
+	16	Cemetery
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+There are more than 226,275 remains at Mount Carmel and about 800 remains are interred there annually .
+
+
+Treebanked sentence:
+--------------------
+There are more than 226,275 remains at Mount Carmel and about 800 remains are interred there annually . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP
+          (QP (JJR more) (IN than) (CD 226,275))
+          (NNS remains))
+        (PP
+          (PP (IN at)
+            (NP (NNP Mount) (NNP Carmel)))
+          (CC and)
+          (PP (IN about)
+            (NP
+              (NP (CD 800) (NNS remains))
+              (SBAR
+                (S
+                  (VP (VBP are)
+                    (VP (VBN interred)
+                      (ADVP (RB there))
+                      (ADVP (RB annually)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	There
+	1	are
+			sense:	exist.v.01
+			prop:	be.02
+			V		1-1	are 
+			N-ARG-A1		2-8	more than 226,275 remains at Mount Carmel 
+	2	more
+			sense:	more.a.02
+	3	than
+	4	226,275
+			name:	NUMBER				4-4	226,275 
+	5	remains
+			sense:	cadaver.n.01
+	6	at
+	7	Mount
+			name:	LOCATION				7-7	Mount 
+	8	Carmel
+			name:	CITY				8-8	Carmel 
+	9	and
+	10	about
+	11	800
+			name:	NUMBER				11-11	800 
+	12	remains
+			sense:	cadaver.n.01
+	13	are
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	are 
+	14	interred
+			sense:	bury.v.02
+			prop:	enter.02
+			V		14-14	interred 
+			N-ARG-A1		10-12	about 800 remains 
+			N-ARGM-LOC		15-15	there 
+			N-ARGM-TMP		16-16	annually 
+	15	there
+			sense:	there.r.01
+	16	annually
+			name:	SET				16-16	annually 
+			sense:	annually.r.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mount Carmel Cemetery is also the final resting place of numerous local organized crime figures , the most notorious of these being Al Capone .
+
+
+Treebanked sentence:
+--------------------
+Mount Carmel Cemetery is also the final resting place of numerous local organized crime figures , the most notorious of these being Al Capone . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Mount) (NNP Carmel) (NNP Cemetery))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (NP
+        (NP (DT the) (JJ final) (NN resting) (NN place))
+        (PP (IN of)
+          (NP
+            (NP (JJ numerous) (JJ local)
+              (NML (VBN organized) (NN crime))
+              (NNS figures))
+            (, ,)
+            (NP
+              (NP (DT the) (RBS most) (JJ notorious))
+              (PP (IN of)
+                (S
+                  (NP (DT these))
+                  (VP (VBG being)
+                    (NP (NNP Al) (NNP Capone))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mount
+			coref:	IDENT			0	0-2	Mount Carmel Cemetery 
+			name:	LOCATION				0-0	Mount 
+	1	Carmel
+			name:	CITY				1-1	Carmel 
+	2	Cemetery
+			name:	LOCATION				2-2	Cemetery 
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Mount Carmel Cemetery 
+			N-ARGM-DIS		4-4	also 
+			N-ARG-A2		5-23	the final resting place of numerous local organized crime figures , the most notorious of these being Al Capone 
+	4	also
+			sense:	besides.r.02
+	5	the
+	6	final
+			sense:	concluding.s.01
+	7	resting
+	8	place
+			sense:	topographic_point.n.01
+	9	of
+	10	numerous
+			sense:	numerous.s.01
+	11	local
+			sense:	local.a.01
+	12	organized
+			sense:	form.v.01
+			prop:	organize.01
+			V		12-12	organized 
+			N-ARG-A1		13-13	crime 
+	13	crime
+			sense:	crime.n.01
+	14	figures
+			sense:	name.n.04
+	15	,
+	16	the
+	17	most
+			sense:	most.r.01
+	18	notorious
+			sense:	ill-famed.s.01
+	19	of
+	20	these
+	21	being
+			sense:	be.v.02
+			prop:	be.01
+			V		21-21	being 
+			N-ARG-A1		16-20	the most notorious of these 
+			N-ARG-A2		22-23	Al Capone 
+	22	Al
+			name:	ORGANIZATION				22-23	Al Capone 
+	23	Capone
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In all , the cemetery grounds contain over 400 family mausoleums .
+
+
+Treebanked sentence:
+--------------------
+In all , the cemetery grounds contain over 400 family mausoleums . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT all)))
+    (, ,)
+    (NP (DT the) (NN cemetery) (NNS grounds))
+    (VP (VBP contain)
+      (PP (IN over)
+        (NP (CD 400) (NN family) (NNS mausoleums))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	all
+	2	,
+	3	the
+	4	cemetery
+			sense:	cemetery.n.01
+	5	grounds
+			sense:	grounds.n.03
+	6	contain
+			sense:	incorporate.v.02
+			prop:	contain.01
+			V		6-6	contain 
+			N-ARGM-ADV		0-1	In all 
+			N-ARG-A0		3-5	the cemetery grounds 
+			N-ARG-A1		7-10	over 400 family mausoleums 
+	7	over
+	8	400
+			name:	NUMBER				8-8	400 
+	9	family
+			sense:	family.n.01
+	10	mausoleums
+			sense:	mausoleum.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Many remains at the cemetery are people of Italian ancestry .
+
+
+Treebanked sentence:
+--------------------
+Many remains at the cemetery are people of Italian ancestry . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (JJ Many) (NNS remains))
+      (PP (IN at)
+        (NP (DT the) (NN cemetery))))
+    (VP (VBP are)
+      (NP
+        (NP (NNS people))
+        (PP (IN of)
+          (NP (JJ Italian) (NN ancestry)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Many
+			sense:	many.a.01
+	1	remains
+			sense:	cadaver.n.01
+	2	at
+	3	the
+			coref:	IDENT			1	3-4	the cemetery 
+	4	cemetery
+			sense:	cemetery.n.01
+	5	are
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	are 
+			N-ARG-A1		0-4	Many remains at the cemetery 
+			N-ARG-A2		6-9	people of Italian ancestry 
+	6	people
+			sense:	person.n.01
+	7	of
+	8	Italian
+			name:	NATIONALITY				8-8	Italian 
+	9	ancestry
+			sense:	lineage.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The cemetery contains hundreds of headstones and monuments adorned with statues and elaborate engravings of religious figures such as Jesus , The Blessed Mother and many saints as well as angels .
+
+
+Treebanked sentence:
+--------------------
+The cemetery contains hundreds of headstones and monuments adorned with statues and elaborate engravings of religious figures such as Jesus , The Blessed Mother and many saints as well as angels . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN cemetery))
+    (VP (VBZ contains)
+      (NP
+        (NP (NNS hundreds))
+        (PP (IN of)
+          (NP
+            (NP (NNS headstones)
+              (CC and)
+              (NNS monuments))
+            (VP (VBN adorned)
+              (PP (IN with)
+                (NP
+                  (NP (NNS statues))
+                  (CC and)
+                  (NP
+                    (NP (JJ elaborate) (NNS engravings))
+                    (PP (IN of)
+                      (NP
+                        (NP
+                          (NP (JJ religious) (NNS figures))
+                          (PP (JJ such) (IN as)
+                            (NP
+                              (NP (NNP Jesus))
+                              (, ,)
+                              (NP (DT The) (JJ Blessed) (NN Mother))
+                              (CC and)
+                              (NP (JJ many) (NNS saints)))))
+                        (CONJP (RB as) (RB well) (IN as))
+                        (NP (NNS angels))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The cemetery 
+	1	cemetery
+			sense:	cemetery.n.01
+	2	contains
+			sense:	incorporate.v.02
+			prop:	contain.01
+			V		2-2	contains 
+			N-ARG-A0		0-1	The cemetery 
+			N-ARG-A1		3-30	hundreds of headstones and monuments adorned with statues and elaborate engravings of religious figures such as Jesus , The Blessed Mother and many saints as well as angels 
+	3	hundreds
+			sense:	hundred.n.01
+	4	of
+	5	headstones
+			sense:	gravestone.n.01
+	6	and
+	7	monuments
+			sense:	memorial.n.03
+	8	adorned
+			sense:	decorate.v.01
+			prop:	adorn.01
+			V		8-8	adorned 
+			N-ARG-A1		5-7	headstones and monuments 
+			N-ARG-A2		9-30	with statues and elaborate engravings of religious figures such as Jesus , The Blessed Mother and many saints as well as angels 
+	9	with
+	10	statues
+			sense:	statue.n.01
+	11	and
+	12	elaborate
+			sense:	detailed.s.01
+	13	engravings
+			sense:	engraving.n.02
+	14	of
+	15	religious
+			sense:	religious.s.01
+	16	figures
+			sense:	figure.n.04
+	17	such
+			sense:	such.s.01
+	18	as
+	19	Jesus
+			name:	PERSON				19-19	Jesus 
+	20	,
+	21	The
+	22	Blessed
+			name:	TITLE				22-22	Blessed 
+			sense:	beatified.s.01
+	23	Mother
+			sense:	mother.n.01
+	24	and
+	25	many
+			sense:	many.a.01
+	26	saints
+			sense:	saint.n.01
+	27	as
+			sense:	equally.r.01
+	28	well
+			sense:	well.r.01
+	29	as
+	30	angels
+			sense:	angel.n.01
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Many of the tombstones contain photographs of the inhabitants , reflecting a custom common in Italian cemeteries .
+
+
+Treebanked sentence:
+--------------------
+Many of the tombstones contain photographs of the inhabitants , reflecting a custom common in Italian cemeteries . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (JJ Many))
+      (PP (IN of)
+        (NP (DT the) (NNS tombstones))))
+    (VP (VBP contain)
+      (NP
+        (NP (NNS photographs))
+        (PP (IN of)
+          (NP (DT the) (NNS inhabitants))))
+      (, ,)
+      (S
+        (VP (VBG reflecting)
+          (NP (DT a) (NN custom) (NN common))
+          (PP (IN in)
+            (NP (JJ Italian) (NNS cemeteries))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Many
+			sense:	many.a.01
+	1	of
+	2	the
+	3	tombstones
+			sense:	gravestone.n.01
+	4	contain
+			sense:	incorporate.v.02
+			prop:	contain.01
+			V		4-4	contain 
+			N-ARG-A0		0-3	Many of the tombstones 
+			N-ARG-A1		5-8	photographs of the inhabitants 
+			N-ARGM-ADV		10-16	reflecting a custom common in Italian cemeteries 
+	5	photographs
+			sense:	photograph.n.01
+	6	of
+	7	the
+	8	inhabitants
+			sense:	inhabitant.n.01
+	9	,
+	10	reflecting
+			sense:	reflect.v.01
+			prop:	reflect.01
+			V		10-10	reflecting 
+			N-ARG-A1		11-16	a custom common in Italian cemeteries 
+	11	a
+	12	custom
+			sense:	custom.n.01
+	13	common
+			sense:	park.n.02
+	14	in
+	15	Italian
+			name:	NATIONALITY				15-15	Italian 
+	16	cemeteries
+			sense:	cemetery.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The cemetery contains Commonwealth war graves of two World War I soldiers of the Canadian Army .
+
+
+Treebanked sentence:
+--------------------
+The cemetery contains Commonwealth war graves of two World War I soldiers of the Canadian Army . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN cemetery))
+    (VP (VBZ contains)
+      (NP
+        (NP (NNP Commonwealth) (NN war) (NNS graves))
+        (PP (IN of)
+          (NP
+            (NP (CD two)
+              (NML (NNP World) (NNP War) (NNP I))
+              (NNS soldiers))
+            (PP (IN of)
+              (NP (DT the) (JJ Canadian) (NNP Army)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The cemetery 
+	1	cemetery
+			sense:	cemetery.n.01
+	2	contains
+			sense:	incorporate.v.02
+			prop:	contain.01
+			V		2-2	contains 
+			N-ARG-A0		0-1	The cemetery 
+			N-ARG-A1		3-15	Commonwealth war graves of two World War I soldiers of the Canadian Army 
+	3	Commonwealth
+	4	war
+			name:	CAUSE_OF_DEATH				4-4	war 
+			sense:	war.n.02
+	5	graves
+			sense:	grave.n.02
+	6	of
+	7	two
+			name:	NUMBER				7-7	two 
+	8	World
+			name:	MISC				8-8	World 
+	9	War
+			name:	CAUSE_OF_DEATH				9-9	War 
+	10	I
+	11	soldiers
+			sense:	soldier.n.01
+	12	of
+	13	the
+	14	Canadian
+			name:	ORGANIZATION				14-15	Canadian Army 
+	15	Army
+	16	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-2	Mount Carmel Cemetery 
+				1.0-1	Mount Carmel 
+				3.13-14	Mount Carmel 
+				4.0-2	Mount Carmel Cemetery 
+				5.0-0	It 
+				5.2-2	its 
+				5.9-9	it 
+				7.0-2	Mount Carmel Cemetery 
+	Chain 1 (IDENT)
+				3.0-6	Another Catholic cemetery , Queen of Heaven 
+				9.3-4	the cemetery 
+				10.0-1	The cemetery 
+				12.0-1	The cemetery 
+	Chain 2 (IDENT)
+				1.9-17	the jurisdiction of the Roman Catholic Archdiocese of Chicago 
+				2.0-0	It 
+

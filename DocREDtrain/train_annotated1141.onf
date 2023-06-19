@@ -1,0 +1,863 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Chris Elder is a retired diplomat of New Zealand .
+
+
+Treebanked sentence:
+--------------------
+Chris Elder is a retired diplomat of New Zealand . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Chris) (NN Elder))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ retired) (NN diplomat))
+        (PP (IN of)
+          (NP (NNP New) (NNP Zealand)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Chris
+			coref:	IDENT			0	0-1	Chris Elder 
+			name:	PERSON				0-1	Chris Elder 
+	1	Elder
+			sense:	elder.n.01
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Chris Elder 
+			N-ARG-A2		3-8	a retired diplomat of New Zealand 
+	3	a
+	4	retired
+			sense:	retired.s.01
+	5	diplomat
+			name:	TITLE				5-5	diplomat 
+			sense:	diplomat.n.01
+	6	of
+	7	New
+			coref:	IDENT			3	7-8	New Zealand 
+			name:	COUNTRY				7-8	New Zealand 
+	8	Zealand
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Until 1973 Chris Elder was trained as a Chinese linguist .
+
+
+Treebanked sentence:
+--------------------
+Until 1973 Chris Elder was trained as a Chinese linguist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Until)
+      (NP (CD 1973)))
+    (NP (NNP Chris) (NN Elder))
+    (VP (VBD was)
+      (VP (VBN trained)
+        (PP (IN as)
+          (NP (DT a) (JJ Chinese) (NN linguist)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Until
+	1	1973
+			coref:	IDENT			2	1-1	1973 
+			name:	DATE				1-1	1973 
+	2	Chris
+			coref:	IDENT			0	2-3	Chris Elder 
+			name:	PERSON				2-3	Chris Elder 
+	3	Elder
+			sense:	elder.n.01
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	trained
+			sense:	train.v.02
+			prop:	train.01
+			V		5-5	trained 
+			N-ARGM-TMP		0-1	Until 1973 
+			N-ARG-A2		2-3	Chris Elder 
+			N-ARG-A1		6-9	as a Chinese linguist 
+	6	as
+	7	a
+	8	Chinese
+			name:	NATIONALITY				8-8	Chinese 
+	9	linguist
+			name:	TITLE				9-9	linguist 
+			sense:	linguist.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+From 1973 to 1975 he was employed in the New Zealand Embassy in Beijing when it was opened .
+
+
+Treebanked sentence:
+--------------------
+From 1973 to 1975 he was employed in the New Zealand Embassy in Beijing when it was opened . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN From)
+      (NP
+        (NP (CD 1973))
+        (PP (IN to)
+          (NP (CD 1975)))))
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN employed)
+        (PP (IN in)
+          (NP
+            (NP (DT the)
+              (NML (NNP New) (NNP Zealand))
+              (NNP Embassy))
+            (PP (IN in)
+              (NP (NNP Beijing)))))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP it))
+            (VP (VBD was)
+              (VP (VBN opened)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	From
+	1	1973
+			coref:	IDENT			2	1-1	1973 
+			name:	DATE				1-1	1973 
+	2	to
+	3	1975
+			name:	DATE				3-3	1975 
+	4	he
+			coref:	IDENT			0	4-4	he 
+	5	was
+			sense:	be.v.08
+			prop:	be.03
+			V		5-5	was 
+	6	employed
+			sense:	hire.v.01
+			prop:	employ.01
+			V		6-6	employed 
+			N-ARGM-TMP		0-3	From 1973 to 1975 
+			N-ARG-A1		4-4	he 
+			N-ARG-A2		7-13	in the New Zealand Embassy in Beijing 
+			N-ARGM-TMP		14-17	when it was opened 
+	7	in
+	8	the
+	9	New
+			name:	COUNTRY				9-10	New Zealand 
+	10	Zealand
+	11	Embassy
+			name:	LOCATION				11-11	Embassy 
+	12	in
+	13	Beijing
+			coref:	IDENT			5	13-13	Beijing 
+			name:	CITY				13-13	Beijing 
+	14	when
+	15	it
+	16	was
+			sense:	be.v.01
+			prop:	be.03
+			V		16-16	was 
+	17	opened
+			sense:	open.v.02
+			prop:	open.01
+			V		17-17	opened 
+			N-ARGM-TMP		14-14	when 
+			N-ARG-A1		15-15	it 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+From 1993 to 1997 he was ambassador in Beijing .
+
+
+Treebanked sentence:
+--------------------
+From 1993 to 1997 he was ambassador in Beijing . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN From)
+      (NP
+        (NP (CD 1993))
+        (PP (IN to)
+          (NP (CD 1997)))))
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP (NN ambassador))
+        (PP (IN in)
+          (NP (NNP Beijing)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	From
+	1	1993
+			name:	DATE				1-3	1993 to 1997 
+	2	to
+	3	1997
+	4	he
+			coref:	IDENT			0	4-4	he 
+	5	was
+			sense:	be.v.08
+			prop:	be.01
+			V		5-5	was 
+			N-ARGM-TMP		0-3	From 1993 to 1997 
+			N-ARG-A1		4-4	he 
+			N-ARG-A2		6-8	ambassador in Beijing 
+	6	ambassador
+			name:	TITLE				6-6	ambassador 
+			sense:	ambassador.n.01
+	7	in
+	8	Beijing
+			coref:	IDENT			5	8-8	Beijing 
+			name:	CITY				8-8	Beijing 
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+From 2001 to 2006 he was ambassador in Jakarta .
+
+
+Treebanked sentence:
+--------------------
+From 2001 to 2006 he was ambassador in Jakarta . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN From)
+      (NP
+        (NP (CD 2001))
+        (PP (IN to)
+          (NP (CD 2006)))))
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP (NN ambassador))
+        (PP (IN in)
+          (NP (NNP Jakarta)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	From
+	1	2001
+			name:	DATE				1-1	2001 
+	2	to
+	3	2006
+			coref:	IDENT			1	3-3	2006 
+			name:	DATE				3-3	2006 
+	4	he
+			coref:	IDENT			0	4-4	he 
+	5	was
+			sense:	be.v.08
+			prop:	be.01
+			V		5-5	was 
+			N-ARGM-TMP		0-3	From 2001 to 2006 
+			N-ARG-A1		4-4	he 
+			N-ARG-A2		6-8	ambassador in Jakarta 
+	6	ambassador
+			name:	TITLE				6-6	ambassador 
+			sense:	ambassador.n.01
+	7	in
+	8	Jakarta
+			name:	CITY				8-8	Jakarta 
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+From 2006 to he was ambassador in the Embassy of New Zealand in Moscow ( Russian Federation ) .
+
+
+Treebanked sentence:
+--------------------
+From 2006 to he was ambassador in the Embassy of New Zealand in Moscow ( Russian Federation ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN From)
+      (PP
+        (NP (CD 2006))
+        (IN to)))
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP (NN ambassador))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNP Embassy))
+            (PP (IN of)
+              (NP (NNP New) (NNP Zealand))))))
+      (PP (IN in)
+        (NP (NNP Moscow)))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP Russian) (NNP Federation))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	From
+	1	2006
+			coref:	IDENT			1	1-1	2006 
+			name:	DATE				1-1	2006 
+	2	to
+	3	he
+			coref:	IDENT			0	3-3	he 
+	4	was
+			sense:	be.v.08
+			prop:	be.01
+			V		4-4	was 
+			N-ARGM-TMP		0-2	From 2006 to 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		5-17	ambassador in the Embassy of New Zealand in Moscow ( Russian Federation ) 
+	5	ambassador
+			name:	TITLE				5-5	ambassador 
+			sense:	ambassador.n.01
+	6	in
+	7	the
+	8	Embassy
+	9	of
+	10	New
+			coref:	IDENT			3	10-11	New Zealand 
+			name:	COUNTRY				10-11	New Zealand 
+	11	Zealand
+	12	in
+	13	Moscow
+			name:	CITY				13-13	Moscow 
+	14	(
+	15	Russian
+			name:	COUNTRY				15-16	Russian Federation 
+	16	Federation
+	17	)
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In Wellington , Chris has served as the Deputy Secretary with responsibility for Asian affairs and security policy in the Asia - Pacific region .
+
+
+Treebanked sentence:
+--------------------
+In Wellington , Chris has served as the Deputy Secretary with responsibility for Asian affairs and security policy in the Asia - Pacific region . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP Wellington)))
+    (, ,)
+    (NP (NNP Chris))
+    (VP (VBZ has)
+      (VP (VBN served)
+        (PP (IN as)
+          (NP
+            (NP (DT the)
+              (NML
+                (NML
+                  (NML (NNP Deputy) (NNP Secretary))
+                  (PP (IN with)
+                    (NP (NN responsibility)))
+                  (PP (IN for)
+                    (NP (JJ Asian) (NNS affairs))))
+                (CC and)
+                (NML (NN security)))
+              (NN policy))
+            (PP (IN in)
+              (NP (DT the)
+                (NML (NNP Asia) (HYPH -) (NNP Pacific))
+                (NN region)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	Wellington
+			name:	CITY				1-1	Wellington 
+	2	,
+	3	Chris
+			coref:	IDENT			0	3-3	Chris 
+			name:	PERSON				3-3	Chris 
+	4	has
+			sense:	have.v.01
+			prop:	have.01
+			V		4-4	has 
+	5	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		5-5	served 
+			N-ARGM-LOC		0-1	In Wellington 
+			N-ARG-A0		3-3	Chris 
+			N-ARG-A1		6-23	as the Deputy Secretary with responsibility for Asian affairs and security policy in the Asia - Pacific region 
+	6	as
+	7	the
+	8	Deputy
+			name:	TITLE				8-9	Deputy Secretary 
+	9	Secretary
+	10	with
+	11	responsibility
+			sense:	duty.n.01
+	12	for
+	13	Asian
+			name:	NATIONALITY				13-13	Asian 
+	14	affairs
+			sense:	matter.n.01
+	15	and
+	16	security
+			sense:	security.n.01
+	17	policy
+			sense:	policy.n.02
+	18	in
+	19	the
+	20	Asia
+			name:	CITY				20-20	Asia 
+	21	-
+			name:	LOCATION				21-22	- Pacific 
+	22	Pacific
+	23	region
+			sense:	region.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+From to 2012 he was Chargé d'affaires in Berlin .
+
+
+Treebanked sentence:
+--------------------
+From to 2012 he was Chargé d'affaires in Berlin . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN From)
+      (PP (IN to)
+        (NP (CD 2012))))
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP (NNP Chargé) (NNP d'affaires))
+        (PP (IN in)
+          (NP (NNP Berlin)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	From
+	1	to
+	2	2012
+			coref:	IDENT			4	2-2	2012 
+			name:	DATE				2-2	2012 
+	3	he
+			coref:	IDENT			0	3-3	he 
+	4	was
+			sense:	be.v.08
+			prop:	be.01
+			V		4-4	was 
+			N-ARGM-TMP		0-2	From to 2012 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		5-8	Chargé d'affaires in Berlin 
+	5	Chargé
+	6	d'affaires
+	7	in
+	8	Berlin
+			name:	CITY				8-8	Berlin 
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2012 he retired from the Ministry of Foreign Affairs and Trade ( New Zealand ) .
+
+
+Treebanked sentence:
+--------------------
+In 2012 he retired from the Ministry of Foreign Affairs and Trade ( New Zealand ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2012)))
+    (NP (PRP he))
+    (VP (VBD retired)
+      (PP (IN from)
+        (NP
+          (NP (DT the) (NNP Ministry))
+          (PP (IN of)
+            (NP
+              (NML (NNP Foreign) (NNPS Affairs))
+              (CC and)
+              (NML
+                (NML (NNP Trade))
+                (-LRB- -LRB-)
+                (NML (NNP New) (NNP Zealand))
+                (-RRB- -RRB-)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2012
+			coref:	IDENT			4	1-1	2012 
+			name:	DATE				1-1	2012 
+	2	he
+			coref:	IDENT			0	2-2	he 
+	3	retired
+			sense:	retire.v.01
+			prop:	retire.01
+			V		3-3	retired 
+			N-ARGM-TMP		0-1	In 2012 
+			N-ARG-A0		2-2	he 
+			N-ARG-A1		4-15	from the Ministry of Foreign Affairs and Trade ( New Zealand ) 
+	4	from
+	5	the
+	6	Ministry
+			name:	ORGANIZATION				6-11	Ministry of Foreign Affairs and Trade 
+	7	of
+	8	Foreign
+	9	Affairs
+	10	and
+	11	Trade
+	12	(
+	13	New
+			coref:	IDENT			3	13-14	New Zealand 
+			name:	COUNTRY				13-14	New Zealand 
+	14	Zealand
+	15	)
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He has published a range of papers and articles relating to New Zealand 's interaction with China and with Asia .
+
+
+Treebanked sentence:
+--------------------
+He has published a range of papers and articles relating to New Zealand 's interaction with China and with Asia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ has)
+      (VP (VBN published)
+        (NP
+          (NP (DT a) (NN range))
+          (PP (IN of)
+            (NP (NNS papers)
+              (CC and)
+              (NNS articles))))
+        (S
+          (VP (VBG relating)
+            (PP (IN to)
+              (NP
+                (NP (NNP New) (NNP Zealand) (POS 's))
+                (NN interaction)))
+            (PP
+              (PP (IN with)
+                (NP (NNP China)))
+              (CC and)
+              (PP (IN with)
+                (NP (NNP Asia))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	published
+			sense:	publish.v.03
+			prop:	publish.01
+			V		2-2	published 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		3-19	a range of papers and articles relating to New Zealand 's interaction with China and with Asia 
+	3	a
+	4	range
+			sense:	range.n.06
+	5	of
+	6	papers
+			sense:	composition.n.08
+	7	and
+	8	articles
+			sense:	article.n.01
+	9	relating
+			sense:	refer.v.02
+			prop:	relate.01
+			V		9-9	relating 
+			N-ARG-A1		6-8	papers and articles 
+			N-ARG-A2		10-19	to New Zealand 's interaction with China and with Asia 
+	10	to
+	11	New
+			coref:	IDENT			3	11-13	New Zealand 's 
+			name:	COUNTRY				11-12	New Zealand 
+	12	Zealand
+	13	's
+	14	interaction
+			sense:	interaction.n.01
+	15	with
+	16	China
+			name:	COUNTRY				16-16	China 
+	17	and
+	18	with
+	19	Asia
+			name:	CITY				19-19	Asia 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+With Michael Green , he co - authored a historical survey of New Zealand - China relations ( New Zealand and China 1792 - 1972 ) and with Robert Ayson a Centre for Strategic Studies Discussion Paper , China 's Rise and New Zealand 's Interests : A Policy Primer for 2030 .
+
+
+Treebanked sentence:
+--------------------
+With Michael Green , he co - authored a historical survey of New Zealand - China relations ( New Zealand and China 1792 - 1972 ) and with Robert Ayson a Centre for Strategic Studies Discussion Paper , China 's Rise and New Zealand 's Interests : A Policy Primer for 2030 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN With)
+      (NP (NNP Michael) (NNP Green)))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP
+        (ADVP (RB co))
+        (HYPH -) (VBN authored)
+        (PP
+          (NP (DT a) (JJ historical) (NN survey))
+          (PP (IN of)
+            (NP
+              (NML (NNP New) (NNP Zealand) (HYPH -) (NNP China))
+              (NNS relations)
+              (PRN (-LRB- -LRB-)
+                (NP
+                  (NP (NNP New) (NNP Zealand))
+                  (CC and)
+                  (NP (NNP China) (CD 1792) (HYPH -) (CD 1972)))
+                (-RRB- -RRB-))))))
+      (CC and)
+      (VP
+        (PP (IN with)
+          (NP (NNP Robert) (NNP Ayson)))
+        (NP
+          (NP
+            (NP (DT a) (NNP Centre))
+            (PP (IN for)
+              (NP
+                (NP
+                  (NML (NNP Strategic) (NNPS Studies))
+                  (NN Discussion) (NN Paper))
+                (, ,)
+                (NP
+                  (NP (NNP China) (POS 's))
+                  (NN Rise))
+                (CC and)
+                (NP
+                  (NP (NNP New) (NNP Zealand) (POS 's))
+                  (NNS Interests)))))
+          (: :)
+          (NP (DT A) (NN Policy) (NN Primer)))
+        (PP (IN for)
+          (NP (CD 2030)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	With
+	1	Michael
+			name:	PERSON				1-2	Michael Green 
+	2	Green
+	3	,
+	4	he
+			coref:	IDENT			0	4-4	he 
+	5	co
+	6	-
+	7	authored
+			sense:	author.v.01
+			prop:	author.01
+			V		7-7	authored 
+			N-ARGM-COM		0-2	With Michael Green 
+			N-ARG-A0		4-4	he 
+			N-ARGM-COM		5-5	co 
+			N-ARG-A1		8-25	a historical survey of New Zealand - China relations ( New Zealand and China 1792 - 1972 ) 
+	8	a
+	9	historical
+			sense:	historical.a.01
+	10	survey
+			sense:	sketch.n.03
+	11	of
+	12	New
+			coref:	IDENT			3	12-13	New Zealand 
+			name:	COUNTRY				12-13	New Zealand 
+	13	Zealand
+	14	-
+	15	China
+			name:	COUNTRY				15-15	China 
+	16	relations
+			sense:	relation.n.06
+	17	(
+	18	New
+			coref:	IDENT			3	18-19	New Zealand 
+			name:	COUNTRY				18-19	New Zealand 
+	19	Zealand
+	20	and
+	21	China
+			name:	COUNTRY				21-21	China 
+	22	1792
+			name:	DURATION				22-23	1792 - 
+	23	-
+	24	1972
+			name:	DATE				24-24	1972 
+	25	)
+	26	and
+	27	with
+	28	Robert
+			name:	PERSON				28-29	Robert Ayson 
+	29	Ayson
+	30	a
+	31	Centre
+	32	for
+	33	Strategic
+	34	Studies
+	35	Discussion
+			sense:	discussion.n.01
+	36	Paper
+			sense:	composition.n.08
+	37	,
+	38	China
+			name:	COUNTRY				38-38	China 
+	39	's
+	40	Rise
+			sense:	rise.n.01
+	41	and
+	42	New
+			coref:	IDENT			3	42-44	New Zealand 's 
+			name:	COUNTRY				42-43	New Zealand 
+	43	Zealand
+	44	's
+	45	Interests
+			sense:	interest.n.01
+	46	:
+	47	A
+	48	Policy
+			sense:	policy.n.02
+	49	Primer
+			sense:	primer.n.01
+	50	for
+	51	2030
+			name:	DATE				51-51	2030 
+	52	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Chris Elder 
+				1.2-3	Chris Elder 
+				2.4-4	he 
+				3.4-4	he 
+				4.4-4	he 
+				5.3-3	he 
+				6.3-3	Chris 
+				7.3-3	he 
+				8.2-2	he 
+				9.0-0	He 
+				10.4-4	he 
+	Chain 1 (IDENT)
+				4.3-3	2006 
+				5.1-1	2006 
+	Chain 2 (IDENT)
+				1.1-1	1973 
+				2.1-1	1973 
+	Chain 3 (IDENT)
+				9.11-13	New Zealand 's 
+				0.7-8	New Zealand 
+				5.10-11	New Zealand 
+				8.13-14	New Zealand 
+				10.12-13	New Zealand 
+				10.18-19	New Zealand 
+				10.42-44	New Zealand 's 
+	Chain 4 (IDENT)
+				7.2-2	2012 
+				8.1-1	2012 
+	Chain 5 (IDENT)
+				2.13-13	Beijing 
+				3.8-8	Beijing 
+

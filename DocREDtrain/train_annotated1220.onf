@@ -1,0 +1,974 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Marian Andrzej Dudziak ( born 2 February 1941 ) was a Polish sprinter who specialized in the 100 metres .
+
+
+Treebanked sentence:
+--------------------
+Marian Andrzej Dudziak ( born 2 February 1941 ) was a Polish sprinter who specialized in the 100 metres . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Marian) (NNP Andrzej) (NNP Dudziak))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 2))
+        (NP-TMP (NNP February) (CD 1941)))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ Polish) (NN sprinter))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD specialized)
+              (PP (IN in)
+                (NP (DT the) (CD 100) (NNS metres))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Marian
+			coref:	IDENT			1	0-2	Marian Andrzej Dudziak 
+			name:	PERSON				0-2	Marian Andrzej Dudziak 
+	1	Andrzej
+	2	Dudziak
+	3	(
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-2	Marian Andrzej Dudziak 
+			N-ARGM-TMP		5-7	2 February 1941 
+	5	2
+			name:	DATE				5-7	2 February 1941 
+	6	February
+	7	1941
+	8	)
+	9	was
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	was 
+			N-ARG-A1		0-8	Marian Andrzej Dudziak ( born 2 February 1941 ) 
+			N-ARG-A2		10-18	a Polish sprinter who specialized in the 100 metres 
+	10	a
+	11	Polish
+			name:	NATIONALITY				11-11	Polish 
+	12	sprinter
+			name:	TITLE				12-12	sprinter 
+			sense:	sprinter.n.01
+	13	who
+	14	specialized
+			sense:	specialize.v.01
+			prop:	specialize.01
+			V		14-14	specialized 
+			N-ARG-A0		10-12	a Polish sprinter 
+			R-ARG-A0		13-13	who 
+			N-ARG-A1		15-18	in the 100 metres 
+	15	in
+	16	the
+			coref:	IDENT			4	16-18	the 100 metres 
+	17	100
+			name:	NUMBER				17-17	100 
+	18	metres
+			sense:	meter.n.01
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was born in Wielichowo and represented the clubs Orkan Poznań and Olimpia Poznań .
+
+
+Treebanked sentence:
+--------------------
+He was born in Wielichowo and represented the clubs Orkan Poznań and Olimpia Poznań . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN born)
+          (PP (IN in)
+            (NP (NNP Wielichowo)))))
+      (CC and)
+      (VP (VBD represented)
+        (NP (DT the) (NNS clubs))
+        (S
+          (NP
+            (NP (NNP Orkan) (NNP Poznań))
+            (CC and)
+            (NP (NNP Olimpia) (NNP Poznań))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-4	in Wielichowo 
+	3	in
+	4	Wielichowo
+			name:	LOCATION				4-4	Wielichowo 
+	5	and
+	6	represented
+			sense:	represent.v.04
+			prop:	represent.01
+			V		6-6	represented 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		7-13	the clubs Orkan Poznań and Olimpia Poznań 
+	7	the
+	8	clubs
+			sense:	club.n.02
+	9	Orkan
+			name:	ORGANIZATION				9-10	Orkan Poznań 
+	10	Poznań
+	11	and
+	12	Olimpia
+	13	Poznań
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the 1964 Summer Olympics he won a silver medal in the 4 x 100 metres relay with teammates Andrzej Zieliński , Wiesław Maniak and Marian Foik .
+
+
+Treebanked sentence:
+--------------------
+At the 1964 Summer Olympics he won a silver medal in the 4 x 100 metres relay with teammates Andrzej Zieliński , Wiesław Maniak and Marian Foik . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (DT the) (CD 1964) (NNP Summer) (NNPS Olympics)))
+    (NP (PRP he))
+    (VP (VBD won)
+      (NP (DT a) (NN silver) (NN medal))
+      (PP (IN in)
+        (NP (DT the)
+          (NML
+            (QP (CD 4) (SYM x) (CD 100)))
+          (NNS metres) (NN relay)))
+      (PP (IN with)
+        (NP
+          (NP
+            (NP (NNS teammates))
+            (NP (NNP Andrzej) (NNP Zieliński)))
+          (, ,)
+          (NP (NNP Wiesław) (NNP Maniak))
+          (CC and)
+          (NP (NNP Marian) (NNP Foik)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+			name:	DATE				1-3	the 1964 Summer 
+	2	1964
+	3	Summer
+	4	Olympics
+			name:	MISC				4-4	Olympics 
+	5	he
+			coref:	IDENT			1	5-5	he 
+	6	won
+			sense:	win.v.01
+			prop:	win.01
+			V		6-6	won 
+			N-ARGM-LOC		0-4	At the 1964 Summer Olympics 
+			N-ARG-A0		5-5	he 
+			N-ARG-A1		7-9	a silver medal 
+			N-ARGM-LOC		10-16	in the 4 x 100 metres relay 
+			N-ARGM-COM		17-26	with teammates Andrzej Zieliński , Wiesław Maniak and Marian Foik 
+	7	a
+	8	silver
+			sense:	silver_medal.n.01
+	9	medal
+			sense:	decoration.n.02
+	10	in
+	11	the
+			coref:	IDENT			3	11-16	the 4 x 100 metres relay 
+	12	4
+			name:	NUMBER				12-12	4 
+	13	x
+	14	100
+			name:	NUMBER				14-14	100 
+	15	metres
+			sense:	meter.n.01
+	16	relay
+			sense:	relay.n.04
+	17	with
+	18	teammates
+			sense:	teammate.n.01
+	19	Andrzej
+			name:	PERSON				19-20	Andrzej Zieliński 
+	20	Zieliński
+	21	,
+	22	Wiesław
+			name:	PERSON				22-23	Wiesław Maniak 
+	23	Maniak
+	24	and
+	25	Marian
+			name:	PERSON				25-26	Marian Foik 
+	26	Foik
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also competed in the 100 metres event , reaching the quarter - final .
+
+
+Treebanked sentence:
+--------------------
+He also competed in the 100 metres event , reaching the quarter - final . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD competed)
+      (PP (IN in)
+        (NP (DT the) (CD 100) (NNS metres) (NN event)))
+      (, ,)
+      (S
+        (VP (VBG reaching)
+          (NP (DT the) (NN quarter) (HYPH -) (JJ final)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	also
+			sense:	besides.r.02
+	2	competed
+			sense:	compete.v.01
+			prop:	compete.01
+			V		2-2	competed 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARGM-ADV		3-7	in the 100 metres event 
+			N-ARGM-PRD		9-13	reaching the quarter - final 
+	3	in
+	4	the
+			coref:	IDENT			2	4-7	the 100 metres event 
+	5	100
+			name:	NUMBER				5-5	100 
+	6	metres
+			sense:	meter.n.01
+	7	event
+			sense:	event.n.01
+	8	,
+	9	reaching
+			sense:	reach.v.02
+			prop:	reach.01
+			V		9-9	reaching 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		10-13	the quarter - final 
+	10	the
+			name:	DATE				10-11	the quarter 
+	11	quarter
+			sense:	one-fourth.n.01
+	12	-
+	13	final
+			sense:	final.s.02
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He achieved his personal best time in the 100 metres in the same year ; 10.2 seconds with handtiming .
+
+
+Treebanked sentence:
+--------------------
+He achieved his personal best time in the 100 metres in the same year ; 10.2 seconds with handtiming . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD achieved)
+      (NP (PRP$ his) (JJ personal) (JJS best) (NN time))
+      (PP (IN in)
+        (NP (DT the) (CD 100) (NNS metres)))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (JJ same) (NN year))
+          (: ;)
+          (NP
+            (NP (CD 10.2) (NNS seconds))
+            (PP (IN with)
+              (NP (NN handtiming)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	achieved
+			sense:	achieve.v.01
+			prop:	achieve.01
+			V		1-1	achieved 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-5	his personal best time 
+			N-ARGM-LOC		6-9	in the 100 metres 
+			N-ARGM-TMP		10-13	in the same year 
+			C-ARG-A1		15-18	10.2 seconds with handtiming 
+	2	his
+			coref:	IDENT			1	2-2	his 
+	3	personal
+			sense:	personal.a.01
+	4	best
+			sense:	good.a.01
+	5	time
+			sense:	time.n.01
+	6	in
+	7	the
+			coref:	IDENT			4	7-9	the 100 metres 
+	8	100
+			name:	NUMBER				8-8	100 
+	9	metres
+			sense:	meter.n.01
+	10	in
+	11	the
+			name:	DATE				11-13	the same year 
+	12	same
+			sense:	same.a.01
+	13	year
+			sense:	year.n.01
+	14	;
+	15	10.2
+			name:	DURATION				15-16	10.2 seconds 
+	16	seconds
+			sense:	second.n.01
+	17	with
+	18	handtiming
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He won an individual silver medal in 200 metres at the 1966 European Championships .
+
+
+Treebanked sentence:
+--------------------
+He won an individual silver medal in 200 metres at the 1966 European Championships . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD won)
+      (NP (DT an) (JJ individual) (NN silver) (NN medal))
+      (PP (IN in)
+        (NP (CD 200) (NNS metres)))
+      (PP (IN at)
+        (NP (DT the)
+          (ADJP
+            (NP (CD 1966))
+            (JJ European))
+          (NNPS Championships))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		1-1	won 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-5	an individual silver medal 
+			N-ARGM-ADV		6-8	in 200 metres 
+			N-ARGM-LOC		9-13	at the 1966 European Championships 
+	2	an
+	3	individual
+			sense:	individual.a.01
+	4	silver
+			sense:	silver_medal.n.01
+	5	medal
+			sense:	decoration.n.02
+	6	in
+	7	200
+			name:	NUMBER				7-7	200 
+	8	metres
+			sense:	meter.n.01
+	9	at
+	10	the
+	11	1966
+			coref:	IDENT			0	11-11	1966 
+			name:	DATE				11-11	1966 
+	12	European
+			name:	NATIONALITY				12-12	European 
+	13	Championships
+			name:	MISC				13-13	Championships 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the 1967 European Indoor Games he finished fifth in the 50 metres race .
+
+
+Treebanked sentence:
+--------------------
+At the 1967 European Indoor Games he finished fifth in the 50 metres race . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (DT the) (CD 1967))
+        (NP (JJ European) (JJ Indoor) (NNPS Games))))
+    (NP (PRP he))
+    (VP (VBD finished)
+      (NP
+        (ADJP (RB fifth)
+          (PP (IN in)
+            (NP (DT the) (CD 50) (NNS metres))))
+        (NN race)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+	2	1967
+			name:	DATE				2-2	1967 
+	3	European
+			name:	NATIONALITY				3-3	European 
+	4	Indoor
+			name:	MISC				4-5	Indoor Games 
+			sense:	indoor.a.01
+	5	Games
+	6	he
+			coref:	IDENT			1	6-6	he 
+	7	finished
+			sense:	finish_up.v.02
+			prop:	finish.02
+			V		7-7	finished 
+			N-ARGM-LOC		0-5	At the 1967 European Indoor Games 
+			N-ARG-A1		6-6	he 
+			N-ARGM-EXT		8-8	fifth 
+			N-ARGM-LOC		9-13	in the 50 metres race 
+	8	fifth
+			name:	ORDINAL				8-8	fifth 
+	9	in
+	10	the
+	11	50
+			name:	NUMBER				11-11	50 
+	12	metres
+			sense:	meter.n.01
+	13	race
+			sense:	race.n.02
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also competed in the relay final , but the team did not finish .
+
+
+Treebanked sentence:
+--------------------
+He also competed in the relay final , but the team did not finish . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (ADVP (RB also))
+      (VP (VBD competed)
+        (PP (IN in)
+          (NP (DT the) (NN relay) (JJ final)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT the) (NN team))
+      (VP (VBD did) (RB not)
+        (VP (VB finish))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	also
+			sense:	besides.r.02
+	2	competed
+			sense:	compete.v.01
+			prop:	compete.01
+			V		2-2	competed 
+			N-ARG-A0		0-0	He 
+			N-ARGM-ADV		1-1	also 
+			N-ARGM-LOC		3-6	in the relay final 
+	3	in
+	4	the
+	5	relay
+			sense:	relay.n.04
+	6	final
+			sense:	final.s.02
+	7	,
+	8	but
+	9	the
+	10	team
+			sense:	team.n.01
+	11	did
+			sense:	make.v.01
+			prop:	do.01
+			V		11-11	did 
+	12	not
+			sense:	not.r.01
+	13	finish
+			sense:	end.v.01
+			prop:	finish.01
+			V		13-13	finish 
+			N-ARGM-NEG		12-12	not 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the 1968 European Indoor Games he won a silver medal in the medley relay , which he ran with Edmund Borowski , Waldemar Korycki and Andrzej Badeński .
+
+
+Treebanked sentence:
+--------------------
+At the 1968 European Indoor Games he won a silver medal in the medley relay , which he ran with Edmund Borowski , Waldemar Korycki and Andrzej Badeński . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (DT the) (CD 1968))
+        (NP (JJ European) (JJ Indoor) (NNPS Games))))
+    (NP (PRP he))
+    (VP (VBD won)
+      (NP (DT a) (NN silver) (NN medal))
+      (PP (IN in)
+        (NP (DT the) (NNP medley) (NN relay)))
+      (, ,)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (NP (PRP he))
+          (VP (VBD ran)
+            (PP (IN with)
+              (NP
+                (NP (NNP Edmund) (NNP Borowski))
+                (, ,)
+                (NP (NNP Waldemar) (NNP Korycki))
+                (CC and)
+                (NP (NNP Andrzej) (NNP Badeński))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+	2	1968
+			name:	DATE				2-2	1968 
+	3	European
+			name:	NATIONALITY				3-3	European 
+	4	Indoor
+			name:	MISC				4-5	Indoor Games 
+			sense:	indoor.a.01
+	5	Games
+	6	he
+			coref:	IDENT			1	6-6	he 
+	7	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		7-7	won 
+			N-ARGM-LOC		0-5	At the 1968 European Indoor Games 
+			N-ARG-A0		6-6	he 
+			N-ARG-A1		8-10	a silver medal 
+			N-ARGM-LOC		11-27	in the medley relay , which he ran with Edmund Borowski , Waldemar Korycki and Andrzej Badeński 
+	8	a
+	9	silver
+			sense:	silver_medal.n.01
+	10	medal
+			sense:	decoration.n.02
+	11	in
+	12	the
+	13	medley
+	14	relay
+			sense:	relay.n.04
+	15	,
+	16	which
+	17	he
+			coref:	IDENT			1	17-17	he 
+	18	ran
+			sense:	race.v.02
+			prop:	run.02
+			V		18-18	ran 
+			N-ARG-A1		12-14	the medley relay 
+			R-ARG-A1		16-16	which 
+			N-ARG-A0		17-17	he 
+			N-ARGM-MNR		19-27	with Edmund Borowski , Waldemar Korycki and Andrzej Badeński 
+	19	with
+	20	Edmund
+			name:	PERSON				20-21	Edmund Borowski 
+	21	Borowski
+	22	,
+	23	Waldemar
+			name:	PERSON				23-24	Waldemar Korycki 
+	24	Korycki
+	25	and
+	26	Andrzej
+			name:	PERSON				26-27	Andrzej Badeński 
+	27	Badeński
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the 1968 Summer Olympics he finished eighth in the 4 x 100 metres relay and reached the quarter - final in the 100 metres event .
+
+
+Treebanked sentence:
+--------------------
+At the 1968 Summer Olympics he finished eighth in the 4 x 100 metres relay and reached the quarter - final in the 100 metres event . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (DT the) (CD 1968) (NNP Summer) (NNPS Olympics)))
+    (NP (PRP he))
+    (VP
+      (VP (VBD finished)
+        (ADJP (JJ eighth))
+        (PP (IN in)
+          (NP (DT the)
+            (NML
+              (QP (CD 4) (SYM x) (CD 100)))
+            (NNS metres) (NN relay))))
+      (CC and)
+      (VP (VBD reached)
+        (NP (DT the) (NN quarter) (HYPH -) (JJ final))
+        (PP (IN in)
+          (NP (DT the) (CD 100) (NNS metres) (NN event)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+			name:	DATE				1-3	the 1968 Summer 
+	2	1968
+	3	Summer
+	4	Olympics
+			name:	MISC				4-4	Olympics 
+	5	he
+			coref:	IDENT			1	5-5	he 
+	6	finished
+			sense:	finish_up.v.02
+			prop:	finish.02
+			V		6-6	finished 
+			N-ARGM-LOC		0-4	At the 1968 Summer Olympics 
+			N-ARG-A1		5-5	he 
+			N-ARGM-EXT		7-7	eighth 
+			N-ARGM-LOC		8-14	in the 4 x 100 metres relay 
+	7	eighth
+			name:	ORDINAL				7-7	eighth 
+			sense:	eighth.s.01
+	8	in
+	9	the
+			coref:	IDENT			3	9-14	the 4 x 100 metres relay 
+	10	4
+			name:	NUMBER				10-10	4 
+	11	x
+	12	100
+			name:	NUMBER				12-12	100 
+	13	metres
+			sense:	meter.n.01
+	14	relay
+			sense:	relay.n.04
+	15	and
+	16	reached
+			sense:	reach.v.02
+			prop:	reach.01
+			V		16-16	reached 
+			N-ARGM-LOC		0-4	At the 1968 Summer Olympics 
+			N-ARG-A0		5-5	he 
+			N-ARG-A1		17-20	the quarter - final 
+			N-ARGM-LOC		21-25	in the 100 metres event 
+	17	the
+			name:	DATE				17-18	the quarter 
+	18	quarter
+			sense:	quarter.n.03
+	19	-
+	20	final
+			sense:	final.s.02
+	21	in
+	22	the
+			coref:	IDENT			2	22-25	the 100 metres event 
+	23	100
+			name:	NUMBER				23-23	100 
+	24	metres
+			sense:	meter.n.01
+	25	event
+			sense:	event.n.01
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the 1971 European Championships he won a silver medal in the 4 x 100 metres relay together with Gerard Gramse , Tadeusz Cuch and Zenon Nowosz .
+
+
+Treebanked sentence:
+--------------------
+At the 1971 European Championships he won a silver medal in the 4 x 100 metres relay together with Gerard Gramse , Tadeusz Cuch and Zenon Nowosz . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (DT the)
+        (ADJP
+          (NP (CD 1971))
+          (JJ European))
+        (NNPS Championships)))
+    (NP (PRP he))
+    (VP (VBD won)
+      (NP (DT a) (NN silver) (NN medal))
+      (PP (IN in)
+        (NP (DT the)
+          (NML
+            (QP (CD 4) (SYM x) (CD 100)))
+          (NNS metres) (NN relay)))
+      (PP
+        (ADVP (RB together))
+        (IN with)
+        (NP
+          (NP (NNP Gerard) (NNP Gramse))
+          (, ,)
+          (NP (NNP Tadeusz) (NNP Cuch))
+          (CC and)
+          (NP (NNP Zenon) (NNP Nowosz)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+	2	1971
+			name:	DATE				2-2	1971 
+	3	European
+			name:	NATIONALITY				3-3	European 
+	4	Championships
+			name:	MISC				4-4	Championships 
+	5	he
+			coref:	IDENT			1	5-5	he 
+	6	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		6-6	won 
+			N-ARGM-LOC		0-4	At the 1971 European Championships 
+			N-ARG-A0		5-5	he 
+			N-ARG-A1		7-9	a silver medal 
+			N-ARGM-LOC		10-16	in the 4 x 100 metres relay 
+			N-ARGM-COM		17-26	together with Gerard Gramse , Tadeusz Cuch and Zenon Nowosz 
+	7	a
+	8	silver
+			sense:	silver_medal.n.01
+	9	medal
+			sense:	decoration.n.02
+	10	in
+	11	the
+			coref:	IDENT			3	11-16	the 4 x 100 metres relay 
+	12	4
+			name:	NUMBER				12-12	4 
+	13	x
+	14	100
+			name:	NUMBER				14-14	100 
+	15	metres
+			sense:	meter.n.01
+	16	relay
+			sense:	relay.n.04
+	17	together
+			sense:	together.r.05
+	18	with
+	19	Gerard
+			name:	PERSON				19-20	Gerard Gramse 
+	20	Gramse
+	21	,
+	22	Tadeusz
+			name:	PERSON				22-23	Tadeusz Cuch 
+	23	Cuch
+	24	and
+	25	Zenon
+			name:	PERSON				25-26	Zenon Nowosz 
+	26	Nowosz
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He became Polish 100 metres champion in 1968 and 200 metres champion in 1966 .
+
+
+Treebanked sentence:
+--------------------
+He became Polish 100 metres champion in 1968 and 200 metres champion in 1966 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD became)
+      (NP
+        (NP
+          (NP
+            (NML (JJ Polish) (CD 100))
+            (NNS metres) (NN champion))
+          (PP (IN in)
+            (NP (CD 1968))))
+        (CC and)
+        (NP
+          (NP (CD 200) (NNS metres))
+          (NP (NN champion))))
+      (PP (IN in)
+        (NP (CD 1966))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	became
+			sense:	become.v.02
+			prop:	become.01
+			V		1-1	became 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-7	Polish 100 metres champion in 1968 
+	2	Polish
+			name:	NATIONALITY				2-2	Polish 
+	3	100
+			name:	NUMBER				3-3	100 
+	4	metres
+			sense:	meter.n.01
+	5	champion
+			sense:	champion.n.01
+	6	in
+	7	1968
+			name:	DATE				7-7	1968 
+	8	and
+	9	200
+			name:	NUMBER				9-9	200 
+	10	metres
+			sense:	meter.n.01
+	11	champion
+			sense:	champion.n.01
+	12	in
+	13	1966
+			coref:	IDENT			0	13-13	1966 
+			name:	DATE				13-13	1966 
+	14	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.11-11	1966 
+				11.13-13	1966 
+	Chain 1 (IDENT)
+				0.0-2	Marian Andrzej Dudziak 
+				1.0-0	He 
+				2.5-5	he 
+				3.0-0	He 
+				4.0-0	He 
+				4.2-2	his 
+				5.0-0	He 
+				6.6-6	he 
+				7.0-0	He 
+				8.6-6	he 
+				8.17-17	he 
+				9.5-5	he 
+				10.5-5	he 
+				11.0-0	He 
+	Chain 2 (IDENT)
+				3.4-7	the 100 metres event 
+				9.22-25	the 100 metres event 
+	Chain 3 (IDENT)
+				2.11-16	the 4 x 100 metres relay 
+				9.9-14	the 4 x 100 metres relay 
+				10.11-16	the 4 x 100 metres relay 
+	Chain 4 (IDENT)
+				0.16-18	the 100 metres 
+				4.7-9	the 100 metres 
+

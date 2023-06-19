@@ -1,0 +1,683 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Red Rover is a novel by American writer James Fenimore Cooper .
+
+
+Treebanked sentence:
+--------------------
+The Red Rover is a novel by American writer James Fenimore Cooper . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The)
+      (NML (NNP Red) (NNP Rover)))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ novel))
+        (PP (IN by)
+          (NP
+            (NML (JJ American) (NN writer))
+            (NNP James) (NNP Fenimore) (NNP Cooper)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Red
+	2	Rover
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	The Red Rover 
+			N-ARG-A2		4-11	a novel by American writer James Fenimore Cooper 
+	4	a
+	5	novel
+			sense:	fresh.s.04
+	6	by
+	7	American
+			coref:	IDENT			0	7-11	American writer James Fenimore Cooper 
+			name:	NATIONALITY				7-7	American 
+	8	writer
+			name:	TITLE				8-8	writer 
+			sense:	writer.n.01
+	9	James
+			name:	PERSON				9-11	James Fenimore Cooper 
+	10	Fenimore
+	11	Cooper
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was originally published in Paris on November 27 , 1827 , before being published in London three days later on November 30 .
+
+
+Treebanked sentence:
+--------------------
+It was originally published in Paris on November 27 , 1827 , before being published in London three days later on November 30 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (ADVP (RB originally))
+      (VP (VBN published)
+        (PP (IN in)
+          (NP (NNP Paris)))
+        (PP (IN on)
+          (NP (NNP November) (CD 27) (, ,) (CD 1827)))
+        (, ,)
+        (PP (IN before)
+          (S
+            (VP (VBG being)
+              (VP (VBN published)
+                (PP (IN in)
+                  (NP (NNP London)))
+                (NP-TMP (CD three) (NNS days))
+                (PP
+                  (ADVP (RB later))
+                  (IN on)
+                  (NP (NNP November) (CD 30)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	originally
+			sense:	primitively.r.01
+	3	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		3-3	published 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		2-2	originally 
+			N-ARGM-LOC		4-5	in Paris 
+			N-ARGM-TMP		6-10	on November 27 , 1827 
+			N-ARGM-TMP		12-22	before being published in London three days later on November 30 
+	4	in
+	5	Paris
+			name:	CITY				5-5	Paris 
+	6	on
+	7	November
+			name:	DATE				7-10	November 27 , 1827 
+	8	27
+	9	,
+	10	1827
+	11	,
+	12	before
+	13	being
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	being 
+	14	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		14-14	published 
+			N-ARG-A1		0-0	It 
+			N-ARGM-LOC		15-16	in London 
+			N-ARGM-TMP		17-19	three days later 
+			N-ARGM-TMP		20-22	on November 30 
+	15	in
+	16	London
+			name:	CITY				16-16	London 
+	17	three
+			name:	DATE				17-19	three days later 
+	18	days
+			sense:	day.n.01
+	19	later
+			sense:	subsequently.r.01
+	20	on
+	21	November
+			name:	DATE				21-22	November 30 
+	22	30
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was not published in the United States until January 9 , 1828 , in Philadelphia .
+
+
+Treebanked sentence:
+--------------------
+It was not published in the United States until January 9 , 1828 , in Philadelphia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was) (RB not)
+      (VP (VBN published)
+        (PP (IN in)
+          (NP (DT the) (NNP United) (NNP States)))
+        (PP (IN until)
+          (NP (NNP January) (CD 9) (, ,) (CD 1828) (, ,)))
+        (PP (IN in)
+          (NP (NNP Philadelphia)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	not
+			sense:	not.r.01
+	3	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		3-3	published 
+			N-ARG-A1		0-0	It 
+			N-ARGM-NEG		2-2	not 
+			N-ARGM-LOC		4-7	in the United States 
+			N-ARGM-TMP		8-12	until January 9 , 1828 
+			N-ARGM-LOC		14-15	in Philadelphia 
+	4	in
+	5	the
+	6	United
+			name:	COUNTRY				6-7	United States 
+	7	States
+	8	until
+	9	January
+			name:	DATE				9-12	January 9 , 1828 
+	10	9
+	11	,
+	12	1828
+	13	,
+	14	in
+	15	Philadelphia
+			name:	CITY				15-15	Philadelphia 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Soon after its publication it was adapted for theater both in the United States and in England .
+
+
+Treebanked sentence:
+--------------------
+Soon after its publication it was adapted for theater both in the United States and in England . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Soon))
+    (PP (IN after)
+      (NP (PRP$ its) (NN publication)))
+    (NP (PRP it))
+    (VP (VBD was)
+      (VP (VBN adapted)
+        (PP (IN for)
+          (NP (NN theater)))
+        (PP (CC both)
+          (PP (IN in)
+            (NP (DT the) (NNP United) (NNP States)))
+          (CC and)
+          (PP (IN in)
+            (NP (NNP England))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Soon
+			sense:	soon.r.01
+	1	after
+	2	its
+	3	publication
+			sense:	issue.n.11
+	4	it
+	5	was
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	was 
+	6	adapted
+			sense:	adapt.v.01
+			prop:	adapt.01
+			V		6-6	adapted 
+			N-ARGM-TMP		0-3	Soon after its publication 
+			N-ARG-A1		4-4	it 
+			N-ARG-A2		7-8	for theater 
+			N-ARGM-LOC		9-16	both in the United States and in England 
+	7	for
+	8	theater
+			sense:	dramaturgy.n.01
+	9	both
+	10	in
+	11	the
+	12	United
+			name:	COUNTRY				12-13	United States 
+	13	States
+	14	and
+	15	in
+	16	England
+			name:	COUNTRY				16-16	England 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The novel follows the activities of the sailor Dick Fid , free black sailor Scipio Africanus and Royal Navy officer James Wilder as they encounter the famous pirate , " The Red Rover " .
+
+
+Treebanked sentence:
+--------------------
+The novel follows the activities of the sailor Dick Fid , free black sailor Scipio Africanus and Royal Navy officer James Wilder as they encounter the famous pirate , " The Red Rover " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJ novel))
+    (VP (VBZ follows)
+      (NP
+        (NP (DT the) (NNS activities))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (DT the) (NN sailor))
+              (NP (NNP Dick) (NNP Fid)))
+            (, ,)
+            (NP
+              (NP (JJ free) (JJ black) (NN sailor))
+              (NP (NNP Scipio) (NNP Africanus)))
+            (CC and)
+            (NP
+              (NML
+                (NML (NNP Royal) (NNP Navy))
+                (NN officer))
+              (NNP James) (NNP Wilder)))))
+      (SBAR (IN as)
+        (S
+          (NP (PRP they))
+          (VP (VBP encounter)
+            (NP
+              (NP (DT the) (JJ famous) (NN pirate))
+              (, ,) ('' ")
+              (NP (DT The)
+                (NML (NNP Red) (NNP Rover)))
+              ('' "))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	novel
+			sense:	fresh.s.04
+	2	follows
+			sense:	trace.v.01
+			prop:	follow.02
+			V		2-2	follows 
+			N-ARG-A0		0-1	The novel 
+			N-ARG-A1		3-21	the activities of the sailor Dick Fid , free black sailor Scipio Africanus and Royal Navy officer James Wilder 
+			N-ARGM-TMP		22-33	as they encounter the famous pirate , " The Red Rover " 
+	3	the
+	4	activities
+			sense:	activity.n.01
+	5	of
+	6	the
+	7	sailor
+			name:	TITLE				7-7	sailor 
+			sense:	sailor.n.01
+	8	Dick
+			name:	PERSON				8-9	Dick Fid 
+	9	Fid
+	10	,
+	11	free
+			sense:	free.a.06
+	12	black
+			sense:	black.a.02
+	13	sailor
+			name:	TITLE				13-13	sailor 
+			sense:	sailor.n.01
+	14	Scipio
+	15	Africanus
+	16	and
+	17	Royal
+			name:	ORGANIZATION				17-18	Royal Navy 
+	18	Navy
+	19	officer
+			sense:	military_officer.n.01
+	20	James
+			name:	PERSON				20-21	James Wilder 
+	21	Wilder
+	22	as
+	23	they
+	24	encounter
+			sense:	meet.v.01
+			prop:	encounter.01
+			V		24-24	encounter 
+			N-ARG-A0		23-23	they 
+			N-ARG-A1		25-33	the famous pirate , " The Red Rover " 
+	25	the
+	26	famous
+			sense:	celebrated.s.01
+	27	pirate
+			name:	TITLE				27-27	pirate 
+			sense:	pirate.n.03
+	28	,
+	29	"
+	30	The
+	31	Red
+			name:	MISC				31-32	Red Rover 
+	32	Rover
+	33	"
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A contemporary reviewer in the North American Review noted how Cooper was particularly good at writing sea novels such as The Red Rover , the sea being his more natural element than what the author calls wilderness novels which focused on an Indian introducing a white man to the wilderness , like The Last of the Mohicans .
+
+
+Treebanked sentence:
+--------------------
+A contemporary reviewer in the North American Review noted how Cooper was particularly good at writing sea novels such as The Red Rover , the sea being his more natural element than what the author calls wilderness novels which focused on an Indian introducing a white man to the wilderness , like The Last of the Mohicans . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (JJ contemporary) (NN reviewer))
+      (PP (IN in)
+        (NP (DT the) (NNP North) (NNP American) (NNP Review))))
+    (VP (VBD noted)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (NNP Cooper))
+          (VP (VBD was)
+            (ADJP (RB particularly) (JJ good)
+              (PP (IN at)
+                (S
+                  (VP (VBG writing)
+                    (NP
+                      (NP (NN sea) (NNS novels))
+                      (PP (JJ such) (IN as)
+                        (NP (DT The)
+                          (NML (NNP Red) (NNP Rover)))))
+                    (, ,)
+                    (S
+                      (NP (DT the) (NN sea))
+                      (VP (VBG being)
+                        (NP
+                          (NP (PRP$ his)
+                            (ADJP (RBR more) (JJ natural))
+                            (NN element))
+                          (PP (IN than)
+                            (SBAR
+                              (WHNP (WP what))
+                              (S
+                                (NP (DT the) (NN author))
+                                (VP (VBZ calls)
+                                  (NP
+                                    (NP (NN wilderness) (NNS novels))
+                                    (SBAR
+                                      (WHNP (WDT which))
+                                      (S
+                                        (VP (VBD focused)
+                                          (PP (IN on)
+                                            (NP (DT an) (JJ Indian)))
+                                          (S
+                                            (VP (VBG introducing)
+                                              (NP (DT a) (JJ white) (NN man))
+                                              (PP (IN to)
+                                                (NP (DT the) (NN wilderness))))))))))))))))
+                    (, ,)
+                    (PP (IN like)
+                      (NP
+                        (NP (DT The) (JJ Last))
+                        (PP (IN of)
+                          (NP (DT the) (NNPS Mohicans)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	contemporary
+			sense:	contemporary.s.02
+	2	reviewer
+			name:	TITLE				2-2	reviewer 
+			sense:	reviewer.n.01
+	3	in
+	4	the
+	5	North
+			name:	ORGANIZATION				5-7	North American Review 
+	6	American
+	7	Review
+	8	noted
+			sense:	note.v.01
+			prop:	note.01
+			V		8-8	noted 
+			N-ARG-A0		0-7	A contemporary reviewer in the North American Review 
+			N-ARG-A1		9-56	how Cooper was particularly good at writing sea novels such as The Red Rover , the sea being his more natural element than what the author calls wilderness novels which focused on an Indian introducing a white man to the wilderness , like The Last of the Mohicans 
+	9	how
+	10	Cooper
+			coref:	IDENT			0	10-10	Cooper 
+			name:	PERSON				10-10	Cooper 
+	11	was
+			sense:	be.v.01
+			prop:	be.01
+			V		11-11	was 
+			N-ARGM-MNR		9-9	how 
+			N-ARG-A1		10-10	Cooper 
+			N-ARG-A2		12-22	particularly good at writing sea novels such as The Red Rover 
+			N-ARGM-PRD		24-56	the sea being his more natural element than what the author calls wilderness novels which focused on an Indian introducing a white man to the wilderness , like The Last of the Mohicans 
+	12	particularly
+			sense:	particularly.r.01
+	13	good
+			sense:	good.a.01
+	14	at
+	15	writing
+			sense:	write.v.01
+			prop:	write.01
+			V		15-15	writing 
+			N-ARG-A0		10-10	Cooper 
+			N-ARG-A1		16-22	sea novels such as The Red Rover 
+	16	sea
+			sense:	sea.n.01
+	17	novels
+			sense:	novel.n.01
+	18	such
+			sense:	such.s.01
+	19	as
+	20	The
+	21	Red
+	22	Rover
+	23	,
+	24	the
+	25	sea
+			sense:	sea.n.01
+	26	being
+			sense:	be.v.01
+			prop:	be.01
+			V		26-26	being 
+			N-ARG-A1		24-25	the sea 
+			N-ARG-A2		27-56	his more natural element than what the author calls wilderness novels which focused on an Indian introducing a white man to the wilderness , like The Last of the Mohicans 
+	27	his
+			coref:	IDENT			0	27-27	his 
+	28	more
+			sense:	more.r.01
+	29	natural
+			sense:	natural.a.02
+	30	element
+			sense:	element.n.06
+	31	than
+	32	what
+	33	the
+			coref:	IDENT			0	33-34	the author 
+	34	author
+			name:	TITLE				34-34	author 
+			sense:	writer.n.01
+	35	calls
+			sense:	call.v.02
+			prop:	call.01
+			V		35-35	calls 
+			N-ARG-A1		32-32	what 
+			N-ARG-A0		33-34	the author 
+			N-ARG-A2		36-56	wilderness novels which focused on an Indian introducing a white man to the wilderness , like The Last of the Mohicans 
+	36	wilderness
+			sense:	wilderness.n.03
+	37	novels
+			sense:	novel.n.01
+	38	which
+	39	focused
+			sense:	concentrate.v.02
+			prop:	focus.01
+			V		39-39	focused 
+			R-ARG-A0		38-38	which 
+			N-ARG-A2		40-56	on an Indian introducing a white man to the wilderness , like The Last of the Mohicans 
+	40	on
+	41	an
+	42	Indian
+			name:	NATIONALITY				42-42	Indian 
+	43	introducing
+			sense:	introduce.v.01
+			prop:	introduce.01
+			V		43-43	introducing 
+			N-ARG-A0		41-42	an Indian 
+			N-ARG-A1		44-46	a white man 
+			N-ARG-A2		47-49	to the wilderness 
+			N-ARGM-MNR		51-56	like The Last of the Mohicans 
+	44	a
+	45	white
+			sense:	white.a.02
+	46	man
+			sense:	man.n.01
+	47	to
+	48	the
+	49	wilderness
+			sense:	wilderness.n.03
+	50	,
+	51	like
+	52	The
+	53	Last
+			sense:	last.a.02
+	54	of
+	55	the
+	56	Mohicans
+	57	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In addition , The Red Rover presents some of the first serious depictions of characters of African lineage in American literature .
+
+
+Treebanked sentence:
+--------------------
+In addition , The Red Rover presents some of the first serious depictions of characters of African lineage in American literature . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN addition)))
+    (, ,)
+    (NP (DT The)
+      (NML (NNP Red) (NNP Rover)))
+    (VP (VBZ presents)
+      (NP
+        (NP (DT some))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJ first) (JJ serious) (NNS depictions))
+            (PP (IN of)
+              (NP
+                (NP (NNS characters))
+                (PP (IN of)
+                  (NP
+                    (NP (JJ African) (NN lineage))
+                    (PP (IN in)
+                      (NP (JJ American) (NN literature)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	addition
+			sense:	accession.n.03
+	2	,
+	3	The
+	4	Red
+			name:	ORGANIZATION				4-5	Red Rover 
+	5	Rover
+	6	presents
+			sense:	present.v.02
+			prop:	present.01
+			V		6-6	presents 
+			N-ARGM-DIS		0-1	In addition 
+			N-ARG-A0		3-5	The Red Rover 
+			N-ARG-A1		7-20	some of the first serious depictions of characters of African lineage in American literature 
+	7	some
+	8	of
+	9	the
+	10	first
+			name:	ORDINAL				10-10	first 
+			sense:	first.a.01
+	11	serious
+			sense:	serious.a.01
+	12	depictions
+			sense:	word_picture.n.01
+	13	of
+	14	characters
+			sense:	fictional_character.n.01
+	15	of
+	16	African
+			name:	NATIONALITY				16-16	African 
+	17	lineage
+			sense:	descent.n.04
+	18	in
+	19	American
+			name:	NATIONALITY				19-19	American 
+	20	literature
+			sense:	literature.n.01
+	21	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.7-11	American writer James Fenimore Cooper 
+				5.10-10	Cooper 
+				5.27-27	his 
+				5.33-34	the author 
+

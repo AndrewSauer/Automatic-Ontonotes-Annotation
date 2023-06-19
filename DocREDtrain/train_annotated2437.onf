@@ -1,0 +1,504 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Claude Abadie ( born January 16 , 1920 , Paris ) is a French jazz clarinetist and leader .
+
+
+Treebanked sentence:
+--------------------
+Claude Abadie ( born January 16 , 1920 , Paris ) is a French jazz clarinetist and leader . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Claude) (NNP Abadie))
+        (-LRB- -LRB-)
+        (VP (VBN born)
+          (NP-TMP (NNP January) (CD 16) (, ,) (CD 1920))))
+      (, ,)
+      (NP (NNP Paris))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ French) (NN jazz) (NN clarinetist))
+        (CC and)
+        (NP (NN leader))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Claude
+			name:	PERSON				0-1	Claude Abadie 
+	1	Abadie
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Claude Abadie 
+			N-ARGM-TMP		4-7	January 16 , 1920 
+			N-ARGM-LOC		9-9	Paris 
+	4	January
+			name:	DATE				4-7	January 16 , 1920 
+	5	16
+	6	,
+	7	1920
+	8	,
+	9	Paris
+			name:	CITY				9-9	Paris 
+	10	)
+	11	is
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	is 
+			N-ARG-A1		0-10	Claude Abadie ( born January 16 , 1920 , Paris ) 
+			N-ARG-A2		12-17	a French jazz clarinetist and leader 
+	12	a
+	13	French
+			name:	NATIONALITY				13-13	French 
+	14	jazz
+			sense:	jazz.n.02
+	15	clarinetist
+			name:	TITLE				15-15	clarinetist 
+			sense:	clarinetist.n.01
+	16	and
+	17	leader
+			name:	TITLE				17-17	leader 
+			sense:	leader.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Abadie was interested in New Orleans jazz and Chicago jazz from an early age , and formed his own ensemble in 1941 to play in a Dixieland - revival style ; Boris Vian played in the group from 1943 .
+
+
+Treebanked sentence:
+--------------------
+Abadie was interested in New Orleans jazz and Chicago jazz from an early age , and formed his own ensemble in 1941 to play in a Dixieland - revival style ; Boris Vian played in the group from 1943 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NNP Abadie))
+      (VP
+        (VP (VBD was)
+          (ADJP (JJ interested)
+            (PP (IN in)
+              (NP
+                (NML
+                  (NML
+                    (NML (NNP New) (NNP Orleans))
+                    (NN jazz))
+                  (CC and)
+                  (NML (NNP Chicago)))
+                (NN jazz))))
+          (PP (IN from)
+            (NP (DT an) (JJ early) (NN age))))
+        (, ,)
+        (CC and)
+        (VP (VBD formed)
+          (NP (PRP$ his) (JJ own) (NN ensemble))
+          (PP (IN in)
+            (NP (CD 1941)))
+          (S
+            (VP (TO to)
+              (VP (VB play)
+                (PP (IN in)
+                  (NP (DT a)
+                    (NML (NN Dixieland) (HYPH -) (NN revival))
+                    (NN style)))))))))
+    (: ;)
+    (S
+      (NP (NNP Boris) (NNP Vian))
+      (VP (VBD played)
+        (PP (IN in)
+          (NP (DT the) (NN group)))
+        (PP (IN from)
+          (NP (CD 1943)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Abadie
+			name:	PERSON				0-0	Abadie 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	Abadie 
+			N-ARG-A2		2-9	interested in New Orleans jazz and Chicago jazz 
+			N-ARGM-TMP		10-13	from an early age 
+	2	interested
+			sense:	interested.a.01
+	3	in
+	4	New
+			name:	CITY				4-5	New Orleans 
+	5	Orleans
+	6	jazz
+			sense:	jazz.n.02
+	7	and
+	8	Chicago
+			name:	CITY				8-8	Chicago 
+	9	jazz
+			sense:	jazz.n.02
+	10	from
+	11	an
+	12	early
+			sense:	early.a.01
+	13	age
+			sense:	age.n.03
+	14	,
+	15	and
+	16	formed
+			sense:	form.v.01
+			prop:	form.01
+			V		16-16	formed 
+			N-ARG-A0		0-0	Abadie 
+			N-ARG-A1		17-19	his own ensemble 
+			N-ARGM-TMP		20-21	in 1941 
+	17	his
+			coref:	IDENT			0	17-19	his own ensemble 
+	18	own
+			sense:	own.s.01
+	19	ensemble
+			sense:	ensemble.n.01
+	20	in
+	21	1941
+			name:	DATE				21-21	1941 
+	22	to
+	23	play
+			sense:	play.v.03
+			prop:	play.01
+			V		23-23	play 
+			N-ARG-A0		0-0	Abadie 
+			N-ARGM-MNR		24-29	in a Dixieland - revival style 
+	24	in
+	25	a
+	26	Dixieland
+			sense:	confederacy.n.01
+	27	-
+	28	revival
+			sense:	revival.n.01
+	29	style
+			sense:	manner.n.01
+	30	;
+	31	Boris
+			name:	PERSON				31-32	Boris Vian 
+	32	Vian
+	33	played
+			sense:	play.v.03
+			prop:	play.01
+			V		33-33	played 
+			N-ARG-A0		31-32	Boris Vian 
+			N-ARGM-LOC		34-36	in the group 
+			N-ARGM-TMP		37-38	from 1943 
+	34	in
+	35	the
+	36	group
+			sense:	group.n.01
+	37	from
+	38	1943
+			name:	DATE				38-38	1943 
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Soon after , Abadie 's ensemble included Claude Luter , Jef Gilson , Raymond Fol , and Hubert Fol .
+
+
+Treebanked sentence:
+--------------------
+Soon after , Abadie 's ensemble included Claude Luter , Jef Gilson , Raymond Fol , and Hubert Fol . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Soon) (RB after))
+    (, ,)
+    (NP
+      (NP (NNP Abadie) (POS 's))
+      (NN ensemble))
+    (VP (VBD included)
+      (NP
+        (NP (NNP Claude) (NNP Luter))
+        (, ,)
+        (NP (NNP Jef) (NNP Gilson))
+        (, ,)
+        (NP (NNP Raymond) (NNP Fol))
+        (, ,)
+        (CC and)
+        (NP (NNP Hubert) (NNP Fol))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Soon
+			sense:	soon.r.01
+	1	after
+			sense:	subsequently.r.01
+	2	,
+	3	Abadie
+			coref:	IDENT			0	3-5	Abadie 's ensemble 
+			name:	PERSON				3-3	Abadie 
+	4	's
+	5	ensemble
+			sense:	ensemble.n.01
+	6	included
+			sense:	include.v.01
+			prop:	include.01
+			V		6-6	included 
+			N-ARGM-TMP		0-1	Soon after 
+			N-ARG-A2		3-5	Abadie 's ensemble 
+			N-ARG-A1		7-18	Claude Luter , Jef Gilson , Raymond Fol , and Hubert Fol 
+	7	Claude
+			name:	PERSON				7-8	Claude Luter 
+	8	Luter
+	9	,
+	10	Jef
+			name:	PERSON				10-11	Jef Gilson 
+	11	Gilson
+	12	,
+	13	Raymond
+			name:	PERSON				13-14	Raymond Fol 
+	14	Fol
+	15	,
+	16	and
+	17	Hubert
+			coref:	IDENT			1	17-18	Hubert Fol 
+			name:	PERSON				17-18	Hubert Fol 
+	18	Fol
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He founded a new ensemble in 1949 , which included Jean - Claude Fohrenbach and Benny Vasseur , but quit music in 1952 , not returning to performance until 1963 .
+
+
+Treebanked sentence:
+--------------------
+He founded a new ensemble in 1949 , which included Jean - Claude Fohrenbach and Benny Vasseur , but quit music in 1952 , not returning to performance until 1963 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD founded)
+      (NP (DT a) (JJ new) (NN ensemble))
+      (PP (IN in)
+        (NP
+          (NP (CD 1949))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP
+                (VP (VBD included)
+                  (NP
+                    (NP (NNP Jean) (HYPH -) (NNP Claude) (NNP Fohrenbach))
+                    (CC and)
+                    (NP (NNP Benny) (NNP Vasseur))))
+                (, ,)
+                (CC but)
+                (VP (VBD quit)
+                  (NP (NN music))
+                  (PP (IN in)
+                    (NP (CD 1952)))))))))
+      (, ,)
+      (S (RB not)
+        (VP (VBG returning)
+          (PP (IN to)
+            (NP (NN performance)))
+          (PP (IN until)
+            (NP (CD 1963))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		1-1	founded 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-4	a new ensemble 
+			N-ARGM-TMP		5-6	in 1949 
+			C-ARG-A1		8-16	which included Jean - Claude Fohrenbach and Benny Vasseur 
+	2	a
+	3	new
+			sense:	new.a.01
+	4	ensemble
+			sense:	ensemble.n.01
+	5	in
+	6	1949
+			name:	DATE				6-6	1949 
+	7	,
+	8	which
+	9	included
+			sense:	include.v.01
+			prop:	include.01
+			V		9-9	included 
+			N-ARG-A2		2-4	a new ensemble 
+			R-ARG-A2		8-8	which 
+			N-ARG-A1		10-16	Jean - Claude Fohrenbach and Benny Vasseur 
+	10	Jean
+	11	-
+	12	Claude
+			name:	PERSON				12-13	Claude Fohrenbach 
+	13	Fohrenbach
+	14	and
+	15	Benny
+			name:	PERSON				15-16	Benny Vasseur 
+	16	Vasseur
+	17	,
+	18	but
+	19	quit
+			sense:	discontinue.v.01
+			prop:	quit.01
+			V		19-19	quit 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		20-20	music 
+			N-ARGM-TMP		21-22	in 1952 
+			N-ARGM-ADV		24-29	not returning to performance until 1963 
+	20	music
+			sense:	music.n.01
+	21	in
+	22	1952
+			name:	DATE				22-22	1952 
+	23	,
+	24	not
+			sense:	not.r.01
+	25	returning
+			sense:	return.v.01
+			prop:	return.01
+			V		25-25	returning 
+			N-ARG-A1		0-0	He 
+			N-ARGM-NEG		24-24	not 
+			N-ARG-A4		26-27	to performance 
+			N-ARGM-TMP		28-29	until 1963 
+	26	to
+	27	performance
+			sense:	performance.n.02
+	28	until
+	29	1963
+			name:	DATE				29-29	1963 
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1965 , he formed a large ensemble to play contemporary jazz ; among his sidemen were Paul Vernon .
+
+
+Treebanked sentence:
+--------------------
+In 1965 , he formed a large ensemble to play contemporary jazz ; among his sidemen were Paul Vernon . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN In)
+        (NP (CD 1965)))
+      (, ,)
+      (NP (PRP he))
+      (VP (VBD formed)
+        (NP (DT a) (JJ large) (NN ensemble))
+        (S
+          (VP (TO to)
+            (VP (VB play)
+              (NP (JJ contemporary) (NN jazz)))))))
+    (: ;)
+    (SINV
+      (PP (IN among)
+        (NP (PRP$ his) (NNS sidemen)))
+      (VP (VBD were))
+      (NP (NNP Paul) (NNP Vernon)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1965
+			name:	DATE				1-1	1965 
+	2	,
+	3	he
+			coref:	IDENT			1	3-3	he 
+	4	formed
+			sense:	form.v.01
+			prop:	form.01
+			V		4-4	formed 
+			N-ARGM-TMP		0-1	In 1965 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		5-11	a large ensemble to play contemporary jazz 
+	5	a
+	6	large
+			sense:	large.a.01
+	7	ensemble
+			sense:	ensemble.n.01
+	8	to
+	9	play
+			sense:	play.v.03
+			prop:	play.01
+			V		9-9	play 
+			N-ARG-A0		5-7	a large ensemble 
+			N-ARG-A1		10-11	contemporary jazz 
+	10	contemporary
+			sense:	contemporary.s.01
+	11	jazz
+			sense:	jazz.n.02
+	12	;
+	13	among
+	14	his
+			coref:	IDENT			1	14-14	his 
+	15	sidemen
+	16	were
+			sense:	embody.v.02
+			prop:	be.01
+			V		16-16	were 
+			N-ARG-A2		13-15	among his sidemen 
+			N-ARG-A1		17-18	Paul Vernon 
+	17	Paul
+			name:	PERSON				17-18	Paul Vernon 
+	18	Vernon
+	19	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.17-19	his own ensemble 
+				2.3-5	Abadie 's ensemble 
+	Chain 1 (IDENT)
+				2.17-18	Hubert Fol 
+				3.0-0	He 
+				4.3-3	he 
+				4.14-14	his 
+

@@ -1,0 +1,967 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Christoph Meinel ( Univ .
+
+
+Treebanked sentence:
+--------------------
+Christoph Meinel ( Univ . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNP Christoph) (NNP Meinel))
+      (-LRB- -LRB-)
+      (NP (NNP Univ))
+      (. .))))
+
+
+Leaves:
+-------
+	0	Christoph
+			name:	PERSON				0-1	Christoph Meinel 
+	1	Meinel
+	2	(
+	3	Univ
+	4	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+- Prof .
+
+
+Treebanked sentence:
+--------------------
+- Prof . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (PP (HYPH -)
+      (NP (NNP Prof)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	-
+	1	Prof
+			name:	TITLE				1-1	Prof 
+	2	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+, Dr. sc .
+
+
+Treebanked sentence:
+--------------------
+, Dr. sc . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP (, ,) (NNP Dr.))
+    (NP (NNP sc))
+    (. .)))
+
+
+Leaves:
+-------
+	0	,
+	1	Dr.
+	2	sc
+	3	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+nat .
+
+
+Treebanked sentence:
+--------------------
+nat . 
+
+Tree:
+-----
+(ROOT
+  (NP (NNP nat) (. .)))
+
+
+Leaves:
+-------
+	0	nat
+			coref:	IDENT			1	0-0	nat 
+	1	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+, Dr. rer .
+
+
+Treebanked sentence:
+--------------------
+, Dr. rer . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP (, ,) (NNP Dr.))
+    (NP (NNP rer))
+    (. .)))
+
+
+Leaves:
+-------
+	0	,
+	1	Dr.
+	2	rer
+	3	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+nat .
+
+
+Treebanked sentence:
+--------------------
+nat . 
+
+Tree:
+-----
+(ROOT
+  (NP (NNP nat) (. .)))
+
+
+Leaves:
+-------
+	0	nat
+			coref:	IDENT			1	0-0	nat 
+	1	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+, born 14 April 1954 , Meißen , Germany ) is a German scientist and university professor of computer sciences .
+
+
+Treebanked sentence:
+--------------------
+, born 14 April 1954 , Meißen , Germany ) is a German scientist and university professor of computer sciences . 
+
+Tree:
+-----
+(ROOT
+  (UCP
+    (NP (, ,))
+    (S
+      (NP
+        (NP
+          (NP (VBN born) (CD 14))
+          (NP-TMP (NNP April) (CD 1954)))
+        (, ,)
+        (NP (NNP Meißen) (, ,) (NNP Germany))
+        (-RRB- -RRB-))
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (JJ German)
+            (NML (NN scientist)
+              (CC and)
+              (NN university))
+            (NN professor))
+          (PP (IN of)
+            (NP (NN computer) (NNS sciences))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	,
+	1	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		1-1	born 
+			N-ARGM-TMP		2-4	14 April 1954 
+			N-ARGM-LOC		6-8	Meißen , Germany 
+	2	14
+			name:	DATE				2-4	14 April 1954 
+	3	April
+	4	1954
+	5	,
+	6	Meißen
+			name:	LOCATION				6-6	Meißen 
+	7	,
+	8	Germany
+			coref:	IDENT			0	8-8	Germany 
+			name:	COUNTRY				8-8	Germany 
+	9	)
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		1-9	born 14 April 1954 , Meißen , Germany ) 
+			N-ARG-A2		11-19	a German scientist and university professor of computer sciences 
+	11	a
+	12	German
+			name:	NATIONALITY				12-12	German 
+	13	scientist
+			name:	TITLE				13-13	scientist 
+			sense:	scientist.n.01
+	14	and
+	15	university
+			sense:	university.n.02
+	16	professor
+			name:	TITLE				16-16	professor 
+			sense:	professor.n.01
+	17	of
+	18	computer
+			sense:	computer.n.01
+	19	sciences
+			sense:	science.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is president and CEO of the Hasso Plattner Institute ( HPI ) for Digital Engineering , dean of the Digital Engineering Faculty of the University of Potsdam ( Germany ) , and professor for Internet Technologies and Systems .
+
+
+Treebanked sentence:
+--------------------
+He is president and CEO of the Hasso Plattner Institute ( HPI ) for Digital Engineering , dean of the Digital Engineering Faculty of the University of Potsdam ( Germany ) , and professor for Internet Technologies and Systems . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (NN president)
+            (CC and)
+            (NN CEO))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP Hasso) (NNP Plattner) (NNP Institute)
+                (PRN (-LRB- -LRB-)
+                  (NP (NNP HPI))
+                  (-RRB- -RRB-)))
+              (PP (IN for)
+                (NP (NNP Digital) (NNP Engineering))))))
+        (, ,)
+        (NP
+          (NP (NN dean))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP Digital) (NNP Engineering) (NNP Faculty))
+              (PP (IN of)
+                (NP (DT the) (NNP University)))
+              (PP (IN of)
+                (NP (NNP Potsdam)))
+              (PRN (-LRB- -LRB-)
+                (NP (NNP Germany))
+                (-RRB- -RRB-)))))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (NN professor))
+          (PP (IN for)
+            (NP
+              (NP (NNP Internet) (NNPS Technologies))
+              (CC and)
+              (NP (NNPS Systems)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			3	0-0	He 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-38	president and CEO of the Hasso Plattner Institute ( HPI ) for Digital Engineering , dean of the Digital Engineering Faculty of the University of Potsdam ( Germany ) , and professor for Internet Technologies and Systems 
+	2	president
+			name:	TITLE				2-2	president 
+			sense:	president.n.01
+	3	and
+	4	CEO
+			name:	TITLE				4-4	CEO 
+			sense:	chief_executive_officer.n.01
+	5	of
+	6	the
+	7	Hasso
+			name:	ORGANIZATION				7-9	Hasso Plattner Institute 
+	8	Plattner
+	9	Institute
+	10	(
+	11	HPI
+	12	)
+	13	for
+	14	Digital
+			name:	ORGANIZATION				14-15	Digital Engineering 
+	15	Engineering
+	16	,
+	17	dean
+			name:	TITLE				17-17	dean 
+			sense:	dean.n.01
+	18	of
+	19	the
+	20	Digital
+			name:	ORGANIZATION				20-27	Digital Engineering Faculty of the University of Potsdam 
+	21	Engineering
+	22	Faculty
+	23	of
+	24	the
+	25	University
+	26	of
+	27	Potsdam
+	28	(
+	29	Germany
+			coref:	IDENT			0	29-29	Germany 
+			name:	COUNTRY				29-29	Germany 
+	30	)
+	31	,
+	32	and
+	33	professor
+			name:	TITLE				33-33	professor 
+			sense:	professor.n.01
+	34	for
+	35	Internet
+	36	Technologies
+	37	and
+			coref:	IDENT			2	37-38	and Systems 
+	38	Systems
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is a member of acatech , the national German academy of science and engineering .
+
+
+Treebanked sentence:
+--------------------
+He is a member of acatech , the national German academy of science and engineering . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (NN acatech))
+            (, ,)
+            (NP
+              (NP (DT the) (JJ national) (JJ German) (NN academy))
+              (PP (IN of)
+                (NP (NN science)
+                  (CC and)
+                  (NN engineering))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			3	0-0	He 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-14	a member of acatech , the national German academy of science and engineering 
+	2	a
+	3	member
+			sense:	member.n.01
+	4	of
+	5	acatech
+	6	,
+	7	the
+	8	national
+			sense:	national.a.01
+	9	German
+			name:	NATIONALITY				9-9	German 
+	10	academy
+			sense:	academy.n.04
+	11	of
+	12	science
+			sense:	science.n.01
+	13	and
+	14	engineering
+			sense:	engineering.n.02
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Christoph Meinel is chairman of the German IPv6 council , and program director of the HPI - Stanford Design Thinking Research Program .
+
+
+Treebanked sentence:
+--------------------
+Christoph Meinel is chairman of the German IPv6 council , and program director of the HPI - Stanford Design Thinking Research Program . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NNP Christoph) (NNP Meinel))
+      (VP (VBZ is)
+        (NP
+          (NP (NN chairman))
+          (PP (IN of)
+            (NP (DT the) (JJ German) (NN IPv6) (NN council))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (NN program) (NN director))
+        (PP (IN of)
+          (NP (DT the)
+            (NML (NNP HPI) (HYPH -) (NNP Stanford))
+            (NN Design))))
+      (VP (VBG Thinking)
+        (NP (NNP Research) (NNP Program))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Christoph
+			name:	PERSON				0-1	Christoph Meinel 
+	1	Meinel
+	2	is
+			sense:	be.v.08
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Christoph Meinel 
+			N-ARG-A2		3-21	chairman of the German IPv6 council , and program director of the HPI - Stanford Design Thinking Research Program 
+	3	chairman
+			name:	TITLE				3-3	chairman 
+			sense:	president.n.04
+	4	of
+	5	the
+	6	German
+			name:	NATIONALITY				6-6	German 
+	7	IPv6
+	8	council
+			sense:	council.n.01
+	9	,
+	10	and
+	11	program
+			sense:	plan.n.01
+	12	director
+			name:	TITLE				12-12	director 
+			sense:	director.n.01
+	13	of
+	14	the
+	15	HPI
+			name:	ORGANIZATION				15-15	HPI 
+	16	-
+	17	Stanford
+			name:	ORGANIZATION				17-21	Stanford Design Thinking Research Program 
+	18	Design
+			sense:	invention.n.01
+	19	Thinking
+			sense:	think.v.03
+			prop:	think.01
+			V		19-19	Thinking 
+			N-ARG-A1		18-18	Design 
+	20	Research
+	21	Program
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is the head of the steering committee of the HPI Future SOC Lab , and member of various advisory boards like the security advisory board of SAP .
+
+
+Treebanked sentence:
+--------------------
+He is the head of the steering committee of the HPI Future SOC Lab , and member of various advisory boards like the security advisory board of SAP . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT the) (NN head))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN steering) (NN committee))
+              (PP (IN of)
+                (NP (DT the) (NNP HPI) (NNP Future) (NNP SOC) (NNP Lab))))))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (NN member))
+          (PP (IN of)
+            (NP
+              (NP (JJ various) (JJ advisory) (NNS boards))
+              (PP (IN like)
+                (NP
+                  (NP (DT the) (NN security) (JJ advisory) (NN board))
+                  (PP (IN of)
+                    (NP (NN SAP))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-27	the head of the steering committee of the HPI Future SOC Lab , and member of various advisory boards like the security advisory board of SAP 
+	2	the
+	3	head
+			sense:	head.n.04
+	4	of
+	5	the
+	6	steering
+			sense:	guidance.n.02
+	7	committee
+			sense:	committee.n.01
+	8	of
+	9	the
+	10	HPI
+			name:	ORGANIZATION				10-13	HPI Future SOC Lab 
+	11	Future
+	12	SOC
+	13	Lab
+	14	,
+	15	and
+	16	member
+			sense:	member.n.01
+	17	of
+	18	various
+			sense:	respective.s.01
+	19	advisory
+			sense:	advisory.s.01
+	20	boards
+			sense:	board.n.01
+	21	like
+	22	the
+	23	security
+			sense:	security.n.09
+	24	advisory
+			sense:	advisory.s.01
+	25	board
+			sense:	board.n.01
+	26	of
+	27	SAP
+			name:	ORGANIZATION				27-27	SAP 
+			sense:	sap.n.01
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2006 , he and Hasso Plattner hosted the first German “ National IT - Summit ” of the German Federal Chancellor Dr. Angela Merkel .
+
+
+Treebanked sentence:
+--------------------
+In 2006 , he and Hasso Plattner hosted the first German “ National IT - Summit ” of the German Federal Chancellor Dr. Angela Merkel . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2006)))
+    (, ,)
+    (NP
+      (NP (PRP he))
+      (CC and)
+      (NP (NNP Hasso) (NNP Plattner)))
+    (VP (VBD hosted)
+      (NP (DT the) (JJ first) (JJ German)
+        (NP (`` “)
+          (NP (NNP National) (NNP IT) (HYPH -) (NNP Summit))
+          ('' ”)
+          (PP (IN of)
+            (NP (DT the)
+              (NML (JJ German) (NNP Federal) (NNP Chancellor))
+              (NNP Dr.) (NNP Angela) (NNP Merkel))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2006
+			name:	DATE				1-1	2006 
+	2	,
+	3	he
+	4	and
+	5	Hasso
+			name:	PERSON				5-6	Hasso Plattner 
+	6	Plattner
+	7	hosted
+			sense:	host.v.01
+			prop:	host.01
+			V		7-7	hosted 
+			N-ARGM-TMP		0-1	In 2006 
+			N-ARG-A0		3-6	he and Hasso Plattner 
+			N-ARG-A1		8-24	the first German “ National IT - Summit ” of the German Federal Chancellor Dr. Angela Merkel 
+	8	the
+	9	first
+			name:	ORDINAL				9-9	first 
+			sense:	first.a.01
+	10	German
+			name:	NATIONALITY				10-10	German 
+	11	“
+	12	National
+	13	IT
+	14	-
+	15	Summit
+	16	”
+	17	of
+	18	the
+	19	German
+			name:	NATIONALITY				19-19	German 
+	20	Federal
+	21	Chancellor
+			name:	TITLE				21-21	Chancellor 
+	22	Dr.
+	23	Angela
+			name:	PERSON				23-24	Angela Merkel 
+	24	Merkel
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His actual research interests and activities are concentrated on Internet Technology and Systems and on innovation research .
+
+
+Treebanked sentence:
+--------------------
+His actual research interests and activities are concentrated on Internet Technology and Systems and on innovation research . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ His) (JJ actual) (NN research) (NNS interests))
+      (CC and)
+      (NP (NNS activities)))
+    (VP (VBP are)
+      (VP (VBN concentrated)
+        (PP
+          (PP (IN on)
+            (NP (NNP Internet) (NNP Technology)
+              (CC and)
+              (NNPS Systems)))
+          (CC and)
+          (PP (IN on)
+            (NP (NN innovation) (NN research))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+	1	actual
+			sense:	actual.a.01
+	2	research
+			sense:	research.n.01
+	3	interests
+			sense:	interest.n.01
+	4	and
+	5	activities
+			sense:	activity.n.01
+	6	are
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	are 
+	7	concentrated
+			sense:	concentrate.v.02
+			prop:	concentrate.01
+			V		7-7	concentrated 
+			N-ARG-A2		0-5	His actual research interests and activities 
+			N-ARG-A1		8-16	on Internet Technology and Systems and on innovation research 
+	8	on
+	9	Internet
+	10	Technology
+	11	and
+			coref:	IDENT			2	11-12	and Systems 
+	12	Systems
+	13	and
+	14	on
+	15	innovation
+			sense:	invention.n.02
+	16	research
+			sense:	research.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is particularly focused on : 
+
+
+Treebanked sentence:
+--------------------
+He is particularly focused on : Security engineering ( Internet security , real time attack recognition , cloud security , ID management , and security awareness ) , Knowledge engineering and teaching tex ( MOOCs and openHPI , e - learning and tele - TASK , Web 3.0 , Secure digital health ) , and Innovation research in the field of Design Thinking . 
+
+Tree:
+-----
+(ROOT
+  (UCP
+    (S
+      (NP (PRP He))
+      (VP (VBZ is)
+        (ADVP (RB particularly))
+        (VP (VBN focused)
+          (PP (IN on)))))
+    (: :)
+    (FRAG
+      (FRAG
+        (NP (NNP Security) (NN engineering))
+        (-LRB- -LRB-)
+        (NP
+          (NP (NN Internet) (NN security))
+          (, ,)
+          (NP
+            (NML (JJ real) (NN time))
+            (NN attack) (NN recognition))
+          (, ,)
+          (NP (NN cloud) (NN security))
+          (, ,)
+          (NP (NN ID) (NN management))
+          (, ,)
+          (CC and)
+          (NP (NN security) (NN awareness)))
+        (-RRB- -RRB-))
+      (, ,)
+      (FRAG
+        (NP
+          (NP (NN Knowledge) (NN engineering))
+          (CC and)
+          (NP
+            (NP (NN teaching) (NN tex))
+            (-LRB- -LRB-)
+            (NP (NNS MOOCs)
+              (CC and)
+              (NN openHPI))))
+        (, ,)
+        (NP
+          (NML
+            (NML (NN e) (HYPH -) (NN learning))
+            (CC and)
+            (NML (NN tele) (HYPH -)))
+          (NN TASK)))
+      (, ,)
+      (FRAG
+        (NP (NN Web) (CD 3.0))
+        (, ,)
+        (S
+          (VP (VB Secure)
+            (NP
+              (NML
+                (NML (JJ digital) (NN health))
+                (-RRB- -RRB-) (, ,)
+                (CC and)
+                (NML (NNP Innovation)))
+              (NN research))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN field))
+                (PP (IN of)
+                  (NP
+                    (NP (NN Design))
+                    (VP (VBG Thinking))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-62	particularly focused on : Security engineering ( Internet security , real time attack recognition , cloud security , ID management , and security awareness ) , Knowledge engineering and teaching tex ( MOOCs and openHPI , e - learning and tele - TASK , Web 3.0 , Secure digital health ) , and Innovation research in the field of Design Thinking 
+	2	particularly
+			sense:	particularly.r.01
+	3	focused
+			sense:	concentrate.v.02
+			prop:	focus.01
+			V		3-3	focused 
+			N-ARG-A0		0-0	He 
+			N-ARGM-ADV		2-2	particularly 
+			N-ARG-A2		4-62	on : Security engineering ( Internet security , real time attack recognition , cloud security , ID management , and security awareness ) , Knowledge engineering and teaching tex ( MOOCs and openHPI , e - learning and tele - TASK , Web 3.0 , Secure digital health ) , and Innovation research in the field of Design Thinking 
+	4	on
+	5	:
+	6	Security
+	7	engineering
+			sense:	engineering.n.02
+	8	(
+	9	Internet
+			name:	MISC				9-9	Internet 
+			sense:	internet.n.01
+	10	security
+			sense:	security.n.09
+	11	,
+	12	real
+			sense:	real.a.01
+	13	time
+			sense:	time.n.05
+	14	attack
+			name:	CAUSE_OF_DEATH				14-14	attack 
+			sense:	attack.n.01
+	15	recognition
+			sense:	recognition.n.01
+	16	,
+	17	cloud
+			sense:	swarm.n.02
+	18	security
+			sense:	security.n.09
+	19	,
+	20	ID
+			name:	STATE_OR_PROVINCE				20-20	ID 
+			sense:	id.n.02
+	21	management
+			sense:	management.n.01
+	22	,
+	23	and
+	24	security
+			sense:	security.n.09
+	25	awareness
+			sense:	awareness.n.01
+	26	)
+	27	,
+	28	Knowledge
+			sense:	cognition.n.01
+	29	engineering
+			sense:	engineering.n.02
+	30	and
+	31	teaching
+			sense:	education.n.01
+	32	tex
+	33	(
+	34	MOOCs
+	35	and
+	36	openHPI
+	37	,
+	38	e
+			sense:	east.n.01
+	39	-
+	40	learning
+			sense:	learning.n.01
+	41	and
+	42	tele
+	43	-
+	44	TASK
+			sense:	undertaking.n.01
+	45	,
+	46	Web
+			sense:	world_wide_web.n.01
+	47	3.0
+			name:	NUMBER				47-47	3.0 
+	48	,
+	49	Secure
+			sense:	guarantee.v.02
+			prop:	secure.02
+			V		49-49	Secure 
+			N-ARG-A1		50-51	digital health 
+	50	digital
+			sense:	digital.a.03
+	51	health
+			sense:	health.n.01
+	52	)
+	53	,
+	54	and
+	55	Innovation
+			name:	MISC				55-55	Innovation 
+	56	research
+			sense:	research.n.01
+	57	in
+	58	the
+	59	field
+			sense:	discipline.n.01
+	60	of
+	61	Design
+			sense:	design.n.01
+	62	Thinking
+			sense:	think.v.03
+			prop:	thinking.01
+			V		62-62	Thinking 
+			N-ARG-A1		61-61	Design 
+	63	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				6.8-8	Germany 
+				7.29-29	Germany 
+	Chain 1 (IDENT)
+				3.0-0	nat 
+				5.0-0	nat 
+	Chain 2 (IDENT)
+				7.37-38	and Systems 
+				12.11-12	and Systems 
+	Chain 3 (IDENT)
+				7.0-0	He 
+				8.0-0	He 
+

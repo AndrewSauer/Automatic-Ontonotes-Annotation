@@ -1,0 +1,560 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Pierre Petit ( 8 December 1594 – 20 August 1677 ) was a French astronomer , physicist , mathematician and instrument maker .
+
+
+Treebanked sentence:
+--------------------
+Pierre Petit ( 8 December 1594 – 20 August 1677 ) was a French astronomer , physicist , mathematician and instrument maker . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Pierre) (NNP Petit))
+      (-LRB- -LRB-)
+      (NP
+        (NP
+          (NP (CD 8))
+          (NP-TMP (NNP December) (CD 1594))
+          (PP (SYM –)
+            (NP (CD 20))))
+        (NP-TMP (NNP August) (CD 1677)))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ French) (NN astronomer))
+        (, ,)
+        (NP (NN physicist))
+        (, ,)
+        (NP (NN mathematician))
+        (CC and)
+        (NP (NN instrument) (NN maker))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Pierre
+			name:	PERSON				0-1	Pierre Petit 
+	1	Petit
+	2	(
+	3	8
+			name:	DATE				3-5	8 December 1594 
+	4	December
+	5	1594
+	6	–
+	7	20
+			name:	DATE				7-9	20 August 1677 
+	8	August
+	9	1677
+	10	)
+	11	was
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	was 
+			N-ARG-A1		0-10	Pierre Petit ( 8 December 1594 – 20 August 1677 ) 
+			N-ARG-A2		12-21	a French astronomer , physicist , mathematician and instrument maker 
+	12	a
+	13	French
+			name:	NATIONALITY				13-13	French 
+	14	astronomer
+			name:	TITLE				14-14	astronomer 
+			sense:	astronomer.n.01
+	15	,
+	16	physicist
+			name:	TITLE				16-16	physicist 
+			sense:	physicist.n.01
+	17	,
+	18	mathematician
+			name:	TITLE				18-18	mathematician 
+			sense:	mathematician.n.01
+	19	and
+	20	instrument
+			name:	TITLE				20-21	instrument maker 
+			sense:	instrument.n.01
+	21	maker
+			sense:	maker.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Petit was born in Montluçon .
+
+
+Treebanked sentence:
+--------------------
+Petit was born in Montluçon . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Petit))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Montluçon)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Petit
+			name:	PERSON				0-0	Petit 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Petit 
+			N-ARGM-LOC		3-4	in Montluçon 
+	3	in
+	4	Montluçon
+			name:	LOCATION				4-4	Montluçon 
+	5	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He succeeded his father in his municipal office ( Contrôleur de l'élection ) , but went to Paris in 1633 to dedicate himself to the sciences .
+
+
+Treebanked sentence:
+--------------------
+He succeeded his father in his municipal office ( Contrôleur de l'élection ) , but went to Paris in 1633 to dedicate himself to the sciences . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD succeeded)
+        (NP (PRP$ his) (NN father))
+        (PP (IN in)
+          (NP
+            (NP (PRP$ his) (JJ municipal) (NN office))
+            (-LRB- -LRB-)
+            (NP (NNP Contrôleur) (NNP de) (NNP l'élection))
+            (-RRB- -RRB-))))
+      (, ,)
+      (CC but)
+      (VP (VBD went)
+        (PP (IN to)
+          (NP
+            (NP (NNP Paris))
+            (PP (IN in)
+              (NP (CD 1633)))))
+        (PP (IN to)
+          (FRAG
+            (VP (VB dedicate)
+              (NP (PRP himself))
+              (PP (IN to)
+                (NP (DT the) (NNS sciences))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	succeeded
+			sense:	succeed.v.02
+			prop:	succeed.02
+			V		1-1	succeeded 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-3	his father 
+			N-ARG-A2		4-12	in his municipal office ( Contrôleur de l'élection ) 
+	2	his
+	3	father
+			sense:	father.n.01
+	4	in
+	5	his
+	6	municipal
+			sense:	municipal.a.01
+	7	office
+			sense:	agency.n.01
+	8	(
+	9	Contrôleur
+	10	de
+	11	l'élection
+	12	)
+	13	,
+	14	but
+	15	went
+			sense:	travel.v.01
+			prop:	go.02
+			V		15-15	went 
+			N-ARG-A0		0-0	He 
+			N-ARG-A4		16-17	to Paris 
+			N-ARGM-TMP		18-19	in 1633 
+			N-ARGM-PRP		20-25	to dedicate himself to the sciences 
+	16	to
+	17	Paris
+			name:	CITY				17-17	Paris 
+	18	in
+	19	1633
+			name:	DATE				19-19	1633 
+	20	to
+	21	dedicate
+			sense:	give.v.18
+			prop:	dedicate.01
+			V		21-21	dedicate 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		22-22	himself 
+			N-ARG-A2		23-25	to the sciences 
+	22	himself
+	23	to
+	24	the
+	25	sciences
+			sense:	science.n.01
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was a member of the circle around Marin Mersenne , and knew Etienne Pascal , Blaise Pascal , and René Descartes .
+
+
+Treebanked sentence:
+--------------------
+He was a member of the circle around Marin Mersenne , and knew Etienne Pascal , Blaise Pascal , and René Descartes . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (NP
+          (NP (DT a) (NN member))
+          (PP (IN of)
+            (NP (DT the) (NN circle))))
+        (PP (IN around)
+          (NP (NNP Marin) (NNP Mersenne))))
+      (, ,)
+      (CC and)
+      (VP (VBD knew)
+        (NP
+          (NP (NNP Etienne) (NNP Pascal))
+          (, ,)
+          (NP (NNP Blaise) (NNP Pascal))
+          (, ,)
+          (CC and)
+          (NP (NNP René) (NNP Descartes)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-9	a member of the circle around Marin Mersenne 
+	2	a
+	3	member
+			sense:	member.n.01
+	4	of
+	5	the
+	6	circle
+			sense:	set.n.05
+	7	around
+	8	Marin
+			name:	CITY				8-8	Marin 
+	9	Mersenne
+			name:	LOCATION				9-9	Mersenne 
+	10	,
+	11	and
+	12	knew
+			sense:	know.v.04
+			prop:	know.01
+			V		12-12	knew 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		13-21	Etienne Pascal , Blaise Pascal , and René Descartes 
+	13	Etienne
+			name:	PERSON				13-14	Etienne Pascal 
+	14	Pascal
+	15	,
+	16	Blaise
+			name:	PERSON				16-17	Blaise Pascal 
+	17	Pascal
+	18	,
+	19	and
+	20	René
+	21	Descartes
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Later he was a member of the Academy of Montmor .
+
+
+Treebanked sentence:
+--------------------
+Later he was a member of the Academy of Montmor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RBR Later))
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Academy))
+            (PP (IN of)
+              (NP (NNP Montmor)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Later
+			sense:	recently.r.01
+	1	he
+	2	was
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	was 
+			N-ARGM-TMP		0-0	Later 
+			N-ARG-A1		1-1	he 
+			N-ARG-A2		3-9	a member of the Academy of Montmor 
+	3	a
+	4	member
+			sense:	member.n.01
+	5	of
+	6	the
+	7	Academy
+			name:	ORGANIZATION				7-9	Academy of Montmor 
+	8	of
+	9	Montmor
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On 4 April 1667 he became a fellow of The Royal Society .
+
+
+Treebanked sentence:
+--------------------
+On 4 April 1667 he became a fellow of The Royal Society . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP
+        (NP (CD 4))
+        (NP-TMP (NNP April) (CD 1667))))
+    (NP (PRP he))
+    (VP (VBD became)
+      (NP
+        (NP (DT a) (NN fellow))
+        (PP (IN of)
+          (NP (DT The) (NNP Royal) (NNP Society)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	4
+			name:	DATE				1-3	4 April 1667 
+	2	April
+	3	1667
+	4	he
+	5	became
+			sense:	become.v.02
+			prop:	become.01
+			V		5-5	became 
+			N-ARGM-TMP		0-3	On 4 April 1667 
+			N-ARG-A1		4-4	he 
+			N-ARG-A2		6-11	a fellow of The Royal Society 
+	6	a
+	7	fellow
+			sense:	fellow.n.05
+	8	of
+	9	The
+	10	Royal
+			name:	ORGANIZATION				10-11	Royal Society 
+	11	Society
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also served as a military engineer and geographer to Louis XIII and Louis XIV , in roles such as Superintendent of Fortifications .
+
+
+Treebanked sentence:
+--------------------
+He also served as a military engineer and geographer to Louis XIII and Louis XIV , in roles such as Superintendent of Fortifications . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP
+          (NP (DT a) (JJ military) (NN engineer))
+          (CC and)
+          (NP (NN geographer))))
+      (PP (IN to)
+        (NP
+          (NML
+            (NML (NNP Louis) (CD XIII))
+            (CC and)
+            (NML (NNP Louis)))
+          (NNP XIV)))
+      (, ,)
+      (PP (IN in)
+        (NP
+          (NP (NNS roles))
+          (PP (JJ such) (IN as)
+            (NP
+              (NP (NN Superintendent))
+              (PP (IN of)
+                (NP (NNS Fortifications))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	also
+			sense:	besides.r.02
+	2	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		2-2	served 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-14	as a military engineer and geographer to Louis XIII and Louis XIV 
+			N-ARGM-ADV		16-22	in roles such as Superintendent of Fortifications 
+	3	as
+	4	a
+	5	military
+			sense:	military.a.02
+	6	engineer
+			name:	TITLE				6-6	engineer 
+			sense:	engineer.n.01
+	7	and
+	8	geographer
+			name:	TITLE				8-8	geographer 
+			sense:	geographer.n.01
+	9	to
+	10	Louis
+			coref:	IDENT			0	10-11	Louis XIII 
+			name:	PERSON				10-11	Louis XIII 
+	11	XIII
+	12	and
+			coref:	IDENT			0	12-13	and Louis 
+	13	Louis
+			name:	PERSON				13-14	Louis XIV 
+	14	XIV
+	15	,
+	16	in
+	17	roles
+			sense:	function.n.03
+	18	such
+			sense:	such.s.01
+	19	as
+	20	Superintendent
+			name:	TITLE				20-20	Superintendent 
+			sense:	overseer.n.01
+	21	of
+	22	Fortifications
+			sense:	fortification.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He died in Lagny - sur - Marne in 1677 .
+
+
+Treebanked sentence:
+--------------------
+He died in Lagny - sur - Marne in 1677 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD died)
+      (PP (IN in)
+        (NP
+          (NP (NNP Lagny))
+          (HYPH -)
+          (NP (FW sur) (HYPH -) (FW Marne))))
+      (PP (IN in)
+        (NP (CD 1677))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		2-7	in Lagny - sur - Marne 
+			N-ARGM-TMP		8-9	in 1677 
+	2	in
+	3	Lagny
+			name:	LOCATION				3-7	Lagny - sur - Marne 
+	4	-
+	5	sur
+	6	-
+	7	Marne
+	8	in
+	9	1677
+			name:	DATE				9-9	1677 
+	10	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				6.12-13	and Louis 
+				6.10-11	Louis XIII 
+

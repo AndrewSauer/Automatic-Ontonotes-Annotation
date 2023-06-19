@@ -1,0 +1,789 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Flood Street is a residential street in Chelsea , London , England .
+
+
+Treebanked sentence:
+--------------------
+Flood Street is a residential street in Chelsea , London , England . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Flood) (NNP Street))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ residential) (NN street))
+        (PP (IN in)
+          (NP (NNP Chelsea) (, ,) (NNP London) (, ,) (NNP England)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Flood
+			coref:	IDENT			1	0-1	Flood Street 
+			name:	CAUSE_OF_DEATH				0-0	Flood 
+	1	Street
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Flood Street 
+			N-ARG-A2		3-11	a residential street in Chelsea , London , England 
+	3	a
+	4	residential
+			sense:	residential.a.01
+	5	street
+			sense:	street.n.01
+	6	in
+	7	Chelsea
+			coref:	IDENT			0	7-7	Chelsea 
+			name:	CITY				7-7	Chelsea 
+	8	,
+	9	London
+			name:	CITY				9-9	London 
+	10	,
+	11	England
+			name:	COUNTRY				11-11	England 
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It runs between King 's Road to the north and Royal Hospital Road to the south .
+
+
+Treebanked sentence:
+--------------------
+It runs between King 's Road to the north and Royal Hospital Road to the south . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ runs)
+      (PP (IN between)
+        (NP
+          (NP
+            (NP (NNP King) (POS 's))
+            (NNP Road))
+          (PP (IN to)
+            (NP
+              (NP (DT the) (NN north))
+              (CC and)
+              (NP (NNP Royal) (NNP Hospital) (NNP Road))))))
+      (PP (IN to)
+        (NP (DT the) (NN south))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	runs
+			sense:	run.v.03
+			prop:	run.04
+			V		1-1	runs 
+			N-ARG-A1		0-0	It 
+	2	between
+	3	King
+			name:	TITLE				3-3	King 
+	4	's
+			name:	LOCATION				4-5	's Road 
+	5	Road
+	6	to
+	7	the
+	8	north
+			sense:	north.n.03
+	9	and
+	10	Royal
+			name:	LOCATION				10-12	Royal Hospital Road 
+	11	Hospital
+	12	Road
+	13	to
+	14	the
+	15	south
+			sense:	south.n.03
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Just further to the south is the River Thames .
+
+
+Treebanked sentence:
+--------------------
+Just further to the south is the River Thames . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (RB Just) (RB further))
+      (PP (IN to)
+        (NP (DT the) (NN south))))
+    (VP (VBZ is)
+      (NP (DT the) (NNP River) (NNP Thames)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Just
+			sense:	precisely.r.01
+	1	further
+			sense:	farther.r.02
+	2	to
+	3	the
+	4	south
+			sense:	south.n.03
+	5	is
+			sense:	be.v.03
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A2		0-4	Just further to the south 
+			N-ARG-A1		6-8	the River Thames 
+	6	the
+	7	River
+			name:	TITLE				7-7	River 
+	8	Thames
+			name:	CITY				8-8	Thames 
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The closest tube station is Sloane Square to the northeast .
+
+
+Treebanked sentence:
+--------------------
+The closest tube station is Sloane Square to the northeast . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJS closest) (NN tube) (NN station))
+    (VP (VBZ is)
+      (NP
+        (NP (NNP Sloane) (NNP Square))
+        (PP (IN to)
+          (NP (DT the) (NN northeast)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	closest
+			sense:	close.a.01
+	2	tube
+			sense:	metro.n.01
+	3	station
+			sense:	station.n.01
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	The closest tube station 
+			N-ARG-A2		5-9	Sloane Square to the northeast 
+	5	Sloane
+			name:	LOCATION				5-6	Sloane Square 
+	6	Square
+	7	to
+	8	the
+	9	northeast
+			sense:	northeast.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The street commemorates Luke Thomas Flood ( d.1860 ) a major Chelsea land owner and a benefactor of the poor .
+
+
+Treebanked sentence:
+--------------------
+The street commemorates Luke Thomas Flood ( d. 1860 ) a major Chelsea land owner and a benefactor of the poor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN street))
+    (VP (VBZ commemorates)
+      (NP
+        (NP
+          (NP
+            (NP (NNP Luke) (NNP Thomas) (NNP Flood))
+            (-LRB- -LRB-)
+            (VP (VBN d.)
+              (NP (CD 1860)))
+            (-RRB- -RRB-))
+          (NP (DT a) (JJ major) (NNP Chelsea) (NN land) (NN owner)))
+        (CC and)
+        (NP
+          (NP (DT a) (NN benefactor))
+          (PP (IN of)
+            (NP (DT the) (JJ poor))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The street 
+	1	street
+			sense:	street.n.01
+	2	commemorates
+			sense:	commemorate.v.03
+			prop:	commemorate.01
+			V		2-2	commemorates 
+			N-ARG-A0		0-1	The street 
+			N-ARG-A1		3-20	Luke Thomas Flood ( d. 1860 ) a major Chelsea land owner and a benefactor of the poor 
+	3	Luke
+			name:	PERSON				3-5	Luke Thomas Flood 
+	4	Thomas
+	5	Flood
+	6	(
+	7	d.
+			prop:	do.01
+			V		7-7	d. 
+			N-ARGM-TMP		8-8	1860 
+	8	1860
+			name:	DATE				8-8	1860 
+	9	)
+	10	a
+	11	major
+			sense:	major.a.01
+	12	Chelsea
+			coref:	IDENT			0	12-12	Chelsea 
+			name:	ORGANIZATION				12-12	Chelsea 
+	13	land
+			sense:	land.n.01
+	14	owner
+			name:	TITLE				14-14	owner 
+			sense:	owner.n.02
+	15	and
+	16	a
+	17	benefactor
+			sense:	benefactor.n.01
+	18	of
+	19	the
+	20	poor
+			sense:	poor.a.02
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The most famous resident of Flood Street ( No .
+
+
+Treebanked sentence:
+--------------------
+The most famous resident of Flood Street ( No . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP (DT The)
+      (ADJP (RBS most) (JJ famous))
+      (NN resident))
+    (PP (IN of)
+      (NP
+        (NP (NNP Flood) (NNP Street))
+        (-LRB- -LRB-)
+        (NP (UH No))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	most
+			sense:	most.r.01
+	2	famous
+			sense:	celebrated.s.01
+	3	resident
+			sense:	resident.n.01
+	4	of
+	5	Flood
+			coref:	IDENT			1	5-6	Flood Street 
+			name:	CAUSE_OF_DEATH				5-5	Flood 
+	6	Street
+	7	(
+	8	No
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+19 ) was the former British prime minister Margaret Thatcher .
+
+
+Treebanked sentence:
+--------------------
+19 ) was the former British prime minister Margaret Thatcher . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (CD 19))
+    (-RRB- -RRB-)
+    (VP (VBD was)
+      (NP (DT the)
+        (NML (JJ former) (JJ British) (JJ prime) (NN minister))
+        (NNP Margaret) (NNP Thatcher)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	19
+			name:	NUMBER				0-0	19 
+	1	)
+	2	was
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		3-9	the former British prime minister Margaret Thatcher 
+	3	the
+			coref:	IDENT			2	3-9	the former British prime minister Margaret Thatcher 
+	4	former
+			sense:	former.s.03
+	5	British
+			name:	NATIONALITY				5-5	British 
+	6	prime
+			name:	TITLE				6-7	prime minister 
+			sense:	premier.s.01
+	7	minister
+			sense:	minister.n.02
+	8	Margaret
+			name:	PERSON				8-9	Margaret Thatcher 
+	9	Thatcher
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The house was bought by Margaret Thatcher and her husband Denis Thatcher in 1967 and sold in 1986 .
+
+
+Treebanked sentence:
+--------------------
+The house was bought by Margaret Thatcher and her husband Denis Thatcher in 1967 and sold in 1986 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN house))
+    (VP (VBD was)
+      (VP
+        (VP (VBN bought)
+          (PP (IN by)
+            (NP
+              (NP (NNP Margaret) (NNP Thatcher))
+              (CC and)
+              (NP
+                (NP (PRP$ her) (NN husband))
+                (NP (NNP Denis) (NNP Thatcher)))))
+          (PP (IN in)
+            (NP (CD 1967))))
+        (CC and)
+        (VP (VBN sold)
+          (PP (IN in)
+            (NP (CD 1986))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-1	The house 
+	1	house
+			sense:	house.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	bought
+			sense:	buy.v.01
+			prop:	buy.01
+			V		3-3	bought 
+			N-ARG-A1		0-1	The house 
+			N-ARG-A0		4-11	by Margaret Thatcher and her husband Denis Thatcher 
+			N-ARGM-TMP		12-13	in 1967 
+	4	by
+	5	Margaret
+			name:	PERSON				5-6	Margaret Thatcher 
+	6	Thatcher
+	7	and
+	8	her
+			coref:	IDENT			2	8-8	her 
+	9	husband
+			sense:	husband.n.01
+	10	Denis
+			name:	PERSON				10-11	Denis Thatcher 
+	11	Thatcher
+	12	in
+	13	1967
+			name:	DATE				13-13	1967 
+	14	and
+	15	sold
+			sense:	sell.v.01
+			prop:	sell.01
+			V		15-15	sold 
+			N-ARG-A1		0-1	The house 
+			N-ARGM-TMP		16-17	in 1986 
+	16	in
+	17	1986
+			name:	DATE				17-17	1986 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She celebrated her first 1979 general election victory here .
+
+
+Treebanked sentence:
+--------------------
+She celebrated her first 1979 general election victory here . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD celebrated)
+      (NP
+        (NP (PRP$ her) (JJ first) (CD 1979)
+          (NML (JJ general) (NN election))
+          (NN victory))
+        (ADVP (RB here))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			2	0-0	She 
+	1	celebrated
+			sense:	celebrate.v.02
+			prop:	celebrate.02
+			V		1-1	celebrated 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		2-7	her first 1979 general election victory 
+			N-ARGM-LOC		8-8	here 
+	2	her
+			coref:	IDENT			2	2-2	her 
+	3	first
+			name:	ORDINAL				3-3	first 
+			sense:	first.a.01
+	4	1979
+			name:	DATE				4-4	1979 
+	5	general
+			name:	TITLE				5-5	general 
+			sense:	general.a.01
+	6	election
+			sense:	election.n.01
+	7	victory
+			sense:	victory.n.01
+	8	here
+			sense:	here.r.01
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Another former resident of Flood Street was the theatrical manager , director , teacher , and actor , George Devine CBE ( 1910 – 1966 ) .
+
+
+Treebanked sentence:
+--------------------
+Another former resident of Flood Street was the theatrical manager , director , teacher , and actor , George Devine CBE ( 1910 – 1966 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT Another) (JJ former) (NN resident))
+      (PP (IN of)
+        (NP (NNP Flood) (NNP Street))))
+    (VP (VBD was)
+      (NP (DT the)
+        (ADJP (JJ theatrical)
+          (NP-TMP
+            (NP (NN manager) (, ,) (NN director) (, ,) (NN teacher) (, ,)
+              (CC and)
+              (NN actor))
+            (, ,)
+            (NP (NNP George))))
+        (JJ Devine) (NN CBE))
+      (PRN (-LRB- -LRB-)
+        (NP (CD 1910) (SYM –) (CD 1966))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Another
+	1	former
+			sense:	erstwhile.s.01
+	2	resident
+			sense:	resident.n.01
+	3	of
+	4	Flood
+			coref:	IDENT			1	4-5	Flood Street 
+			name:	CAUSE_OF_DEATH				4-4	Flood 
+	5	Street
+			name:	LOCATION				5-5	Street 
+	6	was
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	was 
+			N-ARG-A1		0-5	Another former resident of Flood Street 
+			N-ARG-A2		7-25	the theatrical manager , director , teacher , and actor , George Devine CBE ( 1910 – 1966 ) 
+	7	the
+	8	theatrical
+			sense:	theatrical.a.01
+	9	manager
+			name:	TITLE				9-9	manager 
+			sense:	director.n.01
+	10	,
+	11	director
+			name:	TITLE				11-11	director 
+			sense:	director.n.03
+	12	,
+	13	teacher
+			name:	TITLE				13-13	teacher 
+			sense:	teacher.n.01
+	14	,
+	15	and
+	16	actor
+			name:	TITLE				16-16	actor 
+			sense:	actor.n.01
+	17	,
+	18	George
+			name:	PERSON				18-19	George Devine 
+	19	Devine
+	20	CBE
+	21	(
+	22	1910
+			name:	DATE				22-22	1910 
+	23	–
+	24	1966
+			name:	DATE				24-24	1966 
+	25	)
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Part of Hill House School is located there .
+
+
+Treebanked sentence:
+--------------------
+Part of Hill House School is located there . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NN Part))
+      (PP (IN of)
+        (NP (NNP Hill) (NNP House) (NNP School))))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (ADVP (RB there))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Part
+			sense:	part.n.02
+	1	of
+	2	Hill
+			name:	ORGANIZATION				2-4	Hill House School 
+	3	House
+	4	School
+	5	is
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	is 
+	6	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		6-6	located 
+			N-ARG-A1		0-4	Part of Hill House School 
+			N-ARGM-LOC		7-7	there 
+	7	there
+			sense:	there.r.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Violet Melchett Children 's Centre is located at 30 Flood Street .
+
+
+Treebanked sentence:
+--------------------
+The Violet Melchett Children 's Centre is located at 30 Flood Street . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Violet) (NNP Melchett) (NNP Children) (POS 's))
+      (NNP Centre))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN at)
+          (NP (CD 30)
+            (NML (NNP Flood) (NNP Street))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Violet
+			name:	LOCATION				1-5	Violet Melchett Children 's Centre 
+	2	Melchett
+	3	Children
+	4	's
+	5	Centre
+	6	is
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	is 
+	7	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		7-7	located 
+			N-ARG-A1		0-5	The Violet Melchett Children 's Centre 
+			N-ARGM-LOC		8-11	at 30 Flood Street 
+	8	at
+	9	30
+			name:	NUMBER				9-9	30 
+	10	Flood
+			name:	CAUSE_OF_DEATH				10-10	Flood 
+	11	Street
+			name:	LOCATION				11-11	Street 
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Coopers Arms public house is at 87 Flood Street .
+
+
+Treebanked sentence:
+--------------------
+The Coopers Arms public house is at 87 Flood Street . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The)
+      (NML (NNP Coopers) (NNS Arms))
+      (JJ public) (NN house))
+    (VP (VBZ is)
+      (PP (IN at)
+        (NP (CD 87)
+          (NML (NNP Flood) (NNP Street)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-4	The Coopers Arms public house 
+	1	Coopers
+	2	Arms
+			sense:	branch.n.01
+	3	public
+			sense:	public.a.01
+	4	house
+			sense:	house.n.01
+	5	is
+			sense:	be.v.03
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	The Coopers Arms public house 
+			N-ARG-A2		6-9	at 87 Flood Street 
+	6	at
+	7	87
+			name:	NUMBER				7-7	87 
+	8	Flood
+			name:	CAUSE_OF_DEATH				8-8	Flood 
+	9	Street
+			name:	LOCATION				9-9	Street 
+	10	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.7-7	Chelsea 
+				4.12-12	Chelsea 
+	Chain 1 (IDENT)
+				0.0-1	Flood Street 
+				4.0-1	The street 
+				5.5-6	Flood Street 
+				9.4-5	Flood Street 
+	Chain 2 (IDENT)
+				6.3-9	the former British prime minister Margaret Thatcher 
+				7.8-8	her 
+				8.0-0	She 
+				8.2-2	her 
+	Chain 3 (IDENT)
+				12.0-4	The Coopers Arms public house 
+				7.0-1	The house 
+

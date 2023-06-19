@@ -1,0 +1,874 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+François Grin ( born 14 September 1959 ) is a Swiss economist .
+
+
+Treebanked sentence:
+--------------------
+François Grin ( born 14 September 1959 ) is a Swiss economist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP François) (NNP Grin))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 14))
+        (NP-TMP (NNP September) (CD 1959)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (JJ Swiss) (NN economist)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	François
+			name:	PERSON				0-1	François Grin 
+	1	Grin
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	François Grin 
+			N-ARGM-TMP		4-6	14 September 1959 
+	4	14
+			name:	DATE				4-6	14 September 1959 
+	5	September
+	6	1959
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	François Grin ( born 14 September 1959 ) 
+			N-ARG-A2		9-11	a Swiss economist 
+	9	a
+	10	Swiss
+			name:	NATIONALITY				10-10	Swiss 
+	11	economist
+			name:	TITLE				11-11	economist 
+			sense:	economist.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+One of his research fields is the economics of language .
+
+
+Treebanked sentence:
+--------------------
+One of his research fields is the economics of language . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (CD One))
+      (PP (IN of)
+        (NP (PRP$ his) (NN research) (NNS fields))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NNS economics))
+        (PP (IN of)
+          (NP (NN language)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	One
+			name:	NUMBER				0-0	One 
+	1	of
+	2	his
+	3	research
+			sense:	research.n.01
+	4	fields
+			sense:	discipline.n.01
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	One of his research fields 
+			N-ARG-A2		6-9	the economics of language 
+	6	the
+	7	economics
+			sense:	economics.n.01
+	8	of
+	9	language
+			sense:	language.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Grin studied economics at the University of Geneva , where he obtained a doctorate summa cum laude in 1989 .
+
+
+Treebanked sentence:
+--------------------
+Grin studied economics at the University of Geneva , where he obtained a doctorate summa cum laude in 1989 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN Grin))
+    (VP (VBD studied)
+      (NP (NNS economics))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NNP University))
+          (PP (IN of)
+            (NP (NNP Geneva)))))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP he))
+          (VP (VBD obtained)
+            (NP
+              (NP (DT a) (NN doctorate) (NN summa) (NN cum) (NN laude))
+              (PP (IN in)
+                (NP (CD 1989))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Grin
+			coref:	IDENT			0	0-0	Grin 
+			sense:	smile.n.01
+	1	studied
+			sense:	learn.v.04
+			prop:	study.01
+			V		1-1	studied 
+			N-ARG-A0		0-0	Grin 
+			N-ARG-A1		2-2	economics 
+			N-ARGM-LOC		3-18	at the University of Geneva , where he obtained a doctorate summa cum laude in 1989 
+	2	economics
+			sense:	economics.n.01
+	3	at
+	4	the
+			coref:	IDENT			1	4-7	the University of Geneva 
+	5	University
+			name:	ORGANIZATION				5-7	University of Geneva 
+	6	of
+	7	Geneva
+	8	,
+	9	where
+	10	he
+	11	obtained
+			sense:	obtain.v.01
+			prop:	obtain.01
+			V		11-11	obtained 
+			N-ARGM-LOC		4-7	the University of Geneva 
+			R-ARGM-LOC		9-9	where 
+			N-ARG-A0		10-10	he 
+			N-ARG-A1		12-16	a doctorate summa cum laude 
+			N-ARGM-TMP		17-18	in 1989 
+	12	a
+	13	doctorate
+			sense:	doctors_degree.n.01
+	14	summa
+	15	cum
+			sense:	semen.n.01
+	16	laude
+	17	in
+	18	1989
+			name:	DATE				18-18	1989 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He then was a teacher at the universities of Montreal and Washington ( in Seattle ) , assistant professor at the University of Geneva and vice - director of the European Centre for Minority Issues in Flensburg , Germany .
+
+
+Treebanked sentence:
+--------------------
+He then was a teacher at the universities of Montreal and Washington ( in Seattle ) , assistant professor at the University of Geneva and vice - director of the European Centre for Minority Issues in Flensburg , Germany . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB then))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN teacher))
+        (PP (IN at)
+          (NP
+            (NP
+              (NP (DT the) (NNS universities))
+              (PP (IN of)
+                (NP
+                  (NP (NNP Montreal)
+                    (CC and)
+                    (NNP Washington))
+                  (-LRB- -LRB-)
+                  (PP (IN in)
+                    (NP (NNP Seattle)))
+                  (-RRB- -RRB-))))
+            (, ,)
+            (NP
+              (NP (NN assistant) (NN professor))
+              (PP (IN at)
+                (NP
+                  (NP (DT the) (NNP University))
+                  (PP (IN of)
+                    (NP (NNP Geneva))))))
+            (CC and)
+            (NP
+              (NP (NN vice) (HYPH -) (NN director))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (JJ European) (NNP Centre))
+                  (PP (IN for)
+                    (NP
+                      (NML
+                        (NML (NNP Minority) (NNPS Issues))
+                        (PP (IN in)
+                          (NP (NNP Flensburg))))
+                      (, ,) (NNP Germany))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	then
+			sense:	then.r.03
+	2	was
+			sense:	be.v.08
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		1-1	then 
+			N-ARG-A2		3-38	a teacher at the universities of Montreal and Washington ( in Seattle ) , assistant professor at the University of Geneva and vice - director of the European Centre for Minority Issues in Flensburg , Germany 
+	3	a
+	4	teacher
+			name:	TITLE				4-4	teacher 
+			sense:	teacher.n.01
+	5	at
+	6	the
+	7	universities
+			sense:	university.n.02
+	8	of
+	9	Montreal
+			name:	CITY				9-9	Montreal 
+	10	and
+	11	Washington
+			name:	STATE_OR_PROVINCE				11-11	Washington 
+	12	(
+	13	in
+	14	Seattle
+			name:	CITY				14-14	Seattle 
+	15	)
+	16	,
+	17	assistant
+			name:	TITLE				17-18	assistant professor 
+			sense:	assistant.n.01
+	18	professor
+			sense:	professor.n.01
+	19	at
+	20	the
+			coref:	IDENT			1	20-23	the University of Geneva 
+	21	University
+			name:	ORGANIZATION				21-23	University of Geneva 
+	22	of
+	23	Geneva
+	24	and
+	25	vice
+			sense:	frailty.n.02
+	26	-
+	27	director
+			name:	TITLE				27-27	director 
+			sense:	director.n.01
+	28	of
+	29	the
+	30	European
+			name:	ORGANIZATION				30-34	European Centre for Minority Issues 
+	31	Centre
+	32	for
+	33	Minority
+	34	Issues
+	35	in
+	36	Flensburg
+			name:	CITY				36-36	Flensburg 
+	37	,
+	38	Germany
+			name:	COUNTRY				38-38	Germany 
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Since 2001 he is a visiting professor at the University of Lugano , in 2003 he became professor at the University of Geneva .
+
+
+Treebanked sentence:
+--------------------
+Since 2001 he is a visiting professor at the University of Lugano , in 2003 he became professor at the University of Geneva . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN Since)
+        (NP (CD 2001)))
+      (NP (PRP he))
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (VBG visiting) (NN professor))
+          (PP (IN at)
+            (NP
+              (NP (DT the) (NNP University))
+              (PP (IN of)
+                (NP (NNP Lugano))))))))
+    (, ,)
+    (S
+      (PP (IN in)
+        (NP (CD 2003)))
+      (NP (PRP he))
+      (VP (VBD became)
+        (NP (NN professor))
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Geneva)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Since
+	1	2001
+			name:	DATE				1-1	2001 
+	2	he
+	3	is
+			sense:	be.v.08
+			prop:	be.01
+			V		3-3	is 
+			N-ARGM-TMP		0-1	Since 2001 
+			N-ARG-A1		2-2	he 
+			N-ARG-A2		4-11	a visiting professor at the University of Lugano 
+	4	a
+	5	visiting
+			sense:	visit.v.04
+			prop:	visit.01
+			V		5-5	visiting 
+			N-ARG-A0		6-6	professor 
+	6	professor
+			name:	TITLE				6-6	professor 
+			sense:	professor.n.01
+	7	at
+	8	the
+			coref:	IDENT			1	8-11	the University of Lugano 
+	9	University
+			name:	ORGANIZATION				9-11	University of Lugano 
+	10	of
+	11	Lugano
+	12	,
+	13	in
+	14	2003
+			name:	DATE				14-14	2003 
+	15	he
+	16	became
+			sense:	become.v.02
+			prop:	become.01
+			V		16-16	became 
+			N-ARGM-TMP		13-14	in 2003 
+			N-ARG-A1		15-15	he 
+			N-ARG-A2		17-22	professor at the University of Geneva 
+	17	professor
+			name:	TITLE				17-17	professor 
+			sense:	professor.n.01
+	18	at
+	19	the
+			coref:	IDENT			1	19-22	the University of Geneva 
+	20	University
+			name:	ORGANIZATION				20-22	University of Geneva 
+	21	of
+	22	Geneva
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In his research , he studies the linguistic situation in Switzerland and in the European Union and its economic consequences .
+
+
+Treebanked sentence:
+--------------------
+In his research , he studies the linguistic situation in Switzerland and in the European Union and its economic consequences . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (PRP$ his) (NN research)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBZ studies)
+      (NP (DT the) (JJ linguistic) (NN situation))
+      (PP
+        (PP (IN in)
+          (NP (NNP Switzerland)))
+        (CC and)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNP European) (NNP Union))
+            (CC and)
+            (NP (PRP$ its) (JJ economic) (NNS consequences))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	his
+	2	research
+			sense:	research.n.01
+	3	,
+	4	he
+	5	studies
+			sense:	analyze.v.01
+			prop:	study.01
+			V		5-5	studies 
+			N-ARGM-LOC		0-2	In his research 
+			N-ARG-A0		4-4	he 
+			N-ARG-A1		6-19	the linguistic situation in Switzerland and in the European Union and its economic consequences 
+	6	the
+	7	linguistic
+			sense:	linguistic.a.01
+	8	situation
+			sense:	situation.n.01
+	9	in
+	10	Switzerland
+			name:	COUNTRY				10-10	Switzerland 
+	11	and
+	12	in
+	13	the
+	14	European
+			name:	ORGANIZATION				14-15	European Union 
+	15	Union
+	16	and
+	17	its
+	18	economic
+			sense:	economic.a.01
+	19	consequences
+			sense:	consequence.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is the author of a 2005 report entitled L'enseignement des langues étrangères comme politique publique ( The teaching of foreign languages as a public policy ) , best known as Grin 's Report .
+
+
+Treebanked sentence:
+--------------------
+He is the author of a 2005 report entitled L'enseignement des langues étrangères comme politique publique ( The teaching of foreign languages as a public policy ) , best known as Grin 's Report . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN author))
+        (PP (IN of)
+          (NP
+            (NP (DT a) (CD 2005) (NN report))
+            (VP (VBN entitled)
+              (SBAR
+                (S
+                  (NP (NNP L'enseignement) (NNP des))
+                  (VP (VBZ langues)
+                    (NP
+                      (NP
+                        (NP (NNS étrangères))
+                        (NN comme) (NN politique) (NN publique)
+                        (PRN (-LRB- -LRB-)
+                          (NP
+                            (NP (DT The) (NN teaching))
+                            (PP (IN of)
+                              (NP
+                                (NP (JJ foreign) (NNS languages))
+                                (PP (IN as)
+                                  (NP (DT a) (JJ public) (NN policy))))))
+                          (-RRB- -RRB-)))
+                      (, ,)
+                      (NP
+                        (NP (JJS best))
+                        (VP (VBN known)
+                          (PP (IN as)
+                            (NP
+                              (NP (NN Grin) (POS 's))
+                              (NN Report))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-33	the author of a 2005 report entitled L'enseignement des langues étrangères comme politique publique ( The teaching of foreign languages as a public policy ) , best known as Grin 's Report 
+	2	the
+	3	author
+			name:	TITLE				3-3	author 
+			sense:	writer.n.01
+	4	of
+	5	a
+	6	2005
+			name:	DATE				6-6	2005 
+	7	report
+			sense:	report.n.01
+	8	entitled
+			sense:	entitle.v.02
+			prop:	entitle.02
+			V		8-8	entitled 
+			N-ARG-A1		5-7	a 2005 report 
+			N-ARG-A2		9-26	L'enseignement des langues étrangères comme politique publique ( The teaching of foreign languages as a public policy ) 
+	9	L'enseignement
+	10	des
+	11	langues
+			prop:	languish.01
+			V		11-11	langues 
+	12	étrangères
+	13	comme
+	14	politique
+	15	publique
+	16	(
+	17	The
+	18	teaching
+			sense:	education.n.01
+	19	of
+	20	foreign
+			sense:	foreign.a.02
+	21	languages
+			sense:	language.n.01
+	22	as
+	23	a
+	24	public
+			sense:	public.a.01
+	25	policy
+			sense:	policy.n.02
+	26	)
+	27	,
+	28	best
+			sense:	good.a.01
+	29	known
+			sense:	acknowledge.v.06
+			prop:	know.01
+			V		29-29	known 
+			N-ARG-A1		5-26	a 2005 report entitled L'enseignement des langues étrangères comme politique publique ( The teaching of foreign languages as a public policy ) 
+			N-ARGM-MNR		28-28	best 
+			N-ARG-A2		30-33	as Grin 's Report 
+	30	as
+	31	Grin
+			coref:	IDENT			0	31-32	Grin 's 
+			sense:	smile.n.01
+	32	's
+	33	Report
+			sense:	report.n.01
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In this document , Grin indicates that the choice of Esperanto as a bridge language for Europe would lead to an annual saving of 25 billion euros .
+
+
+Treebanked sentence:
+--------------------
+In this document , Grin indicates that the choice of Esperanto as a bridge language for Europe would lead to an annual saving of 25 billion euros . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT this) (NN document)))
+    (, ,)
+    (NP (NN Grin))
+    (VP (VBZ indicates)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT the) (NN choice))
+            (PP (IN of)
+              (NP
+                (NP (JJ Esperanto))
+                (PP (IN as)
+                  (NP
+                    (NP (DT a) (NN bridge) (NN language))
+                    (PP (IN for)
+                      (NP (NNP Europe))))))))
+          (VP (MD would)
+            (VP (VB lead)
+              (PP (IN to)
+                (NP
+                  (NP (DT an) (JJ annual) (NN saving))
+                  (PP (IN of)
+                    (NP
+                      (QP (CD 25) (CD billion))
+                      (NNS euros))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	this
+	2	document
+			sense:	document.n.01
+	3	,
+	4	Grin
+			coref:	IDENT			0	4-4	Grin 
+			sense:	smile.n.01
+	5	indicates
+			sense:	indicate.v.03
+			prop:	indicate.01
+			V		5-5	indicates 
+			N-ARGM-LOC		0-2	In this document 
+			N-ARG-A0		4-4	Grin 
+			N-ARG-A1		6-26	that the choice of Esperanto as a bridge language for Europe would lead to an annual saving of 25 billion euros 
+	6	that
+	7	the
+	8	choice
+			sense:	choice.n.02
+	9	of
+	10	Esperanto
+			name:	MISC				10-10	Esperanto 
+	11	as
+	12	a
+	13	bridge
+			sense:	bridge.n.01
+	14	language
+			sense:	language.n.01
+	15	for
+	16	Europe
+			name:	LOCATION				16-16	Europe 
+	17	would
+	18	lead
+			sense:	leave.v.07
+			prop:	lead.03
+			V		18-18	lead 
+			N-ARG-A0		7-16	the choice of Esperanto as a bridge language for Europe 
+			N-ARGM-MOD		17-17	would 
+			N-ARG-A2		19-26	to an annual saving of 25 billion euros 
+	19	to
+	20	an
+	21	annual
+			name:	SET				21-21	annual 
+			sense:	annual.s.02
+	22	saving
+			sense:	economy.n.04
+	23	of
+	24	25
+			name:	MONEY				24-26	25 billion euros 
+	25	billion
+	26	euros
+			sense:	euro.n.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also suggested a language tax to compensate for the drawbacks of countries whose language is not widespread .
+
+
+Treebanked sentence:
+--------------------
+He also suggested a language tax to compensate for the drawbacks of countries whose language is not widespread . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD suggested)
+      (NP (DT a) (NN language) (NN tax))
+      (S
+        (VP (TO to)
+          (VP (VB compensate)
+            (PP (IN for)
+              (NP
+                (NP (DT the) (NNS drawbacks))
+                (PP (IN of)
+                  (NP
+                    (NP (NNS countries))
+                    (SBAR
+                      (WHNP (WP$ whose) (NN language))
+                      (S
+                        (VP (VBZ is) (RB not)
+                          (ADJP (JJ widespread)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	also
+			sense:	besides.r.02
+	2	suggested
+			sense:	propose.v.01
+			prop:	suggest.01
+			V		2-2	suggested 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-17	a language tax to compensate for the drawbacks of countries whose language is not widespread 
+	3	a
+	4	language
+			sense:	language.n.01
+	5	tax
+			sense:	tax.n.01
+	6	to
+	7	compensate
+			sense:	compensate.v.01
+			prop:	compensate.01
+			V		7-7	compensate 
+			N-ARG-A3		3-5	a language tax 
+			N-ARG-A1		8-17	for the drawbacks of countries whose language is not widespread 
+	8	for
+	9	the
+	10	drawbacks
+			sense:	drawback.n.01
+	11	of
+	12	countries
+			sense:	state.n.04
+	13	whose
+	14	language
+			sense:	language.n.01
+	15	is
+			sense:	be.v.01
+			prop:	be.01
+			V		15-15	is 
+			R-ARG-A1		12-12	countries 
+			N-ARG-A1		13-14	whose language 
+			N-ARGM-NEG		16-16	not 
+			N-ARG-A2		17-17	widespread 
+	16	not
+			sense:	not.r.01
+	17	widespread
+			sense:	widespread.s.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Grin has also studied the case of Kalmyk , a minority language in Russia .
+
+
+Treebanked sentence:
+--------------------
+Grin has also studied the case of Kalmyk , a minority language in Russia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN Grin))
+    (VP (VBZ has)
+      (ADVP (RB also))
+      (VP (VBN studied)
+        (NP
+          (NP (DT the) (NN case))
+          (PP (IN of)
+            (NP
+              (NP (NNP Kalmyk))
+              (, ,)
+              (NP
+                (NP (DT a) (NN minority) (NN language))
+                (PP (IN in)
+                  (NP (NNP Russia)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Grin
+			coref:	IDENT			0	0-0	Grin 
+			sense:	smile.n.01
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	also
+			sense:	besides.r.02
+	3	studied
+			sense:	analyze.v.01
+			prop:	study.01
+			V		3-3	studied 
+			N-ARG-A0		0-0	Grin 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A1		4-13	the case of Kalmyk , a minority language in Russia 
+	4	the
+	5	case
+			sense:	event.n.02
+	6	of
+	7	Kalmyk
+	8	,
+	9	a
+	10	minority
+			sense:	minority.n.02
+	11	language
+			sense:	language.n.01
+	12	in
+	13	Russia
+			name:	COUNTRY				13-13	Russia 
+	14	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				6.31-32	Grin 's 
+				2.0-0	Grin 
+				7.4-4	Grin 
+				9.0-0	Grin 
+	Chain 1 (IDENT)
+				2.4-7	the University of Geneva 
+				3.20-23	the University of Geneva 
+				4.8-11	the University of Lugano 
+				4.19-22	the University of Geneva 
+

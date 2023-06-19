@@ -1,0 +1,531 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Brian McGuinness ( born Bernard Francis McGuinness , 22 October 1927 , in Wrexham , United Kingdom ) is a British philosopher .
+
+
+Treebanked sentence:
+--------------------
+Brian McGuinness ( born Bernard Francis McGuinness , 22 October 1927 , in Wrexham , United Kingdom ) is a British philosopher . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Brian) (NNP McGuinness))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP
+          (NP (NNP Bernard) (NNP Francis) (NNP McGuinness))
+          (, ,)
+          (NP (CD 22)))
+        (NP-TMP (NNP October) (CD 1927))
+        (, ,)
+        (PP (IN in)
+          (NP (NNP Wrexham) (, ,) (NNP United) (NNP Kingdom))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (JJ British) (NN philosopher)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Brian
+			coref:	IDENT			1	0-1	Brian McGuinness 
+			name:	PERSON				0-1	Brian McGuinness 
+	1	McGuinness
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Brian McGuinness 
+			N-ARGM-TMP		8-10	22 October 1927 
+			N-ARGM-LOC		12-16	in Wrexham , United Kingdom 
+	4	Bernard
+			coref:	IDENT			1	4-6	Bernard Francis McGuinness 
+			name:	PERSON				4-6	Bernard Francis McGuinness 
+	5	Francis
+	6	McGuinness
+	7	,
+	8	22
+			name:	DATE				8-10	22 October 1927 
+	9	October
+	10	1927
+	11	,
+	12	in
+	13	Wrexham
+			name:	CITY				13-13	Wrexham 
+	14	,
+	15	United
+			name:	COUNTRY				15-16	United Kingdom 
+	16	Kingdom
+	17	)
+	18	is
+			sense:	be.v.02
+			prop:	be.01
+			V		18-18	is 
+			N-ARG-A1		0-17	Brian McGuinness ( born Bernard Francis McGuinness , 22 October 1927 , in Wrexham , United Kingdom ) 
+			N-ARG-A2		19-21	a British philosopher 
+	19	a
+	20	British
+			name:	NATIONALITY				20-20	British 
+	21	philosopher
+			name:	TITLE				21-21	philosopher 
+			sense:	philosopher.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Formerly a pupil of RM Hare , McGuinness has become a noted expert in the works of Ludwig Wittgenstein .
+
+
+Treebanked sentence:
+--------------------
+Formerly a pupil of RM Hare , McGuinness has become a noted expert in the works of Ludwig Wittgenstein . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (ADVP (RB Formerly))
+      (NP
+        (NP (DT a) (NN pupil))
+        (PP (IN of)
+          (NP (NNP RM) (NNP Hare)))))
+    (, ,)
+    (NP (NNP McGuinness))
+    (VP (VBZ has)
+      (VP (VBN become)
+        (NP
+          (NP (DT a) (VBN noted) (NN expert))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NNS works))
+              (PP (IN of)
+                (NP (NNP Ludwig) (NNP Wittgenstein))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Formerly
+			sense:	once.r.03
+	1	a
+	2	pupil
+			sense:	student.n.01
+	3	of
+	4	RM
+	5	Hare
+	6	,
+	7	McGuinness
+			coref:	IDENT			1	7-7	McGuinness 
+			name:	ORGANIZATION				7-7	McGuinness 
+	8	has
+			sense:	have.v.01
+			prop:	have.01
+			V		8-8	has 
+	9	become
+			sense:	become.v.02
+			prop:	become.01
+			V		9-9	become 
+			R-ARG-A1		0-5	Formerly a pupil of RM Hare 
+			N-ARG-A1		7-7	McGuinness 
+			N-ARG-A2		10-18	a noted expert in the works of Ludwig Wittgenstein 
+	10	a
+	11	noted
+			sense:	note.v.01
+			prop:	note.02
+			V		11-11	noted 
+			N-ARG-A1		12-12	expert 
+	12	expert
+			sense:	expert.n.01
+	13	in
+	14	the
+	15	works
+			sense:	work.n.02
+	16	of
+	17	Ludwig
+			name:	PERSON				17-18	Ludwig Wittgenstein 
+	18	Wittgenstein
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+McGuinness was a Fellow and Tutor at Queen 's College in Oxford University from 1953 to 1988 , and took a post at the Netherlands Institute for Advanced Study .
+
+
+Treebanked sentence:
+--------------------
+McGuinness was a Fellow and Tutor at Queen 's College in Oxford University from 1953 to 1988 , and took a post at the Netherlands Institute for Advanced Study . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP McGuinness))
+    (VP
+      (VP (VBD was)
+        (NP
+          (NP (DT a) (JJ Fellow))
+          (CC and)
+          (NP
+            (NP (NNP Tutor))
+            (PP (IN at)
+              (NP
+                (NP
+                  (NP (NNP Queen) (POS 's))
+                  (NNP College))
+                (PP (IN in)
+                  (NP
+                    (NP (NNP Oxford) (NNP University))
+                    (PP (IN from)
+                      (NP (CD 1953)))))))))
+        (PP (IN to)
+          (NP (CD 1988))))
+      (, ,)
+      (CC and)
+      (VP (VBD took)
+        (NP (DT a) (NN post))
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP Netherlands) (NNP Institute))
+            (PP (IN for)
+              (NP (NNP Advanced) (NNP Study)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	McGuinness
+			coref:	IDENT			1	0-0	McGuinness 
+			name:	PERSON				0-0	McGuinness 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	McGuinness 
+			N-ARG-A2		2-12	a Fellow and Tutor at Queen 's College in Oxford University 
+			N-ARGM-TMP		13-16	from 1953 to 1988 
+	2	a
+	3	Fellow
+	4	and
+	5	Tutor
+			name:	TITLE				5-5	Tutor 
+	6	at
+	7	Queen
+			name:	ORGANIZATION				7-12	Queen 's College in Oxford University 
+	8	's
+	9	College
+	10	in
+	11	Oxford
+	12	University
+	13	from
+	14	1953
+			name:	DATE				14-16	1953 to 1988 
+	15	to
+	16	1988
+	17	,
+	18	and
+	19	took
+			sense:	fill.v.04
+			prop:	take.01
+			V		19-19	took 
+			N-ARG-A0		0-0	McGuinness 
+			N-ARG-A1		20-28	a post at the Netherlands Institute for Advanced Study 
+	20	a
+	21	post
+			sense:	position.n.06
+	22	at
+	23	the
+	24	Netherlands
+			name:	ORGANIZATION				24-28	Netherlands Institute for Advanced Study 
+	25	Institute
+	26	for
+	27	Advanced
+	28	Study
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Since 1990 , he is a professor at the University of Siena , Italy .
+
+
+Treebanked sentence:
+--------------------
+Since 1990 , he is a professor at the University of Siena , Italy . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Since)
+      (NP (CD 1990)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN professor))
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Siena) (, ,) (NNP Italy)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Since
+	1	1990
+			name:	DATE				1-1	1990 
+	2	,
+	3	he
+			coref:	IDENT			1	3-3	he 
+	4	is
+			sense:	be.v.08
+			prop:	be.01
+			V		4-4	is 
+			N-ARGM-TMP		0-1	Since 1990 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		5-13	a professor at the University of Siena , Italy 
+	5	a
+	6	professor
+			name:	TITLE				6-6	professor 
+			sense:	professor.n.01
+	7	at
+	8	the
+			coref:	IDENT			0	8-13	the University of Siena , Italy 
+	9	University
+			name:	ORGANIZATION				9-11	University of Siena 
+	10	of
+	11	Siena
+	12	,
+	13	Italy
+			name:	COUNTRY				13-13	Italy 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+From 1990 to 1993 , he was director of the faculty of philosophy and social sciences of this university .
+
+
+Treebanked sentence:
+--------------------
+From 1990 to 1993 , he was director of the faculty of philosophy and social sciences of this university . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN From)
+      (NP
+        (NP (CD 1990))
+        (PP (IN to)
+          (NP (CD 1993)))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP (NN director))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (DT the) (NN faculty))
+              (PP (IN of)
+                (NP (NN philosophy))))
+            (CC and)
+            (NP
+              (NP (JJ social) (NNS sciences))
+              (PP (IN of)
+                (NP (DT this) (NN university))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	From
+	1	1990
+			name:	DATE				1-1	1990 
+	2	to
+	3	1993
+			name:	DATE				3-3	1993 
+	4	,
+	5	he
+			coref:	IDENT			1	5-5	he 
+	6	was
+			sense:	be.v.08
+			prop:	be.01
+			V		6-6	was 
+			N-ARGM-TMP		0-3	From 1990 to 1993 
+			N-ARG-A1		5-5	he 
+			N-ARG-A2		7-18	director of the faculty of philosophy and social sciences of this university 
+	7	director
+			name:	TITLE				7-7	director 
+			sense:	director.n.01
+	8	of
+	9	the
+	10	faculty
+			sense:	staff.n.03
+	11	of
+	12	philosophy
+			sense:	philosophy.n.02
+	13	and
+	14	social
+			sense:	social.a.01
+	15	sciences
+			sense:	science.n.01
+	16	of
+	17	this
+			coref:	IDENT			0	17-18	this university 
+	18	university
+			sense:	university.n.02
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+During his time at Queen 's , he was an invited speaker at the Oxford Socratic Club , speaking with J. D. Mabbott on " The Problem of Free Will " on Nov. 14 , 1955 .
+
+
+Treebanked sentence:
+--------------------
+During his time at Queen 's , he was an invited speaker at the Oxford Socratic Club , speaking with J. D. Mabbott on " The Problem of Free Will " on Nov. 14 , 1955 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN During)
+      (NP
+        (NP (PRP$ his) (NN time))
+        (PP (IN at)
+          (NP (NNP Queen) (POS 's)))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP
+          (NP (DT an) (VBN invited) (NN speaker))
+          (PP (IN at)
+            (NP (DT the) (NNP Oxford) (JJ Socratic) (NN Club))))
+        (, ,)
+        (VP (VBG speaking)
+          (PP (IN with)
+            (NP
+              (NP (NNP J.) (NNP D.) (NNP Mabbott))
+              (PP (IN on) (`` ")
+                (NP
+                  (NP (DT The) (NNP Problem))
+                  (PP (IN of)
+                    (NP (NNP Free) (NNP Will))))
+                ('' "))))
+          (PP (IN on)
+            (NP (NNP Nov.) (CD 14) (, ,) (CD 1955))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	During
+	1	his
+			coref:	IDENT			1	1-1	his 
+	2	time
+			sense:	time.n.02
+	3	at
+	4	Queen
+			name:	TITLE				4-4	Queen 
+	5	's
+	6	,
+	7	he
+			coref:	IDENT			1	7-7	he 
+	8	was
+			sense:	be.v.01
+			prop:	be.01
+			V		8-8	was 
+			N-ARGM-TMP		0-5	During his time at Queen 's 
+			N-ARG-A1		7-7	he 
+			N-ARG-A2		9-16	an invited speaker at the Oxford Socratic Club 
+			N-ARGM-ADV		18-35	speaking with J. D. Mabbott on " The Problem of Free Will " on Nov. 14 , 1955 
+	9	an
+	10	invited
+			sense:	receive.v.05
+			prop:	invite.01
+			V		10-10	invited 
+			N-ARG-A1		11-11	speaker 
+	11	speaker
+			sense:	speaker.n.01
+	12	at
+	13	the
+	14	Oxford
+			name:	ORGANIZATION				14-16	Oxford Socratic Club 
+	15	Socratic
+	16	Club
+			sense:	club.n.02
+	17	,
+	18	speaking
+			sense:	talk.v.01
+			prop:	speak.01
+			V		18-18	speaking 
+			N-ARG-A0		7-7	he 
+			N-ARG-A2		19-22	with J. D. Mabbott 
+			N-ARG-A1		23-30	on " The Problem of Free Will " 
+			N-ARGM-TMP		31-35	on Nov. 14 , 1955 
+	19	with
+	20	J.
+			name:	PERSON				20-22	J. D. Mabbott 
+	21	D.
+	22	Mabbott
+	23	on
+	24	"
+	25	The
+	26	Problem
+			name:	MISC				26-29	Problem of Free Will 
+	27	of
+	28	Free
+	29	Will
+	30	"
+	31	on
+	32	Nov.
+			name:	DATE				32-35	Nov. 14 , 1955 
+	33	14
+	34	,
+	35	1955
+	36	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.8-13	the University of Siena , Italy 
+				4.17-18	this university 
+	Chain 1 (IDENT)
+				0.4-6	Bernard Francis McGuinness 
+				0.0-1	Brian McGuinness 
+				1.7-7	McGuinness 
+				2.0-0	McGuinness 
+				3.3-3	he 
+				4.5-5	he 
+				5.1-1	his 
+				5.7-7	he 
+

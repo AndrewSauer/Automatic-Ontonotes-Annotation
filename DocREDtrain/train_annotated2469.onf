@@ -1,0 +1,940 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" I 'm Real " is the name of two songs recorded by American singer Jennifer Lopez , both primarily for her second studio album J.Lo ( 2001 ) .
+
+
+Treebanked sentence:
+--------------------
+" I 'm Real " is the name of two songs recorded by American singer Jennifer Lopez , both primarily for her second studio album J.Lo ( 2001 ) . 
+
+Tree:
+-----
+(ROOT
+  (SINV (`` ")
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (NP (JJ Real))))
+    (`` ")
+    (VP (VBZ is))
+    (NP
+      (NP (DT the) (NN name))
+      (PP (IN of)
+        (NP
+          (NP (CD two) (NNS songs))
+          (VP (VBN recorded)
+            (PP
+              (PP (IN by)
+                (NP
+                  (NML (JJ American) (NN singer))
+                  (NNP Jennifer) (NNP Lopez)))
+              (, ,)
+              (CC both)
+              (RB primarily)
+              (PP (IN for)
+                (NP (PRP$ her)
+                  (NML (JJ second) (NN studio))
+                  (NN album) (NN J.Lo)
+                  (PRN (-LRB- -LRB-)
+                    (NP (CD 2001))
+                    (-RRB- -RRB-)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	I
+	2	'm
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	'm 
+			N-ARG-A1		1-1	I 
+			N-ARG-A2		3-3	Real 
+	3	Real
+			sense:	real.a.01
+	4	"
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	" I 'm Real " 
+			N-ARG-A2		6-28	the name of two songs recorded by American singer Jennifer Lopez , both primarily for her second studio album J.Lo ( 2001 ) 
+	6	the
+	7	name
+			sense:	name.n.01
+	8	of
+	9	two
+			coref:	IDENT			1	9-28	two songs recorded by American singer Jennifer Lopez , both primarily for her second studio album J.Lo ( 2001 ) 
+			name:	NUMBER				9-9	two 
+	10	songs
+			sense:	song.n.01
+	11	recorded
+			sense:	record.v.02
+			prop:	record.01
+			V		11-11	recorded 
+			N-ARG-A1		9-10	two songs 
+			N-ARG-A0		12-16	by American singer Jennifer Lopez 
+	12	by
+	13	American
+			name:	NATIONALITY				13-13	American 
+	14	singer
+			name:	TITLE				14-14	singer 
+			sense:	singer.n.01
+	15	Jennifer
+			name:	PERSON				15-16	Jennifer Lopez 
+	16	Lopez
+	17	,
+	18	both
+	19	primarily
+			sense:	chiefly.r.01
+	20	for
+	21	her
+	22	second
+			name:	ORDINAL				22-22	second 
+			sense:	second.s.01
+	23	studio
+			sense:	studio.n.01
+	24	album
+			sense:	album.n.01
+	25	J.Lo
+	26	(
+	27	2001
+			coref:	IDENT			2	27-27	2001 
+			name:	DATE				27-27	2001 
+	28	)
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The original version was released as the album 's fourth single ; Ja Rule of Murder Inc Records wrote and was featured on a new version of the song entitled " I 'm Real ( Murder Remix ) " , which was featured on a re - issue of J.Lo in July 2001 , on Lopez 's remix album J to tha L – O !
+
+
+Treebanked sentence:
+--------------------
+The original version was released as the album 's fourth single ; Ja Rule of Murder Inc Records wrote and was featured on a new version of the song entitled " I 'm Real ( Murder Remix ) " , which was featured on a re - issue of J.Lo in July 2001 , on Lopez 's remix album J to tha L – O ! 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJ original) (NN version))
+      (VP (VBD was)
+        (VP (VBN released)
+          (PP (IN as)
+            (NP
+              (NP (DT the) (NN album) (POS 's))
+              (JJ fourth) (JJ single))))))
+    (: ;)
+    (S
+      (NP
+        (NP (NNP Ja) (NN Rule))
+        (PP (IN of)
+          (NP (NN Murder) (NNP Inc) (NNP Records))))
+      (VP
+        (VP (VBD wrote))
+        (CC and)
+        (VP (VBD was)
+          (VP (VBN featured)
+            (PP (IN on)
+              (NP
+                (NP (DT a) (JJ new) (NN version))
+                (PP (IN of)
+                  (NP
+                    (NP
+                      (NP (DT the) (NN song))
+                      (VP (VBN entitled)
+                        (S (`` ")
+                          (NP (PRP I))
+                          (VP (VBP 'm)
+                            (NP (JJ Real)
+                              (PRN (-LRB- -LRB-)
+                                (NP (NN Murder) (NN Remix))
+                                (-RRB- -RRB-))))
+                          ('' "))))
+                    (, ,)
+                    (SBAR
+                      (WHNP (WDT which))
+                      (S
+                        (VP (VBD was)
+                          (VP (VBN featured)
+                            (PP (IN on)
+                              (NP (DT a)
+                                (NML
+                                  (PP (IN re) (HYPH -)
+                                    (NP (NN issue))))
+                                (NML
+                                  (PP (IN of)
+                                    (NP
+                                      (NP (NNP J.Lo))
+                                      (PP (IN in)
+                                        (NP (NNP July) (CD 2001)))
+                                      (, ,)
+                                      (PP (IN on)
+                                        (NP
+                                          (NP (NNP Lopez) (POS 's))
+                                          (NN remix) (NN album))))))
+                                (NN J)))
+                            (S
+                              (VP (TO to)
+                                (VP (VB tha)
+                                  (NP (NN L) (HYPH –) (NN O)))))))))))))))))
+    (. !)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-2	The original version 
+	1	original
+			sense:	original.s.01
+	2	version
+			sense:	version.n.02
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		4-4	released 
+			N-ARG-A1		0-2	The original version 
+	5	as
+	6	the
+	7	album
+			sense:	album.n.01
+	8	's
+	9	fourth
+			name:	ORDINAL				9-9	fourth 
+			sense:	fourth.s.01
+	10	single
+			sense:	individual.a.01
+	11	;
+	12	Ja
+	13	Rule
+			sense:	dominion.n.01
+	14	of
+	15	Murder
+			name:	ORGANIZATION				15-17	Murder Inc Records 
+			sense:	murder.n.01
+	16	Inc
+	17	Records
+	18	wrote
+			sense:	compose.v.02
+			prop:	write.01
+			V		18-18	wrote 
+			N-ARG-A0		12-17	Ja Rule of Murder Inc Records 
+			N-ARG-A1		23-64	a new version of the song entitled " I 'm Real ( Murder Remix ) " , which was featured on a re - issue of J.Lo in July 2001 , on Lopez 's remix album J to tha L – O 
+	19	and
+	20	was
+			sense:	be.v.01
+			prop:	be.03
+			V		20-20	was 
+	21	featured
+			sense:	have.v.02
+			prop:	feature.01
+			V		21-21	featured 
+			N-ARG-A1		12-17	Ja Rule of Murder Inc Records 
+			N-ARG-A2		22-22	on 
+	22	on
+	23	a
+	24	new
+			sense:	new.a.01
+	25	version
+			sense:	version.n.02
+	26	of
+	27	the
+	28	song
+			sense:	song.n.01
+	29	entitled
+			sense:	entitle.v.02
+			prop:	entitle.02
+			V		29-29	entitled 
+			N-ARG-A1		23-28	a new version of the song 
+			N-ARG-A2		30-38	" I 'm Real ( Murder Remix ) " 
+	30	"
+	31	I
+	32	'm
+			sense:	be.v.01
+			prop:	be.01
+			V		32-32	'm 
+			N-ARG-A1		31-31	I 
+			N-ARG-A2		33-33	Real 
+	33	Real
+			sense:	real.a.01
+	34	(
+	35	Murder
+			name:	CRIMINAL_CHARGE				35-35	Murder 
+			sense:	murder.n.01
+	36	Remix
+			name:	MISC				36-36	Remix 
+	37	)
+	38	"
+	39	,
+	40	which
+	41	was
+			sense:	be.v.01
+			prop:	be.03
+			V		41-41	was 
+	42	featured
+			sense:	have.v.02
+			prop:	feature.01
+			V		42-42	featured 
+			N-ARG-A1		23-38	a new version of the song entitled " I 'm Real ( Murder Remix ) " 
+			R-ARG-A1		40-40	which 
+			N-ARG-A2		43-49	on a re - issue of J.Lo 
+			N-ARGM-TMP		50-52	in July 2001 
+			N-ARGM-LOC		54-64	on Lopez 's remix album J to tha L – O 
+	43	on
+	44	a
+	45	re
+	46	-
+	47	issue
+			sense:	issue.n.11
+	48	of
+	49	J.Lo
+	50	in
+	51	July
+			name:	DATE				51-52	July 2001 
+	52	2001
+	53	,
+	54	on
+	55	Lopez
+			name:	PERSON				55-55	Lopez 
+	56	's
+	57	remix
+	58	album
+			sense:	album.n.01
+	59	J
+			sense:	j.n.02
+	60	to
+	61	tha
+			prop:	thaw.01
+			V		61-61	tha 
+	62	L
+			sense:	l.n.04
+	63	–
+	64	O
+			sense:	o.n.02
+	65	!
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Remixes ( 2002 ) , and Ja Rule 's third studio album Pain Is Love ( 2001 ) .
+
+
+Treebanked sentence:
+--------------------
+The Remixes ( 2002 ) , and Ja Rule 's third studio album Pain Is Love ( 2001 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT The) (NNPS Remixes))
+        (NP (-LRB- -LRB-) (CD 2002) (-RRB- -RRB-)))
+      (, ,)
+      (CC and)
+      (NP
+        (NP (NNP Ja) (NNP Rule) (POS 's))
+        (NML (JJ third) (NN studio))
+        (NN album))
+      (NP (NNP Pain)))
+    (VP (VBZ Is)
+      (NP (NN Love)
+        (PRN (-LRB- -LRB-)
+          (NP (CD 2001))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Remixes
+			name:	MISC				1-1	Remixes 
+	2	(
+	3	2002
+			name:	DATE				3-3	2002 
+	4	)
+	5	,
+	6	and
+	7	Ja
+	8	Rule
+	9	's
+	10	third
+			name:	ORDINAL				10-10	third 
+			sense:	third.s.01
+	11	studio
+			sense:	studio.n.01
+	12	album
+			sense:	album.n.01
+	13	Pain
+	14	Is
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	Is 
+			N-ARG-A1		13-13	Pain 
+			N-ARG-A2		15-15	Love 
+	15	Love
+			sense:	love.n.01
+	16	(
+	17	2001
+			coref:	IDENT			2	17-17	2001 
+			name:	DATE				17-17	2001 
+	18	)
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The original album version was well received by music critics , who complimented the 1980s - esque style and composition , while the remix received mixed reviews for its lyrics .
+
+
+Treebanked sentence:
+--------------------
+The original album version was well received by music critics , who complimented the 1980s - esque style and composition , while the remix received mixed reviews for its lyrics . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJ original) (NN album) (NN version))
+    (VP (VBD was)
+      (ADVP (RB well))
+      (VP (VBN received)
+        (PP (IN by)
+          (NP
+            (NP (NN music) (NNS critics))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD complimented)
+                  (NP
+                    (ADJP
+                      (NP (DT the) (NNS 1980s))
+                      (HYPH -) (JJ esque))
+                    (NN style)
+                    (CC and)
+                    (NN composition))
+                  (, ,)
+                  (SBAR (IN while)
+                    (S
+                      (NP (DT the) (NN remix))
+                      (VP (VBD received)
+                        (NP (JJ mixed) (NNS reviews))
+                        (PP (IN for)
+                          (NP (PRP$ its) (NNS lyrics)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-3	The original album version 
+	1	original
+			sense:	original.s.01
+	2	album
+			sense:	album.n.01
+	3	version
+			sense:	version.n.01
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	well
+			sense:	well.r.06
+	6	received
+			sense:	receive.v.02
+			prop:	receive.01
+			V		6-6	received 
+			N-ARG-A1		0-3	The original album version 
+			N-ARGM-MNR		5-5	well 
+			N-ARG-A0		7-19	by music critics , who complimented the 1980s - esque style and composition 
+			N-ARGM-ADV		21-29	while the remix received mixed reviews for its lyrics 
+	7	by
+	8	music
+			sense:	music.n.01
+	9	critics
+			sense:	critic.n.01
+	10	,
+	11	who
+	12	complimented
+			sense:	compliment.v.01
+			prop:	compliment.01
+			V		12-12	complimented 
+			N-ARG-A0		8-9	music critics 
+			R-ARG-A0		11-11	who 
+			N-ARG-A1		13-19	the 1980s - esque style and composition 
+	13	the
+			name:	DATE				13-14	the 1980s 
+	14	1980s
+	15	-
+	16	esque
+	17	style
+			sense:	manner.n.01
+	18	and
+	19	composition
+			sense:	musical_composition.n.01
+	20	,
+	21	while
+	22	the
+			coref:	IDENT			3	22-23	the remix 
+	23	remix
+	24	received
+			sense:	receive.v.02
+			prop:	receive.01
+			V		24-24	received 
+			N-ARG-A0		22-23	the remix 
+			N-ARG-A1		25-26	mixed reviews 
+			N-ARGM-CAU		27-29	for its lyrics 
+	25	mixed
+			sense:	assorted.s.01
+	26	reviews
+			sense:	review.n.02
+	27	for
+	28	its
+			coref:	IDENT			3	28-28	its 
+	29	lyrics
+			sense:	lyric.n.01
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+However , both songs have been appreciated for the use of the samples .
+
+
+Treebanked sentence:
+--------------------
+However , both songs have been appreciated for the use of the samples . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP (CC both)
+      (NP (NNS songs)))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBN appreciated)
+          (PP (IN for)
+            (NP
+              (NP (DT the) (NN use))
+              (PP (IN of)
+                (NP (DT the) (NNS samples))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	However
+			sense:	however.r.01
+	1	,
+	2	both
+	3	songs
+			sense:	song.n.01
+	4	have
+			sense:	experience.v.03
+			prop:	have.01
+			V		4-4	have 
+	5	been
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	been 
+	6	appreciated
+			sense:	appreciate.v.01
+			prop:	appreciate.02
+			V		6-6	appreciated 
+			N-ARGM-DIS		0-0	However 
+			N-ARG-A1		2-3	both songs 
+	7	for
+	8	the
+	9	use
+			sense:	use.n.01
+	10	of
+	11	the
+	12	samples
+			sense:	sample.n.01
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The " Murder Remix " topped the Billboard Hot 100 for five non - consecutive weeks , beginning September 8 , 2001 , and also topped the Hot 100 Airplay chart .
+
+
+Treebanked sentence:
+--------------------
+The " Murder Remix " topped the Billboard Hot 100 for five non - consecutive weeks , beginning September 8 , 2001 , and also topped the Hot 100 Airplay chart . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (`` ") (NN Murder) (NN Remix) ('' "))
+    (VP
+      (VP (VBD topped)
+        (NP (DT the)
+          (NML (NNP Billboard) (NNP Hot) (CD 100)))
+        (PP (IN for)
+          (NP
+            (ADJP
+              (NP (CD five) (AFX non))
+              (HYPH -) (JJ consecutive))
+            (NNS weeks)))
+        (, ,)
+        (VP (VBG beginning)
+          (NP-TMP (NNP September) (CD 8) (, ,) (CD 2001))))
+      (, ,)
+      (CC and)
+      (ADVP (RB also))
+      (VP (VBD topped)
+        (NP (DT the)
+          (ADJP (JJ Hot)
+            (NP-TMP (CD 100)))
+          (NNP Airplay) (NN chart))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-3	The " Murder Remix 
+	1	"
+	2	Murder
+			name:	CRIMINAL_CHARGE				2-2	Murder 
+			sense:	murder.n.01
+	3	Remix
+			name:	MISC				3-3	Remix 
+	4	"
+	5	topped
+			sense:	top.v.03
+			prop:	top.02
+			V		5-5	topped 
+			N-ARG-A0		0-4	The " Murder Remix " 
+			N-ARG-A1		6-9	the Billboard Hot 100 
+			N-ARGM-TMP		10-21	for five non - consecutive weeks , beginning September 8 , 2001 
+	6	the
+	7	Billboard
+			name:	MISC				7-8	Billboard Hot 
+	8	Hot
+	9	100
+			name:	NUMBER				9-9	100 
+	10	for
+	11	five
+			name:	NUMBER				11-11	five 
+	12	non
+	13	-
+	14	consecutive
+			sense:	straight.s.01
+	15	weeks
+			name:	DATE				15-21	weeks , beginning September 8 , 2001 
+			sense:	week.n.01
+	16	,
+	17	beginning
+			sense:	begin.v.02
+			prop:	begin.01
+			V		17-17	beginning 
+			N-ARG-A1		11-15	five non - consecutive weeks 
+			N-ARGM-TMP		18-21	September 8 , 2001 
+	18	September
+	19	8
+	20	,
+	21	2001
+	22	,
+	23	and
+	24	also
+			sense:	besides.r.02
+	25	topped
+			sense:	lead.v.08
+			prop:	top.02
+			V		25-25	topped 
+			N-ARG-A0		0-4	The " Murder Remix " 
+			N-ARGM-ADV		24-24	also 
+			N-ARG-A1		26-30	the Hot 100 Airplay chart 
+	26	the
+	27	Hot
+			sense:	hot.s.11
+	28	100
+			name:	NUMBER				28-28	100 
+	29	Airplay
+	30	chart
+			sense:	chart.n.01
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The two songs are essentially different songs with the same title .
+
+
+Treebanked sentence:
+--------------------
+The two songs are essentially different songs with the same title . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (CD two) (NNS songs))
+    (VP (VBP are)
+      (ADVP (RB essentially))
+      (NP
+        (NP (JJ different) (NNS songs))
+        (PP (IN with)
+          (NP (DT the) (JJ same) (NN title)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-2	The two songs 
+	1	two
+			name:	NUMBER				1-1	two 
+	2	songs
+			sense:	song.n.01
+	3	are
+			sense:	be.v.01
+			prop:	be.01
+			V		3-3	are 
+			N-ARG-A1		0-2	The two songs 
+			N-ARGM-ADV		4-4	essentially 
+			N-ARG-A2		5-10	different songs with the same title 
+	4	essentially
+			sense:	basically.r.01
+	5	different
+			sense:	different.a.01
+	6	songs
+			sense:	song.n.01
+	7	with
+	8	the
+	9	same
+			sense:	same.a.01
+	10	title
+			sense:	title.n.02
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Much controversy followed the song after its release .
+
+
+Treebanked sentence:
+--------------------
+Much controversy followed the song after its release . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (JJ Much) (NN controversy))
+    (VP (VBD followed)
+      (NP (DT the) (NN song))
+      (PP (IN after)
+        (NP (PRP$ its) (NN release))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Much
+			sense:	much.a.01
+	1	controversy
+			sense:	controversy.n.01
+	2	followed
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		2-2	followed 
+			N-ARG-A1		0-1	Much controversy 
+			N-ARG-A2		3-4	the song 
+			N-ARGM-TMP		5-7	after its release 
+	3	the
+	4	song
+			sense:	song.n.01
+	5	after
+	6	its
+			coref:	IDENT			3	6-6	its 
+	7	release
+			sense:	release.n.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Two music videos were made for the track , with the first depicting Lopez driving a motorcycle throughout the highway and featuring a dance - break , while the second video features Ja Rule and Irv Gotti .
+
+
+Treebanked sentence:
+--------------------
+Two music videos were made for the track , with the first depicting Lopez driving a motorcycle throughout the highway and featuring a dance - break , while the second video features Ja Rule and Irv Gotti . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (CD Two) (NN music) (NNS videos))
+    (VP (VBD were)
+      (VP (VBN made)
+        (PP (IN for)
+          (NP (DT the) (NN track)))
+        (, ,)
+        (PP (IN with)
+          (NP
+            (NP (DT the) (JJ first))
+            (VP (VBG depicting)
+              (NP (NNP Lopez))
+              (S
+                (VP
+                  (VP (VBG driving)
+                    (NP (DT a) (NN motorcycle))
+                    (PP (IN throughout)
+                      (NP (DT the) (NN highway))))
+                  (CC and)
+                  (VP (VBG featuring)
+                    (NP (DT a) (NN dance) (HYPH -) (NN break))))))))
+        (, ,)
+        (SBAR (IN while)
+          (S
+            (NP (DT the) (JJ second) (NN video))
+            (VP (VBZ features)
+              (NP
+                (NP (NNP Ja) (NNP Rule))
+                (CC and)
+                (NP (NNP Irv) (NNP Gotti))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Two
+			name:	NUMBER				0-0	Two 
+	1	music
+			sense:	music.n.01
+	2	videos
+			sense:	video_recording.n.01
+	3	were
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	were 
+	4	made
+			sense:	create.v.05
+			prop:	make.01
+			V		4-4	made 
+			N-ARG-A1		0-2	Two music videos 
+			N-ARGM-PRP		5-7	for the track 
+	5	for
+	6	the
+	7	track
+			sense:	cut.n.08
+	8	,
+	9	with
+	10	the
+	11	first
+			name:	ORDINAL				11-11	first 
+			sense:	first.s.02
+	12	depicting
+			sense:	picture.v.02
+			prop:	depict.01
+			V		12-12	depicting 
+			N-ARG-A0		10-11	the first 
+			N-ARG-A1		13-19	Lopez driving a motorcycle throughout the highway 
+	13	Lopez
+			name:	PERSON				13-13	Lopez 
+	14	driving
+			sense:	drive.v.01
+			prop:	drive.01
+			V		14-14	driving 
+			N-ARG-A0		13-13	Lopez 
+			N-ARG-A1		15-16	a motorcycle 
+			N-ARGM-LOC		17-19	throughout the highway 
+	15	a
+	16	motorcycle
+			sense:	motorcycle.n.01
+	17	throughout
+	18	the
+	19	highway
+			sense:	highway.n.01
+	20	and
+	21	featuring
+			sense:	have.v.02
+			prop:	feature.01
+			V		21-21	featuring 
+			N-ARG-A0		10-11	the first 
+			N-ARG-A1		22-25	a dance - break 
+	22	a
+	23	dance
+			sense:	dancing.n.01
+	24	-
+	25	break
+			sense:	break.n.14
+	26	,
+	27	while
+	28	the
+	29	second
+			name:	ORDINAL				29-29	second 
+			sense:	second.s.01
+	30	video
+			sense:	video_recording.n.01
+	31	features
+			sense:	have.v.02
+			prop:	feature.01
+			V		31-31	features 
+			N-ARG-A0		28-30	the second video 
+			N-ARG-A1		32-36	Ja Rule and Irv Gotti 
+	32	Ja
+	33	Rule
+	34	and
+	35	Irv
+			name:	PERSON				35-36	Irv Gotti 
+	36	Gotti
+	37	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.0-3	The original album version 
+				1.0-2	The original version 
+	Chain 1 (IDENT)
+				6.0-2	The two songs 
+				0.9-28	two songs recorded by American singer Jennifer Lopez , both primarily for her second studio album J.Lo ( 2001 ) 
+	Chain 2 (IDENT)
+				0.27-27	2001 
+				2.17-17	2001 
+	Chain 3 (IDENT)
+				5.0-3	The " Murder Remix 
+				3.22-23	the remix 
+				3.28-28	its 
+				7.6-6	its 
+

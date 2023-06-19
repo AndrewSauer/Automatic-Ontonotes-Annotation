@@ -1,0 +1,750 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jacob Billikopf , Ph .
+
+
+Treebanked sentence:
+--------------------
+Jacob Billikopf , Ph . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP (NNP Jacob) (NNP Billikopf))
+    (, ,)
+    (NP (NN Ph))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jacob
+			name:	PERSON				0-1	Jacob Billikopf 
+	1	Billikopf
+	2	,
+	3	Ph
+			name:	COUNTRY				3-3	Ph 
+			sense:	ph.n.01
+	4	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+B. , L.L.D. , ( June 1 , 1882 , Vilnius , Lithuania – December 31 , 1950 ) was a nationally known figure in social work , Jewish philanthropy and labor arbitration .
+
+
+Treebanked sentence:
+--------------------
+B. , L.L.D. , ( June 1 , 1882 , Vilnius , Lithuania – December 31 , 1950 ) was a nationally known figure in social work , Jewish philanthropy and labor arbitration . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP B.) (, ,) (NNP L.L.D.) (, ,))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP June) (CD 1) (, ,) (CD 1882))
+        (, ,)
+        (NP
+          (NP (NNP Vilnius) (, ,) (NNP Lithuania))
+          (PP (SYM –)
+            (NP (NNP December) (CD 31) (, ,) (CD 1950)))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a)
+          (ADJP (RB nationally) (VBN known))
+          (NN figure))
+        (PP (IN in)
+          (NP
+            (NP (JJ social) (NN work))
+            (, ,)
+            (NP (JJ Jewish) (NN philanthropy))
+            (CC and)
+            (NP (NN labor) (NN arbitration))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	B.
+	1	,
+	2	L.L.D.
+	3	,
+	4	(
+	5	June
+			name:	DATE				5-8	June 1 , 1882 
+	6	1
+	7	,
+	8	1882
+	9	,
+	10	Vilnius
+			name:	CITY				10-10	Vilnius 
+	11	,
+	12	Lithuania
+			name:	COUNTRY				12-12	Lithuania 
+	13	–
+	14	December
+			name:	DATE				14-17	December 31 , 1950 
+	15	31
+	16	,
+	17	1950
+	18	)
+	19	was
+			sense:	be.v.01
+			prop:	be.01
+			V		19-19	was 
+			N-ARG-A1		0-18	B. , L.L.D. , ( June 1 , 1882 , Vilnius , Lithuania – December 31 , 1950 ) 
+			N-ARG-A2		20-32	a nationally known figure in social work , Jewish philanthropy and labor arbitration 
+	20	a
+	21	nationally
+			sense:	nationally.r.01
+	22	known
+			sense:	know.v.04
+			prop:	know.01
+			V		22-22	known 
+			N-ARG-A1		23-23	figure 
+	23	figure
+			sense:	name.n.04
+	24	in
+	25	social
+			sense:	social.a.01
+	26	work
+			sense:	work.n.01
+	27	,
+	28	Jewish
+			name:	RELIGION				28-28	Jewish 
+	29	philanthropy
+			sense:	philanthropy.n.01
+	30	and
+	31	labor
+			sense:	labor_movement.n.01
+	32	arbitration
+			sense:	arbitration.n.01
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Billikopf had a long and distinguished career in public service work .
+
+
+Treebanked sentence:
+--------------------
+Billikopf had a long and distinguished career in public service work . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Billikopf))
+    (VP (VBD had)
+      (NP
+        (NP (DT a)
+          (ADJP (JJ long)
+            (CC and)
+            (JJ distinguished))
+          (NN career))
+        (PP (IN in)
+          (NP (JJ public) (NN service) (NN work)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Billikopf
+			name:	PERSON				0-0	Billikopf 
+	1	had
+			sense:	have.v.01
+			prop:	have.03
+			V		1-1	had 
+			N-ARG-A0		0-0	Billikopf 
+			N-ARG-A1		2-10	a long and distinguished career in public service work 
+	2	a
+	3	long
+			sense:	long.a.01
+	4	and
+	5	distinguished
+			sense:	distinguished.s.01
+	6	career
+			sense:	career.n.01
+	7	in
+	8	public
+			sense:	public.a.01
+	9	service
+			sense:	service.n.01
+	10	work
+			sense:	employment.n.02
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He served as superintendent of the United Jewish Charities in Milwaukee , Wisconsin and Kansas City , Missouri , before becoming the executive director of the Federation of Jewish Philanthropies in Philadelphia , Pennsylvania , chairman of the National Labor Board for the Philadelphia region during the first years of the New Deal .
+
+
+Treebanked sentence:
+--------------------
+He served as superintendent of the United Jewish Charities in Milwaukee , Wisconsin and Kansas City , Missouri , before becoming the executive director of the Federation of Jewish Philanthropies in Philadelphia , Pennsylvania , chairman of the National Labor Board for the Philadelphia region during the first years of the New Deal . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP
+          (NP (NN superintendent))
+          (PP (IN of)
+            (NP (DT the) (NNP United) (JJ Jewish) (NNS Charities)))
+          (PP (IN in)
+            (NP (NNP Milwaukee) (, ,) (NNP Wisconsin)
+              (CC and)
+              (NNP Kansas)))
+          (NML (NNP City) (, ,) (NNP Missouri) (, ,))))
+      (PP (IN before)
+        (S
+          (VP (VBG becoming)
+            (NP
+              (NP (DT the) (JJ executive) (NN director))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NNP Federation))
+                  (PP (IN of)
+                    (NP
+                      (NP (JJ Jewish) (NNS Philanthropies))
+                      (PP (IN in)
+                        (NP
+                          (NP
+                            (NML (NNP Philadelphia) (, ,) (NNP Pennsylvania) (, ,))
+                            (NN chairman))
+                          (PP (IN of)
+                            (NP
+                              (NP (DT the) (NNP National) (NNP Labor) (NNP Board))
+                              (PP (IN for)
+                                (NP (DT the) (NNP Philadelphia) (NN region))))))))))))
+            (PP (IN during)
+              (NP
+                (NP (DT the) (JJ first) (NNS years))
+                (PP (IN of)
+                  (NP (DT the) (NNP New) (NNP Deal)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-18	as superintendent of the United Jewish Charities in Milwaukee , Wisconsin and Kansas City , Missouri , 
+			N-ARGM-TMP		19-52	before becoming the executive director of the Federation of Jewish Philanthropies in Philadelphia , Pennsylvania , chairman of the National Labor Board for the Philadelphia region during the first years of the New Deal 
+	2	as
+	3	superintendent
+			name:	TITLE				3-3	superintendent 
+			sense:	overseer.n.01
+	4	of
+	5	the
+	6	United
+			name:	ORGANIZATION				6-8	United Jewish Charities 
+	7	Jewish
+	8	Charities
+			sense:	charity.n.05
+	9	in
+	10	Milwaukee
+			name:	CITY				10-10	Milwaukee 
+	11	,
+	12	Wisconsin
+			name:	STATE_OR_PROVINCE				12-12	Wisconsin 
+	13	and
+	14	Kansas
+			name:	CITY				14-15	Kansas City 
+	15	City
+	16	,
+	17	Missouri
+			name:	STATE_OR_PROVINCE				17-17	Missouri 
+	18	,
+	19	before
+	20	becoming
+			sense:	become.v.02
+			prop:	become.01
+			V		20-20	becoming 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		21-52	the executive director of the Federation of Jewish Philanthropies in Philadelphia , Pennsylvania , chairman of the National Labor Board for the Philadelphia region during the first years of the New Deal 
+	21	the
+	22	executive
+			name:	TITLE				22-23	executive director 
+			sense:	executive.a.01
+	23	director
+			sense:	director.n.01
+	24	of
+	25	the
+	26	Federation
+			name:	ORGANIZATION				26-29	Federation of Jewish Philanthropies 
+	27	of
+	28	Jewish
+	29	Philanthropies
+			sense:	philanthropy.n.01
+	30	in
+	31	Philadelphia
+			coref:	IDENT			1	31-31	Philadelphia 
+			name:	CITY				31-31	Philadelphia 
+	32	,
+	33	Pennsylvania
+			name:	STATE_OR_PROVINCE				33-33	Pennsylvania 
+	34	,
+	35	chairman
+			name:	TITLE				35-35	chairman 
+			sense:	president.n.04
+	36	of
+	37	the
+	38	National
+			name:	ORGANIZATION				38-40	National Labor Board 
+	39	Labor
+	40	Board
+	41	for
+	42	the
+	43	Philadelphia
+			coref:	IDENT			1	43-43	Philadelphia 
+			name:	CITY				43-43	Philadelphia 
+	44	region
+			sense:	region.n.01
+	45	during
+	46	the
+			name:	DURATION				46-48	the first years 
+	47	first
+			sense:	first.a.01
+	48	years
+			sense:	year.n.01
+	49	of
+	50	the
+	51	New
+	52	Deal
+	53	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He served as impartial chairman of both the Ladies ' Garment industry and the Amalgamated Clothing Workers in Philadelphia .
+
+
+Treebanked sentence:
+--------------------
+He served as impartial chairman of both the Ladies ' Garment industry and the Amalgamated Clothing Workers in Philadelphia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP
+          (NP (JJ impartial) (NN chairman))
+          (PP (IN of)
+            (NP (CC both)
+              (NP
+                (NP (DT the) (NNS Ladies) (POS '))
+                (NN Garment) (NN industry))
+              (CC and)
+              (NP (DT the)
+                (NML (NNP Amalgamated) (NNP Clothing))
+                (NNPS Workers))))))
+      (PP (IN in)
+        (NP (NNP Philadelphia))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-18	as impartial chairman of both the Ladies ' Garment industry and the Amalgamated Clothing Workers in Philadelphia 
+	2	as
+	3	impartial
+			sense:	impartial.a.01
+	4	chairman
+			name:	TITLE				4-4	chairman 
+			sense:	president.n.04
+	5	of
+	6	both
+	7	the
+	8	Ladies
+			sense:	lady.n.01
+	9	'
+	10	Garment
+			sense:	garment.n.01
+	11	industry
+			sense:	industry.n.01
+	12	and
+	13	the
+	14	Amalgamated
+			name:	ORGANIZATION				14-16	Amalgamated Clothing Workers 
+	15	Clothing
+	16	Workers
+	17	in
+	18	Philadelphia
+			coref:	IDENT			1	18-18	Philadelphia 
+			name:	CITY				18-18	Philadelphia 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He later represented the department stores of Philadelphia in their labor relations .
+
+
+Treebanked sentence:
+--------------------
+He later represented the department stores of Philadelphia in their labor relations . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB later))
+    (VP (VBD represented)
+      (NP
+        (NP (DT the) (NN department) (NNS stores))
+        (PP (IN of)
+          (NP (NNP Philadelphia))))
+      (PP (IN in)
+        (NP (PRP$ their) (NN labor) (NNS relations))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	later
+			sense:	subsequently.r.01
+	2	represented
+			sense:	represent.v.04
+			prop:	represent.01
+			V		2-2	represented 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		1-1	later 
+			N-ARG-A1		3-7	the department stores of Philadelphia 
+			N-ARGM-LOC		8-11	in their labor relations 
+	3	the
+	4	department
+			sense:	department.n.01
+	5	stores
+			sense:	shop.n.01
+	6	of
+	7	Philadelphia
+			coref:	IDENT			1	7-7	Philadelphia 
+			name:	CITY				7-7	Philadelphia 
+	8	in
+	9	their
+	10	labor
+			sense:	labor_movement.n.01
+	11	relations
+			sense:	relation.n.06
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was also a member of the board of trustees of the New School for Social Research , and president of the board of trustees of Howard University .
+
+
+Treebanked sentence:
+--------------------
+He was also a member of the board of trustees of the New School for Social Research , and president of the board of trustees of Howard University . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (ADVP (RB also))
+      (NP
+        (NP
+          (NP (DT a) (NN member))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN board))
+              (PP (IN of)
+                (NP
+                  (NP (NNS trustees))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT the) (NNP New) (NNP School))
+                      (PP (IN for)
+                        (NP (NNP Social) (NNP Research))))))))))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (NN president))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN board))
+              (PP (IN of)
+                (NP
+                  (NP (NNS trustees))
+                  (PP (IN of)
+                    (NP (NNP Howard) (NNP University))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARGM-ADV		2-2	also 
+			N-ARG-A2		3-27	a member of the board of trustees of the New School for Social Research , and president of the board of trustees of Howard University 
+	2	also
+			sense:	besides.r.02
+	3	a
+	4	member
+			sense:	member.n.01
+	5	of
+	6	the
+			coref:	IDENT			0	6-16	the board of trustees of the New School for Social Research 
+	7	board
+			sense:	board.n.01
+	8	of
+	9	trustees
+			sense:	regent.n.01
+	10	of
+	11	the
+	12	New
+			name:	ORGANIZATION				12-16	New School for Social Research 
+	13	School
+	14	for
+	15	Social
+	16	Research
+	17	,
+	18	and
+	19	president
+			name:	TITLE				19-19	president 
+			sense:	president.n.04
+	20	of
+	21	the
+			coref:	IDENT			0	21-27	the board of trustees of Howard University 
+	22	board
+			sense:	board.n.01
+	23	of
+	24	trustees
+			sense:	regent.n.01
+	25	of
+	26	Howard
+			name:	ORGANIZATION				26-27	Howard University 
+	27	University
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1937 and 1938 he dedicated himself full - time to bringing European Jewish refugees into the United States .
+
+
+Treebanked sentence:
+--------------------
+In 1937 and 1938 he dedicated himself full - time to bringing European Jewish refugees into the United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1937)
+        (CC and)
+        (CD 1938)))
+    (NP (PRP he))
+    (VP (VBD dedicated)
+      (NP (PRP himself))
+      (NP-TMP (JJ full) (HYPH -) (NN time))
+      (PP (IN to)
+        (S
+          (VP (VBG bringing)
+            (NP (JJ European) (JJ Jewish) (NNS refugees))
+            (PP (IN into)
+              (NP (DT the) (NNP United) (NNP States)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1937
+			name:	DATE				1-1	1937 
+	2	and
+	3	1938
+			name:	DATE				3-3	1938 
+	4	he
+	5	dedicated
+			sense:	give.v.18
+			prop:	dedicate.01
+			V		5-5	dedicated 
+			N-ARGM-TMP		0-3	In 1937 and 1938 
+			N-ARG-A0		4-4	he 
+			N-ARG-A1		6-6	himself 
+			N-ARG-A2		10-18	to bringing European Jewish refugees into the United States 
+	6	himself
+	7	full
+			sense:	entire.s.01
+	8	-
+	9	time
+			sense:	time.n.02
+	10	to
+	11	bringing
+			sense:	bring.v.01
+			prop:	bring.01
+			V		11-11	bringing 
+			N-ARG-A0		4-4	he 
+			N-ARG-A1		12-14	European Jewish refugees 
+			N-ARG-A2		15-18	into the United States 
+	12	European
+			name:	NATIONALITY				12-12	European 
+	13	Jewish
+			name:	RELIGION				13-13	Jewish 
+	14	refugees
+			sense:	refugee.n.01
+	15	into
+	16	the
+	17	United
+			name:	COUNTRY				17-18	United States 
+	18	States
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Following World War II he served on the Clemency Board in Washington which was established to review court martial sentences .
+
+
+Treebanked sentence:
+--------------------
+Following World War II he served on the Clemency Board in Washington which was established to review court martial sentences . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (VBG Following)
+      (NP (NNP World) (NNP War) (NNP II)))
+    (NP (PRP he))
+    (VP (VBD served)
+      (PP (IN on)
+        (NP (DT the) (NNP Clemency) (NNP Board)))
+      (PP (IN in)
+        (NP
+          (NP (NNP Washington))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBD was)
+                (VP (VBN established)
+                  (S
+                    (VP (TO to)
+                      (VP (VB review)
+                        (NP (NN court) (JJ martial) (NNS sentences))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		0-0	Following 
+			N-ARG-A2		1-3	World War II 
+	1	World
+			name:	MISC				1-1	World 
+	2	War
+			name:	CAUSE_OF_DEATH				2-2	War 
+	3	II
+			name:	MISC				3-3	II 
+	4	he
+	5	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		5-5	served 
+			N-ARGM-TMP		0-3	Following World War II 
+			N-ARG-A0		4-4	he 
+			N-ARG-A1		6-19	on the Clemency Board in Washington which was established to review court martial sentences 
+	6	on
+	7	the
+	8	Clemency
+			name:	ORGANIZATION				8-9	Clemency Board 
+	9	Board
+	10	in
+	11	Washington
+			name:	STATE_OR_PROVINCE				11-11	Washington 
+	12	which
+	13	was
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	was 
+	14	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		14-14	established 
+			N-ARG-A1		7-9	the Clemency Board 
+			R-ARG-A1		12-12	which 
+			N-ARGM-PRP		15-19	to review court martial sentences 
+	15	to
+	16	review
+			sense:	review.v.02
+			prop:	review.01
+			V		16-16	review 
+			N-ARG-A0		12-12	which 
+			N-ARG-A1		17-19	court martial sentences 
+	17	court
+			sense:	court.n.01
+	18	martial
+			sense:	martial.s.03
+	19	sentences
+			sense:	conviction.n.02
+	20	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				6.6-16	the board of trustees of the New School for Social Research 
+				6.21-27	the board of trustees of Howard University 
+	Chain 1 (IDENT)
+				3.31-31	Philadelphia 
+				3.43-43	Philadelphia 
+				4.18-18	Philadelphia 
+				5.7-7	Philadelphia 
+

@@ -1,0 +1,514 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+David Jack ( January 20 , 1960 in Bristol , Pennsylvania ) is an American children 's musician .
+
+
+Treebanked sentence:
+--------------------
+David Jack ( January 20 , 1960 in Bristol , Pennsylvania ) is an American children 's musician . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP David) (NNP Jack))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP January) (CD 20) (, ,) (CD 1960))
+        (PP (IN in)
+          (NP (NNP Bristol) (, ,) (NNP Pennsylvania))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ American) (NNS children) (POS 's))
+        (NN musician)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	David
+			name:	PERSON				0-1	David Jack 
+	1	Jack
+	2	(
+	3	January
+			name:	DATE				3-6	January 20 , 1960 
+	4	20
+	5	,
+	6	1960
+	7	in
+	8	Bristol
+			name:	CITY				8-8	Bristol 
+	9	,
+	10	Pennsylvania
+			name:	STATE_OR_PROVINCE				10-10	Pennsylvania 
+	11	)
+	12	is
+			sense:	be.v.02
+			prop:	be.01
+			V		12-12	is 
+			N-ARG-A1		0-11	David Jack ( January 20 , 1960 in Bristol , Pennsylvania ) 
+			N-ARG-A2		13-17	an American children 's musician 
+	13	an
+	14	American
+			name:	NATIONALITY				14-14	American 
+	15	children
+			sense:	child.n.01
+	16	's
+	17	musician
+			name:	TITLE				17-17	musician 
+			sense:	musician.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jack is a Parents ' Choice Award - winning composer and performer of children 's music .
+
+
+Treebanked sentence:
+--------------------
+Jack is a Parents ' Choice Award - winning composer and performer of children 's music . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Jack))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT a) (NNS Parents) (POS '))
+          (NN Choice)
+          (ADJP (NN Award) (HYPH -) (VBG winning))
+          (NN composer))
+        (CC and)
+        (NP
+          (NP (NN performer))
+          (PP (IN of)
+            (NP
+              (NP (NNS children) (POS 's))
+              (NN music))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jack
+			name:	PERSON				0-0	Jack 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Jack 
+			N-ARG-A2		2-15	a Parents ' Choice Award - winning composer and performer of children 's music 
+	2	a
+	3	Parents
+			sense:	parent.n.01
+	4	'
+	5	Choice
+			sense:	choice.n.01
+	6	Award
+			sense:	award.n.02
+	7	-
+	8	winning
+			sense:	win.v.01
+			prop:	win.01
+			V		8-8	winning 
+			N-ARG-A1		3-6	Parents ' Choice Award 
+			N-ARG-A0		9-11	composer and performer 
+	9	composer
+			name:	TITLE				9-9	composer 
+			sense:	composer.n.01
+	10	and
+	11	performer
+			name:	TITLE				11-11	performer 
+			sense:	performer.n.01
+	12	of
+	13	children
+			sense:	child.n.01
+	14	's
+	15	music
+			sense:	music.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He has appeared on television and radio , including NBC 's The Today Show , and he frequently entertains at children 's music festivals throughout the United States .
+
+
+Treebanked sentence:
+--------------------
+He has appeared on television and radio , including NBC 's The Today Show , and he frequently entertains at children 's music festivals throughout the United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBZ has)
+        (VP (VBN appeared)
+          (PP (IN on)
+            (NP (NN television)
+              (CC and)
+              (NN radio)))
+          (, ,)
+          (PP (VBG including)
+            (NP
+              (NP (NNP NBC) (POS 's))
+              (NP (DT The) (NN Today) (NN Show)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP he))
+      (ADVP (RB frequently))
+      (VP (VBZ entertains)
+        (PP (IN at)
+          (NP
+            (NP (NNS children) (POS 's))
+            (NN music) (NNS festivals)))
+        (PP (IN throughout)
+          (NP (DT the) (NNP United) (NNP States)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	appeared
+			sense:	appear.v.02
+			prop:	appear.01
+			V		2-2	appeared 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-13	on television and radio , including NBC 's The Today Show 
+	3	on
+	4	television
+			sense:	television.n.01
+	5	and
+	6	radio
+			sense:	radio.n.01
+	7	,
+	8	including
+			sense:	include.v.01
+			prop:	include.01
+			V		8-8	including 
+			N-ARG-A2		4-6	television and radio 
+			N-ARG-A1		9-13	NBC 's The Today Show 
+	9	NBC
+			name:	ORGANIZATION				9-9	NBC 
+	10	's
+	11	The
+	12	Today
+			name:	DATE				12-12	Today 
+			sense:	today.n.01
+	13	Show
+			sense:	show.n.01
+	14	,
+	15	and
+	16	he
+	17	frequently
+			sense:	frequently.r.01
+	18	entertains
+			sense:	entertain.v.01
+			prop:	entertain.01
+			V		18-18	entertains 
+			N-ARG-A0		16-16	he 
+			N-ARGM-TMP		17-17	frequently 
+			N-ARGM-LOC		19-27	at children 's music festivals throughout the United States 
+	19	at
+	20	children
+			sense:	child.n.01
+	21	's
+	22	music
+			sense:	music.n.01
+	23	festivals
+			sense:	festival.n.02
+	24	throughout
+	25	the
+	26	United
+			name:	COUNTRY				26-27	United States 
+	27	States
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is best known for his 11 years of daily performances at Sesame Place , during which he performed live on stage with Elmo and other Sesame Street characters .
+
+
+Treebanked sentence:
+--------------------
+He is best known for his 11 years of daily performances at Sesame Place , during which he performed live on stage with Elmo and other Sesame Street characters . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (ADVP (RBS best))
+      (VP (VBN known)
+        (PP (IN for)
+          (NP
+            (NP (PRP$ his) (CD 11) (NNS years))
+            (PP (IN of)
+              (NP (JJ daily) (NNS performances)))))
+        (PP (IN at)
+          (NP
+            (NP (NNP Sesame) (NNP Place))
+            (, ,)
+            (SBAR
+              (WHPP (IN during)
+                (WHNP (WDT which)))
+              (S
+                (NP (PRP he))
+                (VP (VBD performed)
+                  (ADVP (RB live))
+                  (PP (IN on)
+                    (NP (NN stage)))
+                  (PP (IN with)
+                    (NP
+                      (NP (NN Elmo))
+                      (CC and)
+                      (NP (JJ other)
+                        (NML (NNP Sesame) (NNP Street))
+                        (NNS characters)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-28	best known for his 11 years of daily performances at Sesame Place , during which he performed live on stage with Elmo and other Sesame Street characters 
+	2	best
+			sense:	well.r.02
+	3	known
+			sense:	know.v.04
+			prop:	know.01
+			V		3-3	known 
+			N-ARG-A1		0-0	He 
+			N-ARGM-MNR		2-2	best 
+			N-ARG-A2		4-28	for his 11 years of daily performances at Sesame Place , during which he performed live on stage with Elmo and other Sesame Street characters 
+	4	for
+	5	his
+	6	11
+			name:	DURATION				6-7	11 years 
+	7	years
+			sense:	year.n.01
+	8	of
+	9	daily
+			name:	SET				9-9	daily 
+			sense:	daily.s.01
+	10	performances
+			sense:	performance.n.01
+	11	at
+	12	Sesame
+	13	Place
+	14	,
+	15	during
+	16	which
+	17	he
+	18	performed
+			sense:	perform.v.03
+			prop:	perform.01
+			V		18-18	performed 
+			N-ARGM-TMP		15-16	during which 
+			N-ARG-A0		17-17	he 
+			N-ARGM-MNR		19-19	live 
+			N-ARGM-LOC		20-21	on stage 
+	19	live
+			sense:	live.r.01
+	20	on
+	21	stage
+			sense:	stage.n.03
+	22	with
+	23	Elmo
+	24	and
+	25	other
+			sense:	other.a.01
+	26	Sesame
+	27	Street
+	28	characters
+			sense:	fictional_character.n.01
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In addition to his career as a children 's performer , he is well known in the Philadelphia area as a stage actor .
+
+
+Treebanked sentence:
+--------------------
+In addition to his career as a children 's performer , he is well known in the Philadelphia area as a stage actor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (NN addition))
+        (PP (IN to)
+          (NP
+            (NP (PRP$ his) (NN career))
+            (PP (IN as)
+              (NP
+                (NP (DT a) (NNS children) (POS 's))
+                (NN performer)))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBZ is)
+      (ADVP (RB well))
+      (VP (VBN known)
+        (PP (IN in)
+          (NP (DT the) (NNP Philadelphia) (NN area)))
+        (PP (IN as)
+          (NP (DT a) (NN stage) (NN actor)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	addition
+			sense:	accession.n.03
+	2	to
+	3	his
+	4	career
+			sense:	career.n.01
+	5	as
+	6	a
+	7	children
+			sense:	child.n.01
+	8	's
+	9	performer
+			name:	TITLE				9-9	performer 
+			sense:	performer.n.01
+	10	,
+	11	he
+	12	is
+			sense:	be.v.01
+			prop:	be.01
+			V		12-12	is 
+			N-ARGM-ADV		0-9	In addition to his career as a children 's performer 
+			N-ARG-A1		11-11	he 
+			N-ARG-A2		13-14	well known 
+			N-ARGM-LOC		15-18	in the Philadelphia area 
+			C-ARG-A2		19-22	as a stage actor 
+	13	well
+			sense:	well.r.02
+	14	known
+			sense:	know.v.04
+			prop:	know.01
+			V		14-14	known 
+			N-ARGM-ADV		0-9	In addition to his career as a children 's performer 
+			N-ARG-A1		11-11	he 
+			N-ARGM-MNR		13-13	well 
+			N-ARGM-LOC		15-18	in the Philadelphia area 
+			N-ARG-A2		19-22	as a stage actor 
+	15	in
+	16	the
+	17	Philadelphia
+			name:	CITY				17-17	Philadelphia 
+	18	area
+			sense:	area.n.01
+	19	as
+	20	a
+	21	stage
+			sense:	stage.n.03
+	22	actor
+			name:	TITLE				22-22	actor 
+			sense:	actor.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is a member of the Screen Actors Guild as well as Actors ' Equity Association .
+
+
+Treebanked sentence:
+--------------------
+He is a member of the Screen Actors Guild as well as Actors ' Equity Association . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN Screen) (NNS Actors) (NN Guild))
+            (CONJP (RB as) (RB well) (IN as))
+            (NP (NNPS Actors) (POS '))
+            (NML (NNP Equity) (NNP Association))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-15	a member of the Screen Actors Guild as well as Actors ' Equity Association 
+	2	a
+	3	member
+			sense:	member.n.01
+	4	of
+	5	the
+	6	Screen
+			name:	ORGANIZATION				6-8	Screen Actors Guild 
+			sense:	filmdom.n.01
+	7	Actors
+			sense:	actor.n.01
+	8	Guild
+			sense:	club.n.02
+	9	as
+			sense:	equally.r.01
+	10	well
+			sense:	well.r.02
+	11	as
+	12	Actors
+			name:	ORGANIZATION				12-15	Actors ' Equity Association 
+	13	'
+	14	Equity
+	15	Association
+	16	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+

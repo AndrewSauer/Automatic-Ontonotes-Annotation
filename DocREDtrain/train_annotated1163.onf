@@ -1,0 +1,650 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Georges Renavent ( born Georges DeChaux , April 23 , 1892 – January 2 , 1969 ) was a French - American actor in film , Broadway plays and operator of American Grand Guignol .
+
+
+Treebanked sentence:
+--------------------
+Georges Renavent ( born Georges DeChaux , April 23 , 1892 – January 2 , 1969 ) was a French - American actor in film , Broadway plays and operator of American Grand Guignol . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Georges) (NNP Renavent))
+        (-LRB- -LRB-)
+        (VP (VBN born)
+          (NP
+            (NP (NNP Georges) (NNP DeChaux))
+            (, ,)
+            (NP
+              (NP (NNP April) (CD 23) (, ,) (CD 1892))
+              (PP (SYM –)
+                (NP (NNP January) (CD 2) (, ,) (CD 1969))))))
+        (-RRB- -RRB-))
+      (VP (VBD was)
+        (NP
+          (NP (DT a)
+            (ADJP (JJ French) (HYPH -) (JJ American))
+            (NN actor))
+          (PP (IN in)
+            (NP (NN film))))))
+    (, ,)
+    (NP (NNP Broadway))
+    (VP
+      (VP (VBZ plays))
+      (CC and)
+      (NP
+        (NP (NN operator))
+        (PP (IN of)
+          (NP (NNP American) (NNP Grand) (NNP Guignol)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Georges
+			coref:	IDENT			3	0-1	Georges Renavent 
+			name:	PERSON				0-1	Georges Renavent 
+	1	Renavent
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Georges Renavent 
+			N-ARGM-TMP		7-15	April 23 , 1892 – January 2 , 1969 
+	4	Georges
+			name:	PERSON				4-5	Georges DeChaux 
+	5	DeChaux
+	6	,
+	7	April
+			name:	DATE				7-10	April 23 , 1892 
+	8	23
+	9	,
+	10	1892
+	11	–
+	12	January
+			name:	DATE				12-15	January 2 , 1969 
+	13	2
+	14	,
+	15	1969
+	16	)
+	17	was
+			sense:	be.v.02
+			prop:	be.01
+			V		17-17	was 
+			N-ARG-A1		0-16	Georges Renavent ( born Georges DeChaux , April 23 , 1892 – January 2 , 1969 ) 
+			N-ARG-A2		18-33	a French - American actor in film , Broadway plays and operator of American Grand Guignol 
+	18	a
+	19	French
+			name:	NATIONALITY				19-19	French 
+	20	-
+	21	American
+			name:	NATIONALITY				21-21	American 
+	22	actor
+			name:	TITLE				22-22	actor 
+			sense:	actor.n.01
+	23	in
+	24	film
+			sense:	movie.n.01
+	25	,
+	26	Broadway
+			name:	LOCATION				26-26	Broadway 
+	27	plays
+			sense:	act.v.10
+			prop:	play.01
+			V		27-27	plays 
+			N-ARGM-LOC		26-26	Broadway 
+	28	and
+	29	operator
+			name:	TITLE				29-29	operator 
+			sense:	operator.n.03
+	30	of
+	31	American
+			name:	NATIONALITY				31-31	American 
+	32	Grand
+			name:	MISC				32-33	Grand Guignol 
+	33	Guignol
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was born in Paris , France .
+
+
+Treebanked sentence:
+--------------------
+He was born in Paris , France . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Paris) (, ,) (NNP France)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			3	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-6	in Paris , France 
+	3	in
+	4	Paris
+			name:	CITY				4-4	Paris 
+	5	,
+	6	France
+			name:	COUNTRY				6-6	France 
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1914 , he immigrated to the United States , crossing the frontier between Canada and Vermont .
+
+
+Treebanked sentence:
+--------------------
+In 1914 , he immigrated to the United States , crossing the frontier between Canada and Vermont . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1914)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD immigrated)
+      (PP (IN to)
+        (NP (DT the) (NNP United) (NNP States)))
+      (, ,)
+      (S
+        (VP (VBG crossing)
+          (NP
+            (NP (DT the) (NN frontier))
+            (PP (IN between)
+              (NP (NNP Canada)
+                (CC and)
+                (NNP Vermont)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1914
+			name:	DATE				1-1	1914 
+	2	,
+	3	he
+			coref:	IDENT			3	3-3	he 
+	4	immigrated
+			sense:	immigrate.v.03
+			prop:	immigrate.01
+			V		4-4	immigrated 
+			N-ARGM-TMP		0-1	In 1914 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		5-8	to the United States 
+			N-ARGM-ADV		10-16	crossing the frontier between Canada and Vermont 
+	5	to
+	6	the
+			coref:	IDENT			2	6-8	the United States 
+	7	United
+			name:	COUNTRY				7-8	United States 
+	8	States
+	9	,
+	10	crossing
+			sense:	traverse.v.01
+			prop:	cross.02
+			V		10-10	crossing 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		11-16	the frontier between Canada and Vermont 
+	11	the
+	12	frontier
+			sense:	frontier.n.01
+	13	between
+	14	Canada
+			name:	COUNTRY				14-14	Canada 
+	15	and
+	16	Vermont
+			name:	STATE_OR_PROVINCE				16-16	Vermont 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was married to Selena Royle , an actress and daughter of Edwin Milton Royle , author of The Squaw Man , which was adapted for film and starred Cecil B. DeMille .
+
+
+Treebanked sentence:
+--------------------
+He was married to Selena Royle , an actress and daughter of Edwin Milton Royle , author of The Squaw Man , which was adapted for film and starred Cecil B. DeMille . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN married)
+        (PP (IN to)
+          (NP
+            (NP (NNP Selena) (NNP Royle))
+            (, ,)
+            (NP
+              (NP (DT an) (NN actress)
+                (CC and)
+                (NN daughter))
+              (PP (IN of)
+                (NP
+                  (NP
+                    (NP (NNP Edwin) (NNP Milton) (NNP Royle))
+                    (, ,)
+                    (NP
+                      (NP (NN author))
+                      (PP (IN of)
+                        (NP (DT The) (NNP Squaw) (NNP Man)))))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP
+                        (VP (VBD was)
+                          (VP (VBN adapted)
+                            (PP (IN for)
+                              (NP (NN film)))))
+                        (CC and)
+                        (VP (VBD starred)
+                          (NP (NNP Cecil) (NNP B.) (NNP DeMille)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			3	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-31	married to Selena Royle , an actress and daughter of Edwin Milton Royle , author of The Squaw Man , which was adapted for film and starred Cecil B. DeMille 
+	2	married
+			sense:	marry.v.01
+			prop:	arrive.01
+			V		2-2	married 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		3-31	to Selena Royle , an actress and daughter of Edwin Milton Royle , author of The Squaw Man , which was adapted for film and starred Cecil B. DeMille 
+	3	to
+	4	Selena
+			coref:	IDENT			0	4-31	Selena Royle , an actress and daughter of Edwin Milton Royle , author of The Squaw Man , which was adapted for film and starred Cecil B. DeMille 
+			name:	PERSON				4-5	Selena Royle 
+	5	Royle
+	6	,
+	7	an
+	8	actress
+			name:	TITLE				8-8	actress 
+			sense:	actress.n.01
+	9	and
+	10	daughter
+			sense:	daughter.n.01
+	11	of
+	12	Edwin
+			name:	PERSON				12-14	Edwin Milton Royle 
+	13	Milton
+	14	Royle
+	15	,
+	16	author
+			name:	TITLE				16-16	author 
+			sense:	writer.n.01
+	17	of
+	18	The
+	19	Squaw
+			name:	MISC				19-20	Squaw Man 
+	20	Man
+	21	,
+	22	which
+	23	was
+			sense:	be.v.01
+			prop:	be.03
+			V		23-23	was 
+	24	adapted
+			sense:	adapt.v.01
+			prop:	adapt.01
+			V		24-24	adapted 
+			N-ARG-A1		18-20	The Squaw Man 
+			R-ARG-A1		22-22	which 
+			N-ARGM-PNC		25-26	for film 
+	25	for
+	26	film
+			sense:	movie.n.01
+	27	and
+	28	starred
+			sense:	star.v.01
+			prop:	star.01
+			V		28-28	starred 
+			N-ARG-A2		18-20	The Squaw Man 
+			R-ARG-A2		22-22	which 
+			N-ARG-A1		29-31	Cecil B. DeMille 
+	29	Cecil
+			name:	PERSON				29-31	Cecil B. DeMille 
+	30	B.
+	31	DeMille
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+They left the United States to live in Mexico after Selena was entangled in the McCarthy era Communism investigations and Hollywood blacklist .
+
+
+Treebanked sentence:
+--------------------
+They left the United States to live in Mexico after Selena was entangled in the McCarthy era Communism investigations and Hollywood blacklist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD left)
+      (NP (DT the) (NNP United) (NNP States))
+      (S
+        (VP (TO to)
+          (VP (VB live)
+            (PP (IN in)
+              (NP (NNP Mexico)))
+            (SBAR (IN after)
+              (S
+                (NP (NNP Selena))
+                (VP (VBD was)
+                  (VP (VBN entangled)
+                    (PP (IN in)
+                      (NP (DT the) (NNP McCarthy) (NN era) (NNP Communism)
+                        (NML
+                          (NML (NNS investigations))
+                          (CC and)
+                          (NML (NNP Hollywood)))
+                        (NN blacklist)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	They
+			coref:	IDENT			0	0-0	They 
+	1	left
+			sense:	leave.v.01
+			prop:	leave.01
+			V		1-1	left 
+			N-ARG-A0		0-0	They 
+			N-ARG-A1		2-4	the United States 
+			N-ARGM-PRP		5-8	to live in Mexico 
+			N-ARGM-TMP		9-21	after Selena was entangled in the McCarthy era Communism investigations and Hollywood blacklist 
+	2	the
+			coref:	IDENT			2	2-4	the United States 
+	3	United
+			name:	COUNTRY				3-4	United States 
+	4	States
+	5	to
+	6	live
+			sense:	populate.v.01
+			prop:	live.01
+			V		6-6	live 
+			N-ARG-A0		0-0	They 
+			N-ARGM-LOC		7-8	in Mexico 
+	7	in
+	8	Mexico
+			coref:	IDENT			4	8-8	Mexico 
+			name:	COUNTRY				8-8	Mexico 
+	9	after
+	10	Selena
+			name:	PERSON				10-10	Selena 
+	11	was
+			sense:	be.v.01
+			prop:	be.03
+			V		11-11	was 
+	12	entangled
+			sense:	entangle.v.01
+			prop:	entangle.01
+			V		12-12	entangled 
+			N-ARG-A1		10-10	Selena 
+			N-ARG-A2		13-21	in the McCarthy era Communism investigations and Hollywood blacklist 
+	13	in
+	14	the
+	15	McCarthy
+			name:	PERSON				15-15	McCarthy 
+	16	era
+			sense:	era.n.01
+	17	Communism
+			name:	IDEOLOGY				17-17	Communism 
+	18	investigations
+			sense:	probe.n.01
+	19	and
+	20	Hollywood
+			name:	CITY				20-20	Hollywood 
+	21	blacklist
+			sense:	blacklist.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+While in Mexico , both Selena and Georges continued to be active in the arts and put out various cookbooks , including Pheasants for Peasants , A Gringa 's Guide to Mexican Cooking , and Guadalajara As I Know , Live It , Love It .
+
+
+Treebanked sentence:
+--------------------
+While in Mexico , both Selena and Georges continued to be active in the arts and put out various cookbooks , including Pheasants for Peasants , A Gringa 's Guide to Mexican Cooking , and Guadalajara As I Know , Live It , Love It . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (PP (IN in)
+          (NP (NNP Mexico)))
+        (, ,)
+        (NP (CC both)
+          (NNP Selena)
+          (CC and)
+          (NNP Georges))
+        (VP (VBD continued)
+          (S
+            (VP (TO to)
+              (VP
+                (VP (VB be)
+                  (ADJP (JJ active)
+                    (PP (IN in)
+                      (NP (DT the) (NNS arts)))))
+                (CC and)
+                (VP (VB put)
+                  (PRT (RP out))
+                  (NP
+                    (NP (JJ various) (NNS cookbooks))
+                    (, ,)
+                    (PP (VBG including)
+                      (NP
+                        (NP
+                          (NP (NNS Pheasants))
+                          (PP (IN for)
+                            (NP (NNPS Peasants))))
+                        (, ,)
+                        (NP
+                          (NP
+                            (NP (DT A) (NNP Gringa) (POS 's))
+                            (NNP Guide))
+                          (PP (IN to)
+                            (NP (NNP Mexican) (NNP Cooking))))
+                        (, ,)
+                        (CC and)
+                        (NP (NNP Guadalajara)))))))))
+          (SBAR (IN As)
+            (S
+              (NP (PRP I))
+              (VP (VBP Know)))))))
+    (, ,)
+    (VP
+      (VP (VB Live)
+        (NP (PRP It)))
+      (, ,)
+      (VP (VB Love)
+        (NP (PRP It))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	While
+	1	in
+	2	Mexico
+			coref:	IDENT			4	2-2	Mexico 
+			name:	COUNTRY				2-2	Mexico 
+	3	,
+	4	both
+	5	Selena
+			name:	PERSON				5-5	Selena 
+	6	and
+	7	Georges
+			coref:	IDENT			3	7-7	Georges 
+			name:	PERSON				7-7	Georges 
+	8	continued
+			sense:	continue.v.01
+			prop:	continue.01
+			V		8-8	continued 
+			N-ARGM-TMP		0-2	While in Mexico 
+			N-ARG-A0		4-7	both Selena and Georges 
+			N-ARG-A1		9-44	to be active in the arts and put out various cookbooks , including Pheasants for Peasants , A Gringa 's Guide to Mexican Cooking , and Guadalajara As I Know , Live It , Love It 
+	9	to
+	10	be
+			sense:	be.v.01
+			prop:	be.01
+			V		10-10	be 
+			N-ARG-A1		4-7	both Selena and Georges 
+			N-ARG-A2		11-14	active in the arts 
+	11	active
+			sense:	active.a.14
+	12	in
+	13	the
+	14	arts
+			sense:	art.n.01
+	15	and
+	16	put
+			sense:	put.v.01
+			prop:	put.10
+			V		16-16	put 
+			N-ARGM-TMP		0-2	While in Mexico 
+			N-ARG-A0		4-7	both Selena and Georges 
+			N-ARG-A1		18-44	various cookbooks , including Pheasants for Peasants , A Gringa 's Guide to Mexican Cooking , and Guadalajara As I Know , Live It , Love It 
+	17	out
+	18	various
+			sense:	respective.s.01
+	19	cookbooks
+			sense:	cookbook.n.01
+	20	,
+	21	including
+			sense:	include.v.01
+			prop:	include.01
+			V		21-21	including 
+			N-ARG-A2		18-19	various cookbooks 
+			N-ARG-A1		22-44	Pheasants for Peasants , A Gringa 's Guide to Mexican Cooking , and Guadalajara As I Know , Live It , Love It 
+	22	Pheasants
+			sense:	pheasant.n.02
+	23	for
+	24	Peasants
+	25	,
+	26	A
+			coref:	IDENT			1	26-32	A Gringa 's Guide to Mexican Cooking 
+	27	Gringa
+	28	's
+	29	Guide
+			name:	TITLE				29-29	Guide 
+	30	to
+	31	Mexican
+			name:	NATIONALITY				31-31	Mexican 
+	32	Cooking
+			name:	MISC				32-32	Cooking 
+	33	,
+	34	and
+	35	Guadalajara
+			name:	CITY				35-35	Guadalajara 
+	36	As
+	37	I
+	38	Know
+			sense:	know.v.01
+			prop:	know.01
+			V		38-38	Know 
+			N-ARG-A0		37-37	I 
+	39	,
+	40	Live
+			sense:	live.v.02
+			prop:	live.01
+			V		40-40	Live 
+			N-ARG-A1		41-41	It 
+	41	It
+			coref:	IDENT			1	41-41	It 
+	42	,
+	43	Love
+			sense:	love.v.02
+			prop:	love.01
+			V		43-43	Love 
+			N-ARG-A1		44-44	It 
+	44	It
+			coref:	IDENT			1	44-44	It 
+	45	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.4-31	Selena Royle , an actress and daughter of Edwin Milton Royle , author of The Squaw Man , which was adapted for film and starred Cecil B. DeMille 
+				4.0-0	They 
+	Chain 1 (IDENT)
+				5.26-32	A Gringa 's Guide to Mexican Cooking 
+				5.41-41	It 
+				5.44-44	It 
+	Chain 2 (IDENT)
+				2.6-8	the United States 
+				4.2-4	the United States 
+	Chain 3 (IDENT)
+				0.0-1	Georges Renavent 
+				1.0-0	He 
+				2.3-3	he 
+				3.0-0	He 
+				5.7-7	Georges 
+	Chain 4 (IDENT)
+				4.8-8	Mexico 
+				5.2-2	Mexico 
+

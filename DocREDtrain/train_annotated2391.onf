@@ -1,0 +1,756 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Beaver River is a hamlet that is six tenths of a mile square , at the east end of Stillwater Reservoir , in the town of Webb in Herkimer County , New York , United States .
+
+
+Treebanked sentence:
+--------------------
+Beaver River is a hamlet that is six tenths of a mile square , at the east end of Stillwater Reservoir , in the town of Webb in Herkimer County , New York , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Beaver) (NNP River))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN hamlet))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ is)
+              (NP
+                (NP (CD six) (NNS tenths))
+                (PP (IN of)
+                  (NP (DT a) (NN mile) (JJ square))))
+              (, ,)
+              (PP (IN at)
+                (NP
+                  (NP (DT the) (JJ east) (NN end))
+                  (PP (IN of)
+                    (NP (NNP Stillwater) (NNP Reservoir)))
+                  (, ,)
+                  (PP (IN in)
+                    (NP
+                      (NP (DT the) (NN town))
+                      (PP (IN of)
+                        (NP
+                          (NP (NNP Webb))
+                          (PP (IN in)
+                            (NP
+                              (NML
+                                (NML (NNP Herkimer) (NNP County))
+                                (, ,)
+                                (NML (NNP New) (NNP York))
+                                (, ,))
+                              (NNP United) (NNP States))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Beaver
+			name:	LOCATION				0-0	Beaver 
+	1	River
+			name:	TITLE				1-1	River 
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Beaver River 
+			N-ARG-A2		3-35	a hamlet that is six tenths of a mile square , at the east end of Stillwater Reservoir , in the town of Webb in Herkimer County , New York , United States 
+	3	a
+	4	hamlet
+			sense:	village.n.02
+	5	that
+	6	is
+			sense:	be.v.01
+			prop:	be.01
+			V		6-6	is 
+			N-ARG-A1		3-4	a hamlet 
+			R-ARG-A1		5-5	that 
+			N-ARG-A2		7-12	six tenths of a mile square 
+			N-ARGM-LOC		14-21	at the east end of Stillwater Reservoir , 
+			N-ARGM-LOC		22-35	in the town of Webb in Herkimer County , New York , United States 
+	7	six
+			name:	NUMBER				7-7	six 
+	8	tenths
+			sense:	one-tenth.n.01
+	9	of
+	10	a
+	11	mile
+			sense:	mile.n.01
+	12	square
+			sense:	square.a.01
+	13	,
+	14	at
+	15	the
+	16	east
+			sense:	east.a.01
+	17	end
+			sense:	end.n.01
+	18	of
+	19	Stillwater
+			coref:	IDENT			2	19-20	Stillwater Reservoir 
+			name:	CITY				19-19	Stillwater 
+	20	Reservoir
+			name:	LOCATION				20-20	Reservoir 
+	21	,
+	22	in
+	23	the
+			coref:	IDENT			1	23-35	the town of Webb in Herkimer County , New York , United States 
+	24	town
+			sense:	township.n.01
+	25	of
+	26	Webb
+			name:	LOCATION				26-26	Webb 
+	27	in
+	28	Herkimer
+			name:	LOCATION				28-29	Herkimer County 
+	29	County
+	30	,
+	31	New
+			name:	STATE_OR_PROVINCE				31-32	New York 
+	32	York
+	33	,
+	34	United
+			name:	COUNTRY				34-35	United States 
+	35	States
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The hamlet is surrounded by the Adirondack Park .
+
+
+Treebanked sentence:
+--------------------
+The hamlet is surrounded by the Adirondack Park . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN hamlet))
+    (VP (VBZ is)
+      (VP (VBN surrounded)
+        (PP (IN by)
+          (NP (DT the) (NNP Adirondack) (NNP Park)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The hamlet 
+	1	hamlet
+			sense:	village.n.02
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	surrounded
+			sense:	surround.v.01
+			prop:	surround.01
+			V		3-3	surrounded 
+			N-ARG-A2		0-1	The hamlet 
+			N-ARG-A1		4-7	by the Adirondack Park 
+	4	by
+	5	the
+	6	Adirondack
+	7	Park
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The hamlet has a year - round population of eight , that increases during the summer as many people have camps in this wilderness area .
+
+
+Treebanked sentence:
+--------------------
+The hamlet has a year - round population of eight , that increases during the summer as many people have camps in this wilderness area . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN hamlet))
+    (VP (VBZ has)
+      (NP
+        (NP (DT a)
+          (ADJP (NN year) (HYPH -) (JJ round))
+          (NN population))
+        (PP (IN of)
+          (NP (CD eight))))
+      (, ,)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (NNS increases))
+            (PP (IN during)
+              (NP
+                (NP (DT the) (NN summer))
+                (PP (IN as)
+                  (NP (JJ many) (NNS people))))))
+          (VP (VBP have)
+            (NP
+              (NP (NNS camps))
+              (PP (IN in)
+                (NP (DT this) (NN wilderness) (NN area))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The hamlet 
+	1	hamlet
+			sense:	village.n.02
+	2	has
+			sense:	have.v.02
+			prop:	have.03
+			V		2-2	has 
+			N-ARG-A0		0-1	The hamlet 
+			N-ARG-A1		3-24	a year - round population of eight , that increases during the summer as many people have camps in this wilderness area 
+	3	a
+			name:	DURATION				3-4	a year 
+	4	year
+			sense:	year.n.01
+	5	-
+	6	round
+			sense:	round.s.03
+	7	population
+			sense:	population.n.01
+	8	of
+	9	eight
+			name:	NUMBER				9-9	eight 
+	10	,
+	11	that
+	12	increases
+			sense:	addition.n.03
+	13	during
+	14	the
+	15	summer
+			name:	DATE				15-15	summer 
+			sense:	summer.n.01
+	16	as
+	17	many
+			sense:	many.a.01
+	18	people
+			sense:	person.n.01
+	19	have
+			sense:	own.v.01
+			prop:	have.03
+			V		19-19	have 
+			N-ARG-A0		17-18	many people 
+			N-ARG-A1		20-20	camps 
+			N-ARGM-LOC		21-24	in this wilderness area 
+	20	camps
+			sense:	camp.n.03
+	21	in
+	22	this
+	23	wilderness
+			sense:	wilderness.n.03
+	24	area
+			sense:	area.n.01
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+There are 125 private properties , and three commercial businesses .
+
+
+Treebanked sentence:
+--------------------
+There are 125 private properties , and three commercial businesses . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (CD 125) (JJ private) (NNS properties))
+        (, ,)
+        (CC and)
+        (NP (CD three) (JJ commercial) (NNS businesses))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	There
+	1	are
+			sense:	exist.v.01
+			prop:	be.02
+			V		1-1	are 
+			N-ARG-A1		2-9	125 private properties , and three commercial businesses 
+	2	125
+			coref:	IDENT			3	2-9	125 private properties , and three commercial businesses 
+			name:	NUMBER				2-2	125 
+	3	private
+			sense:	private.a.01
+	4	properties
+			sense:	place.n.02
+	5	,
+	6	and
+	7	three
+			name:	NUMBER				7-7	three 
+	8	commercial
+			sense:	commercial.a.01
+	9	businesses
+			sense:	business.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+No roads lead to the hamlet ; it is accessible only by hiking , rail car or boat in the summer and by snowmobile , snowshoes or cross country skis in the winter .
+
+
+Treebanked sentence:
+--------------------
+No roads lead to the hamlet ; it is accessible only by hiking , rail car or boat in the summer and by snowmobile , snowshoes or cross country skis in the winter . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT No) (NNS roads))
+      (VP (VBP lead)
+        (PP (IN to)
+          (NP (DT the) (NN hamlet)))))
+    (: ;)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (ADJP (JJ accessible))
+        (PP
+          (ADVP (RB only))
+          (IN by)
+          (NP
+            (NP (NN hiking))
+            (, ,)
+            (NP (NN rail) (NN car))
+            (CC or)
+            (NP (NN boat))))
+        (PP
+          (PP (IN in)
+            (NP (DT the) (NN summer)))
+          (CC and)
+          (PP (IN by)
+            (NP
+              (NP (NN snowmobile))
+              (, ,)
+              (NP (NNS snowshoes)))))
+        (CC or)
+        (VP (VB cross)
+          (NP (NN country) (NNS skis))
+          (PP (IN in)
+            (NP (DT the) (NN winter))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	No
+	1	roads
+			sense:	road.n.01
+	2	lead
+			sense:	run.v.03
+			prop:	lead.01
+			V		2-2	lead 
+			N-ARG-A0		0-1	No roads 
+			N-ARG-A4		3-5	to the hamlet 
+	3	to
+	4	the
+			coref:	IDENT			0	4-5	the hamlet 
+	5	hamlet
+			sense:	hamlet.n.01
+	6	;
+	7	it
+			coref:	IDENT			3	7-7	it 
+	8	is
+			sense:	be.v.01
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		7-7	it 
+			N-ARG-A2		9-32	accessible only by hiking , rail car or boat in the summer and by snowmobile , snowshoes or cross country skis in the winter 
+	9	accessible
+			sense:	accessible.a.01
+	10	only
+			sense:	entirely.r.02
+	11	by
+	12	hiking
+			sense:	hike.n.01
+	13	,
+	14	rail
+			sense:	rail.n.02
+	15	car
+			sense:	car.n.02
+	16	or
+	17	boat
+			sense:	boat.n.01
+	18	in
+	19	the
+	20	summer
+			name:	DATE				20-20	summer 
+			sense:	summer.n.01
+	21	and
+	22	by
+	23	snowmobile
+			sense:	snowmobile.n.01
+	24	,
+	25	snowshoes
+			sense:	snowshoe.n.01
+	26	or
+	27	cross
+			sense:	traverse.v.01
+			prop:	cross.02
+			V		27-27	cross 
+	28	country
+			sense:	country.n.04
+	29	skis
+			sense:	ski.n.01
+	30	in
+	31	the
+	32	winter
+			name:	DATE				32-32	winter 
+			sense:	winter.n.01
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+There is no electrical service .
+
+
+Treebanked sentence:
+--------------------
+There is no electrical service . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP (DT no) (JJ electrical) (NN service)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	There
+	1	is
+			sense:	exist.v.01
+			prop:	be.02
+			V		1-1	is 
+			N-ARG-A1		2-4	no electrical service 
+	2	no
+	3	electrical
+			sense:	electric.a.01
+	4	service
+			sense:	service.n.01
+	5	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The town is named for the Beaver River , which was impounded to form the Stillwater Reservoir .
+
+
+Treebanked sentence:
+--------------------
+The town is named for the Beaver River , which was impounded to form the Stillwater Reservoir . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN town))
+    (VP (VBZ is)
+      (VP (VBN named)
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NNP Beaver) (NNP River))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBD was)
+                  (VP (VBN impounded)
+                    (S
+                      (VP (TO to)
+                        (VP (VB form)
+                          (NP (DT the) (NNP Stillwater) (NNP Reservoir)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The town 
+	1	town
+			sense:	town.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	named
+			sense:	name.v.01
+			prop:	name.01
+			V		3-3	named 
+			N-ARG-A1		0-1	The town 
+	4	for
+	5	the
+	6	Beaver
+			name:	LOCATION				6-6	Beaver 
+	7	River
+			name:	TITLE				7-7	River 
+	8	,
+	9	which
+	10	was
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	was 
+	11	impounded
+			sense:	impound.v.01
+			prop:	impound.01
+			V		11-11	impounded 
+			N-ARG-A1		5-7	the Beaver River 
+			R-ARG-A1		9-9	which 
+			N-ARGM-PRP		12-16	to form the Stillwater Reservoir 
+	12	to
+	13	form
+			sense:	form.v.02
+			prop:	form.01
+			V		13-13	form 
+			N-ARG-A1		14-16	the Stillwater Reservoir 
+	14	the
+			coref:	IDENT			2	14-16	the Stillwater Reservoir 
+	15	Stillwater
+			name:	CITY				15-15	Stillwater 
+	16	Reservoir
+			name:	LOCATION				16-16	Reservoir 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Beaver River is a west - flowing tributary of the Black River and part of the Lake Ontario watershed .
+
+
+Treebanked sentence:
+--------------------
+The Beaver River is a west - flowing tributary of the Black River and part of the Lake Ontario watershed . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Beaver) (NNP River))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN west) (HYPH -) (VBG flowing))
+        (NP
+          (NP
+            (NP (NN tributary))
+            (PP (IN of)
+              (NP (DT the) (NNP Black) (NNP River))))
+          (CC and)
+          (NP
+            (NP (NN part))
+            (PP (IN of)
+              (NP (DT the)
+                (NML (NNP Lake) (NNP Ontario))
+                (NN watershed)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Beaver
+			name:	LOCATION				1-1	Beaver 
+	2	River
+			name:	TITLE				2-2	River 
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	The Beaver River 
+			N-ARG-A2		4-19	a west - flowing tributary of the Black River and part of the Lake Ontario watershed 
+	4	a
+	5	west
+			sense:	west.n.02
+	6	-
+	7	flowing
+			sense:	run.v.06
+			prop:	flow.01
+			V		7-7	flowing 
+			N-ARGM-DIR		5-5	west 
+			N-ARG-A1		8-8	tributary 
+	8	tributary
+			sense:	feeder.n.03
+	9	of
+	10	the
+	11	Black
+			name:	CITY				11-12	Black River 
+	12	River
+	13	and
+	14	part
+			sense:	part.n.01
+	15	of
+	16	the
+	17	Lake
+			name:	LOCATION				17-17	Lake 
+	18	Ontario
+			name:	STATE_OR_PROVINCE				18-18	Ontario 
+	19	watershed
+			sense:	river_basin.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The New York Central Railroad right of way , on the National Register of Historic Places passes through the hamlet ; an existing bunkhouse is a part of the historic property .
+
+
+Treebanked sentence:
+--------------------
+The New York Central Railroad right of way , on the National Register of Historic Places passes through the hamlet ; an existing bunkhouse is a part of the historic property . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The)
+          (NML (NNP New) (NNP York) (NNP Central))
+          (NNP Railroad) (NN right))
+        (PP (IN of)
+          (NP (NN way)))
+        (, ,)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NNP National) (NNP Register))
+            (PP (IN of)
+              (NP (JJ Historic) (NNS Places))))))
+      (VP (VBZ passes)
+        (PP (IN through)
+          (NP (DT the) (NN hamlet)))))
+    (: ;)
+    (S
+      (NP (DT an) (VBG existing) (NN bunkhouse))
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (NN part))
+          (PP (IN of)
+            (NP (DT the) (JJ historic) (NN property))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	New
+			name:	ORGANIZATION				1-4	New York Central Railroad 
+	2	York
+	3	Central
+	4	Railroad
+	5	right
+			sense:	right.n.01
+	6	of
+	7	way
+			sense:	way.n.06
+	8	,
+	9	on
+	10	the
+	11	National
+			name:	ORGANIZATION				11-15	National Register of Historic Places 
+	12	Register
+	13	of
+	14	Historic
+			sense:	historic.s.01
+	15	Places
+			sense:	place.n.02
+	16	passes
+			sense:	run.v.03
+			prop:	pass.02
+			V		16-16	passes 
+			N-ARGM-DIR		17-19	through the hamlet 
+	17	through
+	18	the
+			coref:	IDENT			0	18-19	the hamlet 
+	19	hamlet
+			sense:	hamlet.n.01
+	20	;
+	21	an
+	22	existing
+			sense:	exist.v.01
+			prop:	exist.01
+			V		22-22	existing 
+			N-ARG-A1		23-23	bunkhouse 
+	23	bunkhouse
+	24	is
+			sense:	constitute.v.01
+			prop:	be.01
+			V		24-24	is 
+			N-ARG-A1		21-23	an existing bunkhouse 
+			N-ARG-A2		25-30	a part of the historic property 
+	25	a
+	26	part
+			sense:	part.n.01
+	27	of
+	28	the
+	29	historic
+			sense:	historic.s.01
+	30	property
+			sense:	place.n.02
+	31	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.0-1	The hamlet 
+				2.0-1	The hamlet 
+				4.4-5	the hamlet 
+				8.18-19	the hamlet 
+	Chain 1 (IDENT)
+				0.23-35	the town of Webb in Herkimer County , New York , United States 
+				6.0-1	The town 
+	Chain 2 (IDENT)
+				6.14-16	the Stillwater Reservoir 
+				0.19-20	Stillwater Reservoir 
+	Chain 3 (IDENT)
+				3.2-9	125 private properties , and three commercial businesses 
+				4.7-7	it 
+

@@ -1,0 +1,899 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Navy , Army and Air Force Institutes ( NAAFI ) is an organisation created by the British government in 1921 to run recreational establishments needed by the British Armed Forces , and to sell goods to servicemen and their families .
+
+
+Treebanked sentence:
+--------------------
+The Navy , Army and Air Force Institutes ( NAAFI ) is an organisation created by the British government in 1921 to run recreational establishments needed by the British Armed Forces , and to sell goods to servicemen and their families . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The)
+        (NML (NNP Navy) (, ,) (NNP Army)
+          (CC and)
+          (NNP Air))
+        (NNP Force) (NNP Institutes))
+      (-LRB- -LRB-)
+      (NP (NNP NAAFI))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN organisation))
+        (VP (VBN created)
+          (PP (IN by)
+            (NP
+              (NP (DT the) (JJ British) (NN government))
+              (PP (IN in)
+                (NP (CD 1921)))))
+          (S
+            (VP
+              (VP (TO to)
+                (VP (VB run)
+                  (NP
+                    (NP (JJ recreational) (NNS establishments))
+                    (VP (VBN needed)
+                      (PP (IN by)
+                        (NP (DT the) (JJ British)
+                          (NML (NNP Armed) (NNPS Forces))))))))
+              (, ,)
+              (CC and)
+              (VP (TO to)
+                (VP (VB sell)
+                  (NP (NNS goods))
+                  (PP (IN to)
+                    (NP
+                      (NP (NN servicemen))
+                      (CC and)
+                      (NP (PRP$ their) (NNS families)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Navy
+			name:	ORGANIZATION				1-1	Navy 
+	2	,
+	3	Army
+			name:	ORGANIZATION				3-3	Army 
+	4	and
+	5	Air
+			name:	ORGANIZATION				5-7	Air Force Institutes 
+	6	Force
+	7	Institutes
+	8	(
+	9	NAAFI
+			coref:	IDENT			3	9-9	NAAFI 
+			name:	ORGANIZATION				9-9	NAAFI 
+	10	)
+	11	is
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	is 
+			N-ARG-A1		0-10	The Navy , Army and Air Force Institutes ( NAAFI ) 
+			N-ARG-A2		12-40	an organisation created by the British government in 1921 to run recreational establishments needed by the British Armed Forces , and to sell goods to servicemen and their families 
+	12	an
+	13	organisation
+			sense:	organization.n.01
+	14	created
+			sense:	create.v.02
+			prop:	create.01
+			V		14-14	created 
+			N-ARG-A1		12-13	an organisation 
+			N-ARG-A0		15-18	by the British government 
+			N-ARGM-TMP		19-20	in 1921 
+			N-ARGM-PRP		21-40	to run recreational establishments needed by the British Armed Forces , and to sell goods to servicemen and their families 
+	15	by
+	16	the
+	17	British
+			name:	NATIONALITY				17-17	British 
+	18	government
+			sense:	government.n.03
+	19	in
+	20	1921
+			name:	DATE				20-20	1921 
+	21	to
+	22	run
+			sense:	operate.v.01
+			prop:	run.01
+			V		22-22	run 
+			N-ARG-A1		23-30	recreational establishments needed by the British Armed Forces 
+	23	recreational
+			sense:	recreational.a.01
+	24	establishments
+			sense:	establishment.n.04
+	25	needed
+			sense:	want.v.02
+			prop:	need.01
+			V		25-25	needed 
+			N-ARG-A1		23-24	recreational establishments 
+			N-ARG-A0		26-30	by the British Armed Forces 
+	26	by
+	27	the
+	28	British
+			name:	ORGANIZATION				28-30	British Armed Forces 
+	29	Armed
+	30	Forces
+	31	,
+	32	and
+	33	to
+	34	sell
+			sense:	sell.v.01
+			prop:	sell.01
+			V		34-34	sell 
+			N-ARG-A0		0-10	The Navy , Army and Air Force Institutes ( NAAFI ) 
+			N-ARG-A1		35-35	goods 
+			N-ARG-A2		36-40	to servicemen and their families 
+	35	goods
+	36	to
+	37	servicemen
+	38	and
+	39	their
+	40	families
+			sense:	family.n.01
+	41	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It runs clubs , bars , shops , supermarkets , launderettes , restaurants , cafés and other facilities on most British military bases and also canteens on board Royal Navy ships .
+
+
+Treebanked sentence:
+--------------------
+It runs clubs , bars , shops , supermarkets , launderettes , restaurants , cafés and other facilities on most British military bases and also canteens on board Royal Navy ships . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ runs)
+      (NP
+        (NP
+          (NP (NNS clubs) (, ,) (NNS bars) (, ,) (NNS shops) (, ,) (NNS supermarkets) (, ,) (NNS launderettes) (, ,) (NNS restaurants) (, ,) (NNS cafés)
+            (CC and)
+            (JJ other) (NNS facilities))
+          (PP (IN on)
+            (NP (JJS most) (JJ British) (JJ military) (NNS bases))))
+        (CC and)
+        (NP
+          (ADVP (RB also))
+          (NP (NNS canteens))
+          (PP (IN on)
+            (NP (NN board)
+              (NML (NNP Royal) (NNP Navy))
+              (NNS ships))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	runs
+			sense:	operate.v.01
+			prop:	run.01
+			V		1-1	runs 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-17	clubs , bars , shops , supermarkets , launderettes , restaurants , cafés and other facilities 
+			N-ARGM-LOC		18-22	on most British military bases 
+	2	clubs
+			sense:	clubhouse.n.01
+	3	,
+	4	bars
+			sense:	barroom.n.01
+	5	,
+	6	shops
+			sense:	shop.n.01
+	7	,
+	8	supermarkets
+			sense:	supermarket.n.01
+	9	,
+	10	launderettes
+			sense:	launderette.n.01
+	11	,
+	12	restaurants
+			sense:	restaurant.n.01
+	13	,
+	14	cafés
+	15	and
+	16	other
+			sense:	other.a.01
+	17	facilities
+			sense:	facility.n.01
+	18	on
+	19	most
+			sense:	most.a.01
+	20	British
+			name:	NATIONALITY				20-20	British 
+	21	military
+			sense:	military.a.02
+	22	bases
+			sense:	footing.n.02
+	23	and
+	24	also
+			sense:	besides.r.02
+	25	canteens
+			sense:	canteen.n.04
+	26	on
+	27	board
+			sense:	board.n.03
+	28	Royal
+			coref:	IDENT			0	28-29	Royal Navy 
+			name:	ORGANIZATION				28-29	Royal Navy 
+	29	Navy
+	30	ships
+			sense:	ship.n.01
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Commissioned officers are not usually supposed to use the NAAFI clubs and bars , since their messes provide these facilities and their entry , except on official business , is considered to be an intrusion into junior ranks ' private lives .
+
+
+Treebanked sentence:
+--------------------
+Commissioned officers are not usually supposed to use the NAAFI clubs and bars , since their messes provide these facilities and their entry , except on official business , is considered to be an intrusion into junior ranks ' private lives . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (VBN Commissioned) (NNS officers))
+    (VP (VBP are) (RB not)
+      (ADVP (RB usually))
+      (VP (VBN supposed)
+        (S
+          (VP (TO to)
+            (VP (VB use)
+              (NP (DT the) (NNP NAAFI) (NNS clubs)
+                (CC and)
+                (NNS bars)))))
+        (, ,)
+        (SBAR (IN since)
+          (S
+            (NP (PRP$ their) (NNS messes))
+            (VP (VBP provide)
+              (SBAR
+                (S
+                  (NP
+                    (NP (DT these) (NNS facilities))
+                    (CC and)
+                    (NP (PRP$ their) (NN entry)))
+                  (, ,)
+                  (PP (IN except)
+                    (PP (IN on)
+                      (NP (JJ official) (NN business))))
+                  (, ,)
+                  (VP (VBZ is)
+                    (VP (VBN considered)
+                      (S
+                        (VP (TO to)
+                          (VP (VB be)
+                            (NP
+                              (NP (DT an) (NN intrusion))
+                              (PP (IN into)
+                                (NP
+                                  (NP (JJ junior) (NNS ranks) (POS '))
+                                  (JJ private) (NNS lives))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Commissioned
+			coref:	IDENT			2	0-1	Commissioned officers 
+			sense:	commission.v.01
+			prop:	commission.01
+			V		0-0	Commissioned 
+			N-ARG-A2		1-1	officers 
+	1	officers
+			sense:	military_officer.n.01
+	2	are
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	are 
+	3	not
+			sense:	not.r.01
+	4	usually
+			sense:	normally.r.01
+	5	supposed
+			sense:	think.v.02
+			prop:	suppose.02
+			V		5-5	supposed 
+			N-ARG-A1		0-1	Commissioned officers 
+			N-ARGM-NEG		3-3	not 
+			N-ARGM-ADV		4-4	usually 
+			N-ARG-A2		6-12	to use the NAAFI clubs and bars 
+			N-ARGM-CAU		14-40	since their messes provide these facilities and their entry , except on official business , is considered to be an intrusion into junior ranks ' private lives 
+	6	to
+	7	use
+			sense:	use.v.01
+			prop:	use.01
+			V		7-7	use 
+			N-ARG-A0		0-1	Commissioned officers 
+			N-ARG-A1		8-12	the NAAFI clubs and bars 
+	8	the
+	9	NAAFI
+			coref:	IDENT			3	9-9	NAAFI 
+			name:	ORGANIZATION				9-9	NAAFI 
+	10	clubs
+			sense:	clubhouse.n.01
+	11	and
+	12	bars
+			sense:	barroom.n.01
+	13	,
+	14	since
+	15	their
+			coref:	IDENT			2	15-15	their 
+	16	messes
+			sense:	mess.n.05
+	17	provide
+			sense:	supply.v.01
+			prop:	provide.01
+			V		17-17	provide 
+			N-ARG-A0		15-16	their messes 
+			N-ARG-A1		18-19	these facilities 
+	18	these
+	19	facilities
+			sense:	facility.n.01
+	20	and
+	21	their
+			coref:	IDENT			2	21-21	their 
+	22	entry
+			sense:	entrance.n.03
+	23	,
+	24	except
+	25	on
+	26	official
+			sense:	official.a.01
+	27	business
+			sense:	business.n.05
+	28	,
+	29	is
+			sense:	be.v.01
+			prop:	be.03
+			V		29-29	is 
+	30	considered
+			sense:	see.v.05
+			prop:	consider.01
+			V		30-30	considered 
+			N-ARG-A1		31-40	to be an intrusion into junior ranks ' private lives 
+	31	to
+	32	be
+			sense:	be.v.01
+			prop:	be.01
+			V		32-32	be 
+			N-ARG-A1		21-27	their entry , except on official business 
+			N-ARG-A2		33-40	an intrusion into junior ranks ' private lives 
+	33	an
+	34	intrusion
+			sense:	trespass.n.02
+	35	into
+	36	junior
+			sense:	junior.a.01
+	37	ranks
+			sense:	rank_and_file.n.01
+	38	'
+	39	private
+			sense:	private.a.01
+	40	lives
+			sense:	life.n.01
+	41	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+NAAFI personnel serving aboard ship are part of the Naval Canteen Service ( NCS ) , wear naval uniform and have action stations , but remain ordinary civilians .
+
+
+Treebanked sentence:
+--------------------
+NAAFI personnel serving aboard ship are part of the Naval Canteen Service ( NCS ) , wear naval uniform and have action stations , but remain ordinary civilians . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP NAAFI) (NNS personnel))
+      (VP (VBG serving)
+        (PP (IN aboard)
+          (NP (NN ship)))))
+    (VP
+      (VP (VBP are)
+        (NP
+          (NP (NN part))
+          (PP (IN of)
+            (NP (DT the) (NNP Naval) (NNP Canteen) (NNP Service))))
+        (PRN (-LRB- -LRB-)
+          (NP (NN NCS))
+          (-RRB- -RRB-)))
+      (, ,)
+      (VP (VBP wear)
+        (NP (JJ naval) (NN uniform)))
+      (CC and)
+      (VP
+        (VP (VBP have)
+          (NP (NN action) (NNS stations)))
+        (, ,)
+        (CC but)
+        (VP (VBP remain)
+          (NP (JJ ordinary) (NNS civilians)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	NAAFI
+			coref:	IDENT			3	0-0	NAAFI 
+			name:	ORGANIZATION				0-0	NAAFI 
+	1	personnel
+			sense:	force.n.04
+	2	serving
+			sense:	serve.v.02
+			prop:	serve.01
+			V		2-2	serving 
+			N-ARG-A0		0-1	NAAFI personnel 
+			N-ARGM-LOC		3-4	aboard ship 
+	3	aboard
+	4	ship
+			sense:	ship.n.01
+	5	are
+			sense:	be.v.01
+			prop:	be.01
+			V		5-5	are 
+			N-ARG-A1		0-4	NAAFI personnel serving aboard ship 
+			N-ARG-A2		6-14	part of the Naval Canteen Service ( NCS ) 
+	6	part
+			sense:	part.n.01
+	7	of
+	8	the
+	9	Naval
+			name:	ORGANIZATION				9-11	Naval Canteen Service 
+	10	Canteen
+	11	Service
+	12	(
+	13	NCS
+			coref:	IDENT			1	13-13	NCS 
+			name:	ORGANIZATION				13-13	NCS 
+	14	)
+	15	,
+	16	wear
+			sense:	wear.v.01
+			prop:	wear.01
+			V		16-16	wear 
+			N-ARG-A0		0-4	NAAFI personnel serving aboard ship 
+			N-ARG-A1		17-18	naval uniform 
+	17	naval
+			sense:	naval.a.01
+	18	uniform
+			sense:	uniform.n.01
+	19	and
+	20	have
+			sense:	have.v.01
+			prop:	have.03
+			V		20-20	have 
+			N-ARG-A0		0-4	NAAFI personnel serving aboard ship 
+			N-ARG-A1		21-22	action stations 
+	21	action
+			sense:	military_action.n.01
+	22	stations
+			sense:	post.n.01
+	23	,
+	24	but
+	25	remain
+			sense:	stay.v.01
+			prop:	remain.01
+			V		25-25	remain 
+			N-ARG-A1		0-4	NAAFI personnel serving aboard ship 
+			N-ARG-A3		26-27	ordinary civilians 
+	26	ordinary
+			sense:	average.s.02
+	27	civilians
+			sense:	civilian.n.01
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+NAAFI personnel can also join the Expeditionary Force Institutes ( EFI ) , which provides NAAFI facilities in war zones .
+
+
+Treebanked sentence:
+--------------------
+NAAFI personnel can also join the Expeditionary Force Institutes ( EFI ) , which provides NAAFI facilities in war zones . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP NAAFI) (NNS personnel))
+    (VP (MD can)
+      (ADVP (RB also))
+      (VP (VB join)
+        (NP
+          (NP (DT the) (NNP Expeditionary) (NNP Force) (NNP Institutes)
+            (PRN (-LRB- -LRB-)
+              (NP (NNP EFI))
+              (-RRB- -RRB-)))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBZ provides)
+                (NP
+                  (NP (NNP NAAFI) (NNS facilities))
+                  (PP (IN in)
+                    (NP (NN war) (NNS zones))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	NAAFI
+			coref:	IDENT			3	0-0	NAAFI 
+			name:	ORGANIZATION				0-0	NAAFI 
+	1	personnel
+			sense:	force.n.04
+	2	can
+	3	also
+			sense:	besides.r.02
+	4	join
+			sense:	join.v.01
+			prop:	join.01
+			V		4-4	join 
+			N-ARG-A0		0-1	NAAFI personnel 
+			N-ARGM-MOD		2-2	can 
+			N-ARGM-DIS		3-3	also 
+			N-ARG-A1		5-19	the Expeditionary Force Institutes ( EFI ) , which provides NAAFI facilities in war zones 
+	5	the
+			coref:	IDENT			3	5-19	the Expeditionary Force Institutes ( EFI ) , which provides NAAFI facilities in war zones 
+	6	Expeditionary
+			name:	ORGANIZATION				6-8	Expeditionary Force Institutes 
+	7	Force
+	8	Institutes
+	9	(
+	10	EFI
+			name:	ORGANIZATION				10-10	EFI 
+	11	)
+	12	,
+	13	which
+	14	provides
+			sense:	supply.v.01
+			prop:	provide.01
+			V		14-14	provides 
+			N-ARG-A0		5-11	the Expeditionary Force Institutes ( EFI ) 
+			R-ARG-A0		13-13	which 
+			N-ARG-A1		15-16	NAAFI facilities 
+			N-ARGM-LOC		17-19	in war zones 
+	15	NAAFI
+			coref:	IDENT			3	15-15	NAAFI 
+			name:	ORGANIZATION				15-15	NAAFI 
+	16	facilities
+			sense:	facility.n.01
+	17	in
+	18	war
+			name:	CAUSE_OF_DEATH				18-18	war 
+			sense:	war.n.01
+	19	zones
+			sense:	zone.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+EFI personnel are members of the Territorial Army serving on special engagements , bear ranks and wear uniform .
+
+
+Treebanked sentence:
+--------------------
+EFI personnel are members of the Territorial Army serving on special engagements , bear ranks and wear uniform . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP EFI) (NNS personnel))
+    (VP
+      (VP (VBP are)
+        (ADVP (NNS members)
+          (PP (IN of)
+            (NP (DT the) (NNP Territorial) (NNP Army))))
+        (VP (VBG serving)
+          (PP (IN on)
+            (NP (JJ special) (NNS engagements)))))
+      (, ,)
+      (VP (VBP bear)
+        (NP (NNS ranks)))
+      (CC and)
+      (VP (VB wear)
+        (NP (NN uniform))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	EFI
+			name:	ORGANIZATION				0-0	EFI 
+	1	personnel
+			sense:	force.n.04
+	2	are
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	are 
+			N-ARG-A1		0-1	EFI personnel 
+			N-ARG-A2		3-11	members of the Territorial Army serving on special engagements 
+	3	members
+			sense:	member.n.01
+	4	of
+	5	the
+	6	Territorial
+			name:	ORGANIZATION				6-7	Territorial Army 
+	7	Army
+	8	serving
+			sense:	serve.v.02
+			prop:	serve.01
+			V		8-8	serving 
+			N-ARG-A0		3-7	members of the Territorial Army 
+			N-ARG-A1		9-11	on special engagements 
+	9	on
+	10	special
+			sense:	special.s.02
+	11	engagements
+			sense:	engagement.n.07
+	12	,
+	13	bear
+			sense:	bear.v.11
+			prop:	bear.01
+			V		13-13	bear 
+			N-ARG-A0		0-1	EFI personnel 
+			N-ARG-A1		14-14	ranks 
+	14	ranks
+			sense:	rank_and_file.n.01
+	15	and
+	16	wear
+			sense:	wear.v.01
+			prop:	wear.01
+			V		16-16	wear 
+			N-ARG-A0		0-1	EFI personnel 
+			N-ARG-A1		17-17	uniform 
+	17	uniform
+			sense:	uniform.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+NCS personnel can similarly volunteer to join the Royal Navy when it goes on active service .
+
+
+Treebanked sentence:
+--------------------
+NCS personnel can similarly volunteer to join the Royal Navy when it goes on active service . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN NCS) (NNS personnel))
+    (VP (MD can)
+      (ADVP (RB similarly))
+      (VP (VB volunteer)
+        (S
+          (VP (TO to)
+            (VP (VB join)
+              (NP (DT the) (NNP Royal) (NNP Navy))
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ goes)
+                    (PP (IN on)
+                      (NP (JJ active) (NN service)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	NCS
+			coref:	IDENT			1	0-0	NCS 
+			name:	ORGANIZATION				0-0	NCS 
+	1	personnel
+			sense:	force.n.04
+	2	can
+	3	similarly
+			sense:	similarly.r.01
+	4	volunteer
+			sense:	volunteer.v.02
+			prop:	volunteer.01
+			V		4-4	volunteer 
+			N-ARG-A0		0-1	NCS personnel 
+			N-ARGM-MOD		2-2	can 
+			N-ARGM-DIS		3-3	similarly 
+			N-ARG-A1		5-9	to join the Royal Navy 
+			N-ARGM-TMP		10-15	when it goes on active service 
+	5	to
+	6	join
+			sense:	join.v.01
+			prop:	join.01
+			V		6-6	join 
+			N-ARG-A0		0-1	NCS personnel 
+			N-ARG-A1		7-9	the Royal Navy 
+			N-ARGM-TMP		10-15	when it goes on active service 
+	7	the
+			coref:	IDENT			0	7-9	the Royal Navy 
+	8	Royal
+			name:	ORGANIZATION				8-9	Royal Navy 
+	9	Navy
+	10	when
+	11	it
+			coref:	IDENT			1	11-11	it 
+	12	goes
+			sense:	become.v.01
+			prop:	go.06
+			V		12-12	goes 
+			N-ARGM-TMP		10-10	when 
+			N-ARG-A1		11-11	it 
+			N-ARG-A2		13-15	on active service 
+	13	on
+	14	active
+			sense:	active.s.02
+	15	service
+			sense:	service.n.05
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Petty Officer John Leake , NCS canteen manager in HMS Ardent , was awarded the Distinguished Service Medal ( DSM ) in the 1982 Falklands War for his courage while manning a machine gun .
+
+
+Treebanked sentence:
+--------------------
+Petty Officer John Leake , NCS canteen manager in HMS Ardent , was awarded the Distinguished Service Medal ( DSM ) in the 1982 Falklands War for his courage while manning a machine gun . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Petty) (NNP Officer) (NNP John) (NNP Leake))
+      (, ,)
+      (NP
+        (NP (NNP NCS) (NN canteen) (NN manager))
+        (PP (IN in)
+          (NP (NNP HMS) (NNP Ardent))))
+      (, ,))
+    (VP (VBD was)
+      (VP (VBN awarded)
+        (NP (DT the) (NNP Distinguished)
+          (NML (NNP Service) (NNP Medal))
+          (PRN (-LRB- -LRB-)
+            (NP (NNP DSM))
+            (-RRB- -RRB-)))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (CD 1982) (NNPS Falklands) (NNP War))
+            (PP (IN for)
+              (NP (PRP$ his) (NN courage)))))
+        (PP (IN while)
+          (S
+            (VP (VBG manning)
+              (NP (DT a) (NN machine) (NN gun)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Petty
+			name:	TITLE				0-1	Petty Officer 
+	1	Officer
+	2	John
+			name:	PERSON				2-3	John Leake 
+	3	Leake
+	4	,
+	5	NCS
+			coref:	IDENT			1	5-5	NCS 
+			name:	ORGANIZATION				5-5	NCS 
+	6	canteen
+			sense:	canteen.n.02
+	7	manager
+			name:	TITLE				7-7	manager 
+			sense:	director.n.01
+	8	in
+	9	HMS
+	10	Ardent
+	11	,
+	12	was
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	was 
+	13	awarded
+			sense:	award.v.01
+			prop:	award.01
+			V		13-13	awarded 
+			N-ARG-A2		0-10	Petty Officer John Leake , NCS canteen manager in HMS Ardent 
+			N-ARG-A1		14-20	the Distinguished Service Medal ( DSM ) 
+			N-ARGM-TMP		21-25	in the 1982 Falklands War 
+			N-ARGM-CAU		26-33	for his courage while manning a machine gun 
+	14	the
+	15	Distinguished
+	16	Service
+	17	Medal
+	18	(
+	19	DSM
+			name:	ORGANIZATION				19-19	DSM 
+	20	)
+	21	in
+	22	the
+	23	1982
+			name:	DATE				23-23	1982 
+	24	Falklands
+			name:	MISC				24-24	Falklands 
+	25	War
+			name:	CAUSE_OF_DEATH				25-25	War 
+	26	for
+	27	his
+	28	courage
+			sense:	courage.n.01
+	29	while
+	30	manning
+			sense:	man.v.01
+			prop:	man.01
+			V		30-30	manning 
+			N-ARG-A0		0-10	Petty Officer John Leake , NCS canteen manager in HMS Ardent 
+			N-ARG-A1		31-33	a machine gun 
+	31	a
+	32	machine
+			sense:	machine.n.01
+	33	gun
+			sense:	gun.n.01
+	34	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				6.7-9	the Royal Navy 
+				1.28-29	Royal Navy 
+	Chain 1 (IDENT)
+				3.13-13	NCS 
+				6.0-0	NCS 
+				6.11-11	it 
+				7.5-5	NCS 
+	Chain 2 (IDENT)
+				2.0-1	Commissioned officers 
+				2.15-15	their 
+				2.21-21	their 
+	Chain 3 (IDENT)
+				4.5-19	the Expeditionary Force Institutes ( EFI ) , which provides NAAFI facilities in war zones 
+				0.9-9	NAAFI 
+				2.9-9	NAAFI 
+				3.0-0	NAAFI 
+				4.0-0	NAAFI 
+				4.15-15	NAAFI 
+

@@ -1,0 +1,532 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Shihlin Electric and Engineering Corporation is a company based in Taipei , Taiwan , which manufactures electrical and power transformers , switchgear , automation , controls and automotive electrical devices .
+
+
+Treebanked sentence:
+--------------------
+Shihlin Electric and Engineering Corporation is a company based in Taipei , Taiwan , which manufactures electrical and power transformers , switchgear , automation , controls and automotive electrical devices . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Shihlin) (NNP Electric))
+      (CC and)
+      (NP (NNP Engineering) (NNP Corporation)))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT a) (NN company))
+          (PP (VBN based)
+            (PP (IN in)
+              (NP (NNP Taipei)))))
+        (, ,)
+        (NP
+          (NP (NNP Taiwan))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBZ manufactures)
+                (ADJP (JJ electrical))))))
+        (CC and)
+        (NP
+          (NP (NN power) (NNS transformers))
+          (, ,)
+          (NP (NN switchgear))
+          (, ,)
+          (NP (NN automation))
+          (, ,)
+          (NP (NNS controls))
+          (CC and)
+          (NP (JJ automotive) (JJ electrical) (NNS devices)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Shihlin
+			name:	ORGANIZATION				0-4	Shihlin Electric and Engineering Corporation 
+	1	Electric
+	2	and
+	3	Engineering
+	4	Corporation
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	Shihlin Electric and Engineering Corporation 
+			N-ARG-A2		6-29	a company based in Taipei , Taiwan , which manufactures electrical and power transformers , switchgear , automation , controls and automotive electrical devices 
+	6	a
+	7	company
+			sense:	company.n.01
+	8	based
+			sense:	base.v.02
+			prop:	base.01
+			V		8-8	based 
+			N-ARG-A1		6-7	a company 
+			N-ARGM-LOC		9-12	in Taipei , Taiwan 
+	9	in
+	10	Taipei
+			name:	CITY				10-10	Taipei 
+	11	,
+	12	Taiwan
+			coref:	IDENT			0	12-12	Taiwan 
+			name:	COUNTRY				12-12	Taiwan 
+	13	,
+	14	which
+	15	manufactures
+			sense:	manufacture.v.04
+			prop:	manufacture.01
+			V		15-15	manufactures 
+			N-ARG-A0		6-12	a company based in Taipei , Taiwan 
+			R-ARG-A0		14-14	which 
+			N-ARG-A1		16-29	electrical and power transformers , switchgear , automation , controls and automotive electrical devices 
+	16	electrical
+			sense:	electric.a.01
+	17	and
+	18	power
+			sense:	power.n.02
+	19	transformers
+			sense:	transformer.n.01
+	20	,
+	21	switchgear
+	22	,
+	23	automation
+			sense:	automation.n.03
+	24	,
+	25	controls
+			sense:	control.n.09
+	26	and
+	27	automotive
+			sense:	automotive.a.01
+	28	electrical
+			sense:	electric.a.01
+	29	devices
+			sense:	device.n.01
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The technology for the manufacturing originally involved technology transfers from Mitsubishi Electric ( Japan ) and France Transfo , a Schneider Electric Company ( France ) .
+
+
+Treebanked sentence:
+--------------------
+The technology for the manufacturing originally involved technology transfers from Mitsubishi Electric ( Japan ) and France Transfo , a Schneider Electric Company ( France ) . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP
+      (NP (DT The) (NN technology))
+      (PP (IN for)
+        (NP (DT the) (NN manufacturing))))
+    (NP
+      (NP
+        (ADJP (RB originally) (JJ involved))
+        (NN technology) (NNS transfers))
+      (PP (IN from)
+        (NP (NNP Mitsubishi) (NNP Electric) (-LRB- -LRB-) (NNP Japan) (-RRB- -RRB-))))
+    (CC and)
+    (NP
+      (NP (NNP France) (NNP Transfo))
+      (, ,)
+      (NP (DT a) (NNP Schneider) (NNP Electric) (NNP Company)
+        (PRN (-LRB- -LRB-)
+          (NP (NNP France))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	technology
+			sense:	technology.n.01
+	2	for
+	3	the
+	4	manufacturing
+			sense:	fabrication.n.03
+	5	originally
+			sense:	primitively.r.01
+	6	involved
+			sense:	involved.a.01
+	7	technology
+			sense:	technology.n.01
+	8	transfers
+			sense:	transfer.n.05
+	9	from
+	10	Mitsubishi
+			name:	ORGANIZATION				10-11	Mitsubishi Electric 
+	11	Electric
+	12	(
+	13	Japan
+			name:	COUNTRY				13-13	Japan 
+	14	)
+	15	and
+	16	France
+			coref:	IDENT			1	16-16	France 
+			name:	COUNTRY				16-16	France 
+	17	Transfo
+	18	,
+	19	a
+	20	Schneider
+			name:	ORGANIZATION				20-22	Schneider Electric Company 
+	21	Electric
+	22	Company
+	23	(
+	24	France
+			coref:	IDENT			1	24-24	France 
+			name:	COUNTRY				24-24	France 
+	25	)
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Shihlin Electric was founded in 1955 .
+
+
+Treebanked sentence:
+--------------------
+Shihlin Electric was founded in 1955 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Shihlin) (NNP Electric))
+    (VP (VBD was)
+      (VP (VBN founded)
+        (PP (IN in)
+          (NP (CD 1955)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Shihlin
+			name:	ORGANIZATION				0-1	Shihlin Electric 
+	1	Electric
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		3-3	founded 
+			N-ARG-A1		0-1	Shihlin Electric 
+			N-ARGM-TMP		4-5	in 1955 
+	4	in
+	5	1955
+			name:	DATE				5-5	1955 
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The company is listed on the Taiwan Stock Exchange ( TSE 1503 ) , and Mitsubishi Electric ( Japan ) is a 20 % share holder .
+
+
+Treebanked sentence:
+--------------------
+The company is listed on the Taiwan Stock Exchange ( TSE 1503 ) , and Mitsubishi Electric ( Japan ) is a 20 % share holder . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN company))
+      (VP (VBZ is)
+        (VP (VBN listed)
+          (PP (IN on)
+            (NP (DT the) (NNP Taiwan) (NNP Stock) (NNP Exchange)))
+          (PRN (-LRB- -LRB-)
+            (NP (NNP TSE) (CD 1503))
+            (-RRB- -RRB-)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (NNP Mitsubishi) (NNP Electric))
+        (-LRB- -LRB-)
+        (NP (NNP Japan))
+        (-RRB- -RRB-))
+      (VP (VBZ is)
+        (NP (DT a)
+          (NML (CD 20) (NN %))
+          (NN share) (NN holder))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	company
+			sense:	company.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	listed
+			sense:	list.v.02
+			prop:	list.01
+			V		3-3	listed 
+			N-ARG-A1		0-1	The company 
+			N-ARG-A2		4-12	on the Taiwan Stock Exchange ( TSE 1503 ) 
+	4	on
+	5	the
+	6	Taiwan
+			name:	ORGANIZATION				6-8	Taiwan Stock Exchange 
+	7	Stock
+	8	Exchange
+	9	(
+	10	TSE
+	11	1503
+			name:	DATE				11-11	1503 
+	12	)
+	13	,
+	14	and
+	15	Mitsubishi
+			name:	ORGANIZATION				15-16	Mitsubishi Electric 
+	16	Electric
+	17	(
+	18	Japan
+			name:	COUNTRY				18-18	Japan 
+	19	)
+	20	is
+			sense:	be.v.01
+			prop:	be.01
+			V		20-20	is 
+			N-ARG-A1		15-19	Mitsubishi Electric ( Japan ) 
+			N-ARG-A2		21-25	a 20 % share holder 
+	21	a
+	22	20
+			name:	PERCENT				22-23	20 % 
+	23	%
+	24	share
+			sense:	share.n.02
+	25	holder
+			sense:	holder.n.03
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Shihlin Electric , in Q1 2009 , lists 15 sales subsidiaries and over 100 distribution partners worldwide .
+
+
+Treebanked sentence:
+--------------------
+Shihlin Electric , in Q1 2009 , lists 15 sales subsidiaries and over 100 distribution partners worldwide . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP (NNP Shihlin) (NNP Electric))
+    (, ,)
+    (PP
+      (PP (IN in)
+        (NP
+          (NP (NN Q1) (CD 2009))
+          (, ,)
+          (NP
+            (NP (NNS lists))
+            (NP (CD 15) (NNS sales) (NNS subsidiaries)))))
+      (CC and)
+      (PP (IN over)
+        (NP
+          (NML (CD 100) (NN distribution))
+          (NNS partners))))
+    (ADVP (RB worldwide))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Shihlin
+			name:	ORGANIZATION				0-1	Shihlin Electric 
+	1	Electric
+	2	,
+	3	in
+	4	Q1
+			name:	DATE				4-5	Q1 2009 
+	5	2009
+	6	,
+	7	lists
+			sense:	list.n.01
+	8	15
+			name:	NUMBER				8-8	15 
+	9	sales
+			sense:	sale.n.02
+	10	subsidiaries
+			sense:	subsidiary_company.n.01
+	11	and
+	12	over
+	13	100
+			name:	NUMBER				13-13	100 
+	14	distribution
+			sense:	distribution.n.04
+	15	partners
+			sense:	collaborator.n.03
+	16	worldwide
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Additionally , Shihlin Electric operates manufacturing factories in Taiwan ( 3 in Hsinchu ) , Mainland China ( 10 in Xiamen , Suzhou , Wuxi , Changzhou , Fuzhou and Wuhan ) and Vietnam ( 1 in Southern Vietnam ) .
+
+
+Treebanked sentence:
+--------------------
+Additionally , Shihlin Electric operates manufacturing factories in Taiwan ( 3 in Hsinchu ) , Mainland China ( 10 in Xiamen , Suzhou , Wuxi , Changzhou , Fuzhou and Wuhan ) and Vietnam ( 1 in Southern Vietnam ) . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (S
+      (ADVP (RB Additionally))
+      (, ,)
+      (NP (NNP Shihlin) (NNP Electric))
+      (VP (VBZ operates)
+        (NP
+          (NP (VBG manufacturing) (NNS factories))
+          (PP (IN in)
+            (NP (NNP Taiwan))))))
+    (FRAG
+      (FRAG (-LRB- -LRB-)
+        (NP (CD 3))
+        (PP (IN in)
+          (NP (NNP Hsinchu)))
+        (-RRB- -RRB-))
+      (, ,)
+      (FRAG
+        (NP (NNP Mainland) (NNP China))
+        (-LRB- -LRB-)
+        (NP
+          (NP (CD 10))
+          (PP (IN in)
+            (NP (NNP Xiamen) (, ,) (NNP Suzhou) (, ,) (NNP Wuxi) (, ,) (NNP Changzhou) (, ,) (NNP Fuzhou)
+              (CC and)
+              (NNP Wuhan))))
+        (-RRB- -RRB-))
+      (CC and)
+      (FRAG
+        (NP (NNP Vietnam))
+        (-LRB- -LRB-)
+        (NP
+          (NP (CD 1))
+          (PP (IN in)
+            (NP (NNP Southern) (NNP Vietnam))))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Additionally
+			sense:	additionally.r.01
+	1	,
+	2	Shihlin
+			name:	ORGANIZATION				2-3	Shihlin Electric 
+	3	Electric
+	4	operates
+			sense:	operate.v.01
+			prop:	operate.01
+			V		4-4	operates 
+			N-ARGM-DIS		0-0	Additionally 
+			N-ARG-A0		2-3	Shihlin Electric 
+			N-ARG-A1		5-6	manufacturing factories 
+			N-ARGM-LOC		7-39	in Taiwan ( 3 in Hsinchu ) , Mainland China ( 10 in Xiamen , Suzhou , Wuxi , Changzhou , Fuzhou and Wuhan ) and Vietnam ( 1 in Southern Vietnam ) 
+	5	manufacturing
+			sense:	manufacture.v.04
+			prop:	manufacture.01
+			V		5-5	manufacturing 
+			N-ARG-A0		6-6	factories 
+	6	factories
+			sense:	factory.n.01
+	7	in
+	8	Taiwan
+			coref:	IDENT			0	8-8	Taiwan 
+			name:	COUNTRY				8-8	Taiwan 
+	9	(
+	10	3
+			name:	NUMBER				10-10	3 
+	11	in
+	12	Hsinchu
+			name:	CITY				12-12	Hsinchu 
+	13	)
+	14	,
+	15	Mainland
+			name:	LOCATION				15-15	Mainland 
+	16	China
+			name:	COUNTRY				16-16	China 
+	17	(
+	18	10
+			name:	NUMBER				18-18	10 
+	19	in
+	20	Xiamen
+			name:	CITY				20-20	Xiamen 
+	21	,
+	22	Suzhou
+			name:	CITY				22-22	Suzhou 
+	23	,
+	24	Wuxi
+			name:	CITY				24-24	Wuxi 
+	25	,
+	26	Changzhou
+			name:	CITY				26-26	Changzhou 
+	27	,
+	28	Fuzhou
+			name:	CITY				28-28	Fuzhou 
+	29	and
+	30	Wuhan
+			name:	CITY				30-30	Wuhan 
+	31	)
+	32	and
+	33	Vietnam
+			name:	COUNTRY				33-33	Vietnam 
+	34	(
+	35	1
+			name:	NUMBER				35-35	1 
+	36	in
+	37	Southern
+	38	Vietnam
+			name:	COUNTRY				38-38	Vietnam 
+	39	)
+	40	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.12-12	Taiwan 
+				5.8-8	Taiwan 
+	Chain 1 (IDENT)
+				1.16-16	France 
+				1.24-24	France 
+

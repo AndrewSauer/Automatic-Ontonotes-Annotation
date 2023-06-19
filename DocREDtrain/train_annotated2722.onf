@@ -1,0 +1,469 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+L'ultimo giorno di Pompei ( " The last day of Pompeii " ) is an opera ( dramma per musica ) in two acts composed by Giovanni Pacini to an Italian libretto by Andrea Leone Tottola .
+
+
+Treebanked sentence:
+--------------------
+L'ultimo giorno di Pompei ( " The last day of Pompeii " ) is an opera ( dramma per musica ) in two acts composed by Giovanni Pacini to an Italian libretto by Andrea Leone Tottola . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NN L'ultimo) (NN giorno) (NN di) (NNP Pompei))
+      (-LRB- -LRB-)
+      (NP (`` ")
+        (NP (DT The) (JJ last) (NN day))
+        (PP (IN of)
+          (NP (NNP Pompeii)))
+        ('' "))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT an) (NN opera))
+          (-LRB- -LRB-)
+          (NP
+            (NP (NN dramma))
+            (PP (IN per)
+              (NP (NN musica))))
+          (-RRB- -RRB-))
+        (PP (IN in)
+          (NP
+            (NP (CD two) (NNS acts))
+            (VP (VBN composed)
+              (PP (IN by)
+                (NP (NNP Giovanni) (NNP Pacini)))
+              (PP (IN to)
+                (NP (DT an) (JJ Italian) (NN libretto)))
+              (PP (IN by)
+                (NP (NNP Andrea) (NNP Leone) (NNP Tottola))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	L'ultimo
+			coref:	IDENT			1	0-3	L'ultimo giorno di Pompei 
+	1	giorno
+	2	di
+	3	Pompei
+			name:	PERSON				3-3	Pompei 
+	4	(
+	5	"
+	6	The
+			name:	DATE				6-8	The last day 
+	7	last
+			sense:	last.a.02
+	8	day
+			sense:	day.n.01
+	9	of
+	10	Pompeii
+			coref:	IDENT			3	10-10	Pompeii 
+			name:	LOCATION				10-10	Pompeii 
+	11	"
+	12	)
+	13	is
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	is 
+			N-ARG-A1		0-12	L'ultimo giorno di Pompei ( " The last day of Pompeii " ) 
+			N-ARG-A2		14-35	an opera ( dramma per musica ) in two acts composed by Giovanni Pacini to an Italian libretto by Andrea Leone Tottola 
+	14	an
+	15	opera
+			sense:	opera.n.01
+	16	(
+	17	dramma
+	18	per
+	19	musica
+	20	)
+	21	in
+	22	two
+			name:	NUMBER				22-22	two 
+	23	acts
+			sense:	act.n.03
+	24	composed
+			sense:	compose.v.02
+			prop:	compose.02
+			V		24-24	composed 
+			N-ARG-A1		14-23	an opera ( dramma per musica ) in two acts 
+			N-ARG-A0		25-27	by Giovanni Pacini 
+			N-ARGM-ADV		28-35	to an Italian libretto by Andrea Leone Tottola 
+	25	by
+	26	Giovanni
+			coref:	IDENT			2	26-27	Giovanni Pacini 
+			name:	PERSON				26-27	Giovanni Pacini 
+	27	Pacini
+	28	to
+	29	an
+	30	Italian
+			name:	NATIONALITY				30-30	Italian 
+	31	libretto
+			sense:	libretto.n.01
+	32	by
+	33	Andrea
+			name:	PERSON				33-35	Andrea Leone Tottola 
+	34	Leone
+	35	Tottola
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It premiered to great success at the Teatro San Carlo in Naples on 19 November 1825 followed by productions in the major opera houses of Italy , Austria , France , and Portugal .
+
+
+Treebanked sentence:
+--------------------
+It premiered to great success at the Teatro San Carlo in Naples on 19 November 1825 followed by productions in the major opera houses of Italy , Austria , France , and Portugal . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD premiered)
+      (PP (IN to)
+        (NP
+          (NP (JJ great) (NN success))
+          (PP (IN at)
+            (NP (DT the) (NNP Teatro) (NNP San) (NNP Carlo)))))
+      (PP (IN in)
+        (NP
+          (NP (NNP Naples))
+          (PP (IN on)
+            (NP (CD 19)))))
+      (NP-TMP (NNP November) (CD 1825))
+      (PP (VBN followed)
+        (PP (IN by)
+          (NP
+            (NP (NNS productions))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (JJ major) (NN opera) (NNS houses))
+                (PP (IN of)
+                  (NP (NNP Italy) (, ,) (NNP Austria) (, ,) (NNP France) (, ,)
+                    (CC and)
+                    (NNP Portugal)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	premiered
+			sense:	premier.v.01
+			prop:	premiere.01
+			V		1-1	premiered 
+			N-ARG-A1		0-0	It 
+			N-ARGM-MNR		2-4	to great success 
+			N-ARGM-LOC		5-11	at the Teatro San Carlo in Naples 
+			N-ARGM-TMP		12-15	on 19 November 1825 
+			N-ARGM-ADV		16-32	followed by productions in the major opera houses of Italy , Austria , France , and Portugal 
+	2	to
+	3	great
+			sense:	great.s.01
+	4	success
+			sense:	success.n.03
+	5	at
+	6	the
+	7	Teatro
+			name:	LOCATION				7-7	Teatro 
+	8	San
+			name:	CITY				8-8	San 
+	9	Carlo
+			name:	LOCATION				9-9	Carlo 
+	10	in
+	11	Naples
+			name:	CITY				11-11	Naples 
+	12	on
+	13	19
+			name:	DATE				13-15	19 November 1825 
+	14	November
+	15	1825
+	16	followed
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		16-16	followed 
+			N-ARG-A1		17-32	by productions in the major opera houses of Italy , Austria , France , and Portugal 
+	17	by
+	18	productions
+			sense:	production.n.02
+	19	in
+	20	the
+	21	major
+			sense:	major.a.01
+	22	opera
+			sense:	opera.n.03
+	23	houses
+			sense:	theater.n.01
+	24	of
+	25	Italy
+			name:	COUNTRY				25-25	Italy 
+	26	,
+	27	Austria
+			name:	COUNTRY				27-27	Austria 
+	28	,
+	29	France
+			name:	COUNTRY				29-29	France 
+	30	,
+	31	and
+	32	Portugal
+			name:	COUNTRY				32-32	Portugal 
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+When Pacini 's popularity declined in the mid-19th century , the opera was all but forgotten until 1996 when it received its first performance in modern times at the Festival della Valle d'Itria in Martina Franca .
+
+
+Treebanked sentence:
+--------------------
+When Pacini 's popularity declined in the mid-19th century , the opera was all but forgotten until 1996 when it received its first performance in modern times at the Festival della Valle d'Itria in Martina Franca . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP
+          (NP (NNP Pacini) (POS 's))
+          (NN popularity))
+        (VP (VBD declined)
+          (PP (IN in)
+            (NP (DT the) (JJ mid-19th) (NN century))))))
+    (, ,)
+    (NP (DT the) (NN opera))
+    (VP (VBD was)
+      (ADVP (DT all)
+        (CC but))
+      (VP (VBN forgotten)
+        (PP (IN until)
+          (NP (CD 1996)))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP it))
+            (VP (VBD received)
+              (NP (PRP$ its) (JJ first) (NN performance))
+              (PP (IN in)
+                (NP
+                  (NP (JJ modern) (NNS times))
+                  (PP (IN at)
+                    (NP (DT the) (NNP Festival) (NN della) (NNP Valle) (NNP d'Itria)))))
+              (PP (IN in)
+                (NP (NNP Martina) (NNP Franca))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	When
+	1	Pacini
+			coref:	IDENT			2	1-2	Pacini 's 
+			name:	PERSON				1-1	Pacini 
+	2	's
+	3	popularity
+			sense:	popularity.n.01
+	4	declined
+			sense:	worsen.v.01
+			prop:	decline.01
+			V		4-4	declined 
+			N-ARGM-TMP		0-0	When 
+			N-ARG-A1		1-3	Pacini 's popularity 
+			N-ARGM-TMP		5-8	in the mid-19th century 
+	5	in
+	6	the
+			name:	DATE				6-8	the mid-19th century 
+	7	mid-19th
+	8	century
+			sense:	century.n.01
+	9	,
+	10	the
+			coref:	IDENT			0	10-11	the opera 
+	11	opera
+			sense:	opera.n.01
+	12	was
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	was 
+	13	all
+	14	but
+	15	forgotten
+			sense:	forget.v.01
+			prop:	forget.01
+			V		15-15	forgotten 
+			N-ARGM-TMP		0-8	When Pacini 's popularity declined in the mid-19th century 
+			N-ARG-A1		10-11	the opera 
+			N-ARGM-ADV		13-14	all but 
+			N-ARGM-TMP		16-35	until 1996 when it received its first performance in modern times at the Festival della Valle d'Itria in Martina Franca 
+	16	until
+	17	1996
+			name:	DATE				17-17	1996 
+	18	when
+	19	it
+			coref:	IDENT			0	19-19	it 
+	20	received
+			sense:	receive.v.02
+			prop:	receive.01
+			V		20-20	received 
+			N-ARGM-TMP		17-17	1996 
+			R-ARGM-TMP		18-18	when 
+			N-ARG-A0		19-19	it 
+			N-ARG-A1		21-26	its first performance in modern times 
+			N-ARGM-LOC		27-35	at the Festival della Valle d'Itria in Martina Franca 
+	21	its
+			coref:	IDENT			0	21-21	its 
+	22	first
+			name:	ORDINAL				22-22	first 
+			sense:	first.a.01
+	23	performance
+			sense:	performance.n.01
+	24	in
+	25	modern
+			sense:	modern.a.01
+	26	times
+			sense:	time.n.03
+	27	at
+	28	the
+	29	Festival
+	30	della
+	31	Valle
+	32	d'Itria
+	33	in
+	34	Martina
+			name:	CITY				34-35	Martina Franca 
+	35	Franca
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+L'ultimo giorno di Pompei influenced either directly or indirectly several other 19th - century works , most notably Karl Bryullov 's 1833 painting , The Last Day of Pompeii .
+
+
+Treebanked sentence:
+--------------------
+L'ultimo giorno di Pompei influenced either directly or indirectly several other 19th - century works , most notably Karl Bryullov 's 1833 painting , The Last Day of Pompeii . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NN L'ultimo) (NN giorno) (NN di))
+      (NP (NNP Pompei)))
+    (VP (VBD influenced)
+      (ADVP (CC either)
+        (RB directly)
+        (CC or)
+        (RB indirectly))
+      (NP
+        (NP (JJ several) (JJ other)
+          (NML (JJ 19th) (HYPH -) (NN century))
+          (NNS works))
+        (, ,)
+        (NP
+          (ADVP (RBS most) (RB notably))
+          (NP
+            (NP (NNP Karl) (NNP Bryullov) (POS 's))
+            (CD 1833) (NN painting))
+          (, ,)
+          (NP
+            (NP (DT The) (JJ Last) (NN Day))
+            (PP (IN of)
+              (NP (NNP Pompeii)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	L'ultimo
+	1	giorno
+	2	di
+	3	Pompei
+			coref:	IDENT			1	3-3	Pompei 
+			name:	PERSON				3-3	Pompei 
+	4	influenced
+			sense:	determine.v.02
+			prop:	influence.01
+			V		4-4	influenced 
+			N-ARG-A0		0-3	L'ultimo giorno di Pompei 
+			N-ARGM-MNR		5-8	either directly or indirectly 
+			N-ARG-A1		9-28	several other 19th - century works , most notably Karl Bryullov 's 1833 painting , The Last Day of Pompeii 
+	5	either
+	6	directly
+			sense:	directly.r.02
+	7	or
+	8	indirectly
+			sense:	indirectly.r.01
+	9	several
+			sense:	several.s.01
+	10	other
+			sense:	other.a.01
+	11	19th
+			name:	DATE				11-13	19th - century 
+			sense:	nineteenth.s.01
+	12	-
+	13	century
+			sense:	century.n.01
+	14	works
+			sense:	work.n.02
+	15	,
+	16	most
+			sense:	most.r.01
+	17	notably
+			sense:	notably.r.01
+	18	Karl
+			name:	PERSON				18-19	Karl Bryullov 
+	19	Bryullov
+	20	's
+	21	1833
+			name:	DATE				21-21	1833 
+	22	painting
+			sense:	painting.n.01
+	23	,
+	24	The
+			name:	DATE				24-26	The Last Day 
+	25	Last
+			sense:	last.a.02
+	26	Day
+			sense:	day.n.01
+	27	of
+	28	Pompeii
+			coref:	IDENT			3	28-28	Pompeii 
+			name:	LOCATION				28-28	Pompeii 
+	29	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.10-11	the opera 
+				2.19-19	it 
+				2.21-21	its 
+	Chain 1 (IDENT)
+				0.0-3	L'ultimo giorno di Pompei 
+				3.3-3	Pompei 
+	Chain 2 (IDENT)
+				0.26-27	Giovanni Pacini 
+				2.1-2	Pacini 's 
+	Chain 3 (IDENT)
+				0.10-10	Pompeii 
+				3.28-28	Pompeii 
+

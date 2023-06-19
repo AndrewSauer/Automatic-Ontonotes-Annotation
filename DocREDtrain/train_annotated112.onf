@@ -1,0 +1,752 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+José María Mijares ( born 1921 in Havana , Cuba ) is a Cuban contemporary visual artist .
+
+
+Treebanked sentence:
+--------------------
+José María Mijares ( born 1921 in Havana , Cuba ) is a Cuban contemporary visual artist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP José) (NNP María) (NNP Mijares))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 1921))
+        (PP (IN in)
+          (NP (NNP Havana) (, ,) (NNP Cuba))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (JJ Cuban) (JJ contemporary) (JJ visual) (NN artist)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	José
+			name:	PERSON				0-2	José María Mijares 
+	1	María
+	2	Mijares
+	3	(
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-2	José María Mijares 
+			N-ARGM-TMP		5-5	1921 
+			N-ARGM-LOC		6-9	in Havana , Cuba 
+	5	1921
+			name:	DATE				5-5	1921 
+	6	in
+	7	Havana
+			name:	LOCATION				7-7	Havana 
+	8	,
+	9	Cuba
+			coref:	IDENT			0	9-9	Cuba 
+			name:	COUNTRY				9-9	Cuba 
+	10	)
+	11	is
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	is 
+			N-ARG-A1		0-10	José María Mijares ( born 1921 in Havana , Cuba ) 
+			N-ARG-A2		12-16	a Cuban contemporary visual artist 
+	12	a
+	13	Cuban
+			name:	NATIONALITY				13-13	Cuban 
+	14	contemporary
+			sense:	contemporary.s.02
+	15	visual
+			sense:	ocular.s.03
+	16	artist
+			name:	TITLE				16-16	artist 
+			sense:	artist.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He began drawing in his adolescent years and entered the San Alejandro Academy of Fine Arts on a scholarship at the age of 16 .
+
+
+Treebanked sentence:
+--------------------
+He began drawing in his adolescent years and entered the San Alejandro Academy of Fine Arts on a scholarship at the age of 16 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD began)
+        (S
+          (VP (VBG drawing)
+            (PP (IN in)
+              (NP (PRP$ his) (JJ adolescent) (NNS years))))))
+      (CC and)
+      (VP (VBD entered)
+        (NP
+          (NP (DT the) (NNP San) (NNP Alejandro) (NNP Academy))
+          (PP (IN of)
+            (NP (NNP Fine) (NNPS Arts))))
+        (PP (IN on)
+          (NP
+            (NP (DT a) (NN scholarship))
+            (PP (IN at)
+              (NP
+                (NP (DT the) (NN age))
+                (PP (IN of)
+                  (NP (CD 16)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		1-1	began 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-6	drawing in his adolescent years 
+	2	drawing
+			sense:	draw.v.19
+			prop:	draw.01
+			V		2-2	drawing 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		3-6	in his adolescent years 
+	3	in
+	4	his
+			coref:	IDENT			1	4-4	his 
+	5	adolescent
+			sense:	adolescent.s.04
+	6	years
+			name:	DURATION				6-6	years 
+			sense:	year.n.01
+	7	and
+	8	entered
+			sense:	enroll.v.01
+			prop:	enter.01
+			V		8-8	entered 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		9-15	the San Alejandro Academy of Fine Arts 
+			N-ARGM-MNR		16-18	on a scholarship 
+			N-ARGM-TMP		19-23	at the age of 16 
+	9	the
+	10	San
+			name:	CITY				10-11	San Alejandro 
+	11	Alejandro
+	12	Academy
+			name:	LOCATION				12-15	Academy of Fine Arts 
+	13	of
+	14	Fine
+	15	Arts
+	16	on
+	17	a
+	18	scholarship
+			sense:	scholarship.n.01
+	19	at
+	20	the
+	21	age
+			sense:	age.n.01
+	22	of
+	23	16
+			name:	NUMBER				23-23	16 
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His greatest influences were the artists of the " Havana School " : Carlos Enríquez , René Portocarrero , Cundo Bermúdez , as well as his professors , most notable being modernist painter Fidelio Ponce .
+
+
+Treebanked sentence:
+--------------------
+His greatest influences were the artists of the " Havana School " : Carlos Enríquez , René Portocarrero , Cundo Bermúdez , as well as his professors , most notable being modernist painter Fidelio Ponce . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP$ His) (JJS greatest) (NNS influences))
+      (VP (VBD were)
+        (NP
+          (NP (DT the) (NNS artists))
+          (PP (IN of)
+            (NP (DT the) (`` ") (NNP Havana) (NNP School) ('' "))))))
+    (: :)
+    (S
+      (NP
+        (NP
+          (NP (NNP Carlos) (NNP Enríquez))
+          (, ,)
+          (NP (NNP René) (NNP Portocarrero))
+          (, ,)
+          (NP (NNP Cundo) (NNP Bermúdez)))
+        (, ,)
+        (CONJP (RB as) (RB well) (IN as))
+        (NP
+          (NP (PRP$ his) (NNS professors))
+          (, ,)
+          (ADJP (JJS most) (JJ notable))))
+      (VP (VBG being)
+        (NP (JJ modernist) (NN painter) (NNP Fidelio) (NNP Ponce))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			1	0-0	His 
+	1	greatest
+			sense:	great.s.02
+	2	influences
+			sense:	influence.n.03
+	3	were
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	were 
+			N-ARG-A1		0-2	His greatest influences 
+			N-ARG-A2		4-34	the artists of the " Havana School " : Carlos Enríquez , René Portocarrero , Cundo Bermúdez , as well as his professors , most notable being modernist painter Fidelio Ponce 
+	4	the
+	5	artists
+			sense:	artist.n.01
+	6	of
+	7	the
+	8	"
+	9	Havana
+	10	School
+	11	"
+	12	:
+	13	Carlos
+			name:	PERSON				13-14	Carlos Enríquez 
+	14	Enríquez
+	15	,
+	16	René
+			name:	PERSON				16-17	René Portocarrero 
+	17	Portocarrero
+	18	,
+	19	Cundo
+			name:	PERSON				19-20	Cundo Bermúdez 
+	20	Bermúdez
+	21	,
+	22	as
+			sense:	equally.r.01
+	23	well
+			sense:	well.r.02
+	24	as
+	25	his
+			coref:	IDENT			1	25-25	his 
+	26	professors
+			sense:	professor.n.01
+	27	,
+	28	most
+			sense:	most.a.02
+	29	notable
+			sense:	celebrated.s.01
+	30	being
+			sense:	be.v.02
+			prop:	be.01
+			V		30-30	being 
+			N-ARG-A1		25-26	his professors 
+			N-ARG-A2		28-29	most notable 
+			N-ARG-A2		31-34	modernist painter Fidelio Ponce 
+	31	modernist
+	32	painter
+			name:	TITLE				32-32	painter 
+			sense:	painter.n.01
+	33	Fidelio
+			name:	PERSON				33-34	Fidelio Ponce 
+	34	Ponce
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was also a part of the influential group , Los Diez Pintores Concretos ( the 10 Concrete Painters ) , or as they are usually referred to , Los Diez ( the 10 ) .
+
+
+Treebanked sentence:
+--------------------
+He was also a part of the influential group , Los Diez Pintores Concretos ( the 10 Concrete Painters ) , or as they are usually referred to , Los Diez ( the 10 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (ADVP (RB also))
+      (UCP
+        (NP
+          (NP (DT a) (NN part))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (JJ influential) (NN group))
+              (, ,)
+              (NP
+                (NP (NNP Los) (NNP Diez) (NNP Pintores) (NNP Concretos))
+                (-LRB- -LRB-)
+                (NP (DT the) (CD 10) (JJ Concrete) (NNS Painters))
+                (-RRB- -RRB-))
+              (, ,))))
+        (CC or)
+        (SBAR (IN as)
+          (S
+            (NP (PRP they))
+            (VP (VBP are)
+              (ADVP (RB usually))
+              (VP (VBN referred)
+                (PP (IN to) (, ,)
+                  (NP
+                    (NP (NNP Los) (NNP Diez))
+                    (-LRB- -LRB-)
+                    (NP (DT the) (CD 10))
+                    (-RRB- -RRB-)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARGM-ADV		2-2	also 
+			N-ARG-A2		3-34	a part of the influential group , Los Diez Pintores Concretos ( the 10 Concrete Painters ) , or as they are usually referred to , Los Diez ( the 10 ) 
+	2	also
+			sense:	besides.r.02
+	3	a
+	4	part
+			sense:	part.n.01
+	5	of
+	6	the
+			coref:	IDENT			2	6-19	the influential group , Los Diez Pintores Concretos ( the 10 Concrete Painters ) 
+	7	influential
+			sense:	influential.a.01
+	8	group
+			sense:	group.n.01
+	9	,
+	10	Los
+			name:	ORGANIZATION				10-13	Los Diez Pintores Concretos 
+	11	Diez
+	12	Pintores
+	13	Concretos
+	14	(
+	15	the
+	16	10
+			name:	NUMBER				16-16	10 
+	17	Concrete
+			sense:	concrete.s.02
+	18	Painters
+			sense:	painter.n.01
+	19	)
+	20	,
+	21	or
+	22	as
+	23	they
+			coref:	IDENT			3	23-23	they 
+	24	are
+			sense:	be.v.01
+			prop:	be.03
+			V		24-24	are 
+	25	usually
+			sense:	normally.r.01
+	26	referred
+			sense:	refer.v.03
+			prop:	refer.01
+			V		26-26	referred 
+			N-ARG-A1		23-23	they 
+			N-ARGM-MNR		25-25	usually 
+			N-ARG-A2		27-27	to 
+	27	to
+	28	,
+	29	Los
+	30	Diez
+	31	(
+	32	the
+	33	10
+			name:	NUMBER				33-33	10 
+	34	)
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Although the group had a relatively short life , 1959 - 1961 , and exhibited together only a few times , they remain an important part of Cuba 's art history especially in the pre - Castro years and leading up to the revolution .
+
+
+Treebanked sentence:
+--------------------
+Although the group had a relatively short life , 1959 - 1961 , and exhibited together only a few times , they remain an important part of Cuba 's art history especially in the pre - Castro years and leading up to the revolution . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN Although)
+      (S
+        (NP (DT the) (NN group))
+        (VP
+          (VP (VBD had)
+            (NP
+              (NP (DT a)
+                (ADJP (RB relatively) (JJ short))
+                (NN life))
+              (, ,)
+              (NP (CD 1959) (HYPH -) (CD 1961))
+              (, ,)))
+          (CC and)
+          (VP (VBD exhibited)
+            (ADVP (RB together)
+              (NP-TMP
+                (QP (RB only) (DT a) (JJ few))
+                (NNS times)))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP remain)
+      (NP
+        (NP (DT an) (JJ important) (NN part))
+        (PP (IN of)
+          (NP
+            (NP (NNP Cuba) (POS 's))
+            (NN art) (NN history))))
+      (UCP
+        (PP
+          (ADVP (RB especially))
+          (IN in)
+          (NP (DT the)
+            (NML (AFX pre) (HYPH -) (NNP Castro))
+            (NNS years)))
+        (CC and)
+        (VP (VBG leading)
+          (PRT (RP up))
+          (PP (IN to)
+            (NP (DT the) (NN revolution))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Although
+	1	the
+			coref:	IDENT			2	1-2	the group 
+	2	group
+			sense:	group.n.01
+	3	had
+			sense:	have.v.01
+			prop:	have.03
+			V		3-3	had 
+			N-ARG-A0		1-2	the group 
+			N-ARG-A1		4-11	a relatively short life , 1959 - 1961 
+	4	a
+	5	relatively
+			sense:	relatively.r.01
+	6	short
+			sense:	short.a.01
+	7	life
+			sense:	life.n.05
+	8	,
+	9	1959
+			name:	DATE				9-9	1959 
+	10	-
+			name:	DURATION				10-10	- 
+	11	1961
+			name:	DATE				11-11	1961 
+	12	,
+	13	and
+	14	exhibited
+			sense:	show.v.01
+			prop:	exhibit.01
+			V		14-14	exhibited 
+			N-ARG-A0		1-2	the group 
+			N-ARGM-MNR		15-15	together 
+			N-ARGM-TMP		16-19	only a few times 
+	15	together
+			sense:	together.r.02
+	16	only
+			sense:	merely.r.01
+	17	a
+	18	few
+			sense:	few.a.01
+	19	times
+			sense:	time.n.01
+	20	,
+	21	they
+			coref:	IDENT			3	21-21	they 
+	22	remain
+			sense:	stay.v.01
+			prop:	remain.01
+			V		22-22	remain 
+			N-ARGM-ADV		0-19	Although the group had a relatively short life , 1959 - 1961 , and exhibited together only a few times 
+			N-ARG-A1		21-21	they 
+			N-ARG-A3		23-30	an important part of Cuba 's art history 
+			N-ARGM-TMP		31-43	especially in the pre - Castro years and leading up to the revolution 
+	23	an
+	24	important
+			sense:	important.a.01
+	25	part
+			sense:	part.n.01
+	26	of
+	27	Cuba
+			coref:	IDENT			0	27-28	Cuba 's 
+			name:	COUNTRY				27-27	Cuba 
+	28	's
+	29	art
+			sense:	art.n.01
+	30	history
+			sense:	history.n.01
+	31	especially
+			sense:	particularly.r.01
+	32	in
+	33	the
+	34	pre
+	35	-
+	36	Castro
+			name:	PERSON				36-36	Castro 
+	37	years
+			name:	DURATION				37-37	years 
+			sense:	year.n.01
+	38	and
+	39	leading
+			sense:	leave.v.07
+			prop:	lead.03
+			V		39-39	leading 
+			N-ARG-A2		40-43	up to the revolution 
+	40	up
+	41	to
+	42	the
+	43	revolution
+			sense:	revolution.n.02
+	44	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He left Cuba in 1968 , resigning his teaching position at the academy when Fidel Castro came into power .
+
+
+Treebanked sentence:
+--------------------
+He left Cuba in 1968 , resigning his teaching position at the academy when Fidel Castro came into power . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD left)
+      (NP
+        (NP (NNP Cuba))
+        (PP (IN in)
+          (NP (CD 1968))))
+      (, ,)
+      (S
+        (VP (VBG resigning)
+          (NP (PRP$ his) (NN teaching) (NN position))
+          (PP (IN at)
+            (NP
+              (NP (DT the) (NN academy))
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (NNP Fidel) (NNP Castro))
+                  (VP (VBD came)
+                    (PP (IN into)
+                      (NP (NN power)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	left
+			sense:	leave.v.01
+			prop:	leave.01
+			V		1-1	left 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-2	Cuba 
+			N-ARGM-TMP		3-4	in 1968 
+			N-ARGM-ADV		6-18	resigning his teaching position at the academy when Fidel Castro came into power 
+	2	Cuba
+			coref:	IDENT			0	2-2	Cuba 
+			name:	COUNTRY				2-2	Cuba 
+	3	in
+	4	1968
+			name:	DATE				4-4	1968 
+	5	,
+	6	resigning
+			sense:	vacate.v.01
+			prop:	resign.01
+			V		6-6	resigning 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		7-12	his teaching position at the academy 
+			N-ARGM-TMP		13-18	when Fidel Castro came into power 
+	7	his
+			coref:	IDENT			1	7-7	his 
+	8	teaching
+			sense:	teaching.n.01
+	9	position
+			sense:	position.n.06
+	10	at
+	11	the
+	12	academy
+			sense:	academy.n.02
+	13	when
+	14	Fidel
+			name:	PERSON				14-15	Fidel Castro 
+	15	Castro
+	16	came
+			sense:	come.v.04
+			prop:	come.04
+			V		16-16	came 
+			N-ARGM-TMP		13-13	when 
+			N-ARG-A1		14-15	Fidel Castro 
+			N-ARG-A2		17-18	into power 
+	17	into
+	18	power
+			sense:	office.n.04
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Based in Miami , he continued to be a prolific painter and until his death in 2004 , at the age of 82 .
+
+
+Treebanked sentence:
+--------------------
+Based in Miami , he continued to be a prolific painter and until his death in 2004 , at the age of 82 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (VBN Based)
+      (PP (IN in)
+        (NP (NNP Miami))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD continued)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (UCP
+              (NP (DT a) (JJ prolific) (NN painter))
+              (CC and)
+              (PP (IN until)
+                (NP (PRP$ his) (NN death)))))))
+      (PP (IN in)
+        (NP (CD 2004)))
+      (, ,)
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NN age))
+          (PP (IN of)
+            (NP (CD 82))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Based
+			sense:	base.v.02
+			prop:	base.01
+			V		0-0	Based 
+			N-ARGM-LOC		1-2	in Miami 
+			N-ARG-A1		4-4	he 
+	1	in
+	2	Miami
+			name:	CITY				2-2	Miami 
+	3	,
+	4	he
+			coref:	IDENT			1	4-4	he 
+	5	continued
+			sense:	continue.v.01
+			prop:	continue.01
+			V		5-5	continued 
+			R-ARG-A0		0-2	Based in Miami 
+			N-ARG-A0		4-4	he 
+			N-ARG-A1		6-10	to be a prolific painter 
+	6	to
+	7	be
+			sense:	be.v.01
+			prop:	be.01
+			V		7-7	be 
+			N-ARG-A1		4-4	he 
+			N-ARG-A2		8-10	a prolific painter 
+	8	a
+	9	prolific
+			sense:	fecund.s.02
+	10	painter
+			name:	TITLE				10-10	painter 
+			sense:	painter.n.01
+	11	and
+	12	until
+	13	his
+			coref:	IDENT			1	13-13	his 
+	14	death
+			sense:	death.n.01
+	15	in
+	16	2004
+			name:	DATE				16-16	2004 
+	17	,
+	18	at
+	19	the
+	20	age
+			sense:	age.n.01
+	21	of
+	22	82
+			name:	NUMBER				22-22	82 
+	23	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.27-28	Cuba 's 
+				0.9-9	Cuba 
+				5.2-2	Cuba 
+	Chain 1 (IDENT)
+				1.0-0	He 
+				1.4-4	his 
+				2.0-0	His 
+				2.25-25	his 
+				3.0-0	He 
+				5.0-0	He 
+				5.7-7	his 
+				6.4-4	he 
+				6.13-13	his 
+	Chain 2 (IDENT)
+				3.6-19	the influential group , Los Diez Pintores Concretos ( the 10 Concrete Painters ) 
+				4.1-2	the group 
+	Chain 3 (IDENT)
+				3.23-23	they 
+				4.21-21	they 
+

@@ -1,0 +1,587 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mistborn is a series of epic fantasy novels written by American author Brandon Sanderson and published by Tor Books .
+
+
+Treebanked sentence:
+--------------------
+Mistborn is a series of epic fantasy novels written by American author Brandon Sanderson and published by Tor Books . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Mistborn))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN series))
+        (PP (IN of)
+          (NP
+            (NP (JJ epic) (NN fantasy) (NNS novels))
+            (VP
+              (VP (VBN written)
+                (PP (IN by)
+                  (NP
+                    (NML (JJ American) (NN author))
+                    (NNP Brandon) (NNP Sanderson))))
+              (CC and)
+              (VP (VBN published)
+                (PP (IN by)
+                  (NP (NNP Tor) (NNP Books)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mistborn
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Mistborn 
+			N-ARG-A2		2-18	a series of epic fantasy novels written by American author Brandon Sanderson and published by Tor Books 
+	2	a
+	3	series
+			sense:	series.n.01
+	4	of
+	5	epic
+			sense:	epic.a.02
+	6	fantasy
+			sense:	fantasy.n.02
+	7	novels
+			sense:	novel.n.01
+	8	written
+			sense:	publish.v.03
+			prop:	write.01
+			V		8-8	written 
+			N-ARG-A0		9-13	by American author Brandon Sanderson 
+	9	by
+	10	American
+			coref:	IDENT			2	10-13	American author Brandon Sanderson 
+			name:	NATIONALITY				10-10	American 
+	11	author
+			name:	TITLE				11-11	author 
+			sense:	writer.n.01
+	12	Brandon
+			name:	PERSON				12-13	Brandon Sanderson 
+	13	Sanderson
+	14	and
+	15	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		15-15	published 
+			N-ARG-A1		2-7	a series of epic fantasy novels 
+			N-ARG-A0		16-18	by Tor Books 
+	16	by
+	17	Tor
+			name:	MISC				17-18	Tor Books 
+	18	Books
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The first series , published between 2006 and 2008 , consists of , , and .
+
+
+Treebanked sentence:
+--------------------
+The first series , published between 2006 and 2008 , consists of , , and . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (JJ first) (NN series))
+        (, ,)
+        (VP (VBN published)
+          (PP (IN between)
+            (NP (CD 2006)
+              (CC and)
+              (CD 2008)))))
+      (, ,)
+      (VP (VBZ consists)
+        (PP (IN of)))
+      (, ,))
+    (, ,)
+    (CC and)
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	first
+			name:	ORDINAL				1-1	first 
+			sense:	first.s.02
+	2	series
+			sense:	series.n.01
+	3	,
+	4	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		4-4	published 
+			N-ARG-A1		0-2	The first series 
+			N-ARGM-TMP		5-8	between 2006 and 2008 
+	5	between
+	6	2006
+			name:	DATE				6-8	2006 and 2008 
+	7	and
+	8	2008
+	9	,
+	10	consists
+			sense:	consist.v.04
+			prop:	consist.01
+			V		10-10	consists 
+			N-ARG-A1		0-8	The first series , published between 2006 and 2008 
+			N-ARG-A2		11-14	of , , and 
+	11	of
+	12	,
+	13	,
+	14	and
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+To prepare readers for the second trilogy , Sanderson wrote a transitional sequel , , which then turned into the first installment in the four - book Wax and Wayne series , set 300 years later .
+
+
+Treebanked sentence:
+--------------------
+To prepare readers for the second trilogy , Sanderson wrote a transitional sequel , , which then turned into the first installment in the four - book Wax and Wayne series , set 300 years later . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (TO To)
+        (VP (VB prepare)
+          (NP (NNS readers))
+          (PP (IN for)
+            (NP (DT the) (JJ second) (NN trilogy))))))
+    (, ,)
+    (NP (NNP Sanderson))
+    (VP (VBD wrote)
+      (SBAR
+        (S
+          (NP
+            (NP (DT a) (JJ transitional) (NN sequel))
+            (, ,)
+            (SBAR (, ,)
+              (WHNP (WDT which))
+              (S
+                (ADVP (RB then))
+                (VP (VBD turned)
+                  (PP (IN into)
+                    (NP
+                      (NP (DT the) (JJ first) (NN installment))
+                      (PP (IN in)
+                        (NP (DT the)
+                          (NML (CD four) (HYPH -) (NN book))
+                          (NML (NNP Wax)
+                            (CC and)
+                            (NNP Wayne))
+                          (NN series)))))))
+              (, ,)))
+          (VP (VBN set)
+            (ADVP
+              (NP (CD 300) (NNS years))
+              (RB later))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	To
+	1	prepare
+			sense:	prepare.v.05
+			prop:	prepare.02
+			V		1-1	prepare 
+			N-ARG-A1		2-2	readers 
+			N-ARG-A2		3-6	for the second trilogy 
+			N-ARG-A0		8-8	Sanderson 
+	2	readers
+			sense:	reader.n.01
+	3	for
+	4	the
+	5	second
+			name:	ORDINAL				5-5	second 
+			sense:	second.s.01
+	6	trilogy
+			sense:	trilogy.n.01
+	7	,
+	8	Sanderson
+			coref:	IDENT			2	8-8	Sanderson 
+			name:	PERSON				8-8	Sanderson 
+	9	wrote
+			sense:	write.v.01
+			prop:	write.01
+			V		9-9	wrote 
+			R-ARG-A0		0-6	To prepare readers for the second trilogy 
+			N-ARG-A0		8-8	Sanderson 
+			N-ARG-A1		10-35	a transitional sequel , , which then turned into the first installment in the four - book Wax and Wayne series , set 300 years later 
+	10	a
+	11	transitional
+			sense:	transitional.a.01
+	12	sequel
+			sense:	sequel.n.01
+	13	,
+	14	,
+	15	which
+	16	then
+			sense:	then.r.01
+	17	turned
+			sense:	become.v.02
+			prop:	turn.02
+			V		17-17	turned 
+			N-ARG-A1		10-12	a transitional sequel 
+			R-ARG-A1		15-15	which 
+			N-ARGM-TMP		16-16	then 
+			N-ARG-A2		18-35	into the first installment in the four - book Wax and Wayne series , set 300 years later 
+	18	into
+	19	the
+	20	first
+			name:	ORDINAL				20-20	first 
+			sense:	first.s.02
+	21	installment
+			sense:	installment.n.03
+	22	in
+	23	the
+	24	four
+			name:	NUMBER				24-24	four 
+	25	-
+	26	book
+			sense:	book.n.01
+	27	Wax
+	28	and
+	29	Wayne
+			coref:	IDENT			0	29-29	Wayne 
+			name:	PERSON				29-29	Wayne 
+	30	series
+			sense:	series.n.01
+	31	,
+	32	set
+			sense:	set.v.09
+			prop:	set.01
+			V		32-32	set 
+			N-ARG-A1		19-30	the first installment in the four - book Wax and Wayne series 
+			N-ARG-A2		33-35	300 years later 
+	33	300
+			name:	DATE				33-35	300 years later 
+	34	years
+			sense:	year.n.01
+	35	later
+			sense:	subsequently.r.01
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Wax and Wayne book titles are : The Alloy of Law , released on November 8 , 2011 ; , released on October 6 , 2015 ; , published on January 26 , 2016 ; and The Lost Metal , currently in production .
+
+
+Treebanked sentence:
+--------------------
+The Wax and Wayne book titles are : The Alloy of Law , released on November 8 , 2011 ; , released on October 6 , 2015 ; , published on January 26 , 2016 ; and The Lost Metal , currently in production . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The)
+      (NML (NNP Wax)
+        (CC and)
+        (NNP Wayne))
+      (NN book) (NNS titles))
+    (VP (VBP are) (: :)
+      (NP
+        (NP
+          (NP
+            (NP (DT The) (NNP Alloy))
+            (PP (IN of)
+              (NP (NNP Law))))
+          (, ,)
+          (VP (VBN released)
+            (PP (IN on)
+              (NP (NNP November) (CD 8) (, ,) (CD 2011)))))
+        (: ;)
+        (NP
+          (NP (, ,)
+            (NP (VBN released))
+            (PP (IN on)
+              (NP (NNP October) (CD 6) (, ,) (CD 2015))
+              (: ;))
+            (, ,))
+          (VP (VBN published)
+            (PP (IN on)
+              (NP (NNP January) (CD 26) (, ,) (CD 2016)))))
+        (: ;)
+        (CC and)
+        (NP
+          (NP
+            (NP (DT The) (VBN Lost) (NN Metal))
+            (, ,)
+            (ADVP (RB currently)))
+          (PP (IN in)
+            (NP (NN production))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Wax
+			name:	MISC				1-1	Wax 
+	2	and
+	3	Wayne
+			coref:	IDENT			0	3-3	Wayne 
+			name:	PERSON				3-3	Wayne 
+	4	book
+			sense:	book.n.01
+	5	titles
+			sense:	title.n.02
+	6	are
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	are 
+			N-ARG-A1		0-5	The Wax and Wayne book titles 
+			N-ARG-A2		8-43	The Alloy of Law , released on November 8 , 2011 ; , released on October 6 , 2015 ; , published on January 26 , 2016 ; and The Lost Metal , currently in production 
+	7	:
+	8	The
+	9	Alloy
+	10	of
+	11	Law
+	12	,
+	13	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		13-13	released 
+			N-ARG-A1		8-11	The Alloy of Law 
+			N-ARGM-TMP		14-18	on November 8 , 2011 
+	14	on
+	15	November
+			name:	DATE				15-18	November 8 , 2011 
+	16	8
+	17	,
+	18	2011
+	19	;
+	20	,
+	21	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		21-21	released 
+			N-ARGM-TMP		22-26	on October 6 , 2015 
+	22	on
+	23	October
+			name:	DATE				23-26	October 6 , 2015 
+	24	6
+	25	,
+	26	2015
+	27	;
+	28	,
+	29	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		29-29	published 
+			N-ARGM-TMP		30-34	on January 26 , 2016 
+	30	on
+	31	January
+			name:	DATE				31-34	January 26 , 2016 
+	32	26
+	33	,
+	34	2016
+	35	;
+	36	and
+	37	The
+	38	Lost
+			sense:	lose.v.01
+			prop:	cost.01
+			V		38-38	Lost 
+			N-ARG-A1		39-39	Metal 
+	39	Metal
+			sense:	metallic_element.n.01
+	40	,
+	41	currently
+			name:	DATE				41-41	currently 
+			sense:	presently.r.02
+	42	in
+	43	production
+			sense:	production.n.01
+	44	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sanderson also published a companion story to the original trilogy , titled , on January 26 , 2016 .
+
+
+Treebanked sentence:
+--------------------
+Sanderson also published a companion story to the original trilogy , titled , on January 26 , 2016 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Sanderson))
+    (ADVP (RB also))
+    (VP (VBD published)
+      (NP (DT a) (NN companion) (NN story))
+      (PP (IN to)
+        (NP
+          (NP
+            (NP (DT the) (JJ original) (NN trilogy))
+            (, ,)
+            (VP (VBN titled))
+            (, ,))
+          (PP (IN on)
+            (NP (NNP January) (CD 26) (, ,) (CD 2016))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sanderson
+			coref:	IDENT			2	0-0	Sanderson 
+			name:	PERSON				0-0	Sanderson 
+	1	also
+			sense:	besides.r.02
+	2	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		2-2	published 
+			N-ARG-A0		0-0	Sanderson 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-12	a companion story to the original trilogy , titled , 
+			N-ARGM-TMP		13-17	on January 26 , 2016 
+	3	a
+	4	companion
+			name:	TITLE				4-4	companion 
+			sense:	companion.n.01
+	5	story
+			sense:	story.n.02
+	6	to
+	7	the
+	8	original
+			sense:	original.s.01
+	9	trilogy
+			sense:	trilogy.n.01
+	10	,
+	11	titled
+			sense:	entitle.v.02
+			prop:	title.01
+			V		11-11	titled 
+			N-ARG-A1		3-9	a companion story to the original trilogy 
+	12	,
+	13	on
+	14	January
+			name:	DATE				14-17	January 26 , 2016 
+	15	26
+	16	,
+	17	2016
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+There are two other planned trilogies , but they have no projected completion dates .
+
+
+Treebanked sentence:
+--------------------
+There are two other planned trilogies , but they have no projected completion dates . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (EX There))
+      (VP (VBP are)
+        (NP (CD two)
+          (ADJP (JJ other) (VBN planned))
+          (NNS trilogies))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP they))
+      (VP (VBP have)
+        (NP (DT no) (VBN projected) (NN completion) (NNS dates))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	There
+	1	are
+			sense:	exist.v.01
+			prop:	be.02
+			V		1-1	are 
+			N-ARG-A1		2-5	two other planned trilogies 
+	2	two
+			coref:	IDENT			1	2-5	two other planned trilogies 
+			name:	NUMBER				2-2	two 
+	3	other
+			sense:	other.a.01
+	4	planned
+			sense:	plan.v.01
+			prop:	plan.01
+			V		4-4	planned 
+			N-ARG-A1		5-5	trilogies 
+	5	trilogies
+			sense:	trilogy.n.01
+	6	,
+	7	but
+	8	they
+			coref:	IDENT			1	8-8	they 
+	9	have
+			sense:	have.v.02
+			prop:	have.03
+			V		9-9	have 
+			N-ARG-A0		8-8	they 
+			N-ARG-A1		10-13	no projected completion dates 
+	10	no
+	11	projected
+			sense:	project.v.12
+			prop:	project.02
+			V		11-11	projected 
+			N-ARGM-NEG		10-10	no 
+			N-ARG-A1		12-13	completion dates 
+	12	completion
+			sense:	completion.n.02
+	13	dates
+			sense:	date.n.07
+	14	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.29-29	Wayne 
+				3.3-3	Wayne 
+	Chain 1 (IDENT)
+				5.2-5	two other planned trilogies 
+				5.8-8	they 
+	Chain 2 (IDENT)
+				0.10-13	American author Brandon Sanderson 
+				2.8-8	Sanderson 
+				4.0-0	Sanderson 
+

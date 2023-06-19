@@ -1,0 +1,709 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Matt Birkbeck is an American author and investigative journalist , whose articles have appeared in The New York Times , Playboy , The Philadelphia Inquirer , Reader 's Digest , Boston Magazine and " People . "
+
+
+Treebanked sentence:
+--------------------
+Matt Birkbeck is an American author and investigative journalist , whose articles have appeared in The New York Times , Playboy , The Philadelphia Inquirer , Reader 's Digest , Boston Magazine and " People . " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Matt) (NNP Birkbeck))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT an) (JJ American) (NN author))
+          (CC and)
+          (NP (JJ investigative) (NN journalist)))
+        (, ,)
+        (SBAR
+          (WHNP (WP$ whose) (NNS articles))
+          (S
+            (VP (VBP have)
+              (VP (VBN appeared)
+                (PP (IN in)
+                  (NP
+                    (NP (DT The) (NNP New) (NNP York) (NNP Times))
+                    (, ,)
+                    (NP (NNP Playboy))
+                    (, ,)
+                    (NP (DT The) (NNP Philadelphia) (NNP Inquirer))
+                    (, ,)
+                    (NP
+                      (NP (NNP Reader) (POS 's))
+                      (NNP Digest))
+                    (, ,)
+                    (NP (NNP Boston) (NNP Magazine))
+                    (CC and)
+                    (NP (`` ") (NNS People))))))))))
+    (. .) ('' ")))
+
+
+Leaves:
+-------
+	0	Matt
+			coref:	IDENT			0	0-1	Matt Birkbeck 
+			name:	PERSON				0-1	Matt Birkbeck 
+	1	Birkbeck
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Matt Birkbeck 
+			N-ARG-A2		3-34	an American author and investigative journalist , whose articles have appeared in The New York Times , Playboy , The Philadelphia Inquirer , Reader 's Digest , Boston Magazine and " People 
+	3	an
+	4	American
+			name:	NATIONALITY				4-4	American 
+	5	author
+			name:	TITLE				5-5	author 
+			sense:	writer.n.01
+	6	and
+	7	investigative
+			sense:	fact-finding.s.01
+	8	journalist
+			name:	TITLE				8-8	journalist 
+			sense:	journalist.n.01
+	9	,
+	10	whose
+	11	articles
+			sense:	article.n.01
+	12	have
+			sense:	have.v.01
+			prop:	have.01
+			V		12-12	have 
+	13	appeared
+			sense:	appear.v.03
+			prop:	appear.01
+			V		13-13	appeared 
+			N-ARG-A1		3-8	an American author and investigative journalist 
+			R-ARG-A1		10-11	whose articles 
+			N-ARGM-LOC		14-34	in The New York Times , Playboy , The Philadelphia Inquirer , Reader 's Digest , Boston Magazine and " People 
+	14	in
+	15	The
+	16	New
+			name:	ORGANIZATION				16-18	New York Times 
+	17	York
+	18	Times
+	19	,
+	20	Playboy
+			name:	ORGANIZATION				20-20	Playboy 
+	21	,
+	22	The
+	23	Philadelphia
+			name:	ORGANIZATION				23-24	Philadelphia Inquirer 
+	24	Inquirer
+	25	,
+	26	Reader
+			name:	ORGANIZATION				26-28	Reader 's Digest 
+	27	's
+	28	Digest
+	29	,
+	30	Boston
+			name:	ORGANIZATION				30-31	Boston Magazine 
+	31	Magazine
+	32	and
+	33	"
+	34	People
+			sense:	person.n.01
+	35	.
+	36	"
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A former newspaper reporter , Birkbeck worked at The Morning Call .
+
+
+Treebanked sentence:
+--------------------
+A former newspaper reporter , Birkbeck worked at The Morning Call . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT A) (JJ former) (NN newspaper) (NN reporter))
+    (, ,)
+    (NP (NNP Birkbeck))
+    (VP (VBD worked)
+      (PP (IN at)
+        (NP (DT The) (NN Morning) (NN Call))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	former
+			sense:	erstwhile.s.01
+	2	newspaper
+			sense:	newspaper.n.01
+	3	reporter
+			name:	TITLE				3-3	reporter 
+			sense:	reporter.n.01
+	4	,
+	5	Birkbeck
+			coref:	IDENT			0	5-5	Birkbeck 
+			name:	PERSON				5-5	Birkbeck 
+	6	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		6-6	worked 
+			R-ARG-A0		0-3	A former newspaper reporter 
+			N-ARG-A0		5-5	Birkbeck 
+			N-ARG-A2		7-10	at The Morning Call 
+	7	at
+	8	The
+	9	Morning
+			name:	TIME				9-9	Morning 
+			sense:	morning.n.01
+	10	Call
+			sense:	call.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+, where he was cited for his lengthy investigative pieces on Pennsylvania 's flawed gaming initiative .
+
+
+Treebanked sentence:
+--------------------
+, where he was cited for his lengthy investigative pieces on Pennsylvania 's flawed gaming initiative . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (PRN (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP he))
+          (VP (VBD was)
+            (VP (VBN cited)
+              (PP (IN for)
+                (NP (PRP$ his) (JJ lengthy) (JJ investigative) (NNS pieces)))
+              (PP (IN on)
+                (NP
+                  (NP (NNP Pennsylvania) (POS 's))
+                  (JJ flawed) (NN gaming))))))))
+    (NP (NN initiative))
+    (. .)))
+
+
+Leaves:
+-------
+	0	,
+	1	where
+	2	he
+			coref:	IDENT			0	2-2	he 
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	cited
+			sense:	mention.v.01
+			prop:	cite.01
+			V		4-4	cited 
+			N-ARGM-LOC		1-1	where 
+			N-ARG-A1		2-2	he 
+			N-ARG-A2		5-15	for his lengthy investigative pieces on Pennsylvania 's flawed gaming initiative 
+	5	for
+	6	his
+			coref:	IDENT			0	6-6	his 
+	7	lengthy
+			sense:	drawn-out.s.01
+	8	investigative
+			sense:	fact-finding.s.01
+	9	pieces
+			sense:	piece.n.06
+	10	on
+	11	Pennsylvania
+			name:	STATE_OR_PROVINCE				11-11	Pennsylvania 
+	12	's
+	13	flawed
+			sense:	blemished.s.02
+	14	gaming
+			sense:	gambling.n.01
+	15	initiative
+			sense:	first_step.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2010 he joined business publisher Harrison Scott Publications , where he covers Wall Street and regulatory issues in Washington , D.C. 
+
+
+Treebanked sentence:
+--------------------
+In 2010 he joined business publisher Harrison Scott Publications , where he covers Wall Street and regulatory issues in Washington , D.C. Birkbeck has authored five books . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN In)
+        (NP (CD 2010)))
+      (NP (PRP he))
+      (VP (VBD joined)
+        (NP
+          (NP
+            (NP (NN business) (NN publisher))
+            (NP (NNP Harrison) (NNP Scott) (NNPS Publications)))
+          (, ,)
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP (PRP he))
+              (VP (VBZ covers)
+                (NP
+                  (NP (NNP Wall) (NNP Street))
+                  (CC and)
+                  (NP
+                    (NP (JJ regulatory) (NNS issues))
+                    (PP (IN in)
+                      (NP (NNP Washington)))))))))))
+    (, ,)
+    (NP (NNP D.C.) (NNP Birkbeck))
+    (VP (VBZ has)
+      (VP (VBN authored)
+        (NP-TMP (CD five) (NNS books))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2010
+			name:	DATE				1-1	2010 
+	2	he
+			coref:	IDENT			0	2-2	he 
+	3	joined
+			sense:	join.v.01
+			prop:	join.01
+			V		3-3	joined 
+			N-ARGM-TMP		0-1	In 2010 
+			N-ARG-A0		2-2	he 
+			N-ARG-A1		4-21	business publisher Harrison Scott Publications , where he covers Wall Street and regulatory issues in Washington , D.C. 
+	4	business
+			sense:	commercial_enterprise.n.02
+	5	publisher
+			name:	TITLE				5-5	publisher 
+			sense:	publisher.n.01
+	6	Harrison
+			name:	PERSON				6-8	Harrison Scott Publications 
+	7	Scott
+	8	Publications
+	9	,
+	10	where
+	11	he
+			coref:	IDENT			0	11-11	he 
+	12	covers
+			sense:	report.v.05
+			prop:	cover.03
+			V		12-12	covers 
+			N-ARGM-LOC		4-8	business publisher Harrison Scott Publications 
+			R-ARGM-LOC		10-10	where 
+			N-ARG-A0		11-11	he 
+			N-ARG-A1		13-21	Wall Street and regulatory issues in Washington , D.C. 
+			N-ARGM-LOC		21-21	D.C. 
+	13	Wall
+	14	Street
+	15	and
+	16	regulatory
+			sense:	regulative.s.01
+	17	issues
+			sense:	issue.n.01
+	18	in
+	19	Washington
+			name:	STATE_OR_PROVINCE				19-19	Washington 
+	20	,
+	21	D.C.
+			coref:	IDENT			0	21-22	D.C. Birkbeck 
+			name:	LOCATION				21-22	D.C. Birkbeck 
+	22	Birkbeck
+	23	has
+			sense:	have.v.01
+			prop:	have.01
+			V		23-23	has 
+	24	authored
+			sense:	author.v.01
+			prop:	author.01
+			V		24-24	authored 
+			N-ARG-A0		22-22	Birkbeck 
+			N-ARG-A1		25-26	five books 
+	25	five
+			name:	NUMBER				25-25	five 
+	26	books
+			sense:	book.n.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His 2015 book tells the story of New York real estate heir Robert Durst , who is accused of several murders .
+
+
+Treebanked sentence:
+--------------------
+His 2015 book tells the story of New York real estate heir Robert Durst , who is accused of several murders . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His) (CD 2015) (NN book))
+    (VP (VBZ tells)
+      (NP
+        (NP
+          (NP (DT the) (NN story))
+          (PP (IN of)
+            (NP
+              (NML
+                (NML (NNP New) (NNP York))
+                (JJ real) (NN estate))
+              (NN heir) (NNP Robert) (NNP Durst))))
+        (, ,)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ is)
+              (VP (VBN accused)
+                (PP (IN of)
+                  (NP (JJ several) (NNS murders)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-0	His 
+	1	2015
+			name:	DATE				1-1	2015 
+	2	book
+			sense:	book.n.01
+	3	tells
+			sense:	tell.v.03
+			prop:	tell.01
+			V		3-3	tells 
+			N-ARG-A0		0-2	His 2015 book 
+			N-ARG-A1		4-20	the story of New York real estate heir Robert Durst , who is accused of several murders 
+	4	the
+			coref:	IDENT			1	4-20	the story of New York real estate heir Robert Durst , who is accused of several murders 
+	5	story
+			sense:	narrative.n.01
+	6	of
+	7	New
+			name:	STATE_OR_PROVINCE				7-8	New York 
+	8	York
+	9	real
+			sense:	real.a.01
+	10	estate
+			sense:	estate.n.01
+	11	heir
+			sense:	heir.n.01
+	12	Robert
+			name:	PERSON				12-13	Robert Durst 
+	13	Durst
+	14	,
+	15	who
+	16	is
+			sense:	be.v.01
+			prop:	be.03
+			V		16-16	is 
+	17	accused
+			sense:	accuse.v.01
+			prop:	accuse.01
+			V		17-17	accused 
+			N-ARG-A1		7-13	New York real estate heir Robert Durst 
+			R-ARG-A1		15-15	who 
+			N-ARG-A2		18-20	of several murders 
+	18	of
+	19	several
+			sense:	several.s.01
+	20	murders
+			sense:	murder.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Birkbeck covered the Durst story for People magazine and Reader 's Digest .
+
+
+Treebanked sentence:
+--------------------
+Birkbeck covered the Durst story for People magazine and Reader 's Digest . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Birkbeck))
+    (VP (VBD covered)
+      (NP (DT the) (NNP Durst) (NN story))
+      (PP (IN for)
+        (NP
+          (NP (NNS People) (NN magazine))
+          (CC and)
+          (NP
+            (NP (NN Reader) (POS 's))
+            (NNP Digest)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Birkbeck
+			coref:	IDENT			0	0-0	Birkbeck 
+			name:	PERSON				0-0	Birkbeck 
+	1	covered
+			sense:	cover.v.05
+			prop:	cover.03
+			V		1-1	covered 
+			N-ARG-A0		0-0	Birkbeck 
+			N-ARG-A1		2-4	the Durst story 
+			N-ARGM-ADV		5-11	for People magazine and Reader 's Digest 
+	2	the
+			coref:	IDENT			1	2-4	the Durst story 
+	3	Durst
+			name:	PERSON				3-3	Durst 
+	4	story
+			sense:	narrative.n.01
+	5	for
+	6	People
+			name:	ORGANIZATION				6-7	People magazine 
+			sense:	person.n.01
+	7	magazine
+			sense:	magazine.n.01
+	8	and
+	9	Reader
+			name:	TITLE				9-9	Reader 
+			sense:	reader.n.01
+	10	's
+	11	Digest
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Lifetime Network is produced a TV movie The Lost Wife of Robert Durst based on Birkbeck 's book that first aired November 2017 .
+
+
+Treebanked sentence:
+--------------------
+The Lifetime Network is produced a TV movie The Lost Wife of Robert Durst based on Birkbeck 's book that first aired November 2017 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Lifetime) (NNP Network))
+    (VP (VBZ is)
+      (VP (VBN produced)
+        (NP
+          (NP (DT a) (NN TV) (NN movie))
+          (NP
+            (NP (DT The) (VBN Lost) (NN Wife))
+            (PP (IN of)
+              (NP (NNP Robert) (NNP Durst)))))
+        (PP (VBN based)
+          (PP (IN on)
+            (NP
+              (NP
+                (NP (NNP Birkbeck) (POS 's))
+                (NN book))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (ADVP (RB first))
+                  (VP (VBD aired)
+                    (NP-TMP (NNP November) (CD 2017))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Lifetime
+			name:	ORGANIZATION				1-2	Lifetime Network 
+	2	Network
+	3	is
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	is 
+	4	produced
+			sense:	produce.v.06
+			prop:	produce.01
+			V		4-4	produced 
+			N-ARG-A0		0-2	The Lifetime Network 
+			N-ARG-A1		5-23	a TV movie The Lost Wife of Robert Durst based on Birkbeck 's book that first aired November 2017 
+	5	a
+	6	TV
+			sense:	television.n.01
+	7	movie
+			sense:	movie.n.01
+	8	The
+	9	Lost
+			sense:	lose.v.01
+			prop:	lose.02
+			V		9-9	Lost 
+			N-ARG-A1		10-10	Wife 
+	10	Wife
+			sense:	wife.n.01
+	11	of
+	12	Robert
+			name:	PERSON				12-13	Robert Durst 
+	13	Durst
+	14	based
+			sense:	establish.v.08
+			prop:	base.02
+			V		14-14	based 
+			N-ARG-A1		5-13	a TV movie The Lost Wife of Robert Durst 
+			N-ARG-A2		15-23	on Birkbeck 's book that first aired November 2017 
+	15	on
+	16	Birkbeck
+			coref:	IDENT			0	16-17	Birkbeck 's 
+			name:	PERSON				16-16	Birkbeck 
+	17	's
+	18	book
+			sense:	book.n.01
+	19	that
+	20	first
+			name:	ORDINAL				20-20	first 
+			sense:	first.r.02
+	21	aired
+			sense:	air.v.02
+			prop:	air.01
+			V		21-21	aired 
+			N-ARG-A1		5-18	a TV movie The Lost Wife of Robert Durst based on Birkbeck 's book 
+			R-ARG-A1		19-19	that 
+			N-ARGM-TMP		20-20	first 
+			N-ARGM-TMP		22-23	November 2017 
+	22	November
+			name:	DATE				22-23	November 2017 
+	23	2017
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Birkbeck 's biography on Sammy Davis , Jr. , has been optioned for film and TV by producer Byron Allen .
+
+
+Treebanked sentence:
+--------------------
+Birkbeck 's biography on Sammy Davis , Jr. , has been optioned for film and TV by producer Byron Allen . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Birkbeck) (POS 's))
+        (NN biography))
+      (PP (IN on)
+        (NP
+          (NP (NNP Sammy) (NNP Davis))
+          (, ,)
+          (NP (NNP Jr.))
+          (, ,))))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN optioned)
+          (PP (IN for)
+            (NP (NN film)
+              (CC and)
+              (NN TV)))
+          (PP (IN by)
+            (NP (NN producer) (NNP Byron) (NNP Allen))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Birkbeck
+			coref:	IDENT			0	0-1	Birkbeck 's 
+			name:	PERSON				0-0	Birkbeck 
+	1	's
+	2	biography
+			sense:	biography.n.01
+	3	on
+	4	Sammy
+			name:	PERSON				4-5	Sammy Davis 
+	5	Davis
+	6	,
+	7	Jr.
+	8	,
+	9	has
+			sense:	have.v.01
+			prop:	have.01
+			V		9-9	has 
+	10	been
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	been 
+	11	optioned
+			prop:	opine.01
+			V		11-11	optioned 
+			N-ARG-A1		0-8	Birkbeck 's biography on Sammy Davis , Jr. , 
+			N-ARG-A0		16-19	by producer Byron Allen 
+	12	for
+	13	film
+			sense:	movie.n.01
+	14	and
+	15	TV
+			sense:	television.n.01
+	16	by
+	17	producer
+			name:	TITLE				17-17	producer 
+			sense:	producer.n.02
+	18	Byron
+			name:	PERSON				18-19	Byron Allen 
+	19	Allen
+	20	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Matt Birkbeck 
+				1.5-5	Birkbeck 
+				2.2-2	he 
+				2.6-6	his 
+				3.2-2	he 
+				3.11-11	he 
+				3.21-22	D.C. Birkbeck 
+				4.0-0	His 
+				5.0-0	Birkbeck 
+				6.16-17	Birkbeck 's 
+				7.0-1	Birkbeck 's 
+	Chain 1 (IDENT)
+				5.2-4	the Durst story 
+				4.4-20	the story of New York real estate heir Robert Durst , who is accused of several murders 
+

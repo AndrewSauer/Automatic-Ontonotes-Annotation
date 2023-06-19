@@ -1,0 +1,680 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Carolina Thunderbirds were a professional ice hockey team located in Winston - Salem , North Carolina , United States .
+
+
+Treebanked sentence:
+--------------------
+The Carolina Thunderbirds were a professional ice hockey team located in Winston - Salem , North Carolina , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Carolina) (NNPS Thunderbirds))
+    (VP (VBD were)
+      (NP
+        (NP (DT a) (JJ professional)
+          (NML (NN ice) (NN hockey))
+          (NN team))
+        (VP (VBN located)
+          (PP (IN in)
+            (NP
+              (NP (NNP Winston) (HYPH -) (NNP Salem))
+              (, ,)
+              (NP (NNP North) (NNP Carolina))
+              (, ,)
+              (NP (NNP United) (NNP States)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-2	The Carolina Thunderbirds 
+	1	Carolina
+			name:	ORGANIZATION				1-2	Carolina Thunderbirds 
+	2	Thunderbirds
+	3	were
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	were 
+			N-ARG-A1		0-2	The Carolina Thunderbirds 
+			N-ARG-A2		4-19	a professional ice hockey team located in Winston - Salem , North Carolina , United States 
+	4	a
+	5	professional
+			sense:	professional.a.01
+	6	ice
+			sense:	ice.n.01
+	7	hockey
+			sense:	ice_hockey.n.01
+	8	team
+			sense:	team.n.01
+	9	located
+			sense:	locate.v.03
+			prop:	locate.01
+			V		9-9	located 
+			N-ARG-A1		4-8	a professional ice hockey team 
+			N-ARGM-LOC		10-19	in Winston - Salem , North Carolina , United States 
+	10	in
+	11	Winston
+			name:	CITY				11-11	Winston 
+	12	-
+			name:	LOCATION				12-12	- 
+	13	Salem
+			name:	CITY				13-13	Salem 
+	14	,
+	15	North
+			name:	STATE_OR_PROVINCE				15-16	North Carolina 
+	16	Carolina
+	17	,
+	18	United
+			name:	COUNTRY				18-19	United States 
+	19	States
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Thunderbirds played their home games at the old Winston - Salem Memorial Coliseum before the arena was demolished in 1989 .
+
+
+Treebanked sentence:
+--------------------
+The Thunderbirds played their home games at the old Winston - Salem Memorial Coliseum before the arena was demolished in 1989 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNPS Thunderbirds))
+    (VP (VBD played)
+      (NP (PRP$ their) (NN home) (NNS games))
+      (PP (IN at)
+        (NP (DT the) (JJ old)
+          (NML (NNP Winston) (HYPH -) (NNP Salem))
+          (NNP Memorial) (NNP Coliseum)))
+      (SBAR (IN before)
+        (S
+          (NP (DT the) (NN arena))
+          (VP (VBD was)
+            (VP (VBN demolished)
+              (PP (IN in)
+                (NP (CD 1989))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The Thunderbirds 
+	1	Thunderbirds
+			name:	ORGANIZATION				1-1	Thunderbirds 
+	2	played
+			sense:	play.v.01
+			prop:	play.01
+			V		2-2	played 
+			N-ARG-A0		0-1	The Thunderbirds 
+			N-ARG-A1		3-5	their home games 
+			N-ARGM-LOC		6-13	at the old Winston - Salem Memorial Coliseum 
+			N-ARGM-TMP		14-20	before the arena was demolished in 1989 
+	3	their
+			coref:	IDENT			1	3-3	their 
+	4	home
+			sense:	home.n.01
+	5	games
+			sense:	game.n.02
+	6	at
+	7	the
+	8	old
+			sense:	old.a.02
+	9	Winston
+			name:	CITY				9-9	Winston 
+	10	-
+			name:	LOCATION				10-10	- 
+	11	Salem
+			name:	CITY				11-11	Salem 
+	12	Memorial
+			name:	LOCATION				12-13	Memorial Coliseum 
+	13	Coliseum
+	14	before
+	15	the
+	16	arena
+			sense:	stadium.n.01
+	17	was
+			sense:	be.v.01
+			prop:	be.03
+			V		17-17	was 
+	18	demolished
+			sense:	demolish.v.01
+			prop:	demolish.01
+			V		18-18	demolished 
+			N-ARG-A1		15-16	the arena 
+			N-ARGM-TMP		19-20	in 1989 
+	19	in
+	20	1989
+			name:	DATE				20-20	1989 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The team played in the Atlantic Coast Hockey League from 1981 to 1987 , the All - American Hockey League during 1987–88 and finally moved into the newly created East Coast Hockey League in 1988 .
+
+
+Treebanked sentence:
+--------------------
+The team played in the Atlantic Coast Hockey League from 1981 to 1987 , the All - American Hockey League during 1987 – 88 and finally moved into the newly created East Coast Hockey League in 1988 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN team))
+    (VP
+      (VP (VBD played)
+        (PP (IN in)
+          (NP (DT the)
+            (NML (NNP Atlantic) (NNP Coast))
+            (NNP Hockey) (NNP League)))
+        (PP (IN from)
+          (NP (CD 1981)))
+        (PP (IN to)
+          (NP
+            (NP (CD 1987))
+            (, ,)
+            (NP
+              (NP (DT the)
+                (NML (NNP All) (HYPH -) (NNP American))
+                (NNP Hockey) (NNP League))
+              (PP (IN during)
+                (NP (CD 1987) (SYM –) (CD 88)))))))
+      (CC and)
+      (VP
+        (ADVP (RB finally))
+        (VBD moved)
+        (PP (IN into)
+          (NP (DT the)
+            (ADJP (RB newly) (VBN created))
+            (NNP East) (NNP Coast) (NNP Hockey) (NNP League)))
+        (PP (IN in)
+          (NP (CD 1988)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The team 
+	1	team
+			sense:	team.n.01
+	2	played
+			sense:	play.v.01
+			prop:	play.01
+			V		2-2	played 
+			N-ARG-A0		0-1	The team 
+			N-ARGM-LOC		3-8	in the Atlantic Coast Hockey League 
+			N-ARGM-TMP		9-12	from 1981 to 1987 
+			N-ARGM-TMP		20-23	during 1987 – 88 
+	3	in
+	4	the
+			coref:	IDENT			2	4-8	the Atlantic Coast Hockey League 
+	5	Atlantic
+			name:	ORGANIZATION				5-8	Atlantic Coast Hockey League 
+	6	Coast
+	7	Hockey
+	8	League
+	9	from
+	10	1981
+			name:	DATE				10-12	1981 to 1987 
+	11	to
+	12	1987
+	13	,
+	14	the
+	15	All
+			name:	ORGANIZATION				15-19	All - American Hockey League 
+	16	-
+	17	American
+	18	Hockey
+	19	League
+	20	during
+	21	1987
+			name:	DATE				21-21	1987 
+	22	–
+	23	88
+			name:	NUMBER				23-23	88 
+	24	and
+	25	finally
+			sense:	ultimately.r.01
+	26	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		26-26	moved 
+			N-ARG-A1		0-1	The team 
+			N-ARGM-ADV		25-25	finally 
+			N-ARG-A2		27-34	into the newly created East Coast Hockey League 
+			N-ARGM-TMP		35-36	in 1988 
+	27	into
+	28	the
+			coref:	IDENT			2	28-34	the newly created East Coast Hockey League 
+	29	newly
+			sense:	newly.r.01
+	30	created
+			sense:	create.v.02
+			prop:	create.01
+			V		30-30	created 
+			N-ARGM-TMP		29-29	newly 
+			N-ARG-A1		31-34	East Coast Hockey League 
+	31	East
+			name:	ORGANIZATION				31-34	East Coast Hockey League 
+	32	Coast
+	33	Hockey
+	34	League
+	35	in
+	36	1988
+			coref:	IDENT			3	36-36	1988 
+			name:	DATE				36-36	1988 
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Carolina Thunderbirds were one of five teams that played during the inaugural season of East Coast Hockey League ( ECHL ) .
+
+
+Treebanked sentence:
+--------------------
+The Carolina Thunderbirds were one of five teams that played during the inaugural season of East Coast Hockey League ( ECHL ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Carolina) (NNPS Thunderbirds))
+    (VP (VBD were)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (CD five) (NNS teams))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBD played)
+                  (PP (IN during)
+                    (NP
+                      (NP (DT the) (JJ inaugural) (NN season))
+                      (PP (IN of)
+                        (NP
+                          (NML (NNP East) (NNP Coast))
+                          (NNP Hockey) (NNP League)))))
+                  (PRN (-LRB- -LRB-)
+                    (NP (NNP ECHL))
+                    (-RRB- -RRB-)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-2	The Carolina Thunderbirds 
+	1	Carolina
+			name:	ORGANIZATION				1-2	Carolina Thunderbirds 
+	2	Thunderbirds
+	3	were
+			sense:	be.v.01
+			prop:	be.01
+			V		3-3	were 
+			N-ARG-A1		0-2	The Carolina Thunderbirds 
+			N-ARG-A2		4-21	one of five teams that played during the inaugural season of East Coast Hockey League ( ECHL ) 
+	4	one
+			name:	NUMBER				4-4	one 
+	5	of
+	6	five
+			name:	NUMBER				6-6	five 
+	7	teams
+			sense:	team.n.01
+	8	that
+	9	played
+			sense:	play.v.01
+			prop:	play.01
+			V		9-9	played 
+			N-ARG-A0		6-7	five teams 
+			R-ARG-A0		8-8	that 
+			N-ARGM-TMP		10-21	during the inaugural season of East Coast Hockey League ( ECHL ) 
+	10	during
+	11	the
+	12	inaugural
+			sense:	inaugural.s.02
+	13	season
+			sense:	season.n.01
+	14	of
+	15	East
+			coref:	IDENT			2	15-18	East Coast Hockey League 
+			name:	ORGANIZATION				15-18	East Coast Hockey League 
+	16	Coast
+	17	Hockey
+	18	League
+	19	(
+	20	ECHL
+			name:	ORGANIZATION				20-20	ECHL 
+	21	)
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Thunderbirds won the first ever ECHL championship and were awarded the Riley Cup for the 1988–89 ECHL season .
+
+
+Treebanked sentence:
+--------------------
+The Thunderbirds won the first ever ECHL championship and were awarded the Riley Cup for the 1988 – 89 ECHL season . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNPS Thunderbirds))
+    (VP
+      (VP (VBD won)
+        (NP (DT the)
+          (ADJP (JJ first) (RB ever))
+          (NNP ECHL) (NN championship)))
+      (CC and)
+      (VP (VBD were)
+        (VP (VBN awarded)
+          (NP
+            (NP (DT the) (NNP Riley) (NNP Cup))
+            (PP (IN for)
+              (NP (DT the) (CD 1988)
+                (NML
+                  (QP (SYM –) (CD 89))
+                  (NN ECHL))
+                (NN season)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The Thunderbirds 
+	1	Thunderbirds
+			name:	ORGANIZATION				1-1	Thunderbirds 
+	2	won
+			sense:	win.v.01
+			prop:	win.01
+			V		2-2	won 
+			N-ARG-A0		0-1	The Thunderbirds 
+			N-ARG-A1		3-7	the first ever ECHL championship 
+	3	the
+	4	first
+			name:	ORDINAL				4-4	first 
+			sense:	first.a.01
+	5	ever
+			sense:	ever.r.01
+	6	ECHL
+			name:	ORGANIZATION				6-6	ECHL 
+	7	championship
+			sense:	championship.n.02
+	8	and
+	9	were
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	were 
+	10	awarded
+			sense:	award.v.01
+			prop:	award.01
+			V		10-10	awarded 
+			N-ARG-A2		0-1	The Thunderbirds 
+			N-ARG-A1		11-20	the Riley Cup for the 1988 – 89 ECHL season 
+	11	the
+	12	Riley
+			name:	MISC				12-13	Riley Cup 
+	13	Cup
+	14	for
+	15	the
+			coref:	IDENT			0	15-20	the 1988 – 89 ECHL season 
+	16	1988
+			coref:	IDENT			3	16-16	1988 
+			name:	DATE				16-16	1988 
+	17	–
+	18	89
+			name:	NUMBER				18-18	89 
+	19	ECHL
+			name:	ORGANIZATION				19-19	ECHL 
+	20	season
+			sense:	season.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The team changed its name to the Winston - Salem Thunderbirds before the start of 1989–90 season and the team remained in the ECHL until the end of the 1991–92 season when it was announced by co - owner Ed Broyhill that Winston - Salem would move to West Virginia to play as the Wheeling Thunderbirds .
+
+
+Treebanked sentence:
+--------------------
+The team changed its name to the Winston - Salem Thunderbirds before the start of 1989 – 90 season and the team remained in the ECHL until the end of the 1991 – 92 season when it was announced by co - owner Ed Broyhill that Winston - Salem would move to West Virginia to play as the Wheeling Thunderbirds . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN team))
+      (VP (VBD changed)
+        (NP (PRP$ its) (NN name))
+        (PP (IN to)
+          (NP (DT the) (NNP Winston) (HYPH -) (NNP Salem) (NNPS Thunderbirds)))
+        (PP (IN before)
+          (NP
+            (NP (DT the) (NN start))
+            (PP (IN of)
+              (NP
+                (NP (CD 1989))
+                (PP (SYM –)
+                  (NP (CD 90) (NN season)))))))))
+    (CC and)
+    (S
+      (NP (DT the) (NN team))
+      (VP (VBD remained)
+        (PP (IN in)
+          (NP (DT the) (NNP ECHL)))
+        (PP (IN until)
+          (NP
+            (NP (DT the) (NN end))
+            (PP (IN of)
+              (NP (DT the)
+                (NML
+                  (QP (CD 1991) (SYM –) (CD 92)))
+                (NN season)))))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP it))
+            (VP (VBD was)
+              (VP (VBN announced)
+                (PP (IN by)
+                  (NP
+                    (NP
+                      (NML (NN co) (HYPH -) (NN owner))
+                      (NNP Ed) (NNP Broyhill))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (NP (NNP Winston) (HYPH -) (NNP Salem))
+                        (VP (MD would)
+                          (VP (VB move)
+                            (PP (IN to)
+                              (NP (NNP West) (NNP Virginia)))
+                            (S
+                              (VP (TO to)
+                                (VP (VB play)
+                                  (PP (IN as)
+                                    (NP (DT the) (NNP Wheeling) (NNPS Thunderbirds))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The team 
+	1	team
+			sense:	team.n.01
+	2	changed
+			sense:	switch.v.03
+			prop:	change.01
+			V		2-2	changed 
+			N-ARG-A0		0-1	The team 
+			N-ARG-A1		3-4	its name 
+			N-ARG-A2		5-10	to the Winston - Salem Thunderbirds 
+			N-ARGM-TMP		11-18	before the start of 1989 – 90 season 
+	3	its
+			coref:	IDENT			1	3-3	its 
+	4	name
+			sense:	name.n.01
+	5	to
+	6	the
+	7	Winston
+	8	-
+	9	Salem
+	10	Thunderbirds
+	11	before
+	12	the
+			name:	DATE				12-15	the start of 1989 
+	13	start
+			sense:	start.n.01
+	14	of
+	15	1989
+	16	–
+	17	90
+			name:	NUMBER				17-17	90 
+	18	season
+			sense:	season.n.01
+	19	and
+	20	the
+			coref:	IDENT			1	20-21	the team 
+	21	team
+			sense:	team.n.01
+	22	remained
+			sense:	stay.v.01
+			prop:	remain.01
+			V		22-22	remained 
+			N-ARG-A1		20-21	the team 
+			N-ARG-A3		23-25	in the ECHL 
+			N-ARGM-TMP		26-59	until the end of the 1991 – 92 season when it was announced by co - owner Ed Broyhill that Winston - Salem would move to West Virginia to play as the Wheeling Thunderbirds 
+	23	in
+	24	the
+	25	ECHL
+			name:	ORGANIZATION				25-25	ECHL 
+	26	until
+	27	the
+	28	end
+			sense:	end.n.02
+	29	of
+	30	the
+			coref:	IDENT			0	30-34	the 1991 – 92 season 
+	31	1991
+			name:	DATE				31-31	1991 
+	32	–
+	33	92
+			name:	NUMBER				33-33	92 
+	34	season
+			sense:	season.n.01
+	35	when
+	36	it
+			coref:	IDENT			1	36-36	it 
+	37	was
+			sense:	be.v.01
+			prop:	be.03
+			V		37-37	was 
+	38	announced
+			sense:	announce.v.01
+			prop:	announce.01
+			V		38-38	announced 
+			N-ARGM-TMP		27-34	the end of the 1991 – 92 season 
+			R-ARGM-TMP		35-35	when 
+			N-ARG-A0		39-44	by co - owner Ed Broyhill 
+			N-ARG-A1		45-59	that Winston - Salem would move to West Virginia to play as the Wheeling Thunderbirds 
+	39	by
+	40	co
+			sense:	colorado.n.01
+	41	-
+	42	owner
+			name:	TITLE				42-42	owner 
+			sense:	owner.n.01
+	43	Ed
+			name:	PERSON				43-44	Ed Broyhill 
+	44	Broyhill
+	45	that
+	46	Winston
+			name:	CITY				46-46	Winston 
+	47	-
+			name:	LOCATION				47-47	- 
+	48	Salem
+			name:	CITY				48-48	Salem 
+	49	would
+	50	move
+			sense:	move.v.04
+			prop:	move.01
+			V		50-50	move 
+			N-ARG-A1		46-48	Winston - Salem 
+			N-ARGM-MOD		49-49	would 
+			N-ARG-A2		51-53	to West Virginia 
+			N-ARGM-PRP		54-59	to play as the Wheeling Thunderbirds 
+	51	to
+	52	West
+			name:	STATE_OR_PROVINCE				52-53	West Virginia 
+	53	Virginia
+	54	to
+	55	play
+			sense:	play.v.01
+			prop:	play.01
+			V		55-55	play 
+			N-ARG-A0		46-48	Winston - Salem 
+	56	as
+	57	the
+	58	Wheeling
+	59	Thunderbirds
+	60	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.15-20	the 1988 – 89 ECHL season 
+				5.30-34	the 1991 – 92 season 
+	Chain 1 (IDENT)
+				0.0-2	The Carolina Thunderbirds 
+				1.0-1	The Thunderbirds 
+				1.3-3	their 
+				2.0-1	The team 
+				3.0-2	The Carolina Thunderbirds 
+				4.0-1	The Thunderbirds 
+				5.0-1	The team 
+				5.3-3	its 
+				5.20-21	the team 
+				5.36-36	it 
+	Chain 2 (IDENT)
+				2.28-34	the newly created East Coast Hockey League 
+				2.4-8	the Atlantic Coast Hockey League 
+				3.15-18	East Coast Hockey League 
+	Chain 3 (IDENT)
+				2.36-36	1988 
+				4.16-16	1988 
+

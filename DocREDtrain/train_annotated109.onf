@@ -1,0 +1,684 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Rockwell City Bridge is located just east of Rockwell City , Iowa , United States .
+
+
+Treebanked sentence:
+--------------------
+The Rockwell City Bridge is located just east of Rockwell City , Iowa , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Rockwell) (NNP City) (NNP Bridge))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (ADVP (RB just) (RB east))
+        (PP (IN of)
+          (NP (NNP Rockwell) (NNP City) (, ,) (NNP Iowa) (, ,) (NNP United) (NNP States)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Rockwell
+			name:	LOCATION				1-3	Rockwell City Bridge 
+	2	City
+	3	Bridge
+	4	is
+			sense:	be.v.03
+			prop:	be.03
+			V		4-4	is 
+	5	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		5-5	located 
+			N-ARG-A1		0-3	The Rockwell City Bridge 
+			N-ARGM-LOC		6-15	just east of Rockwell City , Iowa , United States 
+	6	just
+			sense:	precisely.r.01
+	7	east
+			sense:	east.r.01
+	8	of
+	9	Rockwell
+			name:	LOCATION				9-10	Rockwell City 
+	10	City
+	11	,
+	12	Iowa
+			name:	STATE_OR_PROVINCE				12-12	Iowa 
+	13	,
+	14	United
+			name:	COUNTRY				14-15	United States 
+	15	States
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The span carried traffic on 270th Street over an unnamed stream .
+
+
+Treebanked sentence:
+--------------------
+The span carried traffic on 270th Street over an unnamed stream . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN span))
+    (VP (VBD carried)
+      (NP (NN traffic))
+      (PP (IN on)
+        (NP
+          (NP (NNP 270th) (NNP Street))
+          (PP (IN over)
+            (NP (DT an) (JJ unnamed) (NN stream))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The span 
+	1	span
+			sense:	bridge.n.01
+	2	carried
+			sense:	transport.v.02
+			prop:	carry.01
+			V		2-2	carried 
+			N-ARG-A0		0-1	The span 
+			N-ARG-A1		3-6	traffic on 270th Street 
+	3	traffic
+			sense:	traffic.n.01
+	4	on
+	5	270th
+	6	Street
+	7	over
+	8	an
+	9	unnamed
+			sense:	nameless.s.01
+	10	stream
+			sense:	stream.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1915 Calhoun County requested the Iowa State Highway Commission ( ISHC ) and Des Moines engineer James B. Marsh to design a bridge for this crossing .
+
+
+Treebanked sentence:
+--------------------
+In 1915 Calhoun County requested the Iowa State Highway Commission ( ISHC ) and Des Moines engineer James B. Marsh to design a bridge for this crossing . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1915)))
+    (NP (NNP Calhoun) (NNP County))
+    (VP (VBD requested)
+      (NP
+        (NP (DT the)
+          (NML (NNP Iowa) (NNP State) (NNP Highway) (NNP Commission))
+          (NML
+            (NML (-LRB- -LRB-) (NNP ISHC) (-RRB- -RRB-))
+            (CC and)
+            (NML (NNP Des) (NNP Moines)))
+          (NN engineer))
+        (NP (NNP James) (NNP B.) (NNP Marsh)))
+      (S
+        (VP (TO to)
+          (VP (VB design)
+            (NP
+              (NP (DT a) (NN bridge))
+              (PP (IN for)
+                (NP (DT this) (NN crossing))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1915
+			name:	DATE				1-1	1915 
+	2	Calhoun
+			name:	CITY				2-2	Calhoun 
+	3	County
+			name:	LOCATION				3-3	County 
+	4	requested
+			sense:	request.v.02
+			prop:	request.01
+			V		4-4	requested 
+			N-ARGM-TMP		0-1	In 1915 
+			N-ARG-A0		2-3	Calhoun County 
+			N-ARG-A2		5-19	the Iowa State Highway Commission ( ISHC ) and Des Moines engineer James B. Marsh 
+			N-ARG-A1		20-26	to design a bridge for this crossing 
+	5	the
+	6	Iowa
+			name:	ORGANIZATION				6-9	Iowa State Highway Commission 
+	7	State
+	8	Highway
+	9	Commission
+	10	(
+	11	ISHC
+			coref:	IDENT			1	11-11	ISHC 
+			name:	ORGANIZATION				11-11	ISHC 
+	12	)
+	13	and
+	14	Des
+			name:	CITY				14-15	Des Moines 
+	15	Moines
+	16	engineer
+			name:	TITLE				16-16	engineer 
+			sense:	engineer.n.01
+	17	James
+			coref:	IDENT			2	17-19	James B. Marsh 
+			name:	PERSON				17-19	James B. Marsh 
+	18	B.
+	19	Marsh
+	20	to
+	21	design
+			sense:	design.v.04
+			prop:	design.01
+			V		21-21	design 
+			N-ARG-A0		5-19	the Iowa State Highway Commission ( ISHC ) and Des Moines engineer James B. Marsh 
+			N-ARG-A1		22-26	a bridge for this crossing 
+	22	a
+	23	bridge
+			sense:	bridge.n.01
+	24	for
+	25	this
+			coref:	IDENT			0	25-26	this crossing 
+	26	crossing
+			sense:	crossing.n.05
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The ISHC designed a double span concrete girder structure , while Marsh submitted his patented single - span rainbow arch configuration .
+
+
+Treebanked sentence:
+--------------------
+The ISHC designed a double span concrete girder structure , while Marsh submitted his patented single - span rainbow arch configuration . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP ISHC))
+    (VP (VBD designed)
+      (NP (DT a) (JJ double) (NN span) (NN concrete) (NN girder) (NN structure))
+      (, ,)
+      (SBAR (IN while)
+        (S
+          (NP (NNP Marsh))
+          (VP (VBD submitted)
+            (NP (PRP$ his) (VBN patented)
+              (NML (JJ single) (HYPH -) (NN span))
+              (NN rainbow) (NN arch) (NN configuration))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The ISHC 
+	1	ISHC
+	2	designed
+			sense:	design.v.04
+			prop:	design.01
+			V		2-2	designed 
+			N-ARG-A0		0-1	The ISHC 
+			N-ARG-A1		3-8	a double span concrete girder structure 
+			N-ARGM-ADV		10-20	while Marsh submitted his patented single - span rainbow arch configuration 
+	3	a
+	4	double
+			sense:	double.s.03
+	5	span
+			sense:	bridge.n.01
+	6	concrete
+			sense:	concrete.n.01
+	7	girder
+			sense:	girder.n.01
+	8	structure
+			sense:	structure.n.01
+	9	,
+	10	while
+	11	Marsh
+			coref:	IDENT			2	11-11	Marsh 
+			name:	PERSON				11-11	Marsh 
+	12	submitted
+			sense:	submit.v.01
+			prop:	submit.01
+			V		12-12	submitted 
+			N-ARG-A0		11-11	Marsh 
+			N-ARG-A1		13-20	his patented single - span rainbow arch configuration 
+	13	his
+			coref:	IDENT			2	13-13	his 
+	14	patented
+			sense:	patent.v.01
+			prop:	patent.01
+			V		14-14	patented 
+			N-ARG-A1		15-20	single - span rainbow arch configuration 
+	15	single
+			sense:	individual.a.01
+	16	-
+	17	span
+			sense:	bridge.n.01
+	18	rainbow
+			sense:	rainbow.n.01
+	19	arch
+			sense:	arch.n.04
+	20	configuration
+			sense:	configuration.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+They chose the Marsh submission , and contracted with the Iowa Bridge Company to build six bridges for $ 11,690 , which included the costs for this bridge at $ 4,107.65 .
+
+
+Treebanked sentence:
+--------------------
+They chose the Marsh submission , and contracted with the Iowa Bridge Company to build six bridges for $ 11,690 , which included the costs for this bridge at $ 4,107.65 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP
+      (VP (VBD chose)
+        (NP (DT the) (NNP Marsh) (NN submission)))
+      (, ,)
+      (CC and)
+      (VP (VBN contracted)
+        (PP (IN with)
+          (NP (DT the)
+            (NML (NNP Iowa) (NNP Bridge))
+            (NN Company)))
+        (S
+          (VP (TO to)
+            (VP (VB build)
+              (NP (CD six) (NNS bridges))
+              (PP (IN for)
+                (NP
+                  (NP ($ $) (CD 11,690))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBD included)
+                        (NP (DT the) (NNS costs))
+                        (PP (IN for)
+                          (NP (DT this) (NN bridge)))
+                        (PP (IN at)
+                          (NP ($ $) (CD 4,107.65)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	They
+			coref:	IDENT			1	0-0	They 
+	1	chose
+			sense:	choose.v.01
+			prop:	choose.01
+			V		1-1	chose 
+			N-ARG-A0		0-0	They 
+			N-ARG-A1		2-4	the Marsh submission 
+	2	the
+	3	Marsh
+	4	submission
+			sense:	submission.n.01
+	5	,
+	6	and
+	7	contracted
+			sense:	contract.v.01
+			prop:	contract.02
+			V		7-7	contracted 
+			N-ARG-A0		0-0	They 
+			N-ARG-A2		8-12	with the Iowa Bridge Company 
+			N-ARG-A1		13-30	to build six bridges for $ 11,690 , which included the costs for this bridge at $ 4,107.65 
+	8	with
+	9	the
+	10	Iowa
+			name:	ORGANIZATION				10-12	Iowa Bridge Company 
+	11	Bridge
+	12	Company
+			sense:	company.n.01
+	13	to
+	14	build
+			sense:	construct.v.01
+			prop:	build.01
+			V		14-14	build 
+			N-ARG-A0		0-0	They 
+			N-ARG-A1		15-16	six bridges 
+	15	six
+			name:	NUMBER				15-15	six 
+	16	bridges
+			sense:	bridge.n.01
+	17	for
+	18	$
+			name:	MONEY				18-19	$ 11,690 
+	19	11,690
+	20	,
+	21	which
+	22	included
+			sense:	include.v.01
+			prop:	include.01
+			V		22-22	included 
+			N-ARG-A2		18-19	$ 11,690 
+			R-ARG-A2		21-21	which 
+			N-ARG-A1		23-30	the costs for this bridge at $ 4,107.65 
+	23	the
+	24	costs
+			sense:	cost.n.01
+	25	for
+	26	this
+	27	bridge
+			sense:	bridge.n.01
+	28	at
+	29	$
+			name:	MONEY				29-30	$ 4,107.65 
+	30	4,107.65
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Originally built to serve a county road , it was later incorporated into the route for U.S. Highway 20 and carried heavy traffic until the highway was realigned in 1981 .
+
+
+Treebanked sentence:
+--------------------
+Originally built to serve a county road , it was later incorporated into the route for U.S. Highway 20 and carried heavy traffic until the highway was realigned in 1981 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (ADVP (RB Originally))
+      (VP (VBN built)
+        (S
+          (VP (TO to)
+            (VP (VB serve)
+              (NP (DT a) (NN county) (NN road)))))))
+    (, ,)
+    (NP (PRP it))
+    (VP
+      (VP (VBD was)
+        (ADVP (RB later))
+        (VP (VBN incorporated)
+          (PP (IN into)
+            (NP
+              (NP (DT the) (NN route))
+              (PP (IN for)
+                (NP (NNP U.S.) (NNP Highway) (CD 20)))))))
+      (CC and)
+      (VP (VBD carried)
+        (NP (JJ heavy) (NN traffic))
+        (SBAR (IN until)
+          (S
+            (NP (DT the) (NN highway))
+            (VP (VBD was)
+              (VP (VBN realigned)
+                (PP (IN in)
+                  (NP (CD 1981)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Originally
+			sense:	primitively.r.01
+	1	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		1-1	built 
+			N-ARGM-TMP		0-0	Originally 
+			N-ARGM-PRP		2-6	to serve a county road 
+			N-ARG-A1		8-8	it 
+	2	to
+	3	serve
+			sense:	service.v.01
+			prop:	serve.01
+			V		3-3	serve 
+			N-ARG-A2		4-6	a county road 
+			N-ARG-A0		8-8	it 
+	4	a
+	5	county
+			sense:	county.n.01
+	6	road
+			sense:	road.n.01
+	7	,
+	8	it
+			coref:	IDENT			1	8-8	it 
+	9	was
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	was 
+	10	later
+			sense:	subsequently.r.01
+	11	incorporated
+			sense:	integrate.v.01
+			prop:	incorporate.02
+			V		11-11	incorporated 
+			N-ARGM-ADV		0-6	Originally built to serve a county road 
+			N-ARG-A1		8-8	it 
+			N-ARGM-TMP		10-10	later 
+			N-ARG-A2		12-18	into the route for U.S. Highway 20 
+	12	into
+	13	the
+	14	route
+			sense:	path.n.03
+	15	for
+	16	U.S.
+			coref:	IDENT			3	16-18	U.S. Highway 20 
+			name:	COUNTRY				16-16	U.S. 
+	17	Highway
+	18	20
+			name:	NUMBER				18-18	20 
+	19	and
+	20	carried
+			sense:	transport.v.02
+			prop:	carry.01
+			V		20-20	carried 
+			R-ARG-A0		0-6	Originally built to serve a county road 
+			N-ARG-A0		8-8	it 
+			N-ARG-A1		21-22	heavy traffic 
+			N-ARGM-TMP		23-29	until the highway was realigned in 1981 
+	21	heavy
+			sense:	heavy.a.02
+	22	traffic
+			sense:	traffic.n.01
+	23	until
+	24	the
+			coref:	IDENT			3	24-25	the highway 
+	25	highway
+			sense:	highway.n.01
+	26	was
+			sense:	be.v.01
+			prop:	be.03
+			V		26-26	was 
+	27	realigned
+			sense:	realign.v.01
+			prop:	realign.01
+			V		27-27	realigned 
+			N-ARG-A1		24-25	the highway 
+			N-ARGM-TMP		28-29	in 1981 
+	28	in
+	29	1981
+			name:	DATE				29-29	1981 
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+While no longer in use , the bridge remains in place just south of the replacement span .
+
+
+Treebanked sentence:
+--------------------
+While no longer in use , the bridge remains in place just south of the replacement span . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN While)
+      (FRAG
+        (ADVP (RB no) (RBR longer))
+        (PP (IN in)
+          (NP (NN use)))))
+    (, ,)
+    (NP (DT the) (NN bridge))
+    (VP (VBZ remains)
+      (PP (IN in)
+        (NP
+          (NP (NN place))
+          (PP
+            (ADVP (RB just) (RB south))
+            (IN of)
+            (NP (DT the) (NN replacement) (NN span))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	While
+	1	no
+			sense:	no.r.01
+	2	longer
+			sense:	long.r.01
+	3	in
+	4	use
+			sense:	use.n.01
+	5	,
+	6	the
+	7	bridge
+			sense:	bridge.n.01
+	8	remains
+			sense:	stay.v.01
+			prop:	remain.01
+			V		8-8	remains 
+			N-ARGM-TMP		0-4	While no longer in use 
+			N-ARG-A1		6-7	the bridge 
+			N-ARG-A3		9-10	in place 
+			N-ARGM-LOC		11-16	just south of the replacement span 
+	9	in
+	10	place
+			sense:	topographic_point.n.01
+	11	just
+			sense:	precisely.r.01
+	12	south
+			sense:	south.r.01
+	13	of
+	14	the
+	15	replacement
+			sense:	substitute.n.01
+	16	span
+			sense:	bridge.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was listed on the National Register of Historic Places in 1998 .
+
+
+Treebanked sentence:
+--------------------
+It was listed on the National Register of Historic Places in 1998 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN listed)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NNP National) (NNP Register))
+            (PP (IN of)
+              (NP (JJ Historic) (NNS Places)))))
+        (PP (IN in)
+          (NP (CD 1998)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	listed
+			sense:	list.v.02
+			prop:	list.01
+			V		2-2	listed 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		3-9	on the National Register of Historic Places 
+			N-ARGM-TMP		10-11	in 1998 
+	3	on
+	4	the
+	5	National
+	6	Register
+	7	of
+	8	Historic
+			sense:	historic.s.01
+	9	Places
+			sense:	topographic_point.n.01
+	10	in
+	11	1998
+			name:	DATE				11-11	1998 
+	12	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.0-1	The span 
+				2.25-26	this crossing 
+	Chain 1 (IDENT)
+				3.0-1	The ISHC 
+				2.11-11	ISHC 
+				4.0-0	They 
+				5.8-8	it 
+	Chain 2 (IDENT)
+				2.17-19	James B. Marsh 
+				3.11-11	Marsh 
+				3.13-13	his 
+	Chain 3 (IDENT)
+				5.16-18	U.S. Highway 20 
+				5.24-25	the highway 
+

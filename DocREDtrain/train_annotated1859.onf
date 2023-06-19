@@ -1,0 +1,534 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mario , who serves as Nintendo 's mascot , is a fictional character created by game designer Shigeru Miyamoto and voiced by Charles Martinet .
+
+
+Treebanked sentence:
+--------------------
+Mario , who serves as Nintendo 's mascot , is a fictional character created by game designer Shigeru Miyamoto and voiced by Charles Martinet . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Mario))
+      (, ,)
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ serves)
+            (PP (IN as)
+              (NP
+                (NP (NNP Nintendo) (POS 's))
+                (NN mascot))))))
+      (, ,))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ fictional) (NN character))
+        (VP
+          (VP (VBN created)
+            (PP (IN by)
+              (NP
+                (NML (NN game) (NN designer))
+                (NNP Shigeru) (NNP Miyamoto))))
+          (CC and)
+          (VP (VBN voiced)
+            (PP (IN by)
+              (NP (NNP Charles) (NNP Martinet)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mario
+			coref:	IDENT			1	0-7	Mario , who serves as Nintendo 's mascot 
+			name:	PERSON				0-0	Mario 
+	1	,
+	2	who
+	3	serves
+			sense:	serve.v.01
+			prop:	serve.01
+			V		3-3	serves 
+			N-ARG-A0		0-0	Mario 
+			R-ARG-A0		2-2	who 
+			N-ARG-A1		4-7	as Nintendo 's mascot 
+	4	as
+	5	Nintendo
+			name:	ORGANIZATION				5-5	Nintendo 
+	6	's
+	7	mascot
+			sense:	mascot.n.01
+	8	,
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-7	Mario , who serves as Nintendo 's mascot 
+			N-ARG-A2		10-23	a fictional character created by game designer Shigeru Miyamoto and voiced by Charles Martinet 
+	10	a
+	11	fictional
+			sense:	fabricated.s.01
+	12	character
+			sense:	fictional_character.n.01
+	13	created
+			sense:	create.v.02
+			prop:	create.01
+			V		13-13	created 
+			N-ARG-A1		10-12	a fictional character 
+			N-ARG-A0		14-18	by game designer Shigeru Miyamoto 
+	14	by
+	15	game
+			name:	TITLE				15-16	game designer 
+			sense:	game.n.03
+	16	designer
+			sense:	architect.n.01
+	17	Shigeru
+			name:	PERSON				17-18	Shigeru Miyamoto 
+	18	Miyamoto
+	19	and
+	20	voiced
+			sense:	voice.v.01
+			prop:	voice.01
+			V		20-20	voiced 
+			N-ARG-A1		10-12	a fictional character 
+			N-ARG-A0		21-23	by Charles Martinet 
+	21	by
+	22	Charles
+			name:	PERSON				22-23	Charles Martinet 
+	23	Martinet
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This is a list of video games where the character Mario plays a part , either as the protagonist , antagonist , supporting character , as part of an ensemble cast , as a cameo , or in a game within a game .
+
+
+Treebanked sentence:
+--------------------
+This is a list of video games where the character Mario plays a part , either as the protagonist , antagonist , supporting character , as part of an ensemble cast , as a cameo , or in a game within a game . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN list))
+        (PP (IN of)
+          (NP
+            (NP (NN video) (NNS games))
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (DT the) (NN character) (NNP Mario))
+                (VP (VBZ plays)
+                  (NP
+                    (NP (DT a) (NN part))
+                    (, ,)
+                    (CC either)
+                    (PP (IN as)
+                      (NP
+                        (NP (DT the) (NN protagonist))
+                        (, ,)
+                        (NP (NN antagonist))
+                        (, ,)
+                        (NP (VBG supporting) (NN character))
+                        (, ,)
+                        (PP
+                          (PP (IN as)
+                            (NP
+                              (NP (NN part))
+                              (PP (IN of)
+                                (NP (DT an) (NN ensemble) (NN cast)))))
+                          (, ,)
+                          (PP (IN as)
+                            (NP (DT a) (NN cameo)))
+                          (, ,)
+                          (CC or)
+                          (PP (IN in)
+                            (NP (DT a) (NN game))))))
+                    (PP (IN within)
+                      (NP (DT a) (NN game)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+			coref:	IDENT			0	0-0	This 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	This 
+			N-ARG-A2		2-42	a list of video games where the character Mario plays a part , either as the protagonist , antagonist , supporting character , as part of an ensemble cast , as a cameo , or in a game within a game 
+	2	a
+	3	list
+			sense:	list.n.01
+	4	of
+	5	video
+			sense:	video_recording.n.01
+	6	games
+			sense:	game.n.03
+	7	where
+	8	the
+			coref:	IDENT			1	8-10	the character Mario 
+	9	character
+			sense:	fictional_character.n.01
+	10	Mario
+			name:	PERSON				10-10	Mario 
+	11	plays
+			sense:	play.v.02
+			prop:	play.02
+			V		11-11	plays 
+			N-ARGM-LOC		5-6	video games 
+			R-ARGM-LOC		7-7	where 
+			N-ARG-A0		8-10	the character Mario 
+			N-ARG-A1		12-13	a part 
+			N-ARGM-ADV		15-42	either as the protagonist , antagonist , supporting character , as part of an ensemble cast , as a cameo , or in a game within a game 
+	12	a
+	13	part
+			sense:	function.n.03
+	14	,
+	15	either
+	16	as
+	17	the
+	18	protagonist
+			sense:	protagonist.n.02
+	19	,
+	20	antagonist
+			sense:	adversary.n.01
+	21	,
+	22	supporting
+			sense:	support.v.09
+			prop:	support.01
+			V		22-22	supporting 
+			N-ARG-A0		23-23	character 
+	23	character
+			sense:	fictional_character.n.01
+	24	,
+	25	as
+	26	part
+			sense:	part.n.01
+	27	of
+	28	an
+	29	ensemble
+			sense:	ensemble.n.02
+	30	cast
+			sense:	cast.n.01
+	31	,
+	32	as
+	33	a
+	34	cameo
+			sense:	cameo.n.01
+	35	,
+	36	or
+	37	in
+	38	a
+	39	game
+			sense:	game.n.03
+	40	within
+	41	a
+	42	game
+			sense:	game.n.03
+	43	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It does not include simple references to the character , such as the portraits of Mario found in and .
+
+
+Treebanked sentence:
+--------------------
+It does not include simple references to the character , such as the portraits of Mario found in and . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ does) (RB not)
+      (VP
+        (VP (VB include)
+          (NP (JJ simple) (NNS references))
+          (PP (IN to)
+            (NP (DT the) (NN character)))
+          (, ,)
+          (SBAR (JJ such) (IN as)
+            (S
+              (NP
+                (NP (DT the) (NNS portraits))
+                (PP (IN of)
+                  (NP (NNP Mario))))
+              (VP (VBD found)
+                (PP (IN in))))))
+        (CC and)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	does
+			sense:	make.v.01
+			prop:	do.01
+			V		1-1	does 
+	2	not
+			sense:	not.r.01
+	3	include
+			sense:	include.v.01
+			prop:	include.01
+			V		3-3	include 
+			N-ARG-A0		0-0	It 
+			N-ARGM-NEG		2-2	not 
+			N-ARG-A1		4-18	simple references to the character , such as the portraits of Mario found in and 
+	4	simple
+			sense:	simple.a.01
+	5	references
+			sense:	mention.n.01
+	6	to
+	7	the
+	8	character
+			sense:	fictional_character.n.01
+	9	,
+	10	such
+			sense:	such.s.01
+	11	as
+	12	the
+	13	portraits
+			sense:	portrait.n.02
+	14	of
+	15	Mario
+			coref:	IDENT			1	15-15	Mario 
+	16	found
+			sense:	find.v.01
+			prop:	find.01
+			V		16-16	found 
+			N-ARG-A1		12-15	the portraits of Mario 
+			N-ARGM-LOC		17-18	in and 
+	17	in
+	18	and
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The year indicated is the year the game was first released , most commonly in Japan ; games were sometimes released years later in other regions of the world .
+
+
+Treebanked sentence:
+--------------------
+The year indicated is the year the game was first released , most commonly in Japan ; games were sometimes released years later in other regions of the world . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN year))
+      (VP (VBD indicated)
+        (SBAR
+          (S
+            (VP (VBZ is)
+              (NP
+                (NP
+                  (NP (DT the) (NN year))
+                  (SBAR
+                    (S
+                      (NP (DT the) (NN game))
+                      (VP (VBD was)
+                        (ADVP (JJ first))
+                        (VP (VBN released))))))
+                (, ,)
+                (NP
+                  (NP (JJS most))
+                  (PP
+                    (ADVP (RB commonly))
+                    (IN in)
+                    (NP (NNP Japan))))))))))
+    (: ;)
+    (S
+      (NP (NNS games))
+      (VP (VBD were)
+        (ADVP (RB sometimes))
+        (VP (VBN released)
+          (NP (NNS years))
+          (ADVP (RB later))
+          (PP (IN in)
+            (NP
+              (NP (JJ other) (NNS regions))
+              (PP (IN of)
+                (NP (DT the) (NN world))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			name:	DATE				0-1	The year 
+	1	year
+			sense:	year.n.01
+	2	indicated
+			sense:	indicate.v.02
+			prop:	indicate.01
+			V		2-2	indicated 
+			N-ARG-A1		0-1	The year 
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	The year indicated 
+			N-ARG-A2		4-15	the year the game was first released , most commonly in Japan 
+	4	the
+			name:	DATE				4-5	the year 
+	5	year
+			sense:	year.n.01
+	6	the
+	7	game
+			sense:	game.n.03
+	8	was
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	was 
+	9	first
+			name:	ORDINAL				9-9	first 
+			sense:	first.a.01
+	10	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		10-10	released 
+			N-ARGM-TMP		4-5	the year 
+			N-ARG-A1		6-7	the game 
+			N-ARGM-TMP		9-9	first 
+			N-ARGM-LOC		12-15	most commonly in Japan 
+	11	,
+	12	most
+			sense:	most.a.02
+	13	commonly
+			sense:	normally.r.01
+	14	in
+	15	Japan
+			name:	COUNTRY				15-15	Japan 
+	16	;
+	17	games
+			sense:	game.n.03
+	18	were
+			sense:	be.v.01
+			prop:	be.03
+			V		18-18	were 
+	19	sometimes
+			sense:	sometimes.r.01
+	20	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		20-20	released 
+			N-ARG-A1		17-17	games 
+			N-ARGM-TMP		19-19	sometimes 
+			N-ARGM-TMP		21-22	years later 
+			N-ARGM-LOC		23-28	in other regions of the world 
+	21	years
+			name:	DATE				21-22	years later 
+			sense:	year.n.01
+	22	later
+			sense:	subsequently.r.01
+	23	in
+	24	other
+			sense:	other.a.01
+	25	regions
+			sense:	region.n.01
+	26	of
+	27	the
+	28	world
+			sense:	earth.n.01
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The list includes ports , remakes and compilations , but not Virtual Console re - releases .
+
+
+Treebanked sentence:
+--------------------
+The list includes ports , remakes and compilations , but not Virtual Console re - releases . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN list))
+    (VP (VBZ includes)
+      (NP
+        (NP (NNS ports) (, ,) (NNS remakes)
+          (CC and)
+          (NNS compilations))
+        (, ,)
+        (CONJP (CC but)
+          (RB not))
+        (NP
+          (NP (JJ Virtual) (NNP Console))
+          (PP (IN re) (HYPH -)
+            (NP (NNS releases))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	list
+			sense:	list.n.01
+	2	includes
+			sense:	include.v.01
+			prop:	include.01
+			V		2-2	includes 
+			N-ARG-A2		0-1	The list 
+			N-ARG-A1		3-15	ports , remakes and compilations , but not Virtual Console re - releases 
+	3	ports
+			sense:	interface.n.04
+	4	,
+	5	remakes
+			sense:	remake.n.01
+	6	and
+	7	compilations
+			sense:	compilation.n.01
+	8	,
+	9	but
+	10	not
+			sense:	not.r.01
+	11	Virtual
+			sense:	virtual.s.02
+	12	Console
+	13	re
+	14	-
+	15	releases
+			sense:	release.n.01
+	16	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.0-0	This 
+				2.0-0	It 
+	Chain 1 (IDENT)
+				1.8-10	the character Mario 
+				0.0-7	Mario , who serves as Nintendo 's mascot 
+				2.15-15	Mario 
+

@@ -1,0 +1,689 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Airmail Flyers ' Medal of Honor is a United States decoration issued by the Post Office Department .
+
+
+Treebanked sentence:
+--------------------
+The Airmail Flyers ' Medal of Honor is a United States decoration issued by the Post Office Department . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT The) (NNP Airmail) (NNPS Flyers) (POS '))
+        (NN Medal))
+      (PP (IN of)
+        (NP (NN Honor))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a)
+          (NML (NNP United) (NNP States))
+          (NN decoration))
+        (VP (VBN issued)
+          (PP (IN by)
+            (NP (DT the) (NNP Post) (NNP Office) (NNP Department))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-6	The Airmail Flyers ' Medal of Honor 
+	1	Airmail
+	2	Flyers
+	3	'
+	4	Medal
+			sense:	decoration.n.02
+	5	of
+	6	Honor
+			sense:	honor.n.02
+	7	is
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		0-6	The Airmail Flyers ' Medal of Honor 
+			N-ARG-A2		8-17	a United States decoration issued by the Post Office Department 
+	8	a
+			coref:	IDENT			1	8-17	a United States decoration issued by the Post Office Department 
+	9	United
+			coref:	IDENT			4	9-10	United States 
+			name:	COUNTRY				9-10	United States 
+	10	States
+	11	decoration
+			sense:	decoration.n.02
+	12	issued
+			sense:	write_out.v.02
+			prop:	issue.01
+			V		12-12	issued 
+			N-ARG-A1		8-11	a United States decoration 
+			N-ARG-A0		13-17	by the Post Office Department 
+	13	by
+	14	the
+	15	Post
+			name:	ORGANIZATION				15-17	Post Office Department 
+	16	Office
+	17	Department
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The decoration was authorized by Act of the United States Congress , February 14 , 1931 , for presentation by the President of the United States , but not in the name of the Congress .
+
+
+Treebanked sentence:
+--------------------
+The decoration was authorized by Act of the United States Congress , February 14 , 1931 , for presentation by the President of the United States , but not in the name of the Congress . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN decoration))
+    (VP (VBD was)
+      (VP (VBN authorized)
+        (PP (IN by)
+          (NP
+            (NP (NNP Act))
+            (PP (IN of)
+              (NP (DT the) (NNP United) (NNP States) (NNP Congress)))
+            (, ,)
+            (NP-TMP (NNP February) (CD 14) (, ,) (CD 1931))
+            (, ,)
+            (PP (IN for)
+              (NP
+                (NP (NN presentation))
+                (PP
+                  (PP (IN by)
+                    (NP
+                      (NP (DT the) (NNP President))
+                      (PP (IN of)
+                        (NP (DT the) (NNP United) (NNP States)))))
+                  (, ,)
+                  (CONJP (CC but)
+                    (RB not))
+                  (PP (IN in)
+                    (NP
+                      (NP (DT the) (NN name))
+                      (PP (IN of)
+                        (NP (DT the) (NNP Congress))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The decoration 
+	1	decoration
+			sense:	decoration.n.02
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	authorized
+			sense:	authorize.v.01
+			prop:	authorize.01
+			V		3-3	authorized 
+			N-ARG-A1		0-1	The decoration 
+			N-ARG-A0		4-16	by Act of the United States Congress , February 14 , 1931 , 
+			N-ARG-A3		17-34	for presentation by the President of the United States , but not in the name of the Congress 
+	4	by
+	5	Act
+	6	of
+	7	the
+	8	United
+			name:	ORGANIZATION				8-10	United States Congress 
+	9	States
+	10	Congress
+	11	,
+	12	February
+			name:	DATE				12-15	February 14 , 1931 
+	13	14
+	14	,
+	15	1931
+	16	,
+	17	for
+	18	presentation
+			sense:	presentation.n.01
+	19	by
+	20	the
+	21	President
+			name:	TITLE				21-21	President 
+	22	of
+	23	the
+			coref:	IDENT			4	23-25	the United States 
+	24	United
+			name:	COUNTRY				24-25	United States 
+	25	States
+	26	,
+	27	but
+	28	not
+			sense:	not.r.01
+	29	in
+	30	the
+	31	name
+			sense:	name.n.01
+	32	of
+	33	the
+	34	Congress
+			name:	ORGANIZATION				34-34	Congress 
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The medal was intended to recognize any person who , while serving as a pilot in the airmail service , distinguished themselves by acts of heroism or extraordinary achievement .
+
+
+Treebanked sentence:
+--------------------
+The medal was intended to recognize any person who , while serving as a pilot in the airmail service , distinguished themselves by acts of heroism or extraordinary achievement . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN medal))
+    (VP (VBD was)
+      (VP (VBN intended)
+        (S
+          (VP (TO to)
+            (VP (VB recognize)
+              (NP
+                (NP (DT any) (NN person))
+                (SBAR
+                  (WHNP (WP who))
+                  (, ,)
+                  (S
+                    (ADVP (IN while))
+                    (VP (VBG serving)
+                      (SBAR (IN as)
+                        (S
+                          (S
+                            (NP
+                              (NP (DT a) (NN pilot))
+                              (PP (IN in)
+                                (NP (DT the) (NN airmail) (NN service)))))
+                          (, ,)
+                          (ADJP (JJ distinguished))
+                          (NP (PRP themselves))))))))
+              (PP (IN by)
+                (NP
+                  (NP (NNS acts))
+                  (PP (IN of)
+                    (NP
+                      (NP (NN heroism))
+                      (CC or)
+                      (NP (JJ extraordinary) (NN achievement)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-1	The medal 
+	1	medal
+			sense:	decoration.n.02
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	intended
+			sense:	intend.v.01
+			prop:	intend.01
+			V		3-3	intended 
+			N-ARG-A2		0-1	The medal 
+			N-ARG-A1		4-28	to recognize any person who , while serving as a pilot in the airmail service , distinguished themselves by acts of heroism or extraordinary achievement 
+	4	to
+	5	recognize
+			sense:	acknowledge.v.04
+			prop:	recognize.01
+			V		5-5	recognize 
+			N-ARG-A0		0-1	The medal 
+			N-ARG-A1		6-28	any person who , while serving as a pilot in the airmail service , distinguished themselves by acts of heroism or extraordinary achievement 
+	6	any
+	7	person
+			sense:	person.n.01
+	8	who
+	9	,
+	10	while
+	11	serving
+			sense:	serve.v.02
+			prop:	serve.01
+			V		11-11	serving 
+			N-ARG-A0		8-8	who 
+			N-ARG-A1		12-18	as a pilot in the airmail service 
+	12	as
+	13	a
+	14	pilot
+			name:	TITLE				14-14	pilot 
+			sense:	pilot.n.01
+	15	in
+	16	the
+	17	airmail
+			sense:	airmail.n.02
+	18	service
+			sense:	service.n.04
+	19	,
+	20	distinguished
+			sense:	distinguished.s.01
+	21	themselves
+	22	by
+	23	acts
+			sense:	act.n.02
+	24	of
+	25	heroism
+			sense:	heroism.n.01
+	26	or
+	27	extraordinary
+			sense:	extraordinary.a.01
+	28	achievement
+			sense:	accomplishment.n.01
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Retroactive to May 15 , 1918 when the firsts continuously schedule public service airmail route was established between Washington , D.C. and New York City by way of Philadelphia .
+
+
+Treebanked sentence:
+--------------------
+Retroactive to May 15 , 1918 when the firsts continuously schedule public service airmail route was established between Washington , D.C. and New York City by way of Philadelphia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (ADJP (JJ Retroactive)
+        (PP (IN to)
+          (NP
+            (NP (NNP May) (CD 15) (, ,) (CD 1918))
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (DT the) (NNS firsts))
+                (ADVP (RB continuously))
+                (VP (VBP schedule)
+                  (NP (JJ public) (NN service))
+                  (NP (NN airmail))))))))
+      (NN route))
+    (VP (VBD was)
+      (VP (VBN established)
+        (PP (IN between)
+          (NP
+            (NML (NNP Washington) (, ,) (NNP D.C.)
+              (CC and)
+              (NNP New))
+            (NNP York) (NNP City)))
+        (PP (IN by)
+          (NP
+            (NP (NN way))
+            (PP (IN of)
+              (NP (NNP Philadelphia)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Retroactive
+			sense:	ex_post_facto.s.01
+	1	to
+	2	May
+			name:	DATE				2-5	May 15 , 1918 
+	3	15
+	4	,
+	5	1918
+	6	when
+	7	the
+	8	firsts
+			sense:	first.n.01
+	9	continuously
+			sense:	continuously.r.01
+	10	schedule
+			sense:	schedule.v.02
+			prop:	schedule.01
+			V		10-10	schedule 
+			N-ARGM-MNR		9-9	continuously 
+	11	public
+			sense:	public.a.01
+	12	service
+			sense:	service.n.04
+	13	airmail
+			sense:	airmail.n.02
+	14	route
+			sense:	path.n.03
+	15	was
+			sense:	be.v.01
+			prop:	be.03
+			V		15-15	was 
+	16	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		16-16	established 
+			N-ARGM-TMP		6-6	when 
+			N-ARG-A1		7-14	the firsts continuously schedule public service airmail route 
+			N-ARGM-LOC		17-24	between Washington , D.C. and New York City 
+			N-ARGM-MNR		25-28	by way of Philadelphia 
+	17	between
+	18	Washington
+			name:	STATE_OR_PROVINCE				18-18	Washington 
+	19	,
+	20	D.C.
+			name:	LOCATION				20-20	D.C. 
+	21	and
+	22	New
+			name:	CITY				22-24	New York City 
+	23	York
+	24	City
+	25	by
+	26	way
+			sense:	direction.n.01
+	27	of
+	28	Philadelphia
+			coref:	IDENT			0	28-28	Philadelphia 
+			name:	CITY				28-28	Philadelphia 
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Recommendations for the individual awards would come from the Postmaster General and be sent to the President for his approval and presentation .
+
+
+Treebanked sentence:
+--------------------
+Recommendations for the individual awards would come from the Postmaster General and be sent to the President for his approval and presentation . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNS Recommendations))
+      (PP (IN for)
+        (NP (DT the) (JJ individual) (NNS awards))))
+    (VP (MD would)
+      (VP
+        (VP (VB come)
+          (PP (IN from)
+            (NP (DT the) (NNP Postmaster) (NNP General))))
+        (CC and)
+        (VP (VB be)
+          (VP (VBN sent)
+            (PP (IN to)
+              (NP
+                (NP (DT the) (NNP President))
+                (PP (IN for)
+                  (NP (PRP$ his) (NN approval)
+                    (CC and)
+                    (NN presentation)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Recommendations
+			sense:	recommendation.n.01
+	1	for
+	2	the
+	3	individual
+			sense:	individual.a.01
+	4	awards
+			sense:	award.n.02
+	5	would
+	6	come
+			sense:	come.v.05
+			prop:	come.01
+			V		6-6	come 
+			N-ARG-A1		0-4	Recommendations for the individual awards 
+			N-ARGM-MOD		5-5	would 
+			N-ARG-A3		7-10	from the Postmaster General 
+	7	from
+	8	the
+			coref:	IDENT			2	8-10	the Postmaster General 
+	9	Postmaster
+	10	General
+			name:	TITLE				10-10	General 
+	11	and
+	12	be
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	be 
+			N-ARGM-MOD		5-5	would 
+	13	sent
+			sense:	mail.v.02
+			prop:	send.01
+			V		13-13	sent 
+			N-ARG-A1		0-4	Recommendations for the individual awards 
+			N-ARGM-MOD		5-5	would 
+			N-ARG-A2		14-16	to the President 
+			N-ARGM-PRP		17-21	for his approval and presentation 
+	14	to
+	15	the
+	16	President
+			name:	TITLE				16-16	President 
+	17	for
+	18	his
+			coref:	IDENT			2	18-18	his 
+	19	approval
+			sense:	blessing.n.01
+	20	and
+	21	presentation
+			sense:	presentation.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The medal was designed by Walker Kirtland Hancock , head of the sculptor department of the Pennsylvania Academy of Fine Arts , under the United States Commission of Fine Arts , of which Adolph Alexander Weinman was a member at the time .
+
+
+Treebanked sentence:
+--------------------
+The medal was designed by Walker Kirtland Hancock , head of the sculptor department of the Pennsylvania Academy of Fine Arts , under the United States Commission of Fine Arts , of which Adolph Alexander Weinman was a member at the time . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN medal))
+    (VP (VBD was)
+      (VP (VBN designed)
+        (PP (IN by)
+          (NP
+            (NP (NNP Walker) (NNP Kirtland) (NNP Hancock))
+            (, ,)
+            (NP
+              (NP (NN head))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NN sculptor) (NN department))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT the) (NNP Pennsylvania) (NNP Academy))
+                      (PP (IN of)
+                        (NP (NNP Fine) (NNPS Arts))))))))))
+        (, ,)
+        (PP (IN under)
+          (NP
+            (NP
+              (NP (DT the) (NNP United) (NNP States) (NNP Commission))
+              (PP (IN of)
+                (NP (NNP Fine) (NNPS Arts))))
+            (, ,)
+            (SBAR
+              (WHPP (IN of)
+                (WHNP (WDT which)))
+              (S
+                (NP (NNP Adolph) (NNP Alexander) (NNP Weinman))
+                (VP (VBD was)
+                  (NP
+                    (NP (DT a) (NN member))
+                    (PP (IN at)
+                      (NP (DT the) (NN time)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-1	The medal 
+	1	medal
+			sense:	decoration.n.02
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	designed
+			sense:	design.v.03
+			prop:	design.01
+			V		3-3	designed 
+			N-ARG-A1		0-1	The medal 
+			N-ARG-A0		4-21	by Walker Kirtland Hancock , head of the sculptor department of the Pennsylvania Academy of Fine Arts , 
+			N-ARGM-LOC		22-41	under the United States Commission of Fine Arts , of which Adolph Alexander Weinman was a member at the time 
+	4	by
+	5	Walker
+			name:	PERSON				5-7	Walker Kirtland Hancock 
+	6	Kirtland
+	7	Hancock
+	8	,
+	9	head
+			sense:	head.n.04
+	10	of
+	11	the
+	12	sculptor
+			name:	TITLE				12-12	sculptor 
+			sense:	sculptor.n.01
+	13	department
+			sense:	department.n.01
+	14	of
+	15	the
+	16	Pennsylvania
+			name:	ORGANIZATION				16-20	Pennsylvania Academy of Fine Arts 
+	17	Academy
+	18	of
+	19	Fine
+	20	Arts
+	21	,
+	22	under
+	23	the
+	24	United
+			name:	ORGANIZATION				24-29	United States Commission of Fine Arts 
+	25	States
+	26	Commission
+	27	of
+	28	Fine
+	29	Arts
+	30	,
+	31	of
+	32	which
+	33	Adolph
+			name:	PERSON				33-35	Adolph Alexander Weinman 
+	34	Alexander
+	35	Weinman
+	36	was
+			sense:	be.v.01
+			prop:	be.01
+			V		36-36	was 
+			N-ARG-A1		33-35	Adolph Alexander Weinman 
+			N-ARG-A2		37-38	a member 
+			N-ARGM-TMP		39-41	at the time 
+	37	a
+	38	member
+			sense:	member.n.01
+	39	at
+	40	the
+	41	time
+			name:	DATE				41-41	time 
+			sense:	time.n.03
+	42	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The medal was struck by the Philadelphia Mint .
+
+
+Treebanked sentence:
+--------------------
+The medal was struck by the Philadelphia Mint . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN medal))
+    (VP (VBD was)
+      (VP (VBN struck)
+        (PP (IN by)
+          (NP (DT the) (NNP Philadelphia) (NNP Mint)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-1	The medal 
+	1	medal
+			sense:	decoration.n.02
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	struck
+			sense:	mint.v.01
+			prop:	strike.01
+			V		3-3	struck 
+			N-ARG-A1		0-1	The medal 
+			N-ARG-A0		4-7	by the Philadelphia Mint 
+	4	by
+	5	the
+			coref:	IDENT			0	5-7	the Philadelphia Mint 
+	6	Philadelphia
+			name:	CITY				6-6	Philadelphia 
+	7	Mint
+			name:	LOCATION				7-7	Mint 
+	8	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				6.5-7	the Philadelphia Mint 
+				3.28-28	Philadelphia 
+	Chain 1 (IDENT)
+				0.8-17	a United States decoration issued by the Post Office Department 
+				1.0-1	The decoration 
+	Chain 2 (IDENT)
+				4.8-10	the Postmaster General 
+				4.18-18	his 
+	Chain 3 (IDENT)
+				0.0-6	The Airmail Flyers ' Medal of Honor 
+				2.0-1	The medal 
+				5.0-1	The medal 
+				6.0-1	The medal 
+	Chain 4 (IDENT)
+				1.23-25	the United States 
+				0.9-10	United States 
+

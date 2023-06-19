@@ -1,0 +1,605 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+North of Pittsburgh is a Canadian comedy - drama film , directed by Richard Martin and released in 1992 .
+
+
+Treebanked sentence:
+--------------------
+North of Pittsburgh is a Canadian comedy - drama film , directed by Richard Martin and released in 1992 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP North))
+      (PP (IN of)
+        (NP (NNP Pittsburgh))))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT a) (JJ Canadian) (NN comedy))
+          (HYPH -)
+          (NP (NN drama) (NN film)))
+        (, ,)
+        (VP
+          (VP (VBN directed)
+            (PP (IN by)
+              (NP (NNP Richard) (NNP Martin))))
+          (CC and)
+          (VP (VBN released)
+            (PP (IN in)
+              (NP (CD 1992)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	North
+	1	of
+	2	Pittsburgh
+			coref:	IDENT			3	2-2	Pittsburgh 
+			name:	CITY				2-2	Pittsburgh 
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	North of Pittsburgh 
+			N-ARG-A2		4-18	a Canadian comedy - drama film , directed by Richard Martin and released in 1992 
+	4	a
+	5	Canadian
+			name:	NATIONALITY				5-5	Canadian 
+	6	comedy
+			sense:	comedy.n.01
+	7	-
+	8	drama
+			sense:	play.n.01
+	9	film
+			sense:	movie.n.01
+	10	,
+	11	directed
+			sense:	direct.v.03
+			prop:	direct.01
+			V		11-11	directed 
+			N-ARG-A1		4-9	a Canadian comedy - drama film 
+			N-ARG-A0		12-14	by Richard Martin 
+	12	by
+	13	Richard
+			coref:	IDENT			0	13-14	Richard Martin 
+			name:	PERSON				13-14	Richard Martin 
+	14	Martin
+	15	and
+	16	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		16-16	released 
+			N-ARG-A1		4-9	a Canadian comedy - drama film 
+			N-ARGM-TMP		17-18	in 1992 
+	17	in
+	18	1992
+			name:	DATE				18-18	1992 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The film stars Jeff Schultz as Tony Andretti , an aimless slacker living in Pittsburgh who supports himself smuggling marijuana to Canada .
+
+
+Treebanked sentence:
+--------------------
+The film stars Jeff Schultz as Tony Andretti , an aimless slacker living in Pittsburgh who supports himself smuggling marijuana to Canada . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP (DT The) (NN film) (NNS stars))
+    (NP (NNP Jeff) (NNP Schultz))
+    (PP (IN as)
+      (NP
+        (NP (NNP Tony) (NNP Andretti))
+        (, ,)
+        (NP
+          (NP (DT an) (JJ aimless) (NN slacker))
+          (VP (VBG living)
+            (PP (IN in)
+              (NP
+                (NP (NNP Pittsburgh))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBZ supports)
+                      (S
+                        (NP (PRP himself))
+                        (VP (VBG smuggling)
+                          (NP (NN marijuana))
+                          (PP (IN to)
+                            (NP (NNP Canada))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	film
+			sense:	movie.n.01
+	2	stars
+			sense:	star.n.04
+	3	Jeff
+			name:	PERSON				3-4	Jeff Schultz 
+	4	Schultz
+	5	as
+	6	Tony
+			coref:	IDENT			1	6-21	Tony Andretti , an aimless slacker living in Pittsburgh who supports himself smuggling marijuana to Canada 
+			name:	PERSON				6-7	Tony Andretti 
+	7	Andretti
+	8	,
+	9	an
+	10	aimless
+			sense:	adrift.s.01
+	11	slacker
+			sense:	slacker.n.01
+	12	living
+			sense:	populate.v.01
+			prop:	live.01
+			V		12-12	living 
+			N-ARG-A0		9-11	an aimless slacker 
+			N-ARGM-LOC		13-14	in Pittsburgh 
+	13	in
+	14	Pittsburgh
+			coref:	IDENT			3	14-14	Pittsburgh 
+			name:	CITY				14-14	Pittsburgh 
+	15	who
+	16	supports
+			sense:	support.v.02
+			prop:	support.01
+			V		16-16	supports 
+			N-ARG-A0		9-14	an aimless slacker living in Pittsburgh 
+			R-ARG-A0		15-15	who 
+			N-ARG-A1		17-21	himself smuggling marijuana to Canada 
+	17	himself
+			coref:	IDENT			1	17-17	himself 
+	18	smuggling
+			sense:	smuggle.v.01
+			prop:	smuggle.01
+			V		18-18	smuggling 
+			N-ARG-A0		15-15	who 
+			N-ARG-A1		19-19	marijuana 
+	19	marijuana
+			sense:	cannabis.n.02
+	20	to
+	21	Canada
+			name:	COUNTRY				21-21	Canada 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After bungling a delivery and being forced to go on the run , he decides to take his estranged grandmother Rosa ( Viveca Lindfors ) on a quest to seek financial compensation for her husband 's death of black lung disease after a lifetime working as a coal miner .
+
+
+Treebanked sentence:
+--------------------
+After bungling a delivery and being forced to go on the run , he decides to take his estranged grandmother Rosa ( Viveca Lindfors ) on a quest to seek financial compensation for her husband 's death of black lung disease after a lifetime working as a coal miner . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP
+        (NP
+          (NP (NN bungling))
+          (NP (DT a) (NN delivery)))
+        (CC and)
+        (S
+          (VP (VBG being)
+            (VP (VBN forced)
+              (S
+                (VP (TO to)
+                  (VP (VB go)
+                    (PP (IN on)
+                      (NP (DT the) (NN run)))))))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBZ decides)
+      (S
+        (VP (TO to)
+          (VP (VB take)
+            (NP (PRP$ his) (JJ estranged) (NN grandmother))
+            (NP
+              (NP (NNP Rosa) (-LRB- -LRB-) (NNP Viveca) (NNP Lindfors) (-RRB- -RRB-))
+              (PP (IN on)
+                (NP (DT a) (NN quest)
+                  (S
+                    (VP (TO to)
+                      (VP (VB seek)
+                        (NP (JJ financial) (NN compensation))
+                        (PP (IN for)
+                          (NP
+                            (NP
+                              (NP (PRP$ her) (NN husband) (POS 's))
+                              (NN death))
+                            (PP (IN of)
+                              (NP
+                                (NML (JJ black) (NN lung))
+                                (NN disease)))))
+                        (PP (IN after)
+                          (NP
+                            (NP (DT a) (NN lifetime))
+                            (VP (VBG working)
+                              (PP (IN as)
+                                (NP (DT a) (NN coal) (NN miner))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	bungling
+	2	a
+	3	delivery
+			sense:	delivery.n.01
+	4	and
+	5	being
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	being 
+	6	forced
+			sense:	coerce.v.01
+			prop:	force.01
+			V		6-6	forced 
+			N-ARG-A2		7-11	to go on the run 
+			N-ARG-A1		13-13	he 
+	7	to
+	8	go
+			sense:	become.v.01
+			prop:	go.02
+			V		8-8	go 
+			N-ARG-A1		9-11	on the run 
+			N-ARG-A0		13-13	he 
+	9	on
+	10	the
+	11	run
+			sense:	run.n.09
+	12	,
+	13	he
+			coref:	IDENT			1	13-13	he 
+	14	decides
+			sense:	decide.v.01
+			prop:	decide.01
+			V		14-14	decides 
+			N-ARGM-TMP		0-11	After bungling a delivery and being forced to go on the run 
+			N-ARG-A0		13-13	he 
+			N-ARG-A1		15-48	to take his estranged grandmother Rosa ( Viveca Lindfors ) on a quest to seek financial compensation for her husband 's death of black lung disease after a lifetime working as a coal miner 
+	15	to
+	16	take
+			sense:	lead.v.01
+			prop:	take.01
+			V		16-16	take 
+			N-ARG-A0		13-13	he 
+			N-ARG-A1		17-24	his estranged grandmother Rosa ( Viveca Lindfors ) 
+			N-ARG-A2		25-48	on a quest to seek financial compensation for her husband 's death of black lung disease after a lifetime working as a coal miner 
+	17	his
+			coref:	IDENT			1	17-17	his 
+	18	estranged
+			sense:	alienated.s.02
+	19	grandmother
+			sense:	grandma.n.01
+	20	Rosa
+			name:	PERSON				20-20	Rosa 
+	21	(
+	22	Viveca
+			coref:	IDENT			2	22-23	Viveca Lindfors 
+			name:	PERSON				22-23	Viveca Lindfors 
+	23	Lindfors
+	24	)
+	25	on
+	26	a
+	27	quest
+			sense:	quest.n.02
+	28	to
+	29	seek
+			sense:	seek.v.01
+			prop:	seek.01
+			V		29-29	seek 
+			N-ARG-A1		30-40	financial compensation for her husband 's death of black lung disease 
+	30	financial
+			sense:	fiscal.a.01
+	31	compensation
+			sense:	compensation.n.01
+	32	for
+	33	her
+			coref:	IDENT			2	33-33	her 
+	34	husband
+			sense:	husband.n.01
+	35	's
+	36	death
+			sense:	death.n.01
+	37	of
+	38	black
+			sense:	black.a.01
+	39	lung
+			sense:	lung.n.01
+	40	disease
+			name:	CAUSE_OF_DEATH				40-40	disease 
+			sense:	disease.n.01
+	41	after
+	42	a
+	43	lifetime
+			sense:	life.n.05
+	44	working
+			sense:	work.v.02
+			prop:	work.01
+			V		44-44	working 
+			N-ARGM-TMP		42-43	a lifetime 
+			N-ARG-A1		45-48	as a coal miner 
+	45	as
+	46	a
+	47	coal
+			sense:	coal.n.01
+	48	miner
+			name:	TITLE				48-48	miner 
+			sense:	miner.n.01
+	49	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Martin 's father , comedian Dick Martin , also has a small role in the film as the president of the coal mining company .
+
+
+Treebanked sentence:
+--------------------
+Martin 's father , comedian Dick Martin , also has a small role in the film as the president of the coal mining company . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Martin) (POS 's))
+        (NN father))
+      (, ,)
+      (NP (NN comedian) (NNP Dick) (NNP Martin))
+      (, ,))
+    (ADVP (RB also))
+    (VP (VBZ has)
+      (NP
+        (NP (DT a) (JJ small) (NN role))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN film))
+            (PP (IN as)
+              (NP
+                (NP (DT the) (NN president))
+                (PP (IN of)
+                  (NP (DT the)
+                    (NML (NN coal) (NN mining))
+                    (NN company)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Martin
+			coref:	IDENT			0	0-1	Martin 's 
+			name:	PERSON				0-0	Martin 
+	1	's
+	2	father
+			sense:	father.n.01
+	3	,
+	4	comedian
+			coref:	IDENT			0	4-6	comedian Dick Martin 
+			name:	TITLE				4-4	comedian 
+			sense:	comedian.n.01
+	5	Dick
+			name:	PERSON				5-6	Dick Martin 
+	6	Martin
+	7	,
+	8	also
+			sense:	besides.r.02
+	9	has
+			sense:	have.v.02
+			prop:	have.03
+			V		9-9	has 
+			N-ARG-A0		0-7	Martin 's father , comedian Dick Martin , 
+			N-ARGM-DIS		8-8	also 
+			N-ARG-A1		10-15	a small role in the film 
+			N-ARGM-PRD		16-23	as the president of the coal mining company 
+	10	a
+	11	small
+			sense:	small.a.01
+	12	role
+			sense:	character.n.04
+	13	in
+	14	the
+	15	film
+			sense:	movie.n.01
+	16	as
+	17	the
+	18	president
+			name:	TITLE				18-18	president 
+			sense:	president.n.01
+	19	of
+	20	the
+	21	coal
+			sense:	coal.n.01
+	22	mining
+			sense:	mining.n.01
+	23	company
+			sense:	company.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The film 's cast also includes John Cassini , Jay Brazeau , Robert Clothier and Babz Chula .
+
+
+Treebanked sentence:
+--------------------
+The film 's cast also includes John Cassini , Jay Brazeau , Robert Clothier and Babz Chula . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN film) (POS 's))
+      (NN cast))
+    (ADVP (RB also))
+    (VP (VBZ includes)
+      (NP
+        (NP (NNP John) (NNP Cassini))
+        (, ,)
+        (NP (NNP Jay) (NNP Brazeau))
+        (, ,)
+        (NP (NNP Robert) (NNP Clothier))
+        (CC and)
+        (NP (NNP Babz) (NNP Chula))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	film
+			sense:	movie.n.01
+	2	's
+	3	cast
+			sense:	cast.n.01
+	4	also
+			sense:	besides.r.02
+	5	includes
+			sense:	include.v.01
+			prop:	include.01
+			V		5-5	includes 
+			N-ARG-A2		0-3	The film 's cast 
+			N-ARGM-DIS		4-4	also 
+			N-ARG-A1		6-16	John Cassini , Jay Brazeau , Robert Clothier and Babz Chula 
+	6	John
+			name:	PERSON				6-7	John Cassini 
+	7	Cassini
+	8	,
+	9	Jay
+			name:	PERSON				9-10	Jay Brazeau 
+	10	Brazeau
+	11	,
+	12	Robert
+			name:	PERSON				12-13	Robert Clothier 
+	13	Clothier
+	14	and
+	15	Babz
+			name:	LOCATION				15-16	Babz Chula 
+	16	Chula
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The film was shot primarily in Vancouver , British Columbia , with some location shooting in Pittsburgh .
+
+
+Treebanked sentence:
+--------------------
+The film was shot primarily in Vancouver , British Columbia , with some location shooting in Pittsburgh . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN film))
+    (VP (VBD was)
+      (VP (VBN shot)
+        (ADVP (RB primarily))
+        (PP (IN in)
+          (NP
+            (NP (NNP Vancouver))
+            (, ,)
+            (NP (NNP British) (NNP Columbia))
+            (, ,)))
+        (PP (IN with)
+          (NP
+            (NP (DT some) (NN location) (NN shooting))
+            (PP (IN in)
+              (NP (NNP Pittsburgh)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	film
+			sense:	movie.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	shot
+			sense:	film.v.01
+			prop:	shoot.03
+			V		3-3	shot 
+			N-ARG-A1		0-1	The film 
+			N-ARGM-ADV		4-4	primarily 
+			N-ARGM-LOC		5-9	in Vancouver , British Columbia 
+			N-ARGM-ADV		11-16	with some location shooting in Pittsburgh 
+	4	primarily
+			sense:	chiefly.r.01
+	5	in
+	6	Vancouver
+			name:	CITY				6-6	Vancouver 
+	7	,
+	8	British
+			name:	STATE_OR_PROVINCE				8-9	British Columbia 
+	9	Columbia
+	10	,
+	11	with
+	12	some
+	13	location
+			sense:	location.n.01
+	14	shooting
+			name:	CAUSE_OF_DEATH				14-14	shooting 
+			sense:	shooting.n.01
+	15	in
+	16	Pittsburgh
+			coref:	IDENT			3	16-16	Pittsburgh 
+			name:	CITY				16-16	Pittsburgh 
+	17	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.4-6	comedian Dick Martin 
+				0.13-14	Richard Martin 
+				3.0-1	Martin 's 
+	Chain 1 (IDENT)
+				1.6-21	Tony Andretti , an aimless slacker living in Pittsburgh who supports himself smuggling marijuana to Canada 
+				1.17-17	himself 
+				2.13-13	he 
+				2.17-17	his 
+	Chain 2 (IDENT)
+				2.22-23	Viveca Lindfors 
+				2.33-33	her 
+	Chain 3 (IDENT)
+				0.2-2	Pittsburgh 
+				1.14-14	Pittsburgh 
+				5.16-16	Pittsburgh 
+

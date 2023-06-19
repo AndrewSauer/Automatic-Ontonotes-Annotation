@@ -1,0 +1,560 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Oregon State Police ( OSP ) is a law enforcement agency of the U.S. state of Oregon .
+
+
+Treebanked sentence:
+--------------------
+The Oregon State Police ( OSP ) is a law enforcement agency of the U.S. state of Oregon . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Oregon) (NNP State) (NNP Police))
+      (-LRB- -LRB-)
+      (NP (NNP OSP))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a)
+          (NML (NN law) (NN enforcement))
+          (NN agency))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP U.S.) (NN state))
+            (PP (IN of)
+              (NP (NNP Oregon)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Oregon
+			name:	ORGANIZATION				1-3	Oregon State Police 
+	2	State
+	3	Police
+	4	(
+	5	OSP
+	6	)
+	7	is
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		0-6	The Oregon State Police ( OSP ) 
+			N-ARG-A2		8-17	a law enforcement agency of the U.S. state of Oregon 
+	8	a
+	9	law
+			sense:	law.n.01
+	10	enforcement
+			sense:	enforcement.n.01
+	11	agency
+			sense:	agency.n.01
+	12	of
+	13	the
+	14	U.S.
+			name:	COUNTRY				14-14	U.S. 
+	15	state
+			sense:	state.n.01
+	16	of
+	17	Oregon
+			coref:	IDENT			0	17-17	Oregon 
+			name:	STATE_OR_PROVINCE				17-17	Oregon 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The OSP is charged to enforce all of Oregon 's criminal laws , including assisting local law enforcement agencies .
+
+
+Treebanked sentence:
+--------------------
+The OSP is charged to enforce all of Oregon 's criminal laws , including assisting local law enforcement agencies . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN OSP))
+    (VP (VBZ is)
+      (VP (VBN charged)
+        (S
+          (VP (TO to)
+            (VP (VB enforce)
+              (NP
+                (NP (DT all))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP Oregon) (POS 's))
+                    (JJ criminal) (NNS laws)))
+                (, ,)
+                (PP (VBG including)
+                  (S
+                    (VP (VBG assisting)
+                      (NP (JJ local)
+                        (NML (NN law) (NN enforcement))
+                        (NNS agencies)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The OSP 
+	1	OSP
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	charged
+			sense:	appoint.v.02
+			prop:	charge.05
+			V		3-3	charged 
+			N-ARG-A1		0-1	The OSP 
+			N-ARG-A2		4-18	to enforce all of Oregon 's criminal laws , including assisting local law enforcement agencies 
+	4	to
+	5	enforce
+			sense:	enforce.v.01
+			prop:	enforce.01
+			V		5-5	enforce 
+			N-ARG-A0		0-1	The OSP 
+			N-ARG-A1		6-11	all of Oregon 's criminal laws 
+			N-ARGM-ADV		13-18	including assisting local law enforcement agencies 
+	6	all
+	7	of
+	8	Oregon
+			coref:	IDENT			0	8-9	Oregon 's 
+			name:	STATE_OR_PROVINCE				8-8	Oregon 
+	9	's
+	10	criminal
+			sense:	criminal.s.03
+	11	laws
+			sense:	law.n.02
+	12	,
+	13	including
+			sense:	include.v.01
+			prop:	include.01
+			V		13-13	including 
+			N-ARG-A2		6-11	all of Oregon 's criminal laws 
+			N-ARG-A1		14-18	assisting local law enforcement agencies 
+	14	assisting
+			sense:	help.v.01
+			prop:	assist.01
+			V		14-14	assisting 
+			N-ARG-A0		0-1	The OSP 
+			N-ARG-A1		15-18	local law enforcement agencies 
+	15	local
+			sense:	local.a.01
+	16	law
+			sense:	law.n.01
+	17	enforcement
+			sense:	enforcement.n.01
+	18	agencies
+			sense:	agency.n.01
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Colonel Travis Hampton has served as Superintendent since July 1 , 2016 .
+
+
+Treebanked sentence:
+--------------------
+Colonel Travis Hampton has served as Superintendent since July 1 , 2016 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Colonel) (NNP Travis) (NNP Hampton))
+    (VP (VBZ has)
+      (VP (VBN served)
+        (PP (IN as)
+          (NP (NN Superintendent)))
+        (PP (IN since)
+          (NP (NNP July) (CD 1) (, ,) (CD 2016)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Colonel
+			name:	TITLE				0-0	Colonel 
+	1	Travis
+			name:	PERSON				1-2	Travis Hampton 
+	2	Hampton
+	3	has
+			sense:	have.v.01
+			prop:	have.01
+			V		3-3	has 
+	4	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		4-4	served 
+			N-ARG-A0		0-2	Colonel Travis Hampton 
+			N-ARG-A1		5-6	as Superintendent 
+			N-ARGM-TMP		7-11	since July 1 , 2016 
+	5	as
+	6	Superintendent
+			name:	TITLE				6-6	Superintendent 
+			sense:	overseer.n.01
+	7	since
+	8	July
+			name:	DATE				8-11	July 1 , 2016 
+	9	1
+	10	,
+	11	2016
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The agency differs from other state police , such as the California Highway Patrol , in that their primary focus is not limited to highway and traffic enforcement .
+
+
+Treebanked sentence:
+--------------------
+The agency differs from other state police , such as the California Highway Patrol , in that their primary focus is not limited to highway and traffic enforcement . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN agency))
+    (VP (VBZ differs)
+      (PP (IN from)
+        (NP
+          (NP (JJ other) (NN state) (NNS police))
+          (, ,)
+          (PP (JJ such) (IN as)
+            (NP (DT the) (NNP California) (NNP Highway) (NNP Patrol)))
+          (, ,)
+          (PP (IN in)
+            (SBAR (IN that)
+              (S
+                (NP (PRP$ their) (JJ primary) (NN focus))
+                (VP (VBZ is) (RB not)
+                  (VP (VBN limited)
+                    (PP (IN to)
+                      (NP
+                        (NML (NN highway)
+                          (CC and)
+                          (NN traffic))
+                        (NN enforcement)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	agency
+			sense:	agency.n.01
+	2	differs
+			sense:	differ.v.01
+			prop:	differ.02
+			V		2-2	differs 
+			N-ARG-A1		0-1	The agency 
+			N-ARGM-MNR		15-27	in that their primary focus is not limited to highway and traffic enforcement 
+	3	from
+	4	other
+			sense:	other.a.01
+	5	state
+			sense:	state.n.01
+	6	police
+			sense:	police.n.01
+	7	,
+	8	such
+			sense:	such.s.01
+	9	as
+	10	the
+	11	California
+			name:	ORGANIZATION				11-13	California Highway Patrol 
+	12	Highway
+	13	Patrol
+	14	,
+	15	in
+	16	that
+	17	their
+	18	primary
+			sense:	chief.s.01
+	19	focus
+			sense:	focus.n.01
+	20	is
+			sense:	be.v.01
+			prop:	be.03
+			V		20-20	is 
+	21	not
+			sense:	not.r.01
+	22	limited
+			sense:	restrict.v.03
+			prop:	limit.01
+			V		22-22	limited 
+			N-ARG-A1		17-19	their primary focus 
+			N-ARGM-NEG		21-21	not 
+			N-ARG-A2		23-27	to highway and traffic enforcement 
+	23	to
+	24	highway
+			sense:	highway.n.01
+	25	and
+	26	traffic
+			sense:	traffic.n.01
+	27	enforcement
+			sense:	enforcement.n.01
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The OSP is one of the few law enforcement agencies in the United States that monitors the security of the state lottery .
+
+
+Treebanked sentence:
+--------------------
+The OSP is one of the few law enforcement agencies in the United States that monitors the security of the state lottery . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN OSP))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (JJ few)
+                (NML (NN law) (NN enforcement))
+                (NNS agencies))
+              (PP (IN in)
+                (NP (DT the) (NNP United) (NNP States))))))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ monitors)
+              (NP
+                (NP (DT the) (NN security))
+                (PP (IN of)
+                  (NP (DT the) (NN state) (NN lottery)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The OSP 
+	1	OSP
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The OSP 
+			N-ARG-A2		3-21	one of the few law enforcement agencies in the United States that monitors the security of the state lottery 
+	3	one
+			name:	NUMBER				3-3	one 
+	4	of
+	5	the
+	6	few
+			sense:	few.a.01
+	7	law
+			sense:	law.n.01
+	8	enforcement
+			sense:	enforcement.n.01
+	9	agencies
+			sense:	agency.n.01
+	10	in
+	11	the
+	12	United
+			name:	COUNTRY				12-13	United States 
+	13	States
+	14	that
+	15	monitors
+			sense:	monitor.v.01
+			prop:	monitor.01
+			V		15-15	monitors 
+			N-ARG-A0		3-13	one of the few law enforcement agencies in the United States 
+			R-ARG-A0		14-14	that 
+			N-ARG-A1		16-21	the security of the state lottery 
+	16	the
+	17	security
+			sense:	security.n.01
+	18	of
+	19	the
+	20	state
+			sense:	state.n.01
+	21	lottery
+			sense:	lottery.n.02
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Oregon State Police has primary jurisdiction on state highways and all other state owned property , and it often responds to incidents in rural areas when other local agencies are unable to respond or need extra assistance .
+
+
+Treebanked sentence:
+--------------------
+Oregon State Police has primary jurisdiction on state highways and all other state owned property , and it often responds to incidents in rural areas when other local agencies are unable to respond or need extra assistance . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NNP Oregon) (NNP State) (NNP Police))
+      (VP (VBZ has)
+        (NP
+          (NP (JJ primary) (NN jurisdiction))
+          (PP (IN on)
+            (NP
+              (NP (NN state) (NNS highways))
+              (CC and)
+              (NP (DT all) (JJ other)
+                (ADJP (NN state) (VBN owned))
+                (NN property)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (ADVP (RB often))
+      (VP (VBZ responds)
+        (PP (IN to)
+          (NP
+            (NP (NNS incidents))
+            (PP (IN in)
+              (NP (JJ rural) (NNS areas)))))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (JJ other) (JJ local) (NNS agencies))
+            (VP (VBP are)
+              (ADJP (JJ unable)
+                (S
+                  (VP (TO to)
+                    (VP (VB respond)
+                      (CC or)
+                      (VB need)
+                      (NP (JJ extra) (NN assistance)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Oregon
+			name:	ORGANIZATION				0-2	Oregon State Police 
+	1	State
+	2	Police
+	3	has
+			sense:	have.v.01
+			prop:	have.03
+			V		3-3	has 
+			N-ARG-A0		0-2	Oregon State Police 
+			N-ARG-A1		4-14	primary jurisdiction on state highways and all other state owned property 
+	4	primary
+			sense:	primary.a.01
+	5	jurisdiction
+			sense:	legal_power.n.01
+	6	on
+	7	state
+			sense:	state.n.01
+	8	highways
+			sense:	highway.n.01
+	9	and
+	10	all
+	11	other
+			sense:	other.a.01
+	12	state
+			sense:	state.n.01
+	13	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		13-13	owned 
+			N-ARG-A0		12-12	state 
+			N-ARG-A1		14-14	property 
+	14	property
+			sense:	property.n.01
+	15	,
+	16	and
+	17	it
+	18	often
+			sense:	frequently.r.01
+	19	responds
+			sense:	react.v.01
+			prop:	respond.01
+			V		19-19	responds 
+			N-ARG-A0		17-17	it 
+			N-ARGM-TMP		18-18	often 
+			N-ARG-A1		20-24	to incidents in rural areas 
+			N-ARGM-TMP		25-36	when other local agencies are unable to respond or need extra assistance 
+	20	to
+	21	incidents
+			sense:	incident.n.01
+	22	in
+	23	rural
+			sense:	rural.a.01
+	24	areas
+			sense:	area.n.01
+	25	when
+	26	other
+			sense:	other.a.01
+	27	local
+			sense:	local.a.01
+	28	agencies
+			sense:	agency.n.01
+	29	are
+			sense:	be.v.01
+			prop:	be.01
+			V		29-29	are 
+			N-ARGM-TMP		25-25	when 
+			N-ARG-A1		26-28	other local agencies 
+			N-ARG-A2		30-32	unable to respond 
+	30	unable
+			sense:	unable.a.01
+	31	to
+	32	respond
+			sense:	react.v.01
+			prop:	respond.01
+			V		32-32	respond 
+			N-ARG-A0		26-28	other local agencies 
+	33	or
+	34	need
+			sense:	want.v.02
+			prop:	need.01
+			V		34-34	need 
+			N-ARGM-TMP		25-25	when 
+			N-ARG-A0		26-28	other local agencies 
+			N-ARG-A1		35-36	extra assistance 
+	35	extra
+			sense:	excess.s.01
+	36	assistance
+			sense:	aid.n.02
+	37	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.8-9	Oregon 's 
+				0.17-17	Oregon 
+	Chain 1 (IDENT)
+				1.0-1	The OSP 
+				4.0-1	The OSP 
+

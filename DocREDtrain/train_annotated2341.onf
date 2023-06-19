@@ -1,0 +1,799 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Dr. Christian Shephard is a fictional character on the ABC television series Lost played by John Terry .
+
+
+Treebanked sentence:
+--------------------
+Dr. Christian Shephard is a fictional character on the ABC television series Lost played by John Terry . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Dr.) (NNP Christian) (NNP Shephard))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ fictional) (NN character))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NNP ABC) (NN television) (NN series))
+            (VP (VBN Lost)
+              (S
+                (VP (VBN played)
+                  (PP (IN by)
+                    (NP (NNP John) (NNP Terry))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Dr.
+			coref:	IDENT			5	0-2	Dr. Christian Shephard 
+	1	Christian
+			name:	PERSON				1-2	Christian Shephard 
+	2	Shephard
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Dr. Christian Shephard 
+			N-ARG-A2		4-16	a fictional character on the ABC television series Lost played by John Terry 
+	4	a
+	5	fictional
+			sense:	fabricated.s.01
+	6	character
+			sense:	fictional_character.n.01
+	7	on
+	8	the
+			coref:	IDENT			4	8-16	the ABC television series Lost played by John Terry 
+	9	ABC
+			name:	ORGANIZATION				9-9	ABC 
+	10	television
+			sense:	television.n.01
+	11	series
+			sense:	serial.n.01
+	12	Lost
+			sense:	lose.v.01
+			prop:	lose.02
+			V		12-12	Lost 
+	13	played
+			sense:	act.v.03
+			prop:	play.02
+			V		13-13	played 
+			N-ARG-A1		4-12	a fictional character on the ABC television series Lost 
+			N-ARG-A0		14-16	by John Terry 
+	14	by
+	15	John
+			name:	PERSON				15-16	John Terry 
+	16	Terry
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is the father of lead characters Jack Shephard ( Matthew Fox ) , who becomes the de facto leader of the survivors of Oceanic 815 after it crashes on an island , and Claire Littleton ( Emilie de Ravin ) , another of the survivors on the Island .
+
+
+Treebanked sentence:
+--------------------
+He is the father of lead characters Jack Shephard ( Matthew Fox ) , who becomes the de facto leader of the survivors of Oceanic 815 after it crashes on an island , and Claire Littleton ( Emilie de Ravin ) , another of the survivors on the Island . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT the) (NN father))
+          (PP (IN of)
+            (NP
+              (NP
+                (NP (JJ lead) (NNS characters))
+                (NP (NNP Jack) (NNP Shephard) (-LRB- -LRB-) (NNP Matthew) (NNP Fox) (-RRB- -RRB-)))
+              (, ,)
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBZ becomes)
+                    (NP
+                      (NP (DT the)
+                        (ADJP (FW de) (FW facto))
+                        (NN leader))
+                      (PP (IN of)
+                        (NP
+                          (NP (DT the) (NNS survivors))
+                          (PP (IN of)
+                            (NP (NNP Oceanic) (CD 815))))))
+                    (SBAR (IN after)
+                      (S
+                        (NP (PRP it))
+                        (VP (VBZ crashes)
+                          (PP (IN on)
+                            (NP (DT an) (NN island))))))))))))
+        (, ,)
+        (CC and)
+        (NP
+          (NP
+            (NP (NNP Claire) (NNP Littleton))
+            (-LRB- -LRB-)
+            (NP (NNP Emilie) (NNP de) (NNP Ravin))
+            (-RRB- -RRB-))
+          (, ,)
+          (NP
+            (NP (DT another))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNS survivors))
+                (PP (IN on)
+                  (NP (DT the) (NNP Island)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			5	0-0	He 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-48	the father of lead characters Jack Shephard ( Matthew Fox ) , who becomes the de facto leader of the survivors of Oceanic 815 after it crashes on an island , and Claire Littleton ( Emilie de Ravin ) , another of the survivors on the Island 
+	2	the
+	3	father
+			sense:	father.n.01
+	4	of
+	5	lead
+	6	characters
+			sense:	fictional_character.n.01
+	7	Jack
+			coref:	IDENT			5	7-8	Jack Shephard 
+			name:	PERSON				7-8	Jack Shephard 
+	8	Shephard
+	9	(
+	10	Matthew
+			name:	PERSON				10-11	Matthew Fox 
+	11	Fox
+	12	)
+	13	,
+	14	who
+	15	becomes
+			sense:	become.v.02
+			prop:	become.01
+			V		15-15	becomes 
+			N-ARG-A1		5-12	lead characters Jack Shephard ( Matthew Fox ) 
+			R-ARG-A1		14-14	who 
+			N-ARG-A2		16-25	the de facto leader of the survivors of Oceanic 815 
+			N-ARGM-TMP		26-31	after it crashes on an island 
+	16	the
+	17	de
+	18	facto
+	19	leader
+			name:	TITLE				19-19	leader 
+			sense:	leader.n.01
+	20	of
+	21	the
+			coref:	IDENT			2	21-25	the survivors of Oceanic 815 
+	22	survivors
+			sense:	survivor.n.01
+	23	of
+	24	Oceanic
+			coref:	IDENT			0	24-25	Oceanic 815 
+	25	815
+			name:	NUMBER				25-25	815 
+	26	after
+	27	it
+			coref:	IDENT			0	27-27	it 
+	28	crashes
+			sense:	crash.v.03
+			prop:	crash.01
+			V		28-28	crashes 
+			N-ARG-A1		27-27	it 
+			N-ARGM-LOC		29-31	on an island 
+	29	on
+	30	an
+			coref:	IDENT			3	30-31	an island 
+	31	island
+			sense:	island.n.01
+	32	,
+	33	and
+	34	Claire
+			name:	PERSON				34-35	Claire Littleton 
+	35	Littleton
+	36	(
+	37	Emilie
+			name:	PERSON				37-39	Emilie de Ravin 
+	38	de
+	39	Ravin
+	40	)
+	41	,
+	42	another
+	43	of
+	44	the
+			coref:	IDENT			2	44-48	the survivors on the Island 
+	45	survivors
+			sense:	survivor.n.01
+	46	on
+	47	the
+			coref:	IDENT			3	47-48	the Island 
+	48	Island
+			name:	LOCATION				48-48	Island 
+	49	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Christian died of an alcohol - induced heart attack days before the flight , leading to much of his story being told through flashbacks .
+
+
+Treebanked sentence:
+--------------------
+Christian died of an alcohol - induced heart attack days before the flight , leading to much of his story being told through flashbacks . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Christian))
+    (VP (VBD died)
+      (PP (IN of)
+        (NP (DT an)
+          (ADJP (NN alcohol) (HYPH -) (VBN induced))
+          (NN heart) (NN attack)))
+      (PP
+        (NP (NNS days))
+        (IN before)
+        (NP (DT the) (NN flight)))
+      (, ,)
+      (S
+        (VP (VBG leading)
+          (PP (IN to)
+            (NP
+              (NP (JJ much))
+              (PP (IN of)
+                (NP
+                  (NP (PRP$ his) (NN story))
+                  (VP (VBG being)
+                    (VP (VBN told)
+                      (PP (IN through)
+                        (NP (NNS flashbacks))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Christian
+			coref:	IDENT			6	0-0	Christian 
+			name:	RELIGION				0-0	Christian 
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	Christian 
+			N-ARGM-CAU		2-8	of an alcohol - induced heart attack 
+			N-ARGM-TMP		9-12	days before the flight 
+			N-ARGM-ADV		14-23	leading to much of his story being told through flashbacks 
+	2	of
+	3	an
+	4	alcohol
+			sense:	alcohol.n.01
+	5	-
+	6	induced
+			sense:	induce.v.01
+			prop:	induce.01
+			V		6-6	induced 
+			N-ARG-A0		4-4	alcohol 
+			N-ARG-A1		7-8	heart attack 
+	7	heart
+			name:	CAUSE_OF_DEATH				7-8	heart attack 
+			sense:	heart.n.02
+	8	attack
+			sense:	attack.n.07
+	9	days
+			name:	DURATION				9-9	days 
+			sense:	day.n.01
+	10	before
+	11	the
+	12	flight
+			sense:	flight.n.02
+	13	,
+	14	leading
+			sense:	leave.v.07
+			prop:	lead.03
+			V		14-14	leading 
+			N-ARG-A2		15-23	to much of his story being told through flashbacks 
+	15	to
+	16	much
+			sense:	much.a.01
+	17	of
+	18	his
+			coref:	IDENT			1	18-18	his 
+	19	story
+			sense:	narrative.n.01
+	20	being
+			sense:	be.v.01
+			prop:	be.03
+			V		20-20	being 
+	21	told
+			sense:	tell.v.03
+			prop:	tell.01
+			V		21-21	told 
+			N-ARG-A1		16-19	much of his story 
+			N-ARGM-MNR		22-23	through flashbacks 
+	22	through
+	23	flashbacks
+			sense:	flashback.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the fourth season and fifth season he is again featured on the Island several times , seemingly acting as a messenger for the leader of the Others , Jacob ( Mark Pellegrino ) .
+
+
+Treebanked sentence:
+--------------------
+In the fourth season and fifth season he is again featured on the Island several times , seemingly acting as a messenger for the leader of the Others , Jacob ( Mark Pellegrino ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (DT the) (JJ fourth) (NN season))
+        (CC and)
+        (NP (JJ fifth) (NN season))))
+    (NP (PRP he))
+    (VP (VBZ is)
+      (ADVP (RB again))
+      (VP (VBN featured)
+        (PP (IN on)
+          (NP (DT the) (NNP Island)))
+        (NP-TMP (JJ several) (NNS times))
+        (, ,)
+        (S
+          (ADVP (RB seemingly))
+          (VP (VBG acting)
+            (PP (IN as)
+              (NP
+                (NP (DT a) (NN messenger))
+                (PP (IN for)
+                  (NP
+                    (NP (DT the) (NN leader))
+                    (PP (IN of)
+                      (NP
+                        (NP (DT the) (NNS Others))
+                        (, ,)
+                        (NP
+                          (NP (NNP Jacob))
+                          (-LRB- -LRB-)
+                          (NP (NNP Mark) (NNP Pellegrino))
+                          (-RRB- -RRB-))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+	2	fourth
+			name:	ORDINAL				2-2	fourth 
+			sense:	fourth.s.01
+	3	season
+			sense:	season.n.01
+	4	and
+	5	fifth
+			name:	ORDINAL				5-5	fifth 
+			sense:	fifth.s.01
+	6	season
+			sense:	season.n.01
+	7	he
+			coref:	IDENT			1	7-7	he 
+	8	is
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	is 
+	9	again
+			sense:	again.r.01
+	10	featured
+			sense:	have.v.02
+			prop:	feature.01
+			V		10-10	featured 
+			N-ARGM-TMP		0-6	In the fourth season and fifth season 
+			N-ARG-A1		7-7	he 
+			N-ARGM-ADV		9-9	again 
+			N-ARG-A2		11-13	on the Island 
+			N-ARGM-TMP		14-15	several times 
+			N-ARGM-PRD		17-33	seemingly acting as a messenger for the leader of the Others , Jacob ( Mark Pellegrino ) 
+	11	on
+	12	the
+			coref:	IDENT			3	12-13	the Island 
+	13	Island
+			name:	LOCATION				13-13	Island 
+	14	several
+			sense:	several.s.01
+	15	times
+			sense:	time.n.01
+	16	,
+	17	seemingly
+			sense:	apparently.r.01
+	18	acting
+			sense:	act.v.04
+			prop:	act.01
+			V		18-18	acting 
+			N-ARG-A0		7-7	he 
+			N-ARGM-ADV		17-17	seemingly 
+			N-ARG-A1		19-33	as a messenger for the leader of the Others , Jacob ( Mark Pellegrino ) 
+	19	as
+	20	a
+	21	messenger
+			name:	TITLE				21-21	messenger 
+			sense:	messenger.n.01
+	22	for
+	23	the
+	24	leader
+			name:	TITLE				24-24	leader 
+			sense:	leader.n.01
+	25	of
+	26	the
+	27	Others
+	28	,
+	29	Jacob
+			name:	PERSON				29-29	Jacob 
+	30	(
+	31	Mark
+			name:	PERSON				31-32	Mark Pellegrino 
+	32	Pellegrino
+	33	)
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the sixth season , the Man in Black ( Titus Welliver / Terry O'Quinn ) admitted that he had " impersonated " Christian during the first week after the crash of Flight 815 .
+
+
+Treebanked sentence:
+--------------------
+In the sixth season , the Man in Black ( Titus Welliver / Terry O'Quinn ) admitted that he had " impersonated " Christian during the first week after the crash of Flight 815 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (JJ sixth) (NN season)))
+    (, ,)
+    (NP
+      (NP
+        (NP (DT the) (NNP Man))
+        (PP (IN in)
+          (NP (NNP Black))))
+      (-LRB- -LRB-)
+      (NP (NNP Titus) (NNP Welliver) (HYPH /) (NNP Terry) (NNP O'Quinn))
+      (-RRB- -RRB-))
+    (VP (VBD admitted)
+      (SBAR (IN that)
+        (S
+          (NP (PRP he))
+          (VP (VBD had)
+            (VP (`` ") (VBN impersonated) ('' ")
+              (NP (NNP Christian))
+              (PP (IN during)
+                (NP (DT the) (JJ first) (NN week)))
+              (PP (IN after)
+                (NP
+                  (NP (DT the) (NN crash))
+                  (PP (IN of)
+                    (NP (NNP Flight) (CD 815))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+	2	sixth
+			name:	ORDINAL				2-2	sixth 
+			sense:	sixth.s.01
+	3	season
+			sense:	season.n.01
+	4	,
+	5	the
+	6	Man
+	7	in
+	8	Black
+	9	(
+	10	Titus
+	11	Welliver
+	12	/
+	13	Terry
+			name:	PERSON				13-14	Terry O'Quinn 
+	14	O'Quinn
+	15	)
+	16	admitted
+			sense:	admit.v.01
+			prop:	admit.01
+			V		16-16	admitted 
+			N-ARGM-TMP		0-3	In the sixth season 
+			N-ARG-A0		5-15	the Man in Black ( Titus Welliver / Terry O'Quinn ) 
+			N-ARG-A1		17-33	that he had " impersonated " Christian during the first week after the crash of Flight 815 
+	17	that
+	18	he
+			coref:	IDENT			1	18-18	he 
+	19	had
+			sense:	experience.v.03
+			prop:	have.01
+			V		19-19	had 
+	20	"
+	21	impersonated
+			sense:	pose.v.03
+			prop:	impersonate.01
+			V		21-21	impersonated 
+			N-ARG-A0		18-18	he 
+			N-ARG-A1		23-23	Christian 
+			N-ARGM-TMP		24-33	during the first week after the crash of Flight 815 
+	22	"
+	23	Christian
+			coref:	IDENT			6	23-23	Christian 
+			name:	RELIGION				23-23	Christian 
+	24	during
+	25	the
+			name:	DURATION				25-27	the first week 
+	26	first
+			sense:	first.a.01
+	27	week
+			sense:	week.n.01
+	28	after
+	29	the
+	30	crash
+			name:	CAUSE_OF_DEATH				30-30	crash 
+			sense:	crash.n.02
+	31	of
+	32	Flight
+	33	815
+			name:	NUMBER				33-33	815 
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Christian is introduced in the fourth episode of the series , and goes on to feature in thirteen more , including a pivotal scene in the series finale , as well as two webisodes .
+
+
+Treebanked sentence:
+--------------------
+Christian is introduced in the fourth episode of the series , and goes on to feature in thirteen more , including a pivotal scene in the series finale , as well as two webisodes . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Christian))
+    (VP
+      (VP (VBZ is)
+        (VP (VBN introduced)
+          (PP (IN in)
+            (NP
+              (NP (DT the) (JJ fourth) (NN episode))
+              (PP (IN of)
+                (NP (DT the) (NN series)))))))
+      (, ,)
+      (CC and)
+      (VP (VBZ goes)
+        (PP (IN on)
+          (PP (IN to)
+            (NP (NN feature))))
+        (PP (IN in)
+          (NP
+            (QP (CD thirteen) (JJR more))))
+        (, ,)
+        (PP (VBG including)
+          (NP
+            (NP
+              (NP (DT a) (JJ pivotal) (NN scene))
+              (PP (IN in)
+                (NP (DT the) (NN series) (NN finale))))
+            (, ,)
+            (CONJP (RB as) (RB well) (IN as))
+            (NP (CD two) (NNS webisodes))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Christian
+			coref:	IDENT			6	0-0	Christian 
+			name:	RELIGION				0-0	Christian 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	introduced
+			sense:	introduce.v.01
+			prop:	introduce.01
+			V		2-2	introduced 
+			N-ARG-A1		0-0	Christian 
+			N-ARGM-LOC		3-9	in the fourth episode of the series 
+	3	in
+	4	the
+	5	fourth
+			name:	ORDINAL				5-5	fourth 
+			sense:	fourth.s.01
+	6	episode
+			sense:	episode.n.03
+	7	of
+	8	the
+			coref:	IDENT			4	8-9	the series 
+	9	series
+			sense:	serial.n.01
+	10	,
+	11	and
+	12	goes
+			sense:	go.v.02
+			prop:	go.15
+			V		12-12	goes 
+			N-ARG-A1		0-0	Christian 
+			C-ARG-A1		14-33	to feature in thirteen more , including a pivotal scene in the series finale , as well as two webisodes 
+	13	on
+	14	to
+	15	feature
+			sense:	feature.n.01
+	16	in
+	17	thirteen
+			name:	NUMBER				17-17	thirteen 
+	18	more
+			sense:	more.a.02
+	19	,
+	20	including
+			sense:	include.v.01
+			prop:	include.01
+			V		20-20	including 
+			N-ARG-A2		17-18	thirteen more 
+			N-ARG-A1		21-27	a pivotal scene in the series finale 
+			C-ARG-A1		29-33	as well as two webisodes 
+	21	a
+	22	pivotal
+			sense:	pivotal.s.01
+	23	scene
+			sense:	scene.n.02
+	24	in
+	25	the
+	26	series
+			sense:	serial.n.01
+	27	finale
+			sense:	stopping_point.n.01
+	28	,
+	29	as
+			sense:	equally.r.01
+	30	well
+			sense:	well.r.01
+	31	as
+	32	two
+			name:	NUMBER				32-32	two 
+	33	webisodes
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is an example of two of the main themes in Lost : father issues and character crossovers .
+
+
+Treebanked sentence:
+--------------------
+He is an example of two of the main themes in Lost : father issues and character crossovers . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN example))
+        (PP (IN of)
+          (NP
+            (NP (CD two))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (JJ main) (NNS themes))
+                (PP (IN in)
+                  (S
+                    (VP (VBN Lost) (: :)
+                      (NP-TMP
+                        (NP (NN father) (NNS issues))
+                        (CC and)
+                        (NP (NN character) (NNS crossovers))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-17	an example of two of the main themes in Lost : father issues and character crossovers 
+	2	an
+	3	example
+			sense:	example.n.01
+	4	of
+	5	two
+			name:	NUMBER				5-5	two 
+	6	of
+	7	the
+	8	main
+			sense:	chief.s.01
+	9	themes
+			sense:	subject.n.01
+	10	in
+	11	Lost
+			sense:	lose.v.01
+			prop:	lose.02
+			V		11-11	Lost 
+	12	:
+	13	father
+			sense:	father.n.01
+	14	issues
+			sense:	issue.n.01
+	15	and
+	16	character
+			sense:	fictional_character.n.01
+	17	crossovers
+			sense:	crossing_over.n.01
+	18	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.24-25	Oceanic 815 
+				1.27-27	it 
+	Chain 1 (IDENT)
+				2.18-18	his 
+				3.7-7	he 
+				4.18-18	he 
+				6.0-0	He 
+	Chain 2 (IDENT)
+				1.21-25	the survivors of Oceanic 815 
+				1.44-48	the survivors on the Island 
+	Chain 3 (IDENT)
+				1.47-48	the Island 
+				1.30-31	an island 
+				3.12-13	the Island 
+	Chain 4 (IDENT)
+				0.8-16	the ABC television series Lost played by John Terry 
+				5.8-9	the series 
+	Chain 5 (IDENT)
+				0.0-2	Dr. Christian Shephard 
+				1.0-0	He 
+				1.7-8	Jack Shephard 
+	Chain 6 (IDENT)
+				2.0-0	Christian 
+				4.23-23	Christian 
+				5.0-0	Christian 
+

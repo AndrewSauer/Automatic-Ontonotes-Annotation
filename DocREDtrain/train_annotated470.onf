@@ -1,0 +1,569 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Charles Abraham Chasselat , a French historical painter , was the son of Pierre Chasselat .
+
+
+Treebanked sentence:
+--------------------
+Charles Abraham Chasselat , a French historical painter , was the son of Pierre Chasselat . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Charles) (NNP Abraham) (NNP Chasselat))
+      (, ,)
+      (NP (DT a) (JJ French) (JJ historical) (NN painter))
+      (, ,))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (NN son))
+        (PP (IN of)
+          (NP (NNP Pierre) (NNP Chasselat)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Charles
+			name:	PERSON				0-2	Charles Abraham Chasselat 
+	1	Abraham
+	2	Chasselat
+	3	,
+	4	a
+	5	French
+			name:	NATIONALITY				5-5	French 
+	6	historical
+			sense:	historic.s.01
+	7	painter
+			name:	TITLE				7-7	painter 
+			sense:	painter.n.01
+	8	,
+	9	was
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	was 
+			N-ARG-A1		0-7	Charles Abraham Chasselat , a French historical painter 
+			N-ARG-A2		10-14	the son of Pierre Chasselat 
+	10	the
+	11	son
+			sense:	son.n.01
+	12	of
+	13	Pierre
+			coref:	IDENT			0	13-14	Pierre Chasselat 
+			name:	PERSON				13-14	Pierre Chasselat 
+	14	Chasselat
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was born in Paris in 1782 , and became a pupil of his father and of Vincent .
+
+
+Treebanked sentence:
+--------------------
+He was born in Paris in 1782 , and became a pupil of his father and of Vincent . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN born)
+          (PP (IN in)
+            (NP (NNP Paris)))
+          (PP (IN in)
+            (NP (CD 1782)))))
+      (, ,)
+      (CC and)
+      (VP (VBD became)
+        (NP (DT a) (NN pupil))
+        (PP
+          (PP (IN of)
+            (NP (PRP$ his) (NN father)))
+          (CC and)
+          (PP (IN of)
+            (NP (NNP Vincent))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-4	in Paris 
+			N-ARGM-TMP		5-6	in 1782 
+	3	in
+	4	Paris
+			name:	CITY				4-4	Paris 
+	5	in
+	6	1782
+			name:	DATE				6-6	1782 
+	7	,
+	8	and
+	9	became
+			sense:	become.v.02
+			prop:	become.01
+			V		9-9	became 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		10-17	a pupil of his father and of Vincent 
+	10	a
+	11	pupil
+			sense:	student.n.01
+	12	of
+	13	his
+			coref:	IDENT			0	13-13	his 
+	14	father
+			sense:	father.n.01
+	15	and
+	16	of
+	17	Vincent
+			name:	PERSON				17-17	Vincent 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He exhibited in 1812 ' The Repose of Belisarius . '
+
+
+Treebanked sentence:
+--------------------
+He exhibited in 1812 ' The Repose of Belisarius . ' 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD exhibited)
+      (PP (IN in)
+        (NP (CD 1812) (SYM ')))
+      (NP
+        (NP (DT The) (NN Repose))
+        (PP (IN of)
+          (NP (NNP Belisarius)))))
+    (. .) ('' ')))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	exhibited
+			sense:	show.v.01
+			prop:	exhibit.01
+			V		1-1	exhibited 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		2-3	in 1812 
+			N-ARG-A1		5-8	The Repose of Belisarius 
+	2	in
+	3	1812
+			name:	DATE				3-3	1812 
+	4	'
+	5	The
+	6	Repose
+			name:	MISC				6-8	Repose of Belisarius 
+			sense:	rest.n.02
+	7	of
+	8	Belisarius
+	9	.
+	10	'
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also illustrated the works of Voltaire , Racine , Molière , and other authors , including the first French translations of Jane Austen 's novels in the 1820s .
+
+
+Treebanked sentence:
+--------------------
+He also illustrated the works of Voltaire , Racine , Molière , and other authors , including the first French translations of Jane Austen 's novels in the 1820s . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD illustrated)
+      (NP
+        (NP (DT the) (NNS works))
+        (PP (IN of)
+          (NP
+            (NP
+              (NML (NNP Voltaire) (, ,) (NNP Racine) (, ,))
+              (NNP Molière))
+            (, ,)
+            (CC and)
+            (NP (JJ other) (NNS authors))
+            (, ,))))
+      (PP (VBG including)
+        (NP
+          (NP (DT the) (JJ first) (JJ French) (NNS translations))
+          (PP (IN of)
+            (NP
+              (NP
+                (NP (NNP Jane) (NNP Austen) (POS 's))
+                (NNS novels))
+              (PP (IN in)
+                (NP (DT the) (NNS 1820s))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	also
+			sense:	besides.r.02
+	2	illustrated
+			sense:	illustrate.v.03
+			prop:	illustrate.02
+			V		2-2	illustrated 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-28	the works of Voltaire , Racine , Molière , and other authors , including the first French translations of Jane Austen 's novels in the 1820s 
+	3	the
+	4	works
+			sense:	work.n.02
+	5	of
+	6	Voltaire
+			name:	ORGANIZATION				6-6	Voltaire 
+	7	,
+	8	Racine
+			name:	CITY				8-8	Racine 
+	9	,
+	10	Molière
+			name:	PERSON				10-10	Molière 
+	11	,
+	12	and
+	13	other
+			sense:	other.a.01
+	14	authors
+			sense:	writer.n.01
+	15	,
+	16	including
+			sense:	include.v.01
+			prop:	include.01
+			V		16-16	including 
+			N-ARG-A2		3-14	the works of Voltaire , Racine , Molière , and other authors 
+			N-ARG-A1		17-28	the first French translations of Jane Austen 's novels in the 1820s 
+	17	the
+	18	first
+			name:	ORDINAL				18-18	first 
+			sense:	first.a.01
+	19	French
+			name:	NATIONALITY				19-19	French 
+	20	translations
+			sense:	translation.n.01
+	21	of
+	22	Jane
+			name:	PERSON				22-23	Jane Austen 
+	23	Austen
+	24	's
+	25	novels
+			sense:	novel.n.01
+	26	in
+	27	the
+			name:	DATE				27-28	the 1820s 
+	28	1820s
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was employed in making drawings of state ceremonials , as the ' Funeral of Louis XVIII ' and the ' Coronation of Charles X ' He died in Paris in 1843 .
+
+
+Treebanked sentence:
+--------------------
+He was employed in making drawings of state ceremonials , as the ' Funeral of Louis XVIII ' and the ' Coronation of Charles X ' He died in Paris in 1843 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD was)
+        (VP (VBN employed)
+          (PP (IN in)
+            (S
+              (VP (VBG making)
+                (NP
+                  (NP (NNS drawings))
+                  (PP (IN of)
+                    (NP (NN state) (NNS ceremonials))))))))))
+    (, ,)
+    (S
+      (PP (IN as)
+        (NP
+          (NP
+            (NP (DT the) (`` ') (NN Funeral))
+            (PP (IN of)
+              (NP (NNP Louis) (NNP XVIII))))
+          ('' ')
+          (CC and)
+          (NP
+            (NP (DT the) (`` ') (NN Coronation))
+            (PP (IN of)
+              (NP (NNP Charles) (NNP X) (POS '))))))
+      (NP (PRP He))
+      (VP (VBD died)
+        (PP (IN in)
+          (NP (NNP Paris)))
+        (PP (IN in)
+          (NP (CD 1843)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	employed
+			sense:	use.v.01
+			prop:	employ.01
+			V		2-2	employed 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		3-25	in making drawings of state ceremonials , as the ' Funeral of Louis XVIII ' and the ' Coronation of Charles X ' 
+	3	in
+	4	making
+			sense:	create.v.05
+			prop:	make.01
+			V		4-4	making 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		5-25	drawings of state ceremonials , as the ' Funeral of Louis XVIII ' and the ' Coronation of Charles X ' 
+	5	drawings
+			sense:	drawing.n.01
+	6	of
+	7	state
+			sense:	state.n.04
+	8	ceremonials
+			sense:	ceremony.n.01
+	9	,
+	10	as
+	11	the
+	12	'
+	13	Funeral
+			sense:	funeral.n.01
+	14	of
+	15	Louis
+			name:	PERSON				15-16	Louis XVIII 
+	16	XVIII
+	17	'
+	18	and
+	19	the
+	20	'
+	21	Coronation
+			sense:	coronation.n.01
+	22	of
+	23	Charles
+			name:	PERSON				23-24	Charles X 
+	24	X
+	25	'
+	26	He
+			coref:	IDENT			0	26-26	He 
+	27	died
+			sense:	die.v.01
+			prop:	die.01
+			V		27-27	died 
+			N-ARG-A1		26-26	He 
+			N-ARGM-LOC		28-29	in Paris 
+			N-ARGM-TMP		30-31	in 1843 
+	28	in
+	29	Paris
+			name:	CITY				29-29	Paris 
+	30	in
+	31	1843
+			name:	DATE				31-31	1843 
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His son Henri J. Saint - Ange Chasselat , who was a pupil of Lethière , painted historical and genre subjects .
+
+
+Treebanked sentence:
+--------------------
+His son Henri J. Saint - Ange Chasselat , who was a pupil of Lethière , painted historical and genre subjects . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (PRP$ His) (NN son))
+        (NP (NNP Henri) (NNP J.) (NNP Saint) (HYPH -) (NNP Ange) (NNP Chasselat)))
+      (, ,)
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBD was)
+            (NP
+              (NP (DT a) (NN pupil))
+              (PP (IN of)
+                (NP (NNP Lethière)))))))
+      (, ,))
+    (VP
+      (VP (VBN painted)
+        (S
+          (ADJP (JJ historical))))
+      (CC and)
+      (NP (NN genre) (NNS subjects)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-14	His son Henri J. Saint - Ange Chasselat , who was a pupil of Lethière 
+			coref:	IDENT			0	0-0	His 
+	1	son
+			sense:	son.n.01
+	2	Henri
+			name:	PERSON				2-7	Henri J. Saint - Ange Chasselat 
+	3	J.
+	4	Saint
+	5	-
+	6	Ange
+	7	Chasselat
+	8	,
+	9	who
+	10	was
+			sense:	be.v.01
+			prop:	be.01
+			V		10-10	was 
+			N-ARG-A1		0-7	His son Henri J. Saint - Ange Chasselat 
+			R-ARG-A1		9-9	who 
+			N-ARG-A2		11-14	a pupil of Lethière 
+	11	a
+	12	pupil
+			sense:	student.n.01
+	13	of
+	14	Lethière
+	15	,
+	16	painted
+			sense:	paint.v.03
+			prop:	paint.02
+			V		16-16	painted 
+			N-ARG-A0		0-14	His son Henri J. Saint - Ange Chasselat , who was a pupil of Lethière 
+			N-ARG-A1		17-20	historical and genre subjects 
+	17	historical
+			sense:	historic.s.01
+	18	and
+	19	genre
+			sense:	genre.n.04
+	20	subjects
+			sense:	subject.n.02
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was born in 1813 , and died in 1880 .
+
+
+Treebanked sentence:
+--------------------
+He was born in 1813 , and died in 1880 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN born)
+          (PP (IN in)
+            (NP (CD 1813)))))
+      (, ,)
+      (CC and)
+      (VP (VBD died)
+        (PP (IN in)
+          (NP (NNP 1880)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		3-4	in 1813 
+	3	in
+	4	1813
+			name:	DATE				4-4	1813 
+	5	,
+	6	and
+	7	died
+			sense:	die.v.01
+			prop:	die.01
+			V		7-7	died 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		8-9	in 1880 
+	8	in
+	9	1880
+			name:	DATE				9-9	1880 
+	10	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.13-14	Pierre Chasselat 
+				1.0-0	He 
+				1.13-13	his 
+				2.0-0	He 
+				3.0-0	He 
+				4.0-0	He 
+				4.26-26	He 
+				5.0-14	His son Henri J. Saint - Ange Chasselat , who was a pupil of Lethière 
+				5.0-0	His 
+				6.0-0	He 
+

@@ -1,0 +1,675 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The statue of George III , Somerset House , formally titled George III and the River Thames , is a Grade I listed outdoor bronze sculptural group depicting King George III and Neptune or Father Thames , located in the quadrangle of Somerset House , London , England .
+
+
+Treebanked sentence:
+--------------------
+The statue of George III , Somerset House , formally titled George III and the River Thames , is a Grade I listed outdoor bronze sculptural group depicting King George III and Neptune or Father Thames , located in the quadrangle of Somerset House , London , England . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT The) (NN statue))
+        (PP (IN of)
+          (NP
+            (NP (NNP George) (NNP III))
+            (, ,)
+            (NP (NNP Somerset) (NNP House)))))
+      (, ,)
+      (VP
+        (ADVP (RB formally))
+        (VBN titled)
+        (NP
+          (NP (NNP George) (NNP III))
+          (CC and)
+          (NP (DT the) (NNP River) (NNP Thames))))
+      (, ,))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NNP Grade))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBD listed)
+              (NP
+                (NP (JJ outdoor) (NN bronze) (JJ sculptural) (NN group))
+                (VP (VBG depicting)
+                  (NP
+                    (NP
+                      (NP (NNP King) (NNP George) (NNP III))
+                      (CC and)
+                      (NP (NNP Neptune)))
+                    (CC or)
+                    (NP
+                      (NP (NNP Father) (NNP Thames))
+                      (, ,)
+                      (VP (VBN located)
+                        (PP (IN in)
+                          (NP
+                            (NP (DT the) (NN quadrangle))
+                            (PP (IN of)
+                              (NP (NNP Somerset)
+                                (NML (NNP House) (, ,) (NNP London) (, ,))
+                                (NNP England)))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-16	The statue of George III , Somerset House , formally titled George III and the River Thames 
+	1	statue
+			sense:	statue.n.01
+	2	of
+	3	George
+			coref:	IDENT			3	3-7	George III , Somerset House 
+			name:	PERSON				3-4	George III 
+	4	III
+	5	,
+	6	Somerset
+			coref:	IDENT			2	6-7	Somerset House 
+			name:	ORGANIZATION				6-7	Somerset House 
+	7	House
+	8	,
+	9	formally
+			sense:	formally.r.01
+	10	titled
+			sense:	entitle.v.02
+			prop:	title.01
+			V		10-10	titled 
+			N-ARG-A1		0-7	The statue of George III , Somerset House 
+			N-ARGM-MNR		9-9	formally 
+			N-ARG-A2		11-16	George III and the River Thames 
+	11	George
+			coref:	IDENT			3	11-12	George III 
+			name:	PERSON				11-12	George III 
+	12	III
+	13	and
+	14	the
+	15	River
+			name:	TITLE				15-15	River 
+	16	Thames
+	17	,
+	18	is
+			sense:	be.v.01
+			prop:	be.01
+			V		18-18	is 
+			N-ARG-A1		0-17	The statue of George III , Somerset House , formally titled George III and the River Thames , 
+			N-ARG-A2		19-47	a Grade I listed outdoor bronze sculptural group depicting King George III and Neptune or Father Thames , located in the quadrangle of Somerset House , London , England 
+	19	a
+	20	Grade
+	21	I
+	22	listed
+			sense:	list.v.02
+			prop:	list.01
+			V		22-22	listed 
+			N-ARG-A2		20-21	Grade I 
+			N-ARG-A1		23-26	outdoor bronze sculptural group 
+	23	outdoor
+			sense:	outdoor.a.01
+	24	bronze
+			sense:	bronze.n.02
+	25	sculptural
+			sense:	sculptural.a.01
+	26	group
+			sense:	group.n.01
+	27	depicting
+			sense:	picture.v.02
+			prop:	depict.01
+			V		27-27	depicting 
+			N-ARG-A0		19-26	a Grade I listed outdoor bronze sculptural group 
+			N-ARG-A1		28-35	King George III and Neptune or Father Thames 
+	28	King
+			name:	TITLE				28-28	King 
+	29	George
+			name:	PERSON				29-30	George III 
+	30	III
+	31	and
+	32	Neptune
+			name:	LOCATION				32-32	Neptune 
+	33	or
+	34	Father
+	35	Thames
+	36	,
+	37	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		37-37	located 
+			N-ARG-A1		19-35	a Grade I listed outdoor bronze sculptural group depicting King George III and Neptune or Father Thames 
+			N-ARGM-LOC		38-47	in the quadrangle of Somerset House , London , England 
+	38	in
+	39	the
+	40	quadrangle
+			sense:	quad.n.04
+	41	of
+	42	Somerset
+			coref:	IDENT			2	42-43	Somerset House 
+			name:	ORGANIZATION				42-43	Somerset House 
+	43	House
+	44	,
+	45	London
+			name:	CITY				45-45	London 
+	46	,
+	47	England
+			name:	COUNTRY				47-47	England 
+	48	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The sculptor was John Bacon , and the statue was erected between 1778 and 1789 .
+
+
+Treebanked sentence:
+--------------------
+The sculptor was John Bacon , and the statue was erected between 1778 and 1789 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN sculptor))
+      (VP (VBD was)
+        (NP (NNP John) (NNP Bacon))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT the) (NN statue))
+      (VP (VBD was)
+        (VP (VBN erected)
+          (PP (IN between)
+            (NP (CD 1778)
+              (CC and)
+              (CD 1789))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			4	0-1	The sculptor 
+	1	sculptor
+			name:	TITLE				1-1	sculptor 
+			sense:	sculptor.n.01
+	2	was
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	The sculptor 
+			N-ARG-A2		3-4	John Bacon 
+	3	John
+			name:	PERSON				3-4	John Bacon 
+	4	Bacon
+	5	,
+	6	and
+	7	the
+			coref:	IDENT			1	7-8	the statue 
+	8	statue
+			sense:	statue.n.01
+	9	was
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	was 
+	10	erected
+			sense:	raise.v.09
+			prop:	erect.01
+			V		10-10	erected 
+			N-ARG-A1		7-8	the statue 
+			N-ARGM-TMP		11-14	between 1778 and 1789 
+	11	between
+	12	1778
+			name:	DATE				12-14	1778 and 1789 
+	13	and
+	14	1789
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+George III is dressed in Roman apparel , leaning on a rudder , flanked by the prow of a Roman boat and a lion .
+
+
+Treebanked sentence:
+--------------------
+George III is dressed in Roman apparel , leaning on a rudder , flanked by the prow of a Roman boat and a lion . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP George) (NNP III))
+    (VP (VBZ is)
+      (VP (VBN dressed)
+        (PP (IN in)
+          (NP (JJ Roman) (NN apparel)))
+        (, ,)
+        (S
+          (VP (VBG leaning)
+            (PP (IN on)
+              (NP
+                (NP (DT a) (NN rudder))
+                (, ,)
+                (VP (VBN flanked)
+                  (PP (IN by)
+                    (NP
+                      (NP (DT the) (NN prow))
+                      (PP (IN of)
+                        (NP
+                          (NP (DT a) (JJ Roman) (NN boat))
+                          (CC and)
+                          (NP (DT a) (NN lion)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	George
+			coref:	IDENT			3	0-1	George III 
+			name:	PERSON				0-1	George III 
+	1	III
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	George III 
+			N-ARG-A2		3-6	dressed in Roman apparel 
+			N-ARGM-ADV		8-23	leaning on a rudder , flanked by the prow of a Roman boat and a lion 
+	3	dressed
+			sense:	dress.v.02
+			prop:	dress.01
+			V		3-3	dressed 
+			N-ARG-A1		0-1	George III 
+			N-ARG-A2		4-6	in Roman apparel 
+			N-ARGM-ADV		8-23	leaning on a rudder , flanked by the prow of a Roman boat and a lion 
+	4	in
+	5	Roman
+			name:	MISC				5-5	Roman 
+	6	apparel
+			sense:	apparel.n.01
+	7	,
+	8	leaning
+			sense:	lean.v.01
+			prop:	lean.01
+			V		8-8	leaning 
+			N-ARG-A0		0-1	George III 
+			N-ARG-A2		9-11	on a rudder 
+	9	on
+	10	a
+	11	rudder
+			sense:	rudder.n.02
+	12	,
+	13	flanked
+			sense:	flank.v.01
+			prop:	flank.01
+			V		13-13	flanked 
+			N-ARG-A1		0-1	George III 
+			N-ARG-A0		14-23	by the prow of a Roman boat and a lion 
+	14	by
+	15	the
+	16	prow
+			sense:	bow.n.03
+	17	of
+	18	a
+	19	Roman
+			name:	MISC				19-19	Roman 
+	20	boat
+			sense:	boat.n.01
+	21	and
+	22	a
+	23	lion
+			sense:	lion.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Father Thames is reclining on a lower , semi - circular plinth , one hand on an urn with a cornucopia behind him .
+
+
+Treebanked sentence:
+--------------------
+Father Thames is reclining on a lower , semi - circular plinth , one hand on an urn with a cornucopia behind him . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Father) (NNP Thames))
+    (VP (VBZ is)
+      (NP
+        (NP (VBG reclining))
+        (PP (IN on)
+          (NP
+            (NP (DT a) (JJR lower))
+            (, ,)
+            (NP (NN semi) (HYPH -) (JJ circular) (NN plinth))
+            (, ,)
+            (NP
+              (NP (CD one) (NN hand))
+              (PP (IN on)
+                (NP
+                  (NP (DT an) (NN urn))
+                  (PP (IN with)
+                    (NP
+                      (NP (DT a) (NN cornucopia))
+                      (PP (IN behind)
+                        (NP (PRP him))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Father
+			coref:	IDENT			0	0-1	Father Thames 
+	1	Thames
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Father Thames 
+			N-ARG-A2		3-22	reclining on a lower , semi - circular plinth , one hand on an urn with a cornucopia behind him 
+	3	reclining
+			sense:	recumb.v.01
+			prop:	recline.01
+			V		3-3	reclining 
+			N-ARG-A1		0-1	Father Thames 
+			N-ARG-A2		4-11	on a lower , semi - circular plinth 
+			N-ARGM-ADV		13-22	one hand on an urn with a cornucopia behind him 
+	4	on
+	5	a
+	6	lower
+			sense:	low.a.02
+	7	,
+	8	semi
+			sense:	semitrailer.n.01
+	9	-
+	10	circular
+			sense:	round.a.01
+	11	plinth
+			sense:	pedestal.n.03
+	12	,
+	13	one
+			name:	NUMBER				13-13	one 
+	14	hand
+			sense:	hand.n.01
+	15	on
+	16	an
+	17	urn
+			sense:	urn.n.01
+	18	with
+	19	a
+	20	cornucopia
+			sense:	horn_of_plenty.n.01
+	21	behind
+	22	him
+			coref:	IDENT			0	22-22	him 
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+When Queen Charlotte first saw the statue of her husband she asked the sculptor ' Why did you make so frightful a figure ? '
+
+
+Treebanked sentence:
+--------------------
+When Queen Charlotte first saw the statue of her husband she asked the sculptor ' Why did you make so frightful a figure ? ' 
+
+Tree:
+-----
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (PRN
+      (S
+        (NP (NNP Queen) (NNP Charlotte))
+        (ADVP (RB first))
+        (VP (VBD saw)
+          (NP
+            (NP (DT the) (NN statue))
+            (PP (IN of)
+              (NP (PRP$ her) (NN husband))))))
+      (S
+        (NP (PRP she))
+        (VP (VBD asked)
+          (NP (DT the) (NN sculptor) ('' ')))))
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (PRP you))
+      (VP (VB make)
+        (NP
+          (ADJP (RB so) (JJ frightful))
+          (DT a) (NN figure))))
+    (. ?) ('' ')))
+
+
+Leaves:
+-------
+	0	When
+	1	Queen
+			name:	PERSON				1-2	Queen Charlotte 
+	2	Charlotte
+	3	first
+			name:	ORDINAL				3-3	first 
+			sense:	first.r.02
+	4	saw
+			sense:	see.v.01
+			prop:	see.01
+			V		4-4	saw 
+			N-ARGM-TMP		0-0	When 
+			N-ARG-A0		1-2	Queen Charlotte 
+			N-ARGM-TMP		3-3	first 
+			N-ARG-A1		5-9	the statue of her husband 
+	5	the
+	6	statue
+			sense:	statue.n.01
+	7	of
+	8	her
+	9	husband
+			sense:	husband.n.01
+	10	she
+	11	asked
+			sense:	ask.v.01
+			prop:	ask.01
+			V		11-11	asked 
+			N-ARGM-TMP		0-9	When Queen Charlotte first saw the statue of her husband 
+			N-ARG-A0		10-10	she 
+			N-ARG-A2		12-13	the sculptor 
+			N-ARG-A1		15-22	Why did you make so frightful a figure 
+	12	the
+			coref:	IDENT			4	12-13	the sculptor 
+	13	sculptor
+			name:	TITLE				13-13	sculptor 
+			sense:	sculptor.n.01
+	14	'
+	15	Why
+	16	did
+			sense:	make.v.01
+			prop:	do.01
+			V		16-16	did 
+	17	you
+	18	make
+			sense:	make.v.03
+			prop:	make.01
+			V		18-18	make 
+			N-ARGM-CAU		15-15	Why 
+			N-ARG-A0		17-17	you 
+			N-ARG-A1		19-22	so frightful a figure 
+	19	so
+			sense:	so.r.01
+	20	frightful
+			sense:	atrocious.s.03
+	21	a
+	22	figure
+			sense:	figure.n.04
+	23	?
+	24	'
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+.
+
+
+Treebanked sentence:
+--------------------
+. 
+
+Tree:
+-----
+(ROOT
+  (FRAG (. .)))
+
+
+Leaves:
+-------
+	0	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bacon bowed and replied ' Art can not always effect what is ever within the reach of Nature – the union of beauty and majesty . '
+
+
+Treebanked sentence:
+--------------------
+Bacon bowed and replied ' Art can not always effect what is ever within the reach of Nature – the union of beauty and majesty . ' 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bacon))
+    (VP (VBD bowed)
+      (CC and)
+      (VBD replied) (`` ')
+      (SBAR
+        (S
+          (NP (NN Art))
+          (VP (MD can) (RB not)
+            (ADVP (RB always))
+            (VP (VB effect)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (VP (VBZ is)
+                    (ADVP (RB ever))
+                    (PP (IN within)
+                      (NP
+                        (NP (DT the) (NN reach))
+                        (PP (IN of)
+                          (NP
+                            (NP (NN Nature))
+                            (PP (SYM –)
+                              (NP (DT the) (NN union)))
+                            (PP (IN of)
+                              (NP (NN beauty)
+                                (CC and)
+                                (NN majesty)))))))))))))))
+    (. .) ('' ')))
+
+
+Leaves:
+-------
+	0	Bacon
+			name:	PERSON				0-0	Bacon 
+	1	bowed
+			sense:	bow.v.01
+			prop:	bow.01
+			V		1-1	bowed 
+			N-ARG-A0		0-0	Bacon 
+	2	and
+	3	replied
+			sense:	answer.v.01
+			prop:	reply.01
+			V		3-3	replied 
+			N-ARG-A0		0-0	Bacon 
+			N-ARG-A2		5-24	Art can not always effect what is ever within the reach of Nature – the union of beauty and majesty 
+	4	'
+	5	Art
+			sense:	art.n.02
+	6	can
+	7	not
+			sense:	not.r.01
+	8	always
+			sense:	always.r.01
+	9	effect
+			sense:	effect.v.01
+			prop:	effect.01
+			V		9-9	effect 
+			N-ARG-A0		5-5	Art 
+			N-ARGM-MOD		6-6	can 
+			N-ARGM-NEG		7-7	not 
+			N-ARGM-TMP		8-8	always 
+			N-ARG-A1		10-24	what is ever within the reach of Nature – the union of beauty and majesty 
+	10	what
+	11	is
+			sense:	be.v.01
+			prop:	be.01
+			V		11-11	is 
+			N-ARG-A1		10-10	what 
+			N-ARGM-TMP		12-12	ever 
+			N-ARG-A2		13-17	within the reach of Nature 
+	12	ever
+			sense:	always.r.01
+	13	within
+	14	the
+	15	reach
+			sense:	compass.n.03
+	16	of
+	17	Nature
+			sense:	nature.n.03
+	18	–
+	19	the
+	20	union
+			sense:	union.n.04
+	21	of
+	22	beauty
+			sense:	beauty.n.01
+	23	and
+	24	majesty
+			sense:	stateliness.n.02
+	25	.
+	26	'
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.0-1	Father Thames 
+				3.22-22	him 
+	Chain 1 (IDENT)
+				0.0-16	The statue of George III , Somerset House , formally titled George III and the River Thames 
+				1.7-8	the statue 
+	Chain 2 (IDENT)
+				0.6-7	Somerset House 
+				0.42-43	Somerset House 
+	Chain 3 (IDENT)
+				0.3-7	George III , Somerset House 
+				0.11-12	George III 
+				2.0-1	George III 
+	Chain 4 (IDENT)
+				1.0-1	The sculptor 
+				4.12-13	the sculptor 
+

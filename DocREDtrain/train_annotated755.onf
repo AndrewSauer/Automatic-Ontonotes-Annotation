@@ -1,0 +1,562 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+William Quintillis Dallmeyer ( October 23 , 1829 – March 15 , 1908 ) was an American Missouri politician .
+
+
+Treebanked sentence:
+--------------------
+William Quintillis Dallmeyer ( October 23 , 1829 – March 15 , 1908 ) was an American Missouri politician . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP William) (NNP Quintillis) (NNP Dallmeyer))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP October) (CD 23) (, ,) (CD 1829))
+        (PP (SYM –)
+          (NP (NNP March) (CD 15) (, ,) (CD 1908))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT an) (JJ American) (NNP Missouri) (NN politician)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	William
+			name:	PERSON				0-2	William Quintillis Dallmeyer 
+	1	Quintillis
+	2	Dallmeyer
+	3	(
+	4	October
+			name:	DATE				4-7	October 23 , 1829 
+	5	23
+	6	,
+	7	1829
+	8	–
+	9	March
+			name:	DATE				9-12	March 15 , 1908 
+	10	15
+	11	,
+	12	1908
+	13	)
+	14	was
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		0-13	William Quintillis Dallmeyer ( October 23 , 1829 – March 15 , 1908 ) 
+			N-ARG-A2		15-18	an American Missouri politician 
+	15	an
+	16	American
+			name:	NATIONALITY				16-16	American 
+	17	Missouri
+			coref:	IDENT			0	17-17	Missouri 
+			name:	STATE_OR_PROVINCE				17-17	Missouri 
+	18	politician
+			name:	TITLE				18-18	politician 
+			sense:	politician.n.02
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+William Quintillis Dallmeyer was born in Hanover , Germany .
+
+
+Treebanked sentence:
+--------------------
+William Quintillis Dallmeyer was born in Hanover , Germany . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP William) (NNP Quintillis) (NNP Dallmeyer))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Hanover) (, ,) (NNP Germany)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	William
+			name:	PERSON				0-2	William Quintillis Dallmeyer 
+	1	Quintillis
+	2	Dallmeyer
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-2	William Quintillis Dallmeyer 
+			N-ARGM-LOC		5-8	in Hanover , Germany 
+	5	in
+	6	Hanover
+			name:	CITY				6-6	Hanover 
+	7	,
+	8	Germany
+			name:	COUNTRY				8-8	Germany 
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He emigrated to the United States in 1845 , living in New York City and New Orleans , Louisiana , before settling in St. Louis , Missouri , where he worked in the dry goods business .
+
+
+Treebanked sentence:
+--------------------
+He emigrated to the United States in 1845 , living in New York City and New Orleans , Louisiana , before settling in St. Louis , Missouri , where he worked in the dry goods business . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD emigrated)
+      (PP (IN to)
+        (NP (DT the) (NNP United) (NNP States)))
+      (PP (IN in)
+        (NP (CD 1845)))
+      (, ,)
+      (S
+        (VP (VBG living)
+          (PP (IN in)
+            (NP
+              (NML
+                (NML (NNP New) (NNP York) (NNP City))
+                (CC and)
+                (NML (NNP New) (NNP Orleans)))
+              (, ,) (NNP Louisiana)))))
+      (, ,)
+      (PP (IN before)
+        (S
+          (VP (VBG settling)
+            (PP (IN in)
+              (NP
+                (NP (NNP St.) (NNP Louis))
+                (, ,)
+                (NP (NNP Missouri)))))))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP he))
+          (VP (VBD worked)
+            (PP (IN in)
+              (NP (DT the)
+                (NML (JJ dry) (NNS goods))
+                (NN business)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	emigrated
+			sense:	emigrate.v.01
+			prop:	emigrate.01
+			V		1-1	emigrated 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		6-7	in 1845 
+			N-ARGM-PRD		9-35	living in New York City and New Orleans , Louisiana , before settling in St. Louis , Missouri , where he worked in the dry goods business 
+	2	to
+	3	the
+	4	United
+			name:	COUNTRY				4-5	United States 
+	5	States
+	6	in
+	7	1845
+			name:	DATE				7-7	1845 
+	8	,
+	9	living
+			sense:	populate.v.01
+			prop:	live.01
+			V		9-9	living 
+			N-ARG-A0		0-0	He 
+			N-ARGM-LOC		10-18	in New York City and New Orleans , Louisiana 
+			N-ARGM-TMP		20-35	before settling in St. Louis , Missouri , where he worked in the dry goods business 
+	10	in
+	11	New
+			name:	CITY				11-13	New York City 
+	12	York
+	13	City
+	14	and
+	15	New
+			name:	CITY				15-16	New Orleans 
+	16	Orleans
+	17	,
+	18	Louisiana
+			name:	STATE_OR_PROVINCE				18-18	Louisiana 
+	19	,
+	20	before
+	21	settling
+			sense:	settle.v.04
+			prop:	settle.03
+			V		21-21	settling 
+			N-ARG-A1		0-0	He 
+			N-ARG-A4		22-35	in St. Louis , Missouri , where he worked in the dry goods business 
+	22	in
+	23	St.
+			name:	LOCATION				23-24	St. Louis 
+	24	Louis
+	25	,
+	26	Missouri
+			coref:	IDENT			0	26-26	Missouri 
+			name:	STATE_OR_PROVINCE				26-26	Missouri 
+	27	,
+	28	where
+	29	he
+	30	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		30-30	worked 
+			N-ARGM-LOC		23-26	St. Louis , Missouri 
+			R-ARGM-LOC		28-28	where 
+			N-ARG-A0		29-29	he 
+			N-ARG-A2		31-35	in the dry goods business 
+	31	in
+	32	the
+	33	dry
+			sense:	dry.a.01
+	34	goods
+	35	business
+			sense:	occupation.n.01
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1856 , he moved to Gasconade County , Missouri , where he divided his time between his farm , general store , and serving as the local postmaster and justice of the peace .
+
+
+Treebanked sentence:
+--------------------
+In 1856 , he moved to Gasconade County , Missouri , where he divided his time between his farm , general store , and serving as the local postmaster and justice of the peace . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1856)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD moved)
+      (PP (IN to)
+        (NP
+          (NP (NNP Gasconade) (NNP County))
+          (, ,)
+          (NP (NNP Missouri))
+          (, ,)))
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP he))
+          (VP (VBD divided)
+            (NP (PRP$ his) (NN time))
+            (PP (IN between)
+              (NP (PRP$ his) (NN farm)))
+            (, ,)
+            (UCP
+              (NP (JJ general) (NN store))
+              (, ,)
+              (CC and)
+              (VP (VBG serving)
+                (PP (IN as)
+                  (NP
+                    (NP (DT the) (JJ local) (NN postmaster)
+                      (CC and)
+                      (NN justice))
+                    (PP (IN of)
+                      (NP (DT the) (NN peace)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1856
+			name:	DATE				1-1	1856 
+	2	,
+	3	he
+	4	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		4-4	moved 
+			N-ARGM-TMP		0-1	In 1856 
+			N-ARG-A0		3-3	he 
+			N-ARG-A2		5-33	to Gasconade County , Missouri , where he divided his time between his farm , general store , and serving as the local postmaster and justice of the peace 
+	5	to
+	6	Gasconade
+			name:	LOCATION				6-7	Gasconade County 
+	7	County
+	8	,
+	9	Missouri
+			coref:	IDENT			0	9-9	Missouri 
+			name:	STATE_OR_PROVINCE				9-9	Missouri 
+	10	,
+	11	where
+	12	he
+	13	divided
+			sense:	divide.v.01
+			prop:	divide.02
+			V		13-13	divided 
+			N-ARGM-LOC		6-9	Gasconade County , Missouri 
+			R-ARGM-LOC		11-11	where 
+			N-ARG-A0		12-12	he 
+			N-ARG-A1		14-15	his time 
+			N-ARG-A2		16-33	between his farm , general store , and serving as the local postmaster and justice of the peace 
+	14	his
+	15	time
+			sense:	time.n.02
+	16	between
+	17	his
+	18	farm
+			sense:	farm.n.01
+	19	,
+	20	general
+			name:	TITLE				20-20	general 
+			sense:	general.s.02
+	21	store
+			sense:	shop.n.01
+	22	,
+	23	and
+	24	serving
+			sense:	serve.v.02
+			prop:	serve.01
+			V		24-24	serving 
+			N-ARG-A0		12-12	he 
+			N-ARG-A1		25-33	as the local postmaster and justice of the peace 
+	25	as
+	26	the
+	27	local
+			sense:	local.a.01
+	28	postmaster
+			sense:	postmaster.n.01
+	29	and
+	30	justice
+			sense:	judge.n.01
+	31	of
+	32	the
+	33	peace
+			sense:	peace.n.02
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1864 , he was elected to the Missouri House of Representatives , serving until 1869 , when he was elected State Treasurer .
+
+
+Treebanked sentence:
+--------------------
+In 1864 , he was elected to the Missouri House of Representatives , serving until 1869 , when he was elected State Treasurer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1864)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (PP (IN to)
+          (NP
+            (NP (DT the) (NNP Missouri) (NNP House))
+            (PP (IN of)
+              (NP (NNPS Representatives)))))
+        (, ,)
+        (S
+          (VP (VBG serving)
+            (PP (IN until)
+              (NP (CD 1869)))))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP he))
+            (VP (VBD was)
+              (VP (VBN elected)
+                (NP (NNP State) (NNP Treasurer))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1864
+			name:	DATE				1-1	1864 
+	2	,
+	3	he
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		5-5	elected 
+			N-ARGM-TMP		0-1	In 1864 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		6-11	to the Missouri House of Representatives 
+	6	to
+	7	the
+	8	Missouri
+			name:	ORGANIZATION				8-11	Missouri House of Representatives 
+	9	House
+	10	of
+	11	Representatives
+	12	,
+	13	serving
+			sense:	serve.v.02
+			prop:	serve.01
+			V		13-13	serving 
+			N-ARG-A0		3-3	he 
+			N-ARGM-TMP		14-22	until 1869 , when he was elected State Treasurer 
+	14	until
+	15	1869
+			name:	DATE				15-15	1869 
+	16	,
+	17	when
+	18	he
+	19	was
+			sense:	be.v.01
+			prop:	be.03
+			V		19-19	was 
+	20	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		20-20	elected 
+			N-ARGM-TMP		15-15	1869 
+			R-ARGM-TMP		17-17	when 
+			N-ARG-A1		18-18	he 
+			N-ARG-A2		21-22	State Treasurer 
+	21	State
+			name:	TITLE				21-22	State Treasurer 
+	22	Treasurer
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Following his two - year term , he served as cashier at the First National Bank in Jefferson City , Missouri , from 1874 to 1882 .
+
+
+Treebanked sentence:
+--------------------
+Following his two - year term , he served as cashier at the First National Bank in Jefferson City , Missouri , from 1874 to 1882 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (VBG Following)
+      (NP (PRP$ his)
+        (NML (CD two) (HYPH -) (NN year))
+        (NN term)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP (NN cashier)))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NNP First) (NNP National) (NNP Bank))
+          (PP (IN in)
+            (NP
+              (NP (NNP Jefferson) (NNP City))
+              (, ,)
+              (NP (NNP Missouri))
+              (, ,)))))
+      (PP (IN from)
+        (NP (CD 1874)))
+      (PP (IN to)
+        (NP (CD 1882))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		0-0	Following 
+			N-ARG-A2		1-5	his two - year term 
+	1	his
+	2	two
+			name:	DURATION				2-4	two - year 
+	3	-
+	4	year
+			sense:	year.n.01
+	5	term
+			sense:	term.n.02
+	6	,
+	7	he
+	8	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		8-8	served 
+			N-ARGM-TMP		0-5	Following his two - year term 
+			N-ARG-A0		7-7	he 
+			N-ARG-A1		9-20	as cashier at the First National Bank in Jefferson City , Missouri 
+			N-ARGM-TMP		22-25	from 1874 to 1882 
+	9	as
+	10	cashier
+			name:	TITLE				10-10	cashier 
+			sense:	teller.n.03
+	11	at
+	12	the
+	13	First
+			name:	ORGANIZATION				13-15	First National Bank 
+	14	National
+	15	Bank
+	16	in
+	17	Jefferson
+			name:	CITY				17-18	Jefferson City 
+	18	City
+	19	,
+	20	Missouri
+			coref:	IDENT			0	20-20	Missouri 
+			name:	STATE_OR_PROVINCE				20-20	Missouri 
+	21	,
+	22	from
+	23	1874
+			name:	DATE				23-25	1874 to 1882 
+	24	to
+	25	1882
+	26	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.17-17	Missouri 
+				2.26-26	Missouri 
+				3.9-9	Missouri 
+				5.20-20	Missouri 
+

@@ -1,0 +1,622 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The South San Francisco Hillside Sign is a historic sign on a hillside overlooking the city of South San Francisco in San Mateo County , California .
+
+
+Treebanked sentence:
+--------------------
+The South San Francisco Hillside Sign is a historic sign on a hillside overlooking the city of South San Francisco in San Mateo County , California . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP South)
+      (NML (NNP San) (NNP Francisco))
+      (NNP Hillside))
+    (PRN
+      (S
+        (VP (VB Sign))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ historic) (NN sign))
+        (PP (IN on)
+          (NP
+            (NP (DT a) (NN hillside))
+            (VP (VBG overlooking)
+              (NP
+                (NP (DT the) (NN city))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP South) (NNP San) (NNP Francisco))
+                    (PP (IN in)
+                      (NP
+                        (NML (NNP San) (NNP Mateo))
+                        (NNP County) (, ,) (NNP California)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	South
+			name:	CITY				1-4	South San Francisco Hillside 
+	2	San
+	3	Francisco
+	4	Hillside
+	5	Sign
+			name:	LOCATION				5-5	Sign 
+			sense:	sign.v.06
+			prop:	sign.01
+			V		5-5	Sign 
+			N-ARGM-LOC		1-3	South San Francisco 
+			N-ARGM-LOC		4-4	Hillside 
+	6	is
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	is 
+			N-ARG-A1		0-5	The South San Francisco Hillside Sign 
+			N-ARG-A2		7-25	a historic sign on a hillside overlooking the city of South San Francisco in San Mateo County , California 
+	7	a
+	8	historic
+			sense:	historic.s.01
+	9	sign
+			sense:	signboard.n.01
+	10	on
+	11	a
+			coref:	IDENT			2	11-25	a hillside overlooking the city of South San Francisco in San Mateo County , California 
+	12	hillside
+			sense:	hillside.n.01
+	13	overlooking
+			sense:	look_out_on.v.01
+			prop:	overlook.02
+			V		13-13	overlooking 
+			N-ARG-A0		11-12	a hillside 
+			N-ARG-A1		14-25	the city of South San Francisco in San Mateo County , California 
+	14	the
+			coref:	IDENT			1	14-25	the city of South San Francisco in San Mateo County , California 
+	15	city
+			sense:	city.n.01
+	16	of
+	17	South
+			name:	CITY				17-19	South San Francisco 
+	18	San
+	19	Francisco
+	20	in
+	21	San
+			name:	CITY				21-22	San Mateo 
+	22	Mateo
+	23	County
+			name:	LOCATION				23-23	County 
+	24	,
+	25	California
+			name:	STATE_OR_PROVINCE				25-25	California 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was created in the 1920s and is listed on the National Register of Historic Places .
+
+
+Treebanked sentence:
+--------------------
+It was created in the 1920s and is listed on the National Register of Historic Places . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBD was)
+        (VP (VBN created)
+          (PP (IN in)
+            (NP (DT the) (NNS 1920s)))))
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN listed)
+          (PP (IN on)
+            (NP
+              (NP (DT the) (NNP National) (NNP Register))
+              (PP (IN of)
+                (NP (JJ Historic) (NNS Places))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	created
+			sense:	create.v.02
+			prop:	create.01
+			V		2-2	created 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		3-5	in the 1920s 
+	3	in
+	4	the
+			name:	DATE				4-5	the 1920s 
+	5	1920s
+	6	and
+	7	is
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	is 
+	8	listed
+			sense:	list.v.02
+			prop:	list.01
+			V		8-8	listed 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		9-15	on the National Register of Historic Places 
+	9	on
+	10	the
+	11	National
+	12	Register
+	13	of
+	14	Historic
+			sense:	historic.s.01
+	15	Places
+			sense:	topographic_point.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The sign is the main feature of Sign Hill Park , a city park which provides of open space , almost of hiking trails , and access to the letters of the sign itself .
+
+
+Treebanked sentence:
+--------------------
+The sign is the main feature of Sign Hill Park , a city park which provides of open space , almost of hiking trails , and access to the letters of the sign itself . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN sign))
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (JJ main) (NN feature))
+          (PP (IN of)
+            (NP
+              (NML
+                (S
+                  (VP (VB Sign)
+                    (NP
+                      (NP (NNP Hill) (NNP Park))
+                      (, ,)
+                      (NP
+                        (NP (DT a) (NN city) (NN park))
+                        (SBAR
+                          (WHNP (WDT which))
+                          (S
+                            (VP (VBZ provides)
+                              (PP (IN of)
+                                (NP (JJ open) (NN space)))
+                              (, ,)
+                              (ADVP (RB almost))
+                              (PP (IN of)
+                                (S
+                                  (VP (VBG hiking))))))))))))
+              (NNS trails))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (NN access))
+        (PP (IN to)
+          (NP
+            (NP (DT the) (NNS letters))
+            (PP (IN of)
+              (NP (DT the) (NN sign))))))
+      (NP (PRP itself)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The sign 
+	1	sign
+			sense:	sign.n.02
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The sign 
+			N-ARG-A2		3-33	the main feature of Sign Hill Park , a city park which provides of open space , almost of hiking trails , and access to the letters of the sign itself 
+	3	the
+	4	main
+			sense:	chief.s.01
+	5	feature
+			sense:	feature.n.01
+	6	of
+	7	Sign
+			coref:	IDENT			0	7-9	Sign Hill Park 
+			name:	LOCATION				7-9	Sign Hill Park 
+			sense:	sign.v.06
+			prop:	sign.01
+			V		7-7	Sign 
+	8	Hill
+	9	Park
+	10	,
+	11	a
+	12	city
+			sense:	city.n.01
+	13	park
+			sense:	park.n.02
+	14	which
+	15	provides
+			sense:	supply.v.01
+			prop:	provide.01
+			V		15-15	provides 
+			N-ARG-A0		11-13	a city park 
+			R-ARG-A0		14-14	which 
+			N-ARG-A1		16-33	of open space , almost of hiking trails , and access to the letters of the sign itself 
+	16	of
+	17	open
+			sense:	clear.s.03
+	18	space
+			sense:	space.n.03
+	19	,
+	20	almost
+			sense:	about.r.07
+	21	of
+	22	hiking
+			sense:	hike.v.02
+			prop:	biking.01
+			V		22-22	hiking 
+			N-ARG-A1		23-23	trails 
+	23	trails
+			sense:	trail.n.02
+	24	,
+	25	and
+	26	access
+			sense:	access.n.03
+	27	to
+	28	the
+	29	letters
+			sense:	letter.n.02
+	30	of
+	31	the
+			coref:	IDENT			0	31-32	the sign 
+	32	sign
+			sense:	sign.n.02
+	33	itself
+			coref:	IDENT			0	33-33	itself 
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Easily visible to drivers on northbound U.S. 101 , the sign spells out " SOUTH SAN FRANCISCO THE INDUSTRIAL CITY " in white - painted concrete letters .
+
+
+Treebanked sentence:
+--------------------
+Easily visible to drivers on northbound U.S. 101 , the sign spells out " SOUTH SAN FRANCISCO THE INDUSTRIAL CITY " in white - painted concrete letters . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (ADJP (RB Easily) (JJ visible)
+        (PP (IN to)
+          (NP
+            (NP (NNS drivers))
+            (PP (IN on)
+              (NP (JJ northbound) (NNP U.S.) (CD 101)))))))
+    (, ,)
+    (NP (DT the) (NN sign))
+    (VP (VBZ spells)
+      (PRT (RP out))
+      (`` ")
+      (S
+        (ADJP (JJ SOUTH))
+        (NP
+          (NP
+            (FRAG
+              (NP (NNP SAN) (NNP FRANCISCO))
+              (NP (DT THE) (NNP INDUSTRIAL) (NNP CITY))
+              ('' ")))
+          (PP (IN in)
+            (NP
+              (ADJP (JJ white) (HYPH -) (VBN painted))
+              (JJ concrete) (NNS letters))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Easily
+			sense:	easily.r.01
+	1	visible
+			sense:	visible.a.01
+	2	to
+	3	drivers
+			sense:	driver.n.01
+	4	on
+	5	northbound
+			sense:	northbound.s.01
+	6	U.S.
+			name:	COUNTRY				6-6	U.S. 
+	7	101
+			name:	NUMBER				7-7	101 
+	8	,
+	9	the
+			coref:	IDENT			0	9-10	the sign 
+	10	sign
+			sense:	sign.n.02
+	11	spells
+			sense:	spell.v.03
+			prop:	spell.01
+			V		11-11	spells 
+			R-ARG-A0		0-7	Easily visible to drivers on northbound U.S. 101 
+			N-ARG-A0		9-10	the sign 
+			N-ARG-A1		14-19	SOUTH SAN FRANCISCO THE INDUSTRIAL CITY 
+			N-ARGM-MNR		21-26	in white - painted concrete letters 
+	12	out
+	13	"
+	14	SOUTH
+			sense:	south.a.01
+	15	SAN
+	16	FRANCISCO
+	17	THE
+	18	INDUSTRIAL
+	19	CITY
+	20	"
+	21	in
+	22	white
+			sense:	white.a.01
+	23	-
+	24	painted
+			sense:	paint.v.02
+			prop:	paint.01
+			V		24-24	painted 
+			N-ARG-A2		22-22	white 
+			N-ARG-A1		25-26	concrete letters 
+	25	concrete
+			sense:	concrete.s.02
+	26	letters
+			sense:	letter.n.02
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The letters are set on the south side of a steep hill , part of the San Bruno Mountains , overlooking the city .
+
+
+Treebanked sentence:
+--------------------
+The letters are set on the south side of a steep hill , part of the San Bruno Mountains , overlooking the city . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNS letters))
+    (VP (VBP are)
+      (VP (VBN set)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (JJ south) (NN side))
+            (PP (IN of)
+              (S
+                (NP
+                  (NP (DT a) (JJ steep) (NN hill))
+                  (, ,)
+                  (NP
+                    (NP (NN part))
+                    (PP (IN of)
+                      (NP (DT the) (NNP San) (NNP Bruno) (NNPS Mountains))))
+                  (, ,))
+                (VP (VBG overlooking)
+                  (NP (DT the) (NN city)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	letters
+			sense:	letter.n.02
+	2	are
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	are 
+	3	set
+			sense:	put.v.01
+			prop:	set.01
+			V		3-3	set 
+			N-ARG-A1		0-1	The letters 
+			N-ARG-A2		4-18	on the south side of a steep hill , part of the San Bruno Mountains 
+			N-ARGM-ADV		20-22	overlooking the city 
+	4	on
+	5	the
+	6	south
+			sense:	south.a.01
+	7	side
+			sense:	side.n.01
+	8	of
+	9	a
+	10	steep
+			sense:	steep.a.01
+	11	hill
+			sense:	hill.n.01
+	12	,
+	13	part
+			sense:	part.n.03
+	14	of
+	15	the
+	16	San
+			name:	CITY				16-17	San Bruno 
+	17	Bruno
+	18	Mountains
+			name:	LOCATION				18-18	Mountains 
+	19	,
+	20	overlooking
+			sense:	look_out_on.v.01
+			prop:	overlook.02
+			V		20-20	overlooking 
+			N-ARG-A0		9-11	a steep hill 
+			N-ARG-A1		21-22	the city 
+	21	the
+			coref:	IDENT			1	21-22	the city 
+	22	city
+			sense:	city.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In order to create the appearance of straight , uniformly sized type despite the varied contour of the hillside , the letters are laid out anamorphically , ranging in height from .
+
+
+Treebanked sentence:
+--------------------
+In order to create the appearance of straight , uniformly sized type despite the varied contour of the hillside , the letters are laid out anamorphically , ranging in height from . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN order)
+        (S
+          (VP (TO to)
+            (VP (VB create)
+              (NP
+                (NP (DT the) (NN appearance))
+                (PP (IN of)
+                  (NP
+                    (ADJP
+                      (ADVP (RB straight) (, ,) (RB uniformly))
+                      (JJ sized))
+                    (NN type))))
+              (PP (IN despite)
+                (NP
+                  (NP (DT the) (JJ varied) (NN contour))
+                  (PP (IN of)
+                    (NP (DT the) (NN hillside))))))))))
+    (, ,)
+    (NP (DT the) (NNS letters))
+    (VP (VBP are)
+      (VP (VBN laid)
+        (PRT (RP out))
+        (ADVP (RB anamorphically))
+        (, ,)
+        (S
+          (VP (VBG ranging)
+            (PP (IN in)
+              (NP (NN height)))
+            (PP (IN from))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	order
+			sense:	order.n.15
+	2	to
+	3	create
+			sense:	make.v.03
+			prop:	create.01
+			V		3-3	create 
+			N-ARG-A1		4-11	the appearance of straight , uniformly sized type 
+			N-ARGM-ADV		12-18	despite the varied contour of the hillside 
+	4	the
+	5	appearance
+			sense:	appearance.n.01
+	6	of
+	7	straight
+			sense:	directly.r.01
+	8	,
+	9	uniformly
+			sense:	uniformly.r.01
+	10	sized
+			sense:	sized.a.01
+	11	type
+			sense:	type.n.04
+	12	despite
+	13	the
+	14	varied
+			sense:	varied.s.02
+	15	contour
+			sense:	shape.n.01
+	16	of
+	17	the
+			coref:	IDENT			2	17-18	the hillside 
+	18	hillside
+			sense:	hillside.n.01
+	19	,
+	20	the
+	21	letters
+			sense:	letter.n.02
+	22	are
+			sense:	be.v.01
+			prop:	be.03
+			V		22-22	are 
+	23	laid
+			sense:	put.v.01
+			prop:	lay.01
+			V		23-23	laid 
+			N-ARGM-PRP		0-18	In order to create the appearance of straight , uniformly sized type despite the varied contour of the hillside 
+			N-ARG-A1		20-21	the letters 
+			N-ARGM-MNR		25-25	anamorphically 
+			N-ARGM-PRD		27-30	ranging in height from 
+	24	out
+	25	anamorphically
+	26	,
+	27	ranging
+			sense:	range.v.01
+			prop:	range.01
+			V		27-27	ranging 
+			N-ARG-A1		20-21	the letters 
+			N-ARG-A2		28-29	in height 
+			N-ARG-A3		30-30	from 
+	28	in
+	29	height
+			sense:	height.n.01
+	30	from
+	31	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.7-9	Sign Hill Park 
+				2.0-1	The sign 
+				2.31-32	the sign 
+				2.33-33	itself 
+				3.9-10	the sign 
+	Chain 1 (IDENT)
+				0.14-25	the city of South San Francisco in San Mateo County , California 
+				1.0-0	It 
+				4.21-22	the city 
+	Chain 2 (IDENT)
+				0.11-25	a hillside overlooking the city of South San Francisco in San Mateo County , California 
+				5.17-18	the hillside 
+

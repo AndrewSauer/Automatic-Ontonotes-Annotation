@@ -1,0 +1,926 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" Ka ' du se hva ' jeg sa ' ? "
+
+
+Treebanked sentence:
+--------------------
+" Ka ' du se hva ' jeg sa ' ? " 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP
+      (NP (`` ") (NNP Ka) ('' '))
+      (NP (FW du) (FW se) (FW hva))
+      (NP ('' ') (NNP jeg) (NNP sa) ('' ')))
+    (. ?) ('' ")))
+
+
+Leaves:
+-------
+	0	"
+	1	Ka
+	2	'
+	3	du
+	4	se
+	5	hva
+	6	'
+	7	jeg
+	8	sa
+	9	'
+	10	?
+	11	"
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+( " Can you see , ( that 's ) what I told you ? 
+
+
+Treebanked sentence:
+--------------------
+( " Can you see , ( that 's ) what I told you ? " 
+
+Tree:
+-----
+(ROOT
+  (S (-LRB- -LRB-) (`` ")
+    (VP (MD Can)
+      (S
+        (NP (PRP you))
+        (VP (VB see) (, ,)
+          (SBAR
+            (S
+              (S (-LRB- -LRB-)
+                (NP (DT that))
+                (VP (VBZ 's))
+                (-RRB- -RRB-))
+              (SBARQ
+                (WHNP (WP what))
+                (SQ
+                  (NP (PRP I))
+                  (VP (VBD told)
+                    (NP (PRP you))))
+                (. ?)))))))
+    ('' ")))
+
+
+Leaves:
+-------
+	0	(
+	1	"
+	2	Can
+	3	you
+			coref:	IDENT			1	3-3	you 
+	4	see
+			sense:	understand.v.02
+			prop:	see.01
+			V		4-4	see 
+			N-ARGM-MOD		2-2	Can 
+			N-ARG-A0		3-3	you 
+			N-ARG-A1		10-13	what I told you 
+	5	,
+	6	(
+	7	that
+	8	's
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	's 
+			N-ARG-A1		7-7	that 
+			N-ARG-A2		10-13	what I told you 
+	9	)
+	10	what
+	11	I
+	12	told
+			sense:	state.v.01
+			prop:	tell.01
+			V		12-12	told 
+			N-ARG-A1		10-10	what 
+			N-ARG-A0		11-11	I 
+			N-ARG-A2		13-13	you 
+	13	you
+			coref:	IDENT			1	13-13	you 
+	14	?
+	15	"
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+, literally : " Do you see what I said ? " )
+
+
+Treebanked sentence:
+--------------------
+, literally : " Do you see what I said ? " ) 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (, ,) (RB literally))
+      (PRN (: :) (`` ")
+        (SQ (VBP Do)
+          (NP (PRP you))
+          (VP (VB see)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (PRP I))
+                (VP (VBD said)))))
+          (. ?))
+        ('' ") (-RRB- -RRB-)))))
+
+
+Leaves:
+-------
+	0	,
+	1	literally
+			sense:	literally.r.01
+	2	:
+	3	"
+	4	Do
+			sense:	do.v.04
+			prop:	do.01
+			V		4-4	Do 
+	5	you
+			coref:	IDENT			1	5-5	you 
+	6	see
+			sense:	understand.v.02
+			prop:	see.01
+			V		6-6	see 
+			N-ARG-A0		5-5	you 
+			N-ARG-A1		7-9	what I said 
+	7	what
+	8	I
+	9	said
+			sense:	state.v.01
+			prop:	say.01
+			V		9-9	said 
+			N-ARG-A1		7-7	what 
+			N-ARG-A0		8-8	I 
+	10	?
+	11	"
+	12	)
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+was the Danish entry in the Eurovision Song Contest 1988 , performed in Danish by Kirsten & Søren ( a duo who had previously entered as Hot Eyes ) .
+
+
+Treebanked sentence:
+--------------------
+was the Danish entry in the Eurovision Song Contest 1988 , performed in Danish by Kirsten & Søren ( a duo who had previously entered as Hot Eyes ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (JJ Danish) (NN entry))
+        (PP (IN in)
+          (NP
+            (NP
+              (NP
+                (NP (DT the) (NNP Eurovision) (NNP Song) (NNP Contest))
+                (NP-TMP (CD 1988)))
+              (, ,)
+              (VP (VBN performed)
+                (PP (IN in)
+                  (NP (JJ Danish)))
+                (PP (IN by)
+                  (NP (NNP Kirsten)
+                    (CC &)
+                    (NNP Søren)))))
+            (-LRB- -LRB-)
+            (NP
+              (NP (DT a) (NN duo))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD had)
+                    (ADVP (RB previously))
+                    (VP (VBN entered)
+                      (PP (IN as)
+                        (NP (JJ Hot) (NNS Eyes))))))))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	was
+			sense:	be.v.02
+			prop:	be.01
+			V		0-0	was 
+			N-ARG-A2		1-28	the Danish entry in the Eurovision Song Contest 1988 , performed in Danish by Kirsten & Søren ( a duo who had previously entered as Hot Eyes ) 
+	1	the
+	2	Danish
+			name:	NATIONALITY				2-2	Danish 
+	3	entry
+			sense:	submission.n.01
+	4	in
+	5	the
+	6	Eurovision
+			name:	MISC				6-8	Eurovision Song Contest 
+	7	Song
+	8	Contest
+	9	1988
+			name:	DATE				9-9	1988 
+	10	,
+	11	performed
+			sense:	perform.v.03
+			prop:	perform.01
+			V		11-11	performed 
+			N-ARGM-MNR		12-13	in Danish 
+			N-ARG-A0		14-28	by Kirsten & Søren ( a duo who had previously entered as Hot Eyes ) 
+	12	in
+	13	Danish
+			name:	NATIONALITY				13-13	Danish 
+	14	by
+	15	Kirsten
+			name:	ORGANIZATION				15-17	Kirsten & Søren 
+	16	&
+	17	Søren
+	18	(
+	19	a
+	20	duo
+			sense:	duet.n.02
+	21	who
+	22	had
+			sense:	have.v.01
+			prop:	have.01
+			V		22-22	had 
+	23	previously
+			name:	DATE				23-23	previously 
+			sense:	previously.r.01
+	24	entered
+			sense:	enter.v.02
+			prop:	enter.01
+			V		24-24	entered 
+			N-ARG-A0		19-20	a duo 
+			R-ARG-A0		21-21	who 
+			N-ARGM-TMP		23-23	previously 
+			N-ARGM-PRD		25-27	as Hot Eyes 
+	25	as
+	26	Hot
+			sense:	hot.s.05
+	27	Eyes
+			sense:	eye.n.01
+	28	)
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The song was performed thirteenth on the night , following Austria 's Wilfried with " Lisa Mona Lisa " and preceding Greece 's Afroditi Frida with " Clown " .
+
+
+Treebanked sentence:
+--------------------
+The song was performed thirteenth on the night , following Austria 's Wilfried with " Lisa Mona Lisa " and preceding Greece 's Afroditi Frida with " Clown " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN song))
+    (VP (VBD was)
+      (VP (VBN performed)
+        (NP
+          (NP (JJ thirteenth))
+          (PP (IN on)
+            (NP (DT the) (NN night))))
+        (, ,)
+        (S
+          (VP
+            (VP (VBG following)
+              (NP
+                (NP
+                  (NP (NNP Austria) (POS 's))
+                  (NNP Wilfried))
+                (PP (IN with) (`` ")
+                  (NP (NNP Lisa) (NNP Mona) (NNP Lisa))
+                  ('' "))))
+            (CC and)
+            (VP (VBG preceding)
+              (NP
+                (NP
+                  (NP (NNP Greece) (POS 's))
+                  (NNP Afroditi) (NNP Frida))
+                (PP (IN with) (`` ")
+                  (NP (NNP Clown))
+                  ('' "))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The song 
+	1	song
+			sense:	song.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	performed
+			sense:	perform.v.03
+			prop:	perform.01
+			V		3-3	performed 
+			N-ARG-A1		0-1	The song 
+			N-ARGM-TMP		4-4	thirteenth 
+			N-ARGM-TMP		5-7	on the night 
+			N-ARGM-ADV		9-28	following Austria 's Wilfried with " Lisa Mona Lisa " and preceding Greece 's Afroditi Frida with " Clown " 
+	4	thirteenth
+			name:	ORDINAL				4-4	thirteenth 
+			sense:	thirteenth.s.01
+	5	on
+	6	the
+	7	night
+			name:	TIME				7-7	night 
+			sense:	night.n.01
+	8	,
+	9	following
+			sense:	follow.v.08
+			prop:	follow.01
+			V		9-9	following 
+			N-ARG-A2		10-18	Austria 's Wilfried with " Lisa Mona Lisa " 
+	10	Austria
+			name:	COUNTRY				10-10	Austria 
+	11	's
+	12	Wilfried
+			name:	PERSON				12-12	Wilfried 
+	13	with
+	14	"
+	15	Lisa
+			name:	PERSON				15-17	Lisa Mona Lisa 
+	16	Mona
+	17	Lisa
+	18	"
+	19	and
+	20	preceding
+			sense:	precede.v.02
+			prop:	precede.01
+			V		20-20	preceding 
+			N-ARG-A0		0-1	The song 
+			N-ARG-A1		21-24	Greece 's Afroditi Frida 
+	21	Greece
+			name:	COUNTRY				21-21	Greece 
+	22	's
+	23	Afroditi
+	24	Frida
+	25	with
+	26	"
+	27	Clown
+			name:	TITLE				27-27	Clown 
+	28	"
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the close of voting , it had received 92 points , placing 3rd in a field of 21 .
+
+
+Treebanked sentence:
+--------------------
+At the close of voting , it had received 92 points , placing 3rd in a field of 21 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (DT the) (NN close))
+        (PP (IN of)
+          (NP (NN voting)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD had)
+      (VP (VBN received)
+        (NP (CD 92) (NNS points))
+        (, ,)
+        (S
+          (VP (VBG placing)
+            (ADJP (JJ 3rd)
+              (PP (IN in)
+                (NP
+                  (NP (DT a) (NN field))
+                  (PP (IN of)
+                    (NP (CD 21))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+	2	close
+			sense:	stopping_point.n.01
+	3	of
+	4	voting
+			sense:	vote.n.01
+	5	,
+	6	it
+			coref:	IDENT			0	6-6	it 
+	7	had
+			sense:	have.v.17
+			prop:	have.01
+			V		7-7	had 
+	8	received
+			sense:	receive.v.02
+			prop:	receive.01
+			V		8-8	received 
+			N-ARGM-TMP		0-4	At the close of voting 
+			N-ARG-A0		6-6	it 
+			N-ARG-A1		9-10	92 points 
+			N-ARGM-ADV		12-18	placing 3rd in a field of 21 
+	9	92
+			name:	NUMBER				9-9	92 
+	10	points
+			sense:	point.n.10
+	11	,
+	12	placing
+			sense:	place.v.06
+			prop:	place.01
+			V		12-12	placing 
+			N-ARG-A0		6-6	it 
+			N-ARG-A2		13-13	3rd 
+			N-ARGM-LOC		14-18	in a field of 21 
+	13	3rd
+			name:	ORDINAL				13-13	3rd 
+			sense:	third.s.01
+	14	in
+	15	a
+	16	field
+			sense:	field.n.13
+	17	of
+	18	21
+			name:	NUMBER				18-18	21 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The song describes a particularly difficult personality type — who " knows everything for certain " and " whistles if it turns out you 're at fault " .
+
+
+Treebanked sentence:
+--------------------
+The song describes a particularly difficult personality type — who " knows everything for certain " and " whistles if it turns out you 're at fault " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN song))
+    (VP (VBZ describes)
+      (NP
+        (NP (DT a)
+          (ADJP (RB particularly) (JJ difficult))
+          (NN personality) (NN type))
+        (: —)
+        (SBAR
+          (WHNP (WP who))
+          (`` ")
+          (S
+            (VP (VBZ knows)
+              (NP
+                (NP (NN everything))
+                (PP (IN for)
+                  (NP (JJ certain)))
+                (`` ")
+                (CC and)
+                (`` ")
+                (NP
+                  (NP (NNS whistles))
+                  (SBAR (IN if)
+                    (S
+                      (NP (PRP it))
+                      (VP (VBZ turns)
+                        (PRT (RP out))
+                        (SBAR
+                          (S
+                            (NP (PRP you))
+                            (VP (VBP 're)
+                              (PP (IN at)
+                                (NP (NN fault)))))))))))))
+          ('' "))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The song 
+	1	song
+			sense:	song.n.01
+	2	describes
+			sense:	describe.v.01
+			prop:	describe.01
+			V		2-2	describes 
+			N-ARG-A0		0-1	The song 
+			N-ARG-A1		3-27	a particularly difficult personality type — who " knows everything for certain " and " whistles if it turns out you 're at fault " 
+	3	a
+	4	particularly
+			sense:	particularly.r.01
+	5	difficult
+			sense:	difficult.a.01
+	6	personality
+			sense:	personality.n.01
+	7	type
+			sense:	character.n.05
+	8	—
+	9	who
+	10	"
+	11	knows
+			sense:	know.v.03
+			prop:	know.01
+			V		11-11	knows 
+			N-ARG-A0		3-7	a particularly difficult personality type 
+			R-ARG-A0		9-9	who 
+			N-ARG-A1		12-12	everything 
+			N-ARGM-MNR		13-14	for certain 
+	12	everything
+	13	for
+	14	certain
+			sense:	certain.a.03
+	15	"
+	16	and
+	17	"
+	18	whistles
+			sense:	whistle.n.01
+	19	if
+	20	it
+			coref:	IDENT			0	20-20	it 
+	21	turns
+			sense:	become.v.02
+			prop:	turn.11
+			V		21-21	turns 
+			N-ARG-A1		23-26	you 're at fault 
+	22	out
+	23	you
+	24	're
+			sense:	be.v.01
+			prop:	be.01
+			V		24-24	're 
+			N-ARG-A1		23-23	you 
+			N-ARG-A2		25-26	at fault 
+	25	at
+	26	fault
+			sense:	fault.n.06
+	27	"
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Over the course of the song , this person is gradually revealed to be the person to whom the song is being sung in the first place .
+
+
+Treebanked sentence:
+--------------------
+Over the course of the song , this person is gradually revealed to be the person to whom the song is being sung in the first place . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Over)
+      (NP
+        (NP (DT the) (NN course))
+        (PP (IN of)
+          (NP (DT the) (NN song)))))
+    (, ,)
+    (NP (DT this) (NN person))
+    (VP (VBZ is)
+      (ADVP (RB gradually))
+      (VP (VBN revealed)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (NP
+                (NP (DT the) (NN person))
+                (SBAR
+                  (WHPP (TO to)
+                    (WHNP (WP whom)))
+                  (S
+                    (NP (DT the) (NN song))
+                    (VP (VBZ is)
+                      (VP (VBG being)
+                        (VP (VBN sung)
+                          (PP (IN in)
+                            (NP (DT the) (JJ first) (NN place))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Over
+	1	the
+	2	course
+			sense:	course.n.02
+	3	of
+	4	the
+			coref:	IDENT			0	4-5	the song 
+	5	song
+			sense:	song.n.01
+	6	,
+	7	this
+	8	person
+			sense:	person.n.01
+	9	is
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	is 
+	10	gradually
+			sense:	gradually.r.01
+	11	revealed
+			sense:	unwrap.v.02
+			prop:	reveal.01
+			V		11-11	revealed 
+			N-ARGM-TMP		0-5	Over the course of the song 
+			N-ARGM-MNR		10-10	gradually 
+			N-ARG-A1		12-26	to be the person to whom the song is being sung in the first place 
+	12	to
+	13	be
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	be 
+			N-ARG-A1		7-8	this person 
+			N-ARG-A2		14-26	the person to whom the song is being sung in the first place 
+	14	the
+	15	person
+			sense:	person.n.01
+	16	to
+	17	whom
+	18	the
+			coref:	IDENT			0	18-19	the song 
+	19	song
+			sense:	song.n.01
+	20	is
+			sense:	be.v.01
+			prop:	be.03
+			V		20-20	is 
+	21	being
+			sense:	be.v.01
+			prop:	be.03
+			V		21-21	being 
+	22	sung
+			sense:	sing.v.01
+			prop:	sing.01
+			V		22-22	sung 
+			N-ARG-A2		14-15	the person 
+			R-ARG-A2		16-17	to whom 
+			N-ARG-A1		18-19	the song 
+			N-ARGM-ADV		23-26	in the first place 
+	23	in
+	24	the
+	25	first
+			name:	ORDINAL				25-25	first 
+			sense:	first.a.01
+	26	place
+			sense:	topographic_point.n.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The performance is perhaps more memorable for the fact that the female half of the duo ( Kirsten Siggard ) was heavily pregnant at the time and would give birth only three weeks after the contest .
+
+
+Treebanked sentence:
+--------------------
+The performance is perhaps more memorable for the fact that the female half of the duo ( Kirsten Siggard ) was heavily pregnant at the time and would give birth only three weeks after the contest . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN performance))
+    (VP (VBZ is)
+      (ADVP (RB perhaps))
+      (ADJP
+        (ADJP (RBR more) (JJ memorable))
+        (PP (IN for)
+          (NP (DT the) (NN fact))))
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT the) (JJ female) (NN half))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN duo))
+                (-LRB- -LRB-)
+                (NP (NNP Kirsten) (NNP Siggard))
+                (-RRB- -RRB-))))
+          (VP
+            (VP (VBD was)
+              (ADJP (RB heavily) (JJ pregnant))
+              (PP (IN at)
+                (NP (DT the) (NN time))))
+            (CC and)
+            (VP (MD would)
+              (VP (VB give)
+                (NP (NN birth))
+                (PP
+                  (NP (RB only) (CD three) (NNS weeks))
+                  (IN after)
+                  (NP (DT the) (NN contest)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	performance
+			sense:	performance.n.02
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The performance 
+			N-ARGM-ADV		3-3	perhaps 
+			N-ARG-A2		4-5	more memorable 
+			N-ARGM-CAU		6-35	for the fact that the female half of the duo ( Kirsten Siggard ) was heavily pregnant at the time and would give birth only three weeks after the contest 
+	3	perhaps
+			sense:	possibly.r.01
+	4	more
+			sense:	more.r.01
+	5	memorable
+			sense:	memorable.s.01
+	6	for
+	7	the
+	8	fact
+			sense:	fact.n.01
+	9	that
+	10	the
+	11	female
+			sense:	female.a.01
+	12	half
+			sense:	one-half.n.01
+	13	of
+	14	the
+	15	duo
+			sense:	duet.n.02
+	16	(
+	17	Kirsten
+			name:	PERSON				17-18	Kirsten Siggard 
+	18	Siggard
+	19	)
+	20	was
+			sense:	be.v.01
+			prop:	be.01
+			V		20-20	was 
+			N-ARG-A1		10-19	the female half of the duo ( Kirsten Siggard ) 
+			N-ARG-A2		21-22	heavily pregnant 
+			N-ARGM-TMP		23-25	at the time 
+	21	heavily
+			sense:	heavily.r.01
+	22	pregnant
+			sense:	pregnant.a.01
+	23	at
+	24	the
+	25	time
+			name:	DATE				25-25	time 
+			sense:	time.n.01
+	26	and
+	27	would
+	28	give
+			sense:	give.v.42
+			prop:	give.11
+			V		28-28	give 
+			N-ARG-A0		10-19	the female half of the duo ( Kirsten Siggard ) 
+			N-ARGM-MOD		27-27	would 
+			N-ARG-A1		29-29	birth 
+			N-ARGM-TMP		30-35	only three weeks after the contest 
+	29	birth
+			sense:	parturition.n.01
+	30	only
+			sense:	merely.r.01
+	31	three
+			name:	DURATION				31-32	three weeks 
+	32	weeks
+			sense:	week.n.01
+	33	after
+	34	the
+	35	contest
+			sense:	contest.n.01
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was succeeded as Danish representative at the 1989 Contest by Birthe Kjær with " Vi maler byen rød " .
+
+
+Treebanked sentence:
+--------------------
+It was succeeded as Danish representative at the 1989 Contest by Birthe Kjær with " Vi maler byen rød " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN succeeded)
+        (PP (IN as)
+          (NP (JJ Danish) (NN representative)))
+        (PP (IN at)
+          (NP
+            (NP (DT the) (CD 1989) (NNP Contest))
+            (PP (IN by)
+              (NP
+                (NP (NNP Birthe) (NNP Kjær))
+                (PP (IN with) (`` ")
+                  (NP (NN Vi) (NN maler) (NN byen) (NN rød))
+                  ('' "))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	succeeded
+			sense:	succeed.v.02
+			prop:	succeed.02
+			V		2-2	succeeded 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		3-9	as Danish representative at the 1989 Contest 
+			N-ARG-A0		10-12	by Birthe Kjær 
+			N-ARGM-MNR		13-19	with " Vi maler byen rød " 
+	3	as
+	4	Danish
+			name:	NATIONALITY				4-4	Danish 
+	5	representative
+			name:	TITLE				5-5	representative 
+			sense:	representative.n.01
+	6	at
+	7	the
+	8	1989
+			name:	DATE				8-8	1989 
+	9	Contest
+	10	by
+	11	Birthe
+			name:	PERSON				11-12	Birthe Kjær 
+	12	Kjær
+	13	with
+	14	"
+	15	Vi
+			sense:	six.n.01
+	16	maler
+	17	byen
+	18	rød
+	19	"
+	20	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.0-1	The song 
+				5.6-6	it 
+				6.0-1	The song 
+				6.20-20	it 
+				7.4-5	the song 
+				7.18-19	the song 
+				9.0-0	It 
+	Chain 1 (IDENT)
+				1.3-3	you 
+				1.13-13	you 
+				2.5-5	you 
+

@@ -1,0 +1,789 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Franklin Harper Elmore ( October 15 , 1799May 29 , 1850 ) was a United States Representative and Senator .
+
+
+Treebanked sentence:
+--------------------
+Franklin Harper Elmore ( October 15 , 1799May 29 , 1850 ) was a United States Representative and Senator . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Franklin) (NNP Harper) (NNP Elmore))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP October) (CD 15))
+        (, ,)
+        (NP (NN 1799May) (CD 29))
+        (, ,)
+        (NP (CD 1850))
+        (-RRB- -RRB-)))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NNP United) (NNP States) (NNP Representative))
+        (CC and)
+        (NP (NNP Senator))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Franklin
+			coref:	IDENT			3	0-11	Franklin Harper Elmore ( October 15 , 1799May 29 , 1850 ) 
+			name:	PERSON				0-2	Franklin Harper Elmore 
+	1	Harper
+	2	Elmore
+	3	(
+	4	October
+			name:	DATE				4-5	October 15 
+	5	15
+	6	,
+	7	1799May
+			name:	DATE				7-10	1799May 29 , 1850 
+	8	29
+	9	,
+	10	1850
+	11	)
+	12	was
+			sense:	be.v.02
+			prop:	be.01
+			V		12-12	was 
+			N-ARG-A1		0-11	Franklin Harper Elmore ( October 15 , 1799May 29 , 1850 ) 
+			N-ARG-A2		13-18	a United States Representative and Senator 
+	13	a
+	14	United
+			name:	COUNTRY				14-15	United States 
+	15	States
+	16	Representative
+			name:	TITLE				16-16	Representative 
+	17	and
+	18	Senator
+			name:	TITLE				18-18	Senator 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in Laurens District , the son of John Archer Elmore , he graduated from the South Carolina College at Columbia in 1819 , studied law , was admitted to the bar in 1821 and commenced practice in Walterboro .
+
+
+Treebanked sentence:
+--------------------
+Born in Laurens District , the son of John Archer Elmore , he graduated from the South Carolina College at Columbia in 1819 , studied law , was admitted to the bar in 1821 and commenced practice in Walterboro . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP
+            (NP (NNP Laurens) (NNP District))
+            (, ,)
+            (NP
+              (NP (DT the) (NN son))
+              (PP (IN of)
+                (NP (NNP John) (NNP Archer) (NNP Elmore))))))))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD graduated)
+        (PP (IN from)
+          (NP (DT the) (NNP South) (NNP Carolina) (NNP College)))
+        (PP (IN at)
+          (NP (NNP Columbia)))
+        (PP (IN in)
+          (NP (CD 1819))))
+      (, ,)
+      (VP (VBD studied)
+        (NP (NN law)))
+      (, ,)
+      (VP (VBD was)
+        (VP (VBN admitted)
+          (PP (IN to)
+            (NP
+              (NP (DT the) (NN bar))
+              (PP (IN in)
+                (NP (CD 1821)))))))
+      (CC and)
+      (VP (VBD commenced)
+        (NP (NN practice))
+        (PP (IN in)
+          (NP (NNP Walterboro)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-3	in Laurens District 
+			N-ARGM-PRD		5-10	the son of John Archer Elmore 
+			N-ARG-A1		12-12	he 
+	1	in
+	2	Laurens
+			name:	CITY				2-2	Laurens 
+	3	District
+			name:	LOCATION				3-3	District 
+	4	,
+	5	the
+	6	son
+			sense:	son.n.01
+	7	of
+	8	John
+			coref:	IDENT			3	8-10	John Archer Elmore 
+			name:	PERSON				8-10	John Archer Elmore 
+	9	Archer
+	10	Elmore
+	11	,
+	12	he
+			coref:	IDENT			3	12-12	he 
+	13	graduated
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		13-13	graduated 
+			R-ARG-A0		0-10	Born in Laurens District , the son of John Archer Elmore 
+			N-ARG-A0		12-12	he 
+			N-ARG-A1		14-20	from the South Carolina College at Columbia 
+			N-ARGM-TMP		21-22	in 1819 
+	14	from
+	15	the
+	16	South
+			name:	ORGANIZATION				16-18	South Carolina College 
+	17	Carolina
+	18	College
+	19	at
+	20	Columbia
+			coref:	IDENT			0	20-20	Columbia 
+			name:	STATE_OR_PROVINCE				20-20	Columbia 
+	21	in
+	22	1819
+			name:	DATE				22-22	1819 
+	23	,
+	24	studied
+			sense:	learn.v.04
+			prop:	study.01
+			V		24-24	studied 
+			R-ARG-A0		0-10	Born in Laurens District , the son of John Archer Elmore 
+			N-ARG-A0		12-12	he 
+			N-ARG-A1		25-25	law 
+	25	law
+			sense:	law.n.06
+	26	,
+	27	was
+			sense:	be.v.01
+			prop:	be.03
+			V		27-27	was 
+	28	admitted
+			sense:	accept.v.05
+			prop:	admit.02
+			V		28-28	admitted 
+			N-ARG-A1		12-12	he 
+			N-ARG-A2		29-31	to the bar 
+			N-ARGM-TMP		32-33	in 1821 
+	29	to
+	30	the
+	31	bar
+			sense:	legal_profession.n.01
+	32	in
+	33	1821
+			name:	DATE				33-33	1821 
+	34	and
+	35	commenced
+			sense:	start.v.06
+			prop:	commence.01
+			V		35-35	commenced 
+			R-ARG-A0		0-10	Born in Laurens District , the son of John Archer Elmore 
+			N-ARG-A0		12-12	he 
+			N-ARG-A1		36-36	practice 
+			N-ARGM-LOC		37-38	in Walterboro 
+	36	practice
+			sense:	practice.n.04
+	37	in
+	38	Walterboro
+			name:	LOCATION				38-38	Walterboro 
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was solicitor for the southern circuit from 1822 to 1836 , a colonel on the staff of the Governor from 1824 to 1826 , and was elected as a State Rights Democrat to the Twenty - fourth Congress to fill the vacancy caused by the resignation of James H. Hammond .
+
+
+Treebanked sentence:
+--------------------
+He was solicitor for the southern circuit from 1822 to 1836 , a colonel on the staff of the Governor from 1824 to 1826 , and was elected as a State Rights Democrat to the Twenty - fourth Congress to fill the vacancy caused by the resignation of James H. Hammond . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (NP
+          (NP (NN solicitor))
+          (PP (IN for)
+            (NP
+              (NP (DT the) (JJ southern) (NN circuit))
+              (PP (IN from)
+                (NP (CD 1822))))))
+        (PP (IN to)
+          (NP (CD 1836))))
+      (, ,)
+      (VP
+        (NP
+          (NP (DT a) (NN colonel))
+          (PP (IN on)
+            (NP
+              (NP (DT the) (NN staff))
+              (PP (IN of)
+                (NP (DT the) (NNP Governor))))))
+        (PP (IN from)
+          (NP
+            (QP (CD 1824) (IN to) (CD 1826)))))
+      (, ,)
+      (CC and)
+      (VP (VBD was)
+        (VP (VBN elected)
+          (PP (IN as)
+            (NP (DT a)
+              (NML (NNP State) (NNPS Rights))
+              (NNP Democrat)))
+          (PP (IN to)
+            (NP (DT the)
+              (ADJP
+                (NP (CD Twenty))
+                (HYPH -) (JJ fourth))
+              (NNP Congress)))
+          (S
+            (VP (TO to)
+              (VP (VB fill)
+                (NP
+                  (NP (DT the) (NN vacancy))
+                  (VP (VBN caused)
+                    (PP (IN by)
+                      (NP
+                        (NP (DT the) (NN resignation))
+                        (PP (IN of)
+                          (NP (NNP James) (NNP H.) (NNP Hammond)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			3	0-0	He 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-6	solicitor for the southern circuit 
+			N-ARGM-TMP		7-10	from 1822 to 1836 
+			N-ARG-A2		12-19	a colonel on the staff of the Governor 
+	2	solicitor
+			name:	TITLE				2-2	solicitor 
+			sense:	solicitor.n.01
+	3	for
+	4	the
+	5	southern
+			sense:	southern.a.03
+	6	circuit
+			sense:	circuit.n.05
+	7	from
+	8	1822
+			name:	DATE				8-10	1822 to 1836 
+	9	to
+	10	1836
+	11	,
+	12	a
+	13	colonel
+			name:	TITLE				13-13	colonel 
+			sense:	colonel.n.01
+	14	on
+	15	the
+	16	staff
+			sense:	staff.n.01
+	17	of
+	18	the
+	19	Governor
+			name:	TITLE				19-19	Governor 
+	20	from
+	21	1824
+			name:	DATE				21-23	1824 to 1826 
+	22	to
+	23	1826
+	24	,
+	25	and
+	26	was
+			sense:	be.v.01
+			prop:	be.03
+			V		26-26	was 
+	27	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		27-27	elected 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		28-38	as a State Rights Democrat to the Twenty - fourth Congress 
+			N-ARGM-PRP		39-50	to fill the vacancy caused by the resignation of James H. Hammond 
+	28	as
+	29	a
+	30	State
+	31	Rights
+	32	Democrat
+	33	to
+	34	the
+			coref:	IDENT			2	34-38	the Twenty - fourth Congress 
+	35	Twenty
+			name:	NUMBER				35-35	Twenty 
+	36	-
+	37	fourth
+			name:	ORDINAL				37-37	fourth 
+			sense:	fourth.s.01
+	38	Congress
+			name:	ORGANIZATION				38-38	Congress 
+	39	to
+	40	fill
+			sense:	fill.v.04
+			prop:	fill.01
+			V		40-40	fill 
+			N-ARG-A1		41-50	the vacancy caused by the resignation of James H. Hammond 
+	41	the
+	42	vacancy
+			sense:	vacancy.n.01
+	43	caused
+			sense:	cause.v.01
+			prop:	cause.01
+			V		43-43	caused 
+			N-ARG-A1		41-42	the vacancy 
+			N-ARG-A0		44-50	by the resignation of James H. Hammond 
+	44	by
+	45	the
+	46	resignation
+			sense:	resignation.n.03
+	47	of
+	48	James
+			name:	PERSON				48-50	James H. Hammond 
+	49	H.
+	50	Hammond
+	51	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Elmore was reelected to the Twenty - fifth Congress and served from December 10 , 1836 , to March 4 , 1839 .
+
+
+Treebanked sentence:
+--------------------
+Elmore was reelected to the Twenty - fifth Congress and served from December 10 , 1836 , to March 4 , 1839 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Elmore))
+    (VP
+      (VP (VBD was)
+        (VP (VBN reelected)
+          (PP (IN to)
+            (NP (DT the)
+              (ADJP
+                (NP (CD Twenty))
+                (HYPH -) (JJ fifth))
+              (NNP Congress)))))
+      (CC and)
+      (VP (VBD served)
+        (PP (IN from)
+          (NP (NNP December) (CD 10) (, ,) (CD 1836) (, ,)))
+        (PP (IN to)
+          (NP (NNP March) (CD 4) (, ,) (CD 1839)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Elmore
+			coref:	IDENT			3	0-0	Elmore 
+			name:	PERSON				0-0	Elmore 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	reelected
+			sense:	reelect.v.01
+			prop:	reelect.01
+			V		2-2	reelected 
+			N-ARG-A1		0-0	Elmore 
+			N-ARG-A2		3-8	to the Twenty - fifth Congress 
+	3	to
+	4	the
+			coref:	IDENT			2	4-8	the Twenty - fifth Congress 
+	5	Twenty
+			name:	NUMBER				5-5	Twenty 
+	6	-
+	7	fifth
+			name:	ORDINAL				7-7	fifth 
+			sense:	fifth.s.01
+	8	Congress
+			name:	ORGANIZATION				8-8	Congress 
+	9	and
+	10	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		10-10	served 
+			N-ARG-A0		0-0	Elmore 
+			N-ARGM-TMP		11-21	from December 10 , 1836 , to March 4 , 1839 
+	11	from
+	12	December
+			name:	DATE				12-15	December 10 , 1836 
+	13	10
+	14	,
+	15	1836
+	16	,
+	17	to
+	18	March
+			name:	DATE				18-21	March 4 , 1839 
+	19	4
+	20	,
+	21	1839
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+From 1839 to 1850 he was president of the Bank of the State of South Carolina 1839 - 1850 ; he declined appointment by President James Polk as Minister to Great Britain .
+
+
+Treebanked sentence:
+--------------------
+From 1839 to 1850 he was president of the Bank of the State of South Carolina 1839 - 1850 ; he declined appointment by President James Polk as Minister to Great Britain . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN From)
+        (NP
+          (NP (CD 1839))
+          (PP (IN to)
+            (NP (CD 1850)))))
+      (NP (PRP he))
+      (VP (VBD was)
+        (NP
+          (NP (NN president))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP Bank))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NN State))
+                  (PP (IN of)
+                    (NP (NNP South) (NNP Carolina))))))))
+        (NP-TMP (CD 1839) (HYPH -) (CD 1850))))
+    (: ;)
+    (S
+      (NP (PRP he))
+      (VP (VBD declined)
+        (NP (NN appointment))
+        (PP (IN by)
+          (NP
+            (NP (NNP President) (NNP James) (NNP Polk))
+            (PP (IN as)
+              (NP (NNP Minister)))))
+        (PP (IN to)
+          (NP (NNP Great) (NNP Britain)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	From
+	1	1839
+			name:	DATE				1-1	1839 
+	2	to
+	3	1850
+			name:	DATE				3-3	1850 
+	4	he
+			coref:	IDENT			3	4-4	he 
+	5	was
+			sense:	be.v.08
+			prop:	be.01
+			V		5-5	was 
+			N-ARGM-TMP		0-3	From 1839 to 1850 
+			N-ARG-A1		4-4	he 
+			N-ARG-A2		6-18	president of the Bank of the State of South Carolina 1839 - 1850 
+	6	president
+			name:	TITLE				6-6	president 
+			sense:	president.n.01
+	7	of
+	8	the
+	9	Bank
+			name:	ORGANIZATION				9-12	Bank of the State 
+	10	of
+	11	the
+	12	State
+			sense:	state.n.01
+	13	of
+	14	South
+			name:	STATE_OR_PROVINCE				14-15	South Carolina 
+	15	Carolina
+	16	1839
+			name:	DURATION				16-17	1839 - 
+	17	-
+	18	1850
+			name:	DATE				18-18	1850 
+	19	;
+	20	he
+			coref:	IDENT			3	20-20	he 
+	21	declined
+			sense:	refuse.v.02
+			prop:	decline.02
+			V		21-21	declined 
+			N-ARG-A0		20-20	he 
+			N-ARG-A1		22-31	appointment by President James Polk as Minister to Great Britain 
+	22	appointment
+			sense:	appointment.n.01
+	23	by
+	24	President
+			name:	TITLE				24-24	President 
+	25	James
+			name:	PERSON				25-26	James Polk 
+	26	Polk
+	27	as
+	28	Minister
+			name:	TITLE				28-28	Minister 
+	29	to
+	30	Great
+			name:	COUNTRY				30-31	Great Britain 
+	31	Britain
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Elmore was appointed as a Democrat to the U.S. Senate to fill the vacancy caused by the death of John C. Calhoun and served from April 11 , 1850 , until his own death in Washington , D.C. in 1850 .
+
+
+Treebanked sentence:
+--------------------
+Elmore was appointed as a Democrat to the U.S. Senate to fill the vacancy caused by the death of John C. Calhoun and served from April 11 , 1850 , until his own death in Washington , D.C. in 1850 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Elmore))
+    (VP
+      (VP (VBD was)
+        (VP (VBN appointed)
+          (PP (IN as)
+            (NP (DT a) (NNP Democrat)))
+          (PP (IN to)
+            (NP (DT the) (NNP U.S.) (NNP Senate)))
+          (S
+            (VP (TO to)
+              (VP (VB fill)
+                (NP
+                  (NP (DT the) (NN vacancy))
+                  (VP (VBN caused)
+                    (PP (IN by)
+                      (NP
+                        (NP (DT the) (NN death))
+                        (PP (IN of)
+                          (NP (NNP John) (NNP C.) (NNP Calhoun))))))))))))
+      (CC and)
+      (VP (VBD served)
+        (PP (IN from)
+          (NP (NNP April) (CD 11) (, ,) (CD 1850) (, ,)))
+        (PP (IN until)
+          (NP
+            (NP (PRP$ his) (JJ own) (NN death))
+            (PP (IN in)
+              (NP (NNP Washington) (, ,) (NNP D.C.)))))
+        (PP (IN in)
+          (NP (CD 1850)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Elmore
+			coref:	IDENT			3	0-0	Elmore 
+			name:	PERSON				0-0	Elmore 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	appointed
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		2-2	appointed 
+			N-ARG-A1		0-0	Elmore 
+			N-ARG-A2		3-9	as a Democrat to the U.S. Senate 
+			N-ARGM-PRP		10-21	to fill the vacancy caused by the death of John C. Calhoun 
+	3	as
+	4	a
+	5	Democrat
+			name:	MISC				5-5	Democrat 
+	6	to
+	7	the
+	8	U.S.
+			name:	ORGANIZATION				8-9	U.S. Senate 
+	9	Senate
+	10	to
+	11	fill
+			sense:	fill.v.04
+			prop:	fill.01
+			V		11-11	fill 
+			N-ARG-A2		0-0	Elmore 
+			N-ARG-A1		12-21	the vacancy caused by the death of John C. Calhoun 
+	12	the
+	13	vacancy
+			sense:	vacancy.n.01
+	14	caused
+			sense:	cause.v.01
+			prop:	cause.01
+			V		14-14	caused 
+			N-ARG-A1		12-13	the vacancy 
+			N-ARG-A0		15-21	by the death of John C. Calhoun 
+	15	by
+	16	the
+	17	death
+			sense:	death.n.01
+	18	of
+	19	John
+			coref:	IDENT			1	19-21	John C. Calhoun 
+			name:	PERSON				19-21	John C. Calhoun 
+	20	C.
+	21	Calhoun
+	22	and
+	23	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		23-23	served 
+			N-ARG-A0		0-0	Elmore 
+			N-ARGM-TMP		24-29	from April 11 , 1850 , 
+			N-ARGM-TMP		30-39	until his own death in Washington , D.C. in 1850 
+	24	from
+	25	April
+			name:	DATE				25-28	April 11 , 1850 
+	26	11
+	27	,
+	28	1850
+	29	,
+	30	until
+	31	his
+			coref:	IDENT			1	31-31	his 
+	32	own
+			sense:	own.s.01
+	33	death
+			sense:	death.n.01
+	34	in
+	35	Washington
+			name:	STATE_OR_PROVINCE				35-35	Washington 
+	36	,
+	37	D.C.
+			name:	LOCATION				37-37	D.C. 
+	38	in
+	39	1850
+			name:	DATE				39-39	1850 
+	40	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was interred in the First Presbyterian Churchyard in Columbia .
+
+
+Treebanked sentence:
+--------------------
+He was interred in the First Presbyterian Churchyard in Columbia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN interred)
+        (PP (IN in)
+          (NP (DT the) (NNP First) (NNP Presbyterian) (NNP Churchyard)))
+        (PP (IN in)
+          (NP (NNP Columbia)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	interred
+			sense:	bury.v.02
+			prop:	enter.01
+			V		2-2	interred 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-9	in the First Presbyterian Churchyard in Columbia 
+	3	in
+	4	the
+	5	First
+			name:	ORDINAL				5-5	First 
+	6	Presbyterian
+			name:	RELIGION				6-6	Presbyterian 
+	7	Churchyard
+	8	in
+	9	Columbia
+			coref:	IDENT			0	9-9	Columbia 
+			name:	STATE_OR_PROVINCE				9-9	Columbia 
+	10	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.20-20	Columbia 
+				6.9-9	Columbia 
+	Chain 1 (IDENT)
+				5.19-21	John C. Calhoun 
+				5.31-31	his 
+				6.0-0	He 
+	Chain 2 (IDENT)
+				2.34-38	the Twenty - fourth Congress 
+				3.4-8	the Twenty - fifth Congress 
+	Chain 3 (IDENT)
+				0.0-11	Franklin Harper Elmore ( October 15 , 1799May 29 , 1850 ) 
+				1.8-10	John Archer Elmore 
+				1.12-12	he 
+				2.0-0	He 
+				3.0-0	Elmore 
+				4.4-4	he 
+				4.20-20	he 
+				5.0-0	Elmore 
+

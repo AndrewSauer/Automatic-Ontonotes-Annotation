@@ -1,0 +1,509 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Conrad Indianapolis is a high - rise luxury hotel in Indianapolis , Indiana .
+
+
+Treebanked sentence:
+--------------------
+Conrad Indianapolis is a high - rise luxury hotel in Indianapolis , Indiana . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Conrad) (NNP Indianapolis))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a)
+          (NML (JJ high) (HYPH -) (NN rise))
+          (NN luxury) (NN hotel))
+        (PP (IN in)
+          (NP (NNP Indianapolis) (, ,) (NNP Indiana)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Conrad
+			name:	LOCATION				0-0	Conrad 
+	1	Indianapolis
+			name:	CITY				1-1	Indianapolis 
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Conrad Indianapolis 
+			N-ARG-A2		3-12	a high - rise luxury hotel in Indianapolis , Indiana 
+	3	a
+	4	high
+			sense:	high.a.02
+	5	-
+	6	rise
+			sense:	upgrade.n.04
+	7	luxury
+			sense:	lavishness.n.01
+	8	hotel
+			sense:	hotel.n.01
+	9	in
+	10	Indianapolis
+			name:	CITY				10-10	Indianapolis 
+	11	,
+	12	Indiana
+			name:	STATE_OR_PROVINCE				12-12	Indiana 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was completed in 2006 and has 23 floors .
+
+
+Treebanked sentence:
+--------------------
+It was completed in 2006 and has 23 floors . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBD was)
+        (VP (VBN completed)
+          (PP (IN in)
+            (NP (CD 2006)))))
+      (CC and)
+      (VP (VBZ has)
+        (NP (CD 23) (NNS floors))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	completed
+			sense:	complete.v.01
+			prop:	complete.01
+			V		2-2	completed 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		3-4	in 2006 
+	3	in
+	4	2006
+			name:	DATE				4-4	2006 
+	5	and
+	6	has
+			sense:	have.v.02
+			prop:	have.03
+			V		6-6	has 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		7-8	23 floors 
+	7	23
+			name:	NUMBER				7-7	23 
+	8	floors
+			sense:	floor.n.02
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The building includes street level retail and 243 luxury hotel rooms with 18 residential condominiums .
+
+
+Treebanked sentence:
+--------------------
+The building includes street level retail and 243 luxury hotel rooms with 18 residential condominiums . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN building))
+    (VP (VBZ includes)
+      (NP
+        (NP
+          (NML (NN street) (NN level))
+          (NN retail))
+        (CC and)
+        (NP (CD 243)
+          (NML (NN luxury) (NN hotel))
+          (NNS rooms)))
+      (PP (IN with)
+        (NP (CD 18) (JJ residential) (NNS condominiums))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	building
+			sense:	building.n.01
+	2	includes
+			sense:	include.v.01
+			prop:	include.01
+			V		2-2	includes 
+			N-ARG-A2		0-1	The building 
+			N-ARG-A1		3-14	street level retail and 243 luxury hotel rooms with 18 residential condominiums 
+	3	street
+			sense:	street.n.01
+	4	level
+			sense:	level.n.04
+	5	retail
+			sense:	retail.n.01
+	6	and
+	7	243
+			name:	NUMBER				7-7	243 
+	8	luxury
+			sense:	lavishness.n.01
+	9	hotel
+			sense:	hotel.n.01
+	10	rooms
+			sense:	room.n.01
+	11	with
+	12	18
+			name:	NUMBER				12-12	18 
+	13	residential
+			sense:	residential.a.01
+	14	condominiums
+			sense:	condominium.n.02
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Conrad Hotels is the luxury brand of Hilton Hotels & Resorts , and the Conrad Indianapolis is one of four Conrad Hotels in the United States , the other three being located in Miami , Chicago and New York City .
+
+
+Treebanked sentence:
+--------------------
+Conrad Hotels is the luxury brand of Hilton Hotels & Resorts , and the Conrad Indianapolis is one of four Conrad Hotels in the United States , the other three being located in Miami , Chicago and New York City . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (JJ Conrad) (NNS Hotels))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN luxury) (NN brand))
+        (PP (IN of)
+          (NP
+            (NP (NNP Hilton) (NNPS Hotels)
+              (CC &)
+              (NNPS Resorts))
+            (PRN (, ,)
+              (S (CC and)
+                (NP (DT the) (NNP Conrad) (NNP Indianapolis))
+                (VP (VBZ is)
+                  (NP
+                    (NP (CD one))
+                    (PP (IN of)
+                      (NP
+                        (NP (CD four) (NNP Conrad) (NNPS Hotels))
+                        (PP (IN in)
+                          (NP (DT the) (NNP United) (NNP States))))))))
+              (, ,))
+            (NP
+              (NP (DT the) (JJ other) (CD three))
+              (VP (VBG being)
+                (VP (VBN located)
+                  (PP (IN in)
+                    (NP
+                      (NML (NNP Miami) (, ,) (NNP Chicago)
+                        (CC and)
+                        (NNP New))
+                      (NNP York) (NNP City))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Conrad
+			name:	ORGANIZATION				0-1	Conrad Hotels 
+	1	Hotels
+			sense:	hotel.n.01
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Conrad Hotels 
+			N-ARG-A2		3-10	the luxury brand of Hilton Hotels & Resorts 
+	3	the
+	4	luxury
+			sense:	lavishness.n.01
+	5	brand
+			sense:	trade_name.n.01
+	6	of
+	7	Hilton
+			name:	ORGANIZATION				7-10	Hilton Hotels & Resorts 
+	8	Hotels
+	9	&
+	10	Resorts
+	11	,
+	12	and
+	13	the
+	14	Conrad
+			name:	ORGANIZATION				14-15	Conrad Indianapolis 
+	15	Indianapolis
+	16	is
+			sense:	be.v.02
+			prop:	be.01
+			V		16-16	is 
+			N-ARG-A1		13-15	the Conrad Indianapolis 
+			N-ARG-A2		17-39	one of four Conrad Hotels in the United States , the other three being located in Miami , Chicago and New York City 
+	17	one
+			name:	NUMBER				17-17	one 
+	18	of
+	19	four
+			name:	NUMBER				19-19	four 
+	20	Conrad
+			name:	ORGANIZATION				20-21	Conrad Hotels 
+	21	Hotels
+	22	in
+	23	the
+			coref:	IDENT			1	23-25	the United States 
+	24	United
+			name:	COUNTRY				24-25	United States 
+	25	States
+	26	,
+	27	the
+	28	other
+			sense:	other.a.01
+	29	three
+			name:	NUMBER				29-29	three 
+	30	being
+			sense:	be.v.01
+			prop:	be.03
+			V		30-30	being 
+	31	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		31-31	located 
+			N-ARG-A1		27-29	the other three 
+			N-ARGM-LOC		32-39	in Miami , Chicago and New York City 
+	32	in
+	33	Miami
+			name:	CITY				33-33	Miami 
+	34	,
+	35	Chicago
+			name:	CITY				35-35	Chicago 
+	36	and
+	37	New
+			name:	CITY				37-39	New York City 
+	38	York
+	39	City
+	40	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2007 and 2008 , Conde Nast Traveler ranked Conrad Indianapolis in the top 100 in the world , and Expedia Insiders’ 2009 Select list of the world 's best hotels named Conrad as number one in the United States .
+
+
+Treebanked sentence:
+--------------------
+In 2007 and 2008 , Conde Nast Traveler ranked Conrad Indianapolis in the top 100 in the world , and Expedia Insiders ’ 2009 Select list of the world 's best hotels named Conrad as number one in the United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2007)
+        (CC and)
+        (CD 2008)))
+    (, ,)
+    (NP (NNP Conde) (NNP Nast) (NN Traveler))
+    (VP (VBD ranked)
+      (NP (NNP Conrad) (NNP Indianapolis))
+      (PP (IN in)
+        (NP (DT the) (JJ top) (CD 100)))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN world))
+          (, ,)
+          (CC and)
+          (NP (NNP Expedia) (NNS Insiders))))
+      ('' ’)
+      (S
+        (NP
+          (NP (CD 2009) (JJ Select) (NN list))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN world) (POS 's))
+              (JJS best) (NNS hotels))))
+        (VP (VBN named)
+          (NP (NNP Conrad))
+          (PP (IN as)
+            (NP (NN number) (CD one)))
+          (PP (IN in)
+            (NP (DT the) (NNP United) (NNP States))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2007
+			name:	DATE				1-1	2007 
+	2	and
+	3	2008
+			name:	DATE				3-3	2008 
+	4	,
+	5	Conde
+			name:	ORGANIZATION				5-7	Conde Nast Traveler 
+	6	Nast
+	7	Traveler
+			sense:	traveler.n.01
+	8	ranked
+			sense:	rate.v.01
+			prop:	rank.01
+			V		8-8	ranked 
+			N-ARGM-TMP		0-3	In 2007 and 2008 
+			N-ARG-A0		5-7	Conde Nast Traveler 
+			N-ARG-A1		9-10	Conrad Indianapolis 
+			N-ARG-A2		11-17	in the top 100 in the world 
+	9	Conrad
+			name:	PERSON				9-10	Conrad Indianapolis 
+	10	Indianapolis
+	11	in
+	12	the
+	13	top
+			sense:	top.a.01
+	14	100
+			name:	NUMBER				14-14	100 
+	15	in
+	16	the
+			coref:	IDENT			0	16-17	the world 
+	17	world
+			sense:	earth.n.01
+	18	,
+	19	and
+	20	Expedia
+			name:	ORGANIZATION				20-20	Expedia 
+	21	Insiders
+			sense:	insider.n.01
+	22	’
+	23	2009
+			name:	DATE				23-23	2009 
+	24	Select
+			sense:	blue-ribbon.s.01
+	25	list
+			sense:	list.n.01
+	26	of
+	27	the
+			coref:	IDENT			0	27-29	the world 's 
+	28	world
+			sense:	earth.n.01
+	29	's
+	30	best
+			sense:	good.a.01
+	31	hotels
+			sense:	hotel.n.01
+	32	named
+			sense:	name.v.05
+			prop:	name.01
+			V		32-32	named 
+			N-ARG-A0		20-31	Expedia Insiders ’ 2009 Select list of the world 's best hotels 
+			N-ARG-A1		33-33	Conrad 
+			N-ARG-A2		34-40	as number one in the United States 
+	33	Conrad
+			name:	PERSON				33-33	Conrad 
+	34	as
+	35	number
+			sense:	number.n.02
+	36	one
+			name:	NUMBER				36-36	one 
+	37	in
+	38	the
+			coref:	IDENT			1	38-40	the United States 
+	39	United
+			name:	COUNTRY				39-40	United States 
+	40	States
+	41	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Conrad Indianapolis is connected to the downtown skywalk system via the Indianapolis Artsgarden .
+
+
+Treebanked sentence:
+--------------------
+The Conrad Indianapolis is connected to the downtown skywalk system via the Indianapolis Artsgarden . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Conrad) (NNP Indianapolis))
+    (VP (VBZ is)
+      (VP (VBN connected)
+        (PP (IN to)
+          (NP
+            (NP (DT the) (NN downtown) (NN skywalk) (NN system))
+            (PP (IN via)
+              (NP (DT the) (NNP Indianapolis) (NNP Artsgarden)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Conrad
+			name:	LOCATION				1-1	Conrad 
+	2	Indianapolis
+			name:	CITY				2-2	Indianapolis 
+	3	is
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	is 
+	4	connected
+			sense:	connect.v.01
+			prop:	connect.01
+			V		4-4	connected 
+			N-ARG-A1		0-2	The Conrad Indianapolis 
+			N-ARGM-MNR		10-13	via the Indianapolis Artsgarden 
+	5	to
+	6	the
+	7	downtown
+			sense:	business_district.n.01
+	8	skywalk
+			sense:	skywalk.n.01
+	9	system
+			sense:	system.n.01
+	10	via
+	11	the
+	12	Indianapolis
+			name:	CITY				12-12	Indianapolis 
+	13	Artsgarden
+			name:	LOCATION				13-13	Artsgarden 
+	14	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.27-29	the world 's 
+				4.16-17	the world 
+	Chain 1 (IDENT)
+				3.23-25	the United States 
+				4.38-40	the United States 
+

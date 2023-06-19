@@ -1,0 +1,568 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Albemarle County is a county located in the Piedmont region of the Commonwealth of Virginia .
+
+
+Treebanked sentence:
+--------------------
+Albemarle County is a county located in the Piedmont region of the Commonwealth of Virginia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Albemarle) (NNP County))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN county))
+        (VP (VBN located)
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NNP Piedmont) (NN region))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NNP Commonwealth))
+                  (PP (IN of)
+                    (NP (NNP Virginia))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Albemarle
+			coref:	IDENT			0	0-1	Albemarle County 
+			name:	CITY				0-0	Albemarle 
+	1	County
+			name:	LOCATION				1-1	County 
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Albemarle County 
+			N-ARG-A2		3-14	a county located in the Piedmont region of the Commonwealth of Virginia 
+	3	a
+	4	county
+			sense:	county.n.01
+	5	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		5-5	located 
+			N-ARG-A1		3-4	a county 
+			N-ARGM-LOC		6-14	in the Piedmont region of the Commonwealth of Virginia 
+	6	in
+	7	the
+	8	Piedmont
+			name:	CITY				8-8	Piedmont 
+	9	region
+			sense:	region.n.01
+	10	of
+	11	the
+	12	Commonwealth
+	13	of
+	14	Virginia
+			name:	STATE_OR_PROVINCE				14-14	Virginia 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Its county seat is Charlottesville , which is an independent city and enclave entirely surrounded by the county .
+
+
+Treebanked sentence:
+--------------------
+Its county seat is Charlottesville , which is an independent city and enclave entirely surrounded by the county . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ Its) (NN county) (NN seat))
+    (VP (VBZ is)
+      (NP
+        (NP (NNP Charlottesville))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ is)
+              (NP
+                (NP (DT an) (JJ independent) (NN city)
+                  (CC and)
+                  (NN enclave))
+                (VP
+                  (ADVP (RB entirely))
+                  (VBN surrounded)
+                  (PP (IN by)
+                    (NP (DT the) (NN county))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Its
+			coref:	IDENT			0	0-0	Its 
+	1	county
+			sense:	county.n.01
+	2	seat
+			sense:	seat.n.05
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Its county seat 
+			N-ARG-A2		4-17	Charlottesville , which is an independent city and enclave entirely surrounded by the county 
+	4	Charlottesville
+			name:	CITY				4-4	Charlottesville 
+	5	,
+	6	which
+	7	is
+			sense:	be.v.01
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		4-4	Charlottesville 
+			R-ARG-A1		6-6	which 
+			N-ARG-A2		8-17	an independent city and enclave entirely surrounded by the county 
+	8	an
+	9	independent
+			name:	RELIGION				9-9	independent 
+			sense:	autonomous.s.01
+	10	city
+			sense:	city.n.01
+	11	and
+	12	enclave
+			sense:	enclave.n.01
+	13	entirely
+			sense:	entirely.r.02
+	14	surrounded
+			sense:	surround.v.01
+			prop:	surround.01
+			V		14-14	surrounded 
+			N-ARG-A2		8-12	an independent city and enclave 
+			N-ARG-A1		15-17	by the county 
+	15	by
+	16	the
+			coref:	IDENT			0	16-17	the county 
+	17	county
+			sense:	county.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Albemarle County is part of the Charlottesville Metropolitan Statistical Area .
+
+
+Treebanked sentence:
+--------------------
+Albemarle County is part of the Charlottesville Metropolitan Statistical Area . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Albemarle) (NNP County))
+    (VP (VBZ is)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP (DT the) (NNP Charlottesville) (NNP Metropolitan) (NNP Statistical) (NNP Area)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Albemarle
+			coref:	IDENT			0	0-1	Albemarle County 
+			name:	CITY				0-0	Albemarle 
+	1	County
+			name:	LOCATION				1-1	County 
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Albemarle County 
+			N-ARG-A2		3-9	part of the Charlottesville Metropolitan Statistical Area 
+	3	part
+			sense:	part.n.01
+	4	of
+	5	the
+	6	Charlottesville
+			name:	ORGANIZATION				6-9	Charlottesville Metropolitan Statistical Area 
+	7	Metropolitan
+	8	Statistical
+	9	Area
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As of the 2010 census , the population of Albemarle County was 98,970 , more than triple the 1960 census count .
+
+
+Treebanked sentence:
+--------------------
+As of the 2010 census , the population of Albemarle County was 98,970 , more than triple the 1960 census count . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN As)
+      (PP (IN of)
+        (NP (DT the) (CD 2010) (NN census))))
+    (, ,)
+    (NP
+      (NP (DT the) (NN population))
+      (PP (IN of)
+        (NP (NNP Albemarle) (NNP County))))
+    (VP (VBD was)
+      (NP
+        (NP (CD 98,970))
+        (, ,)
+        (NP
+          (NP
+            (QP (JJR more) (IN than) (PDT triple)))
+          (NP (DT the) (CD 1960) (NN census) (NN count)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	of
+	2	the
+	3	2010
+			name:	DATE				3-3	2010 
+	4	census
+			sense:	census.n.01
+	5	,
+	6	the
+	7	population
+			sense:	population.n.04
+	8	of
+	9	Albemarle
+			coref:	IDENT			0	9-10	Albemarle County 
+			name:	CITY				9-9	Albemarle 
+	10	County
+			name:	LOCATION				10-10	County 
+	11	was
+			sense:	equal.v.01
+			prop:	be.01
+			V		11-11	was 
+			N-ARGM-TMP		0-4	As of the 2010 census 
+			N-ARG-A1		6-10	the population of Albemarle County 
+			N-ARG-A2		12-20	98,970 , more than triple the 1960 census count 
+	12	98,970
+			name:	NUMBER				12-12	98,970 
+	13	,
+	14	more
+			sense:	more.a.01
+	15	than
+	16	triple
+	17	the
+	18	1960
+			name:	DATE				18-18	1960 
+	19	census
+			sense:	census.n.01
+	20	count
+			name:	TITLE				20-20	count 
+			sense:	count.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Albemarle County was created in 1744 from the western portion of Goochland County , though portions of Albemarle were later carved out to create other counties .
+
+
+Treebanked sentence:
+--------------------
+Albemarle County was created in 1744 from the western portion of Goochland County , though portions of Albemarle were later carved out to create other counties . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Albemarle) (NNP County))
+    (VP (VBD was)
+      (VP (VBN created)
+        (PP (IN in)
+          (NP (CD 1744)))
+        (PP (IN from)
+          (NP
+            (NP (DT the) (JJ western) (NN portion))
+            (PP (IN of)
+              (NP (NNP Goochland) (NNP County)))))
+        (, ,)
+        (SBAR (IN though)
+          (S
+            (NP
+              (NP (NNS portions))
+              (PP (IN of)
+                (NP (NNP Albemarle))))
+            (VP (VBD were)
+              (ADVP (RB later))
+              (VP (VBN carved)
+                (PRT (RP out))
+                (S
+                  (VP (TO to)
+                    (VP (VB create)
+                      (NP (JJ other) (NNS counties)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Albemarle
+			coref:	IDENT			0	0-1	Albemarle County 
+			name:	CITY				0-0	Albemarle 
+	1	County
+			name:	LOCATION				1-1	County 
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	created
+			sense:	create.v.02
+			prop:	create.01
+			V		3-3	created 
+			N-ARG-A1		0-1	Albemarle County 
+			N-ARGM-TMP		4-5	in 1744 
+			N-ARG-A2		6-12	from the western portion of Goochland County 
+			N-ARGM-ADV		14-25	though portions of Albemarle were later carved out to create other counties 
+	4	in
+	5	1744
+			name:	DATE				5-5	1744 
+	6	from
+	7	the
+	8	western
+			sense:	western.s.03
+	9	portion
+			sense:	part.n.01
+	10	of
+	11	Goochland
+			coref:	IDENT			0	11-12	Goochland County 
+			name:	LOCATION				11-12	Goochland County 
+	12	County
+	13	,
+	14	though
+	15	portions
+			sense:	part.n.01
+	16	of
+	17	Albemarle
+			coref:	IDENT			0	17-17	Albemarle 
+			name:	CITY				17-17	Albemarle 
+	18	were
+			sense:	be.v.01
+			prop:	be.03
+			V		18-18	were 
+	19	later
+			sense:	subsequently.r.01
+	20	carved
+			sense:	carve.v.03
+			prop:	carve.03
+			V		20-20	carved 
+			N-ARG-A1		15-17	portions of Albemarle 
+			N-ARGM-TMP		19-19	later 
+			N-ARGM-PRP		22-25	to create other counties 
+	21	out
+	22	to
+	23	create
+			sense:	create.v.02
+			prop:	create.01
+			V		23-23	create 
+			N-ARG-A1		24-25	other counties 
+	24	other
+			sense:	other.a.01
+	25	counties
+			sense:	county.n.01
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Albemarle County was named in honor of Willem Anne van Keppel , 2nd Earl of Albemarle .
+
+
+Treebanked sentence:
+--------------------
+Albemarle County was named in honor of Willem Anne van Keppel , 2nd Earl of Albemarle . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Albemarle) (NNP County))
+    (VP (VBD was)
+      (VP (VBN named)
+        (PP (IN in)
+          (NP
+            (NP (NN honor))
+            (PP (IN of)
+              (NP
+                (NP (NNP Willem) (NNP Anne) (NNP van) (NNP Keppel))
+                (, ,)
+                (NP
+                  (NP (NNP 2nd) (NNP Earl))
+                  (PP (IN of)
+                    (NP (NNP Albemarle))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Albemarle
+			coref:	IDENT			0	0-1	Albemarle County 
+			name:	CITY				0-0	Albemarle 
+	1	County
+			name:	LOCATION				1-1	County 
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	named
+			sense:	name.v.01
+			prop:	name.01
+			V		3-3	named 
+			N-ARG-A1		0-1	Albemarle County 
+	4	in
+	5	honor
+			sense:	honor.n.02
+	6	of
+	7	Willem
+			name:	PERSON				7-10	Willem Anne van Keppel 
+	8	Anne
+	9	van
+	10	Keppel
+	11	,
+	12	2nd
+			name:	ORDINAL				12-12	2nd 
+	13	Earl
+			name:	TITLE				13-13	Earl 
+	14	of
+	15	Albemarle
+			coref:	IDENT			0	15-15	Albemarle 
+			name:	CITY				15-15	Albemarle 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+However , its most famous inhabitant was Thomas Jefferson , who built his estate home , Monticello , in the county .
+
+
+Treebanked sentence:
+--------------------
+However , its most famous inhabitant was Thomas Jefferson , who built his estate home , Monticello , in the county . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP (PRP$ its)
+      (ADJP (RBS most) (JJ famous))
+      (NN inhabitant))
+    (VP (VBD was)
+      (NP
+        (NP (NNP Thomas) (NNP Jefferson))
+        (, ,)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD built)
+              (NP (PRP$ his)
+                (NML
+                  (NML (NN estate) (NN home))
+                  (, ,)
+                  (NP (NNP Monticello))
+                  (, ,)))
+              (PP (IN in)
+                (NP (DT the) (NN county))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	However
+			sense:	however.r.01
+	1	,
+	2	its
+			coref:	IDENT			0	2-2	its 
+	3	most
+			sense:	most.r.01
+	4	famous
+			sense:	celebrated.s.01
+	5	inhabitant
+			sense:	inhabitant.n.01
+	6	was
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	was 
+			N-ARGM-DIS		0-0	However 
+			N-ARG-A1		2-5	its most famous inhabitant 
+			N-ARG-A2		7-20	Thomas Jefferson , who built his estate home , Monticello , in the county 
+	7	Thomas
+			name:	PERSON				7-8	Thomas Jefferson 
+	8	Jefferson
+	9	,
+	10	who
+	11	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		11-11	built 
+			N-ARG-A0		7-8	Thomas Jefferson 
+			R-ARG-A0		10-10	who 
+			N-ARG-A1		12-16	his estate home , Monticello 
+			N-ARGM-LOC		18-20	in the county 
+	12	his
+	13	estate
+			sense:	estate.n.02
+	14	home
+			sense:	dwelling.n.01
+	15	,
+	16	Monticello
+			name:	CITY				16-16	Monticello 
+	17	,
+	18	in
+	19	the
+			coref:	IDENT			0	19-20	the county 
+	20	county
+			sense:	county.n.01
+	21	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Albemarle County 
+				1.0-0	Its 
+				1.16-17	the county 
+				2.0-1	Albemarle County 
+				3.9-10	Albemarle County 
+				4.0-1	Albemarle County 
+				4.11-12	Goochland County 
+				4.17-17	Albemarle 
+				5.0-1	Albemarle County 
+				5.15-15	Albemarle 
+				6.2-2	its 
+				6.19-20	the county 
+

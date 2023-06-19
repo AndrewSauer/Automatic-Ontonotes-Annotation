@@ -1,0 +1,681 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jacques Prost , born in 1946 in Bourg - en - Bresse , is a French physicist , General director of École supérieure de physique et de chimie industrielles de la ville de Paris , member of the French Academy of Sciences .
+
+
+Treebanked sentence:
+--------------------
+Jacques Prost , born in 1946 in Bourg - en - Bresse , is a French physicist , General director of École supérieure de physique et de chimie industrielles de la ville de Paris , member of the French Academy of Sciences . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Jacques) (NNP Prost))
+      (, ,)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (CD 1946)))
+        (PP (IN in)
+          (NP
+            (NP (NNP Bourg))
+            (HYPH -)
+            (NP (FW en) (HYPH -) (FW Bresse)))))
+      (, ,))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ French) (NN physicist))
+        (, ,)
+        (NP
+          (NP (NNP General) (NN director))
+          (PP (IN of)
+            (NP
+              (NP (NNP École))
+              (NP (FW supérieure) (FW de))
+              (NP (NN physique) (FW et) (FW de) (FW chimie) (FW industrielles) (FW de) (FW la) (FW ville) (FW de))
+              (NP (NNP Paris))
+              (, ,)
+              (NP
+                (NP (NN member))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NNP French) (NNP Academy))
+                    (PP (IN of)
+                      (NP (NNPS Sciences)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jacques
+			coref:	IDENT			2	0-11	Jacques Prost , born in 1946 in Bourg - en - Bresse 
+			name:	PERSON				0-1	Jacques Prost 
+	1	Prost
+	2	,
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Jacques Prost 
+			N-ARGM-TMP		4-5	in 1946 
+			N-ARGM-LOC		6-11	in Bourg - en - Bresse 
+	4	in
+	5	1946
+			name:	DATE				5-5	1946 
+	6	in
+	7	Bourg
+			name:	LOCATION				7-11	Bourg - en - Bresse 
+	8	-
+	9	en
+	10	-
+	11	Bresse
+	12	,
+	13	is
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	is 
+			N-ARG-A1		0-12	Jacques Prost , born in 1946 in Bourg - en - Bresse , 
+			N-ARG-A2		14-41	a French physicist , General director of École supérieure de physique et de chimie industrielles de la ville de Paris , member of the French Academy of Sciences 
+	14	a
+	15	French
+			name:	NATIONALITY				15-15	French 
+	16	physicist
+			name:	TITLE				16-16	physicist 
+			sense:	physicist.n.01
+	17	,
+	18	General
+			name:	TITLE				18-19	General director 
+	19	director
+			sense:	director.n.01
+	20	of
+	21	École
+	22	supérieure
+	23	de
+	24	physique
+			sense:	physique.n.01
+	25	et
+	26	de
+	27	chimie
+	28	industrielles
+	29	de
+	30	la
+	31	ville
+	32	de
+	33	Paris
+			coref:	IDENT			0	33-33	Paris 
+			name:	CITY				33-33	Paris 
+	34	,
+	35	member
+			sense:	member.n.01
+	36	of
+	37	the
+			coref:	IDENT			3	37-41	the French Academy of Sciences 
+	38	French
+			name:	ORGANIZATION				38-41	French Academy of Sciences 
+	39	Academy
+	40	of
+	41	Sciences
+	42	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Alumni of the École normale supérieure de Saint - Cloud ( sciences ) ( 1965 ) , Jacques Prost studied at Harvard University and founded and head ( 1987 – 1995 ) the " Theoretical Physico - Chemistry " Group of the ESPCI ParisTech under the direction of Pierre - Gilles de Gennes .
+
+
+Treebanked sentence:
+--------------------
+Alumni of the École normale supérieure de Saint - Cloud ( sciences ) ( 1965 ) , Jacques Prost studied at Harvard University and founded and head ( 1987 – 1995 ) the " Theoretical Physico - Chemistry " Group of the ESPCI ParisTech under the direction of Pierre - Gilles de Gennes . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNPS Alumni))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP
+                (NP (DT the) (NNP École) (JJ normale) (NN supérieure))
+                (PP (IN de)
+                  (NP (NNP Saint) (HYPH -) (NNP Cloud))))
+              (-LRB- -LRB-)
+              (NP (NNS sciences))
+              (-RRB- -RRB-)
+              (PRN (-LRB- -LRB-)
+                (NP (CD 1965))
+                (-RRB- -RRB-)))
+            (, ,)
+            (NP (NNP Jacques) (NNP Prost)))))
+      (VP
+        (VP (VBD studied)
+          (PP (IN at)
+            (NP (NNP Harvard) (NNP University))))
+        (CC and)
+        (VP (VBD founded))))
+    (CC and)
+    (S
+      (NP (NN head)
+        (PRN (-LRB- -LRB-)
+          (NP (CD 1987) (SYM –) (CD 1995))
+          (-RRB- -RRB-)))
+      (NP
+        (NP (DT the)
+          (NML (`` ")
+            (NP (JJ Theoretical) (NNP Physico))
+            (PP (HYPH -)
+              (NP (NNP Chemistry)))
+            ('' "))
+          (NNP Group))
+        (PP (IN of)
+          (NP (DT the) (NNP ESPCI) (NNP ParisTech)))))
+    (PP (IN under)
+      (NP
+        (NP (DT the) (NN direction))
+        (PP (IN of)
+          (NP (NNP Pierre) (HYPH -) (NNP Gilles) (NNP de) (NNP Gennes)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Alumni
+	1	of
+	2	the
+	3	École
+			name:	MISC				3-4	École normale 
+	4	normale
+	5	supérieure
+	6	de
+	7	Saint
+			name:	TITLE				7-7	Saint 
+	8	-
+	9	Cloud
+	10	(
+	11	sciences
+			sense:	science.n.01
+	12	)
+	13	(
+	14	1965
+			name:	DATE				14-14	1965 
+	15	)
+	16	,
+	17	Jacques
+			coref:	IDENT			2	17-18	Jacques Prost 
+			name:	PERSON				17-18	Jacques Prost 
+	18	Prost
+	19	studied
+			sense:	study.v.02
+			prop:	study.01
+			V		19-19	studied 
+			R-ARG-A0		0-15	Alumni of the École normale supérieure de Saint - Cloud ( sciences ) ( 1965 ) 
+			N-ARG-A0		17-18	Jacques Prost 
+			N-ARGM-LOC		20-22	at Harvard University 
+	20	at
+	21	Harvard
+			name:	ORGANIZATION				21-22	Harvard University 
+	22	University
+	23	and
+	24	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		24-24	founded 
+			R-ARG-A0		0-15	Alumni of the École normale supérieure de Saint - Cloud ( sciences ) ( 1965 ) 
+			N-ARG-A0		17-18	Jacques Prost 
+			N-ARGM-TMP		27-31	( 1987 – 1995 ) 
+			N-ARG-A1		32-43	the " Theoretical Physico - Chemistry " Group of the ESPCI ParisTech 
+			N-ARGM-ADV		44-52	under the direction of Pierre - Gilles de Gennes 
+	25	and
+	26	head
+			sense:	head.n.04
+	27	(
+	28	1987
+			name:	DATE				28-28	1987 
+	29	–
+	30	1995
+			name:	DATE				30-30	1995 
+	31	)
+	32	the
+	33	"
+	34	Theoretical
+			sense:	theoretical.a.02
+	35	Physico
+	36	-
+	37	Chemistry
+	38	"
+	39	Group
+	40	of
+	41	the
+	42	ESPCI
+			name:	MISC				42-43	ESPCI ParisTech 
+	43	ParisTech
+	44	under
+	45	the
+	46	direction
+			sense:	management.n.01
+	47	of
+	48	Pierre
+			name:	PERSON				48-52	Pierre - Gilles de Gennes 
+	49	-
+	50	Gilles
+	51	de
+	52	Gennes
+	53	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His group studied liquid crystal and soft matter properties .
+
+
+Treebanked sentence:
+--------------------
+His group studied liquid crystal and soft matter properties . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His) (NN group))
+    (VP (VBD studied)
+      (NP
+        (NML
+          (NML (NN liquid) (NN crystal))
+          (CC and)
+          (NML (JJ soft) (NN matter)))
+        (NNS properties)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			1	0-1	His group 
+	1	group
+			sense:	group.n.01
+	2	studied
+			sense:	analyze.v.01
+			prop:	study.01
+			V		2-2	studied 
+			N-ARG-A0		0-1	His group 
+			N-ARG-A1		3-8	liquid crystal and soft matter properties 
+	3	liquid
+			sense:	liquid.n.03
+	4	crystal
+			sense:	crystal.n.01
+	5	and
+	6	soft
+			sense:	soft.a.01
+	7	matter
+			sense:	matter.n.03
+	8	properties
+			sense:	property.n.02
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1996 , he founded the group " Physical Chemistry Curie " lab at the Curie Institute ( Paris ) .
+
+
+Treebanked sentence:
+--------------------
+In 1996 , he founded the group " Physical Chemistry Curie " lab at the Curie Institute ( Paris ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1996)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD founded)
+      (NP (DT the) (NN group))
+      (S
+        (NP (`` ") (JJ Physical) (NNP Chemistry) (NNP Curie) ('' ") (NN lab)))
+      (PP (IN at)
+        (NP (DT the) (NNP Curie) (NNP Institute)))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP Paris))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1996
+			name:	DATE				1-1	1996 
+	2	,
+	3	he
+	4	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		4-4	founded 
+			N-ARGM-TMP		0-1	In 1996 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		5-12	the group " Physical Chemistry Curie " lab 
+			N-ARGM-LOC		13-19	at the Curie Institute ( Paris ) 
+	5	the
+			coref:	IDENT			1	5-6	the group 
+	6	group
+			sense:	group.n.01
+	7	"
+	8	Physical
+			sense:	physical.a.02
+	9	Chemistry
+	10	Curie
+			name:	PERSON				10-10	Curie 
+	11	"
+	12	lab
+			sense:	lab.n.01
+	13	at
+	14	the
+	15	Curie
+			name:	ORGANIZATION				15-16	Curie Institute 
+	16	Institute
+	17	(
+	18	Paris
+			coref:	IDENT			0	18-18	Paris 
+			name:	CITY				18-18	Paris 
+	19	)
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His group studies physical approaches to biological problems and describes cell motion , molecular motors , the properties of biological membranes and protein adhesion .
+
+
+Treebanked sentence:
+--------------------
+His group studies physical approaches to biological problems and describes cell motion , molecular motors , the properties of biological membranes and protein adhesion . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His) (NN group) (NNS studies))
+    (VP
+      (VP
+        (NP (JJ physical) (NNS approaches))
+        (PP (IN to)
+          (NP (JJ biological) (NNS problems))))
+      (CC and)
+      (VP (VBZ describes)
+        (NP
+          (NP
+            (NP (NN cell) (NN motion))
+            (, ,)
+            (NP (JJ molecular) (NNS motors)))
+          (, ,)
+          (NP
+            (NP (DT the) (NNS properties))
+            (PP (IN of)
+              (NP (JJ biological) (NNS membranes))))
+          (CC and)
+          (NP (NN protein) (NN adhesion)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+	1	group
+			sense:	group.n.01
+	2	studies
+			sense:	survey.n.01
+	3	physical
+			sense:	physical.a.02
+	4	approaches
+			sense:	approach.n.01
+	5	to
+	6	biological
+			sense:	biological.a.01
+	7	problems
+			sense:	problem.n.02
+	8	and
+	9	describes
+			sense:	identify.v.05
+			prop:	describe.01
+			V		9-9	describes 
+			N-ARG-A0		0-1	His group 
+			N-ARG-A1		10-23	cell motion , molecular motors , the properties of biological membranes and protein adhesion 
+	10	cell
+			sense:	cell.n.02
+	11	motion
+			sense:	movement.n.03
+	12	,
+	13	molecular
+			sense:	molecular.a.01
+	14	motors
+			sense:	motor.n.02
+	15	,
+	16	the
+	17	properties
+			sense:	property.n.02
+	18	of
+	19	biological
+			sense:	biological.a.01
+	20	membranes
+			sense:	membrane.n.02
+	21	and
+	22	protein
+			sense:	protein.n.01
+	23	adhesion
+			sense:	adhesiveness.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jacques Prost was the scientific advisor to Elf Aquitaine from 1990 to 1999 .
+
+
+Treebanked sentence:
+--------------------
+Jacques Prost was the scientific advisor to Elf Aquitaine from 1990 to 1999 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Jacques) (NNP Prost))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (JJ scientific) (NN advisor))
+        (PP (IN to)
+          (NP
+            (NP (NNP Elf) (NNP Aquitaine))
+            (PP (IN from)
+              (NP (CD 1990))))))
+      (PP (IN to)
+        (NP (CD 1999))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jacques
+			coref:	IDENT			2	0-1	Jacques Prost 
+			name:	PERSON				0-1	Jacques Prost 
+	1	Prost
+	2	was
+			sense:	be.v.08
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	Jacques Prost 
+			N-ARG-A2		3-8	the scientific advisor to Elf Aquitaine 
+			N-ARGM-TMP		9-12	from 1990 to 1999 
+	3	the
+	4	scientific
+			sense:	scientific.a.01
+	5	advisor
+			sense:	adviser.n.01
+	6	to
+	7	Elf
+			name:	LOCATION				7-8	Elf Aquitaine 
+	8	Aquitaine
+	9	from
+			name:	DATE				9-12	from 1990 to 1999 
+	10	1990
+	11	to
+	12	1999
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is a member of the French Academy of Sciences since 2007 .
+
+
+Treebanked sentence:
+--------------------
+He is a member of the French Academy of Sciences since 2007 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP French) (NNP Academy))
+            (PP (IN of)
+              (NP
+                (NP (NNPS Sciences))
+                (PP (IN since)
+                  (NP (CD 2007)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-9	a member of the French Academy of Sciences 
+			N-ARGM-TMP		10-11	since 2007 
+	2	a
+	3	member
+			sense:	member.n.01
+	4	of
+	5	the
+			coref:	IDENT			3	5-11	the French Academy of Sciences since 2007 
+	6	French
+			name:	ORGANIZATION				6-9	French Academy of Sciences 
+	7	Academy
+	8	of
+	9	Sciences
+	10	since
+	11	2007
+			name:	DATE				11-11	2007 
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jacques Prost has been the General director of ESPCI ParisTech , since 2003 .
+
+
+Treebanked sentence:
+--------------------
+Jacques Prost has been the General director of ESPCI ParisTech , since 2003 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Jacques) (NNP Prost))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (NP
+          (NP (DT the) (NNP General) (NN director))
+          (PP (IN of)
+            (NP (NNP ESPCI) (NNP ParisTech))))
+        (, ,)
+        (PP (IN since)
+          (NP (CD 2003)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jacques
+			coref:	IDENT			2	0-1	Jacques Prost 
+			name:	PERSON				0-1	Jacques Prost 
+	1	Prost
+	2	has
+			sense:	have.v.01
+			prop:	have.01
+			V		2-2	has 
+	3	been
+			sense:	be.v.08
+			prop:	be.01
+			V		3-3	been 
+			N-ARG-A1		0-1	Jacques Prost 
+			N-ARG-A2		4-9	the General director of ESPCI ParisTech 
+			N-ARGM-TMP		11-12	since 2003 
+	4	the
+	5	General
+			name:	TITLE				5-6	General director 
+	6	director
+			sense:	director.n.01
+	7	of
+	8	ESPCI
+			name:	MISC				8-9	ESPCI ParisTech 
+	9	ParisTech
+	10	,
+	11	since
+	12	2003
+			name:	DATE				12-12	2003 
+	13	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.33-33	Paris 
+				3.18-18	Paris 
+	Chain 1 (IDENT)
+				2.0-1	His group 
+				3.5-6	the group 
+	Chain 2 (IDENT)
+				0.0-11	Jacques Prost , born in 1946 in Bourg - en - Bresse 
+				1.17-18	Jacques Prost 
+				5.0-1	Jacques Prost 
+				6.0-0	He 
+				7.0-1	Jacques Prost 
+	Chain 3 (IDENT)
+				6.5-11	the French Academy of Sciences since 2007 
+				0.37-41	the French Academy of Sciences 
+

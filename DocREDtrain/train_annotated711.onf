@@ -1,0 +1,683 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Linda Karen Reynolds , ( born 16 May 1965 ) is an Australian politician .
+
+
+Treebanked sentence:
+--------------------
+Linda Karen Reynolds , ( born 16 May 1965 ) is an Australian politician . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Linda) (NNP Karen) (NNP Reynolds) (, ,))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 16))
+        (NP-TMP (NNP May) (CD 1965)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT an) (JJ Australian) (NN politician)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Linda
+			coref:	IDENT			0	0-8	Linda Karen Reynolds , ( born 16 May 1965 
+			name:	PERSON				0-2	Linda Karen Reynolds 
+	1	Karen
+	2	Reynolds
+	3	,
+	4	(
+	5	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		5-5	born 
+			N-ARG-A1		0-2	Linda Karen Reynolds 
+			N-ARGM-TMP		6-8	16 May 1965 
+	6	16
+			name:	DATE				6-8	16 May 1965 
+	7	May
+	8	1965
+	9	)
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	Linda Karen Reynolds , ( born 16 May 1965 ) 
+			N-ARG-A2		11-13	an Australian politician 
+	11	an
+	12	Australian
+			name:	NATIONALITY				12-12	Australian 
+	13	politician
+			name:	TITLE				13-13	politician 
+			sense:	politician.n.02
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She was elected to the Australian Senate representing the state of Western Australia at the 2013 federal election for the term which began 1 July 2014 .
+
+
+Treebanked sentence:
+--------------------
+She was elected to the Australian Senate representing the state of Western Australia at the 2013 federal election for the term which began 1 July 2014 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (PP (IN to)
+          (NP (DT the) (JJ Australian) (NNP Senate)))
+        (S
+          (VP (VBG representing)
+            (NP
+              (NP (DT the) (NN state))
+              (PP (IN of)
+                (NP (JJ Western) (NNP Australia))))
+            (PP (IN at)
+              (NP (DT the) (CD 2013) (JJ federal) (NN election)))
+            (PP (IN for)
+              (NP
+                (NP (DT the) (NN term))
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBD began)
+                      (NP (CD 1))
+                      (NP-TMP (NNP July) (CD 2014)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		3-6	to the Australian Senate 
+			N-ARGM-PRD		7-12	representing the state of Western Australia 
+			N-ARGM-LOC		13-25	at the 2013 federal election for the term which began 1 July 2014 
+	3	to
+	4	the
+			coref:	IDENT			1	4-6	the Australian Senate 
+	5	Australian
+			name:	NATIONALITY				5-5	Australian 
+	6	Senate
+			name:	ORGANIZATION				6-6	Senate 
+	7	representing
+			sense:	represent.v.04
+			prop:	represent.01
+			V		7-7	representing 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		8-12	the state of Western Australia 
+	8	the
+	9	state
+			sense:	state.n.01
+	10	of
+	11	Western
+			name:	LOCATION				11-11	Western 
+			sense:	western.s.03
+	12	Australia
+			name:	COUNTRY				12-12	Australia 
+	13	at
+	14	the
+	15	2013
+			name:	DATE				15-15	2013 
+	16	federal
+			sense:	federal.a.02
+	17	election
+			sense:	election.n.01
+	18	for
+	19	the
+	20	term
+			sense:	term.n.02
+	21	which
+	22	began
+			sense:	begin.v.02
+			prop:	begin.01
+			V		22-22	began 
+			N-ARG-A1		19-20	the term 
+			R-ARG-A1		21-21	which 
+			N-ARGM-TMP		23-25	1 July 2014 
+	23	1
+			coref:	IDENT			2	23-25	1 July 2014 
+			name:	DATE				23-25	1 July 2014 
+	24	July
+	25	2014
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Reynolds was elected by being third on the Liberal Senate ticket but her place in the Senate was in doubt after the High Court ordered a fresh half - Senate election in Western Australia as a result of missing ballot papers .
+
+
+Treebanked sentence:
+--------------------
+Reynolds was elected by being third on the Liberal Senate ticket but her place in the Senate was in doubt after the High Court ordered a fresh half - Senate election in Western Australia as a result of missing ballot papers . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NNP Reynolds))
+      (VP (VBD was)
+        (VP (VBN elected)
+          (PP (IN by)
+            (S
+              (VP (VBG being)
+                (ADJP (JJ third)
+                  (PP (IN on)
+                    (NP (DT the) (JJ Liberal) (NNP Senate) (NN ticket))))))))))
+    (CC but)
+    (S
+      (NP
+        (NP (PRP$ her) (NN place))
+        (PP (IN in)
+          (NP (DT the) (NNP Senate))))
+      (VP (VBD was)
+        (PP (IN in)
+          (NP (NN doubt)))
+        (SBAR (IN after)
+          (S
+            (NP (DT the) (NNP High) (NNP Court))
+            (VP (VBD ordered)
+              (NP
+                (NP (DT a) (JJ fresh)
+                  (NML (NN half) (HYPH -) (NNP Senate))
+                  (NN election))
+                (PP (IN in)
+                  (NP (JJ Western) (NNP Australia))))
+              (PP (IN as)
+                (NP
+                  (NP (DT a) (NN result))
+                  (PP (IN of)
+                    (NP (VBG missing) (NN ballot) (NNS papers))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Reynolds
+			coref:	IDENT			0	0-0	Reynolds 
+			name:	PERSON				0-0	Reynolds 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A1		0-0	Reynolds 
+			N-ARGM-MNR		3-10	by being third on the Liberal Senate ticket 
+	3	by
+	4	being
+			sense:	be.v.01
+			prop:	be.01
+			V		4-4	being 
+			N-ARG-A1		0-0	Reynolds 
+			N-ARG-A2		5-10	third on the Liberal Senate ticket 
+	5	third
+			name:	ORDINAL				5-5	third 
+			sense:	third.s.01
+	6	on
+	7	the
+	8	Liberal
+			name:	ORGANIZATION				8-9	Liberal Senate 
+			sense:	liberal.s.02
+	9	Senate
+	10	ticket
+			sense:	slate.n.04
+	11	but
+	12	her
+			coref:	IDENT			0	12-12	her 
+	13	place
+			sense:	position.n.06
+	14	in
+	15	the
+			coref:	IDENT			1	15-16	the Senate 
+	16	Senate
+			name:	ORGANIZATION				16-16	Senate 
+	17	was
+			sense:	be.v.01
+			prop:	be.01
+			V		17-17	was 
+			N-ARG-A1		12-16	her place in the Senate 
+			N-ARG-A2		18-19	in doubt 
+			N-ARGM-TMP		20-40	after the High Court ordered a fresh half - Senate election in Western Australia as a result of missing ballot papers 
+	18	in
+	19	doubt
+			sense:	doubt.n.01
+	20	after
+	21	the
+	22	High
+	23	Court
+	24	ordered
+			sense:	order.v.01
+			prop:	order.01
+			V		24-24	ordered 
+			N-ARG-A0		21-23	the High Court 
+			N-ARG-A2		25-33	a fresh half - Senate election in Western Australia 
+			N-ARGM-CAU		34-40	as a result of missing ballot papers 
+	25	a
+	26	fresh
+			sense:	fresh.s.02
+	27	half
+			sense:	one-half.n.01
+	28	-
+	29	Senate
+			coref:	IDENT			1	29-29	Senate 
+			name:	ORGANIZATION				29-29	Senate 
+	30	election
+			sense:	election.n.01
+	31	in
+	32	Western
+			name:	LOCATION				32-32	Western 
+			sense:	western.s.03
+	33	Australia
+			name:	COUNTRY				33-33	Australia 
+	34	as
+	35	a
+	36	result
+			sense:	consequence.n.01
+	37	of
+	38	missing
+			sense:	miss.v.08
+			prop:	miss.01
+			V		38-38	missing 
+			N-ARG-A1		39-40	ballot papers 
+	39	ballot
+			sense:	ballot.n.01
+	40	papers
+			sense:	newspaper.n.03
+	41	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+However , Reynolds was re - elected and her Senate term commenced on 1 July 2014 .
+
+
+Treebanked sentence:
+--------------------
+However , Reynolds was re - elected and her Senate term commenced on 1 July 2014 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP
+      (NP
+        (NP
+          (NP (NNP Reynolds))
+          (SBAR
+            (S
+              (VP (VBD was)
+                (PP (IN re))))))
+        (HYPH -)
+        (VP (VBN elected)))
+      (CC and)
+      (NP (PRP$ her) (NNP Senate) (NN term)))
+    (VP (VBD commenced)
+      (PP (IN on)
+        (NP (CD 1)))
+      (NP-TMP (NNP July) (CD 2014)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	However
+			sense:	however.r.01
+	1	,
+	2	Reynolds
+			coref:	IDENT			0	2-6	Reynolds was re - elected 
+			name:	PERSON				2-2	Reynolds 
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	re
+	5	-
+	6	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		6-6	elected 
+			N-ARGM-DIS		0-0	However 
+			N-ARG-A1		2-2	Reynolds 
+	7	and
+	8	her
+			coref:	IDENT			0	8-8	her 
+	9	Senate
+			coref:	IDENT			1	9-9	Senate 
+			name:	ORGANIZATION				9-9	Senate 
+	10	term
+			sense:	term.n.02
+	11	commenced
+			sense:	get_down.v.07
+			prop:	commence.01
+			V		11-11	commenced 
+			N-ARG-A1		8-10	her Senate term 
+			N-ARGM-TMP		12-15	on 1 July 2014 
+	12	on
+	13	1
+			coref:	IDENT			2	13-15	1 July 2014 
+			name:	DATE				13-15	1 July 2014 
+	14	July
+	15	2014
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Reynolds was the deputy director of the Federal Liberal Party of Australia , brigadier and adjutant general in the Australian Army Reserve and a chief of staff to Senator Chris Ellison .
+
+
+Treebanked sentence:
+--------------------
+Reynolds was the deputy director of the Federal Liberal Party of Australia , brigadier and adjutant general in the Australian Army Reserve and a chief of staff to Senator Chris Ellison . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Reynolds))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (NN deputy) (NN director))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (DT the) (NNP Federal) (NNP Liberal) (NNP Party))
+              (PP (IN of)
+                (NP (NNP Australia))))
+            (, ,)
+            (NP
+              (NP (NN brigadier)
+                (CC and)
+                (NN adjutant))
+              (ADJP (JJ general)
+                (PP (IN in)
+                  (NP (DT the) (JJ Australian) (NNP Army) (NNP Reserve)))))
+            (CC and)
+            (NP
+              (NP (DT a) (NN chief))
+              (PP (IN of)
+                (NP (NN staff)))))))
+      (PP (IN to)
+        (NP (NNP Senator) (NNP Chris) (NNP Ellison))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Reynolds
+			coref:	IDENT			0	0-0	Reynolds 
+			name:	PERSON				0-0	Reynolds 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	Reynolds 
+			N-ARG-A2		2-30	the deputy director of the Federal Liberal Party of Australia , brigadier and adjutant general in the Australian Army Reserve and a chief of staff to Senator Chris Ellison 
+	2	the
+	3	deputy
+			name:	TITLE				3-4	deputy director 
+			sense:	deputy.n.02
+	4	director
+			sense:	director.n.01
+	5	of
+	6	the
+	7	Federal
+			name:	ORGANIZATION				7-11	Federal Liberal Party of Australia 
+	8	Liberal
+	9	Party
+	10	of
+	11	Australia
+	12	,
+	13	brigadier
+			name:	TITLE				13-13	brigadier 
+			sense:	brigadier.n.01
+	14	and
+	15	adjutant
+			sense:	adjutant.n.01
+	16	general
+			name:	TITLE				16-16	general 
+			sense:	general.a.01
+	17	in
+	18	the
+	19	Australian
+			name:	ORGANIZATION				19-21	Australian Army Reserve 
+	20	Army
+	21	Reserve
+	22	and
+	23	a
+	24	chief
+			name:	TITLE				24-26	chief of staff 
+			sense:	head.n.04
+	25	of
+	26	staff
+			sense:	staff.n.01
+	27	to
+	28	Senator
+			name:	TITLE				28-28	Senator 
+	29	Chris
+			name:	PERSON				29-30	Chris Ellison 
+	30	Ellison
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She was awarded the Conspicuous Service Cross in the 2011 Australia Day Honours for " outstanding achievement as the Director of Army Strategic Reform Program coordination " .
+
+
+Treebanked sentence:
+--------------------
+She was awarded the Conspicuous Service Cross in the 2011 Australia Day Honours for " outstanding achievement as the Director of Army Strategic Reform Program coordination " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD was)
+      (VP (VBN awarded)
+        (NP (DT the)
+          (ADJP (JJ Conspicuous))
+          (NML (NNP Service) (NNP Cross)))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (CD 2011) (NNP Australia) (NNP Day) (NNP Honours))
+            (PP (IN for) (`` ")
+              (NP
+                (NP (JJ outstanding) (NN achievement))
+                (PP (IN as)
+                  (NP
+                    (NP (DT the) (NNP Director))
+                    (PP (IN of)
+                      (NP
+                        (NML (NNP Army) (NNP Strategic) (NNP Reform) (NNP Program))
+                        (NN coordination))))))
+              ('' "))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	awarded
+			sense:	award.v.01
+			prop:	award.01
+			V		2-2	awarded 
+			N-ARG-A2		0-0	She 
+			N-ARG-A1		3-6	the Conspicuous Service Cross 
+			N-ARGM-LOC		7-12	in the 2011 Australia Day Honours 
+			N-ARGM-CAU		13-26	for " outstanding achievement as the Director of Army Strategic Reform Program coordination " 
+	3	the
+	4	Conspicuous
+			sense:	conspicuous.a.01
+	5	Service
+	6	Cross
+	7	in
+	8	the
+	9	2011
+			name:	DATE				9-9	2011 
+	10	Australia
+			name:	COUNTRY				10-10	Australia 
+	11	Day
+			name:	DURATION				11-11	Day 
+	12	Honours
+	13	for
+	14	"
+	15	outstanding
+			sense:	outstanding.s.01
+	16	achievement
+			sense:	accomplishment.n.01
+	17	as
+	18	the
+	19	Director
+			name:	TITLE				19-19	Director 
+	20	of
+	21	Army
+			name:	ORGANIZATION				21-24	Army Strategic Reform Program 
+	22	Strategic
+	23	Reform
+	24	Program
+	25	coordination
+			sense:	coordination.n.02
+	26	"
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She is a granddaughter of Alfred Reynolds , a former Labor Party member of the Western Australian Legislative Assembly .
+
+
+Treebanked sentence:
+--------------------
+She is a granddaughter of Alfred Reynolds , a former Labor Party member of the Western Australian Legislative Assembly . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN granddaughter))
+        (PP (IN of)
+          (NP
+            (NP (NNP Alfred) (NNP Reynolds))
+            (, ,)
+            (NP
+              (NP (DT a) (JJ former)
+                (NML (NNP Labor) (NNP Party))
+                (NN member))
+              (PP (IN of)
+                (NP (DT the) (JJ Western) (JJ Australian) (JJ Legislative) (NNP Assembly))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-18	a granddaughter of Alfred Reynolds , a former Labor Party member of the Western Australian Legislative Assembly 
+	2	a
+	3	granddaughter
+			sense:	granddaughter.n.01
+	4	of
+	5	Alfred
+			coref:	IDENT			0	5-18	Alfred Reynolds , a former Labor Party member of the Western Australian Legislative Assembly 
+			name:	PERSON				5-6	Alfred Reynolds 
+	6	Reynolds
+	7	,
+	8	a
+	9	former
+			sense:	erstwhile.s.01
+	10	Labor
+			name:	ORGANIZATION				10-11	Labor Party 
+	11	Party
+	12	member
+			sense:	member.n.01
+	13	of
+	14	the
+	15	Western
+			name:	ORGANIZATION				15-18	Western Australian Legislative Assembly 
+			sense:	western.s.03
+	16	Australian
+	17	Legislative
+			sense:	legislative.a.01
+	18	Assembly
+	19	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-8	Linda Karen Reynolds , ( born 16 May 1965 
+				1.0-0	She 
+				2.0-0	Reynolds 
+				2.12-12	her 
+				3.2-6	Reynolds was re - elected 
+				3.8-8	her 
+				4.0-0	Reynolds 
+				5.0-0	She 
+				6.0-0	She 
+				6.5-18	Alfred Reynolds , a former Labor Party member of the Western Australian Legislative Assembly 
+	Chain 1 (IDENT)
+				1.4-6	the Australian Senate 
+				2.15-16	the Senate 
+				2.29-29	Senate 
+				3.9-9	Senate 
+	Chain 2 (IDENT)
+				1.23-25	1 July 2014 
+				3.13-15	1 July 2014 
+

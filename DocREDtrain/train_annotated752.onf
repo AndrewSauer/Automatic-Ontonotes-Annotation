@@ -1,0 +1,523 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Emanuele Santi is an Italian economist and political scientist .
+
+
+Treebanked sentence:
+--------------------
+Emanuele Santi is an Italian economist and political scientist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Emanuele) (NNP Santi))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ Italian) (NN economist))
+        (CC and)
+        (NP (JJ political) (NN scientist))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Emanuele
+			name:	PERSON				0-1	Emanuele Santi 
+	1	Santi
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Emanuele Santi 
+			N-ARG-A2		3-8	an Italian economist and political scientist 
+	3	an
+	4	Italian
+			name:	NATIONALITY				4-4	Italian 
+	5	economist
+			name:	TITLE				5-5	economist 
+			sense:	economist.n.01
+	6	and
+	7	political
+			name:	TITLE				7-8	political scientist 
+			sense:	political.a.01
+	8	scientist
+			sense:	scientist.n.01
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is currently Lead Strategy Advisor Chief at the African Development Bank .
+
+
+Treebanked sentence:
+--------------------
+He is currently Lead Strategy Advisor Chief at the African Development Bank . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (ADVP (RB currently))
+      (NP
+        (NP (JJ Lead)
+          (NML (NNP Strategy) (NNP Advisor) (NNP Chief)))
+        (PP (IN at)
+          (NP (DT the) (NNP African) (NNP Development) (NNP Bank)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	is
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		2-2	currently 
+			N-ARG-A2		3-11	Lead Strategy Advisor Chief at the African Development Bank 
+	2	currently
+			name:	DATE				2-2	currently 
+			sense:	presently.r.02
+	3	Lead
+	4	Strategy
+	5	Advisor
+	6	Chief
+	7	at
+	8	the
+			coref:	IDENT			0	8-11	the African Development Bank 
+	9	African
+			name:	ORGANIZATION				9-11	African Development Bank 
+	10	Development
+	11	Bank
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He has worked for over a decade for multilateral development banks ( World Bank and African Development Bank ) advising governments on numerous public sector and governance reforms .
+
+
+Treebanked sentence:
+--------------------
+He has worked for over a decade for multilateral development banks ( World Bank and African Development Bank ) advising governments on numerous public sector and governance reforms . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ has)
+      (VP (VBN worked)
+        (PP (IN for)
+          (PP (IN over)
+            (NP
+              (NP (DT a) (NN decade))
+              (PP (IN for)
+                (NP (JJ multilateral) (NN development) (NNS banks)
+                  (PRN (-LRB- -LRB-)
+                    (NP
+                      (NP (NNP World) (NNP Bank))
+                      (CC and)
+                      (NP (NNP African) (NNP Development) (NNP Bank)))
+                    (-RRB- -RRB-)))))))
+        (S
+          (VP (VBG advising)
+            (NP (NNS governments))
+            (PP (IN on)
+              (NP
+                (NP (JJ numerous) (JJ public) (NN sector))
+                (CC and)
+                (NP (NN governance) (NNS reforms))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		2-2	worked 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		3-6	for over a decade 
+			N-ARG-A2		7-18	for multilateral development banks ( World Bank and African Development Bank ) 
+			N-ARG-A1		19-27	advising governments on numerous public sector and governance reforms 
+	3	for
+	4	over
+	5	a
+			name:	DURATION				5-6	a decade 
+	6	decade
+			sense:	decade.n.01
+	7	for
+	8	multilateral
+			sense:	multilateral.a.01
+	9	development
+			sense:	development.n.01
+	10	banks
+			sense:	depository_financial_institution.n.01
+	11	(
+	12	World
+			name:	ORGANIZATION				12-13	World Bank 
+	13	Bank
+	14	and
+	15	African
+			coref:	IDENT			0	15-17	African Development Bank 
+			name:	ORGANIZATION				15-17	African Development Bank 
+	16	Development
+	17	Bank
+	18	)
+	19	advising
+			sense:	rede.v.02
+			prop:	advise.01
+			V		19-19	advising 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		20-20	governments 
+			N-ARG-A2		21-27	on numerous public sector and governance reforms 
+	20	governments
+			sense:	government.n.03
+	21	on
+	22	numerous
+			sense:	numerous.s.01
+	23	public
+			sense:	public.a.01
+	24	sector
+			sense:	sector.n.02
+	25	and
+	26	governance
+			sense:	government.n.02
+	27	reforms
+			sense:	reform.n.01
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His work experience spans over 15 developing countries mostly in Africa , Eastern Europe and Latin America .
+
+
+Treebanked sentence:
+--------------------
+His work experience spans over 15 developing countries mostly in Africa , Eastern Europe and Latin America . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP
+      (NP (PRP$ His) (NN work) (NN experience) (NNS spans))
+      (PP (IN over)
+        (NP (CD 15))))
+    (VP (VBG developing)
+      (NP (NNS countries))
+      (ADVP (RB mostly))
+      (PP (IN in)
+        (NP
+          (NP (NNP Africa))
+          (, ,)
+          (NP (NNP Eastern) (NNP Europe))
+          (CC and)
+          (NP (NNP Latin) (NNP America)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+	1	work
+			sense:	employment.n.02
+	2	experience
+			sense:	experience.n.01
+	3	spans
+			sense:	span.n.01
+	4	over
+	5	15
+			name:	NUMBER				5-5	15 
+	6	developing
+			sense:	modernize.v.02
+			prop:	develop.01
+			V		6-6	developing 
+			N-ARG-A1		7-7	countries 
+	7	countries
+			sense:	state.n.04
+	8	mostly
+			sense:	largely.r.01
+	9	in
+	10	Africa
+			name:	LOCATION				10-10	Africa 
+	11	,
+	12	Eastern
+			name:	LOCATION				12-13	Eastern Europe 
+	13	Europe
+	14	and
+	15	Latin
+			name:	LOCATION				15-15	Latin 
+	16	America
+			name:	COUNTRY				16-16	America 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He authors various books and articles on development issues , particularly in the area of governance , regional integration and local development 
+
+
+Treebanked sentence:
+--------------------
+He authors various books and articles on development issues , particularly in the area of governance , regional integration and local development In 2012 , Emanuele Santi founded Souk Attanmia , the largest and most innovative partnership in support to social entrepreneurship in Tunisia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP He) (NNS authors))
+      (NP
+        (NP (JJ various) (NNS books)
+          (CC and)
+          (NNS articles))
+        (PP (IN on)
+          (NP (NN development) (NNS issues)))))
+    (, ,)
+    (PP
+      (ADVP (RB particularly))
+      (IN in)
+      (NP
+        (NP (DT the) (NN area))
+        (PP (IN of)
+          (NP
+            (NP (NN governance))
+            (, ,)
+            (NP (JJ regional) (NN integration))
+            (CC and)
+            (NP (JJ local) (NN development))))))
+    (PP (IN In)
+      (NP (CD 2012)))
+    (, ,)
+    (NP (NNP Emanuele) (NNP Santi))
+    (VP (VBD founded)
+      (NP
+        (NP (NNP Souk) (NNP Attanmia))
+        (, ,)
+        (NP
+          (NP (DT the)
+            (ADJP (JJS largest)
+              (CC and)
+              (RBS most) (JJ innovative))
+            (NN partnership))
+          (PP (IN in)
+            (NP (NN support)))))
+      (PP (IN to)
+        (NP
+          (NP (JJ social) (NN entrepreneurship))
+          (PP (IN in)
+            (NP (NNP Tunisia))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	authors
+			sense:	writer.n.01
+	2	various
+			sense:	respective.s.01
+	3	books
+			sense:	book.n.01
+	4	and
+	5	articles
+			sense:	article.n.01
+	6	on
+	7	development
+			sense:	development.n.02
+	8	issues
+			sense:	issue.n.01
+	9	,
+	10	particularly
+			sense:	particularly.r.01
+	11	in
+	12	the
+	13	area
+			sense:	area.n.02
+	14	of
+	15	governance
+			sense:	government.n.02
+	16	,
+	17	regional
+			sense:	regional.a.01
+	18	integration
+			sense:	integration.n.01
+	19	and
+	20	local
+			sense:	local.a.01
+	21	development
+			sense:	development.n.02
+	22	In
+	23	2012
+			name:	DATE				23-23	2012 
+	24	,
+	25	Emanuele
+			name:	PERSON				25-26	Emanuele Santi 
+	26	Santi
+	27	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		27-27	founded 
+			N-ARGM-TMP		22-23	In 2012 
+			N-ARG-A0		25-26	Emanuele Santi 
+			N-ARG-A1		28-43	Souk Attanmia , the largest and most innovative partnership in support to social entrepreneurship in Tunisia 
+	28	Souk
+	29	Attanmia
+	30	,
+	31	the
+	32	largest
+			sense:	large.a.01
+	33	and
+	34	most
+			sense:	most.r.01
+	35	innovative
+			sense:	innovative.s.02
+	36	partnership
+			sense:	partnership.n.01
+	37	in
+	38	support
+			sense:	support.n.01
+	39	to
+	40	social
+			sense:	social.a.01
+	41	entrepreneurship
+	42	in
+	43	Tunisia
+			name:	COUNTRY				43-43	Tunisia 
+	44	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Stanford SS Review case study 
+
+
+Treebanked sentence:
+--------------------
+Stanford SS Review case study Santi 's work focuses on Governance , Local Development and Regional Economic Integration , and is the author of various books and articles on development issues 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NML (NNP Stanford) (NNP SS) (NNP Review))
+        (NN case) (NN study))
+      (NP
+        (NP (NNP Santi) (POS 's))
+        (NN work)))
+    (VP
+      (VP (VBZ focuses)
+        (PP (IN on)
+          (NP
+            (NP (NNP Governance))
+            (, ,)
+            (NP (NNP Local) (NNP Development))
+            (CC and)
+            (NP (NNP Regional) (NNP Economic) (NNP Integration)))))
+      (, ,)
+      (CC and)
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (NN author))
+          (PP (IN of)
+            (NP
+              (NP (JJ various) (NNS books)
+                (CC and)
+                (NNS articles))
+              (PP (IN on)
+                (NP (NN development) (NNS issues))))))))))
+
+
+Leaves:
+-------
+	0	Stanford
+			name:	ORGANIZATION				0-2	Stanford SS Review 
+	1	SS
+	2	Review
+	3	case
+			sense:	case.n.01
+	4	study
+			sense:	survey.n.01
+	5	Santi
+			name:	PERSON				5-5	Santi 
+	6	's
+	7	work
+			sense:	employment.n.02
+	8	focuses
+			sense:	concentrate.v.02
+			prop:	focus.01
+			V		8-8	focuses 
+			N-ARG-A0		5-7	Santi 's work 
+			N-ARG-A2		9-17	on Governance , Local Development and Regional Economic Integration 
+	9	on
+	10	Governance
+	11	,
+	12	Local
+			name:	ORGANIZATION				12-17	Local Development and Regional Economic Integration 
+	13	Development
+	14	and
+	15	Regional
+	16	Economic
+	17	Integration
+	18	,
+	19	and
+	20	is
+			sense:	be.v.02
+			prop:	be.01
+			V		20-20	is 
+			N-ARG-A1		0-0	Stanford 
+			N-ARG-A2		21-30	the author of various books and articles on development issues 
+	21	the
+	22	author
+			name:	TITLE				22-22	author 
+			sense:	writer.n.01
+	23	of
+	24	various
+			sense:	respective.s.01
+	25	books
+			sense:	book.n.01
+	26	and
+	27	articles
+			sense:	article.n.01
+	28	on
+	29	development
+			sense:	development.n.02
+	30	issues
+			sense:	issue.n.01
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.8-11	the African Development Bank 
+				2.15-17	African Development Bank 
+

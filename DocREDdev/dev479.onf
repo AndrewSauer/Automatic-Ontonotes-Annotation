@@ -1,0 +1,530 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Beaverton is a city in Washington County , in the U.S. state of Oregon .
+
+
+Treebanked sentence:
+--------------------
+Beaverton is a city in Washington County , in the U.S. state of Oregon . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Beaverton))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN city))
+        (PP (IN in)
+          (NP (NNP Washington) (NNP County))))
+      (, ,)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NNP U.S.) (NN state))
+          (PP (IN of)
+            (NP (NNP Oregon))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Beaverton
+			coref:	IDENT			3	0-0	Beaverton 
+			name:	CITY				0-0	Beaverton 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Beaverton 
+			N-ARG-A2		2-13	a city in Washington County , in the U.S. state of Oregon 
+	2	a
+	3	city
+			sense:	city.n.01
+	4	in
+	5	Washington
+			coref:	IDENT			1	5-6	Washington County 
+			name:	STATE_OR_PROVINCE				5-5	Washington 
+	6	County
+			name:	LOCATION				6-6	County 
+	7	,
+	8	in
+	9	the
+	10	U.S.
+			name:	COUNTRY				10-10	U.S. 
+	11	state
+			sense:	state.n.01
+	12	of
+	13	Oregon
+			name:	STATE_OR_PROVINCE				13-13	Oregon 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The city center is west of downtown Portland in the Tualatin River Valley .
+
+
+Treebanked sentence:
+--------------------
+The city center is west of downtown Portland in the Tualatin River Valley . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN city) (NN center))
+    (VP (VBZ is)
+      (NP
+        (NP (NN west))
+        (PP (IN of)
+          (NP
+            (NP (NN downtown) (NNP Portland))
+            (PP (IN in)
+              (NP (DT the) (NNP Tualatin) (NNP River) (NNP Valley)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	city
+			sense:	city.n.01
+	2	center
+			sense:	center.n.01
+	3	is
+			sense:	be.v.03
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	The city center 
+			N-ARG-A2		4-7	west of downtown Portland 
+			N-ARGM-LOC		8-12	in the Tualatin River Valley 
+	4	west
+			sense:	west.n.02
+	5	of
+	6	downtown
+			sense:	business_district.n.01
+	7	Portland
+			name:	CITY				7-7	Portland 
+	8	in
+	9	the
+	10	Tualatin
+			name:	CITY				10-10	Tualatin 
+	11	River
+			name:	TITLE				11-11	River 
+	12	Valley
+			name:	CITY				12-12	Valley 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As of the 2010 census , the population is 89,803 .
+
+
+Treebanked sentence:
+--------------------
+As of the 2010 census , the population is 89,803 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN As)
+      (PP (IN of)
+        (NP (DT the) (CD 2010) (NN census))))
+    (, ,)
+    (NP (DT the) (NN population))
+    (VP (VBZ is)
+      (NP (CD 89,803)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	of
+	2	the
+	3	2010
+			coref:	IDENT			2	3-3	2010 
+			name:	DATE				3-3	2010 
+	4	census
+			sense:	census.n.01
+	5	,
+	6	the
+	7	population
+			sense:	population.n.04
+	8	is
+			sense:	equal.v.01
+			prop:	be.01
+			V		8-8	is 
+			N-ARGM-TMP		0-4	As of the 2010 census 
+			N-ARG-A1		6-7	the population 
+			N-ARG-A2		9-9	89,803 
+	9	89,803
+			name:	NUMBER				9-9	89,803 
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This makes it the second - largest city in the county and Oregon 's sixth - largest city .
+
+
+Treebanked sentence:
+--------------------
+This makes it the second - largest city in the county and Oregon 's sixth - largest city . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ makes)
+      (S
+        (NP (PRP it))
+        (NP
+          (NP (DT the)
+            (ADJP (JJ second) (HYPH -) (JJS largest))
+            (NN city))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN county))
+              (CC and)
+              (NP
+                (NP (NNP Oregon) (POS 's))
+                (ADJP (JJ sixth) (HYPH -) (JJS largest))
+                (NN city)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+			coref:	IDENT			0	0-0	This 
+	1	makes
+			sense:	make.v.02
+			prop:	make.02
+			V		1-1	makes 
+			N-ARG-A0		0-0	This 
+			N-ARG-A1		2-17	it the second - largest city in the county and Oregon 's sixth - largest city 
+	2	it
+			coref:	IDENT			0	2-2	it 
+	3	the
+	4	second
+			name:	ORDINAL				4-4	second 
+			sense:	second.s.01
+	5	-
+	6	largest
+			sense:	large.a.01
+	7	city
+			sense:	city.n.01
+	8	in
+	9	the
+			coref:	IDENT			1	9-10	the county 
+	10	county
+			sense:	county.n.01
+	11	and
+	12	Oregon
+			name:	STATE_OR_PROVINCE				12-12	Oregon 
+	13	's
+	14	sixth
+			name:	ORDINAL				14-14	sixth 
+			sense:	sixth.s.01
+	15	-
+	16	largest
+			sense:	large.a.01
+	17	city
+			sense:	city.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Fire protection and EMS services are provided through Tualatin Valley Fire and Rescue .
+
+
+Treebanked sentence:
+--------------------
+Fire protection and EMS services are provided through Tualatin Valley Fire and Rescue . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NN Fire) (NN protection))
+      (CC and)
+      (NP (NNP EMS) (NNS services)))
+    (VP (VBP are)
+      (VP (VBN provided)
+        (PP (IN through)
+          (NP
+            (NP (NNP Tualatin) (NNP Valley) (NNP Fire))
+            (CC and)
+            (NP (NNP Rescue))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Fire
+			name:	CAUSE_OF_DEATH				0-0	Fire 
+			sense:	fire.n.03
+	1	protection
+			sense:	protection.n.01
+	2	and
+	3	EMS
+			name:	ORGANIZATION				3-3	EMS 
+	4	services
+			sense:	service.n.01
+	5	are
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	are 
+	6	provided
+			sense:	supply.v.01
+			prop:	provide.01
+			V		6-6	provided 
+			N-ARG-A1		0-4	Fire protection and EMS services 
+			N-ARGM-MNR		7-12	through Tualatin Valley Fire and Rescue 
+	7	through
+	8	Tualatin
+			name:	ORGANIZATION				8-12	Tualatin Valley Fire and Rescue 
+	9	Valley
+	10	Fire
+	11	and
+	12	Rescue
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2010 , Beaverton was named by Money magazine as one of the 100 " best places to live " , among smaller cities in the country .
+
+
+Treebanked sentence:
+--------------------
+In 2010 , Beaverton was named by Money magazine as one of the 100 " best places to live " , among smaller cities in the country . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2010)))
+    (, ,)
+    (NP (NNP Beaverton))
+    (VP (VBD was)
+      (VP (VBN named)
+        (PP (IN by)
+          (NP
+            (NP (NNP Money) (NN magazine))
+            (PP (IN as)
+              (NP
+                (NP (CD one))
+                (PP (IN of)
+                  (NP (DT the) (CD 100)))))))
+        (`` ")
+        (S
+          (NP (JJS best) (NNS places))
+          (VP (TO to)
+            (VP (VB live)
+              (PP
+                (PP (`` ") (, ,) (IN among)
+                  (NP (JJR smaller) (NNS cities)))
+                (PP (IN in)
+                  (NP (DT the) (NN country)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2010
+			coref:	IDENT			2	1-1	2010 
+			name:	DATE				1-1	2010 
+	2	,
+	3	Beaverton
+			coref:	IDENT			3	3-3	Beaverton 
+			name:	CITY				3-3	Beaverton 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	named
+			sense:	name.v.05
+			prop:	name.01
+			V		5-5	named 
+			N-ARGM-TMP		0-1	In 2010 
+			N-ARG-A1		3-3	Beaverton 
+			N-ARG-A0		6-8	by Money magazine 
+			N-ARG-A2		9-19	as one of the 100 " best places to live " 
+	6	by
+	7	Money
+	8	magazine
+			sense:	magazine.n.01
+	9	as
+	10	one
+			name:	NUMBER				10-10	one 
+	11	of
+	12	the
+	13	100
+			name:	NUMBER				13-13	100 
+	14	"
+	15	best
+			sense:	good.a.01
+	16	places
+			sense:	home.n.01
+	17	to
+	18	live
+			sense:	populate.v.01
+			prop:	live.01
+			V		18-18	live 
+	19	"
+	20	,
+	21	among
+	22	smaller
+			sense:	small.a.01
+	23	cities
+			sense:	city.n.01
+	24	in
+	25	the
+	26	country
+			sense:	country.n.02
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Along with Hillsboro , Beaverton is one of the economic centers for Washington County , home to numerous corporations in a variety of industries such as Nike .
+
+
+Treebanked sentence:
+--------------------
+Along with Hillsboro , Beaverton is one of the economic centers for Washington County , home to numerous corporations in a variety of industries such as Nike . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Along)
+      (PP (IN with)
+        (NP (NNP Hillsboro))))
+    (, ,)
+    (NP (NNP Beaverton))
+    (VP (VBZ is)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJ economic) (NNS centers))
+            (PP (IN for)
+              (NP
+                (NP (NNP Washington) (NNP County))
+                (, ,)
+                (NP
+                  (NP (NN home))
+                  (PP (IN to)
+                    (NP
+                      (NP (JJ numerous) (NNS corporations))
+                      (PP (IN in)
+                        (NP
+                          (NP (DT a) (NN variety))
+                          (PP (IN of)
+                            (NP
+                              (NP (NNS industries))
+                              (PP (JJ such) (IN as)
+                                (NP (NNP Nike))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Along
+	1	with
+	2	Hillsboro
+			name:	CITY				2-2	Hillsboro 
+	3	,
+	4	Beaverton
+			coref:	IDENT			3	4-4	Beaverton 
+			name:	CITY				4-4	Beaverton 
+	5	is
+			sense:	be.v.01
+			prop:	be.01
+			V		5-5	is 
+			N-ARGM-ADV		0-2	Along with Hillsboro 
+			N-ARG-A1		4-4	Beaverton 
+			N-ARG-A2		6-17	one of the economic centers for Washington County , home to numerous 
+			N-ARGM-PRD		18-18	corporations 
+			N-ARG-A2		19-20	in a 
+			N-ARGM-PRD		21-26	variety of industries such as Nike 
+	6	one
+			name:	NUMBER				6-6	one 
+	7	of
+	8	the
+	9	economic
+			sense:	economic.a.01
+	10	centers
+			sense:	center.n.01
+	11	for
+	12	Washington
+			coref:	IDENT			1	12-26	Washington County , home to numerous corporations in a variety of industries such as Nike 
+			name:	STATE_OR_PROVINCE				12-12	Washington 
+	13	County
+			name:	LOCATION				13-13	County 
+	14	,
+	15	home
+			sense:	home.n.03
+	16	to
+	17	numerous
+			sense:	numerous.s.01
+	18	corporations
+			sense:	corporation.n.01
+	19	in
+	20	a
+	21	variety
+			sense:	assortment.n.01
+	22	of
+	23	industries
+			sense:	industry.n.01
+	24	such
+			sense:	such.s.01
+	25	as
+	26	Nike
+			name:	ORGANIZATION				26-26	Nike 
+	27	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.0-0	This 
+				3.2-2	it 
+	Chain 1 (IDENT)
+				6.12-26	Washington County , home to numerous corporations in a variety of industries such as Nike 
+				0.5-6	Washington County 
+				3.9-10	the county 
+	Chain 2 (IDENT)
+				2.3-3	2010 
+				5.1-1	2010 
+	Chain 3 (IDENT)
+				0.0-0	Beaverton 
+				5.3-3	Beaverton 
+				6.4-4	Beaverton 
+

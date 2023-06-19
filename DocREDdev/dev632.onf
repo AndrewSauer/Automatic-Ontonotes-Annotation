@@ -1,0 +1,503 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Elliott Arnold ( September 13 , 1912 – May 13 , 1980 ) was an American newspaper feature writer , novelist , and screenwriter .
+
+
+Treebanked sentence:
+--------------------
+Elliott Arnold ( September 13 , 1912 – May 13 , 1980 ) was an American newspaper feature writer , novelist , and screenwriter . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Elliott) (NNP Arnold)
+      (PRN (-LRB- -LRB-)
+        (NP
+          (NP
+            (NP (NNP September))
+            (NP-TMP (CD 13)))
+          (, ,)
+          (NP
+            (QP (CD 1912) (SYM –))
+            (NML (MD May) (CD 13))))
+        (, ,)
+        (NP (CD 1980))
+        (-RRB- -RRB-)))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (JJ American) (NN newspaper) (NN feature))
+        (NP (NN writer) (, ,) (NN novelist) (, ,)
+          (CC and)
+          (NN screenwriter))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Elliott
+			coref:	IDENT			0	0-12	Elliott Arnold ( September 13 , 1912 – May 13 , 1980 ) 
+			name:	PERSON				0-1	Elliott Arnold 
+	1	Arnold
+	2	(
+	3	September
+			name:	DATE				3-6	September 13 , 1912 
+	4	13
+	5	,
+	6	1912
+	7	–
+	8	May
+			name:	DATE				8-11	May 13 , 1980 
+	9	13
+	10	,
+	11	1980
+	12	)
+	13	was
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	was 
+			N-ARG-A1		0-12	Elliott Arnold ( September 13 , 1912 – May 13 , 1980 ) 
+			N-ARG-A2		14-23	an American newspaper feature writer , novelist , and screenwriter 
+	14	an
+	15	American
+			name:	NATIONALITY				15-15	American 
+	16	newspaper
+			sense:	newspaper.n.01
+	17	feature
+			sense:	feature.n.04
+	18	writer
+			name:	TITLE				18-18	writer 
+			sense:	writer.n.01
+	19	,
+	20	novelist
+			name:	TITLE				20-20	novelist 
+			sense:	novelist.n.01
+	21	,
+	22	and
+	23	screenwriter
+			name:	TITLE				23-23	screenwriter 
+			sense:	screenwriter.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was born in Brooklyn , New York and became a feature writer with the New York World - Telegram .
+
+
+Treebanked sentence:
+--------------------
+He was born in Brooklyn , New York and became a feature writer with the New York World - Telegram . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN born)
+          (PP (IN in)
+            (NP (NNP Brooklyn) (, ,) (NNP New) (NNP York)))))
+      (CC and)
+      (VP (VBD became)
+        (NP (DT a) (NN feature) (NN writer))
+        (PP (IN with)
+          (NP (DT the)
+            (NML (NNP New) (NNP York) (NNP World) (HYPH -) (NNP Telegram))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-7	in Brooklyn , New York 
+	3	in
+	4	Brooklyn
+			name:	CITY				4-4	Brooklyn 
+	5	,
+	6	New
+			name:	STATE_OR_PROVINCE				6-7	New York 
+	7	York
+	8	and
+	9	became
+			sense:	become.v.02
+			prop:	become.01
+			V		9-9	became 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		10-19	a feature writer with the New York World - Telegram 
+	10	a
+	11	feature
+			sense:	feature.n.04
+	12	writer
+			name:	TITLE				12-12	writer 
+			sense:	writer.n.01
+	13	with
+	14	the
+	15	New
+			name:	ORGANIZATION				15-17	New York World 
+	16	York
+	17	World
+	18	-
+	19	Telegram
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Among his books , Elliott Arnold is probably best known for his 1947 novel Blood Brother that was adapted as the acclaimed 1950 motion picture Broken Arrow and a 1956 TV series of the same name .
+
+
+Treebanked sentence:
+--------------------
+Among his books , Elliott Arnold is probably best known for his 1947 novel Blood Brother that was adapted as the acclaimed 1950 motion picture Broken Arrow and a 1956 TV series of the same name . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Among)
+      (NP (PRP$ his) (NNS books)))
+    (, ,)
+    (NP (NNP Elliott) (NNP Arnold))
+    (VP (VBZ is)
+      (ADVP (RB probably))
+      (ADVP (RB best))
+      (VP (VBN known)
+        (PP (IN for)
+          (NP
+            (NP (PRP$ his) (CD 1947) (JJ novel) (NN Blood) (NN Brother))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBD was)
+                  (VP (VBN adapted)
+                    (PP (IN as)
+                      (NP
+                        (NP
+                          (NP (DT the)
+                            (ADJP (VBN acclaimed))
+                            (CD 1950) (NN motion) (NN picture))
+                          (NP (JJ Broken) (NNP Arrow)))
+                        (CC and)
+                        (NP
+                          (NP (DT a) (CD 1956) (NN TV) (NN series))
+                          (PP (IN of)
+                            (NP (DT the) (JJ same) (NN name))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Among
+	1	his
+			coref:	IDENT			0	1-1	his 
+	2	books
+			sense:	book.n.01
+	3	,
+	4	Elliott
+			coref:	IDENT			0	4-5	Elliott Arnold 
+			name:	PERSON				4-5	Elliott Arnold 
+	5	Arnold
+	6	is
+			sense:	be.v.01
+			prop:	be.01
+			V		6-6	is 
+			N-ARGM-LOC		0-2	Among his books 
+			N-ARG-A1		4-5	Elliott Arnold 
+			N-ARGM-ADV		7-7	probably 
+			N-ARG-A2		8-35	best known for his 1947 novel Blood Brother that was adapted as the acclaimed 1950 motion picture Broken Arrow and a 1956 TV series of the same name 
+	7	probably
+			sense:	probably.r.01
+	8	best
+			sense:	best.r.01
+	9	known
+			sense:	know.v.04
+			prop:	know.01
+			V		9-9	known 
+			N-ARGM-LOC		0-2	Among his books 
+			N-ARG-A1		4-5	Elliott Arnold 
+			N-ARGM-ADV		7-7	probably 
+			N-ARGM-MNR		8-8	best 
+			N-ARG-A2		10-35	for his 1947 novel Blood Brother that was adapted as the acclaimed 1950 motion picture Broken Arrow and a 1956 TV series of the same name 
+	10	for
+	11	his
+			coref:	IDENT			0	11-11	his 
+	12	1947
+			name:	DATE				12-12	1947 
+	13	novel
+			name:	MISC				13-15	novel Blood Brother 
+			sense:	fresh.s.04
+	14	Blood
+			sense:	lineage.n.01
+	15	Brother
+			sense:	brother.n.01
+	16	that
+	17	was
+			sense:	be.v.01
+			prop:	be.03
+			V		17-17	was 
+	18	adapted
+			sense:	adapt.v.01
+			prop:	adapt.01
+			V		18-18	adapted 
+			N-ARG-A1		11-15	his 1947 novel Blood Brother 
+			R-ARG-A1		16-16	that 
+			N-ARG-A2		19-35	as the acclaimed 1950 motion picture Broken Arrow and a 1956 TV series of the same name 
+	19	as
+	20	the
+	21	acclaimed
+			sense:	acclaim.v.01
+			prop:	acclaim.01
+			V		21-21	acclaimed 
+			N-ARG-A1		22-26	1950 motion picture Broken Arrow 
+	22	1950
+			name:	DATE				22-22	1950 
+	23	motion
+			sense:	apparent_motion.n.01
+	24	picture
+			sense:	movie.n.01
+	25	Broken
+			sense:	broken.a.01
+	26	Arrow
+	27	and
+	28	a
+	29	1956
+			name:	DATE				29-29	1956 
+	30	TV
+			sense:	television.n.01
+	31	series
+			sense:	serial.n.01
+	32	of
+	33	the
+	34	same
+			sense:	same.a.01
+	35	name
+			sense:	name.n.01
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The popular Indian Wedding Blessing is based on a passage from Blood Brother .
+
+
+Treebanked sentence:
+--------------------
+The popular Indian Wedding Blessing is based on a passage from Blood Brother . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJ popular) (JJ Indian) (NN Wedding) (NN Blessing))
+    (VP (VBZ is)
+      (VP (VBN based)
+        (PP (IN on)
+          (NP
+            (NP (DT a) (NN passage))
+            (PP (IN from)
+              (NP (NN Blood) (NN Brother)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	popular
+			sense:	popular.a.01
+	2	Indian
+			name:	NATIONALITY				2-2	Indian 
+	3	Wedding
+			sense:	wedding.n.01
+	4	Blessing
+			sense:	benediction.n.02
+	5	is
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	is 
+	6	based
+			sense:	establish.v.08
+			prop:	base.02
+			V		6-6	based 
+			N-ARG-A1		0-4	The popular Indian Wedding Blessing 
+			N-ARG-A2		7-12	on a passage from Blood Brother 
+	7	on
+	8	a
+	9	passage
+			sense:	passage.n.02
+	10	from
+	11	Blood
+			sense:	lineage.n.01
+	12	Brother
+			sense:	brother.n.01
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His 1949 biography of Sigmund Romberg was made into the 1954 musical film , Deep in My Heart .
+
+
+Treebanked sentence:
+--------------------
+His 1949 biography of Sigmund Romberg was made into the 1954 musical film , Deep in My Heart . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ His) (CD 1949) (NN biography))
+      (PP (IN of)
+        (NP (NNP Sigmund) (NNP Romberg))))
+    (VP (VBD was)
+      (VP (VBN made)
+        (PP (IN into)
+          (NP
+            (NP (DT the) (CD 1954) (JJ musical) (NN film))
+            (, ,)
+            (NP
+              (NP (NNP Deep))
+              (PP (IN in)
+                (NP (PRP$ My) (NN Heart))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-0	His 
+	1	1949
+			name:	DATE				1-1	1949 
+	2	biography
+			sense:	biography.n.01
+	3	of
+	4	Sigmund
+			name:	PERSON				4-5	Sigmund Romberg 
+	5	Romberg
+	6	was
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	was 
+	7	made
+			sense:	make.v.18
+			prop:	make.01
+			V		7-7	made 
+			N-ARG-A2		0-5	His 1949 biography of Sigmund Romberg 
+			N-ARG-A1		8-17	into the 1954 musical film , Deep in My Heart 
+	8	into
+	9	the
+	10	1954
+			name:	DATE				10-10	1954 
+	11	musical
+			sense:	musical.a.01
+	12	film
+			sense:	movie.n.01
+	13	,
+	14	Deep
+	15	in
+	16	My
+	17	Heart
+			sense:	heart.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Elliott Arnold died in New York City in 1980 at the age of sixty - seven .
+
+
+Treebanked sentence:
+--------------------
+Elliott Arnold died in New York City in 1980 at the age of sixty - seven . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Elliott) (NNP Arnold))
+    (VP (VBD died)
+      (PP (IN in)
+        (NP
+          (NP (NNP New) (NNP York) (NNP City))
+          (PP (IN in)
+            (NP (CD 1980)))))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NN age))
+          (PP (IN of)
+            (NP
+              (QP (CD sixty) (HYPH -) (CD seven)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Elliott
+			coref:	IDENT			0	0-1	Elliott Arnold 
+			name:	PERSON				0-1	Elliott Arnold 
+	1	Arnold
+	2	died
+			sense:	die.v.01
+			prop:	die.01
+			V		2-2	died 
+			N-ARG-A1		0-1	Elliott Arnold 
+			N-ARGM-LOC		3-6	in New York City 
+			N-ARGM-TMP		7-8	in 1980 
+	3	in
+	4	New
+			name:	CITY				4-6	New York City 
+	5	York
+	6	City
+	7	in
+	8	1980
+			name:	DATE				8-8	1980 
+	9	at
+	10	the
+	11	age
+			sense:	age.n.01
+	12	of
+	13	sixty
+			name:	NUMBER				13-13	sixty 
+	14	-
+	15	seven
+			name:	NUMBER				15-15	seven 
+	16	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-12	Elliott Arnold ( September 13 , 1912 – May 13 , 1980 ) 
+				1.0-0	He 
+				2.1-1	his 
+				2.4-5	Elliott Arnold 
+				2.11-11	his 
+				4.0-0	His 
+				5.0-1	Elliott Arnold 
+

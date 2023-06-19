@@ -1,0 +1,622 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+George True Page ( September 22 , 1859 – November 4 , 1941 ) was a United States federal judge .
+
+
+Treebanked sentence:
+--------------------
+George True Page ( September 22 , 1859 – November 4 , 1941 ) was a United States federal judge . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP George) (NNP True) (NNP Page))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP September) (CD 22) (, ,) (CD 1859))
+        (PP (SYM –)
+          (NP (NNP November) (CD 4) (, ,) (CD 1941))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT a)
+        (NML (NNP United) (NNP States))
+        (JJ federal) (NN judge)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	George
+	1	True
+	2	Page
+	3	(
+	4	September
+			name:	DATE				4-7	September 22 , 1859 
+	5	22
+	6	,
+	7	1859
+	8	–
+	9	November
+			name:	DATE				9-12	November 4 , 1941 
+	10	4
+	11	,
+	12	1941
+	13	)
+	14	was
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		0-13	George True Page ( September 22 , 1859 – November 4 , 1941 ) 
+			N-ARG-A2		15-19	a United States federal judge 
+	15	a
+	16	United
+			name:	COUNTRY				16-17	United States 
+	17	States
+	18	federal
+			sense:	federal.a.02
+	19	judge
+			name:	TITLE				19-19	judge 
+			sense:	judge.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in Spring Bay , Illinois , Page attended the University of Illinois at Urbana - Champaign and read law to enter the bar in 1882 .
+
+
+Treebanked sentence:
+--------------------
+Born in Spring Bay , Illinois , Page attended the University of Illinois at Urbana - Champaign and read law to enter the bar in 1882 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP
+            (NP (NNP Spring) (NNP Bay))
+            (, ,)
+            (NP (NNP Illinois))))))
+    (, ,)
+    (NP (NNP Page))
+    (VP
+      (VP (VBD attended)
+        (NP
+          (NP (DT the) (NNP University))
+          (PP (IN of)
+            (NP (NNP Illinois))))
+        (PP (IN at)
+          (NP (NNP Urbana) (HYPH -) (NNP Champaign))))
+      (CC and)
+      (VP (VBD read)
+        (NP (NN law))
+        (S
+          (VP (TO to)
+            (VP (VB enter)
+              (NP (DT the) (NN bar))
+              (PP (IN in)
+                (NP (CD 1882))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-5	in Spring Bay , Illinois 
+			N-ARG-A1		7-7	Page 
+	1	in
+	2	Spring
+			name:	CITY				2-3	Spring Bay 
+	3	Bay
+	4	,
+	5	Illinois
+			name:	STATE_OR_PROVINCE				5-5	Illinois 
+	6	,
+	7	Page
+			coref:	IDENT			0	7-7	Page 
+	8	attended
+			sense:	attend.v.01
+			prop:	attend.01
+			V		8-8	attended 
+			R-ARG-A0		0-5	Born in Spring Bay , Illinois 
+			N-ARG-A0		7-7	Page 
+			N-ARG-A1		9-16	the University of Illinois at Urbana - Champaign 
+	9	the
+	10	University
+			name:	ORGANIZATION				10-12	University of Illinois 
+	11	of
+	12	Illinois
+	13	at
+	14	Urbana
+			name:	ORGANIZATION				14-16	Urbana - Champaign 
+	15	-
+	16	Champaign
+	17	and
+	18	read
+			sense:	learn.v.04
+			prop:	read.01
+			V		18-18	read 
+			R-ARG-A0		0-5	Born in Spring Bay , Illinois 
+			N-ARG-A0		7-7	Page 
+			N-ARG-A1		19-19	law 
+			N-ARGM-PRP		20-23	to enter the bar 
+			N-ARGM-TMP		24-25	in 1882 
+	19	law
+			sense:	law.n.06
+	20	to
+	21	enter
+			sense:	enroll.v.01
+			prop:	enter.01
+			V		21-21	enter 
+			N-ARG-A0		7-7	Page 
+			N-ARG-A1		22-23	the bar 
+			N-ARGM-TMP		24-25	in 1882 
+	22	the
+	23	bar
+			sense:	legal_profession.n.01
+	24	in
+	25	1882
+			name:	DATE				25-25	1882 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was in private practice in Denver , Colorado from 1882 to 1884 and then in private practice in Peoria , Illinois until 1919 .
+
+
+Treebanked sentence:
+--------------------
+He was in private practice in Denver , Colorado from 1882 to 1884 and then in private practice in Peoria , Illinois until 1919 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (PP (IN in)
+          (NP
+            (NP (JJ private) (NN practice))
+            (PP (IN in)
+              (NP (NNP Denver))))))
+      (, ,)
+      (VP
+        (NP (NNP Colorado))
+        (PP (IN from)
+          (NP
+            (QP (CD 1882) (IN to) (CD 1884)))))
+      (CC and)
+      (VP
+        (ADVP (RB then))
+        (PP (IN in)
+          (NP
+            (NP (JJ private) (NN practice))
+            (PP (IN in)
+              (NP (NNP Peoria) (, ,) (NNP Illinois)))))
+        (PP (IN until)
+          (NP (CD 1919)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-8	in private practice in Denver , Colorado 
+			N-ARGM-TMP		9-12	from 1882 to 1884 
+	2	in
+	3	private
+			sense:	private.a.01
+	4	practice
+			sense:	practice.n.04
+	5	in
+	6	Denver
+			name:	CITY				6-6	Denver 
+	7	,
+	8	Colorado
+			name:	STATE_OR_PROVINCE				8-8	Colorado 
+	9	from
+	10	1882
+			name:	DATE				10-12	1882 to 1884 
+	11	to
+	12	1884
+	13	and
+	14	then
+			sense:	then.r.01
+	15	in
+	16	private
+			sense:	private.a.01
+	17	practice
+			sense:	practice.n.04
+	18	in
+	19	Peoria
+			name:	CITY				19-19	Peoria 
+	20	,
+	21	Illinois
+			name:	STATE_OR_PROVINCE				21-21	Illinois 
+	22	until
+	23	1919
+			name:	DATE				23-23	1919 
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On March 1 , 1919 , Page was nominated by President Woodrow Wilson to a seat on the United States Court of Appeals for the Seventh Circuit vacated by Christian Cecil Kohlsaat .
+
+
+Treebanked sentence:
+--------------------
+On March 1 , 1919 , Page was nominated by President Woodrow Wilson to a seat on the United States Court of Appeals for the Seventh Circuit vacated by Christian Cecil Kohlsaat . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NNP March) (CD 1) (, ,) (CD 1919)))
+    (, ,)
+    (NP (NN Page))
+    (VP (VBD was)
+      (VP (VBN nominated)
+        (PP (IN by)
+          (NP
+            (NP (NNP President) (NNP Woodrow) (NNP Wilson))
+            (PP (IN to)
+              (NP
+                (NP (DT a) (NN seat))
+                (PP (IN on)
+                  (NP
+                    (NP (DT the) (NNP United) (NNP States) (NNP Court))
+                    (PP (IN of)
+                      (NP (NNPS Appeals)))))))))
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NNP Seventh) (NNP Circuit))
+            (VP (VBN vacated)
+              (PP (IN by)
+                (NP (NNP Christian) (NNP Cecil) (NNP Kohlsaat))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	March
+			name:	DATE				1-4	March 1 , 1919 
+	2	1
+	3	,
+	4	1919
+	5	,
+	6	Page
+			coref:	IDENT			0	6-6	Page 
+			sense:	page.n.03
+	7	was
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	was 
+	8	nominated
+			sense:	nominate.v.02
+			prop:	nominate.01
+			V		8-8	nominated 
+			N-ARGM-TMP		0-4	On March 1 , 1919 
+			N-ARG-A1		6-6	Page 
+			N-ARG-A0		9-12	by President Woodrow Wilson 
+			N-ARG-A2		13-31	to a seat on the United States Court of Appeals for the Seventh Circuit vacated by Christian Cecil Kohlsaat 
+	9	by
+	10	President
+			name:	TITLE				10-10	President 
+	11	Woodrow
+			name:	PERSON				11-12	Woodrow Wilson 
+	12	Wilson
+	13	to
+	14	a
+	15	seat
+			sense:	seat.n.07
+	16	on
+	17	the
+	18	United
+			name:	ORGANIZATION				18-22	United States Court of Appeals 
+	19	States
+	20	Court
+	21	of
+	22	Appeals
+	23	for
+	24	the
+	25	Seventh
+			name:	ORGANIZATION				25-26	Seventh Circuit 
+	26	Circuit
+	27	vacated
+			sense:	vacate.v.01
+			prop:	vacate.01
+			V		27-27	vacated 
+			N-ARG-A1		14-15	a seat 
+			N-ARG-A0		28-31	by Christian Cecil Kohlsaat 
+	28	by
+	29	Christian
+			name:	RELIGION				29-29	Christian 
+	30	Cecil
+			name:	PERSON				30-31	Cecil Kohlsaat 
+	31	Kohlsaat
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Page was confirmed by the United States Senate on March 1 , 1919 , and received his commission the same day .
+
+
+Treebanked sentence:
+--------------------
+Page was confirmed by the United States Senate on March 1 , 1919 , and received his commission the same day . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN Page))
+    (VP
+      (VP (VBD was)
+        (VP (VBN confirmed)
+          (PP (IN by)
+            (NP (DT the) (NNP United) (NNP States) (NNP Senate)))
+          (PP (IN on)
+            (NP (NNP March) (CD 1) (, ,) (CD 1919) (, ,)))))
+      (CC and)
+      (VP (VBD received)
+        (NP (PRP$ his) (NN commission))
+        (NP-TMP (DT the) (JJ same) (NN day))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Page
+			sense:	page.n.03
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	confirmed
+			sense:	confirm.v.04
+			prop:	confirm.01
+			V		2-2	confirmed 
+			N-ARG-A1		0-0	Page 
+			N-ARG-A0		3-7	by the United States Senate 
+			N-ARGM-TMP		8-12	on March 1 , 1919 
+	3	by
+	4	the
+	5	United
+			name:	ORGANIZATION				5-7	United States Senate 
+	6	States
+	7	Senate
+	8	on
+	9	March
+			name:	DATE				9-12	March 1 , 1919 
+	10	1
+	11	,
+	12	1919
+	13	,
+	14	and
+	15	received
+			sense:	receive.v.01
+			prop:	receive.01
+			V		15-15	received 
+			N-ARG-A0		0-0	Page 
+			N-ARG-A1		16-17	his commission 
+			N-ARGM-TMP		18-20	the same day 
+	16	his
+			coref:	IDENT			1	16-16	his 
+	17	commission
+			sense:	commission.n.07
+	18	the
+			name:	DATE				18-20	the same day 
+	19	same
+			sense:	same.a.01
+	20	day
+			sense:	day.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He assumed senior status on October 1 , 1930 , serving in that capacity until his death , in 1941 , in La Jolla , California .
+
+
+Treebanked sentence:
+--------------------
+He assumed senior status on October 1 , 1930 , serving in that capacity until his death , in 1941 , in La Jolla , California . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD assumed)
+      (NP (JJ senior) (NN status))
+      (PP (IN on)
+        (NP (NNP October) (CD 1) (, ,) (CD 1930) (, ,)))
+      (VP (VBG serving)
+        (PP (IN in)
+          (NP (DT that) (NN capacity)))
+        (PP (IN until)
+          (NP (PRP$ his) (NN death))))
+      (, ,)
+      (PP (IN in)
+        (NP (CD 1941)))
+      (, ,)
+      (PP (IN in)
+        (NP
+          (NP (NNP La) (NNP Jolla))
+          (, ,)
+          (NP (NNP California)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	assumed
+			sense:	assume.v.02
+			prop:	assume.01
+			V		1-1	assumed 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-3	senior status 
+			N-ARGM-TMP		4-8	on October 1 , 1930 
+			N-ARGM-ADV		10-25	serving in that capacity until his death , in 1941 , in La Jolla , California 
+	2	senior
+			sense:	senior.a.01
+	3	status
+			sense:	status.n.01
+	4	on
+	5	October
+			name:	DATE				5-8	October 1 , 1930 
+	6	1
+	7	,
+	8	1930
+	9	,
+	10	serving
+			sense:	serve.v.02
+			prop:	serve.01
+			V		10-10	serving 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		11-13	in that capacity 
+			N-ARGM-TMP		14-25	until his death , in 1941 , in La Jolla , California 
+	11	in
+	12	that
+	13	capacity
+			sense:	capacity.n.05
+	14	until
+	15	his
+			coref:	IDENT			1	15-15	his 
+	16	death
+			sense:	death.n.01
+	17	,
+	18	in
+	19	1941
+			name:	DATE				19-19	1941 
+	20	,
+	21	in
+	22	La
+			name:	STATE_OR_PROVINCE				22-22	La 
+	23	Jolla
+			name:	LOCATION				23-23	Jolla 
+	24	,
+	25	California
+			name:	STATE_OR_PROVINCE				25-25	California 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also served as chairman of the Commercial Merchants National Bank and Trust Company from 1930 to 1941 .
+
+
+Treebanked sentence:
+--------------------
+He also served as chairman of the Commercial Merchants National Bank and Trust Company from 1930 to 1941 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP
+          (NP
+            (NP (NN chairman))
+            (PP (IN of)
+              (NP (DT the)
+                (NML (NNP Commercial) (NNPS Merchants))
+                (NNP National) (NNP Bank))))
+          (CC and)
+          (NP
+            (NP (NNP Trust) (NNP Company))
+            (PP (IN from)
+              (NP (CD 1930))))))
+      (PP (IN to)
+        (NP (CD 1941))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	also
+			sense:	besides.r.02
+	2	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		2-2	served 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-13	as chairman of the Commercial Merchants National Bank and Trust Company 
+			N-ARGM-TMP		14-17	from 1930 to 1941 
+	3	as
+	4	chairman
+			name:	TITLE				4-4	chairman 
+			sense:	president.n.04
+	5	of
+	6	the
+	7	Commercial
+			name:	ORGANIZATION				7-10	Commercial Merchants National Bank 
+	8	Merchants
+	9	National
+	10	Bank
+	11	and
+	12	Trust
+			name:	ORGANIZATION				12-13	Trust Company 
+	13	Company
+	14	from
+	15	1930
+			name:	DATE				15-17	1930 to 1941 
+	16	to
+	17	1941
+	18	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.7-7	Page 
+				3.6-6	Page 
+	Chain 1 (IDENT)
+				4.16-16	his 
+				5.0-0	He 
+				5.15-15	his 
+				6.0-0	He 
+

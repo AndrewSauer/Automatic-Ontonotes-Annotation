@@ -1,0 +1,932 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+David Hollister ( born April 3 , 1942 ) served as the mayor of Lansing , Michigan from 1993 to 2003 , until he resigned to be the director of the Michigan Department of Labor and Economic Growth under Michigan Governor Jennifer Granholm 's administration .
+
+
+Treebanked sentence:
+--------------------
+David Hollister ( born April 3 , 1942 ) served as the mayor of Lansing , Michigan from 1993 to 2003 , until he resigned to be the director of the Michigan Department of Labor and Economic Growth under Michigan Governor Jennifer Granholm 's administration . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP David) (NNP Hollister))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP April) (CD 3) (, ,) (CD 1942)))
+      (-RRB- -RRB-))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP
+          (NP (DT the) (NN mayor))
+          (PP (IN of)
+            (NP (NNP Lansing) (, ,) (NNP Michigan)))))
+      (PP (IN from)
+        (NP (CD 1993)))
+      (PP (IN to)
+        (NP (CD 2003)))
+      (, ,)
+      (SBAR (IN until)
+        (S
+          (NP (PRP he))
+          (VP (VBD resigned)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (NP
+                    (NP (DT the) (NN director))
+                    (PP (IN of)
+                      (NP
+                        (NP (DT the) (NNP Michigan) (NNP Department))
+                        (PP (IN of)
+                          (NP
+                            (NP
+                              (NML
+                                (NML (NNP Labor))
+                                (CC and)
+                                (NML
+                                  (NML (NNP Economic) (NNP Growth))
+                                  (PP (IN under)
+                                    (NP (NNP Michigan) (NNP Governor)))))
+                              (NNP Jennifer) (NNP Granholm) (POS 's))
+                            (NN administration)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	David
+			coref:	IDENT			4	0-1	David Hollister 
+			name:	PERSON				0-1	David Hollister 
+	1	Hollister
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	David Hollister 
+			N-ARGM-TMP		4-7	April 3 , 1942 
+	4	April
+			name:	DATE				4-7	April 3 , 1942 
+	5	3
+	6	,
+	7	1942
+	8	)
+	9	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		9-9	served 
+			N-ARG-A0		0-8	David Hollister ( born April 3 , 1942 ) 
+			N-ARG-A1		10-16	as the mayor of Lansing , Michigan 
+			N-ARGM-TMP		17-20	from 1993 to 2003 
+			N-ARGM-TMP		22-44	until he resigned to be the director of the Michigan Department of Labor and Economic Growth under Michigan Governor Jennifer Granholm 's administration 
+	10	as
+	11	the
+	12	mayor
+			name:	TITLE				12-12	mayor 
+			sense:	mayor.n.01
+	13	of
+	14	Lansing
+			coref:	IDENT			1	14-14	Lansing 
+			name:	CITY				14-14	Lansing 
+	15	,
+	16	Michigan
+			name:	STATE_OR_PROVINCE				16-16	Michigan 
+	17	from
+	18	1993
+			name:	DATE				18-20	1993 to 2003 
+	19	to
+	20	2003
+	21	,
+	22	until
+	23	he
+			coref:	IDENT			4	23-23	he 
+	24	resigned
+			sense:	vacate.v.01
+			prop:	resign.01
+			V		24-24	resigned 
+			N-ARG-A0		23-23	he 
+			N-ARGM-PRP		25-44	to be the director of the Michigan Department of Labor and Economic Growth under Michigan Governor Jennifer Granholm 's administration 
+	25	to
+	26	be
+			sense:	be.v.08
+			prop:	be.01
+			V		26-26	be 
+			N-ARG-A1		23-23	he 
+			N-ARG-A2		27-44	the director of the Michigan Department of Labor and Economic Growth under Michigan Governor Jennifer Granholm 's administration 
+	27	the
+	28	director
+			name:	TITLE				28-28	director 
+			sense:	director.n.01
+	29	of
+	30	the
+	31	Michigan
+			name:	ORGANIZATION				31-37	Michigan Department of Labor and Economic Growth 
+	32	Department
+	33	of
+	34	Labor
+			coref:	IDENT			2	34-44	Labor and Economic Growth under Michigan Governor Jennifer Granholm 's administration 
+	35	and
+	36	Economic
+	37	Growth
+	38	under
+	39	Michigan
+			name:	STATE_OR_PROVINCE				39-39	Michigan 
+	40	Governor
+			name:	TITLE				40-40	Governor 
+	41	Jennifer
+			name:	PERSON				41-42	Jennifer Granholm 
+	42	Granholm
+	43	's
+	44	administration
+			sense:	administration.n.02
+	45	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+During his tenure as mayor , he was instrumental in convincing General Motors Corporation to build the Grand River Assembly Plant downtown , and to build a new plant in the region to replace the Lansing Car Assembly Plant which dated back to 1903 .
+
+
+Treebanked sentence:
+--------------------
+During his tenure as mayor , he was instrumental in convincing General Motors Corporation to build the Grand River Assembly Plant downtown , and to build a new plant in the region to replace the Lansing Car Assembly Plant which dated back to 1903 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN During)
+      (NP
+        (NP (PRP$ his) (NN tenure))
+        (PP (IN as)
+          (NP (NN mayor)))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (ADJP (JJ instrumental)
+        (PP (IN in)
+          (S
+            (VP (VBG convincing)
+              (NP (NNP General) (NNPS Motors) (NNP Corporation))
+              (S
+                (VP
+                  (VP (TO to)
+                    (VP (VB build)
+                      (NP (DT the)
+                        (NML (NNP Grand) (NNP River) (NNP Assembly) (NNP Plant))
+                        (NN downtown))))
+                  (, ,)
+                  (CC and)
+                  (VP (TO to)
+                    (VP (VB build)
+                      (NP
+                        (NP (DT a) (JJ new) (NN plant))
+                        (PP (IN in)
+                          (NP (DT the) (NN region))))
+                      (S
+                        (VP (TO to)
+                          (VP (VB replace)
+                            (NP
+                              (NP (DT the)
+                                (NML (NNP Lansing) (NNP Car))
+                                (NNP Assembly) (NNP Plant))
+                              (SBAR
+                                (WHNP (WDT which))
+                                (S
+                                  (VP (VBD dated)
+                                    (ADVP (RB back))
+                                    (PP (IN to)
+                                      (NP (CD 1903)))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	During
+	1	his
+			coref:	IDENT			4	1-1	his 
+	2	tenure
+			sense:	tenure.n.01
+	3	as
+	4	mayor
+			name:	TITLE				4-4	mayor 
+			sense:	mayor.n.01
+	5	,
+	6	he
+			coref:	IDENT			4	6-6	he 
+	7	was
+			sense:	be.v.01
+			prop:	be.01
+			V		7-7	was 
+			N-ARGM-TMP		0-4	During his tenure as mayor 
+			N-ARG-A1		6-6	he 
+			N-ARG-A2		8-43	instrumental in convincing General Motors Corporation to build the Grand River Assembly Plant downtown , and to build a new plant in the region to replace the Lansing Car Assembly Plant which dated back to 1903 
+	8	instrumental
+			sense:	implemental.s.01
+	9	in
+	10	convincing
+			sense:	convert.v.09
+			prop:	convince.01
+			V		10-10	convincing 
+			N-ARG-A1		11-13	General Motors Corporation 
+			N-ARG-A2		14-43	to build the Grand River Assembly Plant downtown , and to build a new plant in the region to replace the Lansing Car Assembly Plant which dated back to 1903 
+	11	General
+			name:	ORGANIZATION				11-13	General Motors Corporation 
+	12	Motors
+	13	Corporation
+	14	to
+	15	build
+			sense:	construct.v.01
+			prop:	build.01
+			V		15-15	build 
+			N-ARG-A0		11-13	General Motors Corporation 
+			N-ARG-A1		16-20	the Grand River Assembly Plant 
+			N-ARGM-LOC		21-21	downtown 
+	16	the
+	17	Grand
+			name:	LOCATION				17-17	Grand 
+	18	River
+			name:	TITLE				18-18	River 
+	19	Assembly
+			name:	LOCATION				19-20	Assembly Plant 
+	20	Plant
+	21	downtown
+			sense:	business_district.n.01
+	22	,
+	23	and
+	24	to
+	25	build
+			sense:	construct.v.01
+			prop:	build.01
+			V		25-25	build 
+			N-ARG-A0		11-13	General Motors Corporation 
+			N-ARG-A1		26-28	a new plant 
+			N-ARGM-LOC		29-31	in the region 
+			C-ARG-A1		32-43	to replace the Lansing Car Assembly Plant which dated back to 1903 
+	26	a
+			coref:	IDENT			3	26-31	a new plant in the region 
+	27	new
+			sense:	new.a.01
+	28	plant
+			sense:	plant.n.01
+	29	in
+	30	the
+	31	region
+			sense:	region.n.01
+	32	to
+	33	replace
+			sense:	replace.v.01
+			prop:	replace.01
+			V		33-33	replace 
+			N-ARG-A2		26-28	a new plant 
+			N-ARG-A1		34-43	the Lansing Car Assembly Plant which dated back to 1903 
+	34	the
+			coref:	IDENT			3	34-43	the Lansing Car Assembly Plant which dated back to 1903 
+	35	Lansing
+			name:	CITY				35-35	Lansing 
+	36	Car
+			name:	LOCATION				36-38	Car Assembly Plant 
+	37	Assembly
+	38	Plant
+	39	which
+	40	dated
+			sense:	date.v.03
+			prop:	date.01
+			V		40-40	dated 
+			N-ARG-A1		34-38	the Lansing Car Assembly Plant 
+			R-ARG-A1		39-39	which 
+			N-ARG-A2		41-43	back to 1903 
+	41	back
+			sense:	back.r.04
+	42	to
+	43	1903
+			name:	DATE				43-43	1903 
+	44	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Also under his tenure came the completion of Cooley Law School Stadium , the stadium for the Lansing Lugnuts , a Class A minor league baseball team .
+
+
+Treebanked sentence:
+--------------------
+Also under his tenure came the completion of Cooley Law School Stadium , the stadium for the Lansing Lugnuts , a Class A minor league baseball team . 
+
+Tree:
+-----
+(ROOT
+  (SINV
+    (PP
+      (ADVP (RB Also))
+      (IN under)
+      (NP (PRP$ his) (NN tenure)))
+    (VP (VBD came)
+      (NP
+        (NP (DT the) (NN completion))
+        (PP (IN of)
+          (NP (NNP Cooley) (NNP Law)))))
+    (NP
+      (NP (NNP School) (NNP Stadium))
+      (, ,)
+      (NP
+        (NP (DT the) (NN stadium))
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NNP Lansing) (NNPS Lugnuts))
+            (, ,)
+            (NP (DT a)
+              (NML (NN Class) (NN A))
+              (NML (JJ minor) (NN league))
+              (NN baseball) (NN team))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Also
+			sense:	besides.r.02
+	1	under
+	2	his
+			coref:	IDENT			4	2-2	his 
+	3	tenure
+			sense:	tenure.n.01
+	4	came
+			sense:	come.v.03
+			prop:	come.01
+			V		4-4	came 
+			N-ARGM-DIS		0-0	Also 
+			N-ARG-A1		5-26	the completion of Cooley Law School Stadium , the stadium for the Lansing Lugnuts , a Class A minor league baseball team 
+	5	the
+	6	completion
+			sense:	completion.n.02
+	7	of
+	8	Cooley
+	9	Law
+	10	School
+	11	Stadium
+	12	,
+	13	the
+	14	stadium
+			sense:	stadium.n.01
+	15	for
+	16	the
+	17	Lansing
+	18	Lugnuts
+	19	,
+	20	a
+	21	Class
+			sense:	class.n.05
+	22	A
+			sense:	a.n.06
+	23	minor
+			sense:	minor.a.01
+	24	league
+			sense:	league.n.01
+	25	baseball
+			sense:	baseball.n.01
+	26	team
+			sense:	team.n.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mayor Hollister made central city ( including downtown and Old Town ) revitalization a top priority of his administration .
+
+
+Treebanked sentence:
+--------------------
+Mayor Hollister made central city ( including downtown and Old Town ) revitalization a top priority of his administration . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Mayor) (NNP Hollister))
+    (VP (VBD made)
+      (NP
+        (NP (JJ central) (NN city))
+        (PP (-LRB- -LRB-) (VBG including)
+          (NP
+            (NP (NN downtown))
+            (CC and)
+            (NP (NNP Old) (NNP Town)))
+          (-RRB- -RRB-)))
+      (PP
+        (NP (NN revitalization))
+        (NP
+          (NP (DT a) (JJ top) (NN priority))
+          (PP (IN of)
+            (NP (PRP$ his) (NN administration))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mayor
+			coref:	IDENT			4	0-1	Mayor Hollister 
+			name:	TITLE				0-0	Mayor 
+	1	Hollister
+			name:	PERSON				1-1	Hollister 
+	2	made
+			sense:	make.v.02
+			prop:	make.02
+			V		2-2	made 
+			N-ARG-A0		0-1	Mayor Hollister 
+			N-ARG-A1		3-18	central city ( including downtown and Old Town ) revitalization a top priority of his administration 
+	3	central
+			sense:	central.a.02
+	4	city
+			sense:	city.n.01
+	5	(
+	6	including
+			sense:	include.v.01
+			prop:	include.01
+			V		6-6	including 
+			N-ARG-A2		3-4	central city 
+			N-ARG-A1		7-10	downtown and Old Town 
+	7	downtown
+			sense:	business_district.n.01
+	8	and
+	9	Old
+			name:	CITY				9-10	Old Town 
+	10	Town
+	11	)
+	12	revitalization
+			sense:	revival.n.01
+	13	a
+	14	top
+			sense:	top.a.01
+	15	priority
+			sense:	precedence.n.01
+	16	of
+	17	his
+			coref:	IDENT			2	17-18	his administration 
+			coref:	IDENT			4	17-17	his 
+	18	administration
+			sense:	administration.n.02
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Hollister was born In Kalamazoo and raised in Battle Creek , Michigan , where he graduated from Battle Creek Central High School .
+
+
+Treebanked sentence:
+--------------------
+Hollister was born In Kalamazoo and raised in Battle Creek , Michigan , where he graduated from Battle Creek Central High School . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Hollister))
+    (VP (VBD was)
+      (VP
+        (VP (VBN born)
+          (PP (IN In)
+            (NP (NNP Kalamazoo))))
+        (CC and)
+        (VP (VBN raised)
+          (PP (IN in)
+            (NP
+              (NP (NNP Battle) (NNP Creek))
+              (, ,)
+              (NP (NNP Michigan))))
+          (, ,)
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP (PRP he))
+              (VP (VBD graduated)
+                (PP (IN from)
+                  (NP (NNP Battle) (NNP Creek) (NNP Central) (NNP High) (NNP School)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Hollister
+			coref:	IDENT			4	0-0	Hollister 
+			name:	PERSON				0-0	Hollister 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Hollister 
+			N-ARGM-LOC		3-4	In Kalamazoo 
+	3	In
+	4	Kalamazoo
+			name:	CITY				4-4	Kalamazoo 
+	5	and
+	6	raised
+			sense:	rear.v.02
+			prop:	raise.01
+			V		6-6	raised 
+			N-ARG-A1		0-0	Hollister 
+			N-ARGM-LOC		7-21	in Battle Creek , Michigan , where he graduated from Battle Creek Central High School 
+	7	in
+	8	Battle
+			name:	CITY				8-9	Battle Creek 
+	9	Creek
+	10	,
+	11	Michigan
+			name:	STATE_OR_PROVINCE				11-11	Michigan 
+	12	,
+	13	where
+	14	he
+			coref:	IDENT			4	14-14	he 
+	15	graduated
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		15-15	graduated 
+			N-ARGM-LOC		13-13	where 
+			N-ARG-A0		14-14	he 
+			N-ARG-A1		16-21	from Battle Creek Central High School 
+	16	from
+	17	Battle
+			name:	ORGANIZATION				17-21	Battle Creek Central High School 
+	18	Creek
+	19	Central
+	20	High
+	21	School
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He earned bachelor 's and master 's degrees from Michigan State University .
+
+
+Treebanked sentence:
+--------------------
+He earned bachelor 's and master 's degrees from Michigan State University . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD earned)
+      (NP
+        (NP
+          (NP (NN bachelor) (POS 's))
+          (CC and)
+          (NP (NN master) (POS 's)))
+        (NNS degrees))
+      (PP (IN from)
+        (NP (NNP Michigan) (NNP State) (NNP University))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			4	0-0	He 
+	1	earned
+			sense:	earn.v.02
+			prop:	earn.01
+			V		1-1	earned 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-7	bachelor 's and master 's degrees 
+			N-ARG-A3		8-11	from Michigan State University 
+	2	bachelor
+			name:	TITLE				2-2	bachelor 
+			sense:	bachelor.n.01
+	3	's
+	4	and
+	5	master
+			sense:	master.n.08
+	6	's
+	7	degrees
+			sense:	academic_degree.n.01
+	8	from
+	9	Michigan
+			coref:	IDENT			0	9-11	Michigan State University 
+			name:	ORGANIZATION				9-11	Michigan State University 
+	10	State
+	11	University
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+From 1967 to 1970 he was a social studies teacher at Lansing Eastern High School .
+
+
+Treebanked sentence:
+--------------------
+From 1967 to 1970 he was a social studies teacher at Lansing Eastern High School . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN From)
+      (NP
+        (NP (CD 1967))
+        (PP (IN to)
+          (NP (CD 1970)))))
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ social) (NNS studies) (NN teacher))
+        (PP (IN at)
+          (NP
+            (NML (NNP Lansing) (NNP Eastern))
+            (NNP High) (NNP School)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	From
+	1	1967
+			name:	DATE				1-1	1967 
+	2	to
+	3	1970
+			name:	DATE				3-3	1970 
+	4	he
+			coref:	IDENT			4	4-4	he 
+	5	was
+			sense:	be.v.08
+			prop:	be.01
+			V		5-5	was 
+			N-ARGM-TMP		0-3	From 1967 to 1970 
+			N-ARG-A1		4-4	he 
+			N-ARG-A2		6-14	a social studies teacher at Lansing Eastern High School 
+	6	a
+	7	social
+			sense:	social.a.01
+	8	studies
+			sense:	discipline.n.01
+	9	teacher
+			name:	TITLE				9-9	teacher 
+			sense:	teacher.n.01
+	10	at
+	11	Lansing
+			name:	ORGANIZATION				11-14	Lansing Eastern High School 
+	12	Eastern
+	13	High
+	14	School
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Prior to becoming mayor , he served in the Michigan House of Representatives from 1973 - 1993 representing the City of Lansing .
+
+
+Treebanked sentence:
+--------------------
+Prior to becoming mayor , he served in the Michigan House of Representatives from 1973 - 1993 representing the City of Lansing . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (RB Prior) (IN to)
+      (S
+        (VP (VBG becoming)
+          (NP (NN mayor)))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD served)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NNP Michigan) (NNP House))
+          (PP (IN of)
+            (NP (NNPS Representatives)))))
+      (PP (IN from)
+        (NP
+          (NP (CD 1973) (SYM -) (CD 1993))
+          (VP (VBG representing)
+            (NP
+              (NP (DT the) (NNP City))
+              (PP (IN of)
+                (NP (NNP Lansing))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Prior
+	1	to
+	2	becoming
+			sense:	become.v.02
+			prop:	become.01
+			V		2-2	becoming 
+			N-ARG-A2		3-3	mayor 
+			N-ARG-A1		5-5	he 
+	3	mayor
+			name:	TITLE				3-3	mayor 
+			sense:	mayor.n.01
+	4	,
+	5	he
+			coref:	IDENT			4	5-5	he 
+	6	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		6-6	served 
+			N-ARGM-TMP		0-3	Prior to becoming mayor 
+			N-ARG-A0		5-5	he 
+			N-ARG-A1		7-12	in the Michigan House of Representatives 
+			N-ARGM-TMP		13-16	from 1973 - 1993 
+			N-ARGM-PRD		17-21	representing the City of Lansing 
+	7	in
+	8	the
+	9	Michigan
+			name:	ORGANIZATION				9-12	Michigan House of Representatives 
+	10	House
+	11	of
+	12	Representatives
+	13	from
+	14	1973
+			name:	DATE				14-16	1973 - 1993 
+	15	-
+	16	1993
+	17	representing
+			sense:	represent.v.04
+			prop:	represent.01
+			V		17-17	representing 
+			N-ARG-A0		5-5	he 
+			N-ARG-A1		18-21	the City of Lansing 
+	18	the
+	19	City
+	20	of
+	21	Lansing
+			coref:	IDENT			1	21-21	Lansing 
+			name:	CITY				21-21	Lansing 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2005 he was recruited to run Prima Civitas , an economic development organization funded by Michigan State University and the city governments of Lansing and East Lansing , Michigan .
+
+
+Treebanked sentence:
+--------------------
+In 2005 he was recruited to run Prima Civitas , an economic development organization funded by Michigan State University and the city governments of Lansing and East Lansing , Michigan . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2005)))
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN recruited)
+        (S
+          (VP (TO to)
+            (VP (VB run)
+              (NP
+                (NP (NNP Prima) (NNP Civitas))
+                (, ,)
+                (NP
+                  (NP (DT an) (JJ economic) (NN development) (NN organization))
+                  (VP (VBN funded)
+                    (PP (IN by)
+                      (NP
+                        (NP (NNP Michigan) (NNP State) (NNP University))
+                        (CC and)
+                        (NP
+                          (NP (DT the) (NN city) (NNS governments))
+                          (PP (IN of)
+                            (NP
+                              (NML
+                                (NML (NNP Lansing))
+                                (CC and)
+                                (NML (NNP East) (NNP Lansing)))
+                              (, ,) (NNP Michigan))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2005
+			name:	DATE				1-1	2005 
+	2	he
+			coref:	IDENT			4	2-2	he 
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	recruited
+			sense:	recruit.v.02
+			prop:	recruit.01
+			V		4-4	recruited 
+			N-ARGM-TMP		0-1	In 2005 
+			N-ARG-A1		2-2	he 
+			N-ARG-A2		5-29	to run Prima Civitas , an economic development organization funded by Michigan State University and the city governments of Lansing and East Lansing , Michigan 
+	5	to
+	6	run
+			sense:	operate.v.01
+			prop:	run.01
+			V		6-6	run 
+			N-ARG-A0		2-2	he 
+			N-ARG-A1		7-29	Prima Civitas , an economic development organization funded by Michigan State University and the city governments of Lansing and East Lansing , Michigan 
+	7	Prima
+			name:	ORGANIZATION				7-8	Prima Civitas 
+	8	Civitas
+	9	,
+	10	an
+	11	economic
+			sense:	economic.a.01
+	12	development
+			sense:	development.n.01
+	13	organization
+			sense:	organization.n.01
+	14	funded
+			sense:	fund.v.06
+			prop:	fund.01
+			V		14-14	funded 
+			N-ARG-A1		10-13	an economic development organization 
+			N-ARG-A0		15-29	by Michigan State University and the city governments of Lansing and East Lansing , Michigan 
+	15	by
+	16	Michigan
+			coref:	IDENT			0	16-18	Michigan State University 
+			name:	ORGANIZATION				16-18	Michigan State University 
+	17	State
+	18	University
+	19	and
+	20	the
+	21	city
+			sense:	city.n.02
+	22	governments
+			sense:	government.n.01
+	23	of
+	24	Lansing
+			coref:	IDENT			1	24-24	Lansing 
+			name:	CITY				24-24	Lansing 
+	25	and
+	26	East
+			name:	CITY				26-27	East Lansing 
+	27	Lansing
+	28	,
+	29	Michigan
+			name:	STATE_OR_PROVINCE				29-29	Michigan 
+	30	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.9-11	Michigan State University 
+				8.16-18	Michigan State University 
+	Chain 1 (IDENT)
+				0.14-14	Lansing 
+				7.21-21	Lansing 
+				8.24-24	Lansing 
+	Chain 2 (IDENT)
+				0.34-44	Labor and Economic Growth under Michigan Governor Jennifer Granholm 's administration 
+				3.17-18	his administration 
+	Chain 3 (IDENT)
+				1.34-43	the Lansing Car Assembly Plant which dated back to 1903 
+				1.26-31	a new plant in the region 
+	Chain 4 (IDENT)
+				0.0-1	David Hollister 
+				0.23-23	he 
+				1.1-1	his 
+				1.6-6	he 
+				2.2-2	his 
+				3.0-1	Mayor Hollister 
+				3.17-17	his 
+				4.0-0	Hollister 
+				4.14-14	he 
+				5.0-0	He 
+				6.4-4	he 
+				7.5-5	he 
+				8.2-2	he 
+

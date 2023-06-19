@@ -1,0 +1,508 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Dany Morin ( born December 19 , 1985 ) is a Canadian businessman and former politician , who served in the House of Commons of Canada from 2011 to 2015 .
+
+
+Treebanked sentence:
+--------------------
+Dany Morin ( born December 19 , 1985 ) is a Canadian businessman and former politician , who served in the House of Commons of Canada from 2011 to 2015 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Dany) (NNP Morin))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP December) (CD 19) (, ,) (CD 1985)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT a) (JJ Canadian) (NN businessman))
+          (CC and)
+          (NP (JJ former) (NN politician)))
+        (, ,)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD served)
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NNP House))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNPS Commons))
+                      (PP (IN of)
+                        (NP (NNP Canada)))))))
+              (PP (IN from)
+                (NP (CD 2011)))
+              (PP (IN to)
+                (NP (CD 2015))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Dany
+			name:	PERSON				0-1	Dany Morin 
+	1	Morin
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Dany Morin 
+			N-ARGM-TMP		4-7	December 19 , 1985 
+	4	December
+			name:	DATE				4-7	December 19 , 1985 
+	5	19
+	6	,
+	7	1985
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	Dany Morin ( born December 19 , 1985 ) 
+			N-ARG-A2		10-29	a Canadian businessman and former politician , who served in the House of Commons of Canada from 2011 to 2015 
+	10	a
+	11	Canadian
+			name:	NATIONALITY				11-11	Canadian 
+	12	businessman
+			name:	TITLE				12-12	businessman 
+			sense:	businessman.n.01
+	13	and
+	14	former
+			sense:	erstwhile.s.01
+	15	politician
+			name:	TITLE				15-15	politician 
+			sense:	politician.n.02
+	16	,
+	17	who
+	18	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		18-18	served 
+			N-ARG-A0		10-15	a Canadian businessman and former politician 
+			R-ARG-A0		17-17	who 
+			N-ARG-A1		19-25	in the House of Commons of Canada 
+			N-ARGM-TMP		26-29	from 2011 to 2015 
+	19	in
+	20	the
+	21	House
+			name:	ORGANIZATION				21-25	House of Commons of Canada 
+	22	of
+	23	Commons
+	24	of
+	25	Canada
+	26	from
+	27	2011
+			name:	DATE				27-29	2011 to 2015 
+	28	to
+	29	2015
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He represented the electoral district of Chicoutimi — Le Fjord as a member of the New Democratic Party .
+
+
+Treebanked sentence:
+--------------------
+He represented the electoral district of Chicoutimi — Le Fjord as a member of the New Democratic Party . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD represented)
+      (NP
+        (NP (DT the) (JJ electoral) (NN district))
+        (PP (IN of)
+          (NP (NNP Chicoutimi) (HYPH —) (NNP Le) (NNP Fjord))))
+      (PP (IN as)
+        (NP
+          (NP (DT a) (NN member))
+          (PP (IN of)
+            (NP (DT the)
+              (NML (NNP New) (NNP Democratic))
+              (NNP Party))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	represented
+			sense:	represent.v.04
+			prop:	represent.01
+			V		1-1	represented 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-9	the electoral district of Chicoutimi — Le Fjord 
+			N-ARGM-MNR		10-17	as a member of the New Democratic Party 
+	2	the
+	3	electoral
+			sense:	electoral.s.02
+	4	district
+			sense:	district.n.01
+	5	of
+	6	Chicoutimi
+			name:	LOCATION				6-6	Chicoutimi 
+	7	—
+	8	Le
+			name:	LOCATION				8-9	Le Fjord 
+	9	Fjord
+	10	as
+	11	a
+	12	member
+			sense:	member.n.01
+	13	of
+	14	the
+			coref:	IDENT			0	14-17	the New Democratic Party 
+	15	New
+			name:	ORGANIZATION				15-17	New Democratic Party 
+	16	Democratic
+	17	Party
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A chiropractor , he was one of five openly gay candidates elected to Parliament in the 2011 election .
+
+
+Treebanked sentence:
+--------------------
+A chiropractor , he was one of five openly gay candidates elected to Parliament in the 2011 election . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT A) (NN chiropractor))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (CD five)
+              (ADJP (RB openly) (JJ gay))
+              (NNS candidates))
+            (VP (VBN elected)
+              (PP (IN to)
+                (NP (NNP Parliament)))
+              (PP (IN in)
+                (NP (DT the) (CD 2011) (NN election))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	chiropractor
+			name:	TITLE				1-1	chiropractor 
+			sense:	chiropractor.n.01
+	2	,
+	3	he
+	4	was
+			sense:	be.v.01
+			prop:	be.01
+			V		4-4	was 
+			N-ARGM-PRD		0-1	A chiropractor 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		5-17	one of five openly gay candidates elected to Parliament in the 2011 election 
+	5	one
+			name:	NUMBER				5-5	one 
+	6	of
+	7	five
+			name:	NUMBER				7-7	five 
+	8	openly
+			sense:	openly.r.01
+	9	gay
+			sense:	gay.s.06
+	10	candidates
+			sense:	campaigner.n.01
+	11	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		11-11	elected 
+			N-ARG-A1		7-10	five openly gay candidates 
+			N-ARG-A2		12-13	to Parliament 
+			N-ARGM-TMP		14-17	in the 2011 election 
+	12	to
+	13	Parliament
+			name:	ORGANIZATION				13-13	Parliament 
+	14	in
+	15	the
+	16	2011
+			name:	DATE				16-16	2011 
+	17	election
+			sense:	election.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He served as the NDP associate critic for lesbian , gay , bisexual , transgender , and transsexual issues , alongside lead critic Randall Garrison .
+
+
+Treebanked sentence:
+--------------------
+He served as the NDP associate critic for lesbian , gay , bisexual , transgender , and transsexual issues , alongside lead critic Randall Garrison . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP (DT the) (NNP NDP) (NN associate) (NN critic)))
+      (PP (IN for)
+        (NP
+          (ADJP (JJ lesbian) (, ,) (JJ gay) (, ,) (JJ bisexual) (, ,) (JJ transgender) (, ,)
+            (CC and)
+            (JJ transsexual))
+          (NNS issues)))
+      (, ,)
+      (PP (IN alongside)
+        (NP
+          (NML (NN lead) (NN critic))
+          (NNP Randall) (NNP Garrison))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-18	as the NDP associate critic for lesbian , gay , bisexual , transgender , and transsexual issues 
+			N-ARGM-LOC		20-24	alongside lead critic Randall Garrison 
+	2	as
+	3	the
+	4	NDP
+			coref:	IDENT			0	4-4	NDP 
+			name:	ORGANIZATION				4-4	NDP 
+	5	associate
+			sense:	associate.n.01
+	6	critic
+			name:	TITLE				6-6	critic 
+			sense:	critic.n.02
+	7	for
+	8	lesbian
+			sense:	lesbian.s.01
+	9	,
+	10	gay
+			sense:	gay.s.06
+	11	,
+	12	bisexual
+			sense:	bisexual.a.01
+	13	,
+	14	transgender
+			sense:	transgender.s.01
+	15	,
+	16	and
+	17	transsexual
+			sense:	transsexual.s.01
+	18	issues
+			sense:	issue.n.01
+	19	,
+	20	alongside
+	21	lead
+			sense:	lead.n.04
+	22	critic
+			name:	TITLE				22-22	critic 
+			sense:	critic.n.02
+	23	Randall
+			name:	PERSON				23-24	Randall Garrison 
+	24	Garrison
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Morin was defeated in the 2015 election by Liberal Denis Lemieux .
+
+
+Treebanked sentence:
+--------------------
+Morin was defeated in the 2015 election by Liberal Denis Lemieux . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Morin))
+    (VP (VBD was)
+      (VP (VBN defeated)
+        (PP (IN in)
+          (NP (DT the) (CD 2015) (NN election)))
+        (PP (IN by)
+          (NP (NNP Liberal) (NNP Denis) (NNP Lemieux)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Morin
+			name:	PERSON				0-0	Morin 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	defeated
+			sense:	get_the_better_of.v.01
+			prop:	defeat.01
+			V		2-2	defeated 
+			N-ARG-A1		0-0	Morin 
+			N-ARGM-TMP		3-6	in the 2015 election 
+			N-ARG-A0		7-10	by Liberal Denis Lemieux 
+	3	in
+	4	the
+	5	2015
+			name:	DATE				5-5	2015 
+	6	election
+			sense:	election.n.01
+	7	by
+	8	Liberal
+			name:	IDEOLOGY				8-8	Liberal 
+	9	Denis
+			name:	PERSON				9-10	Denis Lemieux 
+	10	Lemieux
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Following his electoral defeat , he launched Monsieur Fulgence , an e - commerce project to promote local artisans and craftspeople from the Saguenay – Lac - Saint - Jean region .
+
+
+Treebanked sentence:
+--------------------
+Following his electoral defeat , he launched Monsieur Fulgence , an e - commerce project to promote local artisans and craftspeople from the Saguenay – Lac - Saint - Jean region . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (VBG Following)
+      (NP (PRP$ his) (JJ electoral) (NN defeat)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD launched)
+      (NP
+        (NP (NNP Monsieur) (NNP Fulgence))
+        (, ,)
+        (NP (DT an)
+          (NML (NN e) (HYPH -) (NN commerce))
+          (NN project)))
+      (S
+        (VP (TO to)
+          (VP (VB promote)
+            (NP (JJ local) (NNS artisans)
+              (CC and)
+              (NNS craftspeople))
+            (PP (IN from)
+              (NP (DT the) (NNP Saguenay)
+                (NML
+                  (PP (SYM –)
+                    (NP (NNP Lac) (HYPH -) (NNP Saint) (HYPH -) (NNP Jean))))
+                (NN region)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		0-0	Following 
+			N-ARG-A2		1-3	his electoral defeat 
+	1	his
+	2	electoral
+			sense:	electoral.a.01
+	3	defeat
+			sense:	defeat.n.01
+	4	,
+	5	he
+	6	launched
+			sense:	establish.v.01
+			prop:	launch.01
+			V		6-6	launched 
+			N-ARGM-TMP		0-3	Following his electoral defeat 
+			N-ARG-A0		5-5	he 
+			N-ARG-A1		7-30	Monsieur Fulgence , an e - commerce project to promote local artisans and craftspeople from the Saguenay – Lac - Saint - Jean region 
+	7	Monsieur
+			name:	PERSON				7-8	Monsieur Fulgence 
+	8	Fulgence
+	9	,
+	10	an
+	11	e
+			sense:	east.n.01
+	12	-
+	13	commerce
+			sense:	commerce.n.01
+	14	project
+			sense:	project.n.02
+	15	to
+	16	promote
+			sense:	promote.v.01
+			prop:	promote.02
+			V		16-16	promote 
+			N-ARG-A0		10-14	an e - commerce project 
+			N-ARG-A1		17-30	local artisans and craftspeople from the Saguenay – Lac - Saint - Jean region 
+	17	local
+			sense:	local.a.01
+	18	artisans
+			sense:	craftsman.n.03
+	19	and
+	20	craftspeople
+	21	from
+	22	the
+	23	Saguenay
+			name:	LOCATION				23-23	Saguenay 
+	24	–
+	25	Lac
+			name:	CITY				25-25	Lac 
+	26	-
+			name:	LOCATION				26-26	- 
+	27	Saint
+			name:	TITLE				27-27	Saint 
+	28	-
+			name:	LOCATION				28-29	- Jean 
+	29	Jean
+	30	region
+			sense:	region.n.01
+	31	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.14-17	the New Democratic Party 
+				3.4-4	NDP 
+

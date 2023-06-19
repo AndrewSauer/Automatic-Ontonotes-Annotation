@@ -1,0 +1,644 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+' , officially the ' , ( ) , or simply known as City , is a   in the province of , .
+
+
+Treebanked sentence:
+--------------------
+' , officially the ' , ( ) , or simply known as City , is a in the province of , . 
+
+Tree:
+-----
+(ROOT
+  (S (`` ')
+    (NP
+      (NP (, ,)
+        (NP
+          (ADVP (RB officially))
+          (NP (DT the) (`` ')))
+        (, ,))
+      (-LRB- -LRB-)
+      (VP
+        (VP (-RRB- -RRB-))
+        (, ,)
+        (CC or)
+        (ADVP (RB simply))
+        (VP (VBN known)
+          (PP (IN as)
+            (NP (NNP City))))))
+    (, ,)
+    (VP (VBZ is)
+      (NP
+        (NP (DT a))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN province))
+            (PP (IN of))
+            (, ,)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	'
+	1	,
+	2	officially
+			sense:	formally.r.01
+	3	the
+	4	'
+	5	,
+	6	(
+	7	)
+	8	,
+	9	or
+	10	simply
+			sense:	merely.r.01
+	11	known
+			sense:	know.v.04
+			prop:	know.01
+			V		11-11	known 
+			N-ARGM-ADV		10-10	simply 
+			N-ARG-A2		12-13	as City 
+	12	as
+	13	City
+	14	,
+	15	is
+			sense:	be.v.02
+			prop:	be.01
+			V		15-15	is 
+			N-ARGM-ADV		2-2	officially 
+			N-ARG-A1		3-13	the ' , ( ) , or simply known as City 
+			N-ARG-A2		16-20	a in the province of 
+	16	a
+	17	in
+	18	the
+	19	province
+			sense:	state.n.01
+	20	of
+	21	,
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+According to the , it has a population of people .
+
+
+Treebanked sentence:
+--------------------
+According to the , it has a population of people . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (VBG According)
+      (PP (IN to)
+        (NP (DT the))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ has)
+      (NP
+        (NP (DT a) (NN population))
+        (PP (IN of)
+          (NP (NNS people)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	According
+			sense:	harmonize.v.01
+			prop:	accord.01
+			V		0-0	According 
+	1	to
+	2	the
+	3	,
+	4	it
+			coref:	IDENT			2	4-4	it 
+	5	has
+			sense:	have.v.02
+			prop:	have.03
+			V		5-5	has 
+			N-ARGM-ADV		0-2	According to the 
+			N-ARG-A0		4-4	it 
+			N-ARG-A1		6-9	a population of people 
+	6	a
+	7	population
+			sense:	population.n.04
+	8	of
+	9	people
+			sense:	person.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is the capital city of the province of Bulacan as the seat of the provincial government .
+
+
+Treebanked sentence:
+--------------------
+It is the capital city of the province of Bulacan as the seat of the provincial government . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN capital) (NN city))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN province))
+            (PP (IN of)
+              (NP
+                (NP (NNP Bulacan))
+                (PP (IN as)
+                  (NP
+                    (NP (DT the) (NN seat))
+                    (PP (IN of)
+                      (NP (DT the) (JJ provincial) (NN government)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-9	the capital city of the province of Bulacan 
+			N-ARGM-ADV		10-16	as the seat of the provincial government 
+	2	the
+			coref:	IDENT			1	2-16	the capital city of the province of Bulacan as the seat of the provincial government 
+	3	capital
+			sense:	capital.n.03
+	4	city
+			sense:	city.n.01
+	5	of
+	6	the
+	7	province
+			sense:	state.n.01
+	8	of
+	9	Bulacan
+			coref:	IDENT			0	9-9	Bulacan 
+			name:	CITY				9-9	Bulacan 
+	10	as
+	11	the
+	12	seat
+			sense:	seat.n.05
+	13	of
+	14	the
+	15	provincial
+			sense:	provincial.a.01
+	16	government
+			sense:	government.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The city is north of Manila , the capital city of the Philippines .
+
+
+Treebanked sentence:
+--------------------
+The city is north of Manila , the capital city of the Philippines . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN city))
+    (VP (VBZ is)
+      (NP
+        (NP (NN north))
+        (PP (IN of)
+          (NP
+            (NP (NNP Manila))
+            (, ,)
+            (NP
+              (NP (DT the) (NN capital) (NN city))
+              (PP (IN of)
+                (NP (DT the) (NNPS Philippines))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The city 
+	1	city
+			sense:	city.n.01
+	2	is
+			sense:	be.v.03
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The city 
+			N-ARG-A2		3-12	north of Manila , the capital city of the Philippines 
+	3	north
+			sense:	north.n.03
+	4	of
+	5	Manila
+			name:	CITY				5-5	Manila 
+	6	,
+	7	the
+	8	capital
+			sense:	capital.n.03
+	9	city
+			sense:	city.n.01
+	10	of
+	11	the
+	12	Philippines
+			name:	COUNTRY				12-12	Philippines 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is one of the major suburbs conurbated to Metro Manila , situated in the southwestern part of Bulacan , in the Central Luzon Region ( Region 3 ) in the island of Luzon and part of the Metro Luzon Urban Beltway Super Region .
+
+
+Treebanked sentence:
+--------------------
+It is one of the major suburbs conurbated to Metro Manila , situated in the southwestern part of Bulacan , in the Central Luzon Region ( Region 3 ) in the island of Luzon and part of the Metro Luzon Urban Beltway Super Region . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJ major) (NNS suburbs))
+            (VP (VBN conurbated)
+              (PP (IN to)
+                (NP
+                  (NP (NNP Metro) (NNP Manila))
+                  (, ,)
+                  (VP (VBN situated)
+                    (PP (IN in)
+                      (NP
+                        (NP (DT the) (JJ southwestern) (NN part))
+                        (PP (IN of)
+                          (NP (NNP Bulacan)))))
+                    (, ,)
+                    (PP (IN in)
+                      (NP (DT the) (NNP Central) (NNP Luzon) (NNP Region)))
+                    (PRN (-LRB- -LRB-)
+                      (NP (NNP Region) (CD 3))
+                      (-RRB- -RRB-)))))
+              (PP (IN in)
+                (NP
+                  (NP
+                    (NP (DT the) (NN island))
+                    (PP (IN of)
+                      (NP (NNP Luzon))))
+                  (CC and)
+                  (NP
+                    (NP (NN part))
+                    (PP (IN of)
+                      (NP (DT the) (NNP Metro) (NNP Luzon) (NNP Urban) (NNP Beltway) (NNP Super) (NNP Region)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-43	one of the major suburbs conurbated to Metro Manila , situated in the southwestern part of Bulacan , in the Central Luzon Region ( Region 3 ) in the island of Luzon and part of the Metro Luzon Urban Beltway Super Region 
+	2	one
+			name:	NUMBER				2-2	one 
+	3	of
+	4	the
+	5	major
+			sense:	major.a.01
+	6	suburbs
+			sense:	suburb.n.01
+	7	conurbated
+			prop:	concrete.01
+			V		7-7	conurbated 
+			N-ARG-A1		4-6	the major suburbs 
+			N-ARG-A2		8-10	to Metro Manila 
+	8	to
+	9	Metro
+			name:	CITY				9-10	Metro Manila 
+	10	Manila
+	11	,
+	12	situated
+			sense:	situate.v.01
+			prop:	situate.01
+			V		12-12	situated 
+			N-ARG-A1		2-10	one of the major suburbs conurbated to Metro Manila 
+			N-ARG-A2		13-18	in the southwestern part of Bulacan 
+	13	in
+	14	the
+	15	southwestern
+			sense:	southwest.s.02
+	16	part
+			sense:	region.n.01
+	17	of
+	18	Bulacan
+			coref:	IDENT			0	18-18	Bulacan 
+			name:	CITY				18-18	Bulacan 
+	19	,
+	20	in
+	21	the
+	22	Central
+			name:	LOCATION				22-22	Central 
+	23	Luzon
+			name:	CITY				23-23	Luzon 
+	24	Region
+			name:	LOCATION				24-24	Region 
+	25	(
+	26	Region
+	27	3
+			name:	NUMBER				27-27	3 
+	28	)
+	29	in
+	30	the
+	31	island
+			sense:	island.n.01
+	32	of
+	33	Luzon
+			name:	CITY				33-33	Luzon 
+	34	and
+	35	part
+			sense:	part.n.01
+	36	of
+	37	the
+	38	Metro
+			name:	CITY				38-39	Metro Luzon 
+	39	Luzon
+	40	Urban
+			name:	LOCATION				40-43	Urban Beltway Super Region 
+	41	Beltway
+	42	Super
+	43	Region
+	44	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Malolos was the site of the constitutional convention of 1898 , known as the Malolos Convention , that led to the establishment of the First Philippine Republic , at the sanctuary of the Barasoain Church .
+
+
+Treebanked sentence:
+--------------------
+Malolos was the site of the constitutional convention of 1898 , known as the Malolos Convention , that led to the establishment of the First Philippine Republic , at the sanctuary of the Barasoain Church . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Malolos))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (NN site))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (DT the) (JJ constitutional) (NN convention))
+              (PP (IN of)
+                (NP (CD 1898))))
+            (, ,)
+            (VP (VBN known)
+              (PP (IN as)
+                (NP
+                  (NP (DT the) (NNP Malolos) (NNP Convention))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBD led)
+                        (PP (IN to)
+                          (NP
+                            (NP (DT the) (NN establishment))
+                            (PP (IN of)
+                              (NP (DT the) (NNP First) (NNP Philippine) (NNP Republic)))))
+                        (, ,)
+                        (PP (IN at)
+                          (NP
+                            (NP (DT the) (NN sanctuary))
+                            (PP (IN of)
+                              (NP (DT the) (NNP Barasoain) (NNP Church)))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Malolos
+			name:	PERSON				0-0	Malolos 
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	Malolos 
+			N-ARG-A2		2-34	the site of the constitutional convention of 1898 , known as the Malolos Convention , that led to the establishment of the First Philippine Republic , at the sanctuary of the Barasoain Church 
+	2	the
+	3	site
+			sense:	site.n.01
+	4	of
+	5	the
+	6	constitutional
+			sense:	constitutional.a.02
+	7	convention
+			sense:	convention.n.01
+	8	of
+	9	1898
+			name:	DATE				9-9	1898 
+	10	,
+	11	known
+			sense:	acknowledge.v.06
+			prop:	know.01
+			V		11-11	known 
+			N-ARG-A1		5-9	the constitutional convention of 1898 
+			N-ARG-A2		12-15	as the Malolos Convention 
+	12	as
+	13	the
+	14	Malolos
+	15	Convention
+	16	,
+	17	that
+	18	led
+			sense:	leave.v.07
+			prop:	lead.03
+			V		18-18	led 
+			N-ARG-A0		5-15	the constitutional convention of 1898 , known as the Malolos Convention 
+			R-ARG-A0		17-17	that 
+			N-ARG-A2		19-26	to the establishment of the First Philippine Republic 
+			N-ARGM-LOC		28-34	at the sanctuary of the Barasoain Church 
+	19	to
+	20	the
+	21	establishment
+			sense:	constitution.n.02
+	22	of
+	23	the
+	24	First
+			name:	LOCATION				24-24	First 
+	25	Philippine
+			name:	NATIONALITY				25-25	Philippine 
+	26	Republic
+			name:	LOCATION				26-26	Republic 
+	27	,
+	28	at
+	29	the
+	30	sanctuary
+			sense:	sanctuary.n.01
+	31	of
+	32	the
+	33	Barasoain
+			name:	ORGANIZATION				33-34	Barasoain Church 
+	34	Church
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The convent of the Malolos Cathedral served as the presidential palace at that time .
+
+
+Treebanked sentence:
+--------------------
+The convent of the Malolos Cathedral served as the presidential palace at that time . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN convent))
+      (PP (IN of)
+        (NP (DT the) (NNP Malolos) (NNP Cathedral))))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP (DT the) (JJ presidential) (NN palace)))
+      (PP (IN at)
+        (NP (DT that) (NN time))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	convent
+			sense:	convent.n.01
+	2	of
+	3	the
+	4	Malolos
+	5	Cathedral
+	6	served
+			sense:	serve.v.01
+			prop:	serve.01
+			V		6-6	served 
+			N-ARG-A0		0-5	The convent of the Malolos Cathedral 
+			N-ARG-A1		7-10	as the presidential palace 
+			N-ARGM-TMP		11-13	at that time 
+	7	as
+	8	the
+	9	presidential
+			sense:	presidential.a.01
+	10	palace
+			sense:	palace.n.04
+	11	at
+	12	that
+	13	time
+			sense:	time.n.03
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Malolos gave birth to the first constitutional republic in Asia .
+
+
+Treebanked sentence:
+--------------------
+Malolos gave birth to the first constitutional republic in Asia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Malolos))
+    (VP (VBD gave)
+      (NP (NN birth))
+      (PP (IN to)
+        (NP (DT the) (JJ first) (JJ constitutional) (NN republic)))
+      (PP (IN in)
+        (NP (NNP Asia))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Malolos
+			name:	PERSON				0-0	Malolos 
+	1	gave
+			sense:	give.v.09
+			prop:	give.11
+			V		1-1	gave 
+			N-ARG-A0		0-0	Malolos 
+			N-ARG-A1		2-2	birth 
+			N-ARG-A2		3-9	to the first constitutional republic in Asia 
+	2	birth
+			sense:	birth.n.01
+	3	to
+	4	the
+	5	first
+			name:	ORDINAL				5-5	first 
+			sense:	first.a.01
+	6	constitutional
+			sense:	constitutional.a.02
+	7	republic
+			sense:	republic.n.02
+	8	in
+	9	Asia
+			name:	CITY				9-9	Asia 
+	10	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.9-9	Bulacan 
+				4.18-18	Bulacan 
+	Chain 1 (IDENT)
+				2.2-16	the capital city of the province of Bulacan as the seat of the provincial government 
+				3.0-1	The city 
+				4.0-0	It 
+	Chain 2 (IDENT)
+				1.4-4	it 
+				2.0-0	It 
+

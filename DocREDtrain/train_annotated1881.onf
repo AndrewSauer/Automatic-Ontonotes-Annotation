@@ -1,0 +1,904 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Pierre Marsan ( born June 29 , 1948 in Montreal , Quebec ) is a Quebec politician .
+
+
+Treebanked sentence:
+--------------------
+Pierre Marsan ( born June 29 , 1948 in Montreal , Quebec ) is a Quebec politician . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Pierre) (NNP Marsan))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP June) (CD 29) (, ,) (CD 1948))
+        (PP (IN in)
+          (NP (NNP Montreal) (, ,) (NNP Quebec))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (NNP Quebec) (NN politician)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Pierre
+			coref:	IDENT			0	0-1	Pierre Marsan 
+			name:	PERSON				0-1	Pierre Marsan 
+	1	Marsan
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Pierre Marsan 
+			N-ARGM-TMP		4-7	June 29 , 1948 
+			N-ARGM-LOC		8-11	in Montreal , Quebec 
+	4	June
+			name:	DATE				4-7	June 29 , 1948 
+	5	29
+	6	,
+	7	1948
+	8	in
+	9	Montreal
+			name:	CITY				9-9	Montreal 
+	10	,
+	11	Quebec
+			coref:	IDENT			2	11-11	Quebec 
+			name:	STATE_OR_PROVINCE				11-11	Quebec 
+	12	)
+	13	is
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	is 
+			N-ARG-A1		0-12	Pierre Marsan ( born June 29 , 1948 in Montreal , Quebec ) 
+			N-ARG-A2		14-16	a Quebec politician 
+	14	a
+	15	Quebec
+			coref:	IDENT			2	15-15	Quebec 
+			name:	STATE_OR_PROVINCE				15-15	Quebec 
+	16	politician
+			name:	TITLE				16-16	politician 
+			sense:	politician.n.02
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was the member of National Assembly of Quebec for the riding of Robert - Baldwin for the Quebec Liberal Party .
+
+
+Treebanked sentence:
+--------------------
+He was the member of National Assembly of Quebec for the riding of Robert - Baldwin for the Quebec Liberal Party . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (NNP National) (NNP Assembly))
+            (PP (IN of)
+              (NP
+                (NP (NNP Quebec))
+                (PP (IN for)
+                  (NP
+                    (NP (DT the) (NN riding))
+                    (PP (IN of)
+                      (NP
+                        (NP (NNP Robert) (HYPH -) (NNP Baldwin))
+                        (PP (IN for)
+                          (NP (DT the) (NNP Quebec) (NNP Liberal) (NNP Party)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-20	the member of National Assembly of Quebec for the riding of Robert - Baldwin for the Quebec Liberal Party 
+	2	the
+	3	member
+			sense:	member.n.01
+	4	of
+	5	National
+			name:	ORGANIZATION				5-8	National Assembly of Quebec 
+	6	Assembly
+	7	of
+	8	Quebec
+	9	for
+	10	the
+	11	riding
+			sense:	riding.n.02
+	12	of
+	13	Robert
+			coref:	IDENT			1	13-15	Robert - Baldwin 
+			name:	PERSON				13-15	Robert - Baldwin 
+	14	-
+	15	Baldwin
+	16	for
+	17	the
+	18	Quebec
+			name:	ORGANIZATION				18-20	Quebec Liberal Party 
+	19	Liberal
+	20	Party
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Marsan went to the Université du Québec à Montréal and obtained a bachelor 's degree in business administration and would add a master 's degree in health administration at Université de Montréal .
+
+
+Treebanked sentence:
+--------------------
+Marsan went to the Université du Québec à Montréal and obtained a bachelor 's degree in business administration and would add a master 's degree in health administration at Université de Montréal . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Marsan))
+    (VP
+      (VP (VBD went)
+        (PP (IN to)
+          (NP (DT the)
+            (NML (NNP Université) (NNP du))
+            (NNP Québec) (NNP à) (NNP Montréal))))
+      (CC and)
+      (VP (VBD obtained)
+        (NP
+          (NP (DT a) (NN bachelor) (POS 's))
+          (NN degree))
+        (PP (IN in)
+          (NP (NN business) (NN administration))))
+      (CC and)
+      (VP (MD would)
+        (VP (VB add)
+          (NP
+            (NP (DT a) (NN master) (POS 's))
+            (NN degree))
+          (PP (IN in)
+            (NP (NN health) (NN administration)))
+          (PP (IN at)
+            (NP (NNP Université) (NNP de) (NNP Montréal))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Marsan
+			coref:	IDENT			0	0-0	Marsan 
+			name:	PERSON				0-0	Marsan 
+	1	went
+			sense:	travel.v.01
+			prop:	go.02
+			V		1-1	went 
+			N-ARG-A0		0-0	Marsan 
+			N-ARG-A4		2-8	to the Université du Québec à Montréal 
+	2	to
+	3	the
+	4	Université
+	5	du
+	6	Québec
+	7	à
+	8	Montréal
+			name:	ORGANIZATION				8-8	Montréal 
+	9	and
+	10	obtained
+			sense:	obtain.v.01
+			prop:	obtain.01
+			V		10-10	obtained 
+			N-ARG-A0		0-0	Marsan 
+			N-ARG-A1		11-17	a bachelor 's degree in business administration 
+	11	a
+	12	bachelor
+			name:	TITLE				12-12	bachelor 
+			sense:	bachelor.n.01
+	13	's
+	14	degree
+			sense:	academic_degree.n.01
+	15	in
+	16	business
+			sense:	commercial_enterprise.n.02
+	17	administration
+			sense:	administration.n.01
+	18	and
+	19	would
+	20	add
+			sense:	add.v.01
+			prop:	add.02
+			V		20-20	add 
+			N-ARG-A0		0-0	Marsan 
+			N-ARGM-MOD		19-19	would 
+			N-ARG-A1		21-27	a master 's degree in health administration 
+			N-ARGM-LOC		28-31	at Université de Montréal 
+	21	a
+	22	master
+			sense:	master.n.08
+	23	's
+	24	degree
+			sense:	academic_degree.n.01
+	25	in
+	26	health
+			sense:	health.n.01
+	27	administration
+			sense:	administration.n.01
+	28	at
+	29	Université
+			name:	ORGANIZATION				29-31	Université de Montréal 
+	30	de
+	31	Montréal
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was a guest teacher in the faculty of administration at the Université de Montréal and was a director in hospital services at the Hotel - Dieu 's Saint - Jérôme Hospital .
+
+
+Treebanked sentence:
+--------------------
+He was a guest teacher in the faculty of administration at the Université de Montréal and was a director in hospital services at the Hotel - Dieu 's Saint - Jérôme Hospital . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (NP
+          (NP (DT a) (NN guest) (NN teacher))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN faculty))
+              (PP (IN of)
+                (NP (NN administration))))))
+        (PP (IN at)
+          (NP (DT the) (NNP Université) (NNP de) (NNP Montréal))))
+      (CC and)
+      (VP (VBD was)
+        (NP
+          (NP (DT a) (NN director))
+          (PP (IN in)
+            (NP (NN hospital) (NNS services))))
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP Hotel) (HYPH -) (NNP Dieu) (POS 's))
+            (NML (NNP Saint) (HYPH -) (NNP Jérôme))
+            (NNP Hospital)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-14	a guest teacher in the faculty of administration at the Université de Montréal 
+	2	a
+	3	guest
+			sense:	guest.n.01
+	4	teacher
+			name:	TITLE				4-4	teacher 
+			sense:	teacher.n.01
+	5	in
+	6	the
+	7	faculty
+			sense:	staff.n.03
+	8	of
+	9	administration
+			sense:	administration.n.01
+	10	at
+	11	the
+	12	Université
+			name:	ORGANIZATION				12-14	Université de Montréal 
+	13	de
+	14	Montréal
+	15	and
+	16	was
+			sense:	be.v.08
+			prop:	be.01
+			V		16-16	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		17-31	a director in hospital services at the Hotel - Dieu 's Saint - Jérôme Hospital 
+	17	a
+	18	director
+			name:	TITLE				18-18	director 
+			sense:	director.n.01
+	19	in
+	20	hospital
+			sense:	hospital.n.01
+	21	services
+			sense:	service.n.01
+	22	at
+	23	the
+	24	Hotel
+			name:	ORGANIZATION				24-26	Hotel - Dieu 
+	25	-
+	26	Dieu
+	27	's
+	28	Saint
+			name:	TITLE				28-28	Saint 
+	29	-
+	30	Jérôme
+			name:	LOCATION				30-31	Jérôme Hospital 
+	31	Hospital
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was the general manager at the Montreal Heart Institute and the Hôpital du Sacré - Coeur .
+
+
+Treebanked sentence:
+--------------------
+He was the general manager at the Montreal Heart Institute and the Hôpital du Sacré - Coeur . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (JJ general) (NN manager))
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP Montreal) (NNP Heart) (NNP Institute))
+            (CC and)
+            (NP (DT the) (NNP Hôpital) (NNP du) (NNP Sacré) (HYPH -) (NNP Coeur))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-16	the general manager at the Montreal Heart Institute and the Hôpital du Sacré - Coeur 
+	2	the
+	3	general
+			name:	TITLE				3-4	general manager 
+			sense:	general.a.01
+	4	manager
+			sense:	director.n.01
+	5	at
+	6	the
+	7	Montreal
+			name:	ORGANIZATION				7-9	Montreal Heart Institute 
+	8	Heart
+	9	Institute
+	10	and
+	11	the
+	12	Hôpital
+			name:	MISC				12-14	Hôpital du Sacré 
+	13	du
+	14	Sacré
+	15	-
+	16	Coeur
+			name:	ORGANIZATION				16-16	Coeur 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was an assistant director at Santa Cabrini Hospital .
+
+
+Treebanked sentence:
+--------------------
+He was an assistant director at Santa Cabrini Hospital . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (JJ assistant) (NN director))
+        (PP (IN at)
+          (NP (NNP Santa) (NNP Cabrini) (NNP Hospital)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-8	an assistant director at Santa Cabrini Hospital 
+	2	an
+	3	assistant
+			name:	TITLE				3-4	assistant director 
+			sense:	adjunct.s.02
+	4	director
+			sense:	director.n.01
+	5	at
+	6	Santa
+			name:	CITY				6-6	Santa 
+	7	Cabrini
+			name:	LOCATION				7-8	Cabrini Hospital 
+	8	Hospital
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was also a board member for several institutions including the Montreal Heart Institute , the Epic Foundation , the Hôpital du Sacré Coeur Foundation and the president of the Association of Canadian Teaching Hospitals .
+
+
+Treebanked sentence:
+--------------------
+He was also a board member for several institutions including the Montreal Heart Institute , the Epic Foundation , the Hôpital du Sacré Coeur Foundation and the president of the Association of Canadian Teaching Hospitals . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (ADVP (RB also))
+      (NP
+        (NP (DT a) (NN board) (NN member))
+        (PP (IN for)
+          (NP
+            (NP (JJ several) (NNS institutions))
+            (PP (VBG including)
+              (NP
+                (NP (DT the) (NNP Montreal) (NNP Heart) (NNP Institute))
+                (, ,)
+                (NP (DT the) (NNP Epic) (NNP Foundation))
+                (, ,)
+                (NP (DT the) (NNP Hôpital) (NNP du) (NNP Sacré) (NNP Coeur) (NNP Foundation))
+                (CC and)
+                (NP
+                  (NP (DT the) (NN president))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT the) (NNP Association))
+                      (PP (IN of)
+                        (NP
+                          (NML (NNP Canadian) (NNP Teaching))
+                          (NNPS Hospitals))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARGM-ADV		2-2	also 
+			N-ARG-A2		3-34	a board member for several institutions including the Montreal Heart Institute , the Epic Foundation , the Hôpital du Sacré Coeur Foundation and the president of the Association of Canadian Teaching Hospitals 
+	2	also
+			sense:	besides.r.02
+	3	a
+	4	board
+			sense:	board.n.01
+	5	member
+			sense:	member.n.01
+	6	for
+	7	several
+			sense:	several.s.01
+	8	institutions
+			sense:	institution.n.01
+	9	including
+			sense:	include.v.01
+			prop:	include.01
+			V		9-9	including 
+			N-ARG-A2		7-8	several institutions 
+			N-ARG-A1		10-34	the Montreal Heart Institute , the Epic Foundation , the Hôpital du Sacré Coeur Foundation and the president of the Association of Canadian Teaching Hospitals 
+	10	the
+	11	Montreal
+			name:	ORGANIZATION				11-13	Montreal Heart Institute 
+	12	Heart
+	13	Institute
+	14	,
+	15	the
+	16	Epic
+			name:	ORGANIZATION				16-17	Epic Foundation 
+	17	Foundation
+	18	,
+	19	the
+	20	Hôpital
+			name:	ORGANIZATION				20-24	Hôpital du Sacré Coeur Foundation 
+	21	du
+	22	Sacré
+	23	Coeur
+	24	Foundation
+	25	and
+	26	the
+	27	president
+			name:	TITLE				27-27	president 
+			sense:	president.n.04
+	28	of
+	29	the
+	30	Association
+			name:	ORGANIZATION				30-34	Association of Canadian Teaching Hospitals 
+	31	of
+	32	Canadian
+	33	Teaching
+	34	Hospitals
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Marsan was first elected in Robert - Baldwin in 1994 and was in charged for the electoral campaign program Pour un Quebec en Santé in 1998 .
+
+
+Treebanked sentence:
+--------------------
+Marsan was first elected in Robert - Baldwin in 1994 and was in charged for the electoral campaign program Pour un Quebec en Santé in 1998 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Marsan))
+    (VP
+      (VP (VBD was)
+        (ADVP (JJ first))
+        (VP (VBN elected)
+          (PP (IN in)
+            (NP
+              (NP (NNP Robert) (HYPH -) (NNP Baldwin))
+              (PP (IN in)
+                (NP (CD 1994)))))))
+      (CC and)
+      (VP (VBD was)
+        (ADVP (IN in))
+        (VP (VBN charged)
+          (PP (IN for)
+            (NP (DT the) (JJ electoral) (NN campaign) (NN program)))))
+      (VP (VB Pour)
+        (NP
+          (NP (NNP un) (NNP Quebec) (FW en) (NNP Santé))
+          (PP (IN in)
+            (NP (CD 1998))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Marsan
+			coref:	IDENT			0	0-0	Marsan 
+			name:	PERSON				0-0	Marsan 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	first
+			name:	ORDINAL				2-2	first 
+			sense:	first.a.01
+	3	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		3-3	elected 
+			N-ARG-A1		0-0	Marsan 
+			N-ARGM-TMP		2-2	first 
+			N-ARGM-LOC		4-7	in Robert - Baldwin 
+			N-ARGM-TMP		8-9	in 1994 
+	4	in
+	5	Robert
+			coref:	IDENT			1	5-7	Robert - Baldwin 
+			name:	PERSON				5-7	Robert - Baldwin 
+	6	-
+	7	Baldwin
+	8	in
+	9	1994
+			name:	DATE				9-9	1994 
+	10	and
+	11	was
+			sense:	be.v.01
+			prop:	be.03
+			V		11-11	was 
+			N-ARGM-TMP		24-25	in 1998 
+	12	in
+	13	charged
+			sense:	appoint.v.02
+			prop:	charge.05
+			V		13-13	charged 
+			N-ARG-A1		0-0	Marsan 
+			N-ARG-A2		14-23	for the electoral campaign program Pour un Quebec en Santé 
+			N-ARGM-TMP		24-25	in 1998 
+	14	for
+	15	the
+	16	electoral
+			sense:	electoral.a.01
+	17	campaign
+			sense:	political_campaign.n.01
+	18	program
+			sense:	platform.n.02
+	19	Pour
+			sense:	pour.v.05
+			prop:	pour.01
+			V		19-19	Pour 
+			N-ARG-A1		20-23	un Quebec en Santé 
+	20	un
+	21	Quebec
+			name:	STATE_OR_PROVINCE				21-21	Quebec 
+	22	en
+	23	Santé
+	24	in
+	25	1998
+			name:	DATE				25-25	1998 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was re - elected for a third term in 2003 and was the parliamentary secretary to the Minister of Health and Social Services and then the Secretary to Jean Charest .
+
+
+Treebanked sentence:
+--------------------
+He was re - elected for a third term in 2003 and was the parliamentary secretary to the Minister of Health and Social Services and then the Secretary to Jean Charest . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (UCP
+        (SBAR (IN re) (HYPH -)
+          (FRAG
+            (VP (VBN elected)
+              (PP (IN for)
+                (NP
+                  (NP (DT a) (JJ third) (NN term))
+                  (PP (IN in)
+                    (NP (CD 2003))))))))
+        (CC and)
+        (S
+          (VP (VBD was)
+            (NP
+              (NP (DT the) (JJ parliamentary) (NN secretary))
+              (PP (IN to)
+                (NP
+                  (NP
+                    (NP (DT the) (NNP Minister))
+                    (PP (IN of)
+                      (NP
+                        (NML (NNP Health)
+                          (CC and)
+                          (NNP Social))
+                        (NNPS Services))))
+                  (CC and)
+                  (NP
+                    (NP
+                      (ADVP (RB then))
+                      (DT the) (NNP Secretary))
+                    (TO to)
+                    (NP (NNP Jean) (NNP Charest))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	re
+	3	-
+	4	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		4-4	elected 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		9-10	in 2003 
+	5	for
+	6	a
+	7	third
+			name:	ORDINAL				7-7	third 
+			sense:	third.s.01
+	8	term
+			sense:	term.n.02
+	9	in
+	10	2003
+			name:	DATE				10-10	2003 
+	11	and
+	12	was
+			sense:	be.v.08
+			prop:	be.01
+			V		12-12	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		13-30	the parliamentary secretary to the Minister of Health and Social Services and then the Secretary to Jean Charest 
+	13	the
+	14	parliamentary
+			sense:	parliamentary.a.01
+	15	secretary
+			name:	TITLE				15-15	secretary 
+			sense:	secretary.n.02
+	16	to
+	17	the
+	18	Minister
+			name:	ORGANIZATION				18-23	Minister of Health and Social Services 
+	19	of
+	20	Health
+	21	and
+	22	Social
+	23	Services
+	24	and
+	25	then
+			sense:	then.r.01
+	26	the
+	27	Secretary
+			name:	TITLE				27-27	Secretary 
+	28	to
+	29	Jean
+			name:	PERSON				29-30	Jean Charest 
+	30	Charest
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was re - elected for a fourth term in 2007 and named the Parliamentary Secretary to the Minister of Immigration and Cultural Communities .
+
+
+Treebanked sentence:
+--------------------
+He was re - elected for a fourth term in 2007 and named the Parliamentary Secretary to the Minister of Immigration and Cultural Communities . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (UCP
+        (SBAR (IN re) (HYPH -)
+          (FRAG
+            (VP (VBN elected)
+              (PP (IN for)
+                (NP
+                  (NP (DT a) (JJ fourth) (NN term))
+                  (PP (IN in)
+                    (NP (CD 2007))))))))
+        (CC and)
+        (S
+          (VP (VBN named)
+            (NP (DT the) (JJ Parliamentary) (NNP Secretary))
+            (PP (IN to)
+              (NP
+                (NP (DT the) (NNP Minister))
+                (PP (IN of)
+                  (NP
+                    (NML (NNP Immigration)
+                      (CC and)
+                      (NNP Cultural))
+                    (NNPS Communities)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	re
+	3	-
+	4	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		4-4	elected 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		9-10	in 2007 
+	5	for
+	6	a
+	7	fourth
+			name:	ORDINAL				7-7	fourth 
+			sense:	fourth.s.01
+	8	term
+			sense:	term.n.02
+	9	in
+	10	2007
+			name:	DATE				10-10	2007 
+	11	and
+	12	named
+			sense:	name.v.03
+			prop:	name.01
+			V		12-12	named 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		13-23	the Parliamentary Secretary to the Minister of Immigration and Cultural Communities 
+	13	the
+	14	Parliamentary
+			sense:	parliamentary.a.01
+	15	Secretary
+			name:	TITLE				15-15	Secretary 
+	16	to
+	17	the
+	18	Minister
+			name:	TITLE				18-18	Minister 
+	19	of
+	20	Immigration
+	21	and
+	22	Cultural
+	23	Communities
+	24	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Pierre Marsan 
+				1.0-0	He 
+				2.0-0	Marsan 
+				3.0-0	He 
+				4.0-0	He 
+				5.0-0	He 
+				6.0-0	He 
+				7.0-0	Marsan 
+				8.0-0	He 
+				9.0-0	He 
+	Chain 1 (IDENT)
+				1.13-15	Robert - Baldwin 
+				7.5-7	Robert - Baldwin 
+	Chain 2 (IDENT)
+				0.11-11	Quebec 
+				0.15-15	Quebec 
+

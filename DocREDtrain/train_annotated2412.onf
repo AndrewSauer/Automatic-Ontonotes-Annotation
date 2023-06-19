@@ -1,0 +1,504 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Claude Pascal ( Paris , February 19 , 1921 – Paris , February 28 , 2017 ) was a French composer .
+
+
+Treebanked sentence:
+--------------------
+Claude Pascal ( Paris , February 19 , 1921 – Paris , February 28 , 2017 ) was a French composer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Claude) (NNP Pascal))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP Paris) (, ,) (NNP February) (CD 19) (, ,) (CD 1921))
+        (PP (SYM –)
+          (NP
+            (NP (NNP Paris))
+            (, ,)
+            (NP-TMP (NNP February) (CD 28) (, ,) (CD 2017)))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT a) (JJ French) (NN composer)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Claude
+			coref:	IDENT			0	0-1	Claude Pascal 
+			name:	PERSON				0-1	Claude Pascal 
+	1	Pascal
+	2	(
+	3	Paris
+			name:	CITY				3-3	Paris 
+	4	,
+	5	February
+			name:	DATE				5-8	February 19 , 1921 
+	6	19
+	7	,
+	8	1921
+	9	–
+	10	Paris
+			name:	CITY				10-10	Paris 
+	11	,
+	12	February
+			name:	DATE				12-15	February 28 , 2017 
+	13	28
+	14	,
+	15	2017
+	16	)
+	17	was
+			sense:	be.v.02
+			prop:	be.01
+			V		17-17	was 
+			N-ARG-A1		0-16	Claude Pascal ( Paris , February 19 , 1921 – Paris , February 28 , 2017 ) 
+			N-ARG-A2		18-20	a French composer 
+	18	a
+	19	French
+			name:	NATIONALITY				19-19	French 
+	20	composer
+			name:	TITLE				20-20	composer 
+			sense:	composer.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After studying at the Conservatoire de Paris , he obtained the 1945 Premier Prix de Rome for the cantata , La farce du contre Bandier .
+
+
+Treebanked sentence:
+--------------------
+After studying at the Conservatoire de Paris , he obtained the 1945 Premier Prix de Rome for the cantata , La farce du contre Bandier . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG studying)
+          (PP (IN at)
+            (NP (DT the) (NNP Conservatoire) (NNP de) (NNP Paris))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD obtained)
+      (NP (DT the) (CD 1945) (NNP Premier)
+        (NML (NNP Prix) (NNP de))
+        (NNP Rome))
+      (PP (IN for)
+        (NP
+          (NP (DT the) (NN cantata))
+          (, ,)
+          (NP
+            (NP (NNP La) (NN farce))
+            (NP (NNP du) (NNP contre) (NNP Bandier))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	studying
+			sense:	study.v.02
+			prop:	study.01
+			V		1-1	studying 
+			N-ARGM-LOC		2-6	at the Conservatoire de Paris 
+			N-ARG-A0		8-8	he 
+	2	at
+	3	the
+	4	Conservatoire
+	5	de
+	6	Paris
+			name:	CITY				6-6	Paris 
+	7	,
+	8	he
+			coref:	IDENT			0	8-8	he 
+	9	obtained
+			sense:	obtain.v.01
+			prop:	obtain.01
+			V		9-9	obtained 
+			N-ARGM-TMP		0-6	After studying at the Conservatoire de Paris 
+			N-ARG-A0		8-8	he 
+			N-ARG-A1		10-15	the 1945 Premier Prix de Rome 
+	10	the
+	11	1945
+			name:	DATE				11-11	1945 
+	12	Premier
+			name:	TITLE				12-12	Premier 
+	13	Prix
+	14	de
+	15	Rome
+			name:	CITY				15-15	Rome 
+	16	for
+	17	the
+	18	cantata
+			sense:	cantata.n.01
+	19	,
+	20	La
+			name:	STATE_OR_PROVINCE				20-20	La 
+	21	farce
+			sense:	farce.n.01
+	22	du
+	23	contre
+	24	Bandier
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After a brief period as conductor of the Opéra - Comique , Pascal became professor at the Paris Conservatoire in 1952 , a position he held until his retirement in 1987 .
+
+
+Treebanked sentence:
+--------------------
+After a brief period as conductor of the Opéra - Comique , Pascal became professor at the Paris Conservatoire in 1952 , a position he held until his retirement in 1987 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP
+        (NP (DT a) (JJ brief) (NN period))
+        (PP (IN as)
+          (NP
+            (NP (NN conductor))
+            (PP (IN of)
+              (NP (DT the) (NNP Opéra) (HYPH -) (NNP Comique)))))))
+    (, ,)
+    (NP (NNP Pascal))
+    (VP (VBD became)
+      (NP (NN professor))
+      (PP (IN at)
+        (NP (DT the) (NNP Paris) (NNP Conservatoire)))
+      (PP (IN in)
+        (NP
+          (NP (CD 1952))
+          (, ,)
+          (NP
+            (NP (DT a) (NN position))
+            (SBAR
+              (S
+                (NP (PRP he))
+                (VP (VBD held)
+                  (PP (IN until)
+                    (NP (PRP$ his) (NN retirement)))
+                  (PP (IN in)
+                    (NP (CD 1987))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	a
+	2	brief
+			sense:	brief.s.01
+	3	period
+			sense:	time_period.n.01
+	4	as
+	5	conductor
+			name:	TITLE				5-5	conductor 
+			sense:	conductor.n.01
+	6	of
+	7	the
+	8	Opéra
+	9	-
+	10	Comique
+	11	,
+	12	Pascal
+			coref:	IDENT			0	12-12	Pascal 
+			name:	PERSON				12-12	Pascal 
+	13	became
+			sense:	become.v.02
+			prop:	become.01
+			V		13-13	became 
+			N-ARGM-TMP		0-10	After a brief period as conductor of the Opéra - Comique 
+			N-ARG-A1		12-12	Pascal 
+			N-ARG-A2		14-18	professor at the Paris Conservatoire 
+			N-ARGM-TMP		19-20	in 1952 
+	14	professor
+			name:	TITLE				14-14	professor 
+			sense:	professor.n.01
+	15	at
+	16	the
+	17	Paris
+			name:	CITY				17-17	Paris 
+	18	Conservatoire
+	19	in
+	20	1952
+			name:	DATE				20-20	1952 
+	21	,
+	22	a
+	23	position
+			sense:	position.n.06
+	24	he
+			coref:	IDENT			0	24-24	he 
+	25	held
+			sense:	bear.v.11
+			prop:	hold.01
+			V		25-25	held 
+			N-ARG-A1		22-23	a position 
+			N-ARG-A0		24-24	he 
+			N-ARGM-TMP		26-30	until his retirement in 1987 
+	26	until
+	27	his
+			coref:	IDENT			0	27-27	his 
+	28	retirement
+			sense:	retirement.n.01
+	29	in
+	30	1987
+			name:	DATE				30-30	1987 
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+From 1969 to 1979 he worked as a music critic for Le Figaro , and from 1983 to 1991 he was an expert on copyright issues at the Paris Court of Appeals .
+
+
+Treebanked sentence:
+--------------------
+From 1969 to 1979 he worked as a music critic for Le Figaro , and from 1983 to 1991 he was an expert on copyright issues at the Paris Court of Appeals . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN From)
+        (NP
+          (NP (CD 1969))
+          (PP (IN to)
+            (NP (CD 1979)))))
+      (NP (PRP he))
+      (VP (VBD worked)
+        (PP (IN as)
+          (NP (DT a) (NN music) (NN critic)))
+        (PP (IN for)
+          (NP (NNP Le) (NNP Figaro)))))
+    (, ,)
+    (CC and)
+    (S
+      (PP
+        (PP (IN from)
+          (NP (CD 1983)))
+        (PP (IN to)
+          (NP (CD 1991))))
+      (NP (PRP he))
+      (VP (VBD was)
+        (NP
+          (NP (DT an) (NN expert))
+          (PP (IN on)
+            (NP
+              (NP (NN copyright) (NNS issues))
+              (PP (IN at)
+                (NP
+                  (NP (DT the) (NNP Paris) (NNP Court))
+                  (PP (IN of)
+                    (NP (NNPS Appeals))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	From
+	1	1969
+			name:	DATE				1-1	1969 
+	2	to
+	3	1979
+			name:	DATE				3-3	1979 
+	4	he
+			coref:	IDENT			0	4-4	he 
+	5	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		5-5	worked 
+			N-ARGM-TMP		0-3	From 1969 to 1979 
+			N-ARG-A0		4-4	he 
+			N-ARG-A1		6-12	as a music critic for Le Figaro 
+	6	as
+	7	a
+	8	music
+			sense:	music.n.01
+	9	critic
+			name:	TITLE				9-9	critic 
+			sense:	critic.n.01
+	10	for
+	11	Le
+			name:	PERSON				11-12	Le Figaro 
+	12	Figaro
+	13	,
+	14	and
+	15	from
+	16	1983
+			name:	DATE				16-18	1983 to 1991 
+	17	to
+	18	1991
+	19	he
+			coref:	IDENT			0	19-19	he 
+	20	was
+			sense:	be.v.08
+			prop:	be.01
+			V		20-20	was 
+			N-ARGM-TMP		15-18	from 1983 to 1991 
+			N-ARG-A1		19-19	he 
+			N-ARG-A2		21-31	an expert on copyright issues at the Paris Court of Appeals 
+	21	an
+	22	expert
+			sense:	expert.n.01
+	23	on
+	24	copyright
+			sense:	copyright.n.01
+	25	issues
+			sense:	issue.n.01
+	26	at
+	27	the
+	28	Paris
+			name:	ORGANIZATION				28-31	Paris Court of Appeals 
+	29	Court
+	30	of
+	31	Appeals
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Pascal 's extensive work as a composer includes practically every musical genre .
+
+
+Treebanked sentence:
+--------------------
+Pascal 's extensive work as a composer includes practically every musical genre . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Pascal) (POS 's))
+        (JJ extensive) (NN work))
+      (PP (IN as)
+        (NP (DT a) (NN composer))))
+    (VP (VBZ includes)
+      (NP (RB practically) (DT every) (JJ musical) (NN genre)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Pascal
+			coref:	IDENT			0	0-1	Pascal 's 
+			name:	PERSON				0-0	Pascal 
+	1	's
+	2	extensive
+			sense:	across-the-board.s.01
+	3	work
+			sense:	work.n.02
+	4	as
+	5	a
+	6	composer
+			name:	TITLE				6-6	composer 
+			sense:	composer.n.01
+	7	includes
+			sense:	include.v.01
+			prop:	include.01
+			V		7-7	includes 
+			N-ARG-A2		0-6	Pascal 's extensive work as a composer 
+			N-ARG-A1		8-11	practically every musical genre 
+	8	practically
+			sense:	practically.r.01
+	9	every
+	10	musical
+			sense:	musical.a.01
+	11	genre
+			sense:	music_genre.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The discography of his works consists of more than thirty CDs .
+
+
+Treebanked sentence:
+--------------------
+The discography of his works consists of more than thirty CDs . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN discography))
+      (PP (IN of)
+        (NP (PRP$ his) (NNS works))))
+    (VP (VBZ consists)
+      (PP (IN of)
+        (NP
+          (QP (JJR more) (IN than) (CD thirty))
+          (NNS CDs))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	discography
+			sense:	discography.n.01
+	2	of
+	3	his
+			coref:	IDENT			0	3-3	his 
+	4	works
+			sense:	work.n.02
+	5	consists
+			sense:	consist.v.04
+			prop:	consist.01
+			V		5-5	consists 
+			N-ARG-A1		0-4	The discography of his works 
+			N-ARG-A2		6-10	of more than thirty CDs 
+	6	of
+	7	more
+			sense:	more.a.02
+	8	than
+	9	thirty
+			name:	NUMBER				9-9	thirty 
+	10	CDs
+			sense:	compact_disk.n.01
+	11	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Claude Pascal 
+				1.8-8	he 
+				2.12-12	Pascal 
+				2.24-24	he 
+				2.27-27	his 
+				3.4-4	he 
+				3.19-19	he 
+				4.0-1	Pascal 's 
+				5.3-3	his 
+

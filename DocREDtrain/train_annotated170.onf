@@ -1,0 +1,511 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+John Gregory Myre is an American journalist and NPR 's digital editor for international news .
+
+
+Treebanked sentence:
+--------------------
+John Gregory Myre is an American journalist and NPR 's digital editor for international news . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP John) (NNP Gregory) (NNP Myre))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ American) (NN journalist))
+        (CC and)
+        (NP
+          (NP
+            (NP (NNP NPR) (POS 's))
+            (JJ digital) (NN editor))
+          (PP (IN for)
+            (NP (JJ international) (NN news))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	John
+			coref:	IDENT			0	0-2	John Gregory Myre 
+			name:	PERSON				0-2	John Gregory Myre 
+	1	Gregory
+	2	Myre
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	John Gregory Myre 
+			N-ARG-A2		4-14	an American journalist and NPR 's digital editor for international news 
+	4	an
+	5	American
+			name:	NATIONALITY				5-5	American 
+	6	journalist
+			name:	TITLE				6-6	journalist 
+			sense:	journalist.n.01
+	7	and
+	8	NPR
+			name:	ORGANIZATION				8-8	NPR 
+	9	's
+	10	digital
+			sense:	digital.a.03
+	11	editor
+			name:	TITLE				11-11	editor 
+			sense:	editor.n.01
+	12	for
+	13	international
+			sense:	international.a.01
+	14	news
+			sense:	news_program.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Previously , he was a foreign correspondent for The Associated Press and The New York Times for 20 years .
+
+
+Treebanked sentence:
+--------------------
+Previously , he was a foreign correspondent for The Associated Press and The New York Times for 20 years . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Previously))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP
+          (NP (DT a) (JJ foreign) (NN correspondent))
+          (PP (IN for)
+            (NP (DT The) (NNP Associated) (NNP Press))))
+        (CC and)
+        (NP
+          (NP (DT The)
+            (NML (NNP New) (NNP York))
+            (NNP Times))
+          (PP (IN for)
+            (NP (CD 20) (NNS years))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Previously
+			name:	DATE				0-0	Previously 
+			sense:	previously.r.01
+	1	,
+	2	he
+			coref:	IDENT			0	2-2	he 
+	3	was
+			sense:	be.v.08
+			prop:	be.01
+			V		3-3	was 
+			N-ARGM-TMP		0-0	Previously 
+			N-ARG-A1		2-2	he 
+			N-ARG-A2		4-15	a foreign correspondent for The Associated Press and The New York Times 
+			N-ARGM-TMP		16-18	for 20 years 
+	4	a
+	5	foreign
+			sense:	foreign.a.01
+	6	correspondent
+			name:	TITLE				6-6	correspondent 
+			sense:	correspondent.n.02
+	7	for
+	8	The
+	9	Associated
+			name:	ORGANIZATION				9-10	Associated Press 
+	10	Press
+	11	and
+	12	The
+	13	New
+			name:	ORGANIZATION				13-15	New York Times 
+	14	York
+	15	Times
+	16	for
+	17	20
+			name:	DURATION				17-18	20 years 
+	18	years
+			sense:	year.n.01
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He reported from Jerusalem from 2003 to 2007 for The New York Times .
+
+
+Treebanked sentence:
+--------------------
+He reported from Jerusalem from 2003 to 2007 for The New York Times . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD reported)
+      (PP (IN from)
+        (NP (NNP Jerusalem)))
+      (PP (IN from)
+        (NP (CD 2003)))
+      (PP (IN to)
+        (NP
+          (NP (CD 2007))
+          (PP (IN for)
+            (NP (DT The)
+              (NML (NNP New) (NNP York))
+              (NNP Times))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	reported
+			sense:	report.v.01
+			prop:	report.01
+			V		1-1	reported 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIR		2-3	from Jerusalem 
+			N-ARGM-TMP		4-7	from 2003 to 2007 
+			N-ARG-A2		8-12	for The New York Times 
+	2	from
+	3	Jerusalem
+			name:	CITY				3-3	Jerusalem 
+	4	from
+	5	2003
+			name:	DATE				5-7	2003 to 2007 
+	6	to
+	7	2007
+	8	for
+	9	The
+	10	New
+			name:	ORGANIZATION				10-12	New York Times 
+	11	York
+	12	Times
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+With the AP , Myre was based in Jerusalem , Moscow , Nicosia , Islamabad and Johannesburg .
+
+
+Treebanked sentence:
+--------------------
+With the AP , Myre was based in Jerusalem , Moscow , Nicosia , Islamabad and Johannesburg . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN With)
+      (NP (DT the) (NN AP)))
+    (, ,)
+    (NP (NNP Myre))
+    (VP (VBD was)
+      (VP (VBN based)
+        (PP (IN in)
+          (NP (NNP Jerusalem) (, ,) (NNP Moscow) (, ,) (NNP Nicosia) (, ,) (NNP Islamabad)
+            (CC and)
+            (NNP Johannesburg)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	With
+	1	the
+	2	AP
+			name:	ORGANIZATION				2-2	AP 
+	3	,
+	4	Myre
+			coref:	IDENT			0	4-4	Myre 
+			name:	PERSON				4-4	Myre 
+	5	was
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	was 
+	6	based
+			sense:	base.v.02
+			prop:	base.01
+			V		6-6	based 
+			N-ARGM-ADV		0-2	With the AP 
+			N-ARG-A1		4-4	Myre 
+			N-ARGM-LOC		7-16	in Jerusalem , Moscow , Nicosia , Islamabad and Johannesburg 
+	7	in
+	8	Jerusalem
+			name:	CITY				8-8	Jerusalem 
+	9	,
+	10	Moscow
+			name:	CITY				10-10	Moscow 
+	11	,
+	12	Nicosia
+			name:	CITY				12-12	Nicosia 
+	13	,
+	14	Islamabad
+			name:	CITY				14-14	Islamabad 
+	15	and
+	16	Johannesburg
+			name:	CITY				16-16	Johannesburg 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He covered many major international stories , including Nelson Mandela 's release from prison in 1990 , the Gulf War of 1991 , the rise of the Taliban , the early days of Vladimir Putin as Russia 's leader , the Israeli - Palestinian fighting that erupted in 2000 and the U.S. war in Afghanistan .
+
+
+Treebanked sentence:
+--------------------
+He covered many major international stories , including Nelson Mandela 's release from prison in 1990 , the Gulf War of 1991 , the rise of the Taliban , the early days of Vladimir Putin as Russia 's leader , the Israeli - Palestinian fighting that erupted in 2000 and the U.S. war in Afghanistan . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD covered)
+      (NP
+        (NP
+          (NP (JJ many) (JJ major) (JJ international) (NNS stories))
+          (, ,)
+          (PP (VBG including)
+            (NP
+              (NP
+                (NP (NNP Nelson) (NNP Mandela) (POS 's))
+                (NN release))
+              (PP (IN from)
+                (NP
+                  (NP (NN prison))
+                  (PP (IN in)
+                    (NP (CD 1990))))))))
+        (, ,)
+        (NP
+          (NP (DT the) (NNP Gulf) (NNP War))
+          (PP (IN of)
+            (NP (CD 1991))))
+        (, ,)
+        (NP
+          (NP (DT the) (NN rise))
+          (PP (IN of)
+            (NP (DT the) (NNP Taliban))))
+        (, ,)
+        (NP
+          (NP (DT the) (JJ early) (NNS days))
+          (PP (IN of)
+            (NP
+              (NP (NNP Vladimir) (NNP Putin))
+              (PP (IN as)
+                (NP
+                  (NP (NNP Russia) (POS 's))
+                  (NN leader))))))
+        (, ,)
+        (NP
+          (NP (DT the)
+            (ADJP (JJ Israeli) (HYPH -) (JJ Palestinian))
+            (NN fighting))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBD erupted)
+                (PP (IN in)
+                  (NP (CD 2000)))))))
+        (CC and)
+        (NP
+          (NP (DT the) (NNP U.S.) (NN war))
+          (PP (IN in)
+            (NP (NNP Afghanistan))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	covered
+			sense:	report.v.05
+			prop:	cover.03
+			V		1-1	covered 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-54	many major international stories , including Nelson Mandela 's release from prison in 1990 , the Gulf War of 1991 , the rise of the Taliban , the early days of Vladimir Putin as Russia 's leader , the Israeli - Palestinian fighting that erupted in 2000 and the U.S. war in Afghanistan 
+	2	many
+			sense:	many.a.01
+	3	major
+			sense:	major.a.01
+	4	international
+			sense:	international.a.01
+	5	stories
+			sense:	report.n.03
+	6	,
+	7	including
+			sense:	include.v.01
+			prop:	include.01
+			V		7-7	including 
+			N-ARG-A2		2-5	many major international stories 
+			N-ARG-A1		8-54	Nelson Mandela 's release from prison in 1990 , the Gulf War of 1991 , the rise of the Taliban , the early days of Vladimir Putin as Russia 's leader , the Israeli - Palestinian fighting that erupted in 2000 and the U.S. war in Afghanistan 
+	8	Nelson
+			name:	PERSON				8-9	Nelson Mandela 
+	9	Mandela
+	10	's
+	11	release
+			sense:	liberation.n.01
+	12	from
+	13	prison
+			sense:	prison.n.01
+	14	in
+	15	1990
+			name:	DATE				15-15	1990 
+	16	,
+	17	the
+	18	Gulf
+			name:	MISC				18-18	Gulf 
+	19	War
+			name:	CAUSE_OF_DEATH				19-19	War 
+	20	of
+	21	1991
+			name:	DATE				21-21	1991 
+	22	,
+	23	the
+	24	rise
+			sense:	rise.n.01
+	25	of
+	26	the
+	27	Taliban
+			name:	ORGANIZATION				27-27	Taliban 
+	28	,
+	29	the
+			name:	DURATION				29-31	the early days 
+	30	early
+			sense:	early.a.01
+	31	days
+			sense:	day.n.02
+	32	of
+	33	Vladimir
+			name:	PERSON				33-34	Vladimir Putin 
+	34	Putin
+	35	as
+	36	Russia
+			name:	COUNTRY				36-36	Russia 
+	37	's
+	38	leader
+			name:	TITLE				38-38	leader 
+			sense:	leader.n.01
+	39	,
+	40	the
+	41	Israeli
+			name:	NATIONALITY				41-41	Israeli 
+	42	-
+	43	Palestinian
+			name:	NATIONALITY				43-43	Palestinian 
+	44	fighting
+			sense:	fight.n.02
+	45	that
+	46	erupted
+			sense:	erupt.v.01
+			prop:	erupt.01
+			V		46-46	erupted 
+			N-ARG-A1		40-44	the Israeli - Palestinian fighting 
+			R-ARG-A1		45-45	that 
+			N-ARGM-TMP		47-48	in 2000 
+	47	in
+	48	2000
+			name:	DATE				48-48	2000 
+	49	and
+	50	the
+	51	U.S.
+			name:	COUNTRY				51-51	U.S. 
+	52	war
+			name:	CAUSE_OF_DEATH				52-52	war 
+			sense:	war.n.01
+	53	in
+	54	Afghanistan
+			name:	COUNTRY				54-54	Afghanistan 
+	55	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is also a scholar at the Middle East Institute in Washington .
+
+
+Treebanked sentence:
+--------------------
+He is also a scholar at the Middle East Institute in Washington . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (NP
+        (NP (DT a) (NN scholar))
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP Middle) (NNP East) (NNP Institute))
+            (PP (IN in)
+              (NP (NNP Washington)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARGM-ADV		2-2	also 
+			N-ARG-A2		3-11	a scholar at the Middle East Institute in Washington 
+	2	also
+			sense:	besides.r.02
+	3	a
+	4	scholar
+			name:	TITLE				4-4	scholar 
+			sense:	scholar.n.01
+	5	at
+	6	the
+	7	Middle
+			name:	ORGANIZATION				7-9	Middle East Institute 
+	8	East
+	9	Institute
+	10	in
+	11	Washington
+			name:	STATE_OR_PROVINCE				11-11	Washington 
+	12	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-2	John Gregory Myre 
+				1.2-2	he 
+				2.0-0	He 
+				3.4-4	Myre 
+				4.0-0	He 
+				5.0-0	He 
+

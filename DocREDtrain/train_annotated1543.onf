@@ -1,0 +1,626 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Samuel G. Freedman is an American author and journalist and currently a professor at the Columbia University Graduate School of Journalism .
+
+
+Treebanked sentence:
+--------------------
+Samuel G. Freedman is an American author and journalist and currently a professor at the Columbia University Graduate School of Journalism . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Samuel) (NNP G.) (NNP Freedman))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT an) (JJ American) (NN author))
+          (CC and)
+          (NP (NN journalist)))
+        (CC and)
+        (NP
+          (ADVP (RB currently))
+          (NP (DT a) (NN professor))
+          (PP (IN at)
+            (NP (DT the)
+              (NML (NNP Columbia) (NNP University))
+              (NNP Graduate) (NNP School)))
+          (PP (IN of)
+            (NP (NNP Journalism))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Samuel
+			name:	PERSON				0-2	Samuel G. Freedman 
+	1	G.
+	2	Freedman
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Samuel G. Freedman 
+			N-ARG-A2		4-20	an American author and journalist and currently a professor at the Columbia University Graduate School of Journalism 
+	4	an
+	5	American
+			name:	NATIONALITY				5-5	American 
+	6	author
+			name:	TITLE				6-6	author 
+			sense:	writer.n.01
+	7	and
+	8	journalist
+			name:	TITLE				8-8	journalist 
+			sense:	journalist.n.01
+	9	and
+	10	currently
+			name:	DATE				10-10	currently 
+			sense:	presently.r.02
+	11	a
+	12	professor
+			name:	TITLE				12-12	professor 
+			sense:	professor.n.01
+	13	at
+	14	the
+	15	Columbia
+			name:	ORGANIZATION				15-20	Columbia University Graduate School of Journalism 
+	16	University
+	17	Graduate
+	18	School
+	19	of
+	20	Journalism
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He has authored six nonfiction books , including Who She Was : A Son 's Search for His Mother 's Life , a book about his mother 's life as a teenager and young woman , and Letters to a Young Journalist .
+
+
+Treebanked sentence:
+--------------------
+He has authored six nonfiction books , including Who She Was : A Son 's Search for His Mother 's Life , a book about his mother 's life as a teenager and young woman , and Letters to a Young Journalist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ has)
+      (VP (VBN authored)
+        (NP
+          (NP
+            (NML (CD six) (NN nonfiction))
+            (NNS books))
+          (, ,)
+          (PP (VBG including)
+            (SBAR
+              (WHNP (WP Who))
+              (S
+                (NP (PRP She))
+                (VP (VBD Was) (: :)
+                  (NP
+                    (NP
+                      (NP
+                        (NP (DT A) (NNP Son) (POS 's))
+                        (NN Search))
+                      (PP (IN for)
+                        (NP
+                          (NP (PRP$ His) (NN Mother) (POS 's))
+                          (NN Life))))
+                    (, ,)
+                    (NP
+                      (NP (DT a) (NN book))
+                      (PP (IN about)
+                        (NP
+                          (NP
+                            (NP (PRP$ his) (NN mother) (POS 's))
+                            (NN life))
+                          (PP (IN as)
+                            (NP
+                              (NP (DT a) (NN teenager))
+                              (CC and)
+                              (NP (JJ young) (NN woman)))))))
+                    (, ,)
+                    (CC and)
+                    (NP
+                      (NP (NNPS Letters))
+                      (PP (IN to)
+                        (NP (DT a) (JJ Young) (NN Journalist))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	authored
+			sense:	author.v.01
+			prop:	author.01
+			V		2-2	authored 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		3-41	six nonfiction books , including Who She Was : A Son 's Search for His Mother 's Life , a book about his mother 's life as a teenager and young woman , and Letters to a Young Journalist 
+	3	six
+			name:	NUMBER				3-3	six 
+	4	nonfiction
+			sense:	nonfiction.n.01
+	5	books
+			sense:	book.n.01
+	6	,
+	7	including
+			sense:	include.v.01
+			prop:	include.01
+			V		7-7	including 
+			N-ARG-A2		3-5	six nonfiction books 
+			N-ARG-A1		8-41	Who She Was : A Son 's Search for His Mother 's Life , a book about his mother 's life as a teenager and young woman , and Letters to a Young Journalist 
+	8	Who
+	9	She
+	10	Was
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	Was 
+			N-ARG-A2		8-8	Who 
+			N-ARG-A1		9-9	She 
+	11	:
+	12	A
+	13	Son
+	14	's
+	15	Search
+			sense:	search.n.01
+	16	for
+	17	His
+			coref:	IDENT			0	17-19	His Mother 's 
+	18	Mother
+			sense:	mother.n.01
+	19	's
+	20	Life
+			sense:	biography.n.01
+	21	,
+	22	a
+	23	book
+			sense:	book.n.01
+	24	about
+	25	his
+			coref:	IDENT			0	25-27	his mother 's 
+	26	mother
+			sense:	mother.n.01
+	27	's
+	28	life
+			sense:	biography.n.01
+	29	as
+	30	a
+	31	teenager
+			sense:	adolescent.n.01
+	32	and
+	33	young
+			sense:	young.a.01
+	34	woman
+			sense:	woman.n.01
+	35	,
+	36	and
+	37	Letters
+	38	to
+	39	a
+	40	Young
+			sense:	young.a.01
+	41	Journalist
+			name:	TITLE				41-41	Journalist 
+			sense:	journalist.n.01
+	42	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Freedman has also won the National Jewish Book Award in 2000 in the Non - Fiction category for Jew vs. Jew : The Struggle for the Soul of American Jewry , and his book The Inheritance : How Three Families Moved from Roosevelt to Reagan and Beyond was a finalist for the 1997 Pulitzer Prize .
+
+
+Treebanked sentence:
+--------------------
+Freedman has also won the National Jewish Book Award in 2000 in the Non - Fiction category for Jew vs. Jew : The Struggle for the Soul of American Jewry , and his book The Inheritance : How Three Families Moved from Roosevelt to Reagan and Beyond was a finalist for the 1997 Pulitzer Prize . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Freedman))
+    (VP (VBZ has)
+      (ADVP (RB also))
+      (VP (VBN won)
+        (NP
+          (NP (DT the) (NNP National) (JJ Jewish) (NN Book) (NN Award))
+          (PP (IN in)
+            (NP (CD 2000))))
+        (PP (IN in)
+          (NP
+            (NP
+              (NP
+                (NP (DT the)
+                  (NML
+                    (NML (FW Non))
+                    (HYPH -) (NN Fiction))
+                  (NN category))
+                (PP (IN for)
+                  (NP (NNP Jew) (FW vs.) (NNP Jew))))
+              (: :)
+              (NP
+                (NP (DT The) (NN Struggle))
+                (PP (IN for)
+                  (NP
+                    (NP (DT the) (NN Soul))
+                    (PP (IN of)
+                      (NP (JJ American) (NNP Jewry)))))))
+            (, ,)
+            (CC and)
+            (NP
+              (NP (PRP$ his) (NN book))
+              (NP (DT The) (NN Inheritance)))))
+        (: :)
+        (SBAR
+          (WHADVP (WRB How))
+          (S
+            (NP
+              (NP (CD Three) (NNS Families))
+              (VP (VBN Moved)
+                (PP (IN from)
+                  (NP (NNP Roosevelt)))
+                (PP (IN to)
+                  (NP (NNP Reagan)
+                    (CC and)
+                    (NNP Beyond)))))
+            (VP (VBD was)
+              (NP
+                (NP (DT a) (NN finalist))
+                (PP (IN for)
+                  (NP (DT the) (CD 1997) (NNP Pulitzer) (NNP Prize)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Freedman
+			name:	PERSON				0-0	Freedman 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	also
+			sense:	besides.r.02
+	3	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		3-3	won 
+			N-ARG-A0		0-0	Freedman 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A1		4-8	the National Jewish Book Award 
+			N-ARGM-TMP		9-10	in 2000 
+			N-ARGM-LOC		11-16	in the Non - Fiction category 
+			N-ARG-A4		17-29	for Jew vs. Jew : The Struggle for the Soul of American Jewry 
+	4	the
+	5	National
+			name:	MISC				5-5	National 
+	6	Jewish
+			name:	RELIGION				6-6	Jewish 
+	7	Book
+			name:	MISC				7-8	Book Award 
+			sense:	book.n.01
+	8	Award
+			sense:	prize.n.01
+	9	in
+	10	2000
+			name:	DATE				10-10	2000 
+	11	in
+	12	the
+	13	Non
+	14	-
+	15	Fiction
+			sense:	fiction.n.01
+	16	category
+			sense:	class.n.01
+	17	for
+	18	Jew
+			name:	RELIGION				18-18	Jew 
+	19	vs.
+	20	Jew
+			name:	RELIGION				20-20	Jew 
+	21	:
+	22	The
+	23	Struggle
+			sense:	conflict.n.01
+	24	for
+	25	the
+	26	Soul
+			name:	MISC				26-27	Soul of 
+			sense:	soul.n.01
+	27	of
+	28	American
+			name:	NATIONALITY				28-28	American 
+	29	Jewry
+	30	,
+	31	and
+	32	his
+	33	book
+			sense:	book.n.01
+	34	The
+	35	Inheritance
+			sense:	inheritance.n.02
+	36	:
+	37	How
+	38	Three
+			name:	NUMBER				38-38	Three 
+	39	Families
+			sense:	family.n.04
+	40	Moved
+			sense:	move.v.04
+			prop:	move.01
+			V		40-40	Moved 
+			N-ARGM-MNR		37-37	How 
+			N-ARG-A1		38-39	Three Families 
+			N-ARGM-DIR		41-42	from Roosevelt 
+			N-ARG-A2		43-46	to Reagan and Beyond 
+	41	from
+	42	Roosevelt
+			name:	CITY				42-42	Roosevelt 
+	43	to
+	44	Reagan
+			name:	PERSON				44-44	Reagan 
+	45	and
+	46	Beyond
+	47	was
+			sense:	be.v.01
+			prop:	be.01
+			V		47-47	was 
+			N-ARG-A1		32-46	his book The Inheritance : How Three Families Moved from Roosevelt to Reagan and Beyond 
+			N-ARG-A2		48-54	a finalist for the 1997 Pulitzer Prize 
+	48	a
+	49	finalist
+			sense:	finalist.n.01
+	50	for
+	51	the
+	52	1997
+			name:	DATE				52-52	1997 
+	53	Pulitzer
+			name:	MISC				53-54	Pulitzer Prize 
+	54	Prize
+	55	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Additionally , he currently writes The New York Times column " On Religion " and formerly wrote The Jerusalem Post column " In the Diaspora . "
+
+
+Treebanked sentence:
+--------------------
+Additionally , he currently writes The New York Times column " On Religion " and formerly wrote The Jerusalem Post column " In the Diaspora . " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Additionally))
+    (, ,)
+    (NP (PRP he))
+    (ADVP (RB currently))
+    (VP
+      (VP (VBZ writes)
+        (NP (DT The)
+          (NML (NNP New) (NNP York) (NNP Times))
+          (NN column) ('' "))
+        (PP (IN On)
+          (NP (NNP Religion))))
+      ('' ")
+      (CC and)
+      (ADVP (RB formerly))
+      (VP (VBD wrote)
+        (S
+          (NP (DT The) (NNP Jerusalem) (NNP Post) (NN column) ('' "))
+          (PP (IN In)
+            (NP (DT the) (NNP Diaspora))))))
+    (. .) ('' ")))
+
+
+Leaves:
+-------
+	0	Additionally
+			sense:	additionally.r.01
+	1	,
+	2	he
+	3	currently
+			name:	DATE				3-3	currently 
+			sense:	presently.r.02
+	4	writes
+			sense:	publish.v.03
+			prop:	write.01
+			V		4-4	writes 
+			N-ARGM-DIS		0-0	Additionally 
+			N-ARG-A0		2-2	he 
+			N-ARGM-TMP		3-3	currently 
+			N-ARG-A1		5-13	The New York Times column " On Religion " 
+	5	The
+	6	New
+			name:	ORGANIZATION				6-8	New York Times 
+	7	York
+	8	Times
+	9	column
+			sense:	column.n.05
+	10	"
+	11	On
+	12	Religion
+			name:	MISC				12-12	Religion 
+	13	"
+	14	and
+	15	formerly
+			sense:	once.r.03
+	16	wrote
+			sense:	write.v.01
+			prop:	write.01
+			V		16-16	wrote 
+			N-ARGM-DIS		0-0	Additionally 
+			N-ARG-A0		2-2	he 
+			N-ARGM-TMP		15-15	formerly 
+			N-ARG-A1		17-24	The Jerusalem Post column " In the Diaspora 
+	17	The
+	18	Jerusalem
+			name:	ORGANIZATION				18-19	Jerusalem Post 
+	19	Post
+	20	column
+			sense:	column.n.05
+	21	"
+	22	In
+	23	the
+	24	Diaspora
+	25	.
+	26	"
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His latest book , Breaking the Line : The Season in Black College Football That Transformed the Sport and Changed the Course of Civil Rights , was published in New York , in August 2013 by Simon & Schuster .
+
+
+Treebanked sentence:
+--------------------
+His latest book , Breaking the Line : The Season in Black College Football That Transformed the Sport and Changed the Course of Civil Rights , was published in New York , in August 2013 by Simon & Schuster . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ His) (JJS latest) (NN book))
+      (, ,)
+      (VP (VBG Breaking)
+        (NP
+          (NP (DT the) (NN Line))
+          (: :)
+          (NP
+            (NP (DT The) (NN Season))
+            (PP (IN in)
+              (NP
+                (NP (NNP Black) (NNP College) (NNP Football))
+                (SBAR
+                  (S
+                    (NP (DT That))
+                    (VP
+                      (VP (VBD Transformed)
+                        (NP (DT the) (NNP Sport)))
+                      (CC and)
+                      (VP (VBD Changed)
+                        (NP
+                          (NP (DT the) (NNP Course))
+                          (PP (IN of)
+                            (NP (NNP Civil) (NNPS Rights)))))))))))))
+      (, ,))
+    (VP (VBD was)
+      (VP (VBN published)
+        (PP (IN in)
+          (NP (NNP New) (NNP York)))
+        (, ,)
+        (PP (IN in)
+          (NP (NNP August) (CD 2013)))
+        (PP (IN by)
+          (NP (NNP Simon)
+            (CC &)
+            (NNP Schuster)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+	1	latest
+			sense:	late.a.01
+	2	book
+			sense:	book.n.01
+	3	,
+	4	Breaking
+			sense:	transgress.v.01
+			prop:	break.01
+			V		4-4	Breaking 
+			N-ARG-A1		5-6	the Line 
+	5	the
+	6	Line
+			sense:	line.n.20
+	7	:
+	8	The
+	9	Season
+			sense:	season.n.01
+	10	in
+	11	Black
+	12	College
+	13	Football
+	14	That
+	15	Transformed
+			sense:	transform.v.02
+			prop:	transform.01
+			V		15-15	Transformed 
+			N-ARG-A0		8-13	The Season in Black College Football 
+			R-ARG-A0		14-14	That 
+			N-ARG-A1		16-17	the Sport 
+	16	the
+	17	Sport
+	18	and
+	19	Changed
+			sense:	change.v.01
+			prop:	change.01
+			V		19-19	Changed 
+			N-ARG-A0		8-13	The Season in Black College Football 
+			R-ARG-A0		14-14	That 
+			N-ARG-A1		20-24	the Course of Civil Rights 
+	20	the
+	21	Course
+	22	of
+	23	Civil
+	24	Rights
+	25	,
+	26	was
+			sense:	be.v.01
+			prop:	be.03
+			V		26-26	was 
+	27	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		27-27	published 
+			N-ARG-A1		0-24	His latest book , Breaking the Line : The Season in Black College Football That Transformed the Sport and Changed the Course of Civil Rights 
+			N-ARGM-LOC		28-30	in New York 
+			N-ARGM-TMP		32-34	in August 2013 
+			N-ARG-A0		35-38	by Simon & Schuster 
+	28	in
+	29	New
+			name:	STATE_OR_PROVINCE				29-30	New York 
+	30	York
+	31	,
+	32	in
+	33	August
+			name:	DATE				33-34	August 2013 
+	34	2013
+	35	by
+	36	Simon
+			name:	ORGANIZATION				36-38	Simon & Schuster 
+	37	&
+	38	Schuster
+	39	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.17-19	His Mother 's 
+				1.25-27	his mother 's 
+

@@ -1,0 +1,671 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bicycle Thieves (; sometimes known in the United States as The Bicycle Thief ) is a 1948 Italian drama film directed by Vittorio De Sica .
+
+
+Treebanked sentence:
+--------------------
+Bicycle Thieves ( ; sometimes known in the United States as The Bicycle Thief ) is a 1948 Italian drama film directed by Vittorio De Sica . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NN Bicycle) (NNS Thieves))
+      (-LRB- -LRB-)
+      (VP (: ;)
+        (ADVP (RB sometimes))
+        (VP (VBN known)
+          (PP (IN in)
+            (NP (DT the) (NNP United) (NNP States)))
+          (PP (IN as)
+            (NP (DT The) (NN Bicycle) (NN Thief)))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (CD 1948) (JJ Italian) (NN drama) (NN film))
+        (VP (VBN directed)
+          (PP (IN by)
+            (NP (NNP Vittorio) (NNP De) (NNP Sica))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bicycle
+			sense:	bicycle.n.01
+	1	Thieves
+			sense:	thief.n.01
+	2	(
+	3	;
+	4	sometimes
+			sense:	sometimes.r.01
+	5	known
+			sense:	acknowledge.v.06
+			prop:	know.01
+			V		5-5	known 
+			N-ARGM-TMP		4-4	sometimes 
+			N-ARGM-LOC		6-9	in the United States 
+			N-ARG-A2		10-13	as The Bicycle Thief 
+	6	in
+	7	the
+	8	United
+			name:	COUNTRY				8-9	United States 
+	9	States
+	10	as
+	11	The
+	12	Bicycle
+			sense:	bicycle.n.01
+	13	Thief
+			sense:	thief.n.01
+	14	)
+	15	is
+			sense:	be.v.02
+			prop:	be.01
+			V		15-15	is 
+			N-ARG-A1		0-14	Bicycle Thieves ( ; sometimes known in the United States as The Bicycle Thief ) 
+			N-ARG-A2		16-25	a 1948 Italian drama film directed by Vittorio De Sica 
+	16	a
+			coref:	IDENT			1	16-25	a 1948 Italian drama film directed by Vittorio De Sica 
+	17	1948
+			name:	DATE				17-17	1948 
+	18	Italian
+			name:	NATIONALITY				18-18	Italian 
+	19	drama
+			sense:	play.n.01
+	20	film
+			sense:	movie.n.01
+	21	directed
+			sense:	direct.v.03
+			prop:	direct.01
+			V		21-21	directed 
+			N-ARG-A1		16-20	a 1948 Italian drama film 
+			N-ARG-A0		22-25	by Vittorio De Sica 
+	22	by
+	23	Vittorio
+			name:	PERSON				23-25	Vittorio De Sica 
+	24	De
+	25	Sica
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The film follows the story of a poor father searching post - World War II Rome for his stolen bicycle , without which he will lose the job which was to be the salvation of his young family .
+
+
+Treebanked sentence:
+--------------------
+The film follows the story of a poor father searching post - World War II Rome for his stolen bicycle , without which he will lose the job which was to be the salvation of his young family . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN film))
+    (VP (VBZ follows)
+      (NP
+        (NP (DT the) (NN story))
+        (PP (IN of)
+          (NP
+            (NP (DT a) (JJ poor) (NN father))
+            (VP (VBG searching)
+              (NP (NN post) (HYPH -) (NN World))
+              (S
+                (ADJP (NNP War) (NNP II) (NNP Rome)))
+              (PP (IN for)
+                (NP (PRP$ his) (VBN stolen) (NN bicycle)))))))
+      (, ,)
+      (PP (IN without)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (NP (PRP he))
+            (VP (MD will)
+              (VP (VB lose)
+                (NP
+                  (NP (DT the) (NN job))
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBD was)
+                        (S
+                          (VP (TO to)
+                            (VP (VB be)
+                              (NP
+                                (NP (DT the) (NN salvation))
+                                (PP (IN of)
+                                  (NP (PRP$ his) (JJ young) (NN family)))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The film 
+	1	film
+			sense:	movie.n.01
+	2	follows
+			sense:	come.v.05
+			prop:	follow.02
+			V		2-2	follows 
+			N-ARG-A0		0-1	The film 
+			N-ARG-A1		3-37	the story of a poor father searching post - World War II Rome for his stolen bicycle , without which he will lose the job which was to be the salvation of his young family 
+	3	the
+	4	story
+			sense:	narrative.n.01
+	5	of
+	6	a
+			coref:	IDENT			2	6-19	a poor father searching post - World War II Rome for his stolen bicycle 
+	7	poor
+			sense:	poor.a.02
+	8	father
+			sense:	father.n.01
+	9	searching
+			sense:	search.v.02
+			prop:	search.01
+			V		9-9	searching 
+			N-ARG-A0		6-8	a poor father 
+			N-ARG-A1		16-37	for his stolen bicycle , without which he will lose the job which was to be the salvation of his young family 
+	10	post
+			sense:	military_post.n.01
+	11	-
+	12	World
+			sense:	earth.n.01
+	13	War
+			name:	CAUSE_OF_DEATH				13-13	War 
+	14	II
+	15	Rome
+			name:	CITY				15-15	Rome 
+	16	for
+	17	his
+			coref:	IDENT			0	17-17	his 
+	18	stolen
+			sense:	steal.v.01
+			prop:	steal.01
+			V		18-18	stolen 
+			N-ARG-A1		19-19	bicycle 
+	19	bicycle
+			sense:	bicycle.n.01
+	20	,
+	21	without
+	22	which
+	23	he
+			coref:	IDENT			0	23-23	he 
+	24	will
+	25	lose
+			sense:	lose.v.01
+			prop:	lose.02
+			V		25-25	lose 
+			N-ARG-A0		23-23	he 
+			N-ARGM-MOD		24-24	will 
+			N-ARG-A1		26-37	the job which was to be the salvation of his young family 
+	26	the
+	27	job
+			sense:	occupation.n.01
+	28	which
+	29	was
+			sense:	be.v.01
+			prop:	be.01
+			V		29-29	was 
+			N-ARG-A1		26-27	the job 
+			R-ARG-A1		28-28	which 
+			N-ARG-A2		30-37	to be the salvation of his young family 
+	30	to
+	31	be
+			sense:	be.v.02
+			prop:	be.01
+			V		31-31	be 
+			N-ARG-A1		26-27	the job 
+			R-ARG-A1		28-28	which 
+			N-ARG-A2		32-37	the salvation of his young family 
+	32	the
+	33	salvation
+			sense:	salvation.n.04
+	34	of
+	35	his
+			coref:	IDENT			0	35-35	his 
+	36	young
+			sense:	young.a.01
+	37	family
+			sense:	family.n.01
+	38	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Adapted for the screen by Cesare Zavattini from a novel by Luigi Bartolini , and starring Lamberto Maggiorani as the desperate father and Enzo Staiola as his plucky young son , Bicycle Thieves is widely regarded as a masterpiece of Italian neorealism .
+
+
+Treebanked sentence:
+--------------------
+Adapted for the screen by Cesare Zavattini from a novel by Luigi Bartolini , and starring Lamberto Maggiorani as the desperate father and Enzo Staiola as his plucky young son , Bicycle Thieves is widely regarded as a masterpiece of Italian neorealism . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP
+        (VP (VBN Adapted)
+          (PP (IN for)
+            (NP (DT the) (NN screen)))
+          (PP (IN by)
+            (NP
+              (NP (NNP Cesare) (NNP Zavattini))
+              (PP (IN from)
+                (NP (DT a) (NN novel)))))
+          (PP (IN by)
+            (NP (NNP Luigi) (NNP Bartolini))))
+        (, ,)
+        (CC and)
+        (VP (VBG starring)
+          (NP
+            (NP
+              (NP (NNP Lamberto) (NNP Maggiorani))
+              (PP (IN as)
+                (NP (DT the) (JJ desperate) (NN father))))
+            (CC and)
+            (NP
+              (NP (NNP Enzo) (NNP Staiola))
+              (PP (IN as)
+                (NP (PRP$ his) (JJ plucky) (JJ young) (NN son))))))))
+    (, ,)
+    (NP (NN Bicycle) (NNS Thieves))
+    (VP (VBZ is)
+      (ADVP (RB widely))
+      (VP (VBN regarded)
+        (PP (IN as)
+          (NP
+            (NP (DT a) (NN masterpiece))
+            (PP (IN of)
+              (NP (JJ Italian) (NN neorealism)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Adapted
+			sense:	adapt.v.01
+			prop:	adapt.01
+			V		0-0	Adapted 
+			N-ARG-A2		1-3	for the screen 
+			N-ARG-A0		4-6	by Cesare Zavattini 
+			N-ARG-A3		7-12	from a novel by Luigi Bartolini 
+			N-ARG-A1		31-32	Bicycle Thieves 
+	1	for
+	2	the
+	3	screen
+			sense:	screen.n.01
+	4	by
+	5	Cesare
+			name:	PERSON				5-6	Cesare Zavattini 
+	6	Zavattini
+	7	from
+	8	a
+	9	novel
+			sense:	novel.n.01
+	10	by
+	11	Luigi
+			name:	PERSON				11-12	Luigi Bartolini 
+	12	Bartolini
+	13	,
+	14	and
+	15	starring
+			sense:	star.v.01
+			prop:	star.01
+			V		15-15	starring 
+			N-ARG-A1		16-17	Lamberto Maggiorani 
+			N-ARGM-PRD		18-21	as the desperate father 
+			N-ARG-A2		31-32	Bicycle Thieves 
+	16	Lamberto
+			name:	PERSON				16-17	Lamberto Maggiorani 
+	17	Maggiorani
+	18	as
+	19	the
+			coref:	IDENT			2	19-21	the desperate father 
+	20	desperate
+			sense:	despairing.s.01
+	21	father
+			sense:	father.n.01
+	22	and
+	23	Enzo
+			coref:	IDENT			3	23-24	Enzo Staiola 
+			name:	PERSON				23-24	Enzo Staiola 
+	24	Staiola
+	25	as
+	26	his
+			coref:	IDENT			3	26-26	his 
+	27	plucky
+			sense:	gutsy.a.01
+	28	young
+			sense:	young.a.01
+	29	son
+			sense:	son.n.01
+	30	,
+	31	Bicycle
+			sense:	bicycle.n.01
+	32	Thieves
+			sense:	thief.n.01
+	33	is
+			sense:	be.v.01
+			prop:	be.03
+			V		33-33	is 
+	34	widely
+			sense:	widely.r.01
+	35	regarded
+			sense:	see.v.05
+			prop:	regard.01
+			V		35-35	regarded 
+			N-ARG-A1		31-32	Bicycle Thieves 
+			N-ARGM-ADV		34-34	widely 
+			N-ARG-A2		36-41	as a masterpiece of Italian neorealism 
+	36	as
+	37	a
+	38	masterpiece
+			sense:	masterpiece.n.01
+	39	of
+	40	Italian
+			name:	NATIONALITY				40-40	Italian 
+	41	neorealism
+	42	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It received an Academy Honorary Award in 1950 and , just four years after its release , was deemed the greatest film of all time by Sight & Sound magazine 's poll of filmmakers and critics ; fifty years later the same poll ranked it sixth among the greatest - ever films .
+
+
+Treebanked sentence:
+--------------------
+It received an Academy Honorary Award in 1950 and , just four years after its release , was deemed the greatest film of all time by Sight & Sound magazine 's poll of filmmakers and critics ; fifty years later the same poll ranked it sixth among the greatest - ever films . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP
+        (VP (VBD received)
+          (NP
+            (NP (DT an)
+              (NML (NNP Academy) (NNP Honorary))
+              (NNP Award))
+            (PP (IN in)
+              (NP (CD 1950)))))
+        (CC and)
+        (VP (, ,)
+          (PP
+            (NP (RB just) (CD four) (NNS years))
+            (IN after)
+            (NP (PRP$ its) (NN release)))
+          (, ,) (VBD was)
+          (VP (VBN deemed)
+            (NP
+              (NP (DT the) (JJS greatest) (NN film))
+              (PP (IN of)
+                (NP (DT all) (NN time))))
+            (PP (IN by)
+              (NP (NNP Sight)
+                (CC &)
+                (NNP Sound)))))
+        (NP
+          (NP
+            (NP (NN magazine) (POS 's))
+            (NN poll))
+          (PP (IN of)
+            (NP (NNS filmmakers)
+              (CC and)
+              (NNS critics))))))
+    (: ;)
+    (S
+      (ADVP
+        (NP (CD fifty) (NNS years))
+        (RB later))
+      (NP (DT the) (JJ same) (NN poll))
+      (VP (VBD ranked)
+        (S
+          (NP (PRP it))
+          (ADJP (JJ sixth)
+            (PP (IN among)
+              (NP (DT the)
+                (ADJP (JJS greatest) (HYPH -) (RB ever))
+                (NNS films)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	received
+			sense:	receive.v.02
+			prop:	receive.01
+			V		1-1	received 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-5	an Academy Honorary Award 
+			N-ARGM-TMP		6-7	in 1950 
+	2	an
+	3	Academy
+	4	Honorary
+	5	Award
+	6	in
+	7	1950
+			name:	DATE				7-7	1950 
+	8	and
+	9	,
+	10	just
+			sense:	merely.r.01
+	11	four
+			name:	DURATION				11-12	four years 
+	12	years
+			sense:	year.n.01
+	13	after
+	14	its
+			coref:	IDENT			1	14-14	its 
+	15	release
+			sense:	release.n.01
+	16	,
+	17	was
+			sense:	be.v.01
+			prop:	be.03
+			V		17-17	was 
+	18	deemed
+			sense:	deem.v.01
+			prop:	deem.01
+			V		18-18	deemed 
+			N-ARGM-TMP		10-15	just four years after its release 
+			N-ARG-A1		19-24	the greatest film of all time 
+			N-ARG-A0		25-35	by Sight & Sound magazine 's poll of filmmakers and critics 
+	19	the
+			coref:	IDENT			1	19-24	the greatest film of all time 
+	20	greatest
+			sense:	great.s.02
+	21	film
+			sense:	movie.n.01
+	22	of
+	23	all
+	24	time
+			sense:	time.n.03
+	25	by
+	26	Sight
+	27	&
+	28	Sound
+	29	magazine
+			sense:	magazine.n.01
+	30	's
+	31	poll
+			sense:	poll.n.01
+	32	of
+	33	filmmakers
+			sense:	film_maker.n.01
+	34	and
+	35	critics
+			sense:	critic.n.01
+	36	;
+	37	fifty
+			name:	DATE				37-39	fifty years later 
+	38	years
+			sense:	year.n.01
+	39	later
+			sense:	subsequently.r.01
+	40	the
+	41	same
+			sense:	same.a.01
+	42	poll
+			sense:	poll.n.01
+	43	ranked
+			sense:	rate.v.01
+			prop:	rank.01
+			V		43-43	ranked 
+			N-ARGM-TMP		37-39	fifty years later 
+			N-ARG-A0		40-42	the same poll 
+			N-ARG-A1		44-44	it 
+			N-ARG-A2		45-45	sixth 
+			N-ARGM-LOC		46-51	among the greatest - ever films 
+	44	it
+			coref:	IDENT			1	44-44	it 
+	45	sixth
+			name:	ORDINAL				45-45	sixth 
+			sense:	sixth.s.01
+	46	among
+	47	the
+	48	greatest
+			sense:	great.s.02
+	49	-
+	50	ever
+			sense:	ever.r.01
+	51	films
+			sense:	movie.n.01
+	52	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is also one of the top ten among the British Film Institute 's list of films you should see by the age of 14 .
+
+
+Treebanked sentence:
+--------------------
+It is also one of the top ten among the British Film Institute 's list of films you should see by the age of 14 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJ top) (CD ten))
+            (PP (IN among)
+              (NP (DT the) (JJ British)
+                (NP (NNP Film) (NNP Institute) (POS 's))
+                (NN list)))))
+        (PP (IN of)
+          (NP
+            (NP (NNS films))
+            (SBAR
+              (S
+                (NP (PRP you))
+                (VP (MD should)
+                  (VP (VB see)
+                    (PP (IN by)
+                      (NP
+                        (NP (DT the) (NN age))
+                        (PP (IN of)
+                          (NP (CD 14)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARGM-ADV		2-2	also 
+			N-ARG-A2		3-24	one of the top ten among the British Film Institute 's list of films you should see by the age of 14 
+	2	also
+			sense:	besides.r.02
+	3	one
+			name:	NUMBER				3-3	one 
+	4	of
+	5	the
+	6	top
+			sense:	top.a.01
+	7	ten
+			name:	NUMBER				7-7	ten 
+	8	among
+	9	the
+	10	British
+			name:	ORGANIZATION				10-12	British Film Institute 
+	11	Film
+	12	Institute
+	13	's
+	14	list
+			sense:	list.n.01
+	15	of
+	16	films
+			sense:	movie.n.01
+	17	you
+	18	should
+	19	see
+			sense:	watch.v.03
+			prop:	see.01
+			V		19-19	see 
+			N-ARG-A1		16-16	films 
+			N-ARG-A0		17-17	you 
+			N-ARGM-MOD		18-18	should 
+			N-ARGM-TMP		20-24	by the age of 14 
+	20	by
+	21	the
+	22	age
+			sense:	age.n.03
+	23	of
+	24	14
+			name:	NUMBER				24-24	14 
+	25	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.17-17	his 
+				1.23-23	he 
+				1.35-35	his 
+	Chain 1 (IDENT)
+				0.16-25	a 1948 Italian drama film directed by Vittorio De Sica 
+				1.0-1	The film 
+				3.0-0	It 
+				3.14-14	its 
+				3.19-24	the greatest film of all time 
+				3.44-44	it 
+				4.0-0	It 
+	Chain 2 (IDENT)
+				1.6-19	a poor father searching post - World War II Rome for his stolen bicycle 
+				2.19-21	the desperate father 
+	Chain 3 (IDENT)
+				2.23-24	Enzo Staiola 
+				2.26-26	his 
+

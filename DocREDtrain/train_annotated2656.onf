@@ -1,0 +1,585 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Andrew Caldwell Mailer ( April 4 , 1853 – December 3 , 1909 ) was an American politician .
+
+
+Treebanked sentence:
+--------------------
+Andrew Caldwell Mailer ( April 4 , 1853 – December 3 , 1909 ) was an American politician . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Andrew) (NNP Caldwell) (NNP Mailer))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP April) (CD 4) (, ,) (CD 1853))
+        (PP (SYM –)
+          (NP (NNP December) (CD 3) (, ,) (CD 1909))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT an) (JJ American) (NN politician)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Andrew
+			coref:	IDENT			2	0-2	Andrew Caldwell Mailer 
+			name:	PERSON				0-2	Andrew Caldwell Mailer 
+	1	Caldwell
+	2	Mailer
+	3	(
+	4	April
+			name:	DATE				4-7	April 4 , 1853 
+	5	4
+	6	,
+	7	1853
+	8	–
+	9	December
+			name:	DATE				9-12	December 3 , 1909 
+	10	3
+	11	,
+	12	1909
+	13	)
+	14	was
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		0-13	Andrew Caldwell Mailer ( April 4 , 1853 – December 3 , 1909 ) 
+			N-ARG-A2		15-17	an American politician 
+	15	an
+	16	American
+			name:	NATIONALITY				16-16	American 
+	17	politician
+			name:	TITLE				17-17	politician 
+			sense:	politician.n.02
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was a member of the Wisconsin State Senate , representing Wisconsin 's 2nd Senate District from 1897 to 1901 .
+
+
+Treebanked sentence:
+--------------------
+He was a member of the Wisconsin State Senate , representing Wisconsin 's 2nd Senate District from 1897 to 1901 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP (DT the) (NNP Wisconsin) (NNP State) (NNP Senate))))
+      (, ,)
+      (S
+        (VP (VBG representing)
+          (NP
+            (NP (NNP Wisconsin) (POS 's))
+            (JJ 2nd)
+            (NML (NNP Senate) (NNP District)))
+          (PP (IN from)
+            (NP (CD 1897)))
+          (PP (IN to)
+            (NP (CD 1901))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-8	a member of the Wisconsin State Senate 
+			N-ARGM-ADV		10-19	representing Wisconsin 's 2nd Senate District from 1897 to 1901 
+	2	a
+	3	member
+			sense:	member.n.01
+	4	of
+	5	the
+	6	Wisconsin
+			name:	ORGANIZATION				6-8	Wisconsin State Senate 
+	7	State
+	8	Senate
+	9	,
+	10	representing
+			sense:	represent.v.04
+			prop:	represent.01
+			V		10-10	representing 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		11-15	Wisconsin 's 2nd Senate District 
+			N-ARGM-TMP		16-19	from 1897 to 1901 
+	11	Wisconsin
+			coref:	IDENT			1	11-12	Wisconsin 's 
+			name:	STATE_OR_PROVINCE				11-11	Wisconsin 
+	12	's
+	13	2nd
+			name:	ORDINAL				13-13	2nd 
+			sense:	second.s.01
+	14	Senate
+	15	District
+	16	from
+	17	1897
+			name:	DATE				17-19	1897 to 1901 
+	18	to
+	19	1901
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was a member of the Republican Party .
+
+
+Treebanked sentence:
+--------------------
+He was a member of the Republican Party . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP (DT the) (NNP Republican) (NNP Party)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-7	a member of the Republican Party 
+	2	a
+	3	member
+			sense:	member.n.01
+	4	of
+	5	the
+	6	Republican
+			name:	ORGANIZATION				6-7	Republican Party 
+	7	Party
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mailer was born in De Pere , Wisconsin , and attended Lawrence University in Appleton , the University of Michigan at Ann Arbor , Rush Medical College in Chicago , and the Bellevue Hospital Medical College in New York City .
+
+
+Treebanked sentence:
+--------------------
+Mailer was born in De Pere , Wisconsin , and attended Lawrence University in Appleton , the University of Michigan at Ann Arbor , Rush Medical College in Chicago , and the Bellevue Hospital Medical College in New York City . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Mailer))
+    (VP
+      (VP (VBD was)
+        (VP (VBN born)
+          (PP (IN in)
+            (NP
+              (NP (NNP De) (NNP Pere))
+              (, ,)
+              (NP (NNP Wisconsin))
+              (, ,)))))
+      (CC and)
+      (VP (VBD attended)
+        (NP
+          (NP
+            (NP (NNP Lawrence) (NNP University))
+            (PP (IN in)
+              (NP (NNP Appleton))))
+          (, ,)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP
+                (NP (NNP Michigan))
+                (PP (IN at)
+                  (NP (NNP Ann) (NNP Arbor))))))
+          (, ,)
+          (NP
+            (NP (NNP Rush) (NNP Medical) (NNP College))
+            (PP (IN in)
+              (NP (NNP Chicago))))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (DT the) (NNP Bellevue) (NNP Hospital) (NNP Medical) (NNP College))
+            (PP (IN in)
+              (NP
+                (NML (NNP New) (NNP York))
+                (NNP City)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mailer
+			coref:	IDENT			2	0-0	Mailer 
+			name:	PERSON				0-0	Mailer 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Mailer 
+			N-ARGM-LOC		3-7	in De Pere , Wisconsin 
+	3	in
+	4	De
+			coref:	IDENT			0	4-5	De Pere 
+			name:	CITY				4-5	De Pere 
+	5	Pere
+	6	,
+	7	Wisconsin
+			coref:	IDENT			1	7-7	Wisconsin 
+			name:	STATE_OR_PROVINCE				7-7	Wisconsin 
+	8	,
+	9	and
+	10	attended
+			sense:	attend.v.01
+			prop:	attend.01
+			V		10-10	attended 
+			N-ARG-A0		0-0	Mailer 
+			N-ARG-A1		11-39	Lawrence University in Appleton , the University of Michigan at Ann Arbor , Rush Medical College in Chicago , and the Bellevue Hospital Medical College in New York City 
+	11	Lawrence
+			name:	ORGANIZATION				11-12	Lawrence University 
+	12	University
+	13	in
+	14	Appleton
+			name:	CITY				14-14	Appleton 
+	15	,
+	16	the
+	17	University
+			name:	ORGANIZATION				17-19	University of Michigan 
+	18	of
+	19	Michigan
+	20	at
+	21	Ann
+			name:	CITY				21-22	Ann Arbor 
+	22	Arbor
+	23	,
+	24	Rush
+			name:	ORGANIZATION				24-26	Rush Medical College 
+	25	Medical
+	26	College
+	27	in
+	28	Chicago
+			name:	CITY				28-28	Chicago 
+	29	,
+	30	and
+	31	the
+	32	Bellevue
+			name:	ORGANIZATION				32-35	Bellevue Hospital Medical College 
+	33	Hospital
+	34	Medical
+	35	College
+	36	in
+	37	New
+			name:	CITY				37-39	New York City 
+	38	York
+	39	City
+	40	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was connected with the Pharmaceutical industry for four years before entering the profession of medicine .
+
+
+Treebanked sentence:
+--------------------
+He was connected with the Pharmaceutical industry for four years before entering the profession of medicine . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN connected)
+        (PP (IN with)
+          (NP
+            (NP (DT the) (NNP Pharmaceutical) (NN industry))
+            (PP (IN for)
+              (NP (CD four) (NNS years)))))
+        (PP (IN before)
+          (S
+            (VP (VBG entering)
+              (NP
+                (NP (DT the) (NN profession))
+                (PP (IN of)
+                  (NP (NN medicine)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	connected
+			sense:	connect.v.03
+			prop:	connect.01
+			V		2-2	connected 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		7-9	for four years 
+			N-ARGM-TMP		10-15	before entering the profession of medicine 
+	3	with
+	4	the
+	5	Pharmaceutical
+	6	industry
+			sense:	industry.n.01
+	7	for
+	8	four
+			name:	DURATION				8-9	four years 
+	9	years
+			sense:	year.n.01
+	10	before
+	11	entering
+			sense:	enroll.v.01
+			prop:	enter.01
+			V		11-11	entering 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		12-15	the profession of medicine 
+	12	the
+	13	profession
+			sense:	profession.n.02
+	14	of
+	15	medicine
+			sense:	medicine.n.03
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was a member of the De Pere Board of Education from 1890 to 1896 , superintendent of the city schools for a few years , and was mayor of De Pere from 1892 to 1894 .
+
+
+Treebanked sentence:
+--------------------
+He was a member of the De Pere Board of Education from 1890 to 1896 , superintendent of the city schools for a few years , and was mayor of De Pere from 1892 to 1894 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (NP
+          (NP (DT a) (NN member))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP De) (NNP Pere) (NNP Board))
+              (PP (IN of)
+                (NP
+                  (NP (NNP Education))
+                  (PP (IN from)
+                    (NP (CD 1890))))))))
+        (PP (IN to)
+          (NP (CD 1896))))
+      (, ,)
+      (VP
+        (NP
+          (NP (NN superintendent))
+          (PP (IN of)
+            (NP (DT the) (NN city) (NNS schools))))
+        (PP (IN for)
+          (NP (DT a) (JJ few) (NNS years))))
+      (, ,)
+      (CC and)
+      (VP (VBD was)
+        (NP
+          (NP (NN mayor))
+          (PP (IN of)
+            (NP
+              (NP (NNP De) (NNP Pere))
+              (PP (IN from)
+                (NP (CD 1892))))))
+        (PP (IN to)
+          (NP (CD 1894)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-24	a member of the De Pere Board of Education from 1890 to 1896 , superintendent of the city schools for a few years 
+	2	a
+	3	member
+			sense:	member.n.01
+	4	of
+	5	the
+	6	De
+			name:	ORGANIZATION				6-10	De Pere Board of Education 
+	7	Pere
+	8	Board
+	9	of
+	10	Education
+	11	from
+	12	1890
+			name:	DATE				12-14	1890 to 1896 
+	13	to
+	14	1896
+	15	,
+	16	superintendent
+			name:	TITLE				16-16	superintendent 
+			sense:	overseer.n.01
+	17	of
+	18	the
+	19	city
+			sense:	city.n.01
+	20	schools
+			sense:	school.n.01
+	21	for
+	22	a
+			name:	DURATION				22-24	a few years 
+	23	few
+			sense:	few.a.01
+	24	years
+			sense:	year.n.01
+	25	,
+	26	and
+	27	was
+			sense:	be.v.08
+			prop:	be.01
+			V		27-27	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		28-31	mayor of De Pere 
+			N-ARGM-TMP		32-35	from 1892 to 1894 
+	28	mayor
+			name:	TITLE				28-28	mayor 
+			sense:	mayor.n.01
+	29	of
+	30	De
+	31	Pere
+	32	from
+	33	1892
+			name:	DATE				33-35	1892 to 1894 
+	34	to
+	35	1894
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He died in De Pere , Wisconsin on December 3 , 1909 .
+
+
+Treebanked sentence:
+--------------------
+He died in De Pere , Wisconsin on December 3 , 1909 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD died)
+      (PP (IN in)
+        (NP
+          (NP (NNP De) (NNP Pere))
+          (, ,)
+          (NP (NNP Wisconsin))))
+      (PP (IN on)
+        (NP (NNP December) (CD 3) (, ,) (CD 1909))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		2-6	in De Pere , Wisconsin 
+			N-ARGM-TMP		7-11	on December 3 , 1909 
+	2	in
+	3	De
+			coref:	IDENT			0	3-4	De Pere 
+			name:	CITY				3-4	De Pere 
+	4	Pere
+	5	,
+	6	Wisconsin
+			coref:	IDENT			1	6-6	Wisconsin 
+			name:	STATE_OR_PROVINCE				6-6	Wisconsin 
+	7	on
+	8	December
+			name:	DATE				8-11	December 3 , 1909 
+	9	3
+	10	,
+	11	1909
+	12	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.4-5	De Pere 
+				6.3-4	De Pere 
+	Chain 1 (IDENT)
+				1.11-12	Wisconsin 's 
+				3.7-7	Wisconsin 
+				6.6-6	Wisconsin 
+	Chain 2 (IDENT)
+				0.0-2	Andrew Caldwell Mailer 
+				1.0-0	He 
+				2.0-0	He 
+				3.0-0	Mailer 
+				4.0-0	He 
+				5.0-0	He 
+				6.0-0	He 
+

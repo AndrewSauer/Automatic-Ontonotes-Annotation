@@ -1,0 +1,681 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Waterloo is a village in Seneca County , New York , United States .
+
+
+Treebanked sentence:
+--------------------
+Waterloo is a village in Seneca County , New York , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Waterloo))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN village))
+        (PP (IN in)
+          (NP
+            (NML
+              (NML (NNP Seneca) (NNP County))
+              (, ,)
+              (NML (NNP New) (NNP York))
+              (, ,))
+            (NNP United) (NNP States)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Waterloo
+			name:	CITY				0-0	Waterloo 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Waterloo 
+			N-ARG-A2		2-12	a village in Seneca County , New York , United States 
+	2	a
+	3	village
+			sense:	village.n.01
+	4	in
+	5	Seneca
+			coref:	IDENT			0	5-6	Seneca County 
+			name:	LOCATION				5-6	Seneca County 
+	6	County
+	7	,
+	8	New
+			name:	STATE_OR_PROVINCE				8-9	New York 
+	9	York
+	10	,
+	11	United
+			name:	COUNTRY				11-12	United States 
+	12	States
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The population was 5,171 at the 2010 census and is now the most populated village in Seneca County .
+
+
+Treebanked sentence:
+--------------------
+The population was 5,171 at the 2010 census and is now the most populated village in Seneca County . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN population))
+    (VP
+      (VP (VBD was)
+        (NP
+          (NP (CD 5,171))
+          (PP (IN at)
+            (NP (DT the) (CD 2010) (NN census)))))
+      (CC and)
+      (VP (VBZ is)
+        (ADVP (RB now))
+        (NP
+          (NP (DT the)
+            (ADJP (RBS most) (JJ populated))
+            (NN village))
+          (PP (IN in)
+            (NP (NNP Seneca) (NNP County))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	population
+			sense:	population.n.04
+	2	was
+			sense:	equal.v.01
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	The population 
+			N-ARG-A2		3-3	5,171 
+			N-ARGM-TMP		4-7	at the 2010 census 
+	3	5,171
+			name:	NUMBER				3-3	5,171 
+	4	at
+	5	the
+	6	2010
+			name:	DATE				6-6	2010 
+	7	census
+			sense:	census.n.01
+	8	and
+	9	is
+			sense:	be.v.01
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-1	The population 
+			N-ARGM-TMP		10-10	now 
+			N-ARG-A2		11-17	the most populated village in Seneca County 
+	10	now
+			coref:	IDENT			1	10-17	now the most populated village in Seneca County 
+			name:	DATE				10-10	now 
+			sense:	now.r.01
+	11	the
+	12	most
+			sense:	most.r.01
+	13	populated
+			sense:	populated.s.01
+	14	village
+			sense:	village.n.01
+	15	in
+	16	Seneca
+			coref:	IDENT			0	16-17	Seneca County 
+			name:	LOCATION				16-17	Seneca County 
+	17	County
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The village is named after the Waterloo in Belgium , where Napoleon was defeated .
+
+
+Treebanked sentence:
+--------------------
+The village is named after the Waterloo in Belgium , where Napoleon was defeated . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN village))
+    (VP (VBZ is)
+      (VP (VBN named)
+        (PP (IN after)
+          (NP
+            (NP (DT the) (NNP Waterloo))
+            (PP (IN in)
+              (NP (NNP Belgium)))))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (NNP Napoleon))
+            (VP (VBD was)
+              (VP (VBN defeated)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The village 
+	1	village
+			sense:	village.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	named
+			sense:	name.v.01
+			prop:	name.02
+			V		3-3	named 
+			N-ARG-A1		0-1	The village 
+			N-ARG-A2		4-13	after the Waterloo in Belgium , where Napoleon was defeated 
+	4	after
+	5	the
+	6	Waterloo
+			name:	CITY				6-6	Waterloo 
+	7	in
+	8	Belgium
+			name:	COUNTRY				8-8	Belgium 
+	9	,
+	10	where
+	11	Napoleon
+			name:	PERSON				11-11	Napoleon 
+	12	was
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	was 
+	13	defeated
+			sense:	get_the_better_of.v.01
+			prop:	defeat.01
+			V		13-13	defeated 
+			N-ARGM-LOC		5-8	the Waterloo in Belgium 
+			R-ARGM-LOC		10-10	where 
+			N-ARG-A1		11-11	Napoleon 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is the primary county seat of Seneca County , with the other being Ovid as part of a two - shire system established in 1822 .
+
+
+Treebanked sentence:
+--------------------
+It is the primary county seat of Seneca County , with the other being Ovid as part of a two - shire system established in 1822 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ primary) (NN county) (NN seat))
+        (PP (IN of)
+          (NP (NNP Seneca) (NNP County))))
+      (, ,)
+      (PP (IN with)
+        (S
+          (NP (DT the) (JJ other))
+          (VP (VBG being)
+            (NP
+              (NP (NNP Ovid))
+              (PP (IN as)
+                (NP
+                  (NP (NN part))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT a)
+                        (NML (CD two) (HYPH -) (NN shire))
+                        (NN system))
+                      (VP (VBN established)
+                        (PP (IN in)
+                          (NP (CD 1822)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-8	the primary county seat of Seneca County 
+			N-ARGM-ADV		10-25	with the other being Ovid as part of a two - shire system established in 1822 
+	2	the
+	3	primary
+			sense:	chief.s.01
+	4	county
+			sense:	county.n.01
+	5	seat
+			sense:	seat.n.05
+	6	of
+	7	Seneca
+			coref:	IDENT			0	7-8	Seneca County 
+			name:	LOCATION				7-8	Seneca County 
+	8	County
+	9	,
+	10	with
+	11	the
+	12	other
+			sense:	other.a.01
+	13	being
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	being 
+			N-ARG-A1		11-12	the other 
+			N-ARG-A2		14-25	Ovid as part of a two - shire system established in 1822 
+	14	Ovid
+			name:	LOCATION				14-14	Ovid 
+	15	as
+	16	part
+			sense:	part.n.01
+	17	of
+	18	a
+	19	two
+			name:	NUMBER				19-19	two 
+	20	-
+	21	shire
+			sense:	shire.n.01
+	22	system
+			sense:	system.n.02
+	23	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		23-23	established 
+			N-ARG-A1		18-22	a two - shire system 
+			N-ARGM-TMP		24-25	in 1822 
+	24	in
+	25	1822
+			name:	DATE				25-25	1822 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Most of the county administrative offices are located in the village .
+
+
+Treebanked sentence:
+--------------------
+Most of the county administrative offices are located in the village . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (JJS Most))
+      (PP (IN of)
+        (NP (DT the) (NN county) (JJ administrative) (NNS offices))))
+    (VP (VBP are)
+      (VP (VBN located)
+        (PP (IN in)
+          (NP (DT the) (NN village)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Most
+			sense:	most.a.01
+	1	of
+	2	the
+	3	county
+			sense:	county.n.01
+	4	administrative
+			sense:	administrative.a.01
+	5	offices
+			sense:	agency.n.01
+	6	are
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	are 
+	7	located
+			sense:	locate.v.03
+			prop:	locate.01
+			V		7-7	located 
+			N-ARG-A1		0-5	Most of the county administrative offices 
+			N-ARGM-LOC		8-10	in the village 
+	8	in
+	9	the
+			coref:	IDENT			1	9-10	the village 
+	10	village
+			sense:	village.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Therefore , many political sources only list Waterloo as the county seat .
+
+
+Treebanked sentence:
+--------------------
+Therefore , many political sources only list Waterloo as the county seat . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (, ,)
+    (NP (JJ many) (JJ political) (NNS sources))
+    (ADVP (RB only))
+    (VP (VBP list)
+      (NP
+        (NP (NNP Waterloo))
+        (PP (IN as)
+          (NP (DT the) (NN county) (NN seat)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Therefore
+			sense:	therefore.r.01
+	1	,
+	2	many
+			sense:	many.a.01
+	3	political
+			sense:	political.a.01
+	4	sources
+			sense:	source.n.02
+	5	only
+			sense:	entirely.r.02
+	6	list
+			sense:	list.v.02
+			prop:	list.01
+			V		6-6	list 
+			N-ARGM-DIS		0-0	Therefore 
+			N-ARG-A0		2-4	many political sources 
+			N-ARGM-ADV		5-5	only 
+			N-ARG-A1		7-7	Waterloo 
+			N-ARG-A2		8-11	as the county seat 
+	7	Waterloo
+			name:	CITY				7-7	Waterloo 
+	8	as
+	9	the
+	10	county
+			sense:	county.n.01
+	11	seat
+			sense:	seat.n.05
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Village of Waterloo is mostly in the Town of Waterloo , but the part south of the Cayuga - Seneca Canal of the village is in the Town of Fayette and a small area in the southeast of the village is in Town of Seneca Falls .
+
+
+Treebanked sentence:
+--------------------
+The Village of Waterloo is mostly in the Town of Waterloo , but the part south of the Cayuga - Seneca Canal of the village is in the Town of Fayette and a small area in the southeast of the village is in Town of Seneca Falls . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NNP Village))
+        (PP (IN of)
+          (NP (NNP Waterloo))))
+      (VP (VBZ is)
+        (ADVP (RB mostly))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN Town))
+            (PP (IN of)
+              (NP (NNP Waterloo)))))))
+    (, ,)
+    (CC but)
+    (S
+      (S
+        (NP
+          (NP (DT the) (NN part) (NN south))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP Cayuga) (HYPH -) (NNP Seneca) (NNP Canal))
+              (PP (IN of)
+                (NP (DT the) (NN village))))))
+        (VP (VBZ is)
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN Town))
+              (PP (IN of)
+                (NP (NNP Fayette)))))))
+      (CC and)
+      (S
+        (NP
+          (NP (DT a) (JJ small) (NN area))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN southeast))
+              (PP (IN of)
+                (NP (DT the) (NN village))))))
+        (VP (VBZ is)
+          (PP (IN in)
+            (NP
+              (NP (NN Town))
+              (PP (IN of)
+                (NP (NNP Seneca) (NNP Falls))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Village
+	2	of
+	3	Waterloo
+			name:	CITY				3-3	Waterloo 
+	4	is
+			sense:	be.v.03
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	The Village of Waterloo 
+			N-ARGM-ADV		5-5	mostly 
+			N-ARG-A2		6-10	in the Town of Waterloo 
+	5	mostly
+			sense:	largely.r.01
+	6	in
+	7	the
+	8	Town
+			sense:	township.n.01
+	9	of
+	10	Waterloo
+			name:	CITY				10-10	Waterloo 
+	11	,
+	12	but
+	13	the
+	14	part
+			sense:	part.n.01
+	15	south
+			sense:	south.n.03
+	16	of
+	17	the
+	18	Cayuga
+			name:	LOCATION				18-21	Cayuga - Seneca Canal 
+	19	-
+	20	Seneca
+	21	Canal
+	22	of
+	23	the
+			coref:	IDENT			1	23-24	the village 
+	24	village
+			sense:	village.n.01
+	25	is
+			sense:	be.v.03
+			prop:	be.01
+			V		25-25	is 
+			N-ARG-A1		13-24	the part south of the Cayuga - Seneca Canal of the village 
+			N-ARG-A2		26-30	in the Town of Fayette 
+	26	in
+	27	the
+	28	Town
+			name:	LOCATION				28-30	Town of Fayette 
+			sense:	township.n.01
+	29	of
+	30	Fayette
+	31	and
+	32	a
+	33	small
+			sense:	small.a.01
+	34	area
+			sense:	area.n.01
+	35	in
+	36	the
+	37	southeast
+			sense:	southeast.n.01
+	38	of
+	39	the
+			coref:	IDENT			1	39-40	the village 
+	40	village
+			sense:	village.n.01
+	41	is
+			sense:	be.v.03
+			prop:	be.01
+			V		41-41	is 
+			N-ARG-A1		32-40	a small area in the southeast of the village 
+			N-ARG-A2		42-46	in Town of Seneca Falls 
+	42	in
+	43	Town
+			sense:	township.n.01
+	44	of
+	45	Seneca
+			name:	LOCATION				45-45	Seneca 
+	46	Falls
+			name:	CAUSE_OF_DEATH				46-46	Falls 
+	47	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Waterloo is east of Geneva and is located in between the two main Finger Lakes , Seneca Lake and Cayuga Lake .
+
+
+Treebanked sentence:
+--------------------
+Waterloo is east of Geneva and is located in between the two main Finger Lakes , Seneca Lake and Cayuga Lake . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Waterloo))
+    (VP
+      (VP (VBZ is)
+        (NP
+          (NP (NN east))
+          (PP (IN of)
+            (NP (NNP Geneva)))))
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN located)
+          (PP (IN in)
+            (NP
+              (PP (IN between)
+                (NP (DT the) (CD two)
+                  (NML (JJ main) (NNP Finger) (NNP Lakes))))
+              (, ,)
+              (NP (NNP Seneca) (NNP Lake))
+              (CC and)
+              (NP (NNP Cayuga) (NNP Lake)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Waterloo
+			name:	CITY				0-0	Waterloo 
+	1	is
+			sense:	be.v.03
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Waterloo 
+			N-ARG-A2		2-4	east of Geneva 
+	2	east
+			sense:	east.n.01
+	3	of
+	4	Geneva
+			name:	CITY				4-4	Geneva 
+	5	and
+	6	is
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	is 
+	7	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		7-7	located 
+			N-ARG-A1		0-0	Waterloo 
+			N-ARGM-LOC		8-20	in between the two main Finger Lakes , Seneca Lake and Cayuga Lake 
+	8	in
+	9	between
+	10	the
+	11	two
+			name:	NUMBER				11-11	two 
+	12	main
+			sense:	chief.s.01
+	13	Finger
+			name:	MISC				13-14	Finger Lakes 
+	14	Lakes
+	15	,
+	16	Seneca
+			name:	LOCATION				16-17	Seneca Lake 
+	17	Lake
+	18	and
+	19	Cayuga
+			name:	LOCATION				19-20	Cayuga Lake 
+	20	Lake
+	21	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.5-6	Seneca County 
+				1.16-17	Seneca County 
+				3.7-8	Seneca County 
+	Chain 1 (IDENT)
+				1.10-17	now the most populated village in Seneca County 
+				2.0-1	The village 
+				3.0-0	It 
+				4.9-10	the village 
+				6.23-24	the village 
+				6.39-40	the village 
+

@@ -1,0 +1,653 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Willits ( formerly Little Lake and Willitsville ) is a city in Mendocino County , California , United States .
+
+
+Treebanked sentence:
+--------------------
+Willits ( formerly Little Lake and Willitsville ) is a city in Mendocino County , California , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNS Willits))
+      (-LRB- -LRB-)
+      (NP (RB formerly) (JJ Little)
+        (NP (NNP Lake)
+          (CC and)
+          (NNP Willitsville)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN city))
+        (PP (IN in)
+          (NP
+            (NML
+              (NML (NNP Mendocino) (NNP County))
+              (, ,)
+              (NP (NNP California))
+              (, ,))
+            (NNP United) (NNP States)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Willits
+			name:	PERSON				0-0	Willits 
+	1	(
+	2	formerly
+			sense:	once.r.03
+	3	Little
+			name:	LOCATION				3-4	Little Lake 
+			sense:	small.a.01
+	4	Lake
+	5	and
+	6	Willitsville
+			name:	LOCATION				6-6	Willitsville 
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	Willits ( formerly Little Lake and Willitsville ) 
+			N-ARG-A2		9-18	a city in Mendocino County , California , United States 
+	9	a
+	10	city
+			sense:	city.n.01
+	11	in
+	12	Mendocino
+			coref:	IDENT			4	12-13	Mendocino County 
+			name:	LOCATION				12-13	Mendocino County 
+	13	County
+	14	,
+	15	California
+			coref:	IDENT			3	15-15	California 
+			name:	STATE_OR_PROVINCE				15-15	California 
+	16	,
+	17	United
+			name:	COUNTRY				17-18	United States 
+	18	States
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Willits is located north - northwest of Ukiah , at an elevation of 1391 feet ( 424 m ) .
+
+
+Treebanked sentence:
+--------------------
+Willits is located north - northwest of Ukiah , at an elevation of 1391 feet ( 424 m ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Willits))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (ADVP (RB north) (HYPH -) (RB northwest))
+        (PP (IN of)
+          (NP (NNP Ukiah)))
+        (, ,)
+        (PP (IN at)
+          (NP
+            (NP (DT an) (NN elevation))
+            (PP (IN of)
+              (NP (CD 1391) (NNS feet)))))
+        (PRN (-LRB- -LRB-)
+          (NP (CD 424) (NN m))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Willits
+			name:	LOCATION				0-0	Willits 
+	1	is
+			sense:	be.v.03
+			prop:	be.03
+			V		1-1	is 
+	2	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		2-2	located 
+			N-ARG-A1		0-0	Willits 
+			N-ARGM-LOC		3-7	north - northwest of Ukiah 
+			N-ARGM-LOC		9-18	at an elevation of 1391 feet ( 424 m ) 
+	3	north
+			sense:	north.r.01
+	4	-
+	5	northwest
+			sense:	northwest.r.01
+	6	of
+	7	Ukiah
+			name:	CITY				7-7	Ukiah 
+	8	,
+	9	at
+	10	an
+	11	elevation
+			sense:	elevation.n.05
+	12	of
+	13	1391
+			name:	DATE				13-13	1391 
+	14	feet
+			sense:	foot.n.02
+	15	(
+	16	424
+			name:	NUMBER				16-16	424 
+	17	m
+			sense:	meter.n.01
+	18	)
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The population was 4,888 at the 2010 census , down from 5,073 at the 2000 census .
+
+
+Treebanked sentence:
+--------------------
+The population was 4,888 at the 2010 census , down from 5,073 at the 2000 census . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN population))
+    (VP (VBD was)
+      (NP
+        (NP (CD 4,888))
+        (PP (IN at)
+          (NP (DT the) (CD 2010) (NN census))))
+      (, ,)
+      (ADVP (RB down)
+        (PP (IN from)
+          (NP
+            (NP (CD 5,073))
+            (PP (IN at)
+              (NP (DT the) (CD 2000) (NN census)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	population
+			sense:	population.n.04
+	2	was
+			sense:	equal.v.01
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	The population 
+			N-ARG-A2		3-3	4,888 
+			N-ARGM-TMP		4-7	at the 2010 census 
+			C-ARG-A2		9-15	down from 5,073 at the 2000 census 
+	3	4,888
+			name:	NUMBER				3-3	4,888 
+	4	at
+	5	the
+			coref:	IDENT			0	5-7	the 2010 census 
+	6	2010
+			name:	DATE				6-6	2010 
+	7	census
+			sense:	census.n.01
+	8	,
+	9	down
+			sense:	down.r.01
+	10	from
+	11	5,073
+			name:	NUMBER				11-11	5,073 
+	12	at
+	13	the
+			coref:	IDENT			0	13-15	the 2000 census 
+	14	2000
+			name:	DATE				14-14	2000 
+	15	census
+			sense:	census.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Willits is at the center of Mendocino County and at the beginning of the county 's extensive redwood forests as approached by Highway 101 from the south .
+
+
+Treebanked sentence:
+--------------------
+Willits is at the center of Mendocino County and at the beginning of the county 's extensive redwood forests as approached by Highway 101 from the south . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Willits))
+    (VP (VBZ is)
+      (PP
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NN center))
+            (PP (IN of)
+              (NP (NNP Mendocino) (NNP County)))))
+        (CC and)
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NN beginning))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN county) (POS 's))
+                (JJ extensive) (NN redwood) (NNS forests))))))
+      (SBAR (IN as)
+        (S
+          (VP (VBN approached)
+            (PP (IN by)
+              (NP (NN Highway) (CD 101)))
+            (PP (IN from)
+              (NP (DT the) (NN south)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Willits
+			name:	PERSON				0-0	Willits 
+	1	is
+			sense:	be.v.03
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Willits 
+			N-ARG-A2		2-26	at the center of Mendocino County and at the beginning of the county 's extensive redwood forests as approached by Highway 101 from the south 
+	2	at
+	3	the
+	4	center
+			sense:	center.n.01
+	5	of
+	6	Mendocino
+			coref:	IDENT			4	6-7	Mendocino County 
+			name:	LOCATION				6-7	Mendocino County 
+	7	County
+	8	and
+	9	at
+	10	the
+	11	beginning
+			sense:	beginning.n.04
+	12	of
+	13	the
+			coref:	IDENT			4	13-15	the county 's 
+	14	county
+			sense:	county.n.01
+	15	's
+	16	extensive
+			sense:	extensive.s.01
+	17	redwood
+			sense:	sequoia.n.01
+	18	forests
+			sense:	forest.n.01
+	19	as
+	20	approached
+			sense:	approach.v.01
+			prop:	approach.01
+			V		20-20	approached 
+			N-ARG-A2		0-0	Willits 
+			N-ARG-A1		21-23	by Highway 101 
+			N-ARGM-DIR		24-26	from the south 
+	21	by
+	22	Highway
+			sense:	highway.n.01
+	23	101
+			name:	NUMBER				23-23	101 
+	24	from
+	25	the
+	26	south
+			sense:	south.n.03
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+An arch donated to the city by Reno , Nevada in 1995 stands in the center of town .
+
+
+Treebanked sentence:
+--------------------
+An arch donated to the city by Reno , Nevada in 1995 stands in the center of town . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT An) (NN arch))
+    (VP (VBN donated)
+      (PP (IN to)
+        (NP (DT the) (NN city)))
+      (PP (IN by)
+        (NP (NNP Reno) (, ,) (NNP Nevada)))
+      (PP (IN in)
+        (NP
+          (NP (CD 1995) (NNS stands))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN center))
+              (PP (IN of)
+                (NP (NN town))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	An
+	1	arch
+			sense:	arch.n.04
+	2	donated
+			sense:	donate.v.01
+			prop:	donate.01
+			V		2-2	donated 
+			N-ARG-A1		0-1	An arch 
+			N-ARG-A2		3-5	to the city 
+			N-ARG-A0		6-9	by Reno , Nevada 
+			N-ARGM-TMP		10-11	in 1995 
+	3	to
+	4	the
+	5	city
+			sense:	city.n.01
+	6	by
+	7	Reno
+			coref:	IDENT			2	7-7	Reno 
+			name:	PERSON				7-7	Reno 
+	8	,
+	9	Nevada
+			name:	STATE_OR_PROVINCE				9-9	Nevada 
+	10	in
+	11	1995
+			name:	DATE				11-11	1995 
+	12	stands
+			sense:	stand.n.02
+	13	in
+	14	the
+	15	center
+			sense:	center.n.01
+	16	of
+	17	town
+			sense:	town.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Arch is the repurposed second version of the Reno Arch , from which the City of Willits removed most of the original plastic panels and of which it replaced the star with the flag of the United States and the slogan of Reno with its own slogans " Gateway to the Redwoods " and " Heart of Mendocino County " .
+
+
+Treebanked sentence:
+--------------------
+The Arch is the repurposed second version of the Reno Arch , from which the City of Willits removed most of the original plastic panels and of which it replaced the star with the flag of the United States and the slogan of Reno with its own slogans " Gateway to the Redwoods " and " Heart of Mendocino County " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Arch))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ repurposed) (JJ second) (NN version))
+        (PP (IN of)
+          (NP (DT the) (NNP Reno) (NNP Arch))))
+      (, ,)
+      (SBAR
+        (SBAR
+          (WHPP (IN from)
+            (WHNP (WDT which)))
+          (S
+            (NP
+              (NP (DT the) (NNP City))
+              (PP (IN of)
+                (NP (NNP Willits))))
+            (VP (VBD removed)
+              (NP
+                (NP (JJS most))
+                (PP (IN of)
+                  (NP (DT the) (JJ original) (NN plastic) (NNS panels)))))))
+        (CC and)
+        (SBAR
+          (WHPP (IN of)
+            (WHNP (WDT which)))
+          (S
+            (NP (PRP it))
+            (VP (VBD replaced)
+              (NP (DT the) (NN star))
+              (PP (IN with)
+                (NP
+                  (NP
+                    (NP (DT the) (NN flag))
+                    (PP (IN of)
+                      (NP (DT the) (NNP United) (NNP States))))
+                  (CC and)
+                  (NP
+                    (NP (DT the) (NN slogan))
+                    (PP (IN of)
+                      (NP (NNP Reno))))))
+              (PP (IN with)
+                (NP (PRP$ its) (JJ own) (NNS slogans) ('' ") (NN Gateway)))
+              (PP (IN to)
+                (NP
+                  (NP (DT the) (NNPS Redwoods))
+                  ('' ")
+                  (CC and)
+                  (`` ")
+                  (NP
+                    (NP (NNP Heart))
+                    (PP (IN of)
+                      (NP (NNP Mendocino) (NNP County))))
+                  ('' "))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Arch
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The Arch 
+			N-ARG-A2		3-60	the repurposed second version of the Reno Arch , from which the City of Willits removed most of the original plastic panels and of which it replaced the star with the flag of the United States and the slogan of Reno with its own slogans " Gateway to the Redwoods " and " Heart of Mendocino County " 
+	3	the
+			name:	DATE				3-5	the repurposed second 
+	4	repurposed
+	5	second
+			sense:	second.s.01
+	6	version
+			sense:	version.n.02
+	7	of
+	8	the
+	9	Reno
+			name:	ORGANIZATION				9-10	Reno Arch 
+	10	Arch
+	11	,
+	12	from
+	13	which
+	14	the
+			coref:	IDENT			1	14-17	the City of Willits 
+	15	City
+	16	of
+	17	Willits
+			name:	LOCATION				17-17	Willits 
+	18	removed
+			sense:	remove.v.01
+			prop:	remove.01
+			V		18-18	removed 
+			N-ARG-A2		3-10	the repurposed second version of the Reno Arch 
+			R-ARG-A2		12-13	from which 
+			N-ARG-A0		14-17	the City of Willits 
+			N-ARG-A1		19-24	most of the original plastic panels 
+	19	most
+			sense:	most.a.02
+	20	of
+	21	the
+	22	original
+			sense:	original.s.01
+	23	plastic
+			sense:	plastic.n.01
+	24	panels
+			sense:	panel.n.01
+	25	and
+	26	of
+	27	which
+	28	it
+			coref:	IDENT			1	28-28	it 
+	29	replaced
+			sense:	replace.v.01
+			prop:	replace.01
+			V		29-29	replaced 
+			N-ARG-A0		28-28	it 
+			N-ARG-A1		30-31	the star 
+			N-ARG-A2		32-40	with the flag of the United States and the 
+			C-ARG-A1		41-43	slogan of Reno 
+			N-ARG-A2		44-60	with its own slogans " Gateway to the Redwoods " and " Heart of Mendocino County " 
+	30	the
+	31	star
+			sense:	star.n.05
+	32	with
+	33	the
+	34	flag
+			sense:	flag.n.01
+	35	of
+	36	the
+	37	United
+			name:	COUNTRY				37-38	United States 
+	38	States
+	39	and
+	40	the
+	41	slogan
+			sense:	motto.n.01
+	42	of
+	43	Reno
+			coref:	IDENT			2	43-43	Reno 
+			name:	PERSON				43-43	Reno 
+	44	with
+	45	its
+			coref:	IDENT			1	45-45	its 
+	46	own
+			sense:	own.s.01
+	47	slogans
+			sense:	motto.n.01
+	48	"
+	49	Gateway
+			sense:	gateway.n.01
+	50	to
+	51	the
+	52	Redwoods
+			name:	MISC				52-52	Redwoods 
+	53	"
+	54	and
+	55	"
+	56	Heart
+	57	of
+	58	Mendocino
+			coref:	IDENT			4	58-59	Mendocino County 
+			name:	LOCATION				58-59	Mendocino County 
+	59	County
+	60	"
+	61	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Sherwood Valley Rancheria of Pomo Indians of California is headquartered in Willits .
+
+
+Treebanked sentence:
+--------------------
+The Sherwood Valley Rancheria of Pomo Indians of California is headquartered in Willits . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Sherwood) (NNP Valley) (NNP Rancheria))
+      (PP (IN of)
+        (NP
+          (NP (NNP Pomo) (NNPS Indians))
+          (PP (IN of)
+            (NP (NNP California))))))
+    (VP (VBZ is)
+      (VP (VBN headquartered)
+        (PP (IN in)
+          (NP (NNP Willits)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Sherwood
+			name:	CITY				1-2	Sherwood Valley 
+	2	Valley
+	3	Rancheria
+			name:	LOCATION				3-3	Rancheria 
+	4	of
+	5	Pomo
+	6	Indians
+	7	of
+	8	California
+			coref:	IDENT			3	8-8	California 
+			name:	STATE_OR_PROVINCE				8-8	California 
+	9	is
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	is 
+	10	headquartered
+			sense:	headquarter.v.01
+			prop:	headquarter.01
+			V		10-10	headquartered 
+			N-ARG-A1		0-8	The Sherwood Valley Rancheria of Pomo Indians of California 
+			N-ARGM-LOC		11-12	in Willits 
+	11	in
+	12	Willits
+			name:	LOCATION				12-12	Willits 
+	13	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.5-7	the 2010 census 
+				2.13-15	the 2000 census 
+	Chain 1 (IDENT)
+				5.14-17	the City of Willits 
+				5.28-28	it 
+				5.45-45	its 
+	Chain 2 (IDENT)
+				4.7-7	Reno 
+				5.43-43	Reno 
+	Chain 3 (IDENT)
+				0.15-15	California 
+				6.8-8	California 
+	Chain 4 (IDENT)
+				0.12-13	Mendocino County 
+				3.6-7	Mendocino County 
+				3.13-15	the county 's 
+				5.58-59	Mendocino County 
+

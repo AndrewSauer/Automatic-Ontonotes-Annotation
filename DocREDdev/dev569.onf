@@ -1,0 +1,541 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The ( Austrian ) Ost Autobahn A4 or " Eastern Motorway " is part of the European route E60 and goes from Vienna to the town of Nickelsdorf , on the Hungarian border .
+
+
+Treebanked sentence:
+--------------------
+The ( Austrian ) Ost Autobahn A4 or " Eastern Motorway " is part of the European route E60 and goes from Vienna to the town of Nickelsdorf , on the Hungarian border . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The)
+        (ADJP (-LRB- -LRB-) (JJ Austrian) (-RRB- -RRB-))
+        (NML (NNP Ost) (NNP Autobahn))
+        (NN A4))
+      (CC or)
+      (NP (`` ") (NNP Eastern) (NNP Motorway) ('' ")))
+    (VP
+      (VP (VBZ is)
+        (NP
+          (NP (NN part))
+          (PP (IN of)
+            (NP (DT the) (JJ European) (NN route) (NN E60)))))
+      (CC and)
+      (VP (VBZ goes)
+        (PP (IN from)
+          (NP (NNP Vienna)))
+        (PP (IN to)
+          (NP
+            (NP (DT the) (NN town))
+            (PP (IN of)
+              (NP (NNP Nickelsdorf)))
+            (, ,)
+            (PP (IN on)
+              (NP (DT the) (JJ Hungarian) (NN border)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	(
+	2	Austrian
+			name:	NATIONALITY				2-2	Austrian 
+	3	)
+	4	Ost
+			name:	MISC				4-5	Ost Autobahn 
+	5	Autobahn
+	6	A4
+	7	or
+	8	"
+	9	Eastern
+			name:	MISC				9-10	Eastern Motorway 
+	10	Motorway
+	11	"
+	12	is
+			sense:	be.v.01
+			prop:	be.01
+			V		12-12	is 
+			N-ARG-A1		0-11	The ( Austrian ) Ost Autobahn A4 or " Eastern Motorway " 
+			N-ARG-A2		13-18	part of the European route E60 
+	13	part
+			sense:	part.n.01
+	14	of
+	15	the
+	16	European
+			name:	NATIONALITY				16-16	European 
+	17	route
+			sense:	road.n.01
+	18	E60
+	19	and
+	20	goes
+			sense:	run.v.03
+			prop:	go.06
+			V		20-20	goes 
+			N-ARG-A1		0-11	The ( Austrian ) Ost Autobahn A4 or " Eastern Motorway " 
+			N-ARG-A2		23-32	to the town of Nickelsdorf , on the Hungarian border 
+	21	from
+	22	Vienna
+			coref:	IDENT			3	22-22	Vienna 
+			name:	CITY				22-22	Vienna 
+	23	to
+	24	the
+	25	town
+			sense:	town.n.01
+	26	of
+	27	Nickelsdorf
+			coref:	IDENT			0	27-27	Nickelsdorf 
+			name:	LOCATION				27-27	Nickelsdorf 
+	28	,
+	29	on
+	30	the
+			coref:	IDENT			4	30-32	the Hungarian border 
+	31	Hungarian
+			name:	NATIONALITY				31-31	Hungarian 
+	32	border
+			sense:	boundary_line.n.01
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The road begins at the A23 at the Prater junction in Vienna , travels through Simmering , Schwechat , Vienna International Airport , Fischamend , Bruck an der Leitha , Parndorf , Weiden am See and Mönchhof to the border town of Nickelsdorf .
+
+
+Treebanked sentence:
+--------------------
+The road begins at the A23 at the Prater junction in Vienna , travels through Simmering , Schwechat , Vienna International Airport , Fischamend , Bruck an der Leitha , Parndorf , Weiden am See and Mönchhof to the border town of Nickelsdorf . 
+
+Tree:
+-----
+(ROOT
+  (SINV
+    (S
+      (NP (DT The) (NN road))
+      (VP (VBZ begins)
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NN A23))
+            (PP (IN at)
+              (NP (DT the) (NNP Prater) (NN junction)))))
+        (PP (IN in)
+          (NP (NNP Vienna)))))
+    (, ,)
+    (VP (VBZ travels)
+      (PP (IN through)
+        (S
+          (VP (VBG Simmering)
+            (NP (, ,) (NNP Schwechat) (, ,) (NNP Vienna) (NNP International))))))
+    (NP
+      (NP (NNP Airport) (, ,) (NNP Fischamend) (, ,) (NNP Bruck))
+      (SBAR
+        (S
+          (NP (DT an) (NNP der)
+            (NML (NNP Leitha) (, ,) (NNP Parndorf) (, ,))
+            (NNP Weiden))
+          (VP (VBP am)
+            (NP
+              (NP (NNP See)
+                (CC and)
+                (NNP Mönchhof))
+              (PP (IN to)
+                (NP
+                  (NP (DT the) (NN border) (NN town))
+                  (PP (IN of)
+                    (NP (NNP Nickelsdorf))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	road
+			sense:	road.n.01
+	2	begins
+			sense:	begin.v.02
+			prop:	begin.01
+			V		2-2	begins 
+			N-ARG-A1		0-1	The road 
+			N-ARGM-LOC		3-5	at the A23 
+			N-ARGM-LOC		6-9	at the Prater junction 
+			N-ARGM-LOC		10-11	in Vienna 
+	3	at
+	4	the
+	5	A23
+	6	at
+	7	the
+	8	Prater
+			name:	LOCATION				8-8	Prater 
+	9	junction
+			sense:	junction.n.01
+	10	in
+	11	Vienna
+			coref:	IDENT			3	11-11	Vienna 
+			name:	CITY				11-11	Vienna 
+	12	,
+	13	travels
+			sense:	travel.v.01
+			prop:	travel.01
+			V		13-13	travels 
+			N-ARG-A0		0-1	The road 
+			N-ARG-A1		14-36	through Simmering , Schwechat , Vienna International Airport , Fischamend , Bruck an der Leitha , Parndorf , Weiden am See and Mönchhof 
+	14	through
+	15	Simmering
+			sense:	simmer.v.01
+			prop:	simmer.01
+			V		15-15	Simmering 
+	16	,
+	17	Schwechat
+			name:	CITY				17-17	Schwechat 
+	18	,
+	19	Vienna
+			name:	CITY				19-19	Vienna 
+	20	International
+			name:	LOCATION				20-21	International Airport 
+	21	Airport
+	22	,
+	23	Fischamend
+	24	,
+	25	Bruck
+			name:	CITY				25-28	Bruck an der Leitha 
+	26	an
+	27	der
+	28	Leitha
+	29	,
+	30	Parndorf
+			name:	LOCATION				30-30	Parndorf 
+	31	,
+	32	Weiden
+			name:	PERSON				32-32	Weiden 
+	33	am
+			sense:	be.v.01
+			prop:	be.01
+			V		33-33	am 
+			N-ARG-A1		32-32	Weiden 
+			N-ARG-A2		34-34	See 
+	34	See
+	35	and
+	36	Mönchhof
+	37	to
+	38	the
+	39	border
+			sense:	boundary_line.n.01
+	40	town
+			sense:	town.n.01
+	41	of
+	42	Nickelsdorf
+			coref:	IDENT			0	42-42	Nickelsdorf 
+			name:	LOCATION				42-42	Nickelsdorf 
+	43	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Crossing the border into Hegyeshalom , the road becomes the Hungarian M1 motorway which then continues on to Budapest .
+
+
+Treebanked sentence:
+--------------------
+Crossing the border into Hegyeshalom , the road becomes the Hungarian M1 motorway which then continues on to Budapest . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBG Crossing)
+        (NP (DT the) (NN border))
+        (PP (IN into)
+          (NP (NNP Hegyeshalom)))))
+    (, ,)
+    (NP (DT the) (NN road))
+    (VP (VBZ becomes)
+      (NP
+        (NP (DT the) (JJ Hungarian) (NN M1) (NN motorway))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (ADVP (RB then))
+            (VP (VBZ continues)
+              (PP (IN on)
+                (PP (IN to)
+                  (NP (NNP Budapest)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Crossing
+			sense:	traverse.v.01
+			prop:	cross.02
+			V		0-0	Crossing 
+			N-ARG-A1		1-2	the border 
+			N-ARG-A0		6-7	the road 
+	1	the
+			coref:	IDENT			4	1-2	the border 
+	2	border
+			sense:	boundary_line.n.01
+	3	into
+	4	Hegyeshalom
+			name:	CITY				4-4	Hegyeshalom 
+	5	,
+	6	the
+	7	road
+			sense:	road.n.01
+	8	becomes
+			sense:	become.v.02
+			prop:	become.01
+			V		8-8	becomes 
+			N-ARG-A1		6-7	the road 
+			N-ARG-A2		9-18	the Hungarian M1 motorway which then continues on to Budapest 
+	9	the
+	10	Hungarian
+			name:	NATIONALITY				10-10	Hungarian 
+	11	M1
+			sense:	m1.n.01
+	12	motorway
+			sense:	expressway.n.01
+	13	which
+	14	then
+			sense:	then.r.01
+	15	continues
+			sense:	proceed.v.02
+			prop:	continue.01
+			V		15-15	continues 
+			N-ARG-A1		9-12	the Hungarian M1 motorway 
+			R-ARG-A1		13-13	which 
+			N-ARGM-TMP		14-14	then 
+			N-ARGM-DIR		16-16	on 
+			N-ARGM-GOL		17-18	to Budapest 
+	16	on
+	17	to
+	18	Budapest
+			name:	CITY				18-18	Budapest 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The road is 66   km long .
+
+
+Treebanked sentence:
+--------------------
+The road is 66 km long . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN road))
+    (VP (VBZ is)
+      (ADVP
+        (NP (CD 66) (NN km))
+        (RB long)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	road
+			sense:	road.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The road 
+			N-ARG-A2		3-5	66 km long 
+	3	66
+			name:	NUMBER				3-3	66 
+	4	km
+			sense:	kilometer.n.01
+	5	long
+			sense:	long.r.02
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+During the overflow of asylum seekers traveling from Hungary during September 2015 , the highway was closed intermittently preventing the traffic between Hungary and Austria , and it was reported that Austrian army was deployed on the border .
+
+
+Treebanked sentence:
+--------------------
+During the overflow of asylum seekers traveling from Hungary during September 2015 , the highway was closed intermittently preventing the traffic between Hungary and Austria , and it was reported that Austrian army was deployed on the border . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN During)
+      (NP
+        (NP (DT the) (NN overflow))
+        (PP (IN of)
+          (NP
+            (NP (NN asylum) (NNS seekers))
+            (VP (VBG traveling)
+              (PP (IN from)
+                (NP (NNP Hungary)))
+              (PP (IN during)
+                (NP (NNP September) (CD 2015))))))))
+    (, ,)
+    (S
+      (NP (DT the) (NN highway))
+      (VP (VBD was)
+        (VP (VBN closed)
+          (ADVP (RB intermittently))
+          (S
+            (VP (VBG preventing)
+              (NP
+                (NP (DT the) (NN traffic))
+                (PP (IN between)
+                  (NP (NNP Hungary)
+                    (CC and)
+                    (NNP Austria)))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBD was)
+        (VP (VBN reported)
+          (SBAR (IN that)
+            (S
+              (NP (JJ Austrian) (NN army))
+              (VP (VBD was)
+                (VP (VBN deployed)
+                  (PP (IN on)
+                    (NP (DT the) (NN border))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	During
+	1	the
+	2	overflow
+			sense:	flood.n.04
+	3	of
+	4	asylum
+			sense:	refuge.n.03
+	5	seekers
+			sense:	seeker.n.01
+	6	traveling
+			sense:	travel.v.01
+			prop:	travel.01
+			V		6-6	traveling 
+			N-ARG-A0		4-5	asylum seekers 
+			N-ARGM-DIR		7-8	from Hungary 
+			N-ARGM-TMP		9-11	during September 2015 
+	7	from
+	8	Hungary
+			coref:	IDENT			1	8-8	Hungary 
+			name:	COUNTRY				8-8	Hungary 
+	9	during
+	10	September
+			name:	DATE				10-11	September 2015 
+	11	2015
+	12	,
+	13	the
+			coref:	IDENT			2	13-14	the highway 
+	14	highway
+			sense:	highway.n.01
+	15	was
+			sense:	be.v.01
+			prop:	be.03
+			V		15-15	was 
+	16	closed
+			sense:	close.v.14
+			prop:	close.01
+			V		16-16	closed 
+			N-ARGM-TMP		0-11	During the overflow of asylum seekers traveling from Hungary during September 2015 
+			N-ARG-A1		13-14	the highway 
+			N-ARGM-ADV		17-24	intermittently preventing the traffic between Hungary and Austria 
+	17	intermittently
+			sense:	intermittently.r.01
+	18	preventing
+			sense:	prevent.v.02
+			prop:	prevent.01
+			V		18-18	preventing 
+			N-ARG-A1		19-24	the traffic between Hungary and Austria 
+	19	the
+	20	traffic
+			sense:	traffic.n.01
+	21	between
+	22	Hungary
+			coref:	IDENT			1	22-22	Hungary 
+			name:	COUNTRY				22-22	Hungary 
+	23	and
+	24	Austria
+			name:	COUNTRY				24-24	Austria 
+	25	,
+	26	and
+	27	it
+			coref:	IDENT			2	27-27	it 
+	28	was
+			sense:	be.v.01
+			prop:	be.03
+			V		28-28	was 
+	29	reported
+			sense:	report.v.02
+			prop:	report.01
+			V		29-29	reported 
+			N-ARG-A1		30-37	that Austrian army was deployed on the border 
+	30	that
+	31	Austrian
+			name:	NATIONALITY				31-31	Austrian 
+	32	army
+			sense:	army.n.01
+	33	was
+			sense:	be.v.01
+			prop:	be.03
+			V		33-33	was 
+	34	deployed
+			sense:	deploy.v.01
+			prop:	deploy.01
+			V		34-34	deployed 
+			N-ARG-A1		31-32	Austrian army 
+			N-ARGM-LOC		35-37	on the border 
+	35	on
+	36	the
+			coref:	IDENT			4	36-37	the border 
+	37	border
+			sense:	margin.n.01
+	38	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.27-27	Nickelsdorf 
+				1.42-42	Nickelsdorf 
+	Chain 1 (IDENT)
+				4.8-8	Hungary 
+				4.22-22	Hungary 
+	Chain 2 (IDENT)
+				4.13-14	the highway 
+				4.27-27	it 
+	Chain 3 (IDENT)
+				0.22-22	Vienna 
+				1.11-11	Vienna 
+	Chain 4 (IDENT)
+				0.30-32	the Hungarian border 
+				2.1-2	the border 
+				4.36-37	the border 
+

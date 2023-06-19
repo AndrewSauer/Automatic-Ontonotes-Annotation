@@ -1,0 +1,585 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Wayne State University College of Engineering is responsible for all engineering related programs at Wayne State University .
+
+
+Treebanked sentence:
+--------------------
+The Wayne State University College of Engineering is responsible for all engineering related programs at Wayne State University . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Wayne)
+        (NML (NNP State) (NNP University))
+        (NNP College))
+      (PP (IN of)
+        (NP (NNP Engineering))))
+    (VP (VBZ is)
+      (ADJP (JJ responsible)
+        (PP (IN for)
+          (NP
+            (NP
+              (ADJP
+                (NML (DT all) (NN engineering))
+                (VBN related))
+              (NNS programs))
+            (PP (IN at)
+              (NP (NNP Wayne) (NNP State) (NNP University)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Wayne
+			name:	ORGANIZATION				1-6	Wayne State University College of Engineering 
+	2	State
+	3	University
+	4	College
+	5	of
+	6	Engineering
+	7	is
+			sense:	be.v.01
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		0-6	The Wayne State University College of Engineering 
+			N-ARG-A2		8-17	responsible for all engineering related programs at Wayne State University 
+	8	responsible
+			sense:	responsible.s.02
+	9	for
+	10	all
+	11	engineering
+			sense:	engineering.n.02
+	12	related
+			sense:	refer.v.02
+			prop:	relate.01
+			V		12-12	related 
+			N-ARG-A2		11-11	engineering 
+			N-ARG-A1		13-13	programs 
+	13	programs
+			sense:	course_of_study.n.01
+	14	at
+	15	Wayne
+			name:	ORGANIZATION				15-17	Wayne State University 
+	16	State
+	17	University
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+With alumni of the college totaling over 25,000 , it is one of the premier engineering colleges in Michigan along with being in the top 30 % of the country .
+
+
+Treebanked sentence:
+--------------------
+With alumni of the college totaling over 25,000 , it is one of the premier engineering colleges in Michigan along with being in the top 30 % of the country . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN With)
+      (NP
+        (NP (NNS alumni))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN college))
+            (VP (VBG totaling)
+              (PP (IN over)
+                (NP (CD 25,000))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN premier) (NN engineering) (NNS colleges))
+            (PP (IN in)
+              (NP (NNP Michigan)))
+            (ADVP (IN along)
+              (PP (IN with)
+                (S
+                  (VP (VBG being)
+                    (PP (IN in)
+                      (NP
+                        (NP (DT the) (JJ top) (CD 30) (NN %))
+                        (PP (IN of)
+                          (NP (DT the) (NN country)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	With
+	1	alumni
+			sense:	alumnus.n.01
+	2	of
+	3	the
+	4	college
+			sense:	college.n.01
+	5	totaling
+			sense:	total.v.01
+			prop:	total.01
+			V		5-5	totaling 
+			N-ARG-A1		1-4	alumni of the college 
+			N-ARG-A2		6-7	over 25,000 
+	6	over
+	7	25,000
+			name:	NUMBER				7-7	25,000 
+	8	,
+	9	it
+	10	is
+			sense:	be.v.01
+			prop:	be.01
+			V		10-10	is 
+			N-ARGM-ADV		0-7	With alumni of the college totaling over 25,000 
+			N-ARG-A1		9-9	it 
+			N-ARG-A2		11-18	one of the premier engineering colleges in Michigan 
+	11	one
+			name:	NUMBER				11-11	one 
+	12	of
+	13	the
+	14	premier
+			name:	TITLE				14-14	premier 
+			sense:	chancellor.n.02
+	15	engineering
+			sense:	engineering.n.02
+	16	colleges
+			sense:	college.n.01
+	17	in
+	18	Michigan
+			coref:	IDENT			0	18-18	Michigan 
+			name:	STATE_OR_PROVINCE				18-18	Michigan 
+	19	along
+	20	with
+	21	being
+			sense:	be.v.03
+			prop:	be.01
+			V		21-21	being 
+			N-ARG-A1		9-9	it 
+			N-ARG-A2		22-29	in the top 30 % of the country 
+	22	in
+	23	the
+	24	top
+			sense:	top.a.01
+	25	30
+			name:	PERCENT				25-26	30 % 
+	26	%
+	27	of
+	28	the
+			coref:	IDENT			0	28-29	the country 
+	29	country
+			sense:	country.n.02
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Founded in 1933 , the College of Engineering has grown to include a variety of programs ranging from civil engineering , biomedical engineering , and many others .
+
+
+Treebanked sentence:
+--------------------
+Founded in 1933 , the College of Engineering has grown to include a variety of programs ranging from civil engineering , biomedical engineering , and many others . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Founded)
+        (PP (IN in)
+          (NP (CD 1933)))))
+    (, ,)
+    (NP
+      (NP (DT the) (NNP College))
+      (PP (IN of)
+        (NP (NNP Engineering))))
+    (VP (VBZ has)
+      (VP (VBN grown)
+        (S
+          (VP (TO to)
+            (VP (VB include)
+              (NP
+                (NP (DT a) (NN variety))
+                (PP (IN of)
+                  (NP
+                    (NP (NNS programs))
+                    (VP (VBG ranging)
+                      (PP (IN from)
+                        (NP
+                          (UCP
+                            (NML (JJ civil) (NN engineering))
+                            (, ,)
+                            (NML (JJ biomedical) (NN engineering))
+                            (, ,)
+                            (CC and)
+                            (ADJP (JJ many)))
+                          (NNS others))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		0-0	Founded 
+			N-ARGM-TMP		1-2	in 1933 
+			N-ARG-A1		4-7	the College of Engineering 
+	1	in
+	2	1933
+			name:	DATE				2-2	1933 
+	3	,
+	4	the
+	5	College
+			name:	ORGANIZATION				5-7	College of Engineering 
+	6	of
+	7	Engineering
+	8	has
+			sense:	have.v.01
+			prop:	have.01
+			V		8-8	has 
+	9	grown
+			sense:	grow.v.02
+			prop:	grow.01
+			V		9-9	grown 
+			N-ARG-A1		4-7	the College of Engineering 
+			N-ARG-A4		10-26	to include a variety of programs ranging from civil engineering , biomedical engineering , and many others 
+	10	to
+	11	include
+			sense:	include.v.01
+			prop:	include.01
+			V		11-11	include 
+			N-ARG-A2		4-7	the College of Engineering 
+			N-ARG-A1		12-26	a variety of programs ranging from civil engineering , biomedical engineering , and many others 
+	12	a
+	13	variety
+			sense:	assortment.n.01
+	14	of
+	15	programs
+			sense:	course_of_study.n.01
+	16	ranging
+			sense:	range.v.01
+			prop:	range.01
+			V		16-16	ranging 
+			N-ARG-A1		15-15	programs 
+			N-ARG-A3		17-20	from civil engineering , 
+			N-ARG-A4		21-21	biomedical 
+			N-ARG-A3		22-22	engineering 
+			N-ARG-A4		23-26	, and many others 
+	17	from
+	18	civil
+			sense:	civil.s.01
+	19	engineering
+			sense:	engineering.n.02
+	20	,
+	21	biomedical
+			sense:	biomedical.a.01
+	22	engineering
+			sense:	engineering.n.02
+	23	,
+	24	and
+	25	many
+			sense:	many.a.01
+	26	others
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is one of only 24 PACE partner labs in the country as well as being a leader in biomedical engineering .
+
+
+Treebanked sentence:
+--------------------
+It is one of only 24 PACE partner labs in the country as well as being a leader in biomedical engineering . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP
+                (QP (RB only) (CD 24))
+                (NML (NN PACE) (NN partner))
+                (NNS labs))
+              (PP (IN in)
+                (NP (DT the) (NN country))))
+            (CONJP (RB as) (RB well) (IN as))
+            (S
+              (VP (VBG being)
+                (NP
+                  (NP (DT a) (NN leader))
+                  (PP (IN in)
+                    (NP (JJ biomedical) (NN engineering))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-20	one of only 24 PACE partner labs in the country as well as being a leader in biomedical engineering 
+	2	one
+			name:	NUMBER				2-2	one 
+	3	of
+	4	only
+			sense:	merely.r.01
+	5	24
+			name:	NUMBER				5-5	24 
+	6	PACE
+			sense:	pace.n.03
+	7	partner
+			sense:	collaborator.n.03
+	8	labs
+			sense:	lab.n.01
+	9	in
+	10	the
+			coref:	IDENT			0	10-11	the country 
+	11	country
+			sense:	country.n.02
+	12	as
+			sense:	equally.r.01
+	13	well
+			sense:	well.r.01
+	14	as
+	15	being
+			sense:	be.v.01
+			prop:	be.01
+			V		15-15	being 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		16-20	a leader in biomedical engineering 
+	16	a
+	17	leader
+			name:	TITLE				17-17	leader 
+			sense:	leader.n.01
+	18	in
+	19	biomedical
+			sense:	biomedical.a.01
+	20	engineering
+			sense:	engineering.n.02
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The College of Engineering is located in the Wayne State campus in Detroit .
+
+
+Treebanked sentence:
+--------------------
+The College of Engineering is located in the Wayne State campus in Detroit . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP College))
+      (PP (IN of)
+        (NP (NNP Engineering))))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN in)
+          (NP
+            (NP (DT the)
+              (NML (NNP Wayne) (NNP State))
+              (NN campus))
+            (PP (IN in)
+              (NP (NNP Detroit)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	College
+			name:	ORGANIZATION				1-3	College of Engineering 
+	2	of
+	3	Engineering
+	4	is
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	is 
+	5	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		5-5	located 
+			N-ARG-A1		0-3	The College of Engineering 
+			N-ARGM-LOC		6-12	in the Wayne State campus in Detroit 
+	6	in
+	7	the
+	8	Wayne
+			name:	CITY				8-8	Wayne 
+	9	State
+			name:	LOCATION				9-9	State 
+	10	campus
+			sense:	campus.n.01
+	11	in
+	12	Detroit
+			name:	CITY				12-12	Detroit 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is located in the College of Engineering building which is shared with the Danto Engineering Development Center .
+
+
+Treebanked sentence:
+--------------------
+It is located in the College of Engineering building which is shared with the Danto Engineering Development Center . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN in)
+          (NP
+            (NP
+              (NP (DT the) (NNP College))
+              (PP (IN of)
+                (NP (NNP Engineering) (NN building))))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ is)
+                  (VP (VBN shared)
+                    (PP (IN with)
+                      (NP (DT the) (NNP Danto)
+                        (NML (NNP Engineering) (NNP Development))
+                        (NNP Center)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		2-2	located 
+			N-ARG-A1		0-0	It 
+			N-ARGM-LOC		3-17	in the College of Engineering building which is shared with the Danto Engineering Development Center 
+	3	in
+	4	the
+	5	College
+			name:	ORGANIZATION				5-7	College of Engineering 
+	6	of
+	7	Engineering
+	8	building
+			sense:	building.n.01
+	9	which
+	10	is
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	is 
+	11	shared
+			sense:	share.v.02
+			prop:	share.01
+			V		11-11	shared 
+			N-ARG-A1		4-8	the College of Engineering building 
+			R-ARG-A1		9-9	which 
+			N-ARG-A2		12-17	with the Danto Engineering Development Center 
+	12	with
+	13	the
+	14	Danto
+			name:	ORGANIZATION				14-17	Danto Engineering Development Center 
+	15	Engineering
+	16	Development
+	17	Center
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The current Dean of Engineering is Dr. Farshad Fotouhi .
+
+
+Treebanked sentence:
+--------------------
+The current Dean of Engineering is Dr. Farshad Fotouhi . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ current) (NNP Dean))
+      (PP (IN of)
+        (NP (NNP Engineering))))
+    (VP (VBZ is)
+      (NP (NNP Dr.) (NNP Farshad) (NNP Fotouhi)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	current
+			name:	DATE				1-1	current 
+			sense:	current.a.01
+	2	Dean
+			name:	TITLE				2-2	Dean 
+	3	of
+			name:	MISC				3-4	of Engineering 
+	4	Engineering
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	The current Dean of Engineering 
+			N-ARG-A2		6-8	Dr. Farshad Fotouhi 
+	6	Dr.
+	7	Farshad
+			name:	PERSON				7-8	Farshad Fotouhi 
+	8	Fotouhi
+	9	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.18-18	Michigan 
+				1.28-29	the country 
+				3.10-11	the country 
+

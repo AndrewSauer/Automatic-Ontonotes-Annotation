@@ -1,0 +1,615 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Chevrolet Chevette is a front - engine , rear - drive subcompact car manufactured and marketed by Chevrolet for the model years 1976 - 1987 in three - door and five - door hatchback body styles .
+
+
+Treebanked sentence:
+--------------------
+The Chevrolet Chevette is a front - engine , rear - drive subcompact car manufactured and marketed by Chevrolet for the model years 1976 - 1987 in three - door and five - door hatchback body styles . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Chevrolet) (NNP Chevette))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a)
+          (NML (JJ front) (HYPH -) (NN engine))
+          (, ,)
+          (NML (JJ rear) (HYPH -) (NN drive))
+          (NN subcompact) (NN car))
+        (VP
+          (VP (VBN manufactured))
+          (CC and)
+          (VP (VBN marketed)
+            (PP (IN by)
+              (NP
+                (NP (NNP Chevrolet))
+                (PP (IN for)
+                  (NP (DT the) (NN model) (NNS years)))))
+            (NP-TMP (CD 1976) (HYPH -) (CD 1987))
+            (PP (IN in)
+              (NP
+                (NML
+                  (NML (CD three) (HYPH -) (NN door))
+                  (CC and)
+                  (NML (CD five) (HYPH -) (NN door)))
+                (JJ hatchback) (NN body) (NNS styles)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Chevrolet
+			name:	ORGANIZATION				1-2	Chevrolet Chevette 
+	2	Chevette
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	The Chevrolet Chevette 
+			N-ARG-A2		4-36	a front - engine , rear - drive subcompact car manufactured and marketed by Chevrolet for the model years 1976 - 1987 in three - door and five - door hatchback body styles 
+	4	a
+	5	front
+			sense:	front.a.01
+	6	-
+	7	engine
+			sense:	engine.n.01
+	8	,
+	9	rear
+			sense:	rear.s.01
+	10	-
+	11	drive
+			sense:	drive.n.01
+	12	subcompact
+			sense:	subcompact.n.01
+	13	car
+			sense:	car.n.01
+	14	manufactured
+			sense:	manufacture.v.01
+			prop:	manufacture.01
+			V		14-14	manufactured 
+			N-ARG-A1		4-13	a front - engine , rear - drive subcompact car 
+			N-ARG-A0		17-18	by Chevrolet 
+			N-ARGM-TMP		19-25	for the model years 1976 - 1987 
+			N-ARGM-MNR		26-36	in three - door and five - door hatchback body styles 
+	15	and
+	16	marketed
+			sense:	market.v.01
+			prop:	market.01
+			V		16-16	marketed 
+			N-ARG-A1		4-13	a front - engine , rear - drive subcompact car 
+			N-ARG-A0		17-18	by Chevrolet 
+			N-ARGM-TMP		19-25	for the model years 1976 - 1987 
+			N-ARGM-MNR		26-36	in three - door and five - door hatchback body styles 
+	17	by
+	18	Chevrolet
+			name:	ORGANIZATION				18-18	Chevrolet 
+	19	for
+	20	the
+	21	model
+			name:	TITLE				21-21	model 
+			sense:	model.n.02
+	22	years
+			name:	DURATION				22-22	years 
+			sense:	year.n.01
+	23	1976
+			name:	DATE				23-23	1976 
+	24	-
+			name:	DURATION				24-24	- 
+	25	1987
+			coref:	IDENT			0	25-25	1987 
+			name:	DATE				25-25	1987 
+	26	in
+	27	three
+			name:	NUMBER				27-27	three 
+	28	-
+	29	door
+			sense:	door.n.01
+	30	and
+	31	five
+			name:	NUMBER				31-31	five 
+	32	-
+	33	door
+			sense:	door.n.01
+	34	hatchback
+	35	body
+			sense:	body.n.11
+	36	styles
+			sense:	style.n.03
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Introduced in September 1975 , the Chevette superseded the Vega as Chevrolet 's entry - level subcompact , and sold 2.8 million units over 12 years .
+
+
+Treebanked sentence:
+--------------------
+Introduced in September 1975 , the Chevette superseded the Vega as Chevrolet 's entry - level subcompact , and sold 2.8 million units over 12 years . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Introduced)
+        (PP (IN in)
+          (NP (NNP September) (CD 1975)))))
+    (, ,)
+    (NP (DT the) (NNP Chevette))
+    (VP
+      (VP (VBD superseded)
+        (NP (DT the) (NNP Vega))
+        (PP (IN as)
+          (NP
+            (NP (NNP Chevrolet) (POS 's))
+            (NML (NN entry) (HYPH -) (NN level))
+            (NN subcompact))))
+      (, ,)
+      (CC and)
+      (VP (VBD sold)
+        (NP
+          (QP (CD 2.8) (CD million))
+          (NNS units))
+        (PP (IN over)
+          (NP (CD 12) (NNS years)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Introduced
+			sense:	introduce.v.02
+			prop:	introduce.02
+			V		0-0	Introduced 
+			N-ARGM-TMP		1-3	in September 1975 
+			N-ARG-A1		5-6	the Chevette 
+	1	in
+	2	September
+			name:	DATE				2-3	September 1975 
+	3	1975
+	4	,
+	5	the
+	6	Chevette
+	7	superseded
+			sense:	supplant.v.01
+			prop:	supersede.01
+			V		7-7	superseded 
+			R-ARG-A0		0-3	Introduced in September 1975 
+			N-ARG-A0		5-6	the Chevette 
+			N-ARG-A1		8-9	the Vega 
+			N-ARGM-PRD		10-16	as Chevrolet 's entry - level subcompact 
+	8	the
+	9	Vega
+			name:	PERSON				9-9	Vega 
+	10	as
+	11	Chevrolet
+			name:	ORGANIZATION				11-11	Chevrolet 
+	12	's
+	13	entry
+			sense:	introduction.n.01
+	14	-
+	15	level
+			sense:	grade.n.02
+	16	subcompact
+			sense:	subcompact.n.01
+	17	,
+	18	and
+	19	sold
+			sense:	sell.v.01
+			prop:	sell.01
+			V		19-19	sold 
+			N-ARG-A1		20-22	2.8 million units 
+			N-ARGM-TMP		23-25	over 12 years 
+	20	2.8
+			name:	NUMBER				20-21	2.8 million 
+	21	million
+	22	units
+			sense:	unit.n.02
+	23	over
+	24	12
+			name:	DURATION				24-25	12 years 
+	25	years
+			sense:	year.n.01
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Chevette was the best - selling small car in the U.S. for model years 1979 and 1980 .
+
+
+Treebanked sentence:
+--------------------
+The Chevette was the best - selling small car in the U.S. for model years 1979 and 1980 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Chevette))
+    (VP (VBD was)
+      (NP
+        (NP (DT the)
+          (ADJP (RBS best) (HYPH -) (VBG selling))
+          (JJ small) (NN car))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNP U.S.))
+            (PP (IN for)
+              (NP
+                (NP (NN model) (NNS years))
+                (NP (CD 1979)
+                  (CC and)
+                  (CD 1980))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Chevette
+	2	was
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	The Chevette 
+			N-ARG-A2		3-17	the best - selling small car in the U.S. for model years 1979 and 1980 
+	3	the
+	4	best
+			sense:	well.r.01
+	5	-
+	6	selling
+			sense:	sell.v.01
+			prop:	sell.01
+			V		6-6	selling 
+			N-ARGM-MNR		4-4	best 
+			N-ARG-A1		7-8	small car 
+	7	small
+			sense:	small.a.01
+	8	car
+			sense:	car.n.01
+	9	in
+	10	the
+	11	U.S.
+			name:	COUNTRY				11-11	U.S. 
+	12	for
+	13	model
+			name:	TITLE				13-13	model 
+			sense:	model.n.02
+	14	years
+			name:	DATE				14-15	years 1979 
+			sense:	year.n.01
+	15	1979
+	16	and
+	17	1980
+			name:	DATE				17-17	1980 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Chevette employed General Motors ' global T platform .
+
+
+Treebanked sentence:
+--------------------
+The Chevette employed General Motors ' global T platform . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP (DT The) (NN Chevette))
+    (VP (VBN employed)
+      (NP
+        (NP (NNP General) (NNPS Motors) (POS '))
+        (JJ global) (NN T) (NN platform)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Chevette
+	2	employed
+			sense:	use.v.01
+			prop:	employ.02
+			V		2-2	employed 
+			N-ARG-A0		0-1	The Chevette 
+			N-ARG-A1		3-8	General Motors ' global T platform 
+	3	General
+			name:	ORGANIZATION				3-4	General Motors 
+	4	Motors
+	5	'
+	6	global
+			sense:	global.s.01
+	7	T
+			sense:	t.n.04
+	8	platform
+			sense:	platform.n.04
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Worldwide , GM manufactured and marketed more than 7 million T - cars — rebadged variants using the T platform — including the Pontiac Acadian in Canada , Pontiac T1000/1000 in the United States ( 1981 - 1987 ) , K-180 in Argentina , Vauxhall Chevette , Opel Kadett , Isuzu Gemini , Holden Gemini , and as a coupe utility ( pickup ) , the Chevy 500 .
+
+
+Treebanked sentence:
+--------------------
+Worldwide , GM manufactured and marketed more than 7 million T - cars — rebadged variants using the T platform — including the Pontiac Acadian in Canada , Pontiac T1000 / 1000 in the United States ( 1981 - 1987 ) , K - 180 in Argentina , Vauxhall Chevette , Opel Kadett , Isuzu Gemini , Holden Gemini , and as a coupe utility ( pickup ) , the Chevy 500 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NNP Worldwide) (, ,) (NNP GM))
+      (VP (VBD manufactured)
+        (CC and)
+        (VBD marketed)
+        (NP
+          (QP (JJR more) (IN than) (CD 7) (CD million))
+          (NML (NN T) (HYPH -) (NNS cars)))))
+    (HYPH —)
+    (S
+      (NP (VBN rebadged) (NNS variants))
+      (VP (VBG using)
+        (NP (DT the) (NN T))
+        (S
+          (VP (NN platform) (HYPH —) (VBG including)
+            (NP
+              (NP
+                (NP (DT the) (NNP Pontiac) (NNP Acadian))
+                (PP (IN in)
+                  (NP (NNP Canada))))
+              (, ,)
+              (NP
+                (NP (NNP Pontiac)
+                  (NML (NN T1000) (HYPH /) (CD 1000)))
+                (PP (IN in)
+                  (NP (DT the) (NNP United) (NNP States)
+                    (PRN (-LRB- -LRB-)
+                      (NP (CD 1981) (SYM -) (CD 1987))
+                      (-RRB- -RRB-)))))
+              (, ,)
+              (NP
+                (NP (NN K) (HYPH -) (CD 180))
+                (PP (IN in)
+                  (NP (NNP Argentina))))
+              (, ,)
+              (NP (NNP Vauxhall) (NNP Chevette))
+              (, ,)
+              (NP (NNP Opel) (NNP Kadett))
+              (, ,)
+              (NP (NNP Isuzu) (NNP Gemini))
+              (, ,)
+              (NP (NNP Holden) (NNP Gemini))
+              (, ,)
+              (CC and)
+              (NP (IN as)
+                (NP
+                  (NP (DT a) (NN coupe) (NN utility))
+                  (-LRB- -LRB-)
+                  (NP (NN pickup))
+                  (-RRB- -RRB-))
+                (, ,)
+                (NP (DT the)
+                  (NML (NNP Chevy) (CD 500)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Worldwide
+	1	,
+	2	GM
+			name:	ORGANIZATION				2-2	GM 
+	3	manufactured
+			sense:	manufacture.v.01
+			prop:	manufacture.01
+			V		3-3	manufactured 
+			N-ARGM-LOC		0-0	Worldwide 
+			N-ARG-A0		2-2	GM 
+			N-ARG-A1		6-71	more than 7 million T - cars — rebadged variants using the T platform — including the Pontiac Acadian in Canada , Pontiac T1000 / 1000 in the United States ( 1981 - 1987 ) , K - 180 in Argentina , Vauxhall Chevette , Opel Kadett , Isuzu Gemini , Holden Gemini , and as a coupe utility ( pickup ) , the Chevy 500 
+	4	and
+	5	marketed
+			sense:	market.v.01
+			prop:	market.01
+			V		5-5	marketed 
+			N-ARGM-LOC		0-0	Worldwide 
+			N-ARG-A0		2-2	GM 
+			N-ARG-A1		6-71	more than 7 million T - cars — rebadged variants using the T platform — including the Pontiac Acadian in Canada , Pontiac T1000 / 1000 in the United States ( 1981 - 1987 ) , K - 180 in Argentina , Vauxhall Chevette , Opel Kadett , Isuzu Gemini , Holden Gemini , and as a coupe utility ( pickup ) , the Chevy 500 
+	6	more
+			sense:	more.a.02
+	7	than
+	8	7
+			name:	NUMBER				8-9	7 million 
+	9	million
+	10	T
+			sense:	t.n.04
+	11	-
+	12	cars
+			sense:	car.n.01
+	13	—
+	14	rebadged
+			prop:	rebandage.01
+			V		14-14	rebadged 
+			N-ARG-A1		15-15	variants 
+	15	variants
+			sense:	version.n.02
+	16	using
+			sense:	use.v.01
+			prop:	use.01
+			V		16-16	using 
+			N-ARG-A0		14-15	rebadged variants 
+			N-ARG-A1		17-19	the T platform 
+	17	the
+	18	T
+			sense:	t.n.04
+	19	platform
+			sense:	platform.n.04
+	20	—
+	21	including
+			sense:	include.v.01
+			prop:	include.01
+			V		21-21	including 
+			N-ARG-A2		6-19	more than 7 million T - cars — rebadged variants using the T platform 
+			N-ARG-A1		22-71	the Pontiac Acadian in Canada , Pontiac T1000 / 1000 in the United States ( 1981 - 1987 ) , K - 180 in Argentina , Vauxhall Chevette , Opel Kadett , Isuzu Gemini , Holden Gemini , and as a coupe utility ( pickup ) , the Chevy 500 
+	22	the
+	23	Pontiac
+	24	Acadian
+	25	in
+	26	Canada
+			name:	COUNTRY				26-26	Canada 
+	27	,
+	28	Pontiac
+			name:	CITY				28-28	Pontiac 
+	29	T1000
+			name:	TIME				29-29	T1000 
+	30	/
+	31	1000
+			name:	DATE				31-31	1000 
+	32	in
+	33	the
+	34	United
+			name:	COUNTRY				34-35	United States 
+	35	States
+	36	(
+	37	1981
+			name:	DATE				37-37	1981 
+	38	-
+			name:	DURATION				38-38	- 
+	39	1987
+			coref:	IDENT			0	39-39	1987 
+			name:	DATE				39-39	1987 
+	40	)
+	41	,
+	42	K
+			sense:	k.n.06
+	43	-
+	44	180
+	45	in
+	46	Argentina
+			name:	COUNTRY				46-46	Argentina 
+	47	,
+	48	Vauxhall
+			name:	PERSON				48-49	Vauxhall Chevette 
+	49	Chevette
+	50	,
+	51	Opel
+			name:	ORGANIZATION				51-52	Opel Kadett 
+	52	Kadett
+	53	,
+	54	Isuzu
+			name:	PERSON				54-55	Isuzu Gemini 
+	55	Gemini
+	56	,
+	57	Holden
+			name:	PERSON				57-58	Holden Gemini 
+	58	Gemini
+	59	,
+	60	and
+	61	as
+	62	a
+	63	coupe
+			sense:	coupe.n.01
+	64	utility
+			sense:	utility.n.06
+	65	(
+	66	pickup
+			sense:	pickup.n.01
+	67	)
+	68	,
+	69	the
+	70	Chevy
+			name:	MISC				70-70	Chevy 
+	71	500
+			name:	NUMBER				71-71	500 
+	72	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A T - car variant remained in production in South America through 1998 .
+
+
+Treebanked sentence:
+--------------------
+A T - car variant remained in production in South America through 1998 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT A)
+      (NML (NN T) (HYPH -) (NN car))
+      (NN variant))
+    (VP (VBD remained)
+      (PP (IN in)
+        (NP
+          (NP (NN production))
+          (PP (IN in)
+            (NP (NNP South) (NNP America)))))
+      (PP (IN through)
+        (NP (CD 1998))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	T
+			sense:	t.n.04
+	2	-
+	3	car
+			sense:	car.n.01
+	4	variant
+			sense:	version.n.02
+	5	remained
+			sense:	stay.v.01
+			prop:	remain.01
+			V		5-5	remained 
+			N-ARG-A1		0-4	A T - car variant 
+			N-ARG-A3		6-7	in production 
+			N-ARGM-LOC		8-10	in South America 
+			N-ARGM-TMP		11-12	through 1998 
+	6	in
+	7	production
+			sense:	production.n.07
+	8	in
+	9	South
+			name:	LOCATION				9-9	South 
+	10	America
+			name:	COUNTRY				10-10	America 
+	11	through
+	12	1998
+			name:	DATE				12-12	1998 
+	13	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.25-25	1987 
+				4.39-39	1987 
+

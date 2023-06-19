@@ -1,0 +1,637 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Newsroom is an American television drama series created by Aaron Sorkin , which premiered on the premium cable network HBO on June 24 , 2012 .
+
+
+Treebanked sentence:
+--------------------
+The Newsroom is an American television drama series created by Aaron Sorkin , which premiered on the premium cable network HBO on June 24 , 2012 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN Newsroom))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an)
+          (NML (JJ American) (NN television))
+          (NN drama) (NN series))
+        (VP (VBN created)
+          (PP (IN by)
+            (NP
+              (NP (NNP Aaron) (NNP Sorkin))
+              (, ,)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBD premiered)
+                    (PP (IN on)
+                      (NP (DT the)
+                        (NML (NN premium) (NN cable) (NN network))
+                        (NNP HBO)))
+                    (PP (IN on)
+                      (NP (NNP June) (CD 24) (, ,) (CD 2012)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Newsroom
+			sense:	newsroom.n.02
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The Newsroom 
+			N-ARG-A2		3-25	an American television drama series created by Aaron Sorkin , which premiered on the premium cable network HBO on June 24 , 2012 
+	3	an
+	4	American
+			name:	NATIONALITY				4-4	American 
+	5	television
+			sense:	television.n.01
+	6	drama
+			sense:	play.n.01
+	7	series
+			sense:	serial.n.01
+	8	created
+			sense:	create.v.02
+			prop:	create.01
+			V		8-8	created 
+			N-ARG-A1		3-7	an American television drama series 
+			N-ARG-A0		9-11	by Aaron Sorkin 
+	9	by
+	10	Aaron
+			name:	PERSON				10-11	Aaron Sorkin 
+	11	Sorkin
+	12	,
+	13	which
+	14	premiered
+			sense:	premier.v.01
+			prop:	premiere.01
+			V		14-14	premiered 
+			N-ARG-A1		3-11	an American television drama series created by Aaron Sorkin 
+			R-ARG-A1		13-13	which 
+			N-ARGM-LOC		15-20	on the premium cable network HBO 
+			N-ARGM-TMP		21-25	on June 24 , 2012 
+	15	on
+	16	the
+	17	premium
+			sense:	premium.n.02
+	18	cable
+			sense:	cable_television.n.01
+	19	network
+			sense:	network.n.02
+	20	HBO
+			name:	ORGANIZATION				20-20	HBO 
+	21	on
+	22	June
+			name:	DATE				22-25	June 24 , 2012 
+	23	24
+	24	,
+	25	2012
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The series concluded on December 14 , 2014 , and consists of 25 episodes over three seasons .
+
+
+Treebanked sentence:
+--------------------
+The series concluded on December 14 , 2014 , and consists of 25 episodes over three seasons . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN series))
+    (VP
+      (VP (VBD concluded)
+        (PP (IN on)
+          (NP (NNP December) (CD 14) (, ,) (CD 2014) (, ,))))
+      (CC and)
+      (VP (VBZ consists)
+        (PP (IN of)
+          (NP
+            (NP (CD 25) (NNS episodes))
+            (PP (IN over)
+              (NP (CD three) (NNS seasons)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The series 
+	1	series
+			sense:	serial.n.01
+	2	concluded
+			sense:	conclude.v.04
+			prop:	conclude.02
+			V		2-2	concluded 
+			N-ARG-A1		0-1	The series 
+			N-ARGM-TMP		3-7	on December 14 , 2014 
+	3	on
+	4	December
+			name:	DATE				4-7	December 14 , 2014 
+	5	14
+	6	,
+	7	2014
+	8	,
+	9	and
+	10	consists
+			sense:	consist.v.04
+			prop:	consist.01
+			V		10-10	consists 
+			N-ARG-A1		0-1	The series 
+			N-ARG-A2		11-16	of 25 episodes over three seasons 
+	11	of
+	12	25
+			name:	NUMBER				12-12	25 
+	13	episodes
+			sense:	episode.n.03
+	14	over
+	15	three
+			name:	NUMBER				15-15	three 
+	16	seasons
+			sense:	season.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jeff Daniels stars as Atlantis Cable News anchor Will McAvoy , who takes a mandatory leave of absence after a public tirade about America 's shortcomings during a political debate .
+
+
+Treebanked sentence:
+--------------------
+Jeff Daniels stars as Atlantis Cable News anchor Will McAvoy , who takes a mandatory leave of absence after a public tirade about America 's shortcomings during a political debate . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP (NNP Jeff) (NNP Daniels))
+    (NP
+      (NP (NNS stars))
+      (PP (IN as)
+        (NP
+          (NP
+            (NML (NNP Atlantis) (NNP Cable) (NNP News) (NNP anchor))
+            (NNP Will) (NNP McAvoy))
+          (, ,)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ takes)
+                (NP
+                  (NP (DT a) (JJ mandatory) (NN leave))
+                  (PP (IN of)
+                    (NP (NN absence))))
+                (PP (IN after)
+                  (NP
+                    (NP (DT a) (JJ public) (NN tirade))
+                    (PP (IN about)
+                      (NP
+                        (NP (NNP America) (POS 's))
+                        (NNS shortcomings)))))
+                (PP (IN during)
+                  (NP (DT a) (JJ political) (NN debate)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jeff
+			name:	PERSON				0-1	Jeff Daniels 
+	1	Daniels
+	2	stars
+			sense:	star.n.04
+	3	as
+	4	Atlantis
+			name:	ORGANIZATION				4-6	Atlantis Cable News 
+	5	Cable
+	6	News
+	7	anchor
+	8	Will
+			name:	PERSON				8-9	Will McAvoy 
+	9	McAvoy
+	10	,
+	11	who
+	12	takes
+			sense:	take.v.01
+			prop:	take.01
+			V		12-12	takes 
+			N-ARG-A0		4-9	Atlantis Cable News anchor Will McAvoy 
+			R-ARG-A0		11-11	who 
+			N-ARG-A1		13-17	a mandatory leave of absence 
+			N-ARGM-TMP		18-29	after a public tirade about America 's shortcomings during a political debate 
+	13	a
+	14	mandatory
+			sense:	compulsory.s.01
+	15	leave
+			sense:	leave.n.01
+	16	of
+	17	absence
+			sense:	absence.n.02
+	18	after
+	19	a
+	20	public
+			sense:	public.a.01
+	21	tirade
+			sense:	tirade.n.01
+	22	about
+	23	America
+			name:	COUNTRY				23-23	America 
+	24	's
+	25	shortcomings
+			sense:	defect.n.02
+	26	during
+	27	a
+	28	political
+			sense:	political.a.01
+	29	debate
+			sense:	argument.n.03
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Upon his return , he discovers that most of his staff have quit .
+
+
+Treebanked sentence:
+--------------------
+Upon his return , he discovers that most of his staff have quit . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Upon)
+      (NP (PRP$ his) (NN return)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBZ discovers)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (JJS most))
+            (PP (IN of)
+              (NP (PRP$ his) (NN staff))))
+          (VP (VBP have)
+            (VP (VBN quit))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Upon
+	1	his
+			coref:	IDENT			1	1-1	his 
+	2	return
+			sense:	return.n.02
+	3	,
+	4	he
+			coref:	IDENT			1	4-4	he 
+	5	discovers
+			sense:	learn.v.02
+			prop:	discover.01
+			V		5-5	discovers 
+			N-ARGM-TMP		0-2	Upon his return 
+			N-ARG-A0		4-4	he 
+			N-ARG-A1		6-12	that most of his staff have quit 
+	6	that
+	7	most
+			sense:	most.a.01
+	8	of
+	9	his
+			coref:	IDENT			1	9-9	his 
+	10	staff
+			sense:	staff.n.01
+	11	have
+			sense:	have.v.01
+			prop:	have.01
+			V		11-11	have 
+	12	quit
+			sense:	leave_office.v.01
+			prop:	quit.01
+			V		12-12	quit 
+			N-ARG-A0		7-10	most of his staff 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Seeing an opportunity to return to the glory days of televised news instead of ratings - driven infotainment , his boss Charlie Skinner ( Sam Waterston ) has hired Will 's ex - girlfriend MacKenzie McHale ( Emily Mortimer ) as the new executive producer .
+
+
+Treebanked sentence:
+--------------------
+Seeing an opportunity to return to the glory days of televised news instead of ratings - driven infotainment , his boss Charlie Skinner ( Sam Waterston ) has hired Will 's ex - girlfriend MacKenzie McHale ( Emily Mortimer ) as the new executive producer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBG Seeing)
+        (NP (DT an) (NN opportunity))
+        (S
+          (VP (TO to)
+            (VP (VB return)
+              (PP (IN to)
+                (NP
+                  (NP (DT the) (NN glory) (NNS days))
+                  (PP (IN of)
+                    (NP
+                      (NP (VBN televised)
+                        (ADJP
+                          (NP
+                            (NP (NN news))
+                            (PP (RB instead) (IN of)
+                              (NP (NNS ratings))))
+                          (HYPH -) (VBN driven))
+                        (NN infotainment))
+                      (, ,)
+                      (NP
+                        (NP (PRP$ his) (NN boss))
+                        (NP (NNP Charlie) (NNP Skinner)))))))
+              (PRN (-LRB- -LRB-)
+                (NP (NNP Sam) (NNP Waterston))
+                (-RRB- -RRB-)))))))
+    (VP (VBZ has)
+      (VP (VBN hired)
+        (NP
+          (NP
+            (NP (NNP Will) (POS 's))
+            (NN ex) (HYPH -) (NN girlfriend) (NNP MacKenzie) (NNP McHale))
+          (-LRB- -LRB-)
+          (NP (NNP Emily) (NNP Mortimer))
+          (-RRB- -RRB-))
+        (PP (IN as)
+          (NP (DT the) (JJ new) (NN executive) (NN producer)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Seeing
+			sense:	see.v.05
+			prop:	see.01
+			V		0-0	Seeing 
+			N-ARG-A1		1-17	an opportunity to return to the glory days of televised news instead of ratings - driven infotainment 
+			N-ARG-A0		19-26	his boss Charlie Skinner ( Sam Waterston ) 
+	1	an
+	2	opportunity
+			sense:	opportunity.n.01
+	3	to
+	4	return
+			sense:	revert.v.01
+			prop:	return.01
+			V		4-4	return 
+			N-ARG-A4		5-17	to the glory days of televised news instead of ratings - driven infotainment 
+	5	to
+	6	the
+	7	glory
+			sense:	glory.n.01
+	8	days
+			name:	DURATION				8-8	days 
+			sense:	day.n.02
+	9	of
+	10	televised
+			sense:	telecast.v.01
+			prop:	televise.01
+			V		10-10	televised 
+			N-ARG-A1		11-11	news 
+	11	news
+			sense:	news_program.n.01
+	12	instead
+			sense:	alternatively.r.01
+	13	of
+	14	ratings
+			sense:	evaluation.n.01
+	15	-
+	16	driven
+			sense:	drive.v.05
+			prop:	drive.02
+			V		16-16	driven 
+			N-ARG-A0		14-14	ratings 
+			N-ARG-A1		17-17	infotainment 
+	17	infotainment
+			sense:	documentary.n.01
+	18	,
+	19	his
+			coref:	IDENT			1	19-19	his 
+	20	boss
+			name:	TITLE				20-20	boss 
+			sense:	foreman.n.01
+	21	Charlie
+			name:	PERSON				21-22	Charlie Skinner 
+	22	Skinner
+	23	(
+	24	Sam
+			name:	PERSON				24-25	Sam Waterston 
+	25	Waterston
+	26	)
+	27	has
+			sense:	get.v.03
+			prop:	have.01
+			V		27-27	has 
+	28	hired
+			sense:	hire.v.01
+			prop:	hire.01
+			V		28-28	hired 
+			N-ARGM-CAU		0-17	Seeing an opportunity to return to the glory days of televised news instead of ratings - driven infotainment 
+			N-ARG-A0		19-26	his boss Charlie Skinner ( Sam Waterston ) 
+			N-ARG-A1		29-39	Will 's ex - girlfriend MacKenzie McHale ( Emily Mortimer ) 
+			N-ARG-A2		40-44	as the new executive producer 
+	29	Will
+	30	's
+	31	ex
+			sense:	ex-wife.n.01
+	32	-
+	33	girlfriend
+			sense:	girlfriend.n.02
+	34	MacKenzie
+			name:	PERSON				34-35	MacKenzie McHale 
+	35	McHale
+	36	(
+	37	Emily
+			name:	PERSON				37-38	Emily Mortimer 
+	38	Mortimer
+	39	)
+	40	as
+	41	the
+	42	new
+			sense:	new.a.01
+	43	executive
+			name:	TITLE				43-44	executive producer 
+			sense:	executive.n.01
+	44	producer
+			sense:	producer.n.02
+	45	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+McHale shares Skinner 's vision of TV news , and she and Will immediately butt heads .
+
+
+Treebanked sentence:
+--------------------
+McHale shares Skinner 's vision of TV news , and she and Will immediately butt heads . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP McHale) (NNS shares))
+    (VP
+      (VP
+        (NP
+          (NP (NNP Skinner) (POS 's))
+          (NN vision))
+        (PP (IN of)
+          (NP
+            (NP (NN TV) (NN news))
+            (, ,)
+            (CC and)
+            (NP (PRP she)))))
+      (CC and)
+      (VP (MD Will)
+        (ADVP (RB immediately))
+        (VP (VB butt)
+          (NP (NNS heads)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	McHale
+			name:	PERSON				0-0	McHale 
+	1	shares
+			sense:	contribution.n.01
+	2	Skinner
+			name:	PERSON				2-2	Skinner 
+	3	's
+	4	vision
+			sense:	vision.n.01
+	5	of
+	6	TV
+			sense:	television.n.01
+	7	news
+			sense:	news_program.n.01
+	8	,
+	9	and
+	10	she
+	11	and
+	12	Will
+	13	immediately
+			sense:	immediately.r.01
+	14	butt
+			sense:	border.v.05
+			prop:	butt.01
+			V		14-14	butt 
+			N-ARG-A0		10-12	she and Will 
+			N-ARGM-TMP		13-13	immediately 
+	15	heads
+			sense:	head.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The series is executive produced by Aaron Sorkin , Scott Rudin , and Alan Poul .
+
+
+Treebanked sentence:
+--------------------
+The series is executive produced by Aaron Sorkin , Scott Rudin , and Alan Poul . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN series))
+    (VP (VBZ is)
+      (NP
+        (NP (JJ executive))
+        (VP (VBN produced)
+          (PP (IN by)
+            (NP
+              (NP (NNP Aaron) (NNP Sorkin))
+              (, ,)
+              (NP (NNP Scott) (NNP Rudin))
+              (, ,)
+              (CC and)
+              (NP (NNP Alan) (NNP Poul)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The series 
+	1	series
+			sense:	serial.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	executive
+			name:	TITLE				3-3	executive 
+			sense:	executive.a.01
+	4	produced
+			sense:	produce.v.06
+			prop:	produce.01
+			V		4-4	produced 
+			N-ARG-A1		0-1	The series 
+			N-ARGM-ADV		3-3	executive 
+			N-ARG-A0		5-14	by Aaron Sorkin , Scott Rudin , and Alan Poul 
+	5	by
+	6	Aaron
+			name:	PERSON				6-7	Aaron Sorkin 
+	7	Sorkin
+	8	,
+	9	Scott
+			name:	PERSON				9-10	Scott Rudin 
+	10	Rudin
+	11	,
+	12	and
+	13	Alan
+			name:	PERSON				13-14	Alan Poul 
+	14	Poul
+	15	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.0-1	The series 
+				6.0-1	The series 
+	Chain 1 (IDENT)
+				3.1-1	his 
+				3.4-4	he 
+				3.9-9	his 
+				4.19-19	his 
+

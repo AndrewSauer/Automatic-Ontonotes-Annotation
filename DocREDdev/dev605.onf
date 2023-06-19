@@ -1,0 +1,680 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Martin Ulrich ( born December 16 , 1969 ) is a retired Austrian ice hockey defenceman .
+
+
+Treebanked sentence:
+--------------------
+Martin Ulrich ( born December 16 , 1969 ) is a retired Austrian ice hockey defenceman . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Martin) (NNP Ulrich))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP December) (CD 16) (, ,) (CD 1969)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (JJ retired)
+        (NML (JJ Austrian) (NN ice) (NN hockey))
+        (NN defenceman)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Martin
+			coref:	IDENT			0	0-1	Martin Ulrich 
+			name:	PERSON				0-1	Martin Ulrich 
+	1	Ulrich
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Martin Ulrich 
+			N-ARGM-TMP		4-7	December 16 , 1969 
+	4	December
+			name:	DATE				4-7	December 16 , 1969 
+	5	16
+	6	,
+	7	1969
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	Martin Ulrich ( born December 16 , 1969 ) 
+			N-ARG-A2		10-15	a retired Austrian ice hockey defenceman 
+	10	a
+	11	retired
+			sense:	retired.s.01
+	12	Austrian
+			name:	NATIONALITY				12-12	Austrian 
+	13	ice
+			sense:	ice_rink.n.01
+	14	hockey
+			sense:	ice_hockey.n.01
+	15	defenceman
+			name:	TITLE				15-15	defenceman 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was the captain of the Austrian national ice hockey team .
+
+
+Treebanked sentence:
+--------------------
+He was the captain of the Austrian national ice hockey team . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (NN captain))
+        (PP (IN of)
+          (NP (DT the)
+            (NML (JJ Austrian) (JJ national) (NN ice) (NN hockey))
+            (NN team)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-10	the captain of the Austrian national ice hockey team 
+	2	the
+	3	captain
+			name:	TITLE				3-3	captain 
+			sense:	captain.n.05
+	4	of
+	5	the
+	6	Austrian
+			name:	NATIONALITY				6-6	Austrian 
+	7	national
+			sense:	national.a.01
+	8	ice
+			sense:	ice_rink.n.01
+	9	hockey
+			sense:	ice_hockey.n.01
+	10	team
+			sense:	team.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in Vienna , Austria , Ulrich began his career with three seasons at Vienna before joining Graz EC in 1991 again in a three - year spell .
+
+
+Treebanked sentence:
+--------------------
+Born in Vienna , Austria , Ulrich began his career with three seasons at Vienna before joining Graz EC in 1991 again in a three - year spell . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP (NNP Vienna) (, ,) (NNP Austria)))))
+    (, ,)
+    (NP (NNP Ulrich))
+    (VP (VBD began)
+      (NP (PRP$ his) (NN career))
+      (PP (IN with)
+        (NP
+          (NP (CD three) (NNS seasons))
+          (PP (IN at)
+            (NP (NNP Vienna)))))
+      (PP (IN before)
+        (S
+          (VP (VBG joining)
+            (NP
+              (NP (NNP Graz) (NNP EC))
+              (PP (IN in)
+                (NP (CD 1991))))
+            (PP
+              (ADVP (RB again))
+              (IN in)
+              (NP (DT a)
+                (NML (CD three) (HYPH -) (NN year))
+                (NN spell)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-4	in Vienna , Austria 
+			N-ARG-A1		6-6	Ulrich 
+	1	in
+	2	Vienna
+			coref:	IDENT			1	2-2	Vienna 
+			name:	CITY				2-2	Vienna 
+	3	,
+	4	Austria
+			name:	COUNTRY				4-4	Austria 
+	5	,
+	6	Ulrich
+			coref:	IDENT			0	6-6	Ulrich 
+			name:	PERSON				6-6	Ulrich 
+	7	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		7-7	began 
+			R-ARG-A0		0-4	Born in Vienna , Austria 
+			N-ARG-A0		6-6	Ulrich 
+			N-ARG-A1		8-9	his career 
+			N-ARG-A2		10-14	with three seasons at Vienna 
+			N-ARGM-TMP		15-27	before joining Graz EC in 1991 again in a three - year spell 
+	8	his
+			coref:	IDENT			0	8-8	his 
+	9	career
+			sense:	career.n.01
+	10	with
+	11	three
+			name:	NUMBER				11-11	three 
+	12	seasons
+			sense:	season.n.01
+	13	at
+	14	Vienna
+			coref:	IDENT			1	14-14	Vienna 
+			name:	CITY				14-14	Vienna 
+	15	before
+	16	joining
+			sense:	join.v.01
+			prop:	join.01
+			V		16-16	joining 
+			N-ARG-A0		6-6	Ulrich 
+			N-ARG-A1		17-18	Graz EC 
+			N-ARGM-TMP		19-20	in 1991 
+			N-ARGM-ADV		21-21	again 
+			N-ARGM-TMP		22-27	in a three - year spell 
+	17	Graz
+			name:	ORGANIZATION				17-18	Graz EC 
+	18	EC
+	19	in
+	20	1991
+			name:	DATE				20-20	1991 
+	21	again
+			sense:	again.r.01
+	22	in
+	23	a
+	24	three
+			name:	DURATION				24-26	three - year 
+	25	-
+	26	year
+			sense:	year.n.01
+	27	spell
+			sense:	while.n.01
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After a brief return to Vienna , Ulrich moved to the Deutsche Eishockey Liga in Germany , playing for the Adler Mannheim for two seasons .
+
+
+Treebanked sentence:
+--------------------
+After a brief return to Vienna , Ulrich moved to the Deutsche Eishockey Liga in Germany , playing for the Adler Mannheim for two seasons . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP
+        (NP (DT a) (JJ brief) (NN return))
+        (PP (IN to)
+          (NP (NNP Vienna)))))
+    (, ,)
+    (NP (NNP Ulrich))
+    (VP (VBD moved)
+      (PP (IN to)
+        (NP (DT the) (NNP Deutsche) (NNP Eishockey) (NNP Liga)))
+      (PP (IN in)
+        (NP (NNP Germany)))
+      (, ,)
+      (S
+        (VP (VBG playing)
+          (PP (IN for)
+            (NP
+              (NP (DT the) (NNP Adler) (NNP Mannheim))
+              (PP (IN for)
+                (NP (CD two) (NNS seasons))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	a
+	2	brief
+			sense:	brief.s.01
+	3	return
+			sense:	return.n.05
+	4	to
+	5	Vienna
+			coref:	IDENT			1	5-5	Vienna 
+			name:	CITY				5-5	Vienna 
+	6	,
+	7	Ulrich
+			coref:	IDENT			0	7-7	Ulrich 
+			name:	PERSON				7-7	Ulrich 
+	8	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		8-8	moved 
+			N-ARGM-TMP		0-5	After a brief return to Vienna 
+			N-ARG-A1		7-7	Ulrich 
+			N-ARG-A2		9-15	to the Deutsche Eishockey Liga in Germany 
+	9	to
+	10	the
+	11	Deutsche
+			name:	ORGANIZATION				11-13	Deutsche Eishockey Liga 
+	12	Eishockey
+	13	Liga
+	14	in
+	15	Germany
+			name:	COUNTRY				15-15	Germany 
+	16	,
+	17	playing
+			sense:	play.v.01
+			prop:	play.01
+			V		17-17	playing 
+			N-ARG-A0		7-7	Ulrich 
+			N-ARGM-ADV		18-19	for the 
+			N-ARGM-TMP		22-24	for two seasons 
+	18	for
+	19	the
+	20	Adler
+			name:	PERSON				20-21	Adler Mannheim 
+	21	Mannheim
+	22	for
+	23	two
+			name:	NUMBER				23-23	two 
+	24	seasons
+			sense:	season.n.01
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He returned to Vienna for a third time before returning to the DEL in 1999 , with spells for the Berlin Capitals and the DEG Metro Stars where he spent four seasons .
+
+
+Treebanked sentence:
+--------------------
+He returned to Vienna for a third time before returning to the DEL in 1999 , with spells for the Berlin Capitals and the DEG Metro Stars where he spent four seasons . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD returned)
+      (PP (IN to)
+        (NP (NNP Vienna)))
+      (PP (IN for)
+        (NP (DT a) (JJ third) (NN time)))
+      (PP (IN before)
+        (S
+          (VP (VBG returning)
+            (PP (IN to)
+              (NP
+                (NP (DT the) (NN DEL))
+                (PP (IN in)
+                  (NP (CD 1999))))))))
+      (, ,)
+      (PP (IN with)
+        (NP
+          (NP
+            (NP (NNS spells))
+            (PP (IN for)
+              (NP (DT the) (NNP Berlin) (NNPS Capitals))))
+          (CC and)
+          (NP
+            (NP (DT the) (NNP DEG) (NNP Metro) (NNPS Stars))
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (PRP he))
+                (VP (VBD spent)
+                  (NP (CD four) (NNS seasons)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	returned
+			sense:	return.v.01
+			prop:	return.01
+			V		1-1	returned 
+			N-ARG-A1		0-0	He 
+			N-ARG-A4		2-3	to Vienna 
+			N-ARGM-TMP		4-7	for a third time 
+			N-ARGM-TMP		8-31	before returning to the DEL in 1999 , with spells for the Berlin Capitals and the DEG Metro Stars where he spent four seasons 
+	2	to
+	3	Vienna
+			coref:	IDENT			1	3-3	Vienna 
+			name:	CITY				3-3	Vienna 
+	4	for
+	5	a
+	6	third
+			name:	ORDINAL				6-6	third 
+			sense:	third.s.01
+	7	time
+			sense:	time.n.01
+	8	before
+	9	returning
+			sense:	return.v.01
+			prop:	return.01
+			V		9-9	returning 
+			N-ARG-A1		0-0	He 
+			N-ARG-A4		10-12	to the DEL 
+			N-ARGM-TMP		13-14	in 1999 
+			N-ARGM-MNR		16-31	with spells for the Berlin Capitals and the DEG Metro Stars where he spent four seasons 
+	10	to
+	11	the
+	12	DEL
+	13	in
+	14	1999
+			name:	DATE				14-14	1999 
+	15	,
+	16	with
+	17	spells
+			sense:	while.n.01
+	18	for
+	19	the
+	20	Berlin
+			name:	CITY				20-20	Berlin 
+	21	Capitals
+	22	and
+	23	the
+	24	DEG
+			name:	ORGANIZATION				24-26	DEG Metro Stars 
+	25	Metro
+	26	Stars
+	27	where
+	28	he
+			coref:	IDENT			0	28-28	he 
+	29	spent
+			sense:	spend.v.01
+			prop:	spend.02
+			V		29-29	spent 
+			N-ARGM-LOC		23-26	the DEG Metro Stars 
+			R-ARGM-LOC		27-27	where 
+			N-ARG-A0		28-28	he 
+			N-ARG-A1		30-31	four seasons 
+	30	four
+			name:	NUMBER				30-30	four 
+	31	seasons
+			sense:	season.n.01
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2005 , Ulrich returned to Austria and signed for Red Bull Salzburg , where he played two more seasons before ending his player career in 2008 with the lower class team of EK Zell am See .
+
+
+Treebanked sentence:
+--------------------
+In 2005 , Ulrich returned to Austria and signed for Red Bull Salzburg , where he played two more seasons before ending his player career in 2008 with the lower class team of EK Zell am See . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2005)))
+    (, ,)
+    (NP (NNP Ulrich))
+    (VP
+      (VP (VBD returned)
+        (PP (IN to)
+          (NP (NNP Austria))))
+      (CC and)
+      (VP (VBD signed)
+        (PP (IN for)
+          (NP
+            (NP (NNP Red) (NNP Bull) (NNP Salzburg))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (PRP he))
+                (VP (VBD played)
+                  (NP (CD two) (JJR more) (NNS seasons))
+                  (SBAR (IN before)
+                    (S
+                      (S
+                        (VP (VBG ending)
+                          (NP (PRP$ his) (NN player) (NN career))
+                          (PP (IN in)
+                            (NP (CD 2008)))
+                          (PP (IN with)
+                            (NP
+                              (NP (DT the) (JJR lower) (NN class) (NN team))
+                              (PP (IN of)
+                                (NP (NNP EK) (NNP Zell)))))))
+                      (VP (VBP am)
+                        (NP (NNP See))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2005
+			name:	DATE				1-1	2005 
+	2	,
+	3	Ulrich
+			coref:	IDENT			0	3-3	Ulrich 
+			name:	PERSON				3-3	Ulrich 
+	4	returned
+			sense:	return.v.01
+			prop:	return.01
+			V		4-4	returned 
+			N-ARGM-TMP		0-1	In 2005 
+			N-ARG-A1		3-3	Ulrich 
+			N-ARG-A4		5-6	to Austria 
+	5	to
+	6	Austria
+			name:	COUNTRY				6-6	Austria 
+	7	and
+	8	signed
+			sense:	sign.v.03
+			prop:	sign.02
+			V		8-8	signed 
+			N-ARGM-TMP		0-1	In 2005 
+			N-ARG-A0		3-3	Ulrich 
+	9	for
+	10	Red
+			name:	LOCATION				10-11	Red Bull 
+	11	Bull
+	12	Salzburg
+			name:	CITY				12-12	Salzburg 
+	13	,
+	14	where
+	15	he
+			coref:	IDENT			0	15-15	he 
+	16	played
+			sense:	play.v.01
+			prop:	play.01
+			V		16-16	played 
+			N-ARGM-LOC		10-12	Red Bull Salzburg 
+			R-ARGM-LOC		14-14	where 
+			N-ARG-A0		15-15	he 
+			N-ARG-A1		17-19	two more seasons 
+			N-ARGM-TMP		20-36	before ending his player career in 2008 with the lower class team of EK Zell am See 
+	17	two
+			name:	NUMBER				17-17	two 
+	18	more
+			sense:	more.a.02
+	19	seasons
+			sense:	season.n.01
+	20	before
+	21	ending
+			sense:	end.v.02
+			prop:	end.01
+			V		21-21	ending 
+			N-ARG-A0		15-15	he 
+			N-ARG-A1		22-24	his player career 
+			N-ARGM-TMP		25-26	in 2008 
+			N-ARG-A2		27-36	with the lower class team of EK Zell am See 
+	22	his
+			coref:	IDENT			0	22-22	his 
+	23	player
+			sense:	player.n.01
+	24	career
+			sense:	career.n.01
+	25	in
+	26	2008
+			name:	DATE				26-26	2008 
+	27	with
+	28	the
+	29	lower
+			sense:	humble.s.01
+	30	class
+			sense:	class.n.05
+	31	team
+			sense:	team.n.01
+	32	of
+	33	EK
+			name:	ORGANIZATION				33-36	EK Zell am See 
+	34	Zell
+	35	am
+			sense:	be.v.03
+			prop:	be.01
+			V		35-35	am 
+			N-ARG-A2		36-36	See 
+	36	See
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In October 2009 Ulrich was named Head Coach of the Austrian U-18 national ice hockey team .
+
+
+Treebanked sentence:
+--------------------
+In October 2009 Ulrich was named Head Coach of the Austrian U-18 national ice hockey team . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP October) (CD 2009)))
+    (NP (NNP Ulrich))
+    (VP (VBD was)
+      (VP (VBN named)
+        (NP
+          (NP (NNP Head) (NNP Coach))
+          (PP (IN of)
+            (NP (DT the)
+              (NML (JJ Austrian) (NN U-18))
+              (NML (JJ national) (NN ice) (NN hockey))
+              (NN team))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	October
+			name:	DATE				1-2	October 2009 
+	2	2009
+	3	Ulrich
+			coref:	IDENT			0	3-3	Ulrich 
+			name:	PERSON				3-3	Ulrich 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	named
+			sense:	name.v.03
+			prop:	name.01
+			V		5-5	named 
+			N-ARGM-TMP		0-2	In October 2009 
+			N-ARG-A1		3-3	Ulrich 
+			N-ARG-A2		6-15	Head Coach of the Austrian U-18 national ice hockey team 
+	6	Head
+			name:	TITLE				6-7	Head Coach 
+	7	Coach
+	8	of
+	9	the
+	10	Austrian
+			name:	NATIONALITY				10-10	Austrian 
+	11	U-18
+	12	national
+			sense:	national.a.01
+	13	ice
+			sense:	ice.n.01
+	14	hockey
+			sense:	ice_hockey.n.01
+	15	team
+			sense:	team.n.01
+	16	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Martin Ulrich 
+				1.0-0	He 
+				2.6-6	Ulrich 
+				2.8-8	his 
+				3.7-7	Ulrich 
+				4.0-0	He 
+				4.28-28	he 
+				5.3-3	Ulrich 
+				5.15-15	he 
+				5.22-22	his 
+				6.3-3	Ulrich 
+	Chain 1 (IDENT)
+				2.2-2	Vienna 
+				2.14-14	Vienna 
+				3.5-5	Vienna 
+				4.3-3	Vienna 
+

@@ -1,0 +1,598 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+King Louie is a fictional character introduced in Walt Disney 's 1967 animated musical film , The Jungle Book .
+
+
+Treebanked sentence:
+--------------------
+King Louie is a fictional character introduced in Walt Disney 's 1967 animated musical film , The Jungle Book . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP King) (NNP Louie))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ fictional) (NN character))
+        (VP (VBN introduced)
+          (PP (IN in)
+            (NP
+              (NP (NNP Walt) (NNP Disney) (POS 's))
+              (NP
+                (NP (CD 1967) (JJ animated) (JJ musical) (NN film))
+                (, ,)
+                (NP
+                  (NP (DT The) (NN Jungle))
+                  (NP (NNP Book)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	King
+			coref:	IDENT			0	0-1	King Louie 
+			name:	TITLE				0-0	King 
+	1	Louie
+			name:	PERSON				1-1	Louie 
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	King Louie 
+			N-ARG-A2		3-18	a fictional character introduced in Walt Disney 's 1967 animated musical film , The Jungle Book 
+	3	a
+	4	fictional
+			sense:	fabricated.s.01
+	5	character
+			sense:	fictional_character.n.01
+	6	introduced
+			sense:	introduce.v.01
+			prop:	introduce.01
+			V		6-6	introduced 
+			N-ARG-A1		3-5	a fictional character 
+			N-ARGM-LOC		7-18	in Walt Disney 's 1967 animated musical film , The Jungle Book 
+	7	in
+	8	Walt
+	9	Disney
+	10	's
+	11	1967
+			coref:	IDENT			1	11-11	1967 
+			coref:	IDENT			2	11-18	1967 animated musical film , The Jungle Book 
+			name:	DATE				11-11	1967 
+	12	animated
+			sense:	animated.s.02
+	13	musical
+			sense:	musical.a.03
+	14	film
+			sense:	movie.n.01
+	15	,
+	16	The
+	17	Jungle
+			sense:	jungle.n.03
+	18	Book
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Unlike the majority of the adapted characters in the film , Louie was not featured in Rudyard Kipling 's original works .
+
+
+Treebanked sentence:
+--------------------
+Unlike the majority of the adapted characters in the film , Louie was not featured in Rudyard Kipling 's original works . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Unlike)
+      (NP
+        (NP (DT the) (NN majority))
+        (PP (IN of)
+          (NP
+            (NP (DT the)
+              (ADJP (VBN adapted))
+              (NNS characters))
+            (PP (IN in)
+              (NP (DT the) (NN film)))))))
+    (, ,)
+    (NP (NNP Louie))
+    (VP (VBD was) (RB not)
+      (VP (VBN featured)
+        (PP (IN in)
+          (NP
+            (NP (NNP Rudyard) (NNP Kipling) (POS 's))
+            (JJ original) (NNS works)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Unlike
+	1	the
+	2	majority
+			sense:	majority.n.01
+	3	of
+	4	the
+	5	adapted
+			sense:	adapt.v.01
+			prop:	adapt.01
+			V		5-5	adapted 
+			N-ARG-A1		6-6	characters 
+	6	characters
+			sense:	fictional_character.n.01
+	7	in
+	8	the
+			coref:	IDENT			2	8-9	the film 
+	9	film
+			sense:	movie.n.01
+	10	,
+	11	Louie
+			coref:	IDENT			0	11-11	Louie 
+			name:	PERSON				11-11	Louie 
+	12	was
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	was 
+	13	not
+			sense:	not.r.01
+	14	featured
+			sense:	have.v.02
+			prop:	feature.01
+			V		14-14	featured 
+			N-ARGM-ADV		0-9	Unlike the majority of the adapted characters in the film 
+			N-ARG-A1		11-11	Louie 
+			N-ARGM-NEG		13-13	not 
+			N-ARG-A2		15-20	in Rudyard Kipling 's original works 
+	15	in
+	16	Rudyard
+	17	Kipling
+	18	's
+	19	original
+			sense:	original.s.01
+	20	works
+			sense:	work.n.02
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+King Louie was portrayed as an orangutan who was the leader of the other jungle primates , and who attempted to gain knowledge of fire from Mowgli , in order to become more human .
+
+
+Treebanked sentence:
+--------------------
+King Louie was portrayed as an orangutan who was the leader of the other jungle primates , and who attempted to gain knowledge of fire from Mowgli , in order to become more human . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP King) (NNP Louie))
+    (VP (VBD was)
+      (VP (VBN portrayed)
+        (PP (IN as)
+          (NP (DT an) (NN orangutan)))
+        (SBAR
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD was)
+                (NP
+                  (NP (DT the) (NN leader))
+                  (PP (IN of)
+                    (NP (DT the) (JJ other) (NN jungle) (NNS primates)))))))
+          (, ,)
+          (CC and)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD attempted)
+                (S
+                  (VP (TO to)
+                    (VP (VB gain)
+                      (NP
+                        (NP (NN knowledge))
+                        (PP (IN of)
+                          (NP (NN fire))))
+                      (PP (IN from)
+                        (NP (NNP Mowgli)))
+                      (, ,)
+                      (SBAR (IN in) (NN order)
+                        (S
+                          (VP (TO to)
+                            (VP (VB become)
+                              (ADJP (RBR more) (JJ human)))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	King
+			coref:	IDENT			0	0-1	King Louie 
+			name:	TITLE				0-0	King 
+	1	Louie
+			name:	PERSON				1-1	Louie 
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	portrayed
+			sense:	portray.v.01
+			prop:	portray.01
+			V		3-3	portrayed 
+			N-ARG-A1		0-1	King Louie 
+			N-ARG-A2		4-33	as an orangutan who was the leader of the other jungle primates , and who attempted to gain knowledge of fire from Mowgli , in order to become more human 
+	4	as
+	5	an
+	6	orangutan
+			sense:	orangutan.n.01
+	7	who
+	8	was
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	was 
+			N-ARG-A1		5-6	an orangutan 
+			R-ARG-A1		7-7	who 
+			N-ARG-A2		9-15	the leader of the other jungle primates 
+	9	the
+	10	leader
+			name:	TITLE				10-10	leader 
+			sense:	leader.n.01
+	11	of
+	12	the
+	13	other
+			sense:	other.a.01
+	14	jungle
+			sense:	jungle.n.03
+	15	primates
+			sense:	primate.n.02
+	16	,
+	17	and
+	18	who
+	19	attempted
+			sense:	try.v.01
+			prop:	attempt.01
+			V		19-19	attempted 
+			N-ARG-A0		5-6	an orangutan 
+			R-ARG-A0		18-18	who 
+			N-ARG-A1		20-33	to gain knowledge of fire from Mowgli , in order to become more human 
+	20	to
+	21	gain
+			sense:	derive.v.02
+			prop:	gain.02
+			V		21-21	gain 
+			N-ARG-A0		18-18	who 
+			N-ARG-A1		22-24	knowledge of fire 
+			N-ARG-A2		25-26	from Mowgli 
+			N-ARGM-PRP		28-33	in order to become more human 
+	22	knowledge
+			sense:	cognition.n.01
+	23	of
+	24	fire
+			name:	CAUSE_OF_DEATH				24-24	fire 
+			sense:	fire.n.03
+	25	from
+	26	Mowgli
+			name:	LOCATION				26-26	Mowgli 
+	27	,
+	28	in
+	29	order
+			sense:	order.n.03
+	30	to
+	31	become
+			sense:	become.v.01
+			prop:	become.01
+			V		31-31	become 
+			N-ARG-A1		18-18	who 
+			N-ARG-A2		32-33	more human 
+	32	more
+			sense:	more.r.01
+	33	human
+			sense:	human.a.03
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+King Louie was voiced by Louis Prima in the original 1967 film .
+
+
+Treebanked sentence:
+--------------------
+King Louie was voiced by Louis Prima in the original 1967 film . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP King) (NNP Louie))
+    (VP (VBD was)
+      (VP (VBN voiced)
+        (PP (IN by)
+          (NP
+            (NP (NNP Louis) (NNP Prima))
+            (PP (IN in)
+              (NP (DT the) (JJ original) (CD 1967) (NN film)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	King
+			coref:	IDENT			0	0-1	King Louie 
+			name:	TITLE				0-0	King 
+	1	Louie
+			name:	PERSON				1-1	Louie 
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	voiced
+			sense:	voice.v.01
+			prop:	voice.01
+			V		3-3	voiced 
+			N-ARG-A1		0-1	King Louie 
+			N-ARG-A0		4-6	by Louis Prima 
+			N-ARGM-LOC		7-11	in the original 1967 film 
+	4	by
+	5	Louis
+			name:	PERSON				5-6	Louis Prima 
+	6	Prima
+	7	in
+	8	the
+			coref:	IDENT			2	8-11	the original 1967 film 
+	9	original
+			sense:	original.s.01
+	10	1967
+			coref:	IDENT			1	10-10	1967 
+			name:	DATE				10-10	1967 
+	11	film
+			sense:	movie.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Initially , the filmmakers considered Louis Armstrong for the role , but to avoid the likely controversy that would result from casting a black person to voice an ape , they instead chose Prima , a white singer .
+
+
+Treebanked sentence:
+--------------------
+Initially , the filmmakers considered Louis Armstrong for the role , but to avoid the likely controversy that would result from casting a black person to voice an ape , they instead chose Prima , a white singer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Initially))
+    (, ,)
+    (S
+      (NP (DT the) (NNS filmmakers))
+      (VP (VBN considered)
+        (NP
+          (NP (NNP Louis) (NNP Armstrong))
+          (PP (IN for)
+            (NP (DT the) (NN role))))))
+    (, ,)
+    (CC but)
+    (S
+      (S
+        (VP (TO to)
+          (VP (VB avoid)
+            (NP
+              (NP (DT the) (JJ likely) (NN controversy))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (MD would)
+                    (VP (VB result)
+                      (PP (IN from)
+                        (S
+                          (VP (VBG casting)
+                            (NP (DT a) (JJ black) (NN person))
+                            (S
+                              (VP (TO to)
+                                (VP (VB voice)
+                                  (NP (DT an) (NN ape))))))))))))))))
+      (, ,)
+      (NP (PRP they))
+      (ADVP (RB instead))
+      (VP (VBD chose)
+        (NP
+          (NP (NNP Prima))
+          (, ,)
+          (NP (DT a) (JJ white) (NN singer)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Initially
+			sense:	initially.r.01
+	1	,
+	2	the
+	3	filmmakers
+			sense:	film_maker.n.01
+	4	considered
+			sense:	consider.v.03
+			prop:	consider.02
+			V		4-4	considered 
+			N-ARGM-TMP		0-0	Initially 
+			N-ARG-A0		2-3	the filmmakers 
+			N-ARG-A1		5-6	Louis Armstrong 
+			N-ARG-A2		7-9	for the role 
+	5	Louis
+			name:	PERSON				5-6	Louis Armstrong 
+	6	Armstrong
+	7	for
+	8	the
+	9	role
+			sense:	character.n.04
+	10	,
+	11	but
+	12	to
+	13	avoid
+			sense:	debar.v.02
+			prop:	avoid.01
+			V		13-13	avoid 
+			N-ARG-A1		14-28	the likely controversy that would result from casting a black person to voice an ape 
+			N-ARG-A0		30-30	they 
+	14	the
+	15	likely
+			sense:	likely.a.01
+	16	controversy
+			sense:	controversy.n.01
+	17	that
+	18	would
+	19	result
+			sense:	result.v.01
+			prop:	result.01
+			V		19-19	result 
+			N-ARG-A2		14-16	the likely controversy 
+			R-ARG-A2		17-17	that 
+			N-ARGM-MOD		18-18	would 
+			N-ARG-A1		20-28	from casting a black person to voice an ape 
+	20	from
+	21	casting
+			sense:	cast.v.03
+			prop:	cast.02
+			V		21-21	casting 
+			N-ARG-A1		22-24	a black person 
+			N-ARG-A2		25-28	to voice an ape 
+	22	a
+	23	black
+			sense:	black.a.02
+	24	person
+			sense:	person.n.01
+	25	to
+	26	voice
+			sense:	voice.v.01
+			prop:	voice.01
+			V		26-26	voice 
+			N-ARG-A0		22-24	a black person 
+			N-ARG-A1		27-28	an ape 
+	27	an
+	28	ape
+			sense:	ape.n.01
+	29	,
+	30	they
+	31	instead
+			sense:	alternatively.r.01
+	32	chose
+			sense:	choose.v.01
+			prop:	choose.01
+			V		32-32	chose 
+			R-ARG-A0		12-28	to avoid the likely controversy that would result from casting a black person to voice an ape 
+			N-ARG-A0		30-30	they 
+			N-ARGM-DIS		31-31	instead 
+			N-ARG-A1		33-37	Prima , a white singer 
+	33	Prima
+			name:	ORGANIZATION				33-33	Prima 
+	34	,
+	35	a
+	36	white
+			sense:	white.a.02
+	37	singer
+			name:	TITLE				37-37	singer 
+			sense:	singer.n.01
+	38	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Christopher Walken voiced King Louie in the 2016 live - action / CGI The Jungle Book film .
+
+
+Treebanked sentence:
+--------------------
+Christopher Walken voiced King Louie in the 2016 live - action / CGI The Jungle Book film . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Christopher) (NNP Walken))
+    (VP (VBD voiced)
+      (NP
+        (NP (NNP King) (NNP Louie))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (CD 2016)
+              (NML (JJ live) (HYPH -) (NN action) (HYPH /))
+              (NN CGI))
+            (NP (DT The) (NN Jungle) (NNP Book) (NN film))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Christopher
+			name:	PERSON				0-1	Christopher Walken 
+	1	Walken
+	2	voiced
+			sense:	voice.v.01
+			prop:	voice.01
+			V		2-2	voiced 
+			N-ARG-A0		0-1	Christopher Walken 
+			N-ARG-A1		3-4	King Louie 
+			N-ARGM-LOC		5-16	in the 2016 live - action / CGI The Jungle Book film 
+	3	King
+			coref:	IDENT			0	3-16	King Louie in the 2016 live - action / CGI The Jungle Book film 
+			name:	TITLE				3-3	King 
+	4	Louie
+			name:	PERSON				4-4	Louie 
+	5	in
+	6	the
+	7	2016
+			name:	DATE				7-7	2016 
+	8	live
+			sense:	live.a.01
+	9	-
+	10	action
+			sense:	action.n.02
+	11	/
+	12	CGI
+	13	The
+			coref:	IDENT			2	13-16	The Jungle Book film 
+	14	Jungle
+			sense:	jungle.n.03
+	15	Book
+	16	film
+			sense:	movie.n.01
+	17	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.3-16	King Louie in the 2016 live - action / CGI The Jungle Book film 
+				0.0-1	King Louie 
+				1.11-11	Louie 
+				2.0-1	King Louie 
+				3.0-1	King Louie 
+	Chain 1 (IDENT)
+				0.11-11	1967 
+				3.10-10	1967 
+	Chain 2 (IDENT)
+				0.11-18	1967 animated musical film , The Jungle Book 
+				1.8-9	the film 
+				3.8-11	the original 1967 film 
+				5.13-16	The Jungle Book film 
+

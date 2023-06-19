@@ -1,0 +1,707 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Erik Fosnes Hansen ( born 6 June 1965 ) is a Norwegian writer .
+
+
+Treebanked sentence:
+--------------------
+Erik Fosnes Hansen ( born 6 June 1965 ) is a Norwegian writer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Erik) (NNP Fosnes) (NNP Hansen))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 6))
+        (NP-TMP (NNP June) (CD 1965)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (JJ Norwegian) (NN writer)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Erik
+			name:	PERSON				0-2	Erik Fosnes Hansen 
+	1	Fosnes
+	2	Hansen
+	3	(
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-2	Erik Fosnes Hansen 
+			N-ARGM-TMP		5-7	6 June 1965 
+	5	6
+			name:	DATE				5-7	6 June 1965 
+	6	June
+	7	1965
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	Erik Fosnes Hansen ( born 6 June 1965 ) 
+			N-ARG-A2		10-12	a Norwegian writer 
+	10	a
+	11	Norwegian
+			name:	NATIONALITY				11-11	Norwegian 
+	12	writer
+			name:	TITLE				12-12	writer 
+			sense:	writer.n.01
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Hansen was born in New York and made his debut at age twenty with the novel Falketårnet .
+
+
+Treebanked sentence:
+--------------------
+Hansen was born in New York and made his debut at age twenty with the novel Falketårnet . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Hansen))
+    (VP
+      (VP (VBD was)
+        (VP (VBN born)
+          (PP (IN in)
+            (NP (NNP New) (NNP York)))))
+      (CC and)
+      (VP (VBD made)
+        (NP (PRP$ his) (NN debut))
+        (PP (IN at)
+          (NP (NN age) (CD twenty)))
+        (PP (IN with)
+          (NP (DT the) (JJ novel) (NNP Falketårnet)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Hansen
+			name:	PERSON				0-0	Hansen 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Hansen 
+			N-ARGM-LOC		3-5	in New York 
+	3	in
+	4	New
+			name:	STATE_OR_PROVINCE				4-5	New York 
+	5	York
+	6	and
+	7	made
+			sense:	make.v.01
+			prop:	make.01
+			V		7-7	made 
+			N-ARG-A0		0-0	Hansen 
+			N-ARG-A1		8-9	his debut 
+			N-ARGM-TMP		10-12	at age twenty 
+			N-ARGM-MNR		13-16	with the novel Falketårnet 
+	8	his
+	9	debut
+			sense:	introduction.n.01
+	10	at
+	11	age
+			sense:	age.n.01
+	12	twenty
+			name:	NUMBER				12-12	twenty 
+	13	with
+	14	the
+	15	novel
+			sense:	fresh.s.04
+	16	Falketårnet
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His best - known work is his second novel , Psalm at Journey 's End , which in separate but steadily more interwoven stories follows the individual musicians who end their careers and lives on the Titanic .
+
+
+Treebanked sentence:
+--------------------
+His best - known work is his second novel , Psalm at Journey 's End , which in separate but steadily more interwoven stories follows the individual musicians who end their careers and lives on the Titanic . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His)
+      (NML (RBS best) (HYPH -) (VBN known))
+      (NN work))
+    (VP (VBZ is)
+      (NP
+        (NP (PRP$ his) (JJ second) (NN novel))
+        (, ,)
+        (NP
+          (NP (NNP Psalm))
+          (PP (IN at)
+            (NP
+              (NP
+                (NP (NNP Journey) (POS 's))
+                (NN End))
+              (, ,)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (PP (IN in)
+                    (NP
+                      (ADJP
+                        (ADJP (JJ separate))
+                        (CC but)
+                        (ADJP (RB steadily) (RBR more) (JJ interwoven)))
+                      (NNS stories)))
+                  (VP (VBZ follows)
+                    (NP
+                      (NP (DT the) (JJ individual) (NNS musicians))
+                      (SBAR
+                        (WHNP (WP who))
+                        (S
+                          (VP (VBP end)
+                            (NP (PRP$ their) (NNS careers)
+                              (CC and)
+                              (NNS lives))
+                            (PP (IN on)
+                              (NP (DT the) (NNP Titanic)))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+	1	best
+			sense:	well.r.01
+	2	-
+	3	known
+			sense:	know.v.07
+			prop:	know.01
+			V		3-3	known 
+			N-ARGM-ADV		1-1	best 
+			N-ARG-A1		4-4	work 
+	4	work
+			sense:	work.n.02
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	His best - known work 
+			N-ARG-A2		6-36	his second novel , Psalm at Journey 's End , which in separate but steadily more interwoven stories follows the individual musicians who end their careers and lives on the Titanic 
+	6	his
+	7	second
+			name:	ORDINAL				7-7	second 
+			sense:	second.s.01
+	8	novel
+			sense:	novel.n.01
+	9	,
+	10	Psalm
+			coref:	IDENT			0	10-36	Psalm at Journey 's End , which in separate but steadily more interwoven stories follows the individual musicians who end their careers and lives on the Titanic 
+	11	at
+	12	Journey
+			name:	ORGANIZATION				12-12	Journey 
+	13	's
+	14	End
+			sense:	end.n.01
+	15	,
+	16	which
+	17	in
+	18	separate
+			sense:	separate.a.01
+	19	but
+	20	steadily
+			sense:	steadily.r.01
+	21	more
+			sense:	more.r.01
+	22	interwoven
+			sense:	interlacing.s.01
+	23	stories
+			sense:	story.n.02
+	24	follows
+			sense:	trace.v.01
+			prop:	follow.02
+			V		24-24	follows 
+			N-ARG-A0		6-14	his second novel , Psalm at Journey 's End 
+			R-ARG-A0		16-16	which 
+			N-ARGM-LOC		17-23	in separate but steadily more interwoven stories 
+			N-ARG-A1		25-36	the individual musicians who end their careers and lives on the Titanic 
+	25	the
+	26	individual
+			sense:	individual.a.01
+	27	musicians
+			sense:	musician.n.01
+	28	who
+	29	end
+			sense:	end.v.02
+			prop:	end.01
+			V		29-29	end 
+			N-ARG-A0		25-27	the individual musicians 
+			R-ARG-A0		28-28	who 
+			N-ARG-A1		30-31	their careers 
+			N-ARGM-LOC		34-36	on the Titanic 
+	30	their
+			coref:	IDENT			0	30-30	their 
+	31	careers
+			sense:	career.n.01
+	32	and
+	33	lives
+			sense:	life.n.05
+	34	on
+	35	the
+	36	Titanic
+			name:	MISC				36-36	Titanic 
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The book has been translated into more than twenty languages .
+
+
+Treebanked sentence:
+--------------------
+The book has been translated into more than twenty languages . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN book))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN translated)
+          (PP (IN into)
+            (NP
+              (QP (JJR more) (IN than) (CD twenty))
+              (NNS languages))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	book
+			sense:	book.n.01
+	2	has
+			sense:	have.v.01
+			prop:	have.01
+			V		2-2	has 
+	3	been
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	been 
+	4	translated
+			sense:	translate.v.01
+			prop:	translate.01
+			V		4-4	translated 
+			N-ARG-A1		0-1	The book 
+			N-ARG-A2		5-9	into more than twenty languages 
+	5	into
+	6	more
+			sense:	more.a.02
+	7	than
+	8	twenty
+			name:	NUMBER				8-8	twenty 
+	9	languages
+			sense:	language.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A sequel to Beretninger om beskyttelse ( Tales of Protection ) has been announced but is not yet completed .
+
+
+Treebanked sentence:
+--------------------
+A sequel to Beretninger om beskyttelse ( Tales of Protection ) has been announced but is not yet completed . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN sequel))
+      (PP (IN to)
+        (NP (NNP Beretninger) (NNP om) (NN beskyttelse)))
+      (PRN (-LRB- -LRB-)
+        (NP
+          (NP (NNS Tales))
+          (PP (IN of)
+            (NP (NNP Protection))))
+        (-RRB- -RRB-)))
+    (VP
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP (VBN announced))))
+      (CC but)
+      (VP (VBZ is) (RB not)
+        (ADVP (RB yet))
+        (VP (VBN completed))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	sequel
+			sense:	sequel.n.02
+	2	to
+	3	Beretninger
+	4	om
+	5	beskyttelse
+	6	(
+	7	Tales
+			sense:	narrative.n.01
+	8	of
+	9	Protection
+	10	)
+	11	has
+			sense:	have.v.01
+			prop:	have.01
+			V		11-11	has 
+	12	been
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	been 
+	13	announced
+			sense:	announce.v.01
+			prop:	announce.01
+			V		13-13	announced 
+			N-ARG-A1		0-10	A sequel to Beretninger om beskyttelse ( Tales of Protection ) 
+	14	but
+	15	is
+			sense:	be.v.01
+			prop:	be.03
+			V		15-15	is 
+	16	not
+			sense:	not.r.01
+	17	yet
+			sense:	yet.r.01
+	18	completed
+			sense:	complete.v.01
+			prop:	complete.01
+			V		18-18	completed 
+			N-ARG-A1		0-10	A sequel to Beretninger om beskyttelse ( Tales of Protection ) 
+			N-ARGM-NEG		16-16	not 
+			N-ARGM-TMP		17-17	yet 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He has also published poetry and is a frequent contributor to contemporary public cultural discussions .
+
+
+Treebanked sentence:
+--------------------
+He has also published poetry and is a frequent contributor to contemporary public cultural discussions . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBZ has)
+        (ADVP (RB also))
+        (VP (VBN published)
+          (NP (NN poetry))))
+      (CC and)
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (JJ frequent) (NN contributor))
+          (PP (IN to)
+            (NP (JJ contemporary) (JJ public) (JJ cultural) (NNS discussions))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	also
+			sense:	besides.r.02
+	3	published
+			sense:	publish.v.03
+			prop:	publish.01
+			V		3-3	published 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A1		4-4	poetry 
+	4	poetry
+			sense:	poetry.n.01
+	5	and
+	6	is
+			sense:	be.v.01
+			prop:	be.01
+			V		6-6	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		7-14	a frequent contributor to contemporary public cultural discussions 
+	7	a
+	8	frequent
+			sense:	frequent.a.01
+	9	contributor
+			sense:	contributor.n.02
+	10	to
+	11	contemporary
+			sense:	contemporary.s.02
+	12	public
+			sense:	public.a.01
+	13	cultural
+			sense:	cultural.a.01
+	14	discussions
+			sense:	discussion.n.02
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Hansen is a member of the Norwegian Academy for Language and Literature .
+
+
+Treebanked sentence:
+--------------------
+Hansen is a member of the Norwegian Academy for Language and Literature . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Hansen))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (DT the)
+              (NML (NNP Norwegian) (NNP Academy)))
+            (PP (IN for)
+              (NP (NNP Language)
+                (CC and)
+                (NNP Literature)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Hansen
+			name:	PERSON				0-0	Hansen 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Hansen 
+			N-ARG-A2		2-11	a member of the Norwegian Academy for Language and Literature 
+	2	a
+	3	member
+			sense:	member.n.01
+	4	of
+	5	the
+	6	Norwegian
+			name:	ORGANIZATION				6-11	Norwegian Academy for Language and Literature 
+	7	Academy
+	8	for
+	9	Language
+	10	and
+	11	Literature
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was awarded the Riksmål Society Literature Prize in 1990 .
+
+
+Treebanked sentence:
+--------------------
+He was awarded the Riksmål Society Literature Prize in 1990 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN awarded)
+        (NP
+          (NP (DT the) (NNP Riksmål)
+            (NML (NNP Society) (NNP Literature))
+            (NNP Prize))
+          (PP (IN in)
+            (NP (CD 1990))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	awarded
+			sense:	award.v.01
+			prop:	award.01
+			V		2-2	awarded 
+			N-ARG-A2		0-0	He 
+			N-ARG-A1		3-7	the Riksmål Society Literature Prize 
+			N-ARGM-TMP		8-9	in 1990 
+	3	the
+	4	Riksmål
+	5	Society
+	6	Literature
+	7	Prize
+	8	in
+	9	1990
+			name:	DATE				9-9	1990 
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Hansen gained attention in the Norwegian press after throwing a piece of paper at a representative of the Progress Party during a heated debate on the radio station NRK P2 .
+
+
+Treebanked sentence:
+--------------------
+Hansen gained attention in the Norwegian press after throwing a piece of paper at a representative of the Progress Party during a heated debate on the radio station NRK P2 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Hansen))
+    (VP (VBD gained)
+      (NP (NN attention))
+      (PP (IN in)
+        (NP (DT the) (JJ Norwegian) (NN press)))
+      (PP (IN after)
+        (S
+          (VP (VBG throwing)
+            (NP
+              (NP (DT a) (NN piece))
+              (PP (IN of)
+                (NP (NN paper))))
+            (PP (IN at)
+              (NP
+                (NP (DT a) (NN representative))
+                (PP (IN of)
+                  (NP (DT the) (NNP Progress) (NNP Party)))))
+            (PP (IN during)
+              (NP
+                (NP (DT a) (JJ heated) (NN debate))
+                (PP (IN on)
+                  (NP (DT the)
+                    (NML
+                      (NML (NN radio) (NN station))
+                      (NNP NRK))
+                    (NN P2)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Hansen
+			name:	PERSON				0-0	Hansen 
+	1	gained
+			sense:	acquire.v.05
+			prop:	gain.02
+			V		1-1	gained 
+			N-ARG-A0		0-0	Hansen 
+			N-ARG-A1		2-2	attention 
+			N-ARGM-LOC		3-6	in the Norwegian press 
+			N-ARGM-TMP		7-29	after throwing a piece of paper at a representative of the Progress Party during a heated debate on the radio station NRK P2 
+	2	attention
+			sense:	attention.n.03
+	3	in
+	4	the
+	5	Norwegian
+			name:	NATIONALITY				5-5	Norwegian 
+	6	press
+			sense:	press.n.02
+	7	after
+	8	throwing
+			sense:	throw.v.01
+			prop:	throw.01
+			V		8-8	throwing 
+			N-ARG-A0		0-0	Hansen 
+			N-ARG-A1		9-12	a piece of paper 
+			N-ARG-A2		13-19	at a representative of the Progress Party 
+			N-ARGM-TMP		20-29	during a heated debate on the radio station NRK P2 
+	9	a
+	10	piece
+			sense:	piece.n.01
+	11	of
+	12	paper
+			sense:	paper.n.01
+	13	at
+	14	a
+	15	representative
+			name:	TITLE				15-15	representative 
+			sense:	spokesperson.n.01
+	16	of
+	17	the
+	18	Progress
+			name:	ORGANIZATION				18-19	Progress Party 
+	19	Party
+	20	during
+	21	a
+	22	heated
+			sense:	heated.s.02
+	23	debate
+			sense:	argument.n.03
+	24	on
+	25	the
+	26	radio
+			sense:	radio.n.01
+	27	station
+			sense:	station.n.05
+	28	NRK
+			name:	ORGANIZATION				28-28	NRK 
+	29	P2
+	30	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.10-36	Psalm at Journey 's End , which in separate but steadily more interwoven stories follows the individual musicians who end their careers and lives on the Titanic 
+				2.30-30	their 
+

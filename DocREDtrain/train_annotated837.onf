@@ -1,0 +1,715 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bruce McLean ( born 1944 ) is a Scottish sculptor , performance artist and painter .
+
+
+Treebanked sentence:
+--------------------
+Bruce McLean ( born 1944 ) is a Scottish sculptor , performance artist and painter . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Bruce) (NNP McLean))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 1944)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ Scottish) (NN sculptor))
+        (, ,)
+        (NP (NN performance) (NN artist))
+        (CC and)
+        (NP (NN painter))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bruce
+			coref:	IDENT			0	0-1	Bruce McLean 
+			name:	PERSON				0-1	Bruce McLean 
+	1	McLean
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Bruce McLean 
+			N-ARGM-TMP		4-4	1944 
+	4	1944
+			name:	DATE				4-4	1944 
+	5	)
+	6	is
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	is 
+			N-ARG-A1		0-5	Bruce McLean ( born 1944 ) 
+			N-ARG-A2		7-14	a Scottish sculptor , performance artist and painter 
+	7	a
+	8	Scottish
+			name:	NATIONALITY				8-8	Scottish 
+	9	sculptor
+			name:	TITLE				9-9	sculptor 
+			sense:	sculptor.n.01
+	10	,
+	11	performance
+			sense:	performance.n.01
+	12	artist
+			name:	TITLE				12-12	artist 
+			sense:	artist.n.01
+	13	and
+	14	painter
+			name:	TITLE				14-14	painter 
+			sense:	painter.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+McLean was born in Glasgow and studied at Glasgow School of Art from 1961 to 1963 , and at Saint Martin 's School of Art , London , from 1963 to 1966 .
+
+
+Treebanked sentence:
+--------------------
+McLean was born in Glasgow and studied at Glasgow School of Art from 1961 to 1963 , and at Saint Martin 's School of Art , London , from 1963 to 1966 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP McLean))
+    (VP (VBD was)
+      (VP
+        (VP (VBN born)
+          (PP (IN in)
+            (NP (NNP Glasgow))))
+        (CC and)
+        (VP (VBN studied)
+          (PP (IN at)
+            (NP
+              (NP (NNP Glasgow) (NNP School))
+              (PP (IN of)
+                (NP (NNP Art)))))
+          (PP (IN from)
+            (NP (CD 1961)))
+          (PP (IN to)
+            (NP (CD 1963))))
+        (, ,)
+        (CC and)
+        (VP
+          (PP (IN at)
+            (NP
+              (NP
+                (NP (NNP Saint) (NNP Martin) (POS 's))
+                (NNP School))
+              (PP (IN of)
+                (NP (NNP Art) (, ,) (NNP London) (, ,)))))
+          (PP (IN from)
+            (NP (CD 1963)))
+          (PP (IN to)
+            (NP (CD 1966))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	McLean
+			coref:	IDENT			0	0-0	McLean 
+			name:	PERSON				0-0	McLean 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	McLean 
+			N-ARGM-LOC		3-4	in Glasgow 
+	3	in
+	4	Glasgow
+			name:	CITY				4-4	Glasgow 
+	5	and
+	6	studied
+			sense:	study.v.02
+			prop:	study.01
+			V		6-6	studied 
+			N-ARG-A0		0-0	McLean 
+			N-ARGM-LOC		7-11	at Glasgow School of Art 
+			N-ARGM-TMP		12-15	from 1961 to 1963 
+			N-ARGM-TMP		28-31	from 1963 to 1966 
+	7	at
+	8	Glasgow
+			name:	ORGANIZATION				8-11	Glasgow School of Art 
+	9	School
+	10	of
+	11	Art
+	12	from
+	13	1961
+			name:	DATE				13-15	1961 to 1963 
+	14	to
+	15	1963
+	16	,
+	17	and
+	18	at
+	19	Saint
+			name:	ORGANIZATION				19-24	Saint Martin 's School of Art 
+	20	Martin
+	21	's
+	22	School
+	23	of
+	24	Art
+	25	,
+	26	London
+			name:	CITY				26-26	London 
+	27	,
+	28	from
+	29	1963
+			name:	DATE				29-31	1963 to 1966 
+	30	to
+	31	1966
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At Saint Martin 's , McLean studied with Anthony Caro and Phillip King .
+
+
+Treebanked sentence:
+--------------------
+At Saint Martin 's , McLean studied with Anthony Caro and Phillip King . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (NNP Saint) (NNP Martin) (POS 's)))
+    (, ,)
+    (NP (NNP McLean))
+    (VP (VBD studied)
+      (PP (IN with)
+        (NP
+          (NP (NNP Anthony) (NNP Caro))
+          (CC and)
+          (NP (NNP Phillip) (NNP King)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	Saint
+			name:	TITLE				1-1	Saint 
+	2	Martin
+			name:	PERSON				2-2	Martin 
+	3	's
+	4	,
+	5	McLean
+			coref:	IDENT			0	5-5	McLean 
+			name:	PERSON				5-5	McLean 
+	6	studied
+			sense:	study.v.02
+			prop:	study.01
+			V		6-6	studied 
+			N-ARGM-LOC		0-3	At Saint Martin 's 
+			N-ARG-A0		5-5	McLean 
+			N-ARGM-MNR		7-12	with Anthony Caro and Phillip King 
+	7	with
+	8	Anthony
+			name:	PERSON				8-9	Anthony Caro 
+	9	Caro
+	10	and
+	11	Phillip
+			name:	PERSON				11-12	Phillip King 
+	12	King
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In reaction to what he regarded as the academicism of his teachers he began making sculpture from rubbish .
+
+
+Treebanked sentence:
+--------------------
+In reaction to what he regarded as the academicism of his teachers he began making sculpture from rubbish . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (NN reaction))
+        (PP (IN to)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (PRP he))
+              (VP (VBD regarded)
+                (PP (IN as)
+                  (NP
+                    (NP (DT the) (NN academicism))
+                    (PP (IN of)
+                      (NP (PRP$ his) (NNS teachers)))))))))))
+    (NP (PRP he))
+    (VP (VBD began)
+      (S
+        (VP (VBG making)
+          (NP (NN sculpture))
+          (PP (IN from)
+            (NP (NN rubbish))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	reaction
+			sense:	reaction.n.07
+	2	to
+	3	what
+	4	he
+			coref:	IDENT			0	4-4	he 
+	5	regarded
+			sense:	see.v.05
+			prop:	regard.01
+			V		5-5	regarded 
+			N-ARG-A1		3-3	what 
+			N-ARG-A0		4-4	he 
+			N-ARG-A2		6-11	as the academicism of his teachers 
+	6	as
+	7	the
+	8	academicism
+			sense:	scholasticism.n.02
+	9	of
+	10	his
+			coref:	IDENT			0	10-10	his 
+	11	teachers
+			sense:	teacher.n.01
+	12	he
+			coref:	IDENT			0	12-12	he 
+	13	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		13-13	began 
+			N-ARGM-CAU		0-11	In reaction to what he regarded as the academicism of his teachers 
+			N-ARG-A0		12-12	he 
+			N-ARG-A1		14-17	making sculpture from rubbish 
+	14	making
+			sense:	create.v.05
+			prop:	make.01
+			V		14-14	making 
+			N-ARG-A0		12-12	he 
+			N-ARG-A1		15-15	sculpture 
+			N-ARG-A2		16-17	from rubbish 
+	15	sculpture
+			sense:	sculpture.n.01
+	16	from
+	17	rubbish
+			sense:	rubbish.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+McLean has gained international recognition for his paintings , ceramics , prints , work with film , theatre and books .
+
+
+Treebanked sentence:
+--------------------
+McLean has gained international recognition for his paintings , ceramics , prints , work with film , theatre and books . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP McLean))
+    (VP (VBZ has)
+      (VP (VBN gained)
+        (NP
+          (NP (JJ international) (NN recognition))
+          (PP (IN for)
+            (NP (PRP$ his)
+              (NML
+                (NML (NNS paintings))
+                (, ,)
+                (NML (NNS ceramics))
+                (, ,))
+              (NNS prints))))
+        (, ,)
+        (S
+          (VP (VB work)
+            (PP (IN with)
+              (NP (NN film) (, ,) (NN theatre)
+                (CC and)
+                (NNS books)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	McLean
+			coref:	IDENT			0	0-0	McLean 
+			name:	PERSON				0-0	McLean 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	gained
+			sense:	acquire.v.05
+			prop:	gain.02
+			V		2-2	gained 
+			N-ARG-A0		0-0	McLean 
+			N-ARG-A1		3-4	international recognition 
+	3	international
+			sense:	external.s.03
+	4	recognition
+			sense:	recognition.n.01
+	5	for
+	6	his
+			coref:	IDENT			0	6-6	his 
+	7	paintings
+			sense:	painting.n.01
+	8	,
+	9	ceramics
+			sense:	ceramic.n.01
+	10	,
+	11	prints
+			sense:	print.n.02
+	12	,
+	13	work
+			sense:	shape.v.02
+			prop:	work.01
+			V		13-13	work 
+			N-ARG-A0		6-6	his 
+	14	with
+	15	film
+			sense:	film.n.02
+	16	,
+	17	theatre
+			sense:	dramaturgy.n.01
+	18	and
+	19	books
+			sense:	book.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+McLean was Head of Graduate Painting at The Slade School of Fine Art London 
+
+
+Treebanked sentence:
+--------------------
+McLean was Head of Graduate Painting at The Slade School of Fine Art London He has had numerous one man exhibitions including Tate Gallery in London , The Modern Art Gallery in Vienna and Museum of Modern Art , Oxford . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP McLean))
+    (VP (VBD was)
+      (NP
+        (NP (NNP Head))
+        (PP (IN of)
+          (NP
+            (NP (NNP Graduate) (NNP Painting))
+            (PP (IN at)
+              (NP
+                (NP (DT The) (NNP Slade) (NNP School))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP Fine) (NNP Art) (NNP London))
+                    (SBAR
+                      (S
+                        (NP (PRP He))
+                        (VP (VBZ has)
+                          (VP (VBN had)
+                            (NP
+                              (NP (JJ numerous)
+                                (NML (CD one) (NN man))
+                                (NNS exhibitions))
+                              (PP (VBG including)
+                                (NP
+                                  (NP
+                                    (NP (NNP Tate) (NNP Gallery))
+                                    (PP (IN in)
+                                      (NP (NNP London))))
+                                  (, ,)
+                                  (NP
+                                    (NP (DT The)
+                                      (NML (NNP Modern) (NNP Art))
+                                      (NNP Gallery))
+                                    (PP (IN in)
+                                      (NP (NNP Vienna))))
+                                  (CC and)
+                                  (NP
+                                    (NP (NNP Museum))
+                                    (PP (IN of)
+                                      (NP
+                                        (NP (NNP Modern) (NNP Art))
+                                        (, ,)
+                                        (NP (NNP Oxford))))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	McLean
+			coref:	IDENT			0	0-0	McLean 
+			name:	PERSON				0-0	McLean 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	McLean 
+			N-ARG-A2		2-13	Head of Graduate Painting at The Slade School of Fine Art London 
+	2	Head
+	3	of
+	4	Graduate
+	5	Painting
+	6	at
+	7	The
+	8	Slade
+			name:	LOCATION				8-12	Slade School of Fine Art 
+	9	School
+	10	of
+	11	Fine
+	12	Art
+	13	London
+			name:	CITY				13-13	London 
+	14	He
+			coref:	IDENT			0	14-14	He 
+	15	has
+			sense:	have.v.01
+			prop:	have.01
+			V		15-15	has 
+	16	had
+			sense:	hold.v.03
+			prop:	have.03
+			V		16-16	had 
+			N-ARG-A0		14-14	He 
+			N-ARG-A1		17-39	numerous one man exhibitions including Tate Gallery in London , The Modern Art Gallery in Vienna and Museum of Modern Art , Oxford 
+	17	numerous
+			sense:	numerous.s.01
+	18	one
+			name:	NUMBER				18-18	one 
+	19	man
+			sense:	man.n.03
+	20	exhibitions
+			sense:	exhibition.n.02
+	21	including
+			sense:	include.v.01
+			prop:	include.01
+			V		21-21	including 
+			N-ARG-A2		17-20	numerous one man exhibitions 
+			N-ARG-A1		22-39	Tate Gallery in London , The Modern Art Gallery in Vienna and Museum of Modern Art , Oxford 
+	22	Tate
+			name:	ORGANIZATION				22-23	Tate Gallery 
+	23	Gallery
+	24	in
+	25	London
+			name:	CITY				25-25	London 
+	26	,
+	27	The
+	28	Modern
+			name:	LOCATION				28-30	Modern Art Gallery 
+	29	Art
+	30	Gallery
+	31	in
+	32	Vienna
+			name:	CITY				32-32	Vienna 
+	33	and
+	34	Museum
+			name:	ORGANIZATION				34-37	Museum of Modern Art 
+	35	of
+	36	Modern
+	37	Art
+	38	,
+	39	Oxford
+			name:	CITY				39-39	Oxford 
+	40	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1985 , he won the John Moores Painting Prize .
+
+
+Treebanked sentence:
+--------------------
+In 1985 , he won the John Moores Painting Prize . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1985)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD won)
+      (NP (DT the) (NNP John) (NNP Moores) (NNP Painting) (NNP Prize)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1985
+			name:	DATE				1-1	1985 
+	2	,
+	3	he
+			coref:	IDENT			0	3-3	he 
+	4	won
+			sense:	win.v.01
+			prop:	win.01
+			V		4-4	won 
+			N-ARGM-TMP		0-1	In 1985 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		5-9	the John Moores Painting Prize 
+	5	the
+	6	John
+			name:	PERSON				6-7	John Moores 
+	7	Moores
+	8	Painting
+	9	Prize
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mclean lives and works in London .
+
+
+Treebanked sentence:
+--------------------
+Mclean lives and works in London . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Mclean))
+    (VP (VBZ lives)
+      (CC and)
+      (VBZ works)
+      (PP (IN in)
+        (NP (NNP London))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mclean
+			coref:	IDENT			0	0-0	Mclean 
+			name:	PERSON				0-0	Mclean 
+	1	lives
+			sense:	populate.v.01
+			prop:	lie.01
+			V		1-1	lives 
+			N-ARG-A0		0-0	Mclean 
+			N-ARGM-LOC		4-5	in London 
+	2	and
+	3	works
+			sense:	work.v.02
+			prop:	work.01
+			V		3-3	works 
+			N-ARG-A0		0-0	Mclean 
+			N-ARGM-LOC		4-5	in London 
+	4	in
+	5	London
+			name:	CITY				5-5	London 
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His son is the architect Will McLean .
+
+
+Treebanked sentence:
+--------------------
+His son is the architect Will McLean . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His) (NN son))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN architect))
+        (SQ (MD Will)
+          (NP (NNP McLean)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-0	His 
+	1	son
+			sense:	son.n.01
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	His son 
+			N-ARG-A2		3-6	the architect Will McLean 
+	3	the
+	4	architect
+			name:	TITLE				4-4	architect 
+			sense:	architect.n.01
+	5	Will
+			coref:	IDENT			0	5-6	Will McLean 
+			name:	PERSON				5-6	Will McLean 
+	6	McLean
+	7	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Bruce McLean 
+				1.0-0	McLean 
+				2.5-5	McLean 
+				3.4-4	he 
+				3.10-10	his 
+				3.12-12	he 
+				4.0-0	McLean 
+				4.6-6	his 
+				5.0-0	McLean 
+				5.14-14	He 
+				6.3-3	he 
+				7.0-0	Mclean 
+				8.0-0	His 
+				8.5-6	Will McLean 
+

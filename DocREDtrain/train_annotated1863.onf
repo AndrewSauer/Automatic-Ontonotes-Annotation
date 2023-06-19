@@ -1,0 +1,516 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+All That Jazz is a 1979 American musical drama film directed by Bob Fosse .
+
+
+Treebanked sentence:
+--------------------
+All That Jazz is a 1979 American musical drama film directed by Bob Fosse . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT All))
+      (NP (DT That) (NN Jazz)))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a)
+          (NML (CD 1979) (NNP American))
+          (JJ musical) (NN drama) (NN film))
+        (VP (VBN directed)
+          (PP (IN by)
+            (NP (NNP Bob) (NNP Fosse))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	All
+	1	That
+			coref:	IDENT			1	1-2	That Jazz 
+	2	Jazz
+			sense:	jazz.n.02
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	All That Jazz 
+			N-ARG-A2		4-13	a 1979 American musical drama film directed by Bob Fosse 
+	4	a
+	5	1979
+			name:	DATE				5-5	1979 
+	6	American
+			name:	NATIONALITY				6-6	American 
+	7	musical
+			sense:	musical.a.03
+	8	drama
+			sense:	play.n.01
+	9	film
+			sense:	movie.n.01
+	10	directed
+			sense:	direct.v.03
+			prop:	direct.01
+			V		10-10	directed 
+			N-ARG-A1		4-9	a 1979 American musical drama film 
+			N-ARG-A0		11-13	by Bob Fosse 
+	11	by
+	12	Bob
+			coref:	IDENT			0	12-13	Bob Fosse 
+			name:	PERSON				12-13	Bob Fosse 
+	13	Fosse
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The screenplay , by Robert Alan Aurthur and Fosse , is a semi - autobiographical fantasy based on aspects of Fosse 's life and career as a dancer , choreographer and director .
+
+
+Treebanked sentence:
+--------------------
+The screenplay , by Robert Alan Aurthur and Fosse , is a semi - autobiographical fantasy based on aspects of Fosse 's life and career as a dancer , choreographer and director . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN screenplay))
+      (, ,)
+      (PP (IN by)
+        (NP
+          (NP (NNP Robert) (NNP Alan) (NNP Aurthur))
+          (CC and)
+          (NP (NNP Fosse))))
+      (, ,))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a)
+          (ADJP
+            (NP (NN semi))
+            (HYPH -) (JJ autobiographical))
+          (NN fantasy))
+        (VP (VBN based)
+          (PP (IN on)
+            (NP
+              (NP (NNS aspects))
+              (PP (IN of)
+                (NP
+                  (NP (NNP Fosse) (POS 's))
+                  (NN life)
+                  (CC and)
+                  (NN career)))))
+          (PP (IN as)
+            (NP (DT a) (NN dancer) (, ,) (NN choreographer)
+              (CC and)
+              (NN director))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	screenplay
+			sense:	screenplay.n.01
+	2	,
+	3	by
+	4	Robert
+			name:	PERSON				4-6	Robert Alan Aurthur 
+	5	Alan
+	6	Aurthur
+	7	and
+			coref:	IDENT			0	7-8	and Fosse 
+	8	Fosse
+			name:	PERSON				8-8	Fosse 
+	9	,
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-8	The screenplay , by Robert Alan Aurthur and Fosse 
+			N-ARG-A2		11-31	a semi - autobiographical fantasy based on aspects of Fosse 's life and career as a dancer , choreographer and director 
+	11	a
+	12	semi
+			sense:	semifinal.n.01
+	13	-
+	14	autobiographical
+			sense:	autobiographical.a.02
+	15	fantasy
+			sense:	fantasy.n.02
+	16	based
+			sense:	establish.v.08
+			prop:	base.02
+			V		16-16	based 
+			N-ARG-A1		11-15	a semi - autobiographical fantasy 
+			N-ARG-A2		17-31	on aspects of Fosse 's life and career as a dancer , choreographer and director 
+	17	on
+	18	aspects
+			sense:	aspect.n.01
+	19	of
+	20	Fosse
+			coref:	IDENT			0	20-21	Fosse 's 
+			name:	PERSON				20-20	Fosse 
+	21	's
+	22	life
+			sense:	life.n.03
+	23	and
+	24	career
+			sense:	career.n.01
+	25	as
+	26	a
+	27	dancer
+			name:	TITLE				27-27	dancer 
+			sense:	dancer.n.01
+	28	,
+	29	choreographer
+			name:	TITLE				29-29	choreographer 
+			sense:	choreographer.n.01
+	30	and
+	31	director
+			name:	TITLE				31-31	director 
+			sense:	director.n.03
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The film was inspired by Fosse 's manic effort to edit his film Lenny while simultaneously staging the 1975 Broadway musical Chicago .
+
+
+Treebanked sentence:
+--------------------
+The film was inspired by Fosse 's manic effort to edit his film Lenny while simultaneously staging the 1975 Broadway musical Chicago . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN film))
+    (VP (VBD was)
+      (VP (VBN inspired)
+        (PP (IN by)
+          (NP
+            (NP (NNP Fosse) (POS 's))
+            (JJ manic) (NN effort)))
+        (S
+          (VP (TO to)
+            (VP (VB edit)
+              (NP (PRP$ his) (NN film) (NNP Lenny))
+              (SBAR (IN while)
+                (S
+                  (ADVP (RB simultaneously))
+                  (VP (VBG staging)
+                    (NP
+                      (NP (DT the) (CD 1975) (NNP Broadway) (NN musical))
+                      (ADJP (NNP Chicago)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	film
+			sense:	movie.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	inspired
+			sense:	inspire.v.02
+			prop:	inspire.01
+			V		3-3	inspired 
+			N-ARG-A1		0-1	The film 
+			N-ARG-A0		4-21	by Fosse 's manic effort to edit his film Lenny while simultaneously staging the 1975 Broadway musical Chicago 
+	4	by
+	5	Fosse
+			coref:	IDENT			0	5-6	Fosse 's 
+			name:	PERSON				5-5	Fosse 
+	6	's
+	7	manic
+			sense:	frenzied.s.01
+	8	effort
+			sense:	attempt.n.01
+	9	to
+	10	edit
+			sense:	edit.v.01
+			prop:	edit.01
+			V		10-10	edit 
+			N-ARG-A0		5-6	Fosse 's 
+			N-ARG-A1		11-13	his film Lenny 
+			N-ARGM-TMP		14-21	while simultaneously staging the 1975 Broadway musical Chicago 
+	11	his
+			coref:	IDENT			0	11-11	his 
+	12	film
+			sense:	movie.n.01
+	13	Lenny
+			name:	PERSON				13-13	Lenny 
+	14	while
+	15	simultaneously
+			sense:	simultaneously.r.01
+	16	staging
+			sense:	stage.v.01
+			prop:	stage.01
+			V		16-16	staging 
+			N-ARG-A0		5-6	Fosse 's 
+			N-ARGM-TMP		15-15	simultaneously 
+			N-ARG-A1		17-21	the 1975 Broadway musical Chicago 
+	17	the
+	18	1975
+			name:	DATE				18-18	1975 
+	19	Broadway
+			name:	MISC				19-19	Broadway 
+	20	musical
+			sense:	musical.n.01
+	21	Chicago
+			name:	CITY				21-21	Chicago 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It borrows its title from the Kander and Ebb tune " All That Jazz " in that production .
+
+
+Treebanked sentence:
+--------------------
+It borrows its title from the Kander and Ebb tune " All That Jazz " in that production . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ borrows)
+      (NP (PRP$ its) (NN title))
+      (PP (IN from)
+        (NP
+          (NP (DT the)
+            (NML (NNP Kander)
+              (CC and)
+              (NNP Ebb))
+            (NN tune))
+          ('' ")
+          (NP (DT All) (DT That) (NN Jazz) ('' "))))
+      (PP (IN in)
+        (NP (DT that) (NN production))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	borrows
+			sense:	adopt.v.02
+			prop:	borrow.01
+			V		1-1	borrows 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-3	its title 
+			N-ARG-A2		4-17	from the Kander and Ebb tune " All That Jazz " in that production 
+	2	its
+	3	title
+			sense:	title.n.02
+	4	from
+	5	the
+	6	Kander
+			name:	PERSON				6-6	Kander 
+	7	and
+	8	Ebb
+	9	tune
+			sense:	tune.n.01
+	10	"
+	11	All
+			name:	MISC				11-13	All That Jazz 
+	12	That
+	13	Jazz
+			sense:	jazz.n.02
+	14	"
+	15	in
+	16	that
+	17	production
+			sense:	production.n.02
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The film won the Palme d'Or at the 1980 Cannes Film Festival .
+
+
+Treebanked sentence:
+--------------------
+The film won the Palme d'Or at the 1980 Cannes Film Festival . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN film))
+    (VP (VBD won)
+      (NP (DT the) (NNP Palme) (NNP d'Or))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (CD 1980))
+          (NP (NNP Cannes) (NNP Film) (NNP Festival)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	film
+			sense:	movie.n.01
+	2	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		2-2	won 
+			N-ARG-A0		0-1	The film 
+			N-ARG-A1		3-5	the Palme d'Or 
+			N-ARGM-LOC		6-11	at the 1980 Cannes Film Festival 
+	3	the
+	4	Palme
+			name:	MISC				4-5	Palme d'Or 
+	5	d'Or
+	6	at
+	7	the
+	8	1980
+			name:	DATE				8-8	1980 
+	9	Cannes
+	10	Film
+	11	Festival
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2001 , All That Jazz was deemed " culturally , historically , or aesthetically significant " by the United States Library of Congress and selected for preservation in the National Film Registry .
+
+
+Treebanked sentence:
+--------------------
+In 2001 , All That Jazz was deemed " culturally , historically , or aesthetically significant " by the United States Library of Congress and selected for preservation in the National Film Registry . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2001)))
+    (, ,)
+    (NP
+      (NP (DT All))
+      (NP (DT That) (NN Jazz)))
+    (VP (VBD was)
+      (VP
+        (VP
+          (VP (VBN deemed) (`` ")
+            (ADVP (RB culturally))
+            (, ,)
+            (ADVP (RB historically)))
+          (, ,)
+          (CC or)
+          (VP
+            (ADJP (RB aesthetically) (JJ significant) ('' ")
+              (PP (IN by)
+                (NP (DT the) (NNP United) (NNP States) (NNP Library))))
+            (PP (IN of)
+              (NP (NNP Congress)))))
+        (CC and)
+        (VP (VBN selected)
+          (PP (IN for)
+            (NP (NN preservation)))
+          (PP (IN in)
+            (NP (DT the) (NNP National) (NNP Film) (NNP Registry))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2001
+			name:	DATE				1-1	2001 
+	2	,
+	3	All
+	4	That
+			coref:	IDENT			1	4-5	That Jazz 
+	5	Jazz
+			sense:	jazz.n.02
+	6	was
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	was 
+	7	deemed
+			sense:	deem.v.01
+			prop:	deem.01
+			V		7-7	deemed 
+			N-ARGM-TMP		0-1	In 2001 
+			N-ARG-A1		8-16	" culturally , historically , or aesthetically significant " 
+			N-ARG-A0		17-23	by the United States Library of Congress 
+	8	"
+	9	culturally
+			sense:	culturally.r.01
+	10	,
+	11	historically
+			sense:	historically.r.02
+	12	,
+	13	or
+	14	aesthetically
+			sense:	aesthetically.r.01
+	15	significant
+			sense:	significant.a.01
+	16	"
+	17	by
+	18	the
+	19	United
+			name:	ORGANIZATION				19-23	United States Library of Congress 
+	20	States
+	21	Library
+	22	of
+	23	Congress
+	24	and
+	25	selected
+			sense:	choose.v.01
+			prop:	select.01
+			V		25-25	selected 
+			N-ARGM-TMP		0-1	In 2001 
+			N-ARG-A1		3-5	All That Jazz 
+			N-ARG-A3		26-32	for preservation in the National Film Registry 
+	26	for
+	27	preservation
+			sense:	preservation.n.01
+	28	in
+	29	the
+	30	National
+			name:	ORGANIZATION				30-32	National Film Registry 
+	31	Film
+	32	Registry
+	33	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.12-13	Bob Fosse 
+				1.7-8	and Fosse 
+				1.20-21	Fosse 's 
+				2.5-6	Fosse 's 
+				2.11-11	his 
+	Chain 1 (IDENT)
+				0.1-2	That Jazz 
+				5.4-5	That Jazz 
+

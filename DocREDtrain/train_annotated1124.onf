@@ -1,0 +1,567 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Louis Jani ( born December 6 , 1957 in Montreal , Quebec ) is a judoka from Canada , who represented his native country at two consecutive Summer Olympics : 1984 and 1988 .
+
+
+Treebanked sentence:
+--------------------
+Louis Jani ( born December 6 , 1957 in Montreal , Quebec ) is a judoka from Canada , who represented his native country at two consecutive Summer Olympics : 1984 and 1988 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Louis) (NNP Jani))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP December) (CD 6) (, ,) (CD 1957))
+        (PP (IN in)
+          (NP (NNP Montreal) (, ,) (NNP Quebec))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT a) (NNS judoka))
+          (PP (IN from)
+            (NP (NNP Canada))))
+        (, ,)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD represented)
+              (NP (PRP$ his) (JJ native) (NN country))
+              (PP (IN at)
+                (NP (CD two)))
+              (NP-TMP (JJ consecutive) (NN Summer))
+              (FRAG
+                (FRAG
+                  (NP (NNPS Olympics))
+                  (: :)
+                  (NP (CD 1984)))
+                (CC and)
+                (NP (CD 1988))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Louis
+			coref:	IDENT			0	0-1	Louis Jani 
+			name:	PERSON				0-1	Louis Jani 
+	1	Jani
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Louis Jani 
+			N-ARGM-TMP		4-7	December 6 , 1957 
+			N-ARGM-LOC		8-11	in Montreal , Quebec 
+	4	December
+			name:	DATE				4-7	December 6 , 1957 
+	5	6
+	6	,
+	7	1957
+	8	in
+	9	Montreal
+			name:	CITY				9-9	Montreal 
+	10	,
+	11	Quebec
+			name:	STATE_OR_PROVINCE				11-11	Quebec 
+	12	)
+	13	is
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	is 
+			N-ARG-A1		0-12	Louis Jani ( born December 6 , 1957 in Montreal , Quebec ) 
+			N-ARG-A2		14-32	a judoka from Canada , who represented his native country at two consecutive Summer Olympics : 1984 and 1988 
+	14	a
+	15	judoka
+	16	from
+	17	Canada
+			name:	COUNTRY				17-17	Canada 
+	18	,
+	19	who
+	20	represented
+			sense:	represent.v.04
+			prop:	represent.01
+			V		20-20	represented 
+			N-ARG-A0		14-17	a judoka from Canada 
+			R-ARG-A0		19-19	who 
+			N-ARG-A1		21-23	his native country 
+			N-ARGM-LOC		24-32	at two consecutive Summer Olympics : 1984 and 1988 
+	21	his
+			coref:	IDENT			0	21-21	his 
+	22	native
+			sense:	native.a.02
+	23	country
+			sense:	country.n.02
+	24	at
+	25	two
+			name:	NUMBER				25-25	two 
+	26	consecutive
+			sense:	back-to-back.s.01
+	27	Summer
+			name:	DATE				27-27	Summer 
+			sense:	summer.n.01
+	28	Olympics
+			name:	MISC				28-28	Olympics 
+	29	:
+	30	1984
+			name:	DATE				30-30	1984 
+	31	and
+	32	1988
+			name:	DATE				32-32	1988 
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He had unfortunately missed the 1980 Moscow Olympics due to Canada 's boycott .
+
+
+Treebanked sentence:
+--------------------
+He had unfortunately missed the 1980 Moscow Olympics due to Canada 's boycott . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD had)
+      (ADVP (RB unfortunately))
+      (VP (VBN missed)
+        (PP
+          (NP (DT the) (CD 1980) (NNP Moscow) (NNPS Olympics))
+          (IN due))
+        (PP (IN to)
+          (NP
+            (NP (NNP Canada) (POS 's))
+            (NN boycott)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	had
+			sense:	experience.v.03
+			prop:	have.01
+			V		1-1	had 
+	2	unfortunately
+			sense:	unfortunately.r.01
+	3	missed
+			sense:	miss.v.03
+			prop:	miss.02
+			V		3-3	missed 
+			N-ARG-A0		0-0	He 
+			N-ARGM-ADV		2-2	unfortunately 
+			N-ARG-A1		4-7	the 1980 Moscow Olympics 
+			N-ARGM-CAU		8-12	due to Canada 's boycott 
+	4	the
+	5	1980
+			name:	DATE				5-5	1980 
+	6	Moscow
+			name:	CITY				6-6	Moscow 
+	7	Olympics
+			name:	MISC				7-7	Olympics 
+	8	due
+	9	to
+	10	Canada
+			name:	COUNTRY				10-10	Canada 
+	11	's
+	12	boycott
+			sense:	boycott.n.01
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Louis twice won the gold medal at the Pan American Games ( 1979 and 1983 ) in the middleweight division ( – 86   kg ) .
+
+
+Treebanked sentence:
+--------------------
+Louis twice won the gold medal at the Pan American Games ( 1979 and 1983 ) in the middleweight division ( – 86 kg ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Louis))
+    (ADVP (RB twice))
+    (VP (VBD won)
+      (NP
+        (NP (DT the) (NN gold) (NN medal))
+        (PP (IN at)
+          (NP (DT the)
+            (NML (NNP Pan) (NNP American) (NNPS Games))
+            (PRN (-LRB- -LRB-)
+              (NP (CD 1979)
+                (CC and)
+                (CD 1983))
+              (-RRB- -RRB-)))))
+      (PP (IN in)
+        (NP (DT the) (NN middleweight) (NN division)))
+      (PRN (-LRB- -LRB-)
+        (NP
+          (QP (SYM –) (CD 86))
+          (NN kg))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Louis
+			coref:	IDENT			0	0-0	Louis 
+			name:	PERSON				0-0	Louis 
+	1	twice
+			sense:	twice.r.01
+	2	won
+			sense:	win.v.01
+			prop:	win.01
+			V		2-2	won 
+			N-ARG-A0		0-0	Louis 
+			N-ARGM-TMP		1-1	twice 
+			N-ARG-A1		3-5	the gold medal 
+			N-ARGM-LOC		6-15	at the Pan American Games ( 1979 and 1983 ) 
+	3	the
+	4	gold
+			sense:	gold.n.01
+	5	medal
+			sense:	decoration.n.02
+	6	at
+	7	the
+	8	Pan
+			name:	MISC				8-8	Pan 
+	9	American
+			name:	NATIONALITY				9-9	American 
+	10	Games
+			name:	MISC				10-10	Games 
+	11	(
+	12	1979
+			name:	DATE				12-12	1979 
+	13	and
+	14	1983
+			name:	DATE				14-14	1983 
+	15	)
+	16	in
+	17	the
+	18	middleweight
+			sense:	middleweight.n.01
+	19	division
+			sense:	part.n.09
+	20	(
+	21	–
+	22	86
+			name:	NUMBER				22-22	86 
+	23	kg
+			sense:	kilogram.n.01
+	24	)
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Competing as a member of Team Canada for 15 years , Louis went on to become the Technical Director for Judo Canada and eventually the National Coach .
+
+
+Treebanked sentence:
+--------------------
+Competing as a member of Team Canada for 15 years , Louis went on to become the Technical Director for Judo Canada and eventually the National Coach . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBG Competing)
+        (PP (IN as)
+          (NP
+            (NP (DT a) (NN member))
+            (PP (IN of)
+              (NP
+                (NP (NNP Team) (NNP Canada))
+                (PP (IN for)
+                  (NP (CD 15) (NNS years)))))))))
+    (, ,)
+    (NP (NNP Louis))
+    (VP (VBD went)
+      (PP (IN on))
+      (S
+        (VP (TO to)
+          (VP (VB become)
+            (NP (DT the) (NNP Technical) (NNP Director))
+            (PP (IN for)
+              (NP
+                (NP (NNP Judo) (NNP Canada))
+                (CC and)
+                (NP
+                  (ADVP (RB eventually))
+                  (DT the)
+                  (NML (NNP National) (NNP Coach)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Competing
+			sense:	compete.v.01
+			prop:	compete.01
+			V		0-0	Competing 
+			N-ARGM-MNR		1-6	as a member of Team Canada 
+			N-ARGM-TMP		7-9	for 15 years 
+			N-ARG-A0		11-11	Louis 
+	1	as
+	2	a
+	3	member
+			sense:	member.n.01
+	4	of
+	5	Team
+			name:	ORGANIZATION				5-6	Team Canada 
+	6	Canada
+	7	for
+	8	15
+			name:	DURATION				8-9	15 years 
+	9	years
+			sense:	year.n.01
+	10	,
+	11	Louis
+			coref:	IDENT			0	11-11	Louis 
+			name:	PERSON				11-11	Louis 
+	12	went
+			sense:	proceed.v.04
+			prop:	go.15
+			V		12-12	went 
+			R-ARG-A1		0-9	Competing as a member of Team Canada for 15 years 
+			N-ARG-A1		11-11	Louis 
+			C-ARG-A1		14-26	to become the Technical Director for Judo Canada and eventually the National Coach 
+	13	on
+	14	to
+	15	become
+			sense:	become.v.02
+			prop:	become.01
+			V		15-15	become 
+			N-ARG-A1		11-11	Louis 
+			N-ARG-A2		16-26	the Technical Director for Judo Canada and eventually the National Coach 
+	16	the
+	17	Technical
+			name:	TITLE				17-18	Technical Director 
+	18	Director
+	19	for
+	20	Judo
+			name:	ORGANIZATION				20-21	Judo Canada 
+	21	Canada
+	22	and
+	23	eventually
+			sense:	finally.r.01
+	24	the
+	25	National
+	26	Coach
+			name:	TITLE				26-26	Coach 
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As National Coach he led the Canadian team at the 2000 Olympic Summer Games in Sydney , Australia , where Nicolas Gill won a silver medal .
+
+
+Treebanked sentence:
+--------------------
+As National Coach he led the Canadian team at the 2000 Olympic Summer Games in Sydney , Australia , where Nicolas Gill won a silver medal . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN As)
+      (NP (NNP National) (NNP Coach)))
+    (NP (PRP he))
+    (VP (VBD led)
+      (NP (DT the) (JJ Canadian) (NN team))
+      (PP (IN at)
+        (NP (DT the)
+          (NP
+            (NP (CD 2000) (JJ Olympic) (NNPS Summer) (NNPS Games))
+            (PP (IN in)
+              (NP (NNP Sydney) (, ,) (NNP Australia))))))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (NNP Nicolas) (NNP Gill))
+          (VP (VBD won)
+            (NP (DT a) (NN silver) (NN medal))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	National
+	2	Coach
+			name:	TITLE				2-2	Coach 
+	3	he
+			coref:	IDENT			0	3-3	he 
+	4	led
+			sense:	lead.v.01
+			prop:	lead.02
+			V		4-4	led 
+			N-ARGM-ADV		0-2	As National Coach 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		5-7	the Canadian team 
+			N-ARGM-LOC		8-25	at the 2000 Olympic Summer Games in Sydney , Australia , where Nicolas Gill won a silver medal 
+	5	the
+	6	Canadian
+			name:	NATIONALITY				6-6	Canadian 
+	7	team
+			sense:	team.n.01
+	8	at
+	9	the
+	10	2000
+			name:	DATE				10-10	2000 
+	11	Olympic
+			name:	MISC				11-11	Olympic 
+	12	Summer
+			name:	DATE				12-12	Summer 
+	13	Games
+			name:	MISC				13-13	Games 
+	14	in
+	15	Sydney
+			name:	CITY				15-15	Sydney 
+	16	,
+	17	Australia
+			name:	COUNTRY				17-17	Australia 
+	18	,
+	19	where
+	20	Nicolas
+			name:	PERSON				20-21	Nicolas Gill 
+	21	Gill
+	22	won
+			sense:	win.v.01
+			prop:	win.01
+			V		22-22	won 
+			N-ARGM-LOC		9-17	the 2000 Olympic Summer Games in Sydney , Australia 
+			R-ARGM-LOC		19-19	where 
+			N-ARG-A0		20-21	Nicolas Gill 
+			N-ARG-A1		23-25	a silver medal 
+	23	a
+	24	silver
+			sense:	silver_medal.n.01
+	25	medal
+			sense:	decoration.n.02
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Currently Louis Jani lives in Ottawa , Ontario and works as a Manager of Regional Affairs at the Department of Canadian Heritage .
+
+
+Treebanked sentence:
+--------------------
+Currently Louis Jani lives in Ottawa , Ontario and works as a Manager of Regional Affairs at the Department of Canadian Heritage . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Currently))
+    (NP (NNP Louis) (NNP Jani))
+    (VP
+      (VP (VBZ lives)
+        (PP (IN in)
+          (NP (NNP Ottawa) (, ,) (NNP Ontario))))
+      (CC and)
+      (VP (VBZ works)
+        (PP (IN as)
+          (NP
+            (NP (DT a) (NN Manager))
+            (PP (IN of)
+              (NP (NNP Regional) (NNPS Affairs)))))
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP Department))
+            (PP (IN of)
+              (NP (NNP Canadian) (NNP Heritage)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Currently
+			name:	DATE				0-0	Currently 
+			sense:	presently.r.02
+	1	Louis
+			coref:	IDENT			0	1-2	Louis Jani 
+			name:	PERSON				1-2	Louis Jani 
+	2	Jani
+	3	lives
+			sense:	populate.v.01
+			prop:	live.01
+			V		3-3	lives 
+			N-ARGM-TMP		0-0	Currently 
+			N-ARG-A0		1-2	Louis Jani 
+			N-ARGM-LOC		4-7	in Ottawa , Ontario 
+	4	in
+	5	Ottawa
+			name:	CITY				5-5	Ottawa 
+	6	,
+	7	Ontario
+			name:	STATE_OR_PROVINCE				7-7	Ontario 
+	8	and
+	9	works
+			sense:	work.v.02
+			prop:	work.01
+			V		9-9	works 
+			N-ARGM-TMP		0-0	Currently 
+			N-ARG-A0		1-2	Louis Jani 
+			N-ARG-A1		10-21	as a Manager of Regional Affairs at the Department of Canadian Heritage 
+	10	as
+	11	a
+	12	Manager
+			name:	TITLE				12-12	Manager 
+			sense:	director.n.01
+	13	of
+	14	Regional
+	15	Affairs
+	16	at
+	17	the
+	18	Department
+			name:	ORGANIZATION				18-21	Department of Canadian Heritage 
+	19	of
+	20	Canadian
+	21	Heritage
+	22	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Louis Jani 
+				0.21-21	his 
+				1.0-0	He 
+				2.0-0	Louis 
+				3.11-11	Louis 
+				4.3-3	he 
+				5.1-2	Louis Jani 
+

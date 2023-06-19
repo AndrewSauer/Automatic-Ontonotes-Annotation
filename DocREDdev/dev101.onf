@@ -1,0 +1,755 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+US Airways Group Inc. was an airline holding company based in Tempe , Arizona .
+
+
+Treebanked sentence:
+--------------------
+US Airways Group Inc. was an airline holding company based in Tempe , Arizona . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP US) (NNP Airways) (NNP Group) (NNP Inc.))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (NN airline) (VBG holding) (NN company))
+        (PP (VBN based)
+          (PP (IN in)
+            (NP (NNP Tempe) (, ,) (NNP Arizona))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	US
+			coref:	IDENT			0	0-3	US Airways Group Inc. 
+			name:	ORGANIZATION				0-3	US Airways Group Inc. 
+	1	Airways
+	2	Group
+	3	Inc.
+	4	was
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	was 
+			N-ARG-A1		0-3	US Airways Group Inc. 
+			N-ARG-A2		5-13	an airline holding company based in Tempe , Arizona 
+	5	an
+	6	airline
+			sense:	airline.n.02
+	7	holding
+			sense:	have.v.01
+			prop:	hold.01
+			V		7-7	holding 
+			N-ARG-A1		6-6	airline 
+			N-ARG-A0		8-8	company 
+	8	company
+			sense:	company.n.01
+	9	based
+			sense:	base.v.02
+			prop:	base.01
+			V		9-9	based 
+			N-ARG-A1		5-8	an airline holding company 
+			N-ARGM-LOC		10-13	in Tempe , Arizona 
+	10	in
+	11	Tempe
+			name:	CITY				11-11	Tempe 
+	12	,
+	13	Arizona
+			name:	STATE_OR_PROVINCE				13-13	Arizona 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+US Airways Group operated US Airways , along with its subsidiaries PSA Airlines , Inc. and Piedmont Airlines , Inc. , which are wholly owned but marketed under the branding of US Airways Express .
+
+
+Treebanked sentence:
+--------------------
+US Airways Group operated US Airways , along with its subsidiaries PSA Airlines , Inc. and Piedmont Airlines , Inc. , which are wholly owned but marketed under the branding of US Airways Express . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP US) (NNP Airways) (NNP Group))
+    (VP
+      (VP (VBD operated)
+        (NP
+          (NP
+            (NP (NNP US) (NNPS Airways))
+            (, ,)
+            (NP
+              (ADVP (IN along)
+                (PP (IN with)
+                  (NP (PRP$ its) (NNS subsidiaries))))
+              (NP (NNP PSA) (NNPS Airlines))
+              (, ,)
+              (NP (NNP Inc.))
+              (CC and)
+              (NP (NNP Piedmont) (NNPS Airlines)))
+            (, ,)
+            (NP (NNP Inc.)))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBP are)
+                (ADJP (RB wholly) (VBN owned)))))))
+      (CC but)
+      (VP (VBN marketed)
+        (PP (IN under)
+          (NP
+            (NP (DT the) (NN branding))
+            (PP (IN of)
+              (NP (NNP US) (NNP Airways) (NNP Express)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	US
+			coref:	IDENT			0	0-2	US Airways Group 
+			name:	ORGANIZATION				0-2	US Airways Group 
+	1	Airways
+	2	Group
+	3	operated
+			sense:	operate.v.01
+			prop:	operate.01
+			V		3-3	operated 
+			N-ARG-A0		0-2	US Airways Group 
+			N-ARG-A1		4-5	US Airways 
+			N-ARGM-ADV		7-33	along with its subsidiaries PSA Airlines , Inc. and Piedmont Airlines , Inc. , which are wholly owned but marketed under the branding of US Airways Express 
+	4	US
+			coref:	IDENT			0	4-24	US Airways , along with its subsidiaries PSA Airlines , Inc. and Piedmont Airlines , Inc. , which are wholly owned 
+			name:	ORGANIZATION				4-5	US Airways 
+	5	Airways
+	6	,
+	7	along
+	8	with
+	9	its
+			coref:	IDENT			0	9-9	its 
+	10	subsidiaries
+			sense:	subsidiary_company.n.01
+	11	PSA
+			name:	ORGANIZATION				11-14	PSA Airlines , Inc. 
+	12	Airlines
+	13	,
+	14	Inc.
+	15	and
+	16	Piedmont
+			name:	ORGANIZATION				16-19	Piedmont Airlines , Inc. 
+	17	Airlines
+	18	,
+	19	Inc.
+	20	,
+	21	which
+	22	are
+			sense:	be.v.01
+			prop:	be.01
+			V		22-22	are 
+			N-ARG-A1		9-19	its subsidiaries PSA Airlines , Inc. and Piedmont Airlines , Inc. 
+			R-ARG-A1		21-21	which 
+			N-ARG-A2		23-33	wholly owned but marketed under the branding of US Airways Express 
+	23	wholly
+			sense:	wholly.r.01
+	24	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		24-24	owned 
+			N-ARG-A1		9-19	its subsidiaries PSA Airlines , Inc. and Piedmont Airlines , Inc. 
+			R-ARG-A1		21-21	which 
+			N-ARGM-MNR		23-23	wholly 
+	25	but
+	26	marketed
+			sense:	market.v.01
+			prop:	market.01
+			V		26-26	marketed 
+			N-ARG-A1		9-19	its subsidiaries PSA Airlines , Inc. and Piedmont Airlines , Inc. 
+			R-ARG-A1		21-21	which 
+			N-ARG-A3		27-33	under the branding of US Airways Express 
+	27	under
+	28	the
+	29	branding
+			sense:	stigmatization.n.01
+	30	of
+	31	US
+			coref:	IDENT			0	31-33	US Airways Express 
+			name:	ORGANIZATION				31-33	US Airways Express 
+	32	Airways
+	33	Express
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It merged with America West Holdings Corporation , parent of America West Airlines , in 2005 , and the combined company adopted the better - known US Airways name ; the two airlines ' operating certificates merged in 2007 .
+
+
+Treebanked sentence:
+--------------------
+It merged with America West Holdings Corporation , parent of America West Airlines , in 2005 , and the combined company adopted the better - known US Airways name ; the two airlines ' operating certificates merged in 2007 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (S
+        (NP (PRP It))
+        (VP (VBD merged)
+          (PP (IN with)
+            (NP
+              (NP (NNP America) (NNP West) (NNPS Holdings) (NNP Corporation))
+              (, ,)
+              (NP
+                (NP (NN parent))
+                (PP (IN of)
+                  (NP (NNP America) (NNP West) (NNPS Airlines))))
+              (, ,)))
+          (PP (IN in)
+            (NP (CD 2005)))))
+      (, ,)
+      (CC and)
+      (S
+        (NP (DT the) (VBN combined) (NN company))
+        (VP (VBD adopted)
+          (NP (DT the)
+            (ADJP
+              (NP (JJR better))
+              (HYPH -) (VBN known))
+            (NML (NNP US) (NNPS Airways))
+            (NN name)))))
+    (: ;)
+    (S
+      (NP
+        (NP (DT the) (CD two) (NNS airlines) (POS '))
+        (NN operating) (NNS certificates))
+      (VP (VBD merged)
+        (PP (IN in)
+          (NP (CD 2007)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	merged
+			sense:	unify.v.01
+			prop:	merge.01
+			V		1-1	merged 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-13	with America West Holdings Corporation , parent of America West Airlines , 
+			N-ARGM-TMP		14-15	in 2005 
+	2	with
+	3	America
+			name:	ORGANIZATION				3-6	America West Holdings Corporation 
+	4	West
+	5	Holdings
+	6	Corporation
+	7	,
+	8	parent
+			sense:	parent.n.01
+	9	of
+	10	America
+			name:	ORGANIZATION				10-12	America West Airlines 
+	11	West
+	12	Airlines
+	13	,
+	14	in
+	15	2005
+			name:	DATE				15-15	2005 
+	16	,
+	17	and
+	18	the
+			coref:	IDENT			0	18-20	the combined company 
+	19	combined
+			sense:	combine.v.05
+			prop:	combine.01
+			V		19-19	combined 
+			N-ARG-A3		20-20	company 
+	20	company
+			sense:	company.n.01
+	21	adopted
+			sense:	assume.v.02
+			prop:	adopt.01
+			V		21-21	adopted 
+			N-ARG-A0		18-20	the combined company 
+			N-ARG-A1		22-28	the better - known US Airways name 
+	22	the
+	23	better
+			sense:	good.a.01
+	24	-
+	25	known
+			sense:	know.v.07
+			prop:	know.01
+			V		25-25	known 
+			N-ARGM-EXT		23-23	better 
+			N-ARG-A1		26-28	US Airways name 
+	26	US
+			coref:	IDENT			0	26-27	US Airways 
+			name:	ORGANIZATION				26-27	US Airways 
+	27	Airways
+	28	name
+			sense:	name.n.01
+	29	;
+	30	the
+	31	two
+			name:	NUMBER				31-31	two 
+	32	airlines
+			sense:	airline.n.02
+	33	'
+	34	operating
+	35	certificates
+			sense:	certificate.n.01
+	36	merged
+			sense:	unify.v.01
+			prop:	merge.01
+			V		36-36	merged 
+			N-ARG-A1		30-35	the two airlines ' operating certificates 
+			N-ARGM-TMP		37-38	in 2007 
+	37	in
+	38	2007
+			name:	DATE				38-38	2007 
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It also operates additional companies that provide associated services .
+
+
+Treebanked sentence:
+--------------------
+It also operates additional companies that provide associated services . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB also))
+    (VP (VBZ operates)
+      (NP
+        (NP (JJ additional) (NNS companies))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP provide)
+              (NP (VBN associated) (NNS services)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	also
+			sense:	besides.r.02
+	2	operates
+			sense:	operate.v.01
+			prop:	operate.01
+			V		2-2	operates 
+			N-ARG-A0		0-0	It 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-8	additional companies that provide associated services 
+	3	additional
+			sense:	extra.s.03
+	4	companies
+			sense:	company.n.01
+	5	that
+	6	provide
+			sense:	supply.v.01
+			prop:	provide.01
+			V		6-6	provide 
+			N-ARG-A0		3-4	additional companies 
+			R-ARG-A0		5-5	that 
+			N-ARG-A1		7-8	associated services 
+	7	associated
+			sense:	associate.v.01
+			prop:	associate.01
+			V		7-7	associated 
+			N-ARG-A1		8-8	services 
+	8	services
+			sense:	service.n.01
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+ACE Aviation Holdings , the Canadian parent of Air Canada retained a roughly 6.1 % investment stake in US Airways Group .
+
+
+Treebanked sentence:
+--------------------
+ACE Aviation Holdings , the Canadian parent of Air Canada retained a roughly 6.1 % investment stake in US Airways Group . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NN ACE)
+        (NML (NNP Aviation) (NNPS Holdings)))
+      (, ,)
+      (NP
+        (NP (DT the) (JJ Canadian) (NN parent))
+        (PP (IN of)
+          (NP (NNP Air) (NNP Canada)))))
+    (VP (VBD retained)
+      (NP (DT a)
+        (NML
+          (QP (RB roughly) (CD 6.1))
+          (NN %))
+        (NN investment) (NN stake))
+      (PP (IN in)
+        (NP (NNP US) (NNP Airways) (NNP Group))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	ACE
+			name:	ORGANIZATION				0-2	ACE Aviation Holdings 
+			sense:	one.n.01
+	1	Aviation
+	2	Holdings
+	3	,
+	4	the
+	5	Canadian
+			name:	NATIONALITY				5-5	Canadian 
+	6	parent
+			sense:	parent.n.01
+	7	of
+	8	Air
+			name:	ORGANIZATION				8-9	Air Canada 
+	9	Canada
+	10	retained
+			sense:	retain.v.03
+			prop:	retain.01
+			V		10-10	retained 
+			N-ARG-A0		0-9	ACE Aviation Holdings , the Canadian parent of Air Canada 
+			N-ARG-A1		11-20	a roughly 6.1 % investment stake in US Airways Group 
+	11	a
+	12	roughly
+			sense:	approximately.r.01
+	13	6.1
+			name:	PERCENT				13-14	6.1 % 
+	14	%
+	15	investment
+			sense:	investment.n.02
+	16	stake
+			sense:	interest.n.05
+	17	in
+	18	US
+			coref:	IDENT			0	18-20	US Airways Group 
+			name:	ORGANIZATION				18-20	US Airways Group 
+	19	Airways
+	20	Group
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The route network covered destinations in 47 states , as well as international destinations .
+
+
+Treebanked sentence:
+--------------------
+The route network covered destinations in 47 states , as well as international destinations . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP (DT The) (NN route) (NN network))
+    (VP (VBN covered)
+      (NP
+        (NP
+          (NP (NNS destinations))
+          (PP (IN in)
+            (NP (CD 47) (NNS states))))
+        (, ,)
+        (CONJP (RB as) (RB well) (IN as))
+        (NP (JJ international) (NNS destinations))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	route
+			sense:	path.n.03
+	2	network
+			sense:	network.n.01
+	3	covered
+			sense:	cover.v.03
+			prop:	cover.01
+			V		3-3	covered 
+			N-ARG-A2		0-2	The route network 
+			N-ARG-A1		4-13	destinations in 47 states , as well as international destinations 
+	4	destinations
+			sense:	finish.n.04
+	5	in
+	6	47
+			name:	NUMBER				6-6	47 
+	7	states
+			sense:	state.n.01
+	8	,
+	9	as
+			sense:	equally.r.01
+	10	well
+			sense:	well.r.02
+	11	as
+	12	international
+			sense:	external.s.03
+	13	destinations
+			sense:	finish.n.04
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The company merged with AMR Corporation ; the combined business began trading under the new name of American Airlines Group on December 9 , 2013 .
+
+
+Treebanked sentence:
+--------------------
+The company merged with AMR Corporation ; the combined business began trading under the new name of American Airlines Group on December 9 , 2013 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN company))
+      (VP (VBD merged)
+        (PP (IN with)
+          (NP (NNP AMR) (NNP Corporation)))))
+    (: ;)
+    (S
+      (NP (DT the) (VBN combined) (NN business))
+      (VP (VBD began)
+        (S
+          (VP (VBG trading)
+            (PP (IN under)
+              (NP
+                (NP (DT the) (JJ new) (NN name))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP American) (NNPS Airlines) (NNP Group))
+                    (PP (IN on)
+                      (NP (NNP December) (CD 9) (, ,) (CD 2013)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The company 
+	1	company
+			sense:	company.n.01
+	2	merged
+			sense:	unify.v.01
+			prop:	merge.01
+			V		2-2	merged 
+			N-ARG-A1		0-1	The company 
+			N-ARG-A2		3-5	with AMR Corporation 
+	3	with
+	4	AMR
+			name:	ORGANIZATION				4-5	AMR Corporation 
+	5	Corporation
+	6	;
+	7	the
+	8	combined
+			sense:	combine.v.04
+			prop:	combine.01
+			V		8-8	combined 
+			N-ARG-A3		9-9	business 
+	9	business
+			sense:	business.n.01
+	10	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		10-10	began 
+			N-ARG-A1		11-24	trading under the new name of American Airlines Group on December 9 , 2013 
+	11	trading
+			sense:	deal.v.06
+			prop:	trade.01
+			V		11-11	trading 
+			N-ARG-A1		7-9	the combined business 
+			N-ARGM-MNR		12-19	under the new name of American Airlines Group 
+	12	under
+	13	the
+	14	new
+			sense:	new.a.01
+	15	name
+			sense:	name.n.01
+	16	of
+	17	American
+			coref:	IDENT			0	17-24	American Airlines Group on December 9 , 2013 
+			name:	ORGANIZATION				17-19	American Airlines Group 
+	18	Airlines
+	19	Group
+	20	on
+	21	December
+			name:	DATE				21-24	December 9 , 2013 
+	22	9
+	23	,
+	24	2013
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The combined airlines formed the largest airline in the world .
+
+
+Treebanked sentence:
+--------------------
+The combined airlines formed the largest airline in the world . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (VBN combined) (NNS airlines))
+    (VP (VBD formed)
+      (NP
+        (NP (DT the) (JJS largest) (NN airline))
+        (PP (IN in)
+          (NP (DT the) (NN world)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	combined
+			sense:	combine.v.04
+			prop:	combine.01
+			V		1-1	combined 
+			N-ARG-A3		2-2	airlines 
+	2	airlines
+			sense:	airline.n.02
+	3	formed
+			sense:	form.v.01
+			prop:	form.01
+			V		3-3	formed 
+			N-ARG-A0		0-2	The combined airlines 
+			N-ARG-A1		4-9	the largest airline in the world 
+	4	the
+	5	largest
+			sense:	large.a.01
+	6	airline
+			sense:	airline.n.02
+	7	in
+	8	the
+	9	world
+			sense:	earth.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+US Airways ' CEO , Doug Parker , became CEO of the new company .
+
+
+Treebanked sentence:
+--------------------
+US Airways ' CEO , Doug Parker , became CEO of the new company . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP US) (NNPS Airways) (POS '))
+        (NN CEO))
+      (, ,)
+      (NP (NNP Doug) (NNP Parker))
+      (, ,))
+    (VP (VBD became)
+      (NP
+        (NP (NN CEO))
+        (PP (IN of)
+          (NP (DT the) (JJ new) (NN company)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	US
+			coref:	IDENT			0	0-2	US Airways ' 
+			name:	ORGANIZATION				0-1	US Airways 
+	1	Airways
+	2	'
+	3	CEO
+			name:	TITLE				3-3	CEO 
+			sense:	chief_executive_officer.n.01
+	4	,
+	5	Doug
+			name:	PERSON				5-6	Doug Parker 
+	6	Parker
+	7	,
+	8	became
+			sense:	become.v.02
+			prop:	become.01
+			V		8-8	became 
+			N-ARG-A1		0-7	US Airways ' CEO , Doug Parker , 
+			N-ARG-A2		9-13	CEO of the new company 
+	9	CEO
+			name:	TITLE				9-9	CEO 
+			sense:	chief_executive_officer.n.01
+	10	of
+	11	the
+			coref:	IDENT			0	11-13	the new company 
+	12	new
+			sense:	new.a.01
+	13	company
+			sense:	company.n.01
+	14	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				6.17-24	American Airlines Group on December 9 , 2013 
+				0.0-3	US Airways Group Inc. 
+				1.0-2	US Airways Group 
+				1.4-24	US Airways , along with its subsidiaries PSA Airlines , Inc. and Piedmont Airlines , Inc. , which are wholly owned 
+				1.9-9	its 
+				1.31-33	US Airways Express 
+				2.0-0	It 
+				2.18-20	the combined company 
+				2.26-27	US Airways 
+				3.0-0	It 
+				4.18-20	US Airways Group 
+				6.0-1	The company 
+				8.0-2	US Airways ' 
+				8.11-13	the new company 
+

@@ -1,0 +1,662 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+James William Murphy ( April 17 , 1858 – July 11 , 1927 ) was a U.S. Representative from Wisconsin .
+
+
+Treebanked sentence:
+--------------------
+James William Murphy ( April 17 , 1858 – July 11 , 1927 ) was a U.S. Representative from Wisconsin . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP James) (NNP William) (NNP Murphy))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP April) (CD 17) (, ,) (CD 1858))
+        (PP (SYM –)
+          (NP (NNP July) (CD 11) (, ,) (CD 1927))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NNP U.S.) (NNP Representative))
+        (PP (IN from)
+          (NP (NNP Wisconsin)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	James
+			coref:	IDENT			0	0-2	James William Murphy 
+			name:	PERSON				0-2	James William Murphy 
+	1	William
+	2	Murphy
+	3	(
+	4	April
+			name:	DATE				4-7	April 17 , 1858 
+	5	17
+	6	,
+	7	1858
+	8	–
+	9	July
+			name:	DATE				9-12	July 11 , 1927 
+	10	11
+	11	,
+	12	1927
+	13	)
+	14	was
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		0-13	James William Murphy ( April 17 , 1858 – July 11 , 1927 ) 
+			N-ARG-A2		15-19	a U.S. Representative from Wisconsin 
+	15	a
+	16	U.S.
+			name:	COUNTRY				16-16	U.S. 
+	17	Representative
+			name:	TITLE				17-17	Representative 
+	18	from
+	19	Wisconsin
+			coref:	IDENT			1	19-19	Wisconsin 
+			name:	STATE_OR_PROVINCE				19-19	Wisconsin 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in Platteville , Wisconsin in 1858 , Murphy graduated from the State Normal School ( now the University of Wisconsin – Platteville ) in 1873 and from the University of Michigan Law School in 1880 .
+
+
+Treebanked sentence:
+--------------------
+Born in Platteville , Wisconsin in 1858 , Murphy graduated from the State Normal School ( now the University of Wisconsin – Platteville ) in 1873 and from the University of Michigan Law School in 1880 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP
+            (NP (NNP Platteville) (, ,) (NNP Wisconsin))
+            (PP (IN in)
+              (NP (CD 1858)))))))
+    (, ,)
+    (NP (NNP Murphy))
+    (VP (VBD graduated)
+      (PP
+        (PP (IN from)
+          (NP
+            (NP (DT the) (NNP State) (NNP Normal) (NNP School)
+              (PRN (-LRB- -LRB-)
+                (NP
+                  (ADVP (RB now))
+                  (NP (DT the) (NNP University))
+                  (PP (IN of)
+                    (NP (NNP Wisconsin)))
+                  (PP (SYM –)
+                    (NP (NNP Platteville))))
+                (-RRB- -RRB-)))
+            (PP (IN in)
+              (NP (NNP 1873)))))
+        (CC and)
+        (PP (IN from)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP
+                (NP (NNP Michigan) (NNP Law) (NNP School))
+                (PP (IN in)
+                  (NP (NNP 1880)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-4	in Platteville , Wisconsin 
+			N-ARGM-TMP		5-6	in 1858 
+			N-ARG-A1		8-8	Murphy 
+	1	in
+	2	Platteville
+			coref:	IDENT			2	2-2	Platteville 
+			name:	CITY				2-2	Platteville 
+	3	,
+	4	Wisconsin
+			coref:	IDENT			1	4-4	Wisconsin 
+			name:	STATE_OR_PROVINCE				4-4	Wisconsin 
+	5	in
+	6	1858
+			name:	DATE				6-6	1858 
+	7	,
+	8	Murphy
+			coref:	IDENT			0	8-8	Murphy 
+			name:	PERSON				8-8	Murphy 
+	9	graduated
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		9-9	graduated 
+			R-ARG-A0		0-6	Born in Platteville , Wisconsin in 1858 
+			N-ARG-A0		8-8	Murphy 
+			N-ARG-A1		10-23	from the State Normal School ( now the University of Wisconsin – Platteville ) 
+			N-ARGM-TMP		24-25	in 1873 
+			N-ARG-A1		27-33	from the University of Michigan Law School 
+			N-ARGM-TMP		34-35	in 1880 
+	10	from
+	11	the
+	12	State
+			name:	ORGANIZATION				12-14	State Normal School 
+	13	Normal
+	14	School
+	15	(
+	16	now
+			name:	DATE				16-16	now 
+			sense:	nowadays.r.01
+	17	the
+	18	University
+			name:	ORGANIZATION				18-20	University of Wisconsin 
+	19	of
+	20	Wisconsin
+	21	–
+	22	Platteville
+			coref:	IDENT			2	22-22	Platteville 
+			name:	CITY				22-22	Platteville 
+	23	)
+	24	in
+	25	1873
+			name:	DATE				25-25	1873 
+	26	and
+	27	from
+	28	the
+	29	University
+			name:	ORGANIZATION				29-33	University of Michigan Law School 
+	30	of
+	31	Michigan
+	32	Law
+	33	School
+	34	in
+	35	1880
+			name:	DATE				35-35	1880 
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He practiced law in Platteville , and served as district attorney of Grant County , Wisconsin from 1887 to 1891 .
+
+
+Treebanked sentence:
+--------------------
+He practiced law in Platteville , and served as district attorney of Grant County , Wisconsin from 1887 to 1891 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD practiced)
+        (NP (NN law))
+        (PP (IN in)
+          (NP (NNP Platteville))))
+      (, ,)
+      (CC and)
+      (VP (VBD served)
+        (PP (IN as)
+          (NP
+            (NP (NN district) (NN attorney))
+            (PP (IN of)
+              (NP
+                (NP (NNP Grant) (NNP County))
+                (, ,)
+                (NP
+                  (NP (NNP Wisconsin))
+                  (PP (IN from)
+                    (NP (CD 1887))))))))
+        (PP (IN to)
+          (NP (CD 1891)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	practiced
+			sense:	practice.v.01
+			prop:	practice.01
+			V		1-1	practiced 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-2	law 
+			N-ARGM-LOC		3-4	in Platteville 
+	2	law
+			sense:	law.n.06
+	3	in
+	4	Platteville
+			coref:	IDENT			2	4-4	Platteville 
+			name:	CITY				4-4	Platteville 
+	5	,
+	6	and
+	7	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		7-7	served 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		8-15	as district attorney of Grant County , Wisconsin 
+			N-ARGM-TMP		16-19	from 1887 to 1891 
+	8	as
+	9	district
+			name:	TITLE				9-10	district attorney 
+			sense:	district.n.01
+	10	attorney
+			sense:	lawyer.n.01
+	11	of
+	12	Grant
+			name:	LOCATION				12-13	Grant County 
+	13	County
+	14	,
+	15	Wisconsin
+			coref:	IDENT			1	15-17	Wisconsin from 1887 
+			name:	STATE_OR_PROVINCE				15-15	Wisconsin 
+	16	from
+	17	1887
+			name:	DATE				17-19	1887 to 1891 
+	18	to
+	19	1891
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was elected mayor of Platteville for a two - year term in 1904 , and was then elected to the United States House of Representatives as a Democrat in 1906 , defeating Joseph W. Babcock for the seat from Wisconsin 's 3rd congressional district .
+
+
+Treebanked sentence:
+--------------------
+He was elected mayor of Platteville for a two - year term in 1904 , and was then elected to the United States House of Representatives as a Democrat in 1906 , defeating Joseph W. Babcock for the seat from Wisconsin 's 3rd congressional district . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN elected)
+          (NP
+            (NP (NN mayor))
+            (PP (IN of)
+              (NP (NNP Platteville))))
+          (PP (IN for)
+            (NP
+              (NP (DT a)
+                (NML (CD two) (HYPH -) (NN year))
+                (NN term))
+              (PP (IN in)
+                (NP (CD 1904)))))))
+      (, ,)
+      (CC and)
+      (VP (VBD was)
+        (ADVP (RB then))
+        (VP (VBN elected)
+          (PP (IN to)
+            (NP
+              (NP (DT the) (NNP United) (NNP States) (NNP House))
+              (PP (IN of)
+                (NP (NNPS Representatives)))))
+          (PP (IN as)
+            (NP
+              (NP (DT a) (NNP Democrat))
+              (PP (IN in)
+                (NP (CD 1906)))))
+          (, ,)
+          (S
+            (VP (VBG defeating)
+              (NP
+                (NP (NNP Joseph) (NNP W.) (NNP Babcock))
+                (PP (IN for)
+                  (NP
+                    (NP (DT the) (NN seat))
+                    (PP (IN from)
+                      (NP
+                        (NP (NNP Wisconsin) (POS 's))
+                        (JJ 3rd) (JJ congressional) (NN district)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		3-5	mayor of Platteville 
+			N-ARGM-TMP		6-11	for a two - year term 
+			N-ARGM-TMP		12-13	in 1904 
+	3	mayor
+			name:	TITLE				3-3	mayor 
+			sense:	mayor.n.01
+	4	of
+	5	Platteville
+			coref:	IDENT			2	5-5	Platteville 
+			name:	CITY				5-5	Platteville 
+	6	for
+	7	a
+	8	two
+			name:	DURATION				8-10	two - year 
+	9	-
+	10	year
+			sense:	year.n.01
+	11	term
+			sense:	term.n.02
+	12	in
+	13	1904
+			name:	DATE				13-13	1904 
+	14	,
+	15	and
+	16	was
+			sense:	be.v.01
+			prop:	be.03
+			V		16-16	was 
+	17	then
+			sense:	then.r.01
+	18	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		18-18	elected 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		17-17	then 
+			N-ARG-A2		19-25	to the United States House of Representatives 
+			N-ARGM-PRD		26-28	as a Democrat 
+			N-ARGM-TMP		29-30	in 1906 
+			N-ARGM-ADV		32-44	defeating Joseph W. Babcock for the seat from Wisconsin 's 3rd congressional district 
+	19	to
+	20	the
+	21	United
+			name:	COUNTRY				21-22	United States 
+	22	States
+	23	House
+			name:	ORGANIZATION				23-25	House of Representatives 
+	24	of
+	25	Representatives
+	26	as
+	27	a
+	28	Democrat
+			name:	MISC				28-28	Democrat 
+	29	in
+	30	1906
+			name:	DATE				30-30	1906 
+	31	,
+	32	defeating
+			sense:	get_the_better_of.v.01
+			prop:	defeat.01
+			V		32-32	defeating 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		33-35	Joseph W. Babcock 
+	33	Joseph
+			name:	PERSON				33-35	Joseph W. Babcock 
+	34	W.
+	35	Babcock
+	36	for
+	37	the
+	38	seat
+			sense:	seat.n.07
+	39	from
+	40	Wisconsin
+			coref:	IDENT			1	40-41	Wisconsin 's 
+			name:	STATE_OR_PROVINCE				40-40	Wisconsin 
+	41	's
+	42	3rd
+			name:	ORDINAL				42-42	3rd 
+			sense:	third.s.01
+	43	congressional
+			sense:	congressional.a.01
+	44	district
+			sense:	district.n.01
+	45	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Murphy served one term as part of the 60th United States Congress , but was defeated for reelection in 1908 by Arthur W. Kopp .
+
+
+Treebanked sentence:
+--------------------
+Murphy served one term as part of the 60th United States Congress , but was defeated for reelection in 1908 by Arthur W. Kopp . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Murphy))
+    (VP
+      (VP (VBD served)
+        (NP (CD one) (NN term))
+        (PP (IN as)
+          (NP
+            (NP (NN part))
+            (PP (IN of)
+              (NP (DT the) (JJ 60th) (NNP United) (NNP States) (NNP Congress))))))
+      (, ,)
+      (CC but)
+      (VP (VBD was)
+        (VP (VBN defeated)
+          (PP (IN for)
+            (NP
+              (NP (NN reelection))
+              (PP (IN in)
+                (NP (CD 1908)))))
+          (PP (IN by)
+            (NP (NNP Arthur) (NNP W.) (NNP Kopp))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Murphy
+			coref:	IDENT			0	0-0	Murphy 
+			name:	PERSON				0-0	Murphy 
+	1	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	Murphy 
+			N-ARG-A1		2-3	one term 
+			N-ARGM-PRD		4-11	as part of the 60th United States Congress 
+	2	one
+			name:	NUMBER				2-2	one 
+	3	term
+			sense:	term.n.02
+	4	as
+	5	part
+			sense:	part.n.01
+	6	of
+	7	the
+	8	60th
+			name:	ORDINAL				8-8	60th 
+			sense:	sixtieth.s.01
+	9	United
+			name:	COUNTRY				9-10	United States 
+	10	States
+	11	Congress
+			name:	ORGANIZATION				11-11	Congress 
+	12	,
+	13	but
+	14	was
+			sense:	be.v.01
+			prop:	be.03
+			V		14-14	was 
+	15	defeated
+			sense:	get_the_better_of.v.01
+			prop:	defeat.01
+			V		15-15	defeated 
+			N-ARG-A1		0-0	Murphy 
+			N-ARG-A1		16-17	for reelection 
+			N-ARGM-TMP		18-19	in 1908 
+			N-ARG-A0		20-23	by Arthur W. Kopp 
+	16	for
+	17	reelection
+			sense:	reelection.n.01
+	18	in
+	19	1908
+			name:	DATE				19-19	1908 
+	20	by
+	21	Arthur
+			name:	PERSON				21-23	Arthur W. Kopp 
+	22	W.
+	23	Kopp
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He ran unsuccessfully for Congress once more , in 1920 .
+
+
+Treebanked sentence:
+--------------------
+He ran unsuccessfully for Congress once more , in 1920 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD ran)
+      (ADVP (RB unsuccessfully))
+      (PP (IN for)
+        (NP (NNP Congress)))
+      (ADVP (RB once) (RBR more))
+      (, ,)
+      (PP (IN in)
+        (NP (CD 1920))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	ran
+			sense:	campaign.v.01
+			prop:	run.02
+			V		1-1	ran 
+			N-ARG-A0		0-0	He 
+			N-ARGM-MNR		2-2	unsuccessfully 
+			N-ARG-A1		3-4	for Congress 
+			N-ARGM-TMP		5-6	once more 
+			N-ARGM-TMP		8-9	in 1920 
+	2	unsuccessfully
+			sense:	unsuccessfully.r.01
+	3	for
+	4	Congress
+			name:	ORGANIZATION				4-4	Congress 
+	5	once
+			name:	DATE				5-5	once 
+			sense:	once.r.01
+	6	more
+			sense:	more.r.01
+	7	,
+	8	in
+	9	1920
+			name:	DATE				9-9	1920 
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He died in Rochester , Minnesota in 1927 .
+
+
+Treebanked sentence:
+--------------------
+He died in Rochester , Minnesota in 1927 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD died)
+      (PP (IN in)
+        (NP (NNP Rochester) (, ,) (NNP Minnesota)))
+      (PP (IN in)
+        (NP (CD 1927))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		2-5	in Rochester , Minnesota 
+			N-ARGM-TMP		6-7	in 1927 
+	2	in
+	3	Rochester
+			name:	CITY				3-3	Rochester 
+	4	,
+	5	Minnesota
+			name:	STATE_OR_PROVINCE				5-5	Minnesota 
+	6	in
+	7	1927
+			name:	DATE				7-7	1927 
+	8	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-2	James William Murphy 
+				1.8-8	Murphy 
+				2.0-0	He 
+				3.0-0	He 
+				4.0-0	Murphy 
+				5.0-0	He 
+				6.0-0	He 
+	Chain 1 (IDENT)
+				2.15-17	Wisconsin from 1887 
+				0.19-19	Wisconsin 
+				1.4-4	Wisconsin 
+				3.40-41	Wisconsin 's 
+	Chain 2 (IDENT)
+				1.2-2	Platteville 
+				1.22-22	Platteville 
+				2.4-4	Platteville 
+				3.5-5	Platteville 
+

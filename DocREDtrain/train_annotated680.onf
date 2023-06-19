@@ -1,0 +1,749 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Johan Erhard Areschoug ( Johannes Erhard Areschoug , Philos .
+
+
+Treebanked sentence:
+--------------------
+Johan Erhard Areschoug ( Johannes Erhard Areschoug , Philos . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP (NNP Johan) (NNP Erhard) (NNP Areschoug))
+    (FRAG (-LRB- -LRB-)
+      (NP (NNP Johannes) (NNP Erhard) (NNP Areschoug))
+      (, ,)
+      (NP (NNP Philos)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Johan
+			name:	PERSON				0-2	Johan Erhard Areschoug 
+	1	Erhard
+	2	Areschoug
+	3	(
+	4	Johannes
+			name:	PERSON				4-6	Johannes Erhard Areschoug 
+	5	Erhard
+	6	Areschoug
+	7	,
+	8	Philos
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Doctor , Botanices et Oeconomiae ) ( 16 September 1811 – 7 May 1887 ) was a Swedish botanist who was a native of Göteborg .
+
+
+Treebanked sentence:
+--------------------
+Doctor , Botanices et Oeconomiae ) ( 16 September 1811 – 7 May 1887 ) was a Swedish botanist who was a native of Göteborg . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Doctor))
+      (, ,)
+      (NP
+        (NP (NNP Botanices))
+        (NP (FW et) (FW Oeconomiae))
+        (-RRB- -RRB-)
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NML (CD 16) (NNP September))
+            (NP
+              (NP
+                (QP (CD 1811) (SYM –) (CD 7)))
+              (NP-TMP (NNP May) (CD 1887))))
+          (-RRB- -RRB-))))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ Swedish) (NN botanist))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD was)
+              (NP
+                (NP (DT a) (NN native))
+                (PP (IN of)
+                  (NP (NNP Göteborg)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Doctor
+			name:	TITLE				0-0	Doctor 
+	1	,
+	2	Botanices
+	3	et
+	4	Oeconomiae
+	5	)
+	6	(
+	7	16
+			name:	DATE				7-9	16 September 1811 
+	8	September
+	9	1811
+	10	–
+	11	7
+			name:	DATE				11-13	7 May 1887 
+	12	May
+	13	1887
+	14	)
+	15	was
+			sense:	be.v.02
+			prop:	be.01
+			V		15-15	was 
+			N-ARG-A1		0-14	Doctor , Botanices et Oeconomiae ) ( 16 September 1811 – 7 May 1887 ) 
+			N-ARG-A2		16-24	a Swedish botanist who was a native of Göteborg 
+	16	a
+			coref:	IDENT			1	16-24	a Swedish botanist who was a native of Göteborg 
+	17	Swedish
+			name:	NATIONALITY				17-17	Swedish 
+	18	botanist
+			name:	TITLE				18-18	botanist 
+			sense:	botanist.n.01
+	19	who
+	20	was
+			sense:	be.v.01
+			prop:	be.01
+			V		20-20	was 
+			N-ARG-A1		16-18	a Swedish botanist 
+			R-ARG-A1		19-19	who 
+			N-ARG-A2		21-24	a native of Göteborg 
+	21	a
+	22	native
+			sense:	native.n.02
+	23	of
+	24	Göteborg
+			name:	LOCATION				24-24	Göteborg 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was a member of the ( in Swedish ) .
+
+
+Treebanked sentence:
+--------------------
+He was a member of the ( in Swedish ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (DT the))
+            (-LRB- -LRB-)
+            (PP (IN in)
+              (NP (NNP Swedish)))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-9	a member of the ( in Swedish ) 
+	2	a
+	3	member
+			sense:	member.n.01
+	4	of
+	5	the
+	6	(
+	7	in
+	8	Swedish
+			name:	NATIONALITY				8-8	Swedish 
+	9	)
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His first name is sometimes recorded as " John " .
+
+
+Treebanked sentence:
+--------------------
+His first name is sometimes recorded as " John " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His) (JJ first) (NN name))
+    (VP (VBZ is)
+      (ADVP (RB sometimes))
+      (VP (VBN recorded)
+        (PP (IN as) (`` ")
+          (NP (NNP John))
+          ('' "))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			1	0-0	His 
+	1	first
+			name:	ORDINAL				1-1	first 
+			sense:	first.s.02
+	2	name
+			sense:	name.n.01
+	3	is
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	is 
+	4	sometimes
+			sense:	sometimes.r.01
+	5	recorded
+			sense:	record.v.01
+			prop:	record.01
+			V		5-5	recorded 
+			N-ARG-A1		0-2	His first name 
+			N-ARGM-TMP		4-4	sometimes 
+			N-ARGM-PRD		6-9	as " John " 
+	6	as
+	7	"
+	8	John
+	9	"
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He studied natural sciences at the University of Lund , where in 1838 he earned his doctorate in philosophy .
+
+
+Treebanked sentence:
+--------------------
+He studied natural sciences at the University of Lund , where in 1838 he earned his doctorate in philosophy . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD studied)
+      (NP (JJ natural) (NNS sciences))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NNP University))
+          (PP (IN of)
+            (NP (NNP Lund)))))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (PP (IN in)
+            (NP (CD 1838)))
+          (NP (PRP he))
+          (VP (VBD earned)
+            (NP (PRP$ his) (NN doctorate))
+            (PP (IN in)
+              (NP (NN philosophy)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	studied
+			sense:	learn.v.04
+			prop:	study.01
+			V		1-1	studied 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-3	natural sciences 
+			N-ARGM-LOC		4-18	at the University of Lund , where in 1838 he earned his doctorate in philosophy 
+	2	natural
+			sense:	natural.a.01
+	3	sciences
+			sense:	science.n.01
+	4	at
+	5	the
+	6	University
+			name:	ORGANIZATION				6-8	University of Lund 
+	7	of
+	8	Lund
+	9	,
+	10	where
+	11	in
+	12	1838
+			name:	DATE				12-12	1838 
+	13	he
+			coref:	IDENT			1	13-13	he 
+	14	earned
+			sense:	earn.v.02
+			prop:	earn.01
+			V		14-14	earned 
+			N-ARGM-LOC		5-8	the University of Lund 
+			R-ARGM-LOC		10-10	where 
+			N-ARGM-TMP		11-12	in 1838 
+			N-ARG-A0		13-13	he 
+			N-ARG-A1		15-18	his doctorate in philosophy 
+	15	his
+			coref:	IDENT			1	15-15	his 
+	16	doctorate
+			sense:	doctors_degree.n.01
+	17	in
+	18	philosophy
+			sense:	philosophy.n.02
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1859 he succeeded Elias Magnus Fries ( 1794 - 1878 ) as professor of botany at the University of Uppsala , a position he maintained until 1876 .
+
+
+Treebanked sentence:
+--------------------
+In 1859 he succeeded Elias Magnus Fries ( 1794 - 1878 ) as professor of botany at the University of Uppsala , a position he maintained until 1876 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1859)))
+    (NP (PRP he))
+    (VP (VBD succeeded)
+      (NP
+        (NP
+          (NML (NNP Elias) (NNP Magnus))
+          (NNS Fries))
+        (-LRB- -LRB-)
+        (NP
+          (QP (CD 1794) (SYM -) (CD 1878)))
+        (-RRB- -RRB-))
+      (PP (IN as)
+        (NP
+          (NP (NN professor))
+          (PP (IN of)
+            (NP (NN botany)))))
+      (PP (IN at)
+        (NP
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Uppsala))))
+          (, ,)
+          (NP
+            (NP (DT a) (NN position))
+            (SBAR
+              (S
+                (NP (PRP he))
+                (VP (VBD maintained)
+                  (PP (IN until)
+                    (NP (CD 1876))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1859
+			name:	DATE				1-1	1859 
+	2	he
+			coref:	IDENT			1	2-2	he 
+	3	succeeded
+			sense:	succeed.v.02
+			prop:	succeed.02
+			V		3-3	succeeded 
+			N-ARGM-TMP		0-1	In 1859 
+			N-ARG-A0		2-2	he 
+			N-ARG-A1		4-11	Elias Magnus Fries ( 1794 - 1878 ) 
+			N-ARG-A2		12-27	as professor of botany at the University of Uppsala , a position he maintained until 1876 
+	4	Elias
+			name:	PERSON				4-6	Elias Magnus Fries 
+	5	Magnus
+	6	Fries
+			sense:	french_fries.n.01
+	7	(
+	8	1794
+			name:	DATE				8-8	1794 
+	9	-
+			name:	DURATION				9-9	- 
+	10	1878
+			name:	DATE				10-10	1878 
+	11	)
+	12	as
+	13	professor
+			name:	TITLE				13-13	professor 
+			sense:	professor.n.01
+	14	of
+	15	botany
+			sense:	botany.n.02
+	16	at
+	17	the
+	18	University
+			name:	ORGANIZATION				18-20	University of Uppsala 
+	19	of
+	20	Uppsala
+	21	,
+	22	a
+	23	position
+			sense:	position.n.06
+	24	he
+			coref:	IDENT			1	24-24	he 
+	25	maintained
+			sense:	keep.v.01
+			prop:	maintain.01
+			V		25-25	maintained 
+			N-ARG-A1		22-23	a position 
+			N-ARG-A0		24-24	he 
+			N-ARGM-TMP		26-27	until 1876 
+	26	until
+	27	1876
+			name:	DATE				27-27	1876 
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1851 , he was elected a member of the Royal Swedish Academy of Sciences .
+
+
+Treebanked sentence:
+--------------------
+In 1851 , he was elected a member of the Royal Swedish Academy of Sciences . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1851)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (NP
+          (NP (DT a) (NN member))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP Royal) (NNP Swedish) (NNP Academy))
+              (PP (IN of)
+                (NP (NNPS Sciences))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1851
+			name:	DATE				1-1	1851 
+	2	,
+	3	he
+			coref:	IDENT			1	3-3	he 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		5-5	elected 
+			N-ARGM-TMP		0-1	In 1851 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		6-14	a member of the Royal Swedish Academy of Sciences 
+	6	a
+	7	member
+			sense:	member.n.01
+	8	of
+	9	the
+	10	Royal
+			name:	ORGANIZATION				10-14	Royal Swedish Academy of Sciences 
+	11	Swedish
+	12	Academy
+	13	of
+	14	Sciences
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Areschoug performed extensive field studies of Scandinavian cryptogams , being remembered for his work in the field of phycology .
+
+
+Treebanked sentence:
+--------------------
+Areschoug performed extensive field studies of Scandinavian cryptogams , being remembered for his work in the field of phycology . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Areschoug))
+    (VP (VBD performed)
+      (NP
+        (NP (JJ extensive) (NN field) (NNS studies))
+        (PP (IN of)
+          (NP (JJ Scandinavian) (NNS cryptogams))))
+      (, ,)
+      (S
+        (VP (VBG being)
+          (VP (VBN remembered)
+            (PP (IN for)
+              (NP (PRP$ his) (NN work)))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN field))
+                (PP (IN of)
+                  (NP (NN phycology)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Areschoug
+			name:	PERSON				0-0	Areschoug 
+	1	performed
+			sense:	perform.v.01
+			prop:	perform.01
+			V		1-1	performed 
+			N-ARG-A0		0-0	Areschoug 
+			N-ARG-A1		2-7	extensive field studies of Scandinavian cryptogams 
+			N-ARGM-PRD		9-18	being remembered for his work in the field of phycology 
+	2	extensive
+			sense:	extensive.s.01
+	3	field
+			sense:	field.n.03
+	4	studies
+			sense:	survey.n.01
+	5	of
+	6	Scandinavian
+			name:	MISC				6-6	Scandinavian 
+	7	cryptogams
+			sense:	cryptogam.n.01
+	8	,
+	9	being
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	being 
+	10	remembered
+			sense:	remember.v.02
+			prop:	remember.01
+			V		10-10	remembered 
+			N-ARG-A1		0-0	Areschoug 
+			N-ARG-A2		11-18	for his work in the field of phycology 
+	11	for
+	12	his
+	13	work
+			sense:	work.n.01
+	14	in
+	15	the
+	16	field
+			sense:	discipline.n.01
+	17	of
+	18	phycology
+			sense:	phycology.n.01
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The red algae genus Areschougia from the family Areschougiaceae is named in his honor .
+
+
+Treebanked sentence:
+--------------------
+The red algae genus Areschougia from the family Areschougiaceae is named in his honor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ red) (NN algae) (NN genus))
+      (NP
+        (NP (NNP Areschougia))
+        (PP (IN from)
+          (NP (DT the) (NN family) (NNP Areschougiaceae)))))
+    (VP (VBZ is)
+      (VP (VBN named)
+        (PP (IN in)
+          (NP (PRP$ his) (NN honor)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	red
+			sense:	red.s.01
+	2	algae
+			sense:	alga.n.01
+	3	genus
+			sense:	genus.n.02
+	4	Areschougia
+	5	from
+	6	the
+			coref:	IDENT			0	6-8	the family Areschougiaceae 
+	7	family
+			sense:	family.n.06
+	8	Areschougiaceae
+	9	is
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	is 
+	10	named
+			sense:	name.v.01
+			prop:	name.01
+			V		10-10	named 
+			N-ARG-A1		0-8	The red algae genus Areschougia from the family Areschougiaceae 
+	11	in
+	12	his
+			coref:	IDENT			0	12-12	his 
+	13	honor
+			sense:	honor.n.02
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This botanist is denoted by the author abbreviation Aresch .
+
+
+Treebanked sentence:
+--------------------
+This botanist is denoted by the author abbreviation Aresch . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT This) (NN botanist))
+    (VP (VBZ is)
+      (VP (VBN denoted)
+        (PP (IN by)
+          (NP (DT the) (NN author) (NN abbreviation) (NNP Aresch)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+			coref:	IDENT			1	0-1	This botanist 
+	1	botanist
+			name:	TITLE				1-1	botanist 
+			sense:	botanist.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	denoted
+			sense:	denote.v.01
+			prop:	denote.01
+			V		3-3	denoted 
+			N-ARG-A1		0-1	This botanist 
+			N-ARG-A0		4-8	by the author abbreviation Aresch 
+	4	by
+	5	the
+	6	author
+			name:	TITLE				6-6	author 
+			sense:	writer.n.01
+	7	abbreviation
+			sense:	abbreviation.n.01
+	8	Aresch
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+when citing a botanical name .
+
+
+Treebanked sentence:
+--------------------
+when citing a botanical name . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (WHADVP (WRB when))
+    (S
+      (VP (VBG citing)
+        (NP (DT a) (JJ botanical) (NN name))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	when
+	1	citing
+			sense:	mention.v.01
+			prop:	cite.01
+			V		1-1	citing 
+			N-ARGM-TMP		0-0	when 
+			N-ARG-A1		2-4	a botanical name 
+	2	a
+	3	botanical
+			sense:	botanic.a.01
+	4	name
+			sense:	name.n.01
+	5	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				8.6-8	the family Areschougiaceae 
+				8.12-12	his 
+	Chain 1 (IDENT)
+				1.16-24	a Swedish botanist who was a native of Göteborg 
+				2.0-0	He 
+				3.0-0	His 
+				4.0-0	He 
+				4.13-13	he 
+				4.15-15	his 
+				5.2-2	he 
+				5.24-24	he 
+				6.3-3	he 
+				9.0-1	This botanist 
+

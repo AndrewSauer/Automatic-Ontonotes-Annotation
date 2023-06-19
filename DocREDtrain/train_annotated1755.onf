@@ -1,0 +1,701 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+John Galt ( ) is a character in Ayn Rand 's novel Atlas Shrugged ( 1957 ) .
+
+
+Treebanked sentence:
+--------------------
+John Galt ( ) is a character in Ayn Rand 's novel Atlas Shrugged ( 1957 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP John) (NNP Galt) (-LRB- -LRB-) (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN character))
+        (PP (IN in)
+          (NP
+            (NP
+              (NP (NNP Ayn) (NNP Rand) (POS 's))
+              (JJ novel) (NNP Atlas))
+            (VP (VBN Shrugged)))))
+      (PRN (-LRB- -LRB-)
+        (NP (CD 1957))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	John
+			name:	PERSON				0-1	John Galt 
+	1	Galt
+	2	(
+	3	)
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	John Galt ( ) 
+			N-ARG-A2		5-16	a character in Ayn Rand 's novel Atlas Shrugged ( 1957 ) 
+	5	a
+	6	character
+			sense:	fictional_character.n.01
+	7	in
+	8	Ayn
+			name:	MISC				8-8	Ayn 
+	9	Rand
+	10	's
+	11	novel
+			sense:	fresh.s.04
+	12	Atlas
+	13	Shrugged
+			sense:	shrug.v.01
+			prop:	shrug.03
+			V		13-13	Shrugged 
+			N-ARG-A1		12-12	Atlas 
+	14	(
+	15	1957
+			name:	DATE				15-15	1957 
+	16	)
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Although he is not identified by name until the last third of the novel , he is the object of its often - repeated question " Who is John Galt ? "
+
+
+Treebanked sentence:
+--------------------
+Although he is not identified by name until the last third of the novel , he is the object of its often - repeated question " Who is John Galt ? " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN Although)
+      (S
+        (NP (PRP he))
+        (VP (VBZ is) (RB not)
+          (VP (VBN identified)
+            (PP (IN by)
+              (NP (NN name)))
+            (PP (IN until)
+              (NP
+                (NP (DT the) (JJ last) (NN third))
+                (PP (IN of)
+                  (NP (DT the) (NN novel)))))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN object))
+        (PP (IN of)
+          (NP (PRP$ its)
+            (ADJP (RB often) (HYPH -) (VBN repeated))
+            (NN question)))
+        ('' ")
+        (SBARQ
+          (WHNP (WP Who))
+          (SQ (VBZ is)
+            (NP (NNP John) (NNP Galt))))))
+    (. ?) ('' ")))
+
+
+Leaves:
+-------
+	0	Although
+	1	he
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	not
+			sense:	not.r.01
+	4	identified
+			sense:	name.v.02
+			prop:	identify.01
+			V		4-4	identified 
+			N-ARG-A1		1-1	he 
+			N-ARGM-NEG		3-3	not 
+			N-ARGM-MNR		5-6	by name 
+			N-ARGM-TMP		7-13	until the last third of the novel 
+	5	by
+	6	name
+			sense:	name.n.01
+	7	until
+	8	the
+	9	last
+			sense:	last.a.02
+	10	third
+			name:	ORDINAL				10-10	third 
+			sense:	one-third.n.01
+	11	of
+	12	the
+	13	novel
+			sense:	novel.n.01
+	14	,
+	15	he
+	16	is
+			sense:	be.v.02
+			prop:	be.01
+			V		16-16	is 
+			N-ARGM-ADV		0-13	Although he is not identified by name until the last third of the novel 
+			N-ARG-A1		15-15	he 
+			N-ARG-A2		17-31	the object of its often - repeated question " Who is John Galt ? " 
+	17	the
+	18	object
+			sense:	object.n.04
+	19	of
+	20	its
+			coref:	IDENT			0	20-20	its 
+	21	often
+			sense:	frequently.r.01
+	22	-
+	23	repeated
+			sense:	repeat.v.01
+			prop:	repeat.01
+			V		23-23	repeated 
+			N-ARGM-TMP		21-21	often 
+			N-ARG-A1		24-24	question 
+	24	question
+			sense:	question.n.01
+	25	"
+	26	Who
+	27	is
+			sense:	be.v.02
+			prop:	be.01
+			V		27-27	is 
+			N-ARG-A2		26-26	Who 
+			N-ARG-A1		28-29	John Galt 
+	28	John
+			name:	PERSON				28-29	John Galt 
+	29	Galt
+	30	?
+	31	"
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+and of the quest to discover the answer .
+
+
+Treebanked sentence:
+--------------------
+and of the quest to discover the answer . 
+
+Tree:
+-----
+(ROOT
+  (FRAG (CC and)
+    (PP (IN of)
+      (NP (DT the) (NN quest)
+        (S
+          (VP (TO to)
+            (VP (VB discover)
+              (NP (DT the) (NN answer)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	and
+	1	of
+	2	the
+	3	quest
+			sense:	quest.n.02
+	4	to
+	5	discover
+			sense:	discover.v.03
+			prop:	discover.01
+			V		5-5	discover 
+			N-ARG-A1		6-7	the answer 
+	6	the
+	7	answer
+			sense:	solution.n.02
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Also , in the later part it becomes clear that Galt had been present in the book 's plot all along , playing several important roles though not identified by name .
+
+
+Treebanked sentence:
+--------------------
+Also , in the later part it becomes clear that Galt had been present in the book 's plot all along , playing several important roles though not identified by name . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (, ,)
+    (PP (IN in)
+      (NP (DT the) (JJR later) (NN part)))
+    (NP (PRP it))
+    (VP (VBZ becomes)
+      (ADJP (JJ clear))
+      (SBAR (IN that)
+        (S
+          (NP (NNP Galt))
+          (VP (VBD had)
+            (VP (VBN been)
+              (ADJP (JJ present)
+                (PP (IN in)
+                  (NP
+                    (NP (DT the) (NN book) (POS 's))
+                    (NN plot)
+                    (S
+                      (ADVP (RB all) (RB along))
+                      (, ,)
+                      (VP (VBG playing)
+                        (NP (JJ several) (JJ important) (NNS roles)))))))
+              (SBAR (IN though)
+                (S (RB not)
+                  (VP (VBN identified)
+                    (PP (IN by)
+                      (NP (NN name)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Also
+			sense:	besides.r.02
+	1	,
+	2	in
+	3	the
+	4	later
+			sense:	late.a.01
+	5	part
+			sense:	part.n.01
+	6	it
+			coref:	IDENT			0	6-6	it 
+	7	becomes
+			sense:	become.v.01
+			prop:	become.01
+			V		7-7	becomes 
+			N-ARGM-DIS		0-0	Also 
+			N-ARGM-LOC		2-5	in the later part 
+			N-ARG-A2		8-8	clear 
+			N-ARG-A1		9-30	that Galt had been present in the book 's plot all along , playing several important roles though not identified by name 
+	8	clear
+			sense:	clear.a.01
+	9	that
+	10	Galt
+			name:	PERSON				10-10	Galt 
+	11	had
+			sense:	have.v.01
+			prop:	have.01
+			V		11-11	had 
+	12	been
+			sense:	be.v.01
+			prop:	be.01
+			V		12-12	been 
+			N-ARG-A1		10-10	Galt 
+			N-ARG-A2		13-18	present in the book 's plot 
+			N-ARGM-TMP		19-20	all along 
+			N-ARGM-ADV		22-30	playing several important roles though not identified by name 
+	13	present
+			name:	DATE				13-13	present 
+			sense:	present.a.02
+	14	in
+	15	the
+			coref:	IDENT			0	15-17	the book 's 
+			coref:	IDENT			2	15-18	the book 's plot 
+	16	book
+			sense:	book.n.01
+	17	's
+	18	plot
+			sense:	plot.n.03
+	19	all
+			sense:	wholly.r.01
+	20	along
+			sense:	along.r.03
+	21	,
+	22	playing
+			sense:	act.v.03
+			prop:	play.02
+			V		22-22	playing 
+			N-ARG-A0		10-10	Galt 
+			N-ARG-A1		23-25	several important roles 
+			N-ARGM-ADV		26-30	though not identified by name 
+	23	several
+			sense:	several.s.01
+	24	important
+			sense:	important.a.01
+	25	roles
+			sense:	function.n.03
+	26	though
+	27	not
+			sense:	not.r.01
+	28	identified
+			sense:	name.v.02
+			prop:	identify.01
+			V		28-28	identified 
+			N-ARG-A1		10-10	Galt 
+			N-ARGM-NEG		27-27	not 
+			N-ARGM-MNR		29-30	by name 
+	29	by
+	30	name
+			sense:	name.n.01
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As the plot unfolds , Galt is acknowledged to be a philosopher and inventor ; he believes in the power and glory of the human mind , and the rights of individuals to use their minds solely for themselves .
+
+
+Treebanked sentence:
+--------------------
+As the plot unfolds , Galt is acknowledged to be a philosopher and inventor ; he believes in the power and glory of the human mind , and the rights of individuals to use their minds solely for themselves . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (SBAR (IN As)
+        (S
+          (NP (DT the) (NN plot))
+          (VP (VBZ unfolds))))
+      (, ,)
+      (NP (NNP Galt))
+      (VP (VBZ is)
+        (VP (VBN acknowledged)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (NP (DT a) (NN philosopher)
+                  (CC and)
+                  (NN inventor))))))))
+    (: ;)
+    (S
+      (NP (PRP he))
+      (VP (VBZ believes)
+        (PP (IN in)
+          (NP
+            (NP
+              (NP (DT the) (NN power)
+                (CC and)
+                (NN glory))
+              (PP (IN of)
+                (NP (DT the) (JJ human) (NN mind))))
+            (, ,)
+            (CC and)
+            (NP
+              (NP (DT the) (NNS rights))
+              (PP (IN of)
+                (NP (NNS individuals))))))
+        (S
+          (VP (TO to)
+            (VP (VB use)
+              (NP (PRP$ their) (NNS minds))
+              (ADVP (RB solely))
+              (PP (IN for)
+                (NP (PRP themselves))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	the
+			coref:	IDENT			2	1-2	the plot 
+	2	plot
+			sense:	plot.n.03
+	3	unfolds
+			sense:	blossom.v.02
+			prop:	unfold.02
+			V		3-3	unfolds 
+			N-ARG-A1		1-2	the plot 
+	4	,
+	5	Galt
+			name:	PERSON				5-5	Galt 
+	6	is
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	is 
+	7	acknowledged
+			sense:	acknowledge.v.06
+			prop:	acknowledge.01
+			V		7-7	acknowledged 
+			N-ARGM-ADV		0-3	As the plot unfolds 
+			N-ARG-A1		8-13	to be a philosopher and inventor 
+	8	to
+	9	be
+			sense:	be.v.01
+			prop:	be.01
+			V		9-9	be 
+			N-ARG-A1		5-5	Galt 
+			N-ARG-A2		10-13	a philosopher and inventor 
+	10	a
+	11	philosopher
+			name:	TITLE				11-11	philosopher 
+			sense:	philosopher.n.01
+	12	and
+	13	inventor
+			name:	TITLE				13-13	inventor 
+			sense:	inventor.n.01
+	14	;
+	15	he
+	16	believes
+			sense:	believe.v.04
+			prop:	believe.01
+			V		16-16	believes 
+			N-ARG-A0		15-15	he 
+			N-ARG-A1		17-38	in the power and glory of the human mind , and the rights of individuals to use their minds solely for themselves 
+	17	in
+	18	the
+	19	power
+			sense:	power.n.01
+	20	and
+	21	glory
+			sense:	glory.n.02
+	22	of
+	23	the
+	24	human
+			sense:	human.a.01
+	25	mind
+			sense:	mind.n.01
+	26	,
+	27	and
+	28	the
+	29	rights
+			sense:	right.n.01
+	30	of
+	31	individuals
+			coref:	IDENT			1	31-31	individuals 
+			sense:	person.n.01
+	32	to
+	33	use
+			sense:	use.v.01
+			prop:	use.01
+			V		33-33	use 
+			N-ARG-A0		31-31	individuals 
+			N-ARG-A1		34-35	their minds 
+	34	their
+			coref:	IDENT			1	34-34	their 
+	35	minds
+			sense:	mind.n.01
+	36	solely
+			sense:	entirely.r.02
+	37	for
+	38	themselves
+			coref:	IDENT			1	38-38	themselves 
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He serves as a highly individualistic counterpoint to the collectivist social and economic structure depicted in the novel , in which society is based on oppressive bureaucratic functionaries and a culture that embraces mediocrity in the name of egalitarianism , which the novel posits is the end result of collectivist philosophy .
+
+
+Treebanked sentence:
+--------------------
+He serves as a highly individualistic counterpoint to the collectivist social and economic structure depicted in the novel , in which society is based on oppressive bureaucratic functionaries and a culture that embraces mediocrity in the name of egalitarianism , which the novel posits is the end result of collectivist philosophy . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ serves)
+      (PP (IN as)
+        (NP (DT a)
+          (ADJP (RB highly) (JJ individualistic))
+          (NN counterpoint)))
+      (PP (IN to)
+        (NP
+          (NP
+            (NP (DT the) (JJ collectivist)
+              (UCP (JJ social)
+                (CC and)
+                (JJ economic))
+              (NN structure))
+            (VP (VBN depicted)
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NN novel))
+                  (, ,)
+                  (SBAR
+                    (WHPP (IN in)
+                      (WHNP (WDT which)))
+                    (S
+                      (NP (NN society))
+                      (VP (VBZ is)
+                        (VP (VBN based)
+                          (PP (IN on)
+                            (NP (JJ oppressive) (JJ bureaucratic) (NNS functionaries)))))))))))
+          (CC and)
+          (NP
+            (NP (DT a) (NN culture))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ embraces)
+                  (NP (NN mediocrity))
+                  (PP (IN in)
+                    (NP
+                      (NP
+                        (NP (DT the) (NN name))
+                        (PP (IN of)
+                          (NP (NN egalitarianism))))
+                      (, ,)
+                      (SBAR
+                        (WHNP (WDT which))
+                        (S
+                          (NP (DT the) (JJ novel) (NNS posits))
+                          (VP (VBZ is)
+                            (NP
+                              (NP (DT the) (NN end) (NN result))
+                              (PP (IN of)
+                                (NP (JJ collectivist) (NN philosophy))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	serves
+			sense:	serve.v.01
+			prop:	serve.01
+			V		1-1	serves 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-50	as a highly individualistic counterpoint to the collectivist social and economic structure depicted in the novel , in which society is based on oppressive bureaucratic functionaries and a culture that embraces mediocrity in the name of egalitarianism , which the novel posits is the end result of collectivist philosophy 
+	2	as
+	3	a
+	4	highly
+			sense:	highly.r.01
+	5	individualistic
+			sense:	individualist.s.01
+	6	counterpoint
+			sense:	counterpoint.n.01
+	7	to
+	8	the
+	9	collectivist
+			sense:	collectivist.s.01
+	10	social
+			sense:	social.a.01
+	11	and
+	12	economic
+			sense:	economic.a.01
+	13	structure
+			sense:	social_organization.n.01
+	14	depicted
+			sense:	describe.v.01
+			prop:	depict.01
+			V		14-14	depicted 
+			N-ARG-A1		8-13	the collectivist social and economic structure 
+			N-ARGM-LOC		15-50	in the novel , in which society is based on oppressive bureaucratic functionaries and a culture that embraces mediocrity in the name of egalitarianism , which the novel posits is the end result of collectivist philosophy 
+	15	in
+	16	the
+	17	novel
+			sense:	novel.n.01
+	18	,
+	19	in
+	20	which
+	21	society
+			sense:	society.n.01
+	22	is
+			sense:	be.v.01
+			prop:	be.03
+			V		22-22	is 
+	23	based
+			sense:	establish.v.08
+			prop:	base.02
+			V		23-23	based 
+			N-ARGM-LOC		19-19	in 
+			R-ARGM-LOC		20-20	which 
+			N-ARG-A1		21-21	society 
+			N-ARG-A2		24-50	on oppressive bureaucratic functionaries and a culture that embraces mediocrity in the name of egalitarianism , which the novel posits is the end result of collectivist philosophy 
+	24	on
+	25	oppressive
+			sense:	oppressive.s.02
+	26	bureaucratic
+			sense:	bureaucratic.a.01
+	27	functionaries
+			sense:	official.n.01
+	28	and
+	29	a
+	30	culture
+			sense:	culture.n.02
+	31	that
+	32	embraces
+			sense:	espouse.v.03
+			prop:	embrace.01
+			V		32-32	embraces 
+			N-ARG-A0		29-30	a culture 
+			R-ARG-A0		31-31	that 
+			N-ARG-A1		33-33	mediocrity 
+			N-ARGM-CAU		34-50	in the name of egalitarianism , which the novel posits is the end result of collectivist philosophy 
+	33	mediocrity
+			sense:	averageness.n.02
+	34	in
+	35	the
+	36	name
+			sense:	name.n.01
+	37	of
+	38	egalitarianism
+			name:	IDEOLOGY				38-38	egalitarianism 
+			sense:	egalitarianism.n.01
+	39	,
+	40	which
+	41	the
+	42	novel
+			sense:	fresh.s.04
+	43	posits
+			sense:	postulate.n.01
+	44	is
+			sense:	be.v.02
+			prop:	be.01
+			V		44-44	is 
+			N-ARG-A1		38-38	egalitarianism 
+			R-ARG-A1		40-40	which 
+			N-ARG-A2		45-50	the end result of collectivist philosophy 
+	45	the
+	46	end
+			sense:	goal.n.01
+	47	result
+			sense:	consequence.n.01
+	48	of
+	49	collectivist
+			sense:	collectivist.s.01
+	50	philosophy
+			sense:	doctrine.n.01
+	51	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.15-17	the book 's 
+				1.20-20	its 
+				3.6-6	it 
+	Chain 1 (IDENT)
+				4.31-31	individuals 
+				4.34-34	their 
+				4.38-38	themselves 
+	Chain 2 (IDENT)
+				3.15-18	the book 's plot 
+				4.1-2	the plot 
+

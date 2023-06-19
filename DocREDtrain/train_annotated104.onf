@@ -1,0 +1,875 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Kevin Twaddle ( born 31 October 1971 in Edinburgh ) is a Scottish former professional footballer .
+
+
+Treebanked sentence:
+--------------------
+Kevin Twaddle ( born 31 October 1971 in Edinburgh ) is a Scottish former professional footballer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Kevin) (NNP Twaddle))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 31))
+        (NP-TMP (NNP October) (CD 1971))
+        (PP (IN in)
+          (NP (NNP Edinburgh))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (JJ Scottish) (JJ former) (JJ professional) (NN footballer)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Kevin
+			name:	PERSON				0-1	Kevin Twaddle 
+	1	Twaddle
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Kevin Twaddle 
+			N-ARGM-TMP		4-6	31 October 1971 
+			N-ARGM-LOC		7-8	in Edinburgh 
+	4	31
+			name:	DATE				4-6	31 October 1971 
+	5	October
+	6	1971
+	7	in
+	8	Edinburgh
+			coref:	IDENT			1	8-8	Edinburgh 
+			name:	CITY				8-8	Edinburgh 
+	9	)
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	Kevin Twaddle ( born 31 October 1971 in Edinburgh ) 
+			N-ARG-A2		11-15	a Scottish former professional footballer 
+	11	a
+	12	Scottish
+			name:	NATIONALITY				12-12	Scottish 
+	13	former
+			sense:	erstwhile.s.01
+	14	professional
+			sense:	professional.a.01
+	15	footballer
+			name:	TITLE				15-15	footballer 
+			sense:	football_player.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A forward , Twaddle began his career with junior club Dunbar United .
+
+
+Treebanked sentence:
+--------------------
+A forward , Twaddle began his career with junior club Dunbar United . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT A) (RB forward))
+    (, ,)
+    (NP (NN Twaddle))
+    (VP (VBD began)
+      (NP (PRP$ his) (NN career))
+      (PP (IN with)
+        (NP
+          (NML (JJ junior) (NN club))
+          (NNP Dunbar) (NNP United))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	forward
+			sense:	forward.r.01
+	2	,
+	3	Twaddle
+			sense:	baloney.n.01
+	4	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		4-4	began 
+			R-ARG-A0		0-1	A forward 
+			N-ARG-A0		3-3	Twaddle 
+			N-ARG-A1		5-6	his career 
+			N-ARG-A2		7-11	with junior club Dunbar United 
+	5	his
+	6	career
+			sense:	career.n.01
+	7	with
+	8	junior
+			sense:	junior.s.03
+	9	club
+			sense:	club.n.02
+	10	Dunbar
+			name:	ORGANIZATION				10-11	Dunbar United 
+	11	United
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He entered senior football when he signed for St Johnstone in 1994 .
+
+
+Treebanked sentence:
+--------------------
+He entered senior football when he signed for St Johnstone in 1994 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD entered)
+      (NP (JJ senior) (NN football))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP he))
+          (VP (VBD signed)
+            (PP (IN for)
+              (NP
+                (NP (NNP St) (NNP Johnstone))
+                (PP (IN in)
+                  (NP (CD 1994)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	entered
+			sense:	enter.v.02
+			prop:	enter.01
+			V		1-1	entered 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-3	senior football 
+			N-ARGM-TMP		4-11	when he signed for St Johnstone in 1994 
+	2	senior
+			sense:	senior.a.01
+	3	football
+			sense:	football.n.01
+	4	when
+	5	he
+	6	signed
+			sense:	sign.v.03
+			prop:	sign.02
+			V		6-6	signed 
+			N-ARGM-TMP		4-4	when 
+			N-ARG-A0		5-5	he 
+			N-ARG-A2		7-9	for St Johnstone 
+			N-ARGM-TMP		10-11	in 1994 
+	7	for
+	8	St
+			name:	ORGANIZATION				8-9	St Johnstone 
+	9	Johnstone
+	10	in
+	11	1994
+			name:	DATE				11-11	1994 
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He remained at McDiarmid Park for two years , making 51 league appearances and finding the net on ten occasions .
+
+
+Treebanked sentence:
+--------------------
+He remained at McDiarmid Park for two years , making 51 league appearances and finding the net on ten occasions . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD remained)
+      (PP (IN at)
+        (NP (NNP McDiarmid) (NNP Park)))
+      (PP (IN for)
+        (NP (CD two) (NNS years)))
+      (, ,)
+      (S
+        (VP
+          (VP (VBG making)
+            (NP (CD 51) (NN league) (NNS appearances)))
+          (CC and)
+          (VP (VBG finding)
+            (NP
+              (NP (DT the) (NN net))
+              (PP (IN on)
+                (NP (CD ten) (NNS occasions))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	remained
+			sense:	stay.v.04
+			prop:	remain.01
+			V		1-1	remained 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		2-4	at McDiarmid Park 
+			N-ARGM-TMP		5-7	for two years 
+			N-ARGM-PRD		9-19	making 51 league appearances and finding the net on ten occasions 
+	2	at
+	3	McDiarmid
+			name:	LOCATION				3-4	McDiarmid Park 
+	4	Park
+	5	for
+	6	two
+			name:	DURATION				6-7	two years 
+	7	years
+			sense:	year.n.01
+	8	,
+	9	making
+			sense:	make.v.01
+			prop:	make.01
+			V		9-9	making 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		10-12	51 league appearances 
+	10	51
+			name:	NUMBER				10-10	51 
+	11	league
+			sense:	league.n.01
+	12	appearances
+			sense:	appearance.n.05
+	13	and
+	14	finding
+			sense:	find.v.01
+			prop:	find.01
+			V		14-14	finding 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		15-16	the net 
+			N-ARGM-TMP		17-19	on ten occasions 
+	15	the
+	16	net
+			sense:	net.n.04
+	17	on
+	18	ten
+			name:	NUMBER				18-18	ten 
+	19	occasions
+			sense:	juncture.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1996 , he joined Raith Rovers in an £ 80,000 deal .
+
+
+Treebanked sentence:
+--------------------
+In 1996 , he joined Raith Rovers in an £ 80,000 deal . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1996)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD joined)
+      (NP
+        (NP (NNP Raith) (NNPS Rovers))
+        (PP (IN in)
+          (NP (DT an)
+            (NML ($ £) (CD 80,000))
+            (NN deal)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1996
+			name:	DATE				1-1	1996 
+	2	,
+	3	he
+	4	joined
+			sense:	join.v.01
+			prop:	join.01
+			V		4-4	joined 
+			N-ARGM-TMP		0-1	In 1996 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		5-6	Raith Rovers 
+			N-ARGM-MNR		7-11	in an £ 80,000 deal 
+	5	Raith
+			name:	ORGANIZATION				5-6	Raith Rovers 
+	6	Rovers
+	7	in
+	8	an
+	9	£
+			name:	MONEY				9-10	£ 80,000 
+	10	80,000
+	11	deal
+			sense:	deal.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He made 32 appearances for Rovers in two years , scoring four goals .
+
+
+Treebanked sentence:
+--------------------
+He made 32 appearances for Rovers in two years , scoring four goals . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD made)
+      (NP (CD 32) (NNS appearances))
+      (PP (IN for)
+        (NP (NNPS Rovers)))
+      (PP (IN in)
+        (NP (CD two) (NNS years)))
+      (, ,)
+      (S
+        (VP (VBG scoring)
+          (NP (CD four) (NNS goals)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	made
+			sense:	make.v.01
+			prop:	make.01
+			V		1-1	made 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-5	32 appearances for Rovers 
+			N-ARGM-TMP		6-8	in two years 
+			N-ARGM-PRD		10-12	scoring four goals 
+	2	32
+			name:	NUMBER				2-2	32 
+	3	appearances
+			sense:	appearance.n.05
+	4	for
+	5	Rovers
+			name:	ORGANIZATION				5-5	Rovers 
+	6	in
+	7	two
+			name:	DURATION				7-8	two years 
+	8	years
+			sense:	year.n.01
+	9	,
+	10	scoring
+			sense:	score.v.01
+			prop:	score.01
+			V		10-10	scoring 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		11-12	four goals 
+	11	four
+			name:	NUMBER				11-11	four 
+	12	goals
+			sense:	goal.n.04
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He moved to Morton in 1998 for a fee of £ 150,000 , but his stay at Cappielow was brief .
+
+
+Treebanked sentence:
+--------------------
+He moved to Morton in 1998 for a fee of £ 150,000 , but his stay at Cappielow was brief . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD moved)
+        (PP (IN to)
+          (NP (NNP Morton)))
+        (PP (IN in)
+          (NP (CD 1998)))
+        (PP (IN for)
+          (NP
+            (NP (DT a) (NN fee))
+            (PP (IN of)
+              (NP ($ £) (CD 150,000)))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (PRP$ his) (NN stay))
+        (PP (IN at)
+          (NP (NNP Cappielow))))
+      (VP (VBD was)
+        (ADJP (JJ brief))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		1-1	moved 
+			N-ARG-A0		0-0	He 
+			N-ARG-A2		2-3	to Morton 
+			N-ARGM-TMP		4-5	in 1998 
+	2	to
+	3	Morton
+			name:	PERSON				3-3	Morton 
+	4	in
+	5	1998
+			name:	DATE				5-5	1998 
+	6	for
+	7	a
+	8	fee
+			sense:	fee.n.01
+	9	of
+	10	£
+			name:	MONEY				10-11	£ 150,000 
+	11	150,000
+	12	,
+	13	but
+	14	his
+			coref:	IDENT			0	14-17	his stay at Cappielow 
+	15	stay
+			sense:	stay.n.01
+	16	at
+	17	Cappielow
+			name:	LOCATION				17-17	Cappielow 
+	18	was
+			sense:	be.v.01
+			prop:	be.01
+			V		18-18	was 
+			N-ARG-A1		14-17	his stay at Cappielow 
+			N-ARG-A2		19-19	brief 
+	19	brief
+			sense:	brief.s.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Scottish Premier League club Motherwell signed him later that year , also for £ 150,000 .
+
+
+Treebanked sentence:
+--------------------
+Scottish Premier League club Motherwell signed him later that year , also for £ 150,000 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (JJ Scottish)
+        (NML (NNP Premier) (NNP League))
+        (NN club))
+      (NP (NNP Motherwell)))
+    (VP (VBD signed)
+      (NP (PRP him))
+      (NP-TMP
+        (ADVP (RB later))
+        (DT that) (NN year))
+      (, ,)
+      (PP
+        (ADVP (RB also))
+        (IN for)
+        (NP ($ £) (CD 150,000))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Scottish
+			name:	NATIONALITY				0-0	Scottish 
+	1	Premier
+			name:	ORGANIZATION				1-2	Premier League 
+	2	League
+	3	club
+			sense:	baseball_club.n.01
+	4	Motherwell
+			name:	ORGANIZATION				4-4	Motherwell 
+	5	signed
+			sense:	sign.v.03
+			prop:	sign.02
+			V		5-5	signed 
+			N-ARG-A0		0-4	Scottish Premier League club Motherwell 
+			N-ARG-A1		6-6	him 
+			N-ARGM-TMP		7-9	later that year 
+			N-ARGM-ADV		11-14	also for £ 150,000 
+	6	him
+	7	later
+			sense:	subsequently.r.01
+	8	that
+	9	year
+			name:	DURATION				9-9	year 
+			sense:	year.n.01
+	10	,
+	11	also
+			sense:	besides.r.02
+	12	for
+	13	£
+			name:	MONEY				13-14	£ 150,000 
+	14	150,000
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Twaddle signed for Hearts , the club he supported as a boy , in June 2002 .
+
+
+Treebanked sentence:
+--------------------
+Twaddle signed for Hearts , the club he supported as a boy , in June 2002 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Twaddle))
+    (VP (VBD signed)
+      (PP (IN for)
+        (NP
+          (NP (NNS Hearts))
+          (, ,)
+          (NP
+            (NP (DT the) (NN club))
+            (SBAR
+              (S
+                (NP (PRP he))
+                (VP (VBD supported)
+                  (PP (IN as)
+                    (NP (DT a) (NN boy)))
+                  (, ,)
+                  (PP (IN in)
+                    (NP (NNP June) (CD 2002))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Twaddle
+	1	signed
+			sense:	sign.v.03
+			prop:	sign.02
+			V		1-1	signed 
+			N-ARG-A0		0-0	Twaddle 
+			N-ARG-A1		2-11	for Hearts , the club he supported as a boy 
+			N-ARGM-TMP		13-15	in June 2002 
+	2	for
+	3	Hearts
+			sense:	center.n.01
+	4	,
+	5	the
+	6	club
+			sense:	baseball_club.n.01
+	7	he
+	8	supported
+			sense:	back.v.01
+			prop:	support.01
+			V		8-8	supported 
+			N-ARG-A1		5-6	the club 
+			N-ARG-A0		7-7	he 
+			N-ARGM-TMP		9-11	as a boy 
+	9	as
+	10	a
+	11	boy
+			sense:	male_child.n.01
+	12	,
+	13	in
+	14	June
+			name:	DATE				14-15	June 2002 
+	15	2002
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He only played eight league games for the Jambos in his twelve months with the Edinburgh side .
+
+
+Treebanked sentence:
+--------------------
+He only played eight league games for the Jambos in his twelve months with the Edinburgh side . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB only))
+    (VP (VBD played)
+      (NP (CD eight) (NN league) (NNS games))
+      (PP (IN for)
+        (NP
+          (NP (DT the) (NNP Jambos))
+          (PP (IN in)
+            (NP (PRP$ his) (CD twelve) (NNS months)))))
+      (PP (IN with)
+        (NP (DT the) (NNP Edinburgh) (NN side))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	only
+			sense:	merely.r.01
+	2	played
+			sense:	play.v.01
+			prop:	play.01
+			V		2-2	played 
+			N-ARG-A0		0-0	He 
+			N-ARGM-ADV		1-1	only 
+			N-ARG-A1		3-5	eight league games 
+			N-ARGM-ADV		6-8	for the Jambos 
+			N-ARGM-TMP		9-16	in his twelve months with the Edinburgh side 
+	3	eight
+			name:	NUMBER				3-3	eight 
+	4	league
+			sense:	league.n.01
+	5	games
+			sense:	game.n.02
+	6	for
+	7	the
+	8	Jambos
+			name:	PERSON				8-8	Jambos 
+	9	in
+	10	his
+	11	twelve
+			name:	DURATION				11-12	twelve months 
+	12	months
+			sense:	month.n.02
+	13	with
+	14	the
+	15	Edinburgh
+			coref:	IDENT			1	15-15	Edinburgh 
+			name:	CITY				15-15	Edinburgh 
+	16	side
+			sense:	side.n.02
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2003 , he joined St Mirren , but again his stay was a short one , and he moved on after making only three appearances .
+
+
+Treebanked sentence:
+--------------------
+In 2003 , he joined St Mirren , but again his stay was a short one , and he moved on after making only three appearances . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN In)
+        (NP (CD 2003)))
+      (, ,)
+      (NP (PRP he))
+      (VP (VBD joined)
+        (NP (NNP St) (NNP Mirren))))
+    (, ,)
+    (CC but)
+    (S
+      (S
+        (ADVP (RB again))
+        (NP (PRP$ his) (NN stay))
+        (VP (VBD was)
+          (NP (DT a) (JJ short) (CD one))))
+      (, ,)
+      (CC and)
+      (S
+        (NP (PRP he))
+        (VP (VBD moved)
+          (ADVP (RB on))
+          (PP (IN after)
+            (S
+              (VP (VBG making)
+                (NP
+                  (QP (RB only) (CD three))
+                  (NNS appearances))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2003
+			name:	DATE				1-1	2003 
+	2	,
+	3	he
+	4	joined
+			sense:	join.v.01
+			prop:	join.01
+			V		4-4	joined 
+			N-ARGM-TMP		0-1	In 2003 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		5-6	St Mirren 
+	5	St
+			name:	PERSON				5-6	St Mirren 
+	6	Mirren
+	7	,
+	8	but
+	9	again
+			sense:	again.r.01
+	10	his
+			coref:	IDENT			0	10-11	his stay 
+	11	stay
+			sense:	stay.n.01
+	12	was
+			sense:	be.v.01
+			prop:	be.01
+			V		12-12	was 
+			N-ARGM-TMP		9-9	again 
+			N-ARG-A1		10-11	his stay 
+			N-ARG-A2		13-15	a short one 
+	13	a
+	14	short
+			sense:	short.a.01
+	15	one
+			name:	NUMBER				15-15	one 
+	16	,
+	17	and
+	18	he
+	19	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		19-19	moved 
+			N-ARG-A0		18-18	he 
+			N-ARGM-DIR		20-20	on 
+			N-ARGM-TMP		21-25	after making only three appearances 
+	20	on
+			sense:	along.r.01
+	21	after
+	22	making
+			sense:	make.v.01
+			prop:	make.01
+			V		22-22	making 
+			N-ARG-A0		18-18	he 
+			N-ARG-A1		23-25	only three appearances 
+	23	only
+			sense:	merely.r.01
+	24	three
+			name:	NUMBER				24-24	three 
+	25	appearances
+			sense:	appearance.n.05
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Twaddle joined Scottish junior club Penicuik Athletic in the summer of 2004 .
+
+
+Treebanked sentence:
+--------------------
+Twaddle joined Scottish junior club Penicuik Athletic in the summer of 2004 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN Twaddle))
+    (VP (VBD joined)
+      (NP
+        (NP (JJ Scottish) (JJ junior) (NN club))
+        (NP (NNP Penicuik) (JJ Athletic)))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN summer))
+          (PP (IN of)
+            (NP (CD 2004))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Twaddle
+			sense:	baloney.n.01
+	1	joined
+			sense:	join.v.01
+			prop:	join.01
+			V		1-1	joined 
+			N-ARG-A0		0-0	Twaddle 
+			N-ARG-A1		2-6	Scottish junior club Penicuik Athletic 
+			N-ARGM-TMP		7-11	in the summer of 2004 
+	2	Scottish
+			name:	NATIONALITY				2-2	Scottish 
+	3	junior
+			sense:	junior.a.01
+	4	club
+			sense:	club.n.02
+	5	Penicuik
+			name:	ORGANIZATION				5-6	Penicuik Athletic 
+	6	Athletic
+			sense:	athletic.a.01
+	7	in
+	8	the
+			name:	DATE				8-11	the summer of 2004 
+	9	summer
+			sense:	summer.n.01
+	10	of
+	11	2004
+	12	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				6.14-17	his stay at Cappielow 
+				10.10-11	his stay 
+	Chain 1 (IDENT)
+				0.8-8	Edinburgh 
+				9.15-15	Edinburgh 
+

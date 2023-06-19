@@ -1,0 +1,747 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Henry Gear was a business and politician in Newfoundland .
+
+
+Treebanked sentence:
+--------------------
+Henry Gear was a business and politician in Newfoundland . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Henry) (NNP Gear))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN business)
+          (CC and)
+          (NN politician))
+        (PP (IN in)
+          (NP (NNP Newfoundland)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Henry
+			coref:	IDENT			2	0-1	Henry Gear 
+			name:	PERSON				0-1	Henry Gear 
+	1	Gear
+	2	was
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	Henry Gear 
+			N-ARG-A2		3-8	a business and politician in Newfoundland 
+	3	a
+	4	business
+			sense:	occupation.n.01
+	5	and
+	6	politician
+			name:	TITLE				6-6	politician 
+			sense:	politician.n.02
+	7	in
+	8	Newfoundland
+			coref:	IDENT			0	8-8	Newfoundland 
+			name:	STATE_OR_PROVINCE				8-8	Newfoundland 
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He represented Burin in the Newfoundland House of Assembly from 1894 to 1897 and from 1900 to 1913 .
+
+
+Treebanked sentence:
+--------------------
+He represented Burin in the Newfoundland House of Assembly from 1894 to 1897 and from 1900 to 1913 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD represented)
+      (NP (NNP Burin))
+      (PP
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNP Newfoundland) (NNP House))
+            (PP (IN of)
+              (NP
+                (NP (NNP Assembly))
+                (PP (IN from)
+                  (NP
+                    (QP (CD 1894) (IN to) (CD 1897))))))))
+        (CC and)
+        (PP (IN from)
+          (NP (CD 1900))))
+      (PP (IN to)
+        (NP (CD 1913))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	represented
+			sense:	represent.v.04
+			prop:	represent.01
+			V		1-1	represented 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-2	Burin 
+			N-ARGM-LOC		3-8	in the Newfoundland House of Assembly 
+			N-ARGM-TMP		9-17	from 1894 to 1897 and from 1900 to 1913 
+	2	Burin
+			name:	LOCATION				2-2	Burin 
+	3	in
+	4	the
+	5	Newfoundland
+			name:	ORGANIZATION				5-8	Newfoundland House of Assembly 
+	6	House
+	7	of
+	8	Assembly
+	9	from
+	10	1894
+			name:	DATE				10-12	1894 to 1897 
+	11	to
+	12	1897
+	13	and
+	14	from
+	15	1900
+			name:	DATE				15-17	1900 to 1913 
+	16	to
+	17	1913
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The son of George Gear , he was born in St. John 's .
+
+
+Treebanked sentence:
+--------------------
+The son of George Gear , he was born in St. John 's . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP-TMP
+      (NP (DT The) (NN son))
+      (PP (IN of)
+        (NP (NNP George) (NNP Gear))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP St.) (NNP John) (POS 's)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	son
+			sense:	son.n.01
+	2	of
+	3	George
+			coref:	IDENT			2	3-4	George Gear 
+			name:	PERSON				3-4	George Gear 
+	4	Gear
+	5	,
+	6	he
+			coref:	IDENT			2	6-6	he 
+	7	was
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	was 
+	8	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		8-8	born 
+			N-ARGM-PRD		0-4	The son of George Gear 
+			N-ARG-A1		6-6	he 
+			N-ARGM-LOC		9-12	in St. John 's 
+	9	in
+	10	St.
+	11	John
+			name:	PERSON				11-11	John 
+	12	's
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1880 , he took over control of his father 's business , operating in partnership with W. J. Barnes as Gear and Company .
+
+
+Treebanked sentence:
+--------------------
+In 1880 , he took over control of his father 's business , operating in partnership with W. J. Barnes as Gear and Company . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP 1880)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD took)
+      (PRT (RP over))
+      (NP
+        (NP (NN control))
+        (PP (IN of)
+          (NP
+            (NP (PRP$ his) (NN father) (POS 's))
+            (NN business))))
+      (, ,)
+      (S
+        (VP (VBG operating)
+          (PP (IN in)
+            (NP (NN partnership)))
+          (PP (IN with)
+            (NP
+              (NP (NNP W.) (NNP J.) (NNP Barnes))
+              (PP (IN as)
+                (NP (NNP Gear)
+                  (CC and)
+                  (NNP Company))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1880
+			name:	DATE				1-1	1880 
+	2	,
+	3	he
+			coref:	IDENT			2	3-3	he 
+	4	took
+			sense:	fill.v.04
+			prop:	take.12
+			V		4-4	took 
+			N-ARGM-TMP		0-1	In 1880 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		6-11	control of his father 's business 
+			N-ARGM-ADV		13-23	operating in partnership with W. J. Barnes as Gear and Company 
+	5	over
+	6	control
+			sense:	control.n.01
+	7	of
+	8	his
+			coref:	IDENT			2	8-8	his 
+	9	father
+			sense:	father.n.01
+	10	's
+	11	business
+			sense:	business.n.01
+	12	,
+	13	operating
+			sense:	operate.v.01
+			prop:	operate.01
+			V		13-13	operating 
+			N-ARG-A0		3-3	he 
+			N-ARGM-MNR		14-19	in partnership with W. J. Barnes 
+			N-ARGM-PRD		20-23	as Gear and Company 
+	14	in
+	15	partnership
+			sense:	partnership.n.01
+	16	with
+	17	W.
+			name:	PERSON				17-19	W. J. Barnes 
+	18	J.
+	19	Barnes
+	20	as
+	21	Gear
+	22	and
+	23	Company
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The company manufactured and imported various items .
+
+
+Treebanked sentence:
+--------------------
+The company manufactured and imported various items . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP (DT The) (NN company) (VBN manufactured))
+    (CC and)
+    (NP (VBN imported) (JJ various) (NNS items))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	company
+			sense:	company.n.01
+	2	manufactured
+			sense:	manufacture.v.01
+			prop:	manufacture.01
+			V		2-2	manufactured 
+			N-ARG-A0		0-1	The company 
+			N-ARG-A1		5-6	various items 
+	3	and
+	4	imported
+			sense:	import.v.01
+			prop:	import.01
+			V		4-4	imported 
+			N-ARG-A0		0-1	The company 
+			N-ARG-A1		5-6	various items 
+	5	various
+			sense:	assorted.s.02
+	6	items
+			sense:	item.n.03
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A few years later , Gaar opened a second business , H. Gear and Company .
+
+
+Treebanked sentence:
+--------------------
+A few years later , Gaar opened a second business , H. Gear and Company . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP
+      (NP
+        (QP (DT A) (JJ few))
+        (NNS years))
+      (RB later))
+    (, ,)
+    (NP (NNP Gaar))
+    (VP (VBD opened)
+      (NP
+        (NP (DT a) (JJ second) (NN business))
+        (, ,)
+        (NP (NNP H.) (NNP Gear))
+        (CC and)
+        (NP (NNP Company))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+			name:	DATE				0-3	A few years later 
+	1	few
+			sense:	few.a.01
+	2	years
+			sense:	year.n.01
+	3	later
+			sense:	subsequently.r.01
+	4	,
+	5	Gaar
+			coref:	IDENT			1	5-5	Gaar 
+			name:	PERSON				5-5	Gaar 
+	6	opened
+			sense:	open.v.02
+			prop:	open.01
+			V		6-6	opened 
+			N-ARGM-TMP		0-3	A few years later 
+			N-ARG-A0		5-5	Gaar 
+			N-ARG-A1		7-14	a second business , H. Gear and Company 
+	7	a
+			name:	DURATION				7-8	a second 
+	8	second
+			sense:	second.s.01
+	9	business
+			sense:	business.n.01
+	10	,
+	11	H.
+			coref:	IDENT			2	11-12	H. Gear 
+			name:	PERSON				11-12	H. Gear 
+	12	Gear
+	13	and
+	14	Company
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was first elected to the Newfoundland assembly in an 1894 by - election .
+
+
+Treebanked sentence:
+--------------------
+He was first elected to the Newfoundland assembly in an 1894 by - election . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (ADVP (JJ first))
+      (VP (VBN elected)
+        (PP (IN to)
+          (NP (DT the) (NNP Newfoundland) (NN assembly)))
+        (PP (IN in)
+          (NP
+            (NP (DT an) (CD 1894))
+            (PP (IN by) (HYPH -)
+              (NP (NN election)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	first
+			name:	ORDINAL				2-2	first 
+			sense:	first.a.01
+	3	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		3-3	elected 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		2-2	first 
+			N-ARG-A2		4-7	to the Newfoundland assembly 
+			N-ARGM-LOC		8-13	in an 1894 by - election 
+	4	to
+	5	the
+	6	Newfoundland
+			coref:	IDENT			0	6-6	Newfoundland 
+			name:	STATE_OR_PROVINCE				6-6	Newfoundland 
+	7	assembly
+			sense:	assembly.n.04
+	8	in
+	9	an
+	10	1894
+			name:	DATE				10-10	1894 
+	11	by
+	12	-
+	13	election
+			sense:	election.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Gear was defeated when he ran for reelection in 1897 but was reelected in 1900 , serving until his defeat in 1913 .
+
+
+Treebanked sentence:
+--------------------
+Gear was defeated when he ran for reelection in 1897 but was reelected in 1900 , serving until his defeat in 1913 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Gear))
+    (VP (VBD was)
+      (VP (VBN defeated)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP he))
+            (VP
+              (VP (VBD ran)
+                (PP (IN for)
+                  (NP (NN reelection)))
+                (PP (IN in)
+                  (NP (CD 1897))))
+              (CC but)
+              (VP (VBD was)
+                (VP (VBN reelected)
+                  (PP (IN in)
+                    (NP (CD 1900)))
+                  (, ,)
+                  (S
+                    (VP (VBG serving)
+                      (PP (IN until)
+                        (NP
+                          (NP (PRP$ his) (NN defeat))
+                          (PP (IN in)
+                            (NP (CD 1913))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Gear
+			coref:	IDENT			2	0-0	Gear 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	defeated
+			sense:	kill.v.02
+			prop:	defeat.01
+			V		2-2	defeated 
+			N-ARG-A1		0-0	Gear 
+			N-ARGM-TMP		3-9	when he ran for reelection in 1897 
+	3	when
+	4	he
+			coref:	IDENT			1	4-4	he 
+	5	ran
+			sense:	campaign.v.01
+			prop:	run.02
+			V		5-5	ran 
+			N-ARGM-TMP		3-3	when 
+			N-ARG-A0		4-4	he 
+			N-ARG-A1		6-7	for reelection 
+			N-ARGM-TMP		8-9	in 1897 
+	6	for
+	7	reelection
+			sense:	reelection.n.01
+	8	in
+	9	1897
+			name:	DATE				9-9	1897 
+	10	but
+	11	was
+			sense:	be.v.01
+			prop:	be.03
+			V		11-11	was 
+	12	reelected
+			sense:	reelect.v.01
+			prop:	reelect.01
+			V		12-12	reelected 
+			N-ARG-A1		0-0	Gear 
+			N-ARG-A1		4-4	he 
+			N-ARGM-TMP		13-14	in 1900 
+			N-ARGM-PRD		16-21	serving until his defeat in 1913 
+	13	in
+	14	1900
+			name:	DATE				14-14	1900 
+	15	,
+	16	serving
+			sense:	serve.v.02
+			prop:	serve.01
+			V		16-16	serving 
+			N-ARG-A0		0-0	Gear 
+			N-ARGM-TMP		17-21	until his defeat in 1913 
+	17	until
+	18	his
+			coref:	IDENT			1	18-18	his 
+	19	defeat
+			sense:	defeat.n.01
+	20	in
+	21	1913
+			name:	DATE				21-21	1913 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He served in the cabinet as a minister without portfolio from 1904 to 1909 .
+
+
+Treebanked sentence:
+--------------------
+He served in the cabinet as a minister without portfolio from 1904 to 1909 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD served)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN cabinet))
+          (PP (IN as)
+            (NP (DT a) (NN minister)))))
+      (PP (IN without)
+        (NP
+          (NP (NN portfolio))
+          (PP (IN from)
+            (NP (CD 1904)))))
+      (PP (IN to)
+        (NP (CD 1909))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-4	in the cabinet 
+			N-ARGM-TMP		10-13	from 1904 to 1909 
+	2	in
+	3	the
+	4	cabinet
+			sense:	cabinet.n.02
+	5	as
+	6	a
+	7	minister
+			name:	TITLE				7-7	minister 
+			sense:	minister.n.04
+	8	without
+	9	portfolio
+			sense:	portfolio.n.04
+	10	from
+	11	1904
+			name:	DATE				11-13	1904 to 1909 
+	12	to
+	13	1909
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His son Ernest also served in the Newfoundland assembly and was the last person elected to the assembly from the Dominion of Newfoundland .
+
+
+Treebanked sentence:
+--------------------
+His son Ernest also served in the Newfoundland assembly and was the last person elected to the assembly from the Dominion of Newfoundland . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His) (NN son) (NNP Ernest))
+    (ADVP (RB also))
+    (VP
+      (VP (VBD served)
+        (PP (IN in)
+          (NP (DT the) (NNP Newfoundland) (NN assembly))))
+      (CC and)
+      (VP (VBD was)
+        (NP
+          (NP (DT the) (JJ last) (NN person))
+          (VP (VBN elected)
+            (PP (IN to)
+              (NP (DT the) (NN assembly)))
+            (PP (IN from)
+              (NP
+                (NP (DT the) (NNP Dominion))
+                (PP (IN of)
+                  (NP (NNP Newfoundland)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			1	0-0	His 
+	1	son
+			sense:	son.n.01
+	2	Ernest
+			name:	PERSON				2-2	Ernest 
+	3	also
+			sense:	besides.r.02
+	4	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		4-4	served 
+			N-ARG-A0		0-2	His son Ernest 
+			N-ARGM-DIS		3-3	also 
+			N-ARG-A1		5-8	in the Newfoundland assembly 
+	5	in
+	6	the
+	7	Newfoundland
+			coref:	IDENT			0	7-7	Newfoundland 
+			name:	STATE_OR_PROVINCE				7-7	Newfoundland 
+	8	assembly
+			sense:	assembly.n.04
+	9	and
+	10	was
+			sense:	be.v.01
+			prop:	be.01
+			V		10-10	was 
+			N-ARG-A1		0-2	His son Ernest 
+			N-ARGM-ADV		3-3	also 
+			N-ARG-A2		11-22	the last person elected to the assembly from the Dominion of Newfoundland 
+	11	the
+	12	last
+			sense:	last.a.02
+	13	person
+			sense:	person.n.01
+	14	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		14-14	elected 
+			N-ARG-A1		11-13	the last person 
+			N-ARG-A2		15-17	to the assembly 
+	15	to
+	16	the
+	17	assembly
+			sense:	assembly.n.04
+	18	from
+	19	the
+	20	Dominion
+	21	of
+	22	Newfoundland
+			coref:	IDENT			0	22-22	Newfoundland 
+			name:	STATE_OR_PROVINCE				22-22	Newfoundland 
+	23	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.8-8	Newfoundland 
+				6.6-6	Newfoundland 
+				9.7-7	Newfoundland 
+				9.22-22	Newfoundland 
+	Chain 1 (IDENT)
+				5.5-5	Gaar 
+				6.0-0	He 
+				7.4-4	he 
+				7.18-18	his 
+				8.0-0	He 
+				9.0-0	His 
+	Chain 2 (IDENT)
+				0.0-1	Henry Gear 
+				1.0-0	He 
+				2.3-4	George Gear 
+				2.6-6	he 
+				3.3-3	he 
+				3.8-8	his 
+				5.11-12	H. Gear 
+				7.0-0	Gear 
+

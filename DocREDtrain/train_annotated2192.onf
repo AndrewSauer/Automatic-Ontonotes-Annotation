@@ -1,0 +1,572 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ernie Copland ( 15 April 1927 ) was a Scottish footballer who played for Arbroath , Dundee and Raith Rovers .
+
+
+Treebanked sentence:
+--------------------
+Ernie Copland ( 15 April 1927 ) was a Scottish footballer who played for Arbroath , Dundee and Raith Rovers . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Ernie) (NNP Copland))
+      (-LRB- -LRB-)
+      (NP
+        (NP (CD 15))
+        (NP-TMP (NNP April) (CD 1927)))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ Scottish) (NN footballer))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD played)
+              (PP (IN for)
+                (NP (NNP Arbroath) (, ,) (NNP Dundee)
+                  (CC and)
+                  (NNP Raith) (NNPS Rovers))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ernie
+			coref:	IDENT			3	0-1	Ernie Copland 
+			name:	PERSON				0-1	Ernie Copland 
+	1	Copland
+	2	(
+	3	15
+			name:	DATE				3-5	15 April 1927 
+	4	April
+	5	1927
+	6	)
+	7	was
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	was 
+			N-ARG-A1		0-6	Ernie Copland ( 15 April 1927 ) 
+			N-ARG-A2		8-19	a Scottish footballer who played for Arbroath , Dundee and Raith Rovers 
+	8	a
+	9	Scottish
+			name:	NATIONALITY				9-9	Scottish 
+	10	footballer
+			name:	TITLE				10-10	footballer 
+			sense:	football_player.n.01
+	11	who
+	12	played
+			sense:	play.v.01
+			prop:	play.01
+			V		12-12	played 
+			N-ARG-A0		8-10	a Scottish footballer 
+			R-ARG-A0		11-11	who 
+	13	for
+	14	Arbroath
+	15	,
+	16	Dundee
+			name:	ORGANIZATION				16-16	Dundee 
+	17	and
+	18	Raith
+			name:	ORGANIZATION				18-19	Raith Rovers 
+	19	Rovers
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was selected for Scotland 's 1954 FIFA World Cup squad , but did not travel to the finals and never actually played for the national side .
+
+
+Treebanked sentence:
+--------------------
+He was selected for Scotland 's 1954 FIFA World Cup squad , but did not travel to the finals and never actually played for the national side . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN selected)
+          (PP (IN for)
+            (NP
+              (NP (NNP Scotland) (POS 's))
+              (CD 1954)
+              (NML
+                (ADJP (NNP FIFA) (NNP World))
+                (NNP Cup))
+              (NN squad)))))
+      (, ,)
+      (CC but)
+      (VP (VBD did) (RB not)
+        (VP (VB travel)
+          (UCP
+            (PP (IN to)
+              (NP (DT the) (NNS finals)))
+            (CC and)
+            (ADVP (RB never))
+            (VP
+              (ADVP (RB actually))
+              (VBN played)
+              (PP (IN for)
+                (NP (DT the) (JJ national) (NN side))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			3	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	selected
+			sense:	choose.v.01
+			prop:	select.01
+			V		2-2	selected 
+			N-ARG-A1		0-0	He 
+			N-ARG-A3		3-10	for Scotland 's 1954 FIFA World Cup squad 
+	3	for
+	4	Scotland
+			name:	COUNTRY				4-4	Scotland 
+	5	's
+	6	1954
+			name:	DATE				6-6	1954 
+	7	FIFA
+			coref:	IDENT			0	7-9	FIFA World Cup 
+			name:	ORGANIZATION				7-9	FIFA World Cup 
+	8	World
+	9	Cup
+	10	squad
+			sense:	team.n.01
+	11	,
+	12	but
+	13	did
+			sense:	make.v.01
+			prop:	do.01
+			V		13-13	did 
+	14	not
+			sense:	not.r.01
+	15	travel
+			sense:	travel.v.01
+			prop:	travel.01
+			V		15-15	travel 
+			N-ARG-A0		0-0	He 
+			N-ARGM-NEG		14-14	not 
+			N-ARG-A1		16-18	to the finals 
+	16	to
+	17	the
+			coref:	IDENT			2	17-18	the finals 
+	18	finals
+			sense:	final.n.01
+	19	and
+	20	never
+			sense:	never.r.01
+	21	actually
+			sense:	actually.r.01
+	22	played
+			sense:	play.v.01
+			prop:	play.01
+			V		22-22	played 
+			N-ARG-A0		0-0	He 
+			N-ARGM-NEG		20-20	never 
+			N-ARGM-ADV		21-21	actually 
+			N-ARGM-ADV		23-26	for the national side 
+	23	for
+	24	the
+	25	national
+			sense:	national.a.01
+	26	side
+			sense:	side.n.02
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Although selected for the 22 man squad for the 1954 FIFA World Cup , the Scottish Football Association only budgeted to take 13 players ( including only one goalkeeper ) to the finals in Switzerland .
+
+
+Treebanked sentence:
+--------------------
+Although selected for the 22 man squad for the 1954 FIFA World Cup , the Scottish Football Association only budgeted to take 13 players ( including only one goalkeeper ) to the finals in Switzerland . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN Although)
+      (S
+        (VP (VBN selected)
+          (PP (IN for)
+            (NP
+              (NP (DT the) (CD 22) (NN man) (NN squad))
+              (PP (IN for)
+                (NP (DT the) (CD 1954)
+                  (NML
+                    (ADJP (NNP FIFA) (NNP World))
+                    (NNP Cup)))))))))
+    (, ,)
+    (NP (DT the) (NNP Scottish) (NNP Football) (NNP Association))
+    (ADVP (RB only))
+    (VP (VBN budgeted)
+      (S
+        (VP (TO to)
+          (VP (VB take)
+            (NP
+              (NP (CD 13) (NNS players))
+              (PP (-LRB- -LRB-) (VBG including)
+                (NP
+                  (NP (RB only) (CD one))
+                  (NP (NN goalkeeper)))
+                (-RRB- -RRB-))))))
+      (PP (IN to)
+        (NP
+          (NP (DT the) (NNS finals))
+          (PP (IN in)
+            (NP (NNP Switzerland))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Although
+	1	selected
+			sense:	choose.v.01
+			prop:	select.01
+			V		1-1	selected 
+			N-ARG-A3		2-12	for the 22 man squad for the 1954 FIFA World Cup 
+			N-ARG-A1		14-17	the Scottish Football Association 
+	2	for
+	3	the
+	4	22
+			name:	NUMBER				4-4	22 
+	5	man
+			sense:	man.n.01
+	6	squad
+			sense:	team.n.01
+	7	for
+	8	the
+			coref:	IDENT			0	8-12	the 1954 FIFA World Cup 
+	9	1954
+			name:	DATE				9-9	1954 
+	10	FIFA
+			name:	ORGANIZATION				10-12	FIFA World Cup 
+	11	World
+	12	Cup
+	13	,
+	14	the
+	15	Scottish
+			name:	ORGANIZATION				15-17	Scottish Football Association 
+	16	Football
+	17	Association
+	18	only
+			sense:	merely.r.01
+	19	budgeted
+			sense:	budget.v.01
+			prop:	budget.01
+			V		19-19	budgeted 
+			N-ARGM-ADV		0-12	Although selected for the 22 man squad for the 1954 FIFA World Cup 
+			N-ARG-A0		14-17	the Scottish Football Association 
+			N-ARGM-ADV		18-18	only 
+			N-ARG-A2		20-34	to take 13 players ( including only one goalkeeper ) to the finals in Switzerland 
+	20	to
+	21	take
+			sense:	lead.v.01
+			prop:	take.01
+			V		21-21	take 
+			N-ARG-A0		14-17	the Scottish Football Association 
+			N-ARG-A1		22-29	13 players ( including only one goalkeeper ) 
+			N-ARGM-GOL		30-34	to the finals in Switzerland 
+	22	13
+			name:	NUMBER				22-22	13 
+	23	players
+			sense:	player.n.01
+	24	(
+	25	including
+			sense:	include.v.01
+			prop:	include.01
+			V		25-25	including 
+			N-ARG-A2		22-23	13 players 
+			N-ARG-A1		26-28	only one goalkeeper 
+	26	only
+			sense:	merely.r.01
+	27	one
+			name:	NUMBER				27-27	one 
+	28	goalkeeper
+			name:	TITLE				28-28	goalkeeper 
+			sense:	goalkeeper.n.01
+	29	)
+	30	to
+	31	the
+			coref:	IDENT			2	31-34	the finals in Switzerland 
+	32	finals
+			sense:	final.n.01
+	33	in
+	34	Switzerland
+			coref:	IDENT			1	34-34	Switzerland 
+			name:	COUNTRY				34-34	Switzerland 
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Copland was one of the players who stayed at home on reserve , with the likes of Bobby Combe and Jimmy Binning .
+
+
+Treebanked sentence:
+--------------------
+Copland was one of the players who stayed at home on reserve , with the likes of Bobby Combe and Jimmy Binning . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Copland))
+    (VP (VBD was)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNS players))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD stayed)
+                  (PP (IN at)
+                    (NP (NN home)))
+                  (PP (IN on)
+                    (NP (NN reserve)))
+                  (, ,)
+                  (PP (IN with)
+                    (NP
+                      (NP (DT the) (NNS likes))
+                      (PP (IN of)
+                        (NP
+                          (NP (NNP Bobby) (NNP Combe))
+                          (CC and)
+                          (NP (NNP Jimmy) (NNP Binning)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Copland
+			coref:	IDENT			3	0-0	Copland 
+			name:	PERSON				0-0	Copland 
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	Copland 
+			N-ARG-A2		2-21	one of the players who stayed at home on reserve , with the likes of Bobby Combe and Jimmy Binning 
+	2	one
+			name:	NUMBER				2-2	one 
+	3	of
+	4	the
+	5	players
+			sense:	player.n.01
+	6	who
+	7	stayed
+			sense:	stay.v.02
+			prop:	stay.01
+			V		7-7	stayed 
+			N-ARG-A1		4-5	the players 
+			R-ARG-A1		6-6	who 
+			N-ARGM-LOC		8-9	at home 
+			N-ARG-A3		10-11	on reserve 
+			N-ARGM-ADV		13-21	with the likes of Bobby Combe and Jimmy Binning 
+	8	at
+	9	home
+			sense:	home.n.01
+	10	on
+	11	reserve
+			sense:	substitute.n.02
+	12	,
+	13	with
+	14	the
+	15	likes
+	16	of
+	17	Bobby
+			name:	PERSON				17-18	Bobby Combe 
+	18	Combe
+	19	and
+	20	Jimmy
+			name:	PERSON				20-21	Jimmy Binning 
+	21	Binning
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ernie was chosen as reserve in the Scottish team for the World Cup qualifiers in 1957 , and travelled to Basle ( Switzerland ) , Stuttgart ( Germany ) , and Madrid ( Spain ) , but did not play .
+
+
+Treebanked sentence:
+--------------------
+Ernie was chosen as reserve in the Scottish team for the World Cup qualifiers in 1957 , and travelled to Basle ( Switzerland ) , Stuttgart ( Germany ) , and Madrid ( Spain ) , but did not play . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Ernie))
+    (VP
+      (VP (VBD was)
+        (VP (VBN chosen)
+          (PP (IN as)
+            (NP
+              (NP (NN reserve))
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (JJ Scottish) (NN team))
+                  (PP (IN for)
+                    (NP (DT the)
+                      (NML (NNP World) (NNP Cup))
+                      (NNS qualifiers)))))))
+          (PP (IN in)
+            (NP (CD 1957)))))
+      (, ,)
+      (CC and)
+      (VP (VBD travelled)
+        (PP (IN to)
+          (NP
+            (NP
+              (NP (NNP Basle))
+              (-LRB- -LRB-)
+              (NP (NNP Switzerland))
+              (-RRB- -RRB-))
+            (, ,)
+            (ADJP
+              (ADJP (NNP Stuttgart)
+                (PRN (-LRB- -LRB-)
+                  (NP (NNP Germany))
+                  (-RRB- -RRB-)))
+              (, ,)
+              (CC and)
+              (ADJP (NNP Madrid)
+                (PRN (-LRB- -LRB-)
+                  (NP (NNP Spain))
+                  (-RRB- -RRB-)))))))
+      (, ,)
+      (CC but)
+      (VP (VBD did) (RB not)
+        (VP (VB play))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ernie
+			coref:	IDENT			3	0-0	Ernie 
+			name:	PERSON				0-0	Ernie 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	chosen
+			sense:	choose.v.01
+			prop:	choose.01
+			V		2-2	chosen 
+			N-ARG-A1		0-0	Ernie 
+			N-ARG-A4		3-15	as reserve in the Scottish team for the World Cup qualifiers in 1957 
+	3	as
+	4	reserve
+			sense:	substitute.n.02
+	5	in
+	6	the
+	7	Scottish
+			name:	NATIONALITY				7-7	Scottish 
+	8	team
+			sense:	team.n.01
+	9	for
+	10	the
+	11	World
+			name:	MISC				11-12	World Cup 
+	12	Cup
+	13	qualifiers
+			sense:	qualifier.n.01
+	14	in
+	15	1957
+			name:	DATE				15-15	1957 
+	16	,
+	17	and
+	18	travelled
+			sense:	travel.v.01
+			prop:	travel.01
+			V		18-18	travelled 
+			N-ARG-A0		0-0	Ernie 
+			N-ARG-A1		19-34	to Basle ( Switzerland ) , Stuttgart ( Germany ) , and Madrid ( Spain ) 
+	19	to
+	20	Basle
+			name:	LOCATION				20-20	Basle 
+	21	(
+	22	Switzerland
+			coref:	IDENT			1	22-22	Switzerland 
+			name:	COUNTRY				22-22	Switzerland 
+	23	)
+	24	,
+	25	Stuttgart
+			name:	CITY				25-25	Stuttgart 
+	26	(
+	27	Germany
+			name:	COUNTRY				27-27	Germany 
+	28	)
+	29	,
+	30	and
+	31	Madrid
+			name:	CITY				31-31	Madrid 
+	32	(
+	33	Spain
+			name:	COUNTRY				33-33	Spain 
+	34	)
+	35	,
+	36	but
+	37	did
+			sense:	make.v.01
+			prop:	do.01
+			V		37-37	did 
+	38	not
+			sense:	not.r.01
+	39	play
+			sense:	play.v.01
+			prop:	play.01
+			V		39-39	play 
+			N-ARG-A0		0-0	Ernie 
+			N-ARGM-NEG		38-38	not 
+	40	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.8-12	the 1954 FIFA World Cup 
+				1.7-9	FIFA World Cup 
+	Chain 1 (IDENT)
+				2.34-34	Switzerland 
+				4.22-22	Switzerland 
+	Chain 2 (IDENT)
+				2.31-34	the finals in Switzerland 
+				1.17-18	the finals 
+	Chain 3 (IDENT)
+				0.0-1	Ernie Copland 
+				1.0-0	He 
+				3.0-0	Copland 
+				4.0-0	Ernie 
+

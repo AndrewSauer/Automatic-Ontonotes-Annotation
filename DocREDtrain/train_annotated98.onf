@@ -1,0 +1,742 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+William H. Nobles ( 1816 – December 28 , 1876 ) was an American military officer , businessman , and politician .
+
+
+Treebanked sentence:
+--------------------
+William H. Nobles ( 1816 – December 28 , 1876 ) was an American military officer , businessman , and politician . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP William) (NNP H.) (NNP Nobles))
+      (-LRB- -LRB-)
+      (NP
+        (NP
+          (QP (CD 1816) (SYM –)))
+        (NP-TMP (NNP December) (CD 28) (, ,) (CD 1876)))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (JJ American) (JJ military) (NN officer))
+        (, ,)
+        (NP (NN businessman))
+        (, ,)
+        (CC and)
+        (NP (NN politician))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	William
+			name:	PERSON				0-2	William H. Nobles 
+	1	H.
+	2	Nobles
+	3	(
+	4	1816
+			name:	DATE				4-4	1816 
+	5	–
+	6	December
+			name:	DATE				6-9	December 28 , 1876 
+	7	28
+	8	,
+	9	1876
+	10	)
+	11	was
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	was 
+			N-ARG-A1		0-10	William H. Nobles ( 1816 – December 28 , 1876 ) 
+			N-ARG-A2		12-20	an American military officer , businessman , and politician 
+	12	an
+	13	American
+			name:	NATIONALITY				13-13	American 
+	14	military
+			sense:	military.a.02
+	15	officer
+			sense:	military_officer.n.01
+	16	,
+	17	businessman
+			name:	TITLE				17-17	businessman 
+			sense:	businessman.n.01
+	18	,
+	19	and
+	20	politician
+			name:	TITLE				20-20	politician 
+			sense:	politician.n.02
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Nobles was born in Genesee County , New York .
+
+
+Treebanked sentence:
+--------------------
+Nobles was born in Genesee County , New York . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNS Nobles))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP
+            (NP (NNP Genesee) (NNP County))
+            (, ,)
+            (NP (NNP New) (NNP York))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Nobles
+			name:	PERSON				0-0	Nobles 
+			sense:	lord.n.03
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Nobles 
+			N-ARGM-LOC		3-8	in Genesee County , New York 
+	3	in
+	4	Genesee
+			name:	LOCATION				4-5	Genesee County 
+	5	County
+	6	,
+	7	New
+			name:	STATE_OR_PROVINCE				7-8	New York 
+	8	York
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He moved to Wisconsin Territory in 1841 and settled in St. Croix Falls , Wisconsin Territory .
+
+
+Treebanked sentence:
+--------------------
+He moved to Wisconsin Territory in 1841 and settled in St. Croix Falls , Wisconsin Territory . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD moved)
+        (PP (IN to)
+          (NP
+            (NP (NNP Wisconsin) (NNP Territory))
+            (PP (IN in)
+              (NP (CD 1841))))))
+      (CC and)
+      (VP (VBN settled)
+        (PP (IN in)
+          (NP
+            (NP (NNP St.) (NNP Croix) (NNP Falls))
+            (, ,)
+            (NP (NNP Wisconsin) (NNP Territory))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		1-1	moved 
+			N-ARG-A0		0-0	He 
+			N-ARG-A2		2-4	to Wisconsin Territory 
+			N-ARGM-TMP		5-6	in 1841 
+	2	to
+	3	Wisconsin
+			coref:	IDENT			1	3-3	Wisconsin 
+			coref:	IDENT			3	3-6	Wisconsin Territory in 1841 
+			name:	STATE_OR_PROVINCE				3-3	Wisconsin 
+	4	Territory
+	5	in
+	6	1841
+			name:	DATE				6-6	1841 
+	7	and
+	8	settled
+			sense:	settle.v.04
+			prop:	settle.03
+			V		8-8	settled 
+			N-ARG-A1		0-0	He 
+			N-ARG-A4		9-15	in St. Croix Falls , Wisconsin Territory 
+	9	in
+	10	St.
+			name:	LOCATION				10-10	St. 
+	11	Croix
+			name:	CITY				11-11	Croix 
+	12	Falls
+			name:	CAUSE_OF_DEATH				12-12	Falls 
+	13	,
+	14	Wisconsin
+			coref:	IDENT			3	14-15	Wisconsin Territory 
+			name:	STATE_OR_PROVINCE				14-14	Wisconsin 
+	15	Territory
+			name:	LOCATION				15-15	Territory 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He then moved to Hudson , Wisconsin Territory and Stillwater , Wisconsin Territory .
+
+
+Treebanked sentence:
+--------------------
+He then moved to Hudson , Wisconsin Territory and Stillwater , Wisconsin Territory . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB then))
+    (VP (VBD moved)
+      (PP (IN to)
+        (NP
+          (NP (NNP Hudson))
+          (, ,)
+          (NP (NNP Wisconsin) (NNP Territory))
+          (CC and)
+          (NP (NNP Stillwater) (, ,) (NNP Wisconsin) (NNP Territory)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	then
+			sense:	then.r.01
+	2	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		2-2	moved 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		1-1	then 
+			N-ARG-A2		3-12	to Hudson , Wisconsin Territory and Stillwater , Wisconsin Territory 
+	3	to
+	4	Hudson
+			name:	CITY				4-4	Hudson 
+	5	,
+	6	Wisconsin
+			coref:	IDENT			3	6-7	Wisconsin Territory 
+			name:	STATE_OR_PROVINCE				6-6	Wisconsin 
+	7	Territory
+			name:	LOCATION				7-7	Territory 
+	8	and
+	9	Stillwater
+			name:	CITY				9-9	Stillwater 
+	10	,
+	11	Wisconsin
+			coref:	IDENT			1	11-11	Wisconsin 
+			name:	STATE_OR_PROVINCE				11-11	Wisconsin 
+	12	Territory
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1848 , Nobles settled in Saint Paul , Wisconsin Territory .
+
+
+Treebanked sentence:
+--------------------
+In 1848 , Nobles settled in Saint Paul , Wisconsin Territory . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1848)))
+    (, ,)
+    (NP (NNP Nobles))
+    (VP (VBD settled)
+      (PP (IN in)
+        (NP
+          (NP (NNP Saint) (NNP Paul))
+          (, ,)
+          (NP (NNP Wisconsin) (NNP Territory)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1848
+			name:	DATE				1-1	1848 
+	2	,
+	3	Nobles
+			name:	PERSON				3-3	Nobles 
+	4	settled
+			sense:	settle.v.04
+			prop:	settle.03
+			V		4-4	settled 
+			N-ARGM-TMP		0-1	In 1848 
+			N-ARG-A1		3-3	Nobles 
+			N-ARG-A4		5-10	in Saint Paul , Wisconsin Territory 
+	5	in
+	6	Saint
+			name:	CITY				6-7	Saint Paul 
+	7	Paul
+	8	,
+	9	Wisconsin
+			coref:	IDENT			1	9-9	Wisconsin 
+			coref:	IDENT			3	9-10	Wisconsin Territory 
+			name:	STATE_OR_PROVINCE				9-9	Wisconsin 
+	10	Territory
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was involved with the blacksmith , wagon building businesses and was a machinist .
+
+
+Treebanked sentence:
+--------------------
+He was involved with the blacksmith , wagon building businesses and was a machinist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN involved)
+          (PP (IN with)
+            (NP
+              (NP (DT the) (NN blacksmith))
+              (, ,)
+              (NP (NN wagon) (NN building) (NNS businesses))))))
+      (CC and)
+      (VP (VBD was)
+        (NP (DT a) (NN machinist))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-9	involved with the blacksmith , wagon building businesses 
+	2	involved
+			sense:	involve.v.02
+			prop:	involve.01
+			V		2-2	involved 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		3-9	with the blacksmith , wagon building businesses 
+	3	with
+	4	the
+	5	blacksmith
+			name:	TITLE				5-5	blacksmith 
+			sense:	blacksmith.n.01
+	6	,
+	7	wagon
+			sense:	wagon.n.01
+	8	building
+			sense:	building.n.01
+	9	businesses
+			sense:	business.n.01
+	10	and
+	11	was
+			sense:	be.v.08
+			prop:	be.01
+			V		11-11	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		12-13	a machinist 
+	12	a
+	13	machinist
+			name:	TITLE				13-13	machinist 
+			sense:	machinist.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He helped constructed a wagon road for the United States government .
+
+
+Treebanked sentence:
+--------------------
+He helped constructed a wagon road for the United States government . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD helped)
+      (SBAR
+        (S
+          (VP (VBD constructed)
+            (NP (DT a) (NN wagon) (NN road))
+            (PP (IN for)
+              (NP (DT the)
+                (NML (NNP United) (NNP States))
+                (NN government)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	helped
+			sense:	help.v.01
+			prop:	heed.01
+			V		1-1	helped 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-10	constructed a wagon road for the United States government 
+	2	constructed
+			sense:	construct.v.01
+			prop:	construct.01
+			V		2-2	constructed 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		3-5	a wagon road 
+			N-ARGM-GOL		6-10	for the United States government 
+	3	a
+	4	wagon
+			sense:	wagon.n.01
+	5	road
+			sense:	road.n.01
+	6	for
+	7	the
+	8	United
+			name:	COUNTRY				8-9	United States 
+	9	States
+	10	government
+			sense:	government.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1854 and 1856 , Nobles served in the Minnesota Territorial House of Representatives .
+
+
+Treebanked sentence:
+--------------------
+In 1854 and 1856 , Nobles served in the Minnesota Territorial House of Representatives . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1854)
+        (CC and)
+        (CD 1856)))
+    (, ,)
+    (NP (NNP Nobles))
+    (VP (VBD served)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NNP Minnesota) (NNP Territorial) (NNP House))
+          (PP (IN of)
+            (NP (NNPS Representatives))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1854
+			name:	DATE				1-1	1854 
+	2	and
+	3	1856
+			coref:	IDENT			2	3-3	1856 
+			name:	DATE				3-3	1856 
+	4	,
+	5	Nobles
+			name:	PERSON				5-5	Nobles 
+	6	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		6-6	served 
+			N-ARGM-TMP		0-3	In 1854 and 1856 
+			N-ARG-A0		5-5	Nobles 
+			N-ARG-A1		7-13	in the Minnesota Territorial House of Representatives 
+	7	in
+	8	the
+	9	Minnesota
+			name:	ORGANIZATION				9-13	Minnesota Territorial House of Representatives 
+	10	Territorial
+	11	House
+	12	of
+	13	Representatives
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also served on the Saint Paul City Council in 1855 and 1856 .
+
+
+Treebanked sentence:
+--------------------
+He also served on the Saint Paul City Council in 1855 and 1856 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD served)
+      (PP (IN on)
+        (NP (DT the) (NNP Saint) (NNP Paul) (NNP City) (NNP Council)))
+      (PP (IN in)
+        (NP (CD 1855)
+          (CC and)
+          (CD 1856))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	also
+			sense:	besides.r.02
+	2	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		2-2	served 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-8	on the Saint Paul City Council 
+			N-ARGM-TMP		9-12	in 1855 and 1856 
+	3	on
+	4	the
+	5	Saint
+			name:	ORGANIZATION				5-8	Saint Paul City Council 
+	6	Paul
+	7	City
+	8	Council
+	9	in
+	10	1855
+			name:	DATE				10-10	1855 
+	11	and
+	12	1856
+			coref:	IDENT			2	12-12	1856 
+			name:	DATE				12-12	1856 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Nobles served in the 79th New York Volunteer Infantry during the American Civil War .
+
+
+Treebanked sentence:
+--------------------
+Nobles served in the 79th New York Volunteer Infantry during the American Civil War . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNS Nobles))
+    (VP (VBD served)
+      (PP (IN in)
+        (NP (DT the) (JJ 79th)
+          (NML (NNP New) (NNP York))
+          (NNP Volunteer) (NNP Infantry)))
+      (PP (IN during)
+        (NP (DT the)
+          (NML (NNP American) (NNP Civil))
+          (NNP War))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Nobles
+			name:	PERSON				0-0	Nobles 
+			sense:	lord.n.03
+	1	served
+			sense:	serve.v.13
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	Nobles 
+			N-ARG-A1		2-8	in the 79th New York Volunteer Infantry 
+			N-ARGM-TMP		9-13	during the American Civil War 
+	2	in
+	3	the
+	4	79th
+			name:	ORDINAL				4-4	79th 
+	5	New
+			name:	ORGANIZATION				5-8	New York Volunteer Infantry 
+	6	York
+	7	Volunteer
+	8	Infantry
+	9	during
+	10	the
+	11	American
+			name:	NATIONALITY				11-11	American 
+	12	Civil
+			name:	MISC				12-12	Civil 
+	13	War
+			name:	CAUSE_OF_DEATH				13-13	War 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Nobles died in Saint Paul , Minnesota .
+
+
+Treebanked sentence:
+--------------------
+Nobles died in Saint Paul , Minnesota . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNS Nobles))
+    (VP (VBD died)
+      (PP (IN in)
+        (NP
+          (NP (NNP Saint) (NNP Paul))
+          (, ,)
+          (NP (NNP Minnesota)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Nobles
+			name:	PERSON				0-0	Nobles 
+			sense:	lord.n.03
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	Nobles 
+			N-ARGM-LOC		2-6	in Saint Paul , Minnesota 
+	2	in
+	3	Saint
+			name:	CITY				3-4	Saint Paul 
+	4	Paul
+	5	,
+	6	Minnesota
+			coref:	IDENT			0	6-6	Minnesota 
+			name:	STATE_OR_PROVINCE				6-6	Minnesota 
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Nobles County , Minnesota was named in his honor .
+
+
+Treebanked sentence:
+--------------------
+Nobles County , Minnesota was named in his honor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Nobles) (NNP County))
+    (, ,)
+    (NP (NNP Minnesota))
+    (VP (VBD was)
+      (VP (VBN named)
+        (PP (IN in)
+          (NP (PRP$ his) (NN honor)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Nobles
+			name:	LOCATION				0-1	Nobles County 
+	1	County
+	2	,
+	3	Minnesota
+			coref:	IDENT			0	3-3	Minnesota 
+			name:	STATE_OR_PROVINCE				3-3	Minnesota 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	named
+			sense:	name.v.01
+			prop:	name.01
+			V		5-5	named 
+			N-ARG-A1		0-3	Nobles County , Minnesota 
+	6	in
+	7	his
+	8	honor
+			sense:	honor.n.02
+	9	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				10.6-6	Minnesota 
+				11.3-3	Minnesota 
+	Chain 1 (IDENT)
+				2.3-3	Wisconsin 
+				3.11-11	Wisconsin 
+				4.9-9	Wisconsin 
+	Chain 2 (IDENT)
+				7.3-3	1856 
+				8.12-12	1856 
+	Chain 3 (IDENT)
+				2.3-6	Wisconsin Territory in 1841 
+				2.14-15	Wisconsin Territory 
+				3.6-7	Wisconsin Territory 
+				4.9-10	Wisconsin Territory 
+

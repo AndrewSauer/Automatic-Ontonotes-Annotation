@@ -1,0 +1,706 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Daniel Ellison ( February 14 , 1886 – August 20 , 1960 ) was a U.S. Representative from Maryland .
+
+
+Treebanked sentence:
+--------------------
+Daniel Ellison ( February 14 , 1886 – August 20 , 1960 ) was a U.S. Representative from Maryland . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Daniel) (NNP Ellison))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP February) (CD 14) (, ,) (CD 1886))
+        (PP (SYM –)
+          (NP (NNP August) (CD 20) (, ,) (CD 1960))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NNP U.S.) (NNP Representative))
+        (PP (IN from)
+          (NP (NNP Maryland)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Daniel
+			coref:	IDENT			2	0-1	Daniel Ellison 
+			name:	PERSON				0-1	Daniel Ellison 
+	1	Ellison
+	2	(
+	3	February
+			name:	DATE				3-6	February 14 , 1886 
+	4	14
+	5	,
+	6	1886
+	7	–
+	8	August
+			name:	DATE				8-11	August 20 , 1960 
+	9	20
+	10	,
+	11	1960
+	12	)
+	13	was
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	was 
+			N-ARG-A1		0-12	Daniel Ellison ( February 14 , 1886 – August 20 , 1960 ) 
+			N-ARG-A2		14-18	a U.S. Representative from Maryland 
+	14	a
+	15	U.S.
+			name:	COUNTRY				15-15	U.S. 
+	16	Representative
+			name:	TITLE				16-16	Representative 
+	17	from
+	18	Maryland
+			coref:	IDENT			0	18-18	Maryland 
+			name:	STATE_OR_PROVINCE				18-18	Maryland 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in Russian Empire , Ellison was brought to the United States by his parents as an infant .
+
+
+Treebanked sentence:
+--------------------
+Born in Russian Empire , Ellison was brought to the United States by his parents as an infant . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP (NNP Russian) (NNP Empire)))))
+    (, ,)
+    (NP (NNP Ellison))
+    (VP (VBD was)
+      (VP (VBN brought)
+        (PP (IN to)
+          (NP (DT the) (NNP United) (NNP States)))
+        (PP (IN by)
+          (NP (PRP$ his) (NNS parents)))
+        (PP (IN as)
+          (NP (DT an) (NN infant)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-3	in Russian Empire 
+			N-ARG-A1		5-5	Ellison 
+	1	in
+	2	Russian
+			name:	NATIONALITY				2-2	Russian 
+	3	Empire
+			name:	MISC				3-3	Empire 
+	4	,
+	5	Ellison
+			coref:	IDENT			2	5-5	Ellison 
+			name:	PERSON				5-5	Ellison 
+	6	was
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	was 
+	7	brought
+			sense:	bring.v.01
+			prop:	bring.01
+			V		7-7	brought 
+			N-ARGM-PRD		0-3	Born in Russian Empire 
+			N-ARG-A1		5-5	Ellison 
+			N-ARG-A2		8-11	to the United States 
+			N-ARG-A0		12-14	by his parents 
+			N-ARGM-TMP		15-17	as an infant 
+	8	to
+	9	the
+	10	United
+			name:	COUNTRY				10-11	United States 
+	11	States
+	12	by
+	13	his
+			coref:	IDENT			2	13-13	his 
+	14	parents
+			sense:	parent.n.01
+	15	as
+	16	an
+	17	infant
+			sense:	baby.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He attended the public schools of Baltimore , Maryland , and graduated from Johns Hopkins University in 1907 and from the University of Maryland School of Law of Baltimore in 1909 .
+
+
+Treebanked sentence:
+--------------------
+He attended the public schools of Baltimore , Maryland , and graduated from Johns Hopkins University in 1907 and from the University of Maryland School of Law of Baltimore in 1909 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD attended)
+        (NP
+          (NP (DT the) (JJ public) (NNS schools))
+          (PP (IN of)
+            (NP (NNP Baltimore) (, ,) (NNP Maryland)))))
+      (, ,)
+      (CC and)
+      (VP (VBD graduated)
+        (PP
+          (PP (IN from)
+            (NP
+              (NP
+                (NML (NNP Johns) (NNP Hopkins))
+                (NNP University))
+              (PP (IN in)
+                (NP (CD 1907)))))
+          (CC and)
+          (PP (IN from)
+            (NP
+              (NP (DT the) (NNP University))
+              (PP (IN of)
+                (NP
+                  (NP (NNP Maryland) (NNP School))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNP Law))
+                      (PP (IN of)
+                        (NP (NNP Baltimore))))))))))
+        (PP (IN in)
+          (NP (CD 1909)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	attended
+			sense:	attend.v.01
+			prop:	attend.01
+			V		1-1	attended 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-8	the public schools of Baltimore , Maryland 
+	2	the
+	3	public
+			sense:	public.a.01
+	4	schools
+			sense:	school.n.01
+	5	of
+	6	Baltimore
+			coref:	IDENT			0	6-8	Baltimore , Maryland 
+			coref:	IDENT			1	6-6	Baltimore 
+			name:	CITY				6-6	Baltimore 
+	7	,
+	8	Maryland
+			name:	STATE_OR_PROVINCE				8-8	Maryland 
+	9	,
+	10	and
+	11	graduated
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		11-11	graduated 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		16-17	in 1907 
+			N-ARG-A1		19-28	from the University of Maryland School of Law of Baltimore 
+			N-ARGM-TMP		29-30	in 1909 
+	12	from
+	13	Johns
+			name:	ORGANIZATION				13-15	Johns Hopkins University 
+	14	Hopkins
+	15	University
+	16	in
+	17	1907
+			name:	DATE				17-17	1907 
+	18	and
+	19	from
+	20	the
+	21	University
+			name:	ORGANIZATION				21-26	University of Maryland School of Law 
+	22	of
+	23	Maryland
+	24	School
+	25	of
+	26	Law
+	27	of
+	28	Baltimore
+			coref:	IDENT			1	28-28	Baltimore 
+			name:	CITY				28-28	Baltimore 
+	29	in
+	30	1909
+			name:	DATE				30-30	1909 
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was admitted to the bar the same year and commenced practice in Baltimore .
+
+
+Treebanked sentence:
+--------------------
+He was admitted to the bar the same year and commenced practice in Baltimore . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN admitted)
+          (PP (IN to)
+            (NP (DT the) (NN bar)))
+          (NP-TMP (DT the) (JJ same) (NN year))))
+      (CC and)
+      (VP (VBD commenced)
+        (NP (NN practice))
+        (PP (IN in)
+          (NP (NNP Baltimore)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	admitted
+			sense:	accept.v.05
+			prop:	admit.02
+			V		2-2	admitted 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		3-5	to the bar 
+			N-ARGM-TMP		6-8	the same year 
+	3	to
+	4	the
+	5	bar
+			sense:	legal_profession.n.01
+	6	the
+			name:	DATE				6-8	the same year 
+	7	same
+			sense:	same.a.01
+	8	year
+			sense:	year.n.01
+	9	and
+	10	commenced
+			sense:	start.v.06
+			prop:	commence.01
+			V		10-10	commenced 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		11-11	practice 
+			N-ARGM-LOC		12-13	in Baltimore 
+	11	practice
+			sense:	practice.n.04
+	12	in
+	13	Baltimore
+			coref:	IDENT			1	13-13	Baltimore 
+			name:	CITY				13-13	Baltimore 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was also a longtime member of the Baltimore city council , serving from 1923 to 1942 .
+
+
+Treebanked sentence:
+--------------------
+He was also a longtime member of the Baltimore city council , serving from 1923 to 1942 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (ADVP (RB also))
+      (NP
+        (NP (DT a) (JJ longtime) (NN member))
+        (PP (IN of)
+          (NP (DT the) (NNP Baltimore) (NN city) (NN council))))
+      (, ,)
+      (VP (VBG serving)
+        (PP (IN from)
+          (NP (CD 1923)))
+        (PP (IN to)
+          (NP (CD 1942)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARGM-ADV		2-2	also 
+			N-ARG-A2		3-10	a longtime member of the Baltimore city council 
+			N-ARGM-PRD		12-16	serving from 1923 to 1942 
+	2	also
+			sense:	besides.r.02
+	3	a
+	4	longtime
+			sense:	longtime.s.01
+	5	member
+			sense:	member.n.01
+	6	of
+	7	the
+	8	Baltimore
+			coref:	IDENT			1	8-8	Baltimore 
+			name:	CITY				8-8	Baltimore 
+	9	city
+			sense:	city.n.02
+	10	council
+			sense:	council.n.01
+	11	,
+	12	serving
+			sense:	serve.v.02
+			prop:	serve.01
+			V		12-12	serving 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		13-16	from 1923 to 1942 
+	13	from
+	14	1923
+			name:	DATE				14-16	1923 to 1942 
+	15	to
+	16	1942
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ellison was elected as a Republican to the Seventy - eighth Congress ( January 3 , 1943 – January 3 , 1945 ) , but was an unsuccessful candidate for reelection in 1944 to the Seventy - ninth Congress .
+
+
+Treebanked sentence:
+--------------------
+Ellison was elected as a Republican to the Seventy - eighth Congress ( January 3 , 1943 – January 3 , 1945 ) , but was an unsuccessful candidate for reelection in 1944 to the Seventy - ninth Congress . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Ellison))
+    (VP
+      (VP (VBD was)
+        (VP (VBN elected)
+          (PP (IN as)
+            (NP (DT a) (JJ Republican)))
+          (PP (IN to)
+            (NP (DT the)
+              (NML (CD Seventy) (HYPH -) (CD eighth))
+              (NNP Congress)))
+          (PRN (-LRB- -LRB-)
+            (NP
+              (NP (NNP January) (CD 3) (, ,) (CD 1943))
+              (PP (SYM –)
+                (NP (NNP January) (CD 3) (, ,) (CD 1945))))
+            (-RRB- -RRB-))))
+      (, ,)
+      (CC but)
+      (VP (VBD was)
+        (NP
+          (NP (DT an) (JJ unsuccessful) (NN candidate))
+          (PP (IN for)
+            (NP
+              (NP (NN reelection))
+              (PP (IN in)
+                (NP (CD 1944))))))
+        (PP (IN to)
+          (NP (DT the)
+            (ADJP
+              (NP (CD Seventy))
+              (HYPH -) (JJ ninth))
+            (NNP Congress)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ellison
+			coref:	IDENT			2	0-0	Ellison 
+			name:	PERSON				0-0	Ellison 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A1		0-0	Ellison 
+			N-ARGM-PRD		3-3	as 
+			N-ARG-A2		6-22	to the Seventy - eighth Congress ( January 3 , 1943 – January 3 , 1945 ) 
+	3	as
+	4	a
+	5	Republican
+			name:	IDEOLOGY				5-5	Republican 
+	6	to
+	7	the
+	8	Seventy
+			name:	NUMBER				8-8	Seventy 
+	9	-
+	10	eighth
+			name:	ORDINAL				10-10	eighth 
+	11	Congress
+			name:	ORGANIZATION				11-11	Congress 
+	12	(
+	13	January
+			name:	DATE				13-16	January 3 , 1943 
+	14	3
+	15	,
+	16	1943
+	17	–
+	18	January
+			name:	DATE				18-21	January 3 , 1945 
+	19	3
+	20	,
+	21	1945
+	22	)
+	23	,
+	24	but
+	25	was
+			sense:	be.v.01
+			prop:	be.01
+			V		25-25	was 
+			N-ARG-A1		0-0	Ellison 
+			N-ARG-A2		26-30	an unsuccessful candidate for reelection 
+			N-ARGM-TMP		31-32	in 1944 
+			C-ARG-A2		33-38	to the Seventy - ninth Congress 
+	26	an
+	27	unsuccessful
+			sense:	unsuccessful.a.01
+	28	candidate
+			name:	TITLE				28-28	candidate 
+			sense:	campaigner.n.01
+	29	for
+	30	reelection
+			sense:	reelection.n.01
+	31	in
+	32	1944
+			name:	DATE				32-32	1944 
+	33	to
+	34	the
+	35	Seventy
+			name:	NUMBER				35-35	Seventy 
+	36	-
+	37	ninth
+			name:	ORDINAL				37-37	ninth 
+			sense:	ninth.s.01
+	38	Congress
+			name:	ORGANIZATION				38-38	Congress 
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He resumed the practice of law in Baltimore , and also served as member of the Maryland Senate from 1946 to 1950 .
+
+
+Treebanked sentence:
+--------------------
+He resumed the practice of law in Baltimore , and also served as member of the Maryland Senate from 1946 to 1950 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD resumed)
+        (NP
+          (NP (DT the) (NN practice))
+          (PP (IN of)
+            (NP (NN law))))
+        (PP (IN in)
+          (NP (NNP Baltimore))))
+      (, ,)
+      (CC and)
+      (ADVP (RB also))
+      (VP (VBD served)
+        (PP (IN as)
+          (NP
+            (NP (NN member))
+            (PP (IN of)
+              (NP (DT the) (NNP Maryland) (NNP Senate)))))
+        (PP (IN from)
+          (NP (CD 1946)))
+        (PP (IN to)
+          (NP (CD 1950)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	resumed
+			sense:	resume.v.01
+			prop:	resume.01
+			V		1-1	resumed 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-7	the practice of law in Baltimore 
+	2	the
+	3	practice
+			sense:	practice.n.04
+	4	of
+	5	law
+			sense:	law.n.06
+	6	in
+	7	Baltimore
+			coref:	IDENT			1	7-7	Baltimore 
+			name:	CITY				7-7	Baltimore 
+	8	,
+	9	and
+	10	also
+			sense:	besides.r.02
+	11	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		11-11	served 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		10-10	also 
+			N-ARG-A1		12-17	as member of the Maryland Senate 
+			N-ARGM-TMP		18-21	from 1946 to 1950 
+	12	as
+	13	member
+			sense:	member.n.01
+	14	of
+	15	the
+	16	Maryland
+			name:	ORGANIZATION				16-17	Maryland Senate 
+	17	Senate
+	18	from
+	19	1946
+			name:	DATE				19-21	1946 to 1950 
+	20	to
+	21	1950
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He died in Baltimore , and is interred in Hebrew Friendship Cemetery .
+
+
+Treebanked sentence:
+--------------------
+He died in Baltimore , and is interred in Hebrew Friendship Cemetery . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD died)
+        (PP (IN in)
+          (NP (NNP Baltimore))))
+      (, ,)
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN interred)
+          (PP (IN in)
+            (NP (NNP Hebrew) (NNP Friendship) (NNP Cemetery))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		2-3	in Baltimore 
+	2	in
+	3	Baltimore
+			coref:	IDENT			1	3-3	Baltimore 
+			name:	CITY				3-3	Baltimore 
+	4	,
+	5	and
+	6	is
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	is 
+	7	interred
+			sense:	bury.v.02
+			prop:	enter.02
+			V		7-7	interred 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		8-11	in Hebrew Friendship Cemetery 
+	8	in
+	9	Hebrew
+	10	Friendship
+	11	Cemetery
+	12	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.6-8	Baltimore , Maryland 
+				0.18-18	Maryland 
+	Chain 1 (IDENT)
+				2.6-6	Baltimore 
+				2.28-28	Baltimore 
+				3.13-13	Baltimore 
+				4.8-8	Baltimore 
+				6.7-7	Baltimore 
+				7.3-3	Baltimore 
+	Chain 2 (IDENT)
+				0.0-1	Daniel Ellison 
+				1.5-5	Ellison 
+				1.13-13	his 
+				2.0-0	He 
+				3.0-0	He 
+				4.0-0	He 
+				5.0-0	Ellison 
+				6.0-0	He 
+				7.0-0	He 
+

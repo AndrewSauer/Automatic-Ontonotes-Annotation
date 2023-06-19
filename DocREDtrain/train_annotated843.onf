@@ -1,0 +1,496 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Echo Summit is a mountain pass over the Sierra Nevada in the western United States , located in eastern El Dorado County , California .
+
+
+Treebanked sentence:
+--------------------
+Echo Summit is a mountain pass over the Sierra Nevada in the western United States , located in eastern El Dorado County , California . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Echo) (NNP Summit))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN mountain) (NN pass))
+        (PP (IN over)
+          (NP
+            (NP
+              (NP (DT the) (NNP Sierra) (NNP Nevada))
+              (PP (IN in)
+                (NP (DT the) (JJ western) (NNP United) (NNP States))))
+            (, ,)
+            (VP (VBN located)
+              (PP (IN in)
+                (NP (JJ eastern)
+                  (NML
+                    (NML (NNP El) (NNP Dorado) (NNP County))
+                    (, ,)
+                    (NP (NNP California))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Echo
+			coref:	IDENT			3	0-1	Echo Summit 
+	1	Summit
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Echo Summit 
+			N-ARG-A2		3-23	a mountain pass over the Sierra Nevada in the western United States , located in eastern El Dorado County , California 
+	3	a
+	4	mountain
+			sense:	mountain.n.01
+	5	pass
+			sense:	pass.n.04
+	6	over
+	7	the
+	8	Sierra
+			name:	LOCATION				8-8	Sierra 
+	9	Nevada
+			name:	STATE_OR_PROVINCE				9-9	Nevada 
+	10	in
+	11	the
+			coref:	IDENT			2	11-14	the western United States 
+	12	western
+			sense:	western.s.03
+	13	United
+			name:	COUNTRY				13-14	United States 
+	14	States
+	15	,
+	16	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		16-16	located 
+			N-ARG-A1		3-14	a mountain pass over the Sierra Nevada in the western United States 
+			N-ARGM-LOC		17-23	in eastern El Dorado County , California 
+	17	in
+	18	eastern
+			sense:	eastern.s.01
+	19	El
+			name:	CITY				19-20	El Dorado 
+	20	Dorado
+	21	County
+			name:	LOCATION				21-21	County 
+	22	,
+	23	California
+			coref:	IDENT			1	23-23	California 
+			name:	STATE_OR_PROVINCE				23-23	California 
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At above sea level , it is the highest point on U.S. Route 50 in California , which traverses it at postmile 66.48 between Twin Bridges and Meyers , south of Lake Tahoe .
+
+
+Treebanked sentence:
+--------------------
+At above sea level , it is the highest point on U.S. Route 50 in California , which traverses it at postmile 66.48 between Twin Bridges and Meyers , south of Lake Tahoe . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (PP (IN above)
+        (NP (NN sea) (NN level))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJS highest) (NN point))
+        (PP (IN on)
+          (NP
+            (NP
+              (NP
+                (NML (NNP U.S.) (NNP Route))
+                (CD 50))
+              (PP (IN in)
+                (NP (NNP California))))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ traverses)
+                  (NP (PRP it))
+                  (PP (IN at)
+                    (NP
+                      (NP
+                        (ADVP (RB postmile))
+                        (NP (CD 66.48))
+                        (PP (IN between)
+                          (NP (NNP Twin) (NNPS Bridges))))
+                      (CC and)
+                      (NP
+                        (NP (NNP Meyers))
+                        (, ,)
+                        (NP
+                          (NP (NN south))
+                          (PP (IN of)
+                            (NP (NNP Lake) (NNP Tahoe))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	above
+	2	sea
+			sense:	sea.n.01
+	3	level
+			sense:	level.n.04
+	4	,
+	5	it
+			coref:	IDENT			3	5-5	it 
+	6	is
+			sense:	be.v.01
+			prop:	be.01
+			V		6-6	is 
+			N-ARGM-LOC		0-3	At above sea level 
+			N-ARG-A1		5-5	it 
+			N-ARG-A2		7-32	the highest point on U.S. Route 50 in California , which traverses it at postmile 66.48 between Twin Bridges and Meyers , south of Lake Tahoe 
+	7	the
+	8	highest
+			sense:	high.a.02
+	9	point
+			sense:	point.n.02
+	10	on
+	11	U.S.
+			name:	COUNTRY				11-11	U.S. 
+	12	Route
+	13	50
+			name:	NUMBER				13-13	50 
+	14	in
+	15	California
+			coref:	IDENT			1	15-15	California 
+			name:	STATE_OR_PROVINCE				15-15	California 
+	16	,
+	17	which
+	18	traverses
+			sense:	traverse.v.01
+			prop:	traverse.01
+			V		18-18	traverses 
+			N-ARG-A0		11-15	U.S. Route 50 in California 
+			R-ARG-A0		17-17	which 
+			N-ARG-A1		19-19	it 
+			N-ARGM-LOC		20-22	at postmile 66.48 
+			N-ARGM-LOC		23-32	between Twin Bridges and Meyers , south of Lake Tahoe 
+	19	it
+			coref:	IDENT			3	19-19	it 
+	20	at
+	21	postmile
+	22	66.48
+			name:	NUMBER				22-22	66.48 
+	23	between
+	24	Twin
+	25	Bridges
+	26	and
+	27	Meyers
+			name:	PERSON				27-27	Meyers 
+	28	,
+	29	south
+			sense:	south.n.03
+	30	of
+	31	Lake
+			name:	LOCATION				31-32	Lake Tahoe 
+	32	Tahoe
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The " Sierra Nevada Southern Route " ( aka the " Pioneer Route " ) of the Lincoln Highway , the first road across the United States , was routed over nearby Johnson Pass in 1913 .
+
+
+Treebanked sentence:
+--------------------
+The " Sierra Nevada Southern Route " ( aka the " Pioneer Route " ) of the Lincoln Highway , the first road across the United States , was routed over nearby Johnson Pass in 1913 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP
+          (NP (DT The) (`` ") (NNP Sierra) (NNP Nevada) (NNP Southern) (NNP Route) ('' "))
+          (-LRB- -LRB-)
+          (PP (IN aka)
+            (NP (DT the) (`` ") (NNP Pioneer) (NNP Route) ('' ")))
+          (-RRB- -RRB-))
+        (PP (IN of)
+          (NP (DT the) (NNP Lincoln) (NNP Highway))))
+      (, ,)
+      (NP
+        (NP (DT the) (JJ first) (NN road))
+        (PP (IN across)
+          (NP (DT the) (NNP United) (NNP States))))
+      (, ,))
+    (VP (VBD was)
+      (VP (VBN routed)
+        (PP (IN over)
+          (NP (JJ nearby) (NNP Johnson) (NNP Pass)))
+        (PP (IN in)
+          (NP (CD 1913)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	"
+	2	Sierra
+			name:	ORGANIZATION				2-5	Sierra Nevada Southern Route 
+	3	Nevada
+	4	Southern
+	5	Route
+	6	"
+	7	(
+	8	aka
+	9	the
+	10	"
+	11	Pioneer
+	12	Route
+	13	"
+	14	)
+	15	of
+	16	the
+			coref:	IDENT			0	16-18	the Lincoln Highway 
+	17	Lincoln
+			name:	CITY				17-17	Lincoln 
+	18	Highway
+			name:	LOCATION				18-18	Highway 
+	19	,
+	20	the
+	21	first
+			name:	ORDINAL				21-21	first 
+			sense:	first.a.01
+	22	road
+			sense:	road.n.01
+	23	across
+	24	the
+			coref:	IDENT			2	24-26	the United States 
+	25	United
+			name:	COUNTRY				25-26	United States 
+	26	States
+	27	,
+	28	was
+			sense:	be.v.01
+			prop:	be.03
+			V		28-28	was 
+	29	routed
+			sense:	route.v.03
+			prop:	route.01
+			V		29-29	routed 
+			N-ARG-A1		0-26	The " Sierra Nevada Southern Route " ( aka the " Pioneer Route " ) of the Lincoln Highway , the first road across the United States 
+			N-ARGM-TMP		34-35	in 1913 
+	30	over
+	31	nearby
+			sense:	nearby.s.01
+	32	Johnson
+			name:	LOCATION				32-33	Johnson Pass 
+	33	Pass
+	34	in
+	35	1913
+			name:	DATE				35-35	1913 
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The current alignment over Echo Summit was constructed between 1936 and 1939 .
+
+
+Treebanked sentence:
+--------------------
+The current alignment over Echo Summit was constructed between 1936 and 1939 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ current) (NN alignment))
+      (PP (IN over)
+        (NP (NNP Echo) (NNP Summit))))
+    (VP (VBD was)
+      (VP (VBN constructed)
+        (PP (IN between)
+          (NP (CD 1936)
+            (CC and)
+            (CD 1939)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	current
+			name:	DATE				1-1	current 
+			sense:	current.a.01
+	2	alignment
+			sense:	alignment.n.02
+	3	over
+	4	Echo
+			coref:	IDENT			3	4-5	Echo Summit 
+	5	Summit
+	6	was
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	was 
+	7	constructed
+			sense:	construct.v.01
+			prop:	construct.01
+			V		7-7	constructed 
+			N-ARG-A1		0-5	The current alignment over Echo Summit 
+			N-ARGM-TMP		8-11	between 1936 and 1939 
+	8	between
+	9	1936
+			name:	DATE				9-11	1936 and 1939 
+	10	and
+	11	1939
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The " Sierra Nevada Northern Route " of the Lincoln Highway went over Donner Pass .
+
+
+Treebanked sentence:
+--------------------
+The " Sierra Nevada Northern Route " of the Lincoln Highway went over Donner Pass . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (`` ") (NNP Sierra) (NNP Nevada) (NNP Northern) (NNP Route) ('' "))
+      (PP (IN of)
+        (NP (DT the) (NNP Lincoln) (NNP Highway))))
+    (VP (VBD went)
+      (PRT (RP over))
+      (NP (NNP Donner) (NNP Pass)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	"
+	2	Sierra
+			name:	ORGANIZATION				2-5	Sierra Nevada Northern Route 
+	3	Nevada
+	4	Northern
+	5	Route
+	6	"
+	7	of
+	8	the
+			coref:	IDENT			0	8-10	the Lincoln Highway 
+	9	Lincoln
+			name:	CITY				9-9	Lincoln 
+	10	Highway
+			name:	LOCATION				10-10	Highway 
+	11	went
+			sense:	run.v.03
+			prop:	go.06
+			V		11-11	went 
+			N-ARG-A1		0-10	The " Sierra Nevada Northern Route " of the Lincoln Highway 
+			N-ARG-A2		12-14	over Donner Pass 
+	12	over
+	13	Donner
+			name:	LOCATION				13-14	Donner Pass 
+	14	Pass
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Echo Summit is a trailhead for the Pacific Coast National Scenic Trail .
+
+
+Treebanked sentence:
+--------------------
+Echo Summit is a trailhead for the Pacific Coast National Scenic Trail . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Echo) (NNP Summit))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN trailhead))
+        (PP (IN for)
+          (NP (DT the)
+            (NML (NNP Pacific) (NNP Coast) (NNP National))
+            (JJ Scenic) (NN Trail)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Echo
+			coref:	IDENT			3	0-1	Echo Summit 
+	1	Summit
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Echo Summit 
+			N-ARG-A2		3-11	a trailhead for the Pacific Coast National Scenic Trail 
+	3	a
+	4	trailhead
+			sense:	trail_head.n.01
+	5	for
+	6	the
+	7	Pacific
+			name:	ORGANIZATION				7-11	Pacific Coast National Scenic Trail 
+	8	Coast
+	9	National
+	10	Scenic
+			sense:	scenic.s.01
+	11	Trail
+			sense:	trail.n.02
+	12	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.16-18	the Lincoln Highway 
+				4.8-10	the Lincoln Highway 
+	Chain 1 (IDENT)
+				0.23-23	California 
+				1.15-15	California 
+	Chain 2 (IDENT)
+				0.11-14	the western United States 
+				2.24-26	the United States 
+	Chain 3 (IDENT)
+				0.0-1	Echo Summit 
+				1.5-5	it 
+				1.19-19	it 
+				3.4-5	Echo Summit 
+				5.0-1	Echo Summit 
+

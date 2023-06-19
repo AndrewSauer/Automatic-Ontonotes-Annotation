@@ -1,0 +1,575 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Michael Imperioli ( born March 26 , 1966 ) is an American actor , writer and director best known for his role as Christopher Moltisanti on The Sopranos , for which he won the Primetime Emmy Award for Outstanding Supporting Actor in a Drama Series in 2004 .
+
+
+Treebanked sentence:
+--------------------
+Michael Imperioli ( born March 26 , 1966 ) is an American actor , writer and director best known for his role as Christopher Moltisanti on The Sopranos , for which he won the Primetime Emmy Award for Outstanding Supporting Actor in a Drama Series in 2004 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Michael) (NNP Imperioli))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP March) (CD 26) (, ,) (CD 1966)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ American) (NN actor) (, ,) (NN writer)
+          (CC and)
+          (NN director))
+        (VP
+          (ADVP (RB best))
+          (VBN known)
+          (PP (IN for)
+            (NP (PRP$ his) (NN role)))
+          (PP (IN as)
+            (NP
+              (NP
+                (NP (NNP Christopher) (NNP Moltisanti))
+                (PP (IN on)
+                  (NP (DT The) (NNP Sopranos))))
+              (, ,)
+              (SBAR
+                (WHPP (IN for)
+                  (WHNP (WDT which)))
+                (S
+                  (NP (PRP he))
+                  (VP (VBD won)
+                    (NP
+                      (NP (DT the) (NNP Primetime) (NNP Emmy) (NNP Award))
+                      (PP (IN for)
+                        (NP
+                          (NP (JJ Outstanding) (VBG Supporting) (NN Actor))
+                          (PP (IN in)
+                            (NP
+                              (NP (DT a) (NNP Drama) (NNP Series))
+                              (PP (IN in)
+                                (NP (CD 2004))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Michael
+			coref:	IDENT			1	0-1	Michael Imperioli 
+			name:	PERSON				0-1	Michael Imperioli 
+	1	Imperioli
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Michael Imperioli 
+			N-ARGM-TMP		4-7	March 26 , 1966 
+	4	March
+			name:	DATE				4-7	March 26 , 1966 
+	5	26
+	6	,
+	7	1966
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	Michael Imperioli ( born March 26 , 1966 ) 
+			N-ARG-A2		10-46	an American actor , writer and director best known for his role as Christopher Moltisanti on The Sopranos , for which he won the Primetime Emmy Award for Outstanding Supporting Actor in a Drama Series in 2004 
+	10	an
+	11	American
+			name:	NATIONALITY				11-11	American 
+	12	actor
+			name:	TITLE				12-12	actor 
+			sense:	actor.n.01
+	13	,
+	14	writer
+			name:	TITLE				14-14	writer 
+			sense:	writer.n.01
+	15	and
+	16	director
+			name:	TITLE				16-16	director 
+			sense:	director.n.03
+	17	best
+			sense:	best.r.01
+	18	known
+			sense:	know.v.04
+			prop:	know.01
+			V		18-18	known 
+			N-ARG-A1		10-16	an American actor , writer and director 
+			N-ARGM-MNR		17-17	best 
+			N-ARG-A2		19-46	for his role as Christopher Moltisanti on The Sopranos , for which he won the Primetime Emmy Award for Outstanding Supporting Actor in a Drama Series in 2004 
+	19	for
+	20	his
+			coref:	IDENT			1	20-20	his 
+	21	role
+			sense:	character.n.04
+	22	as
+	23	Christopher
+			name:	PERSON				23-24	Christopher Moltisanti 
+	24	Moltisanti
+	25	on
+	26	The
+	27	Sopranos
+	28	,
+	29	for
+	30	which
+	31	he
+			coref:	IDENT			1	31-31	he 
+	32	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		32-32	won 
+			N-ARG-A0		31-31	he 
+			N-ARG-A1		33-44	the Primetime Emmy Award for Outstanding Supporting Actor in a Drama Series 
+			N-ARGM-TMP		45-46	in 2004 
+	33	the
+	34	Primetime
+	35	Emmy
+	36	Award
+	37	for
+	38	Outstanding
+			sense:	great.s.02
+	39	Supporting
+			sense:	support.v.09
+			prop:	support.01
+			V		39-39	Supporting 
+			N-ARG-A0		40-40	Actor 
+	40	Actor
+			name:	TITLE				40-40	Actor 
+			sense:	actor.n.01
+	41	in
+	42	a
+	43	Drama
+			name:	MISC				43-44	Drama Series 
+	44	Series
+	45	in
+	46	2004
+			name:	DATE				46-46	2004 
+	47	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also appeared in the TV drama series Law & Order as NYPD Detective Nick Falco .
+
+
+Treebanked sentence:
+--------------------
+He also appeared in the TV drama series Law & Order as NYPD Detective Nick Falco . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD appeared)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN TV) (NN drama) (NN series) (NNP Law)
+            (CC &)
+            (NNP Order))
+          (PP (IN as)
+            (NP (NNP NYPD) (NNP Detective) (NNP Nick) (NNP Falco))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	also
+			sense:	besides.r.02
+	2	appeared
+			sense:	appear.v.06
+			prop:	appear.01
+			V		2-2	appeared 
+			N-ARG-A1		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARGM-LOC		3-10	in the TV drama series Law & Order 
+			N-ARGM-PRD		11-15	as NYPD Detective Nick Falco 
+	3	in
+	4	the
+	5	TV
+			sense:	television.n.01
+	6	drama
+			sense:	play.n.01
+	7	series
+			sense:	serial.n.01
+	8	Law
+	9	&
+	10	Order
+	11	as
+	12	NYPD
+	13	Detective
+			name:	TITLE				13-13	Detective 
+	14	Nick
+			name:	PERSON				14-15	Nick Falco 
+	15	Falco
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Imperioli spent the 2008 - 2009 television season as Detective Ray Carling in the US version of Life on Mars .
+
+
+Treebanked sentence:
+--------------------
+Imperioli spent the 2008 - 2009 television season as Detective Ray Carling in the US version of Life on Mars . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Imperioli))
+    (VP (VBD spent)
+      (NP (DT the) (CD 2008) (SYM -) (CD 2009) (NN television) (NN season))
+      (PP (IN as)
+        (NP
+          (NP (NNP Detective) (NNP Ray) (NNP Carling))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NNP US) (NN version))
+              (PP (IN of)
+                (NP (NN Life)))))))
+      (PP (IN on)
+        (NP (NNP Mars))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Imperioli
+			coref:	IDENT			1	0-0	Imperioli 
+			name:	PERSON				0-0	Imperioli 
+	1	spent
+			sense:	spend.v.01
+			prop:	spend.02
+			V		1-1	spent 
+			N-ARG-A0		0-0	Imperioli 
+			N-ARG-A1		2-7	the 2008 - 2009 television season 
+			N-ARG-A2		8-19	as Detective Ray Carling in the US version of Life on Mars 
+	2	the
+	3	2008
+			coref:	IDENT			0	3-3	2008 
+			name:	DATE				3-3	2008 
+	4	-
+			name:	DURATION				4-4	- 
+	5	2009
+			name:	DATE				5-5	2009 
+	6	television
+			sense:	television.n.01
+	7	season
+			sense:	season.n.01
+	8	as
+	9	Detective
+			name:	TITLE				9-9	Detective 
+	10	Ray
+			name:	PERSON				10-11	Ray Carling 
+	11	Carling
+	12	in
+	13	the
+	14	US
+			name:	COUNTRY				14-14	US 
+	15	version
+			sense:	version.n.02
+	16	of
+	17	Life
+			sense:	life.n.02
+	18	on
+	19	Mars
+			name:	LOCATION				19-19	Mars 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was starring as Detective Louis Fitch in the ABC police drama Detroit 1 - 8 - 7 until its cancellation .
+
+
+Treebanked sentence:
+--------------------
+He was starring as Detective Louis Fitch in the ABC police drama Detroit 1 - 8 - 7 until its cancellation . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBG starring)
+        (PP (IN as)
+          (NP
+            (NP (NNP Detective) (NNP Louis) (NNP Fitch))
+            (PP (IN in)
+              (NP (DT the) (NNP ABC) (NN police) (NN drama)))))
+        (NP (NNP Detroit)
+          (NML (CD 1) (SYM -) (CD 8) (HYPH -) (CD 7)))
+        (PP (IN until)
+          (NP (PRP$ its) (NN cancellation)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	starring
+			sense:	star.v.01
+			prop:	star.01
+			V		2-2	starring 
+			N-ARG-A1		0-0	He 
+			N-ARGM-PRD		3-6	as Detective Louis Fitch 
+			N-ARG-A2		7-17	in the ABC police drama Detroit 1 - 8 - 7 
+			N-ARGM-TMP		18-20	until its cancellation 
+	3	as
+	4	Detective
+			name:	TITLE				4-4	Detective 
+	5	Louis
+			name:	PERSON				5-6	Louis Fitch 
+	6	Fitch
+	7	in
+	8	the
+	9	ABC
+			name:	ORGANIZATION				9-9	ABC 
+	10	police
+			sense:	police.n.01
+	11	drama
+			sense:	play.n.01
+	12	Detroit
+			name:	ORGANIZATION				12-12	Detroit 
+	13	1
+			name:	NUMBER				13-13	1 
+	14	-
+	15	8
+			name:	DATE				15-15	8 
+	16	-
+	17	7
+			name:	DATE				17-17	7 
+	18	until
+	19	its
+	20	cancellation
+			sense:	cancellation.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He wrote and directed his first feature film , The Hungry Ghosts , in 2008 .
+
+
+Treebanked sentence:
+--------------------
+He wrote and directed his first feature film , The Hungry Ghosts , in 2008 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD wrote)
+      (CC and)
+      (VBD directed)
+      (NP
+        (NP
+          (NP (PRP$ his) (JJ first) (NN feature) (NN film))
+          (, ,)
+          (NP (DT The) (JJ Hungry) (NNS Ghosts))
+          (, ,))
+        (PP (IN in)
+          (NP (CD 2008)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	wrote
+			sense:	write.v.01
+			prop:	write.01
+			V		1-1	wrote 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		4-11	his first feature film , The Hungry Ghosts 
+			N-ARGM-TMP		13-14	in 2008 
+	2	and
+	3	directed
+			sense:	direct.v.03
+			prop:	direct.01
+			V		3-3	directed 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		4-11	his first feature film , The Hungry Ghosts 
+			N-ARGM-TMP		13-14	in 2008 
+	4	his
+			coref:	IDENT			1	4-4	his 
+	5	first
+			name:	ORDINAL				5-5	first 
+			sense:	first.a.01
+	6	feature
+			sense:	feature.n.03
+	7	film
+			sense:	movie.n.01
+	8	,
+	9	The
+	10	Hungry
+			sense:	hungry.a.01
+	11	Ghosts
+			sense:	ghost.n.03
+	12	,
+	13	in
+	14	2008
+			coref:	IDENT			0	14-14	2008 
+			name:	DATE				14-14	2008 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2015 , he starred in Mad Dogs , a dark - comic thriller television series available for viewing on Amazon 's Amazon Prime subscription service in the U.S and on Shomi in Canada .
+
+
+Treebanked sentence:
+--------------------
+In 2015 , he starred in Mad Dogs , a dark - comic thriller television series available for viewing on Amazon 's Amazon Prime subscription service in the U.S and on Shomi in Canada . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2015)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD starred)
+      (PP (IN in)
+        (NP (JJ Mad) (NNS Dogs)))
+      (, ,)
+      (S
+        (NP (DT a)
+          (ADJP (JJ dark) (HYPH -) (JJ comic))
+          (NN thriller) (NN television) (NN series))
+        (ADJP (JJ available)
+          (PP (IN for)
+            (S
+              (VP (VBG viewing)
+                (PP
+                  (PP (IN on)
+                    (NP
+                      (NP
+                        (NP (NNP Amazon) (POS 's))
+                        (NNP Amazon)
+                        (NML (NNP Prime) (NN subscription))
+                        (NN service))
+                      (PP (IN in)
+                        (NP (DT the) (NNP U.S)))))
+                  (CC and)
+                  (PP (IN on)
+                    (NP (NNP Shomi))))
+                (PP (IN in)
+                  (NP (NNP Canada)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2015
+			name:	DATE				1-1	2015 
+	2	,
+	3	he
+			coref:	IDENT			1	3-3	he 
+	4	starred
+			sense:	star.v.01
+			prop:	star.01
+			V		4-4	starred 
+			N-ARGM-TMP		0-1	In 2015 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		5-33	in Mad Dogs , a dark - comic thriller television series available for viewing on Amazon 's Amazon Prime subscription service in the U.S and on Shomi in Canada 
+	5	in
+	6	Mad
+			sense:	brainsick.s.01
+	7	Dogs
+			sense:	dog.n.01
+	8	,
+	9	a
+	10	dark
+			sense:	dark.s.06
+	11	-
+	12	comic
+			sense:	amusing.s.02
+	13	thriller
+			sense:	thriller.n.01
+	14	television
+			sense:	television.n.01
+	15	series
+			sense:	serial.n.01
+	16	available
+			sense:	available.a.01
+	17	for
+	18	viewing
+			sense:	watch.v.03
+			prop:	view.01
+			V		18-18	viewing 
+	19	on
+	20	Amazon
+			name:	ORGANIZATION				20-20	Amazon 
+	21	's
+	22	Amazon
+			name:	LOCATION				22-22	Amazon 
+	23	Prime
+	24	subscription
+			sense:	subscription.n.01
+	25	service
+			sense:	service.n.01
+	26	in
+	27	the
+	28	U.S
+			name:	LOCATION				28-28	U.S 
+	29	and
+	30	on
+	31	Shomi
+			name:	LOCATION				31-31	Shomi 
+	32	in
+	33	Canada
+			name:	COUNTRY				33-33	Canada 
+	34	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.3-3	2008 
+				4.14-14	2008 
+	Chain 1 (IDENT)
+				0.0-1	Michael Imperioli 
+				0.20-20	his 
+				0.31-31	he 
+				1.0-0	He 
+				2.0-0	Imperioli 
+				3.0-0	He 
+				4.0-0	He 
+				4.4-4	his 
+				5.3-3	he 
+

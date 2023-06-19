@@ -1,0 +1,702 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Appenzell is a village , a statistic town , but not a municipality , and the capital of the canton of Appenzell Innerrhoden in Switzerland .
+
+
+Treebanked sentence:
+--------------------
+Appenzell is a village , a statistic town , but not a municipality , and the capital of the canton of Appenzell Innerrhoden in Switzerland . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Appenzell))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN village))
+        (, ,)
+        (NP
+          (NP (DT a) (NN statistic) (NN town))
+          (, ,)
+          (CONJP (CC but)
+            (RB not))
+          (NP (DT a) (NN municipality)))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (DT the) (NN capital))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN canton))
+              (PP (IN of)
+                (NP
+                  (NP (NNP Appenzell) (NNP Innerrhoden))
+                  (PP (IN in)
+                    (NP (NNP Switzerland))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Appenzell
+			coref:	IDENT			1	0-0	Appenzell 
+			name:	CITY				0-0	Appenzell 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Appenzell 
+			N-ARG-A2		2-24	a village , a statistic town , but not a municipality , and the capital of the canton of Appenzell Innerrhoden in Switzerland 
+	2	a
+	3	village
+			sense:	village.n.01
+	4	,
+	5	a
+	6	statistic
+			sense:	statistic.n.01
+	7	town
+			sense:	town.n.01
+	8	,
+	9	but
+	10	not
+			sense:	not.r.01
+	11	a
+	12	municipality
+			sense:	municipality.n.01
+	13	,
+	14	and
+	15	the
+	16	capital
+			sense:	capital.n.03
+	17	of
+	18	the
+	19	canton
+			sense:	canton.n.02
+	20	of
+	21	Appenzell
+			coref:	IDENT			1	21-21	Appenzell 
+			name:	CITY				21-21	Appenzell 
+	22	Innerrhoden
+	23	in
+	24	Switzerland
+			name:	COUNTRY				24-24	Switzerland 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Appenzell has no municipal government of its own ; rather , the different parts of Appenzell belong to and are governed by the districts ( and municipalities ) Appenzell , Schwende and Rüte .
+
+
+Treebanked sentence:
+--------------------
+Appenzell has no municipal government of its own ; rather , the different parts of Appenzell belong to and are governed by the districts ( and municipalities ) Appenzell , Schwende and Rüte . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NNP Appenzell))
+      (VP (VBZ has)
+        (NP
+          (NP (DT no) (JJ municipal) (NN government))
+          (PP (IN of)
+            (NP (PRP$ its) (JJ own))))))
+    (: ;)
+    (S
+      (ADVP (RB rather))
+      (, ,)
+      (NP
+        (NP (DT the) (JJ different) (NNS parts))
+        (PP (IN of)
+          (NP (NNP Appenzell))))
+      (VP
+        (VP (VBP belong)
+          (PP (IN to)))
+        (CC and)
+        (VP (VBP are)
+          (VP (VBN governed)
+            (PP (IN by)
+              (NP
+                (NP
+                  (NP (DT the) (NNS districts))
+                  (-LRB- -LRB-)
+                  (CC and)
+                  (NP (NNS municipalities))
+                  (-RRB- -RRB-))
+                (NP (NNP Appenzell) (, ,) (NNP Schwende)
+                  (CC and)
+                  (NNP Rüte))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Appenzell
+			coref:	IDENT			1	0-0	Appenzell 
+			name:	CITY				0-0	Appenzell 
+	1	has
+			sense:	have.v.02
+			prop:	have.03
+			V		1-1	has 
+			N-ARG-A0		0-0	Appenzell 
+			N-ARG-A1		2-7	no municipal government of its own 
+	2	no
+	3	municipal
+			sense:	municipal.a.01
+	4	government
+			sense:	government.n.01
+	5	of
+	6	its
+			coref:	IDENT			1	6-6	its 
+	7	own
+			sense:	own.s.01
+	8	;
+	9	rather
+			sense:	rather.r.01
+	10	,
+	11	the
+	12	different
+			sense:	different.a.01
+	13	parts
+			sense:	part.n.09
+	14	of
+	15	Appenzell
+			coref:	IDENT			1	15-15	Appenzell 
+			name:	CITY				15-15	Appenzell 
+	16	belong
+			sense:	belong.v.01
+			prop:	belong.01
+			V		16-16	belong 
+			N-ARG-A0		11-15	the different parts of Appenzell 
+			N-ARG-A1		17-17	to 
+	17	to
+	18	and
+	19	are
+			sense:	be.v.01
+			prop:	be.03
+			V		19-19	are 
+	20	governed
+			sense:	govern.v.03
+			prop:	govern.01
+			V		20-20	governed 
+			N-ARG-A1		11-15	the different parts of Appenzell 
+			N-ARG-A0		21-32	by the districts ( and municipalities ) Appenzell , Schwende and Rüte 
+	21	by
+	22	the
+	23	districts
+			sense:	district.n.01
+	24	(
+	25	and
+	26	municipalities
+			sense:	municipality.n.01
+	27	)
+	28	Appenzell
+			name:	CITY				28-28	Appenzell 
+	29	,
+	30	Schwende
+			name:	PERSON				30-30	Schwende 
+	31	and
+	32	Rüte
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Because of that , for firefighting , energy and water , the village Appenzell has a special - purpose municipality , the Feuerschaugemeinde .
+
+
+Treebanked sentence:
+--------------------
+Because of that , for firefighting , energy and water , the village Appenzell has a special - purpose municipality , the Feuerschaugemeinde . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Because)
+      (PP (IN of)
+        (NP (DT that))))
+    (, ,)
+    (PP (IN for)
+      (NP (NN firefighting) (, ,) (NN energy)
+        (CC and)
+        (NN water)))
+    (, ,)
+    (NP
+      (NP (DT the) (NN village))
+      (NP (NNP Appenzell)))
+    (VP (VBZ has)
+      (NP
+        (NP (DT a)
+          (NML (JJ special) (HYPH -) (NN purpose))
+          (NN municipality))
+        (, ,)
+        (NP (DT the) (NNP Feuerschaugemeinde))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Because
+	1	of
+	2	that
+	3	,
+	4	for
+	5	firefighting
+	6	,
+	7	energy
+			sense:	energy.n.06
+	8	and
+	9	water
+			sense:	water.n.01
+	10	,
+	11	the
+			coref:	IDENT			1	11-13	the village Appenzell 
+	12	village
+			sense:	village.n.01
+	13	Appenzell
+			coref:	IDENT			1	13-13	Appenzell 
+			name:	CITY				13-13	Appenzell 
+	14	has
+			sense:	have.v.01
+			prop:	have.03
+			V		14-14	has 
+			N-ARGM-CAU		0-2	Because of that 
+			N-ARGM-PRP		4-9	for firefighting , energy and water 
+			N-ARG-A0		11-13	the village Appenzell 
+			N-ARG-A1		15-22	a special - purpose municipality , the Feuerschaugemeinde 
+	15	a
+	16	special
+			sense:	limited.s.06
+	17	-
+	18	purpose
+			sense:	function.n.02
+	19	municipality
+			sense:	municipality.n.01
+	20	,
+	21	the
+	22	Feuerschaugemeinde
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1071 the village was referred to as Abbacella .
+
+
+Treebanked sentence:
+--------------------
+In 1071 the village was referred to as Abbacella . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1071)))
+    (NP (DT the) (NN village))
+    (VP (VBD was)
+      (VP (VBN referred)
+        (PP (IN to)
+          (PP (IN as)
+            (NP (NNP Abbacella))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1071
+			name:	DATE				1-1	1071 
+	2	the
+			coref:	IDENT			1	2-3	the village 
+	3	village
+			sense:	village.n.01
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	referred
+			sense:	mention.v.01
+			prop:	refer.01
+			V		5-5	referred 
+			N-ARGM-TMP		0-1	In 1071 
+			N-ARG-A1		6-6	to 
+			N-ARG-A2		7-8	as Abbacella 
+	6	to
+	7	as
+	8	Abbacella
+			name:	PERSON				8-8	Abbacella 
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+By 1223 this changed to Abbatiscella , meaning the Abbot 's cell .
+
+
+Treebanked sentence:
+--------------------
+By 1223 this changed to Abbatiscella , meaning the Abbot 's cell . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN By)
+      (NP (CD 1223)))
+    (NP (DT this))
+    (VP (VBD changed)
+      (PP (IN to)
+        (NP (NNP Abbatiscella)))
+      (, ,)
+      (S
+        (VP (VBG meaning)
+          (NP
+            (NP (DT the) (NNP Abbot) (POS 's))
+            (NN cell)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	By
+	1	1223
+			name:	DATE				1-1	1223 
+	2	this
+			coref:	IDENT			0	2-2	this 
+	3	changed
+			sense:	change.v.02
+			prop:	change.01
+			V		3-3	changed 
+			N-ARGM-TMP		0-1	By 1223 
+			N-ARG-A1		2-2	this 
+			N-ARG-A2		4-11	to Abbatiscella , meaning the Abbot 's cell 
+	4	to
+	5	Abbatiscella
+			name:	PERSON				5-5	Abbatiscella 
+	6	,
+	7	meaning
+			sense:	mean.v.03
+			prop:	mean.01
+			V		7-7	meaning 
+			N-ARG-A0		5-5	Abbatiscella 
+			N-ARG-A1		8-11	the Abbot 's cell 
+	8	the
+	9	Abbot
+			name:	TITLE				9-9	Abbot 
+	10	's
+	11	cell
+			sense:	cell.n.06
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This refers to the abbot of the Abbey of Saint Gall .
+
+
+Treebanked sentence:
+--------------------
+This refers to the abbot of the Abbey of Saint Gall . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ refers)
+      (PP (IN to)
+        (NP
+          (NP (DT the) (NN abbot))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP Abbey))
+              (PP (IN of)
+                (NP (NNP Saint) (NNP Gall))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+			coref:	IDENT			0	0-0	This 
+	1	refers
+			sense:	denote.v.02
+			prop:	refer.01
+			V		1-1	refers 
+			N-ARG-A0		0-0	This 
+			N-ARG-A1		2-10	to the abbot of the Abbey of Saint Gall 
+	2	to
+	3	the
+	4	abbot
+			name:	TITLE				4-4	abbot 
+			sense:	abbot.n.01
+	5	of
+	6	the
+	7	Abbey
+	8	of
+	9	Saint
+			name:	TITLE				9-9	Saint 
+	10	Gall
+			name:	LOCATION				10-10	Gall 
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The official language of Appenzell is ( the Swiss variety of Standard ) German , but the main spoken language is the local variant of the Alemannic Swiss German dialect .
+
+
+Treebanked sentence:
+--------------------
+The official language of Appenzell is ( the Swiss variety of Standard ) German , but the main spoken language is the local variant of the Alemannic Swiss German dialect . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (JJ official) (NN language))
+        (PP (IN of)
+          (NP (NNP Appenzell))))
+      (VP (VBZ is)
+        (NP
+          (NP (-LRB- -LRB-)
+            (NP (DT the) (JJ Swiss) (NN variety))
+            (PP (IN of)
+              (NP (NNP Standard)))
+            (-RRB- -RRB-))
+          (ADJP (NNP German)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT the) (JJ main)
+        (ADJP (VBN spoken))
+        (NN language))
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (JJ local) (NN variant))
+          (PP (IN of)
+            (NP (DT the) (JJ Alemannic) (JJ Swiss) (JJ German) (NN dialect))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	official
+			sense:	official.a.01
+	2	language
+			sense:	language.n.01
+	3	of
+	4	Appenzell
+			coref:	IDENT			1	4-4	Appenzell 
+			name:	CITY				4-4	Appenzell 
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	The official language of Appenzell 
+			N-ARG-A2		6-13	( the Swiss variety of Standard ) German 
+	6	(
+	7	the
+	8	Swiss
+			name:	NATIONALITY				8-8	Swiss 
+	9	variety
+			sense:	kind.n.01
+	10	of
+	11	Standard
+	12	)
+	13	German
+			name:	NATIONALITY				13-13	German 
+	14	,
+	15	but
+	16	the
+	17	main
+			sense:	chief.s.01
+	18	spoken
+			sense:	speak.v.03
+			prop:	poke.01
+			V		18-18	spoken 
+			N-ARG-A1		19-19	language 
+	19	language
+			sense:	language.n.01
+	20	is
+			sense:	be.v.02
+			prop:	be.01
+			V		20-20	is 
+			N-ARG-A1		16-19	the main spoken language 
+			N-ARG-A2		21-29	the local variant of the Alemannic Swiss German dialect 
+	21	the
+	22	local
+			sense:	local.a.01
+	23	variant
+			sense:	version.n.02
+	24	of
+	25	the
+	26	Alemannic
+			name:	MISC				26-26	Alemannic 
+	27	Swiss
+			name:	NATIONALITY				27-28	Swiss German 
+	28	German
+	29	dialect
+			sense:	dialect.n.01
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The buildings in the village core , the parish church , the 1563 town hall , the Salesis house , the ruins of Castle Clanx and the state archives with the administration building are listed as heritage sites of national significance .
+
+
+Treebanked sentence:
+--------------------
+The buildings in the village core , the parish church , the 1563 town hall , the Salesis house , the ruins of Castle Clanx and the state archives with the administration building are listed as heritage sites of national significance . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS buildings))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN village) (NN core))
+          (, ,)
+          (NP (DT the) (NN parish) (NN church))
+          (, ,)
+          (NP (DT the) (CD 1563) (NN town) (NN hall))
+          (, ,)
+          (NP (DT the) (NNP Salesis) (NN house))
+          (, ,)
+          (NP
+            (NP (DT the) (NNS ruins))
+            (PP (IN of)
+              (NP (NNP Castle) (NNP Clanx))))
+          (CC and)
+          (NP
+            (NP (DT the) (NN state) (NNS archives))
+            (PP (IN with)
+              (NP (DT the) (NN administration) (NN building)))))))
+    (VP (VBP are)
+      (VP (VBN listed)
+        (PP (IN as)
+          (NP
+            (NP (NN heritage) (NNS sites))
+            (PP (IN of)
+              (NP (JJ national) (NN significance)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	buildings
+			sense:	building.n.01
+	2	in
+	3	the
+	4	village
+			sense:	village.n.01
+	5	core
+			sense:	core.n.02
+	6	,
+	7	the
+	8	parish
+			sense:	parish.n.01
+	9	church
+			sense:	church.n.02
+	10	,
+	11	the
+	12	1563
+			name:	DATE				12-12	1563 
+	13	town
+			sense:	township.n.01
+	14	hall
+			sense:	hall.n.13
+	15	,
+	16	the
+	17	Salesis
+			name:	LOCATION				17-17	Salesis 
+	18	house
+			sense:	house.n.01
+	19	,
+	20	the
+	21	ruins
+			sense:	ruin.n.02
+	22	of
+	23	Castle
+	24	Clanx
+	25	and
+	26	the
+	27	state
+			sense:	state.n.01
+	28	archives
+			sense:	archive.n.01
+	29	with
+	30	the
+	31	administration
+			sense:	administration.n.02
+	32	building
+			sense:	building.n.01
+	33	are
+			sense:	be.v.01
+			prop:	be.03
+			V		33-33	are 
+	34	listed
+			sense:	list.v.02
+			prop:	list.01
+			V		34-34	listed 
+			N-ARG-A1		0-32	The buildings in the village core , the parish church , the 1563 town hall , the Salesis house , the ruins of Castle Clanx and the state archives with the administration building 
+			N-ARG-A2		35-40	as heritage sites of national significance 
+	35	as
+	36	heritage
+			sense:	heritage.n.01
+	37	sites
+			sense:	site.n.01
+	38	of
+	39	national
+			sense:	national.a.03
+	40	significance
+			sense:	significance.n.01
+	41	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.2-2	this 
+				5.0-0	This 
+	Chain 1 (IDENT)
+				0.0-0	Appenzell 
+				0.21-21	Appenzell 
+				1.0-0	Appenzell 
+				1.6-6	its 
+				1.15-15	Appenzell 
+				2.11-13	the village Appenzell 
+				2.13-13	Appenzell 
+				3.2-3	the village 
+				6.4-4	Appenzell 
+

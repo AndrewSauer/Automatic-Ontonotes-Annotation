@@ -1,0 +1,755 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mary Spencer Nay ( 1913 – 1993 ) was an American painter and printmaker .
+
+
+Treebanked sentence:
+--------------------
+Mary Spencer Nay ( 1913 – 1993 ) was an American painter and printmaker . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Mary) (NNP Spencer))
+      (INTJ (UH Nay))
+      (NP (-LRB- -LRB-) (CD 1913) (SYM –) (CD 1993)))
+    (-RRB- -RRB-)
+    (VP (VBD was)
+      (NP (DT an) (JJ American) (NN painter)
+        (CC and)
+        (NN printmaker)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mary
+			name:	PERSON				0-2	Mary Spencer Nay 
+	1	Spencer
+	2	Nay
+	3	(
+	4	1913
+			name:	DATE				4-4	1913 
+	5	–
+	6	1993
+			name:	DATE				6-6	1993 
+	7	)
+	8	was
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	was 
+			N-ARG-A1		0-7	Mary Spencer Nay ( 1913 – 1993 ) 
+			N-ARG-A2		9-13	an American painter and printmaker 
+	9	an
+	10	American
+			name:	NATIONALITY				10-10	American 
+	11	painter
+			name:	TITLE				11-11	painter 
+			sense:	painter.n.01
+	12	and
+	13	printmaker
+			name:	TITLE				13-13	printmaker 
+			sense:	printmaker.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in Crestwood , Kentucky , Nay studied at the Art Center Association School in Louisville from 1934 to 1940 .
+
+
+Treebanked sentence:
+--------------------
+Born in Crestwood , Kentucky , Nay studied at the Art Center Association School in Louisville from 1934 to 1940 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP (NNP Crestwood) (, ,) (NNP Kentucky)))
+        (, ,)
+        (S
+          (INTJ (UH Nay)))))
+    (VP (VBN studied)
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NNP Art) (NNP Center) (NNP Association) (NNP School))
+          (PP (IN in)
+            (NP (NNP Louisville)))))
+      (PP (IN from)
+        (NP (CD 1934)))
+      (PP (IN to)
+        (NP (CD 1940))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-4	in Crestwood , Kentucky 
+			N-ARG-A1		6-6	Nay 
+	1	in
+	2	Crestwood
+			name:	CITY				2-2	Crestwood 
+	3	,
+	4	Kentucky
+			name:	STATE_OR_PROVINCE				4-4	Kentucky 
+	5	,
+	6	Nay
+			name:	PERSON				6-6	Nay 
+	7	studied
+			sense:	study.v.02
+			prop:	study.01
+			V		7-7	studied 
+			R-ARG-A0		0-4	Born in Crestwood , Kentucky 
+			N-ARG-A0		6-6	Nay 
+			N-ARGM-LOC		8-15	at the Art Center Association School in Louisville 
+			N-ARGM-TMP		16-19	from 1934 to 1940 
+	8	at
+	9	the
+	10	Art
+			name:	ORGANIZATION				10-13	Art Center Association School 
+	11	Center
+	12	Association
+	13	School
+	14	in
+	15	Louisville
+			name:	CITY				15-15	Louisville 
+	16	from
+	17	1934
+			name:	DATE				17-19	1934 to 1940 
+	18	to
+	19	1940
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She attended the Cincinnati Art Academy in 1942 , and earned both her bachelor 's and Master of Arts degrees from the University of Louisville , in 1941 and 1960 respectively .
+
+
+Treebanked sentence:
+--------------------
+She attended the Cincinnati Art Academy in 1942 , and earned both her bachelor 's and Master of Arts degrees from the University of Louisville , in 1941 and 1960 respectively . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP
+      (VP (VBD attended)
+        (NP (DT the) (NNP Cincinnati) (NNP Art) (NNP Academy))
+        (PP (IN in)
+          (NP (CD 1942))))
+      (, ,)
+      (CC and)
+      (VP (VBD earned)
+        (NP (CC both)
+          (NML (PRP$ her) (NN bachelor) (POS 's))
+          (CC and)
+          (NML
+            (NML (NNP Master))
+            (PP (IN of)
+              (NP (NNPS Arts))))
+          (NNS degrees))
+        (PP (IN from)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Louisville)))
+            (, ,)
+            (PP (IN in)
+              (NP (CD 1941)
+                (CC and)
+                (CD 1960)))))
+        (ADVP (RB respectively))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			2	0-0	She 
+	1	attended
+			sense:	attend.v.01
+			prop:	attend.01
+			V		1-1	attended 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		2-5	the Cincinnati Art Academy 
+			N-ARGM-TMP		6-7	in 1942 
+	2	the
+	3	Cincinnati
+			name:	ORGANIZATION				3-5	Cincinnati Art Academy 
+	4	Art
+	5	Academy
+	6	in
+	7	1942
+			coref:	IDENT			1	7-7	1942 
+			name:	DATE				7-7	1942 
+	8	,
+	9	and
+	10	earned
+			sense:	earn.v.02
+			prop:	earn.01
+			V		10-10	earned 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		11-19	both her bachelor 's and Master of Arts degrees 
+			N-ARG-A3		20-24	from the University of Louisville 
+			N-ARGM-TMP		26-29	in 1941 and 1960 
+			N-ARGM-ADV		30-30	respectively 
+	11	both
+	12	her
+			coref:	IDENT			2	12-12	her 
+	13	bachelor
+			name:	TITLE				13-13	bachelor 
+			sense:	bachelor.n.01
+	14	's
+	15	and
+	16	Master
+	17	of
+	18	Arts
+	19	degrees
+			sense:	academic_degree.n.01
+	20	from
+	21	the
+	22	University
+			name:	ORGANIZATION				22-24	University of Louisville 
+	23	of
+	24	Louisville
+	25	,
+	26	in
+	27	1941
+			name:	DATE				27-27	1941 
+	28	and
+	29	1960
+			name:	DATE				29-29	1960 
+	30	respectively
+			sense:	respectively.r.01
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She also had lessons at the Art Students League of New York in 1942 , and in Provincetown , Massachusetts under Boris Margo from 1950 to 1951 .
+
+
+Treebanked sentence:
+--------------------
+She also had lessons at the Art Students League of New York in 1942 , and in Provincetown , Massachusetts under Boris Margo from 1950 to 1951 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (ADVP (RB also))
+    (VP (VBD had)
+      (NP
+        (NP (NNS lessons))
+        (PP
+          (PP (IN at)
+            (NP
+              (NP (DT the) (NNP Art) (NNP Students) (NNP League))
+              (PP (IN of)
+                (NP
+                  (NP (NNP New) (NNP York))
+                  (PP (IN in)
+                    (NP (CD 1942)))))))
+          (, ,)
+          (CC and)
+          (PP (IN in)
+            (NP (NNP Provincetown) (, ,) (NNP Massachusetts)))))
+      (PP (IN under)
+        (NP
+          (NP (NNP Boris) (NNP Margo))
+          (PP (IN from)
+            (NP (CD 1950)))))
+      (PP (IN to)
+        (NP (CD 1951))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			2	0-0	She 
+	1	also
+			sense:	besides.r.02
+	2	had
+			sense:	experience.v.03
+			prop:	have.03
+			V		2-2	had 
+			N-ARG-A0		0-0	She 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-22	lessons at the Art Students League of New York in 1942 , and in Provincetown , Massachusetts under Boris Margo 
+			N-ARGM-TMP		23-23	from 
+			N-ARG-A1		24-26	1950 to 1951 
+	3	lessons
+			sense:	lesson.n.01
+	4	at
+	5	the
+	6	Art
+			name:	MISC				6-8	Art Students League 
+	7	Students
+	8	League
+	9	of
+	10	New
+			name:	STATE_OR_PROVINCE				10-11	New York 
+	11	York
+	12	in
+	13	1942
+			coref:	IDENT			1	13-13	1942 
+			name:	DATE				13-13	1942 
+	14	,
+	15	and
+	16	in
+	17	Provincetown
+			coref:	IDENT			0	17-17	Provincetown 
+			name:	LOCATION				17-17	Provincetown 
+	18	,
+	19	Massachusetts
+			name:	STATE_OR_PROVINCE				19-19	Massachusetts 
+	20	under
+	21	Boris
+			name:	PERSON				21-22	Boris Margo 
+	22	Margo
+	23	from
+	24	1950
+			name:	DATE				24-26	1950 to 1951 
+	25	to
+	26	1951
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She taught at the University of Louisville for twenty years before retiring as the Marcia S. Hite professor of painting in 1979 .
+
+
+Treebanked sentence:
+--------------------
+She taught at the University of Louisville for twenty years before retiring as the Marcia S. Hite professor of painting in 1979 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD taught)
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NNP University))
+          (PP (IN of)
+            (NP (NNP Louisville)))))
+      (PP (IN for)
+        (NP (CD twenty) (NNS years)))
+      (PP (IN before)
+        (S
+          (VP (VBG retiring)
+            (PP (IN as)
+              (NP
+                (NP (DT the) (NNP Marcia)
+                  (NML (NNP S.) (NNP Hite))
+                  (NN professor))
+                (PP (IN of)
+                  (NP (NN painting)))))
+            (PP (IN in)
+              (NP (CD 1979)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			2	0-0	She 
+	1	taught
+			sense:	teach.v.01
+			prop:	teach.01
+			V		1-1	taught 
+			N-ARG-A0		0-0	She 
+			N-ARGM-LOC		2-6	at the University of Louisville 
+			N-ARGM-TMP		7-9	for twenty years 
+			N-ARGM-TMP		10-21	before retiring as the Marcia S. Hite professor of painting in 1979 
+	2	at
+	3	the
+	4	University
+			name:	ORGANIZATION				4-6	University of Louisville 
+	5	of
+	6	Louisville
+	7	for
+	8	twenty
+			name:	DURATION				8-9	twenty years 
+	9	years
+			sense:	year.n.01
+	10	before
+	11	retiring
+			sense:	retire.v.01
+			prop:	retire.01
+			V		11-11	retiring 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		12-19	as the Marcia S. Hite professor of painting 
+			N-ARGM-TMP		20-21	in 1979 
+	12	as
+	13	the
+	14	Marcia
+			name:	PERSON				14-16	Marcia S. Hite 
+	15	S.
+	16	Hite
+	17	professor
+			name:	TITLE				17-17	professor 
+			sense:	professor.n.01
+	18	of
+	19	painting
+			sense:	painting.n.02
+	20	in
+	21	1979
+			name:	DATE				21-21	1979 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Nay exhibited widely in solo and group shows , and was a member of the Provincetown Art Association , among other organizations .
+
+
+Treebanked sentence:
+--------------------
+Nay exhibited widely in solo and group shows , and was a member of the Provincetown Art Association , among other organizations . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (INTJ (UH Nay))
+    (VP (VBD exhibited)
+      (ADVP (RB widely))
+      (PP (IN in)
+        (NP
+          (NP (NN solo)
+            (CC and)
+            (NN group))
+          (SBAR
+            (S
+              (VP
+                (VP (VBZ shows))
+                (, ,)
+                (CC and)
+                (VP (VBD was)))))))
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP (DT the) (NNP Provincetown) (NNP Art) (NNP Association))))
+      (, ,)
+      (PP (IN among)
+        (NP (JJ other) (NNS organizations))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Nay
+	1	exhibited
+			sense:	show.v.01
+			prop:	exhibit.01
+			V		1-1	exhibited 
+			N-ARG-A0		0-0	Nay 
+			N-ARGM-LOC		3-7	in solo and group shows 
+	2	widely
+			sense:	wide.r.04
+	3	in
+	4	solo
+			sense:	solo.n.01
+	5	and
+	6	group
+			sense:	group.n.01
+	7	shows
+			sense:	show.v.01
+			prop:	show.01
+			V		7-7	shows 
+			N-ARGM-MNR		4-5	solo and 
+			N-ARGM-MNR		6-6	group 
+	8	,
+	9	and
+	10	was
+			sense:	be.v.01
+			prop:	be.01
+			V		10-10	was 
+			N-ARG-A1		0-0	Nay 
+			N-ARG-A2		11-21	a member of the Provincetown Art Association , among other organizations 
+	11	a
+	12	member
+			sense:	member.n.01
+	13	of
+	14	the
+	15	Provincetown
+			name:	ORGANIZATION				15-17	Provincetown Art Association 
+	16	Art
+	17	Association
+	18	,
+	19	among
+	20	other
+			sense:	other.a.01
+	21	organizations
+			sense:	organization.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Her work is in the collections of the Evansville Museum of Arts and Science and the Speed Art Museum , among others .
+
+
+Treebanked sentence:
+--------------------
+Her work is in the collections of the Evansville Museum of Arts and Science and the Speed Art Museum , among others . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ Her) (NN work))
+    (VP (VBZ is)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NNS collections))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP Evansville) (NNP Museum))
+              (PP (IN of)
+                (NP
+                  (NML
+                    (NML (NNPS Arts)
+                      (CC and)
+                      (NNP Science))
+                    (CC and)
+                    (NML (DT the) (NNP Speed)))
+                  (NNP Art) (NNP Museum)))))))
+      (, ,)
+      (PP (IN among)
+        (NP (NNS others))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Her
+			coref:	IDENT			2	0-0	Her 
+	1	work
+			sense:	work.n.02
+	2	is
+			sense:	be.v.03
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Her work 
+			N-ARG-A2		3-21	in the collections of the Evansville Museum of Arts and Science and the Speed Art Museum , among others 
+	3	in
+	4	the
+	5	collections
+			sense:	collection.n.01
+	6	of
+	7	the
+	8	Evansville
+			name:	ORGANIZATION				8-13	Evansville Museum of Arts and Science 
+	9	Museum
+	10	of
+	11	Arts
+	12	and
+	13	Science
+	14	and
+	15	the
+	16	Speed
+			name:	ORGANIZATION				16-18	Speed Art Museum 
+	17	Art
+	18	Museum
+	19	,
+	20	among
+	21	others
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Nay died of a gastrointestinal illness in Provincetown , and was survived by two daughters .
+
+
+Treebanked sentence:
+--------------------
+Nay died of a gastrointestinal illness in Provincetown , and was survived by two daughters . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (INTJ (UH Nay))
+    (VP
+      (VP (VBD died)
+        (PP (IN of)
+          (NP
+            (NP (DT a) (JJ gastrointestinal) (NN illness))
+            (PP (IN in)
+              (NP (NNP Provincetown))))))
+      (, ,)
+      (CC and)
+      (VP (VBD was)
+        (VP (VBN survived)
+          (PP (IN by)
+            (NP (CD two) (NNS daughters))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Nay
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	Nay 
+			N-ARGM-CAU		2-5	of a gastrointestinal illness 
+			N-ARGM-LOC		6-7	in Provincetown 
+	2	of
+	3	a
+	4	gastrointestinal
+			sense:	gastrointestinal.a.01
+	5	illness
+			name:	CAUSE_OF_DEATH				5-5	illness 
+			sense:	illness.n.01
+	6	in
+	7	Provincetown
+			coref:	IDENT			0	7-7	Provincetown 
+			name:	LOCATION				7-7	Provincetown 
+	8	,
+	9	and
+	10	was
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	was 
+	11	survived
+			sense:	survive.v.01
+			prop:	survive.01
+			V		11-11	survived 
+			N-ARG-A0		12-14	by two daughters 
+	12	by
+	13	two
+			name:	NUMBER				13-13	two 
+	14	daughters
+			sense:	daughter.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A scholarship in her honor at the University of Louisville was created by the Hite Art Institute in 1993 .
+
+
+Treebanked sentence:
+--------------------
+A scholarship in her honor at the University of Louisville was created by the Hite Art Institute in 1993 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN scholarship))
+      (PP (IN in)
+        (NP
+          (NP (PRP$ her) (NN honor))
+          (PP (IN at)
+            (NP
+              (NP (DT the) (NNP University))
+              (PP (IN of)
+                (NP (NNP Louisville))))))))
+    (VP (VBD was)
+      (VP (VBN created)
+        (PP (IN by)
+          (NP (DT the) (NNP Hite) (NNP Art) (NNP Institute)))
+        (PP (IN in)
+          (NP (CD 1993)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	scholarship
+			sense:	scholarship.n.01
+	2	in
+	3	her
+			coref:	IDENT			2	3-3	her 
+	4	honor
+			sense:	honor.n.02
+	5	at
+	6	the
+	7	University
+			name:	ORGANIZATION				7-9	University of Louisville 
+	8	of
+	9	Louisville
+	10	was
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	was 
+	11	created
+			sense:	create.v.02
+			prop:	create.01
+			V		11-11	created 
+			N-ARG-A1		0-9	A scholarship in her honor at the University of Louisville 
+			N-ARG-A0		12-16	by the Hite Art Institute 
+			N-ARGM-TMP		17-18	in 1993 
+	12	by
+	13	the
+	14	Hite
+			name:	ORGANIZATION				14-16	Hite Art Institute 
+	15	Art
+	16	Institute
+	17	in
+	18	1993
+			name:	DATE				18-18	1993 
+	19	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.17-17	Provincetown 
+				7.7-7	Provincetown 
+	Chain 1 (IDENT)
+				2.7-7	1942 
+				3.13-13	1942 
+	Chain 2 (IDENT)
+				2.0-0	She 
+				2.12-12	her 
+				3.0-0	She 
+				4.0-0	She 
+				6.0-0	Her 
+				8.3-3	her 
+

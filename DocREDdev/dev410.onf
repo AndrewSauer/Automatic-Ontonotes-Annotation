@@ -1,0 +1,517 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Yuri Viktorovich Ushakov ( ) ( born 13 March 1947 , in Moscow , Russia ) is a Russian career diplomat .
+
+
+Treebanked sentence:
+--------------------
+Yuri Viktorovich Ushakov ( ) ( born 13 March 1947 , in Moscow , Russia ) is a Russian career diplomat . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Yuri) (NNP Viktorovich) (NNP Ushakov) (-LRB- -LRB-) (-RRB- -RRB-))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP
+          (NP (CD 13))
+          (NP-TMP (NNP March) (CD 1947)))
+        (, ,)
+        (PP (IN in)
+          (NP (NNP Moscow) (, ,) (NNP Russia))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (JJ Russian) (NN career) (NN diplomat)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Yuri
+			coref:	IDENT			2	0-2	Yuri Viktorovich Ushakov 
+			name:	PERSON				0-2	Yuri Viktorovich Ushakov 
+	1	Viktorovich
+	2	Ushakov
+	3	(
+	4	)
+	5	(
+	6	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		6-6	born 
+			N-ARG-A1		0-2	Yuri Viktorovich Ushakov 
+			N-ARGM-TMP		7-9	13 March 1947 
+			N-ARGM-LOC		11-14	in Moscow , Russia 
+	7	13
+			name:	DATE				7-9	13 March 1947 
+	8	March
+	9	1947
+	10	,
+	11	in
+	12	Moscow
+			name:	CITY				12-12	Moscow 
+	13	,
+	14	Russia
+			coref:	IDENT			1	14-14	Russia 
+			name:	COUNTRY				14-14	Russia 
+	15	)
+	16	is
+			sense:	be.v.02
+			prop:	be.01
+			V		16-16	is 
+			N-ARG-A1		0-15	Yuri Viktorovich Ushakov ( ) ( born 13 March 1947 , in Moscow , Russia ) 
+			N-ARG-A2		17-20	a Russian career diplomat 
+	17	a
+	18	Russian
+			name:	NATIONALITY				18-18	Russian 
+	19	career
+			sense:	career.n.01
+	20	diplomat
+			name:	TITLE				20-20	diplomat 
+			sense:	diplomat.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ushakov is a graduate of Moscow State Institute of International Relations ( MGIMO ) and was the Russian Ambassador to OSCE from 1996 to 1998 .
+
+
+Treebanked sentence:
+--------------------
+Ushakov is a graduate of Moscow State Institute of International Relations ( MGIMO ) and was the Russian Ambassador to OSCE from 1996 to 1998 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Ushakov))
+    (VP
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (NN graduate))
+          (PP (IN of)
+            (NP
+              (NP (NNP Moscow) (NNP State) (NNP Institute))
+              (PP (IN of)
+                (NP (NNP International) (NNPS Relations)
+                  (PRN (-LRB- -LRB-)
+                    (NP (NNP MGIMO))
+                    (-RRB- -RRB-))))))))
+      (CC and)
+      (VP (VBD was)
+        (NP (DT the) (JJ Russian) (NNP Ambassador))
+        (PP (IN to)
+          (NP (NNP OSCE)))
+        (PP (IN from)
+          (NP (CD 1996)))
+        (PP (IN to)
+          (NP (CD 1998)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ushakov
+			coref:	IDENT			2	0-0	Ushakov 
+			name:	PERSON				0-0	Ushakov 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Ushakov 
+			N-ARG-A2		2-13	a graduate of Moscow State Institute of International Relations ( MGIMO ) 
+	2	a
+	3	graduate
+			sense:	alumnus.n.01
+	4	of
+	5	Moscow
+			name:	ORGANIZATION				5-10	Moscow State Institute of International Relations 
+	6	State
+	7	Institute
+	8	of
+	9	International
+	10	Relations
+	11	(
+	12	MGIMO
+			name:	ORGANIZATION				12-12	MGIMO 
+	13	)
+	14	and
+	15	was
+			sense:	be.v.08
+			prop:	be.01
+			V		15-15	was 
+			N-ARG-A1		0-0	Ushakov 
+			N-ARG-A2		16-20	the Russian Ambassador to OSCE 
+			N-ARGM-TMP		21-24	from 1996 to 1998 
+	16	the
+	17	Russian
+			name:	NATIONALITY				17-17	Russian 
+	18	Ambassador
+			name:	TITLE				18-18	Ambassador 
+	19	to
+	20	OSCE
+			name:	ORGANIZATION				20-20	OSCE 
+	21	from
+	22	1996
+			name:	DATE				22-24	1996 to 1998 
+	23	to
+	24	1998
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was appointed Ambassador of the Russian Federation to the United States in January 1999 , and he was released from his posting by the Russian President , Dmitry Medvedev , on 2 June 2008 .
+
+
+Treebanked sentence:
+--------------------
+He was appointed Ambassador of the Russian Federation to the United States in January 1999 , and he was released from his posting by the Russian President , Dmitry Medvedev , on 2 June 2008 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD was)
+        (VP (VBN appointed)
+          (NP
+            (NP (NNP Ambassador))
+            (PP (IN of)
+              (NP (DT the) (NNP Russian) (NNP Federation))))
+          (PP (IN to)
+            (NP (DT the) (NNP United) (NNP States)))
+          (PP (IN in)
+            (NP (NNP January) (CD 1999))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBD was)
+        (VP (VBN released)
+          (PP (IN from)
+            (NP (PRP$ his) (NN posting)))
+          (PP (IN by)
+            (NP
+              (NP
+                (NP (DT the) (JJ Russian) (NNP President))
+                (, ,)
+                (NP (NNP Dmitry) (NNP Medvedev))
+                (, ,))
+              (PP (IN on)
+                (NP (CD 2)))))
+          (NP-TMP (NNP June) (CD 2008)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	appointed
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		2-2	appointed 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		3-11	Ambassador of the Russian Federation to the United States 
+			N-ARGM-TMP		12-14	in January 1999 
+	3	Ambassador
+			name:	TITLE				3-3	Ambassador 
+	4	of
+	5	the
+			coref:	IDENT			0	5-7	the Russian Federation 
+	6	Russian
+			name:	ORGANIZATION				6-7	Russian Federation 
+	7	Federation
+	8	to
+	9	the
+	10	United
+			name:	COUNTRY				10-11	United States 
+	11	States
+	12	in
+	13	January
+			name:	DATE				13-14	January 1999 
+	14	1999
+	15	,
+	16	and
+	17	he
+			coref:	IDENT			2	17-17	he 
+	18	was
+			sense:	be.v.01
+			prop:	be.03
+			V		18-18	was 
+	19	released
+			sense:	release.v.08
+			prop:	release.01
+			V		19-19	released 
+			N-ARG-A1		17-17	he 
+			N-ARG-A2		20-22	from his posting 
+			N-ARG-A0		23-29	by the Russian President , Dmitry Medvedev 
+			N-ARGM-TMP		31-34	on 2 June 2008 
+	20	from
+	21	his
+			coref:	IDENT			2	21-21	his 
+	22	posting
+			sense:	posting.n.02
+	23	by
+	24	the
+	25	Russian
+			name:	NATIONALITY				25-25	Russian 
+	26	President
+			name:	TITLE				26-26	President 
+	27	,
+	28	Dmitry
+			name:	PERSON				28-29	Dmitry Medvedev 
+	29	Medvedev
+	30	,
+	31	on
+	32	2
+			name:	DATE				32-34	2 June 2008 
+	33	June
+	34	2008
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+From June 2008 to May 2012 Ushakov was Deputy Chief of the Government Staff of the Russian Federation .
+
+
+Treebanked sentence:
+--------------------
+From June 2008 to May 2012 Ushakov was Deputy Chief of the Government Staff of the Russian Federation . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN From)
+      (NP
+        (NP (NNP June) (CD 2008))
+        (PP (IN to)
+          (NP (NNP May) (CD 2012)))))
+    (NP (NNP Ushakov))
+    (VP (VBD was)
+      (NP
+        (NP (NNP Deputy) (NNP Chief))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Government) (NNP Staff))
+            (PP (IN of)
+              (NP (DT the) (NNP Russian) (NNP Federation)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	From
+	1	June
+			name:	DATE				1-2	June 2008 
+	2	2008
+	3	to
+	4	May
+			name:	DATE				4-5	May 2012 
+	5	2012
+	6	Ushakov
+			coref:	IDENT			2	6-6	Ushakov 
+			name:	PERSON				6-6	Ushakov 
+	7	was
+			sense:	be.v.08
+			prop:	be.01
+			V		7-7	was 
+			N-ARGM-TMP		0-5	From June 2008 to May 2012 
+			N-ARG-A1		6-6	Ushakov 
+			N-ARG-A2		8-17	Deputy Chief of the Government Staff of the Russian Federation 
+	8	Deputy
+			name:	TITLE				8-8	Deputy 
+	9	Chief
+	10	of
+	11	the
+	12	Government
+	13	Staff
+	14	of
+	15	the
+			coref:	IDENT			0	15-17	the Russian Federation 
+	16	Russian
+			name:	COUNTRY				16-17	Russian Federation 
+	17	Federation
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Since May 2012 he has been Aide to the President of the Russian Federation responsible for international affairs in the Presidential Administration .
+
+
+Treebanked sentence:
+--------------------
+Since May 2012 he has been Aide to the President of the Russian Federation responsible for international affairs in the Presidential Administration . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Since)
+      (NP (NNP May) (CD 2012)))
+    (NP (PRP he))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (NP (NN Aide))
+        (PP (IN to)
+          (NP
+            (NP (DT the) (NNP President))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNP Russian) (NNP Federation))
+                (ADJP (JJ responsible)
+                  (PP (IN for)
+                    (NP
+                      (NP (JJ international) (NNS affairs))
+                      (PP (IN in)
+                        (NP (DT the) (NNP Presidential) (NNP Administration))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Since
+	1	May
+			name:	DATE				1-2	May 2012 
+	2	2012
+	3	he
+			coref:	IDENT			2	3-3	he 
+	4	has
+			sense:	have.v.01
+			prop:	have.01
+			V		4-4	has 
+	5	been
+			sense:	be.v.08
+			prop:	be.01
+			V		5-5	been 
+			N-ARGM-TMP		0-2	Since May 2012 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		6-21	Aide to the President of the Russian Federation responsible for international affairs in the Presidential Administration 
+	6	Aide
+			sense:	aide.n.02
+	7	to
+	8	the
+	9	President
+			name:	TITLE				9-9	President 
+	10	of
+	11	the
+			coref:	IDENT			0	11-21	the Russian Federation responsible for international affairs in the Presidential Administration 
+	12	Russian
+			name:	COUNTRY				12-13	Russian Federation 
+	13	Federation
+	14	responsible
+			sense:	responsible.a.01
+	15	for
+	16	international
+			sense:	international.a.01
+	17	affairs
+			sense:	matter.n.01
+	18	in
+	19	the
+	20	Presidential
+			name:	ORGANIZATION				20-21	Presidential Administration 
+	21	Administration
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He commented on the Beslan school massacre in North Ossetia - Alania , Russia :
+
+
+Treebanked sentence:
+--------------------
+He commented on the Beslan school massacre in North Ossetia - Alania , Russia : 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD commented)
+      (PP (IN on)
+        (NP (DT the) (NNP Beslan) (NN school) (NN massacre)))
+      (PP (IN in)
+        (NP
+          (NP (NNP North) (NNP Ossetia) (HYPH -) (NNP Alania))
+          (, ,)
+          (NP (NNP Russia)))))
+    (: :)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	commented
+			sense:	comment.v.01
+			prop:	comment.01
+			V		1-1	commented 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-13	on the Beslan school massacre in North Ossetia - Alania , Russia 
+	2	on
+	3	the
+	4	Beslan
+			name:	LOCATION				4-4	Beslan 
+	5	school
+			sense:	school.n.01
+	6	massacre
+			sense:	slaughter.n.03
+	7	in
+	8	North
+			name:	LOCATION				8-11	North Ossetia - Alania 
+	9	Ossetia
+	10	-
+	11	Alania
+	12	,
+	13	Russia
+			coref:	IDENT			1	13-13	Russia 
+			name:	COUNTRY				13-13	Russia 
+	14	:
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.11-21	the Russian Federation responsible for international affairs in the Presidential Administration 
+				2.5-7	the Russian Federation 
+				3.15-17	the Russian Federation 
+	Chain 1 (IDENT)
+				0.14-14	Russia 
+				5.13-13	Russia 
+	Chain 2 (IDENT)
+				0.0-2	Yuri Viktorovich Ushakov 
+				1.0-0	Ushakov 
+				2.0-0	He 
+				2.17-17	he 
+				2.21-21	his 
+				3.6-6	Ushakov 
+				4.3-3	he 
+				5.0-0	He 
+

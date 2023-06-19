@@ -1,0 +1,813 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mary Catherine Crawford ( born 12 April 1947 ) was an Australian politician .
+
+
+Treebanked sentence:
+--------------------
+Mary Catherine Crawford ( born 12 April 1947 ) was an Australian politician . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Mary) (NNP Catherine) (NNP Crawford))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 12))
+        (NP-TMP (NNP April) (CD 1947)))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT an) (JJ Australian) (NN politician)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mary
+			coref:	IDENT			0	0-2	Mary Catherine Crawford 
+			name:	PERSON				0-2	Mary Catherine Crawford 
+	1	Catherine
+	2	Crawford
+	3	(
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-2	Mary Catherine Crawford 
+			N-ARGM-TMP		5-7	12 April 1947 
+	5	12
+			name:	DATE				5-7	12 April 1947 
+	6	April
+	7	1947
+	8	)
+	9	was
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	was 
+			N-ARG-A1		0-8	Mary Catherine Crawford ( born 12 April 1947 ) 
+			N-ARG-A2		10-12	an Australian politician 
+	10	an
+	11	Australian
+			name:	NATIONALITY				11-11	Australian 
+	12	politician
+			name:	TITLE				12-12	politician 
+			sense:	politician.n.02
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in Toowoomba , Queensland , she was educated at the University of Queensland before becoming a teacher .
+
+
+Treebanked sentence:
+--------------------
+Born in Toowoomba , Queensland , she was educated at the University of Queensland before becoming a teacher . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP (NNP Toowoomba) (, ,) (NNP Queensland)))))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBD was)
+      (VP (VBN educated)
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Queensland)))))
+        (PP (IN before)
+          (S
+            (VP (VBG becoming)
+              (NP (DT a) (NN teacher)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-4	in Toowoomba , Queensland 
+			N-ARG-A1		6-6	she 
+	1	in
+	2	Toowoomba
+			name:	CITY				2-2	Toowoomba 
+	3	,
+	4	Queensland
+			name:	LOCATION				4-4	Queensland 
+	5	,
+	6	she
+			coref:	IDENT			0	6-6	she 
+	7	was
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	was 
+	8	educated
+			sense:	educate.v.01
+			prop:	educate.01
+			V		8-8	educated 
+			N-ARGM-PRD		0-4	Born in Toowoomba , Queensland 
+			N-ARG-A1		6-6	she 
+			N-ARGM-LOC		9-13	at the University of Queensland 
+			N-ARGM-TMP		14-17	before becoming a teacher 
+	9	at
+	10	the
+	11	University
+			name:	ORGANIZATION				11-13	University of Queensland 
+	12	of
+	13	Queensland
+	14	before
+	15	becoming
+			sense:	become.v.02
+			prop:	become.01
+			V		15-15	becoming 
+			N-ARG-A1		6-6	she 
+			N-ARG-A2		16-17	a teacher 
+	16	a
+	17	teacher
+			name:	TITLE				17-17	teacher 
+			sense:	teacher.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1987 , she was elected to the Australian House of Representatives as the Labor member for Forde .
+
+
+Treebanked sentence:
+--------------------
+In 1987 , she was elected to the Australian House of Representatives as the Labor member for Forde . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1987)))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (PP (IN to)
+          (NP
+            (NP (DT the) (JJ Australian) (NNP House))
+            (PP (IN of)
+              (NP (NNPS Representatives)))))
+        (PP (IN as)
+          (NP
+            (NP (DT the) (NNP Labor) (NN member))
+            (PP (IN for)
+              (NP (NNP Forde)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1987
+			name:	DATE				1-1	1987 
+	2	,
+	3	she
+			coref:	IDENT			0	3-3	she 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		5-5	elected 
+			N-ARGM-TMP		0-1	In 1987 
+			N-ARG-A1		3-3	she 
+			N-ARG-A2		6-11	to the Australian House of Representatives 
+			N-ARGM-PRD		12-17	as the Labor member for Forde 
+	6	to
+	7	the
+	8	Australian
+			name:	NATIONALITY				8-8	Australian 
+	9	House
+			name:	ORGANIZATION				9-11	House of Representatives 
+	10	of
+	11	Representatives
+	12	as
+	13	the
+	14	Labor
+			name:	ORGANIZATION				14-14	Labor 
+	15	member
+			sense:	member.n.01
+	16	for
+	17	Forde
+			coref:	IDENT			1	17-17	Forde 
+			name:	PERSON				17-17	Forde 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On 25 March 1994 she was appointed Parliamentary Secretary to the Minister for Housing and Regional Development , a position she held until the defeat of the Keating Government in the 1996 election , in which Crawford lost her seat .
+
+
+Treebanked sentence:
+--------------------
+On 25 March 1994 she was appointed Parliamentary Secretary to the Minister for Housing and Regional Development , a position she held until the defeat of the Keating Government in the 1996 election , in which Crawford lost her seat . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP
+        (NP (CD 25))
+        (NP-TMP (NNP March) (CD 1994))))
+    (NP (PRP she))
+    (VP (VBD was)
+      (VP (VBN appointed)
+        (NP (JJ Parliamentary) (NNP Secretary))
+        (PP (IN to)
+          (NP
+            (NP
+              (NP (DT the) (NNP Minister))
+              (PP (IN for)
+                (NP (NNP Housing))))
+            (CC and)
+            (NP
+              (NP (NNP Regional) (NNP Development))
+              (, ,)
+              (NP
+                (NP (DT a) (NN position))
+                (SBAR
+                  (S
+                    (NP (PRP she))
+                    (VP (VBD held)
+                      (PP (IN until)
+                        (NP
+                          (NP (DT the) (NN defeat))
+                          (PP (IN of)
+                            (NP (DT the) (NNP Keating) (NNP Government)))))
+                      (PP (IN in)
+                        (NP
+                          (NP (DT the) (CD 1996) (NN election))
+                          (, ,)
+                          (SBAR
+                            (WHPP (IN in)
+                              (WHNP (WDT which)))
+                            (S
+                              (NP (NNP Crawford))
+                              (VP (VBD lost)
+                                (NP (PRP$ her) (NN seat))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	25
+			name:	DATE				1-3	25 March 1994 
+	2	March
+	3	1994
+	4	she
+			coref:	IDENT			0	4-4	she 
+	5	was
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	was 
+	6	appointed
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		6-6	appointed 
+			N-ARGM-TMP		0-3	On 25 March 1994 
+			N-ARG-A1		4-4	she 
+			N-ARG-A2		7-39	Parliamentary Secretary to the Minister for Housing and Regional Development , a position she held until the defeat of the Keating Government in the 1996 election , in which Crawford lost her seat 
+	7	Parliamentary
+			sense:	parliamentary.a.01
+	8	Secretary
+			name:	TITLE				8-8	Secretary 
+	9	to
+	10	the
+	11	Minister
+			name:	TITLE				11-11	Minister 
+	12	for
+	13	Housing
+			name:	ORGANIZATION				13-16	Housing and Regional Development 
+	14	and
+	15	Regional
+	16	Development
+	17	,
+	18	a
+	19	position
+			sense:	position.n.06
+	20	she
+			coref:	IDENT			0	20-20	she 
+	21	held
+			sense:	bear.v.11
+			prop:	hold.01
+			V		21-21	held 
+			N-ARG-A1		18-19	a position 
+			N-ARG-A0		20-20	she 
+			N-ARGM-TMP		22-39	until the defeat of the Keating Government in the 1996 election , in which Crawford lost her seat 
+	22	until
+	23	the
+	24	defeat
+			sense:	defeat.n.01
+	25	of
+	26	the
+	27	Keating
+	28	Government
+	29	in
+	30	the
+	31	1996
+			name:	DATE				31-31	1996 
+	32	election
+			sense:	election.n.01
+	33	,
+	34	in
+	35	which
+	36	Crawford
+			coref:	IDENT			0	36-36	Crawford 
+			name:	PERSON				36-36	Crawford 
+	37	lost
+			sense:	lose.v.01
+			prop:	lose.02
+			V		37-37	lost 
+			N-ARGM-LOC		30-32	the 1996 election 
+			R-ARGM-LOC		34-35	in which 
+			N-ARG-A0		36-36	Crawford 
+			N-ARG-A1		38-39	her seat 
+	38	her
+			coref:	IDENT			0	38-38	her 
+			coref:	IDENT			2	38-39	her seat 
+	39	seat
+			sense:	seat.n.07
+	40	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Crawford had previously held her seat with a fairly safe majority of 8.6 percent .
+
+
+Treebanked sentence:
+--------------------
+Crawford had previously held her seat with a fairly safe majority of 8.6 percent . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Crawford))
+    (VP (VBD had)
+      (ADVP (RB previously))
+      (VP (VBN held)
+        (NP (PRP$ her) (NN seat))
+        (PP (IN with)
+          (NP
+            (NP (DT a)
+              (ADJP (RB fairly) (JJ safe))
+              (NN majority))
+            (PP (IN of)
+              (NP (CD 8.6) (NN percent)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Crawford
+			coref:	IDENT			0	0-0	Crawford 
+			name:	PERSON				0-0	Crawford 
+	1	had
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	had 
+	2	previously
+			name:	DATE				2-2	previously 
+			sense:	previously.r.01
+	3	held
+			sense:	bear.v.11
+			prop:	hold.01
+			V		3-3	held 
+			N-ARG-A0		0-0	Crawford 
+			N-ARGM-TMP		2-2	previously 
+			N-ARG-A1		4-5	her seat 
+			N-ARGM-ADV		6-13	with a fairly safe majority of 8.6 percent 
+	4	her
+			coref:	IDENT			0	4-4	her 
+			coref:	IDENT			2	4-5	her seat 
+	5	seat
+			sense:	seat.n.07
+	6	with
+	7	a
+	8	fairly
+			sense:	reasonably.r.01
+	9	safe
+			sense:	safe.a.01
+	10	majority
+			sense:	majority.n.02
+	11	of
+	12	8.6
+			name:	PERCENT				12-13	8.6 percent 
+	13	percent
+			sense:	percentage.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+However , a redistribution ahead of the election pushed Forde into some rural , conservative - leaning territory in the Scenic Rim .
+
+
+Treebanked sentence:
+--------------------
+However , a redistribution ahead of the election pushed Forde into some rural , conservative - leaning territory in the Scenic Rim . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP
+      (NP (DT a) (NN redistribution))
+      (PP (RB ahead) (IN of)
+        (NP (DT the) (NN election))))
+    (VP (VBD pushed)
+      (NP (NNP Forde))
+      (PP (IN into)
+        (NP
+          (NP (DT some) (JJ rural) (, ,)
+            (ADJP (JJ conservative) (HYPH -) (VBG leaning))
+            (NN territory))
+          (PP (IN in)
+            (NP (DT the) (JJ Scenic) (NNP Rim))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	However
+			sense:	however.r.01
+	1	,
+	2	a
+	3	redistribution
+			sense:	redistribution.n.01
+	4	ahead
+			sense:	ahead.r.04
+	5	of
+	6	the
+	7	election
+			sense:	election.n.01
+	8	pushed
+			sense:	push.v.01
+			prop:	push.01
+			V		8-8	pushed 
+			N-ARGM-DIS		0-0	However 
+			N-ARG-A0		2-7	a redistribution ahead of the election 
+			N-ARG-A1		9-9	Forde 
+			N-ARG-A2		10-21	into some rural , conservative - leaning territory in the Scenic Rim 
+	9	Forde
+			coref:	IDENT			1	9-9	Forde 
+			name:	PERSON				9-9	Forde 
+	10	into
+	11	some
+	12	rural
+			sense:	rural.a.01
+	13	,
+	14	conservative
+			name:	IDEOLOGY				14-14	conservative 
+			sense:	conservative.s.02
+	15	-
+	16	leaning
+			sense:	tend.v.01
+			prop:	lean.01
+			V		16-16	leaning 
+			N-ARG-A2		14-14	conservative 
+			N-ARG-A1		17-17	territory 
+	17	territory
+			sense:	district.n.01
+	18	in
+	19	the
+	20	Scenic
+			sense:	scenic.s.01
+	21	Rim
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This wiped out Crawford 's majority , reducing it to an extremely marginal 0.1 percent .
+
+
+Treebanked sentence:
+--------------------
+This wiped out Crawford 's majority , reducing it to an extremely marginal 0.1 percent . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBD wiped)
+      (PRT (RP out))
+      (NP
+        (NP (NNP Crawford) (POS 's))
+        (NN majority))
+      (, ,)
+      (S
+        (VP (VBG reducing)
+          (NP (PRP it))
+          (PP (IN to)
+            (NP (DT an)
+              (ADJP (RB extremely) (JJ marginal))
+              (NML (CD 0.1) (NN percent)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+	1	wiped
+			sense:	wipe.v.01
+			prop:	wipe.02
+			V		1-1	wiped 
+			N-ARG-A0		0-0	This 
+			N-ARG-A1		3-5	Crawford 's majority 
+			N-ARGM-ADV		7-14	reducing it to an extremely marginal 0.1 percent 
+	2	out
+	3	Crawford
+			coref:	IDENT			0	3-4	Crawford 's 
+			name:	PERSON				3-3	Crawford 
+	4	's
+	5	majority
+			sense:	majority.n.02
+	6	,
+	7	reducing
+			sense:	reduce.v.01
+			prop:	reduce.01
+			V		7-7	reducing 
+			N-ARG-A0		0-0	This 
+			N-ARG-A1		8-8	it 
+			N-ARG-A4		9-14	to an extremely marginal 0.1 percent 
+	8	it
+	9	to
+	10	an
+	11	extremely
+			sense:	extremely.r.02
+	12	marginal
+			sense:	bare.s.05
+	13	0.1
+			name:	PERCENT				13-14	0.1 percent 
+	14	percent
+			sense:	percentage.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Believing that this made Forde difficult — if not impossible — to hold , Crawford tried to transfer to the friendlier seat of Rankin , but was rebuffed by the party 's organisational wing .
+
+
+Treebanked sentence:
+--------------------
+Believing that this made Forde difficult — if not impossible — to hold , Crawford tried to transfer to the friendlier seat of Rankin , but was rebuffed by the party 's organisational wing . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (S
+        (VP (VBG Believing)
+          (SBAR (IN that))))
+      (S
+        (NP (DT this))
+        (VP (VBN made)
+          (S
+            (NP (NNP Forde))
+            (ADJP (JJ difficult))))))
+    (HYPH —)
+    (S
+      (SBAR (IN if)
+        (FRAG
+          (ADJP (RB not) (JJ impossible)
+            (SBAR
+              (S (HYPH —)
+                (VP (TO to)
+                  (VP (VB hold))))))))
+      (, ,)
+      (NP (NNP Crawford))
+      (VP
+        (VP (VBD tried)
+          (S
+            (VP (TO to)
+              (VP (VB transfer)
+                (PP (IN to)
+                  (NP
+                    (NP (DT the) (JJR friendlier) (NN seat))
+                    (PP (IN of)
+                      (NP (NNP Rankin)))))))))
+        (, ,)
+        (CC but)
+        (VP (VBD was)
+          (VP (VBN rebuffed)
+            (PP (IN by)
+              (NP
+                (NP (DT the) (NN party) (POS 's))
+                (JJ organisational) (NN wing)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Believing
+			sense:	believe.v.03
+			prop:	believe.01
+			V		0-0	Believing 
+			N-ARG-A1		1-12	that this made Forde difficult — if not impossible — to hold 
+			N-ARG-A0		14-14	Crawford 
+	1	that
+	2	this
+	3	made
+			sense:	make.v.02
+			prop:	make.02
+			V		3-3	made 
+			N-ARG-A0		2-2	this 
+			N-ARG-A1		4-12	Forde difficult — if not impossible — to hold 
+	4	Forde
+			coref:	IDENT			1	4-4	Forde 
+			name:	PERSON				4-4	Forde 
+	5	difficult
+			sense:	difficult.a.01
+	6	—
+	7	if
+	8	not
+			sense:	not.r.01
+	9	impossible
+			sense:	impossible.a.01
+	10	—
+	11	to
+	12	hold
+			sense:	keep.v.01
+			prop:	hold.01
+			V		12-12	hold 
+			N-ARG-A1		4-4	Forde 
+	13	,
+	14	Crawford
+			coref:	IDENT			0	14-14	Crawford 
+			name:	PERSON				14-14	Crawford 
+	15	tried
+			sense:	try.v.01
+			prop:	try.01
+			V		15-15	tried 
+			R-ARG-A0		0-12	Believing that this made Forde difficult — if not impossible — to hold 
+			N-ARG-A0		14-14	Crawford 
+			N-ARG-A1		16-23	to transfer to the friendlier seat of Rankin 
+	16	to
+	17	transfer
+			sense:	transfer.v.01
+			prop:	transfer.01
+			V		17-17	transfer 
+			N-ARG-A1		14-14	Crawford 
+			N-ARG-A2		18-23	to the friendlier seat of Rankin 
+	18	to
+	19	the
+	20	friendlier
+			sense:	friendly.s.02
+	21	seat
+			sense:	seat.n.05
+	22	of
+	23	Rankin
+			name:	PERSON				23-23	Rankin 
+	24	,
+	25	but
+	26	was
+			sense:	be.v.01
+			prop:	be.03
+			V		26-26	was 
+	27	rebuffed
+			sense:	rebuff.v.01
+			prop:	rebuff.01
+			V		27-27	rebuffed 
+			N-ARG-A1		14-14	Crawford 
+			N-ARG-A0		28-33	by the party 's organisational wing 
+	28	by
+	29	the
+	30	party
+			sense:	party.n.01
+	31	's
+	32	organisational
+			sense:	organizational.a.01
+	33	wing
+			sense:	wing.n.08
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She was defeated by Liberal Kay Elson on a nine - percent swing .
+
+
+Treebanked sentence:
+--------------------
+She was defeated by Liberal Kay Elson on a nine - percent swing . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD was)
+      (VP (VBN defeated)
+        (PP (IN by)
+          (NP (JJ Liberal) (NNP Kay) (NNP Elson)))
+        (PP (IN on)
+          (NP (DT a)
+            (NML (CD nine) (HYPH -) (NN percent))
+            (NN swing)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	defeated
+			sense:	get_the_better_of.v.01
+			prop:	defeat.01
+			V		2-2	defeated 
+			N-ARG-A1		0-0	She 
+			N-ARG-A0		3-6	by Liberal Kay Elson 
+	3	by
+	4	Liberal
+			name:	ORGANIZATION				4-4	Liberal 
+			sense:	liberal.s.02
+	5	Kay
+			name:	PERSON				5-6	Kay Elson 
+	6	Elson
+	7	on
+	8	a
+	9	nine
+			name:	NUMBER				9-9	nine 
+	10	-
+	11	percent
+			sense:	percentage.n.01
+	12	swing
+			sense:	swing.n.04
+	13	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-2	Mary Catherine Crawford 
+				1.6-6	she 
+				2.3-3	she 
+				3.4-4	she 
+				3.20-20	she 
+				3.36-36	Crawford 
+				3.38-38	her 
+				4.0-0	Crawford 
+				4.4-4	her 
+				6.3-4	Crawford 's 
+				7.14-14	Crawford 
+				8.0-0	She 
+	Chain 1 (IDENT)
+				2.17-17	Forde 
+				5.9-9	Forde 
+				7.4-4	Forde 
+	Chain 2 (IDENT)
+				3.38-39	her seat 
+				4.4-5	her seat 
+

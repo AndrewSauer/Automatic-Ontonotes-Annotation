@@ -1,0 +1,881 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+John W. A. Sanford ( August 28 , 1798 – September 12 , 1870 ) was a United States Representative and farmer from Georgia .
+
+
+Treebanked sentence:
+--------------------
+John W. A. Sanford ( August 28 , 1798 – September 12 , 1870 ) was a United States Representative and farmer from Georgia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP John) (NNP W.) (NNP A.) (NNP Sanford))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP August) (CD 28) (, ,) (CD 1798))
+        (PP (SYM –)
+          (NP (NNP September) (CD 12) (, ,) (CD 1870))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NNP United) (NNP States) (NNP Representative))
+        (CC and)
+        (NP
+          (NP (NN farmer))
+          (PP (IN from)
+            (NP (NNP Georgia))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	John
+			coref:	IDENT			2	0-3	John W. A. Sanford 
+			name:	PERSON				0-3	John W. A. Sanford 
+	1	W.
+	2	A.
+	3	Sanford
+	4	(
+	5	August
+			name:	DATE				5-8	August 28 , 1798 
+	6	28
+	7	,
+	8	1798
+	9	–
+	10	September
+			name:	DATE				10-13	September 12 , 1870 
+	11	12
+	12	,
+	13	1870
+	14	)
+	15	was
+			sense:	be.v.02
+			prop:	be.01
+			V		15-15	was 
+			N-ARG-A1		0-14	John W. A. Sanford ( August 28 , 1798 – September 12 , 1870 ) 
+			N-ARG-A2		16-23	a United States Representative and farmer from Georgia 
+	16	a
+	17	United
+			name:	COUNTRY				17-18	United States 
+	18	States
+	19	Representative
+			name:	TITLE				19-19	Representative 
+	20	and
+	21	farmer
+			name:	TITLE				21-21	farmer 
+			sense:	farmer.n.01
+	22	from
+	23	Georgia
+			coref:	IDENT			1	23-23	Georgia 
+			name:	STATE_OR_PROVINCE				23-23	Georgia 
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sanford was born near Milledgeville , Georgia , in 1798 .
+
+
+Treebanked sentence:
+--------------------
+Sanford was born near Milledgeville , Georgia , in 1798 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Sanford))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN near)
+          (NP (NNP Milledgeville) (, ,) (NNP Georgia) (, ,)))
+        (PP (IN in)
+          (NP (CD 1798)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sanford
+			coref:	IDENT			2	0-0	Sanford 
+			name:	PERSON				0-0	Sanford 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Sanford 
+			N-ARGM-LOC		3-6	near Milledgeville , Georgia 
+			N-ARGM-TMP		8-9	in 1798 
+	3	near
+	4	Milledgeville
+			coref:	IDENT			0	4-4	Milledgeville 
+			name:	CITY				4-4	Milledgeville 
+	5	,
+	6	Georgia
+			name:	STATE_OR_PROVINCE				6-6	Georgia 
+	7	,
+	8	in
+	9	1798
+			name:	DATE				9-9	1798 
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He attended Yale University and was a farmer .
+
+
+Treebanked sentence:
+--------------------
+He attended Yale University and was a farmer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD attended)
+        (NP (NNP Yale) (NNP University)))
+      (CC and)
+      (VP (VBD was)
+        (NP (DT a) (NN farmer))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	attended
+			sense:	attend.v.01
+			prop:	attend.01
+			V		1-1	attended 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-3	Yale University 
+	2	Yale
+			name:	ORGANIZATION				2-3	Yale University 
+	3	University
+	4	and
+	5	was
+			sense:	be.v.08
+			prop:	be.01
+			V		5-5	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		6-7	a farmer 
+	6	a
+	7	farmer
+			name:	TITLE				7-7	farmer 
+			sense:	farmer.n.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1832 , he was elected a major general , 3rd Division Georgia Militia , by the Georgia Legislature .
+
+
+Treebanked sentence:
+--------------------
+In 1832 , he was elected a major general , 3rd Division Georgia Militia , by the Georgia Legislature . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1832)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (NP
+          (NP (DT a) (JJ major) (JJ general))
+          (, ,)
+          (NP
+            (NML (JJ 3rd) (NNP Division))
+            (NNP Georgia) (NNP Militia))
+          (, ,))
+        (PP (IN by)
+          (NP (DT the) (NNP Georgia) (NNP Legislature)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1832
+			name:	DATE				1-1	1832 
+	2	,
+	3	he
+			coref:	IDENT			2	3-3	he 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		5-5	elected 
+			N-ARGM-TMP		0-1	In 1832 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		6-13	a major general , 3rd Division Georgia Militia 
+			N-ARG-A0		15-18	by the Georgia Legislature 
+	6	a
+	7	major
+			name:	TITLE				7-8	major general 
+			sense:	major.a.01
+	8	general
+			sense:	general.a.01
+	9	,
+	10	3rd
+			name:	ORGANIZATION				10-13	3rd Division Georgia Militia 
+			sense:	third.s.01
+	11	Division
+	12	Georgia
+	13	Militia
+	14	,
+	15	by
+	16	the
+	17	Georgia
+			name:	ORGANIZATION				17-18	Georgia Legislature 
+	18	Legislature
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1834 , Sanford was elected as a Jacksonian Representative from Georgia to the 24th United States Congress , but he resigned before the end of his term to participate in the removal of the Cherokee from the state .
+
+
+Treebanked sentence:
+--------------------
+In 1834 , Sanford was elected as a Jacksonian Representative from Georgia to the 24th United States Congress , but he resigned before the end of his term to participate in the removal of the Cherokee from the state . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN In)
+        (NP (CD 1834)))
+      (, ,)
+      (NP (NNP Sanford))
+      (VP (VBD was)
+        (VP (VBN elected)
+          (PP (IN as)
+            (NP (DT a) (NNP Jacksonian) (NNP Representative)))
+          (PP (IN from)
+            (NP (NNP Georgia)))
+          (PP (IN to)
+            (NP (DT the) (JJ 24th) (NNP United) (NNP States) (NNP Congress))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP he))
+      (VP (VBD resigned)
+        (PP (IN before)
+          (NP
+            (NP (DT the) (NN end))
+            (PP (IN of)
+              (NP (PRP$ his) (NN term)))))
+        (S
+          (VP (TO to)
+            (VP (VB participate)
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NN removal))
+                  (PP (IN of)
+                    (NP (DT the) (NNP Cherokee)))))
+              (PP (IN from)
+                (NP (DT the) (NN state))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1834
+			name:	DATE				1-1	1834 
+	2	,
+	3	Sanford
+			coref:	IDENT			2	3-3	Sanford 
+			name:	PERSON				3-3	Sanford 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		5-5	elected 
+			N-ARGM-TMP		0-1	In 1834 
+			N-ARG-A1		3-3	Sanford 
+			N-ARG-A2		6-17	as a Jacksonian Representative from Georgia to the 24th United States Congress 
+	6	as
+	7	a
+	8	Jacksonian
+			name:	MISC				8-8	Jacksonian 
+	9	Representative
+			name:	TITLE				9-9	Representative 
+	10	from
+	11	Georgia
+			coref:	IDENT			1	11-11	Georgia 
+			name:	STATE_OR_PROVINCE				11-11	Georgia 
+	12	to
+	13	the
+	14	24th
+			name:	ORDINAL				14-14	24th 
+			sense:	twenty-fourth.s.01
+	15	United
+			name:	COUNTRY				15-16	United States 
+	16	States
+	17	Congress
+	18	,
+	19	but
+	20	he
+			coref:	IDENT			2	20-20	he 
+	21	resigned
+			sense:	vacate.v.01
+			prop:	resign.01
+			V		21-21	resigned 
+			N-ARG-A0		20-20	he 
+			N-ARGM-TMP		22-27	before the end of his term 
+			N-ARGM-PRP		28-38	to participate in the removal of the Cherokee from the state 
+	22	before
+	23	the
+	24	end
+			sense:	end.n.02
+	25	of
+	26	his
+			coref:	IDENT			2	26-26	his 
+	27	term
+			sense:	term.n.02
+	28	to
+	29	participate
+			sense:	participate.v.01
+			prop:	participate.01
+			V		29-29	participate 
+			N-ARG-A0		20-20	he 
+			N-ARG-A1		30-38	in the removal of the Cherokee from the state 
+	30	in
+	31	the
+	32	removal
+			sense:	removal.n.01
+	33	of
+	34	the
+	35	Cherokee
+			name:	MISC				35-35	Cherokee 
+	36	from
+	37	the
+	38	state
+			sense:	state.n.01
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His congressional service spanned from March 4 , 1835 , to July 2 , 1835 .
+
+
+Treebanked sentence:
+--------------------
+His congressional service spanned from March 4 , 1835 , to July 2 , 1835 . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP
+      (NP (PRP$ His) (JJ congressional) (NN service))
+      (VP (VBN spanned)
+        (PP (IN from)
+          (NP
+            (NP (NNP March) (CD 4))
+            (, ,)
+            (NP (NNP 1835))
+            (, ,)))
+        (PP (IN to))))
+    (NP-TMP (NNP July) (CD 2))
+    (, ,)
+    (NP (NNP 1835))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			2	0-0	His 
+	1	congressional
+			sense:	congressional.a.01
+	2	service
+			sense:	service.n.05
+	3	spanned
+			sense:	cross.v.05
+			prop:	span.01
+			V		3-3	spanned 
+			N-ARG-A0		0-2	His congressional service 
+			N-ARG-A1		4-14	from March 4 , 1835 , to July 2 , 1835 
+	4	from
+	5	March
+			name:	DATE				5-8	March 4 , 1835 
+	6	4
+	7	,
+	8	1835
+	9	,
+	10	to
+	11	July
+			name:	DATE				11-14	July 2 , 1835 
+	12	2
+	13	,
+	14	1835
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After serving in the Creek War of 1836 as a major general , Sanford was elected to the Georgia Senate in 1837 ; however , he resigned before that session of the state Senate began .
+
+
+Treebanked sentence:
+--------------------
+After serving in the Creek War of 1836 as a major general , Sanford was elected to the Georgia Senate in 1837 ; however , he resigned before that session of the state Senate began . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN After)
+        (S
+          (VP (VBG serving)
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NNP Creek) (NNP War))
+                (PP (IN of)
+                  (NP (CD 1836)))))
+            (PP (IN as)
+              (NP (DT a) (JJ major) (JJ general))))))
+      (, ,)
+      (NP (NNP Sanford))
+      (VP (VBD was)
+        (VP (VBN elected)
+          (PP (IN to)
+            (NP (DT the) (NNP Georgia) (NNP Senate)))
+          (PP (IN in)
+            (NP (CD 1837))))))
+    (: ;)
+    (S
+      (ADVP (RB however))
+      (, ,)
+      (NP (PRP he))
+      (VP (VBD resigned)
+        (SBAR (IN before)
+          (S
+            (NP
+              (NP (DT that) (NN session))
+              (PP (IN of)
+                (NP (DT the) (NN state) (NNP Senate))))
+            (VP (VBD began))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	serving
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	serving 
+			N-ARG-A1		2-7	in the Creek War of 1836 
+			N-ARGM-PRD		8-11	as a major general 
+			N-ARG-A0		13-13	Sanford 
+	2	in
+	3	the
+	4	Creek
+			name:	MISC				4-4	Creek 
+	5	War
+			name:	CAUSE_OF_DEATH				5-5	War 
+	6	of
+	7	1836
+			name:	DATE				7-7	1836 
+	8	as
+	9	a
+	10	major
+			name:	TITLE				10-11	major general 
+			sense:	major.a.01
+	11	general
+			sense:	general.a.01
+	12	,
+	13	Sanford
+			coref:	IDENT			2	13-13	Sanford 
+			name:	PERSON				13-13	Sanford 
+	14	was
+			sense:	be.v.01
+			prop:	be.03
+			V		14-14	was 
+	15	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		15-15	elected 
+			N-ARGM-TMP		0-11	After serving in the Creek War of 1836 as a major general 
+			N-ARG-A1		13-13	Sanford 
+			N-ARG-A2		16-19	to the Georgia Senate 
+			N-ARGM-TMP		20-21	in 1837 
+	16	to
+	17	the
+			coref:	IDENT			3	17-19	the Georgia Senate 
+	18	Georgia
+			name:	ORGANIZATION				18-19	Georgia Senate 
+	19	Senate
+	20	in
+	21	1837
+			name:	DATE				21-21	1837 
+	22	;
+	23	however
+			sense:	however.r.01
+	24	,
+	25	he
+			coref:	IDENT			2	25-25	he 
+	26	resigned
+			sense:	vacate.v.01
+			prop:	resign.01
+			V		26-26	resigned 
+			N-ARGM-DIS		23-23	however 
+			N-ARG-A0		25-25	he 
+			N-ARGM-TMP		27-34	before that session of the state Senate began 
+	27	before
+	28	that
+	29	session
+			sense:	session.n.01
+	30	of
+	31	the
+			coref:	IDENT			3	31-33	the state Senate 
+	32	state
+			sense:	state.n.01
+	33	Senate
+			name:	ORGANIZATION				33-33	Senate 
+	34	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		34-34	began 
+			N-ARG-A1		28-33	that session of the state Senate 
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+From 1841 to 1843 , Sanford was the Secretary of State of Georgia .
+
+
+Treebanked sentence:
+--------------------
+From 1841 to 1843 , Sanford was the Secretary of State of Georgia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN From)
+      (NP
+        (QP (CD 1841) (IN to) (CD 1843))))
+    (, ,)
+    (NP (NNP Sanford))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (NNP Secretary))
+        (PP (IN of)
+          (NP
+            (NP (NNP State))
+            (PP (IN of)
+              (NP (NNP Georgia)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	From
+	1	1841
+			name:	DATE				1-1	1841 
+	2	to
+	3	1843
+			name:	DATE				3-3	1843 
+	4	,
+	5	Sanford
+			coref:	IDENT			2	5-5	Sanford 
+			name:	PERSON				5-5	Sanford 
+	6	was
+			sense:	be.v.08
+			prop:	be.01
+			V		6-6	was 
+			N-ARGM-TMP		0-3	From 1841 to 1843 
+			N-ARG-A1		5-5	Sanford 
+			N-ARG-A2		7-12	the Secretary of State of Georgia 
+	7	the
+	8	Secretary
+			name:	TITLE				8-10	Secretary of State 
+	9	of
+	10	State
+	11	of
+	12	Georgia
+			coref:	IDENT			1	12-12	Georgia 
+			name:	STATE_OR_PROVINCE				12-12	Georgia 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also was a member of the state convention of 1850 .
+
+
+Treebanked sentence:
+--------------------
+He also was a member of the state convention of 1850 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN state) (NN convention))
+            (PP (IN of)
+              (NP (CD 1850)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	also
+			sense:	besides.r.02
+	2	was
+			sense:	be.v.08
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A2		3-10	a member of the state convention of 1850 
+	3	a
+	4	member
+			sense:	member.n.01
+	5	of
+	6	the
+	7	state
+			sense:	state.n.01
+	8	convention
+			sense:	convention.n.01
+	9	of
+	10	1850
+			name:	DATE				10-10	1850 
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sanford served as secession commissioner from Georgia to the State of Texas in 1861 .
+
+
+Treebanked sentence:
+--------------------
+Sanford served as secession commissioner from Georgia to the State of Texas in 1861 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Sanford))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP
+          (NP (NN secession) (NN commissioner))
+          (PP (IN from)
+            (NP (NNP Georgia)))))
+      (PP (IN to)
+        (NP
+          (NP (DT the) (NN State))
+          (PP (IN of)
+            (NP (NNP Texas)))))
+      (PP (IN in)
+        (NP (CD 1861))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sanford
+			coref:	IDENT			2	0-0	Sanford 
+			name:	PERSON				0-0	Sanford 
+	1	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	Sanford 
+			N-ARG-A1		2-11	as secession commissioner from Georgia to the State of Texas 
+			N-ARGM-TMP		12-13	in 1861 
+	2	as
+	3	secession
+			sense:	secession.n.02
+	4	commissioner
+			sense:	commissioner.n.01
+	5	from
+	6	Georgia
+			coref:	IDENT			1	6-6	Georgia 
+			name:	STATE_OR_PROVINCE				6-6	Georgia 
+	7	to
+	8	the
+	9	State
+			sense:	state.n.01
+	10	of
+	11	Texas
+			name:	STATE_OR_PROVINCE				11-11	Texas 
+	12	in
+	13	1861
+			name:	DATE				13-13	1861 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sanford died in Milledgeville on September 12 , 1870 , and was buried in Memory Hill Cemetery in Milledgeville .
+
+
+Treebanked sentence:
+--------------------
+Sanford died in Milledgeville on September 12 , 1870 , and was buried in Memory Hill Cemetery in Milledgeville . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Sanford))
+    (VP
+      (VP (VBD died)
+        (PP (IN in)
+          (NP (NNP Milledgeville)))
+        (PP (IN on)
+          (NP (NNP September) (CD 12) (, ,) (CD 1870) (, ,))))
+      (CC and)
+      (VP (VBD was)
+        (VP (VBN buried)
+          (PP (IN in)
+            (NP
+              (NP (NNP Memory) (NNP Hill) (NNP Cemetery))
+              (PP (IN in)
+                (NP (NNP Milledgeville))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sanford
+			coref:	IDENT			2	0-0	Sanford 
+			name:	PERSON				0-0	Sanford 
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	Sanford 
+			N-ARGM-LOC		2-3	in Milledgeville 
+			N-ARGM-TMP		4-8	on September 12 , 1870 
+	2	in
+	3	Milledgeville
+			coref:	IDENT			0	3-3	Milledgeville 
+			name:	CITY				3-3	Milledgeville 
+	4	on
+	5	September
+			name:	DATE				5-8	September 12 , 1870 
+	6	12
+	7	,
+	8	1870
+	9	,
+	10	and
+	11	was
+			sense:	be.v.01
+			prop:	be.03
+			V		11-11	was 
+	12	buried
+			sense:	bury.v.02
+			prop:	bury.01
+			V		12-12	buried 
+			N-ARG-A1		0-0	Sanford 
+			N-ARGM-LOC		13-18	in Memory Hill Cemetery in Milledgeville 
+	13	in
+	14	Memory
+			name:	LOCATION				14-16	Memory Hill Cemetery 
+	15	Hill
+	16	Cemetery
+	17	in
+	18	Milledgeville
+			coref:	IDENT			0	18-18	Milledgeville 
+			name:	CITY				18-18	Milledgeville 
+	19	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.4-4	Milledgeville 
+				10.3-3	Milledgeville 
+				10.18-18	Milledgeville 
+	Chain 1 (IDENT)
+				0.23-23	Georgia 
+				4.11-11	Georgia 
+				7.12-12	Georgia 
+				9.6-6	Georgia 
+	Chain 2 (IDENT)
+				0.0-3	John W. A. Sanford 
+				1.0-0	Sanford 
+				2.0-0	He 
+				3.3-3	he 
+				4.3-3	Sanford 
+				4.20-20	he 
+				4.26-26	his 
+				5.0-0	His 
+				6.13-13	Sanford 
+				6.25-25	he 
+				7.5-5	Sanford 
+				8.0-0	He 
+				9.0-0	Sanford 
+				10.0-0	Sanford 
+	Chain 3 (IDENT)
+				6.17-19	the Georgia Senate 
+				6.31-33	the state Senate 
+

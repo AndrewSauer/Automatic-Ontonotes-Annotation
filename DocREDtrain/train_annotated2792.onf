@@ -1,0 +1,801 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ivi Monteiro ( born November 16 , 1984 in Rio de Janeiro ) is a butterfly and freestyle swimmer from Brazil .
+
+
+Treebanked sentence:
+--------------------
+Ivi Monteiro ( born November 16 , 1984 in Rio de Janeiro ) is a butterfly and freestyle swimmer from Brazil . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Ivi) (NNP Monteiro))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP November) (CD 16) (, ,) (CD 1984))
+        (PP (IN in)
+          (NP (NNP Rio) (NNP de) (NNP Janeiro))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a)
+          (NML (NN butterfly)
+            (CC and)
+            (NN freestyle))
+          (NN swimmer))
+        (PP (IN from)
+          (NP (NNP Brazil)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ivi
+			name:	PERSON				0-1	Ivi Monteiro 
+	1	Monteiro
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Ivi Monteiro 
+			N-ARGM-TMP		4-7	November 16 , 1984 
+			N-ARGM-LOC		8-11	in Rio de Janeiro 
+	4	November
+			name:	DATE				4-7	November 16 , 1984 
+	5	16
+	6	,
+	7	1984
+	8	in
+	9	Rio
+			name:	CITY				9-11	Rio de Janeiro 
+	10	de
+	11	Janeiro
+	12	)
+	13	is
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	is 
+			N-ARG-A1		0-12	Ivi Monteiro ( born November 16 , 1984 in Rio de Janeiro ) 
+			N-ARG-A2		14-20	a butterfly and freestyle swimmer from Brazil 
+	14	a
+	15	butterfly
+			sense:	butterfly.n.02
+	16	and
+	17	freestyle
+			sense:	freestyle.n.01
+	18	swimmer
+			name:	TITLE				18-18	swimmer 
+			sense:	swimmer.n.01
+	19	from
+	20	Brazil
+			coref:	IDENT			2	20-20	Brazil 
+			name:	COUNTRY				20-20	Brazil 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the 2002 South American Games , in Belém , she won three gold medals in the 100-metre butterfly , 4×100-metre freestyle and 4×100-metre medley , and the bronze medal in the 200-metre butterfly .
+
+
+Treebanked sentence:
+--------------------
+At the 2002 South American Games , in Belém , she won three gold medals in the 100 - metre butterfly , 4 × 100 - metre freestyle and 4 × 100 - metre medley , and the bronze medal in the 200 - metre butterfly . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (DT the) (CD 2002)
+        (NML (NNP South) (NNP American))
+        (NNPS Games)))
+    (, ,)
+    (PP (IN in)
+      (NP (NNP Belém)))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBD won)
+      (NP
+        (NP
+          (NP (CD three) (NN gold) (NNS medals))
+          (PP (IN in)
+            (NP
+              (NP (DT the)
+                (NML (CD 100) (HYPH -) (NN metre))
+                (NN butterfly))
+              (, ,)
+              (NP
+                (NML
+                  (QP (CD 4) (SYM ×) (CD 100))
+                  (HYPH -) (NN metre))
+                (NN freestyle))
+              (CC and)
+              (NP
+                (NML
+                  (QP (CD 4) (SYM ×) (CD 100))
+                  (HYPH -) (NN metre))
+                (NN medley)))))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (DT the) (NN bronze) (NN medal))
+          (PP (IN in)
+            (NP (DT the)
+              (NML (CD 200) (HYPH -) (NN metre))
+              (NN butterfly))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+	2	2002
+			name:	DATE				2-2	2002 
+	3	South
+			name:	MISC				3-3	South 
+	4	American
+			name:	NATIONALITY				4-4	American 
+	5	Games
+			name:	MISC				5-5	Games 
+	6	,
+	7	in
+	8	Belém
+			name:	LOCATION				8-8	Belém 
+	9	,
+	10	she
+			coref:	IDENT			0	10-10	she 
+	11	won
+			sense:	win.v.01
+			prop:	win.01
+			V		11-11	won 
+			N-ARGM-LOC		0-5	At the 2002 South American Games 
+			N-ARGM-LOC		7-8	in Belém 
+			N-ARG-A0		10-10	she 
+			N-ARG-A1		12-45	three gold medals in the 100 - metre butterfly , 4 × 100 - metre freestyle and 4 × 100 - metre medley , and the bronze medal in the 200 - metre butterfly 
+	12	three
+			name:	NUMBER				12-12	three 
+	13	gold
+			sense:	gold.n.01
+	14	medals
+			sense:	decoration.n.02
+	15	in
+	16	the
+			coref:	IDENT			1	16-20	the 100 - metre butterfly 
+	17	100
+			name:	NUMBER				17-19	100 - metre 
+	18	-
+	19	metre
+			sense:	meter.n.01
+	20	butterfly
+			sense:	butterfly.n.02
+	21	,
+	22	4
+			name:	NUMBER				22-22	4 
+	23	×
+	24	100
+			name:	NUMBER				24-26	100 - metre 
+	25	-
+	26	metre
+			sense:	meter.n.01
+	27	freestyle
+			sense:	freestyle.n.01
+	28	and
+			coref:	IDENT			3	28-34	and 4 × 100 - metre medley 
+	29	4
+			name:	NUMBER				29-29	4 
+	30	×
+	31	100
+			name:	NUMBER				31-33	100 - metre 
+	32	-
+	33	metre
+			sense:	meter.n.01
+	34	medley
+			sense:	medley.n.01
+	35	,
+	36	and
+	37	the
+	38	bronze
+			sense:	bronze.n.01
+	39	medal
+			sense:	decoration.n.02
+	40	in
+	41	the
+			coref:	IDENT			1	41-45	the 200 - metre butterfly 
+	42	200
+			name:	NUMBER				42-44	200 - metre 
+	43	-
+	44	metre
+			sense:	meter.n.01
+	45	butterfly
+			sense:	butterfly.n.02
+	46	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Participating in the 2003 World Aquatics Championships , in Barcelona , she finished 14th in the 4×100-metre medley , 25th in the 100-metre butterfly , and 34th in the 50-metre butterfly .
+
+
+Treebanked sentence:
+--------------------
+Participating in the 2003 World Aquatics Championships , in Barcelona , she finished 14th in the 4 × 100 - metre medley , 25th in the 100 - metre butterfly , and 34th in the 50 - metre butterfly . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBG Participating)
+        (PP (IN in)
+          (NP (DT the) (CD 2003)
+            (NML (NNP World) (NNP Aquatics))
+            (NNPS Championships)))))
+    (, ,)
+    (PP (IN in)
+      (NP (NNP Barcelona)))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBD finished)
+      (NP
+        (NP
+          (NP (JJ 14th))
+          (PP (IN in)
+            (NP (DT the)
+              (NML
+                (QP (CD 4) (SYM ×) (CD 100))
+                (HYPH -) (NN metre))
+              (NN medley))))
+        (, ,)
+        (NP
+          (NP (NN 25th))
+          (PP (IN in)
+            (NP (DT the)
+              (NML (CD 100) (HYPH -) (NN metre))
+              (NN butterfly))))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (JJ 34th))
+          (PP (IN in)
+            (NP (DT the)
+              (NML (CD 50) (HYPH -) (NN metre))
+              (NN butterfly))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Participating
+			sense:	enter.v.02
+			prop:	participate.01
+			V		0-0	Participating 
+			N-ARG-A1		1-9	in the 2003 World Aquatics Championships , in Barcelona 
+			N-ARG-A0		11-11	she 
+	1	in
+	2	the
+	3	2003
+			name:	DATE				3-3	2003 
+	4	World
+			name:	MISC				4-6	World Aquatics Championships 
+	5	Aquatics
+	6	Championships
+	7	,
+	8	in
+	9	Barcelona
+			name:	CITY				9-9	Barcelona 
+	10	,
+	11	she
+			coref:	IDENT			0	11-11	she 
+	12	finished
+			sense:	finish_up.v.02
+			prop:	finish.02
+			V		12-12	finished 
+			R-ARG-A1		0-9	Participating in the 2003 World Aquatics Championships , in Barcelona 
+			N-ARG-A1		11-11	she 
+	13	14th
+			name:	ORDINAL				13-13	14th 
+			sense:	fourteenth.s.01
+	14	in
+	15	the
+			coref:	IDENT			3	15-21	the 4 × 100 - metre medley 
+	16	4
+			name:	NUMBER				16-16	4 
+	17	×
+	18	100
+			name:	NUMBER				18-20	100 - metre 
+	19	-
+	20	metre
+			sense:	meter.n.01
+	21	medley
+			sense:	medley.n.01
+	22	,
+	23	25th
+			name:	ORDINAL				23-23	25th 
+	24	in
+	25	the
+			coref:	IDENT			1	25-29	the 100 - metre butterfly 
+	26	100
+			name:	NUMBER				26-28	100 - metre 
+	27	-
+	28	metre
+			sense:	meter.n.01
+	29	butterfly
+			sense:	butterfly.n.02
+	30	,
+	31	and
+	32	34th
+			name:	ORDINAL				32-32	34th 
+			sense:	thirty-fourth.s.01
+	33	in
+	34	the
+			coref:	IDENT			1	34-38	the 50 - metre butterfly 
+	35	50
+			name:	NUMBER				35-37	50 - metre 
+	36	-
+	37	metre
+			sense:	meter.n.01
+	38	butterfly
+			sense:	butterfly.n.02
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the 2003 Pan American Games in Santo Domingo , Dominican Republic , Monteiro finished 4th in the 4×100-metre medley , and 5th in the 100-metre butterfly .
+
+
+Treebanked sentence:
+--------------------
+At the 2003 Pan American Games in Santo Domingo , Dominican Republic , Monteiro finished 4th in the 4 × 100 - metre medley , and 5th in the 100 - metre butterfly . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (DT the) (CD 2003)
+          (NML (NNP Pan) (NNP American) (NNPS Games)))
+        (PP (IN in)
+          (NP
+            (NP (NNP Santo) (NNP Domingo))
+            (, ,)
+            (NP (NNP Dominican) (NNP Republic))))))
+    (, ,)
+    (NP (NNP Monteiro))
+    (VP (VBD finished)
+      (ADJP
+        (ADJP (JJ 4th)
+          (PP (IN in)
+            (NP (DT the)
+              (NML
+                (QP (CD 4) (SYM ×) (CD 100))
+                (HYPH -) (NN metre))
+              (NN medley))))
+        (, ,)
+        (CC and)
+        (ADJP (JJ 5th)))
+      (PP (IN in)
+        (NP (DT the)
+          (NML (CD 100) (HYPH -) (NN metre))
+          (NN butterfly))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+	2	2003
+			name:	DATE				2-2	2003 
+	3	Pan
+			name:	ORGANIZATION				3-5	Pan American Games 
+	4	American
+	5	Games
+	6	in
+	7	Santo
+			name:	CITY				7-8	Santo Domingo 
+	8	Domingo
+	9	,
+	10	Dominican
+			name:	COUNTRY				10-11	Dominican Republic 
+	11	Republic
+	12	,
+	13	Monteiro
+			name:	PERSON				13-13	Monteiro 
+	14	finished
+			sense:	finish_up.v.02
+			prop:	finish.02
+			V		14-14	finished 
+			N-ARGM-LOC		0-11	At the 2003 Pan American Games in Santo Domingo , Dominican Republic 
+			N-ARG-A1		13-13	Monteiro 
+	15	4th
+			name:	ORDINAL				15-15	4th 
+			sense:	fourth.s.01
+	16	in
+	17	the
+			coref:	IDENT			3	17-23	the 4 × 100 - metre medley 
+	18	4
+			name:	NUMBER				18-18	4 
+	19	×
+	20	100
+			name:	NUMBER				20-22	100 - metre 
+	21	-
+	22	metre
+			sense:	meter.n.01
+	23	medley
+			sense:	medley.n.01
+	24	,
+	25	and
+	26	5th
+			name:	ORDINAL				26-26	5th 
+			sense:	fifth.s.01
+	27	in
+	28	the
+			coref:	IDENT			1	28-32	the 100 - metre butterfly 
+	29	100
+			name:	NUMBER				29-31	100 - metre 
+	30	-
+	31	metre
+			sense:	meter.n.01
+	32	butterfly
+			sense:	butterfly.n.02
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On May 9 , 2004 , she broke the South American record in the 4×100-metre medley , with a time of 4:12.90 , along with Fabíola Molina , Mariana Katsuno and Rebeca Gusmão .
+
+
+Treebanked sentence:
+--------------------
+On May 9 , 2004 , she broke the South American record in the 4 × 100 - metre medley , with a time of 4:12.90 , along with Fabíola Molina , Mariana Katsuno and Rebeca Gusmão . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NNP May) (CD 9) (, ,) (CD 2004)))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBD broke)
+      (NP (DT the)
+        (ADJP (JJ South) (JJ American))
+        (NN record))
+      (PP (IN in)
+        (NP (DT the)
+          (NML
+            (QP (CD 4) (SYM ×) (CD 100))
+            (HYPH -) (NN metre))
+          (NN medley)))
+      (, ,)
+      (PP (IN with)
+        (NP
+          (NP (DT a) (NN time))
+          (PP (IN of)
+            (NP (CD 4:12.90)))))
+      (, ,)
+      (PP (IN along)
+        (PP (IN with)
+          (NP
+            (NP (NNP Fabíola) (NNP Molina))
+            (, ,)
+            (NP (NNP Mariana) (NNP Katsuno))
+            (CC and)
+            (NP (NNP Rebeca) (NNP Gusmão))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	May
+			name:	DATE				1-4	May 9 , 2004 
+	2	9
+	3	,
+	4	2004
+	5	,
+	6	she
+			coref:	IDENT			0	6-6	she 
+	7	broke
+			sense:	better.v.01
+			prop:	break.01
+			V		7-7	broke 
+			N-ARGM-TMP		0-4	On May 9 , 2004 
+			N-ARG-A0		6-6	she 
+			N-ARG-A1		8-19	the South American record in the 4 × 100 - metre medley 
+			N-ARG-A2		21-25	with a time of 4:12.90 
+			N-ARGM-ADV		27-36	along with Fabíola Molina , Mariana Katsuno and Rebeca Gusmão 
+	8	the
+	9	South
+			name:	MISC				9-9	South 
+			sense:	south.a.01
+	10	American
+			name:	NATIONALITY				10-10	American 
+	11	record
+			sense:	record.n.06
+	12	in
+	13	the
+			coref:	IDENT			3	13-19	the 4 × 100 - metre medley 
+	14	4
+			name:	NUMBER				14-14	4 
+	15	×
+	16	100
+			name:	NUMBER				16-18	100 - metre 
+	17	-
+	18	metre
+			sense:	meter.n.01
+	19	medley
+			sense:	medley.n.01
+	20	,
+	21	with
+	22	a
+	23	time
+			sense:	time.n.02
+	24	of
+	25	4:12.90
+			name:	TIME				25-25	4:12.90 
+	26	,
+	27	along
+	28	with
+	29	Fabíola
+			name:	PERSON				29-30	Fabíola Molina 
+	30	Molina
+	31	,
+	32	Mariana
+			coref:	IDENT			0	32-33	Mariana Katsuno 
+			name:	PERSON				32-33	Mariana Katsuno 
+	33	Katsuno
+	34	and
+	35	Rebeca
+			name:	PERSON				35-36	Rebeca Gusmão 
+	36	Gusmão
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+With this time , the Brazilian team was , at this time , qualifying for Athens 2004 , but later , other countries obtained best marks , and took the Monteiro vacancy for the Olympics .
+
+
+Treebanked sentence:
+--------------------
+With this time , the Brazilian team was , at this time , qualifying for Athens 2004 , but later , other countries obtained best marks , and took the Monteiro vacancy for the Olympics . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN With)
+        (NP (DT this) (NN time)))
+      (, ,)
+      (NP (DT the) (JJ Brazilian) (NN team))
+      (VP (VBD was) (, ,)
+        (PP (IN at)
+          (NP (DT this) (NN time)))
+        (, ,)
+        (S
+          (VP (VBG qualifying)
+            (PP (IN for)
+              (NP (NNP Athens) (CD 2004)))))))
+    (, ,)
+    (CC but)
+    (S
+      (ADVP (RB later))
+      (, ,)
+      (NP (JJ other) (NNS countries))
+      (VP
+        (VP (VBD obtained)
+          (NP (JJS best) (NNS marks)))
+        (, ,)
+        (CC and)
+        (VP (VBD took)
+          (NP (DT the) (NNP Monteiro) (NN vacancy))
+          (PP (IN for)
+            (NP (DT the) (NNPS Olympics))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	With
+	1	this
+	2	time
+			sense:	time.n.01
+	3	,
+	4	the
+	5	Brazilian
+			name:	NATIONALITY				5-5	Brazilian 
+	6	team
+			sense:	team.n.01
+	7	was
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	was 
+	8	,
+	9	at
+	10	this
+	11	time
+			sense:	time.n.01
+	12	,
+	13	qualifying
+			sense:	qualify.v.01
+			prop:	qualify.02
+			V		13-13	qualifying 
+			N-ARGM-ADV		0-2	With this time 
+			N-ARG-A1		4-6	the Brazilian team 
+			N-ARGM-TMP		9-11	at this time 
+			N-ARG-A2		14-16	for Athens 2004 
+	14	for
+	15	Athens
+			name:	CITY				15-15	Athens 
+	16	2004
+			name:	DATE				16-16	2004 
+	17	,
+	18	but
+	19	later
+			sense:	subsequently.r.01
+	20	,
+	21	other
+			sense:	other.a.01
+	22	countries
+			sense:	state.n.04
+	23	obtained
+			sense:	receive.v.02
+			prop:	obtain.01
+			V		23-23	obtained 
+			N-ARGM-TMP		19-19	later 
+			N-ARG-A0		21-22	other countries 
+			N-ARG-A1		24-25	best marks 
+	24	best
+			sense:	good.a.01
+	25	marks
+			sense:	mark.n.01
+	26	,
+	27	and
+	28	took
+			sense:	accept.v.02
+			prop:	take.01
+			V		28-28	took 
+			N-ARGM-TMP		19-19	later 
+			N-ARG-A0		21-22	other countries 
+			N-ARG-A1		29-34	the Monteiro vacancy for the Olympics 
+	29	the
+	30	Monteiro
+			name:	PERSON				30-30	Monteiro 
+	31	vacancy
+			sense:	vacancy.n.01
+	32	for
+	33	the
+	34	Olympics
+			name:	MISC				34-34	Olympics 
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She ended her career in late 2013 , at the Open tournament , held in Porto Alegre , Brazil .
+
+
+Treebanked sentence:
+--------------------
+She ended her career in late 2013 , at the Open tournament , held in Porto Alegre , Brazil . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD ended)
+      (NP (PRP$ her) (NN career))
+      (PP (IN in)
+        (NP (JJ late) (CD 2013)))
+      (, ,)
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NNP Open) (NN tournament))
+          (, ,)
+          (VP (VBN held)
+            (PP (IN in)
+              (NP
+                (NP (NNP Porto) (NNP Alegre))
+                (, ,)
+                (NP (NNP Brazil))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	ended
+			sense:	end.v.02
+			prop:	end.01
+			V		1-1	ended 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		2-3	her career 
+			N-ARGM-TMP		4-6	in late 2013 
+			N-ARGM-LOC		8-18	at the Open tournament , held in Porto Alegre , Brazil 
+	2	her
+			coref:	IDENT			0	2-2	her 
+	3	career
+			sense:	career.n.01
+	4	in
+	5	late
+			name:	DATE				5-6	late 2013 
+			sense:	late.a.01
+	6	2013
+	7	,
+	8	at
+	9	the
+	10	Open
+			name:	MISC				10-10	Open 
+	11	tournament
+			sense:	tournament.n.01
+	12	,
+	13	held
+			sense:	hold.v.03
+			prop:	hold.04
+			V		13-13	held 
+			N-ARG-A1		9-11	the Open tournament 
+			N-ARGM-LOC		14-18	in Porto Alegre , Brazil 
+	14	in
+	15	Porto
+			name:	CITY				15-16	Porto Alegre 
+	16	Alegre
+	17	,
+	18	Brazil
+			coref:	IDENT			2	18-18	Brazil 
+			name:	COUNTRY				18-18	Brazil 
+	19	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.32-33	Mariana Katsuno 
+				1.10-10	she 
+				2.11-11	she 
+				4.6-6	she 
+				6.0-0	She 
+				6.2-2	her 
+	Chain 1 (IDENT)
+				1.16-20	the 100 - metre butterfly 
+				1.41-45	the 200 - metre butterfly 
+				2.25-29	the 100 - metre butterfly 
+				2.34-38	the 50 - metre butterfly 
+				3.28-32	the 100 - metre butterfly 
+	Chain 2 (IDENT)
+				0.20-20	Brazil 
+				6.18-18	Brazil 
+	Chain 3 (IDENT)
+				1.28-34	and 4 × 100 - metre medley 
+				2.15-21	the 4 × 100 - metre medley 
+				3.17-23	the 4 × 100 - metre medley 
+				4.13-19	the 4 × 100 - metre medley 
+

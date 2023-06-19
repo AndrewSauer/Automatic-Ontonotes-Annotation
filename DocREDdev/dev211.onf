@@ -1,0 +1,520 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Symphony Hall is a concert hall located at 301 Massachusetts Avenue in Boston , Massachusetts .
+
+
+Treebanked sentence:
+--------------------
+Symphony Hall is a concert hall located at 301 Massachusetts Avenue in Boston , Massachusetts . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Symphony) (NNP Hall))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN concert) (NN hall))
+        (VP (VBN located)
+          (PP (IN at)
+            (NP
+              (NP (CD 301) (NNP Massachusetts) (NNP Avenue))
+              (PP (IN in)
+                (NP (NNP Boston) (, ,) (NNP Massachusetts))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Symphony
+			coref:	IDENT			0	0-1	Symphony Hall 
+	1	Hall
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Symphony Hall 
+			N-ARG-A2		3-14	a concert hall located at 301 Massachusetts Avenue in Boston , Massachusetts 
+	3	a
+	4	concert
+			sense:	concert.n.01
+	5	hall
+			sense:	hall.n.03
+	6	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		6-6	located 
+			N-ARG-A1		3-5	a concert hall 
+			N-ARGM-LOC		7-10	at 301 Massachusetts Avenue 
+			N-ARGM-LOC		11-14	in Boston , Massachusetts 
+	7	at
+	8	301
+			name:	NUMBER				8-8	301 
+	9	Massachusetts
+			name:	STATE_OR_PROVINCE				9-9	Massachusetts 
+	10	Avenue
+			name:	LOCATION				10-10	Avenue 
+	11	in
+	12	Boston
+			name:	CITY				12-12	Boston 
+	13	,
+	14	Massachusetts
+			name:	STATE_OR_PROVINCE				14-14	Massachusetts 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Designed by McKim , Mead and White , it was built in 1900 for the Boston Symphony Orchestra , which continues to make the hall its home .
+
+
+Treebanked sentence:
+--------------------
+Designed by McKim , Mead and White , it was built in 1900 for the Boston Symphony Orchestra , which continues to make the hall its home . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Designed)
+        (PP (IN by)
+          (NP (NNP McKim) (, ,) (NNP Mead)
+            (CC and)
+            (NNP White)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (VP (VBN built)
+        (PP (IN in)
+          (NP
+            (NP
+              (NP (CD 1900))
+              (PP (IN for)
+                (NP (DT the) (NNP Boston) (NNP Symphony) (NNP Orchestra))))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ continues)
+                  (S
+                    (VP (TO to)
+                      (VP (VB make)
+                        (NP (DT the) (NN hall))
+                        (NP (PRP$ its) (NN home))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Designed
+			sense:	design.v.03
+			prop:	design.01
+			V		0-0	Designed 
+			N-ARG-A0		1-6	by McKim , Mead and White 
+			N-ARG-A1		8-8	it 
+	1	by
+	2	McKim
+			name:	PERSON				2-2	McKim 
+	3	,
+	4	Mead
+			name:	PERSON				4-4	Mead 
+	5	and
+	6	White
+			name:	PERSON				6-6	White 
+	7	,
+	8	it
+	9	was
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	was 
+	10	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		10-10	built 
+			N-ARGM-ADV		0-6	Designed by McKim , Mead and White 
+			N-ARG-A1		8-8	it 
+			N-ARGM-TMP		11-12	in 1900 
+			N-ARGM-PNC		13-26	for the Boston Symphony Orchestra , which continues to make the hall its home 
+	11	in
+	12	1900
+			name:	DATE				12-12	1900 
+	13	for
+	14	the
+	15	Boston
+			name:	ORGANIZATION				15-17	Boston Symphony Orchestra 
+	16	Symphony
+	17	Orchestra
+	18	,
+	19	which
+	20	continues
+			sense:	continue.v.01
+			prop:	continue.01
+			V		20-20	continues 
+			N-ARG-A0		14-17	the Boston Symphony Orchestra 
+			R-ARG-A0		19-19	which 
+			N-ARG-A1		21-26	to make the hall its home 
+	21	to
+	22	make
+			sense:	make.v.02
+			prop:	make.02
+			V		22-22	make 
+			N-ARG-A0		14-17	the Boston Symphony Orchestra 
+			R-ARG-A0		19-19	which 
+			N-ARG-A1		23-26	the hall its home 
+	23	the
+			coref:	IDENT			0	23-24	the hall 
+	24	hall
+			sense:	hall.n.03
+	25	its
+	26	home
+			sense:	home.n.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The hall was designated a U.S. National Historic Landmark in 1999 and is a pending Boston Landmark .
+
+
+Treebanked sentence:
+--------------------
+The hall was designated a U.S. National Historic Landmark in 1999 and is a pending Boston Landmark . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN hall))
+    (VP
+      (VP (VBD was)
+        (VP (VBN designated)
+          (NP
+            (NP (DT a) (NNP U.S.) (NNP National) (NNP Historic) (NNP Landmark))
+            (PP (IN in)
+              (NP (CD 1999))))))
+      (CC and)
+      (VP (VBZ is)
+        (S
+          (NP (DT a) (VBG pending) (NNP Boston) (NNP Landmark)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The hall 
+	1	hall
+			sense:	hall.n.03
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	designated
+			sense:	designate.v.01
+			prop:	designate.01
+			V		3-3	designated 
+			N-ARG-A1		0-1	The hall 
+			N-ARG-A2		4-8	a U.S. National Historic Landmark 
+			N-ARGM-TMP		9-10	in 1999 
+	4	a
+	5	U.S.
+			name:	COUNTRY				5-5	U.S. 
+	6	National
+			name:	MISC				6-8	National Historic Landmark 
+	7	Historic
+	8	Landmark
+	9	in
+	10	1999
+			name:	DATE				10-10	1999 
+	11	and
+	12	is
+			sense:	be.v.01
+			prop:	be.01
+			V		12-12	is 
+			N-ARG-A1		0-1	The hall 
+			N-ARG-A2		13-16	a pending Boston Landmark 
+	13	a
+	14	pending
+			prop:	pend.01
+			V		14-14	pending 
+			N-ARG-A1		15-16	Boston Landmark 
+	15	Boston
+			name:	ORGANIZATION				15-16	Boston Landmark 
+	16	Landmark
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was then noted that " Symphony Hall remains , acoustically , among the top three concert halls in the world ... and is considered the finest in the United States . "
+
+
+Treebanked sentence:
+--------------------
+It was then noted that " Symphony Hall remains , acoustically , among the top three concert halls in the world ... and is considered the finest in the United States . " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBD was)
+        (ADVP (RB then))
+        (VP (VBN noted)
+          (SBAR (IN that) (`` ")
+            (S
+              (NP (NNP Symphony) (NNP Hall))
+              (VP (VBZ remains) (, ,)
+                (ADVP (RB acoustically))
+                (, ,)
+                (PP (IN among)
+                  (NP
+                    (NP (DT the) (JJ top) (CD three) (NN concert) (NNS halls))
+                    (PP (IN in)
+                      (NP (DT the) (NN world))))))))))
+      (, ...)
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN considered)
+          (NP
+            (NP (DT the) (JJS finest))
+            (PP (IN in)
+              (NP (DT the) (NNP United) (NNP States)))))))
+    (. .) ('' ")))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	then
+			sense:	then.r.03
+	3	noted
+			sense:	note.v.01
+			prop:	note.01
+			V		3-3	noted 
+			N-ARGM-TMP		2-2	then 
+			N-ARG-A1		4-30	that " Symphony Hall remains , acoustically , among the top three concert halls in the world ... and is considered the finest in the United States 
+	4	that
+	5	"
+	6	Symphony
+			coref:	IDENT			0	6-7	Symphony Hall 
+	7	Hall
+	8	remains
+			sense:	stay.v.01
+			prop:	remain.01
+			V		8-8	remains 
+			N-ARG-A1		6-7	Symphony Hall 
+			N-ARGM-MNR		10-10	acoustically 
+			N-ARG-A3		12-20	among the top three concert halls in the world 
+	9	,
+	10	acoustically
+			sense:	acoustically.r.01
+	11	,
+	12	among
+	13	the
+	14	top
+			sense:	top.a.01
+	15	three
+			name:	NUMBER				15-15	three 
+	16	concert
+			sense:	concert.n.01
+	17	halls
+			sense:	hall.n.03
+	18	in
+	19	the
+	20	world
+			sense:	earth.n.01
+	21	...
+	22	and
+	23	is
+			sense:	be.v.01
+			prop:	be.03
+			V		23-23	is 
+	24	considered
+			sense:	see.v.05
+			prop:	consider.01
+			V		24-24	considered 
+			N-ARG-A1		25-30	the finest in the United States 
+	25	the
+	26	finest
+			sense:	fine.s.04
+	27	in
+	28	the
+	29	United
+			name:	COUNTRY				29-30	United States 
+	30	States
+	31	.
+	32	"
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Symphony Hall , located one block from Berklee College of Music to the north and one block from the New England Conservatory to the south , also serves as home to the Boston Pops Orchestra as well as the site of many concerts of the Handel and Haydn Society .
+
+
+Treebanked sentence:
+--------------------
+Symphony Hall , located one block from Berklee College of Music to the north and one block from the New England Conservatory to the south , also serves as home to the Boston Pops Orchestra as well as the site of many concerts of the Handel and Haydn Society . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Symphony) (NNP Hall))
+      (, ,)
+      (VP (VBN located)
+        (NP
+          (NP (CD one) (NN block))
+          (PP (IN from)
+            (NP
+              (NP (NNP Berklee) (NNP College))
+              (PP (IN of)
+                (NP (NNP Music))))))
+        (PP (IN to)
+          (NP
+            (NP (DT the) (NN north))
+            (CC and)
+            (NP (CD one) (NN block))))
+        (PP (IN from)
+          (NP (DT the)
+            (NML (NNP New) (NNP England))
+            (NNP Conservatory)))
+        (PP (IN to)
+          (NP (DT the) (NN south))))
+      (, ,))
+    (ADVP (RB also))
+    (VP (VBZ serves)
+      (PP (IN as)
+        (NP
+          (NP
+            (NP (NN home))
+            (PP (IN to)
+              (NP (DT the) (NNP Boston) (NNPS Pops) (NNP Orchestra))))
+          (CONJP (RB as) (RB well) (IN as))
+          (NP
+            (NP (DT the) (NN site))
+            (PP (IN of)
+              (NP
+                (NP (JJ many) (NNS concerts))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NNP Handel))
+                    (CC and)
+                    (NP (NNP Haydn) (NNP Society))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Symphony
+	1	Hall
+	2	,
+	3	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		3-3	located 
+			N-ARG-A1		0-1	Symphony Hall 
+			N-ARGM-LOC		4-24	one block from Berklee College of Music to the north and one block from the New England Conservatory to the south 
+	4	one
+			name:	NUMBER				4-4	one 
+	5	block
+			sense:	block.n.02
+	6	from
+	7	Berklee
+			name:	ORGANIZATION				7-10	Berklee College of Music 
+	8	College
+	9	of
+	10	Music
+	11	to
+	12	the
+	13	north
+			sense:	north.n.03
+	14	and
+	15	one
+			name:	NUMBER				15-15	one 
+	16	block
+			sense:	block.n.02
+	17	from
+	18	the
+	19	New
+			name:	LOCATION				19-19	New 
+	20	England
+			name:	COUNTRY				20-20	England 
+	21	Conservatory
+			name:	LOCATION				21-21	Conservatory 
+	22	to
+	23	the
+	24	south
+			sense:	south.n.03
+	25	,
+	26	also
+			sense:	besides.r.02
+	27	serves
+			sense:	serve.v.01
+			prop:	serve.01
+			V		27-27	serves 
+			N-ARG-A0		0-25	Symphony Hall , located one block from Berklee College of Music to the north and one block from the New England Conservatory to the south , 
+			N-ARGM-DIS		26-26	also 
+			N-ARG-A1		28-48	as home to the Boston Pops Orchestra as well as the site of many concerts of the Handel and Haydn Society 
+	28	as
+	29	home
+			sense:	home.n.01
+	30	to
+	31	the
+	32	Boston
+			name:	ORGANIZATION				32-34	Boston Pops Orchestra 
+	33	Pops
+	34	Orchestra
+	35	as
+			sense:	equally.r.01
+	36	well
+			sense:	well.r.01
+	37	as
+	38	the
+	39	site
+			sense:	site.n.01
+	40	of
+	41	many
+			sense:	many.a.01
+	42	concerts
+			sense:	concert.n.01
+	43	of
+	44	the
+	45	Handel
+			name:	PERSON				45-45	Handel 
+	46	and
+	47	Haydn
+			name:	ORGANIZATION				47-48	Haydn Society 
+	48	Society
+	49	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Symphony Hall 
+				1.23-24	the hall 
+				2.0-1	The hall 
+				3.0-0	It 
+				3.6-7	Symphony Hall 
+

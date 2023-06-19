@@ -1,0 +1,990 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Beijing Institute of Fashion Technology ( ) is a university in Beijing , China .
+
+
+Treebanked sentence:
+--------------------
+Beijing Institute of Fashion Technology ( ) is a university in Beijing , China . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Beijing) (NNP Institute))
+      (PP (IN of)
+        (NP
+          (NML (NNP Fashion) (NNP Technology))
+          (-LRB- -LRB-))))
+    (-RRB- -RRB-)
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN university))
+        (PP (IN in)
+          (NP (NNP Beijing) (, ,) (NNP China)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Beijing
+			coref:	IDENT			2	0-4	Beijing Institute of Fashion Technology 
+			name:	ORGANIZATION				0-4	Beijing Institute of Fashion Technology 
+	1	Institute
+	2	of
+	3	Fashion
+	4	Technology
+	5	(
+	6	)
+	7	is
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		0-6	Beijing Institute of Fashion Technology ( ) 
+			N-ARG-A2		8-13	a university in Beijing , China 
+	8	a
+	9	university
+			sense:	university.n.02
+	10	in
+	11	Beijing
+			name:	CITY				11-11	Beijing 
+	12	,
+	13	China
+			name:	COUNTRY				13-13	China 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was founded in 1959 as the Beijing Institute of Textile Technology and was later renamed as the Beijing Institute of Chemical Fiber Technology in 1961 .
+
+
+Treebanked sentence:
+--------------------
+It was founded in 1959 as the Beijing Institute of Textile Technology and was later renamed as the Beijing Institute of Chemical Fiber Technology in 1961 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBD was)
+        (VP (VBN founded)
+          (PP (IN in)
+            (NP (CD 1959)))
+          (PP (IN as)
+            (NP
+              (NP (DT the) (NNP Beijing) (NNP Institute))
+              (PP (IN of)
+                (NP (NNP Textile) (NNP Technology)))))))
+      (CC and)
+      (VP (VBD was)
+        (ADVP (RB later))
+        (VP (VBN renamed)
+          (PP (IN as)
+            (NP
+              (NP (DT the) (NNP Beijing) (NNP Institute))
+              (PP (IN of)
+                (NP
+                  (NP (NNP Chemical) (NNP Fiber) (NNP Technology))
+                  (PP (IN in)
+                    (NP (CD 1961))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		2-2	founded 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		3-4	in 1959 
+			N-ARGM-PRD		5-11	as the Beijing Institute of Textile Technology 
+	3	in
+	4	1959
+			name:	DATE				4-4	1959 
+	5	as
+	6	the
+			coref:	IDENT			2	6-11	the Beijing Institute of Textile Technology 
+	7	Beijing
+			name:	ORGANIZATION				7-11	Beijing Institute of Textile Technology 
+	8	Institute
+	9	of
+	10	Textile
+	11	Technology
+	12	and
+	13	was
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	was 
+	14	later
+			sense:	subsequently.r.01
+	15	renamed
+			sense:	rename.v.01
+			prop:	rename.01
+			V		15-15	renamed 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		14-14	later 
+			N-ARG-A2		16-23	as the Beijing Institute of Chemical Fiber Technology 
+			N-ARGM-TMP		24-25	in 1961 
+	16	as
+	17	the
+			coref:	IDENT			2	17-25	the Beijing Institute of Chemical Fiber Technology in 1961 
+	18	Beijing
+			name:	ORGANIZATION				18-23	Beijing Institute of Chemical Fiber Technology 
+	19	Institute
+	20	of
+	21	Chemical
+	22	Fiber
+	23	Technology
+	24	in
+	25	1961
+			name:	DATE				25-25	1961 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1971,it was combined together with Beijing University of Chemical Technology and then in 1978 was separated from it , returning to the name of " Beijing Institute of Chemical Fiber Technology " .
+
+
+Treebanked sentence:
+--------------------
+In 1971 , it was combined together with Beijing University of Chemical Technology and then in 1978 was separated from it , returning to the name of " Beijing Institute of Chemical Fiber Technology " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1971)))
+    (, ,)
+    (NP (PRP it))
+    (VP
+      (VP (VBD was)
+        (VP (VBN combined)
+          (ADVP (RB together))
+          (PP (IN with)
+            (NP
+              (NP (NNP Beijing) (NNP University))
+              (PP (IN of)
+                (NP (NNP Chemical) (NNP Technology)))))))
+      (CC and)
+      (ADVP (RB then)
+        (PP (IN in)
+          (NP (CD 1978))))
+      (VP (VBD was)
+        (VP (VBN separated)
+          (PP (IN from)
+            (NP (PRP it)))
+          (, ,)
+          (S
+            (VP (VBG returning)
+              (PP (IN to)
+                (NP
+                  (NP (DT the) (NN name))
+                  (PP (IN of) (`` ")
+                    (NP
+                      (NP (NNP Beijing) (NNP Institute))
+                      (PP (IN of)
+                        (NP (NNP Chemical) (NNP Fiber) (NNP Technology))))
+                    ('' ")))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1971
+			name:	DATE				1-1	1971 
+	2	,
+	3	it
+			coref:	IDENT			2	3-3	it 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	combined
+			sense:	combine.v.05
+			prop:	combine.01
+			V		5-5	combined 
+			N-ARGM-TMP		0-1	In 1971 
+			N-ARG-A1		3-3	it 
+			N-ARGM-PRD		6-6	together 
+			N-ARG-A2		7-12	with Beijing University of Chemical Technology 
+	6	together
+			sense:	together.r.02
+	7	with
+	8	Beijing
+			name:	ORGANIZATION				8-12	Beijing University of Chemical Technology 
+	9	University
+	10	of
+	11	Chemical
+	12	Technology
+	13	and
+	14	then
+			sense:	then.r.01
+	15	in
+	16	1978
+			name:	DATE				16-16	1978 
+	17	was
+			sense:	be.v.01
+			prop:	be.03
+			V		17-17	was 
+	18	separated
+			sense:	divide.v.01
+			prop:	separate.01
+			V		18-18	separated 
+			N-ARG-A1		3-3	it 
+			N-ARGM-TMP		14-14	then 
+			N-ARGM-TMP		15-16	in 1978 
+			N-ARG-A2		19-20	from it 
+			N-ARGM-ADV		22-34	returning to the name of " Beijing Institute of Chemical Fiber Technology " 
+	19	from
+	20	it
+			coref:	IDENT			2	20-20	it 
+	21	,
+	22	returning
+			sense:	revert.v.01
+			prop:	return.01
+			V		22-22	returning 
+			N-ARG-A1		3-3	it 
+			N-ARG-A4		23-34	to the name of " Beijing Institute of Chemical Fiber Technology " 
+	23	to
+	24	the
+	25	name
+			sense:	name.n.01
+	26	of
+	27	"
+	28	Beijing
+			name:	ORGANIZATION				28-33	Beijing Institute of Chemical Fiber Technology 
+	29	Institute
+	30	of
+	31	Chemical
+	32	Fiber
+	33	Technology
+	34	"
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the year 1987,it was renamed again as the Beijing Institute of Clothing Technology .
+
+
+Treebanked sentence:
+--------------------
+In the year 1987 , it was renamed again as the Beijing Institute of Clothing Technology . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NN year) (CD 1987)))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (VP (VBN renamed)
+        (ADVP (RB again))
+        (PP (IN as)
+          (NP
+            (NP (DT the) (NNP Beijing) (NNP Institute))
+            (PP (IN of)
+              (NP (NNP Clothing) (NNP Technology)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+			name:	DATE				1-3	the year 1987 
+	2	year
+			sense:	year.n.01
+	3	1987
+	4	,
+	5	it
+			coref:	IDENT			2	5-5	it 
+	6	was
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	was 
+	7	renamed
+			sense:	rename.v.01
+			prop:	rename.01
+			V		7-7	renamed 
+			N-ARGM-TMP		0-3	In the year 1987 
+			N-ARG-A1		5-5	it 
+			N-ARGM-TMP		8-8	again 
+			N-ARG-A2		9-15	as the Beijing Institute of Clothing Technology 
+	8	again
+			sense:	again.r.01
+	9	as
+	10	the
+			coref:	IDENT			0	10-15	the Beijing Institute of Clothing Technology 
+	11	Beijing
+			name:	ORGANIZATION				11-15	Beijing Institute of Clothing Technology 
+	12	Institute
+	13	of
+	14	Clothing
+	15	Technology
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2008 , its official name of English version was changed to " Beijing Institute of Fashion Technology " , together with the address of its official website .
+
+
+Treebanked sentence:
+--------------------
+In 2008 , its official name of English version was changed to " Beijing Institute of Fashion Technology " , together with the address of its official website . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2008)))
+    (, ,)
+    (NP
+      (NP (PRP$ its) (JJ official) (NN name))
+      (PP (IN of)
+        (NP (NNP English) (NN version))))
+    (VP (VBD was)
+      (VP (VBN changed)
+        (PP (IN to)
+          (NP
+            (NP (`` ")
+              (NP (NNP Beijing) (NNP Institute))
+              (PP (IN of)
+                (NP (NNP Fashion) (NNP Technology)))
+              ('' "))
+            (, ,)
+            (ADVP (RB together))))
+        (PP (IN with)
+          (NP
+            (NP (DT the) (NN address))
+            (PP (IN of)
+              (NP (PRP$ its) (JJ official) (NN website)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2008
+			name:	DATE				1-1	2008 
+	2	,
+	3	its
+			coref:	IDENT			1	3-8	its official name of English version 
+			coref:	IDENT			2	3-3	its 
+	4	official
+			sense:	official.a.01
+	5	name
+			sense:	name.n.01
+	6	of
+	7	English
+			name:	NATIONALITY				7-7	English 
+	8	version
+			sense:	translation.n.01
+	9	was
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	was 
+	10	changed
+			sense:	change.v.01
+			prop:	change.01
+			V		10-10	changed 
+			N-ARGM-TMP		0-1	In 2008 
+			N-ARG-A1		3-8	its official name of English version 
+			N-ARG-A2		11-18	to " Beijing Institute of Fashion Technology " 
+			N-ARGM-ADV		20-27	together with the address of its official website 
+	11	to
+	12	"
+			coref:	IDENT			2	12-20	" Beijing Institute of Fashion Technology " , together 
+	13	Beijing
+			name:	ORGANIZATION				13-17	Beijing Institute of Fashion Technology 
+	14	Institute
+	15	of
+	16	Fashion
+	17	Technology
+	18	"
+	19	,
+	20	together
+			sense:	together.r.04
+	21	with
+	22	the
+	23	address
+			sense:	address.n.02
+	24	of
+	25	its
+			coref:	IDENT			2	25-25	its 
+	26	official
+			sense:	official.a.01
+	27	website
+			sense:	web_site.n.01
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The data from a statistic in 2008 says that there are 7150 students including 6017 undergraduate students , 481 postgraduate students and 59 foreign students , some of whom have traveled from Macau , Hong Kong , Taiwan , Japan .
+
+
+Treebanked sentence:
+--------------------
+The data from a statistic in 2008 says that there are 7150 students including 6017 undergraduate students , 481 postgraduate students and 59 foreign students , some of whom have traveled from Macau , Hong Kong , Taiwan , Japan . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS data))
+      (PP (IN from)
+        (NP
+          (NP (DT a) (NN statistic))
+          (PP (IN in)
+            (NP (CD 2008))))))
+    (VP (VBZ says)
+      (SBAR (IN that)
+        (S
+          (NP (EX there))
+          (VP (VBP are)
+            (NP
+              (NP (CD 7150) (NNS students))
+              (PP (VBG including)
+                (NP
+                  (NP
+                    (NP (CD 6017) (JJ undergraduate) (NNS students))
+                    (, ,)
+                    (NP (CD 481) (JJ postgraduate) (NNS students))
+                    (CC and)
+                    (NP (CD 59) (JJ foreign) (NNS students)))
+                  (, ,)
+                  (SBAR
+                    (WHNP
+                      (NP (DT some))
+                      (WHPP (IN of)
+                        (WHNP (WP whom))))
+                    (S
+                      (VP (VBP have)
+                        (VP (VBN traveled)
+                          (PP (IN from)
+                            (NP
+                              (NP (NNP Macau))
+                              (, ,)
+                              (NP
+                                (NML
+                                  (NML (NNP Hong) (NNP Kong))
+                                  (, ,)
+                                  (NP (NNP Taiwan))
+                                  (, ,))
+                                (NNP Japan)))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	data
+			sense:	datum.n.01
+	2	from
+	3	a
+	4	statistic
+			sense:	statistic.n.01
+	5	in
+	6	2008
+			name:	DATE				6-6	2008 
+	7	says
+			sense:	allege.v.01
+			prop:	say.01
+			V		7-7	says 
+			N-ARG-A0		0-6	The data from a statistic in 2008 
+			N-ARG-A1		8-39	that there are 7150 students including 6017 undergraduate students , 481 postgraduate students and 59 foreign students , some of whom have traveled from Macau , Hong Kong , Taiwan , Japan 
+	8	that
+	9	there
+	10	are
+			sense:	exist.v.01
+			prop:	be.02
+			V		10-10	are 
+			N-ARG-A1		11-39	7150 students including 6017 undergraduate students , 481 postgraduate students and 59 foreign students , some of whom have traveled from Macau , Hong Kong , Taiwan , Japan 
+	11	7150
+			name:	NUMBER				11-11	7150 
+	12	students
+			sense:	student.n.01
+	13	including
+			sense:	include.v.01
+			prop:	include.01
+			V		13-13	including 
+			N-ARG-A2		11-12	7150 students 
+			N-ARG-A1		14-39	6017 undergraduate students , 481 postgraduate students and 59 foreign students , some of whom have traveled from Macau , Hong Kong , Taiwan , Japan 
+	14	6017
+			name:	NUMBER				14-14	6017 
+	15	undergraduate
+	16	students
+			sense:	student.n.01
+	17	,
+	18	481
+			name:	NUMBER				18-18	481 
+	19	postgraduate
+			sense:	graduate.s.01
+	20	students
+			sense:	student.n.01
+	21	and
+	22	59
+			name:	NUMBER				22-22	59 
+	23	foreign
+			sense:	foreign.a.01
+	24	students
+			sense:	student.n.01
+	25	,
+	26	some
+	27	of
+	28	whom
+	29	have
+			sense:	have.v.01
+			prop:	have.01
+			V		29-29	have 
+	30	traveled
+			sense:	travel.v.01
+			prop:	travel.01
+			V		30-30	traveled 
+			N-ARG-A0		22-24	59 foreign students 
+			N-ARG-A0		26-27	some of 
+			R-ARG-A0		28-28	whom 
+			N-ARG-A1		31-39	from Macau , Hong Kong , Taiwan , Japan 
+	31	from
+	32	Macau
+			name:	CITY				32-32	Macau 
+	33	,
+	34	Hong
+			name:	CITY				34-35	Hong Kong 
+	35	Kong
+	36	,
+	37	Taiwan
+			name:	COUNTRY				37-37	Taiwan 
+	38	,
+	39	Japan
+			name:	COUNTRY				39-39	Japan 
+	40	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+There are also students of other nationalities .
+
+
+Treebanked sentence:
+--------------------
+There are also students of other nationalities . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (ADVP (RB also))
+      (NP
+        (NP (NNS students))
+        (PP (IN of)
+          (NP (JJ other) (NNS nationalities)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	There
+	1	are
+			sense:	be.v.05
+			prop:	be.02
+			V		1-1	are 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A1		3-6	students of other nationalities 
+	2	also
+			sense:	besides.r.02
+	3	students
+			sense:	student.n.01
+	4	of
+	5	other
+			sense:	other.a.01
+	6	nationalities
+			sense:	nationality.n.02
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This institute is composed of 5 schools(clothing design and engineering school , polymer materials and engineering school , art design school , business school , industry design and information technology school ) and 2 departments(foreign language and painting ) .
+
+
+Treebanked sentence:
+--------------------
+This institute is composed of 5 schools ( clothing design and engineering school , polymer materials and engineering school , art design school , business school , industry design and information technology school ) and 2 departments ( foreign language and painting ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT This) (NN institute))
+    (VP (VBZ is)
+      (VP (VBN composed)
+        (PP (IN of)
+          (NP
+            (NP (CD 5) (NNS schools)
+              (PRN (-LRB- -LRB-)
+                (NP (NN clothing)
+                  (NML
+                    (NML (NN design))
+                    (CC and)
+                    (NML (NN engineering) (NN school))))
+                (, ,)
+                (NP (NN polymer)
+                  (NML
+                    (NML (NNS materials))
+                    (CC and)
+                    (NML (NN engineering) (NN school))))
+                (, ,)
+                (NP (NN art)
+                  (NML (NN design) (NN school)))
+                (, ,)
+                (NP (NN business) (NN school))
+                (, ,)
+                (NP
+                  (NML
+                    (NML (NN industry) (NN design))
+                    (CC and)
+                    (NML (NN information) (NN technology)))
+                  (NN school))
+                (-RRB- -RRB-)))
+            (CC and)
+            (NP
+              (NP (CD 2) (NNS departments))
+              (-LRB- -LRB-)
+              (NP (JJ foreign) (NN language)
+                (CC and)
+                (NN painting))
+              (-RRB- -RRB-))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+			coref:	IDENT			2	0-1	This institute 
+	1	institute
+			sense:	institute.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	composed
+			sense:	compose.v.01
+			prop:	compose.01
+			V		3-3	composed 
+			N-ARG-A1		0-1	This institute 
+			N-ARG-A2		4-42	of 5 schools ( clothing design and engineering school , polymer materials and engineering school , art design school , business school , industry design and information technology school ) and 2 departments ( foreign language and painting ) 
+	4	of
+	5	5
+			name:	NUMBER				5-5	5 
+	6	schools
+			sense:	school.n.01
+	7	(
+	8	clothing
+			sense:	clothing.n.01
+	9	design
+			sense:	design.n.01
+	10	and
+	11	engineering
+			sense:	technology.n.01
+	12	school
+			sense:	school.n.01
+	13	,
+	14	polymer
+			sense:	polymer.n.01
+	15	materials
+			sense:	material.n.01
+	16	and
+	17	engineering
+			sense:	technology.n.01
+	18	school
+			sense:	school.n.01
+	19	,
+	20	art
+			sense:	art.n.01
+	21	design
+			sense:	design.n.01
+	22	school
+			sense:	school.n.01
+	23	,
+	24	business
+			sense:	commercial_enterprise.n.02
+	25	school
+			sense:	school.n.01
+	26	,
+	27	industry
+			sense:	industry.n.02
+	28	design
+			sense:	design.n.01
+	29	and
+	30	information
+			sense:	information.n.02
+	31	technology
+			sense:	technology.n.01
+	32	school
+			sense:	school.n.01
+	33	)
+	34	and
+	35	2
+			name:	NUMBER				35-35	2 
+	36	departments
+			sense:	department.n.01
+	37	(
+	38	foreign
+			sense:	foreign.a.02
+	39	language
+			sense:	language.n.01
+	40	and
+	41	painting
+			sense:	painting.n.02
+	42	)
+	43	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the past , Beijing Institute of Clothing Technology named depended on clothing , but in 2007 , 
+
+
+Treebanked sentence:
+--------------------
+In the past , Beijing Institute of Clothing Technology named depended on clothing , but in 2007 , the BIFT transformed the name to Beijing Institute of Fashion Technology . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN In)
+        (NP (DT the) (NN past)))
+      (, ,)
+      (NP
+        (NP (NNP Beijing) (NNP Institute))
+        (PP (IN of)
+          (NP (NNP Clothing) (NNP Technology))))
+      (VP (VBD named)
+        (SBAR
+          (S
+            (VP (VBD depended)
+              (PP (IN on)
+                (NP (NN clothing))))))))
+    (, ,)
+    (CC but)
+    (S
+      (PP (IN in)
+        (NP (CD 2007)))
+      (, ,)
+      (NP (DT the) (NNP BIFT))
+      (VP (VBD transformed)
+        (NP (DT the) (NN name))
+        (PP (IN to)
+          (NP
+            (NP (NNP Beijing) (NNP Institute))
+            (PP (IN of)
+              (NP (NNP Fashion) (NNP Technology)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+			name:	DATE				1-2	the past 
+	2	past
+			sense:	past.n.01
+	3	,
+	4	Beijing
+			coref:	IDENT			0	4-8	Beijing Institute of Clothing Technology 
+			name:	ORGANIZATION				4-8	Beijing Institute of Clothing Technology 
+	5	Institute
+	6	of
+	7	Clothing
+	8	Technology
+	9	named
+			sense:	name.v.01
+			prop:	name.01
+			V		9-9	named 
+			N-ARG-A1		4-8	Beijing Institute of Clothing Technology 
+	10	depended
+			sense:	depend.v.01
+			prop:	depend.01
+			V		10-10	depended 
+			N-ARGM-TMP		0-2	In the past 
+			N-ARG-A0		4-9	Beijing Institute of Clothing Technology named 
+			N-ARG-A1		11-12	on clothing 
+	11	on
+	12	clothing
+			sense:	clothing.n.01
+	13	,
+	14	but
+	15	in
+	16	2007
+			name:	DATE				16-16	2007 
+	17	,
+	18	the
+			coref:	IDENT			3	18-19	the BIFT 
+	19	BIFT
+			name:	ORGANIZATION				19-19	BIFT 
+	20	transformed
+			sense:	transform.v.02
+			prop:	transform.01
+			V		20-20	transformed 
+			N-ARGM-TMP		15-16	in 2007 
+			N-ARG-A0		18-19	the BIFT 
+			N-ARG-A1		21-22	the name 
+			N-ARG-A2		23-28	to Beijing Institute of Fashion Technology 
+	21	the
+			coref:	IDENT			1	21-22	the name 
+	22	name
+			sense:	name.n.01
+	23	to
+	24	Beijing
+			coref:	IDENT			2	24-28	Beijing Institute of Fashion Technology 
+			name:	ORGANIZATION				24-28	Beijing Institute of Fashion Technology 
+	25	Institute
+	26	of
+	27	Fashion
+	28	Technology
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This college is the only one school that education based on the fashion and clothing design .
+
+
+Treebanked sentence:
+--------------------
+This college is the only one school that education based on the fashion and clothing design . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT This) (NN college))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ only) (CD one) (NN school))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (NP (NN education))
+            (VP (VBN based)
+              (PP (IN on)
+                (NP (DT the)
+                  (NML (NN fashion)
+                    (CC and)
+                    (NN clothing))
+                  (NN design))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+			coref:	IDENT			3	0-1	This college 
+	1	college
+			sense:	college.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	This college 
+			N-ARG-A2		3-15	the only one school that education based on the fashion and clothing design 
+	3	the
+	4	only
+			sense:	alone.s.03
+	5	one
+			name:	NUMBER				5-5	one 
+	6	school
+			sense:	school.n.01
+	7	that
+	8	education
+			sense:	education.n.01
+	9	based
+			sense:	establish.v.08
+			prop:	base.02
+			V		9-9	based 
+			N-ARG-A1		8-8	education 
+			N-ARG-A2		10-15	on the fashion and clothing design 
+	10	on
+	11	the
+	12	fashion
+			sense:	fashion.n.03
+	13	and
+	14	clothing
+			sense:	clothing.n.01
+	15	design
+			sense:	design.n.01
+	16	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.10-15	the Beijing Institute of Clothing Technology 
+				8.4-8	Beijing Institute of Clothing Technology 
+	Chain 1 (IDENT)
+				4.3-8	its official name of English version 
+				8.21-22	the name 
+	Chain 2 (IDENT)
+				1.17-25	the Beijing Institute of Chemical Fiber Technology in 1961 
+				0.0-4	Beijing Institute of Fashion Technology 
+				1.0-0	It 
+				1.6-11	the Beijing Institute of Textile Technology 
+				2.3-3	it 
+				2.20-20	it 
+				3.5-5	it 
+				4.3-3	its 
+				4.12-20	" Beijing Institute of Fashion Technology " , together 
+				4.25-25	its 
+				7.0-1	This institute 
+				8.24-28	Beijing Institute of Fashion Technology 
+	Chain 3 (IDENT)
+				8.18-19	the BIFT 
+				9.0-1	This college 
+

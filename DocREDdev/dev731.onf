@@ -1,0 +1,679 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Rockefeller Brothers Fund ( RBF ) is a philanthropic foundation created and run by members of the Rockefeller family .
+
+
+Treebanked sentence:
+--------------------
+The Rockefeller Brothers Fund ( RBF ) is a philanthropic foundation created and run by members of the Rockefeller family . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Rockefeller) (NNPS Brothers) (NNP Fund))
+      (-LRB- -LRB-)
+      (NP (NNP RBF))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ philanthropic) (NN foundation))
+        (VP (VBN created)
+          (CC and)
+          (VBN run)
+          (PP (IN by)
+            (NP
+              (NP (NNS members))
+              (PP (IN of)
+                (NP (DT the) (NNP Rockefeller) (NN family))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-3	The Rockefeller Brothers Fund 
+	1	Rockefeller
+			name:	ORGANIZATION				1-3	Rockefeller Brothers Fund 
+	2	Brothers
+	3	Fund
+	4	(
+	5	RBF
+			coref:	IDENT			2	5-5	RBF 
+	6	)
+	7	is
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		0-6	The Rockefeller Brothers Fund ( RBF ) 
+			N-ARG-A2		8-19	a philanthropic foundation created and run by members of the Rockefeller family 
+	8	a
+	9	philanthropic
+			sense:	philanthropic.a.02
+	10	foundation
+			sense:	foundation.n.02
+	11	created
+			sense:	create.v.02
+			prop:	create.01
+			V		11-11	created 
+			N-ARG-A1		8-10	a philanthropic foundation 
+			N-ARG-A0		14-19	by members of the Rockefeller family 
+	12	and
+	13	run
+			sense:	operate.v.01
+			prop:	run.01
+			V		13-13	run 
+			N-ARG-A1		8-10	a philanthropic foundation 
+			N-ARG-A0		14-19	by members of the Rockefeller family 
+	14	by
+	15	members
+			sense:	member.n.01
+	16	of
+	17	the
+	18	Rockefeller
+			coref:	IDENT			1	18-18	Rockefeller 
+			name:	PERSON				18-18	Rockefeller 
+	19	family
+			sense:	family.n.04
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was founded in New York City in 1940 as the primary philanthropic vehicle for the five third - generation Rockefeller brothers : John D. Rockefeller III , Nelson , Laurance , Winthrop and David .
+
+
+Treebanked sentence:
+--------------------
+It was founded in New York City in 1940 as the primary philanthropic vehicle for the five third - generation Rockefeller brothers : John D. Rockefeller III , Nelson , Laurance , Winthrop and David . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN founded)
+        (PP (IN in)
+          (NP
+            (NP (NNP New) (NNP York) (NNP City))
+            (PP (IN in)
+              (NP (CD 1940)))))
+        (PP (IN as)
+          (NP
+            (NP
+              (NP (DT the) (JJ primary) (JJ philanthropic) (NN vehicle))
+              (PP (IN for)
+                (NP (DT the) (CD five)
+                  (NML
+                    (NML (JJ third) (HYPH -) (NN generation))
+                    (NNP Rockefeller))
+                  (NNS brothers))))
+            (: :)
+            (NP
+              (NP (NNP John) (NNP D.) (NNP Rockefeller))
+              (NP (NNP III) (, ,) (NNP Nelson) (, ,) (NNP Laurance) (, ,) (NNP Winthrop)
+                (CC and)
+                (NNP David)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		2-2	founded 
+			N-ARG-A1		0-0	It 
+			N-ARGM-LOC		3-6	in New York City 
+			N-ARGM-TMP		7-8	in 1940 
+			N-ARGM-PRD		9-34	as the primary philanthropic vehicle for the five third - generation Rockefeller brothers : John D. Rockefeller III , Nelson , Laurance , Winthrop and David 
+	3	in
+	4	New
+			name:	CITY				4-6	New York City 
+	5	York
+	6	City
+	7	in
+	8	1940
+			name:	DATE				8-8	1940 
+	9	as
+	10	the
+	11	primary
+			sense:	chief.s.01
+	12	philanthropic
+			sense:	philanthropic.a.02
+	13	vehicle
+			sense:	vehicle.n.02
+	14	for
+	15	the
+	16	five
+			name:	NUMBER				16-16	five 
+	17	third
+			name:	ORDINAL				17-17	third 
+			sense:	third.s.01
+	18	-
+	19	generation
+			sense:	generation.n.02
+	20	Rockefeller
+			coref:	IDENT			1	20-20	Rockefeller 
+			name:	PERSON				20-20	Rockefeller 
+	21	brothers
+			sense:	brother.n.01
+	22	:
+	23	John
+			coref:	IDENT			1	23-26	John D. Rockefeller III 
+			name:	PERSON				23-26	John D. Rockefeller III 
+	24	D.
+	25	Rockefeller
+	26	III
+	27	,
+	28	Nelson
+			name:	PERSON				28-28	Nelson 
+	29	,
+	30	Laurance
+			name:	LOCATION				30-30	Laurance 
+	31	,
+	32	Winthrop
+			name:	PERSON				32-32	Winthrop 
+	33	and
+	34	David
+			name:	PERSON				34-34	David 
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is distinct from the Rockefeller Foundation .
+
+
+Treebanked sentence:
+--------------------
+It is distinct from the Rockefeller Foundation . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP (JJ distinct)
+        (PP (IN from)
+          (NP (DT the) (NNP Rockefeller) (NNP Foundation)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-6	distinct from the Rockefeller Foundation 
+	2	distinct
+			sense:	discrete.s.01
+	3	from
+	4	the
+	5	Rockefeller
+			name:	ORGANIZATION				5-6	Rockefeller Foundation 
+	6	Foundation
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Rockefellers are an industrial , political , and banking family that made one of the world 's largest fortunes in the oil business during the late 19th and early 20th centuries .
+
+
+Treebanked sentence:
+--------------------
+The Rockefellers are an industrial , political , and banking family that made one of the world 's largest fortunes in the oil business during the late 19th and early 20th centuries . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNPS Rockefellers))
+    (VP (VBP are)
+      (NP
+        (NP (DT an)
+          (UCP (JJ industrial) (, ,) (JJ political) (, ,)
+            (CC and)
+            (NN banking))
+          (NN family))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD made)
+              (NP
+                (NP (CD one))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NN world) (POS 's))
+                    (JJS largest) (NNS fortunes))))
+              (PP (IN in)
+                (NP (DT the) (NN oil) (NN business)))
+              (PP (IN during)
+                (NP (DT the) (JJ late)
+                  (ADJP (JJ 19th)
+                    (CC and)
+                    (JJ early))
+                  (JJ 20th) (NNS centuries))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Rockefellers
+			name:	ORGANIZATION				1-1	Rockefellers 
+	2	are
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	are 
+			N-ARG-A1		0-1	The Rockefellers 
+			N-ARG-A2		3-31	an industrial , political , and banking family that made one of the world 's largest fortunes in the oil business during the late 19th and early 20th centuries 
+	3	an
+	4	industrial
+			sense:	industrial.a.01
+	5	,
+	6	political
+			sense:	political.a.01
+	7	,
+	8	and
+	9	banking
+			sense:	banking.n.01
+	10	family
+			sense:	family.n.04
+	11	that
+	12	made
+			sense:	gain.v.08
+			prop:	make.05
+			V		12-12	made 
+			N-ARG-A0		3-10	an industrial , political , and banking family 
+			R-ARG-A0		11-11	that 
+			N-ARG-A1		13-19	one of the world 's largest fortunes 
+			N-ARGM-LOC		20-23	in the oil business 
+			N-ARGM-TMP		24-31	during the late 19th and early 20th centuries 
+	13	one
+			name:	NUMBER				13-13	one 
+	14	of
+	15	the
+	16	world
+			sense:	earth.n.01
+	17	's
+	18	largest
+			sense:	large.a.01
+	19	fortunes
+			sense:	fortune.n.02
+	20	in
+	21	the
+	22	oil
+			sense:	oil.n.01
+	23	business
+			sense:	commercial_enterprise.n.02
+	24	during
+	25	the
+	26	late
+			sense:	late.a.01
+	27	19th
+			name:	ORDINAL				27-27	19th 
+			sense:	nineteenth.s.01
+	28	and
+	29	early
+			name:	DATE				29-31	early 20th centuries 
+			sense:	early.a.01
+	30	20th
+			sense:	twentieth.s.01
+	31	centuries
+			sense:	century.n.01
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Fund 's stated mission is to " advance social change that contributes to a more just , sustainable , and peaceful world . "
+
+
+Treebanked sentence:
+--------------------
+The Fund 's stated mission is to " advance social change that contributes to a more just , sustainable , and peaceful world . " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Fund) (POS 's))
+      (VBN stated) (NN mission))
+    (VP (VBZ is)
+      (S
+        (VP (TO to) (`` ")
+          (VP (VB advance)
+            (NP
+              (NP (JJ social) (NN change))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ contributes)
+                    (PP (IN to)
+                      (NP (DT a) (JJR more)
+                        (ADJP
+                          (ADJP
+                            (ADVP (RB just))
+                            (, ,) (JJ sustainable))
+                          (, ,)
+                          (CC and)
+                          (ADJP (JJ peaceful)))
+                        (NN world)))))))))))
+    (. .) ('' ")))
+
+
+Leaves:
+-------
+	0	The
+	1	Fund
+	2	's
+	3	stated
+			sense:	state.v.01
+			prop:	state.01
+			V		3-3	stated 
+			N-ARG-A1		4-4	mission 
+	4	mission
+			sense:	mission.n.03
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	The Fund 's stated mission 
+			N-ARG-A2		6-22	to " advance social change that contributes to a more just , sustainable , and peaceful world 
+	6	to
+	7	"
+	8	advance
+			sense:	promote.v.01
+			prop:	advance.01
+			V		8-8	advance 
+			N-ARG-A0		0-2	The Fund 's 
+			N-ARG-A1		9-22	social change that contributes to a more just , sustainable , and peaceful world 
+	9	social
+			sense:	social.a.01
+	10	change
+			sense:	change.n.01
+	11	that
+	12	contributes
+			sense:	lend.v.01
+			prop:	contribute.01
+			V		12-12	contributes 
+			N-ARG-A0		9-10	social change 
+			R-ARG-A0		11-11	that 
+			N-ARG-A2		13-22	to a more just , sustainable , and peaceful world 
+	13	to
+	14	a
+	15	more
+			sense:	more.a.01
+	16	just
+			sense:	merely.r.01
+	17	,
+	18	sustainable
+			sense:	sustainable.a.01
+	19	,
+	20	and
+	21	peaceful
+			sense:	peaceful.a.01
+	22	world
+			sense:	earth.n.01
+	23	.
+	24	"
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The current president of RBF is Stephen Heintz , who was appointed to the post in 2000 .
+
+
+Treebanked sentence:
+--------------------
+The current president of RBF is Stephen Heintz , who was appointed to the post in 2000 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ current) (NN president))
+      (PP (IN of)
+        (NP (NNP RBF))))
+    (VP (VBZ is)
+      (NP
+        (NP (NNP Stephen) (NNP Heintz))
+        (, ,)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD was)
+              (VP (VBN appointed)
+                (PP (IN to)
+                  (NP
+                    (NP (DT the) (NN post))
+                    (PP (IN in)
+                      (NP (CD 2000)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	current
+			name:	DATE				1-1	current 
+			sense:	current.a.01
+	2	president
+			name:	TITLE				2-2	president 
+			sense:	president.n.04
+	3	of
+	4	RBF
+			coref:	IDENT			2	4-4	RBF 
+			name:	ORGANIZATION				4-4	RBF 
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	The current president of RBF 
+			N-ARG-A2		6-16	Stephen Heintz , who was appointed to the post in 2000 
+	6	Stephen
+			name:	PERSON				6-7	Stephen Heintz 
+	7	Heintz
+	8	,
+	9	who
+	10	was
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	was 
+	11	appointed
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		11-11	appointed 
+			N-ARG-A1		6-7	Stephen Heintz 
+			R-ARG-A1		9-9	who 
+			N-ARG-A2		12-14	to the post 
+			N-ARGM-TMP		15-16	in 2000 
+	12	to
+	13	the
+	14	post
+			sense:	position.n.06
+	15	in
+	16	2000
+			name:	DATE				16-16	2000 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Valerie Rockefeller serves as RBF 's chairwoman .
+
+
+Treebanked sentence:
+--------------------
+Valerie Rockefeller serves as RBF 's chairwoman . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Valerie) (NNP Rockefeller))
+    (VP (VBZ serves)
+      (PP (IN as)
+        (NP
+          (NP (NNP RBF) (POS 's))
+          (NN chairwoman))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Valerie
+			name:	PERSON				0-1	Valerie Rockefeller 
+	1	Rockefeller
+	2	serves
+			sense:	serve.v.02
+			prop:	serve.01
+			V		2-2	serves 
+			N-ARG-A0		0-1	Valerie Rockefeller 
+			N-ARG-A1		3-6	as RBF 's chairwoman 
+	3	as
+	4	RBF
+			coref:	IDENT			2	4-5	RBF 's 
+			name:	ORGANIZATION				4-4	RBF 
+	5	's
+	6	chairwoman
+			name:	TITLE				6-6	chairwoman 
+			sense:	president.n.04
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She succeeded Richard Rockefeller , the fifth child of David Rockefeller , who served as RBF 's chairman until 2013 .
+
+
+Treebanked sentence:
+--------------------
+She succeeded Richard Rockefeller , the fifth child of David Rockefeller , who served as RBF 's chairman until 2013 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD succeeded)
+      (NP
+        (NP (NNP Richard) (NNP Rockefeller))
+        (, ,)
+        (NP
+          (NP (DT the) (JJ fifth) (NN child))
+          (PP (IN of)
+            (NP
+              (NP (NNP David) (NNP Rockefeller))
+              (, ,)
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD served)
+                    (PP (IN as)
+                      (NP
+                        (NP (NNP RBF) (POS 's))
+                        (NN chairman)))
+                    (PP (IN until)
+                      (NP (CD 2013)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	succeeded
+			sense:	succeed.v.02
+			prop:	succeed.02
+			V		1-1	succeeded 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		2-19	Richard Rockefeller , the fifth child of David Rockefeller , who served as RBF 's chairman until 2013 
+	2	Richard
+			name:	PERSON				2-3	Richard Rockefeller 
+	3	Rockefeller
+	4	,
+	5	the
+	6	fifth
+			name:	ORDINAL				6-6	fifth 
+			sense:	fifth.s.01
+	7	child
+			sense:	child.n.02
+	8	of
+	9	David
+			name:	PERSON				9-10	David Rockefeller 
+	10	Rockefeller
+	11	,
+	12	who
+	13	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		13-13	served 
+			N-ARG-A0		2-10	Richard Rockefeller , the fifth child of David Rockefeller 
+			R-ARG-A0		12-12	who 
+			N-ARG-A1		14-17	as RBF 's chairman 
+			N-ARGM-TMP		18-19	until 2013 
+	14	as
+	15	RBF
+			coref:	IDENT			2	15-16	RBF 's 
+			name:	ORGANIZATION				15-15	RBF 
+	16	's
+	17	chairman
+			name:	TITLE				17-17	chairman 
+			sense:	president.n.04
+	18	until
+	19	2013
+			name:	DATE				19-19	2013 
+	20	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-3	The Rockefeller Brothers Fund 
+				1.0-0	It 
+				2.0-0	It 
+	Chain 1 (IDENT)
+				1.23-26	John D. Rockefeller III 
+				0.18-18	Rockefeller 
+				1.20-20	Rockefeller 
+	Chain 2 (IDENT)
+				6.4-5	RBF 's 
+				0.5-5	RBF 
+				5.4-4	RBF 
+				7.15-16	RBF 's 
+

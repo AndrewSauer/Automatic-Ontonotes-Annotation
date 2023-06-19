@@ -1,0 +1,575 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Edward P. " Ned " McEvoy ( born 1886 ) was an Irish hurler who played for the Dublin and Laois senior teams .
+
+
+Treebanked sentence:
+--------------------
+Edward P. " Ned " McEvoy ( born 1886 ) was an Irish hurler who played for the Dublin and Laois senior teams . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Edward) (NNP P.) ('' ") (NNP Ned))
+    ('' ")
+    (NP
+      (NP (NNP McEvoy))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 1886)))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (JJ Irish) (NN hurler))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD played)
+              (PP (IN for)
+                (NP
+                  (NP (DT the) (NNP Dublin))
+                  (CC and)
+                  (NP (NNP Laois) (JJ senior) (NNS teams)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Edward
+	1	P.
+	2	"
+	3	Ned
+	4	"
+	5	McEvoy
+			coref:	IDENT			2	5-8	McEvoy ( born 1886 
+			name:	PERSON				5-5	McEvoy 
+	6	(
+	7	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		7-7	born 
+			N-ARG-A1		0-5	Edward P. " Ned " McEvoy 
+			N-ARGM-TMP		8-8	1886 
+	8	1886
+			name:	DATE				8-8	1886 
+	9	)
+	10	was
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	was 
+			N-ARG-A1		0-9	Edward P. " Ned " McEvoy ( born 1886 ) 
+			N-ARG-A2		11-22	an Irish hurler who played for the Dublin and Laois senior teams 
+	11	an
+	12	Irish
+			name:	NATIONALITY				12-12	Irish 
+	13	hurler
+			sense:	pitcher.n.01
+	14	who
+	15	played
+			sense:	play.v.01
+			prop:	play.01
+			V		15-15	played 
+			N-ARG-A0		11-13	an Irish hurler 
+			R-ARG-A0		14-14	who 
+	16	for
+	17	the
+			coref:	IDENT			0	17-18	the Dublin 
+	18	Dublin
+			name:	CITY				18-18	Dublin 
+	19	and
+	20	Laois
+			name:	LOCATION				20-20	Laois 
+	21	senior
+			sense:	senior.s.02
+	22	teams
+			sense:	team.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in Abbeyleix , County Laois , McEvoy first played competitive hurling and Gaelic football in his youth .
+
+
+Treebanked sentence:
+--------------------
+Born in Abbeyleix , County Laois , McEvoy first played competitive hurling and Gaelic football in his youth . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP (NNP Abbeyleix) (, ,) (NNP County) (NNP Laois)))))
+    (, ,)
+    (NP (NNP McEvoy))
+    (ADVP (RB first))
+    (VP (VBD played)
+      (NP
+        (NP
+          (NP (JJ competitive))
+          (VP (VBG hurling)))
+        (CC and)
+        (NP
+          (NP (JJ Gaelic) (NN football))
+          (PP (IN in)
+            (NP (PRP$ his) (NN youth))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-5	in Abbeyleix , County Laois 
+			N-ARG-A1		7-7	McEvoy 
+	1	in
+	2	Abbeyleix
+			coref:	IDENT			1	2-2	Abbeyleix 
+			name:	CITY				2-2	Abbeyleix 
+	3	,
+	4	County
+			name:	LOCATION				4-5	County Laois 
+	5	Laois
+	6	,
+	7	McEvoy
+			coref:	IDENT			2	7-7	McEvoy 
+			name:	PERSON				7-7	McEvoy 
+	8	first
+			name:	ORDINAL				8-8	first 
+			sense:	first.r.02
+	9	played
+			sense:	play.v.01
+			prop:	play.01
+			V		9-9	played 
+			R-ARG-A0		0-5	Born in Abbeyleix , County Laois 
+			N-ARG-A0		7-7	McEvoy 
+			N-ARGM-TMP		8-8	first 
+			N-ARG-A1		10-14	competitive hurling and Gaelic football 
+			N-ARGM-TMP		15-17	in his youth 
+	10	competitive
+			sense:	competitive.a.01
+	11	hurling
+			sense:	hurl.v.01
+			prop:	hurl.01
+			V		11-11	hurling 
+			N-ARGM-MNR		10-10	competitive 
+	12	and
+	13	Gaelic
+	14	football
+			sense:	football.n.01
+	15	in
+	16	his
+			coref:	IDENT			2	16-16	his 
+	17	youth
+			sense:	youth.n.03
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He arrived on the inter - county scene when he first linked up with the Laois senior team before later joining the Dublin senior team before returning to Laois .
+
+
+Treebanked sentence:
+--------------------
+He arrived on the inter - county scene when he first linked up with the Laois senior team before later joining the Dublin senior team before returning to Laois . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD arrived)
+      (PP (IN on)
+        (NP (DT the)
+          (NML (AFX inter) (HYPH -) (NN county))
+          (NN scene)))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP he))
+          (ADVP (RB first))
+          (VP (VBD linked)
+            (PRT (RP up))
+            (PP (IN with)
+              (NP (DT the) (NNP Laois) (JJ senior) (NN team)))
+            (ADVP (RB before) (RB later)
+              (S
+                (VP (VBG joining)
+                  (NP (DT the) (NNP Dublin) (JJ senior) (NN team))
+                  (PP (IN before)
+                    (S
+                      (VP (VBG returning)
+                        (PP (IN to)
+                          (NP (NNP Laois)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	arrived
+			sense:	arrive.v.01
+			prop:	arrive.01
+			V		1-1	arrived 
+			N-ARG-A1		0-0	He 
+			N-ARG-A4		2-7	on the inter - county scene 
+			N-ARGM-TMP		8-28	when he first linked up with the Laois senior team before later joining the Dublin senior team before returning to Laois 
+	2	on
+	3	the
+	4	inter
+	5	-
+	6	county
+			sense:	county.n.01
+	7	scene
+			sense:	scene.n.01
+	8	when
+	9	he
+			coref:	IDENT			2	9-9	he 
+	10	first
+			name:	ORDINAL				10-10	first 
+			sense:	first.r.02
+	11	linked
+			sense:	connect.v.03
+			prop:	link.02
+			V		11-11	linked 
+			N-ARGM-TMP		8-8	when 
+			N-ARG-A0		9-9	he 
+			N-ARGM-TMP		10-10	first 
+			N-ARG-A1		13-17	with the Laois senior team 
+	12	up
+	13	with
+	14	the
+	15	Laois
+			name:	LOCATION				15-15	Laois 
+	16	senior
+			sense:	senior.s.02
+	17	team
+			sense:	team.n.01
+	18	before
+			sense:	earlier.r.01
+	19	later
+			sense:	subsequently.r.01
+	20	joining
+			sense:	join.v.01
+			prop:	join.01
+			V		20-20	joining 
+			N-ARG-A0		9-9	he 
+			N-ARGM-TMP		19-19	later 
+			N-ARG-A1		21-24	the Dublin senior team 
+			N-ARGM-TMP		25-28	before returning to Laois 
+	21	the
+	22	Dublin
+			coref:	IDENT			0	22-22	Dublin 
+			name:	CITY				22-22	Dublin 
+	23	senior
+			sense:	senior.s.02
+	24	team
+			sense:	team.n.01
+	25	before
+	26	returning
+			sense:	return.v.01
+			prop:	return.01
+			V		26-26	returning 
+			N-ARG-A1		9-9	he 
+			N-ARG-A4		27-28	to Laois 
+	27	to
+	28	Laois
+			name:	LOCATION				28-28	Laois 
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+McEvoy was a regular member of the starting fifteen , and won one All - Ireland medal and two Leinster medals .
+
+
+Treebanked sentence:
+--------------------
+McEvoy was a regular member of the starting fifteen , and won one All - Ireland medal and two Leinster medals . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP McEvoy))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ regular) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (DT the)
+              (NML
+                (S
+                  (VP
+                    (VP (VBG starting)
+                      (NP (CD fifteen)))
+                    (, ,)
+                    (CC and)
+                    (VP (VBD won)
+                      (NP (CD one))
+                      (NP (DT All) (HYPH -) (NNP Ireland))))))
+              (NN medal))
+            (CC and)
+            (NP (CD two) (NNP Leinster) (NNS medals))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	McEvoy
+			coref:	IDENT			2	0-0	McEvoy 
+			name:	PERSON				0-0	McEvoy 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	McEvoy 
+			N-ARG-A2		2-8	a regular member of the starting fifteen 
+	2	a
+	3	regular
+			sense:	regular.s.07
+	4	member
+			sense:	member.n.01
+	5	of
+	6	the
+	7	starting
+			sense:	start.v.11
+			prop:	starting.01
+			V		7-7	starting 
+			N-ARG-A1		8-8	fifteen 
+	8	fifteen
+			name:	NUMBER				8-8	fifteen 
+	9	,
+	10	and
+	11	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		11-11	won 
+			N-ARG-A0		0-0	McEvoy 
+			N-ARG-A1		12-20	one All - Ireland medal and two Leinster medals 
+	12	one
+			name:	NUMBER				12-12	one 
+	13	All
+	14	-
+	15	Ireland
+			name:	COUNTRY				15-15	Ireland 
+	16	medal
+			sense:	decoration.n.02
+	17	and
+	18	two
+			name:	NUMBER				18-18	two 
+	19	Leinster
+	20	medals
+			sense:	decoration.n.02
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was an All - Ireland runner - up on one occasion .
+
+
+Treebanked sentence:
+--------------------
+He was an All - Ireland runner - up on one occasion . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP (DT an)
+        (NML (NNP All) (HYPH -) (NNP Ireland))
+        (NN runner) (HYPH -) (NN up))
+      (PP (IN on)
+        (NP (CD one) (NN occasion))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-8	an All - Ireland runner - up 
+			N-ARGM-TMP		9-11	on one occasion 
+	2	an
+	3	All
+	4	-
+	5	Ireland
+			name:	COUNTRY				5-5	Ireland 
+	6	runner
+			name:	TITLE				6-6	runner 
+			sense:	runner.n.06
+	7	-
+	8	up
+	9	on
+	10	one
+			name:	NUMBER				10-10	one 
+	11	occasion
+			sense:	juncture.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At club level McEvoy won several championship medals as a dual player with Abbeyleix .
+
+
+Treebanked sentence:
+--------------------
+At club level McEvoy won several championship medals as a dual player with Abbeyleix . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (NN club) (NN level)))
+    (NP (NNP McEvoy))
+    (VP (VBD won)
+      (NP (JJ several) (NN championship) (NNS medals))
+      (PP (IN as)
+        (NP (DT a) (JJ dual) (NN player)))
+      (PP (IN with)
+        (NP (NNP Abbeyleix))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	club
+			sense:	club.n.02
+	2	level
+			sense:	grade.n.02
+	3	McEvoy
+			coref:	IDENT			2	3-3	McEvoy 
+			name:	PERSON				3-3	McEvoy 
+	4	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		4-4	won 
+			N-ARGM-LOC		0-2	At club level 
+			N-ARG-A0		3-3	McEvoy 
+			N-ARG-A1		5-7	several championship medals 
+			N-ARGM-PRD		8-13	as a dual player with Abbeyleix 
+	5	several
+			sense:	several.s.01
+	6	championship
+			sense:	championship.n.02
+	7	medals
+			sense:	decoration.n.02
+	8	as
+	9	a
+	10	dual
+			sense:	double.s.02
+	11	player
+			sense:	player.n.01
+	12	with
+	13	Abbeyleix
+			coref:	IDENT			1	13-13	Abbeyleix 
+			name:	PERSON				13-13	Abbeyleix 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also won a championship medal with the Thomas Davis club .
+
+
+Treebanked sentence:
+--------------------
+He also won a championship medal with the Thomas Davis club . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD won)
+      (NP (DT a) (NN championship) (NN medal))
+      (PP (IN with)
+        (NP (DT the)
+          (NML (NNP Thomas) (NNP Davis))
+          (NN club))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	also
+			sense:	besides.r.02
+	2	won
+			sense:	win.v.01
+			prop:	win.01
+			V		2-2	won 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-5	a championship medal 
+	3	a
+	4	championship
+			sense:	championship.n.02
+	5	medal
+			sense:	decoration.n.02
+	6	with
+	7	the
+	8	Thomas
+			name:	PERSON				8-9	Thomas Davis 
+	9	Davis
+	10	club
+			sense:	club.n.02
+	11	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.17-18	the Dublin 
+				2.22-22	Dublin 
+	Chain 1 (IDENT)
+				1.2-2	Abbeyleix 
+				5.13-13	Abbeyleix 
+	Chain 2 (IDENT)
+				0.5-8	McEvoy ( born 1886 
+				1.7-7	McEvoy 
+				1.16-16	his 
+				2.0-0	He 
+				2.9-9	he 
+				3.0-0	McEvoy 
+				4.0-0	He 
+				5.3-3	McEvoy 
+				6.0-0	He 
+

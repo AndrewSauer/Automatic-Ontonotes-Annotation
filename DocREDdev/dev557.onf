@@ -1,0 +1,588 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Carlos Pedevilla ( born c. 1980 ) is an Argentine actor .
+
+
+Treebanked sentence:
+--------------------
+Carlos Pedevilla ( born c. 1980 ) is an Argentine actor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Carlos) (NNP Pedevilla))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP
+          (NP (NNS c.))
+          (NP (CD 1980))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT an) (JJ Argentine) (NN actor)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Carlos
+			coref:	IDENT			1	0-1	Carlos Pedevilla 
+			name:	PERSON				0-1	Carlos Pedevilla 
+	1	Pedevilla
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Carlos Pedevilla 
+			N-ARGM-TMP		4-5	c. 1980 
+	4	c.
+	5	1980
+			name:	DATE				5-5	1980 
+	6	)
+	7	is
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		0-6	Carlos Pedevilla ( born c. 1980 ) 
+			N-ARG-A2		8-10	an Argentine actor 
+	8	an
+	9	Argentine
+			name:	NATIONALITY				9-9	Argentine 
+			sense:	argentine.a.01
+	10	actor
+			name:	TITLE				10-10	actor 
+			sense:	actor.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Pedevilla is perhaps better remembered for his characterization of " Coco " in the Telefe production , " Chiquititas " .
+
+
+Treebanked sentence:
+--------------------
+Pedevilla is perhaps better remembered for his characterization of " Coco " in the Telefe production , " Chiquititas " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Pedevilla))
+    (VP (VBZ is)
+      (ADVP (RB perhaps) (JJR better))
+      (VP (VBN remembered)
+        (PP (IN for)
+          (NP
+            (NP (PRP$ his) (NN characterization))
+            (PP (IN of) (`` ")
+              (NP (NNP Coco))
+              ('' "))))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN Telefe) (NN production))
+            (, ,)
+            (NP ('' ") (NNP Chiquititas) ('' "))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Pedevilla
+			coref:	IDENT			1	0-0	Pedevilla 
+			name:	PERSON				0-0	Pedevilla 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+			N-ARGM-ADV		2-2	perhaps 
+	2	perhaps
+			sense:	possibly.r.01
+	3	better
+			sense:	good.a.01
+	4	remembered
+			sense:	remember.v.02
+			prop:	remember.01
+			V		4-4	remembered 
+			N-ARG-A1		0-0	Pedevilla 
+			N-ARGM-ADV		2-2	perhaps 
+			N-ARGM-MNR		3-3	better 
+			N-ARG-A2		5-19	for his characterization of " Coco " in the Telefe production , " Chiquititas " 
+	5	for
+	6	his
+			coref:	IDENT			1	6-6	his 
+	7	characterization
+			sense:	portrayal.n.02
+	8	of
+	9	"
+	10	Coco
+			name:	MISC				10-10	Coco 
+	11	"
+	12	in
+	13	the
+	14	Telefe
+			name:	MISC				14-14	Telefe 
+	15	production
+			sense:	production.n.02
+	16	,
+	17	"
+	18	Chiquititas
+	19	"
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Pedevilla made his television acting debut in " El Arbol Azul " ( " The Blue Tree " ) , where he had the opportunity to work alongside Andrea Del Boca , among others .
+
+
+Treebanked sentence:
+--------------------
+Pedevilla made his television acting debut in " El Arbol Azul " ( " The Blue Tree " ) , where he had the opportunity to work alongside Andrea Del Boca , among others . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Pedevilla))
+    (VP (VBD made)
+      (NP (PRP$ his) (NN television))
+      (S
+        (VP (VBG acting)
+          (NP (NN debut))
+          (PP (IN in)
+            (NP (`` ")
+              (NP (NNP El) (NNP Arbol) (NNP Azul))
+              ('' ") (-LRB- -LRB-) (`` ")
+              (NP (DT The) (NNP Blue) (NNP Tree))
+              ('' ") (-RRB- -RRB-)))))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP he))
+          (VP (VBD had)
+            (NP (DT the) (NN opportunity)
+              (S
+                (VP (TO to)
+                  (VP (VB work)
+                    (PP (IN alongside)
+                      (NP (NNP Andrea) (NNP Del) (NNP Boca)))
+                    (, ,)
+                    (PP (IN among)
+                      (NP (NNS others)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Pedevilla
+			coref:	IDENT			1	0-0	Pedevilla 
+			name:	PERSON				0-0	Pedevilla 
+	1	made
+			sense:	make.v.01
+			prop:	make.01
+			V		1-1	made 
+			N-ARG-A0		0-0	Pedevilla 
+			N-ARG-A1		2-5	his television acting debut 
+			N-ARGM-LOC		6-33	in " El Arbol Azul " ( " The Blue Tree " ) , where he had the opportunity to work alongside Andrea Del Boca , among others 
+	2	his
+			coref:	IDENT			1	2-2	his 
+	3	television
+			sense:	television.n.01
+	4	acting
+			sense:	act.v.03
+			prop:	act.01
+			V		4-4	acting 
+			N-ARGM-LOC		3-3	television 
+	5	debut
+			sense:	introduction.n.01
+	6	in
+	7	"
+	8	El
+	9	Arbol
+	10	Azul
+	11	"
+	12	(
+	13	"
+	14	The
+	15	Blue
+			name:	MISC				15-16	Blue Tree 
+	16	Tree
+	17	"
+	18	)
+	19	,
+	20	where
+	21	he
+			coref:	IDENT			1	21-21	he 
+	22	had
+			sense:	have.v.01
+			prop:	have.03
+			V		22-22	had 
+			N-ARGM-LOC		7-18	" El Arbol Azul " ( " The Blue Tree " ) 
+			R-ARGM-LOC		20-20	where 
+			N-ARG-A0		21-21	he 
+			N-ARG-A1		23-33	the opportunity to work alongside Andrea Del Boca , among others 
+	23	the
+	24	opportunity
+			sense:	opportunity.n.01
+	25	to
+	26	work
+			sense:	work.v.02
+			prop:	work.01
+			V		26-26	work 
+			N-ARG-A0		21-21	he 
+			N-ARG-A3		27-33	alongside Andrea Del Boca , among others 
+	27	alongside
+	28	Andrea
+			name:	PERSON				28-30	Andrea Del Boca 
+	29	Del
+	30	Boca
+	31	,
+	32	among
+	33	others
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Later on during the 1990s , he was given a chance to act in " Chiquititas " , where he acted as Georgina Mollo 's " Georgi " 's romantic interest .
+
+
+Treebanked sentence:
+--------------------
+Later on during the 1990s , he was given a chance to act in " Chiquititas " , where he acted as Georgina Mollo 's " Georgi " 's romantic interest . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP
+      (ADVP (RB Later) (RB on))
+      (IN during)
+      (NP (DT the) (NNS 1990s)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN given)
+        (NP (DT a) (NN chance))
+        (S
+          (VP (TO to)
+            (VP (VB act)
+              (PP (IN in) (`` ")
+                (NP (NNP Chiquititas))
+                ('' ")))))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP he))
+            (VP (VBD acted)
+              (PP (IN as)
+                (NP
+                  (NP (NNP Georgina) (NNP Mollo) (POS 's))
+                  (NML
+                    (NP (`` ") (NNP Georgi) ('' ") (POS 's)))
+                  (JJ romantic) (NN interest))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Later
+			sense:	subsequently.r.01
+	1	on
+			sense:	on.r.02
+	2	during
+	3	the
+			name:	DATE				3-4	the 1990s 
+	4	1990s
+	5	,
+	6	he
+			coref:	IDENT			1	6-6	he 
+	7	was
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	was 
+	8	given
+			sense:	yield.v.01
+			prop:	give.01
+			V		8-8	given 
+			N-ARGM-TMP		0-1	Later on 
+			N-ARGM-TMP		2-4	during the 1990s 
+			N-ARG-A2		6-6	he 
+			N-ARG-A1		9-30	a chance to act in " Chiquititas " , where he acted as Georgina Mollo 's " Georgi " 's romantic interest 
+	9	a
+	10	chance
+			sense:	opportunity.n.01
+	11	to
+	12	act
+			sense:	act.v.03
+			prop:	act.01
+			V		12-12	act 
+			N-ARG-A0		6-6	he 
+			N-ARGM-LOC		13-30	in " Chiquititas " , where he acted as Georgina Mollo 's " Georgi " 's romantic interest 
+	13	in
+	14	"
+	15	Chiquititas
+	16	"
+	17	,
+	18	where
+	19	he
+			coref:	IDENT			1	19-19	he 
+	20	acted
+			sense:	act.v.03
+			prop:	act.01
+			V		20-20	acted 
+			N-ARGM-LOC		14-16	" Chiquititas " 
+			R-ARGM-LOC		18-18	where 
+			N-ARG-A0		19-19	he 
+			N-ARG-A1		21-30	as Georgina Mollo 's " Georgi " 's romantic interest 
+	21	as
+	22	Georgina
+			name:	PERSON				22-23	Georgina Mollo 
+	23	Mollo
+	24	's
+	25	"
+	26	Georgi
+			coref:	IDENT			0	26-28	Georgi " 's 
+			name:	PERSON				26-26	Georgi 
+	27	"
+	28	's
+	29	romantic
+			sense:	amatory.s.01
+	30	interest
+			sense:	interest.n.01
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+While " Coco " and " Georgi " dated , " Coco " felt general despise for the rest of the children living in the " Chiquititas " orphan home .
+
+
+Treebanked sentence:
+--------------------
+While " Coco " and " Georgi " dated , " Coco " felt general despise for the rest of the children living in the " Chiquititas " orphan home . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (`` ")
+          (NP (NNP Coco))
+          ('' ")
+          (CC and)
+          (`` ")
+          (NP (NNP Georgi))
+          ('' "))
+        (VP (VBN dated))))
+    (, ,) (`` ")
+    (NP (NNP Coco))
+    ('' ")
+    (VP (VBD felt)
+      (S
+        (NP (JJ general))
+        (VP (VB despise)
+          (PP (IN for)
+            (NP
+              (NP (DT the) (NN rest))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NNS children))
+                  (VP (VBG living)
+                    (PP (IN in)
+                      (NP (DT the)
+                        (NML (`` ") (NNP Chiquititas) ('' ") (NN orphan))
+                        (NN home)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	While
+	1	"
+	2	Coco
+			name:	MISC				2-2	Coco 
+	3	"
+	4	and
+			coref:	IDENT			0	4-6	and " Georgi 
+	5	"
+	6	Georgi
+			name:	PERSON				6-6	Georgi 
+	7	"
+	8	dated
+			sense:	go_steady.v.01
+			prop:	date.02
+			V		8-8	dated 
+			N-ARG-A0		1-7	" Coco " and " Georgi " 
+	9	,
+	10	"
+	11	Coco
+			name:	MISC				11-11	Coco 
+	12	"
+	13	felt
+			sense:	feel.v.01
+			prop:	feel.01
+			V		13-13	felt 
+			N-ARGM-TMP		0-8	While " Coco " and " Georgi " dated 
+			N-ARG-A0		10-12	" Coco " 
+			N-ARG-A1		14-29	general despise for the rest of the children living in the " Chiquititas " orphan home 
+	14	general
+			name:	TITLE				14-14	general 
+			sense:	general.a.01
+	15	despise
+			sense:	contemn.v.01
+			prop:	despise.01
+			V		15-15	despise 
+			N-ARGM-ADJ		14-14	general 
+			N-ARG-A1		16-29	for the rest of the children living in the " Chiquititas " orphan home 
+	16	for
+	17	the
+	18	rest
+			sense:	remainder.n.01
+	19	of
+	20	the
+	21	children
+			sense:	child.n.01
+	22	living
+			sense:	populate.v.01
+			prop:	live.01
+			V		22-22	living 
+			N-ARG-A0		20-21	the children 
+			N-ARGM-LOC		23-29	in the " Chiquititas " orphan home 
+	23	in
+	24	the
+	25	"
+	26	Chiquititas
+			name:	MISC				26-26	Chiquititas 
+	27	"
+	28	orphan
+			sense:	orphan.n.01
+	29	home
+			sense:	home.n.09
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After his period as a member of the " Chiquititas " cast was over , Pedevilla retired from acting on the screen .
+
+
+Treebanked sentence:
+--------------------
+After his period as a member of the " Chiquititas " cast was over , Pedevilla retired from acting on the screen . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN After)
+      (S
+        (NP
+          (NP (PRP$ his) (NN period))
+          (PP (IN as)
+            (NP
+              (NP (DT a) (NN member))
+              (PP (IN of)
+                (NP (DT the) (`` ") (NNP Chiquititas) ('' ") (NN cast))))))
+        (VP (VBD was)
+          (ADVP (RB over)))))
+    (, ,)
+    (NP (NNP Pedevilla))
+    (VP (VBD retired)
+      (PP (IN from)
+        (S
+          (VP (VBG acting)
+            (PP (IN on)
+              (NP (DT the) (NN screen)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	his
+			coref:	IDENT			1	1-1	his 
+	2	period
+			sense:	time_period.n.01
+	3	as
+	4	a
+	5	member
+			sense:	member.n.01
+	6	of
+	7	the
+	8	"
+	9	Chiquititas
+			name:	MISC				9-9	Chiquititas 
+	10	"
+	11	cast
+			sense:	cast.n.01
+	12	was
+			sense:	be.v.01
+			prop:	be.01
+			V		12-12	was 
+			N-ARG-A1		1-11	his period as a member of the " Chiquititas " cast 
+			N-ARG-A2		13-13	over 
+	13	over
+			sense:	over.r.03
+	14	,
+	15	Pedevilla
+			coref:	IDENT			1	15-15	Pedevilla 
+			name:	PERSON				15-15	Pedevilla 
+	16	retired
+			sense:	retire.v.02
+			prop:	retire.01
+			V		16-16	retired 
+			N-ARGM-TMP		0-13	After his period as a member of the " Chiquititas " cast was over 
+			N-ARG-A0		15-15	Pedevilla 
+			N-ARG-A1		17-21	from acting on the screen 
+	17	from
+	18	acting
+			sense:	act.v.03
+			prop:	act.01
+			V		18-18	acting 
+			N-ARG-A0		15-15	Pedevilla 
+			N-ARGM-LOC		19-21	on the screen 
+	19	on
+	20	the
+	21	screen
+			sense:	screen.n.01
+	22	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.4-6	and " Georgi 
+				3.26-28	Georgi " 's 
+	Chain 1 (IDENT)
+				0.0-1	Carlos Pedevilla 
+				1.0-0	Pedevilla 
+				1.6-6	his 
+				2.0-0	Pedevilla 
+				2.2-2	his 
+				2.21-21	he 
+				3.6-6	he 
+				3.19-19	he 
+				5.1-1	his 
+				5.15-15	Pedevilla 
+

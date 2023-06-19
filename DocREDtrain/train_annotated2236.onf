@@ -1,0 +1,525 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Casey Kelly is an American songwriter and musician .
+
+
+Treebanked sentence:
+--------------------
+Casey Kelly is an American songwriter and musician . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Casey) (NNP Kelly))
+    (VP (VBZ is)
+      (NP (DT an) (JJ American) (NN songwriter)
+        (CC and)
+        (NN musician)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Casey
+			name:	PERSON				0-1	Casey Kelly 
+	1	Kelly
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Casey Kelly 
+			N-ARG-A2		3-7	an American songwriter and musician 
+	3	an
+	4	American
+			name:	NATIONALITY				4-4	American 
+	5	songwriter
+			name:	TITLE				5-5	songwriter 
+			sense:	songwriter.n.01
+	6	and
+	7	musician
+			name:	TITLE				7-7	musician 
+			sense:	musician.n.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Kelly has written several Grammy - nominated songs .
+
+
+Treebanked sentence:
+--------------------
+Kelly has written several Grammy - nominated songs . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Kelly))
+    (VP (VBZ has)
+      (VP (VBN written)
+        (NP (JJ several)
+          (ADJP (NNP Grammy) (HYPH -) (VBN nominated))
+          (NNS songs))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Kelly
+			name:	PERSON				0-0	Kelly 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	written
+			sense:	compose.v.02
+			prop:	write.01
+			V		2-2	written 
+			N-ARG-A0		0-0	Kelly 
+			N-ARG-A1		3-7	several Grammy - nominated songs 
+	3	several
+			sense:	several.s.01
+	4	Grammy
+	5	-
+	6	nominated
+			sense:	nominate.v.01
+			prop:	nominate.01
+			V		6-6	nominated 
+			N-ARG-A2		4-4	Grammy 
+			N-ARG-A1		7-7	songs 
+	7	songs
+			sense:	song.n.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His many hits include four Top Ten Country Music Hits : " Anyone Who Is n't Me Tonight " by Kenny Rogers and Dottie West ( Grammy Nominated ) , " Soon " by Tanya Tucker ( Grammy Nominated ) , " Somewhere Down the Line " by T G Shepherd and country music standard , " The Cowboy Rides Away " by George Strait .
+
+
+Treebanked sentence:
+--------------------
+His many hits include four Top Ten Country Music Hits : " Anyone Who Is n't Me Tonight " by Kenny Rogers and Dottie West ( Grammy Nominated ) , " Soon " by Tanya Tucker ( Grammy Nominated ) , " Somewhere Down the Line " by T G Shepherd and country music standard , " The Cowboy Rides Away " by George Strait . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP$ His) (JJ many) (NNS hits))
+      (VP (VBP include)
+        (NP (CD four))
+        (NP
+          (NP (JJ Top) (CD Ten))
+          (SBAR
+            (S
+              (NP (NNP Country) (NNP Music))
+              (VP (VBZ Hits) (: :) (`` ")
+                (S
+                  (NP
+                    (NP (NN Anyone))
+                    (SBAR
+                      (WHNP (WP Who))
+                      (S
+                        (VP (VBZ Is) (RB n't)))))
+                  (NP
+                    (NP (PRP Me))
+                    (NP-TMP (NN Tonight))))
+                ('' ")
+                (PP (IN by)
+                  (NP
+                    (NP (NNP Kenny) (NNP Rogers))
+                    (CC and)
+                    (NP (NNP Dottie) (NNP West) (-LRB- -LRB-) (NNP Grammy) (NNP Nominated) (-RRB- -RRB-))))
+                (, ,)
+                (PP (`` ") (RB Soon) ('' ") (IN by)
+                  (NP
+                    (NP (NNP Tanya) (NNP Tucker))
+                    (-LRB- -LRB-)
+                    (NP (NNP Grammy) (NNP Nominated))
+                    (-RRB- -RRB-)))
+                (, ,) (`` ")
+                (NAC
+                  (ADVP (RB Somewhere))
+                  (PP (IN Down)
+                    (NP (DT the) (NN Line))))))))
+        ('' ")
+        (PP (IN by)
+          (NP
+            (NP (NNP T) (NNP G) (NNP Shepherd))
+            (CC and)
+            (NP (NN country) (NN music) (JJ standard))))))
+    (, ,) ('' ")
+    (NP (DT The) (NNP Cowboy))
+    (VP (VBZ Rides)
+      (ADVP (RB Away) ('' ")
+        (PP (IN by)
+          (NP (NNP George) (NNP Strait)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+	1	many
+			sense:	many.a.01
+	2	hits
+			sense:	hit.n.03
+	3	include
+			sense:	include.v.01
+			prop:	include.01
+			V		3-3	include 
+			N-ARG-A2		0-2	His many hits 
+			N-ARG-A1		4-64	four Top Ten Country Music Hits : " Anyone Who Is n't Me Tonight " by Kenny Rogers and Dottie West ( Grammy Nominated ) , " Soon " by Tanya Tucker ( Grammy Nominated ) , " Somewhere Down the Line " by T G Shepherd and country music standard , " The Cowboy Rides Away " by George Strait 
+	4	four
+			name:	NUMBER				4-4	four 
+	5	Top
+			name:	MISC				5-5	Top 
+			sense:	top.a.01
+	6	Ten
+			name:	NUMBER				6-6	Ten 
+	7	Country
+			name:	MISC				7-8	Country Music 
+	8	Music
+	9	Hits
+			sense:	strike.v.10
+			prop:	hit.02
+			V		9-9	Hits 
+			N-ARGM-ADJ		5-6	Top Ten 
+			N-ARG-A1		7-8	Country Music 
+	10	:
+	11	"
+	12	Anyone
+	13	Who
+	14	Is
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	Is 
+			N-ARG-A1		12-12	Anyone 
+			R-ARG-A1		13-13	Who 
+			N-ARGM-NEG		15-15	n't 
+			N-ARG-A2		16-16	Me 
+			N-ARGM-TMP		17-17	Tonight 
+	15	n't
+			sense:	not.r.01
+	16	Me
+	17	Tonight
+			name:	DATE				17-17	Tonight 
+			sense:	tonight.n.01
+	18	"
+	19	by
+	20	Kenny
+			name:	PERSON				20-21	Kenny Rogers 
+	21	Rogers
+	22	and
+	23	Dottie
+			name:	PERSON				23-24	Dottie West 
+	24	West
+	25	(
+	26	Grammy
+	27	Nominated
+	28	)
+	29	,
+	30	"
+	31	Soon
+			sense:	soon.r.01
+	32	"
+	33	by
+	34	Tanya
+			name:	PERSON				34-35	Tanya Tucker 
+	35	Tucker
+	36	(
+	37	Grammy
+	38	Nominated
+	39	)
+	40	,
+	41	"
+	42	Somewhere
+			name:	MISC				42-45	Somewhere Down the Line 
+			sense:	somewhere.r.01
+	43	Down
+	44	the
+	45	Line
+			sense:	line.n.11
+	46	"
+	47	by
+	48	T
+	49	G
+	50	Shepherd
+			name:	TITLE				50-50	Shepherd 
+	51	and
+	52	country
+			sense:	country.n.04
+	53	music
+			sense:	music.n.01
+	54	standard
+			sense:	standard.s.05
+	55	,
+	56	"
+	57	The
+	58	Cowboy
+			name:	TITLE				58-58	Cowboy 
+	59	Rides
+			sense:	ride.v.01
+			prop:	ride.01
+			V		59-59	Rides 
+			N-ARG-A0		57-58	The Cowboy 
+			N-ARGM-DIR		60-60	Away 
+	60	Away
+			sense:	away.r.01
+	61	"
+	62	by
+	63	George
+			name:	PERSON				63-64	George Strait 
+	64	Strait
+	65	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He works as a session player and singer and performs in clubs and concerts for audiences throughout the US and Europe .
+
+
+Treebanked sentence:
+--------------------
+He works as a session player and singer and performs in clubs and concerts for audiences throughout the US and Europe . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBZ works)
+        (PP (IN as)
+          (NP (DT a) (NN session) (NN player)
+            (CC and)
+            (NN singer))))
+      (CC and)
+      (VP (VBZ performs)
+        (PP (IN in)
+          (NP (NNS clubs)
+            (CC and)
+            (NNS concerts)))
+        (PP (IN for)
+          (NP
+            (NP (NNS audiences))
+            (PP (IN throughout)
+              (NP (DT the) (NNP US)
+                (CC and)
+                (NNP Europe)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	works
+			sense:	work.v.02
+			prop:	work.01
+			V		1-1	works 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-7	as a session player and singer 
+	2	as
+	3	a
+	4	session
+			sense:	session.n.03
+	5	player
+			sense:	musician.n.01
+	6	and
+	7	singer
+			name:	TITLE				7-7	singer 
+			sense:	singer.n.01
+	8	and
+	9	performs
+			sense:	perform.v.03
+			prop:	perform.01
+			V		9-9	performs 
+			N-ARG-A0		0-0	He 
+			N-ARGM-LOC		10-13	in clubs and concerts 
+			N-ARGM-PNC		14-20	for audiences throughout the US and Europe 
+	10	in
+	11	clubs
+			sense:	cabaret.n.01
+	12	and
+	13	concerts
+			sense:	concert.n.01
+	14	for
+	15	audiences
+			sense:	audience.n.01
+	16	throughout
+	17	the
+	18	US
+			name:	COUNTRY				18-18	US 
+	19	and
+	20	Europe
+			name:	LOCATION				20-20	Europe 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A frequent mentor , panelist and workshop contributor , Casey is a member of ASCAP , NSAI the Songwriters Guild of America Board of Councilors .
+
+
+Treebanked sentence:
+--------------------
+A frequent mentor , panelist and workshop contributor , Casey is a member of ASCAP , NSAI the Songwriters Guild of America Board of Councilors . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT A) (JJ frequent) (NN mentor))
+        (, ,)
+        (NP (NN panelist))
+        (CC and)
+        (NP (NN workshop) (NN contributor)))
+      (, ,)
+      (NP (NNP Casey)))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (NNP ASCAP) (, ,) (NNP NSAI))
+            (NP
+              (NP (DT the) (NNPS Songwriters) (NNP Guild))
+              (PP (IN of)
+                (NP
+                  (NP (NNP America) (NNP Board))
+                  (PP (IN of)
+                    (NP (NNPS Councilors))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	frequent
+			sense:	frequent.a.01
+	2	mentor
+			sense:	mentor.n.01
+	3	,
+	4	panelist
+			sense:	panelist.n.01
+	5	and
+	6	workshop
+			sense:	workshop.n.02
+	7	contributor
+			sense:	contributor.n.02
+	8	,
+	9	Casey
+			name:	PERSON				9-9	Casey 
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		9-9	Casey 
+			N-ARG-A2		11-24	a member of ASCAP , NSAI the Songwriters Guild of America Board of Councilors 
+	11	a
+	12	member
+			sense:	member.n.01
+	13	of
+	14	ASCAP
+			name:	ORGANIZATION				14-14	ASCAP 
+	15	,
+	16	NSAI
+			name:	ORGANIZATION				16-24	NSAI the Songwriters Guild of America Board of Councilors 
+	17	the
+	18	Songwriters
+	19	Guild
+	20	of
+	21	America
+	22	Board
+	23	of
+	24	Councilors
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Complete Idiot 's Guide to the Art of Songwriting is his first published book .
+
+
+Treebanked sentence:
+--------------------
+The Complete Idiot 's Guide to the Art of Songwriting is his first published book . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT The) (JJ Complete) (NN Idiot) (POS 's))
+        (NN Guide))
+      (PP (IN to)
+        (NP
+          (NP (DT the) (NN Art))
+          (PP (IN of)
+            (NP (NNP Songwriting))))))
+    (VP (VBZ is)
+      (NP (PRP$ his) (JJ first) (VBN published) (NN book)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Complete
+			sense:	complete.a.01
+	2	Idiot
+			sense:	idiot.n.01
+	3	's
+	4	Guide
+			name:	TITLE				4-4	Guide 
+			sense:	guidebook.n.01
+	5	to
+	6	the
+	7	Art
+			name:	MISC				7-9	Art of Songwriting 
+			sense:	art.n.03
+	8	of
+	9	Songwriting
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	The Complete Idiot 's Guide to the Art of Songwriting 
+			N-ARG-A2		11-14	his first published book 
+	11	his
+	12	first
+			name:	ORDINAL				12-12	first 
+			sense:	first.a.01
+	13	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		13-13	published 
+			N-ARG-A1		14-14	book 
+	14	book
+			sense:	book.n.01
+	15	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+

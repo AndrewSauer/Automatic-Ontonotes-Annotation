@@ -1,0 +1,600 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+William James Wallace ( April 14 , 1837 – March 11 , 1917 ) was a federal judge in the United States .
+
+
+Treebanked sentence:
+--------------------
+William James Wallace ( April 14 , 1837 – March 11 , 1917 ) was a federal judge in the United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP William) (NNP James) (NNP Wallace))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP April) (CD 14) (, ,) (CD 1837))
+        (PP (SYM –)
+          (NP (NNP March) (CD 11) (, ,) (CD 1917))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ federal) (NN judge))
+        (PP (IN in)
+          (NP (DT the) (NNP United) (NNP States)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	William
+			coref:	IDENT			1	0-2	William James Wallace 
+			name:	PERSON				0-2	William James Wallace 
+	1	James
+	2	Wallace
+	3	(
+	4	April
+			name:	DATE				4-7	April 14 , 1837 
+	5	14
+	6	,
+	7	1837
+	8	–
+	9	March
+			name:	DATE				9-12	March 11 , 1917 
+	10	11
+	11	,
+	12	1917
+	13	)
+	14	was
+			sense:	be.v.08
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		0-13	William James Wallace ( April 14 , 1837 – March 11 , 1917 ) 
+			N-ARG-A2		15-21	a federal judge in the United States 
+	15	a
+	16	federal
+			sense:	federal.a.02
+	17	judge
+			name:	TITLE				17-17	judge 
+			sense:	judge.n.01
+	18	in
+	19	the
+	20	United
+			name:	COUNTRY				20-21	United States 
+	21	States
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A native of Syracuse , New York , Wallace attended Syracuse University and obtained a law degree from Hamilton College .
+
+
+Treebanked sentence:
+--------------------
+A native of Syracuse , New York , Wallace attended Syracuse University and obtained a law degree from Hamilton College . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT A)
+      (NML
+        (NML
+          (NML (NN native))
+          (PP (IN of)
+            (NP (NNP Syracuse))))
+        (, ,)
+        (NML (NNP New) (NNP York))
+        (, ,))
+      (NNP Wallace))
+    (VP
+      (VP (VBD attended)
+        (NP (NNP Syracuse) (NNP University)))
+      (CC and)
+      (VP (VBD obtained)
+        (NP (DT a) (NN law) (NN degree))
+        (PP (IN from)
+          (NP (NNP Hamilton) (NNP College)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+			coref:	IDENT			0	0-8	A native of Syracuse , New York , Wallace 
+	1	native
+			sense:	native.n.02
+	2	of
+	3	Syracuse
+			coref:	IDENT			3	3-3	Syracuse 
+			name:	CITY				3-3	Syracuse 
+	4	,
+	5	New
+			coref:	IDENT			4	5-6	New York 
+			name:	STATE_OR_PROVINCE				5-6	New York 
+	6	York
+	7	,
+	8	Wallace
+			name:	PERSON				8-8	Wallace 
+	9	attended
+			sense:	attend.v.01
+			prop:	attend.01
+			V		9-9	attended 
+			R-ARG-A0		0-6	A native of Syracuse , New York 
+			N-ARG-A0		8-8	Wallace 
+			N-ARG-A1		10-11	Syracuse University 
+	10	Syracuse
+			name:	ORGANIZATION				10-11	Syracuse University 
+	11	University
+	12	and
+	13	obtained
+			sense:	obtain.v.01
+			prop:	obtain.01
+			V		13-13	obtained 
+			R-ARG-A0		0-6	A native of Syracuse , New York 
+			N-ARG-A0		8-8	Wallace 
+			N-ARG-A1		14-16	a law degree 
+			N-ARG-A2		17-19	from Hamilton College 
+	14	a
+	15	law
+			sense:	law.n.06
+	16	degree
+			sense:	academic_degree.n.01
+	17	from
+	18	Hamilton
+			name:	ORGANIZATION				18-19	Hamilton College 
+	19	College
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He spent 15 years as a lawyer in private practice in Syracuse before serving as mayor of that city in 1873 – 74 .
+
+
+Treebanked sentence:
+--------------------
+He spent 15 years as a lawyer in private practice in Syracuse before serving as mayor of that city in 1873 – 74 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD spent)
+      (NP-TMP (CD 15) (NNS years))
+      (PP (IN as)
+        (NP
+          (NP (DT a) (NN lawyer))
+          (PP (IN in)
+            (NP (JJ private) (NN practice)))))
+      (PP (IN in)
+        (NP (NNP Syracuse)))
+      (PP (IN before)
+        (S
+          (VP (VBG serving)
+            (PP (IN as)
+              (NP
+                (NP (NN mayor))
+                (PP (IN of)
+                  (NP
+                    (NP (DT that) (NN city))
+                    (PP (IN in)
+                      (NP
+                        (NP (NNP 1873))
+                        (PP (SYM –)
+                          (NP (CD 74)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	spent
+			sense:	spend.v.01
+			prop:	spend.02
+			V		1-1	spent 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-3	15 years 
+			N-ARG-A2		4-11	as a lawyer in private practice in Syracuse 
+			N-ARGM-TMP		12-22	before serving as mayor of that city in 1873 – 74 
+	2	15
+			name:	DURATION				2-3	15 years 
+	3	years
+			sense:	year.n.01
+	4	as
+	5	a
+	6	lawyer
+			name:	TITLE				6-6	lawyer 
+			sense:	lawyer.n.01
+	7	in
+	8	private
+			sense:	private.a.01
+	9	practice
+			sense:	practice.n.04
+	10	in
+	11	Syracuse
+			coref:	IDENT			3	11-11	Syracuse 
+			name:	CITY				11-11	Syracuse 
+	12	before
+	13	serving
+			sense:	serve.v.02
+			prop:	serve.01
+			V		13-13	serving 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		14-18	as mayor of that city 
+			N-ARGM-TMP		19-22	in 1873 – 74 
+	14	as
+	15	mayor
+			name:	TITLE				15-15	mayor 
+			sense:	mayor.n.01
+	16	of
+	17	that
+	18	city
+			sense:	city.n.01
+	19	in
+	20	1873
+			name:	DATE				20-20	1873 
+	21	–
+	22	74
+			name:	NUMBER				22-22	74 
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1874 , President Ulysses S. Grant appointed Wallace as a judge of the United States District Court for the Northern District of New York .
+
+
+Treebanked sentence:
+--------------------
+In 1874 , President Ulysses S. Grant appointed Wallace as a judge of the United States District Court for the Northern District of New York . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1874)))
+    (, ,)
+    (NP (NNP President) (NNP Ulysses) (NNP S.) (NNP Grant))
+    (VP (VBD appointed)
+      (NP (NNP Wallace))
+      (PP (IN as)
+        (NP
+          (NP (DT a) (NN judge))
+          (PP (IN of)
+            (NP (DT the) (NNP United) (NNP States) (NNP District) (NNP Court)))))
+      (PP (IN for)
+        (NP
+          (NP (DT the) (NNP Northern) (NNP District))
+          (PP (IN of)
+            (NP (NNP New) (NNP York))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1874
+			name:	DATE				1-1	1874 
+	2	,
+	3	President
+			name:	TITLE				3-3	President 
+	4	Ulysses
+			name:	PERSON				4-6	Ulysses S. Grant 
+	5	S.
+	6	Grant
+	7	appointed
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		7-7	appointed 
+			N-ARGM-TMP		0-1	In 1874 
+			N-ARG-A0		3-6	President Ulysses S. Grant 
+			N-ARG-A1		8-8	Wallace 
+			N-ARG-A2		9-24	as a judge of the United States District Court for the Northern District of New York 
+	8	Wallace
+			coref:	IDENT			1	8-8	Wallace 
+			name:	PERSON				8-8	Wallace 
+	9	as
+	10	a
+	11	judge
+			name:	TITLE				11-11	judge 
+			sense:	judge.n.01
+	12	of
+	13	the
+			coref:	IDENT			2	13-17	the United States District Court 
+	14	United
+			name:	ORGANIZATION				14-17	United States District Court 
+	15	States
+	16	District
+	17	Court
+	18	for
+	19	the
+	20	Northern
+			name:	LOCATION				20-22	Northern District of 
+	21	District
+	22	of
+	23	New
+			name:	STATE_OR_PROVINCE				23-24	New York 
+	24	York
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1882 , President Chester A. Arthur promoted Wallace to the United States Circuit Court for the Second Circuit in New York .
+
+
+Treebanked sentence:
+--------------------
+In 1882 , President Chester A. Arthur promoted Wallace to the United States Circuit Court for the Second Circuit in New York . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1882)))
+    (, ,)
+    (NP (NNP President) (NNP Chester) (NNP A.) (NNP Arthur))
+    (VP (VBD promoted)
+      (NP (NNP Wallace))
+      (PP (IN to)
+        (NP (DT the) (NNP United) (NNP States) (NNP Circuit) (NNP Court)))
+      (PP (IN for)
+        (NP
+          (NP (DT the) (NNP Second) (NNP Circuit))
+          (PP (IN in)
+            (NP (NNP New) (NNP York))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1882
+			name:	DATE				1-1	1882 
+	2	,
+	3	President
+			name:	TITLE				3-3	President 
+	4	Chester
+			name:	PERSON				4-6	Chester A. Arthur 
+	5	A.
+	6	Arthur
+	7	promoted
+			sense:	promote.v.02
+			prop:	promote.01
+			V		7-7	promoted 
+			N-ARGM-TMP		0-1	In 1882 
+			N-ARG-A0		3-6	President Chester A. Arthur 
+			N-ARG-A1		8-8	Wallace 
+			N-ARG-A2		9-21	to the United States Circuit Court for the Second Circuit in New York 
+	8	Wallace
+			coref:	IDENT			1	8-8	Wallace 
+			name:	PERSON				8-8	Wallace 
+	9	to
+	10	the
+	11	United
+			name:	ORGANIZATION				11-18	United States Circuit Court for the Second Circuit 
+	12	States
+	13	Circuit
+	14	Court
+	15	for
+	16	the
+	17	Second
+	18	Circuit
+	19	in
+	20	New
+			coref:	IDENT			4	20-21	New York 
+			name:	STATE_OR_PROVINCE				20-21	New York 
+	21	York
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1891 , the Evarts Act converted Wallace 's judgeship to a position on the United States Court of Appeals for the Second Circuit .
+
+
+Treebanked sentence:
+--------------------
+In 1891 , the Evarts Act converted Wallace 's judgeship to a position on the United States Court of Appeals for the Second Circuit . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1891)))
+    (, ,)
+    (NP (DT the) (NNP Evarts) (NNP Act))
+    (VP (VBD converted)
+      (NP
+        (NP (NNP Wallace) (POS 's))
+        (NN judgeship))
+      (PP (IN to)
+        (NP
+          (NP (DT a) (NN position))
+          (PP (IN on)
+            (NP
+              (NP (DT the) (NNP United) (NNP States) (NNP Court))
+              (PP (IN of)
+                (NP (NNPS Appeals)))))))
+      (PP (IN for)
+        (NP (DT the) (NNP Second) (NNP Circuit))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1891
+			name:	DATE				1-1	1891 
+	2	,
+	3	the
+	4	Evarts
+	5	Act
+	6	converted
+			sense:	convert.v.02
+			prop:	convert.01
+			V		6-6	converted 
+			N-ARGM-TMP		0-1	In 1891 
+			N-ARG-A0		3-5	the Evarts Act 
+			N-ARG-A1		7-9	Wallace 's judgeship 
+			N-ARG-A2		10-23	to a position on the United States Court of Appeals for the Second Circuit 
+	7	Wallace
+			coref:	IDENT			1	7-8	Wallace 's 
+			name:	PERSON				7-7	Wallace 
+	8	's
+	9	judgeship
+			sense:	judgeship.n.01
+	10	to
+	11	a
+	12	position
+			sense:	position.n.06
+	13	on
+	14	the
+			coref:	IDENT			2	14-19	the United States Court of Appeals 
+	15	United
+			name:	ORGANIZATION				15-23	United States Court of Appeals for the Second Circuit 
+	16	States
+	17	Court
+	18	of
+	19	Appeals
+	20	for
+	21	the
+	22	Second
+	23	Circuit
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Wallace retired from the Second Circuit in 1907 and returned to private practice in Syracuse until his death ten years later .
+
+
+Treebanked sentence:
+--------------------
+Wallace retired from the Second Circuit in 1907 and returned to private practice in Syracuse until his death ten years later . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Wallace))
+    (VP
+      (VP (VBD retired)
+        (PP (IN from)
+          (NP (DT the) (NNP Second) (NNP Circuit)))
+        (PP (IN in)
+          (NP (CD 1907))))
+      (CC and)
+      (VP (VBD returned)
+        (PP (IN to)
+          (NP (JJ private) (NN practice)))
+        (PP (IN in)
+          (NP (NNP Syracuse)))
+        (PP (IN until)
+          (NP (PRP$ his) (NN death)))
+        (ADVP
+          (NP (CD ten) (NNS years))
+          (RB later))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Wallace
+			coref:	IDENT			1	0-0	Wallace 
+			name:	PERSON				0-0	Wallace 
+	1	retired
+			sense:	retire.v.01
+			prop:	retire.01
+			V		1-1	retired 
+			N-ARG-A0		0-0	Wallace 
+			N-ARG-A1		2-5	from the Second Circuit 
+			N-ARGM-TMP		6-7	in 1907 
+	2	from
+	3	the
+			name:	DATE				3-3	the 
+	4	Second
+			name:	ORGANIZATION				4-5	Second Circuit 
+	5	Circuit
+	6	in
+	7	1907
+			name:	DATE				7-7	1907 
+	8	and
+	9	returned
+			sense:	revert.v.01
+			prop:	return.01
+			V		9-9	returned 
+			N-ARG-A1		0-0	Wallace 
+			N-ARG-A4		10-14	to private practice in Syracuse 
+			N-ARGM-TMP		15-20	until his death ten years later 
+	10	to
+	11	private
+			sense:	private.a.01
+	12	practice
+			sense:	practice.n.04
+	13	in
+	14	Syracuse
+			coref:	IDENT			3	14-14	Syracuse 
+			name:	CITY				14-14	Syracuse 
+	15	until
+	16	his
+			coref:	IDENT			1	16-16	his 
+	17	death
+			sense:	death.n.01
+	18	ten
+			name:	DATE				18-20	ten years later 
+	19	years
+			sense:	year.n.01
+	20	later
+			sense:	subsequently.r.01
+	21	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.0-8	A native of Syracuse , New York , Wallace 
+				2.0-0	He 
+	Chain 1 (IDENT)
+				0.0-2	William James Wallace 
+				3.8-8	Wallace 
+				4.8-8	Wallace 
+				5.7-8	Wallace 's 
+				6.0-0	Wallace 
+				6.16-16	his 
+	Chain 2 (IDENT)
+				3.13-17	the United States District Court 
+				5.14-19	the United States Court of Appeals 
+	Chain 3 (IDENT)
+				1.3-3	Syracuse 
+				2.11-11	Syracuse 
+				6.14-14	Syracuse 
+	Chain 4 (IDENT)
+				1.5-6	New York 
+				4.20-21	New York 
+

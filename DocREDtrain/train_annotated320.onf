@@ -1,0 +1,645 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+AIDAblu is a Sphinx - class cruise ship , operated by the German cruise line , AIDA Cruises .
+
+
+Treebanked sentence:
+--------------------
+AIDAblu is a Sphinx - class cruise ship , operated by the German cruise line , AIDA Cruises . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP AIDAblu))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a)
+          (NML (NN Sphinx) (HYPH -) (NN class))
+          (NN cruise) (NN ship))
+        (, ,)
+        (VP (VBN operated)
+          (PP (IN by)
+            (NP
+              (NP (DT the) (JJ German) (NN cruise) (NN line))
+              (, ,)
+              (NP (NNP AIDA) (NNPS Cruises)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	AIDAblu
+			coref:	IDENT			3	0-0	AIDAblu 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	AIDAblu 
+			N-ARG-A2		2-17	a Sphinx - class cruise ship , operated by the German cruise line , AIDA Cruises 
+	2	a
+	3	Sphinx
+			sense:	sphinx.n.02
+	4	-
+	5	class
+			sense:	class.n.01
+	6	cruise
+			sense:	cruise.n.01
+	7	ship
+			sense:	ship.n.01
+	8	,
+	9	operated
+			sense:	operate.v.01
+			prop:	operate.01
+			V		9-9	operated 
+			N-ARG-A1		2-7	a Sphinx - class cruise ship 
+			N-ARG-A0		10-17	by the German cruise line , AIDA Cruises 
+	10	by
+	11	the
+			coref:	IDENT			1	11-17	the German cruise line , AIDA Cruises 
+	12	German
+			name:	NATIONALITY				12-12	German 
+	13	cruise
+			sense:	cruise.n.01
+	14	line
+			sense:	line.n.23
+	15	,
+	16	AIDA
+	17	Cruises
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+AIDAblu is the seventh ship in the cruise line .
+
+
+Treebanked sentence:
+--------------------
+AIDAblu is the seventh ship in the cruise line . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP AIDAblu))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ seventh) (NN ship))
+        (PP (IN in)
+          (NP (DT the) (NN cruise) (NN line)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	AIDAblu
+			coref:	IDENT			3	0-0	AIDAblu 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	AIDAblu 
+			N-ARG-A2		2-8	the seventh ship in the cruise line 
+	2	the
+	3	seventh
+			name:	ORDINAL				3-3	seventh 
+			sense:	seventh.s.01
+	4	ship
+			sense:	ship.n.01
+	5	in
+	6	the
+			coref:	IDENT			1	6-8	the cruise line 
+	7	cruise
+			sense:	cruise.n.01
+	8	line
+			sense:	line.n.23
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The vessel was delivered by Meyer Werft to its owners last 4 February 2010 .
+
+
+Treebanked sentence:
+--------------------
+The vessel was delivered by Meyer Werft to its owners last 4 February 2010 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN vessel))
+    (VP (VBD was)
+      (VP (VBN delivered)
+        (PP (IN by)
+          (NP (NNP Meyer) (NNP Werft)))
+        (PP (IN to)
+          (NP
+            (NP (PRP$ its) (NNS owners))
+            (NP (JJ last) (CD 4))))
+        (NP-TMP (NNP February) (CD 2010))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	vessel
+			sense:	vessel.n.02
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	delivered
+			sense:	surrender.v.02
+			prop:	deliver.01
+			V		3-3	delivered 
+			N-ARG-A1		0-1	The vessel 
+			N-ARG-A0		4-6	by Meyer Werft 
+			N-ARG-A2		7-9	to its owners 
+			N-ARGM-TMP		10-13	last 4 February 2010 
+	4	by
+	5	Meyer
+			coref:	IDENT			4	5-6	Meyer Werft 
+			name:	ORGANIZATION				5-6	Meyer Werft 
+	6	Werft
+	7	to
+	8	its
+			coref:	IDENT			4	8-8	its 
+	9	owners
+			sense:	owner.n.01
+	10	last
+			sense:	last.s.01
+	11	4
+			name:	NUMBER				11-11	4 
+	12	February
+			name:	DATE				12-13	February 2010 
+	13	2010
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She is a sister ship to AIDAdiva , AIDAbella , AIDAluna with a half deck more , and is followed by similar AIDAsol and AIDAmar .
+
+
+Treebanked sentence:
+--------------------
+She is a sister ship to AIDAdiva , AIDAbella , AIDAluna with a half deck more , and is followed by similar AIDAsol and AIDAmar . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (NN sister) (NN ship))
+          (PP (IN to)
+            (NP
+              (NP (NNP AIDAdiva) (, ,) (NNP AIDAbella) (, ,) (NNP AIDAluna))
+              (PP (IN with)
+                (NP
+                  (NP (DT a) (NN half) (NN deck))
+                  (ADVP (RBR more))))))))
+      (, ,)
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN followed)
+          (PP (IN by)
+            (NP (JJ similar) (NNP AIDAsol)
+              (CC and)
+              (NNP AIDAmar))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-15	a sister ship to AIDAdiva , AIDAbella , AIDAluna with a half deck more 
+	2	a
+	3	sister
+			sense:	sister.n.01
+	4	ship
+			sense:	ship.n.01
+	5	to
+	6	AIDAdiva
+	7	,
+	8	AIDAbella
+	9	,
+	10	AIDAluna
+	11	with
+	12	a
+	13	half
+			sense:	one-half.n.01
+	14	deck
+			sense:	deck.n.01
+	15	more
+			sense:	more.r.02
+	16	,
+	17	and
+	18	is
+			sense:	be.v.01
+			prop:	be.03
+			V		18-18	is 
+	19	followed
+			sense:	follow.v.01
+			prop:	follow.01
+			V		19-19	followed 
+			N-ARG-A2		0-0	She 
+			N-ARG-A1		20-24	by similar AIDAsol and AIDAmar 
+	20	by
+	21	similar
+			sense:	similar.a.01
+	22	AIDAsol
+	23	and
+	24	AIDAmar
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She has a passenger capacity of 2,050 .
+
+
+Treebanked sentence:
+--------------------
+She has a passenger capacity of 2,050 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ has)
+      (NP
+        (NP (DT a) (NN passenger) (NN capacity))
+        (PP (IN of)
+          (NP (CD 2,050)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	has
+			sense:	have.v.02
+			prop:	have.03
+			V		1-1	has 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		2-6	a passenger capacity of 2,050 
+	2	a
+	3	passenger
+			sense:	passenger.n.01
+	4	capacity
+			sense:	capacity.n.03
+	5	of
+	6	2,050
+			name:	NUMBER				6-6	2,050 
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The name of AIDAblu had been used for a former AIDA ship from 2004 - 2007 .
+
+
+Treebanked sentence:
+--------------------
+The name of AIDAblu had been used for a former AIDA ship from 2004 - 2007 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN name))
+      (PP (IN of)
+        (NP (NNP AIDAblu))))
+    (VP (VBD had)
+      (VP (VBN been)
+        (VP (VBN used)
+          (PP (IN for)
+            (NP
+              (NP (DT a) (JJ former) (NNP AIDA) (NN ship))
+              (PP (IN from)
+                (NP (CD 2004) (SYM -) (CD 2007))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	name
+			sense:	name.n.01
+	2	of
+	3	AIDAblu
+			coref:	IDENT			3	3-3	AIDAblu 
+	4	had
+			sense:	have.v.01
+			prop:	have.01
+			V		4-4	had 
+	5	been
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	been 
+	6	used
+			sense:	use.v.01
+			prop:	use.01
+			V		6-6	used 
+			N-ARG-A1		0-3	The name of AIDAblu 
+			N-ARG-A2		7-11	for a former AIDA ship 
+			N-ARGM-TMP		12-15	from 2004 - 2007 
+	7	for
+	8	a
+	9	former
+			sense:	erstwhile.s.01
+	10	AIDA
+	11	ship
+			sense:	ship.n.01
+	12	from
+	13	2004
+			name:	DATE				13-15	2004 - 2007 
+	14	-
+	15	2007
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+AIDA Cruises ' parent company , Carnival Corporation & plc , then transferred the ship to another cruise line .
+
+
+Treebanked sentence:
+--------------------
+AIDA Cruises ' parent company , Carnival Corporation & plc , then transferred the ship to another cruise line . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP AIDA) (NNPS Cruises) (POS '))
+        (NN parent) (NN company))
+      (, ,)
+      (NP (NNP Carnival) (NNP Corporation)
+        (CC &)
+        (NNP plc))
+      (, ,))
+    (ADVP (RB then))
+    (VP (VBD transferred)
+      (NP (DT the) (NN ship))
+      (PP (IN to)
+        (NP (DT another) (NN cruise) (NN line))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	AIDA
+			name:	ORGANIZATION				0-1	AIDA Cruises 
+	1	Cruises
+	2	'
+	3	parent
+			sense:	parent.n.01
+	4	company
+			sense:	company.n.01
+	5	,
+	6	Carnival
+			name:	ORGANIZATION				6-9	Carnival Corporation & plc 
+	7	Corporation
+	8	&
+	9	plc
+	10	,
+	11	then
+			sense:	then.r.01
+	12	transferred
+			sense:	transfer.v.05
+			prop:	transfer.01
+			V		12-12	transferred 
+			N-ARG-A0		0-10	AIDA Cruises ' parent company , Carnival Corporation & plc , 
+			N-ARGM-TMP		11-11	then 
+			N-ARG-A1		13-14	the ship 
+			N-ARG-A2		15-18	to another cruise line 
+	13	the
+	14	ship
+			sense:	ship.n.01
+	15	to
+	16	another
+	17	cruise
+			sense:	cruise.n.01
+	18	line
+			sense:	line.n.23
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+, Ocean Village , and was renamed Ocean Village Two .
+
+
+Treebanked sentence:
+--------------------
+, Ocean Village , and was renamed Ocean Village Two . 
+
+Tree:
+-----
+(ROOT
+  (FRAG (, ,)
+    (NP
+      (NP (NNP Ocean))
+      (NP (NNP Village)))
+    (, ,)
+    (CC and)
+    (S
+      (VP (VBD was)
+        (VP (VBN renamed)
+          (NP (NNP Ocean) (NNP Village) (CD Two)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	,
+	1	Ocean
+			name:	LOCATION				1-2	Ocean Village 
+	2	Village
+	3	,
+	4	and
+	5	was
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	was 
+	6	renamed
+			sense:	rename.v.01
+			prop:	rename.01
+			V		6-6	renamed 
+			N-ARG-A2		7-9	Ocean Village Two 
+	7	Ocean
+			coref:	IDENT			2	7-9	Ocean Village Two 
+			name:	LOCATION				7-9	Ocean Village Two 
+	8	Village
+	9	Two
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2009 , Ocean Village Two was again transferred to another cruise line , P&O ; Cruises Australia , also a Carnival daughter company , and was renamed Pacific Jewel .
+
+
+Treebanked sentence:
+--------------------
+In 2009 , Ocean Village Two was again transferred to another cruise line , P&O ; Cruises Australia , also a Carnival daughter company , and was renamed Pacific Jewel . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2009)))
+    (, ,)
+    (NP (NNP Ocean) (NNP Village) (CD Two))
+    (VP
+      (VP (VBD was)
+        (ADVP (RB again))
+        (VP (VBN transferred)
+          (PP (IN to)
+            (NP
+              (NP (DT another) (NN cruise) (NN line))
+              (, ,)
+              (NP
+                (NP (NN P&O))
+                (: ;)
+                (NP
+                  (NP
+                    (NP (NNS Cruises))
+                    (NP (NNP Australia))
+                    (, ,)
+                    (ADVP (RB also)))
+                  (NP (DT a) (NNP Carnival) (NN daughter) (NN company))))))))
+      (, ,)
+      (CC and)
+      (VP (VBD was)
+        (VP (VBN renamed)
+          (NP (NNP Pacific) (NNP Jewel)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2009
+			name:	DATE				1-1	2009 
+	2	,
+	3	Ocean
+			coref:	IDENT			2	3-5	Ocean Village Two 
+	4	Village
+	5	Two
+			name:	NUMBER				5-5	Two 
+	6	was
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	was 
+	7	again
+			sense:	again.r.01
+	8	transferred
+			sense:	transfer.v.05
+			prop:	transfer.01
+			V		8-8	transferred 
+			N-ARGM-TMP		0-1	In 2009 
+			N-ARG-A1		3-5	Ocean Village Two 
+			N-ARGM-TMP		7-7	again 
+			N-ARG-A2		9-23	to another cruise line , P&O ; Cruises Australia , also a Carnival daughter company 
+	9	to
+	10	another
+	11	cruise
+			sense:	cruise.n.01
+	12	line
+			sense:	line.n.23
+	13	,
+	14	P&O
+			name:	ORGANIZATION				14-14	P&O 
+	15	;
+	16	Cruises
+			sense:	cruise.n.01
+	17	Australia
+			name:	COUNTRY				17-17	Australia 
+	18	,
+	19	also
+			sense:	besides.r.02
+	20	a
+	21	Carnival
+			name:	MISC				21-21	Carnival 
+	22	daughter
+			sense:	daughter.n.01
+	23	company
+			sense:	company.n.01
+	24	,
+	25	and
+	26	was
+			sense:	be.v.01
+			prop:	be.03
+			V		26-26	was 
+	27	renamed
+			sense:	rename.v.01
+			prop:	rename.01
+			V		27-27	renamed 
+			N-ARGM-TMP		0-1	In 2009 
+			N-ARG-A1		3-5	Ocean Village Two 
+			N-ARG-A2		28-29	Pacific Jewel 
+	28	Pacific
+	29	Jewel
+	30	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.0-0	She 
+				4.0-0	She 
+	Chain 1 (IDENT)
+				0.11-17	the German cruise line , AIDA Cruises 
+				1.6-8	the cruise line 
+	Chain 2 (IDENT)
+				7.7-9	Ocean Village Two 
+				8.3-5	Ocean Village Two 
+	Chain 3 (IDENT)
+				0.0-0	AIDAblu 
+				1.0-0	AIDAblu 
+				5.3-3	AIDAblu 
+	Chain 4 (IDENT)
+				2.5-6	Meyer Werft 
+				2.8-8	its 
+

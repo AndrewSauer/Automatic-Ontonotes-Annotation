@@ -1,0 +1,620 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The heavily glaciated Weißkamm is an Alpine chain that includes the Weißkugel ( ) and Wildspitze ( ) , the two highest peaks in the Ötztal Alps .
+
+
+Treebanked sentence:
+--------------------
+The heavily glaciated Weißkamm is an Alpine chain that includes the Weißkugel ( ) and Wildspitze ( ) , the two highest peaks in the Ötztal Alps . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The)
+      (ADJP (RB heavily) (JJ glaciated))
+      (NNP Weißkamm))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT an) (NNP Alpine) (NN chain))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ includes)
+                (NP (DT the) (NNP Weißkugel))
+                (PRN (-LRB- -LRB-)
+                  (NP
+                    (NML (-RRB- -RRB-)
+                      (CC and)
+                      (NN Wildspitze))
+                    (-LRB- -LRB-))
+                  (-RRB- -RRB-))))))
+        (, ,)
+        (NP
+          (NP (DT the) (CD two) (JJS highest) (NNS peaks))
+          (PP (IN in)
+            (NP (DT the) (NNP Ötztal) (NNPS Alps))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-3	The heavily glaciated Weißkamm 
+	1	heavily
+			sense:	heavily.r.01
+	2	glaciated
+			sense:	glaciated.s.01
+	3	Weißkamm
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	The heavily glaciated Weißkamm 
+			N-ARG-A2		5-26	an Alpine chain that includes the Weißkugel ( ) and Wildspitze ( ) , the two highest peaks in the Ötztal Alps 
+	5	an
+	6	Alpine
+			name:	MISC				6-6	Alpine 
+	7	chain
+			sense:	range.n.04
+	8	that
+	9	includes
+			sense:	include.v.01
+			prop:	include.01
+			V		9-9	includes 
+			N-ARG-A2		5-7	an Alpine chain 
+			R-ARG-A2		8-8	that 
+			N-ARG-A1		10-26	the Weißkugel ( ) and Wildspitze ( ) , the two highest peaks in the Ötztal Alps 
+	10	the
+			coref:	IDENT			2	10-11	the Weißkugel 
+	11	Weißkugel
+	12	(
+	13	)
+	14	and
+	15	Wildspitze
+			name:	PERSON				15-15	Wildspitze 
+	16	(
+	17	)
+	18	,
+	19	the
+	20	two
+			name:	NUMBER				20-20	two 
+	21	highest
+			sense:	high.a.02
+	22	peaks
+			sense:	peak.n.04
+	23	in
+	24	the
+	25	Ötztal
+			name:	LOCATION				25-26	Ötztal Alps 
+	26	Alps
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Starting from the Weißkugel the Weißkamm runs for about 20 kilometres to the northwest towards Sölden .
+
+
+Treebanked sentence:
+--------------------
+Starting from the Weißkugel the Weißkamm runs for about 20 kilometres to the northwest towards Sölden . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (VBG Starting)
+      (PP (IN from)
+        (NP (DT the) (NNP Weißkugel))))
+    (NP (DT the) (NNP Weißkamm))
+    (VP (VBZ runs)
+      (PP (IN for)
+        (PP
+          (NP
+            (QP (RB about) (CD 20))
+            (NNS kilometres))
+          (IN to)
+          (NP
+            (NP (DT the) (NN northwest))
+            (PP (IN towards)
+              (NP (NNP Sölden)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Starting
+			coref:	IDENT			2	0-3	Starting from the Weißkugel 
+			sense:	begin.v.02
+			prop:	start.01
+			V		0-0	Starting 
+			N-ARGM-DIR		1-3	from the Weißkugel 
+			N-ARG-A1		4-5	the Weißkamm 
+	1	from
+	2	the
+	3	Weißkugel
+			coref:	IDENT			1	3-5	Weißkugel the Weißkamm 
+			name:	PERSON				3-5	Weißkugel the Weißkamm 
+	4	the
+	5	Weißkamm
+	6	runs
+			sense:	run.v.03
+			prop:	run.02
+			V		6-6	runs 
+			N-ARGM-TMP		0-3	Starting from the Weißkugel 
+			N-ARG-A1		4-5	the Weißkamm 
+			N-ARG-A1		7-10	for about 20 kilometres 
+			N-ARGM-DIR		11-13	to the northwest 
+			N-ARGM-DIR		14-15	towards Sölden 
+	7	for
+	8	about
+			sense:	approximately.r.01
+	9	20
+			name:	NUMBER				9-9	20 
+	10	kilometres
+			sense:	kilometer.n.01
+	11	to
+	12	the
+	13	northwest
+			sense:	northwest.n.03
+	14	towards
+	15	Sölden
+			name:	LOCATION				15-15	Sölden 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Other ridges branch off the Weißkamm striking northwards .
+
+
+Treebanked sentence:
+--------------------
+Other ridges branch off the Weißkamm striking northwards . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP
+      (NP (JJ Other) (NNS ridges) (NN branch))
+      (PP (IN off)
+        (NP (DT the) (NNP Weißkamm))))
+    (VP (VBG striking)
+      (ADVP (RB northwards)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Other
+			sense:	other.a.01
+	1	ridges
+			sense:	ridge.n.01
+	2	branch
+			sense:	branch.n.03
+	3	off
+	4	the
+			coref:	IDENT			1	4-5	the Weißkamm 
+	5	Weißkamm
+	6	striking
+			sense:	hit.v.02
+			prop:	strike.01
+			V		6-6	striking 
+			N-ARG-A0		0-1	Other ridges 
+			N-ARGM-DIR		7-7	northwards 
+	7	northwards
+			sense:	north.r.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+From west to east these are the Glockturmkamm , the Kaunergrat and the Geigenkamm .
+
+
+Treebanked sentence:
+--------------------
+From west to east these are the Glockturmkamm , the Kaunergrat and the Geigenkamm . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN From)
+      (NP
+        (NP (NN west))
+        (PP (IN to)
+          (NP (NN east)))))
+    (NP (DT these))
+    (VP (VBP are)
+      (NP
+        (NP (DT the) (NNP Glockturmkamm))
+        (, ,)
+        (NP (DT the) (NNP Kaunergrat))
+        (CC and)
+        (NP (DT the) (NNP Geigenkamm))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	From
+	1	west
+			sense:	west.n.02
+	2	to
+	3	east
+			sense:	east.n.01
+	4	these
+	5	are
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	are 
+			N-ARGM-DIR		0-3	From west to east 
+			N-ARG-A1		4-4	these 
+			N-ARG-A2		6-13	the Glockturmkamm , the Kaunergrat and the Geigenkamm 
+	6	the
+	7	Glockturmkamm
+	8	,
+	9	the
+	10	Kaunergrat
+			name:	LOCATION				10-10	Kaunergrat 
+	11	and
+	12	the
+	13	Geigenkamm
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Weißkugel is where the Weißkamm joins the Schnalskamm , which runs in an easterly direction .
+
+
+Treebanked sentence:
+--------------------
+The Weißkugel is where the Weißkamm joins the Schnalskamm , which runs in an easterly direction . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Weißkugel))
+    (VP (VBZ is)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (DT the) (NNP Weißkamm))
+          (VP (VBZ joins)
+            (NP
+              (NP (DT the) (NNP Schnalskamm))
+              (, ,)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBZ runs)
+                    (PP (IN in)
+                      (NP (DT an) (JJ easterly) (NN direction)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-1	The Weißkugel 
+	1	Weißkugel
+	2	is
+			sense:	be.v.03
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The Weißkugel 
+			N-ARG-A2		3-15	where the Weißkamm joins the Schnalskamm , which runs in an easterly direction 
+	3	where
+	4	the
+			coref:	IDENT			1	4-5	the Weißkamm 
+	5	Weißkamm
+			name:	MISC				5-8	Weißkamm joins the Schnalskamm 
+	6	joins
+			sense:	connect.v.03
+			prop:	join.01
+			V		6-6	joins 
+			N-ARGM-LOC		3-3	where 
+			N-ARG-A0		4-5	the Weißkamm 
+			N-ARG-A1		7-15	the Schnalskamm , which runs in an easterly direction 
+	7	the
+	8	Schnalskamm
+	9	,
+	10	which
+	11	runs
+			sense:	run.v.03
+			prop:	run.02
+			V		11-11	runs 
+			N-ARG-A1		7-8	the Schnalskamm 
+			R-ARG-A1		10-10	which 
+			N-ARGM-DIR		12-15	in an easterly direction 
+	12	in
+	13	an
+	14	easterly
+			sense:	easterly.s.01
+	15	direction
+			sense:	direction.n.02
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Gepatschferner and the Mittelbergferner are the two largest glaciers in the Ötztal Alps ; both are situated in the area of the Weißkamm .
+
+
+Treebanked sentence:
+--------------------
+The Gepatschferner and the Mittelbergferner are the two largest glaciers in the Ötztal Alps ; both are situated in the area of the Weißkamm . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NNP Gepatschferner))
+        (CC and)
+        (NP (DT the) (NNP Mittelbergferner)))
+      (VP (VBP are)
+        (NP
+          (NP (DT the) (CD two) (JJS largest) (NNS glaciers))
+          (PP (IN in)
+            (NP (DT the) (NNP Ötztal) (NNPS Alps))))))
+    (: ;)
+    (S
+      (NP (DT both))
+      (VP (VBP are)
+        (VP (VBN situated)
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN area))
+              (PP (IN of)
+                (NP (DT the) (NNP Weißkamm))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Gepatschferner
+	2	and
+	3	the
+	4	Mittelbergferner
+	5	are
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	are 
+			N-ARG-A1		0-4	The Gepatschferner and the Mittelbergferner 
+			N-ARG-A2		6-13	the two largest glaciers in the Ötztal Alps 
+	6	the
+	7	two
+			name:	NUMBER				7-7	two 
+	8	largest
+			sense:	large.a.01
+	9	glaciers
+			sense:	glacier.n.01
+	10	in
+	11	the
+	12	Ötztal
+			name:	LOCATION				12-13	Ötztal Alps 
+	13	Alps
+	14	;
+	15	both
+	16	are
+			sense:	be.v.03
+			prop:	be.03
+			V		16-16	are 
+	17	situated
+			sense:	situate.v.01
+			prop:	situate.01
+			V		17-17	situated 
+			N-ARG-A1		15-15	both 
+			N-ARG-A2		18-23	in the area of the Weißkamm 
+	18	in
+	19	the
+	20	area
+			sense:	area.n.01
+	21	of
+	22	the
+			coref:	IDENT			1	22-23	the Weißkamm 
+	23	Weißkamm
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Together with the Kesselwandferner , Vernagtferner and Taschachferner they form an almost unbroken ice sheet .
+
+
+Treebanked sentence:
+--------------------
+Together with the Kesselwandferner , Vernagtferner and Taschachferner they form an almost unbroken ice sheet . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Together)
+      (PP (IN with)
+        (NP (DT the) (NNP Kesselwandferner) (, ,) (NNP Vernagtferner)
+          (CC and)
+          (NNP Taschachferner))))
+    (NP (PRP they))
+    (VP (VBP form)
+      (NP (DT an)
+        (ADJP (RB almost) (JJ unbroken))
+        (NN ice) (NN sheet)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Together
+			sense:	together.r.04
+	1	with
+	2	the
+			coref:	IDENT			0	2-7	the Kesselwandferner , Vernagtferner and Taschachferner 
+	3	Kesselwandferner
+			name:	PERSON				3-3	Kesselwandferner 
+	4	,
+	5	Vernagtferner
+			name:	PERSON				5-5	Vernagtferner 
+	6	and
+	7	Taschachferner
+	8	they
+			coref:	IDENT			0	8-8	they 
+	9	form
+			sense:	form.v.02
+			prop:	form.02
+			V		9-9	form 
+			N-ARGM-ADV		0-7	Together with the Kesselwandferner , Vernagtferner and Taschachferner 
+			N-ARG-A0		8-8	they 
+			N-ARG-A1		10-14	an almost unbroken ice sheet 
+	10	an
+	11	almost
+			sense:	about.r.07
+	12	unbroken
+			sense:	unbroken.a.01
+	13	ice
+			sense:	ice.n.01
+	14	sheet
+			sense:	sheet.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Apart from the Weißkugel and the Wildspitze , other important summits on the Weißkamm are the Fluchtkogel ( ) , the Hochvernagtspitze ( ) , the Hinterer Brunnenkogel ( ) and the Hinterer Brochkogel ( )
+
+
+Treebanked sentence:
+--------------------
+Apart from the Weißkugel and the Wildspitze , other important summits on the Weißkamm are the Fluchtkogel ( ) , the Hochvernagtspitze ( ) , the Hinterer Brunnenkogel ( ) and the Hinterer Brochkogel ( ) 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Apart)
+      (PP (IN from)
+        (NP
+          (NP (DT the) (NNP Weißkugel))
+          (CC and)
+          (NP (DT the) (NNP Wildspitze)))))
+    (, ,)
+    (NP
+      (NP (JJ other) (JJ important) (NNS summits))
+      (PP (IN on)
+        (NP (DT the) (NNP Weißkamm))))
+    (VP (VBP are)
+      (NP (DT the) (NNP Fluchtkogel))
+      (-LRB- -LRB-) (-RRB- -RRB-) (, ,)
+      (NP
+        (NP
+          (NP (DT the) (NN Hochvernagtspitze))
+          (-LRB- -LRB-)
+          (NP
+            (NP (-RRB- -RRB-))
+            (, ,)
+            (NP (DT the) (NNP Hinterer) (NNP Brunnenkogel) (-LRB- -LRB-)))
+          (-RRB- -RRB-))
+        (CC and)
+        (NP (DT the) (NNP Hinterer) (NNP Brochkogel))))
+    (-LRB- -LRB-) (-RRB- -RRB-)))
+
+
+Leaves:
+-------
+	0	Apart
+			sense:	apart.r.02
+	1	from
+	2	the
+	3	Weißkugel
+			name:	PERSON				3-3	Weißkugel 
+	4	and
+	5	the
+	6	Wildspitze
+			name:	LOCATION				6-6	Wildspitze 
+	7	,
+	8	other
+			sense:	other.a.01
+	9	important
+			sense:	important.a.01
+	10	summits
+			sense:	peak.n.04
+	11	on
+	12	the
+			coref:	IDENT			1	12-13	the Weißkamm 
+	13	Weißkamm
+	14	are
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	are 
+			N-ARGM-ADV		0-6	Apart from the Weißkugel and the Wildspitze 
+			N-ARG-A1		8-13	other important summits on the Weißkamm 
+			N-ARG-A2		15-34	the Fluchtkogel ( ) , the Hochvernagtspitze ( ) , the Hinterer Brunnenkogel ( ) and the Hinterer Brochkogel ( 
+	15	the
+	16	Fluchtkogel
+	17	(
+	18	)
+	19	,
+	20	the
+	21	Hochvernagtspitze
+	22	(
+	23	)
+	24	,
+	25	the
+	26	Hinterer
+			name:	PERSON				26-27	Hinterer Brunnenkogel 
+	27	Brunnenkogel
+	28	(
+	29	)
+	30	and
+	31	the
+	32	Hinterer
+			name:	PERSON				32-33	Hinterer Brochkogel 
+	33	Brochkogel
+	34	(
+	35	)
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				6.2-7	the Kesselwandferner , Vernagtferner and Taschachferner 
+				6.8-8	they 
+	Chain 1 (IDENT)
+				0.0-3	The heavily glaciated Weißkamm 
+				1.3-5	Weißkugel the Weißkamm 
+				2.4-5	the Weißkamm 
+				4.4-5	the Weißkamm 
+				5.22-23	the Weißkamm 
+				7.12-13	the Weißkamm 
+	Chain 2 (IDENT)
+				1.0-3	Starting from the Weißkugel 
+				0.10-11	the Weißkugel 
+				4.0-1	The Weißkugel 
+

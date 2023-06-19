@@ -1,0 +1,589 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Telegraph - Journal is a daily newspaper published in Saint John , New Brunswick , Canada .
+
+
+Treebanked sentence:
+--------------------
+The Telegraph - Journal is a daily newspaper published in Saint John , New Brunswick , Canada . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Telegraph) (HYPH -) (NNP Journal))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ daily) (NN newspaper))
+        (VP (VBN published)
+          (PP (IN in)
+            (NP
+              (NML
+                (NML (NNP Saint) (NNP John))
+                (, ,)
+                (NML (NNP New) (NNP Brunswick))
+                (, ,))
+              (NNP Canada))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-3	The Telegraph - Journal 
+	1	Telegraph
+			name:	ORGANIZATION				1-3	Telegraph - Journal 
+	2	-
+	3	Journal
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	The Telegraph - Journal 
+			N-ARG-A2		5-16	a daily newspaper published in Saint John , New Brunswick , Canada 
+	5	a
+	6	daily
+			name:	SET				6-6	daily 
+			sense:	daily.s.01
+	7	newspaper
+			sense:	newspaper.n.01
+	8	published
+			sense:	publish.v.02
+			prop:	publish.01
+			V		8-8	published 
+			N-ARG-A1		5-7	a daily newspaper 
+			N-ARGM-LOC		9-16	in Saint John , New Brunswick , Canada 
+	9	in
+	10	Saint
+			coref:	IDENT			0	10-11	Saint John 
+	11	John
+	12	,
+	13	New
+			coref:	IDENT			1	13-14	New Brunswick 
+			name:	STATE_OR_PROVINCE				13-14	New Brunswick 
+	14	Brunswick
+	15	,
+	16	Canada
+			name:	COUNTRY				16-16	Canada 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It serves as both a provincial daily and as a local newspaper for Saint John .
+
+
+Treebanked sentence:
+--------------------
+It serves as both a provincial daily and as a local newspaper for Saint John . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ serves)
+      (PP
+        (PP (IN as)
+          (NP
+            (NP (DT both))
+            (NP (DT a) (JJ provincial) (JJ daily))))
+        (CC and)
+        (PP (IN as)
+          (NP
+            (NP (DT a) (JJ local) (NN newspaper))
+            (PP (IN for)
+              (NP (NNP Saint) (NNP John)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	serves
+			sense:	serve.v.01
+			prop:	serve.01
+			V		1-1	serves 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-14	as both a provincial daily and as a local newspaper for Saint John 
+	2	as
+	3	both
+	4	a
+	5	provincial
+			sense:	provincial.a.01
+	6	daily
+			name:	SET				6-6	daily 
+			sense:	daily.s.01
+	7	and
+	8	as
+	9	a
+	10	local
+			sense:	local.a.01
+	11	newspaper
+			sense:	newspaper.n.01
+	12	for
+	13	Saint
+			coref:	IDENT			0	13-14	Saint John 
+			name:	CITY				13-14	Saint John 
+	14	John
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The newspaper is published by Brunswick News , owned by the privately held J.D. 
+
+
+Treebanked sentence:
+--------------------
+The newspaper is published by Brunswick News , owned by the privately held J.D. Irving , of the Irving Group of Companies , with stakes in forestry , shipbuilding and consumer products . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN newspaper))
+    (VP (VBZ is)
+      (VP
+        (VP (VBN published)
+          (PP (IN by)
+            (NP (NNP Brunswick) (NNP News))))
+        (, ,)
+        (VP (VBN owned)
+          (PP (IN by)
+            (NP
+              (NP (DT the)
+                (ADJP (RB privately) (VBN held))
+                (NNP J.D.) (NNP Irving))
+              (, ,)
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NNP Irving) (NNP Group))
+                  (PP (IN of)
+                    (NP (NNPS Companies))))))))
+        (, ,)
+        (PP (IN with)
+          (NP
+            (NP (NNS stakes))
+            (PP (IN in)
+              (NP
+                (NML (NN forestry) (, ,) (NN shipbuilding)
+                  (CC and)
+                  (NN consumer))
+                (NNS products)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	newspaper
+			sense:	newspaper.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	published
+			sense:	publish.v.02
+			prop:	publish.01
+			V		3-3	published 
+			N-ARG-A1		0-1	The newspaper 
+			N-ARG-A0		4-31	by Brunswick News , owned by the privately held J.D. Irving , of the Irving Group of Companies , with stakes in forestry , shipbuilding and consumer products 
+	4	by
+	5	Brunswick
+			name:	ORGANIZATION				5-6	Brunswick News 
+	6	News
+	7	,
+	8	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		8-8	owned 
+			N-ARG-A1		5-6	Brunswick News 
+			N-ARG-A0		9-31	by the privately held J.D. Irving , of the Irving Group of Companies , with stakes in forestry , shipbuilding and consumer products 
+	9	by
+	10	the
+	11	privately
+			sense:	privately.r.02
+	12	held
+			sense:	have.v.01
+			prop:	hold.01
+			V		12-12	held 
+			N-ARGM-MNR		11-11	privately 
+			N-ARG-A1		13-14	J.D. Irving 
+	13	J.D.
+			name:	PERSON				13-14	J.D. Irving 
+	14	Irving
+	15	,
+	16	of
+	17	the
+	18	Irving
+			name:	ORGANIZATION				18-21	Irving Group of Companies 
+	19	Group
+	20	of
+	21	Companies
+	22	,
+	23	with
+	24	stakes
+			sense:	interest.n.05
+	25	in
+	26	forestry
+			sense:	forestry.n.01
+	27	,
+	28	shipbuilding
+			sense:	shipbuilding.n.01
+	29	and
+	30	consumer
+			sense:	consumer.n.01
+	31	products
+			sense:	merchandise.n.01
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Telegraph - Journal is the only New Brunswick - based newspaper to be distributed province - wide and has the highest readership in the province at a weekly circulation of 233,549 and a daily readership of over 75,000 .
+
+
+Treebanked sentence:
+--------------------
+The Telegraph - Journal is the only New Brunswick - based newspaper to be distributed province - wide and has the highest readership in the province at a weekly circulation of 233,549 and a daily readership of over 75,000 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Telegraph) (HYPH -) (NNP Journal))
+    (VP
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (JJ only)
+            (ADJP
+              (NML (NNP New) (NNP Brunswick))
+              (HYPH -) (VBN based))
+            (NN newspaper))
+          (SBAR
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (VP (VBN distributed)
+                    (S
+                      (ADJP (NN province) (HYPH -) (JJ wide))))))))))
+      (CC and)
+      (VP (VBZ has)
+        (NP
+          (NP (DT the) (JJS highest) (NN readership))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN province))
+              (PP (IN at)
+                (NP
+                  (NP
+                    (NP (DT a) (JJ weekly) (NN circulation))
+                    (PP (IN of)
+                      (NP (CD 233,549))))
+                  (CC and)
+                  (NP
+                    (NP (DT a) (JJ daily) (NN readership))
+                    (PP (IN of)
+                      (NP
+                        (QP (IN over) (CD 75,000))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-3	The Telegraph - Journal 
+	1	Telegraph
+			name:	ORGANIZATION				1-3	Telegraph - Journal 
+	2	-
+	3	Journal
+	4	is
+			sense:	be.v.01
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	The Telegraph - Journal 
+			N-ARG-A2		5-17	the only New Brunswick - based newspaper to be distributed province - wide 
+	5	the
+	6	only
+			sense:	lone.s.03
+	7	New
+			coref:	IDENT			1	7-8	New Brunswick 
+			name:	STATE_OR_PROVINCE				7-8	New Brunswick 
+	8	Brunswick
+	9	-
+	10	based
+			sense:	base.v.02
+			prop:	base.01
+			V		10-10	based 
+			N-ARGM-LOC		7-8	New Brunswick 
+			N-ARG-A1		11-11	newspaper 
+	11	newspaper
+			sense:	newspaper.n.01
+	12	to
+	13	be
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	be 
+	14	distributed
+			sense:	circulate.v.03
+			prop:	distribute.01
+			V		14-14	distributed 
+			N-ARG-A1		5-11	the only New Brunswick - based newspaper 
+			N-ARG-A2		15-17	province - wide 
+	15	province
+			sense:	state.n.01
+	16	-
+	17	wide
+			sense:	wide.a.01
+	18	and
+	19	has
+			sense:	have.v.02
+			prop:	have.03
+			V		19-19	has 
+			N-ARG-A0		0-3	The Telegraph - Journal 
+			N-ARG-A1		20-25	the highest readership in the province 
+			N-ARGM-ADV		26-38	at a weekly circulation of 233,549 and a daily readership of over 75,000 
+	20	the
+	21	highest
+			sense:	high.a.01
+	22	readership
+			sense:	readership.n.01
+	23	in
+	24	the
+	25	province
+			sense:	state.n.01
+	26	at
+	27	a
+	28	weekly
+			name:	SET				28-28	weekly 
+			sense:	weekly.s.01
+	29	circulation
+			sense:	circulation.n.04
+	30	of
+	31	233,549
+			name:	NUMBER				31-31	233,549 
+	32	and
+	33	a
+	34	daily
+			name:	SET				34-34	daily 
+			sense:	daily.s.01
+	35	readership
+			sense:	readership.n.01
+	36	of
+	37	over
+	38	75,000
+			name:	NUMBER				38-38	75,000 
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Brunswick News also publishes a series of editions of regional news , including editions in Fredericton and Moncton under the titles “ Daily Gleaner ” and “ Times & Transcript ” , respectively .
+
+
+Treebanked sentence:
+--------------------
+Brunswick News also publishes a series of editions of regional news , including editions in Fredericton and Moncton under the titles “ Daily Gleaner ” and “ Times & Transcript ” , respectively . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Brunswick) (NNP News))
+    (ADVP (RB also))
+    (VP (VBZ publishes)
+      (NP
+        (NP (DT a) (NN series))
+        (PP (IN of)
+          (NP
+            (NP (NNS editions))
+            (PP (IN of)
+              (NP (JJ regional) (NN news)))
+            (, ,)
+            (PP (VBG including)
+              (NP
+                (NP (NNS editions))
+                (PP (IN in)
+                  (NP
+                    (NP (NNP Fredericton)
+                      (CC and)
+                      (NNP Moncton))
+                    (PP (IN under)
+                      (NP (DT the) (NNS titles)))
+                    (`` “)
+                    (NP (NNP Daily) (NNP Gleaner))
+                    ('' ”)
+                    (CC and)
+                    (`` “)
+                    (NP (NNP Times)
+                      (CC &)
+                      (NP (NN Transcript)))))
+                ('' ”)))
+            (, ,)
+            (ADVP (RB respectively))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Brunswick
+			name:	ORGANIZATION				0-1	Brunswick News 
+	1	News
+	2	also
+			sense:	besides.r.02
+	3	publishes
+			sense:	publish.v.02
+			prop:	publish.01
+			V		3-3	publishes 
+			N-ARG-A0		0-1	Brunswick News 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A1		4-32	a series of editions of regional news , including editions in Fredericton and Moncton under the titles “ Daily Gleaner ” and “ Times & Transcript ” , respectively 
+	4	a
+	5	series
+			sense:	series.n.03
+	6	of
+	7	editions
+			sense:	edition.n.03
+	8	of
+	9	regional
+			sense:	regional.s.02
+	10	news
+			sense:	news.n.02
+	11	,
+	12	including
+			sense:	include.v.01
+			prop:	include.01
+			V		12-12	including 
+			N-ARG-A2		7-10	editions of regional news 
+			N-ARG-A1		13-32	editions in Fredericton and Moncton under the titles “ Daily Gleaner ” and “ Times & Transcript ” , respectively 
+	13	editions
+			sense:	edition.n.03
+	14	in
+	15	Fredericton
+			name:	CITY				15-15	Fredericton 
+	16	and
+	17	Moncton
+			name:	CITY				17-17	Moncton 
+	18	under
+	19	the
+	20	titles
+			sense:	title.n.02
+	21	“
+	22	Daily
+			name:	SET				22-22	Daily 
+	23	Gleaner
+	24	”
+	25	and
+	26	“
+	27	Times
+	28	&
+	29	Transcript
+			sense:	transcript.n.01
+	30	”
+	31	,
+	32	respectively
+			sense:	respectively.r.01
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Corporate and editorial control rests under Irving control with the Telegraph - Journal 's offices in Saint John .
+
+
+Treebanked sentence:
+--------------------
+Corporate and editorial control rests under Irving control with the Telegraph - Journal 's offices in Saint John . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NML (JJ Corporate)
+        (CC and)
+        (JJ editorial))
+      (NN control))
+    (VP (VBZ rests)
+      (PP (IN under)
+        (NP (NNP Irving) (NN control)))
+      (PP (IN with)
+        (NP
+          (NP
+            (NP (DT the) (NNP Telegraph) (HYPH -) (NNP Journal) (POS 's))
+            (NNS offices))
+          (PP (IN in)
+            (NP (NNP Saint) (NNP John))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Corporate
+			sense:	corporate.a.01
+	1	and
+	2	editorial
+			sense:	editorial.a.01
+	3	control
+			sense:	control.n.01
+	4	rests
+			sense:	lie.v.06
+			prop:	rest.01
+			V		4-4	rests 
+			N-ARG-A1		0-3	Corporate and editorial control 
+			N-ARGM-LOC		5-7	under Irving control 
+			N-ARGM-ADV		8-17	with the Telegraph - Journal 's offices in Saint John 
+	5	under
+	6	Irving
+			name:	ORGANIZATION				6-6	Irving 
+	7	control
+			sense:	control.n.01
+	8	with
+	9	the
+			coref:	IDENT			2	9-13	the Telegraph - Journal 's 
+	10	Telegraph
+			name:	ORGANIZATION				10-12	Telegraph - Journal 
+	11	-
+	12	Journal
+	13	's
+	14	offices
+			sense:	office.n.01
+	15	in
+	16	Saint
+			coref:	IDENT			0	16-17	Saint John 
+			name:	CITY				16-17	Saint John 
+	17	John
+	18	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.10-11	Saint John 
+				1.13-14	Saint John 
+				5.16-17	Saint John 
+	Chain 1 (IDENT)
+				0.13-14	New Brunswick 
+				3.7-8	New Brunswick 
+	Chain 2 (IDENT)
+				5.9-13	the Telegraph - Journal 's 
+				0.0-3	The Telegraph - Journal 
+				1.0-0	It 
+				3.0-3	The Telegraph - Journal 
+

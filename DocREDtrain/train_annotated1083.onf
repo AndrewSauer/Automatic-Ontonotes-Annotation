@@ -1,0 +1,698 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Pavel Kuka ( born 19 July 1968 ) is a Czech former football forward .
+
+
+Treebanked sentence:
+--------------------
+Pavel Kuka ( born 19 July 1968 ) is a Czech former football forward . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Pavel) (NNP Kuka))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 19))
+        (NP-TMP (NNP July) (CD 1968)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (JJ Czech) (JJ former) (NN football))
+      (ADVP (RB forward)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Pavel
+			coref:	IDENT			0	0-1	Pavel Kuka 
+			name:	PERSON				0-1	Pavel Kuka 
+	1	Kuka
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Pavel Kuka 
+			N-ARGM-TMP		4-6	19 July 1968 
+	4	19
+			name:	DATE				4-6	19 July 1968 
+	5	July
+	6	1968
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	Pavel Kuka ( born 19 July 1968 ) 
+			N-ARG-A2		9-13	a Czech former football forward 
+	9	a
+	10	Czech
+			name:	NATIONALITY				10-10	Czech 
+	11	former
+			sense:	erstwhile.s.01
+	12	football
+			sense:	football.n.01
+	13	forward
+			sense:	forward.r.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in Prague , Kuka started and finished his career at Slavia Praha , playing with the club from 1989 – 93 and then from 2000 – 05 .
+
+
+Treebanked sentence:
+--------------------
+Born in Prague , Kuka started and finished his career at Slavia Praha , playing with the club from 1989 – 93 and then from 2000 – 05 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP (NNP Prague)))))
+    (, ,)
+    (NP (NNP Kuka))
+    (VP (VBD started)
+      (CC and)
+      (VBD finished)
+      (NP (PRP$ his) (NN career))
+      (PP (IN at)
+        (NP (NNP Slavia) (NNP Praha)))
+      (, ,)
+      (S
+        (VP (VBG playing)
+          (PP
+            (PP (IN with)
+              (NP
+                (NP (DT the) (NN club))
+                (PP (IN from)
+                  (NP (CD 1989) (SYM –) (CD 93)))))
+            (CC and)
+            (PP
+              (ADVP (RB then))
+              (IN from)
+              (NP
+                (NP (CD 2000))
+                (PP (SYM –)
+                  (NP (CD 05)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-2	in Prague 
+			N-ARG-A1		4-4	Kuka 
+	1	in
+	2	Prague
+			name:	CITY				2-2	Prague 
+	3	,
+	4	Kuka
+			coref:	IDENT			0	4-4	Kuka 
+			name:	PERSON				4-4	Kuka 
+	5	started
+			sense:	get_down.v.07
+			prop:	start.01
+			V		5-5	started 
+			R-ARG-A0		0-2	Born in Prague 
+			N-ARG-A0		4-4	Kuka 
+			N-ARG-A1		8-9	his career 
+			N-ARGM-LOC		10-12	at Slavia Praha 
+			N-ARGM-ADV		14-27	playing with the club from 1989 – 93 and then from 2000 – 05 
+	6	and
+	7	finished
+			sense:	complete.v.01
+			prop:	finish.01
+			V		7-7	finished 
+			R-ARG-A0		0-2	Born in Prague 
+			N-ARG-A0		4-4	Kuka 
+			N-ARG-A1		8-9	his career 
+			N-ARGM-LOC		10-12	at Slavia Praha 
+			N-ARGM-PRD		14-27	playing with the club from 1989 – 93 and then from 2000 – 05 
+	8	his
+			coref:	IDENT			0	8-8	his 
+	9	career
+			sense:	career.n.01
+	10	at
+	11	Slavia
+			name:	ORGANIZATION				11-12	Slavia Praha 
+	12	Praha
+	13	,
+	14	playing
+			sense:	play.v.01
+			prop:	play.01
+			V		14-14	playing 
+			N-ARG-A0		4-4	Kuka 
+			N-ARGM-MNR		15-17	with the club 
+			N-ARGM-TMP		18-27	from 1989 – 93 and then from 2000 – 05 
+	15	with
+	16	the
+	17	club
+			sense:	club.n.02
+	18	from
+	19	1989
+			name:	DATE				19-19	1989 
+	20	–
+	21	93
+			name:	NUMBER				21-21	93 
+	22	and
+	23	then
+			sense:	then.r.01
+	24	from
+	25	2000
+			name:	DATE				25-25	2000 
+	26	–
+	27	05
+			name:	NUMBER				27-27	05 
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He has also played for 1 .
+
+
+Treebanked sentence:
+--------------------
+He has also played for 1 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ has)
+      (ADVP (RB also))
+      (VP (VBN played)
+        (PP (IN for)
+          (NP (CD 1)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	also
+			sense:	besides.r.02
+	3	played
+			sense:	play.v.01
+			prop:	play.01
+			V		3-3	played 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		2-2	also 
+			N-ARGM-ADV		4-5	for 1 
+	4	for
+	5	1
+			name:	NUMBER				5-5	1 
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+FC Kaiserslautern ( 1994 – 98 ) , 1 .
+
+
+Treebanked sentence:
+--------------------
+FC Kaiserslautern ( 1994 – 98 ) , 1 . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP (NNP FC) (NNP Kaiserslautern))
+    (-LRB- -LRB-)
+    (NP (CD 1994) (SYM –) (CD 98))
+    (-RRB- -RRB-) (, ,)
+    (NP (CD 1))
+    (. .)))
+
+
+Leaves:
+-------
+	0	FC
+			name:	ORGANIZATION				0-1	FC Kaiserslautern 
+	1	Kaiserslautern
+	2	(
+	3	1994
+			name:	DATE				3-3	1994 
+	4	–
+	5	98
+			name:	NUMBER				5-5	98 
+	6	)
+	7	,
+	8	1
+			name:	NUMBER				8-8	1 
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+FC Nürnberg ( 1998 – 99 ) , and VfB Stuttgart ( 1999 – 2000 ) .
+
+
+Treebanked sentence:
+--------------------
+FC Nürnberg ( 1998 – 99 ) , and VfB Stuttgart ( 1999 – 2000 ) . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (FRAG
+      (NP (NNP FC) (NNP Nürnberg))
+      (-LRB- -LRB-)
+      (NP (CD 1998) (SYM –) (CD 99))
+      (-RRB- -RRB-))
+    (, ,)
+    (CC and)
+    (FRAG
+      (NP (NNP VfB) (NNP Stuttgart))
+      (-LRB- -LRB-)
+      (NP (CD 1999) (SYM –) (CD 2000))
+      (-RRB- -RRB-))
+    (. .)))
+
+
+Leaves:
+-------
+	0	FC
+			name:	ORGANIZATION				0-1	FC Nürnberg 
+	1	Nürnberg
+	2	(
+	3	1998
+			name:	DATE				3-3	1998 
+	4	–
+	5	99
+			name:	NUMBER				5-5	99 
+	6	)
+	7	,
+	8	and
+	9	VfB
+			name:	ORGANIZATION				9-10	VfB Stuttgart 
+	10	Stuttgart
+	11	(
+	12	1999
+			name:	DATE				12-12	1999 
+	13	–
+	14	2000
+			name:	DATE				14-14	2000 
+	15	)
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+For the Czech national team , Kuka played 63 times , scoring 22 goals and was part of the runner - up squad at Euro 96 and also took part at Euro 2000 .
+
+
+Treebanked sentence:
+--------------------
+For the Czech national team , Kuka played 63 times , scoring 22 goals and was part of the runner - up squad at Euro 96 and also took part at Euro 2000 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (DT the) (JJ Czech) (JJ national) (NN team)))
+    (, ,)
+    (NP (NNP Kuka))
+    (VP
+      (VP (VBD played)
+        (NP-TMP (CD 63) (NNS times))
+        (, ,)
+        (S
+          (VP (VBG scoring)
+            (NP (CD 22) (NNS goals)))))
+      (CC and)
+      (VP (VBD was)
+        (NP
+          (NP (NN part))
+          (PP (IN of)
+            (NP (DT the)
+              (NML (NN runner) (HYPH -) (NN up))
+              (NN squad))))
+        (PP (IN at)
+          (NP (NNP Euro) (CD 96))))
+      (CC and)
+      (ADVP (RB also))
+      (VP (VBD took)
+        (NP (NN part))
+        (PP (IN at)
+          (NP (NNP Euro) (CD 2000)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	For
+	1	the
+	2	Czech
+			name:	NATIONALITY				2-2	Czech 
+	3	national
+			sense:	national.a.01
+	4	team
+			sense:	team.n.01
+	5	,
+	6	Kuka
+			coref:	IDENT			0	6-6	Kuka 
+			name:	PERSON				6-6	Kuka 
+	7	played
+			sense:	play.v.01
+			prop:	play.01
+			V		7-7	played 
+			N-ARGM-ADV		0-4	For the Czech national team 
+			N-ARG-A0		6-6	Kuka 
+			N-ARGM-TMP		8-9	63 times 
+			N-ARGM-ADV		11-13	scoring 22 goals 
+	8	63
+			name:	NUMBER				8-8	63 
+	9	times
+			sense:	time.n.01
+	10	,
+	11	scoring
+			sense:	score.v.01
+			prop:	score.01
+			V		11-11	scoring 
+			N-ARG-A0		6-6	Kuka 
+			N-ARG-A1		12-13	22 goals 
+	12	22
+			name:	NUMBER				12-12	22 
+	13	goals
+			sense:	goal.n.04
+	14	and
+	15	was
+			sense:	be.v.01
+			prop:	be.01
+			V		15-15	was 
+			N-ARGM-ADV		0-4	For the Czech national team 
+			N-ARG-A1		6-6	Kuka 
+			N-ARG-A2		16-25	part of the runner - up squad at Euro 96 
+	16	part
+			sense:	part.n.01
+	17	of
+	18	the
+	19	runner
+			name:	TITLE				19-19	runner 
+			sense:	runner.n.06
+	20	-
+	21	up
+	22	squad
+			sense:	team.n.01
+	23	at
+	24	Euro
+			name:	MISC				24-24	Euro 
+	25	96
+			name:	NUMBER				25-25	96 
+	26	and
+	27	also
+			sense:	besides.r.02
+	28	took
+			sense:	take.v.15
+			prop:	take.01
+			V		28-28	took 
+			N-ARGM-ADV		0-4	For the Czech national team 
+			N-ARG-A0		6-6	Kuka 
+			N-ARGM-ADV		27-27	also 
+			N-ARG-A1		29-29	part 
+			N-ARGM-LOC		30-32	at Euro 2000 
+	29	part
+			sense:	function.n.03
+	30	at
+	31	Euro
+	32	2000
+			name:	DATE				32-32	2000 
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Kuka also played 24 times , scoring seven goals , for Czechoslovakia .
+
+
+Treebanked sentence:
+--------------------
+Kuka also played 24 times , scoring seven goals , for Czechoslovakia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Kuka))
+    (ADVP (RB also))
+    (VP (VBD played)
+      (NP-TMP (CD 24) (NNS times))
+      (, ,)
+      (S
+        (VP (VBG scoring)
+          (NP (CD seven) (NNS goals))
+          (, ,)
+          (PP (IN for)
+            (NP (NNP Czechoslovakia))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Kuka
+			coref:	IDENT			0	0-0	Kuka 
+			name:	PERSON				0-0	Kuka 
+	1	also
+			sense:	besides.r.02
+	2	played
+			sense:	play.v.01
+			prop:	play.01
+			V		2-2	played 
+			N-ARG-A0		0-0	Kuka 
+			N-ARGM-DIS		1-1	also 
+			N-ARGM-TMP		3-4	24 times 
+			N-ARGM-ADV		6-11	scoring seven goals , for Czechoslovakia 
+	3	24
+			name:	NUMBER				3-3	24 
+	4	times
+			sense:	time.n.01
+	5	,
+	6	scoring
+			sense:	score.v.01
+			prop:	score.01
+			V		6-6	scoring 
+			N-ARG-A0		0-0	Kuka 
+			N-ARG-A1		7-8	seven goals 
+	7	seven
+			name:	NUMBER				7-7	seven 
+	8	goals
+			sense:	goal.n.04
+	9	,
+	10	for
+	11	Czechoslovakia
+			name:	LOCATION				11-11	Czechoslovakia 
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Retired in May 2005 , he has shortly worked as a manager in FK Marila Příbram ( another Gambrinus league team ) and then became football agent .
+
+
+Treebanked sentence:
+--------------------
+Retired in May 2005 , he has shortly worked as a manager in FK Marila Příbram ( another Gambrinus league team ) and then became football agent . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Retired)
+        (PP (IN in)
+          (NP (NNP May) (CD 2005)))))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBZ has)
+        (ADVP (RB shortly))
+        (VP (VBN worked)
+          (PP (IN as)
+            (NP
+              (NP (DT a) (NN manager))
+              (PP (IN in)
+                (NP
+                  (NP (NNP FK) (NNP Marila) (NNP Příbram))
+                  (-LRB- -LRB-)
+                  (NP (DT another) (NNP Gambrinus) (NN league) (NN team))
+                  (-RRB- -RRB-)))))))
+      (CC and)
+      (ADVP (RB then))
+      (VP (VBD became)
+        (NP (NN football) (NN agent))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Retired
+			sense:	retire.v.01
+			prop:	retire.01
+			V		0-0	Retired 
+			N-ARGM-TMP		1-3	in May 2005 
+			N-ARG-A0		5-5	he 
+	1	in
+	2	May
+			name:	DATE				2-3	May 2005 
+	3	2005
+	4	,
+	5	he
+			coref:	IDENT			0	5-5	he 
+	6	has
+			sense:	have.v.01
+			prop:	have.01
+			V		6-6	has 
+	7	shortly
+			sense:	shortly.r.01
+	8	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		8-8	worked 
+			R-ARG-A0		0-3	Retired in May 2005 
+			N-ARG-A0		5-5	he 
+			N-ARGM-TMP		7-7	shortly 
+			N-ARG-A1		9-21	as a manager in FK Marila Příbram ( another Gambrinus league team ) 
+	9	as
+	10	a
+	11	manager
+			name:	TITLE				11-11	manager 
+			sense:	coach.n.01
+	12	in
+	13	FK
+			name:	ORGANIZATION				13-15	FK Marila Příbram 
+	14	Marila
+	15	Příbram
+	16	(
+	17	another
+	18	Gambrinus
+			name:	ORGANIZATION				18-18	Gambrinus 
+	19	league
+			sense:	league.n.01
+	20	team
+			sense:	team.n.01
+	21	)
+	22	and
+	23	then
+			sense:	then.r.01
+	24	became
+			sense:	become.v.02
+			prop:	become.01
+			V		24-24	became 
+			R-ARG-A1		0-3	Retired in May 2005 
+			N-ARG-A1		5-5	he 
+			N-ARGM-TMP		23-23	then 
+			N-ARG-A2		25-26	football agent 
+	25	football
+			sense:	football.n.01
+	26	agent
+			sense:	agent.n.02
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2008 , he was a sports executive at FK Viktoria Žižkov .
+
+
+Treebanked sentence:
+--------------------
+In 2008 , he was a sports executive at FK Viktoria Žižkov . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2008)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NNS sports) (NN executive))
+        (PP (IN at)
+          (NP (NNP FK) (NNP Viktoria) (NNP Žižkov)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2008
+			name:	DATE				1-1	2008 
+	2	,
+	3	he
+			coref:	IDENT			0	3-3	he 
+	4	was
+			sense:	be.v.08
+			prop:	be.01
+			V		4-4	was 
+			N-ARGM-TMP		0-1	In 2008 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		5-11	a sports executive at FK Viktoria Žižkov 
+	5	a
+	6	sports
+			sense:	sport.n.02
+	7	executive
+			name:	TITLE				7-7	executive 
+			sense:	executive.n.01
+	8	at
+	9	FK
+			name:	ORGANIZATION				9-11	FK Viktoria Žižkov 
+	10	Viktoria
+	11	Žižkov
+	12	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Pavel Kuka 
+				1.4-4	Kuka 
+				1.8-8	his 
+				2.0-0	He 
+				5.6-6	Kuka 
+				6.0-0	Kuka 
+				7.5-5	he 
+				8.3-3	he 
+

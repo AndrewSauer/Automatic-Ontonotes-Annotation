@@ -1,0 +1,691 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Federal intervention ( ) is an attribution of the federal government of Argentina , by which it takes control of a province in certain extreme cases .
+
+
+Treebanked sentence:
+--------------------
+Federal intervention ( ) is an attribution of the federal government of Argentina , by which it takes control of a province in certain extreme cases . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Federal))
+      (NP (NN intervention) (-LRB- -LRB-)))
+    (-RRB- -RRB-)
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN attribution))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (DT the) (JJ federal) (NN government))
+              (PP (IN of)
+                (NP (NNP Argentina))))
+            (, ,)
+            (SBAR
+              (WHPP (IN by)
+                (WHNP (WDT which)))
+              (S
+                (NP (PRP it))
+                (VP (VBZ takes)
+                  (NP
+                    (NP (NN control))
+                    (PP (IN of)
+                      (NP
+                        (NP (DT a) (NN province))
+                        (PP (IN in)
+                          (NP (JJ certain) (JJ extreme) (NNS cases)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Federal
+			coref:	IDENT			2	0-0	Federal 
+	1	intervention
+			sense:	intervention.n.01
+	2	(
+	3	)
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	Federal intervention ( ) 
+			N-ARG-A2		5-25	an attribution of the federal government of Argentina , by which it takes control of a province in certain extreme cases 
+	5	an
+	6	attribution
+			sense:	attribution.n.02
+	7	of
+	8	the
+			coref:	IDENT			0	8-25	the federal government of Argentina , by which it takes control of a province in certain extreme cases 
+	9	federal
+			sense:	federal.a.02
+	10	government
+			sense:	government.n.01
+	11	of
+	12	Argentina
+			name:	COUNTRY				12-12	Argentina 
+	13	,
+	14	by
+	15	which
+	16	it
+			coref:	IDENT			2	16-16	it 
+	17	takes
+			sense:	fill.v.04
+			prop:	take.01
+			V		17-17	takes 
+			N-ARGM-MNR		5-12	an attribution of the federal government of Argentina 
+			R-ARGM-MNR		14-15	by which 
+			N-ARG-A0		16-16	it 
+			N-ARG-A1		18-21	control of a province 
+			N-ARGM-LOC		22-25	in certain extreme cases 
+	18	control
+			sense:	control.n.01
+	19	of
+	20	a
+	21	province
+			sense:	state.n.01
+	22	in
+	23	certain
+			sense:	certain.s.01
+	24	extreme
+			sense:	extreme.s.01
+	25	cases
+			sense:	event.n.02
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Intervention is declared by the President with the assent of the National Congress .
+
+
+Treebanked sentence:
+--------------------
+Intervention is declared by the President with the assent of the National Congress . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN Intervention))
+    (VP (VBZ is)
+      (VP (VBN declared)
+        (PP (IN by)
+          (NP (DT the) (NNP President)))
+        (PP (IN with)
+          (NP
+            (NP (DT the) (NN assent))
+            (PP (IN of)
+              (NP (DT the) (NNP National) (NNP Congress)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Intervention
+			coref:	IDENT			4	0-0	Intervention 
+			sense:	intervention.n.01
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	declared
+			sense:	announce.v.02
+			prop:	declare.02
+			V		2-2	declared 
+			N-ARG-A1		0-0	Intervention 
+			N-ARG-A0		3-5	by the President 
+			N-ARGM-MNR		6-12	with the assent of the National Congress 
+	3	by
+	4	the
+	5	President
+			name:	TITLE				5-5	President 
+	6	with
+	7	the
+	8	assent
+			sense:	assent.n.01
+	9	of
+	10	the
+	11	National
+			name:	ORGANIZATION				11-12	National Congress 
+	12	Congress
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Article 6 of the Argentine Constitution states : 
+
+
+Treebanked sentence:
+--------------------
+Article 6 of the Argentine Constitution states : The federal government intervenes in the territory of the provinces to guarantee the republican form of government or to repel foreign invasions , and upon request of its authorities created to sustain or re - establish them , if they have been deposed by sedition or by the invasion of another province . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NN Article) (CD 6))
+        (PP (IN of)
+          (NP (DT the) (NNP Argentine) (NNP Constitution))))
+      (VP (VBZ states)))
+    (: :)
+    (S
+      (NP (DT The) (JJ federal) (NN government))
+      (VP
+        (VP (VBZ intervenes)
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN territory))
+              (PP (IN of)
+                (NP (DT the) (NNS provinces)))))
+          (S
+            (VP
+              (VP (TO to)
+                (VP (VB guarantee)
+                  (NP
+                    (NP (DT the) (JJ republican) (NN form))
+                    (PP (IN of)
+                      (NP (NN government))))))
+              (CC or)
+              (VP (TO to)
+                (VP (VB repel)
+                  (NP (JJ foreign) (NNS invasions)))))))
+        (, ,)
+        (CC and)
+        (PP (IN upon)
+          (NP
+            (NP (NN request))
+            (PP (IN of)
+              (NP (PRP$ its) (NNS authorities)))))
+        (VP (VBD created)
+          (S
+            (UCP
+              (S
+                (VP (TO to)
+                  (VP (VB sustain))))
+              (CC or)
+              (SBAR (IN re) (HYPH -)
+                (FRAG
+                  (S
+                    (VP (VB establish)
+                      (NP (PRP them))
+                      (, ,)
+                      (SBAR (IN if)
+                        (S
+                          (NP (PRP they))
+                          (VP (VBP have)
+                            (VP (VBN been)
+                              (VP (VBN deposed)
+                                (PP
+                                  (PP (IN by)
+                                    (NP (NN sedition)))
+                                  (CC or)
+                                  (PP (IN by)
+                                    (NP
+                                      (NP (DT the) (NN invasion))
+                                      (PP (IN of)
+                                        (NP (DT another) (NN province))))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Article
+			sense:	article.n.03
+	1	6
+			name:	NUMBER				1-1	6 
+	2	of
+	3	the
+			name:	COUNTRY				3-4	the Argentine 
+	4	Argentine
+	5	Constitution
+	6	states
+			sense:	submit.v.02
+			prop:	state.01
+			V		6-6	states 
+			N-ARG-A0		0-5	Article 6 of the Argentine Constitution 
+			N-ARG-A1		8-59	The federal government intervenes in the territory of the provinces to guarantee the republican form of government or to repel foreign invasions , and upon request of its authorities created to sustain or re - establish them , if they have been deposed by sedition or by the invasion of another province 
+	7	:
+	8	The
+			coref:	IDENT			0	8-10	The federal government 
+	9	federal
+			sense:	federal.a.02
+	10	government
+			sense:	government.n.01
+	11	intervenes
+			sense:	intervene.v.01
+			prop:	intervene.01
+			V		11-11	intervenes 
+			N-ARG-A0		8-10	The federal government 
+			N-ARG-A1		12-17	in the territory of the provinces 
+			N-ARGM-PRP		18-59	to guarantee the republican form of government or to repel foreign invasions , and upon request of its authorities created to sustain or re - establish them , if they have been deposed by sedition or by the invasion of another province 
+	12	in
+	13	the
+	14	territory
+			sense:	territory.n.03
+	15	of
+	16	the
+	17	provinces
+			sense:	state.n.01
+	18	to
+	19	guarantee
+			sense:	guarantee.v.02
+			prop:	guarantee.01
+			V		19-19	guarantee 
+			N-ARG-A0		8-10	The federal government 
+			N-ARG-A1		20-24	the republican form of government 
+	20	the
+	21	republican
+			name:	ORGANIZATION				21-21	republican 
+	22	form
+			sense:	kind.n.01
+	23	of
+	24	government
+			sense:	government.n.03
+	25	or
+	26	to
+	27	repel
+			sense:	repel.v.03
+			prop:	repel.01
+			V		27-27	repel 
+			N-ARG-A0		8-10	The federal government 
+			N-ARG-A1		28-29	foreign invasions 
+	28	foreign
+			sense:	foreign.a.01
+	29	invasions
+			sense:	invasion.n.01
+	30	,
+	31	and
+	32	upon
+	33	request
+			sense:	request.n.01
+	34	of
+	35	its
+			coref:	IDENT			2	35-35	its 
+			coref:	IDENT			3	35-36	its authorities 
+	36	authorities
+			sense:	authority.n.02
+	37	created
+			sense:	create.v.02
+			prop:	create.01
+			V		37-37	created 
+			N-ARG-A1		8-10	The federal government 
+			N-ARGM-CAU		32-36	upon request of its authorities 
+			N-ARGM-PRP		38-59	to sustain or re - establish them , if they have been deposed by sedition or by the invasion of another province 
+	38	to
+	39	sustain
+			sense:	sustain.v.04
+			prop:	sustain.01
+			V		39-39	sustain 
+			N-ARG-A1		44-44	them 
+			N-ARGM-ADV		46-59	if they have been deposed by sedition or by the invasion of another province 
+	40	or
+	41	re
+	42	-
+	43	establish
+			sense:	establish.v.01
+			prop:	establish.01
+			V		43-43	establish 
+			N-ARGM-ADV		41-41	re 
+			N-ARG-A1		44-44	them 
+			N-ARGM-ADV		46-59	if they have been deposed by sedition or by the invasion of another province 
+	44	them
+			coref:	IDENT			3	44-44	them 
+	45	,
+	46	if
+	47	they
+			coref:	IDENT			3	47-47	they 
+	48	have
+			sense:	have.v.11
+			prop:	have.01
+			V		48-48	have 
+	49	been
+			sense:	be.v.01
+			prop:	be.03
+			V		49-49	been 
+	50	deposed
+			sense:	depose.v.01
+			prop:	depose.01
+			V		50-50	deposed 
+			N-ARG-A1		47-47	they 
+			N-ARG-A0		51-59	by sedition or by the invasion of another province 
+	51	by
+	52	sedition
+			sense:	sedition.n.01
+	53	or
+	54	by
+	55	the
+	56	invasion
+			sense:	invasion.n.01
+	57	of
+	58	another
+	59	province
+			sense:	state.n.01
+	60	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Upon intervention , the branches of the provincial government are dissolved , and the federal government must appoint a new authority ( called interventor ) who will serve for a short term until the situation is normalized .
+
+
+Treebanked sentence:
+--------------------
+Upon intervention , the branches of the provincial government are dissolved , and the federal government must appoint a new authority ( called interventor ) who will serve for a short term until the situation is normalized . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN Upon)
+        (NP (NN intervention)))
+      (, ,)
+      (NP
+        (NP (DT the) (NNS branches))
+        (PP (IN of)
+          (NP (DT the) (JJ provincial) (NN government))))
+      (VP (VBP are)
+        (VP (VBN dissolved))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT the) (JJ federal) (NN government))
+      (VP (MD must)
+        (VP (VB appoint)
+          (NP
+            (NP
+              (NP (DT a) (JJ new) (NN authority))
+              (-LRB- -LRB-)
+              (VP (VBN called)
+                (NP (NN interventor)))
+              (-RRB- -RRB-))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (MD will)
+                  (VP (VB serve)
+                    (PP (IN for)
+                      (NP (DT a) (JJ short) (NN term)))
+                    (SBAR (IN until)
+                      (S
+                        (NP (DT the) (NN situation))
+                        (VP (VBZ is)
+                          (VP (VBN normalized)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Upon
+	1	intervention
+			sense:	intervention.n.01
+	2	,
+	3	the
+	4	branches
+			sense:	branch.n.01
+	5	of
+	6	the
+			coref:	IDENT			0	6-8	the provincial government 
+	7	provincial
+			sense:	provincial.a.01
+	8	government
+			sense:	government.n.01
+	9	are
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	are 
+	10	dissolved
+			sense:	dissolve.v.10
+			prop:	dissolve.01
+			V		10-10	dissolved 
+			N-ARGM-TMP		0-1	Upon intervention 
+			N-ARG-A1		3-8	the branches of the provincial government 
+	11	,
+	12	and
+	13	the
+			coref:	IDENT			0	13-15	the federal government 
+	14	federal
+			sense:	federal.a.02
+	15	government
+			sense:	government.n.01
+	16	must
+	17	appoint
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		17-17	appoint 
+			N-ARG-A0		13-15	the federal government 
+			N-ARGM-MOD		16-16	must 
+			N-ARG-A1		18-36	a new authority ( called interventor ) who will serve for a short term until the situation is normalized 
+	18	a
+	19	new
+			sense:	new.a.01
+	20	authority
+			sense:	authority.n.02
+	21	(
+	22	called
+			sense:	name.v.01
+			prop:	call.01
+			V		22-22	called 
+			N-ARG-A1		18-20	a new authority 
+			N-ARG-A2		23-23	interventor 
+	23	interventor
+	24	)
+	25	who
+	26	will
+	27	serve
+			sense:	serve.v.02
+			prop:	serve.01
+			V		27-27	serve 
+			N-ARG-A0		18-24	a new authority ( called interventor ) 
+			R-ARG-A0		25-25	who 
+			N-ARGM-MOD		26-26	will 
+			N-ARGM-TMP		28-31	for a short term 
+			N-ARGM-TMP		32-36	until the situation is normalized 
+	28	for
+	29	a
+	30	short
+			sense:	short.a.01
+	31	term
+			sense:	term.n.02
+	32	until
+	33	the
+	34	situation
+			sense:	situation.n.01
+	35	is
+			sense:	be.v.01
+			prop:	be.03
+			V		35-35	is 
+	36	normalized
+			sense:	normalize.v.01
+			prop:	normalize.01
+			V		36-36	normalized 
+			N-ARG-A1		33-34	the situation 
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The most recent example of intervention took place in 2004 , when President Néstor Kirchner applied it in the province of Santiago del Estero after a wave of grave accusations against governor Mercedes Aragonés de Juárez and her husband , the local caudillo Carlos Juárez .
+
+
+Treebanked sentence:
+--------------------
+The most recent example of intervention took place in 2004 , when President Néstor Kirchner applied it in the province of Santiago del Estero after a wave of grave accusations against governor Mercedes Aragonés de Juárez and her husband , the local caudillo Carlos Juárez . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The)
+        (ADJP (RBS most) (JJ recent))
+        (NN example))
+      (PP (IN of)
+        (NP (NN intervention))))
+    (VP (VBD took)
+      (NP (NN place))
+      (PP (IN in)
+        (NP (CD 2004)))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (NNP President) (NNP Néstor) (NNP Kirchner))
+          (VP (VBD applied)
+            (NP (PRP it))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN province))
+                (PP (IN of)
+                  (NP (NNP Santiago) (NNP del) (NNP Estero)))))
+            (PP (IN after)
+              (NP
+                (NP (DT a) (NN wave))
+                (PP (IN of)
+                  (NP
+                    (NP
+                      (NP (JJ grave) (NNS accusations))
+                      (PP (IN against)
+                        (NP (NN governor) (NNP Mercedes) (NNP Aragonés) (NNP de) (NNP Juárez))))
+                    (CC and)
+                    (NP
+                      (NP (PRP$ her) (NN husband))
+                      (, ,)
+                      (NP
+                        (NP (DT the) (JJ local) (NN caudillo))
+                        (NP (NNP Carlos) (NNP Juárez))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	most
+			sense:	most.r.01
+	2	recent
+			sense:	recent.s.01
+	3	example
+			sense:	example.n.01
+	4	of
+	5	intervention
+			coref:	IDENT			4	5-5	intervention 
+			sense:	intervention.n.01
+	6	took
+			sense:	take.v.01
+			prop:	take.14
+			V		6-6	took 
+			N-ARG-A1		0-5	The most recent example of intervention 
+			N-ARG-A2		7-7	place 
+			N-ARGM-TMP		8-9	in 2004 
+			N-ARGM-TMP		11-44	when President Néstor Kirchner applied it in the province of Santiago del Estero after a wave of grave accusations against governor Mercedes Aragonés de Juárez and her husband , the local caudillo Carlos Juárez 
+	7	place
+			sense:	topographic_point.n.01
+	8	in
+	9	2004
+			name:	DATE				9-9	2004 
+	10	,
+	11	when
+	12	President
+			name:	TITLE				12-12	President 
+	13	Néstor
+			name:	PERSON				13-14	Néstor Kirchner 
+	14	Kirchner
+	15	applied
+			sense:	use.v.01
+			prop:	apply.02
+			V		15-15	applied 
+			N-ARGM-TMP		9-9	2004 
+			R-ARGM-TMP		11-11	when 
+			N-ARG-A0		12-14	President Néstor Kirchner 
+			N-ARG-A1		16-16	it 
+			N-ARGM-LOC		17-23	in the province of Santiago del Estero 
+			N-ARGM-TMP		24-44	after a wave of grave accusations against governor Mercedes Aragonés de Juárez and her husband , the local caudillo Carlos Juárez 
+	16	it
+	17	in
+	18	the
+	19	province
+			sense:	state.n.01
+	20	of
+	21	Santiago
+			name:	CITY				21-23	Santiago del Estero 
+	22	del
+	23	Estero
+	24	after
+	25	a
+	26	wave
+			sense:	wave.n.04
+	27	of
+	28	grave
+			sense:	grave.s.03
+	29	accusations
+			sense:	accusation.n.01
+	30	against
+	31	governor
+			coref:	IDENT			1	31-35	governor Mercedes Aragonés de Juárez 
+			name:	TITLE				31-31	governor 
+			sense:	governor.n.01
+	32	Mercedes
+			name:	PERSON				32-35	Mercedes Aragonés de Juárez 
+	33	Aragonés
+	34	de
+	35	Juárez
+	36	and
+	37	her
+			coref:	IDENT			1	37-37	her 
+	38	husband
+			sense:	husband.n.01
+	39	,
+	40	the
+	41	local
+			sense:	local.a.01
+	42	caudillo
+	43	Carlos
+			coref:	IDENT			1	43-44	Carlos Juárez 
+			name:	PERSON				43-44	Carlos Juárez 
+	44	Juárez
+	45	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.8-25	the federal government of Argentina , by which it takes control of a province in certain extreme cases 
+				2.8-10	The federal government 
+				3.6-8	the provincial government 
+				3.13-15	the federal government 
+	Chain 1 (IDENT)
+				4.31-35	governor Mercedes Aragonés de Juárez 
+				4.37-37	her 
+				4.43-44	Carlos Juárez 
+	Chain 2 (IDENT)
+				0.0-0	Federal 
+				0.16-16	it 
+				2.35-35	its 
+	Chain 3 (IDENT)
+				2.35-36	its authorities 
+				2.44-44	them 
+				2.47-47	they 
+	Chain 4 (IDENT)
+				1.0-0	Intervention 
+				4.5-5	intervention 
+

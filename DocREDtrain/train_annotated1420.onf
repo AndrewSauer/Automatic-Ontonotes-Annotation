@@ -1,0 +1,609 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Pierre Richardot ( c.1575 – 1628 ) was the 61st abbot of St Willibrord 's Abbey , Echternach .
+
+
+Treebanked sentence:
+--------------------
+Pierre Richardot ( c. 1575 – 1628 ) was the 61st abbot of St Willibrord 's Abbey , Echternach . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Pierre) (NNP Richardot))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP c.) (CD 1575))
+        (PP (SYM –)
+          (NP (CD 1628))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (JJ 61st) (NN abbot))
+        (PP (IN of)
+          (NP
+            (NP (NNP St) (NNP Willibrord) (POS 's))
+            (NNP Abbey) (, ,) (NNP Echternach)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Pierre
+			name:	PERSON				0-1	Pierre Richardot 
+	1	Richardot
+	2	(
+	3	c.
+	4	1575
+			name:	DATE				4-4	1575 
+	5	–
+	6	1628
+			name:	DATE				6-6	1628 
+	7	)
+	8	was
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	was 
+			N-ARG-A1		0-7	Pierre Richardot ( c. 1575 – 1628 ) 
+			N-ARG-A2		9-18	the 61st abbot of St Willibrord 's Abbey , Echternach 
+	9	the
+	10	61st
+			name:	ORDINAL				10-10	61st 
+	11	abbot
+			name:	TITLE				11-11	abbot 
+			sense:	abbot.n.01
+	12	of
+	13	St
+			coref:	IDENT			0	13-18	St Willibrord 's Abbey , Echternach 
+			name:	ORGANIZATION				13-14	St Willibrord 
+	14	Willibrord
+	15	's
+	16	Abbey
+			name:	ORGANIZATION				16-16	Abbey 
+	17	,
+	18	Echternach
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was the son of Jean Richardot , president of the Brussels Privy Council , and Anne Courcol de Baillencourt .
+
+
+Treebanked sentence:
+--------------------
+He was the son of Jean Richardot , president of the Brussels Privy Council , and Anne Courcol de Baillencourt . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP
+          (NP (DT the) (NN son))
+          (PP (IN of)
+            (NP (NNP Jean) (NNP Richardot))))
+        (, ,)
+        (NP
+          (NP (NN president))
+          (PP (IN of)
+            (NP (DT the) (NNP Brussels) (NNP Privy) (NNP Council))))
+        (, ,)
+        (CC and)
+        (NP (NNP Anne) (NNP Courcol) (NNP de) (NNP Baillencourt))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-19	the son of Jean Richardot , president of the Brussels Privy Council , and Anne Courcol de Baillencourt 
+	2	the
+	3	son
+			sense:	son.n.01
+	4	of
+	5	Jean
+			name:	PERSON				5-6	Jean Richardot 
+	6	Richardot
+	7	,
+	8	president
+			name:	TITLE				8-8	president 
+			sense:	president.n.04
+	9	of
+	10	the
+	11	Brussels
+			name:	ORGANIZATION				11-13	Brussels Privy Council 
+	12	Privy
+	13	Council
+	14	,
+	15	and
+	16	Anne
+			name:	PERSON				16-19	Anne Courcol de Baillencourt 
+	17	Courcol
+	18	de
+	19	Baillencourt
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in Arras , he studied Theology at the University of Leuven and entered the Abbey of St. Vaast in his native city .
+
+
+Treebanked sentence:
+--------------------
+Born in Arras , he studied Theology at the University of Leuven and entered the Abbey of St. Vaast in his native city . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP (NNP Arras)))))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD studied)
+        (NP (NN Theology))
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Leuven))))))
+      (CC and)
+      (VP (VBD entered)
+        (NP
+          (NP (DT the) (NNP Abbey))
+          (PP (IN of)
+            (NP
+              (NP (NNP St.) (NNP Vaast))
+              (PP (IN in)
+                (NP (PRP$ his) (JJ native) (NN city))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-2	in Arras 
+			N-ARG-A1		4-4	he 
+	1	in
+	2	Arras
+			name:	CITY				2-2	Arras 
+	3	,
+	4	he
+	5	studied
+			sense:	study.v.02
+			prop:	study.01
+			V		5-5	studied 
+			N-ARG-A0		4-4	he 
+			N-ARG-A1		6-6	Theology 
+			N-ARGM-LOC		7-11	at the University of Leuven 
+	6	Theology
+			sense:	theology.n.03
+	7	at
+	8	the
+	9	University
+			name:	ORGANIZATION				9-11	University of Leuven 
+	10	of
+	11	Leuven
+	12	and
+	13	entered
+			sense:	enroll.v.01
+			prop:	enter.01
+			V		13-13	entered 
+			R-ARG-A0		0-2	Born in Arras 
+			N-ARG-A0		4-4	he 
+			N-ARG-A1		14-18	the Abbey of St. Vaast 
+			N-ARGM-LOC		19-22	in his native city 
+	14	the
+	15	Abbey
+	16	of
+	17	St.
+			name:	LOCATION				17-18	St. Vaast 
+	18	Vaast
+	19	in
+	20	his
+	21	native
+			sense:	native.a.02
+	22	city
+			sense:	city.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1607 Richardot was named abbot of Echternach .
+
+
+Treebanked sentence:
+--------------------
+In 1607 Richardot was named abbot of Echternach . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1607)))
+    (NP (NNP Richardot))
+    (VP (VBD was)
+      (VP (VBN named)
+        (NP
+          (NP (NN abbot))
+          (PP (IN of)
+            (NP (NNP Echternach))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1607
+			name:	DATE				1-1	1607 
+	2	Richardot
+			name:	PERSON				2-2	Richardot 
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	named
+			sense:	name.v.03
+			prop:	name.01
+			V		4-4	named 
+			N-ARGM-TMP		0-1	In 1607 
+			N-ARG-A1		2-2	Richardot 
+			N-ARG-A2		5-7	abbot of Echternach 
+	5	abbot
+			name:	TITLE				5-5	abbot 
+			sense:	abbot.n.01
+	6	of
+	7	Echternach
+			coref:	IDENT			0	7-7	Echternach 
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His abbacy was overshadowed by the need to economise to pay off the debts run up to ransom his predecessor , Johannes Bertelius , who had been kidnapped by Dutch freebooters .
+
+
+Treebanked sentence:
+--------------------
+His abbacy was overshadowed by the need to economise to pay off the debts run up to ransom his predecessor , Johannes Bertelius , who had been kidnapped by Dutch freebooters . 
+
+Tree:
+-----
+(ROOT
+  (SINV
+    (S
+      (NP (PRP$ His) (NN abbacy))
+      (VP (VBD was)
+        (VP (VBN overshadowed)
+          (PP (IN by)
+            (NP (DT the) (NN need)))
+          (S
+            (VP (TO to)
+              (VP (VB economise)
+                (S
+                  (VP (TO to)
+                    (VP (VB pay)
+                      (PRT (RP off))
+                      (NP (DT the) (NNS debts)))))))))))
+    (VP (VBP run)
+      (PRT (RP up))
+      (PP (IN to)
+        (NP (NN ransom))))
+    (NP
+      (NP (PRP$ his) (NN predecessor))
+      (, ,)
+      (NP
+        (NP (NNP Johannes) (NNP Bertelius))
+        (, ,)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD had)
+              (VP (VBN been)
+                (VP (VBN kidnapped)
+                  (PP (IN by)
+                    (NP (JJ Dutch) (NNS freebooters))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+	1	abbacy
+			sense:	abbacy.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	overshadowed
+			sense:	overshadow.v.01
+			prop:	overshadow.01
+			V		3-3	overshadowed 
+			N-ARG-A1		0-1	His abbacy 
+			N-ARG-A0		4-30	by the need to economise to pay off the debts run up to ransom his predecessor , Johannes Bertelius , who had been kidnapped by Dutch freebooters 
+	4	by
+	5	the
+	6	need
+			sense:	need.n.01
+	7	to
+	8	economise
+			sense:	save.v.09
+			prop:	economize.01
+			V		8-8	economise 
+			N-ARGM-PRP		9-30	to pay off the debts run up to ransom his predecessor , Johannes Bertelius , who had been kidnapped by Dutch freebooters 
+	9	to
+	10	pay
+			sense:	pay_up.v.01
+			prop:	pay.02
+			V		10-10	pay 
+			N-ARG-A1		12-30	the debts run up to ransom his predecessor , Johannes Bertelius , who had been kidnapped by Dutch freebooters 
+	11	off
+	12	the
+	13	debts
+			sense:	debt.n.02
+	14	run
+			sense:	run.v.14
+			prop:	run.06
+			V		14-14	run 
+			N-ARG-A1		12-13	the debts 
+			N-ARGM-PRP		16-30	to ransom his predecessor , Johannes Bertelius , who had been kidnapped by Dutch freebooters 
+	15	up
+	16	to
+	17	ransom
+			sense:	ransom.n.02
+	18	his
+	19	predecessor
+			sense:	predecessor.n.01
+	20	,
+	21	Johannes
+			name:	PERSON				21-22	Johannes Bertelius 
+	22	Bertelius
+	23	,
+	24	who
+	25	had
+			sense:	have.v.11
+			prop:	have.01
+			V		25-25	had 
+	26	been
+			sense:	be.v.01
+			prop:	be.03
+			V		26-26	been 
+	27	kidnapped
+			sense:	kidnap.v.01
+			prop:	kidnap.01
+			V		27-27	kidnapped 
+			N-ARG-A1		18-18	his 
+			N-ARG-A1		21-22	Johannes Bertelius 
+			R-ARG-A1		24-24	who 
+			N-ARG-A0		28-30	by Dutch freebooters 
+	28	by
+	29	Dutch
+			name:	NATIONALITY				29-29	Dutch 
+			sense:	dutch.a.01
+	30	freebooters
+			sense:	plunderer.n.01
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He died on 24 February 1628 and was buried near the high altar in the abbey church .
+
+
+Treebanked sentence:
+--------------------
+He died on 24 February 1628 and was buried near the high altar in the abbey church . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD died)
+        (PP (IN on)
+          (NP (CD 24)))
+        (NP-TMP (NNP February) (CD 1628)))
+      (CC and)
+      (VP (VBD was)
+        (VP (VBN buried)
+          (PP (IN near)
+            (NP
+              (NP (DT the) (JJ high) (NN altar))
+              (PP (IN in)
+                (NP (DT the) (JJ abbey) (NN church))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		2-5	on 24 February 1628 
+	2	on
+	3	24
+			name:	DATE				3-5	24 February 1628 
+	4	February
+	5	1628
+	6	and
+	7	was
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	was 
+	8	buried
+			sense:	bury.v.02
+			prop:	bury.01
+			V		8-8	buried 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		9-16	near the high altar in the abbey church 
+	9	near
+	10	the
+	11	high
+			sense:	high.a.02
+	12	altar
+			sense:	altar.n.01
+	13	in
+	14	the
+	15	abbey
+	16	church
+			sense:	church.n.02
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+During Richardot 's tenure as abbot he made a manuscript written by his medieval predecessor Thiofrid of Echternach available for publication , as Flores epitaphii sanctorum ( Luxembourg , 1619 ) .
+
+
+Treebanked sentence:
+--------------------
+During Richardot 's tenure as abbot he made a manuscript written by his medieval predecessor Thiofrid of Echternach available for publication , as Flores epitaphii sanctorum ( Luxembourg , 1619 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN During)
+      (NP
+        (NP
+          (NP (NNP Richardot) (POS 's))
+          (NN tenure))
+        (PP (IN as)
+          (NP (NN abbot)))))
+    (NP (PRP he))
+    (VP (VBD made)
+      (NP
+        (NP
+          (NP
+            (NP (DT a) (NN manuscript))
+            (VP (VBN written)
+              (PP (IN by)
+                (NP (PRP$ his) (JJ medieval) (NN predecessor)))))
+          (S
+            (NP
+              (NP (NNP Thiofrid))
+              (PP (IN of)
+                (NP (NNP Echternach))))
+            (ADJP (JJ available)
+              (PP (IN for)
+                (NP (NN publication))))))
+        (, ,)
+        (PP (IN as)
+          (NP (NNP Flores) (NNP epitaphii) (NNP sanctorum))))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP Luxembourg))
+        (, ,)
+        (NP (CD 1619))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	During
+	1	Richardot
+			name:	PERSON				1-1	Richardot 
+	2	's
+	3	tenure
+			sense:	tenure.n.01
+	4	as
+	5	abbot
+			name:	TITLE				5-5	abbot 
+			sense:	abbot.n.01
+	6	he
+	7	made
+			sense:	make.v.02
+			prop:	make.02
+			V		7-7	made 
+			N-ARGM-TMP		0-5	During Richardot 's tenure as abbot 
+			N-ARG-A0		6-6	he 
+			N-ARG-A1		8-20	a manuscript written by his medieval predecessor Thiofrid of Echternach available for publication 
+			N-ARGM-PRD		22-30	as Flores epitaphii sanctorum ( Luxembourg , 1619 ) 
+	8	a
+	9	manuscript
+			sense:	manuscript.n.02
+	10	written
+			sense:	write.v.01
+			prop:	write.01
+			V		10-10	written 
+			N-ARG-A1		8-9	a manuscript 
+			N-ARG-A0		11-17	by his medieval predecessor Thiofrid of Echternach 
+	11	by
+	12	his
+	13	medieval
+			name:	DATE				13-13	medieval 
+			sense:	medieval.a.01
+	14	predecessor
+			sense:	predecessor.n.01
+	15	Thiofrid
+			name:	PERSON				15-15	Thiofrid 
+	16	of
+	17	Echternach
+			coref:	IDENT			0	17-17	Echternach 
+	18	available
+			sense:	available.a.01
+	19	for
+	20	publication
+			sense:	issue.n.11
+	21	,
+	22	as
+	23	Flores
+			name:	PERSON				23-23	Flores 
+	24	epitaphii
+	25	sanctorum
+	26	(
+	27	Luxembourg
+			name:	COUNTRY				27-27	Luxembourg 
+	28	,
+	29	1619
+			name:	DATE				29-29	1619 
+	30	)
+	31	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.13-18	St Willibrord 's Abbey , Echternach 
+				3.7-7	Echternach 
+				6.17-17	Echternach 
+

@@ -1,0 +1,754 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Didier Dinart ( born 18 January 1977 ) is a French retired handball player , who currently manages the French national team .
+
+
+Treebanked sentence:
+--------------------
+Didier Dinart ( born 18 January 1977 ) is a French retired handball player , who currently manages the French national team . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Didier) (NNP Dinart))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 18))
+        (NP-TMP (NNP January) (CD 1977)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ French)
+          (NML (VBN retired) (NN handball))
+          (NN player))
+        (, ,)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (ADVP (RB currently))
+            (VP (VBZ manages)
+              (NP (DT the) (JJ French) (JJ national) (NN team)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Didier
+			coref:	IDENT			1	0-1	Didier Dinart 
+			name:	PERSON				0-1	Didier Dinart 
+	1	Dinart
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Didier Dinart 
+			N-ARGM-TMP		4-6	18 January 1977 
+	4	18
+			name:	DATE				4-6	18 January 1977 
+	5	January
+	6	1977
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	Didier Dinart ( born 18 January 1977 ) 
+			N-ARG-A2		9-21	a French retired handball player , who currently manages the French national team 
+	9	a
+	10	French
+			name:	NATIONALITY				10-10	French 
+	11	retired
+			sense:	retire.v.02
+			prop:	retire.01
+			V		11-11	retired 
+			N-ARG-A0		12-13	handball player 
+	12	handball
+			sense:	handball.n.02
+	13	player
+			sense:	player.n.01
+	14	,
+	15	who
+	16	currently
+			name:	DATE				16-16	currently 
+			sense:	presently.r.02
+	17	manages
+			sense:	oversee.v.01
+			prop:	manage.01
+			V		17-17	manages 
+			N-ARG-A0		9-13	a French retired handball player 
+			R-ARG-A0		15-15	who 
+			N-ARGM-TMP		16-16	currently 
+			N-ARG-A1		18-21	the French national team 
+	18	the
+			coref:	IDENT			2	18-21	the French national team 
+	19	French
+			name:	NATIONALITY				19-19	French 
+	20	national
+			sense:	national.a.01
+	21	team
+			sense:	team.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+During his playing days , he played for the internationally renowned BM Ciudad Real handball team in Spain ( where he was partner to , among others , Luc Abalo ) .
+
+
+Treebanked sentence:
+--------------------
+During his playing days , he played for the internationally renowned BM Ciudad Real handball team in Spain ( where he was partner to , among others , Luc Abalo ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN During)
+      (NP (PRP$ his) (NN playing) (NNS days)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD played)
+      (PP (IN for)
+        (NP
+          (NP (DT the)
+            (ADJP (RB internationally) (JJ renowned))
+            (NML (NN BM)
+              (NML (NNP Ciudad) (NNP Real) (NNP handball)))
+            (NN team))
+          (PP (IN in)
+            (NP (NNP Spain)))))
+      (SBAR (-LRB- -LRB-)
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP he))
+          (VP (VBD was)
+            (PP
+              (NP (NN partner))
+              (IN to))
+            (, ,)
+            (PP (IN among)
+              (NP (NNS others)))
+            (, ,)
+            (NP (NN Luc) (NNP Abalo))))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	During
+	1	his
+			coref:	IDENT			1	1-1	his 
+	2	playing
+			sense:	playing.n.02
+	3	days
+			name:	DURATION				3-3	days 
+			sense:	day.n.02
+	4	,
+	5	he
+			coref:	IDENT			1	5-5	he 
+	6	played
+			sense:	play.v.01
+			prop:	play.01
+			V		6-6	played 
+			N-ARGM-TMP		0-3	During his playing days 
+			N-ARG-A0		5-5	he 
+	7	for
+	8	the
+	9	internationally
+			sense:	internationally.r.01
+	10	renowned
+			sense:	celebrated.s.01
+	11	BM
+			coref:	IDENT			0	11-13	BM Ciudad Real 
+			name:	ORGANIZATION				11-13	BM Ciudad Real 
+			sense:	bowel_movement.n.01
+	12	Ciudad
+	13	Real
+	14	handball
+	15	team
+			sense:	team.n.01
+	16	in
+	17	Spain
+			name:	COUNTRY				17-17	Spain 
+	18	(
+	19	where
+	20	he
+			coref:	IDENT			1	20-20	he 
+	21	was
+			sense:	be.v.08
+			prop:	be.01
+			V		21-21	was 
+			R-ARGM-LOC		19-19	where 
+			N-ARG-A1		20-20	he 
+			N-ARG-A2		22-29	partner to , among others , Luc Abalo 
+	22	partner
+			sense:	collaborator.n.03
+	23	to
+	24	,
+	25	among
+	26	others
+	27	,
+	28	Luc
+			name:	PERSON				28-29	Luc Abalo 
+	29	Abalo
+	30	)
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Before joining BM Ciudad Real , he played for Montpellier HB of which is currently one of the best French clubs .
+
+
+Treebanked sentence:
+--------------------
+Before joining BM Ciudad Real , he played for Montpellier HB of which is currently one of the best French clubs . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Before)
+      (S
+        (VP (VBG joining)
+          (NP
+            (NML (NN BM))
+            (NNP Ciudad) (NNP Real)))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD played)
+      (PP (IN for)
+        (NP
+          (NP (NNP Montpellier) (NNP HB))
+          (PP (IN of)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ is)
+                  (ADVP (RB currently))
+                  (NP
+                    (NP (CD one))
+                    (PP (IN of)
+                      (NP (DT the) (JJS best) (JJ French) (NNS clubs)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Before
+	1	joining
+			sense:	join.v.01
+			prop:	join.01
+			V		1-1	joining 
+			N-ARG-A1		2-4	BM Ciudad Real 
+			N-ARG-A0		6-6	he 
+	2	BM
+			coref:	IDENT			0	2-4	BM Ciudad Real 
+			sense:	bowel_movement.n.01
+	3	Ciudad
+	4	Real
+	5	,
+	6	he
+			coref:	IDENT			1	6-6	he 
+	7	played
+			sense:	play.v.01
+			prop:	play.01
+			V		7-7	played 
+			N-ARGM-TMP		0-4	Before joining BM Ciudad Real 
+			N-ARG-A0		6-6	he 
+			N-ARGM-ADV		8-20	for Montpellier HB of which is currently one of the best French clubs 
+	8	for
+	9	Montpellier
+			name:	ORGANIZATION				9-10	Montpellier HB 
+	10	HB
+	11	of
+	12	which
+	13	is
+			sense:	be.v.01
+			prop:	be.01
+			V		13-13	is 
+			N-ARG-A1		9-10	Montpellier HB 
+			R-ARG-A1		11-12	of which 
+			N-ARGM-TMP		14-14	currently 
+			N-ARG-A2		15-20	one of the best French clubs 
+	14	currently
+			name:	DATE				14-14	currently 
+			sense:	presently.r.02
+	15	one
+			name:	NUMBER				15-15	one 
+	16	of
+	17	the
+	18	best
+			sense:	good.a.01
+	19	French
+			name:	NATIONALITY				19-19	French 
+	20	clubs
+			sense:	baseball_club.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was a highly skilled defensive player , and is widely regarded as one of the world 's best handball defensive players .
+
+
+Treebanked sentence:
+--------------------
+He was a highly skilled defensive player , and is widely regarded as one of the world 's best handball defensive players . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (NP (DT a)
+          (ADJP (RB highly) (JJ skilled))
+          (JJ defensive) (NN player)))
+      (, ,)
+      (CC and)
+      (VP (VBZ is)
+        (ADVP (RB widely))
+        (VP (VBN regarded)
+          (PP (IN as)
+            (NP
+              (NP (CD one))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NN world) (POS 's))
+                  (ADJP (JJS best) (JJ handball))
+                  (JJ defensive) (NNS players))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-6	a highly skilled defensive player 
+	2	a
+	3	highly
+			sense:	highly.r.01
+	4	skilled
+			sense:	skilled.a.01
+	5	defensive
+			sense:	defensive.a.01
+	6	player
+			sense:	player.n.01
+	7	,
+	8	and
+	9	is
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	is 
+	10	widely
+			sense:	widely.r.01
+	11	regarded
+			sense:	see.v.05
+			prop:	regard.01
+			V		11-11	regarded 
+			N-ARG-A1		0-0	He 
+			N-ARGM-ADV		10-10	widely 
+			N-ARG-A2		12-21	as one of the world 's best handball defensive players 
+	12	as
+	13	one
+			name:	NUMBER				13-13	one 
+	14	of
+	15	the
+	16	world
+			sense:	earth.n.01
+	17	's
+	18	best
+			sense:	good.a.01
+	19	handball
+	20	defensive
+			sense:	defensive.a.01
+	21	players
+			sense:	player.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This effectiveness has granted him the nickname of La Roca ( The Rock ) in Spain .
+
+
+Treebanked sentence:
+--------------------
+This effectiveness has granted him the nickname of La Roca ( The Rock ) in Spain . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT This) (NN effectiveness))
+    (VP (VBZ has)
+      (VP (VBN granted)
+        (NP (PRP him))
+        (NP
+          (NP (DT the) (NN nickname))
+          (PP (IN of)
+            (NP
+              (NP
+                (NP (NNP La) (NNP Roca))
+                (-LRB- -LRB-)
+                (NP (DT The) (NNP Rock))
+                (-RRB- -RRB-))
+              (PP (IN in)
+                (NP (NNP Spain))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+	1	effectiveness
+			sense:	effectiveness.n.01
+	2	has
+			sense:	have.v.01
+			prop:	have.01
+			V		2-2	has 
+	3	granted
+			sense:	grant.v.05
+			prop:	grant.01
+			V		3-3	granted 
+			N-ARG-A0		0-1	This effectiveness 
+			N-ARG-A2		4-4	him 
+			N-ARG-A1		5-13	the nickname of La Roca ( The Rock ) 
+			N-ARGM-LOC		14-15	in Spain 
+	4	him
+			coref:	IDENT			1	4-4	him 
+	5	the
+	6	nickname
+			sense:	nickname.n.01
+	7	of
+	8	La
+			name:	PERSON				8-9	La Roca 
+	9	Roca
+	10	(
+	11	The
+	12	Rock
+	13	)
+	14	in
+	15	Spain
+			name:	COUNTRY				15-15	Spain 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is also one of the most enduring players of the national team : his first appearance on the team was on Dec 20 , 1996 against Croatia .
+
+
+Treebanked sentence:
+--------------------
+He is also one of the most enduring players of the national team : his first appearance on the team was on Dec 20 , 1996 against Croatia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBZ is)
+        (ADVP (RB also))
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP
+              (NP (DT the)
+                (ADJP (RBS most) (JJ enduring))
+                (NNS players))
+              (PP (IN of)
+                (NP (DT the) (JJ national) (NN team))))))))
+    (: :)
+    (S
+      (NP
+        (NP (PRP$ his) (JJ first) (NN appearance))
+        (PP (IN on)
+          (NP (DT the) (NN team))))
+      (VP (VBD was)
+        (PP (IN on)
+          (NP
+            (NP (NNP Dec) (CD 20) (, ,) (CD 1996))
+            (PP (IN against)
+              (NP (NNP Croatia)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARGM-ADV		2-2	also 
+			N-ARG-A2		3-12	one of the most enduring players of the national team 
+	2	also
+			sense:	besides.r.02
+	3	one
+			name:	NUMBER				3-3	one 
+	4	of
+	5	the
+	6	most
+			sense:	most.r.01
+	7	enduring
+			sense:	abiding.s.01
+	8	players
+			sense:	player.n.01
+	9	of
+	10	the
+			coref:	IDENT			2	10-12	the national team 
+	11	national
+			sense:	national.a.01
+	12	team
+			sense:	team.n.01
+	13	:
+	14	his
+			coref:	IDENT			1	14-14	his 
+	15	first
+			name:	ORDINAL				15-15	first 
+			sense:	first.a.01
+	16	appearance
+			sense:	appearance.n.05
+	17	on
+	18	the
+			coref:	IDENT			2	18-19	the team 
+	19	team
+			sense:	team.n.01
+	20	was
+			sense:	be.v.05
+			prop:	be.01
+			V		20-20	was 
+			N-ARG-A1		14-19	his first appearance on the team 
+			N-ARG-A2		21-27	on Dec 20 , 1996 against Croatia 
+	21	on
+	22	Dec
+			name:	DATE				22-25	Dec 20 , 1996 
+	23	20
+	24	,
+	25	1996
+	26	against
+	27	Croatia
+			name:	COUNTRY				27-27	Croatia 
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He won all three major titles in handball ( European championship , world championship , Olympic championship ) .
+
+
+Treebanked sentence:
+--------------------
+He won all three major titles in handball ( European championship , world championship , Olympic championship ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD won)
+      (NP
+        (NP (DT all) (CD three) (JJ major) (NNS titles))
+        (PP (IN in)
+          (NP (NN handball))))
+      (PRN (-LRB- -LRB-)
+        (NP
+          (NP (JJ European) (NN championship))
+          (, ,)
+          (NP (NN world) (NN championship))
+          (, ,)
+          (NP (JJ Olympic) (NN championship)))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	won
+			sense:	win.v.01
+			prop:	win.01
+			V		1-1	won 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-17	all three major titles in handball ( European championship , world championship , Olympic championship ) 
+	2	all
+	3	three
+			name:	NUMBER				3-3	three 
+	4	major
+			sense:	major.a.01
+	5	titles
+			sense:	championship.n.01
+	6	in
+	7	handball
+			sense:	handball.n.02
+	8	(
+	9	European
+			name:	NATIONALITY				9-9	European 
+	10	championship
+			name:	MISC				10-10	championship 
+			sense:	championship.n.02
+	11	,
+	12	world
+			sense:	earth.n.01
+	13	championship
+			sense:	championship.n.02
+	14	,
+	15	Olympic
+			name:	MISC				15-15	Olympic 
+	16	championship
+			sense:	championship.n.02
+	17	)
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He has represented France at four Olympic Games , including winning the gold medal at the 2008 Beijing Olympics and the 2012 London Olympics .
+
+
+Treebanked sentence:
+--------------------
+He has represented France at four Olympic Games , including winning the gold medal at the 2008 Beijing Olympics and the 2012 London Olympics . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ has)
+      (VP (VBN represented)
+        (NP (NNP France))
+        (PP (IN at)
+          (NP
+            (NP (CD four) (NNP Olympic) (NNPS Games))
+            (, ,)
+            (PP (VBG including)
+              (S
+                (VP (VBG winning)
+                  (NP (DT the) (NN gold) (NN medal))
+                  (PP (IN at)
+                    (NP
+                      (NP (DT the) (CD 2008) (NNP Beijing) (NNPS Olympics))
+                      (CC and)
+                      (NP (DT the) (CD 2012) (NNP London) (NNPS Olympics)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	represented
+			sense:	represent.v.04
+			prop:	represent.01
+			V		2-2	represented 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		3-3	France 
+			N-ARGM-LOC		4-7	at four Olympic Games 
+			N-ARGM-ADV		9-23	including winning the gold medal at the 2008 Beijing Olympics and the 2012 London Olympics 
+	3	France
+			name:	COUNTRY				3-3	France 
+	4	at
+	5	four
+			name:	NUMBER				5-5	four 
+	6	Olympic
+			name:	MISC				6-7	Olympic Games 
+	7	Games
+	8	,
+	9	including
+			sense:	include.v.01
+			prop:	include.01
+			V		9-9	including 
+			N-ARG-A2		5-7	four Olympic Games 
+			N-ARG-A1		10-23	winning the gold medal at the 2008 Beijing Olympics and the 2012 London Olympics 
+	10	winning
+			sense:	win.v.01
+			prop:	win.01
+			V		10-10	winning 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		11-13	the gold medal 
+			N-ARGM-LOC		14-23	at the 2008 Beijing Olympics and the 2012 London Olympics 
+	11	the
+	12	gold
+			sense:	gold.n.01
+	13	medal
+			sense:	decoration.n.02
+	14	at
+	15	the
+	16	2008
+			name:	DATE				16-16	2008 
+	17	Beijing
+			name:	CITY				17-17	Beijing 
+	18	Olympics
+			name:	MISC				18-18	Olympics 
+	19	and
+	20	the
+	21	2012
+			name:	DATE				21-21	2012 
+	22	London
+			name:	CITY				22-22	London 
+	23	Olympics
+			name:	MISC				23-23	Olympics 
+	24	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.11-13	BM Ciudad Real 
+				2.2-4	BM Ciudad Real 
+	Chain 1 (IDENT)
+				0.0-1	Didier Dinart 
+				1.1-1	his 
+				1.5-5	he 
+				1.20-20	he 
+				2.6-6	he 
+				3.0-0	He 
+				4.4-4	him 
+				5.0-0	He 
+				5.14-14	his 
+				6.0-0	He 
+				7.0-0	He 
+	Chain 2 (IDENT)
+				0.18-21	the French national team 
+				5.10-12	the national team 
+				5.18-19	the team 
+

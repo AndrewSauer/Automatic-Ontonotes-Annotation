@@ -1,0 +1,775 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Taylor Harper ( born November 25 , 1944 ) is an American lobbyist and former American politician .
+
+
+Treebanked sentence:
+--------------------
+Taylor Harper ( born November 25 , 1944 ) is an American lobbyist and former American politician . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Taylor) (NNP Harper))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP November) (CD 25) (, ,) (CD 1944)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ American) (NN lobbyist))
+        (CC and)
+        (NP (JJ former) (JJ American) (NN politician))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Taylor
+			coref:	IDENT			0	0-1	Taylor Harper 
+			name:	PERSON				0-1	Taylor Harper 
+	1	Harper
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Taylor Harper 
+			N-ARGM-TMP		4-7	November 25 , 1944 
+	4	November
+			name:	DATE				4-7	November 25 , 1944 
+	5	25
+	6	,
+	7	1944
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	Taylor Harper ( born November 25 , 1944 ) 
+			N-ARG-A2		10-16	an American lobbyist and former American politician 
+	10	an
+	11	American
+			name:	NATIONALITY				11-11	American 
+	12	lobbyist
+			name:	TITLE				12-12	lobbyist 
+			sense:	lobbyist.n.01
+	13	and
+	14	former
+			sense:	erstwhile.s.01
+	15	American
+			name:	NATIONALITY				15-15	American 
+	16	politician
+			name:	TITLE				16-16	politician 
+			sense:	politician.n.02
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Harper was born in Mobile , Alabama and grew up in Grand Bay .
+
+
+Treebanked sentence:
+--------------------
+Harper was born in Mobile , Alabama and grew up in Grand Bay . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Harper))
+    (VP
+      (VP (VBD was)
+        (VP (VBN born)
+          (PP (IN in)
+            (NP (NNP Mobile) (, ,) (NNP Alabama)))))
+      (CC and)
+      (VP (VBD grew)
+        (PRT (RP up))
+        (PP (IN in)
+          (NP (NNP Grand) (NNP Bay)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Harper
+			coref:	IDENT			0	0-0	Harper 
+			name:	PERSON				0-0	Harper 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Harper 
+			N-ARGM-LOC		3-6	in Mobile , Alabama 
+	3	in
+	4	Mobile
+			name:	TITLE				4-4	Mobile 
+	5	,
+	6	Alabama
+			name:	STATE_OR_PROVINCE				6-6	Alabama 
+	7	and
+	8	grew
+			sense:	mature.v.01
+			prop:	grow.04
+			V		8-8	grew 
+			N-ARG-A1		0-0	Harper 
+			N-ARGM-LOC		10-12	in Grand Bay 
+	9	up
+	10	in
+	11	Grand
+			name:	LOCATION				11-11	Grand 
+	12	Bay
+			name:	CITY				12-12	Bay 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He graduated from Grand Bay High School and attended the University of Southern Mississippi where he obtained a bachelor 's degree .
+
+
+Treebanked sentence:
+--------------------
+He graduated from Grand Bay High School and attended the University of Southern Mississippi where he obtained a bachelor 's degree . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD graduated)
+        (PP (IN from)
+          (NP
+            (NML (NNP Grand) (NNP Bay))
+            (NNP High) (NNP School))))
+      (CC and)
+      (VP (VBD attended)
+        (NP
+          (NP (DT the) (NNP University))
+          (PP (IN of)
+            (NP
+              (NP (NNP Southern) (NNP Mississippi))
+              (SBAR
+                (WHADVP (WRB where))
+                (S
+                  (NP (PRP he))
+                  (VP (VBD obtained)
+                    (NP
+                      (NP (DT a) (NN bachelor) (POS 's))
+                      (NN degree))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	graduated
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		1-1	graduated 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-6	from Grand Bay High School 
+	2	from
+	3	Grand
+			name:	ORGANIZATION				3-6	Grand Bay High School 
+	4	Bay
+	5	High
+	6	School
+	7	and
+	8	attended
+			sense:	attend.v.01
+			prop:	attend.01
+			V		8-8	attended 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		9-20	the University of Southern Mississippi where he obtained a bachelor 's degree 
+	9	the
+	10	University
+			name:	ORGANIZATION				10-13	University of Southern Mississippi 
+	11	of
+	12	Southern
+	13	Mississippi
+	14	where
+	15	he
+			coref:	IDENT			0	15-15	he 
+	16	obtained
+			sense:	obtain.v.01
+			prop:	obtain.01
+			V		16-16	obtained 
+			N-ARGM-LOC		9-13	the University of Southern Mississippi 
+			R-ARGM-LOC		14-14	where 
+			N-ARG-A0		15-15	he 
+			N-ARG-A1		17-20	a bachelor 's degree 
+	17	a
+	18	bachelor
+			name:	TITLE				18-18	bachelor 
+			sense:	bachelor.n.01
+	19	's
+	20	degree
+			sense:	academic_degree.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1968 , he married Julie Ann Goodroe .
+
+
+Treebanked sentence:
+--------------------
+In 1968 , he married Julie Ann Goodroe . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1968)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD married)
+      (NP (NNP Julie) (NNP Ann) (NNP Goodroe)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1968
+			name:	DATE				1-1	1968 
+	2	,
+	3	he
+			coref:	IDENT			0	3-3	he 
+	4	married
+			sense:	marry.v.01
+			prop:	marry.01
+			V		4-4	married 
+			N-ARGM-TMP		0-1	In 1968 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		5-7	Julie Ann Goodroe 
+	5	Julie
+			name:	PERSON				5-7	Julie Ann Goodroe 
+	6	Ann
+	7	Goodroe
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1978 , Harper was elected as a Democrat to the Alabama Legislature from House District 105 where he represented communities from south Mobile County .
+
+
+Treebanked sentence:
+--------------------
+In 1978 , Harper was elected as a Democrat to the Alabama Legislature from House District 105 where he represented communities from south Mobile County . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1978)))
+    (, ,)
+    (NP (NNP Harper))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (PP (IN as)
+          (NP (DT a) (NNP Democrat)))
+        (PP (IN to)
+          (NP
+            (NP (DT the) (NNP Alabama) (NNP Legislature))
+            (PP (IN from)
+              (NP
+                (NML (NNP House) (NNP District))
+                (CD 105)))))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP he))
+            (VP (VBD represented)
+              (NP (NNS communities))
+              (PP (IN from)
+                (NP (RB south)
+                  (NML (NNP Mobile) (NNP County)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1978
+			name:	DATE				1-1	1978 
+	2	,
+	3	Harper
+			coref:	IDENT			0	3-3	Harper 
+			name:	PERSON				3-3	Harper 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		5-5	elected 
+			N-ARGM-TMP		0-1	In 1978 
+			N-ARG-A1		3-3	Harper 
+			N-ARG-A2		6-12	as a Democrat to the Alabama Legislature 
+			N-ARGM-LOC		13-24	from House District 105 where he represented communities from south Mobile County 
+	6	as
+	7	a
+	8	Democrat
+			name:	MISC				8-8	Democrat 
+	9	to
+	10	the
+			coref:	IDENT			1	10-16	the Alabama Legislature from House District 105 
+	11	Alabama
+			name:	ORGANIZATION				11-12	Alabama Legislature 
+	12	Legislature
+	13	from
+	14	House
+			coref:	IDENT			2	14-14	House 
+			name:	ORGANIZATION				14-14	House 
+	15	District
+	16	105
+			name:	NUMBER				16-16	105 
+	17	where
+	18	he
+			coref:	IDENT			0	18-18	he 
+	19	represented
+			sense:	represent.v.04
+			prop:	represent.01
+			V		19-19	represented 
+			N-ARGM-LOC		14-16	House District 105 
+			R-ARGM-LOC		17-17	where 
+			N-ARG-A0		18-18	he 
+			N-ARG-A1		20-24	communities from south Mobile County 
+	20	communities
+			sense:	community.n.01
+	21	from
+	22	south
+			sense:	south.r.01
+	23	Mobile
+			name:	TITLE				23-23	Mobile 
+	24	County
+			name:	LOCATION				24-24	County 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was elected chairman of the House Ways and Means Committee in 1987 , a post he held throughout the remainder of his tenure in the legislature .
+
+
+Treebanked sentence:
+--------------------
+He was elected chairman of the House Ways and Means Committee in 1987 , a post he held throughout the remainder of his tenure in the legislature . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (NP
+          (NP (NN chairman))
+          (PP (IN of)
+            (NP (DT the)
+              (NML (NNP House) (NNPS Ways)
+                (CC and)
+                (NNPS Means))
+              (NNP Committee))))
+        (PP (IN in)
+          (NP
+            (NP (CD 1987))
+            (, ,)
+            (NP
+              (NP (DT a) (NN post))
+              (SBAR
+                (S
+                  (NP (PRP he))
+                  (VP (VBD held)
+                    (PP (IN throughout)
+                      (NP
+                        (NP (DT the) (NN remainder))
+                        (PP (IN of)
+                          (NP (PRP$ his) (NN tenure)))))
+                    (PP (IN in)
+                      (NP (DT the) (NN legislature)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		3-10	chairman of the House Ways and Means Committee 
+			N-ARGM-TMP		11-12	in 1987 
+			C-ARG-A2		14-26	a post he held throughout the remainder of his tenure in the legislature 
+	3	chairman
+			name:	TITLE				3-3	chairman 
+			sense:	president.n.04
+	4	of
+	5	the
+	6	House
+			name:	ORGANIZATION				6-10	House Ways and Means Committee 
+	7	Ways
+	8	and
+	9	Means
+	10	Committee
+	11	in
+	12	1987
+			name:	DATE				12-12	1987 
+	13	,
+	14	a
+	15	post
+			sense:	position.n.06
+	16	he
+			coref:	IDENT			0	16-16	he 
+	17	held
+			sense:	bear.v.11
+			prop:	hold.01
+			V		17-17	held 
+			N-ARG-A1		14-15	a post 
+			N-ARG-A0		16-16	he 
+			N-ARGM-TMP		18-26	throughout the remainder of his tenure in the legislature 
+	18	throughout
+	19	the
+	20	remainder
+			sense:	remainder.n.01
+	21	of
+	22	his
+			coref:	IDENT			0	22-22	his 
+	23	tenure
+			sense:	tenure.n.01
+	24	in
+	25	the
+			coref:	IDENT			1	25-26	the legislature 
+	26	legislature
+			sense:	legislature.n.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1994 Harper entered the race for lieutenant governor .
+
+
+Treebanked sentence:
+--------------------
+In 1994 Harper entered the race for lieutenant governor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1994)))
+    (NP (NNP Harper))
+    (VP (VBD entered)
+      (NP (DT the) (NN race))
+      (PP (IN for)
+        (NP (NN lieutenant) (NN governor))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1994
+			name:	DATE				1-1	1994 
+	2	Harper
+			coref:	IDENT			0	2-2	Harper 
+			name:	PERSON				2-2	Harper 
+	3	entered
+			sense:	enter.v.02
+			prop:	enter.01
+			V		3-3	entered 
+			N-ARGM-TMP		0-1	In 1994 
+			N-ARG-A0		2-2	Harper 
+			N-ARG-A1		4-8	the race for lieutenant governor 
+	4	the
+	5	race
+			sense:	race.n.01
+	6	for
+	7	lieutenant
+			name:	TITLE				7-8	lieutenant governor 
+			sense:	deputy.n.02
+	8	governor
+			sense:	governor.n.01
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He subsequently withdrew from that race and stood for re - election to his House seat .
+
+
+Treebanked sentence:
+--------------------
+He subsequently withdrew from that race and stood for re - election to his House seat . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB subsequently))
+    (VP
+      (VP (VBD withdrew)
+        (PP (IN from)
+          (NP (DT that) (NN race))))
+      (CC and)
+      (VP (VBD stood)
+        (PP (IN for)
+          (PP (IN re) (HYPH -)
+            (NP (NN election))))
+        (PP (IN to)
+          (NP (PRP$ his) (NNP House) (NN seat)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	subsequently
+			sense:	subsequently.r.01
+	2	withdrew
+			sense:	retire.v.02
+			prop:	withdraw.01
+			V		2-2	withdrew 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		1-1	subsequently 
+			N-ARG-A2		3-5	from that race 
+	3	from
+	4	that
+	5	race
+			sense:	race.n.01
+	6	and
+	7	stood
+			sense:	stand.v.02
+			prop:	stand.04
+			V		7-7	stood 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		1-1	subsequently 
+			N-ARG-A2		8-15	for re - election to his House seat 
+	8	for
+	9	re
+	10	-
+	11	election
+			sense:	election.n.01
+	12	to
+	13	his
+			coref:	IDENT			0	13-13	his 
+	14	House
+			coref:	IDENT			2	14-14	House 
+			name:	ORGANIZATION				14-14	House 
+	15	seat
+			sense:	seat.n.07
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He lost that bid for re - election and began work as a consultant .
+
+
+Treebanked sentence:
+--------------------
+He lost that bid for re - election and began work as a consultant . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD lost)
+        (NP (DT that) (NN bid))
+        (PP (IN for)
+          (PP (IN re) (HYPH -)
+            (NP (NN election)))))
+      (CC and)
+      (VP (VBD began)
+        (NP (NN work))
+        (PP (IN as)
+          (NP (DT a) (NN consultant)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	lost
+			sense:	lose.v.02
+			prop:	lose.03
+			V		1-1	lost 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-7	that bid for re - election 
+	2	that
+	3	bid
+			sense:	bid.n.02
+	4	for
+	5	re
+	6	-
+	7	election
+			sense:	election.n.01
+	8	and
+	9	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		9-9	began 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		10-13	work as a consultant 
+	10	work
+			sense:	employment.n.02
+	11	as
+	12	a
+	13	consultant
+			name:	TITLE				13-13	consultant 
+			sense:	adviser.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is currently chief executive officer of Southeast Consultants , an advisory firm with offices in Montgomery , Alabama .
+
+
+Treebanked sentence:
+--------------------
+He is currently chief executive officer of Southeast Consultants , an advisory firm with offices in Montgomery , Alabama . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (ADVP (RB currently))
+      (NP
+        (NP (JJ chief) (JJ executive) (NN officer))
+        (PP (IN of)
+          (NP
+            (NP (NNP Southeast) (NNP Consultants))
+            (, ,)
+            (NP
+              (NP (DT an) (JJ advisory) (NN firm))
+              (PP (IN with)
+                (NP
+                  (NP (NNS offices))
+                  (PP (IN in)
+                    (NP (NNP Montgomery) (, ,) (NNP Alabama))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		2-2	currently 
+			N-ARG-A2		3-18	chief executive officer of Southeast Consultants , an advisory firm with offices in Montgomery , Alabama 
+	2	currently
+			name:	DATE				2-2	currently 
+			sense:	presently.r.02
+	3	chief
+			name:	TITLE				3-5	chief executive officer 
+			sense:	chief.s.01
+	4	executive
+			sense:	executive.a.01
+	5	officer
+			sense:	officeholder.n.01
+	6	of
+	7	Southeast
+			name:	ORGANIZATION				7-8	Southeast Consultants 
+	8	Consultants
+	9	,
+	10	an
+	11	advisory
+			sense:	advisory.s.01
+	12	firm
+			sense:	firm.n.01
+	13	with
+	14	offices
+			sense:	office.n.01
+	15	in
+	16	Montgomery
+			name:	CITY				16-16	Montgomery 
+	17	,
+	18	Alabama
+			name:	STATE_OR_PROVINCE				18-18	Alabama 
+	19	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Taylor Harper 
+				1.0-0	Harper 
+				2.0-0	He 
+				2.15-15	he 
+				3.3-3	he 
+				4.3-3	Harper 
+				4.18-18	he 
+				5.0-0	He 
+				5.16-16	he 
+				5.22-22	his 
+				6.2-2	Harper 
+				7.0-0	He 
+				7.13-13	his 
+				8.0-0	He 
+				9.0-0	He 
+	Chain 1 (IDENT)
+				4.10-16	the Alabama Legislature from House District 105 
+				5.25-26	the legislature 
+	Chain 2 (IDENT)
+				4.14-14	House 
+				7.14-14	House 
+

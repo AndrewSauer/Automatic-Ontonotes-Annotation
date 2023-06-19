@@ -1,0 +1,543 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Laura Alicia Brown ( born 1970 ) is a former American college and professional golfer .
+
+
+Treebanked sentence:
+--------------------
+Laura Alicia Brown ( born 1970 ) is a former American college and professional golfer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Laura) (NNP Alicia) (NNP Brown))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 1970)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (JJ former) (JJ American)
+        (UCP (NN college)
+          (CC and)
+          (JJ professional))
+        (NN golfer)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Laura
+			name:	PERSON				0-2	Laura Alicia Brown 
+	1	Alicia
+	2	Brown
+	3	(
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-2	Laura Alicia Brown 
+			N-ARGM-TMP		5-5	1970 
+	5	1970
+			name:	DATE				5-5	1970 
+	6	)
+	7	is
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		0-6	Laura Alicia Brown ( born 1970 ) 
+			N-ARG-A2		8-14	a former American college and professional golfer 
+	8	a
+	9	former
+			sense:	former.s.03
+	10	American
+			name:	NATIONALITY				10-10	American 
+	11	college
+			sense:	college.n.01
+	12	and
+	13	professional
+			sense:	professional.a.01
+	14	golfer
+			name:	TITLE				14-14	golfer 
+			sense:	golfer.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Brown was born in New Smyrna Beach , Florida .
+
+
+Treebanked sentence:
+--------------------
+Brown was born in New Smyrna Beach , Florida . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Brown))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP
+            (NP (NNP New) (NNP Smyrna) (NNP Beach))
+            (, ,)
+            (NP (NNP Florida))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Brown
+			name:	PERSON				0-0	Brown 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Brown 
+			N-ARGM-LOC		3-8	in New Smyrna Beach , Florida 
+	3	in
+	4	New
+			name:	CITY				4-6	New Smyrna Beach 
+	5	Smyrna
+	6	Beach
+	7	,
+	8	Florida
+			coref:	IDENT			0	8-8	Florida 
+			name:	STATE_OR_PROVINCE				8-8	Florida 
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She attended New Smyrna Beach High School and graduated in 1987 .
+
+
+Treebanked sentence:
+--------------------
+She attended New Smyrna Beach High School and graduated in 1987 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP
+      (VP (VBD attended)
+        (NP (NNP New) (NNP Smyrna) (NNP Beach) (NNP High) (NNP School)))
+      (CC and)
+      (VP (VBD graduated)
+        (PP (IN in)
+          (NP (CD 1987)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	attended
+			sense:	attend.v.01
+			prop:	attend.01
+			V		1-1	attended 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		2-6	New Smyrna Beach High School 
+	2	New
+			name:	ORGANIZATION				2-6	New Smyrna Beach High School 
+	3	Smyrna
+	4	Beach
+	5	High
+	6	School
+	7	and
+	8	graduated
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		8-8	graduated 
+			N-ARG-A0		0-0	She 
+			N-ARGM-TMP		9-10	in 1987 
+	9	in
+	10	1987
+			name:	DATE				10-10	1987 
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Brown received an athletic scholarship to attend the University of Florida in Gainesville , Florida , where she played for coach Mimi Ryan 's Florida Gators women 's golf team in National Collegiate Athletic Association ( NCAA ) competition from 1988 to 1991 .
+
+
+Treebanked sentence:
+--------------------
+Brown received an athletic scholarship to attend the University of Florida in Gainesville , Florida , where she played for coach Mimi Ryan 's Florida Gators women 's golf team in National Collegiate Athletic Association ( NCAA ) competition from 1988 to 1991 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Brown))
+    (VP (VBD received)
+      (NP (DT an) (JJ athletic) (NN scholarship))
+      (S
+        (VP (TO to)
+          (VP (VB attend)
+            (NP
+              (NP (DT the) (NNP University))
+              (PP (IN of)
+                (NP (NNP Florida))))
+            (PP (IN in)
+              (NP (NNP Gainesville) (, ,) (NNP Florida)))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (PRP she))
+                (VP (VBD played)
+                  (PP (IN for)
+                    (NP
+                      (NP (NN coach) (NNP Mimi) (NNP Ryan) (POS 's))
+                      (NNP Florida) (NNPS Gators)))
+                  (NP
+                    (NP (NNS women) (POS 's))
+                    (NN golf) (NN team))
+                  (PP (IN in)
+                    (NP
+                      (NP
+                        (NML (NNP National) (NNP Collegiate))
+                        (JJ Athletic) (NN Association)
+                        (PRN (-LRB- -LRB-)
+                          (NP (NNP NCAA))
+                          (-RRB- -RRB-))
+                        (NN competition))
+                      (PP (IN from)
+                        (NP (CD 1988)))))
+                  (PP (IN to)
+                    (NP (CD 1991))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Brown
+			name:	PERSON				0-0	Brown 
+	1	received
+			sense:	receive.v.01
+			prop:	receive.01
+			V		1-1	received 
+			N-ARG-A0		0-0	Brown 
+			N-ARG-A1		2-42	an athletic scholarship to attend the University of Florida in Gainesville , Florida , where she played for coach Mimi Ryan 's Florida Gators women 's golf team in National Collegiate Athletic Association ( NCAA ) competition from 1988 to 1991 
+	2	an
+	3	athletic
+			sense:	athletic.a.01
+	4	scholarship
+			sense:	scholarship.n.01
+	5	to
+	6	attend
+			sense:	attend.v.01
+			prop:	attend.01
+			V		6-6	attend 
+			N-ARG-A0		0-0	Brown 
+			N-ARG-A1		7-42	the University of Florida in Gainesville , Florida , where she played for coach Mimi Ryan 's Florida Gators women 's golf team in National Collegiate Athletic Association ( NCAA ) competition from 1988 to 1991 
+	7	the
+	8	University
+			name:	ORGANIZATION				8-10	University of Florida 
+	9	of
+	10	Florida
+	11	in
+	12	Gainesville
+			name:	CITY				12-12	Gainesville 
+	13	,
+	14	Florida
+			name:	STATE_OR_PROVINCE				14-14	Florida 
+	15	,
+	16	where
+	17	she
+	18	played
+			sense:	play.v.01
+			prop:	play.01
+			V		18-18	played 
+			N-ARGM-LOC		16-16	where 
+			N-ARG-A0		17-17	she 
+			N-ARGM-LOC		30-38	in National Collegiate Athletic Association ( NCAA ) competition 
+			N-ARGM-TMP		39-42	from 1988 to 1991 
+	19	for
+	20	coach
+			name:	TITLE				20-20	coach 
+			sense:	coach.n.01
+	21	Mimi
+			name:	PERSON				21-22	Mimi Ryan 
+	22	Ryan
+	23	's
+	24	Florida
+			name:	ORGANIZATION				24-25	Florida Gators 
+	25	Gators
+	26	women
+			sense:	womanhood.n.02
+	27	's
+	28	golf
+			sense:	golf.n.01
+	29	team
+			sense:	team.n.01
+	30	in
+	31	National
+			name:	ORGANIZATION				31-34	National Collegiate Athletic Association 
+	32	Collegiate
+	33	Athletic
+			sense:	athletic.a.01
+	34	Association
+			sense:	association.n.01
+	35	(
+	36	NCAA
+			name:	ORGANIZATION				36-36	NCAA 
+	37	)
+	38	competition
+			sense:	contest.n.01
+	39	from
+	40	1988
+			name:	DATE				40-42	1988 to 1991 
+	41	to
+	42	1991
+	43	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+While playing for the Florida Gators , she was recognized as the Southeastern Conference ( SEC ) Freshman of the Year in 1988 , and received first - team All - SEC and honorable mention All - American honors in 1991 .
+
+
+Treebanked sentence:
+--------------------
+While playing for the Florida Gators , she was recognized as the Southeastern Conference ( SEC ) Freshman of the Year in 1988 , and received first - team All - SEC and honorable mention All - American honors in 1991 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (VP (VBG playing)
+          (PP (IN for)
+            (NP (DT the) (NNP Florida) (NNPS Gators))))))
+    (, ,)
+    (NP (PRP she))
+    (VP
+      (VP (VBD was)
+        (VP (VBN recognized)
+          (PP (IN as)
+            (NP
+              (NP (DT the) (NNP Southeastern) (NNP Conference) (-LRB- -LRB-)
+                (NP (NNP SEC))
+                (-RRB- -RRB-) (NN Freshman))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NN Year))
+                  (PP (IN in)
+                    (NP (CD 1988)))))))))
+      (, ,)
+      (CC and)
+      (VP (VBD received)
+        (NP
+          (NP
+            (NP (RB first) (HYPH -) (NN team))
+            (ADJP (RB All) (HYPH -)
+              (NP (NNP SEC))))
+          (CC and)
+          (NP
+            (NP (JJ honorable) (NN mention))
+            (NP
+              (ADJP (RB All) (HYPH -) (JJ American))
+              (NNS honors))))
+        (PP (IN in)
+          (NP (CD 1991)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	While
+	1	playing
+			sense:	play.v.01
+			prop:	play.01
+			V		1-1	playing 
+			N-ARGM-ADV		2-5	for the Florida Gators 
+			N-ARG-A0		7-7	she 
+	2	for
+	3	the
+	4	Florida
+			name:	ORGANIZATION				4-5	Florida Gators 
+	5	Gators
+	6	,
+	7	she
+	8	was
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	was 
+	9	recognized
+			sense:	recognize.v.09
+			prop:	recognize.01
+			V		9-9	recognized 
+			N-ARGM-TMP		0-5	While playing for the Florida Gators 
+			N-ARG-A1		7-7	she 
+			N-ARG-A2		10-20	as the Southeastern Conference ( SEC ) Freshman of the Year 
+			N-ARGM-TMP		21-22	in 1988 
+	10	as
+	11	the
+	12	Southeastern
+	13	Conference
+	14	(
+	15	SEC
+			coref:	IDENT			2	15-15	SEC 
+			name:	ORGANIZATION				15-15	SEC 
+	16	)
+	17	Freshman
+			sense:	freshman.n.01
+	18	of
+	19	the
+			name:	DATE				19-22	the Year in 1988 
+	20	Year
+			sense:	year.n.01
+	21	in
+	22	1988
+	23	,
+	24	and
+	25	received
+			sense:	receive.v.02
+			prop:	receive.01
+			V		25-25	received 
+			N-ARGM-TMP		0-5	While playing for the Florida Gators 
+			N-ARG-A0		7-7	she 
+			N-ARG-A1		26-38	first - team All - SEC and honorable mention All - American honors 
+			N-ARGM-TMP		39-40	in 1991 
+	26	first
+			name:	ORDINAL				26-26	first 
+			sense:	first.r.03
+	27	-
+	28	team
+			sense:	team.n.01
+	29	All
+			sense:	wholly.r.01
+	30	-
+	31	SEC
+			coref:	IDENT			2	31-31	SEC 
+			name:	ORGANIZATION				31-31	SEC 
+	32	and
+	33	honorable
+			sense:	honorable.a.02
+	34	mention
+			sense:	mention.n.03
+	35	All
+			sense:	wholly.r.01
+	36	-
+	37	American
+			name:	NATIONALITY				37-37	American 
+	38	honors
+			sense:	award.n.02
+	39	in
+	40	1991
+			coref:	IDENT			1	40-40	1991 
+			name:	DATE				40-40	1991 
+	41	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Brown graduated from Florida with a bachelor 's degree in health and human performance in 1991 .
+
+
+Treebanked sentence:
+--------------------
+Brown graduated from Florida with a bachelor 's degree in health and human performance in 1991 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Brown))
+    (VP (VBD graduated)
+      (PP (IN from)
+        (NP (NNP Florida)))
+      (PP (IN with)
+        (NP
+          (NP
+            (NP (DT a) (NN bachelor) (POS 's))
+            (NN degree))
+          (PP (IN in)
+            (NP
+              (UCP (NN health)
+                (CC and)
+                (JJ human))
+              (NN performance)))))
+      (PP (IN in)
+        (NP (CD 1991))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Brown
+			name:	PERSON				0-0	Brown 
+	1	graduated
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		1-1	graduated 
+			N-ARG-A0		0-0	Brown 
+			N-ARG-A1		2-3	from Florida 
+			N-ARGM-MNR		4-13	with a bachelor 's degree in health and human performance 
+			N-ARGM-TMP		14-15	in 1991 
+	2	from
+	3	Florida
+			coref:	IDENT			0	3-3	Florida 
+			name:	STATE_OR_PROVINCE				3-3	Florida 
+	4	with
+	5	a
+	6	bachelor
+			name:	TITLE				6-6	bachelor 
+			sense:	bachelor.n.01
+	7	's
+	8	degree
+			sense:	academic_degree.n.01
+	9	in
+	10	health
+			sense:	health.n.01
+	11	and
+	12	human
+			sense:	human.a.02
+	13	performance
+			sense:	performance.n.03
+	14	in
+	15	1991
+			coref:	IDENT			1	15-15	1991 
+			name:	DATE				15-15	1991 
+	16	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.8-8	Florida 
+				5.3-3	Florida 
+	Chain 1 (IDENT)
+				4.40-40	1991 
+				5.15-15	1991 
+	Chain 2 (IDENT)
+				4.15-15	SEC 
+				4.31-31	SEC 
+

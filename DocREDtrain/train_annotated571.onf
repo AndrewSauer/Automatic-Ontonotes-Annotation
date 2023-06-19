@@ -1,0 +1,518 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Algester is an outer suburb of City of Brisbane , Queensland , Australia .
+
+
+Treebanked sentence:
+--------------------
+Algester is an outer suburb of City of Brisbane , Queensland , Australia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Algester))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ outer) (NN suburb))
+        (PP (IN of)
+          (NP
+            (NP (NNP City))
+            (PP (IN of)
+              (NP (NNP Brisbane) (, ,) (NNP Queensland) (, ,) (NNP Australia)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Algester
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Algester 
+			N-ARG-A2		2-12	an outer suburb of City of Brisbane , Queensland , Australia 
+	2	an
+	3	outer
+			sense:	outer.a.01
+	4	suburb
+			sense:	suburb.n.01
+	5	of
+	6	City
+	7	of
+	8	Brisbane
+			coref:	IDENT			0	8-8	Brisbane 
+			name:	CITY				8-8	Brisbane 
+	9	,
+	10	Queensland
+			name:	LOCATION				10-10	Queensland 
+	11	,
+	12	Australia
+			name:	COUNTRY				12-12	Australia 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is south - west of the central business district .
+
+
+Treebanked sentence:
+--------------------
+It is south - west of the central business district . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADVP (RB south) (HYPH -) (RB west))
+      (PP (IN of)
+        (NP (DT the) (JJ central) (NN business) (NN district))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	is
+			sense:	be.v.03
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-9	south - west of the central business district 
+	2	south
+			sense:	south.r.01
+	3	-
+	4	west
+			sense:	west.r.01
+	5	of
+	6	the
+	7	central
+			sense:	central.a.02
+	8	business
+			sense:	commercial_enterprise.n.02
+	9	district
+			sense:	district.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The suburb 's population was 8,433 at the 2016 census .
+
+
+Treebanked sentence:
+--------------------
+The suburb 's population was 8,433 at the 2016 census . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN suburb) (POS 's))
+      (NN population))
+    (VP (VBD was)
+      (NP
+        (NP (CD 8,433))
+        (PP (IN at)
+          (NP (DT the) (CD 2016) (NN census)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-2	The suburb 's 
+	1	suburb
+			sense:	suburb.n.01
+	2	's
+	3	population
+			sense:	population.n.04
+	4	was
+			sense:	equal.v.01
+			prop:	be.01
+			V		4-4	was 
+			N-ARG-A1		0-3	The suburb 's population 
+			N-ARG-A2		5-5	8,433 
+			N-ARGM-TMP		6-9	at the 2016 census 
+	5	8,433
+			name:	NUMBER				5-5	8,433 
+	6	at
+	7	the
+	8	2016
+			name:	DATE				8-8	2016 
+	9	census
+			sense:	census.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The suburbs of Algester , Calamvale and now Parkinson , sit on the southern border or boundary of the City of Brisbane local government area with suburbs of Logan City such as Browns Plains and Regents Park .
+
+
+Treebanked sentence:
+--------------------
+The suburbs of Algester , Calamvale and now Parkinson , sit on the southern border or boundary of the City of Brisbane local government area with suburbs of Logan City such as Browns Plains and Regents Park . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (FRAG
+      (FRAG
+        (NP
+          (NP (DT The) (NNS suburbs))
+          (PP (IN of)
+            (NP (NNP Algester))))
+        (, ,)
+        (NP (NNP Calamvale)))
+      (CC and)
+      (FRAG
+        (ADVP (RB now))
+        (NP (NNP Parkinson))))
+    (, ,)
+    (S
+      (VP (VB sit)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (JJ southern) (NN border)
+              (CC or)
+              (NN boundary))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNP City))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP Brisbane) (JJ local) (NN government) (NN area))
+                    (PP (IN with)
+                      (NP
+                        (NP (NNS suburbs))
+                        (PP (IN of)
+                          (NP
+                            (NP (NNP Logan) (NNP City))
+                            (PP (JJ such) (IN as)
+                              (NP
+                                (NML (NNP Browns) (NNP Plains))
+                                (CC and)
+                                (NML (NNP Regents) (NNP Park))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	suburbs
+			sense:	suburb.n.01
+	2	of
+	3	Algester
+			name:	LOCATION				3-3	Algester 
+	4	,
+	5	Calamvale
+			name:	PERSON				5-5	Calamvale 
+	6	and
+	7	now
+			name:	DATE				7-7	now 
+			sense:	nowadays.r.01
+	8	Parkinson
+			name:	PERSON				8-8	Parkinson 
+	9	,
+	10	sit
+			sense:	sit.v.07
+			prop:	sit.01
+			V		10-10	sit 
+			N-ARG-A1		0-8	The suburbs of Algester , Calamvale and now Parkinson 
+			N-ARG-A2		11-36	on the southern border or boundary of the City of Brisbane local government area with suburbs of Logan City such as Browns Plains and Regents Park 
+	11	on
+	12	the
+	13	southern
+			sense:	southern.a.03
+	14	border
+			sense:	boundary_line.n.01
+	15	or
+	16	boundary
+			sense:	boundary.n.02
+	17	of
+	18	the
+	19	City
+	20	of
+	21	Brisbane
+			coref:	IDENT			0	21-21	Brisbane 
+			name:	CITY				21-21	Brisbane 
+	22	local
+			sense:	local.a.01
+	23	government
+			sense:	government.n.01
+	24	area
+			sense:	area.n.01
+	25	with
+	26	suburbs
+			sense:	suburb.n.01
+	27	of
+	28	Logan
+			name:	CITY				28-28	Logan 
+	29	City
+			name:	LOCATION				29-29	City 
+	30	such
+			sense:	such.s.01
+	31	as
+	32	Browns
+			name:	LOCATION				32-33	Browns Plains 
+	33	Plains
+	34	and
+	35	Regents
+	36	Park
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The suburb 's name is a corruption of the name of the English town of " Alcester " .
+
+
+Treebanked sentence:
+--------------------
+The suburb 's name is a corruption of the name of the English town of " Alcester " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN suburb) (POS 's))
+      (NN name))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN corruption))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN name))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNP English) (NN town))
+                (PP (IN of) (`` ")
+                  (NP (NNP Alcester))
+                  ('' "))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-2	The suburb 's 
+	1	suburb
+			sense:	suburb.n.01
+	2	's
+	3	name
+			sense:	name.n.01
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	The suburb 's name 
+			N-ARG-A2		5-17	a corruption of the name of the English town of " Alcester " 
+	5	a
+	6	corruption
+			sense:	corruption.n.04
+	7	of
+	8	the
+	9	name
+			sense:	name.n.01
+	10	of
+	11	the
+	12	English
+			name:	NATIONALITY				12-12	English 
+	13	town
+			sense:	town.n.01
+	14	of
+	15	"
+	16	Alcester
+	17	"
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Briefly in the mid - to - late-1970s the suburb was colloquially named Ridgewood Heights after the Ridgewood Heights property development that then made up most of its land area , but had officially been known as Algester from 1972 .
+
+
+Treebanked sentence:
+--------------------
+Briefly in the mid - to - late - 1970s the suburb was colloquially named Ridgewood Heights after the Ridgewood Heights property development that then made up most of its land area , but had officially been known as Algester from 1972 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Briefly))
+    (PP (IN in)
+      (NP (DT the)
+        (NML
+          (NML (JJ mid))
+          (HYPH -)
+          (PP (IN to) (HYPH -)
+            (NML (JJ late) (HYPH -) (NNS 1970s))))))
+    (NP (DT the) (NN suburb))
+    (VP (VBD was)
+      (ADVP (RB colloquially))
+      (VP (VBN named)
+        (NP
+          (NP (NNP Ridgewood) (NNP Heights))
+          (PP (IN after)
+            (NP
+              (NP (DT the)
+                (NML (NNP Ridgewood) (NNP Heights))
+                (NN property) (NN development))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (ADVP (RB then))
+                  (VP
+                    (VP (VBD made)
+                      (PRT (RP up))
+                      (NP
+                        (NP (JJS most))
+                        (PP (IN of)
+                          (NP (PRP$ its) (NN land) (NN area)))))
+                    (, ,)
+                    (CC but)
+                    (VP (VBD had)
+                      (ADVP (RB officially))
+                      (VP (VBN been)
+                        (VP (VBN known)
+                          (PP (IN as)
+                            (NP (NNP Algester)))
+                          (PP (IN from)
+                            (NP (CD 1972))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Briefly
+			sense:	briefly.r.01
+	1	in
+	2	the
+	3	mid
+			sense:	mid.s.01
+	4	-
+	5	to
+	6	-
+	7	late
+			sense:	late.a.01
+	8	-
+	9	1970s
+	10	the
+			coref:	IDENT			2	10-11	the suburb 
+	11	suburb
+			sense:	suburb.n.01
+	12	was
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	was 
+	13	colloquially
+			sense:	colloquially.r.01
+	14	named
+			sense:	name.v.01
+			prop:	name.01
+			V		14-14	named 
+			N-ARGM-TMP		0-0	Briefly 
+			N-ARGM-TMP		1-9	in the mid - to - late - 1970s 
+			N-ARG-A1		10-11	the suburb 
+			N-ARGM-MNR		13-13	colloquially 
+			N-ARG-A2		15-16	Ridgewood Heights 
+	15	Ridgewood
+			coref:	IDENT			1	15-16	Ridgewood Heights 
+			name:	CITY				15-15	Ridgewood 
+	16	Heights
+			name:	LOCATION				16-16	Heights 
+	17	after
+	18	the
+	19	Ridgewood
+			coref:	IDENT			1	19-20	Ridgewood Heights 
+			name:	CITY				19-19	Ridgewood 
+	20	Heights
+			name:	LOCATION				20-20	Heights 
+	21	property
+			sense:	place.n.02
+	22	development
+			sense:	development.n.06
+	23	that
+	24	then
+			sense:	then.r.03
+	25	made
+			sense:	form.v.02
+			prop:	make.07
+			V		25-25	made 
+			N-ARG-A0		18-22	the Ridgewood Heights property development 
+			R-ARG-A0		23-23	that 
+			N-ARGM-TMP		24-24	then 
+			N-ARG-A1		27-31	most of its land area 
+	26	up
+	27	most
+			sense:	most.a.02
+	28	of
+	29	its
+	30	land
+			sense:	land.n.01
+	31	area
+			sense:	area.n.06
+	32	,
+	33	but
+	34	had
+			sense:	have.v.01
+			prop:	have.01
+			V		34-34	had 
+	35	officially
+			sense:	formally.r.01
+	36	been
+			sense:	be.v.01
+			prop:	be.03
+			V		36-36	been 
+	37	known
+			sense:	know.v.04
+			prop:	know.01
+			V		37-37	known 
+			N-ARG-A1		18-22	the Ridgewood Heights property development 
+			R-ARG-A1		23-23	that 
+			N-ARGM-MNR		35-35	officially 
+			N-ARG-A2		38-39	as Algester 
+			N-ARGM-TMP		40-41	from 1972 
+	38	as
+	39	Algester
+	40	from
+	41	1972
+			name:	DATE				41-41	1972 
+	42	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.8-8	Brisbane 
+				3.21-21	Brisbane 
+	Chain 1 (IDENT)
+				5.15-16	Ridgewood Heights 
+				5.19-20	Ridgewood Heights 
+	Chain 2 (IDENT)
+				2.0-2	The suburb 's 
+				4.0-2	The suburb 's 
+				5.10-11	the suburb 
+

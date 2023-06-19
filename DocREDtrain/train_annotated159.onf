@@ -1,0 +1,717 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Pierre Jean " Buster " Martin ( 1 September 1906 ?
+
+
+Treebanked sentence:
+--------------------
+Pierre Jean " Buster " Martin ( 1 September 1906 ? 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP
+      (NP
+        (NP (NNP Pierre) (NNP Jean))
+        (NP ('' ") (NNP Buster) ('' ")))
+      (NP
+        (NP (NNP Martin))
+        (-LRB- -LRB-)
+        (NP (CD 1))))
+    (NP-TMP (NNP September) (CD 1906))
+    (. ?)))
+
+
+Leaves:
+-------
+	0	Pierre
+			name:	PERSON				0-1	Pierre Jean 
+	1	Jean
+	2	"
+	3	Buster
+			name:	PERSON				3-3	Buster 
+	4	"
+	5	Martin
+			coref:	IDENT			2	5-5	Martin 
+			name:	PERSON				5-5	Martin 
+	6	(
+	7	1
+			name:	DATE				7-9	1 September 1906 
+	8	September
+	9	1906
+	10	?
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+– 12 April 2011 ) claimed to be the United Kingdom 's oldest employee , stating that he was born in 1906 .
+
+
+Treebanked sentence:
+--------------------
+– 12 April 2011 ) claimed to be the United Kingdom 's oldest employee , stating that he was born in 1906 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (SYM –) (CD 12))
+      (NP-TMP (NNP April) (CD 2011)))
+    (-RRB- -RRB-)
+    (VP (VBD claimed)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (NP
+              (NP (DT the) (NNP United) (NNP Kingdom) (POS 's))
+              (JJS oldest) (NN employee)))))
+      (, ,)
+      (S
+        (VP (VBG stating)
+          (SBAR (IN that)
+            (S
+              (NP (PRP he))
+              (VP (VBD was)
+                (VP (VBN born)
+                  (PP (IN in)
+                    (NP (CD 1906))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	–
+	1	12
+			name:	DATE				1-3	12 April 2011 
+	2	April
+	3	2011
+	4	)
+	5	claimed
+			sense:	claim.v.01
+			prop:	claim.01
+			V		5-5	claimed 
+			N-ARGM-TMP		1-3	12 April 2011 
+			N-ARG-A1		6-13	to be the United Kingdom 's oldest employee 
+			N-ARGM-ADV		15-21	stating that he was born in 1906 
+	6	to
+	7	be
+			sense:	be.v.01
+			prop:	be.01
+			V		7-7	be 
+			N-ARG-A2		8-13	the United Kingdom 's oldest employee 
+	8	the
+	9	United
+			name:	COUNTRY				9-10	United Kingdom 
+	10	Kingdom
+	11	's
+	12	oldest
+			sense:	old.a.01
+	13	employee
+			sense:	employee.n.01
+	14	,
+	15	stating
+			sense:	state.v.01
+			prop:	state.01
+			V		15-15	stating 
+			N-ARG-A1		16-21	that he was born in 1906 
+	16	that
+	17	he
+			coref:	IDENT			0	17-17	he 
+	18	was
+			sense:	be.v.01
+			prop:	be.03
+			V		18-18	was 
+	19	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		19-19	born 
+			N-ARG-A1		17-17	he 
+			N-ARGM-TMP		20-21	in 1906 
+	20	in
+	21	1906
+			name:	DATE				21-21	1906 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Until his death , Martin worked for Pimlico Plumbers , a well - known plumbing company in southeast London as a van cleaner , and notably refused to take a day off on the day he celebrated what he claimed was his 100th birthday .
+
+
+Treebanked sentence:
+--------------------
+Until his death , Martin worked for Pimlico Plumbers , a well - known plumbing company in southeast London as a van cleaner , and notably refused to take a day off on the day he celebrated what he claimed was his 100th birthday . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Until)
+      (NP (PRP$ his) (NN death)))
+    (, ,)
+    (NP (NNP Martin))
+    (VP
+      (VP (VBD worked)
+        (PP (IN for)
+          (NP (NNP Pimlico) (NNPS Plumbers))))
+      (, ,)
+      (VP
+        (NP (DT a)
+          (ADJP (RB well) (HYPH -) (VBN known))
+          (NN plumbing) (NN company))
+        (PP (IN in)
+          (NP (JJ southeast) (NNP London)))
+        (PP (IN as)
+          (NP (DT a) (NN van) (NN cleaner))))
+      (, ,)
+      (CC and)
+      (ADVP (RB notably))
+      (VP (VBD refused)
+        (S
+          (VP (TO to)
+            (VP (VB take)
+              (NP (DT a) (NN day))
+              (PRT (RP off))
+              (PP (IN on)
+                (NP
+                  (NP (DT the) (NN day))
+                  (SBAR
+                    (S
+                      (NP (PRP he))
+                      (VP (VBD celebrated)
+                        (SBAR
+                          (WHNP (WP what))
+                          (S
+                            (NP (PRP he))
+                            (VP (VBD claimed)
+                              (SBAR
+                                (S
+                                  (VP (VBD was)
+                                    (NP (PRP$ his) (JJ 100th) (NN birthday))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Until
+	1	his
+			coref:	IDENT			0	1-1	his 
+			coref:	IDENT			1	1-2	his death 
+	2	death
+			sense:	death.n.01
+	3	,
+	4	Martin
+			coref:	IDENT			2	4-4	Martin 
+			name:	PERSON				4-4	Martin 
+	5	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		5-5	worked 
+			N-ARGM-TMP		0-2	Until his death 
+			N-ARG-A0		4-4	Martin 
+			N-ARG-A2		6-18	for Pimlico Plumbers , a well - known plumbing company in southeast London 
+			N-ARG-A1		19-22	as a van cleaner 
+	6	for
+	7	Pimlico
+	8	Plumbers
+	9	,
+	10	a
+	11	well
+			sense:	well.r.02
+	12	-
+	13	known
+			sense:	know.v.04
+			prop:	know.01
+			V		13-13	known 
+			N-ARGM-EXT		11-11	well 
+			N-ARG-A1		14-15	plumbing company 
+	14	plumbing
+			sense:	plumbing.n.02
+	15	company
+			sense:	company.n.01
+	16	in
+	17	southeast
+			sense:	southeast.s.02
+	18	London
+			name:	CITY				18-18	London 
+	19	as
+	20	a
+	21	van
+			sense:	van.n.05
+	22	cleaner
+			name:	TITLE				22-22	cleaner 
+			sense:	cleaner.n.03
+	23	,
+	24	and
+	25	notably
+			sense:	notably.r.01
+	26	refused
+			sense:	refuse.v.01
+			prop:	refuse.01
+			V		26-26	refused 
+			N-ARGM-TMP		0-2	Until his death 
+			N-ARG-A0		4-4	Martin 
+			N-ARGM-ADV		25-25	notably 
+			N-ARG-A1		27-43	to take a day off on the day he celebrated what he claimed was his 100th birthday 
+	27	to
+	28	take
+			sense:	take.v.02
+			prop:	take.18
+			V		28-28	take 
+			N-ARG-A0		4-4	Martin 
+			N-ARG-A1		29-30	a day 
+			N-ARGM-TMP		32-43	on the day he celebrated what he claimed was his 100th birthday 
+	29	a
+			name:	DURATION				29-30	a day 
+	30	day
+			sense:	day.n.01
+	31	off
+	32	on
+	33	the
+			name:	DATE				33-34	the day 
+	34	day
+			sense:	day.n.01
+	35	he
+			coref:	IDENT			0	35-35	he 
+	36	celebrated
+			sense:	observe.v.06
+			prop:	celebrate.02
+			V		36-36	celebrated 
+			N-ARGM-TMP		33-34	the day 
+			N-ARG-A0		35-35	he 
+			N-ARG-A1		37-43	what he claimed was his 100th birthday 
+	37	what
+	38	he
+			coref:	IDENT			0	38-38	he 
+	39	claimed
+			sense:	claim.v.01
+			prop:	claim.01
+			V		39-39	claimed 
+			N-ARG-A0		38-38	he 
+			N-ARG-A1		40-43	was his 100th birthday 
+	40	was
+			sense:	be.v.02
+			prop:	be.01
+			V		40-40	was 
+			N-ARG-A1		37-37	what 
+			N-ARG-A2		41-43	his 100th birthday 
+	41	his
+			coref:	IDENT			0	41-41	his 
+	42	100th
+			name:	ORDINAL				42-42	100th 
+			sense:	hundredth.s.01
+	43	birthday
+			sense:	birthday.n.01
+	44	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also received coverage in the media for fending off an attack from a group of youths in 2007 ; his heroics were cited by the former Liberal Democrat leader Sir Menzies Campbell as " living proof of why people should not be written off once they pass retirement age " .
+
+
+Treebanked sentence:
+--------------------
+He also received coverage in the media for fending off an attack from a group of youths in 2007 ; his heroics were cited by the former Liberal Democrat leader Sir Menzies Campbell as " living proof of why people should not be written off once they pass retirement age " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (ADVP (RB also))
+      (VP (VBD received)
+        (NP (NN coverage))
+        (PP (IN in)
+          (NP (DT the) (NNS media)))
+        (PP (IN for)
+          (S
+            (VP (VBG fending)
+              (PRT (RP off))
+              (NP (DT an) (NN attack))
+              (PP (IN from)
+                (NP
+                  (NP (DT a) (NN group))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNS youths))
+                      (PP (IN in)
+                        (NP (CD 2007))))))))))))
+    (: ;)
+    (S
+      (NP (PRP$ his) (NNS heroics))
+      (VP (VBD were)
+        (VP (VBN cited)
+          (PP (IN by)
+            (NP (DT the)
+              (NML (JJ former)
+                (NML (NNP Liberal) (NNP Democrat))
+                (NN leader))
+              (NNP Sir) (NNP Menzies) (NNP Campbell)))
+          (PP (IN as)
+            (S (`` ")
+              (VP (VBG living)
+                (NP
+                  (NP (NN proof))
+                  (PP (IN of)
+                    (SBAR
+                      (WHADVP (WRB why))
+                      (S
+                        (NP (NNS people))
+                        (VP (MD should) (RB not)
+                          (VP (VB be)
+                            (VP (VBN written)
+                              (PRT (RP off))
+                              (SBAR (IN once)
+                                (S
+                                  (NP (PRP they))
+                                  (VP (VBP pass)
+                                    (NP (NN retirement) (NN age)))))))))))))
+              ('' "))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	also
+			sense:	besides.r.02
+	2	received
+			sense:	receive.v.02
+			prop:	receive.01
+			V		2-2	received 
+			N-ARG-A0		0-0	He 
+			N-ARGM-ADV		1-1	also 
+			N-ARG-A1		3-3	coverage 
+			N-ARGM-LOC		4-6	in the media 
+			N-ARGM-CAU		7-18	for fending off an attack from a group of youths in 2007 
+	3	coverage
+			sense:	coverage.n.03
+	4	in
+	5	the
+	6	media
+	7	for
+	8	fending
+			sense:	resist.v.04
+			prop:	fend.02
+			V		8-8	fending 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		10-16	an attack from a group of youths 
+			N-ARGM-TMP		17-18	in 2007 
+	9	off
+	10	an
+	11	attack
+			name:	CAUSE_OF_DEATH				11-11	attack 
+			sense:	attack.n.05
+	12	from
+	13	a
+	14	group
+			sense:	group.n.01
+	15	of
+	16	youths
+			sense:	young_person.n.01
+	17	in
+	18	2007
+			name:	DATE				18-18	2007 
+	19	;
+	20	his
+			coref:	IDENT			0	20-20	his 
+	21	heroics
+			sense:	heroics.n.01
+	22	were
+			sense:	be.v.01
+			prop:	be.03
+			V		22-22	were 
+	23	cited
+			sense:	mention.v.01
+			prop:	cite.01
+			V		23-23	cited 
+			N-ARG-A1		20-21	his heroics 
+			N-ARG-A0		24-32	by the former Liberal Democrat leader Sir Menzies Campbell 
+			N-ARG-A2		33-50	as " living proof of why people should not be written off once they pass retirement age " 
+	24	by
+	25	the
+	26	former
+			sense:	erstwhile.s.01
+	27	Liberal
+			name:	ORGANIZATION				27-28	Liberal Democrat 
+	28	Democrat
+	29	leader
+			name:	TITLE				29-29	leader 
+			sense:	leader.n.01
+	30	Sir
+	31	Menzies
+			name:	PERSON				31-32	Menzies Campbell 
+	32	Campbell
+	33	as
+	34	"
+	35	living
+			sense:	be.v.11
+			prop:	live.01
+			V		35-35	living 
+			N-ARG-A0		36-36	proof 
+	36	proof
+			sense:	proof.n.01
+	37	of
+	38	why
+	39	people
+			sense:	person.n.01
+	40	should
+	41	not
+			sense:	not.r.01
+	42	be
+			sense:	be.v.01
+			prop:	be.03
+			V		42-42	be 
+	43	written
+			sense:	write.v.02
+			prop:	write.02
+			V		43-43	written 
+			N-ARGM-CAU		38-38	why 
+			N-ARG-A1		39-39	people 
+			N-ARGM-MOD		40-40	should 
+			N-ARGM-NEG		41-41	not 
+			N-ARGM-TMP		45-49	once they pass retirement age 
+	44	off
+	45	once
+			name:	DATE				45-45	once 
+	46	they
+	47	pass
+			sense:	die.v.01
+			prop:	pass.02
+			V		47-47	pass 
+			N-ARG-A0		46-46	they 
+			N-ARG-A1		48-49	retirement age 
+	48	retirement
+			sense:	retirement.n.01
+	49	age
+			sense:	age.n.03
+	50	"
+	51	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Martin stated that he would not retire from working .
+
+
+Treebanked sentence:
+--------------------
+Martin stated that he would not retire from working . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Martin))
+    (VP (VBD stated)
+      (SBAR (IN that)
+        (S
+          (NP (PRP he))
+          (VP (MD would) (RB not)
+            (VP (VB retire)
+              (PP (IN from)
+                (S
+                  (VP (VBG working)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Martin
+			coref:	IDENT			2	0-0	Martin 
+			name:	PERSON				0-0	Martin 
+	1	stated
+			sense:	state.v.01
+			prop:	state.01
+			V		1-1	stated 
+			N-ARG-A0		0-0	Martin 
+			N-ARG-A1		2-8	that he would not retire from working 
+	2	that
+	3	he
+			coref:	IDENT			0	3-3	he 
+	4	would
+	5	not
+			sense:	not.r.01
+	6	retire
+			sense:	retire.v.01
+			prop:	retire.01
+			V		6-6	retire 
+			N-ARG-A0		3-3	he 
+			N-ARGM-MOD		4-4	would 
+			N-ARGM-NEG		5-5	not 
+			N-ARG-A1		7-8	from working 
+	7	from
+	8	working
+			sense:	work.v.02
+			prop:	work.01
+			V		8-8	working 
+			N-ARG-A0		3-3	he 
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Doubts have been raised about all of Martin 's historical claims , including his age , which may have in truth been 97 at the time of his death .
+
+
+Treebanked sentence:
+--------------------
+Doubts have been raised about all of Martin 's historical claims , including his age , which may have in truth been 97 at the time of his death . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNS Doubts))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBN raised)
+          (NP
+            (NP
+              (QP (RB about) (DT all)))
+            (PP (IN of)
+              (NP
+                (NP (NNP Martin) (POS 's))
+                (JJ historical) (NNS claims)))
+            (, ,)
+            (PP (VBG including)
+              (NP
+                (NP (PRP$ his) (NN age))
+                (, ,)
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (MD may)
+                      (VP (VB have)
+                        (PP (IN in)
+                          (NP
+                            (NP (NN truth))
+                            (VP (VBN been)
+                              (NP
+                                (NP (CD 97))
+                                (PP (IN at)
+                                  (NP
+                                    (NP (DT the) (NN time))
+                                    (PP (IN of)
+                                      (NP (PRP$ his) (NN death)))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Doubts
+			sense:	doubt.n.02
+	1	have
+			sense:	have.v.11
+			prop:	have.01
+			V		1-1	have 
+	2	been
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	been 
+	3	raised
+			sense:	raise.v.03
+			prop:	raise.01
+			V		3-3	raised 
+			N-ARG-A1		0-0	Doubts 
+	4	about
+			sense:	approximately.r.01
+	5	all
+	6	of
+	7	Martin
+			coref:	IDENT			2	7-8	Martin 's 
+			name:	PERSON				7-7	Martin 
+	8	's
+	9	historical
+			sense:	historic.s.01
+	10	claims
+			sense:	claim.n.02
+	11	,
+	12	including
+			sense:	include.v.01
+			prop:	include.01
+			V		12-12	including 
+			N-ARG-A2		5-6	all of 
+			N-ARG-A2		7-10	Martin 's historical claims 
+			N-ARG-A1		13-28	his age , which may have in truth been 97 at the time of his death 
+	13	his
+			coref:	IDENT			2	13-13	his 
+	14	age
+			sense:	age.n.01
+	15	,
+	16	which
+	17	may
+	18	have
+			sense:	have.v.01
+			prop:	have.01
+			V		18-18	have 
+	19	in
+	20	truth
+			sense:	truth.n.02
+	21	been
+			sense:	equal.v.01
+			prop:	be.01
+			V		21-21	been 
+			N-ARG-A1		13-14	his age 
+			R-ARG-A1		16-16	which 
+			N-ARGM-MOD		17-17	may 
+			N-ARGM-ADV		19-20	in truth 
+			N-ARG-A2		22-22	97 
+			N-ARGM-TMP		23-28	at the time of his death 
+	22	97
+			name:	NUMBER				22-22	97 
+	23	at
+	24	the
+	25	time
+			name:	DATE				25-25	time 
+			sense:	time.n.01
+	26	of
+	27	his
+			coref:	IDENT			1	27-28	his death 
+			coref:	IDENT			2	27-27	his 
+	28	death
+			sense:	death.n.01
+	29	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.17-17	he 
+				2.1-1	his 
+				2.35-35	he 
+				2.38-38	he 
+				2.41-41	his 
+				3.0-0	He 
+				3.20-20	his 
+				4.3-3	he 
+	Chain 1 (IDENT)
+				2.1-2	his death 
+				5.27-28	his death 
+	Chain 2 (IDENT)
+				5.7-8	Martin 's 
+				0.5-5	Martin 
+				2.4-4	Martin 
+				4.0-0	Martin 
+				5.13-13	his 
+				5.27-27	his 
+

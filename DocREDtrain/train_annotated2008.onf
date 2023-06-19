@@ -1,0 +1,689 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Christiane Mercelis ( born 5 October 1931 ) is a Belgian former tennis player active in the 1950s and 1960s .
+
+
+Treebanked sentence:
+--------------------
+Christiane Mercelis ( born 5 October 1931 ) is a Belgian former tennis player active in the 1950s and 1960s . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Christiane) (NNP Mercelis))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 5))
+        (NP-TMP (NNP October) (CD 1931)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ Belgian)
+          (NML (JJ former) (NN tennis))
+          (NN player))
+        (ADJP (JJ active)
+          (PP (IN in)
+            (NP (DT the) (NNS 1950s)
+              (CC and)
+              (NNS 1960s))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Christiane
+			name:	PERSON				0-1	Christiane Mercelis 
+	1	Mercelis
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Christiane Mercelis 
+			N-ARGM-TMP		4-6	5 October 1931 
+	4	5
+			name:	DATE				4-6	5 October 1931 
+	5	October
+	6	1931
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	Christiane Mercelis ( born 5 October 1931 ) 
+			N-ARG-A2		9-19	a Belgian former tennis player active in the 1950s and 1960s 
+	9	a
+	10	Belgian
+			name:	NATIONALITY				10-10	Belgian 
+	11	former
+			sense:	erstwhile.s.01
+	12	tennis
+			name:	TITLE				12-13	tennis player 
+			sense:	tennis.n.01
+	13	player
+			sense:	player.n.01
+	14	active
+			sense:	active.s.04
+	15	in
+	16	the
+			name:	DATE				16-17	the 1950s 
+	17	1950s
+	18	and
+	19	1960s
+			name:	DATE				19-19	1960s 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1949 , Mercelis won the Girls ' Singles of the Wimbledon Championships .
+
+
+Treebanked sentence:
+--------------------
+In 1949 , Mercelis won the Girls ' Singles of the Wimbledon Championships . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1949)))
+    (, ,)
+    (NP (NNP Mercelis))
+    (VP (VBD won)
+      (NP
+        (NP
+          (NP (DT the) (NNS Girls) (POS '))
+          (NNS Singles))
+        (PP (IN of)
+          (NP (DT the) (NNP Wimbledon) (NNPS Championships)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1949
+			name:	DATE				1-1	1949 
+	2	,
+	3	Mercelis
+			name:	PERSON				3-3	Mercelis 
+	4	won
+			sense:	win.v.01
+			prop:	win.01
+			V		4-4	won 
+			N-ARGM-TMP		0-1	In 1949 
+			N-ARG-A0		3-3	Mercelis 
+			N-ARG-A1		5-12	the Girls ' Singles of the Wimbledon Championships 
+	5	the
+	6	Girls
+			sense:	girl.n.01
+	7	'
+	8	Singles
+			sense:	singles.n.02
+	9	of
+	10	the
+	11	Wimbledon
+			name:	MISC				11-12	Wimbledon Championships 
+	12	Championships
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She competed every year at Wimbledon between 1951 and 1968 , and at the French Open between 1952 and 1965 .
+
+
+Treebanked sentence:
+--------------------
+She competed every year at Wimbledon between 1951 and 1968 , and at the French Open between 1952 and 1965 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD competed)
+      (NP-TMP (DT every) (NN year))
+      (PP
+        (PP (IN at)
+          (NP
+            (NP (NNP Wimbledon))
+            (PP (IN between)
+              (NP (CD 1951)
+                (CC and)
+                (CD 1968)))))
+        (, ,)
+        (CC and)
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP French) (NNP Open))
+            (PP (IN between)
+              (NP (CD 1952)
+                (CC and)
+                (CD 1965)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	competed
+			sense:	compete.v.01
+			prop:	compete.01
+			V		1-1	competed 
+			N-ARG-A0		0-0	She 
+			N-ARGM-TMP		2-3	every year 
+			N-ARGM-LOC		4-5	at Wimbledon 
+			N-ARGM-TMP		6-9	between 1951 and 1968 
+	2	every
+			name:	SET				2-3	every year 
+	3	year
+			sense:	year.n.01
+	4	at
+	5	Wimbledon
+	6	between
+	7	1951
+			name:	DATE				7-9	1951 and 1968 
+	8	and
+	9	1968
+	10	,
+	11	and
+			coref:	IDENT			1	11-19	and at the French Open between 1952 and 1965 
+	12	at
+	13	the
+	14	French
+			name:	NATIONALITY				14-14	French 
+	15	Open
+			name:	MISC				15-15	Open 
+	16	between
+	17	1952
+			name:	DATE				17-19	1952 and 1965 
+	18	and
+	19	1965
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the French Open , she reached the quarter - finals in 1957 .
+
+
+Treebanked sentence:
+--------------------
+In the French Open , she reached the quarter - finals in 1957 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NNP French) (NNP Open)))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBD reached)
+      (NP (DT the) (NN quarter) (HYPH -) (NNS finals))
+      (PP (IN in)
+        (NP (CD 1957))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+			coref:	IDENT			1	1-3	the French Open 
+	2	French
+			name:	NATIONALITY				2-2	French 
+	3	Open
+			name:	MISC				3-3	Open 
+	4	,
+	5	she
+	6	reached
+			sense:	reach.v.02
+			prop:	reach.01
+			V		6-6	reached 
+			N-ARGM-LOC		0-3	In the French Open 
+			N-ARG-A0		5-5	she 
+			N-ARG-A1		7-10	the quarter - finals 
+			N-ARGM-TMP		11-12	in 1957 
+	7	the
+			name:	DATE				7-8	the quarter 
+	8	quarter
+			sense:	one-fourth.n.01
+	9	-
+	10	finals
+			sense:	final.n.01
+	11	in
+	12	1957
+			name:	DATE				12-12	1957 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mercelis played for Belgium in the Federation Cup from 1963 to 1964 and from 1966 to 1969 , losing all five singles matches , and winning two of her eight doubles matches .
+
+
+Treebanked sentence:
+--------------------
+Mercelis played for Belgium in the Federation Cup from 1963 to 1964 and from 1966 to 1969 , losing all five singles matches , and winning two of her eight doubles matches . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NNP Mercelis))
+      (VP (VBD played)
+        (PP (IN for)
+          (NP
+            (NP (NNP Belgium))
+            (PP (IN in)
+              (NP (DT the) (NNP Federation) (NNP Cup)))))
+        (PP (IN from)
+          (NP (CD 1963)))
+        (PP
+          (PP (IN to)
+            (NP (CD 1964)))
+          (CC and)
+          (PP (IN from)
+            (NP (CD 1966))))
+        (PP (IN to)
+          (NP (CD 1969)))
+        (, ,)
+        (S
+          (VP (VBG losing)
+            (NP (DT all) (CD five) (NNS singles))
+            (NP (NNS matches))))))
+    (, ,)
+    (CC and)
+    (S
+      (S
+        (VP (VBG winning)
+          (NP
+            (NP (CD two))
+            (PP (IN of)
+              (NP (PRP$ her) (CD eight))))))
+      (VP (VBZ doubles)
+        (NP (NNS matches))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mercelis
+			name:	PERSON				0-0	Mercelis 
+	1	played
+			sense:	play.v.01
+			prop:	play.01
+			V		1-1	played 
+			N-ARG-A0		0-0	Mercelis 
+			N-ARGM-ADV		2-3	for Belgium 
+			N-ARGM-LOC		4-7	in the Federation Cup 
+			N-ARGM-TMP		8-11	from 1963 to 1964 
+			N-ARGM-TMP		12-16	and from 1966 to 1969 
+			N-ARGM-ADV		18-31	losing all five singles matches , and winning two of her eight doubles matches 
+	2	for
+	3	Belgium
+			coref:	IDENT			0	3-3	Belgium 
+			name:	COUNTRY				3-3	Belgium 
+	4	in
+	5	the
+	6	Federation
+			name:	MISC				6-7	Federation Cup 
+	7	Cup
+	8	from
+	9	1963
+			name:	DATE				9-11	1963 to 1964 
+	10	to
+	11	1964
+	12	and
+	13	from
+	14	1966
+			name:	DATE				14-16	1966 to 1969 
+	15	to
+	16	1969
+	17	,
+	18	losing
+			sense:	lose.v.02
+			prop:	lose.03
+			V		18-18	losing 
+			N-ARG-A0		0-0	Mercelis 
+			N-ARG-A1		19-22	all five singles matches 
+	19	all
+	20	five
+			name:	NUMBER				20-20	five 
+	21	singles
+			sense:	singles.n.02
+	22	matches
+			sense:	match.n.02
+	23	,
+	24	and
+	25	winning
+			sense:	win.v.01
+			prop:	win.01
+			V		25-25	winning 
+			N-ARG-A0		0-0	Mercelis 
+			N-ARG-A1		26-31	two of her eight doubles matches 
+	26	two
+			name:	NUMBER				26-26	two 
+	27	of
+	28	her
+	29	eight
+			name:	NUMBER				29-29	eight 
+	30	doubles
+			sense:	double.v.04
+			prop:	double.02
+			V		30-30	doubles 
+	31	matches
+			sense:	match.n.02
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She is the oldest player to have played for Belgium at 37 years 231 days in her last doubles match against South Africa on 24 May 1969 , which she won partnering Michele Kahn .
+
+
+Treebanked sentence:
+--------------------
+She is the oldest player to have played for Belgium at 37 years 231 days in her last doubles match against South Africa on 24 May 1969 , which she won partnering Michele Kahn . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJS oldest) (NN player))
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (VP (VBN played)
+                (SBAR (IN for)
+                  (S
+                    (NP (NNP Belgium))
+                    (VP
+                      (ADVP (IN at)
+                        (NP (CD 37) (NNS years))
+                        (PP
+                          (NP (CD 231) (NNS days))
+                          (IN in)
+                          (NP (PRP$ her) (JJ last))))
+                      (VBZ doubles)
+                      (NP
+                        (NP (NN match))
+                        (PP (IN against)
+                          (NP
+                            (NP (NNP South) (NNP Africa))
+                            (PP (IN on)
+                              (NP (CD 24))))))
+                      (NP-TMP (NNP May) (CD 1969))
+                      (, ,)
+                      (SBAR
+                        (WHNP (WDT which))
+                        (S
+                          (NP (PRP she))
+                          (VP (VBD won)
+                            (S
+                              (VP (VBG partnering)
+                                (NP (NNP Michele) (NNP Kahn))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-33	the oldest player to have played for Belgium at 37 years 231 days in her last doubles match against South Africa on 24 May 1969 , which she won partnering Michele Kahn 
+	2	the
+	3	oldest
+			sense:	old.a.01
+	4	player
+			sense:	player.n.01
+	5	to
+	6	have
+			sense:	have.v.01
+			prop:	have.01
+			V		6-6	have 
+	7	played
+			sense:	play.v.01
+			prop:	play.01
+			V		7-7	played 
+			N-ARG-A0		2-4	the oldest player 
+			N-ARGM-ADV		8-9	for Belgium 
+			N-ARGM-LOC		15-33	in her last doubles match against South Africa on 24 May 1969 , which she won partnering Michele Kahn 
+	8	for
+	9	Belgium
+			coref:	IDENT			0	9-9	Belgium 
+			name:	COUNTRY				9-9	Belgium 
+	10	at
+	11	37
+			name:	DURATION				11-14	37 years 231 days 
+	12	years
+			sense:	year.n.01
+	13	231
+	14	days
+			sense:	day.n.01
+	15	in
+	16	her
+	17	last
+			sense:	concluding.s.01
+	18	doubles
+			sense:	double.v.04
+			prop:	double.02
+			V		18-18	doubles 
+			N-ARGM-TMP		17-17	last 
+	19	match
+			sense:	match.n.02
+	20	against
+	21	South
+			name:	COUNTRY				21-22	South Africa 
+	22	Africa
+	23	on
+	24	24
+			name:	DATE				24-26	24 May 1969 
+	25	May
+	26	1969
+	27	,
+	28	which
+	29	she
+	30	won
+			sense:	win.v.01
+			prop:	win.01
+			V		30-30	won 
+			N-ARG-A1		16-22	her last doubles match against South Africa 
+			R-ARG-A1		28-28	which 
+			N-ARG-A0		29-29	she 
+			N-ARGM-MNR		31-33	partnering Michele Kahn 
+	31	partnering
+			sense:	partner.v.02
+			prop:	partner.01
+			V		31-31	partnering 
+			N-ARG-A0		29-29	she 
+			N-ARG-A1		32-33	Michele Kahn 
+	32	Michele
+			name:	PERSON				32-33	Michele Kahn 
+	33	Kahn
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the Belgian Tennis Championships .
+
+
+Treebanked sentence:
+--------------------
+In the Belgian Tennis Championships . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (PP (IN In)
+      (NP (DT the) (JJ Belgian) (NN Tennis)))
+    (NP (NNPS Championships))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+	2	Belgian
+			name:	NATIONALITY				2-2	Belgian 
+	3	Tennis
+			name:	MISC				3-4	Tennis Championships 
+			sense:	tennis.n.01
+	4	Championships
+	5	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+she won 13 singles titles , 14 women 's doubles titles , and 16 mixed doubles titles , of which 13 were partnering Jacky Brichant .
+
+
+Treebanked sentence:
+--------------------
+she won 13 singles titles , 14 women 's doubles titles , and 16 mixed doubles titles , of which 13 were partnering Jacky Brichant . 
+
+Tree:
+-----
+(ROOT
+  (SINV
+    (S
+      (NP (PRP she))
+      (VP (VBD won)
+        (NP
+          (NP
+            (NP (CD 13) (NNS singles))
+            (NP (NNS titles)))
+          (, ,)
+          (NP
+            (NP (CD 14) (NNS women) (POS 's))
+            (NML
+              (S
+                (VP (VBZ doubles)
+                  (NP (NNS titles))))))
+          (, ,)
+          (CC and)
+          (NP (CD 16) (VBN mixed)))))
+    (VP (VBZ doubles))
+    (NP
+      (NP (NNS titles))
+      (, ,)
+      (SBAR
+        (WHPP (IN of)
+          (WHNP (WDT which)))
+        (S
+          (NP (CD 13))
+          (VP (VBD were)
+            (VP (VBG partnering)
+              (NP (NNP Jacky) (NNP Brichant)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	she
+	1	won
+			sense:	win.v.01
+			prop:	win.01
+			V		1-1	won 
+			N-ARG-A0		0-0	she 
+			N-ARG-A1		2-24	13 singles titles , 14 women 's doubles titles , and 16 mixed doubles titles , of which 13 were partnering Jacky Brichant 
+	2	13
+			name:	NUMBER				2-2	13 
+	3	singles
+			sense:	singles.n.02
+	4	titles
+			sense:	championship.n.01
+	5	,
+	6	14
+			name:	NUMBER				6-6	14 
+	7	women
+			sense:	woman.n.01
+	8	's
+	9	doubles
+			sense:	double.v.04
+			prop:	double.02
+			V		9-9	doubles 
+			N-ARG-A0		7-8	women 's 
+	10	titles
+			sense:	championship.n.01
+	11	,
+	12	and
+	13	16
+			name:	NUMBER				13-13	16 
+	14	mixed
+			sense:	mix.v.05
+			prop:	mime.01
+			V		14-14	mixed 
+			N-ARG-A1		15-15	doubles 
+	15	doubles
+			sense:	double.v.04
+			prop:	double.02
+			V		15-15	doubles 
+			N-ARG-A0		14-14	mixed 
+			N-ARGM-ADJ		18-18	of 
+	16	titles
+			sense:	championship.n.01
+	17	,
+	18	of
+	19	which
+	20	13
+			name:	NUMBER				20-20	13 
+	21	were
+			sense:	be.v.05
+			prop:	be.03
+			V		21-21	were 
+	22	partnering
+			sense:	partner.v.02
+			prop:	partner.01
+			V		22-22	partnering 
+			N-ARG-A0		20-20	13 
+			N-ARG-A1		23-24	Jacky Brichant 
+	23	Jacky
+			name:	PERSON				23-24	Jacky Brichant 
+	24	Brichant
+	25	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.3-3	Belgium 
+				5.9-9	Belgium 
+	Chain 1 (IDENT)
+				2.11-19	and at the French Open between 1952 and 1965 
+				3.1-3	the French Open 
+

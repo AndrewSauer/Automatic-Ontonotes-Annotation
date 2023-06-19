@@ -1,0 +1,584 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A township high school district is a type of school district in the U.S. state of Illinois .
+
+
+Treebanked sentence:
+--------------------
+A township high school district is a type of school district in the U.S. state of Illinois . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT A)
+      (NML (NN township) (JJ high) (NN school))
+      (NN district))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN type))
+        (PP (IN of)
+          (NP
+            (NP (NN school) (NN district))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NNP U.S.) (NN state))
+                (PP (IN of)
+                  (NP (NNP Illinois)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+			coref:	IDENT			1	0-4	A township high school district 
+	1	township
+			sense:	township.n.01
+	2	high
+			sense:	high.a.01
+	3	school
+			sense:	school.n.01
+	4	district
+			sense:	district.n.01
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	A township high school district 
+			N-ARG-A2		6-10	a type of school district 
+			N-ARGM-LOC		11-16	in the U.S. state of Illinois 
+	6	a
+	7	type
+			sense:	type.n.01
+	8	of
+	9	school
+			sense:	school.n.01
+	10	district
+			sense:	district.n.01
+	11	in
+	12	the
+	13	U.S.
+			name:	COUNTRY				13-13	U.S. 
+	14	state
+			sense:	state.n.01
+	15	of
+	16	Illinois
+			name:	STATE_OR_PROVINCE				16-16	Illinois 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Despite the name , such a district does not necessarily follow township boundaries anymore .
+
+
+Treebanked sentence:
+--------------------
+Despite the name , such a district does not necessarily follow township boundaries anymore . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Despite)
+      (NP (DT the) (NN name)))
+    (, ,)
+    (NP (PDT such) (DT a) (NN district))
+    (VP (VBZ does) (RB not)
+      (ADVP (RB necessarily))
+      (VP (VB follow)
+        (NP (NN township) (NNS boundaries))
+        (ADVP (RB anymore))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Despite
+	1	the
+	2	name
+			sense:	name.n.01
+	3	,
+	4	such
+			coref:	IDENT			1	4-6	such a district 
+	5	a
+	6	district
+			sense:	district.n.01
+	7	does
+			sense:	make.v.01
+			prop:	do.01
+			V		7-7	does 
+	8	not
+			sense:	not.r.01
+	9	necessarily
+			sense:	inevitably.r.01
+	10	follow
+			sense:	follow.v.04
+			prop:	follow.02
+			V		10-10	follow 
+			N-ARGM-ADV		0-2	Despite the name 
+			N-ARG-A0		4-6	such a district 
+			N-ARGM-NEG		8-8	not 
+			N-ARGM-ADV		9-9	necessarily 
+			N-ARG-A1		11-12	township boundaries 
+			N-ARGM-TMP		13-13	anymore 
+	11	township
+			sense:	township.n.01
+	12	boundaries
+			sense:	boundary.n.02
+	13	anymore
+			sense:	anymore.r.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+( For example , District 211 and District 214 , named below , each cover parts of Palatine Township in Cook County . )
+
+
+Treebanked sentence:
+--------------------
+( For example , District 211 and District 214 , named below , each cover parts of Palatine Township in Cook County . ) 
+
+Tree:
+-----
+(ROOT
+  (S (-LRB- -LRB-)
+    (S
+      (PP (IN For)
+        (NP
+          (NP
+            (NP (NN example))
+            (, ,)
+            (NP (NNP District) (CD 211))
+            (CC and)
+            (NP (NNP District) (CD 214)))
+          (, ,)
+          (VP (VBN named)
+            (ADVP (RB below))
+            (, ,)
+            (NP
+              (NP (DT each) (NN cover) (NNS parts))
+              (PP (IN of)
+                (NP
+                  (NP (NNP Palatine) (NNP Township))
+                  (PP (IN in)
+                    (NP (NNP Cook) (NNP County))))))))))
+    (. .) (-RRB- -RRB-)))
+
+
+Leaves:
+-------
+	0	(
+	1	For
+	2	example
+			sense:	example.n.01
+	3	,
+	4	District
+	5	211
+			name:	NUMBER				5-5	211 
+	6	and
+	7	District
+	8	214
+			name:	NUMBER				8-8	214 
+	9	,
+	10	named
+			sense:	name.v.05
+			prop:	name.01
+			V		10-10	named 
+			N-ARG-A1		4-8	District 211 and District 214 
+			N-ARGM-LOC		11-11	below 
+	11	below
+			sense:	below.r.02
+	12	,
+	13	each
+	14	cover
+			sense:	screen.n.04
+	15	parts
+			sense:	part.n.01
+	16	of
+	17	Palatine
+			coref:	IDENT			2	17-18	Palatine Township 
+			name:	CITY				17-17	Palatine 
+	18	Township
+			name:	LOCATION				18-18	Township 
+	19	in
+	20	Cook
+			coref:	IDENT			0	20-21	Cook County 
+			name:	TITLE				20-20	Cook 
+	21	County
+			name:	LOCATION				21-21	County 
+	22	.
+	23	)
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Districts that use the name " Township High School District " and a number , but no further name , include : 
+
+
+Treebanked sentence:
+--------------------
+Districts that use the name " Township High School District " and a number , but no further name , include : Township High School District 113 — the Lake County district of Deerfield High School and Highland Park High School Township High School District 211 — the Cook County district of James B. Conant High School , Fremd High School , Hoffman Estates High School , Palatine High School , and Schaumburg High School , and formerly known as Palatine Township High School District 211 Township High School District 214 — the Cook County district of Elk Grove and Wheeling townships ( and a part of Palatine Township ) , and containing Buffalo Grove High School , Elk Grove High School , John Hersey High School , Prospect High School , Rolling Meadows High School , and Wheeling High School , and formerly Arlington High School and Forest View High School 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNS Districts))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBP use)
+            (NP
+              (NP
+                (NP (DT the) (NN name))
+                (SBAR
+                  (S
+                    (NP (`` ")
+                      (NP
+                        (NP (NNP Township) (NNP High) (NNP School) (NNP District) ('' "))
+                        (CC and)
+                        (NP (DT a) (NN number)))
+                      (, ,)
+                      (CC but)
+                      (NP (DT no) (JJ further) (NN name))
+                      (, ,))
+                    (VP (VBP include)))))
+              (: :)
+              (NP
+                (NP
+                  (NML (NNP Township) (NNP High))
+                  (NNP School) (NNP District))
+                (NP-TMP (CD 113)))
+              (, —)
+              (NP
+                (NP (DT the)
+                  (NML (NNP Lake) (NNP County))
+                  (NN district))
+                (PP (IN of)
+                  (NP
+                    (NML
+                      (NML (NNP Deerfield) (NNP High) (NNP School))
+                      (CC and)
+                      (NML (NNP Highland) (NNP Park) (NNP High) (NNP School)))
+                    (NNP Township) (NNP High) (NNP School) (NNP District) (CD 211))))
+              (, —)
+              (NP
+                (NP (DT the)
+                  (NML (NNP Cook) (NNP County))
+                  (NN district))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP James) (NNP B.) (NNP Conant) (NNP High) (NNP School))
+                    (, ,)
+                    (NP (NNP Fremd) (NNP High) (NNP School))
+                    (, ,)
+                    (NP (NNP Hoffman) (NNP Estates) (NNP High) (NNP School))
+                    (, ,)
+                    (NP (NNP Palatine) (NNP High) (NNP School))
+                    (, ,)
+                    (CC and)
+                    (NP (NNP Schaumburg) (NNP High) (NNP School)))))
+              (, ,)
+              (CC and)
+              (ADVP (RB formerly)))))))
+    (VP
+      (VP (VBN known)
+        (PP (IN as)
+          (NP
+            (NP (NNP Palatine)
+              (NML (NNP Township) (NNP High) (NNP School) (NNP District))
+              (CD 211)
+              (NML (NNP Township) (NNP High))
+              (NML (NNP School) (NNP District))
+              (NML (CD 214)))
+            (, —)
+            (NP
+              (NP
+                (NP (DT the)
+                  (NML (NNP Cook) (NNP County))
+                  (NN district))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP Elk) (NNP Grove))
+                    (CC and)
+                    (NP (NNP Wheeling) (NNS townships)))))
+              (-LRB- -LRB-)
+              (CC and)
+              (NP
+                (NP (DT a) (NN part))
+                (PP (IN of)
+                  (NP (NNP Palatine) (NNP Township))))
+              (-RRB- -RRB-))
+            (, ,))))
+      (CC and)
+      (VP (VBG containing)
+        (NP
+          (NP (NNP Buffalo) (NNP Grove) (NNP High) (NNP School))
+          (, ,)
+          (NP (NNP Elk) (NNP Grove) (NNP High) (NNP School))
+          (, ,)
+          (NP (NNP John) (NNP Hersey) (NNP High) (NNP School))
+          (, ,)
+          (NP (NNP Prospect) (NNP High) (NNP School))
+          (, ,)
+          (NP (NNP Rolling) (NNP Meadows) (NNP High) (NNP School))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (NNP Wheeling) (NNP High) (NNP School))
+            (, ,)
+            (CC and)
+            (RB formerly)
+            (NP
+              (NML
+                (NML (NNP Arlington) (NNP High) (NNP School))
+                (CC and)
+                (NML (NNP Forest) (NNP View)))
+              (NNP High) (NNP School))))))))
+
+
+Leaves:
+-------
+	0	Districts
+			sense:	district.n.01
+	1	that
+	2	use
+			sense:	use.v.01
+			prop:	use.01
+			V		2-2	use 
+			N-ARG-A0		0-0	Districts 
+			R-ARG-A0		1-1	that 
+			N-ARG-A1		3-19	the name " Township High School District " and a number , but no further name , 
+	3	the
+	4	name
+			sense:	name.n.01
+	5	"
+	6	Township
+	7	High
+	8	School
+	9	District
+	10	"
+	11	and
+	12	a
+	13	number
+			sense:	number.n.02
+	14	,
+	15	but
+	16	no
+	17	further
+			sense:	further.s.01
+	18	name
+			sense:	name.n.01
+	19	,
+	20	include
+			sense:	include.v.01
+			prop:	include.01
+			V		20-20	include 
+			N-ARG-A2		0-19	Districts that use the name " Township High School District " and a number , but no further name , 
+			N-ARG-A1		22-151	Township High School District 113 — the Lake County district of Deerfield High School and Highland Park High School Township High School District 211 — the Cook County district of James B. Conant High School , Fremd High School , Hoffman Estates High School , Palatine High School , and Schaumburg High School , and formerly known as Palatine Township High School District 211 Township High School District 214 — the Cook County district of Elk Grove and Wheeling townships ( and a part of Palatine Township ) , and containing Buffalo Grove High School , Elk Grove High School , John Hersey High School , Prospect High School , Rolling Meadows High School , and Wheeling High School , and formerly Arlington High School and Forest View High School 
+	21	:
+	22	Township
+			name:	LOCATION				22-30	Township High School District 113 — the Lake County 
+	23	High
+	24	School
+	25	District
+	26	113
+	27	—
+	28	the
+	29	Lake
+	30	County
+	31	district
+			sense:	district.n.01
+	32	of
+	33	Deerfield
+			name:	ORGANIZATION				33-35	Deerfield High School 
+	34	High
+	35	School
+	36	and
+	37	Highland
+			name:	CITY				37-38	Highland Park 
+	38	Park
+	39	High
+			name:	LOCATION				39-44	High School Township High School District 
+	40	School
+	41	Township
+	42	High
+	43	School
+	44	District
+	45	211
+			name:	NUMBER				45-45	211 
+	46	—
+	47	the
+	48	Cook
+			coref:	IDENT			0	48-49	Cook County 
+			name:	TITLE				48-48	Cook 
+	49	County
+			name:	LOCATION				49-49	County 
+	50	district
+			sense:	district.n.01
+	51	of
+	52	James
+			name:	ORGANIZATION				52-56	James B. Conant High School 
+	53	B.
+	54	Conant
+	55	High
+	56	School
+	57	,
+	58	Fremd
+			name:	ORGANIZATION				58-60	Fremd High School 
+	59	High
+	60	School
+	61	,
+	62	Hoffman
+			name:	ORGANIZATION				62-65	Hoffman Estates High School 
+	63	Estates
+	64	High
+	65	School
+	66	,
+	67	Palatine
+			name:	ORGANIZATION				67-69	Palatine High School 
+	68	High
+	69	School
+	70	,
+	71	and
+	72	Schaumburg
+			name:	ORGANIZATION				72-74	Schaumburg High School 
+	73	High
+	74	School
+	75	,
+	76	and
+	77	formerly
+			sense:	once.r.03
+	78	known
+			sense:	know.v.04
+			prop:	know.01
+			V		78-78	known 
+			N-ARG-A1		47-74	the Cook County district of James B. Conant High School , Fremd High School , Hoffman Estates High School , Palatine High School , and Schaumburg High School 
+			N-ARGM-TMP		77-77	formerly 
+			N-ARG-A2		79-109	as Palatine Township High School District 211 Township High School District 214 — the Cook County district of Elk Grove and Wheeling townships ( and a part of Palatine Township ) 
+	79	as
+	80	Palatine
+			name:	CITY				80-80	Palatine 
+	81	Township
+			name:	LOCATION				81-89	Township High School District 211 Township High School District 
+	82	High
+	83	School
+	84	District
+	85	211
+	86	Township
+	87	High
+	88	School
+	89	District
+	90	214
+			name:	NUMBER				90-90	214 
+	91	—
+	92	the
+	93	Cook
+			coref:	IDENT			0	93-94	Cook County 
+			name:	TITLE				93-93	Cook 
+	94	County
+			name:	LOCATION				94-94	County 
+	95	district
+			sense:	district.n.01
+	96	of
+	97	Elk
+			name:	CITY				97-98	Elk Grove 
+	98	Grove
+	99	and
+	100	Wheeling
+	101	townships
+			sense:	township.n.01
+	102	(
+	103	and
+	104	a
+	105	part
+			sense:	part.n.01
+	106	of
+	107	Palatine
+			coref:	IDENT			2	107-108	Palatine Township 
+			name:	CITY				107-107	Palatine 
+	108	Township
+			name:	LOCATION				108-108	Township 
+	109	)
+	110	,
+	111	and
+	112	containing
+			sense:	incorporate.v.02
+			prop:	contain.01
+			V		112-112	containing 
+			N-ARG-A0		0-18	Districts that use the name " Township High School District " and a number , but no further name 
+			N-ARG-A1		113-151	Buffalo Grove High School , Elk Grove High School , John Hersey High School , Prospect High School , Rolling Meadows High School , and Wheeling High School , and formerly Arlington High School and Forest View High School 
+	113	Buffalo
+			name:	ORGANIZATION				113-116	Buffalo Grove High School 
+	114	Grove
+	115	High
+	116	School
+	117	,
+	118	Elk
+			name:	ORGANIZATION				118-121	Elk Grove High School 
+	119	Grove
+	120	High
+	121	School
+	122	,
+	123	John
+			name:	ORGANIZATION				123-126	John Hersey High School 
+	124	Hersey
+	125	High
+	126	School
+	127	,
+	128	Prospect
+			name:	ORGANIZATION				128-130	Prospect High School 
+	129	High
+	130	School
+	131	,
+	132	Rolling
+			name:	ORGANIZATION				132-135	Rolling Meadows High School 
+	133	Meadows
+	134	High
+	135	School
+	136	,
+	137	and
+	138	Wheeling
+			name:	ORGANIZATION				138-140	Wheeling High School 
+	139	High
+	140	School
+	141	,
+	142	and
+	143	formerly
+			sense:	once.r.03
+	144	Arlington
+	145	High
+	146	School
+	147	and
+	148	Forest
+	149	View
+	150	High
+	151	School
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.20-21	Cook County 
+				3.48-49	Cook County 
+				3.93-94	Cook County 
+	Chain 1 (IDENT)
+				0.0-4	A township high school district 
+				1.4-6	such a district 
+	Chain 2 (IDENT)
+				2.17-18	Palatine Township 
+				3.107-108	Palatine Township 
+

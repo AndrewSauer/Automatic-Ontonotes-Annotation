@@ -1,0 +1,567 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+David Francis Barrow ( Athens , Georgia , November 14 , 1888 – 1970 ) was an American mathematician who introduced Barrow 's inequality in 1937 .
+
+
+Treebanked sentence:
+--------------------
+David Francis Barrow ( Athens , Georgia , November 14 , 1888 – 1970 ) was an American mathematician who introduced Barrow 's inequality in 1937 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP David) (NNP Francis) (NNP Barrow))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP Athens))
+        (, ,)
+        (NP
+          (NP (NNP Georgia) (, ,) (NNP November) (CD 14) (, ,) (CD 1888))
+          (PP (SYM –)
+            (NP (CD 1970)))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (JJ American) (NN mathematician))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD introduced)
+              (NP
+                (NP (NNP Barrow) (POS 's))
+                (NN inequality))
+              (PP (IN in)
+                (NP (CD 1937))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	David
+			coref:	IDENT			0	0-2	David Francis Barrow 
+			name:	PERSON				0-2	David Francis Barrow 
+	1	Francis
+	2	Barrow
+	3	(
+	4	Athens
+			name:	CITY				4-4	Athens 
+	5	,
+	6	Georgia
+			name:	STATE_OR_PROVINCE				6-6	Georgia 
+	7	,
+	8	November
+			name:	DATE				8-11	November 14 , 1888 
+	9	14
+	10	,
+	11	1888
+	12	–
+	13	1970
+			name:	DATE				13-13	1970 
+	14	)
+	15	was
+			sense:	be.v.02
+			prop:	be.01
+			V		15-15	was 
+			N-ARG-A1		0-14	David Francis Barrow ( Athens , Georgia , November 14 , 1888 – 1970 ) 
+			N-ARG-A2		16-25	an American mathematician who introduced Barrow 's inequality in 1937 
+	16	an
+	17	American
+			name:	NATIONALITY				17-17	American 
+	18	mathematician
+			name:	TITLE				18-18	mathematician 
+			sense:	mathematician.n.01
+	19	who
+	20	introduced
+			sense:	introduce.v.02
+			prop:	introduce.02
+			V		20-20	introduced 
+			N-ARG-A0		16-18	an American mathematician 
+			R-ARG-A0		19-19	who 
+			N-ARG-A1		21-23	Barrow 's inequality 
+			N-ARGM-TMP		24-25	in 1937 
+	21	Barrow
+			coref:	IDENT			0	21-22	Barrow 's 
+			name:	PERSON				21-21	Barrow 
+	22	's
+	23	inequality
+			sense:	inequality.n.01
+	24	in
+	25	1937
+			name:	DATE				25-25	1937 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Barrow 's father , David Crenshaw Barrow Jr. , was also a mathematician , and served as chancellor of the University of Georgia from 1906 to 1925 .
+
+
+Treebanked sentence:
+--------------------
+Barrow 's father , David Crenshaw Barrow Jr. , was also a mathematician , and served as chancellor of the University of Georgia from 1906 to 1925 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Barrow) (POS 's))
+        (NN father))
+      (, ,)
+      (NP (NNP David) (NNP Crenshaw) (NNP Barrow) (NNP Jr.))
+      (, ,))
+    (VP
+      (VP (VBD was) (RB also)
+        (NP (DT a) (NN mathematician)))
+      (, ,)
+      (CC and)
+      (VP (VBD served)
+        (PP (IN as)
+          (NP
+            (NP (NN chancellor))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNP University))
+                (PP (IN of)
+                  (NP (NNP Georgia)))))))
+        (PP (IN from)
+          (NP (CD 1906)))
+        (PP (IN to)
+          (NP (CD 1925)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Barrow
+			coref:	IDENT			0	0-1	Barrow 's 
+			name:	PERSON				0-0	Barrow 
+	1	's
+	2	father
+			sense:	father.n.01
+	3	,
+	4	David
+			name:	PERSON				4-7	David Crenshaw Barrow Jr. 
+	5	Crenshaw
+	6	Barrow
+	7	Jr.
+	8	,
+	9	was
+			sense:	be.v.01
+			prop:	be.01
+			V		9-9	was 
+			N-ARG-A1		0-8	Barrow 's father , David Crenshaw Barrow Jr. , 
+			N-ARGM-ADV		10-10	also 
+			N-ARG-A2		11-12	a mathematician 
+	10	also
+			sense:	besides.r.02
+	11	a
+	12	mathematician
+			name:	TITLE				12-12	mathematician 
+			sense:	mathematician.n.01
+	13	,
+	14	and
+	15	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		15-15	served 
+			N-ARG-A0		0-8	Barrow 's father , David Crenshaw Barrow Jr. , 
+			N-ARG-A1		16-22	as chancellor of the University of Georgia 
+			N-ARGM-TMP		23-26	from 1906 to 1925 
+	16	as
+	17	chancellor
+			name:	TITLE				17-17	chancellor 
+			sense:	chancellor.n.03
+	18	of
+	19	the
+			coref:	IDENT			1	19-22	the University of Georgia 
+	20	University
+			name:	ORGANIZATION				20-22	University of Georgia 
+	21	of
+	22	Georgia
+	23	from
+	24	1906
+			name:	DATE				24-26	1906 to 1925 
+	25	to
+	26	1925
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His son , David F. Barrow , did his undergraduate studies at the University of Georgia and then studied at Harvard University , where he earned his Ph.D. in 1913 .
+
+
+Treebanked sentence:
+--------------------
+His son , David F. Barrow , did his undergraduate studies at the University of Georgia and then studied at Harvard University , where he earned his Ph.D. in 1913 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ His) (NN son))
+      (, ,)
+      (NP (NNP David) (NNP F.) (NNP Barrow))
+      (, ,))
+    (VP
+      (VP (VBD did)
+        (NP (PRP$ his) (JJ undergraduate) (NNS studies))
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Georgia))))))
+      (CC and)
+      (ADVP (RB then))
+      (VP (VBN studied)
+        (PP (IN at)
+          (NP
+            (NP (NNP Harvard) (NNP University))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (PRP he))
+                (VP (VBD earned)
+                  (NP (PRP$ his) (NN Ph.D.))
+                  (PP (IN in)
+                    (NP (CD 1913))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-5	His son , David F. Barrow 
+			coref:	IDENT			0	0-0	His 
+	1	son
+			sense:	son.n.01
+	2	,
+	3	David
+			coref:	IDENT			0	3-5	David F. Barrow 
+			name:	PERSON				3-5	David F. Barrow 
+	4	F.
+	5	Barrow
+	6	,
+	7	did
+			sense:	make.v.01
+			prop:	do.02
+			V		7-7	did 
+			N-ARG-A0		0-6	His son , David F. Barrow , 
+			N-ARG-A1		8-10	his undergraduate studies 
+			N-ARGM-LOC		11-15	at the University of Georgia 
+	8	his
+			coref:	IDENT			0	8-8	his 
+	9	undergraduate
+	10	studies
+			sense:	study.n.02
+	11	at
+	12	the
+			coref:	IDENT			1	12-15	the University of Georgia 
+	13	University
+			name:	ORGANIZATION				13-15	University of Georgia 
+	14	of
+	15	Georgia
+	16	and
+	17	then
+			sense:	then.r.01
+	18	studied
+			sense:	study.v.02
+			prop:	study.01
+			V		18-18	studied 
+			N-ARG-A0		0-6	His son , David F. Barrow , 
+			N-ARGM-TMP		17-17	then 
+			N-ARGM-LOC		19-29	at Harvard University , where he earned his Ph.D. in 1913 
+	19	at
+	20	Harvard
+			name:	ORGANIZATION				20-21	Harvard University 
+	21	University
+	22	,
+	23	where
+	24	he
+			coref:	IDENT			0	24-24	he 
+	25	earned
+			sense:	earn.v.02
+			prop:	earn.01
+			V		25-25	earned 
+			N-ARGM-LOC		20-21	Harvard University 
+			R-ARGM-LOC		23-23	where 
+			N-ARG-A0		24-24	he 
+			N-ARG-A1		26-27	his Ph.D. 
+			N-ARGM-TMP		28-29	in 1913 
+	26	his
+			coref:	IDENT			0	26-26	his 
+	27	Ph.D.
+			sense:	ph.d..n.01
+	28	in
+	29	1913
+			name:	DATE				29-29	1913 
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After a year abroad , he taught for two years at the University of Texas , and then at the Sheffield Scientific School .
+
+
+Treebanked sentence:
+--------------------
+After a year abroad , he taught for two years at the University of Texas , and then at the Sheffield Scientific School . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP
+        (NP (DT a) (NN year))
+        (ADVP (RB abroad))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD taught)
+      (PP (IN for)
+        (NP (CD two) (NNS years)))
+      (PP
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Texas)))))
+        (, ,)
+        (CC and)
+        (ADVP (RB then))
+        (PP (IN at)
+          (NP (DT the) (NNP Sheffield) (NNP Scientific) (NNP School)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	a
+			name:	DURATION				1-2	a year 
+	2	year
+			sense:	year.n.01
+	3	abroad
+			sense:	abroad.r.01
+	4	,
+	5	he
+			coref:	IDENT			0	5-5	he 
+	6	taught
+			sense:	teach.v.01
+			prop:	teach.01
+			V		6-6	taught 
+			N-ARGM-TMP		0-3	After a year abroad 
+			N-ARG-A0		5-5	he 
+			N-ARGM-TMP		7-9	for two years 
+			N-ARGM-LOC		10-22	at the University of Texas , and then at the Sheffield Scientific School 
+	7	for
+	8	two
+			name:	DURATION				8-9	two years 
+	9	years
+			sense:	year.n.01
+	10	at
+	11	the
+	12	University
+			name:	ORGANIZATION				12-14	University of Texas 
+	13	of
+	14	Texas
+	15	,
+	16	and
+	17	then
+			sense:	then.r.01
+	18	at
+	19	the
+	20	Sheffield
+			name:	ORGANIZATION				20-22	Sheffield Scientific School 
+	21	Scientific
+	22	School
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After a brief stint in the U.S. armed services , he joined the faculty of his father 's university in 1920 .
+
+
+Treebanked sentence:
+--------------------
+After a brief stint in the U.S. armed services , he joined the faculty of his father 's university in 1920 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP
+        (NP (DT a) (JJ brief) (NN stint))
+        (PP (IN in)
+          (NP (DT the) (NNP U.S.) (JJ armed) (NNS services)))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD joined)
+      (NP
+        (NP (DT the) (NN faculty))
+        (PP (IN of)
+          (NP
+            (NP (PRP$ his) (NN father) (POS 's))
+            (NN university))))
+      (PP (IN in)
+        (NP (CD 1920))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	a
+	2	brief
+			sense:	brief.s.01
+	3	stint
+			sense:	stretch.n.06
+	4	in
+	5	the
+	6	U.S.
+			name:	COUNTRY				6-6	U.S. 
+	7	armed
+			sense:	armed.a.01
+	8	services
+			sense:	military_service.n.01
+	9	,
+	10	he
+			coref:	IDENT			0	10-10	he 
+	11	joined
+			sense:	join.v.01
+			prop:	join.01
+			V		11-11	joined 
+			N-ARGM-TMP		0-8	After a brief stint in the U.S. armed services 
+			N-ARG-A0		10-10	he 
+			N-ARG-A1		12-18	the faculty of his father 's university 
+			N-ARGM-TMP		19-20	in 1920 
+	12	the
+	13	faculty
+			sense:	staff.n.03
+	14	of
+	15	his
+			coref:	IDENT			0	15-15	his 
+	16	father
+			sense:	father.n.01
+	17	's
+	18	university
+			sense:	university.n.02
+	19	in
+	20	1920
+			name:	DATE				20-20	1920 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He became a full professor in 1923 , and chaired the mathematics department in 1944 – 1945 .
+
+
+Treebanked sentence:
+--------------------
+He became a full professor in 1923 , and chaired the mathematics department in 1944 – 1945 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD became)
+        (NP (DT a) (JJ full) (NN professor))
+        (PP (IN in)
+          (NP (CD 1923))))
+      (, ,)
+      (CC and)
+      (VP (VBD chaired)
+        (NP (DT the) (NN mathematics) (NN department))
+        (PP (IN in)
+          (NP (CD 1944) (SYM –) (CD 1945)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	became
+			sense:	become.v.02
+			prop:	become.01
+			V		1-1	became 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-4	a full professor 
+			N-ARGM-TMP		5-6	in 1923 
+	2	a
+	3	full
+			sense:	entire.s.01
+	4	professor
+			name:	TITLE				4-4	professor 
+			sense:	professor.n.01
+	5	in
+	6	1923
+			name:	DATE				6-6	1923 
+	7	,
+	8	and
+	9	chaired
+			sense:	chair.v.01
+			prop:	chair.01
+			V		9-9	chaired 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		10-12	the mathematics department 
+			N-ARGM-TMP		13-16	in 1944 – 1945 
+	10	the
+	11	mathematics
+			sense:	mathematics.n.01
+	12	department
+			sense:	department.n.01
+	13	in
+	14	1944
+			name:	DATE				14-14	1944 
+	15	–
+	16	1945
+			name:	DATE				16-16	1945 
+	17	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-2	David Francis Barrow 
+				0.21-22	Barrow 's 
+				1.0-1	Barrow 's 
+				2.0-5	His son , David F. Barrow 
+				2.0-0	His 
+				2.3-5	David F. Barrow 
+				2.8-8	his 
+				2.24-24	he 
+				2.26-26	his 
+				3.5-5	he 
+				4.10-10	he 
+				4.15-15	his 
+				5.0-0	He 
+	Chain 1 (IDENT)
+				1.19-22	the University of Georgia 
+				2.12-15	the University of Georgia 
+

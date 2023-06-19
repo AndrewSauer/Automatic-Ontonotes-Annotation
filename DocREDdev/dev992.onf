@@ -1,0 +1,538 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Iwo Byczewski ( born 29 February 1948 ) is a Polish diplomat .
+
+
+Treebanked sentence:
+--------------------
+Iwo Byczewski ( born 29 February 1948 ) is a Polish diplomat . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Iwo) (NNP Byczewski))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 29))
+        (NP-TMP (NNP February) (CD 1948)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (JJ Polish) (NN diplomat)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Iwo
+			name:	PERSON				0-1	Iwo Byczewski 
+	1	Byczewski
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Iwo Byczewski 
+			N-ARGM-TMP		4-6	29 February 1948 
+	4	29
+			name:	DATE				4-6	29 February 1948 
+	5	February
+	6	1948
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	Iwo Byczewski ( born 29 February 1948 ) 
+			N-ARG-A2		9-11	a Polish diplomat 
+	9	a
+	10	Polish
+			name:	NATIONALITY				10-10	Polish 
+	11	diplomat
+			name:	TITLE				11-11	diplomat 
+			sense:	diplomat.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He served as Deputy Foreign Minister ( 1991 - 1995 ) , Ambassador to Belgium and Permanent Representative to the European Union .
+
+
+Treebanked sentence:
+--------------------
+He served as Deputy Foreign Minister ( 1991 - 1995 ) , Ambassador to Belgium and Permanent Representative to the European Union . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP
+          (NML (NNP Deputy) (NNP Foreign))
+          (NML
+            (NML (NNP Minister)
+              (PRN (-LRB- -LRB-)
+                (NP (CD 1991) (SYM -) (CD 1995))
+                (-RRB- -RRB-)))
+            (, ,)
+            (NML
+              (NML (NNP Ambassador))
+              (PP (IN to)
+                (NP (NNP Belgium))))
+            (CC and)
+            (NML (NNP Permanent) (NNP Representative)))))
+      (PP (IN to)
+        (NP (DT the) (NNP European) (NNP Union))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-21	as Deputy Foreign Minister ( 1991 - 1995 ) , Ambassador to Belgium and Permanent Representative to the European Union 
+	2	as
+	3	Deputy
+			name:	TITLE				3-5	Deputy Foreign Minister 
+	4	Foreign
+	5	Minister
+	6	(
+	7	1991
+			name:	DATE				7-7	1991 
+	8	-
+			name:	DURATION				8-8	- 
+	9	1995
+			name:	DATE				9-9	1995 
+	10	)
+	11	,
+	12	Ambassador
+			name:	TITLE				12-12	Ambassador 
+	13	to
+	14	Belgium
+			coref:	IDENT			3	14-14	Belgium 
+			name:	COUNTRY				14-14	Belgium 
+	15	and
+	16	Permanent
+	17	Representative
+			name:	TITLE				17-17	Representative 
+	18	to
+	19	the
+			coref:	IDENT			2	19-21	the European Union 
+	20	European
+			name:	ORGANIZATION				20-21	European Union 
+	21	Union
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is a law graduate from the Adam Mickiewicz University in Poznań and studied at the College of Europe ( 1971 - 1972 , Dante Alighieri promotion ) in Bruges .
+
+
+Treebanked sentence:
+--------------------
+He is a law graduate from the Adam Mickiewicz University in Poznań and studied at the College of Europe ( 1971 - 1972 , Dante Alighieri promotion ) in Bruges . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (UCP
+        (NP
+          (NP (DT a) (NN law) (NN graduate))
+          (PP (IN from)
+            (NP
+              (NP (DT the) (NNP Adam) (NNP Mickiewicz) (NNP University))
+              (PP (IN in)
+                (NP (NNP Poznań))))))
+        (CC and)
+        (VP (VBN studied)
+          (PP (IN at)
+            (NP
+              (NP (DT the) (NNP College))
+              (PP (IN of)
+                (NP (NNP Europe)))))
+          (PRN (-LRB- -LRB-)
+            (NP (CD 1971) (SYM -) (CD 1972))
+            (, ,)
+            (NP
+              (NML (NNP Dante) (NNP Alighieri))
+              (NN promotion))
+            (-RRB- -RRB-))))
+      (PP (IN in)
+        (NP (NNP Bruges))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-11	a law graduate from the Adam Mickiewicz University in Poznań 
+	2	a
+	3	law
+			sense:	law.n.06
+	4	graduate
+			sense:	alumnus.n.01
+	5	from
+	6	the
+	7	Adam
+	8	Mickiewicz
+	9	University
+	10	in
+	11	Poznań
+			name:	LOCATION				11-11	Poznań 
+	12	and
+	13	studied
+			sense:	study.v.02
+			prop:	study.01
+			V		13-13	studied 
+			N-ARG-A0		0-0	He 
+			N-ARGM-LOC		14-29	at the College of Europe ( 1971 - 1972 , Dante Alighieri promotion ) in Bruges 
+	14	at
+	15	the
+	16	College
+	17	of
+	18	Europe
+			name:	LOCATION				18-18	Europe 
+	19	(
+	20	1971
+			name:	DATE				20-20	1971 
+	21	-
+			name:	DURATION				21-21	- 
+	22	1972
+			coref:	IDENT			1	22-22	1972 
+			name:	DATE				22-22	1972 
+	23	,
+	24	Dante
+			name:	PERSON				24-25	Dante Alighieri 
+	25	Alighieri
+	26	promotion
+			sense:	promotion.n.02
+	27	)
+	28	in
+	29	Bruges
+			name:	CITY				29-29	Bruges 
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He has a doctorate from the Institute of State and Law of the Polish Academy of Sciences in 1972 .
+
+
+Treebanked sentence:
+--------------------
+He has a doctorate from the Institute of State and Law of the Polish Academy of Sciences in 1972 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ has)
+      (NP
+        (NP (DT a) (NN doctorate))
+        (PP (IN from)
+          (NP
+            (NP (DT the) (NNP Institute))
+            (PP (IN of)
+              (NP (NNP State)
+                (CC and)
+                (NNP Law)))))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Polish) (NNP Academy))
+            (PP (IN of)
+              (NP
+                (NP (NNPS Sciences))
+                (PP (IN in)
+                  (NP (CD 1972)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	has
+			sense:	have.v.01
+			prop:	have.03
+			V		1-1	has 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-18	a doctorate from the Institute of State and Law of the Polish Academy of Sciences in 1972 
+	2	a
+	3	doctorate
+			sense:	doctors_degree.n.01
+	4	from
+	5	the
+	6	Institute
+			name:	ORGANIZATION				6-8	Institute of State 
+	7	of
+	8	State
+	9	and
+	10	Law
+	11	of
+	12	the
+	13	Polish
+			name:	ORGANIZATION				13-16	Polish Academy of Sciences 
+	14	Academy
+	15	of
+	16	Sciences
+	17	in
+	18	1972
+			coref:	IDENT			1	18-18	1972 
+			name:	DATE				18-18	1972 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He joined the foreign ministry in 1990 when Poland became independent , and worked in business since the mid 90s .
+
+
+Treebanked sentence:
+--------------------
+He joined the foreign ministry in 1990 when Poland became independent , and worked in business since the mid 90s . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD joined)
+      (NP (DT the) (JJ foreign) (NN ministry))
+      (PP (IN in)
+        (NP (CD 1990)))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (NNP Poland))
+          (VP
+            (VP (VBD became)
+              (ADJP (JJ independent)))
+            (, ,)
+            (CC and)
+            (VP (VBD worked)
+              (PP (IN in)
+                (NP (NN business)))
+              (PP (IN since)
+                (NP (DT the) (JJ mid) (NNS 90s))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	joined
+			sense:	join.v.01
+			prop:	join.01
+			V		1-1	joined 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-4	the foreign ministry 
+			N-ARGM-TMP		5-10	in 1990 when Poland became independent 
+	2	the
+	3	foreign
+			sense:	foreign.a.01
+	4	ministry
+			sense:	ministry.n.03
+	5	in
+	6	1990
+			name:	DATE				6-6	1990 
+	7	when
+	8	Poland
+			coref:	IDENT			0	8-8	Poland 
+			name:	COUNTRY				8-8	Poland 
+	9	became
+			sense:	become.v.01
+			prop:	become.01
+			V		9-9	became 
+			N-ARGM-TMP		5-6	in 1990 
+			R-ARGM-TMP		7-7	when 
+			N-ARG-A1		8-8	Poland 
+			N-ARG-A2		10-10	independent 
+	10	independent
+			name:	RELIGION				10-10	independent 
+			sense:	autonomous.s.01
+	11	,
+	12	and
+	13	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		13-13	worked 
+			N-ARG-A0		0-0	He 
+			N-ARGM-MNR		14-15	in business 
+			N-ARGM-TMP		16-19	since the mid 90s 
+	14	in
+	15	business
+			sense:	commercial_enterprise.n.02
+	16	since
+	17	the
+	18	mid
+			sense:	mid.s.01
+	19	90s
+			sense:	ninety.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2001 , he was appointed Permanent Representative of Poland to the European Union .
+
+
+Treebanked sentence:
+--------------------
+In 2001 , he was appointed Permanent Representative of Poland to the European Union . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2001)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN appointed)
+        (NP
+          (NP (NNP Permanent) (NNP Representative))
+          (PP (IN of)
+            (NP (NNP Poland))))
+        (PP (IN to)
+          (NP (DT the) (NNP European) (NNP Union)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2001
+			name:	DATE				1-1	2001 
+	2	,
+	3	he
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	appointed
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		5-5	appointed 
+			N-ARGM-TMP		0-1	In 2001 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		6-13	Permanent Representative of Poland to the European Union 
+	6	Permanent
+	7	Representative
+			name:	TITLE				7-7	Representative 
+	8	of
+	9	Poland
+			coref:	IDENT			0	9-9	Poland 
+			name:	COUNTRY				9-9	Poland 
+	10	to
+	11	the
+			coref:	IDENT			2	11-13	the European Union 
+	12	European
+			name:	ORGANIZATION				12-13	European Union 
+	13	Union
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+From 2002 to 2007 , he served as Ambassador to Belgium .
+
+
+Treebanked sentence:
+--------------------
+From 2002 to 2007 , he served as Ambassador to Belgium . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN From)
+      (NP
+        (NP (CD 2002))
+        (PP (IN to)
+          (NP (CD 2007)))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP (NNP Ambassador)))
+      (PP (IN to)
+        (NP (NNP Belgium))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	From
+	1	2002
+			name:	DATE				1-1	2002 
+	2	to
+	3	2007
+			name:	DATE				3-3	2007 
+	4	,
+	5	he
+	6	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		6-6	served 
+			N-ARGM-TMP		0-3	From 2002 to 2007 
+			N-ARG-A0		5-5	he 
+			N-ARG-A1		7-10	as Ambassador to Belgium 
+	7	as
+	8	Ambassador
+			name:	TITLE				8-8	Ambassador 
+	9	to
+	10	Belgium
+			coref:	IDENT			3	10-10	Belgium 
+			name:	COUNTRY				10-10	Belgium 
+	11	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.8-8	Poland 
+				5.9-9	Poland 
+	Chain 1 (IDENT)
+				2.22-22	1972 
+				3.18-18	1972 
+	Chain 2 (IDENT)
+				1.19-21	the European Union 
+				5.11-13	the European Union 
+	Chain 3 (IDENT)
+				1.14-14	Belgium 
+				6.10-10	Belgium 
+

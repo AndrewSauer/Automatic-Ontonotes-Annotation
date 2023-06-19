@@ -1,0 +1,518 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+William Lawrence " Bill " Morrison ( 3 November 1928 – 15 February 2013 ) was an Australian politician who was a member of the Australian House of Representatives and a Cabinet minister in the Whitlam government .
+
+
+Treebanked sentence:
+--------------------
+William Lawrence " Bill " Morrison ( 3 November 1928 – 15 February 2013 ) was an Australian politician who was a member of the Australian House of Representatives and a Cabinet minister in the Whitlam government . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP William) (NNP Lawrence))
+      (NP
+        (NP ('' ") (NNP Bill) ('' "))
+        (NP
+          (NP (NNP Morrison))
+          (-LRB- -LRB-)
+          (NP
+            (NP
+              (NP (CD 3))
+              (NP-TMP (NNP November) (CD 1928))
+              (PP (SYM –)
+                (NP (CD 15))))
+            (NP-TMP (NNP February) (CD 2013)))
+          (-RRB- -RRB-))))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (JJ Australian) (NN politician))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD was)
+              (NP
+                (NP (DT a) (NN member))
+                (PP (IN of)
+                  (NP
+                    (NP
+                      (NP (DT the) (JJ Australian) (NNP House))
+                      (PP (IN of)
+                        (NP (NNPS Representatives))))
+                    (CC and)
+                    (NP
+                      (NP (DT a) (NNP Cabinet) (NN minister))
+                      (PP (IN in)
+                        (NP (DT the) (NNP Whitlam) (NN government))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	William
+			name:	PERSON				0-1	William Lawrence 
+	1	Lawrence
+	2	"
+	3	Bill
+			name:	PERSON				3-5	Bill " Morrison 
+	4	"
+	5	Morrison
+	6	(
+	7	3
+			name:	DATE				7-9	3 November 1928 
+	8	November
+	9	1928
+	10	–
+	11	15
+			name:	DATE				11-13	15 February 2013 
+	12	February
+	13	2013
+	14	)
+	15	was
+			sense:	be.v.02
+			prop:	be.01
+			V		15-15	was 
+			N-ARG-A1		0-14	William Lawrence " Bill " Morrison ( 3 November 1928 – 15 February 2013 ) 
+			N-ARG-A2		16-36	an Australian politician who was a member of the Australian House of Representatives and a Cabinet minister in the Whitlam government 
+	16	an
+	17	Australian
+			name:	NATIONALITY				17-17	Australian 
+	18	politician
+			name:	TITLE				18-18	politician 
+			sense:	politician.n.02
+	19	who
+	20	was
+			sense:	be.v.08
+			prop:	be.01
+			V		20-20	was 
+			N-ARG-A1		16-18	an Australian politician 
+			R-ARG-A1		19-19	who 
+			N-ARG-A2		21-36	a member of the Australian House of Representatives and a Cabinet minister in the Whitlam government 
+	21	a
+	22	member
+			sense:	member.n.01
+	23	of
+	24	the
+	25	Australian
+			name:	NATIONALITY				25-25	Australian 
+	26	House
+			name:	ORGANIZATION				26-28	House of Representatives 
+	27	of
+	28	Representatives
+	29	and
+	30	a
+	31	Cabinet
+			name:	TITLE				31-32	Cabinet minister 
+	32	minister
+			sense:	minister.n.04
+	33	in
+	34	the
+	35	Whitlam
+	36	government
+			sense:	government.n.03
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Morrison was born in Lithgow , New South Wales and graduated with an honours degree in economics from the University of Sydney in 1949 .
+
+
+Treebanked sentence:
+--------------------
+Morrison was born in Lithgow , New South Wales and graduated with an honours degree in economics from the University of Sydney in 1949 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Morrison))
+    (VP
+      (VP (VBD was)
+        (VP (VBN born)
+          (PP (IN in)
+            (NP (NNP Lithgow) (, ,) (NNP New) (NNP South) (NNP Wales)))))
+      (CC and)
+      (VP (VBD graduated)
+        (PP (IN with)
+          (NP
+            (NP (DT an) (NNS honours) (NN degree))
+            (PP (IN in)
+              (NP (NNS economics)))))
+        (PP (IN from)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Sydney)))))
+        (PP (IN in)
+          (NP (CD 1949)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Morrison
+			coref:	IDENT			2	0-0	Morrison 
+			name:	PERSON				0-0	Morrison 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Morrison 
+			N-ARGM-LOC		3-8	in Lithgow , New South Wales 
+	3	in
+	4	Lithgow
+			name:	CITY				4-4	Lithgow 
+	5	,
+	6	New
+			name:	LOCATION				6-8	New South Wales 
+	7	South
+	8	Wales
+	9	and
+	10	graduated
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		10-10	graduated 
+			N-ARG-A0		0-0	Morrison 
+			N-ARGM-MNR		11-16	with an honours degree in economics 
+			N-ARG-A1		17-21	from the University of Sydney 
+			N-ARGM-TMP		22-23	in 1949 
+	11	with
+	12	an
+	13	honours
+			sense:	award.n.02
+	14	degree
+			sense:	academic_degree.n.01
+	15	in
+	16	economics
+			sense:	economics.n.01
+	17	from
+	18	the
+	19	University
+			name:	ORGANIZATION				19-21	University of Sydney 
+	20	of
+	21	Sydney
+	22	in
+	23	1949
+			name:	DATE				23-23	1949 
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was a diplomat in the Department of External Affairs from 1950 to 1969 , with postings to London , Moscow , Washington , D.C. , Bangkok and Kuala Lumpur .
+
+
+Treebanked sentence:
+--------------------
+He was a diplomat in the Department of External Affairs from 1950 to 1969 , with postings to London , Moscow , Washington , D.C. , Bangkok and Kuala Lumpur . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN diplomat))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNP Department))
+            (PP (IN of)
+              (NP
+                (NP (NNP External) (NNPS Affairs))
+                (PP (IN from)
+                  (NP (CD 1950))))))))
+      (PP (IN to)
+        (NP (CD 1969)))
+      (, ,)
+      (PP (IN with)
+        (NP
+          (NP (NNS postings))
+          (PP (IN to)
+            (NP (NNP London) (, ,) (NNP Moscow) (, ,) (NNP Washington) (, ,) (NNP D.C.) (, ,) (NNP Bangkok)
+              (CC and)
+              (NNP Kuala) (NNP Lumpur))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-9	a diplomat in the Department of External Affairs 
+			N-ARGM-TMP		10-13	from 1950 to 1969 
+			N-ARGM-ADV		15-29	with postings to London , Moscow , Washington , D.C. , Bangkok and Kuala Lumpur 
+	2	a
+	3	diplomat
+			name:	TITLE				3-3	diplomat 
+			sense:	diplomat.n.01
+	4	in
+	5	the
+	6	Department
+	7	of
+	8	External
+	9	Affairs
+	10	from
+	11	1950
+			name:	DATE				11-13	1950 to 1969 
+	12	to
+	13	1969
+	14	,
+	15	with
+	16	postings
+			sense:	mailing.n.02
+	17	to
+	18	London
+			name:	CITY				18-18	London 
+	19	,
+	20	Moscow
+			name:	CITY				20-20	Moscow 
+	21	,
+	22	Washington
+			name:	STATE_OR_PROVINCE				22-22	Washington 
+	23	,
+	24	D.C.
+			name:	LOCATION				24-24	D.C. 
+	25	,
+	26	Bangkok
+			coref:	IDENT			1	26-26	Bangkok 
+			name:	CITY				26-26	Bangkok 
+	27	and
+	28	Kuala
+			name:	CITY				28-29	Kuala Lumpur 
+	29	Lumpur
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His posting to Moscow was terminated by the expulsion of the entire mission in 1954 as a result of the Petrov Affair .
+
+
+Treebanked sentence:
+--------------------
+His posting to Moscow was terminated by the expulsion of the entire mission in 1954 as a result of the Petrov Affair . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ His) (NN posting))
+      (PP (IN to)
+        (NP (NNP Moscow))))
+    (VP (VBD was)
+      (VP (VBN terminated)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NN expulsion))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (JJ entire) (NN mission))
+                (PP (IN in)
+                  (NP (CD 1954)))))))
+        (PP (IN as)
+          (NP
+            (NP (DT a) (NN result))
+            (PP (IN of)
+              (NP (DT the) (NNP Petrov) (NNP Affair)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-3	His posting to Moscow 
+			coref:	IDENT			2	0-0	His 
+	1	posting
+			sense:	mailing.n.02
+	2	to
+	3	Moscow
+			name:	CITY				3-3	Moscow 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	terminated
+			sense:	end.v.02
+			prop:	terminate.01
+			V		5-5	terminated 
+			N-ARG-A1		0-3	His posting to Moscow 
+			N-ARG-A0		6-12	by the expulsion of the entire mission 
+			N-ARGM-CAU		15-21	as a result of the Petrov Affair 
+	6	by
+	7	the
+	8	expulsion
+			sense:	ejection.n.02
+	9	of
+	10	the
+	11	entire
+			sense:	entire.s.01
+	12	mission
+			sense:	deputation.n.01
+	13	in
+	14	1954
+			name:	DATE				14-14	1954 
+	15	as
+	16	a
+	17	result
+			sense:	consequence.n.01
+	18	of
+	19	the
+	20	Petrov
+	21	Affair
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His posting to Malaysia was as Deputy High Commissioner .
+
+
+Treebanked sentence:
+--------------------
+His posting to Malaysia was as Deputy High Commissioner . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ His) (NN posting))
+      (PP (IN to)
+        (NP (NNP Malaysia))))
+    (VP (VBD was)
+      (PP (IN as)
+        (NP
+          (NML (NNP Deputy) (NNP High))
+          (NNP Commissioner))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-3	His posting to Malaysia 
+			coref:	IDENT			2	0-0	His 
+	1	posting
+			sense:	mailing.n.02
+	2	to
+	3	Malaysia
+			name:	COUNTRY				3-3	Malaysia 
+	4	was
+			sense:	be.v.01
+			prop:	be.01
+			V		4-4	was 
+			N-ARG-A1		0-3	His posting to Malaysia 
+			N-ARG-A2		5-8	as Deputy High Commissioner 
+	5	as
+	6	Deputy
+			name:	TITLE				6-6	Deputy 
+	7	High
+	8	Commissioner
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1958 , he married Marty Hessell , an American citizen , in Bangkok .
+
+
+Treebanked sentence:
+--------------------
+In 1958 , he married Marty Hessell , an American citizen , in Bangkok . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1958)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD married)
+      (NP
+        (NP
+          (NP (NNP Marty) (NNP Hessell))
+          (, ,)
+          (NP (DT an) (JJ American) (NN citizen))
+          (, ,))
+        (PP (IN in)
+          (NP (NNP Bangkok)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1958
+			name:	DATE				1-1	1958 
+	2	,
+	3	he
+			coref:	IDENT			2	3-3	he 
+	4	married
+			sense:	marry.v.01
+			prop:	marry.01
+			V		4-4	married 
+			N-ARGM-TMP		0-1	In 1958 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		5-10	Marty Hessell , an American citizen 
+			N-ARGM-LOC		12-13	in Bangkok 
+	5	Marty
+			name:	PERSON				5-6	Marty Hessell 
+	6	Hessell
+	7	,
+	8	an
+	9	American
+			name:	NATIONALITY				9-9	American 
+	10	citizen
+			sense:	citizen.n.01
+	11	,
+	12	in
+	13	Bangkok
+			coref:	IDENT			1	13-13	Bangkok 
+			name:	CITY				13-13	Bangkok 
+	14	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.0-3	His posting to Moscow 
+				4.0-3	His posting to Malaysia 
+	Chain 1 (IDENT)
+				2.26-26	Bangkok 
+				5.13-13	Bangkok 
+	Chain 2 (IDENT)
+				1.0-0	Morrison 
+				2.0-0	He 
+				3.0-0	His 
+				4.0-0	His 
+				5.3-3	he 
+

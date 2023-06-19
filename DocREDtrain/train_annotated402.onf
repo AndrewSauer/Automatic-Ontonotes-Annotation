@@ -1,0 +1,651 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Frank George Wisner II ( born July 2 , 1938 ) is an American businessman and former diplomat .
+
+
+Treebanked sentence:
+--------------------
+Frank George Wisner II ( born July 2 , 1938 ) is an American businessman and former diplomat . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Frank) (NNP George) (NNP Wisner) (NNP II))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP July) (CD 2) (, ,) (CD 1938)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ American) (NN businessman))
+        (CC and)
+        (NP (JJ former) (NN diplomat))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Frank
+			name:	PERSON				0-3	Frank George Wisner II 
+	1	George
+	2	Wisner
+	3	II
+	4	(
+	5	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		5-5	born 
+			N-ARG-A1		0-3	Frank George Wisner II 
+			N-ARGM-TMP		6-9	July 2 , 1938 
+	6	July
+			name:	DATE				6-9	July 2 , 1938 
+	7	2
+	8	,
+	9	1938
+	10	)
+	11	is
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	is 
+			N-ARG-A1		0-10	Frank George Wisner II ( born July 2 , 1938 ) 
+			N-ARG-A2		12-17	an American businessman and former diplomat 
+	12	an
+	13	American
+			name:	NATIONALITY				13-13	American 
+	14	businessman
+			name:	TITLE				14-14	businessman 
+			sense:	businessman.n.01
+	15	and
+	16	former
+			sense:	erstwhile.s.01
+	17	diplomat
+			name:	TITLE				17-17	diplomat 
+			sense:	diplomat.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is the son of CIA official Frank Wisner ( 1909 – 1965 ) .
+
+
+Treebanked sentence:
+--------------------
+He is the son of CIA official Frank Wisner ( 1909 – 1965 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN son))
+        (PP (IN of)
+          (NP
+            (NML (NNP CIA) (NN official))
+            (NNP Frank) (NNP Wisner))))
+      (PRN (-LRB- -LRB-)
+        (NP (CD 1909) (SYM –) (CD 1965))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-13	the son of CIA official Frank Wisner ( 1909 – 1965 ) 
+	2	the
+	3	son
+			sense:	son.n.01
+	4	of
+	5	CIA
+			coref:	IDENT			1	5-8	CIA official Frank Wisner 
+			name:	ORGANIZATION				5-5	CIA 
+	6	official
+			sense:	official.n.01
+	7	Frank
+			name:	PERSON				7-8	Frank Wisner 
+	8	Wisner
+	9	(
+	10	1909
+			name:	DATE				10-10	1909 
+	11	–
+	12	1965
+			name:	DATE				12-12	1965 
+	13	)
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On January 31 , 2011 , he was sent to Egypt by President Barack Obama to negotiate a resolution to the popular protests against the regime that had swept the country .
+
+
+Treebanked sentence:
+--------------------
+On January 31 , 2011 , he was sent to Egypt by President Barack Obama to negotiate a resolution to the popular protests against the regime that had swept the country . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NNP January) (CD 31) (, ,) (CD 2011)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN sent)
+        (PP (IN to)
+          (NP (NNP Egypt)))
+        (PP (IN by)
+          (NP (NNP President) (NNP Barack) (NNP Obama)))
+        (S
+          (VP (TO to)
+            (VP (VB negotiate)
+              (NP (DT a) (NN resolution))
+              (PP (IN to)
+                (NP
+                  (NP (DT the) (JJ popular) (NNS protests))
+                  (PP (IN against)
+                    (NP
+                      (NP (DT the) (NN regime))
+                      (SBAR
+                        (WHNP (WDT that))
+                        (S
+                          (VP (VBD had)
+                            (VP (VBN swept)
+                              (NP (DT the) (NN country)))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	January
+			name:	DATE				1-4	January 31 , 2011 
+	2	31
+	3	,
+	4	2011
+	5	,
+	6	he
+	7	was
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	was 
+	8	sent
+			sense:	send.v.01
+			prop:	send.02
+			V		8-8	sent 
+			N-ARGM-TMP		0-4	On January 31 , 2011 
+			N-ARG-A1		6-6	he 
+			N-ARG-A2		9-10	to Egypt 
+			N-ARG-A0		11-14	by President Barack Obama 
+			N-ARGM-PRP		15-30	to negotiate a resolution to the popular protests against the regime that had swept the country 
+	9	to
+	10	Egypt
+			name:	COUNTRY				10-10	Egypt 
+	11	by
+	12	President
+			name:	TITLE				12-12	President 
+	13	Barack
+			name:	PERSON				13-14	Barack Obama 
+	14	Obama
+	15	to
+	16	negotiate
+			sense:	negociate.v.06
+			prop:	negotiate.01
+			V		16-16	negotiate 
+			N-ARG-A0		6-6	he 
+			N-ARG-A2		17-30	a resolution to the popular protests against the regime that had swept the country 
+	17	a
+	18	resolution
+			sense:	settlement.n.05
+	19	to
+	20	the
+	21	popular
+			sense:	popular.s.02
+	22	protests
+			sense:	protest.n.02
+	23	against
+	24	the
+	25	regime
+			sense:	government.n.01
+	26	that
+	27	had
+			sense:	have.v.11
+			prop:	have.01
+			V		27-27	had 
+	28	swept
+			sense:	brush.v.04
+			prop:	sweep.02
+			V		28-28	swept 
+			N-ARG-A1		20-25	the popular protests against the regime 
+			R-ARG-A1		26-26	that 
+			N-ARG-A2		29-30	the country 
+	29	the
+	30	country
+			sense:	country.n.02
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A White House spokesman said that Wisner had vast experience in the region as well as close relationships with many Egyptians in and out of government .
+
+
+Treebanked sentence:
+--------------------
+A White House spokesman said that Wisner had vast experience in the region as well as close relationships with many Egyptians in and out of government . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT A)
+      (NML (NNP White) (NNP House))
+      (NN spokesman))
+    (VP (VBD said)
+      (SBAR (IN that)
+        (S
+          (NP (NNP Wisner))
+          (VP (VBD had)
+            (NP
+              (NP
+                (NP (JJ vast) (NN experience))
+                (PP (IN in)
+                  (NP (DT the) (NN region))))
+              (CONJP (RB as) (RB well) (IN as))
+              (NP
+                (NP (JJ close) (NNS relationships))
+                (PP (IN with)
+                  (NP (JJ many) (NNPS Egyptians)))))
+            (PP (IN in)
+              (CC and)
+              (IN out)
+              (PP (IN of)
+                (NP (NN government))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	White
+			coref:	IDENT			0	1-2	White House 
+			name:	ORGANIZATION				1-2	White House 
+	2	House
+	3	spokesman
+			name:	TITLE				3-3	spokesman 
+			sense:	spokesman.n.01
+	4	said
+			sense:	state.v.01
+			prop:	say.01
+			V		4-4	said 
+			N-ARG-A0		0-3	A White House spokesman 
+			N-ARG-A1		5-25	that Wisner had vast experience in the region as well as close relationships with many Egyptians in and out of government 
+	5	that
+	6	Wisner
+			coref:	IDENT			1	6-6	Wisner 
+			name:	PERSON				6-6	Wisner 
+	7	had
+			sense:	have.v.01
+			prop:	have.03
+			V		7-7	had 
+			N-ARG-A0		6-6	Wisner 
+			N-ARG-A1		8-25	vast experience in the region as well as close relationships with many Egyptians in and out of government 
+	8	vast
+			sense:	huge.s.01
+	9	experience
+			sense:	experience.n.01
+	10	in
+	11	the
+	12	region
+			sense:	region.n.03
+	13	as
+			sense:	equally.r.01
+	14	well
+			sense:	well.r.01
+	15	as
+	16	close
+			sense:	close.a.02
+	17	relationships
+			sense:	relationship.n.03
+	18	with
+	19	many
+			sense:	many.a.01
+	20	Egyptians
+			name:	MISC				20-20	Egyptians 
+	21	in
+	22	and
+	23	out
+	24	of
+	25	government
+			sense:	government.n.01
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The New York Times reports that he is a personal friend of Egyptian president Hosni Mubarak .
+
+
+Treebanked sentence:
+--------------------
+The New York Times reports that he is a personal friend of Egyptian president Hosni Mubarak . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The)
+      (NML (NNP New) (NNP York))
+      (NNP Times))
+    (VP (VBZ reports)
+      (SBAR (IN that)
+        (S
+          (NP (PRP he))
+          (VP (VBZ is)
+            (NP
+              (NP (DT a) (JJ personal) (NN friend))
+              (PP (IN of)
+                (NP
+                  (NML (JJ Egyptian) (NN president))
+                  (NNP Hosni) (NNP Mubarak))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	New
+			name:	ORGANIZATION				1-3	New York Times 
+	2	York
+	3	Times
+	4	reports
+			sense:	report.v.01
+			prop:	report.01
+			V		4-4	reports 
+			N-ARG-A0		0-3	The New York Times 
+			N-ARG-A1		5-15	that he is a personal friend of Egyptian president Hosni Mubarak 
+	5	that
+	6	he
+	7	is
+			sense:	be.v.01
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		6-6	he 
+			N-ARG-A2		8-15	a personal friend of Egyptian president Hosni Mubarak 
+	8	a
+	9	personal
+			sense:	personal.a.01
+	10	friend
+			sense:	friend.n.01
+	11	of
+	12	Egyptian
+			coref:	IDENT			2	12-15	Egyptian president Hosni Mubarak 
+			name:	NATIONALITY				12-12	Egyptian 
+	13	president
+			name:	TITLE				13-13	president 
+			sense:	president.n.03
+	14	Hosni
+			name:	PERSON				14-15	Hosni Mubarak 
+	15	Mubarak
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Speaking on the BBC on February 5 , 2011 , he exceeded statements issued by the White House to date and insisted that President Mubarak should be allowed to remain in office despite widespread calls for him to step down .
+
+
+Treebanked sentence:
+--------------------
+Speaking on the BBC on February 5 , 2011 , he exceeded statements issued by the White House to date and insisted that President Mubarak should be allowed to remain in office despite widespread calls for him to step down . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBG Speaking)
+        (PP (IN on)
+          (NP (DT the) (NNP BBC)))
+        (PP (IN on)
+          (NP (NNP February) (CD 5) (, ,) (CD 2011)))))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD exceeded)
+        (NP
+          (NP (NNS statements))
+          (VP (VBN issued)
+            (PP (IN by)
+              (NP (DT the) (NNP White) (NNP House)))
+            (PP (IN to)
+              (NP (NN date))))))
+      (CC and)
+      (VP (VBD insisted)
+        (SBAR (IN that)
+          (S
+            (NP (NNP President) (NNP Mubarak))
+            (VP (MD should)
+              (VP (VB be)
+                (VP (VBN allowed)
+                  (S
+                    (VP (TO to)
+                      (VP (VB remain)
+                        (PP (IN in)
+                          (NP (NN office)))
+                        (PP (IN despite)
+                          (NP
+                            (NP (JJ widespread) (NNS calls))
+                            (PP (IN for)
+                              (NP (PRP him)))))
+                        (S
+                          (VP (TO to)
+                            (VP (VB step)
+                              (PRT (RP down)))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Speaking
+			sense:	talk.v.02
+			prop:	speak.01
+			V		0-0	Speaking 
+			N-ARGM-LOC		1-3	on the BBC 
+			N-ARGM-TMP		4-8	on February 5 , 2011 
+			N-ARG-A0		10-10	he 
+	1	on
+	2	the
+	3	BBC
+			name:	ORGANIZATION				3-3	BBC 
+	4	on
+	5	February
+			name:	DATE				5-8	February 5 , 2011 
+	6	5
+	7	,
+	8	2011
+	9	,
+	10	he
+	11	exceeded
+			sense:	surpass.v.02
+			prop:	exceed.01
+			V		11-11	exceeded 
+			R-ARG-A0		0-8	Speaking on the BBC on February 5 , 2011 
+			N-ARG-A0		10-10	he 
+			N-ARG-A1		12-19	statements issued by the White House to date 
+	12	statements
+			sense:	statement.n.01
+	13	issued
+			sense:	publish.v.02
+			prop:	issue.01
+			V		13-13	issued 
+			N-ARG-A1		12-12	statements 
+			N-ARG-A0		14-17	by the White House 
+			N-ARGM-TMP		18-19	to date 
+	14	by
+	15	the
+			coref:	IDENT			0	15-17	the White House 
+	16	White
+			name:	ORGANIZATION				16-17	White House 
+	17	House
+	18	to
+	19	date
+			sense:	date.n.05
+	20	and
+	21	insisted
+			sense:	insist.v.01
+			prop:	insist.01
+			V		21-21	insisted 
+			R-ARG-A0		0-8	Speaking on the BBC on February 5 , 2011 
+			N-ARG-A0		10-10	he 
+			N-ARG-A1		23-39	President Mubarak should be allowed to remain in office despite widespread calls for him to step down 
+	22	that
+	23	President
+			coref:	IDENT			2	23-24	President Mubarak 
+			name:	TITLE				23-23	President 
+	24	Mubarak
+			name:	PERSON				24-24	Mubarak 
+	25	should
+	26	be
+			sense:	be.v.01
+			prop:	be.03
+			V		26-26	be 
+	27	allowed
+			sense:	permit.v.01
+			prop:	allow.01
+			V		27-27	allowed 
+			N-ARGM-MOD		25-25	should 
+			N-ARG-A1		28-31	to remain in office 
+			N-ARGM-ADV		32-39	despite widespread calls for him to step down 
+	28	to
+	29	remain
+			sense:	stay.v.01
+			prop:	remain.01
+			V		29-29	remain 
+			N-ARG-A1		23-24	President Mubarak 
+			N-ARG-A3		30-31	in office 
+	30	in
+	31	office
+			sense:	office.n.04
+	32	despite
+	33	widespread
+			sense:	widespread.s.01
+	34	calls
+			sense:	cry.n.01
+	35	for
+	36	him
+	37	to
+	38	step
+			sense:	step.v.01
+			prop:	step.04
+			V		38-38	step 
+			N-ARG-A0		36-36	him 
+	39	down
+	40	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He works as an international - affairs advisor at the firm of Squire Patton Boggs in Washington , DC .
+
+
+Treebanked sentence:
+--------------------
+He works as an international - affairs advisor at the firm of Squire Patton Boggs in Washington , DC . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ works)
+      (PP (IN as)
+        (NP (DT an)
+          (NML (JJ international) (HYPH -) (NNS affairs))
+          (NN advisor)))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NN firm))
+          (PP (IN of)
+            (NP
+              (NP (NNP Squire) (NNP Patton) (NNP Boggs))
+              (PP (IN in)
+                (NP (NNP Washington) (, ,) (NNP DC))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	works
+			sense:	work.v.02
+			prop:	work.01
+			V		1-1	works 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-7	as an international - affairs advisor 
+			N-ARG-A2		8-18	at the firm of Squire Patton Boggs in Washington , DC 
+	2	as
+	3	an
+	4	international
+			sense:	international.a.01
+	5	-
+	6	affairs
+			sense:	matter.n.01
+	7	advisor
+			sense:	adviser.n.01
+	8	at
+	9	the
+	10	firm
+			sense:	firm.n.01
+	11	of
+	12	Squire
+			name:	ORGANIZATION				12-14	Squire Patton Boggs 
+	13	Patton
+	14	Boggs
+	15	in
+	16	Washington
+			name:	CITY				16-18	Washington , DC 
+	17	,
+	18	DC
+	19	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.15-17	the White House 
+				3.1-2	White House 
+	Chain 1 (IDENT)
+				1.5-8	CIA official Frank Wisner 
+				3.6-6	Wisner 
+	Chain 2 (IDENT)
+				4.12-15	Egyptian president Hosni Mubarak 
+				5.23-24	President Mubarak 
+

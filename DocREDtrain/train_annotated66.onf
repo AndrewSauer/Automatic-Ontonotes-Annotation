@@ -1,0 +1,753 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The United States Attorney General ( A.G. ) is the head of the United States Department of Justice per , concerned with all legal affairs , and is the chief lawyer of the United States government .
+
+
+Treebanked sentence:
+--------------------
+The United States Attorney General ( A.G. ) is the head of the United States Department of Justice per , concerned with all legal affairs , and is the chief lawyer of the United States government . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP United)
+        (NML (NNP States) (NNP Attorney))
+        (NNP General))
+      (-LRB- -LRB-)
+      (NP (NNP A.G.))
+      (-RRB- -RRB-))
+    (VP
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (NN head))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP United) (NNP States) (NNP Department))
+              (PP (IN of)
+                (NP
+                  (NP (NNP Justice))
+                  (PP (IN per))))))))
+      (, ,)
+      (VP (VBN concerned)
+        (PP (IN with)
+          (NP (DT all) (JJ legal) (NNS affairs))))
+      (, ,)
+      (CC and)
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (JJ chief) (NN lawyer))
+          (PP (IN of)
+            (NP (DT the)
+              (NML (NNP United) (NNP States))
+              (NN government))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	United
+			coref:	IDENT			1	1-2	United States 
+			name:	COUNTRY				1-2	United States 
+	2	States
+	3	Attorney
+			name:	TITLE				3-4	Attorney General 
+	4	General
+	5	(
+	6	A.G.
+			name:	PERSON				6-6	A.G. 
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	The United States Attorney General ( A.G. ) 
+			N-ARG-A2		9-24	the head of the United States Department of Justice per , concerned with all legal affairs 
+	9	the
+	10	head
+			sense:	head.n.04
+	11	of
+	12	the
+	13	United
+			name:	ORGANIZATION				13-17	United States Department of Justice 
+	14	States
+	15	Department
+	16	of
+	17	Justice
+	18	per
+	19	,
+	20	concerned
+			sense:	refer.v.02
+			prop:	concern.01
+			V		20-20	concerned 
+			N-ARG-A1		0-7	The United States Attorney General ( A.G. ) 
+			N-ARG-A0		21-24	with all legal affairs 
+	21	with
+	22	all
+	23	legal
+			sense:	legal.a.02
+	24	affairs
+			sense:	matter.n.01
+	25	,
+	26	and
+	27	is
+			sense:	be.v.02
+			prop:	be.01
+			V		27-27	is 
+			N-ARG-A1		0-7	The United States Attorney General ( A.G. ) 
+			N-ARG-A2		28-35	the chief lawyer of the United States government 
+	28	the
+	29	chief
+			sense:	chief.s.01
+	30	lawyer
+			name:	TITLE				30-30	lawyer 
+			sense:	lawyer.n.01
+	31	of
+	32	the
+			coref:	IDENT			4	32-35	the United States government 
+	33	United
+			coref:	IDENT			1	33-34	United States 
+			name:	COUNTRY				33-34	United States 
+	34	States
+	35	government
+			sense:	government.n.01
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In cases of the federal death penalty , the power to seek the death penalty rests with the Attorney General .
+
+
+Treebanked sentence:
+--------------------
+In cases of the federal death penalty , the power to seek the death penalty rests with the Attorney General . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (NNS cases))
+        (PP (IN of)
+          (NP (DT the) (JJ federal) (NN death) (NN penalty)))))
+    (, ,)
+    (NP (DT the) (NN power)
+      (S
+        (VP (TO to)
+          (VP (VB seek)
+            (NP (DT the) (NN death) (NN penalty))))))
+    (VP (VBZ rests)
+      (PP (IN with)
+        (NP (DT the) (NNP Attorney) (NNP General))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	cases
+			sense:	lawsuit.n.01
+	2	of
+	3	the
+	4	federal
+			sense:	federal.s.01
+	5	death
+			sense:	death.n.08
+	6	penalty
+			sense:	punishment.n.01
+	7	,
+	8	the
+	9	power
+			sense:	power.n.01
+	10	to
+	11	seek
+			sense:	seek.v.01
+			prop:	seek.01
+			V		11-11	seek 
+			N-ARG-A1		12-14	the death penalty 
+	12	the
+	13	death
+			sense:	death.n.08
+	14	penalty
+			sense:	punishment.n.01
+	15	rests
+			sense:	lie.v.06
+			prop:	rest.01
+			V		15-15	rests 
+			N-ARGM-LOC		0-6	In cases of the federal death penalty 
+			N-ARG-A1		8-14	the power to seek the death penalty 
+	16	with
+	17	the
+			coref:	IDENT			0	17-19	the Attorney General 
+	18	Attorney
+			name:	TITLE				18-19	Attorney General 
+	19	General
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Under the Appointments Clause of the Constitution , the Attorney General is nominated by the President and appointed with the advice and consent of the Senate .
+
+
+Treebanked sentence:
+--------------------
+Under the Appointments Clause of the Constitution , the Attorney General is nominated by the President and appointed with the advice and consent of the Senate . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Under)
+      (NP
+        (NP (DT the) (NNS Appointments) (NN Clause))
+        (PP (IN of)
+          (NP (DT the) (NNP Constitution)))))
+    (, ,)
+    (NP (DT the) (NNP Attorney) (NNP General))
+    (VP (VBZ is)
+      (VP
+        (VP (VBN nominated)
+          (PP (IN by)
+            (NP (DT the) (NNP President))))
+        (CC and)
+        (VP (VBN appointed)
+          (PP (IN with)
+            (NP
+              (NP (DT the) (NN advice)
+                (CC and)
+                (NN consent))
+              (PP (IN of)
+                (NP (DT the) (NNP Senate))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Under
+	1	the
+	2	Appointments
+			sense:	appointment.n.01
+	3	Clause
+			sense:	article.n.03
+	4	of
+	5	the
+			coref:	IDENT			3	5-6	the Constitution 
+	6	Constitution
+	7	,
+	8	the
+			coref:	IDENT			0	8-10	the Attorney General 
+	9	Attorney
+			name:	TITLE				9-10	Attorney General 
+	10	General
+	11	is
+			sense:	be.v.01
+			prop:	be.03
+			V		11-11	is 
+	12	nominated
+			sense:	nominate.v.02
+			prop:	nominate.01
+			V		12-12	nominated 
+			N-ARGM-LOC		0-6	Under the Appointments Clause of the Constitution 
+			N-ARG-A1		8-10	the Attorney General 
+			N-ARG-A0		13-15	by the President 
+	13	by
+	14	the
+			coref:	IDENT			2	14-15	the President 
+	15	President
+			name:	TITLE				15-15	President 
+	16	and
+	17	appointed
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		17-17	appointed 
+			N-ARG-A1		8-10	the Attorney General 
+			N-ARGM-MNR		18-25	with the advice and consent of the Senate 
+	18	with
+	19	the
+	20	advice
+			sense:	advice.n.01
+	21	and
+	22	consent
+			sense:	consent.n.01
+	23	of
+	24	the
+	25	Senate
+			name:	ORGANIZATION				25-25	Senate 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Constitution provides that civil officers of the United States , which would include the Attorney General , may be impeached by Congress for treason , bribery , or " high crimes and misdemeanors " .
+
+
+Treebanked sentence:
+--------------------
+The Constitution provides that civil officers of the United States , which would include the Attorney General , may be impeached by Congress for treason , bribery , or " high crimes and misdemeanors " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Constitution))
+    (VP (VBZ provides)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP
+              (NP (JJ civil) (NNS officers))
+              (PP (IN of)
+                (NP (DT the) (NNP United) (NNP States))))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (MD would)
+                  (VP (VB include)
+                    (NP (DT the) (NNP Attorney) (NNP General))))))
+            (, ,))
+          (VP (MD may)
+            (VP (VB be)
+              (VP (VBN impeached)
+                (PP (IN by)
+                  (NP (NNP Congress)))
+                (PP (IN for)
+                  (NP
+                    (NP (NN treason))
+                    (, ,)
+                    (NP (NN bribery))
+                    (, ,)
+                    (CC or)
+                    (NP (`` ")
+                      (NP (JJ high) (NNS crimes))
+                      (CC and)
+                      (NP (NNS misdemeanors))
+                      ('' "))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-1	The Constitution 
+	1	Constitution
+	2	provides
+			sense:	provide.v.03
+			prop:	provide.01
+			V		2-2	provides 
+			N-ARG-A0		0-1	The Constitution 
+			N-ARG-A1		3-34	that civil officers of the United States , which would include the Attorney General , may be impeached by Congress for treason , bribery , or " high crimes and misdemeanors " 
+	3	that
+	4	civil
+			sense:	civil.s.01
+	5	officers
+			sense:	officeholder.n.01
+	6	of
+	7	the
+			coref:	IDENT			4	7-9	the United States 
+	8	United
+			name:	COUNTRY				8-9	United States 
+	9	States
+	10	,
+	11	which
+	12	would
+	13	include
+			sense:	include.v.01
+			prop:	include.01
+			V		13-13	include 
+			N-ARG-A2		4-9	civil officers of the United States 
+			R-ARG-A2		11-11	which 
+			N-ARGM-MOD		12-12	would 
+			N-ARG-A1		14-16	the Attorney General 
+	14	the
+			coref:	IDENT			0	14-16	the Attorney General 
+	15	Attorney
+			name:	TITLE				15-16	Attorney General 
+	16	General
+	17	,
+	18	may
+	19	be
+			sense:	be.v.01
+			prop:	be.03
+			V		19-19	be 
+	20	impeached
+			sense:	impeach.v.02
+			prop:	impeach.01
+			V		20-20	impeached 
+			N-ARG-A1		4-16	civil officers of the United States , which would include the Attorney General 
+			N-ARGM-MOD		18-18	may 
+			N-ARG-A0		21-22	by Congress 
+			N-ARG-A2		23-34	for treason , bribery , or " high crimes and misdemeanors " 
+	21	by
+	22	Congress
+			name:	ORGANIZATION				22-22	Congress 
+	23	for
+	24	treason
+			name:	CRIMINAL_CHARGE				24-24	treason 
+			sense:	treason.n.01
+	25	,
+	26	bribery
+			name:	CRIMINAL_CHARGE				26-26	bribery 
+			sense:	bribery.n.01
+	27	,
+	28	or
+	29	"
+	30	high
+			sense:	high.a.01
+	31	crimes
+			sense:	crime.n.01
+	32	and
+	33	misdemeanors
+			name:	CRIMINAL_CHARGE				33-33	misdemeanors 
+			sense:	misdemeanor.n.01
+	34	"
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Attorney General may be removed at will by the President under the Supreme Court decision Myers v. United States , which found that the President may remove executive branch officials without the consent of the Senate or any other entity .
+
+
+Treebanked sentence:
+--------------------
+The Attorney General may be removed at will by the President under the Supreme Court decision Myers v. United States , which found that the President may remove executive branch officials without the consent of the Senate or any other entity . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Attorney) (NNP General))
+    (VP (MD may)
+      (VP (VB be)
+        (VP (VBN removed)
+          (PP (IN at)
+            (NP (NN will)))
+          (PP (IN by)
+            (NP (DT the) (NNP President)))
+          (PP (IN under)
+            (NP
+              (NP (DT the)
+                (NML (NNP Supreme) (NNP Court))
+                (NN decision)
+                (NML (NNP Myers)
+                  (CC v.)
+                  (NNP United))
+                (NNP States))
+              (, ,)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBD found)
+                    (SBAR (IN that)
+                      (S
+                        (NP (DT the) (NNP President))
+                        (VP (MD may)
+                          (VP (VB remove)
+                            (NP (JJ executive) (NN branch) (NNS officials))
+                            (PP (IN without)
+                              (NP
+                                (NP (DT the) (NN consent))
+                                (PP (IN of)
+                                  (NP
+                                    (NP (DT the) (NNP Senate))
+                                    (CC or)
+                                    (NP (DT any) (JJ other) (NN entity))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-2	The Attorney General 
+	1	Attorney
+			name:	TITLE				1-2	Attorney General 
+	2	General
+	3	may
+	4	be
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	be 
+	5	removed
+			sense:	remove.v.02
+			prop:	remove.01
+			V		5-5	removed 
+			N-ARG-A1		0-2	The Attorney General 
+			N-ARGM-MOD		3-3	may 
+			N-ARGM-MNR		6-7	at will 
+			N-ARG-A0		8-10	by the President 
+			N-ARGM-LOC		11-40	under the Supreme Court decision Myers v. United States , which found that the President may remove executive branch officials without the consent of the Senate or any other entity 
+	6	at
+	7	will
+			sense:	volition.n.01
+	8	by
+	9	the
+			coref:	IDENT			2	9-10	the President 
+	10	President
+			name:	TITLE				10-10	President 
+	11	under
+	12	the
+	13	Supreme
+			name:	ORGANIZATION				13-14	Supreme Court 
+	14	Court
+	15	decision
+			sense:	decision.n.02
+	16	Myers
+			name:	PERSON				16-16	Myers 
+	17	v.
+	18	United
+			name:	COUNTRY				18-19	United States 
+	19	States
+	20	,
+	21	which
+	22	found
+			sense:	rule.v.04
+			prop:	find.01
+			V		22-22	found 
+			N-ARG-A0		12-19	the Supreme Court decision Myers v. United States 
+			R-ARG-A0		21-21	which 
+			N-ARG-A1		24-40	the President may remove executive branch officials without the consent of the Senate or any other entity 
+	23	that
+	24	the
+			coref:	IDENT			2	24-25	the President 
+	25	President
+			name:	TITLE				25-25	President 
+	26	may
+	27	remove
+			sense:	remove.v.02
+			prop:	remove.01
+			V		27-27	remove 
+			N-ARG-A0		24-25	the President 
+			N-ARGM-MOD		26-26	may 
+			N-ARG-A1		28-30	executive branch officials 
+			N-ARGM-MNR		31-40	without the consent of the Senate or any other entity 
+	28	executive
+			name:	TITLE				28-28	executive 
+			sense:	executive.a.01
+	29	branch
+			sense:	branch.n.01
+	30	officials
+			sense:	official.n.01
+	31	without
+	32	the
+	33	consent
+			sense:	consent.n.01
+	34	of
+	35	the
+	36	Senate
+			name:	ORGANIZATION				36-36	Senate 
+	37	or
+	38	any
+	39	other
+			sense:	other.a.01
+	40	entity
+			sense:	entity.n.01
+	41	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The common law further suggests that the President has the power to remove an official engaged in purely executive functions or an official whose duties immediately affect the President 's ability to fulfill his constitutional responsibilities , ( Bowsher v. Synar , 1986 ) .
+
+
+Treebanked sentence:
+--------------------
+The common law further suggests that the President has the power to remove an official engaged in purely executive functions or an official whose duties immediately affect the President 's ability to fulfill his constitutional responsibilities , ( Bowsher v. Synar , 1986 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJ common) (NN law))
+    (ADVP (RB further))
+    (VP (VBZ suggests)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NNP President))
+          (VP (VBZ has)
+            (NP (DT the) (NN power)
+              (S
+                (VP (TO to)
+                  (VP (VB remove)
+                    (SBAR
+                      (S
+                        (NP (DT an) (NN official))
+                        (VP (VBD engaged)
+                          (PP (IN in)
+                            (NP
+                              (NP (RB purely) (JJ executive) (NNS functions))
+                              (CC or)
+                              (NP
+                                (NP (DT an) (JJ official))
+                                (SBAR
+                                  (WHNP (WP$ whose) (NNS duties))
+                                  (S
+                                    (ADVP (RB immediately))
+                                    (VP (VBP affect)
+                                      (NP
+                                        (NP (DT the) (NNP President) (POS 's))
+                                        (NN ability)
+                                        (S
+                                          (VP (TO to)
+                                            (VP (VB fulfill)
+                                              (NP (PRP$ his) (JJ constitutional) (NNS responsibilities))))))))
+                                  (, ,)))))
+                          (PRN (-LRB- -LRB-)
+                            (NP
+                              (NP (NNP Bowsher))
+                              (PP (CC v.)
+                                (NP (NNP Synar))))
+                            (, ,)
+                            (NP (CD 1986))
+                            (-RRB- -RRB-)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	common
+			sense:	common.a.01
+	2	law
+			sense:	law.n.01
+	3	further
+			sense:	further.r.01
+	4	suggests
+			sense:	suggest.v.03
+			prop:	suggest.01
+			V		4-4	suggests 
+			N-ARG-A0		0-2	The common law 
+			N-ARGM-EXT		3-3	further 
+			N-ARG-A1		5-35	that the President has the power to remove an official engaged in purely executive functions or an official whose duties immediately affect the President 's ability to fulfill his constitutional responsibilities 
+			N-ARGM-ADV		37-43	( Bowsher v. Synar , 1986 ) 
+	5	that
+	6	the
+			coref:	IDENT			2	6-7	the President 
+	7	President
+			name:	TITLE				7-7	President 
+	8	has
+			sense:	have.v.01
+			prop:	have.03
+			V		8-8	has 
+			N-ARG-A0		6-7	the President 
+			N-ARG-A1		9-35	the power to remove an official engaged in purely executive functions or an official whose duties immediately affect the President 's ability to fulfill his constitutional responsibilities 
+	9	the
+	10	power
+			sense:	power.n.01
+	11	to
+	12	remove
+			sense:	remove.v.02
+			prop:	remove.01
+			V		12-12	remove 
+			N-ARG-A0		6-7	the President 
+			N-ARG-A1		13-35	an official engaged in purely executive functions or an official whose duties immediately affect the President 's ability to fulfill his constitutional responsibilities 
+	13	an
+	14	official
+			sense:	official.n.01
+	15	engaged
+			sense:	prosecute.v.03
+			prop:	engage.01
+			V		15-15	engaged 
+			N-ARG-A1		13-14	an official 
+			N-ARG-A2		16-19	in purely executive functions 
+	16	in
+	17	purely
+			sense:	strictly.r.01
+	18	executive
+			name:	TITLE				18-18	executive 
+			sense:	executive.a.01
+	19	functions
+			sense:	function.n.03
+	20	or
+	21	an
+	22	official
+			sense:	official.a.01
+	23	whose
+	24	duties
+			sense:	duty.n.02
+	25	immediately
+			sense:	immediately.r.01
+	26	affect
+			sense:	affect.v.01
+			prop:	affect.01
+			V		26-26	affect 
+			N-ARG-A0		21-22	an official 
+			N-ARG-A0		23-24	whose duties 
+			N-ARGM-TMP		25-25	immediately 
+			N-ARG-A1		27-35	the President 's ability to fulfill his constitutional responsibilities 
+	27	the
+			coref:	IDENT			2	27-29	the President 's 
+	28	President
+			name:	TITLE				28-28	President 
+	29	's
+	30	ability
+			sense:	ability.n.01
+	31	to
+	32	fulfill
+			sense:	carry_through.v.01
+			prop:	fulfill.01
+			V		32-32	fulfill 
+			N-ARG-A1		33-35	his constitutional responsibilities 
+	33	his
+			coref:	IDENT			2	33-33	his 
+	34	constitutional
+			sense:	constitutional.a.02
+	35	responsibilities
+			sense:	duty.n.01
+	36	,
+	37	(
+	38	Bowsher
+			name:	PERSON				38-38	Bowsher 
+	39	v.
+	40	Synar
+			name:	PERSON				40-40	Synar 
+	41	,
+	42	1986
+			name:	DATE				42-42	1986 
+	43	)
+	44	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.17-19	the Attorney General 
+				2.8-10	the Attorney General 
+				3.14-16	the Attorney General 
+				4.0-2	The Attorney General 
+	Chain 1 (IDENT)
+				0.1-2	United States 
+				0.33-34	United States 
+	Chain 2 (IDENT)
+				5.27-29	the President 's 
+				2.14-15	the President 
+				4.9-10	the President 
+				4.24-25	the President 
+				5.6-7	the President 
+				5.33-33	his 
+	Chain 3 (IDENT)
+				2.5-6	the Constitution 
+				3.0-1	The Constitution 
+	Chain 4 (IDENT)
+				3.7-9	the United States 
+				0.32-35	the United States government 
+

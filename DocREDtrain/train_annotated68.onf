@@ -1,0 +1,515 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Robert Henry " Bob " Gurr ( born October 25 , 1931 in Los Angeles , California ) is an American amusement ride designer and Imagineer .
+
+
+Treebanked sentence:
+--------------------
+Robert Henry " Bob " Gurr ( born October 25 , 1931 in Los Angeles , California ) is an American amusement ride designer and Imagineer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Robert) (NNP Henry) ('' ") (NNP Bob))
+    ('' ")
+    (NP
+      (NP (NNP Gurr))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP October) (CD 25) (, ,) (CD 1931))
+        (PP (IN in)
+          (NP
+            (NP (NNP Los) (NNP Angeles))
+            (, ,)
+            (NP (NNP California)))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ American) (NN amusement) (NN ride) (NN designer))
+        (CC and)
+        (NP (NNP Imagineer))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Robert
+			name:	PERSON				0-5	Robert Henry " Bob " Gurr 
+	1	Henry
+	2	"
+	3	Bob
+	4	"
+	5	Gurr
+			coref:	IDENT			0	5-16	Gurr ( born October 25 , 1931 in Los Angeles , California 
+	6	(
+	7	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		7-7	born 
+			N-ARG-A1		0-5	Robert Henry " Bob " Gurr 
+			N-ARGM-TMP		8-11	October 25 , 1931 
+			N-ARGM-LOC		12-16	in Los Angeles , California 
+	8	October
+			name:	DATE				8-11	October 25 , 1931 
+	9	25
+	10	,
+	11	1931
+	12	in
+	13	Los
+			name:	CITY				13-14	Los Angeles 
+	14	Angeles
+	15	,
+	16	California
+			name:	STATE_OR_PROVINCE				16-16	California 
+	17	)
+	18	is
+			sense:	be.v.02
+			prop:	be.01
+			V		18-18	is 
+			N-ARG-A1		0-17	Robert Henry " Bob " Gurr ( born October 25 , 1931 in Los Angeles , California ) 
+			N-ARG-A2		19-25	an American amusement ride designer and Imagineer 
+	19	an
+	20	American
+			name:	NATIONALITY				20-20	American 
+	21	amusement
+			sense:	entertainment.n.01
+	22	ride
+			sense:	ride.n.02
+	23	designer
+			name:	TITLE				23-23	designer 
+			sense:	architect.n.01
+	24	and
+	25	Imagineer
+			name:	ORGANIZATION				25-25	Imagineer 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His most famous work was for Walt Disney 's Disneyland Park , and its subsequent sister parks .
+
+
+Treebanked sentence:
+--------------------
+His most famous work was for Walt Disney 's Disneyland Park , and its subsequent sister parks . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His)
+      (ADJP (RBS most) (JJ famous))
+      (NN work))
+    (VP (VBD was)
+      (PP (IN for)
+        (NP
+          (NP
+            (NP (NNP Walt) (NNP Disney) (POS 's))
+            (NNP Disneyland) (NNP Park))
+          (, ,)
+          (CC and)
+          (NP (PRP$ its) (JJ subsequent) (NN sister) (NNS parks)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+	1	most
+			sense:	most.r.01
+	2	famous
+			sense:	celebrated.s.01
+	3	work
+			sense:	work.n.02
+	4	was
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	was 
+			N-ARG-A1		0-3	His most famous work 
+			N-ARG-A2		5-16	for Walt Disney 's Disneyland Park , and its subsequent sister parks 
+	5	for
+	6	Walt
+			name:	ORGANIZATION				6-7	Walt Disney 
+	7	Disney
+	8	's
+	9	Disneyland
+			name:	LOCATION				9-10	Disneyland Park 
+	10	Park
+	11	,
+	12	and
+	13	its
+	14	subsequent
+			sense:	subsequent.a.01
+	15	sister
+			sense:	sister.n.01
+	16	parks
+			sense:	park.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Gurr is said to have designed most , if not all , of the ride vehicles of the Disneyland attractions , including Autopia , Haunted Mansion , the Disneyland Monorail , the Submarine Voyage , and the Matterhorn Bobsleds .
+
+
+Treebanked sentence:
+--------------------
+Gurr is said to have designed most , if not all , of the ride vehicles of the Disneyland attractions , including Autopia , Haunted Mansion , the Disneyland Monorail , the Submarine Voyage , and the Matterhorn Bobsleds . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Gurr))
+    (VP (VBZ is)
+      (VP (VBN said)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (VP (VBN designed)
+                (ADVP (RBS most))))))
+        (, ,)
+        (NAC
+          (CONJP (IN if) (RB not))
+          (NP
+            (NP (DT all))
+            (, ,)
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN ride) (NNS vehicles))
+                (PP (IN of)
+                  (NP (DT the) (NNP Disneyland) (NNS attractions)))
+                (, ,)
+                (PP (VBG including)
+                  (NP
+                    (NP (NNP Autopia))
+                    (, ,)
+                    (NP (NNP Haunted) (NNP Mansion))
+                    (, ,)
+                    (NP (DT the) (NNP Disneyland) (NNP Monorail))
+                    (, ,)
+                    (NP (DT the) (NNP Submarine) (NN Voyage))
+                    (, ,)
+                    (CC and)
+                    (NP (DT the) (NNP Matterhorn) (NNPS Bobsleds))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Gurr
+			coref:	IDENT			0	0-0	Gurr 
+			name:	PERSON				0-0	Gurr 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	said
+			sense:	allege.v.01
+			prop:	say.01
+			V		2-2	said 
+			N-ARG-A1		0-0	Gurr 
+			C-ARG-A1		3-38	to have designed most , if not all , of the ride vehicles of the Disneyland attractions , including Autopia , Haunted Mansion , the Disneyland Monorail , the Submarine Voyage , and the Matterhorn Bobsleds 
+	3	to
+	4	have
+			sense:	have.v.01
+			prop:	have.01
+			V		4-4	have 
+	5	designed
+			sense:	design.v.03
+			prop:	design.01
+			V		5-5	designed 
+			N-ARG-A0		0-0	Gurr 
+			N-ARG-A1		6-38	most , if not all , of the ride vehicles of the Disneyland attractions , including Autopia , Haunted Mansion , the Disneyland Monorail , the Submarine Voyage , and the Matterhorn Bobsleds 
+	6	most
+			sense:	about.r.07
+	7	,
+	8	if
+	9	not
+			sense:	not.r.01
+	10	all
+	11	,
+	12	of
+	13	the
+	14	ride
+			sense:	ride.n.02
+	15	vehicles
+			sense:	vehicle.n.01
+	16	of
+	17	the
+	18	Disneyland
+			name:	LOCATION				18-18	Disneyland 
+	19	attractions
+			sense:	attraction.n.02
+	20	,
+	21	including
+			sense:	include.v.01
+			prop:	include.01
+			V		21-21	including 
+			N-ARG-A2		13-19	the ride vehicles of the Disneyland attractions 
+			N-ARG-A1		22-38	Autopia , Haunted Mansion , the Disneyland Monorail , the Submarine Voyage , and the Matterhorn Bobsleds 
+	22	Autopia
+			name:	ORGANIZATION				22-22	Autopia 
+	23	,
+	24	Haunted
+	25	Mansion
+	26	,
+	27	the
+	28	Disneyland
+			name:	ORGANIZATION				28-29	Disneyland Monorail 
+	29	Monorail
+	30	,
+	31	the
+	32	Submarine
+	33	Voyage
+			sense:	ocean_trip.n.01
+	34	,
+	35	and
+	36	the
+	37	Matterhorn
+	38	Bobsleds
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was named a Disney Legend in 2004 .
+
+
+Treebanked sentence:
+--------------------
+He was named a Disney Legend in 2004 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN named)
+        (NP
+          (NP (DT a) (NNP Disney) (NNP Legend))
+          (PP (IN in)
+            (NP (CD 2004))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	named
+			sense:	name.v.03
+			prop:	name.01
+			V		2-2	named 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		3-5	a Disney Legend 
+			N-ARGM-TMP		6-7	in 2004 
+	3	a
+	4	Disney
+			name:	ORGANIZATION				4-4	Disney 
+	5	Legend
+	6	in
+	7	2004
+			name:	DATE				7-7	2004 
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also worked on the King Kong Encounter animatronic for Universal Studios Hollywood .
+
+
+Treebanked sentence:
+--------------------
+He also worked on the King Kong Encounter animatronic for Universal Studios Hollywood . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD worked)
+      (PP (IN on)
+        (NP
+          (NP (DT the) (NNP King) (NNP Kong) (NNP Encounter))
+          (ADJP (JJ animatronic)
+            (PP (IN for)
+              (NP (NNP Universal) (NNP Studios) (NNP Hollywood)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	also
+			sense:	besides.r.02
+	2	worked
+			sense:	work.v.01
+			prop:	work.01
+			V		2-2	worked 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-8	on the King Kong Encounter animatronic 
+			N-ARG-A2		9-12	for Universal Studios Hollywood 
+	3	on
+	4	the
+	5	King
+			name:	ORGANIZATION				5-12	King Kong Encounter animatronic for Universal Studios Hollywood 
+	6	Kong
+	7	Encounter
+	8	animatronic
+	9	for
+	10	Universal
+	11	Studios
+	12	Hollywood
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Gurr began his career with Disney designing the Autopia vehicles .
+
+
+Treebanked sentence:
+--------------------
+Gurr began his career with Disney designing the Autopia vehicles . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Gurr))
+    (VP (VBD began)
+      (NP (PRP$ his) (NN career))
+      (PP (IN with)
+        (NP (NNP Disney)))
+      (S
+        (VP (VBG designing)
+          (NP (DT the) (NNP Autopia) (NNS vehicles)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Gurr
+			coref:	IDENT			0	0-0	Gurr 
+			name:	PERSON				0-0	Gurr 
+	1	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		1-1	began 
+			N-ARG-A0		0-0	Gurr 
+			N-ARG-A1		2-3	his career 
+			N-ARGM-PRD		6-9	designing the Autopia vehicles 
+	2	his
+			coref:	IDENT			0	2-2	his 
+	3	career
+			sense:	career.n.01
+	4	with
+	5	Disney
+			name:	ORGANIZATION				5-5	Disney 
+	6	designing
+			sense:	design.v.04
+			prop:	design.01
+			V		6-6	designing 
+			N-ARG-A0		0-0	Gurr 
+			N-ARG-A1		7-9	the Autopia vehicles 
+	7	the
+	8	Autopia
+	9	vehicles
+			sense:	vehicle.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He later gave himself the title of Director of Special Vehicle Development .
+
+
+Treebanked sentence:
+--------------------
+He later gave himself the title of Director of Special Vehicle Development . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB later))
+    (VP (VBD gave)
+      (NP (PRP himself))
+      (NP
+        (NP (DT the) (NN title))
+        (PP (IN of)
+          (NP
+            (NP (NNP Director))
+            (PP (IN of)
+              (NP (NNP Special) (NNP Vehicle) (NNP Development)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	later
+			sense:	subsequently.r.01
+	2	gave
+			sense:	give.v.01
+			prop:	give.01
+			V		2-2	gave 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		1-1	later 
+			N-ARG-A2		3-3	himself 
+			N-ARG-A1		4-11	the title of Director of Special Vehicle Development 
+	3	himself
+			coref:	IDENT			0	3-3	himself 
+	4	the
+	5	title
+			sense:	title.n.06
+	6	of
+	7	Director
+			name:	TITLE				7-7	Director 
+	8	of
+	9	Special
+	10	Vehicle
+	11	Development
+	12	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.5-16	Gurr ( born October 25 , 1931 in Los Angeles , California 
+				2.0-0	Gurr 
+				3.0-0	He 
+				4.0-0	He 
+				5.0-0	Gurr 
+				5.2-2	his 
+				6.0-0	He 
+				6.3-3	himself 
+

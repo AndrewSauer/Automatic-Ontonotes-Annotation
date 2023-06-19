@@ -1,0 +1,570 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Soknedal is a village in Midtre Gauldal municipality in Trøndelag county , Norway .
+
+
+Treebanked sentence:
+--------------------
+Soknedal is a village in Midtre Gauldal municipality in Trøndelag county , Norway . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Soknedal))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN village))
+        (PP (IN in)
+          (NP
+            (NP
+              (NML (NNP Midtre) (NNP Gauldal))
+              (NN municipality))
+            (PP (IN in)
+              (NP
+                (NP (NNP Trøndelag) (NN county))
+                (, ,)
+                (NP (NNP Norway))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Soknedal
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Soknedal 
+			N-ARG-A2		2-12	a village in Midtre Gauldal municipality in Trøndelag county , Norway 
+	2	a
+			coref:	IDENT			1	2-12	a village in Midtre Gauldal municipality in Trøndelag county , Norway 
+	3	village
+			sense:	village.n.01
+	4	in
+	5	Midtre
+			coref:	IDENT			0	5-12	Midtre Gauldal municipality in Trøndelag county , Norway 
+			name:	LOCATION				5-6	Midtre Gauldal 
+	6	Gauldal
+	7	municipality
+			sense:	municipality.n.01
+	8	in
+	9	Trøndelag
+			name:	LOCATION				9-10	Trøndelag county 
+	10	county
+			sense:	county.n.01
+	11	,
+	12	Norway
+			name:	COUNTRY				12-12	Norway 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The village is located along the river Sokna which flows north and later joins the river Gaula .
+
+
+Treebanked sentence:
+--------------------
+The village is located along the river Sokna which flows north and later joins the river Gaula . 
+
+Tree:
+-----
+(ROOT
+  (SINV
+    (S
+      (NP (DT The) (NN village))
+      (VP (VBZ is)
+        (VP (VBN located)
+          (PP (IN along)
+            (NP
+              (NP (DT the) (NN river) (NNP Sokna))
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBZ flows)
+                    (ADVP (RB north)
+                      (CC and)
+                      (RB later))))))))))
+    (VP (VBZ joins)
+      (NP (DT the) (NN river)))
+    (NP (NNP Gaula))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The village 
+	1	village
+			sense:	village.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		3-3	located 
+			N-ARG-A1		0-1	The village 
+			N-ARGM-LOC		4-16	along the river Sokna which flows north and later joins the river Gaula 
+	4	along
+	5	the
+	6	river
+			name:	TITLE				6-6	river 
+			sense:	river.n.01
+	7	Sokna
+			name:	CITY				7-7	Sokna 
+	8	which
+	9	flows
+			sense:	run.v.06
+			prop:	flow.01
+			V		9-9	flows 
+			N-ARG-A1		5-7	the river Sokna 
+			R-ARG-A1		8-8	which 
+			N-ARGM-DIR		10-10	north 
+	10	north
+			sense:	north.r.01
+	11	and
+	12	later
+			sense:	subsequently.r.01
+	13	joins
+			sense:	connect.v.03
+			prop:	join.01
+			V		13-13	joins 
+			N-ARG-A0		5-7	the river Sokna 
+			R-ARG-A0		8-8	which 
+			N-ARGM-TMP		12-12	later 
+			N-ARG-A1		14-16	the river Gaula 
+	14	the
+	15	river
+			name:	TITLE				15-15	river 
+			sense:	river.n.01
+	16	Gaula
+			name:	PERSON				16-16	Gaula 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Dovrebanen railway line and the European route E06 highway both run through the village , heading to the city of Trondheim which is about to the north .
+
+
+Treebanked sentence:
+--------------------
+The Dovrebanen railway line and the European route E06 highway both run through the village , heading to the city of Trondheim which is about to the north . 
+
+Tree:
+-----
+(ROOT
+  (UCP
+    (NP
+      (NP (DT The) (NNP Dovrebanen) (NN railway) (NN line))
+      (CC and)
+      (NP (DT the) (JJ European) (NN route) (NN E06) (NN highway)))
+    (CC both)
+    (S
+      (VP (VB run)
+        (PP (IN through)
+          (NP (DT the) (NN village)))
+        (, ,)
+        (S
+          (VP (VBG heading)
+            (PP (IN to)
+              (NP
+                (NP
+                  (NP (DT the) (NN city))
+                  (PP (IN of)
+                    (NP (NNP Trondheim))))
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBZ is)
+                      (ADVP (RB about))
+                      (PP (IN to)
+                        (NP (DT the) (NN north))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Dovrebanen
+			name:	MISC				1-1	Dovrebanen 
+	2	railway
+			sense:	railway.n.01
+	3	line
+			sense:	line.n.14
+	4	and
+	5	the
+	6	European
+			name:	NATIONALITY				6-6	European 
+	7	route
+			sense:	road.n.01
+	8	E06
+	9	highway
+			sense:	highway.n.01
+	10	both
+	11	run
+			sense:	run.v.03
+			prop:	run.04
+			V		11-11	run 
+			N-ARG-A1		0-10	The Dovrebanen railway line and the European route E06 highway both 
+			N-ARGM-DIR		12-14	through the village 
+			N-ARGM-ADV		16-27	heading to the city of Trondheim which is about to the north 
+	12	through
+	13	the
+			coref:	IDENT			1	13-14	the village 
+	14	village
+			sense:	village.n.01
+	15	,
+	16	heading
+			sense:	head.v.01
+			prop:	head.02
+			V		16-16	heading 
+			N-ARG-A0		0-10	The Dovrebanen railway line and the European route E06 highway both 
+			N-ARG-A1		17-27	to the city of Trondheim which is about to the north 
+	17	to
+	18	the
+	19	city
+			sense:	city.n.01
+	20	of
+	21	Trondheim
+			name:	CITY				21-21	Trondheim 
+	22	which
+	23	is
+			sense:	be.v.03
+			prop:	be.01
+			V		23-23	is 
+			N-ARG-A1		18-21	the city of Trondheim 
+			R-ARG-A1		22-22	which 
+			N-ARG-A2		24-27	about to the north 
+	24	about
+			sense:	approximately.r.01
+	25	to
+	26	the
+	27	north
+			sense:	north.n.03
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The village of Støren lies about to the north and the village of Berkåk lies about to the south .
+
+
+Treebanked sentence:
+--------------------
+The village of Støren lies about to the north and the village of Berkåk lies about to the south . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NN village))
+        (PP (IN of)
+          (NP (NNP Støren))))
+      (VP (VBZ lies)
+        (ADVP (RB about))
+        (PP (IN to)
+          (NP (DT the) (NN north)))))
+    (CC and)
+    (S
+      (NP
+        (NP (DT the) (NN village))
+        (PP (IN of)
+          (NP (NNP Berkåk))))
+      (VP (VBZ lies)
+        (ADVP (RB about))
+        (PP (IN to)
+          (NP (DT the) (NN south)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-3	The village of Støren 
+	1	village
+			sense:	village.n.01
+	2	of
+	3	Støren
+			name:	LOCATION				3-3	Støren 
+	4	lies
+			sense:	lie.v.01
+			prop:	lie.01
+			V		4-4	lies 
+			N-ARG-A1		0-3	The village of Støren 
+			N-ARG-A2		5-8	about to the north 
+	5	about
+			sense:	approximately.r.01
+	6	to
+	7	the
+	8	north
+			sense:	north.n.03
+	9	and
+	10	the
+			coref:	IDENT			1	10-13	the village of Berkåk 
+	11	village
+			sense:	village.n.01
+	12	of
+	13	Berkåk
+			name:	LOCATION				13-13	Berkåk 
+	14	lies
+			sense:	lie.v.01
+			prop:	lie.01
+			V		14-14	lies 
+			N-ARG-A1		10-13	the village of Berkåk 
+			N-ARG-A2		15-18	about to the south 
+	15	about
+			sense:	approximately.r.01
+	16	to
+	17	the
+	18	south
+			sense:	south.n.03
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The village has a population ( 2017 ) of 310 which gives the village a population density of .
+
+
+Treebanked sentence:
+--------------------
+The village has a population ( 2017 ) of 310 which gives the village a population density of . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN village))
+    (VP (VBZ has)
+      (NP
+        (NP
+          (NP (DT a) (NN population)
+            (PRN (-LRB- -LRB-)
+              (NP (CD 2017))
+              (-RRB- -RRB-)))
+          (PP (IN of)
+            (NP (CD 310))))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ gives)
+              (NP (DT the) (NN village))
+              (NP
+                (NP (DT a) (NN population) (NN density))
+                (PP (IN of))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The village 
+	1	village
+			sense:	village.n.01
+	2	has
+			sense:	have.v.02
+			prop:	have.03
+			V		2-2	has 
+			N-ARG-A0		0-1	The village 
+			N-ARG-A1		3-4	a population 
+			C-ARG-A1		8-9	of 310 
+			N-ARGM-ADV		10-17	which gives the village a population density of 
+	3	a
+	4	population
+			sense:	population.n.04
+	5	(
+	6	2017
+			name:	DATE				6-6	2017 
+	7	)
+	8	of
+	9	310
+			name:	NUMBER				9-9	310 
+	10	which
+	11	gives
+			sense:	yield.v.01
+			prop:	give.01
+			V		11-11	gives 
+			N-ARG-A0		3-4	a population 
+			R-ARG-A0		10-10	which 
+			N-ARG-A2		12-13	the village 
+			N-ARG-A1		14-17	a population density of 
+	12	the
+			coref:	IDENT			1	12-13	the village 
+	13	village
+			sense:	village.n.01
+	14	a
+	15	population
+			sense:	population.n.04
+	16	density
+			sense:	density.n.01
+	17	of
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The village of Soknedal was the administrative centre of the old municipality of Soknedal which existed from 1841 until 1964 .
+
+
+Treebanked sentence:
+--------------------
+The village of Soknedal was the administrative centre of the old municipality of Soknedal which existed from 1841 until 1964 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN village))
+      (PP (IN of)
+        (NP (NNP Soknedal))))
+    (VP (VBD was)
+      (NP
+        (NP
+          (NP (DT the) (JJ administrative) (NN centre))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (JJ old) (NN municipality))
+              (PP (IN of)
+                (NP (NNP Soknedal))))))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBD existed)
+              (PP (IN from)
+                (NP (CD 1841)))
+              (PP (IN until)
+                (NP (CD 1964))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-3	The village of Soknedal 
+	1	village
+			sense:	village.n.01
+	2	of
+	3	Soknedal
+			name:	CITY				3-3	Soknedal 
+	4	was
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	was 
+			N-ARG-A1		0-3	The village of Soknedal 
+			N-ARG-A2		5-19	the administrative centre of the old municipality of Soknedal which existed from 1841 until 1964 
+	5	the
+	6	administrative
+			sense:	administrative.a.01
+	7	centre
+			sense:	center.n.01
+	8	of
+	9	the
+			coref:	IDENT			0	9-13	the old municipality of Soknedal 
+	10	old
+			sense:	old.a.02
+	11	municipality
+			sense:	municipality.n.01
+	12	of
+	13	Soknedal
+			name:	CITY				13-13	Soknedal 
+	14	which
+	15	existed
+			sense:	exist.v.01
+			prop:	exist.01
+			V		15-15	existed 
+			N-ARG-A1		9-13	the old municipality of Soknedal 
+			R-ARG-A1		14-14	which 
+			N-ARGM-TMP		16-17	from 1841 
+			N-ARGM-TMP		18-19	until 1964 
+	16	from
+	17	1841
+			name:	DATE				17-17	1841 
+	18	until
+	19	1964
+			name:	DATE				19-19	1964 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Soknedal Church is located in the village .
+
+
+Treebanked sentence:
+--------------------
+Soknedal Church is located in the village . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Soknedal) (NNP Church))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN in)
+          (NP (DT the) (NN village)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Soknedal
+			name:	ORGANIZATION				0-1	Soknedal Church 
+	1	Church
+	2	is
+			sense:	be.v.03
+			prop:	be.03
+			V		2-2	is 
+	3	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		3-3	located 
+			N-ARG-A1		0-1	Soknedal Church 
+			N-ARGM-LOC		4-6	in the village 
+	4	in
+	5	the
+			coref:	IDENT			1	5-6	the village 
+	6	village
+			sense:	village.n.01
+	7	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.5-12	Midtre Gauldal municipality in Trøndelag county , Norway 
+				5.9-13	the old municipality of Soknedal 
+	Chain 1 (IDENT)
+				0.2-12	a village in Midtre Gauldal municipality in Trøndelag county , Norway 
+				1.0-1	The village 
+				2.13-14	the village 
+				3.0-3	The village of Støren 
+				3.10-13	the village of Berkåk 
+				4.0-1	The village 
+				4.12-13	the village 
+				5.0-3	The village of Soknedal 
+				6.5-6	the village 
+

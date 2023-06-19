@@ -1,0 +1,643 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Timo Werner (; born 6 March 1996 ) is a German professional footballer who plays as a forward for RB Leipzig and the Germany national team .
+
+
+Treebanked sentence:
+--------------------
+Timo Werner ( ; born 6 March 1996 ) is a German professional footballer who plays as a forward for RB Leipzig and the Germany national team . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Timo) (NNP Werner))
+      (-LRB- -LRB-)
+      (VP (: ;)
+        (VP (VBN born)
+          (NP (CD 6))
+          (NP-TMP (NNP March) (CD 1996))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ German) (JJ professional) (NN footballer))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ plays)
+              (PP (IN as)
+                (NP (DT a)
+                  (NML
+                    (PP
+                      (ADVP (RB forward))
+                      (IN for)
+                      (NP
+                        (NP (NNP RB) (NNP Leipzig))
+                        (CC and)
+                        (NP (DT the) (NNP Germany)))))
+                  (JJ national) (NN team))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Timo
+			coref:	IDENT			4	0-1	Timo Werner 
+			name:	PERSON				0-1	Timo Werner 
+	1	Werner
+	2	(
+	3	;
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-1	Timo Werner 
+			N-ARGM-TMP		5-7	6 March 1996 
+	5	6
+			name:	DATE				5-7	6 March 1996 
+	6	March
+	7	1996
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	Timo Werner ( ; born 6 March 1996 ) 
+			N-ARG-A2		10-26	a German professional footballer who plays as a forward for RB Leipzig and the Germany national team 
+	10	a
+	11	German
+			name:	NATIONALITY				11-11	German 
+	12	professional
+			sense:	professional.a.01
+	13	footballer
+			name:	TITLE				13-13	footballer 
+			sense:	football_player.n.01
+	14	who
+	15	plays
+			sense:	play.v.01
+			prop:	play.01
+			V		15-15	plays 
+			N-ARG-A0		10-13	a German professional footballer 
+			R-ARG-A0		14-14	who 
+			N-ARGM-ADV		19-26	for RB Leipzig and the Germany national team 
+	16	as
+	17	a
+	18	forward
+			sense:	forward.r.01
+	19	for
+	20	RB
+	21	Leipzig
+			name:	CITY				21-21	Leipzig 
+	22	and
+	23	the
+	24	Germany
+			name:	COUNTRY				24-24	Germany 
+	25	national
+			sense:	national.a.01
+	26	team
+			sense:	team.n.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Upon making his senior debut in 2013 , Werner became the youngest player ever to represent VfB Stuttgart and later became the club 's youngest ever goalscorer .
+
+
+Treebanked sentence:
+--------------------
+Upon making his senior debut in 2013 , Werner became the youngest player ever to represent VfB Stuttgart and later became the club 's youngest ever goalscorer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Upon)
+      (S
+        (VP (VBG making)
+          (NP (PRP$ his) (JJ senior) (NN debut))
+          (PP (IN in)
+            (NP (CD 2013))))))
+    (, ,)
+    (NP (NNP Werner))
+    (VP
+      (VP (VBD became)
+        (NP (DT the) (JJS youngest) (NN player))
+        (ADVP (RB ever))
+        (S
+          (VP (TO to)
+            (VP (VB represent)
+              (NP (NNP VfB) (NNP Stuttgart))))))
+      (CC and)
+      (ADVP (RB later))
+      (VP (VBD became)
+        (NP
+          (NP (DT the) (NN club) (POS 's))
+          (JJS youngest)
+          (NML
+            (ADVP (RB ever)))
+          (NN goalscorer))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Upon
+	1	making
+			sense:	make.v.01
+			prop:	make.01
+			V		1-1	making 
+			N-ARG-A1		2-4	his senior debut 
+			N-ARGM-TMP		5-6	in 2013 
+			N-ARG-A0		8-8	Werner 
+	2	his
+			coref:	IDENT			2	2-4	his senior debut 
+			coref:	IDENT			4	2-2	his 
+	3	senior
+			sense:	senior.s.02
+	4	debut
+			sense:	introduction.n.01
+	5	in
+	6	2013
+			name:	DATE				6-6	2013 
+	7	,
+	8	Werner
+			coref:	IDENT			4	8-8	Werner 
+			name:	PERSON				8-8	Werner 
+	9	became
+			sense:	become.v.01
+			prop:	become.01
+			V		9-9	became 
+			N-ARGM-TMP		0-6	Upon making his senior debut in 2013 
+			N-ARG-A1		8-8	Werner 
+			N-ARG-A2		10-17	the youngest player ever to represent VfB Stuttgart 
+	10	the
+	11	youngest
+			sense:	young.a.01
+	12	player
+			sense:	player.n.01
+	13	ever
+			sense:	ever.r.01
+	14	to
+	15	represent
+			sense:	represent.v.04
+			prop:	represent.01
+			V		15-15	represent 
+			N-ARG-A0		10-12	the youngest player 
+			N-ARGM-TMP		13-13	ever 
+			N-ARG-A1		16-17	VfB Stuttgart 
+	16	VfB
+			name:	ORGANIZATION				16-17	VfB Stuttgart 
+	17	Stuttgart
+	18	and
+	19	later
+			sense:	subsequently.r.01
+	20	became
+			sense:	become.v.01
+			prop:	become.01
+			V		20-20	became 
+			N-ARGM-TMP		0-6	Upon making his senior debut in 2013 
+			N-ARG-A1		8-8	Werner 
+			N-ARGM-TMP		19-19	later 
+			N-ARG-A2		21-26	the club 's youngest ever goalscorer 
+	21	the
+			coref:	IDENT			0	21-23	the club 's 
+	22	club
+			sense:	baseball_club.n.01
+	23	's
+	24	youngest
+			sense:	young.a.01
+	25	ever
+			sense:	ever.r.01
+	26	goalscorer
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He made over 100 appearances for the club before joining RB Leipzig in 2016 .
+
+
+Treebanked sentence:
+--------------------
+He made over 100 appearances for the club before joining RB Leipzig in 2016 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD made)
+      (PRT (RP over))
+      (NP
+        (NP (CD 100) (NNS appearances))
+        (PP (IN for)
+          (NP (DT the) (NN club))))
+      (PP (IN before)
+        (S
+          (VP (VBG joining)
+            (NP
+              (NP (NNP RB) (NNP Leipzig))
+              (PP (IN in)
+                (NP (CD 2016))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			4	0-0	He 
+	1	made
+			sense:	make.v.01
+			prop:	make.18
+			V		1-1	made 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-7	over 100 appearances for the club 
+			N-ARGM-TMP		8-13	before joining RB Leipzig in 2016 
+	2	over
+	3	100
+			name:	NUMBER				3-3	100 
+	4	appearances
+			sense:	appearance.n.05
+	5	for
+	6	the
+			coref:	IDENT			0	6-7	the club 
+	7	club
+			sense:	baseball_club.n.01
+	8	before
+	9	joining
+			sense:	join.v.01
+			prop:	join.01
+			V		9-9	joining 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		10-11	RB Leipzig 
+			N-ARGM-TMP		12-13	in 2016 
+	10	RB
+	11	Leipzig
+			name:	CITY				11-11	Leipzig 
+	12	in
+	13	2016
+			name:	DATE				13-13	2016 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also holds the records for being the youngest player to reach 100 and 150 Bundesliga appearances , as well as being the youngest player to score two goals in a top - flight match in Germany .
+
+
+Treebanked sentence:
+--------------------
+He also holds the records for being the youngest player to reach 100 and 150 Bundesliga appearances , as well as being the youngest player to score two goals in a top - flight match in Germany . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBZ holds)
+      (NP (DT the) (NNS records))
+      (PP (IN for)
+        (S
+          (S
+            (VP (VBG being)
+              (NP
+                (NP (DT the) (JJS youngest) (NN player))
+                (S
+                  (VP (TO to)
+                    (VP (VB reach)
+                      (NP
+                        (QP (CD 100)
+                          (CC and)
+                          (CD 150))
+                        (NNP Bundesliga) (NNS appearances))))))))
+          (, ,)
+          (CONJP (RB as) (RB well) (IN as))
+          (S
+            (VP (VBG being)
+              (NP
+                (NP (DT the) (JJS youngest) (NN player))
+                (S
+                  (VP (TO to)
+                    (VP (VB score)
+                      (NP
+                        (NP (CD two) (NNS goals))
+                        (PP (IN in)
+                          (NP (DT a)
+                            (NML (JJ top) (HYPH -) (NN flight))
+                            (NN match))))
+                      (PP (IN in)
+                        (NP (NNP Germany))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			4	0-0	He 
+	1	also
+			sense:	besides.r.02
+	2	holds
+			sense:	have.v.01
+			prop:	hold.01
+			V		2-2	holds 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-36	the records for being the youngest player to reach 100 and 150 Bundesliga appearances , as well as being the youngest player to score two goals in a top - flight match in Germany 
+	3	the
+	4	records
+			sense:	record.n.03
+	5	for
+	6	being
+			sense:	be.v.01
+			prop:	be.01
+			V		6-6	being 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		7-16	the youngest player to reach 100 and 150 Bundesliga appearances 
+	7	the
+	8	youngest
+			sense:	young.a.01
+	9	player
+			sense:	player.n.01
+	10	to
+	11	reach
+			sense:	reach.v.02
+			prop:	reach.01
+			V		11-11	reach 
+			N-ARG-A0		7-9	the youngest player 
+			N-ARG-A1		12-16	100 and 150 Bundesliga appearances 
+	12	100
+			name:	NUMBER				12-12	100 
+	13	and
+	14	150
+			name:	NUMBER				14-14	150 
+	15	Bundesliga
+			name:	MISC				15-15	Bundesliga 
+	16	appearances
+			sense:	appearance.n.05
+	17	,
+	18	as
+			sense:	equally.r.01
+	19	well
+			sense:	well.r.02
+	20	as
+	21	being
+			sense:	be.v.01
+			prop:	be.01
+			V		21-21	being 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		22-36	the youngest player to score two goals in a top - flight match in Germany 
+	22	the
+	23	youngest
+			sense:	young.a.01
+	24	player
+			sense:	player.n.01
+	25	to
+	26	score
+			sense:	score.v.01
+			prop:	score.01
+			V		26-26	score 
+			N-ARG-A0		22-24	the youngest player 
+			N-ARG-A1		27-28	two goals 
+			N-ARGM-LOC		29-36	in a top - flight match in Germany 
+	27	two
+			name:	NUMBER				27-27	two 
+	28	goals
+			sense:	goal.n.04
+	29	in
+	30	a
+	31	top
+			sense:	top.a.01
+	32	-
+	33	flight
+			sense:	trajectory.n.01
+	34	match
+			sense:	match.n.02
+	35	in
+	36	Germany
+			coref:	IDENT			3	36-36	Germany 
+			name:	COUNTRY				36-36	Germany 
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A prolific goalscorer at youth international level , Werner made his senior debut for Germany in 2017 .
+
+
+Treebanked sentence:
+--------------------
+A prolific goalscorer at youth international level , Werner made his senior debut for Germany in 2017 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (JJ prolific) (NN goalscorer))
+      (PP (IN at)
+        (NP
+          (NP (NN youth) (JJ international) (NN level))
+          (, ,)
+          (NP (NNP Werner)))))
+    (VP (VBD made)
+      (NP (PRP$ his) (JJ senior) (NN debut))
+      (PP (IN for)
+        (NP (NNP Germany)))
+      (PP (IN in)
+        (NP (CD 2017))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+			coref:	IDENT			1	0-8	A prolific goalscorer at youth international level , Werner 
+	1	prolific
+			sense:	fecund.s.02
+	2	goalscorer
+	3	at
+	4	youth
+			sense:	young.n.09
+	5	international
+			sense:	international.a.01
+	6	level
+			sense:	grade.n.02
+	7	,
+	8	Werner
+			coref:	IDENT			4	8-8	Werner 
+			name:	PERSON				8-8	Werner 
+	9	made
+			sense:	make.v.01
+			prop:	make.01
+			V		9-9	made 
+			R-ARG-A0		0-6	A prolific goalscorer at youth international level 
+			N-ARG-A0		8-8	Werner 
+			N-ARG-A1		10-12	his senior debut 
+			N-ARGM-TMP		15-16	in 2017 
+	10	his
+			coref:	IDENT			1	10-10	his 
+			coref:	IDENT			2	10-12	his senior debut 
+	11	senior
+			sense:	senior.a.01
+	12	debut
+			sense:	introduction.n.01
+	13	for
+	14	Germany
+			coref:	IDENT			3	14-14	Germany 
+			name:	COUNTRY				14-14	Germany 
+	15	in
+	16	2017
+			name:	DATE				16-16	2017 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the same year , he helped Germany claim the 2017 FIFA Confederations Cup where his return of three goals earned him the tournament 's Golden Boot award .
+
+
+Treebanked sentence:
+--------------------
+In the same year , he helped Germany claim the 2017 FIFA Confederations Cup where his return of three goals earned him the tournament 's Golden Boot award . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (JJ same) (NN year)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD helped)
+      (S
+        (NP (NNP Germany))
+        (VP (VB claim)
+          (NP
+            (NP (DT the) (CD 2017))
+            (NP (NNP FIFA) (NNPS Confederations) (NNP Cup)))
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP
+                (NP (PRP$ his) (NN return))
+                (PP (IN of)
+                  (NP (CD three) (NNS goals))))
+              (VP (VBD earned)
+                (NP (PRP him))
+                (NP
+                  (NP (DT the) (NN tournament) (POS 's))
+                  (NML (NNP Golden) (NNP Boot))
+                  (NN award))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+			name:	DATE				1-3	the same year 
+	2	same
+			sense:	same.a.01
+	3	year
+			sense:	year.n.01
+	4	,
+	5	he
+			coref:	IDENT			1	5-5	he 
+	6	helped
+			sense:	help.v.01
+			prop:	help.01
+			V		6-6	helped 
+			N-ARGM-TMP		0-3	In the same year 
+			N-ARG-A0		5-5	he 
+			N-ARG-A1		7-27	Germany claim the 2017 FIFA Confederations Cup where his return of three goals earned him the tournament 's Golden Boot award 
+	7	Germany
+			coref:	IDENT			3	7-7	Germany 
+			name:	COUNTRY				7-7	Germany 
+	8	claim
+			sense:	claim.v.02
+			prop:	claim.02
+			V		8-8	claim 
+			N-ARG-A0		7-7	Germany 
+			N-ARG-A1		9-13	the 2017 FIFA Confederations Cup 
+	9	the
+	10	2017
+			name:	DATE				10-10	2017 
+	11	FIFA
+			name:	ORGANIZATION				11-11	FIFA 
+	12	Confederations
+	13	Cup
+	14	where
+	15	his
+			coref:	IDENT			1	15-15	his 
+	16	return
+			sense:	restitution.n.03
+	17	of
+	18	three
+			name:	NUMBER				18-18	three 
+	19	goals
+			sense:	goal.n.04
+	20	earned
+			sense:	earn.v.02
+			prop:	earn.01
+			V		20-20	earned 
+			N-ARGM-LOC		14-14	where 
+			N-ARG-A0		15-19	his return of three goals 
+			N-ARG-A2		21-21	him 
+			N-ARG-A1		22-27	the tournament 's Golden Boot award 
+	21	him
+			coref:	IDENT			1	21-21	him 
+	22	the
+	23	tournament
+			sense:	tournament.n.01
+	24	's
+	25	Golden
+			name:	MISC				25-26	Golden Boot 
+	26	Boot
+	27	award
+			sense:	prize.n.01
+	28	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.21-23	the club 's 
+				2.6-7	the club 
+	Chain 1 (IDENT)
+				4.0-8	A prolific goalscorer at youth international level , Werner 
+				4.10-10	his 
+				5.5-5	he 
+				5.15-15	his 
+				5.21-21	him 
+	Chain 2 (IDENT)
+				1.2-4	his senior debut 
+				4.10-12	his senior debut 
+	Chain 3 (IDENT)
+				3.36-36	Germany 
+				4.14-14	Germany 
+				5.7-7	Germany 
+	Chain 4 (IDENT)
+				0.0-1	Timo Werner 
+				1.2-2	his 
+				1.8-8	Werner 
+				2.0-0	He 
+				3.0-0	He 
+				4.8-8	Werner 
+

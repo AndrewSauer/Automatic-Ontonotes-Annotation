@@ -1,0 +1,643 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+David Jefferson " Davy " Jones ( June 30 , 1880 – March 30 , 1972 ) , nicknamed " Kangaroo " , was an outfielder in Major League Baseball .
+
+
+Treebanked sentence:
+--------------------
+David Jefferson " Davy " Jones ( June 30 , 1880 – March 30 , 1972 ) , nicknamed " Kangaroo " , was an outfielder in Major League Baseball . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP David) (NNP Jefferson))
+        (NP ('' ") (NNP Davy) ('' "))
+        (NP (NNP Jones))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (NNP June) (CD 30))
+            (, ,)
+            (NP
+              (NP (NNP 1880))
+              (PP (SYM –)
+                (NP (NNP March) (CD 30) (, ,) (CD 1972)))))
+          (-RRB- -RRB-)))
+      (, ,)
+      (VP (VBN nicknamed)
+        (S (`` ")
+          (NP (NNP Kangaroo))
+          ('' ")))
+      (, ,))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (NN outfielder))
+        (PP (IN in)
+          (NP (NNP Major) (NNP League) (NNP Baseball)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	David
+			coref:	IDENT			1	0-1	David Jefferson 
+			name:	PERSON				0-1	David Jefferson 
+	1	Jefferson
+	2	"
+	3	Davy
+			name:	PERSON				3-5	Davy " Jones 
+	4	"
+	5	Jones
+	6	(
+	7	June
+			name:	DATE				7-10	June 30 , 1880 
+	8	30
+	9	,
+	10	1880
+	11	–
+	12	March
+			name:	DATE				12-15	March 30 , 1972 
+	13	30
+	14	,
+	15	1972
+	16	)
+	17	,
+	18	nicknamed
+			sense:	dub.v.01
+			prop:	nickname.01
+			V		18-18	nicknamed 
+			N-ARG-A1		0-16	David Jefferson " Davy " Jones ( June 30 , 1880 – March 30 , 1972 ) 
+			N-ARG-A2		19-21	" Kangaroo " 
+	19	"
+	20	Kangaroo
+			name:	MISC				20-20	Kangaroo 
+	21	"
+	22	,
+	23	was
+			sense:	be.v.02
+			prop:	be.01
+			V		23-23	was 
+			N-ARG-A1		0-21	David Jefferson " Davy " Jones ( June 30 , 1880 – March 30 , 1972 ) , nicknamed " Kangaroo " 
+			N-ARG-A2		24-29	an outfielder in Major League Baseball 
+	24	an
+	25	outfielder
+			name:	TITLE				25-25	outfielder 
+			sense:	outfielder.n.01
+	26	in
+	27	Major
+			name:	ORGANIZATION				27-29	Major League Baseball 
+	28	League
+	29	Baseball
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He played fifteen seasons with the Milwaukee Brewers , St. Louis Browns , Chicago Cubs , Detroit Tigers , Chicago White Sox , and Pittsburgh Rebels .
+
+
+Treebanked sentence:
+--------------------
+He played fifteen seasons with the Milwaukee Brewers , St. Louis Browns , Chicago Cubs , Detroit Tigers , Chicago White Sox , and Pittsburgh Rebels . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD played)
+      (NP (JJ fifteen) (NNS seasons))
+      (PP (IN with)
+        (NP
+          (NP (DT the)
+            (ADJP (NNP Milwaukee))
+            (NNS Brewers))
+          (, ,)
+          (NP
+            (NML
+              (NML (NNP St.) (NNP Louis) (NNP Browns))
+              (, ,)
+              (NML (NNP Chicago) (NNP Cubs))
+              (, ,))
+            (NNP Detroit) (NNPS Tigers))
+          (, ,)
+          (NP
+            (NML (NNP Chicago) (NNP White))
+            (NNPS Sox))
+          (, ,)
+          (CC and)
+          (NP (NNP Pittsburgh) (NNPS Rebels)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	played
+			sense:	play.v.01
+			prop:	play.01
+			V		1-1	played 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-3	fifteen seasons 
+			N-ARGM-MNR		4-25	with the Milwaukee Brewers , St. Louis Browns , Chicago Cubs , Detroit Tigers , Chicago White Sox , and Pittsburgh Rebels 
+	2	fifteen
+			name:	NUMBER				2-2	fifteen 
+			sense:	fifteen.s.01
+	3	seasons
+			sense:	season.n.01
+	4	with
+	5	the
+	6	Milwaukee
+			name:	ORGANIZATION				6-7	Milwaukee Brewers 
+	7	Brewers
+			sense:	brewer.n.01
+	8	,
+	9	St.
+			name:	ORGANIZATION				9-11	St. Louis Browns 
+	10	Louis
+	11	Browns
+	12	,
+	13	Chicago
+			name:	ORGANIZATION				13-14	Chicago Cubs 
+	14	Cubs
+	15	,
+	16	Detroit
+			name:	ORGANIZATION				16-17	Detroit Tigers 
+	17	Tigers
+	18	,
+	19	Chicago
+			coref:	IDENT			0	19-21	Chicago White Sox 
+			name:	ORGANIZATION				19-21	Chicago White Sox 
+	20	White
+	21	Sox
+	22	,
+	23	and
+	24	Pittsburgh
+			name:	CITY				24-24	Pittsburgh 
+	25	Rebels
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jones played with some of the early legends of the game , including Ty Cobb , Sam Crawford , Frank Chance , Three Finger Brown , Hugh Duffy and Jesse Burkett .
+
+
+Treebanked sentence:
+--------------------
+Jones played with some of the early legends of the game , including Ty Cobb , Sam Crawford , Frank Chance , Three Finger Brown , Hugh Duffy and Jesse Burkett . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Jones))
+    (VP (VBD played)
+      (PP (IN with)
+        (NP
+          (NP (DT some))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (JJ early) (NNS legends))
+              (PP (IN of)
+                (NP (DT the) (NN game)))))))
+      (, ,)
+      (PP (VBG including)
+        (NP
+          (NP (NN Ty) (NNP Cobb))
+          (, ,)
+          (NP (NNP Sam) (NNP Crawford))
+          (, ,)
+          (NP (NNP Frank) (NNP Chance))
+          (, ,)
+          (NP (CD Three) (NNP Finger) (NNP Brown))
+          (, ,)
+          (NP (NNP Hugh) (NNP Duffy))
+          (CC and)
+          (NP (NNP Jesse) (NNP Burkett)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jones
+			name:	PERSON				0-0	Jones 
+	1	played
+			sense:	play.v.01
+			prop:	play.01
+			V		1-1	played 
+			N-ARG-A0		0-0	Jones 
+			N-ARGM-COM		2-30	with some of the early legends of the game , including Ty Cobb , Sam Crawford , Frank Chance , Three Finger Brown , Hugh Duffy and Jesse Burkett 
+	2	with
+	3	some
+	4	of
+	5	the
+	6	early
+			sense:	early.s.03
+	7	legends
+			sense:	legend.n.01
+	8	of
+	9	the
+	10	game
+			sense:	game.n.01
+	11	,
+	12	including
+			sense:	include.v.01
+			prop:	include.01
+			V		12-12	including 
+			N-ARG-A2		5-10	the early legends of the game 
+			N-ARG-A1		13-30	Ty Cobb , Sam Crawford , Frank Chance , Three Finger Brown , Hugh Duffy and Jesse Burkett 
+	13	Ty
+			name:	PERSON				13-14	Ty Cobb 
+	14	Cobb
+	15	,
+	16	Sam
+			name:	PERSON				16-17	Sam Crawford 
+	17	Crawford
+	18	,
+	19	Frank
+			name:	PERSON				19-20	Frank Chance 
+	20	Chance
+	21	,
+	22	Three
+			name:	NUMBER				22-22	Three 
+	23	Finger
+	24	Brown
+			name:	PERSON				24-24	Brown 
+	25	,
+	26	Hugh
+			name:	PERSON				26-27	Hugh Duffy 
+	27	Duffy
+	28	and
+	29	Jesse
+			name:	PERSON				29-30	Jesse Burkett 
+	30	Burkett
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Also , he played part of one year with the Chicago White Sox , where several of his teammates would later be implicated in the 1919 Black Sox scandal .
+
+
+Treebanked sentence:
+--------------------
+Also , he played part of one year with the Chicago White Sox , where several of his teammates would later be implicated in the 1919 Black Sox scandal . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD played)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP (CD one) (NN year))))
+      (PP (IN with)
+        (NP (DT the) (NNP Chicago) (NNP White) (NNPS Sox)))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP
+            (NP (JJ several))
+            (PP (IN of)
+              (NP (PRP$ his) (NNS teammates))))
+          (VP (MD would)
+            (ADVP (RB later))
+            (VP (VB be)
+              (VP (VBN implicated)
+                (PP (IN in)
+                  (NP
+                    (NP (DT the) (CD 1919) (JJ Black) (NNPS Sox))
+                    (NP (NN scandal))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Also
+			sense:	besides.r.02
+	1	,
+	2	he
+			coref:	IDENT			1	2-2	he 
+	3	played
+			sense:	play.v.01
+			prop:	play.01
+			V		3-3	played 
+			N-ARGM-DIS		0-0	Also 
+			N-ARG-A0		2-2	he 
+			N-ARG-A1		4-7	part of one year 
+			N-ARGM-MNR		8-28	with the Chicago White Sox , where several of his teammates would later be implicated in the 1919 Black Sox scandal 
+	4	part
+			sense:	part.n.01
+	5	of
+	6	one
+			name:	DURATION				6-7	one year 
+	7	year
+			sense:	year.n.01
+	8	with
+	9	the
+			coref:	IDENT			0	9-12	the Chicago White Sox 
+	10	Chicago
+			name:	ORGANIZATION				10-12	Chicago White Sox 
+	11	White
+	12	Sox
+	13	,
+	14	where
+	15	several
+			sense:	several.s.01
+	16	of
+	17	his
+			coref:	IDENT			1	17-17	his 
+	18	teammates
+			sense:	teammate.n.01
+	19	would
+	20	later
+			sense:	subsequently.r.01
+	21	be
+			sense:	be.v.01
+			prop:	be.03
+			V		21-21	be 
+	22	implicated
+			sense:	implicate.v.01
+			prop:	implicate.01
+			V		22-22	implicated 
+			N-ARGM-LOC		14-14	where 
+			N-ARG-A1		15-18	several of his teammates 
+			N-ARGM-MOD		19-19	would 
+			N-ARGM-TMP		20-20	later 
+			N-ARG-A2		23-28	in the 1919 Black Sox scandal 
+	23	in
+	24	the
+	25	1919
+			name:	DATE				25-25	1919 
+	26	Black
+			name:	ORGANIZATION				26-27	Black Sox 
+			sense:	black.a.02
+	27	Sox
+	28	scandal
+			sense:	scandal.n.02
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jones was immortalized in the classic baseball book The Glory of Their Times by Lawrence Ritter .
+
+
+Treebanked sentence:
+--------------------
+Jones was immortalized in the classic baseball book The Glory of Their Times by Lawrence Ritter . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Jones))
+    (VP (VBD was)
+      (ADJP (VBN immortalized)
+        (PP (IN in)
+          (NP (DT the) (JJ classic) (NN baseball) (NN book))))
+      (NP
+        (NP (DT The) (NN Glory))
+        (PP (IN of)
+          (NP
+            (NP (PRP$ Their) (NNP Times))
+            (PP (IN by)
+              (NP (NNP Lawrence) (NNP Ritter)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jones
+			name:	PERSON				0-0	Jones 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	immortalized
+			sense:	immortalize.v.02
+			prop:	demoralize.01
+			V		2-2	immortalized 
+			N-ARG-A1		0-0	Jones 
+			N-ARGM-LOC		3-15	in the classic baseball book The Glory of Their Times by Lawrence Ritter 
+	3	in
+	4	the
+	5	classic
+			sense:	authoritative.s.02
+	6	baseball
+			sense:	baseball.n.01
+	7	book
+			sense:	book.n.01
+	8	The
+	9	Glory
+			sense:	glory.n.01
+	10	of
+	11	Their
+	12	Times
+	13	by
+	14	Lawrence
+			name:	PERSON				14-15	Lawrence Ritter 
+	15	Ritter
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Davy Jones was mostly a platoon rather than a full - time player who was decent with the bat and swift on his feet .
+
+
+Treebanked sentence:
+--------------------
+Davy Jones was mostly a platoon rather than a full - time player who was decent with the bat and swift on his feet . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Davy) (NNP Jones))
+    (VP (VBD was)
+      (ADVP (RB mostly))
+      (NP
+        (NP (DT a) (NN platoon))
+        (CONJP (RB rather) (IN than))
+        (NP
+          (NP (DT a)
+            (NML (JJ full) (HYPH -) (NN time))
+            (NN player))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD was)
+                (ADJP
+                  (ADJP (JJ decent)
+                    (PP (IN with)
+                      (NP (DT the) (NN bat))))
+                  (CC and)
+                  (ADJP (JJ swift)))
+                (PP (IN on)
+                  (NP (PRP$ his) (NNS feet)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Davy
+			name:	PERSON				0-1	Davy Jones 
+	1	Jones
+	2	was
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	Davy Jones 
+			N-ARGM-ADV		3-3	mostly 
+			N-ARG-A2		4-23	a platoon rather than a full - time player who was decent with the bat and swift on his feet 
+	3	mostly
+			sense:	largely.r.01
+	4	a
+	5	platoon
+			sense:	platoon.n.01
+	6	rather
+			sense:	rather.r.01
+	7	than
+	8	a
+	9	full
+			sense:	entire.s.01
+	10	-
+	11	time
+			sense:	time.n.02
+	12	player
+			sense:	player.n.01
+	13	who
+	14	was
+			sense:	be.v.01
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		8-12	a full - time player 
+			R-ARG-A1		13-13	who 
+			N-ARG-A2		15-23	decent with the bat and swift on his feet 
+	15	decent
+			sense:	adequate.s.02
+	16	with
+	17	the
+	18	bat
+			sense:	bat.n.05
+	19	and
+	20	swift
+			sense:	fleet.s.01
+	21	on
+	22	his
+	23	feet
+			sense:	foot.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He played in the major leagues from to , compiling a .270 career batting average with over 1,000 hits .
+
+
+Treebanked sentence:
+--------------------
+He played in the major leagues from to , compiling a .270 career batting average with over 1,000 hits . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD played)
+      (PP (IN in)
+        (NP (DT the) (JJ major) (NNS leagues)))
+      (PP (IN from)
+        (PP (IN to)))
+      (, ,)
+      (S
+        (VP (VBG compiling)
+          (NP (DT a) (CD .270) (NN career) (NN batting) (NN average))
+          (PP (IN with)
+            (NP
+              (QP (RB over) (CD 1,000))
+              (NNS hits))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	played
+			sense:	play.v.01
+			prop:	play.01
+			V		1-1	played 
+			N-ARG-A0		0-0	He 
+			N-ARGM-LOC		2-5	in the major leagues 
+			N-ARGM-TMP		6-7	from to 
+	2	in
+	3	the
+	4	major
+			sense:	major.a.01
+	5	leagues
+			sense:	league.n.01
+	6	from
+	7	to
+	8	,
+	9	compiling
+			sense:	roll_up.v.02
+			prop:	compile.01
+			V		9-9	compiling 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		10-18	a .270 career batting average with over 1,000 hits 
+	10	a
+	11	.270
+			name:	NUMBER				11-11	.270 
+	12	career
+			sense:	career.n.02
+	13	batting
+			sense:	batting.n.01
+	14	average
+			sense:	average.n.01
+	15	with
+	16	over
+			sense:	over.r.03
+	17	1,000
+			name:	NUMBER				17-17	1,000 
+	18	hits
+			sense:	hit.n.01
+	19	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.9-12	the Chicago White Sox 
+				1.19-21	Chicago White Sox 
+	Chain 1 (IDENT)
+				0.0-1	David Jefferson 
+				1.0-0	He 
+				3.2-2	he 
+				3.17-17	his 
+

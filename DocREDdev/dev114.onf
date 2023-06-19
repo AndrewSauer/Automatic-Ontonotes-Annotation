@@ -1,0 +1,568 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The University of Uyo ( UNIUYO ) is located in Uyo , capital of Akwa Ibom State , Nigeria .
+
+
+Treebanked sentence:
+--------------------
+The University of Uyo ( UNIUYO ) is located in Uyo , capital of Akwa Ibom State , Nigeria . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP University))
+      (PP (IN of)
+        (NP (NNP Uyo) (-LRB- -LRB-) (NNP UNIUYO) (-RRB- -RRB-))))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN in)
+          (NP
+            (NP (NNP Uyo))
+            (, ,)
+            (NP
+              (NP (NN capital))
+              (PP (IN of)
+                (NP
+                  (NP (NNP Akwa) (NNP Ibom) (NNP State))
+                  (, ,)
+                  (NP (NNP Nigeria)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-6	The University of Uyo ( UNIUYO ) 
+	1	University
+			name:	ORGANIZATION				1-3	University of Uyo 
+	2	of
+	3	Uyo
+	4	(
+	5	UNIUYO
+			name:	ORGANIZATION				5-5	UNIUYO 
+	6	)
+	7	is
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	is 
+	8	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		8-8	located 
+			N-ARG-A1		0-6	The University of Uyo ( UNIUYO ) 
+			N-ARGM-LOC		9-18	in Uyo , capital of Akwa Ibom State , Nigeria 
+	9	in
+	10	Uyo
+			name:	CITY				10-10	Uyo 
+	11	,
+	12	capital
+			sense:	capital.n.03
+	13	of
+	14	Akwa
+			name:	ORGANIZATION				14-16	Akwa Ibom State 
+	15	Ibom
+	16	State
+	17	,
+	18	Nigeria
+			coref:	IDENT			1	18-18	Nigeria 
+			name:	COUNTRY				18-18	Nigeria 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The university was formerly known as the University of Cross River State ( UNICROSS ) .
+
+
+Treebanked sentence:
+--------------------
+The university was formerly known as the University of Cross River State ( UNICROSS ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN university))
+    (VP (VBD was)
+      (ADVP (RB formerly))
+      (VP (VBN known)
+        (PP (IN as)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Cross) (NNP River) (NNP State)))))
+        (PRN (-LRB- -LRB-)
+          (NP (NNP UNICROSS))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The university 
+	1	university
+			sense:	university.n.02
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	formerly
+			sense:	once.r.03
+	4	known
+			sense:	know.v.04
+			prop:	know.01
+			V		4-4	known 
+			N-ARG-A1		0-1	The university 
+			N-ARGM-TMP		3-3	formerly 
+			N-ARG-A2		5-14	as the University of Cross River State ( UNICROSS ) 
+	5	as
+	6	the
+	7	University
+			name:	ORGANIZATION				7-11	University of Cross River State 
+	8	of
+	9	Cross
+	10	River
+	11	State
+	12	(
+	13	UNICROSS
+	14	)
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On October 1 , 1991 the federal government of Nigeria established it as a federal university and the name was changed to the University of Uyo .
+
+
+Treebanked sentence:
+--------------------
+On October 1 , 1991 the federal government of Nigeria established it as a federal university and the name was changed to the University of Uyo . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NNP October) (CD 1) (, ,) (CD 1991)))
+    (NP
+      (NP (DT the) (JJ federal) (NN government))
+      (PP (IN of)
+        (NP (NNP Nigeria))))
+    (VP (VBD established)
+      (NP (PRP it))
+      (SBAR (IN as)
+        (S
+          (NP
+            (NP (DT a) (JJ federal) (NN university))
+            (CC and)
+            (NP (DT the) (NN name)))
+          (VP (VBD was)
+            (VP (VBN changed)
+              (PP (IN to)
+                (NP
+                  (NP (DT the) (NNP University))
+                  (PP (IN of)
+                    (NP (NNP Uyo))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	October
+			name:	DATE				1-4	October 1 , 1991 
+	2	1
+	3	,
+	4	1991
+	5	the
+			coref:	IDENT			2	5-9	the federal government of Nigeria 
+	6	federal
+			sense:	federal.a.02
+	7	government
+			sense:	government.n.01
+	8	of
+	9	Nigeria
+			coref:	IDENT			1	9-9	Nigeria 
+			name:	COUNTRY				9-9	Nigeria 
+	10	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		10-10	established 
+			N-ARGM-TMP		0-4	On October 1 , 1991 
+			N-ARG-A0		5-9	the federal government of Nigeria 
+			N-ARG-A1		11-11	it 
+			N-ARG-A2		12-15	as a federal university 
+	11	it
+			coref:	IDENT			2	11-11	it 
+	12	as
+	13	a
+	14	federal
+			sense:	federal.a.02
+	15	university
+			sense:	university.n.02
+	16	and
+	17	the
+	18	name
+			sense:	name.n.01
+	19	was
+			sense:	be.v.01
+			prop:	be.03
+			V		19-19	was 
+	20	changed
+			sense:	change.v.01
+			prop:	change.01
+			V		20-20	changed 
+			N-ARG-A1		17-18	the name 
+			N-ARG-A2		21-25	to the University of Uyo 
+	21	to
+	22	the
+			coref:	IDENT			0	22-25	the University of Uyo 
+	23	University
+			name:	ORGANIZATION				23-25	University of Uyo 
+	24	of
+	25	Uyo
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The university inherited students , staff , academic programmes and the entire facilities of the erstwhile University of Cross River State established by Cross River State in 1983 .
+
+
+Treebanked sentence:
+--------------------
+The university inherited students , staff , academic programmes and the entire facilities of the erstwhile University of Cross River State established by Cross River State in 1983 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN university))
+    (VP (VBD inherited)
+      (NP
+        (NP (NNS students))
+        (, ,)
+        (NP (NN staff))
+        (, ,)
+        (NP (JJ academic) (NNS programmes))
+        (CC and)
+        (NP
+          (NP (DT the) (JJ entire) (NNS facilities))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (JJ erstwhile) (NNP University))
+              (PP (IN of)
+                (NP
+                  (NP (NNP Cross) (NNP River) (NNP State))
+                  (VP (VBN established)
+                    (PP (IN by)
+                      (NP
+                        (NP (NNP Cross) (NNP River) (NNP State))
+                        (PP (IN in)
+                          (NP (CD 1983)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The university 
+	1	university
+			sense:	university.n.02
+	2	inherited
+			sense:	inherit.v.02
+			prop:	inherit.01
+			V		2-2	inherited 
+			N-ARG-A0		0-1	The university 
+			N-ARG-A1		3-27	students , staff , academic programmes and the entire facilities of the erstwhile University of Cross River State established by Cross River State in 1983 
+	3	students
+			sense:	student.n.01
+	4	,
+	5	staff
+			sense:	staff.n.03
+	6	,
+	7	academic
+			sense:	academic.a.01
+	8	programmes
+			sense:	course_of_study.n.01
+	9	and
+	10	the
+	11	entire
+			sense:	entire.s.01
+	12	facilities
+			sense:	facility.n.01
+	13	of
+	14	the
+	15	erstwhile
+			sense:	erstwhile.s.01
+	16	University
+			name:	ORGANIZATION				16-20	University of Cross River State 
+	17	of
+	18	Cross
+	19	River
+	20	State
+	21	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		21-21	established 
+			N-ARG-A1		14-20	the erstwhile University of Cross River State 
+			N-ARG-A0		22-25	by Cross River State 
+			N-ARGM-TMP		26-27	in 1983 
+	22	by
+	23	Cross
+			name:	LOCATION				23-23	Cross 
+	24	River
+			name:	TITLE				24-24	River 
+	25	State
+			name:	LOCATION				25-25	State 
+	26	in
+	27	1983
+			name:	DATE				27-27	1983 
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Academic activities commenced during the 1991/92 academic session .
+
+
+Treebanked sentence:
+--------------------
+Academic activities commenced during the 1991/92 academic session . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (JJ Academic) (NNS activities))
+    (VP (VBN commenced)
+      (PP (IN during)
+        (NP (DT the) (CD 1991/92) (JJ academic) (NN session))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Academic
+			sense:	academic.a.01
+	1	activities
+			sense:	activity.n.01
+	2	commenced
+			sense:	get_down.v.07
+			prop:	commence.01
+			V		2-2	commenced 
+			N-ARG-A1		0-1	Academic activities 
+			N-ARGM-TMP		3-7	during the 1991/92 academic session 
+	3	during
+	4	the
+	5	1991/92
+			name:	DATE				5-5	1991/92 
+	6	academic
+			sense:	academic.a.01
+	7	session
+			sense:	school_term.n.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+UNIUYO has about 12 faculties , the postgraduate school and the school of continuing Education .
+
+
+Treebanked sentence:
+--------------------
+UNIUYO has about 12 faculties , the postgraduate school and the school of continuing Education . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP UNIUYO))
+    (VP (VBZ has)
+      (NP
+        (NP
+          (QP (RB about) (CD 12))
+          (NNS faculties))
+        (, ,)
+        (NP (DT the) (JJ postgraduate) (NN school))
+        (CC and)
+        (NP
+          (NP (DT the) (NN school))
+          (PP (IN of)
+            (NP (VBG continuing) (NNP Education))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	UNIUYO
+			name:	ORGANIZATION				0-0	UNIUYO 
+	1	has
+			sense:	have.v.02
+			prop:	have.03
+			V		1-1	has 
+			N-ARG-A0		0-0	UNIUYO 
+			N-ARG-A1		2-14	about 12 faculties , the postgraduate school and the school of continuing Education 
+	2	about
+			sense:	approximately.r.01
+	3	12
+			name:	NUMBER				3-3	12 
+	4	faculties
+			sense:	staff.n.03
+	5	,
+	6	the
+	7	postgraduate
+			sense:	graduate.s.01
+	8	school
+			sense:	school.n.01
+	9	and
+	10	the
+	11	school
+			sense:	school.n.01
+	12	of
+	13	continuing
+			sense:	continue.v.03
+			prop:	continue.01
+			V		13-13	continuing 
+			N-ARG-A1		14-14	Education 
+	14	Education
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Vice - Chancellor is Professor Enefiok Essien .
+
+
+Treebanked sentence:
+--------------------
+The Vice - Chancellor is Professor Enefiok Essien . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The)
+      (NML (NNP Vice) (HYPH -) (NNP Chancellor)))
+    (VP (VBZ is)
+      (NP (NNP Professor) (NNP Enefiok) (NNP Essien)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Vice
+	2	-
+	3	Chancellor
+			name:	TITLE				3-3	Chancellor 
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	The Vice - Chancellor 
+			N-ARG-A2		5-7	Professor Enefiok Essien 
+	5	Professor
+			name:	TITLE				5-5	Professor 
+	6	Enefiok
+			name:	PERSON				6-7	Enefiok Essien 
+	7	Essien
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2015 the Emir of Hadejia , Adamu Maje was appointed chancellor .
+
+
+Treebanked sentence:
+--------------------
+In 2015 the Emir of Hadejia , Adamu Maje was appointed chancellor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (CD 2015))
+        (NP
+          (NP (DT the) (NN Emir))
+          (PP (IN of)
+            (NP (NNP Hadejia))))))
+    (, ,)
+    (NP (NNP Adamu) (NNP Maje))
+    (VP (VBD was)
+      (VP (VBN appointed)
+        (NP (NN chancellor))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2015
+			name:	DATE				1-1	2015 
+	2	the
+	3	Emir
+			name:	TITLE				3-3	Emir 
+			sense:	emir.n.01
+	4	of
+	5	Hadejia
+			name:	CITY				5-5	Hadejia 
+	6	,
+	7	Adamu
+			name:	PERSON				7-8	Adamu Maje 
+	8	Maje
+	9	was
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	was 
+	10	appointed
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		10-10	appointed 
+			N-ARGM-TMP		0-1	In 2015 
+			N-ARG-A1		2-8	the Emir of Hadejia , Adamu Maje 
+			N-ARG-A2		11-11	chancellor 
+	11	chancellor
+			name:	TITLE				11-11	chancellor 
+			sense:	chancellor.n.03
+	12	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-6	The University of Uyo ( UNIUYO ) 
+				1.0-1	The university 
+				2.22-25	the University of Uyo 
+				3.0-1	The university 
+	Chain 1 (IDENT)
+				0.18-18	Nigeria 
+				2.9-9	Nigeria 
+	Chain 2 (IDENT)
+				2.5-9	the federal government of Nigeria 
+				2.11-11	it 
+

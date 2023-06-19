@@ -1,0 +1,503 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+England 's Happiness in the Crowning of William and Mary is an English broadside ballad composed in 1689 and takes as its primary focus the coronation of William III of England and Mary II of England .
+
+
+Treebanked sentence:
+--------------------
+England 's Happiness in the Crowning of William and Mary is an English broadside ballad composed in 1689 and takes as its primary focus the coronation of William III of England and Mary II of England . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP England) (POS 's))
+        (NN Happiness))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (JJ Crowning))
+          (PP (IN of)
+            (NP (NNP William)
+              (CC and)
+              (NNP Mary))))))
+    (VP
+      (VP (VBZ is)
+        (NP
+          (NP (DT an) (JJ English) (NN broadside) (NN ballad))
+          (VP (VBN composed)
+            (PP (IN in)
+              (NP (CD 1689))))))
+      (CC and)
+      (VP (VBZ takes)
+        (PP (IN as)
+          (NP (PRP$ its) (JJ primary) (NN focus)))
+        (NP
+          (NP (DT the) (NN coronation))
+          (PP (IN of)
+            (NP
+              (NP
+                (NP (NNP William) (NNP III))
+                (PP (IN of)
+                  (NP (NNP England))))
+              (CC and)
+              (NP
+                (NP (NNP Mary) (NNP II))
+                (PP (IN of)
+                  (NP (NNP England)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	England
+			name:	COUNTRY				0-0	England 
+	1	's
+	2	Happiness
+			name:	MISC				2-2	Happiness 
+			sense:	happiness.n.01
+	3	in
+	4	the
+	5	Crowning
+			sense:	crowning.s.01
+	6	of
+	7	William
+			coref:	IDENT			0	7-9	William and Mary 
+			name:	PERSON				7-7	William 
+	8	and
+			coref:	IDENT			1	8-9	and Mary 
+	9	Mary
+			name:	PERSON				9-9	Mary 
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	England 's Happiness in the Crowning of William and Mary 
+			N-ARG-A2		11-17	an English broadside ballad composed in 1689 
+	11	an
+	12	English
+			name:	NATIONALITY				12-12	English 
+	13	broadside
+			sense:	circular.n.01
+	14	ballad
+			sense:	ballad.n.01
+	15	composed
+			sense:	write.v.01
+			prop:	compose.02
+			V		15-15	composed 
+			N-ARG-A1		11-14	an English broadside ballad 
+			N-ARGM-TMP		16-17	in 1689 
+	16	in
+	17	1689
+			coref:	IDENT			2	17-17	1689 
+			name:	DATE				17-17	1689 
+	18	and
+	19	takes
+			sense:	take.v.06
+			prop:	take.01
+			V		19-19	takes 
+			N-ARG-A0		0-9	England 's Happiness in the Crowning of William and Mary 
+			N-ARG-A2		20-23	as its primary focus 
+			N-ARG-A1		24-35	the coronation of William III of England and Mary II of England 
+	20	as
+	21	its
+			coref:	IDENT			2	21-21	its 
+	22	primary
+			sense:	chief.s.01
+	23	focus
+			sense:	stress.n.03
+	24	the
+	25	coronation
+			sense:	coronation.n.01
+	26	of
+	27	William
+			coref:	IDENT			3	27-30	William III of England 
+			name:	PERSON				27-28	William III 
+	28	III
+	29	of
+	30	England
+			name:	COUNTRY				30-30	England 
+	31	and
+	32	Mary
+			coref:	IDENT			4	32-33	Mary II 
+			name:	PERSON				32-33	Mary II 
+	33	II
+	34	of
+	35	England
+			name:	COUNTRY				35-35	England 
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+William III and Mary II 's coregency began in February 1689 when the Convention Parliament , summoned by William after his invasion of England in 1689 , offered him the crown .
+
+
+Treebanked sentence:
+--------------------
+William III and Mary II 's coregency began in February 1689 when the Convention Parliament , summoned by William after his invasion of England in 1689 , offered him the crown . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP William) (NNP III))
+      (CC and)
+      (NP
+        (NP (NNP Mary) (NNP II) (POS 's))
+        (NN coregency)))
+    (VP (VBD began)
+      (PP (IN in)
+        (NP (NNP February) (CD 1689)))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP
+            (NP (DT the) (NNP Convention) (NNP Parliament))
+            (, ,)
+            (VP (VBN summoned)
+              (PP (IN by)
+                (NP (NNP William)))
+              (PP (IN after)
+                (NP
+                  (NP (PRP$ his) (NN invasion))
+                  (PP (IN of)
+                    (NP (NNP England)))))
+              (PP (IN in)
+                (NP (CD 1689))))
+            (, ,))
+          (VP (VBD offered)
+            (NP (PRP him))
+            (NP (DT the) (NN crown))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	William
+			coref:	IDENT			0	0-6	William III and Mary II 's coregency 
+			name:	PERSON				0-1	William III 
+	1	III
+	2	and
+	3	Mary
+			coref:	IDENT			4	3-5	Mary II 's 
+			name:	PERSON				3-4	Mary II 
+	4	II
+	5	's
+	6	coregency
+	7	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		7-7	began 
+			N-ARG-A1		0-6	William III and Mary II 's coregency 
+			N-ARGM-TMP		8-30	in February 1689 when the Convention Parliament , summoned by William after his invasion of England in 1689 , offered him the crown 
+	8	in
+	9	February
+			name:	DATE				9-10	February 1689 
+	10	1689
+	11	when
+	12	the
+	13	Convention
+			name:	ORGANIZATION				13-14	Convention Parliament 
+	14	Parliament
+	15	,
+	16	summoned
+			sense:	summon.v.01
+			prop:	summon.01
+			V		16-16	summoned 
+			N-ARG-A1		12-14	the Convention Parliament 
+			N-ARG-A0		17-18	by William 
+			N-ARGM-TMP		19-25	after his invasion of England in 1689 
+	17	by
+	18	William
+			coref:	IDENT			3	18-18	William 
+			name:	PERSON				18-18	William 
+	19	after
+	20	his
+			coref:	IDENT			3	20-20	his 
+	21	invasion
+			sense:	invasion.n.01
+	22	of
+	23	England
+			name:	COUNTRY				23-23	England 
+	24	in
+	25	1689
+			coref:	IDENT			2	25-25	1689 
+			name:	DATE				25-25	1689 
+	26	,
+	27	offered
+			sense:	offer.v.02
+			prop:	offer.01
+			V		27-27	offered 
+			N-ARGM-TMP		9-10	February 1689 
+			R-ARGM-TMP		11-11	when 
+			N-ARG-A0		12-25	the Convention Parliament , summoned by William after his invasion of England in 1689 
+			N-ARG-A3		28-28	him 
+			N-ARG-A1		29-30	the crown 
+	28	him
+			coref:	IDENT			3	28-28	him 
+	29	the
+	30	crown
+			sense:	crown.n.04
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Though this ballad never comments explicitly on William and Mary 's 1689 penning of the English Bill of Rights , it nevertheless focuses heavily on one specific component of the act , namely the reestablishment of Protestant liberty , as William III and Mary II were both Protestants : " For a Protestant King and a Protestant Queen , / The like in old England long time hath not been . "
+
+
+Treebanked sentence:
+--------------------
+Though this ballad never comments explicitly on William and Mary 's 1689 penning of the English Bill of Rights , it nevertheless focuses heavily on one specific component of the act , namely the reestablishment of Protestant liberty , as William III and Mary II were both Protestants : " For a Protestant King and a Protestant Queen , / The like in old England long time hath not been . " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (SBAR (IN Though)
+        (S
+          (NP (DT this) (NN ballad))
+          (ADVP (RB never))
+          (VP (VBZ comments)
+            (ADVP (RB explicitly))
+            (PP (IN on)
+              (NP
+                (NP
+                  (NP (NNP William)
+                    (CC and)
+                    (NNP Mary) (POS 's))
+                  (CD 1689) (NN penning))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NNP English) (NNP Bill))
+                    (PP (IN of)
+                      (NP (NNPS Rights))))))))))
+      (, ,)
+      (NP (PRP it))
+      (ADVP (RB nevertheless))
+      (VP (VBZ focuses)
+        (ADVP (RB heavily)
+          (PP (IN on)
+            (NP
+              (NP (CD one) (JJ specific) (NN component))
+              (PP (IN of)
+                (NP (DT the) (NN act))))
+            (, ,)
+            (ADVP (RB namely))))
+        (NP
+          (NP (DT the) (NN reestablishment))
+          (PP (IN of)
+            (NP (JJ Protestant) (NN liberty))))
+        (, ,)
+        (SBAR (IN as)
+          (S
+            (NP
+              (NP (NNP William) (NNP III))
+              (CC and)
+              (NP (NNP Mary) (NNP II)))
+            (VP (VBD were)
+              (NP (DT both) (NNPS Protestants)))))))
+    (: :) (`` ")
+    (S
+      (PP (IN For)
+        (NP
+          (NP (DT a) (JJ Protestant) (NNP King))
+          (CC and)
+          (NP (DT a) (JJ Protestant) (NN Queen))))
+      (, ,)
+      (NP
+        (S
+          (VP (SYM /)
+            (NP
+              (NP (DT The) (UH like))
+              (PP (IN in)
+                (NP
+                  (NML (JJ old) (NNP England))
+                  (JJ long) (NN time)))))))
+      (VP (VBP hath) (RB not)
+        (VP (VBN been))))
+    (. .) ('' ")))
+
+
+Leaves:
+-------
+	0	Though
+	1	this
+			coref:	IDENT			2	1-2	this ballad 
+	2	ballad
+			sense:	ballad.n.02
+	3	never
+			sense:	never.r.01
+	4	comments
+			sense:	comment.v.01
+			prop:	comment.01
+			V		4-4	comments 
+			N-ARG-A0		1-2	this ballad 
+			N-ARGM-NEG		3-3	never 
+			N-ARGM-MNR		5-5	explicitly 
+			N-ARG-A1		6-18	on William and Mary 's 1689 penning of the English Bill of Rights 
+	5	explicitly
+			sense:	explicitly.r.01
+	6	on
+	7	William
+			coref:	IDENT			0	7-10	William and Mary 's 
+			name:	PERSON				7-7	William 
+	8	and
+			coref:	IDENT			1	8-9	and Mary 
+	9	Mary
+			name:	PERSON				9-9	Mary 
+	10	's
+	11	1689
+			coref:	IDENT			2	11-11	1689 
+			name:	DATE				11-11	1689 
+	12	penning
+			sense:	writing.n.01
+	13	of
+	14	the
+	15	English
+			name:	NATIONALITY				15-15	English 
+	16	Bill
+			name:	MISC				16-18	Bill of Rights 
+	17	of
+	18	Rights
+	19	,
+	20	it
+			coref:	IDENT			2	20-20	it 
+	21	nevertheless
+			sense:	however.r.01
+	22	focuses
+			sense:	concentrate.v.02
+			prop:	focus.01
+			V		22-22	focuses 
+			N-ARGM-ADV		0-18	Though this ballad never comments explicitly on William and Mary 's 1689 penning of the English Bill of Rights 
+			N-ARG-A0		20-20	it 
+			N-ARGM-ADV		21-21	nevertheless 
+			N-ARGM-MNR		23-23	heavily 
+			N-ARG-A2		24-37	on one specific component of the act , namely the reestablishment of Protestant liberty 
+	23	heavily
+			sense:	heavily.r.01
+	24	on
+	25	one
+			name:	NUMBER				25-25	one 
+	26	specific
+			sense:	specific.a.01
+	27	component
+			sense:	component.n.01
+	28	of
+	29	the
+			coref:	IDENT			2	29-30	the act 
+	30	act
+			sense:	act.n.01
+	31	,
+	32	namely
+			sense:	namely.r.01
+	33	the
+	34	reestablishment
+	35	of
+	36	Protestant
+			name:	RELIGION				36-36	Protestant 
+	37	liberty
+			sense:	autonomy.n.01
+	38	,
+	39	as
+	40	William
+			coref:	IDENT			3	40-41	William III 
+			name:	PERSON				40-41	William III 
+	41	III
+	42	and
+	43	Mary
+			coref:	IDENT			4	43-44	Mary II 
+			name:	PERSON				43-44	Mary II 
+	44	II
+	45	were
+			sense:	be.v.01
+			prop:	be.01
+			V		45-45	were 
+			N-ARG-A1		40-44	William III and Mary II 
+			N-ARG-A2		47-47	Protestants 
+	46	both
+	47	Protestants
+	48	:
+	49	"
+	50	For
+	51	a
+	52	Protestant
+			name:	RELIGION				52-52	Protestant 
+	53	King
+			name:	TITLE				53-53	King 
+	54	and
+	55	a
+	56	Protestant
+			name:	RELIGION				56-56	Protestant 
+	57	Queen
+			name:	TITLE				57-57	Queen 
+			sense:	queen.n.02
+	58	,
+	59	/
+	60	The
+	61	like
+	62	in
+	63	old
+			sense:	old.a.02
+	64	England
+			name:	COUNTRY				64-64	England 
+	65	long
+			sense:	long.a.01
+	66	time
+			sense:	time.n.03
+	67	hath
+			sense:	have.v.01
+			prop:	bath.01
+			V		67-67	hath 
+	68	not
+			sense:	not.r.01
+	69	been
+			sense:	be.v.05
+			prop:	be.01
+			V		69-69	been 
+			N-ARG-A1		65-66	long time 
+			N-ARGM-NEG		68-68	not 
+	70	.
+	71	"
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.0-6	William III and Mary II 's coregency 
+				0.7-9	William and Mary 
+				2.7-10	William and Mary 's 
+	Chain 1 (IDENT)
+				0.8-9	and Mary 
+				2.8-9	and Mary 
+	Chain 2 (IDENT)
+				0.17-17	1689 
+				0.21-21	its 
+				1.25-25	1689 
+				2.1-2	this ballad 
+				2.11-11	1689 
+				2.20-20	it 
+				2.29-30	the act 
+	Chain 3 (IDENT)
+				0.27-30	William III of England 
+				1.18-18	William 
+				1.20-20	his 
+				1.28-28	him 
+				2.40-41	William III 
+	Chain 4 (IDENT)
+				1.3-5	Mary II 's 
+				0.32-33	Mary II 
+				2.43-44	Mary II 
+

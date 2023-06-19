@@ -1,0 +1,694 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ghostwritten is the first novel published by English author David Mitchell .
+
+
+Treebanked sentence:
+--------------------
+Ghostwritten is the first novel published by English author David Mitchell . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Ghostwritten))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ first) (NN novel))
+        (VP (VBN published)
+          (PP (IN by)
+            (NP
+              (NML (NNP English) (NN author))
+              (NNP David) (NNP Mitchell))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ghostwritten
+			coref:	IDENT			0	0-0	Ghostwritten 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Ghostwritten 
+			N-ARG-A2		2-10	the first novel published by English author David Mitchell 
+	2	the
+	3	first
+			name:	ORDINAL				3-3	first 
+			sense:	first.a.01
+	4	novel
+			sense:	novel.n.01
+	5	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		5-5	published 
+			N-ARG-A1		2-4	the first novel 
+			N-ARG-A0		6-10	by English author David Mitchell 
+	6	by
+	7	English
+			coref:	IDENT			1	7-10	English author David Mitchell 
+			name:	NATIONALITY				7-7	English 
+	8	author
+			name:	TITLE				8-8	author 
+			sense:	writer.n.01
+	9	David
+			name:	PERSON				9-10	David Mitchell 
+	10	Mitchell
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Published in 1999 , it won the John Llewellyn Rhys Prize and was widely acclaimed .
+
+
+Treebanked sentence:
+--------------------
+Published in 1999 , it won the John Llewellyn Rhys Prize and was widely acclaimed . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Published)
+        (PP (IN in)
+          (NP (CD 1999)))))
+    (, ,)
+    (NP (PRP it))
+    (VP
+      (VP (VBD won)
+        (NP (DT the) (NNP John) (NNP Llewellyn) (NNP Rhys) (NNP Prize)))
+      (CC and)
+      (VP (VBD was)
+        (ADJP (RB widely) (VBN acclaimed))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Published
+			sense:	print.v.01
+			prop:	publish.01
+			V		0-0	Published 
+			N-ARGM-TMP		1-2	in 1999 
+			N-ARG-A1		4-4	it 
+	1	in
+	2	1999
+			name:	DATE				2-2	1999 
+	3	,
+	4	it
+			coref:	IDENT			0	4-4	it 
+	5	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		5-5	won 
+			R-ARG-A0		0-2	Published in 1999 
+			N-ARG-A0		4-4	it 
+			N-ARG-A1		6-10	the John Llewellyn Rhys Prize 
+	6	the
+	7	John
+			name:	PERSON				7-10	John Llewellyn Rhys Prize 
+	8	Llewellyn
+	9	Rhys
+	10	Prize
+	11	and
+	12	was
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	was 
+	13	widely
+			sense:	widely.r.01
+	14	acclaimed
+			sense:	acclaim.v.01
+			prop:	acclaim.01
+			V		14-14	acclaimed 
+			R-ARG-A1		0-2	Published in 1999 
+			N-ARG-A1		4-4	it 
+			N-ARGM-EXT		13-13	widely 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The story takes place mainly around East Asia , but also moves through Russia , Britain , the USA and Ireland .
+
+
+Treebanked sentence:
+--------------------
+The story takes place mainly around East Asia , but also moves through Russia , Britain , the USA and Ireland . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN story))
+    (VP
+      (VP (VBZ takes)
+        (NP (NN place))
+        (ADVP (RB mainly))
+        (PP (IN around)
+          (NP (NNP East) (NNP Asia))))
+      (, ,)
+      (CC but)
+      (ADVP (RB also))
+      (VP (VBZ moves)
+        (PP (IN through)
+          (NP
+            (NP (NNP Russia))
+            (, ,)
+            (NP (NNP Britain))
+            (, ,)
+            (NP (DT the) (NNP USA))
+            (CC and)
+            (NP (NNP Ireland))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	story
+			sense:	narrative.n.01
+	2	takes
+			sense:	take.v.02
+			prop:	take.14
+			V		2-2	takes 
+			N-ARG-A1		0-1	The story 
+			N-ARG-A2		3-3	place 
+			N-ARGM-ADV		4-4	mainly 
+			N-ARGM-LOC		5-7	around East Asia 
+	3	place
+			sense:	topographic_point.n.01
+	4	mainly
+			sense:	chiefly.r.01
+	5	around
+	6	East
+			name:	LOCATION				6-6	East 
+	7	Asia
+			name:	CITY				7-7	Asia 
+	8	,
+	9	but
+	10	also
+			sense:	besides.r.02
+	11	moves
+			sense:	travel.v.01
+			prop:	move.01
+			V		11-11	moves 
+			N-ARG-A1		0-1	The story 
+			N-ARGM-ADV		10-10	also 
+			N-ARGM-DIR		12-20	through Russia , Britain , the USA and Ireland 
+	12	through
+	13	Russia
+			name:	COUNTRY				13-13	Russia 
+	14	,
+	15	Britain
+			name:	COUNTRY				15-15	Britain 
+	16	,
+	17	the
+	18	USA
+			name:	COUNTRY				18-18	USA 
+	19	and
+	20	Ireland
+			name:	COUNTRY				20-20	Ireland 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is written episodically ; each chapter details a different story and central character , although they are all interlinked through seemingly coincidental events .
+
+
+Treebanked sentence:
+--------------------
+It is written episodically ; each chapter details a different story and central character , although they are all interlinked through seemingly coincidental events . 
+
+Tree:
+-----
+(ROOT
+  (UCP
+    (S
+      (NP (PRP It))
+      (VP (VBZ is)
+        (VP (VBN written)
+          (ADVP (RB episodically)))))
+    (: ;)
+    (FRAG
+      (NP
+        (NP (DT each) (NN chapter) (NNS details))
+        (NP (DT a) (JJ different) (NN story))
+        (CC and)
+        (NP (JJ central) (NN character)))
+      (, ,)
+      (SBAR (IN although)
+        (S
+          (NP (PRP they))
+          (VP (VBP are)
+            (NP
+              (NP (DT all))
+              (VP (VBN interlinked)
+                (PP (IN through)
+                  (NP
+                    (ADJP (RB seemingly) (JJ coincidental))
+                    (NNS events)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	written
+			sense:	write.v.01
+			prop:	write.01
+			V		2-2	written 
+			N-ARG-A1		0-0	It 
+			N-ARGM-MNR		3-3	episodically 
+	3	episodically
+			sense:	episodically.r.01
+	4	;
+	5	each
+	6	chapter
+			sense:	chapter.n.01
+	7	details
+			sense:	detail.n.03
+	8	a
+	9	different
+			sense:	different.s.02
+	10	story
+			sense:	narrative.n.01
+	11	and
+	12	central
+			sense:	cardinal.s.01
+	13	character
+			sense:	fictional_character.n.01
+	14	,
+	15	although
+	16	they
+	17	are
+			sense:	be.v.01
+			prop:	be.03
+			V		17-17	are 
+	18	all
+	19	interlinked
+			sense:	complect.v.01
+			prop:	interlink.01
+			V		19-19	interlinked 
+			N-ARG-A1		16-16	they 
+			N-ARGM-MNR		20-23	through seemingly coincidental events 
+	20	through
+	21	seemingly
+			sense:	apparently.r.01
+	22	coincidental
+			sense:	coincident.s.01
+	23	events
+			sense:	event.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Many of the themes from Ghostwritten continue in Mitchell ’s subsequent novels , number9dream and Cloud Atlas , and a character later appears in The Bone Clocks .
+
+
+Treebanked sentence:
+--------------------
+Many of the themes from Ghostwritten continue in Mitchell ’s subsequent novels , number9dream and Cloud Atlas , and a character later appears in The Bone Clocks . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (JJ Many))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNS themes))
+            (PP (IN from)
+              (NP (NNP Ghostwritten))))))
+      (VP (VBP continue)
+        (PP (IN in)
+          (NP
+            (NP (NNP Mitchell) (POS ’s))
+            (NML
+              (NML (JJ subsequent) (NNS novels))
+              (, ,)
+              (NML (NN number9dream))
+              (CC and)
+              (NML (NNP Cloud) (NNP Atlas)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT a) (NN character))
+      (ADVP (RB later))
+      (VP (VBZ appears)
+        (PP (IN in)
+          (NP (DT The) (NN Bone) (NNS Clocks)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Many
+			sense:	many.a.01
+	1	of
+	2	the
+	3	themes
+			sense:	subject.n.01
+	4	from
+	5	Ghostwritten
+			coref:	IDENT			0	5-5	Ghostwritten 
+	6	continue
+			sense:	continue.v.01
+			prop:	continue.01
+			V		6-6	continue 
+			N-ARG-A1		0-5	Many of the themes from Ghostwritten 
+			N-ARGM-LOC		7-16	in Mitchell ’s subsequent novels , number9dream and Cloud Atlas 
+	7	in
+	8	Mitchell
+			coref:	IDENT			1	8-8	Mitchell 
+			name:	PERSON				8-8	Mitchell 
+	9	’s
+	10	subsequent
+			sense:	subsequent.a.01
+	11	novels
+			sense:	novel.n.01
+	12	,
+	13	number9dream
+	14	and
+	15	Cloud
+	16	Atlas
+	17	,
+	18	and
+	19	a
+	20	character
+			sense:	fictional_character.n.01
+	21	later
+			sense:	subsequently.r.01
+	22	appears
+			sense:	appear.v.02
+			prop:	appear.01
+			V		22-22	appears 
+			N-ARG-A1		19-20	a character 
+			N-ARGM-TMP		21-21	later 
+			N-ARGM-LOC		23-26	in The Bone Clocks 
+	23	in
+	24	The
+	25	Bone
+			sense:	bone.n.01
+	26	Clocks
+			sense:	clock.n.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ghostwritten is the product of a number of influences , particularly from East Asian culture and superstition , as well as real events remodelled for plot purposes ( e.g. 
+
+
+Treebanked sentence:
+--------------------
+Ghostwritten is the product of a number of influences , particularly from East Asian culture and superstition , as well as real events remodelled for plot purposes ( e.g. the sarin gas attack on the Tokyo subway ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Ghostwritten))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN product))
+        (PP (IN of)
+          (NP
+            (NP (DT a) (NN number))
+            (PP (IN of)
+              (NP (NNS influences))))))
+      (, ,)
+      (PP
+        (ADVP (RB particularly))
+        (IN from)
+        (NP
+          (NP
+            (NP (JJ East) (JJ Asian) (NN culture))
+            (CC and)
+            (NP (NN superstition)))
+          (, ,)
+          (CONJP (RB as) (RB well) (IN as))
+          (NP
+            (NP (JJ real) (NNS events))
+            (VP (VBN remodelled)
+              (PP (IN for)
+                (NP
+                  (NP (NN plot) (NNS purposes))
+                  (-LRB- -LRB-)
+                  (NP
+                    (ADVP (FW e.g.))
+                    (NP (DT the)
+                      (NML (NN sarin) (NN gas))
+                      (NN attack))
+                    (PP (IN on)
+                      (NP (DT the) (NNP Tokyo) (NN subway))))
+                  (-RRB- -RRB-))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ghostwritten
+			coref:	IDENT			0	0-0	Ghostwritten 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Ghostwritten 
+			N-ARG-A2		2-37	the product of a number of influences , particularly from East Asian culture and superstition , as well as real events remodelled for plot purposes ( e.g. the sarin gas attack on the Tokyo subway ) 
+	2	the
+	3	product
+			sense:	product.n.05
+	4	of
+	5	a
+	6	number
+			sense:	number.n.01
+	7	of
+	8	influences
+			sense:	influence.n.03
+	9	,
+	10	particularly
+			sense:	particularly.r.01
+	11	from
+	12	East
+			name:	MISC				12-12	East 
+			sense:	east.a.01
+	13	Asian
+			name:	NATIONALITY				13-13	Asian 
+	14	culture
+			sense:	acculturation.n.02
+	15	and
+	16	superstition
+			sense:	superstition.n.01
+	17	,
+	18	as
+			sense:	equally.r.01
+	19	well
+			sense:	well.r.01
+	20	as
+	21	real
+			sense:	real.a.01
+	22	events
+			sense:	event.n.01
+	23	remodelled
+			sense:	recast.v.03
+			prop:	remodel.01
+			V		23-23	remodelled 
+			N-ARG-A1		21-22	real events 
+			N-ARGM-PRP		24-26	for plot purposes 
+	24	for
+	25	plot
+			sense:	plot.n.03
+	26	purposes
+			sense:	purpose.n.01
+	27	(
+	28	e.g.
+	29	the
+	30	sarin
+			sense:	sarin.n.01
+	31	gas
+			sense:	gas.n.02
+	32	attack
+			name:	CAUSE_OF_DEATH				32-32	attack 
+			sense:	attack.n.01
+	33	on
+	34	the
+	35	Tokyo
+			name:	CITY				35-35	Tokyo 
+	36	subway
+			sense:	metro.n.01
+	37	)
+	38	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+There are also hints and references to other works , most prominently from Isaac Asimov and the Three Laws of Robotics towards the end of the book , as well as Wild Swans by Jung Chang and The Music of Chance by Paul Auster .
+
+
+Treebanked sentence:
+--------------------
+There are also hints and references to other works , most prominently from Isaac Asimov and the Three Laws of Robotics towards the end of the book , as well as Wild Swans by Jung Chang and The Music of Chance by Paul Auster . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (ADVP (RB also))
+      (NP
+        (NP
+          (NP (NNS hints)
+            (CC and)
+            (NNS references))
+          (PP (IN to)
+            (NP (JJ other) (NNS works))))
+        (, ,)
+        (NP
+          (NP (JJS most))
+          (PP
+            (ADVP (RB prominently))
+            (IN from)
+            (NP (NNP Isaac) (NNP Asimov))))
+        (CC and)
+        (NP
+          (NP (DT the) (NNP Three) (NNPS Laws))
+          (PP (IN of)
+            (NP (NNP Robotics)))))
+      (PP (IN towards)
+        (NP
+          (NP
+            (NP (DT the) (NN end))
+            (PP (IN of)
+              (NP (DT the) (NN book))))
+          (, ,)
+          (CONJP (RB as) (RB well) (IN as))
+          (NP
+            (NP
+              (NP (JJ Wild) (NNS Swans))
+              (PP (IN by)
+                (NP (NNP Jung) (NNP Chang))))
+            (CC and)
+            (NP
+              (NP (DT The) (NN Music))
+              (PP (IN of)
+                (NP (NN Chance)))))))
+      (PP (IN by)
+        (NP (NNP Paul) (NNP Auster))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	There
+	1	are
+			sense:	be.v.05
+			prop:	be.02
+			V		1-1	are 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A1		3-43	hints and references to other works , most prominently from Isaac Asimov and the Three Laws of Robotics towards the end of the book , as well as Wild Swans by Jung Chang and The Music of Chance by Paul Auster 
+	2	also
+			sense:	besides.r.02
+	3	hints
+			sense:	hint.n.01
+	4	and
+	5	references
+			sense:	mention.n.01
+	6	to
+	7	other
+			sense:	other.a.01
+	8	works
+			sense:	work.n.02
+	9	,
+	10	most
+			sense:	most.a.02
+	11	prominently
+			sense:	prominently.r.01
+	12	from
+	13	Isaac
+			name:	PERSON				13-14	Isaac Asimov 
+	14	Asimov
+	15	and
+	16	the
+	17	Three
+			name:	NUMBER				17-17	Three 
+	18	Laws
+			name:	MISC				18-20	Laws of Robotics 
+	19	of
+	20	Robotics
+	21	towards
+	22	the
+	23	end
+			sense:	end.n.05
+	24	of
+	25	the
+	26	book
+			sense:	book.n.01
+	27	,
+	28	as
+			sense:	equally.r.01
+	29	well
+			sense:	well.r.01
+	30	as
+	31	Wild
+			name:	MISC				31-32	Wild Swans 
+			sense:	wild.a.02
+	32	Swans
+			sense:	swan.n.01
+	33	by
+	34	Jung
+			name:	PERSON				34-35	Jung Chang 
+	35	Chang
+	36	and
+	37	The
+	38	Music
+			sense:	music.n.01
+	39	of
+	40	Chance
+			sense:	luck.n.02
+	41	by
+	42	Paul
+			name:	PERSON				42-43	Paul Auster 
+	43	Auster
+	44	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-0	Ghostwritten 
+				1.4-4	it 
+				4.5-5	Ghostwritten 
+				5.0-0	Ghostwritten 
+	Chain 1 (IDENT)
+				0.7-10	English author David Mitchell 
+				4.8-8	Mitchell 
+

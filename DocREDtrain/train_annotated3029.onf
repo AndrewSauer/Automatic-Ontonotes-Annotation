@@ -1,0 +1,591 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Commonwealth Park is in Canberra , Australia , on the north side of Lake Burley Griffin .
+
+
+Treebanked sentence:
+--------------------
+Commonwealth Park is in Canberra , Australia , on the north side of Lake Burley Griffin . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Commonwealth) (NNP Park))
+    (VP (VBZ is)
+      (PP (IN in)
+        (NP
+          (NP (NNP Canberra) (, ,) (NNP Australia) (, ,))
+          (PP (IN on)
+            (NP
+              (NP (DT the) (NN north) (NN side))
+              (PP (IN of)
+                (NP (NNP Lake) (NNP Burley) (NNP Griffin))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Commonwealth
+			name:	LOCATION				0-1	Commonwealth Park 
+	1	Park
+	2	is
+			sense:	be.v.03
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Commonwealth Park 
+			N-ARG-A2		3-15	in Canberra , Australia , on the north side of Lake Burley Griffin 
+	3	in
+	4	Canberra
+			name:	CITY				4-4	Canberra 
+	5	,
+	6	Australia
+			name:	COUNTRY				6-6	Australia 
+	7	,
+	8	on
+	9	the
+	10	north
+			sense:	north.n.03
+	11	side
+			sense:	side.n.01
+	12	of
+	13	Lake
+			name:	LOCATION				13-13	Lake 
+	14	Burley
+			name:	CITY				14-15	Burley Griffin 
+	15	Griffin
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The annual spring Floriade festival is held in the park .
+
+
+Treebanked sentence:
+--------------------
+The annual spring Floriade festival is held in the park . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP-TMP (DT The) (JJ annual) (NN spring))
+    (NP (NNP Floriade) (NN festival))
+    (VP (VBZ is)
+      (VP (VBN held)
+        (PP (IN in)
+          (NP (DT the) (NN park)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			name:	SET				0-1	The annual 
+	1	annual
+			sense:	annual.a.01
+	2	spring
+			name:	DATE				2-2	spring 
+			sense:	spring.n.01
+	3	Floriade
+	4	festival
+			sense:	festival.n.02
+	5	is
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	is 
+	6	held
+			sense:	hold.v.03
+			prop:	hold.04
+			V		6-6	held 
+			N-ARG-A1		0-4	The annual spring Floriade festival 
+			N-ARGM-LOC		7-9	in the park 
+	7	in
+	8	the
+	9	park
+			sense:	park.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The gardens were designed by the eminent British landscape designer , Dame Sylvia Crowe in 1964 at the time the Lake was filled .
+
+
+Treebanked sentence:
+--------------------
+The gardens were designed by the eminent British landscape designer , Dame Sylvia Crowe in 1964 at the time the Lake was filled . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNS gardens))
+    (VP (VBD were)
+      (VP (VBN designed)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (JJ eminent) (JJ British) (NN landscape) (NN designer))
+            (, ,)
+            (NP
+              (NP (NNP Dame) (NNP Sylvia) (NNP Crowe))
+              (PP (IN in)
+                (NP (CD 1964))))))
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NN time))
+            (SBAR
+              (S
+                (NP (DT the) (NNP Lake))
+                (VP (VBD was)
+                  (VP (VBN filled)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	gardens
+			sense:	garden.n.01
+	2	were
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	were 
+	3	designed
+			sense:	design.v.03
+			prop:	design.01
+			V		3-3	designed 
+			N-ARG-A1		0-1	The gardens 
+			N-ARG-A0		4-13	by the eminent British landscape designer , Dame Sylvia Crowe 
+			N-ARGM-TMP		14-15	in 1964 
+			N-ARGM-TMP		16-22	at the time the Lake was filled 
+	4	by
+	5	the
+	6	eminent
+			sense:	eminent.s.01
+	7	British
+			name:	NATIONALITY				7-7	British 
+	8	landscape
+			sense:	landscape.n.03
+	9	designer
+			name:	TITLE				9-9	designer 
+			sense:	architect.n.01
+	10	,
+	11	Dame
+			name:	PERSON				11-13	Dame Sylvia Crowe 
+	12	Sylvia
+	13	Crowe
+	14	in
+	15	1964
+			name:	DATE				15-15	1964 
+	16	at
+	17	the
+	18	time
+			name:	DATE				18-18	time 
+			sense:	time.n.01
+	19	the
+			coref:	IDENT			0	19-20	the Lake 
+	20	Lake
+			name:	LOCATION				20-20	Lake 
+	21	was
+			sense:	be.v.01
+			prop:	be.03
+			V		21-21	was 
+	22	filled
+			sense:	fill.v.02
+			prop:	fill.01
+			V		22-22	filled 
+			N-ARGM-TMP		17-18	the time 
+			N-ARG-A1		19-20	the Lake 
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The park has an area of 34.25 hectares .
+
+
+Treebanked sentence:
+--------------------
+The park has an area of 34.25 hectares . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN park))
+    (VP (VBZ has)
+      (NP
+        (NP (DT an) (NN area))
+        (PP (IN of)
+          (NP (CD 34.25) (NNS hectares)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	park
+			sense:	park.n.01
+	2	has
+			sense:	have.v.02
+			prop:	have.03
+			V		2-2	has 
+			N-ARG-A0		0-1	The park 
+			N-ARG-A1		3-7	an area of 34.25 hectares 
+	3	an
+	4	area
+			sense:	area.n.06
+	5	of
+	6	34.25
+			name:	NUMBER				6-6	34.25 
+	7	hectares
+			sense:	hectare.n.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The park has many small ponds and water features , walking trails , bike paths , sculptures and is popular with tourists and Canberrans .
+
+
+Treebanked sentence:
+--------------------
+The park has many small ponds and water features , walking trails , bike paths , sculptures and is popular with tourists and Canberrans . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN park))
+    (VP
+      (VP (VBZ has)
+        (NP
+          (NP
+            (NP (JJ many) (JJ small) (NNS ponds))
+            (CC and)
+            (NP (NN water) (NNS features)))
+          (, ,)
+          (NP
+            (NP (VBG walking) (NNS trails))
+            (, ,)
+            (NP
+              (NP (NN bike) (NNS paths))
+              (, ,)
+              (NP (NNS sculptures))))))
+      (CC and)
+      (VP (VBZ is)
+        (ADJP (JJ popular)
+          (PP (IN with)
+            (NP
+              (NP (NNS tourists))
+              (CC and)
+              (NP (NNPS Canberrans)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	park
+			sense:	park.n.01
+	2	has
+			sense:	have.v.02
+			prop:	have.03
+			V		2-2	has 
+			N-ARG-A0		0-1	The park 
+			N-ARG-A1		3-16	many small ponds and water features , walking trails , bike paths , sculptures 
+	3	many
+			sense:	many.a.01
+	4	small
+			sense:	small.a.01
+	5	ponds
+			sense:	pond.n.01
+	6	and
+	7	water
+			sense:	body_of_water.n.01
+	8	features
+			sense:	feature.n.01
+	9	,
+	10	walking
+			sense:	walk.v.04
+			prop:	walk.01
+			V		10-10	walking 
+			N-ARG-A1		11-11	trails 
+	11	trails
+			sense:	trail.n.02
+	12	,
+	13	bike
+			sense:	bicycle.n.01
+	14	paths
+			sense:	path.n.02
+	15	,
+	16	sculptures
+			sense:	sculpture.n.01
+	17	and
+	18	is
+			sense:	be.v.01
+			prop:	be.01
+			V		18-18	is 
+			N-ARG-A1		0-1	The park 
+			N-ARG-A2		19-23	popular with tourists and Canberrans 
+	19	popular
+			sense:	popular.a.01
+	20	with
+	21	tourists
+			sense:	tourist.n.01
+	22	and
+	23	Canberrans
+			name:	MISC				23-23	Canberrans 
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Located at the park is the outdoor Stage 88 , which often holds concerts .
+
+
+Treebanked sentence:
+--------------------
+Located at the park is the outdoor Stage 88 , which often holds concerts . 
+
+Tree:
+-----
+(ROOT
+  (SINV
+    (VP (VBN Located)
+      (PP (IN at)
+        (NP (DT the) (NN park))))
+    (VP (VBZ is)
+      (NP (DT the) (JJ outdoor) (NN Stage)))
+    (NP
+      (NP (CD 88))
+      (, ,)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (ADVP (RB often))
+          (VP (VBZ holds)
+            (NP (NNS concerts))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		0-0	Located 
+			N-ARGM-LOC		1-3	at the park 
+			N-ARG-A1		5-13	the outdoor Stage 88 , which often holds concerts 
+	1	at
+	2	the
+	3	park
+			sense:	park.n.01
+	4	is
+			sense:	be.v.03
+			prop:	be.03
+			V		4-4	is 
+	5	the
+	6	outdoor
+			sense:	outdoor.a.01
+	7	Stage
+			sense:	stage.n.03
+	8	88
+			name:	NUMBER				8-8	88 
+	9	,
+	10	which
+	11	often
+			sense:	frequently.r.01
+	12	holds
+			sense:	hold.v.03
+			prop:	hold.04
+			V		12-12	holds 
+			N-ARG-A0		5-8	the outdoor Stage 88 
+			R-ARG-A0		10-10	which 
+			N-ARGM-TMP		11-11	often 
+			N-ARG-A1		13-13	concerts 
+	13	concerts
+			sense:	concert.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The park includes Regatta Point and has a view of the National Gallery , High Court , and National Library on the other side of the lake .
+
+
+Treebanked sentence:
+--------------------
+The park includes Regatta Point and has a view of the National Gallery , High Court , and National Library on the other side of the lake . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN park))
+    (VP
+      (VP (VBZ includes)
+        (NP (NN Regatta) (NN Point)))
+      (CC and)
+      (VP (VBZ has)
+        (NP
+          (NP
+            (NP (DT a) (NN view))
+            (PP (IN of)
+              (NP (DT the) (NNP National) (NNP Gallery))))
+          (, ,)
+          (NP (NNP High) (NNP Court))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (NNP National) (NNP Library))
+            (PP (IN on)
+              (NP
+                (NP (DT the) (JJ other) (NN side))
+                (PP (IN of)
+                  (NP (DT the) (NN lake)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	park
+			sense:	park.n.01
+	2	includes
+			sense:	include.v.01
+			prop:	include.01
+			V		2-2	includes 
+			N-ARG-A2		0-1	The park 
+			N-ARG-A1		3-4	Regatta Point 
+	3	Regatta
+			sense:	regatta.n.01
+	4	Point
+			sense:	point.n.11
+	5	and
+	6	has
+			sense:	have.v.02
+			prop:	have.03
+			V		6-6	has 
+			N-ARG-A0		0-1	The park 
+			N-ARG-A1		7-26	a view of the National Gallery , High Court , and National Library on the other side of the lake 
+	7	a
+	8	view
+			sense:	view.n.02
+	9	of
+	10	the
+	11	National
+			name:	ORGANIZATION				11-15	National Gallery , High Court 
+	12	Gallery
+	13	,
+	14	High
+	15	Court
+	16	,
+	17	and
+	18	National
+	19	Library
+	20	on
+	21	the
+	22	other
+			sense:	other.a.01
+	23	side
+			sense:	side.n.01
+	24	of
+	25	the
+			coref:	IDENT			0	25-26	the lake 
+	26	lake
+			sense:	lake.n.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Kings Park is located adjacent to Commonwealth Park , along the lake to the east .
+
+
+Treebanked sentence:
+--------------------
+Kings Park is located adjacent to Commonwealth Park , along the lake to the east . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNS Kings))
+      (NP (NNP Park)))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (S
+          (ADJP (JJ adjacent)))
+        (PP (IN to)
+          (NP (NNP Commonwealth) (NNP Park)))
+        (, ,)
+        (PP (IN along)
+          (NP
+            (NP (DT the) (NN lake))
+            (PP (IN to)
+              (NP (DT the) (NN east)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Kings
+			sense:	king.n.01
+	1	Park
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		3-3	located 
+			N-ARG-A1		0-1	Kings Park 
+			N-ARGM-LOC		4-7	adjacent to Commonwealth Park 
+			N-ARGM-LOC		9-14	along the lake to the east 
+	4	adjacent
+			sense:	adjacent.s.02
+	5	to
+	6	Commonwealth
+			name:	LOCATION				6-7	Commonwealth Park 
+	7	Park
+	8	,
+	9	along
+	10	the
+	11	lake
+			sense:	lake.n.01
+	12	to
+	13	the
+	14	east
+			sense:	east.n.01
+	15	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.19-20	the Lake 
+				6.25-26	the lake 
+

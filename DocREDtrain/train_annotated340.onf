@@ -1,0 +1,523 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" I Am Woman " is a song performed by American recording artist Jordin Sparks .
+
+
+Treebanked sentence:
+--------------------
+" I Am Woman " is a song performed by American recording artist Jordin Sparks . 
+
+Tree:
+-----
+(ROOT
+  (SINV (`` ")
+    (SBARQ
+      (WHNP
+        (NP (PRP I)))
+      (SQ (VBP Am)
+        (NP (NN Woman))))
+    ('' ")
+    (VP (VBZ is))
+    (NP
+      (NP (DT a) (NN song))
+      (VP (VBN performed)
+        (PP (IN by)
+          (NP
+            (NP (JJ American) (NN recording) (NN artist))
+            (SBAR
+              (S
+                (NP (NNP Jordin))
+                (VP (VBZ Sparks))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	I
+	2	Am
+			coref:	IDENT			2	2-3	Am Woman 
+			name:	MISC				2-3	Am Woman 
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	Am 
+			N-ARG-A1		1-1	I 
+			N-ARG-A2		3-3	Woman 
+	3	Woman
+			sense:	woman.n.01
+	4	"
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	" I Am Woman " 
+			N-ARG-A2		6-14	a song performed by American recording artist Jordin Sparks 
+	6	a
+			coref:	IDENT			0	6-14	a song performed by American recording artist Jordin Sparks 
+	7	song
+			sense:	song.n.01
+	8	performed
+			sense:	perform.v.03
+			prop:	perform.01
+			V		8-8	performed 
+			N-ARG-A1		6-7	a song 
+			N-ARG-A0		9-14	by American recording artist Jordin Sparks 
+	9	by
+	10	American
+			name:	NATIONALITY				10-10	American 
+	11	recording
+			sense:	recording.n.02
+	12	artist
+			name:	TITLE				12-12	artist 
+			sense:	artist.n.01
+	13	Jordin
+			name:	PERSON				13-14	Jordin Sparks 
+	14	Sparks
+			sense:	trip.v.04
+			prop:	spark.01
+			V		14-14	Sparks 
+			N-ARG-A1		13-13	Jordin 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The up - tempo song was written by Ali Pierre Gaschani , Dean Josiah and Ryan Tedder , who also produced the track .
+
+
+Treebanked sentence:
+--------------------
+The up - tempo song was written by Ali Pierre Gaschani , Dean Josiah and Ryan Tedder , who also produced the track . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The)
+      (NML (NN up) (HYPH -) (NN tempo))
+      (NN song))
+    (VP (VBD was)
+      (VP (VBN written)
+        (PP (IN by)
+          (NP
+            (NP
+              (NP (NNP Ali) (NNP Pierre) (NNP Gaschani))
+              (, ,)
+              (NP (NNP Dean) (NNP Josiah))
+              (CC and)
+              (NP (NNP Ryan) (NNP Tedder)))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (ADVP (RB also))
+                (VP (VBD produced)
+                  (NP (DT the) (NN track)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-4	The up - tempo song 
+	1	up
+	2	-
+	3	tempo
+			sense:	tempo.n.01
+	4	song
+			sense:	song.n.01
+	5	was
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	was 
+	6	written
+			sense:	compose.v.02
+			prop:	write.01
+			V		6-6	written 
+			N-ARG-A1		0-4	The up - tempo song 
+			N-ARG-A0		7-22	by Ali Pierre Gaschani , Dean Josiah and Ryan Tedder , who also produced the track 
+	7	by
+	8	Ali
+			name:	PERSON				8-10	Ali Pierre Gaschani 
+	9	Pierre
+	10	Gaschani
+	11	,
+	12	Dean
+			name:	PERSON				12-13	Dean Josiah 
+	13	Josiah
+	14	and
+	15	Ryan
+			name:	PERSON				15-16	Ryan Tedder 
+	16	Tedder
+	17	,
+	18	who
+	19	also
+			sense:	besides.r.02
+	20	produced
+			sense:	produce.v.02
+			prop:	produce.01
+			V		20-20	produced 
+			R-ARG-A0		18-18	who 
+			N-ARGM-DIS		19-19	also 
+			N-ARG-A1		21-22	the track 
+	21	the
+	22	track
+			sense:	cut.n.08
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" I Am Woman " premiered online via AOL Music on May 5 , 2011 , and was later officially released in the United States on May 10 , 2011 .
+
+
+Treebanked sentence:
+--------------------
+" I Am Woman " premiered online via AOL Music on May 5 , 2011 , and was later officially released in the United States on May 10 , 2011 . 
+
+Tree:
+-----
+(ROOT
+  (S (`` ")
+    (S
+      (NP (PRP I))
+      (VP (VBP Am)
+        (NP (NN Woman))))
+    ('' ")
+    (VP
+      (VP (VBD premiered)
+        (ADVP (RB online))
+        (PP (IN via)
+          (NP
+            (NP (NNP AOL) (NNP Music))
+            (PP (IN on)
+              (NP (NNP May) (CD 5) (, ,) (CD 2011) (, ,))))))
+      (CC and)
+      (VP (VBD was)
+        (ADVP (RB later) (RB officially))
+        (VP (VBN released)
+          (PP (IN in)
+            (NP (DT the) (NNP United) (NNP States)))
+          (PP (IN on)
+            (NP (NNP May) (CD 10) (, ,) (CD 2011))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	I
+	2	Am
+			name:	MISC				2-3	Am Woman 
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	Am 
+			N-ARG-A1		1-1	I 
+			N-ARG-A2		3-3	Woman 
+	3	Woman
+			sense:	woman.n.01
+	4	"
+	5	premiered
+			sense:	premier.v.01
+			prop:	premiere.01
+			V		5-5	premiered 
+			N-ARG-A1		0-4	" I Am Woman " 
+			N-ARGM-LOC		6-6	online 
+			N-ARGM-MNR		7-9	via AOL Music 
+			N-ARGM-TMP		10-14	on May 5 , 2011 
+	6	online
+	7	via
+	8	AOL
+			name:	ORGANIZATION				8-8	AOL 
+	9	Music
+	10	on
+	11	May
+			name:	DATE				11-14	May 5 , 2011 
+	12	5
+	13	,
+	14	2011
+	15	,
+	16	and
+	17	was
+			sense:	be.v.01
+			prop:	be.03
+			V		17-17	was 
+	18	later
+			sense:	subsequently.r.01
+	19	officially
+			sense:	formally.r.01
+	20	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		20-20	released 
+			N-ARG-A1		0-4	" I Am Woman " 
+			N-ARGM-TMP		18-18	later 
+			N-ARGM-ADV		19-19	officially 
+			N-ARGM-LOC		21-24	in the United States 
+			N-ARGM-TMP		25-29	on May 10 , 2011 
+	21	in
+	22	the
+	23	United
+			name:	COUNTRY				23-24	United States 
+	24	States
+	25	on
+	26	May
+			name:	DATE				26-29	May 10 , 2011 
+	27	10
+	28	,
+	29	2011
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The song 's lyrics contain a message towards female empowerment , which talks about different aspects of the lives of women .
+
+
+Treebanked sentence:
+--------------------
+The song 's lyrics contain a message towards female empowerment , which talks about different aspects of the lives of women . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN song) (POS 's))
+      (NNS lyrics))
+    (VP (VBP contain)
+      (NP (DT a) (NN message))
+      (PP (IN towards)
+        (NP
+          (NP (JJ female) (NN empowerment))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBZ talks)
+                (NP
+                  (NP (RB about) (JJ different) (NNS aspects))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT the) (NNS lives))
+                      (PP (IN of)
+                        (NP (NNS women))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-2	The song 's 
+	1	song
+			sense:	song.n.01
+	2	's
+	3	lyrics
+			sense:	lyric.n.01
+	4	contain
+			sense:	incorporate.v.02
+			prop:	contain.01
+			V		4-4	contain 
+			N-ARG-A0		0-3	The song 's lyrics 
+			N-ARG-A1		5-20	a message towards female empowerment , which talks about different aspects of the lives of women 
+	5	a
+	6	message
+			sense:	message.n.02
+	7	towards
+	8	female
+			sense:	female.s.03
+	9	empowerment
+			sense:	authorization.n.04
+	10	,
+	11	which
+	12	talks
+			sense:	talk.v.01
+			prop:	talk.01
+			V		12-12	talks 
+			N-ARG-A0		5-9	a message towards female empowerment 
+			R-ARG-A0		11-11	which 
+			N-ARG-A1		13-20	about different aspects of the lives of women 
+	13	about
+			sense:	about.r.04
+	14	different
+			sense:	different.s.02
+	15	aspects
+			sense:	aspect.n.01
+	16	of
+	17	the
+	18	lives
+			sense:	life.n.03
+	19	of
+	20	women
+			sense:	woman.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" I Am Woman " received a positive reception from most music critics , who complimented its differences with any of Sparks ' previous singles , as well as noting its similarities to the sounds of American R&B ; singer Beyoncé .
+
+
+Treebanked sentence:
+--------------------
+" I Am Woman " received a positive reception from most music critics , who complimented its differences with any of Sparks ' previous singles , as well as noting its similarities to the sounds of American R&B ; singer Beyoncé . 
+
+Tree:
+-----
+(ROOT
+  (SINV (`` ")
+    (SBARQ
+      (WHNP
+        (NP (PRP I)))
+      (SQ (VBP Am)
+        (NP (NN Woman))))
+    ('' ")
+    (VP
+      (VP (VBD received)
+        (NP (DT a) (JJ positive) (NN reception))
+        (PP (IN from)
+          (NP
+            (NP (JJS most) (NN music) (NNS critics))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD complimented)
+                  (NP (PRP$ its) (NNS differences))
+                  (PP (IN with)
+                    (NP
+                      (NP (DT any))
+                      (PP (IN of)
+                        (NP
+                          (NP (NNS Sparks) (POS '))
+                          (JJ previous) (NNS singles))))))))
+            (, ,))))
+      (CONJP (RB as) (RB well) (IN as))
+      (VP (VBG noting)
+        (NP (PRP$ its) (NNS similarities))
+        (PP (IN to)
+          (NP
+            (NP (DT the) (NNS sounds))
+            (PP (IN of)
+              (NP (JJ American) (NN R&B) (: ;) (NN singer)))))))
+    (NP (NNP Beyoncé))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	I
+	2	Am
+			coref:	IDENT			2	2-3	Am Woman 
+			name:	MISC				2-3	Am Woman 
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	Am 
+			N-ARG-A1		1-1	I 
+			N-ARG-A2		3-3	Woman 
+	3	Woman
+			sense:	woman.n.01
+	4	"
+	5	received
+			sense:	receive.v.02
+			prop:	receive.01
+			V		5-5	received 
+			N-ARG-A0		0-4	" I Am Woman " 
+			N-ARG-A1		6-8	a positive reception 
+			N-ARG-A2		9-40	from most music critics , who complimented its differences with any of Sparks ' previous singles , as well as noting its similarities to the sounds of American R&B ; singer Beyoncé 
+	6	a
+	7	positive
+			sense:	positive.a.01
+	8	reception
+			sense:	reception.n.01
+	9	from
+	10	most
+			sense:	most.a.01
+	11	music
+			sense:	music.n.01
+	12	critics
+			sense:	critic.n.01
+	13	,
+	14	who
+	15	complimented
+			sense:	compliment.v.01
+			prop:	compliment.01
+			V		15-15	complimented 
+			N-ARG-A0		10-12	most music critics 
+			R-ARG-A0		14-14	who 
+			N-ARG-A1		16-24	its differences with any of Sparks ' previous singles 
+			N-ARGM-PRD		26-40	as well as noting its similarities to the sounds of American R&B ; singer Beyoncé 
+	16	its
+			coref:	IDENT			1	16-16	its 
+	17	differences
+			sense:	difference.n.01
+	18	with
+	19	any
+	20	of
+	21	Sparks
+			sense:	spark.n.05
+	22	'
+	23	previous
+			sense:	previous.s.01
+	24	singles
+			sense:	singles.n.02
+	25	,
+	26	as
+			sense:	equally.r.01
+	27	well
+			sense:	well.r.01
+	28	as
+	29	noting
+			sense:	note.v.01
+			prop:	note.01
+			V		29-29	noting 
+			N-ARG-A0		14-14	who 
+			N-ARG-A1		30-40	its similarities to the sounds of American R&B ; singer Beyoncé 
+	30	its
+			coref:	IDENT			1	30-30	its 
+	31	similarities
+			sense:	similarity.n.01
+	32	to
+	33	the
+	34	sounds
+			sense:	sound.n.01
+	35	of
+	36	American
+			name:	NATIONALITY				36-36	American 
+	37	R&B
+			name:	MISC				37-37	R&B 
+	38	;
+	39	singer
+			name:	TITLE				39-39	singer 
+			sense:	singer.n.01
+	40	Beyoncé
+			name:	PERSON				40-40	Beyoncé 
+	41	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.0-4	The up - tempo song 
+				0.6-14	a song performed by American recording artist Jordin Sparks 
+				3.0-2	The song 's 
+	Chain 1 (IDENT)
+				4.16-16	its 
+				4.30-30	its 
+	Chain 2 (IDENT)
+				0.2-3	Am Woman 
+				4.2-3	Am Woman 
+

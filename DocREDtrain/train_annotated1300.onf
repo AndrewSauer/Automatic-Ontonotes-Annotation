@@ -1,0 +1,960 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sanford is a city in York County , Maine , United States .
+
+
+Treebanked sentence:
+--------------------
+Sanford is a city in York County , Maine , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Sanford))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN city))
+        (PP (IN in)
+          (NP
+            (NML
+              (NML (NNP York) (NNP County))
+              (, ,)
+              (NP (NNP Maine))
+              (, ,))
+            (NNP United) (NNP States)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sanford
+			coref:	IDENT			3	0-0	Sanford 
+			name:	PERSON				0-0	Sanford 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Sanford 
+			N-ARG-A2		2-11	a city in York County , Maine , United States 
+	2	a
+	3	city
+			sense:	city.n.01
+	4	in
+	5	York
+			name:	CITY				5-5	York 
+	6	County
+			name:	LOCATION				6-6	County 
+	7	,
+	8	Maine
+			coref:	IDENT			0	8-8	Maine 
+			name:	STATE_OR_PROVINCE				8-8	Maine 
+	9	,
+	10	United
+			name:	COUNTRY				10-11	United States 
+	11	States
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The population was 20,798 in the 2010 census , making it the seventh largest municipality in the state .
+
+
+Treebanked sentence:
+--------------------
+The population was 20,798 in the 2010 census , making it the seventh largest municipality in the state . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN population))
+    (VP (VBD was)
+      (NP
+        (NP (CD 20,798))
+        (PP (IN in)
+          (NP (DT the) (CD 2010) (NN census))))
+      (, ,)
+      (S
+        (VP (VBG making)
+          (S
+            (NP (PRP it))
+            (NP
+              (NP (DT the)
+                (ADJP (JJ seventh) (JJS largest))
+                (NN municipality))
+              (PP (IN in)
+                (NP (DT the) (NN state))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-1	The population 
+	1	population
+			sense:	population.n.04
+	2	was
+			sense:	equal.v.01
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	The population 
+			N-ARG-A2		3-3	20,798 
+			N-ARGM-TMP		4-7	in the 2010 census 
+			N-ARGM-ADV		9-17	making it the seventh largest municipality in the state 
+	3	20,798
+			name:	NUMBER				3-3	20,798 
+	4	in
+	5	the
+	6	2010
+			name:	DATE				6-6	2010 
+	7	census
+			sense:	census.n.01
+	8	,
+	9	making
+			sense:	make.v.02
+			prop:	make.02
+			V		9-9	making 
+			N-ARG-A1		10-17	it the seventh largest municipality in the state 
+	10	it
+			coref:	IDENT			2	10-10	it 
+	11	the
+	12	seventh
+			name:	ORDINAL				12-12	seventh 
+			sense:	seventh.s.01
+	13	largest
+			sense:	large.a.01
+	14	municipality
+			sense:	municipality.n.01
+	15	in
+	16	the
+	17	state
+			sense:	state.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Situated on the Mousam River , Sanford includes the village of Springvale .
+
+
+Treebanked sentence:
+--------------------
+Situated on the Mousam River , Sanford includes the village of Springvale . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Situated)
+        (PP (IN on)
+          (NP (DT the) (NNP Mousam) (NNP River)))))
+    (, ,)
+    (NP (NNP Sanford))
+    (VP (VBZ includes)
+      (NP
+        (NP (DT the) (NN village))
+        (PP (IN of)
+          (NP (NNP Springvale)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Situated
+			sense:	situate.v.01
+			prop:	situate.01
+			V		0-0	Situated 
+			N-ARG-A2		1-4	on the Mousam River 
+			N-ARG-A1		6-6	Sanford 
+	1	on
+	2	the
+	3	Mousam
+			name:	LOCATION				3-3	Mousam 
+	4	River
+			name:	TITLE				4-4	River 
+	5	,
+	6	Sanford
+			coref:	IDENT			3	6-6	Sanford 
+			name:	PERSON				6-6	Sanford 
+	7	includes
+			sense:	include.v.01
+			prop:	include.01
+			V		7-7	includes 
+			R-ARG-A2		0-4	Situated on the Mousam River 
+			N-ARG-A2		6-6	Sanford 
+			N-ARG-A1		8-11	the village of Springvale 
+	8	the
+	9	village
+			sense:	village.n.01
+	10	of
+	11	Springvale
+			name:	LOCATION				11-11	Springvale 
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The city features many lakes in wooded areas which attract campers .
+
+
+Treebanked sentence:
+--------------------
+The city features many lakes in wooded areas which attract campers . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN city))
+    (VP (VBZ features)
+      (NP (JJ many) (NNS lakes))
+      (PP (IN in)
+        (NP
+          (NP (JJ wooded) (NNS areas))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBP attract)
+                (NP (NNS campers))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	city
+			sense:	city.n.01
+	2	features
+			sense:	have.v.02
+			prop:	feature.01
+			V		2-2	features 
+			N-ARG-A0		0-1	The city 
+			N-ARG-A1		3-10	many lakes in wooded areas which attract campers 
+	3	many
+			sense:	many.a.01
+	4	lakes
+			sense:	lake.n.01
+	5	in
+	6	wooded
+			sense:	wooded.a.01
+	7	areas
+			sense:	area.n.01
+	8	which
+	9	attract
+			sense:	attract.v.01
+			prop:	attract.01
+			V		9-9	attract 
+			N-ARG-A0		3-7	many lakes in wooded areas 
+			R-ARG-A0		8-8	which 
+			N-ARG-A1		10-10	campers 
+	10	campers
+			sense:	camper.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sanford is part of the Portland – South Portland – Biddeford , Maine metropolitan statistical area .
+
+
+Treebanked sentence:
+--------------------
+Sanford is part of the Portland – South Portland – Biddeford , Maine metropolitan statistical area . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Sanford))
+    (VP (VBZ is)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP (DT the)
+            (NML
+              (NML
+                (NML (NNP Portland))
+                (PP (SYM –)
+                  (NP (NNP South) (NNP Portland) (HYPH –) (NNP Biddeford))))
+              (, ,)
+              (NP (NNP Maine)))
+            (JJ metropolitan) (JJ statistical) (NN area)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sanford
+			coref:	IDENT			3	0-0	Sanford 
+			name:	PERSON				0-0	Sanford 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Sanford 
+			N-ARG-A2		2-15	part of the Portland – South Portland – Biddeford , Maine metropolitan statistical area 
+	2	part
+			sense:	part.n.01
+	3	of
+	4	the
+	5	Portland
+			name:	CITY				5-5	Portland 
+	6	–
+	7	South
+			name:	CITY				7-8	South Portland 
+	8	Portland
+	9	–
+	10	Biddeford
+			name:	CITY				10-10	Biddeford 
+	11	,
+	12	Maine
+			coref:	IDENT			0	12-12	Maine 
+			name:	STATE_OR_PROVINCE				12-12	Maine 
+	13	metropolitan
+			sense:	metropolitan.a.01
+	14	statistical
+			sense:	statistical.a.01
+	15	area
+			sense:	area.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On November 6 , 2012 , Sanford voters approved a new charter to re - incorporate Sanford as a city and replace the town meeting format with a city council / mayor / strong manager form of government , along with other changes .
+
+
+Treebanked sentence:
+--------------------
+On November 6 , 2012 , Sanford voters approved a new charter to re - incorporate Sanford as a city and replace the town meeting format with a city council / mayor / strong manager form of government , along with other changes . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NNP November) (CD 6) (, ,) (CD 2012)))
+    (, ,)
+    (NP (NNP Sanford) (NNS voters))
+    (VP (VBD approved)
+      (NP (DT a) (JJ new) (NN charter))
+      (S
+        (VP (TO to)
+          (VP (VB re) (: -)
+            (S
+              (VP
+                (VP (VB incorporate)
+                  (NP (NNP Sanford))
+                  (PP (IN as)
+                    (NP (DT a) (NN city))))
+                (CC and)
+                (VP (VB replace)
+                  (NP (DT the) (NN town) (NN meeting) (NN format))
+                  (PP (IN with)
+                    (NP (DT a) (NN city)))))
+              (NP
+                (NP (NN council) (HYPH /) (NN mayor) (HYPH /) (JJ strong) (NN manager) (NN form))
+                (PP (IN of)
+                  (NP
+                    (NP (NN government))
+                    (, ,)
+                    (ADVP (IN along)
+                      (PP (IN with)
+                        (NP (JJ other) (NNS changes))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	November
+			name:	DATE				1-4	November 6 , 2012 
+	2	6
+	3	,
+	4	2012
+	5	,
+	6	Sanford
+			coref:	IDENT			3	6-6	Sanford 
+			name:	PERSON				6-6	Sanford 
+	7	voters
+			sense:	voter.n.01
+	8	approved
+			sense:	approve.v.01
+			prop:	approve.01
+			V		8-8	approved 
+			N-ARGM-TMP		0-4	On November 6 , 2012 
+			N-ARG-A0		6-7	Sanford voters 
+			N-ARG-A1		9-42	a new charter to re - incorporate Sanford as a city and replace the town meeting format with a city council / mayor / strong manager form of government , along with other changes 
+	9	a
+	10	new
+			sense:	new.a.01
+	11	charter
+			name:	TITLE				11-11	charter 
+			sense:	charter.n.01
+	12	to
+	13	re
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	re 
+	14	-
+	15	incorporate
+			sense:	incorporate.v.03
+			prop:	incorporate.02
+			V		15-15	incorporate 
+			N-ARG-A0		9-11	a new charter 
+			N-ARG-A1		16-16	Sanford 
+			N-ARGM-PRD		17-19	as a city 
+	16	Sanford
+			coref:	IDENT			3	16-16	Sanford 
+			name:	PERSON				16-16	Sanford 
+	17	as
+	18	a
+	19	city
+			sense:	city.n.02
+	20	and
+	21	replace
+			sense:	replace.v.01
+			prop:	replace.01
+			V		21-21	replace 
+			N-ARG-A0		9-11	a new charter 
+			N-ARG-A1		22-25	the town meeting format 
+			N-ARG-A2		26-37	with a city council / mayor / strong manager form of government 
+	22	the
+	23	town
+			sense:	township.n.01
+	24	meeting
+			sense:	meeting.n.01
+	25	format
+			sense:	format.n.01
+	26	with
+	27	a
+	28	city
+			sense:	city.n.02
+	29	council
+			sense:	council.n.01
+	30	/
+	31	mayor
+			name:	TITLE				31-31	mayor 
+			sense:	mayor.n.01
+	32	/
+	33	strong
+			sense:	potent.s.02
+	34	manager
+			name:	TITLE				34-34	manager 
+			sense:	director.n.01
+	35	form
+			sense:	kind.n.01
+	36	of
+	37	government
+			sense:	government.n.03
+	38	,
+	39	along
+	40	with
+	41	other
+			sense:	other.a.01
+	42	changes
+			sense:	change.n.01
+	43	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The new charter took effect on January 1 , 2013 .
+
+
+Treebanked sentence:
+--------------------
+The new charter took effect on January 1 , 2013 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJ new) (NN charter))
+    (VP (VBD took)
+      (NP (NN effect))
+      (PP (IN on)
+        (NP (NNP January) (CD 1) (, ,) (CD 2013))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	new
+			sense:	new.a.01
+	2	charter
+			name:	TITLE				2-2	charter 
+			sense:	charter.n.01
+	3	took
+			sense:	assume.v.03
+			prop:	take.01
+			V		3-3	took 
+			N-ARG-A1		0-2	The new charter 
+			N-ARG-A2		4-4	effect 
+			N-ARGM-TMP		5-9	on January 1 , 2013 
+	4	effect
+			sense:	effect.n.05
+	5	on
+	6	January
+			name:	DATE				6-9	January 1 , 2013 
+	7	1
+	8	,
+	9	2013
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sanford 's new charter provides that the first mayor would be appointed from the ranks of Sanford 's seven city councilors and serve interim for one - year period .
+
+
+Treebanked sentence:
+--------------------
+Sanford 's new charter provides that the first mayor would be appointed from the ranks of Sanford 's seven city councilors and serve interim for one - year period . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Sanford) (POS 's))
+      (JJ new) (NN charter))
+    (VP (VBZ provides)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (JJ first) (NN mayor))
+          (VP (MD would)
+            (VP
+              (VP (VB be)
+                (VP (VBN appointed)
+                  (PP (IN from)
+                    (NP
+                      (NP (DT the) (NNS ranks))
+                      (PP (IN of)
+                        (NP
+                          (NP (NNP Sanford) (POS 's))
+                          (CD seven) (NN city) (NNS councilors)))))))
+              (CC and)
+              (VP (VB serve)
+                (NP
+                  (NP (JJ interim))
+                  (PP (IN for)
+                    (NP
+                      (NML (CD one) (HYPH -) (NN year))
+                      (NN period))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sanford
+			coref:	IDENT			3	0-1	Sanford 's 
+			name:	PERSON				0-0	Sanford 
+	1	's
+	2	new
+			sense:	new.a.01
+	3	charter
+			name:	TITLE				3-3	charter 
+			sense:	charter.n.01
+	4	provides
+			sense:	provide.v.03
+			prop:	provide.01
+			V		4-4	provides 
+			N-ARG-A0		0-3	Sanford 's new charter 
+			N-ARG-A1		5-28	that the first mayor would be appointed from the ranks of Sanford 's seven city councilors and serve interim for one - year period 
+	5	that
+	6	the
+			coref:	IDENT			1	6-8	the first mayor 
+	7	first
+			name:	ORDINAL				7-7	first 
+			sense:	first.a.01
+	8	mayor
+			name:	TITLE				8-8	mayor 
+			sense:	mayor.n.01
+	9	would
+	10	be
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	be 
+	11	appointed
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		11-11	appointed 
+			N-ARG-A1		6-8	the first mayor 
+			N-ARGM-MOD		9-9	would 
+			N-ARGM-DIR		12-20	from the ranks of Sanford 's seven city councilors 
+	12	from
+	13	the
+	14	ranks
+			sense:	membership.n.01
+	15	of
+	16	Sanford
+			coref:	IDENT			3	16-17	Sanford 's 
+			name:	ORGANIZATION				16-16	Sanford 
+	17	's
+	18	seven
+			name:	NUMBER				18-18	seven 
+	19	city
+			sense:	city.n.02
+	20	councilors
+	21	and
+	22	serve
+			sense:	serve.v.02
+			prop:	serve.01
+			V		22-22	serve 
+			N-ARG-A0		6-8	the first mayor 
+			N-ARGM-MOD		9-9	would 
+			N-ARG-A1		23-23	interim 
+			N-ARGM-TMP		24-28	for one - year period 
+	23	interim
+			sense:	interim.s.01
+	24	for
+	25	one
+			name:	DURATION				25-27	one - year 
+	26	-
+	27	year
+			sense:	year.n.01
+	28	period
+			sense:	time_period.n.01
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On January 8 , 2013 , Maura A. Herlihy was appointed as Sanford 's first mayor .
+
+
+Treebanked sentence:
+--------------------
+On January 8 , 2013 , Maura A. Herlihy was appointed as Sanford 's first mayor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NNP January) (CD 8) (, ,) (CD 2013)))
+    (, ,)
+    (NP (NNP Maura) (NNP A.) (NNP Herlihy))
+    (VP (VBD was)
+      (VP (VBN appointed)
+        (PP (IN as)
+          (NP
+            (NP (NNP Sanford) (POS 's))
+            (JJ first) (NN mayor)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	January
+			name:	DATE				1-4	January 8 , 2013 
+	2	8
+	3	,
+	4	2013
+	5	,
+	6	Maura
+			name:	PERSON				6-8	Maura A. Herlihy 
+	7	A.
+	8	Herlihy
+	9	was
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	was 
+	10	appointed
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		10-10	appointed 
+			N-ARGM-TMP		0-4	On January 8 , 2013 
+			N-ARG-A1		6-8	Maura A. Herlihy 
+			N-ARG-A2		11-15	as Sanford 's first mayor 
+	11	as
+	12	Sanford
+			coref:	IDENT			1	12-15	Sanford 's first mayor 
+			coref:	IDENT			3	12-13	Sanford 's 
+			name:	PERSON				12-12	Sanford 
+	13	's
+	14	first
+			name:	ORDINAL				14-14	first 
+			sense:	first.a.01
+	15	mayor
+			name:	TITLE				15-15	mayor 
+			sense:	mayor.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2014 , an elected - at - large mayor would take office and serve a three - year initial first term .
+
+
+Treebanked sentence:
+--------------------
+In 2014 , an elected - at - large mayor would take office and serve a three - year initial first term . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2014)))
+    (, ,)
+    (NP (DT an)
+      (ADJP (VBN elected) (HYPH -)
+        (PP (IN at) (HYPH -)
+          (ADJP (JJ large))))
+      (NN mayor))
+    (VP (MD would)
+      (VP
+        (VP (VB take)
+          (NP (NN office)))
+        (CC and)
+        (VP (VB serve)
+          (NP (DT a)
+            (ADJP (CD three) (HYPH -) (NN year))
+            (JJ initial) (JJ first) (NN term)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2014
+			name:	DATE				1-1	2014 
+	2	,
+	3	an
+	4	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		4-4	elected 
+			N-ARGM-MNR		6-8	at - large 
+			N-ARG-A2		9-9	mayor 
+	5	-
+	6	at
+	7	-
+	8	large
+			sense:	large.a.01
+	9	mayor
+			name:	TITLE				9-9	mayor 
+			sense:	mayor.n.01
+	10	would
+	11	take
+			sense:	fill.v.04
+			prop:	take.01
+			V		11-11	take 
+			N-ARGM-TMP		0-1	In 2014 
+			N-ARG-A0		3-9	an elected - at - large mayor 
+			N-ARGM-MOD		10-10	would 
+			N-ARG-A1		12-12	office 
+	12	office
+			sense:	office.n.04
+	13	and
+	14	serve
+			sense:	serve.v.02
+			prop:	serve.01
+			V		14-14	serve 
+			N-ARGM-TMP		0-1	In 2014 
+			N-ARG-A0		3-9	an elected - at - large mayor 
+			N-ARGM-MOD		10-10	would 
+			N-ARG-A1		15-21	a three - year initial first term 
+	15	a
+	16	three
+			name:	DURATION				16-18	three - year 
+	17	-
+	18	year
+			sense:	year.n.01
+	19	initial
+			sense:	initial.s.01
+	20	first
+			name:	ORDINAL				20-20	first 
+			sense:	first.a.01
+	21	term
+			sense:	term.n.02
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On November 5 , 2013 , Thomas Cote was elected as mayor .
+
+
+Treebanked sentence:
+--------------------
+On November 5 , 2013 , Thomas Cote was elected as mayor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NNP November) (CD 5) (, ,) (CD 2013)))
+    (, ,)
+    (NP (NNP Thomas) (NNP Cote))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (PP (IN as)
+          (NP (NN mayor)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	November
+			name:	DATE				1-4	November 5 , 2013 
+	2	5
+	3	,
+	4	2013
+	5	,
+	6	Thomas
+			name:	PERSON				6-7	Thomas Cote 
+	7	Cote
+	8	was
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	was 
+	9	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		9-9	elected 
+			N-ARGM-TMP		0-4	On November 5 , 2013 
+			N-ARG-A1		6-7	Thomas Cote 
+			N-ARG-A2		10-11	as mayor 
+	10	as
+	11	mayor
+			name:	TITLE				11-11	mayor 
+			sense:	mayor.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Beginning in 2016 , the mayoral position will be elected at - large every two years during legislative election cycles .
+
+
+Treebanked sentence:
+--------------------
+Beginning in 2016 , the mayoral position will be elected at - large every two years during legislative election cycles . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (VBG Beginning)
+      (PP (IN in)
+        (NP (CD 2016))))
+    (, ,)
+    (NP (DT the) (JJ mayoral) (NN position))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN elected)
+          (PP (IN at) (HYPH -)
+            (NP (JJ large)))
+          (NP-TMP (DT every) (CD two) (NNS years))
+          (PP (IN during)
+            (NP (JJ legislative) (NN election) (NNS cycles))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Beginning
+			name:	DATE				0-2	Beginning in 2016 
+			sense:	begin.v.02
+			prop:	begin.01
+			V		0-0	Beginning 
+			N-ARGM-TMP		1-2	in 2016 
+	1	in
+	2	2016
+	3	,
+	4	the
+	5	mayoral
+			sense:	mayoral.a.01
+	6	position
+			sense:	position.n.06
+	7	will
+	8	be
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	be 
+	9	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		9-9	elected 
+			N-ARGM-TMP		0-2	Beginning in 2016 
+			N-ARG-A2		4-6	the mayoral position 
+			N-ARGM-MOD		7-7	will 
+			N-ARGM-MNR		10-12	at - large 
+			N-ARGM-TMP		13-15	every two years 
+			N-ARGM-TMP		16-19	during legislative election cycles 
+	10	at
+	11	-
+	12	large
+			sense:	large.a.01
+	13	every
+			name:	SET				13-15	every two years 
+	14	two
+	15	years
+			sense:	year.n.01
+	16	during
+	17	legislative
+			sense:	legislative.a.01
+	18	election
+			sense:	election.n.01
+	19	cycles
+			sense:	cycle.n.01
+	20	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.8-8	Maine 
+				4.12-12	Maine 
+	Chain 1 (IDENT)
+				8.12-15	Sanford 's first mayor 
+				7.6-8	the first mayor 
+	Chain 2 (IDENT)
+				1.0-1	The population 
+				1.10-10	it 
+	Chain 3 (IDENT)
+				7.0-1	Sanford 's 
+				0.0-0	Sanford 
+				2.6-6	Sanford 
+				4.0-0	Sanford 
+				5.6-6	Sanford 
+				5.16-16	Sanford 
+				7.16-17	Sanford 's 
+				8.12-13	Sanford 's 
+

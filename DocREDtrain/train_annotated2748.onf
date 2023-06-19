@@ -1,0 +1,836 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Music from the Warner Bros.
+
+
+Treebanked sentence:
+--------------------
+Music from the Warner Bros. . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP (NN Music))
+    (PP (IN from)
+      (NP (DT the) (NNP Warner) (NNP Bros.)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Music
+			sense:	music.n.01
+	1	from
+	2	the
+			coref:	IDENT			2	2-4	the Warner Bros. 
+	3	Warner
+			name:	ORGANIZATION				3-4	Warner Bros. 
+	4	Bros.
+	5	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Picture " Sparkle " is a soundtrack album by American singer Aretha Franklin , written and produced by Curtis Mayfield .
+
+
+Treebanked sentence:
+--------------------
+Picture " Sparkle " is a soundtrack album by American singer Aretha Franklin , written and produced by Curtis Mayfield . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NN Picture))
+      (NP ('' ") (NN Sparkle) ('' ")))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN soundtrack) (NN album))
+        (PP (IN by)
+          (NP
+            (NP
+              (NML (JJ American) (NN singer))
+              (NNP Aretha) (NNP Franklin))
+            (, ,)
+            (VP (VBN written)
+              (CC and)
+              (VBN produced)
+              (PP (IN by)
+                (NP (NNP Curtis) (NNP Mayfield))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Picture
+			sense:	movie.n.01
+	1	"
+	2	Sparkle
+			sense:	sparkle.n.01
+	3	"
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	Picture " Sparkle " 
+			N-ARG-A2		5-19	a soundtrack album by American singer Aretha Franklin , written and produced by Curtis Mayfield 
+	5	a
+	6	soundtrack
+			sense:	soundtrack.n.01
+	7	album
+			sense:	album.n.01
+	8	by
+	9	American
+			name:	NATIONALITY				9-9	American 
+	10	singer
+			name:	TITLE				10-10	singer 
+			sense:	singer.n.01
+	11	Aretha
+			name:	PERSON				11-12	Aretha Franklin 
+	12	Franklin
+	13	,
+	14	written
+			sense:	compose.v.02
+			prop:	write.01
+			V		14-14	written 
+			N-ARG-A1		5-12	a soundtrack album by American singer Aretha Franklin 
+			N-ARG-A0		17-19	by Curtis Mayfield 
+	15	and
+	16	produced
+			sense:	produce.v.06
+			prop:	produce.01
+			V		16-16	produced 
+			N-ARG-A0		17-19	by Curtis Mayfield 
+	17	by
+	18	Curtis
+			name:	PERSON				18-19	Curtis Mayfield 
+	19	Mayfield
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Released on May 27 , 1976 , the disc is the soundtrack album for the 1976 Warner Bros. motion picture Sparkle , starring Irene Cara .
+
+
+Treebanked sentence:
+--------------------
+Released on May 27 , 1976 , the disc is the soundtrack album for the 1976 Warner Bros. motion picture Sparkle , starring Irene Cara . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Released)
+        (PP (IN on)
+          (NP (NNP May) (CD 27) (, ,) (CD 1976)))))
+    (, ,)
+    (NP (DT the) (NN disc))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN soundtrack) (NN album))
+        (PP (IN for)
+          (NP
+            (NP (DT the) (CD 1976)
+              (NML (NNP Warner) (NNP Bros.))
+              (NML (NN motion) (NN picture))
+              (NN Sparkle))
+            (, ,)
+            (VP (VBG starring)
+              (NP (NNP Irene) (NNP Cara)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Released
+			sense:	publish.v.02
+			prop:	release.01
+			V		0-0	Released 
+			N-ARGM-TMP		1-5	on May 27 , 1976 
+			N-ARG-A1		7-8	the disc 
+	1	on
+	2	May
+			name:	DATE				2-5	May 27 , 1976 
+	3	27
+	4	,
+	5	1976
+	6	,
+	7	the
+	8	disc
+			sense:	phonograph_record.n.01
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			R-ARG-A1		0-5	Released on May 27 , 1976 
+			N-ARG-A1		7-8	the disc 
+			N-ARG-A2		10-24	the soundtrack album for the 1976 Warner Bros. motion picture Sparkle , starring Irene Cara 
+	10	the
+			coref:	IDENT			0	10-24	the soundtrack album for the 1976 Warner Bros. motion picture Sparkle , starring Irene Cara 
+	11	soundtrack
+			sense:	soundtrack.n.01
+	12	album
+			sense:	album.n.01
+	13	for
+	14	the
+	15	1976
+			name:	DATE				15-15	1976 
+	16	Warner
+			coref:	IDENT			2	16-17	Warner Bros. 
+			name:	ORGANIZATION				16-17	Warner Bros. 
+	17	Bros.
+	18	motion
+			sense:	apparent_motion.n.01
+	19	picture
+			sense:	movie.n.01
+	20	Sparkle
+			sense:	sparkle.n.01
+	21	,
+	22	starring
+			sense:	star.v.01
+			prop:	star.01
+			V		22-22	starring 
+			N-ARG-A2		14-20	the 1976 Warner Bros. motion picture Sparkle 
+			N-ARG-A1		23-24	Irene Cara 
+	23	Irene
+			name:	PERSON				23-24	Irene Cara 
+	24	Cara
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The songs on the soundtrack feature the instrumental tracks and backing vocals from the film versions , with Franklin 's voice taking the place of the original lead vocalists .
+
+
+Treebanked sentence:
+--------------------
+The songs on the soundtrack feature the instrumental tracks and backing vocals from the film versions , with Franklin 's voice taking the place of the original lead vocalists . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP
+      (NP (DT The) (NNS songs))
+      (PP (IN on)
+        (NP
+          (NP
+            (NP (DT the) (NN soundtrack) (NN feature))
+            (NP (DT the) (JJ instrumental) (NNS tracks)))
+          (CC and)
+          (S
+            (VP (VBG backing)
+              (NP (NNS vocals))
+              (PP (IN from)
+                (NP (DT the) (NN film) (NNS versions))))))))
+    (, ,)
+    (PP (IN with)
+      (S
+        (NP
+          (NP (NNP Franklin) (POS 's))
+          (NN voice))
+        (VP (VBG taking)
+          (NP
+            (NP (DT the) (NN place))
+            (PP (IN of)
+              (NP (DT the) (JJ original) (NN lead) (NNS vocalists)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	songs
+			sense:	song.n.01
+	2	on
+	3	the
+	4	soundtrack
+			sense:	soundtrack.n.01
+	5	feature
+			sense:	feature.n.01
+	6	the
+	7	instrumental
+			sense:	instrumental.a.01
+	8	tracks
+			sense:	cut.n.08
+	9	and
+	10	backing
+			sense:	back.v.10
+			prop:	back.01
+			V		10-10	backing 
+			N-ARG-A0		11-11	vocals 
+	11	vocals
+			sense:	vocal_music.n.01
+	12	from
+	13	the
+	14	film
+			sense:	movie.n.01
+	15	versions
+			sense:	version.n.01
+	16	,
+	17	with
+	18	Franklin
+			name:	PERSON				18-18	Franklin 
+	19	's
+	20	voice
+			sense:	voice.n.01
+	21	taking
+			sense:	fill.v.04
+			prop:	take.01
+			V		21-21	taking 
+			N-ARG-A0		18-20	Franklin 's voice 
+			N-ARG-A1		22-28	the place of the original lead vocalists 
+	22	the
+	23	place
+			sense:	stead.n.01
+	24	of
+	25	the
+	26	original
+			sense:	original.s.01
+	27	lead
+			sense:	star.n.04
+	28	vocalists
+			sense:	singer.n.01
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This album returned Aretha to gold status after two low - selling albums .
+
+
+Treebanked sentence:
+--------------------
+This album returned Aretha to gold status after two low - selling albums . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT This) (NN album))
+    (VP (VBD returned)
+      (NP (NNP Aretha))
+      (PP (IN to)
+        (NP (NN gold) (NN status)))
+      (PP (IN after)
+        (NP (CD two)
+          (NML (JJ low) (HYPH -) (NN selling))
+          (NNS albums))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+			coref:	IDENT			0	0-1	This album 
+	1	album
+			sense:	album.n.01
+	2	returned
+			sense:	revert.v.01
+			prop:	return.01
+			V		2-2	returned 
+			N-ARG-A1		3-3	Aretha 
+			N-ARGM-TMP		7-12	after two low - selling albums 
+	3	Aretha
+	4	to
+	5	gold
+			sense:	gold.n.01
+	6	status
+			sense:	condition.n.01
+	7	after
+	8	two
+			name:	NUMBER				8-8	two 
+	9	low
+			sense:	low.a.01
+	10	-
+	11	selling
+			sense:	selling.n.01
+	12	albums
+			sense:	album.n.01
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The first single release , " Something He Can Feel " , was a # 1 R&B ; hit for her and reached # 28 on the Billboard Hot 100 .
+
+
+Treebanked sentence:
+--------------------
+The first single release , " Something He Can Feel " , was a # 1 R&B ; hit for her and reached # 28 on the Billboard Hot 100 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ first) (JJ single) (NN release))
+      (, ,) ('' ")
+      (NP
+        (NP (NN Something))
+        (SBAR
+          (S
+            (NP (PRP He))
+            (VP (MD Can)
+              (VP (VB Feel))))))
+      ('' "))
+    (, ,)
+    (VP
+      (VP (VBD was)
+        (NP
+          (NP (DT a)
+            (NML (NN #) (CD 1))
+            (NN R&B))
+          (: ;)
+          (NP
+            (NP (NN hit))
+            (PP (IN for)
+              (NP (PRP her))))))
+      (CC and)
+      (VP (VBD reached)
+        (NP (NN #) (CD 28))
+        (PP (IN on)
+          (NP (DT the)
+            (NML (NNP Billboard) (NNP Hot) (CD 100))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	first
+			name:	ORDINAL				1-1	first 
+			sense:	first.s.02
+	2	single
+			sense:	individual.a.01
+	3	release
+			sense:	release.n.01
+	4	,
+	5	"
+	6	Something
+	7	He
+	8	Can
+			name:	MISC				8-9	Can Feel 
+	9	Feel
+			sense:	feel.v.03
+			prop:	feel.01
+			V		9-9	Feel 
+			N-ARG-A1		6-6	Something 
+			N-ARG-A0		7-7	He 
+			N-ARGM-MOD		8-8	Can 
+	10	"
+	11	,
+	12	was
+			sense:	be.v.01
+			prop:	be.01
+			V		12-12	was 
+			N-ARG-A1		0-10	The first single release , " Something He Can Feel " 
+			N-ARG-A2		13-20	a # 1 R&B ; hit for her 
+	13	a
+	14	#
+			name:	MONEY				14-15	# 1 
+	15	1
+	16	R&B
+	17	;
+	18	hit
+			sense:	hit.n.03
+	19	for
+	20	her
+	21	and
+	22	reached
+			sense:	reach.v.02
+			prop:	reach.01
+			V		22-22	reached 
+			N-ARG-A0		0-10	The first single release , " Something He Can Feel " 
+			N-ARG-A1		23-24	# 28 
+			N-ARGM-LOC		25-29	on the Billboard Hot 100 
+	23	#
+			name:	MONEY				23-24	# 28 
+	24	28
+	25	on
+	26	the
+	27	Billboard
+			name:	MISC				27-28	Billboard Hot 
+	28	Hot
+	29	100
+			name:	NUMBER				29-29	100 
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+However , it was Aretha 's only Pop Top 40 hit during the second half of the 1970s .
+
+
+Treebanked sentence:
+--------------------
+However , it was Aretha 's only Pop Top 40 hit during the second half of the 1970s . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (S
+      (NP (PRP it))
+      (VP (VBD was)
+        (NP
+          (NP (NNP Aretha) (POS 's))
+          (RB only))))
+    (FRAG
+      (NP
+        (NML (NNP Pop) (NNP Top))
+        (CD 40))
+      (VP (VBN hit)
+        (PP (IN during)
+          (NP
+            (NP (DT the) (JJ second) (NN half))
+            (PP (IN of)
+              (NP (DT the) (NNS 1970s)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	However
+			sense:	however.r.01
+	1	,
+	2	it
+	3	was
+			sense:	be.v.01
+			prop:	be.01
+			V		3-3	was 
+			N-ARGM-DIS		0-0	However 
+			N-ARG-A1		2-2	it 
+			N-ARG-A2		4-17	Aretha 's only Pop Top 40 hit during the second half of the 1970s 
+	4	Aretha
+	5	's
+	6	only
+			sense:	merely.r.01
+	7	Pop
+	8	Top
+	9	40
+			name:	NUMBER				9-9	40 
+	10	hit
+			sense:	strike.v.10
+			prop:	hit.02
+			V		10-10	hit 
+			N-ARG-A0		4-5	Aretha 's 
+			N-ARGM-ADJ		6-6	only 
+			N-ARGM-TMP		11-17	during the second half of the 1970s 
+	11	during
+	12	the
+			name:	DATE				12-17	the second half of the 1970s 
+	13	second
+			sense:	second.s.01
+	14	half
+			sense:	one-half.n.01
+	15	of
+	16	the
+	17	1970s
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The album itself reached the Top 20 of Billboards main album chart and was certified Gold for US sales of over 500,000 copies .
+
+
+Treebanked sentence:
+--------------------
+The album itself reached the Top 20 of Billboards main album chart and was certified Gold for US sales of over 500,000 copies . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN album))
+    (NP (PRP itself))
+    (VP
+      (VP (VBD reached)
+        (NP (DT the) (JJ Top)
+          (NML
+            (NML (CD 20))
+            (PP (IN of)
+              (NP (NNPS Billboards))))
+          (JJ main) (NN album) (NN chart)))
+      (CC and)
+      (VP (VBD was)
+        (VP (VBN certified)
+          (NP (NN Gold))
+          (PP (IN for)
+            (NP
+              (NP (NNP US) (NNS sales))
+              (PP (IN of)
+                (NP
+                  (QP (IN over) (CD 500,000))
+                  (NNS copies))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The album 
+	1	album
+			sense:	album.n.01
+	2	itself
+			coref:	IDENT			0	2-2	itself 
+	3	reached
+			sense:	reach.v.02
+			prop:	reach.01
+			V		3-3	reached 
+			N-ARG-A0		0-2	The album itself 
+			N-ARG-A1		4-11	the Top 20 of Billboards main album chart 
+	4	the
+			coref:	IDENT			1	4-11	the Top 20 of Billboards main album chart 
+	5	Top
+			sense:	top.a.01
+	6	20
+			name:	NUMBER				6-6	20 
+	7	of
+	8	Billboards
+	9	main
+			sense:	chief.s.01
+	10	album
+			sense:	album.n.01
+	11	chart
+			sense:	chart.n.01
+	12	and
+	13	was
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	was 
+	14	certified
+			sense:	certify.v.04
+			prop:	certify.01
+			V		14-14	certified 
+			N-ARG-A1		0-2	The album itself 
+			N-ARG-A2		15-15	Gold 
+	15	Gold
+			sense:	gold.n.01
+	16	for
+	17	US
+			name:	COUNTRY				17-17	US 
+	18	sales
+			sense:	sale.n.01
+	19	of
+	20	over
+	21	500,000
+			name:	NUMBER				21-21	500,000 
+	22	copies
+			sense:	copy.n.03
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2009 , it was reissued on Rhino Records ' budget Flashback Records label .
+
+
+Treebanked sentence:
+--------------------
+In 2009 , it was reissued on Rhino Records ' budget Flashback Records label . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2009)))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (VP (VBN reissued)
+        (PP (IN on)
+          (NP
+            (NP (NNP Rhino) (NNPS Records) (POS '))
+            (NN budget)
+            (NML (NNP Flashback) (NNP Records))
+            (NN label)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2009
+			name:	DATE				1-1	2009 
+	2	,
+	3	it
+			coref:	IDENT			1	3-3	it 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	reissued
+			sense:	reprint.v.01
+			prop:	issue.01
+			V		5-5	reissued 
+			N-ARGM-TMP		0-1	In 2009 
+			N-ARG-A1		3-3	it 
+			N-ARGM-LOC		6-13	on Rhino Records ' budget Flashback Records label 
+	6	on
+	7	Rhino
+			name:	ORGANIZATION				7-8	Rhino Records 
+	8	Records
+	9	'
+	10	budget
+			sense:	budget.n.01
+	11	Flashback
+	12	Records
+	13	label
+			sense:	label.n.02
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The songs " Something He Can Feel " and " Hooked on Your Love " were covered by En Vogue on their 1992 multi - platinum hit album Funky Divas .
+
+
+Treebanked sentence:
+--------------------
+The songs " Something He Can Feel " and " Hooked on Your Love " were covered by En Vogue on their 1992 multi - platinum hit album Funky Divas . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP
+          (NP (DT The) (NNS songs))
+          (`` ")
+          (NP (NN Something)))
+        (SBAR
+          (S
+            (NP (PRP He))
+            (VP (MD Can)
+              (VP (VB Feel))))))
+      ('' ")
+      (CC and)
+      (NP (`` ")
+        (NP (JJ Hooked))
+        (PP (IN on)
+          (NP (PRP$ Your) (NN Love)))
+        ('' ")))
+    (VP (VBD were)
+      (VP (VBN covered)
+        (PP (IN by)
+          (NP
+            (NP (NNP En) (NNP Vogue))
+            (PP (IN on)
+              (NP
+                (NP (PRP$ their) (CD 1992)
+                  (NML
+                    (NML (JJ multi) (HYPH -) (NN platinum))
+                    (NN hit))
+                  (NN album))
+                (NP (NNP Funky) (NNPS Divas))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	songs
+			sense:	song.n.01
+	2	"
+	3	Something
+			name:	MISC				3-6	Something He Can Feel 
+	4	He
+	5	Can
+	6	Feel
+			sense:	feel.v.03
+			prop:	feel.01
+			V		6-6	Feel 
+			N-ARG-A1		3-3	Something 
+			N-ARG-A0		4-4	He 
+			N-ARGM-MOD		5-5	Can 
+	7	"
+	8	and
+	9	"
+	10	Hooked
+			sense:	dependent.s.06
+	11	on
+	12	Your
+			name:	MISC				12-13	Your Love 
+	13	Love
+			sense:	love.n.01
+	14	"
+	15	were
+			sense:	be.v.01
+			prop:	be.03
+			V		15-15	were 
+	16	covered
+			sense:	cover.v.05
+			prop:	cover.03
+			V		16-16	covered 
+			N-ARG-A1		0-14	The songs " Something He Can Feel " and " Hooked on Your Love " 
+			N-ARG-A0		17-19	by En Vogue 
+			N-ARGM-LOC		20-29	on their 1992 multi - platinum hit album Funky Divas 
+	17	by
+	18	En
+			name:	ORGANIZATION				18-19	En Vogue 
+	19	Vogue
+	20	on
+	21	their
+	22	1992
+			name:	DATE				22-22	1992 
+	23	multi
+	24	-
+	25	platinum
+			sense:	platinum.n.01
+	26	hit
+			sense:	hit.n.03
+	27	album
+			sense:	album.n.01
+	28	Funky
+	29	Divas
+	30	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.10-24	the soundtrack album for the 1976 Warner Bros. motion picture Sparkle , starring Irene Cara 
+				4.0-1	This album 
+				7.0-1	The album 
+				7.2-2	itself 
+	Chain 1 (IDENT)
+				7.4-11	the Top 20 of Billboards main album chart 
+				8.3-3	it 
+	Chain 2 (IDENT)
+				0.2-4	the Warner Bros. 
+				2.16-17	Warner Bros. 
+

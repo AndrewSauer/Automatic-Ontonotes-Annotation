@@ -1,0 +1,912 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" Yah Mo B There " is an R&B ; song by American singers James Ingram and Michael McDonald .
+
+
+Treebanked sentence:
+--------------------
+" Yah Mo B There " is an R&B ; song by American singers James Ingram and Michael McDonald . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S (`` ")
+      (NP
+        (NP (NNP Yah) (NNP Mo) (NNP B))
+        (ADVP (RB There)))
+      (`` ")
+      (VP (VBZ is)
+        (NP (DT an) (NN R&B))))
+    (: ;)
+    (S
+      (NP
+        (NP (NN song))
+        (PP (IN by)
+          (NP (JJ American) (NNS singers))))
+      (NP
+        (NP (NNP James) (NNP Ingram))
+        (CC and)
+        (NP (NNP Michael) (NNP McDonald))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	Yah
+	2	Mo
+			name:	DURATION				2-2	Mo 
+	3	B
+	4	There
+			sense:	there.r.01
+	5	"
+	6	is
+			sense:	be.v.02
+			prop:	be.02
+			V		6-6	is 
+			N-ARG-A1		7-18	an R&B ; song by American singers James Ingram and Michael McDonald 
+	7	an
+	8	R&B
+	9	;
+	10	song
+			sense:	song.n.01
+	11	by
+	12	American
+			name:	NATIONALITY				12-12	American 
+	13	singers
+			sense:	singer.n.01
+	14	James
+			name:	PERSON				14-15	James Ingram 
+	15	Ingram
+	16	and
+	17	Michael
+			coref:	IDENT			0	17-18	Michael McDonald 
+			name:	PERSON				17-18	Michael McDonald 
+	18	McDonald
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was written by Ingram , McDonald , Rod Temperton , and producer Quincy Jones .
+
+
+Treebanked sentence:
+--------------------
+It was written by Ingram , McDonald , Rod Temperton , and producer Quincy Jones . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN written)
+        (PP (IN by)
+          (NP
+            (NP (NNP Ingram))
+            (, ,)
+            (NP (NNP McDonald))
+            (, ,)
+            (NP (NNP Rod) (NNP Temperton))
+            (, ,)
+            (CC and)
+            (NP (NN producer) (NNP Quincy) (NNP Jones))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	written
+			sense:	compose.v.02
+			prop:	write.01
+			V		2-2	written 
+			N-ARG-A1		0-0	It 
+			N-ARG-A0		3-14	by Ingram , McDonald , Rod Temperton , and producer Quincy Jones 
+	3	by
+	4	Ingram
+			name:	PERSON				4-4	Ingram 
+	5	,
+	6	McDonald
+			coref:	IDENT			0	6-6	McDonald 
+			name:	ORGANIZATION				6-6	McDonald 
+	7	,
+	8	Rod
+			name:	PERSON				8-9	Rod Temperton 
+	9	Temperton
+	10	,
+	11	and
+			coref:	IDENT			5	11-14	and producer Quincy Jones 
+	12	producer
+			name:	TITLE				12-12	producer 
+			sense:	producer.n.02
+	13	Quincy
+			name:	PERSON				13-14	Quincy Jones 
+	14	Jones
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The song originally appeared on Ingram 's 1983 album It 's Your Night , released on Jones 's Qwest Records label .
+
+
+Treebanked sentence:
+--------------------
+The song originally appeared on Ingram 's 1983 album It 's Your Night , released on Jones 's Qwest Records label . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN song))
+    (ADVP (RB originally))
+    (VP (VBD appeared)
+      (PP (IN on)
+        (NP
+          (NP (NNP Ingram) (POS 's))
+          (CD 1983) (NN album)))
+      (SBAR
+        (S
+          (NP (PRP It))
+          (VP (VBZ 's)
+            (NP
+              (NP (PRP$ Your) (NN Night))
+              (, ,)
+              (VP (VBN released)
+                (PP (IN on)
+                  (NP
+                    (NP (NNP Jones) (POS 's))
+                    (NML (NNP Qwest) (NNPS Records))
+                    (NN label)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The song 
+	1	song
+			sense:	song.n.01
+	2	originally
+			sense:	primitively.r.01
+	3	appeared
+			sense:	appear.v.03
+			prop:	appear.01
+			V		3-3	appeared 
+			N-ARG-A1		0-1	The song 
+			N-ARGM-TMP		2-2	originally 
+			N-ARGM-LOC		4-20	on Ingram 's 1983 album It 's Your Night , released on Jones 's Qwest Records label 
+	4	on
+	5	Ingram
+			coref:	IDENT			2	5-6	Ingram 's 
+			name:	PERSON				5-5	Ingram 
+	6	's
+	7	1983
+			name:	DATE				7-7	1983 
+	8	album
+			sense:	album.n.01
+	9	It
+			coref:	IDENT			1	9-9	It 
+	10	's
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	's 
+			N-ARG-A1		9-9	It 
+			N-ARG-A2		11-12	Your Night 
+	11	Your
+	12	Night
+			name:	TIME				12-12	Night 
+			sense:	night.n.01
+	13	,
+	14	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		14-14	released 
+			N-ARG-A1		5-12	Ingram 's 1983 album It 's Your Night 
+			N-ARGM-LOC		15-20	on Jones 's Qwest Records label 
+	15	on
+	16	Jones
+			coref:	IDENT			5	16-17	Jones 's 
+			name:	PERSON				16-16	Jones 
+	17	's
+	18	Qwest
+			name:	ORGANIZATION				18-19	Qwest Records 
+	19	Records
+	20	label
+			sense:	label.n.02
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was released as a single in late 1983 , peaking at No .
+
+
+Treebanked sentence:
+--------------------
+It was released as a single in late 1983 , peaking at No . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN released)
+        (PP (IN as)
+          (NP (DT a) (JJ single)))
+        (PP (IN in)
+          (NP (JJ late) (CD 1983)))
+        (, ,)
+        (S
+          (VP (VBG peaking)
+            (PP (IN at)
+              (NP
+                (INTJ (UH No))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		2-2	released 
+			N-ARG-A1		0-0	It 
+			N-ARGM-MNR		3-5	as a single 
+			N-ARGM-TMP		6-8	in late 1983 
+			N-ARGM-ADV		10-12	peaking at No 
+	3	as
+	4	a
+	5	single
+			sense:	individual.a.01
+	6	in
+	7	late
+			name:	DATE				7-8	late 1983 
+			sense:	late.a.01
+	8	1983
+	9	,
+	10	peaking
+			sense:	top_out.v.03
+			prop:	leaking.01
+			V		10-10	peaking 
+			N-ARG-A1		0-0	It 
+	11	at
+	12	No
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+19 on the U.S. charts in 1984 , and No .
+
+
+Treebanked sentence:
+--------------------
+19 on the U.S. charts in 1984 , and No . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP (CD 19))
+    (PP (IN on)
+      (NP
+        (NP (DT the) (NNP U.S.))
+        (NP
+          (NML
+            (NML (NNS charts)
+              (PRN
+                (PP (IN in)
+                  (NP (CD 1984)))
+                (, ,)))
+            (CC and))
+          (DT No))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	19
+			name:	NUMBER				0-0	19 
+	1	on
+	2	the
+	3	U.S.
+			name:	COUNTRY				3-3	U.S. 
+	4	charts
+			sense:	chart.n.01
+	5	in
+	6	1984
+			name:	DATE				6-6	1984 
+	7	,
+	8	and
+	9	No
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+44 on the UK charts also in 1984 , ( the remixed version by John Jellybean Benitez hit No .
+
+
+Treebanked sentence:
+--------------------
+44 on the UK charts also in 1984 , ( the remixed version by John Jellybean Benitez hit No . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (CD 44))
+      (PP (IN on)
+        (NP
+          (NP
+            (NP (DT the) (NNP UK) (NNS charts))
+            (ADVP (RB also))
+            (PP (IN in)
+              (NP (CD 1984)))
+            (, ,))
+          (-LRB- -LRB-)
+          (NP
+            (NP (DT the) (VBN remixed) (NN version))
+            (PP (IN by)
+              (NP (NNP John) (NNP Jellybean) (NNP Benitez)))))))
+    (VP (VBD hit)
+      (NP (DT No)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	44
+			name:	NUMBER				0-0	44 
+	1	on
+	2	the
+	3	UK
+			name:	COUNTRY				3-3	UK 
+	4	charts
+			sense:	chart.n.01
+	5	also
+			sense:	besides.r.02
+	6	in
+	7	1984
+			name:	DATE				7-7	1984 
+	8	,
+	9	(
+	10	the
+	11	remixed
+			prop:	remind.01
+			V		11-11	remixed 
+			N-ARG-A1		12-12	version 
+	12	version
+			sense:	version.n.02
+	13	by
+	14	John
+			name:	PERSON				14-16	John Jellybean Benitez 
+	15	Jellybean
+	16	Benitez
+	17	hit
+			sense:	reach.v.02
+			prop:	hit.02
+			V		17-17	hit 
+			N-ARG-A0		10-16	the remixed version by John Jellybean Benitez 
+			N-ARG-A1		18-18	No 
+	18	No
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+12 in the Spring of 1985 in the UK ) , and has subsequently appeared on several of Ingram and McDonald 's greatest hits albums as well as various 1980s compilation albums .
+
+
+Treebanked sentence:
+--------------------
+12 in the Spring of 1985 in the UK ) , and has subsequently appeared on several of Ingram and McDonald 's greatest hits albums as well as various 1980s compilation albums . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP
+      (NP
+        (NP (CD 12))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN Spring))
+            (PP (IN of)
+              (NP
+                (NP (CD 1985))
+                (PP (IN in)
+                  (NP (DT the) (NNP UK))))))))
+      (-RRB- -RRB-) (, ,)
+      (CC and)
+      (NP
+        (NML
+          (S
+            (VP (VBZ has)
+              (ADVP (RB subsequently))
+              (VP (VBN appeared)
+                (PP (IN on)
+                  (NP
+                    (NP (JJ several))
+                    (PP (IN of)
+                      (NP
+                        (NP (NNP Ingram)
+                          (CC and)
+                          (NNP McDonald) (POS 's))
+                        (JJS greatest) (NNS hits)))))))))
+        (NNS albums)))
+    (CONJP (RB as) (RB well) (IN as))
+    (NP
+      (NP (JJ various) (NNS 1980s))
+      (NP (NN compilation) (NNS albums)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	12
+			name:	NUMBER				0-0	12 
+	1	in
+	2	the
+			name:	DATE				2-5	the Spring of 1985 
+	3	Spring
+			sense:	spring.n.01
+	4	of
+	5	1985
+	6	in
+	7	the
+	8	UK
+			name:	COUNTRY				8-8	UK 
+	9	)
+	10	,
+	11	and
+	12	has
+			sense:	have.v.01
+			prop:	have.01
+			V		12-12	has 
+	13	subsequently
+			sense:	subsequently.r.01
+	14	appeared
+			sense:	appear.v.03
+			prop:	appear.01
+			V		14-14	appeared 
+			N-ARGM-TMP		13-13	subsequently 
+			N-ARGM-LOC		15-31	on several of Ingram and McDonald 's greatest hits albums as well as various 1980s compilation albums 
+	15	on
+	16	several
+			sense:	several.s.01
+	17	of
+	18	Ingram
+			coref:	IDENT			2	18-18	Ingram 
+			name:	PERSON				18-18	Ingram 
+	19	and
+	20	McDonald
+			name:	ORGANIZATION				20-20	McDonald 
+	21	's
+	22	greatest
+			sense:	great.s.02
+	23	hits
+			sense:	hit.n.03
+	24	albums
+			sense:	album.n.01
+	25	as
+			sense:	equally.r.01
+	26	well
+			sense:	well.r.01
+	27	as
+	28	various
+			sense:	respective.s.01
+	29	1980s
+			name:	DATE				29-29	1980s 
+	30	compilation
+			sense:	compilation.n.01
+	31	albums
+			sense:	album.n.01
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The performance earned the duo a 1985 Grammy Award for Best R&B ; Performance by a Duo or Group with Vocals .
+
+
+Treebanked sentence:
+--------------------
+The performance earned the duo a 1985 Grammy Award for Best R&B ; Performance by a Duo or Group with Vocals . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN performance))
+    (VP (VBD earned)
+      (NP (DT the) (NN duo))
+      (NP (DT a) (CD 1985) (NNP Grammy) (NNP Award))
+      (PP (IN for)
+        (NP (JJS Best) (NN R&B)))
+      (: ;)
+      (NP
+        (NP (NN Performance))
+        (PP (IN by)
+          (NP
+            (NP (DT a) (NN Duo)
+              (CC or)
+              (NN Group))
+            (PP (IN with)
+              (NP (NNS Vocals)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-1	The performance 
+	1	performance
+			sense:	performance.n.02
+	2	earned
+			sense:	earn.v.02
+			prop:	earn.01
+			V		2-2	earned 
+			N-ARG-A0		0-1	The performance 
+			N-ARG-A2		3-4	the duo 
+			N-ARG-A1		5-20	a 1985 Grammy Award for Best R&B ; Performance by a Duo or Group with Vocals 
+	3	the
+	4	duo
+			sense:	duet.n.02
+	5	a
+	6	1985
+			name:	DATE				6-6	1985 
+	7	Grammy
+	8	Award
+	9	for
+	10	Best
+			sense:	good.a.01
+	11	R&B
+	12	;
+	13	Performance
+			sense:	performance.n.02
+	14	by
+	15	a
+	16	Duo
+			sense:	duet.n.02
+	17	or
+	18	Group
+			sense:	group.n.01
+	19	with
+	20	Vocals
+			sense:	vocal_music.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was one of a series of very successful duets involving Ingram .
+
+
+Treebanked sentence:
+--------------------
+It was one of a series of very successful duets involving Ingram . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT a) (NN series))
+            (PP (IN of)
+              (NP
+                (ADJP (RB very) (JJ successful))
+                (NNS duets)))))
+        (PP (VBG involving)
+          (NP (NNP Ingram)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			3	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-11	one of a series of very successful duets involving Ingram 
+	2	one
+			name:	NUMBER				2-2	one 
+	3	of
+	4	a
+	5	series
+			sense:	series.n.01
+	6	of
+	7	very
+			sense:	very.r.01
+	8	successful
+			sense:	successful.a.01
+	9	duets
+			sense:	duet.n.02
+	10	involving
+			coref:	IDENT			2	10-11	involving Ingram 
+			sense:	involve.v.02
+			prop:	involve.01
+			V		10-10	involving 
+			N-ARG-A2		7-9	very successful duets 
+			N-ARG-A1		11-11	Ingram 
+	11	Ingram
+			name:	PERSON				11-11	Ingram 
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It also received a nomination for Best R&B ; Song , losing to " I Feel for You " ( Prince ) .
+
+
+Treebanked sentence:
+--------------------
+It also received a nomination for Best R&B ; Song , losing to " I Feel for You " ( Prince ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB also))
+    (VP (VBD received)
+      (NP
+        (NP (DT a) (NN nomination))
+        (PP (IN for)
+          (NP
+            (NP
+              (NP
+                (NP (JJS Best) (NN R&B))
+                (: ;)
+                (NP (NNP Song)))
+              (, ,)
+              (VP (VBG losing)
+                (S
+                  (VP (TO to)))))
+            (S (`` ")
+              (NP (PRP I))
+              (VP (VBP Feel)
+                (PP (IN for)
+                  (NP (PRP You))))
+              ('' ")))))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP Prince))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			3	0-0	It 
+	1	also
+			sense:	besides.r.02
+	2	received
+			sense:	receive.v.02
+			prop:	receive.01
+			V		2-2	received 
+			N-ARG-A0		0-0	It 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-9	a nomination for Best R&B ; Song 
+			N-ARGM-ADV		11-21	losing to " I Feel for You " ( Prince ) 
+	3	a
+	4	nomination
+			sense:	nomination.n.01
+	5	for
+	6	Best
+			sense:	good.a.01
+	7	R&B
+	8	;
+	9	Song
+	10	,
+	11	losing
+			sense:	lose.v.02
+			prop:	lose.03
+			V		11-11	losing 
+			N-ARG-A0		9-9	Song 
+			N-ARG-A2		12-20	to " I Feel for You " ( Prince 
+	12	to
+	13	"
+	14	I
+	15	Feel
+			sense:	feel.v.01
+			prop:	feel.01
+			V		15-15	Feel 
+			N-ARG-A0		14-14	I 
+			N-ARG-A2		16-17	for You 
+	16	for
+	17	You
+	18	"
+	19	(
+	20	Prince
+			name:	TITLE				20-20	Prince 
+	21	)
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The song is in reference to God and the power faith can have over difficult times , " Yah " ” being the shortened Yahweh – the Hebrew name for God .
+
+
+Treebanked sentence:
+--------------------
+The song is in reference to God and the power faith can have over difficult times , " Yah " ” being the shortened Yahweh – the Hebrew name for God . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN song))
+      (VP (VBZ is)
+        (PP (IN in)
+          (NP (NN reference)))
+        (PP (IN to)
+          (NP (NNP God)))))
+    (CC and)
+    (S
+      (NP (DT the) (NN power) (NN faith))
+      (VP (MD can)
+        (VP (VB have)
+          (NP
+            (NP
+              (NP
+                (ADJP (RB over) (JJ difficult))
+                (NNS times))
+              (, ,)
+              (NP ('' ") (NNP Yah) ('' ")))
+            ('' ”)
+            (VP (VBG being)
+              (NP
+                (NP (DT the) (VBN shortened) (NNP Yahweh))
+                (PP (SYM –)
+                  (NP (DT the) (JJ Hebrew) (NN name)))
+                (PP (IN for)
+                  (NP (NNP God)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The song 
+	1	song
+			sense:	song.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The song 
+			N-ARG-A2		3-15	in reference to God and the power faith can have over difficult times 
+			N-ARGM-ADV		17-30	" Yah " ” being the shortened Yahweh – the Hebrew name for God 
+	3	in
+	4	reference
+			sense:	reference.n.06
+	5	to
+	6	God
+			coref:	IDENT			4	6-6	God 
+	7	and
+	8	the
+	9	power
+			sense:	power.n.01
+	10	faith
+			sense:	religion.n.01
+	11	can
+	12	have
+			sense:	have.v.01
+			prop:	have.03
+			V		12-12	have 
+			N-ARG-A1		8-9	the power 
+			N-ARG-A0		10-10	faith 
+			N-ARGM-MOD		11-11	can 
+	13	over
+			sense:	over.r.03
+	14	difficult
+			sense:	difficult.a.01
+	15	times
+			sense:	time.n.03
+	16	,
+	17	"
+	18	Yah
+	19	"
+	20	”
+	21	being
+			sense:	be.v.02
+			prop:	be.01
+			V		21-21	being 
+			N-ARG-A1		17-20	" Yah " ” 
+			N-ARG-A2		22-30	the shortened Yahweh – the Hebrew name for God 
+	22	the
+	23	shortened
+			sense:	abridge.v.01
+			prop:	shorten.01
+			V		23-23	shortened 
+			N-ARG-A1		24-30	Yahweh – the Hebrew name for God 
+	24	Yahweh
+	25	–
+	26	the
+	27	Hebrew
+			name:	MISC				27-27	Hebrew 
+			sense:	hebraic.a.01
+	28	name
+			sense:	name.n.01
+	29	for
+	30	God
+			coref:	IDENT			4	30-30	God 
+	31	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.17-18	Michael McDonald 
+				1.6-6	McDonald 
+	Chain 1 (IDENT)
+				2.0-1	The song 
+				2.9-9	It 
+				3.0-0	It 
+				10.0-1	The song 
+	Chain 2 (IDENT)
+				8.10-11	involving Ingram 
+				2.5-6	Ingram 's 
+				6.18-18	Ingram 
+	Chain 3 (IDENT)
+				7.0-1	The performance 
+				8.0-0	It 
+				9.0-0	It 
+	Chain 4 (IDENT)
+				10.6-6	God 
+				10.30-30	God 
+	Chain 5 (IDENT)
+				1.11-14	and producer Quincy Jones 
+				2.16-17	Jones 's 
+

@@ -1,0 +1,684 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ray Monette is an American musician .
+
+
+Treebanked sentence:
+--------------------
+Ray Monette is an American musician . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Ray) (NNP Monette))
+    (VP (VBZ is)
+      (NP (DT an) (JJ American) (NN musician)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ray
+			coref:	IDENT			1	0-1	Ray Monette 
+			name:	PERSON				0-1	Ray Monette 
+	1	Monette
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Ray Monette 
+			N-ARG-A2		3-5	an American musician 
+	3	an
+	4	American
+			name:	NATIONALITY				4-4	American 
+	5	musician
+			name:	TITLE				5-5	musician 
+			sense:	musician.n.01
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He started his career as a songwriter and musician in Detroit .
+
+
+Treebanked sentence:
+--------------------
+He started his career as a songwriter and musician in Detroit . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD started)
+      (NP (PRP$ his) (NN career))
+      (PP (IN as)
+        (NP
+          (NP (DT a) (NN songwriter)
+            (CC and)
+            (NN musician))
+          (PP (IN in)
+            (NP (NNP Detroit))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	started
+			sense:	start.v.06
+			prop:	start.01
+			V		1-1	started 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-3	his career 
+			N-ARGM-PRD		4-8	as a songwriter and musician 
+			N-ARGM-LOC		9-10	in Detroit 
+	2	his
+			coref:	IDENT			1	2-2	his 
+	3	career
+			sense:	career.n.01
+	4	as
+	5	a
+	6	songwriter
+			name:	TITLE				6-6	songwriter 
+			sense:	songwriter.n.01
+	7	and
+	8	musician
+			name:	TITLE				8-8	musician 
+			sense:	musician.n.01
+	9	in
+	10	Detroit
+			name:	CITY				10-10	Detroit 
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1967 with a band called The Abstract Reality , a 45 rpm single " Love Burns Like A Fire Inside " was released .
+
+
+Treebanked sentence:
+--------------------
+In 1967 with a band called The Abstract Reality , a 45 rpm single " Love Burns Like A Fire Inside " was released . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (CD 1967))
+        (PP (IN with)
+          (NP
+            (NP (DT a) (NN band))
+            (VP (VBN called)
+              (NP (DT The) (NNP Abstract) (NN Reality)))))))
+    (, ,)
+    (NP
+      (NP (DT a)
+        (ADJP
+          (NP (CD 45) (NN rpm))
+          (JJ single))
+        (`` ") (NNP Love) (NNP Burns))
+      (PP (IN Like)
+        (NP (NNP A) (NNP Fire) (NNP Inside)))
+      ('' "))
+    (VP (VBD was)
+      (VP (VBN released)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1967
+			name:	DATE				1-1	1967 
+	2	with
+	3	a
+	4	band
+			sense:	band.n.02
+	5	called
+			sense:	name.v.01
+			prop:	call.01
+			V		5-5	called 
+			N-ARG-A1		3-4	a band 
+			N-ARG-A2		6-8	The Abstract Reality 
+	6	The
+	7	Abstract
+	8	Reality
+			sense:	world.n.03
+	9	,
+	10	a
+	11	45
+			name:	NUMBER				11-11	45 
+	12	rpm
+			sense:	revolutions_per_minute.n.01
+	13	single
+			sense:	individual.a.01
+	14	"
+	15	Love
+			name:	MISC				15-15	Love 
+	16	Burns
+			name:	CAUSE_OF_DEATH				16-16	Burns 
+	17	Like
+			name:	MISC				17-18	Like A 
+	18	A
+	19	Fire
+			name:	CAUSE_OF_DEATH				19-19	Fire 
+	20	Inside
+			name:	MISC				20-20	Inside 
+	21	"
+	22	was
+			sense:	be.v.01
+			prop:	be.03
+			V		22-22	was 
+	23	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		23-23	released 
+			N-ARGM-TMP		0-1	In 1967 
+			N-ARGM-ADV		2-8	with a band called The Abstract Reality 
+			N-ARG-A1		10-21	a 45 rpm single " Love Burns Like A Fire Inside " 
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+With Mike Campbell , Bob ' Babbitt ' Kreinar and Andrew Smith he formed Scorpion .
+
+
+Treebanked sentence:
+--------------------
+With Mike Campbell , Bob ' Babbitt ' Kreinar and Andrew Smith he formed Scorpion . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN With)
+      (NP
+        (NP (NNP Mike) (NNP Campbell))
+        (, ,)
+        (NP
+          (NP (NNP Bob) (POS '))
+          (NNP Babbitt) ('' ') (NNP Kreinar))
+        (CC and)
+        (NP (NNP Andrew) (NNP Smith))))
+    (NP (PRP he))
+    (VP (VBD formed)
+      (NP (NNP Scorpion)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	With
+	1	Mike
+			name:	PERSON				1-2	Mike Campbell 
+	2	Campbell
+	3	,
+	4	Bob
+			name:	PERSON				4-4	Bob 
+	5	'
+	6	Babbitt
+			name:	PERSON				6-6	Babbitt 
+	7	'
+	8	Kreinar
+	9	and
+	10	Andrew
+			name:	PERSON				10-11	Andrew Smith 
+	11	Smith
+	12	he
+			coref:	IDENT			1	12-12	he 
+	13	formed
+			sense:	form.v.01
+			prop:	form.01
+			V		13-13	formed 
+			N-ARGM-COM		0-11	With Mike Campbell , Bob ' Babbitt ' Kreinar and Andrew Smith 
+			N-ARG-A0		12-12	he 
+			N-ARG-A1		14-14	Scorpion 
+	14	Scorpion
+			coref:	IDENT			0	14-14	Scorpion 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His name appears on Scorpion and Meat Loaf 's debut album Stoney & Meatloaf ( 1971 ) .
+
+
+Treebanked sentence:
+--------------------
+His name appears on Scorpion and Meat Loaf 's debut album Stoney & Meatloaf ( 1971 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His) (NN name))
+    (VP (VBZ appears)
+      (PP (IN on)
+        (NP
+          (NP (NNP Scorpion))
+          (CC and)
+          (NP
+            (NP
+              (NP (NNP Meat) (NNP Loaf) (POS 's))
+              (NN debut) (NN album))
+            (NP (NNP Stoney)
+              (CC &)
+              (NNP Meatloaf)))))
+      (PRN (-LRB- -LRB-)
+        (NP (CD 1971))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			1	0-0	His 
+	1	name
+			sense:	name.n.01
+	2	appears
+			sense:	appear.v.03
+			prop:	appear.01
+			V		2-2	appears 
+			N-ARG-A1		0-1	His name 
+			N-ARGM-LOC		3-16	on Scorpion and Meat Loaf 's debut album Stoney & Meatloaf ( 1971 ) 
+	3	on
+	4	Scorpion
+			coref:	IDENT			0	4-4	Scorpion 
+	5	and
+	6	Meat
+	7	Loaf
+	8	's
+	9	debut
+			sense:	introduction.n.01
+	10	album
+			sense:	album.n.01
+	11	Stoney
+	12	&
+	13	Meatloaf
+	14	(
+	15	1971
+			name:	DATE				15-15	1971 
+	16	)
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+For this recording , he cowrote four songs .
+
+
+Treebanked sentence:
+--------------------
+For this recording , he cowrote four songs . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (DT this) (NN recording)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBP cowrote)
+      (NP (CD four) (NNS songs)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	For
+	1	this
+	2	recording
+			sense:	recording.n.02
+	3	,
+	4	he
+			coref:	IDENT			1	4-4	he 
+	5	cowrote
+			prop:	cowrite.01
+			V		5-5	cowrote 
+			N-ARGM-PNC		0-2	For this recording 
+			N-ARG-A0		4-4	he 
+			N-ARG-A1		6-7	four songs 
+	6	four
+			name:	NUMBER				6-6	four 
+	7	songs
+			sense:	song.n.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In that same year , he played tenor guitar on " Evolution " by Dennis Coffey & the Detroit Guitar Band , and played a guitar solo on Funkadelic 's " I Got a Thing , You Got a Thing , Everybody 's Got a Thing " .
+
+
+Treebanked sentence:
+--------------------
+In that same year , he played tenor guitar on " Evolution " by Dennis Coffey & the Detroit Guitar Band , and played a guitar solo on Funkadelic 's " I Got a Thing , You Got a Thing , Everybody 's Got a Thing " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT that) (JJ same) (NN year)))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD played)
+        (NP (NN tenor) (NN guitar))
+        (PP (IN on) (`` ")
+          (NP (NN Evolution))
+          ('' "))
+        (PP (IN by)
+          (NP
+            (NP (NNP Dennis) (NNP Coffey))
+            (CC &)
+            (NP (DT the) (NNP Detroit) (NNP Guitar) (NNP Band)))))
+      (, ,)
+      (CC and)
+      (VP (VBD played)
+        (NP (DT a) (NN guitar) (NN solo))
+        (PP (IN on)
+          (NP
+            (NP (NNP Funkadelic) (POS 's))
+            (NML (`` ")
+              (S
+                (S
+                  (NP (PRP I))
+                  (VP (VBD Got)
+                    (NP (DT a) (NN Thing))))
+                (, ,)
+                (S
+                  (NP (PRP You))
+                  (VP (VBD Got)
+                    (SBAR
+                      (S
+                        (NP
+                          (NP (DT a) (NN Thing))
+                          (, ,)
+                          (NP (NN Everybody)))
+                        (VP (VBZ 's)
+                          (VP (VBN Got)
+                            (NP (DT a) (NN Thing)))))))))
+              ('' "))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	that
+	2	same
+			sense:	same.a.01
+	3	year
+			name:	DURATION				3-3	year 
+			sense:	year.n.01
+	4	,
+	5	he
+			coref:	IDENT			1	5-5	he 
+	6	played
+			sense:	play.v.03
+			prop:	play.01
+			V		6-6	played 
+			N-ARGM-TMP		0-3	In that same year 
+			N-ARG-A0		5-5	he 
+			N-ARG-A2		7-8	tenor guitar 
+			N-ARGM-LOC		9-20	on " Evolution " by Dennis Coffey & the Detroit Guitar Band 
+	7	tenor
+			name:	TITLE				7-7	tenor 
+			sense:	tenor.n.02
+	8	guitar
+			sense:	guitar.n.01
+	9	on
+	10	"
+	11	Evolution
+			sense:	development.n.02
+	12	"
+	13	by
+	14	Dennis
+			name:	PERSON				14-15	Dennis Coffey 
+	15	Coffey
+	16	&
+	17	the
+	18	Detroit
+			name:	ORGANIZATION				18-20	Detroit Guitar Band 
+	19	Guitar
+	20	Band
+	21	,
+	22	and
+	23	played
+			sense:	play.v.03
+			prop:	play.01
+			V		23-23	played 
+			N-ARGM-TMP		0-3	In that same year 
+			N-ARG-A0		5-5	he 
+			N-ARG-A1		24-26	a guitar solo 
+			N-ARGM-LOC		27-46	on Funkadelic 's " I Got a Thing , You Got a Thing , Everybody 's Got a Thing " 
+	24	a
+	25	guitar
+			sense:	guitar.n.01
+	26	solo
+			sense:	solo.n.02
+	27	on
+	28	Funkadelic
+	29	's
+	30	"
+	31	I
+	32	Got
+			sense:	get.v.01
+			prop:	get.02
+			V		32-32	Got 
+			N-ARG-A0		31-31	I 
+			N-ARG-A1		33-34	a Thing 
+	33	a
+	34	Thing
+			sense:	thing.n.09
+	35	,
+	36	You
+	37	Got
+			sense:	get.v.01
+			prop:	get.02
+			V		37-37	Got 
+			N-ARG-A0		36-36	You 
+			N-ARG-A1		38-39	a Thing 
+	38	a
+	39	Thing
+			sense:	thing.n.09
+	40	,
+	41	Everybody
+	42	's
+			sense:	be.v.01
+			prop:	be.03
+			V		42-42	's 
+	43	Got
+			sense:	get.v.01
+			prop:	get.02
+			V		43-43	Got 
+			N-ARG-A0		41-41	Everybody 
+			N-ARG-A1		44-45	a Thing 
+	44	a
+	45	Thing
+			sense:	thing.n.09
+	46	"
+	47	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was a guitarist and singer of the Rare Earth from 1971 until 2004 ( with a break around 1977 ) .
+
+
+Treebanked sentence:
+--------------------
+He was a guitarist and singer of the Rare Earth from 1971 until 2004 ( with a break around 1977 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN guitarist)
+          (CC and)
+          (NN singer))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Rare) (NNP Earth))
+            (PP (IN from)
+              (NP (CD 1971))))))
+      (PP (IN until)
+        (NP
+          (NP (CD 2004))
+          (-LRB- -LRB-)
+          (PP (IN with)
+            (NP
+              (NP (DT a) (NN break))
+              (PP (IN around)
+                (NP (CD 1977)))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-9	a guitarist and singer of the Rare Earth 
+			N-ARGM-TMP		10-13	from 1971 until 2004 
+			N-ARGM-ADV		15-19	with a break around 1977 
+	2	a
+	3	guitarist
+			name:	TITLE				3-3	guitarist 
+			sense:	guitarist.n.01
+	4	and
+	5	singer
+			name:	TITLE				5-5	singer 
+			sense:	singer.n.01
+	6	of
+	7	the
+	8	Rare
+	9	Earth
+	10	from
+	11	1971
+			name:	DATE				11-11	1971 
+	12	until
+	13	2004
+			name:	DATE				13-13	2004 
+	14	(
+	15	with
+	16	a
+	17	break
+			sense:	pause.n.01
+	18	around
+	19	1977
+			name:	DATE				19-19	1977 
+	20	)
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2010 he played on the Phil Collins album Going Back .
+
+
+Treebanked sentence:
+--------------------
+In 2010 he played on the Phil Collins album Going Back . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2010)))
+    (NP (PRP he))
+    (VP (VBD played)
+      (PP (IN on)
+        (NP
+          (NP (DT the) (NNP Phil) (NNP Collins) (NN album))
+          (VP (VBG Going)
+            (ADVP (RB Back))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2010
+			name:	DATE				1-1	2010 
+	2	he
+			coref:	IDENT			1	2-2	he 
+	3	played
+			sense:	play.v.03
+			prop:	play.01
+			V		3-3	played 
+			N-ARGM-TMP		0-1	In 2010 
+			N-ARG-A0		2-2	he 
+			N-ARGM-LOC		4-10	on the Phil Collins album Going Back 
+	4	on
+	5	the
+	6	Phil
+			name:	PERSON				6-7	Phil Collins 
+	7	Collins
+	8	album
+			sense:	album.n.01
+	9	Going
+			sense:	travel.v.01
+			prop:	go.02
+			V		9-9	Going 
+			N-ARGM-DIR		10-10	Back 
+	10	Back
+			sense:	back.r.04
+	11	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.14-14	Scorpion 
+				4.4-4	Scorpion 
+	Chain 1 (IDENT)
+				0.0-1	Ray Monette 
+				1.0-0	He 
+				1.2-2	his 
+				3.12-12	he 
+				4.0-0	His 
+				5.4-4	he 
+				6.5-5	he 
+				7.0-0	He 
+				8.2-2	he 
+

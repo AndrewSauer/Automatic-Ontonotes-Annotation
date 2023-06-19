@@ -1,0 +1,765 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" Homer to the Max " is the thirteenth episode of The Simpsons ' tenth season .
+
+
+Treebanked sentence:
+--------------------
+" Homer to the Max " is the thirteenth episode of The Simpsons ' tenth season . 
+
+Tree:
+-----
+(ROOT
+  (S (`` ")
+    (NP
+      (NP (NNP Homer))
+      (PP (IN to)
+        (NP (DT the) (NNP Max))))
+    ('' ")
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ thirteenth) (NN episode))
+        (PP (IN of)
+          (NP
+            (NP (DT The) (NNPS Simpsons) (POS '))
+            (JJ tenth) (NN season)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	Homer
+	2	to
+	3	the
+	4	Max
+	5	"
+	6	is
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	is 
+			N-ARG-A1		0-5	" Homer to the Max " 
+			N-ARG-A2		7-15	the thirteenth episode of The Simpsons ' tenth season 
+	7	the
+	8	thirteenth
+			name:	ORDINAL				8-8	thirteenth 
+			sense:	thirteenth.s.01
+	9	episode
+			sense:	episode.n.03
+	10	of
+	11	The
+			coref:	IDENT			2	11-15	The Simpsons ' tenth season 
+	12	Simpsons
+	13	'
+	14	tenth
+			name:	ORDINAL				14-14	tenth 
+			sense:	tenth.s.01
+	15	season
+			sense:	season.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It originally aired on the Fox network in the United States on February 7 , 1999 .
+
+
+Treebanked sentence:
+--------------------
+It originally aired on the Fox network in the United States on February 7 , 1999 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB originally))
+    (VP (VBD aired)
+      (PP (IN on)
+        (NP
+          (NP (DT the) (NNP Fox) (NN network))
+          (PP (IN in)
+            (NP (DT the) (NNP United) (NNP States)))))
+      (PP (IN on)
+        (NP (NNP February) (CD 7) (, ,) (CD 1999))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	originally
+			sense:	primitively.r.01
+	2	aired
+			sense:	air.v.02
+			prop:	air.01
+			V		2-2	aired 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		1-1	originally 
+			N-ARGM-LOC		3-6	on the Fox network 
+			N-ARGM-LOC		7-10	in the United States 
+			N-ARGM-TMP		11-15	on February 7 , 1999 
+	3	on
+	4	the
+	5	Fox
+			name:	ORGANIZATION				5-6	Fox network 
+	6	network
+			sense:	network.n.02
+	7	in
+	8	the
+	9	United
+			name:	COUNTRY				9-10	United States 
+	10	States
+	11	on
+	12	February
+			name:	DATE				12-15	February 7 , 1999 
+	13	7
+	14	,
+	15	1999
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the episode , Homer discovers that a new television show , Police Cops , has a hero also named Homer Simpson .
+
+
+Treebanked sentence:
+--------------------
+In the episode , Homer discovers that a new television show , Police Cops , has a hero also named Homer Simpson . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NN episode)))
+    (, ,)
+    (NP (NNP Homer))
+    (VP (VBZ discovers)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT a) (JJ new) (NN television) (NN show))
+            (, ,)
+            (NP (NNS Police) (NNS Cops))
+            (, ,))
+          (VP (VBZ has)
+            (NP
+              (NP (DT a) (NN hero))
+              (VP
+                (ADVP (RB also))
+                (VBN named)
+                (S
+                  (NP (NNP Homer) (NNP Simpson)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+	2	episode
+			sense:	episode.n.03
+	3	,
+	4	Homer
+			coref:	IDENT			0	4-4	Homer 
+			name:	PERSON				4-4	Homer 
+	5	discovers
+			sense:	learn.v.02
+			prop:	discover.01
+			V		5-5	discovers 
+			N-ARGM-LOC		0-2	In the episode 
+			N-ARG-A0		4-4	Homer 
+			N-ARG-A1		6-21	that a new television show , Police Cops , has a hero also named Homer Simpson 
+	6	that
+	7	a
+	8	new
+			sense:	new.a.01
+	9	television
+			sense:	television.n.01
+	10	show
+			sense:	show.n.01
+	11	,
+	12	Police
+			sense:	police.n.01
+	13	Cops
+			sense:	bull.n.05
+	14	,
+	15	has
+			sense:	have.v.02
+			prop:	have.03
+			V		15-15	has 
+			N-ARG-A0		7-13	a new television show , Police Cops 
+			N-ARG-A1		16-21	a hero also named Homer Simpson 
+	16	a
+	17	hero
+			sense:	hero.n.02
+	18	also
+			sense:	besides.r.02
+	19	named
+			sense:	name.v.01
+			prop:	name.01
+			V		19-19	named 
+			N-ARG-A1		16-17	a hero 
+			N-ARGM-ADV		18-18	also 
+			N-ARG-A2		20-21	Homer Simpson 
+	20	Homer
+			coref:	IDENT			0	20-21	Homer Simpson 
+			name:	PERSON				20-21	Homer Simpson 
+	21	Simpson
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is delighted with the positive attention he receives because of his name , but when the television character is rewritten from a hero to a bumbling idiot , he is mocked and taunted , so he changes his name to " Max Power " to rid himself of the negative attention .
+
+
+Treebanked sentence:
+--------------------
+He is delighted with the positive attention he receives because of his name , but when the television character is rewritten from a hero to a bumbling idiot , he is mocked and taunted , so he changes his name to " Max Power " to rid himself of the negative attention . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBZ is)
+        (ADJP (JJ delighted)
+          (PP (IN with)
+            (NP (DT the) (JJ positive) (NN attention))))
+        (SBAR
+          (SBAR
+            (S
+              (NP (PRP he))
+              (VP (VBZ receives)
+                (PP (IN because)
+                  (PP (IN of)
+                    (NP (PRP$ his) (NN name)))))))
+          (, ,)
+          (CC but)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (DT the) (NN television) (NN character))
+              (VP (VBZ is)
+                (VP (VBN rewritten)
+                  (PP (IN from)
+                    (NP (DT a) (NN hero)))
+                  (PP (IN to)
+                    (NP (DT a) (VBG bumbling) (NN idiot))))))))))
+    (PRN (, ,)
+      (S
+        (NP (PRP he))
+        (VP (VBZ is)
+          (VP (VBN mocked)
+            (CC and)
+            (VBN taunted))))
+      (, ,))
+    (RB so)
+    (S
+      (NP (PRP he))
+      (VP (VBZ changes)
+        (NP (PRP$ his) (NN name))
+        (PP (IN to)
+          (NP (`` ") (NNP Max) (NNP Power) ('' ")))
+        (S
+          (VP (TO to)
+            (VP (VB rid)
+              (NP (PRP himself))
+              (PP (IN of)
+                (NP (DT the) (JJ negative) (NN attention))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-12	delighted with the positive attention he receives because of his name 
+	2	delighted
+			sense:	delighted.s.01
+	3	with
+	4	the
+	5	positive
+			sense:	positive.a.01
+	6	attention
+			sense:	attention.n.03
+	7	he
+			coref:	IDENT			0	7-7	he 
+	8	receives
+			sense:	receive.v.02
+			prop:	receive.01
+			V		8-8	receives 
+			N-ARG-A1		4-6	the positive attention 
+			N-ARG-A0		7-7	he 
+			N-ARGM-CAU		9-12	because of his name 
+	9	because
+	10	of
+	11	his
+			coref:	IDENT			0	11-11	his 
+	12	name
+			sense:	name.n.01
+	13	,
+	14	but
+	15	when
+	16	the
+	17	television
+			sense:	television.n.01
+	18	character
+			sense:	fictional_character.n.01
+	19	is
+			sense:	be.v.01
+			prop:	be.03
+			V		19-19	is 
+	20	rewritten
+			sense:	rewrite.v.01
+			prop:	rewrite.01
+			V		20-20	rewritten 
+			N-ARGM-TMP		15-15	when 
+			N-ARG-A1		16-18	the television character 
+	21	from
+	22	a
+	23	hero
+			sense:	hero.n.02
+	24	to
+	25	a
+	26	bumbling
+			sense:	botch.v.01
+			prop:	bumble.01
+			V		26-26	bumbling 
+			N-ARG-A0		27-27	idiot 
+	27	idiot
+			sense:	idiot.n.01
+	28	,
+	29	he
+			coref:	IDENT			0	29-29	he 
+	30	is
+			sense:	be.v.01
+			prop:	be.03
+			V		30-30	is 
+	31	mocked
+			sense:	mock.v.01
+			prop:	mock.01
+			V		31-31	mocked 
+			N-ARGM-TMP		15-27	when the television character is rewritten from a hero to a bumbling idiot 
+			N-ARG-A1		29-29	he 
+	32	and
+	33	taunted
+			sense:	tease.v.02
+			prop:	taunt.01
+			V		33-33	taunted 
+			N-ARGM-TMP		15-27	when the television character is rewritten from a hero to a bumbling idiot 
+			N-ARG-A1		29-29	he 
+	34	,
+	35	so
+			sense:	so.r.03
+	36	he
+			coref:	IDENT			0	36-36	he 
+	37	changes
+			sense:	change.v.01
+			prop:	change.01
+			V		37-37	changes 
+			N-ARG-A0		36-36	he 
+			N-ARG-A1		38-39	his name 
+			N-ARG-A2		40-44	to " Max Power " 
+			N-ARGM-PRP		45-51	to rid himself of the negative attention 
+	38	his
+			coref:	IDENT			0	38-38	his 
+			coref:	IDENT			1	38-39	his name 
+	39	name
+			sense:	name.n.01
+	40	to
+	41	"
+	42	Max
+			name:	PERSON				42-43	Max Power 
+	43	Power
+	44	"
+	45	to
+	46	rid
+			sense:	rid.v.01
+			prop:	rid.01
+			V		46-46	rid 
+			N-ARG-A0		36-36	he 
+			N-ARG-A2		47-47	himself 
+			N-ARG-A1		48-51	of the negative attention 
+	47	himself
+			coref:	IDENT			0	47-47	himself 
+	48	of
+	49	the
+	50	negative
+			sense:	negative.a.01
+	51	attention
+			sense:	attention.n.03
+	52	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Max gains new friends , and is forced into a protest to prevent a forest from being knocked down .
+
+
+Treebanked sentence:
+--------------------
+Max gains new friends , and is forced into a protest to prevent a forest from being knocked down . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Max))
+    (VP
+      (VP (VBZ gains)
+        (NP (JJ new) (NNS friends)))
+      (, ,)
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN forced)
+          (PP (IN into)
+            (NP (DT a) (NN protest)))
+          (S
+            (VP (TO to)
+              (VP (VB prevent)
+                (NP (DT a) (NN forest))
+                (PP (IN from)
+                  (S
+                    (VP (VBG being)
+                      (VP (VBN knocked)
+                        (PRT (RP down))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Max
+			coref:	IDENT			0	0-0	Max 
+			name:	PERSON				0-0	Max 
+	1	gains
+			sense:	acquire.v.05
+			prop:	gain.02
+			V		1-1	gains 
+			N-ARG-A0		0-0	Max 
+			N-ARG-A1		2-3	new friends 
+	2	new
+			sense:	new.a.01
+	3	friends
+			sense:	friend.n.01
+	4	,
+	5	and
+	6	is
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	is 
+	7	forced
+			sense:	impel.v.01
+			prop:	force.01
+			V		7-7	forced 
+			N-ARG-A1		0-0	Max 
+			N-ARG-A2		8-10	into a protest 
+			N-ARGM-PRP		11-18	to prevent a forest from being knocked down 
+	8	into
+	9	a
+	10	protest
+			sense:	protest.n.02
+	11	to
+	12	prevent
+			sense:	prevent.v.02
+			prop:	prevent.01
+			V		12-12	prevent 
+			N-ARG-A0		0-0	Max 
+			N-ARG-A1		13-14	a forest 
+			N-ARG-A2		15-18	from being knocked down 
+	13	a
+	14	forest
+			sense:	forest.n.01
+	15	from
+	16	being
+			sense:	be.v.01
+			prop:	be.03
+			V		16-16	being 
+	17	knocked
+			sense:	bump.v.01
+			prop:	knock.02
+			V		17-17	knocked 
+			N-ARG-A1		13-14	a forest 
+	18	down
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the end , he changes his name back to Homer Simpson .
+
+
+Treebanked sentence:
+--------------------
+In the end , he changes his name back to Homer Simpson . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NN end)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBZ changes)
+      (NP (PRP$ his) (NN name))
+      (ADVP (RB back)
+        (PP (IN to)
+          (NP (NNP Homer) (NNP Simpson)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+	2	end
+			sense:	end.n.03
+	3	,
+	4	he
+			coref:	IDENT			0	4-4	he 
+	5	changes
+			sense:	change.v.01
+			prop:	change.01
+			V		5-5	changes 
+			N-ARGM-TMP		0-2	In the end 
+			N-ARG-A0		4-4	he 
+			N-ARG-A1		6-7	his name 
+			N-ARGM-DIR		8-8	back 
+			N-ARG-A2		9-11	to Homer Simpson 
+	6	his
+			coref:	IDENT			0	6-6	his 
+			coref:	IDENT			1	6-7	his name 
+	7	name
+			sense:	name.n.01
+	8	back
+			sense:	back.r.03
+	9	to
+	10	Homer
+			coref:	IDENT			0	10-11	Homer Simpson 
+			name:	PERSON				10-11	Homer Simpson 
+	11	Simpson
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The episode was written by John Swartzwelder and directed by Pete Michels .
+
+
+Treebanked sentence:
+--------------------
+The episode was written by John Swartzwelder and directed by Pete Michels . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN episode))
+    (VP (VBD was)
+      (VP
+        (VP (VBN written)
+          (PP (IN by)
+            (NP (NNP John) (NNP Swartzwelder))))
+        (CC and)
+        (VP (VBN directed)
+          (PP (IN by)
+            (NP (NNP Pete) (NNP Michels))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	episode
+			sense:	episode.n.03
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	written
+			sense:	write.v.01
+			prop:	write.01
+			V		3-3	written 
+			N-ARG-A1		0-1	The episode 
+			N-ARG-A0		4-6	by John Swartzwelder 
+	4	by
+	5	John
+			name:	PERSON				5-6	John Swartzwelder 
+	6	Swartzwelder
+	7	and
+	8	directed
+			sense:	direct.v.03
+			prop:	direct.01
+			V		8-8	directed 
+			N-ARG-A1		0-1	The episode 
+			N-ARG-A0		9-11	by Pete Michels 
+	9	by
+	10	Pete
+			name:	PERSON				10-11	Pete Michels 
+	11	Michels
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Since airing , it has received mixed reviews from television critics .
+
+
+Treebanked sentence:
+--------------------
+Since airing , it has received mixed reviews from television critics . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Since)
+      (S
+        (VP (VBG airing))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ has)
+      (VP (VBN received)
+        (NP (JJ mixed) (NNS reviews))
+        (PP (IN from)
+          (NP (NN television) (NNS critics)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Since
+	1	airing
+			sense:	air.v.02
+			prop:	air.01
+			V		1-1	airing 
+			N-ARG-A1		3-3	it 
+	2	,
+	3	it
+	4	has
+			sense:	have.v.01
+			prop:	have.01
+			V		4-4	has 
+	5	received
+			sense:	receive.v.02
+			prop:	receive.01
+			V		5-5	received 
+			N-ARGM-TMP		0-1	Since airing 
+			N-ARG-A0		3-3	it 
+			N-ARG-A1		6-7	mixed reviews 
+			N-ARG-A2		8-10	from television critics 
+	6	mixed
+			sense:	assorted.s.01
+	7	reviews
+			sense:	review.n.02
+	8	from
+	9	television
+			sense:	television.n.01
+	10	critics
+			sense:	critic.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Overall , the episode received a Nielsen rating of 8.5 .
+
+
+Treebanked sentence:
+--------------------
+Overall , the episode received a Nielsen rating of 8.5 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Overall))
+    (, ,)
+    (NP (DT the) (NN episode))
+    (VP (VBD received)
+      (NP
+        (NP (DT a) (NNP Nielsen) (NN rating))
+        (PP (IN of)
+          (NP (CD 8.5)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Overall
+	1	,
+	2	the
+	3	episode
+			sense:	episode.n.03
+	4	received
+			sense:	receive.v.02
+			prop:	receive.01
+			V		4-4	received 
+			N-ARGM-ADV		0-0	Overall 
+			N-ARG-A0		2-3	the episode 
+			N-ARG-A1		5-9	a Nielsen rating of 8.5 
+	5	a
+	6	Nielsen
+			name:	MISC				6-6	Nielsen 
+	7	rating
+			sense:	evaluation.n.02
+	8	of
+	9	8.5
+			name:	NUMBER				9-9	8.5 
+	10	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.20-21	Homer Simpson 
+				2.4-4	Homer 
+				3.0-0	He 
+				3.7-7	he 
+				3.11-11	his 
+				3.29-29	he 
+				3.36-36	he 
+				3.38-38	his 
+				3.47-47	himself 
+				4.0-0	Max 
+				5.4-4	he 
+				5.6-6	his 
+				5.10-11	Homer Simpson 
+	Chain 1 (IDENT)
+				3.38-39	his name 
+				5.6-7	his name 
+	Chain 2 (IDENT)
+				0.11-15	The Simpsons ' tenth season 
+				1.0-0	It 
+

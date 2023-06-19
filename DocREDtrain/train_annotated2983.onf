@@ -1,0 +1,490 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ames Laboratory is a United States Department of Energy national laboratory located in Ames , Iowa and affiliated with Iowa State University .
+
+
+Treebanked sentence:
+--------------------
+Ames Laboratory is a United States Department of Energy national laboratory located in Ames , Iowa and affiliated with Iowa State University . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Ames) (NNP Laboratory))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NNP United) (NNP States) (NNP Department))
+        (PP (IN of)
+          (NP
+            (NP (NNP Energy) (JJ national) (NN laboratory))
+            (VP
+              (VP (VBN located)
+                (PP (IN in)
+                  (NP (NNP Ames) (, ,) (NNP Iowa))))
+              (CC and)
+              (VP (VBN affiliated)
+                (PP (IN with)
+                  (NP (NNP Iowa) (NNP State) (NNP University)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ames
+			coref:	IDENT			0	0-1	Ames Laboratory 
+			name:	ORGANIZATION				0-1	Ames Laboratory 
+	1	Laboratory
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Ames Laboratory 
+			N-ARG-A2		3-21	a United States Department of Energy national laboratory located in Ames , Iowa and affiliated with Iowa State University 
+	3	a
+	4	United
+			name:	ORGANIZATION				4-8	United States Department of Energy 
+	5	States
+	6	Department
+	7	of
+	8	Energy
+	9	national
+			sense:	national.s.04
+	10	laboratory
+			sense:	lab.n.01
+	11	located
+			sense:	locate.v.03
+			prop:	locate.01
+			V		11-11	located 
+			N-ARG-A1		3-10	a United States Department of Energy national laboratory 
+			N-ARGM-LOC		12-15	in Ames , Iowa 
+	12	in
+	13	Ames
+			name:	CITY				13-13	Ames 
+	14	,
+	15	Iowa
+			name:	STATE_OR_PROVINCE				15-15	Iowa 
+	16	and
+	17	affiliated
+			sense:	affiliate.v.02
+			prop:	affiliate.01
+			V		17-17	affiliated 
+			N-ARG-A1		3-10	a United States Department of Energy national laboratory 
+			N-ARG-A2		18-21	with Iowa State University 
+	18	with
+	19	Iowa
+			coref:	IDENT			1	19-21	Iowa State University 
+			name:	ORGANIZATION				19-21	Iowa State University 
+	20	State
+	21	University
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This is a top level national laboratory for new research in various domains concerning national security and resource management .
+
+
+Treebanked sentence:
+--------------------
+This is a top level national laboratory for new research in various domains concerning national security and resource management . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a)
+          (NML (JJ top) (NN level))
+          (JJ national) (NN laboratory))
+        (PP (IN for)
+          (NP
+            (NP (JJ new) (NN research))
+            (PP (IN in)
+              (NP
+                (NP (JJ various) (NNS domains))
+                (PP (VBG concerning)
+                  (NP (JJ national)
+                    (NML (NN security)
+                      (CC and)
+                      (NN resource))
+                    (NN management)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+			coref:	IDENT			0	0-0	This 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	This 
+			N-ARG-A2		2-18	a top level national laboratory for new research in various domains concerning national security and resource management 
+	2	a
+	3	top
+			sense:	top.a.01
+	4	level
+			sense:	grade.n.02
+	5	national
+			sense:	national.s.04
+	6	laboratory
+			sense:	lab.n.01
+	7	for
+	8	new
+			sense:	new.a.01
+	9	research
+			sense:	research.n.01
+	10	in
+	11	various
+			sense:	respective.s.01
+	12	domains
+			sense:	knowledge_domain.n.01
+	13	concerning
+			sense:	refer.v.02
+			prop:	concern.02
+			V		13-13	concerning 
+			N-ARG-A0		11-12	various domains 
+			N-ARG-A1		14-18	national security and resource management 
+	14	national
+			sense:	national.a.02
+	15	security
+			sense:	security.n.01
+	16	and
+	17	resource
+			sense:	resource.n.01
+	18	management
+			sense:	management.n.01
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Laboratory conducts research into various areas of national concern , including the synthesis and study of new materials , energy resources , high - speed computer design , and environmental cleanup and restoration .
+
+
+Treebanked sentence:
+--------------------
+The Laboratory conducts research into various areas of national concern , including the synthesis and study of new materials , energy resources , high - speed computer design , and environmental cleanup and restoration . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Laboratory))
+    (VP (VBZ conducts)
+      (NP (NN research))
+      (PP (IN into)
+        (NP
+          (NP (JJ various) (NNS areas))
+          (PP (IN of)
+            (NP (JJ national) (NN concern)))
+          (, ,)
+          (PP (VBG including)
+            (NP
+              (NP (DT the) (NN synthesis)
+                (CC and)
+                (NN study))
+              (PP (IN of)
+                (NP
+                  (NML
+                    (NML (JJ new) (NNS materials))
+                    (, ,)
+                    (NML (NN energy) (NNS resources))
+                    (, ,)
+                    (NML
+                      (NML (JJ high) (HYPH -) (NN speed))
+                      (NN computer) (NN design))
+                    (, ,)
+                    (CC and)
+                    (NML (JJ environmental) (NN cleanup)))
+                  (CC and)
+                  (NN restoration))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The Laboratory 
+	1	Laboratory
+	2	conducts
+			sense:	conduct.v.01
+			prop:	conduct.01
+			V		2-2	conducts 
+			N-ARG-A0		0-1	The Laboratory 
+			N-ARG-A1		3-33	research into various areas of national concern , including the synthesis and study of new materials , energy resources , high - speed computer design , and environmental cleanup and restoration 
+	3	research
+			sense:	research.n.01
+	4	into
+	5	various
+			sense:	respective.s.01
+	6	areas
+			sense:	area.n.02
+	7	of
+	8	national
+			sense:	national.a.02
+	9	concern
+			sense:	concern.n.01
+	10	,
+	11	including
+			sense:	include.v.01
+			prop:	include.01
+			V		11-11	including 
+			N-ARG-A2		5-9	various areas of national concern 
+			N-ARG-A1		12-33	the synthesis and study of new materials , energy resources , high - speed computer design , and environmental cleanup and restoration 
+	12	the
+	13	synthesis
+			sense:	synthesis.n.01
+	14	and
+	15	study
+			sense:	survey.n.01
+	16	of
+	17	new
+			sense:	new.a.01
+	18	materials
+			sense:	material.n.01
+	19	,
+	20	energy
+			sense:	energy.n.06
+	21	resources
+			sense:	resource.n.01
+	22	,
+	23	high
+			sense:	high.a.01
+	24	-
+	25	speed
+			sense:	speed.n.01
+	26	computer
+			sense:	computer.n.01
+	27	design
+			sense:	design.n.01
+	28	,
+	29	and
+	30	environmental
+			sense:	environmental.a.01
+	31	cleanup
+			sense:	cleaning.n.01
+	32	and
+	33	restoration
+			sense:	restoration.n.02
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is located on the campus of Iowa State University .
+
+
+Treebanked sentence:
+--------------------
+It is located on the campus of Iowa State University . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN campus))
+            (PP (IN of)
+              (NP (NNP Iowa) (NNP State) (NNP University)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	is
+			sense:	be.v.03
+			prop:	be.03
+			V		1-1	is 
+	2	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		2-2	located 
+			N-ARG-A1		0-0	It 
+			N-ARGM-LOC		3-9	on the campus of Iowa State University 
+	3	on
+	4	the
+	5	campus
+			sense:	campus.n.01
+	6	of
+	7	Iowa
+			coref:	IDENT			1	7-9	Iowa State University 
+			name:	ORGANIZATION				7-9	Iowa State University 
+	8	State
+	9	University
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In January 2013 the Department of Energy announced the establishment of the Critical Materials Institute ( CMI ) at Ames Laboratory , with a mission to develop solutions to the domestic shortages of rare - earth metals and other materials critical for U.S. energy security .
+
+
+Treebanked sentence:
+--------------------
+In January 2013 the Department of Energy announced the establishment of the Critical Materials Institute ( CMI ) at Ames Laboratory , with a mission to develop solutions to the domestic shortages of rare - earth metals and other materials critical for U.S. energy security . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP January) (CD 2013)))
+    (NP
+      (NP (DT the) (NNP Department))
+      (PP (IN of)
+        (NP (NNP Energy))))
+    (VP (VBD announced)
+      (NP
+        (NP (DT the) (NN establishment))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (DT the) (JJ Critical) (NNS Materials))
+              (NP (NNP Institute)))
+            (-LRB- -LRB-)
+            (NP (NNP CMI))
+            (-RRB- -RRB-))))
+      (PP (IN at)
+        (NP (NNP Ames) (NNP Laboratory)))
+      (, ,)
+      (PP (IN with)
+        (NP (DT a) (NN mission)
+          (S
+            (VP (TO to)
+              (VP (VB develop)
+                (NP (NNS solutions))
+                (PP (IN to)
+                  (NP
+                    (NP (DT the) (JJ domestic) (NNS shortages))
+                    (PP (IN of)
+                      (NP
+                        (NP
+                          (NML (JJ rare) (HYPH -) (NN earth))
+                          (NNS metals))
+                        (CC and)
+                        (NP
+                          (NP (JJ other) (NNS materials))
+                          (ADJP (JJ critical)
+                            (PP (IN for)
+                              (NP (NNP U.S.)))))
+                        (NML (NN energy) (NN security))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	January
+			name:	DATE				1-2	January 2013 
+	2	2013
+	3	the
+	4	Department
+			name:	ORGANIZATION				4-6	Department of Energy 
+	5	of
+	6	Energy
+	7	announced
+			sense:	announce.v.01
+			prop:	announce.01
+			V		7-7	announced 
+			N-ARGM-TMP		0-2	In January 2013 
+			N-ARG-A0		3-6	the Department of Energy 
+			N-ARG-A1		8-44	the establishment of the Critical Materials Institute ( CMI ) at Ames Laboratory , with a mission to develop solutions to the domestic shortages of rare - earth metals and other materials critical for U.S. energy security 
+	8	the
+	9	establishment
+			sense:	constitution.n.02
+	10	of
+	11	the
+	12	Critical
+			name:	ORGANIZATION				12-14	Critical Materials Institute 
+			sense:	critical.a.06
+	13	Materials
+			sense:	material.n.01
+	14	Institute
+	15	(
+	16	CMI
+			name:	ORGANIZATION				16-16	CMI 
+	17	)
+	18	at
+	19	Ames
+			coref:	IDENT			0	19-20	Ames Laboratory 
+			name:	ORGANIZATION				19-20	Ames Laboratory 
+	20	Laboratory
+	21	,
+	22	with
+	23	a
+	24	mission
+			sense:	mission.n.03
+	25	to
+	26	develop
+			sense:	develop.v.01
+			prop:	develop.02
+			V		26-26	develop 
+			N-ARG-A1		27-44	solutions to the domestic shortages of rare - earth metals and other materials critical for U.S. energy security 
+	27	solutions
+			sense:	solution.n.03
+	28	to
+	29	the
+	30	domestic
+			sense:	domestic.a.01
+	31	shortages
+			sense:	deficit.n.01
+	32	of
+	33	rare
+			sense:	rare.s.03
+	34	-
+	35	earth
+			sense:	earth.n.01
+	36	metals
+			sense:	alloy.n.01
+	37	and
+	38	other
+			sense:	other.a.01
+	39	materials
+			sense:	material.n.01
+	40	critical
+			sense:	critical.s.04
+	41	for
+	42	U.S.
+			name:	COUNTRY				42-42	U.S. 
+	43	energy
+			sense:	energy.n.06
+	44	security
+			sense:	security.n.01
+	45	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Ames Laboratory 
+				1.0-0	This 
+				2.0-1	The Laboratory 
+				3.0-0	It 
+				4.19-20	Ames Laboratory 
+	Chain 1 (IDENT)
+				0.19-21	Iowa State University 
+				3.7-9	Iowa State University 
+

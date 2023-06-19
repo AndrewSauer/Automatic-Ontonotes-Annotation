@@ -1,0 +1,585 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Paul Desmarais Jr. ( born July 3 , 1954 ) is a Canadian businessman in his hometown of Montreal .
+
+
+Treebanked sentence:
+--------------------
+Paul Desmarais Jr. ( born July 3 , 1954 ) is a Canadian businessman in his hometown of Montreal . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Paul) (NNP Desmarais) (NNP Jr.))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP July) (CD 3) (, ,) (CD 1954)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ Canadian) (NN businessman))
+        (PP (IN in)
+          (NP
+            (NP (PRP$ his) (NN hometown))
+            (PP (IN of)
+              (NP (NNP Montreal)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Paul
+			name:	PERSON				0-2	Paul Desmarais Jr. 
+	1	Desmarais
+	2	Jr.
+	3	(
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-2	Paul Desmarais Jr. 
+			N-ARGM-TMP		5-8	July 3 , 1954 
+	5	July
+			name:	DATE				5-8	July 3 , 1954 
+	6	3
+	7	,
+	8	1954
+	9	)
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	Paul Desmarais Jr. ( born July 3 , 1954 ) 
+			N-ARG-A2		11-18	a Canadian businessman in his hometown of Montreal 
+	11	a
+	12	Canadian
+			name:	NATIONALITY				12-12	Canadian 
+	13	businessman
+			name:	TITLE				13-13	businessman 
+			sense:	businessman.n.01
+	14	in
+	15	his
+	16	hometown
+			sense:	hometown.n.01
+	17	of
+	18	Montreal
+			coref:	IDENT			1	18-18	Montreal 
+			name:	CITY				18-18	Montreal 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is the eldest son of Paul Desmarais Sr .
+
+
+Treebanked sentence:
+--------------------
+He is the eldest son of Paul Desmarais Sr . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJS eldest) (NN son))
+        (PP (IN of)
+          (NP (NNP Paul) (NNP Desmarais) (NNP Sr)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-8	the eldest son of Paul Desmarais Sr 
+	2	the
+	3	eldest
+	4	son
+			sense:	son.n.01
+	5	of
+	6	Paul
+			coref:	IDENT			0	6-8	Paul Desmarais Sr 
+			name:	PERSON				6-8	Paul Desmarais Sr 
+	7	Desmarais
+	8	Sr
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+and Jacqueline ( Maranger ) Desmarais .
+
+
+Treebanked sentence:
+--------------------
+and Jacqueline ( Maranger ) Desmarais . 
+
+Tree:
+-----
+(ROOT
+  (S (CC and)
+    (NP (NNP Jacqueline) (-LRB- -LRB-) (NNP Maranger) (-RRB- -RRB-) (NNP Desmarais))
+    (. .)))
+
+
+Leaves:
+-------
+	0	and
+	1	Jacqueline
+			name:	PERSON				1-1	Jacqueline 
+	2	(
+	3	Maranger
+	4	)
+	5	Desmarais
+			coref:	IDENT			0	5-5	Desmarais 
+			name:	PERSON				5-5	Desmarais 
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Currently he is the Chairman and Co - Chief Executive Officer of Power Corporation of Canada .
+
+
+Treebanked sentence:
+--------------------
+Currently he is the Chairman and Co - Chief Executive Officer of Power Corporation of Canada . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Currently))
+    (NP (PRP he))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the)
+          (NML
+            (NML (NNP Chairman))
+            (CC and)
+            (NML (NNP Co) (HYPH -) (NNP Chief) (NNP Executive) (NNP Officer))))
+        (PP (IN of)
+          (NP
+            (NP (NNP Power) (NNP Corporation))
+            (PP (IN of)
+              (NP (NNP Canada)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Currently
+			name:	DATE				0-0	Currently 
+			sense:	presently.r.02
+	1	he
+	2	is
+			sense:	be.v.08
+			prop:	be.01
+			V		2-2	is 
+			N-ARGM-TMP		0-0	Currently 
+			N-ARG-A1		1-1	he 
+			N-ARG-A2		3-15	the Chairman and Co - Chief Executive Officer of Power Corporation of Canada 
+	3	the
+	4	Chairman
+			name:	TITLE				4-4	Chairman 
+	5	and
+	6	Co
+	7	-
+	8	Chief
+			name:	TITLE				8-10	Chief Executive Officer 
+	9	Executive
+	10	Officer
+	11	of
+	12	Power
+			name:	ORGANIZATION				12-15	Power Corporation of Canada 
+	13	Corporation
+	14	of
+	15	Canada
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Desmarais was born in Sudbury , Ontario .
+
+
+Treebanked sentence:
+--------------------
+Desmarais was born in Sudbury , Ontario . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Desmarais))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Sudbury) (, ,) (NNP Ontario)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Desmarais
+			coref:	IDENT			0	0-0	Desmarais 
+			name:	PERSON				0-0	Desmarais 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Desmarais 
+			N-ARGM-LOC		3-6	in Sudbury , Ontario 
+	3	in
+	4	Sudbury
+			name:	CITY				4-4	Sudbury 
+	5	,
+	6	Ontario
+			name:	STATE_OR_PROVINCE				6-6	Ontario 
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was educated at Lakefield College School in Lakefield , Ontario , McGill University in Montreal , Quebec , and at INSEAD in Fontainebleau , France , where he earned a Master of Business Administration .
+
+
+Treebanked sentence:
+--------------------
+He was educated at Lakefield College School in Lakefield , Ontario , McGill University in Montreal , Quebec , and at INSEAD in Fontainebleau , France , where he earned a Master of Business Administration . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN educated)
+        (PP
+          (PP (IN at)
+            (NP
+              (NP (NNP Lakefield) (NNP College) (NNP School))
+              (PP (IN in)
+                (NP
+                  (NP
+                    (NML (NNP Lakefield) (, ,) (NNP Ontario) (, ,))
+                    (NNP McGill) (NNP University))
+                  (PP (IN in)
+                    (NP (NNP Montreal) (, ,) (NNP Quebec)))))))
+          (, ,)
+          (CC and)
+          (PP (IN at)
+            (NP
+              (NP
+                (NP (NNP INSEAD))
+                (PP (IN in)
+                  (NP (NNP Fontainebleau) (, ,) (NNP France))))
+              (, ,)
+              (SBAR
+                (WHADVP (WRB where))
+                (S
+                  (NP (PRP he))
+                  (VP (VBD earned)
+                    (NP
+                      (NP (DT a) (NNP Master))
+                      (PP (IN of)
+                        (NP (NNP Business) (NNP Administration))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	educated
+			sense:	educate.v.01
+			prop:	educate.01
+			V		2-2	educated 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-34	at Lakefield College School in Lakefield , Ontario , McGill University in Montreal , Quebec , and at INSEAD in Fontainebleau , France , where he earned a Master of Business Administration 
+	3	at
+	4	Lakefield
+			name:	ORGANIZATION				4-6	Lakefield College School 
+	5	College
+	6	School
+	7	in
+	8	Lakefield
+			name:	CITY				8-8	Lakefield 
+	9	,
+	10	Ontario
+			name:	STATE_OR_PROVINCE				10-10	Ontario 
+	11	,
+	12	McGill
+			name:	ORGANIZATION				12-13	McGill University 
+	13	University
+	14	in
+	15	Montreal
+			coref:	IDENT			1	15-15	Montreal 
+			name:	CITY				15-15	Montreal 
+	16	,
+	17	Quebec
+			name:	STATE_OR_PROVINCE				17-17	Quebec 
+	18	,
+	19	and
+	20	at
+	21	INSEAD
+			name:	ORGANIZATION				21-21	INSEAD 
+	22	in
+	23	Fontainebleau
+			name:	CITY				23-23	Fontainebleau 
+	24	,
+	25	France
+			name:	COUNTRY				25-25	France 
+	26	,
+	27	where
+	28	he
+			coref:	IDENT			0	28-28	he 
+	29	earned
+			sense:	earn.v.02
+			prop:	earn.01
+			V		29-29	earned 
+			N-ARGM-LOC		21-25	INSEAD in Fontainebleau , France 
+			R-ARGM-LOC		27-27	where 
+			N-ARG-A0		28-28	he 
+			N-ARG-A1		30-34	a Master of Business Administration 
+	30	a
+	31	Master
+			name:	TITLE				31-34	Master of Business Administration 
+	32	of
+	33	Business
+	34	Administration
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is a Roman Catholic .
+
+
+Treebanked sentence:
+--------------------
+He is a Roman Catholic . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP (DT a) (NNP Roman) (NNP Catholic)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-4	a Roman Catholic 
+	2	a
+	3	Roman
+			name:	RELIGION				3-4	Roman Catholic 
+	4	Catholic
+	5	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Paul Desmarais is married to Hélène Desmarais , Chairman of the Board and CEO of the Centre d’entreprises et d’innovation de Montréal ( CEIM ) .
+
+
+Treebanked sentence:
+--------------------
+Paul Desmarais is married to Hélène Desmarais , Chairman of the Board and CEO of the Centre d’entreprises et d’innovation de Montréal ( CEIM ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Paul) (NNP Desmarais))
+    (VP (VBZ is)
+      (VP (VBN married)
+        (PP (IN to)
+          (NP
+            (NP (NNP Hélène) (NNP Desmarais))
+            (, ,)
+            (NP
+              (NP (NNP Chairman))
+              (PP (IN of)
+                (NP
+                  (NP (DT the)
+                    (NML (NNP Board)
+                      (CC and)
+                      (NNP CEO)))
+                  (PP (IN of)
+                    (NP (DT the) (NNP Centre) (NNP d’entreprises) (FW et) (FW d’innovation) (FW de) (NNP Montréal))))))))
+        (PRN (-LRB- -LRB-)
+          (NP (NNP CEIM))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Paul
+			coref:	IDENT			0	0-1	Paul Desmarais 
+			name:	PERSON				0-1	Paul Desmarais 
+	1	Desmarais
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Paul Desmarais 
+			N-ARG-A2		3-24	married to Hélène Desmarais , Chairman of the Board and CEO of the Centre d’entreprises et d’innovation de Montréal ( CEIM ) 
+	3	married
+			sense:	marry.v.01
+			prop:	arrive.01
+			V		3-3	married 
+			N-ARG-A1		0-1	Paul Desmarais 
+			N-ARG-A2		4-24	to Hélène Desmarais , Chairman of the Board and CEO of the Centre d’entreprises et d’innovation de Montréal ( CEIM ) 
+	4	to
+	5	Hélène
+			name:	PERSON				5-6	Hélène Desmarais 
+	6	Desmarais
+	7	,
+	8	Chairman
+			name:	TITLE				8-8	Chairman 
+	9	of
+	10	the
+			coref:	IDENT			2	10-21	the Board and CEO of the Centre d’entreprises et d’innovation de Montréal 
+	11	Board
+			name:	ORGANIZATION				11-11	Board 
+	12	and
+	13	CEO
+			name:	TITLE				13-13	CEO 
+	14	of
+	15	the
+	16	Centre
+	17	d’entreprises
+	18	et
+	19	d’innovation
+	20	de
+	21	Montréal
+	22	(
+	23	CEIM
+	24	)
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+They have four children : Paul , Alexandre , Nicolas , and Charles - Édouard .
+
+
+Treebanked sentence:
+--------------------
+They have four children : Paul , Alexandre , Nicolas , and Charles - Édouard . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP have)
+      (NP
+        (NP (CD four) (NNS children))
+        (: :)
+        (NP
+          (NP (NNP Paul) (, ,) (NNP Alexandre) (, ,) (NNP Nicolas) (, ,)
+            (CC and)
+            (NNP Charles))
+          (HYPH -)
+          (NP (NNP Édouard)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	They
+			coref:	IDENT			2	0-0	They 
+	1	have
+			sense:	have.v.01
+			prop:	have.03
+			V		1-1	have 
+			N-ARG-A0		0-0	They 
+			N-ARG-A1		2-14	four children : Paul , Alexandre , Nicolas , and Charles - Édouard 
+	2	four
+			name:	NUMBER				2-2	four 
+	3	children
+			sense:	child.n.02
+	4	:
+	5	Paul
+			name:	PERSON				5-5	Paul 
+	6	,
+	7	Alexandre
+			name:	PERSON				7-7	Alexandre 
+	8	,
+	9	Nicolas
+			name:	PERSON				9-9	Nicolas 
+	10	,
+	11	and
+	12	Charles
+			name:	PERSON				12-14	Charles - Édouard 
+	13	-
+	14	Édouard
+	15	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.6-8	Paul Desmarais Sr 
+				2.5-5	Desmarais 
+				4.0-0	Desmarais 
+				5.0-0	He 
+				5.28-28	he 
+				6.0-0	He 
+				7.0-1	Paul Desmarais 
+	Chain 1 (IDENT)
+				0.18-18	Montreal 
+				5.15-15	Montreal 
+	Chain 2 (IDENT)
+				7.10-21	the Board and CEO of the Centre d’entreprises et d’innovation de Montréal 
+				8.0-0	They 
+

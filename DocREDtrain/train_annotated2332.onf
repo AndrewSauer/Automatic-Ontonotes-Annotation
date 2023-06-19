@@ -1,0 +1,885 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Celebrity Apprentice is an American television reality competition series .
+
+
+Treebanked sentence:
+--------------------
+The Celebrity Apprentice is an American television reality competition series . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Celebrity) (NN Apprentice))
+    (VP (VBZ is)
+      (NP (DT an)
+        (NML (JJ American) (NN television))
+        (NN reality) (NN competition) (NN series)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-2	The Celebrity Apprentice 
+	1	Celebrity
+	2	Apprentice
+			sense:	apprentice.n.01
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	The Celebrity Apprentice 
+			N-ARG-A2		4-9	an American television reality competition series 
+	4	an
+	5	American
+			name:	NATIONALITY				5-5	American 
+	6	television
+			sense:	television.n.01
+	7	reality
+			sense:	reality.n.04
+	8	competition
+			sense:	contest.n.01
+	9	series
+			sense:	serial.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is a variation of The Apprentice series , and was hosted by real estate developer ( and now U.S. President ) Donald Trump from 2008 to 2015 , and actor and former California Governor Arnold Schwarzenegger from January 2017 .
+
+
+Treebanked sentence:
+--------------------
+It is a variation of The Apprentice series , and was hosted by real estate developer ( and now U.S. President ) Donald Trump from 2008 to 2015 , and actor and former California Governor Arnold Schwarzenegger from January 2017 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (NN variation))
+          (PP (IN of)
+            (NP (DT The) (NN Apprentice) (NN series)))))
+      (, ,)
+      (CC and)
+      (VP (VBD was)
+        (VP
+          (VP (VBN hosted)
+            (PP (IN by)
+              (NP
+                (NML (JJ real) (NN estate))
+                (NN developer))))
+          (-LRB- -LRB-)
+          (CC and)
+          (ADVP (RB now))
+          (VP
+            (FRAG
+              (FRAG
+                (NP (NNP U.S.) (NNP President) (-RRB- -RRB-) (NNP Donald) (NNP Trump))
+                (PP (IN from)
+                  (NP (CD 2008)))
+                (PP (IN to)
+                  (NP (CD 2015))))
+              (, ,)
+              (CC and)
+              (FRAG
+                (NP
+                  (NML
+                    (NML (NN actor))
+                    (CC and)
+                    (NML (JJ former) (NNP California) (NNP Governor)))
+                  (NNP Arnold) (NNP Schwarzenegger))
+                (PP (IN from)
+                  (NP (NNP January) (CD 2017)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-7	a variation of The Apprentice series 
+	2	a
+	3	variation
+			sense:	version.n.02
+	4	of
+	5	The
+	6	Apprentice
+			name:	MISC				6-6	Apprentice 
+			sense:	apprentice.n.01
+	7	series
+			sense:	serial.n.01
+	8	,
+	9	and
+	10	was
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	was 
+	11	hosted
+			sense:	host.v.01
+			prop:	host.01
+			V		11-11	hosted 
+			N-ARG-A1		0-0	It 
+			N-ARG-A0		12-23	by real estate developer ( and now U.S. President ) Donald Trump 
+			N-ARGM-TMP		24-27	from 2008 to 2015 
+			N-ARGM-TMP		37-39	from January 2017 
+	12	by
+	13	real
+			name:	TITLE				13-15	real estate developer 
+			sense:	real.a.01
+	14	estate
+			sense:	estate.n.01
+	15	developer
+			sense:	developer.n.01
+	16	(
+	17	and
+	18	now
+			name:	DATE				18-18	now 
+			sense:	now.r.01
+	19	U.S.
+			name:	COUNTRY				19-19	U.S. 
+	20	President
+			name:	TITLE				20-20	President 
+	21	)
+	22	Donald
+			name:	PERSON				22-23	Donald Trump 
+	23	Trump
+	24	from
+	25	2008
+			name:	DATE				25-27	2008 to 2015 
+	26	to
+	27	2015
+	28	,
+	29	and
+	30	actor
+			name:	TITLE				30-30	actor 
+			sense:	actor.n.01
+	31	and
+	32	former
+			sense:	erstwhile.s.01
+	33	California
+			name:	STATE_OR_PROVINCE				33-33	California 
+	34	Governor
+			name:	TITLE				34-34	Governor 
+	35	Arnold
+			name:	PERSON				35-36	Arnold Schwarzenegger 
+	36	Schwarzenegger
+	37	from
+	38	January
+			name:	DATE				38-39	January 2017 
+	39	2017
+	40	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On August 3 , 2017 , NBC Entertainment Chairman Bob Greenblatt said that the show has effectively been canceled .
+
+
+Treebanked sentence:
+--------------------
+On August 3 , 2017 , NBC Entertainment Chairman Bob Greenblatt said that the show has effectively been canceled . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NNP August) (CD 3) (, ,) (CD 2017)))
+    (, ,)
+    (NP
+      (NML (NNP NBC) (NNP Entertainment) (NNP Chairman))
+      (NNP Bob) (NNP Greenblatt))
+    (VP (VBD said)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN show))
+          (VP (VBZ has)
+            (ADVP (RB effectively))
+            (VP (VBN been)
+              (VP (VBN canceled)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	August
+			name:	DATE				1-4	August 3 , 2017 
+	2	3
+	3	,
+	4	2017
+	5	,
+	6	NBC
+			name:	ORGANIZATION				6-7	NBC Entertainment 
+	7	Entertainment
+	8	Chairman
+			name:	TITLE				8-8	Chairman 
+	9	Bob
+			name:	PERSON				9-10	Bob Greenblatt 
+	10	Greenblatt
+	11	said
+			sense:	state.v.01
+			prop:	say.01
+			V		11-11	said 
+			N-ARGM-TMP		0-4	On August 3 , 2017 
+			N-ARG-A0		6-10	NBC Entertainment Chairman Bob Greenblatt 
+			N-ARG-A1		12-18	that the show has effectively been canceled 
+	12	that
+	13	the
+			coref:	IDENT			1	13-14	the show 
+	14	show
+			sense:	show.n.01
+	15	has
+			sense:	have.v.11
+			prop:	have.01
+			V		15-15	has 
+	16	effectively
+			sense:	effectively.r.02
+	17	been
+			sense:	be.v.01
+			prop:	be.03
+			V		17-17	been 
+	18	canceled
+			sense:	cancel.v.01
+			prop:	cancel.01
+			V		18-18	canceled 
+			N-ARG-A1		13-14	the show 
+			N-ARGM-MNR		16-16	effectively 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Like its precursor , the show 's opening theme song is " For the Love of Money " by The O'Jays .
+
+
+Treebanked sentence:
+--------------------
+Like its precursor , the show 's opening theme song is " For the Love of Money " by The O'Jays . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Like)
+      (NP (PRP$ its) (NN precursor)))
+    (, ,)
+    (NP
+      (NP (DT the) (NN show) (POS 's))
+      (NML (NN opening) (NN theme))
+      (NN song))
+    (VP (VBZ is)
+      (PP
+        (PP (`` ") (IN For)
+          (NP
+            (NP (DT the) (NN Love))
+            (PP (IN of)
+              (NP (NN Money))))
+          ('' "))
+        (PP (IN by)
+          (NP (DT The) (NNPS O'Jays)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Like
+	1	its
+			coref:	IDENT			0	1-2	its precursor 
+			coref:	IDENT			1	1-1	its 
+	2	precursor
+			sense:	harbinger.n.01
+	3	,
+	4	the
+			coref:	IDENT			1	4-6	the show 's 
+	5	show
+			sense:	show.n.01
+	6	's
+	7	opening
+			sense:	opening.n.07
+	8	theme
+			sense:	theme.n.03
+	9	song
+			sense:	song.n.01
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARGM-MNR		0-2	Like its precursor 
+			N-ARG-A1		4-9	the show 's opening theme song 
+			N-ARG-A2		11-20	" For the Love of Money " by The O'Jays 
+	11	"
+	12	For
+	13	the
+	14	Love
+			sense:	love.n.01
+	15	of
+	16	Money
+			sense:	money.n.01
+	17	"
+	18	by
+	19	The
+	20	O'Jays
+			name:	ORGANIZATION				20-20	O'Jays 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Unlike its precursor , however , Celebrity Apprentice consists of celebrities as competing apprentices rather than unknowns .
+
+
+Treebanked sentence:
+--------------------
+Unlike its precursor , however , Celebrity Apprentice consists of celebrities as competing apprentices rather than unknowns . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Unlike)
+      (NP (PRP$ its) (NN precursor)))
+    (, ,)
+    (ADVP (RB however))
+    (, ,)
+    (NP (NNP Celebrity) (NN Apprentice))
+    (VP (VBZ consists)
+      (PP (IN of)
+        (NP
+          (NP
+            (NP (NNS celebrities))
+            (PP (IN as)
+              (NP (VBG competing) (NNS apprentices))))
+          (CONJP (RB rather) (IN than))
+          (NP (NNS unknowns)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Unlike
+	1	its
+			coref:	IDENT			0	1-2	its precursor 
+			coref:	IDENT			1	1-1	its 
+	2	precursor
+			sense:	harbinger.n.01
+	3	,
+	4	however
+			sense:	however.r.01
+	5	,
+	6	Celebrity
+			coref:	IDENT			2	6-7	Celebrity Apprentice 
+	7	Apprentice
+			sense:	apprentice.n.01
+	8	consists
+			sense:	consist.v.04
+			prop:	consist.01
+			V		8-8	consists 
+			N-ARGM-ADV		0-2	Unlike its precursor 
+			N-ARGM-DIS		4-4	however 
+			N-ARG-A1		6-7	Celebrity Apprentice 
+			N-ARG-A2		9-10	of celebrities 
+			N-ARGM-PRD		11-13	as competing apprentices 
+	9	of
+	10	celebrities
+			sense:	celebrity.n.01
+	11	as
+	12	competing
+			sense:	compete.v.01
+			prop:	compete.01
+			V		12-12	competing 
+			N-ARG-A0		13-13	apprentices 
+	13	apprentices
+			sense:	apprentice.n.01
+	14	rather
+			sense:	rather.r.01
+	15	than
+	16	unknowns
+			sense:	stranger.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Some of the celebrities are relatively current while others tend to be those who have been out of the public eye for some time .
+
+
+Treebanked sentence:
+--------------------
+Some of the celebrities are relatively current while others tend to be those who have been out of the public eye for some time . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT Some))
+      (PP (IN of)
+        (NP (DT the) (NNS celebrities))))
+    (VP (VBP are)
+      (ADJP (RB relatively) (JJ current)
+        (SBAR (IN while)
+          (S
+            (NP (NNS others))
+            (VP (VBP tend)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (NP
+                      (NP (DT those))
+                      (SBAR
+                        (WHNP (WP who))
+                        (S
+                          (VP (VBP have)
+                            (VP (VBN been)
+                              (ADVP (IN out)
+                                (PP (IN of)
+                                  (NP (DT the) (JJ public) (NN eye))))
+                              (PP (IN for)
+                                (NP (DT some) (NN time))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Some
+			coref:	IDENT			3	0-3	Some of the celebrities 
+	1	of
+	2	the
+	3	celebrities
+			sense:	celebrity.n.01
+	4	are
+			sense:	be.v.01
+			prop:	be.01
+			V		4-4	are 
+			N-ARG-A1		0-3	Some of the celebrities 
+			N-ARG-A2		5-6	relatively current 
+			N-ARGM-ADV		7-23	while others tend to be those who have been out of the public eye for some time 
+	5	relatively
+			sense:	relatively.r.01
+	6	current
+			name:	DATE				6-6	current 
+			sense:	current.a.01
+	7	while
+	8	others
+	9	tend
+			sense:	tend.v.01
+			prop:	tend.02
+			V		9-9	tend 
+			N-ARG-A1		8-8	others 
+			N-ARG-A2		10-23	to be those who have been out of the public eye for some time 
+	10	to
+	11	be
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	be 
+			N-ARG-A1		8-8	others 
+			N-ARG-A2		12-23	those who have been out of the public eye for some time 
+	12	those
+	13	who
+	14	have
+			sense:	have.v.01
+			prop:	have.01
+			V		14-14	have 
+	15	been
+			sense:	be.v.01
+			prop:	be.01
+			V		15-15	been 
+			N-ARG-A1		12-12	those 
+			R-ARG-A1		13-13	who 
+			N-ARG-A2		16-20	out of the public eye 
+			N-ARGM-TMP		21-23	for some time 
+	16	out
+	17	of
+	18	the
+	19	public
+			sense:	public.a.01
+	20	eye
+			sense:	eye.n.03
+	21	for
+	22	some
+	23	time
+			sense:	time.n.02
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+All of them are competing to win money for a charitable organization of their choice .
+
+
+Treebanked sentence:
+--------------------
+All of them are competing to win money for a charitable organization of their choice . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT All))
+      (PP (IN of)
+        (NP (PRP them))))
+    (VP (VBP are)
+      (VP (VBG competing)
+        (S
+          (VP (TO to)
+            (VP (VB win)
+              (NP (NN money))
+              (PP (IN for)
+                (NP
+                  (NP (DT a) (JJ charitable) (NN organization))
+                  (PP (IN of)
+                    (NP (PRP$ their) (NN choice))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	All
+	1	of
+	2	them
+			coref:	IDENT			3	2-2	them 
+	3	are
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	are 
+	4	competing
+			sense:	compete.v.01
+			prop:	compete.01
+			V		4-4	competing 
+			N-ARG-A0		0-2	All of them 
+			N-ARG-A2		5-14	to win money for a charitable organization of their choice 
+	5	to
+	6	win
+			sense:	acquire.v.05
+			prop:	win.01
+			V		6-6	win 
+			N-ARG-A0		0-2	All of them 
+			N-ARG-A1		7-14	money for a charitable organization of their choice 
+	7	money
+			sense:	money.n.01
+	8	for
+	9	a
+	10	charitable
+			sense:	charitable.a.01
+	11	organization
+			sense:	organization.n.01
+	12	of
+	13	their
+			coref:	IDENT			3	13-13	their 
+	14	choice
+			sense:	choice.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The celebrities come from a wide variety of different fields in the media : sitcoms , professional sports , music industry , reality television , radio , and other backgrounds .
+
+
+Treebanked sentence:
+--------------------
+The celebrities come from a wide variety of different fields in the media : sitcoms , professional sports , music industry , reality television , radio , and other backgrounds . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNS celebrities))
+    (VP (VBP come)
+      (PP (IN from)
+        (NP
+          (NP (DT a) (JJ wide) (NN variety))
+          (PP (IN of)
+            (NP (JJ different) (NNS fields)))))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NNS media))
+          (: :)
+          (NP (NNS sitcoms))
+          (, ,)
+          (NP (JJ professional) (NNS sports))
+          (, ,)
+          (NP (NN music) (NN industry))
+          (, ,)
+          (NP (NN reality) (NN television))
+          (, ,)
+          (NP (NN radio))
+          (, ,)
+          (CC and)
+          (NP (JJ other) (NNS backgrounds)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	celebrities
+			sense:	celebrity.n.01
+	2	come
+			sense:	come.v.05
+			prop:	come.03
+			V		2-2	come 
+			N-ARG-A1		0-1	The celebrities 
+			N-ARG-A2		3-29	from a wide variety of different fields in the media : sitcoms , professional sports , music industry , reality television , radio , and other backgrounds 
+	3	from
+	4	a
+	5	wide
+			sense:	across-the-board.s.01
+	6	variety
+			sense:	assortment.n.01
+	7	of
+	8	different
+			sense:	different.a.01
+	9	fields
+			sense:	field.n.06
+	10	in
+	11	the
+	12	media
+	13	:
+	14	sitcoms
+			sense:	situation_comedy.n.02
+	15	,
+	16	professional
+			sense:	professional.a.01
+	17	sports
+			sense:	sport.n.02
+	18	,
+	19	music
+			sense:	music.n.01
+	20	industry
+			sense:	industry.n.01
+	21	,
+	22	reality
+			sense:	world.n.03
+	23	television
+			sense:	television.n.01
+	24	,
+	25	radio
+			sense:	radio.n.01
+	26	,
+	27	and
+	28	other
+			sense:	other.a.01
+	29	backgrounds
+			sense:	background.n.01
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Celebrity Apprentice is linked in seasons to its precursor TV show , The Apprentice , which consists of seasons one to six and season ten .
+
+
+Treebanked sentence:
+--------------------
+The Celebrity Apprentice is linked in seasons to its precursor TV show , The Apprentice , which consists of seasons one to six and season ten . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Celebrity) (NN Apprentice))
+    (VP (VBZ is)
+      (VP (VBN linked)
+        (PP (IN in)
+          (NP (NNS seasons)))
+        (PP (IN to)
+          (NP
+            (NP (PRP$ its)
+              (NML (NN precursor) (NN TV))
+              (NN show))
+            (, ,)
+            (NP
+              (NP (DT The) (NN Apprentice))
+              (, ,)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBZ consists)
+                    (PP (IN of)
+                      (NP
+                        (NP (NNS seasons))
+                        (NP-TMP (CD one))))
+                    (PP (IN to)
+                      (NP
+                        (NP (CD six))
+                        (CC and)
+                        (NP (NN season) (CD ten))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-2	The Celebrity Apprentice 
+	1	Celebrity
+	2	Apprentice
+			sense:	apprentice.n.01
+	3	is
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	is 
+	4	linked
+			sense:	associate.v.01
+			prop:	link.01
+			V		4-4	linked 
+			N-ARG-A1		0-2	The Celebrity Apprentice 
+			N-ARGM-MNR		5-6	in seasons 
+			C-ARG-A1		7-25	to its precursor TV show , The Apprentice , which consists of seasons one to six and season ten 
+	5	in
+	6	seasons
+			sense:	season.n.01
+	7	to
+	8	its
+			coref:	IDENT			2	8-8	its 
+	9	precursor
+			sense:	harbinger.n.01
+	10	TV
+			sense:	television.n.01
+	11	show
+			sense:	show.n.01
+	12	,
+	13	The
+	14	Apprentice
+			sense:	apprentice.n.01
+	15	,
+	16	which
+	17	consists
+			sense:	consist.v.04
+			prop:	consist.01
+			V		17-17	consists 
+			N-ARG-A1		8-12	its precursor TV show , 
+			N-ARG-A1		13-14	The Apprentice 
+			R-ARG-A1		16-16	which 
+			N-ARG-A2		18-25	of seasons one to six and season ten 
+	18	of
+	19	seasons
+			sense:	season.n.01
+	20	one
+			name:	NUMBER				20-20	one 
+	21	to
+	22	six
+			name:	NUMBER				22-22	six 
+	23	and
+	24	season
+			sense:	season.n.01
+	25	ten
+			name:	NUMBER				25-25	ten 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Celebrity Apprentice consists of seasons seven to nine and eleven to fifteen .
+
+
+Treebanked sentence:
+--------------------
+The Celebrity Apprentice consists of seasons seven to nine and eleven to fifteen . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Celebrity) (NN Apprentice))
+    (VP (VBZ consists)
+      (PP (IN of)
+        (NP
+          (NP (NNS seasons) (CD seven))
+          (PP (IN to)
+            (NP (CD nine)
+              (CC and)
+              (CD eleven)))))
+      (PP (IN to)
+        (NP (CD fifteen))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-2	The Celebrity Apprentice 
+	1	Celebrity
+	2	Apprentice
+			sense:	apprentice.n.01
+	3	consists
+			sense:	consist.v.04
+			prop:	consist.01
+			V		3-3	consists 
+			N-ARG-A1		0-2	The Celebrity Apprentice 
+			N-ARG-A2		4-12	of seasons seven to nine and eleven to fifteen 
+	4	of
+	5	seasons
+			sense:	season.n.01
+	6	seven
+			name:	NUMBER				6-6	seven 
+	7	to
+	8	nine
+			name:	NUMBER				8-8	nine 
+	9	and
+	10	eleven
+			name:	NUMBER				10-10	eleven 
+	11	to
+	12	fifteen
+			name:	NUMBER				12-12	fifteen 
+	13	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.1-2	its precursor 
+				4.1-2	its precursor 
+	Chain 1 (IDENT)
+				3.4-6	the show 's 
+				2.13-14	the show 
+				3.1-1	its 
+				4.1-1	its 
+	Chain 2 (IDENT)
+				0.0-2	The Celebrity Apprentice 
+				1.0-0	It 
+				4.6-7	Celebrity Apprentice 
+				8.0-2	The Celebrity Apprentice 
+				8.8-8	its 
+				9.0-2	The Celebrity Apprentice 
+	Chain 3 (IDENT)
+				5.0-3	Some of the celebrities 
+				6.2-2	them 
+				6.13-13	their 
+

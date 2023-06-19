@@ -1,0 +1,973 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Lago Lindo is a residential neighbourhood located in north Edmonton , Alberta , Canada .
+
+
+Treebanked sentence:
+--------------------
+Lago Lindo is a residential neighbourhood located in north Edmonton , Alberta , Canada . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Lago) (NNP Lindo))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ residential) (NN neighbourhood))
+        (VP (VBN located)
+          (PP (IN in)
+            (NP
+              (NP (NN north))
+              (NP (NNP Edmonton) (, ,) (NNP Alberta) (, ,) (NNP Canada)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Lago
+			name:	PERSON				0-1	Lago Lindo 
+	1	Lindo
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Lago Lindo 
+			N-ARG-A2		3-13	a residential neighbourhood located in north Edmonton , Alberta , Canada 
+	3	a
+	4	residential
+			sense:	residential.a.01
+	5	neighbourhood
+			sense:	vicinity.n.01
+	6	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		6-6	located 
+			N-ARG-A1		3-5	a residential neighbourhood 
+			N-ARGM-LOC		7-13	in north Edmonton , Alberta , Canada 
+	7	in
+	8	north
+			sense:	north.n.04
+	9	Edmonton
+			name:	CITY				9-9	Edmonton 
+	10	,
+	11	Alberta
+			name:	STATE_OR_PROVINCE				11-11	Alberta 
+	12	,
+	13	Canada
+			name:	COUNTRY				13-13	Canada 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The name is Spanish for " pretty lake " , and contains two lakes named for communities in Spain .
+
+
+Treebanked sentence:
+--------------------
+The name is Spanish for " pretty lake " , and contains two lakes named for communities in Spain . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN name))
+    (VP
+      (VP (VBZ is)
+        (ADJP (JJ Spanish))
+        (PP (IN for) (`` ")
+          (NP (RB pretty) (NN lake))
+          ('' ")))
+      (, ,)
+      (CC and)
+      (VP (VBZ contains)
+        (NP
+          (NP (CD two) (NNS lakes))
+          (VP (VBN named)
+            (PP (IN for)
+              (NP
+                (NP (NNS communities))
+                (PP (IN in)
+                  (NP (NNP Spain)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	name
+			sense:	name.n.01
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The name 
+			N-ARG-A2		3-8	Spanish for " pretty lake " 
+	3	Spanish
+			name:	NATIONALITY				3-3	Spanish 
+	4	for
+	5	"
+	6	pretty
+			sense:	reasonably.r.01
+	7	lake
+			sense:	lake.n.01
+	8	"
+	9	,
+	10	and
+	11	contains
+			sense:	incorporate.v.02
+			prop:	contain.01
+			V		11-11	contains 
+			N-ARG-A0		0-1	The name 
+			N-ARG-A1		12-18	two lakes named for communities in Spain 
+	12	two
+			name:	NUMBER				12-12	two 
+	13	lakes
+			sense:	lake.n.01
+	14	named
+			sense:	name.v.01
+			prop:	name.02
+			V		14-14	named 
+			N-ARG-A1		12-13	two lakes 
+			N-ARG-A2		15-18	for communities in Spain 
+	15	for
+	16	communities
+			sense:	community.n.01
+	17	in
+	18	Spain
+			name:	COUNTRY				18-18	Spain 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The neighbourhood is bounded on the west by 97 Street , on the east by 91 Street , and on the south by 167 Avenue .
+
+
+Treebanked sentence:
+--------------------
+The neighbourhood is bounded on the west by 97 Street , on the east by 91 Street , and on the south by 167 Avenue . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN neighbourhood))
+    (VP (VBZ is)
+      (VP (VBN bounded)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN west))
+            (PP
+              (PP (IN by)
+                (NP (CD 97) (NNP Street)))
+              (, ,)
+              (PP (IN on)
+                (NP
+                  (NP (DT the) (NN east))
+                  (PP (IN by)
+                    (NP (CD 91) (NNP Street)))))
+              (, ,)
+              (CC and)
+              (PP (IN on)
+                (NP (DT the) (NN south))))))
+        (PP (IN by)
+          (NP (CD 167) (NNP Avenue)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The neighbourhood 
+	1	neighbourhood
+			sense:	vicinity.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	bounded
+			sense:	bound.v.02
+			prop:	bound.02
+			V		3-3	bounded 
+			N-ARG-A1		0-1	The neighbourhood 
+			N-ARGM-DIR		4-6	on the west 
+			N-ARG-A0		7-9	by 97 Street 
+	4	on
+	5	the
+	6	west
+			sense:	west.n.02
+	7	by
+	8	97
+			name:	NUMBER				8-8	97 
+	9	Street
+	10	,
+	11	on
+	12	the
+			coref:	IDENT			1	12-16	the east by 91 Street 
+	13	east
+			sense:	east.n.01
+	14	by
+	15	91
+			name:	NUMBER				15-15	91 
+	16	Street
+	17	,
+	18	and
+	19	on
+	20	the
+	21	south
+			sense:	south.n.03
+	22	by
+	23	167
+			name:	NUMBER				23-23	167 
+	24	Avenue
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The area to the north of the neighbourhood is still undeveloped .
+
+
+Treebanked sentence:
+--------------------
+The area to the north of the neighbourhood is still undeveloped . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN area))
+      (PP (IN to)
+        (NP
+          (NP (DT the) (NN north))
+          (PP (IN of)
+            (NP (DT the) (NN neighbourhood))))))
+    (VP (VBZ is)
+      (ADVP (RB still))
+      (ADJP (JJ undeveloped)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	area
+			sense:	area.n.01
+	2	to
+	3	the
+	4	north
+			sense:	north.n.03
+	5	of
+	6	the
+			coref:	IDENT			0	6-7	the neighbourhood 
+	7	neighbourhood
+			sense:	vicinity.n.01
+	8	is
+			sense:	be.v.01
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	The area to the north of the neighbourhood 
+			N-ARGM-TMP		9-9	still 
+			N-ARG-A2		10-10	undeveloped 
+	9	still
+			sense:	still.r.01
+	10	undeveloped
+			sense:	undeveloped.a.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Access to CFB Edmonton , located just to the north of the city , is along 97 Street .
+
+
+Treebanked sentence:
+--------------------
+Access to CFB Edmonton , located just to the north of the city , is along 97 Street . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Access))
+        (TO to)
+        (NP (NNP CFB) (NNP Edmonton)))
+      (, ,)
+      (VP (VBN located)
+        (ADVP (RB just))
+        (PP (IN to)
+          (NP
+            (NP (DT the) (NN north))
+            (PP (IN of)
+              (NP (DT the) (NN city))))))
+      (, ,))
+    (VP (VBZ is)
+      (PP (IN along)
+        (NP (CD 97) (NN Street))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Access
+	1	to
+	2	CFB
+			name:	ORGANIZATION				2-3	CFB Edmonton 
+	3	Edmonton
+	4	,
+	5	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		5-5	located 
+			N-ARG-A1		2-3	CFB Edmonton 
+			N-ARGM-LOC		6-12	just to the north of the city 
+	6	just
+			sense:	precisely.r.01
+	7	to
+	8	the
+	9	north
+			sense:	north.n.03
+	10	of
+	11	the
+	12	city
+			sense:	city.n.01
+	13	,
+	14	is
+			sense:	be.v.03
+			prop:	be.01
+			V		14-14	is 
+			N-ARG-A1		0-13	Access to CFB Edmonton , located just to the north of the city , 
+			N-ARG-A2		15-17	along 97 Street 
+	15	along
+	16	97
+			name:	NUMBER				16-16	97 
+	17	Street
+			sense:	street.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+97 Street also gives neighbourhood residents good access to the downtown core .
+
+
+Treebanked sentence:
+--------------------
+97 Street also gives neighbourhood residents good access to the downtown core . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (CD 97) (NNP Street))
+    (ADVP (RB also))
+    (VP (VBZ gives)
+      (NP (NN neighbourhood) (NNS residents))
+      (NP
+        (NP (JJ good) (NN access))
+        (PP (IN to)
+          (NP (DT the) (NN downtown) (NN core)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	97
+			name:	NUMBER				0-0	97 
+	1	Street
+	2	also
+			sense:	besides.r.02
+	3	gives
+			sense:	yield.v.01
+			prop:	give.01
+			V		3-3	gives 
+			N-ARG-A0		0-1	97 Street 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A2		4-5	neighbourhood residents 
+			N-ARG-A1		6-11	good access to the downtown core 
+	4	neighbourhood
+			sense:	vicinity.n.01
+	5	residents
+			sense:	resident.n.01
+	6	good
+			sense:	good.a.01
+	7	access
+			sense:	access.n.03
+	8	to
+	9	the
+	10	downtown
+			sense:	business_district.n.01
+	11	core
+			sense:	core.n.02
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Surrounding neighbourhoods are Klarvatten to the east and north east , Belle Rive to the south east , Eaux Claires to the south , Lorelei to the south west , and Baturyn and Elsinore to the west .
+
+
+Treebanked sentence:
+--------------------
+Surrounding neighbourhoods are Klarvatten to the east and north east , Belle Rive to the south east , Eaux Claires to the south , Lorelei to the south west , and Baturyn and Elsinore to the west . 
+
+Tree:
+-----
+(ROOT
+  (SINV
+    (VP (VBG Surrounding)
+      (NP (NNS neighbourhoods)))
+    (VBP are)
+    (NP
+      (NP
+        (NP (NNP Klarvatten))
+        (PP (IN to)
+          (NP (DT the)
+            (NML (NN east)
+              (CC and)
+              (NN north))
+            (NN east))))
+      (, ,)
+      (NP
+        (NP (NNP Belle) (NNP Rive))
+        (PP (IN to)
+          (NP (DT the) (NNP south) (NNP east))))
+      (, ,)
+      (NP
+        (NP (NNP Eaux) (NNP Claires))
+        (PP (IN to)
+          (NP (DT the) (NN south))))
+      (, ,)
+      (NP
+        (NP (NNP Lorelei))
+        (PP (IN to)
+          (NP (DT the) (JJ south) (NN west))))
+      (, ,)
+      (CC and)
+      (NP
+        (NP (NNP Baturyn)
+          (CC and)
+          (NNP Elsinore))
+        (PP (IN to)
+          (NP (DT the) (NN west)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Surrounding
+			sense:	surround.v.01
+			prop:	surround.01
+			V		0-0	Surrounding 
+			N-ARG-A2		1-1	neighbourhoods 
+			N-ARG-A1		3-36	Klarvatten to the east and north east , Belle Rive to the south east , Eaux Claires to the south , Lorelei to the south west , and Baturyn and Elsinore to the west 
+	1	neighbourhoods
+			sense:	vicinity.n.01
+	2	are
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	are 
+			N-ARG-A2		0-1	Surrounding neighbourhoods 
+			N-ARG-A1		3-36	Klarvatten to the east and north east , Belle Rive to the south east , Eaux Claires to the south , Lorelei to the south west , and Baturyn and Elsinore to the west 
+	3	Klarvatten
+			name:	LOCATION				3-3	Klarvatten 
+	4	to
+	5	the
+	6	east
+			sense:	east.n.01
+	7	and
+	8	north
+			sense:	north.n.03
+	9	east
+			sense:	east.n.01
+	10	,
+	11	Belle
+			name:	LOCATION				11-12	Belle Rive 
+	12	Rive
+	13	to
+	14	the
+			coref:	IDENT			1	14-16	the south east 
+	15	south
+			name:	LOCATION				15-16	south east 
+	16	east
+	17	,
+	18	Eaux
+			name:	PERSON				18-19	Eaux Claires 
+	19	Claires
+	20	to
+	21	the
+	22	south
+			sense:	south.n.03
+	23	,
+	24	Lorelei
+			name:	PERSON				24-24	Lorelei 
+	25	to
+	26	the
+	27	south
+			sense:	south.a.01
+	28	west
+			sense:	west.n.02
+	29	,
+	30	and
+	31	Baturyn
+			name:	CITY				31-31	Baturyn 
+	32	and
+	33	Elsinore
+			name:	LOCATION				33-33	Elsinore 
+	34	to
+	35	the
+	36	west
+			sense:	west.n.02
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Substantially all the housing in the neighbourhood is single - family dwellings , with most of these being owner occupied .
+
+
+Treebanked sentence:
+--------------------
+Substantially all the housing in the neighbourhood is single - family dwellings , with most of these being owner occupied . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Substantially))
+    (NP
+      (NP (PDT all) (DT the) (NN housing))
+      (PP (IN in)
+        (NP (DT the) (NN neighbourhood))))
+    (VP (VBZ is)
+      (NP
+        (NML (JJ single) (HYPH -) (NN family))
+        (NNS dwellings))
+      (, ,)
+      (SBAR (IN with)
+        (S
+          (NP
+            (NP (JJS most))
+            (PP (IN of)
+              (S
+                (NP (DT these))
+                (VP (VBG being)
+                  (NP (NN owner))))))
+          (VP (VBD occupied)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Substantially
+			sense:	well.r.07
+	1	all
+	2	the
+	3	housing
+			sense:	housing.n.01
+	4	in
+	5	the
+			coref:	IDENT			0	5-6	the neighbourhood 
+	6	neighbourhood
+			sense:	vicinity.n.01
+	7	is
+			sense:	be.v.01
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		0-6	Substantially all the housing in the neighbourhood 
+			N-ARG-A2		8-11	single - family dwellings 
+			N-ARGM-ADV		13-19	with most of these being owner occupied 
+	8	single
+			sense:	individual.s.03
+	9	-
+	10	family
+			sense:	family.n.01
+	11	dwellings
+			sense:	dwelling.n.01
+	12	,
+	13	with
+	14	most
+			sense:	most.a.02
+	15	of
+	16	these
+			coref:	IDENT			0	16-16	these 
+	17	being
+			sense:	be.v.01
+			prop:	being.01
+			V		17-17	being 
+			N-ARG-A1		14-16	most of these 
+			N-ARG-A2		18-19	owner occupied 
+	18	owner
+			name:	TITLE				18-18	owner 
+			sense:	owner.n.02
+	19	occupied
+			sense:	occupy.v.02
+			prop:	occupy.01
+			V		19-19	occupied 
+			N-ARG-A0		18-18	owner 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Most of the houses were built during the 1980s .
+
+
+Treebanked sentence:
+--------------------
+Most of the houses were built during the 1980s . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (JJS Most))
+      (PP (IN of)
+        (NP (DT the) (NNS houses))))
+    (VP (VBD were)
+      (VP (VBN built)
+        (PP (IN during)
+          (NP (DT the) (NNS 1980s)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Most
+			sense:	most.a.01
+	1	of
+	2	the
+	3	houses
+			sense:	house.n.01
+	4	were
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	were 
+	5	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		5-5	built 
+			N-ARG-A1		0-3	Most of the houses 
+			N-ARGM-TMP		6-8	during the 1980s 
+	6	during
+	7	the
+			name:	DATE				7-8	the 1980s 
+	8	1980s
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Parents have two elementary schools in the neighbourhood where they can send their school age children .
+
+
+Treebanked sentence:
+--------------------
+Parents have two elementary schools in the neighbourhood where they can send their school age children . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNS Parents))
+    (VP (VBP have)
+      (NP
+        (NP (CD two) (JJ elementary) (NNS schools))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN neighbourhood))
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (PRP they))
+                (VP (MD can)
+                  (VP (VB send)
+                    (NP (PRP$ their) (NN school))
+                    (NP (NN age) (NNS children))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Parents
+			sense:	parent.n.01
+	1	have
+			sense:	have.v.01
+			prop:	have.03
+			V		1-1	have 
+			N-ARG-A0		0-0	Parents 
+			N-ARG-A1		2-15	two elementary schools in the neighbourhood where they can send their school age children 
+	2	two
+			name:	NUMBER				2-2	two 
+	3	elementary
+			sense:	elementary.a.02
+	4	schools
+			sense:	school.n.01
+	5	in
+	6	the
+			coref:	IDENT			0	6-15	the neighbourhood where they can send their school age children 
+	7	neighbourhood
+			sense:	vicinity.n.01
+	8	where
+	9	they
+	10	can
+	11	send
+			sense:	send.v.01
+			prop:	send.01
+			V		11-11	send 
+			N-ARG-A2		2-4	two elementary schools 
+			R-ARG-A2		8-8	where 
+			N-ARG-A0		9-9	they 
+			N-ARGM-MOD		10-10	can 
+			N-ARG-A1		12-15	their school age children 
+	12	their
+	13	school
+			sense:	school.n.03
+	14	age
+			sense:	age.n.03
+	15	children
+			sense:	child.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Lago Lindo Elementary School is operated by the Edmonton Public School System , and Bishop Greschuk Catholic Elementary School is operated by the Edmonton Catholic School System .
+
+
+Treebanked sentence:
+--------------------
+Lago Lindo Elementary School is operated by the Edmonton Public School System , and Bishop Greschuk Catholic Elementary School is operated by the Edmonton Catholic School System . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NNP Lago) (NNP Lindo) (NNP Elementary) (NNP School))
+      (VP (VBZ is)
+        (VP (VBN operated)
+          (PP (IN by)
+            (NP (DT the) (NNP Edmonton)
+              (NML (NNP Public) (NNP School))
+              (NNP System))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP Bishop) (NNP Greschuk) (NNP Catholic) (NNP Elementary) (NNP School))
+      (VP (VBZ is)
+        (VP (VBN operated)
+          (PP (IN by)
+            (NP (DT the) (NNP Edmonton) (NNP Catholic) (NNP School) (NNP System))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Lago
+			name:	ORGANIZATION				0-3	Lago Lindo Elementary School 
+	1	Lindo
+	2	Elementary
+	3	School
+	4	is
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	is 
+	5	operated
+			sense:	operate.v.01
+			prop:	operate.01
+			V		5-5	operated 
+			N-ARG-A1		0-3	Lago Lindo Elementary School 
+			N-ARG-A0		6-11	by the Edmonton Public School System 
+	6	by
+	7	the
+	8	Edmonton
+			name:	ORGANIZATION				8-11	Edmonton Public School System 
+	9	Public
+	10	School
+	11	System
+	12	,
+	13	and
+	14	Bishop
+			name:	ORGANIZATION				14-18	Bishop Greschuk Catholic Elementary School 
+	15	Greschuk
+	16	Catholic
+	17	Elementary
+	18	School
+	19	is
+			sense:	be.v.01
+			prop:	be.03
+			V		19-19	is 
+	20	operated
+			sense:	operate.v.01
+			prop:	operate.01
+			V		20-20	operated 
+			N-ARG-A1		14-18	Bishop Greschuk Catholic Elementary School 
+			N-ARG-A0		21-26	by the Edmonton Catholic School System 
+	21	by
+	22	the
+	23	Edmonton
+			name:	ORGANIZATION				23-26	Edmonton Catholic School System 
+	24	Catholic
+	25	School
+	26	System
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The community is represented by the Lago Lindo Community League , established in 1983 , which maintains a community hall and outdoor rink located at 95 Street and 171 Avenue .
+
+
+Treebanked sentence:
+--------------------
+The community is represented by the Lago Lindo Community League , established in 1983 , which maintains a community hall and outdoor rink located at 95 Street and 171 Avenue . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN community))
+    (VP (VBZ is)
+      (VP (VBN represented)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NNP Lago)
+              (NML (NNP Lindo) (NNP Community))
+              (NNP League))
+            (, ,)
+            (VP (VBN established)
+              (PP (IN in)
+                (NP
+                  (NP (CD 1983))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBZ maintains)
+                        (NP
+                          (NP (DT a) (NN community) (NN hall))
+                          (CC and)
+                          (NP
+                            (NP (JJ outdoor) (NN rink))
+                            (VP (VBN located)
+                              (PP (IN at)
+                                (NP
+                                  (NP (NNP 95) (NNP Street))
+                                  (CC and)
+                                  (NP (CD 171) (NNP Avenue)))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	community
+			sense:	community.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	represented
+			sense:	represent.v.04
+			prop:	represent.01
+			V		3-3	represented 
+			N-ARG-A1		0-1	The community 
+			N-ARG-A0		4-29	by the Lago Lindo Community League , established in 1983 , which maintains a community hall and outdoor rink located at 95 Street and 171 Avenue 
+	4	by
+	5	the
+	6	Lago
+			name:	ORGANIZATION				6-9	Lago Lindo Community League 
+	7	Lindo
+	8	Community
+	9	League
+	10	,
+	11	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		11-11	established 
+			N-ARG-A1		5-9	the Lago Lindo Community League 
+			N-ARGM-TMP		12-13	in 1983 
+	12	in
+	13	1983
+			name:	DATE				13-13	1983 
+	14	,
+	15	which
+	16	maintains
+			sense:	conserve.v.02
+			prop:	maintain.01
+			V		16-16	maintains 
+			N-ARG-A0		5-13	the Lago Lindo Community League , established in 1983 
+			R-ARG-A0		15-15	which 
+			N-ARG-A1		17-29	a community hall and outdoor rink located at 95 Street and 171 Avenue 
+	17	a
+	18	community
+			sense:	community.n.01
+	19	hall
+			sense:	hall.n.13
+	20	and
+	21	outdoor
+			sense:	outdoor.a.01
+	22	rink
+			sense:	rink.n.01
+	23	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		23-23	located 
+			N-ARG-A1		17-22	a community hall and outdoor rink 
+			N-ARGM-LOC		24-29	at 95 Street and 171 Avenue 
+	24	at
+	25	95
+			name:	NUMBER				25-25	95 
+	26	Street
+	27	and
+	28	171
+			name:	NUMBER				28-28	171 
+	29	Avenue
+	30	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				9.6-15	the neighbourhood where they can send their school age children 
+				2.0-1	The neighbourhood 
+				3.6-7	the neighbourhood 
+				7.5-6	the neighbourhood 
+				7.16-16	these 
+	Chain 1 (IDENT)
+				6.14-16	the south east 
+				2.12-16	the east by 91 Street 
+

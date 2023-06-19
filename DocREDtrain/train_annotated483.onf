@@ -1,0 +1,881 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bristol is a suburban city located in Hartford County , Connecticut , United States , southwest of Hartford .
+
+
+Treebanked sentence:
+--------------------
+Bristol is a suburban city located in Hartford County , Connecticut , United States , southwest of Hartford . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bristol))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ suburban) (NN city))
+        (VP (VBN located)
+          (PP (IN in)
+            (NP
+              (NP
+                (NML
+                  (NML (NNP Hartford) (NNP County))
+                  (, ,)
+                  (NP (NNP Connecticut))
+                  (, ,))
+                (NNP United) (NNP States))
+              (, ,)
+              (NP
+                (NP (NN southwest))
+                (PP (IN of)
+                  (NP (NNP Hartford)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bristol
+			name:	CITY				0-0	Bristol 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Bristol 
+			N-ARG-A2		2-17	a suburban city located in Hartford County , Connecticut , United States , southwest of Hartford 
+	2	a
+			coref:	IDENT			0	2-17	a suburban city located in Hartford County , Connecticut , United States , southwest of Hartford 
+	3	suburban
+			sense:	suburban.a.01
+	4	city
+			sense:	city.n.01
+	5	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		5-5	located 
+			N-ARG-A1		2-4	a suburban city 
+			N-ARGM-LOC		6-14	in Hartford County , Connecticut , United States , 
+			N-ARGM-LOC		15-17	southwest of Hartford 
+	6	in
+	7	Hartford
+			name:	CITY				7-7	Hartford 
+	8	County
+			name:	LOCATION				8-8	County 
+	9	,
+	10	Connecticut
+			name:	STATE_OR_PROVINCE				10-10	Connecticut 
+	11	,
+	12	United
+			name:	COUNTRY				12-13	United States 
+	13	States
+	14	,
+	15	southwest
+			sense:	southwest.n.01
+	16	of
+	17	Hartford
+			name:	CITY				17-17	Hartford 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The city is also 120 miles southwest from Boston , and approximately 100 miles northeast of New York City .
+
+
+Treebanked sentence:
+--------------------
+The city is also 120 miles southwest from Boston , and approximately 100 miles northeast of New York City . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN city))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (ADVP
+        (ADVP
+          (NP (CD 120) (NNS miles))
+          (RB southwest)
+          (PP (IN from)
+            (NP (NNP Boston))))
+        (, ,)
+        (CC and)
+        (ADVP
+          (NP
+            (QP (RB approximately) (CD 100))
+            (NNS miles))
+          (RB northeast)
+          (PP (IN of)
+            (NP
+              (NML (NNP New) (NNP York))
+              (NNP City))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The city 
+	1	city
+			sense:	city.n.01
+	2	is
+			sense:	be.v.03
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The city 
+			N-ARGM-DIS		3-3	also 
+			N-ARG-A2		4-18	120 miles southwest from Boston , and approximately 100 miles northeast of New York City 
+	3	also
+			sense:	besides.r.02
+	4	120
+			name:	NUMBER				4-4	120 
+	5	miles
+			sense:	mile.n.01
+	6	southwest
+			sense:	southwest.r.01
+	7	from
+	8	Boston
+			name:	CITY				8-8	Boston 
+	9	,
+	10	and
+	11	approximately
+			sense:	approximately.r.01
+	12	100
+			name:	NUMBER				12-12	100 
+	13	miles
+			sense:	mile.n.01
+	14	northeast
+			sense:	northeast.r.01
+	15	of
+	16	New
+			name:	CITY				16-18	New York City 
+	17	York
+	18	City
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As of the 2010 census , the population of the city was 60,477 .
+
+
+Treebanked sentence:
+--------------------
+As of the 2010 census , the population of the city was 60,477 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN As)
+      (PP (IN of)
+        (NP (DT the) (CD 2010) (NN census))))
+    (, ,)
+    (NP
+      (NP (DT the) (NN population))
+      (PP (IN of)
+        (NP (DT the) (NN city))))
+    (VP (VBD was)
+      (NP (CD 60,477)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	of
+	2	the
+	3	2010
+			coref:	IDENT			1	3-3	2010 
+			name:	DATE				3-3	2010 
+	4	census
+			sense:	census.n.01
+	5	,
+	6	the
+	7	population
+			sense:	population.n.04
+	8	of
+	9	the
+			coref:	IDENT			0	9-10	the city 
+	10	city
+			sense:	city.n.01
+	11	was
+			sense:	equal.v.01
+			prop:	be.01
+			V		11-11	was 
+			N-ARGM-TMP		0-4	As of the 2010 census 
+			N-ARG-A1		6-10	the population of the city 
+			N-ARG-A2		12-12	60,477 
+	12	60,477
+			name:	NUMBER				12-12	60,477 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bristol is best known as the home of ESPN , whose central studios are in the city .
+
+
+Treebanked sentence:
+--------------------
+Bristol is best known as the home of ESPN , whose central studios are in the city . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bristol))
+    (VP (VBZ is)
+      (ADVP (RBS best))
+      (VP (VBN known)
+        (PP (IN as)
+          (NP
+            (NP
+              (NP (DT the) (NN home))
+              (PP (IN of)
+                (NP (NNP ESPN))))
+            (, ,)
+            (SBAR
+              (WHNP (WP$ whose))
+              (S
+                (NP (JJ central) (NNS studios))
+                (VP (VBP are)
+                  (PP (IN in)
+                    (NP (DT the) (NN city))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bristol
+			name:	CITY				0-0	Bristol 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Bristol 
+			N-ARG-A2		2-16	best known as the home of ESPN , whose central studios are in the city 
+	2	best
+			sense:	well.r.02
+	3	known
+			sense:	know.v.01
+			prop:	know.01
+			V		3-3	known 
+			N-ARG-A1		0-0	Bristol 
+			N-ARGM-MNR		2-2	best 
+			N-ARG-A2		4-16	as the home of ESPN , whose central studios are in the city 
+	4	as
+	5	the
+	6	home
+			sense:	home.n.03
+	7	of
+	8	ESPN
+			name:	ORGANIZATION				8-8	ESPN 
+	9	,
+	10	whose
+	11	central
+			sense:	central.a.02
+	12	studios
+			sense:	studio.n.03
+	13	are
+			sense:	be.v.03
+			prop:	be.01
+			V		13-13	are 
+			R-ARG-A1		8-8	ESPN 
+			N-ARG-A1		10-12	whose central studios 
+			N-ARG-A2		14-16	in the city 
+	14	in
+	15	the
+			coref:	IDENT			0	15-16	the city 
+	16	city
+			sense:	city.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bristol is also home to Lake Compounce ( 1846 ) , America 's oldest continuously operating theme park .
+
+
+Treebanked sentence:
+--------------------
+Bristol is also home to Lake Compounce ( 1846 ) , America 's oldest continuously operating theme park . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bristol))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (ADVP (RB home))
+      (PP (IN to)
+        (NP
+          (NP (NNP Lake) (NNP Compounce)
+            (PRN (-LRB- -LRB-)
+              (NP (CD 1846))
+              (-RRB- -RRB-)))
+          (, ,)
+          (NP
+            (NP (NNP America) (POS 's))
+            (JJS oldest)
+            (NML
+              (S
+                (ADVP (RB continuously))
+                (VP (VBG operating))))
+            (NN theme) (NN park)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bristol
+			name:	CITY				0-0	Bristol 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Bristol 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A2		3-17	home to Lake Compounce ( 1846 ) , America 's oldest continuously operating theme park 
+	2	also
+			sense:	besides.r.02
+	3	home
+			sense:	home.r.01
+	4	to
+	5	Lake
+			name:	LOCATION				5-6	Lake Compounce 
+	6	Compounce
+	7	(
+	8	1846
+			name:	DATE				8-8	1846 
+	9	)
+	10	,
+	11	America
+			name:	COUNTRY				11-11	America 
+	12	's
+	13	oldest
+			sense:	old.a.02
+	14	continuously
+			sense:	endlessly.r.02
+	15	operating
+			sense:	function.v.01
+			prop:	operate.01
+			V		15-15	operating 
+			N-ARGM-MNR		14-14	continuously 
+			N-ARG-A1		16-17	theme park 
+	16	theme
+			sense:	subject.n.01
+	17	park
+			sense:	park.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bristol was known as a clock - making city in the 19th century , and is home to the American Clock & Watch Museum .
+
+
+Treebanked sentence:
+--------------------
+Bristol was known as a clock - making city in the 19th century , and is home to the American Clock & Watch Museum . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bristol))
+    (VP
+      (VP (VBD was)
+        (VP (VBN known)
+          (PP (IN as)
+            (NP
+              (NP (DT a)
+                (NML (NN clock) (HYPH -) (VBG making))
+                (NN city))
+              (PP (IN in)
+                (NP (DT the) (JJ 19th) (NN century)))))))
+      (, ,)
+      (CC and)
+      (VP (VBZ is)
+        (NP
+          (NP (NN home))
+          (PP (IN to)
+            (NP
+              (NP (DT the) (JJ American) (NN Clock))
+              (CC &)
+              (NP (NNP Watch) (NNP Museum)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bristol
+			name:	CITY				0-0	Bristol 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	known
+			sense:	know.v.04
+			prop:	know.01
+			V		2-2	known 
+			N-ARG-A1		0-0	Bristol 
+			N-ARG-A2		3-8	as a clock - making city 
+			N-ARGM-TMP		9-12	in the 19th century 
+	3	as
+	4	a
+	5	clock
+			sense:	clock.n.01
+	6	-
+	7	making
+			sense:	make.v.03
+			prop:	make.01
+			V		7-7	making 
+			N-ARG-A1		5-5	clock 
+			N-ARG-A0		8-8	city 
+	8	city
+			sense:	city.n.01
+	9	in
+	10	the
+			name:	DATE				10-12	the 19th century 
+	11	19th
+			sense:	nineteenth.s.01
+	12	century
+			sense:	century.n.01
+	13	,
+	14	and
+	15	is
+			sense:	be.v.01
+			prop:	be.01
+			V		15-15	is 
+			N-ARG-A1		0-0	Bristol 
+			N-ARG-A2		16-23	home to the American Clock & Watch Museum 
+	16	home
+			sense:	home.n.03
+	17	to
+	18	the
+	19	American
+			name:	ORGANIZATION				19-23	American Clock & Watch Museum 
+	20	Clock
+			sense:	clock.n.01
+	21	&
+	22	Watch
+	23	Museum
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+For silver enthusiasts , Bristol is also known as the site of the former American Silver Company and its predecessor companies ( 1851 – 1935 ) .
+
+
+Treebanked sentence:
+--------------------
+For silver enthusiasts , Bristol is also known as the site of the former American Silver Company and its predecessor companies ( 1851 – 1935 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (NN silver) (NNS enthusiasts)))
+    (, ,)
+    (NP (NNP Bristol))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (VP (VBN known)
+        (PP (IN as)
+          (NP
+            (NP (DT the) (NN site))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (JJ former) (NNP American) (NNP Silver) (NNP Company))
+                (CC and)
+                (NP (PRP$ its) (NN predecessor) (NNS companies))))))
+        (PRN (-LRB- -LRB-)
+          (NP (CD 1851) (SYM –) (CD 1935))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	For
+	1	silver
+			sense:	silver.n.01
+	2	enthusiasts
+			sense:	enthusiast.n.01
+	3	,
+	4	Bristol
+			name:	CITY				4-4	Bristol 
+	5	is
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	is 
+	6	also
+			sense:	besides.r.02
+	7	known
+			sense:	know.v.01
+			prop:	know.01
+			V		7-7	known 
+			N-ARGM-ADV		0-2	For silver enthusiasts 
+			N-ARG-A1		4-4	Bristol 
+			N-ARGM-DIS		6-6	also 
+			N-ARG-A2		8-25	as the site of the former American Silver Company and its predecessor companies ( 1851 – 1935 ) 
+	8	as
+	9	the
+	10	site
+			sense:	site.n.01
+	11	of
+	12	the
+			coref:	IDENT			2	12-16	the former American Silver Company 
+	13	former
+			sense:	erstwhile.s.01
+	14	American
+			name:	ORGANIZATION				14-16	American Silver Company 
+	15	Silver
+	16	Company
+	17	and
+	18	its
+			coref:	IDENT			2	18-18	its 
+	19	predecessor
+			sense:	predecessor.n.01
+	20	companies
+			sense:	company.n.01
+	21	(
+	22	1851
+			name:	DATE				22-22	1851 
+	23	–
+	24	1935
+			name:	DATE				24-24	1935 
+	25	)
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bristol 's nicknames include the " Bell City " , because of a history manufacturing innovative spring - driven doorbells , and the " Mum City " , because it was once a leader in chrysanthemum production and still holds an annual Bristol Mum Festival .
+
+
+Treebanked sentence:
+--------------------
+Bristol 's nicknames include the " Bell City " , because of a history manufacturing innovative spring - driven doorbells , and the " Mum City " , because it was once a leader in chrysanthemum production and still holds an annual Bristol Mum Festival . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Bristol) (POS 's))
+      (NNS nicknames))
+    (VP (VBP include)
+      (NP (DT the) (`` ") (NNP Bell) (NNP City) ('' "))
+      (, ,)
+      (PP (IN because) (IN of)
+        (NP
+          (NP (DT a) (NN history) (NN manufacturing))
+          (NP (JJ innovative)
+            (ADJP (NN spring) (HYPH -) (VBN driven))
+            (NNS doorbells))
+          (, ,)
+          (CC and)
+          (NP (DT the) (`` ") (NNP Mum) (NNP City) ('' "))))
+      (, ,)
+      (SBAR (IN because)
+        (S
+          (NP (PRP it))
+          (VP
+            (VP (VBD was)
+              (ADVP (RB once)
+                (NP (DT a) (NN leader)))
+              (PP (IN in)
+                (NP (NN chrysanthemum) (NN production))))
+            (CC and)
+            (ADVP (RB still))
+            (VP (VBZ holds)
+              (NP (DT an) (JJ annual) (NNP Bristol) (NNP Mum) (NNP Festival)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bristol
+			name:	CITY				0-0	Bristol 
+	1	's
+	2	nicknames
+			sense:	nickname.n.02
+	3	include
+			sense:	include.v.01
+			prop:	include.01
+			V		3-3	include 
+			N-ARG-A2		0-2	Bristol 's nicknames 
+			N-ARG-A1		4-44	the " Bell City " , because of a history manufacturing innovative spring - driven doorbells , and the " Mum City " , because it was once a leader in chrysanthemum production and still holds an annual Bristol Mum Festival 
+	4	the
+	5	"
+	6	Bell
+	7	City
+	8	"
+	9	,
+	10	because
+	11	of
+	12	a
+	13	history
+			sense:	history.n.01
+	14	manufacturing
+			sense:	fabrication.n.03
+	15	innovative
+			sense:	innovative.s.02
+	16	spring
+			name:	DATE				16-16	spring 
+			sense:	spring.n.02
+	17	-
+	18	driven
+			sense:	drive.v.20
+			prop:	drive.02
+			V		18-18	driven 
+			N-ARG-A1		19-19	doorbells 
+	19	doorbells
+			sense:	doorbell.n.01
+	20	,
+	21	and
+	22	the
+	23	"
+	24	Mum
+	25	City
+	26	"
+	27	,
+	28	because
+	29	it
+	30	was
+			sense:	be.v.01
+			prop:	be.01
+			V		30-30	was 
+			N-ARG-A1		29-29	it 
+			N-ARGM-TMP		31-31	once 
+			N-ARG-A2		32-36	a leader in chrysanthemum production 
+	31	once
+			name:	DATE				31-31	once 
+			sense:	once.r.03
+	32	a
+	33	leader
+			name:	TITLE				33-33	leader 
+			sense:	leader.n.01
+	34	in
+	35	chrysanthemum
+			sense:	chrysanthemum.n.01
+	36	production
+			sense:	production.n.07
+	37	and
+	38	still
+			sense:	still.r.01
+	39	holds
+			sense:	hold.v.03
+			prop:	hold.04
+			V		39-39	holds 
+			N-ARG-A0		29-29	it 
+			N-ARGM-TMP		38-38	still 
+			N-ARG-A1		40-44	an annual Bristol Mum Festival 
+	40	an
+	41	annual
+			name:	SET				41-41	annual 
+			sense:	annual.a.01
+	42	Bristol
+	43	Mum
+	44	Festival
+	45	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2010 , Bristol was ranked 84th on Money magazine 's " Best Places to Live " .
+
+
+Treebanked sentence:
+--------------------
+In 2010 , Bristol was ranked 84th on Money magazine 's " Best Places to Live " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2010)))
+    (, ,)
+    (NP (NNP Bristol))
+    (VP (VBD was)
+      (VP (VBN ranked)
+        (NP
+          (NP (JJ 84th))
+          (PP (IN on)
+            (NP
+              (NP (NNP Money))
+              (NP (NN magazine) (POS 's))))
+          (S (`` ")
+            (NP (JJS Best) (NNS Places))
+            (S
+              (VP (TO to)
+                (VP (VB Live))))
+            ('' ")))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2010
+			coref:	IDENT			1	1-1	2010 
+			name:	DATE				1-1	2010 
+	2	,
+	3	Bristol
+			name:	CITY				3-3	Bristol 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	ranked
+			sense:	rate.v.01
+			prop:	rank.01
+			V		5-5	ranked 
+			N-ARGM-TMP		0-1	In 2010 
+			N-ARG-A1		3-3	Bristol 
+			N-ARG-A2		6-6	84th 
+			N-ARGM-LOC		7-16	on Money magazine 's " Best Places to Live " 
+	6	84th
+			name:	ORDINAL				6-6	84th 
+	7	on
+	8	Money
+	9	magazine
+			sense:	magazine.n.01
+	10	's
+	11	"
+	12	Best
+			sense:	good.a.01
+	13	Places
+			sense:	place.n.02
+	14	to
+	15	Live
+			sense:	populate.v.01
+			prop:	live.01
+			V		15-15	Live 
+			N-ARGM-LOC		12-13	Best Places 
+	16	"
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2013 , Hartford Magazine ranked Bristol as Greater Hartford 's top municipality in the " Best Bang for the Buck " category .
+
+
+Treebanked sentence:
+--------------------
+In 2013 , Hartford Magazine ranked Bristol as Greater Hartford 's top municipality in the " Best Bang for the Buck " category . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2013)))
+    (, ,)
+    (NP (NNP Hartford) (NNP Magazine))
+    (VP (VBD ranked)
+      (NP (NNP Bristol))
+      (PP (IN as)
+        (NP
+          (NP
+            (NP (NNP Greater) (NNP Hartford) (POS 's))
+            (JJ top) (NN municipality))
+          (PP (IN in)
+            (NP (DT the) (`` ") (NNP Best) (NNP Bang)))))
+      (PP (IN for)
+        (NP
+          (NP (DT the) (NNP Buck))
+          (`` ")
+          (NP (NN category)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2013
+			name:	DATE				1-1	2013 
+	2	,
+	3	Hartford
+			name:	ORGANIZATION				3-4	Hartford Magazine 
+	4	Magazine
+	5	ranked
+			sense:	rate.v.01
+			prop:	rank.01
+			V		5-5	ranked 
+			N-ARGM-TMP		0-1	In 2013 
+			N-ARG-A0		3-4	Hartford Magazine 
+			N-ARG-A1		6-6	Bristol 
+			N-ARG-A2		7-12	as Greater Hartford 's top municipality 
+			N-ARGM-LOC		13-22	in the " Best Bang for the Buck " category 
+	6	Bristol
+			name:	CITY				6-6	Bristol 
+	7	as
+	8	Greater
+			name:	LOCATION				8-8	Greater 
+	9	Hartford
+			name:	CITY				9-9	Hartford 
+	10	's
+	11	top
+			sense:	top.a.01
+	12	municipality
+			sense:	municipality.n.01
+	13	in
+	14	the
+	15	"
+	16	Best
+	17	Bang
+	18	for
+	19	the
+	20	Buck
+			name:	MISC				20-20	Buck 
+	21	"
+	22	category
+			sense:	class.n.01
+	23	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.2-17	a suburban city located in Hartford County , Connecticut , United States , southwest of Hartford 
+				1.0-1	The city 
+				2.9-10	the city 
+				3.15-16	the city 
+	Chain 1 (IDENT)
+				2.3-3	2010 
+				8.1-1	2010 
+	Chain 2 (IDENT)
+				6.12-16	the former American Silver Company 
+				6.18-18	its 
+

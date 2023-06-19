@@ -1,0 +1,574 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jason Louis Motte ( born June 22 , 1982 ) is an American former professional baseball relief pitcher .
+
+
+Treebanked sentence:
+--------------------
+Jason Louis Motte ( born June 22 , 1982 ) is an American former professional baseball relief pitcher . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Jason) (NNP Louis) (NNP Motte))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP June) (CD 22) (, ,) (CD 1982)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT an) (JJ American)
+        (NML (JJ former) (JJ professional) (NN baseball) (NN relief))
+        (NN pitcher)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jason
+			name:	PERSON				0-2	Jason Louis Motte 
+	1	Louis
+	2	Motte
+	3	(
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-2	Jason Louis Motte 
+			N-ARGM-TMP		5-8	June 22 , 1982 
+	5	June
+			name:	DATE				5-8	June 22 , 1982 
+	6	22
+	7	,
+	8	1982
+	9	)
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	Jason Louis Motte ( born June 22 , 1982 ) 
+			N-ARG-A2		11-17	an American former professional baseball relief pitcher 
+	11	an
+	12	American
+			name:	NATIONALITY				12-12	American 
+	13	former
+			sense:	former.s.03
+	14	professional
+			sense:	professional.a.01
+	15	baseball
+			sense:	baseball.n.01
+	16	relief
+			name:	TITLE				16-17	relief pitcher 
+			sense:	stand-in.n.01
+	17	pitcher
+			sense:	pitcher.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He has played in Major League Baseball ( MLB ) for the St. Louis Cardinals , Chicago Cubs , Colorado Rockies and Atlanta Braves .
+
+
+Treebanked sentence:
+--------------------
+He has played in Major League Baseball ( MLB ) for the St. Louis Cardinals , Chicago Cubs , Colorado Rockies and Atlanta Braves . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ has)
+      (VP (VBN played)
+        (PP (IN in)
+          (NP
+            (NP
+              (NP (NNP Major) (NNP League) (NNP Baseball))
+              (-LRB- -LRB-)
+              (NP (NNP MLB))
+              (-RRB- -RRB-))
+            (PP (IN for)
+              (NP (DT the)
+                (NML
+                  (NML (NNP St.) (NNP Louis) (NNPS Cardinals))
+                  (, ,)
+                  (NML (NNP Chicago) (NNP Cubs))
+                  (, ,)
+                  (NML (NNP Colorado) (NNPS Rockies))
+                  (CC and)
+                  (NML (NNP Atlanta) (NNPS Braves)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	played
+			sense:	play.v.01
+			prop:	play.01
+			V		2-2	played 
+			N-ARG-A0		0-0	He 
+			N-ARGM-LOC		3-9	in Major League Baseball ( MLB ) 
+			N-ARGM-ADV		10-23	for the St. Louis Cardinals , Chicago Cubs , Colorado Rockies and Atlanta Braves 
+	3	in
+	4	Major
+			name:	ORGANIZATION				4-6	Major League Baseball 
+	5	League
+	6	Baseball
+	7	(
+	8	MLB
+			name:	ORGANIZATION				8-8	MLB 
+	9	)
+	10	for
+	11	the
+			coref:	IDENT			0	11-23	the St. Louis Cardinals , Chicago Cubs , Colorado Rockies and Atlanta Braves 
+	12	St.
+			name:	ORGANIZATION				12-14	St. Louis Cardinals 
+	13	Louis
+	14	Cardinals
+	15	,
+	16	Chicago
+			coref:	IDENT			1	16-17	Chicago Cubs 
+			name:	ORGANIZATION				16-17	Chicago Cubs 
+	17	Cubs
+	18	,
+	19	Colorado
+			name:	ORGANIZATION				19-20	Colorado Rockies 
+	20	Rockies
+	21	and
+	22	Atlanta
+			name:	ORGANIZATION				22-23	Atlanta Braves 
+	23	Braves
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Cardinals drafted him as a catcher in 2003 and he converted to pitching in .
+
+
+Treebanked sentence:
+--------------------
+The Cardinals drafted him as a catcher in 2003 and he converted to pitching in . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNPS Cardinals))
+      (VP (VBD drafted)
+        (NP (PRP him))
+        (PP (IN as)
+          (NP (DT a) (NN catcher)))
+        (PP (IN in)
+          (NP (CD 2003)))))
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBD converted)
+        (PP (IN to)
+          (NP (NN pitching)))
+        (PP (IN in))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The Cardinals 
+	1	Cardinals
+			name:	ORGANIZATION				1-1	Cardinals 
+	2	drafted
+			sense:	enlist.v.03
+			prop:	draft.01
+			V		2-2	drafted 
+			N-ARG-A0		0-1	The Cardinals 
+			N-ARG-A1		3-3	him 
+			N-ARGM-ADV		4-6	as a catcher 
+			N-ARGM-TMP		7-8	in 2003 
+	3	him
+	4	as
+	5	a
+	6	catcher
+			name:	TITLE				6-6	catcher 
+			sense:	catcher.n.01
+	7	in
+	8	2003
+			name:	DATE				8-8	2003 
+	9	and
+	10	he
+	11	converted
+			sense:	convert.v.01
+			prop:	convert.01
+			V		11-11	converted 
+			N-ARG-A0		10-10	he 
+			N-ARG-A2		12-14	to pitching in 
+	12	to
+	13	pitching
+			sense:	pitching.n.01
+	14	in
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Motte played a key role in the 2011 World Series championship run , saving five postseason games .
+
+
+Treebanked sentence:
+--------------------
+Motte played a key role in the 2011 World Series championship run , saving five postseason games . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Motte))
+    (VP (VBD played)
+      (NP (DT a) (JJ key) (NN role))
+      (PP (IN in)
+        (NP (DT the) (CD 2011)
+          (NML
+            (NML (NNP World) (NNP Series))
+            (NN championship))
+          (NN run)))
+      (, ,)
+      (S
+        (VP (VBG saving)
+          (NP (CD five) (NN postseason) (NNS games)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Motte
+			name:	PERSON				0-0	Motte 
+	1	played
+			sense:	play.v.02
+			prop:	play.02
+			V		1-1	played 
+			N-ARG-A0		0-0	Motte 
+			N-ARG-A1		2-4	a key role 
+			N-ARGM-ADV		13-16	saving five postseason games 
+	2	a
+	3	key
+			sense:	cardinal.s.01
+	4	role
+			sense:	function.n.03
+	5	in
+	6	the
+	7	2011
+			name:	DATE				7-7	2011 
+	8	World
+			name:	MISC				8-9	World Series 
+	9	Series
+	10	championship
+			sense:	championship.n.02
+	11	run
+			sense:	streak.n.01
+	12	,
+	13	saving
+			sense:	salvage.v.01
+			prop:	save.02
+			V		13-13	saving 
+			N-ARG-A0		0-0	Motte 
+			N-ARG-A1		14-16	five postseason games 
+	14	five
+			name:	NUMBER				14-14	five 
+	15	postseason
+	16	games
+			sense:	game.n.02
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2012 , he led the National League ( NL ) in saves with 42 .
+
+
+Treebanked sentence:
+--------------------
+In 2012 , he led the National League ( NL ) in saves with 42 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2012)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD led)
+      (SBAR
+        (S
+          (NP
+            (NP
+              (NP (DT the) (NNP National) (NNP League))
+              (-LRB- -LRB-)
+              (NP (NNP NL))
+              (-RRB- -RRB-))
+            (PP (IN in)))
+          (VP (VBZ saves)
+            (PP (IN with)
+              (NP (CD 42)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2012
+			name:	DATE				1-1	2012 
+	2	,
+	3	he
+	4	led
+			sense:	lead.v.04
+			prop:	lead.02
+			V		4-4	led 
+			N-ARGM-TMP		0-1	In 2012 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		5-10	the National League ( NL ) 
+			N-ARGM-EXT		13-14	with 42 
+	5	the
+	6	National
+			name:	ORGANIZATION				6-7	National League 
+	7	League
+	8	(
+	9	NL
+			name:	ORGANIZATION				9-9	NL 
+	10	)
+	11	in
+	12	saves
+			sense:	salvage.v.01
+			prop:	save.03
+			V		12-12	saves 
+	13	with
+	14	42
+			name:	NUMBER				14-14	42 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Motte had Tommy John surgery to repair an ulnar collateral ligament injury that kept him from playing all of 2013 .
+
+
+Treebanked sentence:
+--------------------
+Motte had Tommy John surgery to repair an ulnar collateral ligament injury that kept him from playing all of 2013 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Motte))
+    (VP (VBD had)
+      (NP
+        (NML (NNP Tommy) (NNP John))
+        (NN surgery)
+        (S
+          (VP (TO to)
+            (VP (VB repair)
+              (NP
+                (NP (DT an) (JJ ulnar) (NN collateral) (NN ligament) (NN injury))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBD kept)
+                      (NP (PRP him))
+                      (PP (IN from)
+                        (S
+                          (VP (VBG playing)
+                            (NP
+                              (NP (DT all))
+                              (PP (IN of)
+                                (NP (CD 2013))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Motte
+	1	had
+			sense:	suffer.v.02
+			prop:	have.03
+			V		1-1	had 
+			N-ARG-A0		0-0	Motte 
+			N-ARG-A1		2-4	Tommy John surgery 
+			N-ARGM-PRP		5-19	to repair an ulnar collateral ligament injury that kept him from playing all of 2013 
+	2	Tommy
+			name:	PERSON				2-3	Tommy John 
+	3	John
+	4	surgery
+			name:	CAUSE_OF_DEATH				4-4	surgery 
+			sense:	operation.n.06
+	5	to
+	6	repair
+			sense:	repair.v.01
+			prop:	repair.01
+			V		6-6	repair 
+			N-ARG-A1		7-19	an ulnar collateral ligament injury that kept him from playing all of 2013 
+	7	an
+	8	ulnar
+			sense:	ulnar.a.01
+	9	collateral
+			sense:	collateral.n.01
+	10	ligament
+			sense:	ligament.n.01
+	11	injury
+			sense:	injury.n.01
+	12	that
+	13	kept
+			sense:	prevent.v.02
+			prop:	keep.04
+			V		13-13	kept 
+			N-ARG-A0		7-11	an ulnar collateral ligament injury 
+			R-ARG-A0		12-12	that 
+			N-ARG-A1		14-14	him 
+			N-ARG-A2		15-19	from playing all of 2013 
+	14	him
+	15	from
+	16	playing
+			sense:	play.v.01
+			prop:	play.01
+			V		16-16	playing 
+			N-ARG-A0		14-14	him 
+			N-ARGM-TMP		17-19	all of 2013 
+	17	all
+	18	of
+	19	2013
+			name:	DATE				19-19	2013 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After returning to the Cardinals midway through the 2014 season , Motte signed a one - year , $ 4.5 million deal with the Cubs for 2015 .
+
+
+Treebanked sentence:
+--------------------
+After returning to the Cardinals midway through the 2014 season , Motte signed a one - year , $ 4.5 million deal with the Cubs for 2015 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG returning)
+          (PP (IN to)
+            (NP (DT the) (NNPS Cardinals)))
+          (PP
+            (ADVP (RB midway))
+            (IN through)
+            (NP (DT the) (CD 2014) (NN season))))))
+    (, ,)
+    (NP (NNP Motte))
+    (VP (VBD signed)
+      (NP
+        (NP (DT a)
+          (NML (CD one) (HYPH -) (NN year))
+          (, ,)
+          (NML
+            (QP ($ $) (CD 4.5) (CD million)))
+          (NN deal))
+        (PP (IN with)
+          (NP (DT the) (NNP Cubs))))
+      (PP (IN for)
+        (NP (CD 2015))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	returning
+			sense:	return.v.01
+			prop:	return.01
+			V		1-1	returning 
+			N-ARG-A4		2-4	to the Cardinals 
+			N-ARGM-TMP		5-9	midway through the 2014 season 
+			N-ARG-A1		11-11	Motte 
+	2	to
+	3	the
+			coref:	IDENT			0	3-4	the Cardinals 
+	4	Cardinals
+			name:	ORGANIZATION				4-4	Cardinals 
+	5	midway
+			sense:	halfway.r.01
+	6	through
+	7	the
+	8	2014
+			name:	DATE				8-8	2014 
+	9	season
+			sense:	season.n.01
+	10	,
+	11	Motte
+			name:	PERSON				11-11	Motte 
+	12	signed
+			sense:	sign.v.03
+			prop:	sign.02
+			V		12-12	signed 
+			N-ARGM-TMP		0-9	After returning to the Cardinals midway through the 2014 season 
+			N-ARG-A0		11-11	Motte 
+			N-ARG-A1		13-21	a one - year , $ 4.5 million deal 
+			N-ARG-A2		22-24	with the Cubs 
+			N-ARGM-TMP		25-26	for 2015 
+	13	a
+	14	one
+			name:	DURATION				14-16	one - year 
+	15	-
+	16	year
+			sense:	year.n.01
+	17	,
+	18	$
+			name:	MONEY				18-20	$ 4.5 million 
+	19	4.5
+	20	million
+	21	deal
+			sense:	bargain.n.01
+	22	with
+	23	the
+			coref:	IDENT			1	23-24	the Cubs 
+	24	Cubs
+			name:	ORGANIZATION				24-24	Cubs 
+	25	for
+	26	2015
+			name:	DATE				26-26	2015 
+	27	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.0-1	The Cardinals 
+				1.11-23	the St. Louis Cardinals , Chicago Cubs , Colorado Rockies and Atlanta Braves 
+				6.3-4	the Cardinals 
+	Chain 1 (IDENT)
+				1.16-17	Chicago Cubs 
+				6.23-24	the Cubs 
+

@@ -1,0 +1,796 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" Gentle on My Mind " is a song written by John Hartford , which won four 1968 Grammy Awards .
+
+
+Treebanked sentence:
+--------------------
+" Gentle on My Mind " is a song written by John Hartford , which won four 1968 Grammy Awards . 
+
+Tree:
+-----
+(ROOT
+  (S (`` ")
+    (NP
+      (NP (NNP Gentle))
+      (PP (IN on)
+        (NP (PRP$ My) (NN Mind))))
+    ('' ")
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN song))
+        (VP (VBN written)
+          (PP (IN by)
+            (NP
+              (NP (NNP John) (NNP Hartford))
+              (, ,)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBD won)
+                    (NP (CD four) (CD 1968))
+                    (NP (NNP Grammy) (NNPS Awards))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	Gentle
+	2	on
+	3	My
+			coref:	IDENT			5	3-4	My Mind 
+	4	Mind
+			sense:	mind.n.01
+	5	"
+	6	is
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	is 
+			N-ARG-A1		0-5	" Gentle on My Mind " 
+			N-ARG-A2		7-19	a song written by John Hartford , which won four 1968 Grammy Awards 
+	7	a
+			coref:	IDENT			0	7-19	a song written by John Hartford , which won four 1968 Grammy Awards 
+	8	song
+			sense:	song.n.01
+	9	written
+			sense:	compose.v.02
+			prop:	write.01
+			V		9-9	written 
+			N-ARG-A1		7-8	a song 
+			N-ARG-A0		10-12	by John Hartford 
+	10	by
+	11	John
+			name:	PERSON				11-12	John Hartford 
+	12	Hartford
+	13	,
+	14	which
+	15	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		15-15	won 
+			N-ARG-A0		7-12	a song written by John Hartford 
+			R-ARG-A0		14-14	which 
+			N-ARG-A1		16-19	four 1968 Grammy Awards 
+	16	four
+			name:	NUMBER				16-16	four 
+	17	1968
+			coref:	IDENT			2	17-17	1968 
+			name:	DATE				17-17	1968 
+	18	Grammy
+			name:	MISC				18-19	Grammy Awards 
+	19	Awards
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Hartford won the award for Best Folk Performance and Best Country & Western Song ( Songwriter ) .
+
+
+Treebanked sentence:
+--------------------
+Hartford won the award for Best Folk Performance and Best Country & Western Song ( Songwriter ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Hartford))
+    (VP (VBD won)
+      (NP
+        (NP (DT the) (NN award))
+        (PP (IN for)
+          (NP
+            (NP (JJS Best) (NN Folk) (NN Performance))
+            (CC and)
+            (NP
+              (NP (JJS Best))
+              (NP (NNP Country)
+                (CC &)
+                (NNP Western) (NNP Song))))))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP Songwriter))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Hartford
+			name:	CITY				0-0	Hartford 
+	1	won
+			sense:	win.v.01
+			prop:	win.01
+			V		1-1	won 
+			N-ARG-A0		0-0	Hartford 
+			N-ARG-A1		2-16	the award for Best Folk Performance and Best Country & Western Song ( Songwriter ) 
+	2	the
+	3	award
+			sense:	prize.n.01
+	4	for
+	5	Best
+			sense:	good.a.01
+	6	Folk
+			sense:	folk_music.n.01
+	7	Performance
+			sense:	performance.n.02
+	8	and
+	9	Best
+			sense:	good.a.01
+	10	Country
+	11	&
+	12	Western
+	13	Song
+	14	(
+	15	Songwriter
+			name:	TITLE				15-15	Songwriter 
+	16	)
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The other two awards Best Country & Western Solo Vocal Performance , Male and Best Country & Western Recording , went to American country music singer Glen Campbell for his version of Hartford 's song .
+
+
+Treebanked sentence:
+--------------------
+The other two awards Best Country & Western Solo Vocal Performance , Male and Best Country & Western Recording , went to American country music singer Glen Campbell for his version of Hartford 's song . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ other) (CD two) (NNS awards))
+      (NP (JJS Best))
+      (NP (NNP Country)
+        (CC &)
+        (NNP Western) (NNP Solo) (NNP Vocal) (NNP Performance))
+      (, ,)
+      (NP (NNP Male))
+      (CC and)
+      (NP (NNP Best) (NNP Country)
+        (CC &)
+        (NNP Western) (NNP Recording)))
+    (, ,)
+    (VP (VBD went)
+      (PP (IN to)
+        (NP (JJ American) (NN country)))
+      (NP
+        (NP
+          (NML (NN music) (NN singer))
+          (NNP Glen) (NNP Campbell))
+        (PP (IN for)
+          (NP
+            (NP (PRP$ his) (NN version))
+            (PP (IN of)
+              (NP
+                (NP (NNP Hartford) (POS 's))
+                (NN song)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	other
+			sense:	other.a.01
+	2	two
+			name:	NUMBER				2-2	two 
+	3	awards
+			sense:	prize.n.01
+	4	Best
+			sense:	good.a.01
+	5	Country
+	6	&
+	7	Western
+	8	Solo
+	9	Vocal
+	10	Performance
+	11	,
+	12	Male
+			coref:	IDENT			4	12-12	Male 
+	13	and
+	14	Best
+	15	Country
+	16	&
+	17	Western
+	18	Recording
+	19	,
+	20	went
+			sense:	go.v.05
+			prop:	go.10
+			V		20-20	went 
+			N-ARG-A1		0-18	The other two awards Best Country & Western Solo Vocal Performance , Male and Best Country & Western Recording 
+			N-ARG-A2		21-27	to American country music singer Glen Campbell 
+			N-ARGM-CAU		28-34	for his version of Hartford 's song 
+	21	to
+	22	American
+			name:	NATIONALITY				22-22	American 
+	23	country
+			sense:	country.n.04
+	24	music
+			sense:	music.n.01
+	25	singer
+			name:	TITLE				25-25	singer 
+			sense:	singer.n.01
+	26	Glen
+			name:	PERSON				26-27	Glen Campbell 
+	27	Campbell
+	28	for
+	29	his
+			coref:	IDENT			3	29-34	his version of Hartford 's song 
+			coref:	IDENT			4	29-29	his 
+	30	version
+			sense:	version.n.01
+	31	of
+	32	Hartford
+			coref:	IDENT			0	32-34	Hartford 's song 
+			name:	CITY				32-32	Hartford 
+	33	's
+	34	song
+			sense:	song.n.01
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The song was released in June 1967 as the only single from the album of the same name .
+
+
+Treebanked sentence:
+--------------------
+The song was released in June 1967 as the only single from the album of the same name . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN song))
+    (VP (VBD was)
+      (VP (VBN released)
+        (PP (IN in)
+          (NP
+            (NP (NNP June) (CD 1967))
+            (PP (IN as)
+              (NP (DT the) (JJ only) (JJ single)))))
+        (PP (IN from)
+          (NP
+            (NP (DT the) (NN album))
+            (PP (IN of)
+              (NP (DT the) (JJ same) (NN name)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The song 
+	1	song
+			sense:	song.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		3-3	released 
+			N-ARG-A1		0-1	The song 
+			N-ARGM-TMP		4-6	in June 1967 
+			N-ARGM-PRD		7-17	as the only single from the album of the same name 
+	4	in
+	5	June
+			name:	DATE				5-6	June 1967 
+	6	1967
+	7	as
+	8	the
+	9	only
+			sense:	lone.s.03
+	10	single
+			sense:	individual.a.01
+	11	from
+	12	the
+	13	album
+			sense:	album.n.01
+	14	of
+	15	the
+	16	same
+			sense:	same.a.01
+	17	name
+			sense:	name.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was re - released in July 1968 to more success .
+
+
+Treebanked sentence:
+--------------------
+It was re - released in July 1968 to more success . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (PRN
+        (SBAR (IN re) (HYPH -)
+          (FRAG
+            (VP (VBN released)
+              (PP (IN in)
+                (NP (NNP July) (CD 1968)))))))
+      (PP (IN to)
+        (NP (JJR more) (NN success))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	re
+	3	-
+	4	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		4-4	released 
+			N-ARG-A1		0-0	It 
+			N-ARGM-ADV		2-3	re - 
+			N-ARGM-TMP		5-7	in July 1968 
+			N-ARGM-ADV		8-10	to more success 
+	5	in
+	6	July
+			name:	DATE				6-7	July 1968 
+	7	1968
+	8	to
+	9	more
+			sense:	more.a.01
+	10	success
+			sense:	success.n.03
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Glen Campbell 's version has received over 5 million plays on the radio .
+
+
+Treebanked sentence:
+--------------------
+Glen Campbell 's version has received over 5 million plays on the radio . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Glen) (NNP Campbell) (POS 's))
+      (NN version))
+    (VP (VBZ has)
+      (VP (VBN received)
+        (PP (IN over)
+          (NP
+            (QP (CD 5) (CD million))
+            (NNS plays)))
+        (PP (IN on)
+          (NP (DT the) (NN radio)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Glen
+			coref:	IDENT			1	0-2	Glen Campbell 's 
+			coref:	IDENT			3	0-3	Glen Campbell 's version 
+			name:	PERSON				0-1	Glen Campbell 
+	1	Campbell
+	2	's
+	3	version
+			sense:	version.n.01
+	4	has
+			sense:	have.v.01
+			prop:	have.01
+			V		4-4	has 
+	5	received
+			sense:	receive.v.02
+			prop:	receive.01
+			V		5-5	received 
+			N-ARG-A0		0-3	Glen Campbell 's version 
+			N-ARG-A1		6-9	over 5 million plays 
+			N-ARGM-LOC		10-12	on the radio 
+	6	over
+	7	5
+			name:	NUMBER				7-8	5 million 
+	8	million
+	9	plays
+			sense:	play.n.06
+	10	on
+	11	the
+	12	radio
+			sense:	radio.n.01
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Campbell used " Gentle on My Mind " as the theme to his television variety show , The Glen Campbell Goodtime Hour between 1969 and 1972 .
+
+
+Treebanked sentence:
+--------------------
+Campbell used " Gentle on My Mind " as the theme to his television variety show , The Glen Campbell Goodtime Hour between 1969 and 1972 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Campbell))
+    (VP (VBD used)
+      (NP (`` ")
+        (NP (NNP Gentle))
+        (PP (IN on)
+          (NP (PRP$ My) (NN Mind)))
+        ('' "))
+      (PP (IN as)
+        (NP (DT the) (NN theme)))
+      (PP (IN to)
+        (NP
+          (NP (PRP$ his)
+            (NML (NN television) (NN variety))
+            (NN show))
+          (, ,)
+          (NP
+            (NP (DT The) (NNP Glen)
+              (NML (NNP Campbell) (NNP Goodtime))
+              (NNP Hour))
+            (PP (IN between)
+              (NP (CD 1969)
+                (CC and)
+                (CD 1972)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Campbell
+			coref:	IDENT			1	0-0	Campbell 
+			name:	ORGANIZATION				0-0	Campbell 
+	1	used
+			sense:	use.v.01
+			prop:	use.01
+			V		1-1	used 
+			N-ARG-A0		0-0	Campbell 
+			N-ARG-A1		2-7	" Gentle on My Mind " 
+			N-ARG-A2		8-21	as the theme to his television variety show , The Glen Campbell Goodtime Hour 
+			N-ARGM-TMP		22-25	between 1969 and 1972 
+	2	"
+	3	Gentle
+	4	on
+	5	My
+			coref:	IDENT			5	5-6	My Mind 
+	6	Mind
+			sense:	mind.n.01
+	7	"
+	8	as
+	9	the
+	10	theme
+			sense:	theme.n.03
+	11	to
+	12	his
+			coref:	IDENT			1	12-12	his 
+	13	television
+			sense:	television.n.01
+	14	variety
+			sense:	variety_show.n.01
+	15	show
+			sense:	show.n.01
+	16	,
+	17	The
+	18	Glen
+	19	Campbell
+	20	Goodtime
+	21	Hour
+			name:	DURATION				21-21	Hour 
+	22	between
+	23	1969
+			name:	DATE				23-25	1969 and 1972 
+	24	and
+	25	1972
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Dean Martin 's version , recorded in 1968 , was a major hit in the United Kingdom ; three versions of the song , Campbell 's , Martin 's and Patti Page 's , all reached the top ten of the U.S. easy listening chart in 1968 .
+
+
+Treebanked sentence:
+--------------------
+Dean Martin 's version , recorded in 1968 , was a major hit in the United Kingdom ; three versions of the song , Campbell 's , Martin 's and Patti Page 's , all reached the top ten of the U.S. easy listening chart in 1968 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP
+          (NP (NNP Dean) (NNP Martin) (POS 's))
+          (NN version))
+        (, ,)
+        (VP (VBN recorded)
+          (PP (IN in)
+            (NP (CD 1968))))
+        (, ,))
+      (VP (VBD was)
+        (NP
+          (NP (DT a) (JJ major) (NN hit))
+          (PP (IN in)
+            (NP (DT the) (NNP United) (NNP Kingdom))))))
+    (: ;)
+    (S
+      (NP
+        (NP (CD three) (NNS versions))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN song))
+            (, ,)
+            (NP (NNP Campbell) (POS 's))
+            (, ,)
+            (NP
+              (NP (NNP Martin) (POS 's))
+              (CC and)
+              (NP (NNP Patti) (NNP Page) (POS 's)))
+            (, ,)
+            (NP (DT all)))))
+      (VP (VBD reached)
+        (NP
+          (NP (DT the) (JJ top) (CD ten))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP U.S.) (JJ easy) (NN listening) (NN chart))
+              (PP (IN in)
+                (NP (CD 1968))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Dean
+			coref:	IDENT			1	0-2	Dean Martin 's 
+			coref:	IDENT			3	0-7	Dean Martin 's version , recorded in 1968 
+			name:	PERSON				0-1	Dean Martin 
+	1	Martin
+	2	's
+	3	version
+			sense:	version.n.02
+	4	,
+	5	recorded
+			sense:	record.v.02
+			prop:	record.01
+			V		5-5	recorded 
+			N-ARG-A1		0-3	Dean Martin 's version 
+			N-ARGM-TMP		6-7	in 1968 
+	6	in
+	7	1968
+			coref:	IDENT			2	7-7	1968 
+			name:	DATE				7-7	1968 
+	8	,
+	9	was
+			sense:	be.v.01
+			prop:	be.01
+			V		9-9	was 
+			N-ARG-A1		0-8	Dean Martin 's version , recorded in 1968 , 
+			N-ARG-A2		10-12	a major hit 
+			N-ARGM-LOC		13-16	in the United Kingdom 
+	10	a
+	11	major
+			sense:	major.a.01
+	12	hit
+			sense:	hit.n.03
+	13	in
+	14	the
+	15	United
+			name:	COUNTRY				15-16	United Kingdom 
+	16	Kingdom
+	17	;
+	18	three
+			name:	NUMBER				18-18	three 
+	19	versions
+			sense:	version.n.02
+	20	of
+	21	the
+	22	song
+			sense:	song.n.01
+	23	,
+	24	Campbell
+			coref:	IDENT			1	24-25	Campbell 's 
+			name:	ORGANIZATION				24-24	Campbell 
+	25	's
+	26	,
+	27	Martin
+			coref:	IDENT			1	27-28	Martin 's 
+			name:	PERSON				27-27	Martin 
+	28	's
+	29	and
+	30	Patti
+			name:	PERSON				30-31	Patti Page 
+	31	Page
+	32	's
+	33	,
+	34	all
+	35	reached
+			sense:	reach.v.02
+			prop:	reach.01
+			V		35-35	reached 
+			N-ARG-A0		18-34	three versions of the song , Campbell 's , Martin 's and Patti Page 's , all 
+			N-ARG-A1		36-44	the top ten of the U.S. easy listening chart 
+			N-ARGM-TMP		45-46	in 1968 
+	36	the
+	37	top
+			sense:	top.a.01
+	38	ten
+			name:	NUMBER				38-38	ten 
+	39	of
+	40	the
+	41	U.S.
+			name:	COUNTRY				41-41	U.S. 
+	42	easy
+			sense:	easy.s.04
+	43	listening
+			sense:	listening.n.01
+	44	chart
+			sense:	chart.n.01
+	45	in
+	46	1968
+			coref:	IDENT			2	46-46	1968 
+			name:	DATE				46-46	1968 
+	47	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The song was ranked number 16 on BMI 's Top 100 Songs of the Century .
+
+
+Treebanked sentence:
+--------------------
+The song was ranked number 16 on BMI 's Top 100 Songs of the Century . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN song))
+    (VP (VBD was)
+      (VP (VBN ranked)
+        (NP
+          (NP (NN number) (CD 16))
+          (PP (IN on)
+            (NP
+              (NP (NN BMI) (POS 's))
+              (JJ Top) (CD 100) (NNS Songs)))
+          (PP (IN of)
+            (NP (DT the) (NNP Century))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The song 
+	1	song
+			sense:	song.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	ranked
+			sense:	rate.v.01
+			prop:	rank.01
+			V		3-3	ranked 
+			N-ARG-A1		0-1	The song 
+			N-ARG-A2		4-5	number 16 
+			N-ARGM-LOC		6-14	on BMI 's Top 100 Songs of the Century 
+	4	number
+			sense:	number.n.02
+	5	16
+			name:	NUMBER				5-5	16 
+	6	on
+	7	BMI
+			name:	ORGANIZATION				7-7	BMI 
+			sense:	body_mass_index.n.01
+	8	's
+	9	Top
+			sense:	top.a.01
+	10	100
+			name:	NUMBER				10-10	100 
+	11	Songs
+			sense:	song.n.01
+	12	of
+	13	the
+			name:	DATE				13-14	the Century 
+	14	Century
+	15	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.32-34	Hartford 's song 
+				0.7-19	a song written by John Hartford , which won four 1968 Grammy Awards 
+				3.0-1	The song 
+				4.0-0	It 
+				8.0-1	The song 
+	Chain 1 (IDENT)
+				5.0-2	Glen Campbell 's 
+				6.0-0	Campbell 
+				6.12-12	his 
+				7.0-2	Dean Martin 's 
+				7.24-25	Campbell 's 
+				7.27-28	Martin 's 
+	Chain 2 (IDENT)
+				0.17-17	1968 
+				7.7-7	1968 
+				7.46-46	1968 
+	Chain 3 (IDENT)
+				7.0-7	Dean Martin 's version , recorded in 1968 
+				2.29-34	his version of Hartford 's song 
+				5.0-3	Glen Campbell 's version 
+	Chain 4 (IDENT)
+				2.12-12	Male 
+				2.29-29	his 
+	Chain 5 (IDENT)
+				0.3-4	My Mind 
+				6.5-6	My Mind 
+

@@ -1,0 +1,588 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+James Wilson ( August 16 , 1766 – January 4 , 1839 ) was a U.S. Representative from New Hampshire , father of James Wilson ( 1797 - 1881 ) .
+
+
+Treebanked sentence:
+--------------------
+James Wilson ( August 16 , 1766 – January 4 , 1839 ) was a U.S. Representative from New Hampshire , father of James Wilson ( 1797 - 1881 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP James) (NNP Wilson))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP August) (CD 16) (, ,) (CD 1766))
+        (PP (SYM –)
+          (NP (NNP January) (CD 4) (, ,) (CD 1839))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NNP U.S.) (NNP Representative))
+        (PP (IN from)
+          (NP
+            (NP (NNP New) (NNP Hampshire))
+            (, ,)
+            (NP
+              (NP (NN father))
+              (PP (IN of)
+                (NP (NNP James) (NNP Wilson)))))))
+      (PRN (-LRB- -LRB-)
+        (NP (CD 1797) (SYM -) (CD 1881))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	James
+			name:	PERSON				0-1	James Wilson 
+	1	Wilson
+	2	(
+	3	August
+			name:	DATE				3-6	August 16 , 1766 
+	4	16
+	5	,
+	6	1766
+	7	–
+	8	January
+			coref:	IDENT			0	8-11	January 4 , 1839 
+			name:	DATE				8-11	January 4 , 1839 
+	9	4
+	10	,
+	11	1839
+	12	)
+	13	was
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	was 
+			N-ARG-A1		0-12	James Wilson ( August 16 , 1766 – January 4 , 1839 ) 
+			N-ARG-A2		14-29	a U.S. Representative from New Hampshire , father of James Wilson ( 1797 - 1881 ) 
+	14	a
+	15	U.S.
+			name:	COUNTRY				15-15	U.S. 
+	16	Representative
+			name:	TITLE				16-16	Representative 
+	17	from
+	18	New
+			name:	STATE_OR_PROVINCE				18-19	New Hampshire 
+	19	Hampshire
+	20	,
+	21	father
+			sense:	father.n.01
+	22	of
+	23	James
+			name:	PERSON				23-24	James Wilson 
+	24	Wilson
+	25	(
+	26	1797
+			name:	DATE				26-26	1797 
+	27	-
+			name:	DURATION				27-27	- 
+	28	1881
+			name:	DATE				28-28	1881 
+	29	)
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in Peterborough , New Hampshire , Wilson attended Phillips Academy , Andover , Massachusetts , and graduated from Harvard University in 1789 .
+
+
+Treebanked sentence:
+--------------------
+Born in Peterborough , New Hampshire , Wilson attended Phillips Academy , Andover , Massachusetts , and graduated from Harvard University in 1789 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP (NNP Peterborough) (, ,) (NNP New) (NNP Hampshire)))))
+    (, ,)
+    (NP (NNP Wilson))
+    (VP
+      (VP (VBD attended)
+        (NP
+          (NML
+            (NML (NNP Phillips) (NNP Academy))
+            (, ,)
+            (NP (NNP Andover))
+            (, ,))
+          (NNP Massachusetts)))
+      (, ,)
+      (CC and)
+      (VP (VBD graduated)
+        (PP (IN from)
+          (NP
+            (NP (NNP Harvard) (NNP University))
+            (PP (IN in)
+              (NP (CD 1789)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-5	in Peterborough , New Hampshire 
+			N-ARG-A1		7-7	Wilson 
+	1	in
+	2	Peterborough
+			coref:	IDENT			1	2-2	Peterborough 
+			name:	CITY				2-2	Peterborough 
+	3	,
+	4	New
+			name:	STATE_OR_PROVINCE				4-5	New Hampshire 
+	5	Hampshire
+	6	,
+	7	Wilson
+			name:	PERSON				7-7	Wilson 
+	8	attended
+			sense:	attend.v.01
+			prop:	attend.01
+			V		8-8	attended 
+			R-ARG-A0		0-5	Born in Peterborough , New Hampshire 
+			N-ARG-A0		7-7	Wilson 
+			N-ARG-A1		9-14	Phillips Academy , Andover , Massachusetts 
+	9	Phillips
+			name:	ORGANIZATION				9-10	Phillips Academy 
+	10	Academy
+	11	,
+	12	Andover
+			name:	CITY				12-12	Andover 
+	13	,
+	14	Massachusetts
+			name:	STATE_OR_PROVINCE				14-14	Massachusetts 
+	15	,
+	16	and
+	17	graduated
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		17-17	graduated 
+			R-ARG-A0		0-5	Born in Peterborough , New Hampshire 
+			N-ARG-A0		7-7	Wilson 
+			N-ARG-A1		18-20	from Harvard University 
+			N-ARGM-TMP		21-22	in 1789 
+	18	from
+	19	Harvard
+			name:	ORGANIZATION				19-20	Harvard University 
+	20	University
+	21	in
+	22	1789
+			name:	DATE				22-22	1789 
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He studied law and was admitted to the bar in 1792 , commencing practice in Peterborough .
+
+
+Treebanked sentence:
+--------------------
+He studied law and was admitted to the bar in 1792 , commencing practice in Peterborough . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD studied)
+        (NP (NN law)))
+      (CC and)
+      (VP (VBD was)
+        (VP (VBN admitted)
+          (PP (IN to)
+            (NP
+              (NP (DT the) (NN bar))
+              (PP (IN in)
+                (NP (CD 1792)))))
+          (, ,)
+          (S
+            (VP (VBG commencing)
+              (NP (NN practice))
+              (PP (IN in)
+                (NP (NNP Peterborough))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	studied
+			sense:	learn.v.04
+			prop:	study.01
+			V		1-1	studied 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-2	law 
+	2	law
+			sense:	law.n.06
+	3	and
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	admitted
+			sense:	accept.v.05
+			prop:	admit.02
+			V		5-5	admitted 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		6-8	to the bar 
+			N-ARGM-TMP		9-10	in 1792 
+	6	to
+	7	the
+	8	bar
+			sense:	legal_profession.n.01
+	9	in
+	10	1792
+			name:	DATE				10-10	1792 
+	11	,
+	12	commencing
+			sense:	get_down.v.07
+			prop:	commence.01
+			V		12-12	commencing 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		13-15	practice in Peterborough 
+	13	practice
+			sense:	practice.n.04
+	14	in
+	15	Peterborough
+			coref:	IDENT			1	15-15	Peterborough 
+			name:	CITY				15-15	Peterborough 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He served as member of the State house of representatives 1803 - 1808 and 1812 - 1814 .
+
+
+Treebanked sentence:
+--------------------
+He served as member of the State house of representatives 1803 - 1808 and 1812 - 1814 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP
+          (NP (NN member))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP State) (NN house))
+              (PP (IN of)
+                (NP
+                  (NP (NNS representatives))
+                  (QP (CD 1803) (HYPH -) (CD 1808)
+                    (CC and)
+                    (CD 1812) (HYPH -) (CD 1814)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-16	as member of the State house of representatives 1803 - 1808 and 1812 - 1814 
+	2	as
+	3	member
+			sense:	member.n.01
+	4	of
+	5	the
+	6	State
+	7	house
+			sense:	house.n.05
+	8	of
+	9	representatives
+			sense:	representative.n.01
+	10	1803
+			name:	DATE				10-10	1803 
+	11	-
+			name:	DURATION				11-11	- 
+	12	1808
+			name:	DATE				12-12	1808 
+	13	and
+	14	1812
+			name:	DATE				14-14	1812 
+	15	-
+			name:	DURATION				15-15	- 
+	16	1814
+			name:	DATE				16-16	1814 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Wilson was elected as a Federalist to the Eleventh Congress ( March 4 , 1809 – March 3 , 1811 ) .
+
+
+Treebanked sentence:
+--------------------
+Wilson was elected as a Federalist to the Eleventh Congress ( March 4 , 1809 – March 3 , 1811 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Wilson))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (PP (IN as)
+          (NP (DT a) (NNP Federalist)))
+        (PP (IN to)
+          (NP (DT the) (NNP Eleventh) (NNP Congress)))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (NNP March) (CD 4) (, ,) (CD 1809))
+            (PP (SYM –)
+              (NP (NNP March) (CD 3) (, ,) (CD 1811))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Wilson
+			name:	PERSON				0-0	Wilson 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A1		0-0	Wilson 
+			N-ARG-A2		3-20	as a Federalist to the Eleventh Congress ( March 4 , 1809 – March 3 , 1811 ) 
+	3	as
+	4	a
+	5	Federalist
+	6	to
+	7	the
+	8	Eleventh
+			name:	ORGANIZATION				8-9	Eleventh Congress 
+	9	Congress
+	10	(
+	11	March
+			name:	DATE				11-14	March 4 , 1809 
+	12	4
+	13	,
+	14	1809
+	15	–
+	16	March
+			name:	DATE				16-19	March 3 , 1811 
+	17	3
+	18	,
+	19	1811
+	20	)
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was not a candidate for renomination in 1810 and resumed the practice of law , moving to Keene , New Hampshire , in 1815 .
+
+
+Treebanked sentence:
+--------------------
+He was not a candidate for renomination in 1810 and resumed the practice of law , moving to Keene , New Hampshire , in 1815 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (NP
+          (NP (RB not) (DT a) (NN candidate))
+          (PP (IN for)
+            (NP (NN renomination))))
+        (PP (IN in)
+          (NP (CD 1810))))
+      (CC and)
+      (VP (VBD resumed)
+        (NP
+          (NP (DT the) (NN practice))
+          (PP (IN of)
+            (NP (NN law))))
+        (, ,)
+        (S
+          (VP (VBG moving)
+            (PP (IN to)
+              (NP
+                (NP (NNP Keene))
+                (, ,)
+                (NP (NNP New) (NNP Hampshire))
+                (, ,)))
+            (PP (IN in)
+              (NP (CD 1815)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARGM-NEG		2-2	not 
+			N-ARG-A2		3-6	a candidate for renomination 
+			N-ARGM-TMP		7-8	in 1810 
+	2	not
+			sense:	not.r.01
+	3	a
+	4	candidate
+			name:	TITLE				4-4	candidate 
+			sense:	campaigner.n.01
+	5	for
+	6	renomination
+	7	in
+	8	1810
+			name:	DATE				8-8	1810 
+	9	and
+	10	resumed
+			sense:	resume.v.01
+			prop:	resume.01
+			V		10-10	resumed 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		11-14	the practice of law 
+			N-ARGM-ADV		16-24	moving to Keene , New Hampshire , in 1815 
+	11	the
+	12	practice
+			sense:	practice.n.04
+	13	of
+	14	law
+			sense:	law.n.06
+	15	,
+	16	moving
+			sense:	move.v.04
+			prop:	move.01
+			V		16-16	moving 
+			N-ARG-A0		0-0	He 
+			N-ARG-A2		17-21	to Keene , New Hampshire 
+			N-ARGM-TMP		23-24	in 1815 
+	17	to
+	18	Keene
+			name:	PERSON				18-18	Keene 
+	19	,
+	20	New
+			name:	STATE_OR_PROVINCE				20-21	New Hampshire 
+	21	Hampshire
+	22	,
+	23	in
+	24	1815
+			name:	DATE				24-24	1815 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He died in Keene , January 4 , 1839 , and was interred in Woodland Cemetery .
+
+
+Treebanked sentence:
+--------------------
+He died in Keene , January 4 , 1839 , and was interred in Woodland Cemetery . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD died)
+        (PP (IN in)
+          (NP (NNP Keene) (, ,) (NNP January) (CD 4) (, ,) (CD 1839) (, ,))))
+      (CC and)
+      (VP (VBD was)
+        (VP (VBN interred)
+          (PP (IN in)
+            (NP (NNP Woodland) (NNP Cemetery))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		2-3	in Keene 
+			N-ARGM-TMP		5-8	January 4 , 1839 
+	2	in
+	3	Keene
+			name:	CITY				3-3	Keene 
+	4	,
+	5	January
+			coref:	IDENT			0	5-8	January 4 , 1839 
+			name:	DATE				5-8	January 4 , 1839 
+	6	4
+	7	,
+	8	1839
+	9	,
+	10	and
+	11	was
+			sense:	be.v.01
+			prop:	be.03
+			V		11-11	was 
+	12	interred
+			sense:	bury.v.02
+			prop:	enter.01
+			V		12-12	interred 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		13-15	in Woodland Cemetery 
+	13	in
+	14	Woodland
+			name:	CITY				14-14	Woodland 
+	15	Cemetery
+			name:	LOCATION				15-15	Cemetery 
+	16	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.8-11	January 4 , 1839 
+				6.5-8	January 4 , 1839 
+	Chain 1 (IDENT)
+				1.2-2	Peterborough 
+				2.15-15	Peterborough 
+

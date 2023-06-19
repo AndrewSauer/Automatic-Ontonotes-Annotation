@@ -1,0 +1,602 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Fanny Geefs ( 1807 – 1883 ) was a Belgian painter of Irish descent .
+
+
+Treebanked sentence:
+--------------------
+Fanny Geefs ( 1807 – 1883 ) was a Belgian painter of Irish descent . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Fanny) (NNP Geefs))
+      (PRN (-LRB- -LRB-)
+        (NP (CD 1807) (SYM –) (CD 1883))
+        (-RRB- -RRB-)))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ Belgian) (NN painter))
+        (PP (IN of)
+          (NP (JJ Irish) (NN descent)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Fanny
+	1	Geefs
+	2	(
+	3	1807
+			name:	DATE				3-3	1807 
+	4	–
+	5	1883
+			name:	DATE				5-5	1883 
+	6	)
+	7	was
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	was 
+			N-ARG-A1		0-6	Fanny Geefs ( 1807 – 1883 ) 
+			N-ARG-A2		8-13	a Belgian painter of Irish descent 
+	8	a
+	9	Belgian
+			name:	NATIONALITY				9-9	Belgian 
+	10	painter
+			name:	TITLE				10-10	painter 
+			sense:	painter.n.01
+	11	of
+	12	Irish
+			name:	NATIONALITY				12-12	Irish 
+	13	descent
+			sense:	descent.n.04
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born Isabelle Marie Françoise Corr in either Dublin or Brussels , she studied art as a child .
+
+
+Treebanked sentence:
+--------------------
+Born Isabelle Marie Françoise Corr in either Dublin or Brussels , she studied art as a child . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (NP
+          (NP (NNP Isabelle) (NNP Marie) (NNP Françoise) (NNP Corr))
+          (PP (IN in)
+            (NP (CC either)
+              (NNP Dublin)
+              (CC or)
+              (NNP Brussels))))))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBD studied)
+      (NP (NN art))
+      (PP (IN as)
+        (NP (DT a) (NN child))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		5-9	in either Dublin or Brussels 
+			N-ARG-A1		11-11	she 
+	1	Isabelle
+			coref:	IDENT			0	1-4	Isabelle Marie Françoise Corr 
+			name:	PERSON				1-4	Isabelle Marie Françoise Corr 
+	2	Marie
+	3	Françoise
+	4	Corr
+	5	in
+	6	either
+	7	Dublin
+			name:	CITY				7-7	Dublin 
+	8	or
+	9	Brussels
+			coref:	IDENT			1	9-9	Brussels 
+			name:	CITY				9-9	Brussels 
+	10	,
+	11	she
+			coref:	IDENT			0	11-11	she 
+	12	studied
+			sense:	learn.v.04
+			prop:	study.01
+			V		12-12	studied 
+			N-ARG-A0		11-11	she 
+			N-ARG-A1		13-13	art 
+			N-ARGM-TMP		14-16	as a child 
+	13	art
+			sense:	art.n.02
+	14	as
+	15	a
+	16	child
+			sense:	child.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the 1830s she studied with François - Joseph Navez .
+
+
+Treebanked sentence:
+--------------------
+In the 1830s she studied with François - Joseph Navez . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (CD 1830s)))
+    (NP (PRP she))
+    (VP (VBD studied)
+      (PP (IN with)
+        (NP (NNP François) (HYPH -) (NNP Joseph) (NNP Navez))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+			name:	DATE				1-2	the 1830s 
+	2	1830s
+	3	she
+			coref:	IDENT			0	3-3	she 
+	4	studied
+			sense:	learn.v.04
+			prop:	study.01
+			V		4-4	studied 
+			N-ARGM-TMP		0-2	In the 1830s 
+			N-ARG-A0		3-3	she 
+	5	with
+	6	François
+	7	-
+	8	Joseph
+			name:	PERSON				8-9	Joseph Navez 
+	9	Navez
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As well as portraiture , she painted religious and historical scenes such as Our Lady Appearing to the Oppressed which hangs in the Church of the Holy Family in Schaerbeek .
+
+
+Treebanked sentence:
+--------------------
+As well as portraiture , she painted religious and historical scenes such as Our Lady Appearing to the Oppressed which hangs in the Church of the Holy Family in Schaerbeek . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP
+      (ADVP (RB As) (RB well))
+      (PP (IN as)
+        (NP (NN portraiture))))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBD painted)
+      (NP
+        (NP
+          (ADJP (JJ religious)
+            (CC and)
+            (JJ historical))
+          (NNS scenes))
+        (PP (JJ such) (IN as)
+          (NP (PRP$ Our)
+            (NML (NNP Lady) (NNP Appearing)))))
+      (PP (IN to)
+        (NP
+          (NP (DT the) (VBN Oppressed))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBZ hangs)
+                (PP (IN in)
+                  (NP
+                    (NP (DT the) (NNP Church))
+                    (PP (IN of)
+                      (NP (DT the) (NNP Holy) (NNP Family)))))
+                (PP (IN in)
+                  (NP (NNP Schaerbeek)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+			sense:	equally.r.01
+	1	well
+			sense:	well.r.01
+	2	as
+	3	portraiture
+			sense:	portraiture.n.02
+	4	,
+	5	she
+			coref:	IDENT			0	5-5	she 
+	6	painted
+			sense:	paint.v.03
+			prop:	paint.02
+			V		6-6	painted 
+			N-ARGM-ADV		0-3	As well as portraiture 
+			N-ARG-A0		5-5	she 
+			N-ARG-A1		7-29	religious and historical scenes such as Our Lady Appearing to the Oppressed which hangs in the Church of the Holy Family in Schaerbeek 
+	7	religious
+			sense:	religious.s.01
+	8	and
+	9	historical
+			sense:	historic.s.01
+	10	scenes
+			sense:	scene.n.08
+	11	such
+			sense:	such.s.01
+	12	as
+	13	Our
+	14	Lady
+	15	Appearing
+	16	to
+	17	the
+	18	Oppressed
+			name:	MISC				18-18	Oppressed 
+			sense:	oppress.v.01
+			prop:	oppress.01
+			V		18-18	Oppressed 
+	19	which
+	20	hangs
+			sense:	hang.v.01
+			prop:	hang.01
+			V		20-20	hangs 
+			N-ARG-A1		13-18	Our Lady Appearing to the Oppressed 
+			R-ARG-A1		19-19	which 
+			N-ARGM-LOC		21-29	in the Church of the Holy Family in Schaerbeek 
+	21	in
+	22	the
+	23	Church
+	24	of
+	25	the
+	26	Holy
+	27	Family
+	28	in
+	29	Schaerbeek
+			name:	LOCATION				29-29	Schaerbeek 
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She married successful sculptor Guillaume Geefs in 1836 .
+
+
+Treebanked sentence:
+--------------------
+She married successful sculptor Guillaume Geefs in 1836 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD married)
+      (NP (JJ successful) (NN sculptor) (NNP Guillaume) (NNP Geefs))
+      (PP (IN in)
+        (NP (CD 1836))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	married
+			sense:	marry.v.01
+			prop:	marry.01
+			V		1-1	married 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-5	successful sculptor Guillaume Geefs 
+			N-ARGM-TMP		6-7	in 1836 
+	2	successful
+			sense:	successful.a.01
+	3	sculptor
+			name:	TITLE				3-3	sculptor 
+			sense:	sculptor.n.01
+	4	Guillaume
+			name:	PERSON				4-5	Guillaume Geefs 
+	5	Geefs
+	6	in
+	7	1836
+			name:	DATE				7-7	1836 
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She worked on commissions for the Belgian royal family , including several portraits of Queen Louise - Marie .
+
+
+Treebanked sentence:
+--------------------
+She worked on commissions for the Belgian royal family , including several portraits of Queen Louise - Marie . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD worked)
+      (PP (IN on)
+        (NP (NNS commissions)))
+      (PP (IN for)
+        (NP (DT the) (JJ Belgian) (JJ royal) (NN family)))
+      (, ,)
+      (PP (VBG including)
+        (NP
+          (NP (JJ several) (NNS portraits))
+          (PP (IN of)
+            (NP (NNP Queen) (NNP Louise) (HYPH -) (NNP Marie))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	worked
+			sense:	work.v.01
+			prop:	work.01
+			V		1-1	worked 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		2-17	on commissions for the Belgian royal family , including several portraits of Queen Louise - Marie 
+	2	on
+	3	commissions
+			sense:	mission.n.03
+	4	for
+	5	the
+	6	Belgian
+			name:	NATIONALITY				6-6	Belgian 
+	7	royal
+			sense:	royal.a.02
+	8	family
+			sense:	family.n.01
+	9	,
+	10	including
+			sense:	include.v.01
+			prop:	include.01
+			V		10-10	including 
+			N-ARG-A2		3-4	commissions for 
+			N-ARG-A1		11-17	several portraits of Queen Louise - Marie 
+	11	several
+			sense:	several.s.01
+	12	portraits
+			sense:	portrait.n.02
+	13	of
+	14	Queen
+			name:	TITLE				14-14	Queen 
+	15	Louise
+			name:	PERSON				15-17	Louise - Marie 
+	16	-
+	17	Marie
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Her triptych The life of a woman : Pity - Love - Sorrow was an influence on Charlotte Brontë , in particular her autobiographical novel Villette , set in Brussels .
+
+
+Treebanked sentence:
+--------------------
+Her triptych The life of a woman : Pity - Love - Sorrow was an influence on Charlotte Brontë , in particular her autobiographical novel Villette , set in Brussels . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Her) (NN triptych))
+      (NP
+        (NP (DT The) (NN life))
+        (PP (IN of)
+          (NP
+            (NP (DT a) (NN woman) (: :))
+            (INTJ (UH Pity))
+            (PP (HYPH -)
+              (NP (NN Love) (HYPH -) (NN Sorrow)))))))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (NN influence))
+        (PP (IN on)
+          (NP (NNP Charlotte) (NNP Brontë))))
+      (, ,)
+      (PP (IN in)
+        (NP
+          (NP
+            (NP (JJ particular))
+            (NP (PRP$ her) (JJ autobiographical) (NN novel))
+            (NP (NNP Villette)))
+          (, ,)
+          (VP (VBN set)
+            (PP (IN in)
+              (NP (NNP Brussels)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Her
+			coref:	IDENT			0	0-0	Her 
+	1	triptych
+			sense:	triptych.n.01
+	2	The
+	3	life
+			sense:	life.n.03
+	4	of
+	5	a
+	6	woman
+			sense:	woman.n.01
+	7	:
+	8	Pity
+	9	-
+	10	Love
+			sense:	love.n.01
+	11	-
+	12	Sorrow
+			sense:	sorrow.n.01
+	13	was
+			sense:	be.v.01
+			prop:	be.01
+			V		13-13	was 
+			N-ARG-A1		0-12	Her triptych The life of a woman : Pity - Love - Sorrow 
+			N-ARG-A2		14-29	an influence on Charlotte Brontë , in particular her autobiographical novel Villette , set in Brussels 
+	14	an
+	15	influence
+			sense:	influence.n.03
+	16	on
+	17	Charlotte
+			coref:	IDENT			0	17-18	Charlotte Brontë 
+			name:	PERSON				17-18	Charlotte Brontë 
+	18	Brontë
+	19	,
+	20	in
+	21	particular
+			sense:	particular.s.02
+	22	her
+			coref:	IDENT			0	22-22	her 
+	23	autobiographical
+			sense:	autobiographical.a.02
+	24	novel
+			sense:	novel.n.01
+	25	Villette
+			name:	PERSON				25-25	Villette 
+	26	,
+	27	set
+			sense:	set.v.09
+			prop:	set.01
+			V		27-27	set 
+			N-ARG-A1		22-25	her autobiographical novel Villette 
+			N-ARG-A2		28-29	in Brussels 
+	28	in
+	29	Brussels
+			coref:	IDENT			1	29-29	Brussels 
+			name:	CITY				29-29	Brussels 
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On her death in 1883 the Royal Library of Belgium purchased a large collection of her works .
+
+
+Treebanked sentence:
+--------------------
+On her death in 1883 the Royal Library of Belgium purchased a large collection of her works . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP
+        (NP (PRP$ her) (NN death))
+        (PP (IN in)
+          (NP (CD 1883)))))
+    (NP
+      (NP (DT the) (NNP Royal) (NNP Library))
+      (PP (IN of)
+        (NP (NNP Belgium))))
+    (VP (VBD purchased)
+      (NP
+        (NP (DT a) (JJ large) (NN collection))
+        (PP (IN of)
+          (NP (PRP$ her) (NNS works)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	her
+			coref:	IDENT			0	1-1	her 
+	2	death
+			sense:	death.n.01
+	3	in
+	4	1883
+			name:	DATE				4-4	1883 
+	5	the
+	6	Royal
+			name:	LOCATION				6-8	Royal Library of 
+	7	Library
+	8	of
+	9	Belgium
+			name:	COUNTRY				9-9	Belgium 
+	10	purchased
+			sense:	buy.v.01
+			prop:	purchase.01
+			V		10-10	purchased 
+			N-ARGM-TMP		0-4	On her death in 1883 
+			N-ARG-A0		5-9	the Royal Library of Belgium 
+			N-ARG-A1		11-16	a large collection of her works 
+	11	a
+	12	large
+			sense:	large.a.01
+	13	collection
+			sense:	collection.n.02
+	14	of
+	15	her
+			coref:	IDENT			0	15-15	her 
+	16	works
+			sense:	work.n.02
+	17	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.1-4	Isabelle Marie Françoise Corr 
+				1.11-11	she 
+				2.3-3	she 
+				3.5-5	she 
+				4.0-0	She 
+				5.0-0	She 
+				6.0-0	Her 
+				6.17-18	Charlotte Brontë 
+				6.22-22	her 
+				7.1-1	her 
+				7.15-15	her 
+	Chain 1 (IDENT)
+				1.9-9	Brussels 
+				6.29-29	Brussels 
+

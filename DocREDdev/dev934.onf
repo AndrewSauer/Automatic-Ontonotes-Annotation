@@ -1,0 +1,476 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Lieutenant - General Arthur Ernest Percival , ( 26 December 1887 – 31 January 1966 ) was a senior British Army officer .
+
+
+Treebanked sentence:
+--------------------
+Lieutenant - General Arthur Ernest Percival , ( 26 December 1887 – 31 January 1966 ) was a senior British Army officer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NML (NNP Lieutenant) (HYPH -) (NNP General))
+        (NNP Arthur) (NNP Ernest) (NNP Percival))
+      (, ,)
+      (NP (-LRB- -LRB-)
+        (NP (CD 26) (NNP December) (CD 1887))
+        (PP (SYM –)
+          (NP (CD 31)))
+        (NP-TMP (NNP January) (CD 1966))
+        (-RRB- -RRB-)))
+    (VP (VBD was)
+      (NP (DT a) (JJ senior)
+        (NML (JJ British) (NNP Army))
+        (NN officer)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Lieutenant
+			name:	TITLE				0-0	Lieutenant 
+	1	-
+	2	General
+			name:	TITLE				2-2	General 
+	3	Arthur
+			name:	PERSON				3-5	Arthur Ernest Percival 
+	4	Ernest
+	5	Percival
+	6	,
+	7	(
+	8	26
+			name:	DATE				8-10	26 December 1887 
+	9	December
+	10	1887
+	11	–
+	12	31
+			name:	DATE				12-14	31 January 1966 
+	13	January
+	14	1966
+	15	)
+	16	was
+			sense:	be.v.02
+			prop:	be.01
+			V		16-16	was 
+			N-ARG-A1		0-15	Lieutenant - General Arthur Ernest Percival , ( 26 December 1887 – 31 January 1966 ) 
+			N-ARG-A2		17-21	a senior British Army officer 
+	17	a
+	18	senior
+			sense:	senior.a.01
+	19	British
+			name:	ORGANIZATION				19-20	British Army 
+	20	Army
+	21	officer
+			sense:	military_officer.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He saw service in the First World War and built a successful military career during the interwar period but is most noted for his defeat in the Second World War , when he commanded British Commonwealth forces during the Japanese Malayan Campaign and the subsequent Battle of Singapore .
+
+
+Treebanked sentence:
+--------------------
+He saw service in the First World War and built a successful military career during the interwar period but is most noted for his defeat in the Second World War , when he commanded British Commonwealth forces during the Japanese Malayan Campaign and the subsequent Battle of Singapore . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP
+        (VP (VBD saw)
+          (NP (NN service))
+          (PP (IN in)
+            (NP (DT the) (NNP First) (NNP World) (NNP War))))
+        (CC and)
+        (VP (VBD built)
+          (NP (DT a) (JJ successful) (NN military) (NN career))
+          (PP (IN during)
+            (NP (DT the) (JJ interwar) (NN period)))))
+      (CC but)
+      (VP (VBZ is)
+        (ADVP (RBS most))
+        (VP (VBN noted)
+          (PP (IN for)
+            (NP
+              (NP (PRP$ his) (NN defeat))
+              (PP (IN in)
+                (NP (DT the) (NNP Second) (NNP World) (NNP War)))))
+          (, ,)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP he))
+              (VP (VBD commanded)
+                (NP (JJ British) (NNP Commonwealth) (NNS forces))
+                (PP (IN during)
+                  (NP
+                    (NP (DT the) (JJ Japanese) (NNP Malayan) (NN Campaign))
+                    (CC and)
+                    (NP
+                      (NP (DT the) (JJ subsequent) (NN Battle))
+                      (PP (IN of)
+                        (NP (NNP Singapore))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	saw
+			sense:	experience.v.01
+			prop:	see.01
+			V		1-1	saw 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-2	service 
+	2	service
+			sense:	service.n.05
+	3	in
+	4	the
+			coref:	IDENT			0	4-7	the First World War 
+	5	First
+			name:	ORDINAL				5-5	First 
+	6	World
+			name:	MISC				6-6	World 
+	7	War
+			name:	CAUSE_OF_DEATH				7-7	War 
+	8	and
+	9	built
+			sense:	build_up.v.02
+			prop:	build.01
+			V		9-9	built 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		10-13	a successful military career 
+			N-ARGM-TMP		14-17	during the interwar period 
+	10	a
+	11	successful
+			sense:	successful.a.01
+	12	military
+			sense:	military.n.01
+	13	career
+			sense:	career.n.01
+	14	during
+	15	the
+	16	interwar
+	17	period
+			sense:	time_period.n.01
+	18	but
+	19	is
+			sense:	be.v.01
+			prop:	be.03
+			V		19-19	is 
+	20	most
+			sense:	most.r.01
+	21	noted
+			sense:	note.v.01
+			prop:	note.02
+			V		21-21	noted 
+			N-ARG-A1		0-0	He 
+			N-ARGM-EXT		20-20	most 
+			N-ARG-A2		22-47	for his defeat in the Second World War , when he commanded British Commonwealth forces during the Japanese Malayan Campaign and the subsequent Battle of Singapore 
+	22	for
+	23	his
+	24	defeat
+			sense:	defeat.n.01
+	25	in
+	26	the
+			coref:	IDENT			0	26-29	the Second World War 
+			name:	DATE				26-27	the Second 
+	27	Second
+	28	World
+			name:	MISC				28-28	World 
+	29	War
+			name:	CAUSE_OF_DEATH				29-29	War 
+	30	,
+	31	when
+	32	he
+	33	commanded
+			sense:	command.v.01
+			prop:	command.02
+			V		33-33	commanded 
+			N-ARGM-TMP		31-31	when 
+			N-ARG-A0		32-32	he 
+			N-ARG-A1		34-36	British Commonwealth forces 
+			N-ARGM-TMP		37-47	during the Japanese Malayan Campaign and the subsequent Battle of Singapore 
+	34	British
+			name:	NATIONALITY				34-34	British 
+	35	Commonwealth
+			name:	ORGANIZATION				35-35	Commonwealth 
+	36	forces
+			sense:	force.n.04
+	37	during
+	38	the
+	39	Japanese
+			name:	NATIONALITY				39-39	Japanese 
+	40	Malayan
+			name:	MISC				40-41	Malayan Campaign 
+	41	Campaign
+			sense:	campaign.n.03
+	42	and
+	43	the
+	44	subsequent
+			sense:	subsequent.a.01
+	45	Battle
+			sense:	battle.n.01
+	46	of
+	47	Singapore
+			name:	COUNTRY				47-47	Singapore 
+	48	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Percival 's surrender to the invading Imperial Japanese Army force , the largest surrender in British military history , undermined Britain 's prestige as an imperial power in East Asia .
+
+
+Treebanked sentence:
+--------------------
+Percival 's surrender to the invading Imperial Japanese Army force , the largest surrender in British military history , undermined Britain 's prestige as an imperial power in East Asia . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Percival) (POS 's))
+      (NN surrender))
+    (PP (IN to)
+      (NP (DT the)
+        (NML
+          (S
+            (VP (VBG invading)
+              (NP (NNP Imperial) (NNP Japanese) (NNP Army)))))
+        (NN force)))
+    (, ,)
+    (NP
+      (NP (DT the) (JJS largest) (NN surrender))
+      (PP (IN in)
+        (NP (JJ British) (JJ military) (NN history))))
+    (, ,)
+    (VP (VBN undermined)
+      (NP
+        (NP (NNP Britain) (POS 's))
+        (NN prestige))
+      (PP (IN as)
+        (NP (DT an) (JJ imperial) (NN power))))
+    (PP (IN in)
+      (NP (NNP East) (NNP Asia)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Percival
+			name:	PERSON				0-0	Percival 
+	1	's
+	2	surrender
+			sense:	capitulation.n.03
+	3	to
+	4	the
+	5	invading
+			sense:	invade.v.01
+			prop:	invade.01
+			V		5-5	invading 
+			N-ARG-A0		6-9	Imperial Japanese Army force 
+	6	Imperial
+			name:	ORGANIZATION				6-8	Imperial Japanese Army 
+	7	Japanese
+	8	Army
+	9	force
+			sense:	force.n.04
+	10	,
+	11	the
+	12	largest
+			sense:	large.a.01
+	13	surrender
+			sense:	capitulation.n.03
+	14	in
+	15	British
+			name:	NATIONALITY				15-15	British 
+	16	military
+			sense:	military.a.01
+	17	history
+			sense:	history.n.01
+	18	,
+	19	undermined
+			sense:	sabotage.v.01
+			prop:	undermine.01
+			V		19-19	undermined 
+			N-ARG-A0		0-18	Percival 's surrender to the invading Imperial Japanese Army force , the largest surrender in British military history , 
+			N-ARG-A1		20-29	Britain 's prestige as an imperial power in East Asia 
+	20	Britain
+			name:	COUNTRY				20-20	Britain 
+	21	's
+	22	prestige
+			sense:	prestige.n.01
+	23	as
+	24	an
+	25	imperial
+			sense:	imperial.a.01
+	26	power
+			sense:	world_power.n.01
+	27	in
+	28	East
+	29	Asia
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His defenders , such as Sir John Smyth , have argued that under - funding of Malaya 's defences and the inexperienced , under - equipped nature of the Commonwealth army , not Percival 's leadership , were ultimately to blame .
+
+
+Treebanked sentence:
+--------------------
+His defenders , such as Sir John Smyth , have argued that under - funding of Malaya 's defences and the inexperienced , under - equipped nature of the Commonwealth army , not Percival 's leadership , were ultimately to blame . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ His) (NNS defenders))
+      (, ,)
+      (PP (JJ such) (IN as)
+        (NP (NNP Sir) (NNP John) (NNP Smyth)))
+      (, ,))
+    (VP (VBP have)
+      (VP (VBN argued)
+        (SBAR (IN that)
+          (S
+            (PP (IN under)
+              (NP
+                (NP
+                  (NP (HYPH -) (NN funding))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNP Malaya) (POS 's))
+                      (NNS defences))))
+                (CC and)
+                (NP
+                  (NP (DT the) (JJ inexperienced) (, ,)
+                    (ADJP
+                      (ADVP (IN under))
+                      (HYPH -) (VBN equipped))
+                    (NN nature))
+                  (PP (IN of)
+                    (NP (DT the) (NNP Commonwealth) (NN army))))))
+            (, ,)
+            (NAC (RB not)
+              (NP
+                (NP (NNP Percival) (POS 's))
+                (NN leadership)))
+            (, ,)
+            (VP (VBD were)
+              (ADVP (RB ultimately))
+              (S
+                (VP (TO to)
+                  (VP (VB blame)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+	1	defenders
+			sense:	defender.n.01
+	2	,
+	3	such
+			sense:	such.s.01
+	4	as
+	5	Sir
+	6	John
+			name:	PERSON				6-7	John Smyth 
+	7	Smyth
+	8	,
+	9	have
+			sense:	have.v.01
+			prop:	have.01
+			V		9-9	have 
+	10	argued
+			sense:	argue.v.01
+			prop:	argue.01
+			V		10-10	argued 
+			N-ARG-A0		0-7	His defenders , such as Sir John Smyth 
+			N-ARG-A1		11-40	that under - funding of Malaya 's defences and the inexperienced , under - equipped nature of the Commonwealth army , not Percival 's leadership , were ultimately to blame 
+	11	that
+	12	under
+	13	-
+	14	funding
+			sense:	support.n.11
+	15	of
+	16	Malaya
+			name:	COUNTRY				16-16	Malaya 
+	17	's
+	18	defences
+			sense:	defense.n.01
+	19	and
+	20	the
+	21	inexperienced
+			sense:	inexperienced.a.01
+	22	,
+	23	under
+	24	-
+	25	equipped
+			sense:	equip.v.01
+			prop:	equip.01
+			V		25-25	equipped 
+			N-ARGM-EXT		23-23	under 
+			N-ARG-A1		26-26	nature 
+	26	nature
+			sense:	nature.n.01
+	27	of
+	28	the
+	29	Commonwealth
+	30	army
+			sense:	army.n.01
+	31	,
+	32	not
+			sense:	not.r.01
+	33	Percival
+			name:	PERSON				33-33	Percival 
+	34	's
+	35	leadership
+			sense:	leadership.n.01
+	36	,
+	37	were
+			sense:	be.v.01
+			prop:	be.01
+			V		37-37	were 
+			N-ARG-A1		12-36	under - funding of Malaya 's defences and the inexperienced , under - equipped nature of the Commonwealth army , not Percival 's leadership , 
+			N-ARGM-TMP		38-38	ultimately 
+			N-ARG-A2		39-40	to blame 
+	38	ultimately
+			sense:	ultimately.r.01
+	39	to
+	40	blame
+			sense:	blame.v.03
+			prop:	blame.01
+			V		40-40	blame 
+			N-ARG-A1		12-36	under - funding of Malaya 's defences and the inexperienced , under - equipped nature of the Commonwealth army , not Percival 's leadership , 
+	41	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.4-7	the First World War 
+				1.26-29	the Second World War 
+

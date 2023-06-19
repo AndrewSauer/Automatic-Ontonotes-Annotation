@@ -1,0 +1,854 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mary Elizabeth Anania Edwards ( July 3 , 1949 – December 7 , 2010 ) was an American attorney , a best - selling author and a health care activist .
+
+
+Treebanked sentence:
+--------------------
+Mary Elizabeth Anania Edwards ( July 3 , 1949 – December 7 , 2010 ) was an American attorney , a best - selling author and a health care activist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Mary) (NNP Elizabeth) (NNP Anania) (NNP Edwards))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP July) (CD 3) (, ,) (CD 1949))
+        (PP (SYM –)
+          (NP (NNP December) (CD 7) (, ,) (CD 2010))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (JJ American) (NN attorney))
+        (, ,)
+        (NP
+          (NP (DT a)
+            (ADJP (RBS best) (HYPH -) (VBG selling))
+            (NN author))
+          (CC and)
+          (NP (DT a)
+            (NML (NN health) (NN care))
+            (NN activist)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mary
+			coref:	IDENT			2	0-3	Mary Elizabeth Anania Edwards 
+			name:	PERSON				0-3	Mary Elizabeth Anania Edwards 
+	1	Elizabeth
+	2	Anania
+	3	Edwards
+	4	(
+	5	July
+			name:	DATE				5-8	July 3 , 1949 
+	6	3
+	7	,
+	8	1949
+	9	–
+	10	December
+			name:	DATE				10-13	December 7 , 2010 
+	11	7
+	12	,
+	13	2010
+	14	)
+	15	was
+			sense:	be.v.02
+			prop:	be.01
+			V		15-15	was 
+			N-ARG-A1		0-14	Mary Elizabeth Anania Edwards ( July 3 , 1949 – December 7 , 2010 ) 
+			N-ARG-A2		16-29	an American attorney , a best - selling author and a health care activist 
+	16	an
+	17	American
+			name:	NATIONALITY				17-17	American 
+	18	attorney
+			name:	TITLE				18-18	attorney 
+			sense:	lawyer.n.01
+	19	,
+	20	a
+	21	best
+			sense:	well.r.02
+	22	-
+	23	selling
+			sense:	sell.v.02
+			prop:	sell.01
+			V		23-23	selling 
+			N-ARGM-ADV		21-21	best 
+			N-ARG-A0		24-24	author 
+	24	author
+			name:	TITLE				24-24	author 
+			sense:	writer.n.01
+	25	and
+	26	a
+	27	health
+			sense:	health.n.01
+	28	care
+			sense:	care.n.01
+	29	activist
+			name:	TITLE				29-29	activist 
+			sense:	militant.n.01
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She was married to John Edwards , the former U.S. 
+
+
+Treebanked sentence:
+--------------------
+She was married to John Edwards , the former U.S. Senator from North Carolina who was the 2004 United States Democratic vice - presidential nominee . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD was)
+      (VP (VBN married)
+        (PP (IN to)
+          (NP
+            (NP (NNP John) (NNP Edwards))
+            (, ,)
+            (NP (DT the) (JJ former) (NNP U.S.) (NNP Senator))))
+        (PP (IN from)
+          (NP
+            (NP (NNP North) (NNP Carolina))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD was)
+                  (NP (DT the) (CD 2004)
+                    (NML
+                      (NML
+                        (NML (NNP United) (NNP States))
+                        (JJ Democratic) (NN vice))
+                      (HYPH -)
+                      (NML (JJ presidential) (NN nominee)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-24	married to John Edwards , the former U.S. Senator from North Carolina who was the 2004 United States Democratic vice - presidential nominee 
+	2	married
+			sense:	marry.v.01
+			prop:	arrive.01
+			V		2-2	married 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		3-24	to John Edwards , the former U.S. Senator from North Carolina who was the 2004 United States Democratic vice - presidential nominee 
+	3	to
+	4	John
+			coref:	IDENT			2	4-10	John Edwards , the former U.S. Senator 
+			name:	PERSON				4-5	John Edwards 
+	5	Edwards
+	6	,
+	7	the
+	8	former
+			sense:	erstwhile.s.01
+	9	U.S.
+			name:	COUNTRY				9-9	U.S. 
+	10	Senator
+			name:	TITLE				10-10	Senator 
+	11	from
+	12	North
+			name:	STATE_OR_PROVINCE				12-13	North Carolina 
+	13	Carolina
+	14	who
+	15	was
+			sense:	be.v.02
+			prop:	be.01
+			V		15-15	was 
+			N-ARG-A1		7-13	the former U.S. Senator from North Carolina 
+			R-ARG-A1		14-14	who 
+			N-ARG-A2		16-24	the 2004 United States Democratic vice - presidential nominee 
+	16	the
+	17	2004
+			name:	DATE				17-17	2004 
+	18	United
+			name:	COUNTRY				18-19	United States 
+	19	States
+	20	Democratic
+			name:	IDEOLOGY				20-20	Democratic 
+			sense:	democratic.a.02
+	21	vice
+			sense:	frailty.n.02
+	22	-
+	23	presidential
+			sense:	presidential.a.01
+	24	nominee
+			sense:	campaigner.n.01
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Edwards lived a private life until her husband 's rise as senator and ultimately unsuccessful vice presidential and presidential campaigns .
+
+
+Treebanked sentence:
+--------------------
+Edwards lived a private life until her husband 's rise as senator and ultimately unsuccessful vice presidential and presidential campaigns . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Edwards))
+    (VP (VBD lived)
+      (NP (DT a) (JJ private) (NN life))
+      (PP (IN until)
+        (NP
+          (NP (PRP$ her) (NN husband) (POS 's))
+          (NN rise)))
+      (PP (IN as)
+        (NP
+          (NP (NN senator))
+          (CC and)
+          (NP
+            (ADJP (RB ultimately) (JJ unsuccessful))
+            (NN vice)
+            (ADJP (JJ presidential)
+              (CC and)
+              (JJ presidential))
+            (NNS campaigns)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Edwards
+			coref:	IDENT			2	0-0	Edwards 
+			name:	PERSON				0-0	Edwards 
+	1	lived
+			sense:	live.v.02
+			prop:	live.01
+			V		1-1	lived 
+			N-ARG-A0		0-0	Edwards 
+			N-ARG-A1		2-4	a private life 
+			N-ARGM-TMP		5-19	until her husband 's rise as senator and ultimately unsuccessful vice presidential and presidential campaigns 
+	2	a
+	3	private
+			sense:	private.a.01
+	4	life
+			sense:	life.n.01
+	5	until
+	6	her
+			coref:	IDENT			0	6-6	her 
+			coref:	IDENT			1	6-8	her husband 's 
+	7	husband
+			sense:	husband.n.01
+	8	's
+	9	rise
+			sense:	rise.n.01
+	10	as
+	11	senator
+			name:	TITLE				11-11	senator 
+			sense:	senator.n.01
+	12	and
+	13	ultimately
+			sense:	ultimately.r.01
+	14	unsuccessful
+			sense:	unsuccessful.a.01
+	15	vice
+			sense:	frailty.n.02
+	16	presidential
+			sense:	presidential.a.01
+	17	and
+	18	presidential
+			sense:	presidential.a.01
+	19	campaigns
+			sense:	political_campaign.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She was his chief policy advisor during his presidential bid , and was instrumental in pushing him towards more liberal stances on subjects such as universal health care .
+
+
+Treebanked sentence:
+--------------------
+She was his chief policy advisor during his presidential bid , and was instrumental in pushing him towards more liberal stances on subjects such as universal health care . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP
+      (VP (VBD was)
+        (NP (PRP$ his) (JJ chief) (NN policy) (NN advisor))
+        (PP (IN during)
+          (NP (PRP$ his) (JJ presidential) (NN bid))))
+      (, ,)
+      (CC and)
+      (VP (VBD was)
+        (ADJP (JJ instrumental)
+          (PP (IN in)
+            (S
+              (VP (VBG pushing)
+                (NP (PRP him))
+                (PP (IN towards)
+                  (NP
+                    (NP (JJR more) (JJ liberal) (NNS stances))
+                    (PP (IN on)
+                      (NP
+                        (NP (NNS subjects))
+                        (PP (JJ such) (IN as)
+                          (NP (JJ universal)
+                            (NML (NN health) (NN care))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-5	his chief policy advisor 
+			N-ARGM-TMP		6-9	during his presidential bid 
+	2	his
+			coref:	IDENT			2	2-2	his 
+	3	chief
+			sense:	chief.s.01
+	4	policy
+			sense:	policy.n.02
+	5	advisor
+			sense:	adviser.n.01
+	6	during
+	7	his
+			coref:	IDENT			2	7-7	his 
+	8	presidential
+			sense:	presidential.a.01
+	9	bid
+			sense:	bid.n.02
+	10	,
+	11	and
+	12	was
+			sense:	be.v.01
+			prop:	be.01
+			V		12-12	was 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		13-27	instrumental in pushing him towards more liberal stances on subjects such as universal health care 
+	13	instrumental
+			sense:	implemental.s.01
+	14	in
+	15	pushing
+			sense:	push.v.02
+			prop:	push.02
+			V		15-15	pushing 
+			N-ARG-A1		16-16	him 
+			N-ARG-A2		17-27	towards more liberal stances on subjects such as universal health care 
+	16	him
+			coref:	IDENT			2	16-16	him 
+	17	towards
+	18	more
+			sense:	more.a.01
+	19	liberal
+			name:	IDEOLOGY				19-19	liberal 
+			sense:	liberal.s.02
+	20	stances
+			sense:	position.n.12
+	21	on
+	22	subjects
+			sense:	subject.n.01
+	23	such
+			sense:	such.s.01
+	24	as
+	25	universal
+			sense:	cosmopolitan.s.03
+	26	health
+			sense:	health.n.01
+	27	care
+			sense:	care.n.01
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She was also an advocate of gay marriage and was against the war in Iraq , both topics about which she and her husband disagreed .
+
+
+Treebanked sentence:
+--------------------
+She was also an advocate of gay marriage and was against the war in Iraq , both topics about which she and her husband disagreed . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP
+      (VP (VBD was)
+        (ADVP (RB also))
+        (NP
+          (NP (DT an) (NN advocate))
+          (PP (IN of)
+            (NP (JJ gay) (NN marriage)))))
+      (CC and)
+      (VP (VBD was)
+        (PP (IN against)
+          (NP
+            (NP
+              (NP (DT the) (NN war))
+              (PP (IN in)
+                (NP (NNP Iraq))))
+            (, ,)
+            (CC both)
+            (NP
+              (NP (NNS topics))
+              (SBAR
+                (WHPP (IN about)
+                  (WHNP (WDT which)))
+                (S
+                  (NP
+                    (NP (PRP she))
+                    (CC and)
+                    (NP (PRP$ her) (NN husband)))
+                  (VP (VBD disagreed)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	She 
+			N-ARGM-ADV		2-2	also 
+			N-ARG-A2		3-7	an advocate of gay marriage 
+	2	also
+			sense:	besides.r.02
+	3	an
+	4	advocate
+			sense:	advocate.n.01
+	5	of
+	6	gay
+			sense:	gay.s.06
+	7	marriage
+			sense:	marriage.n.01
+	8	and
+	9	was
+			sense:	be.v.01
+			prop:	be.01
+			V		9-9	was 
+			N-ARG-A1		0-0	She 
+			N-ARGM-ADV		2-2	also 
+			N-ARG-A2		10-14	against the war in Iraq 
+			N-ARGM-ADV		16-24	both topics about which she and her husband disagreed 
+	10	against
+	11	the
+	12	war
+			name:	CAUSE_OF_DEATH				12-12	war 
+			sense:	war.n.01
+	13	in
+	14	Iraq
+			name:	COUNTRY				14-14	Iraq 
+	15	,
+	16	both
+	17	topics
+			sense:	subject.n.01
+	18	about
+	19	which
+	20	she
+			coref:	IDENT			0	20-20	she 
+	21	and
+			coref:	IDENT			1	21-23	and her husband 
+	22	her
+			coref:	IDENT			0	22-22	her 
+	23	husband
+			sense:	husband.n.01
+	24	disagreed
+			sense:	disagree.v.01
+			prop:	disagree.01
+			V		24-24	disagreed 
+			N-ARG-A2		16-17	both topics 
+			R-ARG-A2		18-19	about which 
+			N-ARG-A0		20-23	she and her husband 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the final years of her life , Edwards publicly dealt with her husband 's admission of an extramarital affair and her breast cancer , writing two books and making numerous media appearances .
+
+
+Treebanked sentence:
+--------------------
+In the final years of her life , Edwards publicly dealt with her husband 's admission of an extramarital affair and her breast cancer , writing two books and making numerous media appearances . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (DT the) (JJ final) (NNS years))
+        (PP (IN of)
+          (NP (PRP$ her) (NN life)))))
+    (, ,)
+    (NP (NNP Edwards))
+    (ADVP (RB publicly))
+    (VP (VBD dealt)
+      (PP (IN with)
+        (NP
+          (NP
+            (NP (PRP$ her) (NN husband) (POS 's))
+            (NN admission))
+          (PP (IN of)
+            (NP
+              (NP (DT an) (JJ extramarital) (NN affair))
+              (CC and)
+              (NP (PRP$ her) (NN breast) (NN cancer))))))
+      (, ,)
+      (S
+        (VP
+          (VP (VBG writing)
+            (NP (CD two) (NNS books)))
+          (CC and)
+          (VP (VBG making)
+            (NP (JJ numerous) (NNS media) (NNS appearances))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+			name:	DURATION				1-3	the final years 
+	2	final
+			sense:	concluding.s.01
+	3	years
+			sense:	year.n.01
+	4	of
+	5	her
+			coref:	IDENT			0	5-5	her 
+	6	life
+			sense:	life.n.05
+	7	,
+	8	Edwards
+			coref:	IDENT			2	8-8	Edwards 
+			name:	PERSON				8-8	Edwards 
+	9	publicly
+			sense:	publicly.r.01
+	10	dealt
+			sense:	cover.v.05
+			prop:	deal.01
+			V		10-10	dealt 
+			N-ARGM-TMP		0-6	In the final years of her life 
+			N-ARG-A0		8-8	Edwards 
+			N-ARGM-MNR		9-9	publicly 
+			N-ARG-A1		11-23	with her husband 's admission of an extramarital affair and her breast cancer 
+			N-ARGM-PRD		25-32	writing two books and making numerous media appearances 
+	11	with
+	12	her
+			coref:	IDENT			0	12-12	her 
+			coref:	IDENT			1	12-14	her husband 's 
+	13	husband
+			sense:	husband.n.01
+	14	's
+	15	admission
+			sense:	admission.n.02
+	16	of
+	17	an
+	18	extramarital
+			sense:	adulterous.s.01
+	19	affair
+			sense:	affair.n.02
+	20	and
+	21	her
+			coref:	IDENT			0	21-21	her 
+	22	breast
+			name:	CAUSE_OF_DEATH				22-23	breast cancer 
+			sense:	breast.n.02
+	23	cancer
+			sense:	cancer.n.01
+	24	,
+	25	writing
+			sense:	publish.v.03
+			prop:	write.01
+			V		25-25	writing 
+			N-ARG-A0		8-8	Edwards 
+			N-ARG-A1		26-27	two books 
+	26	two
+			name:	NUMBER				26-26	two 
+	27	books
+			sense:	book.n.01
+	28	and
+	29	making
+			sense:	make.v.01
+			prop:	make.01
+			V		29-29	making 
+			N-ARG-A0		8-8	Edwards 
+			N-ARG-A1		30-32	numerous media appearances 
+	30	numerous
+			sense:	numerous.s.01
+	31	media
+	32	appearances
+			sense:	appearance.n.05
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She separated from John Edwards in early 2010 .
+
+
+Treebanked sentence:
+--------------------
+She separated from John Edwards in early 2010 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD separated)
+      (PP (IN from)
+        (NP
+          (NP (NNP John) (NNP Edwards))
+          (PP (IN in)
+            (NP (JJ early) (CD 2010))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	separated
+			sense:	separate.v.08
+			prop:	separate.01
+			V		1-1	separated 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-4	from John Edwards 
+			N-ARGM-TMP		5-7	in early 2010 
+	2	from
+	3	John
+			coref:	IDENT			2	3-4	John Edwards 
+			name:	PERSON				3-4	John Edwards 
+	4	Edwards
+	5	in
+	6	early
+			name:	DATE				6-7	early 2010 
+			sense:	early.a.01
+	7	2010
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On December 6 , 2010 , her family announced that her cancer had spread and her doctors had recommended that further treatment would be unproductive .
+
+
+Treebanked sentence:
+--------------------
+On December 6 , 2010 , her family announced that her cancer had spread and her doctors had recommended that further treatment would be unproductive . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NNP December) (CD 6) (, ,) (CD 2010)))
+    (, ,)
+    (NP (PRP$ her) (NN family))
+    (VP (VBD announced)
+      (SBAR (IN that)
+        (S
+          (S
+            (NP (PRP$ her) (NN cancer))
+            (VP (VBD had)
+              (VP (VBN spread))))
+          (CC and)
+          (S
+            (NP (PRP$ her) (NNS doctors))
+            (VP (VBD had)
+              (VP (VBN recommended)
+                (SBAR (IN that)
+                  (S
+                    (NP (JJ further) (NN treatment))
+                    (VP (MD would)
+                      (VP (VB be)
+                        (ADJP (JJ unproductive))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	December
+			name:	DATE				1-4	December 6 , 2010 
+	2	6
+	3	,
+	4	2010
+	5	,
+	6	her
+			coref:	IDENT			0	6-6	her 
+	7	family
+			sense:	family.n.01
+	8	announced
+			sense:	announce.v.01
+			prop:	announce.01
+			V		8-8	announced 
+			N-ARGM-TMP		0-4	On December 6 , 2010 
+			N-ARG-A0		6-7	her family 
+			N-ARG-A1		9-24	that her cancer had spread and her doctors had recommended that further treatment would be unproductive 
+	9	that
+	10	her
+			coref:	IDENT			0	10-10	her 
+	11	cancer
+			name:	CAUSE_OF_DEATH				11-11	cancer 
+			sense:	cancer.n.01
+	12	had
+			sense:	suffer.v.02
+			prop:	have.01
+			V		12-12	had 
+	13	spread
+			sense:	spread.v.02
+			prop:	spread.02
+			V		13-13	spread 
+			N-ARG-A1		10-11	her cancer 
+	14	and
+	15	her
+			coref:	IDENT			0	15-15	her 
+	16	doctors
+			sense:	doctor.n.01
+	17	had
+			sense:	experience.v.03
+			prop:	have.01
+			V		17-17	had 
+	18	recommended
+			sense:	recommend.v.01
+			prop:	recommend.01
+			V		18-18	recommended 
+			N-ARG-A0		15-16	her doctors 
+			N-ARG-A1		19-24	that further treatment would be unproductive 
+	19	that
+	20	further
+			sense:	further.s.01
+	21	treatment
+			sense:	treatment.n.01
+	22	would
+	23	be
+			sense:	be.v.01
+			prop:	be.01
+			V		23-23	be 
+			N-ARG-A1		20-21	further treatment 
+			N-ARGM-MOD		22-22	would 
+			N-ARG-A2		24-24	unproductive 
+	24	unproductive
+			sense:	unproductive.s.02
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She died the following day .
+
+
+Treebanked sentence:
+--------------------
+She died the following day . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD died)
+      (NP (DT the) (VBG following) (NN day)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	She 
+			N-ARGM-TMP		2-4	the following day 
+	2	the
+			name:	DATE				2-4	the following day 
+	3	following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		3-3	following 
+			N-ARG-A1		4-4	day 
+	4	day
+			sense:	day.n.01
+	5	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.0-0	She 
+				2.6-6	her 
+				3.0-0	She 
+				4.0-0	She 
+				4.20-20	she 
+				4.22-22	her 
+				5.5-5	her 
+				5.12-12	her 
+				5.21-21	her 
+				6.0-0	She 
+				7.6-6	her 
+				7.10-10	her 
+				7.15-15	her 
+				8.0-0	She 
+	Chain 1 (IDENT)
+				4.21-23	and her husband 
+				2.6-8	her husband 's 
+				5.12-14	her husband 's 
+	Chain 2 (IDENT)
+				0.0-3	Mary Elizabeth Anania Edwards 
+				1.4-10	John Edwards , the former U.S. Senator 
+				2.0-0	Edwards 
+				3.2-2	his 
+				3.7-7	his 
+				3.16-16	him 
+				5.8-8	Edwards 
+				6.3-4	John Edwards 
+

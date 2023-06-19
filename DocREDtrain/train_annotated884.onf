@@ -1,0 +1,1096 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Medical Center is an island platformed Washington Metro station in Bethesda , Maryland , United States .
+
+
+Treebanked sentence:
+--------------------
+Medical Center is an island platformed Washington Metro station in Bethesda , Maryland , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Medical) (NNP Center))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN island))
+        (SBAR
+          (S
+            (VP (VBD platformed)
+              (NP
+                (NML (NNP Washington) (NNP Metro))
+                (NN station))
+              (PP (IN in)
+                (NP
+                  (NML (NNP Bethesda) (, ,) (NNP Maryland) (, ,))
+                  (NNP United) (NNP States))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Medical
+			name:	ORGANIZATION				0-1	Medical Center 
+	1	Center
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Medical Center 
+			N-ARG-A2		3-15	an island platformed Washington Metro station in Bethesda , Maryland , United States 
+	3	an
+	4	island
+			sense:	island.n.02
+	5	platformed
+			prop:	perform.01
+			V		5-5	platformed 
+			N-ARG-A2		4-4	island 
+			N-ARG-A1		6-8	Washington Metro station 
+	6	Washington
+			coref:	IDENT			4	6-8	Washington Metro station 
+			name:	STATE_OR_PROVINCE				6-6	Washington 
+	7	Metro
+			name:	CITY				7-7	Metro 
+	8	station
+			sense:	station.n.01
+	9	in
+	10	Bethesda
+			coref:	IDENT			0	10-10	Bethesda 
+			name:	CITY				10-10	Bethesda 
+	11	,
+	12	Maryland
+			name:	STATE_OR_PROVINCE				12-12	Maryland 
+	13	,
+	14	United
+			name:	COUNTRY				14-15	United States 
+	15	States
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The station was opened on August 25 , 1984 , and is operated by the Washington Metropolitan Area Transit Authority ( WMATA ) .
+
+
+Treebanked sentence:
+--------------------
+The station was opened on August 25 , 1984 , and is operated by the Washington Metropolitan Area Transit Authority ( WMATA ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN station))
+    (VP
+      (VP (VBD was)
+        (VP (VBN opened)
+          (PP (IN on)
+            (NP (NNP August) (CD 25) (, ,) (CD 1984) (, ,)))))
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN operated)
+          (PP (IN by)
+            (NP (DT the) (NNP Washington)
+              (NML (NNP Metropolitan) (NNP Area) (NNP Transit))
+              (NNP Authority)))
+          (PRN (-LRB- -LRB-)
+            (NP (NNP WMATA))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			4	0-1	The station 
+	1	station
+			sense:	station.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	opened
+			sense:	open.v.02
+			prop:	open.01
+			V		3-3	opened 
+			N-ARG-A1		0-1	The station 
+			N-ARGM-TMP		4-8	on August 25 , 1984 
+	4	on
+	5	August
+			coref:	IDENT			2	5-8	August 25 , 1984 
+			name:	DATE				5-8	August 25 , 1984 
+	6	25
+	7	,
+	8	1984
+	9	,
+	10	and
+	11	is
+			sense:	be.v.01
+			prop:	be.03
+			V		11-11	is 
+	12	operated
+			sense:	operate.v.01
+			prop:	operate.01
+			V		12-12	operated 
+			N-ARG-A1		0-1	The station 
+			N-ARG-A0		13-22	by the Washington Metropolitan Area Transit Authority ( WMATA ) 
+	13	by
+	14	the
+	15	Washington
+			name:	ORGANIZATION				15-19	Washington Metropolitan Area Transit Authority 
+	16	Metropolitan
+	17	Area
+	18	Transit
+	19	Authority
+	20	(
+	21	WMATA
+	22	)
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Providing service for the Red Line , the station serves the National Institutes of Health campus and the Walter Reed National Military Medical Center and is located at Rockville Pike and South Drive .
+
+
+Treebanked sentence:
+--------------------
+Providing service for the Red Line , the station serves the National Institutes of Health campus and the Walter Reed National Military Medical Center and is located at Rockville Pike and South Drive . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBG Providing)
+        (NP (NN service))
+        (PP (IN for)
+          (NP (DT the) (NNP Red) (NNP Line)))))
+    (, ,)
+    (NP (DT the) (NN station))
+    (VP
+      (VP (VBZ serves)
+        (NP
+          (NP (DT the)
+            (NML
+              (NML (NNP National) (NNPS Institutes))
+              (PP (IN of)
+                (NP (NNP Health))))
+            (NN campus))
+          (CC and)
+          (NP (DT the) (NNP Walter)
+            (NML (NNP Reed) (NNP National) (NNP Military) (NNP Medical))
+            (NNP Center))))
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN located)
+          (PP (IN at)
+            (NP
+              (NP (NNP Rockville) (NNP Pike))
+              (CC and)
+              (NP (NNP South) (NNP Drive)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Providing
+			sense:	supply.v.01
+			prop:	provide.01
+			V		0-0	Providing 
+			N-ARG-A1		1-1	service 
+			N-ARG-A2		2-5	for the Red Line 
+			N-ARG-A0		7-8	the station 
+	1	service
+			sense:	service.n.01
+	2	for
+	3	the
+	4	Red
+	5	Line
+	6	,
+	7	the
+			coref:	IDENT			4	7-8	the station 
+	8	station
+			sense:	station.n.01
+	9	serves
+			sense:	service.v.01
+			prop:	serve.01
+			V		9-9	serves 
+			R-ARG-A0		0-5	Providing service for the Red Line 
+			N-ARG-A0		7-8	the station 
+			N-ARG-A2		10-23	the National Institutes of Health campus and the Walter Reed National Military Medical Center 
+	10	the
+	11	National
+			name:	ORGANIZATION				11-14	National Institutes of Health 
+	12	Institutes
+	13	of
+	14	Health
+	15	campus
+			sense:	campus.n.01
+	16	and
+	17	the
+	18	Walter
+			name:	ORGANIZATION				18-23	Walter Reed National Military Medical Center 
+	19	Reed
+	20	National
+	21	Military
+	22	Medical
+	23	Center
+	24	and
+	25	is
+			sense:	be.v.01
+			prop:	be.03
+			V		25-25	is 
+	26	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		26-26	located 
+			N-ARGM-PRD		0-5	Providing service for the Red Line 
+			N-ARG-A1		7-8	the station 
+			N-ARGM-LOC		27-32	at Rockville Pike and South Drive 
+	27	at
+	28	Rockville
+			coref:	IDENT			1	28-32	Rockville Pike and South Drive 
+			name:	CITY				28-28	Rockville 
+	29	Pike
+			name:	LOCATION				29-29	Pike 
+	30	and
+	31	South
+			name:	LOCATION				31-32	South Drive 
+	32	Drive
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Since there is little retail in the area and no commuter parking lot , this station is used almost exclusively by employees and visitors to those two institutions .
+
+
+Treebanked sentence:
+--------------------
+Since there is little retail in the area and no commuter parking lot , this station is used almost exclusively by employees and visitors to those two institutions . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN Since)
+      (S
+        (NP (EX there))
+        (VP (VBZ is)
+          (ADJP
+            (NP (JJ little))
+            (JJ retail)
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN area))
+                (CC and)
+                (NP (DT no) (NN commuter) (NN parking) (NN lot))))))))
+    (, ,)
+    (NP (DT this) (NN station))
+    (VP (VBZ is)
+      (VP (VBN used)
+        (ADVP (RB almost) (RB exclusively))
+        (PP (IN by)
+          (NP (NNS employees)
+            (CC and)
+            (NNS visitors)))
+        (PP (IN to)
+          (NP (DT those) (CD two) (NNS institutions)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Since
+	1	there
+	2	is
+			sense:	exist.v.01
+			prop:	be.02
+			V		2-2	is 
+			N-ARG-A1		3-12	little retail in the area and no commuter parking lot 
+	3	little
+			sense:	little.a.02
+	4	retail
+	5	in
+	6	the
+	7	area
+			sense:	area.n.01
+	8	and
+	9	no
+	10	commuter
+			sense:	commuter.n.02
+	11	parking
+			sense:	parking.n.01
+	12	lot
+			sense:	lot.n.02
+	13	,
+	14	this
+			coref:	IDENT			4	14-15	this station 
+	15	station
+			sense:	station.n.01
+	16	is
+			sense:	be.v.01
+			prop:	be.03
+			V		16-16	is 
+	17	used
+			sense:	use.v.01
+			prop:	use.01
+			V		17-17	used 
+			N-ARGM-CAU		0-12	Since there is little retail in the area and no commuter parking lot 
+			N-ARG-A1		14-15	this station 
+			N-ARGM-ADV		18-19	almost exclusively 
+			N-ARG-A0		20-27	by employees and visitors to those two institutions 
+	18	almost
+			sense:	about.r.07
+	19	exclusively
+			sense:	entirely.r.02
+	20	by
+	21	employees
+			sense:	employee.n.01
+	22	and
+	23	visitors
+			sense:	visitor.n.01
+	24	to
+	25	those
+	26	two
+			name:	NUMBER				26-26	two 
+	27	institutions
+			sense:	institution.n.01
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The station opened on August 25 , 1984 .
+
+
+Treebanked sentence:
+--------------------
+The station opened on August 25 , 1984 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN station))
+    (VP (VBD opened)
+      (PP (IN on)
+        (NP (NNP August) (CD 25) (, ,) (CD 1984))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			4	0-1	The station 
+	1	station
+			sense:	station.n.01
+	2	opened
+			sense:	open.v.02
+			prop:	open.01
+			V		2-2	opened 
+			N-ARG-A1		0-1	The station 
+			N-ARGM-TMP		3-7	on August 25 , 1984 
+	3	on
+	4	August
+			coref:	IDENT			2	4-7	August 25 , 1984 
+			name:	DATE				4-7	August 25 , 1984 
+	5	25
+	6	,
+	7	1984
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Its opening coincided with the completion of of rail northwest of the Van Ness – UDC station and the opening of the Bethesda , Friendship Heights , Grosvenor and Tenleytown stations .
+
+
+Treebanked sentence:
+--------------------
+Its opening coincided with the completion of of rail northwest of the Van Ness – UDC station and the opening of the Bethesda , Friendship Heights , Grosvenor and Tenleytown stations . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ Its) (NN opening))
+    (VP (VBD coincided)
+      (PP (IN with)
+        (NP
+          (NP (DT the) (NN completion))
+          (PP (IN of) (IN of)
+            (NP
+              (NP
+                (NP (NN rail) (NN northwest))
+                (PP (IN of)
+                  (NP (DT the)
+                    (NML (NNP Van) (NNP Ness) (HYPH –) (NNP UDC))
+                    (NN station))))
+              (CC and)
+              (NP
+                (NP (DT the) (NN opening))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NNP Bethesda))
+                    (, ,)
+                    (NP (NNP Friendship) (NNP Heights))
+                    (, ,)
+                    (NP (NNP Grosvenor))
+                    (CC and)
+                    (NP (NNP Tenleytown) (NNS stations))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Its
+			coref:	IDENT			4	0-0	Its 
+	1	opening
+			sense:	opening.n.02
+	2	coincided
+			sense:	concur.v.02
+			prop:	coincide.01
+			V		2-2	coincided 
+			N-ARG-A1		3-30	with the completion of of rail northwest of the Van Ness – UDC station and the opening of the Bethesda , Friendship Heights , Grosvenor and Tenleytown stations 
+	3	with
+	4	the
+	5	completion
+			sense:	completion.n.02
+	6	of
+	7	of
+	8	rail
+			sense:	rail.n.02
+	9	northwest
+			sense:	northwest.n.03
+	10	of
+	11	the
+			coref:	IDENT			4	11-16	the Van Ness – UDC station 
+	12	Van
+	13	Ness
+	14	–
+	15	UDC
+	16	station
+			sense:	station.n.01
+	17	and
+	18	the
+	19	opening
+			sense:	opening.n.02
+	20	of
+	21	the
+			coref:	IDENT			0	21-22	the Bethesda 
+	22	Bethesda
+			name:	CITY				22-22	Bethesda 
+	23	,
+	24	Friendship
+	25	Heights
+	26	,
+	27	Grosvenor
+			name:	PERSON				27-27	Grosvenor 
+	28	and
+	29	Tenleytown
+	30	stations
+			sense:	station.n.01
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In September 2009 , Montgomery County submitted a $ 20 million federal grant application to build a pedestrian tunnel under Rockville Pike to improve access to the Medical Center stop from Walter Reed Medical Center .
+
+
+Treebanked sentence:
+--------------------
+In September 2009 , Montgomery County submitted a $ 20 million federal grant application to build a pedestrian tunnel under Rockville Pike to improve access to the Medical Center stop from Walter Reed Medical Center . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP September) (CD 2009)))
+    (, ,)
+    (NP (NNP Montgomery) (NNP County))
+    (VP (VBD submitted)
+      (NP (DT a)
+        (NML
+          (QP ($ $) (CD 20) (CD million)))
+        (NML (JJ federal) (NN grant))
+        (NN application))
+      (S
+        (VP (TO to)
+          (VP (VB build)
+            (NP (DT a) (NN pedestrian) (NN tunnel))
+            (PP (IN under)
+              (NP (NNP Rockville) (NNP Pike)))
+            (S
+              (VP (TO to)
+                (VP (VB improve)
+                  (S
+                    (NP
+                      (NP (NN access))
+                      (PP (IN to)
+                        (NP (DT the) (NNP Medical) (NNP Center))))
+                    (VP (VB stop)
+                      (PP (IN from)
+                        (NP (NNP Walter) (NNP Reed) (NNP Medical) (NNP Center))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	September
+			name:	DATE				1-2	September 2009 
+	2	2009
+	3	,
+	4	Montgomery
+			name:	CITY				4-4	Montgomery 
+	5	County
+			name:	LOCATION				5-5	County 
+	6	submitted
+			sense:	put_in.v.05
+			prop:	submit.01
+			V		6-6	submitted 
+			N-ARGM-TMP		0-2	In September 2009 
+			N-ARG-A0		4-5	Montgomery County 
+			N-ARG-A1		7-34	a $ 20 million federal grant application to build a pedestrian tunnel under Rockville Pike to improve access to the Medical Center stop from Walter Reed Medical Center 
+	7	a
+	8	$
+			name:	MONEY				8-10	$ 20 million 
+	9	20
+	10	million
+	11	federal
+			sense:	federal.s.01
+	12	grant
+			sense:	grant.n.01
+	13	application
+			sense:	application.n.02
+	14	to
+	15	build
+			sense:	construct.v.01
+			prop:	build.01
+			V		15-15	build 
+			N-ARG-A1		16-21	a pedestrian tunnel under Rockville Pike 
+			N-ARGM-PRP		22-34	to improve access to the Medical Center stop from Walter Reed Medical Center 
+	16	a
+	17	pedestrian
+			sense:	pedestrian.n.01
+	18	tunnel
+			sense:	tunnel.n.01
+	19	under
+	20	Rockville
+			coref:	IDENT			1	20-21	Rockville Pike 
+			name:	ORGANIZATION				20-21	Rockville Pike 
+	21	Pike
+	22	to
+	23	improve
+			sense:	better.v.02
+			prop:	improve.01
+			V		23-23	improve 
+			N-ARG-A1		24-34	access to the Medical Center stop from Walter Reed Medical Center 
+	24	access
+			sense:	access.n.06
+	25	to
+	26	the
+	27	Medical
+	28	Center
+	29	stop
+			sense:	end.v.01
+			prop:	stop.01
+			V		29-29	stop 
+			N-ARG-A1		27-28	Medical Center 
+			N-ARGM-DIR		30-34	from Walter Reed Medical Center 
+	30	from
+	31	Walter
+			name:	ORGANIZATION				31-34	Walter Reed Medical Center 
+	32	Reed
+	33	Medical
+	34	Center
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Currently , there is only a crosswalk here , with many passengers crossing the heavily travelled street from Walter Reed on the east side of MD 355 to get to the station on the west side .
+
+
+Treebanked sentence:
+--------------------
+Currently , there is only a crosswalk here , with many passengers crossing the heavily travelled street from Walter Reed on the east side of MD 355 to get to the station on the west side . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Currently))
+    (, ,)
+    (NP (EX there))
+    (VP (VBZ is)
+      (ADVP
+        (ADVP
+          (NP (RB only) (DT a) (NN crosswalk))
+          (RB here))
+        (, ,)
+        (PP (IN with)
+          (NP (JJ many) (NNS passengers))))
+      (VP (VBG crossing)
+        (NP (DT the)
+          (ADJP (RB heavily) (VBN travelled))
+          (NN street))
+        (PP (IN from)
+          (NP
+            (NP (NNP Walter) (NNP Reed))
+            (PP (IN on)
+              (NP
+                (NP (DT the) (JJ east) (NN side))
+                (PP (IN of)
+                  (NP (NNP MD) (CD 355)))))))
+        (S
+          (VP (TO to)
+            (VP (VB get)
+              (PP (IN to)
+                (NP
+                  (NP (DT the) (NN station))
+                  (PP (IN on)
+                    (NP (DT the) (JJ west) (NN side))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Currently
+			name:	DATE				0-0	Currently 
+			sense:	presently.r.02
+	1	,
+	2	there
+	3	is
+			sense:	exist.v.01
+			prop:	be.02
+			V		3-3	is 
+			N-ARGM-TMP		0-0	Currently 
+			N-ARG-A1		4-35	only a crosswalk here , with many passengers crossing the heavily travelled street from Walter Reed on the east side of MD 355 to get to the station on the west side 
+	4	only
+			sense:	merely.r.01
+	5	a
+	6	crosswalk
+			sense:	crossing.n.05
+	7	here
+			sense:	here.r.01
+	8	,
+	9	with
+	10	many
+			sense:	many.a.01
+	11	passengers
+			sense:	passenger.n.01
+	12	crossing
+			sense:	traverse.v.01
+			prop:	cross.02
+			V		12-12	crossing 
+			N-ARG-A0		10-11	many passengers 
+			N-ARG-A1		13-26	the heavily travelled street from Walter Reed on the east side of MD 355 
+			N-ARGM-PRP		27-35	to get to the station on the west side 
+	13	the
+	14	heavily
+			sense:	heavily.r.01
+	15	travelled
+			sense:	travel.v.04
+			prop:	travel.01
+			V		15-15	travelled 
+			N-ARGM-EXT		14-14	heavily 
+			N-ARG-A1		16-16	street 
+	16	street
+			sense:	street.n.01
+	17	from
+	18	Walter
+			name:	PERSON				18-19	Walter Reed 
+	19	Reed
+	20	on
+	21	the
+	22	east
+			sense:	east.a.01
+	23	side
+			sense:	side.n.01
+	24	of
+	25	MD
+			name:	STATE_OR_PROVINCE				25-25	MD 
+	26	355
+			name:	NUMBER				26-26	355 
+	27	to
+	28	get
+			sense:	arrive.v.01
+			prop:	get.05
+			V		28-28	get 
+			N-ARG-A1		10-11	many passengers 
+			N-ARG-A2		29-35	to the station on the west side 
+	29	to
+	30	the
+	31	station
+			sense:	station.n.01
+	32	on
+	33	the
+	34	west
+			sense:	west.a.01
+	35	side
+			sense:	side.n.01
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Construction would have originally occurred in 2011 , but the project was not approved until 2013 .
+
+
+Treebanked sentence:
+--------------------
+Construction would have originally occurred in 2011 , but the project was not approved until 2013 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NN Construction))
+      (VP (MD would)
+        (VP (VB have)
+          (ADVP (RB originally))
+          (VP (VBN occurred)
+            (PP (IN in)
+              (NP (CD 2011)))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT the) (NN project))
+      (VP (VBD was) (RB not)
+        (VP (VBN approved)
+          (PP (IN until)
+            (NP (CD 2013))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Construction
+			sense:	construction.n.01
+	1	would
+	2	have
+			sense:	have.v.01
+			prop:	have.01
+			V		2-2	have 
+	3	originally
+			sense:	primitively.r.01
+	4	occurred
+			sense:	happen.v.01
+			prop:	occur.01
+			V		4-4	occurred 
+			N-ARG-A1		0-0	Construction 
+			N-ARGM-MOD		1-1	would 
+			N-ARGM-ADV		3-3	originally 
+			N-ARGM-TMP		5-6	in 2011 
+	5	in
+	6	2011
+			name:	DATE				6-6	2011 
+	7	,
+	8	but
+	9	the
+			coref:	IDENT			3	9-10	the project 
+	10	project
+			sense:	undertaking.n.01
+	11	was
+			sense:	be.v.01
+			prop:	be.03
+			V		11-11	was 
+	12	not
+			sense:	not.r.01
+	13	approved
+			sense:	approve.v.01
+			prop:	approve.01
+			V		13-13	approved 
+			N-ARG-A1		9-10	the project 
+			N-ARGM-NEG		12-12	not 
+			N-ARGM-TMP		14-15	until 2013 
+	14	until
+	15	2013
+			name:	DATE				15-15	2013 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The project is fully funded at $ 68 million , mostly through the Department of Defense , and includes installation of new deep elevators , improvement of surface bicycle and pedestrian facilities , as well as an extension of the left turn lane on southbound MD 355 .
+
+
+Treebanked sentence:
+--------------------
+The project is fully funded at $ 68 million , mostly through the Department of Defense , and includes installation of new deep elevators , improvement of surface bicycle and pedestrian facilities , as well as an extension of the left turn lane on southbound MD 355 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN project))
+    (VP
+      (VP (VBZ is)
+        (ADVP (RB fully))
+        (VP (VBN funded)
+          (PP
+            (PP (IN at)
+              (NP
+                (QP ($ $) (CD 68) (CD million))))
+            (, ,) (RB mostly)
+            (PP (IN through)
+              (NP
+                (NP (DT the) (NNP Department))
+                (PP (IN of)
+                  (NP (NNP Defense))))))))
+      (, ,)
+      (CC and)
+      (VP (VBZ includes)
+        (NP
+          (NP
+            (NP (NN installation))
+            (PP (IN of)
+              (NP (JJ new)
+                (NML
+                  (NML (JJ deep) (NNS elevators))
+                  (, ,)
+                  (NML
+                    (NML (NN improvement))
+                    (PP (IN of)
+                      (NP (NN surface) (NN bicycle))))
+                  (CC and)
+                  (NML (NN pedestrian)))
+                (NNS facilities))))
+          (, ,)
+          (CONJP (RB as) (RB well) (IN as))
+          (NP
+            (NP (DT an) (NN extension))
+            (PP (IN of)
+              (NP (DT the) (JJ left) (NN turn) (NN lane)))))
+        (PP (IN on)
+          (NP (JJ southbound) (NN MD) (CD 355)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-1	The project 
+	1	project
+			sense:	undertaking.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	fully
+			sense:	fully.r.01
+	4	funded
+			sense:	fund.v.06
+			prop:	fund.01
+			V		4-4	funded 
+			N-ARG-A1		0-1	The project 
+			N-ARGM-EXT		3-3	fully 
+			N-ARG-A2		5-15	at $ 68 million , mostly through the Department of Defense 
+	5	at
+	6	$
+			name:	MONEY				6-8	$ 68 million 
+	7	68
+	8	million
+	9	,
+	10	mostly
+			sense:	largely.r.01
+	11	through
+	12	the
+	13	Department
+			name:	ORGANIZATION				13-15	Department of Defense 
+	14	of
+	15	Defense
+	16	,
+	17	and
+	18	includes
+			sense:	include.v.01
+			prop:	include.01
+			V		18-18	includes 
+			N-ARG-A2		0-1	The project 
+			N-ARG-A1		19-46	installation of new deep elevators , improvement of surface bicycle and pedestrian facilities , as well as an extension of the left turn lane on southbound MD 355 
+	19	installation
+			sense:	installation.n.01
+	20	of
+	21	new
+			sense:	new.a.01
+	22	deep
+			sense:	deep.a.03
+	23	elevators
+			sense:	elevator.n.01
+	24	,
+	25	improvement
+			sense:	improvement.n.02
+	26	of
+	27	surface
+			sense:	surface.n.02
+	28	bicycle
+			sense:	bicycle.n.01
+	29	and
+	30	pedestrian
+			sense:	pedestrian.n.01
+	31	facilities
+			sense:	facility.n.01
+	32	,
+	33	as
+			sense:	equally.r.01
+	34	well
+			sense:	well.r.02
+	35	as
+	36	an
+	37	extension
+			sense:	elongation.n.02
+	38	of
+	39	the
+	40	left
+			sense:	left.a.01
+	41	turn
+			sense:	turn.n.02
+	42	lane
+			sense:	lane.n.02
+	43	on
+	44	southbound
+			sense:	southbound.s.01
+	45	MD
+			name:	STATE_OR_PROVINCE				45-45	MD 
+			sense:	maryland.n.01
+	46	355
+			name:	NUMBER				46-46	355 
+	47	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The project began construction in December 2017 , and is expected to be completed in late 2021 .
+
+
+Treebanked sentence:
+--------------------
+The project began construction in December 2017 , and is expected to be completed in late 2021 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN project))
+    (VP
+      (VP (VBD began)
+        (NP (NN construction))
+        (PP (IN in)
+          (NP (NNP December) (CD 2017))))
+      (, ,)
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN expected)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (VP (VBN completed)
+                  (PP (IN in)
+                    (NP (JJ late) (CD 2021))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-1	The project 
+	1	project
+			sense:	undertaking.n.01
+	2	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		2-2	began 
+			N-ARG-A0		0-1	The project 
+			N-ARG-A1		3-3	construction 
+			N-ARGM-TMP		4-6	in December 2017 
+	3	construction
+			sense:	construction.n.01
+	4	in
+	5	December
+			name:	DATE				5-6	December 2017 
+	6	2017
+	7	,
+	8	and
+	9	is
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	is 
+	10	expected
+			sense:	expect.v.01
+			prop:	expect.01
+			V		10-10	expected 
+			N-ARG-A1		11-16	to be completed in late 2021 
+	11	to
+	12	be
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	be 
+	13	completed
+			sense:	complete.v.01
+			prop:	complete.01
+			V		13-13	completed 
+			N-ARG-A1		0-1	The project 
+			N-ARGM-TMP		14-16	in late 2021 
+	14	in
+	15	late
+			name:	DATE				15-16	late 2021 
+			sense:	late.a.01
+	16	2021
+	17	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.21-22	the Bethesda 
+				0.10-10	Bethesda 
+	Chain 1 (IDENT)
+				6.20-21	Rockville Pike 
+				2.28-32	Rockville Pike and South Drive 
+	Chain 2 (IDENT)
+				1.5-8	August 25 , 1984 
+				4.4-7	August 25 , 1984 
+	Chain 3 (IDENT)
+				8.9-10	the project 
+				9.0-1	The project 
+				10.0-1	The project 
+	Chain 4 (IDENT)
+				5.11-16	the Van Ness – UDC station 
+				0.6-8	Washington Metro station 
+				1.0-1	The station 
+				2.7-8	the station 
+				3.14-15	this station 
+				4.0-1	The station 
+				5.0-0	Its 
+

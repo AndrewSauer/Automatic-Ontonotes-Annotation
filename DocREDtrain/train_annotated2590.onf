@@ -1,0 +1,748 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Houston Texans are a professional American football team based in Houston , Texas .
+
+
+Treebanked sentence:
+--------------------
+The Houston Texans are a professional American football team based in Houston , Texas . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Houston) (NNPS Texans))
+    (VP (VBP are)
+      (NP
+        (NP (DT a) (JJ professional) (JJ American) (NN football) (NN team))
+        (PP (VBN based)
+          (PP (IN in)
+            (NP (NNP Houston) (, ,) (NNP Texas))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-2	The Houston Texans 
+	1	Houston
+			coref:	IDENT			0	1-1	Houston 
+			name:	CITY				1-1	Houston 
+	2	Texans
+	3	are
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	are 
+			N-ARG-A1		0-2	The Houston Texans 
+			N-ARG-A2		4-13	a professional American football team based in Houston , Texas 
+	4	a
+	5	professional
+			sense:	professional.a.01
+	6	American
+			name:	NATIONALITY				6-6	American 
+	7	football
+			sense:	football.n.01
+	8	team
+			sense:	team.n.01
+	9	based
+			sense:	base.v.02
+			prop:	base.01
+			V		9-9	based 
+			N-ARG-A1		4-8	a professional American football team 
+			N-ARGM-LOC		10-13	in Houston , Texas 
+	10	in
+	11	Houston
+			coref:	IDENT			0	11-11	Houston 
+			name:	CITY				11-11	Houston 
+	12	,
+	13	Texas
+			name:	STATE_OR_PROVINCE				13-13	Texas 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Texans compete in the National Football League ( NFL ) as a member club of the American Football Conference ( AFC ) South division .
+
+
+Treebanked sentence:
+--------------------
+The Texans compete in the National Football League ( NFL ) as a member club of the American Football Conference ( AFC ) South division . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNPS Texans))
+    (VP (VBP compete)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NNP National) (NNP Football) (NNP League)
+            (PRN (-LRB- -LRB-)
+              (NP (NNP NFL))
+              (-RRB- -RRB-)))
+          (PP (IN as)
+            (NP (DT a)
+              (NML
+                (NML
+                  (NML (NN member) (NN club))
+                  (PP (IN of)
+                    (NP (DT the) (NNP American) (NNP Football) (NNP Conference)))
+                  (PRN (-LRB- -LRB-)
+                    (NP (NNP AFC))
+                    (-RRB- -RRB-)))
+                (NNP South))
+              (NN division))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-1	The Texans 
+	1	Texans
+			name:	MISC				1-1	Texans 
+	2	compete
+			sense:	compete.v.01
+			prop:	compete.01
+			V		2-2	compete 
+			N-ARG-A0		0-1	The Texans 
+			N-ARGM-LOC		3-10	in the National Football League ( NFL ) 
+			N-ARGM-PRD		11-24	as a member club of the American Football Conference ( AFC ) South division 
+	3	in
+	4	the
+	5	National
+			name:	ORGANIZATION				5-7	National Football League 
+	6	Football
+	7	League
+	8	(
+	9	NFL
+			name:	ORGANIZATION				9-9	NFL 
+	10	)
+	11	as
+	12	a
+	13	member
+			sense:	member.n.04
+	14	club
+			sense:	baseball_club.n.01
+	15	of
+	16	the
+	17	American
+			name:	NATIONALITY				17-17	American 
+	18	Football
+			name:	ORGANIZATION				18-19	Football Conference 
+	19	Conference
+	20	(
+	21	AFC
+	22	)
+	23	South
+	24	division
+			sense:	class.n.05
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The team plays its home games at NRG Stadium .
+
+
+Treebanked sentence:
+--------------------
+The team plays its home games at NRG Stadium . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN team))
+    (VP (VBZ plays)
+      (NP (PRP$ its) (NN home) (NNS games))
+      (PP (IN at)
+        (NP (NNP NRG) (NNP Stadium))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	team
+			sense:	team.n.01
+	2	plays
+			sense:	play.v.01
+			prop:	play.01
+			V		2-2	plays 
+			N-ARG-A0		0-1	The team 
+			N-ARG-A1		3-5	its home games 
+			N-ARGM-LOC		6-8	at NRG Stadium 
+	3	its
+	4	home
+			sense:	home.n.01
+	5	games
+			sense:	game.n.02
+	6	at
+	7	NRG
+			name:	LOCATION				7-8	NRG Stadium 
+	8	Stadium
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The club first played in as an expansion team , making them the youngest franchise currently competing in the NFL .
+
+
+Treebanked sentence:
+--------------------
+The club first played in as an expansion team , making them the youngest franchise currently competing in the NFL . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN club))
+    (ADVP (RB first))
+    (VP (VBD played)
+      (PP (IN in)
+        (PP (IN as)
+          (NP (DT an) (NN expansion) (NN team))))
+      (, ,)
+      (S
+        (VP (VBG making)
+          (NP (PRP them))
+          (NP
+            (NP (DT the) (JJS youngest) (NN franchise))
+            (VP
+              (ADVP (RB currently))
+              (VBG competing)
+              (PP (IN in)
+                (NP (DT the) (NNP NFL))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	club
+			sense:	baseball_club.n.01
+	2	first
+			name:	ORDINAL				2-2	first 
+			sense:	first.r.02
+	3	played
+			sense:	play.v.01
+			prop:	play.01
+			V		3-3	played 
+			N-ARG-A0		0-1	The club 
+			N-ARGM-TMP		2-2	first 
+			N-ARGM-ADV		4-4	in 
+			N-ARGM-MNR		5-8	as an expansion team 
+			N-ARGM-ADV		10-19	making them the youngest franchise currently competing in the NFL 
+	4	in
+	5	as
+	6	an
+	7	expansion
+			sense:	expansion.n.01
+	8	team
+			sense:	team.n.01
+	9	,
+	10	making
+			sense:	make.v.02
+			prop:	make.02
+			V		10-10	making 
+			N-ARG-A1		11-19	them the youngest franchise currently competing in the NFL 
+	11	them
+	12	the
+	13	youngest
+			sense:	young.a.01
+	14	franchise
+			sense:	franchise.n.02
+	15	currently
+			name:	DATE				15-15	currently 
+			sense:	presently.r.02
+	16	competing
+			sense:	compete.v.01
+			prop:	compete.01
+			V		16-16	competing 
+			N-ARG-A0		12-14	the youngest franchise 
+			N-ARGM-TMP		15-15	currently 
+			N-ARGM-LOC		17-19	in the NFL 
+	17	in
+	18	the
+			coref:	IDENT			1	18-19	the NFL 
+	19	NFL
+			name:	ORGANIZATION				19-19	NFL 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Texans replaced the city 's previous NFL franchise , the Houston Oilers , which moved to Nashville , Tennessee and are now known as the Tennessee Titans .
+
+
+Treebanked sentence:
+--------------------
+The Texans replaced the city 's previous NFL franchise , the Houston Oilers , which moved to Nashville , Tennessee and are now known as the Tennessee Titans . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNPS Texans))
+    (VP (VBD replaced)
+      (NP
+        (NP
+          (NP
+            (NP (DT the) (NN city) (POS 's))
+            (JJ previous) (NNP NFL) (NN franchise))
+          (, ,)
+          (NP (DT the) (NNP Houston) (NNPS Oilers)))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP
+              (VP (VBD moved)
+                (PP (IN to)
+                  (NP (NNP Nashville) (, ,) (NNP Tennessee))))
+              (CC and)
+              (VP (VBP are)
+                (ADVP (RB now))
+                (VP (VBN known)
+                  (PP (IN as)
+                    (NP (DT the) (NNP Tennessee) (NNPS Titans))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-1	The Texans 
+	1	Texans
+			name:	MISC				1-1	Texans 
+	2	replaced
+			sense:	supplant.v.01
+			prop:	replace.01
+			V		2-2	replaced 
+			N-ARG-A2		0-1	The Texans 
+			N-ARG-A1		3-27	the city 's previous NFL franchise , the Houston Oilers , which moved to Nashville , Tennessee and are now known as the Tennessee Titans 
+	3	the
+	4	city
+			sense:	city.n.01
+	5	's
+	6	previous
+			sense:	former.s.03
+	7	NFL
+			coref:	IDENT			1	7-7	NFL 
+			name:	ORGANIZATION				7-7	NFL 
+	8	franchise
+			sense:	franchise.n.02
+	9	,
+	10	the
+	11	Houston
+			name:	ORGANIZATION				11-12	Houston Oilers 
+	12	Oilers
+	13	,
+	14	which
+	15	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		15-15	moved 
+			N-ARG-A1		10-12	the Houston Oilers 
+			R-ARG-A1		14-14	which 
+			N-ARG-A2		16-19	to Nashville , Tennessee 
+	16	to
+	17	Nashville
+			name:	CITY				17-17	Nashville 
+	18	,
+	19	Tennessee
+			name:	STATE_OR_PROVINCE				19-19	Tennessee 
+	20	and
+	21	are
+			sense:	be.v.01
+			prop:	be.03
+			V		21-21	are 
+	22	now
+			name:	DATE				22-22	now 
+			sense:	now.r.01
+	23	known
+			sense:	know.v.04
+			prop:	know.01
+			V		23-23	known 
+			N-ARG-A1		10-12	the Houston Oilers 
+			R-ARG-A1		14-14	which 
+			N-ARGM-TMP		22-22	now 
+			N-ARG-A2		24-27	as the Tennessee Titans 
+	24	as
+	25	the
+	26	Tennessee
+			name:	ORGANIZATION				26-27	Tennessee Titans 
+	27	Titans
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The team 's majority owner is Bob McNair .
+
+
+Treebanked sentence:
+--------------------
+The team 's majority owner is Bob McNair . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN team) (POS 's))
+      (NN majority) (NN owner))
+    (VP (VBZ is)
+      (NP (NNP Bob) (NNP McNair)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	team
+			sense:	team.n.01
+	2	's
+	3	majority
+			sense:	majority.n.01
+	4	owner
+			name:	TITLE				4-4	owner 
+			sense:	owner.n.01
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	The team 's majority owner 
+			N-ARG-A2		6-7	Bob McNair 
+	6	Bob
+			name:	PERSON				6-7	Bob McNair 
+	7	McNair
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+While the team mainly struggled in the 2000s , they would find success in the 2011 season , after clinching their first playoff berth and would go on to win their first division championship .
+
+
+Treebanked sentence:
+--------------------
+While the team mainly struggled in the 2000s , they would find success in the 2011 season , after clinching their first playoff berth and would go on to win their first division championship . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (DT the) (NN team))
+        (ADVP (RB mainly))
+        (VP (VBD struggled)
+          (PP (IN in)
+            (NP (DT the) (NNS 2000s))))))
+    (, ,)
+    (NP (PRP they))
+    (VP
+      (VP (MD would)
+        (VP (VB find)
+          (NP (NN success))
+          (PP (IN in)
+            (NP (DT the) (CD 2011) (NN season)))
+          (, ,)
+          (PP (IN after)
+            (S
+              (VP (VBG clinching)
+                (NP (PRP$ their) (JJ first) (NN playoff) (NN berth)))))))
+      (CC and)
+      (VP (MD would)
+        (VP (VB go)
+          (PP (IN on))
+          (S
+            (VP (TO to)
+              (VP (VB win)
+                (NP (PRP$ their) (JJ first) (NN division) (NN championship))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	While
+	1	the
+	2	team
+			sense:	team.n.01
+	3	mainly
+			sense:	chiefly.r.01
+	4	struggled
+			sense:	fight.v.03
+			prop:	struggle.02
+			V		4-4	struggled 
+			N-ARG-A0		1-2	the team 
+			N-ARGM-ADV		3-3	mainly 
+			N-ARGM-TMP		5-7	in the 2000s 
+	5	in
+	6	the
+			name:	DATE				6-7	the 2000s 
+	7	2000s
+	8	,
+	9	they
+	10	would
+	11	find
+			sense:	receive.v.02
+			prop:	find.01
+			V		11-11	find 
+			N-ARGM-ADV		0-7	While the team mainly struggled in the 2000s 
+			N-ARG-A0		9-9	they 
+			N-ARGM-MOD		10-10	would 
+			N-ARG-A1		12-12	success 
+			N-ARGM-TMP		13-16	in the 2011 season 
+			N-ARGM-TMP		18-23	after clinching their first playoff berth 
+	12	success
+			sense:	success.n.02
+	13	in
+	14	the
+	15	2011
+			name:	DATE				15-15	2011 
+	16	season
+			sense:	season.n.01
+	17	,
+	18	after
+	19	clinching
+			sense:	clinch.v.01
+			prop:	clinch.01
+			V		19-19	clinching 
+			N-ARG-A0		9-9	they 
+			N-ARG-A1		20-23	their first playoff berth 
+	20	their
+	21	first
+			name:	ORDINAL				21-21	first 
+			sense:	first.a.01
+	22	playoff
+			sense:	playoff.n.01
+	23	berth
+			sense:	position.n.06
+	24	and
+	25	would
+	26	go
+			sense:	proceed.v.04
+			prop:	go.15
+			V		26-26	go 
+			N-ARGM-ADV		0-7	While the team mainly struggled in the 2000s 
+			N-ARGM-MOD		25-25	would 
+			N-ARG-A1		28-33	to win their first division championship 
+	27	on
+	28	to
+	29	win
+			sense:	win.v.01
+			prop:	win.01
+			V		29-29	win 
+			N-ARG-A0		9-9	they 
+			N-ARG-A1		30-33	their first division championship 
+	30	their
+	31	first
+			name:	ORDINAL				31-31	first 
+			sense:	first.a.01
+	32	division
+			sense:	class.n.05
+	33	championship
+			sense:	championship.n.02
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Texans would go on to win three more AFC South championships in 2012 , 2015 , and 2016 .
+
+
+Treebanked sentence:
+--------------------
+The Texans would go on to win three more AFC South championships in 2012 , 2015 , and 2016 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNPS Texans))
+    (VP (MD would)
+      (VP (VB go)
+        (PP (IN on))
+        (S
+          (VP (TO to)
+            (VP (VB win)
+              (NP
+                (QP (CD three) (JJR more))
+                (NML (NNP AFC) (NNP South))
+                (NNS championships))
+              (PP (IN in)
+                (NP
+                  (NP (CD 2012))
+                  (, ,)
+                  (NP (CD 2015))
+                  (, ,)
+                  (CC and)
+                  (NP (CD 2016)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-1	The Texans 
+	1	Texans
+			name:	MISC				1-1	Texans 
+	2	would
+	3	go
+			sense:	proceed.v.04
+			prop:	go.15
+			V		3-3	go 
+			N-ARG-A1		0-1	The Texans 
+			N-ARGM-MOD		2-2	would 
+			C-ARG-A1		5-18	to win three more AFC South championships in 2012 , 2015 , and 2016 
+	4	on
+	5	to
+	6	win
+			sense:	win.v.01
+			prop:	win.01
+			V		6-6	win 
+			N-ARG-A0		0-1	The Texans 
+			N-ARG-A1		7-11	three more AFC South championships 
+			N-ARGM-TMP		12-18	in 2012 , 2015 , and 2016 
+	7	three
+			name:	NUMBER				7-7	three 
+	8	more
+			sense:	more.a.02
+	9	AFC
+	10	South
+	11	championships
+			sense:	championship.n.02
+	12	in
+	13	2012
+			name:	DATE				13-13	2012 
+	14	,
+	15	2015
+			name:	DATE				15-15	2015 
+	16	,
+	17	and
+			name:	DATE				17-18	and 2016 
+	18	2016
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+To date , the Texans are the only NFL franchise to have never played in a conference championship game .
+
+
+Treebanked sentence:
+--------------------
+To date , the Texans are the only NFL franchise to have never played in a conference championship game . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN To)
+      (NP (NN date)))
+    (, ,)
+    (NP (DT the) (NNPS Texans))
+    (VP (VBP are)
+      (NP
+        (NP (DT the) (JJ only) (NNP NFL) (NN franchise))
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (ADVP (RB never))
+              (VP (VBN played)
+                (PP (IN in)
+                  (NP (DT a) (NN conference) (NN championship) (NN game)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	To
+	1	date
+			sense:	date.n.05
+	2	,
+	3	the
+			coref:	IDENT			2	3-4	the Texans 
+	4	Texans
+			name:	MISC				4-4	Texans 
+	5	are
+			sense:	be.v.01
+			prop:	be.01
+			V		5-5	are 
+			N-ARGM-TMP		0-1	To date 
+			N-ARG-A1		3-4	the Texans 
+			N-ARG-A2		6-18	the only NFL franchise to have never played in a conference championship game 
+	6	the
+	7	only
+			sense:	lone.s.03
+	8	NFL
+			coref:	IDENT			1	8-8	NFL 
+			name:	ORGANIZATION				8-8	NFL 
+	9	franchise
+			sense:	franchise.n.02
+	10	to
+	11	have
+			sense:	have.v.01
+			prop:	have.01
+			V		11-11	have 
+	12	never
+			sense:	never.r.01
+	13	played
+			sense:	play.v.01
+			prop:	play.01
+			V		13-13	played 
+			N-ARG-A0		6-9	the only NFL franchise 
+			N-ARGM-NEG		12-12	never 
+			N-ARGM-LOC		14-18	in a conference championship game 
+	14	in
+	15	a
+	16	conference
+			sense:	league.n.01
+	17	championship
+			sense:	championship.n.02
+	18	game
+			sense:	game.n.02
+	19	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.1-1	Houston 
+				0.11-11	Houston 
+	Chain 1 (IDENT)
+				3.18-19	the NFL 
+				4.7-7	NFL 
+				8.8-8	NFL 
+	Chain 2 (IDENT)
+				0.0-2	The Houston Texans 
+				1.0-1	The Texans 
+				4.0-1	The Texans 
+				7.0-1	The Texans 
+				8.3-4	the Texans 
+

@@ -1,0 +1,718 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Devdas Mohandas Gandhi ( 22 May 1900 – 3 August 1957 ) was the fourth and youngest son of Mohandas Karamchand Gandhi .
+
+
+Treebanked sentence:
+--------------------
+Devdas Mohandas Gandhi ( 22 May 1900 – 3 August 1957 ) was the fourth and youngest son of Mohandas Karamchand Gandhi . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNS Devdas))
+      (NP (NNP Mohandas) (NNP Gandhi))
+      (PRN (-LRB- -LRB-)
+        (FRAG
+          (NP (CD 22))
+          (NP
+            (NP (NNP May) (CD 1900) (SYM –) (CD 3))
+            (NP-TMP (NNP August) (CD 1957))))
+        (-RRB- -RRB-)))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (JJ fourth))
+        (CC and)
+        (NP
+          (NP (JJS youngest) (NN son))
+          (PP (IN of)
+            (NP (NNP Mohandas) (NNP Karamchand) (NNP Gandhi))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Devdas
+			name:	PERSON				0-2	Devdas Mohandas Gandhi 
+	1	Mohandas
+	2	Gandhi
+	3	(
+	4	22
+			name:	DATE				4-6	22 May 1900 
+	5	May
+	6	1900
+	7	–
+	8	3
+			name:	DATE				8-10	3 August 1957 
+	9	August
+	10	1957
+	11	)
+	12	was
+			sense:	be.v.02
+			prop:	be.01
+			V		12-12	was 
+			N-ARG-A1		0-11	Devdas Mohandas Gandhi ( 22 May 1900 – 3 August 1957 ) 
+			N-ARG-A2		13-21	the fourth and youngest son of Mohandas Karamchand Gandhi 
+	13	the
+	14	fourth
+			name:	ORDINAL				14-14	fourth 
+			sense:	fourth.s.01
+	15	and
+	16	youngest
+			sense:	young.a.01
+	17	son
+			sense:	son.n.01
+	18	of
+	19	Mohandas
+			coref:	IDENT			1	19-21	Mohandas Karamchand Gandhi 
+			name:	PERSON				19-21	Mohandas Karamchand Gandhi 
+	20	Karamchand
+	21	Gandhi
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was born in South Africa and returned to India with his parents as a young man .
+
+
+Treebanked sentence:
+--------------------
+He was born in South Africa and returned to India with his parents as a young man . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN born)
+          (PP (IN in)
+            (NP (NNP South) (NNP Africa)))))
+      (CC and)
+      (VP (VBD returned)
+        (PP (IN to)
+          (NP (NNP India)))
+        (PP (IN with)
+          (NP (PRP$ his) (NNS parents)))
+        (PP (IN as)
+          (NP (DT a) (JJ young) (NN man)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-5	in South Africa 
+	3	in
+	4	South
+			name:	COUNTRY				4-5	South Africa 
+	5	Africa
+	6	and
+	7	returned
+			sense:	return.v.01
+			prop:	return.01
+			V		7-7	returned 
+			N-ARG-A1		0-0	He 
+			N-ARG-A4		8-9	to India 
+			N-ARGM-MNR		10-12	with his parents 
+			N-ARGM-TMP		13-16	as a young man 
+	8	to
+	9	India
+			name:	COUNTRY				9-9	India 
+	10	with
+	11	his
+	12	parents
+			sense:	parent.n.01
+	13	as
+	14	a
+	15	young
+			sense:	young.a.01
+	16	man
+			sense:	man.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He became active in his father 's movement , spending many terms in jail .
+
+
+Treebanked sentence:
+--------------------
+He became active in his father 's movement , spending many terms in jail . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD became)
+      (ADJP (JJ active))
+      (PP (IN in)
+        (NP
+          (NP (PRP$ his) (NN father) (POS 's))
+          (NN movement)))
+      (, ,)
+      (S
+        (VP (VBG spending)
+          (NP (JJ many) (NNS terms))
+          (PP (IN in)
+            (NP (NN jail))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	became
+			sense:	become.v.01
+			prop:	become.01
+			V		1-1	became 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-7	active in his father 's movement 
+			N-ARGM-ADV		9-13	spending many terms in jail 
+	2	active
+			sense:	active.s.04
+	3	in
+	4	his
+			coref:	IDENT			3	4-6	his father 's 
+	5	father
+			sense:	father.n.01
+	6	's
+	7	movement
+			sense:	movement.n.04
+	8	,
+	9	spending
+			sense:	spend.v.01
+			prop:	spend.01
+			V		9-9	spending 
+			N-ARG-A0		0-0	He 
+			N-ARG-A2		12-13	in jail 
+	10	many
+			sense:	many.a.01
+	11	terms
+			sense:	term.n.02
+	12	in
+	13	jail
+			sense:	jail.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also became a prominent journalist , serving as editor of Hindustan Times .
+
+
+Treebanked sentence:
+--------------------
+He also became a prominent journalist , serving as editor of Hindustan Times . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD became)
+      (NP (DT a) (JJ prominent) (NN journalist))
+      (, ,)
+      (S
+        (VP (VBG serving)
+          (PP (IN as)
+            (NP
+              (NP (NN editor))
+              (PP (IN of)
+                (NP (NNP Hindustan) (NNP Times))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	also
+			sense:	besides.r.02
+	2	became
+			sense:	become.v.02
+			prop:	become.01
+			V		2-2	became 
+			N-ARG-A1		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A2		3-5	a prominent journalist 
+			N-ARGM-ADV		7-12	serving as editor of Hindustan Times 
+	3	a
+	4	prominent
+			sense:	big.s.05
+	5	journalist
+			name:	TITLE				5-5	journalist 
+			sense:	journalist.n.01
+	6	,
+	7	serving
+			sense:	serve.v.02
+			prop:	serve.01
+			V		7-7	serving 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		8-12	as editor of Hindustan Times 
+	8	as
+	9	editor
+			name:	TITLE				9-9	editor 
+			sense:	editor.n.01
+	10	of
+	11	Hindustan
+			name:	ORGANIZATION				11-12	Hindustan Times 
+	12	Times
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Devdas fell in love with Lakshmi , the daughter of C. Rajagopalachari , Devdas 's father 's associate in the Indian independence struggle .
+
+
+Treebanked sentence:
+--------------------
+Devdas fell in love with Lakshmi , the daughter of C. Rajagopalachari , Devdas 's father 's associate in the Indian independence struggle . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNS Devdas))
+    (VP (VBD fell)
+      (PP (IN in)
+        (NP
+          (NP
+            (NP (NN love))
+            (PP (IN with)
+              (NP (NNP Lakshmi))))
+          (, ,)
+          (NP
+            (NP (DT the) (NN daughter))
+            (PP (IN of)
+              (NP (NNP C.) (NNP Rajagopalachari))))
+          (, ,)
+          (NP
+            (NP
+              (NP
+                (NP (NNP Devdas) (POS 's))
+                (NN father) (POS 's))
+              (NN associate))
+            (PP (IN in)
+              (NP (DT the) (JJ Indian) (NN independence) (NN struggle)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Devdas
+	1	fell
+			sense:	fall.v.03
+			prop:	fall.01
+			V		1-1	fell 
+			N-ARG-A1		0-0	Devdas 
+			N-ARG-A2		2-22	in love with Lakshmi , the daughter of C. Rajagopalachari , Devdas 's father 's associate in the Indian independence struggle 
+	2	in
+	3	love
+			sense:	love.n.04
+	4	with
+	5	Lakshmi
+			coref:	IDENT			2	5-5	Lakshmi 
+			name:	PERSON				5-5	Lakshmi 
+	6	,
+	7	the
+	8	daughter
+			sense:	daughter.n.01
+	9	of
+	10	C.
+			name:	PERSON				10-11	C. Rajagopalachari 
+	11	Rajagopalachari
+	12	,
+	13	Devdas
+			coref:	IDENT			3	13-16	Devdas 's father 's 
+			name:	PERSON				13-13	Devdas 
+	14	's
+	15	father
+			sense:	father.n.01
+	16	's
+	17	associate
+			sense:	associate.n.01
+	18	in
+	19	the
+	20	Indian
+			name:	NATIONALITY				20-20	Indian 
+	21	independence
+			sense:	independence.n.01
+	22	struggle
+			sense:	struggle.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Due to Lakshmi 's age at that time , she was only 15 and Devdas was 28 years , both Devdas 's father and Rajaji asked the couple to wait for five years without seeing each other .
+
+
+Treebanked sentence:
+--------------------
+Due to Lakshmi 's age at that time , she was only 15 and Devdas was 28 years , both Devdas 's father and Rajaji asked the couple to wait for five years without seeing each other . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Due)
+      (PP (IN to)
+        (NP
+          (NP
+            (NP (NNP Lakshmi) (POS 's))
+            (NN age))
+          (PP (IN at)
+            (NP (DT that) (NN time))))))
+    (, ,)
+    (S
+      (NP (PRP she))
+      (VP (VBD was)
+        (NP
+          (QP (RB only) (CD 15)))))
+    (CC and)
+    (S
+      (NP (NNP Devdas))
+      (VP (VBD was)
+        (NP
+          (NP (CD 28) (NNS years))
+          (, ,)
+          (CC both)
+          (NP
+            (NP (NNP Devdas) (POS 's))
+            (NN father)))))
+    (CC and)
+    (S
+      (NP (NNP Rajaji))
+      (VP (VBD asked)
+        (NP (DT the) (NN couple))
+        (S
+          (VP (TO to)
+            (VP (VB wait)
+              (PP (IN for)
+                (NP (CD five) (NNS years)))
+              (PP (IN without)
+                (S
+                  (VP (VBG seeing)
+                    (NP (DT each) (JJ other))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Due
+	1	to
+	2	Lakshmi
+			coref:	IDENT			2	2-3	Lakshmi 's 
+			name:	PERSON				2-2	Lakshmi 
+	3	's
+	4	age
+			sense:	age.n.01
+	5	at
+	6	that
+	7	time
+			sense:	time.n.01
+	8	,
+	9	she
+			coref:	IDENT			2	9-9	she 
+	10	was
+			sense:	be.v.01
+			prop:	be.01
+			V		10-10	was 
+			N-ARG-A1		9-9	she 
+			N-ARG-A2		11-12	only 15 
+	11	only
+			sense:	merely.r.01
+	12	15
+			name:	NUMBER				12-12	15 
+	13	and
+	14	Devdas
+			name:	PERSON				14-14	Devdas 
+	15	was
+			sense:	be.v.01
+			prop:	be.01
+			V		15-15	was 
+			N-ARG-A1		14-14	Devdas 
+			N-ARG-A2		16-17	28 years 
+	16	28
+			name:	DURATION				16-17	28 years 
+	17	years
+			sense:	year.n.01
+	18	,
+	19	both
+	20	Devdas
+			coref:	IDENT			3	20-22	Devdas 's father 
+			name:	PERSON				20-20	Devdas 
+	21	's
+	22	father
+			sense:	father.n.01
+	23	and
+	24	Rajaji
+			name:	PERSON				24-24	Rajaji 
+	25	asked
+			sense:	ask.v.02
+			prop:	ask.02
+			V		25-25	asked 
+			N-ARGM-CAU		0-17	Due to Lakshmi 's age at that time , she was only 15 and Devdas was 28 years 
+			N-ARG-A0		19-24	both Devdas 's father and Rajaji 
+			N-ARG-A2		26-27	the couple 
+			N-ARG-A1		28-36	to wait for five years without seeing each other 
+	26	the
+	27	couple
+			sense:	couple.n.02
+	28	to
+	29	wait
+			sense:	wait.v.02
+			prop:	wait.01
+			V		29-29	wait 
+			N-ARG-A1		26-27	the couple 
+			N-ARGM-TMP		30-32	for five years 
+			N-ARGM-ADV		33-36	without seeing each other 
+	30	for
+	31	five
+			name:	DURATION				31-32	five years 
+	32	years
+			sense:	year.n.01
+	33	without
+	34	seeing
+			sense:	meet.v.01
+			prop:	see.01
+			V		34-34	seeing 
+			N-ARG-A0		26-27	the couple 
+			N-ARG-A1		35-36	each other 
+	35	each
+	36	other
+			sense:	other.a.01
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After five years had passed , they were married with their fathers ' permissions in 1933 .
+
+
+Treebanked sentence:
+--------------------
+After five years had passed , they were married with their fathers ' permissions in 1933 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN After)
+      (S
+        (NP (CD five) (NNS years))
+        (VP (VBD had)
+          (VP (VBN passed)))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBD were)
+      (VP (VBN married)
+        (PP (IN with)
+          (NP
+            (NP (PRP$ their) (NNS fathers) (POS '))
+            (NNS permissions)))
+        (PP (IN in)
+          (NP (CD 1933)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	five
+			name:	DURATION				1-2	five years 
+	2	years
+			sense:	year.n.01
+	3	had
+			sense:	have.v.11
+			prop:	have.01
+			V		3-3	had 
+	4	passed
+			sense:	elapse.v.01
+			prop:	pass.03
+			V		4-4	passed 
+			N-ARG-A1		1-2	five years 
+	5	,
+	6	they
+			coref:	IDENT			0	6-6	they 
+	7	were
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	were 
+			N-ARGM-TMP		0-4	After five years had passed 
+			N-ARGM-TMP		14-15	in 1933 
+	8	married
+			sense:	marry.v.01
+			prop:	marry.01
+			V		8-8	married 
+			N-ARGM-TMP		0-4	After five years had passed 
+			N-ARG-A1		6-6	they 
+			N-ARGM-MNR		9-13	with their fathers ' permissions 
+			N-ARGM-TMP		14-15	in 1933 
+	9	with
+	10	their
+			coref:	IDENT			0	10-10	their 
+	11	fathers
+			sense:	father.n.01
+	12	'
+	13	permissions
+			sense:	permission.n.01
+	14	in
+	15	1933
+			name:	DATE				15-15	1933 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Devdas and Lakshmi had four children , Rajmohan Gandhi , Gopalkrishna Gandhi , Ramchandra Gandhi and Tara Gandhi Bhattacharjee ( born 24 April 1934 , New Delhi ) .
+
+
+Treebanked sentence:
+--------------------
+Devdas and Lakshmi had four children , Rajmohan Gandhi , Gopalkrishna Gandhi , Ramchandra Gandhi and Tara Gandhi Bhattacharjee ( born 24 April 1934 , New Delhi ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNS Devdas))
+      (CC and)
+      (NP (NNP Lakshmi)))
+    (VP (VBD had)
+      (NP
+        (NP
+          (NP (CD four) (NNS children))
+          (, ,)
+          (NP (NNP Rajmohan) (NNP Gandhi))
+          (, ,)
+          (NP (NNP Gopalkrishna) (NNP Gandhi))
+          (, ,)
+          (NP (NNP Ramchandra) (NNP Gandhi))
+          (CC and)
+          (NP (NNP Tara) (NNP Gandhi) (NNP Bhattacharjee)))
+        (-LRB- -LRB-)
+        (VP (VBN born)
+          (NP
+            (NP
+              (NP (CD 24))
+              (NP-TMP (NNP April) (CD 1934)))
+            (, ,)
+            (NP (NNP New) (NNP Delhi))))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Devdas
+	1	and
+	2	Lakshmi
+			coref:	IDENT			2	2-2	Lakshmi 
+			name:	PERSON				2-2	Lakshmi 
+	3	had
+			sense:	have.v.01
+			prop:	have.03
+			V		3-3	had 
+			N-ARG-A0		0-2	Devdas and Lakshmi 
+			N-ARG-A1		4-27	four children , Rajmohan Gandhi , Gopalkrishna Gandhi , Ramchandra Gandhi and Tara Gandhi Bhattacharjee ( born 24 April 1934 , New Delhi ) 
+	4	four
+			name:	NUMBER				4-4	four 
+	5	children
+			sense:	child.n.02
+	6	,
+	7	Rajmohan
+			coref:	IDENT			1	7-8	Rajmohan Gandhi 
+			name:	PERSON				7-8	Rajmohan Gandhi 
+	8	Gandhi
+	9	,
+	10	Gopalkrishna
+			coref:	IDENT			1	10-11	Gopalkrishna Gandhi 
+			name:	PERSON				10-11	Gopalkrishna Gandhi 
+	11	Gandhi
+	12	,
+	13	Ramchandra
+			coref:	IDENT			1	13-14	Ramchandra Gandhi 
+			name:	PERSON				13-14	Ramchandra Gandhi 
+	14	Gandhi
+	15	and
+	16	Tara
+			name:	PERSON				16-18	Tara Gandhi Bhattacharjee 
+	17	Gandhi
+	18	Bhattacharjee
+	19	(
+	20	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		20-20	born 
+			N-ARG-A1		16-18	Tara Gandhi Bhattacharjee 
+			N-ARGM-TMP		21-23	24 April 1934 
+			N-ARGM-LOC		25-26	New Delhi 
+	21	24
+			name:	DATE				21-23	24 April 1934 
+	22	April
+	23	1934
+	24	,
+	25	New
+			name:	CITY				25-26	New Delhi 
+	26	Delhi
+	27	)
+	28	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				6.6-6	they 
+				6.10-10	their 
+	Chain 1 (IDENT)
+				0.19-21	Mohandas Karamchand Gandhi 
+				7.7-8	Rajmohan Gandhi 
+				7.10-11	Gopalkrishna Gandhi 
+				7.13-14	Ramchandra Gandhi 
+	Chain 2 (IDENT)
+				5.2-3	Lakshmi 's 
+				4.5-5	Lakshmi 
+				5.9-9	she 
+				7.2-2	Lakshmi 
+	Chain 3 (IDENT)
+				4.13-16	Devdas 's father 's 
+				2.4-6	his father 's 
+				5.20-22	Devdas 's father 
+

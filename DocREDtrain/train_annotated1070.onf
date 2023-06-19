@@ -1,0 +1,951 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Alabama Motorsports Park is being developed north of Mobile , Alabama .
+
+
+Treebanked sentence:
+--------------------
+Alabama Motorsports Park is being developed north of Mobile , Alabama . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Alabama) (NNPS Motorsports) (NNP Park))
+    (VP (VBZ is)
+      (VP (VBG being)
+        (VP (VBN developed)
+          (NP
+            (NP (NN north))
+            (PP (IN of)
+              (NP (NNP Mobile) (, ,) (NNP Alabama)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Alabama
+			coref:	IDENT			3	0-2	Alabama Motorsports Park 
+			name:	STATE_OR_PROVINCE				0-0	Alabama 
+	1	Motorsports
+			name:	LOCATION				1-2	Motorsports Park 
+	2	Park
+	3	is
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	is 
+	4	being
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	being 
+	5	developed
+			sense:	build_up.v.05
+			prop:	develop.02
+			V		5-5	developed 
+			N-ARG-A1		0-2	Alabama Motorsports Park 
+			N-ARGM-LOC		6-10	north of Mobile , Alabama 
+	6	north
+			sense:	north.n.03
+	7	of
+	8	Mobile
+			coref:	IDENT			0	8-8	Mobile 
+			name:	TITLE				8-8	Mobile 
+	9	,
+	10	Alabama
+			name:	STATE_OR_PROVINCE				10-10	Alabama 
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was scheduled to be open in 2012 .
+
+
+Treebanked sentence:
+--------------------
+It was scheduled to be open in 2012 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN scheduled)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (ADJP (JJ open)
+                (PP (IN in)
+                  (NP (CD 2012)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			3	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	scheduled
+			sense:	schedule.v.01
+			prop:	schedule.01
+			V		2-2	scheduled 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		3-7	to be open in 2012 
+	3	to
+	4	be
+			sense:	be.v.01
+			prop:	be.01
+			V		4-4	be 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		5-5	open 
+			N-ARGM-TMP		6-7	in 2012 
+	5	open
+			sense:	open.s.21
+	6	in
+	7	2012
+			name:	DATE				7-7	2012 
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The park has plans for a lighted ' D'-shaped oval , a road course , and a karting track along with RV parks , retail shops , and condominium units on the tract .
+
+
+Treebanked sentence:
+--------------------
+The park has plans for a lighted ' D' - shaped oval , a road course , and a karting track along with RV parks , retail shops , and condominium units on the tract . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN park))
+    (VP (VBZ has)
+      (NP
+        (NP (NNS plans))
+        (PP (IN for)
+          (NP
+            (NP (DT a) (JJ lighted) (`` ')
+              (ADJP (VB D') (HYPH -) (VBN shaped))
+              (NN oval))
+            (, ,)
+            (NP (DT a) (NN road) (NN course))
+            (, ,)
+            (CC and)
+            (NP
+              (NP (DT a) (NN karting) (NN track))
+              (PP (IN along)
+                (PP (IN with)
+                  (NP
+                    (NP (NN RV) (NNS parks))
+                    (, ,)
+                    (NP (JJ retail) (NNS shops))
+                    (, ,)
+                    (CC and)
+                    (NP
+                      (NP (NN condominium) (NNS units))
+                      (PP (IN on)
+                        (NP (DT the) (NN tract))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-1	The park 
+	1	park
+			sense:	park.n.01
+	2	has
+			sense:	have.v.01
+			prop:	have.03
+			V		2-2	has 
+			N-ARG-A0		0-1	The park 
+			N-ARG-A1		3-34	plans for a lighted ' D' - shaped oval , a road course , and a karting track along with RV parks , retail shops , and condominium units on the tract 
+	3	plans
+			sense:	plan.n.01
+	4	for
+	5	a
+			coref:	IDENT			6	5-11	a lighted ' D' - shaped oval 
+	6	lighted
+			sense:	illuminated.s.01
+	7	'
+	8	D'
+			prop:	do.01
+			V		8-8	D' 
+			N-ARGM-PRD		6-6	lighted 
+	9	-
+	10	shaped
+			sense:	shape.v.03
+			prop:	shape.01
+			V		10-10	shaped 
+			N-ARGM-PRD		6-6	lighted 
+			N-ARG-A1		11-11	oval 
+	11	oval
+			sense:	ellipse.n.01
+	12	,
+	13	a
+	14	road
+			sense:	road.n.01
+	15	course
+			sense:	course.n.09
+	16	,
+	17	and
+	18	a
+	19	karting
+	20	track
+			sense:	racetrack.n.01
+	21	along
+	22	with
+	23	RV
+			sense:	recreational_vehicle.n.01
+	24	parks
+			sense:	park.n.01
+	25	,
+	26	retail
+	27	shops
+			sense:	shop.n.01
+	28	,
+	29	and
+	30	condominium
+			sense:	condominium.n.02
+	31	units
+			sense:	unit.n.02
+	32	on
+	33	the
+	34	tract
+			sense:	tract.n.01
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The park was projected to be host to a variety of motorsports , including stock - cars , trucks , open - wheel cars , sports cars , sprint cars , and motorcycles .
+
+
+Treebanked sentence:
+--------------------
+The park was projected to be host to a variety of motorsports , including stock - cars , trucks , open - wheel cars , sports cars , sprint cars , and motorcycles . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN park))
+    (VP (VBD was)
+      (VP (VBN projected)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (NP
+                (NP (NN host))
+                (PP (IN to)
+                  (NP
+                    (NP (DT a) (NN variety))
+                    (PP (IN of)
+                      (NP (NNS motorsports)))))
+                (, ,)
+                (PP (VBG including)
+                  (NP
+                    (NP (NN stock) (HYPH -) (NNS cars))
+                    (, ,)
+                    (NP (NNS trucks))
+                    (, ,)
+                    (NP
+                      (NML (JJ open) (HYPH -) (NN wheel))
+                      (NNS cars))
+                    (, ,)
+                    (NP (NNS sports) (NNS cars))
+                    (, ,)
+                    (NP (NN sprint) (NNS cars))
+                    (, ,)
+                    (CC and)
+                    (NP (NNS motorcycles))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-1	The park 
+	1	park
+			sense:	park.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	projected
+			sense:	visualize.v.01
+			prop:	project.02
+			V		3-3	projected 
+			N-ARG-A1		0-1	The park 
+			C-ARG-A1		4-32	to be host to a variety of motorsports , including stock - cars , trucks , open - wheel cars , sports cars , sprint cars , and motorcycles 
+	4	to
+	5	be
+			sense:	be.v.01
+			prop:	be.01
+			V		5-5	be 
+			N-ARG-A1		0-1	The park 
+			N-ARG-A2		6-32	host to a variety of motorsports , including stock - cars , trucks , open - wheel cars , sports cars , sprint cars , and motorcycles 
+	6	host
+			name:	TITLE				6-6	host 
+			sense:	host.n.06
+	7	to
+	8	a
+	9	variety
+			sense:	assortment.n.01
+	10	of
+	11	motorsports
+	12	,
+	13	including
+			sense:	include.v.01
+			prop:	include.01
+			V		13-13	including 
+			N-ARG-A2		8-11	a variety of motorsports 
+			N-ARG-A1		14-32	stock - cars , trucks , open - wheel cars , sports cars , sprint cars , and motorcycles 
+	14	stock
+			sense:	breed.n.01
+	15	-
+	16	cars
+			sense:	car.n.01
+	17	,
+	18	trucks
+			sense:	truck.n.01
+	19	,
+	20	open
+			sense:	exposed.s.01
+	21	-
+	22	wheel
+			sense:	wheel.n.01
+	23	cars
+			sense:	car.n.01
+	24	,
+	25	sports
+			sense:	sport.n.01
+	26	cars
+			sense:	car.n.01
+	27	,
+	28	sprint
+			sense:	dash.n.02
+	29	cars
+			sense:	car.n.01
+	30	,
+	31	and
+	32	motorcycles
+			sense:	motorcycle.n.01
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The seating capacity of the oval was expected to be around 70,000 permanent seats with the ability to expand to 125,000 .
+
+
+Treebanked sentence:
+--------------------
+The seating capacity of the oval was expected to be around 70,000 permanent seats with the ability to expand to 125,000 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN seating) (NN capacity))
+      (PP (IN of)
+        (NP (DT the) (NN oval))))
+    (VP (VBD was)
+      (VP (VBN expected)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (PP (IN around)
+                (NP
+                  (NP (CD 70,000) (JJ permanent) (NNS seats))
+                  (PP (IN with)
+                    (NP (DT the) (NN ability)))))
+              (S
+                (VP (TO to)
+                  (VP (VB expand)
+                    (PP (IN to)
+                      (NP (CD 125,000)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	seating
+			sense:	seating.n.01
+	2	capacity
+			sense:	capacity.n.03
+	3	of
+	4	the
+			coref:	IDENT			6	4-5	the oval 
+	5	oval
+			sense:	ellipse.n.01
+	6	was
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	was 
+	7	expected
+			sense:	expect.v.01
+			prop:	expect.01
+			V		7-7	expected 
+			N-ARG-A1		0-5	The seating capacity of the oval 
+			C-ARG-A1		8-20	to be around 70,000 permanent seats with the ability to expand to 125,000 
+	8	to
+	9	be
+			sense:	equal.v.01
+			prop:	be.01
+			V		9-9	be 
+			N-ARG-A1		0-5	The seating capacity of the oval 
+			N-ARG-A2		10-13	around 70,000 permanent seats 
+			N-ARGM-PRD		14-20	with the ability to expand to 125,000 
+	10	around
+	11	70,000
+			name:	NUMBER				11-11	70,000 
+	12	permanent
+			sense:	permanent.a.01
+	13	seats
+			sense:	seat.n.01
+	14	with
+	15	the
+	16	ability
+			sense:	ability.n.01
+	17	to
+	18	expand
+			sense:	expand.v.02
+			prop:	expand.01
+			V		18-18	expand 
+			N-ARG-A4		19-20	to 125,000 
+	19	to
+	20	125,000
+			name:	NUMBER				20-20	125,000 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Dale Earnhardt Jr. was listed as one of the investors when the park was announced , along with his sister Kelley Earnhardt Elledge and their brother Kerry Earnhardt .
+
+
+Treebanked sentence:
+--------------------
+Dale Earnhardt Jr. was listed as one of the investors when the park was announced , along with his sister Kelley Earnhardt Elledge and their brother Kerry Earnhardt . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NNP Dale) (NNP Earnhardt) (NNP Jr.))
+      (VP (VBD was)
+        (VP (VBN listed)
+          (PP (IN as)
+            (NP
+              (NP (CD one))
+              (PP (IN of)
+                (NP (DT the) (NNS investors)))))
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (DT the) (NN park))
+              (VP (VBD was)
+                (VP (VBN announced))))))))
+    (, ,)
+    (S
+      (PP (IN along)
+        (PP (IN with)
+          (NP (PRP$ his) (NN sister))))
+      (NP (NNP Kelley) (NNP Earnhardt) (NNP Elledge)))
+    (CC and)
+    (S
+      (NP (PRP$ their) (NN brother))
+      (NP (NNP Kerry) (NNP Earnhardt)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Dale
+			coref:	IDENT			4	0-2	Dale Earnhardt Jr. 
+			name:	PERSON				0-2	Dale Earnhardt Jr. 
+	1	Earnhardt
+	2	Jr.
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	listed
+			sense:	list.v.02
+			prop:	list.01
+			V		4-4	listed 
+			N-ARG-A1		0-2	Dale Earnhardt Jr. 
+			N-ARG-A2		5-9	as one of the investors 
+			N-ARGM-TMP		10-14	when the park was announced 
+			N-ARGM-ADV		16-27	along with his sister Kelley Earnhardt Elledge and their brother Kerry Earnhardt 
+	5	as
+	6	one
+			name:	NUMBER				6-6	one 
+	7	of
+	8	the
+	9	investors
+			sense:	investor.n.01
+	10	when
+	11	the
+			coref:	IDENT			3	11-12	the park 
+	12	park
+			sense:	ballpark.n.01
+	13	was
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	was 
+	14	announced
+			sense:	announce.v.02
+			prop:	announce.01
+			V		14-14	announced 
+			N-ARGM-TMP		10-10	when 
+			N-ARG-A1		11-12	the park 
+	15	,
+	16	along
+	17	with
+	18	his
+			coref:	IDENT			4	18-18	his 
+	19	sister
+			sense:	sister.n.01
+	20	Kelley
+			name:	PERSON				20-22	Kelley Earnhardt Elledge 
+	21	Earnhardt
+	22	Elledge
+	23	and
+	24	their
+			coref:	IDENT			5	24-24	their 
+	25	brother
+			sense:	brother.n.01
+	26	Kerry
+			name:	PERSON				26-27	Kerry Earnhardt 
+	27	Earnhardt
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As of August 2009 they were no longer affiliated with the park and Dale Earnhardt Jr. 's endorsement was removed from the park 's name .
+
+
+Treebanked sentence:
+--------------------
+As of August 2009 they were no longer affiliated with the park and Dale Earnhardt Jr. 's endorsement was removed from the park 's name . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN As)
+        (PP (IN of)
+          (NP (NNP August) (CD 2009))))
+      (NP (PRP they))
+      (VP (VBD were)
+        (ADVP (RB no) (RBR longer))
+        (VP (VBN affiliated)
+          (PP (IN with)
+            (NP (DT the) (NN park))))))
+    (CC and)
+    (S
+      (NP
+        (NP (NNP Dale) (NNP Earnhardt) (NNP Jr.) (POS 's))
+        (NN endorsement))
+      (VP (VBD was)
+        (VP (VBN removed)
+          (PP (IN from)
+            (NP
+              (NP (DT the) (NN park) (POS 's))
+              (NN name))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	of
+	2	August
+			name:	DATE				2-3	August 2009 
+	3	2009
+	4	they
+			coref:	IDENT			5	4-4	they 
+	5	were
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	were 
+	6	no
+			sense:	no.r.01
+	7	longer
+			sense:	long.r.01
+	8	affiliated
+			sense:	affiliate.v.02
+			prop:	affiliate.01
+			V		8-8	affiliated 
+			N-ARGM-TMP		0-3	As of August 2009 
+			N-ARG-A1		4-4	they 
+			N-ARGM-TMP		6-6	no 
+			N-ARGM-NEG		7-7	longer 
+			N-ARG-A2		9-11	with the park 
+	9	with
+	10	the
+			coref:	IDENT			3	10-11	the park 
+	11	park
+			sense:	park.n.01
+	12	and
+	13	Dale
+			coref:	IDENT			4	13-16	Dale Earnhardt Jr. 's 
+			name:	PERSON				13-15	Dale Earnhardt Jr. 
+	14	Earnhardt
+	15	Jr.
+	16	's
+	17	endorsement
+			sense:	sanction.n.01
+	18	was
+			sense:	be.v.01
+			prop:	be.03
+			V		18-18	was 
+	19	removed
+			sense:	remove.v.01
+			prop:	remove.01
+			V		19-19	removed 
+			N-ARG-A1		13-17	Dale Earnhardt Jr. 's endorsement 
+			N-ARG-A2		20-24	from the park 's name 
+	20	from
+	21	the
+			coref:	IDENT			3	21-23	the park 's 
+	22	park
+			sense:	park.n.01
+	23	's
+	24	name
+			sense:	name.n.01
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Other investors include former Mobile mayor , Mike Dow .
+
+
+Treebanked sentence:
+--------------------
+Other investors include former Mobile mayor , Mike Dow . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (JJ Other) (NNS investors))
+    (VP (VBP include)
+      (NP
+        (NP
+          (NML (JJ former) (NNP Mobile))
+          (NN mayor))
+        (, ,)
+        (NP (NNP Mike) (NNP Dow))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Other
+			sense:	other.a.01
+	1	investors
+			sense:	investor.n.01
+	2	include
+			sense:	include.v.01
+			prop:	include.01
+			V		2-2	include 
+			N-ARG-A2		0-1	Other investors 
+			N-ARG-A1		3-8	former Mobile mayor , Mike Dow 
+	3	former
+			sense:	erstwhile.s.01
+	4	Mobile
+			coref:	IDENT			0	4-4	Mobile 
+			name:	TITLE				4-5	Mobile mayor 
+	5	mayor
+			sense:	mayor.n.01
+	6	,
+	7	Mike
+			name:	PERSON				7-8	Mike Dow 
+	8	Dow
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2009 the group developing the park received special tax considerations from Prichard , Alabama to build roads and infrastructure on the tract .
+
+
+Treebanked sentence:
+--------------------
+In 2009 the group developing the park received special tax considerations from Prichard , Alabama to build roads and infrastructure on the tract . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2009)))
+    (NP
+      (NP (DT the) (NN group))
+      (VP (VBG developing)
+        (NP (DT the) (NN park))))
+    (VP (VBD received)
+      (NP (JJ special) (NN tax) (NNS considerations))
+      (PP (IN from)
+        (NP (NNP Prichard) (, ,) (NNP Alabama)))
+      (S
+        (VP (TO to)
+          (VP (VB build)
+            (NP (NNS roads)
+              (CC and)
+              (NN infrastructure))
+            (PP (IN on)
+              (NP (DT the) (NN tract)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2009
+			name:	DATE				1-1	2009 
+	2	the
+	3	group
+			sense:	group.n.01
+	4	developing
+			sense:	build_up.v.05
+			prop:	develop.02
+			V		4-4	developing 
+			N-ARG-A0		2-3	the group 
+			N-ARG-A1		5-6	the park 
+	5	the
+			coref:	IDENT			3	5-6	the park 
+	6	park
+			sense:	park.n.01
+	7	received
+			sense:	receive.v.01
+			prop:	receive.01
+			V		7-7	received 
+			N-ARGM-TMP		0-1	In 2009 
+			N-ARG-A0		2-6	the group developing the park 
+			N-ARG-A1		8-10	special tax considerations 
+			N-ARG-A2		11-14	from Prichard , Alabama 
+			N-ARGM-PRP		15-22	to build roads and infrastructure on the tract 
+	8	special
+			sense:	particular.s.01
+	9	tax
+			sense:	tax.n.01
+	10	considerations
+			sense:	retainer.n.01
+	11	from
+	12	Prichard
+			coref:	IDENT			1	12-12	Prichard 
+			name:	CITY				12-12	Prichard 
+	13	,
+	14	Alabama
+			name:	STATE_OR_PROVINCE				14-14	Alabama 
+	15	to
+	16	build
+			sense:	construct.v.01
+			prop:	build.01
+			V		16-16	build 
+			N-ARG-A0		2-6	the group developing the park 
+			N-ARG-A1		17-19	roads and infrastructure 
+			N-ARGM-LOC		20-22	on the tract 
+	17	roads
+			sense:	road.n.01
+	18	and
+	19	infrastructure
+			sense:	infrastructure.n.02
+	20	on
+	21	the
+	22	tract
+			sense:	tract.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Saraland , Alabama has not accepted a similar tax agreement with the park yet .
+
+
+Treebanked sentence:
+--------------------
+Saraland , Alabama has not accepted a similar tax agreement with the park yet . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Saraland) (, ,) (NNP Alabama))
+    (VP (VBZ has) (RB not)
+      (VP (VBN accepted)
+        (NP (DT a) (JJ similar) (NN tax) (NN agreement))
+        (PP (IN with)
+          (NP (DT the) (NN park)))
+        (ADVP (RB yet))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Saraland
+			coref:	IDENT			2	0-0	Saraland 
+			name:	CITY				0-0	Saraland 
+	1	,
+	2	Alabama
+			name:	STATE_OR_PROVINCE				2-2	Alabama 
+	3	has
+			sense:	accept.v.02
+			prop:	have.01
+			V		3-3	has 
+	4	not
+			sense:	not.r.01
+	5	accepted
+			sense:	accept.v.02
+			prop:	accept.01
+			V		5-5	accepted 
+			N-ARGM-DIS		0-0	Saraland 
+			N-ARG-A0		2-2	Alabama 
+			N-ARGM-NEG		4-4	not 
+			N-ARG-A1		6-12	a similar tax agreement with the park 
+			N-ARGM-TMP		13-13	yet 
+	6	a
+	7	similar
+			sense:	similar.a.01
+	8	tax
+			sense:	tax.n.01
+	9	agreement
+			sense:	agreement.n.01
+	10	with
+	11	the
+			coref:	IDENT			3	11-12	the park 
+	12	park
+			sense:	park.n.01
+	13	yet
+			sense:	yet.r.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The tract is located on the border between Prichard and Saraland .
+
+
+Treebanked sentence:
+--------------------
+The tract is located on the border between Prichard and Saraland . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN tract))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN border))
+            (PP (IN between)
+              (NP (NNP Prichard)
+                (CC and)
+                (NNP Saraland)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	tract
+			sense:	tract.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		3-3	located 
+			N-ARG-A1		0-1	The tract 
+			N-ARGM-LOC		4-10	on the border between Prichard and Saraland 
+	4	on
+	5	the
+	6	border
+			sense:	margin.n.01
+	7	between
+	8	Prichard
+			coref:	IDENT			1	8-8	Prichard 
+			name:	PERSON				8-8	Prichard 
+	9	and
+	10	Saraland
+			coref:	IDENT			2	10-10	Saraland 
+			name:	CITY				10-10	Saraland 
+	11	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.8-8	Mobile 
+				7.4-4	Mobile 
+	Chain 1 (IDENT)
+				8.12-12	Prichard 
+				10.8-8	Prichard 
+	Chain 2 (IDENT)
+				9.0-0	Saraland 
+				10.10-10	Saraland 
+	Chain 3 (IDENT)
+				0.0-2	Alabama Motorsports Park 
+				1.0-0	It 
+				2.0-1	The park 
+				3.0-1	The park 
+				5.11-12	the park 
+				6.10-11	the park 
+				6.21-23	the park 's 
+				8.5-6	the park 
+				9.11-12	the park 
+	Chain 4 (IDENT)
+				6.13-16	Dale Earnhardt Jr. 's 
+				5.0-2	Dale Earnhardt Jr. 
+				5.18-18	his 
+	Chain 5 (IDENT)
+				5.24-24	their 
+				6.4-4	they 
+	Chain 6 (IDENT)
+				2.5-11	a lighted ' D' - shaped oval 
+				4.4-5	the oval 
+

@@ -1,0 +1,982 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Conklin Shows was the largest traveling amusement corporation in North America .
+
+
+Treebanked sentence:
+--------------------
+Conklin Shows was the largest traveling amusement corporation in North America . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Conklin))
+    (VP (VBZ Shows)
+      (SBAR
+        (S
+          (VP (VBD was)
+            (NP
+              (NP (DT the) (JJS largest))
+              (VP (VBG traveling)
+                (NP
+                  (NP (NN amusement) (NN corporation))
+                  (PP (IN in)
+                    (NP (NNP North) (NNP America))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Conklin
+			coref:	IDENT			10	0-1	Conklin Shows 
+			name:	ORGANIZATION				0-1	Conklin Shows 
+	1	Shows
+			sense:	show.v.01
+			prop:	show.01
+			V		1-1	Shows 
+			N-ARG-A0		0-0	Conklin 
+	2	was
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	Conklin Shows 
+			N-ARG-A2		3-10	the largest traveling amusement corporation in North America 
+	3	the
+	4	largest
+			sense:	large.a.01
+	5	traveling
+			sense:	travel.v.01
+			prop:	travel.01
+			V		5-5	traveling 
+			N-ARG-A0		6-7	amusement corporation 
+	6	amusement
+			sense:	entertainment.n.01
+	7	corporation
+			sense:	corporation.n.01
+	8	in
+	9	North
+			coref:	IDENT			3	9-10	North America 
+			name:	LOCATION				9-9	North 
+	10	America
+			name:	COUNTRY				10-10	America 
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The 75-year - old company operated traveling carnivals at various summer agricultural shows across North America and is based in Brantford , Ontario and formerly also in West Palm Beach , Florida .
+
+
+Treebanked sentence:
+--------------------
+The 75 - year - old company operated traveling carnivals at various summer agricultural shows across North America and is based in Brantford , Ontario and formerly also in West Palm Beach , Florida . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The)
+      (ADJP
+        (NP (CD 75) (HYPH -) (NN year))
+        (HYPH -) (JJ old))
+      (NN company))
+    (VP
+      (VP (VBD operated)
+        (NP (VBG traveling) (NNS carnivals))
+        (PP (IN at)
+          (NP (JJ various) (NN summer) (JJ agricultural) (NNS shows)))
+        (PP (IN across)
+          (NP (NNP North) (NNP America))))
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN based)
+          (PP
+            (PP (IN in)
+              (NP (NNP Brantford) (, ,) (NNP Ontario)))
+            (CC and)
+            (PP
+              (ADVP (RB formerly))
+              (ADVP (RB also))
+              (IN in)
+              (NP
+                (NP (NNP West) (NNP Palm) (NNP Beach))
+                (, ,)
+                (NP (NNP Florida))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			6	0-6	The 75 - year - old company 
+	1	75
+			name:	DURATION				1-3	75 - year 
+	2	-
+	3	year
+			sense:	year.n.01
+	4	-
+	5	old
+			sense:	old.a.01
+	6	company
+			sense:	company.n.01
+	7	operated
+			sense:	operate.v.01
+			prop:	operate.01
+			V		7-7	operated 
+			N-ARG-A0		0-6	The 75 - year - old company 
+			N-ARG-A1		8-9	traveling carnivals 
+			N-ARGM-LOC		10-17	at various summer agricultural shows across North America 
+	8	traveling
+			sense:	travel.v.01
+			prop:	travel.01
+			V		8-8	traveling 
+			N-ARG-A0		9-9	carnivals 
+	9	carnivals
+			sense:	carnival.n.03
+	10	at
+	11	various
+			sense:	respective.s.01
+	12	summer
+			coref:	IDENT			9	12-12	summer 
+			name:	DATE				12-12	summer 
+			sense:	summer.n.01
+	13	agricultural
+			sense:	agricultural.a.01
+	14	shows
+			sense:	show.n.03
+	15	across
+	16	North
+			coref:	IDENT			3	16-17	North America 
+			name:	LOCATION				16-16	North 
+	17	America
+			name:	COUNTRY				17-17	America 
+	18	and
+	19	is
+			sense:	be.v.01
+			prop:	be.03
+			V		19-19	is 
+	20	based
+			sense:	base.v.02
+			prop:	base.01
+			V		20-20	based 
+			N-ARG-A1		0-6	The 75 - year - old company 
+			N-ARGM-LOC		21-33	in Brantford , Ontario and formerly also in West Palm Beach , Florida 
+	21	in
+	22	Brantford
+			name:	CITY				22-22	Brantford 
+	23	,
+	24	Ontario
+			name:	STATE_OR_PROVINCE				24-24	Ontario 
+	25	and
+	26	formerly
+			sense:	once.r.03
+	27	also
+			sense:	besides.r.02
+	28	in
+	29	West
+			name:	CITY				29-31	West Palm Beach 
+	30	Palm
+	31	Beach
+	32	,
+	33	Florida
+			coref:	IDENT			11	33-33	Florida 
+			name:	STATE_OR_PROVINCE				33-33	Florida 
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The company has a long history in Canada , providing entertainment for generations of kids and adults .
+
+
+Treebanked sentence:
+--------------------
+The company has a long history in Canada , providing entertainment for generations of kids and adults . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN company))
+    (VP (VBZ has)
+      (NP
+        (NP (DT a) (JJ long) (NN history))
+        (PP (IN in)
+          (NP (NNP Canada))))
+      (, ,)
+      (S
+        (VP (VBG providing)
+          (NP (NN entertainment))
+          (PP (IN for)
+            (NP
+              (NP (NNS generations))
+              (PP (IN of)
+                (NP (NNS kids)
+                  (CC and)
+                  (NNS adults))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			6	0-1	The company 
+	1	company
+			sense:	company.n.01
+	2	has
+			sense:	have.v.01
+			prop:	have.03
+			V		2-2	has 
+			N-ARG-A0		0-1	The company 
+			N-ARG-A1		3-5	a long history 
+			N-ARGM-LOC		6-7	in Canada 
+			N-ARGM-PRD		9-16	providing entertainment for generations of kids and adults 
+	3	a
+	4	long
+			sense:	long.a.01
+	5	history
+			sense:	history.n.01
+	6	in
+	7	Canada
+			coref:	IDENT			8	7-7	Canada 
+			name:	COUNTRY				7-7	Canada 
+	8	,
+	9	providing
+			sense:	supply.v.01
+			prop:	provide.01
+			V		9-9	providing 
+			N-ARG-A0		0-1	The company 
+			N-ARG-A1		10-10	entertainment 
+			N-ARG-A2		11-16	for generations of kids and adults 
+	10	entertainment
+			sense:	entertainment.n.01
+	11	for
+	12	generations
+			sense:	coevals.n.01
+	13	of
+	14	kids
+			sense:	child.n.01
+	15	and
+	16	adults
+			sense:	adult.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The organization used to operate the midway services for some of Canada 's largest summer fairs including the Canadian National Exhibition in Toronto , the Calgary Stampede , and Edmonton 's K - Days .
+
+
+Treebanked sentence:
+--------------------
+The organization used to operate the midway services for some of Canada 's largest summer fairs including the Canadian National Exhibition in Toronto , the Calgary Stampede , and Edmonton 's K - Days . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP (DT The) (NN organization))
+    (VP (VBN used)
+      (S
+        (VP (TO to)
+          (VP (VB operate)
+            (NP (DT the) (NN midway) (NNS services))
+            (PP (IN for)
+              (NP
+                (NP (DT some))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP Canada) (POS 's))
+                    (JJS largest) (NN summer) (NNS fairs)))
+                (PP (VBG including)
+                  (NP
+                    (NP (DT the) (NNP Canadian) (NNP National) (NNP Exhibition))
+                    (PP (IN in)
+                      (NP
+                        (NP (NNP Toronto))
+                        (, ,)
+                        (NP (DT the) (NNP Calgary) (NNP Stampede))
+                        (, ,)
+                        (CC and)
+                        (NP
+                          (NP (NNP Edmonton) (POS 's))
+                          (NN K) (HYPH -) (NNS Days))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	organization
+			sense:	organization.n.01
+	2	used
+			sense:	use.v.01
+			prop:	use.03
+			V		2-2	used 
+	3	to
+	4	operate
+			sense:	operate.v.01
+			prop:	operate.01
+			V		4-4	operate 
+			N-ARG-A0		0-1	The organization 
+			N-ARG-A1		5-33	the midway services for some of Canada 's largest summer fairs including the Canadian National Exhibition in Toronto , the Calgary Stampede , and Edmonton 's K - Days 
+	5	the
+	6	midway
+			sense:	midway.n.01
+	7	services
+			sense:	service.n.01
+	8	for
+	9	some
+	10	of
+	11	Canada
+			coref:	IDENT			8	11-12	Canada 's 
+			name:	COUNTRY				11-11	Canada 
+	12	's
+	13	largest
+			sense:	large.a.01
+	14	summer
+			coref:	IDENT			9	14-14	summer 
+			name:	DATE				14-14	summer 
+			sense:	summer.n.01
+	15	fairs
+			sense:	fair.n.02
+	16	including
+			sense:	include.v.01
+			prop:	include.01
+			V		16-16	including 
+			N-ARG-A2		11-15	Canada 's largest summer fairs 
+			N-ARG-A1		17-33	the Canadian National Exhibition in Toronto , the Calgary Stampede , and Edmonton 's K - Days 
+	17	the
+	18	Canadian
+			name:	ORGANIZATION				18-20	Canadian National Exhibition 
+	19	National
+	20	Exhibition
+	21	in
+	22	Toronto
+			coref:	IDENT			1	22-22	Toronto 
+			name:	CITY				22-22	Toronto 
+	23	,
+	24	the
+			coref:	IDENT			4	24-26	the Calgary Stampede 
+	25	Calgary
+			name:	ORGANIZATION				25-26	Calgary Stampede 
+	26	Stampede
+	27	,
+	28	and
+	29	Edmonton
+			name:	CITY				29-29	Edmonton 
+	30	's
+	31	K
+			sense:	k.n.06
+	32	-
+	33	Days
+			name:	DURATION				33-33	Days 
+			sense:	day.n.03
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2004 , Conklin Shows International route and equipment were sold to North American Midway Entertainment .
+
+
+Treebanked sentence:
+--------------------
+In 2004 , Conklin Shows International route and equipment were sold to North American Midway Entertainment . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2004)))
+    (, ,)
+    (NP (NNP Conklin))
+    (VP (VBZ Shows)
+      (SBAR
+        (S
+          (NP (NNP International) (NN route)
+            (CC and)
+            (NN equipment))
+          (VP (VBD were)
+            (VP (VBN sold)
+              (PP (IN to)
+                (NP (NNP North) (NNP American) (NNP Midway) (NNP Entertainment))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2004
+			name:	DATE				1-1	2004 
+	2	,
+	3	Conklin
+			name:	ORGANIZATION				3-5	Conklin Shows International 
+	4	Shows
+			sense:	show.v.01
+			prop:	show.01
+			V		4-4	Shows 
+			N-ARG-A0		3-3	Conklin 
+			N-ARG-A1		5-5	International 
+	5	International
+			coref:	IDENT			5	5-6	International route 
+	6	route
+			sense:	path.n.03
+	7	and
+	8	equipment
+			sense:	equipment.n.01
+	9	were
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	were 
+	10	sold
+			sense:	sell.v.01
+			prop:	sell.01
+			V		10-10	sold 
+			N-ARGM-TMP		0-1	In 2004 
+			N-ARG-A1		3-8	Conklin Shows International route and equipment 
+			N-ARG-A2		11-15	to North American Midway Entertainment 
+	11	to
+	12	North
+	13	American
+			name:	NATIONALITY				13-13	American 
+	14	Midway
+	15	Entertainment
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Two of the remaining companies , World 's Finest Shows and Conklin Super Shows , still are part of the Conklin Group of Carnival Companies .
+
+
+Treebanked sentence:
+--------------------
+Two of the remaining companies , World 's Finest Shows and Conklin Super Shows , still are part of the Conklin Group of Carnival Companies . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (CD Two))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (VBG remaining) (NNS companies))
+          (, ,)
+          (S
+            (S
+              (ADJP
+                (ADJP
+                  (NP (NNP World) (POS 's))
+                  (JJS Finest))
+                (SBAR
+                  (S
+                    (VP (VBZ Shows))))))
+            (CC and)
+            (S
+              (NP (NNP Conklin) (NNP Super))
+              (VP (VBZ Shows)))))))
+    (, ,)
+    (ADVP (RB still))
+    (VP (VBP are)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Conklin) (NNP Group))
+            (PP (IN of)
+              (NP (NNP Carnival) (NNPS Companies)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Two
+			name:	NUMBER				0-0	Two 
+	1	of
+	2	the
+	3	remaining
+			sense:	remain.v.03
+			prop:	remain.01
+			V		3-3	remaining 
+			N-ARG-A1		4-4	companies 
+	4	companies
+			sense:	company.n.01
+	5	,
+	6	World
+			coref:	IDENT			7	6-7	World 's 
+			name:	ORGANIZATION				6-6	World 
+	7	's
+	8	Finest
+			sense:	fine.s.04
+	9	Shows
+			sense:	show.v.01
+			prop:	show.01
+			V		9-9	Shows 
+			N-ARG-A2		6-7	World 's 
+			N-ARGM-ADJ		8-8	Finest 
+	10	and
+	11	Conklin
+			name:	ORGANIZATION				11-13	Conklin Super Shows 
+	12	Super
+	13	Shows
+			sense:	show.v.01
+			prop:	show.01
+			V		13-13	Shows 
+			N-ARG-A1		11-11	Conklin 
+			N-ARGM-ADJ		12-12	Super 
+	14	,
+	15	still
+			sense:	still.r.01
+	16	are
+			sense:	be.v.01
+			prop:	be.01
+			V		16-16	are 
+			N-ARG-A1		0-14	Two of the remaining companies , World 's Finest Shows and Conklin Super Shows , 
+			N-ARGM-TMP		15-15	still 
+			N-ARG-A2		17-24	part of the Conklin Group of Carnival Companies 
+	17	part
+			sense:	part.n.01
+	18	of
+	19	the
+	20	Conklin
+			name:	ORGANIZATION				20-24	Conklin Group of Carnival Companies 
+	21	Group
+	22	of
+	23	Carnival
+	24	Companies
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+World 's Finest Shows route includes more than 60 fairs , all in Ontario , Canada .
+
+
+Treebanked sentence:
+--------------------
+World 's Finest Shows route includes more than 60 fairs , all in Ontario , Canada . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP World) (POS 's))
+      (ADJP
+        (ADJP (JJS Finest))
+        (SBAR
+          (S
+            (VP (VBZ Shows)))))
+      (NN route))
+    (VP (VBZ includes)
+      (NP
+        (NP
+          (QP (JJR more) (IN than) (CD 60))
+          (NNS fairs))
+        (, ,)
+        (NP
+          (NP (DT all))
+          (PP (IN in)
+            (NP (NNP Ontario) (, ,) (NNP Canada))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	World
+			coref:	IDENT			5	0-4	World 's Finest Shows route 
+			coref:	IDENT			7	0-1	World 's 
+	1	's
+	2	Finest
+			name:	MISC				2-3	Finest Shows 
+			sense:	fine.s.04
+	3	Shows
+			sense:	show.v.01
+			prop:	show.01
+			V		3-3	Shows 
+			N-ARG-A2		0-1	World 's 
+			N-ARGM-ADJ		2-2	Finest 
+	4	route
+			sense:	path.n.03
+	5	includes
+			sense:	include.v.01
+			prop:	include.01
+			V		5-5	includes 
+			N-ARG-A2		0-4	World 's Finest Shows route 
+			N-ARG-A1		6-15	more than 60 fairs , all in Ontario , Canada 
+	6	more
+			sense:	more.a.02
+	7	than
+	8	60
+			name:	NUMBER				8-8	60 
+	9	fairs
+			sense:	fair.n.02
+	10	,
+	11	all
+	12	in
+	13	Ontario
+			coref:	IDENT			2	13-13	Ontario 
+			coref:	IDENT			8	13-15	Ontario , Canada 
+			name:	STATE_OR_PROVINCE				13-13	Ontario 
+	14	,
+	15	Canada
+			name:	COUNTRY				15-15	Canada 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+They are both based in Ontario , Canada .
+
+
+Treebanked sentence:
+--------------------
+They are both based in Ontario , Canada . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are) (DT both)
+      (PP (VBN based)
+        (PP (IN in)
+          (NP (NNP Ontario) (, ,) (NNP Canada)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	They
+	1	are
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	are 
+	2	both
+	3	based
+			sense:	base.v.02
+			prop:	base.01
+			V		3-3	based 
+			N-ARG-A1		0-0	They 
+			N-ARGM-ADV		2-2	both 
+			N-ARGM-LOC		4-7	in Ontario , Canada 
+	4	in
+	5	Ontario
+			coref:	IDENT			2	5-5	Ontario 
+			name:	STATE_OR_PROVINCE				5-5	Ontario 
+	6	,
+	7	Canada
+			coref:	IDENT			8	7-7	Canada 
+			name:	COUNTRY				7-7	Canada 
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Conklin Shows , as it was known in Canada and the US , now operates under North American Midway Entertainment ( NAME ) .
+
+
+Treebanked sentence:
+--------------------
+Conklin Shows , as it was known in Canada and the US , now operates under North American Midway Entertainment ( NAME ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Conklin))
+    (VP (VBZ Shows)
+      (SBAR
+        (S (, ,)
+          (SBAR (IN as)
+            (S
+              (NP (PRP it))
+              (VP (VBD was)
+                (VP (VBN known)
+                  (PP (IN in)
+                    (NP
+                      (NP (NNP Canada))
+                      (CC and)
+                      (NP (DT the) (NNP US))))))))
+          (, ,)
+          (ADVP (RB now))
+          (VP (VBZ operates)
+            (PP (IN under)
+              (NP (NNP North) (NNP American) (NNP Midway) (NNP Entertainment)))
+            (PRN (-LRB- -LRB-)
+              (NP (NN NAME))
+              (-RRB- -RRB-))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Conklin
+			coref:	IDENT			10	0-1	Conklin Shows 
+			name:	ORGANIZATION				0-1	Conklin Shows 
+	1	Shows
+			sense:	show.v.01
+			prop:	show.01
+			V		1-1	Shows 
+			N-ARG-A1		0-0	Conklin 
+			N-ARGM-ADJ		3-11	as it was known in Canada and the US 
+	2	,
+	3	as
+	4	it
+			coref:	IDENT			10	4-4	it 
+	5	was
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	was 
+	6	known
+			sense:	know.v.04
+			prop:	know.01
+			V		6-6	known 
+			N-ARG-A1		4-4	it 
+			N-ARGM-LOC		7-11	in Canada and the US 
+	7	in
+	8	Canada
+			coref:	IDENT			8	8-8	Canada 
+			name:	COUNTRY				8-8	Canada 
+	9	and
+	10	the
+	11	US
+			name:	COUNTRY				11-11	US 
+	12	,
+	13	now
+			name:	DATE				13-13	now 
+			sense:	nowadays.r.01
+	14	operates
+			sense:	function.v.01
+			prop:	operate.01
+			V		14-14	operates 
+			N-ARG-A1		0-11	Conklin Shows , as it was known in Canada and the US 
+			N-ARGM-TMP		13-13	now 
+			N-ARGM-MNR		15-22	under North American Midway Entertainment ( NAME ) 
+	15	under
+	16	North
+			name:	MISC				16-16	North 
+	17	American
+			name:	NATIONALITY				17-17	American 
+	18	Midway
+			name:	MISC				18-19	Midway Entertainment 
+	19	Entertainment
+	20	(
+	21	NAME
+			sense:	name.n.01
+	22	)
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The carnival provides the midway at fairs and exhibitions , including , Miami , Florida 's Miami - Dade County Fair , Edmonton , Alberta 's K - Days Calgary , Alberta 's Calgary Stampede and Toronto , Ontario 's CNE , The Canadian National Exhibition .
+
+
+Treebanked sentence:
+--------------------
+The carnival provides the midway at fairs and exhibitions , including , Miami , Florida 's Miami - Dade County Fair , Edmonton , Alberta 's K - Days Calgary , Alberta 's Calgary Stampede and Toronto , Ontario 's CNE , The Canadian National Exhibition . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN carnival))
+    (VP (VBZ provides)
+      (NP
+        (NP (DT the) (NN midway))
+        (PP (IN at)
+          (NP (NNS fairs)
+            (CC and)
+            (NNS exhibitions)))
+        (, ,)
+        (PP (VBG including)
+          (NP
+            (NP (, ,) (NNP Miami))
+            (, ,)
+            (NP
+              (NP
+                (NP (NNP Florida) (POS 's))
+                (NML (NNP Miami) (HYPH -) (NNP Dade))
+                (NNP County) (NNP Fair))
+              (, ,)
+              (NP (NNP Edmonton))
+              (, ,)
+              (NP
+                (NP (NNP Alberta) (POS 's))
+                (NML (NN K) (HYPH -) (NNS Days))
+                (NNP Calgary))
+              (, ,)
+              (NP
+                (NP (NNP Alberta) (POS 's))
+                (NNP Calgary) (NNP Stampede)
+                (CC and)
+                (NNP Toronto))
+              (, ,)
+              (NP
+                (NP (NNP Ontario) (POS 's))
+                (NNP CNE))
+              (, ,)
+              (NP (DT The)
+                (NML (NNP Canadian) (NNP National))
+                (NNP Exhibition)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	carnival
+			sense:	carnival.n.03
+	2	provides
+			sense:	supply.v.01
+			prop:	provide.01
+			V		2-2	provides 
+			N-ARG-A0		0-1	The carnival 
+			N-ARG-A1		3-4	the midway 
+			N-ARGM-LOC		5-45	at fairs and exhibitions , including , Miami , Florida 's Miami - Dade County Fair , Edmonton , Alberta 's K - Days Calgary , Alberta 's Calgary Stampede and Toronto , Ontario 's CNE , The Canadian National Exhibition 
+	3	the
+	4	midway
+			sense:	midway.n.01
+	5	at
+	6	fairs
+			sense:	fair.n.02
+	7	and
+	8	exhibitions
+			sense:	exhibition.n.02
+	9	,
+	10	including
+			sense:	include.v.01
+			prop:	include.01
+			V		10-10	including 
+			N-ARG-A2		6-8	fairs and exhibitions 
+			N-ARG-A1		12-45	Miami , Florida 's Miami - Dade County Fair , Edmonton , Alberta 's K - Days Calgary , Alberta 's Calgary Stampede and Toronto , Ontario 's CNE , The Canadian National Exhibition 
+	11	,
+	12	Miami
+			name:	CITY				12-12	Miami 
+	13	,
+	14	Florida
+			coref:	IDENT			11	14-15	Florida 's 
+			name:	STATE_OR_PROVINCE				14-14	Florida 
+	15	's
+	16	Miami
+			name:	CITY				16-16	Miami 
+	17	-
+			name:	LOCATION				17-20	- Dade County Fair 
+	18	Dade
+	19	County
+	20	Fair
+	21	,
+	22	Edmonton
+			name:	CITY				22-22	Edmonton 
+	23	,
+	24	Alberta
+			coref:	IDENT			0	24-25	Alberta 's 
+			name:	STATE_OR_PROVINCE				24-24	Alberta 
+	25	's
+	26	K
+			name:	ORGANIZATION				26-29	K - Days Calgary 
+			sense:	k.n.06
+	27	-
+	28	Days
+			sense:	day.n.03
+	29	Calgary
+	30	,
+	31	Alberta
+			coref:	IDENT			0	31-32	Alberta 's 
+			coref:	IDENT			4	31-34	Alberta 's Calgary Stampede 
+			name:	STATE_OR_PROVINCE				31-31	Alberta 
+	32	's
+	33	Calgary
+			name:	ORGANIZATION				33-34	Calgary Stampede 
+	34	Stampede
+	35	and
+	36	Toronto
+			coref:	IDENT			1	36-36	Toronto 
+			name:	CITY				36-36	Toronto 
+	37	,
+	38	Ontario
+			coref:	IDENT			2	38-39	Ontario 's 
+			name:	STATE_OR_PROVINCE				38-38	Ontario 
+	39	's
+	40	CNE
+			name:	ORGANIZATION				40-40	CNE 
+	41	,
+	42	The
+	43	Canadian
+			name:	NATIONALITY				43-43	Canadian 
+	44	National
+	45	Exhibition
+	46	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				9.24-25	Alberta 's 
+				9.31-32	Alberta 's 
+	Chain 1 (IDENT)
+				3.22-22	Toronto 
+				9.36-36	Toronto 
+	Chain 2 (IDENT)
+				9.38-39	Ontario 's 
+				6.13-13	Ontario 
+				7.5-5	Ontario 
+	Chain 3 (IDENT)
+				0.9-10	North America 
+				1.16-17	North America 
+	Chain 4 (IDENT)
+				9.31-34	Alberta 's Calgary Stampede 
+				3.24-26	the Calgary Stampede 
+	Chain 5 (IDENT)
+				6.0-4	World 's Finest Shows route 
+				4.5-6	International route 
+	Chain 6 (IDENT)
+				1.0-6	The 75 - year - old company 
+				2.0-1	The company 
+	Chain 7 (IDENT)
+				5.6-7	World 's 
+				6.0-1	World 's 
+	Chain 8 (IDENT)
+				6.13-15	Ontario , Canada 
+				2.7-7	Canada 
+				3.11-12	Canada 's 
+				7.7-7	Canada 
+				8.8-8	Canada 
+	Chain 9 (IDENT)
+				1.12-12	summer 
+				3.14-14	summer 
+	Chain 10 (IDENT)
+				0.0-1	Conklin Shows 
+				8.0-1	Conklin Shows 
+				8.4-4	it 
+	Chain 11 (IDENT)
+				9.14-15	Florida 's 
+				1.33-33	Florida 
+

@@ -1,0 +1,828 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+South Wigston High School was founded in 1938 and is a school serving the local community of South Wigston .
+
+
+Treebanked sentence:
+--------------------
+South Wigston High School was founded in 1938 and is a school serving the local community of South Wigston . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP South) (NNP Wigston) (NNP High) (NNP School))
+    (VP
+      (VP (VBD was)
+        (VP (VBN founded)
+          (PP (IN in)
+            (NP (CD 1938)))))
+      (CC and)
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (NN school))
+          (VP (VBG serving)
+            (NP
+              (NP (DT the) (JJ local) (NN community))
+              (PP (IN of)
+                (NP (NNP South) (NNP Wigston))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	South
+			coref:	IDENT			0	0-3	South Wigston High School 
+			name:	ORGANIZATION				0-3	South Wigston High School 
+	1	Wigston
+	2	High
+	3	School
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		5-5	founded 
+			N-ARG-A1		0-3	South Wigston High School 
+			N-ARGM-TMP		6-7	in 1938 
+	6	in
+	7	1938
+			name:	DATE				7-7	1938 
+	8	and
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-3	South Wigston High School 
+			N-ARG-A2		10-18	a school serving the local community of South Wigston 
+	10	a
+	11	school
+			sense:	school.n.01
+	12	serving
+			sense:	service.v.01
+			prop:	serve.01
+			V		12-12	serving 
+			N-ARG-A0		10-11	a school 
+			N-ARG-A2		13-18	the local community of South Wigston 
+	13	the
+			coref:	IDENT			4	13-18	the local community of South Wigston 
+	14	local
+			sense:	local.a.01
+	15	community
+			sense:	community.n.01
+	16	of
+	17	South
+			coref:	IDENT			3	17-18	South Wigston 
+			name:	LOCATION				17-17	South 
+	18	Wigston
+			name:	CITY				18-18	Wigston 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Today the school is an 11 – 16 yrs Academy .
+
+
+Treebanked sentence:
+--------------------
+Today the school is an 11 – 16 yrs Academy . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP-TMP (NN Today))
+    (NP (DT the) (NN school))
+    (VP (VBZ is)
+      (NP (DT an)
+        (NML
+          (NML (CD 11))
+          (PP (SYM –)
+            (NP (CD 16) (NNS yrs))))
+        (NNP Academy)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Today
+			name:	DATE				0-0	Today 
+			sense:	today.n.01
+	1	the
+			coref:	IDENT			0	1-2	the school 
+	2	school
+			sense:	school.n.01
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARGM-TMP		0-0	Today 
+			N-ARG-A1		1-2	the school 
+			N-ARG-A2		4-9	an 11 – 16 yrs Academy 
+	4	an
+	5	11
+			name:	NUMBER				5-5	11 
+	6	–
+	7	16
+			name:	DURATION				7-8	16 yrs 
+	8	yrs
+			sense:	year.n.01
+	9	Academy
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The main feeder primary schools are Glen Hills , Fairfield and Parkland .
+
+
+Treebanked sentence:
+--------------------
+The main feeder primary schools are Glen Hills , Fairfield and Parkland . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ main) (NN feeder))
+      (NP (JJ primary) (NNS schools)))
+    (VP (VBP are)
+      (NP (NNP Glen) (NNP Hills) (, ,) (NNP Fairfield)
+        (CC and)
+        (NNP Parkland)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	main
+			sense:	chief.s.01
+	2	feeder
+			name:	TITLE				2-2	feeder 
+			sense:	feeder.n.06
+	3	primary
+			sense:	primary.a.01
+	4	schools
+			sense:	school.n.01
+	5	are
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	are 
+			N-ARG-A1		0-4	The main feeder primary schools 
+			N-ARG-A2		6-11	Glen Hills , Fairfield and Parkland 
+	6	Glen
+			name:	PERSON				6-7	Glen Hills 
+	7	Hills
+	8	,
+	9	Fairfield
+			name:	CITY				9-9	Fairfield 
+	10	and
+	11	Parkland
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The school also attracts students from many areas of the city of Leicester and the county of Leicestershire .
+
+
+Treebanked sentence:
+--------------------
+The school also attracts students from many areas of the city of Leicester and the county of Leicestershire . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN school))
+    (ADVP (RB also))
+    (VP (VBZ attracts)
+      (NP (NNS students))
+      (PP (IN from)
+        (NP
+          (NP (JJ many) (NNS areas))
+          (PP (IN of)
+            (NP
+              (NP
+                (NP (DT the) (NN city))
+                (PP (IN of)
+                  (NP (NNP Leicester))))
+              (CC and)
+              (NP
+                (NP (DT the) (NN county))
+                (PP (IN of)
+                  (NP (NNP Leicestershire)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The school 
+	1	school
+			sense:	school.n.01
+	2	also
+			sense:	besides.r.02
+	3	attracts
+			sense:	attract.v.01
+			prop:	attract.01
+			V		3-3	attracts 
+			N-ARG-A0		0-1	The school 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A1		4-4	students 
+			N-ARGM-DIR		5-17	from many areas of the city of Leicester and the county of Leicestershire 
+	4	students
+			sense:	student.n.01
+	5	from
+	6	many
+			sense:	many.a.01
+	7	areas
+			sense:	area.n.01
+	8	of
+	9	the
+	10	city
+			sense:	city.n.01
+	11	of
+	12	Leicester
+			name:	CITY				12-12	Leicester 
+	13	and
+	14	the
+	15	county
+			sense:	county.n.01
+	16	of
+	17	Leicestershire
+			name:	STATE_OR_PROVINCE				17-17	Leicestershire 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The school is oversubscribed and is growing year on year .
+
+
+Treebanked sentence:
+--------------------
+The school is oversubscribed and is growing year on year . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN school))
+    (VP
+      (VP (VBZ is)
+        (ADJP (JJ oversubscribed)))
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBG growing)
+          (NP (NN year))
+          (PP (IN on)
+            (NP (NN year))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The school 
+	1	school
+			sense:	school.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The school 
+			N-ARG-A2		3-3	oversubscribed 
+	3	oversubscribed
+			sense:	oversubscribed.s.01
+	4	and
+	5	is
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	is 
+	6	growing
+			sense:	grow.v.02
+			prop:	grow.01
+			V		6-6	growing 
+			N-ARG-A1		0-1	The school 
+			N-ARGM-TMP		7-9	year on year 
+	7	year
+			name:	DURATION				7-7	year 
+			sense:	year.n.01
+	8	on
+	9	year
+			name:	DURATION				9-9	year 
+			sense:	year.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+South Wigston is known for its wide range of extra - curricular opportunities and for being a school that is inclusive and at the heart of the community .
+
+
+Treebanked sentence:
+--------------------
+South Wigston is known for its wide range of extra - curricular opportunities and for being a school that is inclusive and at the heart of the community . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP South) (NNP Wigston))
+    (VP (VBZ is)
+      (VP (VBN known)
+        (PP
+          (PP (IN for)
+            (NP
+              (NP (PRP$ its) (JJ wide) (NN range))
+              (PP (IN of)
+                (NP
+                  (ADJP (JJ extra) (HYPH -) (JJ curricular))
+                  (NNS opportunities)))))
+          (CC and)
+          (PP (IN for)
+            (S
+              (VP (VBG being)
+                (NP
+                  (NP (DT a) (NN school))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBZ is)
+                        (ADJP (JJ inclusive)))))))))
+          (CC and)
+          (PP (IN at)
+            (NP
+              (NP (DT the) (NN heart))
+              (PP (IN of)
+                (NP (DT the) (NN community))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	South
+			coref:	IDENT			3	0-1	South Wigston 
+			name:	LOCATION				0-0	South 
+	1	Wigston
+			name:	CITY				1-1	Wigston 
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	known
+			sense:	know.v.04
+			prop:	know.01
+			V		3-3	known 
+			N-ARG-A1		0-1	South Wigston 
+			N-ARG-A2		4-27	for its wide range of extra - curricular opportunities and for being a school that is inclusive and at the heart of the community 
+	4	for
+	5	its
+			coref:	IDENT			3	5-5	its 
+	6	wide
+			sense:	across-the-board.s.01
+	7	range
+			sense:	range.n.06
+	8	of
+	9	extra
+			sense:	extra.s.02
+	10	-
+	11	curricular
+			sense:	curricular.a.01
+	12	opportunities
+			sense:	opportunity.n.01
+	13	and
+	14	for
+	15	being
+			sense:	be.v.01
+			prop:	be.01
+			V		15-15	being 
+			N-ARG-A1		0-1	South Wigston 
+			N-ARG-A2		16-27	a school that is inclusive and at the heart of the community 
+	16	a
+	17	school
+			sense:	school.n.01
+	18	that
+	19	is
+			sense:	be.v.01
+			prop:	be.01
+			V		19-19	is 
+			N-ARG-A1		16-17	a school 
+			R-ARG-A1		18-18	that 
+			N-ARG-A2		20-27	inclusive and at the heart of the community 
+	20	inclusive
+			sense:	inclusive.a.01
+	21	and
+	22	at
+	23	the
+	24	heart
+			sense:	center.n.01
+	25	of
+	26	the
+			coref:	IDENT			4	26-27	the community 
+	27	community
+			sense:	community.n.01
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The school has extensive grounds and a purpose build sports centre opened by Gary Lineker .
+
+
+Treebanked sentence:
+--------------------
+The school has extensive grounds and a purpose build sports centre opened by Gary Lineker . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN school))
+      (VP (VBZ has)
+        (NP (JJ extensive) (NNS grounds))))
+    (CC and)
+    (S
+      (NP (DT a) (NN purpose))
+      (VP (VBP build)
+        (NP
+          (NP (NNS sports) (NN centre))
+          (VP (VBN opened)
+            (PP (IN by)
+              (NP (NNP Gary) (NNP Lineker)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The school 
+	1	school
+			sense:	school.n.01
+	2	has
+			sense:	have.v.02
+			prop:	have.03
+			V		2-2	has 
+			N-ARG-A0		0-1	The school 
+			N-ARG-A1		3-14	extensive grounds and a purpose build sports centre opened by Gary Lineker 
+	3	extensive
+			sense:	extensive.s.01
+	4	grounds
+			sense:	grounds.n.03
+	5	and
+	6	a
+	7	purpose
+			sense:	function.n.02
+	8	build
+			sense:	construct.v.01
+			prop:	build.01
+			V		8-8	build 
+			N-ARGM-PRP		7-7	purpose 
+			N-ARG-A1		9-10	sports centre 
+	9	sports
+			sense:	sport.n.01
+	10	centre
+			sense:	center.n.03
+	11	opened
+			sense:	open.v.02
+			prop:	open.01
+			V		11-11	opened 
+			N-ARG-A1		6-10	a purpose build sports centre 
+			N-ARG-A0		12-14	by Gary Lineker 
+	12	by
+	13	Gary
+			name:	PERSON				13-14	Gary Lineker 
+	14	Lineker
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Notable alumni include Sue Townsend ( 1946 - 1950 ) , author ; Louis Deacon ( 1991 - 1995 ) , Rugby Player for Leicester Tigers and England ; and Brett Deacon ( 1992 - 1996 ) , Rugby Player for Leicester Tigers and England .
+
+
+Treebanked sentence:
+--------------------
+Notable alumni include Sue Townsend ( 1946 - 1950 ) , author ; Louis Deacon ( 1991 - 1995 ) , Rugby Player for Leicester Tigers and England ; and Brett Deacon ( 1992 - 1996 ) , Rugby Player for Leicester Tigers and England . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (JJ Notable) (NNS alumni))
+    (VP (VBP include)
+      (NP
+        (NP (NNP Sue) (NNP Townsend)
+          (PRN (-LRB- -LRB-)
+            (NP (CD 1946) (SYM -) (CD 1950))
+            (-RRB- -RRB-)))
+        (, ,)
+        (NP (NN author)
+          (PRN (: ;)
+            (FRAG
+              (NP (NNP Louis) (NNP Deacon))
+              (-LRB- -LRB-)
+              (NP (CD 1991) (SYM -) (CD 1995))
+              (-RRB- -RRB-))))
+        (, ,)
+        (NP
+          (NML
+            (NML
+              (NML (NNP Rugby) (NNP Player))
+              (PP (IN for)
+                (NP (NNP Leicester) (NNPS Tigers)
+                  (CC and)
+                  (NNP England))))
+            (: ;)
+            (CC and)
+            (NML (NNP Brett)))
+          (NNP Deacon)
+          (PRN (-LRB- -LRB-)
+            (NP (CD 1992) (SYM -) (CD 1996))
+            (-RRB- -RRB-)))
+        (, ,)
+        (NP
+          (NML
+            (NML (NNP Rugby) (NNP Player))
+            (PP (IN for)
+              (NP (NNP Leicester))))
+          (NNPS Tigers))
+        (CC and)
+        (NP (NNP England))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Notable
+			sense:	celebrated.s.01
+	1	alumni
+			sense:	alumnus.n.01
+	2	include
+			sense:	include.v.01
+			prop:	include.01
+			V		2-2	include 
+			N-ARG-A2		0-1	Notable alumni 
+			N-ARG-A1		3-44	Sue Townsend ( 1946 - 1950 ) , author ; Louis Deacon ( 1991 - 1995 ) , Rugby Player for Leicester Tigers and England ; and Brett Deacon ( 1992 - 1996 ) , Rugby Player for Leicester Tigers and England 
+	3	Sue
+			name:	PERSON				3-4	Sue Townsend 
+	4	Townsend
+	5	(
+	6	1946
+			name:	DATE				6-6	1946 
+	7	-
+			name:	DURATION				7-7	- 
+	8	1950
+			name:	DATE				8-8	1950 
+	9	)
+	10	,
+	11	author
+			name:	TITLE				11-11	author 
+			sense:	writer.n.01
+	12	;
+	13	Louis
+			name:	PERSON				13-14	Louis Deacon 
+	14	Deacon
+	15	(
+	16	1991
+			name:	DATE				16-16	1991 
+	17	-
+			name:	DURATION				17-17	- 
+	18	1995
+			name:	DATE				18-18	1995 
+	19	)
+	20	,
+	21	Rugby
+			name:	TITLE				21-22	Rugby Player 
+	22	Player
+	23	for
+	24	Leicester
+			coref:	IDENT			1	24-25	Leicester Tigers 
+			name:	ORGANIZATION				24-25	Leicester Tigers 
+	25	Tigers
+	26	and
+	27	England
+			coref:	IDENT			2	27-27	England 
+			name:	COUNTRY				27-27	England 
+	28	;
+	29	and
+	30	Brett
+			name:	PERSON				30-31	Brett Deacon 
+	31	Deacon
+	32	(
+	33	1992
+			name:	DATE				33-33	1992 
+	34	-
+			name:	DURATION				34-34	- 
+	35	1996
+			name:	DATE				35-35	1996 
+	36	)
+	37	,
+	38	Rugby
+			name:	TITLE				38-39	Rugby Player 
+	39	Player
+	40	for
+	41	Leicester
+			coref:	IDENT			1	41-42	Leicester Tigers 
+			name:	ORGANIZATION				41-42	Leicester Tigers 
+	42	Tigers
+	43	and
+	44	England
+			coref:	IDENT			2	44-44	England 
+			name:	COUNTRY				44-44	England 
+	45	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2016 BBC2 produced a documentary entitled , ‘ The Secret Life of Sue Townsend Aged 68 ¾.’
+
+
+Treebanked sentence:
+--------------------
+In 2016 BBC2 produced a documentary entitled , ‘ The Secret Life of Sue Townsend Aged 68 3/4 . ’ 
+
+Tree:
+-----
+(ROOT
+  (SINV
+    (PP (IN In)
+      (NP (CD 2016) (NN BBC2)))
+    (VP (VBD produced))
+    (NP
+      (NP
+        (NP (DT a) (NN documentary))
+        (VP (VBN entitled)))
+      (, ,)
+      (NP
+        (NP (`` ‘) (DT The) (NNP Secret) (NNP Life))
+        (PP (IN of)
+          (NP
+            (NP (NNP Sue) (NNP Townsend))
+            (ADJP (VBN Aged)
+              (NP
+                (QP (CD 68) (CD 3/4))))))))
+    (. .) ('' ’)))
+
+
+Leaves:
+-------
+	0	In
+	1	2016
+			name:	DATE				1-1	2016 
+	2	BBC2
+	3	produced
+			sense:	produce.v.06
+			prop:	produce.01
+			V		3-3	produced 
+			N-ARGM-TMP		0-1	In 2016 
+			N-ARG-A0		2-2	BBC2 
+			N-ARG-A1		4-17	a documentary entitled , ‘ The Secret Life of Sue Townsend Aged 68 3/4 
+	4	a
+	5	documentary
+			sense:	documentary.n.01
+	6	entitled
+			sense:	entitle.v.02
+			prop:	entitle.02
+			V		6-6	entitled 
+			N-ARG-A1		4-5	a documentary 
+			N-ARG-A2		9-17	The Secret Life of Sue Townsend Aged 68 3/4 
+	7	,
+	8	‘
+	9	The
+	10	Secret
+	11	Life
+	12	of
+	13	Sue
+	14	Townsend
+	15	Aged
+			sense:	senesce.v.01
+			prop:	age.01
+			V		15-15	Aged 
+			N-ARG-A1		13-14	Sue Townsend 
+			N-ARG-A2		16-17	68 3/4 
+	16	68
+			name:	NUMBER				16-17	68 3/4 
+	17	3/4
+	18	.
+	19	’
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Much of the documentary was filmed at the school and current students participated .
+
+
+Treebanked sentence:
+--------------------
+Much of the documentary was filmed at the school and current students participated . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (JJ Much))
+        (PP (IN of)
+          (NP (DT the) (NN documentary))))
+      (VP (VBD was)
+        (VP (VBN filmed)
+          (PP (IN at)
+            (NP (DT the) (NN school))))))
+    (CC and)
+    (S
+      (NP (JJ current) (NNS students))
+      (VP (VBD participated)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Much
+			sense:	much.a.01
+	1	of
+	2	the
+	3	documentary
+			sense:	documentary.n.01
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	filmed
+			sense:	film.v.01
+			prop:	film.01
+			V		5-5	filmed 
+			N-ARG-A1		0-3	Much of the documentary 
+			N-ARGM-LOC		6-8	at the school 
+	6	at
+	7	the
+			coref:	IDENT			0	7-8	the school 
+	8	school
+			sense:	school.n.01
+	9	and
+	10	current
+			name:	DATE				10-10	current 
+			sense:	current.a.01
+	11	students
+			sense:	student.n.01
+	12	participated
+			sense:	participate.v.01
+			prop:	participate.01
+			V		12-12	participated 
+			N-ARG-A0		10-11	current students 
+	13	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-3	South Wigston High School 
+				1.1-2	the school 
+				3.0-1	The school 
+				4.0-1	The school 
+				6.0-1	The school 
+				9.7-8	the school 
+	Chain 1 (IDENT)
+				7.24-25	Leicester Tigers 
+				7.41-42	Leicester Tigers 
+	Chain 2 (IDENT)
+				7.27-27	England 
+				7.44-44	England 
+	Chain 3 (IDENT)
+				0.17-18	South Wigston 
+				5.0-1	South Wigston 
+				5.5-5	its 
+	Chain 4 (IDENT)
+				0.13-18	the local community of South Wigston 
+				5.26-27	the community 
+

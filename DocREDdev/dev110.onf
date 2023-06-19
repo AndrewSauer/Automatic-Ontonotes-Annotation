@@ -1,0 +1,721 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sara Black ( born 1978 ) is an American artist .
+
+
+Treebanked sentence:
+--------------------
+Sara Black ( born 1978 ) is an American artist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Sara) (NNP Black))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 1978)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT an) (JJ American) (NN artist)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sara
+			coref:	IDENT			0	0-1	Sara Black 
+			name:	PERSON				0-1	Sara Black 
+	1	Black
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Sara Black 
+			N-ARGM-TMP		4-4	1978 
+	4	1978
+			name:	DATE				4-4	1978 
+	5	)
+	6	is
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	is 
+			N-ARG-A1		0-5	Sara Black ( born 1978 ) 
+			N-ARG-A2		7-9	an American artist 
+	7	an
+	8	American
+			name:	NATIONALITY				8-8	American 
+	9	artist
+			name:	TITLE				9-9	artist 
+			sense:	artist.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She currently teaches at Antioch College and previously taught at Northwestern University and the School of the Art Institute of Chicago .
+
+
+Treebanked sentence:
+--------------------
+She currently teaches at Antioch College and previously taught at Northwestern University and the School of the Art Institute of Chicago . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (ADVP (RB currently))
+    (VP (VBZ teaches)
+      (UCP
+        (PP (IN at)
+          (NP (NNP Antioch) (NNP College)))
+        (CC and)
+        (ADVP (RB previously))
+        (VP (VBN taught)
+          (PP (IN at)
+            (NP
+              (NP (NNP Northwestern) (NNP University))
+              (CC and)
+              (NP
+                (NP (DT the) (NNP School))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NNP Art) (NNP Institute))
+                    (PP (IN of)
+                      (NP (NNP Chicago)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	currently
+			name:	DATE				1-1	currently 
+			sense:	presently.r.02
+	2	teaches
+			sense:	teach.v.01
+			prop:	teach.01
+			V		2-2	teaches 
+			N-ARG-A0		0-0	She 
+			N-ARGM-TMP		1-1	currently 
+			N-ARGM-LOC		3-5	at Antioch College 
+	3	at
+	4	Antioch
+			name:	ORGANIZATION				4-5	Antioch College 
+	5	College
+	6	and
+	7	previously
+			name:	DATE				7-7	previously 
+			sense:	previously.r.01
+	8	taught
+			sense:	teach.v.01
+			prop:	teach.01
+			V		8-8	taught 
+			N-ARG-A0		0-0	She 
+			N-ARGM-TMP		7-7	previously 
+			N-ARGM-LOC		9-20	at Northwestern University and the School of the Art Institute of Chicago 
+	9	at
+	10	Northwestern
+			name:	ORGANIZATION				10-11	Northwestern University 
+	11	University
+	12	and
+	13	the
+	14	School
+			name:	ORGANIZATION				14-20	School of the Art Institute of Chicago 
+	15	of
+	16	the
+	17	Art
+	18	Institute
+	19	of
+	20	Chicago
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Her " performances , sculpture , installation , and collaborative works evolve around an interest in how materials move through the world and the shifting designation of values in American culture . "
+
+
+Treebanked sentence:
+--------------------
+Her " performances , sculpture , installation , and collaborative works evolve around an interest in how materials move through the world and the shifting designation of values in American culture . " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Her)
+        (NML (`` ")
+          (NML (NNS performances))
+          (, ,)
+          (NML (NN sculpture))
+          (, ,))
+        (NN installation))
+      (, ,)
+      (CC and)
+      (NP (JJ collaborative) (NNS works)))
+    (VP (VBP evolve)
+      (PP (IN around)
+        (NP
+          (NP (DT an) (NN interest))
+          (PP (IN in)
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (NP (NNS materials))
+                (VP (VBP move)
+                  (PP (IN through)
+                    (NP
+                      (NP (DT the) (NN world))
+                      (CC and)
+                      (NP
+                        (NP (DT the) (VBG shifting) (NN designation))
+                        (PP (IN of)
+                          (NP
+                            (NP (NNS values))
+                            (PP (IN in)
+                              (NP (JJ American) (NN culture)))))))))))))))
+    (. .) ('' ")))
+
+
+Leaves:
+-------
+	0	Her
+			coref:	IDENT			0	0-0	Her 
+	1	"
+	2	performances
+			sense:	performance.n.01
+	3	,
+	4	sculpture
+			sense:	sculpture.n.01
+	5	,
+	6	installation
+			sense:	facility.n.01
+	7	,
+	8	and
+	9	collaborative
+			sense:	collaborative.s.01
+	10	works
+			sense:	work.n.02
+	11	evolve
+			sense:	develop.v.03
+			prop:	evolve.01
+			V		11-11	evolve 
+			N-ARG-A1		0-10	Her " performances , sculpture , installation , and collaborative works 
+			N-ARGM-MNR		12-30	around an interest in how materials move through the world and the shifting designation of values in American culture 
+	12	around
+	13	an
+	14	interest
+			sense:	interest.n.01
+	15	in
+	16	how
+	17	materials
+			sense:	material.n.01
+	18	move
+			sense:	travel.v.01
+			prop:	move.01
+			V		18-18	move 
+			N-ARGM-MNR		16-16	how 
+			N-ARG-A1		17-17	materials 
+			N-ARGM-DIR		19-21	through the world 
+	19	through
+	20	the
+	21	world
+			sense:	earth.n.01
+	22	and
+	23	the
+	24	shifting
+			sense:	switch.v.04
+			prop:	shift.01
+			V		24-24	shifting 
+			N-ARG-A1		25-25	designation 
+	25	designation
+			sense:	designation.n.03
+	26	of
+	27	values
+			sense:	value.n.06
+	28	in
+	29	American
+			name:	NATIONALITY				29-29	American 
+	30	culture
+			sense:	culture.n.02
+	31	.
+	32	"
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She holds a BFA in sculpture and installation from the University of Chicago , a Bachelor of Arts in environmental studies and art from The Evergreen State College , and a Bachelor of Fine Arts in sculpture and painting from the University of Wisconsin – Eau Claire .
+
+
+Treebanked sentence:
+--------------------
+She holds a BFA in sculpture and installation from the University of Chicago , a Bachelor of Arts in environmental studies and art from The Evergreen State College , and a Bachelor of Fine Arts in sculpture and painting from the University of Wisconsin – Eau Claire . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ holds)
+      (NP
+        (NP (DT a) (NN BFA))
+        (PP (IN in)
+          (NP (NN sculpture)
+            (CC and)
+            (NN installation))))
+      (PP (IN from)
+        (NP
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Chicago))))
+          (, ,)
+          (NP
+            (NP (DT a) (NN Bachelor))
+            (PP (IN of)
+              (NP
+                (NP
+                  (NP (NNS Arts))
+                  (PP (IN in)
+                    (NP (JJ environmental) (NNS studies))))
+                (CC and)
+                (NP
+                  (NP (NN art))
+                  (PP (IN from)
+                    (NP (DT The) (NNP Evergreen) (NNP State) (NNP College)))))))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (DT a) (NN Bachelor))
+            (PP (IN of)
+              (NP
+                (NP (JJ Fine) (NNS Arts))
+                (PP (IN in)
+                  (NP (NN sculpture)
+                    (CC and)
+                    (NN painting))))))))
+      (PP (IN from)
+        (NP
+          (NP (DT the) (NNP University))
+          (PP (IN of)
+            (NP
+              (NP (NNP Wisconsin))
+              (PP (SYM –)
+                (NP (NNP Eau) (NNP Claire))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	holds
+			sense:	have.v.01
+			prop:	hold.01
+			V		1-1	holds 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		2-46	a BFA in sculpture and installation from the University of Chicago , a Bachelor of Arts in environmental studies and art from The Evergreen State College , and a Bachelor of Fine Arts in sculpture and painting from the University of Wisconsin – Eau Claire 
+	2	a
+	3	BFA
+			name:	ORGANIZATION				3-3	BFA 
+	4	in
+	5	sculpture
+			sense:	sculpture.n.01
+	6	and
+	7	installation
+			sense:	facility.n.01
+	8	from
+	9	the
+	10	University
+			name:	ORGANIZATION				10-12	University of Chicago 
+	11	of
+	12	Chicago
+	13	,
+	14	a
+	15	Bachelor
+			name:	TITLE				15-15	Bachelor 
+			sense:	knight_bachelor.n.01
+	16	of
+	17	Arts
+			sense:	art.n.01
+	18	in
+	19	environmental
+			sense:	environmental.a.02
+	20	studies
+			sense:	discipline.n.01
+	21	and
+	22	art
+			sense:	art.n.01
+	23	from
+	24	The
+	25	Evergreen
+			name:	LOCATION				25-25	Evergreen 
+	26	State
+			name:	CITY				26-27	State College 
+	27	College
+	28	,
+	29	and
+	30	a
+	31	Bachelor
+			name:	TITLE				31-31	Bachelor 
+			sense:	knight_bachelor.n.01
+	32	of
+	33	Fine
+			sense:	fine.s.04
+	34	Arts
+			sense:	art.n.01
+	35	in
+	36	sculpture
+			sense:	sculpture.n.01
+	37	and
+	38	painting
+			sense:	painting.n.02
+	39	from
+	40	the
+	41	University
+			name:	ORGANIZATION				41-46	University of Wisconsin – Eau Claire 
+	42	of
+	43	Wisconsin
+	44	–
+	45	Eau
+	46	Claire
+	47	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She was a co - founder of the art collective Material Exchange which was active in Chicago until 2010 and currently works collaboratively with artists Jillian Soto , Charlie Vinz and others .
+
+
+Treebanked sentence:
+--------------------
+She was a co - founder of the art collective Material Exchange which was active in Chicago until 2010 and currently works collaboratively with artists Jillian Soto , Charlie Vinz and others . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP She))
+      (VP (VBD was)
+        (NP
+          (NP (DT a) (NN co) (HYPH -) (NN founder))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN art)
+                (NML (JJ collective) (NNP Material) (NNP Exchange)))
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBD was)
+                    (ADJP (JJ active)
+                      (PP (IN in)
+                        (NP (NNP Chicago))))
+                    (PP (IN until)
+                      (NP (CD 2010)))))))))))
+    (CC and)
+    (SINV
+      (ADVP (RB currently))
+      (VP (VBZ works)
+        (ADVP (RB collaboratively))
+        (PP (IN with)
+          (NP (NNS artists))))
+      (NP
+        (NP (NNP Jillian) (NNP Soto))
+        (, ,)
+        (NP
+          (NP (NNP Charlie) (NNP Vinz))
+          (CC and)
+          (NP (NNS others)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-31	a co - founder of the art collective Material Exchange which was active in Chicago until 2010 and currently works collaboratively with artists Jillian Soto , Charlie Vinz and others 
+	2	a
+	3	co
+			sense:	colorado.n.01
+	4	-
+	5	founder
+			name:	TITLE				5-5	founder 
+			sense:	founder.n.02
+	6	of
+	7	the
+	8	art
+			sense:	art.n.01
+	9	collective
+			sense:	corporate.s.03
+	10	Material
+	11	Exchange
+	12	which
+	13	was
+			sense:	be.v.01
+			prop:	be.01
+			V		13-13	was 
+			N-ARG-A1		7-11	the art collective Material Exchange 
+			R-ARG-A1		12-12	which 
+			N-ARG-A2		14-14	active 
+			N-ARGM-LOC		15-16	in Chicago 
+			N-ARGM-TMP		17-18	until 2010 
+	14	active
+			sense:	active.a.07
+	15	in
+	16	Chicago
+			coref:	IDENT			1	16-16	Chicago 
+			name:	CITY				16-16	Chicago 
+	17	until
+	18	2010
+			name:	DATE				18-18	2010 
+	19	and
+	20	currently
+			name:	DATE				20-20	currently 
+			sense:	presently.r.02
+	21	works
+			sense:	work.v.01
+			prop:	work.01
+			V		21-21	works 
+			N-ARG-A0		7-11	the art collective Material Exchange 
+			R-ARG-A0		12-12	which 
+			N-ARGM-TMP		20-20	currently 
+			N-ARGM-MNR		22-22	collaboratively 
+			N-ARG-A3		23-31	with artists Jillian Soto , Charlie Vinz and others 
+	22	collaboratively
+	23	with
+	24	artists
+			sense:	artist.n.01
+	25	Jillian
+			name:	PERSON				25-26	Jillian Soto 
+	26	Soto
+	27	,
+	28	Charlie
+			name:	PERSON				28-29	Charlie Vinz 
+	29	Vinz
+	30	and
+	31	others
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Her work has been widely exhibited in several galleries including the Smart Museum of Art , the Experimental Station , the Museum of Contemporary Art , Chicago , the Betty Rymer Gallery , Gallery 400 , the Hyde Park Art Center , Portland State University , The Park Avenue Armory , New York , The Museum of Contemporary Craft , Portland , Eyebeam , New York and the DeVos Art Museum .
+
+
+Treebanked sentence:
+--------------------
+Her work has been widely exhibited in several galleries including the Smart Museum of Art , the Experimental Station , the Museum of Contemporary Art , Chicago , the Betty Rymer Gallery , Gallery 400 , the Hyde Park Art Center , Portland State University , The Park Avenue Armory , New York , The Museum of Contemporary Craft , Portland , Eyebeam , New York and the DeVos Art Museum . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ Her) (NN work))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (ADVP (RB widely))
+        (VP (VBN exhibited)
+          (PP (IN in)
+            (NP
+              (NP (JJ several) (NNS galleries))
+              (PP (VBG including)
+                (NP
+                  (NP (DT the) (NNP Smart) (NNP Museum))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNP Art))
+                      (, ,)
+                      (NP (DT the) (NNP Experimental) (NNP Station))
+                      (, ,)
+                      (NP
+                        (NP (DT the) (NNP Museum))
+                        (PP (IN of)
+                          (NP (NNP Contemporary) (NNP Art))))
+                      (, ,)
+                      (NP (NNP Chicago))
+                      (, ,)
+                      (NP (DT the) (NNP Betty) (NNP Rymer) (NNP Gallery))
+                      (, ,)
+                      (NP (NNP Gallery) (CD 400))
+                      (, ,)
+                      (NP (DT the) (NNP Hyde)
+                        (NML (NNP Park) (NNP Art))
+                        (NNP Center))
+                      (, ,)
+                      (NP (NNP Portland) (NNP State) (NNP University))
+                      (, ,)
+                      (NP (DT The)
+                        (NML (NNP Park) (NNP Avenue))
+                        (NNP Armory))
+                      (, ,)
+                      (NML (NNP New) (NNP York))
+                      (, ,)
+                      (NP (DT The) (NNP Museum))))
+                  (PP (IN of)
+                    (NP
+                      (NML
+                        (NML (NNP Contemporary) (NNP Craft))
+                        (, ,)
+                        (NML (NNP Portland))
+                        (, ,)
+                        (NML (NNP Eyebeam))
+                        (, ,)
+                        (NML (NNP New) (NNP York))
+                        (CC and)
+                        (NML (DT the) (NNP DeVos)))
+                      (NNP Art) (NNP Museum))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Her
+			coref:	IDENT			0	0-0	Her 
+	1	work
+			sense:	work.n.02
+	2	has
+			sense:	have.v.01
+			prop:	have.01
+			V		2-2	has 
+	3	been
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	been 
+	4	widely
+			sense:	widely.r.01
+	5	exhibited
+			sense:	show.v.01
+			prop:	exhibit.01
+			V		5-5	exhibited 
+			N-ARG-A1		0-1	Her work 
+			N-ARGM-EXT		4-4	widely 
+			N-ARGM-LOC		6-70	in several galleries including the Smart Museum of Art , the Experimental Station , the Museum of Contemporary Art , Chicago , the Betty Rymer Gallery , Gallery 400 , the Hyde Park Art Center , Portland State University , The Park Avenue Armory , New York , The Museum of Contemporary Craft , Portland , Eyebeam , New York and the DeVos Art Museum 
+	6	in
+	7	several
+			sense:	several.s.01
+	8	galleries
+			sense:	gallery.n.03
+	9	including
+			sense:	include.v.01
+			prop:	include.01
+			V		9-9	including 
+			N-ARG-A2		7-8	several galleries 
+			N-ARG-A1		10-70	the Smart Museum of Art , the Experimental Station , the Museum of Contemporary Art , Chicago , the Betty Rymer Gallery , Gallery 400 , the Hyde Park Art Center , Portland State University , The Park Avenue Armory , New York , The Museum of Contemporary Craft , Portland , Eyebeam , New York and the DeVos Art Museum 
+	10	the
+	11	Smart
+	12	Museum
+	13	of
+	14	Art
+	15	,
+	16	the
+	17	Experimental
+	18	Station
+	19	,
+	20	the
+	21	Museum
+			name:	ORGANIZATION				21-24	Museum of Contemporary Art 
+	22	of
+	23	Contemporary
+	24	Art
+	25	,
+	26	Chicago
+			coref:	IDENT			1	26-26	Chicago 
+			name:	CITY				26-26	Chicago 
+	27	,
+	28	the
+	29	Betty
+			name:	ORGANIZATION				29-31	Betty Rymer Gallery 
+	30	Rymer
+	31	Gallery
+	32	,
+	33	Gallery
+	34	400
+			name:	NUMBER				34-34	400 
+	35	,
+	36	the
+	37	Hyde
+			name:	CITY				37-37	Hyde 
+	38	Park
+			name:	LOCATION				38-40	Park Art Center 
+	39	Art
+	40	Center
+	41	,
+	42	Portland
+			name:	ORGANIZATION				42-44	Portland State University 
+	43	State
+	44	University
+	45	,
+	46	The
+			name:	LOCATION				46-49	The Park Avenue Armory 
+	47	Park
+	48	Avenue
+	49	Armory
+	50	,
+	51	New
+			name:	STATE_OR_PROVINCE				51-52	New York 
+	52	York
+	53	,
+	54	The
+	55	Museum
+			name:	ORGANIZATION				55-58	Museum of Contemporary Craft 
+	56	of
+	57	Contemporary
+	58	Craft
+	59	,
+	60	Portland
+			name:	CITY				60-60	Portland 
+	61	,
+	62	Eyebeam
+			name:	LOCATION				62-62	Eyebeam 
+	63	,
+	64	New
+			name:	STATE_OR_PROVINCE				64-65	New York 
+	65	York
+	66	and
+	67	the
+	68	DeVos
+			name:	ORGANIZATION				68-70	DeVos Art Museum 
+	69	Art
+	70	Museum
+	71	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Sara Black 
+				1.0-0	She 
+				2.0-0	Her 
+				3.0-0	She 
+				4.0-0	She 
+				5.0-0	Her 
+	Chain 1 (IDENT)
+				4.16-16	Chicago 
+				5.26-26	Chicago 
+

@@ -1,0 +1,748 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Humphrey the Bear is a cartoon character created by the Walt Disney studio in 1950 .
+
+
+Treebanked sentence:
+--------------------
+Humphrey the Bear is a cartoon character created by the Walt Disney studio in 1950 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Humphrey) (DT the) (NNP Bear))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN cartoon) (NN character))
+        (VP (VBN created)
+          (PP (IN by)
+            (NP
+              (NP (DT the)
+                (NML (NNP Walt) (NNP Disney))
+                (NN studio))
+              (PP (IN in)
+                (NP (CD 1950))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Humphrey
+			coref:	IDENT			5	0-0	Humphrey 
+			name:	PERSON				0-0	Humphrey 
+	1	the
+	2	Bear
+			name:	MISC				2-2	Bear 
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Humphrey the Bear 
+			N-ARG-A2		4-14	a cartoon character created by the Walt Disney studio in 1950 
+	4	a
+	5	cartoon
+			sense:	cartoon.n.01
+	6	character
+			sense:	fictional_character.n.01
+	7	created
+			sense:	create.v.02
+			prop:	create.01
+			V		7-7	created 
+			N-ARG-A1		4-6	a cartoon character 
+			N-ARG-A0		8-12	by the Walt Disney studio 
+			N-ARGM-TMP		13-14	in 1950 
+	8	by
+	9	the
+	10	Walt
+			coref:	IDENT			2	10-11	Walt Disney 
+			name:	ORGANIZATION				10-11	Walt Disney 
+	11	Disney
+	12	studio
+			sense:	studio.n.01
+	13	in
+	14	1950
+			name:	DATE				14-14	1950 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He first appeared in the Goofy cartoon Hold That Pose , in which Goofy tried to take his picture .
+
+
+Treebanked sentence:
+--------------------
+He first appeared in the Goofy cartoon Hold That Pose , in which Goofy tried to take his picture . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB first))
+    (VP (VBD appeared)
+      (PP (IN in)
+        (NP (DT the) (JJ Goofy) (NN cartoon)))
+      (S
+        (VP (VB Hold)
+          (NP
+            (NP (DT That) (NN Pose))
+            (, ,)
+            (SBAR
+              (WHPP (IN in)
+                (WHNP (WDT which)))
+              (S
+                (NP (NNP Goofy))
+                (VP (VBD tried)
+                  (S
+                    (VP (TO to)
+                      (VP (VB take)
+                        (NP (PRP$ his) (NN picture))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			6	0-0	He 
+	1	first
+			name:	ORDINAL				1-1	first 
+			sense:	first.r.02
+	2	appeared
+			sense:	appear.v.02
+			prop:	appear.01
+			V		2-2	appeared 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		1-1	first 
+			N-ARGM-LOC		3-18	in the Goofy cartoon Hold That Pose , in which Goofy tried to take his picture 
+	3	in
+	4	the
+	5	Goofy
+			name:	MISC				5-9	Goofy cartoon Hold That Pose 
+			sense:	cockamamie.s.01
+	6	cartoon
+			sense:	cartoon.n.01
+	7	Hold
+			sense:	keep.v.01
+			prop:	hold.01
+			V		7-7	Hold 
+			N-ARG-A1		8-9	That Pose 
+	8	That
+	9	Pose
+			sense:	pose.n.02
+	10	,
+	11	in
+	12	which
+	13	Goofy
+			coref:	IDENT			1	13-13	Goofy 
+	14	tried
+			sense:	try.v.01
+			prop:	try.01
+			V		14-14	tried 
+			N-ARGM-LOC		4-9	the Goofy cartoon Hold That Pose 
+			R-ARGM-LOC		11-12	in which 
+			N-ARG-A0		13-13	Goofy 
+			N-ARG-A1		15-18	to take his picture 
+	15	to
+	16	take
+			sense:	film.v.01
+			prop:	take.01
+			V		16-16	take 
+			N-ARG-A0		13-13	Goofy 
+			N-ARG-A1		17-18	his picture 
+	17	his
+			coref:	IDENT			6	17-17	his 
+	18	picture
+			sense:	picture.n.01
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After that he appeared in four classic Donald Duck cartoons : Rugged Bear , Grin and Bear It , Bearly Asleep , and Beezy Bear .
+
+
+Treebanked sentence:
+--------------------
+After that he appeared in four classic Donald Duck cartoons : Rugged Bear , Grin and Bear It , Bearly Asleep , and Beezy Bear . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP (DT that)))
+    (NP (PRP he))
+    (VP (VBD appeared)
+      (PP (IN in)
+        (NP
+          (NP (CD four) (JJ classic) (NNP Donald) (NN Duck) (NNS cartoons))
+          (: :)
+          (NP
+            (NP
+              (NP (JJ Rugged)
+                (NML (NNP Bear) (, ,) (NNP Grin)
+                  (CC and)
+                  (NNP Bear)))
+              (NP (PRP It))
+              (, ,)
+              (ADVP (RB Bearly)))
+            (ADVP (RB Asleep)))
+          (, ,)
+          (CC and)
+          (NP (NNP Beezy) (NNP Bear)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	that
+	2	he
+			coref:	IDENT			6	2-2	he 
+	3	appeared
+			sense:	appear.v.02
+			prop:	appear.01
+			V		3-3	appeared 
+			N-ARGM-TMP		0-1	After that 
+			N-ARG-A1		2-2	he 
+			N-ARGM-LOC		4-24	in four classic Donald Duck cartoons : Rugged Bear , Grin and Bear It , Bearly Asleep , and Beezy Bear 
+	4	in
+	5	four
+			name:	NUMBER				5-5	four 
+	6	classic
+			sense:	authoritative.s.02
+	7	Donald
+			coref:	IDENT			4	7-8	Donald Duck 
+			name:	PERSON				7-8	Donald Duck 
+	8	Duck
+			sense:	duck.n.01
+	9	cartoons
+			sense:	cartoon.n.01
+	10	:
+	11	Rugged
+			sense:	rugged.a.01
+	12	Bear
+	13	,
+	14	Grin
+			coref:	IDENT			3	14-14	Grin 
+	15	and
+	16	Bear
+	17	It
+			coref:	IDENT			3	17-17	It 
+	18	,
+	19	Bearly
+	20	Asleep
+			sense:	asleep.r.01
+	21	,
+	22	and
+	23	Beezy
+			name:	PERSON				23-23	Beezy 
+	24	Bear
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Disney gave him his own series in 1955 , but only two films resulted ( Hooked Bear and In the Bag ) before Disney discontinued making theatrical short subjects .
+
+
+Treebanked sentence:
+--------------------
+Disney gave him his own series in 1955 , but only two films resulted ( Hooked Bear and In the Bag ) before Disney discontinued making theatrical short subjects . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Disney))
+    (VP (VBD gave)
+      (NP (PRP him))
+      (NP
+        (NP (PRP$ his) (JJ own) (NN series))
+        (PP (IN in)
+          (NP
+            (NP (CD 1955) (, ,)
+              (CONJP (CC but)
+                (RB only))
+              (CD two))
+            (SBAR
+              (S
+                (NP (NNS films))
+                (VP (VBD resulted))))))
+        (PRN (-LRB- -LRB-)
+          (UCP
+            (NP (NNP Hooked) (NNP Bear))
+            (CC and)
+            (PP (IN In)
+              (NP (DT the) (NN Bag))))
+          (-RRB- -RRB-)))
+      (PP (IN before)
+        (NP
+          (NP (NNP Disney))
+          (VP (VBN discontinued)
+            (S
+              (VP (VBG making)
+                (NP (JJ theatrical) (JJ short) (NNS subjects))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Disney
+			coref:	IDENT			2	0-0	Disney 
+			name:	ORGANIZATION				0-0	Disney 
+	1	gave
+			sense:	give.v.01
+			prop:	give.01
+			V		1-1	gave 
+			N-ARG-A0		0-0	Disney 
+			N-ARG-A2		2-2	him 
+			N-ARG-A1		3-5	his own series 
+			N-ARGM-TMP		6-7	in 1955 
+	2	him
+			coref:	IDENT			6	2-2	him 
+	3	his
+			coref:	IDENT			6	3-3	his 
+	4	own
+			sense:	own.s.01
+	5	series
+			sense:	serial.n.01
+	6	in
+	7	1955
+			name:	DATE				7-7	1955 
+	8	,
+	9	but
+	10	only
+			sense:	merely.r.01
+	11	two
+			name:	NUMBER				11-11	two 
+	12	films
+			sense:	movie.n.01
+	13	resulted
+			sense:	result.v.01
+			prop:	result.01
+			V		13-13	resulted 
+			N-ARG-A2		10-12	only two films 
+			C-ARG-A2		15-20	Hooked Bear and In the Bag 
+			N-ARGM-TMP		22-28	before Disney discontinued making theatrical short subjects 
+	14	(
+	15	Hooked
+	16	Bear
+	17	and
+	18	In
+	19	the
+	20	Bag
+			sense:	bag.n.01
+	21	)
+	22	before
+	23	Disney
+			name:	ORGANIZATION				23-23	Disney 
+	24	discontinued
+			sense:	discontinue.v.01
+			prop:	discontinue.01
+			V		24-24	discontinued 
+			N-ARG-A0		23-23	Disney 
+			N-ARG-A1		25-28	making theatrical short subjects 
+	25	making
+			sense:	produce.v.02
+			prop:	make.01
+			V		25-25	making 
+			N-ARG-A0		23-23	Disney 
+			N-ARG-A1		26-28	theatrical short subjects 
+	26	theatrical
+			sense:	theatrical.a.01
+	27	short
+			sense:	short.a.01
+	28	subjects
+			sense:	subject.n.02
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+When the shorts division closed , Humphrey was the last of only seven Disney characters who had been given a series of their own , starring in cartoons who opened with their own logo ( the six others were Mickey Mouse , Donald Duck , Goofy , Pluto , Chip ' n ' Dale ( counting as one ) , and Figaro ) .
+
+
+Treebanked sentence:
+--------------------
+When the shorts division closed , Humphrey was the last of only seven Disney characters who had been given a series of their own , starring in cartoons who opened with their own logo ( the six others were Mickey Mouse , Donald Duck , Goofy , Pluto , Chip ' n ' Dale ( counting as one ) , and Figaro ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (DT the) (NNS shorts) (NN division))
+        (VP (VBD closed))))
+    (, ,)
+    (NP (NNP Humphrey))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (JJ last))
+        (PP (IN of)
+          (NP
+            (NP
+              (QP (RB only) (CD seven))
+              (NNP Disney) (NNS characters))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD had)
+                  (VP (VBN been)
+                    (VP (VBN given)
+                      (NP
+                        (NP (DT a) (NN series))
+                        (PP (IN of)
+                          (NP (PRP$ their) (JJ own))))
+                      (, ,)
+                      (S
+                        (VP (VBG starring)
+                          (PP (IN in)
+                            (NP
+                              (NP (NNS cartoons))
+                              (SBAR
+                                (WHNP (WP who))
+                                (S
+                                  (VP (VBD opened)
+                                    (PP (IN with)
+                                      (NP (PRP$ their) (JJ own) (NN logo))))))))))))))))))
+      (PRN (-LRB- -LRB-)
+        (S
+          (NP (DT the) (CD six) (NNS others))
+          (VP (VBD were)
+            (NP
+              (NP
+                (NP
+                  (NP (NNP Mickey) (NNP Mouse))
+                  (, ,)
+                  (NP (NNP Donald) (NN Duck))
+                  (, ,)
+                  (NP (NNP Goofy))
+                  (, ,)
+                  (NP
+                    (NP (NNP Pluto))
+                    (, ,)
+                    (NP
+                      (NP (NNP Chip) (POS '))
+                      (NN n)))
+                  ('' '))
+                (NP
+                  (NP (NNP Dale))
+                  (-LRB- -LRB-)
+                  (VP (VBG counting)
+                    (PP (IN as)
+                      (NP (CD one))))
+                  (-RRB- -RRB-)))
+              (, ,)
+              (CC and)
+              (NP (NNP Figaro)))))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	When
+	1	the
+	2	shorts
+			sense:	short_pants.n.01
+	3	division
+			sense:	division.n.04
+	4	closed
+			sense:	close_up.v.01
+			prop:	close.01
+			V		4-4	closed 
+			N-ARGM-TMP		0-0	When 
+			N-ARG-A1		1-3	the shorts division 
+	5	,
+	6	Humphrey
+			coref:	IDENT			5	6-6	Humphrey 
+			name:	PERSON				6-6	Humphrey 
+	7	was
+			sense:	be.v.01
+			prop:	be.01
+			V		7-7	was 
+			N-ARGM-TMP		0-4	When the shorts division closed 
+			N-ARG-A1		6-6	Humphrey 
+			N-ARG-A2		8-62	the last of only seven Disney characters who had been given a series of their own , starring in cartoons who opened with their own logo ( the six others were Mickey Mouse , Donald Duck , Goofy , Pluto , Chip ' n ' Dale ( counting as one ) , and Figaro ) 
+	8	the
+	9	last
+			sense:	last.a.02
+	10	of
+	11	only
+			sense:	merely.r.01
+	12	seven
+			name:	NUMBER				12-12	seven 
+	13	Disney
+			coref:	IDENT			2	13-13	Disney 
+			name:	ORGANIZATION				13-13	Disney 
+	14	characters
+			sense:	fictional_character.n.01
+	15	who
+	16	had
+			sense:	have.v.01
+			prop:	have.01
+			V		16-16	had 
+	17	been
+			sense:	be.v.01
+			prop:	be.03
+			V		17-17	been 
+	18	given
+			sense:	give.v.01
+			prop:	give.01
+			V		18-18	given 
+			N-ARG-A2		11-14	only seven Disney characters 
+			R-ARG-A2		15-15	who 
+			N-ARG-A1		19-23	a series of their own 
+			N-ARGM-PRD		25-62	starring in cartoons who opened with their own logo ( the six others were Mickey Mouse , Donald Duck , Goofy , Pluto , Chip ' n ' Dale ( counting as one ) , and Figaro ) 
+	19	a
+	20	series
+			sense:	serial.n.01
+	21	of
+	22	their
+			coref:	IDENT			0	22-22	their 
+	23	own
+			sense:	own.s.01
+	24	,
+	25	starring
+			sense:	star.v.01
+			prop:	star.01
+			V		25-25	starring 
+			N-ARG-A1		6-6	Humphrey 
+			N-ARG-A2		26-33	in cartoons who opened with their own logo 
+	26	in
+	27	cartoons
+			sense:	cartoon.n.02
+	28	who
+	29	opened
+			sense:	open.v.02
+			prop:	open.01
+			V		29-29	opened 
+			N-ARG-A1		27-27	cartoons 
+			R-ARG-A1		28-28	who 
+			N-ARGM-MNR		30-33	with their own logo 
+	30	with
+	31	their
+			coref:	IDENT			0	31-31	their 
+	32	own
+			sense:	own.s.01
+	33	logo
+			sense:	logo.n.01
+	34	(
+	35	the
+	36	six
+			name:	NUMBER				36-36	six 
+	37	others
+	38	were
+			sense:	be.v.02
+			prop:	be.01
+			V		38-38	were 
+			N-ARG-A1		35-37	the six others 
+			N-ARG-A2		39-61	Mickey Mouse , Donald Duck , Goofy , Pluto , Chip ' n ' Dale ( counting as one ) , and Figaro 
+	39	Mickey
+			name:	PERSON				39-40	Mickey Mouse 
+	40	Mouse
+	41	,
+	42	Donald
+			coref:	IDENT			4	42-43	Donald Duck 
+			name:	PERSON				42-43	Donald Duck 
+	43	Duck
+			sense:	duck.n.01
+	44	,
+	45	Goofy
+			coref:	IDENT			1	45-45	Goofy 
+	46	,
+	47	Pluto
+			name:	LOCATION				47-47	Pluto 
+	48	,
+	49	Chip
+	50	'
+	51	n
+			sense:	n.n.05
+	52	'
+	53	Dale
+			name:	PERSON				53-53	Dale 
+	54	(
+	55	counting
+			sense:	count.v.06
+			prop:	accounting.01
+			V		55-55	counting 
+	56	as
+	57	one
+			name:	NUMBER				57-57	one 
+	58	)
+	59	,
+	60	and
+	61	Figaro
+			name:	PERSON				61-61	Figaro 
+	62	)
+	63	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Humphrey cartoons have been aptly described by Leonard Maltin as " belly - laugh " shorts , and they feature a broader , wilder style of comedy than the usually cute or coy Disney gags .
+
+
+Treebanked sentence:
+--------------------
+The Humphrey cartoons have been aptly described by Leonard Maltin as " belly - laugh " shorts , and they feature a broader , wilder style of comedy than the usually cute or coy Disney gags . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNP Humphrey) (NNS cartoons))
+      (VP (VBP have)
+        (VP (VBN been)
+          (ADVP (RB aptly))
+          (VP (VBN described)
+            (PP (IN by)
+              (NP
+                (NP (NNP Leonard) (NNP Maltin))
+                (PP (IN as)
+                  (NP (`` ")
+                    (NP (NN belly) (HYPH -) (NN laugh))
+                    ('' ") (NNS shorts)))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP they))
+      (VP (VBP feature)
+        (NP (DT a) (JJR broader) (, ,) (NN wilder) (NN style))
+        (PP (IN of)
+          (NP
+            (NP (NN comedy))
+            (PP (IN than)
+              (NP (DT the)
+                (UCP
+                  (ADJP (RB usually) (JJ cute))
+                  (CC or)
+                  (NP (JJ coy) (NNP Disney)))
+                (NNS gags)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Humphrey
+			coref:	IDENT			5	1-1	Humphrey 
+			name:	PERSON				1-1	Humphrey 
+	2	cartoons
+			sense:	cartoon.n.02
+	3	have
+			sense:	have.v.02
+			prop:	have.01
+			V		3-3	have 
+	4	been
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	been 
+	5	aptly
+			sense:	competently.r.01
+	6	described
+			sense:	describe.v.01
+			prop:	describe.01
+			V		6-6	described 
+			N-ARG-A1		0-2	The Humphrey cartoons 
+			N-ARGM-MNR		5-5	aptly 
+			N-ARG-A0		7-9	by Leonard Maltin 
+			N-ARG-A2		10-16	as " belly - laugh " shorts 
+	7	by
+	8	Leonard
+			name:	PERSON				8-9	Leonard Maltin 
+	9	Maltin
+	10	as
+	11	"
+	12	belly
+			sense:	abdomen.n.01
+	13	-
+	14	laugh
+			sense:	joke.n.01
+	15	"
+	16	shorts
+			sense:	short_pants.n.01
+	17	,
+	18	and
+	19	they
+	20	feature
+			sense:	have.v.02
+			prop:	feature.01
+			V		20-20	feature 
+			N-ARG-A0		19-19	they 
+			N-ARG-A1		21-35	a broader , wilder style of comedy than the usually cute or coy Disney gags 
+	21	a
+	22	broader
+			sense:	across-the-board.s.01
+	23	,
+	24	wilder
+			sense:	wilder.n.02
+	25	style
+			sense:	manner.n.01
+	26	of
+	27	comedy
+			sense:	drollery.n.01
+	28	than
+	29	the
+	30	usually
+			sense:	normally.r.01
+	31	cute
+			sense:	cute.s.02
+	32	or
+	33	coy
+			sense:	coy.s.01
+	34	Disney
+	35	gags
+			sense:	joke.n.01
+	36	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.22-22	their 
+				4.31-31	their 
+	Chain 1 (IDENT)
+				1.13-13	Goofy 
+				4.45-45	Goofy 
+	Chain 2 (IDENT)
+				0.10-11	Walt Disney 
+				3.0-0	Disney 
+				4.13-13	Disney 
+	Chain 3 (IDENT)
+				2.14-14	Grin 
+				2.17-17	It 
+	Chain 4 (IDENT)
+				2.7-8	Donald Duck 
+				4.42-43	Donald Duck 
+	Chain 5 (IDENT)
+				0.0-0	Humphrey 
+				4.6-6	Humphrey 
+				5.1-1	Humphrey 
+	Chain 6 (IDENT)
+				1.0-0	He 
+				1.17-17	his 
+				2.2-2	he 
+				3.2-2	him 
+				3.3-3	his 
+

@@ -1,0 +1,668 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Pinkerton Academy is a secondary school in Derry , New Hampshire , United States .
+
+
+Treebanked sentence:
+--------------------
+Pinkerton Academy is a secondary school in Derry , New Hampshire , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Pinkerton) (NNP Academy))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ secondary) (NN school))
+        (PP (IN in)
+          (NP
+            (NML
+              (NML (NNP Derry))
+              (, ,)
+              (NML (NNP New) (NNP Hampshire))
+              (, ,))
+            (NNP United) (NNP States)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Pinkerton
+			name:	ORGANIZATION				0-1	Pinkerton Academy 
+	1	Academy
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Pinkerton Academy 
+			N-ARG-A2		3-13	a secondary school in Derry , New Hampshire , United States 
+	3	a
+	4	secondary
+			sense:	secondary.s.05
+	5	school
+			sense:	school.n.01
+	6	in
+	7	Derry
+			name:	CITY				7-7	Derry 
+	8	,
+	9	New
+			coref:	IDENT			1	9-10	New Hampshire 
+			name:	STATE_OR_PROVINCE				9-10	New Hampshire 
+	10	Hampshire
+	11	,
+	12	United
+			name:	COUNTRY				12-13	United States 
+	13	States
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It serves roughly 3,100 students , making it by far the largest high school in New Hampshire , more than 800 students greater than the next largest high school .
+
+
+Treebanked sentence:
+--------------------
+It serves roughly 3,100 students , making it by far the largest high school in New Hampshire , more than 800 students greater than the next largest high school . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ serves)
+      (S
+        (NP
+          (NP
+            (QP (RB roughly) (CD 3,100))
+            (NNS students))
+          (, ,)
+          (VP (VBG making)
+            (NP (PRP it))
+            (PP (IN by)
+              (NP
+                (NP (RB far) (DT the)
+                  (ADJP (JJS largest) (JJ high))
+                  (NN school))
+                (PP (IN in)
+                  (NP (NNP New) (NNP Hampshire))))))
+          (, ,))
+        (ADJP
+          (ADJP
+            (NP
+              (QP (JJR more) (IN than) (CD 800))
+              (NNS students))
+            (JJR greater))
+          (PP (IN than)
+            (NP (DT the)
+              (ADJP (RB next) (JJS largest))
+              (JJ high) (NN school))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	serves
+			sense:	service.v.01
+			prop:	serve.01
+			V		1-1	serves 
+			N-ARG-A0		0-0	It 
+			N-ARG-A2		2-4	roughly 3,100 students 
+			N-ARGM-ADV		6-28	making it by far the largest high school in New Hampshire , more than 800 students greater than the next largest high school 
+	2	roughly
+			sense:	approximately.r.01
+	3	3,100
+			name:	NUMBER				3-3	3,100 
+	4	students
+			sense:	student.n.01
+	5	,
+	6	making
+			sense:	make.v.02
+			prop:	make.02
+			V		6-6	making 
+			N-ARG-A1		7-28	it by far the largest high school in New Hampshire , more than 800 students greater than the next largest high school 
+	7	it
+	8	by
+	9	far
+			sense:	far.r.01
+	10	the
+	11	largest
+			sense:	large.a.01
+	12	high
+			sense:	high.a.01
+	13	school
+			sense:	school.n.01
+	14	in
+	15	New
+			coref:	IDENT			1	15-16	New Hampshire 
+			name:	STATE_OR_PROVINCE				15-16	New Hampshire 
+	16	Hampshire
+	17	,
+	18	more
+			sense:	more.a.01
+	19	than
+	20	800
+			name:	NUMBER				20-20	800 
+	21	students
+			sense:	student.n.01
+	22	greater
+			sense:	great.s.01
+	23	than
+	24	the
+	25	next
+			sense:	next.r.01
+	26	largest
+			sense:	large.a.01
+	27	high
+			sense:	high.a.01
+	28	school
+			sense:	school.n.01
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Pinkerton 's situation is unusual , as it is a private school which also serves as the " public " high school ( grades 9–12 ) for the communities of Derry , Hampstead , Chester , Auburn , Candia , and Hooksett .
+
+
+Treebanked sentence:
+--------------------
+Pinkerton 's situation is unusual , as it is a private school which also serves as the " public " high school ( grades 9 – 12 ) for the communities of Derry , Hampstead , Chester , Auburn , Candia , and Hooksett . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Pinkerton) (POS 's))
+      (NN situation))
+    (VP (VBZ is)
+      (ADJP (JJ unusual))
+      (, ,)
+      (SBAR (IN as)
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (NP
+              (NP (DT a) (JJ private) (NN school))
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (ADVP (RB also))
+                  (VP (VBZ serves)
+                    (PP (IN as)
+                      (NP
+                        (NP (DT the) (`` ") (JJ public) ('' ") (JJ high) (NN school))
+                        (-LRB- -LRB-)
+                        (NP
+                          (NP (NNS grades))
+                          (NP
+                            (QP (CD 9) (SYM –) (CD 12))))
+                        (-RRB- -RRB-)))
+                    (PP (IN for)
+                      (NP
+                        (NP (DT the) (NNS communities))
+                        (PP (IN of)
+                          (NP
+                            (NP (NNP Derry))
+                            (, ,)
+                            (NP (NNP Hampstead))
+                            (, ,)
+                            (NP (NNP Chester))
+                            (, ,)
+                            (NP (JJ Auburn))
+                            (, ,)
+                            (NP (NNP Candia))
+                            (, ,)
+                            (CC and)
+                            (NP (NNP Hooksett))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Pinkerton
+			coref:	IDENT			2	0-2	Pinkerton 's situation 
+			name:	ORGANIZATION				0-1	Pinkerton 's 
+	1	's
+	2	situation
+			sense:	situation.n.01
+	3	is
+			sense:	be.v.01
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Pinkerton 's situation 
+			N-ARG-A2		4-4	unusual 
+			N-ARGM-CAU		6-43	as it is a private school which also serves as the " public " high school ( grades 9 – 12 ) for the communities of Derry , Hampstead , Chester , Auburn , Candia , and Hooksett 
+	4	unusual
+			sense:	unusual.a.01
+	5	,
+	6	as
+	7	it
+			coref:	IDENT			2	7-7	it 
+	8	is
+			sense:	be.v.01
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		7-7	it 
+			N-ARG-A2		9-43	a private school which also serves as the " public " high school ( grades 9 – 12 ) for the communities of Derry , Hampstead , Chester , Auburn , Candia , and Hooksett 
+	9	a
+	10	private
+			sense:	private.a.01
+	11	school
+			sense:	school.n.01
+	12	which
+	13	also
+			sense:	besides.r.02
+	14	serves
+			sense:	serve.v.01
+			prop:	serve.01
+			V		14-14	serves 
+			N-ARG-A0		9-11	a private school 
+			R-ARG-A0		12-12	which 
+			N-ARGM-DIS		13-13	also 
+			N-ARG-A1		15-43	as the " public " high school ( grades 9 – 12 ) for the communities of Derry , Hampstead , Chester , Auburn , Candia , and Hooksett 
+	15	as
+	16	the
+	17	"
+	18	public
+			sense:	public.a.01
+	19	"
+	20	high
+			sense:	high.a.01
+	21	school
+			sense:	school.n.01
+	22	(
+	23	grades
+			sense:	class.n.02
+	24	9
+			name:	NUMBER				24-24	9 
+	25	–
+	26	12
+			name:	NUMBER				26-26	12 
+	27	)
+	28	for
+	29	the
+	30	communities
+			sense:	community.n.01
+	31	of
+	32	Derry
+			name:	CITY				32-32	Derry 
+	33	,
+	34	Hampstead
+			name:	CITY				34-34	Hampstead 
+	35	,
+	36	Chester
+			name:	PERSON				36-36	Chester 
+	37	,
+	38	Auburn
+			name:	CITY				38-38	Auburn 
+			sense:	auburn.s.01
+	39	,
+	40	Candia
+			name:	PERSON				40-40	Candia 
+	41	,
+	42	and
+	43	Hooksett
+			name:	CITY				43-43	Hooksett 
+	44	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Through arrangements with the towns , each town pays the tuition for their students to attend Pinkerton .
+
+
+Treebanked sentence:
+--------------------
+Through arrangements with the towns , each town pays the tuition for their students to attend Pinkerton . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Through)
+      (NP
+        (NP (NNS arrangements))
+        (PP (IN with)
+          (NP (DT the) (NNS towns)))))
+    (, ,)
+    (NP (DT each) (NN town))
+    (VP (VBZ pays)
+      (NP
+        (NP (DT the) (NN tuition))
+        (PP (IN for)
+          (NP (PRP$ their) (NNS students))))
+      (S
+        (VP (TO to)
+          (VP (VB attend)
+            (NP (NNP Pinkerton))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Through
+	1	arrangements
+			sense:	agreement.n.04
+	2	with
+	3	the
+	4	towns
+			sense:	township.n.01
+	5	,
+	6	each
+			coref:	IDENT			0	6-7	each town 
+	7	town
+			sense:	township.n.01
+	8	pays
+			sense:	pay.v.01
+			prop:	pay.01
+			V		8-8	pays 
+			N-ARGM-MNR		0-4	Through arrangements with the towns 
+			N-ARG-A0		6-7	each town 
+			N-ARG-A1		9-16	the tuition for their students to attend Pinkerton 
+	9	the
+	10	tuition
+			sense:	tuition.n.01
+	11	for
+	12	their
+			coref:	IDENT			0	12-12	their 
+	13	students
+			sense:	student.n.01
+	14	to
+	15	attend
+			sense:	attend.v.01
+			prop:	attend.01
+			V		15-15	attend 
+			N-ARG-A0		12-13	their students 
+			N-ARG-A1		16-16	Pinkerton 
+	16	Pinkerton
+			name:	ORGANIZATION				16-16	Pinkerton 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Pinkerton Academy is a private , non - profit corporation administered by a headmaster , who in turn acts under the direction of a self - perpetuating board of trustees .
+
+
+Treebanked sentence:
+--------------------
+Pinkerton Academy is a private , non - profit corporation administered by a headmaster , who in turn acts under the direction of a self - perpetuating board of trustees . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Pinkerton) (NNP Academy))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ private) (, ,)
+          (NML (AFX non) (HYPH -) (NN profit))
+          (NN corporation))
+        (VP (VBN administered)
+          (PP (IN by)
+            (NP
+              (NP (DT a) (NN headmaster))
+              (, ,)
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (PP (IN in)
+                    (NP (NN turn)))
+                  (VP (VBZ acts)
+                    (PP (IN under)
+                      (NP
+                        (NP (DT the) (NN direction))
+                        (PP (IN of)
+                          (NP
+                            (NP (DT a)
+                              (ADJP (NN self) (HYPH -) (VBG perpetuating))
+                              (NN board))
+                            (PP (IN of)
+                              (NP (NNS trustees)))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Pinkerton
+			name:	ORGANIZATION				0-1	Pinkerton Academy 
+	1	Academy
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Pinkerton Academy 
+			N-ARG-A2		3-29	a private , non - profit corporation administered by a headmaster , who in turn acts under the direction of a self - perpetuating board of trustees 
+	3	a
+	4	private
+			sense:	private.a.01
+	5	,
+	6	non
+	7	-
+	8	profit
+			sense:	net_income.n.01
+	9	corporation
+			sense:	corporation.n.01
+	10	administered
+			sense:	administer.v.01
+			prop:	administer.01
+			V		10-10	administered 
+			N-ARG-A1		3-9	a private , non - profit corporation 
+			N-ARG-A0		11-29	by a headmaster , who in turn acts under the direction of a self - perpetuating board of trustees 
+	11	by
+	12	a
+	13	headmaster
+			name:	TITLE				13-13	headmaster 
+			sense:	headmaster.n.01
+	14	,
+	15	who
+	16	in
+	17	turn
+			sense:	turn.n.03
+	18	acts
+			sense:	act.v.04
+			prop:	act.02
+			V		18-18	acts 
+			N-ARG-A0		12-13	a headmaster 
+			R-ARG-A0		15-15	who 
+			N-ARGM-ADV		16-17	in turn 
+			N-ARGM-MNR		19-29	under the direction of a self - perpetuating board of trustees 
+	19	under
+	20	the
+	21	direction
+			sense:	guidance.n.01
+	22	of
+	23	a
+	24	self
+			sense:	self.n.01
+	25	-
+	26	perpetuating
+			sense:	perpetuate.v.01
+			prop:	perpetuate.01
+			V		26-26	perpetuating 
+			N-ARG-A1		24-24	self 
+			N-ARG-A0		27-27	board 
+	27	board
+			sense:	board.n.01
+	28	of
+	29	trustees
+			sense:	regent.n.01
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The academy is set on a New England campus .
+
+
+Treebanked sentence:
+--------------------
+The academy is set on a New England campus . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN academy))
+    (VP (VBZ is)
+      (VP (VBN set)
+        (PP (IN on)
+          (NP (DT a)
+            (NML (NNP New) (NNP England))
+            (NN campus)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	academy
+			sense:	academy.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	set
+			sense:	put.v.01
+			prop:	set.01
+			V		3-3	set 
+			N-ARG-A1		0-1	The academy 
+			N-ARG-A2		4-8	on a New England campus 
+	4	on
+	5	a
+	6	New
+			name:	LOCATION				6-6	New 
+	7	England
+			name:	COUNTRY				7-7	England 
+	8	campus
+			sense:	campus.n.01
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Since the original four - room Old Academy Building opened in 1815 , over one dozen major buildings have been constructed , for academics and administration .
+
+
+Treebanked sentence:
+--------------------
+Since the original four - room Old Academy Building opened in 1815 , over one dozen major buildings have been constructed , for academics and administration . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN Since)
+      (S
+        (NP (DT the)
+          (NML (JJ original)
+            (NML (CD four) (HYPH -) (NN room))
+            (NNP Old))
+          (NNP Academy) (NNP Building))
+        (VP (VBD opened)
+          (PP (IN in)
+            (NP (CD 1815))))))
+    (, ,)
+    (NP
+      (QP (IN over) (CD one) (NN dozen))
+      (JJ major) (NNS buildings))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBN constructed) (, ,)
+          (PP (IN for)
+            (NP (NNS academics)
+              (CC and)
+              (NN administration))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Since
+	1	the
+	2	original
+			sense:	original.s.01
+	3	four
+			name:	NUMBER				3-3	four 
+	4	-
+	5	room
+			sense:	room.n.01
+	6	Old
+			name:	LOCATION				6-8	Old Academy Building 
+	7	Academy
+	8	Building
+	9	opened
+			sense:	open.v.02
+			prop:	open.01
+			V		9-9	opened 
+			N-ARG-A1		1-8	the original four - room Old Academy Building 
+			N-ARGM-TMP		10-11	in 1815 
+	10	in
+	11	1815
+			name:	DATE				11-11	1815 
+	12	,
+	13	over
+	14	one
+			name:	NUMBER				14-15	one dozen 
+	15	dozen
+			sense:	twelve.n.01
+	16	major
+			sense:	major.a.01
+	17	buildings
+			sense:	building.n.01
+	18	have
+			sense:	have.v.01
+			prop:	have.01
+			V		18-18	have 
+	19	been
+			sense:	be.v.01
+			prop:	be.03
+			V		19-19	been 
+	20	constructed
+			sense:	construct.v.01
+			prop:	construct.01
+			V		20-20	constructed 
+			N-ARGM-TMP		0-11	Since the original four - room Old Academy Building opened in 1815 
+			N-ARG-A1		13-17	over one dozen major buildings 
+	21	,
+	22	for
+	23	academics
+			sense:	academician.n.03
+	24	and
+	25	administration
+			sense:	administration.n.01
+	26	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.6-7	each town 
+				3.12-12	their 
+	Chain 1 (IDENT)
+				0.9-10	New Hampshire 
+				1.15-16	New Hampshire 
+	Chain 2 (IDENT)
+				2.0-2	Pinkerton 's situation 
+				2.7-7	it 
+

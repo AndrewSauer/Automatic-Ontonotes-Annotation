@@ -1,0 +1,543 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Thomas Viaduct spans the Patapsco River and Patapsco Valley between Relay , Maryland and Elkridge , Maryland , USA .
+
+
+Treebanked sentence:
+--------------------
+The Thomas Viaduct spans the Patapsco River and Patapsco Valley between Relay , Maryland and Elkridge , Maryland , USA . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Thomas) (NNP Viaduct))
+    (VP (VBZ spans)
+      (NP (DT the)
+        (NML
+          (NML (NNP Patapsco) (NNP River))
+          (CC and)
+          (NML
+            (NML
+              (NML (NNP Patapsco) (NNP Valley))
+              (PP (IN between)
+                (NP (NNP Relay) (, ,) (NNP Maryland)
+                  (CC and)
+                  (NNP Elkridge))))
+            (, ,) (NNP Maryland) (, ,)))
+        (NNP USA)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Thomas
+	2	Viaduct
+	3	spans
+			sense:	cross.v.05
+			prop:	span.01
+			V		3-3	spans 
+			N-ARG-A0		0-2	The Thomas Viaduct 
+			N-ARG-A1		4-9	the Patapsco River and Patapsco Valley 
+			N-ARGM-LOC		10-19	between Relay , Maryland and Elkridge , Maryland , USA 
+	4	the
+	5	Patapsco
+			name:	LOCATION				5-5	Patapsco 
+	6	River
+			name:	TITLE				6-6	River 
+	7	and
+	8	Patapsco
+			name:	LOCATION				8-8	Patapsco 
+	9	Valley
+			name:	CITY				9-9	Valley 
+	10	between
+	11	Relay
+	12	,
+	13	Maryland
+			name:	STATE_OR_PROVINCE				13-13	Maryland 
+	14	and
+	15	Elkridge
+			name:	CITY				15-15	Elkridge 
+	16	,
+	17	Maryland
+			name:	STATE_OR_PROVINCE				17-17	Maryland 
+	18	,
+	19	USA
+			name:	COUNTRY				19-19	USA 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was commissioned by the Baltimore and Ohio Railroad ( B&O ; ) ; built between July 4 , 1833 , and July 4 , 1835 ; and named for Philip E. Thomas , the company 's first president .
+
+
+Treebanked sentence:
+--------------------
+It was commissioned by the Baltimore and Ohio Railroad ( B&O ; ) ; built between July 4 , 1833 , and July 4 , 1835 ; and named for Philip E. Thomas , the company 's first president . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP
+        (VP (VBN commissioned)
+          (PP (IN by)
+            (NP (DT the)
+              (NML
+                (NML
+                  (ADJP (NNP Baltimore)
+                    (CC and)
+                    (NNP Ohio))
+                  (NN Railroad))
+                (-LRB- -LRB-)
+                (NML (NN B&O))))
+            (: ;))
+          (-RRB- -RRB-)
+          (PRN (: ;)
+            (S
+              (VP (VBN built)
+                (PP (IN between)
+                  (NP
+                    (NP (NNP July) (CD 4) (, ,) (CD 1833) (, ,))
+                    (CC and)
+                    (NP
+                      (NP (NNP July) (CD 4))
+                      (, ,)
+                      (NP (NNP 1835)))))))
+            (: ;)))
+        (CC and)
+        (VP (VBN named)
+          (PP (IN for)
+            (NP
+              (NP (NNP Philip) (NNP E.) (NNP Thomas))
+              (, ,)
+              (NP
+                (NP (DT the) (NN company) (POS 's))
+                (JJ first) (NN president)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	commissioned
+			sense:	commission.v.01
+			prop:	commission.01
+			V		2-2	commissioned 
+			N-ARG-A1		0-0	It 
+			N-ARG-A0		3-10	by the Baltimore and Ohio Railroad ( B&O 
+	3	by
+	4	the
+	5	Baltimore
+			name:	CITY				5-5	Baltimore 
+	6	and
+	7	Ohio
+			name:	ORGANIZATION				7-8	Ohio Railroad 
+	8	Railroad
+			sense:	railway.n.01
+	9	(
+	10	B&O
+	11	;
+	12	)
+	13	;
+	14	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		14-14	built 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		15-25	between July 4 , 1833 , and July 4 , 1835 
+	15	between
+	16	July
+			name:	DATE				16-19	July 4 , 1833 
+	17	4
+	18	,
+	19	1833
+	20	,
+	21	and
+	22	July
+			name:	DATE				22-25	July 4 , 1835 
+	23	4
+	24	,
+	25	1835
+	26	;
+	27	and
+	28	named
+			sense:	name.v.01
+			prop:	name.02
+			V		28-28	named 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		29-38	for Philip E. Thomas , the company 's first president 
+	29	for
+	30	Philip
+			name:	PERSON				30-32	Philip E. Thomas 
+	31	E.
+	32	Thomas
+	33	,
+	34	the
+			coref:	IDENT			1	34-36	the company 's 
+	35	company
+			sense:	company.n.01
+	36	's
+	37	first
+			name:	ORDINAL				37-37	first 
+			sense:	first.a.01
+	38	president
+			name:	TITLE				38-38	president 
+			sense:	president.n.01
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At its completion , the Thomas Viaduct was the largest railroad bridge in the United States and the country 's first multi - span masonry railroad bridge to be built on a curve .
+
+
+Treebanked sentence:
+--------------------
+At its completion , the Thomas Viaduct was the largest railroad bridge in the United States and the country 's first multi - span masonry railroad bridge to be built on a curve . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (PRP$ its) (NN completion)))
+    (, ,)
+    (NP (DT the) (NNP Thomas) (NNP Viaduct))
+    (VP (VBD was)
+      (NP
+        (NP
+          (NP (DT the) (JJS largest) (NN railroad) (NN bridge))
+          (PP (IN in)
+            (NP (DT the) (NNP United) (NNP States))))
+        (CC and)
+        (NP
+          (NP (DT the) (NN country) (POS 's))
+          (NML (JJ first)
+            (NML
+              (ADJP (JJ multi) (HYPH -) (NN span))
+              (NN masonry))
+            (NN railroad))
+          (NN bridge)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (VP (VBN built)
+                  (PP (IN on)
+                    (NP (DT a) (NN curve))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	its
+			coref:	IDENT			1	1-1	its 
+	2	completion
+			sense:	completion.n.02
+	3	,
+	4	the
+	5	Thomas
+			name:	LOCATION				5-6	Thomas Viaduct 
+	6	Viaduct
+	7	was
+			sense:	be.v.01
+			prop:	be.01
+			V		7-7	was 
+			N-ARGM-TMP		0-2	At its completion 
+			N-ARG-A1		4-6	the Thomas Viaduct 
+			N-ARG-A2		8-32	the largest railroad bridge in the United States and the country 's first multi - span masonry railroad bridge to be built on a curve 
+	8	the
+	9	largest
+			sense:	large.a.01
+	10	railroad
+			sense:	railway.n.01
+	11	bridge
+			sense:	bridge.n.01
+	12	in
+	13	the
+	14	United
+			name:	COUNTRY				14-15	United States 
+	15	States
+	16	and
+	17	the
+			coref:	IDENT			1	17-19	the country 's 
+	18	country
+			sense:	country.n.02
+	19	's
+	20	first
+			name:	ORDINAL				20-20	first 
+			sense:	first.a.01
+	21	multi
+	22	-
+	23	span
+			sense:	bridge.n.01
+	24	masonry
+			sense:	masonry.n.01
+	25	railroad
+			sense:	railway.n.01
+	26	bridge
+			sense:	bridge.n.01
+	27	to
+	28	be
+			sense:	be.v.01
+			prop:	be.03
+			V		28-28	be 
+	29	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		29-29	built 
+			N-ARG-A1		17-26	the country 's first multi - span masonry railroad bridge 
+			N-ARGM-MNR		30-32	on a curve 
+	30	on
+	31	a
+	32	curve
+			sense:	bend.n.03
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It remains the world 's oldest multiple arched stone railroad bridge .
+
+
+Treebanked sentence:
+--------------------
+It remains the world 's oldest multiple arched stone railroad bridge . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ remains)
+      (NP
+        (NP (DT the) (NN world) (POS 's))
+        (JJS oldest)
+        (NML (JJ multiple) (JJ arched) (NN stone) (NN railroad))
+        (NN bridge)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	remains
+			sense:	stay.v.01
+			prop:	remain.01
+			V		1-1	remains 
+			N-ARG-A1		0-0	It 
+			N-ARG-A3		2-10	the world 's oldest multiple arched stone railroad bridge 
+	2	the
+	3	world
+			sense:	earth.n.01
+	4	's
+	5	oldest
+			sense:	old.a.02
+	6	multiple
+			sense:	multiple.a.01
+	7	arched
+			sense:	arched.a.01
+	8	stone
+			sense:	rock.n.02
+	9	railroad
+			sense:	railway.n.01
+	10	bridge
+			sense:	bridge.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1964 , it was designated as a National Historic Landmark .
+
+
+Treebanked sentence:
+--------------------
+In 1964 , it was designated as a National Historic Landmark . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1964)))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (VP (VBN designated)
+        (PP (IN as)
+          (NP (DT a) (NNP National) (NNP Historic) (NNP Landmark)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1964
+			name:	DATE				1-1	1964 
+	2	,
+	3	it
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	designated
+			sense:	designate.v.01
+			prop:	designate.01
+			V		5-5	designated 
+			N-ARGM-TMP		0-1	In 1964 
+			N-ARG-A1		3-3	it 
+			N-ARG-A2		6-10	as a National Historic Landmark 
+	6	as
+	7	a
+	8	National
+	9	Historic
+	10	Landmark
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The viaduct is now owned and operated by CSX Transportation and still in use today , making it one of the oldest railroad bridges still in service .
+
+
+Treebanked sentence:
+--------------------
+The viaduct is now owned and operated by CSX Transportation and still in use today , making it one of the oldest railroad bridges still in service . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN viaduct))
+    (VP (VBZ is)
+      (ADVP (RB now))
+      (VP (VBN owned)
+        (CC and)
+        (VBN operated)
+        (PP
+          (PP (IN by)
+            (NP (NNP CSX) (NNP Transportation)))
+          (CC and)
+          (PP
+            (ADVP (RB still))
+            (IN in)
+            (NP (NN use) (NN today))))
+        (, ,)
+        (S
+          (VP (VBG making)
+            (S
+              (NP (PRP it))
+              (NP
+                (NP (CD one))
+                (PP (IN of)
+                  (NP (DT the) (JJS oldest) (NN railroad) (NNS bridges)))))
+            (ADVP (RB still))
+            (PP (IN in)
+              (NP (NN service)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	viaduct
+			sense:	viaduct.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+			N-ARGM-TMP		3-3	now 
+			N-ARGM-ADV		16-26	making it one of the oldest railroad bridges still in service 
+	3	now
+			name:	DATE				3-3	now 
+			sense:	nowadays.r.01
+	4	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		4-4	owned 
+			N-ARG-A1		0-1	The viaduct 
+			N-ARGM-TMP		3-3	now 
+			N-ARG-A0		7-9	by CSX Transportation 
+			N-ARGM-ADV		16-26	making it one of the oldest railroad bridges still in service 
+	5	and
+	6	operated
+			sense:	operate.v.01
+			prop:	operate.01
+			V		6-6	operated 
+			N-ARG-A1		0-1	The viaduct 
+			N-ARGM-TMP		3-3	now 
+			N-ARG-A0		7-9	by CSX Transportation 
+	7	by
+	8	CSX
+			coref:	IDENT			0	8-9	CSX Transportation 
+			name:	ORGANIZATION				8-9	CSX Transportation 
+	9	Transportation
+	10	and
+	11	still
+			sense:	still.r.01
+	12	in
+	13	use
+			sense:	use.n.01
+	14	today
+			name:	DATE				14-14	today 
+			sense:	today.n.01
+	15	,
+	16	making
+			sense:	make.v.02
+			prop:	make.02
+			V		16-16	making 
+			N-ARG-A1		17-26	it one of the oldest railroad bridges still in service 
+	17	it
+			coref:	IDENT			0	17-17	it 
+	18	one
+			name:	NUMBER				18-18	one 
+	19	of
+	20	the
+	21	oldest
+			sense:	old.a.02
+	22	railroad
+			sense:	railway.n.01
+	23	bridges
+			sense:	bridge.n.01
+	24	still
+			sense:	still.r.01
+	25	in
+	26	service
+			sense:	service.n.01
+	27	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.8-9	CSX Transportation 
+				5.17-17	it 
+	Chain 1 (IDENT)
+				1.34-36	the company 's 
+				2.1-1	its 
+				2.17-19	the country 's 
+

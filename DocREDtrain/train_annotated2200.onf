@@ -1,0 +1,842 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Major General Craig A. Franklin is a retired United States Air Force general officer .
+
+
+Treebanked sentence:
+--------------------
+Major General Craig A. Franklin is a retired United States Air Force general officer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NML (NNP Major) (NNP General))
+      (NNP Craig) (NNP A.) (NNP Franklin))
+    (VP (VBZ is)
+      (NP (DT a) (JJ retired)
+        (NML (NNP United) (NNP States) (NNP Air) (NNP Force))
+        (JJ general) (NN officer)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Major
+			name:	TITLE				0-1	Major General 
+	1	General
+	2	Craig
+			name:	PERSON				2-4	Craig A. Franklin 
+	3	A.
+	4	Franklin
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	Major General Craig A. Franklin 
+			N-ARG-A2		6-13	a retired United States Air Force general officer 
+	6	a
+	7	retired
+			sense:	retired.s.01
+	8	United
+			coref:	IDENT			0	8-11	United States Air Force 
+			name:	ORGANIZATION				8-11	United States Air Force 
+	9	States
+	10	Air
+	11	Force
+	12	general
+			name:	TITLE				12-12	general 
+			sense:	general.a.01
+	13	officer
+			sense:	military_officer.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was last the commander of 3rd Air Force , based at Ramstein Air Base in Germany .
+
+
+Treebanked sentence:
+--------------------
+He was last the commander of 3rd Air Force , based at Ramstein Air Base in Germany . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (JJ last) (DT the) (NN commander))
+        (PP (IN of)
+          (NP (NNP 3rd) (NNP Air) (NNP Force))))
+      (, ,)
+      (PP (VBN based)
+        (PP (IN at)
+          (NP
+            (NP (NNP Ramstein) (NNP Air) (NNP Base))
+            (PP (IN in)
+              (NP (NNP Germany)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		2-2	last 
+			N-ARG-A2		3-16	the commander of 3rd Air Force , based at Ramstein Air Base in Germany 
+	2	last
+			sense:	last.s.01
+	3	the
+	4	commander
+			name:	TITLE				4-4	commander 
+			sense:	commanding_officer.n.01
+	5	of
+	6	3rd
+			name:	ORGANIZATION				6-8	3rd Air Force 
+	7	Air
+	8	Force
+	9	,
+	10	based
+			sense:	base.v.02
+			prop:	base.01
+			V		10-10	based 
+			N-ARG-A1		6-8	3rd Air Force 
+			N-ARGM-LOC		11-16	at Ramstein Air Base in Germany 
+	11	at
+	12	Ramstein
+			name:	LOCATION				12-14	Ramstein Air Base 
+	13	Air
+	14	Base
+	15	in
+	16	Germany
+			name:	COUNTRY				16-16	Germany 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A 1981 graduate of the United States Air Force Academy , Franklin served in flying assignments , instructor pilot assignments , as well as multiple staff assignments .
+
+
+Treebanked sentence:
+--------------------
+A 1981 graduate of the United States Air Force Academy , Franklin served in flying assignments , instructor pilot assignments , as well as multiple staff assignments . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP-TMP
+      (NP (DT A) (CD 1981) (NN graduate))
+      (PP (IN of)
+        (NP (DT the) (NNP United)
+          (NML (NNP States) (NNP Air) (NNP Force))
+          (NNP Academy))))
+    (, ,)
+    (NP (NNP Franklin))
+    (VP (VBD served)
+      (PP (IN in)
+        (S
+          (VP (VBG flying)
+            (NP
+              (NP (NNS assignments))
+              (, ,)
+              (NP (NN instructor) (NN pilot) (NNS assignments))
+              (, ,)
+              (CONJP (RB as) (RB well) (IN as))
+              (NP (JJ multiple) (NN staff) (NNS assignments)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	1981
+			name:	DATE				1-1	1981 
+	2	graduate
+			sense:	alumnus.n.01
+	3	of
+	4	the
+			coref:	IDENT			0	4-9	the United States Air Force Academy 
+	5	United
+			name:	ORGANIZATION				5-9	United States Air Force Academy 
+	6	States
+	7	Air
+	8	Force
+	9	Academy
+	10	,
+	11	Franklin
+			name:	PERSON				11-11	Franklin 
+	12	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		12-12	served 
+			R-ARG-A0		0-9	A 1981 graduate of the United States Air Force Academy 
+			N-ARG-A0		11-11	Franklin 
+			N-ARG-A1		13-26	in flying assignments , instructor pilot assignments , as well as multiple staff assignments 
+	13	in
+	14	flying
+			sense:	fly.v.03
+			prop:	fly.01
+			V		14-14	flying 
+	15	assignments
+			sense:	assignment.n.01
+	16	,
+	17	instructor
+			name:	TITLE				17-18	instructor pilot 
+			sense:	teacher.n.01
+	18	pilot
+			sense:	pilot.n.01
+	19	assignments
+			sense:	assignment.n.01
+	20	,
+	21	as
+			sense:	equally.r.01
+	22	well
+			sense:	well.r.02
+	23	as
+	24	multiple
+			sense:	multiple.a.01
+	25	staff
+			sense:	staff.n.01
+	26	assignments
+			sense:	assignment.n.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Franklin has commanded a test and evaluation group and three wings , including the 332nd Air Expeditionary Wing based at Balad Air Base , Iraq .
+
+
+Treebanked sentence:
+--------------------
+Franklin has commanded a test and evaluation group and three wings , including the 332nd Air Expeditionary Wing based at Balad Air Base , Iraq . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Franklin))
+    (VP (VBZ has)
+      (VP (VBN commanded)
+        (NP
+          (NP (DT a)
+            (NML (NN test)
+              (CC and)
+              (NN evaluation))
+            (NN group))
+          (CC and)
+          (NP (CD three) (NNS wings)))
+        (, ,)
+        (PP (VBG including)
+          (NP
+            (NP (DT the) (NNP 332nd) (NNP Air) (NNP Expeditionary) (NNP Wing))
+            (PP (VBN based)
+              (PP (IN at)
+                (NP
+                  (NP (NNP Balad) (NNP Air) (NNP Base))
+                  (, ,)
+                  (NP (NNP Iraq)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Franklin
+			name:	PERSON				0-0	Franklin 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	commanded
+			sense:	command.v.01
+			prop:	command.02
+			V		2-2	commanded 
+			N-ARG-A0		0-0	Franklin 
+			N-ARG-A1		3-24	a test and evaluation group and three wings , including the 332nd Air Expeditionary Wing based at Balad Air Base , Iraq 
+	3	a
+	4	test
+			sense:	test.n.05
+	5	and
+	6	evaluation
+			sense:	evaluation.n.01
+	7	group
+			sense:	group.n.01
+	8	and
+	9	three
+			name:	NUMBER				9-9	three 
+	10	wings
+			sense:	wing.n.04
+	11	,
+	12	including
+			sense:	include.v.01
+			prop:	include.01
+			V		12-12	including 
+			N-ARG-A2		9-10	three wings 
+			N-ARG-A1		13-24	the 332nd Air Expeditionary Wing based at Balad Air Base , Iraq 
+	13	the
+	14	332nd
+			name:	ORGANIZATION				14-17	332nd Air Expeditionary Wing 
+	15	Air
+	16	Expeditionary
+	17	Wing
+	18	based
+			sense:	base.v.02
+			prop:	base.01
+			V		18-18	based 
+			N-ARG-A1		13-17	the 332nd Air Expeditionary Wing 
+			N-ARGM-LOC		19-24	at Balad Air Base , Iraq 
+	19	at
+	20	Balad
+			name:	CITY				20-20	Balad 
+	21	Air
+			name:	LOCATION				21-22	Air Base 
+	22	Base
+	23	,
+	24	Iraq
+			name:	COUNTRY				24-24	Iraq 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Franklin submitted his retirement to be effective 31 January 2014 .
+
+
+Treebanked sentence:
+--------------------
+Franklin submitted his retirement to be effective 31 January 2014 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Franklin))
+    (VP (VBD submitted)
+      (NP (PRP$ his) (NN retirement))
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (ADJP (JJ effective)
+              (NP-TMP (CD 31)))
+            (NP-TMP (NNP January) (CD 2014))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Franklin
+			name:	PERSON				0-0	Franklin 
+	1	submitted
+			sense:	present.v.04
+			prop:	submit.01
+			V		1-1	submitted 
+			N-ARG-A0		0-0	Franklin 
+			N-ARG-A1		2-3	his retirement 
+			N-ARG-A3		4-9	to be effective 31 January 2014 
+	2	his
+			coref:	IDENT			1	2-3	his retirement 
+	3	retirement
+			sense:	retirement.n.02
+	4	to
+	5	be
+			sense:	be.v.01
+			prop:	be.01
+			V		5-5	be 
+			N-ARG-A1		0-0	Franklin 
+			N-ARG-A1		2-3	his retirement 
+			N-ARG-A2		6-9	effective 31 January 2014 
+	6	effective
+			sense:	effective.s.04
+	7	31
+			name:	DATE				7-9	31 January 2014 
+	8	January
+	9	2014
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His early retirement resulted in a reduction in retirement rank to the two - star rank of major general .
+
+
+Treebanked sentence:
+--------------------
+His early retirement resulted in a reduction in retirement rank to the two - star rank of major general . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His) (JJ early) (NN retirement))
+    (VP (VBD resulted)
+      (PP (IN in)
+        (NP
+          (NP (DT a) (NN reduction))
+          (PP (IN in)
+            (NP (NN retirement) (NN rank)))))
+      (PP (IN to)
+        (NP
+          (NP (DT the)
+            (NML (CD two) (HYPH -) (NN star))
+            (NN rank))
+          (PP (IN of)
+            (NP (JJ major) (JJ general))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			1	0-2	His early retirement 
+	1	early
+			sense:	early.a.01
+	2	retirement
+			sense:	retirement.n.02
+	3	resulted
+			sense:	leave.v.07
+			prop:	result.01
+			V		3-3	resulted 
+			N-ARG-A1		0-2	His early retirement 
+			N-ARG-A2		4-18	in a reduction in retirement rank to the two - star rank of major general 
+	4	in
+	5	a
+	6	reduction
+			sense:	decrease.n.04
+	7	in
+	8	retirement
+			sense:	retirement.n.02
+	9	rank
+			sense:	rank.n.02
+	10	to
+	11	the
+	12	two
+			name:	NUMBER				12-12	two 
+	13	-
+	14	star
+			sense:	star.n.05
+	15	rank
+			sense:	rank.n.02
+	16	of
+	17	major
+			name:	TITLE				17-18	major general 
+			sense:	major.a.01
+	18	general
+			sense:	general.a.01
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This is as a direct result of Franklin 's dismissal of a sexual assault case in February 2013 after the officer in question , a lieutenant colonel , had been found guilty at a court martial in November 2012 .
+
+
+Treebanked sentence:
+--------------------
+This is as a direct result of Franklin 's dismissal of a sexual assault case in February 2013 after the officer in question , a lieutenant colonel , had been found guilty at a court martial in November 2012 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (SBAR (IN as)
+        (S
+          (NP
+            (NP (DT a) (JJ direct) (NN result))
+            (PP (IN of)
+              (NP
+                (NP
+                  (NP (NNP Franklin) (POS 's))
+                  (NN dismissal))
+                (PP (IN of)
+                  (NP
+                    (NP (DT a) (JJ sexual) (NN assault) (NN case))
+                    (PP (IN in)
+                      (NP
+                        (NP (NNP February) (CD 2013))
+                        (PP (IN after)
+                          (NP
+                            (NP (DT the) (NN officer))
+                            (PP (IN in)
+                              (NP
+                                (NP (NN question))
+                                (, ,)
+                                (NP (DT a) (NN lieutenant) (NN colonel))
+                                (, ,))))))))))))
+          (VP (VBD had)
+            (VP (VBN been)
+              (VP (VBN found)
+                (S
+                  (ADJP (JJ guilty)
+                    (PP (IN at)
+                      (NP (DT a) (NN court) (JJ martial)))))
+                (PP (IN in)
+                  (NP (NNP November) (CD 2012)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	This 
+			N-ARG-A2		2-38	as a direct result of Franklin 's dismissal of a sexual assault case in February 2013 after the officer in question , a lieutenant colonel , had been found guilty at a court martial in November 2012 
+	2	as
+	3	a
+	4	direct
+			sense:	direct.s.08
+	5	result
+			sense:	consequence.n.01
+	6	of
+	7	Franklin
+			name:	ORGANIZATION				7-7	Franklin 
+	8	's
+	9	dismissal
+			sense:	judgment_of_dismissal.n.01
+	10	of
+	11	a
+	12	sexual
+			name:	CRIMINAL_CHARGE				12-13	sexual assault 
+			sense:	sexual.a.02
+	13	assault
+			sense:	rape.n.03
+	14	case
+			sense:	lawsuit.n.01
+	15	in
+	16	February
+			name:	DATE				16-17	February 2013 
+	17	2013
+	18	after
+	19	the
+			coref:	IDENT			2	19-26	the officer in question , a lieutenant colonel 
+	20	officer
+			sense:	military_officer.n.01
+	21	in
+	22	question
+			sense:	question.n.02
+	23	,
+	24	a
+	25	lieutenant
+			name:	TITLE				25-26	lieutenant colonel 
+			sense:	lieutenant.n.01
+	26	colonel
+			sense:	colonel.n.01
+	27	,
+	28	had
+			sense:	have.v.11
+			prop:	have.01
+			V		28-28	had 
+	29	been
+			sense:	be.v.01
+			prop:	be.03
+			V		29-29	been 
+	30	found
+			sense:	rule.v.04
+			prop:	find.01
+			V		30-30	found 
+			N-ARG-A2		19-26	the officer in question , a lieutenant colonel 
+			N-ARG-A1		31-31	guilty 
+			N-ARGM-LOC		32-35	at a court martial 
+			N-ARGM-TMP		36-38	in November 2012 
+	31	guilty
+			sense:	guilty.a.01
+	32	at
+	33	a
+	34	court
+			sense:	court.n.01
+	35	martial
+			sense:	martial.s.03
+	36	in
+	37	November
+			name:	DATE				37-38	November 2012 
+	38	2012
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The officer was subsequently released from prison and restored to his rank , only to be forced into retirement at a lower rank after the discovery of further sexual misconduct .
+
+
+Treebanked sentence:
+--------------------
+The officer was subsequently released from prison and restored to his rank , only to be forced into retirement at a lower rank after the discovery of further sexual misconduct . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN officer))
+    (VP (VBD was)
+      (ADVP (RB subsequently))
+      (VP
+        (VP (VBN released)
+          (PP (IN from)
+            (NP (NN prison))))
+        (CC and)
+        (VP (VBN restored)
+          (PP (IN to)
+            (NP (PRP$ his) (NN rank)))
+          (, ,)
+          (S
+            (ADVP (RB only))
+            (VP (TO to)
+              (VP (VB be)
+                (VP (VBN forced)
+                  (PP (IN into)
+                    (NP (NN retirement)))
+                  (PP (IN at)
+                    (NP
+                      (NP (DT a) (JJR lower) (NN rank))
+                      (PP (IN after)
+                        (NP
+                          (NP (DT the) (NN discovery))
+                          (PP (IN of)
+                            (NP (JJ further) (JJ sexual) (NN misconduct))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-1	The officer 
+	1	officer
+			sense:	military_officer.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	subsequently
+			sense:	subsequently.r.01
+	4	released
+			sense:	free.v.01
+			prop:	release.01
+			V		4-4	released 
+			N-ARG-A1		0-1	The officer 
+			N-ARGM-TMP		3-3	subsequently 
+			N-ARG-A2		5-6	from prison 
+			N-ARGM-ADV		13-29	only to be forced into retirement at a lower rank after the discovery of further sexual misconduct 
+	5	from
+	6	prison
+			sense:	prison.n.01
+	7	and
+	8	restored
+			sense:	restore.v.05
+			prop:	restore.01
+			V		8-8	restored 
+			N-ARG-A1		0-1	The officer 
+			N-ARGM-TMP		3-3	subsequently 
+			N-ARG-A2		9-11	to his rank 
+			N-ARGM-ADV		13-29	only to be forced into retirement at a lower rank after the discovery of further sexual misconduct 
+	9	to
+	10	his
+			coref:	IDENT			2	10-10	his 
+	11	rank
+			sense:	rank_and_file.n.01
+	12	,
+	13	only
+			sense:	only.r.03
+	14	to
+	15	be
+			sense:	be.v.01
+			prop:	be.03
+			V		15-15	be 
+	16	forced
+			sense:	coerce.v.01
+			prop:	force.01
+			V		16-16	forced 
+			N-ARG-A1		0-1	The officer 
+			N-ARGM-ADV		13-13	only 
+			N-ARG-A2		17-22	into retirement at a lower rank 
+			N-ARGM-TMP		23-29	after the discovery of further sexual misconduct 
+	17	into
+	18	retirement
+			sense:	retirement.n.01
+	19	at
+	20	a
+	21	lower
+			sense:	humble.s.01
+	22	rank
+			sense:	rank_and_file.n.01
+	23	after
+	24	the
+	25	discovery
+			sense:	discovery.n.01
+	26	of
+	27	further
+			sense:	further.s.01
+	28	sexual
+			sense:	sexual.a.02
+	29	misconduct
+			name:	CRIMINAL_CHARGE				29-29	misconduct 
+			sense:	wrongdoing.n.02
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In a statement Franklin said , " he was retiring ' for the good of this command and the Air Force ' because of persistent doubts about his impartiality in overseeing sex - abuse investigations . "
+
+
+Treebanked sentence:
+--------------------
+In a statement Franklin said , " he was retiring ' for the good of this command and the Air Force ' because of persistent doubts about his impartiality in overseeing sex - abuse investigations . " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT a) (NN statement)))
+    (NP (NNP Franklin))
+    (VP (VBD said) (, ,) ('' ")
+      (S
+        (NP (PRP he))
+        (VP (VBD was)
+          (VP (VBG retiring) ('' ')
+            (PP (IN for)
+              (NP
+                (NP (DT the) (NN good))
+                (PP (IN of)
+                  (NP
+                    (NP (DT this) (NN command))
+                    (CC and)
+                    (NP (DT the) (NNP Air) (NNP Force) (POS '))))))
+            (PP (IN because) (IN of)
+              (NP
+                (NP (JJ persistent) (NNS doubts))
+                (PP (IN about)
+                  (NP
+                    (NP (PRP$ his) (NN impartiality))
+                    (PP (IN in)
+                      (S
+                        (VP (VBG overseeing)
+                          (NP
+                            (NML (NN sex) (HYPH -) (NN abuse))
+                            (NNS investigations)))))))))))))
+    (. .) ('' ")))
+
+
+Leaves:
+-------
+	0	In
+	1	a
+	2	statement
+			sense:	statement.n.01
+	3	Franklin
+			name:	PERSON				3-3	Franklin 
+	4	said
+			sense:	state.v.01
+			prop:	say.01
+			V		4-4	said 
+			N-ARGM-LOC		0-2	In a statement 
+			N-ARG-A0		3-3	Franklin 
+			N-ARG-A1		7-34	he was retiring ' for the good of this command and the Air Force ' because of persistent doubts about his impartiality in overseeing sex - abuse investigations 
+	5	,
+	6	"
+	7	he
+			coref:	IDENT			2	7-7	he 
+	8	was
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	was 
+	9	retiring
+			sense:	retire.v.01
+			prop:	retire.01
+			V		9-9	retiring 
+			N-ARG-A0		7-7	he 
+			N-ARGM-PRP		11-20	for the good of this command and the Air Force 
+			N-ARGM-CAU		22-34	because of persistent doubts about his impartiality in overseeing sex - abuse investigations 
+	10	'
+	11	for
+	12	the
+	13	good
+			sense:	good.n.01
+	14	of
+	15	this
+	16	command
+			sense:	command.n.02
+	17	and
+	18	the
+	19	Air
+			name:	ORGANIZATION				19-20	Air Force 
+	20	Force
+	21	'
+	22	because
+	23	of
+	24	persistent
+			sense:	persistent.s.01
+	25	doubts
+			sense:	doubt.n.01
+	26	about
+	27	his
+			coref:	IDENT			2	27-27	his 
+	28	impartiality
+			sense:	impartiality.n.01
+	29	in
+	30	overseeing
+			sense:	oversee.v.01
+			prop:	oversee.01
+			V		30-30	overseeing 
+			N-ARG-A0		7-7	he 
+			N-ARG-A1		31-34	sex - abuse investigations 
+	31	sex
+			sense:	sexual_activity.n.01
+	32	-
+	33	abuse
+			sense:	maltreatment.n.01
+	34	investigations
+			sense:	probe.n.01
+	35	.
+	36	"
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.4-9	the United States Air Force Academy 
+				0.8-11	United States Air Force 
+	Chain 1 (IDENT)
+				5.0-2	His early retirement 
+				4.2-3	his retirement 
+	Chain 2 (IDENT)
+				6.19-26	the officer in question , a lieutenant colonel 
+				7.0-1	The officer 
+				7.10-10	his 
+				8.7-7	he 
+				8.27-27	his 
+

@@ -1,0 +1,728 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Downy ( Lenor in Europe , Russia and Japan ) is a brand name of fabric softener produced by Procter & Gamble and sold in the United States .
+
+
+Treebanked sentence:
+--------------------
+Downy ( Lenor in Europe , Russia and Japan ) is a brand name of fabric softener produced by Procter & Gamble and sold in the United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Downy))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP Lenor))
+        (PP (IN in)
+          (NP (NNP Europe) (, ,) (NNP Russia)
+            (CC and)
+            (NNP Japan))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN brand) (NN name))
+        (PP (IN of)
+          (NP
+            (NP (NN fabric) (NN softener))
+            (VP
+              (VP (VBN produced)
+                (PP (IN by)
+                  (NP (NNP Procter)
+                    (CC &)
+                    (NNP Gamble))))
+              (CC and)
+              (VP (VBN sold)
+                (PP (IN in)
+                  (NP (DT the) (NNP United) (NNP States)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Downy
+			coref:	IDENT			3	0-0	Downy 
+	1	(
+	2	Lenor
+	3	in
+	4	Europe
+			name:	LOCATION				4-4	Europe 
+	5	,
+	6	Russia
+			coref:	IDENT			5	6-6	Russia 
+			name:	COUNTRY				6-6	Russia 
+	7	and
+	8	Japan
+			coref:	IDENT			6	8-8	Japan 
+			name:	COUNTRY				8-8	Japan 
+	9	)
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	Downy ( Lenor in Europe , Russia and Japan ) 
+			N-ARG-A2		11-27	a brand name of fabric softener produced by Procter & Gamble and sold in the United States 
+	11	a
+	12	brand
+			sense:	trade_name.n.01
+	13	name
+			sense:	name.n.01
+	14	of
+	15	fabric
+			sense:	fabric.n.01
+	16	softener
+			sense:	softener.n.01
+	17	produced
+			sense:	produce.v.02
+			prop:	produce.01
+			V		17-17	produced 
+			N-ARG-A0		18-21	by Procter & Gamble 
+	18	by
+	19	Procter
+			coref:	IDENT			4	19-21	Procter & Gamble 
+			name:	ORGANIZATION				19-21	Procter & Gamble 
+	20	&
+	21	Gamble
+	22	and
+	23	sold
+			sense:	sell.v.01
+			prop:	sell.01
+			V		23-23	sold 
+			N-ARG-A1		11-16	a brand name of fabric softener 
+			N-ARGM-LOC		24-27	in the United States 
+	24	in
+	25	the
+	26	United
+			name:	COUNTRY				26-27	United States 
+	27	States
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It entered the U.S. test market in August 1960 and went nationwide in December 1961 .
+
+
+Treebanked sentence:
+--------------------
+It entered the U.S. test market in August 1960 and went nationwide in December 1961 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBD entered)
+        (NP (DT the) (NNP U.S.) (NN test) (NN market))
+        (PP (IN in)
+          (NP (NNP August) (CD 1960))))
+      (CC and)
+      (VP (VBD went)
+        (ADVP (RB nationwide))
+        (PP (IN in)
+          (NP (NNP December) (CD 1961)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			3	0-0	It 
+	1	entered
+			sense:	enter.v.01
+			prop:	enter.01
+			V		1-1	entered 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-5	the U.S. test market 
+			N-ARGM-TMP		6-8	in August 1960 
+	2	the
+	3	U.S.
+			name:	COUNTRY				3-3	U.S. 
+	4	test
+			sense:	trial.n.02
+	5	market
+			sense:	market.n.02
+	6	in
+	7	August
+			name:	DATE				7-8	August 1960 
+	8	1960
+	9	and
+	10	went
+			sense:	become.v.01
+			prop:	go.06
+			V		10-10	went 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		11-11	nationwide 
+			N-ARGM-TMP		12-14	in December 1961 
+	11	nationwide
+			sense:	nationally.r.02
+	12	in
+	13	December
+			name:	DATE				13-14	December 1961 
+	14	1961
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was also sold in the Philippines , Malaysia , Indonesia , Singapore , Thailand , Vietnam , South Korea , Egypt , Kenya and Latin America .
+
+
+Treebanked sentence:
+--------------------
+It was also sold in the Philippines , Malaysia , Indonesia , Singapore , Thailand , Vietnam , South Korea , Egypt , Kenya and Latin America . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (ADVP (RB also))
+      (VP (VBN sold)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNPS Philippines))
+            (, ,)
+            (NP (NNP Malaysia) (, ,) (NNP Indonesia) (, ,) (NNP Singapore) (, ,) (NNP Thailand) (, ,) (NNP Vietnam) (, ,) (NNP South) (NNP Korea))
+            (, ,)
+            (NP (NNP Egypt))
+            (, ,)
+            (NP (NNP Kenya))
+            (CC and)
+            (NP (NNP Latin) (NNP America))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			3	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	also
+			sense:	besides.r.02
+	3	sold
+			sense:	sell.v.01
+			prop:	sell.01
+			V		3-3	sold 
+			N-ARG-A1		0-0	It 
+			N-ARGM-DIS		2-2	also 
+			N-ARGM-LOC		4-26	in the Philippines , Malaysia , Indonesia , Singapore , Thailand , Vietnam , South Korea , Egypt , Kenya and Latin America 
+	4	in
+	5	the
+	6	Philippines
+			name:	COUNTRY				6-6	Philippines 
+	7	,
+	8	Malaysia
+			name:	COUNTRY				8-8	Malaysia 
+	9	,
+	10	Indonesia
+			name:	COUNTRY				10-10	Indonesia 
+	11	,
+	12	Singapore
+			name:	COUNTRY				12-12	Singapore 
+	13	,
+	14	Thailand
+			name:	COUNTRY				14-14	Thailand 
+	15	,
+	16	Vietnam
+			name:	COUNTRY				16-16	Vietnam 
+	17	,
+	18	South
+			name:	COUNTRY				18-19	South Korea 
+	19	Korea
+	20	,
+	21	Egypt
+			name:	COUNTRY				21-21	Egypt 
+	22	,
+	23	Kenya
+			name:	COUNTRY				23-23	Kenya 
+	24	and
+	25	Latin
+			name:	LOCATION				25-25	Latin 
+	26	America
+			name:	COUNTRY				26-26	America 
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Lenor is a brand name of fabric softener and dryer sheets , also produced by Procter & Gamble , sold in Europe , Russia and Japan .
+
+
+Treebanked sentence:
+--------------------
+Lenor is a brand name of fabric softener and dryer sheets , also produced by Procter & Gamble , sold in Europe , Russia and Japan . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Lenor))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN brand) (NN name))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP
+                (NP (NN fabric) (NN softener))
+                (CC and)
+                (NP (NN dryer) (NNS sheets)))
+              (, ,)
+              (VP
+                (ADVP (RB also))
+                (VBN produced)
+                (PP (IN by)
+                  (NP (NNP Procter)
+                    (CC &)
+                    (NNP Gamble)))))
+            (, ,)
+            (VP (VBN sold)
+              (PP (IN in)
+                (NP (NNP Europe) (, ,) (NNP Russia)
+                  (CC and)
+                  (NNP Japan))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Lenor
+			coref:	IDENT			0	0-0	Lenor 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Lenor 
+			N-ARG-A2		2-25	a brand name of fabric softener and dryer sheets , also produced by Procter & Gamble , sold in Europe , Russia and Japan 
+	2	a
+	3	brand
+			sense:	trade_name.n.01
+	4	name
+			sense:	name.n.01
+	5	of
+	6	fabric
+			sense:	fabric.n.01
+	7	softener
+			sense:	softener.n.01
+	8	and
+	9	dryer
+			sense:	dryer.n.01
+	10	sheets
+			sense:	sheet.n.03
+	11	,
+	12	also
+			sense:	besides.r.02
+	13	produced
+			sense:	produce.v.02
+			prop:	produce.01
+			V		13-13	produced 
+			N-ARGM-DIS		12-12	also 
+			N-ARG-A0		14-17	by Procter & Gamble 
+	14	by
+	15	Procter
+			coref:	IDENT			4	15-17	Procter & Gamble 
+			name:	ORGANIZATION				15-17	Procter & Gamble 
+	16	&
+	17	Gamble
+	18	,
+	19	sold
+			sense:	sell.v.01
+			prop:	sell.01
+			V		19-19	sold 
+			N-ARG-A1		6-10	fabric softener and dryer sheets 
+			N-ARGM-LOC		20-25	in Europe , Russia and Japan 
+	20	in
+	21	Europe
+			name:	LOCATION				21-21	Europe 
+	22	,
+	23	Russia
+			coref:	IDENT			5	23-23	Russia 
+			name:	COUNTRY				23-23	Russia 
+	24	and
+	25	Japan
+			coref:	IDENT			6	25-25	Japan 
+			name:	COUNTRY				25-25	Japan 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Lenor fabric softener had entered China in 2007 but ceased later .
+
+
+Treebanked sentence:
+--------------------
+Lenor fabric softener had entered China in 2007 but ceased later . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Lenor) (NN fabric) (NN softener))
+    (VP
+      (VP (VBD had)
+        (VP (VBN entered)
+          (NP
+            (NP (NNP China))
+            (PP (IN in)
+              (NP (CD 2007))))))
+      (CC but)
+      (VP (VBD ceased)
+        (ADVP (RB later))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Lenor
+	1	fabric
+			sense:	fabric.n.01
+	2	softener
+			sense:	softener.n.01
+	3	had
+			sense:	have.v.01
+			prop:	have.01
+			V		3-3	had 
+	4	entered
+			sense:	enter.v.01
+			prop:	enter.01
+			V		4-4	entered 
+			N-ARG-A0		0-2	Lenor fabric softener 
+			N-ARG-A1		5-5	China 
+			N-ARGM-TMP		6-7	in 2007 
+	5	China
+			coref:	IDENT			2	5-5	China 
+			name:	COUNTRY				5-5	China 
+	6	in
+	7	2007
+			name:	DATE				7-7	2007 
+	8	but
+	9	ceased
+			sense:	end.v.01
+			prop:	cease.01
+			V		9-9	ceased 
+			N-ARG-A1		0-2	Lenor fabric softener 
+			N-ARGM-TMP		10-10	later 
+	10	later
+			sense:	subsequently.r.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Scent beads under the brand Downy have been sold in China since Dec. 2017 .
+
+
+Treebanked sentence:
+--------------------
+Scent beads under the brand Downy have been sold in China since Dec. 2017 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NN Scent) (NNS beads))
+      (PP (IN under)
+        (NP (DT the) (NN brand) (NNP Downy))))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBN sold)
+          (PP (IN in)
+            (NP (NNP China)))
+          (PP (IN since)
+            (NP (NNP Dec.) (CD 2017))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Scent
+			sense:	aroma.n.02
+	1	beads
+			sense:	bead.n.01
+	2	under
+	3	the
+			coref:	IDENT			3	3-5	the brand Downy 
+	4	brand
+			sense:	trade_name.n.01
+	5	Downy
+			name:	MISC				5-5	Downy 
+	6	have
+			sense:	have.v.01
+			prop:	have.01
+			V		6-6	have 
+	7	been
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	been 
+	8	sold
+			sense:	sell.v.01
+			prop:	sell.01
+			V		8-8	sold 
+			N-ARG-A1		0-5	Scent beads under the brand Downy 
+			N-ARGM-LOC		9-10	in China 
+			N-ARGM-TMP		11-13	since Dec. 2017 
+	9	in
+	10	China
+			coref:	IDENT			2	10-10	China 
+			name:	COUNTRY				10-10	China 
+	11	since
+	12	Dec.
+			name:	DATE				12-13	Dec. 2017 
+	13	2017
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Plans to rebrand Lenor as Downy in the UK were dropped in 2002 .
+
+
+Treebanked sentence:
+--------------------
+Plans to rebrand Lenor as Downy in the UK were dropped in 2002 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNS Plans))
+      (PP (IN to)
+        (NP
+          (NP (NN rebrand) (NNP Lenor))
+          (PP (IN as)
+            (NP
+              (NP (NNP Downy))
+              (PP (IN in)
+                (NP (DT the) (NNP UK))))))))
+    (VP (VBD were)
+      (VP (VBN dropped)
+        (PP (IN in)
+          (NP (CD 2002)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Plans
+			sense:	plan.n.01
+	1	to
+	2	rebrand
+	3	Lenor
+	4	as
+	5	Downy
+	6	in
+	7	the
+			coref:	IDENT			1	7-8	the UK 
+	8	UK
+			name:	COUNTRY				8-8	UK 
+	9	were
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	were 
+	10	dropped
+			sense:	drop.v.07
+			prop:	drop.05
+			V		10-10	dropped 
+			N-ARG-A1		0-8	Plans to rebrand Lenor as Downy in the UK 
+			N-ARGM-TMP		11-12	in 2002 
+	11	in
+	12	2002
+			name:	DATE				12-12	2002 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Amy Sedaris and Tituss Burgess have been used to promote Downy / Lenor Unstoppables range in both the U.S. and the UK .
+
+
+Treebanked sentence:
+--------------------
+Amy Sedaris and Tituss Burgess have been used to promote Downy / Lenor Unstoppables range in both the U.S. and the UK . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Amy) (NNP Sedaris))
+      (CC and)
+      (NP (NNP Tituss) (NNP Burgess)))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBN used)
+          (S
+            (VP (TO to)
+              (VP (VB promote)
+                (NP
+                  (NP (NN Downy) (HYPH /) (NN Lenor))
+                  (SBAR
+                    (S
+                      (NP (NNS Unstoppables))
+                      (VP (VBP range)
+                        (PP (IN in)
+                          (NP (CC both)
+                            (NP (DT the) (NNP U.S.))
+                            (CC and)
+                            (NP (DT the) (NNP UK))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Amy
+			name:	PERSON				0-1	Amy Sedaris 
+	1	Sedaris
+	2	and
+	3	Tituss
+			name:	PERSON				3-4	Tituss Burgess 
+	4	Burgess
+	5	have
+			sense:	have.v.01
+			prop:	have.01
+			V		5-5	have 
+	6	been
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	been 
+	7	used
+			sense:	use.v.01
+			prop:	use.01
+			V		7-7	used 
+			N-ARG-A1		0-4	Amy Sedaris and Tituss Burgess 
+			N-ARG-A2		8-21	to promote Downy / Lenor Unstoppables range in both the U.S. and the UK 
+	8	to
+	9	promote
+			sense:	advertise.v.02
+			prop:	promote.02
+			V		9-9	promote 
+			N-ARG-A0		0-4	Amy Sedaris and Tituss Burgess 
+			N-ARG-A1		10-14	Downy / Lenor Unstoppables range 
+			N-ARGM-LOC		15-21	in both the U.S. and the UK 
+	10	Downy
+			coref:	IDENT			0	10-21	Downy / Lenor Unstoppables range in both the U.S. and the UK 
+			coref:	IDENT			3	10-10	Downy 
+			name:	LOCATION				10-10	Downy 
+	11	/
+	12	Lenor
+			name:	PERSON				12-13	Lenor Unstoppables 
+	13	Unstoppables
+	14	range
+			sense:	range.v.07
+			prop:	range.01
+			V		14-14	range 
+			N-ARG-A1		10-13	Downy / Lenor Unstoppables 
+	15	in
+	16	both
+	17	the
+	18	U.S.
+			name:	COUNTRY				18-18	U.S. 
+	19	and
+			coref:	IDENT			1	19-21	and the UK 
+	20	the
+	21	UK
+			name:	COUNTRY				21-21	UK 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The commercials were filmed by Grey Advertising .
+
+
+Treebanked sentence:
+--------------------
+The commercials were filmed by Grey Advertising . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNS commercials))
+    (VP (VBD were)
+      (VP (VBN filmed)
+        (PP (IN by)
+          (NP (NNP Grey) (NNP Advertising)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	commercials
+			sense:	commercial.n.01
+	2	were
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	were 
+	3	filmed
+			sense:	film.v.01
+			prop:	film.01
+			V		3-3	filmed 
+			N-ARG-A1		0-1	The commercials 
+			N-ARG-A0		4-6	by Grey Advertising 
+	4	by
+	5	Grey
+			name:	ORGANIZATION				5-6	Grey Advertising 
+	6	Advertising
+	7	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				7.10-21	Downy / Lenor Unstoppables range in both the U.S. and the UK 
+				3.0-0	Lenor 
+	Chain 1 (IDENT)
+				7.19-21	and the UK 
+				6.7-8	the UK 
+	Chain 2 (IDENT)
+				4.5-5	China 
+				5.10-10	China 
+	Chain 3 (IDENT)
+				5.3-5	the brand Downy 
+				0.0-0	Downy 
+				1.0-0	It 
+				2.0-0	It 
+				7.10-10	Downy 
+	Chain 4 (IDENT)
+				0.19-21	Procter & Gamble 
+				3.15-17	Procter & Gamble 
+	Chain 5 (IDENT)
+				0.6-6	Russia 
+				3.23-23	Russia 
+	Chain 6 (IDENT)
+				0.8-8	Japan 
+				3.25-25	Japan 
+

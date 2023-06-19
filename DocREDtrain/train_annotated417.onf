@@ -1,0 +1,825 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ondřej Polívka ( born May 17 , 1988 in Prague ) is a modern pentathlete from the Czech Republic .
+
+
+Treebanked sentence:
+--------------------
+Ondřej Polívka ( born May 17 , 1988 in Prague ) is a modern pentathlete from the Czech Republic . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Ondřej) (NNP Polívka))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP May) (CD 17) (, ,) (CD 1988))
+        (PP (IN in)
+          (NP (NNP Prague))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ modern) (NN pentathlete))
+        (PP (IN from)
+          (NP (DT the) (NNP Czech) (NNP Republic)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ondřej
+			coref:	IDENT			0	0-1	Ondřej Polívka 
+			name:	PERSON				0-1	Ondřej Polívka 
+	1	Polívka
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Ondřej Polívka 
+			N-ARGM-TMP		4-7	May 17 , 1988 
+			N-ARGM-LOC		8-9	in Prague 
+	4	May
+			name:	DATE				4-7	May 17 , 1988 
+	5	17
+	6	,
+	7	1988
+	8	in
+	9	Prague
+			name:	CITY				9-9	Prague 
+	10	)
+	11	is
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	is 
+			N-ARG-A1		0-10	Ondřej Polívka ( born May 17 , 1988 in Prague ) 
+			N-ARG-A2		12-18	a modern pentathlete from the Czech Republic 
+	12	a
+	13	modern
+			sense:	modern.a.01
+	14	pentathlete
+			sense:	pentathlete.n.01
+	15	from
+	16	the
+	17	Czech
+			name:	COUNTRY				17-18	Czech Republic 
+	18	Republic
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He competed at the 2012 Summer Olympics in London , England , along with his teammates David Svoboda , who eventually won a gold medal in the men 's event , and his girlfriend Natálie Dianová in the women 's event .
+
+
+Treebanked sentence:
+--------------------
+He competed at the 2012 Summer Olympics in London , England , along with his teammates David Svoboda , who eventually won a gold medal in the men 's event , and his girlfriend Natálie Dianová in the women 's event . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD competed)
+      (PP (IN at)
+        (NP
+          (NP (DT the) (CD 2012) (NNP Summer) (NNPS Olympics))
+          (PP (IN in)
+            (NP
+              (NP (NNP London))
+              (, ,)
+              (NP (NNP England))
+              (, ,)
+              (ADVP (IN along)
+                (PP (IN with)
+                  (NP (PRP$ his) (NNS teammates))))))))
+      (NP
+        (NP (NNP David) (NNP Svoboda))
+        (, ,)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (ADVP (RB eventually))
+            (VP (VBD won)
+              (NP (DT a) (NN gold) (NN medal))
+              (PP (IN in)
+                (NP
+                  (NP
+                    (NP (DT the) (NNS men) (POS 's))
+                    (NN event))
+                  (, ,)
+                  (CC and)
+                  (NP
+                    (NP (PRP$ his) (NN girlfriend))
+                    (NP (NNP Natálie) (NNP Dianová)))))
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NNS women) (POS 's))
+                  (NN event))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	competed
+			sense:	compete.v.01
+			prop:	compete.01
+			V		1-1	competed 
+			N-ARG-A0		0-0	He 
+			N-ARGM-LOC		2-6	at the 2012 Summer Olympics 
+			N-ARGM-LOC		7-10	in London , England 
+			N-ARGM-MNR		12-40	along with his teammates David Svoboda , who eventually won a gold medal in the men 's event , and his girlfriend Natálie Dianová in the women 's event 
+	2	at
+	3	the
+			name:	DATE				3-5	the 2012 Summer 
+	4	2012
+	5	Summer
+	6	Olympics
+			name:	MISC				6-6	Olympics 
+	7	in
+	8	London
+			coref:	IDENT			2	8-8	London 
+			name:	CITY				8-8	London 
+	9	,
+	10	England
+			name:	COUNTRY				10-10	England 
+	11	,
+	12	along
+	13	with
+	14	his
+			coref:	IDENT			0	14-14	his 
+	15	teammates
+			sense:	teammate.n.01
+	16	David
+			coref:	IDENT			0	16-17	David Svoboda 
+			name:	PERSON				16-17	David Svoboda 
+	17	Svoboda
+	18	,
+	19	who
+	20	eventually
+			sense:	finally.r.01
+	21	won
+			sense:	win.v.01
+			prop:	win.01
+			V		21-21	won 
+			N-ARG-A0		16-17	David Svoboda 
+			R-ARG-A0		19-19	who 
+			N-ARGM-TMP		20-20	eventually 
+			N-ARG-A1		22-24	a gold medal 
+			N-ARGM-LOC		25-29	in the men 's event 
+	22	a
+	23	gold
+			sense:	gold.n.01
+	24	medal
+			sense:	decoration.n.02
+	25	in
+	26	the
+			coref:	IDENT			1	26-28	the men 's 
+	27	men
+			sense:	man.n.01
+	28	's
+	29	event
+			sense:	event.n.01
+	30	,
+	31	and
+	32	his
+			coref:	IDENT			0	32-32	his 
+	33	girlfriend
+			sense:	girlfriend.n.02
+	34	Natálie
+			name:	PERSON				34-35	Natálie Dianová 
+	35	Dianová
+	36	in
+	37	the
+	38	women
+			sense:	woman.n.01
+	39	's
+	40	event
+			sense:	event.n.01
+	41	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+During the men 's competition , Polívka made a disastrous start , with a disappointing score in one - touch épée fencing , but managed to keep his pace in swimming and horse - riding .
+
+
+Treebanked sentence:
+--------------------
+During the men 's competition , Polívka made a disastrous start , with a disappointing score in one - touch épée fencing , but managed to keep his pace in swimming and horse - riding . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN During)
+      (NP
+        (NP (DT the) (NNS men) (POS 's))
+        (NN competition)))
+    (, ,)
+    (NP (NNP Polívka))
+    (VP
+      (VP (VBD made)
+        (NP (DT a) (JJ disastrous) (NN start))
+        (, ,)
+        (PP (IN with)
+          (NP (DT a) (JJ disappointing) (NN score)))
+        (PP (IN in)
+          (NP
+            (NML (CD one) (HYPH -) (NN touch))
+            (NN épée) (NN fencing))))
+      (, ,)
+      (CC but)
+      (VP (VBD managed)
+        (S
+          (VP (TO to)
+            (VP (VB keep)
+              (NP (PRP$ his) (NN pace))
+              (PP (IN in)
+                (NP
+                  (NP (NN swimming))
+                  (CC and)
+                  (NP (NN horse) (HYPH -) (NN riding)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	During
+	1	the
+			coref:	IDENT			1	1-3	the men 's 
+	2	men
+			sense:	man.n.01
+	3	's
+	4	competition
+			sense:	contest.n.01
+	5	,
+	6	Polívka
+			coref:	IDENT			0	6-6	Polívka 
+			name:	PERSON				6-6	Polívka 
+	7	made
+			sense:	make.v.01
+			prop:	make.01
+			V		7-7	made 
+			N-ARGM-TMP		0-4	During the men 's competition 
+			N-ARG-A0		6-6	Polívka 
+			N-ARG-A1		8-10	a disastrous start 
+	8	a
+	9	disastrous
+			sense:	black.s.06
+	10	start
+			sense:	start.n.01
+	11	,
+	12	with
+	13	a
+	14	disappointing
+			sense:	disappointing.s.01
+	15	score
+			sense:	score.n.03
+	16	in
+	17	one
+			name:	NUMBER				17-17	one 
+	18	-
+	19	touch
+			sense:	touch.n.05
+	20	épée
+	21	fencing
+			sense:	fencing.n.03
+	22	,
+	23	but
+	24	managed
+			sense:	pull_off.v.03
+			prop:	manage.02
+			V		24-24	managed 
+			N-ARGM-TMP		0-4	During the men 's competition 
+			N-ARG-A0		6-6	Polívka 
+			N-ARG-A1		25-34	to keep his pace in swimming and horse - riding 
+	25	to
+	26	keep
+			sense:	keep.v.01
+			prop:	keep.01
+			V		26-26	keep 
+			N-ARG-A0		6-6	Polívka 
+			N-ARG-A1		27-28	his pace 
+			N-ARGM-LOC		29-34	in swimming and horse - riding 
+	27	his
+			coref:	IDENT			0	27-27	his 
+	28	pace
+			sense:	pace.n.03
+	29	in
+	30	swimming
+			sense:	swimming.n.01
+	31	and
+	32	horse
+			sense:	horse.n.01
+	33	-
+	34	riding
+			sense:	riding.n.01
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His best competition result happened in a first ever combined running and pistol shooting , where he set two Olympic records for hitting five shots each in three sessions , with a score of 33.6 target points .
+
+
+Treebanked sentence:
+--------------------
+His best competition result happened in a first ever combined running and pistol shooting , where he set two Olympic records for hitting five shots each in three sessions , with a score of 33.6 target points . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His) (JJS best) (NN competition))
+    (VP (VBP result)
+      (VP (VBN happened)
+        (PP (IN in)
+          (NP (DT a) (JJ first)))
+        (PP
+          (ADVP (RB ever))
+          (VBN combined)
+          (NP
+            (NP (NN running))
+            (CC and)
+            (NP (NN pistol) (NN shooting))))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP he))
+            (VP (VBD set)
+              (NP (CD two) (JJ Olympic) (NNS records))
+              (PP (IN for)
+                (S
+                  (VP (VBG hitting)
+                    (NP
+                      (NP (CD five) (NNS shots))
+                      (NP (DT each)))
+                    (PP (IN in)
+                      (NP (CD three) (NNS sessions)))
+                    (, ,)
+                    (PP (IN with)
+                      (NP
+                        (NP (DT a) (NN score))
+                        (PP (IN of)
+                          (NP (CD 33.6) (NN target) (NNS points)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-0	His 
+	1	best
+			sense:	good.a.01
+	2	competition
+			sense:	contest.n.01
+	3	result
+			sense:	result.v.01
+			prop:	result.01
+			V		3-3	result 
+			N-ARGM-ADJ		1-1	best 
+			N-ARG-A1		2-2	competition 
+	4	happened
+			sense:	happen.v.01
+			prop:	happen.01
+			V		4-4	happened 
+			N-ARG-A1		0-3	His best competition result 
+			N-ARGM-LOC		5-36	in a first ever combined running and pistol shooting , where he set two Olympic records for hitting five shots each in three sessions , with a score of 33.6 target points 
+	5	in
+	6	a
+	7	first
+			name:	ORDINAL				7-7	first 
+			sense:	first.a.01
+	8	ever
+			sense:	ever.r.01
+	9	combined
+			sense:	combine.v.05
+			prop:	combine.01
+			V		9-9	combined 
+			N-ARGM-TMP		7-8	first ever 
+			N-ARG-A1		10-13	running and pistol shooting 
+	10	running
+			sense:	track.n.11
+	11	and
+	12	pistol
+			sense:	pistol.n.01
+	13	shooting
+			name:	CAUSE_OF_DEATH				13-13	shooting 
+			sense:	shooting.n.01
+	14	,
+	15	where
+	16	he
+			coref:	IDENT			0	16-16	he 
+	17	set
+			sense:	set.v.04
+			prop:	set.02
+			V		17-17	set 
+			N-ARGM-LOC		6-13	a first ever combined running and pistol shooting 
+			R-ARGM-LOC		15-15	where 
+			N-ARG-A0		16-16	he 
+			N-ARG-A1		18-36	two Olympic records for hitting five shots each in three sessions , with a score of 33.6 target points 
+	18	two
+			name:	NUMBER				18-18	two 
+	19	Olympic
+			name:	MISC				19-19	Olympic 
+	20	records
+			sense:	record.n.06
+	21	for
+	22	hitting
+			sense:	hit.v.16
+			prop:	hit.01
+			V		22-22	hitting 
+			N-ARG-A1		23-25	five shots each 
+			N-ARGM-TMP		26-28	in three sessions 
+			N-ARG-A2		30-36	with a score of 33.6 target points 
+	23	five
+			name:	NUMBER				23-23	five 
+	24	shots
+			sense:	shooting.n.01
+	25	each
+	26	in
+	27	three
+			name:	NUMBER				27-27	three 
+	28	sessions
+			sense:	session.n.03
+	29	,
+	30	with
+	31	a
+	32	score
+			sense:	score.n.03
+	33	of
+	34	33.6
+			name:	NUMBER				34-34	33.6 
+	35	target
+			sense:	target.n.01
+	36	points
+			sense:	point.n.10
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Polívka finished the last segment in fourth place , despite his staggered start with a handicapped time and his accomplishment in laser pistol ; however , he finished the event only in fifteenth place .
+
+
+Treebanked sentence:
+--------------------
+Polívka finished the last segment in fourth place , despite his staggered start with a handicapped time and his accomplishment in laser pistol ; however , he finished the event only in fifteenth place . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NNP Polívka))
+      (VP (VBD finished)
+        (NP (DT the) (JJ last) (NN segment))
+        (PP (IN in)
+          (NP (JJ fourth) (NN place)))
+        (, ,)
+        (PP (IN despite)
+          (NP
+            (NP
+              (NP (PRP$ his) (JJ staggered) (NN start))
+              (PP (IN with)
+                (NP (DT a) (JJ handicapped) (NN time))))
+            (CC and)
+            (NP
+              (NP (PRP$ his) (NN accomplishment))
+              (PP (IN in)
+                (NP (NN laser) (NN pistol))))))))
+    (: ;)
+    (S
+      (ADVP (RB however))
+      (, ,)
+      (NP (PRP he))
+      (VP (VBD finished)
+        (NP (DT the) (NN event))
+        (ADVP (RB only))
+        (PP (IN in)
+          (NP (NN fifteenth) (NN place)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Polívka
+			coref:	IDENT			0	0-0	Polívka 
+			name:	PERSON				0-0	Polívka 
+	1	finished
+			sense:	complete.v.01
+			prop:	finish.01
+			V		1-1	finished 
+			N-ARG-A0		0-0	Polívka 
+			N-ARG-A1		2-4	the last segment 
+			N-ARGM-MNR		5-7	in fourth place 
+			N-ARGM-ADV		9-22	despite his staggered start with a handicapped time and his accomplishment in laser pistol 
+	2	the
+	3	last
+			sense:	last.a.02
+	4	segment
+			sense:	section.n.04
+	5	in
+	6	fourth
+			name:	ORDINAL				6-6	fourth 
+			sense:	fourth.s.01
+	7	place
+			sense:	place.n.15
+	8	,
+	9	despite
+	10	his
+			coref:	IDENT			0	10-10	his 
+	11	staggered
+	12	start
+			sense:	start.n.01
+	13	with
+	14	a
+	15	handicapped
+			sense:	disabled.s.01
+	16	time
+			sense:	time.n.02
+	17	and
+	18	his
+			coref:	IDENT			0	18-18	his 
+	19	accomplishment
+			sense:	skill.n.01
+	20	in
+	21	laser
+			sense:	laser.n.01
+	22	pistol
+			sense:	pistol.n.01
+	23	;
+	24	however
+			sense:	however.r.01
+	25	,
+	26	he
+			coref:	IDENT			0	26-26	he 
+	27	finished
+			sense:	complete.v.01
+			prop:	finish.01
+			V		27-27	finished 
+			N-ARGM-DIS		24-24	however 
+			N-ARG-A0		26-26	he 
+			N-ARG-A1		28-29	the event 
+	28	the
+	29	event
+			sense:	event.n.01
+	30	only
+			sense:	merely.r.01
+	31	in
+	32	fifteenth
+			name:	ORDINAL				32-32	fifteenth 
+			sense:	fifteenth.n.01
+	33	place
+			sense:	place.n.15
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In his sporting career , Polívka took part in several modern pentathlon competitions , and won medals at the World and European Championships .
+
+
+Treebanked sentence:
+--------------------
+In his sporting career , Polívka took part in several modern pentathlon competitions , and won medals at the World and European Championships . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (PRP$ his) (NN sporting) (NN career)))
+    (, ,)
+    (NP (NNP Polívka))
+    (VP
+      (VP (VBD took)
+        (NP (NN part))
+        (PP (IN in)
+          (NP (JJ several) (JJ modern) (NN pentathlon) (NNS competitions))))
+      (, ,)
+      (CC and)
+      (VP (VBD won)
+        (NP (NNS medals))
+        (PP (IN at)
+          (NP (DT the)
+            (NML (NNP World)
+              (CC and)
+              (NNP European))
+            (NNPS Championships)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	his
+			coref:	IDENT			0	1-1	his 
+	2	sporting
+	3	career
+			sense:	career.n.01
+	4	,
+	5	Polívka
+			coref:	IDENT			0	5-5	Polívka 
+			name:	PERSON				5-5	Polívka 
+	6	took
+			sense:	take.v.01
+			prop:	take.01
+			V		6-6	took 
+			N-ARGM-LOC		0-3	In his sporting career 
+			N-ARG-A0		5-5	Polívka 
+			N-ARG-A1		7-7	part 
+			N-ARGM-LOC		8-12	in several modern pentathlon competitions 
+	7	part
+			sense:	function.n.03
+	8	in
+	9	several
+			sense:	several.s.01
+	10	modern
+			sense:	modern.a.01
+	11	pentathlon
+			sense:	pentathlon.n.01
+	12	competitions
+			sense:	contest.n.01
+	13	,
+	14	and
+	15	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		15-15	won 
+			N-ARGM-LOC		0-3	In his sporting career 
+			N-ARG-A0		5-5	Polívka 
+			N-ARG-A1		16-16	medals 
+			N-ARGM-LOC		17-22	at the World and European Championships 
+	16	medals
+			sense:	decoration.n.02
+	17	at
+	18	the
+	19	World
+			name:	MISC				19-19	World 
+	20	and
+	21	European
+			name:	NATIONALITY				21-21	European 
+	22	Championships
+			name:	MISC				22-22	Championships 
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also led his strong Czech team , including Svoboda and Michal Michalík to claim both gold and silver medals at the 2009 World Modern Pentathlon Championships in London .
+
+
+Treebanked sentence:
+--------------------
+He also led his strong Czech team , including Svoboda and Michal Michalík to claim both gold and silver medals at the 2009 World Modern Pentathlon Championships in London . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD led)
+      (NP
+        (NP (PRP$ his) (JJ strong) (JJ Czech) (NN team))
+        (, ,)
+        (PP (VBG including)
+          (NP
+            (NP (NNP Svoboda))
+            (CC and)
+            (NP (NNP Michal) (NNP Michalík)))))
+      (S
+        (VP (TO to)
+          (VP (VB claim)
+            (NP (DT both)
+              (NML (NN gold)
+                (CC and)
+                (NN silver))
+              (NNS medals))
+            (PP (IN at)
+              (NP (DT the) (CD 2009)
+                (NML (NNP World) (NNP Modern) (NNP Pentathlon))
+                (NNPS Championships)))
+            (PP (IN in)
+              (NP (NNP London)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	also
+			sense:	besides.r.02
+	2	led
+			sense:	lead.v.01
+			prop:	lead.02
+			V		2-2	led 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-12	his strong Czech team , including Svoboda and Michal Michalík 
+			N-ARGM-PRP		13-28	to claim both gold and silver medals at the 2009 World Modern Pentathlon Championships in London 
+	3	his
+			coref:	IDENT			0	3-3	his 
+	4	strong
+			sense:	strong.a.01
+	5	Czech
+			name:	NATIONALITY				5-5	Czech 
+	6	team
+			sense:	team.n.01
+	7	,
+	8	including
+			sense:	include.v.01
+			prop:	include.01
+			V		8-8	including 
+			N-ARG-A2		3-6	his strong Czech team 
+			N-ARG-A1		9-12	Svoboda and Michal Michalík 
+	9	Svoboda
+			name:	PERSON				9-9	Svoboda 
+	10	and
+	11	Michal
+			name:	PERSON				11-12	Michal Michalík 
+	12	Michalík
+	13	to
+	14	claim
+			sense:	claim.v.02
+			prop:	claim.02
+			V		14-14	claim 
+			N-ARG-A0		3-12	his strong Czech team , including Svoboda and Michal Michalík 
+			N-ARG-A1		15-19	both gold and silver medals 
+			N-ARGM-LOC		20-28	at the 2009 World Modern Pentathlon Championships in London 
+	15	both
+	16	gold
+			sense:	gold.n.01
+	17	and
+	18	silver
+			sense:	silver.n.02
+	19	medals
+			sense:	decoration.n.02
+	20	at
+	21	the
+	22	2009
+			name:	DATE				22-22	2009 
+	23	World
+			name:	MISC				23-26	World Modern Pentathlon Championships 
+	24	Modern
+	25	Pentathlon
+	26	Championships
+	27	in
+	28	London
+			coref:	IDENT			2	28-28	London 
+			name:	CITY				28-28	London 
+	29	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Ondřej Polívka 
+				1.0-0	He 
+				1.14-14	his 
+				1.16-17	David Svoboda 
+				1.32-32	his 
+				2.6-6	Polívka 
+				2.27-27	his 
+				3.0-0	His 
+				3.16-16	he 
+				4.0-0	Polívka 
+				4.10-10	his 
+				4.18-18	his 
+				4.26-26	he 
+				5.1-1	his 
+				5.5-5	Polívka 
+				6.0-0	He 
+				6.3-3	his 
+	Chain 1 (IDENT)
+				1.26-28	the men 's 
+				2.1-3	the men 's 
+	Chain 2 (IDENT)
+				1.8-8	London 
+				6.28-28	London 
+

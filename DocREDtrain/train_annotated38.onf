@@ -1,0 +1,795 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mario Amilivia ( 9 November 1957 in León , Spain ) is a Spanish politician .
+
+
+Treebanked sentence:
+--------------------
+Mario Amilivia ( 9 November 1957 in León , Spain ) is a Spanish politician . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Mario) (NNP Amilivia))
+      (-LRB- -LRB-)
+      (NP
+        (NP (CD 9))
+        (NP-TMP (NNP November) (CD 1957))
+        (PP (IN in)
+          (NP (NNP León) (, ,) (NNP Spain))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (JJ Spanish) (NN politician)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mario
+			coref:	IDENT			0	0-1	Mario Amilivia 
+			name:	PERSON				0-1	Mario Amilivia 
+	1	Amilivia
+	2	(
+	3	9
+			name:	DATE				3-5	9 November 1957 
+	4	November
+	5	1957
+	6	in
+	7	León
+			name:	LOCATION				7-7	León 
+	8	,
+	9	Spain
+			coref:	IDENT			1	9-9	Spain 
+			name:	COUNTRY				9-9	Spain 
+	10	)
+	11	is
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	is 
+			N-ARG-A1		0-10	Mario Amilivia ( 9 November 1957 in León , Spain ) 
+			N-ARG-A2		12-14	a Spanish politician 
+	12	a
+	13	Spanish
+			name:	NATIONALITY				13-13	Spanish 
+	14	politician
+			name:	TITLE				14-14	politician 
+			sense:	politician.n.02
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He has served as mayor of León , Spain on two occasions : from 1995 to 2003 , and from December 2004 to June 2007 .
+
+
+Treebanked sentence:
+--------------------
+He has served as mayor of León , Spain on two occasions : from 1995 to 2003 , and from December 2004 to June 2007 . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (S
+      (NP (PRP He))
+      (VP (VBZ has)
+        (VP (VBN served)
+          (PP (IN as)
+            (NP
+              (NP (NN mayor))
+              (PP (IN of)
+                (NP (NNP León))))))))
+    (, ,)
+    (FRAG
+      (FRAG
+        (NP (NNP Spain))
+        (PP (IN on)
+          (NP (CD two) (NNS occasions))))
+      (: :)
+      (FRAG
+        (PP (IN from)
+          (NP (CD 1995)))
+        (PP (IN to)
+          (NP (CD 2003))))
+      (, ,)
+      (CC and)
+      (PP (IN from)
+        (NP
+          (NP (NNP December) (CD 2004))
+          (PP (IN to)
+            (NP (NNP June) (CD 2007))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		2-2	served 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		3-8	as mayor of León , Spain 
+			N-ARGM-TMP		9-24	on two occasions : from 1995 to 2003 , and from December 2004 to June 2007 
+	3	as
+	4	mayor
+			name:	TITLE				4-4	mayor 
+			sense:	mayor.n.01
+	5	of
+	6	León
+			name:	LOCATION				6-6	León 
+	7	,
+	8	Spain
+			coref:	IDENT			1	8-8	Spain 
+			name:	COUNTRY				8-8	Spain 
+	9	on
+	10	two
+			name:	NUMBER				10-10	two 
+	11	occasions
+			sense:	juncture.n.01
+	12	:
+	13	from
+	14	1995
+			name:	DATE				14-16	1995 to 2003 
+	15	to
+	16	2003
+	17	,
+	18	and
+	19	from
+	20	December
+			name:	DATE				20-21	December 2004 
+	21	2004
+	22	to
+	23	June
+			name:	DATE				23-24	June 2007 
+	24	2007
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He comes from a prominent Leonese family ; his grandfather , Antonio Amilivia , was president of the football club Cultural y Deportiva Leonesa in the 1950s , and the local soccer field is named after Antonio Amilivia .
+
+
+Treebanked sentence:
+--------------------
+He comes from a prominent Leonese family ; his grandfather , Antonio Amilivia , was president of the football club Cultural y Deportiva Leonesa in the 1950s , and the local soccer field is named after Antonio Amilivia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBZ comes)
+        (PP (IN from)
+          (NP (DT a) (JJ prominent) (NNP Leonese) (NN family)))))
+    (: ;)
+    (S
+      (S
+        (NP
+          (NP (PRP$ his) (NN grandfather))
+          (, ,)
+          (NP (NNP Antonio) (NNP Amilivia))
+          (, ,))
+        (VP (VBD was)
+          (NP
+            (NP (NN president))
+            (PP (IN of)
+              (NP (DT the)
+                (NML (NN football) (NN club))
+                (NNP Cultural) (NNP y) (NNP Deportiva) (NNP Leonesa)))
+            (PP (IN in)
+              (NP (DT the) (NNS 1950s))))))
+      (, ,)
+      (CC and)
+      (S
+        (NP (DT the) (JJ local) (NN soccer) (NN field))
+        (VP (VBZ is)
+          (VP (VBN named)
+            (PP (IN after)
+              (NP (NNP Antonio) (NNP Amilivia)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	comes
+			sense:	derive.v.05
+			prop:	come.03
+			V		1-1	comes 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-6	from a prominent Leonese family 
+	2	from
+	3	a
+	4	prominent
+			sense:	big.s.05
+	5	Leonese
+			name:	PERSON				5-5	Leonese 
+	6	family
+			sense:	family.n.04
+	7	;
+	8	his
+			coref:	IDENT			0	8-12	his grandfather , Antonio Amilivia 
+			coref:	IDENT			0	8-8	his 
+	9	grandfather
+			sense:	grandfather.n.01
+	10	,
+	11	Antonio
+			coref:	IDENT			0	11-12	Antonio Amilivia 
+			name:	PERSON				11-12	Antonio Amilivia 
+	12	Amilivia
+	13	,
+	14	was
+			sense:	be.v.08
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		8-13	his grandfather , Antonio Amilivia , 
+			N-ARG-A2		15-23	president of the football club Cultural y Deportiva Leonesa 
+			N-ARGM-TMP		24-26	in the 1950s 
+	15	president
+			name:	TITLE				15-15	president 
+			sense:	president.n.01
+	16	of
+	17	the
+	18	football
+			sense:	football.n.01
+	19	club
+			sense:	club.n.02
+	20	Cultural
+	21	y
+	22	Deportiva
+			name:	PERSON				22-23	Deportiva Leonesa 
+	23	Leonesa
+	24	in
+	25	the
+			name:	DATE				25-26	the 1950s 
+	26	1950s
+	27	,
+	28	and
+	29	the
+	30	local
+			sense:	local.a.01
+	31	soccer
+			sense:	soccer.n.01
+	32	field
+			sense:	playing_field.n.02
+	33	is
+			sense:	be.v.01
+			prop:	be.03
+			V		33-33	is 
+	34	named
+			sense:	name.v.01
+			prop:	name.02
+			V		34-34	named 
+			N-ARG-A1		29-32	the local soccer field 
+			N-ARG-A2		35-37	after Antonio Amilivia 
+	35	after
+	36	Antonio
+			coref:	IDENT			0	36-37	Antonio Amilivia 
+			name:	PERSON				36-37	Antonio Amilivia 
+	37	Amilivia
+	38	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mario Amilivia is married and has two daughters .
+
+
+Treebanked sentence:
+--------------------
+Mario Amilivia is married and has two daughters . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Mario) (NNP Amilivia))
+    (VP
+      (VP (VBZ is)
+        (ADJP (JJ married)))
+      (CC and)
+      (VP (VBZ has)
+        (NP (CD two) (NNS daughters))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mario
+			coref:	IDENT			0	0-1	Mario Amilivia 
+			name:	PERSON				0-1	Mario Amilivia 
+	1	Amilivia
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Mario Amilivia 
+			N-ARG-A2		3-3	married 
+	3	married
+			sense:	married.a.01
+	4	and
+	5	has
+			sense:	have.v.01
+			prop:	have.03
+			V		5-5	has 
+			N-ARG-A0		0-1	Mario Amilivia 
+			N-ARG-A1		6-7	two daughters 
+	6	two
+			name:	NUMBER				6-6	two 
+	7	daughters
+			sense:	daughter.n.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He received a law degree , and has served as secretary - general of the Association of Anthracite Mining Companies ( Asociación de Empresas de Minas de Antracita , APEMA ) .
+
+
+Treebanked sentence:
+--------------------
+He received a law degree , and has served as secretary - general of the Association of Anthracite Mining Companies ( Asociación de Empresas de Minas de Antracita , APEMA ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD received)
+        (NP (DT a) (NN law) (NN degree)))
+      (, ,)
+      (CC and)
+      (VP (VBZ has)
+        (VP (VBN served)
+          (PP (IN as)
+            (NP
+              (NP (NN secretary) (HYPH -) (NN general))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NNP Association))
+                  (PP (IN of)
+                    (NP (NNP Anthracite) (NNP Mining) (NNPS Companies)))))))
+          (PRN (-LRB- -LRB-)
+            (NP
+              (NP (NNP Asociación) (NNP de) (NNP Empresas) (NNP de) (NNP Minas) (NNP de) (NNP Antracita))
+              (, ,)
+              (NP (NNP APEMA)))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	received
+			sense:	receive.v.01
+			prop:	receive.01
+			V		1-1	received 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-4	a law degree 
+	2	a
+	3	law
+			sense:	law.n.06
+	4	degree
+			sense:	academic_degree.n.01
+	5	,
+	6	and
+	7	has
+			sense:	have.v.01
+			prop:	have.01
+			V		7-7	has 
+	8	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		8-8	served 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		9-30	as secretary - general of the Association of Anthracite Mining Companies ( Asociación de Empresas de Minas de Antracita , APEMA ) 
+	9	as
+	10	secretary
+			name:	TITLE				10-10	secretary 
+			sense:	secretary.n.01
+	11	-
+	12	general
+			name:	TITLE				12-12	general 
+			sense:	general.n.01
+	13	of
+	14	the
+	15	Association
+			name:	ORGANIZATION				15-19	Association of Anthracite Mining Companies 
+	16	of
+	17	Anthracite
+	18	Mining
+	19	Companies
+	20	(
+	21	Asociación
+			name:	ORGANIZATION				21-27	Asociación de Empresas de Minas de Antracita 
+	22	de
+	23	Empresas
+	24	de
+	25	Minas
+	26	de
+	27	Antracita
+	28	,
+	29	APEMA
+	30	)
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+For five years , he was associate professor of Constitutional Law at the University of León .
+
+
+Treebanked sentence:
+--------------------
+For five years , he was associate professor of Constitutional Law at the University of León . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (CD five) (NNS years)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP (JJ associate) (NN professor))
+        (PP (IN of)
+          (NP
+            (NP (JJ Constitutional) (NN Law))
+            (PP (IN at)
+              (NP
+                (NP (DT the) (NNP University))
+                (PP (IN of)
+                  (NP (NNP León)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	For
+	1	five
+			name:	DURATION				1-2	five years 
+	2	years
+			sense:	year.n.01
+	3	,
+	4	he
+			coref:	IDENT			0	4-4	he 
+	5	was
+			sense:	be.v.08
+			prop:	be.01
+			V		5-5	was 
+			N-ARGM-TMP		0-2	For five years 
+			N-ARG-A1		4-4	he 
+			N-ARG-A2		6-15	associate professor of Constitutional Law at the University of León 
+	6	associate
+			sense:	associate.s.01
+	7	professor
+			name:	TITLE				7-7	professor 
+			sense:	professor.n.01
+	8	of
+	9	Constitutional
+			name:	MISC				9-10	Constitutional Law 
+			sense:	constitutional.a.02
+	10	Law
+			sense:	law.n.06
+	11	at
+	12	the
+	13	University
+			name:	ORGANIZATION				13-15	University of León 
+	14	of
+	15	León
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was also president of the Regional Federation of Municipalities and Provinces of Castile - León ( Federación Regional de Municipios y Provincias de Castilla y León ) ( 1999 – 2003 ) , president of the Partido Popular of León ( 1986 – 1989 ; 1993–2000 ) .
+
+
+Treebanked sentence:
+--------------------
+He was also president of the Regional Federation of Municipalities and Provinces of Castile - León ( Federación Regional de Municipios y Provincias de Castilla y León ) ( 1999 – 2003 ) , president of the Partido Popular of León ( 1986 – 1989 ; 1993 – 2000 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (ADVP (RB also))
+      (NP
+        (NP (NN president))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Regional) (NNP Federation))
+            (PP (IN of)
+              (NP
+                (NP
+                  (NP
+                    (NP (NNS Municipalities)
+                      (CC and)
+                      (NNS Provinces))
+                    (PP (IN of)
+                      (NP (NNP Castile) (HYPH -) (NNP León))))
+                  (-LRB- -LRB-)
+                  (NP (NNP Federación) (NNP Regional) (NNP de) (NNP Municipios) (NNP y) (NNP Provincias) (NNP de) (NNP Castilla) (NNP y) (NNP León))
+                  (-RRB- -RRB-)
+                  (PRN (-LRB- -LRB-)
+                    (NP (CD 1999) (SYM –) (CD 2003))
+                    (-RRB- -RRB-)))
+                (, ,)
+                (NP
+                  (NP (NN president))
+                  (PP (IN of)
+                    (NP (DT the) (NNP Partido) (NNP Popular))))))
+            (PP (IN of)
+              (NP (NNP León)))
+            (PRN (-LRB- -LRB-)
+              (NP (CD 1986) (SYM –) (CD 1989))
+              (: ;)
+              (NP (CD 1993) (SYM –) (CD 2000))
+              (-RRB- -RRB-))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARGM-ADV		2-2	also 
+			N-ARG-A2		3-49	president of the Regional Federation of Municipalities and Provinces of Castile - León ( Federación Regional de Municipios y Provincias de Castilla y León ) ( 1999 – 2003 ) , president of the Partido Popular of León ( 1986 – 1989 ; 1993 – 2000 ) 
+	2	also
+			sense:	besides.r.02
+	3	president
+			name:	TITLE				3-3	president 
+			sense:	president.n.04
+	4	of
+	5	the
+	6	Regional
+			name:	ORGANIZATION				6-9	Regional Federation of Municipalities 
+	7	Federation
+	8	of
+	9	Municipalities
+			sense:	municipality.n.01
+	10	and
+	11	Provinces
+			sense:	state.n.01
+	12	of
+	13	Castile
+			name:	LOCATION				13-13	Castile 
+	14	-
+	15	León
+	16	(
+	17	Federación
+			name:	ORGANIZATION				17-24	Federación Regional de Municipios y Provincias de Castilla 
+	18	Regional
+	19	de
+	20	Municipios
+	21	y
+	22	Provincias
+	23	de
+	24	Castilla
+	25	y
+	26	León
+	27	)
+	28	(
+	29	1999
+			name:	DATE				29-29	1999 
+	30	–
+	31	2003
+			name:	DATE				31-31	2003 
+	32	)
+	33	,
+	34	president
+			name:	TITLE				34-34	president 
+			sense:	president.n.04
+	35	of
+	36	the
+	37	Partido
+	38	Popular
+	39	of
+	40	León
+	41	(
+	42	1986
+			name:	DATE				42-42	1986 
+	43	–
+	44	1989
+			name:	DATE				44-44	1989 
+	45	;
+	46	1993
+			name:	DATE				46-46	1993 
+	47	–
+	48	2000
+			name:	DATE				48-48	2000 
+	49	)
+	50	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He has also served as regional vice - secretary of the Partido Popular of Castile - León .
+
+
+Treebanked sentence:
+--------------------
+He has also served as regional vice - secretary of the Partido Popular of Castile - León . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ has)
+      (ADVP (RB also))
+      (VP (VBN served)
+        (PP (IN as)
+          (NP
+            (NP (JJ regional) (NN vice) (HYPH -) (NN secretary))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNP Partido) (NNP Popular))
+                (PP (IN of)
+                  (NP (NNP Castile) (HYPH -) (NNP León)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	also
+			sense:	besides.r.02
+	3	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		3-3	served 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A1		4-16	as regional vice - secretary of the Partido Popular of Castile - León 
+	4	as
+	5	regional
+			sense:	regional.s.02
+	6	vice
+			sense:	vice.n.02
+	7	-
+	8	secretary
+			sense:	secretary.n.01
+	9	of
+	10	the
+	11	Partido
+			name:	ORGANIZATION				11-16	Partido Popular of Castile - León 
+	12	Popular
+	13	of
+	14	Castile
+	15	-
+	16	León
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He served in the Spanish Parliament as deputy for Leon province from 1986 to 1989 .
+
+
+Treebanked sentence:
+--------------------
+He served in the Spanish Parliament as deputy for Leon province from 1986 to 1989 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD served)
+      (PP (IN in)
+        (NP (DT the) (NNP Spanish) (NNP Parliament)))
+      (PP (IN as)
+        (NP
+          (NP (NN deputy))
+          (PP (IN for)
+            (NP (NNP Leon) (NN province)))))
+      (PP (IN from)
+        (NP (CD 1986)))
+      (PP (IN to)
+        (NP (CD 1989))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-5	in the Spanish Parliament 
+			N-ARGM-TMP		11-14	from 1986 to 1989 
+	2	in
+	3	the
+	4	Spanish
+			name:	NATIONALITY				4-4	Spanish 
+	5	Parliament
+			name:	ORGANIZATION				5-5	Parliament 
+	6	as
+	7	deputy
+			name:	TITLE				7-7	deputy 
+			sense:	deputy.n.03
+	8	for
+	9	Leon
+			name:	PERSON				9-9	Leon 
+	10	province
+			sense:	state.n.01
+	11	from
+	12	1986
+			name:	DATE				12-14	1986 to 1989 
+	13	to
+	14	1989
+	15	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Mario Amilivia 
+				1.0-0	He 
+				2.0-0	He 
+				2.8-12	his grandfather , Antonio Amilivia 
+				2.8-8	his 
+				2.11-12	Antonio Amilivia 
+				2.36-37	Antonio Amilivia 
+				3.0-1	Mario Amilivia 
+				4.0-0	He 
+				5.4-4	he 
+				6.0-0	He 
+				7.0-0	He 
+				8.0-0	He 
+	Chain 1 (IDENT)
+				0.9-9	Spain 
+				1.8-8	Spain 
+

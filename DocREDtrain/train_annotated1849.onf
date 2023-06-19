@@ -1,0 +1,794 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Francisco de Osona , also Francisco de Osona the Younger , ( c.1465–c.1514 ) was a Spanish Renaissance painter .
+
+
+Treebanked sentence:
+--------------------
+Francisco de Osona , also Francisco de Osona the Younger , ( c. 1465 – c. 1514 ) was a Spanish Renaissance painter . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Francisco) (NNP de) (NNP Osona))
+        (, ,)
+        (NP
+          (ADVP (RB also))
+          (NP (NNP Francisco) (NNP de) (NNP Osona))
+          (ADJP (DT the) (JJR Younger)))
+        (, ,))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNS c.))
+        (NP
+          (NP
+            (QP (CD 1465) (SYM –))
+            (NNS c.))
+          (NP-TMP (CD 1514))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT a) (JJ Spanish) (NNP Renaissance) (NN painter)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Francisco
+			coref:	IDENT			2	0-9	Francisco de Osona , also Francisco de Osona the Younger 
+			name:	PERSON				0-2	Francisco de Osona 
+	1	de
+	2	Osona
+	3	,
+	4	also
+			sense:	besides.r.02
+	5	Francisco
+			name:	PERSON				5-7	Francisco de Osona 
+	6	de
+	7	Osona
+	8	the
+	9	Younger
+			sense:	young.a.01
+	10	,
+	11	(
+	12	c.
+	13	1465
+			name:	DATE				13-13	1465 
+	14	–
+	15	c.
+	16	1514
+			coref:	IDENT			3	16-16	1514 
+			name:	DATE				16-16	1514 
+	17	)
+	18	was
+			sense:	be.v.02
+			prop:	be.01
+			V		18-18	was 
+			N-ARG-A1		0-17	Francisco de Osona , also Francisco de Osona the Younger , ( c. 1465 – c. 1514 ) 
+			N-ARG-A2		19-22	a Spanish Renaissance painter 
+	19	a
+	20	Spanish
+			name:	NATIONALITY				20-20	Spanish 
+	21	Renaissance
+			name:	MISC				21-21	Renaissance 
+	22	painter
+			name:	TITLE				22-22	painter 
+			sense:	painter.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Francisco was born in Valencia .
+
+
+Treebanked sentence:
+--------------------
+Francisco was born in Valencia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Francisco))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Valencia)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Francisco
+			coref:	IDENT			2	0-0	Francisco 
+			name:	PERSON				0-0	Francisco 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Francisco 
+			N-ARGM-LOC		3-4	in Valencia 
+	3	in
+	4	Valencia
+			name:	CITY				4-4	Valencia 
+	5	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+There has been some confusion between Francisco and his father Rodrigo de Osona .
+
+
+Treebanked sentence:
+--------------------
+There has been some confusion between Francisco and his father Rodrigo de Osona . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (NP
+          (NP
+            (NP (DT some) (NN confusion))
+            (PP (IN between)
+              (NP (NNP Francisco))))
+          (CC and)
+          (NP
+            (NP (PRP$ his) (NN father))
+            (NP (NNP Rodrigo) (NNP de) (NNP Osona))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	There
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	been
+			sense:	exist.v.01
+			prop:	be.02
+			V		2-2	been 
+			N-ARG-A1		3-12	some confusion between Francisco and his father Rodrigo de Osona 
+	3	some
+	4	confusion
+			sense:	confusion.n.05
+	5	between
+	6	Francisco
+			coref:	IDENT			2	6-6	Francisco 
+			name:	PERSON				6-6	Francisco 
+	7	and
+	8	his
+			coref:	IDENT			2	8-8	his 
+	9	father
+			sense:	father.n.01
+	10	Rodrigo
+			name:	PERSON				10-12	Rodrigo de Osona 
+	11	de
+	12	Osona
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Father and son worked closely together in their workshop in Valencia , therefore works are often attributed to both , although some assumptions are made that Francisco was more open to what was newer styles and forms in Italy .
+
+
+Treebanked sentence:
+--------------------
+Father and son worked closely together in their workshop in Valencia , therefore works are often attributed to both , although some assumptions are made that Francisco was more open to what was newer styles and forms in Italy . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Father))
+        (CC and)
+        (NP (NN son)))
+      (VP (VBD worked)
+        (ADVP (RB closely) (RB together))
+        (PP (IN in)
+          (NP (PRP$ their) (NN workshop)))
+        (PP (IN in)
+          (NP (NNP Valencia)))))
+    (, ,)
+    (S
+      (ADVP (RB therefore))
+      (NP (NNS works))
+      (VP (VBP are)
+        (ADVP (RB often))
+        (VP (VBN attributed)
+          (PP (IN to)
+            (NP (CC both)))
+          (, ,)
+          (SBAR (IN although)
+            (S
+              (NP (DT some) (NNS assumptions))
+              (VP (VBP are)
+                (VP (VBN made)
+                  (SBAR
+                    (S
+                      (NP (DT that) (NNP Francisco))
+                      (VP (VBD was)
+                        (ADJP (RBR more) (JJ open)
+                          (PP (IN to)
+                            (SBAR
+                              (WHNP (WP what))
+                              (S
+                                (VP (VBD was)
+                                  (NP
+                                    (NP (JJR newer) (NNS styles)
+                                      (CC and)
+                                      (NNS forms))
+                                    (PP (IN in)
+                                      (NP (NNP Italy)))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Father
+			coref:	IDENT			1	0-0	Father 
+	1	and
+	2	son
+			sense:	son.n.01
+	3	worked
+			sense:	work.v.01
+			prop:	work.01
+			V		3-3	worked 
+			N-ARG-A0		0-2	Father and son 
+			N-ARGM-MNR		4-4	closely 
+			N-ARGM-MNR		5-5	together 
+			N-ARGM-LOC		6-10	in their workshop in Valencia 
+	4	closely
+			sense:	closely.r.01
+	5	together
+			sense:	together.r.05
+	6	in
+	7	their
+			coref:	IDENT			1	7-7	their 
+	8	workshop
+			sense:	workshop.n.01
+	9	in
+	10	Valencia
+			name:	CITY				10-10	Valencia 
+	11	,
+	12	therefore
+			sense:	therefore.r.01
+	13	works
+			sense:	work.n.02
+	14	are
+			sense:	be.v.01
+			prop:	be.03
+			V		14-14	are 
+	15	often
+			sense:	frequently.r.01
+	16	attributed
+			sense:	impute.v.01
+			prop:	attribute.01
+			V		16-16	attributed 
+			N-ARGM-ADV		12-12	therefore 
+			N-ARG-A1		13-13	works 
+			N-ARGM-TMP		15-15	often 
+			N-ARG-A2		17-18	to both 
+			N-ARGM-ADV		20-38	although some assumptions are made that Francisco was more open to what was newer styles and forms in Italy 
+	17	to
+	18	both
+	19	,
+	20	although
+	21	some
+	22	assumptions
+			sense:	assumption.n.02
+	23	are
+			sense:	be.v.01
+			prop:	be.03
+			V		23-23	are 
+	24	made
+			sense:	draw.v.04
+			prop:	make.01
+			V		24-24	made 
+			N-ARG-A1		21-22	some assumptions 
+	25	that
+			coref:	IDENT			2	25-26	that Francisco 
+	26	Francisco
+			name:	PERSON				26-26	Francisco 
+	27	was
+			sense:	be.v.01
+			prop:	be.01
+			V		27-27	was 
+			N-ARG-A1		26-26	Francisco 
+			N-ARG-A2		28-38	more open to what was newer styles and forms in Italy 
+	28	more
+			sense:	more.r.01
+	29	open
+			sense:	receptive.a.02
+	30	to
+	31	what
+	32	was
+			sense:	be.v.01
+			prop:	be.01
+			V		32-32	was 
+			N-ARG-A1		31-31	what 
+			N-ARG-A2		33-38	newer styles and forms in Italy 
+	33	newer
+			sense:	new.a.01
+	34	styles
+			sense:	manner.n.01
+	35	and
+	36	forms
+			sense:	form.n.03
+	37	in
+	38	Italy
+			name:	COUNTRY				38-38	Italy 
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+However , while the activity of Rodrigo ended with his death in 1518 , Francisco died before him much younger in 1514 .
+
+
+Treebanked sentence:
+--------------------
+However , while the activity of Rodrigo ended with his death in 1518 , Francisco died before him much younger in 1514 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (SBAR (IN while)
+      (S
+        (NP
+          (NP (DT the) (NN activity))
+          (PP (IN of)
+            (NP (NNP Rodrigo))))
+        (VP (VBD ended)
+          (PP (IN with)
+            (NP (PRP$ his) (NN death)))
+          (PP (IN in)
+            (NP (CD 1518))))))
+    (, ,)
+    (NP (NNP Francisco))
+    (VP (VBD died)
+      (PP (IN before)
+        (NP
+          (NP (PRP him))
+          (ADJP (RB much) (JJR younger))))
+      (PP (IN in)
+        (NP (CD 1514))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	However
+			sense:	however.r.01
+	1	,
+	2	while
+	3	the
+	4	activity
+			sense:	action.n.02
+	5	of
+	6	Rodrigo
+			coref:	IDENT			0	6-6	Rodrigo 
+			name:	PERSON				6-6	Rodrigo 
+	7	ended
+			sense:	end.v.01
+			prop:	end.01
+			V		7-7	ended 
+			N-ARG-A1		3-6	the activity of Rodrigo 
+			N-ARG-A2		8-12	with his death in 1518 
+	8	with
+	9	his
+			coref:	IDENT			0	9-9	his 
+	10	death
+			sense:	death.n.01
+	11	in
+	12	1518
+			name:	DATE				12-12	1518 
+	13	,
+	14	Francisco
+			coref:	IDENT			2	14-14	Francisco 
+			name:	PERSON				14-14	Francisco 
+	15	died
+			sense:	die.v.01
+			prop:	die.01
+			V		15-15	died 
+			N-ARGM-DIS		0-0	However 
+			N-ARGM-ADV		2-12	while the activity of Rodrigo ended with his death in 1518 
+			N-ARG-A1		14-14	Francisco 
+			N-ARGM-LOC		16-17	before him 
+			N-ARGM-PRD		18-19	much younger 
+			N-ARGM-TMP		20-21	in 1514 
+	16	before
+	17	him
+			coref:	IDENT			0	17-17	him 
+	18	much
+			sense:	much.r.01
+	19	younger
+			sense:	young.a.01
+	20	in
+	21	1514
+			coref:	IDENT			3	21-21	1514 
+			name:	DATE				21-21	1514 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The second table of the Epiphany , preserved in London , is signed by " The teacher 's son Rodrigo " , in which , on the contrary , there seems to have more traditional trend seen in the works of the father .
+
+
+Treebanked sentence:
+--------------------
+The second table of the Epiphany , preserved in London , is signed by " The teacher 's son Rodrigo " , in which , on the contrary , there seems to have more traditional trend seen in the works of the father . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT The) (JJ second) (NN table))
+        (PP (IN of)
+          (NP (DT the) (NNP Epiphany))))
+      (, ,)
+      (VP (VBN preserved)
+        (PP (IN in)
+          (NP (NNP London))))
+      (, ,))
+    (VP (VBZ is)
+      (VP (VBN signed)
+        (PP (IN by)
+          (NP (`` ")
+            (NP
+              (NP (DT The) (NN teacher) (POS 's))
+              (NN son))
+            (NP
+              (NP (NNP Rodrigo))
+              ('' ") (, ,)
+              (SBAR
+                (WHPP (IN in)
+                  (WHNP (WDT which)))
+                (S (, ,)
+                  (PP (IN on)
+                    (NP (DT the) (NN contrary)))
+                  (, ,)
+                  (ADVP (RB there))
+                  (VP (VBZ seems)
+                    (S
+                      (VP (TO to)
+                        (VP (VB have)
+                          (NP
+                            (NP
+                              (ADJP (RBR more) (JJ traditional))
+                              (NN trend))
+                            (VP (VBN seen)
+                              (PP (IN in)
+                                (NP
+                                  (NP (DT the) (NNS works))
+                                  (PP (IN of)
+                                    (NP (DT the) (NN father))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	second
+			name:	ORDINAL				1-1	second 
+			sense:	second.s.01
+	2	table
+			sense:	table.n.02
+	3	of
+	4	the
+	5	Epiphany
+	6	,
+	7	preserved
+			sense:	conserve.v.02
+			prop:	preserve.01
+			V		7-7	preserved 
+			N-ARG-A1		0-5	The second table of the Epiphany 
+			N-ARGM-LOC		8-9	in London 
+	8	in
+	9	London
+			name:	CITY				9-9	London 
+	10	,
+	11	is
+			sense:	be.v.01
+			prop:	be.03
+			V		11-11	is 
+	12	signed
+			sense:	sign.v.01
+			prop:	sign.01
+			V		12-12	signed 
+			N-ARG-A1		0-9	The second table of the Epiphany , preserved in London 
+			N-ARG-A0		13-20	by " The teacher 's son Rodrigo " 
+	13	by
+	14	"
+	15	The
+	16	teacher
+			name:	TITLE				16-16	teacher 
+			sense:	teacher.n.01
+	17	's
+	18	son
+			sense:	son.n.01
+	19	Rodrigo
+			name:	MISC				19-19	Rodrigo 
+	20	"
+	21	,
+	22	in
+	23	which
+	24	,
+	25	on
+	26	the
+	27	contrary
+			sense:	reverse.n.01
+	28	,
+	29	there
+			sense:	there.r.02
+	30	seems
+			sense:	look.v.02
+			prop:	seem.01
+			V		30-30	seems 
+			N-ARGM-LOC		14-20	" The teacher 's son Rodrigo " 
+			R-ARGM-LOC		22-23	in which 
+			N-ARGM-DIS		25-27	on the contrary 
+			N-ARG-A1		31-42	to have more traditional trend seen in the works of the father 
+	31	to
+	32	have
+			sense:	have.v.01
+			prop:	have.03
+			V		32-32	have 
+			N-ARG-A0		29-29	there 
+			N-ARG-A1		33-42	more traditional trend seen in the works of the father 
+	33	more
+			sense:	more.r.01
+	34	traditional
+			sense:	traditional.a.01
+	35	trend
+			sense:	course.n.03
+	36	seen
+			sense:	witness.v.02
+			prop:	see.01
+			V		36-36	seen 
+			N-ARG-A1		33-35	more traditional trend 
+			N-ARGM-LOC		37-42	in the works of the father 
+	37	in
+	38	the
+	39	works
+			sense:	work.n.02
+	40	of
+	41	the
+			coref:	IDENT			1	41-42	the father 
+	42	father
+			sense:	father.n.01
+	43	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Francisco has been credited with Christ before Pilate in the Museu de Belles Arts de València , as well as The Adoration of the Magi in the Victoria and Albert Museum .
+
+
+Treebanked sentence:
+--------------------
+Francisco has been credited with Christ before Pilate in the Museu de Belles Arts de València , as well as The Adoration of the Magi in the Victoria and Albert Museum . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Francisco))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN credited)
+          (PP (IN with)
+            (NP (NNP Christ)))
+          (PP (IN before)
+            (NP
+              (NP
+                (NP (NNP Pilate))
+                (PP (IN in)
+                  (NP (DT the)
+                    (NML (NNP Museu) (NNP de) (NNP Belles) (NNP Arts))
+                    (NNP de) (NNP València))))
+              (, ,)
+              (CONJP (RB as) (RB well) (IN as))
+              (NP
+                (NP (DT The) (NN Adoration))
+                (PP (IN of)
+                  (NP (DT the) (NNPS Magi))))))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NNP Victoria))
+              (CC and)
+              (NP (NNP Albert) (NNP Museum)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Francisco
+			coref:	IDENT			2	0-0	Francisco 
+			name:	PERSON				0-0	Francisco 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	been
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	been 
+	3	credited
+			sense:	credit.v.01
+			prop:	credit.01
+			V		3-3	credited 
+			N-ARG-A1		0-0	Francisco 
+			N-ARG-A2		4-30	with Christ before Pilate in the Museu de Belles Arts de València , as well as The Adoration of the Magi in the Victoria and Albert Museum 
+	4	with
+	5	Christ
+			name:	PERSON				5-5	Christ 
+	6	before
+	7	Pilate
+	8	in
+	9	the
+	10	Museu
+			name:	ORGANIZATION				10-15	Museu de Belles Arts de València 
+	11	de
+	12	Belles
+	13	Arts
+	14	de
+	15	València
+	16	,
+	17	as
+			sense:	equally.r.01
+	18	well
+			sense:	well.r.01
+	19	as
+	20	The
+	21	Adoration
+			sense:	adoration.n.03
+	22	of
+	23	the
+	24	Magi
+			name:	ORGANIZATION				24-24	Magi 
+	25	in
+	26	the
+	27	Victoria
+			name:	CITY				27-27	Victoria 
+	28	and
+	29	Albert
+			name:	PERSON				29-30	Albert Museum 
+	30	Museum
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The work of two Osona artists , along with Paolo de San Leocadio , form the basis for Spanish classicism in painting .
+
+
+Treebanked sentence:
+--------------------
+The work of two Osona artists , along with Paolo de San Leocadio , form the basis for Spanish classicism in painting . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT The) (NN work))
+        (PP (IN of)
+          (NP (CD two) (NNP Osona) (NNS artists))))
+      (, ,)
+      (CONJP (IN along) (IN with))
+      (NP (NNP Paolo) (IN de) (NNP San) (NNP Leocadio))
+      (, ,))
+    (VP (VBP form)
+      (NP
+        (NP (DT the) (NN basis))
+        (PP (IN for)
+          (NP
+            (NP (JJ Spanish) (NN classicism))
+            (PP (IN in)
+              (NP (NN painting)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	work
+			sense:	work.n.02
+	2	of
+	3	two
+			name:	NUMBER				3-3	two 
+	4	Osona
+	5	artists
+			sense:	artist.n.01
+	6	,
+	7	along
+	8	with
+	9	Paolo
+			name:	PERSON				9-12	Paolo de San Leocadio 
+	10	de
+	11	San
+	12	Leocadio
+	13	,
+	14	form
+			sense:	form.v.02
+			prop:	form.02
+			V		14-14	form 
+			N-ARG-A0		0-12	The work of two Osona artists , along with Paolo de San Leocadio 
+			N-ARG-A1		15-21	the basis for Spanish classicism in painting 
+	15	the
+	16	basis
+			sense:	basis.n.02
+	17	for
+	18	Spanish
+			name:	NATIONALITY				18-18	Spanish 
+	19	classicism
+			sense:	classicism.n.01
+	20	in
+	21	painting
+			sense:	painting.n.02
+	22	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.6-6	Rodrigo 
+				4.9-9	his 
+				4.17-17	him 
+	Chain 1 (IDENT)
+				3.0-0	Father 
+				3.7-7	their 
+				5.41-42	the father 
+	Chain 2 (IDENT)
+				0.0-9	Francisco de Osona , also Francisco de Osona the Younger 
+				1.0-0	Francisco 
+				2.6-6	Francisco 
+				2.8-8	his 
+				3.25-26	that Francisco 
+				4.14-14	Francisco 
+				6.0-0	Francisco 
+	Chain 3 (IDENT)
+				0.16-16	1514 
+				4.21-21	1514 
+

@@ -1,0 +1,603 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Peter Arnoldus Petersen ( 21 March 1851 – 12 August 1916 ) was a Norwegian businessman .
+
+
+Treebanked sentence:
+--------------------
+Peter Arnoldus Petersen ( 21 March 1851 – 12 August 1916 ) was a Norwegian businessman . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Peter) (NNP Arnoldus) (NNP Petersen))
+      (-LRB- -LRB-)
+      (NP
+        (NP (CD 21) (NNP March))
+        (NP
+          (NP
+            (QP (CD 1851) (SYM –) (CD 12)))
+          (NP-TMP (NNP August) (CD 1916))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT a) (JJ Norwegian) (NN businessman)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Peter
+			name:	PERSON				0-2	Peter Arnoldus Petersen 
+	1	Arnoldus
+	2	Petersen
+	3	(
+	4	21
+			name:	DATE				4-6	21 March 1851 
+	5	March
+	6	1851
+	7	–
+	8	12
+			name:	DATE				8-10	12 August 1916 
+	9	August
+	10	1916
+	11	)
+	12	was
+			sense:	be.v.02
+			prop:	be.01
+			V		12-12	was 
+			N-ARG-A1		0-11	Peter Arnoldus Petersen ( 21 March 1851 – 12 August 1916 ) 
+			N-ARG-A2		13-15	a Norwegian businessman 
+	13	a
+	14	Norwegian
+			name:	NATIONALITY				14-14	Norwegian 
+	15	businessman
+			name:	TITLE				15-15	businessman 
+			sense:	businessman.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was born in Christiania as a son of a German father and Danish mother ; merchant Johan Gottfried Schmidt and Frederikke Døderlein .
+
+
+Treebanked sentence:
+--------------------
+He was born in Christiania as a son of a German father and Danish mother ; merchant Johan Gottfried Schmidt and Frederikke Døderlein . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Christiania)))
+        (PP (IN as)
+          (NP
+            (NP
+              (NP (DT a) (NN son))
+              (PP (IN of)
+                (NP (DT a) (JJ German) (NN father))))
+            (CC and)
+            (NP
+              (NP (JJ Danish) (NN mother))
+              (: ;)
+              (NP
+                (NP (NN merchant) (NNP Johan) (NNP Gottfried) (NNP Schmidt))
+                (CC and)
+                (NP (NNP Frederikke) (NNP Døderlein))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-4	in Christiania 
+			N-ARGM-PRD		5-22	as a son of a German father and Danish mother ; merchant Johan Gottfried Schmidt and Frederikke Døderlein 
+	3	in
+	4	Christiania
+			name:	LOCATION				4-4	Christiania 
+	5	as
+	6	a
+	7	son
+			sense:	son.n.01
+	8	of
+	9	a
+			coref:	IDENT			0	9-11	a German father 
+	10	German
+			name:	NATIONALITY				10-10	German 
+	11	father
+			sense:	father.n.01
+	12	and
+	13	Danish
+			name:	NATIONALITY				13-13	Danish 
+	14	mother
+			sense:	mother.n.01
+	15	;
+	16	merchant
+			name:	TITLE				16-16	merchant 
+			sense:	merchant.n.01
+	17	Johan
+			name:	PERSON				17-19	Johan Gottfried Schmidt 
+	18	Gottfried
+	19	Schmidt
+	20	and
+	21	Frederikke
+			name:	PERSON				21-22	Frederikke Døderlein 
+	22	Døderlein
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Both his parents died in 1852 , and he was adopted by his mother 's sister , who was married to wealthy businessman Peter J. K. Petersen ( 1821 – 1896 ) .
+
+
+Treebanked sentence:
+--------------------
+Both his parents died in 1852 , and he was adopted by his mother 's sister , who was married to wealthy businessman Peter J. K. Petersen ( 1821 – 1896 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT Both) (PRP$ his) (NNS parents))
+      (VP (VBD died)
+        (PP (IN in)
+          (NP (CD 1852)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBD was)
+        (VP (VBN adopted)
+          (PP (IN by)
+            (NP
+              (NP
+                (NP (PRP$ his) (NN mother) (POS 's))
+                (NN sister))
+              (, ,)
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD was)
+                    (VP (VBN married)
+                      (PP (IN to)
+                        (NP
+                          (NP (JJ wealthy) (NN businessman))
+                          (NP (NNP Peter) (NNP J.) (NNP K.) (NNP Petersen))))))))))
+          (PRN (-LRB- -LRB-)
+            (NP (CD 1821) (SYM –) (CD 1896))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Both
+	1	his
+	2	parents
+			sense:	parent.n.01
+	3	died
+			sense:	die.v.01
+			prop:	die.01
+			V		3-3	died 
+			N-ARG-A1		0-2	Both his parents 
+			N-ARGM-TMP		4-5	in 1852 
+	4	in
+	5	1852
+			name:	DATE				5-5	1852 
+	6	,
+	7	and
+	8	he
+	9	was
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	was 
+	10	adopted
+			sense:	adopt.v.05
+			prop:	adopt.01
+			V		10-10	adopted 
+			N-ARG-A1		8-8	he 
+			N-ARG-A0		11-31	by his mother 's sister , who was married to wealthy businessman Peter J. K. Petersen ( 1821 – 1896 ) 
+	11	by
+	12	his
+	13	mother
+			sense:	mother.n.01
+	14	's
+	15	sister
+			sense:	sister.n.01
+	16	,
+	17	who
+	18	was
+			sense:	be.v.01
+			prop:	be.01
+			V		18-18	was 
+			N-ARG-A1		12-15	his mother 's sister 
+			R-ARG-A1		17-17	who 
+			N-ARG-A2		19-31	married to wealthy businessman Peter J. K. Petersen ( 1821 – 1896 ) 
+	19	married
+			sense:	marry.v.01
+			prop:	arrive.01
+			V		19-19	married 
+			N-ARG-A1		12-15	his mother 's sister 
+			R-ARG-A1		17-17	who 
+			N-ARG-A2		20-31	to wealthy businessman Peter J. K. Petersen ( 1821 – 1896 ) 
+	20	to
+	21	wealthy
+			sense:	affluent.s.01
+	22	businessman
+			name:	TITLE				22-22	businessman 
+			sense:	businessman.n.01
+	23	Peter
+			name:	PERSON				23-26	Peter J. K. Petersen 
+	24	J.
+	25	K.
+	26	Petersen
+	27	(
+	28	1821
+			name:	DATE				28-28	1821 
+	29	–
+	30	1896
+			coref:	IDENT			1	30-30	1896 
+			name:	DATE				30-30	1896 
+	31	)
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was a first cousin of Sigvart Petersen .
+
+
+Treebanked sentence:
+--------------------
+He was a first cousin of Sigvart Petersen . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ first) (NN cousin))
+        (PP (IN of)
+          (NP (NNP Sigvart) (NNP Petersen)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-7	a first cousin of Sigvart Petersen 
+	2	a
+	3	first
+			name:	ORDINAL				3-3	first 
+			sense:	first.s.02
+	4	cousin
+			sense:	cousin.n.01
+	5	of
+	6	Sigvart
+			name:	PERSON				6-7	Sigvart Petersen 
+	7	Petersen
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His adoptive father died in 1896 , and Petersen inherited the family company Peter Petersen & Co and his father 's title as consul general for the Austro - Hungarian Empire .
+
+
+Treebanked sentence:
+--------------------
+His adoptive father died in 1896 , and Petersen inherited the family company Peter Petersen & Co and his father 's title as consul general for the Austro - Hungarian Empire . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP$ His) (JJ adoptive) (NN father))
+      (VP (VBD died)
+        (PP (IN in)
+          (NP (CD 1896)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP Petersen))
+      (VP (VBD inherited)
+        (NP
+          (NP
+            (NP (DT the) (NN family) (NN company))
+            (NP (NNP Peter) (NNP Petersen)
+              (CC &)
+              (NNP Co)))
+          (CC and)
+          (NP
+            (NP
+              (NP (PRP$ his) (NN father) (POS 's))
+              (NN title))
+            (PP (IN as)
+              (NP (NN consul) (NN general)))))
+        (PP (IN for)
+          (NP (DT the) (NN Austro) (HYPH -) (JJ Hungarian) (NN Empire)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-2	His adoptive father 
+	1	adoptive
+			sense:	adoptive.a.01
+	2	father
+			sense:	father.n.01
+	3	died
+			sense:	die.v.01
+			prop:	die.01
+			V		3-3	died 
+			N-ARG-A1		0-2	His adoptive father 
+			N-ARGM-TMP		4-5	in 1896 
+	4	in
+	5	1896
+			coref:	IDENT			1	5-5	1896 
+			name:	DATE				5-5	1896 
+	6	,
+	7	and
+	8	Petersen
+			name:	PERSON				8-8	Petersen 
+	9	inherited
+			sense:	inherit.v.01
+			prop:	inherit.01
+			V		9-9	inherited 
+			N-ARG-A0		8-8	Petersen 
+			N-ARG-A1		10-30	the family company Peter Petersen & Co and his father 's title as consul general for the Austro - Hungarian Empire 
+	10	the
+	11	family
+			sense:	family.n.02
+	12	company
+			sense:	company.n.01
+	13	Peter
+			name:	ORGANIZATION				13-16	Peter Petersen & Co 
+	14	Petersen
+	15	&
+	16	Co
+	17	and
+	18	his
+			coref:	IDENT			0	18-20	his father 's 
+	19	father
+			sense:	father.n.01
+	20	's
+	21	title
+			sense:	title.n.06
+	22	as
+	23	consul
+			name:	TITLE				23-24	consul general 
+			sense:	consul.n.01
+	24	general
+			sense:	general.n.01
+	25	for
+	26	the
+	27	Austro
+	28	-
+	29	Hungarian
+			name:	NATIONALITY				29-29	Hungarian 
+	30	Empire
+			sense:	empire.n.03
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His adoptive father had been manager and chair of Nydalens Compagnie , and Peter Arnoldus Petersen served as board member from 1883 to his death in 1916 and chair from 1911 to 1912 .
+
+
+Treebanked sentence:
+--------------------
+His adoptive father had been manager and chair of Nydalens Compagnie , and Peter Arnoldus Petersen served as board member from 1883 to his death in 1916 and chair from 1911 to 1912 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP$ His) (JJ adoptive) (NN father))
+      (VP (VBD had)
+        (VP (VBN been)
+          (NP
+            (NP (NN manager)
+              (CC and)
+              (NN chair))
+            (PP (IN of)
+              (NP (NNP Nydalens) (NNP Compagnie)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP Peter) (NNP Arnoldus) (NNP Petersen))
+      (VP (VBD served)
+        (PP (IN as)
+          (NP
+            (NP (NN board) (NN member))
+            (PP (IN from)
+              (NP (CD 1883)))))
+        (PP (IN to)
+          (NP
+            (NP
+              (NP (PRP$ his) (NN death))
+              (PP (IN in)
+                (NP (CD 1916))))
+            (CC and)
+            (NP
+              (NP (NN chair))
+              (PP (IN from)
+                (NP (CD 1911))))))
+        (PP (IN to)
+          (NP (CD 1912)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-2	His adoptive father 
+	1	adoptive
+			sense:	adoptive.a.01
+	2	father
+			sense:	father.n.01
+	3	had
+			sense:	have.v.01
+			prop:	have.01
+			V		3-3	had 
+	4	been
+			sense:	be.v.08
+			prop:	be.01
+			V		4-4	been 
+			N-ARG-A1		0-2	His adoptive father 
+			N-ARG-A2		5-10	manager and chair of Nydalens Compagnie 
+	5	manager
+			name:	TITLE				5-5	manager 
+			sense:	director.n.01
+	6	and
+	7	chair
+			sense:	president.n.04
+	8	of
+	9	Nydalens
+			name:	ORGANIZATION				9-10	Nydalens Compagnie 
+	10	Compagnie
+	11	,
+	12	and
+	13	Peter
+			name:	PERSON				13-15	Peter Arnoldus Petersen 
+	14	Arnoldus
+	15	Petersen
+	16	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		16-16	served 
+			N-ARG-A0		13-15	Peter Arnoldus Petersen 
+			N-ARG-A1		17-19	as board member 
+			N-ARGM-TMP		20-26	from 1883 to his death in 1916 
+			N-ARGM-TMP		29-32	from 1911 to 1912 
+	17	as
+	18	board
+			sense:	board.n.01
+	19	member
+			sense:	member.n.01
+	20	from
+	21	1883
+			name:	DATE				21-21	1883 
+	22	to
+	23	his
+	24	death
+			sense:	death.n.01
+	25	in
+	26	1916
+			name:	DATE				26-26	1916 
+	27	and
+	28	chair
+			sense:	president.n.04
+	29	from
+	30	1911
+			name:	DATE				30-32	1911 to 1912 
+	31	to
+	32	1912
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He backed down from the chairmanship because of declining health .
+
+
+Treebanked sentence:
+--------------------
+He backed down from the chairmanship because of declining health . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD backed)
+      (PRT (RP down))
+      (PP (IN from)
+        (NP (DT the) (NN chairmanship)))
+      (PP (IN because) (IN of)
+        (NP (VBG declining) (NN health))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	backed
+			sense:	back.v.02
+			prop:	back.02
+			V		1-1	backed 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		3-4	from the 
+			N-ARGM-CAU		6-9	because of declining health 
+	2	down
+	3	from
+	4	the
+	5	chairmanship
+			sense:	chairmanship.n.01
+	6	because
+	7	of
+	8	declining
+			sense:	worsen.v.01
+			prop:	decline.01
+			V		8-8	declining 
+			N-ARG-A1		9-9	health 
+	9	health
+			sense:	health.n.02
+	10	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.9-11	a German father 
+				4.0-2	His adoptive father 
+				4.18-20	his father 's 
+				5.0-2	His adoptive father 
+	Chain 1 (IDENT)
+				2.30-30	1896 
+				4.5-5	1896 
+

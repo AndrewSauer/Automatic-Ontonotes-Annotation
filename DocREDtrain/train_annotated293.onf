@@ -1,0 +1,507 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Dado Villa - Lobos ( born June 29 , 1965 in Brussels , Belgium ) is a Brazilian musician , best known as the ex - guitarist of post - punk band Legião Urbana .
+
+
+Treebanked sentence:
+--------------------
+Dado Villa - Lobos ( born June 29 , 1965 in Brussels , Belgium ) is a Brazilian musician , best known as the ex - guitarist of post - punk band Legião Urbana . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Dado) (NNP Villa) (HYPH -) (NNP Lobos))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP June) (CD 29) (, ,) (CD 1965))
+        (PP (IN in)
+          (NP (NNP Brussels) (, ,) (NNP Belgium))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (JJ Brazilian) (NN musician))
+      (, ,)
+      (ADVP (RB best))
+      (VP (VBN known)
+        (PP (IN as)
+          (NP
+            (NP (DT the) (NN ex) (HYPH -) (NN guitarist))
+            (PP (IN of)
+              (NP
+                (NML (NN post) (HYPH -) (NN punk))
+                (NN band) (NNP Legião) (NNP Urbana)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Dado
+			name:	PERSON				0-3	Dado Villa - Lobos 
+	1	Villa
+	2	-
+	3	Lobos
+	4	(
+	5	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		5-5	born 
+			N-ARG-A1		0-3	Dado Villa - Lobos 
+			N-ARGM-TMP		6-9	June 29 , 1965 
+			N-ARGM-LOC		10-13	in Brussels , Belgium 
+	6	June
+			name:	DATE				6-9	June 29 , 1965 
+	7	29
+	8	,
+	9	1965
+	10	in
+	11	Brussels
+			name:	CITY				11-11	Brussels 
+	12	,
+	13	Belgium
+			name:	COUNTRY				13-13	Belgium 
+	14	)
+	15	is
+			sense:	be.v.02
+			prop:	be.01
+			V		15-15	is 
+			N-ARG-A1		0-14	Dado Villa - Lobos ( born June 29 , 1965 in Brussels , Belgium ) 
+			N-ARG-A2		16-33	a Brazilian musician , best known as the ex - guitarist of post - punk band Legião Urbana 
+	16	a
+	17	Brazilian
+			name:	NATIONALITY				17-17	Brazilian 
+	18	musician
+			name:	TITLE				18-18	musician 
+			sense:	musician.n.01
+	19	,
+	20	best
+			sense:	best.r.01
+	21	known
+			sense:	know.v.04
+			prop:	know.01
+			V		21-21	known 
+			N-ARG-A1		16-18	a Brazilian musician 
+			N-ARGM-MNR		20-20	best 
+			N-ARG-A2		22-33	as the ex - guitarist of post - punk band Legião Urbana 
+	22	as
+	23	the
+	24	ex
+			sense:	ex-husband.n.01
+	25	-
+	26	guitarist
+			name:	TITLE				26-26	guitarist 
+			sense:	guitarist.n.01
+	27	of
+	28	post
+			sense:	position.n.06
+	29	-
+	30	punk
+			sense:	punk_rock.n.01
+	31	band
+			sense:	band.n.02
+	32	Legião
+			name:	ORGANIZATION				32-33	Legião Urbana 
+	33	Urbana
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Along with singer Renato Russo and drummer Marcelo Bonfá , he was one of the founding members of that band , who formed in Brasília in 1982 .
+
+
+Treebanked sentence:
+--------------------
+Along with singer Renato Russo and drummer Marcelo Bonfá , he was one of the founding members of that band , who formed in Brasília in 1982 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Along)
+      (PP (IN with)
+        (NP
+          (NP (NN singer) (NNP Renato) (NNP Russo))
+          (CC and)
+          (NP (NN drummer) (NNP Marcelo) (NNP Bonfá)))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN founding) (NNS members))
+            (PP (IN of)
+              (NP
+                (NP (DT that) (NN band))
+                (, ,)
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBD formed)
+                      (PP (IN in)
+                        (NP (NNP Brasília)))
+                      (PP (IN in)
+                        (NP (CD 1982))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Along
+	1	with
+	2	singer
+			name:	TITLE				2-2	singer 
+			sense:	singer.n.01
+	3	Renato
+			name:	PERSON				3-4	Renato Russo 
+	4	Russo
+	5	and
+	6	drummer
+			name:	TITLE				6-6	drummer 
+			sense:	drummer.n.01
+	7	Marcelo
+			name:	PERSON				7-8	Marcelo Bonfá 
+	8	Bonfá
+	9	,
+	10	he
+			coref:	IDENT			1	10-10	he 
+	11	was
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	was 
+			N-ARGM-ADV		0-8	Along with singer Renato Russo and drummer Marcelo Bonfá 
+			N-ARG-A1		10-10	he 
+			N-ARG-A2		12-26	one of the founding members of that band , who formed in Brasília in 1982 
+	12	one
+			name:	NUMBER				12-12	one 
+	13	of
+	14	the
+	15	founding
+			sense:	initiation.n.02
+	16	members
+			sense:	member.n.01
+	17	of
+	18	that
+			coref:	IDENT			0	18-26	that band , who formed in Brasília in 1982 
+	19	band
+			sense:	band.n.02
+	20	,
+	21	who
+	22	formed
+			sense:	form.v.01
+			prop:	form.01
+			V		22-22	formed 
+			N-ARG-A1		18-19	that band 
+			R-ARG-A1		21-21	who 
+			N-ARGM-LOC		23-24	in Brasília 
+			N-ARGM-TMP		25-26	in 1982 
+	23	in
+	24	Brasília
+			name:	LOCATION				24-24	Brasília 
+	25	in
+	26	1982
+			name:	DATE				26-26	1982 
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Villa - Lobos remained with the band through all of their studio albums , until the group dissolved after the 1996 death of Russo .
+
+
+Treebanked sentence:
+--------------------
+Villa - Lobos remained with the band through all of their studio albums , until the group dissolved after the 1996 death of Russo . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Villa) (HYPH -) (NNP Lobos))
+    (VP (VBD remained)
+      (PP (IN with)
+        (NP (DT the) (NN band)))
+      (PP (IN through)
+        (NP
+          (NP (DT all))
+          (PP (IN of)
+            (NP (PRP$ their) (NN studio) (NNS albums)))))
+      (, ,)
+      (PP (IN until)
+        (NP
+          (NP (DT the) (NN group))
+          (VP (VBN dissolved)
+            (PP (IN after)
+              (NP
+                (NP (DT the) (CD 1996) (NN death))
+                (PP (IN of)
+                  (ADJP (JJ Russo)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Villa
+			name:	PERSON				0-2	Villa - Lobos 
+	1	-
+	2	Lobos
+	3	remained
+			sense:	stay.v.01
+			prop:	remain.01
+			V		3-3	remained 
+			N-ARG-A1		0-2	Villa - Lobos 
+			N-ARG-A3		4-6	with the band 
+			N-ARGM-TMP		7-12	through all of their studio albums 
+			N-ARGM-TMP		14-23	until the group dissolved after the 1996 death of Russo 
+	4	with
+	5	the
+			coref:	IDENT			0	5-6	the band 
+	6	band
+			sense:	band.n.02
+	7	through
+	8	all
+	9	of
+	10	their
+	11	studio
+			sense:	studio.n.01
+	12	albums
+			sense:	album.n.01
+	13	,
+	14	until
+	15	the
+	16	group
+			sense:	group.n.01
+	17	dissolved
+			sense:	disband.v.02
+			prop:	dissolve.01
+			V		17-17	dissolved 
+			N-ARG-A1		15-16	the group 
+			N-ARGM-TMP		18-23	after the 1996 death of Russo 
+	18	after
+	19	the
+	20	1996
+			name:	DATE				20-20	1996 
+	21	death
+			sense:	death.n.01
+	22	of
+	23	Russo
+			name:	PERSON				23-23	Russo 
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2005 , he released his first solo album , Jardim de Cáctus .
+
+
+Treebanked sentence:
+--------------------
+In 2005 , he released his first solo album , Jardim de Cáctus . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2005)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD released)
+      (NP
+        (NP (PRP$ his) (JJ first) (NN solo) (NN album))
+        (, ,)
+        (NP (NNP Jardim) (NNP de) (NNP Cáctus))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2005
+			name:	DATE				1-1	2005 
+	2	,
+	3	he
+			coref:	IDENT			1	3-3	he 
+	4	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		4-4	released 
+			N-ARGM-TMP		0-1	In 2005 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		5-12	his first solo album , Jardim de Cáctus 
+	5	his
+			coref:	IDENT			1	5-5	his 
+	6	first
+			name:	ORDINAL				6-6	first 
+			sense:	first.a.01
+	7	solo
+			sense:	solo.n.02
+	8	album
+			sense:	album.n.01
+	9	,
+	10	Jardim
+			name:	PERSON				10-10	Jardim 
+	11	de
+	12	Cáctus
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On May 30 , 2012 , attended the Tribute to Legião Urbana with Wagner Moura , where they clashed with a fan during the presentation .
+
+
+Treebanked sentence:
+--------------------
+On May 30 , 2012 , attended the Tribute to Legião Urbana with Wagner Moura , where they clashed with a fan during the presentation . 
+
+Tree:
+-----
+(ROOT
+  (SINV
+    (PP (IN On)
+      (NP (NNP May) (CD 30) (, ,) (CD 2012) (, ,)))
+    (VP (VBD attended)
+      (NP (DT the) (NN Tribute))
+      (PP (IN to)
+        (NP
+          (NP (NNP Legião) (NNP Urbana))
+          (PP (IN with)
+            (NP (NNP Wagner))))))
+    (NP
+      (NP (NNP Moura))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP they))
+          (VP (VBD clashed)
+            (PP (IN with)
+              (NP (DT a) (NN fan)))
+            (PP (IN during)
+              (NP (DT the) (NN presentation)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	May
+			name:	DATE				1-4	May 30 , 2012 
+	2	30
+	3	,
+	4	2012
+	5	,
+	6	attended
+			sense:	attend.v.01
+			prop:	attend.01
+			V		6-6	attended 
+			N-ARGM-TMP		0-4	On May 30 , 2012 
+			N-ARG-A1		7-11	the Tribute to Legião Urbana 
+			N-ARGM-COM		12-14	with Wagner Moura 
+			C-ARG-A1		16-24	where they clashed with a fan during the presentation 
+	7	the
+	8	Tribute
+			sense:	tribute.n.01
+	9	to
+	10	Legião
+			name:	LOCATION				10-10	Legião 
+	11	Urbana
+			name:	CITY				11-11	Urbana 
+	12	with
+	13	Wagner
+			name:	PERSON				13-14	Wagner Moura 
+	14	Moura
+	15	,
+	16	where
+	17	they
+	18	clashed
+			sense:	clash.v.03
+			prop:	clash.01
+			V		18-18	clashed 
+			N-ARGM-LOC		16-16	where 
+			N-ARG-A0		17-17	they 
+			N-ARG-A1		19-21	with a fan 
+			N-ARGM-TMP		22-24	during the presentation 
+	19	with
+	20	a
+	21	fan
+			sense:	fan.n.03
+	22	during
+	23	the
+	24	presentation
+			sense:	presentation.n.02
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is the grandnephew of Heitor Villa - Lobos .
+
+
+Treebanked sentence:
+--------------------
+He is the grandnephew of Heitor Villa - Lobos . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN grandnephew))
+        (PP (IN of)
+          (NP (NNP Heitor) (NNP Villa) (HYPH -) (NNP Lobos)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-8	the grandnephew of Heitor Villa - Lobos 
+	2	the
+	3	grandnephew
+			sense:	great-nephew.n.01
+	4	of
+	5	Heitor
+			name:	LOCATION				5-8	Heitor Villa - Lobos 
+	6	Villa
+	7	-
+	8	Lobos
+	9	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.18-26	that band , who formed in Brasília in 1982 
+				2.5-6	the band 
+	Chain 1 (IDENT)
+				1.10-10	he 
+				3.3-3	he 
+				3.5-5	his 
+				5.0-0	He 
+

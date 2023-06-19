@@ -1,0 +1,485 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Hu Ge ( , born 20 September 1982 ) is a Chinese actor and singer .
+
+
+Treebanked sentence:
+--------------------
+Hu Ge ( , born 20 September 1982 ) is a Chinese actor and singer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Hu) (NNP Ge))
+        (-LRB- -LRB-)
+        (VP (, ,) (VBN born)))
+      (NP (CD 20) (NNP September) (CD 1982)))
+    (-RRB- -RRB-)
+    (VP (VBZ is)
+      (NP (DT a) (JJ Chinese) (NN actor)
+        (CC and)
+        (NN singer)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Hu
+			name:	PERSON				0-1	Hu Ge 
+	1	Ge
+	2	(
+	3	,
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-1	Hu Ge 
+			N-ARGM-TMP		5-7	20 September 1982 
+	5	20
+			name:	DATE				5-7	20 September 1982 
+	6	September
+	7	1982
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	Hu Ge ( , born 20 September 1982 ) 
+			N-ARG-A2		10-14	a Chinese actor and singer 
+	10	a
+	11	Chinese
+			name:	NATIONALITY				11-11	Chinese 
+	12	actor
+			name:	TITLE				12-12	actor 
+			sense:	actor.n.01
+	13	and
+	14	singer
+			name:	TITLE				14-14	singer 
+			sense:	singer.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+While studying at the Shanghai Theater Academy , he was invited to play the leading role Li Xiaoyao in the 2005 television series Chinese Paladin , and immediately skyrocketed to fame as one of China 's most popular actors .
+
+
+Treebanked sentence:
+--------------------
+While studying at the Shanghai Theater Academy , he was invited to play the leading role Li Xiaoyao in the 2005 television series Chinese Paladin , and immediately skyrocketed to fame as one of China 's most popular actors . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (VP (VBG studying)
+          (PP (IN at)
+            (NP (DT the) (NNP Shanghai) (NNP Theater) (NNP Academy))))))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD was)
+        (VP (VBN invited)
+          (S
+            (VP (TO to)
+              (VP (VB play)
+                (NP (DT the) (JJ leading) (NN role))
+                (NP
+                  (NP (NNP Li) (NNP Xiaoyao))
+                  (PP (IN in)
+                    (NP (DT the) (CD 2005)
+                      (NML (NN television) (NN series))
+                      (NNP Chinese) (NNP Paladin)))))))))
+      (, ,)
+      (CC and)
+      (ADVP (RB immediately))
+      (VP (VBD skyrocketed)
+        (PP (IN to)
+          (NP (NN fame)))
+        (PP (IN as)
+          (NP
+            (NP (CD one))
+            (PP (IN of)
+              (NP
+                (NP (NNP China) (POS 's))
+                (ADJP (RBS most) (JJ popular))
+                (NNS actors)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	While
+	1	studying
+			sense:	study.v.02
+			prop:	study.01
+			V		1-1	studying 
+			N-ARGM-LOC		2-6	at the Shanghai Theater Academy 
+			N-ARG-A0		8-8	he 
+	2	at
+	3	the
+	4	Shanghai
+			name:	ORGANIZATION				4-6	Shanghai Theater Academy 
+	5	Theater
+	6	Academy
+	7	,
+	8	he
+	9	was
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	was 
+	10	invited
+			sense:	invite.v.04
+			prop:	invite.01
+			V		10-10	invited 
+			N-ARGM-TMP		0-6	While studying at the Shanghai Theater Academy 
+			N-ARG-A1		8-8	he 
+			N-ARG-A2		11-24	to play the leading role Li Xiaoyao in the 2005 television series Chinese Paladin 
+	11	to
+	12	play
+			sense:	act.v.03
+			prop:	play.02
+			V		12-12	play 
+			N-ARG-A0		8-8	he 
+			N-ARG-A1		13-17	the leading role Li Xiaoyao 
+			N-ARGM-LOC		18-24	in the 2005 television series Chinese Paladin 
+	13	the
+	14	leading
+			sense:	leading.s.01
+	15	role
+			sense:	character.n.04
+	16	Li
+			name:	PERSON				16-17	Li Xiaoyao 
+	17	Xiaoyao
+	18	in
+	19	the
+	20	2005
+			name:	DATE				20-20	2005 
+	21	television
+			sense:	television.n.01
+	22	series
+			sense:	serial.n.01
+	23	Chinese
+			name:	NATIONALITY				23-23	Chinese 
+	24	Paladin
+	25	,
+	26	and
+	27	immediately
+			sense:	immediately.r.01
+	28	skyrocketed
+			sense:	rocket.v.01
+			prop:	skyrocket.01
+			V		28-28	skyrocketed 
+			N-ARGM-TMP		0-6	While studying at the Shanghai Theater Academy 
+			N-ARG-A1		8-8	he 
+			N-ARGM-TMP		27-27	immediately 
+			N-ARG-A4		29-30	to fame 
+			N-ARGM-PRD		31-38	as one of China 's most popular actors 
+	29	to
+	30	fame
+			sense:	fame.n.01
+	31	as
+	32	one
+			name:	NUMBER				32-32	one 
+	33	of
+	34	China
+			name:	COUNTRY				34-34	China 
+	35	's
+	36	most
+			sense:	most.r.01
+	37	popular
+			sense:	popular.a.01
+	38	actors
+			sense:	actor.n.01
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In September 2012 , he was nominated for Best Newcomer at the 31st Hundred Flowers Awards for his role as Lin Juemin in Chinese historical film 1911 .
+
+
+Treebanked sentence:
+--------------------
+In September 2012 , he was nominated for Best Newcomer at the 31st Hundred Flowers Awards for his role as Lin Juemin in Chinese historical film 1911 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP September) (CD 2012)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN nominated)
+        (PP (IN for)
+          (NP (JJS Best) (NN Newcomer)))
+        (PP (IN at)
+          (NP (DT the)
+            (NML (NN 31st) (CD Hundred))
+            (NNPS Flowers)))
+        (NP-TMP
+          (NP (NNPS Awards))
+          (PP (IN for)
+            (NP (PRP$ his) (NN role))))
+        (PP (IN as)
+          (NP
+            (NP (NNP Lin) (NNP Juemin))
+            (PP (IN in)
+              (NP (NNP Chinese) (JJ historical) (NN film)))
+            (NP-TMP (CD 1911))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	September
+			name:	DATE				1-2	September 2012 
+	2	2012
+	3	,
+	4	he
+	5	was
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	was 
+	6	nominated
+			sense:	nominate.v.01
+			prop:	nominate.01
+			V		6-6	nominated 
+			N-ARGM-TMP		0-2	In September 2012 
+			N-ARG-A1		4-4	he 
+			N-ARG-A2		7-9	for Best Newcomer 
+			N-ARGM-LOC		10-15	at the 31st Hundred Flowers Awards 
+	7	for
+	8	Best
+			sense:	good.a.01
+	9	Newcomer
+			sense:	newcomer.n.01
+	10	at
+	11	the
+	12	31st
+			name:	ORDINAL				12-12	31st 
+	13	Hundred
+			name:	NUMBER				13-13	Hundred 
+	14	Flowers
+	15	Awards
+	16	for
+	17	his
+	18	role
+			sense:	character.n.04
+	19	as
+	20	Lin
+			name:	PERSON				20-21	Lin Juemin 
+	21	Juemin
+	22	in
+	23	Chinese
+			name:	NATIONALITY				23-23	Chinese 
+	24	historical
+			sense:	historic.s.01
+	25	film
+			sense:	movie.n.01
+	26	1911
+			name:	DATE				26-26	1911 
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is best known for his role as Mei Changsu in the 2015 television drama Nirvana in Fire , for which he received the Best Actor Award at the 22nd Magnolia Awards .
+
+
+Treebanked sentence:
+--------------------
+He is best known for his role as Mei Changsu in the 2015 television drama Nirvana in Fire , for which he received the Best Actor Award at the 22nd Magnolia Awards . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (ADVP (RBS best))
+      (VP (VBN known)
+        (PP (IN for)
+          (NP
+            (NP (PRP$ his) (NN role))
+            (PP (IN as)
+              (NP
+                (NP (NNP Mei) (NNP Changsu))
+                (PP (IN in)
+                  (NP (DT the) (CD 2015) (NN television) (NN drama)))))))
+        (NP
+          (NP
+            (NP (NNP Nirvana))
+            (PP (IN in)
+              (NP (NNP Fire))))
+          (, ,)
+          (SBAR
+            (WHPP (IN for)
+              (WHNP (WDT which)))
+            (S
+              (NP (PRP he))
+              (VP (VBD received)
+                (NP (DT the) (JJS Best) (NN Actor) (NN Award))
+                (PP (IN at)
+                  (NP
+                    (NP (DT the) (NN 22nd))
+                    (NP (NNP Magnolia) (NNPS Awards))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-31	best known for his role as Mei Changsu in the 2015 television drama Nirvana in Fire , for which he received the Best Actor Award at the 22nd Magnolia Awards 
+	2	best
+			sense:	well.r.02
+	3	known
+			sense:	know.v.04
+			prop:	know.01
+			V		3-3	known 
+			N-ARG-A1		0-0	He 
+			N-ARGM-MNR		2-2	best 
+			N-ARG-A2		4-31	for his role as Mei Changsu in the 2015 television drama Nirvana in Fire , for which he received the Best Actor Award at the 22nd Magnolia Awards 
+	4	for
+	5	his
+	6	role
+			sense:	character.n.04
+	7	as
+	8	Mei
+			name:	PERSON				8-9	Mei Changsu 
+	9	Changsu
+	10	in
+	11	the
+	12	2015
+			name:	DATE				12-12	2015 
+	13	television
+			sense:	television.n.01
+	14	drama
+			sense:	play.n.01
+	15	Nirvana
+	16	in
+	17	Fire
+			name:	CAUSE_OF_DEATH				17-17	Fire 
+	18	,
+	19	for
+	20	which
+	21	he
+	22	received
+			sense:	receive.v.01
+			prop:	receive.01
+			V		22-22	received 
+			R-ARG-A3		19-20	for which 
+			N-ARG-A0		21-21	he 
+			N-ARG-A1		23-26	the Best Actor Award 
+			N-ARGM-LOC		27-31	at the 22nd Magnolia Awards 
+	23	the
+	24	Best
+			sense:	good.a.01
+	25	Actor
+			name:	TITLE				25-25	Actor 
+			sense:	actor.n.01
+	26	Award
+			sense:	award.n.02
+	27	at
+	28	the
+	29	22nd
+			name:	ORDINAL				29-29	22nd 
+	30	Magnolia
+	31	Awards
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Hu Ge is currently managed by Hu Ge Studio , contracted under Tangren Media .
+
+
+Treebanked sentence:
+--------------------
+Hu Ge is currently managed by Hu Ge Studio , contracted under Tangren Media . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Hu) (NNP Ge))
+    (VP (VBZ is)
+      (ADVP (RB currently))
+      (VP (VBN managed)
+        (PP (IN by)
+          (NP
+            (NP (NNP Hu) (NNP Ge) (NNP Studio))
+            (, ,)
+            (VP (VBN contracted)
+              (PP (IN under)
+                (NP (NNP Tangren) (NNP Media))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Hu
+			name:	PERSON				0-1	Hu Ge 
+	1	Ge
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	currently
+			name:	DATE				3-3	currently 
+			sense:	presently.r.02
+	4	managed
+			sense:	oversee.v.01
+			prop:	manage.01
+			V		4-4	managed 
+			N-ARG-A1		0-1	Hu Ge 
+			N-ARGM-TMP		3-3	currently 
+			N-ARG-A0		5-8	by Hu Ge Studio 
+			N-ARGM-PRD		10-13	contracted under Tangren Media 
+	5	by
+	6	Hu
+			name:	PERSON				6-8	Hu Ge Studio 
+	7	Ge
+	8	Studio
+	9	,
+	10	contracted
+			sense:	contract.v.01
+			prop:	contract.02
+			V		10-10	contracted 
+			N-ARG-A1		0-1	Hu Ge 
+			N-ARGM-LOC		11-13	under Tangren Media 
+	11	under
+	12	Tangren
+			name:	ORGANIZATION				12-13	Tangren Media 
+	13	Media
+	14	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+

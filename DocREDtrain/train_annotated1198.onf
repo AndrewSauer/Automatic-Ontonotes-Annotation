@@ -1,0 +1,1125 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Lübecker Yacht - Club ( Lübeck Yacht Club ) is a yacht club in Germany .
+
+
+Treebanked sentence:
+--------------------
+Lübecker Yacht - Club ( Lübeck Yacht Club ) is a yacht club in Germany . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Lübecker) (NNP Yacht) (HYPH -) (NNP Club))
+      (-LRB- -LRB-)
+      (NP (NNP Lübeck) (NNP Yacht) (NNP Club))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN yacht) (NN club))
+        (PP (IN in)
+          (NP (NNP Germany)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Lübecker
+			coref:	IDENT			4	0-3	Lübecker Yacht - Club 
+			name:	ORGANIZATION				0-3	Lübecker Yacht - Club 
+	1	Yacht
+	2	-
+	3	Club
+	4	(
+	5	Lübeck
+			name:	ORGANIZATION				5-7	Lübeck Yacht Club 
+	6	Yacht
+	7	Club
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	Lübecker Yacht - Club ( Lübeck Yacht Club ) 
+			N-ARG-A2		10-14	a yacht club in Germany 
+	10	a
+	11	yacht
+			sense:	yacht.n.01
+	12	club
+			sense:	club.n.02
+	13	in
+	14	Germany
+			name:	COUNTRY				14-14	Germany 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The club is run by two commodores and has four houses .
+
+
+Treebanked sentence:
+--------------------
+The club is run by two commodores and has four houses . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN club))
+    (VP
+      (VP (VBZ is)
+        (VP (VBN run)
+          (PP (IN by)
+            (NP (CD two) (NNS commodores)))))
+      (CC and)
+      (VP (VBZ has)
+        (NP (CD four) (NNS houses))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			4	0-1	The club 
+	1	club
+			sense:	club.n.02
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	run
+			sense:	operate.v.01
+			prop:	run.01
+			V		3-3	run 
+			N-ARG-A1		0-1	The club 
+			N-ARG-A0		4-6	by two commodores 
+	4	by
+	5	two
+			name:	NUMBER				5-5	two 
+	6	commodores
+			sense:	commodore.n.01
+	7	and
+	8	has
+			sense:	have.v.02
+			prop:	have.03
+			V		8-8	has 
+			N-ARG-A0		0-1	The club 
+			N-ARG-A1		9-10	four houses 
+	9	four
+			name:	NUMBER				9-9	four 
+	10	houses
+			sense:	house.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The oldest one was established in 1898 in Lübeck , one of the former Hanseatic League cities .
+
+
+Treebanked sentence:
+--------------------
+The oldest one was established in 1898 in Lübeck , one of the former Hanseatic League cities . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJS oldest) (NN one))
+    (VP (VBD was)
+      (VP (VBN established)
+        (PP (IN in)
+          (NP (CD 1898)))
+        (PP (IN in)
+          (NP
+            (NP (NNP Lübeck))
+            (, ,)
+            (NP
+              (NP (CD one))
+              (PP (IN of)
+                (NP (DT the)
+                  (NML (JJ former) (NNP Hanseatic) (NNP League))
+                  (NNS cities))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	oldest
+			sense:	old.a.02
+	2	one
+			name:	NUMBER				2-2	one 
+			sense:	one.n.01
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		4-4	established 
+			N-ARG-A1		0-2	The oldest one 
+			N-ARGM-TMP		5-6	in 1898 
+			N-ARGM-LOC		7-16	in Lübeck , one of the former Hanseatic League cities 
+	5	in
+	6	1898
+			name:	DATE				6-6	1898 
+	7	in
+	8	Lübeck
+			name:	LOCATION				8-8	Lübeck 
+	9	,
+	10	one
+			name:	NUMBER				10-10	one 
+	11	of
+	12	the
+	13	former
+			sense:	erstwhile.s.01
+	14	Hanseatic
+			name:	ORGANIZATION				14-15	Hanseatic League 
+	15	League
+	16	cities
+			sense:	city.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This building houses the club 's youth section and the LYC - Marketing GmbH , a company officially registered by the Yacht Club of Lübeck that runs the projects of the club .
+
+
+Treebanked sentence:
+--------------------
+This building houses the club 's youth section and the LYC - Marketing GmbH , a company officially registered by the Yacht Club of Lübeck that runs the projects of the club . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT This) (NN building))
+    (VP (VBZ houses)
+      (NP
+        (NP
+          (NP
+            (NP (DT the) (NN club) (POS 's))
+            (NN youth) (NN section))
+          (CC and)
+          (NP (DT the)
+            (NML (NNP LYC) (HYPH -) (NNP Marketing))
+            (NNP GmbH)))
+        (, ,)
+        (NP
+          (NP (DT a) (NN company))
+          (VP
+            (ADVP (RB officially))
+            (VBN registered)
+            (PP (IN by)
+              (NP
+                (NP
+                  (NP (DT the) (NNP Yacht) (NNP Club))
+                  (PP (IN of)
+                    (NP (NNP Lübeck))))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ runs)
+                      (NP
+                        (NP (DT the) (NNS projects))
+                        (PP (IN of)
+                          (NP (DT the) (NN club)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+	1	building
+			sense:	building.n.01
+	2	houses
+			sense:	house.v.01
+			prop:	house.01
+			V		2-2	houses 
+			N-ARG-A2		0-1	This building 
+			N-ARG-A1		3-31	the club 's youth section and the LYC - Marketing GmbH , a company officially registered by the Yacht Club of Lübeck that runs the projects of the club 
+	3	the
+			coref:	IDENT			4	3-5	the club 's 
+			coref:	IDENT			6	3-7	the club 's youth section 
+	4	club
+			sense:	club.n.02
+	5	's
+	6	youth
+			sense:	young.n.09
+	7	section
+			sense:	department.n.01
+	8	and
+	9	the
+	10	LYC
+			name:	ORGANIZATION				10-13	LYC - Marketing GmbH 
+	11	-
+	12	Marketing
+	13	GmbH
+	14	,
+	15	a
+	16	company
+			sense:	company.n.01
+	17	officially
+			sense:	formally.r.01
+	18	registered
+			sense:	register.v.01
+			prop:	register.02
+			V		18-18	registered 
+			N-ARG-A1		15-16	a company 
+			N-ARGM-MNR		17-17	officially 
+			N-ARG-A0		19-24	by the Yacht Club of Lübeck 
+	19	by
+	20	the
+	21	Yacht
+			name:	ORGANIZATION				21-22	Yacht Club 
+	22	Club
+	23	of
+	24	Lübeck
+			name:	LOCATION				24-24	Lübeck 
+	25	that
+	26	runs
+			sense:	operate.v.01
+			prop:	run.01
+			V		26-26	runs 
+			N-ARG-A0		15-24	a company officially registered by the Yacht Club of Lübeck 
+			R-ARG-A0		25-25	that 
+			N-ARG-A1		27-31	the projects of the club 
+	27	the
+	28	projects
+			sense:	undertaking.n.01
+	29	of
+	30	the
+			coref:	IDENT			4	30-31	the club 
+	31	club
+			sense:	club.n.02
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+There is room for 100 dinghies in its premises as well as the nostalgic 12-footer fleet .
+
+
+Treebanked sentence:
+--------------------
+There is room for 100 dinghies in its premises as well as the nostalgic 12 - footer fleet . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (NN room))
+          (PP (IN for)
+            (NP
+              (NP (CD 100) (NNS dinghies))
+              (PP (IN in)
+                (NP (PRP$ its) (NNS premises))))))
+        (CONJP (RB as) (RB well) (IN as))
+        (NP (DT the)
+          (ADJP (JJ nostalgic)
+            (NP (CD 12) (HYPH -) (NN footer)))
+          (NN fleet))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	There
+	1	is
+			sense:	exist.v.01
+			prop:	be.02
+			V		1-1	is 
+			N-ARG-A1		2-17	room for 100 dinghies in its premises as well as the nostalgic 12 - footer fleet 
+	2	room
+			sense:	room.n.01
+	3	for
+	4	100
+			name:	NUMBER				4-4	100 
+	5	dinghies
+			sense:	dinghy.n.01
+	6	in
+	7	its
+			coref:	IDENT			1	7-7	its 
+	8	premises
+			sense:	premise.n.01
+	9	as
+			sense:	equally.r.01
+	10	well
+			sense:	well.r.02
+	11	as
+	12	the
+	13	nostalgic
+			sense:	nostalgic.s.01
+	14	12
+			name:	NUMBER				14-16	12 - footer 
+	15	-
+	16	footer
+			sense:	footer.n.01
+	17	fleet
+			sense:	fleet.n.02
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It has three more buildings in nearby Travemünde , a borough of Lübeck located at the mouth of river Trave in Lübeck Bay .
+
+
+Treebanked sentence:
+--------------------
+It has three more buildings in nearby Travemünde , a borough of Lübeck located at the mouth of river Trave in Lübeck Bay . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ has)
+      (NP
+        (NP
+          (NP (CD three) (JJR more) (NNS buildings))
+          (PP (IN in)
+            (NP (JJ nearby) (NNP Travemünde))))
+        (, ,)
+        (NP
+          (NP
+            (NP (DT a) (NN borough))
+            (PP (IN of)
+              (NP (NNP Lübeck))))
+          (VP (VBN located)
+            (PP (IN at)
+              (NP
+                (NP (DT the) (NN mouth))
+                (PP (IN of)
+                  (NP (NN river) (NNP Trave)))))
+            (PP (IN in)
+              (NP (NNP Lübeck) (NNP Bay)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	has
+			sense:	have.v.01
+			prop:	have.03
+			V		1-1	has 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-4	three more buildings 
+			N-ARGM-LOC		5-22	in nearby Travemünde , a borough of Lübeck located at the mouth of river Trave in Lübeck Bay 
+	2	three
+			coref:	IDENT			5	2-22	three more buildings in nearby Travemünde , a borough of Lübeck located at the mouth of river Trave in Lübeck Bay 
+			name:	NUMBER				2-2	three 
+	3	more
+			sense:	more.a.02
+	4	buildings
+			sense:	building.n.01
+	5	in
+	6	nearby
+			sense:	nearby.s.01
+	7	Travemünde
+			name:	LOCATION				7-7	Travemünde 
+	8	,
+	9	a
+	10	borough
+			sense:	borough.n.01
+	11	of
+	12	Lübeck
+			name:	LOCATION				12-12	Lübeck 
+	13	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		13-13	located 
+			N-ARG-A1		9-12	a borough of Lübeck 
+			N-ARGM-LOC		14-19	at the mouth of river Trave 
+			N-ARGM-LOC		20-22	in Lübeck Bay 
+	14	at
+	15	the
+	16	mouth
+			sense:	mouth.n.04
+	17	of
+	18	river
+			name:	TITLE				18-18	river 
+			sense:	river.n.01
+	19	Trave
+	20	in
+	21	Lübeck
+			name:	LOCATION				21-21	Lübeck 
+	22	Bay
+			name:	CITY				22-22	Bay 
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+One of these buildings is a restored 1909 boathouse .
+
+
+Treebanked sentence:
+--------------------
+One of these buildings is a restored 1909 boathouse . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (CD One))
+      (PP (IN of)
+        (NP (DT these) (NNS buildings))))
+    (VP (VBZ is)
+      (NP (DT a) (VBN restored) (CD 1909)
+        (NML (NN boathouse))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	One
+			name:	NUMBER				0-0	One 
+	1	of
+	2	these
+			coref:	IDENT			5	2-3	these buildings 
+	3	buildings
+			sense:	building.n.01
+	4	is
+			sense:	be.v.01
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	One of these buildings 
+			N-ARG-A2		5-8	a restored 1909 boathouse 
+	5	a
+	6	restored
+			sense:	restore.v.01
+			prop:	restore.02
+			V		6-6	restored 
+			N-ARG-A1		7-8	1909 boathouse 
+	7	1909
+			name:	DATE				7-7	1909 
+	8	boathouse
+			sense:	boathouse.n.01
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It houses the club 's social section and has a reastaurant that is open to the public .
+
+
+Treebanked sentence:
+--------------------
+It houses the club 's social section and has a reastaurant that is open to the public . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBZ houses)
+        (NP
+          (NP (DT the) (NN club) (POS 's))
+          (JJ social) (NN section)))
+      (CC and)
+      (VP (VBZ has)
+        (NP
+          (NP (DT a) (NN reastaurant))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ is)
+                (ADJP (JJ open)
+                  (PP (IN to)
+                    (NP (DT the) (NN public))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	houses
+			sense:	house.v.01
+			prop:	house.01
+			V		1-1	houses 
+			N-ARG-A2		0-0	It 
+			N-ARG-A1		2-6	the club 's social section 
+	2	the
+			coref:	IDENT			4	2-4	the club 's 
+			coref:	IDENT			6	2-6	the club 's social section 
+	3	club
+			sense:	club.n.02
+	4	's
+	5	social
+			sense:	social.s.04
+	6	section
+			sense:	part.n.09
+	7	and
+	8	has
+			sense:	have.v.02
+			prop:	have.03
+			V		8-8	has 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		9-16	a reastaurant that is open to the public 
+	9	a
+	10	reastaurant
+	11	that
+	12	is
+			sense:	be.v.01
+			prop:	be.01
+			V		12-12	is 
+			N-ARG-A1		9-10	a reastaurant 
+			R-ARG-A1		11-11	that 
+			N-ARG-A2		13-16	open to the public 
+	13	open
+			sense:	open.s.07
+	14	to
+	15	the
+	16	public
+			sense:	populace.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It also has mooring space for visiting yachts as well as facilities for visitors .
+
+
+Treebanked sentence:
+--------------------
+It also has mooring space for visiting yachts as well as facilities for visitors . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB also))
+    (VP (VBZ has)
+      (NP
+        (NP
+          (NP (NN mooring) (NN space))
+          (PP (IN for)
+            (NP (VBG visiting) (NNS yachts))))
+        (CONJP (RB as) (RB well) (IN as))
+        (NP
+          (NP (NNS facilities))
+          (PP (IN for)
+            (NP (NNS visitors))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	also
+			sense:	besides.r.02
+	2	has
+			sense:	have.v.02
+			prop:	have.03
+			V		2-2	has 
+			N-ARG-A0		0-0	It 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-13	mooring space for visiting yachts as well as facilities for visitors 
+	3	mooring
+			sense:	mooring.n.01
+	4	space
+			sense:	space.n.03
+	5	for
+	6	visiting
+			sense:	visit.v.01
+			prop:	visit.01
+			V		6-6	visiting 
+			N-ARG-A1		7-7	yachts 
+	7	yachts
+			sense:	yacht.n.01
+	8	as
+			sense:	equally.r.01
+	9	well
+			sense:	well.r.02
+	10	as
+	11	facilities
+			sense:	facility.n.01
+	12	for
+	13	visitors
+			sense:	visitor.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+There is a ferry service to cross the Trave run by the club .
+
+
+Treebanked sentence:
+--------------------
+There is a ferry service to cross the Trave run by the club . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP (DT a) (NN ferry) (NN service)
+        (S
+          (VP (TO to)
+            (VP (VB cross)
+              (NP
+                (NP (DT the) (NNP Trave))
+                (VP (VBN run)
+                  (PP (IN by)
+                    (NP (DT the) (NN club))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	There
+	1	is
+			sense:	exist.v.01
+			prop:	be.02
+			V		1-1	is 
+			N-ARG-A1		2-12	a ferry service to cross the Trave run by the club 
+	2	a
+	3	ferry
+			sense:	ferry.n.01
+	4	service
+			sense:	service.n.01
+	5	to
+	6	cross
+			sense:	traverse.v.01
+			prop:	cross.02
+			V		6-6	cross 
+			N-ARG-A0		2-4	a ferry service 
+			N-ARG-A1		7-8	the Trave 
+	7	the
+	8	Trave
+	9	run
+			sense:	operate.v.01
+			prop:	run.01
+			V		9-9	run 
+			N-ARG-A1		7-8	the Trave 
+			N-ARG-A0		10-12	by the club 
+	10	by
+	11	the
+			coref:	IDENT			4	11-12	the club 
+	12	club
+			sense:	club.n.02
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The other one is located at a place called Mövenstein , on the former premises of a 1925 seaside resort .
+
+
+Treebanked sentence:
+--------------------
+The other one is located at a place called Mövenstein , on the former premises of a 1925 seaside resort . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJ other) (NN one))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN at)
+          (NP
+            (NP (DT a) (NN place))
+            (VP (VBN called)
+              (NP (NNP Mövenstein))
+              (, ,)
+              (PP (IN on)
+                (NP
+                  (NP (DT the) (JJ former) (NNS premises))
+                  (PP (IN of)
+                    (NP (DT a) (CD 1925) (JJ seaside) (NN resort))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	other
+			sense:	other.a.01
+	2	one
+			name:	NUMBER				2-2	one 
+			sense:	one.n.01
+	3	is
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	is 
+	4	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		4-4	located 
+			N-ARG-A1		0-2	The other one 
+			N-ARGM-LOC		5-19	at a place called Mövenstein , on the former premises of a 1925 seaside resort 
+	5	at
+	6	a
+			coref:	IDENT			3	6-19	a place called Mövenstein , on the former premises of a 1925 seaside resort 
+	7	place
+			sense:	topographic_point.n.01
+	8	called
+			sense:	name.v.01
+			prop:	call.01
+			V		8-8	called 
+			N-ARG-A1		6-7	a place 
+			N-ARG-A2		9-9	Mövenstein 
+	9	Mövenstein
+			name:	LOCATION				9-9	Mövenstein 
+	10	,
+	11	on
+	12	the
+	13	former
+			sense:	erstwhile.s.01
+	14	premises
+			sense:	premise.n.01
+	15	of
+	16	a
+			coref:	IDENT			2	16-19	a 1925 seaside resort 
+	17	1925
+			name:	DATE				17-17	1925 
+	18	seaside
+	19	resort
+			sense:	resort.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was obtained by the Yacht Club of Lübeck in 1994 and transformed into a building that houses the catamaran and dinghy fleet of the club .
+
+
+Treebanked sentence:
+--------------------
+It was obtained by the Yacht Club of Lübeck in 1994 and transformed into a building that houses the catamaran and dinghy fleet of the club . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP
+        (VP (VBN obtained)
+          (PP (IN by)
+            (NP
+              (NP (DT the) (NNP Yacht) (NNP Club))
+              (PP (IN of)
+                (NP (NNP Lübeck)))))
+          (PP (IN in)
+            (NP (CD 1994))))
+        (CC and)
+        (VP (VBN transformed)
+          (PP (IN into)
+            (NP
+              (NP (DT a) (NN building))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ houses)
+                    (NP
+                      (NP (DT the) (NN catamaran))
+                      (CC and)
+                      (NP
+                        (NP (NN dinghy) (NN fleet))
+                        (PP (IN of)
+                          (NP (DT the) (NN club)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	obtained
+			sense:	obtain.v.01
+			prop:	obtain.01
+			V		2-2	obtained 
+			N-ARG-A1		0-0	It 
+			N-ARG-A0		3-8	by the Yacht Club of Lübeck 
+			N-ARGM-TMP		9-10	in 1994 
+	3	by
+	4	the
+			coref:	IDENT			0	4-8	the Yacht Club of Lübeck 
+	5	Yacht
+			name:	ORGANIZATION				5-6	Yacht Club 
+	6	Club
+	7	of
+	8	Lübeck
+			name:	LOCATION				8-8	Lübeck 
+	9	in
+	10	1994
+			name:	DATE				10-10	1994 
+	11	and
+	12	transformed
+			sense:	transform.v.02
+			prop:	transform.01
+			V		12-12	transformed 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		13-25	into a building that houses the catamaran and dinghy fleet of the club 
+	13	into
+	14	a
+	15	building
+			sense:	building.n.01
+	16	that
+	17	houses
+			sense:	house.v.01
+			prop:	house.01
+			V		17-17	houses 
+			N-ARG-A2		14-15	a building 
+			R-ARG-A2		16-16	that 
+			N-ARG-A1		18-25	the catamaran and dinghy fleet of the club 
+	18	the
+	19	catamaran
+			sense:	catamaran.n.01
+	20	and
+	21	dinghy
+			sense:	dinghy.n.01
+	22	fleet
+			sense:	fleet.n.02
+	23	of
+	24	the
+			coref:	IDENT			4	24-25	the club 
+	25	club
+			sense:	club.n.02
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This place has onshore accommodation both for members and guests .
+
+
+Treebanked sentence:
+--------------------
+This place has onshore accommodation both for members and guests . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT This) (NN place))
+    (VP (VBZ has)
+      (NP
+        (NP
+          (ADVP (RB onshore))
+          (NN accommodation))
+        (PP (CC both)
+          (IN for)
+          (NP (NNS members)
+            (CC and)
+            (NNS guests)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+			coref:	IDENT			3	0-1	This place 
+	1	place
+			sense:	place.n.02
+	2	has
+			sense:	have.v.02
+			prop:	have.03
+			V		2-2	has 
+			N-ARG-A0		0-1	This place 
+			N-ARG-A1		3-9	onshore accommodation both for members and guests 
+	3	onshore
+			sense:	onshore.r.01
+	4	accommodation
+			sense:	accommodation.n.04
+	5	both
+	6	for
+	7	members
+			sense:	member.n.01
+	8	and
+	9	guests
+			sense:	guest.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Still there is another building that is a regatta station for the Travemünder Woche , of which the Yacht Club of Lübeck is one of the main organizers .
+
+
+Treebanked sentence:
+--------------------
+Still there is another building that is a regatta station for the Travemünder Woche , of which the Yacht Club of Lübeck is one of the main organizers . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Still))
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (DT another) (NN building))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ is)
+              (NP
+                (NP
+                  (NP (DT a) (NN regatta) (NN station))
+                  (PP (IN for)
+                    (NP (DT the) (NNP Travemünder) (NNP Woche))))
+                (, ,)
+                (SBAR
+                  (WHPP (IN of)
+                    (WHNP (WDT which)))
+                  (S
+                    (NP
+                      (NP (DT the) (NNP Yacht) (NNP Club))
+                      (PP (IN of)
+                        (NP (NNP Lübeck))))
+                    (VP (VBZ is)
+                      (NP
+                        (NP (CD one))
+                        (PP (IN of)
+                          (NP (DT the) (JJ main) (NNS organizers)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Still
+			sense:	however.r.01
+	1	there
+	2	is
+			sense:	exist.v.01
+			prop:	be.02
+			V		2-2	is 
+			N-ARGM-TMP		0-0	Still 
+			N-ARG-A1		3-27	another building that is a regatta station for the Travemünder Woche , of which the Yacht Club of Lübeck is one of the main organizers 
+	3	another
+	4	building
+			sense:	building.n.01
+	5	that
+	6	is
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	is 
+			N-ARG-A1		3-4	another building 
+			R-ARG-A1		5-5	that 
+			N-ARG-A2		7-27	a regatta station for the Travemünder Woche , of which the Yacht Club of Lübeck is one of the main organizers 
+	7	a
+	8	regatta
+			sense:	regatta.n.01
+	9	station
+			sense:	station.n.01
+	10	for
+	11	the
+	12	Travemünder
+			name:	MISC				12-13	Travemünder Woche 
+	13	Woche
+	14	,
+	15	of
+	16	which
+	17	the
+			coref:	IDENT			0	17-21	the Yacht Club of Lübeck 
+	18	Yacht
+			name:	ORGANIZATION				18-19	Yacht Club 
+	19	Club
+	20	of
+	21	Lübeck
+			name:	LOCATION				21-21	Lübeck 
+	22	is
+			sense:	be.v.02
+			prop:	be.01
+			V		22-22	is 
+			N-ARG-A1		17-21	the Yacht Club of Lübeck 
+			N-ARG-A2		23-27	one of the main organizers 
+	23	one
+			name:	NUMBER				23-23	one 
+	24	of
+	25	the
+	26	main
+			sense:	chief.s.01
+	27	organizers
+			sense:	organizer.n.01
+	28	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				11.4-8	the Yacht Club of Lübeck 
+				13.17-21	the Yacht Club of Lübeck 
+	Chain 1 (IDENT)
+				4.7-7	its 
+				5.0-0	It 
+				7.0-0	It 
+				8.0-0	It 
+	Chain 2 (IDENT)
+				10.16-19	a 1925 seaside resort 
+				11.0-0	It 
+	Chain 3 (IDENT)
+				10.6-19	a place called Mövenstein , on the former premises of a 1925 seaside resort 
+				12.0-1	This place 
+	Chain 4 (IDENT)
+				0.0-3	Lübecker Yacht - Club 
+				1.0-1	The club 
+				3.3-5	the club 's 
+				3.30-31	the club 
+				7.2-4	the club 's 
+				9.11-12	the club 
+				11.24-25	the club 
+	Chain 5 (IDENT)
+				5.2-22	three more buildings in nearby Travemünde , a borough of Lübeck located at the mouth of river Trave in Lübeck Bay 
+				6.2-3	these buildings 
+	Chain 6 (IDENT)
+				3.3-7	the club 's youth section 
+				7.2-6	the club 's social section 
+

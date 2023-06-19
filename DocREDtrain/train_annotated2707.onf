@@ -1,0 +1,632 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Péter Olajos ( born 18 April 1968 in Budapest ) 
+
+
+Treebanked sentence:
+--------------------
+Péter Olajos ( born 18 April 1968 in Budapest ) is a Hungarian ( conservative green ) politician . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Péter) (NNP Olajos))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 18))
+        (NP-TMP (NNP April) (CD 1968))
+        (PP (IN in)
+          (NP (NNP Budapest))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ Hungarian) (-LRB- -LRB-) (JJ conservative) (NN green) (-RRB- -RRB-))
+        (NP (NN politician))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Péter
+			name:	PERSON				0-1	Péter Olajos 
+	1	Olajos
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Péter Olajos 
+			N-ARGM-TMP		4-6	18 April 1968 
+			N-ARGM-LOC		7-8	in Budapest 
+	4	18
+			name:	DATE				4-6	18 April 1968 
+	5	April
+	6	1968
+	7	in
+	8	Budapest
+			name:	CITY				8-8	Budapest 
+	9	)
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	Péter Olajos ( born 18 April 1968 in Budapest ) 
+			N-ARG-A2		11-17	a Hungarian ( conservative green ) politician 
+	11	a
+	12	Hungarian
+			name:	NATIONALITY				12-12	Hungarian 
+	13	(
+	14	conservative
+			name:	IDEOLOGY				14-14	conservative 
+			sense:	conservative.s.02
+	15	green
+			sense:	green.n.04
+	16	)
+	17	politician
+			name:	TITLE				17-17	politician 
+			sense:	politician.n.02
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+From 2004 to 2009 he was a Member of the European Parliament ( MEP ) with the Hungarian Democratic Forum , part of the European People 's Party .
+
+
+Treebanked sentence:
+--------------------
+From 2004 to 2009 he was a Member of the European Parliament ( MEP ) with the Hungarian Democratic Forum , part of the European People 's Party . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN From)
+      (NP
+        (NP (CD 2004))
+        (PP (IN to)
+          (NP (CD 2009)))))
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NNP Member))
+        (PP (IN of)
+          (NP (DT the) (NNP European) (NNP Parliament))))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP MEP))
+        (-RRB- -RRB-))
+      (PP (IN with)
+        (NP
+          (NP (DT the) (JJ Hungarian) (NNP Democratic) (NNP Forum))
+          (, ,)
+          (NP
+            (NP (NN part))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNP European) (NNPS People) (POS 's))
+                (NNP Party)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	From
+	1	2004
+			name:	DATE				1-1	2004 
+	2	to
+	3	2009
+			name:	DATE				3-3	2009 
+	4	he
+	5	was
+			sense:	be.v.08
+			prop:	be.01
+			V		5-5	was 
+			N-ARGM-TMP		0-3	From 2004 to 2009 
+			N-ARG-A1		4-4	he 
+			N-ARG-A2		6-27	a Member of the European Parliament ( MEP ) with the Hungarian Democratic Forum , part of the European People 's Party 
+	6	a
+	7	Member
+	8	of
+	9	the
+			coref:	IDENT			0	9-11	the European Parliament 
+	10	European
+			name:	ORGANIZATION				10-11	European Parliament 
+	11	Parliament
+	12	(
+	13	MEP
+	14	)
+	15	with
+	16	the
+	17	Hungarian
+			name:	ORGANIZATION				17-19	Hungarian Democratic Forum 
+	18	Democratic
+	19	Forum
+	20	,
+	21	part
+			sense:	part.n.01
+	22	of
+	23	the
+	24	European
+			name:	ORGANIZATION				24-27	European People 's Party 
+	25	People
+	26	's
+	27	Party
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He sat on the European Parliament 's Committee on the Environment , Public Health and Food Safety , later he was member second Orban Government , responsible for Green Economy Development and Climate Policy .
+
+
+Treebanked sentence:
+--------------------
+He sat on the European Parliament 's Committee on the Environment , Public Health and Food Safety , later he was member second Orban Government , responsible for Green Economy Development and Climate Policy . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD sat)
+        (PP (IN on)
+          (NP (DT the) (NNP European)
+            (NP (NNP Parliament) (POS 's))
+            (NNP Committee)))
+        (PP (IN on)
+          (NP (DT the)
+            (NML
+              (NML (NNP Environment))
+              (, ,)
+              (NML (NNP Public) (NNP Health))
+              (CC and)
+              (NML (NNP Food) (NNP Safety)))))))
+    (, ,)
+    (S
+      (ADVP (RB later))
+      (NP (PRP he))
+      (VP (VBD was)
+        (NP (NN member)
+          (NML
+            (NML (JJ second) (NNP Orban) (NNP Government))
+            (, ,)
+            (NML
+              (ADJP (JJ responsible)
+                (PP (IN for)
+                  (NP (NNP Green))))
+              (NNP Economy) (NNP Development))
+            (CC and)
+            (NML (NNP Climate) (NNP Policy))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	sat
+			sense:	sit.v.04
+			prop:	sit.01
+			V		1-1	sat 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-16	on the European Parliament 's Committee on the Environment , Public Health and Food Safety 
+	2	on
+	3	the
+			coref:	IDENT			0	3-7	the European Parliament 's Committee 
+	4	European
+			name:	ORGANIZATION				4-10	European Parliament 's Committee on the Environment 
+	5	Parliament
+	6	's
+	7	Committee
+	8	on
+	9	the
+	10	Environment
+	11	,
+	12	Public
+			name:	ORGANIZATION				12-16	Public Health and Food Safety 
+	13	Health
+	14	and
+	15	Food
+	16	Safety
+	17	,
+	18	later
+			sense:	subsequently.r.01
+	19	he
+	20	was
+			sense:	be.v.08
+			prop:	be.01
+			V		20-20	was 
+			N-ARGM-TMP		18-18	later 
+			N-ARG-A1		19-19	he 
+			N-ARG-A2		21-33	member second Orban Government , responsible for Green Economy Development and Climate Policy 
+	21	member
+			sense:	member.n.01
+	22	second
+			name:	ORDINAL				22-22	second 
+			sense:	second.s.01
+	23	Orban
+	24	Government
+	25	,
+	26	responsible
+			sense:	responsible.s.02
+	27	for
+	28	Green
+			name:	ORGANIZATION				28-30	Green Economy Development 
+	29	Economy
+	30	Development
+	31	and
+	32	Climate
+	33	Policy
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was the Hungarian Delegation Leader in Cancun on UNFCCC COP-16 , and a head of the Hungarian Climate Team under the Hungarian EU Presidency in 2011 .
+
+
+Treebanked sentence:
+--------------------
+He was the Hungarian Delegation Leader in Cancun on UNFCCC COP - 16 , and a head of the Hungarian Climate Team under the Hungarian EU Presidency in 2011 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (JJ Hungarian) (NNP Delegation) (NNP Leader))
+        (PP (IN in)
+          (NP
+            (NP (NNP Cancun))
+            (PP (IN on)
+              (NP (NNP UNFCCC)
+                (NML (NN COP) (HYPH -) (CD 16))
+                (, ,)
+                (CC and)
+                (NP
+                  (NP (DT a) (NN head))
+                  (PP (IN of)
+                    (NP (DT the) (JJ Hungarian))))
+                (NML (NNP Climate) (NNP Team)))))))
+      (PP (IN under)
+        (NP
+          (NP (DT the) (JJ Hungarian) (NNP EU) (NNP Presidency))
+          (PP (IN in)
+            (NP (CD 2011))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-28	the Hungarian Delegation Leader in Cancun on UNFCCC COP - 16 , and a head of the Hungarian Climate Team under the Hungarian EU Presidency in 2011 
+	2	the
+	3	Hungarian
+			name:	NATIONALITY				3-3	Hungarian 
+	4	Delegation
+	5	Leader
+			name:	TITLE				5-5	Leader 
+	6	in
+	7	Cancun
+			name:	CITY				7-7	Cancun 
+	8	on
+	9	UNFCCC
+	10	COP
+			sense:	bull.n.05
+	11	-
+	12	16
+	13	,
+	14	and
+	15	a
+	16	head
+			sense:	head.n.04
+	17	of
+	18	the
+	19	Hungarian
+			name:	ORGANIZATION				19-21	Hungarian Climate Team 
+	20	Climate
+	21	Team
+	22	under
+	23	the
+	24	Hungarian
+			name:	NATIONALITY				24-24	Hungarian 
+	25	EU
+			coref:	IDENT			1	25-25	EU 
+			name:	ORGANIZATION				25-25	EU 
+	26	Presidency
+	27	in
+	28	2011
+			name:	DATE				28-28	2011 
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the European Parliament , Olajos was a substitute for the Committee on the Internal Market and Consumer Protection , a member of the 
+
+
+Treebanked sentence:
+--------------------
+In the European Parliament , Olajos was a substitute for the Committee on the Internal Market and Consumer Protection , a member of the Delegation to the EU - Kazakhstan , EU - Kyrgyzstan and EU - Uzbekistan Parliamentary Cooperation Committees , and for relations with Tajikistan , Turkmenistan and Mongolia and a substitute for the Delegation to the EU - Romania Joint Parliamentary Committee . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NNP European) (NNP Parliament)))
+    (, ,)
+    (NP (NNP Olajos))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN substitute))
+        (PP (IN for)
+          (NP
+            (NP
+              (NP (DT the) (NNP Committee))
+              (PP (IN on)
+                (NP (DT the)
+                  (NML
+                    (NML (NNP Internal) (NNP Market))
+                    (CC and)
+                    (NML (NNP Consumer) (NNP Protection))))))
+            (, ,)
+            (NP
+              (NP (DT a) (NN member))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NN Delegation))
+                  (PP
+                    (PP (IN to)
+                      (NP
+                        (NP (DT the) (NNP EU) (HYPH -) (NNP Kazakhstan))
+                        (, ,)
+                        (NP (NNP EU) (HYPH -) (NNP Kyrgyzstan))
+                        (CC and)
+                        (NP
+                          (NP (NNP EU) (HYPH -) (NNP Uzbekistan) (NNP Parliamentary))
+                          (NP (NNP Cooperation) (NNPS Committees)))))
+                    (, ,)
+                    (CC and)
+                    (PP (IN for)
+                      (NP
+                        (NP (NNS relations))
+                        (PP (IN with)
+                          (NP (NNP Tajikistan) (, ,) (NNP Turkmenistan)
+                            (CC and)
+                            (NNP Mongolia)))))))))
+            (CC and)
+            (NP
+              (NP (DT a) (NN substitute))
+              (PP (IN for)
+                (NP
+                  (NP (DT the) (NN Delegation))
+                  (PP (IN to)
+                    (NP (DT the) (NNP EU) (HYPH -) (NNP Romania) (NNP Joint) (NNP Parliamentary) (NNP Committee))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+			coref:	IDENT			0	1-3	the European Parliament 
+	2	European
+			name:	ORGANIZATION				2-3	European Parliament 
+	3	Parliament
+	4	,
+	5	Olajos
+			name:	PERSON				5-5	Olajos 
+	6	was
+			sense:	be.v.08
+			prop:	be.01
+			V		6-6	was 
+			N-ARGM-LOC		0-3	In the European Parliament 
+			N-ARG-A1		5-5	Olajos 
+			N-ARG-A2		7-64	a substitute for the Committee on the Internal Market and Consumer Protection , a member of the Delegation to the EU - Kazakhstan , EU - Kyrgyzstan and EU - Uzbekistan Parliamentary Cooperation Committees , and for relations with Tajikistan , Turkmenistan and Mongolia and a substitute for the Delegation to the EU - Romania Joint Parliamentary Committee 
+	7	a
+	8	substitute
+			sense:	substitute.n.01
+	9	for
+	10	the
+	11	Committee
+	12	on
+	13	the
+	14	Internal
+			name:	ORGANIZATION				14-18	Internal Market and Consumer Protection 
+	15	Market
+	16	and
+	17	Consumer
+	18	Protection
+	19	,
+	20	a
+	21	member
+			sense:	member.n.01
+	22	of
+	23	the
+	24	Delegation
+			name:	ORGANIZATION				24-24	Delegation 
+			sense:	deputation.n.01
+	25	to
+	26	the
+	27	EU
+			coref:	IDENT			1	27-27	EU 
+			name:	ORGANIZATION				27-27	EU 
+	28	-
+	29	Kazakhstan
+			name:	COUNTRY				29-29	Kazakhstan 
+	30	,
+	31	EU
+			coref:	IDENT			1	31-31	EU 
+			name:	ORGANIZATION				31-31	EU 
+	32	-
+	33	Kyrgyzstan
+			name:	COUNTRY				33-33	Kyrgyzstan 
+	34	and
+	35	EU
+			coref:	IDENT			1	35-35	EU 
+			name:	ORGANIZATION				35-35	EU 
+	36	-
+	37	Uzbekistan
+			name:	COUNTRY				37-37	Uzbekistan 
+	38	Parliamentary
+	39	Cooperation
+	40	Committees
+	41	,
+	42	and
+	43	for
+	44	relations
+			sense:	relation.n.06
+	45	with
+	46	Tajikistan
+			name:	COUNTRY				46-46	Tajikistan 
+	47	,
+	48	Turkmenistan
+			name:	COUNTRY				48-48	Turkmenistan 
+	49	and
+	50	Mongolia
+			name:	COUNTRY				50-50	Mongolia 
+	51	and
+	52	a
+	53	substitute
+			sense:	substitute.n.01
+	54	for
+	55	the
+	56	Delegation
+			sense:	deputation.n.01
+	57	to
+	58	the
+	59	EU
+			name:	ORGANIZATION				59-64	EU - Romania Joint Parliamentary Committee 
+	60	-
+	61	Romania
+	62	Joint
+	63	Parliamentary
+	64	Committee
+	65	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the Government as Deputy State Secretary Olajos 's main responsibilities were : Climate Policy , Clean Energy and Energy Efficiency , Building Retrofitting Programs , Green Innovations and Sustainable Development
+
+
+Treebanked sentence:
+--------------------
+In the Government as Deputy State Secretary Olajos 's main responsibilities were : Climate Policy , Clean Energy and Energy Efficiency , Building Retrofitting Programs , Green Innovations and Sustainable Development 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (PRN
+      (S
+        (PP (IN In)
+          (NP
+            (NP (DT the) (NN Government))
+            (PP (IN as)
+              (NP
+                (NP
+                  (NML (NNP Deputy) (NNP State) (NNP Secretary))
+                  (NNP Olajos) (POS 's))
+                (JJ main) (NNS responsibilities)))))
+        (VP (VBD were) (: :)
+          (NP
+            (NP (NNP Climate) (NNP Policy))
+            (, ,)
+            (NP (NNP Clean) (NNP Energy))
+            (CC and)
+            (NP (NNP Energy) (NNP Efficiency))))))
+    (, ,)
+    (NP
+      (NP (NNP Building) (NNP Retrofitting) (NNP Programs))
+      (, ,)
+      (NP (NNP Green) (NNPS Innovations))
+      (CC and)
+      (NP (NNP Sustainable) (NNP Development)))))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+	2	Government
+			sense:	government.n.01
+	3	as
+	4	Deputy
+			name:	TITLE				4-4	Deputy 
+	5	State
+	6	Secretary
+			name:	TITLE				6-6	Secretary 
+	7	Olajos
+			name:	PERSON				7-7	Olajos 
+	8	's
+	9	main
+			sense:	chief.s.01
+	10	responsibilities
+			sense:	duty.n.01
+	11	were
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	were 
+			N-ARGM-LOC		0-2	In the Government 
+			N-ARGM-PRD		3-6	as Deputy State Secretary 
+			N-ARG-A1		7-10	Olajos 's main responsibilities 
+			N-ARG-A2		13-30	Climate Policy , Clean Energy and Energy Efficiency , Building Retrofitting Programs , Green Innovations and Sustainable Development 
+	12	:
+	13	Climate
+	14	Policy
+	15	,
+	16	Clean
+			name:	ORGANIZATION				16-20	Clean Energy and Energy Efficiency 
+	17	Energy
+	18	and
+	19	Energy
+	20	Efficiency
+	21	,
+	22	Building
+	23	Retrofitting
+	24	Programs
+	25	,
+	26	Green
+	27	Innovations
+	28	and
+	29	Sustainable
+	30	Development
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.3-7	the European Parliament 's Committee 
+				1.9-11	the European Parliament 
+				4.1-3	the European Parliament 
+	Chain 1 (IDENT)
+				3.25-25	EU 
+				4.27-27	EU 
+				4.31-31	EU 
+				4.35-35	EU 
+

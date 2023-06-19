@@ -1,0 +1,511 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Leo Friedlander ( July 6 , 1888 - October 24 , 1966 ) was an American sculptor , who has made several prominent works .
+
+
+Treebanked sentence:
+--------------------
+Leo Friedlander ( July 6 , 1888 - October 24 , 1966 ) was an American sculptor , who has made several prominent works . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Leo) (NNP Friedlander))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP July) (CD 6) (, ,) (CD 1888))
+        (HYPH -)
+        (NP-TMP (NNP October) (CD 24) (, ,) (CD 1966)))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (JJ American) (NN sculptor))
+        (, ,)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ has)
+              (VP (VBN made)
+                (NP (JJ several) (JJ prominent) (NNS works))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Leo
+			coref:	IDENT			1	0-1	Leo Friedlander 
+			name:	PERSON				0-1	Leo Friedlander 
+	1	Friedlander
+	2	(
+	3	July
+			name:	DATE				3-6	July 6 , 1888 
+	4	6
+	5	,
+	6	1888
+	7	-
+	8	October
+			name:	DATE				8-11	October 24 , 1966 
+	9	24
+	10	,
+	11	1966
+	12	)
+	13	was
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	was 
+			N-ARG-A1		0-12	Leo Friedlander ( July 6 , 1888 - October 24 , 1966 ) 
+			N-ARG-A2		14-23	an American sculptor , who has made several prominent works 
+	14	an
+	15	American
+			name:	NATIONALITY				15-15	American 
+	16	sculptor
+			name:	TITLE				16-16	sculptor 
+			sense:	sculptor.n.01
+	17	,
+	18	who
+	19	has
+			sense:	have.v.01
+			prop:	have.01
+			V		19-19	has 
+	20	made
+			sense:	create.v.05
+			prop:	make.01
+			V		20-20	made 
+			N-ARG-A0		14-16	an American sculptor 
+			R-ARG-A0		18-18	who 
+			N-ARG-A1		21-23	several prominent works 
+	21	several
+			sense:	several.s.01
+	22	prominent
+			sense:	outstanding.s.02
+	23	works
+			sense:	work.n.02
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Friedlander studied at the Art Students League in New York City , the Ecole des Beaux Arts in Brussels and Paris , and the American Academy in Rome .
+
+
+Treebanked sentence:
+--------------------
+Friedlander studied at the Art Students League in New York City , the Ecole des Beaux Arts in Brussels and Paris , and the American Academy in Rome . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Friedlander))
+    (VP (VBD studied)
+      (PP (IN at)
+        (NP
+          (NP
+            (NP (DT the) (NNP Art) (NNP Students) (NNP League))
+            (PP (IN in)
+              (NP
+                (NML (NNP New) (NNP York))
+                (NNP City))))
+          (, ,)
+          (NP
+            (NP (DT the) (NNP Ecole) (NNP des)
+              (NML (NNP Beaux) (NNPS Arts)))
+            (PP (IN in)
+              (NP (NNP Brussels)
+                (CC and)
+                (NNP Paris))))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (DT the) (NNP American) (NNP Academy))
+            (PP (IN in)
+              (NP (NNP Rome)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Friedlander
+			coref:	IDENT			1	0-0	Friedlander 
+			name:	PERSON				0-0	Friedlander 
+	1	studied
+			sense:	study.v.02
+			prop:	study.01
+			V		1-1	studied 
+			N-ARG-A0		0-0	Friedlander 
+			N-ARGM-LOC		2-27	at the Art Students League in New York City , the Ecole des Beaux Arts in Brussels and Paris , and the American Academy in Rome 
+	2	at
+	3	the
+	4	Art
+			name:	MISC				4-6	Art Students League 
+	5	Students
+	6	League
+	7	in
+	8	New
+			name:	CITY				8-10	New York City 
+	9	York
+	10	City
+	11	,
+	12	the
+	13	Ecole
+			name:	ORGANIZATION				13-16	Ecole des Beaux Arts 
+	14	des
+	15	Beaux
+	16	Arts
+	17	in
+	18	Brussels
+			name:	CITY				18-18	Brussels 
+	19	and
+	20	Paris
+			name:	CITY				20-20	Paris 
+	21	,
+	22	and
+			coref:	IDENT			0	22-27	and the American Academy in Rome 
+	23	the
+	24	American
+			name:	ORGANIZATION				24-25	American Academy 
+	25	Academy
+	26	in
+	27	Rome
+			name:	CITY				27-27	Rome 
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was an assistant to the sculptor Paul Manship and taught at the American Academy in Rome and at New York University , where he headed the sculpture department .
+
+
+Treebanked sentence:
+--------------------
+He was an assistant to the sculptor Paul Manship and taught at the American Academy in Rome and at New York University , where he headed the sculpture department . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (NP (DT an) (NN assistant))
+        (PP (IN to)
+          (NP
+            (NP (DT the) (NN sculptor))
+            (NP (NNP Paul) (NNP Manship)))))
+      (CC and)
+      (VP (VBD taught)
+        (PP (IN at)
+          (NP (DT the) (NNP American) (NNP Academy)))
+        (PP
+          (PP (IN in)
+            (NP (NNP Rome)))
+          (CC and)
+          (PP (IN at)
+            (NP
+              (NP
+                (NML (NNP New) (NNP York))
+                (NNP University))
+              (, ,)
+              (SBAR
+                (WHADVP (WRB where))
+                (S
+                  (NP (PRP he))
+                  (VP (VBD headed)
+                    (NP (DT the) (NN sculpture) (NN department))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-8	an assistant to the sculptor Paul Manship 
+	2	an
+	3	assistant
+			name:	TITLE				3-3	assistant 
+			sense:	assistant.n.01
+	4	to
+	5	the
+	6	sculptor
+			name:	TITLE				6-6	sculptor 
+			sense:	sculptor.n.01
+	7	Paul
+			name:	PERSON				7-8	Paul Manship 
+	8	Manship
+	9	and
+	10	taught
+			sense:	teach.v.01
+			prop:	teach.01
+			V		10-10	taught 
+			N-ARG-A0		0-0	He 
+			N-ARGM-LOC		11-28	at the American Academy in Rome and at New York University , where he headed the sculpture department 
+	11	at
+	12	the
+			coref:	IDENT			0	12-14	the American Academy 
+	13	American
+			name:	ORGANIZATION				13-14	American Academy 
+	14	Academy
+	15	in
+	16	Rome
+			name:	CITY				16-16	Rome 
+	17	and
+	18	at
+	19	New
+			name:	ORGANIZATION				19-21	New York University 
+	20	York
+	21	University
+	22	,
+	23	where
+	24	he
+			coref:	IDENT			1	24-24	he 
+	25	headed
+			sense:	head.v.02
+			prop:	head.01
+			V		25-25	headed 
+			N-ARGM-LOC		19-21	New York University 
+			R-ARGM-LOC		23-23	where 
+			N-ARG-A0		24-24	he 
+			N-ARG-A1		26-28	the sculpture department 
+	26	the
+	27	sculpture
+			sense:	sculpture.n.02
+	28	department
+			sense:	department.n.01
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was also president of the National Sculpture Society .
+
+
+Treebanked sentence:
+--------------------
+He was also president of the National Sculpture Society . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (ADVP (RB also))
+      (NP
+        (NP (NN president))
+        (PP (IN of)
+          (NP (DT the) (NNP National) (NNP Sculpture) (NNP Society)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARGM-ADV		2-2	also 
+			N-ARG-A2		3-8	president of the National Sculpture Society 
+	2	also
+			sense:	besides.r.02
+	3	president
+			name:	TITLE				3-3	president 
+			sense:	president.n.04
+	4	of
+	5	the
+	6	National
+			name:	ORGANIZATION				6-8	National Sculpture Society 
+	7	Sculpture
+	8	Society
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1936 , he was elected into the National Academy of Design as an Associate member , and became a full Academician in 1949 .
+
+
+Treebanked sentence:
+--------------------
+In 1936 , he was elected into the National Academy of Design as an Associate member , and became a full Academician in 1949 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1936)))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD was)
+        (VP (VBN elected)
+          (PP (IN into)
+            (NP
+              (NP (DT the) (NNP National) (NNP Academy))
+              (PP (IN of)
+                (NP (NNP Design)))))
+          (PP (IN as)
+            (NP (DT an)
+              (NML (NN Associate) (NN member))))))
+      (, ,)
+      (CC and)
+      (VP (VBD became)
+        (NP (DT a) (JJ full) (NN Academician))
+        (PP (IN in)
+          (NP (CD 1949)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1936
+			name:	DATE				1-1	1936 
+	2	,
+	3	he
+			coref:	IDENT			1	3-3	he 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		5-5	elected 
+			N-ARGM-TMP		0-1	In 1936 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		6-11	into the National Academy of Design 
+			N-ARGM-PRD		12-15	as an Associate member 
+	6	into
+	7	the
+	8	National
+			name:	ORGANIZATION				8-11	National Academy of Design 
+	9	Academy
+	10	of
+	11	Design
+	12	as
+	13	an
+	14	Associate
+			sense:	associate.n.03
+	15	member
+			sense:	member.n.01
+	16	,
+	17	and
+	18	became
+			sense:	become.v.02
+			prop:	become.01
+			V		18-18	became 
+			N-ARGM-TMP		0-1	In 1936 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		19-21	a full Academician 
+			N-ARGM-TMP		22-23	in 1949 
+	19	a
+	20	full
+			sense:	entire.s.01
+	21	Academician
+			name:	MISC				21-21	Academician 
+			sense:	academician.n.01
+	22	in
+	23	1949
+			name:	DATE				23-23	1949 
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Friedlander was married to Rhoda Lichter and had two children .
+
+
+Treebanked sentence:
+--------------------
+Friedlander was married to Rhoda Lichter and had two children . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Friedlander))
+    (VP
+      (VP (VBD was)
+        (VP (VBN married)
+          (PP (IN to)
+            (NP (NNP Rhoda) (NNP Lichter)))))
+      (CC and)
+      (VP (VBD had)
+        (NP (CD two) (NNS children))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Friedlander
+			coref:	IDENT			1	0-0	Friedlander 
+			name:	PERSON				0-0	Friedlander 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	Friedlander 
+			N-ARG-A2		2-5	married to Rhoda Lichter 
+	2	married
+			sense:	marry.v.01
+			prop:	arrive.01
+			V		2-2	married 
+			N-ARG-A1		0-0	Friedlander 
+			N-ARG-A2		3-5	to Rhoda Lichter 
+	3	to
+	4	Rhoda
+			name:	PERSON				4-5	Rhoda Lichter 
+	5	Lichter
+	6	and
+	7	had
+			sense:	have.v.01
+			prop:	have.03
+			V		7-7	had 
+			N-ARG-A0		0-0	Friedlander 
+			N-ARG-A1		8-9	two children 
+	8	two
+			name:	NUMBER				8-8	two 
+	9	children
+			sense:	child.n.02
+	10	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.22-27	and the American Academy in Rome 
+				2.12-14	the American Academy 
+	Chain 1 (IDENT)
+				0.0-1	Leo Friedlander 
+				1.0-0	Friedlander 
+				2.0-0	He 
+				2.24-24	he 
+				3.0-0	He 
+				4.3-3	he 
+				5.0-0	Friedlander 
+

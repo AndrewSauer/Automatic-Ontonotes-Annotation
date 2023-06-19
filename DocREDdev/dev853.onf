@@ -1,0 +1,602 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Hélé Béji (; born 1948 ) is a Tunisian writer .
+
+
+Treebanked sentence:
+--------------------
+Hélé Béji ( ; born 1948 ) is a Tunisian writer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Hélé) (NNP Béji))
+      (PRN (-LRB- -LRB-) (: ;)
+        (NP (VBN born)
+          (NML (CD 1948)))
+        (-RRB- -RRB-)))
+    (VP (VBZ is)
+      (NP (DT a) (JJ Tunisian) (NN writer)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Hélé
+			name:	PERSON				0-1	Hélé Béji 
+	1	Béji
+	2	(
+	3	;
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-1	Hélé Béji 
+			N-ARGM-TMP		5-5	1948 
+	5	1948
+			name:	DATE				5-5	1948 
+	6	)
+	7	is
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		0-6	Hélé Béji ( ; born 1948 ) 
+			N-ARG-A2		8-10	a Tunisian writer 
+	8	a
+	9	Tunisian
+			name:	NATIONALITY				9-9	Tunisian 
+	10	writer
+			name:	TITLE				10-10	writer 
+			sense:	writer.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The daughter of Tunisian politician Mondher Ben Ammar , she was born in Tunis , passed her Agrégation de lettres modernes and went on to teach literature at the University of Tunis .
+
+
+Treebanked sentence:
+--------------------
+The daughter of Tunisian politician Mondher Ben Ammar , she was born in Tunis , passed her Agrégation de lettres modernes and went on to teach literature at the University of Tunis . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN daughter))
+      (PP (IN of)
+        (NP
+          (NP (JJ Tunisian) (NN politician))
+          (NP (NNP Mondher) (NNP Ben) (NNP Ammar)))))
+    (PRN (, ,)
+      (S
+        (NP (PRP she))
+        (VP (VBD was)
+          (VP (VBN born)
+            (PP (IN in)
+              (NP (NNP Tunis))))))
+      (, ,))
+    (VP (VBD passed)
+      (SBAR
+        (S
+          (NP (PRP$ her) (NNP Agrégation) (NNP de))
+          (VP
+            (VP (VBZ lettres)
+              (NP (NNS modernes)))
+            (CC and)
+            (VP (VBD went)
+              (PP (IN on))
+              (S
+                (VP (TO to)
+                  (VP (VB teach)
+                    (NP (NN literature))
+                    (PP (IN at)
+                      (NP
+                        (NP (DT the) (NNP University))
+                        (PP (IN of)
+                          (NP (NNP Tunis)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	daughter
+			sense:	daughter.n.01
+	2	of
+	3	Tunisian
+			name:	NATIONALITY				3-3	Tunisian 
+	4	politician
+			name:	TITLE				4-4	politician 
+			sense:	politician.n.02
+	5	Mondher
+			name:	PERSON				5-7	Mondher Ben Ammar 
+	6	Ben
+	7	Ammar
+	8	,
+	9	she
+	10	was
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	was 
+	11	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		11-11	born 
+			N-ARGM-PRD		0-7	The daughter of Tunisian politician Mondher Ben Ammar 
+			N-ARG-A1		9-9	she 
+			N-ARGM-LOC		12-13	in Tunis 
+	12	in
+	13	Tunis
+			coref:	IDENT			0	13-13	Tunis 
+			name:	CITY				13-13	Tunis 
+	14	,
+	15	passed
+			sense:	pass.v.14
+			prop:	pass.07
+			V		15-15	passed 
+			N-ARGM-PRD		0-7	The daughter of Tunisian politician Mondher Ben Ammar 
+			N-ARG-A1		9-9	she 
+			N-ARG-A2		16-20	her Agrégation de lettres modernes 
+	16	her
+	17	Agrégation
+	18	de
+	19	lettres
+			prop:	lecture.01
+			V		19-19	lettres 
+			N-ARGM-ADJ		20-20	modernes 
+	20	modernes
+	21	and
+	22	went
+			sense:	proceed.v.04
+			prop:	go.15
+			V		22-22	went 
+			N-ARGM-PRD		0-7	The daughter of Tunisian politician Mondher Ben Ammar 
+			N-ARG-A1		24-31	to teach literature at the University of Tunis 
+	23	on
+	24	to
+	25	teach
+			sense:	teach.v.01
+			prop:	teach.01
+			V		25-25	teach 
+			N-ARG-A0		9-9	she 
+			N-ARG-A1		26-26	literature 
+			N-ARGM-LOC		27-31	at the University of Tunis 
+	26	literature
+			sense:	literature.n.02
+	27	at
+	28	the
+	29	University
+			name:	ORGANIZATION				29-31	University of Tunis 
+	30	of
+	31	Tunis
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She later joined UNESCO in Paris .
+
+
+Treebanked sentence:
+--------------------
+She later joined UNESCO in Paris . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (ADVP (RB later))
+    (VP (VBD joined)
+      (NP (NNP UNESCO))
+      (PP (IN in)
+        (NP (NNP Paris))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	later
+			sense:	subsequently.r.01
+	2	joined
+			sense:	join.v.01
+			prop:	join.01
+			V		2-2	joined 
+			N-ARG-A0		0-0	She 
+			N-ARGM-TMP		1-1	later 
+			N-ARG-A1		3-3	UNESCO 
+			N-ARGM-LOC		4-5	in Paris 
+	3	UNESCO
+			name:	ORGANIZATION				3-3	UNESCO 
+	4	in
+	5	Paris
+			name:	CITY				5-5	Paris 
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1998 , she founded the Collège international de Tunis .
+
+
+Treebanked sentence:
+--------------------
+In 1998 , she founded the Collège international de Tunis . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1998)))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBD founded)
+      (NP
+        (NP (DT the) (NNP Collège) (JJ international))
+        (PP (IN de)
+          (NP (NNP Tunis)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1998
+			name:	DATE				1-1	1998 
+	2	,
+	3	she
+	4	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		4-4	founded 
+			N-ARGM-TMP		0-1	In 1998 
+			N-ARG-A0		3-3	she 
+			N-ARG-A1		5-9	the Collège international de Tunis 
+	5	the
+	6	Collège
+	7	international
+			sense:	international.a.01
+	8	de
+	9	Tunis
+			coref:	IDENT			0	9-9	Tunis 
+			name:	CITY				9-9	Tunis 
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She has expressed a great admiration for the author Marcel Proust and his influence can be seen in her fiction .
+
+
+Treebanked sentence:
+--------------------
+She has expressed a great admiration for the author Marcel Proust and his influence can be seen in her fiction . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP She))
+      (VP (VBZ has)
+        (VP (VBN expressed)
+          (NP (DT a) (JJ great) (NN admiration))
+          (PP (IN for)
+            (NP
+              (NP (DT the) (NN author))
+              (NP (NNP Marcel) (NNP Proust)))))))
+    (CC and)
+    (S
+      (NP (PRP$ his) (NN influence))
+      (VP (MD can)
+        (VP (VB be)
+          (VP (VBN seen)
+            (PP (IN in)
+              (NP (PRP$ her) (NN fiction)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	expressed
+			sense:	express.v.01
+			prop:	express.01
+			V		2-2	expressed 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		3-10	a great admiration for the author Marcel Proust 
+	3	a
+	4	great
+			sense:	great.s.01
+	5	admiration
+			sense:	admiration.n.01
+	6	for
+	7	the
+	8	author
+			name:	TITLE				8-8	author 
+			sense:	writer.n.01
+	9	Marcel
+			coref:	IDENT			1	9-10	Marcel Proust 
+			name:	PERSON				9-10	Marcel Proust 
+	10	Proust
+	11	and
+	12	his
+			coref:	IDENT			1	12-12	his 
+	13	influence
+			sense:	influence.n.03
+	14	can
+	15	be
+			sense:	be.v.01
+			prop:	be.03
+			V		15-15	be 
+	16	seen
+			sense:	witness.v.02
+			prop:	see.01
+			V		16-16	seen 
+			N-ARG-A1		12-13	his influence 
+			N-ARGM-MOD		14-14	can 
+			N-ARGM-LOC		17-19	in her fiction 
+	17	in
+	18	her
+	19	fiction
+			sense:	fiction.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1983 , she received the Prix de l’Afrique méditerranéenne awarded by the Association des écrivains de langue française .
+
+
+Treebanked sentence:
+--------------------
+In 1983 , she received the Prix de l’Afrique méditerranéenne awarded by the Association des écrivains de langue française . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1983)))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBD received)
+      (NP
+        (NP (DT the)
+          (NML (NNP Prix) (NNP de) (NNP l’Afrique))
+          (NN méditerranéenne))
+        (VP (VBN awarded)
+          (PP (IN by)
+            (NP (DT the) (NNP Association)))
+          (PP
+            (NP (FW des) (FW écrivains) (FW de) (FW langue) (FW française))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1983
+			name:	DATE				1-1	1983 
+	2	,
+	3	she
+	4	received
+			sense:	receive.v.01
+			prop:	receive.01
+			V		4-4	received 
+			N-ARGM-TMP		0-1	In 1983 
+			N-ARG-A0		3-3	she 
+			N-ARG-A1		5-18	the Prix de l’Afrique méditerranéenne awarded by the Association des écrivains de langue française 
+	5	the
+	6	Prix
+			name:	MISC				6-8	Prix de l’Afrique 
+	7	de
+	8	l’Afrique
+	9	méditerranéenne
+	10	awarded
+			sense:	award.v.01
+			prop:	award.01
+			V		10-10	awarded 
+			N-ARG-A1		5-9	the Prix de l’Afrique méditerranéenne 
+			N-ARG-A0		11-18	by the Association des écrivains de langue française 
+	11	by
+	12	the
+	13	Association
+			name:	ORGANIZATION				13-13	Association 
+	14	des
+	15	écrivains
+	16	de
+	17	langue
+	18	française
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She has contributed to the magazines Le Débat and Esprit .
+
+
+Treebanked sentence:
+--------------------
+She has contributed to the magazines Le Débat and Esprit . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ has)
+      (VP (VBN contributed)
+        (PP (IN to)
+          (NP
+            (NP (DT the) (NNS magazines))
+            (NP (NNP Le) (NNP Débat)
+              (CC and)
+              (NNP Esprit))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	contributed
+			sense:	contribute.v.02
+			prop:	contribute.01
+			V		2-2	contributed 
+			N-ARG-A0		0-0	She 
+			N-ARG-A2		3-9	to the magazines Le Débat and Esprit 
+	3	to
+	4	the
+	5	magazines
+			sense:	magazine.n.01
+	6	Le
+			name:	PERSON				6-7	Le Débat 
+	7	Débat
+	8	and
+	9	Esprit
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She is the sister of movie producer Tarak Ben Ammar .
+
+
+Treebanked sentence:
+--------------------
+She is the sister of movie producer Tarak Ben Ammar . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN sister))
+        (PP (IN of)
+          (NP
+            (NML (NN movie) (NN producer))
+            (NNP Tarak) (NNP Ben) (NNP Ammar)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-9	the sister of movie producer Tarak Ben Ammar 
+	2	the
+	3	sister
+			sense:	sister.n.01
+	4	of
+	5	movie
+			sense:	movie.n.01
+	6	producer
+			name:	TITLE				6-6	producer 
+			sense:	producer.n.02
+	7	Tarak
+			name:	PERSON				7-9	Tarak Ben Ammar 
+	8	Ben
+	9	Ammar
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Her niece Yasmine Torjeman - Besson married French politician Éric Besson .
+
+
+Treebanked sentence:
+--------------------
+Her niece Yasmine Torjeman - Besson married French politician Éric Besson . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Her) (NN niece))
+      (NP (NNP Yasmine) (NNP Torjeman) (HYPH -) (NNP Besson)))
+    (VP (VBD married)
+      (NP
+        (NML (JJ French) (NN politician))
+        (NNP Éric) (NNP Besson)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Her
+	1	niece
+			sense:	niece.n.01
+	2	Yasmine
+			name:	PERSON				2-5	Yasmine Torjeman - Besson 
+	3	Torjeman
+	4	-
+	5	Besson
+	6	married
+			sense:	marry.v.01
+			prop:	marry.01
+			V		6-6	married 
+			N-ARG-A1		0-5	Her niece Yasmine Torjeman - Besson 
+			N-ARG-A2		7-10	French politician Éric Besson 
+	7	French
+			name:	NATIONALITY				7-7	French 
+	8	politician
+			name:	TITLE				8-8	politician 
+			sense:	politician.n.02
+	9	Éric
+			name:	PERSON				9-10	Éric Besson 
+	10	Besson
+	11	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.13-13	Tunis 
+				3.9-9	Tunis 
+	Chain 1 (IDENT)
+				4.9-10	Marcel Proust 
+				4.12-12	his 
+

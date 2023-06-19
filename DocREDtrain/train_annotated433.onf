@@ -1,0 +1,605 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+František Koláček ( 9 October 1851 , Slavkov u Brna , Moravia – 8 December 1913 , Prague ) was Czech physicist .
+
+
+Treebanked sentence:
+--------------------
+František Koláček ( 9 October 1851 , Slavkov u Brna , Moravia – 8 December 1913 , Prague ) was Czech physicist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP František) (NNP Koláček))
+      (-LRB- -LRB-)
+      (NP (CD 9) (NNP October) (CD 1851))
+      (, ,)
+      (NP
+        (NP (NNP Slavkov) (PRP u))
+        (NP (NNP Brna)))
+      (, ,)
+      (NP
+        (NP (NNP Moravia))
+        (PP (SYM –)
+          (NP (CD 8)))
+        (NP-TMP (NNP December) (CD 1913)))
+      (, ,)
+      (NP (NNP Prague))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (JJ Czech) (NN physicist)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	František
+			name:	PERSON				0-1	František Koláček 
+	1	Koláček
+	2	(
+	3	9
+			name:	DATE				3-5	9 October 1851 
+	4	October
+	5	1851
+	6	,
+	7	Slavkov
+			name:	CITY				7-9	Slavkov u Brna 
+	8	u
+	9	Brna
+	10	,
+	11	Moravia
+			name:	LOCATION				11-11	Moravia 
+	12	–
+	13	8
+			name:	DATE				13-15	8 December 1913 
+	14	December
+	15	1913
+	16	,
+	17	Prague
+			coref:	IDENT			1	17-17	Prague 
+			name:	CITY				17-17	Prague 
+	18	)
+	19	was
+			sense:	be.v.02
+			prop:	be.01
+			V		19-19	was 
+			N-ARG-A1		0-18	František Koláček ( 9 October 1851 , Slavkov u Brna , Moravia – 8 December 1913 , Prague ) 
+			N-ARG-A2		20-21	Czech physicist 
+	20	Czech
+			name:	NATIONALITY				20-20	Czech 
+	21	physicist
+			name:	TITLE				21-21	physicist 
+			sense:	physicist.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Koláček studied at German gymnasium in Brno ( finished in 1868 ) , then at technical universities in Prague and Vienna .
+
+
+Treebanked sentence:
+--------------------
+Koláček studied at German gymnasium in Brno ( finished in 1868 ) , then at technical universities in Prague and Vienna . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Koláček))
+    (VP (VBD studied)
+      (PP (IN at)
+        (NP (JJ German) (NN gymnasium)))
+      (PP (IN in)
+        (NP (NNP Brno)))
+      (PRN (-LRB- -LRB-)
+        (S
+          (VP (VBN finished)
+            (PP (IN in)
+              (NP (CD 1868)))))
+        (-RRB- -RRB-))
+      (, ,)
+      (PP
+        (ADVP (RB then))
+        (IN at)
+        (NP
+          (NP (JJ technical) (NNS universities))
+          (PP (IN in)
+            (NP (NNP Prague)
+              (CC and)
+              (NNP Vienna))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Koláček
+			name:	PERSON				0-0	Koláček 
+	1	studied
+			sense:	study.v.02
+			prop:	study.01
+			V		1-1	studied 
+			N-ARG-A0		0-0	Koláček 
+			N-ARGM-LOC		2-20	at German gymnasium in Brno ( finished in 1868 ) , then at technical universities in Prague and Vienna 
+	2	at
+	3	German
+			name:	NATIONALITY				3-3	German 
+	4	gymnasium
+			sense:	secondary_school.n.01
+	5	in
+	6	Brno
+			coref:	IDENT			0	6-6	Brno 
+			name:	CITY				6-6	Brno 
+	7	(
+	8	finished
+			sense:	end.v.01
+			prop:	finish.01
+			V		8-8	finished 
+			N-ARGM-TMP		9-10	in 1868 
+	9	in
+	10	1868
+			name:	DATE				10-10	1868 
+	11	)
+	12	,
+	13	then
+			sense:	then.r.01
+	14	at
+	15	technical
+			sense:	technical.a.03
+	16	universities
+			sense:	university.n.02
+	17	in
+	18	Prague
+			name:	CITY				18-18	Prague 
+	19	and
+	20	Vienna
+			name:	CITY				20-20	Vienna 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the Charles University in Prague , under guidance of Ernst Mach , he obtained doctoral decree in 1877 .
+
+
+Treebanked sentence:
+--------------------
+At the Charles University in Prague , under guidance of Ernst Mach , he obtained doctoral decree in 1877 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (DT the) (NNP Charles) (NNP University))
+        (PP (IN in)
+          (NP (NNP Prague)))))
+    (, ,)
+    (PP (IN under)
+      (NP
+        (NP (NN guidance))
+        (PP (IN of)
+          (NP (NNP Ernst) (NNP Mach)))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD obtained)
+      (NP (JJ doctoral) (NN decree))
+      (PP (IN in)
+        (NP (CD 1877))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+	2	Charles
+			name:	ORGANIZATION				2-3	Charles University 
+	3	University
+	4	in
+	5	Prague
+			coref:	IDENT			1	5-5	Prague 
+			name:	CITY				5-5	Prague 
+	6	,
+	7	under
+	8	guidance
+			sense:	guidance.n.01
+	9	of
+	10	Ernst
+			name:	ORGANIZATION				10-11	Ernst Mach 
+	11	Mach
+	12	,
+	13	he
+	14	obtained
+			sense:	obtain.v.01
+			prop:	obtain.01
+			V		14-14	obtained 
+			N-ARGM-LOC		0-5	At the Charles University in Prague 
+			N-ARGM-MNR		7-11	under guidance of Ernst Mach 
+			N-ARG-A0		13-13	he 
+			N-ARG-A1		15-16	doctoral decree 
+			N-ARGM-TMP		17-18	in 1877 
+	15	doctoral
+			sense:	doctoral.a.01
+	16	decree
+			sense:	decree.n.01
+	17	in
+	18	1877
+			name:	DATE				18-18	1877 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Worked as teacher at gymnasium in Brno ( 1 year ) and then in Prague ( 18 years ) .
+
+
+Treebanked sentence:
+--------------------
+Worked as teacher at gymnasium in Brno ( 1 year ) and then in Prague ( 18 years ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (VP
+      (VP (VBD Worked)
+        (PP (IN as)
+          (NP (NN teacher)))
+        (PP (IN at)
+          (NP
+            (NP (NN gymnasium))
+            (PP (IN in)
+              (NP (NNP Brno)))))
+        (NP-TMP (-LRB- -LRB-) (CD 1) (NN year) (-RRB- -RRB-)))
+      (CC and)
+      (VP
+        (ADVP (RB then))
+        (PP (IN in)
+          (NP (NNP Prague))))
+      (PRN (-LRB- -LRB-)
+        (NP (CD 18) (NNS years))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Worked
+			sense:	work.v.02
+			prop:	work.01
+			V		0-0	Worked 
+			N-ARG-A1		1-2	as teacher 
+			N-ARGM-LOC		3-18	at gymnasium in Brno ( 1 year ) and then in Prague ( 18 years ) 
+	1	as
+	2	teacher
+			name:	TITLE				2-2	teacher 
+			sense:	teacher.n.01
+	3	at
+	4	gymnasium
+			sense:	secondary_school.n.01
+	5	in
+	6	Brno
+			coref:	IDENT			0	6-6	Brno 
+			name:	CITY				6-6	Brno 
+	7	(
+	8	1
+			name:	DURATION				8-9	1 year 
+	9	year
+			sense:	year.n.01
+	10	)
+	11	and
+	12	then
+			sense:	then.r.01
+	13	in
+	14	Prague
+			coref:	IDENT			1	14-14	Prague 
+			name:	CITY				14-14	Prague 
+	15	(
+	16	18
+			name:	DURATION				16-17	18 years 
+	17	years
+			sense:	year.n.01
+	18	)
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Only in 1891 he was named professor of mathematical physics at Charles university .
+
+
+Treebanked sentence:
+--------------------
+Only in 1891 he was named professor of mathematical physics at Charles university . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Only)
+      (PP (IN in)
+        (NP (CD 1891))))
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN named)
+        (NP
+          (NP (NN professor))
+          (PP (IN of)
+            (NP (JJ mathematical) (NN physics))))
+        (PP (IN at)
+          (NP (NNP Charles) (NN university)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Only
+			sense:	merely.r.01
+	1	in
+	2	1891
+			name:	DATE				2-2	1891 
+	3	he
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	named
+			sense:	name.v.03
+			prop:	name.01
+			V		5-5	named 
+			N-ARGM-TMP		0-2	Only in 1891 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		6-12	professor of mathematical physics at Charles university 
+	6	professor
+			name:	TITLE				6-6	professor 
+			sense:	professor.n.01
+	7	of
+	8	mathematical
+			sense:	mathematical.a.01
+	9	physics
+			sense:	physics.n.01
+	10	at
+	11	Charles
+			name:	PERSON				11-11	Charles 
+	12	university
+			sense:	university.n.02
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+During 1900 - 1902 worked as professor at university in Brno but then returned to Prague .
+
+
+Treebanked sentence:
+--------------------
+During 1900 - 1902 worked as professor at university in Brno but then returned to Prague . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN During)
+      (NP (CD 1900) (HYPH -) (CD 1902)))
+    (VP
+      (VP (VBD worked)
+        (PP (IN as)
+          (NP (NN professor)))
+        (PP (IN at)
+          (NP
+            (NP (NN university))
+            (PP (IN in)
+              (NP (NNP Brno))))))
+      (CC but)
+      (ADVP (RB then))
+      (VP (VBD returned)
+        (PP (IN to)
+          (NP (NNP Prague)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	During
+	1	1900
+			name:	DATE				1-1	1900 
+	2	-
+			name:	DURATION				2-2	- 
+	3	1902
+			name:	DATE				3-3	1902 
+	4	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		4-4	worked 
+			N-ARGM-TMP		0-3	During 1900 - 1902 
+			N-ARG-A1		5-6	as professor 
+			N-ARGM-LOC		7-8	at university 
+			N-ARGM-LOC		9-10	in Brno 
+	5	as
+	6	professor
+			name:	TITLE				6-6	professor 
+			sense:	professor.n.01
+	7	at
+	8	university
+			sense:	university.n.02
+	9	in
+	10	Brno
+			coref:	IDENT			0	10-10	Brno 
+			name:	CITY				10-10	Brno 
+	11	but
+	12	then
+			sense:	then.r.01
+	13	returned
+			sense:	return.v.01
+			prop:	return.01
+			V		13-13	returned 
+			N-ARGM-TMP		0-3	During 1900 - 1902 
+			N-ARGM-TMP		12-12	then 
+			N-ARG-A4		14-15	to Prague 
+	14	to
+	15	Prague
+			coref:	IDENT			1	15-15	Prague 
+			name:	CITY				15-15	Prague 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Koláček worked in fields of hydrodynamics , thermodynamics , optics and electromagnetic theory of light .
+
+
+Treebanked sentence:
+--------------------
+Koláček worked in fields of hydrodynamics , thermodynamics , optics and electromagnetic theory of light . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Koláček))
+    (VP (VBD worked)
+      (PP (IN in)
+        (NP
+          (NP (NNS fields))
+          (PP (IN of)
+            (NP
+              (NP (NNS hydrodynamics))
+              (, ,)
+              (NP (NNS thermodynamics))
+              (, ,)
+              (NP (NNS optics))
+              (CC and)
+              (NP
+                (NP (JJ electromagnetic) (NN theory))
+                (PP (IN of)
+                  (NP (NN light)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Koláček
+			name:	PERSON				0-0	Koláček 
+	1	worked
+			sense:	work.v.08
+			prop:	work.01
+			V		1-1	worked 
+			N-ARG-A0		0-0	Koláček 
+			N-ARGM-LOC		2-14	in fields of hydrodynamics , thermodynamics , optics and electromagnetic theory of light 
+	2	in
+	3	fields
+			sense:	discipline.n.01
+	4	of
+	5	hydrodynamics
+	6	,
+	7	thermodynamics
+			sense:	thermodynamics.n.01
+	8	,
+	9	optics
+			sense:	optics.n.01
+	10	and
+	11	electromagnetic
+			sense:	electromagnetic.a.01
+	12	theory
+			sense:	theory.n.01
+	13	of
+	14	light
+			sense:	light.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was the first one to describe electromagnetic theory of light dispersion .
+
+
+Treebanked sentence:
+--------------------
+He was the first one to describe electromagnetic theory of light dispersion . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (JJ first) (CD one))
+        (S
+          (VP (TO to)
+            (VP (VB describe)
+              (NP
+                (NP (JJ electromagnetic) (NN theory))
+                (PP (IN of)
+                  (NP (NN light) (NN dispersion)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-11	the first one to describe electromagnetic theory of light dispersion 
+	2	the
+	3	first
+			name:	ORDINAL				3-3	first 
+			sense:	first.a.01
+	4	one
+			name:	NUMBER				4-4	one 
+	5	to
+	6	describe
+			sense:	report.v.01
+			prop:	describe.01
+			V		6-6	describe 
+			N-ARG-A0		2-4	the first one 
+			N-ARG-A1		7-11	electromagnetic theory of light dispersion 
+	7	electromagnetic
+			sense:	electromagnetic.a.01
+	8	theory
+			sense:	theory.n.01
+	9	of
+	10	light
+			sense:	light.n.01
+	11	dispersion
+			sense:	distribution.n.02
+	12	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.6-6	Brno 
+				3.6-6	Brno 
+				5.10-10	Brno 
+	Chain 1 (IDENT)
+				0.17-17	Prague 
+				2.5-5	Prague 
+				3.14-14	Prague 
+				5.15-15	Prague 
+

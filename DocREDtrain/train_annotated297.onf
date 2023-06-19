@@ -1,0 +1,676 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sino Group ( ) is a property company in Hong Kong .
+
+
+Treebanked sentence:
+--------------------
+Sino Group ( ) is a property company in Hong Kong . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (ADJP (JJ Sino))
+      (NNP Group) (-LRB- -LRB-))
+    (-RRB- -RRB-)
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN property) (NN company))
+        (PP (IN in)
+          (NP (NNP Hong) (NNP Kong)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sino
+			coref:	IDENT			1	0-1	Sino Group 
+			name:	ORGANIZATION				0-1	Sino Group 
+	1	Group
+	2	(
+	3	)
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	Sino Group ( ) 
+			N-ARG-A2		5-10	a property company in Hong Kong 
+	5	a
+	6	property
+			sense:	property.n.01
+	7	company
+			sense:	company.n.01
+	8	in
+	9	Hong
+			name:	CITY				9-10	Hong Kong 
+	10	Kong
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Group comprises private holding companies owned by the Ng Family , and three publicly listed companies that include Tsim Sha Tsui Properties Limited , Sino Land Company Limited , and Sino Hotels ( Holdings ) Limited .
+
+
+Treebanked sentence:
+--------------------
+The Group comprises private holding companies owned by the Ng Family , and three publicly listed companies that include Tsim Sha Tsui Properties Limited , Sino Land Company Limited , and Sino Hotels ( Holdings ) Limited . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Group))
+    (VP (VBZ comprises)
+      (NP
+        (NP
+          (NP (JJ private) (VBG holding) (NNS companies))
+          (VP (VBN owned)
+            (PP (IN by)
+              (NP (DT the) (NNP Ng) (NNP Family)))))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (CD three)
+            (ADJP (RB publicly) (VBN listed))
+            (NNS companies))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP include)
+                (NP
+                  (NP (NNP Tsim) (NNP Sha) (NNP Tsui) (NNP Properties) (NNP Limited))
+                  (, ,)
+                  (NP
+                    (NML (NNP Sino) (NNP Land))
+                    (NNP Company) (NNP Limited))
+                  (, ,)
+                  (CC and)
+                  (NP
+                    (NP
+                      (NP
+                        (ADJP (JJ Sino))
+                        (NNS Hotels))
+                      (-LRB- -LRB-)
+                      (NP (NNS Holdings))
+                      (-RRB- -RRB-))
+                    (NP (NNP Limited))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The Group 
+	1	Group
+			name:	ORGANIZATION				1-1	Group 
+	2	comprises
+			sense:	consist.v.04
+			prop:	comprise.01
+			V		2-2	comprises 
+			N-ARG-A1		0-1	The Group 
+			N-ARG-A2		3-36	private holding companies owned by the Ng Family , and three publicly listed companies that include Tsim Sha Tsui Properties Limited , Sino Land Company Limited , and Sino Hotels ( Holdings ) Limited 
+	3	private
+			sense:	private.a.01
+	4	holding
+			sense:	have.v.01
+			prop:	hold.01
+			V		4-4	holding 
+			N-ARGM-MNR		3-3	private 
+			N-ARG-A0		5-5	companies 
+	5	companies
+			sense:	company.n.01
+	6	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		6-6	owned 
+			N-ARG-A1		3-5	private holding companies 
+			N-ARG-A0		7-10	by the Ng Family 
+	7	by
+	8	the
+	9	Ng
+			name:	ORGANIZATION				9-10	Ng Family 
+	10	Family
+	11	,
+	12	and
+	13	three
+			name:	NUMBER				13-13	three 
+	14	publicly
+			sense:	publicly.r.01
+	15	listed
+			sense:	list.v.02
+			prop:	list.01
+			V		15-15	listed 
+			N-ARGM-MNR		14-14	publicly 
+			N-ARG-A1		16-16	companies 
+	16	companies
+			sense:	company.n.01
+	17	that
+	18	include
+			sense:	include.v.01
+			prop:	include.01
+			V		18-18	include 
+			N-ARG-A2		13-16	three publicly listed companies 
+			R-ARG-A2		17-17	that 
+			N-ARG-A1		19-36	Tsim Sha Tsui Properties Limited , Sino Land Company Limited , and Sino Hotels ( Holdings ) Limited 
+	19	Tsim
+			name:	ORGANIZATION				19-23	Tsim Sha Tsui Properties Limited 
+	20	Sha
+	21	Tsui
+	22	Properties
+	23	Limited
+	24	,
+	25	Sino
+			name:	ORGANIZATION				25-28	Sino Land Company Limited 
+	26	Land
+	27	Company
+	28	Limited
+	29	,
+	30	and
+	31	Sino
+			name:	ORGANIZATION				31-32	Sino Hotels 
+	32	Hotels
+			sense:	hotel.n.01
+	33	(
+	34	Holdings
+			name:	ORGANIZATION				34-34	Holdings 
+			sense:	property.n.01
+	35	)
+	36	Limited
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sino Group 's core business is developing residential , office , industrial and retail properties for sale and investment purposes .
+
+
+Treebanked sentence:
+--------------------
+Sino Group 's core business is developing residential , office , industrial and retail properties for sale and investment purposes . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (ADJP (JJ Sino))
+    (S
+      (NP
+        (NP (NNP Group) (POS 's))
+        (NN core) (NN business))
+      (VP (VBZ is)
+        (VP (VBG developing)
+          (NP
+            (NP (JJ residential) (, ,)
+              (UCP (NN office) (, ,) (JJ industrial)
+                (CC and)
+                (JJ retail))
+              (NNS properties))
+            (PP (IN for)
+              (NP
+                (NML (NN sale)
+                  (CC and)
+                  (NN investment))
+                (NNS purposes)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sino
+			coref:	IDENT			1	0-2	Sino Group 's 
+			name:	ORGANIZATION				0-1	Sino Group 
+	1	Group
+			coref:	IDENT			0	1-4	Group 's core business 
+	2	's
+	3	core
+			sense:	kernel.n.03
+	4	business
+			sense:	occupation.n.01
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	Sino Group 's core business 
+			N-ARG-A2		6-19	developing residential , office , industrial and retail properties for sale and investment purposes 
+	6	developing
+			sense:	build_up.v.05
+			prop:	develop.02
+			V		6-6	developing 
+			N-ARG-A0		0-2	Sino Group 's 
+			N-ARG-A1		7-19	residential , office , industrial and retail properties for sale and investment purposes 
+	7	residential
+			sense:	residential.a.01
+	8	,
+	9	office
+			sense:	office.n.01
+	10	,
+	11	industrial
+			sense:	industrial.a.01
+	12	and
+	13	retail
+	14	properties
+			sense:	place.n.02
+	15	for
+	16	sale
+			sense:	sale.n.02
+	17	and
+	18	investment
+			sense:	investing.n.01
+	19	purposes
+			sense:	purpose.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It also invests in hotel development , as well as hotel and club management .
+
+
+Treebanked sentence:
+--------------------
+It also invests in hotel development , as well as hotel and club management . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB also))
+    (VP (VBZ invests)
+      (PP (IN in)
+        (NP
+          (NP (NN hotel) (NN development))
+          (, ,)
+          (CONJP (RB as) (RB well) (IN as))
+          (NP
+            (NML (NN hotel)
+              (CC and)
+              (NN club))
+            (NN management)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	also
+			sense:	besides.r.02
+	2	invests
+			sense:	invest.v.01
+			prop:	invest.01
+			V		2-2	invests 
+			N-ARG-A0		0-0	It 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A2		3-13	in hotel development , as well as hotel and club management 
+	3	in
+	4	hotel
+			sense:	hotel.n.01
+	5	development
+			sense:	development.n.06
+	6	,
+	7	as
+			sense:	equally.r.01
+	8	well
+			sense:	well.r.02
+	9	as
+	10	hotel
+			sense:	hotel.n.01
+	11	and
+	12	club
+			sense:	clubhouse.n.01
+	13	management
+			sense:	management.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The company has around 10,000 employees , with a significant presence in Singapore .
+
+
+Treebanked sentence:
+--------------------
+The company has around 10,000 employees , with a significant presence in Singapore . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN company))
+    (VP (VBZ has)
+      (NP
+        (NP
+          (QP (RB around) (CD 10,000))
+          (NNS employees))
+        (, ,)
+        (PP (IN with)
+          (NP
+            (NP (DT a) (JJ significant) (NN presence))
+            (PP (IN in)
+              (NP (NNP Singapore)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	company
+			sense:	company.n.01
+	2	has
+			sense:	have.v.01
+			prop:	have.03
+			V		2-2	has 
+			N-ARG-A0		0-1	The company 
+			N-ARG-A1		3-5	around 10,000 employees 
+			N-ARGM-ADV		7-12	with a significant presence in Singapore 
+	3	around
+			sense:	approximately.r.01
+	4	10,000
+			name:	NUMBER				4-4	10,000 
+	5	employees
+			sense:	employee.n.01
+	6	,
+	7	with
+	8	a
+	9	significant
+			sense:	significant.s.02
+	10	presence
+			sense:	presence.n.01
+	11	in
+	12	Singapore
+			coref:	IDENT			3	12-12	Singapore 
+			name:	COUNTRY				12-12	Singapore 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Its sister company , Far East Organization , is Singapore 's largest private property developer .
+
+
+Treebanked sentence:
+--------------------
+Its sister company , Far East Organization , is Singapore 's largest private property developer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Its) (NN sister) (NN company))
+      (, ,)
+      (NP (NNP Far) (NNP East) (NNP Organization))
+      (, ,))
+    (VP (VBZ is)
+      (NP
+        (NP (NNP Singapore) (POS 's))
+        (JJS largest)
+        (NML (JJ private) (NN property))
+        (NN developer)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Its
+	1	sister
+			sense:	sister.n.01
+	2	company
+			sense:	company.n.01
+	3	,
+	4	Far
+			name:	ORGANIZATION				4-6	Far East Organization 
+	5	East
+	6	Organization
+	7	,
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	Its sister company , Far East Organization , 
+			N-ARG-A2		9-14	Singapore 's largest private property developer 
+	9	Singapore
+			coref:	IDENT			3	9-10	Singapore 's 
+			name:	COUNTRY				9-9	Singapore 
+	10	's
+	11	largest
+			sense:	large.a.01
+	12	private
+			sense:	private.a.01
+	13	property
+			sense:	place.n.02
+	14	developer
+			name:	TITLE				14-14	developer 
+			sense:	developer.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+More than 700 properties are built by Far East in Singapore .
+
+
+Treebanked sentence:
+--------------------
+More than 700 properties are built by Far East in Singapore . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (QP (JJR More) (IN than) (CD 700))
+      (NNS properties))
+    (VP (VBP are)
+      (VP (VBN built)
+        (PP (IN by)
+          (NP
+            (NP (NNP Far) (NNP East))
+            (PP (IN in)
+              (NP (NNP Singapore)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	More
+			sense:	more.a.02
+	1	than
+	2	700
+			name:	NUMBER				2-2	700 
+	3	properties
+			sense:	place.n.02
+	4	are
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	are 
+	5	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		5-5	built 
+			N-ARG-A1		0-3	More than 700 properties 
+			N-ARG-A0		6-8	by Far East 
+			N-ARGM-LOC		9-10	in Singapore 
+	6	by
+	7	Far
+			name:	LOCATION				7-8	Far East 
+	8	East
+	9	in
+	10	Singapore
+			coref:	IDENT			3	10-10	Singapore 
+			name:	COUNTRY				10-10	Singapore 
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Yeo Hiap Seng , another sister company , specialises in the food and beverage business in Asia .
+
+
+Treebanked sentence:
+--------------------
+Yeo Hiap Seng , another sister company , specialises in the food and beverage business in Asia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Yeo) (NNP Hiap) (NNP Seng))
+      (, ,)
+      (NP (DT another) (NN sister) (NN company))
+      (, ,))
+    (VP (VBZ specialises)
+      (PP (IN in)
+        (NP
+          (NP (DT the)
+            (NML (NN food)
+              (CC and)
+              (NN beverage))
+            (NN business))
+          (PP (IN in)
+            (NP (NNP Asia))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Yeo
+			coref:	IDENT			2	0-6	Yeo Hiap Seng , another sister company 
+			name:	PERSON				0-2	Yeo Hiap Seng 
+	1	Hiap
+	2	Seng
+	3	,
+	4	another
+	5	sister
+			sense:	sister.n.01
+	6	company
+			sense:	company.n.01
+	7	,
+	8	specialises
+			sense:	specialize.v.04
+			prop:	specialize.01
+			V		8-8	specialises 
+			N-ARG-A0		0-6	Yeo Hiap Seng , another sister company 
+			N-ARG-A1		9-14	in the food and beverage business 
+			N-ARGM-LOC		15-16	in Asia 
+	9	in
+	10	the
+	11	food
+			sense:	food.n.01
+	12	and
+	13	beverage
+			sense:	beverage.n.01
+	14	business
+			sense:	commercial_enterprise.n.02
+	15	in
+	16	Asia
+			name:	CITY				16-16	Asia 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Yeo Hiap Seng also has real estate development interests in Singapore and other markets .
+
+
+Treebanked sentence:
+--------------------
+Yeo Hiap Seng also has real estate development interests in Singapore and other markets . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Yeo) (NNP Hiap) (NNP Seng))
+    (ADVP (RB also))
+    (VP (VBZ has)
+      (NP
+        (NML (JJ real) (NN estate))
+        (NN development) (NNS interests))
+      (PP (IN in)
+        (NP
+          (NP (NNP Singapore))
+          (CC and)
+          (NP (JJ other) (NNS markets)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Yeo
+			coref:	IDENT			2	0-2	Yeo Hiap Seng 
+			name:	PERSON				0-2	Yeo Hiap Seng 
+	1	Hiap
+	2	Seng
+	3	also
+			sense:	besides.r.02
+	4	has
+			sense:	have.v.01
+			prop:	have.03
+			V		4-4	has 
+			N-ARG-A0		0-2	Yeo Hiap Seng 
+			N-ARGM-DIS		3-3	also 
+			N-ARG-A1		5-13	real estate development interests in Singapore and other markets 
+	5	real
+			sense:	real.s.08
+	6	estate
+			sense:	estate.n.01
+	7	development
+			sense:	exploitation.n.01
+	8	interests
+			sense:	interest.n.05
+	9	in
+	10	Singapore
+			coref:	IDENT			3	10-10	Singapore 
+			name:	COUNTRY				10-10	Singapore 
+	11	and
+	12	other
+			sense:	other.a.01
+	13	markets
+			sense:	market.n.01
+	14	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.1-4	Group 's core business 
+				3.0-0	It 
+	Chain 1 (IDENT)
+				2.0-2	Sino Group 's 
+				0.0-1	Sino Group 
+				1.0-1	The Group 
+	Chain 2 (IDENT)
+				7.0-6	Yeo Hiap Seng , another sister company 
+				8.0-2	Yeo Hiap Seng 
+	Chain 3 (IDENT)
+				5.9-10	Singapore 's 
+				4.12-12	Singapore 
+				6.10-10	Singapore 
+				8.10-10	Singapore 
+

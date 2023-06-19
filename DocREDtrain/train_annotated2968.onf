@@ -1,0 +1,570 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Kenneth Rowntree ( 14 March 1915 – 21 February 1997 ) was a British artist .
+
+
+Treebanked sentence:
+--------------------
+Kenneth Rowntree ( 14 March 1915 – 21 February 1997 ) was a British artist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Kenneth) (NNP Rowntree))
+      (-LRB- -LRB-)
+      (NP
+        (NP
+          (NP (CD 14))
+          (NP-TMP (NNP March) (CD 1915))
+          (PP (SYM –)
+            (NP (CD 21))))
+        (NP-TMP (NNP February) (CD 1997)))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT a) (JJ British) (NN artist)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Kenneth
+			name:	PERSON				0-1	Kenneth Rowntree 
+	1	Rowntree
+	2	(
+	3	14
+			name:	DATE				3-5	14 March 1915 
+	4	March
+	5	1915
+	6	–
+	7	21
+			coref:	IDENT			0	7-9	21 February 1997 
+			name:	DATE				7-9	21 February 1997 
+	8	February
+	9	1997
+	10	)
+	11	was
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	was 
+			N-ARG-A1		0-10	Kenneth Rowntree ( 14 March 1915 – 21 February 1997 ) 
+			N-ARG-A2		12-14	a British artist 
+	12	a
+	13	British
+			name:	NATIONALITY				13-13	British 
+	14	artist
+			name:	TITLE				14-14	artist 
+			sense:	artist.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was educated at Bootham School , York .
+
+
+Treebanked sentence:
+--------------------
+He was educated at Bootham School , York . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN educated)
+        (PP (IN at)
+          (NP
+            (NP (NNP Bootham) (NNP School))
+            (, ,)
+            (NP (NNP York))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	educated
+			sense:	educate.v.01
+			prop:	educate.01
+			V		2-2	educated 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-7	at Bootham School , York 
+	3	at
+	4	Bootham
+			name:	ORGANIZATION				4-5	Bootham School 
+	5	School
+	6	,
+	7	York
+			name:	CITY				7-7	York 
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A Quaker and son of Howard Doncaster Rowntree ( 1879 - 1974 ) , a First World War conscientious objector , he was also a conscientious objector in the Second World War .
+
+
+Treebanked sentence:
+--------------------
+A Quaker and son of Howard Doncaster Rowntree ( 1879 - 1974 ) , a First World War conscientious objector , he was also a conscientious objector in the Second World War . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP-TMP
+      (NP (DT A) (NNP Quaker)
+        (CC and)
+        (NN son))
+      (PP (IN of)
+        (NP
+          (NP (NNP Howard) (NNP Doncaster) (NNP Rowntree))
+          (-LRB- -LRB-)
+          (NP
+            (NP (NNS 1879))
+            (HYPH -)
+            (NP-TMP (CD 1974)))
+          (-RRB- -RRB-)))
+      (, ,)
+      (NP (DT a)
+        (NML (NNP First) (NNP World) (NNP War))
+        (JJ conscientious) (NN objector)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (ADVP (RB also))
+      (NP
+        (NP (DT a) (JJ conscientious) (NN objector))
+        (PP (IN in)
+          (NP (DT the) (NNP Second) (NNP World) (NNP War)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	Quaker
+			name:	RELIGION				1-1	Quaker 
+	2	and
+	3	son
+			sense:	son.n.01
+	4	of
+	5	Howard
+			name:	PERSON				5-7	Howard Doncaster Rowntree 
+	6	Doncaster
+	7	Rowntree
+	8	(
+	9	1879
+			name:	DATE				9-9	1879 
+	10	-
+			name:	DURATION				10-10	- 
+	11	1974
+			name:	DATE				11-11	1974 
+	12	)
+	13	,
+	14	a
+	15	First
+			name:	ORDINAL				15-15	First 
+	16	World
+			name:	MISC				16-16	World 
+	17	War
+			name:	CAUSE_OF_DEATH				17-17	War 
+	18	conscientious
+			name:	MISC				18-18	conscientious 
+			sense:	conscientious.a.02
+	19	objector
+			sense:	dissenter.n.01
+	20	,
+	21	he
+	22	was
+			sense:	be.v.01
+			prop:	be.01
+			V		22-22	was 
+			R-ARG-A1		0-19	A Quaker and son of Howard Doncaster Rowntree ( 1879 - 1974 ) , a First World War conscientious objector 
+			N-ARG-A1		21-21	he 
+			N-ARGM-ADV		23-23	also 
+			N-ARG-A2		24-31	a conscientious objector in the Second World War 
+	23	also
+			sense:	besides.r.02
+	24	a
+	25	conscientious
+			sense:	conscientious.a.02
+	26	objector
+			sense:	dissenter.n.01
+	27	in
+	28	the
+			name:	DATE				28-29	the Second 
+	29	Second
+	30	World
+			name:	MISC				30-30	World 
+	31	War
+			name:	CAUSE_OF_DEATH				31-31	War 
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He worked for the War Artists ' Advisory Committee .
+
+
+Treebanked sentence:
+--------------------
+He worked for the War Artists ' Advisory Committee . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD worked)
+      (PP (IN for)
+        (NP
+          (NP (DT the) (NNP War) (NNP Artists) (POS '))
+          (NNP Advisory) (NNP Committee))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		1-1	worked 
+			N-ARG-A0		0-0	He 
+			N-ARG-A2		2-8	for the War Artists ' Advisory Committee 
+	2	for
+	3	the
+	4	War
+			name:	ORGANIZATION				4-8	War Artists ' Advisory Committee 
+	5	Artists
+	6	'
+	7	Advisory
+	8	Committee
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was one of the Great Bardfield Artists and taught at the Royal College of Art .
+
+
+Treebanked sentence:
+--------------------
+He was one of the Great Bardfield Artists and taught at the Royal College of Art . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP (DT the) (NNP Great) (NNP Bardfield) (NNP Artists)))))
+      (CC and)
+      (VP (VBD taught)
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP Royal) (NNP College))
+            (PP (IN of)
+              (NP (NNP Art)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-7	one of the Great Bardfield Artists 
+	2	one
+			name:	NUMBER				2-2	one 
+	3	of
+	4	the
+	5	Great
+	6	Bardfield
+	7	Artists
+	8	and
+	9	taught
+			sense:	teach.v.01
+			prop:	teach.01
+			V		9-9	taught 
+			N-ARG-A0		0-0	He 
+			N-ARGM-LOC		10-15	at the Royal College of Art 
+	10	at
+	11	the
+	12	Royal
+			name:	ORGANIZATION				12-15	Royal College of Art 
+	13	College
+	14	of
+	15	Art
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1939 Rowntree married architect Diana Rowntree née Buckley .
+
+
+Treebanked sentence:
+--------------------
+In 1939 Rowntree married architect Diana Rowntree née Buckley . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1939) (NNP Rowntree)))
+    (NP
+      (NP
+        (NML (VBN married) (NN architect))
+        (NNP Diana) (NNP Rowntree))
+      (NP (NNP née) (NNP Buckley)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1939
+			name:	DATE				1-1	1939 
+	2	Rowntree
+			name:	PERSON				2-2	Rowntree 
+	3	married
+			sense:	marry.v.01
+			prop:	marry.01
+			V		3-3	married 
+			N-ARGM-TMP		0-1	In 1939 
+			N-ARG-A1		2-2	Rowntree 
+			N-ARG-A2		4-8	architect Diana Rowntree née Buckley 
+	4	architect
+			name:	TITLE				4-4	architect 
+			sense:	architect.n.01
+	5	Diana
+			name:	PERSON				5-8	Diana Rowntree née Buckley 
+	6	Rowntree
+	7	née
+	8	Buckley
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2009 his studio was sold at auction in Newcastle - on - Tyne .
+
+
+Treebanked sentence:
+--------------------
+In 2009 his studio was sold at auction in Newcastle - on - Tyne . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2009)))
+    (NP (PRP$ his) (NN studio))
+    (VP (VBD was)
+      (VP (VBN sold)
+        (PP (IN at)
+          (NP (NN auction)))
+        (PP (IN in)
+          (NP (NNP Newcastle) (HYPH -) (NNP on) (HYPH -) (NNP Tyne)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2009
+			name:	DATE				1-1	2009 
+	2	his
+	3	studio
+			sense:	studio.n.01
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	sold
+			sense:	sell.v.01
+			prop:	sell.01
+			V		5-5	sold 
+			N-ARGM-TMP		0-1	In 2009 
+			N-ARG-A1		2-3	his studio 
+			N-ARGM-LOC		8-13	in Newcastle - on - Tyne 
+	6	at
+	7	auction
+			sense:	auction.n.02
+	8	in
+	9	Newcastle
+			name:	CITY				9-9	Newcastle 
+	10	-
+			name:	LOCATION				10-13	- on - Tyne 
+	11	on
+	12	-
+	13	Tyne
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The catalogue , written and researched by Steven Moore , included an introduction by Rowntree 's friend and colleague John Milner .
+
+
+Treebanked sentence:
+--------------------
+The catalogue , written and researched by Steven Moore , included an introduction by Rowntree 's friend and colleague John Milner . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN catalogue))
+      (, ,)
+      (VP (VBN written)
+        (CC and)
+        (VBN researched)
+        (PP (IN by)
+          (NP (NNP Steven) (NNP Moore))))
+      (, ,))
+    (VP (VBD included)
+      (NP (DT an) (NN introduction))
+      (PP (IN by)
+        (NP
+          (NP
+            (NP (NNP Rowntree) (POS 's))
+            (NN friend))
+          (CC and)
+          (NP (NN colleague) (NNP John) (NNP Milner)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	catalogue
+			sense:	catalog.n.01
+	2	,
+	3	written
+			sense:	write.v.01
+			prop:	write.01
+			V		3-3	written 
+			N-ARG-A1		0-1	The catalogue 
+			N-ARG-A0		6-8	by Steven Moore 
+	4	and
+	5	researched
+			sense:	research.v.01
+			prop:	research.01
+			V		5-5	researched 
+			N-ARG-A1		0-1	The catalogue 
+			N-ARG-A0		6-8	by Steven Moore 
+	6	by
+	7	Steven
+			name:	PERSON				7-8	Steven Moore 
+	8	Moore
+	9	,
+	10	included
+			sense:	include.v.01
+			prop:	include.01
+			V		10-10	included 
+			N-ARG-A2		0-9	The catalogue , written and researched by Steven Moore , 
+			N-ARG-A1		11-20	an introduction by Rowntree 's friend and colleague John Milner 
+	11	an
+	12	introduction
+			sense:	introduction.n.02
+	13	by
+	14	Rowntree
+			name:	PERSON				14-14	Rowntree 
+	15	's
+	16	friend
+			sense:	friend.n.01
+	17	and
+	18	colleague
+			sense:	colleague.n.01
+	19	John
+			name:	PERSON				19-20	John Milner 
+	20	Milner
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Rowntree died on 21 February 1997 .
+
+
+Treebanked sentence:
+--------------------
+Rowntree died on 21 February 1997 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Rowntree))
+    (VP (VBD died)
+      (PP (IN on)
+        (NP (CD 21)))
+      (NP-TMP (NNP February) (CD 1997)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Rowntree
+			name:	PERSON				0-0	Rowntree 
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	Rowntree 
+			N-ARGM-TMP		2-5	on 21 February 1997 
+	2	on
+	3	21
+			coref:	IDENT			0	3-5	21 February 1997 
+			name:	DATE				3-5	21 February 1997 
+	4	February
+	5	1997
+	6	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.7-9	21 February 1997 
+				8.3-5	21 February 1997 
+

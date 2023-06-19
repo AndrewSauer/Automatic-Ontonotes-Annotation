@@ -1,0 +1,551 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jared Scot Allen ( born April 3 , 1982 ) is a former professional American football defensive end .
+
+
+Treebanked sentence:
+--------------------
+Jared Scot Allen ( born April 3 , 1982 ) is a former professional American football defensive end . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Jared) (NNP Scot) (NNP Allen))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP April) (CD 3) (, ,) (CD 1982)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ former) (JJ professional) (JJ American) (NN football))
+        (NP (JJ defensive) (NN end))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jared
+			coref:	IDENT			1	0-2	Jared Scot Allen 
+			name:	PERSON				0-2	Jared Scot Allen 
+	1	Scot
+	2	Allen
+	3	(
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-2	Jared Scot Allen 
+			N-ARGM-TMP		5-8	April 3 , 1982 
+	5	April
+			name:	DATE				5-8	April 3 , 1982 
+	6	3
+	7	,
+	8	1982
+	9	)
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	Jared Scot Allen ( born April 3 , 1982 ) 
+			N-ARG-A2		11-17	a former professional American football defensive end 
+	11	a
+	12	former
+			sense:	former.s.03
+	13	professional
+			sense:	professional.a.01
+	14	American
+			name:	NATIONALITY				14-14	American 
+	15	football
+			sense:	football.n.01
+	16	defensive
+			name:	TITLE				16-17	defensive end 
+			sense:	defensive.a.01
+	17	end
+			sense:	end.n.08
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After playing college football for Idaho State University , he was drafted by the Kansas City Chiefs of the National Football League ( NFL ) in the fourth round of the 2004 NFL Draft .
+
+
+Treebanked sentence:
+--------------------
+After playing college football for Idaho State University , he was drafted by the Kansas City Chiefs of the National Football League ( NFL ) in the fourth round of the 2004 NFL Draft . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG playing)
+          (NP (NN college) (NN football))
+          (PP (IN for)
+            (NP (NNP Idaho) (NNP State) (NNP University))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN drafted)
+        (PP (IN by)
+          (NP
+            (NP (DT the)
+              (NML (NNP Kansas) (NNP City))
+              (NNPS Chiefs))
+            (PP (IN of)
+              (NP (DT the) (NNP National) (NNP Football) (NNP League)))
+            (PRN (-LRB- -LRB-)
+              (NP (NNP NFL))
+              (-RRB- -RRB-))))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (JJ fourth) (NN round))
+            (PP (IN of)
+              (NP (DT the) (CD 2004) (NNP NFL) (NN Draft)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	playing
+			sense:	play.v.01
+			prop:	play.01
+			V		1-1	playing 
+			N-ARG-A1		2-3	college football 
+			N-ARGM-ADV		4-7	for Idaho State University 
+			N-ARG-A0		9-9	he 
+	2	college
+			sense:	college.n.01
+	3	football
+			sense:	football.n.01
+	4	for
+	5	Idaho
+			name:	ORGANIZATION				5-7	Idaho State University 
+	6	State
+	7	University
+	8	,
+	9	he
+			coref:	IDENT			1	9-9	he 
+	10	was
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	was 
+	11	drafted
+			sense:	enlist.v.03
+			prop:	draft.01
+			V		11-11	drafted 
+			N-ARGM-TMP		0-7	After playing college football for Idaho State University 
+			N-ARG-A1		9-9	he 
+			N-ARG-A0		12-24	by the Kansas City Chiefs of the National Football League ( NFL ) 
+	12	by
+	13	the
+	14	Kansas
+			name:	ORGANIZATION				14-21	Kansas City Chiefs of the National Football League 
+	15	City
+	16	Chiefs
+	17	of
+	18	the
+	19	National
+	20	Football
+	21	League
+	22	(
+	23	NFL
+			coref:	IDENT			0	23-23	NFL 
+			name:	ORGANIZATION				23-23	NFL 
+	24	)
+	25	in
+	26	the
+	27	fourth
+			name:	ORDINAL				27-27	fourth 
+			sense:	fourth.s.01
+	28	round
+			sense:	cycle.n.01
+	29	of
+	30	the
+	31	2004
+			name:	DATE				31-31	2004 
+	32	NFL
+			coref:	IDENT			0	32-32	NFL 
+			name:	ORGANIZATION				32-32	NFL 
+	33	Draft
+			sense:	draft.n.01
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After four years with the Chiefs , Allen was traded to the Minnesota Vikings in exchange for three draft picks , including a first - rounder .
+
+
+Treebanked sentence:
+--------------------
+After four years with the Chiefs , Allen was traded to the Minnesota Vikings in exchange for three draft picks , including a first - rounder . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP
+        (NP (CD four) (NNS years))
+        (PP (IN with)
+          (NP (DT the) (NNPS Chiefs)))))
+    (, ,)
+    (NP (NNP Allen))
+    (VP (VBD was)
+      (VP (VBN traded)
+        (PP (IN to)
+          (NP (DT the) (NNP Minnesota) (NNPS Vikings)))
+        (PP (IN in)
+          (NP
+            (NP (NN exchange))
+            (PP (IN for)
+              (NP (CD three) (NN draft) (NNS picks)))
+            (, ,)
+            (PP (VBG including)
+              (NP (DT a)
+                (NML (JJ first) (HYPH -) (NN rounder))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	four
+			name:	DURATION				1-2	four years 
+	2	years
+			sense:	year.n.01
+	3	with
+	4	the
+	5	Chiefs
+	6	,
+	7	Allen
+			coref:	IDENT			1	7-7	Allen 
+			name:	PERSON				7-7	Allen 
+	8	was
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	was 
+	9	traded
+			sense:	trade.v.04
+			prop:	trade.01
+			V		9-9	traded 
+			N-ARGM-TMP		0-5	After four years with the Chiefs 
+			N-ARG-A1		7-7	Allen 
+			N-ARG-A2		10-13	to the Minnesota Vikings 
+			N-ARG-A3		14-25	in exchange for three draft picks , including a first - rounder 
+	10	to
+	11	the
+	12	Minnesota
+			name:	ORGANIZATION				12-13	Minnesota Vikings 
+	13	Vikings
+	14	in
+	15	exchange
+			sense:	exchange.n.03
+	16	for
+	17	three
+			name:	NUMBER				17-17	three 
+	18	draft
+			sense:	draft.n.01
+	19	picks
+			sense:	choice.n.01
+	20	,
+	21	including
+			sense:	include.v.01
+			prop:	include.01
+			V		21-21	including 
+			N-ARG-A2		17-19	three draft picks 
+			N-ARG-A1		22-25	a first - rounder 
+	22	a
+	23	first
+			name:	ORDINAL				23-23	first 
+			sense:	first.s.02
+	24	-
+	25	rounder
+			name:	TITLE				25-25	rounder 
+			sense:	rounder.n.02
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He spent six years with the Vikings before joining the Chicago Bears as a free agent in 2014 .
+
+
+Treebanked sentence:
+--------------------
+He spent six years with the Vikings before joining the Chicago Bears as a free agent in 2014 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD spent)
+      (NP (CD six) (NNS years))
+      (PP (IN with)
+        (NP (DT the) (NNPS Vikings)))
+      (PP (IN before)
+        (S
+          (VP (VBG joining)
+            (NP (DT the) (NNP Chicago) (NNPS Bears))
+            (PP (IN as)
+              (NP
+                (NP (DT a) (JJ free) (NN agent))
+                (PP (IN in)
+                  (NP (CD 2014)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	spent
+			sense:	spend.v.01
+			prop:	spend.02
+			V		1-1	spent 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-3	six years 
+			N-ARGM-MNR		4-6	with the Vikings 
+			N-ARGM-TMP		7-17	before joining the Chicago Bears as a free agent in 2014 
+	2	six
+			name:	DURATION				2-3	six years 
+	3	years
+			sense:	year.n.01
+	4	with
+	5	the
+	6	Vikings
+			name:	ORGANIZATION				6-6	Vikings 
+	7	before
+	8	joining
+			sense:	join.v.01
+			prop:	join.01
+			V		8-8	joining 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		9-11	the Chicago Bears 
+			N-ARGM-PRD		12-15	as a free agent 
+			N-ARGM-TMP		16-17	in 2014 
+	9	the
+	10	Chicago
+			name:	ORGANIZATION				10-11	Chicago Bears 
+	11	Bears
+	12	as
+	13	a
+	14	free
+			sense:	free.a.01
+	15	agent
+			sense:	agent.n.02
+	16	in
+	17	2014
+			name:	DATE				17-17	2014 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+During the 2015 season , he was traded to the Carolina Panthers , with whom he played in his only career Super Bowl .
+
+
+Treebanked sentence:
+--------------------
+During the 2015 season , he was traded to the Carolina Panthers , with whom he played in his only career Super Bowl . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN During)
+      (NP (DT the) (CD 2015) (NN season)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN traded)
+        (PP (IN to)
+          (NP (DT the) (NNP Carolina) (NNPS Panthers)))
+        (, ,)
+        (PP (IN with)
+          (SBAR
+            (WHNP (WP whom))
+            (S
+              (NP (PRP he))
+              (VP (VBD played)
+                (PP (IN in)
+                  (NP
+                    (NP (PRP$ his) (JJ only) (NN career))
+                    (NP (NNP Super) (NNP Bowl))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	During
+	1	the
+	2	2015
+			name:	DATE				2-2	2015 
+	3	season
+			sense:	season.n.01
+	4	,
+	5	he
+			coref:	IDENT			1	5-5	he 
+	6	was
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	was 
+	7	traded
+			sense:	trade.v.04
+			prop:	trade.01
+			V		7-7	traded 
+			N-ARGM-TMP		0-3	During the 2015 season 
+			N-ARG-A1		5-5	he 
+			N-ARG-A2		8-22	to the Carolina Panthers , with whom he played in his only career Super Bowl 
+	8	to
+	9	the
+	10	Carolina
+	11	Panthers
+	12	,
+	13	with
+	14	whom
+	15	he
+			coref:	IDENT			1	15-15	he 
+	16	played
+			sense:	play.v.01
+			prop:	play.01
+			V		16-16	played 
+			N-ARGM-COM		9-11	the Carolina Panthers 
+			R-ARGM-COM		13-14	with whom 
+			N-ARG-A0		15-15	he 
+			N-ARGM-LOC		17-22	in his only career Super Bowl 
+	17	in
+	18	his
+			coref:	IDENT			1	18-18	his 
+	19	only
+			sense:	lone.s.03
+	20	career
+			sense:	career.n.01
+	21	Super
+	22	Bowl
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A five - time Pro Bowl and four - time All - Pro selection , Allen tallied 136 quarterback sacks during his 12-year career .
+
+
+Treebanked sentence:
+--------------------
+A five - time Pro Bowl and four - time All - Pro selection , Allen tallied 136 quarterback sacks during his 12 - year career . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT A)
+        (NML (CD five) (HYPH -) (NN time))
+        (NML
+          (NML (NNP Pro) (NNP Bowl))
+          (CC and)
+          (NML (CD four) (HYPH -) (NN time)))
+        (NML (NNP All) (HYPH -) (NNP Pro))
+        (NN selection))
+      (, ,)
+      (NP (NNP Allen)))
+    (VP (VBD tallied)
+      (NP
+        (NML (CD 136) (NN quarterback))
+        (NNS sacks))
+      (PP (IN during)
+        (NP (PRP$ his)
+          (NML (CD 12) (HYPH -) (NN year))
+          (NN career))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	five
+			name:	NUMBER				1-1	five 
+	2	-
+	3	time
+			sense:	time.n.01
+	4	Pro
+	5	Bowl
+	6	and
+	7	four
+			name:	NUMBER				7-7	four 
+	8	-
+	9	time
+			sense:	time.n.01
+	10	All
+	11	-
+	12	Pro
+	13	selection
+			sense:	choice.n.01
+	14	,
+	15	Allen
+			coref:	IDENT			1	15-15	Allen 
+			name:	PERSON				15-15	Allen 
+	16	tallied
+			sense:	score.v.01
+			prop:	tally.01
+			V		16-16	tallied 
+			N-ARG-A0		15-15	Allen 
+			N-ARG-A1		17-19	136 quarterback sacks 
+			N-ARGM-TMP		20-25	during his 12 - year career 
+	17	136
+			name:	NUMBER				17-17	136 
+	18	quarterback
+			name:	TITLE				18-18	quarterback 
+			sense:	quarterback.n.01
+	19	sacks
+			sense:	sack.n.03
+	20	during
+	21	his
+			coref:	IDENT			1	21-21	his 
+	22	12
+			name:	DURATION				22-24	12 - year 
+	23	-
+	24	year
+			sense:	year.n.01
+	25	career
+			sense:	career.n.01
+	26	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.23-23	NFL 
+				1.32-32	NFL 
+	Chain 1 (IDENT)
+				0.0-2	Jared Scot Allen 
+				1.9-9	he 
+				2.7-7	Allen 
+				3.0-0	He 
+				4.5-5	he 
+				4.15-15	he 
+				4.18-18	his 
+				5.15-15	Allen 
+				5.21-21	his 
+

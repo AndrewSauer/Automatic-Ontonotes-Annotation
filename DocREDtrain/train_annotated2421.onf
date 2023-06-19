@@ -1,0 +1,768 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" The Invisible Man " is a song by the British rock band Queen , written by drummer Roger Taylor but credited to Queen .
+
+
+Treebanked sentence:
+--------------------
+" The Invisible Man " is a song by the British rock band Queen , written by drummer Roger Taylor but credited to Queen . 
+
+Tree:
+-----
+(ROOT
+  (S (`` ")
+    (NP (DT The) (JJ Invisible) (NN Man))
+    ('' ")
+    (VP
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (NN song))
+          (PP (IN by)
+            (NP
+              (NP (DT the) (JJ British)
+                (NML (NN rock) (NN band))
+                (NNP Queen))
+              (, ,)
+              (VP (VBN written)
+                (PP (IN by)
+                  (NP (NN drummer) (NNP Roger) (NNP Taylor))))))))
+      (CC but)
+      (VP (VBD credited)
+        (PP (IN to)
+          (NP (NNP Queen)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	The
+	2	Invisible
+			name:	MISC				2-3	Invisible Man 
+			sense:	invisible.a.01
+	3	Man
+			sense:	man.n.01
+	4	"
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	" The Invisible Man " 
+			N-ARG-A2		6-23	a song by the British rock band Queen , written by drummer Roger Taylor but credited to Queen 
+	6	a
+			coref:	IDENT			2	6-23	a song by the British rock band Queen , written by drummer Roger Taylor but credited to Queen 
+	7	song
+			sense:	song.n.01
+	8	by
+	9	the
+	10	British
+			name:	NATIONALITY				10-10	British 
+	11	rock
+			sense:	rock_n_roll.n.01
+	12	band
+			sense:	band.n.02
+	13	Queen
+			name:	TITLE				13-13	Queen 
+	14	,
+	15	written
+			sense:	compose.v.02
+			prop:	write.01
+			V		15-15	written 
+			N-ARG-A1		6-13	a song by the British rock band Queen 
+			N-ARG-A0		16-19	by drummer Roger Taylor 
+	16	by
+	17	drummer
+			coref:	IDENT			0	17-19	drummer Roger Taylor 
+			name:	TITLE				17-17	drummer 
+			sense:	drummer.n.01
+	18	Roger
+			name:	PERSON				18-19	Roger Taylor 
+	19	Taylor
+	20	but
+	21	credited
+			sense:	credit.v.01
+			prop:	credit.01
+			V		21-21	credited 
+			N-ARG-A1		22-23	to Queen 
+	22	to
+	23	Queen
+			coref:	IDENT			3	23-23	Queen 
+			name:	TITLE				23-23	Queen 
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The song is sung mostly by Freddie Mercury , with vocal contributions from Taylor .
+
+
+Treebanked sentence:
+--------------------
+The song is sung mostly by Freddie Mercury , with vocal contributions from Taylor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN song))
+    (VP (VBZ is)
+      (VP (VBN sung)
+        (ADVP (RB mostly))
+        (PP (IN by)
+          (NP (NNP Freddie) (NNP Mercury)))
+        (, ,)
+        (PP (IN with)
+          (NP
+            (NP (JJ vocal) (NNS contributions))
+            (PP (IN from)
+              (NP (NNP Taylor)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-1	The song 
+	1	song
+			sense:	song.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	sung
+			sense:	sing.v.01
+			prop:	sing.01
+			V		3-3	sung 
+			N-ARG-A1		0-1	The song 
+			N-ARGM-ADV		4-4	mostly 
+			N-ARG-A0		5-7	by Freddie Mercury 
+			N-ARGM-ADV		9-13	with vocal contributions from Taylor 
+	4	mostly
+			sense:	largely.r.01
+	5	by
+	6	Freddie
+			coref:	IDENT			4	6-7	Freddie Mercury 
+			name:	ORGANIZATION				6-7	Freddie Mercury 
+	7	Mercury
+	8	,
+	9	with
+	10	vocal
+			sense:	vocal.a.01
+	11	contributions
+			sense:	contribution.n.01
+	12	from
+	13	Taylor
+			coref:	IDENT			0	13-13	Taylor 
+			name:	PERSON				13-13	Taylor 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Originally released on the album The Miracle , it was released as a single in 1989 .
+
+
+Treebanked sentence:
+--------------------
+Originally released on the album The Miracle , it was released as a single in 1989 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (ADVP (RB Originally))
+      (VP (VBN released)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN album))
+            (NP (DT The) (NN Miracle))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (VP (VBN released)
+        (PP (IN as)
+          (NP
+            (NP (DT a) (JJ single))
+            (PP (IN in)
+              (NP (CD 1989)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Originally
+			sense:	primitively.r.01
+	1	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		1-1	released 
+			N-ARGM-TMP		0-0	Originally 
+			N-ARGM-LOC		2-6	on the album The Miracle 
+			N-ARG-A1		8-8	it 
+	2	on
+	3	the
+	4	album
+			sense:	album.n.01
+	5	The
+	6	Miracle
+			sense:	miracle.n.01
+	7	,
+	8	it
+			coref:	IDENT			2	8-8	it 
+	9	was
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	was 
+	10	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		10-10	released 
+			N-ARGM-ADV		0-6	Originally released on the album The Miracle 
+			N-ARG-A1		8-8	it 
+			N-ARGM-MNR		11-13	as a single 
+			N-ARGM-TMP		14-15	in 1989 
+	11	as
+	12	a
+	13	single
+			sense:	individual.a.01
+	14	in
+	15	1989
+			name:	DATE				15-15	1989 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Taylor claims that he got the inspiration to create the song while reading a book ( possibly the book of the same name ) , and the bassline instantly came to his imagination .
+
+
+Treebanked sentence:
+--------------------
+Taylor claims that he got the inspiration to create the song while reading a book ( possibly the book of the same name ) , and the bassline instantly came to his imagination . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NNP Taylor))
+      (VP (VBZ claims)
+        (SBAR (IN that)
+          (S
+            (NP (PRP he))
+            (VP (VBD got)
+              (NP (DT the) (NN inspiration)
+                (S
+                  (VP (TO to)
+                    (VP (VB create)
+                      (NP (DT the) (NN song))
+                      (PP (IN while)
+                        (S
+                          (VP (VBG reading)
+                            (NP (DT a) (NN book)))))))))
+              (PRN (-LRB- -LRB-)
+                (NP
+                  (NP (RB possibly) (DT the) (NN book))
+                  (PP (IN of)
+                    (NP (DT the) (JJ same) (NN name))))
+                (-RRB- -RRB-)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT the) (NN bassline))
+      (ADVP (RB instantly))
+      (VP (VBD came)
+        (PP (IN to)
+          (NP (PRP$ his) (NN imagination)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Taylor
+			coref:	IDENT			0	0-0	Taylor 
+			name:	PERSON				0-0	Taylor 
+	1	claims
+			sense:	claim.v.01
+			prop:	claim.01
+			V		1-1	claims 
+			N-ARG-A0		0-0	Taylor 
+			N-ARG-A1		2-32	that he got the inspiration to create the song while reading a book ( possibly the book of the same name ) , and the bassline instantly came to his imagination 
+	2	that
+	3	he
+			coref:	IDENT			0	3-3	he 
+	4	got
+			sense:	experience.v.03
+			prop:	get.01
+			V		4-4	got 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		5-10	the inspiration to create the song 
+			N-ARGM-TMP		11-23	while reading a book ( possibly the book of the same name ) 
+	5	the
+	6	inspiration
+			sense:	inspiration.n.03
+	7	to
+	8	create
+			sense:	create.v.02
+			prop:	create.01
+			V		8-8	create 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		9-10	the song 
+	9	the
+			coref:	IDENT			2	9-10	the song 
+	10	song
+			sense:	song.n.01
+	11	while
+	12	reading
+			sense:	read.v.01
+			prop:	read.01
+			V		12-12	reading 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		13-23	a book ( possibly the book of the same name ) 
+	13	a
+	14	book
+			sense:	book.n.01
+	15	(
+	16	possibly
+			sense:	possibly.r.01
+	17	the
+	18	book
+			sense:	book.n.01
+	19	of
+	20	the
+	21	same
+			sense:	same.a.01
+	22	name
+			sense:	name.n.01
+	23	)
+	24	,
+	25	and
+	26	the
+	27	bassline
+	28	instantly
+			sense:	immediately.r.01
+	29	came
+			sense:	occur.v.02
+			prop:	come.01
+			V		29-29	came 
+			N-ARG-A1		26-27	the bassline 
+			N-ARGM-TMP		28-28	instantly 
+			N-ARG-A4		30-32	to his imagination 
+	30	to
+	31	his
+			coref:	IDENT			0	31-31	his 
+	32	imagination
+			sense:	imagination.n.01
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This song marks the only time in any of Queen 's songs that all four band members names are mentioned in the lyrics .
+
+
+Treebanked sentence:
+--------------------
+This song marks the only time in any of Queen 's songs that all four band members names are mentioned in the lyrics . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT This) (NN song))
+    (VP (VBZ marks)
+      (NP (DT the) (JJ only) (NN time))
+      (PP (IN in)
+        (NP
+          (NP (DT any))
+          (PP (IN of)
+            (NP
+              (NP (NNP Queen) (POS 's))
+              (NNS songs)))))
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT all) (CD four) (NN band) (NNS members))
+            (NP (NNS names)))
+          (VP (VBP are)
+            (VP (VBN mentioned)
+              (PP (IN in)
+                (NP (DT the) (NNS lyrics))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+			coref:	IDENT			2	0-1	This song 
+	1	song
+			sense:	song.n.01
+	2	marks
+			sense:	mark.v.02
+			prop:	mark.01
+			V		2-2	marks 
+			N-ARG-A0		0-1	This song 
+			N-ARG-A1		3-22	the only time in any of Queen 's songs that all four band members names are mentioned in the lyrics 
+	3	the
+	4	only
+			sense:	lone.s.03
+	5	time
+			sense:	time.n.01
+	6	in
+	7	any
+	8	of
+	9	Queen
+			coref:	IDENT			3	9-10	Queen 's 
+			name:	TITLE				9-9	Queen 
+	10	's
+	11	songs
+			sense:	song.n.01
+	12	that
+	13	all
+	14	four
+			name:	NUMBER				14-14	four 
+	15	band
+			sense:	band.n.02
+	16	members
+			sense:	member.n.01
+	17	names
+			sense:	name.n.01
+	18	are
+			sense:	be.v.01
+			prop:	be.03
+			V		18-18	are 
+	19	mentioned
+			sense:	mention.v.01
+			prop:	mention.01
+			V		19-19	mentioned 
+			N-ARG-A1		13-17	all four band members names 
+			N-ARGM-LOC		20-22	in the lyrics 
+	20	in
+	21	the
+	22	lyrics
+			sense:	lyric.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The first being Freddie Mercury , followed by John Deacon .
+
+
+Treebanked sentence:
+--------------------
+The first being Freddie Mercury , followed by John Deacon . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP (DT The) (JJ first))
+    (VP (VBG being)
+      (NP
+        (NP (NNP Freddie) (NNP Mercury))
+        (, ,)
+        (VP (VBN followed)
+          (PP (IN by)
+            (NP (NNP John) (NNP Deacon))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	first
+			name:	ORDINAL				1-1	first 
+			sense:	first.a.01
+	2	being
+			sense:	be.v.02
+			prop:	being.01
+			V		2-2	being 
+			N-ARG-A1		0-1	The first 
+			N-ARG-A2		3-4	Freddie Mercury 
+	3	Freddie
+	4	Mercury
+	5	,
+	6	followed
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		6-6	followed 
+			N-ARG-A2		3-4	Freddie Mercury 
+			N-ARG-A1		7-9	by John Deacon 
+	7	by
+	8	John
+			name:	PERSON				8-9	John Deacon 
+	9	Deacon
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Brian May 's name is then said twice ( just before his guitar solo starts ) , and while saying " Roger Taylor " , the first " r " is rolled to emulate the drums at the end of the verse .
+
+
+Treebanked sentence:
+--------------------
+Brian May 's name is then said twice ( just before his guitar solo starts ) , and while saying " Roger Taylor " , the first " r " is rolled to emulate the drums at the end of the verse . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Brian) (NNP May) (POS 's))
+        (NN name))
+      (VP (VBZ is)
+        (ADVP (RB then))
+        (VP (VBN said)
+          (ADVP (RB twice))
+          (SBAR (-LRB- -LRB-)
+            (ADVP (RB just))
+            (IN before)
+            (S
+              (NP (PRP$ his) (NN guitar) (NN solo))
+              (VP (VBZ starts)))
+            (-RRB- -RRB-)))))
+    (, ,)
+    (CC and)
+    (S
+      (SBAR (IN while)
+        (S
+          (VP (VBG saying)
+            (NP (`` ") (NNP Roger) (NNP Taylor) ('' ")))))
+      (, ,)
+      (NP (DT the) (JJ first) (`` ") (NN r) ('' "))
+      (VP (VBZ is)
+        (VP (VBN rolled)
+          (S
+            (VP (TO to)
+              (VP (VB emulate)
+                (NP (DT the) (NNS drums))
+                (PP (IN at)
+                  (NP
+                    (NP (DT the) (NN end))
+                    (PP (IN of)
+                      (NP (DT the) (NN verse)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Brian
+			coref:	IDENT			1	0-2	Brian May 's 
+			name:	PERSON				0-1	Brian May 
+	1	May
+	2	's
+	3	name
+			sense:	name.n.01
+	4	is
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	is 
+	5	then
+			sense:	then.r.01
+	6	said
+			sense:	state.v.01
+			prop:	say.01
+			V		6-6	said 
+			N-ARG-A1		0-3	Brian May 's name 
+			N-ARGM-TMP		5-5	then 
+			N-ARGM-TMP		7-7	twice 
+			N-ARGM-TMP		9-14	just before his guitar solo starts 
+	7	twice
+			sense:	twice.r.01
+	8	(
+	9	just
+			sense:	just.r.03
+	10	before
+	11	his
+			coref:	IDENT			1	11-11	his 
+	12	guitar
+			sense:	guitar.n.01
+	13	solo
+			sense:	solo.n.02
+	14	starts
+			sense:	get_down.v.07
+			prop:	start.01
+			V		14-14	starts 
+			N-ARG-A1		11-13	his guitar solo 
+	15	)
+	16	,
+	17	and
+	18	while
+	19	saying
+			sense:	state.v.01
+			prop:	say.01
+			V		19-19	saying 
+			N-ARG-A1		20-23	" Roger Taylor " 
+	20	"
+	21	Roger
+			coref:	IDENT			0	21-22	Roger Taylor 
+			name:	PERSON				21-22	Roger Taylor 
+	22	Taylor
+	23	"
+	24	,
+	25	the
+	26	first
+			name:	ORDINAL				26-26	first 
+			sense:	first.a.01
+	27	"
+	28	r
+			sense:	r.n.03
+	29	"
+	30	is
+			sense:	be.v.01
+			prop:	be.03
+			V		30-30	is 
+	31	rolled
+			sense:	roll.v.15
+			prop:	roll.01
+			V		31-31	rolled 
+			N-ARGM-TMP		18-23	while saying " Roger Taylor " 
+			N-ARG-A1		25-29	the first " r " 
+			N-ARGM-PRP		32-41	to emulate the drums at the end of the verse 
+	32	to
+	33	emulate
+			sense:	emulate.v.02
+			prop:	emulate.01
+			V		33-33	emulate 
+			N-ARG-A1		34-41	the drums at the end of the verse 
+	34	the
+	35	drums
+			sense:	drum.n.01
+	36	at
+	37	the
+	38	end
+			sense:	end.n.05
+	39	of
+	40	the
+	41	verse
+			sense:	verse.n.03
+	42	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Freddie Mercury 's name is said by drummer Roger Taylor , and the other ones by the lead singer Freddie Mercury .
+
+
+Treebanked sentence:
+--------------------
+Freddie Mercury 's name is said by drummer Roger Taylor , and the other ones by the lead singer Freddie Mercury . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Freddie) (NNP Mercury) (POS 's))
+      (NN name))
+    (VP (VBZ is)
+      (VP
+        (VP (VBN said)
+          (PP (IN by)
+            (NP (NN drummer) (NNP Roger) (NNP Taylor))))
+        (, ,)
+        (CC and)
+        (VP
+          (NP (DT the) (JJ other) (NNS ones))
+          (PP (IN by)
+            (NP (DT the)
+              (NML (NN lead) (NN singer))
+              (NNP Freddie) (NNP Mercury))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Freddie
+			coref:	IDENT			4	0-2	Freddie Mercury 's 
+			name:	ORGANIZATION				0-1	Freddie Mercury 
+	1	Mercury
+	2	's
+	3	name
+			sense:	name.n.01
+	4	is
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	is 
+	5	said
+			sense:	say.v.08
+			prop:	say.01
+			V		5-5	said 
+			N-ARG-A1		0-3	Freddie Mercury 's name 
+			N-ARG-A0		6-9	by drummer Roger Taylor 
+	6	by
+	7	drummer
+			coref:	IDENT			0	7-9	drummer Roger Taylor 
+			name:	TITLE				7-7	drummer 
+			sense:	drummer.n.01
+	8	Roger
+			name:	PERSON				8-9	Roger Taylor 
+	9	Taylor
+	10	,
+	11	and
+	12	the
+	13	other
+			sense:	other.a.01
+	14	ones
+			sense:	one.n.01
+	15	by
+	16	the
+	17	lead
+			sense:	star.n.04
+	18	singer
+			name:	TITLE				18-18	singer 
+			sense:	singer.n.01
+	19	Freddie
+			name:	PERSON				19-20	Freddie Mercury 
+	20	Mercury
+	21	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.17-19	drummer Roger Taylor 
+				1.13-13	Taylor 
+				3.0-0	Taylor 
+				3.3-3	he 
+				3.31-31	his 
+				6.21-22	Roger Taylor 
+				7.7-9	drummer Roger Taylor 
+	Chain 1 (IDENT)
+				6.0-2	Brian May 's 
+				6.11-11	his 
+	Chain 2 (IDENT)
+				0.6-23	a song by the British rock band Queen , written by drummer Roger Taylor but credited to Queen 
+				1.0-1	The song 
+				2.8-8	it 
+				3.9-10	the song 
+				4.0-1	This song 
+	Chain 3 (IDENT)
+				4.9-10	Queen 's 
+				0.23-23	Queen 
+	Chain 4 (IDENT)
+				7.0-2	Freddie Mercury 's 
+				1.6-7	Freddie Mercury 
+

@@ -1,0 +1,578 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Allen County is a county in the U.S. state of Ohio .
+
+
+Treebanked sentence:
+--------------------
+Allen County is a county in the U.S. state of Ohio . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Allen) (NNP County))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN county))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNP U.S.) (NN state))
+            (PP (IN of)
+              (NP (NNP Ohio)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Allen
+			name:	CITY				0-0	Allen 
+	1	County
+			name:	LOCATION				1-1	County 
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Allen County 
+			N-ARG-A2		3-10	a county in the U.S. state of Ohio 
+	3	a
+	4	county
+			sense:	county.n.01
+	5	in
+	6	the
+	7	U.S.
+			name:	COUNTRY				7-7	U.S. 
+	8	state
+			sense:	state.n.01
+	9	of
+	10	Ohio
+			name:	STATE_OR_PROVINCE				10-10	Ohio 
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As of the 2010 census , the population was 106,331 .
+
+
+Treebanked sentence:
+--------------------
+As of the 2010 census , the population was 106,331 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN As)
+      (PP (IN of)
+        (NP (DT the) (CD 2010) (NN census))))
+    (, ,)
+    (NP (DT the) (NN population))
+    (VP (VBD was)
+      (NP (CD 106,331)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	of
+	2	the
+	3	2010
+			name:	DATE				3-3	2010 
+	4	census
+			sense:	census.n.01
+	5	,
+	6	the
+	7	population
+			sense:	population.n.04
+	8	was
+			sense:	equal.v.01
+			prop:	be.01
+			V		8-8	was 
+			N-ARGM-TMP		0-4	As of the 2010 census 
+			N-ARG-A1		6-7	the population 
+			N-ARG-A2		9-9	106,331 
+	9	106,331
+			name:	NUMBER				9-9	106,331 
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The county seat is Lima .
+
+
+Treebanked sentence:
+--------------------
+The county seat is Lima . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN county) (NN seat))
+    (VP (VBZ is)
+      (NP (NNP Lima)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	county
+			sense:	county.n.01
+	2	seat
+			sense:	seat.n.05
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	The county seat 
+			N-ARG-A2		4-4	Lima 
+	4	Lima
+			coref:	IDENT			1	4-4	Lima 
+			name:	CITY				4-4	Lima 
+	5	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The county was created in 1820 and organized in 1831 .
+
+
+Treebanked sentence:
+--------------------
+The county was created in 1820 and organized in 1831 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN county))
+    (VP (VBD was)
+      (VP
+        (VP (VBN created)
+          (PP (IN in)
+            (NP (CD 1820))))
+        (CC and)
+        (VP (VBN organized)
+          (PP (IN in)
+            (NP (CD 1831))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	county
+			sense:	county.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	created
+			sense:	create.v.02
+			prop:	create.01
+			V		3-3	created 
+			N-ARG-A1		0-1	The county 
+			N-ARGM-TMP		4-5	in 1820 
+	4	in
+	5	1820
+			name:	DATE				5-5	1820 
+	6	and
+	7	organized
+			sense:	form.v.01
+			prop:	organize.01
+			V		7-7	organized 
+			N-ARG-A1		0-1	The county 
+			N-ARGM-TMP		8-9	in 1831 
+	8	in
+	9	1831
+			name:	DATE				9-9	1831 
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The county is named for Colonel John Allen , who was killed leading his men at the Battle of Frenchtown , during the War of 1812 .
+
+
+Treebanked sentence:
+--------------------
+The county is named for Colonel John Allen , who was killed leading his men at the Battle of Frenchtown , during the War of 1812 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN county))
+    (VP (VBZ is)
+      (VP (VBN named)
+        (PP (IN for)
+          (NP
+            (NP (NNP Colonel) (NNP John) (NNP Allen))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD was)
+                  (VP (VBN killed)
+                    (S
+                      (VP (VBG leading)
+                        (NP (PRP$ his) (NNS men))
+                        (PP (IN at)
+                          (NP
+                            (NP (DT the) (NN Battle))
+                            (PP (IN of)
+                              (NP (NNP Frenchtown)))))
+                        (, ,)
+                        (PP (IN during)
+                          (NP
+                            (NP (DT the) (NNP War))
+                            (PP (IN of)
+                              (NP (CD 1812)))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	county
+			sense:	county.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	named
+			sense:	name.v.01
+			prop:	name.02
+			V		3-3	named 
+			N-ARG-A1		0-1	The county 
+			N-ARG-A2		4-25	for Colonel John Allen , who was killed leading his men at the Battle of Frenchtown , during the War of 1812 
+	4	for
+	5	Colonel
+			name:	TITLE				5-5	Colonel 
+	6	John
+			name:	PERSON				6-7	John Allen 
+	7	Allen
+	8	,
+	9	who
+	10	was
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	was 
+	11	killed
+			sense:	kill.v.01
+			prop:	kill.01
+			V		11-11	killed 
+			N-ARG-A1		5-7	Colonel John Allen 
+			R-ARG-A1		9-9	who 
+			N-ARGM-PRD		12-14	leading his men 
+			N-ARG-A2		15-19	at the Battle of Frenchtown 
+			N-ARGM-TMP		21-25	during the War of 1812 
+	12	leading
+			sense:	lead.v.01
+			prop:	lead.01
+			V		12-12	leading 
+			N-ARG-A0		9-9	who 
+			N-ARG-A1		13-14	his men 
+			N-ARGM-LOC		15-19	at the Battle of Frenchtown 
+	13	his
+	14	men
+			sense:	serviceman.n.01
+	15	at
+	16	the
+	17	Battle
+			sense:	battle.n.01
+	18	of
+	19	Frenchtown
+			name:	LOCATION				19-19	Frenchtown 
+	20	,
+	21	during
+	22	the
+	23	War
+			name:	CAUSE_OF_DEATH				23-23	War 
+	24	of
+	25	1812
+			name:	DATE				25-25	1812 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It has also been claimed the county was named for Revolutionary War soldier Ethan Allen , but the weight of the evidence in favor of John Allen led the General Assembly to declare in 1976 that the county was named for him .
+
+
+Treebanked sentence:
+--------------------
+It has also been claimed the county was named for Revolutionary War soldier Ethan Allen , but the weight of the evidence in favor of John Allen led the General Assembly to declare in 1976 that the county was named for him . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ has)
+        (ADVP (RB also))
+        (VP (VBN been)
+          (VP (VBN claimed)
+            (SBAR
+              (S
+                (NP (DT the) (NN county))
+                (VP (VBD was)
+                  (VP (VBN named)
+                    (PP (IN for)
+                      (NP (NNP Revolutionary) (NNP War) (NN soldier) (NNP Ethan) (NNP Allen)))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (DT the) (NN weight))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN evidence))
+            (PP (IN in)
+              (NP
+                (NP (NN favor))
+                (PP (IN of)
+                  (NP (NNP John) (NNP Allen))))))))
+      (VP (VBD led)
+        (NP (DT the) (NNP General) (NNP Assembly))
+        (S
+          (VP (TO to)
+            (VP (VB declare)
+              (PP (IN in)
+                (NP (CD 1976)))
+              (SBAR (IN that)
+                (S
+                  (NP (DT the) (NN county))
+                  (VP (VBD was)
+                    (VP (VBN named)
+                      (PP (IN for)
+                        (NP (PRP him))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	also
+			sense:	besides.r.02
+	3	been
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	been 
+	4	claimed
+			sense:	claim.v.01
+			prop:	claim.01
+			V		4-4	claimed 
+			R-ARG-A1		0-0	It 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A1		5-14	the county was named for Revolutionary War soldier Ethan Allen 
+	5	the
+	6	county
+			sense:	county.n.01
+	7	was
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	was 
+	8	named
+			sense:	name.v.01
+			prop:	name.02
+			V		8-8	named 
+			N-ARG-A1		5-6	the county 
+			N-ARG-A2		9-14	for Revolutionary War soldier Ethan Allen 
+	9	for
+	10	Revolutionary
+			name:	IDEOLOGY				10-10	Revolutionary 
+	11	War
+			name:	CAUSE_OF_DEATH				11-11	War 
+	12	soldier
+			name:	TITLE				12-12	soldier 
+			sense:	soldier.n.01
+	13	Ethan
+			name:	PERSON				13-14	Ethan Allen 
+	14	Allen
+	15	,
+	16	but
+	17	the
+	18	weight
+			sense:	weight.n.03
+	19	of
+	20	the
+	21	evidence
+			sense:	evidence.n.01
+	22	in
+	23	favor
+			sense:	favor.n.03
+	24	of
+	25	John
+			coref:	IDENT			0	25-26	John Allen 
+			name:	PERSON				25-26	John Allen 
+	26	Allen
+	27	led
+			sense:	lead.v.05
+			prop:	lead.03
+			V		27-27	led 
+			N-ARG-A0		17-26	the weight of the evidence in favor of John Allen 
+			N-ARG-A1		28-30	the General Assembly 
+			N-ARG-A2		31-41	to declare in 1976 that the county was named for him 
+	28	the
+	29	General
+			name:	ORGANIZATION				29-30	General Assembly 
+	30	Assembly
+	31	to
+	32	declare
+			sense:	announce.v.02
+			prop:	declare.02
+			V		32-32	declare 
+			N-ARG-A0		28-30	the General Assembly 
+			N-ARGM-TMP		33-34	in 1976 
+			N-ARG-A1		35-41	that the county was named for him 
+	33	in
+	34	1976
+			name:	DATE				34-34	1976 
+	35	that
+	36	the
+	37	county
+			sense:	county.n.01
+	38	was
+			sense:	be.v.01
+			prop:	be.03
+			V		38-38	was 
+	39	named
+			sense:	name.v.01
+			prop:	name.02
+			V		39-39	named 
+			N-ARG-A1		36-37	the county 
+			N-ARG-A2		40-41	for him 
+	40	for
+	41	him
+			coref:	IDENT			0	41-41	him 
+	42	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Allen County comprises the Lima , OH Metropolitan Statistical Area , which is also part of the Lima - Van Wert - Wapakoneta , OH Combined Statistical Area .
+
+
+Treebanked sentence:
+--------------------
+Allen County comprises the Lima , OH Metropolitan Statistical Area , which is also part of the Lima - Van Wert - Wapakoneta , OH Combined Statistical Area . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Allen) (NNP County))
+    (VP (VBZ comprises)
+      (NP
+        (NP
+          (NP (DT the) (NNP Lima))
+          (, ,)
+          (NP (NNP OH) (NNP Metropolitan) (NNP Statistical) (NNP Area)))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ is)
+              (ADVP (RB also))
+              (NP
+                (NP (NN part))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NNP Lima) (HYPH -) (NNP Van) (NNP Wert) (HYPH -) (NNP Wapakoneta))
+                    (, ,)
+                    (NP
+                      (NML (NNP OH) (NNP Combined))
+                      (NNP Statistical) (NNP Area))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Allen
+			name:	CITY				0-0	Allen 
+	1	County
+			name:	LOCATION				1-1	County 
+	2	comprises
+			sense:	incorporate.v.02
+			prop:	comprise.01
+			V		2-2	comprises 
+			N-ARG-A1		3-27	the Lima , OH Metropolitan Statistical Area , which is also part of the Lima - Van Wert - Wapakoneta , OH Combined Statistical Area 
+	3	the
+	4	Lima
+			name:	CITY				4-4	Lima 
+	5	,
+	6	OH
+			name:	STATE_OR_PROVINCE				6-6	OH 
+	7	Metropolitan
+	8	Statistical
+	9	Area
+	10	,
+	11	which
+	12	is
+			sense:	be.v.01
+			prop:	be.01
+			V		12-12	is 
+			N-ARG-A1		3-9	the Lima , OH Metropolitan Statistical Area 
+			R-ARG-A1		11-11	which 
+			N-ARGM-DIS		13-13	also 
+			N-ARG-A2		14-27	part of the Lima - Van Wert - Wapakoneta , OH Combined Statistical Area 
+	13	also
+			sense:	besides.r.02
+	14	part
+			sense:	part.n.01
+	15	of
+	16	the
+	17	Lima
+			coref:	IDENT			1	17-17	Lima 
+			name:	CITY				17-17	Lima 
+	18	-
+	19	Van
+			name:	PERSON				19-20	Van Wert 
+	20	Wert
+	21	-
+	22	Wapakoneta
+			name:	CITY				22-22	Wapakoneta 
+	23	,
+	24	OH
+			name:	STATE_OR_PROVINCE				24-24	OH 
+	25	Combined
+	26	Statistical
+	27	Area
+	28	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.25-26	John Allen 
+				5.41-41	him 
+	Chain 1 (IDENT)
+				2.4-4	Lima 
+				6.17-17	Lima 
+

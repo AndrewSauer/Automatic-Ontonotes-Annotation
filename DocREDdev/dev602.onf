@@ -1,0 +1,555 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mess of Blues is an album by Jeff Healey .
+
+
+Treebanked sentence:
+--------------------
+Mess of Blues is an album by Jeff Healey . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NN Mess))
+      (PP (IN of)
+        (NP (NNS Blues))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN album))
+        (PP (IN by)
+          (NP (NNP Jeff) (NNP Healey)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mess
+			coref:	IDENT			2	0-2	Mess of Blues 
+			sense:	mess.n.01
+	1	of
+	2	Blues
+			sense:	blues.n.01
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Mess of Blues 
+			N-ARG-A2		4-8	an album by Jeff Healey 
+	4	an
+			coref:	IDENT			0	4-8	an album by Jeff Healey 
+	5	album
+			sense:	album.n.01
+	6	by
+	7	Jeff
+			coref:	IDENT			3	7-8	Jeff Healey 
+			name:	PERSON				7-8	Jeff Healey 
+	8	Healey
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was released in 2008 less than two weeks after his death and just three weeks shy of his 42nd birthday .
+
+
+Treebanked sentence:
+--------------------
+It was released in 2008 less than two weeks after his death and just three weeks shy of his 42nd birthday . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN released)
+        (PP (IN in)
+          (NP (CD 2008)))
+        (UCP
+          (PP
+            (NP
+              (QP (JJR less) (IN than) (CD two))
+              (NNS weeks))
+            (IN after)
+            (NP (PRP$ his) (NN death)))
+          (CC and)
+          (ADVP (RB just))
+          (ADJP
+            (NP (CD three) (NNS weeks))
+            (JJ shy)
+            (PP (IN of)
+              (NP (PRP$ his) (NNP 42nd) (NN birthday)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		2-2	released 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		3-4	in 2008 
+			N-ARGM-TMP		5-20	less than two weeks after his death and just three weeks shy of his 42nd birthday 
+	3	in
+	4	2008
+			name:	DATE				4-4	2008 
+	5	less
+			name:	DURATION				5-8	less than two weeks 
+			sense:	less.a.01
+	6	than
+	7	two
+	8	weeks
+			sense:	week.n.01
+	9	after
+	10	his
+	11	death
+			sense:	death.n.01
+	12	and
+	13	just
+			sense:	precisely.r.01
+	14	three
+			name:	DURATION				14-15	three weeks 
+	15	weeks
+			sense:	week.n.01
+	16	shy
+			sense:	shy.s.02
+	17	of
+	18	his
+	19	42nd
+			name:	ORDINAL				19-19	42nd 
+	20	birthday
+			sense:	birthday.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Four of the album 's tracks were recorded live in front of audiences , two of the live tracks at the Islington Academy in London , and the other two live tracks at Jeff Healey 's Roadhouse in Toronto .
+
+
+Treebanked sentence:
+--------------------
+Four of the album 's tracks were recorded live in front of audiences , two of the live tracks at the Islington Academy in London , and the other two live tracks at Jeff Healey 's Roadhouse in Toronto . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (CD Four))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NN album) (POS 's))
+          (NNS tracks))))
+    (VP (VBD were)
+      (VP (VBN recorded)
+        (ADVP (RB live))
+        (PP (IN in)
+          (NP
+            (NP
+              (NP (NN front))
+              (PP (IN of)
+                (NP (NNS audiences))))
+            (, ,)
+            (NP
+              (NP (CD two))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (JJ live) (NNS tracks))
+                  (PP (IN at)
+                    (NP
+                      (NP (DT the) (NNP Islington) (NNP Academy))
+                      (PP (IN in)
+                        (NP (NNP London))))))))
+            (, ,)
+            (CC and)
+            (NP
+              (NP (DT the) (JJ other) (CD two) (JJ live) (NNS tracks))
+              (PP (IN at)
+                (NP
+                  (NP (NNP Jeff) (NNP Healey) (POS 's))
+                  (NNP Roadhouse))))))
+        (PP (IN in)
+          (NP (NNP Toronto)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Four
+			name:	NUMBER				0-0	Four 
+	1	of
+	2	the
+			coref:	IDENT			0	2-4	the album 's 
+			coref:	IDENT			1	2-5	the album 's tracks 
+	3	album
+			sense:	album.n.01
+	4	's
+	5	tracks
+			sense:	cut.n.08
+	6	were
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	were 
+	7	recorded
+			sense:	record.v.02
+			prop:	record.01
+			V		7-7	recorded 
+			N-ARG-A1		0-5	Four of the album 's tracks 
+			N-ARGM-MNR		8-8	live 
+			N-ARGM-LOC		9-12	in front of audiences 
+	8	live
+			sense:	live.r.01
+	9	in
+	10	front
+			sense:	presence.n.02
+	11	of
+	12	audiences
+			sense:	audience.n.01
+	13	,
+	14	two
+			name:	NUMBER				14-14	two 
+	15	of
+	16	the
+			coref:	IDENT			1	16-24	the live tracks at the Islington Academy in London 
+	17	live
+			sense:	live.a.01
+	18	tracks
+			sense:	cut.n.08
+	19	at
+	20	the
+	21	Islington
+			name:	LOCATION				21-22	Islington Academy 
+	22	Academy
+	23	in
+	24	London
+			name:	CITY				24-24	London 
+	25	,
+	26	and
+	27	the
+	28	other
+			sense:	other.a.01
+	29	two
+			name:	NUMBER				29-29	two 
+	30	live
+			sense:	live.a.01
+	31	tracks
+			sense:	cut.n.08
+	32	at
+	33	Jeff
+			coref:	IDENT			3	33-36	Jeff Healey 's Roadhouse 
+			coref:	IDENT			3	33-35	Jeff Healey 's 
+			name:	PERSON				33-34	Jeff Healey 
+	34	Healey
+	35	's
+	36	Roadhouse
+	37	in
+	38	Toronto
+			name:	CITY				38-38	Toronto 
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The other six tracks were recorded at Studio 92 in Canada by Norm Barker and Richard Uglow .
+
+
+Treebanked sentence:
+--------------------
+The other six tracks were recorded at Studio 92 in Canada by Norm Barker and Richard Uglow . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJ other) (CD six) (NNS tracks))
+    (VP (VBD were)
+      (VP (VBN recorded)
+        (PP (IN at)
+          (NP (NNP Studio) (CD 92)))
+        (PP (IN in)
+          (NP (NNP Canada)))
+        (PP (IN by)
+          (NP
+            (NP (NNP Norm) (NNP Barker))
+            (CC and)
+            (NP (NNP Richard) (NNP Uglow))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-3	The other six tracks 
+	1	other
+			sense:	other.a.01
+	2	six
+			name:	NUMBER				2-2	six 
+	3	tracks
+			sense:	cut.n.08
+	4	were
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	were 
+	5	recorded
+			sense:	record.v.02
+			prop:	record.01
+			V		5-5	recorded 
+			N-ARG-A1		0-3	The other six tracks 
+			N-ARGM-LOC		6-10	at Studio 92 in Canada 
+			N-ARG-A0		11-16	by Norm Barker and Richard Uglow 
+	6	at
+	7	Studio
+	8	92
+			name:	NUMBER				8-8	92 
+	9	in
+	10	Canada
+			name:	COUNTRY				10-10	Canada 
+	11	by
+	12	Norm
+			name:	PERSON				12-13	Norm Barker 
+	13	Barker
+	14	and
+	15	Richard
+			name:	PERSON				15-16	Richard Uglow 
+	16	Uglow
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The whole album features the band which normally accompanied Jeff at his club , Jeff Healey 's Roadhouse .
+
+
+Treebanked sentence:
+--------------------
+The whole album features the band which normally accompanied Jeff at his club , Jeff Healey 's Roadhouse . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJ whole) (NN album))
+    (VP (VBZ features)
+      (NP
+        (NP (DT the) (NN band))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (ADVP (RB normally))
+            (VP (VBN accompanied)
+              (NP (NNP Jeff))
+              (PP (IN at)
+                (NP
+                  (NP (PRP$ his) (NN club))
+                  (, ,)
+                  (NP
+                    (NP (NNP Jeff) (NNP Healey) (POS 's))
+                    (NNP Roadhouse)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-2	The whole album 
+	1	whole
+			sense:	whole.a.01
+	2	album
+			sense:	album.n.01
+	3	features
+			sense:	have.v.02
+			prop:	feature.01
+			V		3-3	features 
+			N-ARG-A0		0-2	The whole album 
+			N-ARG-A1		4-17	the band which normally accompanied Jeff at his club , Jeff Healey 's Roadhouse 
+	4	the
+	5	band
+			sense:	band.n.02
+	6	which
+	7	normally
+			sense:	normally.r.01
+	8	accompanied
+			sense:	play_along.v.02
+			prop:	accompany.01
+			V		8-8	accompanied 
+			N-ARG-A0		4-5	the band 
+			R-ARG-A0		6-6	which 
+			N-ARGM-ADV		7-7	normally 
+			N-ARG-A1		9-9	Jeff 
+			N-ARGM-LOC		10-17	at his club , Jeff Healey 's Roadhouse 
+	9	Jeff
+			coref:	IDENT			3	9-9	Jeff 
+			name:	PERSON				9-9	Jeff 
+	10	at
+	11	his
+			coref:	IDENT			3	11-11	his 
+	12	club
+			sense:	cabaret.n.01
+	13	,
+	14	Jeff
+			coref:	IDENT			3	14-17	Jeff Healey 's Roadhouse 
+			coref:	IDENT			3	14-16	Jeff Healey 's 
+			name:	PERSON				14-15	Jeff Healey 
+	15	Healey
+	16	's
+	17	Roadhouse
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The song " Mess of Blues " , which appears on the album was written by Doc Pomus and Mort Shuman and was originally recorded by Elvis Presley .
+
+
+Treebanked sentence:
+--------------------
+The song " Mess of Blues " , which appears on the album was written by Doc Pomus and Mort Shuman and was originally recorded by Elvis Presley . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT The) (NN song))
+        (NP (`` ")
+          (NP (NN Mess))
+          (PP (IN of)
+            (NP (NNS Blues)))
+          ('' ")))
+      (, ,)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBZ appears)
+            (PP (IN on)
+              (NP (DT the) (NN album)))))))
+    (VP
+      (VP (VBD was)
+        (VP (VBN written)
+          (PP (IN by)
+            (NP
+              (NP (NNP Doc) (NNP Pomus))
+              (CC and)
+              (NP (NNP Mort) (NNP Shuman))))))
+      (CC and)
+      (VP (VBD was)
+        (ADVP (RB originally))
+        (VP (VBN recorded)
+          (PP (IN by)
+            (NP (NNP Elvis) (NNP Presley))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	song
+			sense:	song.n.01
+	2	"
+	3	Mess
+			sense:	mess.n.01
+	4	of
+	5	Blues
+			sense:	blues.n.01
+	6	"
+	7	,
+	8	which
+	9	appears
+			sense:	appear.v.03
+			prop:	appear.01
+			V		9-9	appears 
+			N-ARG-A1		0-6	The song " Mess of Blues " 
+			R-ARG-A1		8-8	which 
+			N-ARGM-LOC		10-12	on the album 
+	10	on
+	11	the
+			coref:	IDENT			0	11-12	the album 
+	12	album
+			sense:	album.n.01
+	13	was
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	was 
+	14	written
+			sense:	compose.v.02
+			prop:	write.01
+			V		14-14	written 
+			N-ARG-A1		0-12	The song " Mess of Blues " , which appears on the album 
+			N-ARG-A0		15-20	by Doc Pomus and Mort Shuman 
+	15	by
+	16	Doc
+			name:	PERSON				16-17	Doc Pomus 
+	17	Pomus
+	18	and
+	19	Mort
+			name:	PERSON				19-20	Mort Shuman 
+	20	Shuman
+	21	and
+	22	was
+			sense:	be.v.01
+			prop:	be.03
+			V		22-22	was 
+	23	originally
+			sense:	in_the_first_place.r.01
+	24	recorded
+			sense:	record.v.02
+			prop:	record.01
+			V		24-24	recorded 
+			N-ARG-A1		0-12	The song " Mess of Blues " , which appears on the album 
+			N-ARGM-TMP		23-23	originally 
+			N-ARG-A0		25-27	by Elvis Presley 
+	25	by
+	26	Elvis
+			name:	PERSON				26-27	Elvis Presley 
+	27	Presley
+	28	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.0-2	The whole album 
+				0.4-8	an album by Jeff Healey 
+				2.2-4	the album 's 
+				5.11-12	the album 
+	Chain 1 (IDENT)
+				2.2-5	the album 's tracks 
+				2.16-24	the live tracks at the Islington Academy in London 
+				3.0-3	The other six tracks 
+	Chain 2 (IDENT)
+				0.0-2	Mess of Blues 
+				1.0-0	It 
+	Chain 3 (IDENT)
+				2.33-36	Jeff Healey 's Roadhouse 
+				0.7-8	Jeff Healey 
+				2.33-35	Jeff Healey 's 
+				4.9-9	Jeff 
+				4.11-11	his 
+				4.14-17	Jeff Healey 's Roadhouse 
+				4.14-16	Jeff Healey 's 
+

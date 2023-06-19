@@ -1,0 +1,560 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Juan Escalera ( born March 27 , 1961 ) is a Mexican luchador enmascarado ( masked professional wrestler ) better known as Octagón .
+
+
+Treebanked sentence:
+--------------------
+Juan Escalera ( born March 27 , 1961 ) is a Mexican luchador enmascarado ( masked professional wrestler ) better known as Octagón . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Juan) (NNP Escalera))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP March) (CD 27) (, ,) (CD 1961)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT a) (JJ Mexican) (NN luchador) (NN enmascarado))
+          (-LRB- -LRB-)
+          (VP (VBN masked)
+            (NP (JJ professional) (NN wrestler)))
+          (-RRB- -RRB-))
+        (VP
+          (ADVP (JJR better))
+          (VBN known)
+          (PP (IN as)
+            (NP (NNP Octagón))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Juan
+			name:	PERSON				0-1	Juan Escalera 
+	1	Escalera
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Juan Escalera 
+			N-ARGM-TMP		4-7	March 27 , 1961 
+	4	March
+			name:	DATE				4-7	March 27 , 1961 
+	5	27
+	6	,
+	7	1961
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	Juan Escalera ( born March 27 , 1961 ) 
+			N-ARG-A2		10-22	a Mexican luchador enmascarado ( masked professional wrestler ) better known as Octagón 
+	10	a
+	11	Mexican
+			name:	NATIONALITY				11-11	Mexican 
+	12	luchador
+	13	enmascarado
+	14	(
+	15	masked
+			sense:	mask.v.02
+			prop:	mask.01
+			V		15-15	masked 
+			N-ARG-A1		16-17	professional wrestler 
+	16	professional
+			sense:	professional.a.01
+	17	wrestler
+			name:	TITLE				17-17	wrestler 
+			sense:	wrestler.n.01
+	18	)
+	19	better
+			sense:	good.a.01
+	20	known
+			sense:	know.v.04
+			prop:	know.01
+			V		20-20	known 
+			N-ARG-A1		10-18	a Mexican luchador enmascarado ( masked professional wrestler ) 
+			N-ARGM-MNR		19-19	better 
+			N-ARG-A2		21-22	as Octagón 
+	21	as
+	22	Octagón
+			coref:	IDENT			0	22-22	Octagón 
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is best known for working for Asistencia Asesoría y Administración ( AAA ) , having worked for the company since it was founded in 1992 .
+
+
+Treebanked sentence:
+--------------------
+He is best known for working for Asistencia Asesoría y Administración ( AAA ) , having worked for the company since it was founded in 1992 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (ADVP (RBS best))
+      (VP (VBN known)
+        (PP (IN for)
+          (S
+            (VP (VBG working)
+              (PP (IN for)
+                (NP (NNP Asistencia) (NNP Asesoría) (NNP y) (NNP Administración))))))
+        (PRN (-LRB- -LRB-)
+          (NP (NNP AAA))
+          (-RRB- -RRB-))
+        (, ,)
+        (S
+          (VP (VBG having)
+            (VP (VBN worked)
+              (PP (IN for)
+                (NP (DT the) (NN company)))
+              (SBAR (IN since)
+                (S
+                  (NP (PRP it))
+                  (VP (VBD was)
+                    (VP (VBN founded)
+                      (PP (IN in)
+                        (NP (CD 1992))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-25	best known for working for Asistencia Asesoría y Administración ( AAA ) , having worked for the company since it was founded in 1992 
+	2	best
+			sense:	well.r.02
+	3	known
+			sense:	know.v.04
+			prop:	know.01
+			V		3-3	known 
+			N-ARG-A1		0-0	He 
+			N-ARGM-MNR		2-2	best 
+			N-ARG-A2		4-25	for working for Asistencia Asesoría y Administración ( AAA ) , having worked for the company since it was founded in 1992 
+	4	for
+	5	working
+			sense:	work.v.02
+			prop:	work.01
+			V		5-5	working 
+			N-ARG-A0		0-0	He 
+			N-ARG-A2		6-13	for Asistencia Asesoría y Administración ( AAA ) 
+			N-ARGM-PRD		15-25	having worked for the company since it was founded in 1992 
+	6	for
+	7	Asistencia
+	8	Asesoría
+	9	y
+	10	Administración
+	11	(
+	12	AAA
+			coref:	IDENT			1	12-12	AAA 
+			name:	ORGANIZATION				12-12	AAA 
+	13	)
+	14	,
+	15	having
+			sense:	have.v.01
+			prop:	shaving.01
+			V		15-15	having 
+	16	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		16-16	worked 
+			N-ARG-A0		0-0	He 
+			N-ARG-A2		17-19	for the company 
+			N-ARGM-TMP		20-25	since it was founded in 1992 
+	17	for
+	18	the
+			coref:	IDENT			2	18-19	the company 
+	19	company
+			sense:	company.n.01
+	20	since
+	21	it
+			coref:	IDENT			2	21-21	it 
+	22	was
+			sense:	be.v.01
+			prop:	be.03
+			V		22-22	was 
+	23	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		23-23	founded 
+			N-ARG-A1		21-21	it 
+			N-ARGM-TMP		24-25	in 1992 
+	24	in
+	25	1992
+			name:	DATE				25-25	1992 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2011 he was inducted into the promotion 's Hall of Fame .
+
+
+Treebanked sentence:
+--------------------
+In 2011 he was inducted into the promotion 's Hall of Fame . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2011)))
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN inducted)
+        (PP (IN into)
+          (NP
+            (NP
+              (NP (DT the) (NN promotion) (POS 's))
+              (NN Hall))
+            (PP (IN of)
+              (NP (NNP Fame)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2011
+			name:	DATE				1-1	2011 
+	2	he
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	inducted
+			sense:	induct.v.03
+			prop:	induct.01
+			V		4-4	inducted 
+			N-ARGM-TMP		0-1	In 2011 
+			N-ARG-A1		2-2	he 
+			N-ARG-A2		5-11	into the promotion 's Hall of Fame 
+	5	into
+	6	the
+	7	promotion
+			sense:	promotion.n.01
+	8	's
+	9	Hall
+			name:	ORGANIZATION				9-11	Hall of Fame 
+			sense:	hall.n.13
+	10	of
+	11	Fame
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Octagón formed a tag team with El Hijo Del Santo to take on Los Gringos Locos ( Eddie Guerrero and Art Barr ) in a double mask versus hair match on the first pay - per - view put on by a Mexican wrestling promotion to air in the United States .
+
+
+Treebanked sentence:
+--------------------
+Octagón formed a tag team with El Hijo Del Santo to take on Los Gringos Locos ( Eddie Guerrero and Art Barr ) in a double mask versus hair match on the first pay - per - view put on by a Mexican wrestling promotion to air in the United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Octagón))
+    (VP (VBD formed)
+      (NP (DT a) (NN tag) (NN team))
+      (PP (IN with)
+        (NP (NNP El) (NNP Hijo) (NNP Del) (NNP Santo)))
+      (S
+        (VP (TO to)
+          (VP (VB take)
+            (PP (IN on)
+              (NP
+                (NP
+                  (NP (NNP Los) (NNP Gringos) (NNP Locos))
+                  (-LRB- -LRB-)
+                  (NP
+                    (NP (NNP Eddie) (NNP Guerrero))
+                    (CC and)
+                    (NP (NNP Art) (NNP Barr)))
+                  (-RRB- -RRB-))
+                (PP (IN in)
+                  (NP
+                    (NP (DT a) (JJ double) (NN mask))
+                    (PP (IN versus)
+                      (NP (NN hair) (NN match)))))))
+            (PP (IN on)
+              (NP
+                (NP (DT the) (JJ first)
+                  (NML (NN pay) (HYPH -) (IN per) (HYPH -) (NN view)))
+                (VP (VBN put)
+                  (PRT (RP on))
+                  (PP (IN by)
+                    (NP (DT a) (JJ Mexican) (NN wrestling) (NN promotion)))
+                  (PP (IN to)
+                    (NP
+                      (NP (NN air))
+                      (PP (IN in)
+                        (NP (DT the) (NNP United) (NNP States))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Octagón
+			coref:	IDENT			0	0-0	Octagón 
+	1	formed
+			sense:	form.v.01
+			prop:	form.01
+			V		1-1	formed 
+			N-ARG-A0		0-0	Octagón 
+			N-ARG-A1		2-50	a tag team with El Hijo Del Santo to take on Los Gringos Locos ( Eddie Guerrero and Art Barr ) in a double mask versus hair match on the first pay - per - view put on by a Mexican wrestling promotion to air in the United States 
+	2	a
+	3	tag
+			sense:	tag.n.04
+	4	team
+			sense:	team.n.01
+	5	with
+	6	El
+			name:	ORGANIZATION				6-9	El Hijo Del Santo 
+	7	Hijo
+	8	Del
+	9	Santo
+	10	to
+	11	take
+			sense:	take.v.01
+			prop:	take.21
+			V		11-11	take 
+			N-ARG-A0		2-9	a tag team with El Hijo Del Santo 
+			N-ARG-A1		13-22	Los Gringos Locos ( Eddie Guerrero and Art Barr ) 
+			N-ARGM-LOC		23-50	in a double mask versus hair match on the first pay - per - view put on by a Mexican wrestling promotion to air in the United States 
+	12	on
+	13	Los
+			name:	ORGANIZATION				13-15	Los Gringos Locos 
+	14	Gringos
+	15	Locos
+	16	(
+	17	Eddie
+			name:	PERSON				17-18	Eddie Guerrero 
+	18	Guerrero
+	19	and
+	20	Art
+	21	Barr
+	22	)
+	23	in
+	24	a
+	25	double
+			sense:	double.s.02
+	26	mask
+			sense:	mask.n.01
+	27	versus
+	28	hair
+			sense:	hair.n.01
+	29	match
+			sense:	match.n.02
+	30	on
+	31	the
+	32	first
+			name:	ORDINAL				32-32	first 
+			sense:	first.a.01
+	33	pay
+			sense:	wage.n.01
+	34	-
+	35	per
+	36	-
+	37	view
+			sense:	view.n.02
+	38	put
+			sense:	put.v.02
+			prop:	put.08
+			V		38-38	put 
+			N-ARG-A1		31-37	the first pay - per - view 
+			N-ARG-A0		40-44	by a Mexican wrestling promotion 
+			N-ARGM-ADV		45-50	to air in the United States 
+	39	on
+	40	by
+	41	a
+	42	Mexican
+			name:	NATIONALITY				42-42	Mexican 
+	43	wrestling
+			sense:	wrestling.n.02
+	44	promotion
+			sense:	promotion.n.01
+	45	to
+	46	air
+			sense:	air.n.08
+	47	in
+	48	the
+	49	United
+			name:	COUNTRY				49-50	United States 
+	50	States
+	51	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Over the years the Octagón gimmick has spawned a Mascot called Octagoncito and an " Evil clone " known as Pentagón .
+
+
+Treebanked sentence:
+--------------------
+Over the years the Octagón gimmick has spawned a Mascot called Octagoncito and an " Evil clone " known as Pentagón . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Over)
+      (NP (DT the) (NNS years)))
+    (NP (DT the) (NNP Octagón) (NN gimmick))
+    (VP (VBZ has)
+      (VP (VBN spawned)
+        (NP
+          (NP
+            (NP (DT a) (NN Mascot))
+            (VP (VBN called)
+              (NP (NNP Octagoncito))))
+          (CC and)
+          (NP
+            (NP (DT an) (`` ") (JJ Evil) (NN clone) ('' "))
+            (VP (VBN known)
+              (PP (IN as)
+                (NP (NNP Pentagón))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Over
+	1	the
+			name:	DURATION				1-2	the years 
+	2	years
+			sense:	year.n.01
+	3	the
+	4	Octagón
+	5	gimmick
+			sense:	doodad.n.01
+	6	has
+			sense:	have.v.01
+			prop:	have.01
+			V		6-6	has 
+	7	spawned
+			sense:	engender.v.01
+			prop:	spawn.01
+			V		7-7	spawned 
+			N-ARGM-TMP		0-2	Over the years 
+			N-ARG-A0		3-5	the Octagón gimmick 
+			N-ARG-A1		8-20	a Mascot called Octagoncito and an " Evil clone " known as Pentagón 
+	8	a
+	9	Mascot
+			name:	MISC				9-9	Mascot 
+			sense:	mascot.n.01
+	10	called
+			sense:	name.v.01
+			prop:	call.01
+			V		10-10	called 
+			N-ARG-A1		8-9	a Mascot 
+			N-ARG-A2		11-11	Octagoncito 
+	11	Octagoncito
+	12	and
+	13	an
+	14	"
+	15	Evil
+			sense:	evil.a.01
+	16	clone
+			sense:	ringer.n.02
+	17	"
+	18	known
+			sense:	know.v.04
+			prop:	know.01
+			V		18-18	known 
+			N-ARG-A1		13-17	an " Evil clone " 
+			N-ARG-A2		19-20	as Pentagón 
+	19	as
+	20	Pentagón
+			name:	LOCATION				20-20	Pentagón 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2014 , Escalera quit AAA .
+
+
+Treebanked sentence:
+--------------------
+In 2014 , Escalera quit AAA . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2014)))
+    (, ,)
+    (NP (NNP Escalera))
+    (VP (VBD quit)
+      (NP (NNP AAA)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2014
+			name:	DATE				1-1	2014 
+	2	,
+	3	Escalera
+			name:	ORGANIZATION				3-3	Escalera 
+	4	quit
+			sense:	discontinue.v.01
+			prop:	quit.01
+			V		4-4	quit 
+			N-ARGM-TMP		0-1	In 2014 
+			N-ARG-A0		3-3	Escalera 
+			N-ARG-A1		5-5	AAA 
+	5	AAA
+			coref:	IDENT			1	5-5	AAA 
+			name:	ORGANIZATION				5-5	AAA 
+	6	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.22-22	Octagón 
+				3.0-0	Octagón 
+	Chain 1 (IDENT)
+				1.12-12	AAA 
+				5.5-5	AAA 
+	Chain 2 (IDENT)
+				1.18-19	the company 
+				1.21-21	it 
+

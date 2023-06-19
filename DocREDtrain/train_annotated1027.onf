@@ -1,0 +1,1159 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The President of Harvard University is the chief administrator of the university and the ex officio chairman of the Harvard Corporation .
+
+
+Treebanked sentence:
+--------------------
+The President of Harvard University is the chief administrator of the university and the ex officio chairman of the Harvard Corporation . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP President))
+      (PP (IN of)
+        (NP (NNP Harvard) (NNP University))))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT the) (JJ chief) (NN administrator))
+          (PP (IN of)
+            (NP (DT the) (NN university))))
+        (CC and)
+        (NP
+          (NP (DT the) (FW ex) (FW officio))
+          (NP
+            (NP (NN chairman))
+            (PP (IN of)
+              (NP (DT the) (NNP Harvard) (NNP Corporation)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	President
+			name:	TITLE				1-1	President 
+	2	of
+	3	Harvard
+			coref:	IDENT			0	3-4	Harvard University 
+			name:	ORGANIZATION				3-4	Harvard University 
+	4	University
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	The President of Harvard University 
+			N-ARG-A2		6-20	the chief administrator of the university and the ex officio chairman of the Harvard Corporation 
+	6	the
+	7	chief
+			sense:	chief.s.01
+	8	administrator
+			name:	TITLE				8-8	administrator 
+			sense:	administrator.n.01
+	9	of
+	10	the
+			coref:	IDENT			0	10-11	the university 
+	11	university
+			sense:	university.n.02
+	12	and
+	13	the
+	14	ex
+	15	officio
+	16	chairman
+			name:	TITLE				16-16	chairman 
+			sense:	president.n.04
+	17	of
+	18	the
+	19	Harvard
+			name:	ORGANIZATION				19-20	Harvard Corporation 
+	20	Corporation
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Each is appointed by and is responsible to the other members of that body , who delegate to the president the day - to - day running of the university .
+
+
+Treebanked sentence:
+--------------------
+Each is appointed by and is responsible to the other members of that body , who delegate to the president the day - to - day running of the university . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT Each))
+    (VP
+      (VP (VBZ is)
+        (VP (VBN appointed)
+          (PP (IN by))))
+      (CC and)
+      (VP (VBZ is)
+        (ADJP (JJ responsible)
+          (PP (IN to)
+            (NP
+              (NP (DT the) (JJ other) (NNS members))
+              (PP (IN of)
+                (NP
+                  (NP (DT that) (NN body))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBP delegate)
+                        (PP (IN to)
+                          (NP (DT the) (NN president)))
+                        (NP
+                          (NP (DT the)
+                            (NML (NN day) (HYPH -) (IN to) (HYPH -) (NN day))
+                            (NN running))
+                          (PP (IN of)
+                            (NP (DT the) (NN university))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Each
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	appointed
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		2-2	appointed 
+			N-ARG-A1		0-0	Each 
+			N-ARG-A0		3-3	by 
+	3	by
+	4	and
+	5	is
+			sense:	be.v.01
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-0	Each 
+			N-ARG-A2		6-29	responsible to the other members of that body , who delegate to the president the day - to - day running of the university 
+	6	responsible
+			sense:	responsible.a.01
+	7	to
+	8	the
+	9	other
+			sense:	other.a.01
+	10	members
+			sense:	member.n.01
+	11	of
+	12	that
+	13	body
+			sense:	body.n.02
+	14	,
+	15	who
+	16	delegate
+			sense:	delegate.v.01
+			prop:	delegate.01
+			V		16-16	delegate 
+			N-ARG-A0		8-13	the other members of that body 
+			R-ARG-A0		15-15	who 
+			N-ARG-A2		17-19	to the president 
+			N-ARG-A1		20-29	the day - to - day running of the university 
+	17	to
+	18	the
+	19	president
+			name:	TITLE				19-19	president 
+			sense:	president.n.05
+	20	the
+			name:	DATE				20-21	the day 
+	21	day
+			sense:	day.n.01
+	22	-
+	23	to
+	24	-
+	25	day
+			name:	DURATION				25-25	day 
+			sense:	day.n.01
+	26	running
+			sense:	running.n.04
+	27	of
+	28	the
+			coref:	IDENT			0	28-29	the university 
+	29	university
+			sense:	university.n.02
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Harvard is a famously decentralized university , noted for the " every tub on its own bottom " independence of its various constituent faculties .
+
+
+Treebanked sentence:
+--------------------
+Harvard is a famously decentralized university , noted for the " every tub on its own bottom " independence of its various constituent faculties . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Harvard))
+    (VP (VBZ is)
+      (ADVP (DT a) (RB famously))
+      (NP (VBN decentralized) (NN university))
+      (, ,)
+      (SBAR
+        (S
+          (VP (VBD noted)
+            (PP (IN for)
+              (NP
+                (NP (DT the)
+                  (NP (`` ")
+                    (NP (DT every) (NN tub))
+                    (PP (IN on)
+                      (NP (PRP$ its) (JJ own) (NN bottom)))
+                    ('' "))
+                  (NN independence))
+                (PP (IN of)
+                  (NP (PRP$ its) (JJ various) (JJ constituent) (NNS faculties)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Harvard
+			coref:	IDENT			0	0-0	Harvard 
+			name:	ORGANIZATION				0-0	Harvard 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Harvard 
+			N-ARG-A2		2-23	a famously decentralized university , noted for the " every tub on its own bottom " independence of its various constituent faculties 
+	2	a
+	3	famously
+			sense:	famously.r.01
+	4	decentralized
+			sense:	decentralize.v.01
+			prop:	decentralize.01
+			V		4-4	decentralized 
+			N-ARGM-ADV		3-3	famously 
+			N-ARG-A1		5-5	university 
+	5	university
+			sense:	university.n.03
+	6	,
+	7	noted
+			sense:	note.v.01
+			prop:	note.02
+			V		7-7	noted 
+			N-ARG-A1		2-5	a famously decentralized university 
+			N-ARG-A2		8-23	for the " every tub on its own bottom " independence of its various constituent faculties 
+	8	for
+	9	the
+	10	"
+	11	every
+	12	tub
+			sense:	tub.n.02
+	13	on
+	14	its
+			coref:	IDENT			0	14-14	its 
+	15	own
+			sense:	own.s.01
+	16	bottom
+			sense:	bottom.n.01
+	17	"
+	18	independence
+			sense:	independence.n.01
+	19	of
+	20	its
+			coref:	IDENT			0	20-20	its 
+	21	various
+			sense:	respective.s.01
+	22	constituent
+			sense:	constituent.s.01
+	23	faculties
+			sense:	staff.n.03
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+They set their own academic standards and manage their own budgets .
+
+
+Treebanked sentence:
+--------------------
+They set their own academic standards and manage their own budgets . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP
+      (VP (VBD set)
+        (NP (PRP$ their) (JJ own) (JJ academic) (NNS standards)))
+      (CC and)
+      (VP (VB manage)
+        (NP (PRP$ their) (JJ own) (NNS budgets))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	They
+			coref:	IDENT			0	0-0	They 
+	1	set
+			sense:	determine.v.03
+			prop:	set.02
+			V		1-1	set 
+			N-ARG-A0		0-0	They 
+			N-ARG-A1		2-5	their own academic standards 
+	2	their
+			coref:	IDENT			0	2-2	their 
+	3	own
+			sense:	own.s.01
+	4	academic
+			sense:	academic.a.01
+	5	standards
+			sense:	criterion.n.02
+	6	and
+	7	manage
+			sense:	oversee.v.01
+			prop:	manage.01
+			V		7-7	manage 
+			N-ARG-A0		0-0	They 
+			N-ARG-A1		8-10	their own budgets 
+	8	their
+			coref:	IDENT			0	8-8	their 
+	9	own
+			sense:	own.s.01
+	10	budgets
+			sense:	budget.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The president , however , plays an important part in university - wide planning and strategy .
+
+
+Treebanked sentence:
+--------------------
+The president , however , plays an important part in university - wide planning and strategy . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN president))
+    (, ,)
+    (ADVP (RB however))
+    (, ,)
+    (VP (VBZ plays)
+      (NP
+        (NP (DT an) (JJ important) (NN part))
+        (PP (IN in)
+          (NP
+            (ADJP
+              (NP (NN university))
+              (HYPH -) (JJ wide))
+            (NN planning)
+            (CC and)
+            (NN strategy)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	president
+			name:	TITLE				1-1	president 
+			sense:	president.n.05
+	2	,
+	3	however
+			sense:	however.r.01
+	4	,
+	5	plays
+			sense:	play.v.02
+			prop:	play.02
+			V		5-5	plays 
+			N-ARG-A0		0-1	The president 
+			N-ARGM-DIS		3-3	however 
+			N-ARG-A1		6-8	an important part 
+	6	an
+	7	important
+			sense:	important.a.01
+	8	part
+			sense:	function.n.03
+	9	in
+	10	university
+			sense:	university.n.01
+	11	-
+	12	wide
+			sense:	across-the-board.s.01
+	13	planning
+			sense:	planning.n.01
+	14	and
+	15	strategy
+			sense:	scheme.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Each names a faculty 's dean ( and , since the foundation of the office in 1994 , the university 's provost ) , and grants tenure to recommended professors ; however , he or she is expected to make such decisions after extensive consultation with faculty members .
+
+
+Treebanked sentence:
+--------------------
+Each names a faculty 's dean ( and , since the foundation of the office in 1994 , the university 's provost ) , and grants tenure to recommended professors ; however , he or she is expected to make such decisions after extensive consultation with faculty members . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP
+      (NP
+        (NP (DT Each) (NNS names))
+        (S
+          (NP
+            (NP
+              (NP (DT a) (NN faculty) (POS 's))
+              (NN dean))
+            (-LRB- -LRB-)
+            (CC and)
+            (, ,)
+            (PP (IN since)
+              (NP
+                (NP (DT the) (NN foundation))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NN office))
+                    (PP (IN in)
+                      (NP (CD 1994)))))))
+            (, ,))
+          (NP
+            (NP (DT the) (NN university) (POS 's))
+            (NN provost))))
+      (-RRB- -RRB-) (, ,)
+      (CC and)
+      (NP
+        (NP (NNS grants) (NN tenure))
+        (PP (IN to)
+          (NP (VBN recommended) (NNS professors)))))
+    (: ;)
+    (S
+      (ADVP (RB however))
+      (, ,)
+      (NP (PRP he)
+        (CC or)
+        (PRP she))
+      (VP (VBZ is)
+        (VP (VBN expected)
+          (S
+            (VP (TO to)
+              (VP (VB make)
+                (NP (JJ such) (NNS decisions))
+                (PP (IN after)
+                  (NP
+                    (NP (JJ extensive) (NN consultation))
+                    (PP (IN with)
+                      (NP (NN faculty) (NNS members)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Each
+	1	names
+			sense:	name.n.05
+	2	a
+	3	faculty
+			sense:	staff.n.03
+	4	's
+	5	dean
+			name:	TITLE				5-5	dean 
+			sense:	dean.n.01
+	6	(
+	7	and
+	8	,
+	9	since
+	10	the
+	11	foundation
+			sense:	initiation.n.02
+	12	of
+	13	the
+	14	office
+			sense:	agency.n.01
+	15	in
+	16	1994
+			name:	DATE				16-16	1994 
+	17	,
+	18	the
+			coref:	IDENT			0	18-20	the university 's 
+	19	university
+			sense:	university.n.01
+	20	's
+	21	provost
+			sense:	provost.n.01
+	22	)
+	23	,
+	24	and
+	25	grants
+			sense:	grant.n.03
+	26	tenure
+			sense:	tenure.n.01
+	27	to
+	28	recommended
+			sense:	recommend.v.01
+			prop:	recommend.01
+			V		28-28	recommended 
+			N-ARG-A1		29-29	professors 
+	29	professors
+			sense:	professor.n.01
+	30	;
+	31	however
+			sense:	however.r.01
+	32	,
+	33	he
+	34	or
+	35	she
+	36	is
+			sense:	be.v.01
+			prop:	be.03
+			V		36-36	is 
+	37	expected
+			sense:	ask.v.04
+			prop:	expect.01
+			V		37-37	expected 
+			N-ARGM-ADV		31-31	however 
+			N-ARG-A1		38-47	to make such decisions after extensive consultation with faculty members 
+	38	to
+	39	make
+			sense:	make.v.01
+			prop:	make.01
+			V		39-39	make 
+			N-ARG-A0		33-35	he or she 
+			N-ARG-A1		40-41	such decisions 
+			N-ARGM-TMP		42-47	after extensive consultation with faculty members 
+	40	such
+			sense:	such.s.01
+	41	decisions
+			sense:	decision.n.01
+	42	after
+	43	extensive
+			sense:	extensive.s.01
+	44	consultation
+			sense:	consultation.n.02
+	45	with
+	46	faculty
+			sense:	staff.n.03
+	47	members
+			sense:	member.n.01
+	48	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Harvard presidents have traditionally influenced educational practices nationwide .
+
+
+Treebanked sentence:
+--------------------
+Harvard presidents have traditionally influenced educational practices nationwide . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Harvard) (NNS presidents))
+    (VP (VBP have)
+      (ADVP (RB traditionally))
+      (VP (VBN influenced)
+        (NP (JJ educational) (NNS practices))
+        (ADVP (RB nationwide))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Harvard
+			coref:	IDENT			0	0-0	Harvard 
+			name:	ORGANIZATION				0-0	Harvard 
+	1	presidents
+			sense:	president.n.05
+	2	have
+			sense:	have.v.02
+			prop:	have.01
+			V		2-2	have 
+	3	traditionally
+			sense:	traditionally.r.01
+	4	influenced
+			sense:	influence.v.01
+			prop:	influence.01
+			V		4-4	influenced 
+			N-ARG-A0		0-1	Harvard presidents 
+			N-ARGM-ADV		3-3	traditionally 
+			N-ARG-A1		5-7	educational practices nationwide 
+	5	educational
+			sense:	educational.a.01
+	6	practices
+			sense:	practice.n.01
+	7	nationwide
+			sense:	nationally.r.02
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Charles W. Eliot , for example , originated America 's familiar system of a smorgasbord of elective courses available to each student ; James B. Conant worked to introduce standardized testing ; Derek Bok and Neil L. Rudenstine argued for the continued importance of diversity in higher education .
+
+
+Treebanked sentence:
+--------------------
+Charles W. Eliot , for example , originated America 's familiar system of a smorgasbord of elective courses available to each student ; James B. Conant worked to introduce standardized testing ; Derek Bok and Neil L. Rudenstine argued for the continued importance of diversity in higher education . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Charles) (NNP W.) (NNP Eliot))
+        (, ,)
+        (PP (IN for)
+          (NP (NN example)))
+        (, ,))
+      (VP (VBD originated)
+        (S
+          (NP
+            (NP
+              (NP (NNP America) (POS 's))
+              (JJ familiar) (NN system))
+            (PP (IN of)
+              (NP
+                (NP (DT a) (NN smorgasbord))
+                (PP (IN of)
+                  (NP (JJ elective) (NNS courses))))))
+          (ADJP (JJ available)
+            (PP (IN to)
+              (NP (DT each) (NN student)))))))
+    (: ;)
+    (S
+      (NP (NNP James) (NNP B.) (NNP Conant))
+      (VP (VBD worked)
+        (S
+          (VP (TO to)
+            (VP (VB introduce)
+              (NP (JJ standardized) (NN testing)))))))
+    (: ;)
+    (S
+      (NP
+        (NP (NNP Derek) (NNP Bok))
+        (CC and)
+        (NP (NNP Neil) (NNP L.) (NNP Rudenstine)))
+      (VP (VBD argued)
+        (PP (IN for)
+          (NP
+            (NP (DT the) (VBN continued) (NN importance))
+            (PP (IN of)
+              (NP
+                (NP (NN diversity))
+                (PP (IN in)
+                  (NP (JJR higher) (NN education)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Charles
+			name:	PERSON				0-2	Charles W. Eliot 
+	1	W.
+	2	Eliot
+	3	,
+	4	for
+	5	example
+			sense:	example.n.01
+	6	,
+	7	originated
+			sense:	originate.v.02
+			prop:	originate.01
+			V		7-7	originated 
+			N-ARG-A0		0-2	Charles W. Eliot 
+			N-ARGM-DIS		4-5	for example 
+			N-ARG-A1		8-21	America 's familiar system of a smorgasbord of elective courses available to each student 
+	8	America
+			name:	COUNTRY				8-8	America 
+	9	's
+	10	familiar
+			sense:	familiar.a.01
+	11	system
+			sense:	arrangement.n.03
+	12	of
+	13	a
+	14	smorgasbord
+			sense:	assortment.n.01
+	15	of
+	16	elective
+			sense:	elective.s.02
+	17	courses
+			sense:	course.n.01
+	18	available
+			sense:	available.a.01
+	19	to
+	20	each
+	21	student
+			name:	TITLE				21-21	student 
+			sense:	student.n.01
+	22	;
+	23	James
+			name:	PERSON				23-25	James B. Conant 
+	24	B.
+	25	Conant
+	26	worked
+			sense:	work.v.01
+			prop:	work.01
+			V		26-26	worked 
+			N-ARG-A0		23-25	James B. Conant 
+			N-ARG-A1		27-30	to introduce standardized testing 
+	27	to
+	28	introduce
+			sense:	introduce.v.02
+			prop:	introduce.02
+			V		28-28	introduce 
+			N-ARG-A0		23-25	James B. Conant 
+			N-ARG-A1		29-30	standardized testing 
+	29	standardized
+			sense:	standardized.s.01
+	30	testing
+			sense:	examination.n.05
+	31	;
+	32	Derek
+			name:	PERSON				32-33	Derek Bok 
+	33	Bok
+	34	and
+	35	Neil
+			name:	PERSON				35-37	Neil L. Rudenstine 
+	36	L.
+	37	Rudenstine
+	38	argued
+			sense:	argue.v.01
+			prop:	argue.01
+			V		38-38	argued 
+			N-ARG-A0		32-37	Derek Bok and Neil L. Rudenstine 
+			N-ARG-A1		39-47	for the continued importance of diversity in higher education 
+	39	for
+	40	the
+	41	continued
+			sense:	continue.v.01
+			prop:	continue.01
+			V		41-41	continued 
+			N-ARG-A1		42-42	importance 
+	42	importance
+			sense:	importance.n.01
+	43	of
+	44	diversity
+			sense:	diverseness.n.01
+	45	in
+	46	higher
+			sense:	high.a.01
+	47	education
+			sense:	education.n.04
+	48	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Recently , however , the job has become increasingly administrative , especially as fund - raising campaigns have taken on central importance in large institutions such as Harvard .
+
+
+Treebanked sentence:
+--------------------
+Recently , however , the job has become increasingly administrative , especially as fund - raising campaigns have taken on central importance in large institutions such as Harvard . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Recently))
+    (, ,)
+    (ADVP (RB however))
+    (, ,)
+    (NP (DT the) (NN job))
+    (VP (VBZ has)
+      (VP (VBN become)
+        (S
+          (ADJP (RB increasingly) (JJ administrative)))
+        (, ,)
+        (SBAR
+          (ADVP (RB especially))
+          (IN as)
+          (S
+            (NP
+              (ADJP (NN fund) (HYPH -) (VBG raising))
+              (NNS campaigns))
+            (VP (VBP have)
+              (VP (VBN taken)
+                (PP (IN on)
+                  (NP (JJ central) (NN importance)))
+                (PP (IN in)
+                  (NP
+                    (NP (JJ large) (NNS institutions))
+                    (PP (JJ such) (IN as)
+                      (NP (NNP Harvard)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Recently
+			name:	DATE				0-0	Recently 
+			sense:	recently.r.01
+	1	,
+	2	however
+			sense:	however.r.01
+	3	,
+	4	the
+			coref:	IDENT			0	4-5	the job 
+	5	job
+			sense:	occupation.n.01
+	6	has
+			sense:	have.v.02
+			prop:	have.01
+			V		6-6	has 
+	7	become
+			sense:	become.v.01
+			prop:	become.01
+			V		7-7	become 
+			N-ARGM-TMP		0-0	Recently 
+			N-ARGM-DIS		2-2	however 
+			N-ARG-A1		4-5	the job 
+			N-ARG-A2		8-9	increasingly administrative 
+			N-ARGM-CAU		11-27	especially as fund - raising campaigns have taken on central importance in large institutions such as Harvard 
+	8	increasingly
+			sense:	increasingly.r.01
+	9	administrative
+			sense:	administrative.a.01
+	10	,
+	11	especially
+			sense:	particularly.r.01
+	12	as
+	13	fund
+			sense:	fund.n.01
+	14	-
+	15	raising
+			sense:	raise.v.04
+			prop:	raise.02
+			V		15-15	raising 
+			N-ARG-A1		13-13	fund 
+			N-ARG-A0		16-16	campaigns 
+	16	campaigns
+			sense:	campaign.n.02
+	17	have
+			sense:	have.v.11
+			prop:	have.01
+			V		17-17	have 
+	18	taken
+			sense:	assume.v.03
+			prop:	take.09
+			V		18-18	taken 
+			N-ARG-A0		13-16	fund - raising campaigns 
+			N-ARG-A1		20-21	central importance 
+			N-ARGM-LOC		22-27	in large institutions such as Harvard 
+	19	on
+	20	central
+			sense:	cardinal.s.01
+	21	importance
+			sense:	importance.n.01
+	22	in
+	23	large
+			sense:	large.a.01
+	24	institutions
+			sense:	institution.n.01
+	25	such
+			sense:	such.s.01
+	26	as
+	27	Harvard
+			name:	ORGANIZATION				27-27	Harvard 
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Some have criticized this trend to the extent it has prevented the president from focusing on substantive issues in higher education .
+
+
+Treebanked sentence:
+--------------------
+Some have criticized this trend to the extent it has prevented the president from focusing on substantive issues in higher education . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT Some))
+    (VP (VBP have)
+      (VP (VBN criticized)
+        (NP (DT this) (NN trend))
+        (PP (IN to)
+          (NP
+            (NP (DT the) (NN extent))
+            (SBAR
+              (S
+                (NP (PRP it))
+                (VP (VBZ has)
+                  (VP (VBN prevented)
+                    (NP (DT the) (NN president))
+                    (PP (IN from)
+                      (S
+                        (VP (VBG focusing)
+                          (PP (IN on)
+                            (NP
+                              (NP (JJ substantive) (NNS issues))
+                              (PP (IN in)
+                                (NP (JJR higher) (NN education))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Some
+	1	have
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	have 
+	2	criticized
+			sense:	knock.v.06
+			prop:	criticize.01
+			V		2-2	criticized 
+			N-ARG-A0		0-0	Some 
+			N-ARG-A1		3-4	this trend 
+			N-ARGM-EXT		5-20	to the extent it has prevented the president from focusing on substantive issues in higher education 
+	3	this
+			coref:	IDENT			1	3-4	this trend 
+	4	trend
+			sense:	drift.n.05
+	5	to
+	6	the
+	7	extent
+			sense:	extent.n.01
+	8	it
+			coref:	IDENT			1	8-8	it 
+	9	has
+			sense:	get.v.03
+			prop:	have.01
+			V		9-9	has 
+	10	prevented
+			sense:	prevent.v.02
+			prop:	prevent.01
+			V		10-10	prevented 
+			N-ARGM-EXT		6-7	the extent 
+			N-ARG-A0		8-8	it 
+			N-ARG-A1		11-12	the president 
+			N-ARG-A2		13-20	from focusing on substantive issues in higher education 
+	11	the
+	12	president
+			name:	TITLE				12-12	president 
+			sense:	president.n.05
+	13	from
+	14	focusing
+			sense:	concentrate.v.02
+			prop:	focus.01
+			V		14-14	focusing 
+			N-ARG-A0		11-12	the president 
+			N-ARG-A2		15-20	on substantive issues in higher education 
+	15	on
+	16	substantive
+			sense:	substantial.s.02
+	17	issues
+			sense:	issue.n.01
+	18	in
+	19	higher
+			sense:	high.a.01
+	20	education
+			sense:	education.n.04
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Each president is professor in some department of the university and teaches from time to time .
+
+
+Treebanked sentence:
+--------------------
+Each president is professor in some department of the university and teaches from time to time . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT Each) (NN president))
+    (VP
+      (VP (VBZ is)
+        (NP
+          (NP (NN professor))
+          (PP (IN in)
+            (NP
+              (NP (DT some) (NN department))
+              (PP (IN of)
+                (NP (DT the) (NN university)))))))
+      (CC and)
+      (VP (VBZ teaches)
+        (PP (IN from)
+          (NP (NN time)))
+        (PP (IN to)
+          (NP (NN time)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Each
+	1	president
+			name:	TITLE				1-1	president 
+			sense:	president.n.05
+	2	is
+			sense:	be.v.08
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Each president 
+			N-ARG-A2		3-9	professor in some department of the university 
+	3	professor
+			name:	TITLE				3-3	professor 
+			sense:	professor.n.01
+	4	in
+	5	some
+	6	department
+			sense:	department.n.01
+	7	of
+	8	the
+			coref:	IDENT			0	8-9	the university 
+	9	university
+			sense:	university.n.02
+	10	and
+	11	teaches
+			sense:	teach.v.01
+			prop:	teach.01
+			V		11-11	teaches 
+			N-ARG-A0		0-1	Each president 
+			N-ARGM-TMP		12-15	from time to time 
+	12	from
+	13	time
+			sense:	time.n.01
+	14	to
+	15	time
+			sense:	time.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Harvard 's current president is Lawrence Bacow , formerly the president of Tufts University .
+
+
+Treebanked sentence:
+--------------------
+Harvard 's current president is Lawrence Bacow , formerly the president of Tufts University . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Harvard) (POS 's))
+      (JJ current) (NN president))
+    (VP (VBZ is)
+      (NP
+        (NP (NNP Lawrence) (NNP Bacow))
+        (, ,) (RB formerly)
+        (NP
+          (NP (DT the) (NN president))
+          (PP (IN of)
+            (NP (NNP Tufts) (NNP University))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Harvard
+			coref:	IDENT			0	0-1	Harvard 's 
+			name:	ORGANIZATION				0-0	Harvard 
+	1	's
+	2	current
+			name:	DATE				2-2	current 
+			sense:	current.a.01
+	3	president
+			name:	TITLE				3-3	president 
+			sense:	president.n.05
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	Harvard 's current president 
+			N-ARG-A2		5-13	Lawrence Bacow , formerly the president of Tufts University 
+	5	Lawrence
+			name:	PERSON				5-6	Lawrence Bacow 
+	6	Bacow
+	7	,
+	8	formerly
+			sense:	once.r.03
+	9	the
+	10	president
+			name:	TITLE				10-10	president 
+			sense:	president.n.05
+	11	of
+	12	Tufts
+			name:	ORGANIZATION				12-13	Tufts University 
+	13	University
+	14	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.3-4	Harvard University 
+				0.10-11	the university 
+				1.28-29	the university 
+				2.0-0	Harvard 
+				2.14-14	its 
+				2.20-20	its 
+				3.0-0	They 
+				3.2-2	their 
+				3.8-8	their 
+				5.18-20	the university 's 
+				6.0-0	Harvard 
+				8.4-5	the job 
+				10.8-9	the university 
+				11.0-1	Harvard 's 
+	Chain 1 (IDENT)
+				9.3-4	this trend 
+				9.8-8	it 
+

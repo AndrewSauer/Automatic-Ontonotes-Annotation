@@ -1,0 +1,660 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" As If We Never Said Goodbye " is a song from the musical Sunset Boulevard .
+
+
+Treebanked sentence:
+--------------------
+" As If We Never Said Goodbye " is a song from the musical Sunset Boulevard . 
+
+Tree:
+-----
+(ROOT
+  (S (`` ")
+    (SBAR (IN As) (IN If)
+      (S
+        (NP (PRP We))
+        (ADVP (RB Never))
+        (VP (VBD Said)
+          (S
+            (NP (NNP Goodbye))
+            (`` ")))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN song))
+        (PP (IN from)
+          (NP (DT the) (JJ musical) (NNP Sunset) (NNP Boulevard)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	As
+	2	If
+	3	We
+			name:	MISC				3-6	We Never Said Goodbye 
+	4	Never
+			sense:	never.r.01
+	5	Said
+			sense:	state.v.01
+			prop:	say.01
+			V		5-5	Said 
+			N-ARG-A0		3-3	We 
+			N-ARGM-NEG		4-4	Never 
+			N-ARG-A1		6-6	Goodbye 
+	6	Goodbye
+	7	"
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	" As If We Never Said Goodbye " 
+			N-ARG-A2		9-15	a song from the musical Sunset Boulevard 
+	9	a
+	10	song
+			sense:	song.n.01
+	11	from
+	12	the
+	13	musical
+			sense:	musical.a.01
+	14	Sunset
+			name:	CITY				14-14	Sunset 
+	15	Boulevard
+			name:	LOCATION				15-15	Boulevard 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is written by Don Black , Christopher Hampton ( with additional lyrics by Amy Powers ) , and Andrew Lloyd Webber .
+
+
+Treebanked sentence:
+--------------------
+It is written by Don Black , Christopher Hampton ( with additional lyrics by Amy Powers ) , and Andrew Lloyd Webber . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (VP (VBN written)
+        (PP (IN by)
+          (NP
+            (NP (NNP Don) (NNP Black))
+            (, ,)
+            (NP
+              (NP (NNP Christopher) (NNP Hampton))
+              (-LRB- -LRB-)
+              (PP (IN with)
+                (NP
+                  (NP (JJ additional) (NNS lyrics))
+                  (PP (IN by)
+                    (NP (NNP Amy) (NNP Powers)))))
+              (-RRB- -RRB-))
+            (, ,)
+            (CC and)
+            (NP (NNP Andrew) (NNP Lloyd) (NNP Webber))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	written
+			sense:	compose.v.02
+			prop:	write.01
+			V		2-2	written 
+			N-ARG-A1		0-0	It 
+			N-ARG-A0		3-8	by Don Black , Christopher Hampton 
+			N-ARGM-ADV		10-16	with additional lyrics by Amy Powers ) 
+	3	by
+	4	Don
+			name:	PERSON				4-5	Don Black 
+	5	Black
+	6	,
+	7	Christopher
+			name:	PERSON				7-8	Christopher Hampton 
+	8	Hampton
+	9	(
+	10	with
+	11	additional
+			sense:	extra.s.03
+	12	lyrics
+			sense:	lyric.n.01
+	13	by
+	14	Amy
+			name:	PERSON				14-15	Amy Powers 
+	15	Powers
+	16	)
+	17	,
+	18	and
+	19	Andrew
+			coref:	IDENT			3	19-21	Andrew Lloyd Webber 
+			name:	PERSON				19-21	Andrew Lloyd Webber 
+	20	Lloyd
+	21	Webber
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ben Rimalower on Playbill calls it Andrew Lloyd Webber 's greatest song .
+
+
+Treebanked sentence:
+--------------------
+Ben Rimalower on Playbill calls it Andrew Lloyd Webber 's greatest song . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Ben) (NNP Rimalower))
+      (PP (IN on)
+        (NP (NNP Playbill))))
+    (VP (VBZ calls)
+      (NP (PRP it))
+      (NP
+        (NP (NNP Andrew) (NNP Lloyd) (NNP Webber) (POS 's))
+        (JJS greatest) (NN song)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ben
+			name:	PERSON				0-1	Ben Rimalower 
+	1	Rimalower
+	2	on
+	3	Playbill
+	4	calls
+			sense:	call.v.02
+			prop:	call.01
+			V		4-4	calls 
+			N-ARG-A0		0-1	Ben Rimalower 
+			N-ARGM-LOC		2-3	on Playbill 
+			N-ARG-A1		5-5	it 
+			N-ARG-A2		6-11	Andrew Lloyd Webber 's greatest song 
+	5	it
+	6	Andrew
+			coref:	IDENT			1	6-11	Andrew Lloyd Webber 's greatest song 
+			coref:	IDENT			3	6-9	Andrew Lloyd Webber 's 
+			name:	PERSON				6-8	Andrew Lloyd Webber 
+	7	Lloyd
+	8	Webber
+	9	's
+	10	greatest
+			sense:	great.s.02
+	11	song
+			sense:	song.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In Sunset Boulevard , the main character , Norma Desmond , reveals her longing to return to the spotlight of fame .
+
+
+Treebanked sentence:
+--------------------
+In Sunset Boulevard , the main character , Norma Desmond , reveals her longing to return to the spotlight of fame . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP Sunset) (NNP Boulevard)))
+    (, ,)
+    (NP
+      (NP (DT the) (JJ main) (NN character))
+      (, ,)
+      (NP (NNP Norma) (NNP Desmond))
+      (, ,))
+    (VP (VBZ reveals)
+      (NP (PRP$ her) (NN longing))
+      (S
+        (VP (TO to)
+          (VP (VB return)
+            (PP (IN to)
+              (NP
+                (NP (DT the) (NN spotlight))
+                (PP (IN of)
+                  (NP (NN fame)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	Sunset
+			name:	CITY				1-1	Sunset 
+	2	Boulevard
+			name:	LOCATION				2-2	Boulevard 
+	3	,
+	4	the
+	5	main
+			sense:	chief.s.01
+	6	character
+			sense:	fictional_character.n.01
+	7	,
+	8	Norma
+			coref:	IDENT			4	8-9	Norma Desmond 
+			name:	PERSON				8-9	Norma Desmond 
+	9	Desmond
+	10	,
+	11	reveals
+			sense:	unwrap.v.02
+			prop:	reveal.01
+			V		11-11	reveals 
+			N-ARGM-LOC		0-2	In Sunset Boulevard 
+			N-ARG-A0		4-9	the main character , Norma Desmond 
+			N-ARG-A1		12-20	her longing to return to the spotlight of fame 
+	12	her
+			coref:	IDENT			4	12-12	her 
+	13	longing
+			sense:	longing.n.01
+	14	to
+	15	return
+			sense:	return.v.01
+			prop:	return.01
+			V		15-15	return 
+			N-ARG-A4		16-20	to the spotlight of fame 
+	16	to
+	17	the
+	18	spotlight
+			sense:	limelight.n.01
+	19	of
+	20	fame
+			sense:	fame.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The song has also been performed by Barbra Streisand , and is featured on her album Back to Broadway , as well as the live albums The Concert and Back to Brooklyn .
+
+
+Treebanked sentence:
+--------------------
+The song has also been performed by Barbra Streisand , and is featured on her album Back to Broadway , as well as the live albums The Concert and Back to Brooklyn . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN song))
+    (VP
+      (VP (VBZ has)
+        (ADVP (RB also))
+        (VP (VBN been)
+          (VP (VBN performed)
+            (PP (IN by)
+              (NP (NNP Barbra) (NNP Streisand))))))
+      (, ,)
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN featured)
+          (PP
+            (PP (IN on)
+              (NP
+                (NP
+                  (NP (PRP$ her) (NN album))
+                  (PP (RB Back) (IN to)
+                    (NP (NNP Broadway))))
+                (, ,)
+                (CONJP (RB as) (RB well) (IN as))
+                (NP
+                  (NP (DT the) (JJ live) (NNS albums))
+                  (NP (DT The) (NN Concert)))))
+            (CC and)
+            (RB Back)
+            (PP (IN to)
+              (NP (NNP Brooklyn)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The song 
+	1	song
+			sense:	song.n.01
+	2	has
+			sense:	have.v.01
+			prop:	have.01
+			V		2-2	has 
+	3	also
+			sense:	besides.r.02
+	4	been
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	been 
+	5	performed
+			sense:	perform.v.03
+			prop:	perform.01
+			V		5-5	performed 
+			N-ARG-A1		0-1	The song 
+			N-ARGM-DIS		3-3	also 
+			N-ARG-A0		6-8	by Barbra Streisand 
+	6	by
+	7	Barbra
+	8	Streisand
+	9	,
+	10	and
+	11	is
+			sense:	be.v.01
+			prop:	be.03
+			V		11-11	is 
+	12	featured
+			sense:	have.v.02
+			prop:	feature.01
+			V		12-12	featured 
+			N-ARG-A1		0-1	The song 
+			N-ARGM-DIS		3-3	also 
+			N-ARG-A2		13-31	on her album Back to Broadway , as well as the live albums The Concert and Back to Brooklyn 
+	13	on
+	14	her
+			coref:	IDENT			4	14-14	her 
+	15	album
+			sense:	album.n.01
+	16	Back
+			sense:	back.r.03
+	17	to
+	18	Broadway
+			name:	LOCATION				18-18	Broadway 
+	19	,
+	20	as
+			sense:	equally.r.01
+	21	well
+			sense:	well.r.02
+	22	as
+	23	the
+	24	live
+			sense:	live.a.01
+	25	albums
+			sense:	album.n.01
+	26	The
+	27	Concert
+			sense:	concert.n.01
+	28	and
+	29	Back
+			sense:	back.r.03
+	30	to
+	31	Brooklyn
+			name:	CITY				31-31	Brooklyn 
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Elaine Paige , who starred in the original London and Broadway productions of Sunset Boulevard , also recorded the song for her album Encore .
+
+
+Treebanked sentence:
+--------------------
+Elaine Paige , who starred in the original London and Broadway productions of Sunset Boulevard , also recorded the song for her album Encore . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Elaine) (NNP Paige))
+      (, ,)
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBD starred)
+            (PP (IN in)
+              (NP
+                (NP (DT the) (JJ original) (NNP London)
+                  (CC and)
+                  (NNP Broadway) (NNS productions))
+                (PP (IN of)
+                  (NP (NNP Sunset) (NNP Boulevard))))))))
+      (, ,))
+    (ADVP (RB also))
+    (VP (VBD recorded)
+      (NP (DT the) (NN song))
+      (PP (IN for)
+        (NP (PRP$ her) (NN album) (NN Encore))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Elaine
+			coref:	IDENT			2	0-14	Elaine Paige , who starred in the original London and Broadway productions of Sunset Boulevard 
+			name:	PERSON				0-1	Elaine Paige 
+	1	Paige
+	2	,
+	3	who
+	4	starred
+			sense:	star.v.02
+			prop:	star.01
+			V		4-4	starred 
+			N-ARG-A1		0-1	Elaine Paige 
+			R-ARG-A1		3-3	who 
+			N-ARG-A2		5-14	in the original London and Broadway productions of Sunset Boulevard 
+	5	in
+	6	the
+	7	original
+			sense:	original.s.01
+	8	London
+			name:	CITY				8-8	London 
+	9	and
+	10	Broadway
+			name:	LOCATION				10-10	Broadway 
+	11	productions
+			sense:	production.n.02
+	12	of
+	13	Sunset
+			name:	CITY				13-13	Sunset 
+	14	Boulevard
+			name:	LOCATION				14-14	Boulevard 
+	15	,
+	16	also
+			sense:	besides.r.02
+	17	recorded
+			sense:	record.v.02
+			prop:	record.01
+			V		17-17	recorded 
+			N-ARG-A0		0-15	Elaine Paige , who starred in the original London and Broadway productions of Sunset Boulevard , 
+			N-ARGM-DIS		16-16	also 
+			N-ARG-A1		18-19	the song 
+			N-ARGM-PNC		20-23	for her album Encore 
+	18	the
+			coref:	IDENT			1	18-19	the song 
+	19	song
+			sense:	song.n.01
+	20	for
+	21	her
+			coref:	IDENT			2	21-21	her 
+	22	album
+			sense:	album.n.01
+	23	Encore
+			sense:	encore.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Chris Colfer ( as Kurt Hummel ) sings the song on the Glee Season 2 episode " Born This Way " .
+
+
+Treebanked sentence:
+--------------------
+Chris Colfer ( as Kurt Hummel ) sings the song on the Glee Season 2 episode " Born This Way " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Chris) (NNP Colfer))
+      (-LRB- -LRB-)
+      (PP (IN as)
+        (NP (NNP Kurt) (NNP Hummel)))
+      (-RRB- -RRB-))
+    (VP (VBZ sings)
+      (NP
+        (NP (DT the) (NN song))
+        (PP (IN on)
+          (NP
+            (NP
+              (NP (DT the) (NN Glee) (NN Season))
+              (NP (CD 2) (NN episode)))
+            ('' ")
+            (VP (VBN Born)
+              (NP (DT This) (NN Way)))))
+        ('' ")))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Chris
+			name:	PERSON				0-1	Chris Colfer 
+	1	Colfer
+	2	(
+	3	as
+	4	Kurt
+			name:	PERSON				4-5	Kurt Hummel 
+	5	Hummel
+	6	)
+	7	sings
+			sense:	sing.v.01
+			prop:	sing.01
+			V		7-7	sings 
+			N-ARG-A0		0-6	Chris Colfer ( as Kurt Hummel ) 
+			N-ARG-A1		8-9	the song 
+			N-ARGM-LOC		10-20	on the Glee Season 2 episode " Born This Way " 
+	8	the
+	9	song
+			sense:	song.n.01
+	10	on
+	11	the
+	12	Glee
+			sense:	hilarity.n.01
+	13	Season
+			sense:	season.n.01
+	14	2
+			name:	NUMBER				14-14	2 
+	15	episode
+			sense:	episode.n.03
+	16	"
+	17	Born
+			name:	MISC				17-19	Born This Way 
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		17-17	Born 
+			N-ARGM-MNR		18-19	This Way 
+	18	This
+	19	Way
+			sense:	way.n.04
+	20	"
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jason Manford recorded the song for his 2017 album A Different Stage .
+
+
+Treebanked sentence:
+--------------------
+Jason Manford recorded the song for his 2017 album A Different Stage . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Jason) (NNP Manford))
+    (VP (VBD recorded)
+      (NP (DT the) (NN song))
+      (PP (IN for)
+        (NP
+          (NP (PRP$ his) (CD 2017) (NN album))
+          (NP (DT A) (JJ Different) (NN Stage)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jason
+			coref:	IDENT			0	0-1	Jason Manford 
+			name:	PERSON				0-1	Jason Manford 
+	1	Manford
+	2	recorded
+			sense:	record.v.02
+			prop:	record.01
+			V		2-2	recorded 
+			N-ARG-A0		0-1	Jason Manford 
+			N-ARG-A1		3-4	the song 
+	3	the
+			coref:	IDENT			1	3-4	the song 
+	4	song
+			sense:	song.n.01
+	5	for
+	6	his
+			coref:	IDENT			0	6-6	his 
+	7	2017
+			name:	DATE				7-7	2017 
+	8	album
+			sense:	album.n.01
+	9	A
+	10	Different
+			sense:	different.s.02
+	11	Stage
+			sense:	stage.n.07
+	12	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				7.0-1	Jason Manford 
+				7.6-6	his 
+	Chain 1 (IDENT)
+				2.6-11	Andrew Lloyd Webber 's greatest song 
+				4.0-1	The song 
+				5.18-19	the song 
+				7.3-4	the song 
+	Chain 2 (IDENT)
+				5.0-14	Elaine Paige , who starred in the original London and Broadway productions of Sunset Boulevard 
+				5.21-21	her 
+	Chain 3 (IDENT)
+				2.6-9	Andrew Lloyd Webber 's 
+				1.19-21	Andrew Lloyd Webber 
+	Chain 4 (IDENT)
+				3.8-9	Norma Desmond 
+				3.12-12	her 
+				4.14-14	her 
+

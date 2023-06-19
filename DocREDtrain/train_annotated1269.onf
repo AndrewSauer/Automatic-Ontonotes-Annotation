@@ -1,0 +1,727 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Hippolyte - Victor Collet - Descotils was a French chemist .
+
+
+Treebanked sentence:
+--------------------
+Hippolyte - Victor Collet - Descotils was a French chemist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Hippolyte) (HYPH -) (NNP Victor) (NNP Collet) (HYPH -) (NNP Descotils))
+    (VP (VBD was)
+      (NP (DT a) (JJ French) (NN chemist)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Hippolyte
+			name:	PERSON				0-3	Hippolyte - Victor Collet 
+	1	-
+	2	Victor
+	3	Collet
+	4	-
+	5	Descotils
+	6	was
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	was 
+			N-ARG-A1		0-5	Hippolyte - Victor Collet - Descotils 
+			N-ARG-A2		7-9	a French chemist 
+	7	a
+	8	French
+			name:	NATIONALITY				8-8	French 
+	9	chemist
+			name:	TITLE				9-9	chemist 
+			sense:	chemist.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was born November 21 , 1773 in Caen and died December 6 , 1815 in Paris .
+
+
+Treebanked sentence:
+--------------------
+He was born November 21 , 1773 in Caen and died December 6 , 1815 in Paris . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN born)
+          (NP-TMP (NNP November) (CD 21) (, ,) (CD 1773))
+          (PP (IN in)
+            (NP (NNP Caen)))))
+      (CC and)
+      (VP (VBD died)
+        (NP-TMP (NNP December) (CD 6) (, ,) (CD 1815))
+        (PP (IN in)
+          (NP (NNP Paris)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			5	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		3-6	November 21 , 1773 
+			N-ARGM-LOC		7-8	in Caen 
+	3	November
+			name:	DATE				3-6	November 21 , 1773 
+	4	21
+	5	,
+	6	1773
+	7	in
+	8	Caen
+			name:	CITY				8-8	Caen 
+	9	and
+	10	died
+			sense:	die.v.01
+			prop:	die.01
+			V		10-10	died 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		11-14	December 6 , 1815 
+			N-ARGM-LOC		15-16	in Paris 
+	11	December
+			name:	DATE				11-14	December 6 , 1815 
+	12	6
+	13	,
+	14	1815
+	15	in
+	16	Paris
+			coref:	IDENT			0	16-16	Paris 
+			name:	CITY				16-16	Paris 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He studied in the École des Mines de Paris , and was a student and friend of Louis Nicolas Vauquelin .
+
+
+Treebanked sentence:
+--------------------
+He studied in the École des Mines de Paris , and was a student and friend of Louis Nicolas Vauquelin . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD studied)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNP École) (NNP des) (NNP Mines))
+            (PP (IN de)
+              (NP (NNP Paris))))))
+      (, ,)
+      (CC and)
+      (VP (VBD was)
+        (NP
+          (NP (DT a) (NN student)
+            (CC and)
+            (NN friend))
+          (PP (IN of)
+            (NP (NNP Louis) (NNP Nicolas) (NNP Vauquelin))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			5	0-0	He 
+	1	studied
+			sense:	study.v.02
+			prop:	study.01
+			V		1-1	studied 
+			N-ARG-A0		0-0	He 
+			N-ARGM-LOC		2-8	in the École des Mines de Paris 
+	2	in
+	3	the
+	4	École
+			name:	LOCATION				4-7	École des Mines de 
+	5	des
+	6	Mines
+	7	de
+	8	Paris
+			name:	CITY				8-8	Paris 
+	9	,
+	10	and
+	11	was
+			sense:	be.v.01
+			prop:	be.01
+			V		11-11	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		12-19	a student and friend of Louis Nicolas Vauquelin 
+	12	a
+	13	student
+			name:	TITLE				13-13	student 
+			sense:	student.n.01
+	14	and
+	15	friend
+			sense:	friend.n.01
+	16	of
+	17	Louis
+			coref:	IDENT			3	17-19	Louis Nicolas Vauquelin 
+			name:	PERSON				17-19	Louis Nicolas Vauquelin 
+	18	Nicolas
+	19	Vauquelin
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is best known for confirming the discovery of chromium by Vauquelin , and for independently discovering iridium in 1803 .
+
+
+Treebanked sentence:
+--------------------
+He is best known for confirming the discovery of chromium by Vauquelin , and for independently discovering iridium in 1803 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (ADVP (RBS best))
+      (VP (VBN known)
+        (PP
+          (PP (IN for)
+            (S
+              (VP (VBG confirming)
+                (NP
+                  (NP (DT the) (NN discovery))
+                  (PP (IN of)
+                    (NP (NN chromium))))
+                (PP (IN by)
+                  (NP (NNP Vauquelin))))))
+          (, ,)
+          (CC and)
+          (PP (IN for)
+            (S
+              (ADVP (RB independently))
+              (VP (VBG discovering)
+                (NP (NN iridium))
+                (PP (IN in)
+                  (NP (CD 1803)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			5	0-0	He 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-19	best known for confirming the discovery of chromium by Vauquelin , and for independently discovering iridium in 1803 
+	2	best
+			sense:	well.r.02
+	3	known
+			sense:	know.v.01
+			prop:	know.01
+			V		3-3	known 
+			N-ARG-A1		0-0	He 
+			N-ARGM-MNR		2-2	best 
+			N-ARG-A2		4-19	for confirming the discovery of chromium by Vauquelin , and for independently discovering iridium in 1803 
+	4	for
+	5	confirming
+			sense:	confirm.v.01
+			prop:	confirm.01
+			V		5-5	confirming 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		6-11	the discovery of chromium by Vauquelin 
+	6	the
+	7	discovery
+			sense:	discovery.n.01
+	8	of
+	9	chromium
+			sense:	chromium.n.01
+	10	by
+	11	Vauquelin
+			coref:	IDENT			3	11-11	Vauquelin 
+			name:	PERSON				11-11	Vauquelin 
+	12	,
+	13	and
+	14	for
+	15	independently
+			sense:	independently.r.01
+	16	discovering
+			sense:	discover.v.03
+			prop:	discover.01
+			V		16-16	discovering 
+			N-ARGM-MNR		15-15	independently 
+			N-ARG-A1		17-17	iridium 
+			N-ARGM-TMP		18-19	in 1803 
+	17	iridium
+			sense:	iridium.n.01
+	18	in
+	19	1803
+			name:	DATE				19-19	1803 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1806 , Collet - Descotils misidentified erythronium , a new element discovered in Mexico by Andrés Manuel del Río , thinking that it was chromium .
+
+
+Treebanked sentence:
+--------------------
+In 1806 , Collet - Descotils misidentified erythronium , a new element discovered in Mexico by Andrés Manuel del Río , thinking that it was chromium . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1806)))
+    (, ,)
+    (NP (NNP Collet) (HYPH -) (NNP Descotils))
+    (VP (VBD misidentified)
+      (NP
+        (NP (NN erythronium))
+        (, ,)
+        (NP
+          (NP (DT a) (JJ new) (NN element))
+          (VP (VBN discovered)
+            (PP (IN in)
+              (NP (NNP Mexico)))
+            (PP (IN by)
+              (NP (NNP Andrés) (NNP Manuel) (NNP del) (NNP Río))))))
+      (, ,)
+      (S
+        (VP (VBG thinking)
+          (SBAR (IN that)
+            (S
+              (NP (PRP it))
+              (VP (VBD was)
+                (NP (NN chromium))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1806
+			name:	DATE				1-1	1806 
+	2	,
+	3	Collet
+			coref:	IDENT			2	3-5	Collet - Descotils 
+			name:	PERSON				3-3	Collet 
+	4	-
+	5	Descotils
+	6	misidentified
+			sense:	mistake.v.01
+			prop:	identify.01
+			V		6-6	misidentified 
+			N-ARGM-TMP		0-1	In 1806 
+			N-ARG-A0		3-5	Collet - Descotils 
+			N-ARG-A1		7-19	erythronium , a new element discovered in Mexico by Andrés Manuel del Río 
+			N-ARGM-ADV		21-25	thinking that it was chromium 
+	7	erythronium
+			sense:	erythronium.n.01
+	8	,
+	9	a
+	10	new
+			sense:	new.a.01
+	11	element
+			sense:	chemical_element.n.01
+	12	discovered
+			sense:	discover.v.03
+			prop:	discover.01
+			V		12-12	discovered 
+			N-ARG-A1		9-11	a new element 
+			N-ARGM-LOC		13-14	in Mexico 
+			N-ARG-A0		15-19	by Andrés Manuel del Río 
+	13	in
+	14	Mexico
+			name:	COUNTRY				14-14	Mexico 
+	15	by
+	16	Andrés
+			coref:	IDENT			4	16-19	Andrés Manuel del Río 
+			name:	PERSON				16-19	Andrés Manuel del Río 
+	17	Manuel
+	18	del
+	19	Río
+	20	,
+	21	thinking
+			sense:	think.v.01
+			prop:	think.01
+			V		21-21	thinking 
+			N-ARG-A0		3-5	Collet - Descotils 
+			N-ARG-A1		22-25	that it was chromium 
+	22	that
+	23	it
+			coref:	IDENT			2	23-23	it 
+	24	was
+			sense:	be.v.02
+			prop:	be.01
+			V		24-24	was 
+			N-ARG-A1		23-23	it 
+			N-ARG-A2		25-25	chromium 
+	25	chromium
+			sense:	chromium.n.01
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This resulted in Alexander von Humboldt rejecting Del Río 's discovery .
+
+
+Treebanked sentence:
+--------------------
+This resulted in Alexander von Humboldt rejecting Del Río 's discovery . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBD resulted)
+      (PP (IN in)
+        (NP
+          (NP (NNP Alexander) (NNP von) (NNP Humboldt))
+          (VP (VBG rejecting)
+            (NP
+              (NP (NNP Del) (NNP Río) (POS 's))
+              (NN discovery))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+	1	resulted
+			sense:	leave.v.07
+			prop:	result.01
+			V		1-1	resulted 
+			N-ARG-A1		0-0	This 
+			N-ARG-A2		2-10	in Alexander von Humboldt rejecting Del Río 's discovery 
+	2	in
+	3	Alexander
+			name:	PERSON				3-5	Alexander von Humboldt 
+	4	von
+	5	Humboldt
+	6	rejecting
+			sense:	refuse.v.02
+			prop:	reject.01
+			V		6-6	rejecting 
+			N-ARG-A0		3-5	Alexander von Humboldt 
+			N-ARG-A1		7-10	Del Río 's discovery 
+	7	Del
+			coref:	IDENT			4	7-9	Del Río 's 
+			name:	PERSON				7-8	Del Río 
+	8	Río
+	9	's
+	10	discovery
+			sense:	discovery.n.02
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The same element was rediscovered thirty years later in Sweden and renamed as vanadium .
+
+
+Treebanked sentence:
+--------------------
+The same element was rediscovered thirty years later in Sweden and renamed as vanadium . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJ same) (NN element))
+    (VP (VBD was)
+      (VP
+        (VP (VBN rediscovered)
+          (ADVP
+            (NP (CD thirty) (NNS years))
+            (RB later))
+          (PP (IN in)
+            (NP (NNP Sweden))))
+        (CC and)
+        (VP (VBN renamed)
+          (PP (IN as)
+            (NP (NN vanadium))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	same
+			sense:	same.a.01
+	2	element
+			sense:	chemical_element.n.01
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	rediscovered
+			sense:	rediscover.v.01
+			prop:	rediscover.01
+			V		4-4	rediscovered 
+			N-ARG-A1		0-2	The same element 
+			N-ARGM-TMP		5-7	thirty years later 
+			N-ARGM-LOC		8-9	in Sweden 
+	5	thirty
+			name:	DATE				5-7	thirty years later 
+	6	years
+			sense:	year.n.01
+	7	later
+			sense:	subsequently.r.01
+	8	in
+	9	Sweden
+			name:	COUNTRY				9-9	Sweden 
+	10	and
+	11	renamed
+			sense:	rename.v.01
+			prop:	rename.01
+			V		11-11	renamed 
+			N-ARG-A1		0-2	The same element 
+			N-ARG-A2		12-13	as vanadium 
+	12	as
+	13	vanadium
+			sense:	vanadium.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1815 , a few months before his death , he got the position of director of École des Mines de Paris , in charge of transferring the school to a new building .
+
+
+Treebanked sentence:
+--------------------
+In 1815 , a few months before his death , he got the position of director of École des Mines de Paris , in charge of transferring the school to a new building . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1815)))
+    (, ,)
+    (PP
+      (NP
+        (QP (DT a) (JJ few))
+        (NNS months))
+      (IN before)
+      (NP (PRP$ his) (NN death)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD got)
+      (NP
+        (NP (DT the) (NN position))
+        (PP (IN of)
+          (NP
+            (NP (NN director))
+            (PP (IN of)
+              (NP
+                (NP (NNP École) (NNP des) (NNP Mines) (IN de) (NNP Paris))
+                (, ,)
+                (PP (IN in)
+                  (NP
+                    (NP (NN charge))
+                    (PP (IN of)
+                      (S
+                        (VP (VBG transferring)
+                          (NP (DT the) (NN school))
+                          (PP (IN to)
+                            (NP (DT a) (JJ new) (NN building))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1815
+			name:	DATE				1-1	1815 
+	2	,
+	3	a
+			name:	DURATION				3-5	a few months 
+	4	few
+			sense:	few.a.01
+	5	months
+			sense:	calendar_month.n.01
+	6	before
+	7	his
+			coref:	IDENT			1	7-7	his 
+	8	death
+			sense:	death.n.01
+	9	,
+	10	he
+			coref:	IDENT			1	10-10	he 
+	11	got
+			sense:	get.v.01
+			prop:	get.01
+			V		11-11	got 
+			N-ARGM-TMP		0-1	In 1815 
+			N-ARGM-TMP		3-8	a few months before his death 
+			N-ARG-A0		10-10	he 
+			N-ARG-A1		12-32	the position of director of École des Mines de Paris , in charge of transferring the school to a new building 
+	12	the
+	13	position
+			sense:	position.n.06
+	14	of
+	15	director
+			name:	TITLE				15-15	director 
+			sense:	director.n.01
+	16	of
+	17	École
+			name:	ORGANIZATION				17-21	École des Mines de Paris 
+	18	des
+	19	Mines
+	20	de
+	21	Paris
+	22	,
+	23	in
+	24	charge
+			sense:	care.n.05
+	25	of
+	26	transferring
+			sense:	remove.v.05
+			prop:	transfer.01
+			V		26-26	transferring 
+			N-ARG-A1		27-28	the school 
+			N-ARG-A2		29-32	to a new building 
+	27	the
+	28	school
+			sense:	school.n.01
+	29	to
+	30	a
+	31	new
+			sense:	new.a.01
+	32	building
+			sense:	building.n.01
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is buried in the 10th Division of the Père Lachaise Cemetery of Paris .
+
+
+Treebanked sentence:
+--------------------
+He is buried in the 10th Division of the Père Lachaise Cemetery of Paris . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (VP (VBN buried)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (JJ 10th) (NN Division))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNP Père) (NNP Lachaise) (NNP Cemetery))
+                (PP (IN of)
+                  (NP (NNP Paris)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	buried
+			sense:	bury.v.02
+			prop:	bury.01
+			V		2-2	buried 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-13	in the 10th Division of the Père Lachaise Cemetery of Paris 
+	3	in
+	4	the
+	5	10th
+			name:	ORDINAL				5-5	10th 
+			sense:	tenth.s.01
+	6	Division
+			sense:	part.n.09
+	7	of
+	8	the
+	9	Père
+	10	Lachaise
+	11	Cemetery
+	12	of
+	13	Paris
+			coref:	IDENT			0	13-13	Paris 
+			name:	CITY				13-13	Paris 
+	14	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.16-16	Paris 
+				8.13-13	Paris 
+	Chain 1 (IDENT)
+				7.7-7	his 
+				7.10-10	he 
+				8.0-0	He 
+	Chain 2 (IDENT)
+				4.3-5	Collet - Descotils 
+				4.23-23	it 
+	Chain 3 (IDENT)
+				2.17-19	Louis Nicolas Vauquelin 
+				3.11-11	Vauquelin 
+	Chain 4 (IDENT)
+				4.16-19	Andrés Manuel del Río 
+				5.7-9	Del Río 's 
+	Chain 5 (IDENT)
+				1.0-0	He 
+				2.0-0	He 
+				3.0-0	He 
+

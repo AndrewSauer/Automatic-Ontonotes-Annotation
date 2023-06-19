@@ -1,0 +1,603 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Maria Elisabeth Ziesenis , later Lampe ( July 26 , 1744 – August 24 , 1796 ) was a German painter .
+
+
+Treebanked sentence:
+--------------------
+Maria Elisabeth Ziesenis , later Lampe ( July 26 , 1744 – August 24 , 1796 ) was a German painter . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Maria) (NNP Elisabeth) (NNP Ziesenis))
+    (, ,)
+    (ADVP (RB later))
+    (NP
+      (NP (NNP Lampe))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP July) (CD 26) (, ,) (CD 1744))
+        (PP (SYM –)
+          (NP (NNP August) (CD 24) (, ,) (CD 1796))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT a) (JJ German) (NN painter)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Maria
+			coref:	IDENT			0	0-2	Maria Elisabeth Ziesenis 
+			name:	PERSON				0-2	Maria Elisabeth Ziesenis 
+	1	Elisabeth
+	2	Ziesenis
+	3	,
+	4	later
+			sense:	subsequently.r.01
+	5	Lampe
+			name:	PERSON				5-5	Lampe 
+	6	(
+	7	July
+			name:	DATE				7-10	July 26 , 1744 
+	8	26
+	9	,
+	10	1744
+	11	–
+	12	August
+			name:	DATE				12-15	August 24 , 1796 
+	13	24
+	14	,
+	15	1796
+	16	)
+	17	was
+			sense:	be.v.02
+			prop:	be.01
+			V		17-17	was 
+			N-ARG-A1		0-16	Maria Elisabeth Ziesenis , later Lampe ( July 26 , 1744 – August 24 , 1796 ) 
+			N-ARG-A2		18-20	a German painter 
+	18	a
+	19	German
+			name:	NATIONALITY				19-19	German 
+	20	painter
+			name:	TITLE				20-20	painter 
+			sense:	painter.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in Frankfurt am Main , Ziesenis was the daughter of Johann Georg Ziesenis , who was also her teacher .
+
+
+Treebanked sentence:
+--------------------
+Born in Frankfurt am Main , Ziesenis was the daughter of Johann Georg Ziesenis , who was also her teacher . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (S
+        (VP (VBN Born)
+          (PP (IN in)
+            (NP (NNP Frankfurt)))))
+      (VP (VBP am)
+        (ADJP (JJ Main))))
+    (, ,)
+    (NP (NNP Ziesenis))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (NN daughter))
+        (PP (IN of)
+          (NP
+            (NP (NNP Johann) (NNP Georg) (NNP Ziesenis))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD was)
+                  (ADVP (RB also))
+                  (NP (PRP$ her) (NN teacher)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-4	in Frankfurt am Main 
+			N-ARG-A1		6-6	Ziesenis 
+	1	in
+	2	Frankfurt
+			name:	CITY				2-2	Frankfurt 
+	3	am
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	am 
+			N-ARG-A1		2-2	Frankfurt 
+			N-ARG-A2		4-4	Main 
+	4	Main
+			sense:	chief.s.01
+	5	,
+	6	Ziesenis
+			coref:	IDENT			0	6-6	Ziesenis 
+			name:	PERSON				6-6	Ziesenis 
+	7	was
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	was 
+			R-ARG-A1		0-4	Born in Frankfurt am Main 
+			N-ARG-A1		6-6	Ziesenis 
+			N-ARG-A2		8-19	the daughter of Johann Georg Ziesenis , who was also her teacher 
+	8	the
+	9	daughter
+			sense:	daughter.n.01
+	10	of
+	11	Johann
+			coref:	IDENT			0	11-19	Johann Georg Ziesenis , who was also her teacher 
+			name:	PERSON				11-13	Johann Georg Ziesenis 
+	12	Georg
+	13	Ziesenis
+	14	,
+	15	who
+	16	was
+			sense:	be.v.02
+			prop:	be.01
+			V		16-16	was 
+			N-ARG-A1		11-13	Johann Georg Ziesenis 
+			R-ARG-A1		15-15	who 
+			N-ARGM-ADV		17-17	also 
+			N-ARG-A2		18-19	her teacher 
+	17	also
+			sense:	besides.r.02
+	18	her
+			coref:	IDENT			0	18-18	her 
+	19	teacher
+			name:	TITLE				19-19	teacher 
+			sense:	teacher.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1776 she married Johann Bodo Lampe ( 1738 – 1802 ) , the königlicher Leibchirurgus who directed the botanical garden in Hanover .
+
+
+Treebanked sentence:
+--------------------
+In 1776 she married Johann Bodo Lampe ( 1738 – 1802 ) , the königlicher Leibchirurgus who directed the botanical garden in Hanover . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1776)))
+    (NP (PRP she))
+    (VP (VBD married)
+      (NP
+        (NP
+          (NP (NNP Johann) (NNP Bodo) (NNP Lampe))
+          (NP (-LRB- -LRB-)
+            (QP (CD 1738) (SYM –) (CD 1802))
+            (-RRB- -RRB-))
+          (, ,)
+          (NP
+            (NP (DT the) (NN königlicher))
+            (NP (NNP Leibchirurgus))))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD directed)
+              (NP (DT the) (JJ botanical) (NN garden))
+              (PP (IN in)
+                (NP (NNP Hanover))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1776
+			name:	DATE				1-1	1776 
+	2	she
+			coref:	IDENT			0	2-2	she 
+	3	married
+			sense:	marry.v.01
+			prop:	marry.01
+			V		3-3	married 
+			N-ARGM-TMP		0-1	In 1776 
+			N-ARG-A1		2-2	she 
+			N-ARG-A2		4-22	Johann Bodo Lampe ( 1738 – 1802 ) , the königlicher Leibchirurgus who directed the botanical garden in Hanover 
+	4	Johann
+			name:	PERSON				4-6	Johann Bodo Lampe 
+	5	Bodo
+	6	Lampe
+	7	(
+	8	1738
+			name:	DATE				8-8	1738 
+	9	–
+	10	1802
+			name:	DATE				10-10	1802 
+	11	)
+	12	,
+	13	the
+	14	königlicher
+	15	Leibchirurgus
+	16	who
+	17	directed
+			sense:	direct.v.04
+			prop:	direct.01
+			V		17-17	directed 
+			N-ARG-A0		13-15	the königlicher Leibchirurgus 
+			R-ARG-A0		16-16	who 
+			N-ARG-A1		18-22	the botanical garden in Hanover 
+	18	the
+	19	botanical
+			sense:	botanic.a.01
+	20	garden
+			sense:	garden.n.01
+	21	in
+	22	Hanover
+			name:	CITY				22-22	Hanover 
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She worked during her career in oils and sometime in pastel , and produced miniature paintings as well .
+
+
+Treebanked sentence:
+--------------------
+She worked during her career in oils and sometime in pastel , and produced miniature paintings as well . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP
+      (VP (VBD worked)
+        (PP (IN during)
+          (NP (PRP$ her) (NN career)))
+        (PP
+          (PP (IN in)
+            (NP (NNS oils)))
+          (CC and)
+          (PP
+            (ADVP (RB sometime))
+            (IN in)
+            (NP (JJ pastel)))))
+      (, ,)
+      (CC and)
+      (VP (VBD produced)
+        (NP (JJ miniature) (NNS paintings))
+        (ADVP (RB as) (RB well))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	worked
+			sense:	work.v.01
+			prop:	work.01
+			V		1-1	worked 
+			N-ARG-A0		0-0	She 
+			N-ARGM-TMP		2-4	during her career 
+			N-ARG-A1		5-10	in oils and sometime in pastel 
+	2	during
+	3	her
+			coref:	IDENT			0	3-3	her 
+	4	career
+			sense:	career.n.01
+	5	in
+	6	oils
+	7	and
+	8	sometime
+			sense:	sometime.r.01
+	9	in
+	10	pastel
+			sense:	pastel.s.02
+	11	,
+	12	and
+	13	produced
+			sense:	produce.v.02
+			prop:	produce.01
+			V		13-13	produced 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		14-15	miniature paintings 
+			N-ARGM-ADV		16-17	as well 
+	14	miniature
+			sense:	miniature.s.01
+	15	paintings
+			sense:	painting.n.01
+	16	as
+			sense:	equally.r.01
+	17	well
+			sense:	well.r.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1780 she became a member of the Kassel Akademie ; upon that occasion she exhibited a self - portrait in pastel and was classed as an amateur .
+
+
+Treebanked sentence:
+--------------------
+In 1780 she became a member of the Kassel Akademie ; upon that occasion she exhibited a self - portrait in pastel and was classed as an amateur . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN In)
+        (NP (CD 1780)))
+      (NP (PRP she))
+      (VP (VBD became)
+        (NP
+          (NP (DT a) (NN member))
+          (PP (IN of)
+            (NP (DT the) (NNP Kassel) (NNP Akademie))))))
+    (: ;)
+    (S
+      (PP (IN upon)
+        (NP (DT that) (NN occasion)))
+      (NP (PRP she))
+      (VP
+        (VP (VBD exhibited)
+          (NP (DT a) (NN self) (HYPH -) (NN portrait))
+          (PP (IN in)
+            (NP (JJ pastel))))
+        (CC and)
+        (VP (VBD was)
+          (VP (VBN classed)
+            (PP (IN as)
+              (NP (DT an) (NN amateur)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1780
+			name:	DATE				1-1	1780 
+	2	she
+			coref:	IDENT			0	2-2	she 
+	3	became
+			sense:	become.v.01
+			prop:	become.01
+			V		3-3	became 
+			N-ARGM-TMP		0-1	In 1780 
+			N-ARG-A1		2-2	she 
+			N-ARG-A2		4-9	a member of the Kassel Akademie 
+	4	a
+	5	member
+			sense:	member.n.01
+	6	of
+	7	the
+	8	Kassel
+			name:	PERSON				8-9	Kassel Akademie 
+	9	Akademie
+	10	;
+	11	upon
+	12	that
+	13	occasion
+			sense:	juncture.n.01
+	14	she
+			coref:	IDENT			0	14-14	she 
+	15	exhibited
+			sense:	show.v.01
+			prop:	exhibit.01
+			V		15-15	exhibited 
+			N-ARGM-TMP		11-13	upon that occasion 
+			N-ARG-A0		14-14	she 
+			N-ARG-A1		16-21	a self - portrait in pastel 
+	16	a
+	17	self
+			sense:	self.n.02
+	18	-
+	19	portrait
+			sense:	portrait.n.02
+	20	in
+	21	pastel
+			sense:	pastel.s.02
+	22	and
+	23	was
+			sense:	be.v.01
+			prop:	be.03
+			V		23-23	was 
+	24	classed
+			sense:	classify.v.01
+			prop:	class.01
+			V		24-24	classed 
+			N-ARGM-TMP		11-13	upon that occasion 
+			N-ARG-A1		14-14	she 
+			N-ARG-A2		25-27	as an amateur 
+	25	as
+	26	an
+	27	amateur
+			sense:	amateur.n.01
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A pair of surviving pastels show a great deal of attention to detail , especially in the depiction of the sitters ' clothing and accessories .
+
+
+Treebanked sentence:
+--------------------
+A pair of surviving pastels show a great deal of attention to detail , especially in the depiction of the sitters ' clothing and accessories . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN pair))
+      (PP (IN of)
+        (NP (VBG surviving) (NNS pastels))))
+    (VP (VBP show)
+      (NP
+        (NP (DT a) (JJ great) (NN deal))
+        (PP (IN of)
+          (NP (NN attention))))
+      (PP
+        (PP (IN to)
+          (NP (NN detail)))
+        (, ,) (RB especially)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN depiction))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNS sitters) (POS '))
+                (NN clothing)
+                (CC and)
+                (NNS accessories)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	pair
+			sense:	pair.n.01
+	2	of
+	3	surviving
+			sense:	survive.v.02
+			prop:	survive.01
+			V		3-3	surviving 
+			N-ARG-A0		4-4	pastels 
+	4	pastels
+			sense:	pastel.n.01
+	5	show
+			sense:	picture.v.02
+			prop:	show.01
+			V		5-5	show 
+			N-ARG-A0		0-4	A pair of surviving pastels 
+			N-ARG-A1		6-12	a great deal of attention to detail 
+	6	a
+	7	great
+			sense:	great.s.01
+	8	deal
+			sense:	batch.n.02
+	9	of
+	10	attention
+			sense:	attention.n.01
+	11	to
+	12	detail
+			sense:	detail.n.03
+	13	,
+	14	especially
+			sense:	particularly.r.01
+	15	in
+	16	the
+	17	depiction
+			sense:	depiction.n.04
+	18	of
+	19	the
+	20	sitters
+			sense:	artists_model.n.01
+	21	'
+	22	clothing
+			sense:	clothing.n.01
+	23	and
+	24	accessories
+			sense:	accessory.n.01
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ziesinis 's sister Margaretha was also a miniature painter .
+
+
+Treebanked sentence:
+--------------------
+Ziesinis 's sister Margaretha was also a miniature painter . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Ziesinis) (POS 's))
+        (NN sister))
+      (NP (NNP Margaretha)))
+    (VP (VBD was)
+      (ADVP (RB also))
+      (NP (DT a) (JJ miniature) (NN painter)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ziesinis
+			coref:	IDENT			0	0-1	Ziesinis 's 
+			name:	PERSON				0-0	Ziesinis 
+	1	's
+	2	sister
+			sense:	sister.n.01
+	3	Margaretha
+			name:	PERSON				3-3	Margaretha 
+	4	was
+			sense:	be.v.01
+			prop:	be.01
+			V		4-4	was 
+			N-ARG-A1		0-3	Ziesinis 's sister Margaretha 
+			N-ARGM-ADV		5-5	also 
+			N-ARG-A2		6-8	a miniature painter 
+	5	also
+			sense:	besides.r.02
+	6	a
+	7	miniature
+			sense:	miniature.s.01
+	8	painter
+			name:	TITLE				8-8	painter 
+			sense:	painter.n.01
+	9	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.11-19	Johann Georg Ziesenis , who was also her teacher 
+				0.0-2	Maria Elisabeth Ziesenis 
+				1.6-6	Ziesenis 
+				1.18-18	her 
+				2.2-2	she 
+				3.0-0	She 
+				3.3-3	her 
+				4.2-2	she 
+				4.14-14	she 
+				6.0-1	Ziesinis 's 
+

@@ -1,0 +1,628 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Naranjas de Villa Clara ( Villa Clara Oranges ) is a baseball club that plays in the Cuban National Series .
+
+
+Treebanked sentence:
+--------------------
+The Naranjas de Villa Clara ( Villa Clara Oranges ) is a baseball club that plays in the Cuban National Series . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Naranjas) (NNP de) (NNP Villa) (NNP Clara))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP Villa) (NNP Clara))
+        (NP (NNS Oranges)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN baseball) (NN club))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ plays)
+              (PP (IN in)
+                (NP (DT the) (NNP Cuban) (NNP National) (NNP Series))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-4	The Naranjas de Villa Clara 
+	1	Naranjas
+	2	de
+	3	Villa
+			name:	PERSON				3-4	Villa Clara 
+	4	Clara
+	5	(
+	6	Villa
+			name:	ORGANIZATION				6-8	Villa Clara Oranges 
+	7	Clara
+	8	Oranges
+			sense:	orange.n.01
+	9	)
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	The Naranjas de Villa Clara ( Villa Clara Oranges ) 
+			N-ARG-A2		11-20	a baseball club that plays in the Cuban National Series 
+	11	a
+	12	baseball
+			sense:	baseball.n.01
+	13	club
+			sense:	baseball_club.n.01
+	14	that
+	15	plays
+			sense:	play.v.01
+			prop:	play.01
+			V		15-15	plays 
+			N-ARG-A0		11-13	a baseball club 
+			R-ARG-A0		14-14	that 
+			N-ARGM-LOC		16-20	in the Cuban National Series 
+	16	in
+	17	the
+	18	Cuban
+			name:	NATIONALITY				18-18	Cuban 
+	19	National
+			name:	MISC				19-20	National Series 
+	20	Series
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Based in Santa Clara , the Naranjas have been one of the league 's most successful Cuban squads over the last 30 years ; winning championships in 1983 , as well as three - year run from 1993 to 1995 .
+
+
+Treebanked sentence:
+--------------------
+Based in Santa Clara , the Naranjas have been one of the league 's most successful Cuban squads over the last 30 years ; winning championships in 1983 , as well as three - year run from 1993 to 1995 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (VBN Based)
+        (PP (IN in)
+          (NP (NNP Santa) (NNP Clara))))
+      (, ,)
+      (NP (DT the) (NNP Naranjas))
+      (VP (VBP have)
+        (VP (VBN been)
+          (NP
+            (NP (CD one))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN league) (POS 's))
+                (ADJP (RBS most) (JJ successful))
+                (JJ Cuban) (NNS squads))))
+          (PP (IN over)
+            (NP (DT the) (JJ last) (CD 30) (NNS years))))))
+    (: ;)
+    (S
+      (VP (VBG winning)
+        (NP
+          (NP
+            (NP (NNS championships))
+            (PP (IN in)
+              (NP (CD 1983))))
+          (, ,)
+          (CONJP (RB as) (RB well) (IN as))
+          (NP
+            (NP
+              (NML (CD three) (HYPH -) (NN year))
+              (NN run))
+            (PP (IN from)
+              (NP (CD 1993)))))
+        (PP (IN to)
+          (NP (CD 1995)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Based
+			sense:	base.v.02
+			prop:	base.01
+			V		0-0	Based 
+			N-ARGM-LOC		1-3	in Santa Clara 
+			N-ARG-A1		5-6	the Naranjas 
+	1	in
+	2	Santa
+			name:	CITY				2-3	Santa Clara 
+	3	Clara
+	4	,
+	5	the
+			coref:	IDENT			2	5-6	the Naranjas 
+	6	Naranjas
+			name:	LOCATION				6-6	Naranjas 
+	7	have
+			sense:	have.v.02
+			prop:	have.01
+			V		7-7	have 
+	8	been
+			sense:	be.v.01
+			prop:	be.01
+			V		8-8	been 
+			R-ARG-A1		0-3	Based in Santa Clara 
+			N-ARG-A1		5-6	the Naranjas 
+			N-ARG-A2		9-17	one of the league 's most successful Cuban squads 
+			N-ARGM-TMP		18-22	over the last 30 years 
+			N-ARGM-ADV		24-39	winning championships in 1983 , as well as three - year run from 1993 to 1995 
+	9	one
+			name:	NUMBER				9-9	one 
+	10	of
+	11	the
+			coref:	IDENT			2	11-13	the league 's 
+	12	league
+			sense:	league.n.01
+	13	's
+	14	most
+			sense:	most.r.01
+	15	successful
+			sense:	successful.a.01
+	16	Cuban
+			name:	NATIONALITY				16-16	Cuban 
+	17	squads
+			sense:	team.n.01
+	18	over
+	19	the
+			name:	DURATION				19-22	the last 30 years 
+	20	last
+			sense:	last.s.01
+	21	30
+	22	years
+			sense:	year.n.01
+	23	;
+	24	winning
+			sense:	win.v.01
+			prop:	win.01
+			V		24-24	winning 
+			N-ARG-A0		5-6	the Naranjas 
+			N-ARG-A1		25-25	championships 
+			N-ARGM-TMP		26-27	in 1983 
+			N-ARGM-ADV		29-39	as well as three - year run from 1993 to 1995 
+	25	championships
+			sense:	championship.n.02
+	26	in
+	27	1983
+			name:	DATE				27-27	1983 
+	28	,
+	29	as
+			sense:	equally.r.01
+	30	well
+			sense:	well.r.01
+	31	as
+	32	three
+			name:	DURATION				32-34	three - year 
+	33	-
+	34	year
+			sense:	year.n.01
+	35	run
+			sense:	streak.n.01
+	36	from
+	37	1993
+			name:	DATE				37-39	1993 to 1995 
+	38	to
+	39	1995
+	40	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+They also lost the 1996 , 2003 , 2004 and 2010 finals to the Industriales .
+
+
+Treebanked sentence:
+--------------------
+They also lost the 1996 , 2003 , 2004 and 2010 finals to the Industriales . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP They))
+    (ADVP (RB also))
+    (VP (VBD lost)
+      (NP
+        (NP (DT the) (CD 1996))
+        (, ,)
+        (NP (CD 2003))
+        (, ,)
+        (NP (CD 2004))
+        (CC and)
+        (NP (CD 2010) (NNS finals)))
+      (PP (IN to)
+        (NP (DT the) (NNP Industriales))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	They
+	1	also
+			sense:	besides.r.02
+	2	lost
+			sense:	lose.v.02
+			prop:	lose.03
+			V		2-2	lost 
+			N-ARG-A0		0-0	They 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-11	the 1996 , 2003 , 2004 and 2010 finals 
+			N-ARG-A2		12-14	to the Industriales 
+	3	the
+	4	1996
+			name:	DATE				4-6	1996 , 2003 
+	5	,
+	6	2003
+	7	,
+	8	2004
+			name:	DATE				8-8	2004 
+	9	and
+	10	2010
+			name:	DATE				10-10	2010 
+	11	finals
+			sense:	final.n.01
+	12	to
+	13	the
+	14	Industriales
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Orange , white and black are their colors ; although they have three different colors , the orange is what represents them , even though teams like Sancti Spíritus Gallos also wore orange uniforms .
+
+
+Treebanked sentence:
+--------------------
+Orange , white and black are their colors ; although they have three different colors , the orange is what represents them , even though teams like Sancti Spíritus Gallos also wore orange uniforms . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Orange))
+        (, ,)
+        (ADJP (JJ white)
+          (CC and)
+          (JJ black)))
+      (VP (VBP are)
+        (NP (PRP$ their) (NNS colors))))
+    (: ;)
+    (S
+      (SBAR (IN although)
+        (S
+          (NP (PRP they))
+          (VP (VBP have)
+            (NP (CD three) (JJ different) (NNS colors)))))
+      (, ,)
+      (NP (DT the) (NN orange))
+      (VP (VBZ is)
+        (SBAR
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (VP (VBZ represents)
+                (NP (PRP them)))))
+          (, ,) (RB even)
+          (SBAR (IN though)
+            (S
+              (NP
+                (NP (NNS teams))
+                (PP (IN like)
+                  (NP (NNP Sancti) (NNP Spíritus) (NNP Gallos))))
+              (ADVP (RB also))
+              (VP (VBD wore)
+                (NP (JJ orange) (NNS uniforms))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Orange
+			coref:	IDENT			3	0-4	Orange , white and black 
+	1	,
+	2	white
+			sense:	white.a.01
+	3	and
+	4	black
+			sense:	black.a.01
+	5	are
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	are 
+			N-ARG-A1		0-4	Orange , white and black 
+			N-ARG-A2		6-7	their colors 
+	6	their
+			coref:	IDENT			3	6-6	their 
+	7	colors
+			sense:	color.n.01
+	8	;
+	9	although
+	10	they
+			coref:	IDENT			3	10-10	they 
+	11	have
+			sense:	have.v.02
+			prop:	have.03
+			V		11-11	have 
+			N-ARG-A0		10-10	they 
+			N-ARG-A1		12-14	three different colors 
+	12	three
+			name:	NUMBER				12-12	three 
+	13	different
+			sense:	different.a.01
+	14	colors
+			sense:	color.n.01
+	15	,
+	16	the
+	17	orange
+			sense:	orange.n.02
+	18	is
+			sense:	be.v.02
+			prop:	be.01
+			V		18-18	is 
+			N-ARGM-ADV		9-14	although they have three different colors 
+			N-ARG-A1		16-17	the orange 
+			N-ARG-A2		19-21	what represents them 
+			N-ARGM-ADV		23-33	even though teams like Sancti Spíritus Gallos also wore orange uniforms 
+	19	what
+	20	represents
+			sense:	typify.v.02
+			prop:	represent.01
+			V		20-20	represents 
+			N-ARG-A0		19-19	what 
+			N-ARG-A1		21-21	them 
+	21	them
+			coref:	IDENT			3	21-21	them 
+	22	,
+	23	even
+			sense:	even.r.02
+	24	though
+	25	teams
+			sense:	team.n.01
+	26	like
+	27	Sancti
+			name:	ORGANIZATION				27-29	Sancti Spíritus Gallos 
+	28	Spíritus
+	29	Gallos
+	30	also
+			sense:	besides.r.02
+	31	wore
+			sense:	wear.v.01
+			prop:	wear.01
+			V		31-31	wore 
+			N-ARG-A0		25-29	teams like Sancti Spíritus Gallos 
+			N-ARGM-ADV		30-30	also 
+			N-ARG-A1		32-33	orange uniforms 
+	32	orange
+			sense:	orange.s.01
+	33	uniforms
+			sense:	uniform.n.01
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Eight Villa Clara 's players have been members of the Cuba national baseball team in the World Baseball Classic .
+
+
+Treebanked sentence:
+--------------------
+Eight Villa Clara 's players have been members of the Cuba national baseball team in the World Baseball Classic . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (CD Eight))
+      (NP
+        (NP (NNP Villa) (NNP Clara) (POS 's))
+        (NNS players)))
+    (VP (VBP have)
+      (VP (VBN been)
+        (NP
+          (NP (NNS members))
+          (PP (IN of)
+            (NP (DT the) (NNP Cuba)
+              (NML (JJ national) (NN baseball))
+              (NN team))))
+        (PP (IN in)
+          (NP (DT the)
+            (NML (NNP World) (NNP Baseball))
+            (NNP Classic)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Eight
+			name:	NUMBER				0-0	Eight 
+	1	Villa
+			coref:	IDENT			0	1-3	Villa Clara 's 
+			name:	PERSON				1-2	Villa Clara 
+	2	Clara
+	3	's
+	4	players
+			sense:	player.n.01
+	5	have
+			sense:	have.v.01
+			prop:	have.01
+			V		5-5	have 
+	6	been
+			sense:	be.v.01
+			prop:	be.01
+			V		6-6	been 
+			N-ARG-A1		0-4	Eight Villa Clara 's players 
+			N-ARG-A2		7-18	members of the Cuba national baseball team in the World Baseball Classic 
+	7	members
+			sense:	member.n.01
+	8	of
+	9	the
+	10	Cuba
+			name:	COUNTRY				10-10	Cuba 
+	11	national
+			sense:	national.a.01
+	12	baseball
+			sense:	baseball.n.01
+	13	team
+			sense:	team.n.01
+	14	in
+	15	the
+	16	World
+			name:	MISC				16-18	World Baseball Classic 
+	17	Baseball
+	18	Classic
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ariel Borrero , Luis Borroto , Eduardo Paret and Ariel Pestano were on the roster in the 2006 tournament , while Leonys Martín , Eduardo Paret , Yolexis Ulacia and Pestano were in 2009 .
+
+
+Treebanked sentence:
+--------------------
+Ariel Borrero , Luis Borroto , Eduardo Paret and Ariel Pestano were on the roster in the 2006 tournament , while Leonys Martín , Eduardo Paret , Yolexis Ulacia and Pestano were in 2009 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Ariel) (NNP Borrero))
+      (, ,)
+      (NP (NNP Luis) (NNP Borroto))
+      (, ,)
+      (NP (NNP Eduardo) (NNP Paret))
+      (CC and)
+      (NP (NNP Ariel) (NNP Pestano)))
+    (VP (VBD were)
+      (PP (IN on)
+        (NP
+          (NP (DT the) (NN roster))
+          (PP (IN in)
+            (NP (DT the) (CD 2006) (NN tournament)))))
+      (, ,)
+      (SBAR (IN while)
+        (S
+          (NP
+            (NP (NNP Leonys) (NNP Martín))
+            (, ,)
+            (NP (NNP Eduardo) (NNP Paret))
+            (, ,)
+            (NP (NNP Yolexis) (NNP Ulacia))
+            (CC and)
+            (NP (NNP Pestano)))
+          (VP (VBD were)
+            (PP (IN in)
+              (NP (CD 2009)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ariel
+			name:	PERSON				0-1	Ariel Borrero 
+	1	Borrero
+	2	,
+	3	Luis
+			name:	PERSON				3-4	Luis Borroto 
+	4	Borroto
+	5	,
+	6	Eduardo
+			coref:	IDENT			1	6-7	Eduardo Paret 
+			name:	PERSON				6-7	Eduardo Paret 
+	7	Paret
+	8	and
+	9	Ariel
+			name:	PERSON				9-10	Ariel Pestano 
+	10	Pestano
+	11	were
+			sense:	be.v.03
+			prop:	be.01
+			V		11-11	were 
+			N-ARG-A1		0-10	Ariel Borrero , Luis Borroto , Eduardo Paret and Ariel Pestano 
+			N-ARG-A2		12-14	on the roster 
+			N-ARGM-TMP		15-18	in the 2006 tournament 
+			N-ARGM-ADV		20-33	while Leonys Martín , Eduardo Paret , Yolexis Ulacia and Pestano were in 2009 
+	12	on
+	13	the
+	14	roster
+			sense:	roll.n.02
+	15	in
+	16	the
+	17	2006
+			name:	DATE				17-17	2006 
+	18	tournament
+			sense:	tournament.n.01
+	19	,
+	20	while
+	21	Leonys
+			name:	PERSON				21-22	Leonys Martín 
+	22	Martín
+	23	,
+	24	Eduardo
+			coref:	IDENT			1	24-25	Eduardo Paret 
+			name:	PERSON				24-25	Eduardo Paret 
+	25	Paret
+	26	,
+	27	Yolexis
+			name:	PERSON				27-28	Yolexis Ulacia 
+	28	Ulacia
+	29	and
+	30	Pestano
+			name:	PERSON				30-30	Pestano 
+	31	were
+			sense:	be.v.01
+			prop:	be.01
+			V		31-31	were 
+			N-ARG-A1		21-30	Leonys Martín , Eduardo Paret , Yolexis Ulacia and Pestano 
+			N-ARGM-TMP		32-33	in 2009 
+	32	in
+	33	2009
+			name:	DATE				33-33	2009 
+	34	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-4	The Naranjas de Villa Clara 
+				4.1-3	Villa Clara 's 
+	Chain 1 (IDENT)
+				5.6-7	Eduardo Paret 
+				5.24-25	Eduardo Paret 
+	Chain 2 (IDENT)
+				1.5-6	the Naranjas 
+				1.11-13	the league 's 
+	Chain 3 (IDENT)
+				3.0-4	Orange , white and black 
+				3.6-6	their 
+				3.10-10	they 
+				3.21-21	them 
+

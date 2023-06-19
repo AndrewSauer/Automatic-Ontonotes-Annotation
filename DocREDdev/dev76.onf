@@ -1,0 +1,603 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Elias Brown ( May 9 , 1793 – July 7 , 1857 ) was a U.S. Representative from Maryland .
+
+
+Treebanked sentence:
+--------------------
+Elias Brown ( May 9 , 1793 – July 7 , 1857 ) was a U.S. Representative from Maryland . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Elias) (NNP Brown))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP May) (CD 9) (, ,) (CD 1793))
+        (PP (SYM –)
+          (NP (NNP July) (CD 7) (, ,) (CD 1857))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NNP U.S.) (NNP Representative))
+        (PP (IN from)
+          (NP (NNP Maryland)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Elias
+			name:	PERSON				0-1	Elias Brown 
+	1	Brown
+	2	(
+	3	May
+			name:	DATE				3-6	May 9 , 1793 
+	4	9
+	5	,
+	6	1793
+	7	–
+	8	July
+			name:	DATE				8-11	July 7 , 1857 
+	9	7
+	10	,
+	11	1857
+	12	)
+	13	was
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	was 
+			N-ARG-A1		0-12	Elias Brown ( May 9 , 1793 – July 7 , 1857 ) 
+			N-ARG-A2		14-18	a U.S. Representative from Maryland 
+	14	a
+	15	U.S.
+			name:	COUNTRY				15-15	U.S. 
+	16	Representative
+			name:	TITLE				16-16	Representative 
+	17	from
+	18	Maryland
+			coref:	IDENT			1	18-18	Maryland 
+			name:	STATE_OR_PROVINCE				18-18	Maryland 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born near Baltimore , Maryland , Brown attended the common schools .
+
+
+Treebanked sentence:
+--------------------
+Born near Baltimore , Maryland , Brown attended the common schools . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN near)
+          (NP (NNP Baltimore) (, ,) (NNP Maryland)))))
+    (, ,)
+    (NP (NNP Brown))
+    (VP (VBD attended)
+      (NP (DT the) (JJ common) (NNS schools)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-4	near Baltimore , Maryland 
+			N-ARG-A1		6-6	Brown 
+	1	near
+	2	Baltimore
+			coref:	IDENT			0	2-4	Baltimore , Maryland 
+			coref:	IDENT			2	2-2	Baltimore 
+			name:	CITY				2-2	Baltimore 
+	3	,
+	4	Maryland
+			name:	STATE_OR_PROVINCE				4-4	Maryland 
+	5	,
+	6	Brown
+			name:	PERSON				6-6	Brown 
+	7	attended
+			sense:	attend.v.01
+			prop:	attend.01
+			V		7-7	attended 
+			R-ARG-A0		0-4	Born near Baltimore , Maryland 
+			N-ARG-A0		6-6	Brown 
+			N-ARG-A1		8-10	the common schools 
+	8	the
+	9	common
+			sense:	common.a.01
+	10	schools
+			sense:	school.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He served as presidential elector on the ticket of James Monroe and Daniel D. Tompkins in 1820 and on the ticket of John Quincy Adams and Richard Rush in 1828 .
+
+
+Treebanked sentence:
+--------------------
+He served as presidential elector on the ticket of James Monroe and Daniel D. Tompkins in 1820 and on the ticket of John Quincy Adams and Richard Rush in 1828 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP (JJ presidential) (NN elector)))
+      (PP
+        (PP (IN on)
+          (NP
+            (NP
+              (NP (DT the) (NN ticket))
+              (PP (IN of)
+                (NP (NNP James) (NNP Monroe))))
+            (CC and)
+            (NP
+              (NP (NNP Daniel) (NNP D.) (NNP Tompkins))
+              (PP (IN in)
+                (NP (CD 1820))))))
+        (CC and)
+        (PP (IN on)
+          (NP
+            (NP
+              (NP (DT the) (NN ticket))
+              (PP (IN of)
+                (NP (NNP John) (NNP Quincy) (NNP Adams))))
+            (CC and)
+            (NP
+              (NP (NNP Richard) (NNP Rush))
+              (PP (IN in)
+                (NP (CD 1828))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-16	as presidential elector on the ticket of James Monroe and Daniel D. Tompkins in 1820 
+	2	as
+	3	presidential
+			sense:	presidential.a.01
+	4	elector
+			sense:	voter.n.01
+	5	on
+	6	the
+	7	ticket
+			sense:	slate.n.04
+	8	of
+	9	James
+			name:	PERSON				9-10	James Monroe 
+	10	Monroe
+	11	and
+	12	Daniel
+			name:	PERSON				12-14	Daniel D. Tompkins 
+	13	D.
+	14	Tompkins
+	15	in
+	16	1820
+			name:	DATE				16-16	1820 
+	17	and
+	18	on
+	19	the
+	20	ticket
+			sense:	slate.n.04
+	21	of
+	22	John
+			name:	PERSON				22-24	John Quincy Adams 
+	23	Quincy
+	24	Adams
+	25	and
+	26	Richard
+			name:	PERSON				26-27	Richard Rush 
+	27	Rush
+	28	in
+	29	1828
+			name:	DATE				29-29	1828 
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Brown was elected as a Jacksonian to the Twenty - first Congress , where he served from March 4 , 1829 to March 3 , 1831 .
+
+
+Treebanked sentence:
+--------------------
+Brown was elected as a Jacksonian to the Twenty - first Congress , where he served from March 4 , 1829 to March 3 , 1831 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Brown))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (PP (IN as)
+          (NP (DT a) (JJ Jacksonian)))
+        (PP (IN to)
+          (NP
+            (NP (DT the)
+              (NML
+                (QP (CD Twenty) (HYPH -) (JJ first)))
+              (NNP Congress))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (PRP he))
+                (VP (VBD served)
+                  (PP (IN from)
+                    (NP
+                      (NP (NNP March) (CD 4) (, ,) (CD 1829))
+                      (TO to)
+                      (NP (NNP March) (CD 3) (, ,) (CD 1831)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Brown
+			name:	PERSON				0-0	Brown 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A1		0-0	Brown 
+			N-ARG-A2		3-25	as a Jacksonian to the Twenty - first Congress , where he served from March 4 , 1829 to March 3 , 1831 
+	3	as
+	4	a
+	5	Jacksonian
+			name:	MISC				5-5	Jacksonian 
+			sense:	jacksonian.a.01
+	6	to
+	7	the
+	8	Twenty
+			name:	NUMBER				8-8	Twenty 
+	9	-
+	10	first
+			name:	ORDINAL				10-10	first 
+			sense:	first.s.02
+	11	Congress
+			name:	ORGANIZATION				11-11	Congress 
+	12	,
+	13	where
+	14	he
+	15	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		15-15	served 
+			N-ARG-A0		14-14	he 
+			N-ARGM-TMP		16-25	from March 4 , 1829 to March 3 , 1831 
+	16	from
+	17	March
+			name:	DATE				17-20	March 4 , 1829 
+	18	4
+	19	,
+	20	1829
+	21	to
+	22	March
+			name:	DATE				22-25	March 3 , 1831 
+	23	3
+	24	,
+	25	1831
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also served as member of the Maryland House of Delegates in 1834 and 1835 , and as member of the Maryland Senate from 1836 to 1838 .
+
+
+Treebanked sentence:
+--------------------
+He also served as member of the Maryland House of Delegates in 1834 and 1835 , and as member of the Maryland Senate from 1836 to 1838 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD served)
+      (PP
+        (PP (IN as)
+          (NP
+            (NP (NN member))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNP Maryland) (NNP House))
+                (PP (IN of)
+                  (NP
+                    (NP (NNPS Delegates))
+                    (PP (IN in)
+                      (NP (NNP 1834)
+                        (CC and)
+                        (NNP 1835)))))))))
+        (, ,)
+        (CC and)
+        (PP (IN as)
+          (NP
+            (NP (NN member))
+            (PP (IN of)
+              (NP (DT the) (NNP Maryland) (NNP Senate))))))
+      (PP (IN from)
+        (NP (CD 1836)))
+      (PP (IN to)
+        (NP (CD 1838))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	also
+			sense:	besides.r.02
+	2	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		2-2	served 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		17-22	as member of the Maryland Senate 
+			N-ARGM-TMP		23-26	from 1836 to 1838 
+	3	as
+	4	member
+			sense:	member.n.01
+	5	of
+	6	the
+	7	Maryland
+			name:	ORGANIZATION				7-10	Maryland House of Delegates 
+	8	House
+	9	of
+	10	Delegates
+	11	in
+	12	1834
+			name:	DATE				12-12	1834 
+	13	and
+	14	1835
+			name:	DATE				14-14	1835 
+	15	,
+	16	and
+	17	as
+	18	member
+			sense:	member.n.01
+	19	of
+	20	the
+	21	Maryland
+			name:	ORGANIZATION				21-22	Maryland Senate 
+	22	Senate
+	23	from
+	24	1836
+			name:	DATE				24-26	1836 to 1838 
+	25	to
+	26	1838
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1836 , he served as presidential elector on the ticket of William Henry Harrison and John Tyler , and served as delegate to the State constitutional convention the same year .
+
+
+Treebanked sentence:
+--------------------
+In 1836 , he served as presidential elector on the ticket of William Henry Harrison and John Tyler , and served as delegate to the State constitutional convention the same year . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1836)))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD served)
+        (PP (IN as)
+          (NP (JJ presidential) (NN elector)))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN ticket))
+            (PP (IN of)
+              (NP
+                (NP (NNP William) (NNP Henry) (NNP Harrison))
+                (CC and)
+                (NP (NNP John) (NNP Tyler)))))))
+      (, ,)
+      (CC and)
+      (VP (VBD served)
+        (PP (IN as)
+          (NP (NN delegate)))
+        (PP (IN to)
+          (NP (DT the) (NNP State) (JJ constitutional) (NN convention)))
+        (NP-TMP (DT the) (JJ same) (NN year))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1836
+			name:	DATE				1-1	1836 
+	2	,
+	3	he
+	4	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		4-4	served 
+			N-ARGM-TMP		0-1	In 1836 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		5-17	as presidential elector on the ticket of William Henry Harrison and John Tyler 
+	5	as
+	6	presidential
+			sense:	presidential.a.01
+	7	elector
+			sense:	voter.n.01
+	8	on
+	9	the
+	10	ticket
+			sense:	slate.n.04
+	11	of
+	12	William
+			name:	PERSON				12-14	William Henry Harrison 
+	13	Henry
+	14	Harrison
+	15	and
+	16	John
+			name:	PERSON				16-17	John Tyler 
+	17	Tyler
+	18	,
+	19	and
+	20	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		20-20	served 
+			N-ARGM-TMP		0-1	In 1836 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		21-27	as delegate to the State constitutional convention 
+			N-ARGM-TMP		28-30	the same year 
+	21	as
+	22	delegate
+			sense:	delegate.n.01
+	23	to
+	24	the
+	25	State
+	26	constitutional
+			sense:	constitutional.a.02
+	27	convention
+			sense:	convention.n.01
+	28	the
+			name:	DATE				28-30	the same year 
+	29	same
+			sense:	same.a.01
+	30	year
+			sense:	year.n.01
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He died near Baltimore , Maryland , and is interred in a private cemetery near Eldersburg , Maryland .
+
+
+Treebanked sentence:
+--------------------
+He died near Baltimore , Maryland , and is interred in a private cemetery near Eldersburg , Maryland . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD died)
+        (PP (IN near)
+          (NP (NNP Baltimore) (, ,) (NNP Maryland))))
+      (, ,)
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN interred)
+          (PP (IN in)
+            (NP
+              (NP (DT a) (JJ private) (NN cemetery))
+              (PP (IN near)
+                (NP (NNP Eldersburg) (, ,) (NNP Maryland))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		2-5	near Baltimore , Maryland 
+	2	near
+	3	Baltimore
+			coref:	IDENT			0	3-5	Baltimore , Maryland 
+			coref:	IDENT			2	3-3	Baltimore 
+			name:	CITY				3-3	Baltimore 
+	4	,
+	5	Maryland
+			name:	STATE_OR_PROVINCE				5-5	Maryland 
+	6	,
+	7	and
+	8	is
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	is 
+	9	interred
+			sense:	bury.v.02
+			prop:	enter.01
+			V		9-9	interred 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		10-17	in a private cemetery near Eldersburg , Maryland 
+	10	in
+	11	a
+	12	private
+			sense:	private.a.01
+	13	cemetery
+			sense:	cemetery.n.01
+	14	near
+	15	Eldersburg
+			coref:	IDENT			1	15-17	Eldersburg , Maryland 
+			name:	CITY				15-15	Eldersburg 
+	16	,
+	17	Maryland
+			name:	STATE_OR_PROVINCE				17-17	Maryland 
+	18	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.2-4	Baltimore , Maryland 
+				6.3-5	Baltimore , Maryland 
+	Chain 1 (IDENT)
+				6.15-17	Eldersburg , Maryland 
+				0.18-18	Maryland 
+	Chain 2 (IDENT)
+				1.2-2	Baltimore 
+				6.3-3	Baltimore 
+

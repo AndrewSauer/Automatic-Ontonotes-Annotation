@@ -1,0 +1,507 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Toronto Coach Terminal is the central bus station for inter - city services in Toronto , Ontario , Canada .
+
+
+Treebanked sentence:
+--------------------
+The Toronto Coach Terminal is the central bus station for inter - city services in Toronto , Ontario , Canada . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The)
+      (NML (NNP Toronto) (NNP Coach))
+      (NNP Terminal))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ central) (NN bus) (NN station))
+        (PP (IN for)
+          (NP
+            (NP
+              (NML (AFX inter) (HYPH -) (NN city))
+              (NNS services))
+            (PP (IN in)
+              (NP
+                (NML (NNP Toronto) (, ,) (NNP Ontario) (, ,))
+                (NNP Canada)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-3	The Toronto Coach Terminal 
+	1	Toronto
+			name:	ORGANIZATION				1-3	Toronto Coach Terminal 
+	2	Coach
+	3	Terminal
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	The Toronto Coach Terminal 
+			N-ARG-A2		5-19	the central bus station for inter - city services in Toronto , Ontario , Canada 
+	5	the
+	6	central
+			sense:	central.a.02
+	7	bus
+			sense:	bus.n.01
+	8	station
+			sense:	station.n.01
+	9	for
+	10	inter
+	11	-
+	12	city
+			sense:	city.n.01
+	13	services
+			sense:	service.n.01
+	14	in
+	15	Toronto
+			name:	CITY				15-15	Toronto 
+	16	,
+	17	Ontario
+			name:	STATE_OR_PROVINCE				17-17	Ontario 
+	18	,
+	19	Canada
+			name:	COUNTRY				19-19	Canada 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is located at 610 Bay Street , in the city 's Downtown .
+
+
+Treebanked sentence:
+--------------------
+It is located at 610 Bay Street , in the city 's Downtown . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN at)
+          (NP
+            (NP (CD 610)
+              (NML (NNP Bay) (NNP Street)))
+            (, ,)
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN city) (POS 's))
+                (NN Downtown)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	is
+			sense:	be.v.03
+			prop:	be.03
+			V		1-1	is 
+	2	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		2-2	located 
+			N-ARG-A1		0-0	It 
+			N-ARGM-LOC		3-6	at 610 Bay Street 
+			N-ARGM-LOC		8-12	in the city 's Downtown 
+	3	at
+	4	610
+			name:	NUMBER				4-4	610 
+	5	Bay
+			name:	CITY				5-5	Bay 
+	6	Street
+			name:	LOCATION				6-6	Street 
+	7	,
+	8	in
+	9	the
+	10	city
+			sense:	city.n.01
+	11	's
+	12	Downtown
+			sense:	business_district.n.01
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The terminal is owned by Toronto Coach Terminal Inc. , a wholly owned subsidiary of the Toronto Transit Commission ( TTC ) .
+
+
+Treebanked sentence:
+--------------------
+The terminal is owned by Toronto Coach Terminal Inc. , a wholly owned subsidiary of the Toronto Transit Commission ( TTC ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJ terminal))
+    (VP (VBZ is)
+      (VP (VBN owned)
+        (PP (IN by)
+          (NP
+            (NP
+              (NML (NNP Toronto) (NNP Coach))
+              (NNP Terminal) (NNP Inc.))
+            (, ,)
+            (NP
+              (NP (DT a)
+                (ADJP (RB wholly) (VBN owned))
+                (NN subsidiary))
+              (PP (IN of)
+                (NP (DT the)
+                  (NML (NNP Toronto) (NNP Transit))
+                  (NNP Commission))))))
+        (PRN (-LRB- -LRB-)
+          (NP (NN TTC))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	terminal
+			sense:	terminal.a.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		3-3	owned 
+			N-ARG-A1		0-1	The terminal 
+			N-ARG-A0		4-21	by Toronto Coach Terminal Inc. , a wholly owned subsidiary of the Toronto Transit Commission ( TTC ) 
+	4	by
+	5	Toronto
+			coref:	IDENT			0	5-18	Toronto Coach Terminal Inc. , a wholly owned subsidiary of the Toronto Transit Commission 
+			name:	ORGANIZATION				5-8	Toronto Coach Terminal Inc. 
+	6	Coach
+	7	Terminal
+	8	Inc.
+	9	,
+	10	a
+	11	wholly
+			sense:	wholly.r.01
+	12	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		12-12	owned 
+			N-ARGM-MNR		11-11	wholly 
+			N-ARG-A1		13-13	subsidiary 
+	13	subsidiary
+			sense:	subsidiary_company.n.01
+	14	of
+	15	the
+	16	Toronto
+			name:	ORGANIZATION				16-18	Toronto Transit Commission 
+	17	Transit
+	18	Commission
+	19	(
+	20	TTC
+	21	)
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The TTC managed the station directly until July 8 , 2012 , when it was leased out in its entirety to bus lines Coach Canada and Greyhound Canada for $ 1.2 million annually .
+
+
+Treebanked sentence:
+--------------------
+The TTC managed the station directly until July 8 , 2012 , when it was leased out in its entirety to bus lines Coach Canada and Greyhound Canada for $ 1.2 million annually . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN TTC))
+    (VP (VBD managed)
+      (NP (DT the) (NN station))
+      (ADVP (RB directly))
+      (PP (IN until)
+        (NP (NNP July) (CD 8) (, ,) (CD 2012) (, ,)))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP it))
+          (VP (VBD was)
+            (VP (VBN leased)
+              (PRT (RP out))
+              (PP (IN in)
+                (NP (PRP$ its) (NN entirety)))
+              (PP (IN to)
+                (NP
+                  (NP (NN bus) (NNS lines)
+                    (NML (NNP Coach) (NNP Canada)))
+                  (CC and)
+                  (NP
+                    (NP (NNP Greyhound) (NNP Canada))
+                    (PP (IN for)
+                      (NP
+                        (QP ($ $) (CD 1.2) (CD million)))))))
+              (ADVP (RB annually)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The TTC 
+	1	TTC
+	2	managed
+			sense:	oversee.v.01
+			prop:	manage.01
+			V		2-2	managed 
+			N-ARG-A0		0-1	The TTC 
+			N-ARG-A1		3-4	the station 
+			N-ARGM-MNR		5-5	directly 
+			N-ARGM-TMP		6-32	until July 8 , 2012 , when it was leased out in its entirety to bus lines Coach Canada and Greyhound Canada for $ 1.2 million annually 
+	3	the
+	4	station
+			sense:	station.n.01
+	5	directly
+			sense:	directly.r.02
+	6	until
+	7	July
+			name:	DATE				7-10	July 8 , 2012 
+	8	8
+	9	,
+	10	2012
+	11	,
+	12	when
+	13	it
+	14	was
+			sense:	be.v.01
+			prop:	be.03
+			V		14-14	was 
+	15	leased
+			sense:	lease.v.03
+			prop:	lease.02
+			V		15-15	leased 
+			N-ARGM-TMP		7-10	July 8 , 2012 
+			R-ARGM-TMP		12-12	when 
+			N-ARG-A1		13-13	it 
+			N-ARGM-EXT		17-19	in its entirety 
+			N-ARG-A2		20-27	to bus lines Coach Canada and Greyhound Canada 
+			N-ARG-A3		28-32	for $ 1.2 million annually 
+	16	out
+	17	in
+	18	its
+	19	entirety
+			sense:	entirety.n.01
+	20	to
+	21	bus
+			sense:	bus.n.01
+	22	lines
+			sense:	line.n.23
+	23	Coach
+			name:	TITLE				23-23	Coach 
+	24	Canada
+			name:	COUNTRY				24-24	Canada 
+	25	and
+	26	Greyhound
+			name:	LOCATION				26-26	Greyhound 
+	27	Canada
+			name:	COUNTRY				27-27	Canada 
+	28	for
+	29	$
+			name:	MONEY				29-31	$ 1.2 million 
+	30	1.2
+	31	million
+	32	annually
+			name:	SET				32-32	annually 
+			sense:	per_annum.r.01
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Opened in 1931 as the Gray Coach Terminal , the Art Deco style terminal was home base for Gray Coach , an interurban bus service then owned by the TTC .
+
+
+Treebanked sentence:
+--------------------
+Opened in 1931 as the Gray Coach Terminal , the Art Deco style terminal was home base for Gray Coach , an interurban bus service then owned by the TTC . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Opened)
+        (PP (IN in)
+          (NP (CD 1931)))
+        (PP (IN as)
+          (NP (DT the) (NNP Gray) (NNP Coach) (NNP Terminal)))))
+    (, ,)
+    (NP (DT the)
+      (NML (NNP Art) (NNP Deco))
+      (NN style) (NN terminal))
+    (VP (VBD was)
+      (ADVP (RB home))
+      (NP
+        (NP (NN base))
+        (PP (IN for)
+          (NP (NNP Gray) (NNP Coach))))
+      (, ,)
+      (PRN
+        (S
+          (NP (DT an) (JJ interurban) (NN bus) (NN service))
+          (RB then)
+          (VP (VBN owned)
+            (PP (IN by)
+              (NP (DT the) (NN TTC)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Opened
+			sense:	open.v.02
+			prop:	open.01
+			V		0-0	Opened 
+			N-ARGM-TMP		1-2	in 1931 
+			N-ARG-A1		9-13	the Art Deco style terminal 
+	1	in
+	2	1931
+			name:	DATE				2-2	1931 
+	3	as
+	4	the
+	5	Gray
+	6	Coach
+			name:	TITLE				6-6	Coach 
+	7	Terminal
+	8	,
+	9	the
+			coref:	IDENT			0	9-13	the Art Deco style terminal 
+	10	Art
+			name:	MISC				10-11	Art Deco 
+	11	Deco
+	12	style
+			sense:	style.n.03
+	13	terminal
+			sense:	terminal.n.01
+	14	was
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	was 
+			R-ARG-A1		0-7	Opened in 1931 as the Gray Coach Terminal 
+			N-ARG-A1		9-13	the Art Deco style terminal 
+			N-ARG-A2		15-29	home base for Gray Coach , an interurban bus service then owned by the TTC 
+	15	home
+			sense:	home.r.01
+	16	base
+			sense:	base.n.14
+	17	for
+	18	Gray
+	19	Coach
+			name:	TITLE				19-19	Coach 
+	20	,
+	21	an
+	22	interurban
+	23	bus
+			sense:	bus.n.01
+	24	service
+			sense:	service.n.04
+	25	then
+			sense:	then.r.03
+	26	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		26-26	owned 
+			N-ARG-A1		21-24	an interurban bus service 
+			N-ARGM-TMP		25-25	then 
+			N-ARG-A0		27-29	by the TTC 
+	27	by
+	28	the
+			coref:	IDENT			0	28-29	the TTC 
+	29	TTC
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It replaced an earlier open air terminal , Gray Line Terminal .
+
+
+Treebanked sentence:
+--------------------
+It replaced an earlier open air terminal , Gray Line Terminal . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD replaced)
+      (NP
+        (NP (DT an) (JJR earlier)
+          (NML (JJ open) (NN air))
+          (NN terminal))
+        (, ,)
+        (NP (NNP Gray) (NNP Line) (NNP Terminal))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	replaced
+			sense:	supplant.v.01
+			prop:	replace.01
+			V		1-1	replaced 
+			N-ARG-A2		0-0	It 
+			N-ARG-A1		2-10	an earlier open air terminal , Gray Line Terminal 
+	2	an
+	3	earlier
+			sense:	early.s.03
+	4	open
+			sense:	exposed.s.01
+	5	air
+			sense:	air.n.02
+	6	terminal
+			sense:	terminal.n.01
+	7	,
+	8	Gray
+	9	Line
+	10	Terminal
+	11	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-3	The Toronto Coach Terminal 
+				1.0-0	It 
+				2.5-18	Toronto Coach Terminal Inc. , a wholly owned subsidiary of the Toronto Transit Commission 
+				3.0-1	The TTC 
+				4.9-13	the Art Deco style terminal 
+				4.28-29	the TTC 
+				5.0-0	It 
+

@@ -1,0 +1,707 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The ACBL King or Queen of Bridge is a graduating high school senior annually designated by the American Contract Bridge League .
+
+
+Treebanked sentence:
+--------------------
+The ACBL King or Queen of Bridge is a graduating high school senior annually designated by the American Contract Bridge League . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP ACBL) (NNP King))
+      (CC or)
+      (NP
+        (NP (NNP Queen))
+        (PP (IN of)
+          (NP (NNP Bridge)))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (VBG graduating)
+          (NML (JJ high) (NN school) (JJ senior)))
+        (VP
+          (ADVP (RB annually))
+          (VBN designated)
+          (PP (IN by)
+            (NP
+              (NP (DT the) (JJ American) (NN Contract))
+              (NP (NNP Bridge) (NNP League)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	ACBL
+			coref:	IDENT			0	1-1	ACBL 
+			name:	ORGANIZATION				1-1	ACBL 
+	2	King
+			name:	TITLE				2-2	King 
+	3	or
+	4	Queen
+			name:	TITLE				4-4	Queen 
+	5	of
+			name:	LOCATION				5-6	of Bridge 
+	6	Bridge
+	7	is
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		0-6	The ACBL King or Queen of Bridge 
+			N-ARG-A2		8-20	a graduating high school senior annually designated by the American Contract Bridge League 
+	8	a
+	9	graduating
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		9-9	graduating 
+			N-ARG-A0		10-12	high school senior 
+	10	high
+			sense:	eminent.s.01
+	11	school
+			sense:	school.n.01
+	12	senior
+			sense:	senior.s.02
+	13	annually
+			name:	SET				13-13	annually 
+			sense:	per_annum.r.01
+	14	designated
+			sense:	designate.v.01
+			prop:	designate.01
+			V		14-14	designated 
+			N-ARG-A1		8-12	a graduating high school senior 
+			N-ARGM-TMP		13-13	annually 
+			N-ARG-A0		15-20	by the American Contract Bridge League 
+	15	by
+	16	the
+	17	American
+			name:	ORGANIZATION				17-20	American Contract Bridge League 
+	18	Contract
+			sense:	contract.n.03
+	19	Bridge
+	20	League
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A $ 1000 scholarship accompanies the title .
+
+
+Treebanked sentence:
+--------------------
+A $ 1000 scholarship accompanies the title . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT A)
+      (NML ($ $) (CD 1000))
+      (NN scholarship))
+    (VP (VBZ accompanies)
+      (NP (DT the) (NN title)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	$
+			name:	MONEY				1-2	$ 1000 
+	2	1000
+	3	scholarship
+			sense:	scholarship.n.01
+	4	accompanies
+			sense:	attach_to.v.01
+			prop:	accompany.01
+			V		4-4	accompanies 
+			N-ARG-A0		0-3	A $ 1000 scholarship 
+			N-ARG-A1		5-6	the title 
+	5	the
+	6	title
+			sense:	championship.n.01
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The King or Queen is the high school senior in North America ( US , Canada , Mexico , and Bermuda ) with the " best record in bridge " .
+
+
+Treebanked sentence:
+--------------------
+The King or Queen is the high school senior in North America ( US , Canada , Mexico , and Bermuda ) with the " best record in bridge " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP King)
+      (CC or)
+      (NNP Queen))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the)
+          (NML (JJ high) (NN school))
+          (JJ senior))
+        (PP (IN in)
+          (NP
+            (NP (NNP North) (NNP America))
+            (-LRB- -LRB-)
+            (NP (NNP US) (, ,) (NNP Canada) (, ,) (NNP Mexico) (, ,)
+              (CC and)
+              (NNP Bermuda))
+            (-RRB- -RRB-))))
+      (PP (IN with)
+        (NP (DT the) (`` ") (JJS best) (NN record)))
+      (PP (IN in)
+        (NP (NN bridge)))
+      ('' "))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	King
+			name:	TITLE				1-1	King 
+	2	or
+	3	Queen
+			name:	TITLE				3-3	Queen 
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	The King or Queen 
+			N-ARG-A2		5-29	the high school senior in North America ( US , Canada , Mexico , and Bermuda ) with the " best record in bridge " 
+	5	the
+	6	high
+			sense:	eminent.s.01
+	7	school
+			sense:	school.n.01
+	8	senior
+			sense:	senior.s.02
+	9	in
+	10	North
+			name:	LOCATION				10-10	North 
+	11	America
+			name:	COUNTRY				11-11	America 
+	12	(
+	13	US
+			name:	COUNTRY				13-13	US 
+	14	,
+	15	Canada
+			name:	COUNTRY				15-15	Canada 
+	16	,
+	17	Mexico
+			name:	COUNTRY				17-17	Mexico 
+	18	,
+	19	and
+	20	Bermuda
+			name:	LOCATION				20-20	Bermuda 
+	21	)
+	22	with
+	23	the
+	24	"
+	25	best
+			sense:	good.a.01
+	26	record
+			sense:	record.n.03
+	27	in
+	28	bridge
+			sense:	bridge.n.05
+	29	"
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Students now formally enter the annual contest and identify their qualifications .
+
+
+Treebanked sentence:
+--------------------
+Students now formally enter the annual contest and identify their qualifications . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNS Students))
+    (ADVP (RB now))
+    (VP
+      (VP
+        (ADVP (RB formally))
+        (VB enter)
+        (NP (DT the) (JJ annual) (NN contest)))
+      (CC and)
+      (VP (VB identify)
+        (NP (PRP$ their) (NNS qualifications))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Students
+			coref:	IDENT			1	0-0	Students 
+			sense:	student.n.01
+	1	now
+			name:	DATE				1-1	now 
+			sense:	nowadays.r.01
+	2	formally
+			sense:	formally.r.01
+	3	enter
+			sense:	enter.v.02
+			prop:	enter.01
+			V		3-3	enter 
+			N-ARG-A0		0-0	Students 
+			N-ARGM-TMP		1-1	now 
+			N-ARGM-MNR		2-2	formally 
+			N-ARG-A1		4-6	the annual contest 
+	4	the
+	5	annual
+			name:	SET				5-5	annual 
+			sense:	annual.a.01
+	6	contest
+			sense:	contest.n.01
+	7	and
+	8	identify
+			sense:	identify.v.01
+			prop:	identify.01
+			V		8-8	identify 
+			N-ARG-A0		0-0	Students 
+			N-ARGM-TMP		1-1	now 
+			N-ARGM-MNR		2-2	formally 
+			N-ARG-A1		9-10	their qualifications 
+	9	their
+			coref:	IDENT			1	9-9	their 
+	10	qualifications
+			sense:	qualification.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Beside outstanding performance in bridge tournaments , the winner is commonly cited for sportsmanship and for " bridge activities such as teaching , directing , and unit / district participation " .
+
+
+Treebanked sentence:
+--------------------
+Beside outstanding performance in bridge tournaments , the winner is commonly cited for sportsmanship and for " bridge activities such as teaching , directing , and unit / district participation " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Beside)
+      (NP
+        (NP (JJ outstanding) (NN performance))
+        (PP (IN in)
+          (NP (NN bridge) (NNS tournaments)))))
+    (, ,)
+    (NP (DT the) (NN winner))
+    (VP (VBZ is)
+      (ADVP (RB commonly))
+      (VP (VBN cited)
+        (PP
+          (PP (IN for)
+            (NP (NN sportsmanship)))
+          (CC and)
+          (PP (IN for) (`` ")
+            (NP
+              (NP (NN bridge) (NNS activities))
+              (PP (JJ such) (IN as)
+                (NP
+                  (NML
+                    (NML (NN teaching))
+                    (, ,)
+                    (S
+                      (VP (VBG directing)))
+                    (, ,)
+                    (CC and)
+                    (NML (NN unit) (HYPH /) (NN district)))
+                  (NN participation))))
+            ('' ")))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Beside
+	1	outstanding
+			sense:	outstanding.s.01
+	2	performance
+			sense:	performance.n.03
+	3	in
+	4	bridge
+			sense:	bridge.n.05
+	5	tournaments
+			sense:	tournament.n.01
+	6	,
+	7	the
+	8	winner
+			sense:	winner.n.01
+	9	is
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	is 
+	10	commonly
+			sense:	normally.r.01
+	11	cited
+			sense:	mention.v.03
+			prop:	cite.01
+			V		11-11	cited 
+			N-ARGM-ADV		0-5	Beside outstanding performance in bridge tournaments 
+			N-ARG-A1		7-8	the winner 
+			N-ARGM-ADV		10-10	commonly 
+			N-ARG-A2		12-30	for sportsmanship and for " bridge activities such as teaching , directing , and unit / district participation " 
+	12	for
+	13	sportsmanship
+			sense:	sportsmanship.n.01
+	14	and
+	15	for
+	16	"
+	17	bridge
+			sense:	bridge.n.05
+	18	activities
+			sense:	activity.n.01
+	19	such
+			sense:	such.s.01
+	20	as
+	21	teaching
+			sense:	education.n.01
+	22	,
+	23	directing
+			sense:	conduct.v.02
+			prop:	direct.01
+			V		23-23	directing 
+	24	,
+	25	and
+	26	unit
+			sense:	unit.n.03
+	27	/
+	28	district
+			sense:	district.n.01
+	29	participation
+			sense:	engagement.n.07
+	30	"
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The King of Bridge was established in 1973 by Homer Shoop of Indiana as a prize for the high school senior with the greatest number of ACBL master points .
+
+
+Treebanked sentence:
+--------------------
+The King of Bridge was established in 1973 by Homer Shoop of Indiana as a prize for the high school senior with the greatest number of ACBL master points . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP King))
+      (PP (IN of)
+        (NP (NNP Bridge))))
+    (VP (VBD was)
+      (VP (VBN established)
+        (PP (IN in)
+          (NP (CD 1973)))
+        (PP (IN by)
+          (NP
+            (NP (NNP Homer) (NNP Shoop))
+            (PP (IN of)
+              (NP (NNP Indiana)))))
+        (PP (IN as)
+          (NP
+            (NP (DT a) (NN prize))
+            (PP (IN for)
+              (NP (DT the)
+                (NML (JJ high) (NN school))
+                (JJ senior)))))
+        (PP (IN with)
+          (NP
+            (NP (DT the) (JJS greatest) (NN number))
+            (PP (IN of)
+              (NP (NNP ACBL) (NN master) (NNS points)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	King
+			name:	TITLE				1-1	King 
+	2	of
+	3	Bridge
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		5-5	established 
+			N-ARG-A1		0-3	The King of Bridge 
+			N-ARGM-TMP		6-7	in 1973 
+			N-ARG-A0		8-12	by Homer Shoop of Indiana 
+			N-ARG-A2		13-28	as a prize for the high school senior with the greatest number of ACBL master points 
+	6	in
+	7	1973
+			name:	DATE				7-7	1973 
+	8	by
+	9	Homer
+			name:	PERSON				9-10	Homer Shoop 
+	10	Shoop
+	11	of
+	12	Indiana
+			name:	STATE_OR_PROVINCE				12-12	Indiana 
+	13	as
+	14	a
+	15	prize
+			sense:	prize.n.01
+	16	for
+	17	the
+	18	high
+			sense:	eminent.s.01
+	19	school
+			sense:	school.n.01
+	20	senior
+			sense:	senior.s.02
+	21	with
+	22	the
+	23	greatest
+			sense:	great.s.01
+	24	number
+			sense:	number.n.01
+	25	of
+	26	ACBL
+			coref:	IDENT			0	26-26	ACBL 
+			name:	ORGANIZATION				26-26	ACBL 
+	27	master
+			sense:	maestro.n.01
+	28	points
+			sense:	point.n.10
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The second and third winners , Jeff Meckstroth and Bobby Levin in 1974 and 1975 , won the 1981 Bermuda Bowl as United States teammates ; Levin was the youngest person to be a world champion at bridge .
+
+
+Treebanked sentence:
+--------------------
+The second and third winners , Jeff Meckstroth and Bobby Levin in 1974 and 1975 , won the 1981 Bermuda Bowl as United States teammates ; Levin was the youngest person to be a world champion at bridge . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The)
+          (ADJP (JJ second)
+            (CC and)
+            (JJ third))
+          (NNS winners))
+        (, ,)
+        (NP
+          (NP (NNP Jeff) (NNP Meckstroth))
+          (CC and)
+          (NP
+            (NP (NNP Bobby) (NNP Levin))
+            (PP (IN in)
+              (NP (CD 1974)
+                (CC and)
+                (CD 1975)))))
+        (, ,))
+      (VP (VBD won)
+        (NP (DT the) (CD 1981) (NNP Bermuda) (NNP Bowl))
+        (PP (IN as)
+          (NP
+            (NML (NNP United) (NNP States))
+            (NNS teammates)))))
+    (: ;)
+    (S
+      (NP (NNP Levin))
+      (VP (VBD was)
+        (NP
+          (NP (DT the) (JJS youngest) (NN person))
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (NP
+                  (NP (DT a) (NN world) (NN champion))
+                  (PP (IN at)
+                    (NP (NN bridge))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	second
+			name:	ORDINAL				1-3	second and third 
+			sense:	second.s.01
+	2	and
+	3	third
+			sense:	third.s.01
+	4	winners
+			sense:	winner.n.01
+	5	,
+	6	Jeff
+			name:	PERSON				6-7	Jeff Meckstroth 
+	7	Meckstroth
+	8	and
+	9	Bobby
+			name:	PERSON				9-10	Bobby Levin 
+	10	Levin
+	11	in
+	12	1974
+			name:	DATE				12-12	1974 
+	13	and
+	14	1975
+			name:	DATE				14-14	1975 
+	15	,
+	16	won
+			sense:	win.v.01
+			prop:	win.01
+			V		16-16	won 
+			N-ARG-A0		0-15	The second and third winners , Jeff Meckstroth and Bobby Levin in 1974 and 1975 , 
+			N-ARG-A1		17-20	the 1981 Bermuda Bowl 
+			N-ARGM-PRD		21-24	as United States teammates 
+	17	the
+	18	1981
+			name:	DATE				18-18	1981 
+	19	Bermuda
+			name:	LOCATION				19-20	Bermuda Bowl 
+	20	Bowl
+	21	as
+	22	United
+			name:	COUNTRY				22-23	United States 
+	23	States
+	24	teammates
+			sense:	teammate.n.01
+	25	;
+	26	Levin
+			name:	PERSON				26-26	Levin 
+	27	was
+			sense:	be.v.01
+			prop:	be.01
+			V		27-27	was 
+			N-ARG-A1		26-26	Levin 
+			N-ARG-A2		28-37	the youngest person to be a world champion at bridge 
+	28	the
+	29	youngest
+			sense:	young.a.01
+	30	person
+			sense:	person.n.01
+	31	to
+	32	be
+			sense:	be.v.01
+			prop:	be.01
+			V		32-32	be 
+			N-ARG-A1		28-30	the youngest person 
+			N-ARG-A2		33-37	a world champion at bridge 
+	33	a
+	34	world
+			sense:	earth.n.01
+	35	champion
+			sense:	champion.n.01
+	36	at
+	37	bridge
+			sense:	bridge.n.05
+	38	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Several other Kings and Queens have become leading expert players .
+
+
+Treebanked sentence:
+--------------------
+Several other Kings and Queens have become leading expert players . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (JJ Several) (JJ other) (NNS Kings))
+      (CC and)
+      (NP (NNP Queens)))
+    (VP (VBP have)
+      (VP (VBN become)
+        (S
+          (VP (VBG leading)
+            (NP (NN expert) (NNS players))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Several
+			sense:	several.s.01
+	1	other
+			sense:	other.a.01
+	2	Kings
+			sense:	king.n.02
+	3	and
+	4	Queens
+			name:	LOCATION				4-4	Queens 
+	5	have
+			sense:	have.v.01
+			prop:	have.01
+			V		5-5	have 
+	6	become
+			sense:	become.v.02
+			prop:	become.01
+			V		6-6	become 
+			N-ARG-A1		0-4	Several other Kings and Queens 
+			N-ARG-A2		7-9	leading expert players 
+	7	leading
+			sense:	lead.v.08
+			prop:	lead.02
+			V		7-7	leading 
+			N-ARG-A0		8-9	expert players 
+	8	expert
+			sense:	expert.n.01
+	9	players
+			sense:	player.n.01
+	10	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.1-1	ACBL 
+				5.26-26	ACBL 
+	Chain 1 (IDENT)
+				3.0-0	Students 
+				3.9-9	their 
+

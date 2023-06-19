@@ -1,0 +1,773 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Hanna Lis , née Kedaj ( first married name Smoktunowicz ) ( born 13 May 1970 in Warsaw ) is a Polish TV journalist .
+
+
+Treebanked sentence:
+--------------------
+Hanna Lis , née Kedaj ( first married name Smoktunowicz ) ( born 13 May 1970 in Warsaw ) is a Polish TV journalist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Hanna) (NNP Lis))
+      (, ,)
+      (NP
+        (NP
+          (NP (NNP née) (NNP Kedaj))
+          (-LRB- -LRB-)
+          (NP
+            (NP (RB first) (JJ married) (NN name))
+            (NP (NNP Smoktunowicz)))
+          (-RRB- -RRB-))
+        (-LRB- -LRB-)
+        (VP (VBN born)
+          (NP (CD 13))
+          (NP-TMP (NNP May) (CD 1970))
+          (PP (IN in)
+            (NP (NNP Warsaw))))
+        (-RRB- -RRB-)))
+    (VP (VBZ is)
+      (NP (DT a) (JJ Polish) (NN TV) (NN journalist)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Hanna
+			name:	PERSON				0-1	Hanna Lis 
+	1	Lis
+	2	,
+	3	née
+	4	Kedaj
+			name:	PERSON				4-4	Kedaj 
+	5	(
+	6	first
+			name:	ORDINAL				6-6	first 
+			sense:	first.r.03
+	7	married
+			sense:	married.a.01
+	8	name
+			sense:	name.n.01
+	9	Smoktunowicz
+	10	)
+	11	(
+	12	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		12-12	born 
+			N-ARG-A1		0-9	Hanna Lis , née Kedaj ( first married name Smoktunowicz 
+			N-ARGM-TMP		13-15	13 May 1970 
+			N-ARGM-LOC		16-17	in Warsaw 
+	13	13
+			name:	DATE				13-15	13 May 1970 
+	14	May
+	15	1970
+	16	in
+	17	Warsaw
+			name:	CITY				17-17	Warsaw 
+	18	)
+	19	is
+			sense:	be.v.02
+			prop:	be.01
+			V		19-19	is 
+			N-ARG-A1		0-18	Hanna Lis , née Kedaj ( first married name Smoktunowicz ) ( born 13 May 1970 in Warsaw ) 
+			N-ARG-A2		20-23	a Polish TV journalist 
+	20	a
+	21	Polish
+			name:	NATIONALITY				21-21	Polish 
+	22	TV
+			sense:	television.n.01
+	23	journalist
+			name:	TITLE				23-23	journalist 
+			sense:	journalist.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She started her career working for Polish National Television ( where , among other duties , she ran the news programme " Teleexpress " ) , but in 2002 transferred to the commercial station TV4 ( dependent on Polsat ) , where she ran another informational programme " Dziennik " .
+
+
+Treebanked sentence:
+--------------------
+She started her career working for Polish National Television ( where , among other duties , she ran the news programme " Teleexpress " ) , but in 2002 transferred to the commercial station TV4 ( dependent on Polsat ) , where she ran another informational programme " Dziennik " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD started)
+      (NP (PRP$ her) (NN career))
+      (S
+        (VP (VBG working)
+          (PP (IN for)
+            (NP
+              (NP (NNP Polish) (NNP National) (NNP Television))
+              (-LRB- -LRB-)
+              (SBAR
+                (WHADVP (WRB where))
+                (S (, ,)
+                  (PP (IN among)
+                    (NP (JJ other) (NNS duties)))
+                  (, ,)
+                  (NP (PRP she))
+                  (VP (VBD ran)
+                    (NP (DT the) (NN news) (NN programme))
+                    (S ('' ")
+                      (NP (NNP Teleexpress))
+                      ('' ")))))
+              (-RRB- -RRB-)))
+          (, ,)
+          (CC but)
+          (PP (IN in)
+            (NP
+              (NP (CD 2002))
+              (VP (VBN transferred)
+                (PP (IN to)
+                  (NP (DT the) (JJ commercial) (NN station) (NN TV4)
+                    (PRN (-LRB- -LRB-)
+                      (ADJP (JJ dependent)
+                        (PP (IN on)
+                          (NP (NNP Polsat))))
+                      (-RRB- -RRB-)))))))))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP she))
+          (VP (VBD ran)
+            (NP (DT another) (JJ informational) (NN programme))
+            (S ('' ")
+              (NP (NNP Dziennik))
+              ('' "))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	started
+			sense:	get_down.v.07
+			prop:	start.01
+			V		1-1	started 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		2-3	her career 
+	2	her
+			coref:	IDENT			3	2-3	her career 
+	3	career
+			sense:	career.n.01
+	4	working
+			sense:	work.v.02
+			prop:	work.01
+			V		4-4	working 
+			N-ARG-A0		0-0	She 
+			N-ARG-A2		5-24	for Polish National Television ( where , among other duties , she ran the news programme " Teleexpress " ) 
+	5	for
+	6	Polish
+			name:	NATIONALITY				6-6	Polish 
+	7	National
+			name:	ORGANIZATION				7-8	National Television 
+	8	Television
+	9	(
+	10	where
+	11	,
+	12	among
+	13	other
+			sense:	other.a.01
+	14	duties
+			sense:	duty.n.02
+	15	,
+	16	she
+	17	ran
+			sense:	operate.v.01
+			prop:	run.01
+			V		17-17	ran 
+			N-ARGM-LOC		10-10	where 
+			N-ARGM-ADV		12-14	among other duties 
+			N-ARG-A0		16-16	she 
+			N-ARG-A1		18-23	the news programme " Teleexpress " 
+	18	the
+	19	news
+			sense:	news_program.n.01
+	20	programme
+			sense:	broadcast.n.02
+	21	"
+	22	Teleexpress
+			name:	MISC				22-22	Teleexpress 
+	23	"
+	24	)
+	25	,
+	26	but
+	27	in
+	28	2002
+			name:	DATE				28-28	2002 
+	29	transferred
+			sense:	transfer.v.01
+			prop:	transfer.01
+			V		29-29	transferred 
+			N-ARG-A1		0-0	She 
+			N-ARGM-TMP		27-28	in 2002 
+			N-ARG-A2		30-49	to the commercial station TV4 ( dependent on Polsat ) , where she ran another informational programme " Dziennik " 
+	30	to
+	31	the
+	32	commercial
+			sense:	commercial.a.01
+	33	station
+			sense:	station.n.05
+	34	TV4
+	35	(
+	36	dependent
+			sense:	dependent.a.01
+	37	on
+	38	Polsat
+			coref:	IDENT			2	38-38	Polsat 
+	39	)
+	40	,
+	41	where
+	42	she
+	43	ran
+			sense:	operate.v.01
+			prop:	run.01
+			V		43-43	ran 
+			N-ARGM-LOC		31-39	the commercial station TV4 ( dependent on Polsat ) 
+			R-ARGM-LOC		41-41	where 
+			N-ARG-A0		42-42	she 
+			N-ARG-A1		44-49	another informational programme " Dziennik " 
+	44	another
+	45	informational
+			sense:	informational.a.01
+	46	programme
+			sense:	broadcast.n.02
+	47	"
+	48	Dziennik
+			name:	MISC				48-48	Dziennik 
+	49	"
+	50	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2004 she moved to Polsat , where she was an anchor of the news programme Wydarzenia .
+
+
+Treebanked sentence:
+--------------------
+In 2004 she moved to Polsat , where she was an anchor of the news programme Wydarzenia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2004)))
+    (NP (PRP she))
+    (VP (VBD moved)
+      (PP (IN to)
+        (NP (NNP Polsat)))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP she))
+          (VP (VBD was)
+            (NP
+              (NP (DT an) (NN anchor))
+              (PP (IN of)
+                (NP (DT the)
+                  (NML (NN news) (NN programme))
+                  (NNP Wydarzenia))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2004
+			name:	DATE				1-1	2004 
+	2	she
+	3	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		3-3	moved 
+			N-ARGM-TMP		0-1	In 2004 
+			N-ARG-A0		2-2	she 
+			N-ARG-A2		4-16	to Polsat , where she was an anchor of the news programme Wydarzenia 
+	4	to
+	5	Polsat
+			coref:	IDENT			2	5-5	Polsat 
+	6	,
+	7	where
+	8	she
+	9	was
+			sense:	be.v.08
+			prop:	be.01
+			V		9-9	was 
+			N-ARGM-LOC		5-5	Polsat 
+			R-ARGM-LOC		7-7	where 
+			N-ARG-A1		8-8	she 
+			N-ARG-A2		10-16	an anchor of the news programme Wydarzenia 
+	10	an
+	11	anchor
+			sense:	anchor.n.03
+	12	of
+	13	the
+	14	news
+			sense:	news_program.n.01
+	15	programme
+			sense:	broadcast.n.02
+	16	Wydarzenia
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She filed a report from Poland to CNN during Pope 's John Paul II illness .
+
+
+Treebanked sentence:
+--------------------
+She filed a report from Poland to CNN during Pope 's John Paul II illness . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD filed)
+      (NP (DT a) (NN report))
+      (PP (IN from)
+        (NP (NNP Poland)))
+      (PP (IN to)
+        (NP (NNP CNN)))
+      (PP (IN during)
+        (NP
+          (NP (NNP Pope) (POS 's))
+          (NML (NNP John) (NNP Paul) (NNP II))
+          (NN illness))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	filed
+			sense:	file.v.01
+			prop:	file.01
+			V		1-1	filed 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		2-5	a report from Poland 
+			N-ARG-A2		6-7	to CNN 
+			N-ARGM-TMP		8-14	during Pope 's John Paul II illness 
+	2	a
+	3	report
+			sense:	report.n.03
+	4	from
+	5	Poland
+			coref:	IDENT			1	5-5	Poland 
+			name:	COUNTRY				5-5	Poland 
+	6	to
+	7	CNN
+			name:	ORGANIZATION				7-7	CNN 
+	8	during
+	9	Pope
+			name:	PERSON				9-9	Pope 
+	10	's
+	11	John
+			coref:	IDENT			0	11-13	John Paul II 
+			name:	PERSON				11-13	John Paul II 
+	12	Paul
+	13	II
+	14	illness
+			name:	CAUSE_OF_DEATH				14-14	illness 
+			sense:	illness.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She spent her childhood in Italy and in 1977 co - represented Poland at the 20th Zecchino d'Oro .
+
+
+Treebanked sentence:
+--------------------
+She spent her childhood in Italy and in 1977 co - represented Poland at the 20th Zecchino d'Oro . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD spent)
+      (NP (PRP$ her) (NN childhood))
+      (PP
+        (PP (IN in)
+          (NP (NNP Italy)))
+        (CC and)
+        (PP (IN in)
+          (NP
+            (NP
+              (ADJP
+                (NP (CD 1977) (NN co))
+                (HYPH -) (VBN represented))
+              (NNP Poland))
+            (PP (IN at)
+              (NP (DT the) (JJ 20th) (NNP Zecchino) (NNP d'Oro)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	spent
+			sense:	spend.v.01
+			prop:	spend.02
+			V		1-1	spent 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		2-3	her childhood 
+			N-ARGM-LOC		4-5	in Italy 
+	2	her
+	3	childhood
+			sense:	childhood.n.01
+	4	in
+	5	Italy
+			name:	COUNTRY				5-5	Italy 
+	6	and
+	7	in
+	8	1977
+			name:	DATE				8-8	1977 
+	9	co
+			sense:	conscientious_objector.n.01
+	10	-
+	11	represented
+			sense:	represent.v.04
+			prop:	represent.01
+			V		11-11	represented 
+			N-ARG-A0		0-0	She 
+			N-ARGM-TMP		7-8	in 1977 
+			N-ARGM-MNR		9-10	co - 
+			N-ARG-A1		12-12	Poland 
+			N-ARGM-LOC		13-17	at the 20th Zecchino d'Oro 
+	12	Poland
+			coref:	IDENT			1	12-12	Poland 
+			name:	COUNTRY				12-12	Poland 
+	13	at
+	14	the
+	15	20th
+			name:	ORDINAL				15-15	20th 
+			sense:	twentieth.s.01
+	16	Zecchino
+	17	d'Oro
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Next year she went with the Piccolo Coro dell ' Antoniano choir to the Vatican and sang the same piece for Pope John Paul II .
+
+
+Treebanked sentence:
+--------------------
+Next year she went with the Piccolo Coro dell ' Antoniano choir to the Vatican and sang the same piece for Pope John Paul II . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP-TMP (JJ Next) (NN year))
+    (NP (PRP she))
+    (VP
+      (VP (VBD went)
+        (PP (IN with)
+          (NP
+            (NP (DT the) (NNP Piccolo) (NNP Coro) (NNP dell) (POS '))
+            (NNP Antoniano) (NN choir)))
+        (PP (IN to)
+          (NP (DT the) (NNP Vatican))))
+      (CC and)
+      (VP (VBD sang)
+        (NP (DT the) (JJ same) (NN piece))
+        (PP (IN for)
+          (NP (NNP Pope) (NNP John) (NNP Paul) (NNP II)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Next
+			name:	DATE				0-1	Next year 
+			sense:	following.s.02
+	1	year
+			sense:	year.n.01
+	2	she
+	3	went
+			sense:	travel.v.01
+			prop:	go.02
+			V		3-3	went 
+			N-ARGM-TMP		0-1	Next year 
+			N-ARG-A0		2-2	she 
+			N-ARGM-COM		4-11	with the Piccolo Coro dell ' Antoniano choir 
+			N-ARG-A4		12-14	to the Vatican 
+	4	with
+	5	the
+	6	Piccolo
+			name:	ORGANIZATION				6-8	Piccolo Coro dell 
+	7	Coro
+	8	dell
+	9	'
+	10	Antoniano
+	11	choir
+			sense:	choir.n.01
+	12	to
+	13	the
+	14	Vatican
+			name:	LOCATION				14-14	Vatican 
+	15	and
+	16	sang
+			sense:	sing.v.01
+			prop:	sing.01
+			V		16-16	sang 
+			N-ARGM-TMP		0-1	Next year 
+			N-ARG-A0		2-2	she 
+			N-ARG-A1		17-19	the same piece 
+	17	the
+	18	same
+			sense:	same.a.01
+	19	piece
+			sense:	musical_composition.n.01
+	20	for
+	21	Pope
+			coref:	IDENT			0	21-24	Pope John Paul II 
+			name:	TITLE				21-21	Pope 
+	22	John
+			name:	PERSON				22-24	John Paul II 
+	23	Paul
+	24	II
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She is married to Tomasz Lis , a popular journalist .
+
+
+Treebanked sentence:
+--------------------
+She is married to Tomasz Lis , a popular journalist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ is)
+      (VP (VBN married)
+        (PP (IN to)
+          (NP
+            (NP (NNP Tomasz) (NNP Lis))
+            (, ,)
+            (NP (DT a) (JJ popular) (NN journalist))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-9	married to Tomasz Lis , a popular journalist 
+	2	married
+			sense:	marry.v.01
+			prop:	arrive.01
+			V		2-2	married 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		3-9	to Tomasz Lis , a popular journalist 
+	3	to
+	4	Tomasz
+			name:	PERSON				4-5	Tomasz Lis 
+	5	Lis
+	6	,
+	7	a
+	8	popular
+			sense:	popular.a.01
+	9	journalist
+			name:	TITLE				9-9	journalist 
+			sense:	journalist.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2002 she made an appearance in the Polish movie Rób swoje ryzyko jest twoje .
+
+
+Treebanked sentence:
+--------------------
+In 2002 she made an appearance in the Polish movie Rób swoje ryzyko jest twoje . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2002)))
+    (NP (PRP she))
+    (VP (VBD made)
+      (NP (DT an) (NN appearance))
+      (PP (IN in)
+        (NP (DT the) (JJ Polish) (NN movie) (NN Rób) (NN swoje) (NN ryzyko) (NN jest) (NN twoje))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2002
+			name:	DATE				1-1	2002 
+	2	she
+	3	made
+			sense:	make.v.01
+			prop:	make.01
+			V		3-3	made 
+			N-ARGM-TMP		0-1	In 2002 
+			N-ARG-A0		2-2	she 
+			N-ARG-A1		4-14	an appearance in the Polish movie Rób swoje ryzyko jest twoje 
+	4	an
+	5	appearance
+			sense:	appearance.n.05
+	6	in
+	7	the
+	8	Polish
+			name:	NATIONALITY				8-8	Polish 
+	9	movie
+			sense:	movie.n.01
+	10	Rób
+	11	swoje
+	12	ryzyko
+	13	jest
+			sense:	jest.n.02
+	14	twoje
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2009 ended her career in television after being let go from hosting " Wiadomości " TVP1 .
+
+
+Treebanked sentence:
+--------------------
+In 2009 ended her career in television after being let go from hosting " Wiadomości " TVP1 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2009)))
+    (VP (VBD ended)
+      (NP (PRP$ her) (NN career))
+      (PP (IN in)
+        (NP (NN television)))
+      (PP (IN after)
+        (S
+          (VP (VBG being)
+            (VP (VBN let)
+              (S
+                (VP (VB go)
+                  (PP (IN from)
+                    (S
+                      (VP (VBG hosting)
+                        (NP (`` ") (NNP Wiadomości) ('' ") (NN TVP1))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2009
+			name:	DATE				1-1	2009 
+	2	ended
+			sense:	end.v.02
+			prop:	end.01
+			V		2-2	ended 
+			N-ARGM-TMP		0-1	In 2009 
+			N-ARG-A1		3-6	her career in television 
+			N-ARGM-TMP		7-16	after being let go from hosting " Wiadomości " TVP1 
+	3	her
+			coref:	IDENT			3	3-4	her career 
+	4	career
+			sense:	career.n.01
+	5	in
+	6	television
+			sense:	television.n.01
+	7	after
+	8	being
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	being 
+	9	let
+			sense:	let.v.01
+			prop:	let.01
+			V		9-9	let 
+			N-ARG-A1		10-10	go 
+	10	go
+			sense:	go.v.09
+			prop:	go.01
+			V		10-10	go 
+			N-ARG-A3		11-16	from hosting " Wiadomości " TVP1 
+	11	from
+	12	hosting
+			sense:	host.v.01
+			prop:	host.01
+			V		12-12	hosting 
+			N-ARG-A1		13-16	" Wiadomości " TVP1 
+	13	"
+	14	Wiadomości
+			name:	MISC				14-14	Wiadomości 
+	15	"
+	16	TVP1
+	17	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.21-24	Pope John Paul II 
+				3.11-13	John Paul II 
+	Chain 1 (IDENT)
+				3.5-5	Poland 
+				4.12-12	Poland 
+	Chain 2 (IDENT)
+				1.38-38	Polsat 
+				2.5-5	Polsat 
+	Chain 3 (IDENT)
+				1.2-3	her career 
+				8.3-4	her career 
+

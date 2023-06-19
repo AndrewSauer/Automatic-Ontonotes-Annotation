@@ -1,0 +1,814 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Miss Moneypenny , later assigned the first names of Eve or Jane , is a fictional character in the James Bond novels and films .
+
+
+Treebanked sentence:
+--------------------
+Miss Moneypenny , later assigned the first names of Eve or Jane , is a fictional character in the James Bond novels and films . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Miss) (NNP Moneypenny))
+      (, ,)
+      (VP
+        (ADVP (RB later))
+        (VBN assigned)
+        (NP
+          (NP (DT the) (JJ first) (NNS names))
+          (PP (IN of)
+            (NP (NNP Eve)
+              (CC or)
+              (NNP Jane)))))
+      (, ,))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ fictional) (NN character))
+        (PP (IN in)
+          (NP (DT the)
+            (NML (NNP James) (NNP Bond))
+            (NNS novels)
+            (CC and)
+            (NNS films)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Miss
+			coref:	IDENT			4	0-11	Miss Moneypenny , later assigned the first names of Eve or Jane 
+			name:	STATE_OR_PROVINCE				0-0	Miss 
+	1	Moneypenny
+			name:	PERSON				1-1	Moneypenny 
+	2	,
+	3	later
+			sense:	subsequently.r.01
+	4	assigned
+			sense:	assign.v.02
+			prop:	assign.01
+			V		4-4	assigned 
+			N-ARG-A1		0-1	Miss Moneypenny 
+			N-ARGM-TMP		3-3	later 
+			N-ARG-A2		5-11	the first names of Eve or Jane 
+	5	the
+	6	first
+			name:	ORDINAL				6-6	first 
+			sense:	first.s.02
+	7	names
+			sense:	name.n.01
+	8	of
+	9	Eve
+	10	or
+	11	Jane
+			name:	PERSON				11-11	Jane 
+	12	,
+	13	is
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	is 
+			N-ARG-A1		0-12	Miss Moneypenny , later assigned the first names of Eve or Jane , 
+			N-ARG-A2		14-23	a fictional character in the James Bond novels and films 
+	14	a
+	15	fictional
+			sense:	fabricated.s.01
+	16	character
+			sense:	fictional_character.n.01
+	17	in
+	18	the
+			coref:	IDENT			3	18-21	the James Bond novels 
+	19	James
+			name:	PERSON				19-20	James Bond 
+	20	Bond
+	21	novels
+			sense:	novel.n.01
+	22	and
+			coref:	IDENT			0	22-23	and films 
+	23	films
+			sense:	movie.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She is secretary to M , who is Bond 's superior officer and head of the British Secret Intelligence Service ( MI6 ) .
+
+
+Treebanked sentence:
+--------------------
+She is secretary to M , who is Bond 's superior officer and head of the British Secret Intelligence Service ( MI6 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ is)
+      (NP
+        (NP (NN secretary))
+        (PP (IN to)
+          (NP
+            (NP (NN M))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBZ is)
+                  (NP
+                    (NP
+                      (NP (NNP Bond) (POS 's))
+                      (JJ superior) (NN officer))
+                    (CC and)
+                    (NP
+                      (NP (NN head))
+                      (PP (IN of)
+                        (NP (DT the) (JJ British) (NNP Secret) (NNP Intelligence) (NNP Service)))))))))))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP MI6))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			4	0-0	She 
+	1	is
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-22	secretary to M , who is Bond 's superior officer and head of the British Secret Intelligence Service ( MI6 ) 
+	2	secretary
+			name:	TITLE				2-2	secretary 
+			sense:	secretary.n.02
+	3	to
+	4	M
+			sense:	m.n.06
+	5	,
+	6	who
+	7	is
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		4-4	M 
+			R-ARG-A1		6-6	who 
+			N-ARG-A2		8-22	Bond 's superior officer and head of the British Secret Intelligence Service ( MI6 ) 
+	8	Bond
+			name:	PERSON				8-8	Bond 
+	9	's
+	10	superior
+			sense:	ranking.s.01
+	11	officer
+			sense:	military_officer.n.01
+	12	and
+	13	head
+			sense:	head.n.04
+	14	of
+	15	the
+	16	British
+			name:	ORGANIZATION				16-19	British Secret Intelligence Service 
+	17	Secret
+	18	Intelligence
+	19	Service
+	20	(
+	21	MI6
+	22	)
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Although she has a small part in most of the films , it is always highlighted by the underscored romantic tension between her and Bond ( something that is virtually non - existent in Ian Fleming 's novels , though is somewhat more apparent in the Bond novels by John Gardner and Raymond Benson ) .
+
+
+Treebanked sentence:
+--------------------
+Although she has a small part in most of the films , it is always highlighted by the underscored romantic tension between her and Bond ( something that is virtually non - existent in Ian Fleming 's novels , though is somewhat more apparent in the Bond novels by John Gardner and Raymond Benson ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN Although)
+      (S
+        (NP (PRP she))
+        (VP (VBZ has)
+          (NP
+            (NP (DT a) (JJ small) (NN part))
+            (PP (IN in)
+              (NP
+                (NP (JJS most))
+                (PP (IN of)
+                  (NP (DT the) (NNS films)))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADVP (RB always))
+      (VP (VBN highlighted)
+        (PP (IN by)
+          (NP
+            (NP
+              (NP (DT the) (VBN underscored) (JJ romantic) (NN tension))
+              (PP (IN between)
+                (NP (PRP her))))
+            (CC and)
+            (NP
+              (NP (NNP Bond))
+              (-LRB- -LRB-)
+              (NP
+                (NP (NN something))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP
+                      (VP (VBZ is)
+                        (NP
+                          (NP (RB virtually) (AFX non) (HYPH -) (JJ existent))
+                          (PP (IN in)
+                            (NP
+                              (NP (NNP Ian) (NNP Fleming) (POS 's))
+                              (NNS novels)))))
+                      (, ,)
+                      (ADVP (RB though))
+                      (VP (VBZ is)
+                        (ADJP
+                          (ADJP (RB somewhat) (RBR more) (JJ apparent))
+                          (PP (IN in)
+                            (NP (DT the) (NN Bond) (NNS novels))))
+                        (PP (IN by)
+                          (NP
+                            (NP (NNP John) (NNP Gardner))
+                            (CC and)
+                            (NP (NNP Raymond) (NNP Benson)))))))))
+              (-RRB- -RRB-))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Although
+	1	she
+			coref:	IDENT			4	1-1	she 
+	2	has
+			sense:	have.v.01
+			prop:	have.03
+			V		2-2	has 
+			N-ARG-A0		1-1	she 
+			N-ARG-A1		3-10	a small part in most of the films 
+	3	a
+	4	small
+			sense:	small.a.01
+	5	part
+			sense:	character.n.04
+	6	in
+	7	most
+			sense:	most.a.01
+	8	of
+	9	the
+			coref:	IDENT			0	9-10	the films 
+	10	films
+			sense:	movie.n.01
+	11	,
+	12	it
+	13	is
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	is 
+	14	always
+			sense:	always.r.01
+	15	highlighted
+			sense:	foreground.v.01
+			prop:	highlight.01
+			V		15-15	highlighted 
+			N-ARGM-ADV		0-10	Although she has a small part in most of the films 
+			N-ARG-A1		12-12	it 
+			N-ARGM-TMP		14-14	always 
+			N-ARG-A0		16-54	by the underscored romantic tension between her and Bond ( something that is virtually non - existent in Ian Fleming 's novels , though is somewhat more apparent in the Bond novels by John Gardner and Raymond Benson ) 
+	16	by
+	17	the
+	18	underscored
+			sense:	underscore.v.01
+			prop:	underscore.01
+			V		18-18	underscored 
+			N-ARG-A1		19-20	romantic tension 
+	19	romantic
+			sense:	amatory.s.01
+	20	tension
+			sense:	tension.n.01
+	21	between
+	22	her
+			coref:	IDENT			4	22-22	her 
+	23	and
+	24	Bond
+			name:	PERSON				24-24	Bond 
+	25	(
+	26	something
+	27	that
+	28	is
+			sense:	be.v.01
+			prop:	be.01
+			V		28-28	is 
+			N-ARG-A1		26-26	something 
+			R-ARG-A1		27-27	that 
+			N-ARG-A2		29-32	virtually non - existent 
+			N-ARGM-LOC		33-37	in Ian Fleming 's novels 
+			N-ARGM-ADV		39-53	though is somewhat more apparent in the Bond novels by John Gardner and Raymond Benson 
+	29	virtually
+			sense:	about.r.07
+	30	non
+	31	-
+	32	existent
+			sense:	actual.a.01
+	33	in
+	34	Ian
+			coref:	IDENT			2	34-36	Ian Fleming 's 
+			coref:	IDENT			3	34-37	Ian Fleming 's novels 
+			name:	PERSON				34-35	Ian Fleming 
+	35	Fleming
+	36	's
+	37	novels
+			sense:	novel.n.01
+	38	,
+	39	though
+			sense:	though.r.01
+	40	is
+			sense:	be.v.01
+			prop:	be.01
+			V		40-40	is 
+			N-ARG-A1		26-26	something 
+			R-ARG-A1		27-27	that 
+			N-ARG-A2		41-43	somewhat more apparent 
+			N-ARGM-LOC		44-53	in the Bond novels by John Gardner and Raymond Benson 
+	41	somewhat
+			sense:	slightly.r.01
+	42	more
+			sense:	more.r.01
+	43	apparent
+			sense:	apparent.s.01
+	44	in
+	45	the
+			coref:	IDENT			3	45-47	the Bond novels 
+	46	Bond
+			sense:	bond.n.09
+	47	novels
+			sense:	novel.n.01
+	48	by
+	49	John
+			name:	PERSON				49-50	John Gardner 
+	50	Gardner
+	51	and
+	52	Raymond
+			name:	PERSON				52-53	Raymond Benson 
+	53	Benson
+	54	)
+	55	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On that note , she is not always considered to be a Bond girl , having never had anything more than a professional relationship with Bond .
+
+
+Treebanked sentence:
+--------------------
+On that note , she is not always considered to be a Bond girl , having never had anything more than a professional relationship with Bond . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (DT that) (NN note)))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBZ is) (RB not)
+      (ADVP (RB always))
+      (VP (VBN considered)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (NP (DT a) (NN Bond) (NN girl)))))
+        (, ,)
+        (S
+          (VP (VBG having)
+            (VP
+              (ADVP (RB never))
+              (VBD had)
+              (NP (NN anything) (JJR more))
+              (PP (IN than)
+                (NP
+                  (NP (DT a) (JJ professional) (NN relationship))
+                  (PP (IN with)
+                    (NP (NN Bond))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	that
+	2	note
+			sense:	note.n.07
+	3	,
+	4	she
+			coref:	IDENT			4	4-4	she 
+	5	is
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	is 
+	6	not
+			sense:	not.r.01
+	7	always
+			sense:	always.r.01
+	8	considered
+			sense:	see.v.05
+			prop:	consider.01
+			V		8-8	considered 
+			N-ARGM-DIS		0-2	On that note 
+			N-ARGM-NEG		6-6	not 
+			N-ARGM-TMP		7-7	always 
+			N-ARG-A1		9-13	to be a Bond girl 
+			N-ARGM-ADV		15-25	having never had anything more than a professional relationship with Bond 
+	9	to
+	10	be
+			sense:	be.v.01
+			prop:	be.01
+			V		10-10	be 
+			N-ARG-A1		4-4	she 
+			N-ARG-A2		11-13	a Bond girl 
+	11	a
+	12	Bond
+			name:	MISC				12-12	Bond 
+			sense:	bond.n.09
+	13	girl
+			sense:	girlfriend.n.02
+	14	,
+	15	having
+			sense:	have.v.01
+			prop:	shaving.01
+			V		15-15	having 
+	16	never
+			sense:	never.r.01
+	17	had
+			sense:	have.v.07
+			prop:	have.03
+			V		17-17	had 
+			N-ARG-A0		4-4	she 
+			N-ARGM-NEG		16-16	never 
+			N-ARG-A1		18-25	anything more than a professional relationship with Bond 
+	18	anything
+	19	more
+			sense:	more.a.01
+	20	than
+	21	a
+	22	professional
+			sense:	professional.a.04
+	23	relationship
+			sense:	relationship.n.03
+	24	with
+	25	Bond
+			name:	PERSON				25-25	Bond 
+			sense:	bond.n.09
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Although not given a first name by Fleming , the character was given the name Jane in the spin - off book series , The Moneypenny Diaries ; in the films , she received the first name of Eve in Skyfall ( 2012 ) , where the character spent time as a field agent before becoming secretary to M.
+
+
+Treebanked sentence:
+--------------------
+Although not given a first name by Fleming , the character was given the name Jane in the spin - off book series , The Moneypenny Diaries ; in the films , she received the first name of Eve in Skyfall ( 2012 ) , where the character spent time as a field agent before becoming secretary to M . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (SBAR (IN Although)
+        (S (RB not)
+          (VP (VBN given)
+            (NP (DT a) (JJ first) (NN name))
+            (PP (IN by)
+              (NP (NNP Fleming))))))
+      (, ,)
+      (NP (DT the) (NN character))
+      (VP (VBD was)
+        (VP (VBN given)
+          (NP (DT the) (NN name))
+          (NP
+            (NP (NNP Jane))
+            (PP (IN in)
+              (NP
+                (NP (DT the)
+                  (NML (NN spin) (HYPH -) (NN off))
+                  (NN book) (NN series))
+                (, ,)
+                (NP (DT The) (NNP Moneypenny) (NNPS Diaries))))))))
+    (: ;)
+    (S
+      (PP (IN in)
+        (NP (DT the) (NNS films)))
+      (, ,)
+      (NP (PRP she))
+      (VP (VBD received)
+        (NP
+          (NP (DT the) (JJ first) (NN name))
+          (PP (IN of)
+            (NP
+              (NP (NNP Eve))
+              (PP (IN in)
+                (NP (NNP Skyfall))))))
+        (PRN (-LRB- -LRB-)
+          (NP (CD 2012))
+          (-RRB- -RRB-))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (DT the) (NN character))
+            (VP (VBN spent)
+              (NP-TMP (NN time))
+              (PP (IN as)
+                (NP (DT a) (NN field) (NN agent)))
+              (PP (IN before)
+                (S
+                  (VP (VBG becoming)
+                    (NP (NN secretary))
+                    (PP (IN to)
+                      (NP (NN M)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Although
+	1	not
+			sense:	not.r.01
+	2	given
+			sense:	give.v.01
+			prop:	give.01
+			V		2-2	given 
+			N-ARGM-NEG		1-1	not 
+			N-ARG-A1		3-5	a first name 
+			N-ARG-A0		6-7	by Fleming 
+	3	a
+	4	first
+			name:	ORDINAL				4-4	first 
+			sense:	first.s.02
+	5	name
+			sense:	name.n.01
+	6	by
+	7	Fleming
+			coref:	IDENT			2	7-7	Fleming 
+			name:	PERSON				7-7	Fleming 
+	8	,
+	9	the
+			coref:	IDENT			1	9-10	the character 
+	10	character
+			sense:	fictional_character.n.01
+	11	was
+			sense:	be.v.01
+			prop:	be.03
+			V		11-11	was 
+	12	given
+			sense:	give.v.01
+			prop:	give.01
+			V		12-12	given 
+			N-ARGM-ADV		0-7	Although not given a first name by Fleming 
+			N-ARG-A2		9-10	the character 
+			N-ARG-A1		13-15	the name Jane 
+			N-ARGM-LOC		16-26	in the spin - off book series , The Moneypenny Diaries 
+	13	the
+	14	name
+			sense:	name.n.01
+	15	Jane
+			coref:	IDENT			4	15-26	Jane in the spin - off book series , The Moneypenny Diaries 
+			name:	PERSON				15-15	Jane 
+	16	in
+	17	the
+	18	spin
+			sense:	spin.n.05
+	19	-
+	20	off
+	21	book
+			sense:	book.n.01
+	22	series
+			sense:	series.n.03
+	23	,
+	24	The
+	25	Moneypenny
+	26	Diaries
+	27	;
+	28	in
+	29	the
+			coref:	IDENT			0	29-30	the films 
+	30	films
+			sense:	movie.n.01
+	31	,
+	32	she
+			coref:	IDENT			4	32-32	she 
+	33	received
+			sense:	receive.v.02
+			prop:	receive.01
+			V		33-33	received 
+			N-ARGM-LOC		28-30	in the films 
+			N-ARG-A0		32-32	she 
+			N-ARG-A1		34-38	the first name of Eve 
+			N-ARGM-LOC		39-58	in Skyfall ( 2012 ) , where the character spent time as a field agent before becoming secretary to M 
+	34	the
+	35	first
+			name:	ORDINAL				35-35	first 
+			sense:	first.s.02
+	36	name
+			sense:	name.n.01
+	37	of
+	38	Eve
+	39	in
+	40	Skyfall
+			name:	LOCATION				40-40	Skyfall 
+	41	(
+	42	2012
+			name:	DATE				42-42	2012 
+	43	)
+	44	,
+	45	where
+	46	the
+			coref:	IDENT			1	46-47	the character 
+	47	character
+			sense:	fictional_character.n.01
+	48	spent
+			sense:	spend.v.01
+			prop:	spend.02
+			V		48-48	spent 
+			N-ARGM-LOC		40-43	Skyfall ( 2012 ) 
+			R-ARGM-LOC		45-45	where 
+			N-ARG-A0		46-47	the character 
+			N-ARG-A1		49-49	time 
+			N-ARG-A2		50-53	as a field agent 
+			N-ARGM-TMP		54-58	before becoming secretary to M 
+	49	time
+			sense:	time.n.02
+	50	as
+	51	a
+	52	field
+			sense:	field.n.03
+	53	agent
+			sense:	agent.n.02
+	54	before
+	55	becoming
+			sense:	become.v.02
+			prop:	become.01
+			V		55-55	becoming 
+			N-ARG-A1		46-47	the character 
+			N-ARG-A2		56-58	secretary to M 
+	56	secretary
+			name:	TITLE				56-56	secretary 
+			sense:	secretary.n.02
+	57	to
+	58	M
+			sense:	m.n.06
+	59	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+According to the film You Only Live Twice ( 1967 ) , she holds the rank of second officer in the Women 's Royal Naval Service .
+
+
+Treebanked sentence:
+--------------------
+According to the film You Only Live Twice ( 1967 ) , she holds the rank of second officer in the Women 's Royal Naval Service . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (VBG According)
+      (PP (IN to)
+        (NP
+          (NP (DT the) (NN film))
+          (SBAR
+            (S
+              (NP (PRP You))
+              (ADVP (RB Only))
+              (VP (VB Live)
+                (ADVP (RB Twice))))))
+        (PRN (-LRB- -LRB-)
+          (NP (CD 1967))
+          (-RRB- -RRB-))))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBZ holds)
+      (NP
+        (NP (DT the) (NN rank))
+        (PP (IN of)
+          (NP
+            (NP (JJ second) (NN officer))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NNPS Women) (POS 's))
+                (NNP Royal) (NNP Naval) (NNP Service)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	According
+			sense:	harmonize.v.01
+			prop:	accord.01
+			V		0-0	According 
+	1	to
+	2	the
+	3	film
+			sense:	movie.n.01
+	4	You
+	5	Only
+			sense:	merely.r.01
+	6	Live
+			sense:	be.v.11
+			prop:	live.01
+			V		6-6	Live 
+			N-ARG-A0		4-4	You 
+			N-ARGM-TMP		5-5	Only 
+			N-ARGM-TMP		7-7	Twice 
+	7	Twice
+			sense:	twice.r.01
+	8	(
+	9	1967
+			name:	DATE				9-9	1967 
+	10	)
+	11	,
+	12	she
+			coref:	IDENT			4	12-12	she 
+	13	holds
+			sense:	bear.v.11
+			prop:	hold.01
+			V		13-13	holds 
+			N-ARGM-ADV		0-10	According to the film You Only Live Twice ( 1967 ) 
+			N-ARG-A0		12-12	she 
+			N-ARG-A1		14-25	the rank of second officer in the Women 's Royal Naval Service 
+	14	the
+	15	rank
+			sense:	rank_and_file.n.01
+	16	of
+	17	second
+			name:	ORDINAL				17-17	second 
+			sense:	second.s.01
+	18	officer
+			sense:	military_officer.n.01
+	19	in
+	20	the
+	21	Women
+			name:	ORGANIZATION				21-25	Women 's Royal Naval Service 
+	22	's
+	23	Royal
+	24	Naval
+	25	Service
+	26	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.22-23	and films 
+				2.9-10	the films 
+				4.29-30	the films 
+	Chain 1 (IDENT)
+				4.9-10	the character 
+				4.46-47	the character 
+	Chain 2 (IDENT)
+				2.34-36	Ian Fleming 's 
+				4.7-7	Fleming 
+	Chain 3 (IDENT)
+				0.18-21	the James Bond novels 
+				2.34-37	Ian Fleming 's novels 
+				2.45-47	the Bond novels 
+	Chain 4 (IDENT)
+				0.0-11	Miss Moneypenny , later assigned the first names of Eve or Jane 
+				1.0-0	She 
+				2.1-1	she 
+				2.22-22	her 
+				3.4-4	she 
+				4.15-26	Jane in the spin - off book series , The Moneypenny Diaries 
+				4.32-32	she 
+				5.12-12	she 
+

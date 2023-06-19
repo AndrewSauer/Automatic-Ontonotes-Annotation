@@ -1,0 +1,990 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Juan Guzmán ( born Hans Gutmann Guster , also known as " Juanito " , 28 October 1911 – 1982 ) was a German born Mexican photojournalist .
+
+
+Treebanked sentence:
+--------------------
+Juan Guzmán ( born Hans Gutmann Guster , also known as " Juanito " , 28 October 1911 – 1982 ) was a German born Mexican photojournalist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Juan) (NNP Guzmán))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP
+          (NP
+            (NP (NNP Hans) (NNP Gutmann) (NNP Guster))
+            (, ,)
+            (VP
+              (ADVP (RB also))
+              (VBN known)
+              (PP (IN as) (`` ")
+                (NP (NNP Juanito))
+                ('' "))))
+          (, ,)
+          (PRN
+            (NP (CD 28)))
+          (NP (NNP October) (CD 1911) (SYM –) (CD 1982))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT a)
+        (ADJP (JJ German) (VBN born))
+        (JJ Mexican) (NN photojournalist)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Juan
+			coref:	IDENT			1	0-1	Juan Guzmán 
+			name:	PERSON				0-1	Juan Guzmán 
+	1	Guzmán
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Juan Guzmán 
+			N-ARGM-TMP		15-19	28 October 1911 – 1982 
+	4	Hans
+			name:	PERSON				4-6	Hans Gutmann Guster 
+	5	Gutmann
+	6	Guster
+	7	,
+	8	also
+			sense:	besides.r.02
+	9	known
+			sense:	know.v.04
+			prop:	know.01
+			V		9-9	known 
+			N-ARG-A1		4-6	Hans Gutmann Guster 
+			N-ARGM-ADV		8-8	also 
+			N-ARG-A2		10-13	as " Juanito " 
+	10	as
+	11	"
+	12	Juanito
+			name:	PERSON				12-12	Juanito 
+	13	"
+	14	,
+	15	28
+			name:	DATE				15-17	28 October 1911 
+	16	October
+	17	1911
+	18	–
+	19	1982
+			name:	DATE				19-19	1982 
+	20	)
+	21	was
+			sense:	be.v.02
+			prop:	be.01
+			V		21-21	was 
+			N-ARG-A1		0-20	Juan Guzmán ( born Hans Gutmann Guster , also known as " Juanito " , 28 October 1911 – 1982 ) 
+			N-ARG-A2		22-26	a German born Mexican photojournalist 
+	22	a
+	23	German
+			name:	NATIONALITY				23-23	German 
+	24	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		24-24	born 
+			N-ARGM-LOC		23-23	German 
+			N-ARG-A1		26-26	photojournalist 
+	25	Mexican
+			name:	NATIONALITY				25-25	Mexican 
+	26	photojournalist
+			name:	TITLE				26-26	photojournalist 
+			sense:	photojournalist.n.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was known as a war photographer of the Spanish Civil War and later on his work with Mexican painters Frida Kahlo and Diego Rivera .
+
+
+Treebanked sentence:
+--------------------
+He was known as a war photographer of the Spanish Civil War and later on his work with Mexican painters Frida Kahlo and Diego Rivera . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN known)
+        (PP (IN as)
+          (NP
+            (NP
+              (NP (DT a) (NN war) (NN photographer))
+              (PP (IN of)
+                (NP (DT the)
+                  (NML (NNP Spanish) (NNP Civil))
+                  (NNP War))))
+            (CC and)
+            (NP
+              (ADVP (RB later)
+                (PP (IN on)
+                  (NP
+                    (NP (PRP$ his) (NN work))
+                    (PP (IN with)
+                      (NP (JJ Mexican) (NNS painters))))))
+              (NP (NNP Frida) (NNP Kahlo))
+              (CC and)
+              (NP (NNP Diego) (NNP Rivera)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	known
+			sense:	know.v.04
+			prop:	know.01
+			V		2-2	known 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		3-24	as a war photographer of the Spanish Civil War and later on his work with Mexican painters Frida Kahlo and Diego Rivera 
+	3	as
+	4	a
+	5	war
+			name:	CAUSE_OF_DEATH				5-5	war 
+			sense:	war.n.01
+	6	photographer
+			name:	TITLE				6-6	photographer 
+			sense:	photographer.n.01
+	7	of
+	8	the
+			coref:	IDENT			2	8-11	the Spanish Civil War 
+	9	Spanish
+			name:	NATIONALITY				9-9	Spanish 
+	10	Civil
+			name:	MISC				10-10	Civil 
+	11	War
+			name:	CAUSE_OF_DEATH				11-11	War 
+	12	and
+	13	later
+			sense:	subsequently.r.01
+	14	on
+	15	his
+			coref:	IDENT			1	15-15	his 
+	16	work
+			sense:	work.n.02
+	17	with
+	18	Mexican
+			name:	NATIONALITY				18-18	Mexican 
+	19	painters
+			sense:	painter.n.01
+	20	Frida
+			name:	PERSON				20-21	Frida Kahlo 
+	21	Kahlo
+	22	and
+	23	Diego
+			coref:	IDENT			1	23-24	Diego Rivera 
+			name:	PERSON				23-24	Diego Rivera 
+	24	Rivera
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Hans Gutmann was born in Cologne .
+
+
+Treebanked sentence:
+--------------------
+Hans Gutmann was born in Cologne . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Hans) (NNP Gutmann))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Cologne)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Hans
+			coref:	IDENT			1	0-1	Hans Gutmann 
+			name:	PERSON				0-1	Hans Gutmann 
+	1	Gutmann
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Hans Gutmann 
+			N-ARGM-LOC		4-5	in Cologne 
+	4	in
+	5	Cologne
+			name:	CITY				5-5	Cologne 
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1936 he joined the Spanish Civil War as a volunteer of the International Brigades .
+
+
+Treebanked sentence:
+--------------------
+In 1936 he joined the Spanish Civil War as a volunteer of the International Brigades . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1936)))
+    (NP (PRP he))
+    (VP (VBD joined)
+      (NP (DT the) (JJ Spanish) (NNP Civil) (NNP War))
+      (PP (IN as)
+        (NP
+          (NP (DT a) (NN volunteer))
+          (PP (IN of)
+            (NP (DT the) (NNP International) (NNPS Brigades))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1936
+			name:	DATE				1-1	1936 
+	2	he
+			coref:	IDENT			1	2-2	he 
+	3	joined
+			sense:	join.v.01
+			prop:	join.01
+			V		3-3	joined 
+			N-ARGM-TMP		0-1	In 1936 
+			N-ARG-A0		2-2	he 
+			N-ARG-A1		4-7	the Spanish Civil War 
+			N-ARGM-PRD		8-14	as a volunteer of the International Brigades 
+	4	the
+			coref:	IDENT			2	4-7	the Spanish Civil War 
+	5	Spanish
+			name:	NATIONALITY				5-5	Spanish 
+	6	Civil
+			name:	MISC				6-6	Civil 
+	7	War
+			name:	CAUSE_OF_DEATH				7-7	War 
+	8	as
+	9	a
+	10	volunteer
+			sense:	volunteer.n.01
+	11	of
+	12	the
+	13	International
+	14	Brigades
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Gutmann later became a Spanish citizen and changed his name to Juan Guzmán .
+
+
+Treebanked sentence:
+--------------------
+Gutmann later became a Spanish citizen and changed his name to Juan Guzmán . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Gutmann))
+    (ADVP (RB later))
+    (VP
+      (VP (VBD became)
+        (NP (DT a) (JJ Spanish) (NN citizen)))
+      (CC and)
+      (VP (VBD changed)
+        (NP (PRP$ his) (NN name))
+        (PP (IN to)
+          (NP (NNP Juan) (NNP Guzmán)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Gutmann
+			coref:	IDENT			1	0-0	Gutmann 
+			name:	PERSON				0-0	Gutmann 
+	1	later
+			sense:	subsequently.r.01
+	2	became
+			sense:	become.v.02
+			prop:	become.01
+			V		2-2	became 
+			N-ARG-A1		0-0	Gutmann 
+			N-ARGM-TMP		1-1	later 
+			N-ARG-A2		3-5	a Spanish citizen 
+	3	a
+	4	Spanish
+			name:	NATIONALITY				4-4	Spanish 
+	5	citizen
+			sense:	citizen.n.01
+	6	and
+	7	changed
+			sense:	change.v.01
+			prop:	change.01
+			V		7-7	changed 
+			N-ARG-A0		0-0	Gutmann 
+			N-ARGM-TMP		1-1	later 
+			N-ARG-A1		8-9	his name 
+			N-ARG-A2		10-12	to Juan Guzmán 
+	8	his
+			coref:	IDENT			1	8-8	his 
+	9	name
+			sense:	name.n.01
+	10	to
+	11	Juan
+			coref:	IDENT			1	11-12	Juan Guzmán 
+			name:	PERSON				11-12	Juan Guzmán 
+	12	Guzmán
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+There are more than 1,300 photographs from the Spanish Civil War in the archive of Agencia EFE ( Madrid ) .
+
+
+Treebanked sentence:
+--------------------
+There are more than 1,300 photographs from the Spanish Civil War in the archive of Agencia EFE ( Madrid ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (QP (JJR more) (IN than) (CD 1,300))
+        (NNS photographs))
+      (PP (IN from)
+        (NP
+          (NP (DT the)
+            (NML (NNP Spanish) (NNP Civil))
+            (NNP War))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN archive))
+              (PP (IN of)
+                (NP (NNP Agencia) (NNP EFE)))))))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP Madrid))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	There
+	1	are
+			sense:	exist.v.01
+			prop:	be.02
+			V		1-1	are 
+			N-ARG-A1		2-10	more than 1,300 photographs from the Spanish Civil War 
+			N-ARGM-LOC		11-19	in the archive of Agencia EFE ( Madrid ) 
+	2	more
+			sense:	more.a.02
+	3	than
+	4	1,300
+			name:	NUMBER				4-4	1,300 
+	5	photographs
+			sense:	photograph.n.01
+	6	from
+	7	the
+	8	Spanish
+			name:	NATIONALITY				8-8	Spanish 
+	9	Civil
+			name:	MISC				9-9	Civil 
+	10	War
+			name:	CAUSE_OF_DEATH				10-10	War 
+	11	in
+	12	the
+	13	archive
+			sense:	archive.n.01
+	14	of
+	15	Agencia
+			name:	ORGANIZATION				15-16	Agencia EFE 
+	16	EFE
+	17	(
+	18	Madrid
+			name:	CITY				18-18	Madrid 
+	19	)
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His most famous image is the picture of 17-year - old Marina Ginestà standing in top of Hotel Colón in Barcelona .
+
+
+Treebanked sentence:
+--------------------
+His most famous image is the picture of 17 - year - old Marina Ginestà standing in top of Hotel Colón in Barcelona . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His)
+      (ADJP (RBS most) (JJ famous))
+      (NN image))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN picture))
+        (PP (IN of)
+          (NP
+            (NP
+              (ADJP
+                (NP (CD 17) (HYPH -) (NN year))
+                (HYPH -) (JJ old))
+              (NNP Marina) (NNP Ginestà))
+            (VP (VBG standing)
+              (PP (IN in)
+                (NP
+                  (NP (NN top))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNP Hotel) (NNP Colón))
+                      (PP (IN in)
+                        (NP (NNP Barcelona))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-3	His most famous image 
+			coref:	IDENT			1	0-0	His 
+	1	most
+			sense:	most.r.01
+	2	famous
+			sense:	celebrated.s.01
+	3	image
+			sense:	picture.n.01
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	His most famous image 
+			N-ARG-A2		5-22	the picture of 17 - year - old Marina Ginestà standing in top of Hotel Colón in Barcelona 
+	5	the
+	6	picture
+			sense:	picture.n.01
+	7	of
+	8	17
+			name:	DURATION				8-10	17 - year 
+	9	-
+	10	year
+			sense:	year.n.01
+	11	-
+	12	old
+			sense:	old.a.01
+	13	Marina
+			name:	PERSON				13-14	Marina Ginestà 
+	14	Ginestà
+	15	standing
+			sense:	stand.v.01
+			prop:	stand.01
+			V		15-15	standing 
+			N-ARG-A1		8-14	17 - year - old Marina Ginestà 
+			N-ARG-A2		16-22	in top of Hotel Colón in Barcelona 
+	16	in
+	17	top
+			sense:	top.n.01
+	18	of
+	19	Hotel
+			name:	ORGANIZATION				19-20	Hotel Colón 
+	20	Colón
+	21	in
+	22	Barcelona
+			name:	CITY				22-22	Barcelona 
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is one of the most iconic photographs of the Spanish Civil War .
+
+
+Treebanked sentence:
+--------------------
+It is one of the most iconic photographs of the Spanish Civil War . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (RBS most) (JJ iconic) (NNS photographs))
+            (PP (IN of)
+              (NP (DT the)
+                (NML (NNP Spanish) (NNP Civil))
+                (NNP War)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-12	one of the most iconic photographs of the Spanish Civil War 
+	2	one
+			name:	NUMBER				2-2	one 
+	3	of
+	4	the
+	5	most
+			sense:	most.r.01
+	6	iconic
+			sense:	iconic.a.01
+	7	photographs
+			sense:	photograph.n.01
+	8	of
+	9	the
+			coref:	IDENT			2	9-12	the Spanish Civil War 
+	10	Spanish
+			name:	NATIONALITY				10-10	Spanish 
+	11	Civil
+			name:	MISC				11-11	Civil 
+	12	War
+			name:	CAUSE_OF_DEATH				12-12	War 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After the war Guzmán fled to Mexico , where he arrived in 1940 .
+
+
+Treebanked sentence:
+--------------------
+After the war Guzmán fled to Mexico , where he arrived in 1940 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP (DT the) (NN war)))
+    (NP (NNP Guzmán))
+    (VP (VBD fled)
+      (PP (IN to)
+        (NP (NNP Mexico)))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP he))
+          (VP (VBD arrived)
+            (PP (IN in)
+              (NP (CD 1940)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	the
+			coref:	IDENT			2	1-2	the war 
+	2	war
+			name:	CAUSE_OF_DEATH				2-2	war 
+			sense:	war.n.01
+	3	Guzmán
+			coref:	IDENT			1	3-3	Guzmán 
+			name:	PERSON				3-3	Guzmán 
+	4	fled
+			sense:	flee.v.01
+			prop:	flee.01
+			V		4-4	fled 
+			N-ARGM-TMP		0-2	After the war 
+			N-ARG-A0		3-3	Guzmán 
+			N-ARG-A1		5-12	to Mexico , where he arrived in 1940 
+	5	to
+	6	Mexico
+			name:	COUNTRY				6-6	Mexico 
+	7	,
+	8	where
+	9	he
+			coref:	IDENT			1	9-9	he 
+	10	arrived
+			sense:	arrive.v.01
+			prop:	arrive.01
+			V		10-10	arrived 
+			N-ARG-A4		6-6	Mexico 
+			R-ARG-A4		8-8	where 
+			N-ARG-A1		9-9	he 
+			N-ARGM-TMP		11-12	in 1940 
+	11	in
+	12	1940
+			name:	DATE				12-12	1940 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He worked for major Mexican magazines and newspapers and became a friend of Frida Kahlo with whom Guzmán shared similar political views .
+
+
+Treebanked sentence:
+--------------------
+He worked for major Mexican magazines and newspapers and became a friend of Frida Kahlo with whom Guzmán shared similar political views . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD worked)
+        (PP (IN for)
+          (NP (JJ major) (JJ Mexican) (NNS magazines)
+            (CC and)
+            (NNS newspapers))))
+      (CC and)
+      (VP (VBD became)
+        (NP
+          (NP (DT a) (NN friend))
+          (PP (IN of)
+            (NP (NNP Frida) (NNP Kahlo))))
+        (PP (IN with)
+          (SBAR
+            (WHNP (WP whom))
+            (S
+              (NP (NNP Guzmán))
+              (VP (VBD shared)
+                (NP (JJ similar) (JJ political) (NNS views))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		1-1	worked 
+			N-ARG-A0		0-0	He 
+			N-ARG-A2		2-7	for major Mexican magazines and newspapers 
+	2	for
+	3	major
+			sense:	major.a.01
+	4	Mexican
+			name:	NATIONALITY				4-4	Mexican 
+	5	magazines
+			sense:	magazine.n.01
+	6	and
+	7	newspapers
+			sense:	newspaper.n.01
+	8	and
+	9	became
+			sense:	become.v.02
+			prop:	become.01
+			V		9-9	became 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		10-21	a friend of Frida Kahlo with whom Guzmán shared similar political views 
+	10	a
+	11	friend
+			sense:	friend.n.01
+	12	of
+	13	Frida
+			name:	PERSON				13-14	Frida Kahlo 
+	14	Kahlo
+	15	with
+	16	whom
+	17	Guzmán
+			coref:	IDENT			1	17-17	Guzmán 
+			name:	PERSON				17-17	Guzmán 
+	18	shared
+			sense:	share.v.01
+			prop:	share.01
+			V		18-18	shared 
+			N-ARG-A2		13-14	Frida Kahlo 
+			R-ARG-A2		15-16	with whom 
+			N-ARG-A0		17-17	Guzmán 
+			N-ARG-A1		19-21	similar political views 
+	19	similar
+			sense:	similar.a.01
+	20	political
+			sense:	political.a.02
+	21	views
+			sense:	position.n.03
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the 1950s he took a large number of photographs of Kahlo and her husband Diego Rivera .
+
+
+Treebanked sentence:
+--------------------
+In the 1950s he took a large number of photographs of Kahlo and her husband Diego Rivera . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NNS 1950s)))
+    (NP (PRP he))
+    (VP (VBD took)
+      (NP
+        (NP (DT a) (JJ large) (NN number))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (NNS photographs))
+              (PP (IN of)
+                (NP (NNP Kahlo))))
+            (CC and)
+            (NP
+              (NP (PRP$ her) (NN husband))
+              (NP (NNP Diego) (NNP Rivera)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+			name:	DATE				1-2	the 1950s 
+	2	1950s
+	3	he
+			coref:	IDENT			1	3-3	he 
+	4	took
+			sense:	film.v.01
+			prop:	take.01
+			V		4-4	took 
+			N-ARGM-TMP		0-2	In the 1950s 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		5-16	a large number of photographs of Kahlo and her husband Diego Rivera 
+	5	a
+	6	large
+			sense:	large.a.01
+	7	number
+			sense:	number.n.01
+	8	of
+	9	photographs
+			sense:	photograph.n.01
+	10	of
+	11	Kahlo
+			name:	PERSON				11-11	Kahlo 
+	12	and
+	13	her
+	14	husband
+			sense:	husband.n.01
+	15	Diego
+			coref:	IDENT			1	15-16	Diego Rivera 
+			name:	PERSON				15-16	Diego Rivera 
+	16	Rivera
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Guzmán also photographed the artwork of Mexican painters like Gerardo Murillo , Jesús Reyes Ferreira and José Clemente Orozco .
+
+
+Treebanked sentence:
+--------------------
+Guzmán also photographed the artwork of Mexican painters like Gerardo Murillo , Jesús Reyes Ferreira and José Clemente Orozco . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Guzmán))
+    (ADVP (RB also))
+    (VP (VBD photographed)
+      (NP
+        (NP (DT the) (NN artwork))
+        (PP (IN of)
+          (NP (JJ Mexican) (NNS painters))))
+      (PP (IN like)
+        (NP
+          (NP (NNP Gerardo) (NNP Murillo))
+          (, ,)
+          (NP (NNP Jesús) (NNP Reyes) (NNP Ferreira))
+          (CC and)
+          (NP (NNP José) (NNP Clemente) (NNP Orozco)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Guzmán
+			coref:	IDENT			1	0-0	Guzmán 
+			name:	PERSON				0-0	Guzmán 
+	1	also
+			sense:	besides.r.02
+	2	photographed
+			sense:	photograph.v.01
+			prop:	photograph.01
+			V		2-2	photographed 
+			N-ARG-A0		0-0	Guzmán 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-18	the artwork of Mexican painters like Gerardo Murillo , Jesús Reyes Ferreira and José Clemente Orozco 
+	3	the
+	4	artwork
+			sense:	artwork.n.01
+	5	of
+	6	Mexican
+			name:	NATIONALITY				6-6	Mexican 
+	7	painters
+			sense:	painter.n.01
+	8	like
+	9	Gerardo
+			name:	PERSON				9-10	Gerardo Murillo 
+	10	Murillo
+	11	,
+	12	Jesús
+			name:	PERSON				12-14	Jesús Reyes Ferreira 
+	13	Reyes
+	14	Ferreira
+	15	and
+	16	José
+			name:	PERSON				16-18	José Clemente Orozco 
+	17	Clemente
+	18	Orozco
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Juan Guzmán died in Mexico City in 1982 .
+
+
+Treebanked sentence:
+--------------------
+Juan Guzmán died in Mexico City in 1982 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Juan) (NNP Guzmán))
+    (VP (VBD died)
+      (PP (IN in)
+        (NP
+          (NP (NNP Mexico) (NNP City))
+          (PP (IN in)
+            (NP (CD 1982))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Juan
+			coref:	IDENT			1	0-1	Juan Guzmán 
+			name:	PERSON				0-1	Juan Guzmán 
+	1	Guzmán
+	2	died
+			sense:	die.v.01
+			prop:	die.01
+			V		2-2	died 
+			N-ARG-A1		0-1	Juan Guzmán 
+			N-ARGM-LOC		3-5	in Mexico City 
+			N-ARGM-TMP		6-7	in 1982 
+	3	in
+	4	Mexico
+			name:	COUNTRY				4-4	Mexico 
+	5	City
+			name:	LOCATION				5-5	City 
+	6	in
+	7	1982
+			name:	DATE				7-7	1982 
+	8	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				6.0-3	His most famous image 
+				7.0-0	It 
+	Chain 1 (IDENT)
+				0.0-1	Juan Guzmán 
+				1.0-0	He 
+				1.15-15	his 
+				1.23-24	Diego Rivera 
+				2.0-1	Hans Gutmann 
+				3.2-2	he 
+				4.0-0	Gutmann 
+				4.8-8	his 
+				4.11-12	Juan Guzmán 
+				6.0-0	His 
+				8.3-3	Guzmán 
+				8.9-9	he 
+				9.0-0	He 
+				9.17-17	Guzmán 
+				10.3-3	he 
+				10.15-16	Diego Rivera 
+				11.0-0	Guzmán 
+				12.0-1	Juan Guzmán 
+	Chain 2 (IDENT)
+				1.8-11	the Spanish Civil War 
+				3.4-7	the Spanish Civil War 
+				7.9-12	the Spanish Civil War 
+				8.1-2	the war 
+

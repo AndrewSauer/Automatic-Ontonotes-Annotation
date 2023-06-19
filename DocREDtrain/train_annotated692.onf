@@ -1,0 +1,545 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Detlef Schrempf ( born 21 January 1963 ) is a German - American retired professional basketball player .
+
+
+Treebanked sentence:
+--------------------
+Detlef Schrempf ( born 21 January 1963 ) is a German - American retired professional basketball player . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Detlef) (NNP Schrempf))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 21))
+        (NP-TMP (NNP January) (CD 1963)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (S
+        (NP (DT a)
+          (ADJP (JJ German) (HYPH -) (JJ American))
+          (NML (VBN retired) (JJ professional) (NN basketball))
+          (NN player))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Detlef
+			name:	PERSON				0-1	Detlef Schrempf 
+	1	Schrempf
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Detlef Schrempf 
+			N-ARGM-TMP		4-6	21 January 1963 
+	4	21
+			name:	DATE				4-6	21 January 1963 
+	5	January
+	6	1963
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	Detlef Schrempf ( born 21 January 1963 ) 
+			N-ARG-A2		9-16	a German - American retired professional basketball player 
+	9	a
+	10	German
+			name:	NATIONALITY				10-10	German 
+	11	-
+	12	American
+			name:	NATIONALITY				12-12	American 
+	13	retired
+			sense:	retire.v.01
+			prop:	retire.01
+			V		13-13	retired 
+			N-ARG-A0		14-16	professional basketball player 
+	14	professional
+			sense:	professional.a.01
+	15	basketball
+			name:	TITLE				15-16	basketball player 
+			sense:	basketball.n.01
+	16	player
+			sense:	player.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He played college basketball for the Washington Huskies from 1981 to 1985 , and was drafted into the National Basketball Association ( NBA ) by the Dallas Mavericks in the first round of the 1985 NBA draft , with the eighth overall pick .
+
+
+Treebanked sentence:
+--------------------
+He played college basketball for the Washington Huskies from 1981 to 1985 , and was drafted into the National Basketball Association ( NBA ) by the Dallas Mavericks in the first round of the 1985 NBA draft , with the eighth overall pick . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD played)
+        (NP
+          (NP (NN college) (NN basketball))
+          (PP (IN for)
+            (NP (DT the) (NNP Washington) (NNPS Huskies))))
+        (PP (IN from)
+          (NP (CD 1981)))
+        (PP (IN to)
+          (NP (CD 1985))))
+      (, ,)
+      (CC and)
+      (VP (VBD was)
+        (VP (VBN drafted)
+          (PP (IN into)
+            (NP (DT the) (NNP National) (NNP Basketball) (NNP Association)))
+          (PRN (-LRB- -LRB-)
+            (NP (NNP NBA))
+            (-RRB- -RRB-))
+          (PP (IN by)
+            (NP (DT the) (NNP Dallas) (NNPS Mavericks)))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (JJ first) (NN round))
+              (PP (IN of)
+                (NP (DT the) (CD 1985) (NNP NBA) (NN draft)))))
+          (, ,)
+          (PP (IN with)
+            (NP (DT the) (JJ eighth) (JJ overall) (NN pick))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	played
+			sense:	play.v.01
+			prop:	play.01
+			V		1-1	played 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-3	college basketball 
+			N-ARGM-ADV		4-7	for the Washington Huskies 
+			N-ARGM-TMP		8-11	from 1981 to 1985 
+	2	college
+			sense:	college.n.01
+	3	basketball
+			sense:	basketball.n.01
+	4	for
+	5	the
+	6	Washington
+			name:	ORGANIZATION				6-7	Washington Huskies 
+	7	Huskies
+	8	from
+	9	1981
+			name:	DATE				9-11	1981 to 1985 
+	10	to
+	11	1985
+	12	,
+	13	and
+	14	was
+			sense:	be.v.01
+			prop:	be.03
+			V		14-14	was 
+	15	drafted
+			sense:	enlist.v.03
+			prop:	draft.01
+			V		15-15	drafted 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		16-23	into the National Basketball Association ( NBA ) 
+			N-ARG-A0		24-27	by the Dallas Mavericks 
+			N-ARGM-TMP		28-36	in the first round of the 1985 NBA draft 
+			N-ARGM-ADV		38-42	with the eighth overall pick 
+	16	into
+	17	the
+	18	National
+			name:	ORGANIZATION				18-20	National Basketball Association 
+	19	Basketball
+	20	Association
+	21	(
+	22	NBA
+			coref:	IDENT			1	22-22	NBA 
+			name:	ORGANIZATION				22-22	NBA 
+	23	)
+	24	by
+	25	the
+	26	Dallas
+			name:	ORGANIZATION				26-27	Dallas Mavericks 
+	27	Mavericks
+	28	in
+	29	the
+	30	first
+			name:	ORDINAL				30-30	first 
+			sense:	first.s.02
+	31	round
+			sense:	cycle.n.01
+	32	of
+	33	the
+	34	1985
+			name:	DATE				34-34	1985 
+	35	NBA
+			coref:	IDENT			1	35-35	NBA 
+			name:	ORGANIZATION				35-35	NBA 
+	36	draft
+			sense:	conscription.n.01
+	37	,
+	38	with
+	39	the
+	40	eighth
+			name:	ORDINAL				40-40	eighth 
+			sense:	eighth.s.01
+	41	overall
+			sense:	overall.s.02
+	42	pick
+			sense:	choice.n.01
+	43	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was an All - NBA Third Team member in 1995 , a three - time NBA All - Star and the NBA Sixth Man of the Year twice .
+
+
+Treebanked sentence:
+--------------------
+He was an All - NBA Third Team member in 1995 , a three - time NBA All - Star and the NBA Sixth Man of the Year twice . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP
+          (NP (DT an)
+            (NML (NNP All) (HYPH -) (NNP NBA))
+            (NML (NNP Third) (NNP Team))
+            (NN member))
+          (PP (IN in)
+            (NP (CD 1995))))
+        (, ,)
+        (NP (DT a)
+          (NML (CD three) (HYPH -) (NN time))
+          (NNP NBA) (NNP All) (HYPH -) (NNP Star))
+        (CC and)
+        (NP
+          (NP (DT the) (NNP NBA) (NNP Sixth) (NNP Man))
+          (PP (IN of)
+            (NP (DT the) (NNP Year)))))
+      (ADVP (RB twice)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-28	an All - NBA Third Team member in 1995 , a three - time NBA All - Star and the NBA Sixth Man of the Year twice 
+	2	an
+	3	All
+	4	-
+	5	NBA
+	6	Third
+			name:	ORDINAL				6-6	Third 
+	7	Team
+	8	member
+			sense:	member.n.01
+	9	in
+	10	1995
+			name:	DATE				10-10	1995 
+	11	,
+	12	a
+	13	three
+			name:	NUMBER				13-13	three 
+	14	-
+	15	time
+			sense:	time.n.01
+	16	NBA
+			name:	ORGANIZATION				16-19	NBA All - Star 
+	17	All
+	18	-
+	19	Star
+	20	and
+	21	the
+	22	NBA
+			coref:	IDENT			1	22-22	NBA 
+			name:	MISC				22-22	NBA 
+	23	Sixth
+			name:	ORDINAL				23-23	Sixth 
+	24	Man
+			name:	MISC				24-24	Man 
+	25	of
+	26	the
+			name:	DATE				26-27	the Year 
+	27	Year
+	28	twice
+			sense:	twice.r.01
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Schrempf played in the NBA for sixteen seasons , including stints with the Indiana Pacers , the Seattle SuperSonics , and the Portland Trail Blazers .
+
+
+Treebanked sentence:
+--------------------
+Schrempf played in the NBA for sixteen seasons , including stints with the Indiana Pacers , the Seattle SuperSonics , and the Portland Trail Blazers . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Schrempf))
+    (VP (VBD played)
+      (PP (IN in)
+        (NP (DT the) (NNP NBA)))
+      (PP (IN for)
+        (NP (CD sixteen) (NNS seasons)))
+      (, ,)
+      (PP (VBG including)
+        (NP
+          (NP (NNS stints))
+          (PP (IN with)
+            (NP
+              (NP (DT the) (NNP Indiana) (NNPS Pacers))
+              (, ,)
+              (NP (DT the) (NNP Seattle) (NNPS SuperSonics))
+              (, ,)
+              (CC and)
+              (NP (DT the) (NNP Portland) (NNP Trail) (NNPS Blazers)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Schrempf
+			name:	PERSON				0-0	Schrempf 
+	1	played
+			sense:	play.v.01
+			prop:	play.01
+			V		1-1	played 
+			N-ARG-A0		0-0	Schrempf 
+			N-ARGM-LOC		2-4	in the NBA 
+			N-ARGM-TMP		5-24	for sixteen seasons , including stints with the Indiana Pacers , the Seattle SuperSonics , and the Portland Trail Blazers 
+	2	in
+	3	the
+			coref:	IDENT			1	3-4	the NBA 
+	4	NBA
+			name:	ORGANIZATION				4-4	NBA 
+	5	for
+	6	sixteen
+			name:	NUMBER				6-6	sixteen 
+	7	seasons
+			sense:	season.n.01
+	8	,
+	9	including
+			sense:	include.v.01
+			prop:	include.01
+			V		9-9	including 
+			N-ARG-A2		6-7	sixteen seasons 
+			N-ARG-A1		10-24	stints with the Indiana Pacers , the Seattle SuperSonics , and the Portland Trail Blazers 
+	10	stints
+			sense:	stretch.n.06
+	11	with
+	12	the
+	13	Indiana
+			name:	ORGANIZATION				13-14	Indiana Pacers 
+	14	Pacers
+	15	,
+	16	the
+			coref:	IDENT			0	16-18	the Seattle SuperSonics 
+	17	Seattle
+			name:	ORGANIZATION				17-18	Seattle SuperSonics 
+	18	SuperSonics
+	19	,
+	20	and
+	21	the
+	22	Portland
+			name:	CITY				22-23	Portland Trail 
+	23	Trail
+	24	Blazers
+			name:	LOCATION				24-24	Blazers 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1996 , he reached the NBA Finals with the SuperSonics .
+
+
+Treebanked sentence:
+--------------------
+In 1996 , he reached the NBA Finals with the SuperSonics . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1996)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD reached)
+      (NP (DT the) (NNP NBA) (NNPS Finals))
+      (PP (IN with)
+        (NP (DT the) (NNPS SuperSonics))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1996
+			name:	DATE				1-1	1996 
+	2	,
+	3	he
+	4	reached
+			sense:	reach.v.02
+			prop:	reach.01
+			V		4-4	reached 
+			N-ARGM-TMP		0-1	In 1996 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		5-7	the NBA Finals 
+	5	the
+	6	NBA
+			coref:	IDENT			1	6-6	NBA 
+			name:	ORGANIZATION				6-6	NBA 
+	7	Finals
+	8	with
+	9	the
+			coref:	IDENT			0	9-10	the SuperSonics 
+	10	SuperSonics
+			name:	ORGANIZATION				10-10	SuperSonics 
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He played for the West German , and later German , national team in the 1984 and 1992 Summer Olympics and the 1983 and 1985 EuroBasket championships .
+
+
+Treebanked sentence:
+--------------------
+He played for the West German , and later German , national team in the 1984 and 1992 Summer Olympics and the 1983 and 1985 EuroBasket championships . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD played)
+      (PP (IN for)
+        (NP
+          (NP (DT the)
+            (ADJP
+              (ADJP (JJ West) (JJ German))
+              (, ,)
+              (CC and)
+              (ADJP (JJ later) (JJ German)))
+            (, ,) (JJ national) (NN team))
+          (PP (IN in)
+            (NP (DT the) (CD 1984)
+              (CC and)
+              (CD 1992)))
+          (NP-TMP (NN Summer))))
+      (NP
+        (NP (NNPS Olympics))
+        (CC and)
+        (NP (DT the) (CD 1983))
+        (CC and)
+        (NP (CD 1985) (NNP EuroBasket) (NNS championships))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	played
+			sense:	play.v.01
+			prop:	play.01
+			V		1-1	played 
+			N-ARG-A0		0-0	He 
+			N-ARGM-ADV		2-12	for the West German , and later German , national team 
+			N-ARGM-LOC		13-26	in the 1984 and 1992 Summer Olympics and the 1983 and 1985 EuroBasket championships 
+	2	for
+	3	the
+	4	West
+			name:	MISC				4-4	West 
+			sense:	west.a.01
+	5	German
+			name:	NATIONALITY				5-5	German 
+	6	,
+	7	and
+	8	later
+			sense:	later.s.01
+	9	German
+			name:	NATIONALITY				9-9	German 
+	10	,
+	11	national
+			sense:	national.a.01
+	12	team
+			sense:	team.n.01
+	13	in
+	14	the
+	15	1984
+			name:	DATE				15-15	1984 
+	16	and
+	17	1992
+			name:	DATE				17-18	1992 Summer 
+	18	Summer
+			sense:	summer.n.01
+	19	Olympics
+			name:	MISC				19-19	Olympics 
+	20	and
+	21	the
+	22	1983
+			name:	DATE				22-22	1983 
+	23	and
+	24	1985
+			name:	DATE				24-24	1985 
+	25	EuroBasket
+			name:	MISC				25-25	EuroBasket 
+	26	championships
+			sense:	championship.n.02
+	27	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.16-18	the Seattle SuperSonics 
+				4.9-10	the SuperSonics 
+	Chain 1 (IDENT)
+				3.3-4	the NBA 
+				1.22-22	NBA 
+				1.35-35	NBA 
+				2.22-22	NBA 
+				4.6-6	NBA 
+

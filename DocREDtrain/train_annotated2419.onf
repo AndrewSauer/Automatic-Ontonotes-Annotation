@@ -1,0 +1,774 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Saint Louis is a 1592 - 1595 painting by El Greco , painted during his time in Toledo .
+
+
+Treebanked sentence:
+--------------------
+Saint Louis is a 1592 - 1595 painting by El Greco , painted during his time in Toledo . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Saint) (NNP Louis))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT a)
+            (NML
+              (QP (CD 1592) (HYPH -) (CD 1595)))
+            (NN painting))
+          (PP (IN by)
+            (NP (NNP El) (NNP Greco))))
+        (, ,)
+        (VP (VBN painted)
+          (PP (IN during)
+            (NP (PRP$ his) (NN time)))
+          (PP (IN in)
+            (NP (NNP Toledo))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Saint
+			coref:	IDENT			1	0-1	Saint Louis 
+			name:	PERSON				0-1	Saint Louis 
+	1	Louis
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Saint Louis 
+			N-ARG-A2		3-17	a 1592 - 1595 painting by El Greco , painted during his time in Toledo 
+	3	a
+	4	1592
+			name:	DATE				4-4	1592 
+	5	-
+			name:	DURATION				5-5	- 
+	6	1595
+			name:	DATE				6-6	1595 
+	7	painting
+			sense:	painting.n.01
+	8	by
+	9	El
+			coref:	IDENT			4	9-10	El Greco 
+			name:	PERSON				9-10	El Greco 
+	10	Greco
+	11	,
+	12	painted
+			sense:	paint.v.01
+			prop:	paint.02
+			V		12-12	painted 
+			N-ARG-A1		3-10	a 1592 - 1595 painting by El Greco 
+			N-ARGM-TMP		13-17	during his time in Toledo 
+	13	during
+	14	his
+			coref:	IDENT			4	14-14	his 
+	15	time
+			sense:	time.n.02
+	16	in
+	17	Toledo
+			name:	CITY				17-17	Toledo 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is now in the Louvre in Paris .
+
+
+Treebanked sentence:
+--------------------
+It is now in the Louvre in Paris . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADVP (RB now))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NNP Louvre))
+          (PP (IN in)
+            (NP (NNP Paris))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	is
+			sense:	be.v.03
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		2-2	now 
+			N-ARG-A2		3-7	in the Louvre in Paris 
+	2	now
+			name:	DATE				2-2	now 
+			sense:	now.r.01
+	3	in
+	4	the
+	5	Louvre
+			name:	LOCATION				5-5	Louvre 
+	6	in
+	7	Paris
+			name:	CITY				7-7	Paris 
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It shows Louis IX of France wearing 16th century armour and a crown and holding his family symbol of a fleur de lys and the traditional sceptre of the kings of France .
+
+
+Treebanked sentence:
+--------------------
+It shows Louis IX of France wearing 16th century armour and a crown and holding his family symbol of a fleur de lys and the traditional sceptre of the kings of France . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ shows)
+      (NP
+        (NP (NNP Louis) (CD IX))
+        (PP (IN of)
+          (NP (NNP France))))
+      (S
+        (VP
+          (VP (VBG wearing)
+            (NP
+              (NP (JJ 16th) (NN century) (NN armour))
+              (CC and)
+              (NP (DT a) (NN crown))))
+          (CC and)
+          (VP (VBG holding)
+            (NP
+              (NP (PRP$ his) (NN family) (NN symbol))
+              (PP (IN of)
+                (NP
+                  (NP (DT a) (FW fleur) (FW de) (FW lys))
+                  (CC and)
+                  (NP
+                    (NP (DT the) (JJ traditional) (NN sceptre))
+                    (PP (IN of)
+                      (NP
+                        (NP (DT the) (NNS kings))
+                        (PP (IN of)
+                          (NP (NNP France)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	shows
+			sense:	picture.v.02
+			prop:	show.01
+			V		1-1	shows 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-31	Louis IX of France wearing 16th century armour and a crown and holding his family symbol of a fleur de lys and the traditional sceptre of the kings of France 
+	2	Louis
+			coref:	IDENT			1	2-5	Louis IX of France 
+			name:	PERSON				2-3	Louis IX 
+	3	IX
+	4	of
+	5	France
+			coref:	IDENT			2	5-5	France 
+			name:	COUNTRY				5-5	France 
+	6	wearing
+			sense:	wear.v.01
+			prop:	wear.01
+			V		6-6	wearing 
+			N-ARG-A0		2-5	Louis IX of France 
+			N-ARG-A1		7-12	16th century armour and a crown 
+	7	16th
+			name:	DATE				7-8	16th century 
+			sense:	sixteenth.s.01
+	8	century
+			sense:	century.n.01
+	9	armour
+			sense:	armor.n.01
+	10	and
+	11	a
+	12	crown
+			sense:	crown.n.04
+	13	and
+	14	holding
+			sense:	hold.v.02
+			prop:	hold.01
+			V		14-14	holding 
+			N-ARG-A0		2-5	Louis IX of France 
+			N-ARG-A1		15-31	his family symbol of a fleur de lys and the traditional sceptre of the kings of France 
+	15	his
+			coref:	IDENT			5	15-15	his 
+	16	family
+			sense:	family.n.04
+	17	symbol
+			sense:	symbol.n.02
+	18	of
+	19	a
+	20	fleur
+	21	de
+	22	lys
+	23	and
+	24	the
+	25	traditional
+			sense:	traditional.a.01
+	26	sceptre
+			sense:	scepter.n.02
+	27	of
+	28	the
+	29	kings
+			sense:	king.n.01
+	30	of
+	31	France
+			coref:	IDENT			2	31-31	France 
+			name:	COUNTRY				31-31	France 
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Gregorio Marañon and Manuel Bartolomé Cossío argue the model was a patient at the Hospital del Nuncio or an old print .
+
+
+Treebanked sentence:
+--------------------
+Gregorio Marañon and Manuel Bartolomé Cossío argue the model was a patient at the Hospital del Nuncio or an old print . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Gregorio) (NNP Marañon))
+      (CC and)
+      (NP (NNP Manuel) (NNP Bartolomé) (NNP Cossío)))
+    (VP (VBP argue)
+      (SBAR
+        (S
+          (NP (DT the) (NN model))
+          (VP (VBD was)
+            (NP
+              (NP (DT a) (NN patient))
+              (PP (IN at)
+                (NP
+                  (NP (DT the) (NNP Hospital) (NNP del) (NNP Nuncio))
+                  (CC or)
+                  (NP (DT an) (JJ old) (NN print)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Gregorio
+			coref:	IDENT			5	0-1	Gregorio Marañon 
+			name:	PERSON				0-1	Gregorio Marañon 
+	1	Marañon
+	2	and
+	3	Manuel
+			name:	PERSON				3-5	Manuel Bartolomé Cossío 
+	4	Bartolomé
+	5	Cossío
+	6	argue
+			sense:	argue.v.01
+			prop:	argue.01
+			V		6-6	argue 
+			N-ARG-A0		0-5	Gregorio Marañon and Manuel Bartolomé Cossío 
+			N-ARG-A1		7-20	the model was a patient at the Hospital del Nuncio or an old print 
+	7	the
+	8	model
+			name:	TITLE				8-8	model 
+			sense:	model.n.03
+	9	was
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	was 
+			N-ARG-A1		7-8	the model 
+			N-ARG-A2		10-20	a patient at the Hospital del Nuncio or an old print 
+	10	a
+	11	patient
+			sense:	patient.n.01
+	12	at
+	13	the
+	14	Hospital
+	15	del
+	16	Nuncio
+	17	or
+	18	an
+	19	old
+			sense:	old.a.02
+	20	print
+			sense:	print.n.02
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Louis was the grandson of Alfonso VIII of Castile , meaning that in the late 16th century he was revered in both France and Spain , particularly since no Spanish king was canonised until Ferdinand III of Castile received the honour in 1671 .
+
+
+Treebanked sentence:
+--------------------
+Louis was the grandson of Alfonso VIII of Castile , meaning that in the late 16th century he was revered in both France and Spain , particularly since no Spanish king was canonised until Ferdinand III of Castile received the honour in 1671 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Louis))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (NN grandson))
+        (PP (IN of)
+          (NP
+            (NP (NNP Alfonso) (NNP VIII))
+            (PP (IN of)
+              (NP (NNP Castile))))))
+      (, ,)
+      (S
+        (VP (VBG meaning)
+          (SBAR
+            (SBAR (IN that)
+              (S
+                (PP (IN in)
+                  (NP (DT the) (JJ late) (JJ 16th) (NN century)))
+                (NP (PRP he))
+                (VP (VBD was)
+                  (VP (VBN revered)
+                    (PP (IN in)
+                      (NP (CC both)
+                        (NNP France)
+                        (CC and)
+                        (NNP Spain)))))))
+            (, ,) (RB particularly)
+            (SBAR (IN since)
+              (S
+                (NP (DT no) (JJ Spanish) (NN king))
+                (VP (VBD was)
+                  (VP (VBN canonised)
+                    (SBAR (IN until)
+                      (S
+                        (NP
+                          (NP (NNP Ferdinand) (NNP III))
+                          (PP (IN of)
+                            (NP (NNP Castile))))
+                        (VP (VBD received)
+                          (NP (DT the) (NN honour))
+                          (PP (IN in)
+                            (NP (CD 1671))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Louis
+			coref:	IDENT			1	0-0	Louis 
+			name:	PERSON				0-0	Louis 
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	Louis 
+			N-ARG-A2		2-8	the grandson of Alfonso VIII of Castile 
+			N-ARGM-ADV		10-42	meaning that in the late 16th century he was revered in both France and Spain , particularly since no Spanish king was canonised until Ferdinand III of Castile received the honour in 1671 
+	2	the
+	3	grandson
+			sense:	grandson.n.01
+	4	of
+	5	Alfonso
+			name:	PERSON				5-6	Alfonso VIII 
+	6	VIII
+	7	of
+	8	Castile
+			coref:	IDENT			3	8-8	Castile 
+			name:	LOCATION				8-8	Castile 
+	9	,
+	10	meaning
+			sense:	entail.v.01
+			prop:	mean.01
+			V		10-10	meaning 
+			N-ARG-A1		11-42	that in the late 16th century he was revered in both France and Spain , particularly since no Spanish king was canonised until Ferdinand III of Castile received the honour in 1671 
+	11	that
+	12	in
+	13	the
+			name:	DATE				13-16	the late 16th century 
+	14	late
+			sense:	late.a.01
+	15	16th
+			sense:	sixteenth.s.01
+	16	century
+			sense:	century.n.01
+	17	he
+			coref:	IDENT			1	17-17	he 
+	18	was
+			sense:	be.v.01
+			prop:	be.03
+			V		18-18	was 
+	19	revered
+			sense:	reverence.v.01
+			prop:	revere.01
+			V		19-19	revered 
+			N-ARGM-TMP		12-16	in the late 16th century 
+			N-ARG-A1		17-17	he 
+			N-ARGM-LOC		20-24	in both France and Spain 
+			N-ARGM-CAU		26-42	particularly since no Spanish king was canonised until Ferdinand III of Castile received the honour in 1671 
+	20	in
+	21	both
+	22	France
+			coref:	IDENT			2	22-22	France 
+			name:	COUNTRY				22-22	France 
+	23	and
+	24	Spain
+			name:	COUNTRY				24-24	Spain 
+	25	,
+	26	particularly
+			sense:	particularly.r.01
+	27	since
+	28	no
+	29	Spanish
+			name:	NATIONALITY				29-29	Spanish 
+	30	king
+			name:	TITLE				30-30	king 
+			sense:	king.n.01
+	31	was
+			sense:	be.v.01
+			prop:	be.03
+			V		31-31	was 
+	32	canonised
+			sense:	canonize.v.01
+			prop:	canonize.01
+			V		32-32	canonised 
+			N-ARG-A1		28-30	no Spanish king 
+			N-ARGM-TMP		33-42	until Ferdinand III of Castile received the honour in 1671 
+	33	until
+	34	Ferdinand
+			name:	PERSON				34-35	Ferdinand III 
+	35	III
+	36	of
+	37	Castile
+			coref:	IDENT			3	37-37	Castile 
+			name:	LOCATION				37-37	Castile 
+	38	received
+			sense:	receive.v.02
+			prop:	receive.01
+			V		38-38	received 
+			N-ARG-A0		34-37	Ferdinand III of Castile 
+			N-ARG-A1		39-40	the honour 
+			N-ARGM-TMP		41-42	in 1671 
+	39	the
+	40	honour
+			sense:	award.n.02
+	41	in
+	42	1671
+			name:	DATE				42-42	1671 
+	43	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The work was commissioned by Luis de Castilla , the painter 's friend and future executor - the saint was also Luis ' name saint .
+
+
+Treebanked sentence:
+--------------------
+The work was commissioned by Luis de Castilla , the painter 's friend and future executor - the saint was also Luis ' name saint . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN work))
+      (VP (VBD was)
+        (VP (VBN commissioned)
+          (PP (IN by)
+            (NP
+              (NP (NNP Luis) (NNP de) (NNP Castilla))
+              (, ,)
+              (NP
+                (NP (DT the) (NN painter) (POS 's))
+                (NN friend))
+              (CC and)
+              (NP (JJ future) (NN executor)))))))
+    (, -)
+    (NP (DT the) (NN saint))
+    (VP (VBD was)
+      (ADVP (RB also))
+      (NP
+        (NP (NNP Luis) (POS '))
+        (NN name) (NN saint)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			6	0-1	The work 
+	1	work
+			sense:	work.n.02
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	commissioned
+			sense:	commission.v.02
+			prop:	commission.01
+			V		3-3	commissioned 
+			N-ARG-A1		0-1	The work 
+			N-ARG-A0		4-15	by Luis de Castilla , the painter 's friend and future executor 
+	4	by
+	5	Luis
+			name:	PERSON				5-7	Luis de Castilla 
+	6	de
+	7	Castilla
+	8	,
+	9	the
+	10	painter
+			name:	TITLE				10-10	painter 
+			sense:	painter.n.01
+	11	's
+	12	friend
+			sense:	friend.n.01
+	13	and
+	14	future
+			name:	DATE				14-14	future 
+			sense:	future.s.03
+	15	executor
+			name:	TITLE				15-15	executor 
+			sense:	executor.n.01
+	16	-
+	17	the
+	18	saint
+			name:	TITLE				18-18	saint 
+			sense:	saint.n.01
+	19	was
+			sense:	be.v.02
+			prop:	be.01
+			V		19-19	was 
+			N-ARG-A1		17-18	the saint 
+			N-ARGM-ADV		20-20	also 
+			N-ARG-A2		21-24	Luis ' name saint 
+	20	also
+			sense:	besides.r.02
+	21	Luis
+			name:	PERSON				21-21	Luis 
+	22	'
+	23	name
+			sense:	name.n.01
+	24	saint
+			name:	TITLE				24-24	saint 
+			sense:	saint.n.01
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+For a period the work was in the collection of the château de Chenonceau , before being acquired by its present owner in 1903 .
+
+
+Treebanked sentence:
+--------------------
+For a period the work was in the collection of the château de Chenonceau , before being acquired by its present owner in 1903 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (DT a) (NN period)))
+    (NP (DT the) (NN work))
+    (VP (VBD was)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN collection))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (FW château) (FW de) (NNP Chenonceau))
+              (, ,)
+              (PP (IN before)
+                (S
+                  (VP (VBG being)
+                    (VP (VBN acquired)
+                      (PP (IN by)
+                        (NP
+                          (NP (PRP$ its) (JJ present) (NN owner))
+                          (PP (IN in)
+                            (NP (CD 1903))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	For
+	1	a
+	2	period
+			sense:	time_period.n.01
+	3	the
+			coref:	IDENT			6	3-4	the work 
+	4	work
+			sense:	work.n.02
+	5	was
+			sense:	be.v.03
+			prop:	be.01
+			V		5-5	was 
+			N-ARGM-TMP		0-2	For a period 
+			N-ARG-A1		3-4	the work 
+			N-ARG-A2		6-13	in the collection of the château de Chenonceau 
+			N-ARGM-TMP		15-23	before being acquired by its present owner in 1903 
+	6	in
+	7	the
+	8	collection
+			sense:	collection.n.01
+	9	of
+	10	the
+	11	château
+			name:	MISC				11-13	château de Chenonceau 
+	12	de
+	13	Chenonceau
+	14	,
+	15	before
+	16	being
+			sense:	be.v.01
+			prop:	be.03
+			V		16-16	being 
+	17	acquired
+			sense:	get.v.01
+			prop:	acquire.01
+			V		17-17	acquired 
+			N-ARG-A1		3-4	the work 
+			N-ARG-A0		18-21	by its present owner 
+			N-ARGM-TMP		22-23	in 1903 
+	18	by
+	19	its
+			coref:	IDENT			6	19-19	its 
+	20	present
+			name:	DATE				20-20	present 
+			sense:	present.a.01
+	21	owner
+			name:	TITLE				21-21	owner 
+			sense:	owner.n.02
+	22	in
+	23	1903
+			name:	DATE				23-23	1903 
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A recent restoration has revealed a cityscape in the background , showing Toledo .
+
+
+Treebanked sentence:
+--------------------
+A recent restoration has revealed a cityscape in the background , showing Toledo . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT A) (JJ recent) (NN restoration))
+    (VP (VBZ has)
+      (VP (VBN revealed)
+        (NP
+          (NP (DT a) (NN cityscape))
+          (PP (IN in)
+            (NP (DT the) (NN background))))
+        (, ,)
+        (S
+          (VP (VBG showing)
+            (NP (NNP Toledo))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	recent
+			sense:	recent.s.01
+	2	restoration
+			sense:	restoration.n.02
+	3	has
+			sense:	get.v.03
+			prop:	have.01
+			V		3-3	has 
+	4	revealed
+			sense:	uncover.v.01
+			prop:	reveal.01
+			V		4-4	revealed 
+			N-ARG-A0		0-2	A recent restoration 
+			N-ARG-A1		5-12	a cityscape in the background , showing Toledo 
+	5	a
+	6	cityscape
+			sense:	cityscape.n.02
+	7	in
+	8	the
+	9	background
+			sense:	background.n.02
+	10	,
+	11	showing
+			sense:	picture.v.02
+			prop:	show.01
+			V		11-11	showing 
+			N-ARG-A0		5-9	a cityscape in the background 
+			N-ARG-A1		12-12	Toledo 
+	12	Toledo
+			name:	CITY				12-12	Toledo 
+	13	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.0-0	It 
+				2.0-0	It 
+	Chain 1 (IDENT)
+				0.0-1	Saint Louis 
+				2.2-5	Louis IX of France 
+				4.0-0	Louis 
+				4.17-17	he 
+	Chain 2 (IDENT)
+				2.5-5	France 
+				2.31-31	France 
+				4.22-22	France 
+	Chain 3 (IDENT)
+				4.8-8	Castile 
+				4.37-37	Castile 
+	Chain 4 (IDENT)
+				0.9-10	El Greco 
+				0.14-14	his 
+	Chain 5 (IDENT)
+				3.0-1	Gregorio Marañon 
+				2.15-15	his 
+	Chain 6 (IDENT)
+				5.0-1	The work 
+				6.3-4	the work 
+				6.19-19	its 
+

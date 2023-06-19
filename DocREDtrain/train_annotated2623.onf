@@ -1,0 +1,779 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sofie & Cecilia is a historical novel by Canadian author Katherine Ashenburg .
+
+
+Treebanked sentence:
+--------------------
+Sofie & Cecilia is a historical novel by Canadian author Katherine Ashenburg . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Sofie)
+      (CC &)
+      (NNP Cecilia))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ historical) (NN novel))
+        (PP (IN by)
+          (NP
+            (NML (JJ Canadian) (NN author))
+            (NNP Katherine) (NNP Ashenburg)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sofie
+			name:	PERSON				0-0	Sofie 
+	1	&
+	2	Cecilia
+			name:	PERSON				2-2	Cecilia 
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Sofie & Cecilia 
+			N-ARG-A2		4-11	a historical novel by Canadian author Katherine Ashenburg 
+	4	a
+	5	historical
+			sense:	historic.s.01
+	6	novel
+			sense:	novel.n.01
+	7	by
+	8	Canadian
+			coref:	IDENT			0	8-11	Canadian author Katherine Ashenburg 
+			name:	NATIONALITY				8-8	Canadian 
+	9	author
+			name:	TITLE				9-9	author 
+			sense:	writer.n.01
+	10	Katherine
+			name:	PERSON				10-11	Katherine Ashenburg 
+	11	Ashenburg
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The novel drew attention for being Ashenburg 's fiction debut published when she was 72 .
+
+
+Treebanked sentence:
+--------------------
+The novel drew attention for being Ashenburg 's fiction debut published when she was 72 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJ novel))
+    (VP (VBD drew)
+      (NP (NN attention))
+      (PP (IN for)
+        (S
+          (VP (VBG being)
+            (NP
+              (NP
+                (NP (NNP Ashenburg) (POS 's))
+                (NN fiction) (NN debut))
+              (VP (VBN published)
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (PRP she))
+                    (VP (VBD was)
+                      (NP (CD 72)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	novel
+			sense:	fresh.s.04
+	2	drew
+			sense:	draw.v.10
+			prop:	draw.02
+			V		2-2	drew 
+			N-ARG-A0		0-1	The novel 
+			N-ARG-A1		3-3	attention 
+			N-ARGM-CAU		4-14	for being Ashenburg 's fiction debut published when she was 72 
+	3	attention
+			sense:	attention.n.03
+	4	for
+	5	being
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	being 
+			N-ARG-A1		0-1	The novel 
+			N-ARG-A2		6-14	Ashenburg 's fiction debut published when she was 72 
+	6	Ashenburg
+			coref:	IDENT			0	6-7	Ashenburg 's 
+			name:	PERSON				6-6	Ashenburg 
+	7	's
+	8	fiction
+			sense:	fiction.n.01
+	9	debut
+			sense:	introduction.n.01
+	10	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		10-10	published 
+			N-ARG-A1		6-9	Ashenburg 's fiction debut 
+			N-ARGM-TMP		11-14	when she was 72 
+	11	when
+	12	she
+			coref:	IDENT			0	12-12	she 
+	13	was
+			sense:	be.v.01
+			prop:	be.01
+			V		13-13	was 
+			N-ARGM-TMP		11-11	when 
+			N-ARG-A1		12-12	she 
+			N-ARG-A2		14-14	72 
+	14	72
+			name:	NUMBER				14-14	72 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She was inspired to write the book after a visit to Sweden where she learned that despite the fact that they had the same artistic training , Swedish artist Carl Larsson refused to allow his wife Karin to paint after they were married .
+
+
+Treebanked sentence:
+--------------------
+She was inspired to write the book after a visit to Sweden where she learned that despite the fact that they had the same artistic training , Swedish artist Carl Larsson refused to allow his wife Karin to paint after they were married . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD was)
+      (VP (VBN inspired)
+        (S
+          (VP (TO to)
+            (VP (VB write)
+              (NP (DT the) (NN book))
+              (PP (IN after)
+                (NP
+                  (NP (DT a) (NN visit))
+                  (PP (IN to)
+                    (NP (NNP Sweden)))))
+              (SBAR
+                (WHADVP (WRB where))
+                (S
+                  (NP (PRP she))
+                  (VP (VBD learned)
+                    (SBAR (IN that)
+                      (S
+                        (PP (IN despite)
+                          (NP
+                            (NP (DT the) (NN fact))
+                            (SBAR (IN that)
+                              (S
+                                (NP (PRP they))
+                                (VP (VBD had)
+                                  (NP (DT the) (JJ same) (JJ artistic) (NN training)))))))
+                        (, ,)
+                        (NP
+                          (NML (JJ Swedish) (NN artist))
+                          (NNP Carl) (NNP Larsson))
+                        (VP (VBD refused)
+                          (S
+                            (VP (TO to)
+                              (VP (VB allow)
+                                (NP (PRP$ his) (NN wife) (NNP Karin))
+                                (S
+                                  (VP (TO to)
+                                    (VP (VB paint)
+                                      (SBAR (IN after)
+                                        (S
+                                          (NP (PRP they))
+                                          (VP (VBD were)
+                                            (VP (VBN married))))))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	inspired
+			sense:	inspire.v.02
+			prop:	inspire.01
+			V		2-2	inspired 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		3-6	to write the book 
+			N-ARGM-TMP		7-42	after a visit to Sweden where she learned that despite the fact that they had the same artistic training , Swedish artist Carl Larsson refused to allow his wife Karin to paint after they were married 
+	3	to
+	4	write
+			sense:	write.v.01
+			prop:	write.01
+			V		4-4	write 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		5-6	the book 
+	5	the
+	6	book
+			sense:	book.n.01
+	7	after
+	8	a
+	9	visit
+			sense:	visit.n.01
+	10	to
+	11	Sweden
+			name:	COUNTRY				11-11	Sweden 
+	12	where
+	13	she
+			coref:	IDENT			0	13-13	she 
+	14	learned
+			sense:	learn.v.02
+			prop:	learn.01
+			V		14-14	learned 
+			R-ARGM-LOC		12-12	where 
+			N-ARG-A0		13-13	she 
+			N-ARG-A1		15-42	that despite the fact that they had the same artistic training , Swedish artist Carl Larsson refused to allow his wife Karin to paint after they were married 
+	15	that
+	16	despite
+	17	the
+	18	fact
+			sense:	fact.n.01
+	19	that
+	20	they
+	21	had
+			sense:	have.v.01
+			prop:	have.03
+			V		21-21	had 
+			N-ARG-A0		20-20	they 
+			N-ARG-A1		22-25	the same artistic training 
+	22	the
+	23	same
+			sense:	same.a.01
+	24	artistic
+			sense:	artistic.a.01
+	25	training
+			sense:	training.n.01
+	26	,
+	27	Swedish
+			coref:	IDENT			1	27-30	Swedish artist Carl Larsson 
+			name:	NATIONALITY				27-27	Swedish 
+	28	artist
+			name:	TITLE				28-28	artist 
+			sense:	artist.n.01
+	29	Carl
+			name:	PERSON				29-30	Carl Larsson 
+	30	Larsson
+	31	refused
+			sense:	refuse.v.01
+			prop:	refuse.01
+			V		31-31	refused 
+			N-ARGM-ADV		16-25	despite the fact that they had the same artistic training 
+			N-ARG-A0		27-30	Swedish artist Carl Larsson 
+			N-ARG-A1		32-42	to allow his wife Karin to paint after they were married 
+	32	to
+	33	allow
+			sense:	permit.v.01
+			prop:	allow.01
+			V		33-33	allow 
+			N-ARG-A0		27-30	Swedish artist Carl Larsson 
+			N-ARG-A1		34-38	his wife Karin to paint 
+			N-ARGM-TMP		39-42	after they were married 
+	34	his
+			coref:	IDENT			0	34-36	his wife Karin 
+			coref:	IDENT			1	34-34	his 
+	35	wife
+			sense:	wife.n.01
+	36	Karin
+			name:	PERSON				36-36	Karin 
+	37	to
+	38	paint
+			sense:	paint.v.01
+			prop:	paint.02
+			V		38-38	paint 
+			N-ARG-A0		34-36	his wife Karin 
+			N-ARGM-TMP		39-42	after they were married 
+	39	after
+	40	they
+	41	were
+			sense:	be.v.01
+			prop:	be.01
+			V		41-41	were 
+			N-ARG-A1		40-40	they 
+			N-ARG-A2		42-42	married 
+	42	married
+			sense:	marry.v.01
+			prop:	arrive.01
+			V		42-42	married 
+			N-ARG-A1		40-40	they 
+	43	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She initially reached out to her friend , writer Jane Urquhart , hoping she would write about the Larsson 's , but Urquhart instead encouraged Ashenburg to write a novel about them herself .
+
+
+Treebanked sentence:
+--------------------
+She initially reached out to her friend , writer Jane Urquhart , hoping she would write about the Larsson 's , but Urquhart instead encouraged Ashenburg to write a novel about them herself . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP She))
+      (ADVP (RB initially))
+      (VP (VBD reached)
+        (PRT (RP out))
+        (PP (IN to)
+          (NP
+            (NP (PRP$ her) (NN friend))
+            (, ,)
+            (NP (NN writer) (NNP Jane) (NNP Urquhart))
+            (, ,)))
+        (S
+          (VP (VBG hoping)
+            (SBAR
+              (S
+                (NP (PRP she))
+                (VP (MD would)
+                  (VP (VB write)
+                    (PP (IN about)
+                      (NP (DT the) (NNP Larsson) (POS 's)))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (NNP Urquhart))
+      (ADVP (RB instead))
+      (VP (VBD encouraged)
+        (NP (NNP Ashenburg))
+        (S
+          (VP (TO to)
+            (VP (VB write)
+              (NP (DT a) (NN novel))
+              (PP (IN about)
+                (NP (PRP them)))
+              (NP (PRP herself)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	initially
+			sense:	initially.r.01
+	2	reached
+			sense:	reach.v.04
+			prop:	reach.03
+			V		2-2	reached 
+			N-ARG-A0		0-0	She 
+			N-ARGM-TMP		1-1	initially 
+			N-ARGM-DIR		3-3	out 
+			N-ARG-A2		4-10	to her friend , writer Jane Urquhart 
+			N-ARGM-ADV		12-19	hoping she would write about the Larsson 's 
+	3	out
+	4	to
+	5	her
+			coref:	IDENT			0	5-5	her 
+	6	friend
+			sense:	friend.n.01
+	7	,
+	8	writer
+			name:	TITLE				8-8	writer 
+			sense:	writer.n.01
+	9	Jane
+			name:	PERSON				9-10	Jane Urquhart 
+	10	Urquhart
+	11	,
+	12	hoping
+			sense:	hope.v.01
+			prop:	hope.01
+			V		12-12	hoping 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		13-19	she would write about the Larsson 's 
+	13	she
+			coref:	IDENT			0	13-13	she 
+	14	would
+	15	write
+			sense:	write.v.01
+			prop:	write.01
+			V		15-15	write 
+			N-ARG-A0		13-13	she 
+			N-ARGM-MOD		14-14	would 
+			N-ARG-A1		16-19	about the Larsson 's 
+	16	about
+	17	the
+			coref:	IDENT			1	17-19	the Larsson 's 
+	18	Larsson
+			name:	PERSON				18-18	Larsson 
+	19	's
+	20	,
+	21	but
+	22	Urquhart
+			name:	PERSON				22-22	Urquhart 
+	23	instead
+			sense:	rather.r.01
+	24	encouraged
+			sense:	promote.v.01
+			prop:	encourage.01
+			V		24-24	encouraged 
+			N-ARG-A0		22-22	Urquhart 
+			N-ARGM-ADV		23-23	instead 
+			N-ARG-A1		25-25	Ashenburg 
+			N-ARG-A2		26-32	to write a novel about them herself 
+	25	Ashenburg
+			coref:	IDENT			0	25-25	Ashenburg 
+			name:	PERSON				25-25	Ashenburg 
+	26	to
+	27	write
+			sense:	write.v.01
+			prop:	write.01
+			V		27-27	write 
+			N-ARG-A0		25-25	Ashenburg 
+			N-ARG-A1		28-31	a novel about them 
+			N-ARGM-REC		32-32	herself 
+	28	a
+	29	novel
+			sense:	novel.n.01
+	30	about
+	31	them
+	32	herself
+			coref:	IDENT			0	32-32	herself 
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A work of fiction , the titular characters are loosely based on Karin Bergöö Larsson wife of Swedish artist Carl Larsson and Emma Lamm , wife of Swedish artist Anders Zorn .
+
+
+Treebanked sentence:
+--------------------
+A work of fiction , the titular characters are loosely based on Karin Bergöö Larsson wife of Swedish artist Carl Larsson and Emma Lamm , wife of Swedish artist Anders Zorn . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN work))
+      (PP (IN of)
+        (NP
+          (NP (NN fiction))
+          (, ,)
+          (NP (DT the) (JJ titular) (NNS characters)))))
+    (VP (VBP are)
+      (ADJP (RB loosely) (VBN based)
+        (PP (IN on)
+          (NP
+            (NP
+              (NP
+                (NML (NNP Karin) (NNP Bergöö) (NNP Larsson))
+                (NN wife))
+              (PP (IN of)
+                (NP
+                  (NML (JJ Swedish) (NN artist))
+                  (NNP Carl) (NNP Larsson))))
+            (CC and)
+            (NP
+              (NP (NNP Emma) (NNP Lamm))
+              (, ,)
+              (NP
+                (NP (NN wife))
+                (PP (IN of)
+                  (NP
+                    (NML (JJ Swedish) (NN artist))
+                    (NNP Anders) (NNP Zorn)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	work
+			sense:	work.n.02
+	2	of
+	3	fiction
+			sense:	fiction.n.01
+	4	,
+	5	the
+	6	titular
+			sense:	titular.a.03
+	7	characters
+			sense:	fictional_character.n.01
+	8	are
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	are 
+	9	loosely
+			sense:	broadly.r.01
+	10	based
+			sense:	establish.v.08
+			prop:	base.02
+			V		10-10	based 
+			N-ARGM-ADV		0-3	A work of fiction 
+			N-ARG-A1		5-7	the titular characters 
+			N-ARGM-MNR		9-9	loosely 
+			N-ARG-A2		11-30	on Karin Bergöö Larsson wife of Swedish artist Carl Larsson and Emma Lamm , wife of Swedish artist Anders Zorn 
+	11	on
+	12	Karin
+			coref:	IDENT			1	12-14	Karin Bergöö Larsson 
+			name:	PERSON				12-14	Karin Bergöö Larsson 
+	13	Bergöö
+	14	Larsson
+	15	wife
+			sense:	wife.n.01
+	16	of
+	17	Swedish
+			coref:	IDENT			1	17-20	Swedish artist Carl Larsson 
+			name:	NATIONALITY				17-17	Swedish 
+	18	artist
+			name:	TITLE				18-18	artist 
+			sense:	artist.n.01
+	19	Carl
+			name:	PERSON				19-20	Carl Larsson 
+	20	Larsson
+	21	and
+	22	Emma
+			coref:	IDENT			2	22-23	Emma Lamm 
+			name:	PERSON				22-23	Emma Lamm 
+	23	Lamm
+	24	,
+	25	wife
+			sense:	wife.n.01
+	26	of
+	27	Swedish
+			name:	NATIONALITY				27-27	Swedish 
+	28	artist
+			name:	TITLE				28-28	artist 
+			sense:	artist.n.01
+	29	Anders
+			name:	PERSON				29-30	Anders Zorn 
+	30	Zorn
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The novel follows the lives of the two titular characters , Sofie Olsson ( based on Karin Bergöö Larsson ) and Cecilia Vogt ( based on Emma Lamm ) , Swedish women who are both married to artists , who meet in their 30s and develop a life long friendship .
+
+
+Treebanked sentence:
+--------------------
+The novel follows the lives of the two titular characters , Sofie Olsson ( based on Karin Bergöö Larsson ) and Cecilia Vogt ( based on Emma Lamm ) , Swedish women who are both married to artists , who meet in their 30s and develop a life long friendship . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJ novel))
+    (VP (VBZ follows)
+      (NP
+        (NP (DT the) (NNS lives))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (DT the) (CD two) (JJ titular) (NNS characters))
+              (, ,)
+              (NP (NNP Sofie) (NNP Olsson))
+              (PRN (-LRB- -LRB-)
+                (S
+                  (VP (VBN based)
+                    (PP (IN on)
+                      (NP (NNP Karin) (NNP Bergöö) (NNP Larsson)))))
+                (-RRB- -RRB-)))
+            (CC and)
+            (NP
+              (NP (NNP Cecilia) (NNP Vogt))
+              (-LRB- -LRB-)
+              (VP (VBN based)
+                (PP (IN on)
+                  (NP (NNP Emma) (NNP Lamm))))
+              (-RRB- -RRB-))
+            (, ,)
+            (NP
+              (NP (JJ Swedish) (NNS women))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBP are) (DT both)
+                    (VP (VBN married)
+                      (PP (IN to)
+                        (NP (NNS artists))))))))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP
+                  (VP (VBP meet)
+                    (PP (IN in)
+                      (NP (PRP$ their) (NNS 30s))))
+                  (CC and)
+                  (VP (VB develop)
+                    (NP (DT a)
+                      (ADJP (NN life) (JJ long))
+                      (NN friendship))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	novel
+			sense:	fresh.s.04
+	2	follows
+			sense:	trace.v.01
+			prop:	follow.02
+			V		2-2	follows 
+			N-ARG-A0		0-1	The novel 
+			N-ARG-A1		3-49	the lives of the two titular characters , Sofie Olsson ( based on Karin Bergöö Larsson ) and Cecilia Vogt ( based on Emma Lamm ) , Swedish women who are both married to artists , who meet in their 30s and develop a life long friendship 
+	3	the
+	4	lives
+			sense:	life.n.03
+	5	of
+	6	the
+	7	two
+			name:	NUMBER				7-7	two 
+	8	titular
+			sense:	titular.a.03
+	9	characters
+			sense:	fictional_character.n.01
+	10	,
+	11	Sofie
+			name:	PERSON				11-12	Sofie Olsson 
+	12	Olsson
+	13	(
+	14	based
+			sense:	establish.v.08
+			prop:	base.02
+			V		14-14	based 
+			N-ARG-A1		11-12	Sofie Olsson 
+			N-ARG-A2		15-18	on Karin Bergöö Larsson 
+	15	on
+	16	Karin
+			coref:	IDENT			1	16-18	Karin Bergöö Larsson 
+			name:	PERSON				16-18	Karin Bergöö Larsson 
+	17	Bergöö
+	18	Larsson
+	19	)
+	20	and
+	21	Cecilia
+			name:	PERSON				21-22	Cecilia Vogt 
+	22	Vogt
+	23	(
+	24	based
+			sense:	establish.v.08
+			prop:	base.02
+			V		24-24	based 
+			N-ARG-A1		21-22	Cecilia Vogt 
+			N-ARG-A2		25-27	on Emma Lamm 
+	25	on
+	26	Emma
+			coref:	IDENT			2	26-27	Emma Lamm 
+			name:	PERSON				26-27	Emma Lamm 
+	27	Lamm
+	28	)
+	29	,
+	30	Swedish
+			name:	NATIONALITY				30-30	Swedish 
+	31	women
+			sense:	woman.n.01
+	32	who
+	33	are
+			sense:	be.v.01
+			prop:	be.01
+			V		33-33	are 
+			N-ARG-A1		30-31	Swedish women 
+			R-ARG-A1		32-32	who 
+			N-ARG-A2		35-49	married to artists , who meet in their 30s and develop a life long friendship 
+	34	both
+	35	married
+			sense:	marry.v.01
+			prop:	arrive.01
+			V		35-35	married 
+			N-ARG-A1		30-31	Swedish women 
+			R-ARG-A1		32-32	who 
+			N-ARGM-REC		34-34	both 
+			N-ARG-A2		36-49	to artists , who meet in their 30s and develop a life long friendship 
+	36	to
+	37	artists
+			sense:	artist.n.01
+	38	,
+	39	who
+	40	meet
+			sense:	meet.v.01
+			prop:	meet.02
+			V		40-40	meet 
+			N-ARG-A0		37-37	artists 
+			R-ARG-A0		39-39	who 
+			N-ARGM-TMP		41-43	in their 30s 
+	41	in
+	42	their
+	43	30s
+			sense:	thirty.n.01
+	44	and
+	45	develop
+			sense:	develop.v.03
+			prop:	develop.01
+			V		45-45	develop 
+			N-ARG-A1		37-37	artists 
+			R-ARG-A1		39-39	who 
+			N-ARG-A2		46-49	a life long friendship 
+	46	a
+	47	life
+			sense:	life.n.05
+	48	long
+			sense:	long.a.01
+	49	friendship
+			sense:	friendship.n.01
+	50	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.8-11	Canadian author Katherine Ashenburg 
+				1.6-7	Ashenburg 's 
+				1.12-12	she 
+				2.0-0	She 
+				2.13-13	she 
+				2.34-36	his wife Karin 
+				3.0-0	She 
+				3.5-5	her 
+				3.13-13	she 
+				3.25-25	Ashenburg 
+				3.32-32	herself 
+	Chain 1 (IDENT)
+				2.27-30	Swedish artist Carl Larsson 
+				2.34-34	his 
+				3.17-19	the Larsson 's 
+				4.12-14	Karin Bergöö Larsson 
+				4.17-20	Swedish artist Carl Larsson 
+				5.16-18	Karin Bergöö Larsson 
+	Chain 2 (IDENT)
+				4.22-23	Emma Lamm 
+				5.26-27	Emma Lamm 
+

@@ -1,0 +1,467 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+While the City Sleeps , We Rule the Streets is the debut studio album by Cobra Starship .
+
+
+Treebanked sentence:
+--------------------
+While the City Sleeps , We Rule the Streets is the debut studio album by Cobra Starship . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (DT the) (NNP City))
+        (VP (VBZ Sleeps))))
+    (, ,)
+    (NP (PRP We))
+    (VP (VBP Rule)
+      (SBAR
+        (S
+          (NP (DT the) (NNPS Streets))
+          (VP (VBZ is)
+            (NP
+              (NP (DT the) (NN debut) (NN studio) (NN album))
+              (PP (IN by)
+                (NP (NNP Cobra) (NNP Starship))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	While
+	1	the
+			coref:	IDENT			1	1-2	the City 
+	2	City
+	3	Sleeps
+			sense:	sleep.v.01
+			prop:	sleep.01
+			V		3-3	Sleeps 
+			N-ARG-A0		1-2	the City 
+	4	,
+	5	We
+	6	Rule
+			sense:	govern.v.03
+			prop:	rule.03
+			V		6-6	Rule 
+			N-ARGM-TMP		0-3	While the City Sleeps 
+			N-ARG-A0		5-5	We 
+			N-ARG-A1		7-8	the Streets 
+	7	the
+	8	Streets
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	While the City Sleeps , We Rule the Streets 
+			N-ARG-A2		10-16	the debut studio album by Cobra Starship 
+	10	the
+	11	debut
+			sense:	introduction.n.01
+	12	studio
+			sense:	studio.n.01
+	13	album
+			sense:	album.n.01
+	14	by
+	15	Cobra
+			coref:	IDENT			2	15-16	Cobra Starship 
+	16	Starship
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was released on October 10 , 2006 in the US , and on October 17 , 2006 in Canada .
+
+
+Treebanked sentence:
+--------------------
+It was released on October 10 , 2006 in the US , and on October 17 , 2006 in Canada . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN released)
+        (PP
+          (PP (IN on)
+            (NP
+              (NP (NNP October) (CD 10) (, ,) (CD 2006))
+              (PP (IN in)
+                (NP (DT the) (NNP US)))))
+          (, ,)
+          (CC and)
+          (PP (IN on)
+            (NP
+              (NP (NNP October) (CD 17) (, ,) (CD 2006))
+              (PP (IN in)
+                (NP (NNP Canada))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		2-2	released 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		3-7	on October 10 , 2006 
+			N-ARGM-LOC		8-10	in the US 
+			N-ARGM-TMP		13-17	on October 17 , 2006 
+	3	on
+	4	October
+			name:	DATE				4-7	October 10 , 2006 
+	5	10
+	6	,
+	7	2006
+	8	in
+	9	the
+	10	US
+			name:	COUNTRY				10-10	US 
+	11	,
+	12	and
+	13	on
+	14	October
+			name:	DATE				14-17	October 17 , 2006 
+	15	17
+	16	,
+	17	2006
+	18	in
+	19	Canada
+			name:	COUNTRY				19-19	Canada 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A rough clip of " Send My Love to the Dancefloor , I 'll See You In Hell ( Hey Mister DJ ) " , a finished version of " Snakes on a Plane ( Bring It ) " , and " The Church of Hot Addiction " were uploaded onto Cobra Starship 's PureVolume site .
+
+
+Treebanked sentence:
+--------------------
+A rough clip of " Send My Love to the Dancefloor , I 'll See You In Hell ( Hey Mister DJ ) " , a finished version of " Snakes on a Plane ( Bring It ) " , and " The Church of Hot Addiction " were uploaded onto Cobra Starship 's PureVolume site . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT A) (JJ rough) (NN clip))
+        (PP (IN of) (`` ")
+          (S
+            (S
+              (VP (VB Send)
+                (NP (PRP$ My) (NN Love))
+                (PP (IN to)
+                  (NP (DT the) (NNP Dancefloor)))))
+            (, ,)
+            (S
+              (NP (PRP I))
+              (VP
+                (VP (MD 'll)
+                  (VP (VB See)
+                    (S
+                      (NP (PRP You))
+                      (PP (IN In)
+                        (NP (NN Hell))))))
+                (NP (-LRB- -LRB-)
+                  (FRAG
+                    (INTJ (UH Hey))
+                    (NP (NNP Mister) (NNP DJ)))
+                  (-RRB- -RRB-)))))
+          ('' ")))
+      (, ,)
+      (NP
+        (NP (DT a) (JJ finished) (NN version))
+        (PP (IN of) (`` ")
+          (NP
+            (NP (NNS Snakes))
+            (PP (IN on)
+              (NP (DT a) (NN Plane)))
+            (PRN (-LRB- -LRB-)
+              (S
+                (VP (VB Bring)
+                  (NP (PRP It))))
+              (-RRB- -RRB-)))
+          ('' ")))
+      (, ,)
+      (CC and)
+      (NP (`` ")
+        (NP (DT The) (NNP Church))
+        (PP (IN of)
+          (NP (NNP Hot) (NNP Addiction)))
+        ('' ")))
+    (VP (VBD were)
+      (VP (VBN uploaded)
+        (PP (IN onto)
+          (NP
+            (NP (NNP Cobra) (NNP Starship) (POS 's))
+            (NNP PureVolume) (NN site)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	rough
+			sense:	rough.s.12
+	2	clip
+			sense:	time.n.01
+	3	of
+	4	"
+	5	Send
+			sense:	mail.v.02
+			prop:	send.01
+			V		5-5	Send 
+			N-ARG-A1		6-7	My Love 
+			N-ARG-A2		8-10	to the Dancefloor 
+	6	My
+	7	Love
+			sense:	love.n.01
+	8	to
+	9	the
+	10	Dancefloor
+	11	,
+	12	I
+	13	'll
+	14	See
+			sense:	meet.v.01
+			prop:	see.01
+			V		14-14	See 
+			N-ARG-A0		12-12	I 
+			N-ARGM-MOD		13-13	'll 
+			N-ARG-A1		15-15	You 
+			N-ARGM-LOC		16-17	In Hell 
+			N-ARGM-DIS		19-21	Hey Mister DJ 
+	15	You
+	16	In
+	17	Hell
+			sense:	hell.n.03
+	18	(
+	19	Hey
+	20	Mister
+	21	DJ
+			name:	TITLE				21-21	DJ 
+	22	)
+	23	"
+	24	,
+	25	a
+	26	finished
+			sense:	finished.a.01
+	27	version
+			sense:	version.n.02
+	28	of
+	29	"
+	30	Snakes
+			sense:	snake.n.01
+	31	on
+	32	a
+			coref:	IDENT			0	32-33	a Plane 
+	33	Plane
+			sense:	airplane.n.01
+	34	(
+	35	Bring
+			sense:	bring.v.01
+			prop:	bring.01
+			V		35-35	Bring 
+			N-ARG-A1		36-36	It 
+	36	It
+			coref:	IDENT			0	36-36	It 
+	37	)
+	38	"
+	39	,
+	40	and
+	41	"
+	42	The
+	43	Church
+	44	of
+	45	Hot
+	46	Addiction
+	47	"
+	48	were
+			sense:	be.v.01
+			prop:	be.03
+			V		48-48	were 
+	49	uploaded
+			sense:	upload.v.01
+			prop:	upload.01
+			V		49-49	uploaded 
+			N-ARG-A1		0-47	A rough clip of " Send My Love to the Dancefloor , I 'll See You In Hell ( Hey Mister DJ ) " , a finished version of " Snakes on a Plane ( Bring It ) " , and " The Church of Hot Addiction " 
+			N-ARG-A2		50-55	onto Cobra Starship 's PureVolume site 
+	50	onto
+	51	Cobra
+			coref:	IDENT			2	51-53	Cobra Starship 's 
+	52	Starship
+	53	's
+	54	PureVolume
+	55	site
+			sense:	web_site.n.01
+	56	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" The Church of Hot Addiction " was also used as the theme song for the WWE 's Great American Bash 2007 .
+
+
+Treebanked sentence:
+--------------------
+" The Church of Hot Addiction " was also used as the theme song for the WWE 's Great American Bash 2007 . 
+
+Tree:
+-----
+(ROOT
+  (S (`` ")
+    (NP
+      (NP (DT The) (NNP Church))
+      (PP (IN of)
+        (NP (NNP Hot) (NNP Addiction))))
+    ('' ")
+    (VP (VBD was)
+      (ADVP (RB also))
+      (VP (VBN used)
+        (PP (IN as)
+          (NP
+            (NP (DT the) (NN theme) (NN song))
+            (PP (IN for)
+              (NP
+                (NP (DT the) (NNP WWE) (POS 's))
+                (JJ Great) (JJ American) (NN Bash)))
+            (NP-TMP (CD 2007))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	The
+	2	Church
+	3	of
+	4	Hot
+	5	Addiction
+	6	"
+	7	was
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	was 
+	8	also
+			sense:	besides.r.02
+	9	used
+			sense:	use.v.01
+			prop:	use.01
+			V		9-9	used 
+			N-ARG-A1		0-6	" The Church of Hot Addiction " 
+			N-ARGM-ADV		8-8	also 
+			N-ARG-A2		10-21	as the theme song for the WWE 's Great American Bash 2007 
+	10	as
+	11	the
+	12	theme
+			sense:	theme.n.03
+	13	song
+			sense:	song.n.01
+	14	for
+	15	the
+	16	WWE
+	17	's
+	18	Great
+			name:	MISC				18-18	Great 
+			sense:	great.s.02
+	19	American
+			name:	NATIONALITY				19-19	American 
+	20	Bash
+			name:	MISC				20-20	Bash 
+			sense:	bash.n.02
+	21	2007
+			name:	DATE				21-21	2007 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It has sold more than 69,000 copies to date .
+
+
+Treebanked sentence:
+--------------------
+It has sold more than 69,000 copies to date . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ has)
+      (VP (VBN sold)
+        (NP
+          (QP (JJR more) (IN than) (CD 69,000))
+          (NNS copies))
+        (PP (IN to)
+          (NP (NN date)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	sold
+			sense:	sell.v.02
+			prop:	sell.01
+			V		2-2	sold 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		3-6	more than 69,000 copies 
+			N-ARGM-TMP		7-8	to date 
+	3	more
+			sense:	more.a.02
+	4	than
+	5	69,000
+			name:	NUMBER				5-5	69,000 
+	6	copies
+			sense:	copy.n.03
+	7	to
+	8	date
+			sense:	date.n.05
+	9	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.32-33	a Plane 
+				2.36-36	It 
+	Chain 1 (IDENT)
+				0.1-2	the City 
+				1.0-0	It 
+				4.0-0	It 
+	Chain 2 (IDENT)
+				2.51-53	Cobra Starship 's 
+				0.15-16	Cobra Starship 
+

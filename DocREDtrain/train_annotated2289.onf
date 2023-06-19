@@ -1,0 +1,563 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Nashe Vremya ( , Our Time ) was a literary and political newspaper published in 1860 - 1863 in Moscow by Nikolai Pavlov .
+
+
+Treebanked sentence:
+--------------------
+Nashe Vremya ( , Our Time ) was a literary and political newspaper published in 1860 - 1863 in Moscow by Nikolai Pavlov . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Nashe) (NNP Vremya))
+      (-LRB- -LRB-)
+      (VP (, ,)
+        (S
+          (NP
+            (NP (PRP$ Our))
+            (SBAR
+              (S
+                (NP (NN Time))
+                (-RRB- -RRB-)
+                (VP (VBD was)
+                  (NP (DT a)
+                    (ADJP (JJ literary)
+                      (CC and)
+                      (JJ political))
+                    (NN newspaper)))))))))
+    (VP (VBN published)
+      (PP (IN in)
+        (NP
+          (QP (CD 1860) (HYPH -) (CD 1863))))
+      (PP (IN in)
+        (NP (NNP Moscow)))
+      (PP (IN by)
+        (NP (NNP Nikolai) (NNP Pavlov))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Nashe
+			coref:	IDENT			0	0-1	Nashe Vremya 
+			name:	ORGANIZATION				0-1	Nashe Vremya 
+	1	Vremya
+	2	(
+	3	,
+	4	Our
+	5	Time
+			sense:	time.n.03
+	6	)
+	7	was
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	was 
+			N-ARG-A1		0-6	Nashe Vremya ( , Our Time ) 
+			N-ARG-A2		8-22	a literary and political newspaper published in 1860 - 1863 in Moscow by Nikolai Pavlov 
+	8	a
+	9	literary
+			sense:	literary.a.01
+	10	and
+	11	political
+			sense:	political.a.01
+	12	newspaper
+			sense:	newspaper.n.01
+	13	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		13-13	published 
+			N-ARG-A1		8-12	a literary and political newspaper 
+			N-ARGM-TMP		14-17	in 1860 - 1863 
+			N-ARGM-LOC		18-19	in Moscow 
+			N-ARG-A0		20-22	by Nikolai Pavlov 
+	14	in
+	15	1860
+			name:	DATE				15-15	1860 
+	16	-
+			name:	DURATION				16-16	- 
+	17	1863
+			name:	DATE				17-17	1863 
+	18	in
+	19	Moscow
+			name:	CITY				19-19	Moscow 
+	20	by
+	21	Nikolai
+			coref:	IDENT			1	21-22	Nikolai Pavlov 
+			name:	PERSON				21-22	Nikolai Pavlov 
+	22	Pavlov
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It started out as a liberal weekly , then , after some talks that Pavlov had had with the then Minister of Interior Pyotr Valuyev ( which involved the promise of the financial support , among other things ) , in early 1862 became a conservative daily , whose agenda was formulated in the January issue by Boris Chicherin in his article " Measure and Limits " ( Мера и границы ) .
+
+
+Treebanked sentence:
+--------------------
+It started out as a liberal weekly , then , after some talks that Pavlov had had with the then Minister of Interior Pyotr Valuyev ( which involved the promise of the financial support , among other things ) , in early 1862 became a conservative daily , whose agenda was formulated in the January issue by Boris Chicherin in his article " Measure and Limits " ( Мера и границы ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD started)
+      (PRT (RP out))
+      (PP (IN as)
+        (NP (DT a) (JJ liberal) (NN weekly)))
+      (, ,)
+      (ADVP (RB then))
+      (, ,)
+      (SBAR (IN after)
+        (S
+          (NP
+            (NP (DT some) (NNS talks))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (NP (NNP Pavlov))
+                (VP (VBD had)
+                  (VP (VBN had)
+                    (PP (IN with)
+                      (NP
+                        (NP
+                          (NP (DT the)
+                            (RRC
+                              (ADVP (RB then))
+                              (NP
+                                (NP (NNP Minister))
+                                (PP (IN of)
+                                  (NP (NNP Interior) (NNP Pyotr) (NNP Valuyev))))))
+                          (-LRB- -LRB-)
+                          (SBAR
+                            (WHNP (WDT which))
+                            (S
+                              (VP (VBD involved)
+                                (NP
+                                  (NP (DT the) (NN promise))
+                                  (PP (IN of)
+                                    (NP (DT the) (JJ financial) (NN support))))
+                                (, ,)
+                                (PP (IN among)
+                                  (NP (JJ other) (NNS things))))))
+                          (-RRB- -RRB-))
+                        (, ,)
+                        (PP (IN in)
+                          (NP (JJ early) (CD 1862))))))))))
+          (VP (VBD became)
+            (NP
+              (NP (DT a) (JJ conservative) (JJ daily))
+              (, ,)
+              (SBAR
+                (WHNP (WP$ whose) (NN agenda))
+                (S
+                  (VP (VBD was)
+                    (VP (VBN formulated)
+                      (PP (IN in)
+                        (NP (DT the) (NNP January) (NN issue)))
+                      (PP (IN by)
+                        (NP
+                          (NP (NNP Boris) (NNP Chicherin))
+                          (PP (IN in)
+                            (NP
+                              (NP (PRP$ his) (NN article) ('' ") (NN Measure))
+                              (CC and)
+                              (NP
+                                (NP (NNS Limits))
+                                ('' ") (-LRB- -LRB-)
+                                (NP (NNP Мера) (NNP и) (NNP границы))
+                                (-RRB- -RRB-)))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	started
+			sense:	get_down.v.07
+			prop:	start.05
+			V		1-1	started 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		3-6	as a liberal weekly 
+	2	out
+	3	as
+	4	a
+	5	liberal
+			name:	IDEOLOGY				5-5	liberal 
+			sense:	liberal.s.02
+	6	weekly
+			name:	SET				6-6	weekly 
+			sense:	weekly.n.01
+	7	,
+	8	then
+			sense:	then.r.01
+	9	,
+	10	after
+	11	some
+	12	talks
+			sense:	talk.n.01
+	13	that
+	14	Pavlov
+			coref:	IDENT			1	14-14	Pavlov 
+			name:	PERSON				14-14	Pavlov 
+	15	had
+			sense:	experience.v.03
+			prop:	have.01
+			V		15-15	had 
+	16	had
+			sense:	experience.v.03
+			prop:	have.03
+			V		16-16	had 
+			N-ARG-A1		11-12	some talks 
+			R-ARG-A1		13-13	that 
+			N-ARG-A0		14-14	Pavlov 
+			N-ARGM-COM		17-24	with the then Minister of Interior Pyotr Valuyev 
+	17	with
+	18	the
+	19	then
+			sense:	then.r.03
+	20	Minister
+			name:	TITLE				20-20	Minister 
+	21	of
+	22	Interior
+	23	Pyotr
+			name:	PERSON				23-24	Pyotr Valuyev 
+	24	Valuyev
+	25	(
+	26	which
+	27	involved
+			sense:	involve.v.01
+			prop:	involve.01
+			V		27-27	involved 
+			N-ARG-A2		11-24	some talks that Pavlov had had with the then Minister of Interior Pyotr Valuyev 
+			R-ARG-A2		26-26	which 
+			N-ARG-A1		28-37	the promise of the financial support , among other things 
+	28	the
+	29	promise
+			sense:	promise.n.01
+	30	of
+	31	the
+	32	financial
+			sense:	fiscal.a.01
+	33	support
+			sense:	support.n.01
+	34	,
+	35	among
+	36	other
+			sense:	other.a.01
+	37	things
+			sense:	thing.n.01
+	38	)
+	39	,
+	40	in
+	41	early
+			name:	DATE				41-42	early 1862 
+			sense:	early.a.01
+	42	1862
+	43	became
+			sense:	become.v.02
+			prop:	become.01
+			V		43-43	became 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		8-8	then 
+			N-ARGM-TMP		10-38	after some talks that Pavlov had had with the then Minister of Interior Pyotr Valuyev ( which involved the promise of the financial support , among other things ) 
+			N-ARGM-TMP		40-42	in early 1862 
+			N-ARG-A2		44-71	a conservative daily , whose agenda was formulated in the January issue by Boris Chicherin in his article " Measure and Limits " ( Мера и границы ) 
+	44	a
+	45	conservative
+			name:	IDEOLOGY				45-45	conservative 
+			sense:	conservative.s.02
+	46	daily
+			name:	SET				46-46	daily 
+			sense:	daily.s.01
+	47	,
+	48	whose
+	49	agenda
+			sense:	agenda.n.01
+	50	was
+			sense:	be.v.01
+			prop:	be.03
+			V		50-50	was 
+	51	formulated
+			sense:	give_voice.v.01
+			prop:	formulate.01
+			V		51-51	formulated 
+			N-ARG-A1		44-46	a conservative daily 
+			R-ARG-A1		48-49	whose agenda 
+			N-ARGM-LOC		52-55	in the January issue 
+			N-ARG-A0		56-58	by Boris Chicherin 
+			N-ARGM-LOC		59-71	in his article " Measure and Limits " ( Мера и границы ) 
+	52	in
+	53	the
+	54	January
+			name:	DATE				54-54	January 
+	55	issue
+			sense:	issue.n.02
+	56	by
+	57	Boris
+			coref:	IDENT			2	57-58	Boris Chicherin 
+			name:	PERSON				57-58	Boris Chicherin 
+	58	Chicherin
+	59	in
+	60	his
+			coref:	IDENT			2	60-60	his 
+	61	article
+			sense:	article.n.01
+	62	"
+	63	Measure
+			sense:	standard.n.01
+	64	and
+	65	Limits
+			sense:	limit.n.01
+	66	"
+	67	(
+	68	Мера
+	69	и
+	70	границы
+	71	)
+	72	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The newspaper proclaimed itself to be the ' liberally conservative ' publication aiming at guarding the interests of the Russian dvoryanstvo as " the only class where the fire of the enlightenment is being kept . "
+
+
+Treebanked sentence:
+--------------------
+The newspaper proclaimed itself to be the ' liberally conservative ' publication aiming at guarding the interests of the Russian dvoryanstvo as " the only class where the fire of the enlightenment is being kept . " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN newspaper))
+    (VP (VBD proclaimed)
+      (NP (PRP itself))
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (NP
+              (NP (DT the)
+                (ADJP (`` ') (RB liberally) (JJ conservative) ('' '))
+                (NN publication))
+              (VP (VBG aiming)
+                (PP (IN at)
+                  (S
+                    (VP (VBG guarding)
+                      (NP
+                        (NP (DT the) (NNS interests))
+                        (PP (IN of)
+                          (NP (DT the) (JJ Russian) (NN dvoryanstvo))))
+                      (PP (IN as) (`` ")
+                        (NP
+                          (NP (DT the) (JJ only) (NN class))
+                          (SBAR
+                            (WHADVP (WRB where))
+                            (S
+                              (NP
+                                (NP (DT the) (NN fire))
+                                (PP (IN of)
+                                  (NP (DT the) (NN enlightenment))))
+                              (VP (VBZ is)
+                                (VP (VBG being)
+                                  (VP (VBN kept)))))))))))))))))
+    (. .) ('' ")))
+
+
+Leaves:
+-------
+	0	The
+	1	newspaper
+			sense:	newspaper.n.01
+	2	proclaimed
+			sense:	proclaim.v.02
+			prop:	proclaim.01
+			V		2-2	proclaimed 
+			N-ARG-A0		0-1	The newspaper 
+			N-ARG-A1		3-34	itself to be the ' liberally conservative ' publication aiming at guarding the interests of the Russian dvoryanstvo as " the only class where the fire of the enlightenment is being kept 
+	3	itself
+	4	to
+	5	be
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	be 
+			N-ARG-A1		3-3	itself 
+			N-ARG-A2		6-34	the ' liberally conservative ' publication aiming at guarding the interests of the Russian dvoryanstvo as " the only class where the fire of the enlightenment is being kept 
+	6	the
+	7	'
+	8	liberally
+			sense:	liberally.r.02
+	9	conservative
+			name:	IDEOLOGY				9-9	conservative 
+			sense:	conservative.s.02
+	10	'
+	11	publication
+			sense:	publication.n.04
+	12	aiming
+			sense:	aim.v.02
+			prop:	aim.02
+			V		12-12	aiming 
+			N-ARG-A0		6-11	the ' liberally conservative ' publication 
+			N-ARG-A2		13-34	at guarding the interests of the Russian dvoryanstvo as " the only class where the fire of the enlightenment is being kept 
+	13	at
+	14	guarding
+			sense:	guard.v.02
+			prop:	guard.01
+			V		14-14	guarding 
+			N-ARG-A0		6-11	the ' liberally conservative ' publication 
+			N-ARG-A1		15-20	the interests of the Russian dvoryanstvo 
+			N-ARGM-PRD		21-34	as " the only class where the fire of the enlightenment is being kept 
+	15	the
+	16	interests
+			sense:	sake.n.01
+	17	of
+	18	the
+	19	Russian
+			name:	NATIONALITY				19-19	Russian 
+	20	dvoryanstvo
+	21	as
+	22	"
+	23	the
+	24	only
+			sense:	alone.s.03
+	25	class
+			sense:	class.n.03
+	26	where
+	27	the
+	28	fire
+			name:	CAUSE_OF_DEATH				28-28	fire 
+			sense:	ardor.n.03
+	29	of
+	30	the
+	31	enlightenment
+			sense:	enlightenment.n.01
+	32	is
+			sense:	be.v.01
+			prop:	be.03
+			V		32-32	is 
+	33	being
+			sense:	be.v.01
+			prop:	be.03
+			V		33-33	being 
+	34	kept
+			sense:	keep.v.01
+			prop:	keep.01
+			V		34-34	kept 
+			N-ARGM-LOC		23-25	the only class 
+			R-ARGM-LOC		26-26	where 
+			N-ARG-A1		27-31	the fire of the enlightenment 
+	35	.
+	36	"
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Among the authors who contributed to Nashe Vremya regularly , were Nikolai Berg , Alexander Rotchev , Mikhail Pogodin , Fyodor Tyutchev .
+
+
+Treebanked sentence:
+--------------------
+Among the authors who contributed to Nashe Vremya regularly , were Nikolai Berg , Alexander Rotchev , Mikhail Pogodin , Fyodor Tyutchev . 
+
+Tree:
+-----
+(ROOT
+  (SINV
+    (PP (IN Among)
+      (NP
+        (NP (DT the) (NNS authors))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD contributed)
+              (PP (IN to)
+                (NP (NNP Nashe) (NNP Vremya)))
+              (ADVP (RB regularly)))))))
+    (, ,)
+    (VP (VBD were))
+    (NP
+      (NP (NNP Nikolai) (NNP Berg))
+      (, ,)
+      (NP
+        (NP (NNP Alexander) (NNP Rotchev))
+        (, ,)
+        (NP (NNP Mikhail) (NNP Pogodin))
+        (, ,)
+        (NP (NNP Fyodor) (NNP Tyutchev))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Among
+	1	the
+	2	authors
+			sense:	writer.n.01
+	3	who
+	4	contributed
+			sense:	contribute.v.02
+			prop:	contribute.01
+			V		4-4	contributed 
+			N-ARG-A0		1-2	the authors 
+			R-ARG-A0		3-3	who 
+			N-ARG-A2		5-7	to Nashe Vremya 
+			N-ARGM-TMP		8-8	regularly 
+	5	to
+	6	Nashe
+			coref:	IDENT			0	6-7	Nashe Vremya 
+			name:	ORGANIZATION				6-7	Nashe Vremya 
+	7	Vremya
+	8	regularly
+			sense:	regularly.r.01
+	9	,
+	10	were
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	were 
+			N-ARG-A2		0-8	Among the authors who contributed to Nashe Vremya regularly 
+			N-ARG-A1		11-21	Nikolai Berg , Alexander Rotchev , Mikhail Pogodin , Fyodor Tyutchev 
+	11	Nikolai
+			name:	PERSON				11-12	Nikolai Berg 
+	12	Berg
+	13	,
+	14	Alexander
+			name:	PERSON				14-15	Alexander Rotchev 
+	15	Rotchev
+	16	,
+	17	Mikhail
+			name:	PERSON				17-18	Mikhail Pogodin 
+	18	Pogodin
+	19	,
+	20	Fyodor
+			name:	PERSON				20-21	Fyodor Tyutchev 
+	21	Tyutchev
+	22	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Nashe Vremya 
+				3.6-7	Nashe Vremya 
+	Chain 1 (IDENT)
+				0.21-22	Nikolai Pavlov 
+				1.14-14	Pavlov 
+	Chain 2 (IDENT)
+				1.57-58	Boris Chicherin 
+				1.60-60	his 
+

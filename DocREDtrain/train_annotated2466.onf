@@ -1,0 +1,700 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The IUPUI Jaguars men 's basketball team is the men 's basketball team that represents Indiana University – Purdue University Indianapolis in Indianapolis , Indiana , United States .
+
+
+Treebanked sentence:
+--------------------
+The IUPUI Jaguars men 's basketball team is the men 's basketball team that represents Indiana University – Purdue University Indianapolis in Indianapolis , Indiana , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP IUPUI) (NNPS Jaguars))
+      (NP
+        (NP (NNS men) (POS 's))
+        (NN basketball) (NN team)))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT the) (NNS men) (POS 's))
+          (NN basketball) (NN team))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ represents)
+              (NP
+                (NP
+                  (NML (NNP Indiana) (NNP University) (HYPH –) (NNP Purdue))
+                  (NNP University) (NNP Indianapolis))
+                (PP (IN in)
+                  (NP (NNP Indianapolis) (, ,) (NNP Indiana) (, ,) (NNP United) (NNP States)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	IUPUI
+			name:	ORGANIZATION				1-2	IUPUI Jaguars 
+	2	Jaguars
+	3	men
+			coref:	IDENT			2	3-4	men 's 
+			sense:	man.n.01
+	4	's
+	5	basketball
+			sense:	basketball.n.01
+	6	team
+			sense:	team.n.01
+	7	is
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		0-6	The IUPUI Jaguars men 's basketball team 
+			N-ARG-A2		8-27	the men 's basketball team that represents Indiana University – Purdue University Indianapolis in Indianapolis , Indiana , United States 
+	8	the
+			coref:	IDENT			2	8-10	the men 's 
+	9	men
+			sense:	man.n.01
+	10	's
+	11	basketball
+			sense:	basketball.n.01
+	12	team
+			sense:	team.n.01
+	13	that
+	14	represents
+			sense:	represent.v.04
+			prop:	represent.01
+			V		14-14	represents 
+			N-ARG-A0		8-12	the men 's basketball team 
+			R-ARG-A0		13-13	that 
+			N-ARG-A1		15-27	Indiana University – Purdue University Indianapolis in Indianapolis , Indiana , United States 
+	15	Indiana
+			name:	ORGANIZATION				15-16	Indiana University 
+	16	University
+	17	–
+	18	Purdue
+			name:	ORGANIZATION				18-19	Purdue University 
+	19	University
+	20	Indianapolis
+			name:	CITY				20-20	Indianapolis 
+	21	in
+	22	Indianapolis
+			name:	CITY				22-22	Indianapolis 
+	23	,
+	24	Indiana
+			name:	STATE_OR_PROVINCE				24-24	Indiana 
+	25	,
+	26	United
+			name:	COUNTRY				26-27	United States 
+	27	States
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The school 's team currently competes in the Horizon League .
+
+
+Treebanked sentence:
+--------------------
+The school 's team currently competes in the Horizon League . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN school) (POS 's))
+      (NN team))
+    (ADVP (RB currently))
+    (VP (VBZ competes)
+      (PP (IN in)
+        (NP (DT the) (NNP Horizon) (NNP League))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-2	The school 's 
+	1	school
+			sense:	school.n.01
+	2	's
+	3	team
+			sense:	team.n.01
+	4	currently
+			name:	DATE				4-4	currently 
+			sense:	presently.r.02
+	5	competes
+			sense:	compete.v.01
+			prop:	compete.01
+			V		5-5	competes 
+			N-ARG-A0		0-3	The school 's team 
+			N-ARGM-TMP		4-4	currently 
+			N-ARGM-LOC		6-9	in the Horizon League 
+	6	in
+	7	the
+			coref:	IDENT			0	7-9	the Horizon League 
+	8	Horizon
+			name:	ORGANIZATION				8-9	Horizon League 
+	9	League
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The first year of IUPUI basketball was 1971 – 72 and the school competed as a NCAA Division III Independent .
+
+
+Treebanked sentence:
+--------------------
+The first year of IUPUI basketball was 1971 – 72 and the school competed as a NCAA Division III Independent . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (JJ first) (NN year))
+        (PP (IN of)
+          (NP (NNP IUPUI) (NN basketball))))
+      (VP (VBD was)
+        (NP
+          (NP (CD 1971))
+          (PP (SYM –)
+            (NP (CD 72))))))
+    (CC and)
+    (S
+      (NP (DT the) (NN school))
+      (VP (VBD competed)
+        (PP (IN as)
+          (NP (DT a)
+            (NML (NNP NCAA) (NNP Division))
+            (NNP III) (NNP Independent)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			name:	DURATION				0-2	The first year 
+	1	first
+			sense:	first.a.01
+	2	year
+			sense:	year.n.01
+	3	of
+	4	IUPUI
+			name:	ORGANIZATION				4-4	IUPUI 
+	5	basketball
+			sense:	basketball.n.01
+	6	was
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	was 
+			N-ARG-A1		0-5	The first year of IUPUI basketball 
+			N-ARG-A2		7-9	1971 – 72 
+	7	1971
+			name:	DATE				7-7	1971 
+	8	–
+	9	72
+			name:	NUMBER				9-9	72 
+	10	and
+	11	the
+			coref:	IDENT			1	11-12	the school 
+	12	school
+			sense:	school.n.01
+	13	competed
+			sense:	compete.v.01
+			prop:	compete.01
+			V		13-13	competed 
+			N-ARG-A0		11-12	the school 
+			N-ARGM-MNR		14-19	as a NCAA Division III Independent 
+	14	as
+	15	a
+	16	NCAA
+			name:	ORGANIZATION				16-16	NCAA 
+	17	Division
+	18	III
+	19	Independent
+			name:	RELIGION				19-19	Independent 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+From 1982 to 2014 , the Jaguars played on campus at The Jungle , which seated 1,215 .
+
+
+Treebanked sentence:
+--------------------
+From 1982 to 2014 , the Jaguars played on campus at The Jungle , which seated 1,215 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN From)
+      (NP
+        (NP (CD 1982))
+        (PP (IN to)
+          (NP (CD 2014)))))
+    (, ,)
+    (NP (DT the) (NNPS Jaguars))
+    (VP (VBD played)
+      (PP (IN on)
+        (NP (NN campus)))
+      (PP (IN at)
+        (NP
+          (NP (DT The) (NN Jungle))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBD seated)
+                (NP (CD 1,215))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	From
+	1	1982
+			name:	DATE				1-1	1982 
+	2	to
+	3	2014
+			coref:	IDENT			4	3-3	2014 
+			name:	DATE				3-3	2014 
+	4	,
+	5	the
+	6	Jaguars
+			name:	ORGANIZATION				6-6	Jaguars 
+	7	played
+			sense:	play.v.01
+			prop:	play.01
+			V		7-7	played 
+			N-ARGM-TMP		0-3	From 1982 to 2014 
+			N-ARG-A0		5-6	the Jaguars 
+			N-ARGM-LOC		8-9	on campus 
+			N-ARGM-LOC		10-16	at The Jungle , which seated 1,215 
+	8	on
+	9	campus
+			sense:	campus.n.01
+	10	at
+	11	The
+			name:	LOCATION				11-12	The Jungle 
+	12	Jungle
+			sense:	hobo_camp.n.01
+	13	,
+	14	which
+	15	seated
+			sense:	seat.v.02
+			prop:	seat.01
+			V		15-15	seated 
+			N-ARG-A2		11-12	The Jungle 
+			R-ARG-A2		14-14	which 
+			N-ARG-A1		16-16	1,215 
+	16	1,215
+			name:	NUMBER				16-16	1,215 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Beginning with the 2014–15 season , the Jaguars play their home games at the Indiana Farmers Coliseum on the State Fairgrounds .
+
+
+Treebanked sentence:
+--------------------
+Beginning with the 2014 – 15 season , the Jaguars play their home games at the Indiana Farmers Coliseum on the State Fairgrounds . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (VBG Beginning)
+      (PP (IN with)
+        (NP
+          (NP (DT the) (CD 2014))
+          (PP (SYM –)
+            (NP (CD 15) (NN season))))))
+    (, ,)
+    (NP (DT the) (NNPS Jaguars))
+    (VP (VBP play)
+      (NP (PRP$ their) (NN home) (NNS games))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NNP Indiana) (NNP Farmers) (NNP Coliseum))
+          (PP (IN on)
+            (NP (DT the) (NNP State) (NNP Fairgrounds))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Beginning
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		0-0	Beginning 
+			N-ARG-A2		1-6	with the 2014 – 15 season 
+	1	with
+	2	the
+	3	2014
+			coref:	IDENT			4	3-3	2014 
+			name:	DATE				3-3	2014 
+	4	–
+	5	15
+			name:	NUMBER				5-5	15 
+	6	season
+			sense:	season.n.01
+	7	,
+	8	the
+	9	Jaguars
+			name:	ORGANIZATION				9-9	Jaguars 
+	10	play
+			sense:	play.v.01
+			prop:	play.01
+			V		10-10	play 
+			N-ARGM-TMP		0-6	Beginning with the 2014 – 15 season 
+			N-ARG-A0		8-9	the Jaguars 
+			N-ARG-A1		11-13	their home games 
+			N-ARGM-LOC		14-22	at the Indiana Farmers Coliseum on the State Fairgrounds 
+	11	their
+	12	home
+			sense:	home.n.01
+	13	games
+			sense:	game.n.02
+	14	at
+	15	the
+	16	Indiana
+			name:	ORGANIZATION				16-18	Indiana Farmers Coliseum 
+	17	Farmers
+	18	Coliseum
+	19	on
+	20	the
+	21	State
+			name:	LOCATION				21-22	State Fairgrounds 
+	22	Fairgrounds
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Prior to the Jaguars move , the arena underwent a $ 63 million renovation to modernize it for the fair and for basketball .
+
+
+Treebanked sentence:
+--------------------
+Prior to the Jaguars move , the arena underwent a $ 63 million renovation to modernize it for the fair and for basketball . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (RB Prior)
+      (PP (IN to)
+        (NP
+          (NP (DT the) (NNPS Jaguars))
+          (SBAR
+            (S
+              (VP (VBP move)))))))
+    (, ,)
+    (NP (DT the) (NN arena))
+    (VP (VBD underwent)
+      (NP (DT a)
+        (NML
+          (QP ($ $) (CD 63) (CD million)))
+        (NN renovation)
+        (S
+          (VP (TO to)
+            (VP (VB modernize)
+              (NP (PRP it))
+              (PP
+                (PP (IN for)
+                  (NP (DT the) (JJ fair)))
+                (CC and)
+                (PP (IN for)
+                  (NP (NN basketball)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Prior
+	1	to
+	2	the
+	3	Jaguars
+			name:	ORGANIZATION				3-3	Jaguars 
+	4	move
+			sense:	move.v.04
+			prop:	move.01
+			V		4-4	move 
+			N-ARG-A0		3-3	Jaguars 
+	5	,
+	6	the
+			coref:	IDENT			3	6-7	the arena 
+	7	arena
+			sense:	stadium.n.01
+	8	underwent
+			sense:	undergo.v.01
+			prop:	undergo.01
+			V		8-8	underwent 
+			N-ARGM-TMP		0-4	Prior to the Jaguars move 
+			N-ARG-A1		6-7	the arena 
+			N-ARG-A2		9-13	a $ 63 million renovation 
+			N-ARGM-PRP		14-22	to modernize it for the fair and for basketball 
+	9	a
+	10	$
+			name:	MONEY				10-12	$ 63 million 
+	11	63
+	12	million
+	13	renovation
+			sense:	renovation.n.01
+	14	to
+	15	modernize
+			sense:	overhaul.v.02
+			prop:	modernize.01
+			V		15-15	modernize 
+			N-ARG-A1		16-16	it 
+			N-ARGM-PRP		17-22	for the fair and for basketball 
+	16	it
+			coref:	IDENT			3	16-16	it 
+	17	for
+	18	the
+	19	fair
+			sense:	fair.a.01
+	20	and
+	21	for
+	22	basketball
+			sense:	basketball.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The renovated arena has capacity for 6,800 .
+
+
+Treebanked sentence:
+--------------------
+The renovated arena has capacity for 6,800 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJ renovated) (NN arena))
+    (VP (VBZ has)
+      (NP
+        (NP (NN capacity))
+        (PP (IN for)
+          (NP (CD 6,800)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-2	The renovated arena 
+	1	renovated
+	2	arena
+			sense:	stadium.n.01
+	3	has
+			sense:	have.v.02
+			prop:	have.03
+			V		3-3	has 
+			N-ARG-A0		0-2	The renovated arena 
+			N-ARG-A1		4-6	capacity for 6,800 
+	4	capacity
+			sense:	capacity.n.03
+	5	for
+	6	6,800
+			name:	NUMBER				6-6	6,800 
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Jaguars are currently led by head coach Jason Gardner .
+
+
+Treebanked sentence:
+--------------------
+The Jaguars are currently led by head coach Jason Gardner . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNPS Jaguars))
+    (VP (VBP are)
+      (ADVP (RB currently))
+      (VP (VBN led)
+        (PP (IN by)
+          (NP
+            (NML (NN head) (NN coach))
+            (NNP Jason) (NNP Gardner)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Jaguars
+			name:	ORGANIZATION				1-1	Jaguars 
+	2	are
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	are 
+	3	currently
+			name:	DATE				3-3	currently 
+			sense:	presently.r.02
+	4	led
+			sense:	head.v.02
+			prop:	lead.02
+			V		4-4	led 
+			N-ARG-A1		0-1	The Jaguars 
+			N-ARGM-TMP		3-3	currently 
+			N-ARG-A0		5-9	by head coach Jason Gardner 
+	5	by
+	6	head
+			name:	TITLE				6-7	head coach 
+			sense:	principal.n.02
+	7	coach
+			sense:	coach.n.01
+	8	Jason
+			name:	PERSON				8-9	Jason Gardner 
+	9	Gardner
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Jaguars joined the Horizon League on July 1 , 2017 , replacing Valparaiso who left the conference on the same day .
+
+
+Treebanked sentence:
+--------------------
+The Jaguars joined the Horizon League on July 1 , 2017 , replacing Valparaiso who left the conference on the same day . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNPS Jaguars))
+    (VP (VBD joined)
+      (NP (DT the) (NNP Horizon) (NNP League))
+      (PP (IN on)
+        (NP (NNP July) (CD 1) (, ,) (CD 2017)))
+      (, ,)
+      (S
+        (VP (VBG replacing)
+          (NP
+            (NP (NNP Valparaiso))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD left)
+                  (NP (DT the) (NN conference))
+                  (PP (IN on)
+                    (NP (DT the) (JJ same) (NN day))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Jaguars
+			name:	ORGANIZATION				1-1	Jaguars 
+	2	joined
+			sense:	join.v.01
+			prop:	join.01
+			V		2-2	joined 
+			N-ARG-A0		0-1	The Jaguars 
+			N-ARG-A1		3-5	the Horizon League 
+			N-ARGM-TMP		6-10	on July 1 , 2017 
+			N-ARGM-ADV		12-21	replacing Valparaiso who left the conference on the same day 
+	3	the
+			coref:	IDENT			0	3-5	the Horizon League 
+	4	Horizon
+			name:	ORGANIZATION				4-5	Horizon League 
+	5	League
+	6	on
+	7	July
+			name:	DATE				7-10	July 1 , 2017 
+	8	1
+	9	,
+	10	2017
+	11	,
+	12	replacing
+			sense:	supplant.v.01
+			prop:	replace.01
+			V		12-12	replacing 
+			N-ARG-A2		0-1	The Jaguars 
+			N-ARG-A1		13-21	Valparaiso who left the conference on the same day 
+	13	Valparaiso
+			name:	ORGANIZATION				13-13	Valparaiso 
+	14	who
+	15	left
+			sense:	leave.v.08
+			prop:	leave.01
+			V		15-15	left 
+			N-ARG-A0		13-13	Valparaiso 
+			R-ARG-A0		14-14	who 
+			N-ARG-A1		16-17	the conference 
+			N-ARGM-TMP		18-21	on the same day 
+	16	the
+	17	conference
+			sense:	league.n.01
+	18	on
+	19	the
+			name:	DATE				19-21	the same day 
+	20	same
+			sense:	same.a.01
+	21	day
+			sense:	day.n.01
+	22	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.7-9	the Horizon League 
+				8.3-5	the Horizon League 
+	Chain 1 (IDENT)
+				1.0-2	The school 's 
+				2.11-12	the school 
+	Chain 2 (IDENT)
+				0.8-10	the men 's 
+				0.3-4	men 's 
+	Chain 3 (IDENT)
+				6.0-2	The renovated arena 
+				5.6-7	the arena 
+				5.16-16	it 
+	Chain 4 (IDENT)
+				3.3-3	2014 
+				4.3-3	2014 
+

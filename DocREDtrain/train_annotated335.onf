@@ -1,0 +1,829 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Itzhak Fintzi ( Izko Finzi ) ( ) ( born 25 April 1933 ) is a Bulgarian film and stage actor .
+
+
+Treebanked sentence:
+--------------------
+Itzhak Fintzi ( Izko Finzi ) ( ) ( born 25 April 1933 ) is a Bulgarian film and stage actor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Itzhak) (NNP Fintzi) (-LRB- -LRB-) (NNP Izko) (NNP Finzi) (-RRB- -RRB-))
+      (-LRB- -LRB-)
+      (NP (-RRB- -RRB-))
+      (PRN (-LRB- -LRB-)
+        (VP (VBN born)
+          (NP (CD 25))
+          (NP-TMP (NNP April) (CD 1933)))
+        (-RRB- -RRB-)))
+    (VP (VBZ is)
+      (NP (DT a)
+        (NML
+          (NML (JJ Bulgarian) (NN film))
+          (CC and)
+          (NML (NN stage)))
+        (NN actor)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Itzhak
+			name:	PERSON				0-1	Itzhak Fintzi 
+	1	Fintzi
+	2	(
+	3	Izko
+			coref:	IDENT			0	3-4	Izko Finzi 
+			name:	PERSON				3-4	Izko Finzi 
+	4	Finzi
+	5	)
+	6	(
+	7	)
+	8	(
+	9	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		9-9	born 
+			N-ARG-A1		0-5	Itzhak Fintzi ( Izko Finzi ) 
+			N-ARGM-TMP		10-12	25 April 1933 
+	10	25
+			name:	DATE				10-12	25 April 1933 
+	11	April
+	12	1933
+	13	)
+	14	is
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	is 
+			N-ARG-A1		0-13	Itzhak Fintzi ( Izko Finzi ) ( ) ( born 25 April 1933 ) 
+			N-ARG-A2		15-20	a Bulgarian film and stage actor 
+	15	a
+	16	Bulgarian
+			name:	NATIONALITY				16-16	Bulgarian 
+	17	film
+			sense:	movie.n.01
+	18	and
+	19	stage
+			sense:	stage.n.04
+	20	actor
+			name:	TITLE				20-20	actor 
+			sense:	actor.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was born in Sofia , where he graduated from the dramatic art academy .
+
+
+Treebanked sentence:
+--------------------
+He was born in Sofia , where he graduated from the dramatic art academy . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Sofia)))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP he))
+            (VP (VBD graduated)
+              (PP (IN from)
+                (NP (DT the) (JJ dramatic) (NN art) (NN academy))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-13	in Sofia , where he graduated from the dramatic art academy 
+	3	in
+	4	Sofia
+			name:	CITY				4-4	Sofia 
+	5	,
+	6	where
+	7	he
+			coref:	IDENT			0	7-7	he 
+	8	graduated
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		8-8	graduated 
+			N-ARGM-LOC		4-4	Sofia 
+			R-ARGM-LOC		6-6	where 
+			N-ARG-A0		7-7	he 
+			N-ARG-A1		9-13	from the dramatic art academy 
+	9	from
+	10	the
+	11	dramatic
+			sense:	dramatic.a.03
+	12	art
+			sense:	art.n.01
+	13	academy
+			sense:	academy.n.03
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the following years he played in a number of theatres , both in the capital city and in other places throughout the country , as well as in many feature films .
+
+
+Treebanked sentence:
+--------------------
+In the following years he played in a number of theatres , both in the capital city and in other places throughout the country , as well as in many feature films . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (VBG following) (NNS years)))
+    (NP (PRP he))
+    (VP (VBD played)
+      (PP (IN in)
+        (NP
+          (NP (DT a) (NN number))
+          (PP (IN of)
+            (NP (NNS theatres)))))
+      (, ,)
+      (PP (CC both)
+        (PP (IN in)
+          (NP (DT the) (NN capital) (NN city)))
+        (CC and)
+        (PP (IN in)
+          (NP (JJ other) (NNS places))))
+      (PP
+        (PP (IN throughout)
+          (NP (DT the) (NN country)))
+        (, ,)
+        (CONJP (RB as) (RB well) (IN as))
+        (PP (IN in)
+          (NP (JJ many) (NN feature) (NNS films)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+			name:	DATE				1-3	the following years 
+	2	following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		2-2	following 
+			N-ARG-A1		3-3	years 
+	3	years
+			sense:	year.n.01
+	4	he
+			coref:	IDENT			0	4-4	he 
+	5	played
+			sense:	act.v.03
+			prop:	play.01
+			V		5-5	played 
+			N-ARGM-TMP		0-3	In the following years 
+			N-ARG-A0		4-4	he 
+			N-ARGM-LOC		6-10	in a number of theatres 
+			N-ARGM-LOC		12-31	both in the capital city and in other places throughout the country , as well as in many feature films 
+	6	in
+	7	a
+	8	number
+			sense:	number.n.01
+	9	of
+	10	theatres
+			sense:	theater.n.01
+	11	,
+	12	both
+	13	in
+	14	the
+	15	capital
+			sense:	capital.n.03
+	16	city
+			sense:	city.n.01
+	17	and
+	18	in
+	19	other
+			sense:	other.a.01
+	20	places
+			sense:	topographic_point.n.01
+	21	throughout
+	22	the
+	23	country
+			sense:	country.n.02
+	24	,
+	25	as
+			sense:	equally.r.01
+	26	well
+			sense:	well.r.02
+	27	as
+	28	in
+	29	many
+			sense:	many.a.01
+	30	feature
+			sense:	feature.n.03
+	31	films
+			sense:	movie.n.01
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is winner of the best actor award of the " Golden Prague " TV films festival ( 1982 ) .
+
+
+Treebanked sentence:
+--------------------
+He is winner of the best actor award of the " Golden Prague " TV films festival ( 1982 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (NN winner))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (JJS best) (NN actor) (NN award))
+              (PP (IN of)
+                (NP (DT the) (`` ") (NNP Golden) (NNP Prague) ('' "))))))
+        (NN TV) (NNS films))
+      (S
+        (NP (NN festival)))
+      (PRN (-LRB- -LRB-)
+        (NP (CD 1982))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-19	winner of the best actor award of the " Golden Prague " TV films festival ( 1982 ) 
+	2	winner
+			sense:	winner.n.01
+	3	of
+	4	the
+	5	best
+			sense:	good.a.01
+	6	actor
+			name:	TITLE				6-6	actor 
+			sense:	actor.n.01
+	7	award
+			sense:	award.n.02
+	8	of
+	9	the
+	10	"
+	11	Golden
+	12	Prague
+			name:	CITY				12-12	Prague 
+	13	"
+	14	TV
+			sense:	television.n.01
+	15	films
+			sense:	movie.n.01
+	16	festival
+			sense:	festival.n.02
+	17	(
+	18	1982
+			name:	DATE				18-18	1982 
+	19	)
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His best loved character on the scene is the big Little man - a human being incessantly trampled by Life and the high and mighty , who frequently evokes laughter , but more often the sympathy and compassion of the audience - because of the nobleness , dignity , modesty and selflessness always helping him managed and overcome the vicissitude of his destiny .
+
+
+Treebanked sentence:
+--------------------
+His best loved character on the scene is the big Little man - a human being incessantly trampled by Life and the high and mighty , who frequently evokes laughter , but more often the sympathy and compassion of the audience - because of the nobleness , dignity , modesty and selflessness always helping him managed and overcome the vicissitude of his destiny . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP$ His) (JJS best))
+      (VP (VBD loved)
+        (SBAR
+          (S
+            (NP
+              (NP (NN character))
+              (PP (IN on)
+                (NP (DT the) (NN scene))))
+            (VP (VBZ is)
+              (NP
+                (NP
+                  (NP
+                    (NP (DT the) (JJ big) (JJ Little) (NN man))
+                    (HYPH -)
+                    (NP (DT a) (JJ human) (NN being)))
+                  (VP
+                    (ADVP (RB incessantly))
+                    (VBN trampled)
+                    (PP (IN by)
+                      (NP (NN Life)))))
+                (CC and)
+                (NP
+                  (NP (DT the)
+                    (ADJP (JJ high)
+                      (CC and)
+                      (JJ mighty)))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (ADVP (RB frequently))
+                      (VP (VBZ evokes)
+                        (NP (NN laughter))))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (ADVP (RBR more) (RB often))
+      (NP
+        (NP (DT the) (NN sympathy)
+          (CC and)
+          (NN compassion))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN audience))
+            (HYPH -)
+            (PP (IN because) (IN of)
+              (NP
+                (NP (DT the) (NN nobleness) (, ,) (NN dignity) (, ,) (NN modesty)
+                  (CC and)
+                  (NN selflessness))
+                (VP
+                  (ADVP (RB always))
+                  (VBG helping)
+                  (NP (PRP him))))))))
+      (VP
+        (VP (VBD managed))
+        (CC and)
+        (VP (VB overcome)
+          (NP
+            (NP (DT the) (NN vicissitude))
+            (PP (IN of)
+              (NP (PRP$ his) (NN destiny)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-0	His 
+	1	best
+			sense:	good.s.21
+	2	loved
+			sense:	love.v.01
+			prop:	love.01
+			V		2-2	loved 
+			N-ARGM-ADV		1-1	best 
+			N-ARG-A1		3-3	character 
+	3	character
+			sense:	character.n.04
+	4	on
+	5	the
+	6	scene
+			sense:	scene.n.01
+	7	is
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		0-6	His best loved character on the scene 
+			N-ARG-A2		8-62	the big Little man - a human being incessantly trampled by Life and the high and mighty , who frequently evokes laughter , but more often the sympathy and compassion of the audience - because of the nobleness , dignity , modesty and selflessness always helping him managed and overcome the vicissitude of his destiny 
+	8	the
+	9	big
+			sense:	large.a.01
+	10	Little
+			name:	MISC				10-10	Little 
+			sense:	small.a.01
+	11	man
+			sense:	man.n.01
+	12	-
+	13	a
+	14	human
+			sense:	human.a.03
+	15	being
+			sense:	organism.n.01
+	16	incessantly
+			sense:	constantly.r.02
+	17	trampled
+			sense:	tramp_down.v.01
+			prop:	trample.01
+			V		17-17	trampled 
+			N-ARG-A1		13-14	a human 
+			N-ARGM-MNR		16-16	incessantly 
+			N-ARG-A0		18-24	by Life and the high and mighty 
+	18	by
+	19	Life
+			sense:	life.n.10
+	20	and
+	21	the
+	22	high
+			sense:	eminent.s.01
+	23	and
+	24	mighty
+			sense:	mighty.s.01
+	25	,
+	26	who
+	27	frequently
+			sense:	frequently.r.01
+	28	evokes
+			sense:	arouse.v.01
+			prop:	evoke.01
+			V		28-28	evokes 
+			N-ARG-A0		13-24	a human being incessantly trampled by Life and the high and mighty 
+			R-ARG-A0		26-26	who 
+			N-ARGM-TMP		27-27	frequently 
+			N-ARG-A1		29-29	laughter 
+			N-ARGM-CAU		42-62	because of the nobleness , dignity , modesty and selflessness always helping him managed and overcome the vicissitude of his destiny 
+	29	laughter
+			sense:	laughter.n.02
+	30	,
+	31	but
+	32	more
+			sense:	more.r.01
+	33	often
+			sense:	frequently.r.01
+	34	the
+	35	sympathy
+			sense:	sympathy.n.02
+	36	and
+	37	compassion
+			sense:	compassion.n.01
+	38	of
+	39	the
+	40	audience
+			sense:	audience.n.01
+	41	-
+	42	because
+	43	of
+	44	the
+	45	nobleness
+			sense:	nobility.n.02
+	46	,
+	47	dignity
+			sense:	dignity.n.01
+	48	,
+	49	modesty
+			sense:	modesty.n.01
+	50	and
+	51	selflessness
+			sense:	altruism.n.01
+	52	always
+			sense:	always.r.01
+	53	helping
+			sense:	help.v.01
+			prop:	help.01
+			V		53-53	helping 
+			N-ARG-A0		44-51	the nobleness , dignity , modesty and selflessness 
+			N-ARGM-TMP		52-52	always 
+			N-ARG-A1		54-62	him managed and overcome the vicissitude of his destiny 
+	54	him
+			coref:	IDENT			0	54-54	him 
+	55	managed
+			sense:	cope.v.01
+			prop:	manage.02
+			V		55-55	managed 
+			N-ARG-A0		54-54	him 
+			N-ARG-A1		58-62	the vicissitude of his destiny 
+	56	and
+	57	overcome
+			sense:	get_the_better_of.v.01
+			prop:	overcome.01
+			V		57-57	overcome 
+			N-ARG-A0		54-54	him 
+			N-ARG-A1		58-62	the vicissitude of his destiny 
+	58	the
+	59	vicissitude
+			sense:	vicissitude.n.01
+	60	of
+	61	his
+			coref:	IDENT			0	61-61	his 
+	62	destiny
+			sense:	fortune.n.04
+	63	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Undoubtedly , the unusual popularity of Itzhak Fintzi , called by his friends and public by the intimate name of Itzko , is because a good number of Bulgarian people identify , consciously or unconsciously , with his characters .
+
+
+Treebanked sentence:
+--------------------
+Undoubtedly , the unusual popularity of Itzhak Fintzi , called by his friends and public by the intimate name of Itzko , is because a good number of Bulgarian people identify , consciously or unconsciously , with his characters . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Undoubtedly))
+    (, ,)
+    (NP
+      (NP
+        (NP (DT the) (JJ unusual) (NN popularity))
+        (PP (IN of)
+          (NP (NNP Itzhak) (NNP Fintzi))))
+      (, ,)
+      (UCP
+        (VP (VBN called)
+          (PP (IN by)
+            (NP (PRP$ his) (NNS friends))))
+        (CC and)
+        (ADJP (JJ public)
+          (PP (IN by)
+            (NP
+              (NP (DT the) (JJ intimate) (NN name))
+              (PP (IN of)
+                (NP (NNP Itzko))))))))
+    (, ,)
+    (VP (VBZ is)
+      (SBAR (IN because)
+        (S
+          (NP
+            (NP (DT a) (JJ good) (NN number))
+            (PP (IN of)
+              (NP (JJ Bulgarian) (NNS people))))
+          (VP (VBP identify) (, ,)
+            (ADVP
+              (ADVP (RB consciously))
+              (CC or)
+              (ADVP (RB unconsciously)))
+            (, ,)
+            (PP (IN with)
+              (NP (PRP$ his) (NNS characters)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Undoubtedly
+			sense:	undoubtedly.r.01
+	1	,
+	2	the
+	3	unusual
+			sense:	unusual.a.01
+	4	popularity
+			sense:	popularity.n.01
+	5	of
+	6	Itzhak
+			name:	PERSON				6-7	Itzhak Fintzi 
+	7	Fintzi
+	8	,
+	9	called
+			sense:	name.v.01
+			prop:	call.01
+			V		9-9	called 
+			N-ARG-A1		6-7	Itzhak Fintzi 
+			N-ARG-A0		10-14	by his friends and public 
+			N-ARG-A2		15-20	by the intimate name of Itzko 
+	10	by
+	11	his
+	12	friends
+			sense:	friend.n.01
+	13	and
+	14	public
+			sense:	public.a.01
+	15	by
+	16	the
+	17	intimate
+			sense:	intimate.s.01
+	18	name
+			sense:	name.n.01
+	19	of
+	20	Itzko
+			name:	LOCATION				20-20	Itzko 
+	21	,
+	22	is
+			sense:	be.v.01
+			prop:	be.01
+			V		22-22	is 
+			N-ARGM-ADV		0-0	Undoubtedly 
+			N-ARG-A1		2-20	the unusual popularity of Itzhak Fintzi , called by his friends and public by the intimate name of Itzko 
+			N-ARG-A2		23-38	because a good number of Bulgarian people identify , consciously or unconsciously , with his characters 
+	23	because
+	24	a
+	25	good
+			sense:	full.s.06
+	26	number
+			sense:	number.n.01
+	27	of
+	28	Bulgarian
+			name:	NATIONALITY				28-28	Bulgarian 
+	29	people
+			sense:	person.n.01
+	30	identify
+			sense:	identify.v.03
+			prop:	identify.02
+			V		30-30	identify 
+			N-ARG-A0		24-29	a good number of Bulgarian people 
+			N-ARGM-MNR		32-34	consciously or unconsciously 
+			N-ARG-A1		36-38	with his characters 
+	31	,
+	32	consciously
+			sense:	consciously.r.01
+	33	or
+	34	unconsciously
+			sense:	unconsciously.r.01
+	35	,
+	36	with
+	37	his
+	38	characters
+			sense:	character.n.04
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He graduated from the Bulgarian National Academy of Theater and Film Arts in 1955 , and made his debut in the movie " Zvezdi " ( 1959 ) .
+
+
+Treebanked sentence:
+--------------------
+He graduated from the Bulgarian National Academy of Theater and Film Arts in 1955 , and made his debut in the movie " Zvezdi " ( 1959 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD graduated)
+        (PP (IN from)
+          (NP
+            (NP (DT the) (JJ Bulgarian) (NNP National) (NNP Academy))
+            (PP (IN of)
+              (NP (NNP Theater)
+                (CC and)
+                (NNP Film) (NNPS Arts)))))
+        (PP (IN in)
+          (NP (CD 1955))))
+      (, ,)
+      (CC and)
+      (VP (VBD made)
+        (NP (PRP$ his) (NN debut))
+        (PP (IN in)
+          (NP (DT the) (NN movie) (`` ") (NNP Zvezdi) ('' "))))
+      (PRN (-LRB- -LRB-)
+        (NP (CD 1959))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	graduated
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		1-1	graduated 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-11	from the Bulgarian National Academy of Theater and Film Arts 
+			N-ARGM-TMP		12-13	in 1955 
+	2	from
+	3	the
+	4	Bulgarian
+			name:	ORGANIZATION				4-8	Bulgarian National Academy of Theater 
+	5	National
+	6	Academy
+	7	of
+	8	Theater
+	9	and
+	10	Film
+	11	Arts
+	12	in
+	13	1955
+			name:	DATE				13-13	1955 
+	14	,
+	15	and
+	16	made
+			sense:	make.v.01
+			prop:	make.01
+			V		16-16	made 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		17-18	his debut 
+			N-ARGM-LOC		19-27	in the movie " Zvezdi " ( 1959 ) 
+	17	his
+	18	debut
+			sense:	introduction.n.01
+	19	in
+	20	the
+	21	movie
+			sense:	movie.n.01
+	22	"
+	23	Zvezdi
+			name:	MISC				23-23	Zvezdi 
+	24	"
+	25	(
+	26	1959
+			name:	DATE				26-26	1959 
+	27	)
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is the father of actor Samuel Finzi .
+
+
+Treebanked sentence:
+--------------------
+He is the father of actor Samuel Finzi . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN father))
+        (PP (IN of)
+          (NP (NN actor) (NNP Samuel) (NNP Finzi)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-7	the father of actor Samuel Finzi 
+	2	the
+	3	father
+			sense:	father.n.01
+	4	of
+	5	actor
+			name:	TITLE				5-5	actor 
+			sense:	actor.n.01
+	6	Samuel
+			name:	PERSON				6-7	Samuel Finzi 
+	7	Finzi
+	8	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.3-4	Izko Finzi 
+				1.0-0	He 
+				1.7-7	he 
+				2.4-4	he 
+				3.0-0	He 
+				4.0-0	His 
+				4.54-54	him 
+				4.61-61	his 
+

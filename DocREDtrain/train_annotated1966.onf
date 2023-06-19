@@ -1,0 +1,497 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+St. Thomas Church ( German : Thomaskirche ) is a Lutheran church in Leipzig , Germany .
+
+
+Treebanked sentence:
+--------------------
+St. Thomas Church ( German : Thomaskirche ) is a Lutheran church in Leipzig , Germany . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP St.) (NNP Thomas) (NNP Church))
+      (PRN (-LRB- -LRB-)
+        (FRAG
+          (NP (NNP German))
+          (: :)
+          (NP (NNP Thomaskirche)))
+        (-RRB- -RRB-)))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NNP Lutheran) (NN church))
+        (PP (IN in)
+          (NP (NNP Leipzig) (, ,) (NNP Germany)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	St.
+	1	Thomas
+			name:	PERSON				1-2	Thomas Church 
+	2	Church
+	3	(
+	4	German
+			name:	NATIONALITY				4-4	German 
+	5	:
+	6	Thomaskirche
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	St. Thomas Church ( German : Thomaskirche ) 
+			N-ARG-A2		9-15	a Lutheran church in Leipzig , Germany 
+	9	a
+			coref:	IDENT			0	9-15	a Lutheran church in Leipzig , Germany 
+	10	Lutheran
+			name:	IDEOLOGY				10-11	Lutheran church 
+	11	church
+			sense:	church.n.02
+	12	in
+	13	Leipzig
+			name:	CITY				13-13	Leipzig 
+	14	,
+	15	Germany
+			name:	COUNTRY				15-15	Germany 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is associated with a number of well - known composers such as Richard Wagner and Felix Mendelssohn Bartholdy , but mostly with Johann Sebastian Bach who worked here as a Kapellmeister ( music director ) from 1723 until his death in 1750 .
+
+
+Treebanked sentence:
+--------------------
+It is associated with a number of well - known composers such as Richard Wagner and Felix Mendelssohn Bartholdy , but mostly with Johann Sebastian Bach who worked here as a Kapellmeister ( music director ) from 1723 until his death in 1750 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (VP (VBN associated)
+        (PP
+          (PP (IN with)
+            (NP
+              (NP (DT a) (NN number))
+              (PP (IN of)
+                (NP
+                  (NP
+                    (ADJP (RB well) (HYPH -) (VBN known))
+                    (NNS composers))
+                  (PP (JJ such) (IN as)
+                    (NP
+                      (NP (NNP Richard) (NNP Wagner))
+                      (CC and)
+                      (NP (NNP Felix) (NNP Mendelssohn) (NNP Bartholdy))))))))
+          (, ,)
+          (CC but)
+          (PP
+            (ADVP (RB mostly))
+            (IN with)
+            (NP
+              (NP (NNP Johann) (NNP Sebastian) (NNP Bach))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD worked)
+                    (ADVP (RB here))
+                    (PP (IN as)
+                      (NP (DT a) (NNP Kapellmeister)))
+                    (PRN (-LRB- -LRB-)
+                      (NP (NN music) (NN director))
+                      (-RRB- -RRB-))))))))
+        (PP (IN from)
+          (NP (CD 1723)))
+        (PP (IN until)
+          (NP (PRP$ his) (NN death)))
+        (PP (IN in)
+          (NP (CD 1750)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	associated
+			sense:	associate.v.01
+			prop:	associate.01
+			V		2-2	associated 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		3-42	with a number of well - known composers such as Richard Wagner and Felix Mendelssohn Bartholdy , but mostly with Johann Sebastian Bach who worked here as a Kapellmeister ( music director ) from 1723 until his death in 1750 
+	3	with
+	4	a
+	5	number
+			sense:	number.n.01
+	6	of
+	7	well
+			sense:	well.r.02
+	8	-
+	9	known
+			sense:	know.v.01
+			prop:	know.01
+			V		9-9	known 
+			N-ARGM-EXT		7-7	well 
+			N-ARG-A1		10-10	composers 
+	10	composers
+			sense:	composer.n.01
+	11	such
+			sense:	such.s.01
+	12	as
+	13	Richard
+			name:	PERSON				13-14	Richard Wagner 
+	14	Wagner
+	15	and
+	16	Felix
+			name:	PERSON				16-18	Felix Mendelssohn Bartholdy 
+	17	Mendelssohn
+	18	Bartholdy
+	19	,
+	20	but
+	21	mostly
+			sense:	largely.r.01
+	22	with
+	23	Johann
+			name:	PERSON				23-25	Johann Sebastian Bach 
+	24	Sebastian
+	25	Bach
+	26	who
+	27	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		27-27	worked 
+			N-ARG-A0		23-25	Johann Sebastian Bach 
+			R-ARG-A0		26-26	who 
+			N-ARGM-LOC		28-28	here 
+			N-ARG-A1		29-35	as a Kapellmeister ( music director ) 
+			N-ARGM-TMP		36-42	from 1723 until his death in 1750 
+	28	here
+			sense:	here.r.01
+	29	as
+	30	a
+	31	Kapellmeister
+	32	(
+	33	music
+			name:	TITLE				33-34	music director 
+			sense:	music.n.01
+	34	director
+			sense:	conductor.n.01
+	35	)
+	36	from
+	37	1723
+			name:	DATE				37-37	1723 
+	38	until
+	39	his
+	40	death
+			sense:	death.n.01
+	41	in
+	42	1750
+			name:	DATE				42-42	1750 
+	43	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Today , the church also holds his remains .
+
+
+Treebanked sentence:
+--------------------
+Today , the church also holds his remains . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP-TMP (NN Today))
+    (, ,)
+    (NP (DT the) (NN church))
+    (ADVP (RB also))
+    (VP (VBZ holds)
+      (NP (PRP$ his) (NNS remains)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Today
+			name:	DATE				0-0	Today 
+			sense:	today.n.01
+	1	,
+	2	the
+			coref:	IDENT			0	2-3	the church 
+	3	church
+			sense:	church.n.02
+	4	also
+			sense:	besides.r.02
+	5	holds
+			sense:	hold.v.11
+			prop:	hold.01
+			V		5-5	holds 
+			N-ARGM-TMP		0-0	Today 
+			N-ARG-A0		2-3	the church 
+			N-ARGM-DIS		4-4	also 
+			N-ARG-A1		6-7	his remains 
+	6	his
+	7	remains
+			sense:	cadaver.n.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Martin Luther preached here in 1539 .
+
+
+Treebanked sentence:
+--------------------
+Martin Luther preached here in 1539 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Martin) (NNP Luther))
+    (VP (VBN preached)
+      (ADVP (RB here))
+      (PP (IN in)
+        (NP (CD 1539))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Martin
+			name:	PERSON				0-1	Martin Luther 
+	1	Luther
+	2	preached
+			sense:	preach.v.01
+			prop:	preach.01
+			V		2-2	preached 
+			N-ARG-A0		0-1	Martin Luther 
+			N-ARGM-LOC		3-3	here 
+			N-ARGM-TMP		4-5	in 1539 
+	3	here
+			sense:	here.r.01
+	4	in
+	5	1539
+			name:	DATE				5-5	1539 
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Although rebuilt over the centuries and damaged by Allied incendiary bombs in 1943 , the church today mainly retains the character of a late - Gothic hall church .
+
+
+Treebanked sentence:
+--------------------
+Although rebuilt over the centuries and damaged by Allied incendiary bombs in 1943 , the church today mainly retains the character of a late - Gothic hall church . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN Although)
+      (S
+        (VP
+          (VP (VBN rebuilt)
+            (PP (IN over)
+              (NP (DT the) (NNS centuries))))
+          (CC and)
+          (VP (VBN damaged)
+            (PP (IN by)
+              (NP
+                (NP (NNP Allied) (JJ incendiary) (NNS bombs))
+                (PP (IN in)
+                  (NP (CD 1943)))))))))
+    (, ,)
+    (NP (DT the) (NN church) (NN today))
+    (ADVP (RB mainly))
+    (VP (VBZ retains)
+      (NP
+        (NP (DT the) (NN character))
+        (PP (IN of)
+          (NP (DT a)
+            (ADJP (JJ late) (HYPH -) (JJ Gothic))
+            (NN hall) (NN church)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Although
+	1	rebuilt
+			sense:	rebuild.v.01
+			prop:	rebuild.01
+			V		1-1	rebuilt 
+			N-ARGM-TMP		2-4	over the centuries 
+			N-ARG-A1		14-15	the church 
+	2	over
+	3	the
+			name:	DURATION				3-4	the centuries 
+	4	centuries
+			sense:	century.n.01
+	5	and
+	6	damaged
+			sense:	damage.v.01
+			prop:	damage.01
+			V		6-6	damaged 
+			N-ARGM-TMP		11-12	in 1943 
+			N-ARG-A1		14-15	the church 
+	7	by
+	8	Allied
+			name:	MISC				8-8	Allied 
+	9	incendiary
+			sense:	incendiary.s.03
+	10	bombs
+			sense:	bomb.n.01
+	11	in
+	12	1943
+			name:	DATE				12-12	1943 
+	13	,
+	14	the
+	15	church
+			sense:	church.n.02
+	16	today
+			name:	DATE				16-16	today 
+			sense:	today.n.01
+	17	mainly
+			sense:	chiefly.r.01
+	18	retains
+			sense:	retain.v.04
+			prop:	retain.01
+			V		18-18	retains 
+			N-ARGM-ADV		0-12	Although rebuilt over the centuries and damaged by Allied incendiary bombs in 1943 
+			N-ARG-A0		14-15	the church 
+			N-ARGM-TMP		16-16	today 
+			N-ARGM-ADV		17-17	mainly 
+			N-ARG-A1		19-27	the character of a late - Gothic hall church 
+	19	the
+	20	character
+			sense:	quality.n.03
+	21	of
+	22	a
+	23	late
+			sense:	late.a.01
+	24	-
+	25	Gothic
+	26	hall
+			sense:	hall.n.03
+	27	church
+			sense:	church.n.02
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Thomanerchor , the choir of the Thomaskirche , likely founded in 1212 , remains a well - known boys ' choir .
+
+
+Treebanked sentence:
+--------------------
+The Thomanerchor , the choir of the Thomaskirche , likely founded in 1212 , remains a well - known boys ' choir . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Thomanerchor))
+      (, ,)
+      (NP
+        (NP
+          (NP (DT the) (NN choir))
+          (PP (IN of)
+            (NP (DT the) (NNP Thomaskirche))))
+        (, ,)
+        (VP
+          (ADVP (JJ likely))
+          (VBN founded)
+          (PP (IN in)
+            (NP (CD 1212)))))
+      (, ,))
+    (VP (VBZ remains)
+      (NP
+        (NP (DT a)
+          (ADJP (RB well) (HYPH -) (JJ known))
+          (NNS boys) (POS '))
+        (NN choir)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Thomanerchor
+	2	,
+	3	the
+	4	choir
+			sense:	choir.n.01
+	5	of
+	6	the
+	7	Thomaskirche
+	8	,
+	9	likely
+			sense:	likely.a.01
+	10	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		10-10	founded 
+			N-ARG-A1		3-7	the choir of the Thomaskirche 
+			N-ARGM-ADV		9-9	likely 
+			N-ARGM-TMP		11-12	in 1212 
+	11	in
+	12	1212
+			name:	DATE				12-12	1212 
+	13	,
+	14	remains
+			sense:	stay.v.01
+			prop:	remain.01
+			V		14-14	remains 
+			N-ARG-A1		0-13	The Thomanerchor , the choir of the Thomaskirche , likely founded in 1212 , 
+			N-ARG-A3		15-21	a well - known boys ' choir 
+	15	a
+	16	well
+			sense:	well.r.02
+	17	-
+	18	known
+			sense:	known.a.01
+	19	boys
+			sense:	male_child.n.01
+	20	'
+	21	choir
+			sense:	choir.n.01
+	22	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.9-15	a Lutheran church in Leipzig , Germany 
+				2.2-3	the church 
+

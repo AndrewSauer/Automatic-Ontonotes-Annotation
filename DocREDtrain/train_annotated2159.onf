@@ -1,0 +1,797 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Willamette Falls Locks are a lock system on the Willamette River in the U.S. state of Oregon .
+
+
+Treebanked sentence:
+--------------------
+The Willamette Falls Locks are a lock system on the Willamette River in the U.S. state of Oregon . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Willamette) (NNP Falls) (NNPS Locks))
+    (VP (VBP are)
+      (NP
+        (NP (DT a) (NN lock) (NN system))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NNP Willamette) (NNP River))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NNP U.S.) (NN state))
+                (PP (IN of)
+                  (NP (NNP Oregon)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Willamette
+			name:	ORGANIZATION				1-3	Willamette Falls Locks 
+	2	Falls
+	3	Locks
+	4	are
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	are 
+			N-ARG-A1		0-3	The Willamette Falls Locks 
+			N-ARG-A2		5-17	a lock system on the Willamette River in the U.S. state of Oregon 
+	5	a
+	6	lock
+			sense:	lock.n.04
+	7	system
+			sense:	system.n.01
+	8	on
+	9	the
+	10	Willamette
+			name:	LOCATION				10-10	Willamette 
+	11	River
+			name:	TITLE				11-11	River 
+	12	in
+	13	the
+	14	U.S.
+			name:	COUNTRY				14-14	U.S. 
+	15	state
+			sense:	state.n.01
+	16	of
+	17	Oregon
+			name:	STATE_OR_PROVINCE				17-17	Oregon 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Opened in 1873 and closed since 2011 , they allowed boat traffic on the Willamette to navigate beyond Willamette Falls .
+
+
+Treebanked sentence:
+--------------------
+Opened in 1873 and closed since 2011 , they allowed boat traffic on the Willamette to navigate beyond Willamette Falls . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP
+        (VP (VBN Opened)
+          (PP (IN in)
+            (NP (NNP 1873))))
+        (CC and)
+        (VP (VBD closed)
+          (PP (IN since)
+            (NP (CD 2011))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBD allowed)
+      (NP (NN boat) (NN traffic))
+      (PP (IN on)
+        (NP (DT the) (NNP Willamette)))
+      (S
+        (VP (TO to)
+          (VP (VB navigate)
+            (PP (IN beyond)
+              (NP (NNP Willamette) (NNP Falls)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Opened
+			sense:	open.v.02
+			prop:	open.01
+			V		0-0	Opened 
+			N-ARGM-TMP		1-2	in 1873 
+			N-ARG-A1		8-8	they 
+	1	in
+	2	1873
+			name:	DATE				2-2	1873 
+	3	and
+	4	closed
+			sense:	close_up.v.01
+			prop:	close.01
+			V		4-4	closed 
+			N-ARGM-TMP		5-6	since 2011 
+			N-ARG-A1		8-8	they 
+	5	since
+	6	2011
+			coref:	IDENT			1	6-6	2011 
+			name:	DATE				6-6	2011 
+	7	,
+	8	they
+	9	allowed
+			sense:	let.v.01
+			prop:	allow.01
+			V		9-9	allowed 
+			R-ARG-A0		0-6	Opened in 1873 and closed since 2011 
+			N-ARG-A0		8-8	they 
+			N-ARG-A1		10-19	boat traffic on the Willamette to navigate beyond Willamette Falls 
+	10	boat
+			sense:	boat.n.01
+	11	traffic
+			sense:	traffic.n.01
+	12	on
+	13	the
+			coref:	IDENT			0	13-14	the Willamette 
+	14	Willamette
+			name:	LOCATION				14-14	Willamette 
+	15	to
+	16	navigate
+			sense:	voyage.v.01
+			prop:	navigate.01
+			V		16-16	navigate 
+			N-ARG-A0		10-14	boat traffic on the Willamette 
+			N-ARG-A2		17-19	beyond Willamette Falls 
+	17	beyond
+	18	Willamette
+			name:	LOCATION				18-18	Willamette 
+	19	Falls
+			name:	CAUSE_OF_DEATH				19-19	Falls 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Since their closure in 2011 the locks are classified to be in a " non - operational status " and are expected to remain permanently closed .
+
+
+Treebanked sentence:
+--------------------
+Since their closure in 2011 the locks are classified to be in a " non - operational status " and are expected to remain permanently closed . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Since)
+      (NP
+        (NP (PRP$ their) (NN closure))
+        (PP (IN in)
+          (NP (CD 2011)))))
+    (NP (DT the) (NNS locks))
+    (VP
+      (VP (VBP are)
+        (VP (VBN classified)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (PP (IN in)
+                  (NP (DT a) (`` ")
+                    (ADJP (AFX non) (HYPH -) (JJ operational))
+                    (NN status) ('' "))))))))
+      (CC and)
+      (VP (VBP are)
+        (VP (VBN expected)
+          (S
+            (VP (TO to)
+              (VP (VB remain)
+                (ADJP (RB permanently) (JJ closed))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Since
+	1	their
+	2	closure
+			sense:	closure.n.07
+	3	in
+	4	2011
+			coref:	IDENT			1	4-4	2011 
+			name:	DATE				4-4	2011 
+	5	the
+	6	locks
+			sense:	lock.n.04
+	7	are
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	are 
+	8	classified
+			sense:	classify.v.01
+			prop:	classify.01
+			V		8-8	classified 
+			N-ARGM-TMP		0-4	Since their closure in 2011 
+			N-ARG-A1		5-6	the locks 
+			N-ARG-A2		9-18	to be in a " non - operational status " 
+	9	to
+	10	be
+			sense:	be.v.01
+			prop:	be.01
+			V		10-10	be 
+			N-ARG-A1		5-6	the locks 
+			N-ARG-A2		11-18	in a " non - operational status " 
+	11	in
+	12	a
+	13	"
+	14	non
+	15	-
+	16	operational
+			sense:	functional.s.04
+	17	status
+			sense:	condition.n.01
+	18	"
+	19	and
+	20	are
+			sense:	be.v.01
+			prop:	be.03
+			V		20-20	are 
+	21	expected
+			sense:	expect.v.01
+			prop:	expect.01
+			V		21-21	expected 
+			N-ARGM-TMP		0-4	Since their closure in 2011 
+			N-ARG-A1		22-25	to remain permanently closed 
+	22	to
+	23	remain
+			sense:	stay.v.01
+			prop:	remain.01
+			V		23-23	remain 
+			N-ARG-A1		5-6	the locks 
+			N-ARG-A3		24-25	permanently closed 
+	24	permanently
+			sense:	permanently.r.01
+	25	closed
+			sense:	closed.a.01
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Located in the Portland metropolitan area , the four inter - connected locks are 25 miles upriver from the Columbia River at West Linn , just across the Willamette River from Oregon City .
+
+
+Treebanked sentence:
+--------------------
+Located in the Portland metropolitan area , the four inter - connected locks are 25 miles upriver from the Columbia River at West Linn , just across the Willamette River from Oregon City . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Located)
+        (PP (IN in)
+          (NP (DT the) (NNP Portland) (JJ metropolitan) (NN area)))))
+    (, ,)
+    (NP (DT the)
+      (ADJP
+        (NP (CD four) (AFX inter))
+        (HYPH -) (VBN connected))
+      (NNS locks))
+    (VP (VBP are)
+      (ADVP
+        (ADVP
+          (NP (CD 25) (NNS miles))
+          (RB upriver)
+          (PP (IN from)
+            (NP
+              (NP (DT the) (NNP Columbia) (NNP River))
+              (PP (IN at)
+                (NP (NNP West) (NNP Linn))))
+            (, ,)
+            (ADVP (RB just))))
+        (PP (IN across)
+          (NP (DT the) (NNP Willamette) (NNP River))))
+      (PP (IN from)
+        (NP (NNP Oregon) (NNP City))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		0-0	Located 
+			N-ARGM-LOC		1-5	in the Portland metropolitan area 
+			N-ARG-A1		7-12	the four inter - connected locks 
+	1	in
+	2	the
+	3	Portland
+			name:	CITY				3-3	Portland 
+	4	metropolitan
+			sense:	metropolitan.a.01
+	5	area
+			sense:	area.n.01
+	6	,
+	7	the
+	8	four
+			name:	NUMBER				8-8	four 
+	9	inter
+	10	-
+	11	connected
+			sense:	connect.v.03
+			prop:	connect.01
+			V		11-11	connected 
+			N-ARG-A1		12-12	locks 
+	12	locks
+			sense:	lock.n.04
+	13	are
+			sense:	be.v.03
+			prop:	be.01
+			V		13-13	are 
+			R-ARG-A1		0-5	Located in the Portland metropolitan area 
+			N-ARG-A1		7-12	the four inter - connected locks 
+			N-ARG-A2		14-32	25 miles upriver from the Columbia River at West Linn , just across the Willamette River from Oregon City 
+	14	25
+			name:	NUMBER				14-14	25 
+	15	miles
+			sense:	mile.n.01
+	16	upriver
+			sense:	upriver.r.01
+	17	from
+	18	the
+	19	Columbia
+			name:	STATE_OR_PROVINCE				19-19	Columbia 
+	20	River
+			name:	TITLE				20-20	River 
+	21	at
+	22	West
+			name:	CITY				22-23	West Linn 
+	23	Linn
+	24	,
+	25	just
+			sense:	precisely.r.01
+	26	across
+	27	the
+			coref:	IDENT			0	27-29	the Willamette River 
+	28	Willamette
+			name:	LOCATION				28-28	Willamette 
+	29	River
+			name:	TITLE				29-29	River 
+	30	from
+	31	Oregon
+			name:	CITY				31-32	Oregon City 
+	32	City
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The locks were operated by the United States Army Corps of Engineers and served primarily pleasure boats .
+
+
+Treebanked sentence:
+--------------------
+The locks were operated by the United States Army Corps of Engineers and served primarily pleasure boats . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNS locks))
+    (VP
+      (VP (VBD were)
+        (VP (VBN operated)
+          (PP (IN by)
+            (NP
+              (NP (DT the) (NNP United) (NNP States) (NNP Army) (NNP Corps))
+              (PP (IN of)
+                (NP (NNPS Engineers)))))))
+      (CC and)
+      (VP (VBD served)
+        (ADVP (RB primarily))
+        (NP (NN pleasure) (NNS boats))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	locks
+			sense:	lock.n.04
+	2	were
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	were 
+	3	operated
+			sense:	operate.v.01
+			prop:	operate.01
+			V		3-3	operated 
+			N-ARG-A1		0-1	The locks 
+			N-ARG-A0		4-11	by the United States Army Corps of Engineers 
+	4	by
+	5	the
+	6	United
+			name:	ORGANIZATION				6-11	United States Army Corps of Engineers 
+	7	States
+	8	Army
+	9	Corps
+	10	of
+	11	Engineers
+	12	and
+	13	served
+			sense:	service.v.01
+			prop:	serve.01
+			V		13-13	served 
+			N-ARG-A0		0-1	The locks 
+			N-ARGM-ADV		14-14	primarily 
+			N-ARG-A2		15-16	pleasure boats 
+	14	primarily
+			sense:	chiefly.r.01
+	15	pleasure
+			sense:	pleasure.n.04
+	16	boats
+			sense:	boat.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Passage through the locks was free for both commercial and recreational vessels .
+
+
+Treebanked sentence:
+--------------------
+Passage through the locks was free for both commercial and recreational vessels . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NN Passage))
+      (PP (IN through)
+        (NP (DT the) (NNS locks))))
+    (VP (VBD was)
+      (ADJP (JJ free)
+        (PP (IN for)
+          (NP (DT both)
+            (ADJP (JJ commercial)
+              (CC and)
+              (JJ recreational))
+            (NNS vessels)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Passage
+			sense:	passage.n.05
+	1	through
+	2	the
+	3	locks
+			sense:	lock.n.04
+	4	was
+			sense:	be.v.01
+			prop:	be.01
+			V		4-4	was 
+			N-ARG-A1		0-3	Passage through the locks 
+			N-ARG-A2		5-11	free for both commercial and recreational vessels 
+	5	free
+			sense:	complimentary.s.02
+	6	for
+	7	both
+	8	commercial
+			sense:	commercial.a.01
+	9	and
+	10	recreational
+			sense:	recreational.a.01
+	11	vessels
+			sense:	vessel.n.02
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The locks were added to the National Register of Historic Places in 1974 .
+
+
+Treebanked sentence:
+--------------------
+The locks were added to the National Register of Historic Places in 1974 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNS locks))
+    (VP (VBD were)
+      (VP (VBN added)
+        (PP (IN to)
+          (NP
+            (NP (DT the) (NNP National) (NNP Register))
+            (PP (IN of)
+              (NP (JJ Historic) (NNS Places)))))
+        (PP (IN in)
+          (NP (CD 1974)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	locks
+			sense:	lock.n.04
+	2	were
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	were 
+	3	added
+			sense:	add.v.01
+			prop:	add.02
+			V		3-3	added 
+			N-ARG-A1		0-1	The locks 
+			N-ARG-A2		4-10	to the National Register of Historic Places 
+			N-ARGM-TMP		11-12	in 1974 
+	4	to
+	5	the
+	6	National
+	7	Register
+	8	of
+	9	Historic
+			sense:	historic.s.02
+	10	Places
+			sense:	place.n.02
+	11	in
+	12	1974
+			name:	DATE				12-12	1974 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The locks comprise seven gates in four chambers which lift up to elevation change ( depending on tides and river flow ) with a usable width of .
+
+
+Treebanked sentence:
+--------------------
+The locks comprise seven gates in four chambers which lift up to elevation change ( depending on tides and river flow ) with a usable width of . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNS locks))
+    (VP (VBP comprise)
+      (NP
+        (NP (CD seven) (NNS gates))
+        (PP (IN in)
+          (NP
+            (NP (CD four) (NNS chambers))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBP lift)
+                  (PRT (RP up))
+                  (PP (IN to)
+                    (NP (NN elevation) (NN change)))
+                  (PP (-LRB- -LRB-) (VBG depending)
+                    (PP (IN on)
+                      (NP
+                        (NP (NNS tides))
+                        (CC and)
+                        (NP (NN river) (NN flow))))
+                    (-RRB- -RRB-))))))))
+      (PP (IN with)
+        (NP
+          (NP (DT a) (JJ usable) (NN width))
+          (PP (IN of)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	locks
+			sense:	lock.n.04
+	2	comprise
+			sense:	consist.v.04
+			prop:	comprise.01
+			V		2-2	comprise 
+			N-ARG-A1		0-1	The locks 
+			N-ARG-A2		3-26	seven gates in four chambers which lift up to elevation change ( depending on tides and river flow ) with a usable width of 
+	3	seven
+			name:	NUMBER				3-3	seven 
+	4	gates
+			sense:	gate.n.01
+	5	in
+	6	four
+			name:	NUMBER				6-6	four 
+	7	chambers
+			sense:	chamber.n.01
+	8	which
+	9	lift
+			sense:	raise.v.02
+			prop:	lift.01
+			V		9-9	lift 
+			N-ARG-A1		3-6	seven gates in four 
+			N-ARG-A0		7-7	chambers 
+			R-ARG-A1		8-8	which 
+			N-ARG-A4		10-13	up to elevation change 
+			N-ARGM-ADV		15-20	depending on tides and river flow 
+			N-ARGM-ADV		22-26	with a usable width of 
+	10	up
+	11	to
+	12	elevation
+			sense:	elevation.n.05
+	13	change
+			sense:	change.n.02
+	14	(
+	15	depending
+			sense:	depend.v.01
+			prop:	depend.01
+			V		15-15	depending 
+			N-ARG-A0		12-13	elevation change 
+			N-ARG-A1		16-20	on tides and river flow 
+	16	on
+	17	tides
+			sense:	tide.n.01
+	18	and
+	19	river
+			name:	TITLE				19-19	river 
+			sense:	river.n.01
+	20	flow
+			sense:	flow.n.02
+	21	)
+	22	with
+	23	a
+	24	usable
+			sense:	useable.s.02
+	25	width
+			sense:	width.n.01
+	26	of
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The system is long , and can accommodate vessels up to long .
+
+
+Treebanked sentence:
+--------------------
+The system is long , and can accommodate vessels up to long . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN system))
+    (VP
+      (VP (VBZ is)
+        (ADVP (RB long)))
+      (, ,)
+      (CC and)
+      (VP (MD can)
+        (VP (VB accommodate)
+          (NP (NNS vessels))
+          (PRT (RP up))
+          (PP (IN to)
+            (ADJP (JJ long))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	system
+			sense:	system.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The system 
+			N-ARG-A2		3-3	long 
+	3	long
+			sense:	long.r.02
+	4	,
+	5	and
+	6	can
+	7	accommodate
+			sense:	accommodate.v.04
+			prop:	accommodate.01
+			V		7-7	accommodate 
+			N-ARG-A0		0-1	The system 
+			N-ARGM-MOD		6-6	can 
+			N-ARG-A1		8-11	vessels up to long 
+	8	vessels
+			sense:	vessel.n.02
+	9	up
+	10	to
+	11	long
+			sense:	long.a.02
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Each of the four concrete constructed chambers are .
+
+
+Treebanked sentence:
+--------------------
+Each of the four concrete constructed chambers are . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT Each))
+      (PP (IN of)
+        (NP (DT the) (CD four)
+          (ADJP (JJ concrete) (VBN constructed))
+          (NNS chambers))))
+    (VP (VBP are))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Each
+	1	of
+	2	the
+	3	four
+			name:	NUMBER				3-3	four 
+	4	concrete
+			sense:	concrete.s.02
+	5	constructed
+			sense:	construct.v.01
+			prop:	construct.01
+			V		5-5	constructed 
+			N-ARG-A1		6-6	chambers 
+	6	chambers
+			sense:	chamber.n.01
+	7	are
+			sense:	be.v.01
+			prop:	be.01
+			V		7-7	are 
+			N-ARG-A1		0-6	Each of the four concrete constructed chambers 
+	8	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.27-29	the Willamette River 
+				1.13-14	the Willamette 
+	Chain 1 (IDENT)
+				1.6-6	2011 
+				2.4-4	2011 
+

@@ -1,0 +1,565 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Wattles Estate , originally known as Jualita , is a historic house and park in the Hollywood area of Los Angeles , California , United States .
+
+
+Treebanked sentence:
+--------------------
+The Wattles Estate , originally known as Jualita , is a historic house and park in the Hollywood area of Los Angeles , California , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Wattles) (NNP Estate))
+      (, ,)
+      (VP
+        (ADVP (RB originally))
+        (VBN known)
+        (PP (IN as)
+          (NP (NNP Jualita))))
+      (, ,))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ historic) (NN house)
+          (CC and)
+          (NN park))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNP Hollywood) (NN area))
+            (PP (IN of)
+              (NP
+                (NML
+                  (NML (NNP Los) (NNP Angeles))
+                  (, ,)
+                  (NP (NNP California))
+                  (, ,))
+                (NNP United) (NNP States)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Wattles
+			name:	ORGANIZATION				1-2	Wattles Estate 
+	2	Estate
+	3	,
+	4	originally
+			sense:	primitively.r.01
+	5	known
+			sense:	know.v.04
+			prop:	know.01
+			V		5-5	known 
+			N-ARG-A1		0-2	The Wattles Estate 
+			N-ARGM-TMP		4-4	originally 
+			N-ARG-A2		6-7	as Jualita 
+	6	as
+	7	Jualita
+			coref:	IDENT			1	7-7	Jualita 
+			name:	LOCATION				7-7	Jualita 
+	8	,
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-7	The Wattles Estate , originally known as Jualita 
+			N-ARG-A2		10-26	a historic house and park in the Hollywood area of Los Angeles , California , United States 
+	10	a
+	11	historic
+			sense:	historic.s.01
+	12	house
+			sense:	house.n.01
+	13	and
+	14	park
+			sense:	park.n.01
+	15	in
+	16	the
+	17	Hollywood
+			coref:	IDENT			2	17-17	Hollywood 
+			name:	CITY				17-17	Hollywood 
+	18	area
+			sense:	area.n.01
+	19	of
+	20	Los
+			coref:	IDENT			0	20-21	Los Angeles 
+			name:	CITY				20-21	Los Angeles 
+	21	Angeles
+	22	,
+	23	California
+			name:	STATE_OR_PROVINCE				23-23	California 
+	24	,
+	25	United
+			name:	COUNTRY				25-26	United States 
+	26	States
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was built in 1907 by wealthy Omaha , Nebraska , banker Gurdon Wattles as a winter home .
+
+
+Treebanked sentence:
+--------------------
+It was built in 1907 by wealthy Omaha , Nebraska , banker Gurdon Wattles as a winter home . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN built)
+        (PP (IN in)
+          (NP (CD 1907)))
+        (PP (IN by)
+          (NP
+            (NP (JJ wealthy)
+              (NML (NNP Omaha) (, ,) (NNP Nebraska) (, ,))
+              (NN banker))
+            (NP (NNP Gurdon) (NNP Wattles))))
+        (PP (IN as)
+          (NP (DT a) (NN winter) (NN home)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		2-2	built 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		3-4	in 1907 
+			N-ARG-A0		5-13	by wealthy Omaha , Nebraska , banker Gurdon Wattles 
+			N-ARGM-PNC		14-17	as a winter home 
+	3	in
+	4	1907
+			name:	DATE				4-4	1907 
+	5	by
+	6	wealthy
+			sense:	affluent.s.01
+	7	Omaha
+			name:	CITY				7-7	Omaha 
+	8	,
+	9	Nebraska
+			name:	STATE_OR_PROVINCE				9-9	Nebraska 
+	10	,
+	11	banker
+			name:	TITLE				11-11	banker 
+			sense:	banker.n.01
+	12	Gurdon
+			name:	PERSON				12-13	Gurdon Wattles 
+	13	Wattles
+	14	as
+	15	a
+	16	winter
+			name:	DATE				16-16	winter 
+			sense:	winter.n.01
+	17	home
+			sense:	dwelling.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Next to the Wattles Mansion are Wattles Park and Wattles Gardens , now administered by the City of Los Angeles and open to the public .
+
+
+Treebanked sentence:
+--------------------
+Next to the Wattles Mansion are Wattles Park and Wattles Gardens , now administered by the City of Los Angeles and open to the public . 
+
+Tree:
+-----
+(ROOT
+  (SINV
+    (PP
+      (ADVP (RB Next))
+      (IN to)
+      (NP (DT the) (NNP Wattles) (NNP Mansion)))
+    (VP (VBP are))
+    (NP
+      (NP
+        (NP (NNP Wattles) (NNP Park))
+        (CC and)
+        (NP (NNP Wattles) (NNPS Gardens)))
+      (, ,)
+      (VP
+        (ADVP (RB now))
+        (VP (VBN administered)
+          (PP (IN by)
+            (NP
+              (NP (DT the) (NNP City))
+              (PP (IN of)
+                (NP (NNP Los) (NNP Angeles))))))
+        (CC and)
+        (VP (JJ open)
+          (PP (IN to)
+            (NP (DT the) (NN public))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Next
+			sense:	next.r.01
+	1	to
+	2	the
+	3	Wattles
+			name:	LOCATION				3-3	Wattles 
+	4	Mansion
+			name:	CITY				4-4	Mansion 
+	5	are
+			sense:	be.v.03
+			prop:	be.01
+			V		5-5	are 
+			N-ARG-A2		0-4	Next to the Wattles Mansion 
+			N-ARG-A1		6-24	Wattles Park and Wattles Gardens , now administered by the City of Los Angeles and open to the public 
+	6	Wattles
+			name:	LOCATION				6-7	Wattles Park 
+	7	Park
+	8	and
+	9	Wattles
+			name:	LOCATION				9-10	Wattles Gardens 
+	10	Gardens
+	11	,
+	12	now
+			name:	DATE				12-12	now 
+			sense:	nowadays.r.01
+	13	administered
+			sense:	administer.v.01
+			prop:	administer.01
+			V		13-13	administered 
+			N-ARG-A1		6-10	Wattles Park and Wattles Gardens 
+			N-ARGM-TMP		12-12	now 
+			N-ARG-A0		14-19	by the City of Los Angeles 
+	14	by
+	15	the
+	16	City
+	17	of
+	18	Los
+			coref:	IDENT			0	18-19	Los Angeles 
+			name:	CITY				18-19	Los Angeles 
+	19	Angeles
+	20	and
+	21	open
+			sense:	open.s.07
+	22	to
+	23	the
+	24	public
+			sense:	populace.n.01
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The estate has been recognized as " the only remaining intact example of the once plentiful Hollywood estates from the period preceding the film industry , when Hollywood was primarily agricultural and was a wintering home for wealthy Easterners and Midwesterners . "
+
+
+Treebanked sentence:
+--------------------
+The estate has been recognized as " the only remaining intact example of the once plentiful Hollywood estates from the period preceding the film industry , when Hollywood was primarily agricultural and was a wintering home for wealthy Easterners and Midwesterners . " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN estate))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN recognized)
+          (PP (IN as) (`` ")
+            (NP
+              (NP (DT the) (JJ only))
+              (VP (VBG remaining)
+                (NP
+                  (NP (JJ intact) (NN example))
+                  (PP (IN of)
+                    (NP (DT the)
+                      (ADJP (RB once) (JJ plentiful))
+                      (NNP Hollywood) (NNS estates))))
+                (PP (IN from)
+                  (NP
+                    (NP (DT the) (NN period))
+                    (VP (VBG preceding)
+                      (NP (DT the) (NN film) (NN industry)))))
+                (, ,)
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (NNP Hollywood))
+                    (VP
+                      (VP (VBD was)
+                        (ADJP (RB primarily) (JJ agricultural)))
+                      (CC and)
+                      (VP (VBD was)
+                        (NP
+                          (NP (DT a) (VBG wintering) (NN home))
+                          (PP (IN for)
+                            (NP (JJ wealthy) (NNS Easterners)
+                              (CC and)
+                              (NNS Midwesterners))))))))))))))
+    (. .) ('' ")))
+
+
+Leaves:
+-------
+	0	The
+	1	estate
+			sense:	estate.n.02
+	2	has
+			sense:	have.v.02
+			prop:	have.01
+			V		2-2	has 
+	3	been
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	been 
+	4	recognized
+			sense:	acknowledge.v.06
+			prop:	recognize.01
+			V		4-4	recognized 
+			N-ARG-A1		0-1	The estate 
+			N-ARG-A2		5-40	as " the only remaining intact example of the once plentiful Hollywood estates from the period preceding the film industry , when Hollywood was primarily agricultural and was a wintering home for wealthy Easterners and Midwesterners 
+	5	as
+	6	"
+	7	the
+	8	only
+			sense:	lone.s.03
+	9	remaining
+			sense:	remain.v.03
+			prop:	remain.01
+			V		9-9	remaining 
+			N-ARG-A1		10-11	intact example 
+	10	intact
+			sense:	integral.s.02
+	11	example
+			sense:	example.n.01
+	12	of
+	13	the
+	14	once
+			name:	DATE				14-14	once 
+			sense:	once.r.03
+	15	plentiful
+			sense:	plentiful.s.01
+	16	Hollywood
+			coref:	IDENT			2	16-16	Hollywood 
+			name:	CITY				16-16	Hollywood 
+	17	estates
+			sense:	estate.n.02
+	18	from
+	19	the
+	20	period
+			sense:	time_period.n.01
+	21	preceding
+			sense:	predate.v.01
+			prop:	precede.01
+			V		21-21	preceding 
+			N-ARG-A0		19-20	the period 
+			N-ARG-A1		22-24	the film industry 
+	22	the
+	23	film
+			sense:	movie.n.01
+	24	industry
+			sense:	industry.n.01
+	25	,
+	26	when
+	27	Hollywood
+			coref:	IDENT			2	27-27	Hollywood 
+			name:	CITY				27-27	Hollywood 
+	28	was
+			sense:	be.v.01
+			prop:	be.01
+			V		28-28	was 
+			N-ARGM-TMP		26-26	when 
+			N-ARG-A1		27-27	Hollywood 
+			N-ARG-A2		29-30	primarily agricultural 
+	29	primarily
+			sense:	chiefly.r.01
+	30	agricultural
+			sense:	agrarian.s.01
+	31	and
+	32	was
+			sense:	be.v.02
+			prop:	be.01
+			V		32-32	was 
+			N-ARGM-TMP		26-26	when 
+			N-ARG-A1		27-27	Hollywood 
+			N-ARG-A2		33-40	a wintering home for wealthy Easterners and Midwesterners 
+	33	a
+	34	wintering
+			sense:	winter.v.01
+			prop:	winter.01
+			V		34-34	wintering 
+			N-ARG-A1		35-35	home 
+	35	home
+			sense:	home.n.01
+	36	for
+	37	wealthy
+			sense:	affluent.s.01
+	38	Easterners
+			name:	MISC				38-38	Easterners 
+			sense:	easterner.n.01
+	39	and
+	40	Midwesterners
+	41	.
+	42	"
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+According to the City of Los Angeles , " ' Jualita ' is one of the few remaining landscapes reminiscent of another era and tradition , possessing a genuine integrity of setting , design , workmanship , and association . "
+
+
+Treebanked sentence:
+--------------------
+According to the City of Los Angeles , " ' Jualita ' is one of the few remaining landscapes reminiscent of another era and tradition , possessing a genuine integrity of setting , design , workmanship , and association . " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (VBG According)
+      (PP (IN to)
+        (NP
+          (NP (DT the) (NNP City))
+          (PP (IN of)
+            (NP (NNP Los) (NNP Angeles))))))
+    (, ,) ('' ")
+    (NP (`` ') (NNP Jualita) ('' '))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (JJ few) (VBG remaining) (NNS landscapes))
+              (ADJP (JJ reminiscent)
+                (PP (IN of)
+                  (NP (DT another) (NN era)
+                    (CC and)
+                    (NN tradition)))))))
+        (, ,)
+        (VP (VBG possessing)
+          (NP
+            (NP (DT a) (JJ genuine) (NN integrity))
+            (PP (IN of)
+              (NP (NN setting) (, ,) (NN design) (, ,) (NN workmanship) (, ,)
+                (CC and)
+                (NN association)))))))
+    (. .) ('' ")))
+
+
+Leaves:
+-------
+	0	According
+			sense:	harmonize.v.01
+			prop:	accord.01
+			V		0-0	According 
+	1	to
+	2	the
+	3	City
+	4	of
+	5	Los
+			coref:	IDENT			0	5-6	Los Angeles 
+			name:	CITY				5-6	Los Angeles 
+	6	Angeles
+	7	,
+	8	"
+	9	'
+	10	Jualita
+			coref:	IDENT			1	10-10	Jualita 
+	11	'
+	12	is
+			sense:	be.v.01
+			prop:	be.01
+			V		12-12	is 
+			N-ARGM-ADV		0-6	According to the City of Los Angeles 
+			N-ARG-A1		10-10	Jualita 
+			N-ARG-A2		13-24	one of the few remaining landscapes reminiscent of another era and tradition 
+			N-ARGM-PRD		26-38	possessing a genuine integrity of setting , design , workmanship , and association 
+	13	one
+			name:	NUMBER				13-13	one 
+	14	of
+	15	the
+	16	few
+			sense:	few.a.01
+	17	remaining
+			sense:	remain.v.03
+			prop:	remain.01
+			V		17-17	remaining 
+			N-ARG-A1		18-18	landscapes 
+	18	landscapes
+			sense:	landscape.n.01
+	19	reminiscent
+			sense:	evocative.s.01
+	20	of
+	21	another
+	22	era
+			sense:	era.n.01
+	23	and
+	24	tradition
+			sense:	custom.n.02
+	25	,
+	26	possessing
+			sense:	possess.v.01
+			prop:	possess.01
+			V		26-26	possessing 
+			N-ARG-A0		9-11	' Jualita ' 
+			N-ARG-A1		27-38	a genuine integrity of setting , design , workmanship , and association 
+	27	a
+	28	genuine
+			sense:	genuine.a.01
+	29	integrity
+			sense:	integrity.n.01
+	30	of
+	31	setting
+			sense:	mise_en_scene.n.01
+	32	,
+	33	design
+			sense:	design.n.02
+	34	,
+	35	workmanship
+			sense:	craft.n.04
+	36	,
+	37	and
+	38	association
+			sense:	association.n.03
+	39	.
+	40	"
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.20-21	Los Angeles 
+				2.18-19	Los Angeles 
+				4.5-6	Los Angeles 
+	Chain 1 (IDENT)
+				0.7-7	Jualita 
+				4.10-10	Jualita 
+	Chain 2 (IDENT)
+				0.17-17	Hollywood 
+				3.16-16	Hollywood 
+				3.27-27	Hollywood 
+

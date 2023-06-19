@@ -1,0 +1,746 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+William Harry Towers ( 13 July 1920 – April 2000 ) was an English professional footballer .
+
+
+Treebanked sentence:
+--------------------
+William Harry Towers ( 13 July 1920 – April 2000 ) was an English professional footballer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP William) (NNP Harry) (NNP Towers))
+      (-LRB- -LRB-)
+      (NP
+        (NP (CD 13))
+        (NP-TMP (NNP July) (CD 1920))
+        (PP (SYM –)
+          (NP (NNP April) (CD 2000))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT an) (NNP English) (JJ professional) (NN footballer)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	William
+			coref:	IDENT			1	0-2	William Harry Towers 
+			name:	PERSON				0-2	William Harry Towers 
+	1	Harry
+	2	Towers
+	3	(
+	4	13
+			name:	DATE				4-6	13 July 1920 
+	5	July
+	6	1920
+	7	–
+	8	April
+			coref:	IDENT			2	8-9	April 2000 
+			name:	DATE				8-9	April 2000 
+	9	2000
+	10	)
+	11	was
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	was 
+			N-ARG-A1		0-10	William Harry Towers ( 13 July 1920 – April 2000 ) 
+			N-ARG-A2		12-15	an English professional footballer 
+	12	an
+	13	English
+			name:	NATIONALITY				13-13	English 
+	14	professional
+			sense:	professional.a.01
+	15	footballer
+			name:	TITLE				15-15	footballer 
+			sense:	football_player.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was born in Leicester .
+
+
+Treebanked sentence:
+--------------------
+He was born in Leicester . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Leicester)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-4	in Leicester 
+	3	in
+	4	Leicester
+			coref:	IDENT			3	4-4	Leicester 
+			name:	CITY				4-4	Leicester 
+	5	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bill Towers signed for Leicester City from local side Bentley Eng .
+
+
+Treebanked sentence:
+--------------------
+Bill Towers signed for Leicester City from local side Bentley Eng . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bill) (NNP Towers))
+    (VP (VBD signed)
+      (PP (IN for)
+        (NP (NNP Leicester) (NNP City)))
+      (PP (IN from)
+        (NP
+          (NML (JJ local) (NN side))
+          (NNP Bentley) (NNP Eng))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bill
+			coref:	IDENT			1	0-1	Bill Towers 
+			name:	PERSON				0-1	Bill Towers 
+	1	Towers
+	2	signed
+			sense:	sign.v.03
+			prop:	sign.02
+			V		2-2	signed 
+			N-ARG-A0		0-1	Bill Towers 
+			N-ARG-A2		6-10	from local side Bentley Eng 
+	3	for
+	4	Leicester
+			coref:	IDENT			3	4-5	Leicester City 
+			name:	CITY				4-4	Leicester 
+	5	City
+			name:	LOCATION				5-5	City 
+	6	from
+	7	local
+			sense:	local.a.01
+	8	side
+			sense:	side.n.02
+	9	Bentley
+			name:	ORGANIZATION				9-10	Bentley Eng 
+	10	Eng
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+in January 1945 , making 4 league appearances in the first post - war Football League season .
+
+
+Treebanked sentence:
+--------------------
+in January 1945 , making 4 league appearances in the first post - war Football League season . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN in)
+      (NP (NNP January) (CD 1945)))
+    (, ,)
+    (VP (VBG making)
+      (NP (CD 4) (NN league) (NNS appearances))
+      (PP (IN in)
+        (NP (DT the) (JJ first)
+          (NML
+            (NML (NN post) (HYPH -) (NN war))
+            (NNP Football) (NNP League))
+          (NN season))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	in
+	1	January
+			name:	DATE				1-2	January 1945 
+	2	1945
+	3	,
+	4	making
+			sense:	make.v.01
+			prop:	make.01
+			V		4-4	making 
+			N-ARG-A1		5-7	4 league appearances 
+			N-ARGM-TMP		8-16	in the first post - war Football League season 
+	5	4
+			name:	NUMBER				5-5	4 
+	6	league
+			sense:	league.n.01
+	7	appearances
+			sense:	appearance.n.05
+	8	in
+	9	the
+	10	first
+			name:	ORDINAL				10-10	first 
+			sense:	first.a.01
+	11	post
+			sense:	position.n.06
+	12	-
+	13	war
+			name:	CAUSE_OF_DEATH				13-13	war 
+			sense:	war.n.02
+	14	Football
+			coref:	IDENT			4	14-15	Football League 
+			name:	ORGANIZATION				14-15	Football League 
+	15	League
+	16	season
+			sense:	season.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was signed by Jack Butler for Torquay United in October 1946 and went on to make 292 first team games ( 274 in the league ) , all of which came at either wing - half or right - back .
+
+
+Treebanked sentence:
+--------------------
+He was signed by Jack Butler for Torquay United in October 1946 and went on to make 292 first team games ( 274 in the league ) , all of which came at either wing - half or right - back . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN signed)
+          (PP (IN by)
+            (NP
+              (NP (NNP Jack) (NNP Butler))
+              (PP (IN for)
+                (NP
+                  (NP (NNP Torquay) (NNP United))
+                  (PP (IN in)
+                    (NP (NNP October) (CD 1946)))))))))
+      (CC and)
+      (VP (VBD went)
+        (PP (IN on))
+        (S
+          (VP (TO to)
+            (VP (VB make)
+              (NP
+                (NP
+                  (NP (CD 292) (JJ first) (NN team) (NNS games))
+                  (-LRB- -LRB-)
+                  (NP
+                    (NP (CD 274))
+                    (PP (IN in)
+                      (NP (DT the) (NN league))))
+                  (-RRB- -RRB-))
+                (, ,)
+                (SBAR
+                  (WHNP
+                    (NP (DT all))
+                    (WHPP (IN of)
+                      (WHNP (WDT which))))
+                  (S
+                    (VP (VBD came)
+                      (PP (IN at)
+                        (NP (CC either)
+                          (NP (NN wing) (HYPH -) (NN half))
+                          (CC or)
+                          (NP (JJ right) (HYPH -) (NN back)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	signed
+			sense:	sign.v.03
+			prop:	sign.02
+			V		2-2	signed 
+			N-ARG-A1		0-0	He 
+			N-ARG-A0		3-5	by Jack Butler 
+			N-ARGM-ADV		6-8	for Torquay United 
+			N-ARGM-TMP		9-11	in October 1946 
+	3	by
+	4	Jack
+			name:	PERSON				4-5	Jack Butler 
+	5	Butler
+	6	for
+	7	Torquay
+			name:	ORGANIZATION				7-8	Torquay United 
+	8	United
+	9	in
+	10	October
+			name:	DATE				10-11	October 1946 
+	11	1946
+	12	and
+	13	went
+			sense:	go.v.02
+			prop:	go.15
+			V		13-13	went 
+			N-ARG-A1		0-0	He 
+			C-ARG-A1		15-40	to make 292 first team games ( 274 in the league ) , all of which came at either wing - half or right - back 
+	14	on
+	15	to
+	16	make
+			sense:	make.v.01
+			prop:	make.01
+			V		16-16	make 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		17-40	292 first team games ( 274 in the league ) , all of which came at either wing - half or right - back 
+	17	292
+			name:	NUMBER				17-17	292 
+	18	first
+			name:	ORDINAL				18-18	first 
+			sense:	first.s.02
+	19	team
+			sense:	team.n.01
+	20	games
+			sense:	game.n.02
+	21	(
+	22	274
+			name:	NUMBER				22-22	274 
+	23	in
+	24	the
+			coref:	IDENT			4	24-25	the league 
+	25	league
+			sense:	league.n.01
+	26	)
+	27	,
+	28	all
+	29	of
+	30	which
+	31	came
+			sense:	come.v.03
+			prop:	come.01
+			V		31-31	came 
+			N-ARG-A1		17-26	292 first team games ( 274 in the league ) 
+			R-ARG-A1		28-30	all of which 
+			N-ARGM-LOC		32-40	at either wing - half or right - back 
+	32	at
+	33	either
+	34	wing
+			sense:	wing.n.06
+	35	-
+	36	half
+			sense:	one-half.n.01
+	37	or
+	38	right
+			sense:	right.a.01
+	39	-
+	40	back
+			sense:	back.n.04
+	41	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Before retiring in 1955 , Towers played under 5 managers at Plainmoor and played in the Gulls ' 1954 – 55 run in the FA Cup in which the Gulls beat Leeds United before losing 1–0 at home to Huddersfield Town in front of the biggest crowd ever seen at Plainmoor .
+
+
+Treebanked sentence:
+--------------------
+Before retiring in 1955 , Towers played under 5 managers at Plainmoor and played in the Gulls ' 1954 – 55 run in the FA Cup in which the Gulls beat Leeds United before losing 1 – 0 at home to Huddersfield Town in front of the biggest crowd ever seen at Plainmoor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Before)
+      (S
+        (VP (VBG retiring)
+          (PP (IN in)
+            (NP (CD 1955))))))
+    (, ,)
+    (NP (NNP Towers))
+    (VP
+      (VP (VBD played)
+        (PP (IN under)
+          (NP (CD 5) (NNS managers)))
+        (PP (IN at)
+          (NP (NNP Plainmoor))))
+      (CC and)
+      (VP (VBD played)
+        (PP (IN in)
+          (NP
+            (NP
+              (NP (DT the) (NNP Gulls) (POS '))
+              (NML
+                (QP (CD 1954) (SYM –) (CD 55)))
+              (NN run))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN FA) (NN Cup))
+                (SBAR
+                  (WHPP (IN in)
+                    (WHNP (WDT which)))
+                  (S
+                    (NP (DT the) (NNP Gulls))
+                    (VP (VBD beat)
+                      (NP (NNP Leeds) (NNP United))
+                      (PP (IN before)
+                        (S
+                          (VP (VBG losing)
+                            (NP
+                              (NP
+                                (QP (CD 1) (SYM –) (CD 0)))
+                              (PP (IN at)
+                                (NP (NN home))))
+                            (PP (IN to)
+                              (NP
+                                (NP (NNP Huddersfield) (NNP Town))
+                                (PP (IN in)
+                                  (NP
+                                    (NP (NN front))
+                                    (PP (IN of)
+                                      (NP
+                                        (NP (DT the) (JJS biggest) (NN crowd))
+                                        (VP
+                                          (ADVP (RB ever))
+                                          (VBN seen)
+                                          (PP (IN at)
+                                            (NP (NNP Plainmoor))))))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Before
+	1	retiring
+			sense:	retire.v.02
+			prop:	retire.01
+			V		1-1	retiring 
+			N-ARGM-TMP		2-3	in 1955 
+			N-ARG-A0		5-5	Towers 
+	2	in
+	3	1955
+			name:	DATE				3-3	1955 
+	4	,
+	5	Towers
+			coref:	IDENT			1	5-5	Towers 
+	6	played
+			sense:	play.v.01
+			prop:	play.01
+			V		6-6	played 
+			N-ARGM-TMP		0-3	Before retiring in 1955 
+			N-ARG-A0		5-5	Towers 
+			N-ARGM-ADV		7-9	under 5 managers 
+			N-ARGM-LOC		10-11	at Plainmoor 
+	7	under
+	8	5
+			name:	NUMBER				8-8	5 
+	9	managers
+			sense:	coach.n.01
+	10	at
+	11	Plainmoor
+			coref:	IDENT			0	11-11	Plainmoor 
+			name:	LOCATION				11-11	Plainmoor 
+	12	and
+	13	played
+			sense:	play.v.01
+			prop:	play.01
+			V		13-13	played 
+			N-ARGM-TMP		0-3	Before retiring in 1955 
+			N-ARG-A0		5-5	Towers 
+			N-ARGM-LOC		14-52	in the Gulls ' 1954 – 55 run in the FA Cup in which the Gulls beat Leeds United before losing 1 – 0 at home to Huddersfield Town in front of the biggest crowd ever seen at Plainmoor 
+	14	in
+	15	the
+	16	Gulls
+	17	'
+	18	1954
+			name:	DATE				18-18	1954 
+	19	–
+	20	55
+			name:	NUMBER				20-20	55 
+	21	run
+			sense:	streak.n.01
+	22	in
+	23	the
+	24	FA
+			name:	MISC				24-25	FA Cup 
+			sense:	fa.n.01
+	25	Cup
+			sense:	cup.n.08
+	26	in
+	27	which
+	28	the
+	29	Gulls
+			name:	ORGANIZATION				29-29	Gulls 
+	30	beat
+			sense:	beat.v.01
+			prop:	beat.03
+			V		30-30	beat 
+			N-ARG-A2		23-25	the FA Cup 
+			R-ARG-A2		26-27	in which 
+			N-ARG-A0		28-29	the Gulls 
+			N-ARG-A1		31-32	Leeds United 
+			N-ARGM-TMP		33-52	before losing 1 – 0 at home to Huddersfield Town in front of the biggest crowd ever seen at Plainmoor 
+	31	Leeds
+			name:	ORGANIZATION				31-32	Leeds United 
+	32	United
+	33	before
+	34	losing
+			sense:	lose.v.02
+			prop:	lose.03
+			V		34-34	losing 
+			N-ARG-A0		28-29	the Gulls 
+			N-ARGM-EXT		35-37	1 – 0 
+			N-ARGM-LOC		38-39	at home 
+			N-ARG-A2		40-42	to Huddersfield Town 
+			N-ARGM-LOC		43-52	in front of the biggest crowd ever seen at Plainmoor 
+	35	1
+			name:	NUMBER				35-35	1 
+	36	–
+	37	0
+			name:	NUMBER				37-37	0 
+	38	at
+	39	home
+			sense:	home.n.01
+	40	to
+	41	Huddersfield
+			name:	ORGANIZATION				41-42	Huddersfield Town 
+	42	Town
+	43	in
+	44	front
+			sense:	presence.n.02
+	45	of
+	46	the
+	47	biggest
+			sense:	large.a.01
+	48	crowd
+			sense:	crowd.n.01
+	49	ever
+			sense:	ever.r.01
+	50	seen
+			sense:	see.v.01
+			prop:	see.01
+			V		50-50	seen 
+			N-ARG-A1		46-48	the biggest crowd 
+			N-ARGM-TMP		49-49	ever 
+			N-ARGM-LOC		51-52	at Plainmoor 
+	51	at
+	52	Plainmoor
+			coref:	IDENT			0	52-52	Plainmoor 
+			name:	LOCATION				52-52	Plainmoor 
+	53	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After retiring as a player , Towers moved into adult education and eventually taught inmates at Parkhurst Prison on the Isle of Wight .
+
+
+Treebanked sentence:
+--------------------
+After retiring as a player , Towers moved into adult education and eventually taught inmates at Parkhurst Prison on the Isle of Wight . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG retiring)
+          (PP (IN as)
+            (NP (DT a) (NN player))))))
+    (, ,)
+    (NP (NNP Towers))
+    (VP
+      (VP (VBD moved)
+        (PP (IN into)
+          (NP (JJ adult) (NN education))))
+      (CC and)
+      (ADVP (RB eventually))
+      (VP (VBD taught)
+        (NP (NNS inmates))
+        (PP (IN at)
+          (NP
+            (NP (NNP Parkhurst) (NNP Prison))
+            (PP (IN on)
+              (NP
+                (NP (DT the) (NNP Isle))
+                (PP (IN of)
+                  (NP (NNP Wight)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	retiring
+			sense:	retire.v.01
+			prop:	retire.01
+			V		1-1	retiring 
+			N-ARG-A0		6-6	Towers 
+	2	as
+	3	a
+	4	player
+			sense:	player.n.01
+	5	,
+	6	Towers
+			coref:	IDENT			1	6-6	Towers 
+	7	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		7-7	moved 
+			N-ARGM-TMP		0-4	After retiring as a player 
+			N-ARG-A1		6-6	Towers 
+			N-ARG-A2		8-10	into adult education 
+	8	into
+	9	adult
+			sense:	adult.s.01
+	10	education
+			sense:	education.n.04
+	11	and
+	12	eventually
+			sense:	finally.r.01
+	13	taught
+			sense:	teach.v.01
+			prop:	teach.01
+			V		13-13	taught 
+			N-ARGM-TMP		0-4	After retiring as a player 
+			N-ARG-A0		6-6	Towers 
+			N-ARGM-TMP		12-12	eventually 
+			N-ARG-A2		14-14	inmates 
+			N-ARGM-LOC		15-22	at Parkhurst Prison on the Isle of Wight 
+	14	inmates
+			sense:	convict.n.01
+	15	at
+	16	Parkhurst
+			name:	LOCATION				16-17	Parkhurst Prison 
+	17	Prison
+	18	on
+	19	the
+	20	Isle
+	21	of
+	22	Wight
+			name:	PERSON				22-22	Wight 
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bill Towers died in April 2000 at the age of 79 .
+
+
+Treebanked sentence:
+--------------------
+Bill Towers died in April 2000 at the age of 79 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bill) (NNP Towers))
+    (VP (VBD died)
+      (PP (IN in)
+        (NP (NNP April) (CD 2000)))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NN age))
+          (PP (IN of)
+            (NP (CD 79))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bill
+			coref:	IDENT			1	0-1	Bill Towers 
+			name:	PERSON				0-1	Bill Towers 
+	1	Towers
+	2	died
+			sense:	die.v.01
+			prop:	die.01
+			V		2-2	died 
+			N-ARG-A1		0-1	Bill Towers 
+			N-ARGM-TMP		3-5	in April 2000 
+			N-ARGM-TMP		6-10	at the age of 79 
+	3	in
+	4	April
+			coref:	IDENT			2	4-5	April 2000 
+			name:	DATE				4-5	April 2000 
+	5	2000
+	6	at
+	7	the
+	8	age
+			sense:	age.n.01
+	9	of
+	10	79
+			name:	NUMBER				10-10	79 
+	11	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.11-11	Plainmoor 
+				5.52-52	Plainmoor 
+	Chain 1 (IDENT)
+				0.0-2	William Harry Towers 
+				1.0-0	He 
+				2.0-1	Bill Towers 
+				4.0-0	He 
+				5.5-5	Towers 
+				6.6-6	Towers 
+				7.0-1	Bill Towers 
+	Chain 2 (IDENT)
+				0.8-9	April 2000 
+				7.4-5	April 2000 
+	Chain 3 (IDENT)
+				2.4-5	Leicester City 
+				1.4-4	Leicester 
+	Chain 4 (IDENT)
+				3.14-15	Football League 
+				4.24-25	the league 
+

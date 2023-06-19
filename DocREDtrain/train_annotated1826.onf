@@ -1,0 +1,575 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Émile Louis Fortuné Pessard ( 29 May 1843 – 10 February 1917 ) was a French composer .
+
+
+Treebanked sentence:
+--------------------
+Émile Louis Fortuné Pessard ( 29 May 1843 – 10 February 1917 ) was a French composer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Émile) (NNP Louis) (NNP Fortuné) (NNP Pessard))
+      (-LRB- -LRB-)
+      (NP
+        (NP (CD 29) (NNP May))
+        (NP
+          (NP
+            (QP (CD 1843) (SYM –) (CD 10)))
+          (NP-TMP (NNP February) (CD 1917))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT a) (JJ French) (NN composer)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Émile
+			coref:	IDENT			1	0-3	Émile Louis Fortuné Pessard 
+	1	Louis
+			name:	PERSON				1-3	Louis Fortuné Pessard 
+	2	Fortuné
+	3	Pessard
+	4	(
+	5	29
+			name:	DATE				5-7	29 May 1843 
+	6	May
+	7	1843
+	8	–
+	9	10
+			name:	DATE				9-11	10 February 1917 
+	10	February
+	11	1917
+	12	)
+	13	was
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	was 
+			N-ARG-A1		0-12	Émile Louis Fortuné Pessard ( 29 May 1843 – 10 February 1917 ) 
+			N-ARG-A2		14-16	a French composer 
+	14	a
+	15	French
+			name:	NATIONALITY				15-15	French 
+	16	composer
+			name:	TITLE				16-16	composer 
+			sense:	composer.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Pessard was born and died in Paris .
+
+
+Treebanked sentence:
+--------------------
+Pessard was born and died in Paris . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Pessard))
+    (VP (VBD was)
+      (VP (VBN born)
+        (CC and)
+        (VBN died)
+        (PP (IN in)
+          (NP (NNP Paris)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Pessard
+			coref:	IDENT			1	0-0	Pessard 
+			name:	PERSON				0-0	Pessard 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Pessard 
+	3	and
+	4	died
+			sense:	die.v.01
+			prop:	die.01
+			V		4-4	died 
+			N-ARG-A1		0-0	Pessard 
+			N-ARGM-LOC		5-6	in Paris 
+	5	in
+	6	Paris
+			coref:	IDENT			0	6-6	Paris 
+			name:	CITY				6-6	Paris 
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He studied at the Conservatoire de Paris , where he won 1st prize in Harmony .
+
+
+Treebanked sentence:
+--------------------
+He studied at the Conservatoire de Paris , where he won 1st prize in Harmony . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD studied)
+      (PP (IN at)
+        (NP (DT the) (NNP Conservatoire) (NNP de) (NNP Paris)))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP he))
+          (VP (VBD won)
+            (NP (JJ 1st) (NN prize))
+            (PP (IN in)
+              (NP (NNP Harmony)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	studied
+			sense:	study.v.02
+			prop:	study.01
+			V		1-1	studied 
+			N-ARG-A0		0-0	He 
+			N-ARGM-LOC		2-14	at the Conservatoire de Paris , where he won 1st prize in Harmony 
+	2	at
+	3	the
+			coref:	IDENT			0	3-6	the Conservatoire de Paris 
+	4	Conservatoire
+			name:	LOCATION				4-5	Conservatoire de 
+	5	de
+	6	Paris
+			name:	CITY				6-6	Paris 
+	7	,
+	8	where
+	9	he
+			coref:	IDENT			1	9-9	he 
+	10	won
+			sense:	win.v.01
+			prop:	win.01
+			V		10-10	won 
+			N-ARGM-LOC		3-6	the Conservatoire de Paris 
+			R-ARGM-LOC		8-8	where 
+			N-ARG-A0		9-9	he 
+			N-ARG-A1		11-12	1st prize 
+			N-ARGM-LOC		13-14	in Harmony 
+	11	1st
+			name:	ORDINAL				11-11	1st 
+			sense:	first.s.02
+	12	prize
+			sense:	prize.n.01
+	13	in
+	14	Harmony
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1866 he won the Grand Prix de Rome with his cantata Dalila which was performed at the Paris Opera on February 21 , 1867 .
+
+
+Treebanked sentence:
+--------------------
+In 1866 he won the Grand Prix de Rome with his cantata Dalila which was performed at the Paris Opera on February 21 , 1867 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP 1866)))
+    (NP (PRP he))
+    (VP (VBD won)
+      (NP (DT the)
+        (NML (NNP Grand) (NNP Prix))
+        (NNP de) (NNP Rome))
+      (PP (IN with)
+        (NP
+          (NP (PRP$ his) (NN cantata) (NNP Dalila))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBD was)
+                (VP (VBN performed)
+                  (PP (IN at)
+                    (NP (DT the) (NNP Paris) (NNP Opera)))
+                  (PP (IN on)
+                    (NP (NNP February) (CD 21) (, ,) (CD 1867))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1866
+			name:	DATE				1-1	1866 
+	2	he
+			coref:	IDENT			1	2-2	he 
+	3	won
+			sense:	win.v.01
+			prop:	win.01
+			V		3-3	won 
+			N-ARGM-TMP		0-1	In 1866 
+			N-ARG-A0		2-2	he 
+			N-ARG-A1		4-8	the Grand Prix de Rome 
+			N-ARGM-MNR		9-24	with his cantata Dalila which was performed at the Paris Opera on February 21 , 1867 
+	4	the
+	5	Grand
+	6	Prix
+	7	de
+	8	Rome
+			name:	CITY				8-8	Rome 
+	9	with
+	10	his
+			coref:	IDENT			1	10-10	his 
+	11	cantata
+			sense:	cantata.n.01
+	12	Dalila
+			name:	MISC				12-12	Dalila 
+	13	which
+	14	was
+			sense:	be.v.01
+			prop:	be.03
+			V		14-14	was 
+	15	performed
+			sense:	perform.v.03
+			prop:	perform.01
+			V		15-15	performed 
+			N-ARG-A1		10-12	his cantata Dalila 
+			R-ARG-A1		13-13	which 
+			N-ARGM-LOC		16-19	at the Paris Opera 
+			N-ARGM-TMP		20-24	on February 21 , 1867 
+	16	at
+	17	the
+			coref:	IDENT			0	17-19	the Paris Opera 
+	18	Paris
+			name:	CITY				18-19	Paris Opera 
+	19	Opera
+	20	on
+	21	February
+			name:	DATE				21-24	February 21 , 1867 
+	22	21
+	23	,
+	24	1867
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+From 1878 to 1880 he was inspector of singing at Paris Schools , in 1881 he became professor of Harmony at the Paris Conservatory .
+
+
+Treebanked sentence:
+--------------------
+From 1878 to 1880 he was inspector of singing at Paris Schools , in 1881 he became professor of Harmony at the Paris Conservatory . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN From)
+      (NP
+        (NP (CD 1878))
+        (PP (IN to)
+          (NP (NNP 1880)))))
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP (NN inspector))
+        (PP (IN of)
+          (NP (NN singing))))
+      (PP (IN at)
+        (NP (NNP Paris) (NNPS Schools)))
+      (, ,)
+      (PP (IN in)
+        (NP
+          (NP (CD 1881))
+          (SBAR
+            (S
+              (NP (PRP he))
+              (VP (VBD became)
+                (NP
+                  (NP (NN professor))
+                  (PP (IN of)
+                    (NP (NNP Harmony))))
+                (PP (IN at)
+                  (NP (DT the) (NNP Paris) (NNP Conservatory)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	From
+	1	1878
+			name:	DATE				1-1	1878 
+	2	to
+	3	1880
+			name:	DATE				3-3	1880 
+	4	he
+			coref:	IDENT			1	4-4	he 
+	5	was
+			sense:	be.v.08
+			prop:	be.01
+			V		5-5	was 
+			N-ARGM-TMP		0-3	From 1878 to 1880 
+			N-ARG-A1		4-4	he 
+			N-ARG-A2		6-11	inspector of singing at Paris Schools 
+	6	inspector
+			name:	TITLE				6-6	inspector 
+			sense:	examiner.n.02
+	7	of
+	8	singing
+			sense:	singing.n.01
+	9	at
+	10	Paris
+			name:	ORGANIZATION				10-11	Paris Schools 
+	11	Schools
+	12	,
+	13	in
+	14	1881
+			name:	DATE				14-14	1881 
+	15	he
+			coref:	IDENT			1	15-15	he 
+	16	became
+			sense:	become.v.02
+			prop:	become.01
+			V		16-16	became 
+			N-ARGM-TMP		13-14	in 1881 
+			N-ARG-A1		15-15	he 
+			N-ARG-A2		17-23	professor of Harmony at the Paris Conservatory 
+	17	professor
+			name:	TITLE				17-17	professor 
+			sense:	professor.n.01
+	18	of
+	19	Harmony
+	20	at
+	21	the
+	22	Paris
+			coref:	IDENT			0	22-22	Paris 
+			name:	CITY				22-22	Paris 
+	23	Conservatory
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His students included Maurice Ravel , Jacques Ibert , William Molard , Albert Seitz and Justin Élie .
+
+
+Treebanked sentence:
+--------------------
+His students included Maurice Ravel , Jacques Ibert , William Molard , Albert Seitz and Justin Élie . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His) (NNS students))
+    (VP (VBD included)
+      (NP
+        (NP (NNP Maurice) (NNP Ravel))
+        (, ,)
+        (NP (NNP Jacques) (NNP Ibert))
+        (, ,)
+        (NP (NNP William) (NNP Molard))
+        (, ,)
+        (NP (NNP Albert) (NNP Seitz))
+        (CC and)
+        (NP (NNP Justin) (NNP Élie))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			1	0-0	His 
+	1	students
+			sense:	student.n.01
+	2	included
+			sense:	include.v.01
+			prop:	include.01
+			V		2-2	included 
+			N-ARG-A2		0-1	His students 
+			N-ARG-A1		3-16	Maurice Ravel , Jacques Ibert , William Molard , Albert Seitz and Justin Élie 
+	3	Maurice
+			name:	PERSON				3-4	Maurice Ravel 
+	4	Ravel
+	5	,
+	6	Jacques
+			name:	PERSON				6-7	Jacques Ibert 
+	7	Ibert
+	8	,
+	9	William
+			name:	PERSON				9-10	William Molard 
+	10	Molard
+	11	,
+	12	Albert
+			name:	PERSON				12-13	Albert Seitz 
+	13	Seitz
+	14	and
+	15	Justin
+			name:	PERSON				15-16	Justin Élie 
+	16	Élie
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After 1895 he was a critic and director .
+
+
+Treebanked sentence:
+--------------------
+After 1895 he was a critic and director . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP (CD 1895)))
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN critic))
+        (CC and)
+        (NP (NN director))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	1895
+			name:	DATE				1-1	1895 
+	2	he
+			coref:	IDENT			1	2-2	he 
+	3	was
+			sense:	be.v.08
+			prop:	be.01
+			V		3-3	was 
+			N-ARGM-TMP		0-1	After 1895 
+			N-ARG-A1		2-2	he 
+			N-ARG-A2		4-7	a critic and director 
+	4	a
+	5	critic
+			name:	TITLE				5-5	critic 
+			sense:	critic.n.01
+	6	and
+	7	director
+			name:	TITLE				7-7	director 
+			sense:	director.n.03
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He composed many comic operas and operettas , as well as masses .
+
+
+Treebanked sentence:
+--------------------
+He composed many comic operas and operettas , as well as masses . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD composed)
+      (NP
+        (NP (JJ many) (JJ comic) (NNS operas)
+          (CC and)
+          (NNS operettas))
+        (, ,)
+        (CONJP (RB as) (RB well) (IN as))
+        (NP (NNS masses))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	composed
+			sense:	compose.v.02
+			prop:	compose.02
+			V		1-1	composed 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-11	many comic operas and operettas , as well as masses 
+	2	many
+			sense:	many.a.01
+	3	comic
+			sense:	amusing.s.02
+	4	operas
+			sense:	opera.n.01
+	5	and
+	6	operettas
+			sense:	operetta.n.01
+	7	,
+	8	as
+			sense:	equally.r.01
+	9	well
+			sense:	well.r.02
+	10	as
+	11	masses
+			sense:	mass.n.08
+	12	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.3-6	the Conservatoire de Paris 
+				1.6-6	Paris 
+				3.17-19	the Paris Opera 
+				4.22-22	Paris 
+	Chain 1 (IDENT)
+				0.0-3	Émile Louis Fortuné Pessard 
+				1.0-0	Pessard 
+				2.0-0	He 
+				2.9-9	he 
+				3.2-2	he 
+				3.10-10	his 
+				4.4-4	he 
+				4.15-15	he 
+				5.0-0	His 
+				6.2-2	he 
+				7.0-0	He 
+

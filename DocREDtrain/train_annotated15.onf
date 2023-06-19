@@ -1,0 +1,610 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Andrew Kiss is a Canadian artist , who focuses primarily on landscape art , particularly oil painting .
+
+
+Treebanked sentence:
+--------------------
+Andrew Kiss is a Canadian artist , who focuses primarily on landscape art , particularly oil painting . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Andrew))
+    (VP (VBP Kiss)
+      (SBAR
+        (S
+          (VP (VBZ is)
+            (NP
+              (NP (DT a) (JJ Canadian) (NN artist))
+              (, ,)
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBZ focuses)
+                    (ADVP (RB primarily))
+                    (PP (IN on)
+                      (NP
+                        (NP (NN landscape) (NN art))
+                        (, ,) (RB particularly)
+                        (NP (NN oil) (NN painting))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Andrew
+			name:	PERSON				0-1	Andrew Kiss 
+	1	Kiss
+			sense:	snog.v.01
+			prop:	kiss.01
+			V		1-1	Kiss 
+			N-ARG-A0		0-0	Andrew 
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Andrew Kiss 
+			N-ARG-A2		3-16	a Canadian artist , who focuses primarily on landscape art , particularly oil painting 
+	3	a
+	4	Canadian
+			name:	NATIONALITY				4-4	Canadian 
+	5	artist
+			name:	TITLE				5-5	artist 
+			sense:	artist.n.01
+	6	,
+	7	who
+	8	focuses
+			sense:	concentrate.v.02
+			prop:	focus.01
+			V		8-8	focuses 
+			N-ARG-A0		3-5	a Canadian artist 
+			R-ARG-A0		7-7	who 
+			N-ARGM-ADV		9-9	primarily 
+			N-ARG-A2		10-16	on landscape art , particularly oil painting 
+	9	primarily
+			sense:	chiefly.r.01
+	10	on
+	11	landscape
+			sense:	landscape.n.03
+	12	art
+			sense:	art.n.01
+	13	,
+	14	particularly
+			sense:	particularly.r.01
+	15	oil
+			sense:	oil.n.02
+	16	painting
+			sense:	painting.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in Hungary in 1946 , he and his family emigrated to Canada in 1957 .
+
+
+Treebanked sentence:
+--------------------
+Born in Hungary in 1946 , he and his family emigrated to Canada in 1957 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP (NNP Hungary)))
+        (PP (IN in)
+          (NP (CD 1946))))
+      (, ,)
+      (NP (PRP he)))
+    (CC and)
+    (S
+      (NP (PRP$ his) (NN family))
+      (VP (VBD emigrated)
+        (PP (IN to)
+          (NP (NNP Canada)))
+        (PP (IN in)
+          (NP (CD 1957)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-2	in Hungary 
+			N-ARGM-TMP		3-4	in 1946 
+			N-ARG-A1		6-9	he and his family 
+	1	in
+	2	Hungary
+			name:	COUNTRY				2-2	Hungary 
+	3	in
+	4	1946
+			name:	DATE				4-4	1946 
+	5	,
+	6	he
+	7	and
+	8	his
+	9	family
+			sense:	family.n.01
+	10	emigrated
+			sense:	emigrate.v.01
+			prop:	emigrate.01
+			V		10-10	emigrated 
+			R-ARG-A0		0-4	Born in Hungary in 1946 
+			N-ARG-A0		6-9	he and his family 
+			N-ARGM-TMP		13-14	in 1957 
+	11	to
+	12	Canada
+			coref:	IDENT			0	12-12	Canada 
+			name:	COUNTRY				12-12	Canada 
+	13	in
+	14	1957
+			name:	DATE				14-14	1957 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After arriving on the East Coast of Canada , they moved to the Vancouver Island , Cowichan Lake area in British Columbia .
+
+
+Treebanked sentence:
+--------------------
+After arriving on the East Coast of Canada , they moved to the Vancouver Island , Cowichan Lake area in British Columbia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG arriving)
+          (PP (IN on)
+            (NP
+              (NP (DT the) (NNP East) (NNP Coast))
+              (PP (IN of)
+                (NP (NNP Canada))))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBD moved)
+      (PP (IN to)
+        (NP (DT the)
+          (NML (NNP Vancouver) (NNP Island))
+          (, ,)
+          (NML (NNP Cowichan) (NNP Lake))
+          (NN area)))
+      (PP (IN in)
+        (NP (NNP British) (NNP Columbia))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	arriving
+			sense:	arrive.v.01
+			prop:	arrive.01
+			V		1-1	arriving 
+			N-ARG-A4		2-7	on the East Coast of Canada 
+	2	on
+	3	the
+			coref:	IDENT			0	3-7	the East Coast of Canada 
+	4	East
+			name:	LOCATION				4-5	East Coast 
+	5	Coast
+	6	of
+	7	Canada
+			coref:	IDENT			0	7-7	Canada 
+			name:	COUNTRY				7-7	Canada 
+	8	,
+	9	they
+	10	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		10-10	moved 
+			N-ARGM-TMP		0-7	After arriving on the East Coast of Canada 
+			N-ARG-A0		9-9	they 
+			N-ARG-A2		11-21	to the Vancouver Island , Cowichan Lake area in British Columbia 
+	11	to
+	12	the
+	13	Vancouver
+			name:	CITY				13-13	Vancouver 
+	14	Island
+			name:	LOCATION				14-14	Island 
+	15	,
+	16	Cowichan
+			name:	LOCATION				16-17	Cowichan Lake 
+	17	Lake
+	18	area
+			sense:	area.n.01
+	19	in
+	20	British
+			coref:	IDENT			1	20-21	British Columbia 
+			name:	STATE_OR_PROVINCE				20-21	British Columbia 
+	21	Columbia
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Kiss spent his early adulthood employed as a draftsman .
+
+
+Treebanked sentence:
+--------------------
+Kiss spent his early adulthood employed as a draftsman . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (VP (VB Kiss)
+      (VP (VBN spent)
+        (NP
+          (NP (PRP$ his) (JJ early) (NN adulthood))
+          (VP (VBN employed)
+            (PP (IN as)
+              (NP (DT a) (NN draftsman)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Kiss
+			sense:	snog.v.01
+			prop:	kiss.01
+			V		0-0	Kiss 
+	1	spent
+			sense:	spend.v.01
+			prop:	spend.02
+			V		1-1	spent 
+			N-ARG-A0		0-0	Kiss 
+			N-ARG-A1		2-4	his early adulthood 
+			N-ARG-A2		5-8	employed as a draftsman 
+	2	his
+	3	early
+			sense:	early.a.01
+	4	adulthood
+			sense:	adulthood.n.01
+	5	employed
+			sense:	hire.v.01
+			prop:	employ.01
+			V		5-5	employed 
+			N-ARG-A1		0-0	Kiss 
+			N-ARG-A2		6-8	as a draftsman 
+	6	as
+	7	a
+	8	draftsman
+			sense:	draftsman.n.01
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After being transferred to the town of Mackenzie , British Columbia in 1974 , he began to spend more time on his art .
+
+
+Treebanked sentence:
+--------------------
+After being transferred to the town of Mackenzie , British Columbia in 1974 , he began to spend more time on his art . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG being)
+          (VP (VBN transferred)
+            (PP (IN to)
+              (NP
+                (NP (DT the) (NN town))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP Mackenzie))
+                    (, ,)
+                    (NP
+                      (NP (NNP British) (NNP Columbia))
+                      (PP (IN in)
+                        (NP (CD 1974))))))))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD began)
+      (S
+        (VP (TO to)
+          (VP (VB spend)
+            (NP (JJR more) (NN time))
+            (PP (IN on)
+              (NP (PRP$ his) (NN art)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	being
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	being 
+	2	transferred
+			sense:	transfer.v.01
+			prop:	transfer.01
+			V		2-2	transferred 
+			N-ARG-A2		3-10	to the town of Mackenzie , British Columbia 
+			N-ARGM-TMP		11-12	in 1974 
+	3	to
+	4	the
+	5	town
+			sense:	town.n.01
+	6	of
+	7	Mackenzie
+			name:	CITY				7-7	Mackenzie 
+	8	,
+	9	British
+			coref:	IDENT			1	9-10	British Columbia 
+			name:	STATE_OR_PROVINCE				9-10	British Columbia 
+	10	Columbia
+	11	in
+	12	1974
+			name:	DATE				12-12	1974 
+	13	,
+	14	he
+	15	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		15-15	began 
+			N-ARGM-TMP		0-12	After being transferred to the town of Mackenzie , British Columbia in 1974 
+			N-ARG-A0		14-14	he 
+			N-ARG-A1		16-22	to spend more time on his art 
+	16	to
+	17	spend
+			sense:	spend.v.01
+			prop:	spend.02
+			V		17-17	spend 
+			N-ARG-A0		14-14	he 
+			N-ARG-A1		18-19	more time 
+			N-ARG-A2		20-22	on his art 
+	18	more
+			sense:	more.a.01
+	19	time
+			sense:	time.n.02
+	20	on
+	21	his
+	22	art
+			sense:	art.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Kiss has exhibited in Hong Kong , Switzerland , England , Austria , New Zealand and Germany .
+
+
+Treebanked sentence:
+--------------------
+Kiss has exhibited in Hong Kong , Switzerland , England , Austria , New Zealand and Germany . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VB Kiss)))
+    (VP (VBZ has)
+      (VP (VBN exhibited)
+        (PP (IN in)
+          (NP (NNP Hong) (NNP Kong) (, ,) (NNP Switzerland) (, ,) (NNP England) (, ,) (NNP Austria) (, ,) (NNP New) (NNP Zealand)
+            (CC and)
+            (NNP Germany)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Kiss
+			sense:	snog.v.01
+			prop:	kiss.01
+			V		0-0	Kiss 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	exhibited
+			sense:	show.v.01
+			prop:	exhibit.01
+			V		2-2	exhibited 
+			N-ARG-A0		0-0	Kiss 
+			N-ARGM-LOC		3-16	in Hong Kong , Switzerland , England , Austria , New Zealand and Germany 
+	3	in
+	4	Hong
+			name:	CITY				4-5	Hong Kong 
+	5	Kong
+	6	,
+	7	Switzerland
+			name:	COUNTRY				7-7	Switzerland 
+	8	,
+	9	England
+			name:	COUNTRY				9-9	England 
+	10	,
+	11	Austria
+			name:	COUNTRY				11-11	Austria 
+	12	,
+	13	New
+			name:	COUNTRY				13-14	New Zealand 
+	14	Zealand
+	15	and
+	16	Germany
+			name:	COUNTRY				16-16	Germany 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In North America he has exhibited in Florida , South Carolina , Las Vegas , Montana , Phoenix , Seattle , and in Canada .
+
+
+Treebanked sentence:
+--------------------
+In North America he has exhibited in Florida , South Carolina , Las Vegas , Montana , Phoenix , Seattle , and in Canada . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP North) (NNP America)))
+    (NP (PRP he))
+    (VP (VBZ has)
+      (VP (VBN exhibited)
+        (PP (IN in)
+          (NP
+            (NP (NNP Florida))
+            (, ,)
+            (NP (NNP South) (NNP Carolina))
+            (, ,)
+            (NP (NNP Las) (NNP Vegas))
+            (, ,)
+            (NP (NNP Montana))
+            (, ,)
+            (NP (NNP Phoenix))
+            (, ,)
+            (NP (NNP Seattle))
+            (, ,)
+            (CC and)
+            (PP (IN in)
+              (NP (NNP Canada)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	North
+			name:	LOCATION				1-1	North 
+	2	America
+			name:	COUNTRY				2-2	America 
+	3	he
+	4	has
+			sense:	have.v.01
+			prop:	have.01
+			V		4-4	has 
+	5	exhibited
+			sense:	show.v.01
+			prop:	exhibit.01
+			V		5-5	exhibited 
+			N-ARGM-LOC		0-2	In North America 
+			N-ARG-A0		3-3	he 
+			N-ARGM-LOC		6-23	in Florida , South Carolina , Las Vegas , Montana , Phoenix , Seattle , and in Canada 
+	6	in
+	7	Florida
+			name:	STATE_OR_PROVINCE				7-7	Florida 
+	8	,
+	9	South
+			name:	STATE_OR_PROVINCE				9-10	South Carolina 
+	10	Carolina
+	11	,
+	12	Las
+			name:	CITY				12-13	Las Vegas 
+	13	Vegas
+	14	,
+	15	Montana
+			name:	STATE_OR_PROVINCE				15-15	Montana 
+	16	,
+	17	Phoenix
+			name:	CITY				17-17	Phoenix 
+	18	,
+	19	Seattle
+			name:	CITY				19-19	Seattle 
+	20	,
+	21	and
+	22	in
+	23	Canada
+			coref:	IDENT			0	23-23	Canada 
+			name:	COUNTRY				23-23	Canada 
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He currently lives in Calgary , Alberta , Canada .
+
+
+Treebanked sentence:
+--------------------
+He currently lives in Calgary , Alberta , Canada . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB currently))
+    (VP (VBZ lives)
+      (PP (IN in)
+        (NP (NNP Calgary) (, ,) (NNP Alberta) (, ,) (NNP Canada))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	currently
+			name:	DATE				1-1	currently 
+			sense:	presently.r.02
+	2	lives
+			sense:	populate.v.01
+			prop:	live.01
+			V		2-2	lives 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		1-1	currently 
+			N-ARGM-LOC		3-8	in Calgary , Alberta , Canada 
+	3	in
+	4	Calgary
+			coref:	IDENT			0	4-8	Calgary , Alberta , Canada 
+			name:	CITY				4-4	Calgary 
+	5	,
+	6	Alberta
+			name:	STATE_OR_PROVINCE				6-6	Alberta 
+	7	,
+	8	Canada
+			name:	COUNTRY				8-8	Canada 
+	9	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				7.4-8	Calgary , Alberta , Canada 
+				1.12-12	Canada 
+				2.3-7	the East Coast of Canada 
+				2.7-7	Canada 
+				6.23-23	Canada 
+	Chain 1 (IDENT)
+				2.20-21	British Columbia 
+				4.9-10	British Columbia 
+

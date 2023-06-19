@@ -1,0 +1,679 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mary Tudor (; 18 March 1496 – 25 June 1533 ) was an English princess who was briefly Queen of France and later progenitor of a family that claimed the English throne .
+
+
+Treebanked sentence:
+--------------------
+Mary Tudor ( ; 18 March 1496 – 25 June 1533 ) was an English princess who was briefly Queen of France and later progenitor of a family that claimed the English throne . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Mary) (NNP Tudor))
+      (NP (-LRB- -LRB-)
+        (PRN (: ;)
+          (FRAG
+            (NP (CD 18))
+            (NP
+              (NP (NNP March) (CD 1496) (SYM –) (CD 25))
+              (NP-TMP (NNP June) (CD 1533)))))
+        (-RRB- -RRB-)))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (NNP English) (NN princess))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD was)
+              (ADVP (RB briefly))
+              (NP
+                (NP
+                  (NP
+                    (NP (NNP Queen))
+                    (PP (IN of)
+                      (NP (NNP France))))
+                  (CC and)
+                  (ADVP (RB later))
+                  (NP
+                    (NP (NN progenitor))
+                    (PP (IN of)
+                      (NP (DT a) (NN family)))))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBD claimed)
+                      (NP (DT the) (NNP English) (NN throne)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mary
+			name:	PERSON				0-1	Mary Tudor 
+	1	Tudor
+	2	(
+	3	;
+	4	18
+			name:	DATE				4-6	18 March 1496 
+	5	March
+	6	1496
+	7	–
+	8	25
+			name:	DATE				8-10	25 June 1533 
+	9	June
+	10	1533
+	11	)
+	12	was
+			sense:	be.v.02
+			prop:	be.01
+			V		12-12	was 
+			N-ARG-A1		0-11	Mary Tudor ( ; 18 March 1496 – 25 June 1533 ) 
+			N-ARG-A2		13-32	an English princess who was briefly Queen of France and later progenitor of a family that claimed the English throne 
+	13	an
+	14	English
+			name:	NATIONALITY				14-14	English 
+	15	princess
+			name:	TITLE				15-15	princess 
+			sense:	princess.n.01
+	16	who
+	17	was
+			sense:	be.v.08
+			prop:	be.01
+			V		17-17	was 
+			N-ARG-A1		13-15	an English princess 
+			R-ARG-A1		16-16	who 
+			N-ARGM-TMP		18-18	briefly 
+			N-ARG-A2		19-32	Queen of France and later progenitor of a family that claimed the English throne 
+	18	briefly
+			sense:	briefly.r.01
+	19	Queen
+			name:	TITLE				19-19	Queen 
+	20	of
+	21	France
+			name:	COUNTRY				21-21	France 
+	22	and
+	23	later
+			sense:	subsequently.r.01
+	24	progenitor
+			sense:	progenitor.n.01
+	25	of
+	26	a
+	27	family
+			sense:	family.n.04
+	28	that
+	29	claimed
+			sense:	claim.v.02
+			prop:	claim.02
+			V		29-29	claimed 
+			N-ARG-A0		26-27	a family 
+			R-ARG-A0		28-28	that 
+			N-ARG-A1		30-32	the English throne 
+	30	the
+	31	English
+			name:	NATIONALITY				31-31	English 
+	32	throne
+			sense:	throne.n.03
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The younger surviving daughter of Henry VII , King of England and Elizabeth of York , Mary became the third wife of Louis XII of France , more than 30 years her senior .
+
+
+Treebanked sentence:
+--------------------
+The younger surviving daughter of Henry VII , King of England and Elizabeth of York , Mary became the third wife of Louis XII of France , more than 30 years her senior . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The)
+        (ADJP (JJR younger))
+        (VBG surviving) (NN daughter))
+      (PP (IN of)
+        (NP
+          (NP (NNP Henry) (NNP VII))
+          (, ,)
+          (NP
+            (NP (NNP King))
+            (PP (IN of)
+              (NP (NNP England)
+                (CC and)
+                (NNP Elizabeth)))
+            (PP (IN of)
+              (NP (NNP York) (, ,) (NNP Mary)))))))
+    (VP (VBD became)
+      (NP
+        (NP (DT the) (JJ third) (NN wife))
+        (PP (IN of)
+          (NP (NNP Louis) (CD XII)))
+        (PP (IN of)
+          (NP
+            (NP (NNP France))
+            (, ,)
+            (NP
+              (NP
+                (QP (JJR more) (IN than) (CD 30))
+                (NNS years))
+              (NP (PRP$ her) (JJ senior)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-16	The younger surviving daughter of Henry VII , King of England and Elizabeth of York , Mary 
+	1	younger
+			sense:	young.a.01
+	2	surviving
+			sense:	outlive.v.01
+			prop:	driving.01
+			V		2-2	surviving 
+			N-ARG-A0		3-3	daughter 
+	3	daughter
+			sense:	daughter.n.01
+	4	of
+	5	Henry
+			coref:	IDENT			4	5-16	Henry VII , King of England and Elizabeth of York , Mary 
+			name:	PERSON				5-6	Henry VII 
+	6	VII
+	7	,
+	8	King
+			name:	TITLE				8-8	King 
+	9	of
+	10	England
+			name:	COUNTRY				10-10	England 
+	11	and
+	12	Elizabeth
+			name:	PERSON				12-14	Elizabeth of York 
+	13	of
+	14	York
+			coref:	IDENT			0	14-16	York , Mary 
+	15	,
+	16	Mary
+			name:	PERSON				16-16	Mary 
+	17	became
+			sense:	become.v.02
+			prop:	become.01
+			V		17-17	became 
+			N-ARG-A1		0-16	The younger surviving daughter of Henry VII , King of England and Elizabeth of York , Mary 
+			N-ARG-A2		18-32	the third wife of Louis XII of France , more than 30 years her senior 
+	18	the
+	19	third
+			name:	ORDINAL				19-19	third 
+			sense:	third.s.01
+	20	wife
+			sense:	wife.n.01
+	21	of
+	22	Louis
+			coref:	IDENT			5	22-23	Louis XII 
+			name:	PERSON				22-23	Louis XII 
+	23	XII
+	24	of
+	25	France
+			name:	COUNTRY				25-25	France 
+	26	,
+	27	more
+			name:	DURATION				27-30	more than 30 years 
+			sense:	more.a.01
+	28	than
+	29	30
+	30	years
+			sense:	year.n.01
+	31	her
+			coref:	IDENT			0	31-31	her 
+	32	senior
+			sense:	aged.s.01
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Following his death , she married Charles Brandon , 1st Duke of Suffolk .
+
+
+Treebanked sentence:
+--------------------
+Following his death , she married Charles Brandon , 1st Duke of Suffolk . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (VBG Following)
+      (NP (PRP$ his) (NN death)))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBD married)
+      (NP
+        (NP (NNP Charles) (NNP Brandon) (, ,) (JJ 1st) (NNP Duke))
+        (PP (IN of)
+          (NP (NNP Suffolk)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		0-0	Following 
+			N-ARG-A2		1-2	his death 
+	1	his
+			coref:	IDENT			5	1-1	his 
+	2	death
+			sense:	death.n.01
+	3	,
+	4	she
+			coref:	IDENT			0	4-4	she 
+	5	married
+			sense:	marry.v.01
+			prop:	marry.01
+			V		5-5	married 
+			N-ARGM-TMP		0-2	Following his death 
+			N-ARG-A1		4-4	she 
+			N-ARG-A2		6-12	Charles Brandon , 1st Duke of Suffolk 
+	6	Charles
+			name:	PERSON				6-7	Charles Brandon 
+	7	Brandon
+	8	,
+	9	1st
+			name:	ORDINAL				9-9	1st 
+			sense:	first.s.02
+	10	Duke
+			name:	PERSON				10-10	Duke 
+	11	of
+	12	Suffolk
+			name:	CITY				12-12	Suffolk 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The marriage , which was performed secretly in France , took place during the reign of her brother Henry VIII and without his consent .
+
+
+Treebanked sentence:
+--------------------
+The marriage , which was performed secretly in France , took place during the reign of her brother Henry VIII and without his consent . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN marriage))
+      (, ,)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBD was)
+            (VP (VBN performed)
+              (ADVP (RB secretly))
+              (PP (IN in)
+                (NP (NNP France)))))))
+      (, ,))
+    (VP (VBD took)
+      (NP (NN place))
+      (PP
+        (PP (IN during)
+          (NP
+            (NP (DT the) (NN reign))
+            (PP (IN of)
+              (NP
+                (NP (PRP$ her) (NN brother))
+                (NP (NNP Henry) (NNP VIII))))))
+        (CC and)
+        (PP (IN without)
+          (NP (PRP$ his) (NN consent)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-8	The marriage , which was performed secretly in France 
+	1	marriage
+			sense:	marriage.n.03
+	2	,
+	3	which
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	performed
+			sense:	perform.v.01
+			prop:	perform.01
+			V		5-5	performed 
+			N-ARG-A1		0-1	The marriage 
+			R-ARG-A1		3-3	which 
+			N-ARGM-MNR		6-6	secretly 
+			N-ARGM-LOC		7-8	in France 
+	6	secretly
+			sense:	secretly.r.01
+	7	in
+	8	France
+			name:	COUNTRY				8-8	France 
+	9	,
+	10	took
+			sense:	take.v.01
+			prop:	take.14
+			V		10-10	took 
+			N-ARG-A1		0-8	The marriage , which was performed secretly in France 
+			N-ARG-A2		11-11	place 
+			N-ARGM-TMP		12-19	during the reign of her brother Henry VIII 
+			N-ARGM-MNR		20-23	and without his consent 
+	11	place
+			sense:	topographic_point.n.01
+	12	during
+	13	the
+	14	reign
+			sense:	reign.n.02
+	15	of
+	16	her
+			coref:	IDENT			0	16-16	her 
+	17	brother
+			sense:	brother.n.01
+	18	Henry
+			coref:	IDENT			2	18-19	Henry VIII 
+			name:	PERSON				18-19	Henry VIII 
+	19	VIII
+	20	and
+	21	without
+	22	his
+			coref:	IDENT			2	22-22	his 
+	23	consent
+			sense:	consent.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This necessitated the intervention of Thomas Wolsey , and although Henry eventually pardoned the couple , they were forced to pay a large fine .
+
+
+Treebanked sentence:
+--------------------
+This necessitated the intervention of Thomas Wolsey , and although Henry eventually pardoned the couple , they were forced to pay a large fine . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT This))
+      (VP (VBD necessitated)
+        (NP
+          (NP (DT the) (NN intervention))
+          (PP (IN of)
+            (NP (NNP Thomas) (NNP Wolsey))))))
+    (, ,)
+    (CC and)
+    (S
+      (SBAR (IN although)
+        (S
+          (NP (NNP Henry))
+          (ADVP (RB eventually))
+          (VP (VBD pardoned)
+            (NP (DT the) (NN couple)))))
+      (, ,)
+      (NP (PRP they))
+      (VP (VBD were)
+        (VP (VBN forced)
+          (S
+            (VP (TO to)
+              (VP (VB pay)
+                (NP (DT a) (JJ large) (NN fine))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+	1	necessitated
+			sense:	necessitate.v.01
+			prop:	necessitate.01
+			V		1-1	necessitated 
+			N-ARG-A0		0-0	This 
+			N-ARG-A1		2-6	the intervention of Thomas Wolsey 
+	2	the
+	3	intervention
+			sense:	intervention.n.01
+	4	of
+	5	Thomas
+			name:	PERSON				5-6	Thomas Wolsey 
+	6	Wolsey
+	7	,
+	8	and
+	9	although
+	10	Henry
+			coref:	IDENT			4	10-10	Henry 
+			name:	PERSON				10-10	Henry 
+	11	eventually
+			sense:	finally.r.01
+	12	pardoned
+			sense:	pardon.v.02
+			prop:	pardon.01
+			V		12-12	pardoned 
+			N-ARG-A0		10-10	Henry 
+			N-ARGM-TMP		11-11	eventually 
+			N-ARG-A1		13-14	the couple 
+	13	the
+			coref:	IDENT			6	13-14	the couple 
+	14	couple
+			sense:	couple.n.02
+	15	,
+	16	they
+			coref:	IDENT			6	16-16	they 
+	17	were
+			sense:	be.v.01
+			prop:	be.03
+			V		17-17	were 
+	18	forced
+			sense:	coerce.v.01
+			prop:	force.01
+			V		18-18	forced 
+			N-ARGM-ADV		9-14	although Henry eventually pardoned the couple 
+			N-ARG-A1		16-16	they 
+			N-ARG-A2		19-23	to pay a large fine 
+	19	to
+	20	pay
+			sense:	pay.v.01
+			prop:	pay.01
+			V		20-20	pay 
+			N-ARG-A0		16-16	they 
+			N-ARG-A1		21-23	a large fine 
+	21	a
+	22	large
+			sense:	large.a.01
+	23	fine
+			sense:	fine.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mary 's second marriage produced four children , and through her eldest daughter Frances , Mary was the maternal grandmother of Lady Jane Grey , who was the de facto monarch of England for nine days in July 1553 .
+
+
+Treebanked sentence:
+--------------------
+Mary 's second marriage produced four children , and through her eldest daughter Frances , Mary was the maternal grandmother of Lady Jane Grey , who was the de facto monarch of England for nine days in July 1553 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Mary) (POS 's))
+        (JJ second) (NN marriage))
+      (VP (VBD produced)
+        (NP (CD four) (NNS children))))
+    (, ,)
+    (CC and)
+    (S
+      (PP (IN through)
+        (NP
+          (NP (PRP$ her) (JJS eldest) (NN daughter))
+          (NP (NNP Frances))))
+      (, ,)
+      (NP (NNP Mary))
+      (VP (VBD was)
+        (NP
+          (NP (DT the) (JJ maternal) (NN grandmother))
+          (PP (IN of)
+            (NP
+              (NP (NNP Lady) (NNP Jane) (NNP Grey))
+              (, ,)
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD was)
+                    (NP
+                      (NP (DT the)
+                        (ADJP (FW de) (FW facto))
+                        (NN monarch))
+                      (PP (IN of)
+                        (NP
+                          (NP (NNP England))
+                          (PP (IN for)
+                            (NP
+                              (NP (CD nine) (NNS days))
+                              (PP (IN in)
+                                (NP (NNP July) (CD 1553))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mary
+			coref:	IDENT			0	0-1	Mary 's 
+			coref:	IDENT			1	0-3	Mary 's second marriage 
+			name:	PERSON				0-0	Mary 
+	1	's
+	2	second
+			name:	ORDINAL				2-2	second 
+			sense:	second.s.01
+	3	marriage
+			sense:	marriage.n.01
+	4	produced
+			sense:	produce.v.01
+			prop:	produce.01
+			V		4-4	produced 
+			N-ARG-A0		0-3	Mary 's second marriage 
+			N-ARG-A1		5-6	four children 
+	5	four
+			name:	NUMBER				5-5	four 
+	6	children
+			sense:	child.n.02
+	7	,
+	8	and
+	9	through
+	10	her
+			coref:	IDENT			0	10-10	her 
+			coref:	IDENT			3	10-13	her eldest daughter Frances 
+	11	eldest
+	12	daughter
+			sense:	daughter.n.01
+	13	Frances
+			name:	PERSON				13-13	Frances 
+	14	,
+	15	Mary
+			coref:	IDENT			0	15-15	Mary 
+			name:	PERSON				15-15	Mary 
+	16	was
+			sense:	be.v.02
+			prop:	be.01
+			V		16-16	was 
+			N-ARGM-MNR		9-13	through her eldest daughter Frances 
+			N-ARG-A1		15-15	Mary 
+			N-ARG-A2		17-38	the maternal grandmother of Lady Jane Grey , who was the de facto monarch of England for nine days in July 1553 
+	17	the
+	18	maternal
+			sense:	enate.s.01
+	19	grandmother
+			sense:	grandma.n.01
+	20	of
+	21	Lady
+	22	Jane
+			name:	PERSON				22-23	Jane Grey 
+	23	Grey
+	24	,
+	25	who
+	26	was
+			sense:	be.v.01
+			prop:	be.01
+			V		26-26	was 
+			N-ARG-A1		21-23	Lady Jane Grey 
+			R-ARG-A1		25-25	who 
+			N-ARG-A2		27-32	the de facto monarch of England 
+			N-ARGM-TMP		33-38	for nine days in July 1553 
+	27	the
+	28	de
+	29	facto
+	30	monarch
+			sense:	sovereign.n.01
+	31	of
+	32	England
+			name:	COUNTRY				32-32	England 
+	33	for
+	34	nine
+			name:	DATE				34-38	nine days in July 1553 
+	35	days
+			sense:	day.n.01
+	36	in
+	37	July
+	38	1553
+	39	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.14-16	York , Mary 
+				1.31-31	her 
+				2.4-4	she 
+				3.16-16	her 
+				5.0-1	Mary 's 
+				5.10-10	her 
+				5.15-15	Mary 
+	Chain 1 (IDENT)
+				5.0-3	Mary 's second marriage 
+				3.0-8	The marriage , which was performed secretly in France 
+	Chain 2 (IDENT)
+				3.18-19	Henry VIII 
+				3.22-22	his 
+	Chain 3 (IDENT)
+				1.0-16	The younger surviving daughter of Henry VII , King of England and Elizabeth of York , Mary 
+				5.10-13	her eldest daughter Frances 
+	Chain 4 (IDENT)
+				1.5-16	Henry VII , King of England and Elizabeth of York , Mary 
+				4.10-10	Henry 
+	Chain 5 (IDENT)
+				1.22-23	Louis XII 
+				2.1-1	his 
+	Chain 6 (IDENT)
+				4.13-14	the couple 
+				4.16-16	they 
+

@@ -1,0 +1,697 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sir Benjamin Franklin , KCIE ( 1844 – 17 February 1917 ) was a British surgeon .
+
+
+Treebanked sentence:
+--------------------
+Sir Benjamin Franklin , KCIE ( 1844 – 17 February 1917 ) was a British surgeon . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Sir) (NNP Benjamin) (NNP Franklin) (, ,) (NNP KCIE))
+      (-LRB- -LRB-)
+      (NP
+        (NP
+          (QP (CD 1844) (SYM –) (CD 17)))
+        (NP-TMP (NNP February) (CD 1917)))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT a) (JJ British) (NN surgeon)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sir
+			coref:	IDENT			0	0-4	Sir Benjamin Franklin , KCIE 
+	1	Benjamin
+			name:	PERSON				1-2	Benjamin Franklin 
+	2	Franklin
+	3	,
+	4	KCIE
+	5	(
+	6	1844
+			name:	DATE				6-6	1844 
+	7	–
+	8	17
+			name:	DATE				8-10	17 February 1917 
+	9	February
+	10	1917
+	11	)
+	12	was
+			sense:	be.v.02
+			prop:	be.01
+			V		12-12	was 
+			N-ARG-A1		0-11	Sir Benjamin Franklin , KCIE ( 1844 – 17 February 1917 ) 
+			N-ARG-A2		13-15	a British surgeon 
+	13	a
+	14	British
+			name:	NATIONALITY				14-14	British 
+	15	surgeon
+			name:	TITLE				15-15	surgeon 
+			sense:	surgeon.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After being educated at University College , London and in Paris , he entered the Indian Medical Service in April 1869 , and worked at Lucknow and Simla .
+
+
+Treebanked sentence:
+--------------------
+After being educated at University College , London and in Paris , he entered the Indian Medical Service in April 1869 , and worked at Lucknow and Simla . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG being)
+          (VP (VBN educated)
+            (PP
+              (PP (IN at)
+                (NP
+                  (NP (NNP University) (NNP College))
+                  (, ,)
+                  (NP (NNP London))))
+              (CC and)
+              (PP (IN in)
+                (NP (NNP Paris))))))))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD entered)
+        (NP (DT the) (NNP Indian) (NNP Medical) (NNP Service))
+        (PP (IN in)
+          (NP (NNP April) (CD 1869))))
+      (, ,)
+      (CC and)
+      (VP (VBD worked)
+        (PP (IN at)
+          (NP (NNP Lucknow)
+            (CC and)
+            (NNP Simla)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	being
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	being 
+	2	educated
+			sense:	educate.v.01
+			prop:	educate.01
+			V		2-2	educated 
+			N-ARGM-LOC		3-10	at University College , London and in Paris 
+			N-ARG-A1		12-12	he 
+	3	at
+	4	University
+			name:	ORGANIZATION				4-5	University College 
+	5	College
+	6	,
+	7	London
+			name:	CITY				7-7	London 
+	8	and
+	9	in
+	10	Paris
+			coref:	IDENT			2	10-10	Paris 
+			name:	CITY				10-10	Paris 
+	11	,
+	12	he
+			coref:	IDENT			1	12-12	he 
+	13	entered
+			sense:	enroll.v.01
+			prop:	enter.01
+			V		13-13	entered 
+			N-ARGM-TMP		0-10	After being educated at University College , London and in Paris 
+			N-ARG-A0		12-12	he 
+			N-ARG-A1		14-17	the Indian Medical Service 
+			N-ARGM-TMP		18-20	in April 1869 
+	14	the
+			coref:	IDENT			3	14-17	the Indian Medical Service 
+	15	Indian
+			name:	ORGANIZATION				15-17	Indian Medical Service 
+	16	Medical
+	17	Service
+	18	in
+	19	April
+			name:	DATE				19-20	April 1869 
+	20	1869
+	21	,
+	22	and
+	23	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		23-23	worked 
+			N-ARGM-TMP		0-10	After being educated at University College , London and in Paris 
+			N-ARG-A0		12-12	he 
+			N-ARGM-LOC		24-27	at Lucknow and Simla 
+	24	at
+	25	Lucknow
+			name:	CITY				25-25	Lucknow 
+	26	and
+	27	Simla
+			name:	LOCATION				27-27	Simla 
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1894 he was appointed personal physician to Lord Elgin , the Viceroy , and held this position until 1899 .
+
+
+Treebanked sentence:
+--------------------
+In 1894 he was appointed personal physician to Lord Elgin , the Viceroy , and held this position until 1899 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1894)))
+    (NP (PRP he))
+    (VP
+      (VP (VBD was)
+        (VP (VBN appointed)
+          (NP (JJ personal) (NN physician))
+          (PP (IN to)
+            (NP
+              (NP (NNP Lord) (NNP Elgin))
+              (, ,)
+              (NP (DT the) (NN Viceroy))
+              (, ,)))))
+      (CC and)
+      (VP (VBD held)
+        (NP (DT this) (NN position))
+        (PP (IN until)
+          (NP (CD 1899)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1894
+			name:	DATE				1-1	1894 
+	2	he
+			coref:	IDENT			1	2-2	he 
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	appointed
+			sense:	appoint.v.02
+			prop:	appoint.01
+			V		4-4	appointed 
+			N-ARGM-TMP		0-1	In 1894 
+			N-ARG-A1		2-2	he 
+			N-ARG-A2		5-12	personal physician to Lord Elgin , the Viceroy 
+	5	personal
+			sense:	personal.a.01
+	6	physician
+			name:	TITLE				6-6	physician 
+			sense:	doctor.n.01
+	7	to
+	8	Lord
+	9	Elgin
+			name:	PERSON				9-9	Elgin 
+	10	,
+	11	the
+	12	Viceroy
+			sense:	viceroy.n.01
+	13	,
+	14	and
+	15	held
+			sense:	bear.v.11
+			prop:	hold.01
+			V		15-15	held 
+			N-ARGM-TMP		0-1	In 1894 
+			N-ARG-A0		2-2	he 
+			N-ARG-A1		16-17	this position 
+			N-ARGM-TMP		18-19	until 1899 
+	16	this
+	17	position
+			sense:	position.n.06
+	18	until
+	19	1899
+			name:	DATE				19-19	1899 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was appointed Director General of the Indian Medical Service on 2 December 1901 , and was thus the highest ranked officer in the military medical service in British India .
+
+
+Treebanked sentence:
+--------------------
+He was appointed Director General of the Indian Medical Service on 2 December 1901 , and was thus the highest ranked officer in the military medical service in British India . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN appointed)
+          (NP
+            (NP (NNP Director) (NNP General))
+            (PP (IN of)
+              (NP (DT the) (NNP Indian) (NNP Medical) (NNP Service))))
+          (PP (IN on)
+            (NP (CD 2)))
+          (NP-TMP (NNP December) (CD 1901))))
+      (, ,)
+      (CC and)
+      (VP (VBD was)
+        (ADVP (RB thus))
+        (ADJP
+          (ADJP (DT the) (JJS highest))
+          (SBAR
+            (S
+              (VP (VBD ranked)
+                (NP (NN officer))
+                (PP (IN in)
+                  (NP (DT the) (JJ military) (JJ medical) (NN service)))
+                (PP (IN in)
+                  (NP (JJ British) (NNP India)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	appointed
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		2-2	appointed 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		3-9	Director General of the Indian Medical Service 
+			N-ARGM-TMP		10-13	on 2 December 1901 
+	3	Director
+			name:	TITLE				3-4	Director General 
+	4	General
+	5	of
+	6	the
+			coref:	IDENT			3	6-9	the Indian Medical Service 
+	7	Indian
+			name:	ORGANIZATION				7-9	Indian Medical Service 
+	8	Medical
+	9	Service
+	10	on
+	11	2
+			name:	DATE				11-13	2 December 1901 
+	12	December
+	13	1901
+	14	,
+	15	and
+	16	was
+			sense:	be.v.01
+			prop:	be.01
+			V		16-16	was 
+			N-ARG-A1		0-0	He 
+			N-ARGM-ADV		17-17	thus 
+			N-ARG-A2		18-29	the highest ranked officer in the military medical service in British India 
+	17	thus
+			sense:	therefore.r.01
+	18	the
+	19	highest
+			sense:	eminent.s.01
+	20	ranked
+			sense:	rank.v.01
+			prop:	rank.01
+			V		20-20	ranked 
+			N-ARG-A2		19-19	highest 
+			N-ARG-A1		21-21	officer 
+	21	officer
+			sense:	military_officer.n.01
+	22	in
+	23	the
+			coref:	IDENT			3	23-26	the military medical service 
+	24	military
+			sense:	military.a.02
+	25	medical
+			sense:	medical.a.01
+	26	service
+			sense:	military_service.n.01
+	27	in
+	28	British
+			name:	NATIONALITY				28-28	British 
+	29	India
+			name:	COUNTRY				29-29	India 
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The position was combined with that of Sanitary Commissioner with the Government of India , and ranked as a major general , though he also received the personal promotion to the rank of surgeon - general on the day of appointment .
+
+
+Treebanked sentence:
+--------------------
+The position was combined with that of Sanitary Commissioner with the Government of India , and ranked as a major general , though he also received the personal promotion to the rank of surgeon - general on the day of appointment . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN position))
+    (VP
+      (VP (VBD was)
+        (VP (VBN combined)
+          (PP (IN with)
+            (NP
+              (NP (DT that))
+              (PP (IN of)
+                (NP (NNP Sanitary) (NNP Commissioner)))))
+          (PP (IN with)
+            (NP
+              (NP (DT the) (NN Government))
+              (PP (IN of)
+                (NP (NNP India)))))))
+      (, ,)
+      (CC and)
+      (VP (VBD ranked)
+        (PP (IN as)
+          (NP (DT a) (JJ major) (JJ general))))
+      (, ,)
+      (SBAR (IN though)
+        (S
+          (NP (PRP he))
+          (ADVP (RB also))
+          (VP (VBD received)
+            (NP (DT the) (JJ personal) (NN promotion))
+            (PP (IN to)
+              (NP
+                (NP (DT the) (NN rank))
+                (PP (IN of)
+                  (NP
+                    (NP (NN surgeon) (HYPH -) (JJ general))
+                    (PP (IN on)
+                      (NP
+                        (NP (DT the) (NN day))
+                        (PP (IN of)
+                          (NP (NN appointment)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	position
+			sense:	position.n.06
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	combined
+			sense:	unite.v.03
+			prop:	combine.01
+			V		3-3	combined 
+			N-ARG-A1		0-1	The position 
+			N-ARG-A2		4-13	with that of Sanitary Commissioner with the Government of India 
+			N-ARGM-ADV		22-40	though he also received the personal promotion to the rank of surgeon - general on the day of appointment 
+	4	with
+	5	that
+	6	of
+	7	Sanitary
+	8	Commissioner
+	9	with
+	10	the
+	11	Government
+			sense:	government.n.01
+	12	of
+	13	India
+			name:	COUNTRY				13-13	India 
+	14	,
+	15	and
+	16	ranked
+			sense:	rank.v.01
+			prop:	rank.01
+			V		16-16	ranked 
+			N-ARG-A1		0-1	The position 
+			N-ARG-A2		17-20	as a major general 
+			N-ARGM-ADV		22-40	though he also received the personal promotion to the rank of surgeon - general on the day of appointment 
+	17	as
+	18	a
+	19	major
+			name:	TITLE				19-20	major general 
+			sense:	major.a.01
+	20	general
+			sense:	general.a.01
+	21	,
+	22	though
+	23	he
+			coref:	IDENT			1	23-23	he 
+	24	also
+			sense:	besides.r.02
+	25	received
+			sense:	receive.v.01
+			prop:	receive.01
+			V		25-25	received 
+			N-ARG-A0		23-23	he 
+			N-ARGM-DIS		24-24	also 
+			N-ARG-A1		26-35	the personal promotion to the rank of surgeon - general 
+			N-ARGM-TMP		36-40	on the day of appointment 
+	26	the
+	27	personal
+			sense:	personal.a.01
+	28	promotion
+			sense:	promotion.n.02
+	29	to
+	30	the
+	31	rank
+			sense:	rank_and_file.n.01
+	32	of
+	33	surgeon
+			name:	TITLE				33-33	surgeon 
+			sense:	surgeon.n.01
+	34	-
+	35	general
+			name:	TITLE				35-35	general 
+			sense:	general.a.01
+	36	on
+	37	the
+			name:	DATE				37-38	the day 
+	38	day
+			sense:	day.n.01
+	39	of
+	40	appointment
+			sense:	appointment.n.01
+	41	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was honorary physician to Queen Victoria , King Edward VII and King George V , and served as the British delegate to the International Sanitary Conferences at Rome in 1907 and Paris in 1911 – 12 .
+
+
+Treebanked sentence:
+--------------------
+He was honorary physician to Queen Victoria , King Edward VII and King George V , and served as the British delegate to the International Sanitary Conferences at Rome in 1907 and Paris in 1911 – 12 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (NP (JJ honorary) (NN physician))
+        (PP (IN to)
+          (NP
+            (NP (NNP Queen) (NNP Victoria))
+            (, ,)
+            (NP (NNP King) (NNP Edward) (NNP VII))
+            (CC and)
+            (NP (NNP King) (NNP George) (NNP V)))))
+      (, ,)
+      (CC and)
+      (VP (VBD served)
+        (PP (IN as)
+          (NP (DT the) (JJ British) (NN delegate)))
+        (PP (IN to)
+          (NP (DT the) (NNP International) (NNP Sanitary) (NNPS Conferences)))
+        (PP (IN at)
+          (NP
+            (NP
+              (NP (NNP Rome))
+              (PP (IN in)
+                (NP (CD 1907))))
+            (CC and)
+            (NP
+              (NP (NNP Paris))
+              (PP (IN in)
+                (NP (CD 1911) (SYM –) (CD 12))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-14	honorary physician to Queen Victoria , King Edward VII and King George V 
+	2	honorary
+			sense:	honorary.s.01
+	3	physician
+			name:	TITLE				3-3	physician 
+			sense:	doctor.n.01
+	4	to
+	5	Queen
+			name:	CITY				5-6	Queen Victoria 
+	6	Victoria
+	7	,
+	8	King
+			name:	TITLE				8-8	King 
+	9	Edward
+			name:	PERSON				9-10	Edward VII 
+	10	VII
+	11	and
+	12	King
+			name:	TITLE				12-12	King 
+	13	George
+			name:	PERSON				13-14	George V 
+	14	V
+	15	,
+	16	and
+	17	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		17-17	served 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		18-36	as the British delegate to the International Sanitary Conferences at Rome in 1907 and Paris in 1911 – 12 
+	18	as
+	19	the
+	20	British
+			name:	NATIONALITY				20-20	British 
+	21	delegate
+			sense:	delegate.n.01
+	22	to
+	23	the
+	24	International
+			name:	ORGANIZATION				24-26	International Sanitary Conferences 
+	25	Sanitary
+	26	Conferences
+	27	at
+	28	Rome
+			name:	CITY				28-28	Rome 
+	29	in
+	30	1907
+			name:	DATE				30-30	1907 
+	31	and
+	32	Paris
+			coref:	IDENT			2	32-32	Paris 
+			name:	CITY				32-32	Paris 
+	33	in
+	34	1911
+			name:	DATE				34-34	1911 
+	35	–
+	36	12
+			name:	NUMBER				36-36	12 
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was appointed KCIE in 1908 .
+
+
+Treebanked sentence:
+--------------------
+He was appointed KCIE in 1908 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN appointed)
+        (NP
+          (NP (NNP KCIE))
+          (PP (IN in)
+            (NP (CD 1908))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	appointed
+			sense:	appoint.v.02
+			prop:	appoint.01
+			V		2-2	appointed 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		3-3	KCIE 
+			N-ARGM-TMP		4-5	in 1908 
+	3	KCIE
+			coref:	IDENT			0	3-3	KCIE 
+			name:	ORGANIZATION				3-3	KCIE 
+	4	in
+	5	1908
+			name:	DATE				5-5	1908 
+	6	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-4	Sir Benjamin Franklin , KCIE 
+				6.3-3	KCIE 
+	Chain 1 (IDENT)
+				1.12-12	he 
+				2.2-2	he 
+				3.0-0	He 
+				4.23-23	he 
+				5.0-0	He 
+				6.0-0	He 
+	Chain 2 (IDENT)
+				1.10-10	Paris 
+				5.32-32	Paris 
+	Chain 3 (IDENT)
+				1.14-17	the Indian Medical Service 
+				3.6-9	the Indian Medical Service 
+				3.23-26	the military medical service 
+

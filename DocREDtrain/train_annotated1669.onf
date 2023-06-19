@@ -1,0 +1,688 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Maurizio Gasparri ( Rome , 18 July 1956 ) is an Italian politician .
+
+
+Treebanked sentence:
+--------------------
+Maurizio Gasparri ( Rome , 18 July 1956 ) is an Italian politician . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Maurizio) (NNP Gasparri))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP Rome) (, ,) (CD 18))
+        (NP-TMP (NNP July) (CD 1956)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT an) (JJ Italian) (NN politician)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Maurizio
+			coref:	IDENT			1	0-1	Maurizio Gasparri 
+			name:	PERSON				0-1	Maurizio Gasparri 
+	1	Gasparri
+	2	(
+	3	Rome
+			name:	CITY				3-3	Rome 
+	4	,
+	5	18
+			name:	DATE				5-7	18 July 1956 
+	6	July
+	7	1956
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	Maurizio Gasparri ( Rome , 18 July 1956 ) 
+			N-ARG-A2		10-12	an Italian politician 
+	10	an
+	11	Italian
+			name:	NATIONALITY				11-11	Italian 
+	12	politician
+			name:	TITLE				12-12	politician 
+			sense:	politician.n.02
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After a period as Member of the Italian Parliament for the Movimento Sociale Italiano , Gasparri served as an Alleanza Nazionale member .
+
+
+Treebanked sentence:
+--------------------
+After a period as Member of the Italian Parliament for the Movimento Sociale Italiano , Gasparri served as an Alleanza Nazionale member . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP
+        (NP (DT a) (NN period))
+        (PP (IN as)
+          (NP
+            (NP (NNP Member))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNP Italian) (NNP Parliament))
+                (PP (IN for)
+                  (NP (DT the) (NNP Movimento) (NNP Sociale) (NNP Italiano)))))))))
+    (, ,)
+    (NP (NNP Gasparri))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP (DT an) (NNP Alleanza) (NNP Nazionale) (NN member))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	a
+	2	period
+			sense:	time_period.n.01
+	3	as
+	4	Member
+	5	of
+	6	the
+	7	Italian
+			name:	NATIONALITY				7-7	Italian 
+	8	Parliament
+			name:	ORGANIZATION				8-8	Parliament 
+	9	for
+	10	the
+			coref:	IDENT			0	10-13	the Movimento Sociale Italiano 
+	11	Movimento
+			name:	ORGANIZATION				11-13	Movimento Sociale Italiano 
+	12	Sociale
+	13	Italiano
+	14	,
+	15	Gasparri
+			coref:	IDENT			1	15-15	Gasparri 
+			name:	PERSON				15-15	Gasparri 
+	16	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		16-16	served 
+			N-ARGM-TMP		0-13	After a period as Member of the Italian Parliament for the Movimento Sociale Italiano 
+			N-ARG-A0		15-15	Gasparri 
+			N-ARG-A1		17-21	as an Alleanza Nazionale member 
+	17	as
+	18	an
+	19	Alleanza
+			name:	ORGANIZATION				19-20	Alleanza Nazionale 
+	20	Nazionale
+	21	member
+			sense:	member.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+During the course of his career he has served as Minister of Communications ( 2001 to 2005 in the Berlusconi II Cabinet ) .
+
+
+Treebanked sentence:
+--------------------
+During the course of his career he has served as Minister of Communications ( 2001 to 2005 in the Berlusconi II Cabinet ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN During)
+      (NP
+        (NP (DT the) (NN course))
+        (PP (IN of)
+          (NP (PRP$ his) (NN career)))))
+    (NP (PRP he))
+    (VP (VBZ has)
+      (VP (VBN served)
+        (PP (IN as)
+          (NP
+            (NP (NNP Minister))
+            (PP (IN of)
+              (NP (NNPS Communications)))))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (CD 2001))
+            (PP (IN to)
+              (NP
+                (NP (CD 2005))
+                (PP (IN in)
+                  (NP (DT the) (NNP Berlusconi) (NNP II) (NNP Cabinet))))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	During
+	1	the
+	2	course
+			sense:	course.n.02
+	3	of
+	4	his
+			coref:	IDENT			1	4-4	his 
+	5	career
+			sense:	career.n.01
+	6	he
+			coref:	IDENT			1	6-6	he 
+	7	has
+			sense:	have.v.01
+			prop:	have.01
+			V		7-7	has 
+	8	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		8-8	served 
+			N-ARGM-TMP		0-5	During the course of his career 
+			N-ARG-A0		6-6	he 
+			N-ARG-A1		9-12	as Minister of Communications 
+			N-ARGM-TMP		13-16	( 2001 to 2005 
+			C-ARG-A1		17-21	in the Berlusconi II Cabinet 
+	9	as
+	10	Minister
+			name:	TITLE				10-10	Minister 
+	11	of
+	12	Communications
+	13	(
+	14	2001
+			name:	DATE				14-14	2001 
+	15	to
+	16	2005
+			name:	DATE				16-16	2005 
+	17	in
+	18	the
+	19	Berlusconi
+	20	II
+	21	Cabinet
+	22	)
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was during his time in this role that he pushed for the law known popularly as the " legge Gasparri " .
+
+
+Treebanked sentence:
+--------------------
+It was during his time in this role that he pushed for the law known popularly as the " legge Gasparri " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (PP (IN during)
+        (NP
+          (NP (PRP$ his) (NN time))
+          (PP (IN in)
+            (NP (DT this) (NN role)))))
+      (SBAR (IN that)
+        (S
+          (NP (PRP he))
+          (VP (VBD pushed)
+            (PP (IN for)
+              (NP
+                (NP (DT the) (NN law))
+                (VP (VBN known)
+                  (ADVP (RB popularly))
+                  (PP (IN as)
+                    (NP (DT the) (`` ") (NNP legge) (NNP Gasparri) ('' "))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	was
+			sense:	be.v.05
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A2		2-7	during his time in this role 
+			N-ARG-A1		8-21	that he pushed for the law known popularly as the " legge Gasparri " 
+	2	during
+	3	his
+			coref:	IDENT			1	3-3	his 
+	4	time
+			sense:	time.n.02
+	5	in
+	6	this
+	7	role
+			sense:	function.n.03
+	8	that
+	9	he
+			coref:	IDENT			1	9-9	he 
+	10	pushed
+			sense:	crusade.v.01
+			prop:	push.02
+			V		10-10	pushed 
+			N-ARGM-TMP		8-8	that 
+			N-ARG-A0		9-9	he 
+			N-ARG-A2		11-21	for the law known popularly as the " legge Gasparri " 
+	11	for
+	12	the
+	13	law
+			sense:	law.n.02
+	14	known
+			sense:	acknowledge.v.06
+			prop:	know.01
+			V		14-14	known 
+			N-ARG-A1		12-13	the law 
+			N-ARGM-MNR		15-15	popularly 
+			N-ARG-A2		16-21	as the " legge Gasparri " 
+	15	popularly
+			sense:	popularly.r.01
+	16	as
+	17	the
+			coref:	IDENT			1	17-20	the " legge Gasparri 
+	18	"
+	19	legge
+	20	Gasparri
+			name:	PERSON				20-20	Gasparri 
+	21	"
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the XVI legislature he is the president of the senators of The People of Freedom .
+
+
+Treebanked sentence:
+--------------------
+In the XVI legislature he is the president of the senators of The People of Freedom . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NNP XVI) (NN legislature)))
+    (NP (PRP he))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN president))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNS senators))
+            (PP (IN of)
+              (NP
+                (NP (DT The) (NNS People))
+                (PP (IN of)
+                  (NP (NNP Freedom)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+	2	XVI
+	3	legislature
+			sense:	legislature.n.01
+	4	he
+			coref:	IDENT			1	4-4	he 
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARGM-LOC		0-3	In the XVI legislature 
+			N-ARG-A1		4-4	he 
+			N-ARG-A2		6-15	the president of the senators of The People of Freedom 
+	6	the
+	7	president
+			name:	TITLE				7-7	president 
+			sense:	president.n.04
+	8	of
+	9	the
+	10	senators
+			sense:	senator.n.01
+	11	of
+	12	The
+	13	People
+			name:	ORGANIZATION				13-15	People of Freedom 
+			sense:	person.n.01
+	14	of
+	15	Freedom
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Alongside Ignazio La Russa , Gasparri is considered a leader of the AN mainstream faction Destra Protagonista .
+
+
+Treebanked sentence:
+--------------------
+Alongside Ignazio La Russa , Gasparri is considered a leader of the AN mainstream faction Destra Protagonista . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Alongside)
+      (NP (NNP Ignazio) (NNP La) (NNP Russa)))
+    (, ,)
+    (NP (NNP Gasparri))
+    (VP (VBZ is)
+      (VP (VBN considered)
+        (NP
+          (NP (DT a) (NN leader))
+          (PP (IN of)
+            (NP (DT the)
+              (NP
+                (NP (DT AN) (NN mainstream) (NN faction))
+                (NP (NNP Destra) (NNP Protagonista))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Alongside
+	1	Ignazio
+			name:	PERSON				1-3	Ignazio La Russa 
+	2	La
+	3	Russa
+	4	,
+	5	Gasparri
+			coref:	IDENT			1	5-5	Gasparri 
+			name:	PERSON				5-5	Gasparri 
+	6	is
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	is 
+	7	considered
+			sense:	see.v.05
+			prop:	consider.01
+			V		7-7	considered 
+			N-ARGM-LOC		0-3	Alongside Ignazio La Russa 
+			N-ARG-A1		8-16	a leader of the AN mainstream faction Destra Protagonista 
+	8	a
+	9	leader
+			name:	TITLE				9-9	leader 
+			sense:	leader.n.01
+	10	of
+	11	the
+	12	AN
+	13	mainstream
+			sense:	mainstream.n.01
+	14	faction
+			sense:	faction.n.02
+	15	Destra
+	16	Protagonista
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Gasparri worked as a journalist , becoming editor in chief of the"Secolo d'Italia " - the Movimento Sociale Italiano 's daily paper .
+
+
+Treebanked sentence:
+--------------------
+Gasparri worked as a journalist , becoming editor in chief of the " Secolo d'Italia " - the Movimento Sociale Italiano 's daily paper . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Gasparri))
+    (VP (VBD worked)
+      (PP (IN as)
+        (NP (DT a) (NN journalist)))
+      (, ,)
+      (S
+        (VP (VBG becoming)
+          (NP (NN editor))
+          (PP (IN in)
+            (NP
+              (NP
+                (NP (NN chief))
+                (PP (IN of)
+                  (NP (DT the) (`` ") (NNP Secolo) (NNP d'Italia) ('' "))))
+              (, -)
+              (NP
+                (NP (DT the) (NNP Movimento) (NNP Sociale) (NNP Italiano) (POS 's))
+                (JJ daily) (NN paper)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Gasparri
+			coref:	IDENT			1	0-0	Gasparri 
+			name:	PERSON				0-0	Gasparri 
+	1	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		1-1	worked 
+			N-ARG-A0		0-0	Gasparri 
+			N-ARG-A1		2-4	as a journalist 
+			N-ARGM-PRD		6-23	becoming editor in chief of the " Secolo d'Italia " - the Movimento Sociale Italiano 's daily paper 
+	2	as
+	3	a
+	4	journalist
+			name:	TITLE				4-4	journalist 
+			sense:	journalist.n.01
+	5	,
+	6	becoming
+			sense:	become.v.02
+			prop:	become.01
+			V		6-6	becoming 
+			N-ARG-A1		0-0	Gasparri 
+			N-ARG-A2		7-23	editor in chief of the " Secolo d'Italia " - the Movimento Sociale Italiano 's daily paper 
+	7	editor
+			name:	TITLE				7-7	editor 
+			sense:	editor.n.01
+	8	in
+	9	chief
+			sense:	head.n.04
+	10	of
+	11	the
+	12	"
+	13	Secolo
+			name:	MISC				13-14	Secolo d'Italia 
+	14	d'Italia
+	15	"
+	16	-
+	17	the
+			coref:	IDENT			0	17-21	the Movimento Sociale Italiano 's 
+	18	Movimento
+			name:	ORGANIZATION				18-20	Movimento Sociale Italiano 
+	19	Sociale
+	20	Italiano
+	21	's
+	22	daily
+			name:	SET				22-22	daily 
+			sense:	daily.s.01
+	23	paper
+			sense:	newspaper.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Following a weak showing in the regional elections of 2005 , Gasparri was on 25 April 2006 replaced in Berlusconi 's third Cabinet by Mario Landolfi .
+
+
+Treebanked sentence:
+--------------------
+Following a weak showing in the regional elections of 2005 , Gasparri was on 25 April 2006 replaced in Berlusconi 's third Cabinet by Mario Landolfi . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (VBG Following)
+      (NP
+        (NP (DT a) (JJ weak) (NN showing))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (JJ regional) (NNS elections))
+            (PP (IN of)
+              (NP (CD 2005)))))))
+    (, ,)
+    (NP (NNP Gasparri))
+    (VP (VBD was)
+      (PP (IN on)
+        (NP
+          (NP (CD 25))
+          (NP-TMP (NNP April) (CD 2006))))
+      (VP (VBN replaced)
+        (PP (IN in)
+          (NP
+            (NP (NNP Berlusconi) (POS 's))
+            (JJ third) (NNP Cabinet)))
+        (PP (IN by)
+          (NP (NNP Mario) (NNP Landolfi)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		0-0	Following 
+			N-ARG-A2		1-9	a weak showing in the regional elections of 2005 
+	1	a
+	2	weak
+			sense:	weak.s.09
+	3	showing
+			sense:	display.n.02
+	4	in
+	5	the
+	6	regional
+			sense:	regional.s.02
+	7	elections
+			sense:	election.n.01
+	8	of
+	9	2005
+			name:	DATE				9-9	2005 
+	10	,
+	11	Gasparri
+			coref:	IDENT			1	11-11	Gasparri 
+			name:	PERSON				11-11	Gasparri 
+	12	was
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	was 
+	13	on
+	14	25
+			name:	DATE				14-16	25 April 2006 
+	15	April
+	16	2006
+	17	replaced
+			sense:	supplant.v.01
+			prop:	replace.01
+			V		17-17	replaced 
+			N-ARGM-TMP		0-9	Following a weak showing in the regional elections of 2005 
+			N-ARG-A1		11-11	Gasparri 
+			N-ARGM-TMP		13-16	on 25 April 2006 
+			N-ARGM-LOC		18-22	in Berlusconi 's third Cabinet 
+			N-ARG-A2		23-25	by Mario Landolfi 
+	18	in
+	19	Berlusconi
+			name:	PERSON				19-19	Berlusconi 
+	20	's
+	21	third
+			name:	ORDINAL				21-21	third 
+			sense:	third.s.01
+	22	Cabinet
+	23	by
+	24	Mario
+			name:	PERSON				24-25	Mario Landolfi 
+	25	Landolfi
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Gasparri is against jus soli .
+
+
+Treebanked sentence:
+--------------------
+Gasparri is against jus soli . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Gasparri))
+    (VP (VBZ is)
+      (PP (IN against)
+        (NP (NN jus) (NN soli))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Gasparri
+			coref:	IDENT			1	0-0	Gasparri 
+			name:	PERSON				0-0	Gasparri 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Gasparri 
+			N-ARG-A2		2-4	against jus soli 
+	2	against
+	3	jus
+	4	soli
+	5	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				6.17-21	the Movimento Sociale Italiano 's 
+				1.10-13	the Movimento Sociale Italiano 
+	Chain 1 (IDENT)
+				3.17-20	the " legge Gasparri 
+				0.0-1	Maurizio Gasparri 
+				1.15-15	Gasparri 
+				2.4-4	his 
+				2.6-6	he 
+				3.3-3	his 
+				3.9-9	he 
+				4.4-4	he 
+				5.5-5	Gasparri 
+				6.0-0	Gasparri 
+				7.11-11	Gasparri 
+				8.0-0	Gasparri 
+

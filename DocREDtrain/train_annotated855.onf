@@ -1,0 +1,812 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Normal Lyceum of Helsinki ( In Finnish ; Helsingin normaalilyseo ) is a school in Helsinki , Finland , consisting of the upper part of primary school ( peruskoulun yläaste , grades 7 to 9 ) and secondary school ( lukio ) .
+
+
+Treebanked sentence:
+--------------------
+Normal Lyceum of Helsinki ( In Finnish ; Helsingin normaalilyseo ) is a school in Helsinki , Finland , consisting of the upper part of primary school ( peruskoulun yläaste , grades 7 to 9 ) and secondary school ( lukio ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (JJ Normal) (NN Lyceum))
+      (PP (IN of)
+        (NP (NNP Helsinki)))
+      (PRN (-LRB- -LRB-)
+        (PP (IN In)
+          (NP (JJ Finnish)))
+        (: ;)
+        (NP (NN Helsingin) (NN normaalilyseo))
+        (-RRB- -RRB-)))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT a) (NN school))
+          (PP (IN in)
+            (NP (NNP Helsinki) (, ,) (NNP Finland))))
+        (, ,)
+        (VP (VBG consisting)
+          (PP (IN of)
+            (NP
+              (NP (DT the) (JJ upper) (NN part))
+              (PP (IN of)
+                (NP
+                  (UCP
+                    (NML (JJ primary) (NN school)
+                      (PRN (-LRB- -LRB-)
+                        (NP (NN peruskoulun) (NN yläaste))
+                        (, ,)
+                        (NP (NNS grades)
+                          (NML (CD 7) (IN to) (CD 9)))
+                        (-RRB- -RRB-)))
+                    (CC and)
+                    (ADJP (JJ secondary)))
+                  (NN school)))))))
+      (PRN (-LRB- -LRB-)
+        (NP (NN lukio))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Normal
+			sense:	normal.a.01
+	1	Lyceum
+			sense:	secondary_school.n.01
+	2	of
+	3	Helsinki
+			name:	CITY				3-3	Helsinki 
+	4	(
+	5	In
+	6	Finnish
+			name:	NATIONALITY				6-6	Finnish 
+	7	;
+	8	Helsingin
+	9	normaalilyseo
+	10	)
+	11	is
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	is 
+			N-ARG-A1		0-10	Normal Lyceum of Helsinki ( In Finnish ; Helsingin normaalilyseo ) 
+			N-ARG-A2		12-41	a school in Helsinki , Finland , consisting of the upper part of primary school ( peruskoulun yläaste , grades 7 to 9 ) and secondary school ( lukio ) 
+	12	a
+	13	school
+			sense:	school.n.01
+	14	in
+	15	Helsinki
+			name:	CITY				15-15	Helsinki 
+	16	,
+	17	Finland
+			name:	COUNTRY				17-17	Finland 
+	18	,
+	19	consisting
+			sense:	consist.v.04
+			prop:	consist.01
+			V		19-19	consisting 
+			N-ARG-A1		12-17	a school in Helsinki , Finland 
+			N-ARG-A2		20-41	of the upper part of primary school ( peruskoulun yläaste , grades 7 to 9 ) and secondary school ( lukio ) 
+	20	of
+	21	the
+	22	upper
+			sense:	upper.s.02
+	23	part
+			sense:	part.n.01
+	24	of
+	25	primary
+			sense:	primary.s.02
+	26	school
+			sense:	school.n.01
+	27	(
+	28	peruskoulun
+	29	yläaste
+	30	,
+	31	grades
+			sense:	class.n.02
+	32	7
+			name:	NUMBER				32-32	7 
+	33	to
+	34	9
+			name:	NUMBER				34-34	9 
+	35	)
+	36	and
+	37	secondary
+			sense:	secondary.s.05
+	38	school
+			sense:	school.n.01
+	39	(
+	40	lukio
+	41	)
+	42	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Unlike most other schools in Helsinki , the school is not owned by the city of Helsinki , but is instead part of the University of Helsinki , which itself is owned directly by the state of Finland .
+
+
+Treebanked sentence:
+--------------------
+Unlike most other schools in Helsinki , the school is not owned by the city of Helsinki , but is instead part of the University of Helsinki , which itself is owned directly by the state of Finland . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Unlike)
+      (NP
+        (NP (JJS most) (JJ other) (NNS schools))
+        (PP (IN in)
+          (NP (NNP Helsinki)))))
+    (, ,)
+    (NP (DT the) (NN school))
+    (VP
+      (VP (VBZ is) (RB not)
+        (VP (VBN owned)
+          (PP (IN by)
+            (NP
+              (NP (DT the) (NN city))
+              (PP (IN of)
+                (NP (NNP Helsinki)))))))
+      (, ,)
+      (CC but)
+      (VP (VBZ is)
+        (ADVP (RB instead))
+        (NP
+          (NP (NN part))
+          (PP (IN of)
+            (NP
+              (NP
+                (NP (DT the) (NNP University))
+                (PP (IN of)
+                  (NP (NNP Helsinki))))
+              (, ,)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (NP (PRP itself))
+                  (VP (VBZ is)
+                    (VP (VBN owned)
+                      (ADVP (RB directly))
+                      (PP (IN by)
+                        (NP
+                          (NP (DT the) (NN state))
+                          (PP (IN of)
+                            (NP (NNP Finland))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Unlike
+	1	most
+			sense:	most.a.01
+	2	other
+			sense:	other.a.01
+	3	schools
+			sense:	school.n.01
+	4	in
+	5	Helsinki
+			name:	CITY				5-5	Helsinki 
+	6	,
+	7	the
+			coref:	IDENT			1	7-8	the school 
+	8	school
+			sense:	school.n.01
+	9	is
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	is 
+	10	not
+			sense:	not.r.01
+	11	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		11-11	owned 
+			N-ARGM-ADV		0-5	Unlike most other schools in Helsinki 
+			N-ARG-A1		7-8	the school 
+			N-ARGM-NEG		10-10	not 
+			N-ARG-A0		12-16	by the city of Helsinki 
+	12	by
+	13	the
+	14	city
+			sense:	city.n.01
+	15	of
+	16	Helsinki
+			name:	CITY				16-16	Helsinki 
+	17	,
+	18	but
+	19	is
+			sense:	be.v.01
+			prop:	be.01
+			V		19-19	is 
+			N-ARGM-ADV		0-5	Unlike most other schools in Helsinki 
+			N-ARG-A1		7-8	the school 
+			N-ARGM-ADV		20-20	instead 
+			N-ARG-A2		21-37	part of the University of Helsinki , which itself is owned directly by the state of Finland 
+	20	instead
+			sense:	alternatively.r.01
+	21	part
+			sense:	part.n.01
+	22	of
+	23	the
+			coref:	IDENT			0	23-37	the University of Helsinki , which itself is owned directly by the state of Finland 
+	24	University
+			name:	ORGANIZATION				24-26	University of Helsinki 
+	25	of
+	26	Helsinki
+	27	,
+	28	which
+	29	itself
+			coref:	IDENT			0	29-29	itself 
+	30	is
+			sense:	be.v.01
+			prop:	be.03
+			V		30-30	is 
+	31	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		31-31	owned 
+			N-ARG-A1		23-26	the University of Helsinki 
+			R-ARG-A1		28-28	which 
+			R-ARG-A1		29-29	itself 
+			N-ARGM-MNR		32-32	directly 
+			N-ARG-A0		33-37	by the state of Finland 
+	32	directly
+			sense:	directly.r.02
+	33	by
+	34	the
+	35	state
+			sense:	state.n.04
+	36	of
+	37	Finland
+			name:	COUNTRY				37-37	Finland 
+	38	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The school is considered one of the most prestigious .
+
+
+Treebanked sentence:
+--------------------
+The school is considered one of the most prestigious . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN school))
+    (VP (VBZ is)
+      (VP (VBN considered)
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP (DT the)
+              (ADJP (RBS most) (JJ prestigious)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The school 
+	1	school
+			sense:	school.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	considered
+			sense:	see.v.05
+			prop:	consider.01
+			V		3-3	considered 
+			N-ARG-A1		4-8	one of the most prestigious 
+	4	one
+			name:	NUMBER				4-4	one 
+	5	of
+	6	the
+	7	most
+			sense:	most.r.01
+	8	prestigious
+			sense:	esteemed.s.01
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is the second hardest to get into , in the entire country , tied with Ressun Lukio .
+
+
+Treebanked sentence:
+--------------------
+It is the second hardest to get into , in the entire country , tied with Ressun Lukio . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP
+          (NP (DT the) (JJ second))
+          (JJS hardest))
+        (S
+          (VP (TO to)
+            (VP (VB get)
+              (PP (IN into))))))
+      (, ,)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (JJ entire) (NN country))
+          (, ,)
+          (VP (VBN tied)
+            (PP (IN with)
+              (NP (NNP Ressun) (NNP Lukio)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-13	the second hardest to get into , in the entire country , 
+	2	the
+	3	second
+			name:	ORDINAL				3-3	second 
+			sense:	second.s.01
+	4	hardest
+			sense:	difficult.a.01
+	5	to
+	6	get
+			sense:	get.v.01
+			prop:	get.05
+			V		6-6	get 
+			N-ARG-A2		7-7	into 
+	7	into
+	8	,
+	9	in
+	10	the
+	11	entire
+			sense:	entire.s.01
+	12	country
+			sense:	country.n.02
+	13	,
+	14	tied
+			sense:	tie.v.02
+			prop:	tie.01
+			V		14-14	tied 
+			N-ARG-A1		15-17	with Ressun Lukio 
+	15	with
+	16	Ressun
+			name:	PERSON				16-17	Ressun Lukio 
+	17	Lukio
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The most difficult one is Helsingin yliopiston Viikin normaalikoulu , which is also owned by the University of Helsinki .
+
+
+Treebanked sentence:
+--------------------
+The most difficult one is Helsingin yliopiston Viikin normaalikoulu , which is also owned by the University of Helsinki . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The)
+      (ADJP (RBS most) (JJ difficult))
+      (NN one))
+    (VP (VBZ is)
+      (NP
+        (NP (NNP Helsingin) (NNP yliopiston) (NNP Viikin) (NNP normaalikoulu))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ is)
+              (ADVP (RB also))
+              (VP (VBN owned)
+                (PP (IN by)
+                  (NP
+                    (NP (DT the) (NNP University))
+                    (PP (IN of)
+                      (NP (NNP Helsinki)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	most
+			sense:	most.r.01
+	2	difficult
+			sense:	difficult.a.01
+	3	one
+			name:	NUMBER				3-3	one 
+			sense:	one.n.01
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	The most difficult one 
+			N-ARG-A2		5-18	Helsingin yliopiston Viikin normaalikoulu , which is also owned by the University of Helsinki 
+	5	Helsingin
+			name:	MISC				5-8	Helsingin yliopiston Viikin normaalikoulu 
+	6	yliopiston
+	7	Viikin
+	8	normaalikoulu
+	9	,
+	10	which
+	11	is
+			sense:	be.v.01
+			prop:	be.03
+			V		11-11	is 
+	12	also
+			sense:	besides.r.02
+	13	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		13-13	owned 
+			N-ARG-A1		5-8	Helsingin yliopiston Viikin normaalikoulu 
+			R-ARG-A1		10-10	which 
+			N-ARGM-DIS		12-12	also 
+			N-ARG-A0		14-18	by the University of Helsinki 
+	14	by
+	15	the
+			coref:	IDENT			0	15-18	the University of Helsinki 
+	16	University
+			name:	ORGANIZATION				16-18	University of Helsinki 
+	17	of
+	18	Helsinki
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The established nickname for the school is Norssi , which also means a student of the school .
+
+
+Treebanked sentence:
+--------------------
+The established nickname for the school is Norssi , which also means a student of the school . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (VBN established) (NN nickname))
+      (PP (IN for)
+        (NP (DT the) (NN school))))
+    (VP (VBZ is)
+      (NP
+        (NP (NNP Norssi))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (ADVP (RB also))
+            (VP (VBZ means)
+              (NP
+                (NP (DT a) (NN student))
+                (PP (IN of)
+                  (NP (DT the) (NN school)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		1-1	established 
+			N-ARG-A1		2-2	nickname 
+	2	nickname
+			sense:	nickname.n.02
+	3	for
+	4	the
+			coref:	IDENT			1	4-5	the school 
+	5	school
+			sense:	school.n.01
+	6	is
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	is 
+			N-ARG-A1		0-5	The established nickname for the school 
+			N-ARG-A2		7-16	Norssi , which also means a student of the school 
+	7	Norssi
+			name:	PERSON				7-7	Norssi 
+	8	,
+	9	which
+	10	also
+			sense:	besides.r.02
+	11	means
+			sense:	mean.v.03
+			prop:	mean.01
+			V		11-11	means 
+			N-ARG-A0		7-7	Norssi 
+			R-ARG-A0		9-9	which 
+			N-ARGM-ADV		10-10	also 
+			N-ARG-A1		12-16	a student of the school 
+	12	a
+	13	student
+			name:	TITLE				13-13	student 
+			sense:	student.n.01
+	14	of
+	15	the
+			coref:	IDENT			1	15-16	the school 
+	16	school
+			sense:	school.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Former students who have graduated from the school are called vanha Norssi ( Finnish for " old Norssi " ) .
+
+
+Treebanked sentence:
+--------------------
+Former students who have graduated from the school are called vanha Norssi ( Finnish for " old Norssi " ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (JJ Former) (NNS students))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP have)
+            (VP (VBN graduated)
+              (PP (IN from)
+                (NP (DT the) (NN school))))))))
+    (VP (VBP are)
+      (VP (VBN called)
+        (NP (NNP vanha) (NNP Norssi)
+          (PRN (-LRB- -LRB-)
+            (NP
+              (NP (NNP Finnish))
+              (PP (IN for) (`` ")
+                (NP (JJ old) (NNP Norssi))
+                ('' ")))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Former
+			sense:	former.s.03
+	1	students
+			sense:	student.n.01
+	2	who
+	3	have
+			sense:	have.v.01
+			prop:	have.01
+			V		3-3	have 
+	4	graduated
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		4-4	graduated 
+			N-ARG-A0		0-1	Former students 
+			R-ARG-A0		2-2	who 
+			N-ARG-A1		5-7	from the school 
+	5	from
+	6	the
+			coref:	IDENT			1	6-7	the school 
+	7	school
+			sense:	school.n.01
+	8	are
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	are 
+	9	called
+			sense:	name.v.01
+			prop:	call.01
+			V		9-9	called 
+			N-ARG-A1		0-7	Former students who have graduated from the school 
+			N-ARG-A2		10-19	vanha Norssi ( Finnish for " old Norssi " ) 
+	10	vanha
+	11	Norssi
+	12	(
+	13	Finnish
+			name:	NATIONALITY				13-13	Finnish 
+	14	for
+	15	"
+	16	old
+			sense:	old.a.02
+	17	Norssi
+			name:	MISC				17-17	Norssi 
+	18	"
+	19	)
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The school has a constant , good - natured rivalry with Ressun lukio ( Ressu Upper Secondary School , previously known as " Helsingin reaalilyseo " ) and Helsingin Suomalainen Yhteiskoulu which are considered even more prestigious than the Normal Lyceum by some .
+
+
+Treebanked sentence:
+--------------------
+The school has a constant , good - natured rivalry with Ressun lukio ( Ressu Upper Secondary School , previously known as " Helsingin reaalilyseo " ) and Helsingin Suomalainen Yhteiskoulu which are considered even more prestigious than the Normal Lyceum by some . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN school))
+    (VP (VBZ has)
+      (NP
+        (NP (DT a) (JJ constant) (, ,)
+          (ADJP (JJ good) (HYPH -) (JJ natured))
+          (NN rivalry))
+        (PP (IN with)
+          (NP
+            (NP
+              (NP (NNP Ressun))
+              (NP (FW lukio)))
+            (PRN (-LRB- -LRB-)
+              (NP
+                (NP
+                  (NML (NNP Ressu) (NNP Upper))
+                  (JJ Secondary) (NN School))
+                (, ,)
+                (VP
+                  (ADVP (RB previously))
+                  (VBN known)
+                  (PP (IN as) (`` ")
+                    (NP (NNP Helsingin) (NN reaalilyseo))
+                    ('' "))))
+              (-RRB- -RRB-))
+            (CC and)
+            (NP
+              (NP (NNP Helsingin) (NNP Suomalainen) (NNP Yhteiskoulu))
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBP are)
+                    (VP (VBN considered)
+                      (S
+                        (ADJP
+                          (ADJP (RB even) (RBR more) (JJ prestigious))
+                          (PP (IN than)
+                            (NP (DT the) (JJ Normal) (NN Lyceum)))))
+                      (PP (IN by)
+                        (NP (DT some))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The school 
+	1	school
+			sense:	school.n.01
+	2	has
+			sense:	have.v.01
+			prop:	have.03
+			V		2-2	has 
+			N-ARG-A0		0-1	The school 
+			N-ARG-A1		3-42	a constant , good - natured rivalry with Ressun lukio ( Ressu Upper Secondary School , previously known as " Helsingin reaalilyseo " ) and Helsingin Suomalainen Yhteiskoulu which are considered even more prestigious than the Normal Lyceum by some 
+	3	a
+	4	constant
+			sense:	ceaseless.s.01
+	5	,
+	6	good
+			sense:	good.a.01
+	7	-
+	8	natured
+	9	rivalry
+			sense:	competition.n.03
+	10	with
+	11	Ressun
+	12	lukio
+	13	(
+	14	Ressu
+			name:	ORGANIZATION				14-17	Ressu Upper Secondary School 
+	15	Upper
+	16	Secondary
+			sense:	secondary.s.05
+	17	School
+			sense:	school.n.01
+	18	,
+	19	previously
+			name:	DATE				19-19	previously 
+			sense:	previously.r.01
+	20	known
+			sense:	know.v.04
+			prop:	know.01
+			V		20-20	known 
+			N-ARG-A1		14-17	Ressu Upper Secondary School 
+			N-ARGM-TMP		19-19	previously 
+			N-ARG-A2		21-25	as " Helsingin reaalilyseo " 
+	21	as
+	22	"
+	23	Helsingin
+	24	reaalilyseo
+	25	"
+	26	)
+	27	and
+	28	Helsingin
+	29	Suomalainen
+	30	Yhteiskoulu
+	31	which
+	32	are
+			sense:	be.v.01
+			prop:	be.03
+			V		32-32	are 
+	33	considered
+			sense:	see.v.05
+			prop:	consider.01
+			V		33-33	considered 
+			N-ARG-A1		34-40	even more prestigious than the Normal Lyceum 
+			N-ARG-A0		41-42	by some 
+	34	even
+			sense:	even.r.01
+	35	more
+			sense:	more.r.01
+	36	prestigious
+			sense:	prestigious.s.02
+	37	than
+	38	the
+	39	Normal
+			sense:	normal.a.01
+	40	Lyceum
+			sense:	secondary_school.n.01
+	41	by
+	42	some
+	43	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.23-37	the University of Helsinki , which itself is owned directly by the state of Finland 
+				1.29-29	itself 
+				4.15-18	the University of Helsinki 
+	Chain 1 (IDENT)
+				1.7-8	the school 
+				2.0-1	The school 
+				3.0-0	It 
+				5.4-5	the school 
+				5.15-16	the school 
+				6.6-7	the school 
+				7.0-1	The school 
+

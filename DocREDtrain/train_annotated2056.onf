@@ -1,0 +1,761 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+László Zarándi ( born 10 June 1929 ) was a Hungarian athlete who mainly competed in the 100 metres .
+
+
+Treebanked sentence:
+--------------------
+László Zarándi ( born 10 June 1929 ) was a Hungarian athlete who mainly competed in the 100 metres . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP László) (NNP Zarándi))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 10))
+        (NP-TMP (NNP June) (CD 1929)))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ Hungarian) (NN athlete))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (ADVP (RB mainly))
+            (VP (VBD competed)
+              (PP (IN in)
+                (NP (DT the) (CD 100) (NNS metres))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	László
+			name:	PERSON				0-1	László Zarándi 
+	1	Zarándi
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	László Zarándi 
+			N-ARGM-TMP		4-6	10 June 1929 
+	4	10
+			name:	DATE				4-6	10 June 1929 
+	5	June
+	6	1929
+	7	)
+	8	was
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	was 
+			N-ARG-A1		0-7	László Zarándi ( born 10 June 1929 ) 
+			N-ARG-A2		9-18	a Hungarian athlete who mainly competed in the 100 metres 
+	9	a
+	10	Hungarian
+			name:	NATIONALITY				10-10	Hungarian 
+	11	athlete
+			name:	TITLE				11-11	athlete 
+			sense:	athlete.n.01
+	12	who
+	13	mainly
+			sense:	chiefly.r.01
+	14	competed
+			sense:	compete.v.01
+			prop:	compete.01
+			V		14-14	competed 
+			N-ARG-A0		9-11	a Hungarian athlete 
+			R-ARG-A0		12-12	who 
+			N-ARGM-ADV		13-13	mainly 
+	15	in
+	16	the
+	17	100
+			name:	NUMBER				17-17	100 
+	18	metres
+			sense:	meter.n.01
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was born in Kiskunfélegyháza .
+
+
+Treebanked sentence:
+--------------------
+He was born in Kiskunfélegyháza . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Kiskunfélegyháza)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-4	in Kiskunfélegyháza 
+	3	in
+	4	Kiskunfélegyháza
+			name:	LOCATION				4-4	Kiskunfélegyháza 
+	5	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He began his career in sport in 1946/47 as a soccer player in the team of SZVSE .
+
+
+Treebanked sentence:
+--------------------
+He began his career in sport in 1946/47 as a soccer player in the team of SZVSE . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD began)
+      (NP (PRP$ his) (NN career))
+      (PP (IN in)
+        (NP
+          (NP (NN sport))
+          (PP (IN in)
+            (NP (CD 1946/47)))))
+      (PP (IN as)
+        (NP
+          (NP (DT a) (NN soccer) (NN player))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN team))
+              (PP (IN of)
+                (NP (NNP SZVSE))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		1-1	began 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-5	his career in sport 
+			N-ARGM-TMP		6-7	in 1946/47 
+			N-ARGM-PRD		8-16	as a soccer player in the team of SZVSE 
+	2	his
+	3	career
+			sense:	career.n.01
+	4	in
+	5	sport
+			sense:	sport.n.01
+	6	in
+	7	1946/47
+			name:	DATE				7-7	1946/47 
+	8	as
+	9	a
+	10	soccer
+			name:	TITLE				10-11	soccer player 
+			sense:	soccer.n.01
+	11	player
+			sense:	player.n.01
+	12	in
+	13	the
+			coref:	IDENT			0	13-16	the team of SZVSE 
+	14	team
+			sense:	team.n.01
+	15	of
+	16	SZVSE
+			name:	ORGANIZATION				16-16	SZVSE 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the high school he continued to play soccer , but trained also in athletics : 100 meter and high jump .
+
+
+Treebanked sentence:
+--------------------
+At the high school he continued to play soccer , but trained also in athletics : 100 meter and high jump . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (DT the) (JJ high) (NN school)))
+    (NP (PRP he))
+    (VP
+      (VP (VBD continued)
+        (S
+          (VP (TO to)
+            (VP (VB play)
+              (NP (NN soccer))))))
+      (, ,)
+      (CC but)
+      (VP
+        (NP (VBN trained))
+        (PP
+          (ADVP (RB also))
+          (IN in)
+          (NP (NNS athletics)))
+        (: :)
+        (NP (CD 100)
+          (NML
+            (NML (NN meter))
+            (CC and)
+            (NML (JJ high) (NN jump))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+	2	high
+			sense:	high.a.01
+	3	school
+			sense:	school.n.01
+	4	he
+	5	continued
+			sense:	continue.v.01
+			prop:	continue.01
+			V		5-5	continued 
+			N-ARGM-LOC		0-3	At the high school 
+			N-ARG-A0		4-4	he 
+			N-ARG-A1		6-8	to play soccer 
+	6	to
+	7	play
+			sense:	play.v.01
+			prop:	play.01
+			V		7-7	play 
+			N-ARG-A0		4-4	he 
+			N-ARG-A1		8-8	soccer 
+	8	soccer
+			sense:	soccer.n.01
+	9	,
+	10	but
+	11	trained
+			sense:	train.v.02
+			prop:	train.01
+			V		11-11	trained 
+			N-ARGM-LOC		0-3	At the high school 
+			N-ARG-A2		4-4	he 
+			N-ARGM-ADV		12-12	also 
+			N-ARG-A1		13-20	in athletics : 100 meter and high jump 
+	12	also
+			sense:	besides.r.02
+	13	in
+	14	athletics
+			sense:	sport.n.01
+	15	:
+	16	100
+			name:	NUMBER				16-16	100 
+	17	meter
+			sense:	meter.n.01
+	18	and
+	19	high
+			sense:	high.a.02
+	20	jump
+			sense:	jump.n.06
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Since 1950 he has been elected in the national team of Hungary for 4 x 100 meters relay .
+
+
+Treebanked sentence:
+--------------------
+Since 1950 he has been elected in the national team of Hungary for 4 x 100 meters relay . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Since)
+      (NP (CD 1950)))
+    (NP (PRP he))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN elected)
+          (PP (IN in)
+            (NP
+              (NP (DT the) (JJ national) (NN team))
+              (PP (IN of)
+                (NP (NNP Hungary)))))
+          (PP (IN for)
+            (NP
+              (QP (CD 4) (SYM x) (CD 100))
+              (NNS meters) (NN relay))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Since
+	1	1950
+			name:	DATE				1-1	1950 
+	2	he
+	3	has
+			sense:	have.v.01
+			prop:	have.01
+			V		3-3	has 
+	4	been
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	been 
+	5	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		5-5	elected 
+			N-ARGM-TMP		0-1	Since 1950 
+			N-ARG-A1		2-2	he 
+			N-ARG-A2		6-17	in the national team of Hungary for 4 x 100 meters relay 
+	6	in
+	7	the
+			coref:	IDENT			0	7-11	the national team of Hungary 
+	8	national
+			sense:	national.a.01
+	9	team
+			sense:	team.n.01
+	10	of
+	11	Hungary
+			coref:	IDENT			1	11-11	Hungary 
+			name:	COUNTRY				11-11	Hungary 
+	12	for
+	13	4
+			name:	NUMBER				13-13	4 
+	14	x
+	15	100
+			name:	NUMBER				15-15	100 
+	16	meters
+			sense:	meter.n.01
+	17	relay
+			sense:	relay.n.04
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He competed for Hungary at the 1952 Summer Olympics held in Helsinki , Finland where he won the bronze medal in the men 's 4 x 100 metre relay with his team mates Géza Varasdi , György Csányi and Béla Goldoványi .
+
+
+Treebanked sentence:
+--------------------
+He competed for Hungary at the 1952 Summer Olympics held in Helsinki , Finland where he won the bronze medal in the men 's 4 x 100 metre relay with his team mates Géza Varasdi , György Csányi and Béla Goldoványi . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD competed)
+      (PP (IN for)
+        (NP (NNP Hungary)))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (CD 1952) (NN Summer) (NNS Olympics))
+          (VP (VBN held)
+            (PP (IN in)
+              (NP (NNP Helsinki) (, ,) (NNP Finland)))
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (PRP he))
+                (VP (VBD won)
+                  (NP (DT the) (NN bronze) (NN medal))
+                  (PP (IN in)
+                    (NP
+                      (NP (DT the) (NNS men) (POS 's))
+                      (NML
+                        (QP (CD 4) (SYM x) (CD 100)))
+                      (NN metre) (NN relay)))
+                  (PP (IN with)
+                    (NP
+                      (NP (PRP$ his) (NN team))
+                      (NP (NNS mates))
+                      (NP (NNP Géza) (NNP Varasdi))
+                      (, ,)
+                      (NP (NNP György) (NNP Csányi))
+                      (CC and)
+                      (NP (NNP Béla) (NNP Goldoványi)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	competed
+			sense:	compete.v.01
+			prop:	compete.01
+			V		1-1	competed 
+			N-ARG-A0		0-0	He 
+			N-ARGM-LOC		4-40	at the 1952 Summer Olympics held in Helsinki , Finland where he won the bronze medal in the men 's 4 x 100 metre relay with his team mates Géza Varasdi , György Csányi and Béla Goldoványi 
+	2	for
+	3	Hungary
+			coref:	IDENT			1	3-3	Hungary 
+			name:	COUNTRY				3-3	Hungary 
+	4	at
+	5	the
+			name:	DATE				5-7	the 1952 Summer 
+	6	1952
+	7	Summer
+			sense:	summer.n.01
+	8	Olympics
+			name:	MISC				8-8	Olympics 
+	9	held
+			sense:	hold.v.03
+			prop:	hold.04
+			V		9-9	held 
+			N-ARG-A1		5-8	the 1952 Summer Olympics 
+			N-ARGM-LOC		10-13	in Helsinki , Finland 
+	10	in
+	11	Helsinki
+			name:	CITY				11-11	Helsinki 
+	12	,
+	13	Finland
+			name:	COUNTRY				13-13	Finland 
+	14	where
+	15	he
+	16	won
+			sense:	win.v.01
+			prop:	win.01
+			V		16-16	won 
+			N-ARGM-LOC		5-13	the 1952 Summer Olympics held in Helsinki , Finland 
+			R-ARGM-LOC		14-14	where 
+			N-ARG-A0		15-15	he 
+			N-ARG-A1		17-19	the bronze medal 
+			N-ARGM-LOC		20-28	in the men 's 4 x 100 metre relay 
+			N-ARGM-ADV		29-40	with his team mates Géza Varasdi , György Csányi and Béla Goldoványi 
+	17	the
+	18	bronze
+			sense:	bronze.n.01
+	19	medal
+			sense:	decoration.n.02
+	20	in
+	21	the
+	22	men
+			sense:	man.n.01
+	23	's
+	24	4
+			name:	NUMBER				24-24	4 
+	25	x
+	26	100
+			name:	NUMBER				26-26	100 
+	27	metre
+			sense:	meter.n.01
+	28	relay
+			sense:	relay.n.04
+	29	with
+	30	his
+			coref:	IDENT			0	30-34	his team mates Géza Varasdi 
+	31	team
+			sense:	team.n.01
+	32	mates
+			sense:	teammate.n.01
+	33	Géza
+			name:	PERSON				33-34	Géza Varasdi 
+	34	Varasdi
+	35	,
+	36	György
+			name:	PERSON				36-37	György Csányi 
+	37	Csányi
+	38	and
+	39	Béla
+			name:	PERSON				39-40	Béla Goldoványi 
+	40	Goldoványi
+	41	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Together with the same team , he won the gold medal on 29 August 1954 in Bern , at the European Championship of Athletics in the men 4 x 100 meter relay .
+
+
+Treebanked sentence:
+--------------------
+Together with the same team , he won the gold medal on 29 August 1954 in Bern , at the European Championship of Athletics in the men 4 x 100 meter relay . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP
+      (ADVP (RB Together))
+      (IN with)
+      (NP (DT the) (JJ same) (NN team)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD won)
+      (NP
+        (NP (DT the) (NN gold) (NN medal))
+        (PP (IN on)
+          (NP (CD 29))))
+      (NP-TMP (NNP August) (CD 1954))
+      (PP (IN in)
+        (NP (NNP Bern)))
+      (, ,)
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NNP European) (NNP Championship))
+          (PP (IN of)
+            (NP
+              (NP (NNP Athletics))
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NNS men))
+                  (NML
+                    (QP (CD 4) (SYM x) (CD 100))
+                    (NN meter))
+                  (NN relay))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Together
+			sense:	together.r.05
+	1	with
+	2	the
+	3	same
+			sense:	same.a.01
+	4	team
+			sense:	team.n.01
+	5	,
+	6	he
+	7	won
+			sense:	win.v.01
+			prop:	win.01
+			V		7-7	won 
+			N-ARG-A0		6-6	he 
+			N-ARG-A1		8-10	the gold medal 
+			N-ARGM-TMP		11-14	on 29 August 1954 
+			N-ARGM-LOC		15-16	in Bern 
+			N-ARGM-LOC		18-31	at the European Championship of Athletics in the men 4 x 100 meter relay 
+	8	the
+	9	gold
+			sense:	gold.n.01
+	10	medal
+			sense:	decoration.n.02
+	11	on
+	12	29
+			name:	DATE				12-14	29 August 1954 
+	13	August
+	14	1954
+	15	in
+	16	Bern
+			name:	CITY				16-16	Bern 
+	17	,
+	18	at
+	19	the
+	20	European
+			name:	ORGANIZATION				20-23	European Championship of Athletics 
+	21	Championship
+	22	of
+	23	Athletics
+	24	in
+	25	the
+	26	men
+			sense:	man.n.01
+	27	4
+			name:	NUMBER				27-27	4 
+	28	x
+	29	100
+			name:	NUMBER				29-29	100 
+	30	meter
+			sense:	meter.n.01
+	31	relay
+			sense:	relay.n.04
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+From 1952 he has been teaching at the High Schoeo for Physical Education and he has trained jumpers like László Szalma ( 4 .
+
+
+Treebanked sentence:
+--------------------
+From 1952 he has been teaching at the High Schoeo for Physical Education and he has trained jumpers like László Szalma ( 4 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN From)
+        (NP (CD 1952)))
+      (NP (PRP he))
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP (VBG teaching)
+            (PP (IN at)
+              (NP
+                (NP (DT the) (JJ High) (NNP Schoeo))
+                (PP (IN for)
+                  (NP (NNP Physical) (NNP Education)))))))))
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBZ has)
+        (VP (VBN trained)
+          (NP (NNS jumpers))
+          (PP (IN like)
+            (NP
+              (NP (NNP László) (NNP Szalma))
+              (-LRB- -LRB-)
+              (NP (CD 4)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	From
+	1	1952
+			name:	DATE				1-1	1952 
+	2	he
+	3	has
+			sense:	have.v.01
+			prop:	have.01
+			V		3-3	has 
+	4	been
+			sense:	be.v.08
+			prop:	be.03
+			V		4-4	been 
+	5	teaching
+			sense:	teach.v.01
+			prop:	teach.01
+			V		5-5	teaching 
+			N-ARGM-TMP		0-1	From 1952 
+			N-ARG-A0		2-2	he 
+			N-ARGM-LOC		6-12	at the High Schoeo for Physical Education 
+	6	at
+	7	the
+	8	High
+			sense:	high.a.02
+	9	Schoeo
+	10	for
+	11	Physical
+	12	Education
+	13	and
+	14	he
+	15	has
+			sense:	have.v.01
+			prop:	have.01
+			V		15-15	has 
+	16	trained
+			sense:	coach.v.01
+			prop:	train.01
+			V		16-16	trained 
+			N-ARG-A0		14-14	he 
+			N-ARG-A2		17-22	jumpers like László Szalma ( 4 
+	17	jumpers
+			sense:	jumper.n.02
+	18	like
+	19	László
+			name:	PERSON				19-20	László Szalma 
+	20	Szalma
+	21	(
+	22	4
+			name:	NUMBER				22-22	4 
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+place at the Olympic Games in 1980 ) and Dragan Ivanov .
+
+
+Treebanked sentence:
+--------------------
+place at the Olympic Games in 1980 ) and Dragan Ivanov . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP (NN place))
+    (PP (IN at)
+      (NP
+        (NP
+          (NP (DT the) (NNP Olympic) (NNPS Games))
+          (PP (IN in)
+            (NP (CD 1980))))
+        (-RRB- -RRB-)
+        (CC and)
+        (NP (NNP Dragan) (NNP Ivanov))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	place
+			sense:	place.n.15
+	1	at
+	2	the
+	3	Olympic
+			name:	MISC				3-4	Olympic Games 
+	4	Games
+	5	in
+	6	1980
+			name:	DATE				6-6	1980 
+	7	)
+	8	and
+	9	Dragan
+			name:	PERSON				9-10	Dragan Ivanov 
+	10	Ivanov
+	11	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.7-11	the national team of Hungary 
+				2.13-16	the team of SZVSE 
+				5.30-34	his team mates Géza Varasdi 
+	Chain 1 (IDENT)
+				4.11-11	Hungary 
+				5.3-3	Hungary 
+

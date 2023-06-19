@@ -1,0 +1,576 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mount Gilead is a village in Morrow County , Ohio , United States .
+
+
+Treebanked sentence:
+--------------------
+Mount Gilead is a village in Morrow County , Ohio , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Mount) (NNP Gilead))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN village))
+        (PP (IN in)
+          (NP (NNP Morrow) (NNP County) (, ,) (NNP Ohio) (, ,) (NNP United) (NNP States)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mount
+			coref:	IDENT			0	0-1	Mount Gilead 
+			name:	ORGANIZATION				0-1	Mount Gilead 
+	1	Gilead
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Mount Gilead 
+			N-ARG-A2		3-12	a village in Morrow County , Ohio , United States 
+	3	a
+	4	village
+			sense:	village.n.01
+	5	in
+	6	Morrow
+			coref:	IDENT			3	6-7	Morrow County 
+			name:	LOCATION				6-7	Morrow County 
+	7	County
+	8	,
+	9	Ohio
+			coref:	IDENT			2	9-9	Ohio 
+			name:	STATE_OR_PROVINCE				9-9	Ohio 
+	10	,
+	11	United
+			name:	COUNTRY				11-12	United States 
+	12	States
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The population was 3,660 at the 2010 census .
+
+
+Treebanked sentence:
+--------------------
+The population was 3,660 at the 2010 census . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN population))
+    (VP (VBD was)
+      (NP
+        (NP (CD 3,660))
+        (PP (IN at)
+          (NP (DT the) (CD 2010) (NN census)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			4	0-1	The population 
+	1	population
+			sense:	population.n.04
+	2	was
+			sense:	equal.v.01
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	The population 
+			N-ARG-A2		3-3	3,660 
+			N-ARGM-TMP		4-7	at the 2010 census 
+	3	3,660
+			name:	NUMBER				3-3	3,660 
+	4	at
+	5	the
+	6	2010
+			name:	DATE				6-6	2010 
+	7	census
+			sense:	census.n.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is the county seat of Morrow County and the center of population of Ohio .
+
+
+Treebanked sentence:
+--------------------
+It is the county seat of Morrow County and the center of population of Ohio . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT the) (NN county) (NN seat))
+          (PP (IN of)
+            (NP (NNP Morrow) (NNP County))))
+        (CC and)
+        (NP
+          (NP (DT the) (NN center))
+          (PP (IN of)
+            (NP
+              (NP (NN population))
+              (PP (IN of)
+                (NP (NNP Ohio))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			4	0-0	It 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-14	the county seat of Morrow County and the center of population of Ohio 
+	2	the
+	3	county
+			sense:	county.n.01
+	4	seat
+			sense:	seat.n.05
+	5	of
+	6	Morrow
+			coref:	IDENT			3	6-7	Morrow County 
+			name:	LOCATION				6-7	Morrow County 
+	7	County
+	8	and
+	9	the
+	10	center
+			sense:	center.n.01
+	11	of
+	12	population
+			sense:	population.n.04
+	13	of
+	14	Ohio
+			coref:	IDENT			2	14-14	Ohio 
+			name:	STATE_OR_PROVINCE				14-14	Ohio 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The village was established in 1832 , eight years after white settlers arrived in the region .
+
+
+Treebanked sentence:
+--------------------
+The village was established in 1832 , eight years after white settlers arrived in the region . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN village))
+    (VP (VBD was)
+      (VP (VBN established)
+        (PP (IN in)
+          (NP (CD 1832)))
+        (, ,)
+        (SBAR
+          (NP (CD eight) (NNS years))
+          (IN after)
+          (S
+            (NP (JJ white) (NNS settlers))
+            (VP (VBD arrived)
+              (PP (IN in)
+                (NP (DT the) (NN region))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	village
+			sense:	village.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		3-3	established 
+			N-ARG-A1		0-1	The village 
+			N-ARGM-TMP		4-15	in 1832 , eight years after white settlers arrived in the region 
+	4	in
+	5	1832
+			name:	DATE				5-5	1832 
+	6	,
+	7	eight
+			name:	DURATION				7-8	eight years 
+	8	years
+			sense:	year.n.01
+	9	after
+	10	white
+			coref:	IDENT			1	10-11	white settlers 
+			sense:	white.a.02
+	11	settlers
+			sense:	settler.n.01
+	12	arrived
+			sense:	arrive.v.01
+			prop:	arrive.01
+			V		12-12	arrived 
+			N-ARG-A1		10-11	white settlers 
+			N-ARG-A4		13-15	in the region 
+	13	in
+	14	the
+	15	region
+			sense:	region.n.03
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Before their arrival , the forest was a hunting area for the Shawnee tribe .
+
+
+Treebanked sentence:
+--------------------
+Before their arrival , the forest was a hunting area for the Shawnee tribe . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Before)
+      (NP (PRP$ their) (NN arrival)))
+    (, ,)
+    (NP (DT the) (NN forest))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN hunting) (NN area))
+        (PP (IN for)
+          (NP (DT the) (NNP Shawnee) (NN tribe)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Before
+	1	their
+			coref:	IDENT			1	1-1	their 
+	2	arrival
+			sense:	arrival.n.02
+	3	,
+	4	the
+			coref:	IDENT			1	4-5	the forest 
+	5	forest
+			sense:	forest.n.02
+	6	was
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	was 
+			N-ARGM-TMP		0-2	Before their arrival 
+			N-ARG-A1		4-5	the forest 
+			N-ARG-A2		7-13	a hunting area for the Shawnee tribe 
+	7	a
+	8	hunting
+			sense:	hunt.n.08
+	9	area
+			sense:	area.n.01
+	10	for
+	11	the
+	12	Shawnee
+			name:	CITY				12-12	Shawnee 
+	13	tribe
+			sense:	tribe.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Located in the center of the village is Morrow County 's historic World War I Victory Memorial Shaft , unique in the United States , and Mount Gilead State Park is nearby on State Route 95 .
+
+
+Treebanked sentence:
+--------------------
+Located in the center of the village is Morrow County 's historic World War I Victory Memorial Shaft , unique in the United States , and Mount Gilead State Park is nearby on State Route 95 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (S
+        (VP (VBN Located)
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN center))
+              (PP (IN of)
+                (NP (DT the) (NN village)))))))
+      (VP (VBZ is)
+        (NP
+          (NP
+            (NP (NNP Morrow) (NNP County) (POS 's))
+            (JJ historic)
+            (NML (NNP World) (NNP War))
+            (NNP I) (NNP Victory) (NNP Memorial) (NNP Shaft))
+          (, ,)
+          (ADJP (JJ unique)
+            (PP (IN in)
+              (NP (DT the) (NNP United) (NNP States)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP Mount) (NNP Gilead) (NNP State) (NNP Park))
+      (VP (VBZ is)
+        (ADVP (RB nearby))
+        (PP (IN on)
+          (NP
+            (NML (NNP State) (NNP Route))
+            (CD 95)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		0-0	Located 
+			N-ARGM-LOC		1-6	in the center of the village 
+			N-ARG-A1		8-23	Morrow County 's historic World War I Victory Memorial Shaft , unique in the United States 
+	1	in
+	2	the
+	3	center
+			sense:	center.n.01
+	4	of
+	5	the
+	6	village
+			sense:	village.n.01
+	7	is
+			sense:	be.v.03
+			prop:	be.03
+			V		7-7	is 
+	8	Morrow
+			coref:	IDENT			3	8-10	Morrow County 's 
+			name:	LOCATION				8-9	Morrow County 
+	9	County
+	10	's
+	11	historic
+			sense:	historic.s.02
+	12	World
+			name:	MISC				12-12	World 
+	13	War
+			name:	CAUSE_OF_DEATH				13-13	War 
+	14	I
+			name:	MISC				14-17	I Victory Memorial Shaft 
+	15	Victory
+	16	Memorial
+	17	Shaft
+	18	,
+	19	unique
+			sense:	singular.s.06
+	20	in
+	21	the
+	22	United
+			name:	COUNTRY				22-23	United States 
+	23	States
+	24	,
+	25	and
+	26	Mount
+			name:	LOCATION				26-29	Mount Gilead State Park 
+	27	Gilead
+	28	State
+	29	Park
+	30	is
+			sense:	be.v.03
+			prop:	be.01
+			V		30-30	is 
+			N-ARG-A1		26-29	Mount Gilead State Park 
+			N-ARG-A2		31-31	nearby 
+			N-ARGM-LOC		32-35	on State Route 95 
+	31	nearby
+			sense:	nearby.r.01
+	32	on
+	33	State
+	34	Route
+	35	95
+			name:	NUMBER				35-35	95 
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Other areas drawing tourism include the Amish farms , shops and stores east of Mount Gilead , near Chesterville and Johnsville .
+
+
+Treebanked sentence:
+--------------------
+Other areas drawing tourism include the Amish farms , shops and stores east of Mount Gilead , near Chesterville and Johnsville . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (JJ Other) (NNS areas))
+      (VP (VBG drawing)
+        (NP (NN tourism))))
+    (VP (VBP include)
+      (NP
+        (NP (DT the) (JJ Amish) (NNS farms) (, ,) (NNS shops)
+          (CC and)
+          (NNS stores))
+        (PP
+          (ADVP (RB east))
+          (IN of)
+          (NP (NNP Mount) (NNP Gilead))))
+      (, ,)
+      (PP (IN near)
+        (NP (NNP Chesterville)
+          (CC and)
+          (NNP Johnsville))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Other
+			sense:	other.a.01
+	1	areas
+			sense:	area.n.01
+	2	drawing
+			sense:	draw.v.10
+			prop:	draw.02
+			V		2-2	drawing 
+			N-ARG-A0		0-1	Other areas 
+			N-ARG-A1		3-3	tourism 
+	3	tourism
+			sense:	tourism.n.01
+	4	include
+			sense:	include.v.01
+			prop:	include.01
+			V		4-4	include 
+			N-ARG-A2		0-3	Other areas drawing tourism 
+			N-ARG-A1		5-20	the Amish farms , shops and stores east of Mount Gilead , near Chesterville and Johnsville 
+	5	the
+	6	Amish
+			name:	RELIGION				6-6	Amish 
+	7	farms
+			sense:	farm.n.01
+	8	,
+	9	shops
+			sense:	shop.n.01
+	10	and
+	11	stores
+			sense:	shop.n.01
+	12	east
+			sense:	east.r.01
+	13	of
+	14	Mount
+			coref:	IDENT			0	14-15	Mount Gilead 
+			name:	LOCATION				14-15	Mount Gilead 
+	15	Gilead
+	16	,
+	17	near
+	18	Chesterville
+			name:	CITY				18-18	Chesterville 
+	19	and
+	20	Johnsville
+			name:	PERSON				20-20	Johnsville 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mount Gilead is also home to the Morrow County Hospital .
+
+
+Treebanked sentence:
+--------------------
+Mount Gilead is also home to the Morrow County Hospital . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Mount) (NNP Gilead))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (ADVP (RB home))
+      (PP (IN to)
+        (NP (DT the) (NNP Morrow) (NNP County) (NNP Hospital))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mount
+			coref:	IDENT			0	0-1	Mount Gilead 
+			name:	ORGANIZATION				0-1	Mount Gilead 
+	1	Gilead
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Mount Gilead 
+			N-ARGM-DIS		3-3	also 
+			N-ARG-A2		4-9	home to the Morrow County Hospital 
+	3	also
+			sense:	besides.r.02
+	4	home
+			sense:	home.r.01
+	5	to
+	6	the
+	7	Morrow
+			name:	LOCATION				7-9	Morrow County Hospital 
+	8	County
+	9	Hospital
+	10	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Mount Gilead 
+				6.14-15	Mount Gilead 
+				7.0-1	Mount Gilead 
+	Chain 1 (IDENT)
+				3.10-11	white settlers 
+				4.1-1	their 
+				4.4-5	the forest 
+	Chain 2 (IDENT)
+				0.9-9	Ohio 
+				2.14-14	Ohio 
+	Chain 3 (IDENT)
+				5.8-10	Morrow County 's 
+				0.6-7	Morrow County 
+				2.6-7	Morrow County 
+	Chain 4 (IDENT)
+				1.0-1	The population 
+				2.0-0	It 
+

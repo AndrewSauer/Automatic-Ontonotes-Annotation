@@ -1,0 +1,546 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+John Dennis McCrate ( October 1 , 1802 – September 11 , 1879 ) was a United States Representative from Maine .
+
+
+Treebanked sentence:
+--------------------
+John Dennis McCrate ( October 1 , 1802 – September 11 , 1879 ) was a United States Representative from Maine . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP John) (NNP Dennis) (NNP McCrate))
+      (-LRB- -LRB-)
+      (NP
+        (NP
+          (NP (NNP October) (CD 1) (, ,) (CD 1802))
+          (PP (SYM –)
+            (NP (NNP September) (CD 11))))
+        (, ,)
+        (NP (NNS 1879)))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NNP United) (NNP States) (NNP Representative))
+        (PP (IN from)
+          (NP (NNP Maine)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	John
+			coref:	IDENT			1	0-2	John Dennis McCrate 
+			name:	PERSON				0-2	John Dennis McCrate 
+	1	Dennis
+	2	McCrate
+	3	(
+	4	October
+			coref:	IDENT			0	4-7	October 1 , 1802 
+			name:	DATE				4-7	October 1 , 1802 
+	5	1
+	6	,
+	7	1802
+	8	–
+	9	September
+			name:	DATE				9-12	September 11 , 1879 
+	10	11
+	11	,
+	12	1879
+	13	)
+	14	was
+			sense:	be.v.08
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		0-13	John Dennis McCrate ( October 1 , 1802 – September 11 , 1879 ) 
+			N-ARG-A2		15-20	a United States Representative from Maine 
+	15	a
+	16	United
+			name:	COUNTRY				16-17	United States 
+	17	States
+	18	Representative
+			name:	TITLE				18-18	Representative 
+	19	from
+	20	Maine
+			name:	STATE_OR_PROVINCE				20-20	Maine 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was born in Wiscasset on October 1 , 1802 .
+
+
+Treebanked sentence:
+--------------------
+He was born in Wiscasset on October 1 , 1802 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Wiscasset)))
+        (PP (IN on)
+          (NP (NNP October) (CD 1) (, ,) (CD 1802)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-4	in Wiscasset 
+			N-ARGM-TMP		5-9	on October 1 , 1802 
+	3	in
+	4	Wiscasset
+			name:	LOCATION				4-4	Wiscasset 
+	5	on
+	6	October
+			coref:	IDENT			0	6-9	October 1 , 1802 
+			name:	DATE				6-9	October 1 , 1802 
+	7	1
+	8	,
+	9	1802
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+McCrate graduated from Bowdoin College in 1819 .
+
+
+Treebanked sentence:
+--------------------
+McCrate graduated from Bowdoin College in 1819 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP McCrate))
+    (VP (VBD graduated)
+      (PP (IN from)
+        (NP
+          (NP (NNP Bowdoin) (NNP College))
+          (PP (IN in)
+            (NP (CD 1819))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	McCrate
+			coref:	IDENT			1	0-0	McCrate 
+			name:	PERSON				0-0	McCrate 
+	1	graduated
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		1-1	graduated 
+			N-ARG-A0		0-0	McCrate 
+			N-ARG-A1		2-4	from Bowdoin College 
+			N-ARGM-TMP		5-6	in 1819 
+	2	from
+	3	Bowdoin
+			name:	ORGANIZATION				3-4	Bowdoin College 
+	4	College
+	5	in
+	6	1819
+			name:	DATE				6-6	1819 
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He studied law , was admitted to the bar and practiced in Damariscotta and in Wiscasset .
+
+
+Treebanked sentence:
+--------------------
+He studied law , was admitted to the bar and practiced in Damariscotta and in Wiscasset . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD studied)
+        (NP (NN law)))
+      (, ,)
+      (VP (VBD was)
+        (VP (VBN admitted)
+          (PP (IN to)
+            (NP (DT the) (NN bar)))))
+      (CC and)
+      (VP (VBD practiced)
+        (PP
+          (PP (IN in)
+            (NP (NNP Damariscotta)))
+          (CC and)
+          (PP (IN in)
+            (NP (NNP Wiscasset))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	studied
+			sense:	learn.v.04
+			prop:	study.01
+			V		1-1	studied 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-2	law 
+	2	law
+			sense:	law.n.06
+	3	,
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	admitted
+			sense:	accept.v.05
+			prop:	admit.02
+			V		5-5	admitted 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		6-8	to the bar 
+	6	to
+	7	the
+	8	bar
+			sense:	legal_profession.n.01
+	9	and
+	10	practiced
+			sense:	practice.v.01
+			prop:	practice.01
+			V		10-10	practiced 
+			N-ARG-A0		0-0	He 
+			N-ARGM-LOC		11-15	in Damariscotta and in Wiscasset 
+	11	in
+	12	Damariscotta
+			name:	LOCATION				12-12	Damariscotta 
+	13	and
+	14	in
+	15	Wiscasset
+			name:	LOCATION				15-15	Wiscasset 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+McCrate was elected a member of the Maine House of Representatives .
+
+
+Treebanked sentence:
+--------------------
+McCrate was elected a member of the Maine House of Representatives . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP McCrate))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (NP
+          (NP (DT a) (NN member))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP Maine) (NNP House))
+              (PP (IN of)
+                (NP (NNPS Representatives))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	McCrate
+			coref:	IDENT			1	0-0	McCrate 
+			name:	PERSON				0-0	McCrate 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A1		0-0	McCrate 
+			N-ARG-A2		3-10	a member of the Maine House of Representatives 
+	3	a
+	4	member
+			sense:	member.n.01
+	5	of
+	6	the
+	7	Maine
+			name:	ORGANIZATION				7-10	Maine House of Representatives 
+	8	House
+	9	of
+	10	Representatives
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+McCrate was elected as a Democrat to the Twenty - ninth Congress ( March 4 , 1845 – March 3 , 1847 ) .
+
+
+Treebanked sentence:
+--------------------
+McCrate was elected as a Democrat to the Twenty - ninth Congress ( March 4 , 1845 – March 3 , 1847 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP McCrate))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (PP (IN as)
+          (NP (DT a) (NNP Democrat)))
+        (PP (IN to)
+          (NP (DT the)
+            (ADJP
+              (NP (CD Twenty))
+              (HYPH -) (JJ ninth))
+            (NNP Congress)))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (NNP March) (CD 4) (, ,) (CD 1845))
+            (PP (SYM –)
+              (NP (NNP March) (CD 3) (, ,) (CD 1847))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	McCrate
+			coref:	IDENT			1	0-0	McCrate 
+			name:	PERSON				0-0	McCrate 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A1		0-0	McCrate 
+			N-ARGM-PRD		3-5	as a Democrat 
+			N-ARG-A2		6-22	to the Twenty - ninth Congress ( March 4 , 1845 – March 3 , 1847 ) 
+	3	as
+	4	a
+	5	Democrat
+			name:	MISC				5-5	Democrat 
+	6	to
+	7	the
+	8	Twenty
+			name:	NUMBER				8-8	Twenty 
+	9	-
+	10	ninth
+			name:	ORDINAL				10-10	ninth 
+			sense:	ninth.s.01
+	11	Congress
+			name:	ORGANIZATION				11-11	Congress 
+	12	(
+	13	March
+			name:	DATE				13-16	March 4 , 1845 
+	14	4
+	15	,
+	16	1845
+	17	–
+	18	March
+			name:	DATE				18-21	March 3 , 1847 
+	19	3
+	20	,
+	21	1847
+	22	)
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He resumed the practice of law in Wiscasset before moving to Boston , Massachusetts , continuing the practice of his profession until 1852 when he moved to Sutton , Massachusetts and engaged in agricultural pursuits .
+
+
+Treebanked sentence:
+--------------------
+He resumed the practice of law in Wiscasset before moving to Boston , Massachusetts , continuing the practice of his profession until 1852 when he moved to Sutton , Massachusetts and engaged in agricultural pursuits . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD resumed)
+      (NP
+        (NP (DT the) (NN practice))
+        (PP (IN of)
+          (NP (NN law))))
+      (PP (IN in)
+        (NP (NNP Wiscasset)))
+      (PP (IN before)
+        (S
+          (VP (VBG moving)
+            (PP (IN to)
+              (NP (NNP Boston) (, ,) (NNP Massachusetts))))))
+      (, ,)
+      (S
+        (VP (VBG continuing)
+          (NP
+            (NP (DT the) (NN practice))
+            (PP (IN of)
+              (NP (PRP$ his) (NN profession))))
+          (PP (IN until)
+            (NP (CD 1852)))
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP he))
+              (VP
+                (VP (VBD moved)
+                  (PP (IN to)
+                    (NP (NNP Sutton) (, ,) (NNP Massachusetts))))
+                (CC and)
+                (VP (VBD engaged)
+                  (PP (IN in)
+                    (NP (JJ agricultural) (NNS pursuits))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	resumed
+			sense:	resume.v.01
+			prop:	resume.01
+			V		1-1	resumed 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-5	the practice of law 
+			N-ARGM-LOC		6-7	in Wiscasset 
+			N-ARGM-TMP		8-34	before moving to Boston , Massachusetts , continuing the practice of his profession until 1852 when he moved to Sutton , Massachusetts and engaged in agricultural pursuits 
+	2	the
+	3	practice
+			sense:	practice.n.04
+	4	of
+	5	law
+			sense:	law.n.06
+	6	in
+	7	Wiscasset
+			name:	LOCATION				7-7	Wiscasset 
+	8	before
+	9	moving
+			sense:	move.v.04
+			prop:	move.01
+			V		9-9	moving 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		10-13	to Boston , Massachusetts 
+	10	to
+	11	Boston
+			name:	CITY				11-11	Boston 
+	12	,
+	13	Massachusetts
+			name:	STATE_OR_PROVINCE				13-13	Massachusetts 
+	14	,
+	15	continuing
+			sense:	continue.v.01
+			prop:	continue.01
+			V		15-15	continuing 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		16-20	the practice of his profession 
+			N-ARGM-TMP		21-34	until 1852 when he moved to Sutton , Massachusetts and engaged in agricultural pursuits 
+	16	the
+	17	practice
+			sense:	practice.n.04
+	18	of
+	19	his
+			coref:	IDENT			1	19-19	his 
+	20	profession
+			sense:	profession.n.02
+	21	until
+	22	1852
+			name:	DATE				22-22	1852 
+	23	when
+	24	he
+			coref:	IDENT			1	24-24	he 
+	25	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		25-25	moved 
+			N-ARGM-TMP		22-22	1852 
+			R-ARGM-TMP		23-23	when 
+			N-ARG-A0		24-24	he 
+			N-ARG-A2		26-29	to Sutton , Massachusetts 
+	26	to
+	27	Sutton
+			name:	PERSON				27-27	Sutton 
+	28	,
+	29	Massachusetts
+			name:	STATE_OR_PROVINCE				29-29	Massachusetts 
+	30	and
+	31	engaged
+			sense:	prosecute.v.03
+			prop:	engage.01
+			V		31-31	engaged 
+			N-ARGM-TMP		22-22	1852 
+			R-ARGM-TMP		23-23	when 
+			N-ARG-A0		24-24	he 
+			N-ARG-A2		32-34	in agricultural pursuits 
+	32	in
+	33	agricultural
+			sense:	agrarian.s.01
+	34	pursuits
+			sense:	avocation.n.01
+	35	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.4-7	October 1 , 1802 
+				1.6-9	October 1 , 1802 
+	Chain 1 (IDENT)
+				0.0-2	John Dennis McCrate 
+				1.0-0	He 
+				2.0-0	McCrate 
+				3.0-0	He 
+				4.0-0	McCrate 
+				5.0-0	McCrate 
+				6.0-0	He 
+				6.19-19	his 
+				6.24-24	he 
+

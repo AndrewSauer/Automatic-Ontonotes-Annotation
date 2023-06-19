@@ -1,0 +1,718 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+FBOP Corporation was a financial services company based in Oak Park , Illinois , United States .
+
+
+Treebanked sentence:
+--------------------
+FBOP Corporation was a financial services company based in Oak Park , Illinois , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP FBOP) (NNP Corporation))
+    (VP (VBD was)
+      (NP
+        (NP (DT a)
+          (NML (JJ financial) (NNS services))
+          (NN company))
+        (PP (VBN based)
+          (PP (IN in)
+            (NP
+              (NML
+                (NML (NNP Oak) (NNP Park))
+                (, ,)
+                (NP (NNP Illinois))
+                (, ,))
+              (NNP United) (NNP States))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	FBOP
+			coref:	IDENT			1	0-1	FBOP Corporation 
+			name:	ORGANIZATION				0-1	FBOP Corporation 
+	1	Corporation
+	2	was
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	FBOP Corporation 
+			N-ARG-A2		3-15	a financial services company based in Oak Park , Illinois , United States 
+	3	a
+	4	financial
+			sense:	fiscal.a.01
+	5	services
+			sense:	service.n.01
+	6	company
+			sense:	company.n.01
+	7	based
+			sense:	base.v.02
+			prop:	base.01
+			V		7-7	based 
+			N-ARG-A1		3-6	a financial services company 
+			N-ARGM-LOC		8-15	in Oak Park , Illinois , United States 
+	8	in
+	9	Oak
+			name:	CITY				9-10	Oak Park 
+	10	Park
+	11	,
+	12	Illinois
+			coref:	IDENT			3	12-12	Illinois 
+			name:	STATE_OR_PROVINCE				12-12	Illinois 
+	13	,
+	14	United
+			coref:	IDENT			5	14-15	United States 
+			name:	COUNTRY				14-15	United States 
+	15	States
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As of mid-2009 , it had $ 18.5 billion in assets and was the 46th largest bank holding company in the United States .
+
+
+Treebanked sentence:
+--------------------
+As of mid-2009 , it had $ 18.5 billion in assets and was the 46th largest bank holding company in the United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN As)
+      (PP (IN of)
+        (NP (NN mid-2009))))
+    (, ,)
+    (NP (PRP it))
+    (VP
+      (VP (VBD had)
+        (NP
+          (NP
+            (QP ($ $) (CD 18.5) (CD billion)))
+          (PP (IN in)
+            (NP (NNS assets)))))
+      (CC and)
+      (VP (VBD was)
+        (NP
+          (NP (DT the)
+            (ADJP (JJ 46th) (JJS largest))
+            (ADJP (NN bank) (VBG holding))
+            (NN company))
+          (PP (IN in)
+            (NP (DT the) (NNP United) (NNP States))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	of
+	2	mid-2009
+	3	,
+	4	it
+			coref:	IDENT			1	4-4	it 
+	5	had
+			sense:	have.v.01
+			prop:	have.03
+			V		5-5	had 
+			N-ARGM-TMP		0-2	As of mid-2009 
+			N-ARG-A0		4-4	it 
+			N-ARG-A1		6-10	$ 18.5 billion in assets 
+	6	$
+			name:	MONEY				6-8	$ 18.5 billion 
+	7	18.5
+	8	billion
+	9	in
+	10	assets
+			sense:	asset.n.01
+	11	and
+	12	was
+			sense:	be.v.01
+			prop:	be.01
+			V		12-12	was 
+			N-ARGM-TMP		0-2	As of mid-2009 
+			N-ARG-A1		4-4	it 
+			N-ARG-A2		13-22	the 46th largest bank holding company in the United States 
+	13	the
+			coref:	IDENT			4	13-22	the 46th largest bank holding company in the United States 
+	14	46th
+			name:	ORDINAL				14-14	46th 
+			sense:	forty-sixth.s.01
+	15	largest
+			sense:	large.a.01
+	16	bank
+			sense:	depository_financial_institution.n.01
+	17	holding
+			sense:	have.v.01
+			prop:	hold.01
+			V		17-17	holding 
+			N-ARG-A0		13-15	the 46th largest 
+			N-ARG-A1		16-16	bank 
+			N-ARG-A0		18-18	company 
+	18	company
+			sense:	company.n.01
+	19	in
+	20	the
+			coref:	IDENT			5	20-22	the United States 
+	21	United
+			name:	COUNTRY				21-22	United States 
+	22	States
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On October 30 , 2009 , FBOP 's banking subsidiaries were closed by their chartering agencies and the Federal Deposit Insurance Corporation was appointed as their receiver .
+
+
+Treebanked sentence:
+--------------------
+On October 30 , 2009 , FBOP 's banking subsidiaries were closed by their chartering agencies and the Federal Deposit Insurance Corporation was appointed as their receiver . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN On)
+        (NP (NNP October) (CD 30) (, ,) (CD 2009)))
+      (, ,)
+      (NP
+        (NP (NNP FBOP) (POS 's))
+        (NN banking) (NNS subsidiaries))
+      (VP (VBD were)
+        (VP (VBN closed)
+          (PP (IN by)
+            (NP (PRP$ their) (VBG chartering) (NNS agencies))))))
+    (CC and)
+    (S
+      (NP (DT the) (NNP Federal) (NNP Deposit) (NNP Insurance) (NNP Corporation))
+      (VP (VBD was)
+        (VP (VBN appointed)
+          (PP (IN as)
+            (NP (PRP$ their) (NN receiver))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	October
+			name:	DATE				1-4	October 30 , 2009 
+	2	30
+	3	,
+	4	2009
+	5	,
+	6	FBOP
+			coref:	IDENT			1	6-7	FBOP 's 
+			coref:	IDENT			2	6-9	FBOP 's banking subsidiaries 
+			name:	ORGANIZATION				6-6	FBOP 
+	7	's
+	8	banking
+			sense:	banking.n.01
+	9	subsidiaries
+			sense:	subsidiary_company.n.01
+	10	were
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	were 
+	11	closed
+			sense:	close_up.v.01
+			prop:	close.01
+			V		11-11	closed 
+			N-ARGM-TMP		0-4	On October 30 , 2009 
+			N-ARG-A1		6-9	FBOP 's banking subsidiaries 
+			N-ARG-A0		12-15	by their chartering agencies 
+	12	by
+	13	their
+			coref:	IDENT			2	13-13	their 
+	14	chartering
+			sense:	charter.v.02
+			prop:	charter.01
+			V		14-14	chartering 
+			N-ARG-A0		15-15	agencies 
+	15	agencies
+			sense:	agency.n.01
+	16	and
+	17	the
+			coref:	IDENT			1	17-21	the Federal Deposit Insurance Corporation 
+	18	Federal
+			name:	ORGANIZATION				18-21	Federal Deposit Insurance Corporation 
+	19	Deposit
+	20	Insurance
+	21	Corporation
+	22	was
+			sense:	be.v.01
+			prop:	be.03
+			V		22-22	was 
+	23	appointed
+			sense:	appoint.v.02
+			prop:	appoint.01
+			V		23-23	appointed 
+			N-ARG-A1		17-21	the Federal Deposit Insurance Corporation 
+			N-ARG-A2		24-26	as their receiver 
+	24	as
+	25	their
+			coref:	IDENT			2	25-25	their 
+	26	receiver
+			sense:	liquidator.n.02
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The company had over 4064 employees .
+
+
+Treebanked sentence:
+--------------------
+The company had over 4064 employees . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN company))
+    (VP (VBD had)
+      (ADVP (RP over)
+        (NP (CD 4064) (NNS employees))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			4	0-1	The company 
+	1	company
+			sense:	company.n.01
+	2	had
+			sense:	have.v.01
+			prop:	have.03
+			V		2-2	had 
+			N-ARG-A0		0-1	The company 
+			N-ARG-A1		3-5	over 4064 employees 
+	3	over
+	4	4064
+			name:	NUMBER				4-4	4064 
+	5	employees
+			sense:	employee.n.01
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The holding company began as First Bank of Oak Park .
+
+
+Treebanked sentence:
+--------------------
+The holding company began as First Bank of Oak Park . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (VBG holding) (NN company))
+    (VP (VBD began)
+      (PP (IN as)
+        (NP
+          (NP (NNP First) (NNP Bank))
+          (PP (IN of)
+            (NP (NNP Oak) (NNP Park))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			4	0-2	The holding company 
+	1	holding
+			sense:	have.v.01
+			prop:	hold.01
+			V		1-1	holding 
+			N-ARG-A0		2-2	company 
+	2	company
+			sense:	company.n.01
+	3	began
+			sense:	begin.v.02
+			prop:	begin.01
+			V		3-3	began 
+			N-ARG-A1		0-2	The holding company 
+	4	as
+	5	First
+			name:	ORGANIZATION				5-9	First Bank of Oak Park 
+	6	Bank
+	7	of
+	8	Oak
+	9	Park
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+FBOP started acquiring other banks in 1990 .
+
+
+Treebanked sentence:
+--------------------
+FBOP started acquiring other banks in 1990 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN FBOP))
+    (VP (VBD started)
+      (S
+        (VP (VBG acquiring)
+          (NP (JJ other) (NNS banks))
+          (PP (IN in)
+            (NP (CD 1990))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	FBOP
+			coref:	IDENT			1	0-0	FBOP 
+			name:	ORGANIZATION				0-0	FBOP 
+	1	started
+			sense:	get_down.v.07
+			prop:	start.01
+			V		1-1	started 
+			N-ARG-A0		0-0	FBOP 
+			N-ARG-A1		2-6	acquiring other banks in 1990 
+	2	acquiring
+			sense:	get.v.01
+			prop:	acquire.01
+			V		2-2	acquiring 
+			N-ARG-A0		0-0	FBOP 
+			N-ARG-A1		3-4	other banks 
+			N-ARGM-TMP		5-6	in 1990 
+	3	other
+			sense:	other.a.01
+	4	banks
+			sense:	depository_financial_institution.n.01
+	5	in
+	6	1990
+			name:	DATE				6-6	1990 
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2006 , First Bank of Oak Park merged with four other co - owned banks in Illinois to create Park National Bank .
+
+
+Treebanked sentence:
+--------------------
+In 2006 , First Bank of Oak Park merged with four other co - owned banks in Illinois to create Park National Bank . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2006)))
+    (, ,)
+    (NP
+      (NP (NNP First) (NNP Bank))
+      (PP (IN of)
+        (NP (NNP Oak) (NNP Park))))
+    (VP (VBD merged)
+      (PP (IN with)
+        (NP
+          (NP (CD four)
+            (ADJP
+              (NP (JJ other) (NN co))
+              (HYPH -) (VBN owned))
+            (NNS banks))
+          (PP (IN in)
+            (NP (NNP Illinois)))))
+      (S
+        (VP (TO to)
+          (VP (VB create)
+            (NP (NNP Park) (NNP National) (NNP Bank))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2006
+			name:	DATE				1-1	2006 
+	2	,
+	3	First
+			name:	ORGANIZATION				3-7	First Bank of Oak Park 
+	4	Bank
+	5	of
+	6	Oak
+	7	Park
+	8	merged
+			sense:	unify.v.01
+			prop:	merge.01
+			V		8-8	merged 
+			N-ARGM-TMP		0-1	In 2006 
+			N-ARG-A1		3-7	First Bank of Oak Park 
+			N-ARG-A2		9-17	with four other co - owned banks in Illinois 
+			N-ARGM-PNC		18-22	to create Park National Bank 
+	9	with
+	10	four
+			name:	NUMBER				10-10	four 
+	11	other
+			sense:	other.a.01
+	12	co
+			sense:	colorado.n.01
+	13	-
+	14	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		14-14	owned 
+			N-ARGM-MNR		12-12	co 
+			N-ARG-A1		15-15	banks 
+	15	banks
+			sense:	depository_financial_institution.n.01
+	16	in
+	17	Illinois
+			coref:	IDENT			3	17-17	Illinois 
+			name:	STATE_OR_PROVINCE				17-17	Illinois 
+	18	to
+	19	create
+			sense:	create.v.02
+			prop:	create.01
+			V		19-19	create 
+			N-ARG-A0		3-7	First Bank of Oak Park 
+			N-ARG-A1		20-22	Park National Bank 
+	20	Park
+			name:	ORGANIZATION				20-22	Park National Bank 
+	21	National
+	22	Bank
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+FBOP operated banks in Illinois , California , Texas , and Arizona , prior to their closure .
+
+
+Treebanked sentence:
+--------------------
+FBOP operated banks in Illinois , California , Texas , and Arizona , prior to their closure . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP FBOP))
+    (VP (VBD operated)
+      (NP (NNS banks))
+      (PP (IN in)
+        (NP (NNP Illinois) (, ,) (NNP California) (, ,) (NNP Texas) (, ,)
+          (CC and)
+          (NNP Arizona)))
+      (, ,)
+      (PP (JJ prior)
+        (PP (IN to)
+          (NP (PRP$ their) (NN closure)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	FBOP
+			coref:	IDENT			1	0-0	FBOP 
+			name:	ORGANIZATION				0-0	FBOP 
+	1	operated
+			sense:	operate.v.01
+			prop:	operate.01
+			V		1-1	operated 
+			N-ARG-A0		0-0	FBOP 
+			N-ARG-A1		2-2	banks 
+			N-ARGM-LOC		3-11	in Illinois , California , Texas , and Arizona 
+			N-ARGM-TMP		13-16	prior to their closure 
+	2	banks
+			sense:	depository_financial_institution.n.01
+	3	in
+	4	Illinois
+			coref:	IDENT			3	4-4	Illinois 
+			name:	STATE_OR_PROVINCE				4-4	Illinois 
+	5	,
+	6	California
+			name:	STATE_OR_PROVINCE				6-6	California 
+	7	,
+	8	Texas
+			coref:	IDENT			0	8-8	Texas 
+			name:	STATE_OR_PROVINCE				8-8	Texas 
+	9	,
+	10	and
+	11	Arizona
+			name:	STATE_OR_PROVINCE				11-11	Arizona 
+	12	,
+	13	prior
+			sense:	anterior.s.02
+	14	to
+	15	their
+	16	closure
+			sense:	closure.n.07
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+U.S. Bancorp acquired all nine of FBOP 's nine banks on the day of closure , but later sold the three Texas - based banks to Prosperity Bancshares .
+
+
+Treebanked sentence:
+--------------------
+U.S. Bancorp acquired all nine of FBOP 's nine banks on the day of closure , but later sold the three Texas - based banks to Prosperity Bancshares . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP U.S.) (NNP Bancorp))
+    (VP
+      (VP (VBD acquired)
+        (NP
+          (NP (DT all) (CD nine))
+          (PP (IN of)
+            (NP
+              (NP (NNP FBOP) (POS 's))
+              (CD nine) (NNS banks))))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN day))
+            (PP (IN of)
+              (NP (NN closure))))))
+      (, ,)
+      (CC but)
+      (ADVP (RB later))
+      (VP (VBD sold)
+        (NP
+          (NP (DT the) (CD three)
+            (ADJP (NNP Texas) (HYPH -) (VBN based))
+            (NNS banks))
+          (PP (IN to)
+            (NP (NNP Prosperity) (NNP Bancshares))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	U.S.
+			name:	ORGANIZATION				0-1	U.S. Bancorp 
+	1	Bancorp
+	2	acquired
+			sense:	get.v.01
+			prop:	acquire.01
+			V		2-2	acquired 
+			N-ARG-A0		0-1	U.S. Bancorp 
+			N-ARG-A1		3-9	all nine of FBOP 's nine banks 
+			N-ARGM-TMP		10-14	on the day of closure 
+	3	all
+	4	nine
+			name:	NUMBER				4-4	nine 
+	5	of
+	6	FBOP
+			coref:	IDENT			1	6-7	FBOP 's 
+			name:	ORGANIZATION				6-6	FBOP 
+	7	's
+	8	nine
+			name:	NUMBER				8-8	nine 
+	9	banks
+			sense:	depository_financial_institution.n.01
+	10	on
+	11	the
+			name:	DATE				11-12	the day 
+	12	day
+			sense:	day.n.03
+	13	of
+	14	closure
+			sense:	closure.n.07
+	15	,
+	16	but
+	17	later
+			sense:	subsequently.r.01
+	18	sold
+			sense:	sell.v.01
+			prop:	sell.01
+			V		18-18	sold 
+			N-ARG-A0		0-1	U.S. Bancorp 
+			N-ARGM-TMP		17-17	later 
+			N-ARG-A1		19-24	the three Texas - based banks 
+			N-ARG-A2		25-27	to Prosperity Bancshares 
+	19	the
+	20	three
+			name:	NUMBER				20-20	three 
+	21	Texas
+			coref:	IDENT			0	21-21	Texas 
+			name:	STATE_OR_PROVINCE				21-21	Texas 
+	22	-
+	23	based
+			sense:	base.v.02
+			prop:	base.01
+			V		23-23	based 
+			N-ARGM-LOC		21-21	Texas 
+			N-ARG-A1		24-24	banks 
+	24	banks
+			sense:	depository_financial_institution.n.01
+	25	to
+	26	Prosperity
+			name:	ORGANIZATION				26-27	Prosperity Bancshares 
+	27	Bancshares
+	28	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				7.8-8	Texas 
+				8.21-21	Texas 
+	Chain 1 (IDENT)
+				2.17-21	the Federal Deposit Insurance Corporation 
+				0.0-1	FBOP Corporation 
+				1.4-4	it 
+				2.6-7	FBOP 's 
+				5.0-0	FBOP 
+				7.0-0	FBOP 
+				8.6-7	FBOP 's 
+	Chain 2 (IDENT)
+				2.6-9	FBOP 's banking subsidiaries 
+				2.13-13	their 
+				2.25-25	their 
+	Chain 3 (IDENT)
+				0.12-12	Illinois 
+				6.17-17	Illinois 
+				7.4-4	Illinois 
+	Chain 4 (IDENT)
+				1.13-22	the 46th largest bank holding company in the United States 
+				3.0-1	The company 
+				4.0-2	The holding company 
+	Chain 5 (IDENT)
+				1.20-22	the United States 
+				0.14-15	United States 
+

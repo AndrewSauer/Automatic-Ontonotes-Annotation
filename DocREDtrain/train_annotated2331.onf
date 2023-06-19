@@ -1,0 +1,576 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Marco Amelia , (; born 2 April 1982 ) is an Italian professional footballer who plays as a goalkeeper .
+
+
+Treebanked sentence:
+--------------------
+Marco Amelia , ( ; born 2 April 1982 ) is an Italian professional footballer who plays as a goalkeeper . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Marco) (NNP Amelia))
+    (, ,)
+    (S (-LRB- -LRB-)
+      (VP (: ;)
+        (VP (VBN born)
+          (NP (CD 2))
+          (NP-TMP (NNP April) (CD 1982))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ Italian) (JJ professional) (NN footballer))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ plays)
+              (PP (IN as)
+                (NP (DT a) (NN goalkeeper))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Marco
+			name:	PERSON				0-1	Marco Amelia 
+	1	Amelia
+	2	,
+	3	(
+	4	;
+	5	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		5-5	born 
+			N-ARG-A1		0-1	Marco Amelia 
+			N-ARGM-TMP		6-8	2 April 1982 
+	6	2
+			name:	DATE				6-8	2 April 1982 
+	7	April
+	8	1982
+	9	)
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	Marco Amelia , ( ; born 2 April 1982 ) 
+			N-ARG-A2		11-19	an Italian professional footballer who plays as a goalkeeper 
+	11	an
+	12	Italian
+			name:	NATIONALITY				12-12	Italian 
+	13	professional
+			sense:	professional.a.01
+	14	footballer
+			name:	TITLE				14-14	footballer 
+			sense:	football_player.n.01
+	15	who
+	16	plays
+			sense:	play.v.01
+			prop:	play.01
+			V		16-16	plays 
+			N-ARG-A0		11-14	an Italian professional footballer 
+			R-ARG-A0		15-15	who 
+			N-ARGM-PRD		17-19	as a goalkeeper 
+	17	as
+	18	a
+	19	goalkeeper
+			name:	TITLE				19-19	goalkeeper 
+			sense:	goalkeeper.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is currently a free agent .
+
+
+Treebanked sentence:
+--------------------
+He is currently a free agent . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (ADVP (RB currently))
+      (NP (DT a) (JJ free) (NN agent)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		2-2	currently 
+			N-ARG-A2		3-5	a free agent 
+	2	currently
+			name:	DATE				2-2	currently 
+			sense:	presently.r.02
+	3	a
+	4	free
+			sense:	free.a.01
+	5	agent
+			sense:	agent.n.02
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A Roma youth product , Amelia spent most of his professional club career at Livorno , where he made 181 appearances across all competitions , including playing and scoring in the 2006 – 07 UEFA Cup .
+
+
+Treebanked sentence:
+--------------------
+A Roma youth product , Amelia spent most of his professional club career at Livorno , where he made 181 appearances across all competitions , including playing and scoring in the 2006 – 07 UEFA Cup . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT A) (NNP Roma) (NN youth) (NN product))
+    (, ,)
+    (NP (NNP Amelia))
+    (VP (VBD spent)
+      (NP
+        (NP (JJS most))
+        (PP (IN of)
+          (NP (PRP$ his) (JJ professional) (NN club) (NN career))))
+      (PP (IN at)
+        (NP (NNP Livorno)))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP he))
+          (VP (VBD made)
+            (NP (CD 181) (NNS appearances))
+            (PP (IN across)
+              (NP (DT all) (NNS competitions)))
+            (, ,)
+            (PP (VBG including)
+              (S
+                (VP (VBG playing)
+                  (CC and)
+                  (VBG scoring)
+                  (PP (IN in)
+                    (NP (DT the)
+                      (NML
+                        (NML (CD 2006))
+                        (PP (SYM –)
+                          (NP (CD 07))))
+                      (NNP UEFA) (NNP Cup))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	Roma
+			name:	ORGANIZATION				1-1	Roma 
+	2	youth
+			sense:	young.n.09
+	3	product
+			sense:	product.n.02
+	4	,
+	5	Amelia
+			coref:	IDENT			1	5-5	Amelia 
+			name:	PERSON				5-5	Amelia 
+	6	spent
+			sense:	spend.v.01
+			prop:	spend.02
+			V		6-6	spent 
+			R-ARG-A0		0-3	A Roma youth product 
+			N-ARG-A0		5-5	Amelia 
+			N-ARG-A1		7-12	most of his professional club career 
+			N-ARGM-LOC		13-35	at Livorno , where he made 181 appearances across all competitions , including playing and scoring in the 2006 – 07 UEFA Cup 
+	7	most
+			sense:	most.a.02
+	8	of
+	9	his
+	10	professional
+			sense:	professional.a.01
+	11	club
+			sense:	club.n.02
+	12	career
+			sense:	career.n.01
+	13	at
+	14	Livorno
+			name:	LOCATION				14-14	Livorno 
+	15	,
+	16	where
+	17	he
+	18	made
+			sense:	make.v.01
+			prop:	make.01
+			V		18-18	made 
+			N-ARGM-LOC		14-14	Livorno 
+			R-ARGM-LOC		16-16	where 
+			N-ARG-A0		17-17	he 
+			N-ARG-A1		19-20	181 appearances 
+			N-ARGM-ADV		25-35	including playing and scoring in the 2006 – 07 UEFA Cup 
+	19	181
+			name:	NUMBER				19-19	181 
+	20	appearances
+			sense:	appearance.n.05
+	21	across
+	22	all
+	23	competitions
+			sense:	contest.n.01
+	24	,
+	25	including
+			sense:	include.v.01
+			prop:	include.01
+			V		25-25	including 
+			N-ARG-A2		19-20	181 appearances 
+			N-ARG-A1		26-35	playing and scoring in the 2006 – 07 UEFA Cup 
+	26	playing
+			sense:	play.v.01
+			prop:	play.01
+			V		26-26	playing 
+			N-ARG-A0		17-17	he 
+	27	and
+	28	scoring
+			sense:	score.v.01
+			prop:	scaring.01
+			V		28-28	scoring 
+			N-ARG-A0		17-17	he 
+			N-ARGM-LOC		29-35	in the 2006 – 07 UEFA Cup 
+	29	in
+	30	the
+	31	2006
+			name:	DATE				31-31	2006 
+	32	–
+	33	07
+			name:	NUMBER				33-33	07 
+	34	UEFA
+			name:	MISC				34-35	UEFA Cup 
+	35	Cup
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He later played for several other Italian clubs , and also had a spell in England as a reserve goalkeeper with Chelsea .
+
+
+Treebanked sentence:
+--------------------
+He later played for several other Italian clubs , and also had a spell in England as a reserve goalkeeper with Chelsea . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB later))
+    (VP
+      (VP (VBD played)
+        (PP (IN for)
+          (NP (JJ several) (JJ other) (JJ Italian) (NNS clubs))))
+      (, ,)
+      (CC and)
+      (ADVP (RB also))
+      (VP (VBD had)
+        (NP
+          (NP (DT a) (NN spell))
+          (PP (IN in)
+            (NP (NNP England))))
+        (PP (IN as)
+          (NP
+            (NP (DT a) (NN reserve) (NN goalkeeper))
+            (PP (IN with)
+              (NP (NNP Chelsea)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	later
+			sense:	subsequently.r.01
+	2	played
+			sense:	play.v.01
+			prop:	play.01
+			V		2-2	played 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		1-1	later 
+	3	for
+	4	several
+			sense:	several.s.01
+	5	other
+			sense:	other.a.01
+	6	Italian
+			name:	NATIONALITY				6-6	Italian 
+	7	clubs
+			sense:	club.n.02
+	8	,
+	9	and
+	10	also
+			sense:	besides.r.02
+	11	had
+			sense:	experience.v.03
+			prop:	have.03
+			V		11-11	had 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		1-1	later 
+			N-ARGM-DIS		10-10	also 
+			N-ARG-A1		12-13	a spell 
+			N-ARGM-LOC		14-15	in England 
+			N-ARG-A1		16-16	as 
+			C-ARG-A1		17-19	a reserve goalkeeper 
+			N-ARG-A1		20-20	with 
+			C-ARG-A1		21-21	Chelsea 
+	12	a
+	13	spell
+			sense:	while.n.01
+	14	in
+	15	England
+			name:	COUNTRY				15-15	England 
+	16	as
+	17	a
+	18	reserve
+			sense:	substitute.n.02
+	19	goalkeeper
+			name:	TITLE				19-19	goalkeeper 
+			sense:	goalkeeper.n.01
+	20	with
+	21	Chelsea
+			name:	PERSON				21-21	Chelsea 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At international level , Amelia won a Bronze medal at the 2004 Olympics , and earned nine senior caps for Italy between 2005 and 2009 .
+
+
+Treebanked sentence:
+--------------------
+At international level , Amelia won a Bronze medal at the 2004 Olympics , and earned nine senior caps for Italy between 2005 and 2009 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (JJ international) (NN level)))
+    (, ,)
+    (NP (NNP Amelia))
+    (VP
+      (VP (VBD won)
+        (NP (DT a) (NN Bronze) (NN medal))
+        (PP (IN at)
+          (NP (DT the) (CD 2004) (NNPS Olympics))))
+      (, ,)
+      (CC and)
+      (VP (VBD earned)
+        (NP (CD nine) (JJ senior) (NNS caps))
+        (PP (IN for)
+          (NP
+            (NP (NNP Italy))
+            (PP (IN between)
+              (NP (CD 2005)
+                (CC and)
+                (CD 2009)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	international
+			sense:	international.a.01
+	2	level
+			sense:	grade.n.02
+	3	,
+	4	Amelia
+			coref:	IDENT			1	4-4	Amelia 
+			name:	PERSON				4-4	Amelia 
+	5	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		5-5	won 
+			N-ARGM-LOC		0-2	At international level 
+			N-ARG-A0		4-4	Amelia 
+			N-ARG-A1		6-8	a Bronze medal 
+			N-ARGM-LOC		9-12	at the 2004 Olympics 
+	6	a
+	7	Bronze
+			sense:	bronze.n.01
+	8	medal
+			sense:	decoration.n.02
+	9	at
+	10	the
+	11	2004
+			name:	DATE				11-11	2004 
+	12	Olympics
+			name:	MISC				12-12	Olympics 
+	13	,
+	14	and
+	15	earned
+			sense:	earn.v.02
+			prop:	earn.01
+			V		15-15	earned 
+			N-ARGM-LOC		0-2	At international level 
+			N-ARG-A0		4-4	Amelia 
+			N-ARG-A1		16-20	nine senior caps for Italy 
+			N-ARGM-TMP		21-24	between 2005 and 2009 
+	16	nine
+			name:	NUMBER				16-16	nine 
+	17	senior
+			sense:	senior.s.02
+	18	caps
+			sense:	ceiling.n.03
+	19	for
+	20	Italy
+			coref:	IDENT			0	20-20	Italy 
+			name:	COUNTRY				20-20	Italy 
+	21	between
+	22	2005
+			name:	DATE				22-24	2005 and 2009 
+	23	and
+	24	2009
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was part of the squad that won the 2006 FIFA World Cup , also being included for Italy 's UEFA Euro 2008 and 2009 FIFA Confederations Cup squads .
+
+
+Treebanked sentence:
+--------------------
+He was part of the squad that won the 2006 FIFA World Cup , also being included for Italy 's UEFA Euro 2008 and 2009 FIFA Confederations Cup squads . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN squad))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBD won)
+                  (NP (DT the) (CD 2006) (NNP FIFA) (NNP World) (NNP Cup))
+                  (, ,)
+                  (S
+                    (ADVP (RB also))
+                    (VP (VBG being)
+                      (VP (VBN included)
+                        (PP (IN for)
+                          (NP
+                            (NP
+                              (NP (NNP Italy) (POS 's))
+                              (NML (NNP UEFA) (NNP Euro) (CD 2008)))
+                            (CC and)
+                            (NP (CD 2009)
+                              (NML
+                                (NP (NNP FIFA) (NNPS Confederations))
+                                (NNP Cup))
+                              (NNS squads))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-12	part of the squad that won the 2006 FIFA World Cup 
+			N-ARGM-ADV		14-28	also being included for Italy 's UEFA Euro 2008 and 2009 FIFA Confederations Cup squads 
+	2	part
+			sense:	part.n.01
+	3	of
+	4	the
+	5	squad
+			sense:	team.n.01
+	6	that
+	7	won
+			sense:	win.v.01
+			prop:	win.01
+			V		7-7	won 
+			N-ARG-A0		4-5	the squad 
+			R-ARG-A0		6-6	that 
+			N-ARG-A1		8-12	the 2006 FIFA World Cup 
+	8	the
+	9	2006
+			name:	DATE				9-9	2006 
+	10	FIFA
+			name:	MISC				10-12	FIFA World Cup 
+	11	World
+	12	Cup
+	13	,
+	14	also
+			sense:	besides.r.02
+	15	being
+			sense:	be.v.01
+			prop:	be.03
+			V		15-15	being 
+	16	included
+			sense:	admit.v.03
+			prop:	include.01
+			V		16-16	included 
+			N-ARG-A1		0-0	He 
+			N-ARGM-ADV		14-14	also 
+			N-ARG-A2		17-28	for Italy 's UEFA Euro 2008 and 2009 FIFA Confederations Cup squads 
+	17	for
+	18	Italy
+			coref:	IDENT			0	18-19	Italy 's 
+			name:	COUNTRY				18-18	Italy 
+	19	's
+	20	UEFA
+			name:	ORGANIZATION				20-20	UEFA 
+	21	Euro
+	22	2008
+			name:	DATE				22-22	2008 
+	23	and
+	24	2009
+			name:	DATE				24-24	2009 
+	25	FIFA
+			name:	ORGANIZATION				25-25	FIFA 
+	26	Confederations
+	27	Cup
+	28	squads
+			sense:	team.n.01
+	29	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.18-19	Italy 's 
+				4.20-20	Italy 
+	Chain 1 (IDENT)
+				2.5-5	Amelia 
+				4.4-4	Amelia 
+

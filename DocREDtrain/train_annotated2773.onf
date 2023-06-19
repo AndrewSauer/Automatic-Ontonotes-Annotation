@@ -1,0 +1,576 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Christiaan " Chris " Mostert is a Dutch saxophonist who has played with the Eagles during their " Farewell 1 Tour " in 2005 .
+
+
+Treebanked sentence:
+--------------------
+Christiaan " Chris " Mostert is a Dutch saxophonist who has played with the Eagles during their " Farewell 1 Tour " in 2005 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Christiaan) (`` ") (NNP Chris) ('' ") (NNP Mostert))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ Dutch) (NN saxophonist))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ has)
+              (VP (VBN played)
+                (PP (IN with)
+                  (NP (DT the) (NNPS Eagles)))
+                (PP (IN during)
+                  (NP (PRP$ their)
+                    (NML (`` ") (NNP Farewell) (CD 1) (NNP Tour) ('' "))))
+                (PP (IN in)
+                  (NP (CD 2005)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Christiaan
+			coref:	IDENT			0	0-4	Christiaan " Chris " Mostert 
+			name:	PERSON				0-0	Christiaan 
+	1	"
+	2	Chris
+			name:	PERSON				2-2	Chris 
+	3	"
+	4	Mostert
+			name:	PERSON				4-4	Mostert 
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	Christiaan " Chris " Mostert 
+			N-ARG-A2		6-23	a Dutch saxophonist who has played with the Eagles during their " Farewell 1 Tour " in 2005 
+	6	a
+	7	Dutch
+			name:	NATIONALITY				7-7	Dutch 
+			sense:	dutch.a.01
+	8	saxophonist
+			name:	TITLE				8-8	saxophonist 
+			sense:	saxophonist.n.01
+	9	who
+	10	has
+			sense:	have.v.01
+			prop:	have.01
+			V		10-10	has 
+	11	played
+			sense:	play.v.03
+			prop:	play.01
+			V		11-11	played 
+			N-ARG-A0		6-8	a Dutch saxophonist 
+			R-ARG-A0		9-9	who 
+			N-ARGM-TMP		15-23	during their " Farewell 1 Tour " in 2005 
+	12	with
+	13	the
+	14	Eagles
+			name:	ORGANIZATION				14-14	Eagles 
+	15	during
+	16	their
+	17	"
+	18	Farewell
+			name:	MISC				18-18	Farewell 
+	19	1
+			name:	NUMBER				19-19	1 
+	20	Tour
+			name:	MISC				20-20	Tour 
+	21	"
+	22	in
+	23	2005
+			name:	DATE				23-23	2005 
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is part of the horns the Mighty Horns .
+
+
+Treebanked sentence:
+--------------------
+He is part of the horns the Mighty Horns . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNS horns))
+            (NP (DT the) (JJ Mighty) (NNS Horns))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-8	part of the horns the Mighty Horns 
+	2	part
+			sense:	part.n.01
+	3	of
+	4	the
+	5	horns
+			sense:	cornet.n.01
+	6	the
+	7	Mighty
+			sense:	mighty.s.01
+	8	Horns
+			sense:	cornet.n.01
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Besides his work with the Eagles , Mostert has also played on solo tours of Don Henley , Joe Walsh and Glenn Frey , and been he also been a member of the bands , Goose Creek Symphony , Pollution , Sylvester and the Hot Band .
+
+
+Treebanked sentence:
+--------------------
+Besides his work with the Eagles , Mostert has also played on solo tours of Don Henley , Joe Walsh and Glenn Frey , and been he also been a member of the bands , Goose Creek Symphony , Pollution , Sylvester and the Hot Band . 
+
+Tree:
+-----
+(ROOT
+  (SINV
+    (S
+      (PP (IN Besides)
+        (NP
+          (NP (PRP$ his) (NN work))
+          (PP (IN with)
+            (NP (DT the) (NNPS Eagles)))))
+      (, ,)
+      (NP (NNP Mostert))
+      (VP (VBZ has)
+        (ADVP (RB also))
+        (VP
+          (VP (VBN played)
+            (PP (IN on)
+              (NP
+                (NP (NN solo) (NNS tours))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP Don) (NNP Henley))
+                    (, ,)
+                    (NP (NNP Joe) (NNP Walsh))
+                    (CC and)
+                    (NP (NNP Glenn) (NNP Frey)))))))
+          (, ,)
+          (CC and)
+          (VP (VBN been)
+            (NP (PRP he))
+            (ADVP (RB also))))))
+    (VP (VBP been)
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNS bands))
+            (, ,)
+            (NP (NNP Goose) (NNP Creek) (NNP Symphony))
+            (, ,)))))
+    (NP
+      (NML
+        (NML (NNP Pollution))
+        (, ,)
+        (NML (NNP Sylvester))
+        (CC and)
+        (NML (DT the) (NNP Hot)))
+      (NNP Band))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Besides
+	1	his
+			coref:	IDENT			0	1-1	his 
+	2	work
+			sense:	work.n.01
+	3	with
+	4	the
+	5	Eagles
+			name:	ORGANIZATION				5-5	Eagles 
+	6	,
+	7	Mostert
+			coref:	IDENT			0	7-7	Mostert 
+			name:	PERSON				7-7	Mostert 
+	8	has
+			sense:	have.v.01
+			prop:	have.01
+			V		8-8	has 
+	9	also
+			sense:	besides.r.02
+	10	played
+			sense:	play.v.03
+			prop:	play.01
+			V		10-10	played 
+			N-ARGM-ADV		0-5	Besides his work with the Eagles 
+			N-ARG-A0		7-7	Mostert 
+			N-ARGM-DIS		9-9	also 
+			N-ARGM-LOC		11-22	on solo tours of Don Henley , Joe Walsh and Glenn Frey 
+	11	on
+	12	solo
+			sense:	solo.n.02
+	13	tours
+			sense:	tour.n.01
+	14	of
+	15	Don
+			name:	PERSON				15-16	Don Henley 
+	16	Henley
+	17	,
+	18	Joe
+			name:	PERSON				18-19	Joe Walsh 
+	19	Walsh
+	20	and
+	21	Glenn
+			name:	PERSON				21-22	Glenn Frey 
+	22	Frey
+	23	,
+	24	and
+	25	been
+			sense:	be.v.01
+			prop:	be.01
+			V		25-25	been 
+			N-ARG-A1		26-26	he 
+			N-ARG-A2		28-45	been a member of the bands , Goose Creek Symphony , Pollution , Sylvester and the Hot Band 
+	26	he
+			coref:	IDENT			0	26-26	he 
+	27	also
+			sense:	besides.r.02
+	28	been
+			sense:	be.v.01
+			prop:	be.01
+			V		28-28	been 
+			N-ARG-A1		26-26	he 
+			N-ARGM-ADV		27-27	also 
+			N-ARG-A2		29-45	a member of the bands , Goose Creek Symphony , Pollution , Sylvester and the Hot Band 
+	29	a
+	30	member
+			sense:	member.n.01
+	31	of
+	32	the
+	33	bands
+			sense:	band.n.02
+	34	,
+	35	Goose
+			name:	ORGANIZATION				35-37	Goose Creek Symphony 
+	36	Creek
+	37	Symphony
+	38	,
+	39	Pollution
+	40	,
+	41	Sylvester
+			name:	PERSON				41-41	Sylvester 
+	42	and
+	43	the
+	44	Hot
+	45	Band
+	46	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also performed on three solo albums by Glenn Frey , Soul Searchin ' ( including the saxophone solo in the hit single True Love ) , Strange Weather and After Hours .
+
+
+Treebanked sentence:
+--------------------
+He also performed on three solo albums by Glenn Frey , Soul Searchin ' ( including the saxophone solo in the hit single True Love ) , Strange Weather and After Hours . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD performed)
+      (PP (IN on)
+        (NP (CD three) (NN solo) (NNS albums)))
+      (PP (IN by)
+        (NP
+          (NP (NNP Glenn) (NNP Frey))
+          (, ,)
+          (NP
+            (NP (NNP Soul)
+              (NP (NNP Searchin) (POS ')))
+            (PP (-LRB- -LRB-) (VBG including)
+              (NP
+                (NP (DT the) (NN saxophone) (NN solo))
+                (PP (IN in)
+                  (NP (DT the) (NN hit) (JJ single) (JJ True) (NN Love))))
+              (-RRB- -RRB-)))
+          (, ,)
+          (NP (JJ Strange) (NNP Weather))
+          (CC and)
+          (NP (IN After) (NNS Hours)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	also
+			sense:	besides.r.02
+	2	performed
+			sense:	perform.v.03
+			prop:	perform.01
+			V		2-2	performed 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+	3	on
+	4	three
+			name:	NUMBER				4-4	three 
+	5	solo
+			sense:	solo.n.02
+	6	albums
+			sense:	album.n.01
+	7	by
+	8	Glenn
+			name:	PERSON				8-9	Glenn Frey 
+	9	Frey
+	10	,
+	11	Soul
+	12	Searchin
+	13	'
+	14	(
+	15	including
+			sense:	include.v.01
+			prop:	include.01
+			V		15-15	including 
+			N-ARG-A2		11-13	Soul Searchin ' 
+			N-ARG-A1		16-24	the saxophone solo in the hit single True Love 
+	16	the
+	17	saxophone
+			sense:	sax.n.02
+	18	solo
+			sense:	solo.n.02
+	19	in
+	20	the
+	21	hit
+			sense:	hit.n.03
+	22	single
+			sense:	individual.a.01
+	23	True
+			sense:	true.a.01
+	24	Love
+			sense:	love.n.01
+	25	)
+	26	,
+	27	Strange
+			sense:	strange.a.01
+	28	Weather
+	29	and
+	30	After
+	31	Hours
+			name:	DURATION				31-31	Hours 
+			sense:	hour.n.02
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2004 he recorded a solo album Midnight Breeze , accompanied by a.o .
+
+
+Treebanked sentence:
+--------------------
+In 2004 he recorded a solo album Midnight Breeze , accompanied by a.o . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2004)))
+    (NP (PRP he))
+    (VP (VBD recorded)
+      (NP
+        (NP
+          (NP (DT a) (JJ solo) (NN album))
+          (NP (NNP Midnight) (NNP Breeze)))
+        (, ,)
+        (VP (VBN accompanied)
+          (PP (IN by)
+            (NP (NN a.o))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2004
+			name:	DATE				1-1	2004 
+	2	he
+			coref:	IDENT			0	2-2	he 
+	3	recorded
+			sense:	record.v.02
+			prop:	record.01
+			V		3-3	recorded 
+			N-ARGM-TMP		0-1	In 2004 
+			N-ARG-A0		2-2	he 
+			N-ARG-A1		4-12	a solo album Midnight Breeze , accompanied by a.o 
+	4	a
+	5	solo
+			sense:	solo.s.01
+	6	album
+			sense:	album.n.01
+	7	Midnight
+			name:	TIME				7-7	Midnight 
+	8	Breeze
+	9	,
+	10	accompanied
+			sense:	play_along.v.02
+			prop:	accompany.01
+			V		10-10	accompanied 
+			N-ARG-A0		11-12	by a.o 
+	11	by
+	12	a.o
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jeff Baxter , Burleigh Drummond and Steve Gadd .
+
+
+Treebanked sentence:
+--------------------
+Jeff Baxter , Burleigh Drummond and Steve Gadd . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP (NNP Jeff) (NNP Baxter))
+    (, ,)
+    (NP
+      (NP (NNP Burleigh) (NNP Drummond))
+      (CC and)
+      (NP (NNP Steve) (NNP Gadd)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jeff
+			name:	PERSON				0-1	Jeff Baxter 
+	1	Baxter
+	2	,
+	3	Burleigh
+			name:	PERSON				3-4	Burleigh Drummond 
+	4	Drummond
+	5	and
+	6	Steve
+			name:	PERSON				6-7	Steve Gadd 
+	7	Gadd
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also worked on the last studio album by the Eagles " Long Road Out of Eden " .
+
+
+Treebanked sentence:
+--------------------
+He also worked on the last studio album by the Eagles " Long Road Out of Eden " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD worked)
+      (PP (IN on)
+        (NP (DT the) (JJ last) (NN studio) (NN album)))
+      (PP (IN by)
+        (S
+          (NP (DT the) (NNPS Eagles))
+          (PP
+            (NP ('' ") (NNP Long) (NNP Road))
+            (IN Out))))
+      (PP (IN of)
+        (NP (NNP Eden))))
+    ('' ") (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	also
+			sense:	besides.r.02
+	2	worked
+			sense:	work.v.01
+			prop:	work.01
+			V		2-2	worked 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-17	on the last studio album by the Eagles " Long Road Out of Eden " 
+	3	on
+	4	the
+	5	last
+			sense:	last.a.02
+	6	studio
+			sense:	studio.n.01
+	7	album
+			sense:	album.n.01
+	8	by
+	9	the
+	10	Eagles
+	11	"
+	12	Long
+			name:	MISC				12-16	Long Road Out of Eden 
+	13	Road
+	14	Out
+	15	of
+	16	Eden
+	17	"
+	18	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-4	Christiaan " Chris " Mostert 
+				1.0-0	He 
+				2.1-1	his 
+				2.7-7	Mostert 
+				2.26-26	he 
+				3.0-0	He 
+				4.2-2	he 
+				6.0-0	He 
+

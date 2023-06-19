@@ -1,0 +1,856 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Penny Sue Pritzker ( born May 2 , 1959 ) is an American billionaire businesswoman , entrepreneur , and civic leader .
+
+
+Treebanked sentence:
+--------------------
+Penny Sue Pritzker ( born May 2 , 1959 ) is an American billionaire businesswoman , entrepreneur , and civic leader . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NN Penny) (NNP Sue) (NNP Pritzker))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP May) (CD 2) (, ,) (CD 1959)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ American) (NN billionaire) (NN businesswoman))
+        (, ,)
+        (NP (NN entrepreneur))
+        (, ,)
+        (CC and)
+        (NP (JJ civic) (NN leader))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Penny
+			coref:	IDENT			1	0-8	Penny Sue Pritzker ( born May 2 , 1959 
+			name:	PERSON				0-2	Penny Sue Pritzker 
+			sense:	penny.n.02
+	1	Sue
+	2	Pritzker
+	3	(
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-2	Penny Sue Pritzker 
+			N-ARGM-TMP		5-8	May 2 , 1959 
+	5	May
+			name:	DATE				5-8	May 2 , 1959 
+	6	2
+	7	,
+	8	1959
+	9	)
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	Penny Sue Pritzker ( born May 2 , 1959 ) 
+			N-ARG-A2		11-20	an American billionaire businesswoman , entrepreneur , and civic leader 
+	11	an
+	12	American
+			name:	NATIONALITY				12-12	American 
+	13	billionaire
+			sense:	billionaire.n.01
+	14	businesswoman
+			name:	TITLE				14-14	businesswoman 
+			sense:	businesswoman.n.01
+	15	,
+	16	entrepreneur
+			name:	TITLE				16-16	entrepreneur 
+			sense:	entrepreneur.n.01
+	17	,
+	18	and
+	19	civic
+			sense:	civic.a.01
+	20	leader
+			name:	TITLE				20-20	leader 
+			sense:	leader.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+President Barack Obama nominated Pritzker as United States Secretary of Commerce .
+
+
+Treebanked sentence:
+--------------------
+President Barack Obama nominated Pritzker as United States Secretary of Commerce . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP President) (NNP Barack) (NNP Obama))
+    (VP (VBD nominated)
+      (NP (NNP Pritzker))
+      (PP (IN as)
+        (NP
+          (NP (NNP United) (NNP States) (NNP Secretary))
+          (PP (IN of)
+            (NP (NNP Commerce))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	President
+			coref:	IDENT			0	0-2	President Barack Obama 
+			name:	TITLE				0-0	President 
+	1	Barack
+			name:	PERSON				1-2	Barack Obama 
+	2	Obama
+	3	nominated
+			sense:	nominate.v.02
+			prop:	nominate.01
+			V		3-3	nominated 
+			N-ARG-A0		0-2	President Barack Obama 
+			N-ARG-A1		4-4	Pritzker 
+			N-ARG-A2		5-10	as United States Secretary of Commerce 
+	4	Pritzker
+			coref:	IDENT			1	4-4	Pritzker 
+			name:	PERSON				4-4	Pritzker 
+	5	as
+	6	United
+			name:	COUNTRY				6-7	United States 
+	7	States
+	8	Secretary
+			name:	TITLE				8-10	Secretary of Commerce 
+	9	of
+	10	Commerce
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After being confirmed by a Senate vote of 97–1 , she became the 38th person to hold that position .
+
+
+Treebanked sentence:
+--------------------
+After being confirmed by a Senate vote of 97 – 1 , she became the 38th person to hold that position . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG being)
+          (VP (VBN confirmed)
+            (PP (IN by)
+              (NP
+                (NP (DT a) (NNP Senate) (NN vote))
+                (PP (IN of)
+                  (NP
+                    (QP (CD 97) (SYM –) (CD 1))))))))))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBD became)
+      (NP (DT the) (JJ 38th) (NN person))
+      (S
+        (VP (TO to)
+          (VP (VB hold)
+            (SBAR (IN that)
+              (FRAG
+                (NP (NN position))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	being
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	being 
+	2	confirmed
+			sense:	confirm.v.04
+			prop:	confirm.01
+			V		2-2	confirmed 
+			N-ARG-A0		3-10	by a Senate vote of 97 – 1 
+	3	by
+	4	a
+	5	Senate
+			name:	ORGANIZATION				5-5	Senate 
+	6	vote
+			sense:	vote.n.01
+	7	of
+	8	97
+			name:	NUMBER				8-8	97 
+	9	–
+	10	1
+			name:	NUMBER				10-10	1 
+	11	,
+	12	she
+	13	became
+			sense:	become.v.02
+			prop:	become.01
+			V		13-13	became 
+			N-ARGM-TMP		0-10	After being confirmed by a Senate vote of 97 – 1 
+			N-ARG-A1		12-12	she 
+			N-ARG-A2		14-20	the 38th person to hold that position 
+	14	the
+	15	38th
+			name:	ORDINAL				15-15	38th 
+			sense:	thirty-eighth.s.01
+	16	person
+			sense:	person.n.01
+	17	to
+	18	hold
+			sense:	bear.v.11
+			prop:	hold.01
+			V		18-18	hold 
+			N-ARG-A0		14-16	the 38th person 
+			N-ARG-A1		19-20	that position 
+	19	that
+	20	position
+			sense:	position.n.06
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Pritzker spent her early career in business .
+
+
+Treebanked sentence:
+--------------------
+Pritzker spent her early career in business . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Pritzker))
+    (VP (VBD spent)
+      (NP (PRP$ her) (JJ early) (NN career))
+      (PP (IN in)
+        (NP (NN business))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Pritzker
+			coref:	IDENT			1	0-0	Pritzker 
+			name:	PERSON				0-0	Pritzker 
+	1	spent
+			sense:	spend.v.01
+			prop:	spend.02
+			V		1-1	spent 
+			N-ARG-A0		0-0	Pritzker 
+			N-ARG-A1		2-4	her early career 
+			N-ARG-A2		5-6	in business 
+	2	her
+	3	early
+			sense:	early.a.01
+	4	career
+			sense:	career.n.01
+	5	in
+	6	business
+			sense:	occupation.n.01
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She worked her way up through the Pritzker family business , eventually being appointed as one of three successors to her uncle , Jay Pritzker .
+
+
+Treebanked sentence:
+--------------------
+She worked her way up through the Pritzker family business , eventually being appointed as one of three successors to her uncle , Jay Pritzker . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD worked)
+      (NP (PRP$ her) (NN way))
+      (ADVP (RB up)
+        (PP (IN through)
+          (NP (DT the) (NNP Pritzker) (NN family) (NN business))))
+      (, ,)
+      (S
+        (ADVP (RB eventually))
+        (VP (VBG being)
+          (VP (VBN appointed)
+            (PP (IN as)
+              (NP
+                (NP (CD one))
+                (PP (IN of)
+                  (NP (CD three) (NNS successors)))))
+            (PP (IN to)
+              (NP
+                (NP (PRP$ her) (NN uncle))
+                (, ,)
+                (NP (NNP Jay) (NNP Pritzker))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	worked
+			sense:	work.v.09
+			prop:	work.01
+			V		1-1	worked 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		2-9	her way up through the Pritzker family business 
+			N-ARGM-PRD		11-24	eventually being appointed as one of three successors to her uncle , Jay Pritzker 
+	2	her
+	3	way
+			sense:	way.n.07
+	4	up
+			sense:	up.r.01
+	5	through
+	6	the
+	7	Pritzker
+			coref:	IDENT			1	7-7	Pritzker 
+			name:	PERSON				7-7	Pritzker 
+	8	family
+			sense:	family.n.04
+	9	business
+			sense:	business.n.01
+	10	,
+	11	eventually
+			sense:	finally.r.01
+	12	being
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	being 
+			N-ARGM-TMP		11-11	eventually 
+	13	appointed
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		13-13	appointed 
+			N-ARG-A1		0-0	She 
+			N-ARGM-TMP		11-11	eventually 
+			N-ARG-A2		14-24	as one of three successors to her uncle , Jay Pritzker 
+	14	as
+	15	one
+			name:	NUMBER				15-15	one 
+	16	of
+	17	three
+			name:	NUMBER				17-17	three 
+	18	successors
+			sense:	successor.n.01
+	19	to
+	20	her
+	21	uncle
+			sense:	uncle.n.01
+	22	,
+	23	Jay
+			coref:	IDENT			1	23-24	Jay Pritzker 
+			name:	PERSON				23-24	Jay Pritzker 
+	24	Pritzker
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She is the founder of PSP Capital Partners and Pritzker Realty Group .
+
+
+Treebanked sentence:
+--------------------
+She is the founder of PSP Capital Partners and Pritzker Realty Group . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN founder))
+        (PP (IN of)
+          (NP
+            (NP (NNP PSP) (NNP Capital) (NNPS Partners))
+            (CC and)
+            (NP (NNP Pritzker) (NNP Realty) (NNP Group))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-11	the founder of PSP Capital Partners and Pritzker Realty Group 
+	2	the
+	3	founder
+			name:	TITLE				3-3	founder 
+			sense:	founder.n.02
+	4	of
+	5	PSP
+			name:	ORGANIZATION				5-7	PSP Capital Partners 
+	6	Capital
+	7	Partners
+	8	and
+	9	Pritzker
+			name:	ORGANIZATION				9-11	Pritzker Realty Group 
+	10	Realty
+	11	Group
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She is also co - founder of Artemis Real Estate Partners .
+
+
+Treebanked sentence:
+--------------------
+She is also co - founder of Artemis Real Estate Partners . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (NP
+        (NP (AFX co) (HYPH -) (NN founder))
+        (PP (IN of)
+          (NP (NNP Artemis) (NNP Real) (NNP Estate) (NNPS Partners)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	She 
+			N-ARGM-ADV		2-2	also 
+			N-ARG-A2		3-10	co - founder of Artemis Real Estate Partners 
+	2	also
+			sense:	besides.r.02
+	3	co
+	4	-
+	5	founder
+			name:	TITLE				5-5	founder 
+			sense:	founder.n.02
+	6	of
+	7	Artemis
+			name:	ORGANIZATION				7-10	Artemis Real Estate Partners 
+	8	Real
+	9	Estate
+	10	Partners
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As of October 2015 , Forbes estimated her net worth at $ 2.4 billion .
+
+
+Treebanked sentence:
+--------------------
+As of October 2015 , Forbes estimated her net worth at $ 2.4 billion . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN As)
+      (PP (IN of)
+        (NP (NNP October) (CD 2015))))
+    (, ,)
+    (NP (NNP Forbes))
+    (VP (VBD estimated)
+      (NP (PRP$ her) (JJ net) (NN worth))
+      (PP (IN at)
+        (NP
+          (QP ($ $) (CD 2.4) (CD billion)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	of
+	2	October
+			name:	DATE				2-3	October 2015 
+	3	2015
+	4	,
+	5	Forbes
+			name:	PERSON				5-5	Forbes 
+	6	estimated
+			sense:	estimate.v.01
+			prop:	estimate.01
+			V		6-6	estimated 
+			N-ARGM-TMP		0-3	As of October 2015 
+			N-ARG-A0		5-5	Forbes 
+			N-ARG-A1		7-9	her net worth 
+			N-ARG-A2		10-13	at $ 2.4 billion 
+	7	her
+	8	net
+			sense:	net.a.01
+	9	worth
+			sense:	worth.n.01
+	10	at
+	11	$
+			name:	MONEY				11-13	$ 2.4 billion 
+	12	2.4
+	13	billion
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2009 , Forbes named Pritzker one of the 100 most powerful women in the world .
+
+
+Treebanked sentence:
+--------------------
+In 2009 , Forbes named Pritzker one of the 100 most powerful women in the world . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2009)))
+    (, ,)
+    (NP (NNP Forbes))
+    (VP (VBD named)
+      (NP
+        (NP (NNP Pritzker) (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (CD 100)
+              (ADJP (RBS most) (JJ powerful))
+              (NNS women))
+            (PP (IN in)
+              (NP (DT the) (NN world)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2009
+			name:	DATE				1-1	2009 
+	2	,
+	3	Forbes
+			name:	PERSON				3-3	Forbes 
+	4	named
+			sense:	mention.v.01
+			prop:	name.01
+			V		4-4	named 
+			N-ARGM-TMP		0-1	In 2009 
+			N-ARG-A0		3-3	Forbes 
+			N-ARG-A1		5-5	Pritzker 
+			N-ARG-A2		6-15	one of the 100 most powerful women in the world 
+	5	Pritzker
+			coref:	IDENT			1	5-15	Pritzker one of the 100 most powerful women in the world 
+			name:	PERSON				5-5	Pritzker 
+	6	one
+			name:	NUMBER				6-6	one 
+	7	of
+	8	the
+	9	100
+			name:	NUMBER				9-9	100 
+	10	most
+			sense:	most.r.01
+	11	powerful
+			sense:	potent.s.01
+	12	women
+			sense:	woman.n.01
+	13	in
+	14	the
+	15	world
+			sense:	earth.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Before entering government service , Pritzker had been involved in many Chicago organizations , including the Chicago Board of Education , Museum of Contemporary Art , Chicago , and her own foundation , the Pritzker Traubert Family Foundation .
+
+
+Treebanked sentence:
+--------------------
+Before entering government service , Pritzker had been involved in many Chicago organizations , including the Chicago Board of Education , Museum of Contemporary Art , Chicago , and her own foundation , the Pritzker Traubert Family Foundation . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Before)
+      (S
+        (VP (VBG entering)
+          (NP (NN government) (NN service)))))
+    (, ,)
+    (NP (NNP Pritzker))
+    (VP (VBD had)
+      (VP (VBN been)
+        (VP (VBN involved)
+          (PP (IN in)
+            (NP (JJ many) (NNP Chicago) (NNS organizations)))
+          (, ,)
+          (PP (VBG including)
+            (NP
+              (NP
+                (NP (DT the) (NNP Chicago) (NNP Board))
+                (PP (IN of)
+                  (NP (NNP Education))))
+              (, ,)
+              (NP
+                (NP (NNP Museum))
+                (PP (IN of)
+                  (NP (NNP Contemporary) (NNP Art))))
+              (, ,)
+              (NP (NNP Chicago))
+              (, ,)
+              (CC and)
+              (NP
+                (NP (PRP$ her) (JJ own) (NN foundation))
+                (, ,)
+                (NP (DT the) (NNP Pritzker) (NNP Traubert) (NNP Family) (NNP Foundation))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Before
+	1	entering
+			sense:	accede.v.02
+			prop:	enter.01
+			V		1-1	entering 
+			N-ARG-A1		2-3	government service 
+			N-ARG-A0		5-5	Pritzker 
+	2	government
+			sense:	government.n.01
+	3	service
+			sense:	service.n.05
+	4	,
+	5	Pritzker
+			coref:	IDENT			1	5-5	Pritzker 
+			name:	PERSON				5-5	Pritzker 
+	6	had
+			sense:	have.v.01
+			prop:	have.01
+			V		6-6	had 
+	7	been
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	been 
+			N-ARGM-TMP		0-3	Before entering government service 
+	8	involved
+			sense:	involve.v.02
+			prop:	involve.01
+			V		8-8	involved 
+			N-ARGM-TMP		0-3	Before entering government service 
+			N-ARG-A1		5-5	Pritzker 
+			N-ARG-A2		9-37	in many Chicago organizations , including the Chicago Board of Education , Museum of Contemporary Art , Chicago , and her own foundation , the Pritzker Traubert Family Foundation 
+	9	in
+	10	many
+			sense:	many.a.01
+	11	Chicago
+			coref:	IDENT			2	11-11	Chicago 
+			name:	CITY				11-11	Chicago 
+	12	organizations
+			sense:	organization.n.01
+	13	,
+	14	including
+			sense:	include.v.01
+			prop:	include.01
+			V		14-14	including 
+			N-ARG-A2		10-12	many Chicago organizations 
+			N-ARG-A1		15-37	the Chicago Board of Education , Museum of Contemporary Art , Chicago , and her own foundation , the Pritzker Traubert Family Foundation 
+	15	the
+	16	Chicago
+			name:	ORGANIZATION				16-19	Chicago Board of Education 
+	17	Board
+	18	of
+	19	Education
+	20	,
+	21	Museum
+			name:	ORGANIZATION				21-24	Museum of Contemporary Art 
+	22	of
+	23	Contemporary
+	24	Art
+	25	,
+	26	Chicago
+			coref:	IDENT			2	26-26	Chicago 
+			name:	CITY				26-26	Chicago 
+	27	,
+	28	and
+	29	her
+			coref:	IDENT			1	29-29	her 
+	30	own
+			sense:	own.s.01
+	31	foundation
+			sense:	foundation.n.02
+	32	,
+	33	the
+	34	Pritzker
+			name:	ORGANIZATION				34-37	Pritzker Traubert Family Foundation 
+	35	Traubert
+	36	Family
+	37	Foundation
+	38	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Pritzker was an early supporter of Obama 's presidential candidacy , having been a friend of the Obama family since their time in Chicago .
+
+
+Treebanked sentence:
+--------------------
+Pritzker was an early supporter of Obama 's presidential candidacy , having been a friend of the Obama family since their time in Chicago . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Pritzker))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (JJ early) (NN supporter))
+        (PP (IN of)
+          (NP
+            (NP (NNP Obama) (POS 's))
+            (JJ presidential) (NN candidacy))))
+      (, ,)
+      (S
+        (VP (VBG having)
+          (VP (VBN been)
+            (NP
+              (NP (DT a) (NN friend))
+              (PP (IN of)
+                (NP (DT the) (NNP Obama) (NN family))))
+            (PP (IN since)
+              (NP
+                (NP (PRP$ their) (NN time))
+                (PP (IN in)
+                  (NP (NNP Chicago)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Pritzker
+			coref:	IDENT			1	0-0	Pritzker 
+			name:	PERSON				0-0	Pritzker 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	Pritzker 
+			N-ARG-A2		2-9	an early supporter of Obama 's presidential candidacy 
+			N-ARGM-ADV		11-23	having been a friend of the Obama family since their time in Chicago 
+	2	an
+	3	early
+			sense:	early.a.01
+	4	supporter
+			sense:	supporter.n.01
+	5	of
+	6	Obama
+			coref:	IDENT			0	6-7	Obama 's 
+			name:	PERSON				6-6	Obama 
+	7	's
+	8	presidential
+			sense:	presidential.a.01
+	9	candidacy
+			sense:	campaigning.n.01
+	10	,
+	11	having
+			sense:	have.v.07
+			prop:	shaving.01
+			V		11-11	having 
+			N-ARGM-TMP		19-23	since their time in Chicago 
+	12	been
+			sense:	be.v.01
+			prop:	be.01
+			V		12-12	been 
+			N-ARG-A1		0-0	Pritzker 
+			N-ARG-A2		13-18	a friend of the Obama family 
+			N-ARGM-TMP		19-23	since their time in Chicago 
+	13	a
+	14	friend
+			sense:	friend.n.01
+	15	of
+	16	the
+	17	Obama
+			coref:	IDENT			0	17-17	Obama 
+			name:	PERSON				17-17	Obama 
+	18	family
+			sense:	family.n.01
+	19	since
+	20	their
+	21	time
+			sense:	time.n.03
+	22	in
+	23	Chicago
+			coref:	IDENT			2	23-23	Chicago 
+			name:	CITY				23-23	Chicago 
+	24	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.0-2	President Barack Obama 
+				10.6-7	Obama 's 
+				10.17-17	Obama 
+	Chain 1 (IDENT)
+				0.0-8	Penny Sue Pritzker ( born May 2 , 1959 
+				1.4-4	Pritzker 
+				3.0-0	Pritzker 
+				4.7-7	Pritzker 
+				4.23-24	Jay Pritzker 
+				8.5-15	Pritzker one of the 100 most powerful women in the world 
+				9.5-5	Pritzker 
+				9.29-29	her 
+				10.0-0	Pritzker 
+	Chain 2 (IDENT)
+				9.11-11	Chicago 
+				9.26-26	Chicago 
+				10.23-23	Chicago 
+

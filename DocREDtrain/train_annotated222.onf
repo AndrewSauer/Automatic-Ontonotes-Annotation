@@ -1,0 +1,579 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Burwell Otis Jones ( born March 23 , 1933 ) is an American former competition swimmer and Pan American Games champion .
+
+
+Treebanked sentence:
+--------------------
+Burwell Otis Jones ( born March 23 , 1933 ) is an American former competition swimmer and Pan American Games champion . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Burwell) (NNP Otis) (NNP Jones))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP March) (CD 23) (, ,) (CD 1933)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT an) (JJ American)
+        (NML
+          (NML (JJ former) (NN competition) (NN swimmer))
+          (CC and)
+          (NML (NNP Pan) (NNP American) (NNPS Games)))
+        (NN champion)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Burwell
+			name:	PERSON				0-2	Burwell Otis Jones 
+	1	Otis
+	2	Jones
+	3	(
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-2	Burwell Otis Jones 
+			N-ARGM-TMP		5-8	March 23 , 1933 
+	5	March
+			name:	DATE				5-8	March 23 , 1933 
+	6	23
+	7	,
+	8	1933
+	9	)
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	Burwell Otis Jones ( born March 23 , 1933 ) 
+			N-ARG-A2		11-20	an American former competition swimmer and Pan American Games champion 
+	11	an
+	12	American
+			name:	NATIONALITY				12-12	American 
+	13	former
+			sense:	erstwhile.s.01
+	14	competition
+			sense:	contest.n.01
+	15	swimmer
+			name:	TITLE				15-15	swimmer 
+			sense:	swimmer.n.01
+	16	and
+	17	Pan
+			name:	MISC				17-17	Pan 
+	18	American
+			name:	NATIONALITY				18-18	American 
+	19	Games
+			name:	MISC				19-19	Games 
+	20	champion
+			sense:	champion.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the 1951 Pan American Games held in Buenos Aires , Argentina , he won the bronze medal in the men 's 100-meter backstroke , and a gold medal in the men 's 4×200-meter freestyle relay event , alongside teammates Dick Cleveland , Ronald Gora and Bill Heusner .
+
+
+Treebanked sentence:
+--------------------
+At the 1951 Pan American Games held in Buenos Aires , Argentina , he won the bronze medal in the men 's 100 - meter backstroke , and a gold medal in the men 's 4 × 200 - meter freestyle relay event , alongside teammates Dick Cleveland , Ronald Gora and Bill Heusner . 
+
+Tree:
+-----
+(ROOT
+  (SINV
+    (PP (IN At)
+      (NP (DT the) (CD 1951)
+        (NML (NNP Pan) (NNP American))
+        (NNPS Games)))
+    (VP (VBD held)
+      (PP (IN in)
+        (NP (NNP Buenos) (NNP Aires)))
+      (, ,)
+      (S
+        (NP (NNP Argentina))
+        (, ,)
+        (NP (PRP he))
+        (VP (VBD won)
+          (NP (DT the) (NN bronze) (NN medal))
+          (PP (IN in)
+            (NP
+              (NP
+                (NP (DT the) (NNS men) (POS 's))
+                (NML (CD 100) (HYPH -) (NN meter))
+                (NN backstroke))
+              (, ,)
+              (CC and)
+              (NP
+                (NP (DT a) (NN gold) (NN medal))
+                (PP (IN in)
+                  (NP
+                    (NP (DT the) (NNS men) (POS 's))
+                    (ADJP
+                      (NML
+                        (QP (CD 4) (SYM ×) (CD 200))
+                        (HYPH -) (NN meter))
+                      (JJ freestyle))
+                    (NN relay) (NN event))))
+              (, ,)))
+          (PP (IN alongside)
+            (NP (NNS teammates))))))
+    (NP
+      (NP (NNP Dick) (NNP Cleveland))
+      (, ,)
+      (NP
+        (NP (NNP Ronald) (NNP Gora))
+        (CC and)
+        (NP (NNP Bill) (NNP Heusner))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+	2	1951
+			name:	DATE				2-2	1951 
+	3	Pan
+			name:	MISC				3-3	Pan 
+	4	American
+			name:	NATIONALITY				4-4	American 
+	5	Games
+			name:	MISC				5-5	Games 
+	6	held
+			sense:	hold.v.03
+			prop:	hold.04
+			V		6-6	held 
+			N-ARG-A1		1-5	the 1951 Pan American Games 
+			N-ARGM-LOC		7-11	in Buenos Aires , Argentina 
+	7	in
+	8	Buenos
+			name:	CITY				8-9	Buenos Aires 
+	9	Aires
+	10	,
+	11	Argentina
+			name:	COUNTRY				11-11	Argentina 
+	12	,
+	13	he
+	14	won
+			sense:	win.v.01
+			prop:	win.01
+			V		14-14	won 
+			N-ARGM-LOC		0-11	At the 1951 Pan American Games held in Buenos Aires , Argentina 
+			N-ARG-A0		13-13	he 
+			N-ARG-A1		15-42	the bronze medal in the men 's 100 - meter backstroke , and a gold medal in the men 's 4 × 200 - meter freestyle relay event 
+			N-ARGM-ADV		44-53	alongside teammates Dick Cleveland , Ronald Gora and Bill Heusner 
+	15	the
+	16	bronze
+			sense:	bronze.n.01
+	17	medal
+			sense:	decoration.n.02
+	18	in
+	19	the
+			coref:	IDENT			0	19-21	the men 's 
+	20	men
+			sense:	man.n.01
+	21	's
+	22	100
+			name:	NUMBER				22-24	100 - meter 
+	23	-
+	24	meter
+			sense:	meter.n.01
+	25	backstroke
+			sense:	backstroke.n.01
+	26	,
+	27	and
+	28	a
+	29	gold
+			sense:	gold.n.01
+	30	medal
+			sense:	decoration.n.02
+	31	in
+	32	the
+			coref:	IDENT			0	32-34	the men 's 
+	33	men
+			sense:	man.n.01
+	34	's
+	35	4
+			name:	NUMBER				35-35	4 
+	36	×
+	37	200
+			name:	NUMBER				37-39	200 - meter 
+	38	-
+	39	meter
+			sense:	meter.n.01
+	40	freestyle
+	41	relay
+			sense:	relay.n.04
+	42	event
+			sense:	event.n.01
+	43	,
+	44	alongside
+	45	teammates
+			sense:	teammate.n.01
+	46	Dick
+			name:	PERSON				46-47	Dick Cleveland 
+	47	Cleveland
+	48	,
+	49	Ronald
+			name:	PERSON				49-50	Ronald Gora 
+	50	Gora
+	51	and
+	52	Bill
+			name:	PERSON				52-53	Bill Heusner 
+	53	Heusner
+	54	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the 1952 Summer Olympics in Helsinki , Finland , Jones swam for the gold medal - winning U.S. team in the preliminary heats of the men 's 4×200-meter freestyle relay .
+
+
+Treebanked sentence:
+--------------------
+At the 1952 Summer Olympics in Helsinki , Finland , Jones swam for the gold medal - winning U.S. team in the preliminary heats of the men 's 4 × 200 - meter freestyle relay . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (DT the) (CD 1952) (NNP Summer) (NNPS Olympics))
+        (PP (IN in)
+          (NP (NNP Helsinki) (, ,) (NNP Finland)))))
+    (, ,)
+    (NP (NNP Jones))
+    (VP (VBD swam)
+      (PP (IN for)
+        (NP
+          (NP (DT the)
+            (ADJP
+              (NP (NN gold) (NN medal))
+              (HYPH -) (VBG winning))
+            (NNP U.S.) (NN team))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (JJ preliminary) (NNS heats))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NNS men) (POS 's))
+                  (NML
+                    (QP (CD 4) (SYM ×) (CD 200))
+                    (HYPH -) (NN meter))
+                  (JJ freestyle) (NN relay))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+			name:	DATE				1-3	the 1952 Summer 
+	2	1952
+	3	Summer
+	4	Olympics
+			name:	MISC				4-4	Olympics 
+	5	in
+	6	Helsinki
+			name:	CITY				6-6	Helsinki 
+	7	,
+	8	Finland
+			name:	COUNTRY				8-8	Finland 
+	9	,
+	10	Jones
+			name:	PERSON				10-10	Jones 
+	11	swam
+			sense:	swim.v.01
+			prop:	slam.01
+			V		11-11	swam 
+			N-ARGM-LOC		0-8	At the 1952 Summer Olympics in Helsinki , Finland 
+			N-ARG-A0		10-10	Jones 
+			N-ARGM-GOL		12-19	for the gold medal - winning U.S. team 
+			N-ARGM-LOC		20-34	in the preliminary heats of the men 's 4 × 200 - meter freestyle relay 
+	12	for
+	13	the
+			coref:	IDENT			1	13-34	the gold medal - winning U.S. team in the preliminary heats of the men 's 4 × 200 - meter freestyle relay 
+	14	gold
+			sense:	gold.n.01
+	15	medal
+			sense:	decoration.n.02
+	16	-
+	17	winning
+			sense:	win.v.01
+			prop:	win.01
+			V		17-17	winning 
+			N-ARG-A1		14-15	gold medal 
+			N-ARG-A0		18-19	U.S. team 
+	18	U.S.
+			name:	COUNTRY				18-18	U.S. 
+	19	team
+			sense:	team.n.01
+	20	in
+	21	the
+	22	preliminary
+			sense:	preliminary.s.01
+	23	heats
+			sense:	heat.n.06
+	24	of
+	25	the
+			coref:	IDENT			0	25-27	the men 's 
+	26	men
+			sense:	man.n.01
+	27	's
+	28	4
+			name:	NUMBER				28-28	4 
+	29	×
+	30	200
+			name:	NUMBER				30-32	200 - meter 
+	31	-
+	32	meter
+			sense:	meter.n.01
+	33	freestyle
+	34	relay
+			sense:	relay.n.04
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Although the U.S. team finished first , Jones did not receive a medal under the 1952 rules because he did not swim in the event final .
+
+
+Treebanked sentence:
+--------------------
+Although the U.S. team finished first , Jones did not receive a medal under the 1952 rules because he did not swim in the event final . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN Although)
+      (S
+        (NP (DT the) (NNP U.S.) (NN team))
+        (VP (VBD finished)
+          (ADVP (RB first)))))
+    (, ,)
+    (NP (NNP Jones))
+    (VP (VBD did) (RB not)
+      (VP (VB receive)
+        (NP (DT a) (NN medal))
+        (PP (IN under)
+          (NP (DT the) (CD 1952) (NNS rules)))
+        (SBAR (IN because)
+          (S
+            (NP (PRP he))
+            (VP (VBD did) (RB not)
+              (VP (VB swim)
+                (PP (IN in)
+                  (NP (DT the) (NN event) (JJ final)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Although
+	1	the
+			coref:	IDENT			1	1-3	the U.S. team 
+	2	U.S.
+			name:	COUNTRY				2-2	U.S. 
+	3	team
+			sense:	team.n.01
+	4	finished
+			sense:	end.v.01
+			prop:	finish.02
+			V		4-4	finished 
+			N-ARG-A1		1-3	the U.S. team 
+	5	first
+			name:	ORDINAL				5-5	first 
+			sense:	first.r.03
+	6	,
+	7	Jones
+			name:	PERSON				7-7	Jones 
+	8	did
+			sense:	make.v.01
+			prop:	do.01
+			V		8-8	did 
+	9	not
+			sense:	not.r.01
+	10	receive
+			sense:	receive.v.01
+			prop:	receive.01
+			V		10-10	receive 
+			N-ARGM-ADV		0-5	Although the U.S. team finished first 
+			N-ARG-A0		7-7	Jones 
+			N-ARGM-NEG		9-9	not 
+			N-ARG-A1		11-12	a medal 
+			N-ARGM-LOC		13-16	under the 1952 rules 
+			N-ARGM-CAU		17-25	because he did not swim in the event final 
+	11	a
+	12	medal
+			sense:	decoration.n.02
+	13	under
+	14	the
+	15	1952
+			name:	DATE				15-15	1952 
+	16	rules
+			sense:	rule.n.01
+	17	because
+	18	he
+	19	did
+			sense:	make.v.01
+			prop:	do.01
+			V		19-19	did 
+	20	not
+			sense:	not.r.01
+	21	swim
+			sense:	swim.v.01
+			prop:	swim.01
+			V		21-21	swim 
+			N-ARG-A0		18-18	he 
+			N-ARGM-NEG		20-20	not 
+			N-ARGM-LOC		22-25	in the event final 
+	22	in
+	23	the
+	24	event
+			sense:	event.n.01
+	25	final
+			sense:	final.s.02
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jones attended the University of Michigan , where he swam for the Michigan Wolverines swimming and diving team in National Collegiate Athletic Association ( NCAA ) competition from 1952 to 1954 .
+
+
+Treebanked sentence:
+--------------------
+Jones attended the University of Michigan , where he swam for the Michigan Wolverines swimming and diving team in National Collegiate Athletic Association ( NCAA ) competition from 1952 to 1954 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Jones))
+    (VP (VBD attended)
+      (NP
+        (NP (DT the) (NNP University))
+        (PP (IN of)
+          (NP (NNP Michigan))))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP he))
+          (VP (VBD swam)
+            (PP (IN for)
+              (NP (DT the) (NNP Michigan) (NNPS Wolverines)))
+            (NP
+              (NML (NN swimming)
+                (CC and)
+                (NN diving))
+              (NN team))
+            (PP (IN in)
+              (NP
+                (NP
+                  (NML (NNP National) (NNP Collegiate))
+                  (JJ Athletic) (NN Association)
+                  (PRN (-LRB- -LRB-)
+                    (NP (NNP NCAA))
+                    (-RRB- -RRB-))
+                  (NN competition))
+                (PP (IN from)
+                  (NP (CD 1952)))))
+            (PP (IN to)
+              (NP (CD 1954)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jones
+			name:	PERSON				0-0	Jones 
+	1	attended
+			sense:	attend.v.01
+			prop:	attend.01
+			V		1-1	attended 
+			N-ARG-A0		0-0	Jones 
+			N-ARG-A1		2-30	the University of Michigan , where he swam for the Michigan Wolverines swimming and diving team in National Collegiate Athletic Association ( NCAA ) competition from 1952 to 1954 
+	2	the
+	3	University
+			name:	ORGANIZATION				3-5	University of Michigan 
+	4	of
+	5	Michigan
+	6	,
+	7	where
+	8	he
+	9	swam
+			sense:	swim.v.01
+			prop:	slam.01
+			V		9-9	swam 
+			N-ARGM-LOC		2-5	the University of Michigan 
+			R-ARGM-LOC		7-7	where 
+			N-ARG-A0		8-8	he 
+			N-ARGM-GOL		10-17	for the Michigan Wolverines swimming and diving team 
+			N-ARGM-LOC		18-26	in National Collegiate Athletic Association ( NCAA ) competition 
+			N-ARGM-TMP		27-30	from 1952 to 1954 
+	10	for
+	11	the
+	12	Michigan
+			name:	ORGANIZATION				12-13	Michigan Wolverines 
+	13	Wolverines
+	14	swimming
+			sense:	swimming.n.01
+	15	and
+	16	diving
+			sense:	diving.n.01
+	17	team
+			sense:	team.n.01
+	18	in
+	19	National
+			name:	ORGANIZATION				19-22	National Collegiate Athletic Association 
+	20	Collegiate
+	21	Athletic
+			sense:	athletic.a.01
+	22	Association
+			sense:	association.n.01
+	23	(
+	24	NCAA
+			name:	ORGANIZATION				24-24	NCAA 
+	25	)
+	26	competition
+			sense:	contest.n.01
+	27	from
+	28	1952
+			name:	DATE				28-30	1952 to 1954 
+	29	to
+	30	1954
+	31	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.19-21	the men 's 
+				1.32-34	the men 's 
+				2.25-27	the men 's 
+	Chain 1 (IDENT)
+				2.13-34	the gold medal - winning U.S. team in the preliminary heats of the men 's 4 × 200 - meter freestyle relay 
+				3.1-3	the U.S. team 
+

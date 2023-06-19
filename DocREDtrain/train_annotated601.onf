@@ -1,0 +1,628 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Michael Helm is a Canadian novelist .
+
+
+Treebanked sentence:
+--------------------
+Michael Helm is a Canadian novelist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Michael) (NNP Helm))
+    (VP (VBZ is)
+      (NP (DT a) (JJ Canadian) (NN novelist)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Michael
+			coref:	IDENT			3	0-1	Michael Helm 
+			name:	PERSON				0-1	Michael Helm 
+	1	Helm
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Michael Helm 
+			N-ARG-A2		3-5	a Canadian novelist 
+	3	a
+	4	Canadian
+			name:	NATIONALITY				4-4	Canadian 
+	5	novelist
+			name:	TITLE				5-5	novelist 
+			sense:	novelist.n.01
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was born in Eston , Saskatchewan , and received degrees in literature from the University of Saskatchewan and the University of Toronto .
+
+
+Treebanked sentence:
+--------------------
+He was born in Eston , Saskatchewan , and received degrees in literature from the University of Saskatchewan and the University of Toronto . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN born)
+          (PP (IN in)
+            (NP (NNP Eston) (, ,) (NNP Saskatchewan)))))
+      (, ,)
+      (CC and)
+      (VP (VBD received)
+        (NP (NNS degrees))
+        (PP (IN in)
+          (NP (NN literature)))
+        (PP (IN from)
+          (NP
+            (NP
+              (NP (DT the) (NNP University))
+              (PP (IN of)
+                (NP (NNP Saskatchewan))))
+            (CC and)
+            (NP
+              (NP (DT the) (NNP University))
+              (PP (IN of)
+                (NP (NNP Toronto))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			3	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-6	in Eston , Saskatchewan 
+	3	in
+	4	Eston
+			name:	CITY				4-4	Eston 
+	5	,
+	6	Saskatchewan
+			name:	STATE_OR_PROVINCE				6-6	Saskatchewan 
+	7	,
+	8	and
+	9	received
+			sense:	receive.v.01
+			prop:	receive.01
+			V		9-9	received 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		10-12	degrees in literature 
+			N-ARG-A2		13-22	from the University of Saskatchewan and the University of Toronto 
+	10	degrees
+			sense:	academic_degree.n.01
+	11	in
+	12	literature
+			sense:	literature.n.02
+	13	from
+	14	the
+	15	University
+			name:	ORGANIZATION				15-17	University of Saskatchewan 
+	16	of
+	17	Saskatchewan
+	18	and
+	19	the
+	20	University
+			name:	ORGANIZATION				20-22	University of Toronto 
+	21	of
+	22	Toronto
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His debut novel , The Projectionist ( 1997 ) , was nominated for the Giller Prize and the Trillium Book Award .
+
+
+Treebanked sentence:
+--------------------
+His debut novel , The Projectionist ( 1997 ) , was nominated for the Giller Prize and the Trillium Book Award . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ His) (NN debut) (NN novel))
+      (, ,)
+      (NP (DT The) (NN Projectionist)
+        (PRN (-LRB- -LRB-)
+          (NP (CD 1997))
+          (-RRB- -RRB-)))
+      (, ,))
+    (VP (VBD was)
+      (VP (VBN nominated)
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NNP Giller) (NNP Prize))
+            (CC and)
+            (NP (DT the) (NNP Trillium) (NNP Book) (NNP Award))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-8	His debut novel , The Projectionist ( 1997 ) 
+			coref:	IDENT			3	0-0	His 
+	1	debut
+			sense:	introduction.n.01
+	2	novel
+			sense:	novel.n.01
+	3	,
+	4	The
+	5	Projectionist
+			sense:	projectionist.n.01
+	6	(
+	7	1997
+			name:	DATE				7-7	1997 
+	8	)
+	9	,
+	10	was
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	was 
+	11	nominated
+			sense:	nominate.v.01
+			prop:	nominate.01
+			V		11-11	nominated 
+			N-ARG-A1		0-8	His debut novel , The Projectionist ( 1997 ) 
+			N-ARG-A2		12-20	for the Giller Prize and the Trillium Book Award 
+	12	for
+	13	the
+			coref:	IDENT			2	13-15	the Giller Prize 
+	14	Giller
+			name:	MISC				14-15	Giller Prize 
+	15	Prize
+	16	and
+	17	the
+	18	Trillium
+	19	Book
+	20	Award
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His second novel , In the Place of Last Things ( 2004 ) was a finalist for the regional Commonwealth Prize for Best Book and the Rogers Writers ' Trust Fiction Prize .
+
+
+Treebanked sentence:
+--------------------
+His second novel , In the Place of Last Things ( 2004 ) was a finalist for the regional Commonwealth Prize for Best Book and the Rogers Writers ' Trust Fiction Prize . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His) (JJ second) (NN novel))
+    (, ,)
+    (PP (IN In)
+      (NP
+        (NP (DT the) (NN Place))
+        (PP (IN of)
+          (NP (JJ Last) (NNS Things)
+            (PRN (-LRB- -LRB-)
+              (NP (CD 2004))
+              (-RRB- -RRB-))))))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN finalist))
+        (PP (IN for)
+          (NP
+            (NP (DT the) (JJ regional) (NNP Commonwealth) (NNP Prize))
+            (PP (IN for)
+              (NP
+                (NP (NNP Best) (NNP Book))
+                (CC and)
+                (NP
+                  (NP (DT the) (NNP Rogers) (NNPS Writers) (POS '))
+                  (NNP Trust) (NNP Fiction) (NNP Prize))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-2	His second novel 
+			coref:	IDENT			3	0-0	His 
+	1	second
+			name:	ORDINAL				1-1	second 
+			sense:	second.s.01
+	2	novel
+			sense:	novel.n.01
+	3	,
+	4	In
+	5	the
+	6	Place
+			sense:	place.n.03
+	7	of
+	8	Last
+			sense:	concluding.s.01
+	9	Things
+			sense:	thing.n.08
+	10	(
+	11	2004
+			name:	DATE				11-11	2004 
+	12	)
+	13	was
+			sense:	be.v.01
+			prop:	be.01
+			V		13-13	was 
+			N-ARG-A1		0-12	His second novel , In the Place of Last Things ( 2004 ) 
+			N-ARG-A2		14-31	a finalist for the regional Commonwealth Prize for Best Book and the Rogers Writers ' Trust Fiction Prize 
+	14	a
+	15	finalist
+			sense:	finalist.n.01
+	16	for
+	17	the
+	18	regional
+			sense:	regional.a.01
+	19	Commonwealth
+	20	Prize
+	21	for
+	22	Best
+	23	Book
+	24	and
+	25	the
+			coref:	IDENT			1	25-28	the Rogers Writers ' 
+	26	Rogers
+			name:	ORGANIZATION				26-27	Rogers Writers 
+	27	Writers
+	28	'
+	29	Trust
+	30	Fiction
+	31	Prize
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His 2010 novel Cities of Refuge was shortlisted for the Rogers Writers ' Trust Fiction Prize , longlisted for the Giller Prize , and named a Globe and Mail Best Book of the Year and a Now Magazine Top Ten of 2010 .
+
+
+Treebanked sentence:
+--------------------
+His 2010 novel Cities of Refuge was shortlisted for the Rogers Writers ' Trust Fiction Prize , longlisted for the Giller Prize , and named a Globe and Mail Best Book of the Year and a Now Magazine Top Ten of 2010 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ His) (CD 2010) (JJ novel) (NNS Cities))
+      (PP (IN of)
+        (NP (NNP Refuge))))
+    (VP (VBD was)
+      (VP
+        (VP (VBN shortlisted)
+          (PP (IN for)
+            (NP
+              (NP (DT the) (NNP Rogers) (NNPS Writers) (POS '))
+              (NNP Trust) (NNP Fiction) (NNP Prize))))
+        (, ,)
+        (VP (VBN longlisted)
+          (PP (IN for)
+            (NP (DT the) (NNP Giller) (NNP Prize))))
+        (, ,)
+        (CC and)
+        (VP (VBN named)
+          (NP
+            (NP
+              (NP (DT a)
+                (NML (NNP Globe)
+                  (CC and)
+                  (NNP Mail))
+                (NNP Best) (NNP Book))
+              (PP (IN of)
+                (NP (DT the) (NN Year))))
+            (CC and)
+            (NP (DT a)
+              (RRC
+                (ADVP (RB Now))
+                (NP
+                  (NP (NNP Magazine) (NNP Top) (CD Ten))
+                  (PP (IN of)
+                    (NP (CD 2010))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			3	0-0	His 
+	1	2010
+			name:	DATE				1-1	2010 
+	2	novel
+			sense:	fresh.s.04
+	3	Cities
+			sense:	city.n.01
+	4	of
+	5	Refuge
+	6	was
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	was 
+	7	shortlisted
+			sense:	shortlist.v.01
+			prop:	shoplift.01
+			V		7-7	shortlisted 
+			N-ARG-A1		0-5	His 2010 novel Cities of Refuge 
+			N-ARG-A3		8-15	for the Rogers Writers ' Trust Fiction Prize 
+	8	for
+	9	the
+			coref:	IDENT			1	9-12	the Rogers Writers ' 
+	10	Rogers
+			name:	ORGANIZATION				10-11	Rogers Writers 
+	11	Writers
+	12	'
+	13	Trust
+	14	Fiction
+	15	Prize
+	16	,
+	17	longlisted
+			prop:	conciliate.01
+			V		17-17	longlisted 
+			N-ARG-A1		0-5	His 2010 novel Cities of Refuge 
+			N-ARG-A2		18-21	for the Giller Prize 
+	18	for
+	19	the
+			coref:	IDENT			2	19-21	the Giller Prize 
+	20	Giller
+			name:	MISC				20-21	Giller Prize 
+	21	Prize
+	22	,
+	23	and
+	24	named
+			sense:	mention.v.01
+			prop:	name.01
+			V		24-24	named 
+			N-ARG-A1		0-5	His 2010 novel Cities of Refuge 
+			N-ARG-A2		25-41	a Globe and Mail Best Book of the Year and a Now Magazine Top Ten of 2010 
+	25	a
+	26	Globe
+	27	and
+	28	Mail
+	29	Best
+	30	Book
+	31	of
+	32	the
+			name:	DATE				32-33	the Year 
+	33	Year
+			sense:	year.n.01
+	34	and
+	35	a
+	36	Now
+			name:	DATE				36-36	Now 
+			sense:	nowadays.r.01
+	37	Magazine
+	38	Top
+	39	Ten
+			name:	NUMBER				39-39	Ten 
+	40	of
+	41	2010
+			name:	DATE				41-41	2010 
+	42	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Helm 's essays on fiction , poetry , and the visual arts have appeared in various magazines , including Brick , where he serves as an editor .
+
+
+Treebanked sentence:
+--------------------
+Helm 's essays on fiction , poetry , and the visual arts have appeared in various magazines , including Brick , where he serves as an editor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Helm) (POS 's))
+        (NNS essays))
+      (PP (IN on)
+        (NP
+          (NP (NN fiction))
+          (, ,)
+          (NP (NN poetry))
+          (, ,)
+          (CC and)
+          (NP (DT the) (JJ visual) (NNS arts)))))
+    (VP (VBP have)
+      (VP (VBN appeared)
+        (PP (IN in)
+          (NP (JJ various) (NNS magazines)))
+        (, ,)
+        (PP (VBG including)
+          (NP
+            (NP (NNP Brick))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (PRP he))
+                (VP (VBZ serves)
+                  (PP (IN as)
+                    (NP (DT an) (NN editor))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Helm
+			coref:	IDENT			3	0-1	Helm 's 
+	1	's
+	2	essays
+			sense:	essay.n.01
+	3	on
+	4	fiction
+			sense:	fiction.n.01
+	5	,
+	6	poetry
+			sense:	poetry.n.01
+	7	,
+	8	and
+	9	the
+	10	visual
+			sense:	ocular.s.03
+	11	arts
+			sense:	art.n.01
+	12	have
+			sense:	have.v.01
+			prop:	have.01
+			V		12-12	have 
+	13	appeared
+			sense:	appear.v.03
+			prop:	appear.01
+			V		13-13	appeared 
+			N-ARG-A1		0-11	Helm 's essays on fiction , poetry , and the visual arts 
+			N-ARGM-LOC		14-26	in various magazines , including Brick , where he serves as an editor 
+	14	in
+	15	various
+			sense:	respective.s.01
+	16	magazines
+			sense:	magazine.n.01
+	17	,
+	18	including
+			sense:	include.v.01
+			prop:	include.01
+			V		18-18	including 
+			N-ARG-A2		15-16	various magazines 
+			N-ARG-A1		19-26	Brick , where he serves as an editor 
+	19	Brick
+	20	,
+	21	where
+	22	he
+			coref:	IDENT			3	22-22	he 
+	23	serves
+			sense:	serve.v.02
+			prop:	serve.01
+			V		23-23	serves 
+			N-ARGM-LOC		19-19	Brick 
+			R-ARGM-LOC		21-21	where 
+			N-ARG-A0		22-22	he 
+			N-ARG-A1		24-26	as an editor 
+	24	as
+	25	an
+	26	editor
+			name:	TITLE				26-26	editor 
+			sense:	editor.n.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Helm currently teaches in the Department of English at York University in Toronto .
+
+
+Treebanked sentence:
+--------------------
+Helm currently teaches in the Department of English at York University in Toronto . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Helm))
+    (ADVP (RB currently))
+    (VP (VBZ teaches)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NNP Department))
+          (PP (IN of)
+            (NP (NNP English)))))
+      (PP (IN at)
+        (NP
+          (NP (NNP York) (NNP University))
+          (PP (IN in)
+            (NP (NNP Toronto))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Helm
+			coref:	IDENT			3	0-0	Helm 
+	1	currently
+			name:	DATE				1-1	currently 
+			sense:	presently.r.02
+	2	teaches
+			sense:	teach.v.01
+			prop:	teach.01
+			V		2-2	teaches 
+			N-ARG-A0		0-0	Helm 
+			N-ARGM-TMP		1-1	currently 
+			N-ARGM-LOC		3-7	in the Department of English 
+			N-ARGM-LOC		8-12	at York University in Toronto 
+	3	in
+	4	the
+	5	Department
+	6	of
+	7	English
+			name:	NATIONALITY				7-7	English 
+	8	at
+	9	York
+			name:	ORGANIZATION				9-10	York University 
+	10	University
+	11	in
+	12	Toronto
+			name:	CITY				12-12	Toronto 
+	13	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.0-8	His debut novel , The Projectionist ( 1997 ) 
+				3.0-2	His second novel 
+	Chain 1 (IDENT)
+				3.25-28	the Rogers Writers ' 
+				4.9-12	the Rogers Writers ' 
+	Chain 2 (IDENT)
+				2.13-15	the Giller Prize 
+				4.19-21	the Giller Prize 
+	Chain 3 (IDENT)
+				0.0-1	Michael Helm 
+				1.0-0	He 
+				2.0-0	His 
+				3.0-0	His 
+				4.0-0	His 
+				5.0-1	Helm 's 
+				5.22-22	he 
+				6.0-0	Helm 
+

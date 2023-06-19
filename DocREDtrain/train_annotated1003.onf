@@ -1,0 +1,894 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Antwerp ( , , ) is a city in Belgium , and is the capital of Antwerp province in Flanders .
+
+
+Treebanked sentence:
+--------------------
+Antwerp ( , , ) is a city in Belgium , and is the capital of Antwerp province in Flanders . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Antwerp)
+      (PRN (-LRB- -LRB-)
+        (NP (, ,) (, ,))
+        (-RRB- -RRB-)))
+    (VP
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (NN city))
+          (PP (IN in)
+            (NP (NNP Belgium)))))
+      (, ,)
+      (CC and)
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (NN capital))
+          (PP (IN of)
+            (NP
+              (NP (NNP Antwerp) (NN province))
+              (PP (IN in)
+                (NP (NNP Flanders))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Antwerp
+			coref:	IDENT			4	0-0	Antwerp 
+			name:	CITY				0-0	Antwerp 
+	1	(
+	2	,
+	3	,
+	4	)
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-0	Antwerp 
+			N-ARG-A2		6-9	a city in Belgium 
+	6	a
+	7	city
+			sense:	city.n.01
+	8	in
+	9	Belgium
+			coref:	IDENT			3	9-9	Belgium 
+			name:	COUNTRY				9-9	Belgium 
+	10	,
+	11	and
+	12	is
+			sense:	be.v.02
+			prop:	be.01
+			V		12-12	is 
+			N-ARG-A1		0-1	Antwerp ( 
+			N-ARG-A2		13-19	the capital of Antwerp province in Flanders 
+	13	the
+	14	capital
+			sense:	capital.n.03
+	15	of
+	16	Antwerp
+			coref:	IDENT			4	16-16	Antwerp 
+			name:	CITY				16-16	Antwerp 
+	17	province
+			sense:	state.n.01
+	18	in
+	19	Flanders
+			name:	LOCATION				19-19	Flanders 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+With a population of 520,504 , it is the most populous city proper in Belgium .
+
+
+Treebanked sentence:
+--------------------
+With a population of 520,504 , it is the most populous city proper in Belgium . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN With)
+      (NP
+        (NP (DT a) (NN population))
+        (PP (IN of)
+          (NP (CD 520,504)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the)
+          (ADJP (RBS most) (JJ populous))
+          (NN city))
+        (ADJP (JJ proper)
+          (PP (IN in)
+            (NP (NNP Belgium))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	With
+	1	a
+	2	population
+			sense:	population.n.04
+	3	of
+	4	520,504
+			name:	NUMBER				4-4	520,504 
+	5	,
+	6	it
+			coref:	IDENT			0	6-6	it 
+	7	is
+			sense:	be.v.01
+			prop:	be.01
+			V		7-7	is 
+			N-ARGM-PRD		0-4	With a population of 520,504 
+			N-ARG-A1		6-6	it 
+			N-ARG-A2		8-14	the most populous city proper in Belgium 
+	8	the
+	9	most
+			sense:	most.r.01
+	10	populous
+			sense:	populous.s.01
+	11	city
+			sense:	city.n.01
+	12	proper
+			sense:	proper.s.03
+	13	in
+	14	Belgium
+			coref:	IDENT			3	14-14	Belgium 
+			name:	COUNTRY				14-14	Belgium 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Its metropolitan area houses around 1,200,000 people , coming in second behind Brussels .
+
+
+Treebanked sentence:
+--------------------
+Its metropolitan area houses around 1,200,000 people , coming in second behind Brussels . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP
+      (NP (PRP$ Its) (JJ metropolitan) (NN area) (NNS houses))
+      (PP (IN around)
+        (NP (CD 1,200,000) (NNS people))))
+    (, ,)
+    (VP (VBG coming)
+      (PP (IN in)
+        (NP
+          (NP (JJ second))
+          (PP (IN behind)
+            (NP (NNP Brussels))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Its
+			coref:	IDENT			0	0-0	Its 
+	1	metropolitan
+			sense:	metropolitan.a.01
+	2	area
+			sense:	area.n.01
+	3	houses
+			sense:	house.n.01
+	4	around
+	5	1,200,000
+			name:	NUMBER				5-5	1,200,000 
+	6	people
+			sense:	person.n.01
+	7	,
+	8	coming
+			sense:	fall.v.04
+			prop:	come.07
+			V		8-8	coming 
+			N-ARG-A2		9-10	in second 
+			N-ARGM-LOC		11-12	behind Brussels 
+	9	in
+	10	second
+			name:	ORDINAL				10-10	second 
+			sense:	second.s.01
+	11	behind
+	12	Brussels
+			coref:	IDENT			1	12-12	Brussels 
+			name:	CITY				12-12	Brussels 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Antwerp is on the River Scheldt , linked to the North Sea by the Westerschelde estuary .
+
+
+Treebanked sentence:
+--------------------
+Antwerp is on the River Scheldt , linked to the North Sea by the Westerschelde estuary . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Antwerp))
+    (VP (VBZ is)
+      (PP (IN on)
+        (NP
+          (NP (DT the) (NNP River) (NNP Scheldt))
+          (, ,)
+          (VP (VBN linked)
+            (PP (IN to)
+              (NP (DT the) (NNP North) (NNP Sea)))
+            (PP (IN by)
+              (NP (DT the) (NNP Westerschelde) (NN estuary)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Antwerp
+			coref:	IDENT			4	0-0	Antwerp 
+			name:	CITY				0-0	Antwerp 
+	1	is
+			sense:	be.v.03
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Antwerp 
+			N-ARG-A2		2-5	on the River Scheldt 
+			N-ARGM-PRD		7-15	linked to the North Sea by the Westerschelde estuary 
+	2	on
+	3	the
+	4	River
+			name:	TITLE				4-4	River 
+	5	Scheldt
+			name:	LOCATION				5-5	Scheldt 
+	6	,
+	7	linked
+			sense:	connect.v.03
+			prop:	link.01
+			V		7-7	linked 
+			N-ARG-A1		3-5	the River Scheldt 
+			N-ARG-A1		8-11	to the North Sea 
+			N-ARG-A0		12-15	by the Westerschelde estuary 
+	8	to
+	9	the
+	10	North
+			name:	LOCATION				10-11	North Sea 
+	11	Sea
+	12	by
+	13	the
+	14	Westerschelde
+			name:	MISC				14-14	Westerschelde 
+	15	estuary
+			sense:	estuary.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is about north of Brussels , and about from the Dutch border .
+
+
+Treebanked sentence:
+--------------------
+It is about north of Brussels , and about from the Dutch border . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (PP
+        (PP (IN about)
+          (NP
+            (NP (NN north))
+            (PP (IN of)
+              (NP (NNP Brussels)))))
+        (, ,)
+        (CC and)
+        (RB about)
+        (PP (IN from)
+          (NP (DT the) (JJ Dutch) (NN border)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			4	0-0	It 
+	1	is
+			sense:	be.v.03
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-12	about north of Brussels , and about from the Dutch border 
+	2	about
+	3	north
+			sense:	north.n.03
+	4	of
+	5	Brussels
+			coref:	IDENT			1	5-5	Brussels 
+			name:	CITY				5-5	Brussels 
+	6	,
+	7	and
+	8	about
+			sense:	approximately.r.01
+	9	from
+	10	the
+	11	Dutch
+			name:	NATIONALITY				11-11	Dutch 
+			sense:	dutch.a.01
+	12	border
+			sense:	boundary_line.n.01
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Port of Antwerp is one of the biggest in the world , ranking second in Europe and within the top 20 globally .
+
+
+Treebanked sentence:
+--------------------
+The Port of Antwerp is one of the biggest in the world , ranking second in Europe and within the top 20 globally . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Port))
+      (PP (IN of)
+        (NP (NNP Antwerp))))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (JJS biggest))
+              (PP (IN in)
+                (NP (DT the) (NN world))))))
+        (, ,)
+        (VP (VBG ranking)
+          (ADVP (RB second))
+          (PP
+            (PP (IN in)
+              (NP (NNP Europe)))
+            (CC and)
+            (PP (IN within)
+              (NP (DT the) (JJ top) (CD 20))))
+          (ADVP (RB globally)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Port
+	2	of
+	3	Antwerp
+			coref:	IDENT			4	3-3	Antwerp 
+			name:	CITY				3-3	Antwerp 
+	4	is
+			sense:	be.v.01
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	The Port of Antwerp 
+			N-ARG-A2		5-11	one of the biggest in the world 
+			N-ARGM-PRD		13-22	ranking second in Europe and within the top 20 globally 
+	5	one
+			name:	NUMBER				5-5	one 
+	6	of
+	7	the
+	8	biggest
+			sense:	large.a.01
+	9	in
+	10	the
+			coref:	IDENT			2	10-11	the world 
+	11	world
+			sense:	earth.n.01
+	12	,
+	13	ranking
+			sense:	rank.v.01
+			prop:	rank.01
+			V		13-13	ranking 
+			N-ARG-A1		0-3	The Port of Antwerp 
+			N-ARG-A2		14-14	second 
+			N-ARGM-LOC		15-16	in Europe 
+	14	second
+			name:	ORDINAL				14-14	second 
+			sense:	second.r.01
+	15	in
+	16	Europe
+			name:	LOCATION				16-16	Europe 
+	17	and
+	18	within
+	19	the
+	20	top
+			sense:	top.a.01
+	21	20
+			name:	NUMBER				21-21	20 
+	22	globally
+			sense:	globally.r.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Antwerp was also the place of the world 's oldest stock exchange building , originally built in 1531 and re - built in 1872 .
+
+
+Treebanked sentence:
+--------------------
+Antwerp was also the place of the world 's oldest stock exchange building , originally built in 1531 and re - built in 1872 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Antwerp))
+    (VP (VBD was)
+      (ADVP (RB also))
+      (NP
+        (NP
+          (NP (DT the) (NN place))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN world) (POS 's))
+              (JJS oldest)
+              (NML (NN stock) (NN exchange))
+              (NN building))))
+        (, ,)
+        (UCP
+          (VP
+            (ADVP (RB originally))
+            (VBN built)
+            (PP (IN in)
+              (NP (CD 1531))))
+          (CC and)
+          (SBAR (IN re) (HYPH -)
+            (FRAG
+              (VP (VBN built)
+                (PP (IN in)
+                  (NP (CD 1872)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Antwerp
+			coref:	IDENT			4	0-0	Antwerp 
+			name:	CITY				0-0	Antwerp 
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	Antwerp 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A2		3-23	the place of the world 's oldest stock exchange building , originally built in 1531 and re - built in 1872 
+	2	also
+			sense:	besides.r.02
+	3	the
+	4	place
+			sense:	topographic_point.n.01
+	5	of
+	6	the
+			coref:	IDENT			2	6-8	the world 's 
+	7	world
+			sense:	earth.n.01
+	8	's
+	9	oldest
+			sense:	old.a.02
+	10	stock
+			sense:	stock.n.01
+	11	exchange
+			sense:	exchange.n.06
+	12	building
+			sense:	building.n.01
+	13	,
+	14	originally
+			sense:	primitively.r.01
+	15	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		15-15	built 
+			N-ARG-A1		6-12	the world 's oldest stock exchange building 
+			N-ARGM-TMP		14-14	originally 
+			N-ARGM-TMP		16-17	in 1531 
+	16	in
+	17	1531
+			name:	DATE				17-17	1531 
+	18	and
+	19	re
+	20	-
+	21	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		21-21	built 
+			N-ARG-A1		6-12	the world 's oldest stock exchange building 
+			N-ARGM-ADV		19-19	re 
+			N-ARGM-TMP		22-23	in 1872 
+	22	in
+	23	1872
+			name:	DATE				23-23	1872 
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Antwerp has long been an important city in the Low Countries , both economically and culturally , especially before the Spanish Fury ( 1576 ) and in the Dutch Revolt .
+
+
+Treebanked sentence:
+--------------------
+Antwerp has long been an important city in the Low Countries , both economically and culturally , especially before the Spanish Fury ( 1576 ) and in the Dutch Revolt . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Antwerp))
+    (VP (VBZ has)
+      (ADVP (RB long))
+      (VP (VBN been)
+        (NP
+          (NP (DT an) (JJ important) (NN city))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (JJ Low) (NNS Countries))
+              (ADVP (, ,)
+                (CC both)
+                (ADVP (RB economically))
+                (CC and)
+                (ADVP (RB culturally))
+                (, ,)))))
+        (PP
+          (ADVP (RB especially))
+          (PP (IN before)
+            (NP (DT the) (JJ Spanish) (NN Fury)))
+          (PRN (-LRB- -LRB-)
+            (NP (CD 1576))
+            (-RRB- -RRB-))
+          (CC and)
+          (PP (IN in)
+            (NP (DT the) (JJ Dutch) (NN Revolt))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Antwerp
+			coref:	IDENT			4	0-0	Antwerp 
+			name:	CITY				0-0	Antwerp 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	long
+			sense:	long.r.01
+	3	been
+			sense:	be.v.01
+			prop:	be.01
+			V		3-3	been 
+			N-ARG-A1		0-0	Antwerp 
+			N-ARGM-TMP		2-2	long 
+			N-ARG-A2		4-10	an important city in the Low Countries 
+			N-ARGM-MNR		12-15	both economically and culturally 
+			N-ARGM-TMP		17-29	especially before the Spanish Fury ( 1576 ) and in the Dutch Revolt 
+	4	an
+	5	important
+			sense:	important.a.01
+	6	city
+			sense:	city.n.01
+	7	in
+	8	the
+	9	Low
+			name:	LOCATION				9-10	Low Countries 
+			sense:	low.a.02
+	10	Countries
+			sense:	country.n.02
+	11	,
+	12	both
+	13	economically
+			sense:	economically.r.03
+	14	and
+	15	culturally
+			sense:	culturally.r.01
+	16	,
+	17	especially
+			sense:	particularly.r.01
+	18	before
+	19	the
+	20	Spanish
+			name:	NATIONALITY				20-20	Spanish 
+	21	Fury
+			sense:	ferocity.n.01
+	22	(
+	23	1576
+			name:	DATE				23-23	1576 
+	24	)
+	25	and
+	26	in
+	27	the
+	28	Dutch
+			name:	NATIONALITY				28-28	Dutch 
+			sense:	dutch.a.01
+	29	Revolt
+			sense:	rebellion.n.02
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The inhabitants of Antwerp are nicknamed Sinjoren ( ) , after the Spanish honorific señor or French seigneur , " lord " , referring to the Spanish noblemen who ruled the city in the 17th century .
+
+
+Treebanked sentence:
+--------------------
+The inhabitants of Antwerp are nicknamed Sinjoren ( ) , after the Spanish honorific señor or French seigneur , " lord " , referring to the Spanish noblemen who ruled the city in the 17th century . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS inhabitants))
+      (PP (IN of)
+        (NP (NNP Antwerp))))
+    (VP (VBP are)
+      (SBAR
+        (S
+          (VP (VBN nicknamed)
+            (NP (NNP Sinjoren)))))
+      (-LRB- -LRB-) (-RRB- -RRB-) (, ,)
+      (PP (IN after)
+        (NP
+          (NP (DT the) (JJ Spanish) (JJ honorific) (NN señor))
+          (CC or)
+          (NP
+            (NP
+              (NP (JJ French) (NN seigneur))
+              (, ,)
+              (NP ('' ") (NN lord) ('' ")))
+            (, ,)
+            (VP (VBG referring)
+              (PP (IN to)
+                (NP
+                  (NP (DT the) (JJ Spanish) (NNS noblemen))
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBD ruled)
+                        (NP (DT the) (NN city))
+                        (PP (IN in)
+                          (NP (DT the) (JJ 17th) (NN century)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	inhabitants
+			sense:	inhabitant.n.01
+	2	of
+	3	Antwerp
+			coref:	IDENT			4	3-3	Antwerp 
+			name:	CITY				3-3	Antwerp 
+	4	are
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	are 
+	5	nicknamed
+			sense:	dub.v.01
+			prop:	nickname.01
+			V		5-5	nicknamed 
+			N-ARG-A1		0-3	The inhabitants of Antwerp 
+			N-ARG-A2		6-21	Sinjoren ( ) , after the Spanish honorific señor or French seigneur , " lord " 
+			N-ARGM-ADV		23-35	referring to the Spanish noblemen who ruled the city in the 17th century 
+	6	Sinjoren
+	7	(
+	8	)
+	9	,
+	10	after
+	11	the
+	12	Spanish
+			name:	NATIONALITY				12-12	Spanish 
+	13	honorific
+			sense:	honorific.s.01
+	14	señor
+	15	or
+	16	French
+			name:	NATIONALITY				16-16	French 
+	17	seigneur
+			sense:	feudal_lord.n.01
+	18	,
+	19	"
+	20	lord
+			sense:	overlord.n.01
+	21	"
+	22	,
+	23	referring
+			sense:	mention.v.01
+			prop:	refer.01
+			V		23-23	referring 
+			N-ARG-A1		24-35	to the Spanish noblemen who ruled the city in the 17th century 
+	24	to
+	25	the
+	26	Spanish
+			name:	NATIONALITY				26-26	Spanish 
+	27	noblemen
+			sense:	lord.n.03
+	28	who
+	29	ruled
+			sense:	govern.v.03
+			prop:	rule.03
+			V		29-29	ruled 
+			N-ARG-A0		25-27	the Spanish noblemen 
+			R-ARG-A0		28-28	who 
+			N-ARG-A1		30-31	the city 
+			N-ARGM-TMP		32-35	in the 17th century 
+	30	the
+	31	city
+			sense:	city.n.01
+	32	in
+	33	the
+			name:	DATE				33-35	the 17th century 
+	34	17th
+			sense:	seventeenth.s.01
+	35	century
+			sense:	century.n.01
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Today Antwerp is a major trade and cultural centre .
+
+
+Treebanked sentence:
+--------------------
+Today Antwerp is a major trade and cultural centre . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP-TMP (NN Today))
+    (NP (NNP Antwerp))
+    (VP (VBZ is)
+      (NP (DT a) (JJ major)
+        (UCP (NN trade)
+          (CC and)
+          (JJ cultural))
+        (NN centre)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Today
+			name:	DATE				0-0	Today 
+			sense:	today.n.01
+	1	Antwerp
+			coref:	IDENT			4	1-1	Antwerp 
+			name:	CITY				1-1	Antwerp 
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARGM-TMP		0-0	Today 
+			N-ARG-A1		1-1	Antwerp 
+			N-ARG-A2		3-8	a major trade and cultural centre 
+	3	a
+	4	major
+			sense:	major.a.01
+	5	trade
+			sense:	trade.n.01
+	6	and
+	7	cultural
+			sense:	cultural.a.01
+	8	centre
+			sense:	center.n.11
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The city hosted the 1920 Summer Olympics .
+
+
+Treebanked sentence:
+--------------------
+The city hosted the 1920 Summer Olympics . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN city))
+    (VP (VBD hosted)
+      (NP
+        (NP (DT the) (CD 1920))
+        (NP (NNP Summer) (NNPS Olympics))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	city
+			sense:	city.n.01
+	2	hosted
+			sense:	host.v.01
+			prop:	host.01
+			V		2-2	hosted 
+			N-ARG-A0		0-1	The city 
+			N-ARG-A1		3-6	the 1920 Summer Olympics 
+	3	the
+			name:	DATE				3-5	the 1920 Summer 
+	4	1920
+	5	Summer
+	6	Olympics
+			name:	MISC				6-6	Olympics 
+	7	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.6-6	it 
+				2.0-0	Its 
+	Chain 1 (IDENT)
+				2.12-12	Brussels 
+				4.5-5	Brussels 
+	Chain 2 (IDENT)
+				6.6-8	the world 's 
+				5.10-11	the world 
+	Chain 3 (IDENT)
+				0.9-9	Belgium 
+				1.14-14	Belgium 
+	Chain 4 (IDENT)
+				0.0-0	Antwerp 
+				0.16-16	Antwerp 
+				3.0-0	Antwerp 
+				4.0-0	It 
+				5.3-3	Antwerp 
+				6.0-0	Antwerp 
+				7.0-0	Antwerp 
+				8.3-3	Antwerp 
+				9.1-1	Antwerp 
+

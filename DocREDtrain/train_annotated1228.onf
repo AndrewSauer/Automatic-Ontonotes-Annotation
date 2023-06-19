@@ -1,0 +1,964 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Kick Ass : Music from the Motion Picture is the soundtrack to the film of the same name .
+
+
+Treebanked sentence:
+--------------------
+Kick Ass : Music from the Motion Picture is the soundtrack to the film of the same name . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP (NN Kick) (NN Ass))
+    (: :)
+    (S
+      (NP
+        (NP (NN Music))
+        (PP (IN from)
+          (NP (DT the) (NN Motion) (NN Picture))))
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (NN soundtrack))
+          (PP (IN to)
+            (NP
+              (NP (DT the) (NN film))
+              (PP (IN of)
+                (NP (DT the) (JJ same) (NN name))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Kick
+			sense:	kick.n.01
+	1	Ass
+			sense:	ass.n.02
+	2	:
+	3	Music
+			sense:	music.n.01
+	4	from
+	5	the
+	6	Motion
+			sense:	apparent_motion.n.01
+	7	Picture
+			sense:	movie.n.01
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARGM-ADV		0-1	Kick Ass 
+			N-ARG-A1		3-7	Music from the Motion Picture 
+			N-ARG-A2		9-17	the soundtrack to the film of the same name 
+	9	the
+	10	soundtrack
+			sense:	soundtrack.n.01
+	11	to
+	12	the
+	13	film
+			sense:	movie.n.01
+	14	of
+	15	the
+	16	same
+			sense:	same.a.01
+	17	name
+			sense:	name.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was released in the United Kingdom on 29 March 2010 , and in the United States on iTunes on 30 March 2010 .
+
+
+Treebanked sentence:
+--------------------
+It was released in the United Kingdom on 29 March 2010 , and in the United States on iTunes on 30 March 2010 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN released)
+        (PP
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NNP United) (NNP Kingdom))
+              (PP (IN on)
+                (NP (CD 29)))
+              (NP-TMP (NNP March) (CD 2010))))
+          (, ,)
+          (CC and)
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NNP United) (NNP States))
+              (PP (IN on)
+                (NP (NNP iTunes))))))
+        (PP (IN on)
+          (NP (CD 30)))
+        (NP-TMP (NNP March) (CD 2010))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		2-2	released 
+			N-ARG-A1		0-0	It 
+			N-ARGM-LOC		3-6	in the United Kingdom 
+			N-ARGM-TMP		7-10	on 29 March 2010 
+	3	in
+	4	the
+	5	United
+			name:	COUNTRY				5-6	United Kingdom 
+	6	Kingdom
+	7	on
+	8	29
+			name:	DATE				8-10	29 March 2010 
+	9	March
+	10	2010
+	11	,
+	12	and
+	13	in
+	14	the
+	15	United
+			name:	COUNTRY				15-16	United States 
+	16	States
+	17	on
+	18	iTunes
+	19	on
+	20	30
+			name:	DATE				20-22	30 March 2010 
+	21	March
+	22	2010
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The title song is sung by Mika , co - written by Jodi Marr and produced by RedOne .
+
+
+Treebanked sentence:
+--------------------
+The title song is sung by Mika , co - written by Jodi Marr and produced by RedOne . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN title) (NN song))
+    (VP (VBZ is)
+      (VP (VBN sung)
+        (PP (IN by)
+          (NP
+            (NP (NNP Mika))
+            (, ,)
+            (NP
+              (NP (NN co))
+              (HYPH -)
+              (VP
+                (VP (VBN written)
+                  (PP (IN by)
+                    (NP (NNP Jodi) (NNP Marr))))
+                (CC and)
+                (VP (VBN produced)
+                  (PP (IN by)
+                    (NP (NN RedOne))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	title
+			sense:	title.n.02
+	2	song
+			sense:	song.n.01
+	3	is
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	is 
+	4	sung
+			sense:	sing.v.01
+			prop:	sing.01
+			V		4-4	sung 
+			N-ARG-A1		0-2	The title song 
+			N-ARG-A0		5-6	by Mika 
+	5	by
+	6	Mika
+			coref:	IDENT			2	6-17	Mika , co - written by Jodi Marr and produced by RedOne 
+			name:	PERSON				6-6	Mika 
+	7	,
+	8	co
+			sense:	colorado.n.01
+	9	-
+	10	written
+			sense:	compose.v.02
+			prop:	write.01
+			V		10-10	written 
+			N-ARG-A1		0-2	The title song 
+			N-ARGM-ADV		8-8	co 
+			N-ARG-A0		11-13	by Jodi Marr 
+	11	by
+	12	Jodi
+			name:	PERSON				12-13	Jodi Marr 
+	13	Marr
+	14	and
+	15	produced
+			sense:	produce.v.06
+			prop:	produce.01
+			V		15-15	produced 
+			N-ARG-A1		0-2	The title song 
+			N-ARG-A0		16-17	by RedOne 
+	16	by
+	17	RedOne
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The video for the single shows Mika as a helpless individual left in an alleyway after being mugged .
+
+
+Treebanked sentence:
+--------------------
+The video for the single shows Mika as a helpless individual left in an alleyway after being mugged . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN video))
+      (PP (IN for)
+        (NP
+          (NP (DT the)
+            (NML (JJ single) (NNS shows))
+            (NNP Mika))
+          (PP (IN as)
+            (NP (DT a) (JJ helpless) (JJ individual))))))
+    (VP (VBN left)
+      (PP (IN in)
+        (NP (DT an) (NN alleyway)))
+      (PP (IN after)
+        (S
+          (VP (VBG being)
+            (VP (VBN mugged))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-10	The video for the single shows Mika as a helpless individual 
+	1	video
+			sense:	video_recording.n.01
+	2	for
+	3	the
+			coref:	IDENT			2	3-10	the single shows Mika as a helpless individual 
+	4	single
+			sense:	individual.a.01
+	5	shows
+			sense:	display.n.01
+	6	Mika
+			name:	PERSON				6-6	Mika 
+	7	as
+	8	a
+	9	helpless
+			sense:	helpless.s.01
+	10	individual
+			sense:	individual.a.01
+	11	left
+			sense:	leave.v.02
+			prop:	leave.01
+			V		11-11	left 
+			N-ARG-A1		8-10	a helpless individual 
+			N-ARGM-LOC		12-14	in an alleyway 
+			N-ARGM-TMP		15-17	after being mugged 
+	12	in
+	13	an
+	14	alleyway
+			sense:	alley.n.01
+	15	after
+	16	being
+			sense:	be.v.01
+			prop:	be.03
+			V		16-16	being 
+	17	mugged
+			sense:	mug.v.01
+			prop:	bug.02
+			V		17-17	mugged 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He begins to sing and as he does , the words of empowerment in the lyrics and his finding of an issue of the Kick - Ass comic inspire him to run for the rooftops and wail the chorus to the sky .
+
+
+Treebanked sentence:
+--------------------
+He begins to sing and as he does , the words of empowerment in the lyrics and his finding of an issue of the Kick - Ass comic inspire him to run for the rooftops and wail the chorus to the sky . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBZ begins)
+        (S
+          (VP (TO to)
+            (VP (VB sing))))))
+    (CC and)
+    (S
+      (SBAR (IN as)
+        (S
+          (NP (PRP he))
+          (VP (VBZ does))))
+      (, ,)
+      (NP
+        (NP (DT the) (NNS words))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (NN empowerment))
+              (PP (IN in)
+                (NP (DT the) (NNS lyrics))))
+            (CC and)
+            (NP
+              (NP (PRP$ his) (NN finding))
+              (PP (IN of)
+                (NP
+                  (NP (DT an) (NN issue))
+                  (PP (IN of)
+                    (NP (DT the)
+                      (ADJP
+                        (NP (NN Kick) (HYPH -) (NN Ass))
+                        (JJ comic))))))))))
+      (VP (VB inspire)
+        (S
+          (NP (PRP him))
+          (VP (TO to)
+            (VP
+              (VP (VB run)
+                (PP (IN for)
+                  (NP (DT the) (NNS rooftops))))
+              (CC and)
+              (VP (VB wail)
+                (NP (DT the) (NN chorus))
+                (PP (IN to)
+                  (NP (DT the) (NN sky)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	begins
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		1-1	begins 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-3	to sing 
+	2	to
+	3	sing
+			sense:	sing.v.02
+			prop:	sing.01
+			V		3-3	sing 
+			N-ARG-A0		0-0	He 
+	4	and
+	5	as
+	6	he
+			coref:	IDENT			2	6-6	he 
+	7	does
+			sense:	make.v.01
+			prop:	do.01
+			V		7-7	does 
+	8	,
+	9	the
+	10	words
+			sense:	word.n.01
+	11	of
+	12	empowerment
+			sense:	authorization.n.04
+	13	in
+	14	the
+	15	lyrics
+			sense:	lyric.n.01
+	16	and
+	17	his
+			coref:	IDENT			2	17-17	his 
+	18	finding
+			sense:	finding.n.03
+	19	of
+	20	an
+	21	issue
+			sense:	issue.n.02
+	22	of
+	23	the
+	24	Kick
+			sense:	kick.n.01
+	25	-
+	26	Ass
+			sense:	ass.n.02
+	27	comic
+			sense:	comic.a.02
+	28	inspire
+			sense:	prompt.v.02
+			prop:	inspire.01
+			V		28-28	inspire 
+			N-ARGM-TMP		5-7	as he does 
+			N-ARG-A0		9-27	the words of empowerment in the lyrics and his finding of an issue of the Kick - Ass comic 
+			N-ARG-A1		29-29	him 
+			N-ARG-A2		30-41	to run for the rooftops and wail the chorus to the sky 
+	29	him
+			coref:	IDENT			2	29-29	him 
+	30	to
+	31	run
+			sense:	run.v.01
+			prop:	run.02
+			V		31-31	run 
+			N-ARG-A0		29-29	him 
+			N-ARGM-DIR		32-34	for the rooftops 
+	32	for
+	33	the
+	34	rooftops
+			sense:	rooftop.n.01
+	35	and
+	36	wail
+			sense:	howl.v.01
+			prop:	wail.01
+			V		36-36	wail 
+			N-ARG-A0		29-29	him 
+			N-ARG-A1		37-38	the chorus 
+			N-ARGM-DIR		39-41	to the sky 
+	37	the
+	38	chorus
+			sense:	refrain.n.01
+	39	to
+	40	the
+	41	sky
+			sense:	sky.n.01
+	42	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The video also features intercut scenes from the film .
+
+
+Treebanked sentence:
+--------------------
+The video also features intercut scenes from the film . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN video))
+    (ADVP (RB also))
+    (VP (VBZ features)
+      (NP (VBN intercut) (NNS scenes))
+      (PP (IN from)
+        (NP (DT the) (NN film))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The video 
+	1	video
+			sense:	video_recording.n.01
+	2	also
+			sense:	besides.r.02
+	3	features
+			sense:	have.v.02
+			prop:	feature.01
+			V		3-3	features 
+			N-ARG-A0		0-1	The video 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A1		4-8	intercut scenes from the film 
+	4	intercut
+			prop:	interact.01
+			V		4-4	intercut 
+	5	scenes
+			sense:	scene.n.04
+	6	from
+	7	the
+			coref:	IDENT			1	7-8	the film 
+	8	film
+			sense:	movie.n.01
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The song " Stand Up " by The Prodigy is featured in both the teaser trailer and the red band trailer .
+
+
+Treebanked sentence:
+--------------------
+The song " Stand Up " by The Prodigy is featured in both the teaser trailer and the red band trailer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN song) (`` ")
+        (NML
+          (S
+            (VP (VB Stand)
+              (PRT (RP Up)))))
+        ('' "))
+      (PP (IN by)
+        (NP (DT The) (NNP Prodigy))))
+    (VP (VBZ is)
+      (VP (VBN featured)
+        (PP (IN in)
+          (NP (CC both)
+            (NP (DT the) (NN teaser) (NN trailer))
+            (CC and)
+            (NP (DT the) (JJ red) (NN band) (NN trailer))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	song
+			sense:	song.n.01
+	2	"
+	3	Stand
+			sense:	stand.v.01
+			prop:	stand.07
+			V		3-3	Stand 
+	4	Up
+	5	"
+	6	by
+	7	The
+	8	Prodigy
+	9	is
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	is 
+	10	featured
+			sense:	have.v.02
+			prop:	feature.01
+			V		10-10	featured 
+			N-ARG-A1		0-8	The song " Stand Up " by The Prodigy 
+			N-ARG-A2		11-20	in both the teaser trailer and the red band trailer 
+	11	in
+	12	both
+	13	the
+	14	teaser
+			sense:	teaser.n.05
+	15	trailer
+			sense:	preview.n.01
+	16	and
+	17	the
+	18	red
+			sense:	red.s.01
+	19	band
+			sense:	band.n.02
+	20	trailer
+			sense:	preview.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A song featured in the film , but not on the soundtrack is " Crazy " , by Gnarls Barkley .
+
+
+Treebanked sentence:
+--------------------
+A song featured in the film , but not on the soundtrack is " Crazy " , by Gnarls Barkley . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN song))
+      (VP (VBN featured)
+        (PP
+          (PP (IN in)
+            (NP (DT the) (NN film)))
+          (, ,)
+          (CONJP (CC but)
+            (RB not))
+          (PP (IN on)
+            (NP (DT the) (NN soundtrack))))))
+    (VP (VBZ is)
+      (NP (`` ") (NNP Crazy) ('' "))
+      (, ,)
+      (PP (IN by)
+        (NP (NNP Gnarls) (NNP Barkley))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	song
+			sense:	song.n.01
+	2	featured
+			sense:	have.v.02
+			prop:	feature.01
+			V		2-2	featured 
+			N-ARG-A1		0-1	A song 
+			N-ARG-A2		3-5	in the film 
+	3	in
+	4	the
+	5	film
+			sense:	movie.n.01
+	6	,
+	7	but
+	8	not
+			sense:	not.r.01
+	9	on
+	10	the
+	11	soundtrack
+			sense:	soundtrack.n.01
+	12	is
+			sense:	be.v.02
+			prop:	be.01
+			V		12-12	is 
+			N-ARG-A1		0-11	A song featured in the film , but not on the soundtrack 
+			N-ARG-A2		13-19	" Crazy " , by Gnarls Barkley 
+	13	"
+	14	Crazy
+	15	"
+	16	,
+	17	by
+	18	Gnarls
+			name:	PERSON				18-19	Gnarls Barkley 
+	19	Barkley
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This song is played in the Mistmobile while Kick - Ass and Red Mist cruise around town together .
+
+
+Treebanked sentence:
+--------------------
+This song is played in the Mistmobile while Kick - Ass and Red Mist cruise around town together . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT This) (NN song))
+    (VP (VBZ is)
+      (VP (VBN played)
+        (PP (IN in)
+          (NP (DT the) (NNP Mistmobile)))
+        (SBAR (IN while)
+          (S
+            (NP
+              (NP
+                (NML
+                  (NML (NNP Kick) (HYPH -) (NNP Ass))
+                  (CC and)
+                  (NML (NNP Red) (NNP Mist)))
+                (NN cruise))
+              (PP (IN around)
+                (NP (NN town))))
+            (ADVP (RB together))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+	1	song
+			sense:	song.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	played
+			sense:	play.v.06
+			prop:	play.01
+			V		3-3	played 
+			N-ARG-A1		0-1	This song 
+			N-ARGM-LOC		4-6	in the Mistmobile 
+			N-ARGM-TMP		7-17	while Kick - Ass and Red Mist cruise around town together 
+	4	in
+	5	the
+	6	Mistmobile
+			name:	LOCATION				6-6	Mistmobile 
+	7	while
+	8	Kick
+	9	-
+	10	Ass
+	11	and
+	12	Red
+			name:	MISC				12-13	Red Mist 
+	13	Mist
+	14	cruise
+			sense:	cruise.n.01
+	15	around
+	16	town
+			sense:	town.n.01
+	17	together
+			sense:	together.r.03
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Also , the version of " Bad Reputation " used in the film was by Joan Jett but the version on the soundtrack is by a band called " The Hit Girls " .
+
+
+Treebanked sentence:
+--------------------
+Also , the version of " Bad Reputation " used in the film was by Joan Jett but the version on the soundtrack is by a band called " The Hit Girls " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (ADVP (RB Also))
+      (, ,)
+      (NP
+        (NP (DT the) (NN version))
+        (PP (IN of)
+          (NP
+            (NP (`` ") (JJ Bad) (NN Reputation) ('' "))
+            (VP (VBN used)
+              (PP (IN in)
+                (NP (DT the) (NN film)))))))
+      (VP (VBD was)
+        (PP (IN by)
+          (NP (NNP Joan) (NNP Jett)))))
+    (CC but)
+    (S
+      (NP
+        (NP (DT the) (NN version))
+        (PP (IN on)
+          (NP (DT the) (NN soundtrack))))
+      (VP (VBZ is)
+        (PP (IN by)
+          (NP
+            (NP (DT a) (NN band))
+            (VP (VBN called) (`` ")
+              (NP (DT The) (NN Hit) (NNS Girls))
+              ('' "))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Also
+			sense:	besides.r.02
+	1	,
+	2	the
+	3	version
+			sense:	version.n.02
+	4	of
+	5	"
+	6	Bad
+			name:	MISC				6-7	Bad Reputation 
+			sense:	bad.a.01
+	7	Reputation
+			sense:	reputation.n.03
+	8	"
+	9	used
+			sense:	use.v.01
+			prop:	use.01
+			V		9-9	used 
+			N-ARG-A1		2-8	the version of " Bad Reputation " 
+			N-ARGM-LOC		10-12	in the film 
+	10	in
+	11	the
+			coref:	IDENT			1	11-12	the film 
+	12	film
+			sense:	movie.n.01
+	13	was
+			sense:	be.v.01
+			prop:	be.01
+			V		13-13	was 
+			N-ARG-A1		2-12	the version of " Bad Reputation " used in the film 
+			N-ARG-A2		14-16	by Joan Jett 
+	14	by
+	15	Joan
+			name:	PERSON				15-16	Joan Jett 
+	16	Jett
+	17	but
+	18	the
+	19	version
+			sense:	version.n.02
+	20	on
+	21	the
+	22	soundtrack
+			sense:	soundtrack.n.01
+	23	is
+			sense:	be.v.01
+			prop:	be.01
+			V		23-23	is 
+			N-ARG-A1		18-22	the version on the soundtrack 
+			N-ARG-A2		24-32	by a band called " The Hit Girls " 
+	24	by
+	25	a
+	26	band
+			sense:	dance_band.n.01
+	27	called
+			sense:	name.v.01
+			prop:	call.01
+			V		27-27	called 
+			N-ARG-A1		25-26	a band 
+			N-ARG-A2		28-32	" The Hit Girls " 
+	28	"
+	29	The
+	30	Hit
+			sense:	hit.n.03
+	31	Girls
+			sense:	girl.n.01
+	32	"
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The song " Hey Little World " by The Hives , which played in the theatrical trailers was also not included .
+
+
+Treebanked sentence:
+--------------------
+The song " Hey Little World " by The Hives , which played in the theatrical trailers was also not included . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN song)
+        (NML (`` ")
+          (FRAG
+            (INTJ (UH Hey))
+            (NP (NNP Little) (NNP World)))
+          ('' ")))
+      (PP (IN by)
+        (NP
+          (NP (DT The) (NNS Hives))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBD played)
+                (PP (IN in)
+                  (NP (DT the) (JJ theatrical) (NNS trailers)))))))))
+    (VP (VBD was)
+      (ADVP (RB also))
+      (RB not)
+      (VP (VBN included)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	song
+			sense:	song.n.01
+	2	"
+	3	Hey
+	4	Little
+	5	World
+	6	"
+	7	by
+	8	The
+			name:	MISC				8-9	The Hives 
+	9	Hives
+			sense:	hive.n.01
+	10	,
+	11	which
+	12	played
+			sense:	play.v.13
+			prop:	play.01
+			V		12-12	played 
+			N-ARG-A1		0-9	The song " Hey Little World " by The Hives 
+			R-ARG-A1		11-11	which 
+			N-ARGM-LOC		13-16	in the theatrical trailers 
+	13	in
+	14	the
+	15	theatrical
+			sense:	theatrical.a.01
+	16	trailers
+			sense:	preview.n.01
+	17	was
+			sense:	be.v.01
+			prop:	be.03
+			V		17-17	was 
+	18	also
+			sense:	besides.r.02
+	19	not
+			sense:	not.r.01
+	20	included
+			sense:	include.v.01
+			prop:	include.01
+			V		20-20	included 
+			N-ARG-A1		0-16	The song " Hey Little World " by The Hives , which played in the theatrical trailers 
+			N-ARGM-DIS		18-18	also 
+			N-ARGM-NEG		19-19	not 
+	21	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.0-10	The video for the single shows Mika as a helpless individual 
+				5.0-1	The video 
+	Chain 1 (IDENT)
+				5.7-8	the film 
+				9.11-12	the film 
+	Chain 2 (IDENT)
+				3.3-10	the single shows Mika as a helpless individual 
+				2.6-17	Mika , co - written by Jodi Marr and produced by RedOne 
+				4.0-0	He 
+				4.6-6	he 
+				4.17-17	his 
+				4.29-29	him 
+

@@ -1,0 +1,822 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Robert " Rocky " Balboa is the title character of the Rocky film series .
+
+
+Treebanked sentence:
+--------------------
+Robert " Rocky " Balboa is the title character of the Rocky film series . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NML (NNP Robert) (`` ") (NNP Rocky) ('' "))
+      (NNP Balboa))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN title) (NN character))
+        (PP (IN of)
+          (NP (DT the) (NNP Rocky) (NN film) (NN series)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Robert
+			name:	PERSON				0-0	Robert 
+	1	"
+	2	Rocky
+			name:	MISC				2-2	Rocky 
+	3	"
+	4	Balboa
+			name:	PERSON				4-4	Balboa 
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	Robert " Rocky " Balboa 
+			N-ARG-A2		6-13	the title character of the Rocky film series 
+	6	the
+			coref:	IDENT			2	6-13	the title character of the Rocky film series 
+	7	title
+			sense:	title.n.02
+	8	character
+			sense:	fictional_character.n.01
+	9	of
+	10	the
+	11	Rocky
+			coref:	IDENT			1	11-11	Rocky 
+			name:	MISC				11-11	Rocky 
+	12	film
+			sense:	movie.n.01
+	13	series
+			sense:	serial.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The character was created by Sylvester Stallone , who also portrayed him in all seven Rocky films .
+
+
+Treebanked sentence:
+--------------------
+The character was created by Sylvester Stallone , who also portrayed him in all seven Rocky films . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN character))
+    (VP (VBD was)
+      (VP (VBN created)
+        (PP (IN by)
+          (NP
+            (NP
+              (NML (NNP Sylvester) (NNP Stallone)))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (ADVP (RB also))
+                (VP (VBD portrayed)
+                  (NP (PRP him))
+                  (PP (IN in)
+                    (NP (DT all) (CD seven) (NNP Rocky) (NNS films))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-1	The character 
+	1	character
+			sense:	fictional_character.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	created
+			sense:	create.v.02
+			prop:	create.01
+			V		3-3	created 
+			N-ARG-A1		0-1	The character 
+			N-ARG-A0		4-16	by Sylvester Stallone , who also portrayed him in all seven Rocky films 
+	4	by
+	5	Sylvester
+			name:	PERSON				5-6	Sylvester Stallone 
+	6	Stallone
+	7	,
+	8	who
+	9	also
+			sense:	besides.r.02
+	10	portrayed
+			sense:	impersonate.v.01
+			prop:	portray.01
+			V		10-10	portrayed 
+			N-ARG-A0		5-6	Sylvester Stallone 
+			R-ARG-A0		8-8	who 
+			N-ARGM-DIS		9-9	also 
+			N-ARG-A1		11-11	him 
+			N-ARGM-LOC		12-16	in all seven Rocky films 
+	11	him
+			coref:	IDENT			2	11-11	him 
+	12	in
+	13	all
+	14	seven
+			name:	NUMBER				14-14	seven 
+	15	Rocky
+			coref:	IDENT			1	15-15	Rocky 
+			name:	MISC				15-15	Rocky 
+	16	films
+			sense:	movie.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is depicted as an everyman who started out by going the distance and overcoming obstacles that had occurred in his life and career as a professional boxer .
+
+
+Treebanked sentence:
+--------------------
+He is depicted as an everyman who started out by going the distance and overcoming obstacles that had occurred in his life and career as a professional boxer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (VP (VBN depicted)
+        (PP (IN as)
+          (NP
+            (NP (DT an) (NN everyman))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD started)
+                  (PRT (RP out))
+                  (PP (IN by)
+                    (S
+                      (VP
+                        (VP (VBG going)
+                          (NP (DT the) (NN distance)))
+                        (CC and)
+                        (VP (VBG overcoming)
+                          (NP
+                            (NP (NNS obstacles))
+                            (SBAR
+                              (WHNP (WDT that))
+                              (S
+                                (VP (VBD had)
+                                  (VP (VBN occurred)
+                                    (PP (IN in)
+                                      (NP (PRP$ his) (NN life)
+                                        (CC and)
+                                        (NN career)))
+                                    (PP (IN as)
+                                      (NP (DT a) (JJ professional) (NN boxer)))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	depicted
+			sense:	describe.v.01
+			prop:	depict.01
+			V		2-2	depicted 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		3-27	as an everyman who started out by going the distance and overcoming obstacles that had occurred in his life and career as a professional boxer 
+	3	as
+	4	an
+	5	everyman
+			sense:	everyman.n.01
+	6	who
+	7	started
+			sense:	get_down.v.07
+			prop:	start.05
+			V		7-7	started 
+			N-ARG-A0		4-5	an everyman 
+			R-ARG-A0		6-6	who 
+			N-ARGM-MNR		9-27	by going the distance and overcoming obstacles that had occurred in his life and career as a professional boxer 
+	8	out
+	9	by
+	10	going
+			sense:	go.v.02
+			prop:	go.02
+			V		10-10	going 
+			N-ARG-A1		11-12	the distance 
+	11	the
+	12	distance
+			sense:	distance.n.01
+	13	and
+	14	overcoming
+			sense:	get_the_better_of.v.01
+			prop:	overcome.01
+			V		14-14	overcoming 
+			N-ARG-A1		15-27	obstacles that had occurred in his life and career as a professional boxer 
+	15	obstacles
+			sense:	obstacle.n.01
+	16	that
+	17	had
+			sense:	experience.v.03
+			prop:	have.01
+			V		17-17	had 
+	18	occurred
+			sense:	happen.v.01
+			prop:	occur.01
+			V		18-18	occurred 
+			N-ARG-A1		15-15	obstacles 
+			R-ARG-A1		16-16	that 
+			N-ARG-A2		19-27	in his life and career as a professional boxer 
+	19	in
+	20	his
+			coref:	IDENT			2	20-20	his 
+	21	life
+			sense:	life.n.03
+	22	and
+	23	career
+			sense:	career.n.01
+	24	as
+	25	a
+	26	professional
+			sense:	professional.a.01
+	27	boxer
+			name:	TITLE				27-27	boxer 
+			sense:	boxer.n.01
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+While he is loosely based on Chuck Wepner , a one - time boxer who fought Muhammad Ali and lost on a TKO in the 15th round , the inspiration for the name , iconography and fighting style came from boxing legend Rocky Marciano .
+
+
+Treebanked sentence:
+--------------------
+While he is loosely based on Chuck Wepner , a one - time boxer who fought Muhammad Ali and lost on a TKO in the 15th round , the inspiration for the name , iconography and fighting style came from boxing legend Rocky Marciano . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (PRP he))
+        (VP (VBZ is)
+          (ADJP (RB loosely) (VBN based)
+            (PP (IN on)
+              (NP
+                (NP (NNP Chuck) (NNP Wepner))
+                (, ,)
+                (NP
+                  (NP (DT a)
+                    (NML (CD one) (HYPH -) (NN time))
+                    (NN boxer))
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP
+                        (VP (VBD fought)
+                          (NP (NNP Muhammad) (NNP Ali)))
+                        (CC and)
+                        (VP (VBD lost)
+                          (PP (IN on)
+                            (NP
+                              (NP (DT a) (NN TKO))
+                              (PP (IN in)
+                                (NP (DT the) (JJ 15th) (NN round))))))))))))))))
+    (, ,)
+    (NP
+      (NP (DT the) (NN inspiration))
+      (PP (IN for)
+        (NP
+          (NP (DT the) (NN name))
+          (, ,)
+          (NP (NN iconography))
+          (CC and)
+          (NP (NN fighting) (NN style)))))
+    (VP (VBD came)
+      (PP (IN from)
+        (NP
+          (NP (NN boxing) (NN legend))
+          (NP (NNP Rocky) (NNP Marciano)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	While
+	1	he
+			coref:	IDENT			2	1-1	he 
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	loosely
+			sense:	broadly.r.01
+	4	based
+			sense:	establish.v.08
+			prop:	base.02
+			V		4-4	based 
+			N-ARG-A1		1-1	he 
+			N-ARGM-MNR		3-3	loosely 
+			N-ARG-A2		5-26	on Chuck Wepner , a one - time boxer who fought Muhammad Ali and lost on a TKO in the 15th round 
+	5	on
+	6	Chuck
+			name:	PERSON				6-7	Chuck Wepner 
+	7	Wepner
+	8	,
+	9	a
+	10	one
+			name:	NUMBER				10-10	one 
+	11	-
+	12	time
+			sense:	time.n.01
+	13	boxer
+			name:	TITLE				13-13	boxer 
+			sense:	boxer.n.01
+	14	who
+	15	fought
+			sense:	contend.v.06
+			prop:	fight.01
+			V		15-15	fought 
+			N-ARG-A0		9-13	a one - time boxer 
+			R-ARG-A0		14-14	who 
+			N-ARG-A1		16-17	Muhammad Ali 
+	16	Muhammad
+			name:	PERSON				16-17	Muhammad Ali 
+	17	Ali
+	18	and
+	19	lost
+			sense:	lose.v.02
+			prop:	lose.03
+			V		19-19	lost 
+			N-ARG-A0		9-13	a one - time boxer 
+			R-ARG-A0		14-14	who 
+			N-ARGM-MNR		20-26	on a TKO in the 15th round 
+	20	on
+	21	a
+	22	TKO
+			sense:	technical_knockout.n.01
+	23	in
+	24	the
+	25	15th
+			name:	ORDINAL				25-25	15th 
+			sense:	fifteenth.s.01
+	26	round
+			sense:	turn.n.09
+	27	,
+	28	the
+	29	inspiration
+			sense:	inspiration.n.03
+	30	for
+	31	the
+	32	name
+			sense:	name.n.01
+	33	,
+	34	iconography
+			sense:	iconography.n.01
+	35	and
+	36	fighting
+			sense:	fight.n.02
+	37	style
+			sense:	manner.n.01
+	38	came
+			sense:	come.v.05
+			prop:	come.03
+			V		38-38	came 
+			N-ARGM-ADV		0-26	While he is loosely based on Chuck Wepner , a one - time boxer who fought Muhammad Ali and lost on a TKO in the 15th round 
+			N-ARG-A1		28-37	the inspiration for the name , iconography and fighting style 
+			N-ARG-A2		39-43	from boxing legend Rocky Marciano 
+	39	from
+	40	boxing
+			sense:	boxing.n.01
+	41	legend
+			sense:	legend.n.01
+	42	Rocky
+			name:	PERSON				42-43	Rocky Marciano 
+	43	Marciano
+	44	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The character is widely considered to be Stallone 's most iconic role and is often considered the role that started his film career .
+
+
+Treebanked sentence:
+--------------------
+The character is widely considered to be Stallone 's most iconic role and is often considered the role that started his film career . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN character))
+    (VP
+      (VP (VBZ is)
+        (ADVP (RB widely))
+        (VP (VBN considered)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (NP
+                  (NP (NNP Stallone) (POS 's))
+                  (ADJP (RBS most) (JJ iconic))
+                  (NN role)))))))
+      (CC and)
+      (VP (VBZ is)
+        (ADVP (RB often))
+        (VP (VBN considered)
+          (NP
+            (NP (DT the) (NN role))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBD started)
+                  (NP (PRP$ his) (NN film) (NN career)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-1	The character 
+	1	character
+			sense:	fictional_character.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	widely
+			sense:	widely.r.01
+	4	considered
+			sense:	see.v.05
+			prop:	consider.01
+			V		4-4	considered 
+			N-ARGM-ADV		3-3	widely 
+			N-ARG-A1		5-11	to be Stallone 's most iconic role 
+	5	to
+	6	be
+			sense:	be.v.01
+			prop:	be.01
+			V		6-6	be 
+			N-ARG-A1		0-1	The character 
+			N-ARG-A2		7-11	Stallone 's most iconic role 
+	7	Stallone
+			name:	PERSON				7-7	Stallone 
+	8	's
+	9	most
+			sense:	most.r.01
+	10	iconic
+			sense:	iconic.a.01
+	11	role
+			sense:	character.n.04
+	12	and
+	13	is
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	is 
+	14	often
+			sense:	frequently.r.01
+	15	considered
+			sense:	see.v.05
+			prop:	consider.01
+			V		15-15	considered 
+			N-ARGM-TMP		14-14	often 
+			N-ARG-A1		16-22	the role that started his film career 
+	16	the
+			coref:	IDENT			0	16-22	the role that started his film career 
+	17	role
+			sense:	character.n.04
+	18	that
+	19	started
+			sense:	begin.v.03
+			prop:	start.01
+			V		19-19	started 
+			N-ARG-A0		16-17	the role 
+			R-ARG-A0		18-18	that 
+			N-ARG-A1		20-22	his film career 
+	20	his
+	21	film
+			sense:	movie.n.01
+	22	career
+			sense:	career.n.02
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He received critical acclaim for his performance in the first movie , earning Academy Award and Golden Globe Award nominations .
+
+
+Treebanked sentence:
+--------------------
+He received critical acclaim for his performance in the first movie , earning Academy Award and Golden Globe Award nominations . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD received)
+      (NP (JJ critical) (NN acclaim))
+      (PP (IN for)
+        (NP (PRP$ his) (NN performance)))
+      (PP (IN in)
+        (NP (DT the) (JJ first) (NN movie)))
+      (, ,)
+      (S
+        (VP (VBG earning)
+          (NP
+            (NML
+              (NML (NNP Academy) (NNP Award))
+              (CC and)
+              (NML (NNP Golden) (NNP Globe) (NNP Award)))
+            (NNS nominations)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	received
+			sense:	receive.v.02
+			prop:	receive.01
+			V		1-1	received 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-3	critical acclaim 
+			N-ARG-A3		4-10	for his performance in the first movie 
+			N-ARGM-ADV		12-19	earning Academy Award and Golden Globe Award nominations 
+	2	critical
+			sense:	critical.a.07
+	3	acclaim
+			sense:	acclaim.n.01
+	4	for
+	5	his
+			coref:	IDENT			3	5-6	his performance 
+	6	performance
+			sense:	performance.n.01
+	7	in
+	8	the
+	9	first
+			name:	ORDINAL				9-9	first 
+			sense:	first.s.02
+	10	movie
+			sense:	movie.n.01
+	11	,
+	12	earning
+			sense:	earn.v.02
+			prop:	earn.01
+			V		12-12	earning 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		13-19	Academy Award and Golden Globe Award nominations 
+	13	Academy
+	14	Award
+	15	and
+	16	Golden
+	17	Globe
+	18	Award
+	19	nominations
+			sense:	nomination.n.02
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+When Stallone reprised his role once again in 2015 for Creed , his performance received wide acclaim and he received his first Golden Globe Award for Best Supporting Actor , along with his third Oscar nomination for Best Supporting Actor , the National Board of Review Award for Best Supporting Actor and several other accolades .
+
+
+Treebanked sentence:
+--------------------
+When Stallone reprised his role once again in 2015 for Creed , his performance received wide acclaim and he received his first Golden Globe Award for Best Supporting Actor , along with his third Oscar nomination for Best Supporting Actor , the National Board of Review Award for Best Supporting Actor and several other accolades . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (SBAR
+        (WHADVP (WRB When))
+        (S
+          (NP (NNP Stallone))
+          (VP (VBD reprised)
+            (NP (PRP$ his) (NN role))
+            (ADVP (RB once) (RB again))
+            (PP (IN in)
+              (NP
+                (NP (CD 2015))
+                (PP (IN for)
+                  (NP (NN Creed))))))))
+      (, ,)
+      (NP (PRP$ his) (NN performance))
+      (VP (VBD received)
+        (NP (JJ wide) (NN acclaim))))
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBD received)
+        (NP (PRP$ his) (JJ first)
+          (NML (NNP Golden) (NNP Globe) (NNP Award)))
+        (PP (IN for)
+          (NP
+            (NP (JJS Best))
+            (VP (VBG Supporting)
+              (NP (NN Actor)))))
+        (, ,)
+        (PP (IN along) (IN with)
+          (NP
+            (NP (PRP$ his) (JJ third) (NNP Oscar) (NN nomination))
+            (PP (IN for)
+              (NP
+                (NP
+                  (NP (JJS Best))
+                  (VP (VBG Supporting)
+                    (NP (NN Actor))))
+                (, ,)
+                (NP
+                  (NP (DT the)
+                    (NML
+                      (NML (NNP National) (NNP Board))
+                      (PP (IN of)
+                        (NP (NNP Review))))
+                    (NN Award))
+                  (PP (IN for)
+                    (NP
+                      (NP (JJS Best))
+                      (VP (VBG Supporting)
+                        (NP (NN Actor))))))
+                (CC and)
+                (NP (JJ several) (JJ other) (NNS accolades))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	When
+	1	Stallone
+			name:	PERSON				1-1	Stallone 
+	2	reprised
+			sense:	reprise.v.01
+			prop:	apprise.01
+			V		2-2	reprised 
+			N-ARGM-TMP		0-0	When 
+			N-ARG-A0		1-1	Stallone 
+			N-ARG-A1		3-4	his role 
+			N-ARGM-TMP		5-6	once again 
+			N-ARGM-TMP		7-8	in 2015 
+			N-ARGM-PNC		9-10	for Creed 
+	3	his
+			coref:	IDENT			0	3-4	his role 
+	4	role
+			sense:	character.n.04
+	5	once
+			name:	DATE				5-5	once 
+			sense:	once.r.01
+	6	again
+			sense:	again.r.01
+	7	in
+	8	2015
+			name:	DATE				8-8	2015 
+	9	for
+	10	Creed
+			sense:	creed.n.01
+	11	,
+	12	his
+			coref:	IDENT			3	12-13	his performance 
+	13	performance
+			sense:	performance.n.01
+	14	received
+			sense:	receive.v.02
+			prop:	receive.01
+			V		14-14	received 
+			N-ARGM-TMP		0-10	When Stallone reprised his role once again in 2015 for Creed 
+			N-ARG-A0		12-13	his performance 
+			N-ARG-A1		15-16	wide acclaim 
+	15	wide
+			sense:	across-the-board.s.01
+	16	acclaim
+			sense:	acclaim.n.01
+	17	and
+	18	he
+	19	received
+			sense:	receive.v.01
+			prop:	receive.01
+			V		19-19	received 
+			N-ARG-A0		18-18	he 
+			N-ARG-A1		20-54	his first Golden Globe Award for Best Supporting Actor , along with his third Oscar nomination for Best Supporting Actor , the National Board of Review Award for Best Supporting Actor and several other accolades 
+	20	his
+	21	first
+			name:	ORDINAL				21-21	first 
+			sense:	first.a.01
+	22	Golden
+	23	Globe
+	24	Award
+	25	for
+	26	Best
+			sense:	good.a.01
+	27	Supporting
+			sense:	support.v.09
+			prop:	support.01
+			V		27-27	Supporting 
+			N-ARG-A0		28-28	Actor 
+	28	Actor
+			name:	TITLE				28-28	Actor 
+			sense:	actor.n.01
+	29	,
+	30	along
+	31	with
+	32	his
+	33	third
+			name:	ORDINAL				33-33	third 
+			sense:	third.s.01
+	34	Oscar
+	35	nomination
+			sense:	nomination.n.02
+	36	for
+	37	Best
+			sense:	good.a.01
+	38	Supporting
+			sense:	support.v.09
+			prop:	support.01
+			V		38-38	Supporting 
+			N-ARG-A0		39-39	Actor 
+	39	Actor
+			name:	TITLE				39-39	Actor 
+			sense:	actor.n.01
+	40	,
+	41	the
+	42	National
+			name:	ORGANIZATION				42-43	National Board 
+	43	Board
+	44	of
+	45	Review
+	46	Award
+			sense:	award.n.02
+	47	for
+	48	Best
+			sense:	good.a.01
+	49	Supporting
+			sense:	support.v.09
+			prop:	support.01
+			V		49-49	Supporting 
+			N-ARG-A0		50-50	Actor 
+	50	Actor
+			name:	TITLE				50-50	Actor 
+			sense:	actor.n.01
+	51	and
+	52	several
+			sense:	several.s.01
+	53	other
+			sense:	other.a.01
+	54	accolades
+			sense:	award.n.02
+	55	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.16-22	the role that started his film career 
+				6.3-4	his role 
+	Chain 1 (IDENT)
+				0.11-11	Rocky 
+				1.15-15	Rocky 
+	Chain 2 (IDENT)
+				0.6-13	the title character of the Rocky film series 
+				1.0-1	The character 
+				1.11-11	him 
+				2.0-0	He 
+				2.20-20	his 
+				3.1-1	he 
+				4.0-1	The character 
+	Chain 3 (IDENT)
+				5.5-6	his performance 
+				6.12-13	his performance 
+

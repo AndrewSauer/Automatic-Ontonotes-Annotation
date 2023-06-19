@@ -1,0 +1,556 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Westmere is a hamlet in the town of Guilderland , Albany County , New York .
+
+
+Treebanked sentence:
+--------------------
+Westmere is a hamlet in the town of Guilderland , Albany County , New York . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Westmere))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN hamlet))
+        (PP (IN in)
+          (NP
+            (NP
+              (NP (DT the) (NN town))
+              (PP (IN of)
+                (NP (NNP Guilderland))))
+            (, ,)
+            (NP (NNP Albany) (NNP County))
+            (, ,)
+            (NP (NNP New) (NNP York))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Westmere
+			coref:	IDENT			2	0-0	Westmere 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Westmere 
+			N-ARG-A2		2-14	a hamlet in the town of Guilderland , Albany County , New York 
+	2	a
+	3	hamlet
+			sense:	hamlet.n.01
+	4	in
+	5	the
+	6	town
+			sense:	township.n.01
+	7	of
+	8	Guilderland
+			name:	LOCATION				8-8	Guilderland 
+	9	,
+	10	Albany
+			name:	CITY				10-10	Albany 
+	11	County
+			name:	LOCATION				11-11	County 
+	12	,
+	13	New
+			name:	STATE_OR_PROVINCE				13-14	New York 
+	14	York
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Since the 1970 Census a census - designated place ( CDP ) has been established with the name of Westmere for tabulating the population of what the census has defined as the boundaries for Westmere .
+
+
+Treebanked sentence:
+--------------------
+Since the 1970 Census a census - designated place ( CDP ) has been established with the name of Westmere for tabulating the population of what the census has defined as the boundaries for Westmere . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Since)
+      (NP (DT the) (CD 1970) (NNP Census)))
+    (NP
+      (ADJP
+        (NP (DT a) (NN census))
+        (HYPH -) (VBN designated))
+      (NN place)
+      (PRN (-LRB- -LRB-)
+        (NP (NN CDP))
+        (-RRB- -RRB-)))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN established)
+          (PP (IN with)
+            (NP
+              (NP (DT the) (NN name))
+              (PP (IN of)
+                (NP (NNP Westmere)))))
+          (PP (IN for)
+            (S
+              (VP (VBG tabulating)
+                (NP
+                  (NP (DT the) (NN population))
+                  (PP (IN of)
+                    (SBAR
+                      (WHNP (WP what))
+                      (S
+                        (NP (DT the) (NN census))
+                        (VP (VBZ has)
+                          (VP (VBN defined)
+                            (PP (IN as)
+                              (NP
+                                (NP (DT the) (NNS boundaries))
+                                (PP (IN for)
+                                  (NP (NNP Westmere)))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Since
+	1	the
+			coref:	IDENT			0	1-3	the 1970 Census 
+	2	1970
+			name:	DATE				2-2	1970 
+	3	Census
+	4	a
+	5	census
+			sense:	census.n.01
+	6	-
+	7	designated
+			sense:	designate.v.01
+			prop:	designate.01
+			V		7-7	designated 
+			N-ARG-A2		5-5	census 
+			N-ARG-A1		8-8	place 
+	8	place
+			sense:	topographic_point.n.01
+	9	(
+	10	CDP
+	11	)
+	12	has
+			sense:	have.v.01
+			prop:	have.01
+			V		12-12	has 
+	13	been
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	been 
+	14	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		14-14	established 
+			N-ARGM-TMP		0-3	Since the 1970 Census 
+			N-ARG-A1		4-11	a census - designated place ( CDP ) 
+			N-ARGM-ADV		15-19	with the name of Westmere 
+			N-ARGM-PRP		20-34	for tabulating the population of what the census has defined as the boundaries for Westmere 
+	15	with
+	16	the
+	17	name
+			sense:	name.n.01
+	18	of
+	19	Westmere
+			coref:	IDENT			2	19-19	Westmere 
+			name:	LOCATION				19-19	Westmere 
+	20	for
+	21	tabulating
+			sense:	table.v.02
+			prop:	tabulate.01
+			V		21-21	tabulating 
+			N-ARG-A1		22-34	the population of what the census has defined as the boundaries for Westmere 
+	22	the
+			coref:	IDENT			1	22-34	the population of what the census has defined as the boundaries for Westmere 
+	23	population
+			sense:	population.n.04
+	24	of
+	25	what
+	26	the
+			coref:	IDENT			0	26-27	the census 
+	27	census
+			sense:	census.n.01
+	28	has
+			sense:	get.v.03
+			prop:	have.01
+			V		28-28	has 
+	29	defined
+			sense:	specify.v.02
+			prop:	define.01
+			V		29-29	defined 
+			N-ARG-A1		25-25	what 
+			N-ARG-A0		26-27	the census 
+			N-ARG-A2		30-34	as the boundaries for Westmere 
+	30	as
+	31	the
+	32	boundaries
+			sense:	boundary.n.02
+	33	for
+	34	Westmere
+			coref:	IDENT			2	34-34	Westmere 
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The population was 7,284 at the 2010 census .
+
+
+Treebanked sentence:
+--------------------
+The population was 7,284 at the 2010 census . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN population))
+    (VP (VBD was)
+      (NP
+        (NP (CD 7,284))
+        (PP (IN at)
+          (NP (DT the) (CD 2010) (NN census)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The population 
+	1	population
+			sense:	population.n.04
+	2	was
+			sense:	equal.v.01
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	The population 
+			N-ARG-A2		3-3	7,284 
+			N-ARGM-TMP		4-7	at the 2010 census 
+	3	7,284
+			name:	NUMBER				3-3	7,284 
+	4	at
+	5	the
+			coref:	IDENT			0	5-7	the 2010 census 
+	6	2010
+			name:	DATE				6-6	2010 
+	7	census
+			sense:	census.n.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is a suburb of the neighboring city of Albany .
+
+
+Treebanked sentence:
+--------------------
+It is a suburb of the neighboring city of Albany . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN suburb))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN neighboring) (NN city))
+            (PP (IN of)
+              (NP (NNP Albany)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-9	a suburb of the neighboring city of Albany 
+	2	a
+	3	suburb
+			sense:	suburb.n.01
+	4	of
+	5	the
+	6	neighboring
+	7	city
+			sense:	city.n.01
+	8	of
+	9	Albany
+			name:	CITY				9-9	Albany 
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+U.S. Route 20 ( Western Avenue ) bisects the community and is the major thoroughfare and main street .
+
+
+Treebanked sentence:
+--------------------
+U.S. Route 20 ( Western Avenue ) bisects the community and is the major thoroughfare and main street . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NML (NNP U.S.) (NNP Route))
+      (NML
+        (NML (CD 20))
+        (-LRB- -LRB-)
+        (NML (NNP Western) (NNP Avenue))
+        (-RRB- -RRB-)))
+    (VP
+      (VP (VBZ bisects)
+        (NP (DT the) (NN community)))
+      (CC and)
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (JJ major) (NN thoroughfare))
+          (CC and)
+          (NP (JJ main) (NN street)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	U.S.
+			name:	COUNTRY				0-0	U.S. 
+	1	Route
+	2	20
+			name:	NUMBER				2-2	20 
+	3	(
+	4	Western
+			name:	LOCATION				4-5	Western Avenue 
+	5	Avenue
+	6	)
+	7	bisects
+			sense:	bisect.v.01
+			prop:	bisect.01
+			V		7-7	bisects 
+			N-ARG-A2		0-6	U.S. Route 20 ( Western Avenue ) 
+			N-ARG-A1		8-9	the community 
+	8	the
+	9	community
+			sense:	community.n.01
+	10	and
+	11	is
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	is 
+			N-ARG-A1		0-6	U.S. Route 20 ( Western Avenue ) 
+			N-ARG-A2		12-17	the major thoroughfare and main street 
+	12	the
+	13	major
+			sense:	major.a.01
+	14	thoroughfare
+			sense:	thoroughfare.n.01
+	15	and
+	16	main
+			sense:	chief.s.01
+	17	street
+			sense:	street.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Along Western Avenue are numerous strip malls , shopping plazas , and commercial buildings , with residential use on the side streets to the north and south .
+
+
+Treebanked sentence:
+--------------------
+Along Western Avenue are numerous strip malls , shopping plazas , and commercial buildings , with residential use on the side streets to the north and south . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Along)
+      (NP (NNP Western)))
+    (NP (NNP Avenue))
+    (VP (VBP are)
+      (NP (JJ numerous) (NN strip) (NNS malls))
+      (, ,)
+      (S
+        (VP (VBG shopping)
+          (NP
+            (NP (NNS plazas))
+            (, ,)
+            (CC and)
+            (NP (JJ commercial) (NNS buildings))
+            (, ,))
+          (PP (IN with)
+            (NP
+              (NP (JJ residential) (NN use))
+              (PP (IN on)
+                (NP (DT the) (NN side) (NNS streets)))))
+          (PP (IN to)
+            (NP (DT the) (NN north)
+              (CC and)
+              (NN south))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Along
+	1	Western
+			name:	MISC				1-2	Western Avenue 
+	2	Avenue
+	3	are
+			sense:	be.v.03
+			prop:	be.01
+			V		3-3	are 
+			N-ARG-A2		0-2	Along Western Avenue 
+			N-ARG-A1		4-26	numerous strip malls , shopping plazas , and commercial buildings , with residential use on the side streets to the north and south 
+	4	numerous
+			sense:	numerous.s.01
+	5	strip
+			sense:	strip.n.01
+	6	malls
+			sense:	plaza.n.02
+	7	,
+	8	shopping
+			sense:	shop.v.01
+			prop:	shopping.01
+			V		8-8	shopping 
+			N-ARGM-LOC		9-9	plazas 
+	9	plazas
+			sense:	plaza.n.02
+	10	,
+	11	and
+	12	commercial
+			sense:	commercial.a.01
+	13	buildings
+			sense:	building.n.01
+	14	,
+	15	with
+	16	residential
+			sense:	residential.a.01
+	17	use
+			sense:	function.n.02
+	18	on
+	19	the
+	20	side
+			sense:	side.n.01
+	21	streets
+			sense:	street.n.01
+	22	to
+	23	the
+	24	north
+			sense:	north.n.03
+	25	and
+	26	south
+			sense:	south.n.03
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Crossgates Mall , the Capital District 's largest shopping mall , is in Westmere 's northeastern corner .
+
+
+Treebanked sentence:
+--------------------
+Crossgates Mall , the Capital District 's largest shopping mall , is in Westmere 's northeastern corner . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Crossgates) (NNP Mall))
+      (, ,)
+      (NP
+        (NP (DT the) (NNP Capital) (NNP District) (POS 's))
+        (JJS largest) (NN shopping) (NN mall))
+      (, ,))
+    (VP (VBZ is)
+      (PP (IN in)
+        (NP
+          (NP (NNP Westmere) (POS 's))
+          (JJ northeastern) (NN corner))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Crossgates
+			name:	CITY				0-0	Crossgates 
+	1	Mall
+			name:	LOCATION				1-1	Mall 
+	2	,
+	3	the
+	4	Capital
+			name:	LOCATION				4-5	Capital District 
+	5	District
+	6	's
+	7	largest
+			sense:	large.a.01
+	8	shopping
+			sense:	shopping.n.01
+	9	mall
+			sense:	plaza.n.02
+	10	,
+	11	is
+			sense:	be.v.03
+			prop:	be.01
+			V		11-11	is 
+			N-ARG-A1		0-9	Crossgates Mall , the Capital District 's largest shopping mall 
+			N-ARG-A2		12-16	in Westmere 's northeastern corner 
+	12	in
+	13	Westmere
+			coref:	IDENT			2	13-14	Westmere 's 
+			name:	LOCATION				13-13	Westmere 
+	14	's
+	15	northeastern
+			sense:	northeastern.s.01
+	16	corner
+			sense:	corner.n.04
+	17	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.1-3	the 1970 Census 
+				1.26-27	the census 
+				2.5-7	the 2010 census 
+	Chain 1 (IDENT)
+				1.22-34	the population of what the census has defined as the boundaries for Westmere 
+				2.0-1	The population 
+				3.0-0	It 
+	Chain 2 (IDENT)
+				6.13-14	Westmere 's 
+				0.0-0	Westmere 
+				1.19-19	Westmere 
+				1.34-34	Westmere 
+

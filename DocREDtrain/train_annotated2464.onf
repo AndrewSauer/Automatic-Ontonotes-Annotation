@@ -1,0 +1,658 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Perry Watson ( born April 30 , 1950 ) is an American college basketball coach from Detroit , Michigan .
+
+
+Treebanked sentence:
+--------------------
+Perry Watson ( born April 30 , 1950 ) is an American college basketball coach from Detroit , Michigan . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Perry) (NNP Watson))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP April) (CD 30) (, ,) (CD 1950)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ American)
+          (NML (NN college) (NN basketball))
+          (NN coach))
+        (PP (IN from)
+          (NP (NNP Detroit) (, ,) (NNP Michigan)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Perry
+			coref:	IDENT			0	0-1	Perry Watson 
+			name:	PERSON				0-1	Perry Watson 
+	1	Watson
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Perry Watson 
+			N-ARGM-TMP		4-7	April 30 , 1950 
+	4	April
+			name:	DATE				4-7	April 30 , 1950 
+	5	30
+	6	,
+	7	1950
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	Perry Watson ( born April 30 , 1950 ) 
+			N-ARG-A2		10-18	an American college basketball coach from Detroit , Michigan 
+	10	an
+	11	American
+			name:	NATIONALITY				11-11	American 
+	12	college
+			sense:	college.n.01
+	13	basketball
+			sense:	basketball.n.01
+	14	coach
+			name:	TITLE				14-14	coach 
+			sense:	coach.n.01
+	15	from
+	16	Detroit
+			name:	CITY				16-16	Detroit 
+	17	,
+	18	Michigan
+			name:	STATE_OR_PROVINCE				18-18	Michigan 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He played for Eastern Michigan University , graduating in 1972 .
+
+
+Treebanked sentence:
+--------------------
+He played for Eastern Michigan University , graduating in 1972 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD played)
+      (PP (IN for)
+        (NP (NNP Eastern) (NNP Michigan) (NNP University)))
+      (, ,)
+      (S
+        (VP (VBG graduating)
+          (PP (IN in)
+            (NP (CD 1972))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	played
+			sense:	play.v.01
+			prop:	play.01
+			V		1-1	played 
+			N-ARG-A0		0-0	He 
+			N-ARGM-LOC		2-5	for Eastern Michigan University 
+			N-ARGM-ADV		7-9	graduating in 1972 
+	2	for
+	3	Eastern
+			name:	ORGANIZATION				3-5	Eastern Michigan University 
+	4	Michigan
+	5	University
+	6	,
+	7	graduating
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		7-7	graduating 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		8-9	in 1972 
+	8	in
+	9	1972
+			name:	DATE				9-9	1972 
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1977 , Watson took the head coaching position at Detroit Southwestern High School where he coached , among others , future NBA players Jalen Rose , Voshon Lenard and Howard Eisley .
+
+
+Treebanked sentence:
+--------------------
+In 1977 , Watson took the head coaching position at Detroit Southwestern High School where he coached , among others , future NBA players Jalen Rose , Voshon Lenard and Howard Eisley . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1977)))
+    (, ,)
+    (NP (NNP Watson))
+    (VP (VBD took)
+      (NP (DT the) (NN head))
+      (S
+        (VP (VBG coaching)
+          (NP (NN position))
+          (PP (IN at)
+            (NP
+              (NP (NNP Detroit) (NNP Southwestern) (NNP High) (NNP School))
+              (SBAR
+                (WHADVP (WRB where))
+                (S
+                  (NP (PRP he))
+                  (VP (VBD coached) (, ,)
+                    (PP (IN among)
+                      (NP (NNS others)))
+                    (, ,)
+                    (S
+                      (NP (JJ future) (NNP NBA) (NNS players))
+                      (NP
+                        (NP (NNP Jalen) (NNP Rose))
+                        (, ,)
+                        (NP (NNP Voshon) (NNP Lenard))
+                        (CC and)
+                        (NP (NNP Howard) (NNP Eisley))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1977
+			name:	DATE				1-1	1977 
+	2	,
+	3	Watson
+			coref:	IDENT			0	3-3	Watson 
+			name:	PERSON				3-3	Watson 
+	4	took
+			sense:	fill.v.04
+			prop:	take.01
+			V		4-4	took 
+			N-ARGM-TMP		0-1	In 1977 
+			N-ARG-A0		3-3	Watson 
+			N-ARG-A1		5-31	the head coaching position at Detroit Southwestern High School where he coached , among others , future NBA players Jalen Rose , Voshon Lenard and Howard Eisley 
+	5	the
+	6	head
+			sense:	principal.n.02
+	7	coaching
+			sense:	coach.v.01
+			prop:	coach.01
+			V		7-7	coaching 
+	8	position
+			sense:	position.n.06
+	9	at
+	10	Detroit
+			name:	ORGANIZATION				10-13	Detroit Southwestern High School 
+	11	Southwestern
+	12	High
+	13	School
+	14	where
+	15	he
+			coref:	IDENT			0	15-15	he 
+	16	coached
+			sense:	coach.v.01
+			prop:	coach.01
+			V		16-16	coached 
+			N-ARGM-LOC		10-13	Detroit Southwestern High School 
+			R-ARGM-LOC		14-14	where 
+			N-ARG-A0		15-15	he 
+			N-ARGM-ADV		18-19	among others 
+			N-ARG-A1		21-31	future NBA players Jalen Rose , Voshon Lenard and Howard Eisley 
+	17	,
+	18	among
+	19	others
+	20	,
+	21	future
+			name:	DATE				21-21	future 
+			sense:	future.s.02
+	22	NBA
+			name:	ORGANIZATION				22-22	NBA 
+	23	players
+			sense:	player.n.01
+	24	Jalen
+			name:	PERSON				24-25	Jalen Rose 
+	25	Rose
+	26	,
+	27	Voshon
+			name:	PERSON				27-28	Voshon Lenard 
+	28	Lenard
+	29	and
+	30	Howard
+			name:	PERSON				30-31	Howard Eisley 
+	31	Eisley
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Watson left Southwestern to take a position on Steve Fisher 's staff at the University of Michigan in 1991 , coinciding with the arrival of the Fab Five of which Rose was a member .
+
+
+Treebanked sentence:
+--------------------
+Watson left Southwestern to take a position on Steve Fisher 's staff at the University of Michigan in 1991 , coinciding with the arrival of the Fab Five of which Rose was a member . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Watson))
+    (VP (VBD left)
+      (NP (NNP Southwestern))
+      (S
+        (VP (TO to)
+          (VP (VB take)
+            (NP
+              (NP (DT a) (NN position))
+              (PP (IN on)
+                (NP
+                  (NP (NNP Steve) (NNP Fisher) (POS 's))
+                  (NN staff))))
+            (PP (IN at)
+              (NP
+                (NP (DT the) (NNP University))
+                (PP (IN of)
+                  (NP (NNP Michigan)))))
+            (PP (IN in)
+              (NP (CD 1991)))
+            (, ,)
+            (S
+              (VP (VBG coinciding)
+                (PP (IN with)
+                  (NP
+                    (NP (DT the) (NN arrival))
+                    (PP (IN of)
+                      (NP
+                        (NP (DT the) (NNP Fab) (CD Five))
+                        (SBAR
+                          (WHPP (IN of)
+                            (WHNP (WDT which)))
+                          (S
+                            (NP (NNP Rose))
+                            (VP (VBD was)
+                              (NP (DT a) (NN member)))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Watson
+			coref:	IDENT			0	0-0	Watson 
+			name:	PERSON				0-0	Watson 
+	1	left
+			sense:	leave.v.08
+			prop:	leave.01
+			V		1-1	left 
+			N-ARG-A0		0-0	Watson 
+			N-ARG-A1		2-2	Southwestern 
+			N-ARGM-PRP		3-33	to take a position on Steve Fisher 's staff at the University of Michigan in 1991 , coinciding with the arrival of the Fab Five of which Rose was a member 
+	2	Southwestern
+			name:	MISC				2-2	Southwestern 
+	3	to
+	4	take
+			sense:	fill.v.04
+			prop:	take.01
+			V		4-4	take 
+			N-ARG-A0		0-0	Watson 
+			N-ARG-A1		5-16	a position on Steve Fisher 's staff at the University of Michigan 
+			N-ARGM-PRD		20-33	coinciding with the arrival of the Fab Five of which Rose was a member 
+	5	a
+	6	position
+			sense:	position.n.06
+	7	on
+	8	Steve
+			coref:	IDENT			1	8-10	Steve Fisher 's 
+			name:	PERSON				8-9	Steve Fisher 
+	9	Fisher
+	10	's
+	11	staff
+			sense:	staff.n.01
+	12	at
+	13	the
+	14	University
+			name:	ORGANIZATION				14-16	University of Michigan 
+	15	of
+	16	Michigan
+	17	in
+	18	1991
+			name:	DATE				18-18	1991 
+	19	,
+	20	coinciding
+			sense:	concur.v.02
+			prop:	coincide.01
+			V		20-20	coinciding 
+			N-ARG-A1		21-33	with the arrival of the Fab Five of which Rose was a member 
+	21	with
+	22	the
+	23	arrival
+			sense:	arrival.n.02
+	24	of
+	25	the
+	26	Fab
+	27	Five
+			name:	NUMBER				27-27	Five 
+	28	of
+	29	which
+	30	Rose
+			name:	PERSON				30-30	Rose 
+	31	was
+			sense:	be.v.01
+			prop:	be.01
+			V		31-31	was 
+			N-ARG-A1		30-30	Rose 
+			N-ARG-A2		32-33	a member 
+	32	a
+	33	member
+			sense:	member.n.01
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After two years as an assistant under Fisher , Watson was hired as the head coach at the University of Detroit Mercy , where he spent the next fifteen seasons .
+
+
+Treebanked sentence:
+--------------------
+After two years as an assistant under Fisher , Watson was hired as the head coach at the University of Detroit Mercy , where he spent the next fifteen seasons . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP
+        (NP (CD two) (NNS years))
+        (PP (IN as)
+          (NP
+            (NP (DT an) (NN assistant))
+            (PP (IN under)
+              (NP (NNP Fisher)))))))
+    (, ,)
+    (NP (NNP Watson))
+    (VP (VBD was)
+      (VP (VBN hired)
+        (PP (IN as)
+          (NP (DT the) (NN head) (NN coach)))
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Detroit) (NN Mercy)))))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP he))
+            (VP (VBD spent)
+              (NP (DT the) (JJ next) (JJ fifteen) (NNS seasons)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	two
+			name:	DURATION				1-2	two years 
+	2	years
+			sense:	year.n.01
+	3	as
+	4	an
+	5	assistant
+			name:	TITLE				5-5	assistant 
+			sense:	assistant.n.01
+	6	under
+	7	Fisher
+			coref:	IDENT			1	7-7	Fisher 
+			name:	PERSON				7-7	Fisher 
+	8	,
+	9	Watson
+			coref:	IDENT			0	9-9	Watson 
+			name:	PERSON				9-9	Watson 
+	10	was
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	was 
+	11	hired
+			sense:	hire.v.01
+			prop:	hire.01
+			V		11-11	hired 
+			N-ARGM-TMP		0-7	After two years as an assistant under Fisher 
+			N-ARG-A1		9-9	Watson 
+			N-ARG-A2		12-29	as the head coach at the University of Detroit Mercy , where he spent the next fifteen seasons 
+	12	as
+	13	the
+	14	head
+			name:	TITLE				14-15	head coach 
+			sense:	principal.n.02
+	15	coach
+			sense:	coach.n.01
+	16	at
+	17	the
+	18	University
+			name:	ORGANIZATION				18-21	University of Detroit Mercy 
+	19	of
+	20	Detroit
+	21	Mercy
+			sense:	mercy.n.04
+	22	,
+	23	where
+	24	he
+			coref:	IDENT			0	24-24	he 
+	25	spent
+			sense:	spend.v.01
+			prop:	spend.02
+			V		25-25	spent 
+			N-ARGM-LOC		17-21	the University of Detroit Mercy 
+			R-ARGM-LOC		23-23	where 
+			N-ARG-A0		24-24	he 
+			N-ARG-A1		26-29	the next fifteen seasons 
+	26	the
+	27	next
+			sense:	following.s.02
+	28	fifteen
+			name:	NUMBER				28-28	fifteen 
+			sense:	fifteen.s.01
+	29	seasons
+			sense:	season.n.01
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Watson took an indefinite medical leave of absence in January 2008 .
+
+
+Treebanked sentence:
+--------------------
+Watson took an indefinite medical leave of absence in January 2008 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Watson))
+    (VP (VBD took)
+      (NP
+        (NP (DT an) (JJ indefinite) (JJ medical) (NN leave))
+        (PP (IN of)
+          (NP (NN absence))))
+      (PP (IN in)
+        (NP (NNP January) (CD 2008))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Watson
+			coref:	IDENT			0	0-0	Watson 
+			name:	PERSON				0-0	Watson 
+	1	took
+			sense:	take.v.01
+			prop:	take.01
+			V		1-1	took 
+			N-ARG-A0		0-0	Watson 
+			N-ARG-A1		2-7	an indefinite medical leave of absence 
+			N-ARGM-TMP		8-10	in January 2008 
+	2	an
+	3	indefinite
+			sense:	indefinite.s.02
+	4	medical
+			sense:	medical.a.01
+	5	leave
+			sense:	leave.n.01
+	6	of
+	7	absence
+			sense:	absence.n.02
+	8	in
+	9	January
+			name:	DATE				9-10	January 2008 
+	10	2008
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He resigned on March 5 , 2008 .
+
+
+Treebanked sentence:
+--------------------
+He resigned on March 5 , 2008 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD resigned)
+      (PP (IN on)
+        (NP (NNP March) (CD 5) (, ,) (CD 2008))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	resigned
+			sense:	vacate.v.01
+			prop:	resign.01
+			V		1-1	resigned 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		2-6	on March 5 , 2008 
+	2	on
+	3	March
+			name:	DATE				3-6	March 5 , 2008 
+	4	5
+	5	,
+	6	2008
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Perry Watson was an important character witness in the University of Michigan basketball scandal .
+
+
+Treebanked sentence:
+--------------------
+Perry Watson was an important character witness in the University of Michigan basketball scandal . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Perry) (NNP Watson))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (JJ important) (NN character) (NN witness))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Michigan) (NN basketball) (NN scandal)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Perry
+			coref:	IDENT			0	0-1	Perry Watson 
+			name:	PERSON				0-1	Perry Watson 
+	1	Watson
+	2	was
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	Perry Watson 
+			N-ARG-A2		3-13	an important character witness in the University of Michigan basketball scandal 
+	3	an
+	4	important
+			sense:	important.a.01
+	5	character
+			sense:	character.n.06
+	6	witness
+			sense:	witness.n.05
+	7	in
+	8	the
+	9	University
+			name:	ORGANIZATION				9-11	University of Michigan 
+	10	of
+	11	Michigan
+	12	basketball
+			sense:	basketball.n.01
+	13	scandal
+			sense:	scandal.n.02
+	14	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Perry Watson 
+				1.0-0	He 
+				2.3-3	Watson 
+				2.15-15	he 
+				3.0-0	Watson 
+				4.9-9	Watson 
+				4.24-24	he 
+				5.0-0	Watson 
+				6.0-0	He 
+				7.0-1	Perry Watson 
+	Chain 1 (IDENT)
+				3.8-10	Steve Fisher 's 
+				4.7-7	Fisher 
+

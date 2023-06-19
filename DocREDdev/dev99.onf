@@ -1,0 +1,754 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mark Harmsworth is an American politician .
+
+
+Treebanked sentence:
+--------------------
+Mark Harmsworth is an American politician . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Mark) (NNP Harmsworth))
+    (VP (VBZ is)
+      (NP (DT an) (JJ American) (NN politician)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mark
+			coref:	IDENT			0	0-1	Mark Harmsworth 
+			name:	PERSON				0-1	Mark Harmsworth 
+	1	Harmsworth
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Mark Harmsworth 
+			N-ARG-A2		3-5	an American politician 
+	3	an
+	4	American
+			name:	NATIONALITY				4-4	American 
+	5	politician
+			name:	TITLE				5-5	politician 
+			sense:	politician.n.02
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A Republican , he has served in the Washington House of Representatives since November 25 , 2014 , when he was sworn in early after winning election that month .
+
+
+Treebanked sentence:
+--------------------
+A Republican , he has served in the Washington House of Representatives since November 25 , 2014 , when he was sworn in early after winning election that month . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT A) (NNP Republican))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBZ has)
+      (VP (VBN served)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNP Washington) (NNP House))
+            (PP (IN of)
+              (NP (NNPS Representatives)))))
+        (PP (IN since)
+          (NP (NNP November) (CD 25) (, ,) (CD 2014)))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP he))
+            (VP (VBD was)
+              (VP (VBN sworn)
+                (PRT (RP in))
+                (ADVP (RB early)
+                  (PP (IN after)
+                    (S
+                      (VP (VBG winning)
+                        (NP
+                          (NP (NN election))
+                          (SBAR
+                            (WHNP (WDT that))))
+                        (NP-TMP (NN month))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	Republican
+			name:	IDEOLOGY				1-1	Republican 
+	2	,
+	3	he
+			coref:	IDENT			0	3-3	he 
+	4	has
+			sense:	have.v.01
+			prop:	have.01
+			V		4-4	has 
+	5	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		5-5	served 
+			R-ARG-A0		0-1	A Republican 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		6-11	in the Washington House of Representatives 
+			N-ARGM-TMP		12-28	since November 25 , 2014 , when he was sworn in early after winning election that month 
+	6	in
+	7	the
+	8	Washington
+			coref:	IDENT			1	8-8	Washington 
+			name:	STATE_OR_PROVINCE				8-8	Washington 
+	9	House
+			name:	ORGANIZATION				9-11	House of Representatives 
+	10	of
+	11	Representatives
+	12	since
+	13	November
+			name:	DATE				13-16	November 25 , 2014 
+	14	25
+	15	,
+	16	2014
+	17	,
+	18	when
+	19	he
+			coref:	IDENT			0	19-19	he 
+	20	was
+			sense:	be.v.01
+			prop:	be.03
+			V		20-20	was 
+	21	sworn
+			sense:	swear.v.03
+			prop:	swear.06
+			V		21-21	sworn 
+			R-ARGM-TMP		18-18	when 
+			N-ARG-A1		19-19	he 
+			N-ARGM-TMP		23-23	early 
+			N-ARGM-TMP		24-28	after winning election that month 
+	22	in
+	23	early
+			sense:	early.r.02
+	24	after
+	25	winning
+			sense:	win.v.01
+			prop:	win.01
+			V		25-25	winning 
+			N-ARG-A0		19-19	he 
+			N-ARG-A1		26-26	election 
+			N-ARGM-TMP		27-28	that month 
+	26	election
+			sense:	election.n.01
+	27	that
+	28	month
+			name:	DURATION				28-28	month 
+			sense:	calendar_month.n.01
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Harmsworth was elected to succeed Mike Hope , who resigned in summer 2014 .
+
+
+Treebanked sentence:
+--------------------
+Harmsworth was elected to succeed Mike Hope , who resigned in summer 2014 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Harmsworth))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (S
+          (VP (TO to)
+            (VP (VB succeed)
+              (NP
+                (NP (NNP Mike) (NNP Hope))
+                (, ,)
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBD resigned)
+                      (PP (IN in)
+                        (NP (NN summer) (CD 2014))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Harmsworth
+			coref:	IDENT			0	0-0	Harmsworth 
+			name:	PERSON				0-0	Harmsworth 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A1		0-0	Harmsworth 
+			N-ARG-A2		3-12	to succeed Mike Hope , who resigned in summer 2014 
+	3	to
+	4	succeed
+			sense:	succeed.v.02
+			prop:	succeed.02
+			V		4-4	succeed 
+			N-ARG-A0		0-0	Harmsworth 
+			N-ARG-A1		5-12	Mike Hope , who resigned in summer 2014 
+	5	Mike
+			name:	PERSON				5-6	Mike Hope 
+	6	Hope
+	7	,
+	8	who
+	9	resigned
+			sense:	vacate.v.01
+			prop:	resign.01
+			V		9-9	resigned 
+			N-ARG-A0		5-6	Mike Hope 
+			R-ARG-A0		8-8	who 
+			N-ARGM-TMP		10-12	in summer 2014 
+	10	in
+	11	summer
+			name:	DATE				11-12	summer 2014 
+			sense:	summer.n.01
+	12	2014
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was local Republican leaders ' first choice for appointment to Hope 's seat in 2014 , but Governor Jay Inslee appointed Doug Roulstone instead .
+
+
+Treebanked sentence:
+--------------------
+He was local Republican leaders ' first choice for appointment to Hope 's seat in 2014 , but Governor Jay Inslee appointed Doug Roulstone instead . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD was)
+        (NP
+          (NP
+            (NP (JJ local) (JJ Republican) (NNS leaders) (POS '))
+            (JJ first) (NN choice))
+          (PP (IN for)
+            (NP (NN appointment))))
+        (PP (IN to)
+          (NP
+            (NP
+              (NP (NNP Hope) (POS 's))
+              (NN seat))
+            (PP (IN in)
+              (NP (CD 2014)))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (NNP Governor) (NNP Jay) (NNP Inslee))
+      (VP (VBD appointed)
+        (NP (NNP Doug) (NNP Roulstone))
+        (ADVP (RB instead))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-15	local Republican leaders ' first choice for appointment to Hope 's seat in 2014 
+	2	local
+			sense:	local.a.01
+	3	Republican
+			name:	IDEOLOGY				3-3	Republican 
+	4	leaders
+			sense:	leader.n.01
+	5	'
+	6	first
+			name:	ORDINAL				6-6	first 
+			sense:	first.s.05
+	7	choice
+			sense:	choice.n.01
+	8	for
+	9	appointment
+			sense:	appointment.n.01
+	10	to
+	11	Hope
+			name:	PERSON				11-11	Hope 
+	12	's
+	13	seat
+			sense:	seat.n.07
+	14	in
+	15	2014
+			name:	DATE				15-15	2014 
+	16	,
+	17	but
+	18	Governor
+			name:	TITLE				18-18	Governor 
+	19	Jay
+			name:	PERSON				19-20	Jay Inslee 
+	20	Inslee
+	21	appointed
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		21-21	appointed 
+			N-ARG-A0		18-20	Governor Jay Inslee 
+			N-ARG-A1		22-23	Doug Roulstone 
+			N-ARGM-ADV		24-24	instead 
+	22	Doug
+			name:	PERSON				22-23	Doug Roulstone 
+	23	Roulstone
+	24	instead
+			sense:	alternatively.r.01
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He has been a staunch opponent of tolling in Washington State opposing the I-405 tolls and proposed US2 trestle tolls .
+
+
+Treebanked sentence:
+--------------------
+He has been a staunch opponent of tolling in Washington State opposing the I - 405 tolls and proposed US2 trestle tolls . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (NP
+          (NP (DT a) (JJ staunch) (NN opponent))
+          (PP (IN of)
+            (NP
+              (NP (NN tolling))
+              (PP (IN in)
+                (NP
+                  (NP (NNP Washington) (NNP State))
+                  (VP (VBG opposing)
+                    (NP
+                      (NP (DT the)
+                        (NML (NN I) (HYPH -) (CD 405))
+                        (NNS tolls))
+                      (CC and)
+                      (NP (VBN proposed) (NN US2) (NN trestle) (NNS tolls)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	has
+			sense:	have.v.02
+			prop:	have.01
+			V		1-1	has 
+	2	been
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	been 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		3-21	a staunch opponent of tolling in Washington State opposing the I - 405 tolls and proposed US2 trestle tolls 
+	3	a
+	4	staunch
+			sense:	steadfast.s.02
+	5	opponent
+			sense:	adversary.n.01
+	6	of
+	7	tolling
+	8	in
+	9	Washington
+			name:	STATE_OR_PROVINCE				9-9	Washington 
+	10	State
+			name:	LOCATION				10-10	State 
+	11	opposing
+			sense:	oppose.v.01
+			prop:	oppose.01
+			V		11-11	opposing 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		12-21	the I - 405 tolls and proposed US2 trestle tolls 
+	12	the
+	13	I
+			name:	MISC				13-15	I - 405 
+			sense:	one.n.01
+	14	-
+	15	405
+	16	tolls
+			sense:	toll.n.01
+	17	and
+	18	proposed
+			sense:	project.v.08
+			prop:	propose.01
+			V		18-18	proposed 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		19-21	US2 trestle tolls 
+	19	US2
+	20	trestle
+			sense:	trestle.n.01
+	21	tolls
+			sense:	toll.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Harmsworth has proposed car tab reductions and accountability to Sound Transit by directly electing the board members .
+
+
+Treebanked sentence:
+--------------------
+Harmsworth has proposed car tab reductions and accountability to Sound Transit by directly electing the board members . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Harmsworth))
+    (VP (VBZ has)
+      (VP (VBN proposed)
+        (NP (NN car) (NN tab) (NNS reductions)
+          (CC and)
+          (NN accountability))
+        (PP (IN to)
+          (NP (NNP Sound) (NNP Transit)))
+        (PP (IN by)
+          (S
+            (ADVP (RB directly))
+            (VP (VBG electing)
+              (NP (DT the) (NN board))
+              (NP (NNS members)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Harmsworth
+			coref:	IDENT			0	0-0	Harmsworth 
+			name:	PERSON				0-0	Harmsworth 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	proposed
+			sense:	propose.v.01
+			prop:	propose.01
+			V		2-2	proposed 
+			N-ARG-A0		0-0	Harmsworth 
+			N-ARG-A1		3-10	car tab reductions and accountability to Sound Transit 
+			N-ARGM-MNR		11-16	by directly electing the board members 
+	3	car
+			sense:	car.n.01
+	4	tab
+			sense:	check.n.03
+	5	reductions
+			sense:	decrease.n.04
+	6	and
+	7	accountability
+			sense:	accountability.n.01
+	8	to
+	9	Sound
+	10	Transit
+	11	by
+	12	directly
+			sense:	directly.r.02
+	13	electing
+			sense:	elect.v.01
+			prop:	elect.01
+			V		13-13	electing 
+			N-ARG-A0		0-0	Harmsworth 
+			N-ARGM-MNR		12-12	directly 
+			N-ARG-A2		14-16	the board members 
+	14	the
+	15	board
+			sense:	board.n.01
+	16	members
+			sense:	member.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Harmsworth previously served as a city councilor in Mill Creek , Washington .
+
+
+Treebanked sentence:
+--------------------
+Harmsworth previously served as a city councilor in Mill Creek , Washington . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Harmsworth))
+    (ADVP (RB previously))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP (DT a) (NN city) (NN councilor)))
+      (PP (IN in)
+        (NP
+          (NP (NNP Mill) (NNP Creek))
+          (, ,)
+          (NP (NNP Washington)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Harmsworth
+			coref:	IDENT			0	0-0	Harmsworth 
+			name:	PERSON				0-0	Harmsworth 
+	1	previously
+			name:	DATE				1-1	previously 
+			sense:	previously.r.01
+	2	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		2-2	served 
+			N-ARG-A0		0-0	Harmsworth 
+			N-ARGM-TMP		1-1	previously 
+			N-ARG-A1		3-11	as a city councilor in Mill Creek , Washington 
+	3	as
+	4	a
+	5	city
+			name:	TITLE				5-6	city councilor 
+			sense:	city.n.02
+	6	councilor
+	7	in
+	8	Mill
+			name:	CITY				8-9	Mill Creek 
+	9	Creek
+	10	,
+	11	Washington
+			coref:	IDENT			1	11-11	Washington 
+			name:	STATE_OR_PROVINCE				11-11	Washington 
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was first elected in 2007 and resigned effective December 31 , 2014 , after being sworn in as a state legislator .
+
+
+Treebanked sentence:
+--------------------
+He was first elected in 2007 and resigned effective December 31 , 2014 , after being sworn in as a state legislator . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (ADVP (JJ first))
+        (VP (VBN elected)
+          (PP (IN in)
+            (NP (CD 2007)))))
+      (CC and)
+      (VP (VBD resigned)
+        (NP
+          (ADJP (JJ effective)
+            (NP-TMP (NNP December) (CD 31) (, ,) (CD 2014))
+            (, ,)
+            (PP (IN after)
+              (S
+                (VP (VBG being)
+                  (VP (VBN sworn)
+                    (PRT (RP in))
+                    (PP (IN as)
+                      (NP (DT a) (NN state))))))))
+          (NN legislator))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	first
+			name:	ORDINAL				2-2	first 
+			sense:	first.a.01
+	3	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		3-3	elected 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		2-2	first 
+			N-ARGM-TMP		4-5	in 2007 
+	4	in
+	5	2007
+			name:	DATE				5-5	2007 
+	6	and
+	7	resigned
+			sense:	vacate.v.01
+			prop:	resign.01
+			V		7-7	resigned 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		8-12	effective December 31 , 2014 
+			N-ARGM-TMP		14-21	after being sworn in as a state legislator 
+	8	effective
+			sense:	effective.s.05
+	9	December
+			name:	DATE				9-12	December 31 , 2014 
+	10	31
+	11	,
+	12	2014
+	13	,
+	14	after
+	15	being
+			sense:	be.v.01
+			prop:	be.03
+			V		15-15	being 
+	16	sworn
+			sense:	swear.v.03
+			prop:	swear.06
+			V		16-16	sworn 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		18-21	as a state legislator 
+	17	in
+	18	as
+	19	a
+	20	state
+			sense:	state.n.01
+	21	legislator
+			name:	TITLE				21-21	legislator 
+			sense:	legislator.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Harmsworth served as Mayor Pro - Tem from January 2014 until he resigned from the Mill Creek City Council .
+
+
+Treebanked sentence:
+--------------------
+Harmsworth served as Mayor Pro - Tem from January 2014 until he resigned from the Mill Creek City Council . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Harmsworth))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP
+          (NP (NNP Mayor) (NNP Pro) (HYPH -) (NNP Tem))
+          (PP (IN from)
+            (NP (NNP January) (CD 2014)))))
+      (SBAR (IN until)
+        (S
+          (NP (PRP he))
+          (VP (VBD resigned)
+            (PP (IN from)
+              (NP (DT the) (NNP Mill)
+                (NML (NNP Creek) (NNP City))
+                (NNP Council)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Harmsworth
+			coref:	IDENT			0	0-0	Harmsworth 
+			name:	PERSON				0-0	Harmsworth 
+	1	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	Harmsworth 
+			N-ARG-A1		2-6	as Mayor Pro - Tem 
+			N-ARGM-TMP		7-9	from January 2014 
+			N-ARGM-TMP		10-18	until he resigned from the Mill Creek City Council 
+	2	as
+	3	Mayor
+			name:	TITLE				3-3	Mayor 
+	4	Pro
+	5	-
+	6	Tem
+	7	from
+	8	January
+			name:	DATE				8-9	January 2014 
+	9	2014
+	10	until
+	11	he
+			coref:	IDENT			0	11-11	he 
+	12	resigned
+			sense:	vacate.v.01
+			prop:	resign.01
+			V		12-12	resigned 
+			N-ARG-A0		11-11	he 
+			N-ARG-A1		13-18	from the Mill Creek City Council 
+	13	from
+	14	the
+	15	Mill
+	16	Creek
+			name:	ORGANIZATION				16-18	Creek City Council 
+	17	City
+	18	Council
+	19	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Mark Harmsworth 
+				1.3-3	he 
+				1.19-19	he 
+				2.0-0	Harmsworth 
+				3.0-0	He 
+				4.0-0	He 
+				5.0-0	Harmsworth 
+				6.0-0	Harmsworth 
+				7.0-0	He 
+				8.0-0	Harmsworth 
+				8.11-11	he 
+	Chain 1 (IDENT)
+				1.8-8	Washington 
+				6.11-11	Washington 
+

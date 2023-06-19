@@ -1,0 +1,759 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+William Busac ( 1020 - 1076 ) , son of William I , Count of Eu , and his wife Lesceline .
+
+
+Treebanked sentence:
+--------------------
+William Busac ( 1020 - 1076 ) , son of William I , Count of Eu , and his wife Lesceline . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (FRAG
+      (NP (NNP William) (NNP Busac))
+      (-LRB- -LRB-)
+      (NP (CD 1020) (SYM -) (CD 1076))
+      (-RRB- -RRB-))
+    (, ,)
+    (NP
+      (NP (NN son))
+      (PP (IN of)
+        (NP (NNP William) (NNP I))))
+    (, ,)
+    (FRAG
+      (NP (NNP Count))
+      (PP (IN of)
+        (NP (NNP Eu))))
+    (, ,)
+    (CC and)
+    (FRAG
+      (NP (PRP$ his) (NN wife))
+      (NP (NNP Lesceline)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	William
+			coref:	IDENT			5	0-1	William Busac 
+			name:	PERSON				0-1	William Busac 
+	1	Busac
+	2	(
+	3	1020
+			name:	DURATION				3-4	1020 - 
+	4	-
+	5	1076
+			name:	DATE				5-5	1076 
+	6	)
+	7	,
+	8	son
+			sense:	son.n.01
+	9	of
+	10	William
+			coref:	IDENT			2	10-10	William 
+			name:	PERSON				10-10	William 
+	11	I
+	12	,
+	13	Count
+			name:	PERSON				13-15	Count of Eu 
+	14	of
+	15	Eu
+	16	,
+	17	and
+	18	his
+			coref:	IDENT			1	18-19	his wife 
+			coref:	IDENT			2	18-18	his 
+	19	wife
+			sense:	wife.n.01
+	20	Lesceline
+			name:	PERSON				20-20	Lesceline 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Count of Eu , Count of Soissons , de jure uxoris .
+
+
+Treebanked sentence:
+--------------------
+Count of Eu , Count of Soissons , de jure uxoris . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (VP (VB Count)
+      (PP (IN of)
+        (NP
+          (NP (NNP Eu) (, ,) (NNP Count))
+          (PP (IN of)
+            (NP
+              (NML (NNP Soissons) (, ,) (NNP de))
+              (FW jure) (FW uxoris))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Count
+			sense:	count.v.06
+			prop:	count.01
+			V		0-0	Count 
+			N-ARG-A1		1-2	of Eu 
+	1	of
+	2	Eu
+	3	,
+	4	Count
+			name:	TITLE				4-4	Count 
+	5	of
+	6	Soissons
+			name:	CITY				6-6	Soissons 
+	7	,
+	8	de
+	9	jure
+	10	uxoris
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+William was given the nickname Busac by the medieval chronicler Robert of Torigni .
+
+
+Treebanked sentence:
+--------------------
+William was given the nickname Busac by the medieval chronicler Robert of Torigni . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP William))
+    (VP (VBD was)
+      (VP (VBN given)
+        (NP (DT the) (NN nickname))
+        (NP (NNP Busac))
+        (PP (IN by)
+          (NP
+            (NP (DT the) (JJ medieval) (NN chronicler))
+            (NP
+              (NP (NNP Robert))
+              (PP (IN of)
+                (NP (NNP Torigni))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	William
+			coref:	IDENT			2	0-0	William 
+			name:	PERSON				0-0	William 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	given
+			sense:	give.v.01
+			prop:	give.01
+			V		2-2	given 
+			N-ARG-A2		0-0	William 
+			N-ARG-A1		3-5	the nickname Busac 
+			N-ARG-A0		6-12	by the medieval chronicler Robert of Torigni 
+	3	the
+	4	nickname
+			sense:	nickname.n.01
+	5	Busac
+			coref:	IDENT			5	5-5	Busac 
+			name:	PERSON				5-5	Busac 
+	6	by
+	7	the
+	8	medieval
+			name:	DATE				8-8	medieval 
+			sense:	medieval.a.01
+	9	chronicler
+			sense:	chronicler.n.01
+	10	Robert
+			name:	PERSON				10-10	Robert 
+	11	of
+	12	Torigni
+			name:	LOCATION				12-12	Torigni 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+William appealed to King Henry I of France , who gave him in marriage Adelaide , the heiress of the county of Soissons .
+
+
+Treebanked sentence:
+--------------------
+William appealed to King Henry I of France , who gave him in marriage Adelaide , the heiress of the county of Soissons . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP William))
+    (VP (VBD appealed)
+      (PP (IN to)
+        (NP
+          (NP
+            (NP (NNP King) (NNP Henry) (NNP I))
+            (PP (IN of)
+              (NP (NNP France))))
+          (, ,)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD gave)
+                (NP (PRP him))
+                (PP (IN in)
+                  (NP (NN marriage) (NNP Adelaide)))
+                (, ,)
+                (NP
+                  (NP (DT the) (NN heiress))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT the) (NN county))
+                      (PP (IN of)
+                        (NP (NNP Soissons))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	William
+			coref:	IDENT			2	0-0	William 
+			name:	PERSON				0-0	William 
+	1	appealed
+			sense:	appeal.v.02
+			prop:	appeal.02
+			V		1-1	appealed 
+			N-ARG-A0		0-0	William 
+			N-ARG-A1		2-22	to King Henry I of France , who gave him in marriage Adelaide , the heiress of the county of Soissons 
+	2	to
+	3	King
+			name:	TITLE				3-3	King 
+	4	Henry
+			name:	PERSON				4-4	Henry 
+	5	I
+	6	of
+	7	France
+			name:	COUNTRY				7-7	France 
+	8	,
+	9	who
+	10	gave
+			sense:	pass.v.05
+			prop:	give.01
+			V		10-10	gave 
+			N-ARG-A0		3-7	King Henry I of France 
+			R-ARG-A0		9-9	who 
+			N-ARG-A2		11-11	him 
+			N-ARGM-MNR		12-13	in marriage 
+			N-ARG-A1		14-22	Adelaide , the heiress of the county of Soissons 
+	11	him
+			coref:	IDENT			2	11-11	him 
+	12	in
+	13	marriage
+			sense:	marriage.n.01
+	14	Adelaide
+			name:	CITY				14-14	Adelaide 
+	15	,
+	16	the
+	17	heiress
+			sense:	heiress.n.01
+	18	of
+	19	the
+	20	county
+			sense:	county.n.01
+	21	of
+	22	Soissons
+			name:	CITY				22-22	Soissons 
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Adelaide was daughter of Renaud I , Count of Soissons , and Grand Master of the Hotel de France .
+
+
+Treebanked sentence:
+--------------------
+Adelaide was daughter of Renaud I , Count of Soissons , and Grand Master of the Hotel de France . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Adelaide))
+    (VP (VBD was)
+      (NP
+        (NP (NN daughter))
+        (PP (IN of)
+          (NP (NNP Renaud))))
+      (S
+        (NP (PRP I))
+        (, ,)
+        (VP (VB Count)
+          (PP (IN of)
+            (NP
+              (NP (NNP Soissons))
+              (, ,)
+              (CC and)
+              (NP
+                (NP (NNP Grand) (NNP Master))
+                (PP (IN of)
+                  (NP (DT the) (NNP Hotel) (NNP de) (NNP France)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Adelaide
+			coref:	IDENT			3	0-0	Adelaide 
+			name:	CITY				0-0	Adelaide 
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	Adelaide 
+			N-ARG-A2		2-18	daughter of Renaud I , Count of Soissons , and Grand Master of the Hotel de France 
+	2	daughter
+			sense:	daughter.n.01
+	3	of
+	4	Renaud
+			coref:	IDENT			4	4-4	Renaud 
+			name:	PERSON				4-4	Renaud 
+	5	I
+	6	,
+	7	Count
+			sense:	count.v.06
+			prop:	count.01
+			V		7-7	Count 
+			N-ARG-A0		4-5	Renaud I 
+			N-ARG-A1		8-9	of Soissons 
+	8	of
+	9	Soissons
+			name:	CITY				9-9	Soissons 
+	10	,
+	11	and
+	12	Grand
+	13	Master
+	14	of
+	15	the
+	16	Hotel
+	17	de
+	18	France
+			name:	COUNTRY				18-18	France 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+William then became Count of Soissons in right of his wife .
+
+
+Treebanked sentence:
+--------------------
+William then became Count of Soissons in right of his wife . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP William))
+    (ADVP (RB then))
+    (VP (VBD became)
+      (NP
+        (NP (NNP Count))
+        (PP (IN of)
+          (NP (NNP Soissons))))
+      (PP (IN in)
+        (NP
+          (NP (NN right))
+          (PP (IN of)
+            (NP (PRP$ his) (NN wife))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	William
+			coref:	IDENT			2	0-0	William 
+			name:	PERSON				0-0	William 
+	1	then
+			sense:	then.r.01
+	2	became
+			sense:	become.v.02
+			prop:	become.01
+			V		2-2	became 
+			N-ARG-A1		0-0	William 
+			N-ARGM-TMP		1-1	then 
+			N-ARG-A2		3-5	Count of Soissons 
+	3	Count
+			coref:	IDENT			0	3-5	Count of Soissons 
+			name:	TITLE				3-3	Count 
+	4	of
+	5	Soissons
+			name:	CITY				5-5	Soissons 
+	6	in
+	7	right
+			sense:	right.n.01
+	8	of
+	9	his
+			coref:	IDENT			1	9-10	his wife 
+			coref:	IDENT			2	9-9	his 
+	10	wife
+			sense:	wife.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+William and Adelaide had four children : 
+
+
+Treebanked sentence:
+--------------------
+William and Adelaide had four children : Renaud II , Count of Soissons John I , Count of Soissons , married to Aveline de Pierrefonds Manasses of Soissons , Bishop of Cambrai , Bishop of Soissons ( d. 1 Mar 1108 ) Lithuise de Blois , married to Milo I of Montlhéry Unnamed daughter , married to Yves I of Nesle , founder of the House of Nesle . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP William)
+      (CC and)
+      (NNP Adelaide))
+    (VP (VBD had)
+      (NP
+        (NP
+          (NP (CD four) (NNS children))
+          (: :)
+          (NP (NNP Renaud) (NNP II)))
+        (, ,)
+        (NP
+          (NP (NNP Count))
+          (PP (IN of)
+            (NP (NNP Soissons) (NNP John) (NNP I))))
+        (, ,)
+        (NP
+          (NP
+            (NP (NNP Count))
+            (PP (IN of)
+              (NP (NNP Soissons))))
+          (, ,)
+          (VP (VBN married)
+            (PP (IN to)
+              (NP
+                (NP (NNP Aveline) (NNP de) (NNP Pierrefonds) (NNPS Manasses))
+                (PP (IN of)
+                  (NP (NNP Soissons)))))))
+        (, ,)
+        (NP
+          (NP (NNP Bishop))
+          (PP (IN of)
+            (NP (NNP Cambrai))))
+        (, ,)
+        (NP
+          (NP (NNP Bishop))
+          (PP (IN of)
+            (NP (NNP Soissons)))
+          (PRN (-LRB- -LRB-)
+            (VP (VBN d.)
+              (S
+                (NP (CD 1) (NNP Mar) (CD 1108))))
+            (-RRB- -RRB-)))
+        (NP
+          (NP
+            (NP (FW Lithuise) (FW de))
+            (NP (NNP Blois)))
+          (, ,)
+          (VP (VBN married)
+            (PP (IN to)
+              (NP
+                (NP
+                  (NP (NNP Milo) (PRP I))
+                  (PP (IN of)
+                    (NP (NNP Montlhéry) (JJ Unnamed) (NN daughter))))
+                (, ,)
+                (VP (VBN married)
+                  (PP (IN to)
+                    (NP
+                      (NP (NNP Yves) (PRP I))
+                      (PP (IN of)
+                        (NP (NNP Nesle))))))))))
+        (, ,)
+        (NP
+          (NP (NN founder))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP House))
+              (PP (IN of)
+                (NP (NNP Nesle))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	William
+			name:	PERSON				0-0	William 
+	1	and
+	2	Adelaide
+			coref:	IDENT			3	2-2	Adelaide 
+			name:	CITY				2-2	Adelaide 
+	3	had
+			sense:	have.v.01
+			prop:	have.03
+			V		3-3	had 
+			N-ARG-A0		0-2	William and Adelaide 
+			N-ARG-A1		4-67	four children : Renaud II , Count of Soissons John I , Count of Soissons , married to Aveline de Pierrefonds Manasses of Soissons , Bishop of Cambrai , Bishop of Soissons ( d. 1 Mar 1108 ) Lithuise de Blois , married to Milo I of Montlhéry Unnamed daughter , married to Yves I of Nesle , founder of the House of Nesle 
+	4	four
+			name:	NUMBER				4-4	four 
+	5	children
+			sense:	child.n.02
+	6	:
+	7	Renaud
+			coref:	IDENT			4	7-8	Renaud II 
+			name:	PERSON				7-8	Renaud II 
+	8	II
+	9	,
+	10	Count
+			name:	TITLE				10-10	Count 
+	11	of
+	12	Soissons
+			name:	PERSON				12-13	Soissons John 
+	13	John
+	14	I
+	15	,
+	16	Count
+			name:	TITLE				16-16	Count 
+	17	of
+	18	Soissons
+			name:	CITY				18-18	Soissons 
+	19	,
+	20	married
+			sense:	marry.v.01
+			prop:	marry.01
+			V		20-20	married 
+			N-ARG-A1		7-18	Renaud II , Count of Soissons John I , Count of Soissons 
+			N-ARG-A2		21-40	to Aveline de Pierrefonds Manasses of Soissons , Bishop of Cambrai , Bishop of Soissons ( d. 1 Mar 1108 
+	21	to
+	22	Aveline
+			name:	PERSON				22-25	Aveline de Pierrefonds Manasses 
+	23	de
+	24	Pierrefonds
+	25	Manasses
+	26	of
+	27	Soissons
+			name:	CITY				27-27	Soissons 
+	28	,
+	29	Bishop
+			name:	TITLE				29-29	Bishop 
+	30	of
+	31	Cambrai
+			name:	CITY				31-31	Cambrai 
+	32	,
+	33	Bishop
+			name:	TITLE				33-33	Bishop 
+	34	of
+	35	Soissons
+			name:	CITY				35-35	Soissons 
+	36	(
+	37	d.
+			prop:	do.01
+			V		37-37	d. 
+			N-ARGM-TMP		38-40	1 Mar 1108 
+	38	1
+			name:	DATE				38-40	1 Mar 1108 
+	39	Mar
+	40	1108
+	41	)
+	42	Lithuise
+			name:	PERSON				42-44	Lithuise de Blois 
+	43	de
+	44	Blois
+	45	,
+	46	married
+			sense:	marry.v.01
+			prop:	marry.01
+			V		46-46	married 
+			N-ARG-A1		42-44	Lithuise de Blois 
+			N-ARG-A2		47-51	to Milo I of Montlhéry 
+	47	to
+	48	Milo
+			name:	PERSON				48-51	Milo I of Montlhéry 
+	49	I
+	50	of
+	51	Montlhéry
+	52	Unnamed
+			sense:	nameless.s.01
+	53	daughter
+			sense:	daughter.n.01
+	54	,
+	55	married
+			sense:	marry.v.01
+			prop:	marry.01
+			V		55-55	married 
+			N-ARG-A1		42-44	Lithuise de Blois 
+			N-ARG-A2		56-67	to Yves I of Nesle , founder of the House of Nesle 
+	56	to
+	57	Yves
+			name:	PERSON				57-60	Yves I of Nesle 
+	58	I
+	59	of
+	60	Nesle
+	61	,
+	62	founder
+			name:	TITLE				62-62	founder 
+			sense:	founder.n.02
+	63	of
+	64	the
+	65	House
+			name:	ORGANIZATION				65-67	House of Nesle 
+	66	of
+	67	Nesle
+	68	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His son Renaud became Count of Soissons upon William ’s death , and he was succeeded by his brother John .
+
+
+Treebanked sentence:
+--------------------
+His son Renaud became Count of Soissons upon William ’s death , and he was succeeded by his brother John . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP$ His) (NN son) (NNP Renaud))
+      (VP (VBD became)
+        (NP
+          (NP (NNP Count))
+          (PP (IN of)
+            (NP (NNP Soissons))))
+        (PP (IN upon)
+          (NP
+            (NP (NNP William) (POS ’s))
+            (NN death)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBD was)
+        (VP (VBN succeeded)
+          (PP (IN by)
+            (NP
+              (NP (PRP$ his) (NN brother))
+              (NP (NNP John)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			2	0-0	His 
+			coref:	IDENT			4	0-2	His son Renaud 
+	1	son
+			sense:	son.n.01
+	2	Renaud
+			name:	PERSON				2-2	Renaud 
+	3	became
+			sense:	become.v.02
+			prop:	become.01
+			V		3-3	became 
+			N-ARG-A1		0-2	His son Renaud 
+			N-ARG-A2		4-6	Count of Soissons 
+			N-ARGM-TMP		7-10	upon William ’s death 
+	4	Count
+			coref:	IDENT			0	4-6	Count of Soissons 
+			name:	TITLE				4-4	Count 
+	5	of
+	6	Soissons
+			name:	CITY				6-6	Soissons 
+	7	upon
+	8	William
+			coref:	IDENT			2	8-8	William 
+			name:	PERSON				8-8	William 
+	9	’s
+	10	death
+			sense:	death.n.01
+	11	,
+	12	and
+	13	he
+			coref:	IDENT			2	13-13	he 
+	14	was
+			sense:	be.v.01
+			prop:	be.03
+			V		14-14	was 
+	15	succeeded
+			sense:	succeed.v.02
+			prop:	succeed.02
+			V		15-15	succeeded 
+			N-ARG-A1		13-13	he 
+			N-ARG-A0		16-19	by his brother John 
+	16	by
+	17	his
+			coref:	IDENT			2	17-17	his 
+	18	brother
+			sense:	brother.n.01
+	19	John
+			name:	PERSON				19-19	John 
+	20	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.3-5	Count of Soissons 
+				7.4-6	Count of Soissons 
+	Chain 1 (IDENT)
+				0.18-19	his wife 
+				5.9-10	his wife 
+	Chain 2 (IDENT)
+				0.10-10	William 
+				0.18-18	his 
+				2.0-0	William 
+				3.0-0	William 
+				3.11-11	him 
+				5.0-0	William 
+				5.9-9	his 
+				7.0-0	His 
+				7.8-8	William 
+				7.13-13	he 
+				7.17-17	his 
+	Chain 3 (IDENT)
+				4.0-0	Adelaide 
+				6.2-2	Adelaide 
+	Chain 4 (IDENT)
+				7.0-2	His son Renaud 
+				4.4-4	Renaud 
+				6.7-8	Renaud II 
+	Chain 5 (IDENT)
+				0.0-1	William Busac 
+				2.5-5	Busac 
+

@@ -1,0 +1,570 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Andrew Nicholas Oliver and Philip Edward Oliver , together known as the Oliver Twins , are British twin brothers and video game designers .
+
+
+Treebanked sentence:
+--------------------
+Andrew Nicholas Oliver and Philip Edward Oliver , together known as the Oliver Twins , are British twin brothers and video game designers . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Andrew) (NNP Nicholas) (NNP Oliver))
+        (CC and)
+        (NP (NNP Philip) (NNP Edward) (NNP Oliver)))
+      (, ,)
+      (VP
+        (ADVP (RB together))
+        (VBN known)
+        (PP (IN as)
+          (NP (DT the) (NNP Oliver) (NNP Twins))))
+      (, ,))
+    (VP (VBP are)
+      (NP (JJ British)
+        (NML
+          (NML (JJ twin) (NNS brothers))
+          (CC and)
+          (NML (NN video) (NN game)))
+        (NNS designers)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Andrew
+			coref:	IDENT			0	0-2	Andrew Nicholas Oliver 
+			name:	PERSON				0-2	Andrew Nicholas Oliver 
+	1	Nicholas
+	2	Oliver
+	3	and
+			coref:	IDENT			0	3-6	and Philip Edward Oliver 
+	4	Philip
+			name:	PERSON				4-6	Philip Edward Oliver 
+	5	Edward
+	6	Oliver
+	7	,
+	8	together
+			sense:	together.r.05
+	9	known
+			sense:	know.v.04
+			prop:	know.01
+			V		9-9	known 
+			N-ARG-A1		0-6	Andrew Nicholas Oliver and Philip Edward Oliver 
+			N-ARGM-MNR		8-8	together 
+			N-ARG-A2		10-13	as the Oliver Twins 
+	10	as
+	11	the
+			coref:	IDENT			1	11-13	the Oliver Twins 
+	12	Oliver
+			name:	ORGANIZATION				12-13	Oliver Twins 
+	13	Twins
+	14	,
+	15	are
+			sense:	be.v.02
+			prop:	be.01
+			V		15-15	are 
+			N-ARG-A1		0-13	Andrew Nicholas Oliver and Philip Edward Oliver , together known as the Oliver Twins 
+			N-ARG-A2		16-22	British twin brothers and video game designers 
+	16	British
+			name:	NATIONALITY				16-16	British 
+	17	twin
+			sense:	duplicate.s.02
+	18	brothers
+			sense:	brother.n.01
+	19	and
+	20	video
+			sense:	video_recording.n.01
+	21	game
+			sense:	game.n.03
+	22	designers
+			sense:	architect.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+They began to professionally develop computer games while they were still at school , contributing their first type - in game to a magazine in 1983 .
+
+
+Treebanked sentence:
+--------------------
+They began to professionally develop computer games while they were still at school , contributing their first type - in game to a magazine in 1983 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD began)
+      (S
+        (VP (TO to)
+          (ADVP (RB professionally))
+          (VP (VB develop)
+            (NP (NN computer) (NNS games))
+            (SBAR (IN while)
+              (S
+                (NP (PRP they))
+                (VP (VBD were)
+                  (ADVP (RB still))
+                  (PP (IN at)
+                    (NP (NN school)))
+                  (, ,)
+                  (S
+                    (VP (VBG contributing)
+                      (NP (PRP$ their)
+                        (NML
+                          (NML (JJ first) (NN type))
+                          (HYPH -)
+                          (PP (IN in)
+                            (NP (NN game)))))
+                      (PP (IN to)
+                        (NP
+                          (NP (DT a) (NN magazine))
+                          (PP (IN in)
+                            (NP (CD 1983))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	They
+			coref:	IDENT			2	0-0	They 
+	1	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		1-1	began 
+			N-ARG-A0		0-0	They 
+			N-ARG-A1		2-12	to professionally develop computer games while they were still at school 
+			N-ARGM-PRD		14-25	contributing their first type - in game to a magazine in 1983 
+	2	to
+	3	professionally
+			sense:	professionally.r.01
+	4	develop
+			sense:	develop.v.01
+			prop:	develop.02
+			V		4-4	develop 
+			N-ARG-A0		0-0	They 
+			N-ARGM-MNR		3-3	professionally 
+			N-ARG-A1		5-6	computer games 
+			N-ARGM-TMP		7-12	while they were still at school 
+	5	computer
+			sense:	computer.n.01
+	6	games
+			sense:	game.n.03
+	7	while
+	8	they
+			coref:	IDENT			2	8-8	they 
+	9	were
+			sense:	be.v.01
+			prop:	be.01
+			V		9-9	were 
+			N-ARG-A1		8-8	they 
+			N-ARGM-TMP		10-10	still 
+			N-ARG-A2		11-12	at school 
+	10	still
+			sense:	still.r.01
+	11	at
+	12	school
+			sense:	school.n.01
+	13	,
+	14	contributing
+			sense:	contribute.v.02
+			prop:	contribute.01
+			V		14-14	contributing 
+			N-ARG-A0		0-0	They 
+			N-ARG-A1		15-20	their first type - in game 
+			N-ARG-A2		21-23	to a magazine 
+			N-ARGM-TMP		24-25	in 1983 
+	15	their
+			coref:	IDENT			2	15-15	their 
+	16	first
+			name:	ORDINAL				16-16	first 
+			sense:	first.a.01
+	17	type
+			sense:	type.n.01
+	18	-
+	19	in
+	20	game
+			sense:	game.n.03
+	21	to
+	22	a
+	23	magazine
+			sense:	magazine.n.01
+	24	in
+	25	1983
+			name:	DATE				25-25	1983 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+They worked with publishers Codemasters for a number of years following their first collaboration Super Robin Hood , creating the Dizzy series of games and many of Codemasters ' Simulator Series games .
+
+
+Treebanked sentence:
+--------------------
+They worked with publishers Codemasters for a number of years following their first collaboration Super Robin Hood , creating the Dizzy series of games and many of Codemasters ' Simulator Series games . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD worked)
+      (PP (IN with)
+        (NP
+          (NP (NNS publishers) (NNS Codemasters))
+          (PP (IN for)
+            (NP
+              (NP (DT a) (NN number))
+              (PP (IN of)
+                (NP
+                  (NP (NNS years))
+                  (PP (VBG following)
+                    (NP
+                      (NP (PRP$ their) (JJ first) (NN collaboration))
+                      (NP (NNP Super) (NNP Robin) (NNP Hood))))))))))
+      (, ,)
+      (S
+        (VP (VBG creating)
+          (NP
+            (NP (DT the) (JJ Dizzy) (NN series))
+            (PP (IN of)
+              (NP
+                (NP (NNS games))
+                (CC and)
+                (NP
+                  (ADJP (JJ many)
+                    (PP (IN of)
+                      (NP
+                        (NP (NNPS Codemasters) (POS '))
+                        (NNP Simulator) (NNP Series))))
+                  (NNS games))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	They
+			coref:	IDENT			2	0-0	They 
+	1	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		1-1	worked 
+			N-ARG-A0		0-0	They 
+			N-ARG-A3		2-4	with publishers Codemasters 
+			N-ARGM-TMP		5-9	for a number of years 
+			N-ARGM-TMP		10-16	following their first collaboration Super Robin Hood 
+			N-ARG-A1		18-31	creating the Dizzy series of games and many of Codemasters ' Simulator Series games 
+	2	with
+	3	publishers
+			sense:	publisher.n.01
+	4	Codemasters
+	5	for
+	6	a
+	7	number
+			sense:	number.n.01
+	8	of
+	9	years
+			name:	DURATION				9-9	years 
+			sense:	year.n.01
+	10	following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		10-10	following 
+			N-ARG-A2		11-16	their first collaboration Super Robin Hood 
+	11	their
+			coref:	IDENT			2	11-11	their 
+	12	first
+			name:	ORDINAL				12-12	first 
+			sense:	first.a.01
+	13	collaboration
+			sense:	collaboration.n.01
+	14	Super
+	15	Robin
+	16	Hood
+	17	,
+	18	creating
+			sense:	create.v.02
+			prop:	create.01
+			V		18-18	creating 
+			N-ARG-A0		0-0	They 
+			N-ARG-A1		19-31	the Dizzy series of games and many of Codemasters ' Simulator Series games 
+	19	the
+	20	Dizzy
+			sense:	airheaded.s.01
+	21	series
+			sense:	series.n.01
+	22	of
+	23	games
+			sense:	game.n.03
+	24	and
+	25	many
+			sense:	many.a.01
+	26	of
+	27	Codemasters
+	28	'
+	29	Simulator
+	30	Series
+	31	games
+			sense:	game.n.03
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At one point during the 1980s it was reported that 7 % of all UK games sales were attributable to the Oliver Twins .
+
+
+Treebanked sentence:
+--------------------
+At one point during the 1980s it was reported that 7 % of all UK games sales were attributable to the Oliver Twins . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (CD one) (NN point))
+        (PP (IN during)
+          (NP (DT the) (NNS 1980s)))))
+    (NP (PRP it))
+    (VP (VBD was)
+      (VP (VBN reported)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (CD 7) (NN %))
+              (PP (IN of)
+                (NP (DT all) (NNP UK) (NNS games) (NNS sales))))
+            (VP (VBD were)
+              (ADJP (JJ attributable)
+                (PP (IN to)
+                  (NP (DT the) (NNP Oliver) (NNP Twins)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	one
+			name:	NUMBER				1-1	one 
+	2	point
+			sense:	point.n.06
+	3	during
+	4	the
+			name:	DATE				4-5	the 1980s 
+	5	1980s
+	6	it
+	7	was
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	was 
+	8	reported
+			sense:	report.v.02
+			prop:	report.01
+			V		8-8	reported 
+			N-ARGM-TMP		0-5	At one point during the 1980s 
+			N-ARG-A1		9-22	that 7 % of all UK games sales were attributable to the Oliver Twins 
+	9	that
+	10	7
+			name:	PERCENT				10-11	7 % 
+	11	%
+	12	of
+	13	all
+	14	UK
+			name:	COUNTRY				14-14	UK 
+	15	games
+			sense:	game.n.03
+	16	sales
+			sense:	sale.n.01
+	17	were
+			sense:	be.v.01
+			prop:	be.01
+			V		17-17	were 
+			N-ARG-A1		10-16	7 % of all UK games sales 
+			N-ARG-A2		18-22	attributable to the Oliver Twins 
+	18	attributable
+			sense:	attributable.a.01
+	19	to
+	20	the
+			coref:	IDENT			1	20-22	the Oliver Twins 
+	21	Oliver
+			name:	ORGANIZATION				21-22	Oliver Twins 
+	22	Twins
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1990 they founded Interactive Studios which later became Blitz Games Studios .
+
+
+Treebanked sentence:
+--------------------
+In 1990 they founded Interactive Studios which later became Blitz Games Studios . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1990)))
+    (NP (PRP they))
+    (VP (VBD founded)
+      (NP
+        (NP (NNP Interactive) (NNP Studios))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (ADVP (RB later))
+            (VP (VBD became)
+              (NP (NNP Blitz) (NNPS Games) (NNP Studios)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1990
+			name:	DATE				1-1	1990 
+	2	they
+	3	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		3-3	founded 
+			N-ARGM-TMP		0-1	In 1990 
+			N-ARG-A0		2-2	they 
+			N-ARG-A1		4-11	Interactive Studios which later became Blitz Games Studios 
+	4	Interactive
+			name:	ORGANIZATION				4-5	Interactive Studios 
+	5	Studios
+	6	which
+	7	later
+			sense:	subsequently.r.01
+	8	became
+			sense:	become.v.02
+			prop:	become.01
+			V		8-8	became 
+			N-ARG-A1		4-5	Interactive Studios 
+			R-ARG-A1		6-6	which 
+			N-ARGM-TMP		7-7	later 
+			N-ARG-A2		9-11	Blitz Games Studios 
+	9	Blitz
+	10	Games
+	11	Studios
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In October 2013 they founded Radiant Worlds , based in Leamington Spa , with long time friend and colleague Richard Smithies .
+
+
+Treebanked sentence:
+--------------------
+In October 2013 they founded Radiant Worlds , based in Leamington Spa , with long time friend and colleague Richard Smithies . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP October) (CD 2013)))
+    (NP (PRP they))
+    (VP (VBD founded)
+      (NP
+        (NP (NNP Radiant) (NNPS Worlds))
+        (, ,)
+        (VP (VBN based)
+          (PP (IN in)
+            (NP (NNP Leamington) (NNP Spa))))
+        (, ,))
+      (PP (IN with)
+        (NP
+          (NP (JJ long) (NN time) (NN friend))
+          (CC and)
+          (NP (NN colleague) (NNP Richard) (NNP Smithies)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	October
+			name:	DATE				1-2	October 2013 
+	2	2013
+	3	they
+	4	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		4-4	founded 
+			N-ARGM-TMP		0-2	In October 2013 
+			N-ARG-A0		3-3	they 
+			N-ARG-A1		5-12	Radiant Worlds , based in Leamington Spa , 
+			N-ARGM-COM		13-20	with long time friend and colleague Richard Smithies 
+	5	Radiant
+			name:	ORGANIZATION				5-6	Radiant Worlds 
+	6	Worlds
+	7	,
+	8	based
+			sense:	base.v.02
+			prop:	base.01
+			V		8-8	based 
+			N-ARG-A1		5-6	Radiant Worlds 
+			N-ARGM-LOC		9-11	in Leamington Spa 
+	9	in
+	10	Leamington
+			name:	ORGANIZATION				10-11	Leamington Spa 
+	11	Spa
+	12	,
+	13	with
+	14	long
+			sense:	long.a.01
+	15	time
+			sense:	time.n.02
+	16	friend
+			sense:	friend.n.01
+	17	and
+	18	colleague
+			sense:	colleague.n.01
+	19	Richard
+			name:	PERSON				19-20	Richard Smithies 
+	20	Smithies
+	21	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.3-6	and Philip Edward Oliver 
+				0.0-2	Andrew Nicholas Oliver 
+	Chain 1 (IDENT)
+				0.11-13	the Oliver Twins 
+				3.20-22	the Oliver Twins 
+	Chain 2 (IDENT)
+				1.0-0	They 
+				1.8-8	they 
+				1.15-15	their 
+				2.0-0	They 
+				2.11-11	their 
+

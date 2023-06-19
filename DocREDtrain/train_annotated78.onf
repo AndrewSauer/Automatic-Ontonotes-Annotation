@@ -1,0 +1,910 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" Dirty Diana " is a song by American artist Michael Jackson .
+
+
+Treebanked sentence:
+--------------------
+" Dirty Diana " is a song by American artist Michael Jackson . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (`` ") (JJ Dirty) (NNP Diana) ('' "))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN song))
+        (PP (IN by)
+          (NP
+            (NML (JJ American) (NN artist))
+            (NNP Michael) (NNP Jackson)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	Dirty
+			sense:	dirty.a.02
+	2	Diana
+			coref:	IDENT			3	2-2	Diana 
+			name:	PERSON				2-2	Diana 
+	3	"
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	" Dirty Diana " 
+			N-ARG-A2		5-11	a song by American artist Michael Jackson 
+	5	a
+			coref:	IDENT			0	5-11	a song by American artist Michael Jackson 
+	6	song
+			sense:	song.n.01
+	7	by
+	8	American
+			coref:	IDENT			1	8-11	American artist Michael Jackson 
+			name:	NATIONALITY				8-8	American 
+	9	artist
+			name:	TITLE				9-9	artist 
+			sense:	artist.n.01
+	10	Michael
+			name:	PERSON				10-11	Michael Jackson 
+	11	Jackson
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is the ninth track on Jackson 's seventh studio album , Bad .
+
+
+Treebanked sentence:
+--------------------
+It is the ninth track on Jackson 's seventh studio album , Bad . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ ninth) (NN track))
+        (PP (IN on)
+          (NP
+            (NP (NNP Jackson) (POS 's))
+            (JJ seventh) (NN studio) (NN album))))
+      (, ,)
+      (S
+        (ADJP (JJ Bad))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-12	the ninth track on Jackson 's seventh studio album , Bad 
+	2	the
+	3	ninth
+			name:	ORDINAL				3-3	ninth 
+			sense:	ninth.s.01
+	4	track
+			sense:	cut.n.08
+	5	on
+	6	Jackson
+			coref:	IDENT			1	6-7	Jackson 's 
+			name:	PERSON				6-6	Jackson 
+	7	's
+	8	seventh
+			name:	ORDINAL				8-8	seventh 
+			sense:	seventh.s.01
+	9	studio
+			sense:	studio.n.01
+	10	album
+			sense:	album.n.01
+	11	,
+	12	Bad
+			sense:	bad.a.01
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The song was released by Epic Records on April 18 , 1988 as the fifth single from the album .
+
+
+Treebanked sentence:
+--------------------
+The song was released by Epic Records on April 18 , 1988 as the fifth single from the album . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN song))
+    (VP (VBD was)
+      (VP (VBN released)
+        (PP (IN by)
+          (NP (NNP Epic) (NNPS Records)))
+        (PP (IN on)
+          (NP
+            (NP (NNP April) (CD 18) (, ,) (CD 1988))
+            (PP (IN as)
+              (NP
+                (NP (DT the) (JJ fifth) (JJ single))
+                (PP (IN from)
+                  (NP (DT the) (NN album)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The song 
+	1	song
+			sense:	song.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		3-3	released 
+			N-ARG-A1		0-1	The song 
+			N-ARG-A0		4-6	by Epic Records 
+			N-ARGM-TMP		7-11	on April 18 , 1988 
+			N-ARGM-PRD		12-18	as the fifth single from the album 
+	4	by
+	5	Epic
+	6	Records
+	7	on
+	8	April
+			name:	DATE				8-11	April 18 , 1988 
+	9	18
+	10	,
+	11	1988
+	12	as
+	13	the
+	14	fifth
+			name:	ORDINAL				14-14	fifth 
+			sense:	fifth.s.01
+	15	single
+			sense:	individual.a.01
+	16	from
+	17	the
+	18	album
+			sense:	album.n.01
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It presents a harder rock sound similar to " Beat It " from Thriller ( 1982 ) and a guitar solo played by Steve Stevens .
+
+
+Treebanked sentence:
+--------------------
+It presents a harder rock sound similar to " Beat It " from Thriller ( 1982 ) and a guitar solo played by Steve Stevens . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ presents)
+        (NP
+          (NP (DT a)
+            (ADJP
+              (ADVP (RBR harder))
+              (NP (NN rock) (NN sound))
+              (JJ similar)))
+          (PP (IN to) (`` ")
+            (FRAG
+              (INTJ (NN Beat))
+              (NP (PRP It)))
+            ('' ")))
+        (PP (IN from)
+          (NP (NNP Thriller)))
+        (PRN (-LRB- -LRB-)
+          (NP (CD 1982))
+          (-RRB- -RRB-))))
+    (CC and)
+    (S
+      (NP (DT a) (NN guitar) (NN solo))
+      (VP (VBN played)
+        (PP (IN by)
+          (NP (NNP Steve) (NNP Stevens)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	presents
+			sense:	show.v.01
+			prop:	present.01
+			V		1-1	presents 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-24	a harder rock sound similar to " Beat It " from Thriller ( 1982 ) and a guitar solo played by Steve Stevens 
+	2	a
+	3	harder
+			sense:	hard.r.10
+	4	rock
+			sense:	rock_n_roll.n.01
+	5	sound
+			sense:	sound.n.01
+	6	similar
+			sense:	similar.a.01
+	7	to
+	8	"
+	9	Beat
+			sense:	rhythm.n.01
+	10	It
+			coref:	IDENT			0	10-10	It 
+	11	"
+	12	from
+	13	Thriller
+	14	(
+	15	1982
+			name:	DATE				15-15	1982 
+	16	)
+	17	and
+	18	a
+	19	guitar
+			sense:	guitar.n.01
+	20	solo
+			sense:	solo.n.02
+	21	played
+			sense:	play.v.03
+			prop:	play.01
+			V		21-21	played 
+			N-ARG-A1		18-20	a guitar solo 
+			N-ARG-A0		22-24	by Steve Stevens 
+	22	by
+	23	Steve
+			name:	PERSON				23-24	Steve Stevens 
+	24	Stevens
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" Dirty Diana " was written and co - produced by Jackson , and produced by Quincy Jones .
+
+
+Treebanked sentence:
+--------------------
+" Dirty Diana " was written and co - produced by Jackson , and produced by Quincy Jones . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (`` ") (JJ Dirty) (NNP Diana) ('' "))
+    (VP
+      (VP (VBD was)
+        (ADJP
+          (ADJP (VBN written))
+          (CC and)
+          (ADJP
+            (NP (NN co))
+            (HYPH -) (VBN produced)))
+        (PP (IN by)
+          (NP (NNP Jackson))))
+      (, ,)
+      (CC and)
+      (VP (VBN produced)
+        (PP (IN by)
+          (NP (NNP Quincy) (NNP Jones)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	Dirty
+			sense:	dirty.a.02
+	2	Diana
+			coref:	IDENT			3	2-2	Diana 
+			name:	PERSON				2-2	Diana 
+	3	"
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	written
+			sense:	compose.v.02
+			prop:	write.01
+			V		5-5	written 
+			N-ARG-A1		0-3	" Dirty Diana " 
+			N-ARG-A0		10-11	by Jackson 
+	6	and
+	7	co
+			sense:	colorado.n.01
+	8	-
+	9	produced
+			sense:	produce.v.06
+			prop:	produce.01
+			V		9-9	produced 
+			N-ARG-A1		0-3	" Dirty Diana " 
+			N-ARG-A0		10-11	by Jackson 
+	10	by
+	11	Jackson
+			coref:	IDENT			1	11-11	Jackson 
+			name:	PERSON				11-11	Jackson 
+	12	,
+	13	and
+	14	produced
+			sense:	produce.v.06
+			prop:	produce.01
+			V		14-14	produced 
+			N-ARG-A1		0-3	" Dirty Diana " 
+			N-ARG-A0		15-17	by Quincy Jones 
+	15	by
+	16	Quincy
+			name:	PERSON				16-17	Quincy Jones 
+	17	Jones
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The song 's lyrics pertain to groupies .
+
+
+Treebanked sentence:
+--------------------
+The song 's lyrics pertain to groupies . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN song) (POS 's))
+      (NNS lyrics))
+    (VP (VBP pertain)
+      (PP (IN to)
+        (NP (NNS groupies))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-2	The song 's 
+	1	song
+			sense:	song.n.01
+	2	's
+	3	lyrics
+			sense:	lyric.n.01
+	4	pertain
+			sense:	refer.v.02
+			prop:	pertain.01
+			V		4-4	pertain 
+			N-ARG-A0		0-3	The song 's lyrics 
+			N-ARG-A1		5-6	to groupies 
+	5	to
+	6	groupies
+			sense:	groupie.n.01
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" Dirty Diana " has a moderate tempo and is played in the key of G minor .
+
+
+Treebanked sentence:
+--------------------
+" Dirty Diana " has a moderate tempo and is played in the key of G minor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (`` ") (JJ Dirty) (NNP Diana) ('' "))
+    (VP
+      (VP (VBZ has)
+        (NP (DT a) (JJ moderate) (NN tempo)))
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN played)
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN key))
+              (PP (IN of)
+                (NP (NN G) (NN minor))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	Dirty
+			sense:	dirty.a.02
+	2	Diana
+			coref:	IDENT			3	2-2	Diana 
+			name:	PERSON				2-2	Diana 
+	3	"
+	4	has
+			sense:	have.v.02
+			prop:	have.03
+			V		4-4	has 
+			N-ARG-A0		0-3	" Dirty Diana " 
+			N-ARG-A1		5-7	a moderate tempo 
+	5	a
+	6	moderate
+			sense:	moderate.a.01
+	7	tempo
+			sense:	tempo.n.01
+	8	and
+	9	is
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	is 
+	10	played
+			sense:	play.v.06
+			prop:	play.01
+			V		10-10	played 
+			N-ARG-A1		0-3	" Dirty Diana " 
+			N-ARG-A2		11-16	in the key of G minor 
+	11	in
+	12	the
+	13	key
+			sense:	key.n.04
+	14	of
+	15	G
+			sense:	g.n.09
+	16	minor
+			sense:	child.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" Dirty Diana " received mixed reviews from contemporary music critics , but was a commercial success worldwide in 1988 , charting at No .
+
+
+Treebanked sentence:
+--------------------
+" Dirty Diana " received mixed reviews from contemporary music critics , but was a commercial success worldwide in 1988 , charting at No . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (`` ") (JJ Dirty) (NNP Diana) ('' "))
+    (VP
+      (VP (VBD received)
+        (NP (JJ mixed) (NNS reviews))
+        (PP (IN from)
+          (NP (JJ contemporary) (NN music) (NNS critics))))
+      (, ,)
+      (CC but)
+      (VP (VBD was)
+        (NP
+          (NP
+            (NP (DT a) (JJ commercial) (NN success))
+            (PP
+              (ADVP (RB worldwide))
+              (IN in)
+              (NP (CD 1988))))
+          (, ,)
+          (VP (VBG charting)
+            (ADVP (IN at))
+            (INTJ (UH No))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	Dirty
+			sense:	dirty.a.02
+	2	Diana
+			coref:	IDENT			3	2-2	Diana 
+			name:	PERSON				2-2	Diana 
+	3	"
+	4	received
+			sense:	receive.v.02
+			prop:	receive.01
+			V		4-4	received 
+			N-ARG-A0		0-3	" Dirty Diana " 
+			N-ARG-A1		5-6	mixed reviews 
+			N-ARG-A2		7-10	from contemporary music critics 
+	5	mixed
+			sense:	assorted.s.01
+	6	reviews
+			sense:	review.n.02
+	7	from
+	8	contemporary
+			sense:	contemporary.s.02
+	9	music
+			sense:	music.n.01
+	10	critics
+			sense:	critic.n.01
+	11	,
+	12	but
+	13	was
+			sense:	be.v.01
+			prop:	be.01
+			V		13-13	was 
+			N-ARG-A1		0-3	" Dirty Diana " 
+			N-ARG-A2		14-16	a commercial success 
+			N-ARGM-LOC		17-17	worldwide 
+			N-ARGM-TMP		18-19	in 1988 
+			N-ARGM-ADV		21-23	charting at No 
+	14	a
+	15	commercial
+			sense:	commercial.a.01
+	16	success
+			sense:	success.n.02
+	17	worldwide
+	18	in
+	19	1988
+			coref:	IDENT			2	19-19	1988 
+			name:	DATE				19-19	1988 
+	20	,
+	21	charting
+			sense:	chart.v.01
+			prop:	chart.01
+			V		21-21	charting 
+			N-ARG-A1		0-3	" Dirty Diana " 
+	22	at
+	23	No
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+1 on the United States Billboard Hot 100 .
+
+
+Treebanked sentence:
+--------------------
+1 on the United States Billboard Hot 100 . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP (CD 1))
+    (PP (IN on)
+      (NP (DT the) (NNP United) (NNP States) (NNP Billboard) (NNP Hot)))
+    (NP (CD 100))
+    (. .)))
+
+
+Leaves:
+-------
+	0	1
+			name:	NUMBER				0-0	1 
+	1	on
+	2	the
+	3	United
+			name:	COUNTRY				3-4	United States 
+	4	States
+	5	Billboard
+	6	Hot
+	7	100
+			name:	NUMBER				7-7	100 
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The song also charted within the top ten in multiple countries , including the United Kingdom , France , Italy , and New Zealand .
+
+
+Treebanked sentence:
+--------------------
+The song also charted within the top ten in multiple countries , including the United Kingdom , France , Italy , and New Zealand . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN song))
+    (ADVP (RB also))
+    (VP (VBD charted)
+      (PP (IN within)
+        (NP (DT the) (JJ top) (CD ten)))
+      (PP (IN in)
+        (NP (JJ multiple) (NNS countries)))
+      (, ,)
+      (PP (VBG including)
+        (NP (DT the)
+          (NML
+            (NML (NNP United) (NNP Kingdom))
+            (, ,)
+            (NML
+              (NP (NNP France))
+              (, ,)
+              (NP (NNP Italy))
+              (, ,))
+            (CC and)
+            (NML (NNP New) (NNP Zealand))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The song 
+	1	song
+			sense:	song.n.01
+	2	also
+			sense:	besides.r.02
+	3	charted
+			sense:	chart.v.01
+			prop:	chart.01
+			V		3-3	charted 
+			N-ARG-A1		0-1	The song 
+			N-ARGM-DIS		2-2	also 
+			N-ARGM-LOC		8-23	in multiple countries , including the United Kingdom , France , Italy , and New Zealand 
+	4	within
+	5	the
+	6	top
+			sense:	top.a.01
+	7	ten
+			name:	NUMBER				7-7	ten 
+	8	in
+	9	multiple
+			sense:	multiple.a.01
+	10	countries
+			sense:	state.n.04
+	11	,
+	12	including
+			sense:	include.v.01
+			prop:	include.01
+			V		12-12	including 
+			N-ARG-A2		9-10	multiple countries 
+			N-ARG-A1		13-23	the United Kingdom , France , Italy , and New Zealand 
+	13	the
+	14	United
+			name:	COUNTRY				14-15	United Kingdom 
+	15	Kingdom
+	16	,
+	17	France
+			name:	COUNTRY				17-17	France 
+	18	,
+	19	Italy
+			name:	COUNTRY				19-19	Italy 
+	20	,
+	21	and
+	22	New
+			name:	COUNTRY				22-23	New Zealand 
+	23	Zealand
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2009 , after Jackson 's death in June , the song re - entered charts , mainly due to digital download sales .
+
+
+Treebanked sentence:
+--------------------
+In 2009 , after Jackson 's death in June , the song re - entered charts , mainly due to digital download sales . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2009)))
+    (, ,)
+    (PP (IN after)
+      (NP
+        (NP
+          (NP (NNP Jackson) (POS 's))
+          (NN death))
+        (PP (IN in)
+          (NP (NNP June)))))
+    (, ,)
+    (S
+      (NP (DT the) (NN song))
+      (ADJP
+        (PP (IN re) (HYPH -)
+          (S
+            (VP (VBN entered)
+              (NP (NNS charts)))))))
+    (, ,)
+    (FRAG
+      (ADVP (RB mainly))
+      (PP (IN due)
+        (PP (IN to)
+          (NP (JJ digital) (NN download) (NNS sales)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2009
+			name:	DATE				1-1	2009 
+	2	,
+	3	after
+	4	Jackson
+			coref:	IDENT			1	4-5	Jackson 's 
+			name:	PERSON				4-4	Jackson 
+	5	's
+	6	death
+			sense:	death.n.01
+	7	in
+	8	June
+			name:	DATE				8-8	June 
+	9	,
+	10	the
+			coref:	IDENT			0	10-11	the song 
+	11	song
+			sense:	song.n.01
+	12	re
+	13	-
+	14	entered
+			sense:	enter.v.01
+			prop:	enter.01
+			V		14-14	entered 
+			N-ARGM-TMP		0-1	In 2009 
+			N-ARGM-TMP		3-8	after Jackson 's death in June 
+			N-ARG-A0		10-11	the song 
+			N-ARGM-ADV		12-13	re - 
+			N-ARG-A1		15-15	charts 
+			N-ARGM-CAU		17-22	mainly due to digital download sales 
+	15	charts
+			sense:	chart.n.01
+	16	,
+	17	mainly
+			sense:	chiefly.r.01
+	18	due
+	19	to
+	20	digital
+			sense:	digital.a.03
+	21	download
+	22	sales
+			sense:	sale.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A music video for " Dirty Diana " was filmed in front of a live audience and released in 1988 .
+
+
+Treebanked sentence:
+--------------------
+A music video for " Dirty Diana " was filmed in front of a live audience and released in 1988 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN music) (NN video))
+      (PP (IN for) (`` ")
+        (NP (JJ Dirty) (NNP Diana))
+        ('' ")))
+    (VP (VBD was)
+      (VP
+        (VP (VBN filmed)
+          (PP (IN in)
+            (NP
+              (NP (NN front))
+              (PP (IN of)
+                (NP (DT a) (JJ live) (NN audience))))))
+        (CC and)
+        (VP (VBN released)
+          (PP (IN in)
+            (NP (CD 1988))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	music
+			sense:	music.n.01
+	2	video
+			sense:	video_recording.n.01
+	3	for
+	4	"
+			coref:	IDENT			3	4-6	" Dirty Diana 
+	5	Dirty
+			sense:	dirty.a.02
+	6	Diana
+			name:	PERSON				6-6	Diana 
+	7	"
+	8	was
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	was 
+	9	filmed
+			sense:	film.v.01
+			prop:	film.01
+			V		9-9	filmed 
+			N-ARG-A1		0-7	A music video for " Dirty Diana " 
+			N-ARGM-LOC		10-15	in front of a live audience 
+	10	in
+	11	front
+			sense:	presence.n.02
+	12	of
+	13	a
+	14	live
+			sense:	live.a.01
+	15	audience
+			sense:	audience.n.01
+	16	and
+	17	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		17-17	released 
+			N-ARG-A1		0-7	A music video for " Dirty Diana " 
+			N-ARGM-TMP		18-19	in 1988 
+	18	in
+	19	1988
+			coref:	IDENT			2	19-19	1988 
+			name:	DATE				19-19	1988 
+	20	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.5-11	a song by American artist Michael Jackson 
+				2.0-1	The song 
+				3.0-0	It 
+				3.10-10	It 
+				5.0-2	The song 's 
+				9.0-1	The song 
+				10.10-11	the song 
+	Chain 1 (IDENT)
+				0.8-11	American artist Michael Jackson 
+				1.6-7	Jackson 's 
+				4.11-11	Jackson 
+				10.4-5	Jackson 's 
+	Chain 2 (IDENT)
+				7.19-19	1988 
+				11.19-19	1988 
+	Chain 3 (IDENT)
+				11.4-6	" Dirty Diana 
+				0.2-2	Diana 
+				4.2-2	Diana 
+				6.2-2	Diana 
+				7.2-2	Diana 
+

@@ -1,0 +1,464 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sandy Hook is a barrier spit in Middletown Township , Monmouth County , New Jersey , United States .
+
+
+Treebanked sentence:
+--------------------
+Sandy Hook is a barrier spit in Middletown Township , Monmouth County , New Jersey , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Sandy) (NNP Hook))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN barrier) (NN spit))
+        (PP (IN in)
+          (NP
+            (NML
+              (NML (NNP Middletown) (NNP Township))
+              (, ,)
+              (NML (NNP Monmouth) (NNP County))
+              (, ,)
+              (NML (NNP New) (NNP Jersey))
+              (, ,))
+            (NNP United) (NNP States)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sandy
+			coref:	IDENT			0	0-1	Sandy Hook 
+			name:	PERSON				0-1	Sandy Hook 
+	1	Hook
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Sandy Hook 
+			N-ARG-A2		3-17	a barrier spit in Middletown Township , Monmouth County , New Jersey , United States 
+	3	a
+	4	barrier
+			sense:	barrier.n.03
+	5	spit
+			sense:	spit.n.01
+	6	in
+	7	Middletown
+			name:	CITY				7-7	Middletown 
+	8	Township
+			name:	LOCATION				8-8	Township 
+	9	,
+	10	Monmouth
+			name:	CITY				10-10	Monmouth 
+	11	County
+			name:	LOCATION				11-11	County 
+	12	,
+	13	New
+			name:	STATE_OR_PROVINCE				13-14	New Jersey 
+	14	Jersey
+	15	,
+	16	United
+			name:	COUNTRY				16-17	United States 
+	17	States
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The barrier spit , approximately in length and varying from wide , is located at the north end of the Jersey Shore .
+
+
+Treebanked sentence:
+--------------------
+The barrier spit , approximately in length and varying from wide , is located at the north end of the Jersey Shore . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN barrier) (NN spit))
+      (, ,)
+      (UCP
+        (ADJP (RB approximately)
+          (PP (IN in)
+            (NP (NN length))))
+        (CC and)
+        (VP (VBG varying)
+          (ADVP (IN from) (RB wide)))))
+    (, ,)
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NN north) (NN end))
+            (PP (IN of)
+              (NP (DT the) (NNP Jersey) (NNP Shore)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	barrier
+			sense:	barrier.n.03
+	2	spit
+			sense:	spit.n.01
+	3	,
+	4	approximately
+			sense:	approximately.r.01
+	5	in
+	6	length
+			sense:	length.n.01
+	7	and
+	8	varying
+			sense:	change.v.03
+			prop:	vary.01
+			V		8-8	varying 
+			N-ARG-A1		0-2	The barrier spit 
+			N-ARG-A3		9-10	from wide 
+	9	from
+	10	wide
+			sense:	wide.r.01
+	11	,
+	12	is
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	is 
+	13	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		13-13	located 
+			N-ARG-A1		0-10	The barrier spit , approximately in length and varying from wide 
+			N-ARGM-LOC		14-21	at the north end of the Jersey Shore 
+	14	at
+	15	the
+	16	north
+			sense:	north.n.03
+	17	end
+			sense:	end.n.01
+	18	of
+	19	the
+	20	Jersey
+			name:	LOCATION				20-21	Jersey Shore 
+	21	Shore
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It encloses the southern entrance of Lower New York Bay south of New York City , protecting it from the open waters of the Atlantic Ocean to the east .
+
+
+Treebanked sentence:
+--------------------
+It encloses the southern entrance of Lower New York Bay south of New York City , protecting it from the open waters of the Atlantic Ocean to the east . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ encloses)
+      (NP
+        (NP (DT the) (JJ southern) (NN entrance))
+        (PP (IN of)
+          (NP
+            (NP
+              (NML (NNP Lower) (NNP New) (NNP York) (NNP Bay))
+              (NN south))
+            (PP (IN of)
+              (NP
+                (NML (NNP New) (NNP York))
+                (NNP City))))))
+      (, ,)
+      (S
+        (VP (VBG protecting)
+          (NP (PRP it))
+          (PP (IN from)
+            (NP
+              (NP (DT the) (JJ open) (NNS waters))
+              (PP (IN of)
+                (NP (DT the) (NNP Atlantic) (NNP Ocean)))))
+          (PP (IN to)
+            (NP (DT the) (NN east))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	encloses
+			sense:	enclose.v.02
+			prop:	enclose.01
+			V		1-1	encloses 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-14	the southern entrance of Lower New York Bay south of New York City 
+			N-ARGM-ADV		16-28	protecting it from the open waters of the Atlantic Ocean to the east 
+	2	the
+	3	southern
+			sense:	southern.a.03
+	4	entrance
+			sense:	entrance.n.01
+	5	of
+	6	Lower
+			name:	LOCATION				6-6	Lower 
+	7	New
+			name:	STATE_OR_PROVINCE				7-8	New York 
+	8	York
+	9	Bay
+			name:	CITY				9-9	Bay 
+	10	south
+			sense:	south.n.03
+	11	of
+	12	New
+			name:	CITY				12-14	New York City 
+	13	York
+	14	City
+	15	,
+	16	protecting
+			sense:	protect.v.01
+			prop:	protect.01
+			V		16-16	protecting 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		17-17	it 
+			N-ARG-A2		18-28	from the open waters of the Atlantic Ocean to the east 
+	17	it
+	18	from
+	19	the
+	20	open
+			sense:	clear.s.03
+	21	waters
+			sense:	body_of_water.n.01
+	22	of
+	23	the
+	24	Atlantic
+			name:	LOCATION				24-25	Atlantic Ocean 
+	25	Ocean
+	26	to
+	27	the
+	28	east
+			sense:	east.n.01
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Dutch called the area " Sant Hoek " , with the English " Hook " deriving from the Dutch " Hoek " ( corner , angle ) , meaning " spit of land " .
+
+
+Treebanked sentence:
+--------------------
+The Dutch called the area " Sant Hoek " , with the English " Hook " deriving from the Dutch " Hoek " ( corner , angle ) , meaning " spit of land " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Dutch))
+    (VP (VBD called)
+      (NP
+        (NP (DT the) (NN area))
+        (`` ")
+        (NP (NNP Sant) (NNP Hoek))
+        ('' "))
+      (, ,)
+      (PP (IN with)
+        (NP
+          (NP (DT the) (NNP English) (`` ") (NNP Hook) ('' "))
+          (VP (VBG deriving)
+            (PP (IN from)
+              (NP (DT the) (JJ Dutch) (`` ")
+                (NML
+                  (NML (NNP Hoek))
+                  ('' ") (-LRB- -LRB-)
+                  (NP
+                    (NP (NN corner))
+                    (, ,)
+                    (NP (NN angle)))
+                  (-RRB- -RRB-))))
+            (, ,)
+            (S
+              (VP (VBG meaning)
+                (NP (`` ")
+                  (NP (NN spit))
+                  (PP (IN of)
+                    (NP (NN land)))
+                  ('' "))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Dutch
+			name:	NATIONALITY				1-1	Dutch 
+	2	called
+			sense:	name.v.01
+			prop:	call.01
+			V		2-2	called 
+			N-ARG-A0		0-1	The Dutch 
+			N-ARG-A1		3-4	the area 
+			N-ARG-A2		5-8	" Sant Hoek " 
+			N-ARGM-PRD		10-34	with the English " Hook " deriving from the Dutch " Hoek " ( corner , angle ) , meaning " spit of land " 
+	3	the
+	4	area
+			sense:	area.n.01
+	5	"
+	6	Sant
+	7	Hoek
+	8	"
+	9	,
+	10	with
+	11	the
+	12	English
+			name:	NATIONALITY				12-12	English 
+	13	"
+	14	Hook
+			name:	MISC				14-14	Hook 
+	15	"
+	16	deriving
+			sense:	derive.v.03
+			prop:	derive.01
+			V		16-16	deriving 
+			N-ARG-A1		11-15	the English " Hook " 
+			N-ARG-A2		17-34	from the Dutch " Hoek " ( corner , angle ) , meaning " spit of land " 
+	17	from
+	18	the
+	19	Dutch
+			name:	NATIONALITY				19-19	Dutch 
+			sense:	dutch.a.01
+	20	"
+	21	Hoek
+	22	"
+	23	(
+	24	corner
+			sense:	corner.n.02
+	25	,
+	26	angle
+			sense:	angle.n.01
+	27	)
+	28	,
+	29	meaning
+			sense:	mean.v.03
+			prop:	mean.01
+			V		29-29	meaning 
+			N-ARG-A1		30-34	" spit of land " 
+	30	"
+	31	spit
+			sense:	spit.n.01
+	32	of
+	33	land
+			sense:	land.n.04
+	34	"
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Most of Sandy Hook is currently owned and managed by the National Park Service as the Sandy Hook Unit of Gateway National Recreation Area .
+
+
+Treebanked sentence:
+--------------------
+Most of Sandy Hook is currently owned and managed by the National Park Service as the Sandy Hook Unit of Gateway National Recreation Area . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (JJS Most))
+      (PP (IN of)
+        (NP (NNP Sandy) (NNP Hook))))
+    (VP (VBZ is)
+      (ADVP (RB currently))
+      (VP (VBN owned)
+        (CC and)
+        (VBN managed)
+        (PP (IN by)
+          (NP (DT the) (NNP National) (NNP Park) (NNP Service)))
+        (PP (IN as)
+          (NP
+            (NP (DT the) (NNP Sandy) (NNP Hook) (NNP Unit))
+            (PP (IN of)
+              (NP (NNP Gateway)
+                (NML (NNP National) (NNP Recreation))
+                (NNP Area)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Most
+			sense:	most.a.02
+	1	of
+	2	Sandy
+			coref:	IDENT			0	2-3	Sandy Hook 
+			name:	PERSON				2-3	Sandy Hook 
+	3	Hook
+	4	is
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	is 
+	5	currently
+			name:	DATE				5-5	currently 
+			sense:	presently.r.02
+	6	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		6-6	owned 
+			N-ARG-A1		0-3	Most of Sandy Hook 
+			N-ARGM-TMP		5-5	currently 
+			N-ARG-A0		9-13	by the National Park Service 
+			N-ARGM-PRD		14-23	as the Sandy Hook Unit of Gateway National Recreation Area 
+	7	and
+	8	managed
+			sense:	oversee.v.01
+			prop:	manage.01
+			V		8-8	managed 
+			N-ARG-A1		0-3	Most of Sandy Hook 
+			N-ARGM-TMP		5-5	currently 
+			N-ARG-A0		9-13	by the National Park Service 
+			N-ARGM-PRD		14-23	as the Sandy Hook Unit of Gateway National Recreation Area 
+	9	by
+	10	the
+	11	National
+			name:	ORGANIZATION				11-13	National Park Service 
+	12	Park
+	13	Service
+	14	as
+	15	the
+	16	Sandy
+			name:	ORGANIZATION				16-23	Sandy Hook Unit of Gateway National Recreation Area 
+	17	Hook
+	18	Unit
+	19	of
+	20	Gateway
+	21	National
+	22	Recreation
+	23	Area
+	24	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Sandy Hook 
+				4.2-3	Sandy Hook 
+

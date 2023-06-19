@@ -1,0 +1,491 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Emma Trott ( born 24 December 1989 ) is a retired English racing cyclist from Cheshunt , currently based in Christchurch , New Zealand .
+
+
+Treebanked sentence:
+--------------------
+Emma Trott ( born 24 December 1989 ) is a retired English racing cyclist from Cheshunt , currently based in Christchurch , New Zealand . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Emma) (NNP Trott))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 24))
+        (NP-TMP (NNP December) (CD 1989)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT a) (JJ retired) (NNP English) (NN racing) (NN cyclist))
+          (PP (IN from)
+            (NP (NNP Cheshunt))))
+        (, ,)
+        (VP
+          (ADVP (RB currently))
+          (VBN based)
+          (PP (IN in)
+            (NP (NNP Christchurch) (, ,) (NNP New) (NNP Zealand))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Emma
+			name:	PERSON				0-1	Emma Trott 
+	1	Trott
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Emma Trott 
+			N-ARGM-TMP		4-6	24 December 1989 
+	4	24
+			name:	DATE				4-6	24 December 1989 
+	5	December
+	6	1989
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	Emma Trott ( born 24 December 1989 ) 
+			N-ARG-A2		9-23	a retired English racing cyclist from Cheshunt , currently based in Christchurch , New Zealand 
+	9	a
+	10	retired
+			sense:	retired.s.01
+	11	English
+			name:	NATIONALITY				11-11	English 
+	12	racing
+			sense:	racing.n.01
+	13	cyclist
+			name:	TITLE				13-13	cyclist 
+			sense:	cyclist.n.01
+	14	from
+	15	Cheshunt
+			name:	CITY				15-15	Cheshunt 
+	16	,
+	17	currently
+			name:	DATE				17-17	currently 
+			sense:	presently.r.02
+	18	based
+			sense:	base.v.02
+			prop:	base.01
+			V		18-18	based 
+			N-ARG-A1		9-15	a retired English racing cyclist from Cheshunt 
+			N-ARGM-TMP		17-17	currently 
+			N-ARGM-LOC		19-23	in Christchurch , New Zealand 
+	19	in
+	20	Christchurch
+			coref:	IDENT			0	20-23	Christchurch , New Zealand 
+			name:	CITY				20-20	Christchurch 
+	21	,
+	22	New
+			name:	COUNTRY				22-23	New Zealand 
+	23	Zealand
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She rode for the Dutch women 's professional team Dolmans - Boels from the 2012 to the 2014 season .
+
+
+Treebanked sentence:
+--------------------
+She rode for the Dutch women 's professional team Dolmans - Boels from the 2012 to the 2014 season . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD rode)
+      (PP (IN for)
+        (NP
+          (NP (DT the) (JJ Dutch) (NNS women) (POS 's))
+          (JJ professional) (NN team)
+          (NML (NNP Dolmans) (HYPH -) (NNP Boels))))
+      (PP (IN from)
+        (NP
+          (NP (DT the) (CD 2012))
+          (PP (IN to)
+            (NP (DT the) (CD 2014) (NN season))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	rode
+			sense:	ride.v.10
+			prop:	ride.01
+			V		1-1	rode 
+			N-ARG-A0		0-0	She 
+			N-ARGM-GOL		2-11	for the Dutch women 's professional team Dolmans - Boels 
+			N-ARGM-TMP		12-18	from the 2012 to the 2014 season 
+	2	for
+	3	the
+			coref:	IDENT			1	3-6	the Dutch women 's 
+	4	Dutch
+			name:	NATIONALITY				4-4	Dutch 
+			sense:	dutch.a.01
+	5	women
+			sense:	woman.n.01
+	6	's
+	7	professional
+			sense:	professional.a.01
+	8	team
+			sense:	team.n.01
+	9	Dolmans
+			name:	MISC				9-9	Dolmans 
+	10	-
+	11	Boels
+	12	from
+	13	the
+	14	2012
+			name:	DATE				14-14	2012 
+	15	to
+	16	the
+	17	2014
+			name:	DATE				17-17	2014 
+	18	season
+			sense:	season.n.01
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On 10 May 2014 , Trott announced she would retire from road racing after the final stage of the Friends Life Women ’s Tour the following day .
+
+
+Treebanked sentence:
+--------------------
+On 10 May 2014 , Trott announced she would retire from road racing after the final stage of the Friends Life Women ’s Tour the following day . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (CD 10)))
+    (NP-TMP (NNP May) (CD 2014))
+    (, ,)
+    (NP (NNP Trott))
+    (VP (VBD announced)
+      (SBAR
+        (S
+          (NP (PRP she))
+          (VP (MD would)
+            (VP (VB retire)
+              (PP (IN from)
+                (NP
+                  (NP (NN road) (NN racing))
+                  (PP (IN after)
+                    (NP
+                      (NP (DT the) (JJ final) (NN stage))
+                      (PP (IN of)
+                        (NP
+                          (NP (DT the) (NNPS Friends) (NNP Life) (NNP Women) (POS ’s))
+                          (NNP Tour)))))))
+              (NP (DT the) (VBG following) (NN day)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	10
+			name:	DATE				1-3	10 May 2014 
+	2	May
+	3	2014
+	4	,
+	5	Trott
+			name:	PERSON				5-5	Trott 
+	6	announced
+			sense:	announce.v.01
+			prop:	announce.01
+			V		6-6	announced 
+			N-ARGM-TMP		0-3	On 10 May 2014 
+			N-ARG-A0		5-5	Trott 
+			N-ARG-A1		7-26	she would retire from road racing after the final stage of the Friends Life Women ’s Tour the following day 
+	7	she
+	8	would
+	9	retire
+			sense:	retire.v.02
+			prop:	retire.01
+			V		9-9	retire 
+			N-ARG-A0		7-7	she 
+			N-ARGM-MOD		8-8	would 
+			N-ARG-A1		10-12	from road racing 
+			N-ARGM-TMP		13-26	after the final stage of the Friends Life Women ’s Tour the following day 
+	10	from
+	11	road
+			sense:	road.n.01
+	12	racing
+			sense:	racing.n.01
+	13	after
+	14	the
+	15	final
+			sense:	concluding.s.01
+	16	stage
+			sense:	stage.n.06
+	17	of
+	18	the
+			coref:	IDENT			1	18-22	the Friends Life Women ’s 
+	19	Friends
+			name:	MISC				19-23	Friends Life Women ’s Tour 
+	20	Life
+	21	Women
+	22	’s
+	23	Tour
+	24	the
+			name:	DATE				24-26	the following day 
+	25	following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		25-25	following 
+			N-ARG-A1		26-26	day 
+	26	day
+			sense:	day.n.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She became a personal trainer and cycling coach in New Zealand before returning to the UK to join the coaching team for British Cycling 's women 's academy programme from November 2018 .
+
+
+Treebanked sentence:
+--------------------
+She became a personal trainer and cycling coach in New Zealand before returning to the UK to join the coaching team for British Cycling 's women 's academy programme from November 2018 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD became)
+      (NP
+        (NP (DT a) (JJ personal)
+          (NML (NN trainer)
+            (CC and)
+            (NN cycling))
+          (NN coach))
+        (PP (IN in)
+          (NP (NNP New) (NNP Zealand))))
+      (PP (IN before)
+        (S
+          (VP (VBG returning)
+            (PP (IN to)
+              (NP (DT the) (NNP UK)))
+            (S
+              (VP (TO to)
+                (VP (VB join)
+                  (NP (DT the) (NN coaching) (NN team))
+                  (PP (IN for)
+                    (NP
+                      (NP
+                        (NP
+                          (NP (JJ British) (NNP Cycling) (POS 's))
+                          (NNS women) (POS 's))
+                        (NN academy) (NN programme))
+                      (PP (IN from)
+                        (NP (NNP November) (CD 2018))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	became
+			sense:	become.v.02
+			prop:	become.01
+			V		1-1	became 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-7	a personal trainer and cycling coach 
+			N-ARGM-LOC		8-10	in New Zealand 
+			N-ARGM-TMP		11-31	before returning to the UK to join the coaching team for British Cycling 's women 's academy programme from November 2018 
+	2	a
+	3	personal
+			name:	TITLE				3-4	personal trainer 
+			sense:	personal.a.01
+	4	trainer
+			sense:	trainer.n.01
+	5	and
+	6	cycling
+			sense:	cycling.n.01
+	7	coach
+			name:	TITLE				7-7	coach 
+			sense:	coach.n.01
+	8	in
+	9	New
+			coref:	IDENT			0	9-10	New Zealand 
+			name:	COUNTRY				9-10	New Zealand 
+	10	Zealand
+	11	before
+	12	returning
+			sense:	return.v.01
+			prop:	return.01
+			V		12-12	returning 
+			N-ARG-A1		0-0	She 
+			N-ARG-A4		13-15	to the UK 
+			N-ARGM-PRP		16-31	to join the coaching team for British Cycling 's women 's academy programme from November 2018 
+	13	to
+	14	the
+	15	UK
+			name:	COUNTRY				15-15	UK 
+	16	to
+	17	join
+			sense:	join.v.01
+			prop:	join.01
+			V		17-17	join 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		18-28	the coaching team for British Cycling 's women 's academy programme 
+			N-ARGM-TMP		29-31	from November 2018 
+	18	the
+	19	coaching
+			sense:	coaching.n.01
+	20	team
+			sense:	team.n.01
+	21	for
+	22	British
+			name:	ORGANIZATION				22-23	British Cycling 
+	23	Cycling
+	24	's
+	25	women
+			sense:	womanhood.n.02
+	26	's
+	27	academy
+			sense:	academy.n.03
+	28	programme
+			sense:	program.n.02
+	29	from
+	30	November
+			name:	DATE				30-31	November 2018 
+	31	2018
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She is the older sister of fellow cyclist and Olympic Gold medalist Laura Trott , and the long term partner of New Zealand road racing cyclist Linda Villumsen .
+
+
+Treebanked sentence:
+--------------------
+She is the older sister of fellow cyclist and Olympic Gold medalist Laura Trott , and the long term partner of New Zealand road racing cyclist Linda Villumsen . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT the) (JJR older) (NN sister))
+          (PP (IN of)
+            (NP (JJ fellow) (NN cyclist))))
+        (CC and)
+        (NP
+          (NP (JJ Olympic) (NN Gold) (NN medalist))
+          (NP (NNP Laura) (NNP Trott)))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (DT the)
+            (NML (JJ long) (NN term))
+            (NN partner))
+          (PP (IN of)
+            (NP
+              (NP
+                (NML (NNP New) (NNP Zealand))
+                (NN road) (NN racing) (NN cyclist))
+              (NP (NNP Linda) (NNP Villumsen)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-27	the older sister of fellow cyclist and Olympic Gold medalist Laura Trott , and the long term partner of New Zealand road racing cyclist Linda Villumsen 
+	2	the
+	3	older
+			sense:	old.a.01
+	4	sister
+			sense:	sister.n.01
+	5	of
+	6	fellow
+	7	cyclist
+			name:	TITLE				7-7	cyclist 
+			sense:	cyclist.n.01
+	8	and
+	9	Olympic
+			name:	MISC				9-9	Olympic 
+	10	Gold
+			sense:	gold.n.01
+	11	medalist
+			sense:	medalist.n.01
+	12	Laura
+			name:	PERSON				12-13	Laura Trott 
+	13	Trott
+	14	,
+	15	and
+	16	the
+	17	long
+			sense:	long.a.01
+	18	term
+			sense:	term.n.02
+	19	partner
+			sense:	spouse.n.01
+	20	of
+	21	New
+			coref:	IDENT			0	21-22	New Zealand 
+			name:	COUNTRY				21-22	New Zealand 
+	22	Zealand
+	23	road
+			sense:	road.n.01
+	24	racing
+			sense:	racing.n.01
+	25	cyclist
+			name:	TITLE				25-25	cyclist 
+			sense:	cyclist.n.01
+	26	Linda
+			name:	PERSON				26-27	Linda Villumsen 
+	27	Villumsen
+	28	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.20-23	Christchurch , New Zealand 
+				3.9-10	New Zealand 
+				4.21-22	New Zealand 
+	Chain 1 (IDENT)
+				2.18-22	the Friends Life Women ’s 
+				1.3-6	the Dutch women 's 
+

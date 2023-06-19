@@ -1,0 +1,591 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+West Sister Island is an island of the U.S. state of Ohio located in the Western Basin of Lake Erie .
+
+
+Treebanked sentence:
+--------------------
+West Sister Island is an island of the U.S. state of Ohio located in the Western Basin of Lake Erie . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP West) (NNP Sister) (NNP Island))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN island))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP U.S.) (NN state))
+            (PP (IN of)
+              (NP
+                (NP (NNP Ohio))
+                (VP (VBN located)
+                  (PP (IN in)
+                    (NP
+                      (NP (DT the) (NNP Western) (NNP Basin))
+                      (PP (IN of)
+                        (NP (NNP Lake) (NNP Erie))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	West
+			name:	LOCATION				0-2	West Sister Island 
+	1	Sister
+	2	Island
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	West Sister Island 
+			N-ARG-A2		4-19	an island of the U.S. state of Ohio located in the Western Basin of Lake Erie 
+	4	an
+	5	island
+			sense:	island.n.01
+	6	of
+	7	the
+	8	U.S.
+			name:	COUNTRY				8-8	U.S. 
+	9	state
+			sense:	state.n.01
+	10	of
+	11	Ohio
+			coref:	IDENT			1	11-11	Ohio 
+			name:	STATE_OR_PROVINCE				11-11	Ohio 
+	12	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		12-12	located 
+			N-ARG-A1		4-11	an island of the U.S. state of Ohio 
+			N-ARGM-LOC		13-19	in the Western Basin of Lake Erie 
+	13	in
+	14	the
+	15	Western
+			name:	LOCATION				15-18	Western Basin of Lake 
+	16	Basin
+	17	of
+	18	Lake
+	19	Erie
+			name:	CITY				19-19	Erie 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The island , jointly owned by the United States Coast Guard and the U.S. 
+
+
+Treebanked sentence:
+--------------------
+The island , jointly owned by the United States Coast Guard and the U.S. Fish and Wildlife Service , is Ohio 's only designated Wilderness Area , the West Sister Island National Wildlife Refuge . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN island))
+      (, ,)
+      (VP
+        (ADVP (RB jointly))
+        (VBN owned)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NNP United)
+              (NML (NNP States) (NNP Coast))
+              (NNP Guard))
+            (CC and)
+            (NP (DT the) (NNP U.S.)
+              (NML (NNP Fish)
+                (CC and)
+                (NNP Wildlife))
+              (NNP Service)))))
+      (, ,))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (NNP Ohio) (POS 's))
+          (ADJP (RB only) (VBN designated))
+          (NN Wilderness) (NN Area))
+        (, ,)
+        (NP (DT the) (NNP West) (NNP Sister) (NNP Island) (NNP National) (NNP Wildlife) (NNP Refuge))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-17	The island , jointly owned by the United States Coast Guard and the U.S. Fish and Wildlife Service 
+	1	island
+			sense:	island.n.01
+	2	,
+	3	jointly
+			sense:	jointly.r.01
+	4	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		4-4	owned 
+			N-ARG-A1		0-1	The island 
+			N-ARGM-MNR		3-3	jointly 
+			N-ARG-A0		5-17	by the United States Coast Guard and the U.S. Fish and Wildlife Service 
+	5	by
+	6	the
+	7	United
+			name:	ORGANIZATION				7-10	United States Coast Guard 
+	8	States
+	9	Coast
+	10	Guard
+	11	and
+	12	the
+	13	U.S.
+			name:	COUNTRY				13-13	U.S. 
+	14	Fish
+	15	and
+	16	Wildlife
+			name:	ORGANIZATION				16-17	Wildlife Service 
+	17	Service
+	18	,
+	19	is
+			sense:	be.v.02
+			prop:	be.01
+			V		19-19	is 
+			N-ARG-A1		0-18	The island , jointly owned by the United States Coast Guard and the U.S. Fish and Wildlife Service , 
+			N-ARG-A2		20-33	Ohio 's only designated Wilderness Area , the West Sister Island National Wildlife Refuge 
+	20	Ohio
+			coref:	IDENT			1	20-21	Ohio 's 
+			name:	STATE_OR_PROVINCE				20-20	Ohio 
+	21	's
+	22	only
+			sense:	entirely.r.02
+	23	designated
+			sense:	intend.v.02
+			prop:	designate.01
+			V		23-23	designated 
+			N-ARG-A1		24-25	Wilderness Area 
+	24	Wilderness
+			sense:	wilderness.n.03
+	25	Area
+			sense:	area.n.01
+	26	,
+	27	the
+	28	West
+			name:	LOCATION				28-33	West Sister Island National Wildlife Refuge 
+	29	Sister
+	30	Island
+	31	National
+	32	Wildlife
+	33	Refuge
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Most of the island is covered with trees .
+
+
+Treebanked sentence:
+--------------------
+Most of the island is covered with trees . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (JJS Most))
+      (PP (IN of)
+        (NP (DT the) (NN island))))
+    (VP (VBZ is)
+      (VP (VBN covered)
+        (PP (IN with)
+          (NP (NNS trees)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Most
+			sense:	most.a.02
+	1	of
+	2	the
+			coref:	IDENT			0	2-3	the island 
+	3	island
+			sense:	island.n.01
+	4	is
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	is 
+	5	covered
+			sense:	cover.v.01
+			prop:	cover.02
+			V		5-5	covered 
+			N-ARG-A1		0-3	Most of the island 
+			N-ARG-A2		6-7	with trees 
+	6	with
+	7	trees
+			sense:	tree.n.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Tall hackberry trees make up most of the canopy , with poison ivy on the ground .
+
+
+Treebanked sentence:
+--------------------
+Tall hackberry trees make up most of the canopy , with poison ivy on the ground . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (JJ Tall) (NN hackberry) (NNS trees))
+    (VP (VBP make)
+      (PRT (RP up))
+      (NP
+        (NP (JJS most))
+        (PP (IN of)
+          (NP (DT the) (NN canopy)))
+        (, ,)
+        (PP (IN with)
+          (NP (NN poison) (NN ivy))))
+      (PP (IN on)
+        (NP (DT the) (NN ground))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Tall
+			sense:	tall.a.01
+	1	hackberry
+			sense:	hackberry.n.01
+	2	trees
+			sense:	tree.n.01
+	3	make
+			sense:	form.v.02
+			prop:	make.07
+			V		3-3	make 
+			N-ARG-A0		0-2	Tall hackberry trees 
+			N-ARG-A1		5-8	most of the canopy 
+			N-ARGM-ADV		10-15	with poison ivy on the ground 
+	4	up
+	5	most
+			sense:	most.a.02
+	6	of
+	7	the
+	8	canopy
+			sense:	canopy.n.03
+	9	,
+	10	with
+	11	poison
+			name:	CAUSE_OF_DEATH				11-11	poison 
+			sense:	poison.n.01
+	12	ivy
+			sense:	ivy.n.01
+	13	on
+	14	the
+	15	ground
+			sense:	land.n.04
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Polygonatum and a great variety of ferns , wildflowers , mushrooms , and other plant life can also be found .
+
+
+Treebanked sentence:
+--------------------
+Polygonatum and a great variety of ferns , wildflowers , mushrooms , and other plant life can also be found . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Polygonatum))
+      (CC and)
+      (NP
+        (NP (DT a) (JJ great) (NN variety))
+        (PP (IN of)
+          (NP
+            (NP (NNS ferns))
+            (, ,)
+            (NP (NNS wildflowers))
+            (, ,)
+            (NP (NNS mushrooms))
+            (, ,)
+            (CC and)
+            (NP (JJ other) (NN plant) (NN life))))))
+    (VP (MD can)
+      (ADVP (RB also))
+      (VP (VB be)
+        (VP (VBN found))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Polygonatum
+	1	and
+	2	a
+	3	great
+			sense:	great.s.01
+	4	variety
+			sense:	assortment.n.01
+	5	of
+	6	ferns
+			sense:	fern.n.01
+	7	,
+	8	wildflowers
+			sense:	wildflower.n.01
+	9	,
+	10	mushrooms
+			sense:	mushroom.n.05
+	11	,
+	12	and
+	13	other
+			sense:	other.a.01
+	14	plant
+			sense:	plant.n.02
+	15	life
+			sense:	life.n.10
+	16	can
+	17	also
+			sense:	besides.r.02
+	18	be
+			sense:	be.v.01
+			prop:	be.03
+			V		18-18	be 
+	19	found
+			sense:	find.v.01
+			prop:	find.01
+			V		19-19	found 
+			N-ARG-A1		0-15	Polygonatum and a great variety of ferns , wildflowers , mushrooms , and other plant life 
+			N-ARGM-MOD		16-16	can 
+			N-ARGM-ADV		17-17	also 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The island is part of the Pelee Archipelago which also includes East Sister Island and Middle Sister Island ( both in Ontario , Canada ) .
+
+
+Treebanked sentence:
+--------------------
+The island is part of the Pelee Archipelago which also includes East Sister Island and Middle Sister Island ( both in Ontario , Canada ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN island))
+    (VP (VBZ is)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Pelee) (NNP Archipelago))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (ADVP (RB also))
+                (VP (VBZ includes)
+                  (NP
+                    (NP (NNP East) (NNP Sister) (NNP Island))
+                    (CC and)
+                    (NP (NNP Middle) (NNP Sister) (NNP Island)))
+                  (PP (-LRB- -LRB-)
+                    (CC both)
+                    (PP (IN in)
+                      (NP (NNP Ontario) (, ,) (NNP Canada)))
+                    (-RRB- -RRB-)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The island 
+	1	island
+			sense:	island.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The island 
+			N-ARG-A2		3-24	part of the Pelee Archipelago which also includes East Sister Island and Middle Sister Island ( both in Ontario , Canada ) 
+	3	part
+			sense:	part.n.01
+	4	of
+	5	the
+	6	Pelee
+			name:	LOCATION				6-7	Pelee Archipelago 
+	7	Archipelago
+	8	which
+	9	also
+			sense:	besides.r.02
+	10	includes
+			sense:	include.v.01
+			prop:	include.01
+			V		10-10	includes 
+			N-ARG-A2		5-7	the Pelee Archipelago 
+			R-ARG-A2		8-8	which 
+			N-ARGM-ADV		9-9	also 
+			N-ARG-A1		11-24	East Sister Island and Middle Sister Island ( both in Ontario , Canada ) 
+	11	East
+			coref:	IDENT			0	11-13	East Sister Island 
+			name:	LOCATION				11-13	East Sister Island 
+	12	Sister
+	13	Island
+	14	and
+	15	Middle
+			coref:	IDENT			0	15-17	Middle Sister Island 
+			name:	LOCATION				15-17	Middle Sister Island 
+	16	Sister
+	17	Island
+	18	(
+	19	both
+	20	in
+	21	Ontario
+			name:	STATE_OR_PROVINCE				21-21	Ontario 
+	22	,
+	23	Canada
+			name:	COUNTRY				23-23	Canada 
+	24	)
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+West Sister Island is roughly 13 miles west of Rattlesnake Island , 14.5 miles east of Turtle Island , and 8.75 miles due north of the Ohio mainland .
+
+
+Treebanked sentence:
+--------------------
+West Sister Island is roughly 13 miles west of Rattlesnake Island , 14.5 miles east of Turtle Island , and 8.75 miles due north of the Ohio mainland . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP West) (NNP Sister) (NNP Island))
+    (VP (VBZ is)
+      (ADVP
+        (NP
+          (QP (RB roughly) (CD 13))
+          (NNS miles))
+        (RB west))
+      (PP
+        (PP (IN of)
+          (NP (NNP Rattlesnake) (NNP Island)))
+        (, ,)
+        (PP
+          (ADVP
+            (NP (CD 14.5) (NNS miles))
+            (RB east))
+          (IN of)
+          (NP (NNP Turtle) (NNP Island)))
+        (, ,)
+        (CC and)
+        (PP
+          (NP (CD 8.75) (NNS miles))
+          (IN due)
+          (NP
+            (NP (NN north))
+            (PP (IN of)
+              (NP (DT the) (NNP Ohio) (NN mainland)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	West
+			name:	LOCATION				0-2	West Sister Island 
+	1	Sister
+	2	Island
+	3	is
+			sense:	be.v.03
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	West Sister Island 
+			N-ARG-A2		4-27	roughly 13 miles west of Rattlesnake Island , 14.5 miles east of Turtle Island , and 8.75 miles due north of the Ohio mainland 
+	4	roughly
+			sense:	approximately.r.01
+	5	13
+			name:	NUMBER				5-5	13 
+	6	miles
+			sense:	mile.n.01
+	7	west
+			sense:	west.r.01
+	8	of
+	9	Rattlesnake
+			coref:	IDENT			0	9-10	Rattlesnake Island 
+			name:	LOCATION				9-10	Rattlesnake Island 
+	10	Island
+	11	,
+	12	14.5
+			name:	NUMBER				12-12	14.5 
+	13	miles
+			sense:	mile.n.01
+	14	east
+			sense:	east.r.01
+	15	of
+	16	Turtle
+			name:	LOCATION				16-17	Turtle Island 
+	17	Island
+	18	,
+	19	and
+	20	8.75
+			name:	NUMBER				20-20	8.75 
+	21	miles
+			sense:	mile.n.01
+	22	due
+	23	north
+			sense:	north.n.03
+	24	of
+	25	the
+	26	Ohio
+			coref:	IDENT			1	26-26	Ohio 
+			name:	STATE_OR_PROVINCE				26-26	Ohio 
+	27	mainland
+			sense:	mainland.n.01
+	28	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.11-13	East Sister Island 
+				1.0-17	The island , jointly owned by the United States Coast Guard and the U.S. Fish and Wildlife Service 
+				2.2-3	the island 
+				5.0-1	The island 
+				5.15-17	Middle Sister Island 
+				6.9-10	Rattlesnake Island 
+	Chain 1 (IDENT)
+				1.20-21	Ohio 's 
+				0.11-11	Ohio 
+				6.26-26	Ohio 
+

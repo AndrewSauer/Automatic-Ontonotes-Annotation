@@ -1,0 +1,547 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Philip Maneval ( born 1956 ) is an American composer and arts administrator .
+
+
+Treebanked sentence:
+--------------------
+Philip Maneval ( born 1956 ) is an American composer and arts administrator . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Philip) (NNP Maneval))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 1956)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ American) (NN composer))
+        (CC and)
+        (NP (NNS arts) (NN administrator))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Philip
+			coref:	IDENT			0	0-1	Philip Maneval 
+			name:	PERSON				0-1	Philip Maneval 
+	1	Maneval
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Philip Maneval 
+			N-ARGM-TMP		4-4	1956 
+	4	1956
+			name:	DATE				4-4	1956 
+	5	)
+	6	is
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	is 
+			N-ARG-A1		0-5	Philip Maneval ( born 1956 ) 
+			N-ARG-A2		7-12	an American composer and arts administrator 
+	7	an
+	8	American
+			name:	NATIONALITY				8-8	American 
+	9	composer
+			name:	TITLE				9-9	composer 
+			sense:	composer.n.01
+	10	and
+	11	arts
+			sense:	art.n.01
+	12	administrator
+			name:	TITLE				12-12	administrator 
+			sense:	administrator.n.01
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As a composer , Maneval has written more than 35 solo , chamber music and orchestral works which have been played by groups including the Chicago String Quartet and Miami String Quartet , and performed at the Marlboro Music Festival and Kimmel Center for the Performing Arts .
+
+
+Treebanked sentence:
+--------------------
+As a composer , Maneval has written more than 35 solo , chamber music and orchestral works which have been played by groups including the Chicago String Quartet and Miami String Quartet , and performed at the Marlboro Music Festival and Kimmel Center for the Performing Arts . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN As)
+      (NP (DT a) (NN composer)))
+    (, ,)
+    (NP (NNP Maneval))
+    (VP (VBZ has)
+      (VP (VBN written)
+        (NP
+          (NP
+            (QP (JJR more) (IN than) (CD 35))
+            (NN solo))
+          (, ,)
+          (NP (NN chamber) (NN music))
+          (CC and)
+          (NP
+            (NP (JJ orchestral) (NNS works))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBP have)
+                  (VP (VBN been)
+                    (VP
+                      (VP (VBN played)
+                        (PP (IN by)
+                          (NP
+                            (NP (NNS groups))
+                            (PP (VBG including)
+                              (NP (DT the) (NNP Chicago) (NN String)))
+                            (NML
+                              (NML (NN Quartet))
+                              (CC and)
+                              (NML
+                                (ADJP (NNP Miami) (NNP String))
+                                (NN Quartet))))))
+                      (, ,)
+                      (CC and)
+                      (VP (VBN performed)
+                        (PP (IN at)
+                          (NP
+                            (NP (DT the) (NNP Marlboro) (NNP Music) (NNP Festival))
+                            (CC and)
+                            (NP (NNP Kimmel) (NNP Center))))
+                        (PP (IN for)
+                          (NP (DT the) (NNP Performing) (NNPS Arts)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	a
+	2	composer
+			name:	TITLE				2-2	composer 
+			sense:	composer.n.01
+	3	,
+	4	Maneval
+			coref:	IDENT			0	4-4	Maneval 
+			name:	PERSON				4-4	Maneval 
+	5	has
+			sense:	have.v.01
+			prop:	have.01
+			V		5-5	has 
+	6	written
+			sense:	compose.v.02
+			prop:	write.01
+			V		6-6	written 
+			N-ARGM-PRD		0-2	As a composer 
+			N-ARG-A0		4-4	Maneval 
+			N-ARG-A1		7-31	more than 35 solo , chamber music and orchestral works which have been played by groups including the Chicago String Quartet and Miami String Quartet 
+	7	more
+			sense:	more.a.02
+	8	than
+	9	35
+			name:	NUMBER				9-9	35 
+	10	solo
+			sense:	solo.n.02
+	11	,
+	12	chamber
+			sense:	chamber.n.01
+	13	music
+			sense:	music.n.01
+	14	and
+	15	orchestral
+			sense:	orchestral.a.01
+	16	works
+			sense:	work.n.02
+	17	which
+	18	have
+			sense:	have.v.01
+			prop:	have.01
+			V		18-18	have 
+	19	been
+			sense:	be.v.01
+			prop:	be.03
+			V		19-19	been 
+	20	played
+			sense:	play.v.03
+			prop:	play.01
+			V		20-20	played 
+			N-ARG-A1		7-16	more than 35 solo , chamber music and orchestral works 
+			R-ARG-A1		17-17	which 
+			N-ARG-A0		21-31	by groups including the Chicago String Quartet and Miami String Quartet 
+	21	by
+	22	groups
+			sense:	group.n.01
+	23	including
+			sense:	include.v.01
+			prop:	include.01
+			V		23-23	including 
+			N-ARG-A2		22-22	groups 
+			N-ARG-A1		24-31	the Chicago String Quartet and Miami String Quartet 
+	24	the
+	25	Chicago
+			name:	CITY				25-25	Chicago 
+	26	String
+			sense:	bowed_stringed_instrument.n.01
+	27	Quartet
+			sense:	quartet.n.02
+	28	and
+	29	Miami
+			name:	CITY				29-29	Miami 
+	30	String
+	31	Quartet
+			sense:	quartet.n.02
+	32	,
+	33	and
+	34	performed
+			sense:	perform.v.03
+			prop:	perform.01
+			V		34-34	performed 
+			N-ARG-A1		17-17	which 
+			N-ARGM-LOC		35-46	at the Marlboro Music Festival and Kimmel Center for the Performing Arts 
+	35	at
+	36	the
+	37	Marlboro
+	38	Music
+	39	Festival
+	40	and
+	41	Kimmel
+			name:	PERSON				41-42	Kimmel Center 
+	42	Center
+	43	for
+	44	the
+	45	Performing
+	46	Arts
+	47	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As an administrator , Maneval is the Executive Director of the Philadelphia Chamber Music Society and Manager of the Marlboro Music School and Festival .
+
+
+Treebanked sentence:
+--------------------
+As an administrator , Maneval is the Executive Director of the Philadelphia Chamber Music Society and Manager of the Marlboro Music School and Festival . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN As)
+      (NP (DT an) (NN administrator)))
+    (, ,)
+    (NP (NNP Maneval))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT the) (JJ Executive) (NN Director))
+          (PP (IN of)
+            (NP (DT the) (NNP Philadelphia) (NNP Chamber) (NNP Music) (NNP Society))))
+        (CC and)
+        (NP
+          (NP (NNP Manager))
+          (PP (IN of)
+            (NP (DT the) (NNP Marlboro) (NNP Music) (NNP School)
+              (CC and)
+              (NNP Festival))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	an
+	2	administrator
+			name:	TITLE				2-2	administrator 
+			sense:	administrator.n.01
+	3	,
+	4	Maneval
+			coref:	IDENT			0	4-4	Maneval 
+			name:	PERSON				4-4	Maneval 
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARGM-PRD		0-2	As an administrator 
+			N-ARG-A1		4-4	Maneval 
+			N-ARG-A2		6-23	the Executive Director of the Philadelphia Chamber Music Society and Manager of the Marlboro Music School and Festival 
+	6	the
+	7	Executive
+			name:	TITLE				7-8	Executive Director 
+			sense:	executive.a.01
+	8	Director
+			sense:	director.n.01
+	9	of
+	10	the
+	11	Philadelphia
+			name:	ORGANIZATION				11-14	Philadelphia Chamber Music Society 
+	12	Chamber
+	13	Music
+	14	Society
+	15	and
+	16	Manager
+			name:	TITLE				16-16	Manager 
+	17	of
+	18	the
+	19	Marlboro
+			name:	ORGANIZATION				19-21	Marlboro Music School 
+	20	Music
+	21	School
+	22	and
+	23	Festival
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Maneval grew up in Leonia , New Jersey .
+
+
+Treebanked sentence:
+--------------------
+Maneval grew up in Leonia , New Jersey . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (JJ Maneval))
+    (VP (VBD grew)
+      (PRT (RP up))
+      (PP (IN in)
+        (NP (NNP Leonia) (, ,) (NNP New) (NNP Jersey))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Maneval
+	1	grew
+			sense:	mature.v.01
+			prop:	grow.04
+			V		1-1	grew 
+			N-ARG-A1		0-0	Maneval 
+			N-ARGM-LOC		3-7	in Leonia , New Jersey 
+	2	up
+	3	in
+	4	Leonia
+			name:	LOCATION				4-4	Leonia 
+	5	,
+	6	New
+			name:	STATE_OR_PROVINCE				6-7	New Jersey 
+	7	Jersey
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He studied composition at the Oberlin Conservatory of Music and in the graduate school at the University of Pennsylvania .
+
+
+Treebanked sentence:
+--------------------
+He studied composition at the Oberlin Conservatory of Music and in the graduate school at the University of Pennsylvania . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD studied)
+      (NP (NN composition))
+      (PP
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP Oberlin) (NNP Conservatory))
+            (PP (IN of)
+              (NP (NNP Music)))))
+        (CC and)
+        (PP (IN in)
+          (NP (DT the) (NN graduate) (NN school))))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NNP University))
+          (PP (IN of)
+            (NP (NNP Pennsylvania))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	studied
+			sense:	learn.v.04
+			prop:	study.01
+			V		1-1	studied 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-2	composition 
+			N-ARGM-LOC		3-18	at the Oberlin Conservatory of Music and in the graduate school at the University of Pennsylvania 
+	2	composition
+			sense:	composing.n.02
+	3	at
+	4	the
+	5	Oberlin
+			name:	ORGANIZATION				5-8	Oberlin Conservatory of Music 
+	6	Conservatory
+	7	of
+	8	Music
+	9	and
+	10	in
+	11	the
+	12	graduate
+			sense:	alumnus.n.01
+	13	school
+			sense:	school.n.01
+	14	at
+	15	the
+	16	University
+			name:	ORGANIZATION				16-18	University of Pennsylvania 
+	17	of
+	18	Pennsylvania
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His teachers included Richard Wernick , George Crumb and George Rochberg .
+
+
+Treebanked sentence:
+--------------------
+His teachers included Richard Wernick , George Crumb and George Rochberg . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His) (NNS teachers))
+    (VP (VBD included)
+      (NP
+        (NP (NNP Richard) (NNP Wernick))
+        (, ,)
+        (NP (NNP George) (NNP Crumb))
+        (CC and)
+        (NP (NNP George) (NNP Rochberg))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+	1	teachers
+			sense:	teacher.n.01
+	2	included
+			sense:	include.v.01
+			prop:	include.01
+			V		2-2	included 
+			N-ARG-A2		0-1	His teachers 
+			N-ARG-A1		3-10	Richard Wernick , George Crumb and George Rochberg 
+	3	Richard
+			name:	PERSON				3-4	Richard Wernick 
+	4	Wernick
+	5	,
+	6	George
+			name:	PERSON				6-7	George Crumb 
+	7	Crumb
+	8	and
+	9	George
+			name:	PERSON				9-10	George Rochberg 
+	10	Rochberg
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As of 2008 , he lives in Swarthmore , Pennsylvania , with his wife and two children .
+
+
+Treebanked sentence:
+--------------------
+As of 2008 , he lives in Swarthmore , Pennsylvania , with his wife and two children . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN As)
+      (PP (IN of)
+        (NP (CD 2008))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBZ lives)
+      (PP (IN in)
+        (NP (NNP Swarthmore) (, ,) (NNP Pennsylvania) (, ,)))
+      (PP (IN with)
+        (NP
+          (NP (PRP$ his) (NN wife))
+          (CC and)
+          (NP (CD two) (NNS children)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	of
+	2	2008
+			name:	DATE				2-2	2008 
+	3	,
+	4	he
+	5	lives
+			sense:	populate.v.01
+			prop:	live.01
+			V		5-5	lives 
+			N-ARGM-TMP		0-2	As of 2008 
+			N-ARG-A0		4-4	he 
+			N-ARGM-LOC		6-9	in Swarthmore , Pennsylvania 
+			N-ARGM-MNR		11-16	with his wife and two children 
+	6	in
+	7	Swarthmore
+			name:	LOCATION				7-7	Swarthmore 
+	8	,
+	9	Pennsylvania
+			name:	STATE_OR_PROVINCE				9-9	Pennsylvania 
+	10	,
+	11	with
+	12	his
+	13	wife
+			sense:	wife.n.01
+	14	and
+	15	two
+			name:	NUMBER				15-15	two 
+	16	children
+			sense:	child.n.02
+	17	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Philip Maneval 
+				1.4-4	Maneval 
+				2.4-4	Maneval 
+

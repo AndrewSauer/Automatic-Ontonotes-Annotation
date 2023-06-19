@@ -1,0 +1,455 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+South Salem is a hamlet in the Town of Lewisboro , Westchester County , in the U.S. state of New York .
+
+
+Treebanked sentence:
+--------------------
+South Salem is a hamlet in the Town of Lewisboro , Westchester County , in the U.S. state of New York . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP South) (NNP Salem))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN hamlet))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN Town))
+            (PP (IN of)
+              (NP
+                (NP (NNP Lewisboro))
+                (, ,)
+                (NP (NNP Westchester) (NNP County))
+                (, ,)))))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNP U.S.) (NN state))
+            (PP (IN of)
+              (NP (NNP New) (NNP York)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	South
+			name:	LOCATION				0-0	South 
+	1	Salem
+			name:	CITY				1-1	Salem 
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	South Salem 
+			N-ARG-A2		3-20	a hamlet in the Town of Lewisboro , Westchester County , in the U.S. state of New York 
+	3	a
+	4	hamlet
+			sense:	hamlet.n.01
+	5	in
+	6	the
+	7	Town
+			sense:	township.n.01
+	8	of
+	9	Lewisboro
+			name:	LOCATION				9-9	Lewisboro 
+	10	,
+	11	Westchester
+			name:	CITY				11-11	Westchester 
+	12	County
+			name:	LOCATION				12-12	County 
+	13	,
+	14	in
+	15	the
+	16	U.S.
+			name:	COUNTRY				16-16	U.S. 
+	17	state
+			sense:	state.n.01
+	18	of
+	19	New
+			name:	STATE_OR_PROVINCE				19-20	New York 
+	20	York
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Part of the New York metropolitan area , the town center has a post office , town hall , library , and recycling center .
+
+
+Treebanked sentence:
+--------------------
+Part of the New York metropolitan area , the town center has a post office , town hall , library , and recycling center . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NN Part))
+      (PP (IN of)
+        (NP
+          (NP (DT the)
+            (NML (NNP New) (NNP York))
+            (JJ metropolitan) (NN area))
+          (, ,)
+          (NP (DT the) (NN town) (NN center)))))
+    (VP (VBZ has)
+      (NP
+        (NP (DT a) (NN post) (NN office))
+        (, ,)
+        (NP (NN town) (NN hall))
+        (, ,)
+        (NP (NN library))
+        (, ,)
+        (CC and)
+        (NP (VBG recycling) (NN center))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Part
+			sense:	part.n.01
+	1	of
+	2	the
+	3	New
+			name:	STATE_OR_PROVINCE				3-4	New York 
+	4	York
+	5	metropolitan
+			sense:	metropolitan.a.01
+	6	area
+			sense:	area.n.01
+	7	,
+	8	the
+	9	town
+			sense:	township.n.01
+	10	center
+			sense:	center.n.01
+	11	has
+			sense:	have.v.02
+			prop:	have.03
+			V		11-11	has 
+			N-ARGM-PRD		0-6	Part of the New York metropolitan area 
+			N-ARG-A0		8-10	the town center 
+			N-ARG-A1		12-23	a post office , town hall , library , and recycling center 
+	12	a
+	13	post
+			sense:	post.n.11
+	14	office
+			sense:	office.n.01
+	15	,
+	16	town
+			sense:	township.n.01
+	17	hall
+			sense:	hall.n.13
+	18	,
+	19	library
+			sense:	library.n.05
+	20	,
+	21	and
+	22	recycling
+			sense:	recycle.v.02
+			prop:	recline.01
+			V		22-22	recycling 
+			N-ARG-A0		23-23	center 
+	23	center
+			sense:	center.n.03
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Notable residents have included the 33rd Vice President of the United States Henry A. Wallace , Major John Andre ( British spy held captive ) , Rolling Stones guitarist Keith Richards , photographer O. Winston Link , artist Charles Sheeler ( American , 1883 – 1965 ) , pianist Hélène Grimaud , composer and arranger Clare Grundman , singer and musical stage headliner Sally Ann Howes , actress Colleen Dewhurst , and notorious real estate scion Robert Durst .
+
+
+Treebanked sentence:
+--------------------
+Notable residents have included the 33rd Vice President of the United States Henry A. Wallace , Major John Andre ( British spy held captive ) , Rolling Stones guitarist Keith Richards , photographer O. Winston Link , artist Charles Sheeler ( American , 1883 – 1965 ) , pianist Hélène Grimaud , composer and arranger Clare Grundman , singer and musical stage headliner Sally Ann Howes , actress Colleen Dewhurst , and notorious real estate scion Robert Durst . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (JJ Notable) (NNS residents))
+    (VP (VBP have)
+      (VP (VBN included)
+        (NP
+          (NP (DT the) (JJ 33rd)
+            (NML (NNP Vice) (NNP President)))
+          (PP (IN of)
+            (NP
+              (NP (DT the)
+                (NML (NNP United) (NNP States))
+                (NNP Henry) (NNP A.) (NNP Wallace))
+              (, ,)
+              (NP
+                (NP (NNP Major) (NNP John) (NNP Andre))
+                (-LRB- -LRB-)
+                (NP
+                  (NP (JJ British) (NN spy))
+                  (VP (VBN held)
+                    (S
+                      (ADJP (JJ captive)))))
+                (-RRB- -RRB-))
+              (, ,)
+              (NP
+                (NML
+                  (NML (NNP Rolling) (NNPS Stones))
+                  (NN guitarist))
+                (NNP Keith) (NNP Richards))
+              (, ,)
+              (NP (NNP photographer) (NNP O.) (NNP Winston) (NNP Link))
+              (, ,)
+              (NP (NN artist)
+                (NML (NNP Charles) (NNP Sheeler))
+                (PRN (-LRB- -LRB-)
+                  (NP (NNP American))
+                  (, ,)
+                  (NP (CD 1883) (SYM –) (CD 1965))
+                  (-RRB- -RRB-)))
+              (, ,)
+              (NP (NN pianist))
+              (NP
+                (NP (NNP Hélène) (NNP Grimaud))
+                (, ,)
+                (NP (NN composer)))
+              (CC and)
+              (NP (NN arranger) (NNP Clare) (NNP Grundman))
+              (, ,)
+              (NP
+                (NML
+                  (NML (NN singer))
+                  (CC and)
+                  (NML (JJ musical) (NN stage) (NN headliner)))
+                (NNP Sally) (NNP Ann) (NNP Howes))
+              (, ,)
+              (NP (NN actress) (NNP Colleen) (NNP Dewhurst))
+              (, ,)
+              (CC and)
+              (NP (JJ notorious)
+                (NML (JJ real) (NN estate) (NN scion))
+                (NNP Robert) (NNP Durst)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Notable
+			sense:	celebrated.s.01
+	1	residents
+			sense:	resident.n.01
+	2	have
+			sense:	have.v.01
+			prop:	have.01
+			V		2-2	have 
+	3	included
+			sense:	include.v.01
+			prop:	include.01
+			V		3-3	included 
+			N-ARG-A2		0-1	Notable residents 
+			N-ARG-A1		4-77	the 33rd Vice President of the United States Henry A. Wallace , Major John Andre ( British spy held captive ) , Rolling Stones guitarist Keith Richards , photographer O. Winston Link , artist Charles Sheeler ( American , 1883 – 1965 ) , pianist Hélène Grimaud , composer and arranger Clare Grundman , singer and musical stage headliner Sally Ann Howes , actress Colleen Dewhurst , and notorious real estate scion Robert Durst 
+	4	the
+	5	33rd
+			name:	ORDINAL				5-5	33rd 
+			sense:	thirty-third.s.01
+	6	Vice
+			name:	TITLE				6-7	Vice President 
+	7	President
+	8	of
+	9	the
+	10	United
+			name:	COUNTRY				10-11	United States 
+	11	States
+	12	Henry
+			name:	PERSON				12-14	Henry A. Wallace 
+	13	A.
+	14	Wallace
+	15	,
+	16	Major
+			name:	TITLE				16-16	Major 
+	17	John
+			name:	PERSON				17-18	John Andre 
+	18	Andre
+	19	(
+	20	British
+			name:	NATIONALITY				20-20	British 
+	21	spy
+			sense:	spy.n.01
+	22	held
+			sense:	restrain.v.03
+			prop:	hold.01
+			V		22-22	held 
+			N-ARG-A1		20-21	British spy 
+			N-ARG-A3		23-23	captive 
+	23	captive
+			sense:	captive.s.01
+	24	)
+	25	,
+	26	Rolling
+			name:	ORGANIZATION				26-27	Rolling Stones 
+	27	Stones
+	28	guitarist
+			name:	TITLE				28-28	guitarist 
+			sense:	guitarist.n.01
+	29	Keith
+			name:	PERSON				29-30	Keith Richards 
+	30	Richards
+	31	,
+	32	photographer
+			name:	TITLE				32-32	photographer 
+	33	O.
+			name:	PERSON				33-35	O. Winston Link 
+	34	Winston
+	35	Link
+	36	,
+	37	artist
+			name:	TITLE				37-37	artist 
+			sense:	artist.n.01
+	38	Charles
+			name:	PERSON				38-39	Charles Sheeler 
+	39	Sheeler
+	40	(
+	41	American
+			name:	NATIONALITY				41-41	American 
+	42	,
+	43	1883
+			name:	DATE				43-43	1883 
+	44	–
+	45	1965
+			name:	DATE				45-45	1965 
+	46	)
+	47	,
+	48	pianist
+			name:	TITLE				48-48	pianist 
+			sense:	pianist.n.01
+	49	Hélène
+			name:	PERSON				49-50	Hélène Grimaud 
+	50	Grimaud
+	51	,
+	52	composer
+			name:	TITLE				52-52	composer 
+			sense:	composer.n.01
+	53	and
+	54	arranger
+			name:	TITLE				54-54	arranger 
+			sense:	arranger.n.02
+	55	Clare
+			name:	PERSON				55-56	Clare Grundman 
+	56	Grundman
+	57	,
+	58	singer
+			name:	TITLE				58-58	singer 
+			sense:	singer.n.01
+	59	and
+	60	musical
+			sense:	musical.a.01
+	61	stage
+			sense:	stage.n.03
+	62	headliner
+			sense:	headliner.n.01
+	63	Sally
+			name:	PERSON				63-65	Sally Ann Howes 
+	64	Ann
+	65	Howes
+	66	,
+	67	actress
+			name:	TITLE				67-67	actress 
+			sense:	actress.n.01
+	68	Colleen
+			name:	PERSON				68-69	Colleen Dewhurst 
+	69	Dewhurst
+	70	,
+	71	and
+	72	notorious
+			sense:	ill-famed.s.01
+	73	real
+			sense:	real.a.01
+	74	estate
+			sense:	estate.n.01
+	75	scion
+			sense:	scion.n.01
+	76	Robert
+			name:	PERSON				76-77	Robert Durst 
+	77	Durst
+	78	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Osborn - Bouton - Mead House was added to the National Register of Historic Places in 2004 .
+
+
+Treebanked sentence:
+--------------------
+The Osborn - Bouton - Mead House was added to the National Register of Historic Places in 2004 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Osborn) (HYPH -) (NNP Bouton) (HYPH -) (NNP Mead))
+      (NP (NNP House)))
+    (VP (VBD was)
+      (VP (VBN added)
+        (PP (IN to)
+          (NP
+            (NP (DT the) (NNP National) (NNP Register))
+            (PP (IN of)
+              (NP (JJ Historic) (NNS Places)))))
+        (PP (IN in)
+          (NP (CD 2004)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Osborn
+			name:	ORGANIZATION				1-6	Osborn - Bouton - Mead House 
+	2	-
+	3	Bouton
+	4	-
+	5	Mead
+	6	House
+	7	was
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	was 
+	8	added
+			sense:	add.v.01
+			prop:	add.02
+			V		8-8	added 
+			N-ARG-A1		0-6	The Osborn - Bouton - Mead House 
+			N-ARG-A2		9-15	to the National Register of Historic Places 
+			N-ARGM-TMP		16-17	in 2004 
+	9	to
+	10	the
+	11	National
+	12	Register
+	13	of
+	14	Historic
+			sense:	historic.s.01
+	15	Places
+			sense:	place.n.02
+	16	in
+	17	2004
+			name:	DATE				17-17	2004 
+	18	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+

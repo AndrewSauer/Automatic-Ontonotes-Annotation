@@ -1,0 +1,832 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Comal County ( ) is a county located on the Edwards Plateau in the U.S. state of Texas .
+
+
+Treebanked sentence:
+--------------------
+Comal County ( ) is a county located on the Edwards Plateau in the U.S. state of Texas . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Comal) (NNP County) (-LRB- -LRB-) (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN county))
+        (VP (VBN located)
+          (PP (IN on)
+            (NP (DT the) (NNP Edwards) (NNP Plateau)))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NNP U.S.) (NN state))
+              (PP (IN of)
+                (NP (NNP Texas))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Comal
+			coref:	IDENT			1	0-1	Comal County 
+			name:	CITY				0-0	Comal 
+	1	County
+			name:	LOCATION				1-1	County 
+	2	(
+	3	)
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-1	Comal County 
+			N-ARG-A2		5-17	a county located on the Edwards Plateau in the U.S. state of Texas 
+	5	a
+	6	county
+			sense:	county.n.01
+	7	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		7-7	located 
+			N-ARG-A1		5-6	a county 
+			N-ARGM-LOC		8-17	on the Edwards Plateau in the U.S. state of Texas 
+	8	on
+	9	the
+	10	Edwards
+			name:	LOCATION				10-11	Edwards Plateau 
+	11	Plateau
+	12	in
+	13	the
+	14	U.S.
+			name:	COUNTRY				14-14	U.S. 
+	15	state
+			sense:	state.n.01
+	16	of
+	17	Texas
+			name:	STATE_OR_PROVINCE				17-17	Texas 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As of the 2010 census , its population was 108,472 .
+
+
+Treebanked sentence:
+--------------------
+As of the 2010 census , its population was 108,472 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN As)
+      (PP (IN of)
+        (NP (DT the) (CD 2010) (NN census))))
+    (, ,)
+    (NP (PRP$ its) (NN population))
+    (VP (VBD was)
+      (NP (CD 108,472)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	of
+	2	the
+	3	2010
+			name:	DATE				3-3	2010 
+	4	census
+			sense:	census.n.01
+	5	,
+	6	its
+			coref:	IDENT			4	6-6	its 
+	7	population
+			sense:	population.n.04
+	8	was
+			sense:	equal.v.01
+			prop:	be.01
+			V		8-8	was 
+			N-ARGM-TMP		0-4	As of the 2010 census 
+			N-ARG-A1		6-7	its population 
+			N-ARG-A2		9-9	108,472 
+	9	108,472
+			name:	NUMBER				9-9	108,472 
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Its county seat is New Braunfels .
+
+
+Treebanked sentence:
+--------------------
+Its county seat is New Braunfels . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ Its) (NN county) (NN seat))
+    (VP (VBZ is)
+      (NP (JJ New) (NNPS Braunfels)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Its
+			coref:	IDENT			4	0-0	Its 
+	1	county
+			sense:	county.n.01
+	2	seat
+			sense:	seat.n.05
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Its county seat 
+			N-ARG-A2		4-5	New Braunfels 
+	4	New
+			name:	CITY				4-5	New Braunfels 
+			sense:	new.a.01
+	5	Braunfels
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Comal County is part of the San Antonio - New Braunfels , TX Metropolitan Statistical Area .
+
+
+Treebanked sentence:
+--------------------
+Comal County is part of the San Antonio - New Braunfels , TX Metropolitan Statistical Area . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Comal) (NNP County))
+    (VP (VBZ is)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP San)
+              (NML (NNP Antonio) (HYPH -) (NNP New))
+              (NNP Braunfels))
+            (, ,)
+            (NP (NNP TX) (NNP Metropolitan) (NNP Statistical) (NNP Area))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Comal
+			coref:	IDENT			1	0-1	Comal County 
+			name:	CITY				0-0	Comal 
+	1	County
+			name:	LOCATION				1-1	County 
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Comal County 
+			N-ARG-A2		3-15	part of the San Antonio - New Braunfels , TX Metropolitan Statistical Area 
+	3	part
+			sense:	part.n.01
+	4	of
+	5	the
+	6	San
+			coref:	IDENT			3	6-7	San Antonio 
+			name:	CITY				6-7	San Antonio 
+	7	Antonio
+	8	-
+	9	New
+			name:	CITY				9-10	New Braunfels 
+	10	Braunfels
+	11	,
+	12	TX
+			name:	STATE_OR_PROVINCE				12-12	TX 
+	13	Metropolitan
+	14	Statistical
+	15	Area
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Along with Hays and Kendall counties , Comal was listed in 2017 of the nation 's ten fastest - growing large counties with a population of at least ten thousand .
+
+
+Treebanked sentence:
+--------------------
+Along with Hays and Kendall counties , Comal was listed in 2017 of the nation 's ten fastest - growing large counties with a population of at least ten thousand . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Along)
+      (PP (IN with)
+        (NP
+          (NP (NNP Hays))
+          (CC and)
+          (NP (NNP Kendall) (NNS counties)))))
+    (, ,)
+    (NP (NNP Comal))
+    (VP (VBD was)
+      (VP (VBN listed)
+        (PP (IN in)
+          (NP
+            (NP (CD 2017))
+            (PP (IN of)
+              (NP
+                (NP
+                  (NP (DT the) (NN nation) (POS 's))
+                  (CD ten)
+                  (ADJP
+                    (ADJP (RBS fastest) (HYPH -) (VBG growing))
+                    (JJ large))
+                  (NNS counties))
+                (PP (IN with)
+                  (NP
+                    (NP (DT a) (NN population))
+                    (PP (IN of)
+                      (NP
+                        (QP
+                          (ADVP (RB at) (RBS least))
+                          (CD ten) (CD thousand))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Along
+	1	with
+	2	Hays
+			name:	PERSON				2-2	Hays 
+	3	and
+	4	Kendall
+			name:	PERSON				4-4	Kendall 
+	5	counties
+			sense:	county.n.01
+	6	,
+	7	Comal
+			name:	CITY				7-7	Comal 
+	8	was
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	was 
+	9	listed
+			sense:	list.v.02
+			prop:	list.01
+			V		9-9	listed 
+			N-ARGM-ADV		0-5	Along with Hays and Kendall counties 
+			N-ARG-A1		7-7	Comal 
+			N-ARGM-TMP		10-11	in 2017 
+			N-ARG-A2		12-29	of the nation 's ten fastest - growing large counties with a population of at least ten thousand 
+	10	in
+	11	2017
+			name:	DATE				11-11	2017 
+	12	of
+	13	the
+			coref:	IDENT			2	13-29	the nation 's ten fastest - growing large counties with a population of at least ten thousand 
+			coref:	IDENT			4	13-15	the nation 's 
+	14	nation
+			sense:	nation.n.02
+	15	's
+	16	ten
+			name:	NUMBER				16-16	ten 
+	17	fastest
+			sense:	fast.r.01
+	18	-
+	19	growing
+			sense:	grow.v.02
+			prop:	grow.01
+			V		19-19	growing 
+			N-ARG-A1		20-21	large counties 
+	20	large
+			sense:	large.a.01
+	21	counties
+			sense:	county.n.01
+	22	with
+	23	a
+	24	population
+			sense:	population.n.04
+	25	of
+	26	at
+	27	least
+			sense:	least.r.01
+	28	ten
+			name:	NUMBER				28-29	ten thousand 
+	29	thousand
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2017 , Comal County , was second on the list , it grew grew by 5,675 newcomers , or 4.4 percent from 2015 to 2016 .
+
+
+Treebanked sentence:
+--------------------
+In 2017 , Comal County , was second on the list , it grew grew by 5,675 newcomers , or 4.4 percent from 2015 to 2016 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2017)))
+    (, ,)
+    (NP (NNP Comal) (NNP County))
+    (, ,)
+    (S
+      (VP (VBD was)
+        (ADVP (RB second))
+        (PP (IN on)
+          (NP (DT the) (NN list)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD grew)
+      (SBAR
+        (S
+          (VP (VBD grew)
+            (PP
+              (PP (IN by)
+                (NP (CD 5,675) (NNS newcomers)))
+              (, ,)
+              (CC or)
+              (PP
+                (NP (CD 4.4) (NN percent))
+                (IN from)
+                (NP (CD 2015))))
+            (PP (IN to)
+              (NP (CD 2016)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2017
+			name:	DATE				1-1	2017 
+	2	,
+	3	Comal
+			coref:	IDENT			1	3-4	Comal County 
+			name:	CITY				3-3	Comal 
+	4	County
+			name:	LOCATION				4-4	County 
+	5	,
+	6	was
+			sense:	be.v.01
+			prop:	be.01
+			V		6-6	was 
+			N-ARGM-TMP		0-1	In 2017 
+			N-ARG-A1		3-4	Comal County 
+			N-ARG-A2		7-10	second on the list 
+	7	second
+			name:	ORDINAL				7-7	second 
+			sense:	second.r.01
+	8	on
+	9	the
+	10	list
+			sense:	list.n.01
+	11	,
+	12	it
+			coref:	IDENT			1	12-12	it 
+	13	grew
+			sense:	grow.v.02
+			prop:	brew.01
+			V		13-13	grew 
+			N-ARG-A1		12-12	it 
+			N-ARGM-TMP		22-25	from 2015 to 2016 
+	14	grew
+			sense:	grow.v.02
+			prop:	grow.01
+			V		14-14	grew 
+			N-ARG-A1		12-12	it 
+			N-ARG-A2		15-21	by 5,675 newcomers , or 4.4 percent 
+			N-ARGM-TMP		22-25	from 2015 to 2016 
+	15	by
+	16	5,675
+			name:	NUMBER				16-16	5,675 
+	17	newcomers
+			sense:	newcomer.n.02
+	18	,
+	19	or
+	20	4.4
+			name:	PERCENT				20-21	4.4 percent 
+	21	percent
+			sense:	percentage.n.01
+	22	from
+	23	2015
+			name:	DATE				23-25	2015 to 2016 
+	24	to
+	25	2016
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Kendall County was the second - fastest - growing county in the nation in 2015 to 2016 , grew by 5.16 percent .
+
+
+Treebanked sentence:
+--------------------
+Kendall County was the second - fastest - growing county in the nation in 2015 to 2016 , grew by 5.16 percent . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Kendall) (NNP County))
+    (VP (VBD was)
+      (NP
+        (NP
+          (NP (DT the)
+            (ADJP (JJ second) (HYPH -)
+              (ADJP (RBS fastest) (HYPH -) (VBG growing)))
+            (NN county))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN nation))
+              (PP (IN in)
+                (NP
+                  (NP (CD 2015))
+                  (PP (IN to)
+                    (NP (CD 2016))))))))
+        (, ,)
+        (SBAR
+          (S
+            (VP (VBD grew)
+              (PP (IN by)
+                (NP (CD 5.16) (NN percent))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Kendall
+			name:	CITY				0-0	Kendall 
+	1	County
+			name:	LOCATION				1-1	County 
+	2	was
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	Kendall County 
+			N-ARG-A2		3-12	the second - fastest - growing county in the nation 
+			N-ARGM-TMP		13-16	in 2015 to 2016 
+	3	the
+	4	second
+			name:	ORDINAL				4-4	second 
+			sense:	second.s.01
+	5	-
+	6	fastest
+			sense:	fast.r.01
+	7	-
+	8	growing
+			sense:	grow.v.02
+			prop:	grow.01
+			V		8-8	growing 
+			N-ARGM-MNR		6-6	fastest 
+			N-ARG-A1		9-9	county 
+	9	county
+			sense:	county.n.01
+	10	in
+	11	the
+			coref:	IDENT			4	11-16	the nation in 2015 to 2016 
+	12	nation
+			sense:	nation.n.02
+	13	in
+	14	2015
+			name:	DATE				14-14	2015 
+	15	to
+	16	2016
+			name:	DATE				16-16	2016 
+	17	,
+	18	grew
+			sense:	grow.v.02
+			prop:	grow.01
+			V		18-18	grew 
+			N-ARG-A1		0-1	Kendall County 
+			N-ARG-A2		19-21	by 5.16 percent 
+	19	by
+	20	5.16
+			name:	PERCENT				20-21	5.16 percent 
+	21	percent
+			sense:	percentage.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Hays County , third on the national list , had nearly ten thousand new residents during the year .
+
+
+Treebanked sentence:
+--------------------
+Hays County , third on the national list , had nearly ten thousand new residents during the year . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Hays) (NNP County))
+      (, ,)
+      (NP
+        (NP (JJ third))
+        (PP (IN on)
+          (NP (DT the) (JJ national) (NN list))))
+      (, ,))
+    (VP (VBD had)
+      (NP
+        (QP (RB nearly) (CD ten) (CD thousand))
+        (JJ new) (NNS residents))
+      (PP (IN during)
+        (NP (DT the) (NN year))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Hays
+			name:	CITY				0-0	Hays 
+	1	County
+			name:	LOCATION				1-1	County 
+	2	,
+	3	third
+			name:	ORDINAL				3-3	third 
+			sense:	third.s.01
+	4	on
+	5	the
+	6	national
+			sense:	national.a.01
+	7	list
+			sense:	list.n.01
+	8	,
+	9	had
+			sense:	have.v.01
+			prop:	have.03
+			V		9-9	had 
+			N-ARG-A0		0-8	Hays County , third on the national list , 
+			N-ARG-A1		10-14	nearly ten thousand new residents 
+			N-ARGM-TMP		15-17	during the year 
+	10	nearly
+			sense:	about.r.07
+	11	ten
+			name:	NUMBER				11-12	ten thousand 
+	12	thousand
+	13	new
+			sense:	new.a.01
+	14	residents
+			sense:	resident.n.01
+	15	during
+	16	the
+			coref:	IDENT			5	16-17	the year 
+			name:	DATE				16-17	the year 
+	17	year
+			sense:	year.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As a result of this growth , the counties have experienced new home construction , traffic congestion , and greater demand for public services .
+
+
+Treebanked sentence:
+--------------------
+As a result of this growth , the counties have experienced new home construction , traffic congestion , and greater demand for public services . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN As)
+      (NP
+        (NP (DT a) (NN result))
+        (PP (IN of)
+          (NP (DT this) (NN growth)))))
+    (, ,)
+    (NP (DT the) (NNS counties))
+    (VP (VBP have)
+      (VP (VBN experienced)
+        (NP
+          (NP (JJ new) (NN home) (NN construction))
+          (, ,)
+          (NP (NN traffic) (NN congestion))
+          (, ,)
+          (CC and)
+          (NP (JJR greater) (NN demand)))
+        (PP (IN for)
+          (NP (JJ public) (NNS services)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	a
+	2	result
+			sense:	consequence.n.01
+	3	of
+	4	this
+	5	growth
+			sense:	increase.n.03
+	6	,
+	7	the
+			coref:	IDENT			2	7-8	the counties 
+	8	counties
+			sense:	county.n.01
+	9	have
+			sense:	experience.v.03
+			prop:	have.01
+			V		9-9	have 
+	10	experienced
+			sense:	experience.v.01
+			prop:	experience.01
+			V		10-10	experienced 
+			N-ARGM-CAU		0-5	As a result of this growth 
+			N-ARG-A0		7-8	the counties 
+			N-ARG-A1		11-23	new home construction , traffic congestion , and greater demand for public services 
+	11	new
+			sense:	new.a.01
+	12	home
+			sense:	dwelling.n.01
+	13	construction
+			sense:	construction.n.01
+	14	,
+	15	traffic
+			sense:	traffic.n.01
+	16	congestion
+			sense:	congestion.n.02
+	17	,
+	18	and
+	19	greater
+			sense:	great.s.01
+	20	demand
+			sense:	demand.n.02
+	21	for
+	22	public
+			sense:	public.a.01
+	23	services
+			sense:	service.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bexar County , which includes San Antonio , grew by 1.75 percent during the year , but its sheer number of new residents exceeded 33,000 .
+
+
+Treebanked sentence:
+--------------------
+Bexar County , which includes San Antonio , grew by 1.75 percent during the year , but its sheer number of new residents exceeded 33,000 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Bexar) (NNP County))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ includes)
+              (NP (NNP San) (NNP Antonio)))))
+        (, ,))
+      (VP (VBD grew)
+        (PP (IN by)
+          (NP (CD 1.75) (NN percent)))
+        (PP (IN during)
+          (NP (DT the) (NN year)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (PRP$ its) (JJ sheer) (NN number))
+        (PP (IN of)
+          (NP (JJ new) (NNS residents))))
+      (VP (VBD exceeded)
+        (NP (CD 33,000))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bexar
+			coref:	IDENT			0	0-6	Bexar County , which includes San Antonio 
+			name:	LOCATION				0-1	Bexar County 
+	1	County
+	2	,
+	3	which
+	4	includes
+			sense:	include.v.01
+			prop:	include.01
+			V		4-4	includes 
+			N-ARG-A2		0-1	Bexar County 
+			R-ARG-A2		3-3	which 
+			N-ARG-A1		5-6	San Antonio 
+	5	San
+			coref:	IDENT			3	5-6	San Antonio 
+			name:	CITY				5-6	San Antonio 
+	6	Antonio
+	7	,
+	8	grew
+			sense:	grow.v.02
+			prop:	grow.01
+			V		8-8	grew 
+			N-ARG-A1		0-7	Bexar County , which includes San Antonio , 
+			N-ARG-A2		9-11	by 1.75 percent 
+			N-ARGM-TMP		12-14	during the year 
+	9	by
+	10	1.75
+			name:	PERCENT				10-11	1.75 percent 
+	11	percent
+			sense:	percentage.n.01
+	12	during
+	13	the
+			coref:	IDENT			5	13-14	the year 
+			name:	DATE				13-14	the year 
+	14	year
+			sense:	year.n.01
+	15	,
+	16	but
+	17	its
+			coref:	IDENT			0	17-17	its 
+	18	sheer
+			sense:	absolute.s.02
+	19	number
+			sense:	number.n.01
+	20	of
+	21	new
+			sense:	new.a.01
+	22	residents
+			sense:	resident.n.01
+	23	exceeded
+			sense:	exceed.v.01
+			prop:	exceed.01
+			V		23-23	exceeded 
+			N-ARG-A0		17-22	its sheer number of new residents 
+			N-ARG-A1		24-24	33,000 
+	24	33,000
+			name:	NUMBER				24-24	33,000 
+	25	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				9.0-6	Bexar County , which includes San Antonio 
+				9.17-17	its 
+	Chain 1 (IDENT)
+				0.0-1	Comal County 
+				3.0-1	Comal County 
+				5.3-4	Comal County 
+				5.12-12	it 
+	Chain 2 (IDENT)
+				4.13-29	the nation 's ten fastest - growing large counties with a population of at least ten thousand 
+				8.7-8	the counties 
+	Chain 3 (IDENT)
+				3.6-7	San Antonio 
+				9.5-6	San Antonio 
+	Chain 4 (IDENT)
+				6.11-16	the nation in 2015 to 2016 
+				1.6-6	its 
+				2.0-0	Its 
+				4.13-15	the nation 's 
+	Chain 5 (IDENT)
+				7.16-17	the year 
+				9.13-14	the year 
+

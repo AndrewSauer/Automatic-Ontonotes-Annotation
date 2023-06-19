@@ -1,0 +1,511 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" Sitting at the Wheel " is a 1983 hit single by The Moody Blues , written by John Lodge .
+
+
+Treebanked sentence:
+--------------------
+" Sitting at the Wheel " is a 1983 hit single by The Moody Blues , written by John Lodge . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S (`` ")
+      (VP (VBG Sitting)
+        (PP (IN at)
+          (NP (DT the) (NNP Wheel))))
+      ('' "))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT a) (CD 1983) (NN hit))
+          (ADJP (JJ single)
+            (PP (IN by)
+              (NP (DT The) (NNP Moody) (NNPS Blues)))))
+        (, ,)
+        (VP (VBN written)
+          (PP (IN by)
+            (NP (NNP John) (NNP Lodge))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	Sitting
+			sense:	sit.v.01
+			prop:	sit.01
+			V		1-1	Sitting 
+			N-ARG-A2		2-4	at the Wheel 
+	2	at
+	3	the
+			coref:	IDENT			2	3-4	the Wheel 
+	4	Wheel
+	5	"
+	6	is
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	is 
+			N-ARG-A1		0-5	" Sitting at the Wheel " 
+			N-ARG-A2		7-19	a 1983 hit single by The Moody Blues , written by John Lodge 
+	7	a
+	8	1983
+			name:	DATE				8-8	1983 
+	9	hit
+			sense:	hit.n.03
+	10	single
+			sense:	individual.a.01
+	11	by
+	12	The
+	13	Moody
+			name:	ORGANIZATION				13-14	Moody Blues 
+	14	Blues
+	15	,
+	16	written
+			sense:	compose.v.02
+			prop:	write.01
+			V		16-16	written 
+			N-ARG-A1		7-14	a 1983 hit single by The Moody Blues 
+			N-ARG-A0		17-19	by John Lodge 
+	17	by
+	18	John
+			coref:	IDENT			1	18-19	John Lodge 
+			name:	PERSON				18-19	John Lodge 
+	19	Lodge
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was released in the US as the leadoff single from The Present in August 1983 and debuted on the Billboard Hot 100 on September 3 , 1983 .
+
+
+Treebanked sentence:
+--------------------
+It was released in the US as the leadoff single from The Present in August 1983 and debuted on the Billboard Hot 100 on September 3 , 1983 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBD was)
+        (VP (VBN released)
+          (PP (IN in)
+            (NP (DT the) (NNP US)))
+          (PP (IN as)
+            (NP
+              (NP (DT the) (NN leadoff))
+              (ADJP (JJ single)
+                (PP (IN from)
+                  (NP
+                    (NP (DT The) (NNP Present))
+                    (PP (IN in)
+                      (NP (NNP August) (CD 1983))))))))))
+      (CC and)
+      (VP (VBD debuted)
+        (PP (IN on)
+          (NP (DT the)
+            (NML (NNP Billboard) (NNP Hot) (CD 100))))
+        (PP (IN on)
+          (NP (NNP September) (CD 3) (, ,) (CD 1983)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		2-2	released 
+			N-ARG-A1		0-0	It 
+			N-ARGM-LOC		3-5	in the US 
+			N-ARGM-PRD		6-6	as 
+			N-ARGM-TMP		13-15	in August 1983 
+	3	in
+	4	the
+	5	US
+			name:	COUNTRY				5-5	US 
+	6	as
+	7	the
+	8	leadoff
+	9	single
+			sense:	individual.a.01
+	10	from
+	11	The
+	12	Present
+			name:	DATE				12-12	Present 
+	13	in
+	14	August
+			coref:	IDENT			3	14-15	August 1983 
+			name:	DATE				14-15	August 1983 
+	15	1983
+	16	and
+	17	debuted
+			sense:	debut.v.03
+			prop:	debut.01
+			V		17-17	debuted 
+			N-ARG-A1		0-0	It 
+			N-ARGM-LOC		18-22	on the Billboard Hot 100 
+			N-ARGM-TMP		23-27	on September 3 , 1983 
+	18	on
+	19	the
+			coref:	IDENT			0	19-22	the Billboard Hot 100 
+	20	Billboard
+			name:	MISC				20-21	Billboard Hot 
+	21	Hot
+	22	100
+			name:	NUMBER				22-22	100 
+	23	on
+	24	September
+			name:	DATE				24-27	September 3 , 1983 
+	25	3
+	26	,
+	27	1983
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the UK , " Sitting at the Wheel " was released in August 1983 as the second single from The Present , following " Blue World " .
+
+
+Treebanked sentence:
+--------------------
+In the UK , " Sitting at the Wheel " was released in August 1983 as the second single from The Present , following " Blue World " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NNP UK)))
+    (, ,) (`` ")
+    (S
+      (VP (VBG Sitting)
+        (PP (IN at)
+          (NP (DT the) (NNP Wheel)))))
+    ('' ")
+    (VP (VBD was)
+      (VP (VBN released)
+        (PP (IN in)
+          (NP (NNP August) (CD 1983)))
+        (PP (IN as)
+          (NP
+            (NP (DT the) (JJ second) (JJ single))
+            (PP (IN from)
+              (NP (DT The) (NNP Present)))
+            (, ,)
+            (PP (VBG following)
+              (NP (`` ") (NNP Blue) (NNP World) ('' ")))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+	2	UK
+			name:	COUNTRY				2-2	UK 
+	3	,
+	4	"
+	5	Sitting
+			sense:	sit.v.01
+			prop:	sit.01
+			V		5-5	Sitting 
+			N-ARG-A2		6-8	at the Wheel 
+	6	at
+	7	the
+			coref:	IDENT			2	7-8	the Wheel 
+	8	Wheel
+			name:	MISC				8-8	Wheel 
+	9	"
+	10	was
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	was 
+	11	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		11-11	released 
+			N-ARGM-LOC		0-2	In the UK 
+			N-ARG-A1		4-9	" Sitting at the Wheel " 
+			N-ARGM-TMP		12-14	in August 1983 
+			N-ARGM-PRD		15-27	as the second single from The Present , following " Blue World " 
+	12	in
+	13	August
+			coref:	IDENT			3	13-14	August 1983 
+			name:	DATE				13-14	August 1983 
+	14	1983
+	15	as
+	16	the
+	17	second
+			name:	ORDINAL				17-17	second 
+			sense:	second.s.01
+	18	single
+			sense:	individual.a.01
+	19	from
+	20	The
+	21	Present
+			name:	DATE				21-21	Present 
+	22	,
+	23	following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		23-23	following 
+			N-ARG-A2		24-27	" Blue World " 
+	24	"
+	25	Blue
+			name:	MISC				25-26	Blue World 
+	26	World
+	27	"
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In interviews , Lodge has stated that he was listening to " Running on Empty " by Jackson Browne when he wrote " Sitting at the Wheel " .
+
+
+Treebanked sentence:
+--------------------
+In interviews , Lodge has stated that he was listening to " Running on Empty " by Jackson Browne when he wrote " Sitting at the Wheel " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNS interviews)))
+    (, ,)
+    (NP (NNP Lodge))
+    (VP (VBZ has)
+      (VP (VBN stated)
+        (SBAR (IN that)
+          (S
+            (NP (PRP he))
+            (VP (VBD was)
+              (VP (VBG listening)
+                (PP (IN to)
+                  (S (`` ")
+                    (VP (VBG Running)
+                      (PP (IN on)
+                        (NP (JJ Empty)))
+                      (`` ")
+                      (PP (IN by)
+                        (NP
+                          (NP (NNP Jackson) (NNP Browne))
+                          (SBAR
+                            (WHADVP (WRB when))
+                            (S
+                              (NP (PRP he))
+                              (VP (VBD wrote) (`` ")
+                                (S
+                                  (VP (VBG Sitting)
+                                    (PP (IN at)
+                                      (NP (DT the) (NNP Wheel)))))))))))
+                    ('' ")))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	interviews
+			sense:	interview.n.01
+	2	,
+	3	Lodge
+			coref:	IDENT			1	3-3	Lodge 
+			name:	PERSON				3-3	Lodge 
+	4	has
+			sense:	have.v.01
+			prop:	have.01
+			V		4-4	has 
+	5	stated
+			sense:	state.v.01
+			prop:	state.01
+			V		5-5	stated 
+			N-ARGM-LOC		0-1	In interviews 
+			N-ARG-A0		3-3	Lodge 
+			N-ARG-A1		6-27	that he was listening to " Running on Empty " by Jackson Browne when he wrote " Sitting at the Wheel " 
+	6	that
+	7	he
+			coref:	IDENT			1	7-7	he 
+	8	was
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	was 
+	9	listening
+			sense:	listen.v.01
+			prop:	listen.01
+			V		9-9	listening 
+			N-ARG-A0		7-7	he 
+			N-ARG-A1		10-18	to " Running on Empty " by Jackson Browne 
+			N-ARGM-TMP		19-27	when he wrote " Sitting at the Wheel " 
+	10	to
+	11	"
+	12	Running
+			sense:	run.v.14
+			prop:	run.02
+			V		12-12	Running 
+	13	on
+	14	Empty
+			sense:	empty.a.01
+	15	"
+	16	by
+	17	Jackson
+			name:	PERSON				17-18	Jackson Browne 
+	18	Browne
+	19	when
+	20	he
+			coref:	IDENT			1	20-20	he 
+	21	wrote
+			sense:	compose.v.02
+			prop:	write.01
+			V		21-21	wrote 
+			N-ARGM-TMP		19-19	when 
+			N-ARG-A0		20-20	he 
+			N-ARG-A1		22-27	" Sitting at the Wheel " 
+	22	"
+	23	Sitting
+			sense:	sit.v.01
+			prop:	sit.01
+			V		23-23	Sitting 
+			N-ARG-A2		24-26	at the Wheel 
+	24	at
+	25	the
+			coref:	IDENT			2	25-26	the Wheel 
+	26	Wheel
+	27	"
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The song was a success for The Moody Blues , charting at # 3 on the Mainstream Rock chart and peaking at # 27 on the Billboard Hot 100 .
+
+
+Treebanked sentence:
+--------------------
+The song was a success for The Moody Blues , charting at # 3 on the Mainstream Rock chart and peaking at # 27 on the Billboard Hot 100 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN song))
+    (VP (VBD was)
+      (NP
+        (NP
+          (NP (DT a) (NN success))
+          (PP (IN for)
+            (NP (DT The) (NNP Moody) (NNPS Blues))))
+        (, ,)
+        (VP (VBG charting)
+          (PP (IN at)
+            (NP (NN #) (CD 3)))
+          (PP (IN on)
+            (NP
+              (NP (DT the) (NNP Mainstream) (NNP Rock) (NN chart)
+                (CC and)
+                (NN peaking))
+              (PP (IN at)
+                (NP
+                  (NP (NN #) (CD 27))
+                  (PP (IN on)
+                    (NP (DT the)
+                      (NML (NNP Billboard) (NNP Hot) (CD 100)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	song
+			sense:	song.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	The song 
+			N-ARG-A2		3-8	a success for The Moody Blues 
+			N-ARGM-ADV		10-28	charting at # 3 on the Mainstream Rock chart and peaking at # 27 on the Billboard Hot 100 
+	3	a
+	4	success
+			sense:	success.n.02
+	5	for
+	6	The
+	7	Moody
+			name:	ORGANIZATION				7-8	Moody Blues 
+	8	Blues
+	9	,
+	10	charting
+			sense:	chart.v.01
+			prop:	chart.01
+			V		10-10	charting 
+			N-ARG-A1		0-1	The song 
+			N-ARGM-EXT		11-13	at # 3 
+	11	at
+	12	#
+			name:	MONEY				12-13	# 3 
+	13	3
+	14	on
+	15	the
+	16	Mainstream
+	17	Rock
+	18	chart
+			sense:	chart.n.01
+	19	and
+	20	peaking
+	21	at
+	22	#
+			name:	DATE				22-23	# 27 
+	23	27
+	24	on
+	25	the
+			coref:	IDENT			0	25-28	the Billboard Hot 100 
+	26	Billboard
+			name:	MISC				26-27	Billboard Hot 
+	27	Hot
+	28	100
+			name:	NUMBER				28-28	100 
+	29	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.19-22	the Billboard Hot 100 
+				4.25-28	the Billboard Hot 100 
+	Chain 1 (IDENT)
+				0.18-19	John Lodge 
+				3.3-3	Lodge 
+				3.7-7	he 
+				3.20-20	he 
+	Chain 2 (IDENT)
+				0.3-4	the Wheel 
+				2.7-8	the Wheel 
+				3.25-26	the Wheel 
+	Chain 3 (IDENT)
+				1.14-15	August 1983 
+				2.13-14	August 1983 
+

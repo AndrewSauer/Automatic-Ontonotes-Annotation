@@ -1,0 +1,984 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Samantha Jane Sacramento is a Gibraltar politician .
+
+
+Treebanked sentence:
+--------------------
+Samantha Jane Sacramento is a Gibraltar politician . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Samantha) (NNP Jane) (NNP Sacramento))
+    (VP (VBZ is)
+      (NP (DT a) (NNP Gibraltar) (NN politician)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Samantha
+			coref:	IDENT			0	0-2	Samantha Jane Sacramento 
+			name:	PERSON				0-2	Samantha Jane Sacramento 
+	1	Jane
+	2	Sacramento
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Samantha Jane Sacramento 
+			N-ARG-A2		4-6	a Gibraltar politician 
+	4	a
+	5	Gibraltar
+			coref:	IDENT			2	5-5	Gibraltar 
+			name:	NATIONALITY				5-5	Gibraltar 
+	6	politician
+			name:	TITLE				6-6	politician 
+			sense:	politician.n.02
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She is the Minister for Housing and Equality in the Government of Gibraltar .
+
+
+Treebanked sentence:
+--------------------
+She is the Minister for Housing and Equality in the Government of Gibraltar . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NNP Minister))
+        (PP (IN for)
+          (NP (NNP Housing)
+            (CC and)
+            (NNP Equality)))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN Government))
+            (PP (IN of)
+              (NP (NNP Gibraltar)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	is
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-12	the Minister for Housing and Equality in the Government of Gibraltar 
+	2	the
+	3	Minister
+			name:	ORGANIZATION				3-7	Minister for Housing and Equality 
+	4	for
+	5	Housing
+	6	and
+	7	Equality
+	8	in
+	9	the
+	10	Government
+			sense:	government.n.01
+	11	of
+	12	Gibraltar
+			coref:	IDENT			2	12-12	Gibraltar 
+			name:	NATIONALITY				12-12	Gibraltar 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Samantha Sacramento was born in Gibraltar .
+
+
+Treebanked sentence:
+--------------------
+Samantha Sacramento was born in Gibraltar . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Samantha) (NNP Sacramento))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Gibraltar)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Samantha
+			coref:	IDENT			0	0-1	Samantha Sacramento 
+			name:	PERSON				0-1	Samantha Sacramento 
+	1	Sacramento
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Samantha Sacramento 
+			N-ARGM-LOC		4-5	in Gibraltar 
+	4	in
+	5	Gibraltar
+			coref:	IDENT			2	5-5	Gibraltar 
+			name:	NATIONALITY				5-5	Gibraltar 
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She attended school in Gibraltar before studying Law at the University of Wales in Cardiff , where she obtained LLB and LLM degrees .
+
+
+Treebanked sentence:
+--------------------
+She attended school in Gibraltar before studying Law at the University of Wales in Cardiff , where she obtained LLB and LLM degrees . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD attended)
+      (NP
+        (NP (NN school))
+        (PP (IN in)
+          (NP (NNP Gibraltar))))
+      (PP (IN before)
+        (S
+          (VP (VBG studying)
+            (NP (NNP Law))
+            (PP (IN at)
+              (NP
+                (NP (DT the) (NNP University))
+                (PP (IN of)
+                  (NP (NNP Wales)))))
+            (PP (IN in)
+              (NP (NNP Cardiff))))))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP she))
+          (VP (VBD obtained)
+            (NP
+              (NML (NNP LLB)
+                (CC and)
+                (NNP LLM))
+              (NNS degrees))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	attended
+			sense:	attend.v.01
+			prop:	attend.01
+			V		1-1	attended 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		2-2	school 
+			N-ARGM-LOC		3-4	in Gibraltar 
+			N-ARGM-TMP		5-22	before studying Law at the University of Wales in Cardiff , where she obtained LLB and LLM degrees 
+	2	school
+			sense:	school.n.01
+	3	in
+	4	Gibraltar
+			coref:	IDENT			2	4-4	Gibraltar 
+			name:	NATIONALITY				4-4	Gibraltar 
+	5	before
+	6	studying
+			sense:	study.v.02
+			prop:	study.01
+			V		6-6	studying 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		7-7	Law 
+			N-ARGM-LOC		8-22	at the University of Wales in Cardiff , where she obtained LLB and LLM degrees 
+	7	Law
+	8	at
+	9	the
+	10	University
+			name:	ORGANIZATION				10-12	University of Wales 
+	11	of
+	12	Wales
+	13	in
+	14	Cardiff
+			coref:	IDENT			1	14-14	Cardiff 
+			name:	CITY				14-14	Cardiff 
+	15	,
+	16	where
+	17	she
+			coref:	IDENT			0	17-17	she 
+	18	obtained
+			sense:	obtain.v.01
+			prop:	obtain.01
+			V		18-18	obtained 
+			R-ARGM-LOC		16-16	where 
+			N-ARG-A0		17-17	she 
+			N-ARG-A1		19-22	LLB and LLM degrees 
+	19	LLB
+	20	and
+	21	LLM
+	22	degrees
+			sense:	academic_degree.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She qualified as a barrister and joined the Middle Temple .
+
+
+Treebanked sentence:
+--------------------
+She qualified as a barrister and joined the Middle Temple . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP
+      (VP (VBD qualified)
+        (PP (IN as)
+          (NP (DT a) (NN barrister))))
+      (CC and)
+      (VP (VBD joined)
+        (NP (DT the) (NNP Middle) (NNP Temple))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	qualified
+			sense:	qualify.v.01
+			prop:	qualify.02
+			V		1-1	qualified 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-4	as a barrister 
+	2	as
+	3	a
+	4	barrister
+			name:	TITLE				4-4	barrister 
+			sense:	barrister.n.01
+	5	and
+	6	joined
+			sense:	join.v.01
+			prop:	join.01
+			V		6-6	joined 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		7-9	the Middle Temple 
+	7	the
+	8	Middle
+			name:	LOCATION				8-8	Middle 
+	9	Temple
+			name:	CITY				9-9	Temple 
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Between 2001 and 2003 Sacramento worked in the legal team of the Commission for Racial Equality in Cardiff .
+
+
+Treebanked sentence:
+--------------------
+Between 2001 and 2003 Sacramento worked in the legal team of the Commission for Racial Equality in Cardiff . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Between)
+      (NP (CD 2001)
+        (CC and)
+        (CD 2003)))
+    (NP (NNP Sacramento))
+    (VP (VBD worked)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (JJ legal) (NN team))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN Commission))
+              (PP (IN for)
+                (NP (JJ Racial) (NNP Equality)))))))
+      (PP (IN in)
+        (NP (NNP Cardiff))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Between
+	1	2001
+			name:	DATE				1-1	2001 
+	2	and
+	3	2003
+			name:	DATE				3-3	2003 
+	4	Sacramento
+			coref:	IDENT			0	4-4	Sacramento 
+			name:	CITY				4-4	Sacramento 
+	5	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		5-5	worked 
+			N-ARGM-TMP		0-3	Between 2001 and 2003 
+			N-ARG-A0		4-4	Sacramento 
+	6	in
+	7	the
+	8	legal
+			sense:	legal.a.04
+	9	team
+			sense:	team.n.01
+	10	of
+	11	the
+	12	Commission
+			name:	ORGANIZATION				12-15	Commission for Racial Equality 
+			sense:	committee.n.01
+	13	for
+	14	Racial
+			sense:	racial.a.02
+	15	Equality
+	16	in
+	17	Cardiff
+			coref:	IDENT			1	17-17	Cardiff 
+			name:	CITY				17-17	Cardiff 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2004 she returned to Gibraltar where she practised as a barrister , specialising in commercial and civil litigation .
+
+
+Treebanked sentence:
+--------------------
+In 2004 she returned to Gibraltar where she practised as a barrister , specialising in commercial and civil litigation . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2004)))
+    (NP (PRP she))
+    (VP (VBD returned)
+      (PP (IN to)
+        (NP (NNP Gibraltar)))
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP she))
+          (VP (VBD practised)
+            (PP (IN as)
+              (NP (DT a) (NN barrister)))
+            (, ,)
+            (S
+              (VP (VBG specialising)
+                (PP (IN in)
+                  (NP
+                    (ADJP (JJ commercial)
+                      (CC and)
+                      (JJ civil))
+                    (NN litigation)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2004
+			name:	DATE				1-1	2004 
+	2	she
+			coref:	IDENT			0	2-2	she 
+	3	returned
+			sense:	return.v.01
+			prop:	return.01
+			V		3-3	returned 
+			N-ARGM-TMP		0-1	In 2004 
+			N-ARG-A1		2-2	she 
+			N-ARG-A4		4-18	to Gibraltar where she practised as a barrister , specialising in commercial and civil litigation 
+	4	to
+	5	Gibraltar
+			coref:	IDENT			2	5-5	Gibraltar 
+			name:	NATIONALITY				5-5	Gibraltar 
+	6	where
+	7	she
+			coref:	IDENT			0	7-7	she 
+	8	practised
+			sense:	practice.v.01
+			prop:	practise.01
+			V		8-8	practised 
+			N-ARGM-LOC		5-5	Gibraltar 
+			R-ARGM-LOC		6-6	where 
+			N-ARG-A0		7-7	she 
+			N-ARG-A1		9-11	as a barrister 
+			N-ARGM-PRD		13-18	specialising in commercial and civil litigation 
+	9	as
+	10	a
+	11	barrister
+			name:	TITLE				11-11	barrister 
+			sense:	barrister.n.01
+	12	,
+	13	specialising
+			sense:	specialize.v.04
+			prop:	specialize.01
+			V		13-13	specialising 
+			N-ARG-A0		7-7	she 
+			N-ARG-A1		14-18	in commercial and civil litigation 
+	14	in
+	15	commercial
+			sense:	commercial.a.01
+	16	and
+	17	civil
+			sense:	civil.a.03
+	18	litigation
+			sense:	litigation.n.01
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sacramento was elected as a member of the Gibraltar Parliament for the Gibraltar Socialist Labour Party in the December 2011 general election .
+
+
+Treebanked sentence:
+--------------------
+Sacramento was elected as a member of the Gibraltar Parliament for the Gibraltar Socialist Labour Party in the December 2011 general election . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Sacramento))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (PP (IN as)
+          (NP
+            (NP (DT a) (NN member))
+            (PP (IN of)
+              (NP (DT the) (NNP Gibraltar) (NNP Parliament)))))
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NNP Gibraltar)
+              (NML (NNP Socialist) (NNP Labour))
+              (NNP Party))
+            (PP (IN in)
+              (NP (DT the) (NNP December) (CD 2011) (JJ general) (NN election)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sacramento
+			coref:	IDENT			0	0-0	Sacramento 
+			name:	CITY				0-0	Sacramento 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A1		0-0	Sacramento 
+			N-ARG-A2		3-9	as a member of the Gibraltar Parliament 
+			N-ARGM-TMP		16-21	in the December 2011 general election 
+	3	as
+	4	a
+	5	member
+			sense:	member.n.01
+	6	of
+	7	the
+	8	Gibraltar
+			name:	ORGANIZATION				8-9	Gibraltar Parliament 
+	9	Parliament
+	10	for
+	11	the
+	12	Gibraltar
+			name:	ORGANIZATION				12-15	Gibraltar Socialist Labour Party 
+	13	Socialist
+	14	Labour
+	15	Party
+	16	in
+	17	the
+	18	December
+			name:	DATE				18-19	December 2011 
+	19	2011
+	20	general
+			name:	TITLE				20-20	general 
+			sense:	general.a.01
+	21	election
+			sense:	election.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Following the election she was appointed Minister for Social Services and Equality in the government of Fabian Picardo , becoming Gibraltar 's first minister for equality .
+
+
+Treebanked sentence:
+--------------------
+Following the election she was appointed Minister for Social Services and Equality in the government of Fabian Picardo , becoming Gibraltar 's first minister for equality . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (VBG Following)
+      (NP (DT the) (NN election)))
+    (NP (PRP she))
+    (VP (VBD was)
+      (VP (VBN appointed)
+        (NP
+          (NP (NNP Minister))
+          (PP (IN for)
+            (NP (NNP Social) (NNPS Services)
+              (CC and)
+              (NNP Equality))))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN government))
+            (PP (IN of)
+              (NP (NNP Fabian) (NNP Picardo)))))
+        (, ,)
+        (S
+          (VP (VBG becoming)
+            (NP
+              (NP
+                (NP (NNP Gibraltar) (POS 's))
+                (JJ first) (NN minister))
+              (PP (IN for)
+                (NP (NN equality))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		0-0	Following 
+			N-ARG-A2		1-2	the election 
+	1	the
+	2	election
+			sense:	election.n.01
+	3	she
+			coref:	IDENT			0	3-3	she 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	appointed
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		5-5	appointed 
+			N-ARGM-TMP		0-2	Following the election 
+			N-ARG-A1		3-3	she 
+			N-ARG-A2		6-17	Minister for Social Services and Equality in the government of Fabian Picardo 
+			N-ARGM-ADV		19-25	becoming Gibraltar 's first minister for equality 
+	6	Minister
+			name:	TITLE				6-6	Minister 
+	7	for
+	8	Social
+			name:	ORGANIZATION				8-9	Social Services 
+	9	Services
+	10	and
+	11	Equality
+	12	in
+	13	the
+	14	government
+			sense:	government.n.01
+	15	of
+	16	Fabian
+			name:	PERSON				16-17	Fabian Picardo 
+	17	Picardo
+	18	,
+	19	becoming
+			sense:	become.v.02
+			prop:	become.01
+			V		19-19	becoming 
+			N-ARG-A1		3-3	she 
+			N-ARG-A2		20-25	Gibraltar 's first minister for equality 
+	20	Gibraltar
+			coref:	IDENT			2	20-21	Gibraltar 's 
+			name:	NATIONALITY				20-20	Gibraltar 
+	21	's
+	22	first
+			name:	TITLE				22-23	first minister 
+			sense:	first.a.01
+	23	minister
+			sense:	minister.n.04
+	24	for
+	25	equality
+			sense:	equality.n.01
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In June 2013 Sacramento deputised for the Chief Minister of Gibraltar during his absence from Gibraltar , becoming the first woman to do so .
+
+
+Treebanked sentence:
+--------------------
+In June 2013 Sacramento deputised for the Chief Minister of Gibraltar during his absence from Gibraltar , becoming the first woman to do so . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP June) (CD 2013)))
+    (NP (NNP Sacramento))
+    (VP (VBD deputised)
+      (PP (IN for)
+        (NP
+          (NP (DT the)
+            (NML (NNP Chief) (NNP Minister)))
+          (PP (IN of)
+            (NP (NNP Gibraltar)))))
+      (PP (IN during)
+        (NP
+          (NP (PRP$ his) (NN absence))
+          (PP (IN from)
+            (NP (NNP Gibraltar)))))
+      (, ,)
+      (S
+        (VP (VBG becoming)
+          (NP (DT the) (JJ first) (NN woman))
+          (S
+            (VP (TO to)
+              (VP (VB do)
+                (ADVP (RB so))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	June
+			name:	DATE				1-2	June 2013 
+	2	2013
+	3	Sacramento
+			coref:	IDENT			0	3-3	Sacramento 
+			name:	CITY				3-3	Sacramento 
+	4	deputised
+			sense:	substitute.v.03
+			prop:	defuse.01
+			V		4-4	deputised 
+			N-ARGM-TMP		0-2	In June 2013 
+			N-ARG-A0		3-3	Sacramento 
+			N-ARGM-TMP		11-15	during his absence from Gibraltar 
+			N-ARGM-PRD		17-23	becoming the first woman to do so 
+	5	for
+	6	the
+	7	Chief
+			name:	TITLE				7-8	Chief Minister 
+	8	Minister
+	9	of
+	10	Gibraltar
+			coref:	IDENT			2	10-10	Gibraltar 
+			name:	NATIONALITY				10-10	Gibraltar 
+	11	during
+	12	his
+	13	absence
+			sense:	absence.n.02
+	14	from
+	15	Gibraltar
+			coref:	IDENT			2	15-15	Gibraltar 
+			name:	NATIONALITY				15-15	Gibraltar 
+	16	,
+	17	becoming
+			sense:	become.v.02
+			prop:	become.01
+			V		17-17	becoming 
+			N-ARG-A1		3-3	Sacramento 
+			N-ARG-A2		18-23	the first woman to do so 
+	18	the
+	19	first
+			name:	ORDINAL				19-19	first 
+			sense:	first.a.01
+	20	woman
+			sense:	woman.n.01
+	21	to
+	22	do
+			sense:	make.v.01
+			prop:	do.02
+			V		22-22	do 
+			N-ARG-A0		18-20	the first woman 
+			N-ARG-A1		23-23	so 
+	23	so
+			sense:	so.r.03
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In a ministerial reshuffle in 2014 Sacramento was also appointed as Minister for Tourism and Housing .
+
+
+Treebanked sentence:
+--------------------
+In a ministerial reshuffle in 2014 Sacramento was also appointed as Minister for Tourism and Housing . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (DT a) (JJ ministerial) (NN reshuffle))
+        (PP (IN in)
+          (NP (CD 2014)))))
+    (NP (NNP Sacramento))
+    (VP (VBD was)
+      (ADVP (RB also))
+      (VP (VBN appointed)
+        (PP (IN as)
+          (NP (NNP Minister)))
+        (PP (IN for)
+          (NP (NNP Tourism)
+            (CC and)
+            (NNP Housing)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	a
+	2	ministerial
+			sense:	ministerial.a.02
+	3	reshuffle
+			sense:	reshuffle.n.01
+	4	in
+	5	2014
+			name:	DATE				5-5	2014 
+	6	Sacramento
+			coref:	IDENT			0	6-6	Sacramento 
+			name:	CITY				6-6	Sacramento 
+	7	was
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	was 
+	8	also
+			sense:	besides.r.02
+	9	appointed
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		9-9	appointed 
+			N-ARGM-LOC		0-5	In a ministerial reshuffle in 2014 
+			N-ARG-A1		6-6	Sacramento 
+			N-ARGM-DIS		8-8	also 
+			N-ARG-A2		10-15	as Minister for Tourism and Housing 
+	10	as
+	11	Minister
+			name:	TITLE				11-11	Minister 
+	12	for
+	13	Tourism
+	14	and
+	15	Housing
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the 2016 ministerial reshuffle Sacramento became Minister for Housing and Equality , which included responsibility for civic rights , citizen 's advice , the ombudsman service , consumer affairs , data protection and health and safety .
+
+
+Treebanked sentence:
+--------------------
+In the 2016 ministerial reshuffle Sacramento became Minister for Housing and Equality , which included responsibility for civic rights , citizen 's advice , the ombudsman service , consumer affairs , data protection and health and safety . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (CD 2016) (JJ ministerial) (NN reshuffle)))
+    (NP (NNP Sacramento))
+    (VP (VBD became)
+      (NP
+        (NP
+          (NP (NNP Minister))
+          (PP (IN for)
+            (NP (NNP Housing)
+              (CC and)
+              (NNP Equality))))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBD included)
+              (NP (NN responsibility))
+              (PP (IN for)
+                (NP
+                  (NP (JJ civic) (NNS rights))
+                  (, ,)
+                  (NP
+                    (NP (NN citizen) (POS 's))
+                    (NN advice))
+                  (, ,)
+                  (NP (DT the) (NN ombudsman) (NN service))
+                  (, ,)
+                  (NP (NN consumer) (NNS affairs))
+                  (, ,)
+                  (NP (NNS data) (NN protection))
+                  (CC and)
+                  (NP (NN health)
+                    (CC and)
+                    (NN safety)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+	2	2016
+			name:	DATE				2-2	2016 
+	3	ministerial
+			sense:	ministerial.a.02
+	4	reshuffle
+			sense:	reshuffle.n.01
+	5	Sacramento
+			coref:	IDENT			0	5-5	Sacramento 
+			name:	CITY				5-5	Sacramento 
+	6	became
+			sense:	become.v.02
+			prop:	become.01
+			V		6-6	became 
+			N-ARGM-LOC		0-4	In the 2016 ministerial reshuffle 
+			N-ARG-A1		5-5	Sacramento 
+			N-ARG-A2		7-36	Minister for Housing and Equality , which included responsibility for civic rights , citizen 's advice , the ombudsman service , consumer affairs , data protection and health and safety 
+	7	Minister
+			name:	TITLE				7-7	Minister 
+	8	for
+	9	Housing
+	10	and
+	11	Equality
+	12	,
+	13	which
+	14	included
+			sense:	include.v.01
+			prop:	include.01
+			V		14-14	included 
+			N-ARG-A2		7-11	Minister for Housing and Equality 
+			R-ARG-A2		13-13	which 
+			N-ARG-A1		15-36	responsibility for civic rights , citizen 's advice , the ombudsman service , consumer affairs , data protection and health and safety 
+	15	responsibility
+			sense:	duty.n.01
+	16	for
+	17	civic
+			sense:	civil.a.04
+	18	rights
+			sense:	right.n.01
+	19	,
+	20	citizen
+			sense:	citizen.n.01
+	21	's
+	22	advice
+			sense:	advice.n.01
+	23	,
+	24	the
+	25	ombudsman
+			sense:	ombudsman.n.01
+	26	service
+			sense:	service.n.04
+	27	,
+	28	consumer
+			sense:	consumer.n.01
+	29	affairs
+			sense:	matter.n.01
+	30	,
+	31	data
+			sense:	datum.n.01
+	32	protection
+			sense:	protection.n.01
+	33	and
+	34	health
+			sense:	health.n.01
+	35	and
+	36	safety
+			sense:	safety.n.01
+	37	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-2	Samantha Jane Sacramento 
+				1.0-0	She 
+				2.0-1	Samantha Sacramento 
+				3.0-0	She 
+				3.17-17	she 
+				4.0-0	She 
+				5.4-4	Sacramento 
+				6.2-2	she 
+				6.7-7	she 
+				7.0-0	Sacramento 
+				8.3-3	she 
+				9.3-3	Sacramento 
+				10.6-6	Sacramento 
+				11.5-5	Sacramento 
+	Chain 1 (IDENT)
+				3.14-14	Cardiff 
+				5.17-17	Cardiff 
+	Chain 2 (IDENT)
+				8.20-21	Gibraltar 's 
+				0.5-5	Gibraltar 
+				1.12-12	Gibraltar 
+				2.5-5	Gibraltar 
+				3.4-4	Gibraltar 
+				6.5-5	Gibraltar 
+				9.10-10	Gibraltar 
+				9.15-15	Gibraltar 
+

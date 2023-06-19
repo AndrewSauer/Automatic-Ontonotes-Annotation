@@ -1,0 +1,891 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Charles Olmeus ( born February 16 , 1947 ) is a Haitian former track and field athlete who competed at the 1976 Olympic Games in Montreal .
+
+
+Treebanked sentence:
+--------------------
+Charles Olmeus ( born February 16 , 1947 ) is a Haitian former track and field athlete who competed at the 1976 Olympic Games in Montreal . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Charles) (NNP Olmeus))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP February) (CD 16) (, ,) (CD 1947)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ Haitian)
+          (NML
+            (NML (JJ former) (NN track))
+            (CC and)
+            (NML (NN field)))
+          (NN athlete))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD competed)
+              (PP (IN at)
+                (NP (DT the) (CD 1976) (NNP Olympic) (NNPS Games)))
+              (PP (IN in)
+                (NP (NNP Montreal))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Charles
+			coref:	IDENT			0	0-1	Charles Olmeus 
+			name:	PERSON				0-1	Charles Olmeus 
+	1	Olmeus
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Charles Olmeus 
+			N-ARGM-TMP		4-7	February 16 , 1947 
+	4	February
+			name:	DATE				4-7	February 16 , 1947 
+	5	16
+	6	,
+	7	1947
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	Charles Olmeus ( born February 16 , 1947 ) 
+			N-ARG-A2		10-25	a Haitian former track and field athlete who competed at the 1976 Olympic Games in Montreal 
+	10	a
+	11	Haitian
+			name:	NATIONALITY				11-11	Haitian 
+	12	former
+			sense:	former.s.03
+	13	track
+			sense:	track.n.11
+	14	and
+	15	field
+			sense:	field.n.13
+	16	athlete
+			name:	TITLE				16-16	athlete 
+			sense:	athlete.n.01
+	17	who
+	18	competed
+			sense:	compete.v.01
+			prop:	compete.01
+			V		18-18	competed 
+			N-ARG-A0		10-16	a Haitian former track and field athlete 
+			R-ARG-A0		17-17	who 
+			N-ARGM-LOC		19-25	at the 1976 Olympic Games in Montreal 
+	19	at
+	20	the
+	21	1976
+			name:	DATE				21-21	1976 
+	22	Olympic
+			name:	MISC				22-23	Olympic Games 
+	23	Games
+	24	in
+	25	Montreal
+			name:	CITY				25-25	Montreal 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Charles competed at 10000 metres , and completed his qualifying heat in 42:00.11 .
+
+
+Treebanked sentence:
+--------------------
+Charles competed at 10000 metres , and completed his qualifying heat in 42:00.11 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Charles))
+    (VP
+      (VP (VBD competed)
+        (PP (IN at)
+          (NP (CD 10000) (NNS metres))))
+      (, ,)
+      (CC and)
+      (VP (VBD completed)
+        (NP (PRP$ his) (NN qualifying) (NN heat))
+        (PP (IN in)
+          (NP (CD 42:00.11)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Charles
+			coref:	IDENT			0	0-0	Charles 
+			name:	PERSON				0-0	Charles 
+	1	competed
+			sense:	compete.v.01
+			prop:	compete.01
+			V		1-1	competed 
+			N-ARG-A0		0-0	Charles 
+			N-ARGM-LOC		2-4	at 10000 metres 
+	2	at
+	3	10000
+			name:	NUMBER				3-3	10000 
+	4	metres
+			sense:	meter.n.01
+	5	,
+	6	and
+	7	completed
+			sense:	complete.v.01
+			prop:	complete.01
+			V		7-7	completed 
+			N-ARG-A0		0-0	Charles 
+			N-ARG-A1		8-10	his qualifying heat 
+			N-ARGM-MNR		11-12	in 42:00.11 
+	8	his
+			coref:	IDENT			0	8-8	his 
+	9	qualifying
+			sense:	passing.n.07
+	10	heat
+			sense:	heat.n.06
+	11	in
+	12	42:00.11
+			name:	DATE				12-12	42:00.11 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He finished 14 minutes behind the heat winner Carlos Lopes of Portugal and 8.5 minutes behind Chris McCubbins of Canada who finished next to last .
+
+
+Treebanked sentence:
+--------------------
+He finished 14 minutes behind the heat winner Carlos Lopes of Portugal and 8.5 minutes behind Chris McCubbins of Canada who finished next to last . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD finished)
+      (PP
+        (NP (CD 14) (NNS minutes))
+        (IN behind)
+        (NP (DT the) (NN heat) (NN winner)))
+      (NP
+        (NP
+          (NP
+            (NP (NNP Carlos) (NNP Lopes))
+            (PP (IN of)
+              (NP (NNP Portugal))))
+          (CC and)
+          (NP
+            (NP (CD 8.5) (NNS minutes))
+            (PP (IN behind)
+              (NP
+                (NP (NNP Chris) (NNP McCubbins))
+                (PP (IN of)
+                  (NP (NNP Canada)))))))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD finished)
+              (ADVP (RB next))
+              (PP (IN to)
+                (NP (JJ last))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	finished
+			sense:	end.v.01
+			prop:	finish.02
+			V		1-1	finished 
+			N-ARG-A1		0-0	He 
+			N-ARGM-MNR		2-24	14 minutes behind the heat winner Carlos Lopes of Portugal and 8.5 minutes behind Chris McCubbins of Canada who finished next to last 
+	2	14
+			name:	DURATION				2-3	14 minutes 
+	3	minutes
+			sense:	minute.n.01
+	4	behind
+	5	the
+	6	heat
+			sense:	heat.n.06
+	7	winner
+			sense:	winner.n.01
+	8	Carlos
+			coref:	IDENT			0	8-11	Carlos Lopes of Portugal 
+			name:	PERSON				8-9	Carlos Lopes 
+	9	Lopes
+	10	of
+	11	Portugal
+			name:	COUNTRY				11-11	Portugal 
+	12	and
+	13	8.5
+			name:	DURATION				13-14	8.5 minutes 
+	14	minutes
+			sense:	minute.n.01
+	15	behind
+	16	Chris
+			name:	PERSON				16-17	Chris McCubbins 
+	17	McCubbins
+	18	of
+	19	Canada
+			name:	COUNTRY				19-19	Canada 
+	20	who
+	21	finished
+			sense:	end.v.01
+			prop:	finish.02
+			V		21-21	finished 
+			N-ARG-A1		16-19	Chris McCubbins of Canada 
+			R-ARG-A1		20-20	who 
+			N-ARGM-MNR		22-24	next to last 
+	22	next
+			sense:	next.r.01
+	23	to
+	24	last
+			sense:	last.a.02
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+While he completed the last six rounds alone on the field , track officials argued whether he should be allowed to finish the course .
+
+
+Treebanked sentence:
+--------------------
+While he completed the last six rounds alone on the field , track officials argued whether he should be allowed to finish the course . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (PRP he))
+        (VP (VBD completed)
+          (NP (DT the) (JJ last) (CD six) (NNS rounds))
+          (ADVP (RB alone))
+          (PP (IN on)
+            (NP (DT the) (NN field))))))
+    (, ,)
+    (NP (NN track) (NNS officials))
+    (VP (VBD argued)
+      (SBAR (IN whether)
+        (S
+          (NP (PRP he))
+          (VP (MD should)
+            (VP (VB be)
+              (VP (VBN allowed)
+                (S
+                  (VP (TO to)
+                    (VP (VB finish)
+                      (NP (DT the) (NN course)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	While
+	1	he
+			coref:	IDENT			0	1-1	he 
+	2	completed
+			sense:	complete.v.01
+			prop:	complete.01
+			V		2-2	completed 
+			N-ARG-A0		1-1	he 
+			N-ARG-A1		3-6	the last six rounds 
+			N-ARGM-MNR		7-7	alone 
+			N-ARGM-LOC		8-10	on the field 
+	3	the
+	4	last
+			sense:	last.a.02
+	5	six
+			name:	NUMBER				5-5	six 
+	6	rounds
+			sense:	cycle.n.01
+	7	alone
+			sense:	alone.r.02
+	8	on
+	9	the
+	10	field
+			sense:	playing_field.n.02
+	11	,
+	12	track
+			sense:	racetrack.n.01
+	13	officials
+			sense:	official.n.01
+	14	argued
+			sense:	argue.v.02
+			prop:	argue.02
+			V		14-14	argued 
+			N-ARGM-ADV		0-10	While he completed the last six rounds alone on the field 
+			N-ARG-A0		12-13	track officials 
+			N-ARG-A2		15-23	whether he should be allowed to finish the course 
+	15	whether
+	16	he
+			coref:	IDENT			0	16-16	he 
+	17	should
+	18	be
+			sense:	be.v.01
+			prop:	be.03
+			V		18-18	be 
+	19	allowed
+			sense:	permit.v.01
+			prop:	allow.01
+			V		19-19	allowed 
+			N-ARGM-MOD		17-17	should 
+			N-ARG-A1		20-23	to finish the course 
+	20	to
+	21	finish
+			sense:	complete.v.01
+			prop:	finish.01
+			V		21-21	finish 
+			N-ARG-A0		16-16	he 
+			N-ARG-A1		22-23	the course 
+	22	the
+	23	course
+			sense:	path.n.04
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ultimately he was , which held up the entire track and field schedule by fourteen minutes .
+
+
+Treebanked sentence:
+--------------------
+Ultimately he was , which held up the entire track and field schedule by fourteen minutes . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Ultimately))
+    (NP (PRP he))
+    (VP (VBD was) (, ,)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBD held)
+            (PRT (RP up))
+            (NP (DT the) (JJ entire)
+              (NML (NN track)
+                (CC and)
+                (NN field))
+              (NN schedule))
+            (PP (IN by)
+              (NP (CD fourteen) (NNS minutes)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ultimately
+			sense:	ultimately.r.01
+	1	he
+			coref:	IDENT			0	1-1	he 
+	2	was
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	was 
+			N-ARGM-ADV		0-0	Ultimately 
+			N-ARG-A1		1-1	he 
+			N-ARGM-ADV		4-15	which held up the entire track and field schedule by fourteen minutes 
+	3	,
+	4	which
+	5	held
+			sense:	keep.v.01
+			prop:	hold.10
+			V		5-5	held 
+			N-ARG-A0		4-4	which 
+			N-ARG-A1		7-12	the entire track and field schedule 
+			N-ARGM-EXT		13-15	by fourteen minutes 
+	6	up
+	7	the
+	8	entire
+			sense:	entire.s.01
+	9	track
+			sense:	racetrack.n.01
+	10	and
+	11	field
+			sense:	field.n.13
+	12	schedule
+			sense:	schedule.n.02
+	13	by
+	14	fourteen
+			name:	DURATION				14-15	fourteen minutes 
+	15	minutes
+			sense:	minute.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Charles was one of the members of the notorious squad of Haitian long distance track and field athletes delegated to the Olympic Games by the Baby Doc Duvalier regime during the 1970s and 1980s , who gained fame by setting all - time worst times on the Olympics , many of which are still standing today .
+
+
+Treebanked sentence:
+--------------------
+Charles was one of the members of the notorious squad of Haitian long distance track and field athletes delegated to the Olympic Games by the Baby Doc Duvalier regime during the 1970s and 1980s , who gained fame by setting all - time worst times on the Olympics , many of which are still standing today . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Charles))
+    (VP (VBD was)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNS members))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (JJ notorious) (NN squad))
+                (PP (IN of)
+                  (NP
+                    (NP (JJ Haitian)
+                      (NML
+                        (NML (JJ long) (NN distance) (NN track))
+                        (CC and)
+                        (NML (NN field)))
+                      (NNS athletes))
+                    (VP (VBN delegated)
+                      (PP (IN to)
+                        (NP (DT the)
+                          (NML
+                            (NML (NNP Olympic) (NNPS Games))
+                            (PP (IN by)
+                              (NP (DT the) (NNP Baby) (NNP Doc) (NNP Duvalier))))
+                          (NN regime)))
+                      (PP (IN during)
+                        (NP
+                          (NP (DT the) (NNS 1970s)
+                            (CC and)
+                            (NNS 1980s))
+                          (, ,)
+                          (SBAR
+                            (WHNP (WP who))
+                            (S
+                              (VP (VBD gained)
+                                (NP (NN fame))
+                                (PP (IN by)
+                                  (S
+                                    (VP (VBG setting)
+                                      (PP (RB all)
+                                        (NP (HYPH -) (NN time)))
+                                      (NP-TMP (JJS worst) (NNS times))
+                                      (PP (IN on)
+                                        (NP
+                                          (NP (DT the) (NNPS Olympics))
+                                          (, ,)
+                                          (SBAR
+                                            (WHNP
+                                              (NP (JJ many))
+                                              (WHPP (IN of)
+                                                (WHNP (WDT which))))
+                                            (S
+                                              (VP (VBP are)
+                                                (ADVP (RB still))
+                                                (VP (VBG standing)
+                                                  (NP-TMP (NN today)))))))))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Charles
+			coref:	IDENT			0	0-0	Charles 
+			name:	PERSON				0-0	Charles 
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	Charles 
+			N-ARG-A2		2-55	one of the members of the notorious squad of Haitian long distance track and field athletes delegated to the Olympic Games by the Baby Doc Duvalier regime during the 1970s and 1980s , who gained fame by setting all - time worst times on the Olympics , many of which are still standing today 
+	2	one
+			name:	NUMBER				2-2	one 
+	3	of
+	4	the
+	5	members
+			sense:	member.n.01
+	6	of
+	7	the
+	8	notorious
+			sense:	ill-famed.s.01
+	9	squad
+			sense:	team.n.01
+	10	of
+	11	Haitian
+			name:	NATIONALITY				11-11	Haitian 
+	12	long
+			sense:	long.a.02
+	13	distance
+			sense:	distance.n.01
+	14	track
+			sense:	racetrack.n.01
+	15	and
+	16	field
+			sense:	field.n.13
+	17	athletes
+			sense:	athlete.n.01
+	18	delegated
+			sense:	delegate.v.02
+			prop:	delegate.01
+			V		18-18	delegated 
+			N-ARG-A1		11-17	Haitian long distance track and field athletes 
+			N-ARG-A2		19-22	to the Olympic Games 
+			N-ARG-A0		23-28	by the Baby Doc Duvalier regime 
+			N-ARGM-TMP		29-33	during the 1970s and 1980s 
+	19	to
+	20	the
+	21	Olympic
+			name:	MISC				21-22	Olympic Games 
+	22	Games
+	23	by
+	24	the
+	25	Baby
+			name:	PERSON				25-27	Baby Doc Duvalier 
+	26	Doc
+	27	Duvalier
+	28	regime
+			sense:	government.n.01
+	29	during
+	30	the
+			name:	DATE				30-31	the 1970s 
+	31	1970s
+	32	and
+	33	1980s
+			name:	DATE				33-33	1980s 
+	34	,
+	35	who
+	36	gained
+			sense:	acquire.v.05
+			prop:	gain.02
+			V		36-36	gained 
+			N-ARG-A0		4-33	the members of the notorious squad of Haitian long distance track and field athletes delegated to the Olympic Games by the Baby Doc Duvalier regime during the 1970s and 1980s 
+			R-ARG-A0		35-35	who 
+			N-ARG-A1		37-37	fame 
+			N-ARGM-MNR		38-55	by setting all - time worst times on the Olympics , many of which are still standing today 
+	37	fame
+			sense:	fame.n.01
+	38	by
+	39	setting
+			sense:	set.v.04
+			prop:	set.02
+			V		39-39	setting 
+			N-ARG-A1		40-44	all - time worst times 
+			N-ARGM-LOC		45-47	on the Olympics 
+			C-ARG-A1		49-55	many of which are still standing today 
+	40	all
+			sense:	wholly.r.01
+	41	-
+	42	time
+			sense:	time.n.01
+	43	worst
+			sense:	bad.a.01
+	44	times
+			sense:	time.n.01
+	45	on
+	46	the
+	47	Olympics
+			name:	MISC				47-47	Olympics 
+	48	,
+	49	many
+			sense:	many.a.01
+	50	of
+	51	which
+	52	are
+			sense:	be.v.01
+			prop:	be.03
+			V		52-52	are 
+	53	still
+			sense:	still.r.01
+	54	standing
+			sense:	stand.v.01
+			prop:	stand.01
+			V		54-54	standing 
+			N-ARG-A1		49-51	many of which 
+			N-ARGM-TMP		53-53	still 
+			N-ARGM-TMP		55-55	today 
+	55	today
+			name:	DATE				55-55	today 
+			sense:	today.n.01
+	56	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Other notable performers included Anilus Joseph who started his 1972 10000 metres qualifying heat in a sprint then dropped out when he was already a mile behind the leaders , Wilnor Joseph who covered the 800 metres with a time of 2:15.26 in 1976 , and Dieudonne Lamothe who finished last at both the 5000 metres in 1976 and at the marathon race in 1984 .
+
+
+Treebanked sentence:
+--------------------
+Other notable performers included Anilus Joseph who started his 1972 10000 metres qualifying heat in a sprint then dropped out when he was already a mile behind the leaders , Wilnor Joseph who covered the 800 metres with a time of 2:15.26 in 1976 , and Dieudonne Lamothe who finished last at both the 5000 metres in 1976 and at the marathon race in 1984 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (JJ Other) (JJ notable) (NNS performers))
+    (VP (VBD included)
+      (NP
+        (NP (NNP Anilus) (NNP Joseph))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD started)
+              (NP
+                (NP (PRP$ his) (CD 1972))
+                (SBAR
+                  (S
+                    (NP
+                      (NP (CD 10000) (NNS metres))
+                      (VP (VBG qualifying)
+                        (NP (NN heat))
+                        (PP (IN in)
+                          (NP (DT a) (NN sprint)))))
+                    (ADVP (RB then))
+                    (VP (VBD dropped)
+                      (PRT (RP out))
+                      (SBAR
+                        (WHADVP (WRB when))
+                        (S
+                          (NP (PRP he))
+                          (VP (VBD was)
+                            (ADVP (RB already))
+                            (NP
+                              (NP
+                                (NP (DT a) (NN mile))
+                                (PP (IN behind)
+                                  (NP (DT the) (NNS leaders))))
+                              (, ,)
+                              (NP
+                                (NP (NNP Wilnor) (NNP Joseph))
+                                (SBAR
+                                  (WHNP (WP who))
+                                  (S
+                                    (VP (VBD covered)
+                                      (NP (DT the) (CD 800) (NNS metres))
+                                      (PP (IN with)
+                                        (NP
+                                          (NP (DT a) (NN time))
+                                          (PP (IN of)
+                                            (NP (CD 2:15.26)))))
+                                      (PP (IN in)
+                                        (NP (CD 1976)))))))
+                              (, ,)
+                              (CC and)
+                              (NP
+                                (NP (NNP Dieudonne) (NNP Lamothe))
+                                (SBAR
+                                  (WHNP (WP who))
+                                  (S
+                                    (VP (VBD finished)
+                                      (ADVP (RB last))
+                                      (PP
+                                        (PP (IN at)
+                                          (CC both)
+                                          (NP
+                                            (NP (DT the) (CD 5000) (NNS metres))
+                                            (PP (IN in)
+                                              (NP (CD 1976)))))
+                                        (CC and)
+                                        (PP (IN at)
+                                          (NP
+                                            (NP (DT the) (NN marathon) (NN race))
+                                            (PP (IN in)
+                                              (NP (CD 1984)))))))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Other
+			sense:	other.a.01
+	1	notable
+			sense:	celebrated.s.01
+	2	performers
+			sense:	performer.n.01
+	3	included
+			sense:	include.v.01
+			prop:	include.01
+			V		3-3	included 
+			N-ARG-A2		0-2	Other notable performers 
+			N-ARG-A1		4-64	Anilus Joseph who started his 1972 10000 metres qualifying heat in a sprint then dropped out when he was already a mile behind the leaders , Wilnor Joseph who covered the 800 metres with a time of 2:15.26 in 1976 , and Dieudonne Lamothe who finished last at both the 5000 metres in 1976 and at the marathon race in 1984 
+	4	Anilus
+			name:	PERSON				4-5	Anilus Joseph 
+	5	Joseph
+	6	who
+	7	started
+			sense:	begin.v.03
+			prop:	start.01
+			V		7-7	started 
+			N-ARG-A0		4-5	Anilus Joseph 
+			R-ARG-A0		6-6	who 
+			N-ARG-A1		8-13	his 1972 10000 metres qualifying heat 
+			N-ARGM-MNR		14-16	in a sprint 
+	8	his
+			coref:	IDENT			0	8-8	his 
+	9	1972
+			name:	DATE				9-9	1972 
+	10	10000
+			name:	NUMBER				10-10	10000 
+	11	metres
+			sense:	meter.n.01
+	12	qualifying
+			sense:	qualify.v.01
+			prop:	qualify.02
+			V		12-12	qualifying 
+			N-ARG-A1		10-11	10000 metres 
+			N-ARG-A1		13-13	heat 
+	13	heat
+			sense:	heat.n.06
+	14	in
+	15	a
+	16	sprint
+			sense:	dash.n.02
+	17	then
+			sense:	then.r.01
+	18	dropped
+			sense:	drop.v.07
+			prop:	drop.04
+			V		18-18	dropped 
+			N-ARG-A0		4-5	Anilus Joseph 
+			R-ARG-A0		6-6	who 
+			N-ARGM-TMP		17-17	then 
+			N-ARGM-TMP		20-28	when he was already a mile behind the leaders 
+	19	out
+	20	when
+	21	he
+			coref:	IDENT			0	21-21	he 
+	22	was
+			sense:	be.v.03
+			prop:	be.01
+			V		22-22	was 
+			N-ARGM-TMP		20-20	when 
+			N-ARG-A1		21-21	he 
+			N-ARGM-TMP		23-23	already 
+			N-ARG-A2		24-28	a mile behind the leaders 
+	23	already
+			sense:	already.r.01
+	24	a
+	25	mile
+			sense:	mile.n.01
+	26	behind
+	27	the
+	28	leaders
+			sense:	leader.n.01
+	29	,
+	30	Wilnor
+			name:	PERSON				30-31	Wilnor Joseph 
+	31	Joseph
+	32	who
+	33	covered
+			sense:	traverse.v.01
+			prop:	cover.01
+			V		33-33	covered 
+			N-ARG-A0		30-31	Wilnor Joseph 
+			R-ARG-A0		32-32	who 
+			N-ARG-A1		34-36	the 800 metres 
+			N-ARGM-MNR		37-41	with a time of 2:15.26 
+			N-ARGM-TMP		42-43	in 1976 
+	34	the
+	35	800
+			name:	NUMBER				35-35	800 
+	36	metres
+			sense:	meter.n.01
+	37	with
+	38	a
+	39	time
+			sense:	time.n.02
+	40	of
+	41	2:15.26
+			name:	TIME				41-42	2:15.26 in 
+	42	in
+	43	1976
+			name:	DATE				43-43	1976 
+	44	,
+	45	and
+	46	Dieudonne
+			name:	PERSON				46-47	Dieudonne Lamothe 
+	47	Lamothe
+	48	who
+	49	finished
+			sense:	finish_up.v.02
+			prop:	finish.02
+			V		49-49	finished 
+			N-ARG-A1		46-47	Dieudonne Lamothe 
+			R-ARG-A1		48-48	who 
+			N-ARGM-TMP		50-50	last 
+			N-ARGM-LOC		51-55	at both the 5000 metres 
+			N-ARGM-TMP		56-57	in 1976 
+			N-ARGM-LOC		58-62	and at the marathon race 
+	50	last
+			sense:	last.r.02
+	51	at
+	52	both
+	53	the
+	54	5000
+			name:	DATE				54-54	5000 
+	55	metres
+			sense:	meter.n.01
+	56	in
+	57	1976
+			name:	DATE				57-57	1976 
+	58	and
+	59	at
+	60	the
+	61	marathon
+			sense:	marathon.n.02
+	62	race
+			sense:	race.n.02
+	63	in
+	64	1984
+			name:	DATE				64-64	1984 
+	65	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.8-11	Carlos Lopes of Portugal 
+				0.0-1	Charles Olmeus 
+				1.0-0	Charles 
+				1.8-8	his 
+				2.0-0	He 
+				3.1-1	he 
+				3.16-16	he 
+				4.1-1	he 
+				5.0-0	Charles 
+				6.8-8	his 
+				6.21-21	he 
+

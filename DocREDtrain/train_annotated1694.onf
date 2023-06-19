@@ -1,0 +1,578 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Oslo Airport Station ( ) , also known as Gardermoen Station , is a railway station located in the airport terminal building of Oslo Airport , Gardermoen in Norway .
+
+
+Treebanked sentence:
+--------------------
+Oslo Airport Station ( ) , also known as Gardermoen Station , is a railway station located in the airport terminal building of Oslo Airport , Gardermoen in Norway . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Oslo) (NNP Airport) (NNP Station) (-LRB- -LRB-) (-RRB- -RRB-))
+      (, ,)
+      (VP
+        (ADVP (RB also))
+        (VBN known)
+        (PP (IN as)
+          (NP (NNP Gardermoen) (NNP Station))))
+      (, ,))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN railway) (NN station))
+        (VP (VBN located)
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN airport) (JJ terminal) (NN building))
+              (PP (IN of)
+                (NP
+                  (NP (NNP Oslo) (NNP Airport))
+                  (, ,)
+                  (NP
+                    (NP (NNP Gardermoen))
+                    (PP (IN in)
+                      (NP (NNP Norway)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Oslo
+			name:	CITY				0-0	Oslo 
+	1	Airport
+			name:	LOCATION				1-2	Airport Station 
+	2	Station
+	3	(
+	4	)
+	5	,
+	6	also
+			sense:	besides.r.02
+	7	known
+			sense:	know.v.04
+			prop:	know.01
+			V		7-7	known 
+			N-ARG-A1		0-4	Oslo Airport Station ( ) 
+			N-ARGM-ADV		6-6	also 
+			N-ARG-A2		8-10	as Gardermoen Station 
+	8	as
+	9	Gardermoen
+			coref:	IDENT			0	9-10	Gardermoen Station 
+			name:	LOCATION				9-10	Gardermoen Station 
+	10	Station
+	11	,
+	12	is
+			sense:	be.v.02
+			prop:	be.01
+			V		12-12	is 
+			N-ARG-A1		0-10	Oslo Airport Station ( ) , also known as Gardermoen Station 
+			N-ARG-A2		13-28	a railway station located in the airport terminal building of Oslo Airport , Gardermoen in Norway 
+	13	a
+	14	railway
+			sense:	railway.n.01
+	15	station
+			sense:	station.n.01
+	16	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		16-16	located 
+			N-ARG-A1		13-15	a railway station 
+			N-ARGM-LOC		17-28	in the airport terminal building of Oslo Airport , Gardermoen in Norway 
+	17	in
+	18	the
+	19	airport
+			sense:	airport.n.01
+	20	terminal
+			sense:	terminal.a.03
+	21	building
+			sense:	building.n.01
+	22	of
+	23	Oslo
+			name:	CITY				23-23	Oslo 
+	24	Airport
+			name:	LOCATION				24-24	Airport 
+	25	,
+	26	Gardermoen
+			name:	LOCATION				26-26	Gardermoen 
+	27	in
+	28	Norway
+			name:	COUNTRY				28-28	Norway 
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Located on the Gardermoen Line , it is served by the Airport Express Trains , express trains to Trondheim and Oslo , regional trains to Lillehammer and Skien ( via Oslo ) and commuter trains to Eidsvoll and Kongsberg ( via Oslo ) .
+
+
+Treebanked sentence:
+--------------------
+Located on the Gardermoen Line , it is served by the Airport Express Trains , express trains to Trondheim and Oslo , regional trains to Lillehammer and Skien ( via Oslo ) and commuter trains to Eidsvoll and Kongsberg ( via Oslo ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Located)
+        (PP (IN on)
+          (NP (DT the) (NNP Gardermoen) (NN Line)))))
+    (, ,)
+    (NP (PRP it))
+    (VP
+      (VP (VBZ is)
+        (VP (VBN served)
+          (PP (IN by)
+            (NP (DT the)
+              (NML
+                (NML (NNP Airport) (NNP Express))
+                (NNS Trains))))))
+      (, ,)
+      (VP (VB express)
+        (NP (NNS trains))
+        (PP (IN to)
+          (NP (NNP Trondheim)
+            (CC and)
+            (NNP Oslo))))
+      (, ,)
+      (VP
+        (NP (JJ regional) (NNS trains))
+        (PP (IN to)
+          (NP
+            (NP (NNP Lillehammer)
+              (CC and)
+              (NNP Skien))
+            (-LRB- -LRB-)
+            (PP (IN via)
+              (NP (NNP Oslo)))
+            (-RRB- -RRB-))))
+      (CC and)
+      (VP
+        (NP (NN commuter) (NNS trains))
+        (PP (IN to)
+          (NP
+            (NP (NNP Eidsvoll)
+              (CC and)
+              (NNP Kongsberg))
+            (-LRB- -LRB-)
+            (PP (IN via)
+              (NP (NNP Oslo)))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		0-0	Located 
+			N-ARGM-LOC		1-4	on the Gardermoen Line 
+			N-ARG-A1		6-6	it 
+	1	on
+	2	the
+	3	Gardermoen
+			name:	LOCATION				3-3	Gardermoen 
+	4	Line
+			name:	CITY				4-4	Line 
+			sense:	line.n.14
+	5	,
+	6	it
+	7	is
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	is 
+	8	served
+			sense:	service.v.01
+			prop:	serve.01
+			V		8-8	served 
+			N-ARG-A2		6-6	it 
+			N-ARG-A0		9-42	by the Airport Express Trains , express trains to Trondheim and Oslo , regional trains to Lillehammer and Skien ( via Oslo ) and commuter trains to Eidsvoll and Kongsberg ( via Oslo ) 
+	9	by
+	10	the
+	11	Airport
+			name:	ORGANIZATION				11-13	Airport Express Trains 
+	12	Express
+	13	Trains
+			sense:	train.n.01
+	14	,
+	15	express
+			sense:	express.v.07
+			prop:	express.02
+			V		15-15	express 
+			N-ARG-A1		16-16	trains 
+	16	trains
+			sense:	train.n.01
+	17	to
+	18	Trondheim
+			name:	CITY				18-18	Trondheim 
+	19	and
+	20	Oslo
+			name:	CITY				20-20	Oslo 
+	21	,
+	22	regional
+			sense:	regional.s.02
+	23	trains
+			sense:	train.n.01
+	24	to
+	25	Lillehammer
+			name:	CITY				25-25	Lillehammer 
+	26	and
+	27	Skien
+			name:	LOCATION				27-27	Skien 
+	28	(
+	29	via
+	30	Oslo
+			name:	CITY				30-30	Oslo 
+	31	)
+	32	and
+	33	commuter
+			sense:	commuter.n.01
+	34	trains
+			sense:	train.n.01
+	35	to
+	36	Eidsvoll
+			name:	CITY				36-36	Eidsvoll 
+	37	and
+	38	Kongsberg
+			name:	ORGANIZATION				38-38	Kongsberg 
+	39	(
+	40	via
+	41	Oslo
+			name:	CITY				41-41	Oslo 
+	42	)
+	43	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The station is located from Oslo Central Station .
+
+
+Treebanked sentence:
+--------------------
+The station is located from Oslo Central Station . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN station))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN from)
+          (NP (NNP Oslo) (NNP Central) (NNP Station)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The station 
+	1	station
+			sense:	station.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		3-3	located 
+			N-ARG-A1		0-1	The station 
+			N-ARGM-LOC		4-7	from Oslo Central Station 
+	4	from
+	5	Oslo
+			coref:	IDENT			0	5-7	Oslo Central Station 
+			name:	CITY				5-5	Oslo 
+	6	Central
+			name:	LOCATION				6-7	Central Station 
+	7	Station
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The station is manned , and there is a single bus route , and several coach services , to and from the airport .
+
+
+Treebanked sentence:
+--------------------
+The station is manned , and there is a single bus route , and several coach services , to and from the airport . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN station))
+      (VP (VBZ is)
+        (NP (JJ manned))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (EX there))
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (JJ single) (NN bus) (NN route))
+          (, ,)
+          (CC and)
+          (NP (JJ several) (NN coach) (NNS services))
+          (, ,))
+        (PP (IN to)
+          (CC and)
+          (IN from)
+          (NP (DT the) (NN airport)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The station 
+	1	station
+			sense:	station.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The station 
+			N-ARG-A2		3-3	manned 
+	3	manned
+			sense:	manned.a.01
+	4	,
+	5	and
+	6	there
+	7	is
+			sense:	exist.v.01
+			prop:	be.02
+			V		7-7	is 
+			N-ARG-A1		8-22	a single bus route , and several coach services , to and from the airport 
+	8	a
+	9	single
+			sense:	individual.a.01
+	10	bus
+			sense:	bus.n.01
+	11	route
+			sense:	path.n.03
+	12	,
+	13	and
+	14	several
+			sense:	several.s.01
+	15	coach
+			name:	TITLE				15-15	coach 
+			sense:	bus.n.01
+	16	services
+			sense:	service.n.04
+	17	,
+	18	to
+	19	and
+	20	from
+	21	the
+	22	airport
+			sense:	airport.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It opened in 1998 , along with the new airport .
+
+
+Treebanked sentence:
+--------------------
+It opened in 1998 , along with the new airport . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD opened)
+      (PP (IN in)
+        (NP (CD 1998)))
+      (, ,)
+      (ADVP (IN along)
+        (PP (IN with)
+          (NP (DT the) (JJ new) (NN airport)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	opened
+			sense:	open.v.02
+			prop:	open.01
+			V		1-1	opened 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		2-3	in 1998 
+			N-ARGM-ADV		5-9	along with the new airport 
+	2	in
+	3	1998
+			name:	DATE				3-3	1998 
+	4	,
+	5	along
+	6	with
+	7	the
+	8	new
+			sense:	new.a.01
+	9	airport
+			sense:	airport.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+During 2000 – 2001 , there were several derailments at the station .
+
+
+Treebanked sentence:
+--------------------
+During 2000 – 2001 , there were several derailments at the station . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN During)
+      (NP (CD 2000) (SYM –) (CD 2001)))
+    (, ,)
+    (NP (EX there))
+    (VP (VBD were)
+      (NP
+        (NP (JJ several) (NNS derailments))
+        (PP (IN at)
+          (NP (DT the) (NN station)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	During
+	1	2000
+			name:	DATE				1-1	2000 
+	2	–
+	3	2001
+			name:	DATE				3-3	2001 
+	4	,
+	5	there
+	6	were
+			sense:	be.v.05
+			prop:	be.02
+			V		6-6	were 
+			N-ARGM-TMP		0-3	During 2000 – 2001 
+			N-ARG-A1		7-11	several derailments at the station 
+	7	several
+			sense:	several.s.01
+	8	derailments
+			sense:	derailment.n.01
+	9	at
+	10	the
+			coref:	IDENT			0	10-11	the station 
+	11	station
+			sense:	station.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+South of the station is a terminal for unloading freight trains carrying aviation fuel .
+
+
+Treebanked sentence:
+--------------------
+South of the station is a terminal for unloading freight trains carrying aviation fuel . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP South))
+      (PP (IN of)
+        (NP (DT the) (NN station))))
+    (VP (VBZ is)
+      (NP (DT a)
+        (ADJP (JJ terminal)
+          (PP (IN for)
+            (S
+              (VP (VBG unloading)
+                (NP
+                  (NP (NN freight) (NNS trains))
+                  (VP (VBG carrying)))))))
+        (NN aviation) (NN fuel)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	South
+	1	of
+	2	the
+			coref:	IDENT			0	2-3	the station 
+	3	station
+			sense:	station.n.01
+	4	is
+			sense:	be.v.03
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A2		0-3	South of the station 
+			N-ARG-A1		5-13	a terminal for unloading freight trains carrying aviation fuel 
+	5	a
+	6	terminal
+			sense:	terminal.a.01
+	7	for
+	8	unloading
+			sense:	drop.v.08
+			prop:	unload.02
+			V		8-8	unloading 
+			N-ARG-A1		9-10	freight trains 
+			N-ARG-A2		11-13	carrying aviation fuel 
+	9	freight
+			sense:	cargo.n.01
+	10	trains
+			sense:	train.n.01
+	11	carrying
+			sense:	transport.v.02
+			prop:	carry.01
+			V		11-11	carrying 
+			N-ARG-A0		9-10	freight trains 
+			N-ARG-A1		12-13	aviation fuel 
+	12	aviation
+			sense:	aviation.n.02
+	13	fuel
+			sense:	fuel.n.01
+	14	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.5-7	Oslo Central Station 
+				0.9-10	Gardermoen Station 
+				2.0-1	The station 
+				3.0-1	The station 
+				4.0-0	It 
+				5.10-11	the station 
+				6.2-3	the station 
+

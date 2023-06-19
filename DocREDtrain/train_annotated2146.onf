@@ -1,0 +1,628 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Make Way for Tomorrow is a 1937 American drama film directed by Leo McCarey .
+
+
+Treebanked sentence:
+--------------------
+Make Way for Tomorrow is a 1937 American drama film directed by Leo McCarey . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VB Make)
+        (NP (NN Way))
+        (PP (IN for)
+          (NP (NN Tomorrow)))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (CD 1937) (JJ American) (NN drama) (NN film))
+        (VP (VBN directed)
+          (PP (IN by)
+            (NP (NNP Leo) (NNP McCarey))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Make
+			sense:	make.v.03
+			prop:	make.01
+			V		0-0	Make 
+			N-ARG-A1		1-1	Way 
+			N-ARGM-PRP		2-3	for Tomorrow 
+	1	Way
+			sense:	room.n.02
+	2	for
+	3	Tomorrow
+			name:	DATE				3-3	Tomorrow 
+			sense:	tomorrow.n.02
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	Make Way for Tomorrow 
+			N-ARG-A2		5-13	a 1937 American drama film directed by Leo McCarey 
+	5	a
+			coref:	IDENT			1	5-13	a 1937 American drama film directed by Leo McCarey 
+	6	1937
+			name:	DATE				6-6	1937 
+	7	American
+			name:	NATIONALITY				7-7	American 
+	8	drama
+			sense:	play.n.01
+	9	film
+			sense:	movie.n.01
+	10	directed
+			sense:	direct.v.03
+			prop:	direct.01
+			V		10-10	directed 
+			N-ARG-A1		5-9	a 1937 American drama film 
+			N-ARG-A0		11-13	by Leo McCarey 
+	11	by
+	12	Leo
+			coref:	IDENT			0	12-13	Leo McCarey 
+			name:	PERSON				12-13	Leo McCarey 
+	13	McCarey
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The plot concerns an elderly couple ( Victor Moore and Beulah Bondi ) who are forced to separate when they lose their house and none of their five children will take both parents .
+
+
+Treebanked sentence:
+--------------------
+The plot concerns an elderly couple ( Victor Moore and Beulah Bondi ) who are forced to separate when they lose their house and none of their five children will take both parents . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN plot))
+    (VP (VBZ concerns)
+      (NP
+        (NP
+          (NP (DT an) (JJ elderly) (NN couple))
+          (-LRB- -LRB-)
+          (NP
+            (NP (NNP Victor) (NNP Moore))
+            (CC and)
+            (NP (NNP Beulah) (NNP Bondi)))
+          (-RRB- -RRB-))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP are)
+              (VP (VBN forced)
+                (S
+                  (VP (TO to)
+                    (VP (VB separate)
+                      (SBAR
+                        (WHADVP (WRB when))
+                        (S
+                          (NP (PRP they))
+                          (VP (VBP lose)
+                            (SBAR
+                              (S
+                                (NP
+                                  (NP (PRP$ their) (NN house)
+                                    (CC and)
+                                    (NN none))
+                                  (PP (IN of)
+                                    (NP (PRP$ their) (CD five) (NNS children))))
+                                (VP (MD will)
+                                  (VP (VB take)
+                                    (NP (DT both) (NNS parents))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	plot
+			sense:	plot.n.03
+	2	concerns
+			sense:	refer.v.02
+			prop:	concern.02
+			V		2-2	concerns 
+			N-ARG-A0		0-1	The plot 
+			N-ARG-A1		3-32	an elderly couple ( Victor Moore and Beulah Bondi ) who are forced to separate when they lose their house and none of their five children will take both parents 
+	3	an
+	4	elderly
+			sense:	aged.s.01
+	5	couple
+			sense:	couple.n.02
+	6	(
+	7	Victor
+			name:	PERSON				7-8	Victor Moore 
+	8	Moore
+	9	and
+	10	Beulah
+			name:	PERSON				10-11	Beulah Bondi 
+	11	Bondi
+	12	)
+	13	who
+	14	are
+			sense:	be.v.01
+			prop:	be.03
+			V		14-14	are 
+	15	forced
+			sense:	coerce.v.01
+			prop:	force.01
+			V		15-15	forced 
+			N-ARG-A1		3-12	an elderly couple ( Victor Moore and Beulah Bondi ) 
+			R-ARG-A1		13-13	who 
+			N-ARG-A2		16-17	to separate 
+			N-ARGM-TMP		18-22	when they lose their house 
+	16	to
+	17	separate
+			sense:	separate.v.09
+			prop:	separate.01
+			V		17-17	separate 
+			N-ARG-A1		13-13	who 
+			N-ARGM-TMP		18-22	when they lose their house 
+	18	when
+	19	they
+	20	lose
+			sense:	lose.v.01
+			prop:	lose.02
+			V		20-20	lose 
+			N-ARGM-TMP		18-18	when 
+			N-ARG-A0		19-19	they 
+			N-ARG-A1		21-22	their house 
+	21	their
+	22	house
+			sense:	house.n.01
+	23	and
+	24	none
+			sense:	none.n.01
+	25	of
+	26	their
+	27	five
+			name:	NUMBER				27-27	five 
+	28	children
+			sense:	child.n.02
+	29	will
+	30	take
+			sense:	accept.v.02
+			prop:	take.01
+			V		30-30	take 
+			N-ARG-A0		24-28	none of their five children 
+			N-ARGM-MOD		29-29	will 
+			N-ARG-A1		31-32	both parents 
+	31	both
+	32	parents
+			sense:	parent.n.01
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The film was written by Viña Delmar , from a play by Helen and Noah Leary , which was in turn based on the novel The Years Are So Long by advice columnist Josephine Lawrence .
+
+
+Treebanked sentence:
+--------------------
+The film was written by Viña Delmar , from a play by Helen and Noah Leary , which was in turn based on the novel The Years Are So Long by advice columnist Josephine Lawrence . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN film))
+    (VP (VBD was)
+      (VP (VBN written)
+        (PP (IN by)
+          (NP (NNP Viña) (NNP Delmar)))
+        (, ,)
+        (PP (IN from)
+          (NP
+            (NP
+              (NP (DT a) (NN play))
+              (PP (IN by)
+                (NP
+                  (NP (NNP Helen))
+                  (CC and)
+                  (NP (NNP Noah) (NNP Leary)))))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBD was)
+                  (PP (IN in)
+                    (NP (NN turn)))
+                  (PP (VBN based)
+                    (PP (IN on)
+                      (NP
+                        (NP (DT the) (JJ novel))
+                        (SBAR
+                          (S
+                            (NP (DT The) (NNS Years))
+                            (VP (VBP Are)
+                              (ADVP (RB So))
+                              (NP
+                                (NP (JJ Long))
+                                (PP (IN by)
+                                  (NP
+                                    (NML (NN advice) (NN columnist))
+                                    (NNP Josephine) (NNP Lawrence)))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The film 
+	1	film
+			sense:	movie.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	written
+			sense:	write.v.01
+			prop:	write.01
+			V		3-3	written 
+			N-ARG-A1		0-1	The film 
+			N-ARG-A0		4-6	by Viña Delmar 
+	4	by
+	5	Viña
+			name:	PERSON				5-6	Viña Delmar 
+	6	Delmar
+	7	,
+	8	from
+	9	a
+	10	play
+			sense:	play.n.01
+	11	by
+	12	Helen
+			name:	PERSON				12-12	Helen 
+	13	and
+	14	Noah
+			name:	PERSON				14-15	Noah Leary 
+	15	Leary
+	16	,
+	17	which
+	18	was
+			sense:	be.v.01
+			prop:	be.03
+			V		18-18	was 
+	19	in
+	20	turn
+			sense:	act.n.04
+	21	based
+			sense:	establish.v.08
+			prop:	base.02
+			V		21-21	based 
+			N-ARG-A1		9-15	a play by Helen and Noah Leary 
+			R-ARG-A1		17-17	which 
+			N-ARGM-ADV		19-20	in turn 
+			N-ARG-A2		22-34	on the novel The Years Are So Long by advice columnist Josephine Lawrence 
+	22	on
+	23	the
+	24	novel
+			sense:	fresh.s.04
+	25	The
+			name:	DURATION				25-26	The Years 
+	26	Years
+			sense:	year.n.01
+	27	Are
+			sense:	be.v.01
+			prop:	be.01
+			V		27-27	Are 
+			N-ARG-A1		25-26	The Years 
+			N-ARG-A2		28-29	So Long 
+	28	So
+			sense:	so.r.01
+	29	Long
+			sense:	long.a.01
+	30	by
+	31	advice
+			sense:	advice.n.01
+	32	columnist
+			name:	TITLE				32-32	columnist 
+			sense:	columnist.n.01
+	33	Josephine
+			name:	PERSON				33-34	Josephine Lawrence 
+	34	Lawrence
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+McCarey believed that it was his finest film .
+
+
+Treebanked sentence:
+--------------------
+McCarey believed that it was his finest film . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP McCarey))
+    (VP (VBD believed)
+      (SBAR (IN that)
+        (S
+          (NP (PRP it))
+          (VP (VBD was)
+            (NP (PRP$ his) (JJS finest) (NN film))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	McCarey
+			coref:	IDENT			0	0-0	McCarey 
+			name:	PERSON				0-0	McCarey 
+	1	believed
+			sense:	think.v.01
+			prop:	believe.01
+			V		1-1	believed 
+			N-ARG-A0		0-0	McCarey 
+			N-ARG-A1		2-7	that it was his finest film 
+	2	that
+	3	it
+			coref:	IDENT			1	3-3	it 
+	4	was
+			sense:	be.v.01
+			prop:	be.01
+			V		4-4	was 
+			N-ARG-A1		3-3	it 
+			N-ARG-A2		5-7	his finest film 
+	5	his
+			coref:	IDENT			0	5-5	his 
+			coref:	IDENT			1	5-7	his finest film 
+	6	finest
+			sense:	fine.s.04
+	7	film
+			sense:	movie.n.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+When he accepted his Academy Award for Best Director for The Awful Truth which was released the same year , he said " Thanks , but you gave it to me for the wrong picture . "
+
+
+Treebanked sentence:
+--------------------
+When he accepted his Academy Award for Best Director for The Awful Truth which was released the same year , he said " Thanks , but you gave it to me for the wrong picture . " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (SBAR
+        (WHADVP (WRB When))
+        (S
+          (NP (PRP he))
+          (VP (VBD accepted)
+            (NP (PRP$ his) (NN Academy) (NN Award))
+            (PP (IN for)
+              (NP (JJS Best) (NN Director)))
+            (PP (IN for)
+              (NP
+                (NP (DT The)
+                  (ADJP (JJ Awful))
+                  (NN Truth))
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBD was)
+                      (VP (VBN released)
+                        (NP-TMP (DT the) (JJ same) (NN year)))))))))))
+      (, ,)
+      (NP (PRP he))
+      (VP (VBD said) (`` ")
+        (NP (NN Thanks))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP you))
+      (VP (VBD gave)
+        (NP (PRP it))
+        (PP (IN to)
+          (NP (PRP me)))
+        (PP (IN for)
+          (NP (DT the) (JJ wrong) (NN picture)))))
+    (. .) ('' ")))
+
+
+Leaves:
+-------
+	0	When
+	1	he
+			coref:	IDENT			0	1-1	he 
+	2	accepted
+			sense:	accept.v.02
+			prop:	accept.01
+			V		2-2	accepted 
+			N-ARGM-TMP		0-0	When 
+			N-ARG-A0		1-1	he 
+			N-ARG-A1		3-18	his Academy Award for Best Director for The Awful Truth which was released the same year 
+	3	his
+			coref:	IDENT			0	3-3	his 
+	4	Academy
+			sense:	academy.n.02
+	5	Award
+			sense:	award.n.02
+	6	for
+	7	Best
+			sense:	good.a.01
+	8	Director
+			name:	TITLE				8-8	Director 
+			sense:	director.n.03
+	9	for
+	10	The
+	11	Awful
+			sense:	nasty.a.01
+	12	Truth
+			sense:	truth.n.01
+	13	which
+	14	was
+			sense:	be.v.01
+			prop:	be.03
+			V		14-14	was 
+	15	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		15-15	released 
+			N-ARG-A1		10-12	The Awful Truth 
+			R-ARG-A1		13-13	which 
+			N-ARGM-TMP		16-18	the same year 
+	16	the
+			name:	DATE				16-18	the same year 
+	17	same
+			sense:	same.a.01
+	18	year
+			sense:	year.n.01
+	19	,
+	20	he
+			coref:	IDENT			0	20-20	he 
+	21	said
+			sense:	state.v.01
+			prop:	say.01
+			V		21-21	said 
+			N-ARGM-TMP		0-18	When he accepted his Academy Award for Best Director for The Awful Truth which was released the same year 
+			N-ARG-A0		20-20	he 
+			N-ARG-A1		23-34	Thanks , but you gave it to me for the wrong picture 
+	22	"
+	23	Thanks
+			coref:	IDENT			2	23-23	Thanks 
+			sense:	thanks.n.01
+	24	,
+	25	but
+	26	you
+	27	gave
+			sense:	give.v.03
+			prop:	give.01
+			V		27-27	gave 
+			N-ARG-A0		26-26	you 
+			N-ARG-A1		28-28	it 
+			N-ARG-A2		29-30	to me 
+			N-ARGM-CAU		31-34	for the wrong picture 
+	28	it
+			coref:	IDENT			2	28-28	it 
+	29	to
+	30	me
+			coref:	IDENT			0	30-30	me 
+	31	for
+	32	the
+	33	wrong
+			sense:	improper.s.03
+	34	picture
+			sense:	movie.n.01
+	35	.
+	36	"
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2010 , it was selected for preservation by the United States Library of Congress 's National Film Registry .
+
+
+Treebanked sentence:
+--------------------
+In 2010 , it was selected for preservation by the United States Library of Congress 's National Film Registry . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2010)))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (VP (VBN selected)
+        (PP (IN for)
+          (NP (NN preservation)))
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NNP United) (NNP States) (NNP Library))
+            (PP (IN of)
+              (NP
+                (NP (NNP Congress) (POS 's))
+                (NNP National) (NNP Film) (NNP Registry)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2010
+			name:	DATE				1-1	2010 
+	2	,
+	3	it
+			coref:	IDENT			2	3-3	it 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	selected
+			sense:	choose.v.01
+			prop:	select.01
+			V		5-5	selected 
+			N-ARGM-TMP		0-1	In 2010 
+			N-ARG-A1		3-3	it 
+			N-ARG-A3		6-7	for preservation 
+			N-ARG-A0		8-18	by the United States Library of Congress 's National Film Registry 
+	6	for
+	7	preservation
+			sense:	preservation.n.01
+	8	by
+	9	the
+	10	United
+			name:	ORGANIZATION				10-18	United States Library of Congress 's National Film Registry 
+	11	States
+	12	Library
+	13	of
+	14	Congress
+	15	's
+	16	National
+	17	Film
+	18	Registry
+	19	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.12-13	Leo McCarey 
+				3.0-0	McCarey 
+				3.5-5	his 
+				4.1-1	he 
+				4.3-3	his 
+				4.20-20	he 
+				4.30-30	me 
+	Chain 1 (IDENT)
+				0.5-13	a 1937 American drama film directed by Leo McCarey 
+				2.0-1	The film 
+				3.3-3	it 
+				3.5-7	his finest film 
+	Chain 2 (IDENT)
+				4.23-23	Thanks 
+				4.28-28	it 
+				5.3-3	it 
+

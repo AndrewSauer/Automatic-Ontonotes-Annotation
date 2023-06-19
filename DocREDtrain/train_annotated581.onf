@@ -1,0 +1,821 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Dwight Tillery is an American politician of the Democratic Party who is active in local politics of Cincinnati , Ohio .
+
+
+Treebanked sentence:
+--------------------
+Dwight Tillery is an American politician of the Democratic Party who is active in local politics of Cincinnati , Ohio . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Dwight) (NNP Tillery))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ American) (NN politician))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Democratic) (NNP Party))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBZ is)
+                  (ADJP (JJ active)
+                    (PP (IN in)
+                      (NP
+                        (NP (JJ local) (NNS politics))
+                        (PP (IN of)
+                          (NP (NNP Cincinnati) (, ,) (NNP Ohio)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Dwight
+			coref:	IDENT			1	0-1	Dwight Tillery 
+			name:	PERSON				0-1	Dwight Tillery 
+	1	Tillery
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Dwight Tillery 
+			N-ARG-A2		3-19	an American politician of the Democratic Party who is active in local politics of Cincinnati , Ohio 
+	3	an
+	4	American
+			name:	NATIONALITY				4-4	American 
+	5	politician
+			name:	TITLE				5-5	politician 
+			sense:	politician.n.02
+	6	of
+	7	the
+			coref:	IDENT			2	7-19	the Democratic Party who is active in local politics of Cincinnati , Ohio 
+	8	Democratic
+			name:	ORGANIZATION				8-9	Democratic Party 
+	9	Party
+	10	who
+	11	is
+			sense:	be.v.01
+			prop:	be.01
+			V		11-11	is 
+			N-ARG-A1		3-9	an American politician of the Democratic Party 
+			R-ARG-A1		10-10	who 
+			N-ARG-A2		12-19	active in local politics of Cincinnati , Ohio 
+	12	active
+			sense:	active.s.04
+	13	in
+	14	local
+			sense:	local.a.01
+	15	politics
+			sense:	politics.n.01
+	16	of
+	17	Cincinnati
+			coref:	IDENT			0	17-17	Cincinnati 
+			name:	CITY				17-17	Cincinnati 
+	18	,
+	19	Ohio
+			name:	STATE_OR_PROVINCE				19-19	Ohio 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Tillery grew up in the city 's West End and attended the University of Cincinnati in the 1960s , where he helped found the university 's United Black Association and graduated with a degree in political science .
+
+
+Treebanked sentence:
+--------------------
+Tillery grew up in the city 's West End and attended the University of Cincinnati in the 1960s , where he helped found the university 's United Black Association and graduated with a degree in political science . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Tillery))
+    (VP
+      (VP (VBD grew)
+        (PRT (RP up))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN city) (POS 's))
+            (NNP West) (NNP End))))
+      (CC and)
+      (VP (VBD attended)
+        (NP
+          (NP (DT the) (NNP University))
+          (PP (IN of)
+            (NP (NNP Cincinnati))))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNS 1960s))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (PRP he))
+                (VP (VBD helped)
+                  (SBAR
+                    (S
+                      (VP
+                        (VP (VBD found)
+                          (NP
+                            (NP (DT the) (NN university) (POS 's))
+                            (NNP United) (NNP Black) (NNP Association)))
+                        (CC and)
+                        (VP (VBD graduated)
+                          (PP (IN with)
+                            (NP
+                              (NP (DT a) (NN degree))
+                              (PP (IN in)
+                                (NP (JJ political) (NN science))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Tillery
+			coref:	IDENT			1	0-0	Tillery 
+			name:	PERSON				0-0	Tillery 
+	1	grew
+			sense:	mature.v.01
+			prop:	grow.04
+			V		1-1	grew 
+			N-ARG-A1		0-0	Tillery 
+			N-ARGM-LOC		3-8	in the city 's West End 
+	2	up
+	3	in
+	4	the
+	5	city
+			sense:	city.n.01
+	6	's
+	7	West
+			name:	LOCATION				7-8	West End 
+	8	End
+	9	and
+	10	attended
+			sense:	attend.v.01
+			prop:	attend.01
+			V		10-10	attended 
+			N-ARG-A0		0-0	Tillery 
+			N-ARG-A1		11-14	the University of Cincinnati 
+			N-ARGM-TMP		15-17	in the 1960s 
+			C-ARG-A1		19-36	where he helped found the university 's United Black Association and graduated with a degree in political science 
+	11	the
+	12	University
+			name:	ORGANIZATION				12-14	University of Cincinnati 
+	13	of
+	14	Cincinnati
+	15	in
+	16	the
+			name:	DATE				16-17	the 1960s 
+	17	1960s
+	18	,
+	19	where
+	20	he
+			coref:	IDENT			1	20-20	he 
+	21	helped
+			sense:	help.v.01
+			prop:	heed.01
+			V		21-21	helped 
+			N-ARG-A0		20-20	he 
+			N-ARG-A1		22-28	found the university 's United Black Association 
+	22	found
+			sense:	find.v.10
+			prop:	find.01
+			V		22-22	found 
+			N-ARG-A0		20-20	he 
+			N-ARG-A1		23-28	the university 's United Black Association 
+	23	the
+	24	university
+			sense:	university.n.02
+	25	's
+	26	United
+			name:	ORGANIZATION				26-28	United Black Association 
+	27	Black
+	28	Association
+	29	and
+	30	graduated
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		30-30	graduated 
+			N-ARGM-LOC		11-14	the University of Cincinnati 
+			R-ARGM-LOC		19-19	where 
+			N-ARG-A0		20-20	he 
+			N-ARGM-MNR		31-36	with a degree in political science 
+	31	with
+	32	a
+	33	degree
+			sense:	academic_degree.n.01
+	34	in
+	35	political
+			sense:	political.a.02
+	36	science
+			sense:	science.n.01
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also holds a law degree from the University of Michigan Law School .
+
+
+Treebanked sentence:
+--------------------
+He also holds a law degree from the University of Michigan Law School . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBZ holds)
+      (NP (DT a) (NN law) (NN degree))
+      (PP (IN from)
+        (NP
+          (NP (DT the) (NNP University))
+          (PP (IN of)
+            (NP (NNP Michigan) (NNP Law) (NNP School))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	also
+			sense:	besides.r.02
+	2	holds
+			sense:	have.v.01
+			prop:	hold.01
+			V		2-2	holds 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-12	a law degree from the University of Michigan Law School 
+	3	a
+	4	law
+			sense:	law.n.06
+	5	degree
+			sense:	academic_degree.n.01
+	6	from
+	7	the
+	8	University
+			name:	ORGANIZATION				8-12	University of Michigan Law School 
+	9	of
+	10	Michigan
+	11	Law
+	12	School
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Tillery served as mayor of Cincinnati from 1991 to 1993 .
+
+
+Treebanked sentence:
+--------------------
+Tillery served as mayor of Cincinnati from 1991 to 1993 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Tillery))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP
+          (NP (NN mayor))
+          (PP (IN of)
+            (NP (NNP Cincinnati)))))
+      (PP (IN from)
+        (NP (CD 1991)))
+      (PP (IN to)
+        (NP (CD 1993))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Tillery
+			coref:	IDENT			1	0-0	Tillery 
+			name:	PERSON				0-0	Tillery 
+	1	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	Tillery 
+			N-ARG-A1		2-5	as mayor of Cincinnati 
+			N-ARGM-TMP		6-9	from 1991 to 1993 
+	2	as
+	3	mayor
+			name:	TITLE				3-3	mayor 
+			sense:	mayor.n.01
+	4	of
+	5	Cincinnati
+			coref:	IDENT			0	5-5	Cincinnati 
+			name:	CITY				5-5	Cincinnati 
+	6	from
+	7	1991
+			name:	DATE				7-9	1991 to 1993 
+	8	to
+	9	1993
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He briefly ran for the Democratic nomination for Congress in 1992 before dropping out of the race in order to focus on his mayoral duties .
+
+
+Treebanked sentence:
+--------------------
+He briefly ran for the Democratic nomination for Congress in 1992 before dropping out of the race in order to focus on his mayoral duties . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB briefly))
+    (VP (VBD ran)
+      (PP (IN for)
+        (NP
+          (NP (DT the) (JJ Democratic) (NN nomination))
+          (PP (IN for)
+            (NP (NNP Congress)))))
+      (PP (IN in)
+        (NP (CD 1992)))
+      (PP (IN before)
+        (S
+          (VP (VBG dropping)
+            (ADVP (IN out)
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NN race))
+                  (PP (IN in)
+                    (NP (NN order))))))
+            (S
+              (VP (TO to)
+                (VP (VB focus)
+                  (PP (IN on)
+                    (NP (PRP$ his) (JJ mayoral) (NNS duties))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	briefly
+			sense:	briefly.r.01
+	2	ran
+			sense:	campaign.v.01
+			prop:	run.02
+			V		2-2	ran 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		1-1	briefly 
+			N-ARG-A1		3-8	for the Democratic nomination for Congress 
+			N-ARGM-TMP		9-10	in 1992 
+			N-ARGM-TMP		11-24	before dropping out of the race in order to focus on his mayoral duties 
+	3	for
+	4	the
+	5	Democratic
+			name:	IDEOLOGY				5-5	Democratic 
+			sense:	democratic.a.02
+	6	nomination
+			sense:	nomination.n.01
+	7	for
+	8	Congress
+			name:	ORGANIZATION				8-8	Congress 
+	9	in
+	10	1992
+			name:	DATE				10-11	1992 before 
+	11	before
+	12	dropping
+			sense:	drop.v.05
+			prop:	drop.01
+			V		12-12	dropping 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		14-16	of the race 
+			N-ARGM-PRP		17-24	in order to focus on his mayoral duties 
+	13	out
+	14	of
+	15	the
+	16	race
+			sense:	race.n.01
+	17	in
+	18	order
+			sense:	order.n.03
+	19	to
+	20	focus
+			sense:	concentrate.v.02
+			prop:	focus.01
+			V		20-20	focus 
+			N-ARG-A0		0-0	He 
+			N-ARG-A2		21-24	on his mayoral duties 
+	21	on
+	22	his
+			coref:	IDENT			1	22-22	his 
+	23	mayoral
+			sense:	mayoral.a.01
+	24	duties
+			sense:	duty.n.02
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was a member of the Cincinnati City Council for many years , until 1998 , when term limits forced his retirement .
+
+
+Treebanked sentence:
+--------------------
+He was a member of the Cincinnati City Council for many years , until 1998 , when term limits forced his retirement . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP (DT the) (NNP Cincinnati) (NNP City) (NNP Council))))
+      (PP (IN for)
+        (NP (JJ many) (NNS years)))
+      (, ,)
+      (PP (IN until)
+        (NP (CD 1998)))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (NN term) (NNS limits))
+          (VP (VBD forced)
+            (NP (PRP$ his) (NN retirement))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-8	a member of the Cincinnati City Council 
+			N-ARGM-TMP		9-11	for many years 
+			N-ARGM-TMP		13-21	until 1998 , when term limits forced his retirement 
+	2	a
+	3	member
+			sense:	member.n.01
+	4	of
+	5	the
+	6	Cincinnati
+			name:	ORGANIZATION				6-8	Cincinnati City Council 
+	7	City
+	8	Council
+	9	for
+	10	many
+			sense:	many.a.01
+	11	years
+			name:	DURATION				11-11	years 
+			sense:	year.n.01
+	12	,
+	13	until
+	14	1998
+			name:	DATE				14-14	1998 
+	15	,
+	16	when
+	17	term
+			sense:	term.n.02
+	18	limits
+			sense:	limit.n.06
+	19	forced
+			sense:	coerce.v.01
+			prop:	force.02
+			V		19-19	forced 
+			N-ARGM-TMP		14-14	1998 
+			R-ARGM-TMP		16-16	when 
+			N-ARG-A0		17-18	term limits 
+			N-ARG-A1		20-21	his retirement 
+	20	his
+			coref:	IDENT			1	20-20	his 
+	21	retirement
+			sense:	retirement.n.02
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He remains active in the Democratic Party , most notably working on public health issues and supporting the election campaigns of African American candidates .
+
+
+Treebanked sentence:
+--------------------
+He remains active in the Democratic Party , most notably working on public health issues and supporting the election campaigns of African American candidates . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ remains)
+      (ADJP (JJ active))
+      (PP (IN in)
+        (NP (DT the) (NNP Democratic) (NNP Party)))
+      (, ,)
+      (S
+        (ADVP (RBS most) (RB notably))
+        (VP
+          (VP (VBG working)
+            (PP (IN on)
+              (NP
+                (NML (JJ public) (NN health))
+                (NNS issues))))
+          (CC and)
+          (VP (VBG supporting)
+            (NP
+              (NP (DT the) (NN election) (NNS campaigns))
+              (PP (IN of)
+                (NP (JJ African) (JJ American) (NNS candidates))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	remains
+			sense:	stay.v.01
+			prop:	remain.01
+			V		1-1	remains 
+			N-ARG-A1		0-0	He 
+			N-ARG-A3		2-2	active 
+			N-ARGM-ADV		8-23	most notably working on public health issues and supporting the election campaigns of African American candidates 
+	2	active
+			sense:	active.s.04
+	3	in
+	4	the
+			coref:	IDENT			2	4-6	the Democratic Party 
+	5	Democratic
+			name:	ORGANIZATION				5-6	Democratic Party 
+	6	Party
+	7	,
+	8	most
+			sense:	most.r.01
+	9	notably
+			sense:	notably.r.01
+	10	working
+			sense:	work.v.01
+			prop:	work.01
+			V		10-10	working 
+			N-ARG-A0		0-0	He 
+			N-ARGM-ADV		8-9	most notably 
+			N-ARG-A1		11-14	on public health issues 
+	11	on
+	12	public
+			sense:	public.a.01
+	13	health
+			sense:	health.n.01
+	14	issues
+			sense:	issue.n.01
+	15	and
+	16	supporting
+			sense:	support.v.02
+			prop:	support.01
+			V		16-16	supporting 
+			N-ARG-A0		0-0	He 
+			N-ARGM-ADV		8-9	most notably 
+			N-ARG-A1		17-23	the election campaigns of African American candidates 
+	17	the
+	18	election
+			sense:	election.n.01
+	19	campaigns
+			sense:	political_campaign.n.01
+	20	of
+	21	African
+			name:	NATIONALITY				21-22	African American 
+	22	American
+	23	candidates
+			sense:	campaigner.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2004 Tillery founded the nonprofit organization The Center for Closing the Health Gap in Greater Cincinnati to actively engage local hospitals , social advocates , and health care leaders to combat higher rates of obesity , diabetes , heart disease , HIV and cancer occurring in vulnerable populations .
+
+
+Treebanked sentence:
+--------------------
+In 2004 Tillery founded the nonprofit organization The Center for Closing the Health Gap in Greater Cincinnati to actively engage local hospitals , social advocates , and health care leaders to combat higher rates of obesity , diabetes , heart disease , HIV and cancer occurring in vulnerable populations . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2004)))
+    (NP (NNP Tillery))
+    (VP (VBD founded)
+      (NP (DT the) (JJ nonprofit) (NN organization))
+      (NP-TMP
+        (NP
+          (NP (DT The) (NNP Center))
+          (PP (IN for)
+            (NP (NN Closing))))
+        (NP
+          (NP (DT the) (NNP Health) (NN Gap))
+          (PP (IN in)
+            (NP (NNP Greater) (NNP Cincinnati)))))
+      (S
+        (VP (TO to)
+          (ADVP (RB actively))
+          (VP (VB engage)
+            (NP
+              (NML
+                (NML (JJ local) (NNS hospitals))
+                (, ,)
+                (NML (JJ social) (NNS advocates))
+                (, ,)
+                (CC and)
+                (NML (NN health) (NN care)))
+              (NNS leaders))
+            (S
+              (VP (TO to)
+                (VP (VB combat)
+                  (NP
+                    (NP (JJR higher) (NNS rates))
+                    (PP (IN of)
+                      (NP
+                        (NP (NN obesity))
+                        (, ,)
+                        (NP (NN diabetes))
+                        (, ,)
+                        (NP (NN heart) (NN disease))
+                        (, ,)
+                        (NP (NNP HIV))
+                        (CC and)
+                        (NP (NN cancer)))))
+                  (S
+                    (VP (VBG occurring)
+                      (PP (IN in)
+                        (NP (JJ vulnerable) (NNS populations))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2004
+			name:	DATE				1-1	2004 
+	2	Tillery
+			coref:	IDENT			1	2-2	Tillery 
+			name:	PERSON				2-2	Tillery 
+	3	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		3-3	founded 
+			N-ARGM-TMP		0-1	In 2004 
+			N-ARG-A0		2-2	Tillery 
+			N-ARG-A1		4-16	the nonprofit organization The Center for Closing the Health Gap in Greater Cincinnati 
+			N-ARGM-PRP		17-48	to actively engage local hospitals , social advocates , and health care leaders to combat higher rates of obesity , diabetes , heart disease , HIV and cancer occurring in vulnerable populations 
+	4	the
+	5	nonprofit
+			sense:	nonprofit.s.01
+	6	organization
+			sense:	organization.n.01
+	7	The
+	8	Center
+			name:	ORGANIZATION				8-13	Center for Closing the Health Gap 
+	9	for
+	10	Closing
+			sense:	shutting.n.01
+	11	the
+	12	Health
+	13	Gap
+			sense:	gap.n.01
+	14	in
+	15	Greater
+			name:	LOCATION				15-15	Greater 
+	16	Cincinnati
+			name:	CITY				16-16	Cincinnati 
+	17	to
+	18	actively
+			sense:	actively.r.01
+	19	engage
+			sense:	engage.v.08
+			prop:	engage.01
+			V		19-19	engage 
+			N-ARG-A0		4-16	the nonprofit organization The Center for Closing the Health Gap in Greater Cincinnati 
+			N-ARGM-MNR		18-18	actively 
+			N-ARG-A1		20-29	local hospitals , social advocates , and health care leaders 
+			N-ARGM-PRP		30-48	to combat higher rates of obesity , diabetes , heart disease , HIV and cancer occurring in vulnerable populations 
+	20	local
+			sense:	local.a.01
+	21	hospitals
+			sense:	hospital.n.01
+	22	,
+	23	social
+			sense:	social.a.01
+	24	advocates
+			sense:	advocate.n.01
+	25	,
+	26	and
+	27	health
+			sense:	health.n.01
+	28	care
+			sense:	care.n.01
+	29	leaders
+			sense:	leader.n.01
+	30	to
+	31	combat
+			sense:	battle.v.01
+			prop:	combat.01
+			V		31-31	combat 
+			N-ARG-A0		20-29	local hospitals , social advocates , and health care leaders 
+			N-ARG-A1		32-48	higher rates of obesity , diabetes , heart disease , HIV and cancer occurring in vulnerable populations 
+	32	higher
+			sense:	high.a.01
+	33	rates
+			sense:	rate.n.01
+	34	of
+	35	obesity
+			sense:	fleshiness.n.01
+	36	,
+	37	diabetes
+			name:	CAUSE_OF_DEATH				37-37	diabetes 
+			sense:	diabetes.n.01
+	38	,
+	39	heart
+			name:	CAUSE_OF_DEATH				39-40	heart disease 
+			sense:	heart.n.02
+	40	disease
+			sense:	disease.n.01
+	41	,
+	42	HIV
+			name:	CAUSE_OF_DEATH				42-42	HIV 
+	43	and
+	44	cancer
+			name:	CAUSE_OF_DEATH				44-44	cancer 
+			sense:	cancer.n.01
+	45	occurring
+			sense:	happen.v.01
+			prop:	occur.01
+			V		45-45	occurring 
+			N-ARG-A1		32-44	higher rates of obesity , diabetes , heart disease , HIV and cancer 
+			N-ARGM-LOC		46-48	in vulnerable populations 
+	46	in
+	47	vulnerable
+			sense:	vulnerable.a.01
+	48	populations
+			sense:	population.n.01
+	49	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.17-17	Cincinnati 
+				3.5-5	Cincinnati 
+	Chain 1 (IDENT)
+				0.0-1	Dwight Tillery 
+				1.0-0	Tillery 
+				1.20-20	he 
+				2.0-0	He 
+				3.0-0	Tillery 
+				4.0-0	He 
+				4.22-22	his 
+				5.0-0	He 
+				5.20-20	his 
+				6.0-0	He 
+				7.2-2	Tillery 
+	Chain 2 (IDENT)
+				0.7-19	the Democratic Party who is active in local politics of Cincinnati , Ohio 
+				6.4-6	the Democratic Party 
+

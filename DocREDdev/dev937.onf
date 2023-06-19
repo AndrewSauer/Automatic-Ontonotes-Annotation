@@ -1,0 +1,598 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+John Walter Ripley ( June 29 , 1939 – October 28 , 2008 ) was a United States Marine Corps officer who received the Navy Cross for his actions in combat during the Vietnam War .
+
+
+Treebanked sentence:
+--------------------
+John Walter Ripley ( June 29 , 1939 – October 28 , 2008 ) was a United States Marine Corps officer who received the Navy Cross for his actions in combat during the Vietnam War . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP John) (NNP Walter) (NNP Ripley))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP June) (CD 29) (, ,) (CD 1939))
+        (PP (SYM –)
+          (NP (NNP October) (CD 28) (, ,) (CD 2008))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a)
+          (NML (NNP United) (NNP States) (NNP Marine) (NNP Corps))
+          (NN officer))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD received)
+              (NP (DT the) (NNP Navy) (NNP Cross))
+              (PP (IN for)
+                (NP
+                  (NP (PRP$ his) (NNS actions))
+                  (PP (IN in)
+                    (NP (NN combat)))))
+              (PP (IN during)
+                (NP (DT the) (NNP Vietnam) (NNP War))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	John
+			coref:	IDENT			3	0-2	John Walter Ripley 
+			name:	PERSON				0-2	John Walter Ripley 
+	1	Walter
+	2	Ripley
+	3	(
+	4	June
+			name:	DATE				4-7	June 29 , 1939 
+	5	29
+	6	,
+	7	1939
+	8	–
+	9	October
+			name:	DATE				9-12	October 28 , 2008 
+	10	28
+	11	,
+	12	2008
+	13	)
+	14	was
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		0-13	John Walter Ripley ( June 29 , 1939 – October 28 , 2008 ) 
+			N-ARG-A2		15-34	a United States Marine Corps officer who received the Navy Cross for his actions in combat during the Vietnam War 
+	15	a
+	16	United
+			name:	ORGANIZATION				16-19	United States Marine Corps 
+	17	States
+	18	Marine
+	19	Corps
+	20	officer
+			sense:	military_officer.n.01
+	21	who
+	22	received
+			sense:	receive.v.01
+			prop:	receive.01
+			V		22-22	received 
+			N-ARG-A0		15-20	a United States Marine Corps officer 
+			R-ARG-A0		21-21	who 
+			N-ARG-A1		23-25	the Navy Cross 
+			N-ARG-A3		26-34	for his actions in combat during the Vietnam War 
+	23	the
+	24	Navy
+			name:	ORGANIZATION				24-25	Navy Cross 
+	25	Cross
+	26	for
+	27	his
+			coref:	IDENT			0	27-27	his 
+	28	actions
+			sense:	action.n.01
+	29	in
+	30	combat
+			sense:	combat.n.01
+	31	during
+	32	the
+	33	Vietnam
+			name:	COUNTRY				33-33	Vietnam 
+	34	War
+			name:	CAUSE_OF_DEATH				34-34	War 
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On Easter morning 1972 , Captain Ripley repeatedly exposed himself to intense enemy fire over a three - hour period as he prepared to blow up an essential bridge in Dong Ha .
+
+
+Treebanked sentence:
+--------------------
+On Easter morning 1972 , Captain Ripley repeatedly exposed himself to intense enemy fire over a three - hour period as he prepared to blow up an essential bridge in Dong Ha . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NNP Easter) (NN morning) (CD 1972)))
+    (, ,)
+    (NP (NNP Captain) (NNP Ripley))
+    (ADVP (RB repeatedly))
+    (VP (VBD exposed)
+      (NP (PRP himself))
+      (PP (IN to)
+        (NP
+          (NP (JJ intense) (NN enemy) (NN fire))
+          (PP (IN over)
+            (NP (DT a)
+              (NML (CD three) (HYPH -) (NN hour))
+              (NN period)))))
+      (SBAR (IN as)
+        (S
+          (NP (PRP he))
+          (VP (VBD prepared)
+            (S
+              (VP (TO to)
+                (VP (VB blow)
+                  (PRT (RP up))
+                  (NP
+                    (NP (DT an) (JJ essential) (NN bridge))
+                    (PP (IN in)
+                      (NP (NNP Dong))
+                      (INTJ (UH Ha)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	Easter
+			name:	DATE				1-1	Easter 
+	2	morning
+			name:	TIME				2-2	morning 
+			sense:	morning.n.01
+	3	1972
+			name:	DATE				3-3	1972 
+	4	,
+	5	Captain
+			coref:	IDENT			3	5-6	Captain Ripley 
+			name:	TITLE				5-5	Captain 
+	6	Ripley
+			name:	PERSON				6-6	Ripley 
+	7	repeatedly
+			sense:	repeatedly.r.01
+	8	exposed
+			sense:	expose.v.01
+			prop:	expose.01
+			V		8-8	exposed 
+			N-ARGM-TMP		0-3	On Easter morning 1972 
+			N-ARG-A0		5-6	Captain Ripley 
+			N-ARGM-MNR		7-7	repeatedly 
+			N-ARG-A1		9-9	himself 
+			N-ARG-A2		10-13	to intense enemy fire 
+			N-ARGM-TMP		14-19	over a three - hour period 
+			N-ARGM-TMP		20-31	as he prepared to blow up an essential bridge in Dong Ha 
+	9	himself
+			coref:	IDENT			0	9-9	himself 
+	10	to
+	11	intense
+			sense:	intense.a.01
+	12	enemy
+			sense:	enemy.n.01
+	13	fire
+			name:	CAUSE_OF_DEATH				13-13	fire 
+			sense:	fire.n.02
+	14	over
+	15	a
+	16	three
+			name:	DURATION				16-18	three - hour 
+	17	-
+	18	hour
+			sense:	hour.n.01
+	19	period
+			sense:	time_period.n.01
+	20	as
+	21	he
+			coref:	IDENT			0	21-21	he 
+	22	prepared
+			sense:	fix.v.12
+			prop:	prepare.02
+			V		22-22	prepared 
+			N-ARG-A0		21-21	he 
+			N-ARG-A2		23-31	to blow up an essential bridge in Dong Ha 
+	23	to
+	24	blow
+			sense:	blow.v.22
+			prop:	blow.06
+			V		24-24	blow 
+			N-ARG-A0		21-21	he 
+			N-ARG-A1		26-31	an essential bridge in Dong Ha 
+	25	up
+	26	an
+	27	essential
+			sense:	essential.s.01
+	28	bridge
+			sense:	bridge.n.01
+	29	in
+	30	Dong
+			name:	LOCATION				30-31	Dong Ha 
+	31	Ha
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His actions significantly hampered the North Vietnamese Army 's advance into South Vietnam .
+
+
+Treebanked sentence:
+--------------------
+His actions significantly hampered the North Vietnamese Army 's advance into South Vietnam . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His) (NNS actions))
+    (ADVP (RB significantly))
+    (VP (VBN hampered)
+      (NP (DT the) (JJ North) (JJ Vietnamese)
+        (NP (NNP Army) (POS 's))
+        (NN advance))
+      (PP (IN into)
+        (NP (NNP South) (NNP Vietnam))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-0	His 
+	1	actions
+			sense:	action.n.01
+	2	significantly
+			sense:	significantly.r.02
+	3	hampered
+			sense:	hamper.v.01
+			prop:	hamper.01
+			V		3-3	hampered 
+			N-ARG-A0		0-1	His actions 
+			N-ARGM-MNR		2-2	significantly 
+			N-ARG-A1		4-12	the North Vietnamese Army 's advance into South Vietnam 
+	4	the
+	5	North
+			name:	ORGANIZATION				5-7	North Vietnamese Army 
+			sense:	north.a.01
+	6	Vietnamese
+	7	Army
+	8	's
+	9	advance
+			sense:	progress.n.03
+	10	into
+	11	South
+			name:	COUNTRY				11-12	South Vietnam 
+	12	Vietnam
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The story of " Ripley at the Bridge " is legendary in the Marine Corps and is captured in a gripping diorama at the United States Naval Academy .
+
+
+Treebanked sentence:
+--------------------
+The story of " Ripley at the Bridge " is legendary in the Marine Corps and is captured in a gripping diorama at the United States Naval Academy . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN story))
+      (PP (IN of) (`` ")
+        (NP
+          (NP (NNP Ripley))
+          (PP (IN at)
+            (NP (DT the) (NNP Bridge))))
+        ('' ")))
+    (VP
+      (VP (VBZ is)
+        (ADJP (JJ legendary)
+          (PP (IN in)
+            (NP (DT the) (NNP Marine) (NNP Corps)))))
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN captured)
+          (PP (IN in)
+            (NP
+              (NP (DT a) (VBG gripping) (NN diorama))
+              (PP (IN at)
+                (NP (DT the) (NNP United) (NNP States) (NNP Naval) (NNP Academy))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-8	The story of " Ripley at the Bridge " 
+	1	story
+			sense:	narrative.n.01
+	2	of
+	3	"
+			coref:	IDENT			3	3-7	" Ripley at the Bridge 
+	4	Ripley
+			name:	PERSON				4-4	Ripley 
+	5	at
+	6	the
+	7	Bridge
+	8	"
+	9	is
+			sense:	be.v.01
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	The story of " Ripley at the Bridge " 
+			N-ARG-A2		10-10	legendary 
+			N-ARGM-LOC		11-14	in the Marine Corps 
+	10	legendary
+			sense:	legendary.s.01
+	11	in
+	12	the
+	13	Marine
+			name:	ORGANIZATION				13-14	Marine Corps 
+	14	Corps
+	15	and
+	16	is
+			sense:	be.v.01
+			prop:	be.03
+			V		16-16	is 
+	17	captured
+			sense:	capture.v.01
+			prop:	capture.01
+			V		17-17	captured 
+			N-ARG-A1		0-8	The story of " Ripley at the Bridge " 
+			N-ARGM-LOC		18-27	in a gripping diorama at the United States Naval Academy 
+	18	in
+	19	a
+	20	gripping
+			sense:	fascinate.v.02
+			prop:	grip.01
+			V		20-20	gripping 
+			N-ARG-A0		21-21	diorama 
+	21	diorama
+			sense:	panorama.n.02
+	22	at
+	23	the
+	24	United
+			name:	COUNTRY				24-25	United States 
+	25	States
+	26	Naval
+			name:	CITY				26-26	Naval 
+	27	Academy
+			name:	LOCATION				27-27	Academy 
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On October 28 , 2009 , the first biography about Col .
+
+
+Treebanked sentence:
+--------------------
+On October 28 , 2009 , the first biography about Col . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (PP (IN On)
+      (NP (NNP October) (CD 28) (, ,) (CD 2009)))
+    (, ,)
+    (NP
+      (NP (DT the) (JJ first) (NN biography))
+      (PP (IN about)
+        (NP (NN Col))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	October
+			name:	DATE				1-4	October 28 , 2009 
+	2	28
+	3	,
+	4	2009
+	5	,
+	6	the
+	7	first
+			name:	ORDINAL				7-7	first 
+			sense:	first.a.01
+	8	biography
+			sense:	biography.n.01
+	9	about
+	10	Col
+			coref:	IDENT			2	10-10	Col 
+			sense:	col.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ripley was published .
+
+
+Treebanked sentence:
+--------------------
+Ripley was published . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Ripley))
+    (VP (VBD was)
+      (VP (VBN published)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ripley
+			coref:	IDENT			3	0-0	Ripley 
+			name:	PERSON				0-0	Ripley 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		2-2	published 
+			N-ARG-A1		0-0	Ripley 
+	3	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was written by Norman Fulkerson and is titled An American Knight , The Life of Col .
+
+
+Treebanked sentence:
+--------------------
+It was written by Norman Fulkerson and is titled An American Knight , The Life of Col . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBD was)
+        (VP (VBN written)
+          (PP (IN by)
+            (NP (NNP Norman) (NNP Fulkerson)))))
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN titled)
+          (NP
+            (NP (DT An) (JJ American) (NNP Knight))
+            (, ,)
+            (NP
+              (NP (DT The) (NN Life))
+              (PP (IN of)
+                (NP (NN Col))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	written
+			sense:	write.v.01
+			prop:	write.01
+			V		2-2	written 
+			N-ARG-A1		0-0	It 
+			N-ARG-A0		3-5	by Norman Fulkerson 
+	3	by
+	4	Norman
+			name:	PERSON				4-5	Norman Fulkerson 
+	5	Fulkerson
+	6	and
+	7	is
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	is 
+	8	titled
+			sense:	entitle.v.02
+			prop:	title.01
+			V		8-8	titled 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		9-16	An American Knight , The Life of Col 
+	9	An
+	10	American
+			name:	NATIONALITY				10-10	American 
+	11	Knight
+	12	,
+	13	The
+	14	Life
+			sense:	biography.n.01
+	15	of
+	16	Col
+			coref:	IDENT			2	16-16	Col 
+			sense:	col.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+John W. Ripley .
+
+
+Treebanked sentence:
+--------------------
+John W. Ripley . 
+
+Tree:
+-----
+(ROOT
+  (NP (NNP John) (NNP W.) (NNP Ripley) (. .)))
+
+
+Leaves:
+-------
+	0	John
+			coref:	IDENT			3	0-2	John W. Ripley 
+			name:	PERSON				0-2	John W. Ripley 
+	1	W.
+	2	Ripley
+	3	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.27-27	his 
+				1.9-9	himself 
+				1.21-21	he 
+				2.0-0	His 
+	Chain 1 (IDENT)
+				3.0-8	The story of " Ripley at the Bridge " 
+				6.0-0	It 
+	Chain 2 (IDENT)
+				4.10-10	Col 
+				6.16-16	Col 
+	Chain 3 (IDENT)
+				0.0-2	John Walter Ripley 
+				1.5-6	Captain Ripley 
+				3.3-7	" Ripley at the Bridge 
+				5.0-0	Ripley 
+				7.0-2	John W. Ripley 
+

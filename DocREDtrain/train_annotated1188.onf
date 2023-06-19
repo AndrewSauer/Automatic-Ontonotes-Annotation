@@ -1,0 +1,503 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Fu River , or Fuhe ( ) , is a river in China 's Jiangxi province .
+
+
+Treebanked sentence:
+--------------------
+The Fu River , or Fuhe ( ) , is a river in China 's Jiangxi province . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Fu) (NNP River))
+      (, ,)
+      (CC or)
+      (NP (NNP Fuhe) (-LRB- -LRB-))
+      (-RRB- -RRB-))
+    (, ,)
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN river))
+        (PP (IN in)
+          (NP
+            (NP (NNP China) (POS 's))
+            (NNP Jiangxi) (NN province)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Fu
+			name:	LOCATION				1-1	Fu 
+	2	River
+			name:	TITLE				2-2	River 
+	3	,
+	4	or
+	5	Fuhe
+	6	(
+	7	)
+	8	,
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-7	The Fu River , or Fuhe ( ) 
+			N-ARG-A2		10-16	a river in China 's Jiangxi province 
+	10	a
+	11	river
+			name:	TITLE				11-11	river 
+			sense:	river.n.01
+	12	in
+	13	China
+			coref:	IDENT			0	13-16	China 's Jiangxi province 
+			coref:	IDENT			1	13-14	China 's 
+			name:	COUNTRY				13-13	China 
+	14	's
+	15	Jiangxi
+			name:	STATE_OR_PROVINCE				15-15	Jiangxi 
+	16	province
+			name:	LOCATION				16-16	province 
+			sense:	state.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Its basin occupies most of the Fuzhou prefecture of Jiangxi .
+
+
+Treebanked sentence:
+--------------------
+Its basin occupies most of the Fuzhou prefecture of Jiangxi . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ Its) (NN basin))
+    (VP (VBZ occupies)
+      (NP
+        (NP (JJS most))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Fuzhou) (NN prefecture))
+            (PP (IN of)
+              (NP (NNP Jiangxi)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Its
+			coref:	IDENT			1	0-0	Its 
+	1	basin
+			sense:	river_basin.n.01
+	2	occupies
+			sense:	occupy.v.03
+			prop:	occupy.01
+			V		2-2	occupies 
+			N-ARG-A0		0-1	Its basin 
+			N-ARG-A1		3-9	most of the Fuzhou prefecture of Jiangxi 
+	3	most
+			sense:	most.a.02
+	4	of
+	5	the
+	6	Fuzhou
+			name:	CITY				6-6	Fuzhou 
+	7	prefecture
+			sense:	prefecture.n.01
+	8	of
+	9	Jiangxi
+			coref:	IDENT			0	9-9	Jiangxi 
+			name:	STATE_OR_PROVINCE				9-9	Jiangxi 
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Fu River has it origin on the northwestern slopes of the Wuyi Mountains , from where it flows in the general north - northwestern and northwestern direction .
+
+
+Treebanked sentence:
+--------------------
+The Fu River has it origin on the northwestern slopes of the Wuyi Mountains , from where it flows in the general north - northwestern and northwestern direction . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Fu) (NNP River))
+    (VP (VBZ has)
+      (S
+        (NP (PRP it))
+        (NP
+          (NP (NN origin))
+          (PP (IN on)
+            (NP
+              (NP (DT the) (JJ northwestern) (NNS slopes))
+              (PP (IN of)
+                (NP (DT the) (NNP Wuyi) (NNPS Mountains)))))))
+      (, ,)
+      (PP (IN from)
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP it))
+            (VP (VBZ flows)
+              (PP (IN in)
+                (NP
+                  (NP (DT the)
+                    (NML (JJ general) (NN north))
+                    (HYPH -) (JJ northwestern))
+                  (CC and)
+                  (NP (JJ northwestern) (NN direction)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Fu
+			name:	LOCATION				1-1	Fu 
+	2	River
+			name:	TITLE				2-2	River 
+	3	has
+			sense:	have.v.01
+			prop:	have.03
+			V		3-3	has 
+			N-ARG-A0		0-2	The Fu River 
+			N-ARG-A1		4-5	it origin 
+			N-ARGM-LOC		6-27	on the northwestern slopes of the Wuyi Mountains , from where it flows in the general north - northwestern and northwestern direction 
+	4	it
+	5	origin
+			sense:	origin.n.03
+	6	on
+	7	the
+	8	northwestern
+			sense:	northwestern.s.01
+	9	slopes
+			sense:	slope.n.01
+	10	of
+	11	the
+	12	Wuyi
+			name:	LOCATION				12-13	Wuyi Mountains 
+	13	Mountains
+	14	,
+	15	from
+	16	where
+	17	it
+	18	flows
+			sense:	run.v.06
+			prop:	flow.01
+			V		18-18	flows 
+			N-ARGM-DIR		15-16	from where 
+			N-ARG-A1		17-17	it 
+			N-ARGM-DIR		19-27	in the general north - northwestern and northwestern direction 
+	19	in
+	20	the
+	21	general
+			name:	TITLE				21-21	general 
+			sense:	general.s.05
+	22	north
+			sense:	north.n.03
+	23	-
+	24	northwestern
+			sense:	northwestern.s.01
+	25	and
+	26	northwestern
+			sense:	northwestern.s.01
+	27	direction
+			sense:	direction.n.02
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Via a network of smaller lakes and channels in Nanchang prefecture , the waters of the Fuhe eventually reach the Poyang Lake , to which it is one of the major tributaries , along with the Gan River ( which flows from the south / southwest ) and a number of smaller rivers coming from the east and west .
+
+
+Treebanked sentence:
+--------------------
+Via a network of smaller lakes and channels in Nanchang prefecture , the waters of the Fuhe eventually reach the Poyang Lake , to which it is one of the major tributaries , along with the Gan River ( which flows from the south / southwest ) and a number of smaller rivers coming from the east and west . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Via))
+      (NP
+        (NP (DT a) (NN network))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (JJR smaller) (NNS lakes)
+                (CC and)
+                (NNS channels))
+              (PP (IN in)
+                (NP (NNP Nanchang) (NN prefecture))))
+            (, ,)
+            (NP
+              (NP (DT the) (NNS waters))
+              (PP (IN of)
+                (NP (DT the) (NNP Fuhe))))))))
+    (ADVP (RB eventually))
+    (VP (VB reach)
+      (NP
+        (NP (DT the) (NNP Poyang) (NNP Lake))
+        (, ,)
+        (SBAR
+          (WHPP (TO to)
+            (WHNP (WDT which)))
+          (S
+            (NP (PRP it))
+            (VP (VBZ is)
+              (NP
+                (NP (CD one))
+                (PP (IN of)
+                  (NP (DT the) (JJ major) (NNS tributaries)))
+                (, ,)
+                (ADVP (IN along)
+                  (PP (IN with)
+                    (NP
+                      (NP
+                        (NP (DT the) (NNP Gan) (NNP River))
+                        (-LRB- -LRB-)
+                        (SBAR
+                          (WHNP (WDT which))
+                          (S
+                            (VP (VBZ flows)
+                              (PP (IN from)
+                                (NP (DT the) (NN south) (HYPH /) (NN southwest))))))
+                        (-RRB- -RRB-))
+                      (CC and)
+                      (NP
+                        (NP (DT a) (NN number))
+                        (PP (IN of)
+                          (NP
+                            (NP (JJR smaller) (NNS rivers))
+                            (VP (VBG coming)
+                              (PP (IN from)
+                                (NP (DT the) (NN east)
+                                  (CC and)
+                                  (NN west))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Via
+			coref:	IDENT			3	0-0	Via 
+	1	a
+	2	network
+			sense:	network.n.04
+	3	of
+	4	smaller
+			sense:	small.a.01
+	5	lakes
+			sense:	lake.n.01
+	6	and
+	7	channels
+			sense:	channel.n.04
+	8	in
+	9	Nanchang
+			name:	CITY				9-9	Nanchang 
+	10	prefecture
+			sense:	prefecture.n.01
+	11	,
+	12	the
+	13	waters
+			sense:	water.n.01
+	14	of
+	15	the
+	16	Fuhe
+			name:	MISC				16-16	Fuhe 
+	17	eventually
+			sense:	finally.r.01
+	18	reach
+			sense:	reach.v.01
+			prop:	reach.01
+			V		18-18	reach 
+			N-ARGM-MNR		0-10	Via a network of smaller lakes and channels in Nanchang prefecture 
+			N-ARG-A0		12-16	the waters of the Fuhe 
+			N-ARGM-TMP		17-17	eventually 
+			N-ARG-A1		19-58	the Poyang Lake , to which it is one of the major tributaries , along with the Gan River ( which flows from the south / southwest ) and a number of smaller rivers coming from the east and west 
+	19	the
+	20	Poyang
+			name:	LOCATION				20-21	Poyang Lake 
+	21	Lake
+	22	,
+	23	to
+	24	which
+	25	it
+			coref:	IDENT			3	25-25	it 
+	26	is
+			sense:	be.v.02
+			prop:	be.01
+			V		26-26	is 
+			N-ARG-A1		25-25	it 
+			N-ARG-A2		27-58	one of the major tributaries , along with the Gan River ( which flows from the south / southwest ) and a number of smaller rivers coming from the east and west 
+	27	one
+			name:	NUMBER				27-27	one 
+	28	of
+	29	the
+	30	major
+			sense:	major.a.03
+	31	tributaries
+			sense:	feeder.n.03
+	32	,
+	33	along
+	34	with
+	35	the
+	36	Gan
+			name:	LOCATION				36-36	Gan 
+	37	River
+			name:	TITLE				37-37	River 
+	38	(
+	39	which
+	40	flows
+			sense:	run.v.06
+			prop:	flow.01
+			V		40-40	flows 
+			N-ARG-A1		35-37	the Gan River 
+			R-ARG-A1		39-39	which 
+			N-ARGM-DIR		41-45	from the south / southwest 
+	41	from
+	42	the
+	43	south
+			sense:	south.n.03
+	44	/
+	45	southwest
+			sense:	southwest.n.01
+	46	)
+	47	and
+	48	a
+	49	number
+			sense:	number.n.01
+	50	of
+	51	smaller
+			sense:	small.a.01
+	52	rivers
+			sense:	river.n.01
+	53	coming
+			sense:	come.v.01
+			prop:	come.01
+			V		53-53	coming 
+			N-ARG-A1		51-52	smaller rivers 
+			N-ARG-A3		54-58	from the east and west 
+	54	from
+	55	the
+	56	east
+			sense:	east.n.01
+	57	and
+	58	west
+			sense:	west.n.02
+	59	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As the Poyang Lake drains into the Yangtze , the Fu River is part of the Yangtze Basin as well .
+
+
+Treebanked sentence:
+--------------------
+As the Poyang Lake drains into the Yangtze , the Fu River is part of the Yangtze Basin as well . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (DT the) (NNP Poyang) (NNP Lake))
+        (VP (VBZ drains)
+          (PP (IN into)
+            (NP (DT the) (NNP Yangtze))))))
+    (, ,)
+    (NP (DT the) (NNP Fu) (NNP River))
+    (VP (VBZ is)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP (DT the) (NNP Yangtze) (NNP Basin))))
+      (ADVP (RB as) (RB well)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	the
+	2	Poyang
+			name:	LOCATION				2-3	Poyang Lake 
+	3	Lake
+	4	drains
+			sense:	drain.v.01
+			prop:	drain.01
+			V		4-4	drains 
+			N-ARG-A1		1-3	the Poyang Lake 
+	5	into
+	6	the
+			coref:	IDENT			2	6-7	the Yangtze 
+	7	Yangtze
+			name:	LOCATION				7-7	Yangtze 
+	8	,
+	9	the
+	10	Fu
+			name:	LOCATION				10-10	Fu 
+	11	River
+			name:	TITLE				11-11	River 
+	12	is
+			sense:	be.v.01
+			prop:	be.01
+			V		12-12	is 
+			N-ARG-A1		9-11	the Fu River 
+			N-ARG-A2		13-17	part of the Yangtze Basin 
+			N-ARGM-ADV		18-19	as well 
+	13	part
+			sense:	part.n.01
+	14	of
+	15	the
+			coref:	IDENT			2	15-17	the Yangtze Basin 
+	16	Yangtze
+			name:	LOCATION				16-17	Yangtze Basin 
+	17	Basin
+	18	as
+			sense:	equally.r.01
+	19	well
+			sense:	well.r.02
+	20	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.13-16	China 's Jiangxi province 
+				1.9-9	Jiangxi 
+	Chain 1 (IDENT)
+				0.13-14	China 's 
+				1.0-0	Its 
+	Chain 2 (IDENT)
+				4.15-17	the Yangtze Basin 
+				4.6-7	the Yangtze 
+	Chain 3 (IDENT)
+				3.0-0	Via 
+				3.25-25	it 
+

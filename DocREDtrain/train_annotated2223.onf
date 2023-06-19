@@ -1,0 +1,1048 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Yale College is the undergraduate liberal arts college of Yale University .
+
+
+Treebanked sentence:
+--------------------
+Yale College is the undergraduate liberal arts college of Yale University . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Yale) (NNP College))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ undergraduate)
+          (NML (JJ liberal) (NNS arts))
+          (NN college))
+        (PP (IN of)
+          (NP (NNP Yale) (NNP University)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Yale
+			coref:	IDENT			1	0-1	Yale College 
+			name:	ORGANIZATION				0-1	Yale College 
+	1	College
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Yale College 
+			N-ARG-A2		3-10	the undergraduate liberal arts college of Yale University 
+	3	the
+	4	undergraduate
+	5	liberal
+			name:	IDEOLOGY				5-5	liberal 
+			sense:	broad.s.08
+	6	arts
+			sense:	art.n.01
+	7	college
+			sense:	college.n.01
+	8	of
+	9	Yale
+			coref:	IDENT			0	9-10	Yale University 
+			name:	ORGANIZATION				9-10	Yale University 
+	10	University
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Founded in 1701 , it is the original school of the university .
+
+
+Treebanked sentence:
+--------------------
+Founded in 1701 , it is the original school of the university . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Founded)
+        (PP (IN in)
+          (NP (CD 1701)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ original) (NN school))
+        (PP (IN of)
+          (NP (DT the) (NN university)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		0-0	Founded 
+			N-ARGM-TMP		1-2	in 1701 
+			N-ARG-A1		4-4	it 
+	1	in
+	2	1701
+			name:	DATE				2-2	1701 
+	3	,
+	4	it
+			coref:	IDENT			1	4-4	it 
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			R-ARG-A1		0-2	Founded in 1701 
+			N-ARG-A1		4-4	it 
+			N-ARG-A2		6-11	the original school of the university 
+	6	the
+	7	original
+			sense:	original.s.01
+	8	school
+			sense:	school.n.01
+	9	of
+	10	the
+			coref:	IDENT			0	10-11	the university 
+	11	university
+			sense:	university.n.02
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Although other schools of the university were founded as early as 1810 , all of Yale was officially known as Yale College until 1887 , when its schools were confederated and the institution was renamed Yale University .
+
+
+Treebanked sentence:
+--------------------
+Although other schools of the university were founded as early as 1810 , all of Yale was officially known as Yale College until 1887 , when its schools were confederated and the institution was renamed Yale University . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN Although)
+      (S
+        (NP
+          (NP (JJ other) (NNS schools))
+          (PP (IN of)
+            (NP (DT the) (NN university))))
+        (VP (VBD were)
+          (VP (VBN founded)
+            (PP (IN as)
+              (NP
+                (NP (JJ early))
+                (PP (IN as)
+                  (NP (CD 1810)))))))))
+    (, ,)
+    (NP
+      (NP (DT all))
+      (PP (IN of)
+        (NP (NNP Yale))))
+    (VP (VBD was)
+      (ADVP (RB officially))
+      (VP (VBN known)
+        (PP (IN as)
+          (NP (NNP Yale) (NNP College)))
+        (PP (IN until)
+          (NP (CD 1887)))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (S
+              (NP (PRP$ its) (NNS schools))
+              (VP (VBD were)
+                (VP (VBN confederated))))
+            (CC and)
+            (S
+              (NP (DT the) (NN institution))
+              (VP (VBD was)
+                (VP (VBN renamed)
+                  (NP (NNP Yale) (NNP University)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Although
+	1	other
+			sense:	other.a.01
+	2	schools
+			sense:	school.n.01
+	3	of
+	4	the
+			coref:	IDENT			0	4-5	the university 
+	5	university
+			sense:	university.n.02
+	6	were
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	were 
+	7	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		7-7	founded 
+			N-ARG-A1		1-5	other schools of the university 
+			N-ARGM-TMP		8-11	as early as 1810 
+	8	as
+	9	early
+			sense:	early.a.01
+	10	as
+	11	1810
+			name:	DATE				11-11	1810 
+	12	,
+	13	all
+	14	of
+	15	Yale
+			coref:	IDENT			0	15-15	Yale 
+			name:	ORGANIZATION				15-15	Yale 
+	16	was
+			sense:	be.v.01
+			prop:	be.03
+			V		16-16	was 
+	17	officially
+			sense:	formally.r.01
+	18	known
+			sense:	know.v.04
+			prop:	know.01
+			V		18-18	known 
+			N-ARGM-ADV		0-11	Although other schools of the university were founded as early as 1810 
+			N-ARG-A1		13-15	all of Yale 
+			N-ARGM-MNR		17-17	officially 
+			N-ARG-A2		19-21	as Yale College 
+			N-ARGM-TMP		22-36	until 1887 , when its schools were confederated and the institution was renamed Yale University 
+	19	as
+	20	Yale
+			coref:	IDENT			1	20-21	Yale College 
+			name:	ORGANIZATION				20-21	Yale College 
+	21	College
+	22	until
+	23	1887
+			name:	DATE				23-23	1887 
+	24	,
+	25	when
+	26	its
+			coref:	IDENT			0	26-26	its 
+	27	schools
+			sense:	school.n.01
+	28	were
+			sense:	be.v.01
+			prop:	be.01
+			V		28-28	were 
+			N-ARG-A1		26-27	its schools 
+			N-ARG-A2		29-29	confederated 
+	29	confederated
+			sense:	band_together.v.01
+			prop:	confederate.01
+			V		29-29	confederated 
+			N-ARGM-TMP		23-23	1887 
+			R-ARGM-TMP		25-25	when 
+			N-ARG-A1		26-27	its schools 
+	30	and
+	31	the
+	32	institution
+			sense:	institution.n.01
+	33	was
+			sense:	be.v.01
+			prop:	be.03
+			V		33-33	was 
+	34	renamed
+			sense:	rename.v.01
+			prop:	rename.01
+			V		34-34	renamed 
+			N-ARG-A1		31-32	the institution 
+			N-ARG-A2		35-36	Yale University 
+	35	Yale
+			coref:	IDENT			0	35-36	Yale University 
+			name:	ORGANIZATION				35-36	Yale University 
+	36	University
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Originally established to train Congregationalist ministers , the college began teaching humanities and natural sciences by the late 18th century .
+
+
+Treebanked sentence:
+--------------------
+Originally established to train Congregationalist ministers , the college began teaching humanities and natural sciences by the late 18th century . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (ADVP (RB Originally))
+      (VP (VBN established)
+        (S
+          (VP (TO to)
+            (VP (VB train)
+              (NP (JJ Congregationalist) (NNS ministers)))))))
+    (, ,)
+    (NP (DT the) (NN college))
+    (VP (VBD began)
+      (S
+        (VP (VBG teaching)
+          (NP
+            (NP (NNS humanities))
+            (CC and)
+            (NP (JJ natural) (NNS sciences)))
+          (PP (IN by)
+            (NP (DT the) (JJ late) (JJ 18th) (NN century))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Originally
+			sense:	primitively.r.01
+	1	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		1-1	established 
+			N-ARGM-TMP		0-0	Originally 
+			N-ARGM-PRP		2-5	to train Congregationalist ministers 
+			N-ARG-A1		7-8	the college 
+	2	to
+	3	train
+			sense:	train.v.02
+			prop:	train.01
+			V		3-3	train 
+			N-ARG-A2		4-5	Congregationalist ministers 
+			N-ARG-A0		7-8	the college 
+	4	Congregationalist
+			name:	RELIGION				4-4	Congregationalist 
+			sense:	congregational.a.02
+	5	ministers
+			sense:	curate.n.01
+	6	,
+	7	the
+			coref:	IDENT			1	7-8	the college 
+	8	college
+			sense:	college.n.01
+	9	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		9-9	began 
+			N-ARGM-PRD		0-5	Originally established to train Congregationalist ministers 
+			N-ARG-A0		7-8	the college 
+			N-ARG-A1		10-19	teaching humanities and natural sciences by the late 18th century 
+	10	teaching
+			sense:	teach.v.01
+			prop:	teach.01
+			V		10-10	teaching 
+			N-ARG-A0		7-8	the college 
+			N-ARG-A1		11-14	humanities and natural sciences 
+			N-ARGM-TMP		15-19	by the late 18th century 
+	11	humanities
+			sense:	humanistic_discipline.n.01
+	12	and
+	13	natural
+			sense:	natural.a.01
+	14	sciences
+			sense:	science.n.01
+	15	by
+	16	the
+			name:	DATE				16-19	the late 18th century 
+	17	late
+			sense:	late.a.01
+	18	18th
+			sense:	eighteenth.s.01
+	19	century
+			sense:	century.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the same time , students began organizing extracurricular organizations , first literary societies , and later publications , sports teams , and singing groups .
+
+
+Treebanked sentence:
+--------------------
+At the same time , students began organizing extracurricular organizations , first literary societies , and later publications , sports teams , and singing groups . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (DT the) (JJ same) (NN time)))
+    (, ,)
+    (NP (NNS students))
+    (VP (VBD began)
+      (S
+        (VP
+          (VP (VBG organizing)
+            (NP
+              (NP
+                (NP (JJ extracurricular) (NNS organizations))
+                (, ,)
+                (NP (JJ first) (JJ literary) (NNS societies)))
+              (, ,)
+              (CC and)
+              (RB later)
+              (NP (NNS publications))
+              (, ,)
+              (NP
+                (NML (NNS sports))
+                (NNS teams))
+              (, ,)))
+          (CC and)
+          (VP (VBG singing)
+            (NP (NNS groups))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+	2	same
+			sense:	same.a.01
+	3	time
+			sense:	time.n.01
+	4	,
+	5	students
+			sense:	student.n.01
+	6	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		6-6	began 
+			N-ARGM-TMP		0-3	At the same time 
+			N-ARG-A0		5-5	students 
+			N-ARG-A1		7-24	organizing extracurricular organizations , first literary societies , and later publications , sports teams , and singing groups 
+	7	organizing
+			sense:	form.v.01
+			prop:	organize.01
+			V		7-7	organizing 
+			N-ARG-A0		5-5	students 
+			N-ARG-A1		8-24	extracurricular organizations , first literary societies , and later publications , sports teams , and singing groups 
+	8	extracurricular
+			sense:	extracurricular.s.01
+	9	organizations
+			sense:	organization.n.01
+	10	,
+	11	first
+			name:	ORDINAL				11-11	first 
+			sense:	first.a.01
+	12	literary
+			sense:	literary.a.01
+	13	societies
+			sense:	club.n.02
+	14	,
+	15	and
+	16	later
+			sense:	subsequently.r.01
+	17	publications
+			sense:	publication.n.01
+	18	,
+	19	sports
+			sense:	sport.n.01
+	20	teams
+			sense:	team.n.01
+	21	,
+	22	and
+	23	singing
+			sense:	sing.v.02
+			prop:	singe.01
+			V		23-23	singing 
+			N-ARG-A0		24-24	groups 
+	24	groups
+			sense:	group.n.01
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+By the mid-19th century , it was the largest college in the United States .
+
+
+Treebanked sentence:
+--------------------
+By the mid-19th century , it was the largest college in the United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN By)
+      (NP (DT the) (JJ mid-19th) (NN century)))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (JJS largest) (NN college))
+        (PP (IN in)
+          (NP (DT the) (NNP United) (NNP States)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	By
+	1	the
+			name:	DATE				1-3	the mid-19th century 
+	2	mid-19th
+	3	century
+			sense:	century.n.01
+	4	,
+	5	it
+			coref:	IDENT			1	5-5	it 
+	6	was
+			sense:	be.v.01
+			prop:	be.01
+			V		6-6	was 
+			N-ARGM-TMP		0-3	By the mid-19th century 
+			N-ARG-A1		5-5	it 
+			N-ARG-A2		7-13	the largest college in the United States 
+	7	the
+	8	largest
+			sense:	large.a.01
+	9	college
+			sense:	college.n.01
+	10	in
+	11	the
+	12	United
+			name:	COUNTRY				12-13	United States 
+	13	States
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1847 , it was joined by another undergraduate degree - granting school at Yale , the Sheffield Scientific School , which was absorbed into the college in the mid-20th century .
+
+
+Treebanked sentence:
+--------------------
+In 1847 , it was joined by another undergraduate degree - granting school at Yale , the Sheffield Scientific School , which was absorbed into the college in the mid-20th century . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1847)))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (VP (VBN joined)
+        (PP (IN by)
+          (NP
+            (NP
+              (NP (DT another)
+                (ADJP
+                  (NP (JJ undergraduate) (NN degree))
+                  (HYPH -) (VBG granting))
+                (NN school))
+              (PP (IN at)
+                (NP (NNP Yale))))
+            (, ,)
+            (NP
+              (NP (DT the) (NNP Sheffield) (NNP Scientific) (NNP School))
+              (, ,)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBD was)
+                    (VP (VBN absorbed)
+                      (PP (IN into)
+                        (NP
+                          (NP (DT the) (NN college))
+                          (PP (IN in)
+                            (NP (DT the) (JJ mid-20th) (NN century))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1847
+			name:	DATE				1-1	1847 
+	2	,
+	3	it
+			coref:	IDENT			1	3-3	it 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	joined
+			sense:	join.v.01
+			prop:	join.01
+			V		5-5	joined 
+			N-ARGM-TMP		0-1	In 1847 
+			N-ARG-A1		3-3	it 
+			N-ARG-A0		6-30	by another undergraduate degree - granting school at Yale , the Sheffield Scientific School , which was absorbed into the college in the mid-20th century 
+	6	by
+	7	another
+	8	undergraduate
+	9	degree
+			sense:	academic_degree.n.01
+	10	-
+	11	granting
+			sense:	award.v.02
+			prop:	grant.01
+			V		11-11	granting 
+			N-ARG-A1		9-9	degree 
+			N-ARG-A0		12-12	school 
+	12	school
+			sense:	school.n.01
+	13	at
+	14	Yale
+			coref:	IDENT			0	14-14	Yale 
+			name:	ORGANIZATION				14-14	Yale 
+	15	,
+	16	the
+	17	Sheffield
+			name:	ORGANIZATION				17-19	Sheffield Scientific School 
+	18	Scientific
+	19	School
+	20	,
+	21	which
+	22	was
+			sense:	be.v.01
+			prop:	be.03
+			V		22-22	was 
+	23	absorbed
+			sense:	absorb.v.05
+			prop:	absorb.01
+			V		23-23	absorbed 
+			N-ARG-A1		16-19	the Sheffield Scientific School 
+			R-ARG-A1		21-21	which 
+			N-ARG-A0		24-26	into the college 
+			N-ARGM-TMP		27-30	in the mid-20th century 
+	24	into
+	25	the
+	26	college
+			sense:	college.n.01
+	27	in
+	28	the
+			name:	DATE				28-30	the mid-20th century 
+	29	mid-20th
+	30	century
+			sense:	century.n.01
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+These merged curricula became the basis of the modern - day liberal arts curriculum , which requires students to take courses in a broad range of subjects , including foreign language , composition , sciences , and quantitative reasoning , in addition to electing a departmental major in their sophomore year .
+
+
+Treebanked sentence:
+--------------------
+These merged curricula became the basis of the modern - day liberal arts curriculum , which requires students to take courses in a broad range of subjects , including foreign language , composition , sciences , and quantitative reasoning , in addition to electing a departmental major in their sophomore year . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT These))
+    (VP (VBD merged)
+      (SBAR
+        (S
+          (NP (NN curricula))
+          (VP (VBD became)
+            (NP
+              (NP (DT the) (NN basis))
+              (PP (IN of)
+                (NP
+                  (NP (DT the)
+                    (NML (JJ modern) (HYPH -) (NN day))
+                    (NML (JJ liberal) (NNS arts))
+                    (NN curriculum))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBZ requires)
+                        (NP (NNS students))
+                        (S
+                          (VP (TO to)
+                            (VP (VB take)
+                              (NP (NNS courses))
+                              (PP (IN in)
+                                (NP
+                                  (NP (DT a) (JJ broad) (NN range))
+                                  (PP (IN of)
+                                    (NP
+                                      (NP (NNS subjects))
+                                      (, ,)
+                                      (PP (VBG including)
+                                        (NP
+                                          (NML
+                                            (NML (JJ foreign) (NN language))
+                                            (, ,)
+                                            (NML (NN composition))
+                                            (, ,)
+                                            (NML (NNS sciences))
+                                            (, ,)
+                                            (CC and)
+                                            (NML (JJ quantitative)))
+                                          (NN reasoning)))
+                                      (, ,))))))))))))))
+            (PP (IN in)
+              (NP (NN addition)))
+            (PP (IN to)
+              (S
+                (VP (VBG electing)
+                  (NP (DT a)
+                    (NML
+                      (NML (JJ departmental) (JJ major))
+                      (PP (IN in)
+                        (NP (PRP$ their) (NN sophomore))))
+                    (NN year)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	These
+			coref:	IDENT			1	0-0	These 
+	1	merged
+			sense:	unify.v.01
+			prop:	merge.01
+			V		1-1	merged 
+			N-ARG-A1		2-2	curricula 
+	2	curricula
+	3	became
+			sense:	become.v.02
+			prop:	become.01
+			V		3-3	became 
+			N-ARG-A1		0-2	These merged curricula 
+			N-ARG-A2		4-50	the basis of the modern - day liberal arts curriculum , which requires students to take courses in a broad range of subjects , including foreign language , composition , sciences , and quantitative reasoning , in addition to electing a departmental major in their sophomore year 
+	4	the
+	5	basis
+			sense:	basis.n.02
+	6	of
+	7	the
+	8	modern
+			sense:	modern.a.01
+	9	-
+	10	day
+			name:	DURATION				10-10	day 
+			sense:	day.n.02
+	11	liberal
+			name:	IDEOLOGY				11-11	liberal 
+			sense:	broad.s.08
+	12	arts
+			sense:	art.n.01
+	13	curriculum
+			sense:	course_of_study.n.01
+	14	,
+	15	which
+	16	requires
+			sense:	ask.v.04
+			prop:	require.01
+			V		16-16	requires 
+			N-ARG-A0		7-13	the modern - day liberal arts curriculum 
+			R-ARG-A0		15-15	which 
+			N-ARG-A2		17-17	students 
+			N-ARG-A1		18-50	to take courses in a broad range of subjects , including foreign language , composition , sciences , and quantitative reasoning , in addition to electing a departmental major in their sophomore year 
+	17	students
+			sense:	student.n.01
+	18	to
+	19	take
+			sense:	learn.v.04
+			prop:	take.01
+			V		19-19	take 
+			N-ARG-A0		17-17	students 
+			N-ARG-A1		20-38	courses in a broad range of subjects , including foreign language , composition , sciences , and quantitative reasoning 
+			N-ARGM-ADV		40-50	in addition to electing a departmental major in their sophomore year 
+	20	courses
+			sense:	course.n.01
+	21	in
+	22	a
+	23	broad
+			sense:	across-the-board.s.01
+	24	range
+			sense:	scope.n.01
+	25	of
+	26	subjects
+			sense:	discipline.n.01
+	27	,
+	28	including
+			sense:	include.v.01
+			prop:	include.01
+			V		28-28	including 
+			N-ARG-A2		26-26	subjects 
+			N-ARG-A1		29-38	foreign language , composition , sciences , and quantitative reasoning 
+	29	foreign
+			sense:	foreign.a.02
+	30	language
+			sense:	language.n.01
+	31	,
+	32	composition
+			sense:	writing.n.01
+	33	,
+	34	sciences
+			sense:	science.n.01
+	35	,
+	36	and
+	37	quantitative
+			sense:	quantitative.a.01
+	38	reasoning
+			sense:	reasoning.n.01
+	39	,
+	40	in
+	41	addition
+			sense:	accession.n.03
+	42	to
+	43	electing
+			sense:	elect.v.01
+			prop:	elect.01
+			V		43-43	electing 
+			N-ARG-A0		17-17	students 
+			N-ARG-A2		44-46	a departmental major 
+			N-ARGM-TMP		47-50	in their sophomore year 
+	44	a
+	45	departmental
+			sense:	departmental.a.01
+	46	major
+			sense:	major.a.04
+	47	in
+	48	their
+	49	sophomore
+			sense:	sophomore.n.01
+	50	year
+			name:	DURATION				50-50	year 
+			sense:	year.n.01
+	51	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The most distinctive feature of undergraduate life is the school 's system of residential colleges , established in 1932 and modeled after constituent schools of English universities .
+
+
+Treebanked sentence:
+--------------------
+The most distinctive feature of undergraduate life is the school 's system of residential colleges , established in 1932 and modeled after constituent schools of English universities . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The)
+        (ADJP (RBS most) (JJ distinctive))
+        (NN feature))
+      (PP (IN of)
+        (NP (JJ undergraduate) (NN life))))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP
+            (NP (DT the) (NN school) (POS 's))
+            (NN system))
+          (PP (IN of)
+            (NP (JJ residential) (NNS colleges))))
+        (, ,)
+        (VP
+          (VP (VBN established)
+            (PP (IN in)
+              (NP (CD 1932))))
+          (CC and)
+          (VP (VBN modeled)
+            (PP (IN after)
+              (NP
+                (NP (JJ constituent) (NNS schools))
+                (PP (IN of)
+                  (NP (NNP English) (NNS universities)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	most
+			sense:	most.r.01
+	2	distinctive
+			sense:	distinctive.s.01
+	3	feature
+			sense:	feature.n.01
+	4	of
+	5	undergraduate
+	6	life
+			sense:	life.n.01
+	7	is
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		0-6	The most distinctive feature of undergraduate life 
+			N-ARG-A2		8-26	the school 's system of residential colleges , established in 1932 and modeled after constituent schools of English universities 
+	8	the
+	9	school
+			sense:	school.n.01
+	10	's
+	11	system
+			sense:	system.n.02
+	12	of
+	13	residential
+			sense:	residential.a.01
+	14	colleges
+			sense:	college.n.01
+	15	,
+	16	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		16-16	established 
+			N-ARG-A1		8-14	the school 's system of residential colleges 
+			N-ARGM-TMP		17-18	in 1932 
+	17	in
+	18	1932
+			name:	DATE				18-18	1932 
+	19	and
+	20	modeled
+			sense:	model.v.01
+			prop:	model.01
+			V		20-20	modeled 
+			N-ARG-A1		8-14	the school 's system of residential colleges 
+			N-ARG-A2		21-26	after constituent schools of English universities 
+	21	after
+	22	constituent
+			sense:	constituent.s.01
+	23	schools
+			sense:	school.n.01
+	24	of
+	25	English
+			name:	NATIONALITY				25-25	English 
+	26	universities
+			sense:	university.n.03
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+All undergraduates live in these colleges after their freshman year , when most live on the school 's Old Campus .
+
+
+Treebanked sentence:
+--------------------
+All undergraduates live in these colleges after their freshman year , when most live on the school 's Old Campus . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT All) (NNS undergraduates))
+    (VP (VBP live)
+      (PP (IN in)
+        (NP
+          (NP (DT these) (NNS colleges))
+          (PP (IN after)
+            (NP (PRP$ their) (NN freshman)))))
+      (NP-TMP (NN year))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (JJS most))
+          (VP (VBP live)
+            (PP (IN on)
+              (NP
+                (NP (DT the) (NN school) (POS 's))
+                (JJ Old) (NN Campus)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	All
+			coref:	IDENT			2	0-1	All undergraduates 
+	1	undergraduates
+			sense:	undergraduate.n.01
+	2	live
+			sense:	populate.v.01
+			prop:	live.01
+			V		2-2	live 
+			N-ARG-A0		0-1	All undergraduates 
+			N-ARGM-LOC		3-5	in these colleges 
+			N-ARGM-TMP		6-19	after their freshman year , when most live on the school 's Old Campus 
+	3	in
+	4	these
+	5	colleges
+			sense:	college.n.01
+	6	after
+	7	their
+			coref:	IDENT			2	7-7	their 
+	8	freshman
+			sense:	freshman.n.01
+	9	year
+			name:	DURATION				9-9	year 
+			sense:	year.n.01
+	10	,
+	11	when
+	12	most
+			sense:	most.a.01
+	13	live
+			sense:	populate.v.01
+			prop:	live.01
+			V		13-13	live 
+			N-ARGM-TMP		7-9	their freshman year 
+			R-ARGM-TMP		11-11	when 
+			N-ARG-A0		12-12	most 
+			N-ARGM-LOC		14-19	on the school 's Old Campus 
+	14	on
+	15	the
+	16	school
+			sense:	school.n.01
+	17	's
+	18	Old
+			sense:	old.a.02
+	19	Campus
+			sense:	campus.n.01
+	20	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.9-10	Yale University 
+				1.10-11	the university 
+				2.4-5	the university 
+				2.15-15	Yale 
+				2.26-26	its 
+				2.35-36	Yale University 
+				6.14-14	Yale 
+	Chain 1 (IDENT)
+				0.0-1	Yale College 
+				1.4-4	it 
+				2.20-21	Yale College 
+				3.7-8	the college 
+				5.5-5	it 
+				6.3-3	it 
+				7.0-0	These 
+	Chain 2 (IDENT)
+				9.0-1	All undergraduates 
+				9.7-7	their 
+

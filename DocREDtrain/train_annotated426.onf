@@ -1,0 +1,556 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Midway High School is a public high school located in the city of Waco , Texas , USA and classified as a 6A school by the UIL .
+
+
+Treebanked sentence:
+--------------------
+Midway High School is a public high school located in the city of Waco , Texas , USA and classified as a 6A school by the UIL . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Midway) (NNP High) (NNP School))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ public) (JJ high) (NN school))
+        (VP
+          (VP (VBN located)
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN city))
+                (PP (IN of)
+                  (NP (NNP Waco) (, ,) (NNP Texas) (, ,) (NNP USA))))))
+          (CC and)
+          (VP (VBN classified)
+            (PP (IN as)
+              (NP (DT a) (NN 6A) (NN school)))
+            (PP (IN by)
+              (NP (DT the) (NNP UIL)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Midway
+			name:	ORGANIZATION				0-2	Midway High School 
+	1	High
+	2	School
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Midway High School 
+			N-ARG-A2		4-26	a public high school located in the city of Waco , Texas , USA and classified as a 6A school by the UIL 
+	4	a
+	5	public
+			sense:	public.a.01
+	6	high
+			sense:	high.a.01
+	7	school
+			sense:	school.n.01
+	8	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		8-8	located 
+			N-ARG-A1		4-7	a public high school 
+			N-ARGM-LOC		9-17	in the city of Waco , Texas , USA 
+	9	in
+	10	the
+	11	city
+			sense:	city.n.01
+	12	of
+	13	Waco
+			coref:	IDENT			1	13-13	Waco 
+			name:	CITY				13-13	Waco 
+	14	,
+	15	Texas
+			coref:	IDENT			2	15-15	Texas 
+			name:	STATE_OR_PROVINCE				15-15	Texas 
+	16	,
+	17	USA
+			name:	COUNTRY				17-17	USA 
+	18	and
+	19	classified
+			sense:	classify.v.01
+			prop:	classify.01
+			V		19-19	classified 
+			N-ARG-A1		0-2	Midway High School 
+			N-ARG-A2		20-23	as a 6A school 
+			N-ARG-A0		24-26	by the UIL 
+	20	as
+	21	a
+	22	6A
+	23	school
+			sense:	school.n.01
+	24	by
+	25	the
+	26	UIL
+			name:	ORGANIZATION				26-26	UIL 
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is part of the Midway Independent School District , which serves the Waco , Texas area .
+
+
+Treebanked sentence:
+--------------------
+It is part of the Midway Independent School District , which serves the Waco , Texas area . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (NN part))
+          (PP (IN of)
+            (NP (DT the) (NNP Midway) (NNP Independent) (NNP School) (NNP District))))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ serves)
+              (NP (DT the)
+                (NML (NNP Waco) (, ,) (NNP Texas))
+                (NN area)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-16	part of the Midway Independent School District , which serves the Waco , Texas area 
+	2	part
+			sense:	part.n.01
+	3	of
+	4	the
+	5	Midway
+			name:	ORGANIZATION				5-8	Midway Independent School District 
+	6	Independent
+	7	School
+	8	District
+	9	,
+	10	which
+	11	serves
+			sense:	service.v.01
+			prop:	serve.01
+			V		11-11	serves 
+			N-ARG-A0		4-8	the Midway Independent School District 
+			R-ARG-A0		10-10	which 
+			N-ARG-A2		12-16	the Waco , Texas area 
+	12	the
+	13	Waco
+			coref:	IDENT			1	13-13	Waco 
+			name:	CITY				13-13	Waco 
+	14	,
+	15	Texas
+			coref:	IDENT			2	15-15	Texas 
+			name:	STATE_OR_PROVINCE				15-15	Texas 
+	16	area
+			sense:	area.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Although the school is located in southwestern Waco , most students live in the suburbs of Woodway and Hewitt .
+
+
+Treebanked sentence:
+--------------------
+Although the school is located in southwestern Waco , most students live in the suburbs of Woodway and Hewitt . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN Although)
+      (S
+        (NP (DT the) (NN school))
+        (VP (VBZ is)
+          (VP (VBN located)
+            (PP (IN in)
+              (NP (JJ southwestern) (NNP Waco)))))))
+    (, ,)
+    (NP (JJS most) (NNS students))
+    (VP (VBP live)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NNS suburbs))
+          (PP (IN of)
+            (NP (NNP Woodway)
+              (CC and)
+              (NNP Hewitt))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Although
+	1	the
+	2	school
+			sense:	school.n.01
+	3	is
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	is 
+	4	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		4-4	located 
+			N-ARG-A1		1-2	the school 
+			N-ARGM-LOC		5-7	in southwestern Waco 
+	5	in
+	6	southwestern
+			sense:	southwest.s.02
+	7	Waco
+			name:	CITY				7-7	Waco 
+	8	,
+	9	most
+			sense:	most.a.01
+	10	students
+			sense:	student.n.01
+	11	live
+			sense:	populate.v.01
+			prop:	live.01
+			V		11-11	live 
+			N-ARGM-ADV		0-7	Although the school is located in southwestern Waco 
+			N-ARG-A0		9-10	most students 
+			N-ARGM-LOC		12-18	in the suburbs of Woodway and Hewitt 
+	12	in
+	13	the
+	14	suburbs
+			sense:	suburb.n.01
+	15	of
+	16	Woodway
+			name:	CITY				16-16	Woodway 
+	17	and
+	18	Hewitt
+			coref:	IDENT			0	18-18	Hewitt 
+			name:	PERSON				18-18	Hewitt 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The school was formerly located in Hewitt until the fall of 2003 , when the current high school was built a half - mile away .
+
+
+Treebanked sentence:
+--------------------
+The school was formerly located in Hewitt until the fall of 2003 , when the current high school was built a half - mile away . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN school))
+    (VP (VBD was)
+      (ADVP (RB formerly))
+      (VP (VBN located)
+        (PP (IN in)
+          (NP (NNP Hewitt)))
+        (PP (IN until)
+          (NP
+            (NP (DT the) (NN fall))
+            (PP (IN of)
+              (NP (CD 2003)))))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (DT the) (JJ current) (JJ high) (NN school))
+            (VP (VBD was)
+              (VP (VBN built)
+                (ADVP
+                  (NP
+                    (QP (DT a) (NN half))
+                    (HYPH -) (NN mile))
+                  (RB away))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	school
+			sense:	school.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	formerly
+			sense:	once.r.03
+	4	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		4-4	located 
+			N-ARG-A1		0-1	The school 
+			N-ARGM-TMP		3-3	formerly 
+			N-ARGM-LOC		5-6	in Hewitt 
+			N-ARGM-TMP		7-24	until the fall of 2003 , when the current high school was built a half - mile away 
+	5	in
+	6	Hewitt
+			coref:	IDENT			0	6-6	Hewitt 
+			name:	CITY				6-6	Hewitt 
+	7	until
+	8	the
+			name:	DATE				8-11	the fall of 2003 
+	9	fall
+			sense:	fall.n.01
+	10	of
+	11	2003
+	12	,
+	13	when
+	14	the
+	15	current
+			name:	DATE				15-15	current 
+			sense:	current.a.01
+	16	high
+			sense:	high.a.01
+	17	school
+			sense:	school.n.01
+	18	was
+			sense:	be.v.01
+			prop:	be.03
+			V		18-18	was 
+	19	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		19-19	built 
+			N-ARGM-TMP		8-11	the fall of 2003 
+			R-ARGM-TMP		13-13	when 
+			N-ARG-A1		14-17	the current high school 
+			N-ARGM-LOC		20-24	a half - mile away 
+	20	a
+	21	half
+			sense:	one-half.n.01
+	22	-
+	23	mile
+			sense:	mile.n.01
+	24	away
+			sense:	away.r.01
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The previous building is now Midway Middle School .
+
+
+Treebanked sentence:
+--------------------
+The previous building is now Midway Middle School . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJ previous) (NN building))
+    (VP (VBZ is)
+      (ADVP (RB now))
+      (NP (NNP Midway) (NNP Middle) (NNP School)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	previous
+			sense:	previous.s.01
+	2	building
+			sense:	building.n.01
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	The previous building 
+			N-ARGM-TMP		4-4	now 
+			N-ARG-A2		5-7	Midway Middle School 
+	4	now
+			name:	DATE				4-4	now 
+			sense:	now.r.01
+	5	Midway
+			name:	ORGANIZATION				5-7	Midway Middle School 
+	6	Middle
+	7	School
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Named # 1 Best Public High School in McLennan County in 2018 by 
+
+
+Treebanked sentence:
+--------------------
+Named # 1 Best Public High School in McLennan County in 2018 by Rated " Met Standard " by the Texas Education Agency in 2016 and 2015 Students rank in the top 25 % for student progress , closing performance gaps and postsecondary readiness 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PRN
+      (S
+        (VP (VBN Named)
+          (NP (NN #) (CD 1))
+          (S
+            (ADJP
+              (ADJP (JJS Best) (JJ Public))
+              (SBAR
+                (S
+                  (NP (NNP High) (NNP School)))))
+            (PP (IN in)
+              (NP
+                (NP (NNP McLennan) (NNP County))
+                (PP (IN in)
+                  (NP (CD 2018))))))
+          (PP (IN by)
+            (S
+              (VP (VBN Rated)
+                (NP (`` ") (NNP Met) (NNP Standard) ('' "))
+                (PP (IN by)
+                  (NP (DT the) (NNP Texas) (NNP Education) (NNP Agency)))
+                (PP (IN in)
+                  (NP (CD 2016)
+                    (CC and)
+                    (CD 2015)))))))))
+    (NP (NNS Students))
+    (VP (VBP rank)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (JJ top) (CD 25) (NN %))
+          (PP (IN for)
+            (NP
+              (NP (NN student) (NN progress))
+              (, ,)
+              (NP (VBG closing) (NN performance) (NNS gaps))
+              (CC and)
+              (NP (JJ postsecondary) (NN readiness)))))))))
+
+
+Leaves:
+-------
+	0	Named
+			sense:	mention.v.01
+			prop:	name.01
+			V		0-0	Named 
+			N-ARG-A2		1-9	# 1 Best Public High School in McLennan County 
+			N-ARGM-TMP		10-11	in 2018 
+			N-ARG-A0		12-26	by Rated " Met Standard " by the Texas Education Agency in 2016 and 2015 
+			N-ARG-A1		27-27	Students 
+	1	#
+			name:	MONEY				1-2	# 1 
+	2	1
+	3	Best
+			name:	ORGANIZATION				3-6	Best Public High School 
+			sense:	good.a.01
+	4	Public
+			sense:	public.a.01
+	5	High
+	6	School
+	7	in
+	8	McLennan
+			name:	LOCATION				8-9	McLennan County 
+	9	County
+	10	in
+	11	2018
+			name:	DATE				11-11	2018 
+	12	by
+	13	Rated
+			sense:	rate.v.01
+			prop:	rate.01
+			V		13-13	Rated 
+			N-ARG-A2		14-17	" Met Standard " 
+			N-ARG-A0		18-22	by the Texas Education Agency 
+			N-ARGM-TMP		23-26	in 2016 and 2015 
+	14	"
+	15	Met
+	16	Standard
+	17	"
+	18	by
+	19	the
+	20	Texas
+			name:	ORGANIZATION				20-22	Texas Education Agency 
+	21	Education
+	22	Agency
+	23	in
+	24	2016
+			name:	DATE				24-24	2016 
+	25	and
+	26	2015
+			name:	DATE				26-26	2015 
+	27	Students
+			sense:	student.n.01
+	28	rank
+			sense:	rate.v.01
+			prop:	rank.01
+			V		28-28	rank 
+			N-ARG-A1		27-27	Students 
+			N-ARG-A2		29-33	in the top 25 % 
+	29	in
+	30	the
+	31	top
+			sense:	top.a.01
+	32	25
+			name:	PERCENT				32-33	25 % 
+	33	%
+	34	for
+	35	student
+			name:	TITLE				35-35	student 
+			sense:	student.n.01
+	36	progress
+			sense:	advancement.n.03
+	37	,
+	38	closing
+			sense:	close.v.13
+			prop:	blowing.01
+			V		38-38	closing 
+			N-ARG-A1		39-40	performance gaps 
+	39	performance
+			sense:	performance.n.03
+	40	gaps
+			sense:	gap.n.01
+	41	and
+	42	postsecondary
+	43	readiness
+			sense:	readiness.n.01
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.18-18	Hewitt 
+				3.6-6	Hewitt 
+	Chain 1 (IDENT)
+				0.13-13	Waco 
+				1.13-13	Waco 
+	Chain 2 (IDENT)
+				0.15-15	Texas 
+				1.15-15	Texas 
+

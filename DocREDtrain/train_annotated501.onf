@@ -1,0 +1,902 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Charlotte Angus ( February 2 , 1911 – March 2 , 1989 ) was an American artist .
+
+
+Treebanked sentence:
+--------------------
+Charlotte Angus ( February 2 , 1911 – March 2 , 1989 ) was an American artist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Charlotte) (NNP Angus))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP February) (CD 2) (, ,) (CD 1911))
+        (PP (SYM –)
+          (NP (NNP March) (CD 2) (, ,) (CD 1989))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT an) (JJ American) (NN artist)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Charlotte
+			coref:	IDENT			0	0-1	Charlotte Angus 
+			name:	PERSON				0-1	Charlotte Angus 
+	1	Angus
+	2	(
+	3	February
+			name:	DATE				3-6	February 2 , 1911 
+	4	2
+	5	,
+	6	1911
+	7	–
+	8	March
+			name:	DATE				8-11	March 2 , 1989 
+	9	2
+	10	,
+	11	1989
+	12	)
+	13	was
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	was 
+			N-ARG-A1		0-12	Charlotte Angus ( February 2 , 1911 – March 2 , 1989 ) 
+			N-ARG-A2		14-16	an American artist 
+	14	an
+	15	American
+			name:	NATIONALITY				15-15	American 
+	16	artist
+			name:	TITLE				16-16	artist 
+			sense:	artist.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A native of Kansas City , Missouri , Angus moved to Philadelphia when young and grew up in that city .
+
+
+Treebanked sentence:
+--------------------
+A native of Kansas City , Missouri , Angus moved to Philadelphia when young and grew up in that city . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN native))
+      (PP (IN of)
+        (NP
+          (NML
+            (NML (NNP Kansas) (NNP City))
+            (, ,)
+            (NP (NNP Missouri))
+            (, ,))
+          (NNP Angus))))
+    (VP
+      (VP (VBD moved)
+        (PP (IN to)
+          (NP
+            (NP (NNP Philadelphia))
+            (SBAR
+              (WHADVP (WRB when))
+              (FRAG
+                (ADJP (JJ young)))))))
+      (CC and)
+      (VP (VBD grew)
+        (PRT (RP up))
+        (PP (IN in)
+          (NP (DT that) (NN city)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+			coref:	IDENT			3	0-8	A native of Kansas City , Missouri , Angus 
+	1	native
+			sense:	native.n.02
+	2	of
+	3	Kansas
+			coref:	IDENT			5	3-4	Kansas City 
+			name:	CITY				3-4	Kansas City 
+	4	City
+	5	,
+	6	Missouri
+			name:	STATE_OR_PROVINCE				6-6	Missouri 
+	7	,
+	8	Angus
+			name:	PERSON				8-8	Angus 
+	9	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		9-9	moved 
+			R-ARG-A0		0-6	A native of Kansas City , Missouri 
+			N-ARG-A0		8-8	Angus 
+			N-ARG-A2		10-11	to Philadelphia 
+			N-ARGM-TMP		12-13	when young 
+	10	to
+	11	Philadelphia
+			name:	CITY				11-11	Philadelphia 
+	12	when
+	13	young
+			sense:	young.a.01
+	14	and
+	15	grew
+			sense:	mature.v.01
+			prop:	grow.04
+			V		15-15	grew 
+			N-ARG-A1		8-8	Angus 
+			N-ARGM-LOC		17-19	in that city 
+	16	up
+	17	in
+	18	that
+			coref:	IDENT			5	18-19	that city 
+	19	city
+			sense:	city.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She studied at the University of the Arts and the Graphic Sketch Club there before taking a job with an advertising agency , which she lost due to the Great Depression .
+
+
+Treebanked sentence:
+--------------------
+She studied at the University of the Arts and the Graphic Sketch Club there before taking a job with an advertising agency , which she lost due to the Great Depression . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP She))
+      (VP (VBD studied)
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (DT the) (NNPS Arts)))))))
+    (CC and)
+    (S
+      (NP (DT the) (NNP Graphic))
+      (VP (VBP Sketch)
+        (NP (NNP Club))
+        (ADVP (RB there))
+        (PP (IN before)
+          (S
+            (VP (VBG taking)
+              (NP (DT a) (NN job))
+              (PP (IN with)
+                (NP
+                  (NP (DT an) (NN advertising) (NN agency))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (NP (PRP she))
+                      (VP (VBD lost)
+                        (PP (IN due)
+                          (PP (IN to)
+                            (NP (DT the) (NNP Great) (NNP Depression))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			3	0-0	She 
+	1	studied
+			sense:	study.v.02
+			prop:	study.01
+			V		1-1	studied 
+			N-ARG-A0		0-0	She 
+			N-ARGM-LOC		2-13	at the University of the Arts and the Graphic Sketch Club there 
+			N-ARGM-TMP		14-30	before taking a job with an advertising agency , which she lost due to the Great Depression 
+	2	at
+	3	the
+	4	University
+			name:	ORGANIZATION				4-7	University of the Arts 
+	5	of
+	6	the
+	7	Arts
+	8	and
+	9	the
+	10	Graphic
+			name:	ORGANIZATION				10-12	Graphic Sketch Club 
+	11	Sketch
+			sense:	sketch.v.01
+			prop:	sketch.01
+			V		11-11	Sketch 
+			N-ARG-A1		10-10	Graphic 
+	12	Club
+	13	there
+			sense:	there.r.01
+	14	before
+	15	taking
+			sense:	fill.v.04
+			prop:	take.01
+			V		15-15	taking 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		16-30	a job with an advertising agency , which she lost due to the Great Depression 
+	16	a
+	17	job
+			sense:	occupation.n.01
+	18	with
+	19	an
+	20	advertising
+			sense:	advertising.n.02
+	21	agency
+			sense:	agency.n.02
+	22	,
+	23	which
+	24	she
+			coref:	IDENT			3	24-24	she 
+	25	lost
+			sense:	lose.v.01
+			prop:	lose.02
+			V		25-25	lost 
+			N-ARG-A1		16-21	a job with an advertising agency 
+			R-ARG-A1		23-23	which 
+			N-ARG-A0		24-24	she 
+			N-ARGM-CAU		26-30	due to the Great Depression 
+	26	due
+	27	to
+	28	the
+	29	Great
+	30	Depression
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She then , in 1936 , became involved with the Federal Art Project , beginning by painting sets for the Federal Theater Project and continuing by contributing to the Index of American Design .
+
+
+Treebanked sentence:
+--------------------
+She then , in 1936 , became involved with the Federal Art Project , beginning by painting sets for the Federal Theater Project and continuing by contributing to the Index of American Design . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP She))
+      (ADVP (RB then)))
+    (, ,)
+    (PP (IN in)
+      (NP (CD 1936)))
+    (, ,)
+    (VP (VBD became)
+      (ADJP (JJ involved))
+      (PP (IN with)
+        (NP (DT the) (NNP Federal) (NNP Art) (NNP Project)))
+      (, ,)
+      (S
+        (VP
+          (VP (VBG beginning)
+            (PP (IN by)
+              (S
+                (VP (VBG painting)
+                  (NP (NNS sets))
+                  (PP (IN for)
+                    (NP (DT the) (NNP Federal) (NNP Theater) (NNP Project)))))))
+          (CC and)
+          (VP (VBG continuing)
+            (PP (IN by)
+              (S
+                (VP (VBG contributing)
+                  (PP (IN to)
+                    (NP
+                      (NP (DT the) (NN Index))
+                      (PP (IN of)
+                        (NP (NNP American) (NNP Design))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			3	0-0	She 
+	1	then
+			sense:	then.r.01
+	2	,
+	3	in
+	4	1936
+			name:	DATE				4-4	1936 
+	5	,
+	6	became
+			sense:	become.v.01
+			prop:	become.01
+			V		6-6	became 
+			N-ARG-A1		0-0	She 
+			N-ARGM-TMP		1-1	then 
+			N-ARGM-TMP		3-4	in 1936 
+			N-ARG-A2		7-12	involved with the Federal Art Project 
+			N-ARGM-PRD		14-32	beginning by painting sets for the Federal Theater Project and continuing by contributing to the Index of American Design 
+	7	involved
+			sense:	involved.a.01
+	8	with
+	9	the
+			coref:	IDENT			1	9-12	the Federal Art Project 
+	10	Federal
+	11	Art
+	12	Project
+	13	,
+	14	beginning
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		14-14	beginning 
+			N-ARG-A0		0-0	She 
+			N-ARG-A2		15-22	by painting sets for the Federal Theater Project 
+	15	by
+	16	painting
+			sense:	paint.v.01
+			prop:	paint.02
+			V		16-16	painting 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		17-17	sets 
+			N-ARG-A2		18-22	for the Federal Theater Project 
+	17	sets
+			sense:	stage_set.n.01
+	18	for
+	19	the
+			coref:	IDENT			1	19-22	the Federal Theater Project 
+	20	Federal
+			name:	ORGANIZATION				20-22	Federal Theater Project 
+	21	Theater
+	22	Project
+	23	and
+	24	continuing
+			sense:	continue.v.01
+			prop:	continue.01
+			V		24-24	continuing 
+			N-ARG-A0		0-0	She 
+			N-ARGM-MNR		25-32	by contributing to the Index of American Design 
+	25	by
+	26	contributing
+			sense:	contribute.v.02
+			prop:	contribute.01
+			V		26-26	contributing 
+			N-ARG-A0		0-0	She 
+			N-ARG-A2		27-32	to the Index of American Design 
+	27	to
+	28	the
+			coref:	IDENT			4	28-32	the Index of American Design 
+	29	Index
+			name:	ORGANIZATION				29-32	Index of American Design 
+			sense:	index.n.04
+	30	of
+	31	American
+	32	Design
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the end of the project in 1942 she studied drafting , taking a position as a draftswoman at the Naval Air Medical Center in Philadelphia .
+
+
+Treebanked sentence:
+--------------------
+At the end of the project in 1942 she studied drafting , taking a position as a draftswoman at the Naval Air Medical Center in Philadelphia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (DT the) (NN end))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN project))
+            (PP (IN in)
+              (NP (CD 1942)))))))
+    (NP (PRP she))
+    (VP (VBD studied)
+      (NP (NN drafting))
+      (, ,)
+      (S
+        (VP (VBG taking)
+          (NP (DT a) (NN position))
+          (PP (IN as)
+            (NP
+              (NP (DT a) (NN draftswoman))
+              (PP (IN at)
+                (NP (DT the)
+                  (NML (NNP Naval) (NNP Air))
+                  (NNP Medical) (NNP Center)))))
+          (PP (IN in)
+            (NP (NNP Philadelphia))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+	2	end
+			sense:	end.n.02
+	3	of
+	4	the
+	5	project
+			sense:	undertaking.n.01
+	6	in
+	7	1942
+			name:	DATE				7-7	1942 
+	8	she
+			coref:	IDENT			3	8-8	she 
+	9	studied
+			sense:	learn.v.04
+			prop:	study.01
+			V		9-9	studied 
+			N-ARGM-TMP		0-7	At the end of the project in 1942 
+			N-ARG-A0		8-8	she 
+			N-ARG-A1		10-10	drafting 
+			N-ARGM-PRD		12-25	taking a position as a draftswoman at the Naval Air Medical Center in Philadelphia 
+	10	drafting
+			sense:	drafting.n.02
+	11	,
+	12	taking
+			sense:	fill.v.04
+			prop:	take.01
+			V		12-12	taking 
+			N-ARG-A0		8-8	she 
+			N-ARG-A1		13-25	a position as a draftswoman at the Naval Air Medical Center in Philadelphia 
+	13	a
+	14	position
+			sense:	position.n.06
+	15	as
+	16	a
+	17	draftswoman
+	18	at
+	19	the
+	20	Naval
+			name:	CITY				20-20	Naval 
+	21	Air
+			name:	LOCATION				21-23	Air Medical Center 
+	22	Medical
+	23	Center
+	24	in
+	25	Philadelphia
+			name:	CITY				25-25	Philadelphia 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She also created posters for the Works Progress Administration .
+
+
+Treebanked sentence:
+--------------------
+She also created posters for the Works Progress Administration . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (ADVP (RB also))
+    (VP (VBD created)
+      (NP (NNS posters))
+      (PP (IN for)
+        (NP (DT the) (NNP Works) (NNP Progress) (NNP Administration))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			3	0-0	She 
+	1	also
+			sense:	besides.r.02
+	2	created
+			sense:	create.v.05
+			prop:	create.01
+			V		2-2	created 
+			N-ARG-A0		0-0	She 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-8	posters for the Works Progress Administration 
+	3	posters
+			sense:	poster.n.01
+	4	for
+	5	the
+	6	Works
+			name:	ORGANIZATION				6-8	Works Progress Administration 
+	7	Progress
+	8	Administration
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Angus married John Stefanak in 1947 and settled with him in southwestern Pennsylvania , where she continued to exhibit her art .
+
+
+Treebanked sentence:
+--------------------
+Angus married John Stefanak in 1947 and settled with him in southwestern Pennsylvania , where she continued to exhibit her art . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Angus))
+    (VP
+      (VP (VBD married)
+        (NP
+          (NP (NNP John) (NNP Stefanak))
+          (PP (IN in)
+            (NP (CD 1947)))))
+      (CC and)
+      (VP (VBN settled)
+        (PP (IN with)
+          (NP (PRP him)))
+        (PP (IN in)
+          (NP (JJ southwestern) (NNP Pennsylvania)))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP she))
+            (VP (VBD continued)
+              (S
+                (VP (TO to)
+                  (VP (VB exhibit)
+                    (NP (PRP$ her) (NN art))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Angus
+			coref:	IDENT			0	0-0	Angus 
+			name:	PERSON				0-0	Angus 
+	1	married
+			sense:	marry.v.01
+			prop:	marry.01
+			V		1-1	married 
+			N-ARG-A1		0-0	Angus 
+			N-ARG-A2		2-3	John Stefanak 
+			N-ARGM-TMP		4-5	in 1947 
+	2	John
+			coref:	IDENT			2	2-3	John Stefanak 
+			name:	PERSON				2-3	John Stefanak 
+	3	Stefanak
+	4	in
+	5	1947
+			name:	DATE				5-5	1947 
+	6	and
+	7	settled
+			sense:	settle.v.04
+			prop:	settle.03
+			V		7-7	settled 
+			N-ARG-A1		0-0	Angus 
+			N-ARG-A4		10-13	in southwestern Pennsylvania , 
+			N-ARGM-LOC		14-17	where she continued to 
+			N-ARG-A4		18-20	exhibit her art 
+	8	with
+	9	him
+			coref:	IDENT			2	9-9	him 
+	10	in
+	11	southwestern
+			sense:	southwest.s.02
+	12	Pennsylvania
+			name:	STATE_OR_PROVINCE				12-12	Pennsylvania 
+	13	,
+	14	where
+	15	she
+			coref:	IDENT			3	15-15	she 
+	16	continued
+			sense:	continue.v.01
+			prop:	continue.01
+			V		16-16	continued 
+			N-ARGM-LOC		11-12	southwestern Pennsylvania 
+			R-ARGM-LOC		14-14	where 
+			N-ARG-A0		15-15	she 
+			N-ARG-A1		17-20	to exhibit her art 
+	17	to
+	18	exhibit
+			sense:	show.v.01
+			prop:	exhibit.01
+			V		18-18	exhibit 
+			N-ARG-A0		15-15	she 
+			N-ARG-A1		19-20	her art 
+	19	her
+			coref:	IDENT			3	19-19	her 
+	20	art
+			sense:	art.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She died in Pulaski , Pennsylvania , and is buried in Saint Ann 's Cemetery in Hermitage .
+
+
+Treebanked sentence:
+--------------------
+She died in Pulaski , Pennsylvania , and is buried in Saint Ann 's Cemetery in Hermitage . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP
+      (VP (VBD died)
+        (PP (IN in)
+          (NP (NNP Pulaski) (, ,) (NNP Pennsylvania))))
+      (, ,)
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN buried)
+          (PP (IN in)
+            (NP
+              (NP (NNP Saint) (NNP Ann) (POS 's))
+              (NN Cemetery)))
+          (PP (IN in)
+            (NP (NNP Hermitage))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			3	0-0	She 
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	She 
+			N-ARGM-LOC		2-5	in Pulaski , Pennsylvania 
+	2	in
+	3	Pulaski
+			name:	CITY				3-3	Pulaski 
+	4	,
+	5	Pennsylvania
+			name:	STATE_OR_PROVINCE				5-5	Pennsylvania 
+	6	,
+	7	and
+	8	is
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	is 
+	9	buried
+			sense:	bury.v.02
+			prop:	bury.01
+			V		9-9	buried 
+			N-ARG-A1		0-0	She 
+			N-ARGM-LOC		10-16	in Saint Ann 's Cemetery in Hermitage 
+	10	in
+	11	Saint
+			name:	CITY				11-12	Saint Ann 
+	12	Ann
+	13	's
+			name:	LOCATION				13-14	's Cemetery 
+	14	Cemetery
+			sense:	cemetery.n.01
+	15	in
+	16	Hermitage
+			name:	CITY				16-16	Hermitage 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A lithograph by Angus , Derelicts , is owned by the Spencer Museum of Art .
+
+
+Treebanked sentence:
+--------------------
+A lithograph by Angus , Derelicts , is owned by the Spencer Museum of Art . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT A) (NN lithograph))
+        (PP (IN by)
+          (NP (NNP Angus))))
+      (, ,)
+      (NP (NNPS Derelicts))
+      (, ,))
+    (VP (VBZ is)
+      (VP (VBN owned)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NNP Spencer) (NNP Museum))
+            (PP (IN of)
+              (NP (NNP Art)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	lithograph
+			sense:	lithograph.n.01
+	2	by
+	3	Angus
+			coref:	IDENT			0	3-3	Angus 
+			name:	PERSON				3-3	Angus 
+	4	,
+	5	Derelicts
+			name:	MISC				5-5	Derelicts 
+	6	,
+	7	is
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	is 
+	8	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		8-8	owned 
+			N-ARG-A1		0-5	A lithograph by Angus , Derelicts 
+			N-ARG-A0		9-14	by the Spencer Museum of Art 
+	9	by
+	10	the
+	11	Spencer
+			name:	ORGANIZATION				11-14	Spencer Museum of Art 
+	12	Museum
+	13	of
+	14	Art
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Much of the work she produced for the Index of American Design is currently held by the National Gallery of Art .
+
+
+Treebanked sentence:
+--------------------
+Much of the work she produced for the Index of American Design is currently held by the National Gallery of Art . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (JJ Much))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NN work))
+          (SBAR
+            (S
+              (NP (PRP she))
+              (VP (VBD produced)
+                (PP (IN for)
+                  (NP
+                    (NP (DT the) (NN Index))
+                    (PP (IN of)
+                      (NP (NNP American) (NNP Design)))))))))))
+    (VP (VBZ is)
+      (ADVP (RB currently))
+      (VP (VBN held)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NNP National) (NNP Gallery))
+            (PP (IN of)
+              (NP (NNP Art)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Much
+			sense:	much.a.01
+	1	of
+	2	the
+	3	work
+			sense:	work.n.02
+	4	she
+			coref:	IDENT			3	4-4	she 
+	5	produced
+			sense:	produce.v.02
+			prop:	produce.01
+			V		5-5	produced 
+			N-ARG-A1		2-3	the work 
+			N-ARG-A0		4-4	she 
+			N-ARG-A3		6-11	for the Index of American Design 
+	6	for
+	7	the
+			coref:	IDENT			4	7-11	the Index of American Design 
+	8	Index
+			name:	MISC				8-9	Index of 
+			sense:	index.n.04
+	9	of
+	10	American
+			name:	NATIONALITY				10-10	American 
+	11	Design
+			name:	MISC				11-11	Design 
+	12	is
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	is 
+	13	currently
+			name:	DATE				13-13	currently 
+			sense:	presently.r.02
+	14	held
+			sense:	have.v.01
+			prop:	hold.01
+			V		14-14	held 
+			N-ARG-A1		0-11	Much of the work she produced for the Index of American Design 
+			N-ARGM-TMP		13-13	currently 
+			N-ARG-A0		15-20	by the National Gallery of Art 
+	15	by
+	16	the
+	17	National
+			name:	ORGANIZATION				17-20	National Gallery of Art 
+	18	Gallery
+	19	of
+	20	Art
+	21	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Charlotte Angus 
+				6.0-0	Angus 
+				8.3-3	Angus 
+	Chain 1 (IDENT)
+				3.9-12	the Federal Art Project 
+				3.19-22	the Federal Theater Project 
+	Chain 2 (IDENT)
+				6.2-3	John Stefanak 
+				6.9-9	him 
+	Chain 3 (IDENT)
+				1.0-8	A native of Kansas City , Missouri , Angus 
+				2.0-0	She 
+				2.24-24	she 
+				3.0-0	She 
+				4.8-8	she 
+				5.0-0	She 
+				6.15-15	she 
+				6.19-19	her 
+				7.0-0	She 
+				9.4-4	she 
+	Chain 4 (IDENT)
+				3.28-32	the Index of American Design 
+				9.7-11	the Index of American Design 
+	Chain 5 (IDENT)
+				1.3-4	Kansas City 
+				1.18-19	that city 
+

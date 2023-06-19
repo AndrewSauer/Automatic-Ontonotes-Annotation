@@ -1,0 +1,557 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Robert Charles Gallo (; born March 23 , 1937 ) is an American biomedical researcher .
+
+
+Treebanked sentence:
+--------------------
+Robert Charles Gallo ( ; born March 23 , 1937 ) is an American biomedical researcher . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Robert) (NNP Charles) (NNP Gallo))
+      (-LRB- -LRB-)
+      (VP (: ;)
+        (VP (VBN born)
+          (NP-TMP (NNP March) (CD 23) (, ,) (CD 1937))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT an) (JJ American) (JJ biomedical) (NN researcher)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Robert
+			coref:	IDENT			0	0-2	Robert Charles Gallo 
+			name:	PERSON				0-2	Robert Charles Gallo 
+	1	Charles
+	2	Gallo
+	3	(
+	4	;
+	5	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		5-5	born 
+			N-ARG-A1		0-2	Robert Charles Gallo 
+			N-ARGM-TMP		6-9	March 23 , 1937 
+	6	March
+			name:	DATE				6-9	March 23 , 1937 
+	7	23
+	8	,
+	9	1937
+	10	)
+	11	is
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	is 
+			N-ARG-A1		0-10	Robert Charles Gallo ( ; born March 23 , 1937 ) 
+			N-ARG-A2		12-15	an American biomedical researcher 
+	12	an
+	13	American
+			name:	NATIONALITY				13-13	American 
+	14	biomedical
+			sense:	biomedical.a.01
+	15	researcher
+			name:	TITLE				15-15	researcher 
+			sense:	research_worker.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is best known for his role in the discovery of the human immunodeficiency virus ( HIV ) as the infectious agent responsible for acquired immune deficiency syndrome ( AIDS ) and in the development of the HIV blood test , and he has been a major contributor to subsequent HIV research .
+
+
+Treebanked sentence:
+--------------------
+He is best known for his role in the discovery of the human immunodeficiency virus ( HIV ) as the infectious agent responsible for acquired immune deficiency syndrome ( AIDS ) and in the development of the HIV blood test , and he has been a major contributor to subsequent HIV research . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBZ is)
+        (ADVP (RBS best))
+        (VP (VBN known)
+          (PP (IN for)
+            (NP
+              (NP (PRP$ his) (NN role))
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NN discovery))
+                  (PP (IN of)
+                    (NP (DT the) (JJ human) (NN immunodeficiency) (NN virus)
+                      (PRN (-LRB- -LRB-)
+                        (NP (NNP HIV))
+                        (-RRB- -RRB-))))))))
+          (PP
+            (PP (IN as)
+              (NP
+                (NP (DT the) (JJ infectious) (NN agent))
+                (ADJP (JJ responsible)
+                  (PP (IN for)
+                    (NP
+                      (NML (VBN acquired) (JJ immune) (NN deficiency))
+                      (NN syndrome)))))
+              (PRN (-LRB- -LRB-)
+                (NP (NNP AIDS))
+                (-RRB- -RRB-)))
+            (CC and)
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN development))
+                (PP (IN of)
+                  (NP (DT the) (NNP HIV) (NN blood) (NN test)))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBZ has)
+        (VP (VBN been)
+          (NP
+            (NP (DT a) (JJ major) (NN contributor))
+            (PP (IN to)
+              (NP (JJ subsequent) (NNP HIV) (NN research)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-39	best known for his role in the discovery of the human immunodeficiency virus ( HIV ) as the infectious agent responsible for acquired immune deficiency syndrome ( AIDS ) and in the development of the HIV blood test 
+	2	best
+			sense:	well.r.02
+	3	known
+			sense:	know.v.01
+			prop:	know.01
+			V		3-3	known 
+			N-ARG-A1		0-0	He 
+			N-ARGM-MNR		2-2	best 
+			N-ARG-A2		4-39	for his role in the discovery of the human immunodeficiency virus ( HIV ) as the infectious agent responsible for acquired immune deficiency syndrome ( AIDS ) and in the development of the HIV blood test 
+	4	for
+	5	his
+			coref:	IDENT			0	5-5	his 
+	6	role
+			sense:	function.n.03
+	7	in
+	8	the
+	9	discovery
+			sense:	discovery.n.01
+	10	of
+	11	the
+	12	human
+			sense:	human.a.03
+	13	immunodeficiency
+			sense:	immunodeficiency.n.01
+	14	virus
+			sense:	virus.n.01
+	15	(
+	16	HIV
+			name:	CAUSE_OF_DEATH				16-16	HIV 
+	17	)
+	18	as
+	19	the
+	20	infectious
+			sense:	infectious.s.01
+	21	agent
+			sense:	agent.n.01
+	22	responsible
+			sense:	responsible.s.02
+	23	for
+	24	acquired
+			sense:	grow.v.08
+			prop:	acquire.01
+			V		24-24	acquired 
+			N-ARG-A1		25-27	immune deficiency syndrome 
+	25	immune
+			sense:	immune.s.03
+	26	deficiency
+			sense:	insufficiency.n.03
+	27	syndrome
+			sense:	syndrome.n.02
+	28	(
+	29	AIDS
+			name:	CAUSE_OF_DEATH				29-29	AIDS 
+	30	)
+	31	and
+	32	in
+	33	the
+	34	development
+			sense:	development.n.01
+	35	of
+	36	the
+	37	HIV
+			name:	CAUSE_OF_DEATH				37-37	HIV 
+	38	blood
+			sense:	blood.n.01
+	39	test
+			sense:	trial.n.02
+	40	,
+	41	and
+	42	he
+			coref:	IDENT			0	42-42	he 
+	43	has
+			sense:	have.v.01
+			prop:	have.01
+			V		43-43	has 
+	44	been
+			sense:	be.v.01
+			prop:	be.01
+			V		44-44	been 
+			N-ARG-A1		42-42	he 
+			N-ARG-A2		45-51	a major contributor to subsequent HIV research 
+	45	a
+	46	major
+			sense:	major.a.01
+	47	contributor
+			sense:	contributor.n.02
+	48	to
+	49	subsequent
+			sense:	subsequent.a.01
+	50	HIV
+			name:	CAUSE_OF_DEATH				50-50	HIV 
+	51	research
+			sense:	research.n.01
+	52	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Gallo is the director and co - founder of the Institute of Human Virology ( IHV ) at the University of Maryland School of Medicine in Baltimore , Maryland , established in 1996 in a partnership including the State of Maryland and the City of Baltimore .
+
+
+Treebanked sentence:
+--------------------
+Gallo is the director and co - founder of the Institute of Human Virology ( IHV ) at the University of Maryland School of Medicine in Baltimore , Maryland , established in 1996 in a partnership including the State of Maryland and the City of Baltimore . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Gallo))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN director))
+        (CC and)
+        (NP
+          (NP
+            (NP (NN co) (HYPH -) (NN founder))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNP Institute))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP Human) (NNP Virology) (-LRB- -LRB-) (NNP IHV) (-RRB- -RRB-))
+                    (PP (IN at)
+                      (NP
+                        (NP (DT the) (NNP University))
+                        (PP (IN of)
+                          (NP
+                            (NP (NNP Maryland) (NNP School))
+                            (PP (IN of)
+                              (NP
+                                (NP (NNP Medicine))
+                                (PP (IN in)
+                                  (NP (NNP Baltimore) (, ,) (NNP Maryland))))))))))))))
+          (, ,)
+          (VP (VBN established)
+            (PP (IN in)
+              (NP (CD 1996)))
+            (PP (IN in)
+              (NP
+                (NP (DT a) (NN partnership))
+                (PP (VBG including)
+                  (NP
+                    (NP
+                      (NP (DT the) (NN State))
+                      (PP (IN of)
+                        (NP (NNP Maryland))))
+                    (CC and)
+                    (NP
+                      (NP (DT the) (NNP City))
+                      (PP (IN of)
+                        (NP (NNP Baltimore))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Gallo
+			coref:	IDENT			0	0-0	Gallo 
+			name:	PERSON				0-0	Gallo 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Gallo 
+			N-ARG-A2		2-45	the director and co - founder of the Institute of Human Virology ( IHV ) at the University of Maryland School of Medicine in Baltimore , Maryland , established in 1996 in a partnership including the State of Maryland and the City of Baltimore 
+	2	the
+	3	director
+			name:	TITLE				3-3	director 
+			sense:	director.n.01
+	4	and
+	5	co
+			sense:	colorado.n.01
+	6	-
+	7	founder
+			name:	TITLE				7-7	founder 
+			sense:	founder.n.02
+	8	of
+	9	the
+	10	Institute
+			name:	ORGANIZATION				10-13	Institute of Human Virology 
+	11	of
+	12	Human
+	13	Virology
+	14	(
+	15	IHV
+	16	)
+	17	at
+	18	the
+	19	University
+			name:	ORGANIZATION				19-24	University of Maryland School of Medicine 
+	20	of
+	21	Maryland
+	22	School
+	23	of
+	24	Medicine
+	25	in
+	26	Baltimore
+			name:	CITY				26-26	Baltimore 
+	27	,
+	28	Maryland
+			name:	STATE_OR_PROVINCE				28-28	Maryland 
+	29	,
+	30	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		30-30	established 
+			N-ARG-A1		18-28	the University of Maryland School of Medicine in Baltimore , Maryland 
+			N-ARGM-TMP		31-32	in 1996 
+			N-ARGM-LOC		33-45	in a partnership including the State of Maryland and the City of Baltimore 
+	31	in
+	32	1996
+			name:	DATE				32-32	1996 
+	33	in
+	34	a
+	35	partnership
+			sense:	partnership.n.02
+	36	including
+			sense:	include.v.01
+			prop:	include.01
+			V		36-36	including 
+			N-ARG-A2		34-35	a partnership 
+			N-ARG-A1		37-45	the State of Maryland and the City of Baltimore 
+	37	the
+	38	State
+			sense:	state.n.01
+	39	of
+	40	Maryland
+			name:	STATE_OR_PROVINCE				40-40	Maryland 
+	41	and
+	42	the
+	43	City
+	44	of
+	45	Baltimore
+			name:	CITY				45-45	Baltimore 
+	46	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In November 2011 , Gallo was named the first Homer & Martha Gudelsky Distinguished Professor in Medicine .
+
+
+Treebanked sentence:
+--------------------
+In November 2011 , Gallo was named the first Homer & Martha Gudelsky Distinguished Professor in Medicine . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP November) (CD 2011)))
+    (, ,)
+    (NP (NNP Gallo))
+    (VP (VBD was)
+      (VP (VBN named)
+        (NP
+          (NP (DT the) (JJ first) (NNP Homer))
+          (CC &)
+          (NP (NNP Martha) (NNP Gudelsky) (NNP Distinguished) (NNP Professor)))
+        (PP (IN in)
+          (NP (NNP Medicine)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	November
+			name:	DATE				1-2	November 2011 
+	2	2011
+	3	,
+	4	Gallo
+			coref:	IDENT			0	4-4	Gallo 
+			name:	PERSON				4-4	Gallo 
+	5	was
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	was 
+	6	named
+			sense:	name.v.03
+			prop:	name.01
+			V		6-6	named 
+			N-ARGM-TMP		0-2	In November 2011 
+			N-ARG-A1		4-4	Gallo 
+			N-ARG-A2		7-16	the first Homer & Martha Gudelsky Distinguished Professor in Medicine 
+	7	the
+	8	first
+			name:	ORDINAL				8-8	first 
+			sense:	first.a.01
+	9	Homer
+	10	&
+	11	Martha
+			name:	PERSON				11-12	Martha Gudelsky 
+	12	Gudelsky
+	13	Distinguished
+	14	Professor
+			name:	TITLE				14-14	Professor 
+	15	in
+	16	Medicine
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Gallo is also a co - founder of biotechnology company Profectus BioSciences , Inc. and co - founder and scientific director of the Global Virus Network ( GVN ) .
+
+
+Treebanked sentence:
+--------------------
+Gallo is also a co - founder of biotechnology company Profectus BioSciences , Inc. and co - founder and scientific director of the Global Virus Network ( GVN ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Gallo))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (NP
+        (NP
+          (NP (DT a) (NN co) (HYPH -) (NN founder))
+          (PP (IN of)
+            (NP
+              (NML (NN biotechnology) (NN company))
+              (NNP Profectus) (NNP BioSciences))))
+        (, ,)
+        (NP
+          (NP (NNP Inc.)
+            (CC and)
+            (NNP co))
+          (HYPH -)
+          (NP (NN founder)))
+        (CC and)
+        (NP
+          (NP (JJ scientific) (NN director))
+          (PP (IN of)
+            (NP (DT the) (JJ Global) (NNP Virus) (NNP Network)))))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP GVN))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Gallo
+			coref:	IDENT			0	0-0	Gallo 
+			name:	PERSON				0-0	Gallo 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Gallo 
+			N-ARGM-ADV		2-2	also 
+			N-ARG-A2		3-28	a co - founder of biotechnology company Profectus BioSciences , Inc. and co - founder and scientific director of the Global Virus Network ( GVN ) 
+	2	also
+			sense:	besides.r.02
+	3	a
+	4	co
+			sense:	colorado.n.01
+	5	-
+	6	founder
+			name:	TITLE				6-6	founder 
+			sense:	founder.n.02
+	7	of
+	8	biotechnology
+			sense:	biotechnology.n.01
+	9	company
+			sense:	company.n.01
+	10	Profectus
+			name:	ORGANIZATION				10-13	Profectus BioSciences , Inc. 
+	11	BioSciences
+	12	,
+	13	Inc.
+	14	and
+	15	co
+	16	-
+	17	founder
+			name:	TITLE				17-17	founder 
+			sense:	founder.n.02
+	18	and
+	19	scientific
+			sense:	scientific.a.01
+	20	director
+			name:	TITLE				20-20	director 
+			sense:	director.n.01
+	21	of
+	22	the
+	23	Global
+			name:	ORGANIZATION				23-25	Global Virus Network 
+			sense:	global.s.01
+	24	Virus
+	25	Network
+	26	(
+	27	GVN
+	28	)
+	29	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-2	Robert Charles Gallo 
+				1.0-0	He 
+				1.5-5	his 
+				1.42-42	he 
+				2.0-0	Gallo 
+				3.4-4	Gallo 
+				4.0-0	Gallo 
+

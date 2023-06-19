@@ -1,0 +1,547 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Olympic National Park is an American national park located in the State of Washington , on the Olympic Peninsula .
+
+
+Treebanked sentence:
+--------------------
+Olympic National Park is an American national park located in the State of Washington , on the Olympic Peninsula . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Olympic) (NNP National) (NNP Park))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ American) (JJ national) (NN park))
+        (VP (VBN located)
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN State))
+              (PP (IN of)
+                (NP (NNP Washington)))))
+          (, ,)
+          (PP (IN on)
+            (NP (DT the) (NNP Olympic) (NNP Peninsula))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Olympic
+			coref:	IDENT			0	0-2	Olympic National Park 
+			name:	LOCATION				0-2	Olympic National Park 
+	1	National
+	2	Park
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Olympic National Park 
+			N-ARG-A2		4-18	an American national park located in the State of Washington , on the Olympic Peninsula 
+	4	an
+	5	American
+			name:	NATIONALITY				5-5	American 
+	6	national
+			sense:	national.s.04
+	7	park
+			sense:	park.n.01
+	8	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		8-8	located 
+			N-ARG-A1		4-7	an American national park 
+			N-ARGM-LOC		9-13	in the State of Washington 
+			N-ARGM-LOC		15-18	on the Olympic Peninsula 
+	9	in
+	10	the
+	11	State
+			sense:	state.n.01
+	12	of
+	13	Washington
+			name:	STATE_OR_PROVINCE				13-13	Washington 
+	14	,
+	15	on
+	16	the
+	17	Olympic
+			name:	LOCATION				17-18	Olympic Peninsula 
+	18	Peninsula
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The park has four regions : the Pacific coastline , alpine areas , the west side temperate rainforest and the forests of the drier east side .
+
+
+Treebanked sentence:
+--------------------
+The park has four regions : the Pacific coastline , alpine areas , the west side temperate rainforest and the forests of the drier east side . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN park))
+    (VP (VBZ has)
+      (NP
+        (NP (CD four) (NNS regions))
+        (: :)
+        (NP
+          (NP (DT the) (NNP Pacific) (NN coastline))
+          (, ,)
+          (NP (JJ alpine) (NNS areas))
+          (, ,)
+          (NP (DT the) (JJ west) (NN side) (JJ temperate) (NN rainforest))
+          (CC and)
+          (NP
+            (NP (DT the) (NNS forests))
+            (PP (IN of)
+              (NP (DT the) (JJR drier) (JJ east) (NN side)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The park 
+	1	park
+			sense:	park.n.01
+	2	has
+			sense:	have.v.02
+			prop:	have.03
+			V		2-2	has 
+			N-ARG-A0		0-1	The park 
+			N-ARG-A1		3-25	four regions : the Pacific coastline , alpine areas , the west side temperate rainforest and the forests of the drier east side 
+	3	four
+			name:	NUMBER				3-3	four 
+	4	regions
+			sense:	region.n.01
+	5	:
+	6	the
+	7	Pacific
+			name:	LOCATION				7-7	Pacific 
+	8	coastline
+			sense:	coastline.n.01
+	9	,
+	10	alpine
+			sense:	alpine.a.02
+	11	areas
+			sense:	area.n.01
+	12	,
+	13	the
+	14	west
+			sense:	west.a.01
+	15	side
+			sense:	side.n.01
+	16	temperate
+			sense:	temperate.a.01
+	17	rainforest
+			sense:	rain_forest.n.01
+	18	and
+	19	the
+	20	forests
+			sense:	forest.n.01
+	21	of
+	22	the
+	23	drier
+			name:	TITLE				23-23	drier 
+			sense:	dry.a.01
+	24	east
+			sense:	east.a.01
+	25	side
+			sense:	side.n.01
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Within the park there are three distinct ecosystems which are subalpine forest and wildflower meadow , temperate forest , and the rugged Pacific coast .
+
+
+Treebanked sentence:
+--------------------
+Within the park there are three distinct ecosystems which are subalpine forest and wildflower meadow , temperate forest , and the rugged Pacific coast . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Within)
+      (NP (DT the) (NN park)))
+    (NP (EX there))
+    (VP (VBP are)
+      (NP
+        (NP (CD three) (JJ distinct) (NNS ecosystems))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBP are)
+              (NP
+                (NP (JJ subalpine) (NN forest))
+                (CC and)
+                (NP
+                  (NP (NN wildflower) (NN meadow))
+                  (, ,)
+                  (NP (JJ temperate) (NN forest))
+                  (, ,)
+                  (CC and)
+                  (NP (DT the) (JJ rugged) (NNP Pacific) (NN coast)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Within
+	1	the
+			coref:	IDENT			0	1-2	the park 
+	2	park
+			sense:	park.n.01
+	3	there
+	4	are
+			sense:	exist.v.01
+			prop:	be.02
+			V		4-4	are 
+			N-ARGM-LOC		0-2	Within the park 
+			N-ARG-A1		5-23	three distinct ecosystems which are subalpine forest and wildflower meadow , temperate forest , and the rugged Pacific coast 
+	5	three
+			name:	NUMBER				5-5	three 
+	6	distinct
+			sense:	distinct.s.01
+	7	ecosystems
+			sense:	ecosystem.n.01
+	8	which
+	9	are
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	are 
+			N-ARG-A1		5-7	three distinct ecosystems 
+			R-ARG-A1		8-8	which 
+			N-ARG-A2		10-23	subalpine forest and wildflower meadow , temperate forest , and the rugged Pacific coast 
+	10	subalpine
+			sense:	alpestrine.s.01
+	11	forest
+			sense:	forest.n.01
+	12	and
+	13	wildflower
+			sense:	wildflower.n.01
+	14	meadow
+			sense:	hayfield.n.01
+	15	,
+	16	temperate
+			sense:	temperate.a.01
+	17	forest
+			sense:	forest.n.01
+	18	,
+	19	and
+	20	the
+	21	rugged
+			sense:	broken.s.06
+	22	Pacific
+			name:	LOCATION				22-22	Pacific 
+	23	coast
+			sense:	seashore.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+President Theodore Roosevelt originally designated Mount Olympus National Monument on 2 March 1909 .
+
+
+Treebanked sentence:
+--------------------
+President Theodore Roosevelt originally designated Mount Olympus National Monument on 2 March 1909 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP President) (NNP Theodore) (NNP Roosevelt))
+    (ADVP (RB originally))
+    (VP (VBN designated)
+      (NP
+        (NP (NNP Mount) (NNP Olympus) (NNP National) (NNP Monument))
+        (PP (IN on)
+          (NP (CD 2))))
+      (NP-TMP (NNP March) (CD 1909)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	President
+			name:	TITLE				0-0	President 
+	1	Theodore
+			name:	PERSON				1-2	Theodore Roosevelt 
+	2	Roosevelt
+	3	originally
+			sense:	primitively.r.01
+	4	designated
+			sense:	designate.v.01
+			prop:	designate.01
+			V		4-4	designated 
+			N-ARG-A0		0-2	President Theodore Roosevelt 
+			N-ARGM-TMP		3-3	originally 
+			N-ARG-A1		5-8	Mount Olympus National Monument 
+			N-ARGM-TMP		9-12	on 2 March 1909 
+	5	Mount
+			coref:	IDENT			2	5-8	Mount Olympus National Monument 
+			name:	LOCATION				5-8	Mount Olympus National Monument 
+	6	Olympus
+	7	National
+	8	Monument
+	9	on
+	10	2
+			name:	DATE				10-12	2 March 1909 
+	11	March
+	12	1909
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The monument was redesignated as a national park by Congress and President Franklin Roosevelt on June 29 , 1938 .
+
+
+Treebanked sentence:
+--------------------
+The monument was redesignated as a national park by Congress and President Franklin Roosevelt on June 29 , 1938 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN monument))
+    (VP (VBD was)
+      (VP (VBN redesignated)
+        (PP (IN as)
+          (NP
+            (NP
+              (NP (DT a) (JJ national) (NN park))
+              (PP (IN by)
+                (NP (NNP Congress))))
+            (CC and)
+            (NP
+              (NP (NNP President) (NNP Franklin) (NNP Roosevelt))
+              (PP (IN on)
+                (NP (NNP June) (CD 29) (, ,) (CD 1938))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-1	The monument 
+	1	monument
+			sense:	monument.n.02
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	redesignated
+			prop:	designate.01
+			V		3-3	redesignated 
+			N-ARG-A1		0-1	The monument 
+			N-ARG-A2		4-7	as a national park 
+			N-ARG-A0		8-13	by Congress and President Franklin Roosevelt 
+			N-ARGM-TMP		14-18	on June 29 , 1938 
+	4	as
+	5	a
+	6	national
+			sense:	national.s.04
+	7	park
+			sense:	park.n.01
+	8	by
+	9	Congress
+			coref:	IDENT			1	9-9	Congress 
+			name:	ORGANIZATION				9-9	Congress 
+	10	and
+	11	President
+			name:	TITLE				11-11	President 
+	12	Franklin
+			name:	PERSON				12-13	Franklin Roosevelt 
+	13	Roosevelt
+	14	on
+	15	June
+			name:	DATE				15-18	June 29 , 1938 
+	16	29
+	17	,
+	18	1938
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1976 , Olympic National Park was designated by UNESCO as an International Biosphere Reserve , and in 1981 as a World Heritage Site .
+
+
+Treebanked sentence:
+--------------------
+In 1976 , Olympic National Park was designated by UNESCO as an International Biosphere Reserve , and in 1981 as a World Heritage Site . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1976)))
+    (, ,)
+    (NP (NNP Olympic) (NNP National) (NNP Park))
+    (VP (VBD was)
+      (VP (VBN designated)
+        (PP (IN by)
+          (NP (NNP UNESCO)))
+        (PP
+          (PP (IN as)
+            (NP (DT an) (NNP International) (NNP Biosphere) (NNP Reserve)))
+          (, ,)
+          (CC and)
+          (PP (IN in)
+            (NP
+              (NP (CD 1981))
+              (PP (IN as)
+                (NP (DT a)
+                  (NML (NNP World) (NNP Heritage) (NNP Site)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1976
+			name:	DATE				1-1	1976 
+	2	,
+	3	Olympic
+			coref:	IDENT			0	3-5	Olympic National Park 
+			name:	LOCATION				3-5	Olympic National Park 
+	4	National
+	5	Park
+	6	was
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	was 
+	7	designated
+			sense:	designate.v.01
+			prop:	designate.01
+			V		7-7	designated 
+			N-ARGM-TMP		0-1	In 1976 
+			N-ARG-A1		3-5	Olympic National Park 
+			N-ARG-A0		8-9	by UNESCO 
+			N-ARG-A2		10-14	as an International Biosphere Reserve 
+	8	by
+	9	UNESCO
+			name:	ORGANIZATION				9-9	UNESCO 
+	10	as
+	11	an
+	12	International
+			name:	ORGANIZATION				12-14	International Biosphere Reserve 
+	13	Biosphere
+	14	Reserve
+	15	,
+	16	and
+	17	in
+	18	1981
+			name:	DATE				18-18	1981 
+	19	as
+	20	a
+	21	World
+	22	Heritage
+	23	Site
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1988 , Congress designated 95 percent of the park as the Olympic Wilderness .
+
+
+Treebanked sentence:
+--------------------
+In 1988 , Congress designated 95 percent of the park as the Olympic Wilderness . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1988)))
+    (, ,)
+    (NP (NNP Congress))
+    (VP (VBD designated)
+      (NP
+        (NP (CD 95) (NN percent))
+        (PP (IN of)
+          (NP (DT the) (NN park))))
+      (PP (IN as)
+        (NP (DT the) (JJ Olympic) (NN Wilderness))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1988
+			name:	DATE				1-1	1988 
+	2	,
+	3	Congress
+			coref:	IDENT			1	3-3	Congress 
+			name:	ORGANIZATION				3-3	Congress 
+	4	designated
+			sense:	designate.v.01
+			prop:	designate.01
+			V		4-4	designated 
+			N-ARGM-TMP		0-1	In 1988 
+			N-ARG-A0		3-3	Congress 
+			N-ARG-A1		5-9	95 percent of the park 
+			N-ARG-A2		10-13	as the Olympic Wilderness 
+	5	95
+			name:	PERCENT				5-6	95 percent 
+	6	percent
+			sense:	percentage.n.01
+	7	of
+	8	the
+			coref:	IDENT			0	8-9	the park 
+	9	park
+			sense:	park.n.01
+	10	as
+	11	the
+	12	Olympic
+			name:	MISC				12-13	Olympic Wilderness 
+	13	Wilderness
+			sense:	wilderness.n.03
+	14	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-2	Olympic National Park 
+				1.0-1	The park 
+				2.1-2	the park 
+				5.3-5	Olympic National Park 
+				6.8-9	the park 
+	Chain 1 (IDENT)
+				4.9-9	Congress 
+				6.3-3	Congress 
+	Chain 2 (IDENT)
+				3.5-8	Mount Olympus National Monument 
+				4.0-1	The monument 
+

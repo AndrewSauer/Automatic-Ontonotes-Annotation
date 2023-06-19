@@ -1,0 +1,564 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Dirk Van Tichelt ( born 10 June 1984 ) is a Belgian judoka .
+
+
+Treebanked sentence:
+--------------------
+Dirk Van Tichelt ( born 10 June 1984 ) is a Belgian judoka . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Dirk) (NNP Van) (NNP Tichelt))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 10))
+        (NP-TMP (NNP June) (CD 1984)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (JJ Belgian) (NNS judoka)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Dirk
+			name:	PERSON				0-2	Dirk Van Tichelt 
+	1	Van
+	2	Tichelt
+	3	(
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-2	Dirk Van Tichelt 
+			N-ARGM-TMP		5-7	10 June 1984 
+	5	10
+			name:	DATE				5-7	10 June 1984 
+	6	June
+	7	1984
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	Dirk Van Tichelt ( born 10 June 1984 ) 
+			N-ARG-A2		10-12	a Belgian judoka 
+	10	a
+	11	Belgian
+			name:	NATIONALITY				11-11	Belgian 
+	12	judoka
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His biggest achievement was his European title in Lisbon .
+
+
+Treebanked sentence:
+--------------------
+His biggest achievement was his European title in Lisbon . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His) (JJS biggest) (NN achievement))
+    (VP (VBD was)
+      (NP
+        (NP (PRP$ his) (JJ European) (NN title))
+        (PP (IN in)
+          (NP (NNP Lisbon)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+	1	biggest
+			sense:	big.s.02
+	2	achievement
+			sense:	accomplishment.n.01
+	3	was
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	was 
+			N-ARG-A1		0-2	His biggest achievement 
+			N-ARG-A2		4-8	his European title in Lisbon 
+	4	his
+	5	European
+			name:	NATIONALITY				5-5	European 
+	6	title
+			sense:	championship.n.01
+	7	in
+	8	Lisbon
+			name:	CITY				8-8	Lisbon 
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the same year , at the Beijing Olympics he came fifth after losing in the first round to gold - medallist Elnur Mammadli and later losing in the bronze medal match to Rasul Boqiev .
+
+
+Treebanked sentence:
+--------------------
+In the same year , at the Beijing Olympics he came fifth after losing in the first round to gold - medallist Elnur Mammadli and later losing in the bronze medal match to Rasul Boqiev . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (JJ same) (NN year)))
+    (, ,)
+    (PP (IN at)
+      (NP (DT the) (NNP Beijing) (NNPS Olympics)))
+    (NP (PRP he))
+    (VP (VBD came)
+      (ADVP (RB fifth))
+      (PP (IN after)
+        (S
+          (VP
+            (VP (VBG losing)
+              (PP (IN in)
+                (NP (DT the) (JJ first) (NN round)))
+              (PP (IN to)
+                (NP
+                  (NML (NN gold) (HYPH -) (NN medallist))
+                  (NNP Elnur) (NNP Mammadli))))
+            (CC and)
+            (ADVP (RB later))
+            (VP (VBG losing)
+              (PP (IN in)
+                (NP (DT the) (NN bronze) (NN medal) (NN match)))
+              (PP (IN to)
+                (NP (NNP Rasul) (NNP Boqiev))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+			name:	DATE				1-3	the same year 
+	2	same
+			sense:	same.a.01
+	3	year
+			sense:	year.n.01
+	4	,
+	5	at
+	6	the
+	7	Beijing
+			name:	CITY				7-7	Beijing 
+	8	Olympics
+			name:	MISC				8-8	Olympics 
+	9	he
+	10	came
+			sense:	come.v.04
+			prop:	come.01
+			V		10-10	came 
+			N-ARGM-TMP		0-3	In the same year 
+			N-ARGM-LOC		5-8	at the Beijing Olympics 
+			N-ARG-A1		9-9	he 
+			N-ARG-A2		11-11	fifth 
+			N-ARGM-TMP		12-34	after losing in the first round to gold - medallist Elnur Mammadli and later losing in the bronze medal match to Rasul Boqiev 
+	11	fifth
+			name:	ORDINAL				11-11	fifth 
+	12	after
+	13	losing
+			sense:	lose.v.02
+			prop:	lose.03
+			V		13-13	losing 
+			N-ARG-A0		9-9	he 
+			N-ARGM-LOC		14-17	in the first round 
+			N-ARG-A2		18-23	to gold - medallist Elnur Mammadli 
+	14	in
+	15	the
+	16	first
+			name:	ORDINAL				16-16	first 
+			sense:	first.s.02
+	17	round
+			sense:	turn.n.09
+	18	to
+	19	gold
+			sense:	gold.n.01
+	20	-
+	21	medallist
+			sense:	medalist.n.01
+	22	Elnur
+			name:	PERSON				22-23	Elnur Mammadli 
+	23	Mammadli
+	24	and
+	25	later
+			sense:	subsequently.r.01
+	26	losing
+			sense:	lose.v.02
+			prop:	lose.03
+			V		26-26	losing 
+			N-ARG-A0		9-9	he 
+			N-ARGM-TMP		25-25	later 
+			N-ARGM-LOC		27-31	in the bronze medal match 
+			N-ARG-A2		32-34	to Rasul Boqiev 
+	27	in
+	28	the
+			coref:	IDENT			1	28-31	the bronze medal match 
+	29	bronze
+			sense:	bronze.n.01
+	30	medal
+			sense:	decoration.n.02
+	31	match
+			sense:	match.n.02
+	32	to
+	33	Rasul
+			name:	PERSON				33-34	Rasul Boqiev 
+	34	Boqiev
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the 2009 World Championships , he reached the semi - finals but there he lost to Kim Chol - Su .
+
+
+Treebanked sentence:
+--------------------
+At the 2009 World Championships , he reached the semi - finals but there he lost to Kim Chol - Su . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN At)
+        (NP (DT the) (CD 2009) (NNP World) (NNPS Championships)))
+      (, ,)
+      (NP (PRP he))
+      (VP (VBD reached)
+        (NP (DT the) (NN semi) (HYPH -) (NNS finals))))
+    (CC but)
+    (S
+      (ADVP (RB there))
+      (NP (PRP he))
+      (VP (VBD lost)
+        (PP (IN to)
+          (NP (NNP Kim) (NNP Chol) (HYPH -) (NNP Su)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+	2	2009
+			name:	DATE				2-2	2009 
+	3	World
+			name:	MISC				3-4	World Championships 
+	4	Championships
+	5	,
+	6	he
+	7	reached
+			sense:	reach.v.02
+			prop:	reach.01
+			V		7-7	reached 
+			N-ARGM-LOC		0-4	At the 2009 World Championships 
+			N-ARG-A0		6-6	he 
+			N-ARG-A1		8-11	the semi - finals 
+	8	the
+	9	semi
+			sense:	semifinal.n.01
+	10	-
+	11	finals
+			sense:	final.n.01
+	12	but
+	13	there
+			sense:	there.r.01
+	14	he
+	15	lost
+			sense:	lose.v.02
+			prop:	lose.03
+			V		15-15	lost 
+			N-ARGM-LOC		13-13	there 
+			N-ARG-A0		14-14	he 
+			N-ARG-A2		16-20	to Kim Chol - Su 
+	16	to
+	17	Kim
+			name:	PERSON				17-20	Kim Chol - Su 
+	18	Chol
+	19	-
+	20	Su
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the bronze medal match he beat Sezer Huysuz to take his first bronze medal at a world championships .
+
+
+Treebanked sentence:
+--------------------
+In the bronze medal match he beat Sezer Huysuz to take his first bronze medal at a world championships . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NN bronze) (NN medal) (NN match)))
+    (NP (PRP he))
+    (VP (VBD beat)
+      (NP (NNP Sezer) (NNP Huysuz))
+      (S
+        (VP (TO to)
+          (VP (VB take)
+            (NP (PRP$ his) (JJ first) (NN bronze) (NN medal))
+            (PP (IN at)
+              (NP (DT a) (NN world) (NNS championships)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+			coref:	IDENT			1	1-4	the bronze medal match 
+	2	bronze
+			sense:	bronze.n.01
+	3	medal
+			sense:	decoration.n.02
+	4	match
+			sense:	match.n.02
+	5	he
+	6	beat
+			sense:	beat.v.01
+			prop:	beat.03
+			V		6-6	beat 
+			N-ARGM-LOC		0-4	In the bronze medal match 
+			N-ARG-A0		5-5	he 
+			N-ARG-A1		7-8	Sezer Huysuz 
+			N-ARGM-PRP		9-18	to take his first bronze medal at a world championships 
+	7	Sezer
+			name:	PERSON				7-8	Sezer Huysuz 
+	8	Huysuz
+	9	to
+	10	take
+			sense:	take.v.41
+			prop:	take.01
+			V		10-10	take 
+			N-ARG-A0		5-5	he 
+			N-ARG-A1		11-18	his first bronze medal at a world championships 
+	11	his
+			coref:	IDENT			2	11-14	his first bronze medal 
+	12	first
+			name:	ORDINAL				12-12	first 
+			sense:	first.a.01
+	13	bronze
+			sense:	bronze.n.01
+	14	medal
+			sense:	decoration.n.02
+	15	at
+	16	a
+	17	world
+			sense:	earth.n.01
+	18	championships
+			sense:	championship.n.02
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the 2013 World Championships , he again won bronze , losing to eventual champion Shohei Ono in the semi - final and beating Dastan Ykybayev in his bronze medal match .
+
+
+Treebanked sentence:
+--------------------
+At the 2013 World Championships , he again won bronze , losing to eventual champion Shohei Ono in the semi - final and beating Dastan Ykybayev in his bronze medal match . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (DT the) (CD 2013) (NNP World) (NNPS Championships)))
+    (, ,)
+    (NP (PRP he))
+    (ADVP (RB again))
+    (VP (VBD won)
+      (NP (NN bronze))
+      (, ,)
+      (S
+        (VP
+          (VP (VBG losing)
+            (PP (IN to)
+              (NP (JJ eventual) (NN champion) (NNP Shohei) (NNP Ono)))
+            (PP (IN in)
+              (NP (DT the) (NN semi) (HYPH -) (JJ final))))
+          (CC and)
+          (VP (VBG beating)
+            (NP
+              (NP (NNP Dastan) (NNP Ykybayev))
+              (PP (IN in)
+                (NP (PRP$ his) (NN bronze) (NN medal) (NN match))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+	2	2013
+			name:	DATE				2-2	2013 
+	3	World
+			name:	MISC				3-4	World Championships 
+	4	Championships
+	5	,
+	6	he
+	7	again
+			sense:	again.r.01
+	8	won
+			sense:	win.v.01
+			prop:	win.01
+			V		8-8	won 
+			N-ARGM-LOC		0-4	At the 2013 World Championships 
+			N-ARG-A0		6-6	he 
+			N-ARGM-TMP		7-7	again 
+			N-ARG-A1		9-9	bronze 
+			N-ARGM-ADV		11-30	losing to eventual champion Shohei Ono in the semi - final and beating Dastan Ykybayev in his bronze medal match 
+	9	bronze
+			sense:	bronze.n.01
+	10	,
+	11	losing
+			sense:	lose.v.02
+			prop:	lose.03
+			V		11-11	losing 
+			N-ARG-A0		6-6	he 
+			N-ARG-A2		12-16	to eventual champion Shohei Ono 
+			N-ARGM-LOC		17-21	in the semi - final 
+	12	to
+	13	eventual
+			sense:	eventual.s.01
+	14	champion
+			sense:	champion.n.01
+	15	Shohei
+			name:	PERSON				15-16	Shohei Ono 
+	16	Ono
+	17	in
+	18	the
+	19	semi
+			sense:	semifinal.n.01
+	20	-
+	21	final
+			sense:	final.s.02
+	22	and
+	23	beating
+			sense:	beat.v.01
+			prop:	beat.03
+			V		23-23	beating 
+			N-ARG-A0		6-6	he 
+			N-ARG-A1		24-25	Dastan Ykybayev 
+			N-ARG-A2		26-30	in his bronze medal match 
+	24	Dastan
+			coref:	IDENT			0	24-25	Dastan Ykybayev 
+			name:	PERSON				24-25	Dastan Ykybayev 
+	25	Ykybayev
+	26	in
+	27	his
+			coref:	IDENT			0	27-27	his 
+	28	bronze
+			sense:	bronze.n.01
+	29	medal
+			sense:	decoration.n.02
+	30	match
+			sense:	match.n.02
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the 2016 Summer Olympics , Van Tichelt won the bronze medal against Miklos Ungvari .
+
+
+Treebanked sentence:
+--------------------
+In the 2016 Summer Olympics , Van Tichelt won the bronze medal against Miklos Ungvari . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (CD 2016) (NNP Summer) (NNPS Olympics)))
+    (, ,)
+    (NP (NNP Van) (NNP Tichelt))
+    (VP (VBD won)
+      (NP (DT the) (NN bronze) (NN medal))
+      (PP (IN against)
+        (NP (NNP Miklos) (NNP Ungvari))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+			name:	DATE				1-3	the 2016 Summer 
+	2	2016
+	3	Summer
+	4	Olympics
+			name:	MISC				4-4	Olympics 
+	5	,
+	6	Van
+			name:	PERSON				6-7	Van Tichelt 
+	7	Tichelt
+	8	won
+			sense:	win.v.01
+			prop:	win.01
+			V		8-8	won 
+			N-ARGM-LOC		0-4	In the 2016 Summer Olympics 
+			N-ARG-A0		6-7	Van Tichelt 
+			N-ARG-A1		9-11	the bronze medal 
+	9	the
+			coref:	IDENT			2	9-11	the bronze medal 
+	10	bronze
+			sense:	bronze.n.01
+	11	medal
+			sense:	decoration.n.02
+	12	against
+	13	Miklos
+			name:	PERSON				13-14	Miklos Ungvari 
+	14	Ungvari
+	15	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.24-25	Dastan Ykybayev 
+				5.27-27	his 
+	Chain 1 (IDENT)
+				2.28-31	the bronze medal match 
+				4.1-4	the bronze medal match 
+	Chain 2 (IDENT)
+				4.11-14	his first bronze medal 
+				6.9-11	the bronze medal 
+

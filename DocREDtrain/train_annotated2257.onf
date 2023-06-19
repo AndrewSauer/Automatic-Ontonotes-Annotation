@@ -1,0 +1,827 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Paul H. Crane is an American obstetrician and gynecologist .
+
+
+Treebanked sentence:
+--------------------
+Paul H. Crane is an American obstetrician and gynecologist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Paul) (NNP H.) (NNP Crane))
+    (VP (VBZ is)
+      (NP (DT an) (JJ American) (NN obstetrician)
+        (CC and)
+        (NN gynecologist)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Paul
+			coref:	IDENT			3	0-2	Paul H. Crane 
+			name:	PERSON				0-2	Paul H. Crane 
+	1	H.
+	2	Crane
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Paul H. Crane 
+			N-ARG-A2		4-8	an American obstetrician and gynecologist 
+	4	an
+	5	American
+			name:	NATIONALITY				5-5	American 
+	6	obstetrician
+			name:	TITLE				6-6	obstetrician 
+			sense:	obstetrician.n.01
+	7	and
+	8	gynecologist
+			name:	TITLE				8-8	gynecologist 
+			sense:	gynecologist.n.01
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The location of his practice in the Beverly Hills area of Los Angeles has caused him to feature in numerous television programmes performing procedures at the request of patients who are prominent figures in the entertainment industry .
+
+
+Treebanked sentence:
+--------------------
+The location of his practice in the Beverly Hills area of Los Angeles has caused him to feature in numerous television programmes performing procedures at the request of patients who are prominent figures in the entertainment industry . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN location))
+      (PP (IN of)
+        (NP
+          (NP (PRP$ his) (NN practice))
+          (PP (IN in)
+            (NP
+              (NP (DT the)
+                (NML (NNP Beverly) (NNP Hills))
+                (NN area))
+              (PP (IN of)
+                (NP (NNP Los) (NNP Angeles))))))))
+    (VP (VBZ has)
+      (VP (VBN caused)
+        (NP (PRP him))
+        (S
+          (VP (TO to)
+            (VP (VB feature)
+              (PP (IN in)
+                (NP
+                  (NP (JJ numerous) (NN television) (NNS programmes))
+                  (VP (VBG performing)
+                    (NP (NNS procedures))
+                    (PP (IN at)
+                      (NP
+                        (NP (DT the) (NN request))
+                        (PP (IN of)
+                          (NP
+                            (NP (NNS patients))
+                            (SBAR
+                              (WHNP (WP who))
+                              (S
+                                (VP (VBP are)
+                                  (NP
+                                    (NP (JJ prominent) (NNS figures))
+                                    (PP (IN in)
+                                      (NP (DT the) (NN entertainment) (NN industry)))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	location
+			sense:	location.n.01
+	2	of
+	3	his
+			coref:	IDENT			3	3-3	his 
+	4	practice
+			sense:	practice.n.04
+	5	in
+	6	the
+	7	Beverly
+			name:	CITY				7-8	Beverly Hills 
+	8	Hills
+	9	area
+			sense:	area.n.01
+	10	of
+	11	Los
+			coref:	IDENT			1	11-12	Los Angeles 
+			name:	CITY				11-12	Los Angeles 
+	12	Angeles
+	13	has
+			sense:	get.v.03
+			prop:	have.01
+			V		13-13	has 
+	14	caused
+			sense:	cause.v.01
+			prop:	cause.01
+			V		14-14	caused 
+			N-ARG-A0		0-12	The location of his practice in the Beverly Hills area of Los Angeles 
+			N-ARG-A1		15-36	him to feature in numerous television programmes performing procedures at the request of patients who are prominent figures in the entertainment industry 
+	15	him
+			coref:	IDENT			3	15-15	him 
+	16	to
+	17	feature
+			sense:	have.v.02
+			prop:	feature.01
+			V		17-17	feature 
+			N-ARG-A0		15-15	him 
+			N-ARG-A2		18-21	in numerous television programmes 
+			N-ARGM-ADV		22-36	performing procedures at the request of patients who are prominent figures in the entertainment industry 
+	18	in
+	19	numerous
+			sense:	numerous.s.01
+	20	television
+			sense:	television.n.01
+	21	programmes
+			sense:	broadcast.n.02
+	22	performing
+			sense:	perform.v.02
+			prop:	perform.01
+			V		22-22	performing 
+			N-ARG-A0		15-15	him 
+			N-ARG-A1		23-23	procedures 
+			N-ARGM-CAU		24-36	at the request of patients who are prominent figures in the entertainment industry 
+	23	procedures
+			sense:	operation.n.07
+	24	at
+	25	the
+	26	request
+			sense:	request.n.02
+	27	of
+	28	patients
+			sense:	patient.n.01
+	29	who
+	30	are
+			sense:	be.v.01
+			prop:	be.01
+			V		30-30	are 
+			N-ARG-A1		28-28	patients 
+			R-ARG-A1		29-29	who 
+			N-ARG-A2		31-36	prominent figures in the entertainment industry 
+	31	prominent
+			sense:	big.s.05
+	32	figures
+			sense:	name.n.04
+	33	in
+	34	the
+			coref:	IDENT			0	34-36	the entertainment industry 
+	35	entertainment
+			sense:	entertainment.n.01
+	36	industry
+			sense:	industry.n.01
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Crane is considered the entertainment industry 's favorite doctor for obstetrics .
+
+
+Treebanked sentence:
+--------------------
+Crane is considered the entertainment industry 's favorite doctor for obstetrics . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Crane))
+    (VP (VBZ is)
+      (VP (VBN considered)
+        (NP
+          (NP
+            (NP (DT the) (NN entertainment) (NN industry) (POS 's))
+            (JJ favorite) (NN doctor))
+          (PP (IN for)
+            (NP (NNS obstetrics))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Crane
+			coref:	IDENT			3	0-0	Crane 
+			name:	PERSON				0-0	Crane 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	considered
+			sense:	see.v.05
+			prop:	consider.01
+			V		2-2	considered 
+			N-ARG-A1		3-10	the entertainment industry 's favorite doctor for obstetrics 
+	3	the
+			coref:	IDENT			0	3-6	the entertainment industry 's 
+	4	entertainment
+			sense:	entertainment.n.01
+	5	industry
+			sense:	industry.n.01
+	6	's
+	7	favorite
+			sense:	favored.s.01
+	8	doctor
+			name:	TITLE				8-8	doctor 
+			sense:	doctor.n.01
+	9	for
+	10	obstetrics
+			sense:	obstetrics.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Crane has provided information on parenting , advances in delivery practices , pregnancy diets and natural births .
+
+
+Treebanked sentence:
+--------------------
+Crane has provided information on parenting , advances in delivery practices , pregnancy diets and natural births . 
+
+Tree:
+-----
+(ROOT
+  (SINV
+    (S
+      (NP (NNP Crane))
+      (VP (VBZ has)
+        (VP (VBN provided)
+          (NP (NN information))
+          (PP (IN on)
+            (NP (NN parenting))))))
+    (, ,)
+    (VP (VBZ advances)
+      (PP (IN in)
+        (NP (NN delivery))))
+    (NP
+      (NP (NNS practices))
+      (, ,)
+      (NP
+        (NP (NN pregnancy) (NNS diets))
+        (CC and)
+        (NP (JJ natural) (NNS births))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Crane
+			coref:	IDENT			3	0-0	Crane 
+			name:	PERSON				0-0	Crane 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	provided
+			sense:	supply.v.01
+			prop:	provide.01
+			V		2-2	provided 
+			N-ARG-A0		0-0	Crane 
+			N-ARG-A1		3-16	information on parenting , advances in delivery practices , pregnancy diets and natural births 
+	3	information
+			sense:	information.n.02
+	4	on
+	5	parenting
+	6	,
+	7	advances
+			sense:	progress.v.01
+			prop:	advance.01
+			V		7-7	advances 
+			N-ARG-A1		8-16	in delivery practices , pregnancy diets and natural births 
+	8	in
+	9	delivery
+			sense:	delivery.n.02
+	10	practices
+			sense:	practice.n.01
+	11	,
+	12	pregnancy
+			sense:	pregnancy.n.01
+	13	diets
+			sense:	diet.n.01
+	14	and
+	15	natural
+			sense:	natural.a.01
+	16	births
+			sense:	parturition.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Crane is also shown on E !
+
+
+Treebanked sentence:
+--------------------
+Crane is also shown on E ! 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Crane))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (VP (VBN shown)
+        (PP (IN on)
+          (NP (NN E)))))
+    (. !)))
+
+
+Leaves:
+-------
+	0	Crane
+			coref:	IDENT			3	0-0	Crane 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	also
+			sense:	besides.r.02
+	3	shown
+			sense:	show.v.01
+			prop:	show.01
+			V		3-3	shown 
+			N-ARG-A1		0-0	Crane 
+			N-ARGM-DIS		2-2	also 
+			N-ARGM-LOC		4-5	on E 
+	4	on
+	5	E
+			sense:	east.n.01
+	6	!
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Entertainment Television 's Keeping Up with the Kardashians providing a sonogram to determine the sex of patient Kim Kardashian 's child .
+
+
+Treebanked sentence:
+--------------------
+Entertainment Television 's Keeping Up with the Kardashians providing a sonogram to determine the sex of patient Kim Kardashian 's child . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NNP Entertainment) (NNP Television) (POS 's))
+      (VP (VBG Keeping)
+        (PRT (RP Up))
+        (PP (IN with)
+          (NP (DT the) (NNPS Kardashians)))))
+    (S
+      (VP (VBG providing)
+        (NP (DT a) (NN sonogram))
+        (S
+          (VP (TO to)
+            (VP (VB determine)
+              (NP
+                (NP (DT the) (NN sex))
+                (PP (IN of)
+                  (NP
+                    (NP (JJ patient) (NNP Kim) (NNP Kardashian) (POS 's))
+                    (NN child)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Entertainment
+			name:	ORGANIZATION				0-1	Entertainment Television 
+	1	Television
+	2	's
+	3	Keeping
+			sense:	keep.v.01
+			prop:	keep.05
+			V		3-3	Keeping 
+			N-ARG-A0		0-2	Entertainment Television 's 
+			N-ARG-A1		5-7	with the Kardashians 
+	4	Up
+	5	with
+	6	the
+	7	Kardashians
+			name:	ORGANIZATION				7-7	Kardashians 
+	8	providing
+			sense:	supply.v.01
+			prop:	provide.01
+			V		8-8	providing 
+			N-ARG-A0		0-7	Entertainment Television 's Keeping Up with the Kardashians 
+			N-ARG-A1		9-10	a sonogram 
+			N-ARGM-PRP		11-20	to determine the sex of patient Kim Kardashian 's child 
+	9	a
+	10	sonogram
+			sense:	sonogram.n.01
+	11	to
+	12	determine
+			sense:	determine.v.01
+			prop:	determine.01
+			V		12-12	determine 
+			N-ARG-A1		13-20	the sex of patient Kim Kardashian 's child 
+	13	the
+	14	sex
+			sense:	sex.n.02
+	15	of
+	16	patient
+			sense:	patient.a.01
+	17	Kim
+			coref:	IDENT			2	17-19	Kim Kardashian 's 
+			name:	PERSON				17-18	Kim Kardashian 
+	18	Kardashian
+	19	's
+	20	child
+			sense:	child.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is shown in another episode delivering the baby of Kourtney Kardashian .
+
+
+Treebanked sentence:
+--------------------
+He is shown in another episode delivering the baby of Kourtney Kardashian . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (VP (VBN shown)
+        (PP (IN in)
+          (NP
+            (NP (DT another) (NN episode))
+            (VP (VBG delivering)
+              (NP
+                (NP (DT the) (NN baby))
+                (PP (IN of)
+                  (NP (NNP Kourtney) (NNP Kardashian)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	shown
+			sense:	show.v.01
+			prop:	show.01
+			V		2-2	shown 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-5	in another episode 
+			C-ARG-A1		6-11	delivering the baby of Kourtney Kardashian 
+	3	in
+	4	another
+	5	episode
+			sense:	episode.n.03
+	6	delivering
+			sense:	give_birth.v.01
+			prop:	deliver.101
+			V		6-6	delivering 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		7-11	the baby of Kourtney Kardashian 
+	7	the
+	8	baby
+			sense:	baby.n.01
+	9	of
+	10	Kourtney
+			name:	PERSON				10-11	Kourtney Kardashian 
+	11	Kardashian
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Kris Jenner has also revealed that he is her doctor .
+
+
+Treebanked sentence:
+--------------------
+Kris Jenner has also revealed that he is her doctor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Kris) (NNP Jenner))
+    (VP (VBZ has)
+      (ADVP (RB also))
+      (VP (VBN revealed)
+        (SBAR (IN that)
+          (S
+            (NP (PRP he))
+            (VP (VBZ is)
+              (NP (PRP$ her) (NN doctor)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Kris
+			coref:	IDENT			2	0-1	Kris Jenner 
+			name:	PERSON				0-1	Kris Jenner 
+	1	Jenner
+	2	has
+			sense:	have.v.01
+			prop:	have.01
+			V		2-2	has 
+	3	also
+			sense:	besides.r.02
+	4	revealed
+			sense:	unwrap.v.02
+			prop:	reveal.01
+			V		4-4	revealed 
+			N-ARG-A0		0-1	Kris Jenner 
+			N-ARGM-ADV		3-3	also 
+			N-ARG-A1		5-9	that he is her doctor 
+	5	that
+	6	he
+			coref:	IDENT			2	6-6	he 
+	7	is
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		6-6	he 
+			N-ARG-A2		8-9	her doctor 
+	8	her
+	9	doctor
+			name:	TITLE				9-9	doctor 
+			sense:	doctor.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Crane was voted Castle Connoly 's Top Regional Doctor in 2014 .
+
+
+Treebanked sentence:
+--------------------
+Crane was voted Castle Connoly 's Top Regional Doctor in 2014 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Crane))
+    (VP (VBD was)
+      (VP (VBN voted)
+        (NP
+          (NP
+            (NP (NNP Castle) (NNP Connoly) (POS 's))
+            (NNP Top) (NNP Regional) (NNP Doctor))
+          (PP (IN in)
+            (NP (CD 2014))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Crane
+			coref:	IDENT			3	0-0	Crane 
+			name:	PERSON				0-0	Crane 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	voted
+			sense:	vote.v.02
+			prop:	vote.01
+			V		2-2	voted 
+			N-ARG-A1		0-0	Crane 
+			N-ARGM-TMP		9-10	in 2014 
+	3	Castle
+			name:	PERSON				3-4	Castle Connoly 
+	4	Connoly
+	5	's
+	6	Top
+	7	Regional
+	8	Doctor
+			name:	TITLE				8-8	Doctor 
+	9	in
+	10	2014
+			name:	DATE				10-10	2014 
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also received a Lifetime Achievement Award from the Doulas Association of Southern California .
+
+
+Treebanked sentence:
+--------------------
+He also received a Lifetime Achievement Award from the Doulas Association of Southern California . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD received)
+      (NP (DT a) (NN Lifetime) (NN Achievement) (NN Award))
+      (PP (IN from)
+        (NP
+          (NP (DT the) (NNP Doulas) (NNP Association))
+          (PP (IN of)
+            (NP (NNP Southern) (NNP California))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	also
+			sense:	besides.r.02
+	2	received
+			sense:	receive.v.01
+			prop:	receive.01
+			V		2-2	received 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-6	a Lifetime Achievement Award 
+			N-ARG-A2		7-13	from the Doulas Association of Southern California 
+	3	a
+	4	Lifetime
+			sense:	life.n.05
+	5	Achievement
+			sense:	accomplishment.n.01
+	6	Award
+			sense:	award.n.02
+	7	from
+	8	the
+	9	Doulas
+			name:	ORGANIZATION				9-13	Doulas Association of Southern California 
+	10	Association
+	11	of
+	12	Southern
+	13	California
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is an adviser to El Nido Family Centres , a non - profit agency providing counseling and family support services to disadvantaged communities in Los Angeles .
+
+
+Treebanked sentence:
+--------------------
+He is an adviser to El Nido Family Centres , a non - profit agency providing counseling and family support services to disadvantaged communities in Los Angeles . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN adviser))
+        (PP (IN to)
+          (NP
+            (NP (NNP El) (NNP Nido) (NNP Family) (NNPS Centres))
+            (, ,)
+            (NP
+              (NP (DT a)
+                (NML
+                  (NML (FW non))
+                  (HYPH -) (NN profit))
+                (NN agency))
+              (VP (VBG providing)
+                (NP
+                  (NML (NN counseling)
+                    (CC and)
+                    (NN family))
+                  (NN support) (NNS services))
+                (PP (IN to)
+                  (NP
+                    (NP (JJ disadvantaged) (NNS communities))
+                    (PP (IN in)
+                      (NP (NNP Los) (NNP Angeles)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-26	an adviser to El Nido Family Centres , a non - profit agency providing counseling and family support services to disadvantaged communities in Los Angeles 
+	2	an
+	3	adviser
+			sense:	adviser.n.01
+	4	to
+	5	El
+			name:	ORGANIZATION				5-8	El Nido Family Centres 
+	6	Nido
+	7	Family
+	8	Centres
+	9	,
+	10	a
+	11	non
+	12	-
+	13	profit
+			sense:	net_income.n.01
+	14	agency
+			sense:	agency.n.02
+	15	providing
+			sense:	supply.v.01
+			prop:	provide.01
+			V		15-15	providing 
+			N-ARG-A0		10-14	a non - profit agency 
+			N-ARG-A1		16-20	counseling and family support services 
+			N-ARG-A2		21-26	to disadvantaged communities in Los Angeles 
+	16	counseling
+			sense:	guidance.n.01
+	17	and
+	18	family
+			sense:	family.n.01
+	19	support
+			sense:	support.n.03
+	20	services
+			sense:	service.n.01
+	21	to
+	22	disadvantaged
+			sense:	deprived.s.01
+	23	communities
+			sense:	community.n.01
+	24	in
+	25	Los
+			coref:	IDENT			1	25-26	Los Angeles 
+			name:	CITY				25-26	Los Angeles 
+	26	Angeles
+	27	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.3-6	the entertainment industry 's 
+				1.34-36	the entertainment industry 
+	Chain 1 (IDENT)
+				1.11-12	Los Angeles 
+				10.25-26	Los Angeles 
+	Chain 2 (IDENT)
+				5.17-19	Kim Kardashian 's 
+				6.0-0	He 
+				7.0-1	Kris Jenner 
+				7.6-6	he 
+				9.0-0	He 
+				10.0-0	He 
+	Chain 3 (IDENT)
+				0.0-2	Paul H. Crane 
+				1.3-3	his 
+				1.15-15	him 
+				2.0-0	Crane 
+				3.0-0	Crane 
+				4.0-0	Crane 
+				8.0-0	Crane 
+

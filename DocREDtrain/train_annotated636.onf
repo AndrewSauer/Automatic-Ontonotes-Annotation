@@ -1,0 +1,682 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Livia Bitton - Jackson ( born February 28 , 1931 ) is an author and a Holocaust survivor .
+
+
+Treebanked sentence:
+--------------------
+Livia Bitton - Jackson ( born February 28 , 1931 ) is an author and a Holocaust survivor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Livia) (NNP Bitton) (HYPH -) (NNP Jackson))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP February) (CD 28) (, ,) (CD 1931)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN author))
+        (CC and)
+        (NP (DT a) (NNP Holocaust) (NN survivor))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Livia
+			name:	PERSON				0-1	Livia Bitton 
+	1	Bitton
+	2	-
+	3	Jackson
+			name:	PERSON				3-3	Jackson 
+	4	(
+	5	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		5-5	born 
+			N-ARG-A1		0-3	Livia Bitton - Jackson 
+			N-ARGM-TMP		6-9	February 28 , 1931 
+	6	February
+			name:	DATE				6-9	February 28 , 1931 
+	7	28
+	8	,
+	9	1931
+	10	)
+	11	is
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	is 
+			N-ARG-A1		0-10	Livia Bitton - Jackson ( born February 28 , 1931 ) 
+			N-ARG-A2		12-17	an author and a Holocaust survivor 
+	12	an
+	13	author
+			name:	TITLE				13-13	author 
+			sense:	writer.n.01
+	14	and
+	15	a
+	16	Holocaust
+			name:	MISC				16-16	Holocaust 
+	17	survivor
+			sense:	survivor.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She was born as Elli L. Friedmann in Samorin , Czechoslovakia , She was 13 years old when she , her mother , father , aunt and brother Bubi , were taken to Ghetto Nagymagyar .
+
+
+Treebanked sentence:
+--------------------
+She was born as Elli L. Friedmann in Samorin , Czechoslovakia , She was 13 years old when she , her mother , father , aunt and brother Bubi , were taken to Ghetto Nagymagyar . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP She))
+      (VP (VBD was)
+        (VP (VBN born)
+          (PP (IN as)
+            (NP
+              (NP (NNP Elli) (NNP L.) (NNP Friedmann))
+              (PP (IN in)
+                (NP (NNP Samorin) (, ,) (NNP Czechoslovakia))))))))
+    (, ,)
+    (NP (PRP She))
+    (VP (VBD was)
+      (ADJP
+        (NP (CD 13) (NNS years))
+        (JJ old))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP
+            (NP (PRP she))
+            (, ,)
+            (NP
+              (NP (PRP$ her) (NN mother) (, ,) (NN father) (, ,) (NN aunt)
+                (CC and)
+                (NN brother))
+              (NP (NNP Bubi)))
+            (, ,))
+          (VP (VBD were)
+            (VP (VBN taken)
+              (PP (IN to)
+                (NP (NNP Ghetto) (NNP Nagymagyar))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			1	0-0	She 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	She 
+			N-ARGM-PRD		3-6	as Elli L. Friedmann 
+			N-ARGM-LOC		7-10	in Samorin , Czechoslovakia 
+	3	as
+	4	Elli
+			name:	PERSON				4-6	Elli L. Friedmann 
+	5	L.
+	6	Friedmann
+	7	in
+	8	Samorin
+			name:	CITY				8-8	Samorin 
+	9	,
+	10	Czechoslovakia
+			name:	LOCATION				10-10	Czechoslovakia 
+	11	,
+	12	She
+			coref:	IDENT			1	12-12	She 
+	13	was
+			sense:	be.v.01
+			prop:	be.01
+			V		13-13	was 
+			N-ARG-A1		12-12	She 
+			N-ARG-A2		14-16	13 years old 
+			N-ARGM-TMP		17-34	when she , her mother , father , aunt and brother Bubi , were taken to Ghetto Nagymagyar 
+	14	13
+			name:	DURATION				14-16	13 years old 
+	15	years
+			sense:	year.n.01
+	16	old
+			sense:	old.a.01
+	17	when
+	18	she
+			coref:	IDENT			1	18-18	she 
+	19	,
+	20	her
+			coref:	IDENT			1	20-20	her 
+	21	mother
+			sense:	mother.n.01
+	22	,
+	23	father
+			sense:	father.n.01
+	24	,
+	25	aunt
+			sense:	aunt.n.01
+	26	and
+	27	brother
+			sense:	brother.n.01
+	28	Bubi
+			name:	PERSON				28-28	Bubi 
+	29	,
+	30	were
+			sense:	be.v.01
+			prop:	be.03
+			V		30-30	were 
+	31	taken
+			sense:	lead.v.01
+			prop:	take.01
+			V		31-31	taken 
+			N-ARGM-TMP		17-17	when 
+			N-ARG-A1		18-28	she , her mother , father , aunt and brother Bubi 
+			N-ARGM-GOL		32-34	to Ghetto Nagymagyar 
+	32	to
+	33	Ghetto
+	34	Nagymagyar
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Eventually , they were transported to Auschwitz , the largest German concentration camp , where her brother and aunt were separated from Livia and her mother .
+
+
+Treebanked sentence:
+--------------------
+Eventually , they were transported to Auschwitz , the largest German concentration camp , where her brother and aunt were separated from Livia and her mother . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Eventually))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBD were)
+      (VP (VBN transported)
+        (PP (IN to)
+          (NP
+            (NP (NNP Auschwitz))
+            (, ,)
+            (NP
+              (NP (DT the)
+                (ADJP (JJS largest) (JJ German))
+                (NN concentration) (NN camp))
+              (, ,)
+              (SBAR
+                (WHADVP (WRB where))
+                (S
+                  (NP (PRP$ her) (NN brother)
+                    (CC and)
+                    (NN aunt))
+                  (VP (VBD were)
+                    (VP (VBN separated)
+                      (PP (IN from)
+                        (NP
+                          (NP (NNP Livia))
+                          (CC and)
+                          (NP (PRP$ her) (NN mother)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Eventually
+			sense:	finally.r.01
+	1	,
+	2	they
+	3	were
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	were 
+	4	transported
+			sense:	transport.v.01
+			prop:	transport.01
+			V		4-4	transported 
+			N-ARGM-TMP		0-0	Eventually 
+			N-ARG-A1		2-2	they 
+			N-ARG-A2		5-25	to Auschwitz , the largest German concentration camp , where her brother and aunt were separated from Livia and her mother 
+	5	to
+	6	Auschwitz
+			name:	LOCATION				6-6	Auschwitz 
+	7	,
+	8	the
+	9	largest
+			sense:	large.a.01
+	10	German
+			name:	NATIONALITY				10-10	German 
+	11	concentration
+			sense:	concentration.n.06
+	12	camp
+			sense:	camp.n.05
+	13	,
+	14	where
+	15	her
+			coref:	IDENT			0	15-18	her brother and aunt 
+			coref:	IDENT			1	15-15	her 
+	16	brother
+			sense:	brother.n.01
+	17	and
+	18	aunt
+			sense:	aunt.n.01
+	19	were
+			sense:	be.v.01
+			prop:	be.03
+			V		19-19	were 
+	20	separated
+			sense:	separate.v.02
+			prop:	separate.01
+			V		20-20	separated 
+			N-ARGM-LOC		6-12	Auschwitz , the largest German concentration camp 
+			R-ARGM-LOC		14-14	where 
+			N-ARG-A1		15-18	her brother and aunt 
+			N-ARG-A2		21-25	from Livia and her mother 
+	21	from
+	22	Livia
+			coref:	IDENT			1	22-22	Livia 
+			name:	PERSON				22-22	Livia 
+	23	and
+	24	her
+			coref:	IDENT			1	24-24	her 
+	25	mother
+			sense:	mother.n.01
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Her aunt perished but her brother survived .
+
+
+Treebanked sentence:
+--------------------
+Her aunt perished but her brother survived . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP$ Her) (NN aunt))
+      (VP (VBD perished)))
+    (CC but)
+    (S
+      (NP (PRP$ her) (NN brother))
+      (VP (VBD survived)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Her
+			coref:	IDENT			1	0-0	Her 
+	1	aunt
+			sense:	aunt.n.01
+	2	perished
+			sense:	die.v.01
+			prop:	perish.01
+			V		2-2	perished 
+			N-ARG-A0		0-1	Her aunt 
+	3	but
+	4	her
+			coref:	IDENT			1	4-4	her 
+	5	brother
+			sense:	brother.n.01
+	6	survived
+			sense:	survive.v.01
+			prop:	survive.01
+			V		6-6	survived 
+			N-ARG-A0		4-5	her brother 
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She , her mother and brother were liberated in 1945 .
+
+
+Treebanked sentence:
+--------------------
+She , her mother and brother were liberated in 1945 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (, ,)
+    (NP (PRP$ her) (NN mother)
+      (CC and)
+      (NN brother))
+    (VP (VBD were)
+      (VP (VBN liberated)
+        (PP (IN in)
+          (NP (CD 1945)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			1	0-0	She 
+	1	,
+	2	her
+			coref:	IDENT			0	2-5	her mother and brother 
+			coref:	IDENT			1	2-2	her 
+	3	mother
+			sense:	mother.n.01
+	4	and
+	5	brother
+			sense:	brother.n.01
+	6	were
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	were 
+	7	liberated
+			sense:	free.v.01
+			prop:	liberate.01
+			V		7-7	liberated 
+			N-ARG-A1		0-5	She , her mother and brother 
+			N-ARGM-TMP		8-9	in 1945 
+	8	in
+	9	1945
+			name:	DATE				9-9	1945 
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bitton - Jackson came to the U.S. on a refugee boat in 1951 to join Bubi , who was studying in New York .
+
+
+Treebanked sentence:
+--------------------
+Bitton - Jackson came to the U.S. on a refugee boat in 1951 to join Bubi , who was studying in New York . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bitton) (HYPH -) (NNP Jackson))
+    (VP (VBD came)
+      (PP (IN to)
+        (NP (DT the) (NNP U.S.)))
+      (PP (IN on)
+        (NP
+          (NP (DT a) (NN refugee) (NN boat))
+          (PP (IN in)
+            (NP (CD 1951)))))
+      (S
+        (VP (TO to)
+          (VP (VB join)
+            (NP
+              (NP (NNP Bubi))
+              (, ,)
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD was)
+                    (VP (VBG studying)
+                      (PP (IN in)
+                        (NP (NNP New) (NNP York))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bitton
+			name:	PERSON				0-0	Bitton 
+	1	-
+	2	Jackson
+			name:	PERSON				2-2	Jackson 
+	3	came
+			sense:	arrive.v.01
+			prop:	come.01
+			V		3-3	came 
+			N-ARG-A1		0-2	Bitton - Jackson 
+			N-ARG-A4		4-6	to the U.S. 
+			N-ARGM-MNR		7-10	on a refugee boat 
+			N-ARGM-TMP		11-12	in 1951 
+			N-ARGM-PRP		13-22	to join Bubi , who was studying in New York 
+	4	to
+	5	the
+	6	U.S.
+			name:	COUNTRY				6-6	U.S. 
+	7	on
+	8	a
+	9	refugee
+			sense:	refugee.n.01
+	10	boat
+			sense:	boat.n.01
+	11	in
+	12	1951
+			name:	DATE				12-12	1951 
+	13	to
+	14	join
+			sense:	join.v.01
+			prop:	join.01
+			V		14-14	join 
+			N-ARG-A0		0-2	Bitton - Jackson 
+			N-ARG-A1		15-22	Bubi , who was studying in New York 
+	15	Bubi
+	16	,
+	17	who
+	18	was
+			sense:	be.v.03
+			prop:	be.03
+			V		18-18	was 
+	19	studying
+			sense:	study.v.02
+			prop:	study.01
+			V		19-19	studying 
+			N-ARG-A0		15-15	Bubi 
+			R-ARG-A0		17-17	who 
+			N-ARGM-LOC		20-22	in New York 
+	20	in
+	21	New
+			name:	STATE_OR_PROVINCE				21-22	New York 
+	22	York
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She then studied at New York University , from which she received a Ph.D. in Hebrew Culture and Jewish History .
+
+
+Treebanked sentence:
+--------------------
+She then studied at New York University , from which she received a Ph.D. in Hebrew Culture and Jewish History . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (ADVP (RB then))
+    (VP (VBD studied)
+      (PP (IN at)
+        (NP
+          (NP
+            (NML (NNP New) (NNP York))
+            (NNP University))
+          (, ,)
+          (SBAR
+            (WHPP (IN from)
+              (WHNP (WDT which)))
+            (S
+              (NP (PRP she))
+              (VP (VBD received)
+                (NP (DT a) (NN Ph.D.))
+                (PP (IN in)
+                  (NP
+                    (NP (NNP Hebrew) (NNP Culture))
+                    (CC and)
+                    (NP (JJ Jewish) (NN History))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			1	0-0	She 
+	1	then
+			sense:	then.r.01
+	2	studied
+			sense:	study.v.02
+			prop:	study.01
+			V		2-2	studied 
+			N-ARG-A0		0-0	She 
+			N-ARGM-TMP		1-1	then 
+			N-ARGM-LOC		3-19	at New York University , from which she received a Ph.D. in Hebrew Culture and Jewish History 
+	3	at
+	4	New
+			name:	ORGANIZATION				4-6	New York University 
+	5	York
+	6	University
+	7	,
+	8	from
+	9	which
+	10	she
+			coref:	IDENT			1	10-10	she 
+	11	received
+			sense:	receive.v.01
+			prop:	receive.01
+			V		11-11	received 
+			N-ARG-A2		4-6	New York University 
+			R-ARG-A2		8-9	from which 
+			N-ARG-A0		10-10	she 
+			N-ARG-A1		12-19	a Ph.D. in Hebrew Culture and Jewish History 
+	12	a
+	13	Ph.D.
+			sense:	ph.d..n.01
+	14	in
+	15	Hebrew
+			name:	MISC				15-16	Hebrew Culture 
+	16	Culture
+	17	and
+	18	Jewish
+			name:	RELIGION				18-18	Jewish 
+	19	History
+			sense:	history.n.03
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She also wrote her 1997 memoir I Have Lived a Thousand Years .
+
+
+Treebanked sentence:
+--------------------
+She also wrote her 1997 memoir I Have Lived a Thousand Years . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (ADVP (RB also))
+    (VP (VBD wrote)
+      (NP (PRP$ her) (CD 1997) (NN memoir))
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBP Have)
+            (VP (VBN Lived)
+              (NP (DT a) (NNP Thousand) (NNP Years)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			1	0-0	She 
+	1	also
+			sense:	besides.r.02
+	2	wrote
+			sense:	write.v.01
+			prop:	write.01
+			V		2-2	wrote 
+			N-ARG-A0		0-0	She 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-11	her 1997 memoir I Have Lived a Thousand Years 
+	3	her
+			coref:	IDENT			1	3-3	her 
+	4	1997
+			name:	DATE				4-4	1997 
+	5	memoir
+			sense:	memoir.n.01
+	6	I
+	7	Have
+			sense:	have.v.01
+			prop:	have.01
+			V		7-7	Have 
+	8	Lived
+			sense:	be.v.11
+			prop:	live.01
+			V		8-8	Lived 
+			N-ARG-A0		6-6	I 
+			N-ARGM-TMP		9-11	a Thousand Years 
+	9	a
+	10	Thousand
+			name:	DURATION				10-11	Thousand Years 
+	11	Years
+	12	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.15-18	her brother and aunt 
+				4.2-5	her mother and brother 
+	Chain 1 (IDENT)
+				2.22-22	Livia 
+				1.0-0	She 
+				1.12-12	She 
+				1.18-18	she 
+				1.20-20	her 
+				2.15-15	her 
+				2.24-24	her 
+				3.0-0	Her 
+				3.4-4	her 
+				4.0-0	She 
+				4.2-2	her 
+				6.0-0	She 
+				6.10-10	she 
+				7.0-0	She 
+				7.3-3	her 
+

@@ -1,0 +1,558 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Clarence Profit ( June 26 , 1912 – October 22 , 1944 ) was a jazz pianist and composer associated with swing .
+
+
+Treebanked sentence:
+--------------------
+Clarence Profit ( June 26 , 1912 – October 22 , 1944 ) was a jazz pianist and composer associated with swing . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Clarence) (NNP Profit))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP June) (CD 26) (, ,) (CD 1912))
+        (PP (SYM –)
+          (NP (NNP October) (CD 22) (, ,) (CD 1944))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN jazz) (NN pianist)
+          (CC and)
+          (NN composer))
+        (VP (VBN associated)
+          (PP (IN with)
+            (NP (NN swing))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Clarence
+			name:	PERSON				0-1	Clarence Profit 
+	1	Profit
+	2	(
+	3	June
+			name:	DATE				3-6	June 26 , 1912 
+	4	26
+	5	,
+	6	1912
+	7	–
+	8	October
+			name:	DATE				8-11	October 22 , 1944 
+	9	22
+	10	,
+	11	1944
+	12	)
+	13	was
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	was 
+			N-ARG-A1		0-12	Clarence Profit ( June 26 , 1912 – October 22 , 1944 ) 
+			N-ARG-A2		14-21	a jazz pianist and composer associated with swing 
+	14	a
+	15	jazz
+			sense:	jazz.n.02
+	16	pianist
+			name:	TITLE				16-16	pianist 
+			sense:	pianist.n.01
+	17	and
+	18	composer
+			name:	TITLE				18-18	composer 
+			sense:	composer.n.01
+	19	associated
+			sense:	associate.v.01
+			prop:	associate.01
+			V		19-19	associated 
+			N-ARG-A1		14-18	a jazz pianist and composer 
+			N-ARG-A2		20-21	with swing 
+	20	with
+	21	swing
+			sense:	swing.n.05
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He came from a musical family and began studying piano at the age of three and he led a ten - piece band in New York City in his teens .
+
+
+Treebanked sentence:
+--------------------
+He came from a musical family and began studying piano at the age of three and he led a ten - piece band in New York City in his teens . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP
+        (VP (VBD came)
+          (PP (IN from)
+            (NP (DT a) (JJ musical) (NN family))))
+        (CC and)
+        (VP (VBD began)
+          (S
+            (VP (VBG studying)
+              (NP (NN piano))
+              (PP (IN at)
+                (NP
+                  (NP (DT the) (NN age))
+                  (PP (IN of)
+                    (NP (CD three))))))))))
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBD led)
+        (NP
+          (NP (DT a)
+            (NML (CD ten) (HYPH -) (NN piece))
+            (NN band))
+          (PP (IN in)
+            (NP
+              (NML (NNP New) (NNP York))
+              (NNP City))))
+        (PP (IN in)
+          (NP (PRP$ his) (NNS teens)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	came
+			sense:	come.v.05
+			prop:	come.03
+			V		1-1	came 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-5	from a musical family 
+	2	from
+	3	a
+	4	musical
+			sense:	musical.a.02
+	5	family
+			sense:	family.n.04
+	6	and
+	7	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		7-7	began 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		8-14	studying piano at the age of three 
+	8	studying
+			sense:	learn.v.04
+			prop:	study.01
+			V		8-8	studying 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		9-9	piano 
+			N-ARGM-TMP		10-14	at the age of three 
+	9	piano
+			sense:	piano.n.01
+	10	at
+	11	the
+	12	age
+			sense:	age.n.01
+	13	of
+	14	three
+			name:	NUMBER				14-14	three 
+	15	and
+	16	he
+	17	led
+			sense:	conduct.v.02
+			prop:	lead.02
+			V		17-17	led 
+			N-ARG-A0		16-16	he 
+			N-ARG-A1		18-22	a ten - piece band 
+			N-ARGM-LOC		23-26	in New York City 
+			N-ARGM-TMP		27-29	in his teens 
+	18	a
+	19	ten
+			name:	NUMBER				19-19	ten 
+	20	-
+	21	piece
+			sense:	musical_composition.n.01
+	22	band
+			sense:	band.n.02
+	23	in
+	24	New
+			coref:	IDENT			0	24-26	New York City 
+			name:	CITY				24-26	New York City 
+	25	York
+	26	City
+	27	in
+	28	his
+	29	teens
+			sense:	teens.n.01
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A visit to his grandparents in Antigua resulted in his staying in the Caribbean for five years .
+
+
+Treebanked sentence:
+--------------------
+A visit to his grandparents in Antigua resulted in his staying in the Caribbean for five years . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN visit))
+      (PP (IN to)
+        (NP
+          (NP (PRP$ his) (NNS grandparents))
+          (PP (IN in)
+            (NP (NNP Antigua))))))
+    (VP (VBD resulted)
+      (PP (IN in)
+        (S
+          (NP (PRP$ his))
+          (VP (VBG staying)
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NNP Caribbean))
+                (PP (IN for)
+                  (NP (CD five) (NNS years)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	visit
+			sense:	visit.n.01
+	2	to
+	3	his
+	4	grandparents
+			sense:	grandparent.n.01
+	5	in
+	6	Antigua
+			name:	LOCATION				6-6	Antigua 
+	7	resulted
+			sense:	leave.v.07
+			prop:	result.01
+			V		7-7	resulted 
+			N-ARG-A1		0-6	A visit to his grandparents in Antigua 
+			N-ARG-A2		8-16	in his staying in the Caribbean for five years 
+	8	in
+	9	his
+	10	staying
+			sense:	bide.v.01
+			prop:	staging.01
+			V		10-10	staying 
+			N-ARG-A1		9-9	his 
+			N-ARGM-TMP		14-16	for five years 
+	11	in
+	12	the
+	13	Caribbean
+			name:	LOCATION				13-13	Caribbean 
+	14	for
+	15	five
+			name:	DURATION				15-16	five years 
+	16	years
+			sense:	year.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also led a group in Bermuda .
+
+
+Treebanked sentence:
+--------------------
+He also led a group in Bermuda . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD led)
+      (NP (DT a) (NN group))
+      (PP (IN in)
+        (NP (NNP Bermuda))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	also
+			sense:	besides.r.02
+	2	led
+			sense:	lead.v.01
+			prop:	lead.02
+			V		2-2	led 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-6	a group in Bermuda 
+	3	a
+	4	group
+			sense:	group.n.01
+	5	in
+	6	Bermuda
+			name:	LOCATION				6-6	Bermuda 
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He returned to the US and led a trio .
+
+
+Treebanked sentence:
+--------------------
+He returned to the US and led a trio . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD returned)
+        (PP (IN to)
+          (NP (DT the) (NNP US))))
+      (CC and)
+      (VP (VBD led)
+        (NP (DT a) (NN trio))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	returned
+			sense:	return.v.01
+			prop:	return.01
+			V		1-1	returned 
+			N-ARG-A1		0-0	He 
+			N-ARG-A4		2-4	to the US 
+	2	to
+	3	the
+	4	US
+			name:	COUNTRY				4-4	US 
+	5	and
+	6	led
+			sense:	conduct.v.02
+			prop:	lead.02
+			V		6-6	led 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		7-8	a trio 
+	7	a
+	8	trio
+			sense:	trio.n.03
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He co - composed " Lullaby In Rhythm " with Edgar Sampson .
+
+
+Treebanked sentence:
+--------------------
+He co - composed " Lullaby In Rhythm " with Edgar Sampson . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP
+      (NP (PRP He))
+      (ADJP (RB co) (HYPH -) (VBN composed)))
+    (NP
+      (NP (`` ")
+        (NP (NNP Lullaby))
+        (PP (IN In)
+          (NP (NNP Rhythm)))
+        ('' "))
+      (PP (IN with)
+        (NP (NNP Edgar) (NNP Sampson))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	co
+	2	-
+	3	composed
+			sense:	compose.v.02
+			prop:	compose.02
+			V		3-3	composed 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		4-8	" Lullaby In Rhythm " 
+			N-ARGM-COM		9-11	with Edgar Sampson 
+	4	"
+	5	Lullaby
+			name:	MISC				5-7	Lullaby In Rhythm 
+	6	In
+	7	Rhythm
+	8	"
+	9	with
+	10	Edgar
+			name:	PERSON				10-11	Edgar Sampson 
+	11	Sampson
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was respected in his era , but after his early death fell into obscurity .
+
+
+Treebanked sentence:
+--------------------
+He was respected in his era , but after his early death fell into obscurity . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN respected)
+          (PP (IN in)
+            (NP (PRP$ his) (NN era)))))
+      (, ,)
+      (CC but)
+      (PP (IN after)
+        (NP (PRP$ his) (JJ early) (NN death)))
+      (VP (VBD fell)
+        (PP (IN into)
+          (NP (NN obscurity)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	respected
+			sense:	respect.v.01
+			prop:	respect.01
+			V		2-2	respected 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		3-5	in his era 
+	3	in
+	4	his
+	5	era
+			sense:	era.n.01
+	6	,
+	7	but
+	8	after
+	9	his
+	10	early
+			sense:	early.a.01
+	11	death
+			sense:	death.n.01
+	12	fell
+			sense:	fall.v.03
+			prop:	fall.01
+			V		12-12	fell 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		8-11	after his early death 
+			N-ARG-A4		13-14	into obscurity 
+	13	into
+	14	obscurity
+			sense:	obscurity.n.02
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was born , and died , in New York City .
+
+
+Treebanked sentence:
+--------------------
+He was born , and died , in New York City . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN born)))
+      (, ,)
+      (CC and)
+      (VP (VBD died))
+      (, ,)
+      (PP (IN in)
+        (NP
+          (NML (NNP New) (NNP York))
+          (NNP City))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	He 
+	3	,
+	4	and
+	5	died
+			sense:	die.v.01
+			prop:	die.01
+			V		5-5	died 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		7-10	in New York City 
+	6	,
+	7	in
+	8	New
+			coref:	IDENT			0	8-10	New York City 
+			name:	CITY				8-10	New York City 
+	9	York
+	10	City
+	11	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.24-26	New York City 
+				7.8-10	New York City 
+

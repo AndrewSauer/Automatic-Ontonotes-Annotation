@@ -1,0 +1,470 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Christine Kenneally ( born in Melbourne , Australia ) is an Australian - American journalist who writes on science , language and culture .
+
+
+Treebanked sentence:
+--------------------
+Christine Kenneally ( born in Melbourne , Australia ) is an Australian - American journalist who writes on science , language and culture . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Christine) (NNP Kenneally))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Melbourne) (, ,) (NNP Australia))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an)
+          (ADJP (JJ Australian) (HYPH -) (JJ American))
+          (NN journalist))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ writes)
+              (PP (IN on)
+                (NP (NN science) (, ,) (NN language)
+                  (CC and)
+                  (NN culture))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Christine
+			name:	PERSON				0-1	Christine Kenneally 
+	1	Kenneally
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Christine Kenneally 
+			N-ARGM-LOC		4-7	in Melbourne , Australia 
+	4	in
+	5	Melbourne
+			name:	CITY				5-5	Melbourne 
+	6	,
+	7	Australia
+			coref:	IDENT			0	7-7	Australia 
+			name:	COUNTRY				7-7	Australia 
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	Christine Kenneally ( born in Melbourne , Australia ) 
+			N-ARG-A2		10-22	an Australian - American journalist who writes on science , language and culture 
+	10	an
+	11	Australian
+			name:	NATIONALITY				11-11	Australian 
+	12	-
+	13	American
+			name:	NATIONALITY				13-13	American 
+	14	journalist
+			name:	TITLE				14-14	journalist 
+			sense:	journalist.n.01
+	15	who
+	16	writes
+			sense:	write.v.01
+			prop:	write.01
+			V		16-16	writes 
+			N-ARG-A0		10-14	an Australian - American journalist 
+			R-ARG-A0		15-15	who 
+			N-ARG-A1		17-22	on science , language and culture 
+	17	on
+	18	science
+			sense:	science.n.01
+	19	,
+	20	language
+			sense:	language.n.01
+	21	and
+	22	culture
+			sense:	culture.n.02
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Trained as a linguist , she has written for The New York Times , the New Yorker , Slate , New Scientist , and Australia 's Monthly , among other publications .
+
+
+Treebanked sentence:
+--------------------
+Trained as a linguist , she has written for The New York Times , the New Yorker , Slate , New Scientist , and Australia 's Monthly , among other publications . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Trained)
+        (PP (IN as)
+          (NP (DT a) (NN linguist)))))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBZ has)
+      (VP (VBN written)
+        (PP (IN for)
+          (NP
+            (NP (DT The)
+              (NML (NNP New) (NNP York))
+              (NNP Times))
+            (, ,)
+            (NP (DT the)
+              (NML
+                (NML (NNP New) (NNP Yorker))
+                (, ,)
+                (NP (NNP Slate))
+                (, ,))
+              (NNP New) (NNP Scientist))
+            (, ,)
+            (CC and)
+            (NP
+              (NP (NNP Australia) (POS 's))
+              (NNP Monthly))))
+        (, ,)
+        (PP (IN among)
+          (NP (JJ other) (NNS publications)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Trained
+			sense:	train.v.02
+			prop:	train.01
+			V		0-0	Trained 
+			N-ARG-A1		1-3	as a linguist 
+			N-ARG-A2		5-5	she 
+	1	as
+	2	a
+	3	linguist
+			name:	TITLE				3-3	linguist 
+			sense:	linguist.n.01
+	4	,
+	5	she
+	6	has
+			sense:	have.v.01
+			prop:	have.01
+			V		6-6	has 
+	7	written
+			sense:	publish.v.03
+			prop:	write.01
+			V		7-7	written 
+			R-ARG-A0		0-3	Trained as a linguist 
+			N-ARG-A0		5-5	she 
+			N-ARG-A2		8-30	for The New York Times , the New Yorker , Slate , New Scientist , and Australia 's Monthly , among other publications 
+	8	for
+	9	The
+	10	New
+			name:	ORGANIZATION				10-12	New York Times 
+	11	York
+	12	Times
+	13	,
+	14	the
+	15	New
+	16	Yorker
+	17	,
+	18	Slate
+	19	,
+	20	New
+	21	Scientist
+			name:	TITLE				21-21	Scientist 
+	22	,
+	23	and
+	24	Australia
+			coref:	IDENT			0	24-25	Australia 's 
+			name:	COUNTRY				24-24	Australia 
+	25	's
+	26	Monthly
+			name:	SET				26-26	Monthly 
+	27	,
+	28	among
+	29	other
+			sense:	other.a.01
+	30	publications
+			sense:	publication.n.01
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She is a great - granddaughter of JJ Kenneally , an early popularizer of Australian bushranger Ned Kelly .
+
+
+Treebanked sentence:
+--------------------
+She is a great - granddaughter of JJ Kenneally , an early popularizer of Australian bushranger Ned Kelly . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ great) (HYPH -) (NN granddaughter))
+        (PP (IN of)
+          (NP
+            (NP (NNP JJ) (NNP Kenneally))
+            (, ,)
+            (NP
+              (NP (DT an) (JJ early) (NN popularizer))
+              (PP (IN of)
+                (NP
+                  (NML (JJ Australian) (NN bushranger))
+                  (NNP Ned) (NNP Kelly))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-17	a great - granddaughter of JJ Kenneally , an early popularizer of Australian bushranger Ned Kelly 
+	2	a
+	3	great
+			sense:	great.s.01
+	4	-
+	5	granddaughter
+			sense:	granddaughter.n.01
+	6	of
+	7	JJ
+			name:	PERSON				7-8	JJ Kenneally 
+	8	Kenneally
+	9	,
+	10	an
+	11	early
+			sense:	early.a.01
+	12	popularizer
+			sense:	popularizer.n.01
+	13	of
+	14	Australian
+			name:	NATIONALITY				14-14	Australian 
+	15	bushranger
+	16	Ned
+			name:	PERSON				16-17	Ned Kelly 
+	17	Kelly
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Her first book , The First Word ( 2007 ) was a L.A. Times book prize finalist and has been translated into Korean and Spanish .
+
+
+Treebanked sentence:
+--------------------
+Her first book , The First Word ( 2007 ) was a L.A. Times book prize finalist and has been translated into Korean and Spanish . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Her) (JJ first) (NN book))
+      (, ,)
+      (NP (DT The) (NNP First) (NNP Word)
+        (PRN (-LRB- -LRB-)
+          (NP (CD 2007))
+          (-RRB- -RRB-))))
+    (VP
+      (VP (VBD was)
+        (NP (DT a)
+          (NML (NNP L.A.) (NNP Times))
+          (NN book) (NN prize) (NN finalist)))
+      (CC and)
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP (VBN translated)
+            (PP (IN into)
+              (ADJP (JJ Korean)
+                (CC and)
+                (JJ Spanish)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Her
+	1	first
+			name:	ORDINAL				1-1	first 
+			sense:	first.a.01
+	2	book
+			sense:	book.n.01
+	3	,
+	4	The
+	5	First
+			name:	ORDINAL				5-5	First 
+	6	Word
+	7	(
+	8	2007
+			name:	DATE				8-8	2007 
+	9	)
+	10	was
+			sense:	be.v.01
+			prop:	be.01
+			V		10-10	was 
+			N-ARG-A1		0-9	Her first book , The First Word ( 2007 ) 
+			N-ARG-A2		11-16	a L.A. Times book prize finalist 
+	11	a
+	12	L.A.
+			name:	ORGANIZATION				12-13	L.A. Times 
+	13	Times
+	14	book
+			sense:	book.n.01
+	15	prize
+			sense:	prize.n.01
+	16	finalist
+			sense:	finalist.n.01
+	17	and
+	18	has
+			sense:	have.v.01
+			prop:	have.01
+			V		18-18	has 
+	19	been
+			sense:	be.v.01
+			prop:	be.03
+			V		19-19	been 
+	20	translated
+			sense:	translate.v.01
+			prop:	translate.01
+			V		20-20	translated 
+			N-ARG-A1		0-9	Her first book , The First Word ( 2007 ) 
+			N-ARG-A2		21-24	into Korean and Spanish 
+	21	into
+	22	Korean
+			name:	NATIONALITY				22-22	Korean 
+	23	and
+	24	Spanish
+			name:	NATIONALITY				24-24	Spanish 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Her book for Viking Penguin , The Invisible History of the Human Race : How DNA and History Shape Our Identities and Our Futures , was released 9 October 2015 .
+
+
+Treebanked sentence:
+--------------------
+Her book for Viking Penguin , The Invisible History of the Human Race : How DNA and History Shape Our Identities and Our Futures , was released 9 October 2015 . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP
+      (NP
+        (NP (PRP$ Her) (NN book))
+        (PP (IN for)
+          (NP (JJ Viking) (NNP Penguin))))
+      (, ,)
+      (NP
+        (NP (DT The) (JJ Invisible) (NN History))
+        (PP (IN of)
+          (NP (DT the) (JJ Human) (NN Race)))))
+    (: :)
+    (SBAR
+      (WHADVP (WRB How))
+      (S
+        (NP
+          (NP
+            (NP (NN DNA))
+            (CC and)
+            (NP (NN History) (NN Shape)))
+          (NP
+            (NP (PRP$ Our) (NNS Identities))
+            (CC and)
+            (NP (PRP$ Our) (NNS Futures)))
+          (, ,))
+        (VP (VBD was)
+          (VP (VBN released)
+            (NP (CD 9))
+            (NP-TMP (NNP October) (CD 2015))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Her
+	1	book
+			sense:	book.n.01
+	2	for
+	3	Viking
+	4	Penguin
+	5	,
+	6	The
+	7	Invisible
+			sense:	invisible.a.01
+	8	History
+			sense:	history.n.02
+	9	of
+	10	the
+	11	Human
+			sense:	human.a.03
+	12	Race
+			sense:	race.n.03
+	13	:
+	14	How
+	15	DNA
+			sense:	deoxyribonucleic_acid.n.01
+	16	and
+	17	History
+			name:	MISC				17-20	History Shape Our Identities 
+			sense:	history.n.02
+	18	Shape
+			sense:	form.n.03
+	19	Our
+	20	Identities
+			sense:	identity.n.01
+	21	and
+	22	Our
+	23	Futures
+			sense:	future.n.01
+	24	,
+	25	was
+			sense:	be.v.01
+			prop:	be.03
+			V		25-25	was 
+	26	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		26-26	released 
+			N-ARG-A1		0-23	Her book for Viking Penguin , The Invisible History of the Human Race : How DNA and History Shape Our Identities and Our Futures 
+			N-ARGM-TMP		27-29	9 October 2015 
+	27	9
+			name:	DATE				27-29	9 October 2015 
+	28	October
+	29	2015
+	30	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.24-25	Australia 's 
+				0.7-7	Australia 
+

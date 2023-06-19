@@ -1,0 +1,843 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bismarck ( ) is the capital of the U.S. state of North Dakota and the county seat of Burleigh County .
+
+
+Treebanked sentence:
+--------------------
+Bismarck ( ) is the capital of the U.S. state of North Dakota and the county seat of Burleigh County . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bismarck) (-LRB- -LRB-))
+    (-RRB- -RRB-)
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN capital))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (DT the) (NNP U.S.) (NN state))
+              (PP (IN of)
+                (NP (NNP North) (NNP Dakota))))
+            (CC and)
+            (NP
+              (NP (DT the) (NN county) (NN seat))
+              (PP (IN of)
+                (NP (NNP Burleigh) (NNP County))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bismarck
+			coref:	IDENT			2	0-0	Bismarck 
+			name:	PERSON				0-0	Bismarck 
+	1	(
+	2	)
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-0	Bismarck 
+			N-ARG-A2		4-19	the capital of the U.S. state of North Dakota and the county seat of Burleigh County 
+	4	the
+	5	capital
+			sense:	capital.n.03
+	6	of
+	7	the
+			coref:	IDENT			4	7-12	the U.S. state of North Dakota 
+	8	U.S.
+			name:	COUNTRY				8-8	U.S. 
+	9	state
+			sense:	state.n.01
+	10	of
+	11	North
+			name:	STATE_OR_PROVINCE				11-12	North Dakota 
+	12	Dakota
+	13	and
+	14	the
+	15	county
+			sense:	county.n.01
+	16	seat
+			sense:	seat.n.05
+	17	of
+	18	Burleigh
+			name:	LOCATION				18-19	Burleigh County 
+	19	County
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is the second - most populous city in North Dakota after Fargo .
+
+
+Treebanked sentence:
+--------------------
+It is the second - most populous city in North Dakota after Fargo . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the)
+          (ADJP
+            (ADJP (JJ second))
+            (HYPH -)
+            (ADJP (RBS most) (JJ populous)))
+          (NN city))
+        (PP (IN in)
+          (NP
+            (NP (NNP North) (NNP Dakota))
+            (PP (IN after)
+              (NP (NNP Fargo)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-12	the second - most populous city in North Dakota after Fargo 
+	2	the
+	3	second
+			name:	ORDINAL				3-3	second 
+			sense:	second.s.01
+	4	-
+	5	most
+			sense:	most.r.01
+	6	populous
+			sense:	populous.s.01
+	7	city
+			sense:	city.n.01
+	8	in
+	9	North
+			name:	STATE_OR_PROVINCE				9-10	North Dakota 
+	10	Dakota
+	11	after
+	12	Fargo
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The city 's population was estimated in 2017 at 72,865 , while its metropolitan population was 132,142 .
+
+
+Treebanked sentence:
+--------------------
+The city 's population was estimated in 2017 at 72,865 , while its metropolitan population was 132,142 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN city) (POS 's))
+      (NN population))
+    (VP (VBD was)
+      (VP (VBN estimated)
+        (PP (IN in)
+          (NP (CD 2017)))
+        (PP (IN at)
+          (NP (CD 72,865)))
+        (, ,)
+        (SBAR (IN while)
+          (S
+            (NP (PRP$ its) (JJ metropolitan) (NN population))
+            (VP (VBD was)
+              (NP (CD 132,142)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-3	The city 's population 
+			coref:	IDENT			1	0-2	The city 's 
+	1	city
+			sense:	city.n.01
+	2	's
+	3	population
+			sense:	population.n.04
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	estimated
+			sense:	estimate.v.01
+			prop:	estimate.01
+			V		5-5	estimated 
+			N-ARG-A1		0-3	The city 's population 
+			N-ARGM-TMP		6-7	in 2017 
+			N-ARG-A2		8-9	at 72,865 
+			N-ARGM-ADV		11-16	while its metropolitan population was 132,142 
+	6	in
+	7	2017
+			coref:	IDENT			3	7-7	2017 
+			name:	DATE				7-7	2017 
+	8	at
+	9	72,865
+			name:	NUMBER				9-9	72,865 
+	10	,
+	11	while
+	12	its
+			coref:	IDENT			0	12-14	its metropolitan population 
+			coref:	IDENT			1	12-12	its 
+	13	metropolitan
+			sense:	metropolitan.a.01
+	14	population
+			sense:	population.n.04
+	15	was
+			sense:	equal.v.01
+			prop:	be.01
+			V		15-15	was 
+			N-ARG-A1		12-14	its metropolitan population 
+			N-ARG-A2		16-16	132,142 
+	16	132,142
+			name:	NUMBER				16-16	132,142 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2017 , Forbes magazine ranked Bismarck as the seventh fastest - growing small city in the United States .
+
+
+Treebanked sentence:
+--------------------
+In 2017 , Forbes magazine ranked Bismarck as the seventh fastest - growing small city in the United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2017)))
+    (, ,)
+    (NP (NNP Forbes) (NN magazine))
+    (VP (VBD ranked)
+      (NP (NNP Bismarck))
+      (PP (IN as)
+        (NP
+          (NP (DT the) (JJ seventh)
+            (ADJP (RBS fastest) (HYPH -) (VBG growing))
+            (JJ small) (NN city))
+          (PP (IN in)
+            (NP (DT the) (NNP United) (NNP States))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2017
+			coref:	IDENT			3	1-1	2017 
+			name:	DATE				1-1	2017 
+	2	,
+	3	Forbes
+			name:	ORGANIZATION				3-3	Forbes 
+	4	magazine
+			sense:	magazine.n.01
+	5	ranked
+			sense:	rate.v.01
+			prop:	rank.01
+			V		5-5	ranked 
+			N-ARGM-TMP		0-1	In 2017 
+			N-ARG-A0		3-4	Forbes magazine 
+			N-ARG-A1		6-6	Bismarck 
+			N-ARG-A2		7-18	as the seventh fastest - growing small city in the United States 
+	6	Bismarck
+			coref:	IDENT			2	6-6	Bismarck 
+			name:	PERSON				6-6	Bismarck 
+	7	as
+	8	the
+	9	seventh
+			name:	ORDINAL				9-9	seventh 
+			sense:	seventh.s.01
+	10	fastest
+			sense:	fast.r.01
+	11	-
+	12	growing
+			sense:	grow.v.02
+			prop:	grow.01
+			V		12-12	growing 
+			N-ARGM-MNR		10-10	fastest 
+			N-ARG-A1		13-14	small city 
+	13	small
+			sense:	small.a.01
+	14	city
+			sense:	city.n.01
+	15	in
+	16	the
+	17	United
+			name:	COUNTRY				17-18	United States 
+	18	States
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bismarck was founded by European Americans in 1872 on the east bank of the Missouri River .
+
+
+Treebanked sentence:
+--------------------
+Bismarck was founded by European Americans in 1872 on the east bank of the Missouri River . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bismarck))
+    (VP (VBD was)
+      (VP (VBN founded)
+        (PP (IN by)
+          (NP
+            (NP (NNP European) (NNPS Americans))
+            (PP (IN in)
+              (NP (CD 1872)))))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (JJ east) (NN bank))
+            (PP (IN of)
+              (NP (DT the) (NNP Missouri) (NNP River)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bismarck
+			coref:	IDENT			2	0-0	Bismarck 
+			name:	PERSON				0-0	Bismarck 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		2-2	founded 
+			N-ARG-A1		0-0	Bismarck 
+			N-ARG-A0		3-5	by European Americans 
+			N-ARGM-TMP		6-7	in 1872 
+			N-ARGM-LOC		8-15	on the east bank of the Missouri River 
+	3	by
+	4	European
+			name:	NATIONALITY				4-4	European 
+	5	Americans
+			name:	MISC				5-5	Americans 
+	6	in
+	7	1872
+			name:	DATE				7-7	1872 
+	8	on
+	9	the
+	10	east
+			sense:	east.a.01
+	11	bank
+			sense:	bank.n.01
+	12	of
+	13	the
+	14	Missouri
+			name:	STATE_OR_PROVINCE				14-14	Missouri 
+	15	River
+			name:	TITLE				15-15	River 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It has been North Dakota 's capital city since 1889 , when the state was created from the Dakota Territory and admitted to the Union .
+
+
+Treebanked sentence:
+--------------------
+It has been North Dakota 's capital city since 1889 , when the state was created from the Dakota Territory and admitted to the Union . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBZ has)
+        (VP (VBN been)
+          (NP
+            (NP
+              (NP (JJ North) (NNP Dakota) (POS 's))
+              (NN capital) (NN city))
+            (PP (IN since)
+              (NP (CD 1889))))
+          (, ,)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (DT the) (NN state))
+              (VP (VBD was)
+                (VP (VBN created)
+                  (PP (IN from)
+                    (NP (DT the) (NNP Dakota) (NNP Territory)))))))))
+      (CC and)
+      (VP (VBD admitted)
+        (PP (IN to)
+          (NP (DT the) (NNP Union)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	been
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	been 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		3-7	North Dakota 's capital city 
+			N-ARGM-TMP		8-24	since 1889 , when the state was created from the Dakota Territory and admitted to the Union 
+	3	North
+			name:	STATE_OR_PROVINCE				3-4	North Dakota 
+			sense:	north.a.01
+	4	Dakota
+	5	's
+	6	capital
+			sense:	capital.n.03
+	7	city
+			sense:	city.n.01
+	8	since
+	9	1889
+			name:	DATE				9-9	1889 
+	10	,
+	11	when
+	12	the
+			coref:	IDENT			4	12-13	the state 
+	13	state
+			sense:	state.n.01
+	14	was
+			sense:	be.v.01
+			prop:	be.03
+			V		14-14	was 
+	15	created
+			sense:	create.v.02
+			prop:	create.01
+			V		15-15	created 
+			N-ARGM-TMP		9-9	1889 
+			R-ARGM-TMP		11-11	when 
+			N-ARG-A1		12-13	the state 
+			N-ARG-A2		16-19	from the Dakota Territory 
+	16	from
+	17	the
+	18	Dakota
+			name:	LOCATION				18-19	Dakota Territory 
+	19	Territory
+	20	and
+	21	admitted
+			sense:	admit.v.02
+			prop:	admit.02
+			V		21-21	admitted 
+			N-ARGM-TMP		9-9	1889 
+			R-ARGM-TMP		11-11	when 
+			N-ARG-A1		12-13	the state 
+			N-ARG-A2		22-24	to the Union 
+	22	to
+	23	the
+	24	Union
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bismarck is across the river from Mandan , named after a historic Native American tribe of the area .
+
+
+Treebanked sentence:
+--------------------
+Bismarck is across the river from Mandan , named after a historic Native American tribe of the area . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bismarck))
+    (VP (VBZ is)
+      (PP (IN across)
+        (NP
+          (NP
+            (NP (DT the) (NN river))
+            (PP (IN from)
+              (NP (NNP Mandan))))
+          (, ,)
+          (VP (VBN named)
+            (PP (IN after)
+              (NP
+                (NP (DT a) (JJ historic) (JJ Native) (JJ American) (NN tribe))
+                (PP (IN of)
+                  (NP (DT the) (NN area)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bismarck
+			coref:	IDENT			2	0-0	Bismarck 
+			name:	PERSON				0-0	Bismarck 
+	1	is
+			sense:	be.v.03
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Bismarck 
+			N-ARG-A2		2-17	across the river from Mandan , named after a historic Native American tribe of the area 
+	2	across
+	3	the
+	4	river
+			name:	TITLE				4-4	river 
+			sense:	river.n.01
+	5	from
+	6	Mandan
+			name:	CITY				6-6	Mandan 
+	7	,
+	8	named
+			sense:	name.v.01
+			prop:	name.02
+			V		8-8	named 
+			N-ARG-A1		0-0	Bismarck 
+			N-ARG-A2		9-17	after a historic Native American tribe of the area 
+	9	after
+	10	a
+	11	historic
+			sense:	historic.s.01
+	12	Native
+			name:	MISC				12-12	Native 
+			sense:	native.a.03
+	13	American
+			name:	NATIONALITY				13-13	American 
+	14	tribe
+			sense:	tribe.n.01
+	15	of
+	16	the
+	17	area
+			sense:	area.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The two cities make up the core of the Bismarck - Mandan Metropolitan Statistical Area .
+
+
+Treebanked sentence:
+--------------------
+The two cities make up the core of the Bismarck - Mandan Metropolitan Statistical Area . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (CD two) (NNS cities))
+    (VP (VBP make)
+      (PRT (RP up))
+      (NP
+        (NP (DT the) (NN core))
+        (PP (IN of)
+          (NP (DT the) (NNP Bismarck) (HYPH -) (NNP Mandan) (NNP Metropolitan) (NNP Statistical) (NNP Area)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	two
+			name:	NUMBER				1-1	two 
+	2	cities
+			sense:	city.n.01
+	3	make
+			sense:	form.v.02
+			prop:	make.07
+			V		3-3	make 
+			N-ARG-A0		0-2	The two cities 
+			N-ARG-A1		5-14	the core of the Bismarck - Mandan Metropolitan Statistical Area 
+	4	up
+	5	the
+	6	core
+			sense:	core.n.01
+	7	of
+	8	the
+	9	Bismarck
+			coref:	IDENT			2	9-9	Bismarck 
+			name:	CITY				9-9	Bismarck 
+	10	-
+	11	Mandan
+			name:	ORGANIZATION				11-14	Mandan Metropolitan Statistical Area 
+	12	Metropolitan
+	13	Statistical
+	14	Area
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The North Dakota State Capitol , the tallest building in the state , is in central Bismarck .
+
+
+Treebanked sentence:
+--------------------
+The North Dakota State Capitol , the tallest building in the state , is in central Bismarck . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP North) (NNP Dakota) (NNP State) (NNP Capitol))
+      (, ,)
+      (NP
+        (NP (DT the) (JJS tallest) (NN building))
+        (PP (IN in)
+          (NP (DT the) (NN state))))
+      (, ,))
+    (VP (VBZ is)
+      (PP (IN in)
+        (NP (JJ central) (NNP Bismarck))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	North
+			name:	STATE_OR_PROVINCE				1-2	North Dakota 
+	2	Dakota
+	3	State
+			name:	LOCATION				3-4	State Capitol 
+	4	Capitol
+	5	,
+	6	the
+	7	tallest
+			sense:	tall.a.01
+	8	building
+			sense:	building.n.01
+	9	in
+	10	the
+			coref:	IDENT			4	10-11	the state 
+	11	state
+			sense:	state.n.01
+	12	,
+	13	is
+			sense:	be.v.03
+			prop:	be.01
+			V		13-13	is 
+			N-ARG-A1		0-11	The North Dakota State Capitol , the tallest building in the state 
+			N-ARG-A2		14-16	in central Bismarck 
+	14	in
+	15	central
+			coref:	IDENT			2	15-16	central Bismarck 
+			sense:	central.a.02
+	16	Bismarck
+			name:	PERSON				16-16	Bismarck 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The state government employs more than 4,000 in the city .
+
+
+Treebanked sentence:
+--------------------
+The state government employs more than 4,000 in the city . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN state) (NN government))
+    (VP (VBZ employs)
+      (NP
+        (NP
+          (QP (JJR more) (IN than) (CD 4,000)))
+        (PP (IN in)
+          (NP (DT the) (NN city)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	state
+			sense:	state.n.01
+	2	government
+			sense:	government.n.01
+	3	employs
+			sense:	hire.v.01
+			prop:	employ.01
+			V		3-3	employs 
+			N-ARG-A0		0-2	The state government 
+			N-ARG-A1		4-6	more than 4,000 
+			N-ARGM-LOC		7-9	in the city 
+	4	more
+			sense:	more.a.02
+	5	than
+	6	4,000
+			name:	NUMBER				6-6	4,000 
+	7	in
+	8	the
+			coref:	IDENT			1	8-9	the city 
+	9	city
+			sense:	city.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As a hub of retail and health care , Bismarck is the economic center of south - central North Dakota and north - central South Dakota .
+
+
+Treebanked sentence:
+--------------------
+As a hub of retail and health care , Bismarck is the economic center of south - central North Dakota and north - central South Dakota . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN As)
+      (NP
+        (NP (DT a) (NN hub))
+        (PP (IN of)
+          (NP
+            (UCP (JJ retail)
+              (CC and)
+              (NN health))
+            (NN care)))))
+    (, ,)
+    (NP (NNP Bismarck))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ economic) (NN center))
+        (PP (IN of)
+          (NP
+            (NP
+              (NML (RB south) (HYPH -)
+                (NML (JJ central))
+                (NNP North))
+              (NNP Dakota))
+            (CC and)
+            (NP
+              (ADJP
+                (ADVP (RB north))
+                (HYPH -) (JJ central))
+              (NNP South) (NNP Dakota))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	a
+	2	hub
+			sense:	hub.n.02
+	3	of
+	4	retail
+	5	and
+	6	health
+			sense:	health.n.01
+	7	care
+			sense:	care.n.01
+	8	,
+	9	Bismarck
+			coref:	IDENT			2	9-9	Bismarck 
+			name:	PERSON				9-9	Bismarck 
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		9-9	Bismarck 
+			N-ARG-A2		11-25	the economic center of south - central North Dakota and north - central South Dakota 
+	11	the
+	12	economic
+			sense:	economic.a.01
+	13	center
+			sense:	center.n.01
+	14	of
+	15	south
+			sense:	south.r.01
+	16	-
+	17	central
+			sense:	central.a.02
+	18	North
+			name:	STATE_OR_PROVINCE				18-19	North Dakota 
+	19	Dakota
+	20	and
+	21	north
+			sense:	north.r.01
+	22	-
+	23	central
+			sense:	central.a.02
+	24	South
+			name:	STATE_OR_PROVINCE				24-25	South Dakota 
+	25	Dakota
+	26	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.0-3	The city 's population 
+				2.12-14	its metropolitan population 
+	Chain 1 (IDENT)
+				2.0-2	The city 's 
+				2.12-12	its 
+				9.8-9	the city 
+	Chain 2 (IDENT)
+				8.15-16	central Bismarck 
+				0.0-0	Bismarck 
+				3.6-6	Bismarck 
+				4.0-0	Bismarck 
+				6.0-0	Bismarck 
+				7.9-9	Bismarck 
+				10.9-9	Bismarck 
+	Chain 3 (IDENT)
+				2.7-7	2017 
+				3.1-1	2017 
+	Chain 4 (IDENT)
+				0.7-12	the U.S. state of North Dakota 
+				5.12-13	the state 
+				8.10-11	the state 
+

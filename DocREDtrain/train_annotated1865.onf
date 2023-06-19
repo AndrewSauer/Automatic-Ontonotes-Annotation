@@ -1,0 +1,983 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mackinac Island State Park is a state park located on Mackinac Island in the U.S. state of Michigan .
+
+
+Treebanked sentence:
+--------------------
+Mackinac Island State Park is a state park located on Mackinac Island in the U.S. state of Michigan . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Mackinac) (NNP Island) (NNP State) (NNP Park))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN state) (NN park))
+        (VP (VBN located)
+          (PP (IN on)
+            (NP
+              (NP (NNP Mackinac) (NNP Island))
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NNP U.S.) (NN state))
+                  (PP (IN of)
+                    (NP (NNP Michigan))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mackinac
+			coref:	IDENT			4	0-3	Mackinac Island State Park 
+			name:	LOCATION				0-3	Mackinac Island State Park 
+	1	Island
+	2	State
+	3	Park
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	Mackinac Island State Park 
+			N-ARG-A2		5-17	a state park located on Mackinac Island in the U.S. state of Michigan 
+	5	a
+	6	state
+			sense:	state.n.01
+	7	park
+			sense:	park.n.01
+	8	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		8-8	located 
+			N-ARG-A1		5-7	a state park 
+			N-ARGM-LOC		9-11	on Mackinac Island 
+			N-ARGM-LOC		12-17	in the U.S. state of Michigan 
+	9	on
+	10	Mackinac
+			coref:	IDENT			0	10-17	Mackinac Island in the U.S. state of Michigan 
+			name:	LOCATION				10-11	Mackinac Island 
+	11	Island
+	12	in
+	13	the
+	14	U.S.
+			name:	COUNTRY				14-14	U.S. 
+	15	state
+			sense:	state.n.01
+	16	of
+	17	Michigan
+			coref:	IDENT			1	17-17	Michigan 
+			name:	STATE_OR_PROVINCE				17-17	Michigan 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The island park encompasses 2.81   mi² ( 7.28   km² ) , which is approximately 80 % of the island 's total area of 3.78   mi² ( 9.78   km² ) .
+
+
+Treebanked sentence:
+--------------------
+The island park encompasses 2.81 mi ² ( 7.28 km ² ) , which is approximately 80 % of the island 's total area of 3.78 mi ² ( 9.78 km ² ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN island) (NN park))
+    (VP (VBZ encompasses)
+      (NP
+        (NP
+          (NP (CD 2.81) (NNP mi) (SYM ²))
+          (-LRB- -LRB-)
+          (NP (CD 7.28) (NN km) (SYM ²))
+          (-RRB- -RRB-))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ is)
+              (NP
+                (NP
+                  (QP (RB approximately) (CD 80))
+                  (NN %))
+                (PP (IN of)
+                  (NP
+                    (NP
+                      (NP (DT the) (NN island) (POS 's))
+                      (JJ total) (NN area))
+                    (PP (IN of)
+                      (NP (CD 3.78) (NNP mi) (SYM ²))))))))))
+      (PRN (-LRB- -LRB-)
+        (NP (CD 9.78) (NN km) (SYM ²))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			4	0-2	The island park 
+	1	island
+			sense:	island.n.01
+	2	park
+			sense:	park.n.01
+	3	encompasses
+			sense:	embrace.v.01
+			prop:	encompass.01
+			V		3-3	encompasses 
+			N-ARG-A0		0-2	The island park 
+			N-ARG-A1		4-32	2.81 mi ² ( 7.28 km ² ) , which is approximately 80 % of the island 's total area of 3.78 mi ² ( 9.78 km ² ) 
+	4	2.81
+			name:	NUMBER				4-4	2.81 
+	5	mi
+	6	²
+	7	(
+	8	7.28
+			name:	NUMBER				8-8	7.28 
+	9	km
+			sense:	kilometer.n.01
+	10	²
+	11	)
+	12	,
+	13	which
+	14	is
+			sense:	equal.v.01
+			prop:	be.01
+			V		14-14	is 
+			N-ARG-A1		4-11	2.81 mi ² ( 7.28 km ² ) 
+			R-ARG-A1		13-13	which 
+			N-ARG-A2		15-32	approximately 80 % of the island 's total area of 3.78 mi ² ( 9.78 km ² ) 
+	15	approximately
+			sense:	approximately.r.01
+	16	80
+			name:	PERCENT				16-17	80 % 
+	17	%
+	18	of
+	19	the
+			coref:	IDENT			0	19-21	the island 's 
+	20	island
+			sense:	island.n.01
+	21	's
+	22	total
+			sense:	entire.s.01
+	23	area
+			sense:	area.n.06
+	24	of
+	25	3.78
+			name:	NUMBER				25-25	3.78 
+	26	mi
+	27	²
+	28	(
+	29	9.78
+			name:	NUMBER				29-29	9.78 
+	30	km
+			sense:	kilometer.n.01
+	31	²
+	32	)
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The park is also within the boundaries of the city of Mackinac Island and has permanent residents within its boundaries .
+
+
+Treebanked sentence:
+--------------------
+The park is also within the boundaries of the city of Mackinac Island and has permanent residents within its boundaries . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN park))
+    (VP
+      (VP (VBZ is)
+        (ADVP (RB also))
+        (PP (IN within)
+          (NP
+            (NP (DT the) (NNS boundaries))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN city))
+                (PP (IN of)
+                  (NP (NNP Mackinac) (NNP Island))))))))
+      (CC and)
+      (VP (VBZ has)
+        (NP
+          (NP (JJ permanent) (NNS residents))
+          (PP (IN within)
+            (NP (PRP$ its) (NNS boundaries))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			4	0-1	The park 
+	1	park
+			sense:	park.n.01
+	2	is
+			sense:	be.v.03
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The park 
+			N-ARGM-DIS		3-3	also 
+			N-ARG-A2		4-12	within the boundaries of the city of Mackinac Island 
+	3	also
+			sense:	besides.r.02
+	4	within
+	5	the
+	6	boundaries
+			sense:	boundary.n.02
+	7	of
+	8	the
+			coref:	IDENT			3	8-12	the city of Mackinac Island 
+	9	city
+			sense:	city.n.01
+	10	of
+	11	Mackinac
+			coref:	IDENT			0	11-12	Mackinac Island 
+			name:	LOCATION				11-12	Mackinac Island 
+	12	Island
+	13	and
+	14	has
+			sense:	have.v.01
+			prop:	have.03
+			V		14-14	has 
+			N-ARG-A0		0-1	The park 
+			N-ARG-A1		15-16	permanent residents 
+			N-ARGM-LOC		17-19	within its boundaries 
+	15	permanent
+			sense:	permanent.a.01
+	16	residents
+			sense:	resident.n.01
+	17	within
+	18	its
+			coref:	IDENT			3	18-18	its 
+	19	boundaries
+			sense:	boundary.n.02
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+M-185 circles the perimeter of the park as the only motorless highway in the state due to the island 's ban of automobiles .
+
+
+Treebanked sentence:
+--------------------
+M - 185 circles the perimeter of the park as the only motorless highway in the state due to the island 's ban of automobiles . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP (NN M))
+    (: -)
+    (NP
+      (NP (CD 185) (NNS circles))
+      (NP
+        (NP (DT the) (NN perimeter))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN park))
+            (PP (IN as)
+              (NP
+                (NP (DT the) (JJ only) (JJ motorless) (NN highway))
+                (PP (IN in)
+                  (NP
+                    (NP (DT the) (NN state))
+                    (PP (IN due)
+                      (PP (IN to)
+                        (NP
+                          (NP
+                            (NP (DT the) (NN island) (POS 's))
+                            (NN ban))
+                          (PP (IN of)
+                            (NP (NNS automobiles))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	M
+			sense:	meter.n.01
+	1	-
+	2	185
+	3	circles
+			sense:	circle.n.03
+	4	the
+	5	perimeter
+			sense:	margin.n.01
+	6	of
+	7	the
+	8	park
+			sense:	park.n.01
+	9	as
+	10	the
+	11	only
+			sense:	lone.s.03
+	12	motorless
+			sense:	unmotorized.a.01
+	13	highway
+			sense:	highway.n.01
+	14	in
+	15	the
+	16	state
+			sense:	state.n.01
+	17	due
+	18	to
+	19	the
+			coref:	IDENT			0	19-21	the island 's 
+	20	island
+			sense:	island.n.01
+	21	's
+	22	ban
+			sense:	ban.n.04
+	23	of
+	24	automobiles
+			sense:	car.n.01
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The park is governed by the Michigan Department of Natural Resources and the Mackinac Island State Park Commission .
+
+
+Treebanked sentence:
+--------------------
+The park is governed by the Michigan Department of Natural Resources and the Mackinac Island State Park Commission . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN park))
+    (VP (VBZ is)
+      (VP (VBN governed)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NNP Michigan) (NNP Department))
+            (PP (IN of)
+              (NP
+                (NP (NNP Natural) (NNPS Resources))
+                (CC and)
+                (NP (DT the) (NNP Mackinac) (NNP Island) (NNP State) (NNP Park) (NNP Commission))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			4	0-1	The park 
+	1	park
+			sense:	park.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	governed
+			sense:	regulate.v.02
+			prop:	govern.01
+			V		3-3	governed 
+			N-ARG-A1		0-1	The park 
+			N-ARG-A0		4-17	by the Michigan Department of Natural Resources and the Mackinac Island State Park Commission 
+	4	by
+	5	the
+	6	Michigan
+			name:	ORGANIZATION				6-10	Michigan Department of Natural Resources 
+	7	Department
+	8	of
+	9	Natural
+	10	Resources
+	11	and
+	12	the
+	13	Mackinac
+			name:	ORGANIZATION				13-17	Mackinac Island State Park Commission 
+	14	Island
+	15	State
+	16	Park
+	17	Commission
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On July 15 , 2009 , the park celebrated its 20 millionth visitor .
+
+
+Treebanked sentence:
+--------------------
+On July 15 , 2009 , the park celebrated its 20 millionth visitor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NNP July) (CD 15) (, ,) (CD 2009)))
+    (, ,)
+    (NP (DT the) (NN park))
+    (VP (VBD celebrated)
+      (NP (PRP$ its) (CD 20) (JJ millionth) (NN visitor)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	July
+			name:	DATE				1-4	July 15 , 2009 
+	2	15
+	3	,
+	4	2009
+	5	,
+	6	the
+			coref:	IDENT			4	6-7	the park 
+	7	park
+			sense:	park.n.01
+	8	celebrated
+			sense:	celebrate.v.02
+			prop:	celebrate.02
+			V		8-8	celebrated 
+			N-ARGM-TMP		0-4	On July 15 , 2009 
+			N-ARG-A0		6-7	the park 
+			N-ARG-A1		9-12	its 20 millionth visitor 
+	9	its
+			coref:	IDENT			4	9-9	its 
+	10	20
+			name:	ORDINAL				10-11	20 millionth 
+	11	millionth
+			sense:	millionth.s.01
+	12	visitor
+			sense:	visitor.n.01
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The park was first established as Mackinac National Park in 1875 , which was the second national park established in the United States after Yellowstone National Park .
+
+
+Treebanked sentence:
+--------------------
+The park was first established as Mackinac National Park in 1875 , which was the second national park established in the United States after Yellowstone National Park . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN park))
+    (VP (VBD was)
+      (ADVP (RB first))
+      (VP (VBN established)
+        (PP (IN as)
+          (NP
+            (NP
+              (NP (NNP Mackinac) (NNP National) (NNP Park))
+              (PP (IN in)
+                (NP (CD 1875))))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBD was)
+                  (NP
+                    (NP (DT the) (JJ second) (JJ national) (NN park))
+                    (VP (VBN established)
+                      (PP (IN in)
+                        (NP (DT the) (NNP United) (NNP States)))
+                      (PP (IN after)
+                        (NP (NNP Yellowstone) (NNP National) (NNP Park))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			4	0-1	The park 
+	1	park
+			sense:	park.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	first
+			name:	ORDINAL				3-3	first 
+			sense:	first.r.02
+	4	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		4-4	established 
+			N-ARG-A1		0-1	The park 
+			N-ARGM-TMP		3-3	first 
+			N-ARG-A2		5-8	as Mackinac National Park 
+			N-ARGM-TMP		9-10	in 1875 
+			C-ARG-A2		12-26	which was the second national park established in the United States after Yellowstone National Park 
+	5	as
+	6	Mackinac
+			coref:	IDENT			4	6-8	Mackinac National Park 
+			name:	LOCATION				6-8	Mackinac National Park 
+	7	National
+	8	Park
+	9	in
+	10	1875
+			name:	DATE				10-10	1875 
+	11	,
+	12	which
+	13	was
+			sense:	be.v.01
+			prop:	be.01
+			V		13-13	was 
+			N-ARG-A1		6-8	Mackinac National Park 
+			R-ARG-A1		12-12	which 
+			N-ARG-A2		14-26	the second national park established in the United States after Yellowstone National Park 
+	14	the
+	15	second
+			name:	ORDINAL				15-15	second 
+			sense:	second.s.01
+	16	national
+			sense:	national.s.04
+	17	park
+			sense:	park.n.01
+	18	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		18-18	established 
+			N-ARG-A1		14-17	the second national park 
+			N-ARGM-LOC		19-22	in the United States 
+			N-ARGM-TMP		23-26	after Yellowstone National Park 
+	19	in
+	20	the
+	21	United
+			name:	COUNTRY				21-22	United States 
+	22	States
+	23	after
+	24	Yellowstone
+			name:	ORGANIZATION				24-26	Yellowstone National Park 
+	25	National
+	26	Park
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1895 , it was transferred to state control and reorganized as Mackinac Island State Park , which was the first state park in Michigan .
+
+
+Treebanked sentence:
+--------------------
+In 1895 , it was transferred to state control and reorganized as Mackinac Island State Park , which was the first state park in Michigan . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1895)))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (VP
+        (VP (VBN transferred)
+          (PP (IN to)
+            (NP (NN state) (NN control))))
+        (CC and)
+        (VP (VBN reorganized)
+          (PP (IN as)
+            (NP
+              (NP (NNP Mackinac) (NNP Island) (NNP State) (NNP Park))
+              (, ,)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBD was)
+                    (NP
+                      (NP (DT the) (JJ first) (NN state) (NN park))
+                      (PP (IN in)
+                        (NP (NNP Michigan))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1895
+			name:	DATE				1-1	1895 
+	2	,
+	3	it
+			coref:	IDENT			4	3-3	it 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	transferred
+			sense:	transfer.v.05
+			prop:	transfer.01
+			V		5-5	transferred 
+			N-ARGM-TMP		0-1	In 1895 
+			N-ARG-A1		3-3	it 
+			N-ARG-A2		6-8	to state control 
+	6	to
+	7	state
+			sense:	state.n.03
+	8	control
+			sense:	control.n.01
+	9	and
+	10	reorganized
+			sense:	reorganize.v.01
+			prop:	reorganize.01
+			V		10-10	reorganized 
+			N-ARGM-TMP		0-1	In 1895 
+			N-ARG-A1		3-3	it 
+			N-ARG-A4		11-24	as Mackinac Island State Park , which was the first state park in Michigan 
+	11	as
+	12	Mackinac
+			name:	LOCATION				12-15	Mackinac Island State Park 
+	13	Island
+	14	State
+	15	Park
+	16	,
+	17	which
+	18	was
+			sense:	be.v.01
+			prop:	be.01
+			V		18-18	was 
+			N-ARG-A1		12-15	Mackinac Island State Park 
+			R-ARG-A1		17-17	which 
+			N-ARG-A2		19-24	the first state park in Michigan 
+	19	the
+	20	first
+			name:	ORDINAL				20-20	first 
+			sense:	first.a.01
+	21	state
+			sense:	state.n.03
+	22	park
+			sense:	park.n.01
+	23	in
+	24	Michigan
+			coref:	IDENT			1	24-24	Michigan 
+			name:	STATE_OR_PROVINCE				24-24	Michigan 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The park contains many important historical and geological features , such as Fort Mackinac , Fort Holmes , other historic buildings , historic sites , limestone caves , and other unique rock formations .
+
+
+Treebanked sentence:
+--------------------
+The park contains many important historical and geological features , such as Fort Mackinac , Fort Holmes , other historic buildings , historic sites , limestone caves , and other unique rock formations . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN park))
+    (VP (VBZ contains)
+      (NP
+        (NP (JJ many) (JJ important)
+          (ADJP (JJ historical)
+            (CC and)
+            (JJ geological))
+          (NNS features))
+        (, ,)
+        (PP (JJ such) (IN as)
+          (NP
+            (NP (NNP Fort) (NNP Mackinac))
+            (, ,)
+            (NP (NNP Fort) (NNP Holmes))
+            (, ,)
+            (NP (JJ other) (JJ historic) (NNS buildings))
+            (, ,)
+            (NP (JJ historic) (NNS sites))
+            (, ,)
+            (NP (NN limestone) (NNS caves))
+            (, ,)
+            (CC and)
+            (NP (JJ other) (JJ unique) (NN rock) (NNS formations))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			4	0-1	The park 
+	1	park
+			sense:	park.n.01
+	2	contains
+			sense:	incorporate.v.02
+			prop:	contain.01
+			V		2-2	contains 
+			N-ARG-A0		0-1	The park 
+			N-ARG-A1		3-32	many important historical and geological features , such as Fort Mackinac , Fort Holmes , other historic buildings , historic sites , limestone caves , and other unique rock formations 
+	3	many
+			sense:	many.a.01
+	4	important
+			sense:	important.a.01
+	5	historical
+			sense:	historic.s.01
+	6	and
+	7	geological
+			sense:	geological.a.01
+	8	features
+			sense:	feature.n.01
+	9	,
+	10	such
+			sense:	such.s.01
+	11	as
+	12	Fort
+			name:	LOCATION				12-13	Fort Mackinac 
+	13	Mackinac
+	14	,
+	15	Fort
+			name:	LOCATION				15-16	Fort Holmes 
+	16	Holmes
+	17	,
+	18	other
+			sense:	other.a.01
+	19	historic
+			sense:	historic.s.01
+	20	buildings
+			sense:	building.n.01
+	21	,
+	22	historic
+			coref:	IDENT			2	22-23	historic sites 
+			sense:	historic.s.01
+	23	sites
+			sense:	site.n.01
+	24	,
+	25	limestone
+			sense:	limestone.n.01
+	26	caves
+			sense:	cave.n.01
+	27	,
+	28	and
+	29	other
+			sense:	other.a.01
+	30	unique
+			sense:	alone.s.04
+	31	rock
+			sense:	rock.n.02
+	32	formations
+			sense:	geological_formation.n.01
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The park also operates the Mackinac Island Airport .
+
+
+Treebanked sentence:
+--------------------
+The park also operates the Mackinac Island Airport . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN park))
+    (ADVP (RB also))
+    (VP (VBZ operates)
+      (NP (DT the) (NNP Mackinac) (NNP Island) (NNP Airport)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			4	0-1	The park 
+	1	park
+			sense:	park.n.01
+	2	also
+			sense:	besides.r.02
+	3	operates
+			sense:	operate.v.01
+			prop:	operate.01
+			V		3-3	operates 
+			N-ARG-A0		0-1	The park 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A1		4-7	the Mackinac Island Airport 
+	4	the
+	5	Mackinac
+			name:	LOCATION				5-7	Mackinac Island Airport 
+	6	Island
+	7	Airport
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Many of these sites are formally operated by the Mackinac Island State Park Commission , which also operates two other parks around the Straits of Mackinac area : Colonial Michilimackinac and Historic Mill Creek Discovery Park .
+
+
+Treebanked sentence:
+--------------------
+Many of these sites are formally operated by the Mackinac Island State Park Commission , which also operates two other parks around the Straits of Mackinac area : Colonial Michilimackinac and Historic Mill Creek Discovery Park . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (JJ Many))
+      (PP (IN of)
+        (NP (DT these) (NNS sites))))
+    (VP (VBP are)
+      (ADVP (RB formally))
+      (VP (VBN operated)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NNP Mackinac)
+              (NML (NNP Island) (NNP State) (NNP Park))
+              (NNP Commission))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (ADVP (RB also))
+                (VP (VBZ operates)
+                  (NP
+                    (NP
+                      (NP (CD two) (JJ other) (NNS parks))
+                      (PP (IN around)
+                        (NP
+                          (NP (DT the) (NNPS Straits))
+                          (PP (IN of)
+                            (NP (NNP Mackinac) (NN area))))))
+                    (: :)
+                    (NP
+                      (NP (JJ Colonial) (NNP Michilimackinac))
+                      (CC and)
+                      (NP (JJ Historic) (NNP Mill) (NNP Creek) (NNP Discovery) (NNP Park)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Many
+			sense:	many.a.01
+	1	of
+	2	these
+			coref:	IDENT			2	2-3	these sites 
+	3	sites
+			sense:	site.n.01
+	4	are
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	are 
+	5	formally
+			sense:	formally.r.01
+	6	operated
+			sense:	operate.v.01
+			prop:	operate.01
+			V		6-6	operated 
+			N-ARG-A1		0-3	Many of these sites 
+			N-ARGM-MNR		5-5	formally 
+			N-ARG-A0		7-35	by the Mackinac Island State Park Commission , which also operates two other parks around the Straits of Mackinac area : Colonial Michilimackinac and Historic Mill Creek Discovery Park 
+	7	by
+	8	the
+	9	Mackinac
+			name:	ORGANIZATION				9-13	Mackinac Island State Park Commission 
+	10	Island
+	11	State
+	12	Park
+	13	Commission
+	14	,
+	15	which
+	16	also
+			sense:	besides.r.02
+	17	operates
+			sense:	operate.v.01
+			prop:	operate.01
+			V		17-17	operates 
+			N-ARG-A0		8-13	the Mackinac Island State Park Commission 
+			R-ARG-A0		15-15	which 
+			N-ARGM-DIS		16-16	also 
+			N-ARG-A1		18-35	two other parks around the Straits of Mackinac area : Colonial Michilimackinac and Historic Mill Creek Discovery Park 
+	18	two
+			name:	NUMBER				18-18	two 
+	19	other
+			sense:	other.a.01
+	20	parks
+			sense:	park.n.01
+	21	around
+	22	the
+	23	Straits
+			name:	LOCATION				23-25	Straits of Mackinac 
+	24	of
+	25	Mackinac
+	26	area
+			sense:	area.n.01
+	27	:
+	28	Colonial
+			sense:	colonial.a.01
+	29	Michilimackinac
+	30	and
+	31	Historic
+			sense:	historic.s.01
+	32	Mill
+	33	Creek
+	34	Discovery
+	35	Park
+	36	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.10-17	Mackinac Island in the U.S. state of Michigan 
+				1.19-21	the island 's 
+				2.11-12	Mackinac Island 
+				3.19-21	the island 's 
+	Chain 1 (IDENT)
+				0.17-17	Michigan 
+				7.24-24	Michigan 
+	Chain 2 (IDENT)
+				8.22-23	historic sites 
+				10.2-3	these sites 
+	Chain 3 (IDENT)
+				2.8-12	the city of Mackinac Island 
+				2.18-18	its 
+	Chain 4 (IDENT)
+				0.0-3	Mackinac Island State Park 
+				1.0-2	The island park 
+				2.0-1	The park 
+				4.0-1	The park 
+				5.6-7	the park 
+				5.9-9	its 
+				6.0-1	The park 
+				6.6-8	Mackinac National Park 
+				7.3-3	it 
+				8.0-1	The park 
+				9.0-1	The park 
+

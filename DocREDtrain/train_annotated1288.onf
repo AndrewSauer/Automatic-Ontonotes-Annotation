@@ -1,0 +1,590 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Matthias Sammer (; born 5 September 1967 ) is a retired German footballer and coach who last worked as sporting director of Bayern Munich .
+
+
+Treebanked sentence:
+--------------------
+Matthias Sammer ( ; born 5 September 1967 ) is a retired German footballer and coach who last worked as sporting director of Bayern Munich . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Matthias) (NNP Sammer))
+      (-LRB- -LRB-)
+      (VP
+        (PRN (: ;)
+          (S
+            (S
+              (VP (VBN born)
+                (NP
+                  (NP (CD 5))
+                  (NP (NNP September))
+                  (PRN
+                    (NP (CD 1967))
+                    (-RRB- -RRB-)))))
+            (VP (VBZ is)
+              (NP
+                (NP (DT a) (JJ retired) (JJ German) (NN footballer)
+                  (CC and)
+                  (NN coach))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (ADVP (RB last))
+                    (VP (VBD worked)
+                      (PP (IN as)))))))))
+        (VBG sporting)
+        (NP (NN director))))
+    (PP (IN of)
+      (NP (NNP Bayern) (NNP Munich)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Matthias
+			coref:	IDENT			0	0-1	Matthias Sammer 
+			name:	PERSON				0-1	Matthias Sammer 
+	1	Sammer
+	2	(
+	3	;
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-1	Matthias Sammer 
+			N-ARGM-TMP		5-7	5 September 1967 
+	5	5
+			name:	DATE				5-7	5 September 1967 
+	6	September
+	7	1967
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	Matthias Sammer ( ; born 5 September 1967 ) 
+			N-ARG-A2		10-24	a retired German footballer and coach who last worked as sporting director of Bayern Munich 
+	10	a
+			coref:	IDENT			3	10-13	a retired German footballer 
+	11	retired
+			sense:	retired.s.01
+	12	German
+			name:	NATIONALITY				12-12	German 
+	13	footballer
+			name:	TITLE				13-13	footballer 
+			sense:	football_player.n.01
+	14	and
+	15	coach
+			name:	TITLE				15-15	coach 
+			sense:	coach.n.01
+	16	who
+	17	last
+			sense:	last.r.01
+	18	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		18-18	worked 
+			N-ARG-A0		10-15	a retired German footballer and coach 
+			R-ARG-A0		16-16	who 
+			N-ARGM-TMP		17-17	last 
+			N-ARG-A1		19-24	as sporting director of Bayern Munich 
+	19	as
+	20	sporting
+			sense:	frolic.v.01
+			prop:	spotting.01
+			V		20-20	sporting 
+			N-ARG-A0		21-21	director 
+	21	director
+			name:	TITLE				21-21	director 
+			sense:	director.n.01
+	22	of
+	23	Bayern
+			name:	ORGANIZATION				23-24	Bayern Munich 
+	24	Munich
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He played as a defensive midfielder , and later in his career as a sweeper .
+
+
+Treebanked sentence:
+--------------------
+He played as a defensive midfielder , and later in his career as a sweeper . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD played)
+      (PP
+        (PP (IN as)
+          (NP (DT a) (JJ defensive) (NN midfielder)))
+        (, ,)
+        (CC and)
+        (ADVP (RB later))
+        (PP (IN in)
+          (NP (PRP$ his) (NN career))))
+      (PP (IN as)
+        (NP (DT a) (NN sweeper))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			3	0-0	He 
+	1	played
+			sense:	play.v.01
+			prop:	play.01
+			V		1-1	played 
+			N-ARG-A0		0-0	He 
+			N-ARGM-PRD		2-5	as a defensive midfielder 
+	2	as
+	3	a
+	4	defensive
+			name:	TITLE				4-5	defensive midfielder 
+			sense:	defensive.a.01
+	5	midfielder
+	6	,
+	7	and
+	8	later
+			sense:	subsequently.r.01
+	9	in
+	10	his
+			coref:	IDENT			3	10-10	his 
+	11	career
+			sense:	career.n.01
+	12	as
+	13	a
+	14	sweeper
+			sense:	sweeper.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+With Borussia Dortmund as a player , Sammer won the Bundesliga and DFL - Supercup in 1995 , the Bundesliga , DFL - Supercup , and European Footballer of the Year in 1996 , and the UEFA Champions League and Intercontinental Cup in 1997 .
+
+
+Treebanked sentence:
+--------------------
+With Borussia Dortmund as a player , Sammer won the Bundesliga and DFL - Supercup in 1995 , the Bundesliga , DFL - Supercup , and European Footballer of the Year in 1996 , and the UEFA Champions League and Intercontinental Cup in 1997 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN With)
+      (NP
+        (NP (NNP Borussia) (NNP Dortmund))
+        (PP (IN as)
+          (NP (DT a) (NN player)))))
+    (, ,)
+    (NP (NNP Sammer))
+    (VP (VBD won)
+      (NP
+        (NP (DT the) (NNP Bundesliga))
+        (CC and)
+        (NP (NNP DFL) (HYPH -) (NNP Supercup)))
+      (PP (IN in)
+        (NP
+          (NP (CD 1995))
+          (, ,)
+          (NP (DT the) (NNP Bundesliga))
+          (, ,)
+          (NP (NNP DFL) (HYPH -) (NNP Supercup))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (JJ European) (NNP Footballer))
+            (PP (IN of)
+              (NP
+                (NP
+                  (NP (DT the) (NN Year))
+                  (PP (IN in)
+                    (NP (CD 1996))))
+                (, ,)
+                (CC and)
+                (NP
+                  (NP (DT the)
+                    (NML (NNP UEFA) (NNPS Champions))
+                    (NNP League))
+                  (CC and)
+                  (NP
+                    (NP (NNP Intercontinental) (NNP Cup))
+                    (PP (IN in)
+                      (NP (CD 1997)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	With
+	1	Borussia
+			name:	ORGANIZATION				1-2	Borussia Dortmund 
+	2	Dortmund
+	3	as
+	4	a
+	5	player
+			sense:	player.n.01
+	6	,
+	7	Sammer
+			coref:	IDENT			0	7-7	Sammer 
+			name:	PERSON				7-7	Sammer 
+	8	won
+			sense:	win.v.01
+			prop:	win.01
+			V		8-8	won 
+			N-ARGM-ADV		0-5	With Borussia Dortmund as a player 
+			N-ARG-A0		7-7	Sammer 
+			N-ARG-A1		18-30	the Bundesliga , DFL - Supercup , and European Footballer of the Year 
+			N-ARGM-TMP		31-32	in 1996 
+			N-ARGM-TMP		42-43	in 1997 
+	9	the
+	10	Bundesliga
+			name:	MISC				10-10	Bundesliga 
+	11	and
+	12	DFL
+	13	-
+	14	Supercup
+			name:	MISC				14-14	Supercup 
+	15	in
+	16	1995
+			name:	DATE				16-16	1995 
+	17	,
+	18	the
+			coref:	IDENT			1	18-19	the Bundesliga 
+	19	Bundesliga
+			name:	MISC				19-19	Bundesliga 
+	20	,
+	21	DFL
+	22	-
+	23	Supercup
+			name:	MISC				23-23	Supercup 
+	24	,
+	25	and
+	26	European
+			name:	NATIONALITY				26-26	European 
+	27	Footballer
+			name:	TITLE				27-27	Footballer 
+	28	of
+			name:	MISC				28-28	of 
+	29	the
+			name:	DATE				29-32	the Year in 1996 
+	30	Year
+			sense:	year.n.01
+	31	in
+	32	1996
+	33	,
+	34	and
+	35	the
+	36	UEFA
+			name:	ORGANIZATION				36-38	UEFA Champions League 
+	37	Champions
+	38	League
+	39	and
+	40	Intercontinental
+			name:	MISC				40-41	Intercontinental Cup 
+	41	Cup
+	42	in
+	43	1997
+			name:	DATE				43-43	1997 
+	44	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+With Germany as a player , Sammer won the UEFA Euro 1996 , where he was named the tournament 's best player , and was subsequently awarded the Ballon d'Or later that year .
+
+
+Treebanked sentence:
+--------------------
+With Germany as a player , Sammer won the UEFA Euro 1996 , where he was named the tournament 's best player , and was subsequently awarded the Ballon d'Or later that year . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN With)
+      (NP
+        (NP (NNP Germany))
+        (PP (IN as)
+          (NP (DT a) (NN player)))))
+    (, ,)
+    (NP (NNP Sammer))
+    (VP
+      (VP (VBD won)
+        (NP
+          (NP (DT the)
+            (NML (NNP UEFA) (NNP Euro))
+            (CD 1996))
+          (, ,)
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP (PRP he))
+              (VP (VBD was)
+                (VP (VBN named)
+                  (NP
+                    (NP (DT the) (NN tournament) (POS 's))
+                    (JJS best) (NN player))))))))
+      (, ,)
+      (CC and)
+      (VP (VBD was)
+        (ADVP (RB subsequently))
+        (VP (VBN awarded)
+          (NP (DT the) (NNP Ballon) (NNP d'Or))
+          (ADVP (RB later))
+          (NP-TMP (DT that) (NN year)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	With
+	1	Germany
+			coref:	IDENT			2	1-1	Germany 
+			name:	COUNTRY				1-1	Germany 
+	2	as
+	3	a
+	4	player
+			sense:	player.n.01
+	5	,
+	6	Sammer
+			coref:	IDENT			0	6-6	Sammer 
+			name:	PERSON				6-6	Sammer 
+	7	won
+			sense:	win.v.01
+			prop:	win.01
+			V		7-7	won 
+			N-ARG-A0		6-6	Sammer 
+			N-ARG-A1		8-21	the UEFA Euro 1996 , where he was named the tournament 's best player 
+	8	the
+	9	UEFA
+			name:	ORGANIZATION				9-9	UEFA 
+	10	Euro
+	11	1996
+			name:	DATE				11-11	1996 
+	12	,
+	13	where
+	14	he
+			coref:	IDENT			0	14-14	he 
+	15	was
+			sense:	be.v.01
+			prop:	be.03
+			V		15-15	was 
+	16	named
+			sense:	name.v.02
+			prop:	name.01
+			V		16-16	named 
+			N-ARGM-LOC		13-13	where 
+			N-ARG-A1		14-14	he 
+			N-ARG-A2		17-21	the tournament 's best player 
+	17	the
+	18	tournament
+			sense:	tournament.n.01
+	19	's
+	20	best
+			sense:	good.a.01
+	21	player
+			sense:	player.n.01
+	22	,
+	23	and
+	24	was
+			sense:	be.v.01
+			prop:	be.03
+			V		24-24	was 
+	25	subsequently
+			sense:	subsequently.r.01
+	26	awarded
+			sense:	award.v.01
+			prop:	award.01
+			V		26-26	awarded 
+			N-ARGM-ADV		0-4	With Germany as a player 
+			N-ARG-A2		6-6	Sammer 
+			N-ARGM-TMP		25-25	subsequently 
+			N-ARG-A1		27-29	the Ballon d'Or 
+			N-ARGM-TMP		30-32	later that year 
+	27	the
+	28	Ballon
+			name:	PERSON				28-28	Ballon 
+	29	d'Or
+	30	later
+			sense:	subsequently.r.01
+	31	that
+	32	year
+			name:	DURATION				32-32	year 
+			sense:	year.n.01
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sammer retired with 74 total caps , 23 for East Germany and 51 for the unified side .
+
+
+Treebanked sentence:
+--------------------
+Sammer retired with 74 total caps , 23 for East Germany and 51 for the unified side . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Sammer))
+    (VP (VBD retired)
+      (PP (IN with)
+        (NP
+          (NP (CD 74) (JJ total) (NNS caps))
+          (, ,)
+          (NP
+            (NP (CD 23))
+            (PP (IN for)
+              (NP (NNP East) (NNP Germany))))
+          (CC and)
+          (NP
+            (NP (CD 51))
+            (PP (IN for)
+              (NP (DT the) (JJ unified) (NN side)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sammer
+			coref:	IDENT			0	0-0	Sammer 
+			name:	PERSON				0-0	Sammer 
+	1	retired
+			sense:	retire.v.01
+			prop:	retire.01
+			V		1-1	retired 
+			N-ARG-A0		0-0	Sammer 
+			N-ARGM-MNR		2-16	with 74 total caps , 23 for East Germany and 51 for the unified side 
+	2	with
+	3	74
+			name:	NUMBER				3-3	74 
+	4	total
+			sense:	entire.s.01
+	5	caps
+			sense:	cap.n.01
+	6	,
+	7	23
+			name:	NUMBER				7-7	23 
+	8	for
+	9	East
+			coref:	IDENT			2	9-10	East Germany 
+			name:	COUNTRY				9-10	East Germany 
+	10	Germany
+	11	and
+	12	51
+			name:	NUMBER				12-12	51 
+	13	for
+	14	the
+	15	unified
+			sense:	incorporate.s.01
+	16	side
+			sense:	side.n.02
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+With Sammer as a manager , Borussia Dortmund won the Bundesliga in 2002 .
+
+
+Treebanked sentence:
+--------------------
+With Sammer as a manager , Borussia Dortmund won the Bundesliga in 2002 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN With)
+      (NP
+        (NP (NNP Sammer))
+        (PP (IN as)
+          (NP (DT a) (NN manager)))))
+    (, ,)
+    (NP (NNP Borussia) (NNP Dortmund))
+    (VP (VBD won)
+      (NP (DT the) (NNP Bundesliga))
+      (PP (IN in)
+        (NP (CD 2002))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	With
+	1	Sammer
+			coref:	IDENT			0	1-1	Sammer 
+			name:	PERSON				1-1	Sammer 
+	2	as
+	3	a
+	4	manager
+			name:	TITLE				4-4	manager 
+			sense:	coach.n.01
+	5	,
+	6	Borussia
+			name:	ORGANIZATION				6-7	Borussia Dortmund 
+	7	Dortmund
+	8	won
+			sense:	win.v.01
+			prop:	win.01
+			V		8-8	won 
+			N-ARGM-MNR		0-4	With Sammer as a manager 
+			N-ARG-A0		6-7	Borussia Dortmund 
+			N-ARG-A1		9-10	the Bundesliga 
+			N-ARGM-TMP		11-12	in 2002 
+	9	the
+			coref:	IDENT			1	9-10	the Bundesliga 
+	10	Bundesliga
+			name:	MISC				10-10	Bundesliga 
+	11	in
+	12	2002
+			name:	DATE				12-12	2002 
+	13	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Matthias Sammer 
+				2.7-7	Sammer 
+				3.6-6	Sammer 
+				3.14-14	he 
+				4.0-0	Sammer 
+				5.1-1	Sammer 
+	Chain 1 (IDENT)
+				2.18-19	the Bundesliga 
+				5.9-10	the Bundesliga 
+	Chain 2 (IDENT)
+				4.9-10	East Germany 
+				3.1-1	Germany 
+	Chain 3 (IDENT)
+				0.10-13	a retired German footballer 
+				1.0-0	He 
+				1.10-10	his 
+

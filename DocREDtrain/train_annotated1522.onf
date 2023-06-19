@@ -1,0 +1,771 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Martin Auer is an Austrian writer .
+
+
+Treebanked sentence:
+--------------------
+Martin Auer is an Austrian writer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Martin) (NNP Auer))
+    (VP (VBZ is)
+      (NP (DT an)
+        (NML (JJ Austrian) (NN writer))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Martin
+			coref:	IDENT			0	0-1	Martin Auer 
+			name:	PERSON				0-1	Martin Auer 
+	1	Auer
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Martin Auer 
+			N-ARG-A2		3-5	an Austrian writer 
+	3	an
+	4	Austrian
+			name:	NATIONALITY				4-4	Austrian 
+	5	writer
+			name:	TITLE				5-5	writer 
+			sense:	writer.n.01
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was born in Vienna in 1951 .
+
+
+Treebanked sentence:
+--------------------
+He was born in Vienna in 1951 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Vienna)))
+        (PP (IN in)
+          (NP (CD 1951)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-4	in Vienna 
+			N-ARGM-TMP		5-6	in 1951 
+	3	in
+	4	Vienna
+			name:	CITY				4-4	Vienna 
+	5	in
+	6	1951
+			name:	DATE				6-6	1951 
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After finishing school , he started but never finished the study of German and History .
+
+
+Treebanked sentence:
+--------------------
+After finishing school , he started but never finished the study of German and History . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG finishing)
+          (NP (NN school)))))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD started))
+      (CC but)
+      (ADVP (RB never))
+      (VP (VBD finished)
+        (NP
+          (NP (DT the) (NN study))
+          (PP (IN of)
+            (NP
+              (NP (JJ German))
+              (CC and)
+              (NP (NN History)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	finishing
+			sense:	complete.v.01
+			prop:	finish.01
+			V		1-1	finishing 
+			N-ARG-A1		2-2	school 
+	2	school
+			sense:	school.n.03
+	3	,
+	4	he
+			coref:	IDENT			0	4-4	he 
+	5	started
+			sense:	get_down.v.07
+			prop:	start.01
+			V		5-5	started 
+			N-ARGM-TMP		0-2	After finishing school 
+			N-ARG-A0		4-4	he 
+			N-ARG-A1		9-14	the study of German and History 
+	6	but
+	7	never
+			sense:	never.r.01
+	8	finished
+			sense:	complete.v.01
+			prop:	finish.01
+			V		8-8	finished 
+			N-ARGM-TMP		0-2	After finishing school 
+			N-ARG-A0		4-4	he 
+			N-ARGM-NEG		7-7	never 
+			N-ARG-A1		9-14	the study of German and History 
+	9	the
+	10	study
+			sense:	study.n.02
+	11	of
+	12	German
+			name:	NATIONALITY				12-12	German 
+	13	and
+	14	History
+			sense:	history.n.03
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was an actor , a singer - songwriter , a journalist , and a magician , before he published his first book in 1986 .
+
+
+Treebanked sentence:
+--------------------
+He was an actor , a singer - songwriter , a journalist , and a magician , before he published his first book in 1986 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (NN actor))
+        (, ,)
+        (NP (DT a) (NN singer) (HYPH -) (NN songwriter))
+        (, ,)
+        (NP (DT a) (NN journalist))
+        (, ,)
+        (CC and)
+        (NP (DT a) (NN magician)))
+      (, ,)
+      (SBAR (IN before)
+        (S
+          (NP (PRP he))
+          (VP (VBD published)
+            (NP (PRP$ his) (JJ first) (NN book))
+            (PP (IN in)
+              (NP (CD 1986)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-15	an actor , a singer - songwriter , a journalist , and a magician 
+			N-ARGM-TMP		17-24	before he published his first book in 1986 
+	2	an
+	3	actor
+			name:	TITLE				3-3	actor 
+			sense:	actor.n.01
+	4	,
+	5	a
+	6	singer
+			name:	TITLE				6-6	singer 
+			sense:	singer.n.01
+	7	-
+	8	songwriter
+			name:	TITLE				8-8	songwriter 
+			sense:	songwriter.n.01
+	9	,
+	10	a
+	11	journalist
+			name:	TITLE				11-11	journalist 
+			sense:	journalist.n.01
+	12	,
+	13	and
+	14	a
+	15	magician
+			name:	TITLE				15-15	magician 
+			sense:	magician.n.01
+	16	,
+	17	before
+	18	he
+			coref:	IDENT			0	18-18	he 
+	19	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		19-19	published 
+			N-ARG-A0		18-18	he 
+			N-ARG-A1		20-22	his first book 
+			N-ARGM-TMP		23-24	in 1986 
+	20	his
+			coref:	IDENT			0	20-20	his 
+	21	first
+			name:	ORDINAL				21-21	first 
+			sense:	first.a.01
+	22	book
+			sense:	book.n.01
+	23	in
+	24	1986
+			name:	DATE				24-24	1986 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Since then , he has published more than 40 titles , about two thirds for children .
+
+
+Treebanked sentence:
+--------------------
+Since then , he has published more than 40 titles , about two thirds for children . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Since)
+      (ADVP (RB then)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBZ has)
+      (VP (VBN published)
+        (NP
+          (QP (JJR more) (IN than) (CD 40))
+          (NNS titles))
+        (, ,)
+        (PP (IN about)
+          (NP
+            (NP (CD two) (NNS thirds))
+            (PP (IN for)
+              (NP (NNS children)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Since
+	1	then
+			sense:	then.r.03
+	2	,
+	3	he
+			coref:	IDENT			0	3-3	he 
+	4	has
+			sense:	have.v.01
+			prop:	have.01
+			V		4-4	has 
+	5	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		5-5	published 
+			N-ARGM-TMP		0-1	Since then 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		6-15	more than 40 titles , about two thirds for children 
+	6	more
+			sense:	more.a.02
+	7	than
+	8	40
+			name:	NUMBER				8-8	40 
+	9	titles
+			sense:	title.n.02
+	10	,
+	11	about
+	12	two
+			name:	NUMBER				12-12	two 
+	13	thirds
+			sense:	one-third.n.01
+	14	for
+	15	children
+			sense:	child.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He has been awarded several prizes , among them the Austrian National Prize for Children 's Literature in 1994 , 1998 , and 2000 .
+
+
+Treebanked sentence:
+--------------------
+He has been awarded several prizes , among them the Austrian National Prize for Children 's Literature in 1994 , 1998 , and 2000 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN awarded)
+          (NP
+            (NP (JJ several) (NNS prizes))
+            (, ,)
+            (PP (IN among)
+              (NP (PRP them))))
+          (NP-TMP
+            (NP (DT the) (NNP Austrian) (NNP National) (NNP Prize))
+            (PP (IN for)
+              (NP
+                (NP (NNP Children) (POS 's))
+                (NN Literature))))
+          (PP (IN in)
+            (NP
+              (NP (CD 1994))
+              (, ,)
+              (NP (CD 1998))
+              (, ,)
+              (CC and)
+              (NP (CD 2000)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	been
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	been 
+	3	awarded
+			sense:	award.v.01
+			prop:	award.01
+			V		3-3	awarded 
+			N-ARG-A2		0-0	He 
+			N-ARG-A1		4-23	several prizes , among them the Austrian National Prize for Children 's Literature in 1994 , 1998 , and 2000 
+	4	several
+			sense:	several.s.01
+	5	prizes
+			sense:	prize.n.01
+	6	,
+	7	among
+	8	them
+	9	the
+	10	Austrian
+			name:	NATIONALITY				10-10	Austrian 
+	11	National
+			name:	MISC				11-16	National Prize for Children 's Literature 
+	12	Prize
+	13	for
+	14	Children
+	15	's
+	16	Literature
+			sense:	literature.n.01
+	17	in
+	18	1994
+			name:	DATE				18-18	1994 
+	19	,
+	20	1998
+			name:	DATE				20-20	1998 
+	21	,
+	22	and
+			name:	DATE				22-23	and 2000 
+	23	2000
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He has been nominated for the Hans Christian Andersen Medal in 1997 , and has been made an Honorary Professor in 2005 .
+
+
+Treebanked sentence:
+--------------------
+He has been nominated for the Hans Christian Andersen Medal in 1997 , and has been made an Honorary Professor in 2005 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP (VBN nominated)
+            (PP (IN for)
+              (NP (DT the) (NNP Hans)
+                (NML (NNP Christian) (NNP Andersen))
+                (NNP Medal)))
+            (PP (IN in)
+              (NP (CD 1997))))))
+      (, ,)
+      (CC and)
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP (VBN made)
+            (NP
+              (NP (DT an) (JJ Honorary) (NN Professor))
+              (PP (IN in)
+                (NP (CD 2005))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	been
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	been 
+	3	nominated
+			sense:	nominate.v.01
+			prop:	nominate.01
+			V		3-3	nominated 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		4-9	for the Hans Christian Andersen Medal 
+			N-ARGM-TMP		10-11	in 1997 
+	4	for
+	5	the
+	6	Hans
+			name:	MISC				6-6	Hans 
+	7	Christian
+			name:	RELIGION				7-7	Christian 
+	8	Andersen
+			name:	MISC				8-9	Andersen Medal 
+	9	Medal
+	10	in
+	11	1997
+			name:	DATE				11-11	1997 
+	12	,
+	13	and
+	14	has
+			sense:	have.v.01
+			prop:	have.01
+			V		14-14	has 
+	15	been
+			sense:	be.v.01
+			prop:	be.03
+			V		15-15	been 
+	16	made
+			sense:	make.v.02
+			prop:	make.02
+			V		16-16	made 
+			N-ARG-A1		17-19	an Honorary Professor 
+			N-ARGM-TMP		20-21	in 2005 
+	17	an
+	18	Honorary
+			sense:	honorary.s.01
+	19	Professor
+			name:	TITLE				19-19	Professor 
+			sense:	professor.n.01
+	20	in
+	21	2005
+			name:	DATE				21-21	2005 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His book , Der seltsame Krieg ( The Strange War ) , is available on the Internet in more than 20 languages .
+
+
+Treebanked sentence:
+--------------------
+His book , Der seltsame Krieg ( The Strange War ) , is available on the Internet in more than 20 languages . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ His) (NN book))
+      (, ,)
+      (NP
+        (NP (NNP Der) (NNP seltsame) (NNP Krieg))
+        (-LRB- -LRB-)
+        (NP (NNP The) (NNP Strange) (NNP War))
+        (-RRB- -RRB-))
+      (, ,))
+    (VP (VBZ is)
+      (ADJP (JJ available)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN Internet))
+            (PP (IN in)
+              (NP
+                (QP (JJR more) (IN than) (CD 20))
+                (NNS languages)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-0	His 
+	1	book
+			sense:	book.n.01
+	2	,
+	3	Der
+	4	seltsame
+	5	Krieg
+			name:	PERSON				5-5	Krieg 
+	6	(
+	7	The
+	8	Strange
+			name:	MISC				8-8	Strange 
+	9	War
+			name:	CAUSE_OF_DEATH				9-9	War 
+	10	)
+	11	,
+	12	is
+			sense:	be.v.01
+			prop:	be.01
+			V		12-12	is 
+			N-ARG-A1		0-10	His book , Der seltsame Krieg ( The Strange War ) 
+			N-ARG-A2		13-16	available on the Internet 
+	13	available
+			sense:	available.a.01
+	14	on
+	15	the
+	16	Internet
+			name:	MISC				16-16	Internet 
+			sense:	internet.n.01
+	17	in
+	18	more
+			sense:	more.a.02
+	19	than
+	20	20
+			name:	NUMBER				20-20	20 
+	21	languages
+			sense:	language.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In print , it has been published in German ( ) , Korean , Persian ( ) , and Arabic ( ) .
+
+
+Treebanked sentence:
+--------------------
+In print , it has been published in German ( ) , Korean , Persian ( ) , and Arabic ( ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN print)))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN published)
+          (PP (IN in)
+            (ADJP (JJ German)))
+          (PRN (-LRB- -LRB-)
+            (S
+              (VP (-RRB- -RRB-)
+                (NP
+                  (NP (, ,) (NNP Korean) (, ,))
+                  (NP (NNP Persian)))
+                (-LRB- -LRB-) (-RRB- -RRB-) (, ,)
+                (NP (CC and)
+                  (NP
+                    (NP (NNP Arabic))
+                    (NP (-LRB- -LRB-))))))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	print
+			sense:	print.n.04
+	2	,
+	3	it
+	4	has
+			sense:	have.v.01
+			prop:	have.01
+			V		4-4	has 
+	5	been
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	been 
+	6	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		6-6	published 
+			N-ARGM-MNR		0-1	In print 
+			N-ARG-A1		3-3	it 
+			N-ARGM-MNR		7-21	in German ( ) , Korean , Persian ( ) , and Arabic ( ) 
+	7	in
+	8	German
+			name:	NATIONALITY				8-8	German 
+	9	(
+	10	)
+	11	,
+	12	Korean
+			name:	NATIONALITY				12-12	Korean 
+	13	,
+	14	Persian
+			name:	MISC				14-14	Persian 
+	15	(
+	16	)
+	17	,
+	18	and
+	19	Arabic
+			name:	MISC				19-19	Arabic 
+	20	(
+	21	)
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Since 2002 , Martin Auer has been a regular contributor to New Delhi 's Parenting magazine .
+
+
+Treebanked sentence:
+--------------------
+Since 2002 , Martin Auer has been a regular contributor to New Delhi 's Parenting magazine . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Since)
+      (NP (CD 2002)))
+    (, ,)
+    (NP (NNP Martin) (NNP Auer))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (NP
+          (NP (DT a) (JJ regular) (NN contributor))
+          (PP (IN to)
+            (NP
+              (NP (NNP New) (NNP Delhi) (POS 's))
+              (NNP Parenting) (NN magazine))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Since
+	1	2002
+			name:	DATE				1-1	2002 
+	2	,
+	3	Martin
+			coref:	IDENT			0	3-4	Martin Auer 
+			name:	PERSON				3-4	Martin Auer 
+	4	Auer
+	5	has
+			sense:	have.v.01
+			prop:	have.01
+			V		5-5	has 
+	6	been
+			sense:	be.v.08
+			prop:	be.01
+			V		6-6	been 
+			N-ARGM-TMP		0-1	Since 2002 
+			N-ARG-A1		3-4	Martin Auer 
+			N-ARG-A2		7-15	a regular contributor to New Delhi 's Parenting magazine 
+	7	a
+	8	regular
+			sense:	regular.s.13
+	9	contributor
+			sense:	contributor.n.02
+	10	to
+	11	New
+			name:	CITY				11-12	New Delhi 
+	12	Delhi
+	13	's
+	14	Parenting
+	15	magazine
+			sense:	magazine.n.01
+	16	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Martin Auer 
+				1.0-0	He 
+				2.4-4	he 
+				3.0-0	He 
+				3.18-18	he 
+				3.20-20	his 
+				4.3-3	he 
+				5.0-0	He 
+				6.0-0	He 
+				7.0-0	His 
+				9.3-4	Martin Auer 
+

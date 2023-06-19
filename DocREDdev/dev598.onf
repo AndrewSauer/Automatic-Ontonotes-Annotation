@@ -1,0 +1,598 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Louis Lombardi ( born January 17 , 1968 ) is an American actor .
+
+
+Treebanked sentence:
+--------------------
+Louis Lombardi ( born January 17 , 1968 ) is an American actor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Louis) (NNP Lombardi))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP January) (CD 17) (, ,) (CD 1968)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT an) (JJ American) (NN actor)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Louis
+			name:	PERSON				0-1	Louis Lombardi 
+	1	Lombardi
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Louis Lombardi 
+			N-ARGM-TMP		4-7	January 17 , 1968 
+	4	January
+			name:	DATE				4-7	January 17 , 1968 
+	5	17
+	6	,
+	7	1968
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	Louis Lombardi ( born January 17 , 1968 ) 
+			N-ARG-A2		10-12	an American actor 
+	10	an
+	11	American
+			name:	NATIONALITY				11-11	American 
+	12	actor
+			name:	TITLE				12-12	actor 
+			sense:	actor.n.01
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Lombardi was born in The Bronx , New York City , the son of Louis Lombardi , Sr .
+
+
+Treebanked sentence:
+--------------------
+Lombardi was born in The Bronx , New York City , the son of Louis Lombardi , Sr . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Lombardi))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP
+            (NP (DT The)
+              (NML
+                (NML (NNP Bronx))
+                (, ,)
+                (NML (NNP New) (NNP York)))
+              (NNP City))
+            (, ,)
+            (NP
+              (NP (DT the) (NN son))
+              (PP (IN of)
+                (NP
+                  (NP (NNP Louis) (NNP Lombardi))
+                  (, ,)
+                  (NP (NNP Sr)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Lombardi
+			name:	PERSON				0-0	Lombardi 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Lombardi 
+			N-ARGM-LOC		3-9	in The Bronx , New York City 
+			N-ARGM-PRD		11-17	the son of Louis Lombardi , Sr 
+	3	in
+	4	The
+	5	Bronx
+			name:	LOCATION				5-5	Bronx 
+	6	,
+	7	New
+			name:	CITY				7-9	New York City 
+	8	York
+	9	City
+	10	,
+	11	the
+	12	son
+			sense:	son.n.01
+	13	of
+	14	Louis
+			name:	PERSON				14-15	Louis Lombardi 
+	15	Lombardi
+	16	,
+	17	Sr
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On television , Lombardi had a recurring role on The Sopranos as Agent Skip Lipari , and guest starred on such shows as Entourage , Heroes and .
+
+
+Treebanked sentence:
+--------------------
+On television , Lombardi had a recurring role on The Sopranos as Agent Skip Lipari , and guest starred on such shows as Entourage , Heroes and . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NN television)))
+    (, ,)
+    (S
+      (NP (NNP Lombardi))
+      (VP (VBD had)
+        (NP
+          (NP (DT a) (VBG recurring) (NN role))
+          (PP (IN on)
+            (NP (DT The) (NNP Sopranos))))
+        (SBAR (IN as)
+          (S
+            (NP (NNP Agent))
+            (VP (VBP Skip)
+              (NP (NNP Lipari)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NN guest))
+      (VP
+        (VP (VBD starred)
+          (PP (IN on)
+            (NP (JJ such) (NNS shows)))
+          (PP (IN as)
+            (NP
+              (NP (NN Entourage))
+              (, ,)
+              (NP (NNPS Heroes)))))
+        (CC and)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	television
+			sense:	television.n.01
+	2	,
+	3	Lombardi
+			name:	PERSON				3-3	Lombardi 
+	4	had
+			sense:	have.v.01
+			prop:	have.03
+			V		4-4	had 
+			N-ARGM-LOC		0-1	On television 
+			N-ARG-A0		3-3	Lombardi 
+			N-ARG-A1		5-14	a recurring role on The Sopranos as Agent Skip Lipari 
+	5	a
+	6	recurring
+			sense:	recur.v.01
+			prop:	recur.01
+			V		6-6	recurring 
+			N-ARG-A0		7-7	role 
+	7	role
+			sense:	character.n.04
+	8	on
+	9	The
+	10	Sopranos
+	11	as
+	12	Agent
+	13	Skip
+			sense:	skim.v.04
+			prop:	skip.01
+			V		13-13	Skip 
+			N-ARG-A0		12-12	Agent 
+			N-ARG-A1		14-14	Lipari 
+	14	Lipari
+			name:	PERSON				14-14	Lipari 
+	15	,
+	16	and
+	17	guest
+			sense:	guest.n.01
+	18	starred
+			sense:	star.v.01
+			prop:	star.01
+			V		18-18	starred 
+			N-ARGM-LOC		0-1	On television 
+			N-ARG-A1		3-3	Lombardi 
+			N-ARGM-MNR		17-17	guest 
+			N-ARG-A2		19-26	on such shows as Entourage , Heroes and 
+	19	on
+	20	such
+			sense:	such.s.01
+	21	shows
+			sense:	show.n.01
+	22	as
+	23	Entourage
+			name:	MISC				23-23	Entourage 
+			sense:	cortege.n.02
+	24	,
+	25	Heroes
+	26	and
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was a cast member of a 1990s revival of Fantasy Island and played Edgar Stiles on 24 .
+
+
+Treebanked sentence:
+--------------------
+He was a cast member of a 1990s revival of Fantasy Island and played Edgar Stiles on 24 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (NP
+          (NP (DT a) (NN cast) (NN member))
+          (PP (IN of)
+            (NP
+              (NP (DT a) (CD 1990s) (NN revival))
+              (PP (IN of)
+                (NP (NNP Fantasy) (NNP Island)))))))
+      (CC and)
+      (VP (VBD played)
+        (NP
+          (NP (NNP Edgar) (NNP Stiles))
+          (PP (IN on)
+            (NP (CD 24))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-11	a cast member of a 1990s revival of Fantasy Island 
+	2	a
+	3	cast
+			sense:	cast.n.01
+	4	member
+			sense:	member.n.01
+	5	of
+	6	a
+	7	1990s
+			name:	DATE				7-7	1990s 
+	8	revival
+			sense:	revival.n.01
+	9	of
+	10	Fantasy
+	11	Island
+	12	and
+	13	played
+			sense:	act.v.03
+			prop:	play.02
+			V		13-13	played 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		14-15	Edgar Stiles 
+			N-ARGM-LOC		16-17	on 24 
+	14	Edgar
+			name:	PERSON				14-15	Edgar Stiles 
+	15	Stiles
+	16	on
+	17	24
+			name:	NUMBER				17-17	24 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also played Stucky Fein in the short - lived television show Mob City .
+
+
+Treebanked sentence:
+--------------------
+He also played Stucky Fein in the short - lived television show Mob City . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD played)
+      (NP
+        (NP (NNP Stucky) (NNP Fein))
+        (PP (IN in)
+          (NP
+            (NP (DT the)
+              (ADJP (JJ short) (HYPH -) (JJ lived))
+              (NML (NN television) (NN show))
+              (NN Mob))
+            (NP (NNP City))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	also
+			sense:	besides.r.02
+	2	played
+			sense:	act.v.03
+			prop:	play.02
+			V		2-2	played 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-4	Stucky Fein 
+			N-ARGM-LOC		5-13	in the short - lived television show Mob City 
+	3	Stucky
+			name:	ORGANIZATION				3-4	Stucky Fein 
+	4	Fein
+	5	in
+	6	the
+	7	short
+			sense:	short.a.01
+	8	-
+	9	lived
+	10	television
+			sense:	television.n.01
+	11	show
+			sense:	show.n.01
+	12	Mob
+			name:	LOCATION				12-13	Mob City 
+			sense:	syndicate.n.01
+	13	City
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He has had roles in films including Beer League , The Usual Suspects , Natural Born Killers , Suicide Kings , Beverly Hills Cop III , The Animal , Spider - Man 2 , 3000 Miles to Graceland , The Crew , The Hot Chick , The Spirit , Battleship , and Jersey Boys .
+
+
+Treebanked sentence:
+--------------------
+He has had roles in films including Beer League , The Usual Suspects , Natural Born Killers , Suicide Kings , Beverly Hills Cop III , The Animal , Spider - Man 2 , 3000 Miles to Graceland , The Crew , The Hot Chick , The Spirit , Battleship , and Jersey Boys . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ has)
+      (VP (VBN had)
+        (NP
+          (NP (NNS roles))
+          (PP (IN in)
+            (NP
+              (NP (NNS films))
+              (PP (VBG including)
+                (NP
+                  (NP (NNP Beer) (NNP League))
+                  (, ,)
+                  (NP
+                    (NP (DT The) (NNP Usual) (NNPS Suspects))
+                    (, ,)
+                    (NP (NNP Natural) (NNP Born) (NNPS Killers))
+                    (, ,)
+                    (NP (NN Suicide) (NNS Kings))
+                    (, ,)
+                    (NP (NNP Beverly) (NNP Hills) (NNP Cop) (NNP III))
+                    (, ,)
+                    (NP (DT The) (NN Animal))
+                    (, ,)
+                    (NP (NN Spider) (HYPH -) (NN Man) (CD 2))
+                    (, ,)
+                    (NP
+                      (NP (CD 3000) (NNP Miles))
+                      (TO to)
+                      (NP (NNP Graceland)))
+                    (, ,)
+                    (NP (DT The) (NNP Crew))
+                    (, ,)
+                    (NP (DT The) (NNP Hot) (NNP Chick))
+                    (, ,)
+                    (NP (DT The) (NNP Spirit))
+                    (, ,)
+                    (NP (NNP Battleship))
+                    (, ,)
+                    (CC and)
+                    (NP (NNP Jersey) (NNPS Boys))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	had
+			sense:	have.v.01
+			prop:	have.03
+			V		2-2	had 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		3-53	roles in films including Beer League , The Usual Suspects , Natural Born Killers , Suicide Kings , Beverly Hills Cop III , The Animal , Spider - Man 2 , 3000 Miles to Graceland , The Crew , The Hot Chick , The Spirit , Battleship , and Jersey Boys 
+	3	roles
+			sense:	character.n.04
+	4	in
+	5	films
+			sense:	movie.n.01
+	6	including
+			sense:	include.v.01
+			prop:	include.01
+			V		6-6	including 
+			N-ARG-A2		5-5	films 
+			N-ARG-A1		7-53	Beer League , The Usual Suspects , Natural Born Killers , Suicide Kings , Beverly Hills Cop III , The Animal , Spider - Man 2 , 3000 Miles to Graceland , The Crew , The Hot Chick , The Spirit , Battleship , and Jersey Boys 
+	7	Beer
+			name:	MISC				7-8	Beer League 
+	8	League
+	9	,
+	10	The
+	11	Usual
+	12	Suspects
+	13	,
+	14	Natural
+	15	Born
+	16	Killers
+	17	,
+	18	Suicide
+			name:	ORGANIZATION				18-19	Suicide Kings 
+			sense:	suicide.n.02
+	19	Kings
+			sense:	king.n.01
+	20	,
+	21	Beverly
+			name:	PERSON				21-24	Beverly Hills Cop III 
+	22	Hills
+	23	Cop
+	24	III
+	25	,
+	26	The
+	27	Animal
+			sense:	animal.n.01
+	28	,
+	29	Spider
+			sense:	spider.n.01
+	30	-
+	31	Man
+			sense:	man.n.01
+	32	2
+			name:	NUMBER				32-32	2 
+	33	,
+	34	3000
+			name:	NUMBER				34-34	3000 
+	35	Miles
+	36	to
+	37	Graceland
+			name:	LOCATION				37-37	Graceland 
+	38	,
+	39	The
+	40	Crew
+	41	,
+	42	The
+	43	Hot
+	44	Chick
+	45	,
+	46	The
+	47	Spirit
+	48	,
+	49	Battleship
+	50	,
+	51	and
+	52	Jersey
+			name:	ORGANIZATION				52-53	Jersey Boys 
+	53	Boys
+	54	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also wrote and directed the film Dough Boys , released in 2008 .
+
+
+Treebanked sentence:
+--------------------
+He also wrote and directed the film Dough Boys , released in 2008 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD wrote)
+      (CC and)
+      (VBD directed)
+      (NP
+        (NP
+          (NP (DT the) (NN film))
+          (NP (NNP Dough) (NNPS Boys)))
+        (, ,)
+        (VP (VBN released)
+          (PP (IN in)
+            (NP (CD 2008))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	also
+			sense:	besides.r.02
+	2	wrote
+			sense:	write.v.01
+			prop:	write.01
+			V		2-2	wrote 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		5-12	the film Dough Boys , released in 2008 
+	3	and
+	4	directed
+			sense:	direct.v.03
+			prop:	direct.01
+			V		4-4	directed 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		5-12	the film Dough Boys , released in 2008 
+	5	the
+	6	film
+			sense:	movie.n.01
+	7	Dough
+	8	Boys
+	9	,
+	10	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		10-10	released 
+			N-ARG-A1		5-8	the film Dough Boys 
+			N-ARGM-TMP		11-12	in 2008 
+	11	in
+	12	2008
+			name:	DATE				12-12	2008 
+	13	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+

@@ -1,0 +1,737 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The University of Illinois at Chicago ( UIC ) is a public research university located in Chicago , Illinois , United States .
+
+
+Treebanked sentence:
+--------------------
+The University of Illinois at Chicago ( UIC ) is a public research university located in Chicago , Illinois , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP University))
+      (PP (IN of)
+        (NP
+          (NP (NNP Illinois))
+          (PP (IN at)
+            (NP (NNP Chicago) (-LRB- -LRB-) (NNP UIC) (-RRB- -RRB-))))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ public) (NN research) (NN university))
+        (VP (VBN located)
+          (PP (IN in)
+            (NP (NNP Chicago) (, ,) (NNP Illinois) (, ,) (NNP United) (NNP States))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-8	The University of Illinois at Chicago ( UIC ) 
+	1	University
+			name:	ORGANIZATION				1-3	University of Illinois 
+	2	of
+	3	Illinois
+	4	at
+	5	Chicago
+			coref:	IDENT			4	5-5	Chicago 
+			name:	CITY				5-5	Chicago 
+	6	(
+	7	UIC
+			coref:	IDENT			3	7-7	UIC 
+			name:	ORGANIZATION				7-7	UIC 
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	The University of Illinois at Chicago ( UIC ) 
+			N-ARG-A2		10-21	a public research university located in Chicago , Illinois , United States 
+	10	a
+	11	public
+			sense:	public.a.01
+	12	research
+			sense:	research.n.01
+	13	university
+			sense:	university.n.02
+	14	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		14-14	located 
+			N-ARG-A1		10-13	a public research university 
+			N-ARGM-LOC		15-21	in Chicago , Illinois , United States 
+	15	in
+	16	Chicago
+			coref:	IDENT			4	16-16	Chicago 
+			name:	CITY				16-16	Chicago 
+	17	,
+	18	Illinois
+			name:	STATE_OR_PROVINCE				18-18	Illinois 
+	19	,
+	20	United
+			name:	COUNTRY				20-21	United States 
+	21	States
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Its campus is in the Near West Side community area , adjacent to the Chicago Loop .
+
+
+Treebanked sentence:
+--------------------
+Its campus is in the Near West Side community area , adjacent to the Chicago Loop . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ Its) (NN campus))
+    (VP (VBZ is)
+      (PP (IN in)
+        (NP
+          (NP (DT the)
+            (ADJP (NNP Near))
+            (NNP West) (NNP Side) (NN community) (NN area))
+          (, ,)
+          (ADVP (JJ adjacent)
+            (PP (IN to)
+              (NP (DT the) (NNP Chicago) (NNP Loop)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Its
+			coref:	IDENT			0	0-1	Its campus 
+			coref:	IDENT			1	0-0	Its 
+	1	campus
+			sense:	campus.n.01
+	2	is
+			sense:	be.v.03
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Its campus 
+			N-ARG-A2		3-15	in the Near West Side community area , adjacent to the Chicago Loop 
+	3	in
+	4	the
+	5	Near
+			name:	LOCATION				5-7	Near West Side 
+	6	West
+	7	Side
+	8	community
+			sense:	community.n.01
+	9	area
+			sense:	area.n.01
+	10	,
+	11	adjacent
+			sense:	adjacent.s.02
+	12	to
+	13	the
+			coref:	IDENT			4	13-15	the Chicago Loop 
+	14	Chicago
+			name:	CITY				14-14	Chicago 
+	15	Loop
+			name:	LOCATION				15-15	Loop 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The second campus established under the University of Illinois system , UIC is also the largest university in the Chicago area , having approximately 30,000 students enrolled in 15 colleges .
+
+
+Treebanked sentence:
+--------------------
+The second campus established under the University of Illinois system , UIC is also the largest university in the Chicago area , having approximately 30,000 students enrolled in 15 colleges . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJ second) (NN campus))
+      (VP (VBN established)
+        (PP (IN under)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Illinois) (NN system)))))))
+    (, ,)
+    (NP (NNP UIC))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (NP
+        (NP (DT the) (JJS largest) (NN university))
+        (PP (IN in)
+          (NP (DT the) (NNP Chicago) (NN area))))
+      (, ,)
+      (S
+        (VP (VBG having)
+          (NP
+            (NP
+              (QP (RB approximately) (CD 30,000))
+              (NNS students))
+            (VP (VBN enrolled)
+              (PP (IN in)
+                (NP (CD 15) (NNS colleges))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-2	The second campus 
+	1	second
+			name:	ORDINAL				1-1	second 
+			sense:	second.s.01
+	2	campus
+			sense:	campus.n.01
+	3	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		3-3	established 
+			N-ARG-A1		0-2	The second campus 
+			N-ARGM-MNR		4-9	under the University of Illinois system 
+	4	under
+	5	the
+			coref:	IDENT			1	5-9	the University of Illinois system 
+	6	University
+			coref:	IDENT			1	6-8	University of Illinois 
+			name:	ORGANIZATION				6-8	University of Illinois 
+	7	of
+	8	Illinois
+	9	system
+			sense:	system.n.02
+	10	,
+	11	UIC
+			coref:	IDENT			3	11-11	UIC 
+			name:	ORGANIZATION				11-11	UIC 
+	12	is
+			sense:	be.v.01
+			prop:	be.01
+			V		12-12	is 
+			N-ARG-A1		0-9	The second campus established under the University of Illinois system 
+			N-ARG-A1		11-11	UIC 
+			N-ARGM-DIS		13-13	also 
+			N-ARG-A2		14-20	the largest university in the Chicago area 
+	13	also
+			sense:	besides.r.02
+	14	the
+	15	largest
+			sense:	large.a.01
+	16	university
+			sense:	university.n.02
+	17	in
+	18	the
+	19	Chicago
+			coref:	IDENT			4	19-19	Chicago 
+			name:	CITY				19-19	Chicago 
+	20	area
+			sense:	area.n.01
+	21	,
+	22	having
+			sense:	have.v.01
+			prop:	have.03
+			V		22-22	having 
+			N-ARG-A0		11-11	UIC 
+			N-ARG-A1		23-29	approximately 30,000 students enrolled in 15 colleges 
+	23	approximately
+			sense:	approximately.r.01
+	24	30,000
+			name:	NUMBER				24-24	30,000 
+	25	students
+			sense:	student.n.01
+	26	enrolled
+			sense:	enroll.v.01
+			prop:	enroll.01
+			V		26-26	enrolled 
+			N-ARG-A1		23-25	approximately 30,000 students 
+			N-ARG-A2		27-29	in 15 colleges 
+	27	in
+	28	15
+			name:	NUMBER				28-28	15 
+	29	colleges
+			sense:	college.n.01
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+UIC operates the largest medical school in the United States with research expenditures exceeding $ 412 million and consistently ranks in the top 50 U.S. institutions for research expenditures .
+
+
+Treebanked sentence:
+--------------------
+UIC operates the largest medical school in the United States with research expenditures exceeding $ 412 million and consistently ranks in the top 50 U.S. institutions for research expenditures . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP UIC))
+    (VP
+      (VP (VBZ operates)
+        (NP (DT the) (JJS largest) (JJ medical) (NN school))
+        (PP (IN in)
+          (NP (DT the) (NNP United) (NNP States)))
+        (PP (IN with)
+          (NP
+            (NP (NN research) (NNS expenditures))
+            (VP (VBG exceeding)
+              (NP
+                (QP ($ $) (CD 412) (CD million)))))))
+      (CC and)
+      (ADVP (RB consistently))
+      (VP (VBZ ranks)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (JJ top) (CD 50) (NNP U.S.) (NNS institutions))
+            (PP (IN for)
+              (NP (NN research) (NNS expenditures)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	UIC
+			coref:	IDENT			3	0-0	UIC 
+			name:	ORGANIZATION				0-0	UIC 
+	1	operates
+			sense:	operate.v.01
+			prop:	operate.01
+			V		1-1	operates 
+			N-ARG-A0		0-0	UIC 
+			N-ARG-A1		2-9	the largest medical school in the United States 
+			N-ARGM-MNR		10-16	with research expenditures exceeding $ 412 million 
+	2	the
+	3	largest
+			sense:	large.a.01
+	4	medical
+			sense:	medical.a.01
+	5	school
+			sense:	school.n.01
+	6	in
+	7	the
+	8	United
+			name:	COUNTRY				8-9	United States 
+	9	States
+	10	with
+	11	research
+			sense:	research.n.01
+	12	expenditures
+			sense:	outgo.n.01
+	13	exceeding
+			sense:	exceed.v.01
+			prop:	exceed.01
+			V		13-13	exceeding 
+			N-ARG-A0		11-12	research expenditures 
+			N-ARG-A1		14-16	$ 412 million 
+	14	$
+			name:	MONEY				14-16	$ 412 million 
+	15	412
+	16	million
+	17	and
+	18	consistently
+			sense:	systematically.r.01
+	19	ranks
+			sense:	rank.v.01
+			prop:	rank.01
+			V		19-19	ranks 
+			N-ARG-A1		0-0	UIC 
+			N-ARGM-ADV		18-18	consistently 
+			N-ARG-A2		20-25	in the top 50 U.S. institutions 
+	20	in
+	21	the
+	22	top
+			sense:	top.a.01
+	23	50
+			name:	NUMBER				23-23	50 
+	24	U.S.
+			name:	COUNTRY				24-24	U.S. 
+	25	institutions
+			sense:	institution.n.01
+	26	for
+	27	research
+			sense:	research.n.01
+	28	expenditures
+			sense:	outgo.n.01
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the 2015 U.S. News & World Report 's ranking of colleges and universities , UIC ranked as the 129th best in the " national universities " category .
+
+
+Treebanked sentence:
+--------------------
+In the 2015 U.S. News & World Report 's ranking of colleges and universities , UIC ranked as the 129th best in the " national universities " category . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (DT the) (CD 2015)
+          (NP (NNP U.S.) (NNP News)
+            (CC &)
+            (NNP World) (NNP Report) (POS 's))
+          (NN ranking))
+        (PP (IN of)
+          (NP (NNS colleges)
+            (CC and)
+            (NNS universities)))))
+    (, ,)
+    (NP (NNP UIC))
+    (VP (VBD ranked)
+      (PP (IN as)
+        (NP
+          (NP (DT the) (JJ 129th) (JJS best))
+          (PP (IN in)
+            (NP (DT the)
+              (NML (`` ") (JJ national) (NNS universities) ('' "))
+              (NN category))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+	2	2015
+			name:	DATE				2-2	2015 
+	3	U.S.
+			name:	ORGANIZATION				3-7	U.S. News & World Report 
+	4	News
+	5	&
+	6	World
+	7	Report
+	8	's
+	9	ranking
+			sense:	ranking.n.01
+	10	of
+	11	colleges
+			sense:	college.n.01
+	12	and
+	13	universities
+			sense:	university.n.02
+	14	,
+	15	UIC
+			coref:	IDENT			3	15-15	UIC 
+			name:	ORGANIZATION				15-15	UIC 
+	16	ranked
+			sense:	rank.v.01
+			prop:	rank.01
+			V		16-16	ranked 
+			N-ARGM-LOC		0-13	In the 2015 U.S. News & World Report 's ranking of colleges and universities 
+			N-ARG-A1		15-15	UIC 
+			N-ARG-A2		17-20	as the 129th best 
+			N-ARGM-LOC		21-27	in the " national universities " category 
+	17	as
+	18	the
+	19	129th
+	20	best
+			sense:	good.a.01
+	21	in
+	22	the
+	23	"
+	24	national
+			sense:	national.a.03
+	25	universities
+			sense:	university.n.02
+	26	"
+	27	category
+			sense:	class.n.01
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The 2015 Times Higher Education World University Rankings ranked UIC as the 18th best in the world among universities less than 50 years old .
+
+
+Treebanked sentence:
+--------------------
+The 2015 Times Higher Education World University Rankings ranked UIC as the 18th best in the world among universities less than 50 years old . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (CD 2015)
+      (NML (NNP Times) (NNP Higher) (NNP Education) (NNP World) (NNP University))
+      (NNP Rankings))
+    (VP (VBD ranked)
+      (NP (NNP UIC))
+      (PP (IN as)
+        (NP
+          (NP (DT the) (JJ 18th) (JJS best))
+          (PP (IN in)
+            (NP (DT the) (NN world)))))
+      (PP (IN among)
+        (NP
+          (NP (NNS universities))
+          (ADJP
+            (NP
+              (QP (JJR less) (IN than) (CD 50))
+              (NNS years))
+            (JJ old)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	2015
+			name:	DATE				1-1	2015 
+	2	Times
+			name:	ORGANIZATION				2-7	Times Higher Education World University Rankings 
+	3	Higher
+	4	Education
+	5	World
+	6	University
+	7	Rankings
+	8	ranked
+			sense:	rank.v.01
+			prop:	rank.01
+			V		8-8	ranked 
+			N-ARG-A0		0-7	The 2015 Times Higher Education World University Rankings 
+			N-ARG-A1		9-9	UIC 
+			N-ARG-A2		10-16	as the 18th best in the world 
+			N-ARGM-LOC		17-23	among universities less than 50 years old 
+	9	UIC
+			coref:	IDENT			3	9-9	UIC 
+			name:	ORGANIZATION				9-9	UIC 
+	10	as
+	11	the
+	12	18th
+			name:	ORDINAL				12-12	18th 
+			sense:	eighteenth.s.01
+	13	best
+			sense:	good.a.01
+	14	in
+	15	the
+	16	world
+			sense:	earth.n.01
+	17	among
+	18	universities
+			sense:	university.n.02
+	19	less
+			name:	DURATION				19-23	less than 50 years old 
+			sense:	less.a.01
+	20	than
+	21	50
+	22	years
+			sense:	year.n.01
+	23	old
+			sense:	old.a.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+UIC competes in NCAA Division I Horizon League as the UIC Flames in sports .
+
+
+Treebanked sentence:
+--------------------
+UIC competes in NCAA Division I Horizon League as the UIC Flames in sports . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP UIC))
+    (VP (VBZ competes)
+      (PP (IN in)
+        (NP (NNP NCAA)))
+      (NP
+        (NP (NNP Division) (PRP I) (NNP Horizon) (NNP League))
+        (PP (IN as)
+          (NP
+            (NP (DT the) (NNP UIC) (NNPS Flames))
+            (PP (IN in)
+              (NP (NNS sports)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	UIC
+			coref:	IDENT			3	0-0	UIC 
+			name:	ORGANIZATION				0-0	UIC 
+	1	competes
+			sense:	compete.v.01
+			prop:	compete.01
+			V		1-1	competes 
+			N-ARG-A0		0-0	UIC 
+			N-ARGM-LOC		2-7	in NCAA Division I Horizon League 
+			N-ARGM-PRD		8-13	as the UIC Flames in sports 
+	2	in
+	3	NCAA
+			name:	ORGANIZATION				3-7	NCAA Division I Horizon League 
+	4	Division
+	5	I
+	6	Horizon
+	7	League
+	8	as
+	9	the
+	10	UIC
+			coref:	IDENT			3	10-10	UIC 
+			name:	ORGANIZATION				10-10	UIC 
+	11	Flames
+	12	in
+	13	sports
+			sense:	sport.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The UIC Pavilion is home to all UIC basketball games .
+
+
+Treebanked sentence:
+--------------------
+The UIC Pavilion is home to all UIC basketball games . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP UIC) (NNP Pavilion))
+    (VP (VBZ is)
+      (ADVP (RB home))
+      (PP (IN to)
+        (NP (DT all) (NNP UIC) (NN basketball) (NNS games))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-2	The UIC Pavilion 
+	1	UIC
+			name:	LOCATION				1-2	UIC Pavilion 
+	2	Pavilion
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	The UIC Pavilion 
+			N-ARG-A2		4-9	home to all UIC basketball games 
+	4	home
+			sense:	home.r.01
+	5	to
+	6	all
+	7	UIC
+			coref:	IDENT			3	7-7	UIC 
+			name:	ORGANIZATION				7-7	UIC 
+	8	basketball
+			sense:	basketball.n.01
+	9	games
+			sense:	game.n.02
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It also serves as a venue for concerts .
+
+
+Treebanked sentence:
+--------------------
+It also serves as a venue for concerts . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB also))
+    (VP (VBZ serves)
+      (PP (IN as)
+        (NP
+          (NP (DT a) (NN venue))
+          (PP (IN for)
+            (NP (NNS concerts))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	also
+			sense:	besides.r.02
+	2	serves
+			sense:	serve.v.01
+			prop:	serve.01
+			V		2-2	serves 
+			N-ARG-A0		0-0	It 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-7	as a venue for concerts 
+	3	as
+	4	a
+	5	venue
+			sense:	venue.n.01
+	6	for
+	7	concerts
+			sense:	concert.n.01
+	8	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.0-2	The second campus 
+				1.0-1	Its campus 
+	Chain 1 (IDENT)
+				2.6-8	University of Illinois 
+				0.0-8	The University of Illinois at Chicago ( UIC ) 
+				1.0-0	Its 
+				2.5-9	the University of Illinois system 
+	Chain 2 (IDENT)
+				7.0-2	The UIC Pavilion 
+				8.0-0	It 
+	Chain 3 (IDENT)
+				0.7-7	UIC 
+				2.11-11	UIC 
+				3.0-0	UIC 
+				4.15-15	UIC 
+				5.9-9	UIC 
+				6.0-0	UIC 
+				6.10-10	UIC 
+				7.7-7	UIC 
+	Chain 4 (IDENT)
+				1.13-15	the Chicago Loop 
+				0.5-5	Chicago 
+				0.16-16	Chicago 
+				2.19-19	Chicago 
+

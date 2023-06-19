@@ -1,0 +1,555 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Oliver Gyles Longley CBE MC ( 30 September 1918 - 28 May 2015 ) was a British Army officer of the Second World War who won the Military Cross in 1943 for his actions in Italy while commanding a squadron of 44th Reconnaissance Regiment near Battipaglia .
+
+
+Treebanked sentence:
+--------------------
+Oliver Gyles Longley CBE MC ( 30 September 1918 - 28 May 2015 ) was a British Army officer of the Second World War who won the Military Cross in 1943 for his actions in Italy while commanding a squadron of 44th Reconnaissance Regiment near Battipaglia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Oliver) (NNP Gyles) (NNP Longley) (NNP CBE) (NNP MC))
+      (-LRB- -LRB-)
+      (NP
+        (NP
+          (NP (CD 30))
+          (NP (NNP September) (CD 1918) (HYPH -) (CD 28)))
+        (NP-TMP (NNP May) (CD 2015)))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP
+          (NP (DT a) (JJ British) (NNP Army) (NN officer))
+          (PP (IN of)
+            (NP (DT the) (NNP Second) (NNP World) (NNP War))))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD won)
+              (NP (DT the) (NNP Military) (NNP Cross))
+              (PP (IN in)
+                (NP
+                  (NP (CD 1943))
+                  (PP (IN for)
+                    (NP (PRP$ his) (NNS actions)))))
+              (PP (IN in)
+                (NP (NNP Italy)))
+              (PP (IN while)
+                (S
+                  (VP (VBG commanding)
+                    (NP
+                      (NP (DT a) (NN squadron))
+                      (PP (IN of)
+                        (NP
+                          (NP (JJ 44th) (NN Reconnaissance) (NN Regiment))
+                          (PP (IN near)
+                            (NP (NNP Battipaglia))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Oliver
+			name:	PERSON				0-2	Oliver Gyles Longley 
+	1	Gyles
+	2	Longley
+	3	CBE
+	4	MC
+	5	(
+	6	30
+			name:	DATE				6-8	30 September 1918 
+	7	September
+	8	1918
+	9	-
+	10	28
+			name:	DATE				10-12	28 May 2015 
+	11	May
+	12	2015
+	13	)
+	14	was
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		0-13	Oliver Gyles Longley CBE MC ( 30 September 1918 - 28 May 2015 ) 
+			N-ARG-A2		15-45	a British Army officer of the Second World War who won the Military Cross in 1943 for his actions in Italy while commanding a squadron of 44th Reconnaissance Regiment near Battipaglia 
+	15	a
+	16	British
+			name:	ORGANIZATION				16-17	British Army 
+	17	Army
+	18	officer
+			sense:	military_officer.n.01
+	19	of
+	20	the
+			name:	DATE				20-21	the Second 
+	21	Second
+	22	World
+			name:	MISC				22-22	World 
+	23	War
+			name:	CAUSE_OF_DEATH				23-23	War 
+	24	who
+	25	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		25-25	won 
+			N-ARG-A0		15-23	a British Army officer of the Second World War 
+			R-ARG-A0		24-24	who 
+			N-ARG-A1		26-28	the Military Cross 
+			N-ARGM-TMP		29-30	in 1943 
+			N-ARGM-CAU		31-45	for his actions in Italy while commanding a squadron of 44th Reconnaissance Regiment near Battipaglia 
+	26	the
+			coref:	IDENT			0	26-28	the Military Cross 
+	27	Military
+	28	Cross
+	29	in
+	30	1943
+			name:	DATE				30-30	1943 
+	31	for
+	32	his
+	33	actions
+			sense:	military_action.n.01
+	34	in
+	35	Italy
+			name:	COUNTRY				35-35	Italy 
+	36	while
+	37	commanding
+			sense:	command.v.01
+			prop:	command.02
+			V		37-37	commanding 
+			N-ARG-A1		38-43	a squadron of 44th Reconnaissance Regiment 
+			N-ARGM-LOC		44-45	near Battipaglia 
+	38	a
+	39	squadron
+			sense:	squadron.n.01
+	40	of
+	41	44th
+			name:	ORGANIZATION				41-43	44th Reconnaissance Regiment 
+			sense:	forty-fourth.s.01
+	42	Reconnaissance
+			sense:	reconnaissance.n.01
+	43	Regiment
+			sense:	regiment.n.01
+	44	near
+	45	Battipaglia
+			name:	CITY				45-45	Battipaglia 
+	46	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Longley had a number of narrow escapes during his military service , including stepping on a mine that failed to explode .
+
+
+Treebanked sentence:
+--------------------
+Longley had a number of narrow escapes during his military service , including stepping on a mine that failed to explode . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Longley))
+    (VP (VBD had)
+      (NP
+        (NP (DT a) (NN number))
+        (PP (IN of)
+          (NP
+            (NP (JJ narrow))
+            (SBAR
+              (S
+                (VP (VBZ escapes)
+                  (PP (IN during)
+                    (NP (PRP$ his) (JJ military) (NN service)))))))))
+      (, ,)
+      (PP (VBG including)
+        (S
+          (VP (VBG stepping)
+            (PP (IN on)
+              (NP
+                (NP (DT a) (NN mine))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBD failed)
+                      (S
+                        (VP (TO to)
+                          (VP (VB explode)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Longley
+			name:	PERSON				0-0	Longley 
+	1	had
+			sense:	experience.v.03
+			prop:	have.03
+			V		1-1	had 
+			N-ARG-A0		0-0	Longley 
+			N-ARG-A1		2-6	a number of narrow escapes 
+			N-ARGM-TMP		7-10	during his military service 
+			C-ARG-A1		12-20	including stepping on a mine that failed to explode 
+	2	a
+	3	number
+			sense:	number.n.01
+	4	of
+	5	narrow
+			sense:	narrow.a.04
+	6	escapes
+			sense:	miss.v.09
+			prop:	escape.01
+			V		6-6	escapes 
+			N-ARGM-MNR		5-5	narrow 
+			N-ARGM-ADJ		12-20	including stepping on a mine that failed to explode 
+	7	during
+	8	his
+	9	military
+			sense:	military.a.02
+	10	service
+			sense:	service.n.05
+	11	,
+	12	including
+			sense:	include.v.01
+			prop:	include.01
+			V		12-12	including 
+			N-ARG-A2		2-6	a number of narrow escapes 
+			N-ARG-A1		13-20	stepping on a mine that failed to explode 
+	13	stepping
+			sense:	step.v.02
+			prop:	step.01
+			V		13-13	stepping 
+			N-ARG-A1		0-0	Longley 
+			N-ARG-A2		14-20	on a mine that failed to explode 
+	14	on
+	15	a
+	16	mine
+			sense:	mine.n.02
+	17	that
+	18	failed
+			sense:	fail.v.01
+			prop:	fail.01
+			V		18-18	failed 
+			N-ARG-A1		15-16	a mine 
+			R-ARG-A1		17-17	that 
+			N-ARG-A2		19-20	to explode 
+	19	to
+	20	explode
+			sense:	detonate.v.02
+			prop:	explode.01
+			V		20-20	explode 
+			N-ARG-A1		17-17	that 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Longley was born in the London district of Streatham , the son of an officer in the Honourable Artillery Company who in the First World War was also awarded the Military Cross .
+
+
+Treebanked sentence:
+--------------------
+Longley was born in the London district of Streatham , the son of an officer in the Honourable Artillery Company who in the First World War was also awarded the Military Cross . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Longley))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP
+            (NP
+              (NP (DT the) (NNP London) (NN district))
+              (PP (IN of)
+                (NP (NNP Streatham))))
+            (, ,)
+            (NP
+              (NP
+                (NP (DT the) (NN son))
+                (PP (IN of)
+                  (NP
+                    (NP (DT an) (NN officer))
+                    (PP (IN in)
+                      (NP (DT the) (NNP Honourable) (NNP Artillery) (NNP Company))))))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (PP (IN in)
+                    (NP (DT the) (NNP First) (NNP World) (NNP War)))
+                  (VP (VBD was)
+                    (ADVP (RB also))
+                    (VP (VBN awarded)
+                      (NP (DT the) (NNP Military) (NNP Cross)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Longley
+			name:	PERSON				0-0	Longley 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Longley 
+			N-ARGM-LOC		3-8	in the London district of Streatham 
+			N-ARGM-PRD		10-31	the son of an officer in the Honourable Artillery Company who in the First World War was also awarded the Military Cross 
+	3	in
+	4	the
+	5	London
+			name:	CITY				5-5	London 
+	6	district
+			sense:	district.n.01
+	7	of
+	8	Streatham
+			name:	LOCATION				8-8	Streatham 
+	9	,
+	10	the
+	11	son
+			sense:	son.n.01
+	12	of
+	13	an
+	14	officer
+			sense:	military_officer.n.01
+	15	in
+	16	the
+	17	Honourable
+			name:	ORGANIZATION				17-19	Honourable Artillery Company 
+	18	Artillery
+	19	Company
+	20	who
+	21	in
+	22	the
+	23	First
+			name:	ORDINAL				23-23	First 
+	24	World
+			name:	MISC				24-24	World 
+	25	War
+			name:	CAUSE_OF_DEATH				25-25	War 
+	26	was
+			sense:	be.v.01
+			prop:	be.03
+			V		26-26	was 
+	27	also
+			sense:	besides.r.02
+	28	awarded
+			sense:	award.v.01
+			prop:	award.01
+			V		28-28	awarded 
+			N-ARG-A2		13-19	an officer in the Honourable Artillery Company 
+			R-ARG-A2		20-20	who 
+			N-ARGM-TMP		21-25	in the First World War 
+			N-ARGM-DIS		27-27	also 
+			N-ARG-A1		29-31	the Military Cross 
+	29	the
+			coref:	IDENT			0	29-31	the Military Cross 
+	30	Military
+	31	Cross
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After demobilisation in 1946 , Longley returned to his pre - war employers Gestetner .
+
+
+Treebanked sentence:
+--------------------
+After demobilisation in 1946 , Longley returned to his pre - war employers Gestetner . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP
+        (NP (NN demobilisation))
+        (PP (IN in)
+          (NP (CD 1946)))))
+    (, ,)
+    (NP (NNP Longley))
+    (VP (VBD returned)
+      (PP (IN to)
+        (NP
+          (NP (PRP$ his)
+            (NML (AFX pre) (HYPH -) (NN war))
+            (NNS employers))
+          (NP (NNP Gestetner)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	demobilisation
+			sense:	demobilization.n.01
+	2	in
+	3	1946
+			name:	DATE				3-3	1946 
+	4	,
+	5	Longley
+			name:	PERSON				5-5	Longley 
+	6	returned
+			sense:	return.v.01
+			prop:	return.01
+			V		6-6	returned 
+			N-ARGM-TMP		0-3	After demobilisation in 1946 
+			N-ARG-A1		5-5	Longley 
+			N-ARG-A4		7-13	to his pre - war employers Gestetner 
+	7	to
+	8	his
+	9	pre
+	10	-
+	11	war
+			name:	CAUSE_OF_DEATH				11-11	war 
+			sense:	war.n.02
+	12	employers
+			sense:	employer.n.01
+	13	Gestetner
+			name:	ORGANIZATION				13-13	Gestetner 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1965 , he became managing director of Gestetner France , and in 1976 he was made a director of Gestetner Holdings Ltd with responsibility for Continental Europe , Africa , Pakistan and Sri Lanka .
+
+
+Treebanked sentence:
+--------------------
+In 1965 , he became managing director of Gestetner France , and in 1976 he was made a director of Gestetner Holdings Ltd with responsibility for Continental Europe , Africa , Pakistan and Sri Lanka . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1965)))
+    (, ,)
+    (S
+      (NP (PRP he))
+      (VP (VBD became)
+        (NP
+          (NP (VBG managing) (NN director))
+          (PP (IN of)
+            (NP (NNP Gestetner) (NNP France))))))
+    (, ,)
+    (CC and)
+    (S
+      (PP (IN in)
+        (NP (CD 1976)))
+      (NP (PRP he))
+      (VP (VBD was)
+        (VP (VBN made)
+          (NP
+            (NP (DT a) (NN director))
+            (PP (IN of)
+              (NP
+                (NP (NNP Gestetner) (NNPS Holdings) (NNP Ltd))
+                (PP (IN with)
+                  (NP (NN responsibility))))))
+          (PP (IN for)
+            (NP (NNP Continental) (NNP Europe) (, ,) (NNP Africa) (, ,) (NNP Pakistan)
+              (CC and)
+              (NNP Sri) (NNP Lanka))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1965
+			name:	DATE				1-1	1965 
+	2	,
+	3	he
+	4	became
+			sense:	become.v.02
+			prop:	become.01
+			V		4-4	became 
+			N-ARGM-TMP		0-1	In 1965 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		5-9	managing director of Gestetner France 
+	5	managing
+			name:	TITLE				5-6	managing director 
+			sense:	oversee.v.01
+			prop:	manage.01
+			V		5-5	managing 
+			N-ARG-A0		6-6	director 
+			N-ARG-A1		7-9	of Gestetner France 
+	6	director
+			sense:	director.n.01
+	7	of
+	8	Gestetner
+			name:	ORGANIZATION				8-9	Gestetner France 
+	9	France
+	10	,
+	11	and
+	12	in
+	13	1976
+			name:	DATE				13-13	1976 
+	14	he
+	15	was
+			sense:	be.v.01
+			prop:	be.03
+			V		15-15	was 
+	16	made
+			sense:	name.v.03
+			prop:	make.02
+			V		16-16	made 
+			N-ARGM-TMP		12-13	in 1976 
+			N-ARG-A1		17-34	a director of Gestetner Holdings Ltd with responsibility for Continental Europe , Africa , Pakistan and Sri Lanka 
+	17	a
+	18	director
+			name:	TITLE				18-18	director 
+			sense:	director.n.01
+	19	of
+	20	Gestetner
+			name:	ORGANIZATION				20-22	Gestetner Holdings Ltd 
+	21	Holdings
+	22	Ltd
+	23	with
+	24	responsibility
+			sense:	province.n.02
+	25	for
+	26	Continental
+			name:	ORGANIZATION				26-27	Continental Europe 
+	27	Europe
+	28	,
+	29	Africa
+			name:	LOCATION				29-29	Africa 
+	30	,
+	31	Pakistan
+			name:	COUNTRY				31-31	Pakistan 
+	32	and
+	33	Sri
+			name:	COUNTRY				33-34	Sri Lanka 
+	34	Lanka
+	35	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.26-28	the Military Cross 
+				2.29-31	the Military Cross 
+

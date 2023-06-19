@@ -1,0 +1,1167 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+MobileMe ( iTools before 2002 ; .
+
+
+Treebanked sentence:
+--------------------
+MobileMe ( iTools before 2002 ; . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP (NN MobileMe))
+    (-LRB- -LRB-)
+    (NP
+      (NP (NNS iTools))
+      (PP (IN before)
+        (NP (CD 2002))
+        (: ;)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	MobileMe
+	1	(
+	2	iTools
+	3	before
+	4	2002
+			name:	DATE				4-4	2002 
+	5	;
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mac before 2008 ) is a subscription - based collection of online services and software offered by Apple Inc.
+
+
+Treebanked sentence:
+--------------------
+Mac before 2008 ) is a subscription - based collection of online services and software offered by Apple Inc. . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Mac))
+      (PP (IN before)
+        (NP (CD 2008))))
+    (-RRB- -RRB-)
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT a)
+            (ADJP (NN subscription) (HYPH -) (VBN based))
+            (NN collection))
+          (PP (IN of)
+            (NP (JJ online) (NNS services))))
+        (CC and)
+        (NP
+          (NP (NN software))
+          (VP (VBN offered)
+            (PP (IN by)
+              (NP (NNP Apple) (NNP Inc.)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mac
+	1	before
+	2	2008
+			coref:	IDENT			0	2-2	2008 
+			name:	DATE				2-2	2008 
+	3	)
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	Mac before 2008 ) 
+			N-ARG-A2		5-18	a subscription - based collection of online services and software offered by Apple Inc. 
+	5	a
+	6	subscription
+			sense:	subscription.n.01
+	7	-
+	8	based
+			sense:	establish.v.08
+			prop:	base.02
+			V		8-8	based 
+			N-ARG-A2		6-6	subscription 
+			N-ARG-A1		9-9	collection 
+	9	collection
+			sense:	collection.n.01
+	10	of
+	11	online
+			coref:	IDENT			3	11-12	online services 
+			sense:	on-line.a.02
+	12	services
+			sense:	service.n.01
+	13	and
+	14	software
+			sense:	software.n.01
+	15	offered
+			sense:	offer.v.01
+			prop:	offer.01
+			V		15-15	offered 
+			N-ARG-A0		16-18	by Apple Inc. 
+	16	by
+	17	Apple
+			coref:	IDENT			1	17-18	Apple Inc. 
+			name:	ORGANIZATION				17-18	Apple Inc. 
+	18	Inc.
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+All services were gradually transitioned and eventually replaced by iCloud and the service ceased as of June 30 , 2012 , with transfers to iCloud available until July 31 , 2012 .
+
+
+Treebanked sentence:
+--------------------
+All services were gradually transitioned and eventually replaced by iCloud and the service ceased as of June 30 , 2012 , with transfers to iCloud available until July 31 , 2012 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT All) (NNS services))
+      (VP (VBD were)
+        (ADVP (RB gradually))
+        (VP
+          (VP (VBN transitioned))
+          (CC and)
+          (ADVP (RB eventually))
+          (VP (VBN replaced)
+            (PP (IN by)
+              (NP (NNP iCloud)))))))
+    (CC and)
+    (S
+      (NP (DT the) (NN service))
+      (VP (VBD ceased)
+        (PP (IN as)
+          (PP (IN of)
+            (NP
+              (NP (NNP June) (CD 30) (, ,) (CD 2012) (, ,))
+              (PP (IN with)
+                (NP (NNS transfers))))))
+        (PP (IN to)
+          (NP
+            (NP (NNP iCloud))
+            (ADJP (JJ available)
+              (PP (IN until)
+                (NP (NNP July) (CD 31) (, ,) (CD 2012))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	All
+			coref:	IDENT			3	0-1	All services 
+	1	services
+			sense:	service.n.01
+	2	were
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	were 
+	3	gradually
+			sense:	gradually.r.01
+	4	transitioned
+			sense:	transition.v.01
+			prop:	transition.01
+			V		4-4	transitioned 
+			N-ARG-A1		0-1	All services 
+			N-ARGM-MNR		3-3	gradually 
+			N-ARG-A0		8-9	by iCloud 
+	5	and
+	6	eventually
+			sense:	finally.r.01
+	7	replaced
+			sense:	replace.v.01
+			prop:	replace.01
+			V		7-7	replaced 
+			N-ARG-A1		0-1	All services 
+			N-ARGM-TMP		6-6	eventually 
+			N-ARG-A2		8-9	by iCloud 
+	8	by
+	9	iCloud
+			coref:	IDENT			4	9-9	iCloud 
+	10	and
+	11	the
+			coref:	IDENT			2	11-12	the service 
+	12	service
+			sense:	service.n.01
+	13	ceased
+			sense:	end.v.01
+			prop:	cease.01
+			V		13-13	ceased 
+			N-ARG-A1		11-12	the service 
+			N-ARGM-TMP		14-19	as of June 30 , 2012 
+			N-ARGM-ADV		21-30	with transfers to iCloud available until July 31 , 2012 
+	14	as
+	15	of
+	16	June
+			name:	DATE				16-19	June 30 , 2012 
+	17	30
+	18	,
+	19	2012
+	20	,
+	21	with
+	22	transfers
+			sense:	transportation.n.02
+	23	to
+	24	iCloud
+	25	available
+			sense:	available.a.01
+	26	until
+	27	July
+			name:	DATE				27-30	July 31 , 2012 
+	28	31
+	29	,
+	30	2012
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Afterwards , all data was deleted , and the email addresses of accounts not transferred to iCloud were marked as unused .
+
+
+Treebanked sentence:
+--------------------
+Afterwards , all data was deleted , and the email addresses of accounts not transferred to iCloud were marked as unused . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Afterwards))
+    (, ,)
+    (S
+      (NP (DT all) (NNS data))
+      (VP (VBD was)
+        (VP (VBN deleted))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (DT the) (NN email) (NNS addresses))
+        (PP (IN of)
+          (NP
+            (NP (NNS accounts))
+            (VP (RB not) (VBN transferred)
+              (PP (IN to)
+                (NP (NNP iCloud)))))))
+      (VP (VBD were)
+        (VP (VBN marked)
+          (PP (IN as)
+            (ADJP (JJ unused))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Afterwards
+			sense:	subsequently.r.01
+	1	,
+	2	all
+	3	data
+			sense:	datum.n.01
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	deleted
+			sense:	erase.v.03
+			prop:	delete.01
+			V		5-5	deleted 
+			N-ARGM-TMP		0-0	Afterwards 
+			N-ARG-A1		2-3	all data 
+	6	,
+	7	and
+	8	the
+	9	email
+			sense:	electronic_mail.n.01
+	10	addresses
+			sense:	address.n.01
+	11	of
+	12	accounts
+			sense:	account.n.03
+	13	not
+			sense:	not.r.01
+	14	transferred
+			sense:	transfer.v.02
+			prop:	transfer.01
+			V		14-14	transferred 
+			N-ARG-A1		12-12	accounts 
+			N-ARGM-NEG		13-13	not 
+			N-ARG-A2		15-16	to iCloud 
+	15	to
+	16	iCloud
+			coref:	IDENT			4	16-16	iCloud 
+	17	were
+			sense:	be.v.01
+			prop:	be.03
+			V		17-17	were 
+	18	marked
+			sense:	tag.v.01
+			prop:	mark.02
+			V		18-18	marked 
+			N-ARG-A1		8-16	the email addresses of accounts not transferred to iCloud 
+	19	as
+	20	unused
+			sense:	idle.s.03
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Originally launched on January 5 , 2000 , as iTools , a free collection of Internet - based services for users of Mac OS 9 , Apple relaunched it as .
+
+
+Treebanked sentence:
+--------------------
+Originally launched on January 5 , 2000 , as iTools , a free collection of Internet - based services for users of Mac OS 9 , Apple relaunched it as . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (ADVP (RB Originally))
+      (VP (VBN launched)
+        (PP (IN on)
+          (NP (NNP January) (CD 5) (, ,) (CD 2000) (, ,)))
+        (PP (IN as)
+          (NP
+            (NP (NNP iTools))
+            (, ,)
+            (NP
+              (NP
+                (ADJP
+                  (NP
+                    (NP (DT a) (JJ free) (NN collection))
+                    (PP (IN of)
+                      (NP (NN Internet))))
+                  (HYPH -) (VBN based))
+                (NNS services))
+              (PP (IN for)
+                (NP
+                  (NP (NNS users))
+                  (PP (IN of)
+                    (NP
+                      (NML (NNP Mac) (NNP OS))
+                      (CD 9))))))))))
+    (, ,)
+    (NP (NNP Apple))
+    (VP (VBD relaunched)
+      (S
+        (NP (PRP it))
+        (ADJP (RB as))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Originally
+			sense:	primitively.r.01
+	1	launched
+			sense:	establish.v.01
+			prop:	launch.01
+			V		1-1	launched 
+			N-ARGM-TMP		0-0	Originally 
+			N-ARGM-TMP		2-6	on January 5 , 2000 
+			N-ARGM-PRD		8-24	as iTools , a free collection of Internet - based services for users of Mac OS 9 
+			N-ARG-A1		26-26	Apple 
+	2	on
+	3	January
+			name:	DATE				3-6	January 5 , 2000 
+	4	5
+	5	,
+	6	2000
+	7	,
+	8	as
+	9	iTools
+	10	,
+	11	a
+	12	free
+			sense:	complimentary.s.02
+	13	collection
+			sense:	collection.n.01
+	14	of
+	15	Internet
+			name:	MISC				15-15	Internet 
+			sense:	internet.n.01
+	16	-
+	17	based
+			sense:	establish.v.08
+			prop:	base.02
+			V		17-17	based 
+			N-ARG-A2		15-15	Internet 
+			N-ARG-A1		18-18	services 
+	18	services
+			sense:	service.n.01
+	19	for
+	20	users
+			sense:	user.n.01
+	21	of
+	22	Mac
+	23	OS
+	24	9
+			name:	NUMBER				24-24	9 
+	25	,
+	26	Apple
+			coref:	IDENT			1	26-26	Apple 
+			name:	ORGANIZATION				26-26	Apple 
+	27	relaunched
+			prop:	launch.01
+			V		27-27	relaunched 
+			N-ARG-A0		26-26	Apple 
+			N-ARG-A1		28-28	it 
+			N-ARGM-PRD		29-29	as 
+	28	it
+			coref:	IDENT			1	28-28	it 
+	29	as
+			sense:	equally.r.01
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mac on July 17 , 2002 , when it became a paid subscription service primarily designed for users of Mac OS X. Apple relaunched the service again as MobileMe on July 9 , 2008 at the Apple Worldwide Developers Conference ( WWDC ) 2008 , now targeting Mac OS X , Microsoft Windows , iPhone , and iPod Touch users .
+
+
+Treebanked sentence:
+--------------------
+Mac on July 17 , 2002 , when it became a paid subscription service primarily designed for users of Mac OS X. Apple relaunched the service again as MobileMe on July 9 , 2008 at the Apple Worldwide Developers Conference ( WWDC ) 2008 , now targeting Mac OS X , Microsoft Windows , iPhone , and iPod Touch users . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Mac))
+      (PP (IN on)
+        (NP
+          (NP (NNP July) (CD 17) (, ,) (CD 2002))
+          (, ,)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP it))
+              (VP (VBD became)
+                (SBAR
+                  (S
+                    (NP (DT a) (VBN paid) (NN subscription) (NN service))
+                    (ADVP (RB primarily))
+                    (VP (VBN designed)
+                      (PP (IN for)
+                        (NP
+                          (NP (NNS users))
+                          (PP (IN of)
+                            (NP
+                              (NML (NNP Mac) (NNP OS))
+                              (NNP X.) (NNP Apple))))))))))))))
+    (VP (VBD relaunched)
+      (NP (DT the) (NN service))
+      (PP
+        (ADVP (RB again))
+        (IN as)
+        (NP (NN MobileMe)))
+      (PP (IN on)
+        (NP
+          (NP (NNP July) (CD 9) (, ,) (CD 2008))
+          (PP (IN at)
+            (NP (DT the)
+              (NML (NNP Apple) (NNP Worldwide))
+              (NNP Developers) (NNP Conference)
+              (PRN (-LRB- -LRB-)
+                (NP (NNP WWDC))
+                (-RRB- -RRB-))))
+          (NP-TMP (CD 2008))))
+      (, ,)
+      (S
+        (ADVP (RB now))
+        (VP (VBG targeting)
+          (NP
+            (NML
+              (NML (NNP Mac) (NNP OS) (NNP X))
+              (, ,)
+              (NML (NNP Microsoft) (NNP Windows))
+              (, ,)
+              (NML (NNP iPhone))
+              (, ,)
+              (CC and)
+              (NML (NNP iPod) (NNP Touch)))
+            (NNS users)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mac
+	1	on
+	2	July
+			name:	DATE				2-5	July 17 , 2002 
+	3	17
+	4	,
+	5	2002
+	6	,
+	7	when
+	8	it
+			coref:	IDENT			1	8-8	it 
+	9	became
+			sense:	become.v.02
+			prop:	become.01
+			V		9-9	became 
+			N-ARGM-TMP		2-5	July 17 , 2002 
+			R-ARGM-TMP		7-7	when 
+			N-ARG-A1		8-8	it 
+			N-ARG-A2		10-21	a paid subscription service primarily designed for users of Mac OS X. 
+	10	a
+	11	paid
+			sense:	pay.v.01
+			prop:	pay.01
+			V		11-11	paid 
+			N-ARG-A3		12-12	subscription 
+	12	subscription
+			sense:	subscription.n.01
+	13	service
+			sense:	service.n.01
+	14	primarily
+			sense:	chiefly.r.01
+	15	designed
+			sense:	design.v.02
+			prop:	design.01
+			V		15-15	designed 
+			N-ARG-A1		10-13	a paid subscription service 
+			N-ARGM-ADV		14-14	primarily 
+			N-ARG-A2		16-21	for users of Mac OS X. 
+	16	for
+	17	users
+			sense:	user.n.01
+	18	of
+	19	Mac
+	20	OS
+	21	X.
+	22	Apple
+	23	relaunched
+			prop:	launch.01
+			V		23-23	relaunched 
+			N-ARG-A0		22-22	Apple 
+			N-ARG-A1		24-25	the service 
+			N-ARGM-TMP		26-26	again 
+			N-ARGM-PRD		27-28	as MobileMe 
+			N-ARGM-TMP		29-33	on July 9 , 2008 
+			N-ARGM-LOC		34-43	at the Apple Worldwide Developers Conference ( WWDC ) 2008 
+			N-ARGM-ADV		45-59	now targeting Mac OS X , Microsoft Windows , iPhone , and iPod Touch users 
+	24	the
+			coref:	IDENT			2	24-25	the service 
+	25	service
+			sense:	service.n.01
+	26	again
+			sense:	again.r.01
+	27	as
+	28	MobileMe
+	29	on
+	30	July
+			name:	DATE				30-33	July 9 , 2008 
+	31	9
+	32	,
+	33	2008
+	34	at
+	35	the
+	36	Apple
+	37	Worldwide
+	38	Developers
+	39	Conference
+	40	(
+	41	WWDC
+	42	)
+	43	2008
+			coref:	IDENT			0	43-43	2008 
+			name:	DATE				43-43	2008 
+	44	,
+	45	now
+			name:	DATE				45-45	now 
+			sense:	nowadays.r.01
+	46	targeting
+			sense:	target.v.01
+			prop:	target.01
+			V		46-46	targeting 
+			N-ARG-A0		22-22	Apple 
+			N-ARGM-TMP		45-45	now 
+			N-ARG-A1		47-59	Mac OS X , Microsoft Windows , iPhone , and iPod Touch users 
+	47	Mac
+	48	OS
+	49	X
+	50	,
+	51	Microsoft
+			name:	ORGANIZATION				51-51	Microsoft 
+	52	Windows
+	53	,
+	54	iPhone
+	55	,
+	56	and
+	57	iPod
+	58	Touch
+	59	users
+			sense:	user.n.01
+	60	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On February 24 , 2011 , Apple discontinued offering MobileMe at its retail stores , with MobileMe retail boxes eventually removed from resellers as well .
+
+
+Treebanked sentence:
+--------------------
+On February 24 , 2011 , Apple discontinued offering MobileMe at its retail stores , with MobileMe retail boxes eventually removed from resellers as well . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NNP February) (CD 24) (, ,) (CD 2011)))
+    (, ,)
+    (NP
+      (NP (NNP Apple))
+      (VP (VBN discontinued)
+        (NP (NN offering) (NN MobileMe))
+        (PP (IN at)
+          (NP (PRP$ its) (JJ retail) (NNS stores)))
+        (, ,)
+        (PP (IN with)
+          (NP
+            (NML (NN MobileMe) (NN retail))
+            (NNS boxes)))))
+    (ADVP (RB eventually))
+    (VP (VBN removed)
+      (PP (IN from)
+        (NP (NNS resellers)))
+      (ADVP (RB as) (RB well)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	February
+			name:	DATE				1-4	February 24 , 2011 
+	2	24
+	3	,
+	4	2011
+	5	,
+	6	Apple
+			coref:	IDENT			1	6-6	Apple 
+			name:	ORGANIZATION				6-6	Apple 
+	7	discontinued
+			sense:	discontinue.v.01
+			prop:	discontinue.01
+			V		7-7	discontinued 
+			N-ARGM-TMP		0-4	On February 24 , 2011 
+			N-ARG-A0		6-6	Apple 
+			N-ARG-A1		8-13	offering MobileMe at its retail stores 
+			N-ARGM-ADV		15-24	with MobileMe retail boxes eventually removed from resellers as well 
+	8	offering
+			sense:	offer.n.02
+	9	MobileMe
+	10	at
+	11	its
+			coref:	IDENT			1	11-11	its 
+	12	retail
+	13	stores
+			sense:	shop.n.01
+	14	,
+	15	with
+	16	MobileMe
+	17	retail
+			sense:	retail.n.01
+	18	boxes
+			sense:	box.n.01
+	19	eventually
+			sense:	finally.r.01
+	20	removed
+			sense:	remove.v.01
+			prop:	remove.01
+			V		20-20	removed 
+			N-ARG-A1		16-18	MobileMe retail boxes 
+			N-ARGM-TMP		19-19	eventually 
+			N-ARG-A2		21-22	from resellers 
+			N-ARGM-DIS		23-24	as well 
+	21	from
+	22	resellers
+	23	as
+			sense:	equally.r.01
+	24	well
+			sense:	well.r.04
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Additionally , Apple stopped accepting new subscriptions for MobileMe .
+
+
+Treebanked sentence:
+--------------------
+Additionally , Apple stopped accepting new subscriptions for MobileMe . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Additionally))
+    (, ,)
+    (NP (NNP Apple))
+    (VP (VBD stopped)
+      (S
+        (VP (VBG accepting)
+          (NP (JJ new) (NNS subscriptions))
+          (PP (IN for)
+            (NP (NN MobileMe))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Additionally
+			sense:	additionally.r.01
+	1	,
+	2	Apple
+			coref:	IDENT			1	2-2	Apple 
+			name:	ORGANIZATION				2-2	Apple 
+	3	stopped
+			sense:	discontinue.v.01
+			prop:	stop.01
+			V		3-3	stopped 
+			N-ARGM-DIS		0-0	Additionally 
+			N-ARG-A0		2-2	Apple 
+			N-ARG-A1		4-8	accepting new subscriptions for MobileMe 
+	4	accepting
+			sense:	accept.v.02
+			prop:	accept.01
+			V		4-4	accepting 
+			N-ARG-A0		2-2	Apple 
+			N-ARG-A1		5-8	new subscriptions for MobileMe 
+	5	new
+			sense:	new.a.01
+	6	subscriptions
+			sense:	subscription.n.02
+	7	for
+	8	MobileMe
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On June 6 , 2011 , Apple announced that a new service called iCloud would replace MobileMe sometime in the fall .
+
+
+Treebanked sentence:
+--------------------
+On June 6 , 2011 , Apple announced that a new service called iCloud would replace MobileMe sometime in the fall . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NNP June) (CD 6) (, ,) (CD 2011)))
+    (, ,)
+    (NP (NNP Apple))
+    (VP (VBD announced)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT a) (JJ new) (NN service))
+            (VP (VBN called)
+              (NP (NNP iCloud))))
+          (VP (MD would)
+            (VP (VB replace)
+              (NP (NN MobileMe))
+              (ADVP (RB sometime))
+              (PP (IN in)
+                (NP (DT the) (NN fall))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	June
+			name:	DATE				1-4	June 6 , 2011 
+	2	6
+	3	,
+	4	2011
+	5	,
+	6	Apple
+			coref:	IDENT			1	6-6	Apple 
+			name:	ORGANIZATION				6-6	Apple 
+	7	announced
+			sense:	announce.v.01
+			prop:	announce.01
+			V		7-7	announced 
+			N-ARGM-TMP		0-4	On June 6 , 2011 
+			N-ARG-A0		6-6	Apple 
+			N-ARG-A1		8-20	that a new service called iCloud would replace MobileMe sometime in the fall 
+	8	that
+	9	a
+	10	new
+			sense:	new.a.01
+	11	service
+			sense:	service.n.01
+	12	called
+			sense:	name.v.01
+			prop:	call.01
+			V		12-12	called 
+			N-ARG-A1		9-11	a new service 
+			N-ARG-A2		13-13	iCloud 
+	13	iCloud
+			coref:	IDENT			4	13-13	iCloud 
+	14	would
+	15	replace
+			sense:	supplant.v.01
+			prop:	replace.01
+			V		15-15	replace 
+			N-ARG-A2		9-13	a new service called iCloud 
+			N-ARGM-MOD		14-14	would 
+			N-ARG-A1		16-16	MobileMe 
+			N-ARGM-TMP		17-20	sometime in the fall 
+	16	MobileMe
+	17	sometime
+			sense:	sometime.r.01
+	18	in
+	19	the
+	20	fall
+			name:	DATE				20-20	fall 
+			sense:	fall.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the iPhone 4S special event on October 4 , 2011 , Apple announced it would finally launch iCloud on October 12 , 2011 , to replace MobileMe for new users , with current users having access until June 30 , 2012 ( on that day the service would cease ) .
+
+
+Treebanked sentence:
+--------------------
+At the iPhone 4S special event on October 4 , 2011 , Apple announced it would finally launch iCloud on October 12 , 2011 , to replace MobileMe for new users , with current users having access until June 30 , 2012 ( on that day the service would cease ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (DT the)
+          (NML (NNP iPhone) (NNP 4S))
+          (JJ special) (NN event))
+        (PP (IN on)
+          (NP (NNP October) (CD 4) (, ,) (CD 2011)))))
+    (, ,)
+    (NP (NNP Apple))
+    (VP (VBD announced)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (MD would)
+            (ADVP (RB finally))
+            (VP (VB launch)
+              (NP
+                (NP (NNP iCloud))
+                (PP (IN on)
+                  (NP (NNP October) (CD 12) (, ,) (CD 2011))))
+              (, ,)
+              (S
+                (VP (TO to)
+                  (VP (VB replace)
+                    (NP (NN MobileMe))
+                    (PP (IN for)
+                      (NP (JJ new) (NNS users)))
+                    (, ,)
+                    (PP (IN with)
+                      (NP
+                        (NP (JJ current) (NNS users))
+                        (VP (VBG having)
+                          (NP (NN access))
+                          (PP (IN until)
+                            (NP
+                              (NP (NNP June) (CD 30) (, ,) (CD 2012))
+                              (-LRB- -LRB-)
+                              (PP (IN on)
+                                (NP
+                                  (NP (DT that) (NN day))
+                                  (SBAR
+                                    (S
+                                      (NP (DT the) (NN service))
+                                      (VP (MD would)
+                                        (VP (VB cease)))))))
+                              (-RRB- -RRB-))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+	2	iPhone
+	3	4S
+	4	special
+			sense:	special.s.02
+	5	event
+			sense:	event.n.01
+	6	on
+	7	October
+			name:	DATE				7-10	October 4 , 2011 
+	8	4
+	9	,
+	10	2011
+	11	,
+	12	Apple
+			coref:	IDENT			1	12-12	Apple 
+			name:	ORGANIZATION				12-12	Apple 
+	13	announced
+			sense:	announce.v.01
+			prop:	announce.01
+			V		13-13	announced 
+			N-ARGM-LOC		0-10	At the iPhone 4S special event on October 4 , 2011 
+			N-ARG-A0		12-12	Apple 
+			N-ARG-A1		14-50	it would finally launch iCloud on October 12 , 2011 , to replace MobileMe for new users , with current users having access until June 30 , 2012 ( on that day the service would cease ) 
+	14	it
+			coref:	IDENT			1	14-14	it 
+	15	would
+	16	finally
+			sense:	ultimately.r.01
+	17	launch
+			sense:	establish.v.01
+			prop:	launch.01
+			V		17-17	launch 
+			N-ARG-A0		14-14	it 
+			N-ARGM-MOD		15-15	would 
+			N-ARGM-ADV		16-16	finally 
+			N-ARG-A1		18-18	iCloud 
+			N-ARGM-TMP		19-23	on October 12 , 2011 
+			N-ARGM-PRP		25-50	to replace MobileMe for new users , with current users having access until June 30 , 2012 ( on that day the service would cease ) 
+	18	iCloud
+	19	on
+	20	October
+			name:	DATE				20-23	October 12 , 2011 
+	21	12
+	22	,
+	23	2011
+	24	,
+	25	to
+	26	replace
+			sense:	supplant.v.01
+			prop:	replace.01
+			V		26-26	replace 
+			N-ARG-A1		27-27	MobileMe 
+			N-ARGM-PRD		32-50	with current users having access until June 30 , 2012 ( on that day the service would cease ) 
+	27	MobileMe
+	28	for
+	29	new
+			sense:	new.a.01
+	30	users
+			sense:	user.n.01
+	31	,
+	32	with
+	33	current
+			name:	DATE				33-33	current 
+			sense:	current.a.01
+	34	users
+			sense:	user.n.01
+	35	having
+			sense:	have.v.01
+			prop:	have.03
+			V		35-35	having 
+			N-ARG-A0		33-34	current users 
+			N-ARG-A1		36-36	access 
+			N-ARGM-TMP		37-50	until June 30 , 2012 ( on that day the service would cease ) 
+	36	access
+			sense:	access.n.02
+	37	until
+	38	June
+			name:	DATE				38-41	June 30 , 2012 
+	39	30
+	40	,
+	41	2012
+	42	(
+	43	on
+	44	that
+	45	day
+			name:	DURATION				45-45	day 
+			sense:	day.n.01
+	46	the
+			coref:	IDENT			2	46-47	the service 
+	47	service
+			sense:	service.n.01
+	48	would
+	49	cease
+			sense:	end.v.01
+			prop:	cease.01
+			V		49-49	cease 
+			N-ARGM-TMP		43-45	on that day 
+			N-ARG-A1		46-47	the service 
+			N-ARGM-MOD		48-48	would 
+	50	)
+	51	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+MobileMe was shut down on June 30 , 2012 , with user data available for retrieval until July 31 , 2012 , when the site finally closed completely .
+
+
+Treebanked sentence:
+--------------------
+MobileMe was shut down on June 30 , 2012 , with user data available for retrieval until July 31 , 2012 , when the site finally closed completely . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN MobileMe))
+    (VP (VBD was)
+      (VP (VBN shut)
+        (PRT (RP down))
+        (PP (IN on)
+          (NP
+            (NP (NNP June) (CD 30) (, ,) (CD 2012) (, ,))
+            (PP (IN with)
+              (NP
+                (NP (NN user) (NNS data))
+                (ADJP (JJ available)
+                  (PP (IN for)
+                    (NP (NN retrieval))))))))
+        (PP (IN until)
+          (NP (NNP July) (CD 31) (, ,) (CD 2012)))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (DT the) (NN site))
+            (ADVP (RB finally))
+            (VP (VBD closed)
+              (ADVP (RB completely)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	MobileMe
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	shut
+			sense:	close.v.02
+			prop:	shut.05
+			V		2-2	shut 
+			N-ARG-A1		0-0	MobileMe 
+			N-ARGM-TMP		4-8	on June 30 , 2012 
+			N-ARGM-ADV		10-27	with user data available for retrieval until July 31 , 2012 , when the site finally closed completely 
+	3	down
+	4	on
+	5	June
+			name:	DATE				5-8	June 30 , 2012 
+	6	30
+	7	,
+	8	2012
+	9	,
+	10	with
+	11	user
+			sense:	user.n.01
+	12	data
+			sense:	datum.n.01
+	13	available
+			sense:	available.a.01
+	14	for
+	15	retrieval
+			sense:	retrieval.n.01
+	16	until
+	17	July
+			name:	DATE				17-20	July 31 , 2012 
+	18	31
+	19	,
+	20	2012
+	21	,
+	22	when
+	23	the
+	24	site
+			sense:	web_site.n.01
+	25	finally
+			sense:	ultimately.r.01
+	26	closed
+			sense:	close.v.02
+			prop:	close.01
+			V		26-26	closed 
+			N-ARGM-TMP		17-20	July 31 , 2012 
+			R-ARGM-TMP		22-22	when 
+			N-ARG-A1		23-24	the site 
+			N-ARGM-TMP		25-25	finally 
+			N-ARGM-MNR		27-27	completely 
+	27	completely
+			sense:	wholly.r.01
+	28	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.2-2	2008 
+				5.43-43	2008 
+	Chain 1 (IDENT)
+				1.17-18	Apple Inc. 
+				4.26-26	Apple 
+				4.28-28	it 
+				5.8-8	it 
+				6.6-6	Apple 
+				6.11-11	its 
+				7.2-2	Apple 
+				8.6-6	Apple 
+				9.12-12	Apple 
+				9.14-14	it 
+	Chain 2 (IDENT)
+				2.11-12	the service 
+				5.24-25	the service 
+				9.46-47	the service 
+	Chain 3 (IDENT)
+				1.11-12	online services 
+				2.0-1	All services 
+	Chain 4 (IDENT)
+				2.9-9	iCloud 
+				3.16-16	iCloud 
+				8.13-13	iCloud 
+

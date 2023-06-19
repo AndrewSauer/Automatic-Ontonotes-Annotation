@@ -1,0 +1,616 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bloomberg L.P. is a privately held financial , software , data , and media company headquartered in Midtown Manhattan , New York City .
+
+
+Treebanked sentence:
+--------------------
+Bloomberg L.P. is a privately held financial , software , data , and media company headquartered in Midtown Manhattan , New York City . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bloomberg) (NNP L.P.))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a)
+          (ADJP (RB privately) (VBN held))
+          (NML
+            (NML (JJ financial))
+            (, ,)
+            (NML (NN software))
+            (, ,)
+            (NML (NNS data))
+            (, ,)
+            (CC and)
+            (NML (NNS media)))
+          (NN company))
+        (VP (VBN headquartered)
+          (PP (IN in)
+            (NP
+              (NP (NNP Midtown) (NNP Manhattan))
+              (, ,)
+              (NP
+                (NML (NNP New) (NNP York))
+                (NNP City)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bloomberg
+			coref:	IDENT			0	0-1	Bloomberg L.P. 
+			name:	ORGANIZATION				0-1	Bloomberg L.P. 
+	1	L.P.
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Bloomberg L.P. 
+			N-ARG-A2		3-22	a privately held financial , software , data , and media company headquartered in Midtown Manhattan , New York City 
+	3	a
+	4	privately
+			sense:	privately.r.02
+	5	held
+			sense:	have.v.01
+			prop:	hold.01
+			V		5-5	held 
+			N-ARGM-MNR		4-4	privately 
+			N-ARG-A1		6-14	financial , software , data , and media company 
+	6	financial
+			sense:	fiscal.a.01
+	7	,
+	8	software
+			sense:	software.n.01
+	9	,
+	10	data
+			sense:	datum.n.01
+	11	,
+	12	and
+	13	media
+	14	company
+			sense:	company.n.01
+	15	headquartered
+			sense:	headquarter.v.01
+			prop:	headquarter.01
+			V		15-15	headquartered 
+			N-ARG-A1		3-14	a privately held financial , software , data , and media company 
+			N-ARGM-LOC		16-22	in Midtown Manhattan , New York City 
+	16	in
+	17	Midtown
+			name:	LOCATION				17-17	Midtown 
+	18	Manhattan
+			name:	CITY				18-18	Manhattan 
+	19	,
+	20	New
+			name:	CITY				20-22	New York City 
+	21	York
+	22	City
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was founded by Michael Bloomberg in 1981 , with the help of Thomas Secunda , Duncan MacMillan , Charles Zegar , and a 30 % ownership investment by Merrill Lynch .
+
+
+Treebanked sentence:
+--------------------
+It was founded by Michael Bloomberg in 1981 , with the help of Thomas Secunda , Duncan MacMillan , Charles Zegar , and a 30 % ownership investment by Merrill Lynch . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN founded)
+        (PP (IN by)
+          (NP
+            (NP (NNP Michael) (NNP Bloomberg))
+            (PP (IN in)
+              (NP (CD 1981)))))
+        (, ,)
+        (PP (IN with)
+          (NP
+            (NP (DT the) (NN help))
+            (PP (IN of)
+              (NP
+                (NP (NNP Thomas) (NNP Secunda))
+                (, ,)
+                (NP (NNP Duncan) (NNP MacMillan))
+                (, ,)
+                (NP (NNP Charles) (NNP Zegar))
+                (, ,)
+                (CC and)
+                (NP (DT a)
+                  (NML (CD 30) (NN %))
+                  (NN ownership) (NN investment))))))
+        (PP (IN by)
+          (NP (NNP Merrill) (NNP Lynch)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		2-2	founded 
+			N-ARG-A1		0-0	It 
+			N-ARG-A0		3-5	by Michael Bloomberg 
+			N-ARGM-TMP		6-7	in 1981 
+			N-ARGM-MNR		9-30	with the help of Thomas Secunda , Duncan MacMillan , Charles Zegar , and a 30 % ownership investment by Merrill Lynch 
+	3	by
+	4	Michael
+			name:	PERSON				4-5	Michael Bloomberg 
+	5	Bloomberg
+	6	in
+	7	1981
+			name:	DATE				7-7	1981 
+	8	,
+	9	with
+	10	the
+	11	help
+			sense:	aid.n.02
+	12	of
+	13	Thomas
+			name:	PERSON				13-14	Thomas Secunda 
+	14	Secunda
+	15	,
+	16	Duncan
+			name:	PERSON				16-17	Duncan MacMillan 
+	17	MacMillan
+	18	,
+	19	Charles
+			name:	PERSON				19-20	Charles Zegar 
+	20	Zegar
+	21	,
+	22	and
+	23	a
+	24	30
+			name:	PERCENT				24-25	30 % 
+	25	%
+	26	ownership
+			sense:	ownership.n.01
+	27	investment
+			sense:	investment.n.02
+	28	by
+	29	Merrill
+			name:	ORGANIZATION				29-30	Merrill Lynch 
+	30	Lynch
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bloomberg L.P. provides financial software tools such as an analytics and equity trading platform , data services , and news to financial companies and organizations through the Bloomberg Terminal ( via its Bloomberg Professional Service ) , its core revenue - generating product .
+
+
+Treebanked sentence:
+--------------------
+Bloomberg L.P. provides financial software tools such as an analytics and equity trading platform , data services , and news to financial companies and organizations through the Bloomberg Terminal ( via its Bloomberg Professional Service ) , its core revenue - generating product . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bloomberg) (NNP L.P.))
+    (VP (VBZ provides)
+      (NP
+        (NP
+          (NP (JJ financial) (NN software) (NNS tools))
+          (PP (JJ such) (IN as)
+            (NP (DT an)
+              (NML (NNS analytics)
+                (CC and)
+                (NN equity))
+              (NN trading) (NN platform))))
+        (, ,)
+        (NP (NNS data) (NNS services))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (NN news))
+          (PP (IN to)
+            (NP (JJ financial) (NNS companies)
+              (CC and)
+              (NNS organizations)))))
+      (PP (IN through)
+        (NP
+          (NP
+            (NP (DT the) (NNP Bloomberg) (NNP Terminal))
+            (-LRB- -LRB-)
+            (PP (IN via)
+              (NP (PRP$ its) (NNP Bloomberg) (NNP Professional) (NNP Service)))
+            (-RRB- -RRB-))
+          (, ,)
+          (NP (PRP$ its)
+            (ADJP
+              (NP (NN core) (NN revenue))
+              (HYPH -) (VBG generating))
+            (NN product)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bloomberg
+			coref:	IDENT			0	0-1	Bloomberg L.P. 
+			name:	ORGANIZATION				0-1	Bloomberg L.P. 
+	1	L.P.
+	2	provides
+			sense:	supply.v.01
+			prop:	provide.01
+			V		2-2	provides 
+			N-ARG-A0		0-1	Bloomberg L.P. 
+			N-ARG-A1		3-19	financial software tools such as an analytics and equity trading platform , data services , and news 
+			N-ARG-A2		20-24	to financial companies and organizations 
+			N-ARGM-MNR		25-42	through the Bloomberg Terminal ( via its Bloomberg Professional Service ) , its core revenue - generating product 
+	3	financial
+			sense:	fiscal.a.01
+	4	software
+			sense:	software.n.01
+	5	tools
+			sense:	instrument.n.02
+	6	such
+			sense:	such.s.01
+	7	as
+	8	an
+	9	analytics
+	10	and
+	11	equity
+			sense:	equity.n.01
+	12	trading
+			sense:	trading.n.01
+	13	platform
+			sense:	platform.n.03
+	14	,
+	15	data
+			sense:	datum.n.01
+	16	services
+			sense:	service.n.01
+	17	,
+	18	and
+	19	news
+			sense:	news.n.01
+	20	to
+	21	financial
+			sense:	fiscal.a.01
+	22	companies
+			sense:	company.n.01
+	23	and
+	24	organizations
+			sense:	organization.n.01
+	25	through
+	26	the
+	27	Bloomberg
+			name:	ORGANIZATION				27-28	Bloomberg Terminal 
+	28	Terminal
+	29	(
+	30	via
+	31	its
+			coref:	IDENT			0	31-31	its 
+	32	Bloomberg
+			name:	ORGANIZATION				32-34	Bloomberg Professional Service 
+	33	Professional
+	34	Service
+	35	)
+	36	,
+	37	its
+			coref:	IDENT			0	37-37	its 
+	38	core
+			sense:	kernel.n.03
+	39	revenue
+			sense:	gross.n.02
+	40	-
+	41	generating
+			sense:	render.v.04
+			prop:	generate.01
+			V		41-41	generating 
+			N-ARG-A1		39-39	revenue 
+			N-ARG-A0		42-42	product 
+	42	product
+			sense:	merchandise.n.01
+	43	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bloomberg L.P. also includes a wire service ( Bloomberg News ) , a global television network ( Bloomberg Television ) , digital websites , radio stations ( Bloomberg Radio ) , subscription - only newsletters , and two magazines : Bloomberg Businessweek and Bloomberg Markets .
+
+
+Treebanked sentence:
+--------------------
+Bloomberg L.P. also includes a wire service ( Bloomberg News ) , a global television network ( Bloomberg Television ) , digital websites , radio stations ( Bloomberg Radio ) , subscription - only newsletters , and two magazines : Bloomberg Businessweek and Bloomberg Markets . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bloomberg) (NNP L.P.))
+    (ADVP (RB also))
+    (VP (VBZ includes)
+      (NP
+        (NP
+          (NP (DT a) (NN wire) (NN service))
+          (-LRB- -LRB-)
+          (NP (NNP Bloomberg) (NNP News))
+          (-RRB- -RRB-))
+        (, ,)
+        (NP
+          (NP (DT a) (JJ global) (NN television) (NN network))
+          (-LRB- -LRB-)
+          (NP (NNP Bloomberg) (NNP Television))
+          (-RRB- -RRB-))
+        (, ,)
+        (NP (JJ digital) (NNS websites))
+        (, ,)
+        (NP
+          (NP (NN radio) (NNS stations))
+          (-LRB- -LRB-)
+          (NP (NNP Bloomberg) (NNP Radio))
+          (-RRB- -RRB-))
+        (, ,)
+        (NP
+          (NML (NN subscription) (HYPH -) (JJ only))
+          (NNS newsletters))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (CD two) (NNS magazines))
+          (: :)
+          (NP
+            (NP (NNP Bloomberg) (NNP Businessweek))
+            (CC and)
+            (NP (NNP Bloomberg) (NNPS Markets))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bloomberg
+			coref:	IDENT			0	0-1	Bloomberg L.P. 
+			name:	ORGANIZATION				0-1	Bloomberg L.P. 
+	1	L.P.
+	2	also
+			sense:	besides.r.02
+	3	includes
+			sense:	include.v.01
+			prop:	include.01
+			V		3-3	includes 
+			N-ARG-A2		0-1	Bloomberg L.P. 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A1		4-44	a wire service ( Bloomberg News ) , a global television network ( Bloomberg Television ) , digital websites , radio stations ( Bloomberg Radio ) , subscription - only newsletters , and two magazines : Bloomberg Businessweek and Bloomberg Markets 
+	4	a
+	5	wire
+			sense:	telegram.n.01
+	6	service
+			sense:	service.n.01
+	7	(
+	8	Bloomberg
+			name:	ORGANIZATION				8-9	Bloomberg News 
+	9	News
+	10	)
+	11	,
+	12	a
+	13	global
+			sense:	global.s.01
+	14	television
+			sense:	television.n.01
+	15	network
+			sense:	network.n.02
+	16	(
+	17	Bloomberg
+			name:	ORGANIZATION				17-18	Bloomberg Television 
+	18	Television
+	19	)
+	20	,
+	21	digital
+			sense:	digital.a.03
+	22	websites
+			sense:	web_site.n.01
+	23	,
+	24	radio
+			sense:	radio.n.01
+	25	stations
+			sense:	station.n.05
+	26	(
+	27	Bloomberg
+			name:	ORGANIZATION				27-28	Bloomberg Radio 
+	28	Radio
+	29	)
+	30	,
+	31	subscription
+			sense:	subscription.n.01
+	32	-
+	33	only
+			sense:	alone.s.03
+	34	newsletters
+			sense:	newsletter.n.01
+	35	,
+	36	and
+	37	two
+			name:	NUMBER				37-37	two 
+	38	magazines
+			sense:	magazine.n.01
+	39	:
+	40	Bloomberg
+			name:	ORGANIZATION				40-41	Bloomberg Businessweek 
+	41	Businessweek
+	42	and
+	43	Bloomberg
+			name:	ORGANIZATION				43-44	Bloomberg Markets 
+	44	Markets
+	45	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2014 , Bloomberg L.P. launched Bloomberg Politics , a multiplatform media property that merged the company 's political news teams , and has recruited two veteran political journalists , Mark Halperin and John Heilemann , to run it .
+
+
+Treebanked sentence:
+--------------------
+In 2014 , Bloomberg L.P. launched Bloomberg Politics , a multiplatform media property that merged the company 's political news teams , and has recruited two veteran political journalists , Mark Halperin and John Heilemann , to run it . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2014)))
+    (, ,)
+    (NP (NNP Bloomberg) (NNP L.P.))
+    (VP (VBD launched)
+      (NP
+        (NP (NNP Bloomberg) (NNP Politics))
+        (, ,)
+        (NP
+          (NP (DT a)
+            (NML (NN multiplatform) (NNS media))
+            (NN property))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP
+                (VP (VBD merged)
+                  (NP
+                    (NP (DT the) (NN company) (POS 's))
+                    (JJ political) (NN news) (NNS teams)))
+                (, ,)
+                (CC and)
+                (VP (VBZ has)
+                  (VP (VBN recruited)
+                    (NP
+                      (NP (CD two) (JJ veteran) (JJ political) (NNS journalists))
+                      (, ,)
+                      (NP (NNP Mark) (NNP Halperin))
+                      (CC and)
+                      (NP (NNP John) (NNP Heilemann)))
+                    (, ,)
+                    (S
+                      (VP (TO to)
+                        (VP (VB run)
+                          (NP (PRP it)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2014
+			name:	DATE				1-1	2014 
+	2	,
+	3	Bloomberg
+			coref:	IDENT			0	3-4	Bloomberg L.P. 
+			name:	ORGANIZATION				3-4	Bloomberg L.P. 
+	4	L.P.
+	5	launched
+			sense:	establish.v.01
+			prop:	launch.01
+			V		5-5	launched 
+			N-ARGM-TMP		0-1	In 2014 
+			N-ARG-A0		3-4	Bloomberg L.P. 
+			N-ARG-A1		6-38	Bloomberg Politics , a multiplatform media property that merged the company 's political news teams , and has recruited two veteran political journalists , Mark Halperin and John Heilemann , to run it 
+	6	Bloomberg
+			name:	ORGANIZATION				6-7	Bloomberg Politics 
+	7	Politics
+	8	,
+	9	a
+	10	multiplatform
+	11	media
+	12	property
+			sense:	property.n.01
+	13	that
+	14	merged
+			sense:	unify.v.01
+			prop:	merge.01
+			V		14-14	merged 
+			N-ARG-A0		9-12	a multiplatform media property 
+			R-ARG-A0		13-13	that 
+			N-ARG-A1		15-20	the company 's political news teams 
+	15	the
+			coref:	IDENT			0	15-17	the company 's 
+	16	company
+			sense:	company.n.01
+	17	's
+	18	political
+			sense:	political.a.01
+	19	news
+			sense:	news.n.02
+	20	teams
+			sense:	team.n.01
+	21	,
+	22	and
+	23	has
+			sense:	have.v.01
+			prop:	have.01
+			V		23-23	has 
+	24	recruited
+			sense:	recruit.v.02
+			prop:	recruit.01
+			V		24-24	recruited 
+			N-ARGM-TMP		0-1	In 2014 
+			N-ARG-A0		3-4	Bloomberg L.P. 
+			N-ARG-A1		25-35	two veteran political journalists , Mark Halperin and John Heilemann , 
+			N-ARG-A2		36-38	to run it 
+	25	two
+			name:	NUMBER				25-25	two 
+	26	veteran
+			sense:	seasoned.s.02
+	27	political
+			sense:	political.a.01
+	28	journalists
+			sense:	journalist.n.01
+	29	,
+	30	Mark
+			name:	PERSON				30-31	Mark Halperin 
+	31	Halperin
+	32	and
+	33	John
+			name:	PERSON				33-34	John Heilemann 
+	34	Heilemann
+	35	,
+	36	to
+	37	run
+			sense:	operate.v.01
+			prop:	run.01
+			V		37-37	run 
+			N-ARG-A0		25-35	two veteran political journalists , Mark Halperin and John Heilemann , 
+			N-ARG-A1		38-38	it 
+	38	it
+	39	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Bloomberg L.P. 
+				1.0-0	It 
+				2.0-1	Bloomberg L.P. 
+				2.31-31	its 
+				2.37-37	its 
+				3.0-1	Bloomberg L.P. 
+				4.3-4	Bloomberg L.P. 
+				4.15-17	the company 's 
+

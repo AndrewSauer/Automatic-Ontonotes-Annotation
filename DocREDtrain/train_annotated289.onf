@@ -1,0 +1,559 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Michael Kagan is an American academic and immigrant rights lawyer .
+
+
+Treebanked sentence:
+--------------------
+Michael Kagan is an American academic and immigrant rights lawyer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Michael) (NNP Kagan))
+    (VP (VBZ is)
+      (NP (DT an) (JJ American)
+        (UCP (JJ academic)
+          (CC and)
+          (NML (JJ immigrant) (NNS rights)))
+        (NN lawyer)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Michael
+			name:	PERSON				0-1	Michael Kagan 
+	1	Kagan
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Michael Kagan 
+			N-ARG-A2		3-9	an American academic and immigrant rights lawyer 
+	3	an
+	4	American
+			name:	NATIONALITY				4-4	American 
+	5	academic
+			sense:	academic.a.01
+	6	and
+	7	immigrant
+	8	rights
+			sense:	right.n.01
+	9	lawyer
+			name:	TITLE				9-9	lawyer 
+			sense:	lawyer.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is Professor of Law at the University of Nevada , Las Vegas .
+
+
+Treebanked sentence:
+--------------------
+He is Professor of Law at the University of Nevada , Las Vegas . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP (NNP Professor))
+        (PP (IN of)
+          (NP
+            (NP (NNP Law))
+            (PP (IN at)
+              (NP
+                (NP (DT the) (NNP University))
+                (PP (IN of)
+                  (NP (NNP Nevada) (, ,) (NNP Las) (NNP Vegas)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	is
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-12	Professor of Law at the University of Nevada , Las Vegas 
+	2	Professor
+			name:	TITLE				2-2	Professor 
+	3	of
+	4	Law
+	5	at
+	6	the
+	7	University
+			name:	ORGANIZATION				7-9	University of Nevada 
+	8	of
+	9	Nevada
+	10	,
+	11	Las
+			name:	CITY				11-12	Las Vegas 
+	12	Vegas
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is Director of the UNLV Immigration Clinic , which specializes in deportation defense , including of unaccompanied children .
+
+
+Treebanked sentence:
+--------------------
+He is Director of the UNLV Immigration Clinic , which specializes in deportation defense , including of unaccompanied children . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (NNP Director))
+          (PP (IN of)
+            (NP (DT the) (NNP UNLV) (NNP Immigration) (NNP Clinic))))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ specializes)
+              (PP (IN in)
+                (NP (NN deportation) (NN defense)))
+              (, ,)
+              (PP (VBG including)
+                (PP (IN of)
+                  (NP (JJ unaccompanied) (NNS children)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-18	Director of the UNLV Immigration Clinic , which specializes in deportation defense , including of unaccompanied children 
+	2	Director
+			name:	TITLE				2-2	Director 
+	3	of
+	4	the
+	5	UNLV
+			name:	ORGANIZATION				5-7	UNLV Immigration Clinic 
+	6	Immigration
+	7	Clinic
+	8	,
+	9	which
+	10	specializes
+			sense:	specialize.v.01
+			prop:	specialize.01
+			V		10-10	specializes 
+			N-ARG-A0		4-7	the UNLV Immigration Clinic 
+			R-ARG-A0		9-9	which 
+			N-ARG-A1		11-18	in deportation defense , including of unaccompanied children 
+	11	in
+	12	deportation
+			sense:	deportation.n.02
+	13	defense
+			sense:	defense.n.02
+	14	,
+	15	including
+			sense:	include.v.01
+			prop:	include.01
+			V		15-15	including 
+			N-ARG-A2		12-13	deportation defense 
+			N-ARG-A1		16-18	of unaccompanied children 
+	16	of
+	17	unaccompanied
+			sense:	unaccompanied.a.01
+	18	children
+			sense:	child.n.01
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Kagan played a leading role in the establishment of refugee legal aid programs that assist asylum - seekers applying for refugee status determination through the UN refugee agency .
+
+
+Treebanked sentence:
+--------------------
+Kagan played a leading role in the establishment of refugee legal aid programs that assist asylum - seekers applying for refugee status determination through the UN refugee agency . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Kagan))
+    (VP (VBD played)
+      (NP (DT a) (JJ leading) (NN role))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN establishment))
+          (PP (IN of)
+            (NP
+              (NP (NN refugee) (JJ legal) (NN aid) (NNS programs))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBP assist)
+                    (NP
+                      (NP (NN asylum) (HYPH -) (NNS seekers))
+                      (VP (VBG applying)
+                        (PP (IN for)
+                          (NP (NN refugee) (NN status) (NN determination)))
+                        (PP (IN through)
+                          (NP (DT the) (NNP UN) (NN refugee) (NN agency)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Kagan
+			name:	PERSON				0-0	Kagan 
+	1	played
+			sense:	play.v.02
+			prop:	play.02
+			V		1-1	played 
+			N-ARG-A0		0-0	Kagan 
+			N-ARG-A1		2-27	a leading role in the establishment of refugee legal aid programs that assist asylum - seekers applying for refugee status determination through the UN refugee agency 
+	2	a
+	3	leading
+			sense:	leading.s.02
+	4	role
+			sense:	function.n.03
+	5	in
+	6	the
+	7	establishment
+			sense:	constitution.n.02
+	8	of
+	9	refugee
+			sense:	refugee.n.01
+	10	legal
+			sense:	legal.a.04
+	11	aid
+			sense:	aid.n.02
+	12	programs
+			sense:	program.n.02
+	13	that
+	14	assist
+			sense:	help.v.01
+			prop:	assist.01
+			V		14-14	assist 
+			N-ARG-A0		9-12	refugee legal aid programs 
+			R-ARG-A0		13-13	that 
+			N-ARG-A1		15-27	asylum - seekers applying for refugee status determination through the UN refugee agency 
+	15	asylum
+			sense:	refuge.n.03
+	16	-
+	17	seekers
+			sense:	seeker.n.01
+	18	applying
+			sense:	apply.v.03
+			prop:	apply.01
+			V		18-18	applying 
+			N-ARG-A0		15-17	asylum - seekers 
+			N-ARG-A1		19-22	for refugee status determination 
+			N-ARGM-MNR		23-27	through the UN refugee agency 
+	19	for
+	20	refugee
+			sense:	refugee.n.01
+	21	status
+			sense:	status.n.01
+	22	determination
+			sense:	determination.n.01
+	23	through
+	24	the
+	25	UN
+			name:	ORGANIZATION				25-25	UN 
+	26	refugee
+			sense:	refugee.n.01
+	27	agency
+			sense:	agency.n.01
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He helped to found or develop Africa Middle East Refugee Assistance ( AMERA ) in Egypt , and Asylum Access , which is based in the United States .
+
+
+Treebanked sentence:
+--------------------
+He helped to found or develop Africa Middle East Refugee Assistance ( AMERA ) in Egypt , and Asylum Access , which is based in the United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD helped)
+        (S
+          (VP (TO to)
+            (VP (VBD found)))))
+      (CC or)
+      (VP (VB develop)
+        (NP
+          (NP
+            (NP
+              (NML (NNP Africa) (NNP Middle))
+              (NNP East) (NNP Refugee) (NN Assistance)
+              (PRN (-LRB- -LRB-)
+                (NP (NNP AMERA))
+                (-RRB- -RRB-)))
+            (PP (IN in)
+              (NP (NNP Egypt))))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (NNP Asylum) (NNP Access))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ is)
+                  (VP (VBN based)
+                    (PP (IN in)
+                      (NP (DT the) (NNP United) (NNP States)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	helped
+			sense:	help.v.01
+			prop:	help.01
+			V		1-1	helped 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-27	to found or develop Africa Middle East Refugee Assistance ( AMERA ) in Egypt , and Asylum Access , which is based in the United States 
+	2	to
+	3	found
+			sense:	line_up.v.02
+			prop:	found.01
+			V		3-3	found 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		6-13	Africa Middle East Refugee Assistance ( AMERA ) 
+			C-ARG-A1		17-27	and Asylum Access , which is based in the United States 
+	4	or
+	5	develop
+			sense:	develop.v.01
+			prop:	develop.02
+			V		5-5	develop 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		6-15	Africa Middle East Refugee Assistance ( AMERA ) in Egypt 
+			C-ARG-A1		17-27	and Asylum Access , which is based in the United States 
+	6	Africa
+			name:	LOCATION				6-10	Africa Middle East Refugee Assistance 
+	7	Middle
+	8	East
+	9	Refugee
+	10	Assistance
+			sense:	aid.n.02
+	11	(
+	12	AMERA
+	13	)
+	14	in
+	15	Egypt
+			name:	COUNTRY				15-15	Egypt 
+	16	,
+	17	and
+	18	Asylum
+	19	Access
+	20	,
+	21	which
+	22	is
+			sense:	be.v.01
+			prop:	be.03
+			V		22-22	is 
+	23	based
+			sense:	base.v.02
+			prop:	base.01
+			V		23-23	based 
+			N-ARG-A1		18-19	Asylum Access 
+			R-ARG-A1		21-21	which 
+			N-ARGM-LOC		24-27	in the United States 
+	24	in
+	25	the
+	26	United
+			name:	COUNTRY				26-27	United States 
+	27	States
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also became a leading campaigner for reforms in the way the UN conducts refugee status determination , and started the website RSDWatch.org .
+
+
+Treebanked sentence:
+--------------------
+He also became a leading campaigner for reforms in the way the UN conducts refugee status determination , and started the website RSDWatch.org . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP
+        (ADVP (RB also))
+        (VBD became)
+        (NP (DT a) (VBG leading) (NN campaigner))
+        (PP (IN for)
+          (NP
+            (NP (NNS reforms))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN way))
+                (SBAR
+                  (S
+                    (NP (DT the) (NNP UN))
+                    (VP (VBZ conducts)
+                      (NP (NN refugee) (NN status) (NN determination))))))))))
+      (, ,)
+      (CC and)
+      (VP (VBD started)
+        (NP (DT the) (NN website) (NN RSDWatch.org))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	also
+			sense:	besides.r.02
+	2	became
+			sense:	become.v.02
+			prop:	become.01
+			V		2-2	became 
+			N-ARG-A1		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A2		3-16	a leading campaigner for reforms in the way the UN conducts refugee status determination 
+	3	a
+	4	leading
+			sense:	lead.v.08
+			prop:	lead.02
+			V		4-4	leading 
+			N-ARG-A0		5-5	campaigner 
+	5	campaigner
+			sense:	campaigner.n.01
+	6	for
+	7	reforms
+			sense:	reform.n.01
+	8	in
+	9	the
+	10	way
+			sense:	manner.n.01
+	11	the
+	12	UN
+			name:	ORGANIZATION				12-12	UN 
+	13	conducts
+			sense:	conduct.v.01
+			prop:	conduct.01
+			V		13-13	conducts 
+			N-ARGM-MNR		9-10	the way 
+			N-ARG-A0		11-12	the UN 
+			N-ARG-A1		14-16	refugee status determination 
+	14	refugee
+			sense:	refugee.n.01
+	15	status
+			sense:	status.n.01
+	16	determination
+			sense:	determination.n.01
+	17	,
+	18	and
+	19	started
+			sense:	originate.v.02
+			prop:	start.01
+			V		19-19	started 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		20-22	the website RSDWatch.org 
+	20	the
+	21	website
+			sense:	web_site.n.01
+	22	RSDWatch.org
+			name:	URL				22-22	RSDWatch.org 
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Kagan completed his law degree at the University of Michigan .
+
+
+Treebanked sentence:
+--------------------
+Kagan completed his law degree at the University of Michigan . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Kagan))
+    (VP (VBD completed)
+      (NP (PRP$ his) (NN law) (NN degree))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NNP University))
+          (PP (IN of)
+            (NP (NNP Michigan))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Kagan
+			name:	PERSON				0-0	Kagan 
+	1	completed
+			sense:	complete.v.01
+			prop:	complete.01
+			V		1-1	completed 
+			N-ARG-A0		0-0	Kagan 
+			N-ARG-A1		2-4	his law degree 
+			N-ARGM-LOC		5-9	at the University of Michigan 
+	2	his
+	3	law
+			sense:	law.n.06
+	4	degree
+			sense:	academic_degree.n.01
+	5	at
+	6	the
+	7	University
+	8	of
+	9	Michigan
+			name:	STATE_OR_PROVINCE				9-9	Michigan 
+	10	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+

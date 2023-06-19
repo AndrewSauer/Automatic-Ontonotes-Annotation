@@ -1,0 +1,478 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Brian Charles Raabe ( born November 5 , 1967 ) in New Ulm , Minnesota , is a retired Major League Baseball infielder .
+
+
+Treebanked sentence:
+--------------------
+Brian Charles Raabe ( born November 5 , 1967 ) in New Ulm , Minnesota , is a retired Major League Baseball infielder . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Brian) (NNP Charles) (NNP Raabe))
+        (-LRB- -LRB-)
+        (VP (VBN born)
+          (NP-TMP (NNP November) (CD 5) (, ,) (CD 1967)))
+        (-RRB- -RRB-))
+      (PP (IN in)
+        (NP
+          (NP (NNP New) (NNP Ulm))
+          (, ,)
+          (NP (NNP Minnesota))
+          (, ,))))
+    (VP (VBZ is)
+      (NP (DT a) (JJ retired)
+        (NML (NNP Major) (NNP League) (NNP Baseball))
+        (NN infielder)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Brian
+			name:	PERSON				0-2	Brian Charles Raabe 
+	1	Charles
+	2	Raabe
+	3	(
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-2	Brian Charles Raabe 
+			N-ARGM-TMP		5-8	November 5 , 1967 
+			N-ARGM-LOC		10-14	in New Ulm , Minnesota 
+	5	November
+			name:	DATE				5-8	November 5 , 1967 
+	6	5
+	7	,
+	8	1967
+	9	)
+	10	in
+	11	New
+			name:	CITY				11-12	New Ulm 
+	12	Ulm
+	13	,
+	14	Minnesota
+			coref:	IDENT			1	14-14	Minnesota 
+			name:	STATE_OR_PROVINCE				14-14	Minnesota 
+	15	,
+	16	is
+			sense:	be.v.02
+			prop:	be.01
+			V		16-16	is 
+			N-ARG-A1		0-15	Brian Charles Raabe ( born November 5 , 1967 ) in New Ulm , Minnesota , 
+			N-ARG-A2		17-22	a retired Major League Baseball infielder 
+	17	a
+	18	retired
+			sense:	retired.s.01
+	19	Major
+			name:	ORGANIZATION				19-21	Major League Baseball 
+	20	League
+	21	Baseball
+	22	infielder
+			sense:	infielder.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Raabe played for three different major league ballclubs during his career : the Minnesota Twins ( – ) , Seattle Mariners ( ) , and Colorado Rockies ( 1997 ) , playing third base and second base .
+
+
+Treebanked sentence:
+--------------------
+Raabe played for three different major league ballclubs during his career : the Minnesota Twins ( – ) , Seattle Mariners ( ) , and Colorado Rockies ( 1997 ) , playing third base and second base . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Raabe))
+    (VP (VBD played)
+      (PP (IN for)
+        (NP (CD three) (JJ different) (JJ major) (NN league) (NNS ballclubs)))
+      (PP (IN during)
+        (NP (PRP$ his) (NN career)))
+      (: :)
+      (FRAG
+        (FRAG
+          (NP
+            (NP (DT the) (NNP Minnesota))
+            (NP (NNS Twins)
+              (PRN (-LRB- -LRB-)
+                (NP (SYM –))
+                (-RRB- -RRB-))))
+          (, ,)
+          (NP (NNP Seattle) (NNPS Mariners))
+          (NP (-LRB- -LRB-))
+          (-RRB- -RRB-))
+        (, ,)
+        (CC and)
+        (FRAG
+          (NP (NNP Colorado) (NNPS Rockies))
+          (-LRB- -LRB-)
+          (NP (CD 1997))
+          (-RRB- -RRB-)))
+      (, ,)
+      (S
+        (VP (VBG playing)
+          (NP
+            (NP (JJ third) (NN base))
+            (CC and)
+            (NP (JJ second) (NN base))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Raabe
+			name:	PERSON				0-0	Raabe 
+	1	played
+			sense:	play.v.01
+			prop:	play.01
+			V		1-1	played 
+			N-ARG-A0		0-0	Raabe 
+			N-ARGM-TMP		8-10	during his career 
+			N-ARGM-PRD		31-36	playing third base and second base 
+	2	for
+	3	three
+			name:	NUMBER				3-3	three 
+	4	different
+			sense:	different.a.01
+	5	major
+			sense:	major.a.01
+	6	league
+			sense:	league.n.01
+	7	ballclubs
+	8	during
+	9	his
+	10	career
+			sense:	career.n.01
+	11	:
+	12	the
+	13	Minnesota
+			name:	ORGANIZATION				13-14	Minnesota Twins 
+	14	Twins
+			sense:	twin.n.01
+	15	(
+	16	–
+	17	)
+	18	,
+	19	Seattle
+			name:	ORGANIZATION				19-20	Seattle Mariners 
+	20	Mariners
+	21	(
+	22	)
+	23	,
+	24	and
+	25	Colorado
+			coref:	IDENT			0	25-26	Colorado Rockies 
+			name:	ORGANIZATION				25-26	Colorado Rockies 
+	26	Rockies
+	27	(
+	28	1997
+			name:	DATE				28-28	1997 
+	29	)
+	30	,
+	31	playing
+			sense:	play.v.01
+			prop:	play.01
+			V		31-31	playing 
+			N-ARG-A0		0-0	Raabe 
+			N-ARG-A1		32-36	third base and second base 
+	32	third
+			name:	ORDINAL				32-32	third 
+			sense:	third.s.01
+	33	base
+			sense:	base.n.03
+	34	and
+	35	second
+			name:	ORDINAL				35-35	second 
+			sense:	second.s.01
+	36	base
+			sense:	base.n.03
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On November 20 , 1997 , Raabe was purchased from the Colorado Rockies by the Seibu Lions of the Japan Pacific League .
+
+
+Treebanked sentence:
+--------------------
+On November 20 , 1997 , Raabe was purchased from the Colorado Rockies by the Seibu Lions of the Japan Pacific League . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NNP November) (CD 20) (, ,) (CD 1997)))
+    (, ,)
+    (NP (NNP Raabe))
+    (VP (VBD was)
+      (VP (VBN purchased)
+        (PP (IN from)
+          (NP (DT the) (NNP Colorado) (NNPS Rockies)))
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NNP Seibu) (NNP Lions))
+            (PP (IN of)
+              (NP (DT the) (NNP Japan) (NNP Pacific) (NNP League)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	November
+			name:	DATE				1-4	November 20 , 1997 
+	2	20
+	3	,
+	4	1997
+	5	,
+	6	Raabe
+			name:	PERSON				6-6	Raabe 
+	7	was
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	was 
+	8	purchased
+			sense:	buy.v.01
+			prop:	purchase.01
+			V		8-8	purchased 
+			N-ARGM-TMP		0-4	On November 20 , 1997 
+			N-ARG-A1		6-6	Raabe 
+			N-ARG-A2		9-12	from the Colorado Rockies 
+			N-ARG-A0		13-21	by the Seibu Lions of the Japan Pacific League 
+	9	from
+	10	the
+			coref:	IDENT			0	10-12	the Colorado Rockies 
+	11	Colorado
+			name:	ORGANIZATION				11-12	Colorado Rockies 
+	12	Rockies
+	13	by
+	14	the
+	15	Seibu
+			name:	ORGANIZATION				15-21	Seibu Lions of the Japan Pacific League 
+	16	Lions
+	17	of
+	18	the
+	19	Japan
+	20	Pacific
+	21	League
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He played 37 games for them in 1998 , mostly at second base .
+
+
+Treebanked sentence:
+--------------------
+He played 37 games for them in 1998 , mostly at second base . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD played)
+      (NP (CD 37) (NNS games))
+      (PP (IN for)
+        (NP (PRP them)))
+      (PP
+        (PP (IN in)
+          (NP (CD 1998)))
+        (, ,) (RB mostly)
+        (PP (IN at)
+          (NP (JJ second) (NN base)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	played
+			sense:	play.v.01
+			prop:	play.01
+			V		1-1	played 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-3	37 games 
+			N-ARGM-TMP		6-7	in 1998 
+			N-ARGM-ADV		9-12	mostly at second base 
+	2	37
+			name:	NUMBER				2-2	37 
+	3	games
+			sense:	game.n.02
+	4	for
+	5	them
+	6	in
+	7	1998
+			name:	DATE				7-7	1998 
+	8	,
+	9	mostly
+			sense:	largely.r.01
+	10	at
+	11	second
+			name:	ORDINAL				11-11	second 
+			sense:	second.s.01
+	12	base
+			sense:	base.n.03
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Raabe was head baseball coach at Forest Lake Area High School 2001 - 2011 .
+
+
+Treebanked sentence:
+--------------------
+Raabe was head baseball coach at Forest Lake Area High School 2001 - 2011 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Raabe))
+    (VP (VBD was)
+      (NP
+        (NP (NN head) (NN baseball) (NN coach))
+        (PP (IN at)
+          (NP
+            (NP
+              (NML (NNP Forest) (NNP Lake))
+              (NNP Area) (NNP High))
+            (NP (NNP School) (CD 2001) (, -) (CD 2011))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Raabe
+			name:	PERSON				0-0	Raabe 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	Raabe 
+			N-ARG-A2		2-10	head baseball coach at Forest Lake Area High School 
+			N-ARGM-TMP		11-13	2001 - 2011 
+	2	head
+			sense:	principal.n.02
+	3	baseball
+			sense:	baseball.n.01
+	4	coach
+			name:	TITLE				4-4	coach 
+			sense:	coach.n.01
+	5	at
+	6	Forest
+			name:	ORGANIZATION				6-10	Forest Lake Area High School 
+	7	Lake
+	8	Area
+	9	High
+	10	School
+	11	2001
+			name:	DURATION				11-12	2001 - 
+	12	-
+	13	2011
+			name:	DATE				13-13	2011 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Raabe is now the head baseball coach at Bethel University in St. Paul , Minnesota .
+
+
+Treebanked sentence:
+--------------------
+Raabe is now the head baseball coach at Bethel University in St. Paul , Minnesota . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Raabe))
+    (VP (VBZ is)
+      (ADVP (RB now))
+      (NP
+        (NP (DT the) (NN head) (NN baseball) (NN coach))
+        (PP (IN at)
+          (NP
+            (NP (NNP Bethel) (NNP University))
+            (PP (IN in)
+              (NP
+                (NP (NNP St.) (NNP Paul))
+                (, ,)
+                (NP (NNP Minnesota))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Raabe
+			name:	PERSON				0-0	Raabe 
+	1	is
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Raabe 
+			N-ARGM-TMP		2-2	now 
+			N-ARG-A2		3-14	the head baseball coach at Bethel University in St. Paul , Minnesota 
+	2	now
+			name:	DATE				2-2	now 
+			sense:	now.r.01
+	3	the
+	4	head
+			sense:	principal.n.02
+	5	baseball
+			sense:	baseball.n.01
+	6	coach
+			name:	TITLE				6-6	coach 
+			sense:	coach.n.01
+	7	at
+	8	Bethel
+			name:	ORGANIZATION				8-9	Bethel University 
+	9	University
+	10	in
+	11	St.
+			name:	LOCATION				11-12	St. Paul 
+	12	Paul
+	13	,
+	14	Minnesota
+			coref:	IDENT			1	14-14	Minnesota 
+			name:	STATE_OR_PROVINCE				14-14	Minnesota 
+	15	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.10-12	the Colorado Rockies 
+				1.25-26	Colorado Rockies 
+	Chain 1 (IDENT)
+				0.14-14	Minnesota 
+				5.14-14	Minnesota 
+

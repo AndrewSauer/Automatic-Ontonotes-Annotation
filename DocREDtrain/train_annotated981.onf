@@ -1,0 +1,750 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Boston is an American rock band from Boston , Massachusetts , who had their most notable successes during the 1970s and 1980s .
+
+
+Treebanked sentence:
+--------------------
+Boston is an American rock band from Boston , Massachusetts , who had their most notable successes during the 1970s and 1980s . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Boston))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ American) (NN rock) (NN band))
+        (PP (IN from)
+          (NP
+            (NP (NNP Boston) (, ,) (NNP Massachusetts))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD had)
+                  (NP (PRP$ their)
+                    (ADJP (RBS most) (JJ notable))
+                    (NNS successes))
+                  (PP (IN during)
+                    (NP (DT the) (NNS 1970s)
+                      (CC and)
+                      (NNS 1980s))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Boston
+			coref:	IDENT			1	0-0	Boston 
+			name:	CITY				0-0	Boston 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Boston 
+			N-ARG-A2		2-21	an American rock band from Boston , Massachusetts , who had their most notable successes during the 1970s and 1980s 
+	2	an
+			coref:	IDENT			0	2-21	an American rock band from Boston , Massachusetts , who had their most notable successes during the 1970s and 1980s 
+	3	American
+			name:	NATIONALITY				3-3	American 
+	4	rock
+			sense:	rock_n_roll.n.01
+	5	band
+			sense:	band.n.02
+	6	from
+	7	Boston
+			coref:	IDENT			1	7-21	Boston , Massachusetts , who had their most notable successes during the 1970s and 1980s 
+			coref:	IDENT			1	7-7	Boston 
+			name:	CITY				7-7	Boston 
+	8	,
+	9	Massachusetts
+			name:	STATE_OR_PROVINCE				9-9	Massachusetts 
+	10	,
+	11	who
+	12	had
+			sense:	experience.v.03
+			prop:	have.03
+			V		12-12	had 
+			N-ARG-A0		2-9	an American rock band from Boston , Massachusetts 
+			R-ARG-A0		11-11	who 
+			N-ARG-A1		13-16	their most notable successes 
+			N-ARGM-TMP		17-21	during the 1970s and 1980s 
+	13	their
+	14	most
+			sense:	most.r.01
+	15	notable
+			sense:	noteworthy.s.01
+	16	successes
+			sense:	success.n.03
+	17	during
+	18	the
+			name:	DATE				18-19	the 1970s 
+	19	1970s
+	20	and
+	21	1980s
+			name:	DATE				21-21	1980s 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Centered on multi - instrumentalist founder and leader Tom Scholz , who played the majority of instruments on the debut album , the band is a staple of classic rock radio playlists .
+
+
+Treebanked sentence:
+--------------------
+Centered on multi - instrumentalist founder and leader Tom Scholz , who played the majority of instruments on the debut album , the band is a staple of classic rock radio playlists . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (ADJP (VBN Centered)
+        (PP (IN on)
+          (NP
+            (NP
+              (NML
+                (NML (JJ multi) (HYPH -) (NN instrumentalist))
+                (NN founder)
+                (CC and)
+                (NN leader))
+              (NNP Tom) (NNP Scholz))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD played)
+                  (NP
+                    (NP (DT the) (NN majority))
+                    (PP (IN of)
+                      (NP (NNS instruments))))
+                  (PP (IN on)
+                    (NP (DT the) (NN debut) (NN album))))))))))
+    (, ,)
+    (NP (DT the) (NN band))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN staple))
+        (PP (IN of)
+          (NP (JJ classic)
+            (NML (NN rock) (NN radio))
+            (NNS playlists)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Centered
+			sense:	focus_on.v.01
+			prop:	center.01
+			V		0-0	Centered 
+			N-ARG-A2		1-20	on multi - instrumentalist founder and leader Tom Scholz , who played the majority of instruments on the debut album 
+			N-ARG-A1		22-23	the band 
+	1	on
+	2	multi
+	3	-
+	4	instrumentalist
+			sense:	musician.n.01
+	5	founder
+			name:	TITLE				5-5	founder 
+			sense:	founder.n.02
+	6	and
+	7	leader
+			name:	TITLE				7-7	leader 
+			sense:	leader.n.01
+	8	Tom
+			name:	PERSON				8-9	Tom Scholz 
+	9	Scholz
+	10	,
+	11	who
+	12	played
+			sense:	play.v.03
+			prop:	play.01
+			V		12-12	played 
+			N-ARG-A0		2-9	multi - instrumentalist founder and leader Tom Scholz 
+			R-ARG-A0		11-11	who 
+			N-ARG-A2		13-13	the 
+			N-ARG-A1		14-14	majority 
+			N-ARG-A2		15-16	of instruments 
+			N-ARGM-LOC		17-20	on the debut album 
+	13	the
+	14	majority
+			sense:	majority.n.01
+	15	of
+	16	instruments
+			sense:	musical_instrument.n.01
+	17	on
+	18	the
+	19	debut
+			sense:	introduction.n.01
+	20	album
+			sense:	album.n.01
+	21	,
+	22	the
+			coref:	IDENT			0	22-23	the band 
+	23	band
+			sense:	band.n.02
+	24	is
+			sense:	be.v.01
+			prop:	be.01
+			V		24-24	is 
+			R-ARG-A1		0-20	Centered on multi - instrumentalist founder and leader Tom Scholz , who played the majority of instruments on the debut album 
+			N-ARG-A1		22-23	the band 
+			N-ARG-A2		25-31	a staple of classic rock radio playlists 
+	25	a
+	26	staple
+			sense:	basic.n.02
+	27	of
+	28	classic
+			sense:	classical.a.01
+	29	rock
+			sense:	rock_n_roll.n.01
+	30	radio
+			sense:	radio.n.01
+	31	playlists
+			sense:	playlist.n.01
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Boston 's best - known works include the songs " More Than a Feeling " , " Peace of Mind " , " Foreplay / Long Time " , " Rock and Roll Band " , " Smokin ' " , " Do n't Look Back " , " A Man I 'll Never Be " , and " Amanda " .
+
+
+Treebanked sentence:
+--------------------
+Boston 's best - known works include the songs " More Than a Feeling " , " Peace of Mind " , " Foreplay / Long Time " , " Rock and Roll Band " , " Smokin ' " , " Do n't Look Back " , " A Man I 'll Never Be " , and " Amanda " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Boston) (POS 's))
+        (ADJP (RBS best) (HYPH -) (VBN known))
+        (NNS works))
+      (VP (VBP include)
+        (S
+          (NP (DT the) (NNS songs))
+          (`` ")
+          (NP
+            (NP
+              (NP (JJR More))
+              (PP (IN Than)
+                (NP
+                  (NP (DT a)
+                    (NML
+                      (S
+                        (VP (VBG Feeling)))
+                      ('' ")))
+                  (, ,)
+                  (NP (`` ")
+                    (NP (NN Peace))
+                    (PP (IN of)
+                      (NP (NN Mind)))
+                    ('' ")))))
+            (, ,) (`` ")
+            (NP (NN Foreplay) (HYPH /)
+              (NML
+                (NML (JJ Long) (NN Time))
+                ('' ") (, ,) (`` ")
+                (NML
+                  (NML (NNP Rock))
+                  (CC and)
+                  (NML (NNP Roll) (NNP Band)))
+                ('' ") (, ,) (`` ")
+                (NML (NNP Smokin))
+                ('' ')))
+            ('' ")))
+        (, ,)
+        (S (`` ")
+          (VP (VB Do) (RB n't)
+            (VP (VB Look)
+              (ADVP (RB Back))))
+          ('' "))))
+    (, ,)
+    (S (`` ")
+      (NP
+        (NP (DT A) (NNP Man))
+        (NP (PRP I)))
+      (VP (MD 'll)
+        (ADVP (RB Never))
+        (VP (VB Be)))
+      ('' "))
+    (, ,)
+    (CC and)
+    (FRAG
+      (NP (`` ") (NNP Amanda) ('' ")))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Boston
+			coref:	IDENT			1	0-1	Boston 's 
+			name:	CITY				0-0	Boston 
+	1	's
+	2	best
+			sense:	well.r.01
+	3	-
+	4	known
+			sense:	know.v.07
+			prop:	know.01
+			V		4-4	known 
+			N-ARGM-ADV		2-2	best 
+			N-ARG-A1		5-5	works 
+	5	works
+			sense:	work.n.02
+	6	include
+			sense:	include.v.01
+			prop:	include.01
+			V		6-6	include 
+			N-ARG-A2		0-5	Boston 's best - known works 
+			N-ARG-A1		7-60	the songs " More Than a Feeling " , " Peace of Mind " , " Foreplay / Long Time " , " Rock and Roll Band " , " Smokin ' " , " Do n't Look Back " , " A Man I 'll Never Be " , and " Amanda " 
+	7	the
+	8	songs
+			sense:	song.n.01
+	9	"
+	10	More
+			name:	MISC				10-13	More Than a Feeling 
+			sense:	more.a.01
+	11	Than
+	12	a
+	13	Feeling
+			sense:	feel.v.01
+			prop:	feeling.01
+			V		13-13	Feeling 
+	14	"
+	15	,
+	16	"
+	17	Peace
+			name:	MISC				17-19	Peace of Mind 
+			sense:	peace.n.03
+	18	of
+	19	Mind
+			sense:	mind.n.01
+	20	"
+	21	,
+	22	"
+	23	Foreplay
+			name:	MISC				23-26	Foreplay / Long Time 
+			sense:	foreplay.n.01
+	24	/
+	25	Long
+			sense:	long.a.01
+	26	Time
+			sense:	time.n.02
+	27	"
+	28	,
+	29	"
+	30	Rock
+	31	and
+	32	Roll
+	33	Band
+	34	"
+	35	,
+	36	"
+	37	Smokin
+	38	'
+	39	"
+	40	,
+	41	"
+	42	Do
+			sense:	make.v.01
+			prop:	do.01
+			V		42-42	Do 
+	43	n't
+			sense:	not.r.01
+	44	Look
+			name:	MISC				44-45	Look Back 
+			sense:	look.v.01
+			prop:	look.01
+			V		44-44	Look 
+			N-ARGM-NEG		43-43	n't 
+			N-ARGM-DIR		45-45	Back 
+	45	Back
+			sense:	back.r.01
+	46	"
+	47	,
+	48	"
+	49	A
+	50	Man
+	51	I
+	52	'll
+	53	Never
+			sense:	never.r.01
+	54	Be
+			sense:	be.v.02
+			prop:	be.01
+			V		54-54	Be 
+			N-ARG-A2		49-50	A Man 
+			N-ARG-A1		51-51	I 
+			N-ARGM-MOD		52-52	'll 
+			N-ARGM-NEG		53-53	Never 
+	55	"
+	56	,
+	57	and
+	58	"
+	59	Amanda
+			name:	PERSON				59-59	Amanda 
+	60	"
+	61	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+They have sold more than 75 million records worldwide , including 31 million albums in the United States , of which 17 million were from their self - titled debut album and seven million were for their second album , Do n't Look Back , making them one of the world 's best - selling artists .
+
+
+Treebanked sentence:
+--------------------
+They have sold more than 75 million records worldwide , including 31 million albums in the United States , of which 17 million were from their self - titled debut album and seven million were for their second album , Do n't Look Back , making them one of the world 's best - selling artists . 
+
+Tree:
+-----
+(ROOT
+  (SINV
+    (S
+      (NP (PRP They))
+      (VP (VBP have)
+        (VP (VBN sold)
+          (NP
+            (QP (JJR more) (IN than) (CD 75) (CD million))
+            (NNS records))
+          (ADVP (RB worldwide)))))
+    (, ,)
+    (PP (VBG including)
+      (NP
+        (NP
+          (NP
+            (QP (CD 31) (CD million))
+            (NNS albums))
+          (PP (IN in)
+            (NP (DT the) (NNP United) (NNP States))))
+        (, ,)
+        (SBAR
+          (WHPP (IN of)
+            (WHNP (WDT which)))
+          (S
+            (S
+              (NP
+                (QP (CD 17) (CD million)))
+              (VP (VBD were)
+                (PP (IN from)
+                  (NP (PRP$ their)
+                    (ADJP (NN self) (HYPH -) (VBN titled))
+                    (NN debut) (NN album)))))
+            (CC and)
+            (S
+              (NP
+                (QP (CD seven) (CD million)))
+              (VP (VBD were)
+                (PP (IN for)
+                  (NP (PRP$ their) (JJ second) (NN album)))))))))
+    (, ,)
+    (VP (VBP Do) (RB n't)
+      (VP (VB Look)
+        (ADVP (RB Back))
+        (, ,)
+        (S
+          (VP (VBG making)
+            (NP (PRP them))))))
+    (NP
+      (NP (CD one))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NN world) (POS 's))
+          (ADJP (RBS best) (HYPH -) (VBG selling))
+          (NNS artists))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	They
+	1	have
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	have 
+	2	sold
+			sense:	sell.v.01
+			prop:	sell.01
+			V		2-2	sold 
+			N-ARG-A0		0-0	They 
+			N-ARG-A1		3-7	more than 75 million records 
+			N-ARGM-LOC		8-8	worldwide 
+			N-ARGM-ADV		10-55	including 31 million albums in the United States , of which 17 million were from their self - titled debut album and seven million were for their second album , Do n't Look Back , making them one of the world 's best - selling artists 
+	3	more
+			sense:	more.a.01
+	4	than
+	5	75
+			name:	NUMBER				5-6	75 million 
+	6	million
+	7	records
+			sense:	phonograph_record.n.01
+	8	worldwide
+	9	,
+	10	including
+			sense:	include.v.01
+			prop:	include.01
+			V		10-10	including 
+			N-ARG-A2		3-7	more than 75 million records 
+			N-ARG-A1		11-55	31 million albums in the United States , of which 17 million were from their self - titled debut album and seven million were for their second album , Do n't Look Back , making them one of the world 's best - selling artists 
+	11	31
+			name:	NUMBER				11-12	31 million 
+	12	million
+	13	albums
+			sense:	album.n.01
+	14	in
+	15	the
+	16	United
+			name:	COUNTRY				16-17	United States 
+	17	States
+	18	,
+	19	of
+	20	which
+	21	17
+			name:	NUMBER				21-22	17 million 
+	22	million
+	23	were
+			sense:	be.v.01
+			prop:	be.01
+			V		23-23	were 
+			N-ARG-A1		21-22	17 million 
+			N-ARG-A2		24-30	from their self - titled debut album 
+	24	from
+	25	their
+	26	self
+			sense:	self.n.01
+	27	-
+	28	titled
+			sense:	entitle.v.02
+			prop:	title.01
+			V		28-28	titled 
+			N-ARG-A0		26-26	self 
+			N-ARG-A1		29-30	debut album 
+	29	debut
+			sense:	introduction.n.01
+	30	album
+			sense:	album.n.01
+	31	and
+	32	seven
+			name:	NUMBER				32-33	seven million 
+	33	million
+	34	were
+			sense:	be.v.01
+			prop:	be.01
+			V		34-34	were 
+			N-ARG-A1		32-33	seven million 
+			N-ARG-A2		35-43	for their second album , Do n't Look Back 
+	35	for
+	36	their
+	37	second
+			name:	ORDINAL				37-37	second 
+			sense:	second.s.01
+	38	album
+			sense:	album.n.01
+	39	,
+	40	Do
+			sense:	make.v.01
+			prop:	do.01
+			V		40-40	Do 
+	41	n't
+			sense:	not.r.01
+	42	Look
+			sense:	look.v.01
+			prop:	look.01
+			V		42-42	Look 
+			N-ARGM-NEG		41-41	n't 
+			N-ARGM-DIR		43-43	Back 
+	43	Back
+			sense:	back.r.01
+	44	,
+	45	making
+			sense:	make.v.02
+			prop:	make.02
+			V		45-45	making 
+			N-ARG-A1		46-55	them one of the world 's best - selling artists 
+	46	them
+	47	one
+			name:	NUMBER				47-47	one 
+	48	of
+	49	the
+	50	world
+			sense:	earth.n.01
+	51	's
+	52	best
+			sense:	well.r.01
+	53	-
+	54	selling
+			sense:	sell.v.01
+			prop:	sell.01
+			V		54-54	selling 
+			N-ARGM-ADV		52-52	best 
+			N-ARG-A1		55-55	artists 
+	55	artists
+			sense:	artist.n.01
+	56	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Altogether , the band has released six studio albums over a career spanning over 40 years .
+
+
+Treebanked sentence:
+--------------------
+Altogether , the band has released six studio albums over a career spanning over 40 years . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Altogether))
+    (, ,)
+    (NP (DT the) (NN band))
+    (VP (VBZ has)
+      (VP (VBN released)
+        (NP (CD six) (NN studio) (NNS albums))
+        (PP (IN over)
+          (NP
+            (NP (DT a) (NN career))
+            (VP (VBG spanning)
+              (PP (IN over)
+                (NP (CD 40) (NNS years))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Altogether
+			sense:	altogether.r.02
+	1	,
+	2	the
+			coref:	IDENT			0	2-3	the band 
+	3	band
+			sense:	band.n.02
+	4	has
+			sense:	have.v.01
+			prop:	have.01
+			V		4-4	has 
+	5	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		5-5	released 
+			N-ARGM-ADV		0-0	Altogether 
+			N-ARG-A0		2-3	the band 
+			N-ARG-A1		6-8	six studio albums 
+			N-ARGM-TMP		9-15	over a career spanning over 40 years 
+	6	six
+			name:	NUMBER				6-6	six 
+	7	studio
+			sense:	studio.n.01
+	8	albums
+			sense:	album.n.01
+	9	over
+	10	a
+	11	career
+			sense:	career.n.02
+	12	spanning
+			sense:	cross.v.05
+			prop:	span.01
+			V		12-12	spanning 
+			N-ARG-A0		10-11	a career 
+			N-ARG-A1		13-15	over 40 years 
+	13	over
+	14	40
+			name:	DURATION				14-15	40 years 
+	15	years
+			sense:	year.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Boston were ranked the 63rd best hard rock artist by VH1 .
+
+
+Treebanked sentence:
+--------------------
+Boston were ranked the 63rd best hard rock artist by VH1 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Boston))
+    (VP (VBD were)
+      (VP (VBN ranked)
+        (NP (DT the) (JJ 63rd)
+          (NML (JJS best) (JJ hard) (NN rock))
+          (NN artist))
+        (PP (IN by)
+          (NP (NN VH1)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Boston
+			coref:	IDENT			1	0-0	Boston 
+			name:	CITY				0-0	Boston 
+	1	were
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	were 
+	2	ranked
+			sense:	rate.v.01
+			prop:	rank.01
+			V		2-2	ranked 
+			N-ARG-A1		0-0	Boston 
+			N-ARG-A2		3-8	the 63rd best hard rock artist 
+			N-ARG-A0		9-10	by VH1 
+	3	the
+	4	63rd
+			name:	ORDINAL				4-4	63rd 
+	5	best
+			sense:	good.a.01
+	6	hard
+			sense:	hard.a.02
+	7	rock
+			sense:	rock_n_roll.n.01
+	8	artist
+			name:	TITLE				8-8	artist 
+			sense:	artist.n.01
+	9	by
+	10	VH1
+			name:	ORGANIZATION				10-10	VH1 
+	11	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.2-21	an American rock band from Boston , Massachusetts , who had their most notable successes during the 1970s and 1980s 
+				1.22-23	the band 
+				4.2-3	the band 
+	Chain 1 (IDENT)
+				0.7-21	Boston , Massachusetts , who had their most notable successes during the 1970s and 1980s 
+				0.0-0	Boston 
+				0.7-7	Boston 
+				2.0-1	Boston 's 
+				5.0-0	Boston 
+

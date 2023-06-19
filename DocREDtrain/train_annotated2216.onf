@@ -1,0 +1,780 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Reivers : A Reminiscence , published in 1962 , is the last novel by the American author William Faulkner .
+
+
+Treebanked sentence:
+--------------------
+The Reivers : A Reminiscence , published in 1962 , is the last novel by the American author William Faulkner . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP (DT The) (NNP Reivers))
+    (: :)
+    (S
+      (NP
+        (NP (DT A) (NN Reminiscence))
+        (, ,)
+        (VP (VBN published)
+          (PP (IN in)
+            (NP (CD 1962))))
+        (, ,))
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (JJ last) (NN novel))
+          (PP (IN by)
+            (NP (DT the)
+              (NML (JJ American) (NN author))
+              (NNP William) (NNP Faulkner))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Reivers
+	2	:
+	3	A
+	4	Reminiscence
+			sense:	reminiscence.n.01
+	5	,
+	6	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		6-6	published 
+			N-ARG-A1		0-4	The Reivers : A Reminiscence 
+			N-ARGM-TMP		7-8	in 1962 
+	7	in
+	8	1962
+			name:	DATE				8-8	1962 
+	9	,
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	The Reivers : A Reminiscence , published in 1962 , 
+			N-ARG-A2		11-19	the last novel by the American author William Faulkner 
+	11	the
+			coref:	IDENT			0	11-19	the last novel by the American author William Faulkner 
+	12	last
+			sense:	last.a.02
+	13	novel
+			sense:	novel.n.01
+	14	by
+	15	the
+			coref:	IDENT			1	15-19	the American author William Faulkner 
+	16	American
+			name:	NATIONALITY				16-16	American 
+	17	author
+			name:	TITLE				17-17	author 
+			sense:	writer.n.01
+	18	William
+			name:	PERSON				18-19	William Faulkner 
+	19	Faulkner
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The bestselling novel was awarded the Pulitzer Prize for Fiction in 1963 .
+
+
+Treebanked sentence:
+--------------------
+The bestselling novel was awarded the Pulitzer Prize for Fiction in 1963 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (VBG bestselling) (NN novel))
+    (VP (VBD was)
+      (VP (VBN awarded)
+        (NP
+          (NP (DT the) (NNP Pulitzer) (NNP Prize))
+          (PP (IN for)
+            (NP (NNP Fiction))))
+        (PP (IN in)
+          (NP (CD 1963)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-2	The bestselling novel 
+	1	bestselling
+			prop:	selling.01
+			V		1-1	bestselling 
+			N-ARG-A1		2-2	novel 
+	2	novel
+			sense:	novel.n.01
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	awarded
+			sense:	award.v.01
+			prop:	award.01
+			V		4-4	awarded 
+			N-ARG-A2		0-2	The bestselling novel 
+			N-ARG-A1		5-9	the Pulitzer Prize for Fiction 
+			N-ARGM-TMP		10-11	in 1963 
+	5	the
+	6	Pulitzer
+	7	Prize
+	8	for
+	9	Fiction
+	10	in
+	11	1963
+			name:	DATE				11-11	1963 
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Faulkner previously won this award for his book A Fable , making him one of only three authors to be awarded it more than once .
+
+
+Treebanked sentence:
+--------------------
+Faulkner previously won this award for his book A Fable , making him one of only three authors to be awarded it more than once . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Faulkner))
+    (ADVP (RB previously))
+    (VP (VBD won)
+      (NP (DT this) (NN award))
+      (PP (IN for)
+        (NP
+          (NP (PRP$ his) (NN book))
+          (NP (DT A) (NN Fable))))
+      (, ,)
+      (S
+        (VP (VBG making)
+          (NP (PRP him))
+          (NP-TMP
+            (NP (CD one))
+            (PP (IN of)
+              (NP
+                (QP (RB only) (CD three))
+                (NNS authors))))
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (VP (VBN awarded)
+                  (S
+                    (NP (PRP it))
+                    (ADJP
+                      (ADJP (JJR more))
+                      (PP (IN than)
+                        (ADVP (RB once))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Faulkner
+			coref:	IDENT			1	0-0	Faulkner 
+			name:	PERSON				0-0	Faulkner 
+	1	previously
+			name:	DATE				1-1	previously 
+			sense:	previously.r.01
+	2	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		2-2	won 
+			N-ARG-A0		0-0	Faulkner 
+			N-ARGM-TMP		1-1	previously 
+			N-ARG-A1		3-4	this award 
+			N-ARG-A4		5-9	for his book A Fable 
+			N-ARGM-PRD		11-24	making him one of only three authors to be awarded it more than once 
+	3	this
+	4	award
+			sense:	award.n.02
+	5	for
+	6	his
+			coref:	IDENT			1	6-6	his 
+	7	book
+			sense:	book.n.01
+	8	A
+	9	Fable
+			sense:	fable.n.02
+	10	,
+	11	making
+			sense:	make.v.02
+			prop:	make.02
+			V		11-11	making 
+			N-ARG-A1		12-24	him one of only three authors to be awarded it more than once 
+	12	him
+			coref:	IDENT			1	12-12	him 
+	13	one
+			name:	NUMBER				13-13	one 
+	14	of
+	15	only
+			sense:	entirely.r.02
+	16	three
+			name:	NUMBER				16-16	three 
+	17	authors
+			sense:	writer.n.01
+	18	to
+	19	be
+			sense:	be.v.01
+			prop:	be.03
+			V		19-19	be 
+	20	awarded
+			sense:	award.v.01
+			prop:	award.01
+			V		20-20	awarded 
+			N-ARG-A2		15-17	only three authors 
+			N-ARG-A1		21-21	it 
+			N-ARGM-TMP		22-24	more than once 
+	21	it
+	22	more
+			sense:	more.a.02
+	23	than
+	24	once
+			name:	DATE				24-24	once 
+			sense:	once.r.01
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Unlike many of his earlier works , it is a straightforward narration and eschews the complicated literary techniques of his more well known works .
+
+
+Treebanked sentence:
+--------------------
+Unlike many of his earlier works , it is a straightforward narration and eschews the complicated literary techniques of his more well known works . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Unlike)
+      (NP
+        (NP (JJ many))
+        (PP (IN of)
+          (NP (PRP$ his) (JJR earlier) (NNS works)))))
+    (, ,)
+    (NP (PRP it))
+    (VP
+      (VP (VBZ is)
+        (NP (DT a) (JJ straightforward) (NN narration)))
+      (CC and)
+      (VP (VBZ eschews)
+        (NP
+          (NP (DT the) (JJ complicated) (JJ literary) (NNS techniques))
+          (PP (IN of)
+            (NP (PRP$ his)
+              (ADJP
+                (ADVP (RBR more) (RB well))
+                (JJ known))
+              (NNS works))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Unlike
+	1	many
+			sense:	many.a.01
+	2	of
+	3	his
+			coref:	IDENT			1	3-3	his 
+	4	earlier
+			sense:	early.s.03
+	5	works
+			sense:	work.n.02
+	6	,
+	7	it
+	8	is
+			sense:	be.v.01
+			prop:	be.01
+			V		8-8	is 
+			N-ARGM-ADV		0-5	Unlike many of his earlier works 
+			N-ARG-A1		7-7	it 
+			N-ARG-A2		9-11	a straightforward narration 
+	9	a
+	10	straightforward
+			sense:	straightforward.s.01
+	11	narration
+			sense:	narrative.n.01
+	12	and
+	13	eschews
+			sense:	shun.v.01
+			prop:	eschew.01
+			V		13-13	eschews 
+			N-ARGM-ADV		0-5	Unlike many of his earlier works 
+			N-ARG-A0		7-7	it 
+			N-ARG-A1		14-23	the complicated literary techniques of his more well known works 
+	14	the
+	15	complicated
+			sense:	complicated.s.01
+	16	literary
+			sense:	literary.a.01
+	17	techniques
+			sense:	technique.n.01
+	18	of
+	19	his
+			coref:	IDENT			1	19-19	his 
+	20	more
+			sense:	more.r.01
+	21	well
+			sense:	well.r.02
+	22	known
+			sense:	known.a.01
+	23	works
+			sense:	work.n.02
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is a picaresque novel , and as such may seem uncharacteristically lighthearted given its subject matter .
+
+
+Treebanked sentence:
+--------------------
+It is a picaresque novel , and as such may seem uncharacteristically lighthearted given its subject matter . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (UCP
+        (NP (DT a) (JJ picaresque) (NN novel))
+        (, ,)
+        (CC and)
+        (SBAR (IN as)
+          (S
+            (NP (JJ such))
+            (VP (MD may)
+              (VP (VB seem)
+                (ADJP (RB uncharacteristically) (JJ lighthearted))
+                (PP (VBN given)
+                  (NP (PRP$ its)
+                    (ADJP (JJ subject))
+                    (NN matter)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-4	a picaresque novel 
+	2	a
+	3	picaresque
+			sense:	picaresque.s.01
+	4	novel
+			sense:	novel.n.01
+	5	,
+	6	and
+	7	as
+	8	such
+			sense:	such.s.01
+	9	may
+	10	seem
+			sense:	look.v.02
+			prop:	seem.01
+			V		10-10	seem 
+			N-ARGM-ADV		7-8	as such 
+			N-ARGM-MOD		9-9	may 
+			N-ARG-A1		11-12	uncharacteristically lighthearted 
+			N-ARGM-ADV		13-16	given its subject matter 
+	11	uncharacteristically
+			sense:	uncharacteristically.r.01
+	12	lighthearted
+			sense:	blithe.s.02
+	13	given
+			sense:	give.v.04
+			prop:	give.01
+			V		13-13	given 
+			N-ARG-A1		14-16	its subject matter 
+	14	its
+	15	subject
+			sense:	subject.s.02
+	16	matter
+			sense:	topic.n.02
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+For these reasons , The Reivers is often ignored by Faulkner scholars or dismissed as a lesser work .
+
+
+Treebanked sentence:
+--------------------
+For these reasons , The Reivers is often ignored by Faulkner scholars or dismissed as a lesser work . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (DT these) (NNS reasons)))
+    (, ,)
+    (NP (DT The) (NNP Reivers))
+    (VP (VBZ is)
+      (ADVP (RB often))
+      (VP
+        (VP (VBN ignored)
+          (PP (IN by)
+            (NP (NNP Faulkner) (NNS scholars))))
+        (CC or)
+        (VP (VBN dismissed)
+          (PP (IN as)
+            (NP (DT a) (JJR lesser) (NN work))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	For
+	1	these
+	2	reasons
+			sense:	reason.n.01
+	3	,
+	4	The
+			coref:	IDENT			2	4-5	The Reivers 
+	5	Reivers
+	6	is
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	is 
+	7	often
+			sense:	frequently.r.01
+	8	ignored
+			sense:	dismiss.v.01
+			prop:	ignore.01
+			V		8-8	ignored 
+			N-ARGM-CAU		0-2	For these reasons 
+			N-ARG-A1		4-5	The Reivers 
+			N-ARGM-TMP		7-7	often 
+			N-ARG-A0		9-11	by Faulkner scholars 
+	9	by
+	10	Faulkner
+			coref:	IDENT			1	10-10	Faulkner 
+			name:	PERSON				10-10	Faulkner 
+	11	scholars
+			sense:	scholar.n.01
+	12	or
+	13	dismissed
+			sense:	dismiss.v.01
+			prop:	dismiss.02
+			V		13-13	dismissed 
+			N-ARGM-CAU		0-2	For these reasons 
+			N-ARG-A1		4-5	The Reivers 
+			N-ARGM-TMP		7-7	often 
+			N-ARG-A2		14-17	as a lesser work 
+	14	as
+	15	a
+	16	lesser
+			sense:	less.s.02
+	17	work
+			sense:	work.n.02
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He previously had referred to writing a " Golden Book of Yoknapatawpha County " with which he would finish his literary career .
+
+
+Treebanked sentence:
+--------------------
+He previously had referred to writing a " Golden Book of Yoknapatawpha County " with which he would finish his literary career . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB previously))
+    (VP (VBD had)
+      (VP (VBN referred)
+        (PP (IN to)
+          (S
+            (VP (VBG writing)
+              (NP
+                (NP (DT a)
+                  (NML (`` ")
+                    (NML (NNP Golden) (NNP Book))
+                    (PP (IN of)
+                      (NP (NNP Yoknapatawpha) (NNP County)))
+                    ('' ")))
+                (SBAR
+                  (WHPP (IN with)
+                    (WHNP (WDT which)))
+                  (S
+                    (NP (PRP he))
+                    (VP (MD would)
+                      (VP (VB finish)
+                        (NP (PRP$ his) (JJ literary) (NN career))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	previously
+			name:	DATE				1-1	previously 
+			sense:	previously.r.01
+	2	had
+			sense:	have.v.01
+			prop:	have.01
+			V		2-2	had 
+	3	referred
+			sense:	mention.v.01
+			prop:	refer.01
+			V		3-3	referred 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		1-1	previously 
+			N-ARG-A1		4-21	to writing a " Golden Book of Yoknapatawpha County " with which he would finish his literary career 
+	4	to
+	5	writing
+			sense:	write.v.01
+			prop:	write.01
+			V		5-5	writing 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		6-21	a " Golden Book of Yoknapatawpha County " with which he would finish his literary career 
+	6	a
+	7	"
+	8	Golden
+	9	Book
+	10	of
+	11	Yoknapatawpha
+			name:	LOCATION				11-12	Yoknapatawpha County 
+	12	County
+	13	"
+	14	with
+	15	which
+	16	he
+			coref:	IDENT			2	16-16	he 
+	17	would
+	18	finish
+			sense:	complete.v.01
+			prop:	finish.01
+			V		18-18	finish 
+			N-ARG-A2		6-13	a " Golden Book of Yoknapatawpha County " 
+			R-ARG-A2		14-15	with which 
+			N-ARG-A0		16-16	he 
+			N-ARGM-MOD		17-17	would 
+			N-ARG-A1		19-21	his literary career 
+	19	his
+			coref:	IDENT			2	19-19	his 
+	20	literary
+			sense:	literary.a.01
+	21	career
+			sense:	career.n.02
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is likely that The Reivers was meant to be this " Golden Book " .
+
+
+Treebanked sentence:
+--------------------
+It is likely that The Reivers was meant to be this " Golden Book " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP (JJ likely))
+      (SBAR (IN that)
+        (S
+          (NP (DT The) (NNP Reivers))
+          (VP (VBD was)
+            (VP (VBN meant)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (NP (DT this) (`` ") (NNP Golden) (NNP Book) ('' "))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A2		2-2	likely 
+			N-ARG-A1		3-14	that The Reivers was meant to be this " Golden Book " 
+	2	likely
+			sense:	likely.a.01
+	3	that
+	4	The
+			coref:	IDENT			2	4-5	The Reivers 
+	5	Reivers
+	6	was
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	was 
+	7	meant
+			sense:	intend.v.01
+			prop:	mean.01
+			V		7-7	meant 
+			N-ARG-A2		4-5	The Reivers 
+			N-ARG-A1		8-14	to be this " Golden Book " 
+	8	to
+	9	be
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	be 
+			N-ARG-A1		4-5	The Reivers 
+			N-ARG-A2		10-14	this " Golden Book " 
+	10	this
+	11	"
+	12	Golden
+			name:	MISC				12-13	Golden Book 
+	13	Book
+	14	"
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Reivers was adapted into a 1969 film directed by Mark Rydell and starring Steve McQueen as Boon Hogganbeck .
+
+
+Treebanked sentence:
+--------------------
+The Reivers was adapted into a 1969 film directed by Mark Rydell and starring Steve McQueen as Boon Hogganbeck . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Reivers))
+    (VP (VBD was)
+      (VP (VBN adapted)
+        (PP (IN into)
+          (NP
+            (NP (DT a) (CD 1969) (NN film))
+            (VP
+              (VP (VBN directed)
+                (PP (IN by)
+                  (NP (NNP Mark) (NNP Rydell))))
+              (CC and)
+              (VP (VBG starring)
+                (NP
+                  (NP (NNP Steve) (NNP McQueen))
+                  (PP (IN as)
+                    (NP (NNP Boon) (NNP Hogganbeck))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-1	The Reivers 
+	1	Reivers
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	adapted
+			sense:	adapt.v.01
+			prop:	adapt.01
+			V		3-3	adapted 
+			N-ARG-A1		0-1	The Reivers 
+			N-ARG-A2		4-18	into a 1969 film directed by Mark Rydell and starring Steve McQueen as Boon Hogganbeck 
+	4	into
+	5	a
+	6	1969
+			name:	DATE				6-6	1969 
+	7	film
+			sense:	movie.n.01
+	8	directed
+			sense:	direct.v.03
+			prop:	direct.01
+			V		8-8	directed 
+			N-ARG-A1		5-7	a 1969 film 
+			N-ARG-A0		9-11	by Mark Rydell 
+	9	by
+	10	Mark
+			name:	PERSON				10-11	Mark Rydell 
+	11	Rydell
+	12	and
+	13	starring
+			sense:	star.v.01
+			prop:	star.01
+			V		13-13	starring 
+			N-ARG-A2		5-7	a 1969 film 
+			N-ARG-A1		14-15	Steve McQueen 
+			N-ARGM-PRD		16-18	as Boon Hogganbeck 
+	14	Steve
+			name:	PERSON				14-15	Steve McQueen 
+	15	McQueen
+	16	as
+	17	Boon
+			name:	PERSON				17-18	Boon Hogganbeck 
+	18	Hogganbeck
+	19	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.11-19	the last novel by the American author William Faulkner 
+				1.0-2	The bestselling novel 
+	Chain 1 (IDENT)
+				0.15-19	the American author William Faulkner 
+				2.0-0	Faulkner 
+				2.6-6	his 
+				2.12-12	him 
+				3.3-3	his 
+				3.19-19	his 
+				5.10-10	Faulkner 
+	Chain 2 (IDENT)
+				5.4-5	The Reivers 
+				6.0-0	He 
+				6.16-16	he 
+				6.19-19	his 
+				7.0-0	It 
+				7.4-5	The Reivers 
+				8.0-1	The Reivers 
+

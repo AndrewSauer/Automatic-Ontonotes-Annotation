@@ -1,0 +1,583 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sarah Lawrence College is a private liberal arts college in the United States .
+
+
+Treebanked sentence:
+--------------------
+Sarah Lawrence College is a private liberal arts college in the United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Sarah) (NNP Lawrence) (NNP College))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ private)
+          (NML (JJ liberal) (NNS arts))
+          (NN college))
+        (PP (IN in)
+          (NP (DT the) (NNP United) (NNP States)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sarah
+			name:	PERSON				0-2	Sarah Lawrence College 
+	1	Lawrence
+	2	College
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Sarah Lawrence College 
+			N-ARG-A2		4-12	a private liberal arts college in the United States 
+	4	a
+	5	private
+			sense:	private.a.01
+	6	liberal
+			name:	IDEOLOGY				6-6	liberal 
+			sense:	broad.s.08
+	7	arts
+			sense:	art.n.01
+	8	college
+			sense:	college.n.01
+	9	in
+	10	the
+	11	United
+			name:	COUNTRY				11-12	United States 
+	12	States
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is located in southern Westchester County , New York , in the city of Yonkers , north of Manhattan .
+
+
+Treebanked sentence:
+--------------------
+It is located in southern Westchester County , New York , in the city of Yonkers , north of Manhattan . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN in)
+          (NP (JJ southern)
+            (NML
+              (NML (NNP Westchester) (NNP County))
+              (, ,)
+              (NML (NNP New) (NNP York))
+              (, ,))))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN city))
+            (PP (IN of)
+              (NP
+                (NP (NNP Yonkers))
+                (, ,)
+                (NP
+                  (NP (NN north))
+                  (PP (IN of)
+                    (NP (NNP Manhattan))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		2-2	located 
+			N-ARG-A1		0-0	It 
+			N-ARGM-LOC		3-19	in southern Westchester County , New York , in the city of Yonkers , north of Manhattan 
+	3	in
+	4	southern
+			sense:	southern.a.03
+	5	Westchester
+			name:	CITY				5-5	Westchester 
+	6	County
+			name:	LOCATION				6-6	County 
+	7	,
+	8	New
+			name:	STATE_OR_PROVINCE				8-9	New York 
+	9	York
+	10	,
+	11	in
+	12	the
+	13	city
+			sense:	city.n.01
+	14	of
+	15	Yonkers
+			name:	CITY				15-15	Yonkers 
+	16	,
+	17	north
+			sense:	north.n.03
+	18	of
+	19	Manhattan
+			name:	CITY				19-19	Manhattan 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The college is known for low student - to - faculty ratio and highly individualized course of study .
+
+
+Treebanked sentence:
+--------------------
+The college is known for low student - to - faculty ratio and highly individualized course of study . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN college))
+    (VP (VBZ is)
+      (VP (VBN known)
+        (PP (IN for)
+          (NP
+            (NP
+              (UCP
+                (NML
+                  (NML (JJ low) (NN student))
+                  (HYPH -)
+                  (PP (IN to) (HYPH -)
+                    (NP (NN faculty) (NN ratio))))
+                (CC and)
+                (ADJP (RB highly) (JJ individualized)))
+              (NN course))
+            (PP (IN of)
+              (NP (NN study)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	college
+			sense:	college.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	known
+			sense:	know.v.01
+			prop:	know.01
+			V		3-3	known 
+			N-ARG-A1		0-1	The college 
+			N-ARG-A2		4-17	for low student - to - faculty ratio and highly individualized course of study 
+	4	for
+	5	low
+			sense:	low.a.01
+	6	student
+			name:	TITLE				6-6	student 
+			sense:	student.n.01
+	7	-
+	8	to
+	9	-
+	10	faculty
+			sense:	staff.n.03
+	11	ratio
+			sense:	ratio.n.01
+	12	and
+	13	highly
+			sense:	highly.r.01
+	14	individualized
+			sense:	individualized.s.01
+	15	course
+			sense:	course.n.01
+	16	of
+	17	study
+			sense:	study.n.02
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The school models its approach to education after the Oxford / Cambridge system of one - on - one student - faculty tutorials , which are a key component in all areas of study .
+
+
+Treebanked sentence:
+--------------------
+The school models its approach to education after the Oxford / Cambridge system of one - on - one student - faculty tutorials , which are a key component in all areas of study . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP (DT The) (NN school) (NNS models))
+    (NP (PRP$ its) (NN approach))
+    (PP (IN to)
+      (NP (NN education)))
+    (PP (IN after)
+      (NP
+        (NP
+          (NP (DT the)
+            (NML (NNP Oxford) (HYPH /) (NNP Cambridge))
+            (NN system))
+          (PP (IN of)
+            (NP
+              (NML
+                (NML (CD one))
+                (HYPH -)
+                (PP (IN on) (HYPH -)
+                  (NP (CD one))))
+              (NML (NN student) (HYPH -) (NN faculty))
+              (NNS tutorials))))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBP are)
+              (NP
+                (NP (DT a) (JJ key) (NN component))
+                (PP (IN in)
+                  (NP
+                    (NP (DT all) (NNS areas))
+                    (PP (IN of)
+                      (NP (NN study)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	school
+			sense:	school.n.01
+	2	models
+			sense:	exemplar.n.01
+	3	its
+	4	approach
+			sense:	approach.n.01
+	5	to
+	6	education
+			sense:	education.n.01
+	7	after
+	8	the
+	9	Oxford
+			name:	ORGANIZATION				9-11	Oxford / Cambridge 
+	10	/
+	11	Cambridge
+	12	system
+			sense:	arrangement.n.03
+	13	of
+	14	one
+			name:	NUMBER				14-14	one 
+	15	-
+	16	on
+	17	-
+	18	one
+			name:	NUMBER				18-18	one 
+	19	student
+			name:	TITLE				19-19	student 
+			sense:	student.n.01
+	20	-
+	21	faculty
+			sense:	staff.n.03
+	22	tutorials
+			sense:	tutorial.n.01
+	23	,
+	24	which
+	25	are
+			sense:	be.v.01
+			prop:	be.01
+			V		25-25	are 
+			N-ARG-A1		14-22	one - on - one student - faculty tutorials 
+			R-ARG-A1		24-24	which 
+			N-ARG-A2		26-33	a key component in all areas of study 
+	26	a
+	27	key
+			sense:	cardinal.s.01
+	28	component
+			sense:	component.n.01
+	29	in
+	30	all
+	31	areas
+			sense:	area.n.02
+	32	of
+	33	study
+			sense:	study.n.02
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sarah Lawrence emphasizes scholarship , particularly in the humanities , performing arts , and writing , and places high value on independent study .
+
+
+Treebanked sentence:
+--------------------
+Sarah Lawrence emphasizes scholarship , particularly in the humanities , performing arts , and writing , and places high value on independent study . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Sarah) (NNP Lawrence))
+    (VP (VBZ emphasizes)
+      (NP (NN scholarship))
+      (, ,)
+      (PP
+        (ADVP (RB particularly))
+        (IN in)
+        (NP (DT the) (NNS humanities)))
+      (, ,)
+      (S
+        (VP (VBG performing)
+          (NP
+            (NP
+              (NP (NNS arts))
+              (, ,)
+              (CC and)
+              (NP (NN writing)))
+            (, ,)
+            (CC and)
+            (NP (NNS places)
+              (NML (JJ high) (NN value))))
+          (PP (IN on)
+            (NP (JJ independent) (NN study))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sarah
+			name:	PERSON				0-1	Sarah Lawrence 
+	1	Lawrence
+	2	emphasizes
+			sense:	stress.v.01
+			prop:	emphasize.01
+			V		2-2	emphasizes 
+			N-ARG-A0		0-1	Sarah Lawrence 
+			N-ARG-A1		3-14	scholarship , particularly in the humanities , performing arts , and writing 
+	3	scholarship
+			sense:	eruditeness.n.01
+	4	,
+	5	particularly
+			sense:	particularly.r.01
+	6	in
+	7	the
+	8	humanities
+			sense:	humanistic_discipline.n.01
+	9	,
+	10	performing
+			sense:	perform.v.03
+			prop:	perform.01
+			V		10-10	performing 
+	11	arts
+			sense:	art.n.01
+	12	,
+	13	and
+	14	writing
+			sense:	writing.n.01
+	15	,
+	16	and
+	17	places
+			sense:	place.n.03
+	18	high
+			sense:	high.a.01
+	19	value
+			sense:	value.n.02
+	20	on
+	21	independent
+			name:	RELIGION				21-21	independent 
+			sense:	independent.a.01
+	22	study
+			sense:	study.n.02
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sarah Lawrence College is ranked 53rd in the National Liberal Arts Colleges category in 2018 by U.S. News & World Report .
+
+
+Treebanked sentence:
+--------------------
+Sarah Lawrence College is ranked 53rd in the National Liberal Arts Colleges category in 2018 by U.S. News & World Report . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Sarah) (NNP Lawrence) (NNP College))
+    (VP (VBZ is)
+      (VP (VBN ranked)
+        (NP
+          (NP (JJ 53rd))
+          (PP (IN in)
+            (NP
+              (NP (DT the)
+                (NML (NNP National) (NNP Liberal) (NNPS Arts))
+                (NNP Colleges) (NN category))
+              (PP (IN in)
+                (NP (CD 2018))))))
+        (PP (IN by)
+          (NP (NNP U.S.) (NNP News)
+            (CC &)
+            (NNP World) (NNP Report)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sarah
+			name:	PERSON				0-2	Sarah Lawrence College 
+	1	Lawrence
+	2	College
+	3	is
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	is 
+	4	ranked
+			sense:	rate.v.01
+			prop:	rank.01
+			V		4-4	ranked 
+			N-ARG-A1		0-2	Sarah Lawrence College 
+			N-ARG-A2		5-5	53rd 
+			N-ARGM-LOC		6-12	in the National Liberal Arts Colleges category 
+			N-ARGM-TMP		13-14	in 2018 
+			N-ARG-A0		15-20	by U.S. News & World Report 
+	5	53rd
+			name:	ORDINAL				5-5	53rd 
+	6	in
+	7	the
+	8	National
+	9	Liberal
+			name:	IDEOLOGY				9-9	Liberal 
+	10	Arts
+	11	Colleges
+	12	category
+			sense:	class.n.01
+	13	in
+	14	2018
+			name:	DATE				14-14	2018 
+	15	by
+	16	U.S.
+			name:	COUNTRY				16-16	U.S. 
+	17	News
+	18	&
+	19	World
+	20	Report
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sarah Lawrence was also named the higher education institution with the " best classroom experience " in all of America by Princeton Review in 2016 .
+
+
+Treebanked sentence:
+--------------------
+Sarah Lawrence was also named the higher education institution with the " best classroom experience " in all of America by Princeton Review in 2016 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Sarah) (NNP Lawrence))
+    (VP (VBD was)
+      (ADVP (RB also))
+      (VP (VBN named)
+        (NP
+          (NP (DT the) (JJR higher) (NN education) (NN institution))
+          (PP (IN with)
+            (NP (DT the) (`` ")
+              (ADJP (JJS best))
+              (NN classroom) (NN experience) ('' "))))
+        (PP (IN in)
+          (NP
+            (NP (DT all))
+            (PP (IN of)
+              (NP (NNP America)))))
+        (PP (IN by)
+          (NP
+            (NP (NNP Princeton) (NNP Review))
+            (PP (IN in)
+              (NP (CD 2016)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sarah
+			name:	PERSON				0-1	Sarah Lawrence 
+	1	Lawrence
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	also
+			sense:	besides.r.02
+	4	named
+			sense:	mention.v.01
+			prop:	name.01
+			V		4-4	named 
+			N-ARG-A1		0-1	Sarah Lawrence 
+			N-ARGM-DIS		3-3	also 
+			N-ARG-A2		5-19	the higher education institution with the " best classroom experience " in all of America 
+			N-ARG-A0		20-22	by Princeton Review 
+			N-ARGM-TMP		23-24	in 2016 
+	5	the
+	6	higher
+			sense:	eminent.s.01
+	7	education
+			sense:	education.n.01
+	8	institution
+			sense:	institution.n.01
+	9	with
+	10	the
+	11	"
+	12	best
+			sense:	good.a.01
+	13	classroom
+			sense:	classroom.n.01
+	14	experience
+			sense:	experience.n.02
+	15	"
+	16	in
+	17	all
+	18	of
+	19	America
+			name:	COUNTRY				19-19	America 
+	20	by
+	21	Princeton
+			name:	ORGANIZATION				21-22	Princeton Review 
+	22	Review
+	23	in
+	24	2016
+			name:	DATE				24-24	2016 
+	25	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+

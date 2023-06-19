@@ -1,0 +1,497 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+John Houseal Furse ( 20 April 1880 – 30 September 1907 ) was an officer in the United States Navy , whose active service lasted from 1901 until his death at sea in 1907 .
+
+
+Treebanked sentence:
+--------------------
+John Houseal Furse ( 20 April 1880 – 30 September 1907 ) was an officer in the United States Navy , whose active service lasted from 1901 until his death at sea in 1907 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP John) (NNP Houseal) (NNP Furse))
+      (-LRB- -LRB-)
+      (NP
+        (NP (CD 20) (NNP April) (NNP 1880))
+        (PP (SYM –)
+          (NP (CD 30)))
+        (NP-TMP (NNP September) (CD 1907)))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP
+          (NP (DT an) (NN officer))
+          (PP (IN in)
+            (NP (DT the) (NNP United) (NNP States) (NNP Navy))))
+        (, ,)
+        (SBAR
+          (WHNP (WP$ whose)
+            (NML (JJ active) (NN service)))
+          (S
+            (VP (VBD lasted)
+              (PP (IN from)
+                (NP (CD 1901)))
+              (PP (IN until)
+                (NP (PRP$ his) (NN death)))
+              (PP (IN at)
+                (NP
+                  (NP (NN sea))
+                  (PP (IN in)
+                    (NP (CD 1907))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	John
+			name:	PERSON				0-2	John Houseal Furse 
+	1	Houseal
+	2	Furse
+	3	(
+	4	20
+			name:	DATE				4-6	20 April 1880 
+	5	April
+	6	1880
+	7	–
+	8	30
+			coref:	IDENT			0	8-10	30 September 1907 
+			name:	DATE				8-10	30 September 1907 
+	9	September
+	10	1907
+	11	)
+	12	was
+			sense:	be.v.02
+			prop:	be.01
+			V		12-12	was 
+			N-ARG-A1		0-11	John Houseal Furse ( 20 April 1880 – 30 September 1907 ) 
+			N-ARG-A2		13-33	an officer in the United States Navy , whose active service lasted from 1901 until his death at sea in 1907 
+	13	an
+	14	officer
+			sense:	military_officer.n.01
+	15	in
+	16	the
+	17	United
+			name:	ORGANIZATION				17-19	United States Navy 
+	18	States
+	19	Navy
+	20	,
+	21	whose
+			coref:	IDENT			1	21-23	whose active service 
+	22	active
+			sense:	active.s.02
+	23	service
+			sense:	service.n.05
+	24	lasted
+			sense:	last.v.01
+			prop:	last.01
+			V		24-24	lasted 
+			N-ARG-A1		13-19	an officer in the United States Navy 
+			R-ARG-A1		21-23	whose active service 
+	25	from
+	26	1901
+			coref:	IDENT			2	26-26	1901 
+			name:	DATE				26-26	1901 
+	27	until
+	28	his
+			coref:	IDENT			3	28-28	his 
+	29	death
+			sense:	death.n.01
+	30	at
+	31	sea
+			sense:	sea.n.01
+	32	in
+	33	1907
+			name:	DATE				33-33	1907 
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Furse , born 20 April 1880 in South Carolina , was a member of the United States Naval Academy class of 1901 .
+
+
+Treebanked sentence:
+--------------------
+Furse , born 20 April 1880 in South Carolina , was a member of the United States Naval Academy class of 1901 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Furse))
+      (, ,)
+      (VP (VBN born)
+        (NP
+          (NP (CD 20) (NNP April) (NNP 1880))
+          (PP (IN in)
+            (NP (NNP South) (NNP Carolina)))))
+      (, ,))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (DT the)
+              (NML (NNP United) (NNP States) (NNP Naval) (NNP Academy))
+              (NN class))
+            (PP (IN of)
+              (NP (CD 1901)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Furse
+			name:	PERSON				0-0	Furse 
+	1	,
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Furse 
+			N-ARGM-TMP		3-5	20 April 1880 
+			N-ARGM-LOC		6-8	in South Carolina 
+	3	20
+			name:	DATE				3-5	20 April 1880 
+	4	April
+	5	1880
+	6	in
+	7	South
+			name:	STATE_OR_PROVINCE				7-8	South Carolina 
+	8	Carolina
+	9	,
+	10	was
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	was 
+			N-ARG-A1		0-8	Furse , born 20 April 1880 in South Carolina 
+			N-ARG-A2		11-21	a member of the United States Naval Academy class of 1901 
+	11	a
+	12	member
+			sense:	member.n.01
+	13	of
+	14	the
+	15	United
+			name:	ORGANIZATION				15-18	United States Naval Academy 
+	16	States
+	17	Naval
+	18	Academy
+	19	class
+			sense:	class.n.06
+	20	of
+	21	1901
+			coref:	IDENT			2	21-21	1901 
+			name:	DATE				21-21	1901 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His first service was on the Asiatic Station , where he served in Manila during a scientific expedition , as well as in other ships .
+
+
+Treebanked sentence:
+--------------------
+His first service was on the Asiatic Station , where he served in Manila during a scientific expedition , as well as in other ships . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His) (JJ first) (NN service))
+    (VP (VBD was)
+      (PP (IN on)
+        (NP (DT the) (NNP Asiatic) (NNP Station)))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP he))
+          (VP (VBD served)
+            (PP (IN in)
+              (NP (NNP Manila)))
+            (PP
+              (PP (IN during)
+                (NP (DT a) (JJ scientific) (NN expedition)))
+              (, ,)
+              (CONJP (RB as) (RB well) (IN as))
+              (PP (IN in)
+                (NP (JJ other) (NNS ships))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			1	0-2	His first service 
+			coref:	IDENT			3	0-0	His 
+	1	first
+			name:	ORDINAL				1-1	first 
+			sense:	first.a.01
+	2	service
+			sense:	service.n.05
+	3	was
+			sense:	be.v.05
+			prop:	be.01
+			V		3-3	was 
+			N-ARG-A1		0-2	His first service 
+			N-ARG-A2		4-24	on the Asiatic Station , where he served in Manila during a scientific expedition , as well as in other ships 
+	4	on
+	5	the
+	6	Asiatic
+			name:	LOCATION				6-7	Asiatic Station 
+	7	Station
+	8	,
+	9	where
+	10	he
+			coref:	IDENT			3	10-10	he 
+	11	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		11-11	served 
+			N-ARG-A0		10-10	he 
+			N-ARGM-LOC		12-13	in Manila 
+			N-ARGM-TMP		14-17	during a scientific expedition 
+	12	in
+	13	Manila
+			name:	CITY				13-13	Manila 
+	14	during
+	15	a
+	16	scientific
+			sense:	scientific.a.01
+	17	expedition
+			sense:	expedition.n.02
+	18	,
+	19	as
+			sense:	equally.r.01
+	20	well
+			sense:	well.r.02
+	21	as
+	22	in
+	23	other
+			sense:	other.a.01
+	24	ships
+			sense:	ship.n.01
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Returning to the United States , he joined Illinois ( BB-7 ) 29 September 1904 , and in her served in Cuban waters .
+
+
+Treebanked sentence:
+--------------------
+Returning to the United States , he joined Illinois ( BB - 7 ) 29 September 1904 , and in her served in Cuban waters . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBG Returning)
+        (PP (IN to)
+          (NP (DT the) (NNP United) (NNP States)))))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD joined)
+        (NP
+          (NML
+            (NML (NNP Illinois))
+            (-LRB- -LRB-)
+            (NML (NNP BB) (HYPH -) (CD 7))
+            (-RRB- -RRB-))
+          (CD 29))
+        (NP-TMP (NNP September) (CD 1904)))
+      (, ,)
+      (CC and)
+      (VP
+        (PP (IN in)
+          (NP (PRP$ her)))
+        (VBN served)
+        (PP (IN in)
+          (NP (JJ Cuban) (NNS waters)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Returning
+			sense:	return.v.01
+			prop:	return.01
+			V		0-0	Returning 
+			N-ARG-A4		1-4	to the United States 
+			N-ARG-A1		6-6	he 
+	1	to
+	2	the
+	3	United
+			name:	COUNTRY				3-4	United States 
+	4	States
+	5	,
+	6	he
+			coref:	IDENT			3	6-6	he 
+	7	joined
+			sense:	join.v.01
+			prop:	join.01
+			V		7-7	joined 
+			N-ARG-A0		6-6	he 
+			N-ARG-A1		8-13	Illinois ( BB - 7 ) 
+			N-ARGM-TMP		14-16	29 September 1904 
+	8	Illinois
+			name:	STATE_OR_PROVINCE				8-8	Illinois 
+	9	(
+	10	BB
+	11	-
+	12	7
+	13	)
+	14	29
+			name:	DATE				14-16	29 September 1904 
+	15	September
+	16	1904
+	17	,
+	18	and
+	19	in
+	20	her
+	21	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		21-21	served 
+			N-ARG-A0		6-6	he 
+			N-ARGM-LOC		19-20	in her 
+			N-ARGM-LOC		22-24	in Cuban waters 
+	22	in
+	23	Cuban
+			name:	NATIONALITY				23-23	Cuban 
+	24	waters
+			sense:	body_of_water.n.01
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Lieutenant Furse died on board Illinois 30 September 1907 , of injuries received fighting a storm which threatened his ship .
+
+
+Treebanked sentence:
+--------------------
+Lieutenant Furse died on board Illinois 30 September 1907 , of injuries received fighting a storm which threatened his ship . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Lieutenant) (NNP Furse))
+    (VP (VBD died)
+      (PP (IN on)
+        (NP (NN board) (NNP Illinois) (CD 30)))
+      (NP-TMP (NNP September) (CD 1907))
+      (, ,)
+      (PP (IN of)
+        (NP
+          (NP (NNS injuries))
+          (SBAR
+            (S
+              (VP (VBD received)
+                (S
+                  (VP (VBG fighting)
+                    (NP
+                      (NP (DT a) (NN storm))
+                      (SBAR
+                        (WHNP (WDT which))
+                        (S
+                          (VP (VBD threatened)
+                            (NP (PRP$ his) (NN ship))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Lieutenant
+			name:	TITLE				0-0	Lieutenant 
+	1	Furse
+			name:	PERSON				1-1	Furse 
+	2	died
+			sense:	die.v.01
+			prop:	die.01
+			V		2-2	died 
+			N-ARG-A1		0-1	Lieutenant Furse 
+			N-ARGM-LOC		3-5	on board Illinois 
+			N-ARGM-TMP		6-8	30 September 1907 
+			N-ARGM-CAU		10-19	of injuries received fighting a storm which threatened his ship 
+	3	on
+	4	board
+			sense:	board.n.03
+	5	Illinois
+			name:	ORGANIZATION				5-5	Illinois 
+	6	30
+			coref:	IDENT			0	6-8	30 September 1907 
+			name:	DATE				6-8	30 September 1907 
+	7	September
+	8	1907
+	9	,
+	10	of
+	11	injuries
+			sense:	injury.n.01
+	12	received
+			sense:	experience.v.03
+			prop:	receive.01
+			V		12-12	received 
+			N-ARG-A1		11-11	injuries 
+			N-ARGM-CAU		13-19	fighting a storm which threatened his ship 
+	13	fighting
+			sense:	fight.v.02
+			prop:	fight.01
+			V		13-13	fighting 
+			N-ARG-A1		14-19	a storm which threatened his ship 
+	14	a
+	15	storm
+			name:	CAUSE_OF_DEATH				15-15	storm 
+			sense:	storm.n.01
+	16	which
+	17	threatened
+			sense:	endanger.v.01
+			prop:	threaten.01
+			V		17-17	threatened 
+			N-ARG-A0		14-15	a storm 
+			R-ARG-A0		16-16	which 
+			N-ARG-A2		18-19	his ship 
+	18	his
+	19	ship
+			sense:	ship.n.01
+	20	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.8-10	30 September 1907 
+				4.6-8	30 September 1907 
+	Chain 1 (IDENT)
+				0.21-23	whose active service 
+				2.0-2	His first service 
+	Chain 2 (IDENT)
+				0.26-26	1901 
+				1.21-21	1901 
+	Chain 3 (IDENT)
+				0.28-28	his 
+				2.0-0	His 
+				2.10-10	he 
+				3.6-6	he 
+

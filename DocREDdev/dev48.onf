@@ -1,0 +1,757 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+CBBC ( short for Children 's BBC ) is a British children 's television strand owned by the BBC and aimed for children aged from 6 to 12 .
+
+
+Treebanked sentence:
+--------------------
+CBBC ( short for Children 's BBC ) is a British children 's television strand owned by the BBC and aimed for children aged from 6 to 12 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP CBBC))
+      (-LRB- -LRB-)
+      (NP
+        (NP (JJ short))
+        (PP (IN for)
+          (NP
+            (NP (NNP Children) (POS 's))
+            (NNP BBC))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT a) (JJ British) (NNS children) (POS 's))
+          (NN television) (NN strand))
+        (VP
+          (VP (VBN owned)
+            (PP (IN by)
+              (NP (DT the) (NNP BBC))))
+          (CC and)
+          (VP (VBN aimed)
+            (PP (IN for)
+              (NP
+                (NP (NNS children))
+                (VP (VBN aged)
+                  (PP (IN from)
+                    (NP
+                      (QP (CD 6) (IN to) (CD 12)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	CBBC
+			coref:	IDENT			1	0-0	CBBC 
+			name:	ORGANIZATION				0-0	CBBC 
+	1	(
+	2	short
+			sense:	short.a.01
+	3	for
+	4	Children
+			coref:	IDENT			3	4-6	Children 's BBC 
+	5	's
+	6	BBC
+			name:	ORGANIZATION				6-6	BBC 
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	CBBC ( short for Children 's BBC ) 
+			N-ARG-A2		9-27	a British children 's television strand owned by the BBC and aimed for children aged from 6 to 12 
+	9	a
+	10	British
+			name:	NATIONALITY				10-10	British 
+	11	children
+			sense:	child.n.01
+	12	's
+	13	television
+			sense:	television.n.01
+	14	strand
+			sense:	strand.n.01
+	15	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		15-15	owned 
+			N-ARG-A1		9-14	a British children 's television strand 
+			N-ARG-A0		16-18	by the BBC 
+	16	by
+	17	the
+			coref:	IDENT			3	17-18	the BBC 
+	18	BBC
+			name:	ORGANIZATION				18-18	BBC 
+	19	and
+	20	aimed
+			sense:	calculate.v.05
+			prop:	aim.02
+			V		20-20	aimed 
+			N-ARG-A1		9-14	a British children 's television strand 
+			N-ARG-A2		21-27	for children aged from 6 to 12 
+	21	for
+	22	children
+			sense:	child.n.01
+	23	aged
+			sense:	age.v.01
+			prop:	age.01
+			V		23-23	aged 
+			N-ARG-A1		22-22	children 
+			N-ARG-A2		24-27	from 6 to 12 
+	24	from
+	25	6
+			name:	NUMBER				25-27	6 to 12 
+	26	to
+	27	12
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+BBC programming aimed at under six year old children is broadcast on the CBeebies channel .
+
+
+Treebanked sentence:
+--------------------
+BBC programming aimed at under six year old children is broadcast on the CBeebies channel . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP BBC) (NN programming))
+      (VP (VBN aimed)
+        (PP (IN at)
+          (PP (IN under)
+            (NP (CD six)
+              (ADJP (NN year) (JJ old))
+              (NNS children))))))
+    (VP (VBZ is)
+      (VP (VBN broadcast)
+        (PP (IN on)
+          (NP (DT the) (NNP CBeebies) (NN channel)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	BBC
+			coref:	IDENT			3	0-0	BBC 
+			name:	ORGANIZATION				0-0	BBC 
+	1	programming
+			sense:	scheduling.n.01
+	2	aimed
+			sense:	calculate.v.05
+			prop:	aim.02
+			V		2-2	aimed 
+			N-ARG-A1		0-1	BBC programming 
+			N-ARG-A2		3-8	at under six year old children 
+	3	at
+	4	under
+	5	six
+			name:	DURATION				5-7	six year old 
+	6	year
+			sense:	year.n.01
+	7	old
+			sense:	old.a.01
+	8	children
+			sense:	child.n.01
+	9	is
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	is 
+	10	broadcast
+			sense:	air.v.03
+			prop:	broadcast.01
+			V		10-10	broadcast 
+			N-ARG-A1		0-8	BBC programming aimed at under six year old children 
+			N-ARGM-LOC		11-14	on the CBeebies channel 
+	11	on
+	12	the
+			coref:	IDENT			0	12-14	the CBeebies channel 
+	13	CBeebies
+	14	channel
+			sense:	channel.n.07
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+CBBC broadcasts from 7   am to 9   pm on the digital CBBC Channel , available on most UK digital platforms .
+
+
+Treebanked sentence:
+--------------------
+CBBC broadcasts from 7 am to 9 pm on the digital CBBC Channel , available on most UK digital platforms . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNP CBBC) (NNS broadcasts))
+      (PP (IN from)
+        (NP (CD 7) (NN am))))
+    (PP (IN to)
+      (NP
+        (NP (CD 9) (NN pm))
+        (PP (IN on)
+          (NP (DT the) (JJ digital) (NNP CBBC) (NNP Channel)))))
+    (, ,)
+    (ADJP (JJ available))
+    (PP (IN on)
+      (NP
+        (NP (JJS most))
+        (NP (NNP UK) (JJ digital) (NNS platforms))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	CBBC
+			coref:	IDENT			1	0-0	CBBC 
+			name:	ORGANIZATION				0-0	CBBC 
+	1	broadcasts
+			sense:	broadcast.n.02
+	2	from
+	3	7
+			name:	TIME				3-4	7 am 
+	4	am
+			sense:	amplitude_modulation.n.01
+	5	to
+	6	9
+			name:	TIME				6-7	9 pm 
+	7	pm
+			sense:	phase_modulation.n.01
+	8	on
+	9	the
+			coref:	IDENT			1	9-12	the digital CBBC Channel 
+	10	digital
+			sense:	digital.a.03
+	11	CBBC
+			name:	ORGANIZATION				11-12	CBBC Channel 
+	12	Channel
+	13	,
+	14	available
+			sense:	available.a.01
+	15	on
+	16	most
+			sense:	most.a.01
+	17	UK
+			name:	COUNTRY				17-17	UK 
+	18	digital
+			sense:	digital.a.03
+	19	platforms
+			sense:	platform.n.03
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The CBBC brand was used for the broadcast of children 's programmes on BBC One on weekday afternoons and on BBC Two mornings until these strands were phased out in 2012 and 2013 respectively , as part of the BBC 's " Delivering Quality First " cost - cutting initiative .
+
+
+Treebanked sentence:
+--------------------
+The CBBC brand was used for the broadcast of children 's programmes on BBC One on weekday afternoons and on BBC Two mornings until these strands were phased out in 2012 and 2013 respectively , as part of the BBC 's " Delivering Quality First " cost - cutting initiative . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP CBBC) (NN brand))
+    (VP (VBD was)
+      (VP (VBN used)
+        (PP
+          (PP (IN for)
+            (NP
+              (NP (DT the) (NN broadcast))
+              (PP (IN of)
+                (NP
+                  (NP
+                    (NP (NNS children) (POS 's))
+                    (NNS programmes))
+                  (PP (IN on)
+                    (NP (NNP BBC) (CD One)))
+                  (PP (IN on)
+                    (NP (NN weekday) (NNS afternoons)))))))
+          (CC and)
+          (PP (IN on)
+            (NP (NNP BBC))))
+        (NP-TMP (CD Two) (NNS mornings))
+        (SBAR (IN until)
+          (S
+            (NP (DT these) (NNS strands))
+            (VP (VBD were)
+              (VP (VBN phased)
+                (PRT (RP out))
+                (PP (IN in)
+                  (NP (CD 2012)
+                    (CC and)
+                    (CD 2013)))
+                (ADVP (RB respectively))
+                (, ,)
+                (PP (IN as)
+                  (NP
+                    (NP (NN part))
+                    (PP (IN of)
+                      (NP
+                        (NP (DT the) (NNP BBC) (POS 's))
+                        (NML (`` ")
+                          (VP (VBG Delivering)
+                            (NP (NNP Quality) (NNP First)))
+                          ('' "))))))))
+            (NP
+              (ADJP (NN cost) (HYPH -) (VBG cutting))
+              (NN initiative))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	CBBC
+			coref:	IDENT			1	1-1	CBBC 
+			name:	ORGANIZATION				1-1	CBBC 
+	2	brand
+			sense:	trade_name.n.01
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	used
+			sense:	use.v.01
+			prop:	use.01
+			V		4-4	used 
+			N-ARG-A1		0-2	The CBBC brand 
+			N-ARG-A2		5-22	for the broadcast of children 's programmes on BBC One on weekday afternoons and on BBC Two mornings 
+			N-ARGM-TMP		23-49	until these strands were phased out in 2012 and 2013 respectively , as part of the BBC 's " Delivering Quality First " cost - cutting initiative 
+	5	for
+	6	the
+	7	broadcast
+			sense:	broadcast.n.02
+	8	of
+	9	children
+			sense:	child.n.01
+	10	's
+	11	programmes
+			sense:	broadcast.n.02
+	12	on
+	13	BBC
+			coref:	IDENT			3	13-13	BBC 
+			name:	ORGANIZATION				13-13	BBC 
+	14	One
+			name:	NUMBER				14-14	One 
+	15	on
+	16	weekday
+			name:	DATE				16-16	weekday 
+			sense:	weekday.n.01
+	17	afternoons
+			name:	TIME				17-17	afternoons 
+			sense:	afternoon.n.01
+	18	and
+	19	on
+	20	BBC
+			coref:	IDENT			3	20-20	BBC 
+			name:	ORGANIZATION				20-20	BBC 
+	21	Two
+			name:	NUMBER				21-21	Two 
+	22	mornings
+			name:	TIME				22-22	mornings 
+			sense:	morning.n.01
+	23	until
+	24	these
+	25	strands
+			sense:	strand.n.01
+	26	were
+			sense:	be.v.01
+			prop:	be.03
+			V		26-26	were 
+	27	phased
+			sense:	phase.v.01
+			prop:	phase.01
+			V		27-27	phased 
+			N-ARG-A1		24-25	these strands 
+			N-ARGM-TMP		29-33	in 2012 and 2013 respectively 
+	28	out
+	29	in
+	30	2012
+			name:	DATE				30-30	2012 
+	31	and
+	32	2013
+			name:	DATE				32-32	2013 
+	33	respectively
+			sense:	respectively.r.01
+	34	,
+	35	as
+	36	part
+			sense:	part.n.01
+	37	of
+	38	the
+			coref:	IDENT			3	38-40	the BBC 's 
+	39	BBC
+			name:	ORGANIZATION				39-39	BBC 
+	40	's
+	41	"
+	42	Delivering
+			sense:	deliver.v.02
+			prop:	deliver.01
+			V		42-42	Delivering 
+			N-ARG-A1		43-43	Quality 
+			N-ARGM-TMP		44-44	First 
+	43	Quality
+	44	First
+			name:	ORDINAL				44-44	First 
+	45	"
+	46	cost
+			sense:	cost.n.01
+	47	-
+	48	cutting
+			sense:	reduce.v.01
+			prop:	cut.02
+			V		48-48	cutting 
+			N-ARG-A1		46-46	cost 
+	49	initiative
+			sense:	first_step.n.01
+	50	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+CBBC programmes were also broadcast in high definition alongside other BBC content on BBC HD , generally at afternoons on weekends , unless the channel was covering other events .
+
+
+Treebanked sentence:
+--------------------
+CBBC programmes were also broadcast in high definition alongside other BBC content on BBC HD , generally at afternoons on weekends , unless the channel was covering other events . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP CBBC) (NNS programmes))
+    (VP (VBD were)
+      (ADVP (RB also))
+      (VP (VBN broadcast)
+        (PP (IN in)
+          (NP (JJ high) (NN definition)))
+        (PP (IN alongside)
+          (NP
+            (NP (JJ other) (NNP BBC) (NN content))
+            (PP (IN on)
+              (NP (NNP BBC) (NNP HD))))
+          (, ,)
+          (ADVP (RB generally)))
+        (PP (IN at)
+          (NP
+            (NP (NNS afternoons))
+            (PP (IN on)
+              (NP (NNS weekends)))))
+        (, ,)
+        (SBAR (IN unless)
+          (S
+            (NP (DT the) (NN channel))
+            (VP (VBD was)
+              (VP (VBG covering)
+                (NP (JJ other) (NNS events))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	CBBC
+			coref:	IDENT			1	0-0	CBBC 
+			name:	ORGANIZATION				0-0	CBBC 
+	1	programmes
+			sense:	broadcast.n.02
+	2	were
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	were 
+	3	also
+			sense:	besides.r.02
+	4	broadcast
+			sense:	air.v.03
+			prop:	broadcast.01
+			V		4-4	broadcast 
+			N-ARG-A1		0-1	CBBC programmes 
+			N-ARGM-DIS		3-3	also 
+			N-ARGM-MNR		5-7	in high definition 
+			N-ARGM-LOC		8-14	alongside other BBC content on BBC HD 
+			N-ARGM-TMP		16-20	generally at afternoons on weekends 
+			N-ARGM-ADV		22-28	unless the channel was covering other events 
+	5	in
+	6	high
+			sense:	high.a.01
+	7	definition
+			sense:	definition.n.02
+	8	alongside
+	9	other
+			sense:	other.a.01
+	10	BBC
+			coref:	IDENT			3	10-10	BBC 
+			name:	ORGANIZATION				10-10	BBC 
+	11	content
+			sense:	content.n.01
+	12	on
+	13	BBC
+			coref:	IDENT			2	13-14	BBC HD 
+			coref:	IDENT			3	13-13	BBC 
+			name:	ORGANIZATION				13-13	BBC 
+	14	HD
+	15	,
+	16	generally
+			sense:	by_and_large.r.01
+	17	at
+	18	afternoons
+			name:	TIME				18-18	afternoons 
+			sense:	afternoon.n.01
+	19	on
+	20	weekends
+			name:	SET				20-20	weekends 
+			sense:	weekend.n.01
+	21	,
+	22	unless
+	23	the
+			coref:	IDENT			0	23-24	the channel 
+	24	channel
+			sense:	channel.n.07
+	25	was
+			sense:	be.v.01
+			prop:	be.03
+			V		25-25	was 
+	26	covering
+			sense:	cover.v.05
+			prop:	cover.03
+			V		26-26	covering 
+			N-ARG-A0		23-24	the channel 
+			N-ARG-A1		27-28	other events 
+	27	other
+			sense:	other.a.01
+	28	events
+			sense:	event.n.01
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This ended when BBC HD closed on 26 March 2013 , but CBBC HD launched on 10 December 2013 .
+
+
+Treebanked sentence:
+--------------------
+This ended when BBC HD closed on 26 March 2013 , but CBBC HD launched on 10 December 2013 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT This))
+      (VP (VBD ended)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (NNP BBC) (NNP HD))
+            (VP (VBD closed)
+              (PP (IN on)
+                (NP (CD 26)))
+              (NP-TMP (NNP March) (CD 2013)))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (NNP CBBC) (NNP HD))
+      (VP (VBD launched)
+        (PP (IN on)
+          (NP (CD 10)))
+        (NP-TMP (NNP December) (CD 2013))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+	1	ended
+			sense:	end.v.01
+			prop:	end.01
+			V		1-1	ended 
+			N-ARG-A1		0-0	This 
+			N-ARGM-TMP		2-9	when BBC HD closed on 26 March 2013 
+	2	when
+	3	BBC
+			coref:	IDENT			2	3-4	BBC HD 
+			coref:	IDENT			3	3-3	BBC 
+			name:	ORGANIZATION				3-3	BBC 
+	4	HD
+	5	closed
+			sense:	close_up.v.01
+			prop:	close.01
+			V		5-5	closed 
+			N-ARGM-TMP		2-2	when 
+			N-ARG-A1		3-4	BBC HD 
+			N-ARGM-TMP		6-9	on 26 March 2013 
+	6	on
+	7	26
+			name:	DATE				7-9	26 March 2013 
+	8	March
+	9	2013
+	10	,
+	11	but
+	12	CBBC
+			coref:	IDENT			1	12-12	CBBC 
+			coref:	IDENT			2	12-13	CBBC HD 
+			name:	ORGANIZATION				12-12	CBBC 
+	13	HD
+	14	launched
+			sense:	establish.v.01
+			prop:	launch.01
+			V		14-14	launched 
+			N-ARG-A1		12-13	CBBC HD 
+			N-ARGM-TMP		15-18	on 10 December 2013 
+	15	on
+	16	10
+			name:	DATE				16-18	10 December 2013 
+	17	December
+	18	2013
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+BBC - produced children 's programming , in native languages of Scotland and Wales , also airs on BBC Alba and S4C respectively .
+
+
+Treebanked sentence:
+--------------------
+BBC - produced children 's programming , in native languages of Scotland and Wales , also airs on BBC Alba and S4C respectively . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP BBC))
+        (HYPH -)
+        (VP (VBN produced)
+          (NP
+            (NP (NNS children) (POS 's))
+            (NN programming))))
+      (, ,)
+      (PP (IN in)
+        (NP
+          (NP (JJ native) (NNS languages))
+          (PP (IN of)
+            (NP (NNP Scotland)
+              (CC and)
+              (NNP Wales)))))
+      (, ,))
+    (ADVP (RB also))
+    (VP (VBZ airs)
+      (PP (IN on)
+        (NP
+          (NP (NNP BBC) (NNP Alba))
+          (CC and)
+          (NP (NN S4C))))
+      (ADVP (RB respectively)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	BBC
+			coref:	IDENT			3	0-13	BBC - produced children 's programming , in native languages of Scotland and Wales 
+			name:	ORGANIZATION				0-0	BBC 
+	1	-
+	2	produced
+			sense:	produce.v.02
+			prop:	produce.01
+			V		2-2	produced 
+			N-ARG-A0		0-0	BBC 
+			N-ARG-A1		3-5	children 's programming 
+	3	children
+			sense:	child.n.01
+	4	's
+	5	programming
+			sense:	scheduling.n.01
+	6	,
+	7	in
+	8	native
+			sense:	native.a.03
+	9	languages
+			sense:	language.n.01
+	10	of
+	11	Scotland
+			name:	COUNTRY				11-11	Scotland 
+	12	and
+	13	Wales
+			name:	LOCATION				13-13	Wales 
+	14	,
+	15	also
+			sense:	besides.r.02
+	16	airs
+			sense:	air.v.03
+			prop:	air.01
+			V		16-16	airs 
+			N-ARG-A1		0-14	BBC - produced children 's programming , in native languages of Scotland and Wales , 
+			N-ARGM-DIS		15-15	also 
+			N-ARGM-LOC		17-21	on BBC Alba and S4C 
+			N-ARGM-ADV		22-22	respectively 
+	17	on
+	18	BBC
+			name:	ORGANIZATION				18-19	BBC Alba 
+	19	Alba
+	20	and
+	21	S4C
+	22	respectively
+			sense:	respectively.r.01
+	23	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.12-14	the CBeebies channel 
+				4.23-24	the channel 
+	Chain 1 (IDENT)
+				2.9-12	the digital CBBC Channel 
+				0.0-0	CBBC 
+				2.0-0	CBBC 
+				3.1-1	CBBC 
+				4.0-0	CBBC 
+				5.12-12	CBBC 
+	Chain 2 (IDENT)
+				4.13-14	BBC HD 
+				5.3-4	BBC HD 
+				5.12-13	CBBC HD 
+	Chain 3 (IDENT)
+				0.4-6	Children 's BBC 
+				0.17-18	the BBC 
+				1.0-0	BBC 
+				3.13-13	BBC 
+				3.20-20	BBC 
+				3.38-40	the BBC 's 
+				4.10-10	BBC 
+				4.13-13	BBC 
+				5.3-3	BBC 
+				6.0-13	BBC - produced children 's programming , in native languages of Scotland and Wales 
+

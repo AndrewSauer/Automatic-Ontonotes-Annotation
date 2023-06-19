@@ -1,0 +1,596 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ashley Mote ( born 25 January 1936 ) is a former Member of the European Parliament ( MEP ) for South East England from 2004 to 2009 .
+
+
+Treebanked sentence:
+--------------------
+Ashley Mote ( born 25 January 1936 ) is a former Member of the European Parliament ( MEP ) for South East England from 2004 to 2009 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Ashley) (NNP Mote))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 25))
+        (NP-TMP (NNP January) (CD 1936)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ former) (NNP Member))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (DT the) (NNP European) (NNP Parliament))
+              (-LRB- -LRB-)
+              (NP (NNP MEP))
+              (-RRB- -RRB-))
+            (PP (IN for)
+              (NP
+                (NP (NNP South) (NNP East) (NNP England))
+                (PP (IN from)
+                  (NP
+                    (NP (CD 2004))
+                    (PP (IN to)
+                      (NP (CD 2009)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ashley
+			coref:	IDENT			0	0-1	Ashley Mote 
+			name:	PERSON				0-1	Ashley Mote 
+	1	Mote
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Ashley Mote 
+			N-ARGM-TMP		4-6	25 January 1936 
+	4	25
+			name:	DATE				4-6	25 January 1936 
+	5	January
+	6	1936
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	Ashley Mote ( born 25 January 1936 ) 
+			N-ARG-A2		9-26	a former Member of the European Parliament ( MEP ) for South East England from 2004 to 2009 
+	9	a
+	10	former
+			sense:	former.s.03
+	11	Member
+	12	of
+	13	the
+	14	European
+			name:	ORGANIZATION				14-15	European Parliament 
+	15	Parliament
+	16	(
+	17	MEP
+	18	)
+	19	for
+	20	South
+			name:	LOCATION				20-21	South East 
+	21	East
+	22	England
+			name:	COUNTRY				22-22	England 
+	23	from
+			name:	DATE				23-26	from 2004 to 2009 
+	24	2004
+	25	to
+	26	2009
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Elected representing the UK Independence Party , he became a non - inscrit one month into his term after UKIP withdrew the whip from him due to investigation into his expenses .
+
+
+Treebanked sentence:
+--------------------
+Elected representing the UK Independence Party , he became a non - inscrit one month into his term after UKIP withdrew the whip from him due to investigation into his expenses . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Elected)
+        (S
+          (VP (VBG representing)
+            (NP (DT the) (NNP UK) (NNP Independence) (NNP Party))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD became)
+      (NP
+        (NP (DT a) (FW non) (HYPH -) (FW inscrit))
+        (NP-TMP (CD one) (NN month)))
+      (PP (IN into)
+        (NP (PRP$ his) (NN term)))
+      (SBAR (IN after)
+        (S
+          (NP (NNP UKIP))
+          (VP (VBD withdrew)
+            (NP (DT the) (NN whip))
+            (PP (IN from)
+              (NP (PRP him)))
+            (PP (IN due)
+              (PP (IN to)
+                (NP (NN investigation))))
+            (PP (IN into)
+              (NP (PRP$ his) (NNS expenses)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		0-0	Elected 
+			N-ARGM-PRD		1-5	representing the UK Independence Party 
+			N-ARG-A1		7-7	he 
+	1	representing
+			sense:	represent.v.04
+			prop:	represent.01
+			V		1-1	representing 
+			N-ARG-A1		2-5	the UK Independence Party 
+			N-ARG-A0		7-7	he 
+	2	the
+	3	UK
+			name:	COUNTRY				3-3	UK 
+	4	Independence
+			name:	ORGANIZATION				4-5	Independence Party 
+	5	Party
+	6	,
+	7	he
+			coref:	IDENT			1	7-7	he 
+	8	became
+			sense:	become.v.02
+			prop:	become.01
+			V		8-8	became 
+			R-ARG-A1		0-5	Elected representing the UK Independence Party 
+			N-ARG-A1		7-7	he 
+			N-ARG-A2		9-12	a non - inscrit 
+			N-ARGM-TMP		13-17	one month into his term 
+			N-ARGM-TMP		18-30	after UKIP withdrew the whip from him due to investigation into his expenses 
+	9	a
+	10	non
+	11	-
+	12	inscrit
+	13	one
+			name:	DURATION				13-14	one month 
+	14	month
+			sense:	calendar_month.n.01
+	15	into
+	16	his
+			coref:	IDENT			1	16-16	his 
+	17	term
+			sense:	term.n.02
+	18	after
+	19	UKIP
+			name:	ORGANIZATION				19-19	UKIP 
+	20	withdrew
+			sense:	remove.v.01
+			prop:	withdraw.01
+			V		20-20	withdrew 
+			N-ARG-A0		19-19	UKIP 
+			N-ARG-A1		21-22	the whip 
+			N-ARG-A2		23-24	from him 
+			N-ARGM-CAU		25-30	due to investigation into his expenses 
+	21	the
+	22	whip
+			sense:	whip.n.02
+	23	from
+	24	him
+			coref:	IDENT			1	24-24	him 
+	25	due
+	26	to
+	27	investigation
+			sense:	probe.n.01
+	28	into
+	29	his
+			coref:	IDENT			1	29-29	his 
+	30	expenses
+			sense:	expense.n.01
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A vociferous critic of fraud in the European Institutions , he himself was convicted of benefit fraud in 2007 for which he served a nine - month prison sentence and was described by the trial judge as " a truly dishonest man " .
+
+
+Treebanked sentence:
+--------------------
+A vociferous critic of fraud in the European Institutions , he himself was convicted of benefit fraud in 2007 for which he served a nine - month prison sentence and was described by the trial judge as " a truly dishonest man " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP-TMP
+      (NP (DT A) (JJ vociferous) (NN critic))
+      (PP (IN of)
+        (NP
+          (NP (NN fraud))
+          (PP (IN in)
+            (NP (DT the) (NNP European) (NNP Institutions))))))
+    (, ,)
+    (NP (PRP he))
+    (NP (PRP himself))
+    (VP (VBD was)
+      (VP (VBN convicted)
+        (PP (IN of)
+          (NP (NN benefit) (NN fraud)))
+        (PP (IN in)
+          (NP
+            (NP (CD 2007))
+            (SBAR
+              (WHPP (IN for)
+                (WHNP (WDT which)))
+              (S
+                (NP (PRP he))
+                (VP
+                  (VP (VBD served)
+                    (NP (DT a)
+                      (NML (CD nine) (HYPH -) (NN month))
+                      (NN prison) (NN sentence)))
+                  (CC and)
+                  (VP (VBD was)
+                    (VP (VBN described)
+                      (PP (IN by)
+                        (NP
+                          (NP (DT the) (NN trial) (NN judge))
+                          (PP (IN as) (`` ")
+                            (NP (DT a)
+                              (ADJP (RB truly) (JJ dishonest))
+                              (NN man))
+                            ('' ")))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	vociferous
+			sense:	blatant.s.02
+	2	critic
+			name:	TITLE				2-2	critic 
+			sense:	critic.n.03
+	3	of
+	4	fraud
+			name:	CRIMINAL_CHARGE				4-4	fraud 
+			sense:	fraud.n.03
+	5	in
+	6	the
+	7	European
+			name:	NATIONALITY				7-7	European 
+	8	Institutions
+			name:	MISC				8-8	Institutions 
+	9	,
+	10	he
+			coref:	IDENT			1	10-10	he 
+	11	himself
+			coref:	IDENT			1	11-11	himself 
+	12	was
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	was 
+	13	convicted
+			sense:	convict.v.01
+			prop:	convict.01
+			V		13-13	convicted 
+			N-ARG-A1		10-11	he himself 
+			N-ARG-A2		14-16	of benefit fraud 
+			N-ARGM-TMP		17-18	in 2007 
+			C-ARG-A2		19-42	for which he served a nine - month prison sentence and was described by the trial judge as " a truly dishonest man " 
+	14	of
+	15	benefit
+			sense:	benefit.n.01
+	16	fraud
+			name:	CRIMINAL_CHARGE				16-16	fraud 
+			sense:	fraud.n.03
+	17	in
+	18	2007
+			name:	DATE				18-18	2007 
+	19	for
+	20	which
+	21	he
+			coref:	IDENT			1	21-21	he 
+	22	served
+			sense:	serve.v.09
+			prop:	serve.01
+			V		22-22	served 
+			N-ARGM-CAU		15-16	benefit fraud 
+			R-ARGM-CAU		19-20	for which 
+			N-ARG-A0		21-21	he 
+			N-ARG-A1		23-28	a nine - month prison sentence 
+	23	a
+	24	nine
+			name:	DURATION				24-26	nine - month 
+	25	-
+	26	month
+			sense:	calendar_month.n.01
+	27	prison
+			sense:	prison.n.01
+	28	sentence
+			sense:	prison_term.n.01
+	29	and
+	30	was
+			sense:	be.v.01
+			prop:	be.03
+			V		30-30	was 
+	31	described
+			sense:	describe.v.01
+			prop:	describe.01
+			V		31-31	described 
+			N-ARG-A1		21-21	he 
+			N-ARG-A0		32-35	by the trial judge 
+			N-ARG-A2		36-42	as " a truly dishonest man " 
+	32	by
+	33	the
+	34	trial
+			sense:	trial.n.04
+	35	judge
+			name:	TITLE				35-35	judge 
+			sense:	judge.n.01
+	36	as
+	37	"
+	38	a
+	39	truly
+			sense:	truly.r.01
+	40	dishonest
+			sense:	dishonest.a.01
+	41	man
+			sense:	man.n.01
+	42	"
+	43	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The scandal ignited a debate as to how an MEP could receive a prison sentence , yet keep his seat in the European Parliament ; there are moves afoot to review the legislation .
+
+
+Treebanked sentence:
+--------------------
+The scandal ignited a debate as to how an MEP could receive a prison sentence , yet keep his seat in the European Parliament ; there are moves afoot to review the legislation . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN scandal))
+      (VP (VBD ignited)
+        (NP (DT a) (NN debate))
+        (PP (IN as) (IN to)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (DT an) (NNP MEP))
+              (VP (MD could)
+                (VP
+                  (VP (VB receive)
+                    (NP (DT a) (NN prison) (NN sentence)))
+                  (, ,)
+                  (ADVP (RB yet))
+                  (VP (VB keep)
+                    (NP (PRP$ his) (NN seat))
+                    (PP (IN in)
+                      (NP (DT the) (NNP European) (NNP Parliament)))))))))))
+    (: ;)
+    (S
+      (NP (EX there))
+      (VP (VBP are)
+        (NP
+          (NP (NNS moves))
+          (ADJP (JJ afoot)
+            (S
+              (VP (TO to)
+                (VP (VB review)
+                  (NP (DT the) (NN legislation)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	scandal
+			sense:	scandal.n.02
+	2	ignited
+			sense:	inflame.v.04
+			prop:	ignite.01
+			V		2-2	ignited 
+			N-ARG-A0		0-1	The scandal 
+			N-ARG-A1		3-23	a debate as to how an MEP could receive a prison sentence , yet keep his seat in the European Parliament 
+	3	a
+	4	debate
+			sense:	argument.n.03
+	5	as
+	6	to
+	7	how
+	8	an
+	9	MEP
+	10	could
+	11	receive
+			sense:	receive.v.01
+			prop:	receive.01
+			V		11-11	receive 
+			N-ARGM-MNR		7-7	how 
+			N-ARG-A0		8-9	an MEP 
+			N-ARGM-MOD		10-10	could 
+			N-ARG-A1		12-14	a prison sentence 
+	12	a
+	13	prison
+			sense:	prison.n.01
+	14	sentence
+			sense:	prison_term.n.01
+	15	,
+	16	yet
+			sense:	however.r.01
+	17	keep
+			sense:	keep_open.v.01
+			prop:	keep.01
+			V		17-17	keep 
+			N-ARGM-MNR		7-7	how 
+			N-ARG-A0		8-9	an MEP 
+			N-ARGM-MOD		10-10	could 
+			N-ARGM-ADV		16-16	yet 
+			N-ARG-A1		18-23	his seat in the European Parliament 
+	18	his
+			coref:	IDENT			1	18-18	his 
+	19	seat
+			sense:	seat.n.07
+	20	in
+	21	the
+	22	European
+			name:	ORGANIZATION				22-23	European Parliament 
+	23	Parliament
+	24	;
+	25	there
+	26	are
+			sense:	exist.v.01
+			prop:	be.02
+			V		26-26	are 
+			N-ARG-A1		27-32	moves afoot to review the legislation 
+	27	moves
+			sense:	move.n.01
+	28	afoot
+			sense:	afoot.s.02
+	29	to
+	30	review
+			sense:	review.v.02
+			prop:	review.01
+			V		30-30	review 
+			N-ARG-A1		31-32	the legislation 
+	31	the
+	32	legislation
+			sense:	legislation.n.01
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2015 , Mote was jailed for a further five years for fraudulently claiming nearly £ 500,000 in European Parliament expenses .
+
+
+Treebanked sentence:
+--------------------
+In 2015 , Mote was jailed for a further five years for fraudulently claiming nearly £ 500,000 in European Parliament expenses . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2015)))
+    (, ,)
+    (NP (NNP Mote))
+    (VP (VBD was)
+      (VP (VBN jailed)
+        (PP (IN for)
+          (NP (DT a) (JJ further) (CD five) (NNS years)))
+        (PP (IN for)
+          (S
+            (ADVP (RB fraudulently))
+            (VP (VBG claiming)
+              (NP
+                (NP
+                  (QP (RB nearly) ($ £) (CD 500,000)))
+                (PP (IN in)
+                  (NP
+                    (NML (NNP European) (NNP Parliament))
+                    (NNS expenses)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2015
+			name:	DATE				1-1	2015 
+	2	,
+	3	Mote
+			coref:	IDENT			0	3-3	Mote 
+			name:	PERSON				3-3	Mote 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	jailed
+			sense:	imprison.v.01
+			prop:	jail.01
+			V		5-5	jailed 
+			N-ARGM-TMP		0-1	In 2015 
+			N-ARG-A1		3-3	Mote 
+			N-ARG-A2		6-10	for a further five years 
+			N-ARG-A3		11-20	for fraudulently claiming nearly £ 500,000 in European Parliament expenses 
+	6	for
+	7	a
+	8	further
+			sense:	further.s.01
+	9	five
+			name:	DURATION				9-10	five years 
+	10	years
+			sense:	year.n.01
+	11	for
+	12	fraudulently
+			sense:	fraudulently.r.01
+	13	claiming
+			sense:	claim.v.03
+			prop:	claim.02
+			V		13-13	claiming 
+			N-ARG-A0		3-3	Mote 
+			N-ARGM-MNR		12-12	fraudulently 
+			N-ARG-A1		14-20	nearly £ 500,000 in European Parliament expenses 
+	14	nearly
+			sense:	about.r.07
+	15	£
+			name:	MONEY				15-16	£ 500,000 
+	16	500,000
+	17	in
+	18	European
+			name:	ORGANIZATION				18-19	European Parliament 
+	19	Parliament
+	20	expenses
+			sense:	expense.n.01
+	21	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Ashley Mote 
+				4.3-3	Mote 
+	Chain 1 (IDENT)
+				1.7-7	he 
+				1.16-16	his 
+				1.24-24	him 
+				1.29-29	his 
+				2.10-10	he 
+				2.11-11	himself 
+				2.21-21	he 
+				3.18-18	his 
+

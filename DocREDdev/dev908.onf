@@ -1,0 +1,838 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The House of Hanover ( ) , whose members are known as Hanoverians ( ) , is a German royal house that ruled Hanover , Great Britain , and Ireland at various times during the 17th through 20th centuries .
+
+
+Treebanked sentence:
+--------------------
+The House of Hanover ( ) , whose members are known as Hanoverians ( ) , is a German royal house that ruled Hanover , Great Britain , and Ireland at various times during the 17th through 20th centuries . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP
+      (NP
+        (NP (DT The) (NNP House))
+        (PP (IN of)
+          (NP (NNP Hanover) (-LRB- -LRB-))))
+      (-RRB- -RRB-) (, ,)
+      (SBAR
+        (WHNP (WP$ whose) (NNS members))
+        (S
+          (VP (VBP are)
+            (SBAR
+              (S
+                (VP (VBN known)
+                  (PP (IN as)
+                    (NP (NNPS Hanoverians))))))
+            (-LRB- -LRB-) (-RRB- -RRB-) (, ,)
+            (S
+              (VP (VBZ is)
+                (NP (DT a) (JJ German) (JJ royal) (NN house))))))))
+    (SBAR
+      (WHNP (WDT that))
+      (S
+        (VP (VBD ruled)
+          (NP
+            (NP (NNP Hanover))
+            (, ,)
+            (NP (NNP Great) (NNP Britain))
+            (, ,)
+            (CC and)
+            (NP
+              (NP (NNP Ireland))
+              (PP (IN at)
+                (NP (JJ various) (NNS times)))))
+          (PP (IN during)
+            (NP (DT the) (NN 17th)))
+          (PP (IN through)
+            (NP (JJ 20th) (NNS centuries))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-38	The House of Hanover ( ) , whose members are known as Hanoverians ( ) , is a German royal house that ruled Hanover , Great Britain , and Ireland at various times during the 17th through 20th centuries 
+	1	House
+	2	of
+	3	Hanover
+			name:	CITY				3-3	Hanover 
+	4	(
+	5	)
+	6	,
+	7	whose
+			coref:	IDENT			5	7-8	whose members 
+	8	members
+			sense:	member.n.01
+	9	are
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	are 
+	10	known
+			sense:	know.v.04
+			prop:	know.01
+			V		10-10	known 
+			N-ARG-A1		0-5	The House of Hanover ( ) 
+			R-ARG-A1		7-8	whose members 
+			N-ARG-A2		11-13	as Hanoverians ( 
+	11	as
+	12	Hanoverians
+	13	(
+	14	)
+	15	,
+	16	is
+			sense:	be.v.02
+			prop:	be.01
+			V		16-16	is 
+			N-ARG-A1		0-14	The House of Hanover ( ) , whose members are known as Hanoverians ( ) 
+			N-ARG-A2		17-38	a German royal house that ruled Hanover , Great Britain , and Ireland at various times during the 17th through 20th centuries 
+	17	a
+	18	German
+			name:	NATIONALITY				18-18	German 
+	19	royal
+			sense:	royal.a.02
+	20	house
+			sense:	house.n.06
+	21	that
+	22	ruled
+			sense:	govern.v.03
+			prop:	rule.03
+			V		22-22	ruled 
+			N-ARG-A0		17-20	a German royal house 
+			R-ARG-A0		21-21	that 
+			N-ARG-A1		23-29	Hanover , Great Britain , and Ireland 
+			N-ARGM-TMP		30-38	at various times during the 17th through 20th centuries 
+	23	Hanover
+			name:	CITY				23-23	Hanover 
+	24	,
+	25	Great
+			coref:	IDENT			3	25-26	Great Britain 
+			name:	COUNTRY				25-26	Great Britain 
+	26	Britain
+	27	,
+	28	and
+	29	Ireland
+			coref:	IDENT			4	29-29	Ireland 
+			name:	COUNTRY				29-29	Ireland 
+	30	at
+	31	various
+			sense:	respective.s.01
+	32	times
+			sense:	time.n.01
+	33	during
+	34	the
+	35	17th
+			name:	DATE				35-38	17th through 20th centuries 
+	36	through
+	37	20th
+			sense:	twentieth.s.01
+	38	centuries
+			sense:	century.n.01
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The house originated in 1635 as a cadet branch of the House of Brunswick - Lüneburg , growing in prestige until Hanover became an Electorate in 1692 .
+
+
+Treebanked sentence:
+--------------------
+The house originated in 1635 as a cadet branch of the House of Brunswick - Lüneburg , growing in prestige until Hanover became an Electorate in 1692 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN house))
+    (VP (VBD originated)
+      (PP (IN in)
+        (NP (NNP 1635)))
+      (PP (IN as)
+        (NP
+          (NP (DT a) (NN cadet) (NN branch))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP House))
+              (PP (IN of)
+                (NP (NNP Brunswick) (HYPH -) (NNP Lüneburg)))))))
+      (, ,)
+      (S
+        (VP (VBG growing)
+          (PP (IN in)
+            (NP (NN prestige)))
+          (SBAR (IN until)
+            (S
+              (NP (NNP Hanover))
+              (VP (VBD became)
+                (NP (DT an) (NN Electorate))
+                (PP (IN in)
+                  (NP (CD 1692)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			6	0-1	The house 
+	1	house
+			sense:	house.n.06
+	2	originated
+			sense:	originate.v.01
+			prop:	originate.01
+			V		2-2	originated 
+			N-ARG-A1		0-1	The house 
+			N-ARGM-TMP		3-4	in 1635 
+			N-ARGM-PRD		17-26	growing in prestige until Hanover became an Electorate in 1692 
+	3	in
+	4	1635
+			name:	DATE				4-4	1635 
+	5	as
+	6	a
+	7	cadet
+			sense:	cadet.n.01
+	8	branch
+			sense:	branch.n.01
+	9	of
+	10	the
+			coref:	IDENT			2	10-15	the House of Brunswick - Lüneburg 
+	11	House
+			name:	ORGANIZATION				11-15	House of Brunswick - Lüneburg 
+	12	of
+	13	Brunswick
+	14	-
+	15	Lüneburg
+	16	,
+	17	growing
+			sense:	grow.v.02
+			prop:	grow.01
+			V		17-17	growing 
+			N-ARG-A1		0-1	The house 
+			N-ARGM-MNR		18-19	in prestige 
+			N-ARGM-TMP		20-26	until Hanover became an Electorate in 1692 
+	18	in
+	19	prestige
+			sense:	prestige.n.01
+	20	until
+	21	Hanover
+			name:	CITY				21-21	Hanover 
+	22	became
+			sense:	become.v.02
+			prop:	become.01
+			V		22-22	became 
+			N-ARG-A1		21-21	Hanover 
+			N-ARG-A2		23-24	an Electorate 
+			N-ARGM-TMP		25-26	in 1692 
+	23	an
+	24	Electorate
+			sense:	electorate.n.01
+	25	in
+	26	1692
+			name:	DATE				26-26	1692 
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+George I became the first Hanoverian monarch of Great Britain and Ireland in 1714 .
+
+
+Treebanked sentence:
+--------------------
+George I became the first Hanoverian monarch of Great Britain and Ireland in 1714 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP George))
+    (NP (PRP I))
+    (VP (VBD became)
+      (NP
+        (NP (DT the) (JJ first) (JJ Hanoverian) (NN monarch))
+        (PP (IN of)
+          (NP (NNP Great) (NNP Britain)
+            (CC and)
+            (NNP Ireland))))
+      (PP (IN in)
+        (NP (CD 1714))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	George
+			name:	PERSON				0-0	George 
+	1	I
+	2	became
+			sense:	become.v.02
+			prop:	become.01
+			V		2-2	became 
+			N-ARG-A1		0-1	George I 
+			N-ARG-A2		3-11	the first Hanoverian monarch of Great Britain and Ireland 
+			N-ARGM-TMP		12-13	in 1714 
+	3	the
+	4	first
+			name:	ORDINAL				4-4	first 
+			sense:	first.a.01
+	5	Hanoverian
+			name:	MISC				5-5	Hanoverian 
+			sense:	hanoverian.a.01
+	6	monarch
+			sense:	sovereign.n.01
+	7	of
+	8	Great
+			coref:	IDENT			3	8-9	Great Britain 
+			name:	COUNTRY				8-9	Great Britain 
+	9	Britain
+	10	and
+	11	Ireland
+			coref:	IDENT			4	11-11	Ireland 
+			name:	COUNTRY				11-11	Ireland 
+	12	in
+	13	1714
+			name:	DATE				13-13	1714 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At Victoria 's death in 1901 , the throne of the United Kingdom passed to her eldest son Edward VII , a member of the House of Saxe - Coburg and Gotha .
+
+
+Treebanked sentence:
+--------------------
+At Victoria 's death in 1901 , the throne of the United Kingdom passed to her eldest son Edward VII , a member of the House of Saxe - Coburg and Gotha . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP
+          (NP (NNP Victoria) (POS 's))
+          (NN death))
+        (PP (IN in)
+          (NP (CD 1901)))))
+    (, ,)
+    (NP
+      (NP (DT the) (NN throne))
+      (PP (IN of)
+        (NP (DT the) (NNP United) (NNP Kingdom))))
+    (VP (VBD passed)
+      (PP (IN to)
+        (NP (PRP$ her) (JJS eldest) (NN son)))
+      (NP
+        (NP (NNP Edward) (NNP VII))
+        (, ,)
+        (NP
+          (NP (DT a) (NN member))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP House))
+              (PP (IN of)
+                (NP (NNP Saxe) (HYPH -) (NNP Coburg))))))
+        (CC and)
+        (NP (NNP Gotha))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	Victoria
+			name:	CITY				1-1	Victoria 
+	2	's
+	3	death
+			sense:	death.n.01
+	4	in
+	5	1901
+			name:	DATE				5-5	1901 
+	6	,
+	7	the
+	8	throne
+			sense:	throne.n.03
+	9	of
+	10	the
+	11	United
+			name:	COUNTRY				11-12	United Kingdom 
+	12	Kingdom
+	13	passed
+			sense:	fall.v.21
+			prop:	pass.05
+			V		13-13	passed 
+			N-ARGM-TMP		0-5	At Victoria 's death in 1901 
+			N-ARG-A1		7-12	the throne of the United Kingdom 
+			N-ARG-A2		14-31	to her eldest son Edward VII , a member of the House of Saxe - Coburg and Gotha 
+	14	to
+	15	her
+	16	eldest
+	17	son
+			sense:	son.n.01
+	18	Edward
+			name:	PERSON				18-19	Edward VII 
+	19	VII
+	20	,
+	21	a
+	22	member
+			sense:	member.n.01
+	23	of
+	24	the
+			coref:	IDENT			2	24-29	the House of Saxe - Coburg 
+	25	House
+			name:	ORGANIZATION				25-29	House of Saxe - Coburg 
+	26	of
+	27	Saxe
+	28	-
+	29	Coburg
+	30	and
+	31	Gotha
+			name:	CITY				31-31	Gotha 
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The last reigning members of the House lost the Duchy of Brunswick in 1918 when Germany became a republic .
+
+
+Treebanked sentence:
+--------------------
+The last reigning members of the House lost the Duchy of Brunswick in 1918 when Germany became a republic . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ last) (VBG reigning) (NNS members))
+      (PP (IN of)
+        (NP (DT the) (NNP House))))
+    (VP (VBD lost)
+      (NP
+        (NP (DT the) (NNP Duchy))
+        (PP (IN of)
+          (NP (NNP Brunswick))))
+      (PP (IN in)
+        (NP (CD 1918)))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (NNP Germany))
+          (VP (VBD became)
+            (NP (DT a) (NN republic))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			5	0-6	The last reigning members of the House 
+	1	last
+			sense:	last.a.02
+	2	reigning
+			sense:	reign.v.01
+			prop:	reign.01
+			V		2-2	reigning 
+			N-ARGM-TMP		1-1	last 
+			N-ARG-A0		3-6	members of the House 
+	3	members
+			sense:	member.n.01
+	4	of
+	5	the
+			coref:	IDENT			6	5-6	the House 
+	6	House
+			name:	ORGANIZATION				6-6	House 
+	7	lost
+			sense:	lose.v.01
+			prop:	lose.02
+			V		7-7	lost 
+			N-ARG-A0		0-6	The last reigning members of the House 
+			N-ARG-A1		8-11	the Duchy of Brunswick 
+			N-ARGM-TMP		12-18	in 1918 when Germany became a republic 
+	8	the
+	9	Duchy
+	10	of
+	11	Brunswick
+			coref:	IDENT			1	11-11	Brunswick 
+			name:	CITY				11-11	Brunswick 
+	12	in
+	13	1918
+			name:	DATE				13-13	1918 
+	14	when
+	15	Germany
+			name:	COUNTRY				15-15	Germany 
+	16	became
+			sense:	become.v.02
+			prop:	become.01
+			V		16-16	became 
+			N-ARGM-TMP		12-13	in 1918 
+			R-ARGM-TMP		14-14	when 
+			N-ARG-A1		15-15	Germany 
+			N-ARG-A2		17-18	a republic 
+	17	a
+	18	republic
+			sense:	republic.n.02
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The formal name of the house was the House of Brunswick - Lüneburg , Hanover line .
+
+
+Treebanked sentence:
+--------------------
+The formal name of the house was the House of Brunswick - Lüneburg , Hanover line . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ formal) (NN name))
+      (PP (IN of)
+        (NP (DT the) (NN house))))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (NNP House))
+        (PP (IN of)
+          (NP
+            (NML
+              (NML (NNP Brunswick) (HYPH -) (NNP Lüneburg))
+              (, ,)
+              (NP (NNP Hanover)))
+            (NN line)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	formal
+			sense:	formal.a.01
+	2	name
+			sense:	name.n.01
+	3	of
+	4	the
+			coref:	IDENT			6	4-5	the house 
+	5	house
+			sense:	house.n.06
+	6	was
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	was 
+			N-ARG-A1		0-5	The formal name of the house 
+			N-ARG-A2		7-15	the House of Brunswick - Lüneburg , Hanover line 
+	7	the
+	8	House
+	9	of
+	10	Brunswick
+			coref:	IDENT			0	10-12	Brunswick - Lüneburg 
+			name:	CITY				10-10	Brunswick 
+	11	-
+			name:	LOCATION				11-12	- Lüneburg 
+	12	Lüneburg
+	13	,
+	14	Hanover
+			name:	CITY				14-14	Hanover 
+	15	line
+			sense:	lineage.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The senior line of Brunswick - Lüneburg , which ruled Brunswick - Wolfenbüttel , became extinct in 1884 .
+
+
+Treebanked sentence:
+--------------------
+The senior line of Brunswick - Lüneburg , which ruled Brunswick - Wolfenbüttel , became extinct in 1884 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT The) (JJ senior) (NN line))
+        (PP (IN of)
+          (NP (NNP Brunswick) (HYPH -) (NNP Lüneburg))))
+      (, ,)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBD ruled)
+            (NP (NNP Brunswick) (HYPH -) (NNP Wolfenbüttel)))))
+      (, ,))
+    (VP (VBD became)
+      (ADJP (JJ extinct))
+      (PP (IN in)
+        (NP (CD 1884))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	senior
+			sense:	senior.a.01
+	2	line
+			sense:	lineage.n.01
+	3	of
+	4	Brunswick
+			coref:	IDENT			0	4-6	Brunswick - Lüneburg 
+			name:	CITY				4-4	Brunswick 
+	5	-
+			name:	LOCATION				5-6	- Lüneburg 
+	6	Lüneburg
+	7	,
+	8	which
+	9	ruled
+			sense:	govern.v.03
+			prop:	rule.03
+			V		9-9	ruled 
+			N-ARG-A0		4-6	Brunswick - Lüneburg 
+			R-ARG-A0		8-8	which 
+			N-ARG-A1		10-12	Brunswick - Wolfenbüttel 
+	10	Brunswick
+			coref:	IDENT			1	10-10	Brunswick 
+			name:	ORGANIZATION				10-10	Brunswick 
+	11	-
+	12	Wolfenbüttel
+	13	,
+	14	became
+			sense:	become.v.01
+			prop:	become.01
+			V		14-14	became 
+			N-ARG-A1		0-13	The senior line of Brunswick - Lüneburg , which ruled Brunswick - Wolfenbüttel , 
+			N-ARG-A2		15-15	extinct 
+			N-ARGM-TMP		16-17	in 1884 
+	15	extinct
+			sense:	extinct.a.01
+	16	in
+	17	1884
+			name:	DATE				17-17	1884 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The House of Hanover is now the only surviving branch of the House of Welf , which is the senior branch of the House of Este .
+
+
+Treebanked sentence:
+--------------------
+The House of Hanover is now the only surviving branch of the House of Welf , which is the senior branch of the House of Este . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP House))
+      (PP (IN of)
+        (NP (NNP Hanover))))
+    (VP (VBZ is)
+      (ADVP (RB now))
+      (NP
+        (NP
+          (NP (DT the) (JJ only) (VBG surviving) (NN branch))
+          (PP (IN of)
+            (NP (DT the) (NNP House)))
+          (PP (IN of)
+            (NP (NNP Welf))))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ is)
+              (NP
+                (NP (DT the) (JJ senior) (NN branch))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NNP House))
+                    (PP (IN of)
+                      (NP (NNP Este)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-3	The House of Hanover 
+	1	House
+			name:	ORGANIZATION				1-3	House of Hanover 
+	2	of
+	3	Hanover
+	4	is
+			sense:	be.v.01
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	The House of Hanover 
+			N-ARGM-TMP		5-5	now 
+			N-ARG-A2		6-25	the only surviving branch of the House of Welf , which is the senior branch of the House of Este 
+	5	now
+			name:	DATE				5-5	now 
+			sense:	now.r.01
+	6	the
+	7	only
+			sense:	lone.s.03
+	8	surviving
+			sense:	survive.v.02
+			prop:	survive.01
+			V		8-8	surviving 
+			N-ARG-A0		9-9	branch 
+	9	branch
+			sense:	branch.n.01
+	10	of
+	11	the
+			coref:	IDENT			6	11-12	the House 
+	12	House
+			coref:	IDENT			6	12-14	House of Welf 
+			name:	ORGANIZATION				12-14	House of Welf 
+	13	of
+	14	Welf
+	15	,
+	16	which
+	17	is
+			sense:	be.v.01
+			prop:	be.01
+			V		17-17	is 
+			N-ARG-A1		11-14	the House of Welf 
+			R-ARG-A1		16-16	which 
+			N-ARG-A2		18-25	the senior branch of the House of Este 
+	18	the
+	19	senior
+			sense:	senior.a.01
+	20	branch
+			sense:	branch.n.01
+	21	of
+	22	the
+			coref:	IDENT			6	22-25	the House of Este 
+	23	House
+			name:	ORGANIZATION				23-25	House of Este 
+	24	of
+	25	Este
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The current head of the House of Hanover is Ernst August , Prince of Hanover .
+
+
+Treebanked sentence:
+--------------------
+The current head of the House of Hanover is Ernst August , Prince of Hanover . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ current) (NN head))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NNP House))
+          (PP (IN of)
+            (NP (NNP Hanover))))))
+    (VP (VBZ is)
+      (NP
+        (NP (NNP Ernst) (NNP August))
+        (, ,)
+        (NP
+          (NP (NNP Prince))
+          (PP (IN of)
+            (NP (NNP Hanover))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	current
+			name:	DATE				1-1	current 
+			sense:	current.a.01
+	2	head
+			sense:	head.n.04
+	3	of
+	4	the
+			coref:	IDENT			2	4-7	the House of Hanover 
+	5	House
+			name:	ORGANIZATION				5-7	House of Hanover 
+	6	of
+	7	Hanover
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	The current head of the House of Hanover 
+			N-ARG-A2		9-14	Ernst August , Prince of Hanover 
+	9	Ernst
+	10	August
+			name:	DATE				10-10	August 
+	11	,
+	12	Prince
+			name:	TITLE				12-12	Prince 
+	13	of
+	14	Hanover
+			name:	CITY				14-14	Hanover 
+	15	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.10-12	Brunswick - Lüneburg 
+				6.4-6	Brunswick - Lüneburg 
+	Chain 1 (IDENT)
+				4.11-11	Brunswick 
+				6.10-10	Brunswick 
+	Chain 2 (IDENT)
+				0.0-38	The House of Hanover ( ) , whose members are known as Hanoverians ( ) , is a German royal house that ruled Hanover , Great Britain , and Ireland at various times during the 17th through 20th centuries 
+				1.10-15	the House of Brunswick - Lüneburg 
+				3.24-29	the House of Saxe - Coburg 
+				7.0-3	The House of Hanover 
+				8.4-7	the House of Hanover 
+	Chain 3 (IDENT)
+				0.25-26	Great Britain 
+				2.8-9	Great Britain 
+	Chain 4 (IDENT)
+				0.29-29	Ireland 
+				2.11-11	Ireland 
+	Chain 5 (IDENT)
+				4.0-6	The last reigning members of the House 
+				0.7-8	whose members 
+	Chain 6 (IDENT)
+				7.12-14	House of Welf 
+				1.0-1	The house 
+				4.5-6	the House 
+				5.4-5	the house 
+				7.11-12	the House 
+				7.22-25	the House of Este 
+

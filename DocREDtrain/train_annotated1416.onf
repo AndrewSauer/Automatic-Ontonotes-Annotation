@@ -1,0 +1,628 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Richard Jasek ( born 1964/1965 ) is a Czechoslovakia - born Australian television producer , writer and director .
+
+
+Treebanked sentence:
+--------------------
+Richard Jasek ( born 1964/1965 ) is a Czechoslovakia - born Australian television producer , writer and director . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Richard) (NNP Jasek))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 1964/1965)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a)
+          (ADJP (NNP Czechoslovakia) (HYPH -) (VBN born))
+          (NML (JJ Australian) (NN television))
+          (NN producer))
+        (, ,)
+        (NP (NN writer)
+          (CC and)
+          (NN director))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Richard
+			coref:	IDENT			0	0-4	Richard Jasek ( born 1964/1965 
+			name:	PERSON				0-1	Richard Jasek 
+	1	Jasek
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Richard Jasek 
+			N-ARGM-TMP		4-4	1964/1965 
+	4	1964/1965
+			name:	NUMBER				4-4	1964/1965 
+	5	)
+	6	is
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	is 
+			N-ARG-A1		0-5	Richard Jasek ( born 1964/1965 ) 
+			N-ARG-A2		7-17	a Czechoslovakia - born Australian television producer , writer and director 
+	7	a
+	8	Czechoslovakia
+			name:	LOCATION				8-8	Czechoslovakia 
+	9	-
+	10	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		10-10	born 
+			N-ARGM-LOC		8-8	Czechoslovakia 
+			N-ARG-A1		11-17	Australian television producer , writer and director 
+	11	Australian
+			name:	NATIONALITY				11-11	Australian 
+	12	television
+			sense:	television.n.01
+	13	producer
+			name:	TITLE				13-13	producer 
+			sense:	producer.n.02
+	14	,
+	15	writer
+			name:	TITLE				15-15	writer 
+			sense:	writer.n.01
+	16	and
+	17	director
+			name:	TITLE				17-17	director 
+			sense:	director.n.03
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jasek was born and raised Prague until his family fled the communist regime and settled in Brisbane .
+
+
+Treebanked sentence:
+--------------------
+Jasek was born and raised Prague until his family fled the communist regime and settled in Brisbane . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Jasek))
+    (VP (VBD was)
+      (VP
+        (VP (VBN born))
+        (CC and)
+        (VP
+          (VP (VBN raised)
+            (NP (NNP Prague))
+            (SBAR (IN until)
+              (S
+                (NP (PRP$ his) (NN family))
+                (VP (VBD fled)
+                  (NP (DT the) (JJ communist) (NN regime))))))
+          (CC and)
+          (VP (VBN settled)
+            (PP (IN in)
+              (NP (NNP Brisbane)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jasek
+			coref:	IDENT			0	0-0	Jasek 
+			name:	PERSON				0-0	Jasek 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Jasek 
+			N-ARGM-LOC		5-5	Prague 
+			N-ARGM-TMP		6-16	until his family fled the communist regime and settled in Brisbane 
+	3	and
+	4	raised
+			sense:	rear.v.02
+			prop:	raise.01
+			V		4-4	raised 
+			N-ARG-A1		0-0	Jasek 
+			N-ARGM-LOC		5-5	Prague 
+			N-ARGM-TMP		6-16	until his family fled the communist regime and settled in Brisbane 
+	5	Prague
+			name:	CITY				5-5	Prague 
+	6	until
+	7	his
+			coref:	IDENT			0	7-7	his 
+	8	family
+			sense:	family.n.01
+	9	fled
+			sense:	flee.v.01
+			prop:	flee.01
+			V		9-9	fled 
+			N-ARG-A0		7-8	his family 
+			N-ARG-A1		10-12	the communist regime 
+	10	the
+	11	communist
+			name:	IDEOLOGY				11-11	communist 
+			sense:	communist.a.01
+	12	regime
+			sense:	government.n.01
+	13	and
+	14	settled
+			sense:	settle.v.04
+			prop:	settle.03
+			V		14-14	settled 
+			N-ARG-A1		7-8	his family 
+			N-ARG-A4		15-16	in Brisbane 
+	15	in
+	16	Brisbane
+			name:	CITY				16-16	Brisbane 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jasek chose to become a filmmaker after he discovered his father 's camera .
+
+
+Treebanked sentence:
+--------------------
+Jasek chose to become a filmmaker after he discovered his father 's camera . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Jasek))
+    (VP (VBD chose)
+      (S
+        (VP (TO to)
+          (VP (VB become)
+            (NP (DT a) (NN filmmaker))
+            (SBAR (IN after)
+              (S
+                (NP (PRP he))
+                (VP (VBD discovered)
+                  (NP
+                    (NP (PRP$ his) (NN father) (POS 's))
+                    (NN camera)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jasek
+			coref:	IDENT			0	0-0	Jasek 
+			name:	PERSON				0-0	Jasek 
+	1	chose
+			sense:	choose.v.01
+			prop:	choose.01
+			V		1-1	chose 
+			N-ARG-A0		0-0	Jasek 
+			N-ARG-A1		2-5	to become a filmmaker 
+			N-ARGM-TMP		6-12	after he discovered his father 's camera 
+	2	to
+	3	become
+			sense:	become.v.02
+			prop:	become.01
+			V		3-3	become 
+			N-ARG-A1		0-0	Jasek 
+			N-ARG-A2		4-5	a filmmaker 
+	4	a
+	5	filmmaker
+			name:	TITLE				5-5	filmmaker 
+			sense:	film_maker.n.01
+	6	after
+	7	he
+			coref:	IDENT			0	7-7	he 
+	8	discovered
+			sense:	discover.v.03
+			prop:	discover.01
+			V		8-8	discovered 
+			N-ARG-A0		7-7	he 
+			N-ARG-A1		9-12	his father 's camera 
+	9	his
+			coref:	IDENT			0	9-9	his 
+	10	father
+			sense:	father.n.01
+	11	's
+	12	camera
+			sense:	camera.n.01
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He would later enrol at the Australian Film , Television and Radio School .
+
+
+Treebanked sentence:
+--------------------
+He would later enrol at the Australian Film , Television and Radio School . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (MD would)
+      (ADVP (RB later))
+      (VP (VB enrol)
+        (PP (IN at)
+          (NP (DT the) (JJ Australian)
+            (NML (NNP Film) (, ,) (NNP Television)
+              (CC and)
+              (NNP Radio))
+            (NNP School)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	would
+	2	later
+			sense:	subsequently.r.01
+	3	enrol
+			sense:	enroll.v.01
+			prop:	enroll.01
+			V		3-3	enrol 
+			N-ARG-A0		0-0	He 
+			N-ARGM-MOD		1-1	would 
+			N-ARGM-TMP		2-2	later 
+			N-ARG-A2		4-12	at the Australian Film , Television and Radio School 
+	4	at
+	5	the
+	6	Australian
+			name:	NATIONALITY				6-6	Australian 
+	7	Film
+	8	,
+	9	Television
+			coref:	IDENT			1	9-9	Television 
+	10	and
+	11	Radio
+			name:	ORGANIZATION				11-12	Radio School 
+	12	School
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jasek made a short production for SBS Television and travelled to the United Kingdom to work for The National Film School as a guest lecturer .
+
+
+Treebanked sentence:
+--------------------
+Jasek made a short production for SBS Television and travelled to the United Kingdom to work for The National Film School as a guest lecturer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Jasek))
+    (VP
+      (VP (VBD made)
+        (NP (DT a) (JJ short) (NN production))
+        (PP (IN for)
+          (NP (NNP SBS) (NNP Television))))
+      (CC and)
+      (VP (VBD travelled)
+        (PP (IN to)
+          (NP (DT the) (NNP United) (NNP Kingdom)))
+        (S
+          (VP (TO to)
+            (VP (VB work)
+              (PP (IN for)
+                (NP (DT The) (NNP National) (NNP Film) (NNP School)))
+              (PP (IN as)
+                (NP (DT a) (NN guest) (NN lecturer))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jasek
+			coref:	IDENT			0	0-0	Jasek 
+			name:	PERSON				0-0	Jasek 
+	1	made
+			sense:	create.v.05
+			prop:	make.01
+			V		1-1	made 
+			N-ARG-A0		0-0	Jasek 
+			N-ARG-A1		2-4	a short production 
+			N-ARG-A3		5-7	for SBS Television 
+	2	a
+	3	short
+			sense:	short.a.01
+	4	production
+			sense:	production.n.02
+	5	for
+	6	SBS
+			coref:	IDENT			1	6-7	SBS Television 
+			name:	ORGANIZATION				6-7	SBS Television 
+	7	Television
+	8	and
+	9	travelled
+			sense:	travel.v.01
+			prop:	travel.01
+			V		9-9	travelled 
+			N-ARG-A0		0-0	Jasek 
+			N-ARG-A1		10-13	to the United Kingdom 
+			N-ARGM-PRP		14-24	to work for The National Film School as a guest lecturer 
+	10	to
+	11	the
+	12	United
+			name:	COUNTRY				12-13	United Kingdom 
+	13	Kingdom
+	14	to
+	15	work
+			sense:	work.v.02
+			prop:	work.01
+			V		15-15	work 
+			N-ARG-A0		0-0	Jasek 
+			N-ARG-A2		16-20	for The National Film School 
+			N-ARG-A1		21-24	as a guest lecturer 
+	16	for
+	17	The
+	18	National
+			name:	ORGANIZATION				18-20	National Film School 
+	19	Film
+	20	School
+	21	as
+	22	a
+	23	guest
+			sense:	guest.n.01
+	24	lecturer
+			name:	TITLE				24-24	lecturer 
+			sense:	lecturer.n.02
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Upon his return to Australia , Jasek began working in television and he is best known for his work with dramas A Country Practice , City Homicide and McLeod 's Daughters .
+
+
+Treebanked sentence:
+--------------------
+Upon his return to Australia , Jasek began working in television and he is best known for his work with dramas A Country Practice , City Homicide and McLeod 's Daughters . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Upon)
+      (NP
+        (NP (PRP$ his) (NN return))
+        (PP (IN to)
+          (NP (NNP Australia)))))
+    (, ,)
+    (S
+      (NP (NNP Jasek))
+      (VP (VBD began)
+        (S
+          (VP (VBG working)
+            (PP (IN in)
+              (NP (NN television)))))))
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBZ is)
+        (ADVP (RBS best))
+        (VP (VBN known)
+          (PP (IN for)
+            (NP (PRP$ his) (NN work)))
+          (PP (IN with)
+            (NP (NN dramas)
+              (NML
+                (NML (DT A) (NNP Country) (NN Practice))
+                (, ,)
+                (NML (NNP City) (NNP Homicide))
+                (CC and)
+                (NML (NNP McLeod) (POS 's)))
+              (NNS Daughters))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Upon
+	1	his
+			coref:	IDENT			0	1-1	his 
+	2	return
+			sense:	return.n.02
+	3	to
+	4	Australia
+			name:	COUNTRY				4-4	Australia 
+	5	,
+	6	Jasek
+			coref:	IDENT			0	6-6	Jasek 
+			name:	PERSON				6-6	Jasek 
+	7	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		7-7	began 
+			N-ARGM-TMP		0-4	Upon his return to Australia 
+			N-ARG-A0		6-6	Jasek 
+			N-ARG-A1		8-10	working in television 
+	8	working
+			sense:	work.v.02
+			prop:	work.01
+			V		8-8	working 
+			N-ARG-A0		6-6	Jasek 
+			N-ARGM-LOC		9-10	in television 
+	9	in
+	10	television
+			sense:	television.n.01
+	11	and
+	12	he
+			coref:	IDENT			0	12-12	he 
+	13	is
+			sense:	be.v.01
+			prop:	be.01
+			V		13-13	is 
+			N-ARG-A1		12-12	he 
+			N-ARG-A2		14-30	best known for his work with dramas A Country Practice , City Homicide and McLeod 's Daughters 
+	14	best
+			sense:	well.r.02
+	15	known
+			sense:	know.v.04
+			prop:	know.01
+			V		15-15	known 
+			N-ARG-A1		12-12	he 
+			N-ARGM-MNR		14-14	best 
+			N-ARG-A2		16-30	for his work with dramas A Country Practice , City Homicide and McLeod 's Daughters 
+	16	for
+	17	his
+			coref:	IDENT			0	17-17	his 
+	18	work
+			sense:	employment.n.02
+	19	with
+	20	dramas
+	21	A
+	22	Country
+	23	Practice
+			sense:	practice.n.04
+	24	,
+	25	City
+	26	Homicide
+			name:	CRIMINAL_CHARGE				26-26	Homicide 
+	27	and
+	28	McLeod
+			name:	PERSON				28-28	McLeod 
+	29	's
+	30	Daughters
+			sense:	daughter.n.01
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In October 2011 , it was announced that Jasek had taken over the role of executive producer of Neighbours .
+
+
+Treebanked sentence:
+--------------------
+In October 2011 , it was announced that Jasek had taken over the role of executive producer of Neighbours . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP October) (CD 2011)))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (VP (VBN announced)
+        (SBAR (IN that)
+          (S
+            (NP (NNP Jasek))
+            (VP (VBD had)
+              (VP (VBN taken)
+                (PP (IN over)
+                  (NP
+                    (NP (DT the) (NN role))
+                    (PP (IN of)
+                      (NP
+                        (NP (JJ executive) (NN producer))
+                        (PP (IN of)
+                          (NP (NNP Neighbours)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	October
+			name:	DATE				1-2	October 2011 
+	2	2011
+	3	,
+	4	it
+	5	was
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	was 
+	6	announced
+			sense:	announce.v.01
+			prop:	announce.01
+			V		6-6	announced 
+			N-ARGM-TMP		0-2	In October 2011 
+			R-ARG-A1		4-4	it 
+			N-ARG-A1		7-18	that Jasek had taken over the role of executive producer of Neighbours 
+	7	that
+	8	Jasek
+			coref:	IDENT			0	8-8	Jasek 
+			name:	PERSON				8-8	Jasek 
+	9	had
+			sense:	have.v.01
+			prop:	have.01
+			V		9-9	had 
+	10	taken
+			sense:	fill.v.04
+			prop:	take.12
+			V		10-10	taken 
+			N-ARG-A0		8-8	Jasek 
+			N-ARG-A1		12-18	the role of executive producer of Neighbours 
+	11	over
+	12	the
+	13	role
+			sense:	function.n.03
+	14	of
+	15	executive
+			name:	TITLE				15-16	executive producer 
+			sense:	executive.a.01
+	16	producer
+			sense:	producer.n.02
+	17	of
+	18	Neighbours
+			name:	PERSON				18-18	Neighbours 
+	19	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-4	Richard Jasek ( born 1964/1965 
+				1.0-0	Jasek 
+				1.7-7	his 
+				2.0-0	Jasek 
+				2.7-7	he 
+				2.9-9	his 
+				3.0-0	He 
+				4.0-0	Jasek 
+				5.1-1	his 
+				5.6-6	Jasek 
+				5.12-12	he 
+				5.17-17	his 
+				6.8-8	Jasek 
+	Chain 1 (IDENT)
+				4.6-7	SBS Television 
+				3.9-9	Television 
+

@@ -1,0 +1,972 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sergey Semyonovich Sobyanin (; born 21 June 1958 ) is a Russian politician .
+
+
+Treebanked sentence:
+--------------------
+Sergey Semyonovich Sobyanin ( ; born 21 June 1958 ) is a Russian politician . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NML (NNP Sergey) (NNP Semyonovich))
+        (NNP Sobyanin) (-LRB- -LRB-))
+      (: ;)
+      (VP (VBN born)
+        (NP (CD 21))
+        (NP-TMP (NNP June) (CD 1958)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (JJ Russian) (NN politician)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sergey
+			name:	PERSON				0-2	Sergey Semyonovich Sobyanin 
+	1	Semyonovich
+	2	Sobyanin
+	3	(
+	4	;
+	5	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		5-5	born 
+			N-ARG-A1		0-2	Sergey Semyonovich Sobyanin 
+			N-ARGM-TMP		6-8	21 June 1958 
+	6	21
+			name:	DATE				6-8	21 June 1958 
+	7	June
+	8	1958
+	9	)
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	Sergey Semyonovich Sobyanin ( ; born 21 June 1958 ) 
+			N-ARG-A2		11-13	a Russian politician 
+	11	a
+	12	Russian
+			name:	NATIONALITY				12-12	Russian 
+	13	politician
+			name:	TITLE				13-13	politician 
+			sense:	politician.n.02
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He has served as Mayor of Moscow from October 2010 to 5 July 2013 , and was re - elected Mayor in the September 2013 city election .
+
+
+Treebanked sentence:
+--------------------
+He has served as Mayor of Moscow from October 2010 to 5 July 2013 , and was re - elected Mayor in the September 2013 city election . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP
+        (VP (VBZ has)
+          (VP (VBN served)
+            (PP (IN as)
+              (NP
+                (NP (NNP Mayor))
+                (PP (IN of)
+                  (NP (NNP Moscow)))))
+            (PP (IN from)
+              (NP
+                (NP (NNP October) (CD 2010))
+                (PP (IN to)
+                  (NP (CD 5)))))
+            (NP-TMP (NNP July) (CD 2013))))
+        (, ,)
+        (CC and)
+        (VP (VBD was)
+          (PP (IN re)))))
+    (HYPH -)
+    (S
+      (NP (VBN elected) (NNP Mayor))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NNP September) (CD 2013) (NN city))
+          (NP (NN election)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		2-2	served 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		3-6	as Mayor of Moscow 
+			N-ARGM-TMP		7-13	from October 2010 to 5 July 2013 
+	3	as
+	4	Mayor
+			name:	TITLE				4-4	Mayor 
+	5	of
+	6	Moscow
+			coref:	IDENT			2	6-6	Moscow 
+			name:	CITY				6-6	Moscow 
+	7	from
+	8	October
+			name:	DATE				8-9	October 2010 
+	9	2010
+	10	to
+	11	5
+			name:	DATE				11-13	5 July 2013 
+	12	July
+	13	2013
+	14	,
+	15	and
+	16	was
+			sense:	be.v.01
+			prop:	be.03
+			V		16-16	was 
+	17	re
+	18	-
+	19	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		19-19	elected 
+			N-ARG-A1		0-0	He 
+			N-ARGM-ADV		17-17	re 
+			N-ARG-A2		20-20	Mayor 
+			N-ARGM-TMP		21-26	in the September 2013 city election 
+	20	Mayor
+			name:	TITLE				20-20	Mayor 
+	21	in
+	22	the
+	23	September
+			name:	DATE				23-24	September 2013 
+	24	2013
+	25	city
+			sense:	city.n.01
+	26	election
+			sense:	election.n.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sobyanin previously served as the Governor of Tyumen Oblast ( 2001—2005 ) , Deputy Prime Minister of Russia ( 2005 - 2008 in Mikhail Fradkov 's Second Cabinet ) and Head of the presidential administration ( 2008 - 2010 ) .
+
+
+Treebanked sentence:
+--------------------
+Sobyanin previously served as the Governor of Tyumen Oblast ( 2001 — 2005 ) , Deputy Prime Minister of Russia ( 2005 - 2008 in Mikhail Fradkov 's Second Cabinet ) and Head of the presidential administration ( 2008 - 2010 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Sobyanin))
+    (ADVP (RB previously))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP
+          (NP (DT the) (NNP Governor))
+          (PP (IN of)
+            (NP
+              (NP (NNP Tyumen) (NNP Oblast)
+                (PRN (-LRB- -LRB-)
+                  (NP (CD 2001) (, —) (CD 2005))
+                  (-RRB- -RRB-)))
+              (, ,)
+              (NP
+                (NP
+                  (NML (NNP Deputy) (NNP Prime))
+                  (NNP Minister))
+                (PP (IN of)
+                  (NP (NNP Russia)))
+                (PRN (-LRB- -LRB-)
+                  (NP
+                    (NP (CD 2005) (: -) (CD 2008))
+                    (PP (IN in)
+                      (NP
+                        (NP (NNP Mikhail) (NNP Fradkov) (POS 's))
+                        (JJ Second) (NNP Cabinet))))
+                  (-RRB- -RRB-)))
+              (CC and)
+              (NP
+                (NP (NN Head))
+                (PP (IN of)
+                  (NP (DT the) (JJ presidential) (NN administration)))
+                (PRN (-LRB- -LRB-)
+                  (NP (CD 2008) (SYM -) (CD 2010))
+                  (-RRB- -RRB-))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sobyanin
+			name:	PERSON				0-0	Sobyanin 
+	1	previously
+			name:	DATE				1-1	previously 
+			sense:	previously.r.01
+	2	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		2-2	served 
+			N-ARG-A0		0-0	Sobyanin 
+			N-ARGM-TMP		1-1	previously 
+			N-ARG-A1		3-41	as the Governor of Tyumen Oblast ( 2001 — 2005 ) , Deputy Prime Minister of Russia ( 2005 - 2008 in Mikhail Fradkov 's Second Cabinet ) and Head of the presidential administration ( 2008 - 2010 ) 
+	3	as
+	4	the
+	5	Governor
+			name:	TITLE				5-5	Governor 
+	6	of
+	7	Tyumen
+			name:	CITY				7-7	Tyumen 
+	8	Oblast
+			name:	LOCATION				8-8	Oblast 
+	9	(
+	10	2001
+			name:	DATE				10-10	2001 
+	11	—
+	12	2005
+			coref:	IDENT			1	12-12	2005 
+			name:	DATE				12-12	2005 
+	13	)
+	14	,
+	15	Deputy
+			name:	TITLE				15-17	Deputy Prime Minister 
+	16	Prime
+	17	Minister
+	18	of
+	19	Russia
+			coref:	IDENT			4	19-19	Russia 
+			name:	COUNTRY				19-19	Russia 
+	20	(
+	21	2005
+			coref:	IDENT			1	21-21	2005 
+			name:	DATE				21-21	2005 
+	22	-
+			name:	DURATION				22-22	- 
+	23	2008
+			name:	DATE				23-23	2008 
+	24	in
+	25	Mikhail
+			name:	PERSON				25-26	Mikhail Fradkov 
+	26	Fradkov
+	27	's
+	28	Second
+			name:	ORDINAL				28-28	Second 
+			sense:	second.s.01
+	29	Cabinet
+	30	)
+	31	and
+	32	Head
+			sense:	head.n.04
+	33	of
+	34	the
+	35	presidential
+			sense:	presidential.a.01
+	36	administration
+			sense:	administration.n.02
+	37	(
+	38	2008
+			name:	DATE				38-38	2008 
+	39	-
+			name:	DURATION				39-39	- 
+	40	2010
+			name:	DATE				40-40	2010 
+	41	)
+	42	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sobyanin is a member of the ruling United Russia political party , and is elected to its higher governing bodies , current member of presidium of Regional Council of the United Russia in Moscow and the head ( political council secretary ) of the party ’s Moscow branch from March 2011 to December 2012 .
+
+
+Treebanked sentence:
+--------------------
+Sobyanin is a member of the ruling United Russia political party , and is elected to its higher governing bodies , current member of presidium of Regional Council of the United Russia in Moscow and the head ( political council secretary ) of the party ’s Moscow branch from March 2011 to December 2012 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Sobyanin))
+    (VP
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (NN member))
+          (PP (IN of)
+            (NP (DT the) (VBG ruling)
+              (NML (NNP United) (NNP Russia))
+              (JJ political) (NN party)))))
+      (, ,)
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN elected)
+          (PP (IN to)
+            (NP
+              (NP (PRP$ its)
+                (ADJP (JJR higher) (VBG governing))
+                (NNS bodies))
+              (, ,)
+              (NP
+                (NP (JJ current) (NN member))
+                (PP (IN of)
+                  (NP
+                    (NP (NN presidium))
+                    (PP (IN of)
+                      (NP
+                        (NP (NNP Regional) (NNP Council))
+                        (PP (IN of)
+                          (NP
+                            (NP
+                              (NP (DT the) (NNP United) (NNP Russia))
+                              (PP (IN in)
+                                (NP (NNP Moscow))))
+                            (CC and)
+                            (NP
+                              (NP
+                                (NP (DT the) (NN head))
+                                (-LRB- -LRB-)
+                                (NP (JJ political) (NN council) (NN secretary))
+                                (-RRB- -RRB-))
+                              (PP (IN of)
+                                (NP
+                                  (NP
+                                    (NP (DT the) (NN party) (POS ’s))
+                                    (NNP Moscow) (NN branch))
+                                  (PP (IN from)
+                                    (NP
+                                      (NP (NNP March) (CD 2011))
+                                      (PP (IN to)
+                                        (NP (NNP December) (CD 2012))))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sobyanin
+			name:	PERSON				0-0	Sobyanin 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Sobyanin 
+			N-ARG-A2		2-10	a member of the ruling United Russia political party 
+	2	a
+	3	member
+			sense:	member.n.01
+	4	of
+	5	the
+			coref:	IDENT			0	5-10	the ruling United Russia political party 
+	6	ruling
+			sense:	govern.v.03
+			prop:	rule.03
+			V		6-6	ruling 
+			N-ARG-A0		7-10	United Russia political party 
+	7	United
+			coref:	IDENT			3	7-8	United Russia 
+			name:	LOCATION				7-7	United 
+	8	Russia
+			name:	COUNTRY				8-8	Russia 
+	9	political
+			sense:	political.a.01
+	10	party
+			sense:	party.n.01
+	11	,
+	12	and
+	13	is
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	is 
+	14	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		14-14	elected 
+			N-ARG-A1		0-0	Sobyanin 
+			N-ARG-A2		15-19	to its higher governing bodies 
+			N-ARGM-TMP		48-53	from March 2011 to December 2012 
+	15	to
+	16	its
+			coref:	IDENT			3	16-16	its 
+	17	higher
+			sense:	eminent.s.01
+	18	governing
+			sense:	govern.v.03
+			prop:	covering.01
+			V		18-18	governing 
+			N-ARG-A0		19-19	bodies 
+	19	bodies
+			sense:	body.n.02
+	20	,
+	21	current
+			name:	DATE				21-21	current 
+			sense:	current.a.01
+	22	member
+			sense:	member.n.01
+	23	of
+	24	presidium
+			sense:	presidium.n.01
+	25	of
+	26	Regional
+			name:	ORGANIZATION				26-27	Regional Council 
+	27	Council
+	28	of
+	29	the
+			coref:	IDENT			4	29-33	the United Russia in Moscow 
+	30	United
+			name:	LOCATION				30-30	United 
+	31	Russia
+			name:	COUNTRY				31-31	Russia 
+	32	in
+	33	Moscow
+			coref:	IDENT			2	33-33	Moscow 
+			name:	CITY				33-33	Moscow 
+	34	and
+	35	the
+	36	head
+			sense:	head.n.04
+	37	(
+	38	political
+			sense:	political.a.01
+	39	council
+			name:	TITLE				39-40	council secretary 
+			sense:	council.n.01
+	40	secretary
+			sense:	secretary.n.01
+	41	)
+	42	of
+	43	the
+			coref:	IDENT			0	43-45	the party ’s 
+	44	party
+			sense:	party.n.01
+	45	’s
+	46	Moscow
+			coref:	IDENT			2	46-46	Moscow 
+			name:	CITY				46-46	Moscow 
+	47	branch
+			sense:	branch.n.01
+	48	from
+	49	March
+			name:	DATE				49-50	March 2011 
+	50	2011
+	51	to
+	52	December
+			name:	DATE				52-53	December 2012 
+	53	2012
+	54	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is considered to be a close ally to Russian billionaire businessman Vladimir Bogdanov , Director General of Surgutneftegaz .
+
+
+Treebanked sentence:
+--------------------
+He is considered to be a close ally to Russian billionaire businessman Vladimir Bogdanov , Director General of Surgutneftegaz . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (VP (VBN considered)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (NP
+                (NP (DT a) (JJ close) (NN ally))
+                (PP (IN to)
+                  (NP
+                    (NP
+                      (NML (JJ Russian) (NN billionaire) (NN businessman))
+                      (NNP Vladimir) (NNP Bogdanov))
+                    (, ,)
+                    (NP
+                      (NP (NNP Director) (NNP General))
+                      (PP (IN of)
+                        (NP (NNP Surgutneftegaz))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	considered
+			sense:	see.v.05
+			prop:	consider.01
+			V		2-2	considered 
+			N-ARG-A1		3-18	to be a close ally to Russian billionaire businessman Vladimir Bogdanov , Director General of Surgutneftegaz 
+	3	to
+	4	be
+			sense:	be.v.01
+			prop:	be.01
+			V		4-4	be 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		5-18	a close ally to Russian billionaire businessman Vladimir Bogdanov , Director General of Surgutneftegaz 
+	5	a
+	6	close
+			sense:	close.a.02
+	7	ally
+			sense:	ally.n.02
+	8	to
+	9	Russian
+			name:	NATIONALITY				9-9	Russian 
+	10	billionaire
+			sense:	billionaire.n.01
+	11	businessman
+			name:	TITLE				11-11	businessman 
+			sense:	businessman.n.01
+	12	Vladimir
+			name:	PERSON				12-13	Vladimir Bogdanov 
+	13	Bogdanov
+	14	,
+	15	Director
+			name:	TITLE				15-16	Director General 
+	16	General
+	17	of
+	18	Surgutneftegaz
+			name:	ORGANIZATION				18-18	Surgutneftegaz 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As the Mayor of Moscow , Sobyanin has gradually relaxed the massive construction projects of his predecessor , for which he has won acclaim for the " most sane piece of city planning in years . "
+
+
+Treebanked sentence:
+--------------------
+As the Mayor of Moscow , Sobyanin has gradually relaxed the massive construction projects of his predecessor , for which he has won acclaim for the " most sane piece of city planning in years . " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN As)
+      (NP
+        (NP (DT the) (NNP Mayor))
+        (PP (IN of)
+          (NP (NNP Moscow)))))
+    (, ,)
+    (NP (NNP Sobyanin))
+    (VP (VBZ has)
+      (ADVP (RB gradually))
+      (VP (VBN relaxed)
+        (NP
+          (NP (DT the) (JJ massive) (NN construction) (NNS projects))
+          (PP (IN of)
+            (NP
+              (NP (PRP$ his) (NN predecessor))
+              (, ,)
+              (SBAR
+                (WHPP (IN for)
+                  (WHNP (WDT which)))
+                (S
+                  (NP (PRP he))
+                  (VP (VBZ has)
+                    (VP (VBN won)
+                      (NP
+                        (NP (NN acclaim))
+                        (PP (IN for)
+                          (NP
+                            (NP (DT the) (`` ")
+                              (ADJP (RBS most) (JJ sane))
+                              (NN piece))
+                            (PP (IN of)
+                              (NP (NN city) (NN planning))))))
+                      (PP (IN in)
+                        (NP (NNS years))))))))))))
+    (. .) ('' ")))
+
+
+Leaves:
+-------
+	0	As
+	1	the
+	2	Mayor
+			name:	TITLE				2-2	Mayor 
+	3	of
+	4	Moscow
+			coref:	IDENT			2	4-4	Moscow 
+			name:	CITY				4-4	Moscow 
+	5	,
+	6	Sobyanin
+			name:	ORGANIZATION				6-6	Sobyanin 
+	7	has
+			sense:	get.v.03
+			prop:	have.01
+			V		7-7	has 
+	8	gradually
+			sense:	gradually.r.01
+	9	relaxed
+			sense:	relax.v.06
+			prop:	relax.01
+			V		9-9	relaxed 
+			N-ARGM-PRD		0-1	As the 
+			N-ARGM-ADV		2-2	Mayor 
+			N-ARGM-PRD		3-4	of Moscow 
+			N-ARG-A0		6-6	Sobyanin 
+			N-ARGM-MNR		8-8	gradually 
+			N-ARG-A1		10-34	the massive construction projects of his predecessor , for which he has won acclaim for the " most sane piece of city planning in years 
+	10	the
+	11	massive
+			sense:	massive.s.03
+	12	construction
+			sense:	construction.n.01
+	13	projects
+			sense:	undertaking.n.01
+	14	of
+	15	his
+	16	predecessor
+			sense:	predecessor.n.01
+	17	,
+	18	for
+	19	which
+	20	he
+	21	has
+			sense:	have.v.01
+			prop:	have.01
+			V		21-21	has 
+	22	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		22-22	won 
+			N-ARG-A4		10-16	the massive construction projects of his predecessor 
+			R-ARG-A4		18-19	for which 
+			N-ARG-A0		20-20	he 
+			N-ARG-A1		23-34	acclaim for the " most sane piece of city planning in years 
+	23	acclaim
+			sense:	acclaim.n.01
+	24	for
+	25	the
+	26	"
+	27	most
+			sense:	most.r.01
+	28	sane
+			sense:	reasonable.s.03
+	29	piece
+			sense:	piece.n.05
+	30	of
+	31	city
+			sense:	city.n.01
+	32	planning
+			sense:	planning.n.01
+	33	in
+	34	years
+			name:	DURATION				34-34	years 
+			sense:	year.n.01
+	35	.
+	36	"
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As Mayor , Sobyanin created of numbers TV and radio channels and newspapers , owned and controlled by Moscow Government .
+
+
+Treebanked sentence:
+--------------------
+As Mayor , Sobyanin created of numbers TV and radio channels and newspapers , owned and controlled by Moscow Government . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN As)
+      (NP (NNP Mayor)))
+    (, ,)
+    (NP (NNP Sobyanin))
+    (VP (VBD created)
+      (PP (IN of)
+        (NP (NNS numbers)))
+      (NP
+        (NP
+          (NML (NN TV)
+            (CC and)
+            (NN radio))
+          (NNS channels)
+          (CC and)
+          (NNS newspapers))
+        (, ,)
+        (VP (VBN owned)
+          (CC and)
+          (VBN controlled)
+          (PP (IN by)
+            (NP (NNP Moscow) (NNP Government))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	Mayor
+			name:	TITLE				1-1	Mayor 
+	2	,
+	3	Sobyanin
+			name:	PERSON				3-3	Sobyanin 
+	4	created
+			sense:	create.v.02
+			prop:	create.01
+			V		4-4	created 
+			N-ARGM-PRD		0-1	As Mayor 
+			N-ARG-A0		3-3	Sobyanin 
+			N-ARG-A1		5-19	of numbers TV and radio channels and newspapers , owned and controlled by Moscow Government 
+	5	of
+	6	numbers
+			sense:	number.n.01
+	7	TV
+			sense:	television.n.01
+	8	and
+	9	radio
+			sense:	radio.n.01
+	10	channels
+			sense:	channel.n.07
+	11	and
+	12	newspapers
+			sense:	newspaper.n.01
+	13	,
+	14	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		14-14	owned 
+			N-ARG-A1		6-12	numbers TV and radio channels and newspapers 
+			N-ARG-A0		17-19	by Moscow Government 
+	15	and
+	16	controlled
+			sense:	control.v.01
+			prop:	control.01
+			V		16-16	controlled 
+			N-ARG-A1		12-12	newspapers 
+			N-ARG-A0		17-19	by Moscow Government 
+	17	by
+	18	Moscow
+			coref:	IDENT			2	18-18	Moscow 
+			name:	CITY				18-18	Moscow 
+	19	Government
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+And he has also won praise for his efforts in combatting corruption .
+
+
+Treebanked sentence:
+--------------------
+And he has also won praise for his efforts in combatting corruption . 
+
+Tree:
+-----
+(ROOT
+  (S (CC And)
+    (NP (PRP he))
+    (VP (VBZ has)
+      (ADVP (RB also))
+      (VP (VBD won)
+        (NP (NN praise))
+        (PP (IN for)
+          (NP (PRP$ his) (NNS efforts)))
+        (PP (IN in)
+          (S
+            (VP (VBG combatting)
+              (NP (NN corruption)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	And
+	1	he
+	2	has
+			sense:	have.v.01
+			prop:	have.01
+			V		2-2	has 
+	3	also
+			sense:	besides.r.02
+	4	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		4-4	won 
+			N-ARGM-DIS		0-0	And 
+			N-ARG-A0		1-1	he 
+			N-ARGM-DIS		3-3	also 
+			N-ARG-A1		5-5	praise 
+	5	praise
+			sense:	praise.n.01
+	6	for
+	7	his
+	8	efforts
+			sense:	attempt.n.01
+	9	in
+	10	combatting
+			sense:	battle.v.01
+			prop:	combat.01
+			V		10-10	combatting 
+			N-ARG-A0		1-1	he 
+			N-ARG-A1		11-11	corruption 
+	11	corruption
+			sense:	corruptness.n.02
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the same time , Sobyanin was criticized for the banning of gay parades in the city , for which was strongly condemned by LGBT groups .
+
+
+Treebanked sentence:
+--------------------
+At the same time , Sobyanin was criticized for the banning of gay parades in the city , for which was strongly condemned by LGBT groups . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (DT the) (JJ same) (NN time)))
+    (, ,)
+    (NP (NNP Sobyanin))
+    (VP (VBD was)
+      (VP (VBN criticized)
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NN banning))
+            (PP (IN of)
+              (NP (JJ gay) (NNS parades)))))
+        (PP (IN in)
+          (NP (DT the) (NN city)))
+        (, ,)
+        (PP (IN for)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBD was)
+                (ADVP (RB strongly))
+                (VP (VBN condemned)
+                  (PP (IN by)
+                    (NP (JJ LGBT) (NNS groups))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+	2	same
+			sense:	same.a.01
+	3	time
+			sense:	time.n.01
+	4	,
+	5	Sobyanin
+			name:	PERSON				5-5	Sobyanin 
+	6	was
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	was 
+	7	criticized
+			sense:	knock.v.06
+			prop:	criticize.01
+			V		7-7	criticized 
+			N-ARGM-TMP		0-3	At the same time 
+			N-ARG-A1		5-5	Sobyanin 
+			N-ARG-A2		8-25	for the banning of gay parades in the city , for which was strongly condemned by LGBT groups 
+	8	for
+	9	the
+	10	banning
+			sense:	ban.n.04
+	11	of
+	12	gay
+			sense:	gay.s.06
+	13	parades
+			sense:	parade.n.01
+	14	in
+	15	the
+	16	city
+			sense:	city.n.01
+	17	,
+	18	for
+	19	which
+	20	was
+			sense:	be.v.01
+			prop:	be.03
+			V		20-20	was 
+	21	strongly
+			sense:	strongly.r.01
+	22	condemned
+			sense:	condemn.v.01
+			prop:	condemn.01
+			V		22-22	condemned 
+			N-ARG-A1		12-16	gay parades in the city 
+			N-ARG-A2		18-19	for which 
+			N-ARGM-MNR		21-21	strongly 
+			N-ARG-A0		23-25	by LGBT groups 
+	23	by
+	24	LGBT
+			name:	MISC				24-24	LGBT 
+	25	groups
+			sense:	group.n.01
+	26	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.5-10	the ruling United Russia political party 
+				3.43-45	the party ’s 
+	Chain 1 (IDENT)
+				2.12-12	2005 
+				2.21-21	2005 
+	Chain 2 (IDENT)
+				1.6-6	Moscow 
+				3.33-33	Moscow 
+				3.46-46	Moscow 
+				5.4-4	Moscow 
+				6.18-18	Moscow 
+	Chain 3 (IDENT)
+				3.7-8	United Russia 
+				3.16-16	its 
+	Chain 4 (IDENT)
+				3.29-33	the United Russia in Moscow 
+				2.19-19	Russia 
+

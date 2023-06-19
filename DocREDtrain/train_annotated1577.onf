@@ -1,0 +1,727 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The term ABC Region is an industrial region in Greater São Paulo , Brazil .
+
+
+Treebanked sentence:
+--------------------
+The term ABC Region is an industrial region in Greater São Paulo , Brazil . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP-TMP (DT The) (NN term))
+    (NP (NNP ABC) (NNP Region))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ industrial) (NN region))
+        (PP (IN in)
+          (NP
+            (NP (NNP Greater) (NNP São) (NNP Paulo))
+            (, ,)
+            (NP (NNP Brazil))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	term
+			sense:	term.n.01
+	2	ABC
+			coref:	IDENT			2	2-3	ABC Region 
+			name:	ORGANIZATION				2-3	ABC Region 
+	3	Region
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	The term ABC Region 
+			N-ARG-A2		5-13	an industrial region in Greater São Paulo , Brazil 
+	5	an
+	6	industrial
+			sense:	industrial.a.01
+	7	region
+			sense:	region.n.01
+	8	in
+	9	Greater
+			coref:	IDENT			1	9-13	Greater São Paulo , Brazil 
+			name:	LOCATION				9-11	Greater São Paulo 
+	10	São
+	11	Paulo
+	12	,
+	13	Brazil
+			coref:	IDENT			3	13-13	Brazil 
+			name:	COUNTRY				13-13	Brazil 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The name refers to three smaller cities south of São Paulo , capital of the Brazilian state of the same name .
+
+
+Treebanked sentence:
+--------------------
+The name refers to three smaller cities south of São Paulo , capital of the Brazilian state of the same name . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN name))
+    (VP (VBZ refers)
+      (PP (IN to)
+        (NP
+          (NP (CD three) (JJR smaller) (NNS cities))
+          (PP
+            (ADVP (RB south))
+            (IN of)
+            (NP
+              (NP (NNP São) (NNP Paulo))
+              (, ,)
+              (NP
+                (NP (NN capital))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (JJ Brazilian) (NN state))
+                    (PP (IN of)
+                      (NP (DT the) (JJ same) (NN name)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	name
+			sense:	name.n.01
+	2	refers
+			sense:	denote.v.02
+			prop:	refer.01
+			V		2-2	refers 
+			N-ARG-A0		0-1	The name 
+			N-ARG-A1		3-20	to three smaller cities south of São Paulo , capital of the Brazilian state of the same name 
+	3	to
+	4	three
+			coref:	IDENT			0	4-20	three smaller cities south of São Paulo , capital of the Brazilian state of the same name 
+			name:	NUMBER				4-4	three 
+	5	smaller
+			sense:	small.a.01
+	6	cities
+			sense:	city.n.01
+	7	south
+			sense:	south.r.01
+	8	of
+	9	São
+			coref:	IDENT			1	9-10	São Paulo 
+			name:	LOCATION				9-10	São Paulo 
+	10	Paulo
+	11	,
+	12	capital
+			sense:	capital.n.03
+	13	of
+	14	the
+	15	Brazilian
+			name:	NATIONALITY				15-15	Brazilian 
+	16	state
+			sense:	state.n.01
+	17	of
+	18	the
+	19	same
+			sense:	same.a.01
+	20	name
+			sense:	name.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Originally , these three cities were Santo André , São Bernardo do Campo , and São Caetano do Sul .
+
+
+Treebanked sentence:
+--------------------
+Originally , these three cities were Santo André , São Bernardo do Campo , and São Caetano do Sul . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Originally))
+    (, ,)
+    (S
+      (NP (DT these) (CD three) (NNS cities))
+      (VP (VBD were)
+        (NP (NNP Santo) (NNP André))))
+    (, ,)
+    (S
+      (NP (NNP São) (NNP Bernardo))
+      (VP (VBP do)
+        (NP (NNP Campo))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP São) (NNP Caetano))
+      (VP (VBP do)
+        (NP (NN Sul))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Originally
+			sense:	primitively.r.01
+	1	,
+	2	these
+			coref:	IDENT			0	2-4	these three cities 
+	3	three
+			name:	NUMBER				3-3	three 
+	4	cities
+			sense:	city.n.01
+	5	were
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	were 
+			N-ARGM-TMP		0-0	Originally 
+			N-ARG-A1		2-4	these three cities 
+			N-ARG-A2		6-18	Santo André , São Bernardo do Campo , and São Caetano do Sul 
+	6	Santo
+			name:	PERSON				6-7	Santo André 
+	7	André
+	8	,
+	9	São
+			name:	PERSON				9-10	São Bernardo 
+	10	Bernardo
+	11	do
+			sense:	do.v.04
+			prop:	do.02
+			V		11-11	do 
+			N-ARG-A0		9-10	São Bernardo 
+			N-ARG-A1		12-12	Campo 
+	12	Campo
+			name:	PERSON				12-12	Campo 
+	13	,
+	14	and
+	15	São
+			name:	PERSON				15-16	São Caetano 
+	16	Caetano
+	17	do
+			sense:	do.v.04
+			prop:	do.01
+			V		17-17	do 
+	18	Sul
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Later , the region became known as the ABCD , with the addition of the city of Diadema .
+
+
+Treebanked sentence:
+--------------------
+Later , the region became known as the ABCD , with the addition of the city of Diadema . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Later))
+    (, ,)
+    (NP (DT the) (NN region))
+    (VP (VBD became)
+      (VP (VBN known)
+        (PP (IN as)
+          (NP (DT the) (NNP ABCD)))
+        (, ,)
+        (PP (IN with)
+          (NP
+            (NP (DT the) (NN addition))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN city))
+                (PP (IN of)
+                  (NP (NNP Diadema)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Later
+			sense:	subsequently.r.01
+	1	,
+	2	the
+			coref:	IDENT			2	2-3	the region 
+	3	region
+			sense:	region.n.01
+	4	became
+			sense:	become.v.01
+			prop:	become.01
+			V		4-4	became 
+			N-ARGM-TMP		0-0	Later 
+			N-ARG-A1		2-3	the region 
+			N-ARG-A2		5-8	known as the ABCD 
+			N-ARGM-MNR		10-17	with the addition of the city of Diadema 
+	5	known
+			sense:	know.v.04
+			prop:	know.01
+			V		5-5	known 
+			N-ARGM-TMP		0-0	Later 
+			N-ARG-A1		2-3	the region 
+			N-ARG-A2		6-8	as the ABCD 
+			N-ARGM-MNR		10-17	with the addition of the city of Diadema 
+	6	as
+	7	the
+	8	ABCD
+			name:	ORGANIZATION				8-8	ABCD 
+	9	,
+	10	with
+	11	the
+	12	addition
+			sense:	addition.n.02
+	13	of
+	14	the
+	15	city
+			sense:	city.n.01
+	16	of
+	17	Diadema
+			name:	CITY				17-17	Diadema 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The ABC region is widely known in Brazil and abroad because of the great number of international companies , particularly car manufacturers , in its area .
+
+
+Treebanked sentence:
+--------------------
+The ABC region is widely known in Brazil and abroad because of the great number of international companies , particularly car manufacturers , in its area . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP ABC) (NN region))
+    (VP (VBZ is)
+      (ADVP (RB widely))
+      (VP (VBN known)
+        (PP
+          (PP (IN in)
+            (NP (NNP Brazil)))
+          (CC and)
+          (PP
+            (ADVP (RB abroad))
+            (IN because) (IN of)
+            (NP
+              (NP (DT the) (JJ great) (NN number))
+              (PP (IN of)
+                (NP
+                  (NP (JJ international) (NNS companies))
+                  (, ,)
+                  (NP (RB particularly) (NN car) (NNS manufacturers))
+                  (, ,))))))
+        (PP (IN in)
+          (NP (PRP$ its) (NN area)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-2	The ABC region 
+	1	ABC
+			coref:	IDENT			2	1-1	ABC 
+			name:	ORGANIZATION				1-1	ABC 
+	2	region
+			sense:	region.n.01
+	3	is
+			sense:	be.v.01
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	The ABC region 
+			N-ARG-A2		4-5	widely known 
+	4	widely
+			sense:	widely.r.01
+	5	known
+			sense:	know.v.04
+			prop:	know.01
+			V		5-5	known 
+			N-ARG-A1		0-2	The ABC region 
+			N-ARGM-EXT		4-4	widely 
+			N-ARGM-LOC		6-9	in Brazil and abroad 
+			N-ARGM-CAU		10-25	because of the great number of international companies , particularly car manufacturers , in its area 
+	6	in
+	7	Brazil
+			coref:	IDENT			3	7-7	Brazil 
+			name:	COUNTRY				7-7	Brazil 
+	8	and
+	9	abroad
+			sense:	abroad.r.01
+	10	because
+	11	of
+	12	the
+	13	great
+			sense:	great.s.01
+	14	number
+			sense:	number.n.01
+	15	of
+	16	international
+			sense:	international.a.01
+	17	companies
+			sense:	company.n.01
+	18	,
+	19	particularly
+			sense:	particularly.r.01
+	20	car
+			sense:	car.n.01
+	21	manufacturers
+			sense:	manufacturer.n.01
+	22	,
+	23	in
+	24	its
+	25	area
+			sense:	area.n.01
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+National media and organizations consider ABC a powerful industrial pole and birthplace of the labor union movement that fought against dictatorship in the 1970s and 1980s .
+
+
+Treebanked sentence:
+--------------------
+National media and organizations consider ABC a powerful industrial pole and birthplace of the labor union movement that fought against dictatorship in the 1970s and 1980s . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (JJ National) (NNS media)
+      (CC and)
+      (NNS organizations))
+    (VP (VBP consider)
+      (NP (NNP ABC))
+      (NP
+        (NP (DT a) (JJ powerful) (JJ industrial) (NN pole)
+          (CC and)
+          (NN birthplace))
+        (PP (IN of)
+          (NP
+            (NP (DT the)
+              (NML (NN labor) (NN union))
+              (NN movement))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBD fought)
+                  (PP (IN against)
+                    (NP (NN dictatorship)))
+                  (PP (IN in)
+                    (NP (DT the) (NNS 1970s)
+                      (CC and)
+                      (NNS 1980s))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	National
+			sense:	national.a.01
+	1	media
+	2	and
+	3	organizations
+			sense:	organization.n.01
+	4	consider
+			sense:	see.v.05
+			prop:	consider.01
+			V		4-4	consider 
+			N-ARG-A0		0-3	National media and organizations 
+			N-ARG-A1		5-25	ABC a powerful industrial pole and birthplace of the labor union movement that fought against dictatorship in the 1970s and 1980s 
+	5	ABC
+			coref:	IDENT			2	5-5	ABC 
+			name:	ORGANIZATION				5-5	ABC 
+	6	a
+	7	powerful
+			sense:	powerful.a.01
+	8	industrial
+			sense:	industrial.a.01
+	9	pole
+			name:	NATIONALITY				9-9	pole 
+			sense:	pole.n.07
+	10	and
+	11	birthplace
+			sense:	birthplace.n.02
+	12	of
+	13	the
+	14	labor
+			sense:	labor_movement.n.01
+	15	union
+			sense:	union.n.01
+	16	movement
+			sense:	movement.n.04
+	17	that
+	18	fought
+			sense:	fight.v.02
+			prop:	fight.01
+			V		18-18	fought 
+			N-ARG-A0		13-16	the labor union movement 
+			R-ARG-A0		17-17	that 
+			N-ARG-A1		19-20	against dictatorship 
+			N-ARGM-TMP		21-25	in the 1970s and 1980s 
+	19	against
+	20	dictatorship
+			sense:	dictatorship.n.01
+	21	in
+	22	the
+			name:	DATE				22-23	the 1970s 
+	23	1970s
+	24	and
+	25	1980s
+			name:	DATE				25-25	1980s 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In this region was formed the Workers ' Party ( PT ) whose activities and popularity launched a great figure to the best known names in Brazil : Luiz Inácio Lula da Silva , or simply Lula , president of Brazil in 2002 .
+
+
+Treebanked sentence:
+--------------------
+In this region was formed the Workers ' Party ( PT ) whose activities and popularity launched a great figure to the best known names in Brazil : Luiz Inácio Lula da Silva , or simply Lula , president of Brazil in 2002 . 
+
+Tree:
+-----
+(ROOT
+  (SINV
+    (PP (IN In)
+      (NP (DT this) (NN region)))
+    (VP (VBD was)
+      (VP (VBN formed)
+        (NP
+          (NP
+            (NP
+              (NP (DT the) (NNPS Workers) (POS '))
+              (NNP Party)
+              (PRN (-LRB- -LRB-)
+                (NP (NN PT))
+                (-RRB- -RRB-)))
+            (SBAR
+              (WHNP (WP$ whose) (NNS activities)
+                (CC and)
+                (NN popularity))
+              (S
+                (VP (VBD launched)
+                  (NP (DT a) (JJ great) (NN figure))
+                  (PP (IN to)
+                    (NP
+                      (NP (DT the)
+                        (ADJP (RBS best) (VBN known))
+                        (NNS names))
+                      (PP (IN in)
+                        (NP (NNP Brazil)))))))))
+          (: :)
+          (NP
+            (NP (NNP Luiz) (NNP Inácio))
+            (NP (NNP Lula) (NNP da) (NNP Silva)))
+          (, ,)
+          (CC or)
+          (ADVP (RB simply)))))
+    (NP
+      (NP (NNP Lula))
+      (, ,)
+      (NP
+        (NP (NN president))
+        (PP (IN of)
+          (NP
+            (NP (NNP Brazil))
+            (PP (IN in)
+              (NP (CD 2002)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	this
+			coref:	IDENT			2	1-2	this region 
+	2	region
+			sense:	region.n.01
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	formed
+			sense:	form.v.01
+			prop:	form.01
+			V		4-4	formed 
+			N-ARGM-LOC		0-2	In this region 
+			N-ARG-A1		5-42	the Workers ' Party ( PT ) whose activities and popularity launched a great figure to the best known names in Brazil : Luiz Inácio Lula da Silva , or simply Lula , president of Brazil in 2002 
+	5	the
+	6	Workers
+			name:	ORGANIZATION				6-8	Workers ' Party 
+	7	'
+	8	Party
+	9	(
+	10	PT
+			sense:	platinum.n.01
+	11	)
+	12	whose
+	13	activities
+			sense:	activity.n.01
+	14	and
+	15	popularity
+			sense:	popularity.n.01
+	16	launched
+			sense:	launch.v.02
+			prop:	launch.01
+			V		16-16	launched 
+			N-ARG-A0		5-11	the Workers ' Party ( PT ) 
+			R-ARG-A0		12-15	whose activities and popularity 
+			N-ARG-A1		17-42	a great figure to the best known names in Brazil : Luiz Inácio Lula da Silva , or simply Lula , president of Brazil in 2002 
+	17	a
+	18	great
+			sense:	great.s.02
+	19	figure
+			sense:	name.n.04
+	20	to
+	21	the
+	22	best
+			sense:	well.r.02
+	23	known
+			sense:	know.v.04
+			prop:	know.01
+			V		23-23	known 
+			N-ARGM-ADV		22-22	best 
+			N-ARG-A1		24-24	names 
+			N-ARGM-LOC		25-26	in Brazil 
+	24	names
+			sense:	name.n.04
+	25	in
+	26	Brazil
+			coref:	IDENT			3	26-26	Brazil 
+			name:	COUNTRY				26-26	Brazil 
+	27	:
+	28	Luiz
+			name:	PERSON				28-32	Luiz Inácio Lula da Silva 
+	29	Inácio
+	30	Lula
+	31	da
+	32	Silva
+	33	,
+	34	or
+	35	simply
+			sense:	merely.r.01
+	36	Lula
+			name:	PERSON				36-36	Lula 
+	37	,
+	38	president
+			name:	TITLE				38-38	president 
+			sense:	president.n.03
+	39	of
+	40	Brazil
+			name:	COUNTRY				40-40	Brazil 
+	41	in
+	42	2002
+			name:	DATE				42-42	2002 
+	43	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2006 , the Universidade Federal do ABC was established .
+
+
+Treebanked sentence:
+--------------------
+In 2006 , the Universidade Federal do ABC was established . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2006)))
+    (, ,)
+    (NP (DT the) (NNP Universidade) (NNP Federal))
+    (VP (VB do)
+      (S
+        (NP (NNP ABC))
+        (VP (VBD was)
+          (VP (VBN established)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2006
+			name:	DATE				1-1	2006 
+	2	,
+	3	the
+	4	Universidade
+			name:	ORGANIZATION				4-5	Universidade Federal 
+	5	Federal
+	6	do
+			sense:	do.v.11
+			prop:	do.02
+			V		6-6	do 
+			N-ARG-A1		7-7	ABC 
+	7	ABC
+			coref:	IDENT			2	7-7	ABC 
+			name:	ORGANIZATION				7-7	ABC 
+	8	was
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	was 
+	9	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		9-9	established 
+			N-ARGM-TMP		0-1	In 2006 
+			N-ARG-A1		3-7	the Universidade Federal do ABC 
+	10	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.4-20	three smaller cities south of São Paulo , capital of the Brazilian state of the same name 
+				2.2-4	these three cities 
+	Chain 1 (IDENT)
+				0.9-13	Greater São Paulo , Brazil 
+				1.9-10	São Paulo 
+	Chain 2 (IDENT)
+				0.2-3	ABC Region 
+				3.2-3	the region 
+				4.0-2	The ABC region 
+				4.1-1	ABC 
+				5.5-5	ABC 
+				6.1-2	this region 
+				7.7-7	ABC 
+	Chain 3 (IDENT)
+				0.13-13	Brazil 
+				4.7-7	Brazil 
+				6.26-26	Brazil 
+

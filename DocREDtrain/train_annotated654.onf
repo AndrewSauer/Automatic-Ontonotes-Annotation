@@ -1,0 +1,562 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Marc Kimmich ( born 21 January 1983 ) is a former professional tennis player from Australia .
+
+
+Treebanked sentence:
+--------------------
+Marc Kimmich ( born 21 January 1983 ) is a former professional tennis player from Australia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Marc) (NNP Kimmich))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 21))
+        (NP-TMP (NNP January) (CD 1983)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ former) (JJ professional) (NN tennis) (NN player))
+        (PP (IN from)
+          (NP (NNP Australia)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Marc
+			coref:	IDENT			0	0-1	Marc Kimmich 
+			name:	PERSON				0-1	Marc Kimmich 
+	1	Kimmich
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Marc Kimmich 
+			N-ARGM-TMP		4-6	21 January 1983 
+	4	21
+			name:	DATE				4-6	21 January 1983 
+	5	January
+	6	1983
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	Marc Kimmich ( born 21 January 1983 ) 
+			N-ARG-A2		9-15	a former professional tennis player from Australia 
+	9	a
+	10	former
+			sense:	erstwhile.s.01
+	11	professional
+			sense:	professional.a.01
+	12	tennis
+			name:	TITLE				12-13	tennis player 
+			sense:	tennis.n.01
+	13	player
+			sense:	player.n.01
+	14	from
+	15	Australia
+			coref:	IDENT			1	15-15	Australia 
+			name:	COUNTRY				15-15	Australia 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Kimmich was born in West Germany , but moved to Australia when he was five .
+
+
+Treebanked sentence:
+--------------------
+Kimmich was born in West Germany , but moved to Australia when he was five . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Kimmich))
+    (VP
+      (VP (VBD was)
+        (VP (VBN born)
+          (PP (IN in)
+            (NP (NNP West) (NNP Germany)))))
+      (, ,)
+      (CC but)
+      (VP (VBD moved)
+        (PP (IN to)
+          (NP (NNP Australia)))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP he))
+            (VP (VBD was)
+              (NP (CD five)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Kimmich
+			coref:	IDENT			0	0-0	Kimmich 
+			name:	PERSON				0-0	Kimmich 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Kimmich 
+			N-ARGM-LOC		3-5	in West Germany 
+	3	in
+	4	West
+			name:	LOCATION				4-4	West 
+	5	Germany
+			name:	COUNTRY				5-5	Germany 
+	6	,
+	7	but
+	8	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		8-8	moved 
+			N-ARG-A0		0-0	Kimmich 
+			N-ARG-A2		9-10	to Australia 
+			N-ARGM-TMP		11-14	when he was five 
+	9	to
+	10	Australia
+			coref:	IDENT			1	10-10	Australia 
+			name:	COUNTRY				10-10	Australia 
+	11	when
+	12	he
+			coref:	IDENT			0	12-12	he 
+	13	was
+			sense:	be.v.01
+			prop:	be.01
+			V		13-13	was 
+			N-ARGM-TMP		11-11	when 
+			N-ARG-A1		12-12	he 
+			N-ARG-A2		14-14	five 
+	14	five
+			name:	NUMBER				14-14	five 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He received a wildcard entry into the 2005 Australian Open and played Mariano Zabaleta in the first round , losing in four sets .
+
+
+Treebanked sentence:
+--------------------
+He received a wildcard entry into the 2005 Australian Open and played Mariano Zabaleta in the first round , losing in four sets . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD received)
+        (NP (DT a) (JJ wildcard) (NN entry))
+        (PP (IN into)
+          (NP (DT the) (CD 2005)
+            (NML (JJ Australian) (NNP Open)))))
+      (CC and)
+      (VP (VBD played)
+        (NP
+          (NP (NNP Mariano) (NNP Zabaleta))
+          (PP (IN in)
+            (NP (DT the) (JJ first) (NN round))))
+        (, ,)
+        (S
+          (VP (VBG losing)
+            (PP (IN in)
+              (NP (CD four) (NNS sets)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	received
+			sense:	receive.v.02
+			prop:	receive.01
+			V		1-1	received 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-9	a wildcard entry into the 2005 Australian Open 
+	2	a
+	3	wildcard
+	4	entry
+			sense:	entrance.n.03
+	5	into
+	6	the
+	7	2005
+			name:	DATE				7-7	2005 
+	8	Australian
+			name:	NATIONALITY				8-8	Australian 
+	9	Open
+			name:	MISC				9-9	Open 
+	10	and
+	11	played
+			sense:	play.v.01
+			prop:	play.01
+			V		11-11	played 
+			N-ARG-A0		0-0	He 
+			N-ARGM-LOC		14-17	in the first round 
+			N-ARGM-ADV		19-22	losing in four sets 
+	12	Mariano
+			name:	PERSON				12-13	Mariano Zabaleta 
+	13	Zabaleta
+	14	in
+	15	the
+	16	first
+			name:	ORDINAL				16-16	first 
+			sense:	first.s.02
+	17	round
+			sense:	cycle.n.01
+	18	,
+	19	losing
+			sense:	lose.v.02
+			prop:	lose.03
+			V		19-19	losing 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		20-22	in four sets 
+	20	in
+	21	four
+			name:	NUMBER				21-21	four 
+	22	sets
+			sense:	set.n.08
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the men 's doubles he and partner Adam Feeney lost in the opening round to the Russian pairing of Igor Andreev and Nikolay Davydenko .
+
+
+Treebanked sentence:
+--------------------
+In the men 's doubles he and partner Adam Feeney lost in the opening round to the Russian pairing of Igor Andreev and Nikolay Davydenko . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (S
+          (NP (DT the) (NNS men) (POS 's))
+          (VP (VBZ doubles)
+            (NP (PRP he))))
+        (CC and)
+        (NP (NN partner))))
+    (NP (NNP Adam) (NNP Feeney))
+    (VP (VBD lost)
+      (PP (IN in)
+        (NP (DT the) (NN opening) (NN round)))
+      (PP (IN to)
+        (NP
+          (NP (DT the) (JJ Russian))
+          (VP (VBG pairing)
+            (PP (IN of)
+              (NP
+                (NP (NNP Igor) (NNP Andreev))
+                (CC and)
+                (NP (NNP Nikolay) (NNP Davydenko))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+	2	men
+			sense:	man.n.01
+	3	's
+	4	doubles
+			sense:	double.v.04
+			prop:	double.02
+			V		4-4	doubles 
+			N-ARG-A0		2-3	men 's 
+	5	he
+			coref:	IDENT			0	5-5	he 
+	6	and
+	7	partner
+			sense:	collaborator.n.03
+	8	Adam
+			coref:	IDENT			0	8-9	Adam Feeney 
+			name:	PERSON				8-9	Adam Feeney 
+	9	Feeney
+	10	lost
+			sense:	lose.v.02
+			prop:	lose.03
+			V		10-10	lost 
+			N-ARGM-ADV		0-4	In the men 's doubles 
+			N-ARG-A0		5-9	he and partner Adam Feeney 
+			N-ARGM-LOC		11-14	in the opening round 
+			N-ARG-A2		15-24	to the Russian pairing of Igor Andreev and Nikolay Davydenko 
+	11	in
+	12	the
+	13	opening
+			sense:	first_step.n.01
+	14	round
+			sense:	cycle.n.01
+	15	to
+	16	the
+	17	Russian
+			name:	NATIONALITY				17-17	Russian 
+	18	pairing
+			sense:	pair.v.01
+			prop:	paring.01
+			V		18-18	pairing 
+			N-ARG-A0		17-17	Russian 
+			N-ARG-A1		19-24	of Igor Andreev and Nikolay Davydenko 
+	19	of
+	20	Igor
+			name:	PERSON				20-21	Igor Andreev 
+	21	Andreev
+	22	and
+	23	Nikolay
+			name:	PERSON				23-24	Nikolay Davydenko 
+	24	Davydenko
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the 2006 Australian Open , Kimmich was again given a wildcard , but he once more was n't able to progress to the second round , with 26th seed Jarkko Nieminen proving too strong .
+
+
+Treebanked sentence:
+--------------------
+In the 2006 Australian Open , Kimmich was again given a wildcard , but he once more was n't able to progress to the second round , with 26th seed Jarkko Nieminen proving too strong . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN In)
+        (NP (DT the) (CD 2006)
+          (NML (JJ Australian) (NNP Open))))
+      (, ,)
+      (NP (NNP Kimmich))
+      (VP (VBD was)
+        (ADVP (RB again))
+        (VP (VBN given)
+          (NP (DT a) (NN wildcard)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP he))
+      (ADVP (RB once) (RBR more))
+      (VP (VBD was) (RB n't)
+        (ADJP (JJ able)
+          (S
+            (VP (TO to)
+              (VP (VB progress)
+                (PP (IN to)
+                  (NP (DT the) (JJ second) (NN round)))))))
+        (, ,)
+        (PP (IN with)
+          (NP
+            (NP (JJ 26th) (NN seed) (NNP Jarkko) (NNP Nieminen))
+            (VP (VBG proving)
+              (ADJP (RB too) (JJ strong)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+	2	2006
+			name:	DATE				2-2	2006 
+	3	Australian
+			name:	NATIONALITY				3-3	Australian 
+	4	Open
+			name:	MISC				4-4	Open 
+	5	,
+	6	Kimmich
+			coref:	IDENT			0	6-6	Kimmich 
+			name:	PERSON				6-6	Kimmich 
+	7	was
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	was 
+	8	again
+			sense:	again.r.01
+	9	given
+			sense:	give.v.01
+			prop:	give.01
+			V		9-9	given 
+			N-ARGM-TMP		0-4	In the 2006 Australian Open 
+			N-ARG-A2		6-6	Kimmich 
+			N-ARGM-TMP		8-8	again 
+			N-ARG-A1		10-11	a wildcard 
+	10	a
+	11	wildcard
+	12	,
+	13	but
+	14	he
+			coref:	IDENT			0	14-14	he 
+	15	once
+			name:	DATE				15-15	once 
+			sense:	once.r.01
+	16	more
+			sense:	more.r.01
+	17	was
+			sense:	be.v.01
+			prop:	be.01
+			V		17-17	was 
+			N-ARG-A1		14-14	he 
+			N-ARGM-TMP		15-16	once more 
+			N-ARGM-NEG		18-18	n't 
+			N-ARG-A2		19-25	able to progress to the second round 
+	18	n't
+			sense:	not.r.01
+	19	able
+			sense:	able.a.01
+	20	to
+	21	progress
+			sense:	advance.v.01
+			prop:	progress.01
+			V		21-21	progress 
+			N-ARG-A1		14-14	he 
+			N-ARG-A4		22-25	to the second round 
+	22	to
+	23	the
+	24	second
+			name:	ORDINAL				24-24	second 
+			sense:	second.s.01
+	25	round
+			sense:	cycle.n.01
+	26	,
+	27	with
+	28	26th
+			name:	ORDINAL				28-28	26th 
+			sense:	twenty-sixth.s.01
+	29	seed
+			sense:	seeded_player.n.01
+	30	Jarkko
+			name:	PERSON				30-31	Jarkko Nieminen 
+	31	Nieminen
+	32	proving
+			sense:	prove.v.01
+			prop:	prove.01
+			V		32-32	proving 
+			N-ARG-A1		33-34	too strong 
+	33	too
+			sense:	excessively.r.01
+	34	strong
+			sense:	strong.a.01
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was also eliminated in the first round of the mixed doubles with Lisa McShea .
+
+
+Treebanked sentence:
+--------------------
+He was also eliminated in the first round of the mixed doubles with Lisa McShea . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (ADVP (RB also))
+      (VP (VBN eliminated)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (JJ first) (NN round))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (JJ mixed))
+                (SBAR
+                  (S
+                    (VP (VBZ doubles)
+                      (PP (IN with)
+                        (NP (NNP Lisa) (NNP McShea))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	also
+			sense:	besides.r.02
+	3	eliminated
+			sense:	eliminate.v.06
+			prop:	eliminate.01
+			V		3-3	eliminated 
+			N-ARG-A1		0-0	He 
+			N-ARGM-DIS		2-2	also 
+	4	in
+	5	the
+	6	first
+			name:	ORDINAL				6-6	first 
+			sense:	first.s.02
+	7	round
+			sense:	cycle.n.01
+	8	of
+	9	the
+	10	mixed
+			sense:	interracial.s.02
+	11	doubles
+			sense:	double.v.04
+			prop:	double.02
+			V		11-11	doubles 
+	12	with
+	13	Lisa
+			name:	PERSON				13-14	Lisa McShea 
+	14	McShea
+	15	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Marc Kimmich 
+				1.0-0	Kimmich 
+				1.12-12	he 
+				2.0-0	He 
+				3.5-5	he 
+				3.8-9	Adam Feeney 
+				4.6-6	Kimmich 
+				4.14-14	he 
+				5.0-0	He 
+	Chain 1 (IDENT)
+				0.15-15	Australia 
+				1.10-10	Australia 
+

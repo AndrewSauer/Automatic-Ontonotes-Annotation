@@ -1,0 +1,814 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Eno River , named for the Eno Indians who once lived along its banks , is the initial tributary of the Neuse River in North Carolina , USA .
+
+
+Treebanked sentence:
+--------------------
+The Eno River , named for the Eno Indians who once lived along its banks , is the initial tributary of the Neuse River in North Carolina , USA . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Eno) (NNP River))
+      (, ,)
+      (VP (VBN named)
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NNP Eno) (NNPS Indians))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (ADVP (RB once))
+                (VP (VBD lived)
+                  (PP (IN along)
+                    (NP (PRP$ its) (NNS banks)))))))))
+      (, ,))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ initial) (NN tributary))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Neuse) (NNP River))
+            (PP (IN in)
+              (NP
+                (NP (NNP North) (NNP Carolina))
+                (, ,)
+                (NP (NNP USA))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Eno
+			name:	LOCATION				1-1	Eno 
+	2	River
+			name:	TITLE				2-2	River 
+	3	,
+	4	named
+			sense:	name.v.01
+			prop:	name.01
+			V		4-4	named 
+			N-ARG-A1		0-2	The Eno River 
+	5	for
+	6	the
+	7	Eno
+			name:	MISC				7-8	Eno Indians 
+	8	Indians
+	9	who
+	10	once
+			name:	DATE				10-10	once 
+			sense:	once.r.03
+	11	lived
+			sense:	populate.v.01
+			prop:	live.01
+			V		11-11	lived 
+			N-ARG-A0		6-8	the Eno Indians 
+			R-ARG-A0		9-9	who 
+			N-ARGM-TMP		10-10	once 
+			N-ARGM-LOC		12-14	along its banks 
+	12	along
+	13	its
+			coref:	IDENT			1	13-13	its 
+	14	banks
+			sense:	bank.n.01
+	15	,
+	16	is
+			sense:	be.v.02
+			prop:	be.01
+			V		16-16	is 
+			N-ARG-A1		0-14	The Eno River , named for the Eno Indians who once lived along its banks 
+			N-ARG-A2		17-28	the initial tributary of the Neuse River in North Carolina , USA 
+	17	the
+	18	initial
+			sense:	initial.s.01
+	19	tributary
+			sense:	feeder.n.03
+	20	of
+	21	the
+	22	Neuse
+			name:	LOCATION				22-22	Neuse 
+	23	River
+			name:	TITLE				23-23	River 
+	24	in
+	25	North
+			name:	STATE_OR_PROVINCE				25-26	North Carolina 
+	26	Carolina
+	27	,
+	28	USA
+			name:	COUNTRY				28-28	USA 
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Eno rises in Orange County .
+
+
+Treebanked sentence:
+--------------------
+The Eno rises in Orange County . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN Eno))
+    (VP (VBZ rises)
+      (PP (IN in)
+        (NP (NNP Orange) (NNP County))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The Eno 
+	1	Eno
+	2	rises
+			sense:	surface.v.01
+			prop:	rise.01
+			V		2-2	rises 
+			N-ARG-A1		0-1	The Eno 
+			N-ARGM-LOC		3-5	in Orange County 
+	3	in
+	4	Orange
+			name:	CITY				4-4	Orange 
+	5	County
+			name:	LOCATION				5-5	County 
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The river 's watershed occupies most of Orange and Durham counties .
+
+
+Treebanked sentence:
+--------------------
+The river 's watershed occupies most of Orange and Durham counties . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN river) (POS 's))
+      (NN watershed))
+    (VP (VBZ occupies)
+      (NP
+        (NP (JJS most))
+        (PP (IN of)
+          (NP
+            (NML (NNP Orange)
+              (CC and)
+              (NNP Durham))
+            (NNS counties)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	river
+			name:	TITLE				1-1	river 
+			sense:	river.n.01
+	2	's
+	3	watershed
+			sense:	river_basin.n.01
+	4	occupies
+			sense:	occupy.v.03
+			prop:	occupy.01
+			V		4-4	occupies 
+			N-ARG-A0		0-3	The river 's watershed 
+			N-ARG-A1		5-10	most of Orange and Durham counties 
+	5	most
+			sense:	most.a.02
+	6	of
+	7	Orange
+			name:	CITY				7-7	Orange 
+	8	and
+	9	Durham
+			coref:	IDENT			0	9-9	Durham 
+			name:	CITY				9-9	Durham 
+	10	counties
+			sense:	county.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Eno converges with the Flat and Little Rivers to form the Neuse at Falls Lake , which straddles Durham and Wake counties .
+
+
+Treebanked sentence:
+--------------------
+The Eno converges with the Flat and Little Rivers to form the Neuse at Falls Lake , which straddles Durham and Wake counties . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Eno))
+    (VP (VBZ converges)
+      (PP (IN with)
+        (NP (DT the)
+          (NML (JJ Flat)
+            (CC and)
+            (JJ Little))
+          (NNP Rivers)))
+      (S
+        (VP (TO to)
+          (VP (VB form)
+            (NP (DT the) (NNP Neuse))
+            (PP (IN at)
+              (NP
+                (NP (NNP Falls) (NNP Lake))
+                (, ,)
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBZ straddles)
+                      (NP
+                        (NML (NNP Durham)
+                          (CC and)
+                          (NNP Wake))
+                        (NNS counties)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The Eno 
+	1	Eno
+	2	converges
+			sense:	converge.v.01
+			prop:	converge.01
+			V		2-2	converges 
+			N-ARG-A0		0-1	The Eno 
+			N-ARG-A1		3-8	with the Flat and Little Rivers 
+			N-ARGM-PNC		9-22	to form the Neuse at Falls Lake , which straddles Durham and Wake counties 
+	3	with
+	4	the
+	5	Flat
+			sense:	flat.s.02
+	6	and
+	7	Little
+			name:	ORGANIZATION				7-8	Little Rivers 
+			sense:	small.a.01
+	8	Rivers
+	9	to
+	10	form
+			sense:	form.v.02
+			prop:	form.01
+			V		10-10	form 
+			N-ARG-A0		0-1	The Eno 
+			N-ARG-A1		11-12	the Neuse 
+			N-ARGM-LOC		13-22	at Falls Lake , which straddles Durham and Wake counties 
+	11	the
+			coref:	IDENT			2	11-12	the Neuse 
+	12	Neuse
+			name:	LOCATION				12-12	Neuse 
+	13	at
+	14	Falls
+			name:	CAUSE_OF_DEATH				14-14	Falls 
+	15	Lake
+			name:	LOCATION				15-15	Lake 
+	16	,
+	17	which
+	18	straddles
+			sense:	range.v.04
+			prop:	straddle.01
+			V		18-18	straddles 
+			N-ARG-A0		11-15	the Neuse at Falls Lake 
+			R-ARG-A0		17-17	which 
+			N-ARG-A1		19-22	Durham and Wake counties 
+	19	Durham
+			coref:	IDENT			0	19-19	Durham 
+			name:	CITY				19-19	Durham 
+	20	and
+	21	Wake
+	22	counties
+			sense:	county.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Eno is notable for its beauty and water quality , which has been preserved through aggressive citizen efforts .
+
+
+Treebanked sentence:
+--------------------
+The Eno is notable for its beauty and water quality , which has been preserved through aggressive citizen efforts . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Eno))
+    (VP (VBZ is)
+      (ADJP (JJ notable)
+        (PP (IN for)
+          (NP
+            (NP (PRP$ its)
+              (NML (NN beauty)
+                (CC and)
+                (NN water))
+              (NN quality))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ has)
+                  (VP (VBN been)
+                    (VP (VBN preserved)
+                      (PP (IN through)
+                        (NP (JJ aggressive) (NN citizen) (NNS efforts))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The Eno 
+	1	Eno
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The Eno 
+			N-ARG-A2		3-18	notable for its beauty and water quality , which has been preserved through aggressive citizen efforts 
+	3	notable
+			sense:	celebrated.s.01
+	4	for
+	5	its
+			coref:	IDENT			1	5-5	its 
+	6	beauty
+			sense:	beauty.n.01
+	7	and
+	8	water
+			sense:	body_of_water.n.01
+	9	quality
+			sense:	quality.n.01
+	10	,
+	11	which
+	12	has
+			sense:	have.v.01
+			prop:	have.01
+			V		12-12	has 
+	13	been
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	been 
+	14	preserved
+			sense:	continue.v.03
+			prop:	preserve.01
+			V		14-14	preserved 
+			N-ARG-A1		5-9	its beauty and water quality 
+			R-ARG-A1		11-11	which 
+			N-ARGM-MNR		15-18	through aggressive citizen efforts 
+	15	through
+	16	aggressive
+			sense:	aggressive.a.01
+	17	citizen
+			sense:	citizen.n.01
+	18	efforts
+			sense:	attempt.n.01
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Though barely more than forty miles from its source to its convergence at the Neuse , the Eno features significant stretches of natural preservation .
+
+
+Treebanked sentence:
+--------------------
+Though barely more than forty miles from its source to its convergence at the Neuse , the Eno features significant stretches of natural preservation . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN Though)
+      (S
+        (ADVP (RB barely))
+        (NP
+          (NP
+            (QP (JJR more) (IN than) (CD forty))
+            (NNS miles))
+          (PP (IN from)
+            (NP
+              (NP (PRP$ its) (NN source))
+              (PP (IN to)
+                (NP (PRP$ its) (NN convergence))))))
+        (PP (IN at)
+          (NP (DT the) (NNP Neuse)))))
+    (, ,)
+    (NP (DT the) (NNP Eno))
+    (VP (VBZ features)
+      (NP
+        (NP (JJ significant) (NNS stretches))
+        (PP (IN of)
+          (NP (JJ natural) (NN preservation)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Though
+	1	barely
+			sense:	barely.r.01
+	2	more
+			sense:	more.a.01
+	3	than
+	4	forty
+			name:	NUMBER				4-4	forty 
+	5	miles
+			sense:	mile.n.01
+	6	from
+	7	its
+			coref:	IDENT			1	7-7	its 
+	8	source
+			sense:	beginning.n.04
+	9	to
+	10	its
+			coref:	IDENT			1	10-10	its 
+	11	convergence
+			sense:	convergence.n.01
+	12	at
+	13	the
+			coref:	IDENT			2	13-14	the Neuse 
+	14	Neuse
+			name:	LOCATION				14-14	Neuse 
+	15	,
+	16	the
+			coref:	IDENT			1	16-17	the Eno 
+	17	Eno
+			name:	PERSON				17-17	Eno 
+	18	features
+			sense:	have.v.02
+			prop:	feature.01
+			V		18-18	features 
+			N-ARGM-ADV		0-14	Though barely more than forty miles from its source to its convergence at the Neuse 
+			N-ARG-A0		16-17	the Eno 
+			N-ARG-A1		19-23	significant stretches of natural preservation 
+	19	significant
+			sense:	significant.s.02
+	20	stretches
+			sense:	stretch.n.01
+	21	of
+	22	natural
+			sense:	natural.a.02
+	23	preservation
+			sense:	preservation.n.02
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Through the combined efforts of the North Carolina State Parks System , local government , and private non - profit preservation groups , over of land have been protected in the Eno Basin , including Occoneechee Mountain State Natural Area , Eno River State Park , West Point on the Eno ( a Durham City Park ) , and Penny 's Bend State Nature Preserve ( managed by the North Carolina Botanical Garden ) .
+
+
+Treebanked sentence:
+--------------------
+Through the combined efforts of the North Carolina State Parks System , local government , and private non - profit preservation groups , over of land have been protected in the Eno Basin , including Occoneechee Mountain State Natural Area , Eno River State Park , West Point on the Eno ( a Durham City Park ) , and Penny 's Bend State Nature Preserve ( managed by the North Carolina Botanical Garden ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Through)
+      (NP
+        (NP (DT the) (VBN combined) (NNS efforts))
+        (PP (IN of)
+          (NP
+            (NP (DT the)
+              (NML (NNP North) (NNP Carolina) (NNP State))
+              (NNP Parks) (NNP System))
+            (, ,)
+            (NP (JJ local) (NN government))
+            (, ,)
+            (CC and)
+            (NP (JJ private)
+              (NML (AFX non) (HYPH -) (NN profit))
+              (NN preservation) (NNS groups))))))
+    (, ,)
+    (NP
+      (NP (IN over))
+      (PP (IN of)
+        (NP (NN land))))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBN protected)
+          (PP (IN in)
+            (NP (DT the) (NNP Eno) (NNP Basin)))
+          (, ,)
+          (PP (VBG including)
+            (NP
+              (NP (NNP Occoneechee)
+                (NML (NNP Mountain) (NNP State) (NNP Natural))
+                (NNP Area))
+              (, ,)
+              (NP
+                (NML (NNP Eno) (NNP River))
+                (NNP State) (NNP Park))
+              (, ,)
+              (NP
+                (NP
+                  (NP (NNP West) (NNP Point))
+                  (PP (IN on)
+                    (NP (DT the) (NNP Eno))))
+                (-LRB- -LRB-)
+                (NP (DT a) (NNP Durham) (NNP City) (NNP Park))
+                (-RRB- -RRB-))
+              (, ,)
+              (CC and)
+              (NP
+                (NP (NN Penny) (POS 's))
+                (NNP Bend) (NNP State) (NNP Nature) (NNP Preserve))))
+          (PRN (-LRB- -LRB-)
+            (S
+              (VP (VBN managed)
+                (PP (IN by)
+                  (NP (DT the)
+                    (NML (NNP North) (NNP Carolina))
+                    (NNP Botanical) (NNP Garden)))))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Through
+	1	the
+	2	combined
+			sense:	unite.v.03
+			prop:	combine.01
+			V		2-2	combined 
+			N-ARG-A3		3-3	efforts 
+	3	efforts
+			sense:	attempt.n.01
+	4	of
+	5	the
+	6	North
+			name:	ORGANIZATION				6-10	North Carolina State Parks System 
+	7	Carolina
+	8	State
+	9	Parks
+	10	System
+	11	,
+	12	local
+			sense:	local.a.01
+	13	government
+			sense:	government.n.01
+	14	,
+	15	and
+	16	private
+			sense:	private.a.01
+	17	non
+	18	-
+	19	profit
+			sense:	net_income.n.01
+	20	preservation
+			sense:	preservation.n.01
+	21	groups
+			sense:	group.n.01
+	22	,
+	23	over
+	24	of
+	25	land
+			sense:	land.n.01
+	26	have
+			sense:	have.v.01
+			prop:	have.01
+			V		26-26	have 
+	27	been
+			sense:	be.v.01
+			prop:	be.03
+			V		27-27	been 
+	28	protected
+			sense:	protect.v.01
+			prop:	protect.01
+			V		28-28	protected 
+			N-ARGM-MNR		0-21	Through the combined efforts of the North Carolina State Parks System , local government , and private non - profit preservation groups 
+			N-ARG-A1		23-25	over of land 
+			N-ARGM-LOC		29-32	in the Eno Basin 
+			N-ARGM-ADV		34-73	including Occoneechee Mountain State Natural Area , Eno River State Park , West Point on the Eno ( a Durham City Park ) , and Penny 's Bend State Nature Preserve ( managed by the North Carolina Botanical Garden ) 
+	29	in
+	30	the
+	31	Eno
+			name:	LOCATION				31-32	Eno Basin 
+	32	Basin
+	33	,
+	34	including
+			sense:	include.v.01
+			prop:	include.01
+			V		34-34	including 
+			N-ARG-A2		23-23	over 
+			N-ARG-A1		35-73	Occoneechee Mountain State Natural Area , Eno River State Park , West Point on the Eno ( a Durham City Park ) , and Penny 's Bend State Nature Preserve ( managed by the North Carolina Botanical Garden ) 
+	35	Occoneechee
+			name:	LOCATION				35-39	Occoneechee Mountain State Natural Area 
+	36	Mountain
+	37	State
+	38	Natural
+	39	Area
+	40	,
+	41	Eno
+			name:	LOCATION				41-41	Eno 
+	42	River
+			name:	TITLE				42-42	River 
+	43	State
+			name:	LOCATION				43-44	State Park 
+	44	Park
+	45	,
+	46	West
+			name:	CITY				46-47	West Point 
+	47	Point
+	48	on
+	49	the
+			coref:	IDENT			1	49-50	the Eno 
+	50	Eno
+	51	(
+	52	a
+	53	Durham
+			name:	CITY				53-53	Durham 
+	54	City
+			name:	LOCATION				54-55	City Park 
+	55	Park
+	56	)
+	57	,
+	58	and
+	59	Penny
+			name:	PERSON				59-59	Penny 
+			sense:	penny.n.02
+	60	's
+	61	Bend
+	62	State
+	63	Nature
+	64	Preserve
+	65	(
+	66	managed
+			sense:	oversee.v.01
+			prop:	manage.01
+			V		66-66	managed 
+			N-ARG-A1		59-64	Penny 's Bend State Nature Preserve 
+			N-ARG-A0		67-72	by the North Carolina Botanical Garden 
+	67	by
+	68	the
+	69	North
+			name:	STATE_OR_PROVINCE				69-70	North Carolina 
+	70	Carolina
+	71	Botanical
+			name:	LOCATION				71-72	Botanical Garden 
+	72	Garden
+	73	)
+	74	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Permitted recreational activities include swimming , hiking , fishing , canoeing , kayaking , and backcountry camping .
+
+
+Treebanked sentence:
+--------------------
+Permitted recreational activities include swimming , hiking , fishing , canoeing , kayaking , and backcountry camping . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (VBN Permitted) (JJ recreational) (NNS activities))
+    (VP (VBP include)
+      (NP
+        (NP (NN swimming) (, ,) (NN hiking) (, ,) (NN fishing) (, ,) (NN canoeing) (, ,) (NN kayaking) (, ,)
+          (CC and)
+          (NN backcountry))
+        (NP (NN camping))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Permitted
+			sense:	permit.v.01
+			prop:	permit.01
+			V		0-0	Permitted 
+			N-ARG-A1		1-2	recreational activities 
+	1	recreational
+			sense:	recreational.a.01
+	2	activities
+			sense:	activity.n.01
+	3	include
+			sense:	include.v.01
+			prop:	include.01
+			V		3-3	include 
+			N-ARG-A2		0-2	Permitted recreational activities 
+			N-ARG-A1		4-16	swimming , hiking , fishing , canoeing , kayaking , and backcountry camping 
+	4	swimming
+			sense:	swimming.n.01
+	5	,
+	6	hiking
+			sense:	hike.n.01
+	7	,
+	8	fishing
+			sense:	fishing.n.01
+	9	,
+	10	canoeing
+	11	,
+	12	kayaking
+	13	,
+	14	and
+	15	backcountry
+	16	camping
+			sense:	camping.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Individual and group campsites are available .
+
+
+Treebanked sentence:
+--------------------
+Individual and group campsites are available . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (JJ Individual))
+      (CC and)
+      (NP (NN group) (NNS campsites)))
+    (VP (VBP are)
+      (ADJP (JJ available)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Individual
+			sense:	individual.s.03
+	1	and
+	2	group
+			sense:	group.n.01
+	3	campsites
+			sense:	campsite.n.01
+	4	are
+			sense:	be.v.01
+			prop:	be.01
+			V		4-4	are 
+			N-ARG-A1		0-3	Individual and group campsites 
+			N-ARG-A2		5-5	available 
+	5	available
+			sense:	available.a.01
+	6	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.9-9	Durham 
+				3.19-19	Durham 
+	Chain 1 (IDENT)
+				3.0-1	The Eno 
+				0.13-13	its 
+				1.0-1	The Eno 
+				4.0-1	The Eno 
+				4.5-5	its 
+				5.7-7	its 
+				5.10-10	its 
+				5.16-17	the Eno 
+				6.49-50	the Eno 
+	Chain 2 (IDENT)
+				3.11-12	the Neuse 
+				5.13-14	the Neuse 
+

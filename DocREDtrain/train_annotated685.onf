@@ -1,0 +1,619 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The University of Manitoba ( U of M , UMN , or UMB ) is a public university in the province of Manitoba , Canada .
+
+
+Treebanked sentence:
+--------------------
+The University of Manitoba ( U of M , UMN , or UMB ) is a public university in the province of Manitoba , Canada . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP University))
+      (PP (IN of)
+        (NP (NNP Manitoba)))
+      (PRN (-LRB- -LRB-)
+        (NP
+          (NP (NNP U))
+          (PP (IN of)
+            (NP (NNP M) (, ,) (NNP UMN) (, ,)
+              (CC or)
+              (NNP UMB))))
+        (-RRB- -RRB-)))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ public) (NN university))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN province))
+            (PP (IN of)
+              (NP (NNP Manitoba) (, ,) (NNP Canada)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	University
+			name:	ORGANIZATION				1-3	University of Manitoba 
+	2	of
+	3	Manitoba
+	4	(
+	5	U
+	6	of
+	7	M
+	8	,
+	9	UMN
+	10	,
+	11	or
+	12	UMB
+	13	)
+	14	is
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	is 
+			N-ARG-A1		0-13	The University of Manitoba ( U of M , UMN , or UMB ) 
+			N-ARG-A2		15-24	a public university in the province of Manitoba , Canada 
+	15	a
+	16	public
+			sense:	public.a.01
+	17	university
+			sense:	university.n.02
+	18	in
+	19	the
+	20	province
+			sense:	state.n.01
+	21	of
+	22	Manitoba
+			coref:	IDENT			1	22-22	Manitoba 
+			name:	STATE_OR_PROVINCE				22-22	Manitoba 
+	23	,
+	24	Canada
+			name:	COUNTRY				24-24	Canada 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Located in Winnipeg and founded in 1877 , it was Western Canada 's first university .
+
+
+Treebanked sentence:
+--------------------
+Located in Winnipeg and founded in 1877 , it was Western Canada 's first university . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP
+        (VP (VBN Located)
+          (PP (IN in)
+            (NP (NNP Winnipeg))))
+        (CC and)
+        (VP (VBN founded)
+          (PP (IN in)
+            (NP (CD 1877))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (NP
+        (NP (JJ Western) (NNP Canada) (POS 's))
+        (JJ first) (NN university)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		0-0	Located 
+			N-ARGM-LOC		1-2	in Winnipeg 
+			N-ARG-A1		8-8	it 
+	1	in
+	2	Winnipeg
+			name:	CITY				2-2	Winnipeg 
+	3	and
+	4	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		4-4	founded 
+			N-ARGM-TMP		5-6	in 1877 
+			N-ARG-A1		8-8	it 
+	5	in
+	6	1877
+			name:	DATE				6-6	1877 
+	7	,
+	8	it
+	9	was
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	was 
+			R-ARG-A1		0-6	Located in Winnipeg and founded in 1877 
+			N-ARG-A1		8-8	it 
+			N-ARG-A2		10-14	Western Canada 's first university 
+	10	Western
+			coref:	IDENT			0	10-12	Western Canada 's 
+			name:	LOCATION				10-10	Western 
+			sense:	western.s.03
+	11	Canada
+			name:	COUNTRY				11-11	Canada 
+	12	's
+	13	first
+			name:	ORDINAL				13-13	first 
+			sense:	first.a.01
+	14	university
+			sense:	university.n.02
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The university maintains a reputation as a top research - intensive post - secondary educational institution and conducts more research annually than any other university in the region .
+
+
+Treebanked sentence:
+--------------------
+The university maintains a reputation as a top research - intensive post - secondary educational institution and conducts more research annually than any other university in the region . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN university))
+    (VP
+      (VP (VBZ maintains)
+        (NP (DT a) (NN reputation))
+        (PP (IN as)
+          (NP
+            (NP (DT a) (JJ top)
+              (ADJP (NN research) (HYPH -) (JJ intensive))
+              (NN post))
+            (HYPH -)
+            (NP (JJ secondary) (JJ educational) (NN institution)))))
+      (CC and)
+      (VP (VBZ conducts)
+        (NP (JJR more) (NN research))
+        (ADVP (RB annually))
+        (PP (IN than)
+          (NP
+            (NP (DT any) (JJ other) (NN university))
+            (PP (IN in)
+              (NP (DT the) (NN region)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	university
+			sense:	university.n.02
+	2	maintains
+			sense:	keep.v.01
+			prop:	maintain.01
+			V		2-2	maintains 
+			N-ARG-A0		0-1	The university 
+			N-ARG-A1		3-15	a reputation as a top research - intensive post - secondary educational institution 
+	3	a
+	4	reputation
+			sense:	repute.n.01
+	5	as
+	6	a
+	7	top
+			sense:	top.a.01
+	8	research
+			sense:	research.n.01
+	9	-
+	10	intensive
+			sense:	intensive.s.01
+	11	post
+			sense:	position.n.06
+	12	-
+	13	secondary
+			sense:	secondary.s.05
+	14	educational
+			sense:	educational.a.01
+	15	institution
+			sense:	institution.n.01
+	16	and
+	17	conducts
+			sense:	conduct.v.01
+			prop:	conduct.01
+			V		17-17	conducts 
+			N-ARG-A0		0-1	The university 
+			N-ARG-A1		18-19	more research 
+			N-ARGM-TMP		20-20	annually 
+			C-ARG-A1		21-27	than any other university in the region 
+	18	more
+			sense:	more.a.01
+	19	research
+			sense:	research.n.01
+	20	annually
+			name:	SET				20-20	annually 
+			sense:	annually.r.01
+	21	than
+	22	any
+	23	other
+			sense:	other.a.01
+	24	university
+			sense:	university.n.02
+	25	in
+	26	the
+	27	region
+			sense:	region.n.03
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is the largest university both by total student enrollment and campus area in the province of Manitoba , and the 17th largest in all of Canada .
+
+
+Treebanked sentence:
+--------------------
+It is the largest university both by total student enrollment and campus area in the province of Manitoba , and the 17th largest in all of Canada . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP (DT the) (JJS largest) (NN university))
+      (PP (CC both)
+        (IN by)
+        (NP
+          (NP (JJ total) (NN student) (NN enrollment))
+          (CC and)
+          (NP (NN campus) (NN area))))
+      (PP (IN in)
+        (NP
+          (NP
+            (NP (DT the) (NN province))
+            (PP (IN of)
+              (NP (NNP Manitoba))))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (DT the) (JJ 17th) (JJS largest))
+            (PP (IN in)
+              (NP
+                (NP (DT all))
+                (PP (IN of)
+                  (NP (NNP Canada)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-26	the largest university both by total student enrollment and campus area in the province of Manitoba , and the 17th largest in all of Canada 
+	2	the
+	3	largest
+			sense:	large.a.01
+	4	university
+			sense:	university.n.02
+	5	both
+	6	by
+	7	total
+			sense:	entire.s.01
+	8	student
+			name:	TITLE				8-8	student 
+			sense:	student.n.01
+	9	enrollment
+			sense:	registration.n.02
+	10	and
+	11	campus
+			sense:	campus.n.01
+	12	area
+			sense:	area.n.06
+	13	in
+	14	the
+	15	province
+			sense:	state.n.01
+	16	of
+	17	Manitoba
+			coref:	IDENT			1	17-17	Manitoba 
+			name:	STATE_OR_PROVINCE				17-17	Manitoba 
+	18	,
+	19	and
+	20	the
+	21	17th
+			name:	ORDINAL				21-21	17th 
+			sense:	seventeenth.s.01
+	22	largest
+			sense:	large.a.01
+	23	in
+	24	all
+	25	of
+	26	Canada
+			name:	COUNTRY				26-26	Canada 
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The university 's raised admissions standards , wide array of professional disciplines , and global outreach have resulted in one of the most diverse student bodies in Western Canada .
+
+
+Treebanked sentence:
+--------------------
+The university 's raised admissions standards , wide array of professional disciplines , and global outreach have resulted in one of the most diverse student bodies in Western Canada . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN university) (POS 's))
+      (VP (VBN raised)
+        (NP
+          (NP (NNS admissions) (NNS standards))
+          (, ,)
+          (NP
+            (NP (JJ wide) (NN array))
+            (PP (IN of)
+              (NP (JJ professional) (NNS disciplines))))
+          (, ,)
+          (CC and)
+          (NP (JJ global))))
+      (NN outreach))
+    (VP (VBP have)
+      (VP (VBN resulted)
+        (PP (IN in)
+          (NP
+            (NP (CD one))
+            (PP (IN of)
+              (NP
+                (NP (DT the)
+                  (ADJP (RBS most) (JJ diverse))
+                  (NN student) (NNS bodies))
+                (PP (IN in)
+                  (NP (NNP Western) (NNP Canada)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	university
+			sense:	university.n.02
+	2	's
+	3	raised
+			sense:	raise.v.01
+			prop:	raise.01
+			V		3-3	raised 
+			N-ARG-A1		4-5	admissions standards 
+	4	admissions
+			sense:	admission.n.01
+	5	standards
+			sense:	criterion.n.02
+	6	,
+	7	wide
+			sense:	across-the-board.s.01
+	8	array
+			sense:	array.n.01
+	9	of
+	10	professional
+			sense:	professional.a.02
+	11	disciplines
+			sense:	discipline.n.01
+	12	,
+	13	and
+	14	global
+			sense:	global.s.01
+	15	outreach
+			sense:	outreach.n.01
+	16	have
+			sense:	have.v.02
+			prop:	have.01
+			V		16-16	have 
+	17	resulted
+			sense:	leave.v.07
+			prop:	result.01
+			V		17-17	resulted 
+			N-ARG-A1		0-15	The university 's raised admissions standards , wide array of professional disciplines , and global outreach 
+			N-ARG-A2		18-28	in one of the most diverse student bodies in Western Canada 
+	18	in
+	19	one
+			name:	NUMBER				19-19	one 
+	20	of
+	21	the
+	22	most
+			sense:	most.r.01
+	23	diverse
+			sense:	divers.s.01
+	24	student
+			name:	TITLE				24-24	student 
+			sense:	student.n.01
+	25	bodies
+			sense:	body.n.02
+	26	in
+	27	Western
+			coref:	IDENT			0	27-28	Western Canada 
+			name:	LOCATION				27-27	Western 
+	28	Canada
+			name:	COUNTRY				28-28	Canada 
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The campus includes both Faculties of Law and Medicine , and boasts hundreds of degree programs .
+
+
+Treebanked sentence:
+--------------------
+The campus includes both Faculties of Law and Medicine , and boasts hundreds of degree programs . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN campus))
+    (VP
+      (VP (VBZ includes)
+        (NP
+          (NP (CC both)
+            (NNS Faculties))
+          (PP (IN of)
+            (NP (NNP Law)
+              (CC and)
+              (NNP Medicine)))))
+      (, ,)
+      (CC and)
+      (VP (VBZ boasts)
+        (NP
+          (NP (NNS hundreds))
+          (PP (IN of)
+            (NP (NN degree) (NNS programs))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	campus
+			sense:	campus.n.01
+	2	includes
+			sense:	include.v.01
+			prop:	include.01
+			V		2-2	includes 
+			N-ARG-A2		0-1	The campus 
+			N-ARG-A1		3-8	both Faculties of Law and Medicine 
+	3	both
+	4	Faculties
+			sense:	staff.n.03
+	5	of
+	6	Law
+	7	and
+	8	Medicine
+	9	,
+	10	and
+	11	boasts
+			sense:	sport.v.01
+			prop:	boast.01
+			V		11-11	boasts 
+			N-ARG-A0		0-1	The campus 
+			N-ARG-A1		12-15	hundreds of degree programs 
+	12	hundreds
+			sense:	hundred.n.01
+	13	of
+	14	degree
+			sense:	academic_degree.n.01
+	15	programs
+			sense:	course_of_study.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+, there have been 98 Rhodes Scholars from the University of Manitoba , more than from any other university in Western Canada .
+
+
+Treebanked sentence:
+--------------------
+, there have been 98 Rhodes Scholars from the University of Manitoba , more than from any other university in Western Canada . 
+
+Tree:
+-----
+(ROOT
+  (S (, ,)
+    (NP (EX there))
+    (VP (VBP have)
+      (VP (VBN been)
+        (NP
+          (NP (CD 98) (NNP Rhodes) (NNPS Scholars))
+          (PP (IN from)
+            (NP
+              (NP (DT the) (NNP University))
+              (PP (IN of)
+                (NP (NNP Manitoba))))))
+        (, ,)
+        (ADVP (JJR more) (IN than))
+        (PP (IN from)
+          (NP
+            (NP (DT any) (JJ other) (NN university))
+            (PP (IN in)
+              (NP (NNP Western) (NNP Canada)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	,
+	1	there
+	2	have
+			sense:	have.v.01
+			prop:	have.01
+			V		2-2	have 
+	3	been
+			sense:	be.v.05
+			prop:	be.02
+			V		3-3	been 
+			N-ARG-A1		4-21	98 Rhodes Scholars from the University of Manitoba , more than from any other university in Western Canada 
+	4	98
+			name:	NUMBER				4-4	98 
+	5	Rhodes
+	6	Scholars
+	7	from
+	8	the
+	9	University
+			name:	ORGANIZATION				9-11	University of Manitoba 
+	10	of
+	11	Manitoba
+	12	,
+	13	more
+			sense:	more.a.02
+	14	than
+	15	from
+	16	any
+	17	other
+			sense:	other.a.01
+	18	university
+			sense:	university.n.02
+	19	in
+	20	Western
+			coref:	IDENT			0	20-21	Western Canada 
+			name:	LOCATION				20-20	Western 
+	21	Canada
+			name:	COUNTRY				21-21	Canada 
+	22	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.10-12	Western Canada 's 
+				4.27-28	Western Canada 
+				6.20-21	Western Canada 
+	Chain 1 (IDENT)
+				0.22-22	Manitoba 
+				3.17-17	Manitoba 
+

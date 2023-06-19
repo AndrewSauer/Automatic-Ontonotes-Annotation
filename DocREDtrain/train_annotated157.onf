@@ -1,0 +1,670 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Health Sciences Centre is the largest hospital in Winnipeg , Manitoba , and one of the largest in Canada .
+
+
+Treebanked sentence:
+--------------------
+The Health Sciences Centre is the largest hospital in Winnipeg , Manitoba , and one of the largest in Canada . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Health) (NNPS Sciences) (NNP Centre))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT the) (JJS largest) (NN hospital))
+          (PP (IN in)
+            (NP (NNP Winnipeg))))
+        (, ,)
+        (NP (NNP Manitoba))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (JJS largest))
+              (PP (IN in)
+                (NP (NNP Canada))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-3	The Health Sciences Centre 
+	1	Health
+			name:	ORGANIZATION				1-3	Health Sciences Centre 
+	2	Sciences
+	3	Centre
+	4	is
+			sense:	be.v.01
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	The Health Sciences Centre 
+			N-ARG-A2		5-19	the largest hospital in Winnipeg , Manitoba , and one of the largest in Canada 
+	5	the
+	6	largest
+			sense:	large.a.01
+	7	hospital
+			sense:	hospital.n.01
+	8	in
+	9	Winnipeg
+			name:	CITY				9-9	Winnipeg 
+	10	,
+	11	Manitoba
+			coref:	IDENT			0	11-11	Manitoba 
+			name:	STATE_OR_PROVINCE				11-11	Manitoba 
+	12	,
+	13	and
+	14	one
+			name:	NUMBER				14-14	one 
+	15	of
+	16	the
+	17	largest
+			sense:	large.a.01
+	18	in
+	19	Canada
+			name:	COUNTRY				19-19	Canada 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It serves the residents of Manitoba , Northwestern Ontario and Nunavut as both a teaching hospital and as a research centre .
+
+
+Treebanked sentence:
+--------------------
+It serves the residents of Manitoba , Northwestern Ontario and Nunavut as both a teaching hospital and as a research centre . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ serves)
+      (NP
+        (NP (DT the) (NNS residents))
+        (PP (IN of)
+          (NP (NNP Manitoba) (, ,) (NNP Northwestern) (NNP Ontario)
+            (CC and)
+            (NNP Nunavut))))
+      (PP
+        (PP (IN as)
+          (NP
+            (NP (DT both))
+            (NP (DT a) (NN teaching) (NN hospital))))
+        (CC and)
+        (PP (IN as)
+          (NP (DT a) (NN research) (NN centre)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	serves
+			sense:	service.v.01
+			prop:	serve.01
+			V		1-1	serves 
+			N-ARG-A0		0-0	It 
+			N-ARG-A2		2-10	the residents of Manitoba , Northwestern Ontario and Nunavut 
+			N-ARG-A1		11-20	as both a teaching hospital and as a research centre 
+	2	the
+	3	residents
+			sense:	resident.n.01
+	4	of
+	5	Manitoba
+			coref:	IDENT			0	5-5	Manitoba 
+			name:	STATE_OR_PROVINCE				5-5	Manitoba 
+	6	,
+	7	Northwestern
+			name:	LOCATION				7-7	Northwestern 
+	8	Ontario
+			name:	STATE_OR_PROVINCE				8-8	Ontario 
+	9	and
+	10	Nunavut
+			name:	STATE_OR_PROVINCE				10-10	Nunavut 
+	11	as
+	12	both
+	13	a
+	14	teaching
+			sense:	education.n.01
+	15	hospital
+			sense:	hospital.n.01
+	16	and
+	17	as
+	18	a
+	19	research
+			sense:	research.n.01
+	20	centre
+			sense:	center.n.03
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Health Sciences Centre is a tertiary care hospital , encompassing many different specialty medical and surgical services .
+
+
+Treebanked sentence:
+--------------------
+The Health Sciences Centre is a tertiary care hospital , encompassing many different specialty medical and surgical services . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Health) (NNPS Sciences) (NNP Centre))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a)
+          (NML (JJ tertiary) (NN care))
+          (NN hospital))
+        (, ,)
+        (VP (VBG encompassing)
+          (NP (JJ many) (JJ different)
+            (NML
+              (NML (NN specialty) (JJ medical))
+              (CC and)
+              (NML (JJ surgical) (NNS services)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-3	The Health Sciences Centre 
+	1	Health
+			name:	ORGANIZATION				1-3	Health Sciences Centre 
+	2	Sciences
+	3	Centre
+	4	is
+			sense:	be.v.01
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	The Health Sciences Centre 
+			N-ARG-A2		5-8	a tertiary care hospital 
+			N-ARGM-PRD		10-17	encompassing many different specialty medical and surgical services 
+	5	a
+	6	tertiary
+			sense:	third.s.01
+	7	care
+			sense:	care.n.01
+	8	hospital
+			sense:	hospital.n.01
+	9	,
+	10	encompassing
+			sense:	embrace.v.01
+			prop:	encompass.01
+			V		10-10	encompassing 
+			N-ARG-A0		0-3	The Health Sciences Centre 
+			N-ARG-A1		11-17	many different specialty medical and surgical services 
+	11	many
+			sense:	many.a.01
+	12	different
+			sense:	different.a.01
+	13	specialty
+			sense:	specialization.n.02
+	14	medical
+			sense:	medical.a.01
+	15	and
+	16	surgical
+			sense:	surgical.a.01
+	17	services
+			sense:	service.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The University of Manitoba has its Faculties of Medicine , Pharmacy and Dentistry , as well as Physiotherapy , Respiratory Therapy and Occupational Therapy , located on the campus .
+
+
+Treebanked sentence:
+--------------------
+The University of Manitoba has its Faculties of Medicine , Pharmacy and Dentistry , as well as Physiotherapy , Respiratory Therapy and Occupational Therapy , located on the campus . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP University))
+      (PP (IN of)
+        (NP (NNP Manitoba))))
+    (VP (VBZ has)
+      (NP
+        (NP
+          (NP (PRP$ its) (NNS Faculties))
+          (PP (IN of)
+            (NP (NNP Medicine) (, ,) (NNP Pharmacy)
+              (CC and)
+              (NNP Dentistry))))
+        (, ,)
+        (CONJP (RB as) (RB well) (IN as))
+        (NP
+          (NP
+            (NP (NNP Physiotherapy))
+            (, ,)
+            (NP (JJ Respiratory) (NN Therapy))
+            (CC and)
+            (NP (JJ Occupational) (NN Therapy)))
+          (, ,)
+          (VP (VBN located)
+            (PP (IN on)
+              (NP (DT the) (NN campus)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-3	The University of Manitoba 
+	1	University
+			name:	ORGANIZATION				1-3	University of Manitoba 
+	2	of
+	3	Manitoba
+	4	has
+			sense:	have.v.02
+			prop:	have.03
+			V		4-4	has 
+			N-ARG-A0		0-3	The University of Manitoba 
+			N-ARG-A1		5-28	its Faculties of Medicine , Pharmacy and Dentistry , as well as Physiotherapy , Respiratory Therapy and Occupational Therapy , located on the campus 
+	5	its
+			coref:	IDENT			1	5-5	its 
+	6	Faculties
+			name:	MISC				6-8	Faculties of Medicine 
+			sense:	staff.n.03
+	7	of
+	8	Medicine
+	9	,
+	10	Pharmacy
+	11	and
+	12	Dentistry
+	13	,
+	14	as
+			sense:	equally.r.01
+	15	well
+			sense:	well.r.02
+	16	as
+	17	Physiotherapy
+	18	,
+	19	Respiratory
+			sense:	respiratory.a.01
+	20	Therapy
+			sense:	therapy.n.01
+	21	and
+	22	Occupational
+			name:	ORGANIZATION				22-23	Occupational Therapy 
+			sense:	occupational.a.01
+	23	Therapy
+			sense:	therapy.n.01
+	24	,
+	25	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		25-25	located 
+			N-ARG-A1		5-23	its Faculties of Medicine , Pharmacy and Dentistry , as well as Physiotherapy , Respiratory Therapy and Occupational Therapy 
+			N-ARGM-LOC		26-28	on the campus 
+	26	on
+	27	the
+	28	campus
+			sense:	campus.n.01
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Health Sciences Centre employs around 6,000 people .
+
+
+Treebanked sentence:
+--------------------
+The Health Sciences Centre employs around 6,000 people . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Health) (NNPS Sciences) (NNP Centre))
+    (VP (VBZ employs)
+      (NP
+        (QP (RB around) (CD 6,000))
+        (NNS people)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-3	The Health Sciences Centre 
+	1	Health
+	2	Sciences
+	3	Centre
+	4	employs
+			sense:	hire.v.01
+			prop:	employ.01
+			V		4-4	employs 
+			N-ARG-A0		0-3	The Health Sciences Centre 
+			N-ARG-A1		5-7	around 6,000 people 
+	5	around
+			sense:	approximately.r.01
+	6	6,000
+			name:	NUMBER				6-6	6,000 
+	7	people
+			sense:	person.n.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A few other health related institutions are located adjacent to the hospital .
+
+
+Treebanked sentence:
+--------------------
+A few other health related institutions are located adjacent to the hospital . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT A) (JJ few)
+      (ADJP
+        (NP (JJ other) (NN health))
+        (VBN related))
+      (NNS institutions))
+    (VP (VBP are)
+      (VP (VBN located)
+        (S
+          (ADJP (JJ adjacent)))
+        (PP (IN to)
+          (NP (DT the) (NN hospital)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	few
+			sense:	few.a.01
+	2	other
+			sense:	other.a.01
+	3	health
+			sense:	health.n.01
+	4	related
+			sense:	refer.v.02
+			prop:	relate.01
+			V		4-4	related 
+			N-ARG-A2		3-3	health 
+			N-ARG-A1		5-5	institutions 
+	5	institutions
+			sense:	institution.n.01
+	6	are
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	are 
+	7	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		7-7	located 
+			N-ARG-A1		0-5	A few other health related institutions 
+			N-ARGM-LOC		8-11	adjacent to the hospital 
+	8	adjacent
+			sense:	adjacent.s.02
+	9	to
+	10	the
+	11	hospital
+			sense:	hospital.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Cadham Provincial Laboratory is located next door to the hospital and is the main research and investigative arm of the government of Manitoba for infectious disease .
+
+
+Treebanked sentence:
+--------------------
+The Cadham Provincial Laboratory is located next door to the hospital and is the main research and investigative arm of the government of Manitoba for infectious disease . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Cadham) (NNP Provincial) (NNP Laboratory))
+    (VP
+      (VP (VBZ is)
+        (VP (VBN located)
+          (ADVP (RB next) (NN door))
+          (PP (IN to)
+            (NP (DT the) (NN hospital)))))
+      (CC and)
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (JJ main) (NN research))
+          (CC and)
+          (NP
+            (NP (JJ investigative) (NN arm))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN government))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP Manitoba))
+                    (PP (IN for)
+                      (NP (JJ infectious) (NN disease)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Cadham
+			name:	ORGANIZATION				1-3	Cadham Provincial Laboratory 
+	2	Provincial
+	3	Laboratory
+	4	is
+			sense:	be.v.03
+			prop:	be.03
+			V		4-4	is 
+	5	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		5-5	located 
+			N-ARG-A1		0-3	The Cadham Provincial Laboratory 
+			N-ARGM-LOC		6-10	next door to the hospital 
+	6	next
+			sense:	next.r.01
+	7	door
+			sense:	door.n.04
+	8	to
+	9	the
+	10	hospital
+			sense:	hospital.n.01
+	11	and
+	12	is
+			sense:	be.v.02
+			prop:	be.01
+			V		12-12	is 
+			N-ARG-A1		0-3	The Cadham Provincial Laboratory 
+			N-ARG-A2		13-26	the main research and investigative arm of the government of Manitoba for infectious disease 
+	13	the
+	14	main
+			sense:	chief.s.01
+	15	research
+			sense:	research.n.01
+	16	and
+	17	investigative
+			sense:	fact-finding.s.01
+	18	arm
+			sense:	branch.n.01
+	19	of
+	20	the
+	21	government
+			sense:	government.n.01
+	22	of
+	23	Manitoba
+			coref:	IDENT			0	23-23	Manitoba 
+			name:	STATE_OR_PROVINCE				23-23	Manitoba 
+	24	for
+	25	infectious
+			name:	CAUSE_OF_DEATH				25-26	infectious disease 
+			sense:	infectious.a.03
+	26	disease
+			sense:	disease.n.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Canadian Blood Services main building is located across the street from the hospital .
+
+
+Treebanked sentence:
+--------------------
+The Canadian Blood Services main building is located across the street from the hospital . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJ Canadian)
+      (NML (NN Blood) (NNS Services))
+      (JJ main) (NN building))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN across)
+          (NP
+            (NP (DT the) (NN street))
+            (PP (IN from)
+              (NP (DT the) (NN hospital)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Canadian
+			name:	NATIONALITY				1-1	Canadian 
+	2	Blood
+			sense:	blood.n.01
+	3	Services
+			sense:	service.n.04
+	4	main
+			sense:	chief.s.01
+	5	building
+			sense:	building.n.01
+	6	is
+			sense:	be.v.03
+			prop:	be.03
+			V		6-6	is 
+	7	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		7-7	located 
+			N-ARG-A1		0-5	The Canadian Blood Services main building 
+			N-ARGM-LOC		8-13	across the street from the hospital 
+	8	across
+	9	the
+	10	street
+			sense:	street.n.01
+	11	from
+	12	the
+	13	hospital
+			sense:	hospital.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+CancerCare Manitoba is also located adjacent to the hospital .
+
+
+Treebanked sentence:
+--------------------
+CancerCare Manitoba is also located adjacent to the hospital . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP CancerCare) (NNP Manitoba))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (VP (VBN located)
+        (S
+          (ADJP (JJ adjacent)))
+        (PP (IN to)
+          (NP (DT the) (NN hospital)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	CancerCare
+	1	Manitoba
+			name:	STATE_OR_PROVINCE				1-1	Manitoba 
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	also
+			sense:	besides.r.02
+	4	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		4-4	located 
+			N-ARG-A1		0-1	CancerCare Manitoba 
+			N-ARGM-DIS		3-3	also 
+			N-ARGM-LOC		5-8	adjacent to the hospital 
+	5	adjacent
+			sense:	adjacent.s.02
+	6	to
+	7	the
+	8	hospital
+			sense:	hospital.n.01
+	9	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.11-11	Manitoba 
+				1.5-5	Manitoba 
+				6.23-23	Manitoba 
+	Chain 1 (IDENT)
+				3.0-3	The University of Manitoba 
+				3.5-5	its 
+	Chain 2 (IDENT)
+				0.0-3	The Health Sciences Centre 
+				1.0-0	It 
+				2.0-3	The Health Sciences Centre 
+				4.0-3	The Health Sciences Centre 
+

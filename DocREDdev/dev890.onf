@@ -1,0 +1,561 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+USS Lyndon B. Johnson ( DDG-1002 ) will be the third and final built for the United States Navy .
+
+
+Treebanked sentence:
+--------------------
+USS Lyndon B. Johnson ( DDG - 1002 ) will be the third and final built for the United States Navy . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP USS) (NNP Lyndon) (NNP B.) (NNP Johnson))
+      (-LRB- -LRB-)
+      (NP (NN DDG) (HYPH -) (CD 1002))
+      (-RRB- -RRB-))
+    (VP (MD will)
+      (VP (VB be)
+        (NP
+          (NP (DT the) (JJ third)
+            (CC and)
+            (JJ final))
+          (VP (VBN built)
+            (PP (IN for)
+              (NP (DT the) (NNP United) (NNP States) (NNP Navy)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	USS
+			coref:	IDENT			0	0-3	USS Lyndon B. Johnson 
+	1	Lyndon
+			name:	PERSON				1-3	Lyndon B. Johnson 
+	2	B.
+	3	Johnson
+	4	(
+	5	DDG
+			name:	MISC				5-7	DDG - 1002 
+	6	-
+	7	1002
+	8	)
+	9	will
+	10	be
+			sense:	be.v.01
+			prop:	be.01
+			V		10-10	be 
+			N-ARG-A1		0-8	USS Lyndon B. Johnson ( DDG - 1002 ) 
+			N-ARGM-MOD		9-9	will 
+			N-ARG-A2		11-20	the third and final built for the United States Navy 
+	11	the
+	12	third
+			name:	ORDINAL				12-12	third 
+			sense:	third.s.01
+	13	and
+	14	final
+			sense:	concluding.s.01
+	15	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		15-15	built 
+			N-ARG-A1		11-14	the third and final 
+			N-ARGM-PNC		16-20	for the United States Navy 
+	16	for
+	17	the
+			coref:	IDENT			1	17-20	the United States Navy 
+	18	United
+			name:	ORGANIZATION				18-20	United States Navy 
+	19	States
+	20	Navy
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The contract to build her was awarded to Bath Iron Works located in Bath , Maine , on 15 September 2011 .
+
+
+Treebanked sentence:
+--------------------
+The contract to build her was awarded to Bath Iron Works located in Bath , Maine , on 15 September 2011 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN contract)
+      (S
+        (VP (TO to)
+          (VP (VB build)
+            (NP (PRP her))))))
+    (VP (VBD was)
+      (VP (VBN awarded)
+        (PP (IN to)
+          (NP
+            (NP (NN Bath)
+              (NML (NNP Iron) (NNP Works)))
+            (VP (VBN located)
+              (PP (IN in)
+                (NP
+                  (NP (NN Bath))
+                  (, ,)
+                  (NP (NNP Maine))
+                  (, ,)))
+              (PP (IN on)
+                (NP (CD 15)))
+              (NP-TMP (NNP September) (CD 2011)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	contract
+			sense:	contract.n.01
+	2	to
+	3	build
+			sense:	construct.v.01
+			prop:	build.01
+			V		3-3	build 
+			N-ARG-A1		4-4	her 
+	4	her
+	5	was
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	was 
+	6	awarded
+			sense:	award.v.02
+			prop:	award.01
+			V		6-6	awarded 
+			N-ARG-A1		0-4	The contract to build her 
+			N-ARG-A2		7-15	to Bath Iron Works located in Bath , Maine 
+			N-ARGM-TMP		17-20	on 15 September 2011 
+	7	to
+	8	Bath
+			sense:	bath.n.05
+	9	Iron
+	10	Works
+	11	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		11-11	located 
+			N-ARG-A1		8-10	Bath Iron Works 
+			N-ARGM-LOC		12-15	in Bath , Maine 
+	12	in
+	13	Bath
+			sense:	bath.n.05
+	14	,
+	15	Maine
+			name:	STATE_OR_PROVINCE				15-15	Maine 
+	16	,
+	17	on
+	18	15
+			name:	DATE				18-20	15 September 2011 
+	19	September
+	20	2011
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The award , along with funds for the construction of , was worth US$ 1.826 billion .
+
+
+Treebanked sentence:
+--------------------
+The award , along with funds for the construction of , was worth US$ 1.826 billion . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN award))
+    (, ,)
+    (ADVP (IN along)
+      (PP (IN with)
+        (NP
+          (NP (NNS funds))
+          (PP (IN for)
+            (NP
+              (NP (DT the) (NN construction))
+              (PP (IN of)))))))
+    (, ,)
+    (VP (VBD was)
+      (ADJP (JJ worth)
+        (NP
+          (QP ($ US$) (CD 1.826) (CD billion)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	award
+			sense:	award.n.01
+	2	,
+	3	along
+	4	with
+	5	funds
+			sense:	fund.n.01
+	6	for
+	7	the
+	8	construction
+			sense:	construction.n.01
+	9	of
+	10	,
+	11	was
+			sense:	be.v.01
+			prop:	be.01
+			V		11-11	was 
+			N-ARG-A1		0-9	The award , along with funds for the construction of 
+			N-ARG-A2		12-15	worth US$ 1.826 billion 
+	12	worth
+			sense:	worth.s.02
+	13	US$
+			name:	MONEY				13-15	US$ 1.826 billion 
+	14	1.826
+	15	billion
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On 16 April 2012 , Secretary of the Navy Ray Mabus announced the ship would be named Lyndon B. Johnson in honor of Lyndon B. Johnson , who served as the 36th President of the United States from 1963 to 1969 .
+
+
+Treebanked sentence:
+--------------------
+On 16 April 2012 , Secretary of the Navy Ray Mabus announced the ship would be named Lyndon B. Johnson in honor of Lyndon B. Johnson , who served as the 36th President of the United States from 1963 to 1969 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP
+        (NP (CD 16))
+        (NP-TMP (NNP April) (CD 2012))))
+    (, ,)
+    (NP
+      (NP (NNP Secretary))
+      (PP (IN of)
+        (NP (DT the) (NNP Navy) (NNP Ray) (NNP Mabus))))
+    (VP (VBD announced)
+      (SBAR
+        (S
+          (NP (DT the) (NN ship))
+          (VP (MD would)
+            (VP (VB be)
+              (VP (VBN named)
+                (NP
+                  (NP (NNP Lyndon) (NNP B.) (NNP Johnson))
+                  (PP (IN in)
+                    (NP
+                      (NP (NN honor))
+                      (PP (IN of)
+                        (NP
+                          (NP (NNP Lyndon) (NNP B.) (NNP Johnson))
+                          (, ,)
+                          (SBAR
+                            (WHNP (WP who))
+                            (S
+                              (VP (VBD served)
+                                (PP (IN as)
+                                  (NP
+                                    (NP (DT the) (JJ 36th) (NNP President))
+                                    (PP (IN of)
+                                      (NP (DT the) (NNP United) (NNP States)))))
+                                (PP (IN from)
+                                  (NP (CD 1963)))
+                                (PP (IN to)
+                                  (NP (CD 1969)))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	16
+			name:	DATE				1-3	16 April 2012 
+	2	April
+	3	2012
+	4	,
+	5	Secretary
+			name:	TITLE				5-8	Secretary of the Navy 
+	6	of
+	7	the
+	8	Navy
+			coref:	IDENT			1	8-8	Navy 
+	9	Ray
+			name:	PERSON				9-10	Ray Mabus 
+	10	Mabus
+	11	announced
+			sense:	announce.v.01
+			prop:	announce.01
+			V		11-11	announced 
+			N-ARGM-TMP		0-3	On 16 April 2012 
+			N-ARG-A0		5-10	Secretary of the Navy Ray Mabus 
+			N-ARG-A1		12-40	the ship would be named Lyndon B. Johnson in honor of Lyndon B. Johnson , who served as the 36th President of the United States from 1963 to 1969 
+	12	the
+	13	ship
+			sense:	ship.n.01
+	14	would
+	15	be
+			sense:	be.v.01
+			prop:	be.03
+			V		15-15	be 
+	16	named
+			sense:	name.v.01
+			prop:	name.01
+			V		16-16	named 
+			N-ARG-A1		12-13	the ship 
+			N-ARGM-MOD		14-14	would 
+			N-ARG-A2		17-19	Lyndon B. Johnson 
+			N-ARGM-CAU		20-40	in honor of Lyndon B. Johnson , who served as the 36th President of the United States from 1963 to 1969 
+	17	Lyndon
+			coref:	IDENT			0	17-19	Lyndon B. Johnson 
+			name:	PERSON				17-19	Lyndon B. Johnson 
+	18	B.
+	19	Johnson
+	20	in
+	21	honor
+			sense:	honor.n.02
+	22	of
+	23	Lyndon
+			name:	PERSON				23-25	Lyndon B. Johnson 
+	24	B.
+	25	Johnson
+	26	,
+	27	who
+	28	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		28-28	served 
+			N-ARG-A0		23-25	Lyndon B. Johnson 
+			R-ARG-A0		27-27	who 
+			N-ARG-A1		29-36	as the 36th President of the United States 
+			N-ARGM-TMP		37-40	from 1963 to 1969 
+	29	as
+	30	the
+	31	36th
+			name:	ORDINAL				31-31	36th 
+			sense:	thirty-sixth.s.01
+	32	President
+			name:	TITLE				32-32	President 
+	33	of
+	34	the
+	35	United
+			name:	COUNTRY				35-36	United States 
+	36	States
+	37	from
+	38	1963
+			name:	DATE				38-40	1963 to 1969 
+	39	to
+	40	1969
+	41	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Johnson served in the Navy during World War II , when he was awarded the Silver Star , and ultimately reached the U.S. 
+
+
+Treebanked sentence:
+--------------------
+Johnson served in the Navy during World War II , when he was awarded the Silver Star , and ultimately reached the U.S. Naval Reserve rank of commander . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Johnson))
+    (VP
+      (VP (VBD served)
+        (PP (IN in)
+          (NP (DT the) (NNP Navy)))
+        (PP (IN during)
+          (NP
+            (NP (NNP World) (NNP War) (NNP II))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (PRP he))
+                (VP (VBD was)
+                  (VP (VBN awarded)
+                    (NP (DT the) (NNP Silver) (NNP Star)))))))))
+      (, ,)
+      (CC and)
+      (ADVP (RB ultimately))
+      (VP (VBD reached)
+        (NP
+          (NP (DT the)
+            (NML (NNP U.S.) (NNP Naval) (NNP Reserve))
+            (NN rank))
+          (PP (IN of)
+            (NP (NN commander))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Johnson
+			coref:	IDENT			0	0-0	Johnson 
+			name:	PERSON				0-0	Johnson 
+	1	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	Johnson 
+			N-ARG-A1		2-4	in the Navy 
+			N-ARGM-TMP		5-16	during World War II , when he was awarded the Silver Star 
+	2	in
+	3	the
+			coref:	IDENT			1	3-4	the Navy 
+	4	Navy
+			name:	ORGANIZATION				4-4	Navy 
+	5	during
+	6	World
+			name:	MISC				6-6	World 
+	7	War
+			name:	CAUSE_OF_DEATH				7-7	War 
+	8	II
+			name:	MISC				8-8	II 
+	9	,
+	10	when
+	11	he
+			coref:	IDENT			0	11-11	he 
+	12	was
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	was 
+	13	awarded
+			sense:	award.v.01
+			prop:	award.01
+			V		13-13	awarded 
+			N-ARGM-TMP		10-10	when 
+			N-ARG-A2		11-11	he 
+			N-ARG-A1		14-16	the Silver Star 
+	14	the
+	15	Silver
+	16	Star
+	17	,
+	18	and
+	19	ultimately
+			sense:	ultimately.r.01
+	20	reached
+			sense:	reach.v.02
+			prop:	reach.01
+			V		20-20	reached 
+			N-ARG-A0		0-0	Johnson 
+			N-ARG-A0		11-11	he 
+			N-ARGM-TMP		19-19	ultimately 
+			N-ARG-A1		21-27	the U.S. Naval Reserve rank of commander 
+	21	the
+	22	U.S.
+			name:	ORGANIZATION				22-24	U.S. Naval Reserve 
+	23	Naval
+	24	Reserve
+	25	rank
+			sense:	rank_and_file.n.01
+	26	of
+	27	commander
+			name:	TITLE				27-27	commander 
+			sense:	commander.n.03
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+DDG-1002 is the 34th ship named by the Navy after a U.S. president .
+
+
+Treebanked sentence:
+--------------------
+DDG - 1002 is the 34th ship named by the Navy after a U.S. president . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN DDG) (HYPH -) (CD 1002))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ 34th) (NN ship))
+        (VP (VBN named)
+          (PP (IN by)
+            (NP (DT the) (NNP Navy)))
+          (PP (IN after)
+            (NP (DT a) (NNP U.S.) (NN president))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	DDG
+	1	-
+	2	1002
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	DDG - 1002 
+			N-ARG-A2		4-14	the 34th ship named by the Navy after a U.S. president 
+	4	the
+	5	34th
+			name:	ORDINAL				5-5	34th 
+			sense:	thirty-fourth.s.01
+	6	ship
+			sense:	ship.n.01
+	7	named
+			sense:	name.v.01
+			prop:	name.02
+			V		7-7	named 
+			N-ARG-A1		4-6	the 34th ship 
+			N-ARG-A0		8-10	by the Navy 
+			N-ARG-A2		11-14	after a U.S. president 
+	8	by
+	9	the
+			coref:	IDENT			1	9-10	the Navy 
+	10	Navy
+			name:	ORGANIZATION				10-10	Navy 
+	11	after
+	12	a
+	13	U.S.
+			name:	COUNTRY				13-13	U.S. 
+	14	president
+			name:	TITLE				14-14	president 
+			sense:	president.n.03
+	15	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-3	USS Lyndon B. Johnson 
+				3.17-19	Lyndon B. Johnson 
+				4.0-0	Johnson 
+				4.11-11	he 
+	Chain 1 (IDENT)
+				0.17-20	the United States Navy 
+				3.8-8	Navy 
+				4.3-4	the Navy 
+				5.9-10	the Navy 
+

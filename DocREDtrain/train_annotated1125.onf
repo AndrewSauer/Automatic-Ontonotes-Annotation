@@ -1,0 +1,1137 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Fatehpur Sikri ( ) is a town in the Agra District of Uttar Pradesh , India .
+
+
+Treebanked sentence:
+--------------------
+Fatehpur Sikri ( ) is a town in the Agra District of Uttar Pradesh , India . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Fatehpur) (NNP Sikri) (-LRB- -LRB-) (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN town))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNP Agra) (NNP District))
+            (PP (IN of)
+              (NP
+                (NP (NNP Uttar) (NNP Pradesh))
+                (, ,)
+                (NP (NNP India))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Fatehpur
+			name:	CITY				0-1	Fatehpur Sikri 
+	1	Sikri
+	2	(
+	3	)
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	Fatehpur Sikri ( ) 
+			N-ARG-A2		5-15	a town in the Agra District of Uttar Pradesh , India 
+	5	a
+	6	town
+			sense:	town.n.01
+	7	in
+	8	the
+	9	Agra
+			name:	CITY				9-9	Agra 
+	10	District
+			name:	LOCATION				10-13	District of Uttar Pradesh 
+	11	of
+	12	Uttar
+	13	Pradesh
+	14	,
+	15	India
+			coref:	IDENT			3	15-15	India 
+			name:	COUNTRY				15-15	India 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The city itself was founded as the capital of Mughal Empire in 1571 by Emperor Akbar , serving this role from 1571 to 1585 , when Akbar abandoned it due to a campaign in Punjab and was later completely abandoned in 1610 .
+
+
+Treebanked sentence:
+--------------------
+The city itself was founded as the capital of Mughal Empire in 1571 by Emperor Akbar , serving this role from 1571 to 1585 , when Akbar abandoned it due to a campaign in Punjab and was later completely abandoned in 1610 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN city))
+    (NP (PRP itself))
+    (VP (VBD was)
+      (VP (VBN founded)
+        (PP (IN as)
+          (NP
+            (NP (DT the) (NN capital))
+            (PP (IN of)
+              (NP
+                (NP (NNP Mughal) (NNP Empire))
+                (PP (IN in)
+                  (NP (CD 1571)))))))
+        (PP (IN by)
+          (NP (NNP Emperor) (NNP Akbar)))
+        (, ,)
+        (S
+          (VP (VBG serving)
+            (NP (DT this) (NN role))
+            (PP (IN from)
+              (NP
+                (QP (CD 1571) (IN to) (CD 1585))))))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (NNP Akbar))
+            (VP
+              (VP (VBD abandoned)
+                (NP (PRP it))
+                (PP (IN due)
+                  (PP (IN to)
+                    (NP
+                      (NP (DT a) (NN campaign))
+                      (PP (IN in)
+                        (NP (NNP Punjab)))))))
+              (CC and)
+              (VP (VBD was)
+                (ADVP (RB later) (RB completely))
+                (VP (VBN abandoned)
+                  (PP (IN in)
+                    (NP (CD 1610))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			4	0-1	The city 
+	1	city
+			sense:	city.n.01
+	2	itself
+			coref:	IDENT			4	2-2	itself 
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		4-4	founded 
+			N-ARG-A1		0-2	The city itself 
+			N-ARG-A2		5-5	as 
+			N-ARGM-PRD		6-7	the capital 
+			N-ARG-A2		8-10	of Mughal Empire 
+			N-ARGM-TMP		11-12	in 1571 
+			N-ARG-A0		13-15	by Emperor Akbar 
+	5	as
+	6	the
+	7	capital
+			sense:	capital.n.03
+	8	of
+	9	Mughal
+			name:	LOCATION				9-10	Mughal Empire 
+	10	Empire
+	11	in
+	12	1571
+			name:	DATE				12-12	1571 
+	13	by
+	14	Emperor
+			name:	TITLE				14-14	Emperor 
+	15	Akbar
+			coref:	IDENT			5	15-15	Akbar 
+			name:	PERSON				15-15	Akbar 
+	16	,
+	17	serving
+			sense:	serve.v.01
+			prop:	serve.01
+			V		17-17	serving 
+			N-ARG-A0		0-2	The city itself 
+			N-ARG-A1		18-19	this role 
+			N-ARGM-TMP		20-41	from 1571 to 1585 , when Akbar abandoned it due to a campaign in Punjab and was later completely abandoned in 1610 
+	18	this
+	19	role
+			sense:	function.n.02
+	20	from
+	21	1571
+			name:	DATE				21-23	1571 to 1585 
+	22	to
+	23	1585
+	24	,
+	25	when
+	26	Akbar
+			coref:	IDENT			5	26-26	Akbar 
+			name:	PERSON				26-26	Akbar 
+	27	abandoned
+			sense:	vacate.v.02
+			prop:	abandon.01
+			V		27-27	abandoned 
+			N-ARG-A0		26-26	Akbar 
+			N-ARG-A1		28-28	it 
+			N-ARGM-CAU		29-34	due to a campaign in Punjab 
+	28	it
+			coref:	IDENT			4	28-28	it 
+	29	due
+	30	to
+	31	a
+	32	campaign
+			sense:	campaign.n.03
+	33	in
+	34	Punjab
+			name:	LOCATION				34-34	Punjab 
+	35	and
+	36	was
+			sense:	be.v.01
+			prop:	be.03
+			V		36-36	was 
+	37	later
+			sense:	subsequently.r.01
+	38	completely
+			sense:	wholly.r.01
+	39	abandoned
+			sense:	vacate.v.02
+			prop:	abandon.01
+			V		39-39	abandoned 
+			N-ARG-A1		26-26	Akbar 
+			N-ARGM-TMP		37-37	later 
+			N-ARGM-EXT		38-38	completely 
+			N-ARGM-TMP		40-41	in 1610 
+	40	in
+	41	1610
+			name:	DATE				41-41	1610 
+	42	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The name of the city derives from the village called Sikri which occupied the spot before .
+
+
+Treebanked sentence:
+--------------------
+The name of the city derives from the village called Sikri which occupied the spot before . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN name))
+      (PP (IN of)
+        (NP (DT the) (NN city))))
+    (VP (VBZ derives)
+      (PP (IN from)
+        (NP
+          (NP (DT the) (NN village))
+          (VP (VBN called)
+            (NP
+              (NP (NNP Sikri))
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBD occupied)
+                    (NP (DT the) (NN spot))
+                    (ADVP (RB before))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	name
+			sense:	name.n.01
+	2	of
+	3	the
+			coref:	IDENT			4	3-4	the city 
+	4	city
+			sense:	city.n.01
+	5	derives
+			sense:	derive.v.03
+			prop:	derive.01
+			V		5-5	derives 
+			N-ARG-A1		0-4	The name of the city 
+			N-ARG-A2		6-15	from the village called Sikri which occupied the spot before 
+	6	from
+	7	the
+	8	village
+			sense:	village.n.01
+	9	called
+			sense:	name.v.01
+			prop:	call.01
+			V		9-9	called 
+			N-ARG-A1		7-8	the village 
+			N-ARG-A2		10-10	Sikri 
+	10	Sikri
+			coref:	IDENT			2	10-10	Sikri 
+			name:	LOCATION				10-10	Sikri 
+	11	which
+	12	occupied
+			sense:	occupy.v.02
+			prop:	occupy.01
+			V		12-12	occupied 
+			N-ARG-A0		7-10	the village called Sikri 
+			R-ARG-A0		11-11	which 
+			N-ARG-A1		13-14	the spot 
+			N-ARGM-TMP		15-15	before 
+	13	the
+	14	spot
+			sense:	topographic_point.n.01
+	15	before
+			sense:	earlier.r.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+An Archaeological Survey of India ( ASI ) excavation from 1999 - 2000 indicated that there was a habitation , temples and commercial centres here before Akbar built his capital .
+
+
+Treebanked sentence:
+--------------------
+An Archaeological Survey of India ( ASI ) excavation from 1999 - 2000 indicated that there was a habitation , temples and commercial centres here before Akbar built his capital . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT An)
+        (NML
+          (FRAG
+            (NP
+              (NP (NNP Archaeological) (NNP Survey))
+              (PP (IN of)
+                (NP (NNP India))))
+            (-LRB- -LRB-)
+            (NP (NN ASI))
+            (-RRB- -RRB-)))
+        (NN excavation))
+      (PP (IN from)
+        (NP (CD 1999) (SYM -) (CD 2000))))
+    (VP (VBD indicated)
+      (SBAR (IN that)
+        (S
+          (NP (EX there))
+          (VP (VBD was)
+            (NP
+              (NP (DT a) (NN habitation))
+              (, ,)
+              (NP (NNS temples))
+              (CC and)
+              (NP (JJ commercial) (NNS centres)))
+            (SBAR
+              (ADVP (RB here))
+              (IN before)
+              (S
+                (NP (NNP Akbar))
+                (VP (VBD built)
+                  (NP (PRP$ his) (NN capital)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	An
+	1	Archaeological
+	2	Survey
+	3	of
+	4	India
+			coref:	IDENT			3	4-4	India 
+			name:	COUNTRY				4-4	India 
+	5	(
+	6	ASI
+	7	)
+	8	excavation
+			sense:	dig.n.01
+	9	from
+	10	1999
+			name:	DATE				10-12	1999 - 2000 
+	11	-
+	12	2000
+	13	indicated
+			sense:	indicate.v.02
+			prop:	indicate.01
+			V		13-13	indicated 
+			N-ARG-A0		0-12	An Archaeological Survey of India ( ASI ) excavation from 1999 - 2000 
+			N-ARG-A1		14-29	that there was a habitation , temples and commercial centres here before Akbar built his capital 
+	14	that
+	15	there
+	16	was
+			sense:	exist.v.01
+			prop:	be.02
+			V		16-16	was 
+			N-ARG-A1		17-23	a habitation , temples and commercial centres 
+			N-ARGM-LOC		24-24	here 
+			N-ARGM-TMP		25-29	before Akbar built his capital 
+	17	a
+	18	habitation
+			sense:	dwelling.n.01
+	19	,
+	20	temples
+			sense:	temple.n.01
+	21	and
+	22	commercial
+			sense:	commercial.a.01
+	23	centres
+			sense:	center.n.01
+	24	here
+			sense:	here.r.01
+	25	before
+	26	Akbar
+			coref:	IDENT			5	26-26	Akbar 
+	27	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		27-27	built 
+			N-ARG-A0		26-26	Akbar 
+			N-ARG-A1		28-29	his capital 
+	28	his
+			coref:	IDENT			5	28-28	his 
+	29	capital
+			sense:	capital.n.03
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was also a much - loved place of Babur who called it Shukri for its lake of water needed for his armies .
+
+
+Treebanked sentence:
+--------------------
+It was also a much - loved place of Babur who called it Shukri for its lake of water needed for his armies . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (ADVP (RB also))
+      (NP
+        (NP
+          (NP (DT a) (JJ much) (HYPH -) (JJ loved) (NN place))
+          (PP (IN of)
+            (NP (NNP Babur))))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD called)
+              (NP (PRP it))
+              (NP
+                (NP (NNP Shukri))
+                (PP (IN for)
+                  (NP
+                    (NP (PRP$ its) (NN lake))
+                    (PP (IN of)
+                      (NP
+                        (NP (NN water))
+                        (VP (VBN needed)
+                          (PP (IN for)
+                            (NP (PRP$ his) (NNS armies))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			5	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	It 
+			N-ARGM-ADV		2-2	also 
+			N-ARG-A2		3-22	a much - loved place of Babur who called it Shukri for its lake of water needed for his armies 
+	2	also
+			sense:	besides.r.02
+	3	a
+	4	much
+			sense:	much.a.01
+	5	-
+	6	loved
+			sense:	loved.a.01
+	7	place
+			sense:	topographic_point.n.01
+	8	of
+	9	Babur
+			name:	PERSON				9-9	Babur 
+	10	who
+	11	called
+			sense:	name.v.01
+			prop:	call.01
+			V		11-11	called 
+			N-ARG-A0		9-9	Babur 
+			R-ARG-A0		10-10	who 
+			N-ARG-A1		12-12	it 
+			N-ARG-A2		13-13	Shukri 
+			N-ARGM-CAU		14-22	for its lake of water needed for his armies 
+	12	it
+			coref:	IDENT			5	12-12	it 
+	13	Shukri
+	14	for
+	15	its
+			coref:	IDENT			5	15-15	its 
+	16	lake
+			sense:	lake.n.01
+	17	of
+	18	water
+			sense:	water.n.01
+	19	needed
+			sense:	want.v.02
+			prop:	need.01
+			V		19-19	needed 
+			N-ARGM-PRP		20-22	for his armies 
+	20	for
+	21	his
+			coref:	IDENT			5	21-21	his 
+	22	armies
+			sense:	army.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He used it for relaxation and also defeated Rana Sanga on its outskirts .
+
+
+Treebanked sentence:
+--------------------
+He used it for relaxation and also defeated Rana Sanga on its outskirts . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD used)
+        (NP (PRP it))
+        (PP (IN for)
+          (NP (NN relaxation))))
+      (CC and)
+      (ADVP (RB also))
+      (VP (VBD defeated)
+        (NP
+          (NP (NNP Rana) (NNP Sanga))
+          (PP (IN on)
+            (NP (PRP$ its) (NNS outskirts))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			5	0-0	He 
+	1	used
+			sense:	use.v.01
+			prop:	use.01
+			V		1-1	used 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-2	it 
+			N-ARG-A2		3-4	for relaxation 
+	2	it
+			coref:	IDENT			5	2-2	it 
+	3	for
+	4	relaxation
+			sense:	rest.n.02
+	5	and
+	6	also
+			sense:	besides.r.02
+	7	defeated
+			sense:	get_the_better_of.v.01
+			prop:	defeat.01
+			V		7-7	defeated 
+			N-ARG-A0		0-0	He 
+			N-ARGM-ADV		6-6	also 
+			N-ARG-A1		8-9	Rana Sanga 
+			N-ARGM-LOC		10-12	on its outskirts 
+	8	Rana
+			name:	PERSON				8-9	Rana Sanga 
+	9	Sanga
+	10	on
+	11	its
+			coref:	IDENT			5	11-11	its 
+	12	outskirts
+			sense:	outskirts.n.01
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The khanqah of Sheikh Salim existed earlier at this place .
+
+
+Treebanked sentence:
+--------------------
+The khanqah of Sheikh Salim existed earlier at this place . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN khanqah))
+      (PP (IN of)
+        (NP (NNP Sheikh) (NNP Salim))))
+    (VP (VBD existed)
+      (ADVP (RBR earlier))
+      (PP (IN at)
+        (NP (DT this) (NN place))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	khanqah
+	2	of
+	3	Sheikh
+			name:	TITLE				3-3	Sheikh 
+	4	Salim
+			name:	PERSON				4-4	Salim 
+	5	existed
+			sense:	exist.v.01
+			prop:	exist.01
+			V		5-5	existed 
+			N-ARG-A1		0-4	The khanqah of Sheikh Salim 
+			N-ARGM-TMP		6-6	earlier 
+			N-ARGM-LOC		7-9	at this place 
+	6	earlier
+			sense:	early_on.r.01
+	7	at
+	8	this
+	9	place
+			sense:	topographic_point.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Akbar 's son Jahangir was born at the village of Sikri in 1569 and that year Akbar began construction of a religious compound to commemorate the Sheikh who had predicted the birth .
+
+
+Treebanked sentence:
+--------------------
+Akbar 's son Jahangir was born at the village of Sikri in 1569 and that year Akbar began construction of a religious compound to commemorate the Sheikh who had predicted the birth . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP
+          (NP (NNP Akbar) (POS 's))
+          (NN son))
+        (NP (NNP Jahangir)))
+      (VP (VBD was)
+        (VP (VBN born)
+          (PP (IN at)
+            (NP
+              (NP (DT the) (NN village))
+              (PP (IN of)
+                (NP (NNP Sikri)))))
+          (PP (IN in)
+            (NP (CD 1569))))))
+    (CC and)
+    (S
+      (NP-TMP (DT that) (NN year))
+      (NP (NNP Akbar))
+      (VP (VBD began)
+        (NP
+          (NP (NN construction))
+          (PP (IN of)
+            (NP (DT a) (JJ religious) (NN compound))))
+        (S
+          (VP (TO to)
+            (VP (VB commemorate)
+              (NP
+                (NP (DT the) (NNP Sheikh))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBD had)
+                      (VP (VBN predicted)
+                        (NP (DT the) (NN birth))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Akbar
+			coref:	IDENT			5	0-1	Akbar 's 
+			name:	PERSON				0-0	Akbar 
+	1	's
+	2	son
+			sense:	son.n.01
+	3	Jahangir
+			coref:	IDENT			0	3-3	Jahangir 
+			name:	PERSON				3-3	Jahangir 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		5-5	born 
+			N-ARG-A1		0-3	Akbar 's son Jahangir 
+			N-ARGM-LOC		6-10	at the village of Sikri 
+			N-ARGM-TMP		11-12	in 1569 
+	6	at
+	7	the
+	8	village
+			sense:	village.n.01
+	9	of
+	10	Sikri
+			coref:	IDENT			2	10-10	Sikri 
+			name:	LOCATION				10-10	Sikri 
+	11	in
+	12	1569
+			name:	DATE				12-12	1569 
+	13	and
+	14	that
+	15	year
+			name:	DURATION				15-15	year 
+			sense:	year.n.01
+	16	Akbar
+			coref:	IDENT			5	16-16	Akbar 
+	17	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		17-17	began 
+			N-ARGM-TMP		14-15	that year 
+			N-ARG-A0		16-16	Akbar 
+			N-ARG-A1		18-22	construction of a religious compound 
+			N-ARGM-PRP		23-31	to commemorate the Sheikh who had predicted the birth 
+	18	construction
+			sense:	construction.n.01
+	19	of
+	20	a
+	21	religious
+			sense:	religious.s.01
+	22	compound
+			sense:	compound.n.03
+	23	to
+	24	commemorate
+			sense:	commemorate.v.03
+			prop:	commemorate.01
+			V		24-24	commemorate 
+			N-ARG-A0		16-16	Akbar 
+			N-ARG-A1		25-31	the Sheikh who had predicted the birth 
+	25	the
+	26	Sheikh
+			name:	TITLE				26-26	Sheikh 
+	27	who
+	28	had
+			sense:	have.v.01
+			prop:	have.01
+			V		28-28	had 
+	29	predicted
+			sense:	predict.v.01
+			prop:	predict.01
+			V		29-29	predicted 
+			N-ARG-A0		25-26	the Sheikh 
+			R-ARG-A0		27-27	who 
+			N-ARG-A1		30-31	the birth 
+	30	the
+	31	birth
+			sense:	birth.n.02
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After Jahangir 's second birthday , he began the construction of a walled city and imperial palace here .
+
+
+Treebanked sentence:
+--------------------
+After Jahangir 's second birthday , he began the construction of a walled city and imperial palace here . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP
+        (NP (NNP Jahangir) (POS 's))
+        (JJ second) (NN birthday)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD began)
+      (NP
+        (NP (DT the) (NN construction))
+        (PP (IN of)
+          (NP
+            (NP (DT a)
+              (ADJP (JJ walled))
+              (NN city))
+            (CC and)
+            (NP (JJ imperial) (NN palace)))))
+      (ADVP (RB here)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	Jahangir
+			coref:	IDENT			0	1-2	Jahangir 's 
+			name:	PERSON				1-1	Jahangir 
+	2	's
+	3	second
+			name:	ORDINAL				3-3	second 
+			sense:	second.s.01
+	4	birthday
+			sense:	birthday.n.01
+	5	,
+	6	he
+			coref:	IDENT			0	6-6	he 
+	7	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		7-7	began 
+			N-ARGM-TMP		0-4	After Jahangir 's second birthday 
+			N-ARG-A0		6-6	he 
+			N-ARG-A1		8-16	the construction of a walled city and imperial palace 
+			N-ARGM-LOC		17-17	here 
+	8	the
+	9	construction
+			sense:	construction.n.01
+	10	of
+	11	a
+	12	walled
+	13	city
+			sense:	city.n.01
+	14	and
+	15	imperial
+			sense:	imperial.a.03
+	16	palace
+			sense:	palace.n.04
+	17	here
+			sense:	here.r.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The city came to be known as Fatehpur Sikri , the " City of Victory " , after Akbar 's victorious Gujarat campaign in 1573 .
+
+
+Treebanked sentence:
+--------------------
+The city came to be known as Fatehpur Sikri , the " City of Victory " , after Akbar 's victorious Gujarat campaign in 1573 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN city))
+    (VP (VBD came)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (VP (VBN known)
+              (PP (IN as)
+                (NP
+                  (NP (NNP Fatehpur) (NNP Sikri))
+                  (, ,)
+                  (NP (DT the)
+                    (NML (`` ") (NNP City)
+                      (PP (IN of)
+                        (NP (NNP Victory)))
+                      ('' ")))
+                  (, ,)))
+              (PP (IN after)
+                (NP
+                  (NP (NNP Akbar) (POS 's))
+                  (JJ victorious) (NNP Gujarat) (NN campaign)))
+              (PP (IN in)
+                (NP (CD 1573))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			4	0-1	The city 
+	1	city
+			sense:	city.n.01
+	2	came
+			sense:	come.v.04
+			prop:	come.04
+			V		2-2	came 
+			N-ARG-A1		0-1	The city 
+			N-ARG-A2		3-24	to be known as Fatehpur Sikri , the " City of Victory " , after Akbar 's victorious Gujarat campaign in 1573 
+	3	to
+	4	be
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	be 
+	5	known
+			sense:	know.v.04
+			prop:	know.01
+			V		5-5	known 
+			N-ARG-A1		0-1	The city 
+			N-ARG-A2		6-15	as Fatehpur Sikri , the " City of Victory " 
+			N-ARGM-TMP		17-24	after Akbar 's victorious Gujarat campaign in 1573 
+	6	as
+	7	Fatehpur
+			name:	CITY				7-8	Fatehpur Sikri 
+	8	Sikri
+	9	,
+	10	the
+			coref:	IDENT			4	10-14	the " City of Victory 
+	11	"
+	12	City
+			name:	MISC				12-14	City of Victory 
+	13	of
+	14	Victory
+	15	"
+	16	,
+	17	after
+	18	Akbar
+			coref:	IDENT			5	18-19	Akbar 's 
+			name:	PERSON				18-18	Akbar 
+	19	's
+	20	victorious
+			sense:	triumphant.s.02
+	21	Gujarat
+			name:	LOCATION				21-21	Gujarat 
+	22	campaign
+			sense:	campaign.n.03
+	23	in
+	24	1573
+			name:	DATE				24-24	1573 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After occupying Agra in 1803 , the English established an administrative center here and it remained so until 1850 .
+
+
+Treebanked sentence:
+--------------------
+After occupying Agra in 1803 , the English established an administrative center here and it remained so until 1850 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG occupying)
+          (NP
+            (NP (NNP Agra))
+            (PP (IN in)
+              (NP (CD 1803)))))))
+    (, ,)
+    (S
+      (NP (DT the) (NNP English))
+      (VP (VBD established)
+        (NP (DT an) (JJ administrative) (NN center))
+        (ADVP (RB here))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBD remained)
+        (ADVP (RB so))
+        (PP (IN until)
+          (NP (CD 1850)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	occupying
+			sense:	invade.v.01
+			prop:	occupy.01
+			V		1-1	occupying 
+			N-ARG-A1		2-2	Agra 
+			N-ARGM-TMP		3-4	in 1803 
+			N-ARG-A0		6-7	the English 
+	2	Agra
+			name:	CITY				2-2	Agra 
+	3	in
+	4	1803
+			name:	DATE				4-4	1803 
+	5	,
+	6	the
+			coref:	IDENT			1	6-7	the English 
+	7	English
+			name:	NATIONALITY				7-7	English 
+	8	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		8-8	established 
+			N-ARGM-TMP		0-4	After occupying Agra in 1803 
+			N-ARG-A0		6-7	the English 
+			N-ARG-A1		9-11	an administrative center 
+			N-ARGM-LOC		12-12	here 
+	9	an
+	10	administrative
+			sense:	administrative.a.01
+	11	center
+			sense:	center.n.01
+	12	here
+			sense:	here.r.01
+	13	and
+	14	it
+			coref:	IDENT			1	14-14	it 
+	15	remained
+			sense:	stay.v.01
+			prop:	remain.01
+			V		15-15	remained 
+			N-ARG-A1		14-14	it 
+			N-ARG-A3		16-16	so 
+			N-ARGM-TMP		17-18	until 1850 
+	16	so
+			sense:	so.r.03
+	17	until
+	18	1850
+			name:	DATE				18-18	1850 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1815 , the Marquess of Hastings ordered repairment of monuments at Sikri .
+
+
+Treebanked sentence:
+--------------------
+In 1815 , the Marquess of Hastings ordered repairment of monuments at Sikri . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1815)))
+    (, ,)
+    (NP
+      (NP (DT the) (NNP Marquess))
+      (PP (IN of)
+        (NP (NNP Hastings))))
+    (VP (VBD ordered)
+      (NP
+        (NP (NN repairment))
+        (PP (IN of)
+          (NP (NNS monuments))))
+      (PP (IN at)
+        (NP (NNP Sikri))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1815
+			name:	DATE				1-1	1815 
+	2	,
+	3	the
+	4	Marquess
+			name:	TITLE				4-4	Marquess 
+	5	of
+	6	Hastings
+			name:	PERSON				6-6	Hastings 
+	7	ordered
+			sense:	order.v.01
+			prop:	order.01
+			V		7-7	ordered 
+			N-ARGM-TMP		0-1	In 1815 
+			N-ARG-A0		3-6	the Marquess of Hastings 
+			N-ARG-A2		8-12	repairment of monuments at Sikri 
+	8	repairment
+	9	of
+	10	monuments
+			sense:	memorial.n.03
+	11	at
+	12	Sikri
+			coref:	IDENT			2	12-12	Sikri 
+			name:	LOCATION				12-12	Sikri 
+	13	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				8.1-2	Jahangir 's 
+				7.3-3	Jahangir 
+				8.6-6	he 
+	Chain 1 (IDENT)
+				10.6-7	the English 
+				10.14-14	it 
+	Chain 2 (IDENT)
+				2.10-10	Sikri 
+				7.10-10	Sikri 
+				11.12-12	Sikri 
+	Chain 3 (IDENT)
+				0.15-15	India 
+				3.4-4	India 
+	Chain 4 (IDENT)
+				9.10-14	the " City of Victory 
+				1.0-1	The city 
+				1.2-2	itself 
+				1.28-28	it 
+				2.3-4	the city 
+				9.0-1	The city 
+	Chain 5 (IDENT)
+				7.0-1	Akbar 's 
+				1.15-15	Akbar 
+				1.26-26	Akbar 
+				3.26-26	Akbar 
+				3.28-28	his 
+				4.0-0	It 
+				4.12-12	it 
+				4.15-15	its 
+				4.21-21	his 
+				5.0-0	He 
+				5.2-2	it 
+				5.11-11	its 
+				7.16-16	Akbar 
+				9.18-19	Akbar 's 
+

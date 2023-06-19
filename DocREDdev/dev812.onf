@@ -1,0 +1,794 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Cesare Mori ( Pavia , December 22 , 1871 – Udine , July 6 , 1942 ) was a prefect ( prefetto ) before and during the Fascist period in Italy .
+
+
+Treebanked sentence:
+--------------------
+Cesare Mori ( Pavia , December 22 , 1871 – Udine , July 6 , 1942 ) was a prefect ( prefetto ) before and during the Fascist period in Italy . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (FRAG
+      (NP (NNP Cesare) (NNP Mori))
+      (-LRB- -LRB-)
+      (NP
+        (NP
+          (NP (NNP Pavia) (, ,) (NNP December) (CD 22) (, ,) (CD 1871))
+          (PP (SYM –)
+            (NP (NNP Udine))))
+        (, ,)
+        (NP-TMP (NNP July) (CD 6) (, ,) (CD 1942)))
+      (-RRB- -RRB-))
+    (S
+      (VP (VBD was)
+        (NP
+          (NP (DT a) (NN prefect))
+          (-LRB- -LRB-)
+          (NP (NN prefetto))
+          (-RRB- -RRB-))
+        (ADVP (RB before))))
+    (CC and)
+    (FRAG
+      (PP (IN during)
+        (NP (DT the) (JJ Fascist) (NN period)))
+      (PP (IN in)
+        (NP (NNP Italy))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Cesare
+			name:	PERSON				0-1	Cesare Mori 
+	1	Mori
+	2	(
+	3	Pavia
+			name:	CITY				3-3	Pavia 
+	4	,
+	5	December
+			name:	DATE				5-8	December 22 , 1871 
+	6	22
+	7	,
+	8	1871
+	9	–
+	10	Udine
+			name:	CITY				10-10	Udine 
+	11	,
+	12	July
+			name:	DATE				12-15	July 6 , 1942 
+	13	6
+	14	,
+	15	1942
+	16	)
+	17	was
+			sense:	be.v.08
+			prop:	be.01
+			V		17-17	was 
+			N-ARG-A1		0-16	Cesare Mori ( Pavia , December 22 , 1871 – Udine , July 6 , 1942 ) 
+			N-ARG-A2		18-22	a prefect ( prefetto ) 
+			N-ARGM-TMP		23-30	before and during the Fascist period in Italy 
+	18	a
+	19	prefect
+			sense:	prefect.n.01
+	20	(
+	21	prefetto
+	22	)
+	23	before
+			sense:	earlier.r.01
+	24	and
+	25	during
+	26	the
+	27	Fascist
+			name:	MISC				27-27	Fascist 
+			sense:	fascist.a.01
+	28	period
+			sense:	time_period.n.01
+	29	in
+	30	Italy
+			coref:	IDENT			3	30-30	Italy 
+			name:	COUNTRY				30-30	Italy 
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is known in Italy as the " Iron Prefect " ( Prefetto di Ferro ) because of his iron - fisted campaigns against the Mafia in Sicily in the second half of the 1920s .
+
+
+Treebanked sentence:
+--------------------
+He is known in Italy as the " Iron Prefect " ( Prefetto di Ferro ) because of his iron - fisted campaigns against the Mafia in Sicily in the second half of the 1920s . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (VP (VBN known)
+        (PP (IN in)
+          (NP (NNP Italy)))
+        (PP (IN as)
+          (NP (DT the) (`` ") (NNP Iron) (NNP Prefect) ('' ")))
+        (PRN (-LRB- -LRB-)
+          (NP (NNP Prefetto) (NNP di) (NNP Ferro))
+          (-RRB- -RRB-))
+        (PP (IN because)
+          (PP (IN of)
+            (NP (PRP$ his)
+              (ADJP (NN iron) (HYPH -) (JJ fisted))
+              (NNS campaigns))))
+        (PP (IN against)
+          (NP
+            (NP (DT the) (NNP Mafia))
+            (PP (IN in)
+              (NP (NNP Sicily)))))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (JJ second) (NN half))
+            (PP (IN of)
+              (NP (DT the) (NNS 1920s)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	known
+			sense:	know.v.04
+			prop:	know.01
+			V		2-2	known 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-4	in Italy 
+			N-ARG-A2		5-15	as the " Iron Prefect " ( Prefetto di Ferro ) 
+			N-ARGM-CAU		16-34	because of his iron - fisted campaigns against the Mafia in Sicily in the second half of the 1920s 
+	3	in
+	4	Italy
+			coref:	IDENT			3	4-4	Italy 
+			name:	COUNTRY				4-4	Italy 
+	5	as
+	6	the
+	7	"
+	8	Iron
+	9	Prefect
+	10	"
+	11	(
+	12	Prefetto
+	13	di
+	14	Ferro
+			name:	PERSON				14-14	Ferro 
+	15	)
+	16	because
+	17	of
+	18	his
+			coref:	IDENT			2	18-18	his 
+	19	iron
+			sense:	iron.n.01
+	20	-
+	21	fisted
+	22	campaigns
+			sense:	campaign.n.02
+	23	against
+	24	the
+			coref:	IDENT			0	24-27	the Mafia in Sicily 
+	25	Mafia
+			name:	ORGANIZATION				25-25	Mafia 
+	26	in
+	27	Sicily
+			coref:	IDENT			1	27-27	Sicily 
+			name:	LOCATION				27-27	Sicily 
+	28	in
+	29	the
+			name:	DATE				29-34	the second half of the 1920s 
+	30	second
+			sense:	second.s.01
+	31	half
+			sense:	one-half.n.01
+	32	of
+	33	the
+	34	1920s
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is widely regarded as a fascist , even though at the beginning of Italy 's fascist dictatorship he arrested both fascists and socialists when he was prefect of Bologna .
+
+
+Treebanked sentence:
+--------------------
+He is widely regarded as a fascist , even though at the beginning of Italy 's fascist dictatorship he arrested both fascists and socialists when he was prefect of Bologna . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (ADVP (RB widely))
+      (VP (VBN regarded)
+        (PP (IN as)
+          (NP (DT a) (JJ fascist)))
+        (, ,)
+        (SBAR (RB even) (IN though)
+          (S
+            (PP (IN at)
+              (NP
+                (NP (DT the) (NN beginning))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP Italy) (POS 's))
+                    (JJ fascist) (NN dictatorship)))))
+            (NP (PRP he))
+            (VP (VBD arrested)
+              (NP (DT both) (NNS fascists)
+                (CC and)
+                (NNS socialists))
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (PRP he))
+                  (VP (VBD was)
+                    (NP
+                      (NP (NN prefect))
+                      (PP (IN of)
+                        (NP (NNP Bologna))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	widely
+			sense:	widely.r.01
+	3	regarded
+			sense:	see.v.05
+			prop:	regard.01
+			V		3-3	regarded 
+			N-ARG-A1		0-0	He 
+			N-ARGM-EXT		2-2	widely 
+			N-ARG-A2		4-6	as a fascist 
+			N-ARGM-ADV		8-29	even though at the beginning of Italy 's fascist dictatorship he arrested both fascists and socialists when he was prefect of Bologna 
+	4	as
+	5	a
+	6	fascist
+			sense:	fascist.a.01
+	7	,
+	8	even
+			sense:	even.r.02
+	9	though
+	10	at
+	11	the
+	12	beginning
+			sense:	beginning.n.02
+	13	of
+	14	Italy
+			coref:	IDENT			3	14-15	Italy 's 
+			name:	COUNTRY				14-14	Italy 
+	15	's
+	16	fascist
+			sense:	fascist.a.01
+	17	dictatorship
+			sense:	dictatorship.n.01
+	18	he
+			coref:	IDENT			2	18-18	he 
+	19	arrested
+			sense:	collar.v.01
+			prop:	arrest.01
+			V		19-19	arrested 
+			N-ARGM-TMP		10-17	at the beginning of Italy 's fascist dictatorship 
+			N-ARG-A0		18-18	he 
+			N-ARG-A1		20-23	both fascists and socialists 
+			N-ARGM-TMP		24-29	when he was prefect of Bologna 
+	20	both
+	21	fascists
+			sense:	fascist.n.01
+	22	and
+	23	socialists
+			sense:	socialist.n.01
+	24	when
+	25	he
+			coref:	IDENT			2	25-25	he 
+	26	was
+			sense:	be.v.08
+			prop:	be.01
+			V		26-26	was 
+			N-ARGM-TMP		24-24	when 
+			N-ARG-A1		25-25	he 
+			N-ARG-A2		27-29	prefect of Bologna 
+	27	prefect
+			sense:	prefect.n.01
+	28	of
+	29	Bologna
+			name:	CITY				29-29	Bologna 
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He officially joined the Fascist National Party only in 1926 .
+
+
+Treebanked sentence:
+--------------------
+He officially joined the Fascist National Party only in 1926 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB officially))
+    (VP (VBD joined)
+      (NP (DT the) (JJ Fascist) (NNP National) (NNP Party))
+      (ADVP (RB only))
+      (PP (IN in)
+        (NP (CD 1926))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	officially
+			sense:	formally.r.01
+	2	joined
+			sense:	join.v.01
+			prop:	join.01
+			V		2-2	joined 
+			N-ARG-A0		0-0	He 
+			N-ARGM-ADV		1-1	officially 
+			N-ARG-A1		3-6	the Fascist National Party 
+			N-ARGM-TMP		7-9	only in 1926 
+	3	the
+	4	Fascist
+			name:	ORGANIZATION				4-6	Fascist National Party 
+			sense:	fascist.a.01
+	5	National
+	6	Party
+	7	only
+			sense:	merely.r.01
+	8	in
+	9	1926
+			name:	DATE				9-9	1926 
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was probably an officer who did n't have any strong political beliefs and who exhibited courage , dedication and integrity in the defense of the state and its institutions especially in combating the Mafia in Sicily .
+
+
+Treebanked sentence:
+--------------------
+He was probably an officer who did n't have any strong political beliefs and who exhibited courage , dedication and integrity in the defense of the state and its institutions especially in combating the Mafia in Sicily . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (ADVP (RB probably))
+      (NP (DT an) (NN officer))
+      (SBAR
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD did) (RB n't)
+              (VP (VB have)
+                (NP (DT any) (JJ strong) (JJ political) (NNS beliefs))))))
+        (CC and)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD exhibited)
+              (NP (NN courage) (, ,) (NN dedication)
+                (CC and)
+                (NN integrity))
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NN defense))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT the) (NN state))
+                      (CC and)
+                      (NP (PRP$ its) (NNS institutions))))))
+              (PP (RB especially) (IN in)
+                (S
+                  (VP (VBG combating)
+                    (NP (DT the) (NNP Mafia))
+                    (PP (IN in)
+                      (NP (NNP Sicily)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARGM-ADV		2-2	probably 
+			N-ARG-A2		3-36	an officer who did n't have any strong political beliefs and who exhibited courage , dedication and integrity in the defense of the state and its institutions especially in combating the Mafia in Sicily 
+	2	probably
+			sense:	probably.r.01
+	3	an
+	4	officer
+			sense:	military_officer.n.01
+	5	who
+	6	did
+			sense:	do.v.04
+			prop:	do.01
+			V		6-6	did 
+	7	n't
+			sense:	not.r.01
+	8	have
+			sense:	have.v.01
+			prop:	have.03
+			V		8-8	have 
+			N-ARG-A0		3-4	an officer 
+			R-ARG-A0		5-5	who 
+			N-ARGM-NEG		7-7	n't 
+			N-ARG-A1		9-12	any strong political beliefs 
+	9	any
+	10	strong
+			sense:	strong.s.02
+	11	political
+			sense:	political.a.02
+	12	beliefs
+			sense:	belief.n.01
+	13	and
+	14	who
+	15	exhibited
+			sense:	exhibit.v.01
+			prop:	exhibit.01
+			V		15-15	exhibited 
+			N-ARG-A0		3-4	an officer 
+			R-ARG-A0		14-14	who 
+			N-ARG-A1		16-20	courage , dedication and integrity 
+			N-ARGM-LOC		21-36	in the defense of the state and its institutions especially in combating the Mafia in Sicily 
+	16	courage
+			sense:	courage.n.01
+	17	,
+	18	dedication
+			sense:	dedication.n.01
+	19	and
+	20	integrity
+			sense:	integrity.n.02
+	21	in
+	22	the
+	23	defense
+			sense:	defense.n.12
+	24	of
+	25	the
+	26	state
+			sense:	state.n.04
+	27	and
+	28	its
+	29	institutions
+			sense:	institution.n.01
+	30	especially
+			sense:	particularly.r.01
+	31	in
+	32	combating
+			prop:	combat.01
+			V		32-32	combating 
+			N-ARG-A1		33-36	the Mafia in Sicily 
+	33	the
+			coref:	IDENT			0	33-34	the Mafia 
+	34	Mafia
+			name:	ORGANIZATION				34-34	Mafia 
+	35	in
+	36	Sicily
+			coref:	IDENT			1	36-36	Sicily 
+			name:	LOCATION				36-36	Sicily 
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Nonetheless , the fight against the Mafia carried out by Cesare Mori proved to be effective mainly due to the special powers granted to him by Benito Mussolini when he was prefect in Sicily .
+
+
+Treebanked sentence:
+--------------------
+Nonetheless , the fight against the Mafia carried out by Cesare Mori proved to be effective mainly due to the special powers granted to him by Benito Mussolini when he was prefect in Sicily . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Nonetheless))
+    (, ,)
+    (NP
+      (NP (DT the) (NN fight))
+      (PP (IN against)
+        (NP (DT the) (NNP Mafia))))
+    (VP (VBD carried)
+      (PRT (RP out))
+      (PP (IN by)
+        (NP
+          (NP (NNP Cesare) (NNP Mori))
+          (SBAR
+            (S
+              (VP (VBD proved)
+                (S
+                  (VP (TO to)
+                    (VP (VB be)
+                      (ADJP (JJ effective))
+                      (PP
+                        (ADVP (RB mainly))
+                        (IN due) (IN to)
+                        (NP
+                          (NP (DT the) (JJ special) (NNS powers))
+                          (VP (VBN granted)
+                            (PP (IN to)
+                              (NP (PRP him)))
+                            (PP (IN by)
+                              (NP
+                                (NP (NNP Benito) (NNP Mussolini))
+                                (SBAR
+                                  (WHADVP (WRB when))
+                                  (S
+                                    (NP (PRP he))
+                                    (VP (VBD was)
+                                      (NP
+                                        (NP (NN prefect))
+                                        (PP (IN in)
+                                          (NP (NNP Sicily)))))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Nonetheless
+			sense:	however.r.01
+	1	,
+	2	the
+	3	fight
+			sense:	fight.n.02
+	4	against
+	5	the
+			coref:	IDENT			0	5-6	the Mafia 
+	6	Mafia
+			name:	ORGANIZATION				6-6	Mafia 
+	7	carried
+			sense:	carry.v.38
+			prop:	carry.03
+			V		7-7	carried 
+			N-ARG-A1		2-6	the fight against the Mafia 
+			N-ARG-A0		9-11	by Cesare Mori 
+	8	out
+	9	by
+	10	Cesare
+			name:	PERSON				10-11	Cesare Mori 
+	11	Mori
+	12	proved
+			sense:	prove.v.01
+			prop:	prove.01
+			V		12-12	proved 
+			N-ARGM-DIS		0-0	Nonetheless 
+			N-ARG-A1		2-11	the fight against the Mafia carried out by Cesare Mori 
+			C-ARG-A1		13-15	to be effective 
+			N-ARGM-CAU		16-33	mainly due to the special powers granted to him by Benito Mussolini when he was prefect in Sicily 
+	13	to
+	14	be
+			sense:	be.v.01
+			prop:	be.01
+			V		14-14	be 
+			N-ARG-A1		2-11	the fight against the Mafia carried out by Cesare Mori 
+			N-ARG-A2		15-15	effective 
+			N-ARGM-CAU		16-33	mainly due to the special powers granted to him by Benito Mussolini when he was prefect in Sicily 
+	15	effective
+			sense:	effective.a.01
+	16	mainly
+			sense:	chiefly.r.01
+	17	due
+	18	to
+	19	the
+	20	special
+			sense:	particular.s.01
+	21	powers
+			sense:	office.n.04
+	22	granted
+			sense:	grant.v.05
+			prop:	grant.01
+			V		22-22	granted 
+			N-ARG-A1		19-21	the special powers 
+			N-ARG-A2		23-24	to him 
+			N-ARG-A0		25-27	by Benito Mussolini 
+			N-ARGM-TMP		28-33	when he was prefect in Sicily 
+	23	to
+	24	him
+			coref:	IDENT			2	24-24	him 
+	25	by
+	26	Benito
+			name:	PERSON				26-27	Benito Mussolini 
+	27	Mussolini
+	28	when
+	29	he
+			coref:	IDENT			2	29-29	he 
+	30	was
+			sense:	be.v.08
+			prop:	be.01
+			V		30-30	was 
+			N-ARGM-TMP		28-28	when 
+			N-ARG-A1		29-29	he 
+			N-ARG-A2		31-33	prefect in Sicily 
+	31	prefect
+			sense:	prefect.n.01
+	32	in
+	33	Sicily
+			coref:	IDENT			1	33-33	Sicily 
+			name:	LOCATION				33-33	Sicily 
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Italian film director Pasquale Squitieri made a movie in 1977 --- Il prefetto di ferro --- about his fight against the Mafia when he was prefect in Sicily .
+
+
+Treebanked sentence:
+--------------------
+Italian film director Pasquale Squitieri made a movie in 1977 --- Il prefetto di ferro --- about his fight against the Mafia when he was prefect in Sicily . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP (JJ Italian) (NN film) (NN director))
+    (PRN
+      (S
+        (NP (NNP Pasquale) (NNP Squitieri))
+        (VP (VBD made)
+          (NP (DT a) (NN movie))
+          (PP (IN in)
+            (NP
+              (NP (CD 1977))
+              (NFP ---)
+              (NP
+                (NP (NNP Il))
+                (NP (NN prefetto) (NN di) (NN ferro))))))))
+    (, ---)
+    (PP (IN about)
+      (NP (PRP$ his) (NN fight)))
+    (PP (IN against)
+      (NP (DT the) (NNP Mafia)))
+    (SBAR
+      (WHADVP (WRB when))
+      (S
+        (NP (PRP he))
+        (VP (VBD was)
+          (NP
+            (NP (NN prefect))
+            (PP (IN in)
+              (NP (NNP Sicily)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Italian
+			name:	NATIONALITY				0-0	Italian 
+	1	film
+			name:	TITLE				1-2	film director 
+			sense:	movie.n.01
+	2	director
+			sense:	director.n.03
+	3	Pasquale
+			name:	PERSON				3-4	Pasquale Squitieri 
+	4	Squitieri
+	5	made
+			sense:	create.v.05
+			prop:	make.01
+			V		5-5	made 
+			N-ARG-A0		0-4	Italian film director Pasquale Squitieri 
+			N-ARG-A1		6-7	a movie 
+			N-ARGM-TMP		8-9	in 1977 
+			C-ARG-A1		11-14	Il prefetto di ferro 
+			C-ARG-A1		16-27	about his fight against the Mafia when he was prefect in Sicily 
+	6	a
+	7	movie
+			sense:	movie.n.01
+	8	in
+	9	1977
+			name:	DATE				9-9	1977 
+	10	---
+	11	Il
+	12	prefetto
+	13	di
+	14	ferro
+	15	---
+	16	about
+	17	his
+			coref:	IDENT			2	17-17	his 
+	18	fight
+			sense:	fight.n.02
+	19	against
+	20	the
+			coref:	IDENT			0	20-21	the Mafia 
+	21	Mafia
+			name:	ORGANIZATION				21-21	Mafia 
+	22	when
+	23	he
+			coref:	IDENT			2	23-23	he 
+	24	was
+			sense:	be.v.08
+			prop:	be.01
+			V		24-24	was 
+			N-ARGM-TMP		22-22	when 
+			N-ARG-A1		23-23	he 
+			N-ARG-A2		25-27	prefect in Sicily 
+	25	prefect
+			sense:	prefect.n.01
+	26	in
+	27	Sicily
+			coref:	IDENT			1	27-27	Sicily 
+			name:	LOCATION				27-27	Sicily 
+	28	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.24-27	the Mafia in Sicily 
+				4.33-34	the Mafia 
+				5.5-6	the Mafia 
+				6.20-21	the Mafia 
+	Chain 1 (IDENT)
+				1.27-27	Sicily 
+				4.36-36	Sicily 
+				5.33-33	Sicily 
+				6.27-27	Sicily 
+	Chain 2 (IDENT)
+				1.0-0	He 
+				1.18-18	his 
+				2.0-0	He 
+				2.18-18	he 
+				2.25-25	he 
+				3.0-0	He 
+				4.0-0	He 
+				5.24-24	him 
+				5.29-29	he 
+				6.17-17	his 
+				6.23-23	he 
+	Chain 3 (IDENT)
+				2.14-15	Italy 's 
+				0.30-30	Italy 
+				1.4-4	Italy 
+

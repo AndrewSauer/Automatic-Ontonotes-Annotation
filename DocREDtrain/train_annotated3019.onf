@@ -1,0 +1,797 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Michael Allen Wall ( born February 1 , 1946 ) is an American former competition swimmer who participated in two consecutive Summer Olympics .
+
+
+Treebanked sentence:
+--------------------
+Michael Allen Wall ( born February 1 , 1946 ) is an American former competition swimmer who participated in two consecutive Summer Olympics . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Michael) (NNP Allen) (NNP Wall))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP February) (CD 1) (, ,) (CD 1946)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ American) (JJ former) (NN competition) (NN swimmer))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD participated)
+              (PP (IN in)
+                (NP (CD two)))
+              (NP-TMP (JJ consecutive) (NN Summer))))))
+      (NP (NNPS Olympics)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Michael
+			coref:	IDENT			3	0-2	Michael Allen Wall 
+			name:	PERSON				0-2	Michael Allen Wall 
+	1	Allen
+	2	Wall
+	3	(
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-2	Michael Allen Wall 
+			N-ARGM-TMP		5-8	February 1 , 1946 
+	5	February
+			name:	DATE				5-8	February 1 , 1946 
+	6	1
+	7	,
+	8	1946
+	9	)
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	Michael Allen Wall ( born February 1 , 1946 ) 
+			N-ARG-A2		11-22	an American former competition swimmer who participated in two consecutive Summer Olympics 
+	11	an
+	12	American
+			name:	NATIONALITY				12-12	American 
+	13	former
+			sense:	erstwhile.s.01
+	14	competition
+			sense:	contest.n.01
+	15	swimmer
+			name:	TITLE				15-15	swimmer 
+			sense:	swimmer.n.01
+	16	who
+	17	participated
+			sense:	participate.v.01
+			prop:	participate.01
+			V		17-17	participated 
+			N-ARG-A0		11-15	an American former competition swimmer 
+			R-ARG-A0		16-16	who 
+			N-ARG-A1		18-22	in two consecutive Summer Olympics 
+	18	in
+	19	two
+			name:	NUMBER				19-19	two 
+	20	consecutive
+			sense:	back-to-back.s.01
+	21	Summer
+			name:	DATE				21-21	Summer 
+			sense:	summer.n.01
+	22	Olympics
+			name:	MISC				22-22	Olympics 
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the 1964 Summer Olympics in Tokyo , Wall competed for the gold medal - winning U.S. team in the preliminary heats of the men 's 4×200-meter freestyle relay .
+
+
+Treebanked sentence:
+--------------------
+At the 1964 Summer Olympics in Tokyo , Wall competed for the gold medal - winning U.S. team in the preliminary heats of the men 's 4 × 200 - meter freestyle relay . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (DT the) (CD 1964) (NNP Summer) (NNPS Olympics))
+        (PP (IN in)
+          (NP (NNP Tokyo)))))
+    (, ,)
+    (NP (NNP Wall))
+    (VP (VBD competed)
+      (PP (IN for)
+        (NP
+          (NP (DT the)
+            (ADJP
+              (NP (NN gold) (NN medal))
+              (HYPH -) (VBG winning))
+            (NNP U.S.) (NN team))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (JJ preliminary) (NNS heats))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NNS men) (POS 's))
+                  (NML
+                    (QP (CD 4) (SYM ×) (CD 200))
+                    (HYPH -) (NN meter))
+                  (JJ freestyle) (NN relay))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+			name:	DATE				1-3	the 1964 Summer 
+	2	1964
+	3	Summer
+	4	Olympics
+			name:	MISC				4-4	Olympics 
+	5	in
+	6	Tokyo
+			name:	CITY				6-6	Tokyo 
+	7	,
+	8	Wall
+			coref:	IDENT			3	8-8	Wall 
+	9	competed
+			sense:	compete.v.01
+			prop:	compete.01
+			V		9-9	competed 
+			N-ARGM-LOC		0-6	At the 1964 Summer Olympics in Tokyo 
+			N-ARG-A0		8-8	Wall 
+			N-ARG-A2		10-17	for the gold medal - winning U.S. team 
+			N-ARGM-LOC		18-32	in the preliminary heats of the men 's 4 × 200 - meter freestyle relay 
+	10	for
+	11	the
+	12	gold
+			sense:	gold.n.01
+	13	medal
+			sense:	decoration.n.02
+	14	-
+	15	winning
+			sense:	win.v.01
+			prop:	win.01
+			V		15-15	winning 
+			N-ARG-A1		12-13	gold medal 
+			N-ARG-A0		16-17	U.S. team 
+	16	U.S.
+			name:	COUNTRY				16-16	U.S. 
+	17	team
+			sense:	team.n.01
+	18	in
+	19	the
+	20	preliminary
+			sense:	preliminary.s.01
+	21	heats
+			sense:	heat.n.06
+	22	of
+	23	the
+			coref:	IDENT			5	23-32	the men 's 4 × 200 - meter freestyle relay 
+			coref:	IDENT			6	23-25	the men 's 
+	24	men
+			sense:	man.n.01
+	25	's
+	26	4
+			name:	NUMBER				26-26	4 
+	27	×
+	28	200
+			name:	NUMBER				28-30	200 - meter 
+	29	-
+	30	meter
+			sense:	meter.n.01
+	31	freestyle
+	32	relay
+			sense:	relay.n.04
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Four years later at the 1968 Summer Olympics in Mexico City , he swam for the first - place U.S. teams in the qualifying heats of the men 's 4×100-meter freestyle relay and men 's 4×200-meter freestyle relay .
+
+
+Treebanked sentence:
+--------------------
+Four years later at the 1968 Summer Olympics in Mexico City , he swam for the first - place U.S. teams in the qualifying heats of the men 's 4 × 100 - meter freestyle relay and men 's 4 × 200 - meter freestyle relay . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP
+      (ADVP
+        (NP (CD Four) (NNS years))
+        (RB later)
+        (PP (IN at)
+          (NP (DT the) (CD 1968) (NNP Summer) (NNPS Olympics))))
+      (PP (IN in)
+        (NP (NNP Mexico) (NNP City))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD swam)
+      (PP (IN for)
+        (NP (DT the)
+          (NML (JJ first) (HYPH -) (NN place))
+          (NNP U.S.) (NNS teams)))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN qualifying) (NNS heats))
+          (PP (IN of)
+            (NP
+              (NP
+                (NP (DT the) (NNS men) (POS 's))
+                (NML
+                  (QP (CD 4) (SYM ×) (CD 100))
+                  (HYPH -) (NN meter))
+                (JJ freestyle) (NN relay))
+              (CC and)
+              (NP
+                (NP (NNS men) (POS 's))
+                (NML
+                  (QP (CD 4) (SYM ×) (CD 200))
+                  (HYPH -) (NN meter))
+                (JJ freestyle) (NN relay)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Four
+			name:	DATE				0-2	Four years later 
+	1	years
+			sense:	year.n.01
+	2	later
+			sense:	subsequently.r.01
+	3	at
+	4	the
+			name:	DATE				4-6	the 1968 Summer 
+	5	1968
+	6	Summer
+	7	Olympics
+			name:	MISC				7-7	Olympics 
+	8	in
+	9	Mexico
+			name:	COUNTRY				9-9	Mexico 
+	10	City
+			name:	LOCATION				10-10	City 
+	11	,
+	12	he
+	13	swam
+			sense:	swim.v.01
+			prop:	slam.01
+			V		13-13	swam 
+			N-ARGM-TMP		0-2	Four years later 
+			N-ARGM-LOC		3-10	at the 1968 Summer Olympics in Mexico City 
+			N-ARG-A0		12-12	he 
+			N-ARGM-GOL		14-20	for the first - place U.S. teams 
+			N-ARGM-LOC		21-45	in the qualifying heats of the men 's 4 × 100 - meter freestyle relay and men 's 4 × 200 - meter freestyle relay 
+	14	for
+	15	the
+	16	first
+			name:	ORDINAL				16-16	first 
+			sense:	first.s.05
+	17	-
+	18	place
+			sense:	place.n.15
+	19	U.S.
+			name:	COUNTRY				19-19	U.S. 
+	20	teams
+			sense:	team.n.01
+	21	in
+	22	the
+	23	qualifying
+			sense:	passing.n.07
+	24	heats
+			sense:	heat.n.06
+	25	of
+	26	the
+			coref:	IDENT			5	26-35	the men 's 4 × 100 - meter freestyle relay 
+			coref:	IDENT			6	26-28	the men 's 
+	27	men
+			sense:	man.n.01
+	28	's
+	29	4
+			name:	NUMBER				29-29	4 
+	30	×
+	31	100
+			name:	NUMBER				31-33	100 - meter 
+	32	-
+	33	meter
+			sense:	meter.n.01
+	34	freestyle
+	35	relay
+			sense:	relay.n.04
+	36	and
+	37	men
+			sense:	man.n.01
+	38	's
+	39	4
+			name:	NUMBER				39-39	4 
+	40	×
+	41	200
+			name:	NUMBER				41-43	200 - meter 
+	42	-
+	43	meter
+			sense:	meter.n.01
+	44	freestyle
+	45	relay
+			sense:	relay.n.04
+	46	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He did not , however , receive a medal for either performance ; until 1984 , under international swimming rules , relay swimmers were not eligible for a medal unless they swam in the event finals .
+
+
+Treebanked sentence:
+--------------------
+He did not , however , receive a medal for either performance ; until 1984 , under international swimming rules , relay swimmers were not eligible for a medal unless they swam in the event finals . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD did)
+        (ADVP (RB not))
+        (, ,)
+        (ADVP (RB however))
+        (, ,)
+        (S
+          (VP (VB receive)
+            (NP (DT a) (NN medal))
+            (PP (IN for)
+              (NP (CC either)
+                (NN performance)))))))
+    (: ;)
+    (S
+      (PP (IN until)
+        (NP (CD 1984)))
+      (, ,)
+      (PP (IN under)
+        (NP (JJ international) (NN swimming) (NNS rules)))
+      (, ,)
+      (NP (NN relay) (NNS swimmers))
+      (VP (VBD were) (RB not)
+        (ADJP (JJ eligible)
+          (PP (IN for)
+            (NP (DT a) (NN medal))))
+        (SBAR (IN unless)
+          (S
+            (NP (PRP they))
+            (VP (VBD swam)
+              (PP (IN in)
+                (NP (DT the) (NN event) (NNS finals))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	did
+			sense:	make.v.01
+			prop:	do.01
+			V		1-1	did 
+	2	not
+			sense:	not.r.01
+	3	,
+	4	however
+			sense:	however.r.01
+	5	,
+	6	receive
+			sense:	receive.v.01
+			prop:	receive.01
+			V		6-6	receive 
+			N-ARG-A0		0-0	He 
+			N-ARGM-NEG		2-2	not 
+			N-ARGM-DIS		4-4	however 
+			N-ARG-A1		7-8	a medal 
+	7	a
+	8	medal
+			sense:	decoration.n.02
+	9	for
+	10	either
+	11	performance
+			sense:	performance.n.04
+	12	;
+	13	until
+	14	1984
+			name:	DATE				14-14	1984 
+	15	,
+	16	under
+	17	international
+			sense:	international.a.01
+	18	swimming
+			sense:	swimming.n.01
+	19	rules
+			sense:	rule.n.01
+	20	,
+	21	relay
+			coref:	IDENT			4	21-22	relay swimmers 
+			sense:	relay.n.04
+	22	swimmers
+			sense:	swimmer.n.01
+	23	were
+			sense:	be.v.01
+			prop:	be.01
+			V		23-23	were 
+			N-ARGM-TMP		13-14	until 1984 
+			N-ARGM-LOC		16-19	under international swimming rules 
+			N-ARG-A1		21-22	relay swimmers 
+			N-ARGM-NEG		24-24	not 
+			N-ARG-A2		25-28	eligible for a medal 
+			N-ARGM-ADV		29-35	unless they swam in the event finals 
+	24	not
+			sense:	not.r.01
+	25	eligible
+			sense:	eligible.a.01
+	26	for
+	27	a
+	28	medal
+			sense:	decoration.n.02
+	29	unless
+	30	they
+			coref:	IDENT			4	30-30	they 
+	31	swam
+			sense:	swim.v.01
+			prop:	slam.01
+			V		31-31	swam 
+			N-ARG-A0		30-30	they 
+			N-ARGM-LOC		32-35	in the event finals 
+	32	in
+	33	the
+	34	event
+			sense:	event.n.01
+	35	finals
+			sense:	final.n.01
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Wall attended Stanford University , where he swam for the Stanford Cardinal swimming and diving team in National Collegiate Athletic Association ( NCAA ) competition .
+
+
+Treebanked sentence:
+--------------------
+Wall attended Stanford University , where he swam for the Stanford Cardinal swimming and diving team in National Collegiate Athletic Association ( NCAA ) competition . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Wall))
+    (VP (VBD attended)
+      (NP
+        (NML
+          (NML
+            (NML (NNP Stanford) (NNP University))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (PRP he))
+                (VP (VBD swam)
+                  (PP (IN for)
+                    (NP (DT the)
+                      (NML (NNP Stanford) (NNP Cardinal))
+                      (NML (NN swimming)
+                        (CC and)
+                        (NN diving))
+                      (NN team)))
+                  (PP (IN in)
+                    (NP
+                      (NML (NNP National) (NNP Collegiate))
+                      (JJ Athletic) (NN Association)))))))
+          (-LRB- -LRB-)
+          (NML (NNP NCAA)))
+        (-RRB- -RRB-) (NN competition)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Wall
+			coref:	IDENT			3	0-0	Wall 
+	1	attended
+			sense:	attend.v.01
+			prop:	attend.01
+			V		1-1	attended 
+			N-ARG-A0		0-0	Wall 
+			N-ARG-A1		2-24	Stanford University , where he swam for the Stanford Cardinal swimming and diving team in National Collegiate Athletic Association ( NCAA ) competition 
+	2	Stanford
+			name:	ORGANIZATION				2-3	Stanford University 
+	3	University
+	4	,
+	5	where
+	6	he
+	7	swam
+			sense:	swim.v.01
+			prop:	slam.01
+			V		7-7	swam 
+			N-ARGM-LOC		2-3	Stanford University 
+			R-ARGM-LOC		5-5	where 
+			N-ARG-A0		6-6	he 
+			N-ARGM-GOL		8-15	for the Stanford Cardinal swimming and diving team 
+			N-ARGM-LOC		16-24	in National Collegiate Athletic Association ( NCAA ) competition 
+	8	for
+	9	the
+	10	Stanford
+			name:	ORGANIZATION				10-11	Stanford Cardinal 
+	11	Cardinal
+	12	swimming
+			sense:	swimming.n.01
+	13	and
+	14	diving
+			sense:	diving.n.01
+	15	team
+			sense:	team.n.01
+	16	in
+	17	National
+			name:	ORGANIZATION				17-20	National Collegiate Athletic Association 
+	18	Collegiate
+	19	Athletic
+			sense:	athletic.a.01
+	20	Association
+			sense:	association.n.01
+	21	(
+	22	NCAA
+			coref:	IDENT			1	22-22	NCAA 
+			name:	ORGANIZATION				22-22	NCAA 
+	23	)
+	24	competition
+			sense:	contest.n.01
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Wall was a member of Stanford 's 1967 NCAA national championship relay team in the 800-yard relay , which set new NCAA and American records for the event with a time of 6:54.65 .
+
+
+Treebanked sentence:
+--------------------
+Wall was a member of Stanford 's 1967 NCAA national championship relay team in the 800 - yard relay , which set new NCAA and American records for the event with a time of 6:54.65 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Wall))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (NNP Stanford) (POS 's))
+            (CD 1967)
+            (NML (NNP NCAA) (JJ national) (NN championship))
+            (NN relay) (NN team)))
+        (PP (IN in)
+          (NP
+            (NP (DT the)
+              (NML (CD 800) (HYPH -) (NN yard))
+              (NN relay))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBD set)
+                  (NP (JJ new)
+                    (NML (NNP NCAA)
+                      (CC and)
+                      (NNP American))
+                    (NNS records))
+                  (PP (IN for)
+                    (NP (DT the) (NN event)))
+                  (PP (IN with)
+                    (NP
+                      (NP (DT a) (NN time))
+                      (PP (IN of)
+                        (NP (CD 6:54.65))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Wall
+			coref:	IDENT			3	0-0	Wall 
+			name:	PERSON				0-0	Wall 
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	Wall 
+			N-ARG-A2		2-34	a member of Stanford 's 1967 NCAA national championship relay team in the 800 - yard relay , which set new NCAA and American records for the event with a time of 6:54.65 
+	2	a
+	3	member
+			sense:	member.n.01
+	4	of
+	5	Stanford
+			coref:	IDENT			0	5-6	Stanford 's 
+			name:	ORGANIZATION				5-5	Stanford 
+	6	's
+	7	1967
+			coref:	IDENT			2	7-7	1967 
+			name:	DATE				7-7	1967 
+	8	NCAA
+			coref:	IDENT			1	8-8	NCAA 
+			name:	ORGANIZATION				8-8	NCAA 
+	9	national
+			sense:	national.a.03
+	10	championship
+			sense:	championship.n.02
+	11	relay
+			sense:	relay.n.04
+	12	team
+			sense:	team.n.01
+	13	in
+	14	the
+	15	800
+			name:	NUMBER				15-17	800 - yard 
+	16	-
+	17	yard
+			sense:	yard.n.01
+	18	relay
+			sense:	relay.n.04
+	19	,
+	20	which
+	21	set
+			sense:	set.v.04
+			prop:	set.02
+			V		21-21	set 
+			N-ARG-A0		14-18	the 800 - yard relay 
+			R-ARG-A0		20-20	which 
+			N-ARG-A1		22-29	new NCAA and American records for the event 
+	22	new
+			sense:	new.a.01
+	23	NCAA
+			coref:	IDENT			1	23-23	NCAA 
+			name:	ORGANIZATION				23-23	NCAA 
+	24	and
+	25	American
+			name:	NATIONALITY				25-25	American 
+	26	records
+			sense:	record.n.06
+	27	for
+	28	the
+	29	event
+			sense:	event.n.01
+	30	with
+	31	a
+	32	time
+			sense:	time.n.02
+	33	of
+	34	6:54.65
+			name:	TIME				34-34	6:54.65 
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was also a key points contributor in Stanford 's NCAA national team championship in 1967 .
+
+
+Treebanked sentence:
+--------------------
+He was also a key points contributor in Stanford 's NCAA national team championship in 1967 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (ADVP (RB also))
+      (NP
+        (NP (DT a) (JJ key) (NNS points) (NN contributor))
+        (PP (IN in)
+          (NP
+            (NP
+              (NP (NNP Stanford) (POS 's))
+              (NML (NNP NCAA) (JJ national) (NN team))
+              (NN championship))
+            (PP (IN in)
+              (NP (CD 1967)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			3	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARGM-ADV		2-2	also 
+			N-ARG-A2		3-15	a key points contributor in Stanford 's NCAA national team championship in 1967 
+	2	also
+			sense:	besides.r.02
+	3	a
+	4	key
+			sense:	cardinal.s.01
+	5	points
+			sense:	point.n.10
+	6	contributor
+			sense:	subscriber.n.03
+	7	in
+	8	Stanford
+			coref:	IDENT			0	8-9	Stanford 's 
+			name:	ORGANIZATION				8-8	Stanford 
+	9	's
+	10	NCAA
+			coref:	IDENT			1	10-10	NCAA 
+			name:	ORGANIZATION				10-10	NCAA 
+	11	national
+			sense:	national.a.03
+	12	team
+			sense:	team.n.01
+	13	championship
+			sense:	championship.n.02
+	14	in
+	15	1967
+			coref:	IDENT			2	15-15	1967 
+			name:	DATE				15-15	1967 
+	16	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.5-6	Stanford 's 
+				6.8-9	Stanford 's 
+	Chain 1 (IDENT)
+				4.22-22	NCAA 
+				5.8-8	NCAA 
+				5.23-23	NCAA 
+				6.10-10	NCAA 
+	Chain 2 (IDENT)
+				5.7-7	1967 
+				6.15-15	1967 
+	Chain 3 (IDENT)
+				0.0-2	Michael Allen Wall 
+				1.8-8	Wall 
+				4.0-0	Wall 
+				5.0-0	Wall 
+				6.0-0	He 
+	Chain 4 (IDENT)
+				3.21-22	relay swimmers 
+				3.30-30	they 
+	Chain 5 (IDENT)
+				1.23-32	the men 's 4 × 200 - meter freestyle relay 
+				2.26-35	the men 's 4 × 100 - meter freestyle relay 
+	Chain 6 (IDENT)
+				1.23-25	the men 's 
+				2.26-28	the men 's 
+

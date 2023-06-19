@@ -1,0 +1,533 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Brian Malzard Foss ( 25 October 1921 – 23 December 1997 ) was a British psychologist .
+
+
+Treebanked sentence:
+--------------------
+Brian Malzard Foss ( 25 October 1921 – 23 December 1997 ) was a British psychologist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Brian) (NNP Malzard) (NNP Foss))
+      (-LRB- -LRB-)
+      (NP
+        (NP (CD 25) (NNP October))
+        (NP
+          (NP
+            (QP (CD 1921) (SYM –) (CD 23)))
+          (NP-TMP (NNP December) (CD 1997))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT a) (JJ British) (NN psychologist)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Brian
+			coref:	IDENT			1	0-2	Brian Malzard Foss 
+			name:	PERSON				0-2	Brian Malzard Foss 
+	1	Malzard
+	2	Foss
+	3	(
+	4	25
+			coref:	IDENT			2	4-6	25 October 1921 
+			name:	DATE				4-6	25 October 1921 
+	5	October
+	6	1921
+	7	–
+	8	23
+			name:	DATE				8-10	23 December 1997 
+	9	December
+	10	1997
+	11	)
+	12	was
+			sense:	be.v.02
+			prop:	be.01
+			V		12-12	was 
+			N-ARG-A1		0-11	Brian Malzard Foss ( 25 October 1921 – 23 December 1997 ) 
+			N-ARG-A2		13-15	a British psychologist 
+	13	a
+	14	British
+			name:	NATIONALITY				14-14	British 
+	15	psychologist
+			name:	TITLE				15-15	psychologist 
+			sense:	psychologist.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Brian Foss was an academic psychologist .
+
+
+Treebanked sentence:
+--------------------
+Brian Foss was an academic psychologist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Brian) (NNP Foss))
+    (VP (VBD was)
+      (NP (DT an) (JJ academic) (NN psychologist)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Brian
+			coref:	IDENT			1	0-1	Brian Foss 
+			name:	PERSON				0-1	Brian Foss 
+	1	Foss
+	2	was
+			sense:	be.v.08
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	Brian Foss 
+			N-ARG-A2		3-5	an academic psychologist 
+	3	an
+	4	academic
+			sense:	academic.a.01
+	5	psychologist
+			name:	TITLE				5-5	psychologist 
+			sense:	psychologist.n.01
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was born in Whittlesey , Cambridgeshire on 25 October 1921 .
+
+
+Treebanked sentence:
+--------------------
+He was born in Whittlesey , Cambridgeshire on 25 October 1921 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP
+            (NP (NNP Whittlesey) (, ,) (NNP Cambridgeshire))
+            (PP (IN on)
+              (NP (CD 25)))))
+        (NP-TMP (NNP October) (CD 1921))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-6	in Whittlesey , Cambridgeshire 
+			N-ARGM-TMP		7-10	on 25 October 1921 
+	3	in
+	4	Whittlesey
+			name:	LOCATION				4-4	Whittlesey 
+	5	,
+	6	Cambridgeshire
+			name:	STATE_OR_PROVINCE				6-6	Cambridgeshire 
+	7	on
+	8	25
+			coref:	IDENT			2	8-10	25 October 1921 
+			name:	DATE				8-10	25 October 1921 
+	9	October
+	10	1921
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He died in London on 23 December 1997 .
+
+
+Treebanked sentence:
+--------------------
+He died in London on 23 December 1997 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD died)
+      (PP (IN in)
+        (NP (NNP London)))
+      (PP (IN on)
+        (NP (CD 23)))
+      (NP-TMP (NNP December) (CD 1997)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		2-3	in London 
+			N-ARGM-TMP		4-7	on 23 December 1997 
+	2	in
+	3	London
+			coref:	IDENT			0	3-3	London 
+			name:	CITY				3-3	London 
+	4	on
+	5	23
+			name:	DATE				5-7	23 December 1997 
+	6	December
+	7	1997
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His academic career began in 1948 as a lecturer at Institute of Experimental Psychology at University of Oxford , where he stayed until 1951 .
+
+
+Treebanked sentence:
+--------------------
+His academic career began in 1948 as a lecturer at Institute of Experimental Psychology at University of Oxford , where he stayed until 1951 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His) (JJ academic) (NN career))
+    (VP (VBD began)
+      (PP (IN in)
+        (NP (CD 1948)))
+      (PP (IN as)
+        (NP
+          (NP (DT a) (NN lecturer))
+          (PP (IN at)
+            (NP
+              (NP (NNP Institute))
+              (PP (IN of)
+                (NP (JJ Experimental) (NN Psychology)))))))
+      (PP (IN at)
+        (NP
+          (NP (NNP University))
+          (PP (IN of)
+            (NP (NNP Oxford)))))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP he))
+          (VP (VBD stayed)
+            (PP (IN until)
+              (NP (CD 1951)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			1	0-0	His 
+	1	academic
+			sense:	academic.a.01
+	2	career
+			sense:	career.n.01
+	3	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		3-3	began 
+			N-ARG-A1		0-2	His academic career 
+			N-ARGM-TMP		4-5	in 1948 
+			N-ARG-A2		6-23	as a lecturer at Institute of Experimental Psychology at University of Oxford , where he stayed until 1951 
+	4	in
+	5	1948
+			name:	DATE				5-5	1948 
+	6	as
+	7	a
+	8	lecturer
+			name:	TITLE				8-8	lecturer 
+			sense:	lecturer.n.02
+	9	at
+	10	Institute
+			name:	ORGANIZATION				10-17	Institute of Experimental Psychology at University of Oxford 
+	11	of
+	12	Experimental
+			sense:	experimental.a.01
+	13	Psychology
+			sense:	psychology.n.01
+	14	at
+	15	University
+	16	of
+	17	Oxford
+	18	,
+	19	where
+	20	he
+			coref:	IDENT			1	20-20	he 
+	21	stayed
+			sense:	stay.v.02
+			prop:	stay.01
+			V		21-21	stayed 
+			N-ARG-A3		19-19	where 
+			N-ARG-A1		20-20	he 
+			N-ARGM-TMP		22-23	until 1951 
+	22	until
+	23	1951
+			name:	DATE				23-23	1951 
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Following that he served as a lecturer at Birkbeck College , London from 1951 - 1964 .
+
+
+Treebanked sentence:
+--------------------
+Following that he served as a lecturer at Birkbeck College , London from 1951 - 1964 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (VP (VBG Following)
+      (SBAR (IN that)
+        (S
+          (NP (PRP he))
+          (VP (VBD served)
+            (PP (IN as)
+              (NP (DT a) (NN lecturer)))
+            (PP (IN at)
+              (NP
+                (NP (NNP Birkbeck) (NNP College))
+                (, ,)
+                (NP
+                  (NP (NNP London))
+                  (PP (IN from)
+                    (NP (CD 1951) (HYPH -) (CD 1964))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		0-0	Following 
+			N-ARG-A2		1-1	that 
+	1	that
+	2	he
+			coref:	IDENT			1	2-2	he 
+	3	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		3-3	served 
+			N-ARGM-TMP		0-1	Following that 
+			N-ARG-A0		2-2	he 
+			N-ARG-A1		4-6	as a lecturer 
+			N-ARGM-LOC		7-11	at Birkbeck College , London 
+			N-ARGM-TMP		12-15	from 1951 - 1964 
+	4	as
+	5	a
+	6	lecturer
+			name:	TITLE				6-6	lecturer 
+			sense:	lecturer.n.02
+	7	at
+	8	Birkbeck
+			name:	ORGANIZATION				8-9	Birkbeck College 
+	9	College
+	10	,
+	11	London
+			coref:	IDENT			0	11-11	London 
+			name:	CITY				11-11	London 
+	12	from
+	13	1951
+			name:	DATE				13-15	1951 - 1964 
+	14	-
+	15	1964
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He became Professor of Educational Psychology at Institute of Education , London from 1964 - 1968 , and Professor of Psychology at Bedford College , London from 1968 – 85 , Royal Holloway and at Bedford New College , London from 1985 - 1987 .
+
+
+Treebanked sentence:
+--------------------
+He became Professor of Educational Psychology at Institute of Education , London from 1964 - 1968 , and Professor of Psychology at Bedford College , London from 1968 – 85 , Royal Holloway and at Bedford New College , London from 1985 - 1987 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD became)
+        (NP
+          (NP (NNP Professor))
+          (PP (IN of)
+            (NP (NNP Educational) (NN Psychology))))
+        (PP (IN at)
+          (NP
+            (NP (NNP Institute))
+            (PP (IN of)
+              (NP (NNP Education))))))
+      (, ,)
+      (VP
+        (NP
+          (NP
+            (NP (NNP London))
+            (PP (IN from)
+              (NP (CD 1964) (HYPH -) (CD 1968))))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (NNP Professor))
+            (PP (IN of)
+              (NP (NN Psychology)))))
+        (PP (IN at)
+          (NP (NNP Bedford) (NNP College))))
+      (, ,)
+      (VP
+        (NP (NNP London))
+        (PP (IN from)
+          (NP
+            (NP (CD 1968) (SYM –) (CD 85))
+            (, ,)
+            (NP (NNP Royal) (NNP Holloway)))))
+      (CC and)
+      (VP
+        (PP (IN at)
+          (NP (NNP Bedford) (NNP New) (NNP College)))
+        (, ,)
+        (NP
+          (NP (NNP London))
+          (PP (IN from)
+            (NP (CD 1985) (HYPH -) (CD 1987))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	became
+			sense:	become.v.02
+			prop:	become.01
+			V		1-1	became 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-43	Professor of Educational Psychology at Institute of Education , London from 1964 - 1968 , and Professor of Psychology at Bedford College , London from 1968 – 85 , Royal Holloway and at Bedford New College , London from 1985 - 1987 
+	2	Professor
+			name:	TITLE				2-2	Professor 
+	3	of
+	4	Educational
+			name:	ORGANIZATION				4-9	Educational Psychology at Institute of Education 
+	5	Psychology
+			sense:	psychology.n.01
+	6	at
+	7	Institute
+	8	of
+	9	Education
+	10	,
+	11	London
+			name:	CITY				11-11	London 
+	12	from
+	13	1964
+			name:	DATE				13-15	1964 - 1968 
+	14	-
+	15	1968
+	16	,
+	17	and
+	18	Professor
+			name:	TITLE				18-18	Professor 
+	19	of
+	20	Psychology
+			sense:	psychology.n.01
+	21	at
+	22	Bedford
+			name:	ORGANIZATION				22-23	Bedford College 
+	23	College
+	24	,
+	25	London
+			name:	CITY				25-25	London 
+	26	from
+	27	1968
+			name:	DATE				27-27	1968 
+	28	–
+	29	85
+			name:	NUMBER				29-29	85 
+	30	,
+	31	Royal
+			name:	PERSON				31-32	Royal Holloway 
+	32	Holloway
+	33	and
+	34	at
+	35	Bedford
+			name:	ORGANIZATION				35-37	Bedford New College 
+	36	New
+	37	College
+	38	,
+	39	London
+			coref:	IDENT			0	39-39	London 
+			name:	CITY				39-39	London 
+	40	from
+	41	1985
+			name:	DATE				41-43	1985 - 1987 
+	42	-
+	43	1987
+	44	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.3-3	London 
+				5.11-11	London 
+				6.39-39	London 
+	Chain 1 (IDENT)
+				0.0-2	Brian Malzard Foss 
+				1.0-1	Brian Foss 
+				2.0-0	He 
+				3.0-0	He 
+				4.0-0	His 
+				4.20-20	he 
+				5.2-2	he 
+				6.0-0	He 
+	Chain 2 (IDENT)
+				0.4-6	25 October 1921 
+				2.8-10	25 October 1921 
+

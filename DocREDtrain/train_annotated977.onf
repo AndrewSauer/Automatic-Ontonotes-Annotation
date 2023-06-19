@@ -1,0 +1,558 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Dormont is a borough in Allegheny County , Pennsylvania , United States and is part of the Pittsburgh Metro Area .
+
+
+Treebanked sentence:
+--------------------
+Dormont is a borough in Allegheny County , Pennsylvania , United States and is part of the Pittsburgh Metro Area . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Dormont))
+    (VP
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (NN borough))
+          (PP (IN in)
+            (NP (NNP Allegheny) (NNP County) (, ,) (NNP Pennsylvania) (, ,) (NNP United) (NNP States)))))
+      (CC and)
+      (VP (VBZ is)
+        (NP
+          (NP (NN part))
+          (PP (IN of)
+            (NP (DT the) (NNP Pittsburgh) (NNP Metro) (NNP Area))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Dormont
+			name:	PERSON				0-0	Dormont 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Dormont 
+			N-ARG-A2		2-11	a borough in Allegheny County , Pennsylvania , United States 
+	2	a
+	3	borough
+			sense:	borough.n.01
+	4	in
+	5	Allegheny
+			name:	LOCATION				5-6	Allegheny County 
+	6	County
+	7	,
+	8	Pennsylvania
+			name:	STATE_OR_PROVINCE				8-8	Pennsylvania 
+	9	,
+	10	United
+			name:	COUNTRY				10-11	United States 
+	11	States
+	12	and
+	13	is
+			sense:	be.v.01
+			prop:	be.01
+			V		13-13	is 
+			N-ARG-A1		0-0	Dormont 
+			N-ARG-A2		14-19	part of the Pittsburgh Metro Area 
+	14	part
+			sense:	part.n.01
+	15	of
+	16	the
+	17	Pittsburgh
+			name:	CITY				17-18	Pittsburgh Metro 
+	18	Metro
+	19	Area
+			name:	LOCATION				19-19	Area 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The population was 8,593 at the 2010 census .
+
+
+Treebanked sentence:
+--------------------
+The population was 8,593 at the 2010 census . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN population))
+    (VP (VBD was)
+      (NP
+        (NP (CD 8,593))
+        (PP (IN at)
+          (NP (DT the) (CD 2010) (NN census)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	population
+			sense:	population.n.04
+	2	was
+			sense:	equal.v.01
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	The population 
+			N-ARG-A2		3-3	8,593 
+			N-ARGM-TMP		4-7	at the 2010 census 
+	3	8,593
+			name:	NUMBER				3-3	8,593 
+	4	at
+	5	the
+	6	2010
+			name:	DATE				6-6	2010 
+	7	census
+			sense:	census.n.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Dormont is a home to a diverse population including young professionals , working families , and retirees .
+
+
+Treebanked sentence:
+--------------------
+Dormont is a home to a diverse population including young professionals , working families , and retirees . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Dormont))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN home))
+        (PP (IN to)
+          (NP
+            (NP (DT a) (JJ diverse) (NN population))
+            (PP (VBG including)
+              (NP
+                (NP (JJ young) (NNS professionals))
+                (, ,)
+                (NP (VBG working) (NNS families))
+                (, ,)
+                (CC and)
+                (NP (NNS retirees))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Dormont
+			name:	PERSON				0-0	Dormont 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Dormont 
+			N-ARG-A2		2-16	a home to a diverse population including young professionals , working families , and retirees 
+	2	a
+	3	home
+			sense:	home.n.01
+	4	to
+	5	a
+	6	diverse
+			sense:	divers.s.01
+	7	population
+			sense:	population.n.01
+	8	including
+			sense:	include.v.01
+			prop:	include.01
+			V		8-8	including 
+			N-ARG-A2		5-7	a diverse population 
+			N-ARG-A1		9-16	young professionals , working families , and retirees 
+	9	young
+			sense:	young.a.01
+	10	professionals
+			sense:	professional.n.01
+	11	,
+	12	working
+			sense:	work.v.02
+			prop:	work.01
+			V		12-12	working 
+			N-ARG-A0		13-13	families 
+	13	families
+			sense:	family.n.01
+	14	,
+	15	and
+	16	retirees
+			sense:	retiree.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Dormont 's economic stability can be attributed to this diversity along with its close proximity to jobs in Downtown Pittsburgh , access to The " T " ( Pittsburgh Light Rail ) , diverse housing stock , and historically low crime rates .
+
+
+Treebanked sentence:
+--------------------
+Dormont 's economic stability can be attributed to this diversity along with its close proximity to jobs in Downtown Pittsburgh , access to The " T " ( Pittsburgh Light Rail ) , diverse housing stock , and historically low crime rates . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Dormont) (POS 's))
+      (JJ economic) (NN stability))
+    (VP (MD can)
+      (VP (VB be)
+        (VP (VBN attributed)
+          (PP (IN to)
+            (NP
+              (NP (DT this) (NN diversity))
+              (ADVP (IN along)
+                (PP (IN with)
+                  (NP (PRP$ its) (JJ close) (NN proximity))))))
+          (PP (IN to)
+            (NP
+              (NP (NNS jobs))
+              (PP (IN in)
+                (NP (NN Downtown)
+                  (NML
+                    (NML (NNP Pittsburgh))
+                    (, ,)
+                    (NML
+                      (NML
+                        (NML (NN access))
+                        (PP (IN to)
+                          (NP (DT The) (`` ") (NN T) ('' "))))
+                      (-LRB- -LRB-)
+                      (NML (NNP Pittsburgh) (NNP Light) (NNP Rail))
+                      (-RRB- -RRB-))
+                    (, ,)
+                    (NML (JJ diverse) (NN housing) (NN stock))
+                    (, ,)
+                    (CC and)
+                    (NML
+                      (ADJP (RB historically) (JJ low))
+                      (NN crime)))
+                  (NNS rates))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Dormont
+			name:	PERSON				0-0	Dormont 
+	1	's
+	2	economic
+			sense:	economic.a.01
+	3	stability
+			sense:	constancy.n.01
+	4	can
+	5	be
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	be 
+	6	attributed
+			sense:	impute.v.01
+			prop:	attribute.01
+			V		6-6	attributed 
+			N-ARG-A1		0-3	Dormont 's economic stability 
+			N-ARGM-MOD		4-4	can 
+			N-ARG-A2		7-41	to this diversity along with its close proximity to jobs in Downtown Pittsburgh , access to The " T " ( Pittsburgh Light Rail ) , diverse housing stock , and historically low crime rates 
+	7	to
+	8	this
+	9	diversity
+			sense:	diverseness.n.01
+	10	along
+	11	with
+	12	its
+	13	close
+			sense:	close.a.01
+	14	proximity
+			sense:	proximity.n.01
+	15	to
+	16	jobs
+			sense:	occupation.n.01
+	17	in
+	18	Downtown
+			name:	LOCATION				18-18	Downtown 
+			sense:	business_district.n.01
+	19	Pittsburgh
+			name:	CITY				19-19	Pittsburgh 
+	20	,
+	21	access
+			sense:	access.n.03
+	22	to
+	23	The
+	24	"
+	25	T
+			sense:	t.n.04
+	26	"
+	27	(
+	28	Pittsburgh
+			name:	ORGANIZATION				28-30	Pittsburgh Light Rail 
+	29	Light
+	30	Rail
+	31	)
+	32	,
+	33	diverse
+			sense:	divers.s.01
+	34	housing
+			sense:	housing.n.01
+	35	stock
+			sense:	stock.n.02
+	36	,
+	37	and
+	38	historically
+			sense:	historically.r.01
+	39	low
+			sense:	low.a.01
+	40	crime
+			sense:	crime.n.01
+	41	rates
+			sense:	rate.n.01
+	42	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Dormont is mixed use and urban and features a pedestrian friendly business district , with bars , coffee shops , restaurants , and retail stores .
+
+
+Treebanked sentence:
+--------------------
+Dormont is mixed use and urban and features a pedestrian friendly business district , with bars , coffee shops , restaurants , and retail stores . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Dormont))
+    (VP
+      (VP (VBZ is)
+        (ADJP (JJ mixed)
+          (NP (NN use)
+            (CC and)
+            (JJ urban))))
+      (CC and)
+      (VP (VBZ features)
+        (NP
+          (NP (DT a)
+            (ADJP (NN pedestrian) (JJ friendly))
+            (NN business) (NN district))
+          (, ,)
+          (PP (IN with)
+            (NP
+              (NP (NNS bars))
+              (, ,)
+              (NP (NN coffee) (NNS shops))
+              (, ,)
+              (NP (NNS restaurants))
+              (, ,)
+              (CC and)
+              (NP (JJ retail) (NNS stores)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Dormont
+			name:	PERSON				0-0	Dormont 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Dormont 
+			N-ARG-A2		2-5	mixed use and urban 
+	2	mixed
+			sense:	assorted.s.01
+	3	use
+			sense:	function.n.02
+	4	and
+	5	urban
+			sense:	urban.a.02
+	6	and
+	7	features
+			sense:	have.v.02
+			prop:	feature.01
+			V		7-7	features 
+			N-ARG-A0		0-0	Dormont 
+			N-ARG-A1		8-24	a pedestrian friendly business district , with bars , coffee shops , restaurants , and retail stores 
+	8	a
+	9	pedestrian
+			sense:	pedestrian.n.01
+	10	friendly
+			sense:	friendly.a.01
+	11	business
+			sense:	commercial_enterprise.n.02
+	12	district
+			sense:	district.n.01
+	13	,
+	14	with
+	15	bars
+			sense:	barroom.n.01
+	16	,
+	17	coffee
+			sense:	coffee.n.01
+	18	shops
+			sense:	shop.n.01
+	19	,
+	20	restaurants
+			sense:	restaurant.n.01
+	21	,
+	22	and
+	23	retail
+	24	stores
+			sense:	shop.n.01
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is famous for one of the largest municipal pools in Pennsylvania , the historic Dormont Pool .
+
+
+Treebanked sentence:
+--------------------
+It is famous for one of the largest municipal pools in Pennsylvania , the historic Dormont Pool . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP (JJ famous)
+        (PP (IN for)
+          (NP
+            (NP (CD one))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (JJS largest) (JJ municipal) (NNS pools))
+                (PP (IN in)
+                  (NP
+                    (NP (NNP Pennsylvania))
+                    (, ,)
+                    (NP (DT the) (JJ historic) (NNP Dormont) (NNP Pool))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-16	famous for one of the largest municipal pools in Pennsylvania , the historic Dormont Pool 
+	2	famous
+			sense:	celebrated.s.01
+	3	for
+	4	one
+			name:	NUMBER				4-4	one 
+	5	of
+	6	the
+	7	largest
+			sense:	large.a.01
+	8	municipal
+			sense:	municipal.a.01
+	9	pools
+			sense:	pool.n.01
+	10	in
+	11	Pennsylvania
+			name:	STATE_OR_PROVINCE				11-11	Pennsylvania 
+	12	,
+	13	the
+	14	historic
+			sense:	historic.s.01
+	15	Dormont
+			name:	CITY				15-15	Dormont 
+	16	Pool
+			name:	LOCATION				16-16	Pool 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Loosely translated , Dormont means " Mountain of Gold " in French .
+
+
+Treebanked sentence:
+--------------------
+Loosely translated , Dormont means " Mountain of Gold " in French . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (ADVP (RB Loosely))
+      (VP (VBN translated)))
+    (, ,)
+    (NP (NNP Dormont))
+    (VP (VBZ means)
+      (NP (`` ")
+        (NP (NNP Mountain))
+        (PP (IN of)
+          (NP (NNP Gold)))
+        ('' "))
+      (PP (IN in)
+        (NP (NNP French))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Loosely
+			sense:	broadly.r.01
+	1	translated
+			sense:	translate.v.01
+			prop:	translate.01
+			V		1-1	translated 
+			N-ARGM-MNR		0-0	Loosely 
+			N-ARG-A1		3-3	Dormont 
+	2	,
+	3	Dormont
+			name:	PERSON				3-3	Dormont 
+	4	means
+			sense:	mean.v.03
+			prop:	mean.01
+			V		4-4	means 
+			R-ARG-A0		0-0	Loosely 
+			N-ARG-A0		3-3	Dormont 
+			N-ARG-A1		5-9	" Mountain of Gold " 
+	5	"
+	6	Mountain
+	7	of
+	8	Gold
+	9	"
+	10	in
+	11	French
+			name:	NATIONALITY				11-11	French 
+	12	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+

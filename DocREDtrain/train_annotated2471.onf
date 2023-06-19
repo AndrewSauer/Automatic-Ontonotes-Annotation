@@ -1,0 +1,962 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bergen Airport , Sandviken ( ) is a water airport and heliport situated in the Sandviken neighborhood of Bergen , Norway .
+
+
+Treebanked sentence:
+--------------------
+Bergen Airport , Sandviken ( ) is a water airport and heliport situated in the Sandviken neighborhood of Bergen , Norway . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bergen) (NNP Airport) (, ,) (NNP Sandviken) (-LRB- -LRB-) (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN water) (NN airport)
+          (CC and)
+          (NN heliport))
+        (VP (VBN situated)
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NNP Sandviken) (NN neighborhood))
+              (PP (IN of)
+                (NP (NNP Bergen) (, ,) (NNP Norway))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bergen
+			coref:	IDENT			3	0-1	Bergen Airport 
+			name:	CITY				0-0	Bergen 
+	1	Airport
+			name:	LOCATION				1-1	Airport 
+	2	,
+	3	Sandviken
+			coref:	IDENT			0	3-3	Sandviken 
+			name:	PERSON				3-3	Sandviken 
+	4	(
+	5	)
+	6	is
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	is 
+			N-ARG-A1		0-5	Bergen Airport , Sandviken ( ) 
+			N-ARG-A2		7-20	a water airport and heliport situated in the Sandviken neighborhood of Bergen , Norway 
+	7	a
+	8	water
+			sense:	body_of_water.n.01
+	9	airport
+			sense:	airport.n.01
+	10	and
+	11	heliport
+			sense:	heliport.n.01
+	12	situated
+			sense:	situate.v.01
+			prop:	situate.01
+			V		12-12	situated 
+			N-ARG-A1		7-11	a water airport and heliport 
+			N-ARG-A2		13-20	in the Sandviken neighborhood of Bergen , Norway 
+	13	in
+	14	the
+	15	Sandviken
+			coref:	IDENT			0	15-15	Sandviken 
+			name:	CITY				15-15	Sandviken 
+	16	neighborhood
+			sense:	neighborhood.n.04
+	17	of
+	18	Bergen
+			name:	CITY				18-18	Bergen 
+	19	,
+	20	Norway
+			name:	COUNTRY				20-20	Norway 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The aerodrome is located on the artificial peninsula of Kristiansholm .
+
+
+Treebanked sentence:
+--------------------
+The aerodrome is located on the artificial peninsula of Kristiansholm . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN aerodrome))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (JJ artificial) (NN peninsula))
+            (PP (IN of)
+              (NP (NNP Kristiansholm)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-1	The aerodrome 
+	1	aerodrome
+			sense:	airport.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		3-3	located 
+			N-ARG-A1		0-1	The aerodrome 
+			N-ARGM-LOC		4-9	on the artificial peninsula of Kristiansholm 
+	4	on
+	5	the
+	6	artificial
+			sense:	artificial.a.01
+	7	peninsula
+			sense:	peninsula.n.01
+	8	of
+	9	Kristiansholm
+			name:	LOCATION				9-9	Kristiansholm 
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is currently serving seaplane and helicopters operated by Fonnafly aimed at air taxi services at cruise ship tourists .
+
+
+Treebanked sentence:
+--------------------
+It is currently serving seaplane and helicopters operated by Fonnafly aimed at air taxi services at cruise ship tourists . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADVP (RB currently))
+      (VP (VBG serving)
+        (NP
+          (NP (NN seaplane)
+            (CC and)
+            (NNS helicopters))
+          (VP (VBN operated)
+            (PP (IN by)
+              (NP
+                (NP (NNP Fonnafly))
+                (VP (VBN aimed)
+                  (PP (IN at)
+                    (NP
+                      (NML (NN air) (NN taxi))
+                      (NNS services)))
+                  (PP (IN at)
+                    (NP (NN cruise) (NN ship) (NNS tourists))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	currently
+			name:	DATE				2-2	currently 
+			sense:	presently.r.02
+	3	serving
+			sense:	service.v.01
+			prop:	serve.01
+			V		3-3	serving 
+			N-ARG-A0		0-0	It 
+			N-ARGM-TMP		2-2	currently 
+			N-ARG-A1		4-18	seaplane and helicopters operated by Fonnafly aimed at air taxi services at cruise ship tourists 
+	4	seaplane
+			sense:	seaplane.n.01
+	5	and
+	6	helicopters
+			sense:	helicopter.n.01
+	7	operated
+			sense:	operate.v.01
+			prop:	operate.01
+			V		7-7	operated 
+			N-ARG-A1		4-6	seaplane and helicopters 
+			N-ARG-A0		8-9	by Fonnafly 
+	8	by
+	9	Fonnafly
+			name:	PERSON				9-9	Fonnafly 
+	10	aimed
+			sense:	calculate.v.05
+			prop:	aim.02
+			V		10-10	aimed 
+			N-ARG-A1		4-9	seaplane and helicopters operated by Fonnafly 
+			N-ARG-A2		11-18	at air taxi services at cruise ship tourists 
+	11	at
+	12	air
+			sense:	air_travel.n.01
+	13	taxi
+			sense:	cab.n.03
+	14	services
+			sense:	service.n.01
+	15	at
+	16	cruise
+			sense:	cruise.n.01
+	17	ship
+			sense:	ship.n.01
+	18	tourists
+			sense:	tourist.n.01
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The airport is owned by Bergen Municipality through Bergen Port Authority and is part of the Bergen Port .
+
+
+Treebanked sentence:
+--------------------
+The airport is owned by Bergen Municipality through Bergen Port Authority and is part of the Bergen Port . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN airport))
+    (VP
+      (VP (VBZ is)
+        (VP (VBN owned)
+          (PP (IN by)
+            (NP (NNP Bergen) (NNP Municipality)))
+          (PP (IN through)
+            (NP (NNP Bergen) (NNP Port) (NNP Authority)))))
+      (CC and)
+      (VP (VBZ is)
+        (NP
+          (NP (NN part))
+          (PP (IN of)
+            (NP (DT the) (NNP Bergen) (NNP Port))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-1	The airport 
+	1	airport
+			sense:	airport.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		3-3	owned 
+			N-ARG-A1		0-1	The airport 
+			N-ARG-A0		4-6	by Bergen Municipality 
+			N-ARGM-MNR		7-10	through Bergen Port Authority 
+	4	by
+	5	Bergen
+			name:	ORGANIZATION				5-6	Bergen Municipality 
+	6	Municipality
+	7	through
+	8	Bergen
+			name:	ORGANIZATION				8-10	Bergen Port Authority 
+	9	Port
+	10	Authority
+	11	and
+	12	is
+			sense:	be.v.01
+			prop:	be.01
+			V		12-12	is 
+			N-ARG-A1		0-1	The airport 
+			N-ARG-A2		13-17	part of the Bergen Port 
+	13	part
+			sense:	part.n.01
+	14	of
+	15	the
+	16	Bergen
+			name:	CITY				16-16	Bergen 
+	17	Port
+			name:	LOCATION				17-17	Port 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Operations are carried out by Fonnafly .
+
+
+Treebanked sentence:
+--------------------
+Operations are carried out by Fonnafly . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Operations))
+    (VP (VBP are)
+      (VP (VBN carried)
+        (PRT (RP out))
+        (PP (IN by)
+          (NP (NNP Fonnafly)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Operations
+	1	are
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	are 
+	2	carried
+			sense:	impart.v.03
+			prop:	carry.03
+			V		2-2	carried 
+			N-ARG-A1		0-0	Operations 
+			N-ARG-A0		4-5	by Fonnafly 
+	3	out
+	4	by
+	5	Fonnafly
+			name:	PERSON				5-5	Fonnafly 
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The airport opened in 1935 , although it was not connected to land until 1938 .
+
+
+Treebanked sentence:
+--------------------
+The airport opened in 1935 , although it was not connected to land until 1938 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN airport))
+    (VP (VBN opened)
+      (PP (IN in)
+        (NP (CD 1935)))
+      (, ,)
+      (SBAR (IN although)
+        (S
+          (NP (PRP it))
+          (VP (VBD was) (RB not)
+            (VP (VBN connected)
+              (PP (IN to)
+                (NP (NN land)))
+              (PP (IN until)
+                (NP (CD 1938))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-1	The airport 
+	1	airport
+			sense:	airport.n.01
+	2	opened
+			sense:	open.v.02
+			prop:	open.01
+			V		2-2	opened 
+			N-ARG-A1		0-1	The airport 
+			N-ARGM-TMP		3-4	in 1935 
+			N-ARGM-ADV		6-14	although it was not connected to land until 1938 
+	3	in
+	4	1935
+			name:	DATE				4-4	1935 
+	5	,
+	6	although
+	7	it
+			coref:	IDENT			3	7-7	it 
+	8	was
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	was 
+	9	not
+			sense:	not.r.01
+	10	connected
+			sense:	connect.v.01
+			prop:	connect.01
+			V		10-10	connected 
+			N-ARG-A1		7-7	it 
+			N-ARGM-NEG		9-9	not 
+			N-ARG-A2		11-12	to land 
+			N-ARGM-TMP		13-14	until 1938 
+	11	to
+	12	land
+			sense:	land.n.04
+	13	until
+	14	1938
+			name:	DATE				14-14	1938 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Services were first carried out by Norwegian Air Lines on a coastal route to Oslo .
+
+
+Treebanked sentence:
+--------------------
+Services were first carried out by Norwegian Air Lines on a coastal route to Oslo . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNS Services))
+    (VP (VBD were)
+      (ADVP (RB first))
+      (VP (VBN carried)
+        (PRT (RP out))
+        (PP (IN by)
+          (NP
+            (NP
+              (NML (NNP Norwegian) (NNP Air))
+              (NNP Lines))
+            (PP (IN on)
+              (NP (DT a) (JJ coastal) (NN route)))))
+        (PP (IN to)
+          (NP (NNP Oslo)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Services
+			sense:	service.n.01
+	1	were
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	were 
+	2	first
+			name:	ORDINAL				2-2	first 
+			sense:	first.r.02
+	3	carried
+			sense:	carry.v.25
+			prop:	carry.03
+			V		3-3	carried 
+			N-ARG-A1		0-0	Services 
+			N-ARGM-TMP		2-2	first 
+			N-ARG-A0		5-8	by Norwegian Air Lines 
+			N-ARGM-LOC		9-14	on a coastal route to Oslo 
+	4	out
+	5	by
+	6	Norwegian
+			name:	NATIONALITY				6-6	Norwegian 
+	7	Air
+	8	Lines
+	9	on
+	10	a
+	11	coastal
+			sense:	coastal.a.02
+	12	route
+			sense:	path.n.03
+	13	to
+	14	Oslo
+			name:	CITY				14-14	Oslo 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+From 1936 also a north - bound service was introduced .
+
+
+Treebanked sentence:
+--------------------
+From 1936 also a north - bound service was introduced . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN From)
+      (NP
+        (NP (CD 1936))
+        (ADVP (RB also))))
+    (NP (DT a)
+      (ADJP (NN north) (HYPH -) (VBN bound))
+      (NN service))
+    (VP (VBD was)
+      (VP (VBN introduced)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	From
+	1	1936
+			name:	DATE				1-1	1936 
+	2	also
+			sense:	besides.r.02
+	3	a
+	4	north
+			sense:	north.n.03
+	5	-
+	6	bound
+			sense:	tie.v.01
+			prop:	bind.01
+			V		6-6	bound 
+	7	service
+			sense:	service.n.01
+	8	was
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	was 
+	9	introduced
+			sense:	introduce.v.02
+			prop:	introduce.02
+			V		9-9	introduced 
+			N-ARGM-TMP		0-1	From 1936 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A1		3-7	a north - bound service 
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sandviken was taken over by Luftwaffe during the World War II , but little used .
+
+
+Treebanked sentence:
+--------------------
+Sandviken was taken over by Luftwaffe during the World War II , but little used . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (S
+      (NP (NNP Sandviken))
+      (VP (VBD was)
+        (VP (VBN taken)
+          (PRT (RP over))
+          (PP (IN by)
+            (NP (NNP Luftwaffe)))
+          (PP (IN during)
+            (NP (DT the) (NNP World) (NNP War) (NNP II))))))
+    (, ,)
+    (CC but)
+    (ADJP
+      (NP (JJ little))
+      (JJ used))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sandviken
+			coref:	IDENT			0	0-0	Sandviken 
+			name:	PERSON				0-0	Sandviken 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	taken
+			sense:	take.v.21
+			prop:	take.12
+			V		2-2	taken 
+			N-ARG-A1		0-0	Sandviken 
+			N-ARG-A0		4-5	by Luftwaffe 
+			N-ARGM-TMP		6-10	during the World War II 
+	3	over
+	4	by
+	5	Luftwaffe
+			name:	ORGANIZATION				5-5	Luftwaffe 
+	6	during
+	7	the
+	8	World
+			name:	MISC				8-8	World 
+	9	War
+			name:	CAUSE_OF_DEATH				9-9	War 
+	10	II
+			name:	MISC				10-10	II 
+	11	,
+	12	but
+	13	little
+			sense:	little.a.02
+	14	used
+			sense:	used.a.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Norwegian Air Lines resumed services in 1946 and the following year West Norway Airlines was established with their base at Sandviken .
+
+
+Treebanked sentence:
+--------------------
+Norwegian Air Lines resumed services in 1946 and the following year West Norway Airlines was established with their base at Sandviken . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NML (NNP Norwegian) (NNP Air))
+        (NNP Lines))
+      (VP (VBD resumed)
+        (NP (NNS services))
+        (PP (IN in)
+          (NP (CD 1946)))))
+    (CC and)
+    (S
+      (NP-TMP (DT the) (JJ following) (NN year))
+      (NP (NNP West) (NNP Norway) (NNPS Airlines))
+      (VP (VBD was)
+        (VP (VBN established)
+          (PP (IN with)
+            (NP (PRP$ their) (NN base)))
+          (PP (IN at)
+            (NP (NNP Sandviken))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Norwegian
+			name:	NATIONALITY				0-0	Norwegian 
+	1	Air
+			name:	ORGANIZATION				1-2	Air Lines 
+	2	Lines
+	3	resumed
+			sense:	resume.v.01
+			prop:	resume.01
+			V		3-3	resumed 
+			N-ARG-A0		0-2	Norwegian Air Lines 
+			N-ARG-A1		4-4	services 
+			N-ARGM-TMP		5-6	in 1946 
+	4	services
+			sense:	service.n.01
+	5	in
+	6	1946
+			name:	DATE				6-6	1946 
+	7	and
+	8	the
+			name:	DATE				8-10	the following year 
+	9	following
+			sense:	following.s.02
+	10	year
+			sense:	year.n.01
+	11	West
+			coref:	IDENT			1	11-13	West Norway Airlines 
+			name:	ORGANIZATION				11-13	West Norway Airlines 
+	12	Norway
+	13	Airlines
+	14	was
+			sense:	be.v.01
+			prop:	be.03
+			V		14-14	was 
+	15	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		15-15	established 
+			N-ARGM-TMP		8-10	the following year 
+			N-ARG-A1		11-13	West Norway Airlines 
+			N-ARGM-ADV		16-20	with their base at Sandviken 
+	16	with
+	17	their
+			coref:	IDENT			1	17-17	their 
+	18	base
+			sense:	base.n.14
+	19	at
+	20	Sandviken
+			coref:	IDENT			0	20-20	Sandviken 
+			name:	CITY				20-20	Sandviken 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The airlines moved their scheduled flights to Bergen Airport , Hjellestad from 1948 to 1951 .
+
+
+Treebanked sentence:
+--------------------
+The airlines moved their scheduled flights to Bergen Airport , Hjellestad from 1948 to 1951 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNS airlines))
+    (VP (VBD moved)
+      (NP (PRP$ their) (VBN scheduled) (NNS flights))
+      (PP (IN to)
+        (NP
+          (NP (NNP Bergen) (NNP Airport))
+          (, ,)
+          (NP (NNP Hjellestad))))
+      (PP (IN from)
+        (NP (CD 1948)))
+      (PP (IN to)
+        (NP (CD 1951))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The airlines 
+	1	airlines
+			sense:	airline.n.02
+	2	moved
+			sense:	move.v.02
+			prop:	move.01
+			V		2-2	moved 
+			N-ARG-A0		0-1	The airlines 
+			N-ARG-A1		3-5	their scheduled flights 
+			N-ARG-A2		6-10	to Bergen Airport , Hjellestad 
+			N-ARGM-TMP		11-14	from 1948 to 1951 
+	3	their
+			coref:	IDENT			1	3-3	their 
+	4	scheduled
+			sense:	schedule.v.02
+			prop:	schedule.01
+			V		4-4	scheduled 
+			N-ARG-A1		5-5	flights 
+	5	flights
+			sense:	flight.n.09
+	6	to
+	7	Bergen
+			name:	CITY				7-7	Bergen 
+	8	Airport
+			name:	LOCATION				8-8	Airport 
+	9	,
+	10	Hjellestad
+			name:	PERSON				10-10	Hjellestad 
+	11	from
+	12	1948
+			name:	DATE				12-14	1948 to 1951 
+	13	to
+	14	1951
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+West Norway Airlines resumed scheduled flights from Sandviken in 1952 , until they ceased operations in 1957 .
+
+
+Treebanked sentence:
+--------------------
+West Norway Airlines resumed scheduled flights from Sandviken in 1952 , until they ceased operations in 1957 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP West) (NNP Norway) (NNPS Airlines))
+    (VP (VBD resumed)
+      (NP (VBN scheduled) (NNS flights))
+      (PP (IN from)
+        (NP (NNP Sandviken)))
+      (PP (IN in)
+        (NP (CD 1952)))
+      (, ,)
+      (SBAR (IN until)
+        (S
+          (NP (PRP they))
+          (VP (VBD ceased)
+            (NP (NNS operations))
+            (PP (IN in)
+              (NP (CD 1957)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	West
+			coref:	IDENT			1	0-2	West Norway Airlines 
+			name:	ORGANIZATION				0-2	West Norway Airlines 
+	1	Norway
+	2	Airlines
+	3	resumed
+			sense:	resume.v.01
+			prop:	resume.01
+			V		3-3	resumed 
+			N-ARG-A0		0-2	West Norway Airlines 
+			N-ARG-A1		4-7	scheduled flights from Sandviken 
+			N-ARGM-TMP		8-9	in 1952 
+			N-ARGM-TMP		11-16	until they ceased operations in 1957 
+	4	scheduled
+			sense:	schedule.v.02
+			prop:	schedule.01
+			V		4-4	scheduled 
+			N-ARG-A1		5-5	flights 
+	5	flights
+			sense:	flight.n.09
+	6	from
+	7	Sandviken
+			coref:	IDENT			0	7-7	Sandviken 
+			name:	CITY				7-7	Sandviken 
+	8	in
+	9	1952
+			name:	DATE				9-9	1952 
+	10	,
+	11	until
+	12	they
+			coref:	IDENT			1	12-12	they 
+	13	ceased
+			sense:	discontinue.v.01
+			prop:	cease.01
+			V		13-13	ceased 
+			N-ARG-A0		12-12	they 
+			N-ARG-A1		14-14	operations 
+			N-ARGM-TMP		15-16	in 1957 
+	14	operations
+			sense:	operation.n.01
+	15	in
+	16	1957
+			name:	DATE				16-16	1957 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bergen Airport , Flesland opened in 1955 , thus removing most of the traffic from Sandviken .
+
+
+Treebanked sentence:
+--------------------
+Bergen Airport , Flesland opened in 1955 , thus removing most of the traffic from Sandviken . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bergen) (NNP Airport))
+    (, ,)
+    (NP (NNP Flesland))
+    (VP (VBD opened)
+      (PP (IN in)
+        (NP (CD 1955)))
+      (, ,)
+      (S
+        (ADVP (RB thus))
+        (VP (VBG removing)
+          (NP
+            (NP (JJS most))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN traffic))
+                (PP (IN from)
+                  (NP (NNP Sandviken)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bergen
+			coref:	IDENT			3	0-1	Bergen Airport 
+			name:	CITY				0-0	Bergen 
+	1	Airport
+			name:	LOCATION				1-1	Airport 
+	2	,
+	3	Flesland
+			name:	PERSON				3-3	Flesland 
+	4	opened
+			sense:	open.v.02
+			prop:	open.01
+			V		4-4	opened 
+			N-ARG-A1		0-3	Bergen Airport , Flesland 
+			N-ARGM-TMP		5-6	in 1955 
+			N-ARGM-ADV		8-15	thus removing most of the traffic from Sandviken 
+	5	in
+	6	1955
+			name:	DATE				6-6	1955 
+	7	,
+	8	thus
+			sense:	therefore.r.01
+	9	removing
+			sense:	remove.v.01
+			prop:	remove.01
+			V		9-9	removing 
+			N-ARGM-DIS		8-8	thus 
+			N-ARG-A1		10-13	most of the traffic 
+			N-ARG-A2		14-15	from Sandviken 
+	10	most
+			sense:	most.a.02
+	11	of
+	12	the
+	13	traffic
+			sense:	traffic.n.01
+	14	from
+	15	Sandviken
+			coref:	IDENT			0	15-15	Sandviken 
+			name:	CITY				15-15	Sandviken 
+	16	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.3-3	Sandviken 
+				0.15-15	Sandviken 
+				8.0-0	Sandviken 
+				9.20-20	Sandviken 
+				11.7-7	Sandviken 
+				12.15-15	Sandviken 
+	Chain 1 (IDENT)
+				9.11-13	West Norway Airlines 
+				9.17-17	their 
+				10.0-1	The airlines 
+				10.3-3	their 
+				11.0-2	West Norway Airlines 
+				11.12-12	they 
+	Chain 2 (IDENT)
+				1.0-1	The aerodrome 
+				2.0-0	It 
+	Chain 3 (IDENT)
+				0.0-1	Bergen Airport 
+				3.0-1	The airport 
+				5.0-1	The airport 
+				5.7-7	it 
+				12.0-1	Bergen Airport 
+

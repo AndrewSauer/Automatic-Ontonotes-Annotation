@@ -1,0 +1,510 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bankard - Gunther Mansion is a historic home located at Baltimore , Maryland , United States .
+
+
+Treebanked sentence:
+--------------------
+Bankard - Gunther Mansion is a historic home located at Baltimore , Maryland , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bankard) (HYPH -) (NNP Gunther) (NNP Mansion))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ historic) (NN home))
+        (VP (VBN located)
+          (PP (IN at)
+            (NP
+              (NML (NNP Baltimore) (, ,) (NNP Maryland) (, ,))
+              (NNP United) (NNP States))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bankard
+			coref:	IDENT			0	0-0	Bankard 
+			coref:	IDENT			1	0-3	Bankard - Gunther Mansion 
+			name:	ORGANIZATION				0-0	Bankard 
+	1	-
+	2	Gunther
+			name:	LOCATION				2-2	Gunther 
+	3	Mansion
+			name:	CITY				3-3	Mansion 
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	Bankard - Gunther Mansion 
+			N-ARG-A2		5-15	a historic home located at Baltimore , Maryland , United States 
+	5	a
+	6	historic
+			sense:	historic.s.01
+	7	home
+			sense:	dwelling.n.01
+	8	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		8-8	located 
+			N-ARG-A1		5-7	a historic home 
+			N-ARGM-LOC		9-15	at Baltimore , Maryland , United States 
+	9	at
+	10	Baltimore
+			coref:	IDENT			2	10-10	Baltimore 
+			name:	CITY				10-10	Baltimore 
+	11	,
+	12	Maryland
+			name:	STATE_OR_PROVINCE				12-12	Maryland 
+	13	,
+	14	United
+			name:	COUNTRY				14-15	United States 
+	15	States
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is a three - story , three bay wide , nine bay deep , flat roofed brick building built in 1866 .
+
+
+Treebanked sentence:
+--------------------
+It is a three - story , three bay wide , nine bay deep , flat roofed brick building built in 1866 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP
+            (NP (DT a) (CD three) (HYPH -) (NN story))
+            (, ,)
+            (ADVP
+              (NP (CD three) (NN bay))
+              (RB wide)))
+          (, ,)
+          (ADVP
+            (NP (CD nine) (NN bay))
+            (RB deep)))
+        (, ,)
+        (NP
+          (NP
+            (ADJP (JJ flat) (VBN roofed))
+            (NN brick) (NN building))
+          (VP (VBN built)
+            (PP (IN in)
+              (NP (NNP 1866)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-21	a three - story , three bay wide , nine bay deep , flat roofed brick building built in 1866 
+	2	a
+	3	three
+			name:	NUMBER				3-3	three 
+	4	-
+	5	story
+			sense:	floor.n.02
+	6	,
+	7	three
+			name:	NUMBER				7-7	three 
+	8	bay
+			sense:	alcove.n.01
+	9	wide
+			sense:	wide.r.01
+	10	,
+	11	nine
+			name:	NUMBER				11-11	nine 
+	12	bay
+			sense:	alcove.n.01
+	13	deep
+			sense:	deeply.r.02
+	14	,
+	15	flat
+			sense:	flat.s.01
+	16	roofed
+			sense:	roof.v.01
+			prop:	roof.01
+			V		16-16	roofed 
+			N-ARGM-MNR		15-15	flat 
+			N-ARG-A2		17-17	brick 
+			N-ARG-A1		18-18	building 
+	17	brick
+			sense:	brick.n.01
+	18	building
+			sense:	building.n.01
+	19	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		19-19	built 
+			N-ARG-A1		2-18	a three - story , three bay wide , nine bay deep , flat roofed brick building 
+			N-ARGM-TMP		20-21	in 1866 
+	20	in
+	21	1866
+			name:	DATE				21-21	1866 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is a richly embellished Italianate style building built originally for Jacob J. Bankard , one of many enterprising and prominent butchers who flocked to " Butcher ’s Hill " , and later George Gunther , who established the Gunther Brewing Company in Baltimore .
+
+
+Treebanked sentence:
+--------------------
+It is a richly embellished Italianate style building built originally for Jacob J. Bankard , one of many enterprising and prominent butchers who flocked to " Butcher ’s Hill " , and later George Gunther , who established the Gunther Brewing Company in Baltimore . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT a)
+            (ADJP (RB richly) (VBN embellished))
+            (JJ Italianate) (NN style) (NN building))
+          (VP (VBN built)
+            (ADVP (RB originally))
+            (PP (IN for)
+              (NP (NNP Jacob) (NNP J.) (NNP Bankard)))))
+        (, ,)
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP
+              (NP (JJ many)
+                (ADJP (JJ enterprising)
+                  (CC and)
+                  (JJ prominent))
+                (NNS butchers))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD flocked)
+                    (PP (IN to)
+                      (NP (`` ")
+                        (NP (NNP Butcher) (POS ’s))
+                        (NNP Hill) ('' ")))))))))
+        (, ,)
+        (CC and)
+        (NP
+          (ADVP (RB later))
+          (NP (NNP George) (NNP Gunther))
+          (, ,)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD established)
+                (NP
+                  (NP (DT the) (NNP Gunther) (NNP Brewing) (NNP Company))
+                  (PP (IN in)
+                    (NP (NNP Baltimore))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-43	a richly embellished Italianate style building built originally for Jacob J. Bankard , one of many enterprising and prominent butchers who flocked to " Butcher ’s Hill " , and later George Gunther , who established the Gunther Brewing Company in Baltimore 
+	2	a
+	3	richly
+			sense:	amply.r.01
+	4	embellished
+			sense:	decorate.v.01
+			prop:	embellish.01
+			V		4-4	embellished 
+			N-ARGM-MNR		3-3	richly 
+			N-ARG-A1		5-7	Italianate style building 
+	5	Italianate
+			name:	MISC				5-5	Italianate 
+	6	style
+			sense:	style.n.03
+	7	building
+			sense:	building.n.01
+	8	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		8-8	built 
+			N-ARG-A1		2-7	a richly embellished Italianate style building 
+			N-ARGM-ADV		9-9	originally 
+	9	originally
+			sense:	primitively.r.01
+	10	for
+	11	Jacob
+			name:	PERSON				11-13	Jacob J. Bankard 
+	12	J.
+	13	Bankard
+	14	,
+	15	one
+			name:	NUMBER				15-15	one 
+	16	of
+	17	many
+			sense:	many.a.01
+	18	enterprising
+			sense:	enterprising.a.01
+	19	and
+	20	prominent
+			sense:	big.s.05
+	21	butchers
+			sense:	butcher.n.01
+	22	who
+	23	flocked
+			sense:	flock.v.01
+			prop:	flock.01
+			V		23-23	flocked 
+			N-ARG-A0		17-21	many enterprising and prominent butchers 
+			R-ARG-A0		22-22	who 
+	24	to
+	25	"
+	26	Butcher
+			name:	TITLE				26-26	Butcher 
+	27	’s
+			name:	MISC				27-28	’s Hill 
+	28	Hill
+	29	"
+	30	,
+	31	and
+	32	later
+			sense:	subsequently.r.01
+	33	George
+			name:	PERSON				33-34	George Gunther 
+	34	Gunther
+	35	,
+	36	who
+	37	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		37-37	established 
+			N-ARG-A0		33-34	George Gunther 
+			R-ARG-A0		36-36	who 
+			N-ARG-A1		38-41	the Gunther Brewing Company 
+			N-ARGM-LOC		42-43	in Baltimore 
+	38	the
+	39	Gunther
+			name:	ORGANIZATION				39-41	Gunther Brewing Company 
+	40	Brewing
+	41	Company
+	42	in
+	43	Baltimore
+			coref:	IDENT			2	43-43	Baltimore 
+			name:	CITY				43-43	Baltimore 
+	44	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1919 the building became an important Baltimore charitable center to be used by the Hebrew Home for Incurables and the Emmanuel Center to provide humanitarian service to the community .
+
+
+Treebanked sentence:
+--------------------
+In 1919 the building became an important Baltimore charitable center to be used by the Hebrew Home for Incurables and the Emmanuel Center to provide humanitarian service to the community . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1919)))
+    (NP (DT the) (NN building))
+    (VP (VBD became)
+      (NP (DT an) (JJ important) (NNP Baltimore) (JJ charitable) (NN center))
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (VP (VBN used)
+              (PP (IN by)
+                (NP (DT the) (NNP Hebrew) (NN Home)))
+              (PP (IN for)
+                (NP
+                  (NP (NNS Incurables))
+                  (CC and)
+                  (NP (DT the) (NNP Emmanuel) (NNP Center))))
+              (S
+                (VP (TO to)
+                  (VP (VB provide)
+                    (NP (JJ humanitarian) (NN service))
+                    (PP (IN to)
+                      (NP (DT the) (NN community)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1919
+			name:	DATE				1-1	1919 
+	2	the
+	3	building
+			sense:	building.n.01
+	4	became
+			sense:	become.v.02
+			prop:	become.01
+			V		4-4	became 
+			N-ARGM-TMP		0-1	In 1919 
+			N-ARG-A1		2-3	the building 
+			N-ARG-A2		5-29	an important Baltimore charitable center to be used by the Hebrew Home for Incurables and the Emmanuel Center to provide humanitarian service to the community 
+	5	an
+	6	important
+			sense:	important.a.01
+	7	Baltimore
+			coref:	IDENT			2	7-7	Baltimore 
+			name:	CITY				7-7	Baltimore 
+	8	charitable
+			sense:	charitable.a.01
+	9	center
+			sense:	center.n.03
+	10	to
+	11	be
+			sense:	be.v.01
+			prop:	be.03
+			V		11-11	be 
+	12	used
+			sense:	use.v.01
+			prop:	use.01
+			V		12-12	used 
+			N-ARG-A1		5-9	an important Baltimore charitable center 
+			N-ARG-A0		13-22	by the Hebrew Home for Incurables and the Emmanuel Center 
+			N-ARG-A2		23-29	to provide humanitarian service to the community 
+	13	by
+	14	the
+	15	Hebrew
+	16	Home
+			sense:	home.n.09
+	17	for
+	18	Incurables
+			sense:	incurable.n.01
+	19	and
+	20	the
+	21	Emmanuel
+	22	Center
+	23	to
+	24	provide
+			sense:	supply.v.01
+			prop:	provide.01
+			V		24-24	provide 
+			N-ARG-A1		25-26	humanitarian service 
+			N-ARG-A2		27-29	to the community 
+	25	humanitarian
+			sense:	human-centered.s.01
+	26	service
+			sense:	service.n.01
+	27	to
+	28	the
+	29	community
+			sense:	community.n.01
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bankard - Gunther Mansion was listed on the National Register of Historic Places in 1980 .
+
+
+Treebanked sentence:
+--------------------
+Bankard - Gunther Mansion was listed on the National Register of Historic Places in 1980 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bankard) (HYPH -) (NNP Gunther) (NNP Mansion))
+    (VP (VBD was)
+      (VP (VBN listed)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NNP National) (NNP Register))
+            (PP (IN of)
+              (NP (JJ Historic) (NNS Places)))))
+        (PP (IN in)
+          (NP (CD 1980)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bankard
+			coref:	IDENT			0	0-0	Bankard 
+			coref:	IDENT			1	0-3	Bankard - Gunther Mansion 
+			name:	ORGANIZATION				0-0	Bankard 
+	1	-
+	2	Gunther
+			name:	LOCATION				2-2	Gunther 
+	3	Mansion
+			name:	CITY				3-3	Mansion 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	listed
+			sense:	list.v.02
+			prop:	list.01
+			V		5-5	listed 
+			N-ARG-A1		0-3	Bankard - Gunther Mansion 
+			N-ARG-A2		6-12	on the National Register of Historic Places 
+			N-ARGM-TMP		13-14	in 1980 
+	6	on
+	7	the
+	8	National
+	9	Register
+	10	of
+	11	Historic
+			sense:	historic.s.01
+	12	Places
+			sense:	topographic_point.n.01
+	13	in
+	14	1980
+			name:	DATE				14-14	1980 
+	15	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-0	Bankard 
+				4.0-0	Bankard 
+	Chain 1 (IDENT)
+				0.0-3	Bankard - Gunther Mansion 
+				1.0-0	It 
+				2.0-0	It 
+				4.0-3	Bankard - Gunther Mansion 
+	Chain 2 (IDENT)
+				0.10-10	Baltimore 
+				2.43-43	Baltimore 
+				3.7-7	Baltimore 
+

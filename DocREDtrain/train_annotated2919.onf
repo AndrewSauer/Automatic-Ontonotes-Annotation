@@ -1,0 +1,565 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Kid Galahad is a 1962 American musical film starring Elvis Presley as a boxer .
+
+
+Treebanked sentence:
+--------------------
+Kid Galahad is a 1962 American musical film starring Elvis Presley as a boxer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN Kid) (NNP Galahad))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (CD 1962) (JJ American) (JJ musical) (NN film))
+        (VP (VBG starring)
+          (NP
+            (NP (NNP Elvis) (NNP Presley))
+            (PP (IN as)
+              (NP (DT a) (NN boxer)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Kid
+			coref:	IDENT			0	0-1	Kid Galahad 
+			sense:	child.n.01
+	1	Galahad
+			name:	PERSON				1-1	Galahad 
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Kid Galahad 
+			N-ARG-A2		3-13	a 1962 American musical film starring Elvis Presley as a boxer 
+	3	a
+	4	1962
+			coref:	IDENT			2	4-4	1962 
+			name:	DATE				4-4	1962 
+	5	American
+			name:	NATIONALITY				5-5	American 
+	6	musical
+			sense:	musical.a.03
+	7	film
+			sense:	movie.n.01
+	8	starring
+			sense:	star.v.01
+			prop:	star.01
+			V		8-8	starring 
+			N-ARG-A2		3-7	a 1962 American musical film 
+			N-ARG-A1		9-10	Elvis Presley 
+			N-ARGM-PRD		11-13	as a boxer 
+	9	Elvis
+			coref:	IDENT			1	9-10	Elvis Presley 
+			name:	PERSON				9-10	Elvis Presley 
+	10	Presley
+	11	as
+	12	a
+	13	boxer
+			name:	TITLE				13-13	boxer 
+			sense:	boxer.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was released by United Artists .
+
+
+Treebanked sentence:
+--------------------
+It was released by United Artists . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN released)
+        (PP (IN by)
+          (NP (NNP United) (NNP Artists)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		2-2	released 
+			N-ARG-A1		0-0	It 
+			N-ARG-A0		3-5	by United Artists 
+	3	by
+	4	United
+			name:	ORGANIZATION				4-5	United Artists 
+	5	Artists
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The film opened at # 9 at the box office when released in the United States in August 1962 .
+
+
+Treebanked sentence:
+--------------------
+The film opened at # 9 at the box office when released in the United States in August 1962 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN film))
+    (VP (VBN opened)
+      (PP (IN at)
+        (NP
+          (NP (NN #) (CD 9))
+          (PP (IN at)
+            (NP (DT the) (NN box) (NN office)))))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (VP (VBN released)
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NNP United) (NNP States))
+                (PP (IN in)
+                  (NP (NNP August) (CD 1962)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	film
+			sense:	movie.n.01
+	2	opened
+			sense:	open.v.02
+			prop:	open.01
+			V		2-2	opened 
+			N-ARG-A1		0-1	The film 
+			N-ARGM-EXT		3-5	at # 9 
+			N-ARGM-LOC		6-9	at the box office 
+			N-ARGM-TMP		10-18	when released in the United States in August 1962 
+	3	at
+	4	#
+			name:	MONEY				4-5	# 9 
+	5	9
+	6	at
+	7	the
+	8	box
+			sense:	box.n.09
+	9	office
+			sense:	office.n.01
+	10	when
+	11	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		11-11	released 
+			N-ARG-A1		0-1	The film 
+			N-ARGM-TMP		10-10	when 
+			N-ARGM-LOC		12-15	in the United States 
+			N-ARGM-TMP		16-18	in August 1962 
+	12	in
+	13	the
+	14	United
+			name:	COUNTRY				14-15	United States 
+	15	States
+	16	in
+	17	August
+			name:	DATE				17-18	August 1962 
+	18	1962
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Variety ranked it # 37 on the list of the top - grossing films of 1962 .
+
+
+Treebanked sentence:
+--------------------
+Variety ranked it # 37 on the list of the top - grossing films of 1962 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Variety))
+    (VP (VBD ranked)
+      (NP
+        (NP (PRP it))
+        (SYM #)
+        (NP (CD 37)))
+      (PP (IN on)
+        (NP
+          (NP (DT the) (NN list))
+          (PP (IN of)
+            (NP
+              (NP
+                (ADJP
+                  (NP (DT the) (JJ top))
+                  (HYPH -) (VBG grossing))
+                (NNS films))
+              (PP (IN of)
+                (NP (CD 1962))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Variety
+	1	ranked
+			sense:	rate.v.01
+			prop:	rank.01
+			V		1-1	ranked 
+			N-ARG-A0		0-0	Variety 
+			N-ARG-A1		2-2	it 
+			N-ARG-A2		3-4	# 37 
+			N-ARGM-LOC		5-15	on the list of the top - grossing films of 1962 
+	2	it
+	3	#
+			name:	MONEY				3-4	# 37 
+	4	37
+	5	on
+	6	the
+	7	list
+			sense:	list.n.01
+	8	of
+	9	the
+	10	top
+			sense:	top.a.01
+	11	-
+	12	grossing
+			sense:	gross.v.01
+			prop:	gross.01
+			V		12-12	grossing 
+			N-ARGM-MNR		10-10	top 
+			N-ARG-A0		13-13	films 
+	13	films
+			sense:	movie.n.01
+	14	of
+	15	1962
+			coref:	IDENT			2	15-15	1962 
+			name:	DATE				15-15	1962 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Kid Galahad was shot on location in Idyllwild , California .
+
+
+Treebanked sentence:
+--------------------
+Kid Galahad was shot on location in Idyllwild , California . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN Kid) (NNP Galahad))
+    (VP (VBD was)
+      (VP (VBN shot)
+        (PP (IN on)
+          (NP (NN location)))
+        (PP (IN in)
+          (NP (NNP Idyllwild) (, ,) (NNP California)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Kid
+			coref:	IDENT			0	0-1	Kid Galahad 
+			sense:	child.n.01
+	1	Galahad
+			name:	PERSON				1-1	Galahad 
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	shot
+			sense:	film.v.01
+			prop:	shoot.02
+			V		3-3	shot 
+			N-ARG-A1		0-1	Kid Galahad 
+			N-ARGM-LOC		4-5	on location 
+			N-ARGM-LOC		6-9	in Idyllwild , California 
+	4	on
+	5	location
+			sense:	location.n.04
+	6	in
+	7	Idyllwild
+			name:	LOCATION				7-7	Idyllwild 
+	8	,
+	9	California
+			name:	STATE_OR_PROVINCE				9-9	California 
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Its supporting cast included Gig Young , Lola Albright and Charles Bronson .
+
+
+Treebanked sentence:
+--------------------
+Its supporting cast included Gig Young , Lola Albright and Charles Bronson . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ Its) (VBG supporting) (NN cast))
+    (VP (VBD included)
+      (NP
+        (NP (NNP Gig) (NNP Young))
+        (, ,)
+        (NP (NNP Lola) (NNP Albright))
+        (CC and)
+        (NP (NNP Charles) (NNP Bronson))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Its
+	1	supporting
+			sense:	support.v.09
+			prop:	support.01
+			V		1-1	supporting 
+			N-ARG-A0		2-2	cast 
+	2	cast
+			sense:	cast.n.01
+	3	included
+			sense:	include.v.01
+			prop:	include.01
+			V		3-3	included 
+			N-ARG-A2		0-2	Its supporting cast 
+			N-ARG-A1		4-11	Gig Young , Lola Albright and Charles Bronson 
+	4	Gig
+	5	Young
+	6	,
+	7	Lola
+			name:	PERSON				7-8	Lola Albright 
+	8	Albright
+	9	and
+	10	Charles
+			name:	PERSON				10-11	Charles Bronson 
+	11	Bronson
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Some critics rate it as one of Elvis Presley 's best performances .
+
+
+Treebanked sentence:
+--------------------
+Some critics rate it as one of Elvis Presley 's best performances . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP (DT Some) (NNS critics) (NN rate))
+    (NP
+      (NP (PRP it))
+      (PP (IN as)
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP
+              (NP (NNP Elvis) (NNP Presley) (POS 's))
+              (JJS best) (NNS performances))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Some
+	1	critics
+			sense:	critic.n.01
+	2	rate
+			sense:	rate.n.04
+	3	it
+	4	as
+	5	one
+			name:	NUMBER				5-5	one 
+	6	of
+	7	Elvis
+			coref:	IDENT			1	7-9	Elvis Presley 's 
+			name:	PERSON				7-8	Elvis Presley 
+	8	Presley
+	9	's
+	10	best
+			sense:	good.a.01
+	11	performances
+			sense:	performance.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The film is a remake of the 1937 original version starring Edward G. Robinson , Bette Davis , and Humphrey Bogart and directed by Michael Curtiz , who also directed the Presley 1958 film King Creole .
+
+
+Treebanked sentence:
+--------------------
+The film is a remake of the 1937 original version starring Edward G. Robinson , Bette Davis , and Humphrey Bogart and directed by Michael Curtiz , who also directed the Presley 1958 film King Creole . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN film))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN remake))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (CD 1937) (JJ original) (NN version))
+            (VP
+              (VP (VBG starring)
+                (NP
+                  (NP (NNP Edward) (NNP G.) (NNP Robinson))
+                  (, ,)
+                  (NP (NNP Bette) (NNP Davis))
+                  (, ,)
+                  (CC and)
+                  (NP (NNP Humphrey) (NNP Bogart))))
+              (CC and)
+              (VP (VBN directed)
+                (PP (IN by)
+                  (NP
+                    (NP (NNP Michael) (NNP Curtiz))
+                    (, ,)
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (ADVP (RB also))
+                        (VP (VBD directed)
+                          (NP
+                            (NP (DT the) (NNP Presley) (CD 1958) (NN film))
+                            (NP (NNP King) (NNP Creole))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	film
+			sense:	movie.n.01
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The film 
+			N-ARG-A2		3-35	a remake of the 1937 original version starring Edward G. Robinson , Bette Davis , and Humphrey Bogart and directed by Michael Curtiz , who also directed the Presley 1958 film King Creole 
+	3	a
+	4	remake
+			sense:	remake.n.01
+	5	of
+	6	the
+	7	1937
+			name:	DATE				7-7	1937 
+	8	original
+			sense:	original.s.01
+	9	version
+			sense:	adaptation.n.01
+	10	starring
+			sense:	star.v.01
+			prop:	star.01
+			V		10-10	starring 
+			N-ARG-A2		6-9	the 1937 original version 
+			N-ARG-A1		11-20	Edward G. Robinson , Bette Davis , and Humphrey Bogart 
+	11	Edward
+			name:	PERSON				11-13	Edward G. Robinson 
+	12	G.
+	13	Robinson
+	14	,
+	15	Bette
+			name:	PERSON				15-16	Bette Davis 
+	16	Davis
+	17	,
+	18	and
+	19	Humphrey
+			name:	PERSON				19-20	Humphrey Bogart 
+	20	Bogart
+	21	and
+	22	directed
+			sense:	direct.v.03
+			prop:	direct.01
+			V		22-22	directed 
+			N-ARG-A1		0-1	The film 
+			N-ARG-A0		23-35	by Michael Curtiz , who also directed the Presley 1958 film King Creole 
+	23	by
+	24	Michael
+			name:	PERSON				24-25	Michael Curtiz 
+	25	Curtiz
+	26	,
+	27	who
+	28	also
+			sense:	besides.r.02
+	29	directed
+			sense:	direct.v.03
+			prop:	direct.01
+			V		29-29	directed 
+			N-ARG-A0		24-25	Michael Curtiz 
+			R-ARG-A0		27-27	who 
+			N-ARGM-DIS		28-28	also 
+			N-ARG-A1		30-35	the Presley 1958 film King Creole 
+	30	the
+	31	Presley
+	32	1958
+			name:	DATE				32-32	1958 
+	33	film
+			sense:	movie.n.01
+	34	King
+			name:	TITLE				34-34	King 
+	35	Creole
+	36	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Kid Galahad 
+				4.0-1	Kid Galahad 
+	Chain 1 (IDENT)
+				6.7-9	Elvis Presley 's 
+				0.9-10	Elvis Presley 
+	Chain 2 (IDENT)
+				0.4-4	1962 
+				3.15-15	1962 
+

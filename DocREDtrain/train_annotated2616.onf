@@ -1,0 +1,633 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Helsingborg Municipality ( Helsingborgs kommun ) is a municipality in Skåne County in Sweden .
+
+
+Treebanked sentence:
+--------------------
+Helsingborg Municipality ( Helsingborgs kommun ) is a municipality in Skåne County in Sweden . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Helsingborg) (NNP Municipality))
+      (-LRB- -LRB-)
+      (NP (NNP Helsingborgs) (NNP kommun))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN municipality))
+        (PP (IN in)
+          (NP
+            (NP (NNP Skåne) (NNP County))
+            (PP (IN in)
+              (NP (NNP Sweden)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Helsingborg
+			name:	ORGANIZATION				0-1	Helsingborg Municipality 
+	1	Municipality
+	2	(
+	3	Helsingborgs
+			coref:	IDENT			5	3-3	Helsingborgs 
+			name:	ORGANIZATION				3-3	Helsingborgs 
+	4	kommun
+	5	)
+	6	is
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	is 
+			N-ARG-A1		0-5	Helsingborg Municipality ( Helsingborgs kommun ) 
+			N-ARG-A2		7-13	a municipality in Skåne County in Sweden 
+	7	a
+	8	municipality
+			sense:	municipality.n.01
+	9	in
+	10	Skåne
+			name:	LOCATION				10-11	Skåne County 
+	11	County
+	12	in
+	13	Sweden
+			coref:	IDENT			3	13-13	Sweden 
+			name:	COUNTRY				13-13	Sweden 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Its seat is located in the city of Helsingborg , which is Sweden 's eighth largest city .
+
+
+Treebanked sentence:
+--------------------
+Its seat is located in the city of Helsingborg , which is Sweden 's eighth largest city . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ Its) (NN seat))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN in)
+          (NP
+            (NP
+              (NP (DT the) (NN city))
+              (PP (IN of)
+                (NP (NNP Helsingborg))))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ is)
+                  (NP
+                    (NP (NNP Sweden) (POS 's))
+                    (ADJP (JJ eighth) (JJS largest))
+                    (NN city)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Its
+	1	seat
+			sense:	seat.n.05
+	2	is
+			sense:	be.v.03
+			prop:	be.03
+			V		2-2	is 
+	3	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		3-3	located 
+			N-ARG-A1		0-1	Its seat 
+			N-ARGM-LOC		4-16	in the city of Helsingborg , which is Sweden 's eighth largest city 
+	4	in
+	5	the
+	6	city
+			sense:	city.n.01
+	7	of
+	8	Helsingborg
+			coref:	IDENT			6	8-8	Helsingborg 
+			name:	CITY				8-8	Helsingborg 
+	9	,
+	10	which
+	11	is
+			sense:	be.v.01
+			prop:	be.01
+			V		11-11	is 
+			N-ARG-A1		5-8	the city of Helsingborg 
+			R-ARG-A1		10-10	which 
+			N-ARG-A2		12-16	Sweden 's eighth largest city 
+	12	Sweden
+			coref:	IDENT			3	12-13	Sweden 's 
+			name:	COUNTRY				12-12	Sweden 
+	13	's
+	14	eighth
+			name:	ORDINAL				14-14	eighth 
+			sense:	eighth.s.01
+	15	largest
+			sense:	large.a.01
+	16	city
+			sense:	city.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The municipality had a population of 132,011 on January 1 , 2013 , and the population is increasing with roughly 1500 people annually .
+
+
+Treebanked sentence:
+--------------------
+The municipality had a population of 132,011 on January 1 , 2013 , and the population is increasing with roughly 1500 people annually . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN municipality))
+      (VP (VBD had)
+        (NP
+          (NP (DT a) (NN population))
+          (PP (IN of)
+            (NP (CD 132,011))))
+        (PP (IN on)
+          (NP (NNP January) (CD 1) (, ,) (CD 2013)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT the) (NN population))
+      (VP (VBZ is)
+        (VP (VBG increasing)
+          (PP (IN with)
+            (NP
+              (QP (RB roughly) (CD 1500))
+              (NNS people)))
+          (ADVP (RB annually)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	municipality
+			sense:	municipality.n.01
+	2	had
+			sense:	have.v.02
+			prop:	have.03
+			V		2-2	had 
+			N-ARG-A0		0-1	The municipality 
+			N-ARG-A1		3-6	a population of 132,011 
+			N-ARGM-TMP		7-11	on January 1 , 2013 
+	3	a
+			coref:	IDENT			2	3-6	a population of 132,011 
+	4	population
+			sense:	population.n.04
+	5	of
+	6	132,011
+			name:	NUMBER				6-6	132,011 
+	7	on
+	8	January
+			name:	DATE				8-11	January 1 , 2013 
+	9	1
+	10	,
+	11	2013
+	12	,
+	13	and
+	14	the
+			coref:	IDENT			2	14-15	the population 
+	15	population
+			sense:	population.n.04
+	16	is
+			sense:	be.v.01
+			prop:	be.03
+			V		16-16	is 
+	17	increasing
+			sense:	increase.v.01
+			prop:	increase.01
+			V		17-17	increasing 
+			N-ARG-A1		14-15	the population 
+			N-ARG-A2		18-22	with roughly 1500 people annually 
+	18	with
+	19	roughly
+			sense:	approximately.r.01
+	20	1500
+			name:	NUMBER				20-20	1500 
+	21	people
+			sense:	person.n.01
+	22	annually
+			name:	SET				22-22	annually 
+			sense:	annually.r.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Between 1912 and 1971 the name of the town was officially spelled Hälsingborg ( rather like the region of Hälsingland but unlike neighbouring Danish Helsingør and the Finnish capital Helsingfors ( Helsinki ) ) .
+
+
+Treebanked sentence:
+--------------------
+Between 1912 and 1971 the name of the town was officially spelled Hälsingborg ( rather like the region of Hälsingland but unlike neighbouring Danish Helsingør and the Finnish capital Helsingfors ( Helsinki ) ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Between)
+      (NP (CD 1912)
+        (CC and)
+        (CD 1971)))
+    (NP
+      (NP (DT the) (NN name))
+      (PP (IN of)
+        (NP (DT the) (NN town))))
+    (VP (VBD was)
+      (ADVP (RB officially))
+      (VP (VBN spelled)
+        (NP (NNP Hälsingborg))
+        (-LRB- -LRB-)
+        (PP (RB rather)
+          (PP (IN like)
+            (NP
+              (NP (DT the) (NN region))
+              (PP (IN of)
+                (NP (NNP Hälsingland)))))
+          (CC but)
+          (PP (IN unlike)
+            (NP (VBG neighbouring)
+              (ADJP (JJ Danish)
+                (NP-TMP
+                  (NP (NNP Helsingør))
+                  (CC and)
+                  (NP (DT the) (JJ Finnish) (NN capital))))
+              (NNS Helsingfors))))
+        (PRN (-LRB- -LRB-)
+          (NP (NNP Helsinki))
+          (-RRB- -RRB-))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Between
+	1	1912
+			name:	DATE				1-1	1912 
+	2	and
+	3	1971
+			coref:	IDENT			0	3-3	1971 
+			name:	DATE				3-3	1971 
+	4	the
+	5	name
+			sense:	name.n.01
+	6	of
+	7	the
+			coref:	IDENT			4	7-8	the town 
+	8	town
+			sense:	town.n.01
+	9	was
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	was 
+	10	officially
+			sense:	formally.r.01
+	11	spelled
+			sense:	spell.v.03
+			prop:	spell.02
+			V		11-11	spelled 
+			N-ARGM-TMP		0-3	Between 1912 and 1971 
+			N-ARGM-MNR		10-10	officially 
+			N-ARG-A1		12-33	Hälsingborg ( rather like the region of Hälsingland but unlike neighbouring Danish Helsingør and the Finnish capital Helsingfors ( Helsinki ) ) 
+	12	Hälsingborg
+			coref:	IDENT			1	12-12	Hälsingborg 
+			name:	LOCATION				12-12	Hälsingborg 
+	13	(
+	14	rather
+			sense:	rather.r.02
+	15	like
+	16	the
+	17	region
+			sense:	region.n.01
+	18	of
+	19	Hälsingland
+			name:	LOCATION				19-19	Hälsingland 
+	20	but
+	21	unlike
+	22	neighbouring
+			sense:	neighbor.v.02
+			prop:	neighbor.01
+			V		22-22	neighbouring 
+			N-ARG-A1		23-24	Danish Helsingør 
+	23	Danish
+			name:	NATIONALITY				23-23	Danish 
+	24	Helsingør
+	25	and
+	26	the
+	27	Finnish
+			name:	NATIONALITY				27-27	Finnish 
+	28	capital
+			sense:	capital.n.03
+	29	Helsingfors
+			name:	ORGANIZATION				29-29	Helsingfors 
+	30	(
+	31	Helsinki
+			name:	CITY				31-31	Helsinki 
+	32	)
+	33	)
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The spelling was changed back to the older version when the present municipality was created in 1971 through the amalgamation of the Town of Hälsingborg with four surrounding rural municipalities .
+
+
+Treebanked sentence:
+--------------------
+The spelling was changed back to the older version when the present municipality was created in 1971 through the amalgamation of the Town of Hälsingborg with four surrounding rural municipalities . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN spelling))
+    (VP (VBD was)
+      (VP (VBN changed)
+        (ADVP (RB back))
+        (PP (IN to)
+          (NP
+            (NP (DT the) (JJR older) (NN version))
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (DT the) (JJ present) (NN municipality))
+                (VP (VBD was)
+                  (VP (VBN created)
+                    (PP (IN in)
+                      (NP (CD 1971)))
+                    (PP (IN through)
+                      (NP
+                        (NP (DT the) (NN amalgamation))
+                        (PP (IN of)
+                          (NP
+                            (NP (DT the) (NN Town))
+                            (PP (IN of)
+                              (NP (NNP Hälsingborg)))))))
+                    (PP (IN with)
+                      (NP (CD four)))
+                    (S
+                      (VP (VBG surrounding)
+                        (NP (JJ rural) (NNS municipalities))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	spelling
+			sense:	spelling.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	changed
+			sense:	change.v.01
+			prop:	change.01
+			V		3-3	changed 
+			N-ARG-A1		0-1	The spelling 
+			N-ARG-A2		4-8	back to the older version 
+			N-ARGM-TMP		9-29	when the present municipality was created in 1971 through the amalgamation of the Town of Hälsingborg with four surrounding rural municipalities 
+	4	back
+			sense:	back.r.03
+	5	to
+	6	the
+	7	older
+			sense:	old.a.02
+	8	version
+			sense:	version.n.02
+	9	when
+	10	the
+	11	present
+			name:	DATE				11-11	present 
+			sense:	present.a.01
+	12	municipality
+			sense:	municipality.n.01
+	13	was
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	was 
+	14	created
+			sense:	create.v.02
+			prop:	create.01
+			V		14-14	created 
+			N-ARGM-TMP		9-9	when 
+			N-ARG-A1		10-12	the present municipality 
+			N-ARGM-TMP		15-16	in 1971 
+			N-ARGM-MNR		17-29	through the amalgamation of the Town of Hälsingborg with four surrounding rural municipalities 
+	15	in
+	16	1971
+			coref:	IDENT			0	16-16	1971 
+			name:	DATE				16-16	1971 
+	17	through
+	18	the
+	19	amalgamation
+			sense:	amalgamation.n.01
+	20	of
+	21	the
+			coref:	IDENT			4	21-24	the Town of Hälsingborg 
+	22	Town
+			sense:	town.n.01
+	23	of
+	24	Hälsingborg
+			coref:	IDENT			1	24-24	Hälsingborg 
+			name:	LOCATION				24-24	Hälsingborg 
+	25	with
+	26	four
+			name:	NUMBER				26-26	four 
+	27	surrounding
+			sense:	surround.v.01
+			prop:	surround.01
+			V		27-27	surrounding 
+			N-ARG-A1		28-29	rural municipalities 
+	28	rural
+			sense:	rural.a.01
+	29	municipalities
+			sense:	municipality.n.01
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Since the 1990s the municipality again styles itself Helsingborgs stad ( Town of Helsingborg ) .
+
+
+Treebanked sentence:
+--------------------
+Since the 1990s the municipality again styles itself Helsingborgs stad ( Town of Helsingborg ) . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP
+      (NML
+        (UCP
+          (PP (IN Since)
+            (NP
+              (NP (DT the) (NNS 1990s))
+              (NP (DT the) (NN municipality))))
+          (ADVP (RB again)))
+        (NNS styles))
+      (NP (PRP itself) (NNP Helsingborgs))
+      (NN stad))
+    (-LRB- -LRB-)
+    (NP
+      (NP (NN Town))
+      (PP (IN of)
+        (NP (NNP Helsingborg))))
+    (-RRB- -RRB-) (. .)))
+
+
+Leaves:
+-------
+	0	Since
+	1	the
+			name:	DATE				1-2	the 1990s 
+	2	1990s
+	3	the
+	4	municipality
+			sense:	municipality.n.01
+	5	again
+			sense:	again.r.01
+	6	styles
+			sense:	expressive_style.n.01
+	7	itself
+	8	Helsingborgs
+			coref:	IDENT			5	8-8	Helsingborgs 
+			name:	ORGANIZATION				8-8	Helsingborgs 
+	9	stad
+	10	(
+	11	Town
+			sense:	town.n.01
+	12	of
+	13	Helsingborg
+			coref:	IDENT			6	13-13	Helsingborg 
+			name:	CITY				13-13	Helsingborg 
+	14	)
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This usage is only nominal and has no effect on the status of the municipality .
+
+
+Treebanked sentence:
+--------------------
+This usage is only nominal and has no effect on the status of the municipality . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT This) (NN usage))
+    (VP
+      (VP (VBZ is)
+        (ADVP (RB only))
+        (ADJP (JJ nominal)))
+      (CC and)
+      (VP (VBZ has)
+        (NP
+          (NP (DT no) (NN effect))
+          (PP (IN on)
+            (NP
+              (NP (DT the) (NN status))
+              (PP (IN of)
+                (NP (DT the) (NN municipality))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+	1	usage
+			sense:	custom.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	This usage 
+			N-ARG-A2		3-4	only nominal 
+	3	only
+			sense:	merely.r.01
+	4	nominal
+			sense:	nominal.s.06
+	5	and
+	6	has
+			sense:	have.v.01
+			prop:	have.03
+			V		6-6	has 
+			N-ARG-A0		0-1	This usage 
+			N-ARG-A1		7-14	no effect on the status of the municipality 
+	7	no
+	8	effect
+			sense:	consequence.n.01
+	9	on
+	10	the
+	11	status
+			sense:	status.n.01
+	12	of
+	13	the
+	14	municipality
+			sense:	municipality.n.01
+	15	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.3-3	1971 
+				4.16-16	1971 
+	Chain 1 (IDENT)
+				3.12-12	Hälsingborg 
+				4.24-24	Hälsingborg 
+	Chain 2 (IDENT)
+				2.3-6	a population of 132,011 
+				2.14-15	the population 
+	Chain 3 (IDENT)
+				1.12-13	Sweden 's 
+				0.13-13	Sweden 
+	Chain 4 (IDENT)
+				4.21-24	the Town of Hälsingborg 
+				3.7-8	the town 
+	Chain 5 (IDENT)
+				0.3-3	Helsingborgs 
+				5.8-8	Helsingborgs 
+	Chain 6 (IDENT)
+				1.8-8	Helsingborg 
+				5.13-13	Helsingborg 
+

@@ -1,0 +1,676 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Main Street ( Ottawa Road # 72 ) is an arterial road in Ottawa , Ontario , Canada .
+
+
+Treebanked sentence:
+--------------------
+Main Street ( Ottawa Road # 72 ) is an arterial road in Ottawa , Ontario , Canada . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Main) (NNP Street))
+      (-LRB- -LRB-)
+      (NP (NNP Ottawa) (NNP Road) (SYM #) (CD 72))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ arterial) (NN road))
+        (PP (IN in)
+          (NP (NNP Ottawa) (, ,) (NNP Ontario) (, ,) (NNP Canada)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Main
+			coref:	IDENT			3	0-1	Main Street 
+	1	Street
+	2	(
+	3	Ottawa
+			name:	CITY				3-3	Ottawa 
+	4	Road
+			name:	LOCATION				4-4	Road 
+	5	#
+			name:	MONEY				5-6	# 72 
+	6	72
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	Main Street ( Ottawa Road # 72 ) 
+			N-ARG-A2		9-17	an arterial road in Ottawa , Ontario , Canada 
+	9	an
+	10	arterial
+			sense:	arterial.a.01
+	11	road
+			sense:	road.n.01
+	12	in
+	13	Ottawa
+			name:	CITY				13-13	Ottawa 
+	14	,
+	15	Ontario
+			name:	STATE_OR_PROVINCE				15-15	Ontario 
+	16	,
+	17	Canada
+			name:	COUNTRY				17-17	Canada 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Main Street begins at Colonel By Drive near the community of Sandy Hill and runs in a straight line south until it bends near the Rideau River and becomes Smyth Road .
+
+
+Treebanked sentence:
+--------------------
+Main Street begins at Colonel By Drive near the community of Sandy Hill and runs in a straight line south until it bends near the Rideau River and becomes Smyth Road . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Main) (NNP Street))
+    (VP
+      (VP (VBZ begins)
+        (PP (IN at)
+          (NP (NNP Colonel)))
+        (PP (IN By)
+          (NP
+            (NP (NNP Drive))
+            (PP (IN near)
+              (NP
+                (NP (DT the) (NN community))
+                (PP (IN of)
+                  (NP (NNP Sandy) (NNP Hill))))))))
+      (CC and)
+      (VP (VBZ runs)
+        (PP (IN in)
+          (NP
+            (NP (DT a) (JJ straight) (NN line))
+            (ADVP (RB south)
+              (PP (IN until)
+                (NP (PRP$ it) (NNS bends))))))
+        (PP (IN near)
+          (NP (DT the) (NNP Rideau) (NNP River))))
+      (CC and)
+      (VP (VBZ becomes)
+        (NP (NNP Smyth) (NNP Road))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Main
+			coref:	IDENT			3	0-1	Main Street 
+	1	Street
+	2	begins
+			sense:	begin.v.02
+			prop:	begin.01
+			V		2-2	begins 
+			N-ARG-A1		0-1	Main Street 
+			N-ARGM-LOC		3-6	at Colonel By Drive 
+			N-ARGM-LOC		7-12	near the community of Sandy Hill 
+	3	at
+	4	Colonel
+			name:	TITLE				4-4	Colonel 
+	5	By
+	6	Drive
+	7	near
+	8	the
+			coref:	IDENT			2	8-12	the community of Sandy Hill 
+	9	community
+			sense:	community.n.01
+	10	of
+	11	Sandy
+			name:	PERSON				11-12	Sandy Hill 
+	12	Hill
+	13	and
+	14	runs
+			sense:	run.v.03
+			prop:	run.04
+			V		14-14	runs 
+			N-ARG-A1		0-1	Main Street 
+			N-ARGM-MNR		15-18	in a straight line 
+			N-ARGM-DIR		19-19	south 
+			N-ARGM-TMP		20-30	until it bends near the Rideau River and becomes Smyth Road 
+	15	in
+	16	a
+	17	straight
+			sense:	straight.a.02
+	18	line
+			sense:	line.n.11
+	19	south
+			sense:	south.r.01
+	20	until
+	21	it
+			coref:	IDENT			2	21-21	it 
+	22	bends
+			sense:	bend.n.03
+	23	near
+	24	the
+	25	Rideau
+			name:	LOCATION				25-25	Rideau 
+	26	River
+			name:	TITLE				26-26	River 
+	27	and
+	28	becomes
+			sense:	become.v.02
+			prop:	become.01
+			V		28-28	becomes 
+			N-ARG-A1		21-21	it 
+			N-ARG-A2		29-30	Smyth Road 
+	29	Smyth
+			name:	LOCATION				29-30	Smyth Road 
+	30	Road
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Main Street is home to the Cuban embassy , Immaculata High School and Saint Paul University .
+
+
+Treebanked sentence:
+--------------------
+Main Street is home to the Cuban embassy , Immaculata High School and Saint Paul University . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Main) (NNP Street))
+    (VP (VBZ is)
+      (ADVP (RB home))
+      (PP (IN to)
+        (NP
+          (NP (DT the) (JJ Cuban) (NN embassy))
+          (, ,)
+          (NP (NNP Immaculata) (NNP High) (NNP School))
+          (CC and)
+          (NP (NNP Saint) (NNP Paul) (NNP University)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Main
+			coref:	IDENT			3	0-1	Main Street 
+	1	Street
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Main Street 
+			N-ARG-A2		3-15	home to the Cuban embassy , Immaculata High School and Saint Paul University 
+	3	home
+			sense:	home.r.01
+	4	to
+	5	the
+	6	Cuban
+			name:	NATIONALITY				6-6	Cuban 
+	7	embassy
+			sense:	embassy.n.01
+	8	,
+	9	Immaculata
+			name:	ORGANIZATION				9-15	Immaculata High School and Saint Paul University 
+	10	High
+	11	School
+	12	and
+	13	Saint
+	14	Paul
+	15	University
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+For most of its length it runs parallel with the Rideau River and the Rideau Canal , being about halfway between them .
+
+
+Treebanked sentence:
+--------------------
+For most of its length it runs parallel with the Rideau River and the Rideau Canal , being about halfway between them . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN For)
+      (NP
+        (NP (JJS most))
+        (PP (IN of)
+          (NP (PRP$ its) (NN length)))))
+    (NP (PRP it))
+    (VP (VBZ runs)
+      (ADJP (JJ parallel))
+      (PP (IN with)
+        (NP
+          (NP (DT the) (NNP Rideau) (NNP River))
+          (CC and)
+          (NP (DT the) (NNP Rideau) (NNP Canal))))
+      (, ,)
+      (S
+        (VP (VBG being)
+          (ADJP (RB about) (RB halfway)
+            (PP (IN between)
+              (NP (PRP them)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	For
+	1	most
+			sense:	most.a.02
+	2	of
+	3	its
+			coref:	IDENT			3	3-3	its 
+	4	length
+			sense:	length.n.01
+	5	it
+			coref:	IDENT			3	5-5	it 
+	6	runs
+			sense:	run.v.03
+			prop:	run.04
+			V		6-6	runs 
+			N-ARGM-TMP		0-4	For most of its length 
+			N-ARG-A1		5-5	it 
+			N-ARGM-MNR		7-15	parallel with the Rideau River and the Rideau Canal 
+			N-ARGM-ADV		17-21	being about halfway between them 
+	7	parallel
+			sense:	parallel.a.01
+	8	with
+	9	the
+			coref:	IDENT			1	9-15	the Rideau River and the Rideau Canal 
+	10	Rideau
+			name:	LOCATION				10-10	Rideau 
+	11	River
+			name:	TITLE				11-11	River 
+	12	and
+	13	the
+	14	Rideau
+			name:	LOCATION				14-15	Rideau Canal 
+	15	Canal
+	16	,
+	17	being
+			sense:	be.v.03
+			prop:	be.01
+			V		17-17	being 
+			N-ARG-A1		5-5	it 
+			N-ARG-A2		18-21	about halfway between them 
+	18	about
+			sense:	approximately.r.01
+	19	halfway
+			sense:	halfway.r.01
+	20	between
+	21	them
+			coref:	IDENT			1	21-21	them 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Despite the name , the street is not Ottawa 's " main street " , as one would argue that that title would be held by Bank Street .
+
+
+Treebanked sentence:
+--------------------
+Despite the name , the street is not Ottawa 's " main street " , as one would argue that that title would be held by Bank Street . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Despite)
+      (NP (DT the) (NN name)))
+    (, ,)
+    (NP (DT the) (NN street))
+    (VP (VBZ is) (RB not)
+      (NP
+        (NP
+          (NP (NNP Ottawa) (POS 's))
+          (`` ") (JJ main) (NN street) ('' "))
+        (, ,)
+        (SBAR (IN as)
+          (S
+            (NP (PRP one))
+            (VP (MD would)
+              (VP (VB argue)
+                (SBAR (IN that)
+                  (S
+                    (NP (DT that) (NN title))
+                    (VP (MD would)
+                      (VP (VB be)
+                        (VP (VBN held)
+                          (PP (IN by)
+                            (NP (NNP Bank) (NNP Street))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Despite
+	1	the
+			coref:	IDENT			0	1-2	the name 
+	2	name
+			sense:	name.n.01
+	3	,
+	4	the
+			coref:	IDENT			3	4-5	the street 
+	5	street
+			sense:	street.n.01
+	6	is
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	is 
+			N-ARGM-ADV		0-2	Despite the name 
+			N-ARG-A1		4-5	the street 
+			N-ARGM-NEG		7-7	not 
+			N-ARG-A2		8-13	Ottawa 's " main street " 
+			N-ARGM-ADV		15-27	as one would argue that that title would be held by Bank Street 
+	7	not
+			sense:	not.r.01
+	8	Ottawa
+			name:	CITY				8-8	Ottawa 
+	9	's
+	10	"
+	11	main
+			sense:	chief.s.01
+	12	street
+			sense:	street.n.01
+	13	"
+	14	,
+	15	as
+	16	one
+			name:	NUMBER				16-16	one 
+	17	would
+	18	argue
+			sense:	argue.v.01
+			prop:	argue.01
+			V		18-18	argue 
+			N-ARG-A0		16-16	one 
+			N-ARGM-MOD		17-17	would 
+			N-ARG-A1		19-27	that that title would be held by Bank Street 
+	19	that
+	20	that
+	21	title
+			sense:	title.n.07
+	22	would
+	23	be
+			sense:	be.v.01
+			prop:	be.03
+			V		23-23	be 
+	24	held
+			sense:	bear.v.11
+			prop:	hold.01
+			V		24-24	held 
+			N-ARG-A1		20-21	that title 
+			N-ARGM-MOD		22-22	would 
+			N-ARG-A0		25-27	by Bank Street 
+	25	by
+	26	Bank
+			coref:	IDENT			3	26-27	Bank Street 
+			name:	ORGANIZATION				26-27	Bank Street 
+	27	Street
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Main Street however is the " main street " for the community of Ottawa East .
+
+
+Treebanked sentence:
+--------------------
+Main Street however is the " main street " for the community of Ottawa East . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Main) (NNP Street))
+    (ADVP (RB however))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (`` ") (JJ main) (NN street) ('' "))
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NN community))
+            (PP (IN of)
+              (NP (NNP Ottawa) (NNP East)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Main
+			coref:	IDENT			3	0-1	Main Street 
+	1	Street
+	2	however
+			sense:	however.r.01
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-1	Main Street 
+			N-ARGM-ADV		2-2	however 
+			N-ARG-A2		4-14	the " main street " for the community of Ottawa East 
+	4	the
+	5	"
+	6	main
+			sense:	chief.s.01
+	7	street
+			sense:	street.n.01
+	8	"
+	9	for
+	10	the
+			coref:	IDENT			2	10-14	the community of Ottawa East 
+	11	community
+			sense:	community.n.01
+	12	of
+	13	Ottawa
+			name:	CITY				13-13	Ottawa 
+	14	East
+			name:	LOCATION				14-14	East 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was originally the main street of Archville , Ontario , which later amalgamated with Ottawa in 1907 .
+
+
+Treebanked sentence:
+--------------------
+It was originally the main street of Archville , Ontario , which later amalgamated with Ottawa in 1907 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (ADVP (RB originally))
+      (NP
+        (NP (DT the) (JJ main) (NN street))
+        (PP (IN of)
+          (NP
+            (NP (NNP Archville) (, ,) (NNP Ontario))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (ADJP
+                  (ADJP
+                    (ADVP (RBR later))
+                    (JJ amalgamated)
+                    (PP (IN with)
+                      (NP (NNP Ottawa))))
+                  (PP (IN in)
+                    (NP (CD 1907))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		2-2	originally 
+			N-ARG-A2		3-17	the main street of Archville , Ontario , which later amalgamated with Ottawa in 1907 
+	2	originally
+			sense:	primitively.r.01
+	3	the
+	4	main
+			sense:	chief.s.01
+	5	street
+			sense:	street.n.01
+	6	of
+	7	Archville
+			name:	LOCATION				7-7	Archville 
+	8	,
+	9	Ontario
+			name:	STATE_OR_PROVINCE				9-9	Ontario 
+	10	,
+	11	which
+	12	later
+			sense:	recently.r.01
+	13	amalgamated
+			name:	MISC				13-13	amalgamated 
+			sense:	amalgamate.s.01
+	14	with
+	15	Ottawa
+			name:	CITY				15-15	Ottawa 
+	16	in
+	17	1907
+			name:	DATE				17-17	1907 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At that time Ottawa had no other street called Main and the name was not changed .
+
+
+Treebanked sentence:
+--------------------
+At that time Ottawa had no other street called Main and the name was not changed . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN At)
+        (NP (DT that) (NN time)))
+      (NP (NNP Ottawa))
+      (VP (VBD had)
+        (NP
+          (NP (DT no) (JJ other) (NN street))
+          (VP (VBN called)
+            (NP (NNP Main))))))
+    (CC and)
+    (S
+      (NP (DT the) (NN name))
+      (VP (VBD was) (RB not)
+        (VP (VBN changed))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	that
+	2	time
+			sense:	time.n.03
+	3	Ottawa
+			name:	CITY				3-3	Ottawa 
+	4	had
+			sense:	have.v.02
+			prop:	have.03
+			V		4-4	had 
+			N-ARGM-TMP		0-2	At that time 
+			N-ARG-A0		3-3	Ottawa 
+			N-ARG-A1		5-9	no other street called Main 
+	5	no
+	6	other
+			sense:	other.a.01
+	7	street
+			sense:	street.n.01
+	8	called
+			sense:	name.v.01
+			prop:	call.01
+			V		8-8	called 
+			N-ARG-A1		5-7	no other street 
+			N-ARG-A2		9-9	Main 
+	9	Main
+	10	and
+	11	the
+			coref:	IDENT			0	11-12	the name 
+	12	name
+			sense:	name.n.01
+	13	was
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	was 
+	14	not
+			sense:	not.r.01
+	15	changed
+			sense:	change.v.01
+			prop:	change.01
+			V		15-15	changed 
+			N-ARG-A1		11-12	the name 
+			N-ARGM-NEG		14-14	not 
+	16	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.1-2	the name 
+				7.11-12	the name 
+	Chain 1 (IDENT)
+				3.9-15	the Rideau River and the Rideau Canal 
+				3.21-21	them 
+	Chain 2 (IDENT)
+				1.8-12	the community of Sandy Hill 
+				1.21-21	it 
+				5.10-14	the community of Ottawa East 
+				6.0-0	It 
+	Chain 3 (IDENT)
+				0.0-1	Main Street 
+				1.0-1	Main Street 
+				2.0-1	Main Street 
+				3.3-3	its 
+				3.5-5	it 
+				4.4-5	the street 
+				4.26-27	Bank Street 
+				5.0-1	Main Street 
+

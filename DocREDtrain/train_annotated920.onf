@@ -1,0 +1,612 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Black House is a horror novel by American writers Stephen King and Peter Straub .
+
+
+Treebanked sentence:
+--------------------
+Black House is a horror novel by American writers Stephen King and Peter Straub . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Black) (NNP House))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN horror) (NN novel))
+        (PP (IN by)
+          (NP
+            (NP
+              (NML (JJ American) (NNS writers))
+              (NNP Stephen) (NNP King))
+            (CC and)
+            (NP (NNP Peter) (NNP Straub))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Black
+			coref:	IDENT			2	0-1	Black House 
+			name:	ORGANIZATION				0-1	Black House 
+	1	House
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Black House 
+			N-ARG-A2		3-13	a horror novel by American writers Stephen King and Peter Straub 
+	3	a
+	4	horror
+			sense:	horror.n.01
+	5	novel
+			sense:	novel.n.01
+	6	by
+	7	American
+			coref:	IDENT			3	7-13	American writers Stephen King and Peter Straub 
+			name:	NATIONALITY				7-7	American 
+	8	writers
+			sense:	writer.n.01
+	9	Stephen
+			name:	PERSON				9-10	Stephen King 
+	10	King
+	11	and
+	12	Peter
+			coref:	IDENT			0	12-13	Peter Straub 
+			name:	PERSON				12-13	Peter Straub 
+	13	Straub
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Published in 2001 , it is the sequel to The Talisman .
+
+
+Treebanked sentence:
+--------------------
+Published in 2001 , it is the sequel to The Talisman . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Published)
+        (PP (IN in)
+          (NP (CD 2001)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN sequel))
+        (PP (IN to)
+          (NP (DT The) (NNP Talisman)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Published
+			sense:	print.v.01
+			prop:	publish.01
+			V		0-0	Published 
+			N-ARGM-TMP		1-2	in 2001 
+			N-ARG-A1		4-4	it 
+	1	in
+	2	2001
+			name:	DATE				2-2	2001 
+	3	,
+	4	it
+			coref:	IDENT			2	4-4	it 
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			R-ARG-A1		0-2	Published in 2001 
+			N-ARG-A1		4-4	it 
+			N-ARG-A2		6-10	the sequel to The Talisman 
+	6	the
+	7	sequel
+			sense:	sequel.n.01
+	8	to
+	9	The
+	10	Talisman
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This is one of King 's numerous novels , which also include Hearts in Atlantis and Insomnia , that tie in with the Dark Tower series .
+
+
+Treebanked sentence:
+--------------------
+This is one of King 's numerous novels , which also include Hearts in Atlantis and Insomnia , that tie in with the Dark Tower series . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (NNP King) (POS 's))
+              (JJ numerous) (NNS novels))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (ADVP (RB also))
+                (VP (VBP include)
+                  (NP
+                    (NP
+                      (NP (NNS Hearts))
+                      (PP (IN in)
+                        (NP (NNP Atlantis)
+                          (CC and)
+                          (NNP Insomnia))))
+                    (, ,)
+                    (NP
+                      (NP (DT that) (NN tie))
+                      (PP (IN in)
+                        (PP (IN with)
+                          (NP (DT the) (NNP Dark) (NNP Tower) (NN series)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+			coref:	IDENT			3	0-0	This 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	This 
+			N-ARG-A2		2-25	one of King 's numerous novels , which also include Hearts in Atlantis and Insomnia , that tie in with the Dark Tower series 
+	2	one
+			name:	NUMBER				2-2	one 
+	3	of
+	4	King
+			coref:	IDENT			1	4-5	King 's 
+			name:	ORGANIZATION				4-4	King 
+	5	's
+	6	numerous
+			sense:	numerous.s.01
+	7	novels
+			sense:	novel.n.01
+	8	,
+	9	which
+	10	also
+			sense:	besides.r.02
+	11	include
+			sense:	include.v.01
+			prop:	include.01
+			V		11-11	include 
+			N-ARG-A2		4-7	King 's numerous novels 
+			R-ARG-A2		9-9	which 
+			N-ARGM-DIS		10-10	also 
+			N-ARG-A1		12-25	Hearts in Atlantis and Insomnia , that tie in with the Dark Tower series 
+	12	Hearts
+			name:	ORGANIZATION				12-12	Hearts 
+			sense:	center.n.01
+	13	in
+	14	Atlantis
+	15	and
+	16	Insomnia
+	17	,
+	18	that
+	19	tie
+			sense:	link.n.02
+	20	in
+	21	with
+	22	the
+	23	Dark
+			name:	MISC				23-24	Dark Tower 
+	24	Tower
+	25	series
+			sense:	series.n.01
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Black House was nominated to the Bram Stoker Award for Best Novel .
+
+
+Treebanked sentence:
+--------------------
+Black House was nominated to the Bram Stoker Award for Best Novel . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Black) (NNP House))
+    (VP (VBD was)
+      (VP (VBN nominated)
+        (PP (IN to)
+          (NP (DT the) (NNP Bram) (NNP Stoker) (NNP Award)))
+        (PP (IN for)
+          (NP
+            (NP (JJS Best))
+            (NP (JJ Novel))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Black
+			coref:	IDENT			2	0-1	Black House 
+			name:	ORGANIZATION				0-1	Black House 
+	1	House
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	nominated
+			sense:	nominate.v.01
+			prop:	nominate.01
+			V		3-3	nominated 
+			N-ARG-A1		0-1	Black House 
+			N-ARG-A2		4-11	to the Bram Stoker Award for Best Novel 
+	4	to
+	5	the
+	6	Bram
+	7	Stoker
+	8	Award
+	9	for
+	10	Best
+			sense:	good.a.01
+	11	Novel
+			sense:	fresh.s.04
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The novel is set in Straub 's homeland Wisconsin , rather than in King 's frequently used backdrop of Maine .
+
+
+Treebanked sentence:
+--------------------
+The novel is set in Straub 's homeland Wisconsin , rather than in King 's frequently used backdrop of Maine . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN novel))
+    (VP (VBZ is)
+      (VP (VBN set)
+        (PP
+          (PP (IN in)
+            (NP
+              (NP (NNP Straub) (POS 's))
+              (NN homeland) (NNP Wisconsin)))
+          (, ,)
+          (CONJP (RB rather) (IN than))
+          (PP (IN in)
+            (NP
+              (NP
+                (NP (NNP King) (POS 's))
+                (ADJP (RB frequently) (VBN used))
+                (NN backdrop))
+              (PP (IN of)
+                (NP (NNP Maine))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	novel
+			sense:	novel.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	set
+			sense:	set.v.09
+			prop:	set.01
+			V		3-3	set 
+			N-ARG-A1		0-1	The novel 
+			N-ARG-A2		4-19	in Straub 's homeland Wisconsin , rather than in King 's frequently used backdrop of Maine 
+	4	in
+	5	Straub
+			coref:	IDENT			0	5-6	Straub 's 
+			name:	PERSON				5-5	Straub 
+	6	's
+	7	homeland
+			sense:	fatherland.n.01
+	8	Wisconsin
+			name:	STATE_OR_PROVINCE				8-8	Wisconsin 
+	9	,
+	10	rather
+			sense:	rather.r.01
+	11	than
+	12	in
+	13	King
+			coref:	IDENT			1	13-14	King 's 
+			name:	ORGANIZATION				13-13	King 
+	14	's
+	15	frequently
+			sense:	frequently.r.01
+	16	used
+			sense:	use.v.01
+			prop:	use.01
+			V		16-16	used 
+			N-ARGM-TMP		15-15	frequently 
+			N-ARG-A1		17-17	backdrop 
+	17	backdrop
+			sense:	backdrop.n.01
+	18	of
+	19	Maine
+			name:	STATE_OR_PROVINCE				19-19	Maine 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The town of " French Landing " is a fictionalized version of the town of Trempealeau , Wisconsin .
+
+
+Treebanked sentence:
+--------------------
+The town of " French Landing " is a fictionalized version of the town of Trempealeau , Wisconsin . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN town))
+      (PP (IN of) (`` ")
+        (NP (JJ French) (NN Landing))
+        ('' ")))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ fictionalized) (NN version))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN town))
+            (PP (IN of)
+              (NP (NNP Trempealeau) (, ,) (NNP Wisconsin)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	town
+			sense:	town.n.01
+	2	of
+	3	"
+	4	French
+			name:	NATIONALITY				4-4	French 
+	5	Landing
+			name:	MISC				5-5	Landing 
+			sense:	landing.n.02
+	6	"
+	7	is
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		0-6	The town of " French Landing " 
+			N-ARG-A2		8-17	a fictionalized version of the town of Trempealeau , Wisconsin 
+	8	a
+	9	fictionalized
+	10	version
+			sense:	version.n.02
+	11	of
+	12	the
+	13	town
+			sense:	town.n.01
+	14	of
+	15	Trempealeau
+			name:	LOCATION				15-15	Trempealeau 
+	16	,
+	17	Wisconsin
+			name:	STATE_OR_PROVINCE				17-17	Wisconsin 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Also , " Centralia " is named after the nearby small town of Centerville , Wisconsin , located at the intersection of Hwy 93 and Hwy 35 .
+
+
+Treebanked sentence:
+--------------------
+Also , " Centralia " is named after the nearby small town of Centerville , Wisconsin , located at the intersection of Hwy 93 and Hwy 35 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (, ,)
+    (NP (`` ") (NNP Centralia) ('' "))
+    (VP (VBZ is)
+      (VP (VBN named)
+        (PP (IN after)
+          (NP
+            (NP
+              (NP (DT the) (JJ nearby) (JJ small) (NN town))
+              (PP (IN of)
+                (NP (NNP Centerville) (, ,) (NNP Wisconsin))))
+            (, ,)
+            (VP (VBN located)
+              (PP (IN at)
+                (NP
+                  (NP (DT the) (NN intersection))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNP Hwy) (CD 93))
+                      (CC and)
+                      (NP (NNP Hwy) (CD 35)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Also
+			sense:	besides.r.02
+	1	,
+	2	"
+	3	Centralia
+			name:	CITY				3-3	Centralia 
+	4	"
+	5	is
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	is 
+	6	named
+			sense:	name.v.01
+			prop:	name.02
+			V		6-6	named 
+			N-ARGM-DIS		0-0	Also 
+			N-ARG-A1		2-4	" Centralia " 
+			N-ARG-A2		7-26	after the nearby small town of Centerville , Wisconsin , located at the intersection of Hwy 93 and Hwy 35 
+	7	after
+	8	the
+	9	nearby
+			sense:	nearby.s.01
+	10	small
+			sense:	small.a.01
+	11	town
+			sense:	town.n.01
+	12	of
+	13	Centerville
+			name:	CITY				13-13	Centerville 
+	14	,
+	15	Wisconsin
+			name:	STATE_OR_PROVINCE				15-15	Wisconsin 
+	16	,
+	17	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		17-17	located 
+			N-ARG-A1		8-15	the nearby small town of Centerville , Wisconsin 
+			N-ARGM-LOC		18-26	at the intersection of Hwy 93 and Hwy 35 
+	18	at
+	19	the
+	20	intersection
+			sense:	intersection.n.02
+	21	of
+	22	Hwy
+	23	93
+			name:	NUMBER				23-23	93 
+	24	and
+	25	Hwy
+	26	35
+			name:	NUMBER				26-26	35 
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A chapter of the book is written around Edgar Allan Poe 's poem " The Raven " .
+
+
+Treebanked sentence:
+--------------------
+A chapter of the book is written around Edgar Allan Poe 's poem " The Raven " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN chapter))
+      (PP (IN of)
+        (NP (DT the) (NN book))))
+    (VP (VBZ is)
+      (VP (VBN written)
+        (PP (IN around)
+          (NP
+            (NP
+              (NP (NNP Edgar) (NNP Allan) (NNP Poe) (POS 's))
+              (NN poem))
+            (`` ")
+            (NP (DT The) (NN Raven))
+            ('' ")))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	chapter
+			sense:	chapter.n.01
+	2	of
+	3	the
+	4	book
+			sense:	book.n.01
+	5	is
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	is 
+	6	written
+			sense:	write.v.01
+			prop:	write.01
+			V		6-6	written 
+			N-ARG-A1		0-4	A chapter of the book 
+			N-ARGM-MNR		7-16	around Edgar Allan Poe 's poem " The Raven " 
+	7	around
+	8	Edgar
+			name:	PERSON				8-10	Edgar Allan Poe 
+	9	Allan
+	10	Poe
+	11	's
+	12	poem
+			sense:	poem.n.01
+	13	"
+	14	The
+	15	Raven
+			name:	MISC				15-15	Raven 
+			sense:	raven.n.01
+	16	"
+	17	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.12-13	Peter Straub 
+				4.5-6	Straub 's 
+	Chain 1 (IDENT)
+				2.4-5	King 's 
+				4.13-14	King 's 
+	Chain 2 (IDENT)
+				0.0-1	Black House 
+				1.4-4	it 
+				3.0-1	Black House 
+	Chain 3 (IDENT)
+				0.7-13	American writers Stephen King and Peter Straub 
+				2.0-0	This 
+

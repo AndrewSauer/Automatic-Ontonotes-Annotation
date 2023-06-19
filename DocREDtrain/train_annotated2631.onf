@@ -1,0 +1,870 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Rudolf Koechlin ( 11 November 1862 – 11 February 1939 ) was an Austrian mineralogist .
+
+
+Treebanked sentence:
+--------------------
+Rudolf Koechlin ( 11 November 1862 – 11 February 1939 ) was an Austrian mineralogist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Rudolf) (NNP Koechlin))
+      (-LRB- -LRB-)
+      (NP
+        (NP
+          (NP (CD 11))
+          (NP-TMP (NNP November) (CD 1862))
+          (PP (SYM –)
+            (NP (CD 11))))
+        (NP-TMP (NNP February) (CD 1939)))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT an)
+        (NML (JJ Austrian) (NN mineralogist))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Rudolf
+			coref:	IDENT			1	0-1	Rudolf Koechlin 
+			name:	PERSON				0-1	Rudolf Koechlin 
+	1	Koechlin
+	2	(
+	3	11
+			name:	DATE				3-5	11 November 1862 
+	4	November
+	5	1862
+	6	–
+	7	11
+			name:	DATE				7-9	11 February 1939 
+	8	February
+	9	1939
+	10	)
+	11	was
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	was 
+			N-ARG-A1		0-10	Rudolf Koechlin ( 11 November 1862 – 11 February 1939 ) 
+			N-ARG-A2		12-14	an Austrian mineralogist 
+	12	an
+	13	Austrian
+			name:	NATIONALITY				13-13	Austrian 
+	14	mineralogist
+			name:	TITLE				14-14	mineralogist 
+			sense:	mineralogist.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Koechlin was born and died in Vienna .
+
+
+Treebanked sentence:
+--------------------
+Koechlin was born and died in Vienna . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Koechlin))
+    (VP (VBD was)
+      (VP (VBN born)
+        (CC and)
+        (VBN died)
+        (PP (IN in)
+          (NP (NNP Vienna)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Koechlin
+			coref:	IDENT			1	0-0	Koechlin 
+			name:	PERSON				0-0	Koechlin 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Koechlin 
+	3	and
+	4	died
+			sense:	die.v.01
+			prop:	die.01
+			V		4-4	died 
+			N-ARG-A1		0-0	Koechlin 
+			N-ARGM-LOC		5-6	in Vienna 
+	5	in
+	6	Vienna
+			coref:	IDENT			0	6-6	Vienna 
+			name:	CITY				6-6	Vienna 
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He studied mineralogy , crystallography , petrology and geology at the University of Vienna , obtaining his doctorate in 1887 with a thesis on manganite , polianite and pyrolusite .
+
+
+Treebanked sentence:
+--------------------
+He studied mineralogy , crystallography , petrology and geology at the University of Vienna , obtaining his doctorate in 1887 with a thesis on manganite , polianite and pyrolusite . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD studied)
+      (NP (NN mineralogy) (, ,) (NN crystallography) (, ,) (NN petrology)
+        (CC and)
+        (NN geology))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NNP University))
+          (PP (IN of)
+            (NP (NNP Vienna)))))
+      (, ,)
+      (S
+        (VP (VBG obtaining)
+          (NP (PRP$ his) (NN doctorate))
+          (PP (IN in)
+            (NP (CD 1887)))
+          (PP (IN with)
+            (NP
+              (NP (DT a) (NN thesis))
+              (PP (IN on)
+                (NP (NN manganite) (, ,) (NN polianite)
+                  (CC and)
+                  (NN pyrolusite))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	studied
+			sense:	learn.v.04
+			prop:	study.01
+			V		1-1	studied 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-8	mineralogy , crystallography , petrology and geology 
+			N-ARGM-LOC		9-13	at the University of Vienna 
+			N-ARGM-PRD		15-28	obtaining his doctorate in 1887 with a thesis on manganite , polianite and pyrolusite 
+	2	mineralogy
+			sense:	mineralogy.n.01
+	3	,
+	4	crystallography
+			sense:	crystallography.n.01
+	5	,
+	6	petrology
+			sense:	petrology.n.01
+	7	and
+	8	geology
+			sense:	geology.n.01
+	9	at
+	10	the
+	11	University
+			name:	ORGANIZATION				11-13	University of Vienna 
+	12	of
+	13	Vienna
+	14	,
+	15	obtaining
+			sense:	obtain.v.01
+			prop:	obtain.01
+			V		15-15	obtaining 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		16-17	his doctorate 
+			N-ARGM-TMP		18-19	in 1887 
+			N-ARGM-MNR		20-28	with a thesis on manganite , polianite and pyrolusite 
+	16	his
+			coref:	IDENT			1	16-16	his 
+	17	doctorate
+			sense:	doctors_degree.n.01
+	18	in
+	19	1887
+			name:	DATE				19-19	1887 
+	20	with
+	21	a
+	22	thesis
+			sense:	dissertation.n.01
+	23	on
+	24	manganite
+			sense:	manganite.n.01
+	25	,
+	26	polianite
+	27	and
+	28	pyrolusite
+			sense:	pyrolusite.n.01
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At Vienna , his instructors included Gustav Tschermak and Albrecht Schrauf .
+
+
+Treebanked sentence:
+--------------------
+At Vienna , his instructors included Gustav Tschermak and Albrecht Schrauf . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (NNP Vienna)))
+    (, ,)
+    (NP (PRP$ his) (NNS instructors))
+    (VP (VBD included)
+      (NP
+        (NP (NNP Gustav) (NNP Tschermak))
+        (CC and)
+        (NP (NNP Albrecht) (NNP Schrauf))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	Vienna
+			coref:	IDENT			0	1-1	Vienna 
+			name:	CITY				1-1	Vienna 
+	2	,
+	3	his
+			coref:	IDENT			1	3-3	his 
+	4	instructors
+			sense:	teacher.n.01
+	5	included
+			sense:	include.v.01
+			prop:	include.01
+			V		5-5	included 
+			N-ARGM-LOC		0-1	At Vienna 
+			N-ARG-A2		3-4	his instructors 
+			N-ARG-A1		6-10	Gustav Tschermak and Albrecht Schrauf 
+	6	Gustav
+			name:	PERSON				6-7	Gustav Tschermak 
+	7	Tschermak
+	8	and
+	9	Albrecht
+			name:	PERSON				9-10	Albrecht Schrauf 
+	10	Schrauf
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1884 he began work as a volunteer in the mineralogical - petrography department of the Naturhistorisches Hofmuseum in Vienna .
+
+
+Treebanked sentence:
+--------------------
+In 1884 he began work as a volunteer in the mineralogical - petrography department of the Naturhistorisches Hofmuseum in Vienna . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1884)))
+    (NP (PRP he))
+    (VP (VBD began)
+      (NP (NN work))
+      (PP (IN as)
+        (NP
+          (NP (DT a) (NN volunteer))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (JJ mineralogical) (HYPH -) (NN petrography) (NN department))
+              (PP (IN of)
+                (NP (DT the) (NNPS Naturhistorisches) (NNP Hofmuseum)))))))
+      (PP (IN in)
+        (NP (NNP Vienna))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1884
+			name:	DATE				1-1	1884 
+	2	he
+			coref:	IDENT			1	2-2	he 
+	3	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		3-3	began 
+			N-ARGM-TMP		0-1	In 1884 
+			N-ARG-A0		2-2	he 
+			N-ARG-A1		4-19	work as a volunteer in the mineralogical - petrography department of the Naturhistorisches Hofmuseum in Vienna 
+	4	work
+			sense:	employment.n.02
+	5	as
+	6	a
+	7	volunteer
+			sense:	volunteer.n.02
+	8	in
+	9	the
+	10	mineralogical
+	11	-
+	12	petrography
+	13	department
+			sense:	department.n.01
+	14	of
+	15	the
+	16	Naturhistorisches
+	17	Hofmuseum
+	18	in
+	19	Vienna
+			coref:	IDENT			0	19-19	Vienna 
+			name:	CITY				19-19	Vienna 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1897 he became a " custos - adjunct " , later named a curator first - class ( 1912 ) , and in 1920 , was appointed director of the mineralogical - petrography department .
+
+
+Treebanked sentence:
+--------------------
+In 1897 he became a " custos - adjunct " , later named a curator first - class ( 1912 ) , and in 1920 , was appointed director of the mineralogical - petrography department . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1897)))
+    (NP (PRP he))
+    (VP
+      (VP (VBD became)
+        (NP
+          (NP (DT a) (`` ") (NN custos) (HYPH -) (NN adjunct) ('' "))
+          (, ,)
+          (VP
+            (ADVP (RB later))
+            (VBN named)
+            (S
+              (NP
+                (NP (DT a) (NN curator))
+                (NP (RB first) (HYPH -) (NN class))))))
+        (PRN (-LRB- -LRB-)
+          (NP (CD 1912))
+          (-RRB- -RRB-)))
+      (, ,)
+      (CC and)
+      (VP
+        (PP (IN in)
+          (NP (CD 1920)))
+        (, ,) (VBD was)
+        (VP (VBN appointed)
+          (NP
+            (NP (NN director))
+            (PP (IN of)
+              (NP (DT the) (JJ mineralogical) (HYPH -) (NN petrography) (NN department)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1897
+			name:	DATE				1-1	1897 
+	2	he
+			coref:	IDENT			1	2-2	he 
+	3	became
+			sense:	become.v.02
+			prop:	become.01
+			V		3-3	became 
+			N-ARGM-TMP		0-1	In 1897 
+			N-ARG-A1		2-2	he 
+			N-ARG-A2		4-20	a " custos - adjunct " , later named a curator first - class ( 1912 ) 
+	4	a
+	5	"
+	6	custos
+	7	-
+	8	adjunct
+			sense:	adjunct.n.02
+	9	"
+	10	,
+	11	later
+			sense:	subsequently.r.01
+	12	named
+			sense:	name.v.03
+			prop:	name.01
+			V		12-12	named 
+			N-ARG-A1		2-2	he 
+			N-ARGM-TMP		11-11	later 
+			N-ARG-A2		13-17	a curator first - class 
+	13	a
+	14	curator
+			name:	TITLE				14-14	curator 
+			sense:	curator.n.01
+	15	first
+			name:	ORDINAL				15-15	first 
+			sense:	first.r.03
+	16	-
+	17	class
+			sense:	class.n.03
+	18	(
+	19	1912
+			name:	DATE				19-19	1912 
+	20	)
+	21	,
+	22	and
+	23	in
+	24	1920
+			name:	DATE				24-24	1920 
+	25	,
+	26	was
+			sense:	be.v.01
+			prop:	be.03
+			V		26-26	was 
+	27	appointed
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		27-27	appointed 
+			N-ARG-A1		2-2	he 
+			N-ARGM-TMP		23-24	in 1920 
+			N-ARG-A2		28-34	director of the mineralogical - petrography department 
+	28	director
+			name:	TITLE				28-28	director 
+			sense:	director.n.01
+	29	of
+	30	the
+	31	mineralogical
+	32	-
+	33	petrography
+	34	department
+			sense:	department.n.01
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His scientific research largely dealt with minerals found in the Tauern region in Austria , e.g. 
+
+
+Treebanked sentence:
+--------------------
+His scientific research largely dealt with minerals found in the Tauern region in Austria , e.g. bornite , euclase and sphene as well as the salt minerals glauberite and simonyite from the salt mine at Hallstatt . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP$ His) (JJ scientific) (NN research))
+      (ADVP (RB largely))
+      (VP (VBD dealt)
+        (PP (IN with)
+          (NP
+            (NP (NNS minerals))
+            (VP (VBN found)
+              (PP (IN in)
+                (NP (DT the) (NNP Tauern) (NN region)))
+              (PP (IN in)
+                (NP (NNP Austria))))))))
+    (, ,)
+    (S
+      (NP
+        (NP
+          (ADVP (FW e.g.))
+          (NP (FW bornite))
+          (, ,)
+          (NP (NN euclase))
+          (CC and)
+          (NP (NN sphene)))
+        (CONJP (RB as) (RB well) (IN as))
+        (NP (DT the) (NN salt) (NNS minerals)))
+      (ADJP (JJ glauberite)))
+    (CC and)
+    (S
+      (NP
+        (NP (NN simonyite))
+        (PP (IN from)
+          (NP (DT the) (NN salt) (NN mine))))
+      (PP (IN at)
+        (NP (NNP Hallstatt))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			1	0-0	His 
+	1	scientific
+			sense:	scientific.a.02
+	2	research
+			sense:	research.n.01
+	3	largely
+			sense:	largely.r.01
+	4	dealt
+			sense:	cover.v.05
+			prop:	deal.01
+			V		4-4	dealt 
+			N-ARG-A0		0-2	His scientific research 
+			N-ARGM-ADV		3-3	largely 
+			N-ARG-A1		5-35	with minerals found in the Tauern region in Austria , e.g. bornite , euclase and sphene as well as the salt minerals glauberite and simonyite from the salt mine at Hallstatt 
+	5	with
+	6	minerals
+			sense:	mineral.n.01
+	7	found
+			sense:	find.v.01
+			prop:	find.01
+			V		7-7	found 
+			N-ARG-A1		6-6	minerals 
+			N-ARGM-LOC		8-13	in the Tauern region in Austria 
+	8	in
+	9	the
+	10	Tauern
+	11	region
+			sense:	region.n.01
+	12	in
+	13	Austria
+			name:	COUNTRY				13-13	Austria 
+	14	,
+	15	e.g.
+	16	bornite
+	17	,
+	18	euclase
+	19	and
+	20	sphene
+	21	as
+			sense:	equally.r.01
+	22	well
+			sense:	well.r.02
+	23	as
+	24	the
+	25	salt
+			sense:	salt.n.01
+	26	minerals
+			sense:	mineral.n.01
+	27	glauberite
+	28	and
+	29	simonyite
+	30	from
+	31	the
+	32	salt
+			sense:	salt.n.01
+	33	mine
+			sense:	mine.n.01
+	34	at
+	35	Hallstatt
+			name:	LOCATION				35-35	Hallstatt 
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The mineral koechlinite is named in his honor .
+
+
+Treebanked sentence:
+--------------------
+The mineral koechlinite is named in his honor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN mineral) (NN koechlinite))
+    (VP (VBZ is)
+      (VP (VBN named)
+        (PP (IN in)
+          (NP (PRP$ his) (NN honor)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	mineral
+			sense:	mineral.n.01
+	2	koechlinite
+	3	is
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	is 
+	4	named
+			sense:	name.v.01
+			prop:	name.01
+			V		4-4	named 
+			N-ARG-A1		0-2	The mineral koechlinite 
+	5	in
+	6	his
+			coref:	IDENT			1	6-6	his 
+	7	honor
+			sense:	honor.n.02
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was the author of around 70 scientific papers and made important contributions towards publication of the " Mineralogisches Taschenbuch " ( first edition , 1911 ) .
+
+
+Treebanked sentence:
+--------------------
+He was the author of around 70 scientific papers and made important contributions towards publication of the " Mineralogisches Taschenbuch " ( first edition , 1911 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (NP
+          (NP (DT the) (NN author))
+          (PP (IN of)
+            (NP
+              (QP (RB around) (CD 70))
+              (JJ scientific) (NNS papers)))))
+      (CC and)
+      (VP (VBD made)
+        (NP (JJ important) (NNS contributions))
+        (PP (IN towards)
+          (NP
+            (NP (NN publication))
+            (PP (IN of)
+              (NP (DT the) (`` ") (NNP Mineralogisches) (NNP Taschenbuch) ('' "))))))
+      (PRN (-LRB- -LRB-)
+        (ADVP (RB first))
+        (NP (NN edition) (, ,) (CD 1911))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-8	the author of around 70 scientific papers 
+	2	the
+	3	author
+			name:	TITLE				3-3	author 
+			sense:	writer.n.01
+	4	of
+	5	around
+			sense:	approximately.r.01
+	6	70
+			name:	NUMBER				6-6	70 
+	7	scientific
+			sense:	scientific.a.02
+	8	papers
+			sense:	paper.n.05
+	9	and
+	10	made
+			sense:	make.v.01
+			prop:	make.01
+			V		10-10	made 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		11-26	important contributions towards publication of the " Mineralogisches Taschenbuch " ( first edition , 1911 ) 
+	11	important
+			sense:	important.a.01
+	12	contributions
+			sense:	contribution.n.01
+	13	towards
+	14	publication
+			sense:	issue.n.11
+	15	of
+	16	the
+	17	"
+	18	Mineralogisches
+			name:	MISC				18-19	Mineralogisches Taschenbuch 
+	19	Taschenbuch
+	20	"
+	21	(
+	22	first
+			name:	ORDINAL				22-22	first 
+			sense:	first.r.02
+	23	edition
+			sense:	edition.n.01
+	24	,
+	25	1911
+			name:	DATE				25-25	1911 
+	26	)
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+From 1910 to 1932 , he was a staff member of the Wiener Mineralogische Gesellschaft .
+
+
+Treebanked sentence:
+--------------------
+From 1910 to 1932 , he was a staff member of the Wiener Mineralogische Gesellschaft . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN From)
+      (NP
+        (NP (CD 1910))
+        (PP (IN to)
+          (NP (CD 1932)))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN staff) (NN member))
+        (PP (IN of)
+          (NP (DT the) (NNP Wiener) (NNP Mineralogische) (NNP Gesellschaft)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	From
+	1	1910
+			name:	DATE				1-1	1910 
+	2	to
+	3	1932
+			name:	DATE				3-3	1932 
+	4	,
+	5	he
+			coref:	IDENT			1	5-5	he 
+	6	was
+			sense:	be.v.08
+			prop:	be.01
+			V		6-6	was 
+			N-ARGM-TMP		0-3	From 1910 to 1932 
+			N-ARG-A1		5-5	he 
+			N-ARG-A2		7-14	a staff member of the Wiener Mineralogische Gesellschaft 
+	7	a
+	8	staff
+			sense:	staff.n.01
+	9	member
+			sense:	member.n.01
+	10	of
+	11	the
+	12	Wiener
+			name:	ORGANIZATION				12-14	Wiener Mineralogische Gesellschaft 
+	13	Mineralogische
+	14	Gesellschaft
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1922 , he became a correspondent member of the Austrian Academy of Sciences .
+
+
+Treebanked sentence:
+--------------------
+In 1922 , he became a correspondent member of the Austrian Academy of Sciences . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1922)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD became)
+      (NP
+        (NP (DT a) (NN correspondent) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Austrian) (NNP Academy))
+            (PP (IN of)
+              (NP (NNPS Sciences)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1922
+			name:	DATE				1-1	1922 
+	2	,
+	3	he
+			coref:	IDENT			1	3-3	he 
+	4	became
+			sense:	become.v.01
+			prop:	become.01
+			V		4-4	became 
+			N-ARGM-TMP		0-1	In 1922 
+			N-ARG-A1		3-3	he 
+			N-ARG-A2		5-13	a correspondent member of the Austrian Academy of Sciences 
+	5	a
+	6	correspondent
+			name:	TITLE				6-6	correspondent 
+			sense:	correspondent.n.01
+	7	member
+			sense:	member.n.01
+	8	of
+	9	the
+	10	Austrian
+			name:	ORGANIZATION				10-13	Austrian Academy of Sciences 
+	11	Academy
+	12	of
+	13	Sciences
+	14	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.6-6	Vienna 
+				3.1-1	Vienna 
+				4.19-19	Vienna 
+	Chain 1 (IDENT)
+				0.0-1	Rudolf Koechlin 
+				1.0-0	Koechlin 
+				2.0-0	He 
+				2.16-16	his 
+				3.3-3	his 
+				4.2-2	he 
+				5.2-2	he 
+				6.0-0	His 
+				7.6-6	his 
+				8.0-0	He 
+				9.5-5	he 
+				10.3-3	he 
+

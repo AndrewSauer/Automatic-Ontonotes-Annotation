@@ -1,0 +1,718 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Buffalo Sabres are a professional ice hockey team based in Buffalo , New York .
+
+
+Treebanked sentence:
+--------------------
+The Buffalo Sabres are a professional ice hockey team based in Buffalo , New York . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Buffalo) (NNP Sabres))
+    (VP (VBP are)
+      (NP
+        (NP (DT a) (JJ professional)
+          (NML (NN ice) (NN hockey))
+          (NN team))
+        (PP (VBN based)
+          (PP (IN in)
+            (NP
+              (NP (NNP Buffalo))
+              (, ,)
+              (NP (NNP New) (NNP York)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-2	The Buffalo Sabres 
+	1	Buffalo
+			name:	ORGANIZATION				1-2	Buffalo Sabres 
+	2	Sabres
+	3	are
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	are 
+			N-ARG-A1		0-2	The Buffalo Sabres 
+			N-ARG-A2		4-14	a professional ice hockey team based in Buffalo , New York 
+	4	a
+	5	professional
+			sense:	professional.a.01
+	6	ice
+			sense:	ice.n.01
+	7	hockey
+			sense:	ice_hockey.n.01
+	8	team
+			sense:	team.n.01
+	9	based
+			sense:	base.v.02
+			prop:	base.01
+			V		9-9	based 
+			N-ARG-A1		4-8	a professional ice hockey team 
+			N-ARGM-LOC		10-14	in Buffalo , New York 
+	10	in
+	11	Buffalo
+			name:	CITY				11-11	Buffalo 
+	12	,
+	13	New
+			name:	STATE_OR_PROVINCE				13-14	New York 
+	14	York
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+They are members of the Atlantic Division of the Eastern Conference of the National Hockey League ( NHL ) .
+
+
+Treebanked sentence:
+--------------------
+They are members of the Atlantic Division of the Eastern Conference of the National Hockey League ( NHL ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are)
+      (NP
+        (NP (NNS members))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Atlantic) (NNP Division))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNP Eastern) (NNP Conference))
+                (PP (IN of)
+                  (NP (DT the) (NNP National) (NNP Hockey) (NNP League))))))))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP NHL))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	They
+			coref:	IDENT			1	0-0	They 
+	1	are
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	are 
+			N-ARG-A1		0-0	They 
+			N-ARG-A2		2-18	members of the Atlantic Division of the Eastern Conference of the National Hockey League ( NHL ) 
+	2	members
+			sense:	member.n.02
+	3	of
+	4	the
+	5	Atlantic
+			name:	LOCATION				5-5	Atlantic 
+	6	Division
+	7	of
+	8	the
+	9	Eastern
+			name:	ORGANIZATION				9-15	Eastern Conference of the National Hockey League 
+	10	Conference
+	11	of
+	12	the
+	13	National
+	14	Hockey
+	15	League
+	16	(
+	17	NHL
+			name:	ORGANIZATION				17-17	NHL 
+	18	)
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The team was established in 1970 , along with the Vancouver Canucks , when the league expanded to 14 teams .
+
+
+Treebanked sentence:
+--------------------
+The team was established in 1970 , along with the Vancouver Canucks , when the league expanded to 14 teams . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN team))
+    (VP (VBD was)
+      (VP (VBN established)
+        (PP (IN in)
+          (NP (CD 1970)))
+        (, ,)
+        (ADVP (IN along)
+          (PP (IN with)
+            (NP (DT the) (NNP Vancouver) (NNPS Canucks))))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (DT the) (NN league))
+            (VP (VBN expanded)
+              (PP (IN to)
+                (NP (CD 14) (NNS teams))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The team 
+	1	team
+			sense:	team.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		3-3	established 
+			N-ARG-A1		0-1	The team 
+			N-ARGM-TMP		4-5	in 1970 
+			N-ARGM-ADV		7-11	along with the Vancouver Canucks 
+			N-ARGM-TMP		13-19	when the league expanded to 14 teams 
+	4	in
+	5	1970
+			coref:	IDENT			2	5-5	1970 
+			name:	DATE				5-5	1970 
+	6	,
+	7	along
+	8	with
+	9	the
+	10	Vancouver
+			name:	ORGANIZATION				10-11	Vancouver Canucks 
+	11	Canucks
+	12	,
+	13	when
+	14	the
+	15	league
+			sense:	league.n.01
+	16	expanded
+			sense:	expand.v.02
+			prop:	expand.01
+			V		16-16	expanded 
+			N-ARGM-TMP		13-13	when 
+			N-ARG-A1		14-15	the league 
+			N-ARG-A4		17-19	to 14 teams 
+	17	to
+	18	14
+			name:	NUMBER				18-18	14 
+	19	teams
+			sense:	team.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+They have played at KeyBank Center since 1996 .
+
+
+Treebanked sentence:
+--------------------
+They have played at KeyBank Center since 1996 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP have)
+      (VP (VBN played)
+        (PP (IN at)
+          (NP
+            (NP (NNP KeyBank) (NNP Center))
+            (PP (IN since)
+              (NP (CD 1996)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	They
+			coref:	IDENT			1	0-0	They 
+	1	have
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	have 
+	2	played
+			sense:	play.v.01
+			prop:	play.01
+			V		2-2	played 
+			N-ARG-A0		0-0	They 
+			N-ARGM-LOC		3-5	at KeyBank Center 
+			N-ARGM-TMP		6-7	since 1996 
+	3	at
+	4	KeyBank
+			name:	ORGANIZATION				4-5	KeyBank Center 
+	5	Center
+	6	since
+	7	1996
+			name:	DATE				7-7	1996 
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Prior to that , the Buffalo Sabres played at the Buffalo Memorial Auditorium from the start of the franchise in 1970 .
+
+
+Treebanked sentence:
+--------------------
+Prior to that , the Buffalo Sabres played at the Buffalo Memorial Auditorium from the start of the franchise in 1970 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (RB Prior)
+      (PP (IN to)
+        (NP (DT that))))
+    (, ,)
+    (NP (DT the) (NNP Buffalo) (NNP Sabres))
+    (VP (VBD played)
+      (PP (IN at)
+        (NP (DT the) (NNP Buffalo) (NNP Memorial) (NNP Auditorium)))
+      (PP (IN from)
+        (NP
+          (NP (DT the) (NN start))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN franchise))
+              (PP (IN in)
+                (NP (CD 1970))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Prior
+	1	to
+	2	that
+	3	,
+	4	the
+			coref:	IDENT			1	4-6	the Buffalo Sabres 
+	5	Buffalo
+			name:	ORGANIZATION				5-6	Buffalo Sabres 
+	6	Sabres
+	7	played
+			sense:	play.v.01
+			prop:	play.01
+			V		7-7	played 
+			N-ARGM-TMP		0-2	Prior to that 
+			N-ARG-A0		4-6	the Buffalo Sabres 
+			N-ARGM-LOC		8-12	at the Buffalo Memorial Auditorium 
+			N-ARGM-TMP		13-20	from the start of the franchise in 1970 
+	8	at
+	9	the
+	10	Buffalo
+			name:	CITY				10-10	Buffalo 
+	11	Memorial
+			name:	LOCATION				11-12	Memorial Auditorium 
+	12	Auditorium
+	13	from
+	14	the
+	15	start
+			sense:	start.n.01
+	16	of
+	17	the
+	18	franchise
+			sense:	franchise.n.02
+	19	in
+	20	1970
+			coref:	IDENT			2	20-20	1970 
+			name:	DATE				20-20	1970 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Sabres are owned by Terry Pegula , who purchased the club in 2011 .
+
+
+Treebanked sentence:
+--------------------
+The Sabres are owned by Terry Pegula , who purchased the club in 2011 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Sabres))
+    (VP (VBP are)
+      (VP (VBN owned)
+        (PP (IN by)
+          (NP
+            (NP (NNP Terry) (NNP Pegula))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD purchased)
+                  (NP (DT the) (NN club))
+                  (PP (IN in)
+                    (NP (CD 2011))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The Sabres 
+	1	Sabres
+			name:	ORGANIZATION				1-1	Sabres 
+	2	are
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	are 
+	3	owned
+			sense:	own.v.01
+			prop:	own.01
+			V		3-3	owned 
+			N-ARG-A1		0-1	The Sabres 
+			N-ARG-A0		4-13	by Terry Pegula , who purchased the club in 2011 
+	4	by
+	5	Terry
+			name:	PERSON				5-6	Terry Pegula 
+	6	Pegula
+	7	,
+	8	who
+	9	purchased
+			sense:	buy.v.01
+			prop:	purchase.01
+			V		9-9	purchased 
+			N-ARG-A0		5-6	Terry Pegula 
+			R-ARG-A0		8-8	who 
+			N-ARG-A1		10-11	the club 
+			N-ARGM-TMP		12-13	in 2011 
+	10	the
+	11	club
+			sense:	baseball_club.n.01
+	12	in
+	13	2011
+			name:	DATE				13-13	2011 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The team has twice advanced to the Stanley Cup Finals , losing to the Philadelphia Flyers in 1975 and to the Dallas Stars in 1999 .
+
+
+Treebanked sentence:
+--------------------
+The team has twice advanced to the Stanley Cup Finals , losing to the Philadelphia Flyers in 1975 and to the Dallas Stars in 1999 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN team))
+    (VP (VBZ has)
+      (S
+        (ADJP (RB twice) (JJ advanced)
+          (PP (IN to)
+            (NP
+              (NP (DT the)
+                (NML (NNP Stanley) (NNP Cup))
+                (NNPS Finals))
+              (, ,)
+              (VP (VBG losing)
+                (PP (IN to)
+                  (NP (DT the) (NNP Philadelphia) (NNPS Flyers)))
+                (PP
+                  (PP (IN in)
+                    (NP (CD 1975)))
+                  (CC and)
+                  (PP (IN to)
+                    (NP
+                      (NP (DT the) (NNP Dallas) (NNPS Stars))
+                      (PP (IN in)
+                        (NP (CD 1999))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The team 
+	1	team
+			sense:	team.n.01
+	2	has
+			sense:	have.v.01
+			prop:	have.01
+			V		2-2	has 
+	3	twice
+			sense:	twice.r.01
+	4	advanced
+			sense:	advanced.s.01
+	5	to
+	6	the
+	7	Stanley
+			name:	MISC				7-9	Stanley Cup Finals 
+	8	Cup
+	9	Finals
+	10	,
+	11	losing
+			sense:	lose.v.02
+			prop:	lose.03
+			V		11-11	losing 
+			N-ARG-A0		0-1	The team 
+			N-ARG-A2		12-15	to the Philadelphia Flyers 
+			N-ARGM-TMP		16-17	in 1975 
+	12	to
+	13	the
+	14	Philadelphia
+			name:	ORGANIZATION				14-15	Philadelphia Flyers 
+	15	Flyers
+	16	in
+	17	1975
+			name:	DATE				17-17	1975 
+	18	and
+	19	to
+	20	the
+	21	Dallas
+			name:	CITY				21-21	Dallas 
+	22	Stars
+	23	in
+	24	1999
+			name:	DATE				24-24	1999 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The best known line in team history is The French Connection , which consisted of Gilbert Perreault , Rick Martin and Rene Robert .
+
+
+Treebanked sentence:
+--------------------
+The best known line in team history is The French Connection , which consisted of Gilbert Perreault , Rick Martin and Rene Robert . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The)
+        (ADJP (RBS best) (JJ known))
+        (NN line))
+      (PP (IN in)
+        (NP (NN team) (NN history))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT The) (JJ French) (NN Connection))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBD consisted)
+              (PP (IN of)
+                (NP
+                  (NP (NNP Gilbert) (NNP Perreault))
+                  (, ,)
+                  (NP (NNP Rick) (NNP Martin))
+                  (CC and)
+                  (NP (NNP Rene) (NNP Robert)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	best
+			sense:	well.r.01
+	2	known
+			sense:	known.a.01
+	3	line
+			sense:	line.n.01
+	4	in
+	5	team
+			sense:	team.n.01
+	6	history
+			sense:	history.n.01
+	7	is
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		0-6	The best known line in team history 
+			N-ARG-A2		8-22	The French Connection , which consisted of Gilbert Perreault , Rick Martin and Rene Robert 
+	8	The
+	9	French
+			name:	NATIONALITY				9-9	French 
+	10	Connection
+			name:	MISC				10-10	Connection 
+			sense:	connection.n.01
+	11	,
+	12	which
+	13	consisted
+			sense:	consist.v.04
+			prop:	consist.01
+			V		13-13	consisted 
+			N-ARG-A1		8-10	The French Connection 
+			R-ARG-A1		12-12	which 
+			N-ARG-A2		14-22	of Gilbert Perreault , Rick Martin and Rene Robert 
+	14	of
+	15	Gilbert
+			name:	PERSON				15-16	Gilbert Perreault 
+	16	Perreault
+	17	,
+	18	Rick
+			name:	PERSON				18-19	Rick Martin 
+	19	Martin
+	20	and
+	21	Rene
+			name:	PERSON				21-22	Rene Robert 
+	22	Robert
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+All three players have had their sweater numbers ( 11 , 7 and 14 , respectively ) retired and a statue erected in their honor at KeyBank Center in 2012 .
+
+
+Treebanked sentence:
+--------------------
+All three players have had their sweater numbers ( 11 , 7 and 14 , respectively ) retired and a statue erected in their honor at KeyBank Center in 2012 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT All) (CD three) (NNS players))
+      (VP (VBP have)
+        (VP (VBN had)
+          (S
+            (NP (PRP$ their) (NN sweater) (NNS numbers)
+              (PRN (-LRB- -LRB-)
+                (NP (CD 11) (, ,) (CD 7)
+                  (CC and)
+                  (CD 14))
+                (, ,)
+                (ADVP (RB respectively))
+                (-RRB- -RRB-)))
+            (VP (VBN retired))))))
+    (CC and)
+    (S
+      (NP (DT a) (NN statue))
+      (VP (VBD erected)
+        (PP (IN in)
+          (NP (PRP$ their) (NN honor)))
+        (PP (IN at)
+          (NP
+            (NP (NNP KeyBank) (NNP Center))
+            (PP (IN in)
+              (NP (CD 2012)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	All
+	1	three
+			name:	NUMBER				1-1	three 
+	2	players
+			sense:	player.n.01
+	3	have
+			sense:	have.v.01
+			prop:	have.01
+			V		3-3	have 
+	4	had
+			sense:	have.v.01
+			prop:	have.04
+			V		4-4	had 
+			N-ARG-A0		0-2	All three players 
+			N-ARG-A1		5-29	their sweater numbers ( 11 , 7 and 14 , respectively ) retired and a statue erected in their honor at KeyBank Center in 2012 
+	5	their
+	6	sweater
+			sense:	sweater.n.01
+	7	numbers
+			sense:	number.n.08
+	8	(
+	9	11
+			name:	NUMBER				9-9	11 
+	10	,
+	11	7
+			name:	NUMBER				11-11	7 
+	12	and
+	13	14
+			name:	NUMBER				13-13	14 
+	14	,
+	15	respectively
+			sense:	respectively.r.01
+	16	)
+	17	retired
+			sense:	retire.v.07
+			prop:	retire.01
+			V		17-17	retired 
+	18	and
+	19	a
+	20	statue
+			sense:	statue.n.01
+	21	erected
+			sense:	raise.v.09
+			prop:	erect.01
+			V		21-21	erected 
+			N-ARG-A1		19-20	a statue 
+			N-ARGM-PRP		22-24	in their honor 
+			N-ARGM-LOC		25-27	at KeyBank Center 
+			N-ARGM-TMP		28-29	in 2012 
+	22	in
+	23	their
+	24	honor
+			sense:	honor.n.02
+	25	at
+	26	KeyBank
+			name:	ORGANIZATION				26-27	KeyBank Center 
+	27	Center
+	28	in
+	29	2012
+			name:	DATE				29-29	2012 
+	30	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.0-1	The team 
+				6.0-1	The team 
+	Chain 1 (IDENT)
+				0.0-2	The Buffalo Sabres 
+				1.0-0	They 
+				3.0-0	They 
+				4.4-6	the Buffalo Sabres 
+				5.0-1	The Sabres 
+	Chain 2 (IDENT)
+				2.5-5	1970 
+				4.20-20	1970 
+

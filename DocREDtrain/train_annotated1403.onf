@@ -1,0 +1,913 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Arnold C. Klebs ( March 17 , 1870 – March 6 , 1943 ) was a physician who specialized in the study of tuberculosis .
+
+
+Treebanked sentence:
+--------------------
+Arnold C. Klebs ( March 17 , 1870 – March 6 , 1943 ) was a physician who specialized in the study of tuberculosis . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Arnold) (NNP C.) (NNP Klebs))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP March) (CD 17) (, ,) (CD 1870))
+        (PP (SYM –)
+          (NP (NNP March) (CD 6) (, ,) (CD 1943))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN physician))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD specialized)
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NN study))
+                  (PP (IN of)
+                    (NP (NN tuberculosis))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Arnold
+			coref:	IDENT			2	0-2	Arnold C. Klebs 
+			name:	PERSON				0-2	Arnold C. Klebs 
+	1	C.
+	2	Klebs
+	3	(
+	4	March
+			name:	DATE				4-7	March 17 , 1870 
+	5	17
+	6	,
+	7	1870
+	8	–
+	9	March
+			name:	DATE				9-12	March 6 , 1943 
+	10	6
+	11	,
+	12	1943
+	13	)
+	14	was
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		0-13	Arnold C. Klebs ( March 17 , 1870 – March 6 , 1943 ) 
+			N-ARG-A2		15-23	a physician who specialized in the study of tuberculosis 
+	15	a
+	16	physician
+			name:	TITLE				16-16	physician 
+			sense:	doctor.n.01
+	17	who
+	18	specialized
+			sense:	specialize.v.04
+			prop:	specialize.01
+			V		18-18	specialized 
+			N-ARG-A0		15-16	a physician 
+			R-ARG-A0		17-17	who 
+			N-ARG-A1		19-23	in the study of tuberculosis 
+	19	in
+	20	the
+	21	study
+			sense:	survey.n.01
+	22	of
+	23	tuberculosis
+			coref:	IDENT			1	23-23	tuberculosis 
+			name:	CAUSE_OF_DEATH				23-23	tuberculosis 
+			sense:	tuberculosis.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in Berne , Switzerland , Arnold Klebs , the son of renowned bacteriologist Edwin Klebs , was raised in the presence of an extensive array of scientists , artists , and historians .
+
+
+Treebanked sentence:
+--------------------
+Born in Berne , Switzerland , Arnold Klebs , the son of renowned bacteriologist Edwin Klebs , was raised in the presence of an extensive array of scientists , artists , and historians . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP (NNP Berne) (, ,) (NNP Switzerland)))))
+    (, ,)
+    (NP
+      (NP (NNP Arnold) (NNP Klebs))
+      (, ,)
+      (NP
+        (NP (DT the) (NN son))
+        (PP (IN of)
+          (NP (JJ renowned) (NN bacteriologist) (NNP Edwin) (NNP Klebs))))
+      (, ,))
+    (VP (VBD was)
+      (VP (VBN raised)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN presence))
+            (PP (IN of)
+              (NP
+                (NP (DT an) (JJ extensive) (NN array))
+                (PP (IN of)
+                  (NP (NNS scientists) (, ,) (NNS artists) (, ,)
+                    (CC and)
+                    (NNS historians)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-4	in Berne , Switzerland 
+			N-ARG-A1		6-15	Arnold Klebs , the son of renowned bacteriologist Edwin Klebs 
+	1	in
+	2	Berne
+			name:	LOCATION				2-2	Berne 
+	3	,
+	4	Switzerland
+			name:	COUNTRY				4-4	Switzerland 
+	5	,
+	6	Arnold
+			name:	PERSON				6-7	Arnold Klebs 
+	7	Klebs
+	8	,
+	9	the
+	10	son
+			sense:	son.n.01
+	11	of
+	12	renowned
+			coref:	IDENT			2	12-15	renowned bacteriologist Edwin Klebs 
+			sense:	celebrated.s.01
+	13	bacteriologist
+			name:	TITLE				13-13	bacteriologist 
+			sense:	bacteriologist.n.01
+	14	Edwin
+			name:	PERSON				14-15	Edwin Klebs 
+	15	Klebs
+	16	,
+	17	was
+			sense:	be.v.01
+			prop:	be.03
+			V		17-17	was 
+	18	raised
+			sense:	rear.v.02
+			prop:	raise.01
+			V		18-18	raised 
+			N-ARGM-ADV		0-4	Born in Berne , Switzerland 
+			N-ARG-A1		6-16	Arnold Klebs , the son of renowned bacteriologist Edwin Klebs , 
+			N-ARGM-LOC		19-32	in the presence of an extensive array of scientists , artists , and historians 
+	19	in
+	20	the
+	21	presence
+			sense:	presence.n.02
+	22	of
+	23	an
+	24	extensive
+			sense:	across-the-board.s.01
+	25	array
+			sense:	array.n.01
+	26	of
+	27	scientists
+			sense:	scientist.n.01
+	28	,
+	29	artists
+			sense:	artist.n.01
+	30	,
+	31	and
+	32	historians
+			sense:	historian.n.01
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Klebs took a medical degree from the University of Basel in 1896 , then moved to the United States to practice medicine .
+
+
+Treebanked sentence:
+--------------------
+Klebs took a medical degree from the University of Basel in 1896 , then moved to the United States to practice medicine . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Klebs))
+    (VP
+      (VP (VBD took)
+        (NP (DT a) (JJ medical) (NN degree))
+        (PP (IN from)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Basel)))))
+        (PP (IN in)
+          (NP (CD 1896))))
+      (, ,)
+      (ADVP (RB then))
+      (VP (VBD moved)
+        (PP (IN to)
+          (NP (DT the) (NNP United) (NNP States)))
+        (S
+          (VP (TO to)
+            (VP (VB practice)
+              (NP (NN medicine)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Klebs
+			coref:	IDENT			2	0-0	Klebs 
+			name:	PERSON				0-0	Klebs 
+	1	took
+			sense:	take.v.08
+			prop:	take.01
+			V		1-1	took 
+			N-ARG-A0		0-0	Klebs 
+			N-ARG-A1		2-4	a medical degree 
+			N-ARG-A2		5-9	from the University of Basel 
+			N-ARGM-TMP		10-11	in 1896 
+	2	a
+	3	medical
+			sense:	medical.a.01
+	4	degree
+			sense:	academic_degree.n.01
+	5	from
+	6	the
+	7	University
+			name:	ORGANIZATION				7-9	University of Basel 
+	8	of
+	9	Basel
+	10	in
+	11	1896
+			name:	DATE				11-11	1896 
+	12	,
+	13	then
+			sense:	then.r.01
+	14	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		14-14	moved 
+			N-ARG-A0		0-0	Klebs 
+			N-ARGM-TMP		13-13	then 
+			N-ARG-A2		15-18	to the United States 
+			N-ARGM-PRP		19-21	to practice medicine 
+	15	to
+	16	the
+	17	United
+			name:	COUNTRY				17-18	United States 
+	18	States
+	19	to
+	20	practice
+			sense:	practice.v.01
+			prop:	practice.01
+			V		20-20	practice 
+			N-ARG-A0		0-0	Klebs 
+			N-ARG-A1		21-21	medicine 
+	21	medicine
+			sense:	medicine.n.03
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Klebs worked with William Osler at Johns Hopkins University for a year after arriving in the U.S. , and was a contemporary of William H. Welch .
+
+
+Treebanked sentence:
+--------------------
+Klebs worked with William Osler at Johns Hopkins University for a year after arriving in the U.S. , and was a contemporary of William H. Welch . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Klebs))
+    (VP
+      (VP (VBD worked)
+        (PP (IN with)
+          (NP
+            (NP (NNP William) (NNP Osler))
+            (PP (IN at)
+              (NP
+                (NP
+                  (NML (NNP Johns) (NNP Hopkins))
+                  (NNP University))
+                (PP (IN for)
+                  (NP (DT a) (NN year)))))))
+        (PP (IN after)
+          (S
+            (VP (VBG arriving)
+              (PP (IN in)
+                (NP (DT the) (NNP U.S.)))))))
+      (, ,)
+      (CC and)
+      (VP (VBD was)
+        (NP
+          (NP (DT a) (JJ contemporary))
+          (PP (IN of)
+            (NP (NNP William) (NNP H.) (NNP Welch))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Klebs
+			coref:	IDENT			2	0-0	Klebs 
+			name:	PERSON				0-0	Klebs 
+	1	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		1-1	worked 
+			N-ARG-A0		0-0	Klebs 
+			N-ARG-A3		2-4	with William Osler 
+			N-ARGM-LOC		5-8	at Johns Hopkins University 
+			N-ARGM-TMP		9-11	for a year 
+			N-ARGM-TMP		12-16	after arriving in the U.S. 
+	2	with
+	3	William
+			coref:	IDENT			3	3-4	William Osler 
+			name:	PERSON				3-4	William Osler 
+	4	Osler
+	5	at
+	6	Johns
+			name:	ORGANIZATION				6-8	Johns Hopkins University 
+	7	Hopkins
+	8	University
+	9	for
+	10	a
+			name:	DURATION				10-11	a year 
+	11	year
+			sense:	year.n.01
+	12	after
+	13	arriving
+			sense:	arrive.v.01
+			prop:	arrive.01
+			V		13-13	arriving 
+			N-ARG-A1		0-0	Klebs 
+			N-ARG-A4		14-16	in the U.S. 
+	14	in
+	15	the
+	16	U.S.
+			name:	COUNTRY				16-16	U.S. 
+	17	,
+	18	and
+	19	was
+			sense:	be.v.01
+			prop:	be.01
+			V		19-19	was 
+			N-ARG-A1		0-0	Klebs 
+			N-ARG-A2		20-25	a contemporary of William H. Welch 
+	20	a
+	21	contemporary
+			sense:	contemporaneous.s.01
+	22	of
+	23	William
+			coref:	IDENT			0	23-25	William H. Welch 
+			name:	PERSON				23-25	William H. Welch 
+	24	H.
+	25	Welch
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Following his work with Osler , he worked as a sanatorium director and tuberculosis specialist in Citronelle , Alabama and Chicago .
+
+
+Treebanked sentence:
+--------------------
+Following his work with Osler , he worked as a sanatorium director and tuberculosis specialist in Citronelle , Alabama and Chicago . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (VBG Following)
+      (NP
+        (NP (PRP$ his) (NN work))
+        (PP (IN with)
+          (NP (NNP Osler)))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD worked)
+      (PP (IN as)
+        (NP
+          (NP (DT a) (NN sanatorium) (NN director))
+          (CC and)
+          (NP (NN tuberculosis) (NN specialist))))
+      (PP (IN in)
+        (NP (NNP Citronelle) (, ,) (NNP Alabama)
+          (CC and)
+          (NNP Chicago))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		0-0	Following 
+			N-ARG-A2		1-4	his work with Osler 
+	1	his
+			coref:	IDENT			0	1-1	his 
+	2	work
+			sense:	work.n.01
+	3	with
+	4	Osler
+			coref:	IDENT			3	4-4	Osler 
+			name:	PERSON				4-4	Osler 
+	5	,
+	6	he
+			coref:	IDENT			0	6-6	he 
+	7	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		7-7	worked 
+			N-ARGM-TMP		0-4	Following his work with Osler 
+			N-ARG-A0		6-6	he 
+			N-ARG-A1		8-14	as a sanatorium director and tuberculosis specialist 
+			N-ARGM-LOC		15-20	in Citronelle , Alabama and Chicago 
+	8	as
+	9	a
+	10	sanatorium
+			sense:	sanatorium.n.01
+	11	director
+			name:	TITLE				11-11	director 
+			sense:	director.n.01
+	12	and
+	13	tuberculosis
+			name:	CAUSE_OF_DEATH				13-13	tuberculosis 
+			sense:	tuberculosis.n.01
+	14	specialist
+			name:	TITLE				14-14	specialist 
+			sense:	specialist.n.02
+	15	in
+	16	Citronelle
+			name:	LOCATION				16-16	Citronelle 
+	17	,
+	18	Alabama
+			name:	STATE_OR_PROVINCE				18-18	Alabama 
+	19	and
+	20	Chicago
+			name:	CITY				20-20	Chicago 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Given his long experience with the ailment , Klebs was named one of the first directors of the National Tuberculosis Institute .
+
+
+Treebanked sentence:
+--------------------
+Given his long experience with the ailment , Klebs was named one of the first directors of the National Tuberculosis Institute . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (VBN Given)
+      (NP
+        (NP (PRP$ his) (JJ long) (NN experience))
+        (PP (IN with)
+          (NP (DT the) (NN ailment)))))
+    (, ,)
+    (NP (NNP Klebs))
+    (VP (VBD was)
+      (VP (VBN named)
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (JJ first) (NNS directors))
+              (PP (IN of)
+                (NP (DT the) (NNP National) (NNP Tuberculosis) (NNP Institute))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Given
+			sense:	give.v.04
+			prop:	give.01
+			V		0-0	Given 
+			N-ARG-A1		1-6	his long experience with the ailment 
+	1	his
+			coref:	IDENT			0	1-1	his 
+	2	long
+			sense:	long.a.01
+	3	experience
+			sense:	experience.n.01
+	4	with
+	5	the
+	6	ailment
+			sense:	ailment.n.01
+	7	,
+	8	Klebs
+			coref:	IDENT			2	8-8	Klebs 
+			name:	PERSON				8-8	Klebs 
+	9	was
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	was 
+	10	named
+			sense:	name.v.03
+			prop:	name.01
+			V		10-10	named 
+			N-ARGM-ADV		0-6	Given his long experience with the ailment 
+			N-ARG-A1		8-8	Klebs 
+			N-ARG-A2		11-20	one of the first directors of the National Tuberculosis Institute 
+	11	one
+			name:	NUMBER				11-11	one 
+	12	of
+	13	the
+	14	first
+			name:	ORDINAL				14-14	first 
+			sense:	first.a.01
+	15	directors
+			sense:	director.n.01
+	16	of
+	17	the
+	18	National
+			name:	ORGANIZATION				18-20	National Tuberculosis Institute 
+	19	Tuberculosis
+	20	Institute
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1910 , he returned to his native Switzerland , and settled in a villa on Lake Geneva .
+
+
+Treebanked sentence:
+--------------------
+In 1910 , he returned to his native Switzerland , and settled in a villa on Lake Geneva . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1910)))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD returned)
+        (PP (IN to)
+          (NP (PRP$ his) (JJ native) (NNP Switzerland))))
+      (, ,)
+      (CC and)
+      (VP (VBN settled)
+        (PP (IN in)
+          (NP
+            (NP (DT a) (NN villa))
+            (PP (IN on)
+              (NP (NNP Lake) (NNP Geneva)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1910
+			name:	DATE				1-1	1910 
+	2	,
+	3	he
+			coref:	IDENT			0	3-3	he 
+	4	returned
+			sense:	return.v.01
+			prop:	return.01
+			V		4-4	returned 
+			N-ARGM-TMP		0-1	In 1910 
+			N-ARG-A1		3-3	he 
+			N-ARG-A4		5-8	to his native Switzerland 
+	5	to
+	6	his
+			coref:	IDENT			0	6-6	his 
+	7	native
+			sense:	native.a.02
+	8	Switzerland
+			name:	COUNTRY				8-8	Switzerland 
+	9	,
+	10	and
+	11	settled
+			sense:	settle.v.04
+			prop:	settle.03
+			V		11-11	settled 
+			N-ARGM-TMP		0-1	In 1910 
+			N-ARG-A1		3-3	he 
+			N-ARG-A4		12-17	in a villa on Lake Geneva 
+	12	in
+	13	a
+	14	villa
+			sense:	villa.n.04
+	15	on
+	16	Lake
+			name:	LOCATION				16-16	Lake 
+	17	Geneva
+			name:	CITY				17-17	Geneva 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1939 , Klebs donated his collection of books to Harvey Cushing for its inclusion in what would become the Yale University 's Harvey Cushing / John Hay Whitney Medical Library .
+
+
+Treebanked sentence:
+--------------------
+In 1939 , Klebs donated his collection of books to Harvey Cushing for its inclusion in what would become the Yale University 's Harvey Cushing / John Hay Whitney Medical Library . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1939)))
+    (, ,)
+    (NP (NNP Klebs))
+    (VP (VBD donated)
+      (NP
+        (NP (PRP$ his) (NN collection))
+        (PP (IN of)
+          (NP (NNS books))))
+      (PP (IN to)
+        (NP
+          (NP (NNP Harvey) (NNP Cushing))
+          (PP (IN for)
+            (NP
+              (NP (PRP$ its) (NN inclusion))
+              (PP (IN in)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (VP (MD would)
+                      (VP (VB become)
+                        (NP
+                          (NP
+                            (NP (DT the) (NNP Yale) (NNP University) (POS 's))
+                            (NNP Harvey) (NNP Cushing) (HYPH /) (NNP John))
+                          (NP
+                            (NML (NNP Hay) (NNP Whitney))
+                            (NNP Medical) (NNP Library)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1939
+			name:	DATE				1-1	1939 
+	2	,
+	3	Klebs
+			coref:	IDENT			2	3-3	Klebs 
+			name:	PERSON				3-3	Klebs 
+	4	donated
+			sense:	donate.v.01
+			prop:	donate.01
+			V		4-4	donated 
+			N-ARGM-TMP		0-1	In 1939 
+			N-ARG-A0		3-3	Klebs 
+			N-ARG-A1		5-8	his collection of books 
+			N-ARG-A2		9-11	to Harvey Cushing 
+	5	his
+			coref:	IDENT			2	5-5	his 
+	6	collection
+			sense:	collection.n.01
+	7	of
+	8	books
+			sense:	book.n.02
+	9	to
+	10	Harvey
+			name:	PERSON				10-11	Harvey Cushing 
+	11	Cushing
+	12	for
+	13	its
+	14	inclusion
+			sense:	inclusion.n.01
+	15	in
+	16	what
+	17	would
+	18	become
+			sense:	become.v.02
+			prop:	become.01
+			V		18-18	become 
+			N-ARG-A1		16-16	what 
+			N-ARGM-MOD		17-17	would 
+			N-ARG-A2		19-30	the Yale University 's Harvey Cushing / John Hay Whitney Medical Library 
+	19	the
+	20	Yale
+			name:	ORGANIZATION				20-30	Yale University 's Harvey Cushing / John Hay Whitney Medical Library 
+	21	University
+	22	's
+	23	Harvey
+	24	Cushing
+	25	/
+	26	John
+	27	Hay
+	28	Whitney
+	29	Medical
+	30	Library
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+These included incunabula , plague tracts , herbals , books and pamphlets on tuberculosis , and books on inoculation and vaccination .
+
+
+Treebanked sentence:
+--------------------
+These included incunabula , plague tracts , herbals , books and pamphlets on tuberculosis , and books on inoculation and vaccination . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT These))
+    (VP (VBD included)
+      (NP
+        (NP (NN incunabula))
+        (, ,)
+        (NP
+          (NP (NN plague) (NNS tracts) (, ,) (NNS herbals) (, ,) (NNS books)
+            (CC and)
+            (NNS pamphlets))
+          (PP (IN on)
+            (NP (NN tuberculosis))))
+        (, ,)
+        (CC and)
+        (NP (NNS books)))
+      (PP (IN on)
+        (NP (NN inoculation)
+          (CC and)
+          (NN vaccination))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	These
+	1	included
+			sense:	include.v.01
+			prop:	include.01
+			V		1-1	included 
+			N-ARG-A2		0-0	These 
+			N-ARG-A1		2-20	incunabula , plague tracts , herbals , books and pamphlets on tuberculosis , and books on inoculation and vaccination 
+	2	incunabula
+	3	,
+	4	plague
+			name:	CAUSE_OF_DEATH				4-4	plague 
+			sense:	plague.n.02
+	5	tracts
+			sense:	tract.n.03
+	6	,
+	7	herbals
+			sense:	herb_tea.n.01
+	8	,
+	9	books
+			sense:	book.n.02
+	10	and
+	11	pamphlets
+			sense:	tract.n.03
+	12	on
+	13	tuberculosis
+			coref:	IDENT			1	13-13	tuberculosis 
+			name:	CAUSE_OF_DEATH				13-13	tuberculosis 
+			sense:	tuberculosis.n.01
+	14	,
+	15	and
+	16	books
+			sense:	book.n.02
+	17	on
+	18	inoculation
+			sense:	inoculation.n.01
+	19	and
+	20	vaccination
+			sense:	inoculation.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Klebs ' library included 3000 texts related to tuberculosis alone .
+
+
+Treebanked sentence:
+--------------------
+Klebs ' library included 3000 texts related to tuberculosis alone . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Klebs) (POS '))
+      (NN library))
+    (VP (VBD included)
+      (NP
+        (NP (CD 3000) (NNS texts))
+        (VP (VBN related)
+          (PP (IN to)
+            (NP (NN tuberculosis)))
+          (ADVP (RB alone)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Klebs
+			coref:	IDENT			2	0-1	Klebs ' 
+			name:	PERSON				0-0	Klebs 
+	1	'
+	2	library
+			sense:	library.n.02
+	3	included
+			sense:	include.v.01
+			prop:	include.01
+			V		3-3	included 
+			N-ARG-A2		0-2	Klebs ' library 
+			N-ARG-A1		4-9	3000 texts related to tuberculosis alone 
+	4	3000
+			name:	NUMBER				4-4	3000 
+	5	texts
+			sense:	text.n.04
+	6	related
+			sense:	refer.v.02
+			prop:	relate.01
+			V		6-6	related 
+			N-ARG-A1		4-5	3000 texts 
+			N-ARG-A2		7-9	to tuberculosis alone 
+	7	to
+	8	tuberculosis
+			name:	CAUSE_OF_DEATH				8-8	tuberculosis 
+			sense:	tuberculosis.n.01
+	9	alone
+			sense:	entirely.r.02
+	10	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.23-25	William H. Welch 
+				4.1-1	his 
+				4.6-6	he 
+				5.1-1	his 
+				6.3-3	he 
+				6.6-6	his 
+	Chain 1 (IDENT)
+				0.23-23	tuberculosis 
+				8.13-13	tuberculosis 
+	Chain 2 (IDENT)
+				1.12-15	renowned bacteriologist Edwin Klebs 
+				0.0-2	Arnold C. Klebs 
+				2.0-0	Klebs 
+				3.0-0	Klebs 
+				5.8-8	Klebs 
+				7.3-3	Klebs 
+				7.5-5	his 
+				9.0-1	Klebs ' 
+	Chain 3 (IDENT)
+				3.3-4	William Osler 
+				4.4-4	Osler 
+

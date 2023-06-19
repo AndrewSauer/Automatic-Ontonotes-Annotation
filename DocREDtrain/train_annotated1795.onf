@@ -1,0 +1,902 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bergen County is the most populous county in the U.S. state of New Jersey .
+
+
+Treebanked sentence:
+--------------------
+Bergen County is the most populous county in the U.S. state of New Jersey . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bergen) (NNP County))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the)
+          (ADJP (RBS most) (JJ populous))
+          (NN county))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNP U.S.) (NN state))
+            (PP (IN of)
+              (NP (NNP New) (NNP Jersey)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bergen
+			name:	CITY				0-0	Bergen 
+	1	County
+			name:	LOCATION				1-1	County 
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Bergen County 
+			N-ARG-A2		3-13	the most populous county in the U.S. state of New Jersey 
+	3	the
+	4	most
+			sense:	most.r.01
+	5	populous
+			sense:	populous.s.01
+	6	county
+			sense:	county.n.01
+	7	in
+	8	the
+	9	U.S.
+			name:	COUNTRY				9-9	U.S. 
+	10	state
+			sense:	state.n.01
+	11	of
+	12	New
+			coref:	IDENT			1	12-13	New Jersey 
+			name:	STATE_OR_PROVINCE				12-13	New Jersey 
+	13	Jersey
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As of the 2017 Census estimate , the county 's population was 948,406 , an increase of 4.8 % from the 2010 United States Census , which in turn represented an increase of 20,998 ( 2.4 % ) from the 884,118 counted in the 2000 Census .
+
+
+Treebanked sentence:
+--------------------
+As of the 2017 Census estimate , the county 's population was 948,406 , an increase of 4.8 % from the 2010 United States Census , which in turn represented an increase of 20,998 ( 2.4 % ) from the 884,118 counted in the 2000 Census . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN As)
+      (PP (IN of)
+        (NP (DT the) (CD 2017) (NNP Census) (NN estimate))))
+    (, ,)
+    (NP
+      (NP (DT the) (NN county) (POS 's))
+      (NN population))
+    (VP (VBD was)
+      (NP
+        (NP (CD 948,406))
+        (, ,)
+        (NP
+          (NP (DT an) (NN increase))
+          (PP (IN of)
+            (NP
+              (NP (CD 4.8) (NN %))
+              (PP (IN from)
+                (NP
+                  (NP (DT the) (CD 2010) (NNP United) (NNP States) (NNP Census))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (PP (IN in)
+                        (NP (NN turn)))
+                      (VP (VBD represented)
+                        (NP
+                          (NP (DT an) (NN increase))
+                          (PP (IN of)
+                            (NP (CD 20,998)
+                              (PRN (-LRB- -LRB-)
+                                (NP (CD 2.4) (NN %))
+                                (-RRB- -RRB-)))))
+                        (PP (IN from)
+                          (NP
+                            (NP (DT the) (CD 884,118))
+                            (VP (VBN counted)
+                              (PP (IN in)
+                                (NP (DT the) (CD 2000) (NNP Census))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	of
+	2	the
+	3	2017
+			name:	DATE				3-3	2017 
+	4	Census
+	5	estimate
+			sense:	estimate.n.01
+	6	,
+	7	the
+	8	county
+			sense:	county.n.01
+	9	's
+	10	population
+			sense:	population.n.04
+	11	was
+			sense:	equal.v.01
+			prop:	be.01
+			V		11-11	was 
+			N-ARGM-TMP		0-5	As of the 2017 Census estimate 
+			N-ARG-A1		7-10	the county 's population 
+			N-ARG-A2		12-45	948,406 , an increase of 4.8 % from the 2010 United States Census , which in turn represented an increase of 20,998 ( 2.4 % ) from the 884,118 counted in the 2000 Census 
+	12	948,406
+			name:	NUMBER				12-12	948,406 
+	13	,
+	14	an
+	15	increase
+			sense:	increase.n.02
+	16	of
+	17	4.8
+			name:	PERCENT				17-18	4.8 % 
+	18	%
+	19	from
+	20	the
+	21	2010
+			name:	DATE				21-21	2010 
+	22	United
+			name:	ORGANIZATION				22-24	United States Census 
+	23	States
+	24	Census
+	25	,
+	26	which
+	27	in
+	28	turn
+			sense:	turn.n.03
+	29	represented
+			sense:	constitute.v.01
+			prop:	represent.01
+			V		29-29	represented 
+			N-ARG-A0		20-24	the 2010 United States Census 
+			R-ARG-A0		26-26	which 
+			N-ARGM-ADV		27-28	in turn 
+			N-ARG-A1		30-45	an increase of 20,998 ( 2.4 % ) from the 884,118 counted in the 2000 Census 
+	30	an
+	31	increase
+			sense:	increase.n.02
+	32	of
+	33	20,998
+			name:	NUMBER				33-33	20,998 
+	34	(
+	35	2.4
+			name:	PERCENT				35-36	2.4 % 
+	36	%
+	37	)
+	38	from
+	39	the
+	40	884,118
+			name:	NUMBER				40-40	884,118 
+	41	counted
+			sense:	count.v.01
+			prop:	count.01
+			V		41-41	counted 
+			N-ARG-A1		39-40	the 884,118 
+			N-ARGM-TMP		42-45	in the 2000 Census 
+	42	in
+	43	the
+	44	2000
+			name:	DATE				44-44	2000 
+	45	Census
+	46	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Located in the northeastern corner of New Jersey and its Gateway Region , Bergen County is part of the New York City Metropolitan Area and is directly across the Hudson River from Manhattan , to which it is connected by the George Washington Bridge .
+
+
+Treebanked sentence:
+--------------------
+Located in the northeastern corner of New Jersey and its Gateway Region , Bergen County is part of the New York City Metropolitan Area and is directly across the Hudson River from Manhattan , to which it is connected by the George Washington Bridge . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Located)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (JJ northeastern) (NN corner))
+            (PP (IN of)
+              (NP
+                (NP (NNP New) (NNP Jersey))
+                (CC and)
+                (NP (PRP$ its) (NNP Gateway) (NNP Region))))))))
+    (, ,)
+    (NP (NNP Bergen) (NNP County))
+    (VP
+      (VP (VBZ is)
+        (NP
+          (NP (NN part))
+          (PP (IN of)
+            (NP (DT the)
+              (NML (NNP New) (NNP York) (NNP City))
+              (NNP Metropolitan) (NNP Area)))))
+      (CC and)
+      (VP (VBZ is)
+        (ADVP (RB directly))
+        (PP (IN across)
+          (NP
+            (NP
+              (NP (DT the) (NNP Hudson) (NNP River))
+              (PP (IN from)
+                (NP (NNP Manhattan))))
+            (, ,)
+            (SBAR
+              (WHPP (TO to)
+                (WHNP (WDT which)))
+              (S
+                (NP (PRP it))
+                (VP (VBZ is)
+                  (VP (VBN connected)
+                    (PP (IN by)
+                      (NP (DT the) (NNP George) (NNP Washington) (NNP Bridge)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		0-0	Located 
+			N-ARGM-LOC		1-11	in the northeastern corner of New Jersey and its Gateway Region 
+			N-ARG-A1		13-14	Bergen County 
+	1	in
+	2	the
+	3	northeastern
+			sense:	northeastern.s.01
+	4	corner
+			sense:	corner.n.01
+	5	of
+	6	New
+			name:	STATE_OR_PROVINCE				6-7	New Jersey 
+	7	Jersey
+	8	and
+	9	its
+	10	Gateway
+	11	Region
+	12	,
+	13	Bergen
+			name:	CITY				13-13	Bergen 
+	14	County
+			name:	LOCATION				14-14	County 
+	15	is
+			sense:	be.v.01
+			prop:	be.01
+			V		15-15	is 
+			R-ARG-A1		0-11	Located in the northeastern corner of New Jersey and its Gateway Region 
+			N-ARG-A1		13-14	Bergen County 
+			N-ARG-A2		16-23	part of the New York City Metropolitan Area 
+	16	part
+			sense:	part.n.01
+	17	of
+	18	the
+	19	New
+			name:	CITY				19-21	New York City 
+	20	York
+	21	City
+	22	Metropolitan
+			name:	LOCATION				22-23	Metropolitan Area 
+	23	Area
+	24	and
+	25	is
+			sense:	be.v.03
+			prop:	be.01
+			V		25-25	is 
+			R-ARG-A1		0-11	Located in the northeastern corner of New Jersey and its Gateway Region 
+			N-ARG-A1		13-14	Bergen County 
+			N-ARG-A2		26-43	directly across the Hudson River from Manhattan , to which it is connected by the George Washington Bridge 
+	26	directly
+			sense:	directly.r.01
+	27	across
+	28	the
+	29	Hudson
+			name:	CITY				29-29	Hudson 
+	30	River
+			name:	TITLE				30-30	River 
+	31	from
+	32	Manhattan
+			name:	CITY				32-32	Manhattan 
+	33	,
+	34	to
+	35	which
+	36	it
+	37	is
+			sense:	be.v.01
+			prop:	be.03
+			V		37-37	is 
+	38	connected
+			sense:	connect.v.03
+			prop:	connect.01
+			V		38-38	connected 
+			N-ARG-A1		36-36	it 
+			N-ARG-A2		39-43	by the George Washington Bridge 
+	39	by
+	40	the
+	41	George
+			name:	CITY				41-41	George 
+	42	Washington
+			name:	STATE_OR_PROVINCE				42-42	Washington 
+	43	Bridge
+			name:	LOCATION				43-43	Bridge 
+	44	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bergen County is divided into 70 municipalities , but has no large cities .
+
+
+Treebanked sentence:
+--------------------
+Bergen County is divided into 70 municipalities , but has no large cities . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bergen) (NNP County))
+    (VP
+      (VP (VBZ is)
+        (VP (VBN divided)
+          (PP (IN into)
+            (NP (CD 70) (NNS municipalities)))))
+      (, ,)
+      (CC but)
+      (VP (VBZ has)
+        (NP (DT no) (JJ large) (NNS cities))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bergen
+			name:	CITY				0-0	Bergen 
+	1	County
+			name:	LOCATION				1-1	County 
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	divided
+			sense:	divide.v.01
+			prop:	divide.02
+			V		3-3	divided 
+			N-ARG-A1		0-1	Bergen County 
+			N-ARG-A2		4-6	into 70 municipalities 
+	4	into
+	5	70
+			name:	NUMBER				5-5	70 
+	6	municipalities
+			sense:	municipality.n.01
+	7	,
+	8	but
+	9	has
+			sense:	have.v.02
+			prop:	have.03
+			V		9-9	has 
+			N-ARG-A0		0-1	Bergen County 
+			N-ARG-A1		10-12	no large cities 
+	10	no
+	11	large
+			sense:	large.a.01
+	12	cities
+			sense:	city.n.01
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Its most populous place , with 43,010 residents at the time of the 2010 census , is Hackensack , which is also its county seat .
+
+
+Treebanked sentence:
+--------------------
+Its most populous place , with 43,010 residents at the time of the 2010 census , is Hackensack , which is also its county seat . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Its)
+        (ADJP (RBS most) (JJ populous))
+        (NN place))
+      (, ,)
+      (PP (IN with)
+        (NP
+          (NP (CD 43,010) (NNS residents))
+          (PP (IN at)
+            (NP
+              (NP (DT the) (NN time))
+              (PP (IN of)
+                (NP (DT the) (CD 2010) (NN census)))))))
+      (, ,))
+    (VP (VBZ is)
+      (NP
+        (NP (NNP Hackensack))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ is)
+              (ADVP (RB also))
+              (NP (PRP$ its) (NN county) (NN seat)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Its
+	1	most
+			sense:	most.r.01
+	2	populous
+			sense:	populous.s.01
+	3	place
+			sense:	topographic_point.n.01
+	4	,
+	5	with
+	6	43,010
+			name:	NUMBER				6-6	43,010 
+	7	residents
+			sense:	resident.n.01
+	8	at
+	9	the
+	10	time
+			name:	DATE				10-10	time 
+			sense:	time.n.01
+	11	of
+	12	the
+			coref:	IDENT			3	12-14	the 2010 census 
+	13	2010
+			name:	DATE				13-13	2010 
+	14	census
+			sense:	census.n.01
+	15	,
+	16	is
+			sense:	be.v.02
+			prop:	be.01
+			V		16-16	is 
+			N-ARG-A1		0-15	Its most populous place , with 43,010 residents at the time of the 2010 census , 
+			N-ARG-A2		17-24	Hackensack , which is also its county seat 
+	17	Hackensack
+			name:	CITY				17-17	Hackensack 
+	18	,
+	19	which
+	20	is
+			sense:	be.v.02
+			prop:	be.01
+			V		20-20	is 
+			N-ARG-A1		17-17	Hackensack 
+			R-ARG-A1		19-19	which 
+			N-ARGM-DIS		21-21	also 
+			N-ARG-A2		22-24	its county seat 
+	21	also
+			sense:	besides.r.02
+	22	its
+	23	county
+			sense:	county.n.01
+	24	seat
+			sense:	seat.n.05
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Mahwah covered the largest area of any municipality , at .
+
+
+Treebanked sentence:
+--------------------
+Mahwah covered the largest area of any municipality , at . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Mahwah))
+    (VP (VBD covered)
+      (NP
+        (NP (DT the) (JJS largest) (NN area))
+        (PP (IN of)
+          (NP (DT any) (NN municipality))))
+      (, ,)
+      (PP (IN at)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Mahwah
+			name:	LOCATION				0-0	Mahwah 
+	1	covered
+			sense:	cover.v.03
+			prop:	cover.02
+			V		1-1	covered 
+			N-ARG-A2		0-0	Mahwah 
+			N-ARG-A1		2-7	the largest area of any municipality 
+			N-ARGM-ADV		9-9	at 
+	2	the
+	3	largest
+			sense:	large.a.01
+	4	area
+			sense:	area.n.01
+	5	of
+	6	any
+	7	municipality
+			sense:	municipality.n.01
+	8	,
+	9	at
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2015 , the county had a per capita personal income of $ 75,849 , the fourth - highest in New Jersey and ranked 45th of 3,113 counties in the United States .
+
+
+Treebanked sentence:
+--------------------
+In 2015 , the county had a per capita personal income of $ 75,849 , the fourth - highest in New Jersey and ranked 45th of 3,113 counties in the United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2015)))
+    (, ,)
+    (NP (DT the) (NN county))
+    (VP
+      (VP (VBD had)
+        (NP
+          (NP (DT a)
+            (NML (FW per) (FW capita))
+            (JJ personal) (NN income))
+          (PP (IN of)
+            (NP
+              (NP ($ $) (CD 75,849))
+              (, ,)
+              (NP
+                (NP (DT the)
+                  (ADJP (JJ fourth) (HYPH -) (JJS highest)))
+                (PP (IN in)
+                  (NP (NNP New) (NNP Jersey))))))))
+      (CC and)
+      (VP (VBD ranked)
+        (NP
+          (NP (JJ 45th))
+          (PP (IN of)
+            (NP
+              (NP (CD 3,113) (NNS counties))
+              (PP (IN in)
+                (NP (DT the) (NNP United) (NNP States))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2015
+			name:	DATE				1-1	2015 
+	2	,
+	3	the
+	4	county
+			sense:	county.n.01
+	5	had
+			sense:	have.v.02
+			prop:	have.03
+			V		5-5	had 
+			N-ARGM-TMP		0-1	In 2015 
+			N-ARG-A0		3-4	the county 
+			N-ARG-A1		6-21	a per capita personal income of $ 75,849 , the fourth - highest in New Jersey 
+	6	a
+	7	per
+	8	capita
+	9	personal
+			sense:	personal.a.01
+	10	income
+			sense:	income.n.01
+	11	of
+	12	$
+			name:	MONEY				12-13	$ 75,849 
+	13	75,849
+	14	,
+	15	the
+	16	fourth
+			name:	ORDINAL				16-16	fourth 
+			sense:	fourth.s.01
+	17	-
+	18	highest
+			sense:	high.a.01
+	19	in
+	20	New
+			coref:	IDENT			1	20-21	New Jersey 
+			name:	STATE_OR_PROVINCE				20-21	New Jersey 
+	21	Jersey
+	22	and
+	23	ranked
+			sense:	rate.v.01
+			prop:	rank.01
+			V		23-23	ranked 
+			N-ARGM-TMP		0-1	In 2015 
+			N-ARG-A1		3-4	the county 
+			N-ARG-A2		24-24	45th 
+	24	45th
+			name:	ORDINAL				24-24	45th 
+			sense:	forty-fifth.s.01
+	25	of
+	26	3,113
+			coref:	IDENT			0	26-31	3,113 counties in the United States 
+			name:	NUMBER				26-26	3,113 
+	27	counties
+			sense:	county.n.01
+	28	in
+	29	the
+			coref:	IDENT			2	29-31	the United States 
+	30	United
+			name:	COUNTRY				30-31	United States 
+	31	States
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bergen County is one of the wealthiest counties in the United States , with a median household income of $ 81,708 per the 2010 Census , increasing to an estimated $ 84,677 in 2014 , which was almost 18 % higher than the $ 71,919 median statewide .
+
+
+Treebanked sentence:
+--------------------
+Bergen County is one of the wealthiest counties in the United States , with a median household income of $ 81,708 per the 2010 Census , increasing to an estimated $ 84,677 in 2014 , which was almost 18 % higher than the $ 71,919 median statewide . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bergen) (NNP County))
+    (VP (VBZ is)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJS wealthiest) (NNS counties))
+            (PP (IN in)
+              (NP (DT the) (NNP United) (NNP States))))))
+      (, ,)
+      (PP (IN with)
+        (NP
+          (NP
+            (NP
+              (NP (DT a) (JJ median) (NN household) (NN income))
+              (PP (IN of)
+                (NP
+                  (NP ($ $) (CD 81,708))
+                  (PP (IN per)
+                    (NP (DT the) (CD 2010) (NNP Census))))))
+            (, ,)
+            (VP (VBG increasing)
+              (PP (IN to)
+                (NP
+                  (NP (DT an) (VBN estimated)
+                    (QP ($ $) (CD 84,677)))
+                  (PP (IN in)
+                    (NP (CD 2014)))))))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBD was)
+                (ADJP
+                  (ADJP
+                    (NP
+                      (QP (RB almost) (CD 18))
+                      (NN %))
+                    (JJR higher))
+                  (PP (IN than)
+                    (NP
+                      (NP (DT the) ($ $) (CD 71,919))
+                      (NP (JJ median) (JJ statewide)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bergen
+			name:	CITY				0-0	Bergen 
+	1	County
+			name:	LOCATION				1-1	County 
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Bergen County 
+			N-ARG-A2		3-11	one of the wealthiest counties in the United States 
+			N-ARGM-ADV		13-46	with a median household income of $ 81,708 per the 2010 Census , increasing to an estimated $ 84,677 in 2014 , which was almost 18 % higher than the $ 71,919 median statewide 
+	3	one
+			name:	NUMBER				3-3	one 
+	4	of
+	5	the
+			coref:	IDENT			0	5-11	the wealthiest counties in the United States 
+	6	wealthiest
+			sense:	affluent.s.01
+	7	counties
+			sense:	county.n.01
+	8	in
+	9	the
+			coref:	IDENT			2	9-11	the United States 
+	10	United
+			name:	COUNTRY				10-11	United States 
+	11	States
+	12	,
+	13	with
+	14	a
+	15	median
+			sense:	median.s.01
+	16	household
+			sense:	family.n.01
+	17	income
+			sense:	income.n.01
+	18	of
+	19	$
+			name:	MONEY				19-20	$ 81,708 
+	20	81,708
+	21	per
+	22	the
+			coref:	IDENT			3	22-24	the 2010 Census 
+	23	2010
+			name:	DATE				23-23	2010 
+	24	Census
+	25	,
+	26	increasing
+			sense:	increase.v.01
+			prop:	increase.01
+			V		26-26	increasing 
+			N-ARG-A4		27-31	to an estimated $ 84,677 
+			N-ARGM-TMP		32-33	in 2014 
+			C-ARG-A4		35-46	which was almost 18 % higher than the $ 71,919 median statewide 
+	27	to
+	28	an
+	29	estimated
+			sense:	estimate.v.01
+			prop:	estimate.01
+			V		29-29	estimated 
+			N-ARG-A1		30-31	$ 84,677 
+	30	$
+			name:	MONEY				30-31	$ 84,677 
+	31	84,677
+	32	in
+	33	2014
+			name:	DATE				33-33	2014 
+	34	,
+	35	which
+	36	was
+			sense:	be.v.01
+			prop:	be.01
+			V		36-36	was 
+			N-ARG-A1		28-33	an estimated $ 84,677 in 2014 
+			R-ARG-A1		35-35	which 
+			N-ARG-A2		37-46	almost 18 % higher than the $ 71,919 median statewide 
+	37	almost
+			sense:	about.r.07
+	38	18
+			name:	PERCENT				38-39	18 % 
+	39	%
+	40	higher
+			sense:	high.a.01
+	41	than
+	42	the
+	43	$
+			name:	MONEY				43-44	$ 71,919 
+	44	71,919
+	45	median
+			sense:	median.s.01
+	46	statewide
+			sense:	statewide.s.01
+	47	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The county hosts an extensive park system totaling nearly .
+
+
+Treebanked sentence:
+--------------------
+The county hosts an extensive park system totaling nearly . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN county))
+    (VP (VBZ hosts)
+      (NP
+        (NP (DT an) (JJ extensive) (NN park) (NN system))
+        (VP (VBG totaling)
+          (ADVP (RB nearly)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	county
+			sense:	county.n.01
+	2	hosts
+			sense:	host.v.01
+			prop:	host.01
+			V		2-2	hosts 
+			N-ARG-A0		0-1	The county 
+			N-ARG-A1		3-8	an extensive park system totaling nearly 
+	3	an
+	4	extensive
+			sense:	extensive.s.01
+	5	park
+			sense:	park.n.01
+	6	system
+			sense:	system.n.02
+	7	totaling
+			sense:	total.v.01
+			prop:	total.01
+			V		7-7	totaling 
+			N-ARG-A1		3-6	an extensive park system 
+			N-ARG-A2		8-8	nearly 
+	8	nearly
+			sense:	about.r.07
+	9	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				7.5-11	the wealthiest counties in the United States 
+				6.26-31	3,113 counties in the United States 
+	Chain 1 (IDENT)
+				0.12-13	New Jersey 
+				6.20-21	New Jersey 
+	Chain 2 (IDENT)
+				6.29-31	the United States 
+				7.9-11	the United States 
+	Chain 3 (IDENT)
+				7.22-24	the 2010 Census 
+				4.12-14	the 2010 census 
+

@@ -1,0 +1,577 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Carole Jacques ( born 12 June 1960 ) was a Progressive Conservative member of the House of Commons of Canada .
+
+
+Treebanked sentence:
+--------------------
+Carole Jacques ( born 12 June 1960 ) was a Progressive Conservative member of the House of Commons of Canada . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Carole) (NNP Jacques))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 12))
+        (NP-TMP (NNP June) (CD 1960)))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NNP Progressive) (NNP Conservative) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP House))
+            (PP (IN of)
+              (NP
+                (NP (NNPS Commons))
+                (PP (IN of)
+                  (NP (NNP Canada)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Carole
+			name:	PERSON				0-1	Carole Jacques 
+	1	Jacques
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Carole Jacques 
+			N-ARGM-TMP		4-6	12 June 1960 
+	4	12
+			name:	DATE				4-6	12 June 1960 
+	5	June
+	6	1960
+	7	)
+	8	was
+			sense:	be.v.08
+			prop:	be.01
+			V		8-8	was 
+			N-ARG-A1		0-7	Carole Jacques ( born 12 June 1960 ) 
+			N-ARG-A2		9-19	a Progressive Conservative member of the House of Commons of Canada 
+	9	a
+	10	Progressive
+			name:	IDEOLOGY				10-11	Progressive Conservative 
+	11	Conservative
+	12	member
+			sense:	member.n.01
+	13	of
+	14	the
+			coref:	IDENT			1	14-19	the House of Commons of Canada 
+	15	House
+			name:	ORGANIZATION				15-19	House of Commons of Canada 
+	16	of
+	17	Commons
+	18	of
+	19	Canada
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She was a lawyer by career .
+
+
+Treebanked sentence:
+--------------------
+She was a lawyer by career . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN lawyer))
+        (PP (IN by)
+          (NP (NN career)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-5	a lawyer by career 
+	2	a
+	3	lawyer
+			name:	TITLE				3-3	lawyer 
+			sense:	lawyer.n.01
+	4	by
+	5	career
+			sense:	career.n.01
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She represented the Quebec riding of Montreal — Mercier where she was first elected in the 1984 federal election .
+
+
+Treebanked sentence:
+--------------------
+She represented the Quebec riding of Montreal — Mercier where she was first elected in the 1984 federal election . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD represented)
+      (NP
+        (NP (DT the) (NNP Quebec) (NN riding))
+        (PP (IN of)
+          (NP (NNP Montreal) (HYPH —) (NNP Mercier))))
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP she))
+          (VP (VBD was)
+            (ADVP (JJ first))
+            (VP (VBN elected)
+              (PP (IN in)
+                (NP (DT the) (CD 1984) (JJ federal) (NN election))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	represented
+			sense:	represent.v.04
+			prop:	represent.01
+			V		1-1	represented 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		2-18	the Quebec riding of Montreal — Mercier where she was first elected in the 1984 federal election 
+	2	the
+	3	Quebec
+			name:	STATE_OR_PROVINCE				3-3	Quebec 
+	4	riding
+			sense:	riding.n.02
+	5	of
+	6	Montreal
+			name:	CITY				6-6	Montreal 
+	7	—
+	8	Mercier
+			name:	LOCATION				8-8	Mercier 
+	9	where
+	10	she
+	11	was
+			sense:	be.v.01
+			prop:	be.03
+			V		11-11	was 
+	12	first
+			name:	ORDINAL				12-12	first 
+			sense:	first.a.01
+	13	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		13-13	elected 
+			N-ARGM-LOC		2-8	the Quebec riding of Montreal — Mercier 
+			R-ARGM-LOC		9-9	where 
+			N-ARG-A1		10-10	she 
+			N-ARGM-TMP		12-12	first 
+			N-ARGM-TMP		14-18	in the 1984 federal election 
+	14	in
+	15	the
+			coref:	IDENT			0	15-18	the 1984 federal election 
+	16	1984
+			name:	DATE				16-16	1984 
+	17	federal
+			sense:	federal.a.02
+	18	election
+			sense:	election.n.01
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the time of her election , she was the youngest woman ever elected to the House of Commons .
+
+
+Treebanked sentence:
+--------------------
+At the time of her election , she was the youngest woman ever elected to the House of Commons . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (DT the) (NN time))
+        (PP (IN of)
+          (NP (PRP$ her) (NN election)))))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (JJS youngest) (NN woman))
+        (VP
+          (ADVP (RB ever))
+          (VBN elected)
+          (PP (IN to)
+            (NP
+              (NP (DT the) (NNP House))
+              (PP (IN of)
+                (NP (NNPS Commons))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+	2	time
+			name:	DATE				2-2	time 
+			sense:	time.n.01
+	3	of
+	4	her
+			coref:	IDENT			0	4-5	her election 
+	5	election
+			sense:	election.n.01
+	6	,
+	7	she
+	8	was
+			sense:	be.v.01
+			prop:	be.01
+			V		8-8	was 
+			N-ARGM-TMP		0-5	At the time of her election 
+			N-ARG-A1		7-7	she 
+			N-ARG-A2		9-18	the youngest woman ever elected to the House of Commons 
+	9	the
+	10	youngest
+			sense:	young.a.01
+	11	woman
+			sense:	woman.n.01
+	12	ever
+			sense:	ever.r.01
+	13	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		13-13	elected 
+			N-ARG-A1		9-11	the youngest woman 
+			N-ARGM-TMP		12-12	ever 
+			N-ARG-A2		14-18	to the House of Commons 
+	14	to
+	15	the
+			coref:	IDENT			1	15-18	the House of Commons 
+	16	House
+			name:	ORGANIZATION				16-18	House of Commons 
+	17	of
+	18	Commons
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She was re - elected in 1988 when she ran in the Mercier riding following electoral district boundary changes in 1987 .
+
+
+Treebanked sentence:
+--------------------
+She was re - elected in 1988 when she ran in the Mercier riding following electoral district boundary changes in 1987 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD was)
+      (UCP
+        (SBAR (IN re) (HYPH -)
+          (FRAG
+            (VP (VBN elected)
+              (PP (IN in)
+                (NP (CD 1988)))
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (PRP she))
+                  (VP (VBD ran)
+                    (PP (IN in)
+                      (NP
+                        (NP (DT the) (NN Mercier))
+                        (VP (VBG riding))))))))))
+        (PP (VBG following)
+          (NP
+            (NP (JJ electoral) (NN district) (NN boundary) (NNS changes))
+            (PP (IN in)
+              (NP (CD 1987)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	re
+	3	-
+	4	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		4-4	elected 
+			N-ARG-A1		0-0	She 
+			N-ARGM-ADV		2-2	re 
+			N-ARGM-TMP		5-6	in 1988 
+			N-ARGM-TMP		7-20	when she ran in the Mercier riding following electoral district boundary changes in 1987 
+	5	in
+	6	1988
+			name:	DATE				6-6	1988 
+	7	when
+	8	she
+	9	ran
+			sense:	campaign.v.01
+			prop:	run.02
+			V		9-9	ran 
+			R-ARGM-TMP		7-7	when 
+			N-ARG-A0		8-8	she 
+			N-ARGM-LOC		10-12	in the Mercier 
+			N-ARG-A1		13-13	riding 
+			N-ARGM-TMP		14-20	following electoral district boundary changes in 1987 
+	10	in
+	11	the
+	12	Mercier
+			name:	PERSON				12-12	Mercier 
+	13	riding
+			sense:	ride.v.06
+			prop:	bidding.02
+			V		13-13	riding 
+			N-ARG-A1		12-12	Mercier 
+	14	following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		14-14	following 
+			N-ARG-A2		15-20	electoral district boundary changes in 1987 
+	15	electoral
+			sense:	electoral.a.01
+	16	district
+			sense:	district.n.01
+	17	boundary
+			sense:	boundary.n.02
+	18	changes
+			sense:	change.n.03
+	19	in
+	20	1987
+			name:	DATE				20-20	1987 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She served in the 33rd and 34th Canadian Parliaments .
+
+
+Treebanked sentence:
+--------------------
+She served in the 33rd and 34th Canadian Parliaments . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD served)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (JJ 33rd))
+          (CC and)
+          (NP (JJ 34th) (JJ Canadian) (NNS Parliaments)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		2-8	in the 33rd and 34th Canadian Parliaments 
+	2	in
+	3	the
+	4	33rd
+			name:	ORDINAL				4-6	33rd and 34th 
+			sense:	thirty-third.s.01
+	5	and
+	6	34th
+			sense:	thirty-fourth.s.01
+	7	Canadian
+			name:	NATIONALITY				7-7	Canadian 
+	8	Parliaments
+			sense:	parliament.n.01
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jacques left the Progressive Conservative party and became an independent candidate for the Mercier riding in the 1993 federal election .
+
+
+Treebanked sentence:
+--------------------
+Jacques left the Progressive Conservative party and became an independent candidate for the Mercier riding in the 1993 federal election . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Jacques))
+    (VP
+      (VP (VBD left)
+        (NP (DT the) (NNP Progressive) (NNP Conservative) (NN party)))
+      (CC and)
+      (VP (VBD became)
+        (NP (DT an) (JJ independent) (NN candidate))
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NN Mercier))
+            (VP (VBG riding)
+              (PP (IN in)
+                (NP (DT the) (CD 1993) (JJ federal) (NN election))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jacques
+			name:	PERSON				0-0	Jacques 
+	1	left
+			sense:	leave.v.08
+			prop:	leave.01
+			V		1-1	left 
+			N-ARG-A0		0-0	Jacques 
+			N-ARG-A1		2-5	the Progressive Conservative party 
+	2	the
+	3	Progressive
+			name:	ORGANIZATION				3-5	Progressive Conservative party 
+	4	Conservative
+	5	party
+			sense:	party.n.01
+	6	and
+	7	became
+			sense:	become.v.02
+			prop:	become.01
+			V		7-7	became 
+			N-ARG-A1		0-0	Jacques 
+			N-ARG-A2		8-14	an independent candidate for the Mercier riding 
+			N-ARGM-TMP		15-19	in the 1993 federal election 
+	8	an
+	9	independent
+			name:	RELIGION				9-9	independent 
+			sense:	independent.s.04
+	10	candidate
+			name:	TITLE				10-10	candidate 
+			sense:	campaigner.n.01
+	11	for
+	12	the
+	13	Mercier
+			name:	PERSON				13-13	Mercier 
+	14	riding
+			sense:	ride.v.06
+			prop:	bidding.01
+			V		14-14	riding 
+	15	in
+	16	the
+			coref:	IDENT			0	16-19	the 1993 federal election 
+	17	1993
+			name:	DATE				17-17	1993 
+	18	federal
+			sense:	federal.a.02
+	19	election
+			sense:	election.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+However , she lost to Francine Lalonde of the Bloc Québécois .
+
+
+Treebanked sentence:
+--------------------
+However , she lost to Francine Lalonde of the Bloc Québécois . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBD lost)
+      (PP (IN to)
+        (NP
+          (NP (NNP Francine) (NNP Lalonde))
+          (PP (IN of)
+            (NP (DT the) (NNP Bloc) (NNP Québécois))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	However
+			sense:	however.r.01
+	1	,
+	2	she
+	3	lost
+			sense:	lose.v.02
+			prop:	lose.03
+			V		3-3	lost 
+			N-ARGM-DIS		0-0	However 
+			N-ARG-A0		2-2	she 
+			N-ARG-A2		4-10	to Francine Lalonde of the Bloc Québécois 
+	4	to
+	5	Francine
+			name:	PERSON				5-6	Francine Lalonde 
+	6	Lalonde
+	7	of
+	8	the
+	9	Bloc
+	10	Québécois
+	11	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.15-18	the 1984 federal election 
+				3.4-5	her election 
+				6.16-19	the 1993 federal election 
+	Chain 1 (IDENT)
+				0.14-19	the House of Commons of Canada 
+				3.15-18	the House of Commons 
+

@@ -1,0 +1,674 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The University of Illinois Springfield ( UIS ) is a public university in Springfield , Illinois , United States .
+
+
+Treebanked sentence:
+--------------------
+The University of Illinois Springfield ( UIS ) is a public university in Springfield , Illinois , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP University))
+      (PP (IN of)
+        (NP (NNP Illinois) (NNP Springfield) (-LRB- -LRB-) (NNP UIS) (-RRB- -RRB-))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ public) (NN university))
+        (PP (IN in)
+          (NP (NNP Springfield) (, ,) (NNP Illinois) (, ,) (NNP United) (NNP States)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-7	The University of Illinois Springfield ( UIS ) 
+	1	University
+			coref:	IDENT			0	1-4	University of Illinois Springfield 
+			name:	ORGANIZATION				1-4	University of Illinois Springfield 
+	2	of
+	3	Illinois
+	4	Springfield
+	5	(
+	6	UIS
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	The University of Illinois Springfield ( UIS ) 
+			N-ARG-A2		9-18	a public university in Springfield , Illinois , United States 
+	9	a
+	10	public
+			sense:	public.a.01
+	11	university
+			sense:	university.n.02
+	12	in
+	13	Springfield
+			name:	CITY				13-13	Springfield 
+	14	,
+	15	Illinois
+			coref:	IDENT			1	15-15	Illinois 
+			name:	STATE_OR_PROVINCE				15-15	Illinois 
+	16	,
+	17	United
+			name:	COUNTRY				17-18	United States 
+	18	States
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The university was established in 1969 as Sangamon State University by the Illinois General Assembly and became a part of the University of Illinois system on July 1 , 1995 .
+
+
+Treebanked sentence:
+--------------------
+The university was established in 1969 as Sangamon State University by the Illinois General Assembly and became a part of the University of Illinois system on July 1 , 1995 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN university))
+    (VP
+      (VP (VBD was)
+        (VP (VBN established)
+          (PP (IN in)
+            (NP (CD 1969)))
+          (PP (IN as)
+            (NP
+              (NP (NNP Sangamon) (NNP State) (NNP University))
+              (PP (IN by)
+                (NP (DT the) (NNP Illinois) (NNP General) (NNP Assembly)))))))
+      (CC and)
+      (VP (VBD became)
+        (NP
+          (NP (DT a) (NN part))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP University))
+              (PP (IN of)
+                (NP (NNP Illinois) (NN system))))))
+        (PP (IN on)
+          (NP (NNP July) (CD 1) (, ,) (CD 1995)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The university 
+	1	university
+			sense:	university.n.02
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		3-3	established 
+			N-ARG-A1		0-1	The university 
+			N-ARGM-TMP		4-5	in 1969 
+			N-ARG-A2		6-9	as Sangamon State University 
+			N-ARG-A0		10-14	by the Illinois General Assembly 
+	4	in
+	5	1969
+			name:	DATE				5-5	1969 
+	6	as
+	7	Sangamon
+			name:	ORGANIZATION				7-9	Sangamon State University 
+	8	State
+	9	University
+	10	by
+	11	the
+	12	Illinois
+			name:	ORGANIZATION				12-14	Illinois General Assembly 
+	13	General
+	14	Assembly
+	15	and
+	16	became
+			sense:	become.v.02
+			prop:	become.01
+			V		16-16	became 
+			N-ARG-A1		0-1	The university 
+			N-ARG-A2		17-24	a part of the University of Illinois system 
+			N-ARGM-TMP		25-29	on July 1 , 1995 
+	17	a
+	18	part
+			sense:	part.n.01
+	19	of
+	20	the
+			coref:	IDENT			0	20-24	the University of Illinois system 
+	21	University
+			coref:	IDENT			0	21-23	University of Illinois 
+			name:	ORGANIZATION				21-23	University of Illinois 
+	22	of
+	23	Illinois
+	24	system
+			sense:	system.n.02
+	25	on
+	26	July
+			name:	DATE				26-29	July 1 , 1995 
+	27	1
+	28	,
+	29	1995
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As a public liberal arts college , and the newest campus in the University of Illinois system , UIS is a member of the Council of Public Liberal Arts Colleges .
+
+
+Treebanked sentence:
+--------------------
+As a public liberal arts college , and the newest campus in the University of Illinois system , UIS is a member of the Council of Public Liberal Arts Colleges . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN As)
+      (NP
+        (NP (DT a) (JJ public)
+          (NML (JJ liberal) (NNS arts))
+          (NN college))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (DT the) (JJS newest) (NN campus))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NNP University))
+              (PP (IN of)
+                (NP (NNP Illinois) (NN system))))))))
+    (, ,)
+    (NP (NN UIS))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Council))
+            (PP (IN of)
+              (NP (NNP Public) (NNP Liberal) (NNPS Arts) (NNP Colleges)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	a
+	2	public
+			sense:	public.a.01
+	3	liberal
+			name:	IDEOLOGY				3-3	liberal 
+			sense:	broad.s.08
+	4	arts
+			sense:	art.n.01
+	5	college
+			sense:	college.n.01
+	6	,
+	7	and
+	8	the
+	9	newest
+			sense:	new.a.01
+	10	campus
+			sense:	campus.n.01
+	11	in
+	12	the
+			coref:	IDENT			0	12-16	the University of Illinois system 
+	13	University
+			coref:	IDENT			0	13-15	University of Illinois 
+			name:	ORGANIZATION				13-15	University of Illinois 
+	14	of
+	15	Illinois
+	16	system
+			sense:	system.n.02
+	17	,
+	18	UIS
+			coref:	IDENT			0	18-18	UIS 
+			name:	ORGANIZATION				18-18	UIS 
+	19	is
+			sense:	be.v.01
+			prop:	be.01
+			V		19-19	is 
+			N-ARGM-PRD		0-16	As a public liberal arts college , and the newest campus in the University of Illinois system 
+			N-ARG-A1		18-18	UIS 
+			N-ARG-A2		20-29	a member of the Council of Public Liberal Arts Colleges 
+	20	a
+	21	member
+			sense:	member.n.04
+	22	of
+	23	the
+	24	Council
+			name:	ORGANIZATION				24-29	Council of Public Liberal Arts Colleges 
+	25	of
+	26	Public
+	27	Liberal
+	28	Arts
+	29	Colleges
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+UIS is also part of the American Association of State Colleges and Universities and the American Council on Education .
+
+
+Treebanked sentence:
+--------------------
+UIS is also part of the American Association of State Colleges and Universities and the American Council on Education . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP UIS))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (NP
+        (NP
+          (NP (NN part))
+          (PP (IN of)
+            (NP (DT the)
+              (NML
+                (NML
+                  (NML (NNP American) (NNP Association))
+                  (PP (IN of)
+                    (NP (NNP State) (NNP Colleges))))
+                (CC and)
+                (NML (NNPS Universities))))))
+        (CC and)
+        (NP
+          (NP (DT the) (NNP American) (NNP Council))
+          (PP (IN on)
+            (NP (NNP Education))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	UIS
+			coref:	IDENT			0	0-0	UIS 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	UIS 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A2		3-18	part of the American Association of State Colleges and Universities and the American Council on Education 
+	2	also
+			sense:	besides.r.02
+	3	part
+			sense:	part.n.01
+	4	of
+	5	the
+	6	American
+			name:	ORGANIZATION				6-12	American Association of State Colleges and Universities 
+	7	Association
+	8	of
+	9	State
+	10	Colleges
+	11	and
+	12	Universities
+	13	and
+	14	the
+	15	American
+			name:	ORGANIZATION				15-18	American Council on Education 
+	16	Council
+	17	on
+	18	Education
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The campus ' main repository , Brookens Library , holds a collection of nearly 800,000 books and serials- in addition to accessible resources at the University of Illinois Chicago and University of Illinois Urbana - Champaign campuses .
+
+
+Treebanked sentence:
+--------------------
+The campus ' main repository , Brookens Library , holds a collection of nearly 800,000 books and serials - in addition to accessible resources at the University of Illinois Chicago and University of Illinois Urbana - Champaign campuses . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN campus) ('' ') (JJ main) (NN repository))
+      (, ,)
+      (NP (NNP Brookens) (NNP Library))
+      (, ,))
+    (VP (VBZ holds)
+      (NP
+        (NP
+          (NP (DT a) (NN collection))
+          (PP (IN of)
+            (NP
+              (QP (RB nearly) (CD 800,000))
+              (NNS books))))
+        (CC and)
+        (NP
+          (NP (NNS serials))
+          (HYPH -)
+          (PP (IN in)
+            (NP (NN addition)))))
+      (PP (IN to)
+        (NP
+          (NP (JJ accessible) (NNS resources))
+          (PP (IN at)
+            (NP
+              (NP (DT the) (NNP University))
+              (PP (IN of)
+                (NP
+                  (NML
+                    (NML (NNP Illinois) (NNP Chicago))
+                    (CC and)
+                    (NML
+                      (NML (NNP University))
+                      (PP (IN of)
+                        (NP (NNP Illinois) (NNP Urbana) (HYPH -) (NNP Champaign)))))
+                  (NNS campuses))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	campus
+			sense:	campus.n.01
+	2	'
+	3	main
+			sense:	chief.s.01
+	4	repository
+			sense:	depository.n.01
+	5	,
+	6	Brookens
+			name:	ORGANIZATION				6-7	Brookens Library 
+	7	Library
+	8	,
+	9	holds
+			sense:	have.v.01
+			prop:	hold.01
+			V		9-9	holds 
+			N-ARG-A0		0-8	The campus ' main repository , Brookens Library , 
+			N-ARG-A1		10-37	a collection of nearly 800,000 books and serials - in addition to accessible resources at the University of Illinois Chicago and University of Illinois Urbana - Champaign campuses 
+	10	a
+	11	collection
+			sense:	collection.n.01
+	12	of
+	13	nearly
+			sense:	about.r.07
+	14	800,000
+			name:	NUMBER				14-14	800,000 
+	15	books
+			sense:	book.n.02
+	16	and
+	17	serials
+			sense:	series.n.03
+	18	-
+	19	in
+	20	addition
+			sense:	accession.n.03
+	21	to
+	22	accessible
+			sense:	accessible.s.03
+	23	resources
+			sense:	resource.n.02
+	24	at
+	25	the
+			coref:	IDENT			0	25-37	the University of Illinois Chicago and University of Illinois Urbana - Champaign campuses 
+	26	University
+			coref:	IDENT			0	26-29	University of Illinois Chicago 
+			name:	ORGANIZATION				26-29	University of Illinois Chicago 
+	27	of
+	28	Illinois
+	29	Chicago
+	30	and
+	31	University
+			name:	ORGANIZATION				31-36	University of Illinois Urbana - Champaign 
+	32	of
+	33	Illinois
+	34	Urbana
+	35	-
+	36	Champaign
+	37	campuses
+			sense:	campus.n.01
+	38	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The University of Illinois Springfield serves roughly 5,700 students in 27 undergraduate degree programs , 20 master 's degree programs , and a doctorate in Public Administration .
+
+
+Treebanked sentence:
+--------------------
+The University of Illinois Springfield serves roughly 5,700 students in 27 undergraduate degree programs , 20 master 's degree programs , and a doctorate in Public Administration . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP University))
+      (PP (IN of)
+        (NP (NNP Illinois) (NNP Springfield))))
+    (VP (VBZ serves)
+      (NP (RB roughly) (CD 5,700) (NNS students))
+      (PP (IN in)
+        (NP
+          (NP (CD 27) (JJ undergraduate) (NN degree) (NNS programs))
+          (, ,)
+          (NP
+            (NP (CD 20) (NN master) (POS 's))
+            (NN degree) (NNS programs))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (DT a) (NN doctorate))
+            (PP (IN in)
+              (NP (NNP Public) (NNP Administration)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-4	The University of Illinois Springfield 
+	1	University
+			name:	ORGANIZATION				1-4	University of Illinois Springfield 
+	2	of
+	3	Illinois
+	4	Springfield
+	5	serves
+			sense:	service.v.01
+			prop:	serve.01
+			V		5-5	serves 
+			N-ARG-A0		0-4	The University of Illinois Springfield 
+			N-ARG-A2		6-8	roughly 5,700 students 
+			N-ARGM-LOC		9-26	in 27 undergraduate degree programs , 20 master 's degree programs , and a doctorate in Public Administration 
+	6	roughly
+			sense:	approximately.r.01
+	7	5,700
+			name:	NUMBER				7-7	5,700 
+	8	students
+			sense:	student.n.01
+	9	in
+	10	27
+			name:	NUMBER				10-10	27 
+	11	undergraduate
+	12	degree
+			sense:	academic_degree.n.01
+	13	programs
+			sense:	course_of_study.n.01
+	14	,
+	15	20
+			name:	NUMBER				15-15	20 
+	16	master
+			sense:	master.n.08
+	17	's
+	18	degree
+			sense:	academic_degree.n.01
+	19	programs
+			sense:	course_of_study.n.01
+	20	,
+	21	and
+	22	a
+	23	doctorate
+			sense:	doctors_degree.n.01
+	24	in
+	25	Public
+			name:	ORGANIZATION				25-26	Public Administration 
+	26	Administration
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The university was once one of the two upper - division and graduate universities in Illinois , but now accepts freshmen , transfer and graduate students .
+
+
+Treebanked sentence:
+--------------------
+The university was once one of the two upper - division and graduate universities in Illinois , but now accepts freshmen , transfer and graduate students . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN university))
+      (VP (VBD was)
+        (ADVP (RB once))
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP (DT the) (CD two)
+              (NML
+                (NML (JJ upper) (HYPH -) (NN division))
+                (CC and)
+                (NML (NN graduate)))
+              (NNS universities)))
+          (PP (IN in)
+            (NP (NNP Illinois))))))
+    (, ,)
+    (CC but)
+    (SINV
+      (ADVP (RB now))
+      (VP (VBZ accepts))
+      (NP
+        (NP (NNS freshmen))
+        (, ,)
+        (NP
+          (NML (NN transfer)
+            (CC and)
+            (NN graduate))
+          (NNS students))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The university 
+	1	university
+			sense:	university.n.02
+	2	was
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	The university 
+			N-ARGM-TMP		3-3	once 
+			N-ARG-A2		4-15	one of the two upper - division and graduate universities in Illinois 
+	3	once
+			name:	DATE				3-3	once 
+			sense:	once.r.03
+	4	one
+			name:	NUMBER				4-4	one 
+	5	of
+	6	the
+	7	two
+			name:	NUMBER				7-7	two 
+	8	upper
+			sense:	upper.s.01
+	9	-
+	10	division
+			sense:	part.n.09
+	11	and
+	12	graduate
+			sense:	alumnus.n.01
+	13	universities
+			sense:	university.n.02
+	14	in
+	15	Illinois
+			coref:	IDENT			1	15-15	Illinois 
+			name:	STATE_OR_PROVINCE				15-15	Illinois 
+	16	,
+	17	but
+	18	now
+			name:	DATE				18-18	now 
+			sense:	nowadays.r.01
+	19	accepts
+			sense:	accept.v.05
+			prop:	accept.01
+			V		19-19	accepts 
+			N-ARG-A0		0-1	The university 
+			N-ARGM-TMP		18-18	now 
+			N-ARG-A1		20-25	freshmen , transfer and graduate students 
+	20	freshmen
+			sense:	freshman.n.01
+	21	,
+	22	transfer
+			sense:	transfer.n.02
+	23	and
+	24	graduate
+			sense:	alumnus.n.01
+	25	students
+			sense:	student.n.01
+	26	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.1-4	University of Illinois Springfield 
+				0.0-7	The University of Illinois Springfield ( UIS ) 
+				1.0-1	The university 
+				1.20-24	the University of Illinois system 
+				1.21-23	University of Illinois 
+				2.12-16	the University of Illinois system 
+				2.13-15	University of Illinois 
+				2.18-18	UIS 
+				3.0-0	UIS 
+				4.25-37	the University of Illinois Chicago and University of Illinois Urbana - Champaign campuses 
+				4.26-29	University of Illinois Chicago 
+				5.0-4	The University of Illinois Springfield 
+				6.0-1	The university 
+	Chain 1 (IDENT)
+				0.15-15	Illinois 
+				6.15-15	Illinois 
+

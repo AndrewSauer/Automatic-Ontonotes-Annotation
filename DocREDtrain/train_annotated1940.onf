@@ -1,0 +1,876 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Center Hall is a broad central hallway on the second floor of the White House , home of the President of the United States .
+
+
+Treebanked sentence:
+--------------------
+The Center Hall is a broad central hallway on the second floor of the White House , home of the President of the United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Center) (NNP Hall))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ broad) (JJ central) (NN hallway))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (JJ second) (NN floor))
+            (PP (IN of)
+              (NP
+                (NP (DT the)
+                  (NML (NNP White) (NNP House))
+                  (, ,) (NN home))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NNP President))
+                    (PP (IN of)
+                      (NP (DT the) (NNP United) (NNP States)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			5	0-2	The Center Hall 
+	1	Center
+			name:	ORGANIZATION				1-2	Center Hall 
+	2	Hall
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	The Center Hall 
+			N-ARG-A2		4-24	a broad central hallway on the second floor of the White House , home of the President of the United States 
+	4	a
+	5	broad
+			sense:	wide.a.01
+	6	central
+			sense:	central.a.02
+	7	hallway
+			sense:	hallway.n.01
+	8	on
+	9	the
+	10	second
+			name:	ORDINAL				10-10	second 
+			sense:	second.s.01
+	11	floor
+			sense:	floor.n.02
+	12	of
+	13	the
+	14	White
+			coref:	IDENT			2	14-15	White House 
+			name:	LOCATION				14-15	White House 
+	15	House
+	16	,
+	17	home
+			sense:	dwelling.n.01
+	18	of
+	19	the
+			coref:	IDENT			3	19-24	the President of the United States 
+	20	President
+			name:	TITLE				20-20	President 
+	21	of
+	22	the
+	23	United
+			name:	COUNTRY				23-24	United States 
+	24	States
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It runs east to west connecting the East Sitting Hall with the West Sitting Hall .
+
+
+Treebanked sentence:
+--------------------
+It runs east to west connecting the East Sitting Hall with the West Sitting Hall . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ runs)
+      (ADVP (RB east)
+        (PP (IN to)
+          (NP (NN west))))
+      (S
+        (VP (VBG connecting)
+          (NP (DT the) (NNP East) (VBG Sitting) (NN Hall))
+          (PP (IN with)
+            (NP (DT the) (NN West) (VBG Sitting) (NN Hall))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	runs
+			sense:	run.v.03
+			prop:	run.04
+			V		1-1	runs 
+			N-ARG-A1		0-0	It 
+			N-ARGM-DIR		2-4	east to west 
+			N-ARGM-ADV		5-14	connecting the East Sitting Hall with the West Sitting Hall 
+	2	east
+			sense:	east.r.01
+	3	to
+	4	west
+			sense:	west.n.02
+	5	connecting
+			sense:	connect.v.01
+			prop:	connect.01
+			V		5-5	connecting 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		6-14	the East Sitting Hall with the West Sitting Hall 
+	6	the
+			coref:	IDENT			6	6-9	the East Sitting Hall 
+	7	East
+			name:	LOCATION				7-9	East Sitting Hall 
+	8	Sitting
+			sense:	sit.v.01
+			prop:	sit.01
+			V		8-8	Sitting 
+			N-ARG-A1		9-9	Hall 
+	9	Hall
+			sense:	hallway.n.01
+	10	with
+	11	the
+			coref:	IDENT			6	11-14	the West Sitting Hall 
+	12	West
+			name:	LOCATION				12-14	West Sitting Hall 
+			sense:	west.n.02
+	13	Sitting
+			sense:	sit.v.01
+			prop:	sit.01
+			V		13-13	Sitting 
+			N-ARG-A1		14-14	Hall 
+	14	Hall
+			sense:	hallway.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It allows access to the elevator vestibule , East and West Bedrooms , the Grand Staircase , Yellow Oval Room , the first family 's private living room , and the president 's bedroom .
+
+
+Treebanked sentence:
+--------------------
+It allows access to the elevator vestibule , East and West Bedrooms , the Grand Staircase , Yellow Oval Room , the first family 's private living room , and the president 's bedroom . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ allows)
+      (NP (NN access))
+      (PP (IN to)
+        (NP
+          (NP (DT the) (NN elevator) (NN vestibule))
+          (, ,)
+          (NP
+            (NML (NNP East)
+              (CC and)
+              (NNP West))
+            (NNPS Bedrooms))
+          (, ,)
+          (NP (DT the) (NNP Grand) (NNP Staircase))
+          (, ,)
+          (NP (NNP Yellow) (NNP Oval) (NNP Room))
+          (, ,)
+          (NP
+            (NP (DT the) (JJ first) (NN family) (POS 's))
+            (JJ private) (NN living) (NN room))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (DT the) (NN president) (POS 's))
+            (NN bedroom)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	allows
+			sense:	let.v.01
+			prop:	allow.01
+			V		1-1	allows 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-33	access to the elevator vestibule , East and West Bedrooms , the Grand Staircase , Yellow Oval Room , the first family 's private living room , and the president 's bedroom 
+	2	access
+			sense:	access.n.06
+	3	to
+	4	the
+	5	elevator
+			sense:	elevator.n.01
+	6	vestibule
+			sense:	anteroom.n.01
+	7	,
+	8	East
+	9	and
+	10	West
+	11	Bedrooms
+	12	,
+	13	the
+	14	Grand
+	15	Staircase
+	16	,
+	17	Yellow
+			coref:	IDENT			4	17-19	Yellow Oval Room 
+			name:	LOCATION				17-19	Yellow Oval Room 
+	18	Oval
+	19	Room
+	20	,
+	21	the
+	22	first
+			name:	ORDINAL				22-22	first 
+			sense:	first.a.01
+	23	family
+			sense:	family.n.01
+	24	's
+	25	private
+			sense:	private.a.01
+	26	living
+			sense:	life.n.02
+	27	room
+			sense:	room.n.01
+	28	,
+	29	and
+	30	the
+			coref:	IDENT			3	30-32	the president 's 
+	31	president
+			name:	TITLE				31-31	president 
+			sense:	president_of_the_united_states.n.01
+	32	's
+	33	bedroom
+			sense:	bedroom.n.01
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the early 20th century , William Howard Taft decorated the hall with exotic plants and art he had brought with him from his tenure as Governor - General of the Philippines .
+
+
+Treebanked sentence:
+--------------------
+In the early 20th century , William Howard Taft decorated the hall with exotic plants and art he had brought with him from his tenure as Governor - General of the Philippines . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (JJ early) (JJ 20th) (NN century)))
+    (, ,)
+    (NP (NNP William) (NNP Howard) (NNP Taft))
+    (VP (VBD decorated)
+      (NP (DT the) (NN hall))
+      (PP (IN with)
+        (NP
+          (NP (JJ exotic) (NNS plants))
+          (CC and)
+          (NP
+            (NP (NN art))
+            (SBAR
+              (S
+                (NP (PRP he))
+                (VP (VBD had)
+                  (VP (VBN brought)
+                    (PP (IN with)
+                      (NP (PRP him)))
+                    (PP (IN from)
+                      (NP (PRP$ his) (NN tenure)))
+                    (PP (IN as)
+                      (NP
+                        (NP (NNP Governor) (HYPH -) (NNP General))
+                        (PP (IN of)
+                          (NP (DT the) (NNPS Philippines)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+			name:	DATE				1-4	the early 20th century 
+	2	early
+			sense:	early.a.01
+	3	20th
+			sense:	twentieth.s.01
+	4	century
+			sense:	century.n.01
+	5	,
+	6	William
+			coref:	IDENT			0	6-8	William Howard Taft 
+			name:	PERSON				6-8	William Howard Taft 
+	7	Howard
+	8	Taft
+	9	decorated
+			sense:	decorate.v.01
+			prop:	decorate.01
+			V		9-9	decorated 
+			N-ARGM-TMP		0-4	In the early 20th century 
+			N-ARG-A0		6-8	William Howard Taft 
+			N-ARG-A1		10-11	the hall 
+			N-ARG-A2		12-31	with exotic plants and art he had brought with him from his tenure as Governor - General of the Philippines 
+	10	the
+			coref:	IDENT			5	10-11	the hall 
+	11	hall
+			sense:	anteroom.n.01
+	12	with
+	13	exotic
+			sense:	alien.s.02
+	14	plants
+			sense:	plant.n.02
+	15	and
+	16	art
+			sense:	art.n.01
+	17	he
+			coref:	IDENT			0	17-17	he 
+	18	had
+			sense:	have.v.01
+			prop:	have.01
+			V		18-18	had 
+	19	brought
+			sense:	bring.v.01
+			prop:	bring.01
+			V		19-19	brought 
+			N-ARG-A1		13-16	exotic plants and art 
+			N-ARG-A0		17-17	he 
+			N-ARGM-MNR		20-21	with him 
+			N-ARG-A4		22-31	from his tenure as Governor - General of the Philippines 
+	20	with
+	21	him
+			coref:	IDENT			0	21-21	him 
+	22	from
+	23	his
+			coref:	IDENT			0	23-23	his 
+	24	tenure
+			sense:	tenure.n.01
+	25	as
+	26	Governor
+			name:	TITLE				26-26	Governor 
+	27	-
+	28	General
+			name:	TITLE				28-28	General 
+	29	of
+	30	the
+	31	Philippines
+			name:	COUNTRY				31-31	Philippines 
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Later , Woodrow Wilson watched motion pictures here as the present White House theater was still a cloakroom .
+
+
+Treebanked sentence:
+--------------------
+Later , Woodrow Wilson watched motion pictures here as the present White House theater was still a cloakroom . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Later))
+    (, ,)
+    (NP (NNP Woodrow) (NNP Wilson))
+    (VP (VBD watched)
+      (NP (NN motion) (NNS pictures))
+      (ADVP (RB here))
+      (SBAR (IN as)
+        (S
+          (NP (DT the) (JJ present)
+            (NML (NNP White) (NNP House))
+            (NN theater))
+          (VP (VBD was)
+            (ADVP (RB still))
+            (NP (DT a) (NN cloakroom))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Later
+			sense:	subsequently.r.01
+	1	,
+	2	Woodrow
+			coref:	IDENT			0	2-3	Woodrow Wilson 
+			name:	PERSON				2-3	Woodrow Wilson 
+	3	Wilson
+	4	watched
+			sense:	watch.v.03
+			prop:	watch.01
+			V		4-4	watched 
+			N-ARGM-TMP		0-0	Later 
+			N-ARG-A0		2-3	Woodrow Wilson 
+			N-ARG-A1		5-6	motion pictures 
+			N-ARGM-LOC		7-7	here 
+			N-ARGM-TMP		8-17	as the present White House theater was still a cloakroom 
+	5	motion
+			sense:	apparent_motion.n.01
+	6	pictures
+			sense:	movie.n.01
+	7	here
+			sense:	here.r.01
+	8	as
+	9	the
+	10	present
+			name:	DATE				10-10	present 
+			sense:	present.a.01
+	11	White
+			coref:	IDENT			2	11-12	White House 
+			name:	LOCATION				11-12	White House 
+	12	House
+	13	theater
+			sense:	theater.n.01
+	14	was
+			sense:	be.v.01
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		9-13	the present White House theater 
+			N-ARGM-TMP		15-15	still 
+			N-ARG-A2		16-17	a cloakroom 
+	15	still
+			sense:	still.r.01
+	16	a
+	17	cloakroom
+			sense:	cloakroom.n.02
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Furnishings include an American manufactured painted wood Neoclassical suite including a settee , six armchairs and four side chairs that once belonged to President James Monroe .
+
+
+Treebanked sentence:
+--------------------
+Furnishings include an American manufactured painted wood Neoclassical suite including a settee , six armchairs and four side chairs that once belonged to President James Monroe . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Furnishings))
+    (VP (VBP include)
+      (NP
+        (NP
+          (NP (DT an)
+            (ADJP (JJ American) (VBN manufactured))
+            (VBN painted) (NN wood))
+          (NP
+            (NP (JJ Neoclassical) (NN suite))
+            (PP (VBG including)
+              (NP
+                (NP (DT a) (NN settee))
+                (, ,)
+                (NP (CD six) (NNS armchairs))
+                (CC and)
+                (NP (CD four) (NN side) (NNS chairs))))))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (ADVP (RB once))
+            (VP (VBD belonged)
+              (PP (IN to)
+                (NP (NNP President) (NNP James) (NNP Monroe))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Furnishings
+	1	include
+			sense:	include.v.01
+			prop:	include.01
+			V		1-1	include 
+			N-ARG-A2		0-0	Furnishings 
+			N-ARG-A1		2-25	an American manufactured painted wood Neoclassical suite including a settee , six armchairs and four side chairs that once belonged to President James Monroe 
+	2	an
+	3	American
+			name:	NATIONALITY				3-3	American 
+	4	manufactured
+			sense:	manufacture.v.01
+			prop:	manufacture.01
+			V		4-4	manufactured 
+			N-ARGM-LOC		3-3	American 
+			N-ARG-A1		7-8	Neoclassical suite 
+	5	painted
+			sense:	paint.v.02
+			prop:	paint.01
+			V		5-5	painted 
+			N-ARG-A1		6-6	wood 
+	6	wood
+			sense:	wood.n.01
+	7	Neoclassical
+			sense:	neoclassic.s.01
+	8	suite
+			sense:	suite.n.04
+	9	including
+			sense:	include.v.01
+			prop:	include.01
+			V		9-9	including 
+			N-ARG-A2		2-8	an American manufactured painted wood Neoclassical suite 
+			N-ARG-A1		10-25	a settee , six armchairs and four side chairs that once belonged to President James Monroe 
+	10	a
+	11	settee
+			sense:	settle.n.01
+	12	,
+	13	six
+			name:	NUMBER				13-13	six 
+	14	armchairs
+			sense:	armchair.n.01
+	15	and
+	16	four
+			name:	NUMBER				16-16	four 
+	17	side
+			sense:	side.n.01
+	18	chairs
+			sense:	chair.n.01
+	19	that
+	20	once
+			name:	DATE				20-20	once 
+			sense:	once.r.03
+	21	belonged
+			sense:	belong.v.01
+			prop:	belong.01
+			V		21-21	belonged 
+			N-ARG-A0		13-18	six armchairs and four side chairs 
+			R-ARG-A0		19-19	that 
+			N-ARGM-TMP		20-20	once 
+			N-ARG-A1		22-25	to President James Monroe 
+	22	to
+	23	President
+			name:	TITLE				23-23	President 
+	24	James
+			name:	PERSON				24-25	James Monroe 
+	25	Monroe
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The suite was reupholstered in a wool and silk velvet faux tiger print during the administration of George W. Bush and moved to the Center Hall from the Yellow Oval Room .
+
+
+Treebanked sentence:
+--------------------
+The suite was reupholstered in a wool and silk velvet faux tiger print during the administration of George W. Bush and moved to the Center Hall from the Yellow Oval Room . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN suite))
+    (VP
+      (VP (VBD was)
+        (VP (VBN reupholstered)
+          (PP (IN in)
+            (NP
+              (NP (DT a) (NN wool))
+              (CC and)
+              (NP (NN silk) (NN velvet) (NN faux) (NN tiger) (NN print))))
+          (PP (IN during)
+            (NP
+              (NP (DT the) (NN administration))
+              (PP (IN of)
+                (NP (NNP George) (NNP W.) (NNP Bush)))))))
+      (CC and)
+      (VP (VBD moved)
+        (PP (IN to)
+          (NP (DT the) (NNP Center) (NNP Hall)))
+        (PP (IN from)
+          (NP (DT the) (NNP Yellow) (NNP Oval) (NNP Room)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	suite
+			sense:	suite.n.04
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	reupholstered
+			prop:	upholster.01
+			V		3-3	reupholstered 
+			N-ARG-A1		0-1	The suite 
+			N-ARG-A2		4-12	in a wool and silk velvet faux tiger print 
+			N-ARGM-TMP		13-19	during the administration of George W. Bush 
+	4	in
+	5	a
+	6	wool
+			sense:	wool.n.01
+	7	and
+	8	silk
+			sense:	silk.n.01
+	9	velvet
+			sense:	velvet.n.01
+	10	faux
+	11	tiger
+			sense:	tiger.n.02
+	12	print
+			sense:	print.n.06
+	13	during
+	14	the
+	15	administration
+			sense:	presidency.n.01
+	16	of
+	17	George
+			name:	PERSON				17-19	George W. Bush 
+	18	W.
+	19	Bush
+	20	and
+	21	moved
+			sense:	move.v.02
+			prop:	move.01
+			V		21-21	moved 
+			N-ARG-A1		0-1	The suite 
+			N-ARG-A2		22-25	to the Center Hall 
+			N-ARGM-DIR		26-30	from the Yellow Oval Room 
+	22	to
+	23	the
+			coref:	IDENT			5	23-25	the Center Hall 
+	24	Center
+	25	Hall
+	26	from
+	27	the
+			coref:	IDENT			4	27-30	the Yellow Oval Room 
+	28	Yellow
+			name:	LOCATION				28-30	Yellow Oval Room 
+	29	Oval
+	30	Room
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Also in the room is a Louis XVI mahogany cylinder desk acquired for the Red Room during the administration of President John F. Kennedy .
+
+
+Treebanked sentence:
+--------------------
+Also in the room is a Louis XVI mahogany cylinder desk acquired for the Red Room during the administration of President John F. Kennedy . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (FRAG
+      (ADVP (RB Also))
+      (PP (IN in)
+        (NP (DT the) (NN room))))
+    (SQ (VBZ is)
+      (NP (DT a) (NNP Louis) (NNP XVI) (NN mahogany) (NN cylinder))
+      (NP
+        (NP (NN desk))
+        (VP (VBN acquired)
+          (PP (IN for)
+            (NP (DT the) (NNP Red) (NNP Room)))
+          (PP (IN during)
+            (NP
+              (NP (DT the) (NN administration))
+              (PP (IN of)
+                (NP (NNP President) (NNP John) (NNP F.) (NNP Kennedy))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Also
+			sense:	besides.r.02
+	1	in
+	2	the
+			coref:	IDENT			4	2-3	the room 
+	3	room
+			sense:	room.n.01
+	4	is
+			sense:	be.v.03
+			prop:	be.01
+			V		4-4	is 
+			N-ARGM-DIS		0-0	Also 
+			N-ARG-A2		1-3	in the room 
+			N-ARG-A1		5-23	a Louis XVI mahogany cylinder desk acquired for the Red Room during the administration of President John F. Kennedy 
+	5	a
+	6	Louis
+			name:	PERSON				6-7	Louis XVI 
+	7	XVI
+	8	mahogany
+			sense:	mahogany.n.01
+	9	cylinder
+			sense:	cylinder.n.01
+	10	desk
+			sense:	desk.n.01
+	11	acquired
+			sense:	get.v.01
+			prop:	acquire.01
+			V		11-11	acquired 
+			N-ARG-A1		5-10	a Louis XVI mahogany cylinder desk 
+			N-ARG-A4		12-15	for the Red Room 
+			N-ARGM-TMP		16-23	during the administration of President John F. Kennedy 
+	12	for
+	13	the
+	14	Red
+			name:	ORGANIZATION				14-15	Red Room 
+	15	Room
+	16	during
+	17	the
+	18	administration
+			sense:	presidency.n.01
+	19	of
+	20	President
+			coref:	IDENT			1	20-23	President John F. Kennedy 
+			name:	TITLE				20-20	President 
+	21	John
+			name:	PERSON				21-23	John F. Kennedy 
+	22	F.
+	23	Kennedy
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A pair of bronze French Empire caryatid torchères from Château de Malmaison were originally acquired for the Blue Room by Kennedy decorator Stéphane Boudin .
+
+
+Treebanked sentence:
+--------------------
+A pair of bronze French Empire caryatid torchères from Château de Malmaison were originally acquired for the Blue Room by Kennedy decorator Stéphane Boudin . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN pair))
+      (PP (IN of)
+        (NP
+          (NP (NN bronze)
+            (ADJP (NNP French))
+            (NNP Empire) (NN caryatid) (NNS torchères))
+          (PP (IN from)
+            (NP (NNP Château) (NNP de) (NNP Malmaison))))))
+    (VP (VBD were)
+      (ADVP (RB originally))
+      (VP (VBN acquired)
+        (PP (IN for)
+          (NP (DT the) (NNP Blue) (NNP Room)))
+        (PP (IN by)
+          (NP
+            (NML (NNP Kennedy) (NN decorator))
+            (NNP Stéphane) (NNP Boudin)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	pair
+			sense:	pair.n.01
+	2	of
+	3	bronze
+			sense:	bronze.n.02
+	4	French
+			name:	NATIONALITY				4-4	French 
+	5	Empire
+			name:	MISC				5-5	Empire 
+	6	caryatid
+			sense:	caryatid.n.01
+	7	torchères
+	8	from
+	9	Château
+			name:	LOCATION				9-11	Château de Malmaison 
+	10	de
+	11	Malmaison
+	12	were
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	were 
+	13	originally
+			sense:	primitively.r.01
+	14	acquired
+			sense:	get.v.01
+			prop:	acquire.01
+			V		14-14	acquired 
+			N-ARG-A1		0-11	A pair of bronze French Empire caryatid torchères from Château de Malmaison 
+			N-ARGM-TMP		13-13	originally 
+			N-ARG-A4		15-18	for the Blue Room 
+			N-ARG-A0		19-23	by Kennedy decorator Stéphane Boudin 
+	15	for
+	16	the
+	17	Blue
+	18	Room
+	19	by
+	20	Kennedy
+			coref:	IDENT			1	20-20	Kennedy 
+			name:	PERSON				20-20	Kennedy 
+	21	decorator
+			name:	TITLE				21-21	decorator 
+			sense:	interior_designer.n.01
+	22	Stéphane
+			name:	PERSON				22-23	Stéphane Boudin 
+	23	Boudin
+	24	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.6-8	William Howard Taft 
+				3.17-17	he 
+				3.21-21	him 
+				3.23-23	his 
+				4.2-3	Woodrow Wilson 
+	Chain 1 (IDENT)
+				7.20-23	President John F. Kennedy 
+				8.20-20	Kennedy 
+	Chain 2 (IDENT)
+				0.14-15	White House 
+				4.11-12	White House 
+	Chain 3 (IDENT)
+				0.19-24	the President of the United States 
+				2.30-32	the president 's 
+	Chain 4 (IDENT)
+				6.27-30	the Yellow Oval Room 
+				2.17-19	Yellow Oval Room 
+				7.2-3	the room 
+	Chain 5 (IDENT)
+				0.0-2	The Center Hall 
+				3.10-11	the hall 
+				6.23-25	the Center Hall 
+	Chain 6 (IDENT)
+				1.6-9	the East Sitting Hall 
+				1.11-14	the West Sitting Hall 
+

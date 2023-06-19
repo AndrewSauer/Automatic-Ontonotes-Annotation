@@ -1,0 +1,879 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+María Alicia Lemme ( born 1954 ) is an Argentine Peronist politician .
+
+
+Treebanked sentence:
+--------------------
+María Alicia Lem me ( born 1954 ) is an Argentine Peronist politician . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP María) (NNP Alicia) (NNP Lem))
+      (NP (PRP me))
+      (PRN (-LRB- -LRB-)
+        (VP (VBN born)
+          (NP (CD 1954)))
+        (-RRB- -RRB-)))
+    (VP (VBZ is)
+      (NP (DT an)
+        (NML (JJ Argentine) (NN Peronist))
+        (NN politician)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	María
+			coref:	IDENT			0	0-2	María Alicia Lem 
+			name:	PERSON				0-2	María Alicia Lem 
+	1	Alicia
+	2	Lem
+	3	me
+			coref:	IDENT			3	3-3	me 
+	4	(
+	5	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		5-5	born 
+			N-ARG-A1		0-3	María Alicia Lem me 
+			N-ARGM-TMP		6-6	1954 
+	6	1954
+			name:	DATE				6-6	1954 
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	María Alicia Lem me ( born 1954 ) 
+			N-ARG-A2		9-12	an Argentine Peronist politician 
+	9	an
+	10	Argentine
+			name:	NATIONALITY				10-10	Argentine 
+			sense:	argentine.a.01
+	11	Peronist
+			name:	MISC				11-11	Peronist 
+	12	politician
+			name:	TITLE				12-12	politician 
+			sense:	politician.n.02
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She is a former Vice - Governor and Governor of San Luis Province and also former Mayor of San Luis .
+
+
+Treebanked sentence:
+--------------------
+She is a former Vice - Governor and Governor of San Luis Province and also former Mayor of San Luis . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ former)
+          (NML (NNP Vice) (HYPH -) (NNP Governor))
+          (CC and)
+          (NP
+            (NP (NNP Governor))
+            (PP (IN of)
+              (NP
+                (NP (NNP San) (NNP Luis) (NNP Province))
+                (CC and)
+                (ADVP (RB also)))))
+          (NML (JJ former) (NNP Mayor)))
+        (PP (IN of)
+          (NP (NNP San) (NNP Luis)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-19	a former Vice - Governor and Governor of San Luis Province and also former Mayor of San Luis 
+	2	a
+	3	former
+			sense:	former.s.03
+	4	Vice
+	5	-
+	6	Governor
+			name:	TITLE				6-6	Governor 
+	7	and
+	8	Governor
+			name:	TITLE				8-8	Governor 
+	9	of
+	10	San
+			coref:	IDENT			1	10-12	San Luis Province 
+			name:	CITY				10-11	San Luis 
+	11	Luis
+	12	Province
+			name:	LOCATION				12-12	Province 
+	13	and
+	14	also
+			sense:	besides.r.02
+	15	former
+			sense:	former.a.01
+	16	Mayor
+			name:	TITLE				16-16	Mayor 
+	17	of
+	18	San
+			name:	CITY				18-19	San Luis 
+	19	Luis
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in Villa Mercedes , San Luis Province , Lemme became an architect by profession and served as Mayor of Juana Koslay ( 1991 – 97 ) , and in the Provincial Legislature ( 1997 – 99 ) .
+
+
+Treebanked sentence:
+--------------------
+Born in Villa Mercedes , San Luis Province , Lem me became an architect by profession and served as Mayor of Juana Koslay ( 1991 – 97 ) , and in the Provincial Legislature ( 1997 – 99 ) . 
+
+Tree:
+-----
+(ROOT
+  (UCP
+    (FRAG
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP (NNP Villa) (NNP Mercedes)))))
+    (, ,)
+    (FRAG
+      (NP (NNP San) (NNP Luis) (NNP Province))
+      (, ,)
+      (NP (NNP Lem)))
+    (S
+      (NP (PRP me))
+      (VP
+        (VP (VBD became)
+          (NP (DT an) (NN architect))
+          (PP (IN by)
+            (NP (NN profession))))
+        (CC and)
+        (VP (VBD served)
+          (PP
+            (PP (IN as)
+              (NP
+                (NP (NNP Mayor))
+                (PP (IN of)
+                  (NP (NNP Juana) (NNP Koslay)
+                    (PRN (-LRB- -LRB-)
+                      (NP (CD 1991) (SYM –) (CD 97))
+                      (-RRB- -RRB-))))))
+            (, ,)
+            (CC and)
+            (PP (IN in)
+              (NP (DT the) (NNP Provincial) (NNP Legislature)))))
+        (PRN (-LRB- -LRB-)
+          (NP (CD 1997) (SYM –) (CD 99))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-7	in Villa Mercedes , San Luis Province 
+			N-ARG-A1		9-10	Lem me 
+	1	in
+	2	Villa
+			name:	LOCATION				2-2	Villa 
+	3	Mercedes
+			name:	CITY				3-3	Mercedes 
+	4	,
+	5	San
+			coref:	IDENT			1	5-9	San Luis Province , Lem 
+			name:	CITY				5-6	San Luis 
+	6	Luis
+	7	Province
+			name:	LOCATION				7-7	Province 
+	8	,
+	9	Lem
+			coref:	IDENT			6	9-9	Lem 
+			name:	PERSON				9-9	Lem 
+	10	me
+			coref:	IDENT			3	10-10	me 
+	11	became
+			sense:	become.v.02
+			prop:	become.01
+			V		11-11	became 
+			R-ARG-A1		0-7	Born in Villa Mercedes , San Luis Province 
+			N-ARG-A1		9-10	Lem me 
+			N-ARG-A2		12-15	an architect by profession 
+	12	an
+	13	architect
+			name:	TITLE				13-13	architect 
+			sense:	architect.n.01
+	14	by
+	15	profession
+			sense:	profession.n.02
+	16	and
+	17	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		17-17	served 
+			R-ARG-A0		0-7	Born in Villa Mercedes , San Luis Province 
+			N-ARG-A0		9-10	Lem me 
+			N-ARG-A1		18-22	as Mayor of Juana Koslay 
+			N-ARGM-TMP		34-38	( 1997 – 99 ) 
+	18	as
+	19	Mayor
+			name:	TITLE				19-19	Mayor 
+	20	of
+	21	Juana
+			name:	PERSON				21-22	Juana Koslay 
+	22	Koslay
+	23	(
+	24	1991
+			name:	DATE				24-24	1991 
+	25	–
+	26	97
+			name:	NUMBER				26-26	97 
+	27	)
+	28	,
+	29	and
+	30	in
+	31	the
+	32	Provincial
+			name:	ORGANIZATION				32-33	Provincial Legislature 
+	33	Legislature
+	34	(
+	35	1997
+			name:	DATE				35-35	1997 
+	36	–
+	37	99
+			name:	NUMBER				37-37	99 
+	38	)
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She was elected Vice - Governor of the Province alongside Adolfo Rodríguez Saá in 1999 .
+
+
+Treebanked sentence:
+--------------------
+She was elected Vice - Governor of the Province alongside Adolfo Rodríguez Saá in 1999 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (NP
+          (NP (NNP Vice) (HYPH -) (NNP Governor))
+          (PP (IN of)
+            (NP (DT the) (NNP Province))))
+        (PP (IN alongside)
+          (NP
+            (NP (NNP Adolfo) (NNP Rodríguez) (NNP Saá))
+            (PP (IN in)
+              (NP (CD 1999)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		3-8	Vice - Governor of the Province 
+			N-ARGM-LOC		9-12	alongside Adolfo Rodríguez Saá 
+			N-ARGM-TMP		13-14	in 1999 
+	3	Vice
+	4	-
+	5	Governor
+			name:	TITLE				5-5	Governor 
+	6	of
+	7	the
+			coref:	IDENT			1	7-8	the Province 
+	8	Province
+	9	alongside
+	10	Adolfo
+			coref:	IDENT			2	10-12	Adolfo Rodríguez Saá 
+			name:	PERSON				10-12	Adolfo Rodríguez Saá 
+	11	Rodríguez
+	12	Saá
+	13	in
+	14	1999
+			name:	DATE				14-14	1999 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Rodríguez Saá 's appointment as President of Argentina by Congress in December 2001 left Lemme the governorship .
+
+
+Treebanked sentence:
+--------------------
+Rodríguez Saá 's appointment as President of Argentina by Congress in December 2001 left Lem me the governorship . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Rodríguez) (NNP Saá) (POS 's))
+        (NN appointment))
+      (PP (IN as)
+        (NP
+          (NP (NNP President))
+          (PP (IN of)
+            (NP
+              (NP (NNP Argentina))
+              (PP (IN by)
+                (NP
+                  (NP (NNP Congress))
+                  (PP (IN in)
+                    (NP (NNP December) (CD 2001))))))))))
+    (VP (VBD left)
+      (NP
+        (NP (NNP Lem) (PRP me))
+        (NP (DT the) (NN governorship))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Rodríguez
+			coref:	IDENT			2	0-2	Rodríguez Saá 's 
+			name:	PERSON				0-1	Rodríguez Saá 
+	1	Saá
+	2	's
+	3	appointment
+			sense:	appointment.n.01
+	4	as
+	5	President
+			name:	TITLE				5-5	President 
+	6	of
+	7	Argentina
+			name:	COUNTRY				7-7	Argentina 
+	8	by
+	9	Congress
+			coref:	IDENT			5	9-9	Congress 
+			name:	ORGANIZATION				9-9	Congress 
+	10	in
+	11	December
+			name:	DATE				11-12	December 2001 
+	12	2001
+	13	left
+			sense:	leave.v.06
+			prop:	leave.02
+			V		13-13	left 
+			N-ARG-A0		0-12	Rodríguez Saá 's appointment as President of Argentina by Congress in December 2001 
+			N-ARG-A2		14-15	Lem me 
+			N-ARG-A1		16-17	the governorship 
+	14	Lem
+			coref:	IDENT			6	14-14	Lem 
+			name:	PERSON				14-14	Lem 
+	15	me
+			coref:	IDENT			3	15-15	me 
+	16	the
+	17	governorship
+			sense:	governorship.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She was the first female governor since the restoration of democracy .
+
+
+Treebanked sentence:
+--------------------
+She was the first female governor since the restoration of democracy . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (JJ first) (JJ female) (NN governor))
+        (PP (IN since)
+          (NP
+            (NP (DT the) (NN restoration))
+            (PP (IN of)
+              (NP (NN democracy)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-10	the first female governor since the restoration of democracy 
+	2	the
+	3	first
+			name:	ORDINAL				3-3	first 
+			sense:	first.a.01
+	4	female
+			sense:	female.a.01
+	5	governor
+			name:	TITLE				5-5	governor 
+			sense:	governor.n.01
+	6	since
+	7	the
+	8	restoration
+			sense:	restoration.n.02
+	9	of
+	10	democracy
+			name:	IDEOLOGY				10-10	democracy 
+			sense:	democracy.n.02
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Lemme stepped down in 2003 , allowing Alberto Rodríguez Saá to stand for election to the Governorship formerly held by his brother Adolfo .
+
+
+Treebanked sentence:
+--------------------
+Lem me stepped down in 2003 , allowing Alberto Rodríguez Saá to stand for election to the Governorship formerly held by his brother Adolfo . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (VP (VB Lem)
+      (S
+        (NP (PRP me))
+        (VP (VBN stepped)
+          (ADVP (RB down)
+            (PP (IN in)
+              (NP (CD 2003))))
+          (, ,)
+          (S
+            (VP (VBG allowing)
+              (NP (NNP Alberto) (NNP Rodríguez) (NNP Saá))
+              (S
+                (VP (TO to)
+                  (VP (VB stand)
+                    (PP (IN for)
+                      (NP (NN election)))
+                    (PP (IN to)
+                      (NP
+                        (NP (DT the) (NN Governorship))
+                        (VP
+                          (ADVP (RB formerly))
+                          (VBN held)
+                          (PP (IN by)
+                            (NP
+                              (NP (PRP$ his) (NN brother))
+                              (NP (NNP Adolfo)))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Lem
+			coref:	IDENT			6	0-0	Lem 
+			name:	PERSON				0-0	Lem 
+			prop:	hem.02
+			V		0-0	Lem 
+			N-ARG-A2		1-1	me 
+			N-ARG-A1		2-2	stepped 
+	1	me
+			coref:	IDENT			3	1-1	me 
+	2	stepped
+			sense:	step.v.01
+			prop:	step.04
+			V		2-2	stepped 
+			N-ARG-A0		1-1	me 
+			N-ARGM-TMP		4-5	in 2003 
+			N-ARGM-ADV		7-23	allowing Alberto Rodríguez Saá to stand for election to the Governorship formerly held by his brother Adolfo 
+	3	down
+			sense:	down.r.01
+	4	in
+	5	2003
+			name:	DATE				5-5	2003 
+	6	,
+	7	allowing
+			sense:	let.v.01
+			prop:	allow.01
+			V		7-7	allowing 
+			N-ARG-A1		8-23	Alberto Rodríguez Saá to stand for election to the Governorship formerly held by his brother Adolfo 
+	8	Alberto
+			coref:	IDENT			2	8-10	Alberto Rodríguez Saá 
+			name:	PERSON				8-10	Alberto Rodríguez Saá 
+	9	Rodríguez
+	10	Saá
+	11	to
+	12	stand
+			sense:	stand.v.02
+			prop:	stand.04
+			V		12-12	stand 
+			N-ARG-A1		8-10	Alberto Rodríguez Saá 
+			N-ARG-A2		13-23	for election to the Governorship formerly held by his brother Adolfo 
+	13	for
+	14	election
+			sense:	election.n.01
+	15	to
+	16	the
+	17	Governorship
+			sense:	governorship.n.01
+	18	formerly
+			sense:	once.r.03
+	19	held
+			sense:	bear.v.11
+			prop:	hold.01
+			V		19-19	held 
+			N-ARG-A1		16-17	the Governorship 
+			N-ARGM-TMP		18-18	formerly 
+			N-ARG-A0		20-23	by his brother Adolfo 
+	20	by
+	21	his
+			coref:	IDENT			2	21-21	his 
+	22	brother
+			sense:	brother.n.01
+	23	Adolfo
+			coref:	IDENT			4	23-23	Adolfo 
+			name:	PERSON				23-23	Adolfo 
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Later that year , she and Adolfo were elected as National Deputies .
+
+
+Treebanked sentence:
+--------------------
+Later that year , she and Adolfo were elected as National Deputies . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP-TMP
+      (ADVP (RBR Later))
+      (DT that) (NN year))
+    (, ,)
+    (NP (PRP she)
+      (CC and)
+      (NNP Adolfo))
+    (VP (VBD were)
+      (VP (VBN elected)
+        (PP (IN as)
+          (NP (NNP National) (NNPS Deputies)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Later
+			sense:	late.r.01
+	1	that
+	2	year
+			name:	DURATION				2-2	year 
+			sense:	year.n.01
+	3	,
+	4	she
+			coref:	IDENT			0	4-4	she 
+	5	and
+	6	Adolfo
+			coref:	IDENT			4	6-6	Adolfo 
+			name:	PERSON				6-6	Adolfo 
+	7	were
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	were 
+	8	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		8-8	elected 
+			N-ARGM-TMP		0-2	Later that year 
+			N-ARG-A1		4-6	she and Adolfo 
+			N-ARG-A2		9-11	as National Deputies 
+	9	as
+	10	National
+	11	Deputies
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2006 , Lemme took a leave of absence from Congress .
+
+
+Treebanked sentence:
+--------------------
+In 2006 , Lem me took a leave of absence from Congress . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (CD 2006))
+        (, ,)
+        (NP (NNP Lem))))
+    (NP (PRP me))
+    (VP (VBD took)
+      (NP
+        (NP (DT a) (NN leave))
+        (PP (IN of)
+          (NP (NN absence))))
+      (PP (IN from)
+        (NP (NNP Congress))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2006
+			name:	DATE				1-1	2006 
+	2	,
+	3	Lem
+			coref:	IDENT			6	3-3	Lem 
+			name:	PERSON				3-3	Lem 
+	4	me
+			coref:	IDENT			3	4-4	me 
+	5	took
+			sense:	take.v.01
+			prop:	take.01
+			V		5-5	took 
+			N-ARGM-TMP		0-1	In 2006 
+			N-ARG-A0		3-4	Lem me 
+			N-ARG-A1		6-9	a leave of absence 
+			N-ARG-A2		10-11	from Congress 
+	6	a
+	7	leave
+			sense:	leave.n.01
+	8	of
+	9	absence
+			sense:	absence.n.02
+	10	from
+	11	Congress
+			coref:	IDENT			5	11-11	Congress 
+			name:	ORGANIZATION				11-11	Congress 
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She was elected as Mayor of San Luis in August 2007 with just over 50 % of the vote defeating incumbent Mayor Alfonso Vergés , the candidate of the Front for Victory of then President Néstor Kirchner .
+
+
+Treebanked sentence:
+--------------------
+She was elected as Mayor of San Luis in August 2007 with just over 50 % of the vote defeating incumbent Mayor Alfonso Vergés , the candidate of the Front for Victory of then President Néstor Kirchner . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (PP (IN as)
+          (NP
+            (NP (NNP Mayor))
+            (PP (IN of)
+              (NP
+                (NP (NNP San) (NNP Luis))
+                (PP (IN in)
+                  (NP (NNP August) (CD 2007)))))))
+        (PP (IN with)
+          (NP
+            (NP
+              (QP (RB just) (RB over) (CD 50))
+              (NN %))
+            (PP (IN of)
+              (NP (DT the) (NN vote)))))
+        (S
+          (VP (VBG defeating)
+            (SINV
+              (ADJP (JJ incumbent))
+              (NP
+                (NP (NNP Mayor) (NNP Alfonso) (NNP Vergés))
+                (, ,)
+                (NP
+                  (NP (DT the) (NN candidate))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT the) (NN Front))
+                      (PP (IN for)
+                        (NP
+                          (NP (NN Victory))
+                          (PP (IN of)
+                            (NP
+                              (NML (RB then) (NNP President) (NNP Néstor))
+                              (NNP Kirchner))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		3-7	as Mayor of San Luis 
+			N-ARGM-TMP		8-10	in August 2007 
+			N-ARGM-MNR		11-18	with just over 50 % of the vote 
+			N-ARGM-ADV		19-36	defeating incumbent Mayor Alfonso Vergés , the candidate of the Front for Victory of then President Néstor Kirchner 
+	3	as
+	4	Mayor
+			name:	TITLE				4-4	Mayor 
+	5	of
+	6	San
+			name:	CITY				6-7	San Luis 
+	7	Luis
+	8	in
+	9	August
+			name:	DATE				9-10	August 2007 
+	10	2007
+	11	with
+	12	just
+			sense:	merely.r.01
+	13	over
+			sense:	over.r.01
+	14	50
+			name:	PERCENT				14-15	50 % 
+	15	%
+	16	of
+	17	the
+	18	vote
+			sense:	vote.n.05
+	19	defeating
+			sense:	get_the_better_of.v.01
+			prop:	defeat.01
+			V		19-19	defeating 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		20-36	incumbent Mayor Alfonso Vergés , the candidate of the Front for Victory of then President Néstor Kirchner 
+	20	incumbent
+			sense:	incumbent.s.03
+	21	Mayor
+			name:	TITLE				21-21	Mayor 
+	22	Alfonso
+			name:	PERSON				22-23	Alfonso Vergés 
+	23	Vergés
+	24	,
+	25	the
+	26	candidate
+			name:	TITLE				26-26	candidate 
+			sense:	campaigner.n.01
+	27	of
+	28	the
+	29	Front
+			sense:	movement.n.04
+	30	for
+	31	Victory
+			sense:	victory.n.01
+	32	of
+	33	then
+			sense:	then.r.03
+	34	President
+			name:	TITLE				34-34	President 
+	35	Néstor
+			name:	PERSON				35-36	Néstor Kirchner 
+	36	Kirchner
+	37	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-2	María Alicia Lem 
+				1.0-0	She 
+				3.0-0	She 
+				5.0-0	She 
+				7.4-4	she 
+				9.0-0	She 
+	Chain 1 (IDENT)
+				2.5-9	San Luis Province , Lem 
+				1.10-12	San Luis Province 
+				3.7-8	the Province 
+	Chain 2 (IDENT)
+				3.10-12	Adolfo Rodríguez Saá 
+				4.0-2	Rodríguez Saá 's 
+				6.8-10	Alberto Rodríguez Saá 
+				6.21-21	his 
+	Chain 3 (IDENT)
+				0.3-3	me 
+				2.10-10	me 
+				4.15-15	me 
+				6.1-1	me 
+				8.4-4	me 
+	Chain 4 (IDENT)
+				6.23-23	Adolfo 
+				7.6-6	Adolfo 
+	Chain 5 (IDENT)
+				4.9-9	Congress 
+				8.11-11	Congress 
+	Chain 6 (IDENT)
+				2.9-9	Lem 
+				4.14-14	Lem 
+				6.0-0	Lem 
+				8.3-3	Lem 
+

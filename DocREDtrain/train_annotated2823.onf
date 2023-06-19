@@ -1,0 +1,488 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" Add Some Music to Your Day " is a song written by Brian Wilson , Joe Knott and Mike Love for the American rock band The Beach Boys .
+
+
+Treebanked sentence:
+--------------------
+" Add Some Music to Your Day " is a song written by Brian Wilson , Joe Knott and Mike Love for the American rock band The Beach Boys . 
+
+Tree:
+-----
+(ROOT
+  (S (`` ")
+    (S
+      (VP (VB Add))
+      (NP
+        (NP (DT Some) (NN Music))
+        (PP (IN to)
+          (NP (PRP$ Your) (NN Day)))))
+    ('' ")
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN song))
+        (VP (VBN written)
+          (PP (IN by)
+            (NP
+              (NP (NNP Brian) (NNP Wilson))
+              (, ,)
+              (NP (NNP Joe) (NNP Knott))
+              (CC and)
+              (NP (NNP Mike) (NNP Love))))
+          (PP (IN for)
+            (NP (DT the) (JJ American) (NN rock) (NN band))))))
+    (NP (DT The) (NNP Beach) (NNPS Boys))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	Add
+			sense:	add.v.01
+			prop:	add.02
+			V		1-1	Add 
+			N-ARG-A1		2-3	Some Music 
+			N-ARG-A2		4-6	to Your Day 
+	2	Some
+			name:	MISC				2-5	Some Music to Your 
+	3	Music
+			sense:	music.n.02
+	4	to
+	5	Your
+	6	Day
+			name:	DURATION				6-6	Day 
+			sense:	day.n.05
+	7	"
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	" Add Some Music to Your Day " 
+			N-ARG-A2		9-28	a song written by Brian Wilson , Joe Knott and Mike Love for the American rock band The Beach Boys 
+	9	a
+	10	song
+			sense:	song.n.01
+	11	written
+			sense:	compose.v.02
+			prop:	write.01
+			V		11-11	written 
+			N-ARG-A1		9-10	a song 
+			N-ARG-A0		12-20	by Brian Wilson , Joe Knott and Mike Love 
+			N-ARG-A2		21-28	for the American rock band The Beach Boys 
+	12	by
+	13	Brian
+			name:	PERSON				13-14	Brian Wilson 
+	14	Wilson
+	15	,
+	16	Joe
+			name:	PERSON				16-17	Joe Knott 
+	17	Knott
+	18	and
+	19	Mike
+			name:	PERSON				19-20	Mike Love 
+	20	Love
+	21	for
+	22	the
+	23	American
+			name:	NATIONALITY				23-23	American 
+	24	rock
+			sense:	rock_n_roll.n.01
+	25	band
+			sense:	band.n.02
+	26	The
+	27	Beach
+			name:	ORGANIZATION				27-28	Beach Boys 
+	28	Boys
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was first released as a single in February 1970 .
+
+
+Treebanked sentence:
+--------------------
+It was first released as a single in February 1970 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (ADVP (JJ first))
+      (VP (VBN released)
+        (PP (IN as)
+          (NP
+            (NP (DT a) (JJ single))
+            (PP (IN in)
+              (NP (NNP February) (CD 1970)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	first
+			name:	ORDINAL				2-2	first 
+			sense:	first.a.01
+	3	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		3-3	released 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		2-2	first 
+			N-ARGM-MNR		4-6	as a single 
+			N-ARGM-TMP		7-9	in February 1970 
+	4	as
+	5	a
+	6	single
+			sense:	individual.a.01
+	7	in
+	8	February
+			name:	DATE				8-9	February 1970 
+	9	1970
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+While making no impact overseas at all ( a rarity for the band ) , the song quickly entered the Top 30 in Los Angeles , New York , Boston , and Salt Lake City , and climbed well into the Top 20 in St Louis , Nashville , Lincoln and Orlando .
+
+
+Treebanked sentence:
+--------------------
+While making no impact overseas at all ( a rarity for the band ) , the song quickly entered the Top 30 in Los Angeles , New York , Boston , and Salt Lake City , and climbed well into the Top 20 in St Louis , Nashville , Lincoln and Orlando . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (VP (VBG making)
+          (NP (DT no) (NN impact))
+          (ADVP (RB overseas))
+          (PP (IN at)
+            (NP
+              (NP (DT all))
+              (-LRB- -LRB-)
+              (NP
+                (NP (DT a) (NN rarity))
+                (PP (IN for)
+                  (NP (DT the) (NN band))))
+              (-RRB- -RRB-))))))
+    (, ,)
+    (NP (DT the) (NN song))
+    (ADVP (RB quickly))
+    (VP
+      (VP (VBD entered)
+        (NP (DT the) (JJ Top) (CD 30))
+        (PP (IN in)
+          (NP
+            (NML
+              (NML (NNP Los) (NNP Angeles))
+              (, ,)
+              (NML (NNP New) (NNP York))
+              (, ,)
+              (NML (NNP Boston))
+              (, ,)
+              (CC and)
+              (NML (NNP Salt) (NNP Lake)))
+            (NNP City))))
+      (, ,)
+      (CC and)
+      (VP (VBD climbed)
+        (ADVP (RB well))
+        (PP (IN into)
+          (NP
+            (NP (DT the) (JJ Top) (CD 20))
+            (PP (IN in)
+              (NP (NNP St) (NNP Louis) (, ,) (NNP Nashville) (, ,) (NNP Lincoln)
+                (CC and)
+                (NNP Orlando)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	While
+	1	making
+			sense:	cause.v.01
+			prop:	make.01
+			V		1-1	making 
+			N-ARG-A1		2-3	no impact 
+			N-ARGM-LOC		4-4	overseas 
+			N-ARGM-ADV		5-6	at all 
+			N-ARGM-ADV		8-12	a rarity for the band 
+			N-ARG-A0		15-16	the song 
+	2	no
+	3	impact
+			sense:	impact.n.02
+	4	overseas
+			sense:	overseas.r.02
+	5	at
+	6	all
+	7	(
+	8	a
+	9	rarity
+			sense:	rarity.n.01
+	10	for
+	11	the
+			coref:	IDENT			1	11-12	the band 
+	12	band
+			sense:	band.n.02
+	13	)
+	14	,
+	15	the
+	16	song
+			sense:	song.n.01
+	17	quickly
+			sense:	promptly.r.01
+	18	entered
+			sense:	enter.v.01
+			prop:	enter.01
+			V		18-18	entered 
+			N-ARGM-ADV		0-13	While making no impact overseas at all ( a rarity for the band ) 
+			N-ARG-A0		15-16	the song 
+			N-ARGM-MNR		17-17	quickly 
+			N-ARG-A1		19-21	the Top 30 
+			N-ARGM-LOC		22-34	in Los Angeles , New York , Boston , and Salt Lake City 
+	19	the
+	20	Top
+			sense:	top.a.01
+	21	30
+			name:	NUMBER				21-21	30 
+	22	in
+	23	Los
+			name:	CITY				23-24	Los Angeles 
+	24	Angeles
+	25	,
+	26	New
+			name:	STATE_OR_PROVINCE				26-27	New York 
+	27	York
+	28	,
+	29	Boston
+			name:	CITY				29-29	Boston 
+	30	,
+	31	and
+	32	Salt
+			name:	CITY				32-34	Salt Lake City 
+	33	Lake
+	34	City
+	35	,
+	36	and
+	37	climbed
+			sense:	wax.v.02
+			prop:	climb.01
+			V		37-37	climbed 
+			N-ARGM-ADV		0-13	While making no impact overseas at all ( a rarity for the band ) 
+			N-ARG-A0		15-16	the song 
+			N-ARG-A1		38-42	well into the Top 20 
+			N-ARGM-LOC		43-51	in St Louis , Nashville , Lincoln and Orlando 
+	38	well
+			sense:	well.r.02
+	39	into
+	40	the
+	41	Top
+			sense:	top.a.01
+	42	20
+			name:	NUMBER				42-42	20 
+	43	in
+	44	St
+			name:	LOCATION				44-45	St Louis 
+	45	Louis
+	46	,
+	47	Nashville
+			name:	CITY				47-47	Nashville 
+	48	,
+	49	Lincoln
+			name:	PERSON				49-49	Lincoln 
+	50	and
+	51	Orlando
+			name:	CITY				51-51	Orlando 
+	52	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+There it stopped , stalling nationally at # 39 in Record World , # 49 in Cash Box , # 64 in Billboard , and # 43 in Canada .
+
+
+Treebanked sentence:
+--------------------
+There it stopped , stalling nationally at # 39 in Record World , # 49 in Cash Box , # 64 in Billboard , and # 43 in Canada . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB There))
+    (NP (PRP it))
+    (VP (VBD stopped) (, ,)
+      (S
+        (VP (VBG stalling)
+          (ADVP (RB nationally))
+          (PP (IN at)
+            (NP
+              (NP
+                (NP (NN #) (CD 39))
+                (PP (IN in)
+                  (NP (NNP Record) (NNP World))))
+              (, ,)
+              (NP
+                (NP (NN #) (CD 49))
+                (PP (IN in)
+                  (NP (NNP Cash) (NNP Box))))
+              (, ,)
+              (NP
+                (NP (NN #) (CD 64))
+                (PP (IN in)
+                  (NP (NNP Billboard))))
+              (, ,)
+              (CC and)
+              (NP
+                (NP (NN #) (CD 43))
+                (PP (IN in)
+                  (NP (NNP Canada)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	There
+			sense:	there.r.01
+	1	it
+	2	stopped
+			sense:	stop.v.01
+			prop:	stop.01
+			V		2-2	stopped 
+			N-ARGM-LOC		0-0	There 
+			N-ARG-A1		1-1	it 
+			N-ARGM-ADV		4-28	stalling nationally at # 39 in Record World , # 49 in Cash Box , # 64 in Billboard , and # 43 in Canada 
+	3	,
+	4	stalling
+			sense:	stall.v.02
+			prop:	stall.01
+			V		4-4	stalling 
+			N-ARG-A1		1-1	it 
+			N-ARGM-LOC		5-5	nationally 
+			N-ARGM-LOC		6-28	at # 39 in Record World , # 49 in Cash Box , # 64 in Billboard , and # 43 in Canada 
+	5	nationally
+			sense:	nationally.r.01
+	6	at
+	7	#
+			name:	MONEY				7-8	# 39 
+	8	39
+	9	in
+	10	Record
+	11	World
+	12	,
+	13	#
+			name:	MONEY				13-14	# 49 
+	14	49
+	15	in
+	16	Cash
+			name:	MISC				16-17	Cash Box 
+	17	Box
+	18	,
+	19	#
+			name:	MONEY				19-20	# 64 
+	20	64
+	21	in
+	22	Billboard
+	23	,
+	24	and
+	25	#
+			name:	MONEY				25-26	# 43 
+	26	43
+	27	in
+	28	Canada
+			name:	COUNTRY				28-28	Canada 
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was then released on the band 's 1970 album Sunflower .
+
+
+Treebanked sentence:
+--------------------
+It was then released on the band 's 1970 album Sunflower . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (ADVP (RB then))
+      (VP (VBN released)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN band) (POS 's))
+            (CD 1970) (NN album) (NN Sunflower)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	then
+			sense:	then.r.01
+	3	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		3-3	released 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		2-2	then 
+			N-ARGM-LOC		4-10	on the band 's 1970 album Sunflower 
+	4	on
+	5	the
+			coref:	IDENT			1	5-7	the band 's 
+	6	band
+			sense:	dance_band.n.01
+	7	's
+	8	1970
+			name:	DATE				8-8	1970 
+	9	album
+			sense:	album.n.01
+	10	Sunflower
+			sense:	sunflower.n.01
+	11	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.0-0	It 
+				4.0-0	It 
+	Chain 1 (IDENT)
+				4.5-7	the band 's 
+				2.11-12	the band 
+

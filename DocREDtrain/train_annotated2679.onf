@@ -1,0 +1,584 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Marcia Ingram Jones Smoke ( born July 18 , 1941 ) is an American sprint canoer .
+
+
+Treebanked sentence:
+--------------------
+Marcia Ingram Jones Smoke ( born July 18 , 1941 ) is an American sprint canoer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Marcia) (NNP Ingram) (NNP Jones) (NN Smoke))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP July) (CD 18) (, ,) (CD 1941)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT an)
+        (NML (JJ American) (NN sprint))
+        (NN canoer)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Marcia
+			name:	PERSON				0-3	Marcia Ingram Jones Smoke 
+	1	Ingram
+	2	Jones
+	3	Smoke
+			sense:	smoke.n.04
+	4	(
+	5	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		5-5	born 
+			N-ARG-A1		0-3	Marcia Ingram Jones Smoke 
+			N-ARGM-TMP		6-9	July 18 , 1941 
+	6	July
+			name:	DATE				6-9	July 18 , 1941 
+	7	18
+	8	,
+	9	1941
+	10	)
+	11	is
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	is 
+			N-ARG-A1		0-10	Marcia Ingram Jones Smoke ( born July 18 , 1941 ) 
+			N-ARG-A2		12-15	an American sprint canoer 
+	12	an
+	13	American
+			name:	NATIONALITY				13-13	American 
+	14	sprint
+			sense:	dash.n.02
+	15	canoer
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She competed at the 1964 , 1968 and 1972 Olympics and won a bronze medal in the K-1 500 m event in 1964 .
+
+
+Treebanked sentence:
+--------------------
+She competed at the 1964 , 1968 and 1972 Olympics and won a bronze medal in the K - 1 500 m event in 1964 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP
+      (VP (VBD competed)
+        (PP (IN at)
+          (NP (DT the) (CD 1964) (, ,) (CD 1968)
+            (CC and)
+            (CD 1972) (NNS Olympics))))
+      (CC and)
+      (VP (VBD won)
+        (NP (DT a) (NN bronze) (NN medal))
+        (PP (IN in)
+          (NP
+            (NP (DT the)
+              (NML (NN K) (HYPH -) (CD 1))
+              (NML (CD 500) (NN m))
+              (NN event))
+            (PP (IN in)
+              (NP (CD 1964)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	competed
+			sense:	compete.v.01
+			prop:	compete.01
+			V		1-1	competed 
+			N-ARG-A0		0-0	She 
+			N-ARGM-LOC		2-9	at the 1964 , 1968 and 1972 Olympics 
+	2	at
+	3	the
+	4	1964
+			coref:	IDENT			1	4-4	1964 
+			name:	DATE				4-4	1964 
+	5	,
+	6	1968
+			name:	DATE				6-6	1968 
+	7	and
+	8	1972
+			name:	DATE				8-8	1972 
+	9	Olympics
+			name:	MISC				9-9	Olympics 
+	10	and
+	11	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		11-11	won 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		12-14	a bronze medal 
+			N-ARGM-LOC		15-22	in the K - 1 500 m event 
+			N-ARGM-TMP		23-24	in 1964 
+	12	a
+	13	bronze
+			sense:	bronze.n.01
+	14	medal
+			sense:	decoration.n.02
+	15	in
+	16	the
+	17	K
+			sense:	k.n.06
+	18	-
+	19	1
+	20	500
+			name:	NUMBER				20-20	500 
+	21	m
+			sense:	meter.n.01
+	22	event
+			sense:	event.n.01
+	23	in
+	24	1964
+			coref:	IDENT			1	24-24	1964 
+			name:	DATE				24-24	1964 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A native of Oklahoma City , Oklahoma , Jones graduated from Michigan State University .
+
+
+Treebanked sentence:
+--------------------
+A native of Oklahoma City , Oklahoma , Jones graduated from Michigan State University . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN native))
+      (PP (IN of)
+        (NP (NNP Oklahoma)
+          (NML (NNP City) (, ,) (NNP Oklahoma) (, ,))
+          (NNP Jones))))
+    (VP (VBD graduated)
+      (PP (IN from)
+        (NP (NNP Michigan) (NNP State) (NNP University))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	native
+			sense:	native.n.02
+	2	of
+	3	Oklahoma
+			name:	CITY				3-4	Oklahoma City 
+	4	City
+	5	,
+	6	Oklahoma
+			name:	STATE_OR_PROVINCE				6-6	Oklahoma 
+	7	,
+	8	Jones
+			name:	PERSON				8-8	Jones 
+	9	graduated
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		9-9	graduated 
+			N-ARGM-ADV		0-6	A native of Oklahoma City , Oklahoma 
+			N-ARG-A0		8-8	Jones 
+			N-ARG-A1		10-13	from Michigan State University 
+	10	from
+	11	Michigan
+			name:	ORGANIZATION				11-13	Michigan State University 
+	12	State
+	13	University
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She won three gold medals at the 1967 Pan American Games and a record 35 national championships and 24 North American championships .
+
+
+Treebanked sentence:
+--------------------
+She won three gold medals at the 1967 Pan American Games and a record 35 national championships and 24 North American championships . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD won)
+      (NP
+        (NP
+          (NP (CD three) (NN gold) (NNS medals))
+          (PP (IN at)
+            (NP (DT the) (CD 1967)
+              (NML (NNP Pan) (NNP American))
+              (NNPS Games))))
+        (CC and)
+        (NP
+          (NP (DT a) (NN record))
+          (NP
+            (NP (CD 35) (JJ national) (NNS championships))
+            (CC and)
+            (NP (CD 24) (JJ North) (JJ American) (NNS championships))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		1-1	won 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		2-4	three gold medals 
+			N-ARGM-LOC		5-10	at the 1967 Pan American Games 
+			C-ARG-A1		11-21	and a record 35 national championships and 24 North American championships 
+	2	three
+			name:	NUMBER				2-2	three 
+	3	gold
+			sense:	gold.n.01
+	4	medals
+			sense:	decoration.n.02
+	5	at
+	6	the
+	7	1967
+			name:	DATE				7-7	1967 
+	8	Pan
+			name:	ORGANIZATION				8-10	Pan American Games 
+	9	American
+	10	Games
+	11	and
+	12	a
+	13	record
+			sense:	record.n.04
+	14	35
+			name:	NUMBER				14-14	35 
+	15	national
+			sense:	national.a.01
+	16	championships
+			sense:	championship.n.02
+	17	and
+	18	24
+			name:	NUMBER				18-18	24 
+	19	North
+			name:	MISC				19-19	North 
+			sense:	north.a.01
+	20	American
+			name:	NATIONALITY				20-20	American 
+	21	championships
+			sense:	championship.n.02
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Her husband , William Smoke , finished fourth in the second repechage event of the K-4 1000 m at the 1964 Summer Olympics in Tokyo .
+
+
+Treebanked sentence:
+--------------------
+Her husband , William Smoke , finished fourth in the second repechage event of the K - 4 1000 m at the 1964 Summer Olympics in Tokyo . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Her) (NN husband))
+      (, ,)
+      (NP (NNP William) (NN Smoke))
+      (, ,))
+    (VP (VBD finished)
+      (ADVP (RB fourth))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (JJ second) (NN repechage) (NN event))
+          (PP (IN of)
+            (NP
+              (NP (DT the)
+                (NML (NN K) (HYPH -) (CD 4))
+                (CD 1000) (NN m))
+              (PP (IN at)
+                (NP (DT the) (CD 1964) (NNP Summer) (NNPS Olympics)))))))
+      (PP (IN in)
+        (NP (NNP Tokyo))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Her
+			coref:	IDENT			0	0-0	Her 
+	1	husband
+			sense:	husband.n.01
+	2	,
+	3	William
+			name:	PERSON				3-4	William Smoke 
+	4	Smoke
+			sense:	smoke.n.04
+	5	,
+	6	finished
+			sense:	finish_up.v.02
+			prop:	finish.02
+			V		6-6	finished 
+			N-ARG-A1		0-5	Her husband , William Smoke , 
+			N-ARGM-EXT		7-7	fourth 
+			N-ARGM-LOC		8-19	in the second repechage event of the K - 4 1000 m 
+			N-ARGM-LOC		20-26	at the 1964 Summer Olympics in Tokyo 
+	7	fourth
+			name:	ORDINAL				7-7	fourth 
+			sense:	fourthly.r.01
+	8	in
+	9	the
+	10	second
+			name:	ORDINAL				10-10	second 
+			sense:	second.s.01
+	11	repechage
+			sense:	repechage.n.01
+	12	event
+			sense:	event.n.01
+	13	of
+	14	the
+	15	K
+			sense:	thousand.n.01
+	16	-
+	17	4
+	18	1000
+			coref:	IDENT			3	18-18	1000 
+			name:	DATE				18-18	1000 
+	19	m
+			sense:	meter.n.01
+	20	at
+	21	the
+			coref:	IDENT			2	21-24	the 1964 Summer Olympics 
+			name:	DATE				21-23	the 1964 Summer 
+	22	1964
+	23	Summer
+	24	Olympics
+			name:	MISC				24-24	Olympics 
+	25	in
+	26	Tokyo
+			name:	CITY				26-26	Tokyo 
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jones ' son , Jeff , finished seventh in the K-2 1000 m semifinal at the 2004 Summer Olympics in Athens .
+
+
+Treebanked sentence:
+--------------------
+Jones ' son , Jeff , finished seventh in the K - 2 1000 m semifinal at the 2004 Summer Olympics in Athens . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Jones) (POS '))
+        (NN son))
+      (, ,)
+      (NP (NNP Jeff))
+      (, ,))
+    (VP (VBD finished)
+      (ADJP (JJ seventh)
+        (PP (IN in)
+          (NP
+            (NP (DT the)
+              (NML (NN K) (HYPH -) (CD 2))
+              (NML (CD 1000) (NN m))
+              (NN semifinal))
+            (PP (IN at)
+              (NP (DT the) (CD 2004) (NNP Summer) (NNPS Olympics))))))
+      (PP (IN in)
+        (NP (NNP Athens))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jones
+			name:	PERSON				0-0	Jones 
+	1	'
+	2	son
+			sense:	son.n.01
+	3	,
+	4	Jeff
+			name:	PERSON				4-4	Jeff 
+	5	,
+	6	finished
+			sense:	finish_up.v.02
+			prop:	finish.02
+			V		6-6	finished 
+			N-ARG-A1		0-4	Jones ' son , Jeff 
+			N-ARGM-EXT		7-7	seventh 
+			N-ARGM-LOC		8-15	in the K - 2 1000 m semifinal 
+			N-ARGM-LOC		16-22	at the 2004 Summer Olympics in Athens 
+	7	seventh
+			name:	ORDINAL				7-7	seventh 
+			sense:	seventh.s.01
+	8	in
+	9	the
+	10	K
+			sense:	thousand.n.01
+	11	-
+	12	2
+	13	1000
+			coref:	IDENT			3	13-13	1000 
+			name:	DATE				13-13	1000 
+	14	m
+			sense:	meter.n.01
+	15	semifinal
+			sense:	semifinal.n.01
+	16	at
+	17	the
+			coref:	IDENT			2	17-20	the 2004 Summer Olympics 
+			name:	DATE				17-19	the 2004 Summer 
+	18	2004
+	19	Summer
+	20	Olympics
+			name:	MISC				20-20	Olympics 
+	21	in
+	22	Athens
+			name:	CITY				22-22	Athens 
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Her sister , the late Sperry Rademaker , finished seventh in the K-2 500 m event at the 1968 Summer Olympics in Mexico City .
+
+
+Treebanked sentence:
+--------------------
+Her sister , the late Sperry Rademaker , finished seventh in the K - 2 500 m event at the 1968 Summer Olympics in Mexico City . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Her) (NN sister))
+      (, ,)
+      (NP (DT the) (JJ late) (NNP Sperry) (NNP Rademaker))
+      (, ,))
+    (VP (VBD finished)
+      (ADJP (JJ seventh)
+        (PP (IN in)
+          (NP
+            (NP (DT the)
+              (NML (NN K) (HYPH -) (CD 2))
+              (NML (CD 500) (NN m))
+              (NN event))
+            (PP (IN at)
+              (NP (DT the) (CD 1968) (NNP Summer) (NNPS Olympics))))))
+      (PP (IN in)
+        (NP (NNP Mexico) (NNP City))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Her
+			coref:	IDENT			0	0-0	Her 
+	1	sister
+			sense:	sister.n.01
+	2	,
+	3	the
+	4	late
+			sense:	late.s.04
+	5	Sperry
+			name:	PERSON				5-6	Sperry Rademaker 
+	6	Rademaker
+	7	,
+	8	finished
+			sense:	finish_up.v.02
+			prop:	finish.02
+			V		8-8	finished 
+			N-ARG-A1		0-6	Her sister , the late Sperry Rademaker 
+			N-ARGM-EXT		9-9	seventh 
+			N-ARGM-LOC		10-17	in the K - 2 500 m event 
+			N-ARGM-LOC		18-25	at the 1968 Summer Olympics in Mexico City 
+	9	seventh
+			name:	ORDINAL				9-9	seventh 
+			sense:	seventh.s.01
+	10	in
+	11	the
+	12	K
+			sense:	thousand.n.01
+	13	-
+	14	2
+	15	500
+			name:	NUMBER				15-15	500 
+	16	m
+			sense:	meter.n.01
+	17	event
+			sense:	event.n.01
+	18	at
+	19	the
+			coref:	IDENT			2	19-22	the 1968 Summer Olympics 
+			name:	DATE				19-21	the 1968 Summer 
+	20	1968
+	21	Summer
+	22	Olympics
+			name:	MISC				22-22	Olympics 
+	23	in
+	24	Mexico
+			name:	COUNTRY				24-24	Mexico 
+	25	City
+			name:	LOCATION				25-25	City 
+	26	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.0-0	She 
+				3.0-0	She 
+				4.0-0	Her 
+				6.0-0	Her 
+	Chain 1 (IDENT)
+				1.4-4	1964 
+				1.24-24	1964 
+	Chain 2 (IDENT)
+				4.21-24	the 1964 Summer Olympics 
+				5.17-20	the 2004 Summer Olympics 
+				6.19-22	the 1968 Summer Olympics 
+	Chain 3 (IDENT)
+				4.18-18	1000 
+				5.13-13	1000 
+

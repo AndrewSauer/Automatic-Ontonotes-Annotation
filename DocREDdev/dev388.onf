@@ -1,0 +1,576 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bear Valley Springs is a guarded - gate community in Kern County , California , United States .
+
+
+Treebanked sentence:
+--------------------
+Bear Valley Springs is a guarded - gate community in Kern County , California , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bear) (NNP Valley) (NNP Springs))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a)
+          (ADJP (VBN guarded) (HYPH -) (NN gate))
+          (NN community))
+        (PP (IN in)
+          (NP (NNP Kern) (NNP County) (, ,) (NNP California) (, ,) (NNP United) (NNP States)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bear
+			name:	LOCATION				0-0	Bear 
+	1	Valley
+			name:	CITY				1-2	Valley Springs 
+	2	Springs
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Bear Valley Springs 
+			N-ARG-A2		4-16	a guarded - gate community in Kern County , California , United States 
+	4	a
+	5	guarded
+			sense:	defend.v.03
+			prop:	guard.01
+			V		5-5	guarded 
+			N-ARG-A1		8-8	community 
+	6	-
+	7	gate
+			sense:	gate.n.01
+	8	community
+			sense:	residential_district.n.01
+	9	in
+	10	Kern
+			name:	LOCATION				10-11	Kern County 
+	11	County
+	12	,
+	13	California
+			name:	STATE_OR_PROVINCE				13-13	California 
+	14	,
+	15	United
+			name:	COUNTRY				15-16	United States 
+	16	States
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bear Valley Springs is in the Tehachapi Mountains and is part of the greater Tehachapi area .
+
+
+Treebanked sentence:
+--------------------
+Bear Valley Springs is in the Tehachapi Mountains and is part of the greater Tehachapi area . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Bear) (NNP Valley) (NNP Springs))
+    (VP
+      (VP (VBZ is)
+        (PP (IN in)
+          (NP (DT the) (NNP Tehachapi) (NNPS Mountains))))
+      (CC and)
+      (VP (VBZ is)
+        (NP
+          (NP (NN part))
+          (PP (IN of)
+            (NP (DT the) (JJR greater) (NNP Tehachapi) (NN area))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bear
+			name:	LOCATION				0-0	Bear 
+	1	Valley
+			name:	CITY				1-2	Valley Springs 
+	2	Springs
+	3	is
+			sense:	be.v.03
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Bear Valley Springs 
+			N-ARG-A2		4-7	in the Tehachapi Mountains 
+	4	in
+	5	the
+	6	Tehachapi
+			name:	CITY				6-6	Tehachapi 
+	7	Mountains
+			name:	LOCATION				7-7	Mountains 
+	8	and
+	9	is
+			sense:	be.v.01
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-2	Bear Valley Springs 
+			N-ARG-A2		10-15	part of the greater Tehachapi area 
+	10	part
+			sense:	part.n.01
+	11	of
+	12	the
+			coref:	IDENT			2	12-15	the greater Tehachapi area 
+	13	greater
+			sense:	great.s.01
+	14	Tehachapi
+			name:	CITY				14-14	Tehachapi 
+	15	area
+			sense:	area.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The elevation ranges from to ( Bear Mountain ) .
+
+
+Treebanked sentence:
+--------------------
+The elevation ranges from to ( Bear Mountain ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN elevation))
+    (VP (VBZ ranges)
+      (PP (IN from)
+        (PP (IN to)))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP Bear) (NNP Mountain))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The elevation 
+	1	elevation
+			sense:	elevation.n.05
+	2	ranges
+			sense:	range.v.01
+			prop:	range.01
+			V		2-2	ranges 
+			N-ARG-A1		0-1	The elevation 
+			N-ARG-A3		3-3	from 
+			N-ARG-A4		4-8	to ( Bear Mountain ) 
+	3	from
+	4	to
+	5	(
+	6	Bear
+	7	Mountain
+	8	)
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The population fluctuates between a low during the winter months when snow is common , to a high in the summer months when its elevation keeps it much cooler than surrounding areas and major cities .
+
+
+Treebanked sentence:
+--------------------
+The population fluctuates between a low during the winter months when snow is common , to a high in the summer months when its elevation keeps it much cooler than surrounding areas and major cities . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN population))
+    (VP (VBZ fluctuates)
+      (PP (IN between)
+        (NP
+          (NP (DT a)
+            (ADJP (JJ low)
+              (PP (IN during)
+                (NP (DT the) (NN winter))))
+            (NNS months))
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (NN snow))
+              (VP (VBZ is)
+                (ADJP (JJ common))
+                (, ,)
+                (PP (IN to)
+                  (NP
+                    (NP (DT a)
+                      (ADJP (JJ high)
+                        (PP (IN in)
+                          (NP (DT the) (NN summer))))
+                      (NNS months))
+                    (SBAR
+                      (WHADVP (WRB when))
+                      (S
+                        (NP (PRP$ its) (NN elevation))
+                        (VP (VBZ keeps)
+                          (S
+                            (NP (PRP it))
+                            (ADJP (JJ much)
+                              (NP (JJR cooler))))
+                          (PP (IN than)
+                            (NP
+                              (NP (VBG surrounding) (NNS areas))
+                              (CC and)
+                              (NP (JJ major) (NNS cities)))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The population 
+	1	population
+			sense:	population.n.04
+	2	fluctuates
+			sense:	fluctuate.v.03
+			prop:	fluctuate.01
+			V		2-2	fluctuates 
+			N-ARG-A1		0-1	The population 
+			N-ARG-A3		3-13	between a low during the winter months when snow is common 
+	3	between
+	4	a
+	5	low
+			sense:	low.a.01
+	6	during
+	7	the
+	8	winter
+			name:	DATE				8-8	winter 
+			sense:	winter.n.01
+	9	months
+			name:	DURATION				9-9	months 
+			sense:	calendar_month.n.01
+	10	when
+	11	snow
+			sense:	snow.n.01
+	12	is
+			sense:	be.v.01
+			prop:	be.01
+			V		12-12	is 
+			N-ARGM-TMP		7-9	the winter months 
+			R-ARGM-TMP		10-10	when 
+			N-ARG-A1		11-11	snow 
+			N-ARG-A2		13-13	common 
+	13	common
+			sense:	common.s.04
+	14	,
+	15	to
+	16	a
+	17	high
+			sense:	high.a.01
+	18	in
+	19	the
+	20	summer
+			name:	DATE				20-20	summer 
+			sense:	summer.n.01
+	21	months
+			name:	DURATION				21-21	months 
+			sense:	calendar_month.n.01
+	22	when
+	23	its
+			coref:	IDENT			0	23-24	its elevation 
+			coref:	IDENT			1	23-23	its 
+	24	elevation
+			sense:	elevation.n.05
+	25	keeps
+			sense:	keep.v.01
+			prop:	keep.02
+			V		25-25	keeps 
+			N-ARGM-TMP		19-21	the summer months 
+			R-ARGM-TMP		22-22	when 
+			N-ARG-A0		23-24	its elevation 
+			N-ARG-A1		27-34	much cooler than surrounding areas and major cities 
+	26	it
+			coref:	IDENT			1	26-26	it 
+	27	much
+			sense:	much.a.01
+	28	cooler
+			sense:	cool.a.01
+	29	than
+	30	surrounding
+			sense:	surround.v.01
+			prop:	surround.01
+			V		30-30	surrounding 
+			N-ARG-A1		31-31	areas 
+	31	areas
+			sense:	area.n.01
+	32	and
+	33	major
+			sense:	major.a.01
+	34	cities
+			sense:	city.n.01
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The population was 5,172 at the 2010 census , up from 4,232 at the 2000 census .
+
+
+Treebanked sentence:
+--------------------
+The population was 5,172 at the 2010 census , up from 4,232 at the 2000 census . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN population))
+    (VP (VBD was)
+      (NP
+        (NP (CD 5,172))
+        (PP (IN at)
+          (NP (DT the) (CD 2010) (NN census))))
+      (, ,)
+      (ADVP (RB up)
+        (PP (IN from)
+          (NP
+            (NP (CD 4,232))
+            (PP (IN at)
+              (NP (DT the) (CD 2000) (NN census)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The population 
+	1	population
+			sense:	population.n.04
+	2	was
+			sense:	equal.v.01
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	The population 
+			N-ARG-A2		3-3	5,172 
+			N-ARGM-TMP		4-7	at the 2010 census 
+			C-ARG-A2		9-15	up from 4,232 at the 2000 census 
+	3	5,172
+			name:	NUMBER				3-3	5,172 
+	4	at
+	5	the
+			coref:	IDENT			3	5-7	the 2010 census 
+	6	2010
+			name:	DATE				6-6	2010 
+	7	census
+			sense:	census.n.01
+	8	,
+	9	up
+			sense:	up.r.01
+	10	from
+	11	4,232
+			name:	NUMBER				11-11	4,232 
+	12	at
+	13	the
+			coref:	IDENT			3	13-15	the 2000 census 
+	14	2000
+			name:	DATE				14-14	2000 
+	15	census
+			sense:	census.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+For statistical purposes , the United States Census Bureau has defined Bear Valley Springs as a census - designated place ( CDP ) .
+
+
+Treebanked sentence:
+--------------------
+For statistical purposes , the United States Census Bureau has defined Bear Valley Springs as a census - designated place ( CDP ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (JJ statistical) (NNS purposes)))
+    (, ,)
+    (NP (DT the)
+      (NML (NNP United) (NNP States))
+      (NNP Census) (NNP Bureau))
+    (VP (VBZ has)
+      (VP (VBN defined)
+        (NP
+          (NP (NNP Bear) (NNP Valley) (NNP Springs))
+          (PP (IN as)
+            (NP
+              (ADJP
+                (NP (DT a) (NN census))
+                (HYPH -) (VBN designated))
+              (NN place)
+              (PRN (-LRB- -LRB-)
+                (NP (NN CDP))
+                (-RRB- -RRB-)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	For
+	1	statistical
+			sense:	statistical.a.01
+	2	purposes
+			sense:	function.n.02
+	3	,
+	4	the
+	5	United
+			name:	ORGANIZATION				5-8	United States Census Bureau 
+	6	States
+	7	Census
+	8	Bureau
+	9	has
+			sense:	have.v.01
+			prop:	have.01
+			V		9-9	has 
+	10	defined
+			sense:	specify.v.03
+			prop:	define.01
+			V		10-10	defined 
+			N-ARGM-PRP		0-2	For statistical purposes 
+			N-ARG-A0		4-8	the United States Census Bureau 
+			N-ARG-A1		11-13	Bear Valley Springs 
+			N-ARG-A2		14-22	as a census - designated place ( CDP ) 
+	11	Bear
+			name:	LOCATION				11-11	Bear 
+	12	Valley
+			name:	CITY				12-13	Valley Springs 
+	13	Springs
+	14	as
+	15	a
+	16	census
+			sense:	census.n.01
+	17	-
+	18	designated
+			sense:	designate.v.01
+			prop:	designate.01
+			V		18-18	designated 
+			N-ARG-A2		16-16	census 
+			N-ARG-A1		19-19	place 
+	19	place
+			sense:	topographic_point.n.01
+	20	(
+	21	CDP
+	22	)
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The census definition of the area may not precisely correspond to local understanding of the area with the same name .
+
+
+Treebanked sentence:
+--------------------
+The census definition of the area may not precisely correspond to local understanding of the area with the same name . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN census) (NN definition))
+      (PP (IN of)
+        (NP (DT the) (NN area))))
+    (VP (MD may) (RB not)
+      (VP
+        (ADVP (RB precisely))
+        (VBP correspond)
+        (PP (IN to)
+          (NP
+            (NP (JJ local) (NN understanding))
+            (PP (IN of)
+              (NP (DT the) (NN area)))))
+        (PP (IN with)
+          (NP (DT the) (JJ same) (NN name)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	census
+			sense:	census.n.01
+	2	definition
+			sense:	definition.n.01
+	3	of
+	4	the
+			coref:	IDENT			2	4-5	the area 
+	5	area
+			sense:	area.n.01
+	6	may
+	7	not
+			sense:	not.r.01
+	8	precisely
+			sense:	precisely.r.01
+	9	correspond
+			sense:	match.v.01
+			prop:	correspond.02
+			V		9-9	correspond 
+			N-ARG-A1		0-5	The census definition of the area 
+			N-ARGM-MOD		6-6	may 
+			N-ARGM-NEG		7-7	not 
+			N-ARGM-MNR		8-8	precisely 
+			N-ARG-A2		10-19	to local understanding of the area with the same name 
+	10	to
+	11	local
+			sense:	local.a.02
+	12	understanding
+			sense:	understanding.n.01
+	13	of
+	14	the
+			coref:	IDENT			2	14-15	the area 
+	15	area
+			sense:	area.n.01
+	16	with
+	17	the
+	18	same
+			sense:	same.a.01
+	19	name
+			sense:	name.n.01
+	20	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.0-1	The elevation 
+				3.23-24	its elevation 
+	Chain 1 (IDENT)
+				3.0-1	The population 
+				3.23-23	its 
+				3.26-26	it 
+				4.0-1	The population 
+	Chain 2 (IDENT)
+				1.12-15	the greater Tehachapi area 
+				6.4-5	the area 
+				6.14-15	the area 
+	Chain 3 (IDENT)
+				4.5-7	the 2010 census 
+				4.13-15	the 2000 census 
+

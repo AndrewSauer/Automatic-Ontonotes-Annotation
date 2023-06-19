@@ -1,0 +1,683 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Monster House was an Australian reality / comedy television series broadcast on the Nine Network .
+
+
+Treebanked sentence:
+--------------------
+Monster House was an Australian reality / comedy television series broadcast on the Nine Network . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN Monster) (NNP House))
+    (VP (VBD was)
+      (NP
+        (NP
+          (NP (DT an) (JJ Australian) (NN reality) (HYPH /) (NN comedy))
+          (NP (NN television) (NN series)))
+        (VP (VBN broadcast)
+          (PP (IN on)
+            (NP (DT the) (NNP Nine) (NNP Network))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Monster
+			sense:	monster.n.01
+	1	House
+	2	was
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	Monster House 
+			N-ARG-A2		3-14	an Australian reality / comedy television series broadcast on the Nine Network 
+	3	an
+	4	Australian
+			name:	NATIONALITY				4-4	Australian 
+	5	reality
+			sense:	world.n.03
+	6	/
+	7	comedy
+			sense:	comedy.n.01
+	8	television
+			sense:	television.n.01
+	9	series
+			sense:	serial.n.01
+	10	broadcast
+			sense:	air.v.03
+			prop:	broadcast.01
+			V		10-10	broadcast 
+			N-ARG-A1		3-9	an Australian reality / comedy television series 
+			N-ARGM-LOC		11-14	on the Nine Network 
+	11	on
+	12	the
+	13	Nine
+			name:	ORGANIZATION				13-14	Nine Network 
+	14	Network
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Debuting on 12 February 2008 , the program was hosted by Bernard Curry , brother of Stephen and Andrew Curry .
+
+
+Treebanked sentence:
+--------------------
+Debuting on 12 February 2008 , the program was hosted by Bernard Curry , brother of Stephen and Andrew Curry . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBG Debuting)
+        (PP (IN on)
+          (NP (CD 12)))
+        (NP-TMP (NNP February) (CD 2008))))
+    (, ,)
+    (NP (DT the) (NN program))
+    (VP (VBD was)
+      (VP (VBN hosted)
+        (PP (IN by)
+          (NP
+            (NP (NNP Bernard) (NNP Curry))
+            (, ,)
+            (NP
+              (NP (NN brother))
+              (PP (IN of)
+                (NP (NNP Stephen))))
+            (CC and)
+            (NP (NNP Andrew) (NNP Curry))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Debuting
+			sense:	debut.v.02
+			prop:	debut.01
+			V		0-0	Debuting 
+			N-ARGM-TMP		1-4	on 12 February 2008 
+			N-ARG-A1		6-7	the program 
+	1	on
+	2	12
+			name:	DATE				2-4	12 February 2008 
+	3	February
+	4	2008
+	5	,
+	6	the
+	7	program
+			sense:	broadcast.n.02
+	8	was
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	was 
+	9	hosted
+			sense:	host.v.01
+			prop:	host.01
+			V		9-9	hosted 
+			N-ARG-A1		6-7	the program 
+			N-ARG-A0		10-19	by Bernard Curry , brother of Stephen and Andrew Curry 
+	10	by
+	11	Bernard
+			name:	PERSON				11-12	Bernard Curry 
+	12	Curry
+	13	,
+	14	brother
+			sense:	brother.n.01
+	15	of
+	16	Stephen
+			name:	PERSON				16-16	Stephen 
+	17	and
+	18	Andrew
+			name:	PERSON				18-19	Andrew Curry 
+	19	Curry
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The show centred on the Webb family , played by actors Rebel Wilson , Celia Ireland , Travis Cotton , Jody Kennedy , Julie Herbert and Glenn Butcher , who act as a fictional family in a house purpose - built with hidden cameras to capture their performances and those of the unsuspecting guests who get brought into the family 's " web " .
+
+
+Treebanked sentence:
+--------------------
+The show centred on the Webb family , played by actors Rebel Wilson , Celia Ireland , Travis Cotton , Jody Kennedy , Julie Herbert and Glenn Butcher , who act as a fictional family in a house purpose - built with hidden cameras to capture their performances and those of the unsuspecting guests who get brought into the family 's " web " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN show))
+    (VP (VBD centred)
+      (PP (IN on)
+        (NP
+          (NP
+            (NP (DT the) (NNP Webb) (NN family))
+            (, ,)
+            (VP (VBN played)
+              (PP (IN by)
+                (NP
+                  (NP
+                    (NP (NNS actors) (NN Rebel))
+                    (NP (NNP Wilson))
+                    (, ,)
+                    (NP (NNP Celia) (NNP Ireland))
+                    (, ,)
+                    (NP (NNP Travis) (NNP Cotton))
+                    (, ,)
+                    (NP (NNP Jody) (NNP Kennedy))
+                    (, ,)
+                    (NP (NNP Julie) (NNP Herbert))
+                    (CC and)
+                    (NP (NNP Glenn) (NNP Butcher)))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBP act)
+                        (PP (IN as)
+                          (NP
+                            (NP (DT a) (JJ fictional) (NN family))
+                            (PP (IN in)
+                              (NP
+                                (NP (DT a) (NN house))
+                                (ADJP (NN purpose) (HYPH -) (VBN built)))))))))))
+              (PP (IN with)
+                (NP (JJ hidden) (NNS cameras)))
+              (S
+                (VP (TO to)
+                  (VP (VB capture)
+                    (NP (PRP$ their) (NNS performances)))))))
+          (CC and)
+          (NP
+            (NP (DT those))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (JJ unsuspecting) (NNS guests))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBP get)
+                      (VP (VBN brought)
+                        (PP (IN into)
+                          (NP
+                            (NP (DT the) (NN family) (POS 's))
+                            (`` ") (NN web) ('' ")))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The show 
+	1	show
+			sense:	show.n.01
+	2	centred
+			sense:	concentrate.v.02
+			prop:	censure.01
+			V		2-2	centred 
+			N-ARG-A1		0-1	The show 
+			N-ARG-A2		3-63	on the Webb family , played by actors Rebel Wilson , Celia Ireland , Travis Cotton , Jody Kennedy , Julie Herbert and Glenn Butcher , who act as a fictional family in a house purpose - built with hidden cameras to capture their performances and those of the unsuspecting guests who get brought into the family 's " web " 
+	3	on
+	4	the
+	5	Webb
+	6	family
+			sense:	family.n.01
+	7	,
+	8	played
+			sense:	act.v.03
+			prop:	play.02
+			V		8-8	played 
+			N-ARG-A1		4-6	the Webb family 
+			N-ARG-A0		9-63	by actors Rebel Wilson , Celia Ireland , Travis Cotton , Jody Kennedy , Julie Herbert and Glenn Butcher , who act as a fictional family in a house purpose - built with hidden cameras to capture their performances and those of the unsuspecting guests who get brought into the family 's " web " 
+	9	by
+	10	actors
+			sense:	actor.n.01
+	11	Rebel
+			name:	PERSON				11-12	Rebel Wilson 
+			sense:	maverick.n.01
+	12	Wilson
+	13	,
+	14	Celia
+			name:	PERSON				14-15	Celia Ireland 
+	15	Ireland
+	16	,
+	17	Travis
+			name:	PERSON				17-18	Travis Cotton 
+	18	Cotton
+	19	,
+	20	Jody
+			name:	PERSON				20-21	Jody Kennedy 
+	21	Kennedy
+	22	,
+	23	Julie
+			name:	PERSON				23-24	Julie Herbert 
+	24	Herbert
+	25	and
+	26	Glenn
+			name:	PERSON				26-27	Glenn Butcher 
+	27	Butcher
+	28	,
+	29	who
+	30	act
+			sense:	act.v.03
+			prop:	act.01
+			V		30-30	act 
+			N-ARG-A0		10-27	actors Rebel Wilson , Celia Ireland , Travis Cotton , Jody Kennedy , Julie Herbert and Glenn Butcher 
+			R-ARG-A0		29-29	who 
+			N-ARG-A1		31-63	as a fictional family in a house purpose - built with hidden cameras to capture their performances and those of the unsuspecting guests who get brought into the family 's " web " 
+	31	as
+	32	a
+	33	fictional
+			sense:	fabricated.s.01
+	34	family
+			sense:	family.n.01
+	35	in
+	36	a
+	37	house
+			sense:	house.n.01
+	38	purpose
+			sense:	function.n.02
+	39	-
+	40	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		40-40	built 
+			N-ARG-A1		36-37	a house 
+			N-ARGM-PRP		38-38	purpose 
+			N-ARGM-MNR		41-43	with hidden cameras 
+			N-ARGM-PRP		44-63	to capture their performances and those of the unsuspecting guests who get brought into the family 's " web " 
+	41	with
+	42	hidden
+			sense:	hidden.s.02
+	43	cameras
+			sense:	television_camera.n.01
+	44	to
+	45	capture
+			sense:	capture.v.01
+			prop:	capture.01
+			V		45-45	capture 
+			N-ARG-A1		46-63	their performances and those of the unsuspecting guests who get brought into the family 's " web " 
+	46	their
+	47	performances
+			sense:	performance.n.01
+	48	and
+	49	those
+	50	of
+	51	the
+	52	unsuspecting
+			sense:	unsuspecting.s.01
+	53	guests
+			sense:	guest.n.01
+	54	who
+	55	get
+			sense:	become.v.01
+			prop:	get.03
+			V		55-55	get 
+			N-ARG-A1		51-53	the unsuspecting guests 
+			R-ARG-A1		54-54	who 
+			N-ARG-A2		56-63	brought into the family 's " web " 
+	56	brought
+			sense:	bring.v.02
+			prop:	bring.01
+			V		56-56	brought 
+			N-ARG-A1		51-53	the unsuspecting guests 
+			R-ARG-A1		54-54	who 
+			N-ARG-A2		57-63	into the family 's " web " 
+	57	into
+	58	the
+	59	family
+			sense:	family.n.01
+	60	's
+	61	"
+	62	web
+			sense:	web.n.02
+	63	"
+	64	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The show debuted with an unimpressive 793,000 viewers tuning in .
+
+
+Treebanked sentence:
+--------------------
+The show debuted with an unimpressive 793,000 viewers tuning in . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN show))
+    (VP (VBD debuted)
+      (PP (IN with)
+        (NP (DT an) (JJ unimpressive) (CD 793,000) (NNS viewers)))
+      (PP
+        (NP (NN tuning))
+        (IN in)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The show 
+	1	show
+			sense:	show.n.01
+	2	debuted
+			sense:	debut.v.02
+			prop:	debut.01
+			V		2-2	debuted 
+			N-ARG-A1		0-1	The show 
+			N-ARGM-MNR		3-9	with an unimpressive 793,000 viewers tuning in 
+	3	with
+	4	an
+	5	unimpressive
+			sense:	unimpressive.a.01
+	6	793,000
+			name:	NUMBER				6-6	793,000 
+	7	viewers
+			sense:	spectator.n.01
+	8	tuning
+			sense:	tuning.n.01
+	9	in
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was pulled from schedules after its second episode , and axed by the network the following day .
+
+
+Treebanked sentence:
+--------------------
+It was pulled from schedules after its second episode , and axed by the network the following day . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP
+        (VP (VBN pulled)
+          (PP (IN from)
+            (NP (NNS schedules)))
+          (PP (IN after)
+            (NP (PRP$ its) (JJ second) (NN episode))))
+        (, ,)
+        (CC and)
+        (VP (VBN axed)
+          (PP (IN by)
+            (NP (DT the) (NN network)))
+          (S
+            (NP (DT the) (VBG following) (NN day))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	pulled
+			sense:	pull.v.17
+			prop:	pull.01
+			V		2-2	pulled 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		3-4	from schedules 
+			N-ARGM-TMP		5-8	after its second episode 
+	3	from
+	4	schedules
+			sense:	schedule.n.02
+	5	after
+	6	its
+			coref:	IDENT			0	6-6	its 
+	7	second
+			name:	ORDINAL				7-7	second 
+			sense:	second.s.01
+	8	episode
+			sense:	episode.n.03
+	9	,
+	10	and
+	11	axed
+			sense:	ax.v.02
+			prop:	ace.01
+			V		11-11	axed 
+			N-ARG-A1		0-0	It 
+			N-ARG-A0		12-14	by the network 
+			N-ARGM-TMP		15-17	the following day 
+	12	by
+	13	the
+	14	network
+			sense:	network.n.02
+	15	the
+			name:	DATE				15-17	the following day 
+	16	following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		16-16	following 
+			N-ARG-A1		17-17	day 
+	17	day
+			sense:	day.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Nine had commissioned ten unaired episodes of the show , which were filmed in December 2007 and January 2008 .
+
+
+Treebanked sentence:
+--------------------
+Nine had commissioned ten unaired episodes of the show , which were filmed in December 2007 and January 2008 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Nine))
+    (VP (VBD had)
+      (VP (VBN commissioned)
+        (NP
+          (NP (CD ten) (JJ unaired) (NNS episodes))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN show))
+              (, ,)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBD were)
+                    (VP (VBN filmed)
+                      (PP (IN in)
+                        (NP
+                          (NP (NNP December) (CD 2007))
+                          (CC and)
+                          (NP (NNP January) (CD 2008)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Nine
+			name:	NUMBER				0-0	Nine 
+	1	had
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	had 
+	2	commissioned
+			sense:	commission.v.02
+			prop:	commission.01
+			V		2-2	commissioned 
+			N-ARG-A0		0-0	Nine 
+			N-ARG-A1		3-18	ten unaired episodes of the show , which were filmed in December 2007 and January 2008 
+	3	ten
+			name:	NUMBER				3-3	ten 
+	4	unaired
+			sense:	airless.s.01
+	5	episodes
+			sense:	episode.n.03
+	6	of
+	7	the
+			coref:	IDENT			0	7-18	the show , which were filmed in December 2007 and January 2008 
+	8	show
+			sense:	show.n.01
+	9	,
+	10	which
+	11	were
+			sense:	be.v.01
+			prop:	be.03
+			V		11-11	were 
+	12	filmed
+			sense:	film.v.01
+			prop:	film.01
+			V		12-12	filmed 
+			N-ARG-A1		3-8	ten unaired episodes of the show 
+			R-ARG-A1		10-10	which 
+			N-ARGM-TMP		13-18	in December 2007 and January 2008 
+	13	in
+	14	December
+			name:	DATE				14-15	December 2007 
+	15	2007
+	16	and
+	17	January
+			name:	DATE				17-18	January 2008 
+	18	2008
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Nine stated it would air the remaining episodes later in the year , and did so as counter - programming during the 2008 Summer Olympics .
+
+
+Treebanked sentence:
+--------------------
+Nine stated it would air the remaining episodes later in the year , and did so as counter - programming during the 2008 Summer Olympics . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (CD Nine))
+    (VP
+      (VP (VBD stated)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (MD would)
+              (VP (VB air)
+                (NP (DT the) (VBG remaining) (NNS episodes))
+                (ADVP (RB later)
+                  (PP (IN in)
+                    (NP (DT the) (NN year)))))))))
+      (, ,)
+      (CC and)
+      (VP (VBD did)
+        (ADVP (RB so)
+          (PP (IN as)
+            (NP (NN counter) (HYPH -) (NN programming))))
+        (PP (IN during)
+          (NP (DT the) (CD 2008) (NNP Summer) (NNPS Olympics)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Nine
+			name:	NUMBER				0-0	Nine 
+	1	stated
+			sense:	state.v.01
+			prop:	state.01
+			V		1-1	stated 
+			N-ARG-A0		0-0	Nine 
+			N-ARG-A1		2-11	it would air the remaining episodes later in the year 
+	2	it
+			coref:	IDENT			0	2-2	it 
+	3	would
+	4	air
+			sense:	air.v.03
+			prop:	air.01
+			V		4-4	air 
+			N-ARG-A0		2-2	it 
+			N-ARGM-MOD		3-3	would 
+			N-ARG-A1		5-7	the remaining episodes 
+			N-ARGM-TMP		8-11	later in the year 
+	5	the
+	6	remaining
+			sense:	remain.v.03
+			prop:	remain.01
+			V		6-6	remaining 
+			N-ARG-A1		7-7	episodes 
+	7	episodes
+			sense:	episode.n.03
+	8	later
+			sense:	subsequently.r.01
+	9	in
+	10	the
+			name:	DATE				10-11	the year 
+	11	year
+			sense:	year.n.01
+	12	,
+	13	and
+	14	did
+			sense:	make.v.01
+			prop:	do.02
+			V		14-14	did 
+			N-ARG-A0		0-0	Nine 
+			N-ARG-A1		15-15	so 
+			N-ARGM-TMP		20-24	during the 2008 Summer Olympics 
+	15	so
+			sense:	so.r.03
+	16	as
+	17	counter
+			sense:	rejoinder.n.01
+	18	-
+	19	programming
+			sense:	scheduling.n.01
+	20	during
+	21	the
+			name:	DATE				21-23	the 2008 Summer 
+	22	2008
+	23	Summer
+	24	Olympics
+			name:	MISC				24-24	Olympics 
+	25	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.7-18	the show , which were filmed in December 2007 and January 2008 
+				2.0-1	The show 
+				3.0-1	The show 
+				4.0-0	It 
+				4.6-6	its 
+				6.2-2	it 
+

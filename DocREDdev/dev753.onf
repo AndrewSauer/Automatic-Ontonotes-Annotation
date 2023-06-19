@@ -1,0 +1,640 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jerry Steiner ( January 7 , 1918 – February 1 , 2012 ) was an American professional basketball player .
+
+
+Treebanked sentence:
+--------------------
+Jerry Steiner ( January 7 , 1918 – February 1 , 2012 ) was an American professional basketball player . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Jerry) (NNP Steiner))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP January) (CD 7) (, ,) (CD 1918))
+        (PP (SYM –)
+          (NP (NNP February) (CD 1) (, ,) (CD 2012))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT an) (JJ American)
+        (NML (JJ professional) (NN basketball))
+        (NN player)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jerry
+			coref:	IDENT			1	0-1	Jerry Steiner 
+			name:	PERSON				0-1	Jerry Steiner 
+	1	Steiner
+	2	(
+	3	January
+			name:	DATE				3-6	January 7 , 1918 
+	4	7
+	5	,
+	6	1918
+	7	–
+	8	February
+			name:	DATE				8-11	February 1 , 2012 
+	9	1
+	10	,
+	11	2012
+	12	)
+	13	was
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	was 
+			N-ARG-A1		0-12	Jerry Steiner ( January 7 , 1918 – February 1 , 2012 ) 
+			N-ARG-A2		14-18	an American professional basketball player 
+	14	an
+	15	American
+			name:	NATIONALITY				15-15	American 
+	16	professional
+			sense:	professional.a.01
+	17	basketball
+			name:	TITLE				17-18	basketball player 
+			sense:	basketball.n.01
+	18	player
+			sense:	player.n.01
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He played two seasons in the National Basketball League ( NBL ) , one of the two leagues that merged to form the National Basketball Association .
+
+
+Treebanked sentence:
+--------------------
+He played two seasons in the National Basketball League ( NBL ) , one of the two leagues that merged to form the National Basketball Association . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD played)
+      (NP
+        (NP (CD two) (NNS seasons))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNP National) (NNP Basketball) (NNP League)
+              (PRN (-LRB- -LRB-)
+                (NP (NN NBL))
+                (-RRB- -RRB-)))
+            (, ,)
+            (NP
+              (NP (CD one))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (CD two) (NNS leagues))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBD merged)
+                        (S
+                          (VP (TO to)
+                            (VP (VB form)
+                              (NP (DT the) (NNP National) (NNP Basketball) (NNP Association)))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	played
+			sense:	play.v.01
+			prop:	play.01
+			V		1-1	played 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-3	two seasons 
+			N-ARGM-LOC		4-25	in the National Basketball League ( NBL ) , one of the two leagues that merged to form the National Basketball Association 
+	2	two
+			name:	NUMBER				2-2	two 
+	3	seasons
+			sense:	season.n.01
+	4	in
+	5	the
+	6	National
+			name:	ORGANIZATION				6-8	National Basketball League 
+	7	Basketball
+	8	League
+	9	(
+	10	NBL
+			coref:	IDENT			2	10-10	NBL 
+			name:	ORGANIZATION				10-10	NBL 
+	11	)
+	12	,
+	13	one
+			name:	NUMBER				13-13	one 
+	14	of
+	15	the
+	16	two
+			name:	NUMBER				16-16	two 
+	17	leagues
+			sense:	league.n.01
+	18	that
+	19	merged
+			sense:	unify.v.01
+			prop:	merge.01
+			V		19-19	merged 
+			N-ARG-A1		15-17	the two leagues 
+			R-ARG-A1		18-18	that 
+			N-ARGM-PNC		20-25	to form the National Basketball Association 
+	20	to
+	21	form
+			sense:	form.v.01
+			prop:	form.01
+			V		21-21	form 
+			N-ARG-A0		18-18	that 
+			N-ARG-A1		22-25	the National Basketball Association 
+	22	the
+	23	National
+			name:	ORGANIZATION				23-25	National Basketball Association 
+	24	Basketball
+	25	Association
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Steiner , a 5'7 " point guard was a basketball player for Butler University from 1937 to 1940 .
+
+
+Treebanked sentence:
+--------------------
+Steiner , a 5 ' 7 " point guard was a basketball player for Butler University from 1937 to 1940 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Steiner))
+      (, ,)
+      (NP (DT a)
+        (NML
+          (NML (CD 5) (SYM ') (CD 7))
+          (`` ") (NN point))
+        (NN guard)))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN basketball) (NN player))
+        (PP (IN for)
+          (NP
+            (NP (NNP Butler) (NNP University))
+            (PP (IN from)
+              (NP (CD 1937))))))
+      (PP (IN to)
+        (NP (CD 1940))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Steiner
+			coref:	IDENT			1	0-8	Steiner , a 5 ' 7 " point guard 
+			name:	PERSON				0-0	Steiner 
+	1	,
+	2	a
+	3	5
+			name:	NUMBER				3-3	5 
+	4	'
+	5	7
+			name:	NUMBER				5-5	7 
+	6	"
+	7	point
+			name:	TITLE				7-8	point guard 
+			sense:	point.n.10
+	8	guard
+			sense:	guard.n.05
+	9	was
+			sense:	be.v.01
+			prop:	be.01
+			V		9-9	was 
+			N-ARG-A1		0-8	Steiner , a 5 ' 7 " point guard 
+			N-ARG-A2		10-15	a basketball player for Butler University 
+			N-ARGM-TMP		16-19	from 1937 to 1940 
+	10	a
+	11	basketball
+			name:	TITLE				11-12	basketball player 
+			sense:	basketball.n.01
+	12	player
+			sense:	player.n.01
+	13	for
+	14	Butler
+			name:	ORGANIZATION				14-15	Butler University 
+	15	University
+	16	from
+	17	1937
+			name:	DATE				17-19	1937 to 1940 
+	18	to
+	19	1940
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He made the 1940 All - American team as a senior for the Bulldogs .
+
+
+Treebanked sentence:
+--------------------
+He made the 1940 All - American team as a senior for the Bulldogs . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD made)
+      (NP (DT the)
+        (ADJP
+          (NP
+            (NP (CD 1940))
+            (NP (DT All)))
+          (HYPH -) (JJ American))
+        (NN team))
+      (PP (IN as)
+        (NP (DT a) (JJ senior)))
+      (PP (IN for)
+        (NP (DT the) (NNPS Bulldogs))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	made
+			sense:	make.v.03
+			prop:	make.18
+			V		1-1	made 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-7	the 1940 All - American team 
+			N-ARGM-PRD		8-13	as a senior for the Bulldogs 
+	2	the
+	3	1940
+			name:	DATE				3-3	1940 
+	4	All
+	5	-
+	6	American
+			name:	NATIONALITY				6-6	American 
+	7	team
+			sense:	team.n.01
+	8	as
+	9	a
+	10	senior
+			sense:	senior.s.02
+	11	for
+	12	the
+	13	Bulldogs
+			name:	ORGANIZATION				13-13	Bulldogs 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After graduating from Butler , Steiner played for one season for the Indianapolis Kautskys of the NBL for the 1945–46 season .
+
+
+Treebanked sentence:
+--------------------
+After graduating from Butler , Steiner played for one season for the Indianapolis Kautskys of the NBL for the 1945 – 46 season . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG graduating)
+          (PP (IN from)
+            (NP (NNP Butler))))))
+    (, ,)
+    (NP (NNP Steiner))
+    (VP (VBD played)
+      (PP (IN for)
+        (NP (CD one) (NN season)))
+      (PP (IN for)
+        (NP
+          (NP (DT the) (NNP Indianapolis) (NNPS Kautskys))
+          (PP (IN of)
+            (NP (DT the)
+              (NML
+                (NML
+                  (NML (NN NBL))
+                  (PP (IN for)
+                    (NP (DT the) (CD 1945))))
+                (PP (SYM –)
+                  (NP (CD 46))))
+              (NN season))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	graduating
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		1-1	graduating 
+			N-ARG-A1		2-3	from Butler 
+			N-ARG-A0		5-5	Steiner 
+	2	from
+	3	Butler
+			name:	PERSON				3-3	Butler 
+	4	,
+	5	Steiner
+			coref:	IDENT			1	5-5	Steiner 
+			name:	PERSON				5-5	Steiner 
+	6	played
+			sense:	play.v.01
+			prop:	play.01
+			V		6-6	played 
+			N-ARGM-TMP		0-3	After graduating from Butler 
+			N-ARG-A0		5-5	Steiner 
+			N-ARGM-TMP		7-9	for one season 
+			N-ARGM-TMP		17-22	for the 1945 – 46 season 
+	7	for
+	8	one
+			name:	NUMBER				8-8	one 
+	9	season
+			sense:	season.n.01
+	10	for
+	11	the
+	12	Indianapolis
+			name:	PERSON				12-13	Indianapolis Kautskys 
+	13	Kautskys
+	14	of
+	15	the
+	16	NBL
+			coref:	IDENT			2	16-16	NBL 
+			name:	ORGANIZATION				16-16	NBL 
+	17	for
+	18	the
+	19	1945
+			name:	DATE				19-19	1945 
+	20	–
+	21	46
+			name:	NUMBER				21-21	46 
+	22	season
+			sense:	season.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After serving in World War II until 1946 , Steiner took a job teaching and coaching at Shortridge High School in Indianapolis while playing for the Fort Wayne Zollner Pistons .
+
+
+Treebanked sentence:
+--------------------
+After serving in World War II until 1946 , Steiner took a job teaching and coaching at Shortridge High School in Indianapolis while playing for the Fort Wayne Zollner Pistons . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG serving)
+          (PP (IN in)
+            (NP (NNP World) (NNP War) (NNP II)))
+          (PP (IN until)
+            (NP (CD 1946))))))
+    (, ,)
+    (NP (NNP Steiner))
+    (VP
+      (VP (VBD took)
+        (NP (DT a) (NN job) (NN teaching)))
+      (CC and)
+      (VP (VBG coaching)
+        (PP (IN at)
+          (NP
+            (NP (NNP Shortridge) (NNP High) (NNP School))
+            (PP (IN in)
+              (NP (NNP Indianapolis)))))
+        (PP (IN while)
+          (S
+            (VP (VBG playing)
+              (PP (IN for)
+                (NP (DT the) (NNP Fort) (NNP Wayne) (NNP Zollner) (NNPS Pistons))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	serving
+			sense:	serve.v.13
+			prop:	serve.01
+			V		1-1	serving 
+			N-ARG-A1		2-5	in World War II 
+			N-ARGM-TMP		6-7	until 1946 
+			N-ARG-A0		9-9	Steiner 
+	2	in
+	3	World
+			name:	MISC				3-3	World 
+	4	War
+			name:	CAUSE_OF_DEATH				4-4	War 
+	5	II
+			name:	MISC				5-5	II 
+	6	until
+	7	1946
+			coref:	IDENT			0	7-7	1946 
+			name:	DATE				7-7	1946 
+	8	,
+	9	Steiner
+			coref:	IDENT			1	9-9	Steiner 
+			name:	PERSON				9-9	Steiner 
+	10	took
+			sense:	fill.v.04
+			prop:	take.01
+			V		10-10	took 
+			N-ARGM-TMP		0-7	After serving in World War II until 1946 
+			N-ARG-A0		9-9	Steiner 
+			N-ARG-A1		11-21	a job teaching and coaching at Shortridge High School in Indianapolis 
+			N-ARGM-TMP		22-29	while playing for the Fort Wayne Zollner Pistons 
+	11	a
+	12	job
+			sense:	occupation.n.01
+	13	teaching
+			sense:	teaching.n.01
+	14	and
+	15	coaching
+			sense:	coach.v.01
+			prop:	coach.01
+			V		15-15	coaching 
+			N-ARG-A0		9-9	Steiner 
+			N-ARGM-LOC		16-21	at Shortridge High School in Indianapolis 
+	16	at
+	17	Shortridge
+			name:	ORGANIZATION				17-19	Shortridge High School 
+	18	High
+	19	School
+	20	in
+	21	Indianapolis
+			name:	CITY				21-21	Indianapolis 
+	22	while
+	23	playing
+			sense:	play.v.01
+			prop:	play.01
+			V		23-23	playing 
+			N-ARG-A0		9-9	Steiner 
+			N-ARGM-ADV		24-29	for the Fort Wayne Zollner Pistons 
+	24	for
+	25	the
+	26	Fort
+			name:	ORGANIZATION				26-29	Fort Wayne Zollner Pistons 
+	27	Wayne
+	28	Zollner
+	29	Pistons
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He left the game after the 1946–47 season .
+
+
+Treebanked sentence:
+--------------------
+He left the game after the 1946 – 47 season . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD left)
+      (NP (DT the) (NN game))
+      (PP (IN after)
+        (NP (DT the)
+          (NML
+            (QP (CD 1946) (SYM –) (CD 47)))
+          (NN season))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	left
+			sense:	leave.v.08
+			prop:	leave.01
+			V		1-1	left 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-3	the game 
+			N-ARGM-TMP		4-9	after the 1946 – 47 season 
+	2	the
+	3	game
+			sense:	game.n.01
+	4	after
+	5	the
+	6	1946
+			coref:	IDENT			0	6-6	1946 
+			name:	DATE				6-6	1946 
+	7	–
+	8	47
+			name:	NUMBER				8-8	47 
+	9	season
+			sense:	season.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Steiner died on February 1 , 2012 , in Bonita Springs , Florida .
+
+
+Treebanked sentence:
+--------------------
+Steiner died on February 1 , 2012 , in Bonita Springs , Florida . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Steiner))
+    (VP (VBD died)
+      (PP (IN on)
+        (NP (NNP February) (CD 1) (, ,) (CD 2012) (, ,)))
+      (PP (IN in)
+        (NP
+          (NP (NNP Bonita) (NNP Springs))
+          (, ,)
+          (NP (NNP Florida)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Steiner
+			coref:	IDENT			1	0-0	Steiner 
+			name:	PERSON				0-0	Steiner 
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	Steiner 
+			N-ARGM-TMP		2-6	on February 1 , 2012 
+			N-ARGM-LOC		8-12	in Bonita Springs , Florida 
+	2	on
+	3	February
+			name:	DATE				3-6	February 1 , 2012 
+	4	1
+	5	,
+	6	2012
+	7	,
+	8	in
+	9	Bonita
+			name:	CITY				9-10	Bonita Springs 
+	10	Springs
+	11	,
+	12	Florida
+			name:	STATE_OR_PROVINCE				12-12	Florida 
+	13	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.7-7	1946 
+				6.6-6	1946 
+	Chain 1 (IDENT)
+				0.0-1	Jerry Steiner 
+				1.0-0	He 
+				2.0-8	Steiner , a 5 ' 7 " point guard 
+				4.5-5	Steiner 
+				5.9-9	Steiner 
+				6.0-0	He 
+				7.0-0	Steiner 
+	Chain 2 (IDENT)
+				1.10-10	NBL 
+				4.16-16	NBL 
+

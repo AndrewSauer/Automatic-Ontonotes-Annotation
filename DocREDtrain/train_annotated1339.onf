@@ -1,0 +1,631 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Michael Meeropol ( born Michael Rosenberg on March 10 , 1943 ) is a retired professor of economics .
+
+
+Treebanked sentence:
+--------------------
+Michael Meeropol ( born Michael Rosenberg on March 10 , 1943 ) is a retired professor of economics . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Michael) (NNP Meeropol))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP
+          (NP (NNP Michael) (NNP Rosenberg))
+          (PP (IN on)
+            (NP (NNP March) (CD 10) (, ,) (CD 1943)))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ retired) (NN professor))
+        (PP (IN of)
+          (NP (NNS economics)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Michael
+			coref:	IDENT			0	0-1	Michael Meeropol 
+			name:	PERSON				0-1	Michael Meeropol 
+	1	Meeropol
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Michael Meeropol 
+			N-ARGM-TMP		6-10	on March 10 , 1943 
+	4	Michael
+			coref:	IDENT			2	4-5	Michael Rosenberg 
+			name:	PERSON				4-5	Michael Rosenberg 
+	5	Rosenberg
+	6	on
+	7	March
+			name:	DATE				7-10	March 10 , 1943 
+	8	10
+	9	,
+	10	1943
+	11	)
+	12	is
+			sense:	be.v.02
+			prop:	be.01
+			V		12-12	is 
+			N-ARG-A1		0-11	Michael Meeropol ( born Michael Rosenberg on March 10 , 1943 ) 
+			N-ARG-A2		13-17	a retired professor of economics 
+	13	a
+	14	retired
+			sense:	retired.s.01
+	15	professor
+			name:	TITLE				15-15	professor 
+			sense:	professor.n.01
+	16	of
+	17	economics
+			sense:	economics.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is the older son of Julius and Ethel Rosenberg .
+
+
+Treebanked sentence:
+--------------------
+He is the older son of Julius and Ethel Rosenberg . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJR older) (NN son))
+        (PP (IN of)
+          (NP
+            (NP (NNP Julius))
+            (CC and)
+            (NP (NNP Ethel) (NNP Rosenberg))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-9	the older son of Julius and Ethel Rosenberg 
+	2	the
+	3	older
+			sense:	old.a.01
+	4	son
+			sense:	son.n.01
+	5	of
+	6	Julius
+			name:	PERSON				6-6	Julius 
+	7	and
+	8	Ethel
+			coref:	IDENT			1	8-9	Ethel Rosenberg 
+			name:	PERSON				8-9	Ethel Rosenberg 
+	9	Rosenberg
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in New York City , as Michael Rosenberg , Meeropol spent his early childhood living in New York and attending local school there .
+
+
+Treebanked sentence:
+--------------------
+Born in New York City , as Michael Rosenberg , Meeropol spent his early childhood living in New York and attending local school there . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP
+            (NML (NNP New) (NNP York))
+            (NNP City)))
+        (, ,)
+        (PP (IN as)
+          (NP (NNP Michael) (NNP Rosenberg)))))
+    (, ,)
+    (NP (NNP Meeropol))
+    (VP (VBD spent)
+      (NP (PRP$ his) (JJ early) (NN childhood))
+      (S
+        (VP
+          (VP (VBG living)
+            (PP (IN in)
+              (NP (NNP New) (NNP York))))
+          (CC and)
+          (VP (VBG attending)
+            (NP (JJ local) (NN school))
+            (ADVP (RB there))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-4	in New York City 
+			N-ARGM-PRD		6-8	as Michael Rosenberg 
+			N-ARG-A1		10-10	Meeropol 
+	1	in
+	2	New
+			name:	CITY				2-4	New York City 
+	3	York
+	4	City
+	5	,
+	6	as
+	7	Michael
+			coref:	IDENT			2	7-8	Michael Rosenberg 
+			name:	PERSON				7-8	Michael Rosenberg 
+	8	Rosenberg
+	9	,
+	10	Meeropol
+			coref:	IDENT			0	10-10	Meeropol 
+			name:	PERSON				10-10	Meeropol 
+	11	spent
+			sense:	spend.v.01
+			prop:	spend.02
+			V		11-11	spent 
+			R-ARG-A0		0-8	Born in New York City , as Michael Rosenberg 
+			N-ARG-A0		10-10	Meeropol 
+			N-ARG-A1		12-14	his early childhood 
+			N-ARG-A2		15-23	living in New York and attending local school there 
+	12	his
+			coref:	IDENT			0	12-12	his 
+	13	early
+			sense:	early.a.01
+	14	childhood
+			sense:	childhood.n.01
+	15	living
+			sense:	populate.v.01
+			prop:	live.01
+			V		15-15	living 
+			N-ARG-A0		10-10	Meeropol 
+			N-ARGM-LOC		16-18	in New York 
+	16	in
+	17	New
+			name:	STATE_OR_PROVINCE				17-18	New York 
+	18	York
+	19	and
+	20	attending
+			sense:	attend.v.01
+			prop:	attend.01
+			V		20-20	attending 
+			R-ARG-A0		0-8	Born in New York City , as Michael Rosenberg 
+			N-ARG-A0		10-10	Meeropol 
+			N-ARG-A1		21-22	local school 
+			N-ARGM-LOC		23-23	there 
+	21	local
+			sense:	local.a.01
+	22	school
+			sense:	school.n.01
+	23	there
+			sense:	there.r.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His father Julius , an electrical engineer , and mother Ethel ( née Greenglass ) , a union organizer , were members of the Communist Party .
+
+
+Treebanked sentence:
+--------------------
+His father Julius , an electrical engineer , and mother Ethel ( née Greenglass ) , a union organizer , were members of the Communist Party . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP
+          (NP (PRP$ His) (NN father) (NNP Julius))
+          (, ,)
+          (NP (DT an) (JJ electrical) (NN engineer))
+          (, ,)
+          (CC and)
+          (NP (NN mother) (NNP Ethel)))
+        (-LRB- -LRB-)
+        (NP (NNP née) (NNP Greenglass))
+        (-RRB- -RRB-))
+      (, ,)
+      (NP (DT a) (NN union) (NN organizer))
+      (, ,))
+    (VP (VBD were)
+      (NP
+        (NP (NNS members))
+        (PP (IN of)
+          (NP (DT the) (NNP Communist) (NNP Party)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-0	His 
+	1	father
+			sense:	father.n.01
+	2	Julius
+			name:	PERSON				2-2	Julius 
+	3	,
+	4	an
+	5	electrical
+			name:	TITLE				5-6	electrical engineer 
+			sense:	electrical.a.01
+	6	engineer
+			sense:	engineer.n.01
+	7	,
+	8	and
+			coref:	IDENT			1	8-10	and mother Ethel 
+	9	mother
+			sense:	mother.n.01
+	10	Ethel
+			name:	PERSON				10-10	Ethel 
+	11	(
+	12	née
+	13	Greenglass
+			name:	PERSON				13-13	Greenglass 
+	14	)
+	15	,
+	16	a
+	17	union
+			sense:	union.n.01
+	18	organizer
+			name:	TITLE				18-18	organizer 
+			sense:	organizer.n.02
+	19	,
+	20	were
+			sense:	be.v.01
+			prop:	be.01
+			V		20-20	were 
+			N-ARG-A1		0-19	His father Julius , an electrical engineer , and mother Ethel ( née Greenglass ) , a union organizer , 
+			N-ARG-A2		21-25	members of the Communist Party 
+	21	members
+			sense:	member.n.01
+	22	of
+	23	the
+	24	Communist
+			name:	ORGANIZATION				24-25	Communist Party 
+	25	Party
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+When Michael was seven years old , his parents were arrested .
+
+
+Treebanked sentence:
+--------------------
+When Michael was seven years old , his parents were arrested . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (NNP Michael))
+        (VP (VBD was)
+          (ADJP
+            (NP (CD seven) (NNS years))
+            (JJ old)))))
+    (, ,)
+    (NP (PRP$ his) (NNS parents))
+    (VP (VBD were)
+      (VP (VBN arrested)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	When
+	1	Michael
+			coref:	IDENT			0	1-1	Michael 
+			name:	PERSON				1-1	Michael 
+	2	was
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	was 
+			N-ARGM-TMP		0-0	When 
+			N-ARG-A1		1-1	Michael 
+			N-ARG-A2		3-5	seven years old 
+	3	seven
+			name:	DURATION				3-5	seven years old 
+	4	years
+			sense:	year.n.01
+	5	old
+			sense:	old.a.01
+	6	,
+	7	his
+			coref:	IDENT			0	7-7	his 
+	8	parents
+			sense:	parent.n.01
+	9	were
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	were 
+	10	arrested
+			sense:	collar.v.01
+			prop:	arrest.01
+			V		10-10	arrested 
+			N-ARGM-TMP		0-5	When Michael was seven years old 
+			N-ARG-A1		7-8	his parents 
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1951 , they were convicted and sentenced to death for conspiracy to commit espionage and related to the passing atomic secrets to the Soviet Union .
+
+
+Treebanked sentence:
+--------------------
+In 1951 , they were convicted and sentenced to death for conspiracy to commit espionage and related to the passing atomic secrets to the Soviet Union . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1951)))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBD were)
+      (VP
+        (VP (VBN convicted)
+          (CC and)
+          (VBN sentenced)
+          (PP (IN to)
+            (NP (NN death)))
+          (PP (IN for)
+            (NP (NN conspiracy)))
+          (S
+            (VP (TO to)
+              (VP (VB commit)
+                (NP (NN espionage))))))
+        (CC and)
+        (VP (VBN related)
+          (PP (IN to)
+            (NP
+              (NP (DT the) (VBG passing) (JJ atomic) (NNS secrets))
+              (PP (IN to)
+                (NP (DT the) (NNP Soviet) (NNP Union))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1951
+			name:	DATE				1-1	1951 
+	2	,
+	3	they
+	4	were
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	were 
+	5	convicted
+			sense:	convict.v.01
+			prop:	convict.01
+			V		5-5	convicted 
+			N-ARGM-TMP		0-1	In 1951 
+			N-ARG-A1		3-3	they 
+			N-ARG-A2		10-25	for conspiracy to commit espionage and related to the passing atomic secrets to the Soviet Union 
+	6	and
+	7	sentenced
+			sense:	sentence.v.01
+			prop:	sentence.01
+			V		7-7	sentenced 
+			N-ARGM-TMP		0-1	In 1951 
+			N-ARG-A1		3-3	they 
+			N-ARG-A2		8-9	to death 
+			N-ARG-A3		10-25	for conspiracy to commit espionage and related to the passing atomic secrets to the Soviet Union 
+	8	to
+	9	death
+			sense:	death.n.02
+	10	for
+	11	conspiracy
+			name:	CRIMINAL_CHARGE				11-14	conspiracy to commit espionage 
+			sense:	conspiracy.n.01
+	12	to
+	13	commit
+			sense:	perpetrate.v.01
+			prop:	commit.02
+			V		13-13	commit 
+			N-ARG-A0		3-3	they 
+			N-ARG-A1		14-14	espionage 
+	14	espionage
+			sense:	espionage.n.01
+	15	and
+	16	related
+			sense:	refer.v.02
+			prop:	relate.01
+			V		16-16	related 
+			N-ARG-A2		17-25	to the passing atomic secrets to the Soviet Union 
+	17	to
+	18	the
+	19	passing
+			sense:	communicate.v.01
+			prop:	pass.05
+			V		19-19	passing 
+			N-ARG-A1		20-21	atomic secrets 
+			N-ARG-A2		22-25	to the Soviet Union 
+	20	atomic
+			sense:	atomic.a.01
+	21	secrets
+			sense:	secret.n.02
+	22	to
+	23	the
+	24	Soviet
+			name:	LOCATION				24-24	Soviet 
+	25	Union
+			name:	CITY				25-25	Union 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After two years during which they both maintained their innocence and a world wide campaign for executive clemency raged , they were executed in June of 1953 .
+
+
+Treebanked sentence:
+--------------------
+After two years during which they both maintained their innocence and a world wide campaign for executive clemency raged , they were executed in June of 1953 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP
+        (NP (CD two) (NNS years))
+        (SBAR
+          (WHPP (IN during)
+            (WHNP (WDT which)))
+          (S
+            (NP (PRP they))
+            (DT both)
+            (VP (VBD maintained)
+              (SBAR
+                (S
+                  (NP
+                    (NP (PRP$ their) (NN innocence))
+                    (CC and)
+                    (NP
+                      (NP (DT a)
+                        (ADJP (NN world) (JJ wide))
+                        (NN campaign))
+                      (PP (IN for)
+                        (NP (JJ executive) (NN clemency)))))
+                  (VP (VBD raged)))))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBD were)
+      (VP (VBN executed)
+        (PP (IN in)
+          (NP
+            (NP (NNP June))
+            (PP (IN of)
+              (NP (CD 1953)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	two
+			name:	DURATION				1-2	two years 
+	2	years
+			sense:	year.n.01
+	3	during
+	4	which
+	5	they
+	6	both
+	7	maintained
+			sense:	assert.v.01
+			prop:	maintain.01
+			V		7-7	maintained 
+			N-ARGM-TMP		1-2	two years 
+			R-ARGM-TMP		3-4	during which 
+			N-ARG-A0		5-6	they both 
+			N-ARG-A1		8-9	their innocence 
+	8	their
+	9	innocence
+			sense:	innocence.n.03
+	10	and
+	11	a
+	12	world
+			sense:	earth.n.01
+	13	wide
+			sense:	across-the-board.s.01
+	14	campaign
+			sense:	campaign.n.02
+	15	for
+	16	executive
+			name:	TITLE				16-16	executive 
+			sense:	executive.a.01
+	17	clemency
+			sense:	clemency.n.02
+	18	raged
+			sense:	rage.v.02
+			prop:	rage.02
+			V		18-18	raged 
+			N-ARG-A0		11-17	a world wide campaign for executive clemency 
+	19	,
+	20	they
+	21	were
+			sense:	be.v.01
+			prop:	be.03
+			V		21-21	were 
+	22	executed
+			sense:	execute.v.01
+			prop:	execute.01
+			V		22-22	executed 
+			N-ARGM-TMP		0-18	After two years during which they both maintained their innocence and a world wide campaign for executive clemency raged 
+			N-ARG-A1		20-20	they 
+			N-ARGM-TMP		23-26	in June of 1953 
+	23	in
+	24	June
+			name:	DATE				24-26	June of 1953 
+	25	of
+	26	1953
+	27	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Michael Meeropol 
+				1.0-0	He 
+				2.10-10	Meeropol 
+				2.12-12	his 
+				3.0-0	His 
+				4.1-1	Michael 
+				4.7-7	his 
+	Chain 1 (IDENT)
+				3.8-10	and mother Ethel 
+				1.8-9	Ethel Rosenberg 
+	Chain 2 (IDENT)
+				0.4-5	Michael Rosenberg 
+				2.7-8	Michael Rosenberg 
+

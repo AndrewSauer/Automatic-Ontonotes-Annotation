@@ -1,0 +1,647 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Field Marshals ' Hall of the Winter Palace in Saint Petersburg was built to honor Imperial Russia 's greatest military leaders — Russian generals who attained the rank of Field Marshal .
+
+
+Treebanked sentence:
+--------------------
+The Field Marshals ' Hall of the Winter Palace in Saint Petersburg was built to honor Imperial Russia 's greatest military leaders — Russian generals who attained the rank of Field Marshal . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT The) (NNP Field) (NNPS Marshals) (POS '))
+        (NNP Hall))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NNP Winter) (NNP Palace))
+          (PP (IN in)
+            (NP (NNP Saint) (NNP Petersburg))))))
+    (VP (VBD was)
+      (VP (VBN built)
+        (S
+          (VP (TO to)
+            (VP (VB honor)
+              (NP
+                (NP
+                  (NP
+                    (NP (NNP Imperial) (NNP Russia) (POS 's))
+                    (JJS greatest))
+                  (NP (JJ military) (NNS leaders)))
+                (: —)
+                (NP
+                  (NP (JJ Russian) (NNS generals))
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBD attained)
+                        (NP
+                          (NP (DT the) (NN rank))
+                          (PP (IN of)
+                            (NP (NNP Field) (NNP Marshal))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-11	The Field Marshals ' Hall of the Winter Palace in Saint Petersburg 
+	1	Field
+	2	Marshals
+	3	'
+	4	Hall
+	5	of
+	6	the
+	7	Winter
+			name:	DATE				7-7	Winter 
+	8	Palace
+	9	in
+	10	Saint
+			name:	CITY				10-11	Saint Petersburg 
+	11	Petersburg
+	12	was
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	was 
+	13	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		13-13	built 
+			N-ARG-A1		0-11	The Field Marshals ' Hall of the Winter Palace in Saint Petersburg 
+			N-ARGM-PRP		14-31	to honor Imperial Russia 's greatest military leaders — Russian generals who attained the rank of Field Marshal 
+	14	to
+	15	honor
+			sense:	honor.v.01
+			prop:	honor.01
+			V		15-15	honor 
+			N-ARG-A0		0-11	The Field Marshals ' Hall of the Winter Palace in Saint Petersburg 
+			N-ARG-A1		16-31	Imperial Russia 's greatest military leaders — Russian generals who attained the rank of Field Marshal 
+	16	Imperial
+	17	Russia
+			name:	COUNTRY				17-17	Russia 
+	18	's
+	19	greatest
+			sense:	great.s.02
+	20	military
+			sense:	military.a.02
+	21	leaders
+			sense:	leader.n.01
+	22	—
+	23	Russian
+			name:	NATIONALITY				23-23	Russian 
+	24	generals
+			sense:	general.n.01
+	25	who
+	26	attained
+			sense:	achieve.v.01
+			prop:	attain.01
+			V		26-26	attained 
+			N-ARG-A0		23-24	Russian generals 
+			R-ARG-A0		25-25	who 
+			N-ARG-A1		27-31	the rank of Field Marshal 
+	27	the
+			coref:	IDENT			3	27-31	the rank of Field Marshal 
+	28	rank
+			sense:	rank_and_file.n.01
+	29	of
+	30	Field
+	31	Marshal
+			name:	TITLE				31-31	Marshal 
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+( The only higher rank was that of Generalissimo , attained by four generals and , in the Soviet period , bestowed on Joseph Stalin ) .
+
+
+Treebanked sentence:
+--------------------
+( The only higher rank was that of Generalissimo , attained by four generals and , in the Soviet period , bestowed on Joseph Stalin ) . 
+
+Tree:
+-----
+(ROOT
+  (S (-LRB- -LRB-)
+    (NP (DT The)
+      (ADJP (RB only) (JJR higher))
+      (NN rank))
+    (VP (VBD was)
+      (SBAR (IN that) (IN of)
+        (S
+          (NP
+            (NP (NNP Generalissimo))
+            (, ,)
+            (VP (VBN attained)
+              (PP
+                (PP (IN by)
+                  (NP (CD four) (NNS generals)))
+                (CC and)
+                (, ,)
+                (PP (IN in)
+                  (NP (DT the) (JJ Soviet) (NN period)))))
+            (, ,))
+          (VP (VBN bestowed)
+            (PP (IN on)
+              (NP (NNP Joseph) (NNP Stalin)))))))
+    (-RRB- -RRB-) (. .)))
+
+
+Leaves:
+-------
+	0	(
+	1	The
+			coref:	IDENT			3	1-4	The only higher rank 
+	2	only
+			sense:	entirely.r.02
+	3	higher
+			sense:	eminent.s.01
+	4	rank
+			sense:	rank_and_file.n.01
+	5	was
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	was 
+			N-ARG-A1		1-4	The only higher rank 
+			N-ARG-A2		6-24	that of Generalissimo , attained by four generals and , in the Soviet period , bestowed on Joseph Stalin 
+	6	that
+	7	of
+	8	Generalissimo
+			name:	PERSON				8-8	Generalissimo 
+	9	,
+	10	attained
+			sense:	achieve.v.01
+			prop:	attain.01
+			V		10-10	attained 
+			N-ARG-A1		6-8	that of Generalissimo 
+			N-ARG-A0		11-13	by four generals 
+	11	by
+	12	four
+			name:	NUMBER				12-12	four 
+	13	generals
+			sense:	general.n.01
+	14	and
+	15	,
+	16	in
+	17	the
+	18	Soviet
+			name:	MISC				18-18	Soviet 
+			sense:	soviet.a.01
+	19	period
+			sense:	time_period.n.01
+	20	,
+	21	bestowed
+			sense:	bestow.v.02
+			prop:	bestow.01
+			V		21-21	bestowed 
+			N-ARG-A1		8-8	Generalissimo 
+			N-ARGM-TMP		16-19	in the Soviet period 
+			N-ARG-A2		22-24	on Joseph Stalin 
+	22	on
+	23	Joseph
+			name:	PERSON				23-24	Joseph Stalin 
+	24	Stalin
+	25	)
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+This great hall and the adjacent throne room are part of the suite of rooms that were created in the western part of the Winter Palace for Tsar Nicholas I in 1833 by architect Auguste de Montferrand .
+
+
+Treebanked sentence:
+--------------------
+This great hall and the adjacent throne room are part of the suite of rooms that were created in the western part of the Winter Palace for Tsar Nicholas I in 1833 by architect Auguste de Montferrand . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT This) (JJ great) (NN hall))
+      (CC and)
+      (NP (DT the) (JJ adjacent) (NN throne) (NN room)))
+    (VP (VBP are)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN suite))
+            (PP (IN of)
+              (NP
+                (NP (NNS rooms))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBD were)
+                      (VP (VBN created)
+                        (PP (IN in)
+                          (NP
+                            (NP (DT the) (JJ western) (NN part))
+                            (PP (IN of)
+                              (NP
+                                (NP (DT the) (NNP Winter) (NNP Palace))
+                                (PP (IN for)
+                                  (NP (NNP Tsar) (NNP Nicholas) (PRP I)))))))
+                        (PP (IN in)
+                          (NP (CD 1833)))
+                        (PP (IN by)
+                          (NP (NN architect) (NNP Auguste) (NNP de) (NNP Montferrand)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	This
+	1	great
+			sense:	great.s.01
+	2	hall
+			sense:	manor_hall.n.01
+	3	and
+			coref:	IDENT			0	3-7	and the adjacent throne room 
+	4	the
+	5	adjacent
+			sense:	adjacent.s.02
+	6	throne
+			sense:	throne.n.01
+	7	room
+			sense:	room.n.01
+	8	are
+			sense:	constitute.v.01
+			prop:	be.01
+			V		8-8	are 
+			N-ARG-A1		0-7	This great hall and the adjacent throne room 
+			N-ARG-A2		9-36	part of the suite of rooms that were created in the western part of the Winter Palace for Tsar Nicholas I in 1833 by architect Auguste de Montferrand 
+	9	part
+			sense:	part.n.01
+	10	of
+	11	the
+	12	suite
+			sense:	suite.n.02
+	13	of
+	14	rooms
+			sense:	room.n.01
+	15	that
+	16	were
+			sense:	be.v.01
+			prop:	be.03
+			V		16-16	were 
+	17	created
+			sense:	create.v.02
+			prop:	create.01
+			V		17-17	created 
+			N-ARG-A1		11-14	the suite of rooms 
+			R-ARG-A1		15-15	that 
+			N-ARGM-LOC		18-25	in the western part of the Winter Palace 
+			N-ARG-A3		26-29	for Tsar Nicholas I 
+			N-ARGM-TMP		30-31	in 1833 
+			N-ARG-A0		32-36	by architect Auguste de Montferrand 
+	18	in
+	19	the
+	20	western
+			sense:	western.s.03
+	21	part
+			sense:	part.n.02
+	22	of
+	23	the
+	24	Winter
+			name:	DATE				24-24	Winter 
+	25	Palace
+	26	for
+	27	Tsar
+	28	Nicholas
+			name:	PERSON				28-28	Nicholas 
+	29	I
+	30	in
+	31	1833
+			name:	DATE				31-31	1833 
+	32	by
+	33	architect
+			name:	TITLE				33-33	architect 
+			sense:	architect.n.01
+	34	Auguste
+			name:	PERSON				34-36	Auguste de Montferrand 
+	35	de
+	36	Montferrand
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The great fire , which destroyed the interior of the Winter Palace , began in this hall on 17 December 1837 .
+
+
+Treebanked sentence:
+--------------------
+The great fire , which destroyed the interior of the Winter Palace , began in this hall on 17 December 1837 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ great) (NN fire))
+      (, ,)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBD destroyed)
+            (NP
+              (NP (DT the) (NN interior))
+              (PP (IN of)
+                (NP (DT the) (NNP Winter) (NNP Palace)))))))
+      (, ,))
+    (VP (VBD began)
+      (PP (IN in)
+        (NP
+          (NP (DT this) (NN hall))
+          (PP (IN on)
+            (NP (CD 17)))))
+      (NP-TMP (NNP December) (CD 1837)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-11	The great fire , which destroyed the interior of the Winter Palace 
+	1	great
+			sense:	great.s.01
+	2	fire
+			name:	CAUSE_OF_DEATH				2-2	fire 
+			sense:	fire.n.01
+	3	,
+	4	which
+	5	destroyed
+			sense:	destroy.v.02
+			prop:	destroy.01
+			V		5-5	destroyed 
+			N-ARG-A0		0-2	The great fire 
+			R-ARG-A0		4-4	which 
+			N-ARG-A1		6-11	the interior of the Winter Palace 
+	6	the
+	7	interior
+			sense:	inside.n.01
+	8	of
+	9	the
+	10	Winter
+			name:	DATE				10-10	Winter 
+	11	Palace
+	12	,
+	13	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		13-13	began 
+			N-ARG-A1		0-11	The great fire , which destroyed the interior of the Winter Palace 
+			N-ARGM-LOC		14-16	in this hall 
+			N-ARGM-TMP		17-20	on 17 December 1837 
+	14	in
+	15	this
+	16	hall
+			sense:	manor_hall.n.01
+	17	on
+	18	17
+			name:	DATE				18-20	17 December 1837 
+	19	December
+	20	1837
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It destroyed all in its path for over thirty hours .
+
+
+Treebanked sentence:
+--------------------
+It destroyed all in its path for over thirty hours . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD destroyed)
+      (NP (DT all))
+      (PP (IN in)
+        (NP (PRP$ its) (NN path)))
+      (PP (IN for)
+        (NP
+          (QP (IN over) (CD thirty))
+          (NNS hours))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	destroyed
+			sense:	destroy.v.02
+			prop:	destroy.01
+			V		1-1	destroyed 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-5	all in its path 
+			N-ARGM-TMP		6-9	for over thirty hours 
+	2	all
+	3	in
+	4	its
+			coref:	IDENT			2	4-4	its 
+	5	path
+			sense:	path.n.04
+	6	for
+	7	over
+	8	thirty
+			name:	DURATION				8-9	thirty hours 
+	9	hours
+			sense:	hour.n.01
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Following the fire , the hall was rebuilt in its original style by the architect Vasily Stasov .
+
+
+Treebanked sentence:
+--------------------
+Following the fire , the hall was rebuilt in its original style by the architect Vasily Stasov . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (VBG Following)
+      (NP (DT the) (NN fire)))
+    (, ,)
+    (NP (DT the) (NN hall))
+    (VP (VBD was)
+      (VP (VBN rebuilt)
+        (PP (IN in)
+          (NP (PRP$ its) (JJ original) (NN style)))
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NN architect))
+            (NP (NNP Vasily) (NNP Stasov))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		0-0	Following 
+			N-ARG-A2		1-2	the fire 
+	1	the
+	2	fire
+			name:	CAUSE_OF_DEATH				2-2	fire 
+			sense:	fire.n.01
+	3	,
+	4	the
+			coref:	IDENT			1	4-5	the hall 
+	5	hall
+			sense:	hall.n.03
+	6	was
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	was 
+	7	rebuilt
+			sense:	rebuild.v.01
+			prop:	rebuild.01
+			V		7-7	rebuilt 
+			N-ARGM-TMP		0-2	Following the fire 
+			N-ARG-A1		4-5	the hall 
+			N-ARGM-MNR		8-11	in its original style 
+			N-ARG-A0		12-16	by the architect Vasily Stasov 
+	8	in
+	9	its
+			coref:	IDENT			2	9-9	its 
+	10	original
+			sense:	original.s.01
+	11	style
+			sense:	manner.n.01
+	12	by
+	13	the
+	14	architect
+			name:	TITLE				14-14	architect 
+			sense:	architect.n.01
+	15	Vasily
+			name:	PERSON				15-16	Vasily Stasov 
+	16	Stasov
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Today , as part of the State Hermitage Museum , this room retains its recreated decoration by Stasov .
+
+
+Treebanked sentence:
+--------------------
+Today , as part of the State Hermitage Museum , this room retains its recreated decoration by Stasov . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP-TMP (NN Today))
+    (, ,)
+    (PP (IN as)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP (DT the) (NNP State) (NNP Hermitage) (NNP Museum)))))
+    (, ,)
+    (NP (DT this) (NN room))
+    (VP (VBZ retains)
+      (NP (PRP$ its) (VBN recreated) (NN decoration))
+      (PP (IN by)
+        (NP (NNP Stasov))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Today
+			name:	DATE				0-0	Today 
+			sense:	today.n.01
+	1	,
+	2	as
+	3	part
+			sense:	part.n.01
+	4	of
+	5	the
+	6	State
+			name:	LOCATION				6-6	State 
+	7	Hermitage
+			name:	CITY				7-7	Hermitage 
+	8	Museum
+			name:	LOCATION				8-8	Museum 
+	9	,
+	10	this
+			coref:	IDENT			0	10-11	this room 
+	11	room
+			sense:	room.n.01
+	12	retains
+			sense:	retain.v.02
+			prop:	retain.01
+			V		12-12	retains 
+			N-ARGM-TMP		0-0	Today 
+			N-ARGM-PRD		2-8	as part of the State Hermitage Museum 
+			N-ARG-A0		10-11	this room 
+			N-ARG-A1		13-17	its recreated decoration by Stasov 
+	13	its
+			coref:	IDENT			0	13-13	its 
+	14	recreated
+			sense:	recreate.v.04
+			prop:	recreate.01
+			V		14-14	recreated 
+			N-ARG-A1		15-15	decoration 
+			N-ARG-A0		16-17	by Stasov 
+	15	decoration
+			sense:	decoration.n.01
+	16	by
+	17	Stasov
+			name:	PERSON				17-17	Stasov 
+	18	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.3-7	and the adjacent throne room 
+				6.10-11	this room 
+				6.13-13	its 
+	Chain 1 (IDENT)
+				0.0-11	The Field Marshals ' Hall of the Winter Palace in Saint Petersburg 
+				5.4-5	the hall 
+	Chain 2 (IDENT)
+				3.0-11	The great fire , which destroyed the interior of the Winter Palace 
+				4.0-0	It 
+				4.4-4	its 
+				5.9-9	its 
+	Chain 3 (IDENT)
+				1.1-4	The only higher rank 
+				0.27-31	the rank of Field Marshal 
+

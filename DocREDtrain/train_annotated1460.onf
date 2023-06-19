@@ -1,0 +1,999 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+EasyJet Airline Company Limited , styled as easyJet , is a British low - cost carrier airline headquartered at London Luton Airport .
+
+
+Treebanked sentence:
+--------------------
+EasyJet Airline Company Limited , styled as easyJet , is a British low - cost carrier airline headquartered at London Luton Airport . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP EasyJet) (NNP Airline) (NNP Company) (NNP Limited))
+      (, ,)
+      (VP (VBN styled)
+        (PP (IN as)
+          (NP (NNP easyJet))))
+      (, ,))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ British)
+          (NML (JJ low) (HYPH -) (NN cost))
+          (NN carrier) (NN airline))
+        (VP (VBN headquartered)
+          (PP (IN at)
+            (NP (NNP London) (NNP Luton) (NNP Airport))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	EasyJet
+			name:	ORGANIZATION				0-3	EasyJet Airline Company Limited 
+	1	Airline
+	2	Company
+	3	Limited
+	4	,
+	5	styled
+			sense:	style.v.01
+			prop:	style.01
+			V		5-5	styled 
+			N-ARG-A1		0-3	EasyJet Airline Company Limited 
+			N-ARG-A2		6-7	as easyJet 
+	6	as
+	7	easyJet
+			coref:	IDENT			2	7-7	easyJet 
+	8	,
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	EasyJet Airline Company Limited , styled as easyJet , 
+			N-ARG-A2		10-21	a British low - cost carrier airline headquartered at London Luton Airport 
+	10	a
+			coref:	IDENT			1	10-21	a British low - cost carrier airline headquartered at London Luton Airport 
+	11	British
+			name:	NATIONALITY				11-11	British 
+	12	low
+			sense:	low.a.01
+	13	-
+	14	cost
+			sense:	cost.n.01
+	15	carrier
+			sense:	carrier.n.05
+	16	airline
+			sense:	airline.n.02
+	17	headquartered
+			sense:	headquarter.v.01
+			prop:	headquarter.01
+			V		17-17	headquartered 
+			N-ARG-A1		10-16	a British low - cost carrier airline 
+			N-ARGM-LOC		18-21	at London Luton Airport 
+	18	at
+	19	London
+			name:	CITY				19-20	London Luton 
+	20	Luton
+	21	Airport
+			name:	LOCATION				21-21	Airport 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It operates domestic and international scheduled services on over 820 routes in more than 30 countries .
+
+
+Treebanked sentence:
+--------------------
+It operates domestic and international scheduled services on over 820 routes in more than 30 countries . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ operates)
+      (NP
+        (NP
+          (ADJP (JJ domestic)
+            (CC and)
+            (JJ international))
+          (VBN scheduled) (NNS services))
+        (PP (IN on)
+          (NP
+            (NP
+              (QP (IN over) (CD 820))
+              (NNS routes))
+            (PP (IN in)
+              (NP
+                (QP (JJR more) (IN than) (CD 30))
+                (NNS countries)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	operates
+			sense:	operate.v.01
+			prop:	operate.01
+			V		1-1	operates 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-6	domestic and international scheduled services 
+			N-ARGM-LOC		7-10	on over 820 routes 
+			N-ARGM-LOC		11-15	in more than 30 countries 
+	2	domestic
+			sense:	domestic.a.01
+	3	and
+	4	international
+			sense:	external.s.03
+	5	scheduled
+			sense:	schedule.v.02
+			prop:	schedule.01
+			V		5-5	scheduled 
+			N-ARG-A1		6-6	services 
+	6	services
+			sense:	service.n.01
+	7	on
+	8	over
+	9	820
+			name:	NUMBER				9-9	820 
+	10	routes
+			sense:	path.n.03
+	11	in
+	12	more
+			sense:	more.a.02
+	13	than
+	14	30
+			name:	NUMBER				14-14	30 
+	15	countries
+			sense:	country.n.02
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+easyJet plc is listed on the London Stock Exchange and is a constituent of the FTSE 100 Index .
+
+
+Treebanked sentence:
+--------------------
+easyJet plc is listed on the London Stock Exchange and is a constituent of the FTSE 100 Index . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP easyJet) (NNP plc))
+    (VP
+      (VP (VBZ is)
+        (VP (VBN listed)
+          (PP (IN on)
+            (NP (DT the) (NNP London) (NNP Stock) (NNP Exchange)))))
+      (CC and)
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (NN constituent))
+          (PP (IN of)
+            (NP (DT the)
+              (NML (NNP FTSE) (CD 100))
+              (NNP Index))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	easyJet
+	1	plc
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	listed
+			sense:	list.v.02
+			prop:	list.01
+			V		3-3	listed 
+			N-ARG-A1		0-1	easyJet plc 
+			N-ARG-A2		4-8	on the London Stock Exchange 
+	4	on
+	5	the
+	6	London
+			name:	ORGANIZATION				6-8	London Stock Exchange 
+	7	Stock
+	8	Exchange
+	9	and
+	10	is
+			sense:	be.v.01
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-1	easyJet plc 
+			N-ARG-A2		11-17	a constituent of the FTSE 100 Index 
+	11	a
+	12	constituent
+			sense:	component.n.03
+	13	of
+	14	the
+	15	FTSE
+			name:	MISC				15-15	FTSE 
+	16	100
+			name:	NUMBER				16-16	100 
+	17	Index
+			name:	MISC				17-17	Index 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+easyGroup Holdings Ltd ( the investment vehicle of the airline 's founder Stelios Haji - Ioannou and his family ) is the largest shareholder with a 34.62 % stake ( as of July 2014 ) .
+
+
+Treebanked sentence:
+--------------------
+easyGroup Holdings Ltd ( the investment vehicle of the airline 's founder Stelios Haji - Ioannou and his family ) is the largest shareholder with a 34.62 % stake ( as of July 2014 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP easyGroup) (NNPS Holdings) (NNP Ltd))
+      (-LRB- -LRB-)
+      (NP
+        (NP (DT the) (NN investment) (NN vehicle))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (DT the) (NN airline) (POS 's))
+              (NN founder))
+            (NP
+              (NP (NNP Stelios) (NNP Haji) (HYPH -) (NNP Ioannou))
+              (CC and)
+              (NP (PRP$ his) (NN family))))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJS largest) (NN shareholder))
+        (PP (IN with)
+          (NP (DT a)
+            (NML (CD 34.62) (NN %))
+            (NN stake)
+            (PRN (-LRB- -LRB-)
+              (SBAR (IN as)
+                (FRAG
+                  (PP (IN of)
+                    (NP (NNP July) (CD 2014)))))
+              (-RRB- -RRB-))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	easyGroup
+			name:	ORGANIZATION				0-2	easyGroup Holdings Ltd 
+	1	Holdings
+	2	Ltd
+	3	(
+	4	the
+	5	investment
+			sense:	investment.n.02
+	6	vehicle
+			sense:	vehicle.n.02
+	7	of
+	8	the
+			coref:	IDENT			1	8-10	the airline 's 
+	9	airline
+			sense:	airline.n.02
+	10	's
+	11	founder
+			name:	TITLE				11-11	founder 
+			sense:	founder.n.02
+	12	Stelios
+			name:	PERSON				12-15	Stelios Haji - Ioannou 
+	13	Haji
+	14	-
+	15	Ioannou
+	16	and
+	17	his
+	18	family
+			sense:	family.n.01
+	19	)
+	20	is
+			sense:	be.v.01
+			prop:	be.01
+			V		20-20	is 
+			N-ARG-A1		0-19	easyGroup Holdings Ltd ( the investment vehicle of the airline 's founder Stelios Haji - Ioannou and his family ) 
+			N-ARG-A2		21-28	the largest shareholder with a 34.62 % stake 
+			N-ARGM-TMP		30-33	as of July 2014 
+	21	the
+	22	largest
+			sense:	large.a.01
+	23	shareholder
+			sense:	stockholder.n.01
+	24	with
+	25	a
+	26	34.62
+			name:	PERCENT				26-27	34.62 % 
+	27	%
+	28	stake
+			sense:	interest.n.05
+	29	(
+	30	as
+	31	of
+	32	July
+			name:	DATE				32-33	July 2014 
+	33	2014
+	34	)
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It employs nearly 11,000 people , based throughout Europe but mainly in the UK .
+
+
+Treebanked sentence:
+--------------------
+It employs nearly 11,000 people , based throughout Europe but mainly in the UK . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ employs)
+      (NP
+        (NP
+          (QP (RB nearly) (CD 11,000))
+          (NNS people))
+        (, ,)
+        (VP (VBN based)
+          (PP
+            (PP (IN throughout)
+              (NP (NNP Europe)))
+            (CC but)
+            (ADVP (RB mainly))
+            (PP (IN in)
+              (NP (DT the) (NNP UK)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	employs
+			sense:	hire.v.01
+			prop:	employ.01
+			V		1-1	employs 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-4	nearly 11,000 people 
+	2	nearly
+			sense:	about.r.07
+	3	11,000
+			name:	NUMBER				3-3	11,000 
+	4	people
+			sense:	person.n.01
+	5	,
+	6	based
+			sense:	base.v.02
+			prop:	base.01
+			V		6-6	based 
+			N-ARGM-LOC		7-13	throughout Europe but mainly in the UK 
+	7	throughout
+	8	Europe
+			coref:	IDENT			0	8-8	Europe 
+			name:	LOCATION				8-8	Europe 
+	9	but
+	10	mainly
+			sense:	chiefly.r.01
+	11	in
+	12	the
+	13	UK
+			name:	COUNTRY				13-13	UK 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+EasyJet has seen expansion since its establishment in 1995 , having grown through a combination of acquisitions and base openings fuelled by consumer demand for low - cost air travel .
+
+
+Treebanked sentence:
+--------------------
+EasyJet has seen expansion since its establishment in 1995 , having grown through a combination of acquisitions and base openings fuelled by consumer demand for low - cost air travel . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP EasyJet))
+    (VP (VBZ has)
+      (VP (VBN seen)
+        (NP
+          (NP (NN expansion))
+          (PP (IN since)
+            (NP (PRP$ its) (NN establishment))))
+        (PP (IN in)
+          (NP (CD 1995)))
+        (, ,)
+        (S
+          (VP (VBG having)
+            (VP (VBN grown)
+              (PP (IN through)
+                (NP
+                  (NP (DT a) (NN combination))
+                  (PP (IN of)
+                    (NP
+                      (NP
+                        (NML (NNS acquisitions)
+                          (CC and)
+                          (NN base))
+                        (NNS openings))
+                      (VP (VBN fuelled)
+                        (PP (IN by)
+                          (NP
+                            (NP (NN consumer) (NN demand))
+                            (PP (IN for)
+                              (NP
+                                (NML (JJ low) (HYPH -) (NN cost))
+                                (NN air) (NN travel)))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	EasyJet
+			coref:	IDENT			2	0-0	EasyJet 
+			name:	ORGANIZATION				0-0	EasyJet 
+	1	has
+			sense:	have.v.11
+			prop:	have.01
+			V		1-1	has 
+	2	seen
+			sense:	witness.v.02
+			prop:	see.01
+			V		2-2	seen 
+			N-ARG-A0		0-0	EasyJet 
+			N-ARG-A1		3-3	expansion 
+			N-ARGM-TMP		4-8	since its establishment in 1995 
+			N-ARGM-PRD		10-29	having grown through a combination of acquisitions and base openings fuelled by consumer demand for low - cost air travel 
+	3	expansion
+			sense:	expansion.n.01
+	4	since
+	5	its
+			coref:	IDENT			2	5-5	its 
+	6	establishment
+			sense:	constitution.n.02
+	7	in
+	8	1995
+			name:	DATE				8-8	1995 
+	9	,
+	10	having
+			sense:	have.v.01
+			prop:	shaving.01
+			V		10-10	having 
+	11	grown
+			sense:	grow.v.02
+			prop:	grow.01
+			V		11-11	grown 
+			N-ARG-A1		0-0	EasyJet 
+			N-ARGM-MNR		12-29	through a combination of acquisitions and base openings fuelled by consumer demand for low - cost air travel 
+	12	through
+	13	a
+	14	combination
+			sense:	combination.n.01
+	15	of
+	16	acquisitions
+			sense:	acquisition.n.01
+	17	and
+	18	base
+			sense:	infrastructure.n.02
+	19	openings
+			sense:	opening.n.10
+	20	fuelled
+			sense:	fuel.v.04
+			prop:	fuel.01
+			V		20-20	fuelled 
+			N-ARG-A1		16-19	acquisitions and base openings 
+			N-ARG-A2		21-29	by consumer demand for low - cost air travel 
+	21	by
+	22	consumer
+			sense:	consumer.n.01
+	23	demand
+			sense:	demand.n.02
+	24	for
+	25	low
+			sense:	low.a.01
+	26	-
+	27	cost
+			sense:	cost.n.01
+	28	air
+			sense:	air_travel.n.01
+	29	travel
+			sense:	travel.n.01
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The airline , along with associate companies easyJet Europe and easyJet Switzerland , operate more than 200 aircraft , mostly Airbus A320 .
+
+
+Treebanked sentence:
+--------------------
+The airline , along with associate companies easyJet Europe and easyJet Switzerland , operate more than 200 aircraft , mostly Airbus A320 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN airline))
+      (, ,)
+      (NP
+        (ADVP (IN along)
+          (PP (IN with)
+            (NP (JJ associate) (NNS companies))))
+        (NP (NNP easyJet) (NNP Europe))
+        (CC and)
+        (NP (NNP easyJet) (NNP Switzerland)))
+      (, ,))
+    (VP (VBP operate)
+      (NP
+        (NP
+          (QP (JJR more) (IN than) (CD 200))
+          (NN aircraft))
+        (, ,) (RB mostly)
+        (NP (NNP Airbus) (NN A320))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-11	The airline , along with associate companies easyJet Europe and easyJet Switzerland 
+	1	airline
+			sense:	airline.n.02
+	2	,
+	3	along
+	4	with
+	5	associate
+			sense:	associate.s.01
+	6	companies
+			sense:	company.n.01
+	7	easyJet
+	8	Europe
+			name:	LOCATION				8-8	Europe 
+	9	and
+	10	easyJet
+	11	Switzerland
+			name:	COUNTRY				11-11	Switzerland 
+	12	,
+	13	operate
+			sense:	operate.v.03
+			prop:	operate.01
+			V		13-13	operate 
+			N-ARG-A0		0-1	The airline 
+			N-ARG-A1		14-21	more than 200 aircraft , mostly Airbus A320 
+	14	more
+			sense:	more.a.02
+	15	than
+	16	200
+			name:	NUMBER				16-16	200 
+	17	aircraft
+			sense:	aircraft.n.01
+	18	,
+	19	mostly
+			sense:	largely.r.01
+	20	Airbus
+			name:	ORGANIZATION				20-20	Airbus 
+	21	A320
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It has 29 bases across Europe , the largest being Gatwick .
+
+
+Treebanked sentence:
+--------------------
+It has 29 bases across Europe , the largest being Gatwick . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ has)
+      (NP
+        (NP
+          (NP (CD 29) (NNS bases))
+          (PP (IN across)
+            (NP (NNP Europe))))
+        (, ,)
+        (NP
+          (NP (DT the) (JJS largest))
+          (VP (VBG being)
+            (NP (NNP Gatwick))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	has
+			sense:	have.v.01
+			prop:	have.03
+			V		1-1	has 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-3	29 bases 
+			N-ARGM-LOC		4-5	across Europe 
+			N-ARGM-ADV		7-10	the largest being Gatwick 
+	2	29
+			name:	NUMBER				2-2	29 
+	3	bases
+			sense:	basis.n.03
+	4	across
+	5	Europe
+			coref:	IDENT			0	5-5	Europe 
+			name:	LOCATION				5-5	Europe 
+	6	,
+	7	the
+	8	largest
+			sense:	large.a.01
+	9	being
+			sense:	be.v.02
+			prop:	being.01
+			V		9-9	being 
+			N-ARG-A1		7-8	the largest 
+			N-ARG-A2		10-10	Gatwick 
+	10	Gatwick
+			name:	LOCATION				10-10	Gatwick 
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2014 the airline carried more than 65   million passengers , making it the second - largest airline in Europe by number of passengers carried , behind Ryanair .
+
+
+Treebanked sentence:
+--------------------
+In 2014 the airline carried more than 65 million passengers , making it the second - largest airline in Europe by number of passengers carried , behind Ryanair . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2014)))
+    (NP (DT the) (NN airline))
+    (VP (VBD carried)
+      (NP
+        (QP (JJR more) (IN than) (CD 65) (CD million))
+        (NNS passengers))
+      (, ,)
+      (S
+        (VP (VBG making)
+          (S
+            (NP (PRP it))
+            (NP
+              (NP (DT the)
+                (ADJP (JJ second) (HYPH -) (JJS largest))
+                (NN airline))
+              (PP (IN in)
+                (NP (NNP Europe)))))
+          (PP (IN by)
+            (NP
+              (NP (NN number))
+              (PP (IN of)
+                (NP
+                  (NP (NNS passengers))
+                  (VP (VBN carried) (, ,)
+                    (PP (IN behind)
+                      (NP (NNP Ryanair)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2014
+			name:	DATE				1-1	2014 
+	2	the
+			coref:	IDENT			1	2-3	the airline 
+	3	airline
+			sense:	airline.n.02
+	4	carried
+			sense:	transport.v.02
+			prop:	carry.01
+			V		4-4	carried 
+			N-ARGM-TMP		0-1	In 2014 
+			N-ARG-A0		2-3	the airline 
+			N-ARG-A1		5-9	more than 65 million passengers 
+			N-ARGM-ADV		11-27	making it the second - largest airline in Europe by number of passengers carried , behind Ryanair 
+	5	more
+			sense:	more.a.02
+	6	than
+	7	65
+			name:	NUMBER				7-8	65 million 
+	8	million
+	9	passengers
+			sense:	passenger.n.01
+	10	,
+	11	making
+			sense:	make.v.02
+			prop:	make.02
+			V		11-11	making 
+			N-ARG-A1		12-27	it the second - largest airline in Europe by number of passengers carried , behind Ryanair 
+	12	it
+			coref:	IDENT			1	12-12	it 
+	13	the
+	14	second
+			name:	ORDINAL				14-14	second 
+			sense:	second.s.01
+	15	-
+	16	largest
+			sense:	large.a.01
+	17	airline
+			sense:	airline.n.02
+	18	in
+	19	Europe
+			coref:	IDENT			0	19-19	Europe 
+			name:	LOCATION				19-19	Europe 
+	20	by
+	21	number
+			sense:	number.n.01
+	22	of
+	23	passengers
+			sense:	passenger.n.01
+	24	carried
+			sense:	transport.v.02
+			prop:	carry.01
+			V		24-24	carried 
+			N-ARG-A1		23-23	passengers 
+	25	,
+	26	behind
+	27	Ryanair
+			name:	ORGANIZATION				27-27	Ryanair 
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+EasyJet was featured in the television series Airline broadcast on ITV which followed the airline 's operations at London Luton and later at other bases .
+
+
+Treebanked sentence:
+--------------------
+EasyJet was featured in the television series Airline broadcast on ITV which followed the airline 's operations at London Luton and later at other bases . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP EasyJet))
+    (VP (VBD was)
+      (VP (VBN featured)
+        (PP (IN in)
+          (NP (DT the)
+            (NML
+              (NML (NN television) (NN series))
+              (NNP Airline))
+            (NN broadcast)))
+        (PP (IN on)
+          (NP
+            (NP (NNP ITV))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBD followed)
+                  (NP
+                    (NP (DT the) (NN airline) (POS 's))
+                    (NNS operations))
+                  (PP
+                    (PP (IN at)
+                      (NP (NNP London) (NNP Luton)))
+                    (CC and)
+                    (PP
+                      (ADVP (RB later))
+                      (IN at)
+                      (NP (JJ other) (NNS bases)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	EasyJet
+			coref:	IDENT			2	0-0	EasyJet 
+			name:	ORGANIZATION				0-0	EasyJet 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	featured
+			sense:	have.v.02
+			prop:	feature.01
+			V		2-2	featured 
+			N-ARG-A1		0-0	EasyJet 
+			N-ARG-A2		3-24	in the television series Airline broadcast on ITV which followed the airline 's operations at London Luton and later at other bases 
+	3	in
+	4	the
+	5	television
+			sense:	television.n.01
+	6	series
+			sense:	serial.n.01
+	7	Airline
+	8	broadcast
+			sense:	broadcast.n.02
+	9	on
+	10	ITV
+	11	which
+	12	followed
+			sense:	trace.v.01
+			prop:	follow.02
+			V		12-12	followed 
+			N-ARG-A0		4-10	the television series Airline broadcast on ITV 
+			R-ARG-A0		11-11	which 
+			N-ARG-A1		13-24	the airline 's operations at London Luton and later at other bases 
+	13	the
+			coref:	IDENT			1	13-15	the airline 's 
+	14	airline
+			sense:	airline.n.02
+	15	's
+	16	operations
+			sense:	operation.n.02
+	17	at
+	18	London
+			name:	CITY				18-19	London Luton 
+	19	Luton
+	20	and
+	21	later
+			sense:	subsequently.r.01
+	22	at
+	23	other
+			sense:	other.a.01
+	24	bases
+			sense:	basis.n.03
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Its pilot training scheme was the subject of another ITV television series , easyJet : Inside the Cockpit , which premiered in August 2017 .
+
+
+Treebanked sentence:
+--------------------
+Its pilot training scheme was the subject of another ITV television series , easyJet : Inside the Cockpit , which premiered in August 2017 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ Its)
+      (NML (NN pilot) (NN training))
+      (NN scheme))
+    (VP (VBD was)
+      (NP
+        (NP
+          (NP (DT the) (NN subject))
+          (PP (IN of)
+            (NP
+              (NP (DT another)
+                (NML (NNP ITV) (NN television))
+                (NN series))
+              (, ,)
+              (X
+                (NP (NNP easyJet))
+                (: :)
+                (PP (IN Inside)
+                  (NP (DT the) (NNP Cockpit))))
+              (, ,))))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBD premiered)
+              (PP (IN in)
+                (NP (NNP August) (CD 2017))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Its
+			coref:	IDENT			2	0-0	Its 
+	1	pilot
+			name:	TITLE				1-1	pilot 
+			sense:	pilot.n.01
+	2	training
+			sense:	training.n.01
+	3	scheme
+			sense:	scheme.n.01
+	4	was
+			sense:	be.v.01
+			prop:	be.01
+			V		4-4	was 
+			N-ARG-A1		0-3	Its pilot training scheme 
+			N-ARG-A2		5-23	the subject of another ITV television series , easyJet : Inside the Cockpit , which premiered in August 2017 
+	5	the
+	6	subject
+			sense:	subject.n.01
+	7	of
+	8	another
+	9	ITV
+	10	television
+			sense:	television.n.01
+	11	series
+			sense:	serial.n.01
+	12	,
+	13	easyJet
+	14	:
+	15	Inside
+	16	the
+	17	Cockpit
+	18	,
+	19	which
+	20	premiered
+			sense:	premier.v.01
+			prop:	premiere.01
+			V		20-20	premiered 
+			N-ARG-A1		8-17	another ITV television series , easyJet : Inside the Cockpit 
+			R-ARG-A1		19-19	which 
+			N-ARGM-TMP		21-23	in August 2017 
+	21	in
+	22	August
+			name:	DATE				22-23	August 2017 
+	23	2017
+	24	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				4.8-8	Europe 
+				7.5-5	Europe 
+				8.19-19	Europe 
+	Chain 1 (IDENT)
+				0.10-21	a British low - cost carrier airline headquartered at London Luton Airport 
+				3.8-10	the airline 's 
+				6.0-11	The airline , along with associate companies easyJet Europe and easyJet Switzerland 
+				7.0-0	It 
+				8.2-3	the airline 
+				8.12-12	it 
+				9.13-15	the airline 's 
+	Chain 2 (IDENT)
+				0.7-7	easyJet 
+				5.0-0	EasyJet 
+				5.5-5	its 
+				9.0-0	EasyJet 
+				10.0-0	Its 
+

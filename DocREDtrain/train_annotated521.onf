@@ -1,0 +1,465 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" One weekend a month , two weeks a year " is a former recruiting slogan used by the U.S. Army National Guard .
+
+
+Treebanked sentence:
+--------------------
+" One weekend a month , two weeks a year " is a former recruiting slogan used by the U.S. Army National Guard . 
+
+Tree:
+-----
+(ROOT
+  (S (`` ")
+    (NP
+      (NP
+        (NP (CD One) (NN weekend))
+        (NP (DT a) (NN month)))
+      (, ,)
+      (NP
+        (NP (CD two) (NNS weeks))
+        (NP (DT a) (NN year))))
+    ('' ")
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ former) (NN recruiting) (NN slogan))
+        (VP (VBN used)
+          (PP (IN by)
+            (NP (DT the)
+              (NML (NNP U.S.) (NNP Army))
+              (NNP National) (NNP Guard))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	One
+			name:	NUMBER				1-1	One 
+	2	weekend
+			name:	DATE				2-2	weekend 
+			sense:	weekend.n.01
+	3	a
+			name:	DURATION				3-4	a month 
+	4	month
+			sense:	calendar_month.n.01
+	5	,
+	6	two
+			name:	DURATION				6-9	two weeks a year 
+	7	weeks
+			sense:	week.n.01
+	8	a
+	9	year
+			sense:	year.n.01
+	10	"
+	11	is
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	is 
+			N-ARG-A1		0-10	" One weekend a month , two weeks a year " 
+			N-ARG-A2		12-22	a former recruiting slogan used by the U.S. Army National Guard 
+	12	a
+	13	former
+			sense:	erstwhile.s.01
+	14	recruiting
+	15	slogan
+			sense:	motto.n.01
+	16	used
+			sense:	use.v.01
+			prop:	use.01
+			V		16-16	used 
+			N-ARG-A1		12-15	a former recruiting slogan 
+			N-ARG-A0		17-22	by the U.S. Army National Guard 
+	17	by
+	18	the
+			coref:	IDENT			0	18-22	the U.S. Army National Guard 
+	19	U.S.
+			name:	ORGANIZATION				19-22	U.S. Army National Guard 
+	20	Army
+	21	National
+	22	Guard
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It indicated the amount of time an individual would need to spend actively in the Guard to be a Guardsman with benefits .
+
+
+Treebanked sentence:
+--------------------
+It indicated the amount of time an individual would need to spend actively in the Guard to be a Guardsman with benefits . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD indicated)
+      (NP
+        (NP (DT the) (NN amount))
+        (PP (IN of)
+          (NP
+            (NP (NN time))
+            (SBAR
+              (S
+                (NP (DT an) (NN individual))
+                (VP (MD would)
+                  (VP (VB need)
+                    (S
+                      (VP (TO to)
+                        (VP (VB spend)
+                          (ADVP (RB actively))
+                          (PP (IN in)
+                            (NP (DT the) (NNP Guard)))
+                          (S
+                            (VP (TO to)
+                              (VP (VB be)
+                                (NP
+                                  (NP (DT a) (NNP Guardsman))
+                                  (PP (IN with)
+                                    (NP (NNS benefits))))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	indicated
+			sense:	bespeak.v.01
+			prop:	indicate.01
+			V		1-1	indicated 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-21	the amount of time an individual would need to spend actively in the Guard to be a Guardsman with benefits 
+	2	the
+	3	amount
+			sense:	amount.n.02
+	4	of
+	5	time
+			sense:	time.n.02
+	6	an
+	7	individual
+			sense:	person.n.01
+	8	would
+	9	need
+			sense:	necessitate.v.01
+			prop:	need.01
+			V		9-9	need 
+			N-ARG-A0		6-7	an individual 
+			N-ARGM-MOD		8-8	would 
+			N-ARG-A1		10-21	to spend actively in the Guard to be a Guardsman with benefits 
+	10	to
+	11	spend
+			sense:	spend.v.01
+			prop:	spend.02
+			V		11-11	spend 
+			N-ARG-A1		2-5	the amount of time 
+			N-ARG-A0		6-7	an individual 
+			N-ARGM-MNR		12-12	actively 
+			N-ARG-A2		13-15	in the Guard 
+			N-ARGM-PRP		16-21	to be a Guardsman with benefits 
+	12	actively
+			sense:	actively.r.01
+	13	in
+	14	the
+			coref:	IDENT			0	14-15	the Guard 
+	15	Guard
+			name:	TITLE				15-15	Guard 
+	16	to
+	17	be
+			sense:	be.v.01
+			prop:	be.01
+			V		17-17	be 
+			N-ARG-A1		6-7	an individual 
+			N-ARG-A2		18-21	a Guardsman with benefits 
+	18	a
+	19	Guardsman
+	20	with
+	21	benefits
+			sense:	benefit.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Though never officially , it was also informally used by Air National Guard , U.S. Army Reserve , U.S. 
+
+
+Treebanked sentence:
+--------------------
+Though never officially , it was also informally used by Air National Guard , U.S. Army Reserve , U.S. Naval Reserve , U.S. Marine Corps Reserve , U.S. Air Force Reserve and U.S. Coast Guard Reserve personnel in describing their similar military time commitment . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN Though)
+      (FRAG
+        (ADVP (RB never))
+        (ADVP (RB officially))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (ADVP (RB also))
+      (VP
+        (ADVP (RB informally))
+        (VBN used)
+        (PP (IN by)
+          (NP
+            (NML
+              (NML (NNP Air) (NNP National) (NNP Guard))
+              (, ,)
+              (NML (NNP U.S.) (NNP Army) (NNP Reserve))
+              (, ,)
+              (NML (NNP U.S.) (NNP Naval) (NNP Reserve))
+              (, ,)
+              (NML (NNP U.S.) (NNP Marine) (NNP Corps) (NNP Reserve))
+              (, ,)
+              (NML (NNP U.S.) (NNP Air) (NNP Force) (NNP Reserve))
+              (CC and)
+              (NML (NNP U.S.) (NNP Coast) (NNP Guard) (NNP Reserve)))
+            (NNS personnel)))
+        (PP (IN in)
+          (S
+            (VP (VBG describing)
+              (NP (PRP$ their) (JJ similar) (JJ military) (NN time) (NN commitment)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Though
+	1	never
+			sense:	never.r.01
+	2	officially
+			sense:	formally.r.01
+	3	,
+	4	it
+	5	was
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	was 
+	6	also
+			sense:	besides.r.02
+	7	informally
+			sense:	colloquially.r.01
+	8	used
+			sense:	use.v.01
+			prop:	use.01
+			V		8-8	used 
+			N-ARGM-ADV		0-2	Though never officially 
+			N-ARG-A1		4-4	it 
+			N-ARGM-DIS		6-6	also 
+			N-ARGM-MNR		7-7	informally 
+			N-ARG-A0		9-36	by Air National Guard , U.S. Army Reserve , U.S. Naval Reserve , U.S. Marine Corps Reserve , U.S. Air Force Reserve and U.S. Coast Guard Reserve personnel 
+			N-ARG-A2		37-43	in describing their similar military time commitment 
+	9	by
+	10	Air
+			name:	ORGANIZATION				10-12	Air National Guard 
+	11	National
+	12	Guard
+	13	,
+	14	U.S.
+			name:	ORGANIZATION				14-16	U.S. Army Reserve 
+	15	Army
+	16	Reserve
+	17	,
+	18	U.S.
+			name:	ORGANIZATION				18-20	U.S. Naval Reserve 
+	19	Naval
+	20	Reserve
+	21	,
+	22	U.S.
+			name:	ORGANIZATION				22-25	U.S. Marine Corps Reserve 
+	23	Marine
+	24	Corps
+	25	Reserve
+	26	,
+	27	U.S.
+			name:	ORGANIZATION				27-30	U.S. Air Force Reserve 
+	28	Air
+	29	Force
+	30	Reserve
+	31	and
+	32	U.S.
+			name:	ORGANIZATION				32-35	U.S. Coast Guard Reserve 
+	33	Coast
+	34	Guard
+	35	Reserve
+	36	personnel
+			sense:	force.n.04
+	37	in
+	38	describing
+			sense:	describe.v.01
+			prop:	describe.01
+			V		38-38	describing 
+			N-ARG-A1		39-43	their similar military time commitment 
+	39	their
+	40	similar
+			sense:	similar.a.01
+	41	military
+			sense:	military.a.02
+	42	time
+			sense:	time.n.02
+	43	commitment
+			sense:	commitment.n.03
+	44	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was dropped during the Iraq War after it became clear that National Guardsmen and Reservists were now serving considerably more time in service , especially on active military duty on extended overseas deployments in the Southwest Asia combat zone .
+
+
+Treebanked sentence:
+--------------------
+It was dropped during the Iraq War after it became clear that National Guardsmen and Reservists were now serving considerably more time in service , especially on active military duty on extended overseas deployments in the Southwest Asia combat zone . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN dropped)
+        (PP (IN during)
+          (NP (DT the) (NNP Iraq) (NNP War)))
+        (SBAR (IN after)
+          (S
+            (NP (PRP it))
+            (VP (VBD became)
+              (ADJP (JJ clear))
+              (SBAR (IN that)
+                (S
+                  (NP
+                    (NP (NNP National) (NNP Guardsmen))
+                    (CC and)
+                    (NP (NNPS Reservists)))
+                  (VP (VBD were)
+                    (ADVP (RB now))
+                    (VP (VBG serving)
+                      (NP
+                        (ADJP (RB considerably) (JJR more))
+                        (NN time))
+                      (PP
+                        (PP (IN in)
+                          (NP (NN service)))
+                        (, ,) (RB especially)
+                        (PP (IN on)
+                          (NP
+                            (NP (JJ active) (JJ military) (NN duty))
+                            (PP (IN on)
+                              (NP
+                                (NP (JJ extended) (JJ overseas) (NNS deployments))
+                                (PP (IN in)
+                                  (NP (DT the)
+                                    (NML (NNP Southwest) (NNP Asia))
+                                    (NN combat) (NN zone)))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	dropped
+			sense:	drop.v.05
+			prop:	drop.05
+			V		2-2	dropped 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		3-6	during the Iraq War 
+			N-ARGM-TMP		7-39	after it became clear that National Guardsmen and Reservists were now serving considerably more time in service , especially on active military duty on extended overseas deployments in the Southwest Asia combat zone 
+	3	during
+	4	the
+	5	Iraq
+			name:	CAUSE_OF_DEATH				5-6	Iraq War 
+	6	War
+	7	after
+	8	it
+	9	became
+			sense:	become.v.01
+			prop:	become.01
+			V		9-9	became 
+			N-ARG-A2		10-10	clear 
+			N-ARG-A1		11-39	that National Guardsmen and Reservists were now serving considerably more time in service , especially on active military duty on extended overseas deployments in the Southwest Asia combat zone 
+	10	clear
+			sense:	clear.a.01
+	11	that
+	12	National
+	13	Guardsmen
+	14	and
+	15	Reservists
+			name:	MISC				15-15	Reservists 
+	16	were
+			sense:	be.v.01
+			prop:	be.03
+			V		16-16	were 
+	17	now
+			name:	DATE				17-17	now 
+			sense:	now.r.01
+	18	serving
+			sense:	serve.v.13
+			prop:	serve.01
+			V		18-18	serving 
+			N-ARG-A0		12-15	National Guardsmen and Reservists 
+			N-ARGM-TMP		17-17	now 
+			N-ARG-A1		19-23	considerably more time in service 
+			N-ARGM-LOC		30-39	on extended overseas deployments in the Southwest Asia combat zone 
+	19	considerably
+			sense:	well.r.07
+	20	more
+			sense:	more.a.01
+	21	time
+			sense:	time.n.02
+	22	in
+	23	service
+			sense:	service.n.05
+	24	,
+	25	especially
+			sense:	particularly.r.01
+	26	on
+	27	active
+			sense:	active.s.02
+	28	military
+			sense:	military.a.02
+	29	duty
+			sense:	duty.n.02
+	30	on
+	31	extended
+			sense:	drawn-out.s.01
+	32	overseas
+			sense:	abroad.s.01
+	33	deployments
+			sense:	deployment.n.01
+	34	in
+	35	the
+	36	Southwest
+			name:	LOCATION				36-36	Southwest 
+	37	Asia
+			name:	CITY				37-37	Asia 
+	38	combat
+			sense:	combat.n.01
+	39	zone
+			sense:	zone.n.03
+	40	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.18-22	the U.S. Army National Guard 
+				1.14-15	the Guard 
+

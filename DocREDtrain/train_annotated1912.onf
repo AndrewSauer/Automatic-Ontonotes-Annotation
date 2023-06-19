@@ -1,0 +1,583 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Panther Peak is a mountain located in Essex County , New York .
+
+
+Treebanked sentence:
+--------------------
+Panther Peak is a mountain located in Essex County , New York . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN Panther) (NN Peak))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN mountain))
+        (VP (VBN located)
+          (PP (IN in)
+            (NP
+              (NML (NNP Essex) (NNP County))
+              (, ,)
+              (NML (NNP New) (NNP York)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Panther
+			coref:	IDENT			3	0-1	Panther Peak 
+			sense:	cougar.n.01
+	1	Peak
+			sense:	peak.n.04
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Panther Peak 
+			N-ARG-A2		3-11	a mountain located in Essex County , New York 
+	3	a
+			coref:	IDENT			1	3-11	a mountain located in Essex County , New York 
+	4	mountain
+			sense:	mountain.n.01
+	5	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		5-5	located 
+			N-ARG-A1		3-4	a mountain 
+			N-ARGM-LOC		6-11	in Essex County , New York 
+	6	in
+	7	Essex
+			name:	CITY				7-7	Essex 
+	8	County
+			name:	LOCATION				8-8	County 
+	9	,
+	10	New
+			name:	STATE_OR_PROVINCE				10-11	New York 
+	11	York
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The mountain is part of the Santanoni Mountains of the Adirondacks .
+
+
+Treebanked sentence:
+--------------------
+The mountain is part of the Santanoni Mountains of the Adirondacks . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN mountain))
+    (VP (VBZ is)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Santanoni) (NNPS Mountains))
+            (PP (IN of)
+              (NP (DT the) (NNPS Adirondacks)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The mountain 
+	1	mountain
+			sense:	mountain.n.01
+	2	is
+			sense:	constitute.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The mountain 
+			N-ARG-A2		3-10	part of the Santanoni Mountains of the Adirondacks 
+	3	part
+			sense:	part.n.01
+	4	of
+	5	the
+	6	Santanoni
+			name:	LOCATION				6-7	Santanoni Mountains 
+	7	Mountains
+	8	of
+	9	the
+	10	Adirondacks
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Panther Peak is flanked to the west by Couchsachraga Peak , and to the south by Santanoni Peak .
+
+
+Treebanked sentence:
+--------------------
+Panther Peak is flanked to the west by Couchsachraga Peak , and to the south by Santanoni Peak . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN Panther) (NN Peak))
+    (VP (VBZ is)
+      (VP (VBN flanked)
+        (PP (IN to)
+          (NP
+            (NP (DT the) (NN west))
+            (PP
+              (PP (IN by)
+                (NP (NNP Couchsachraga) (NNP Peak)))
+              (, ,)
+              (CC and)
+              (PP (IN to)
+                (NP (DT the) (NN south))))))
+        (PP (IN by)
+          (NP (NNP Santanoni) (NNP Peak)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Panther
+			coref:	IDENT			3	0-1	Panther Peak 
+			sense:	cougar.n.01
+	1	Peak
+			sense:	peak.n.04
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	flanked
+			sense:	flank.v.01
+			prop:	flank.01
+			V		3-3	flanked 
+			N-ARG-A1		0-1	Panther Peak 
+			N-ARGM-DIR		4-6	to the west 
+			N-ARG-A0		7-9	by Couchsachraga Peak 
+			N-ARG-A0		15-17	by Santanoni Peak 
+	4	to
+	5	the
+	6	west
+			sense:	west.n.02
+	7	by
+	8	Couchsachraga
+			name:	PERSON				8-9	Couchsachraga Peak 
+	9	Peak
+	10	,
+	11	and
+	12	to
+	13	the
+	14	south
+			sense:	south.n.03
+	15	by
+	16	Santanoni
+			name:	PERSON				16-17	Santanoni Peak 
+	17	Peak
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The northeast slopes of Panther Peak drain into Duck Hole pond , the source of the Cold River , which drains into the Raquette River , the Saint Lawrence River in Canada , and into the Gulf of Saint Lawrence .
+
+
+Treebanked sentence:
+--------------------
+The northeast slopes of Panther Peak drain into Duck Hole pond , the source of the Cold River , which drains into the Raquette River , the Saint Lawrence River in Canada , and into the Gulf of Saint Lawrence . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP
+      (NP (DT The) (NN northeast) (NNS slopes))
+      (PP (IN of)
+        (NP
+          (NP (NN Panther) (NN Peak) (NN drain))
+          (PP (IN into)
+            (NP (NN Duck) (NN Hole) (NN pond))))))
+    (, ,)
+    (NP
+      (NP
+        (NP (DT the) (NN source))
+        (PP (IN of)
+          (NP (DT the) (NNP Cold) (NNP River))))
+      (, ,)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBZ drains)
+            (PP (IN into)
+              (NP (DT the) (NNP Raquette) (NNP River)))))))
+    (, ,)
+    (NP
+      (NP (DT the) (NNP Saint) (NNP Lawrence) (NNP River))
+      (PP
+        (PP (IN in)
+          (NP (NNP Canada)))
+        (, ,)
+        (CC and)
+        (PP (IN into)
+          (NP
+            (NP (DT the) (NNP Gulf))
+            (PP (IN of)
+              (NP (NNP Saint) (NNP Lawrence)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	northeast
+			sense:	northeast.n.01
+	2	slopes
+			sense:	slope.n.01
+	3	of
+	4	Panther
+			sense:	cougar.n.01
+	5	Peak
+			sense:	peak.n.04
+	6	drain
+			sense:	drain.n.01
+	7	into
+	8	Duck
+			sense:	duck.n.01
+	9	Hole
+			sense:	hole.n.05
+	10	pond
+			sense:	pond.n.01
+	11	,
+	12	the
+	13	source
+			sense:	beginning.n.04
+	14	of
+	15	the
+	16	Cold
+			name:	LOCATION				16-16	Cold 
+	17	River
+			name:	TITLE				17-17	River 
+	18	,
+	19	which
+	20	drains
+			sense:	drain.v.01
+			prop:	drain.01
+			V		20-20	drains 
+			N-ARGM-DIR		21-39	into the Raquette River , the Saint Lawrence River in Canada , and into the Gulf of Saint Lawrence 
+	21	into
+	22	the
+	23	Raquette
+			name:	LOCATION				23-23	Raquette 
+	24	River
+			name:	TITLE				24-24	River 
+	25	,
+	26	the
+	27	Saint
+			name:	TITLE				27-27	Saint 
+	28	Lawrence
+			name:	CITY				28-28	Lawrence 
+	29	River
+			name:	TITLE				29-29	River 
+	30	in
+	31	Canada
+			name:	COUNTRY				31-31	Canada 
+	32	,
+	33	and
+	34	into
+	35	the
+	36	Gulf
+			name:	LOCATION				36-37	Gulf of 
+	37	of
+	38	Saint
+			name:	TITLE				38-38	Saint 
+	39	Lawrence
+			name:	CITY				39-39	Lawrence 
+	40	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The northwest slopes of Panther Peak drain into the Cold River .
+
+
+Treebanked sentence:
+--------------------
+The northwest slopes of Panther Peak drain into the Cold River . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP (DT The) (JJ northwest) (NNS slopes))
+    (PP (IN of)
+      (NP
+        (NP (NN Panther) (NN Peak) (NN drain))
+        (PP (IN into)
+          (NP (DT the) (NNP Cold) (NNP River)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	northwest
+			sense:	northwestern.s.01
+	2	slopes
+			sense:	slope.n.01
+	3	of
+	4	Panther
+			sense:	cougar.n.01
+	5	Peak
+			sense:	peak.n.04
+	6	drain
+			sense:	drain.n.01
+	7	into
+	8	the
+	9	Cold
+			name:	LOCATION				9-9	Cold 
+	10	River
+			name:	TITLE				10-10	River 
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The southwest slopes of Panther drain into Calahan Brook , thence into Moose Creek and the Cold River .
+
+
+Treebanked sentence:
+--------------------
+The southwest slopes of Panther drain into Calahan Brook , thence into Moose Creek and the Cold River . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP
+      (NP (DT The) (NN southwest) (NNS slopes))
+      (PP (IN of)
+        (NP (NN Panther) (NN drain))))
+    (PP (IN into)
+      (NP (NNP Calahan) (NNP Brook)))
+    (, ,)
+    (PP
+      (ADVP (RB thence))
+      (IN into)
+      (NP
+        (NP (NNP Moose) (NNP Creek))
+        (CC and)
+        (NP (DT the) (NNP Cold) (NNP River))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	southwest
+			sense:	southwest.n.01
+	2	slopes
+			sense:	slope.n.01
+	3	of
+	4	Panther
+			coref:	IDENT			0	4-5	Panther drain 
+			sense:	cougar.n.01
+	5	drain
+			sense:	drain.n.01
+	6	into
+	7	Calahan
+			name:	LOCATION				7-8	Calahan Brook 
+	8	Brook
+	9	,
+	10	thence
+			sense:	thence.r.01
+	11	into
+	12	Moose
+			name:	LOCATION				12-13	Moose Creek 
+	13	Creek
+	14	and
+	15	the
+	16	Cold
+			name:	LOCATION				16-16	Cold 
+	17	River
+			name:	TITLE				17-17	River 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The southeast slopes of Panther drain into Santanoni Brook , Henderson Lake , the source of the Hudson River , and into New York Bay .
+
+
+Treebanked sentence:
+--------------------
+The southeast slopes of Panther drain into Santanoni Brook , Henderson Lake , the source of the Hudson River , and into New York Bay . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP (DT The) (NN southeast) (NNS slopes))
+    (PP (IN of)
+      (NP (NN Panther) (NN drain)))
+    (PP
+      (PP (IN into)
+        (NP
+          (NP (NNP Santanoni) (NNP Brook))
+          (, ,)
+          (NP (NNP Henderson) (NNP Lake))
+          (, ,)
+          (NP
+            (NP (DT the) (NN source))
+            (PP (IN of)
+              (NP (DT the) (NNP Hudson) (NNP River))))))
+      (, ,)
+      (CC and)
+      (PP (IN into)
+        (NP
+          (NML (NNP New) (NNP York))
+          (NNP Bay))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	southeast
+			sense:	southeast.n.01
+	2	slopes
+			sense:	slope.n.01
+	3	of
+	4	Panther
+			coref:	IDENT			0	4-5	Panther drain 
+			sense:	cougar.n.01
+	5	drain
+			sense:	drain.n.01
+	6	into
+	7	Santanoni
+			name:	LOCATION				7-8	Santanoni Brook 
+	8	Brook
+	9	,
+	10	Henderson
+			name:	CITY				10-10	Henderson 
+	11	Lake
+			name:	LOCATION				11-11	Lake 
+	12	,
+	13	the
+	14	source
+			sense:	beginning.n.04
+	15	of
+	16	the
+	17	Hudson
+			name:	CITY				17-17	Hudson 
+	18	River
+			name:	TITLE				18-18	River 
+	19	,
+	20	and
+	21	into
+	22	New
+			coref:	IDENT			2	22-24	New York Bay 
+			name:	STATE_OR_PROVINCE				22-23	New York 
+	23	York
+	24	Bay
+			name:	CITY				24-24	Bay 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Panther Peak is within the High Peaks Wilderness Area of New York 's Adirondack Park .
+
+
+Treebanked sentence:
+--------------------
+Panther Peak is within the High Peaks Wilderness Area of New York 's Adirondack Park . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN Panther) (NN Peak))
+    (VP (VBZ is)
+      (PP (IN within)
+        (NP (DT the) (JJ High) (NNS Peaks)))
+      (NP
+        (NP (NN Wilderness) (NN Area))
+        (PP (IN of)
+          (NP
+            (NP (NNP New) (NNP York) (POS 's))
+            (NNP Adirondack) (NNP Park)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Panther
+			coref:	IDENT			3	0-1	Panther Peak 
+			sense:	cougar.n.01
+	1	Peak
+			sense:	peak.n.04
+	2	is
+			sense:	be.v.03
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Panther Peak 
+			N-ARG-A2		3-14	within the High Peaks Wilderness Area of New York 's Adirondack Park 
+	3	within
+	4	the
+	5	High
+			sense:	high.a.02
+	6	Peaks
+			sense:	peak.n.04
+	7	Wilderness
+			sense:	wilderness.n.03
+	8	Area
+			sense:	area.n.01
+	9	of
+	10	New
+			coref:	IDENT			2	10-12	New York 's 
+			name:	STATE_OR_PROVINCE				10-11	New York 
+	11	York
+	12	's
+	13	Adirondack
+			name:	LOCATION				13-14	Adirondack Park 
+	14	Park
+	15	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.4-5	Panther drain 
+				6.4-5	Panther drain 
+	Chain 1 (IDENT)
+				0.3-11	a mountain located in Essex County , New York 
+				1.0-1	The mountain 
+	Chain 2 (IDENT)
+				6.22-24	New York Bay 
+				7.10-12	New York 's 
+	Chain 3 (IDENT)
+				0.0-1	Panther Peak 
+				2.0-1	Panther Peak 
+				7.0-1	Panther Peak 
+

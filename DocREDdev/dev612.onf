@@ -1,0 +1,645 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Iowa Telecommunications Services , Inc. , commonly known as Iowa Telecom , provided local telephone service to former GTE customers in the U.S. states of Iowa , Missouri , Illinois , and Minnesota .
+
+
+Treebanked sentence:
+--------------------
+Iowa Telecommunications Services , Inc. , commonly known as Iowa Telecom , provided local telephone service to former GTE customers in the U.S. states of Iowa , Missouri , Illinois , and Minnesota . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Iowa) (NNP Telecommunications) (NNPS Services))
+      (, ,)
+      (NP
+        (NP (NNP Inc.))
+        (, ,)
+        (VP
+          (ADVP (RB commonly))
+          (VBN known)
+          (PP (IN as)
+            (NP (NNP Iowa) (NNP Telecom)))))
+      (, ,))
+    (VP (VBD provided)
+      (NP (JJ local) (NN telephone) (NN service))
+      (PP (IN to)
+        (NP (JJ former) (NNP GTE) (NNS customers)))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NNP U.S.) (NNS states))
+          (PP (IN of)
+            (NP (NNP Iowa) (, ,) (NNP Missouri) (, ,) (NNP Illinois) (, ,)
+              (CC and)
+              (NNP Minnesota))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Iowa
+			name:	ORGANIZATION				0-4	Iowa Telecommunications Services , Inc. 
+	1	Telecommunications
+	2	Services
+	3	,
+	4	Inc.
+	5	,
+	6	commonly
+			sense:	normally.r.01
+	7	known
+			sense:	know.v.04
+			prop:	know.01
+			V		7-7	known 
+			N-ARG-A1		0-4	Iowa Telecommunications Services , Inc. 
+			N-ARGM-MNR		6-6	commonly 
+			N-ARG-A2		8-10	as Iowa Telecom 
+	8	as
+	9	Iowa
+			coref:	IDENT			1	9-10	Iowa Telecom 
+			name:	ORGANIZATION				9-10	Iowa Telecom 
+	10	Telecom
+	11	,
+	12	provided
+			sense:	supply.v.01
+			prop:	provide.01
+			V		12-12	provided 
+			N-ARG-A0		0-10	Iowa Telecommunications Services , Inc. , commonly known as Iowa Telecom 
+			N-ARG-A1		13-15	local telephone service 
+			N-ARG-A2		16-19	to former GTE customers 
+	13	local
+			sense:	local.a.01
+	14	telephone
+			sense:	telephone.n.02
+	15	service
+			sense:	service.n.01
+	16	to
+	17	former
+			sense:	erstwhile.s.01
+	18	GTE
+			coref:	IDENT			0	18-18	GTE 
+			name:	ORGANIZATION				18-18	GTE 
+	19	customers
+			sense:	customer.n.01
+	20	in
+	21	the
+	22	U.S.
+			name:	COUNTRY				22-22	U.S. 
+	23	states
+			sense:	state.n.01
+	24	of
+	25	Iowa
+			name:	STATE_OR_PROVINCE				25-25	Iowa 
+	26	,
+	27	Missouri
+			name:	STATE_OR_PROVINCE				27-27	Missouri 
+	28	,
+	29	Illinois
+			name:	STATE_OR_PROVINCE				29-29	Illinois 
+	30	,
+	31	and
+	32	Minnesota
+			coref:	IDENT			2	32-32	Minnesota 
+			name:	STATE_OR_PROVINCE				32-32	Minnesota 
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Iowa Telecom was founded in 1999 as a partnership between Iowa Network Services and ING Barings .
+
+
+Treebanked sentence:
+--------------------
+Iowa Telecom was founded in 1999 as a partnership between Iowa Network Services and ING Barings . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Iowa) (NNP Telecom))
+    (VP (VBD was)
+      (VP (VBN founded)
+        (PP (IN in)
+          (NP (CD 1999)))
+        (PP (IN as)
+          (NP
+            (NP (DT a) (NN partnership))
+            (PP (IN between)
+              (NP
+                (NP (NNP Iowa) (NNP Network) (NNPS Services))
+                (CC and)
+                (NP (NNP ING) (NNPS Barings))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Iowa
+			coref:	IDENT			1	0-1	Iowa Telecom 
+			name:	ORGANIZATION				0-1	Iowa Telecom 
+	1	Telecom
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		3-3	founded 
+			N-ARG-A1		0-1	Iowa Telecom 
+			N-ARGM-TMP		4-5	in 1999 
+			N-ARGM-PRD		6-15	as a partnership between Iowa Network Services and ING Barings 
+	4	in
+	5	1999
+			name:	DATE				5-5	1999 
+	6	as
+	7	a
+	8	partnership
+			sense:	partnership.n.01
+	9	between
+	10	Iowa
+			name:	ORGANIZATION				10-12	Iowa Network Services 
+	11	Network
+	12	Services
+	13	and
+	14	ING
+			name:	ORGANIZATION				14-15	ING Barings 
+	15	Barings
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It acquired the assets of GTE Midwest , which served Iowa following Bell Atlantic 's purchase of GTE .
+
+
+Treebanked sentence:
+--------------------
+It acquired the assets of GTE Midwest , which served Iowa following Bell Atlantic 's purchase of GTE . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD acquired)
+      (NP
+        (NP (DT the) (NNS assets))
+        (PP (IN of)
+          (NP
+            (NP (NNP GTE) (NNP Midwest))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBD served)
+                  (NP
+                    (NP (NNP Iowa))
+                    (PP (VBG following)
+                      (NP
+                        (NP
+                          (NP (NNP Bell) (NNP Atlantic) (POS 's))
+                          (NN purchase))
+                        (PP (IN of)
+                          (NP (NNP GTE)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	acquired
+			sense:	get.v.01
+			prop:	acquire.01
+			V		1-1	acquired 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-17	the assets of GTE Midwest , which served Iowa following Bell Atlantic 's purchase of GTE 
+	2	the
+	3	assets
+			sense:	asset.n.01
+	4	of
+	5	GTE
+			name:	ORGANIZATION				5-6	GTE Midwest 
+	6	Midwest
+	7	,
+	8	which
+	9	served
+			sense:	service.v.01
+			prop:	serve.01
+			V		9-9	served 
+			N-ARG-A0		5-6	GTE Midwest 
+			R-ARG-A0		8-8	which 
+			N-ARG-A2		10-10	Iowa 
+			N-ARGM-TMP		11-17	following Bell Atlantic 's purchase of GTE 
+	10	Iowa
+			name:	STATE_OR_PROVINCE				10-10	Iowa 
+	11	following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		11-11	following 
+			N-ARG-A2		12-17	Bell Atlantic 's purchase of GTE 
+	12	Bell
+			name:	ORGANIZATION				12-13	Bell Atlantic 
+	13	Atlantic
+	14	's
+	15	purchase
+			sense:	purchase.n.01
+	16	of
+	17	GTE
+			coref:	IDENT			0	17-17	GTE 
+			name:	ORGANIZATION				17-17	GTE 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It had 257,700 access lines and served 435 communities in Iowa .
+
+
+Treebanked sentence:
+--------------------
+It had 257,700 access lines and served 435 communities in Iowa . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBD had)
+        (NP (CD 257,700) (NN access) (NNS lines)))
+      (CC and)
+      (VP (VBD served)
+        (NP (CD 435) (NNS communities))
+        (PP (IN in)
+          (NP (NNP Iowa)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	had
+			sense:	have.v.01
+			prop:	have.03
+			V		1-1	had 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-4	257,700 access lines 
+	2	257,700
+			name:	NUMBER				2-2	257,700 
+	3	access
+			sense:	access.n.04
+	4	lines
+			sense:	cable.n.02
+	5	and
+	6	served
+			sense:	service.v.01
+			prop:	serve.01
+			V		6-6	served 
+			N-ARG-A0		0-0	It 
+			N-ARG-A2		7-10	435 communities in Iowa 
+	7	435
+			name:	NUMBER				7-7	435 
+	8	communities
+			sense:	community.n.01
+	9	in
+	10	Iowa
+			name:	STATE_OR_PROVINCE				10-10	Iowa 
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2002 Iowa Telecom bought PC Partner Communications and Zumatel Communications .
+
+
+Treebanked sentence:
+--------------------
+In 2002 Iowa Telecom bought PC Partner Communications and Zumatel Communications . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2002)))
+    (NP (NNP Iowa) (NNP Telecom))
+    (VP (VBD bought)
+      (NP (NN PC))
+      (NP
+        (NP (NNP Partner) (NNPS Communications))
+        (CC and)
+        (NP (NNP Zumatel) (NNPS Communications))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2002
+			name:	DATE				1-1	2002 
+	2	Iowa
+			coref:	IDENT			1	2-3	Iowa Telecom 
+			name:	ORGANIZATION				2-3	Iowa Telecom 
+	3	Telecom
+	4	bought
+			sense:	buy.v.01
+			prop:	buy.01
+			V		4-4	bought 
+			N-ARGM-TMP		0-1	In 2002 
+			N-ARG-A0		2-3	Iowa Telecom 
+			N-ARG-A1		5-10	PC Partner Communications and Zumatel Communications 
+	5	PC
+			name:	ORGANIZATION				5-7	PC Partner Communications 
+			sense:	personal_computer.n.01
+	6	Partner
+	7	Communications
+	8	and
+	9	Zumatel
+			name:	ORGANIZATION				9-10	Zumatel Communications 
+	10	Communications
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On February 7 , 2008 , Iowa Telecom bought Lakedale Communications , Sherbtel Comminuations , Conntections - ETC , and SOMA , all located in Minnesota .
+
+
+Treebanked sentence:
+--------------------
+On February 7 , 2008 , Iowa Telecom bought Lakedale Communications , Sherbtel Comminuations , Conntections - ETC , and SOMA , all located in Minnesota . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NNP February) (CD 7) (, ,) (CD 2008)))
+    (, ,)
+    (NP (NNP Iowa) (NNP Telecom))
+    (VP (VBD bought)
+      (NP
+        (NP (NNP Lakedale) (NNPS Communications))
+        (, ,)
+        (NP (NNP Sherbtel) (NNPS Comminuations))
+        (, ,)
+        (NP
+          (NP (NNPS Conntections))
+          (HYPH -)
+          (NP (NNP ETC)))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (NNP SOMA))
+          (, ,)
+          (NP
+            (NP (DT all))
+            (VP (VBN located)
+              (PP (IN in)
+                (NP (NNP Minnesota))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	February
+			name:	DATE				1-4	February 7 , 2008 
+	2	7
+	3	,
+	4	2008
+	5	,
+	6	Iowa
+			coref:	IDENT			1	6-7	Iowa Telecom 
+			name:	ORGANIZATION				6-7	Iowa Telecom 
+	7	Telecom
+	8	bought
+			sense:	buy.v.01
+			prop:	buy.01
+			V		8-8	bought 
+			N-ARGM-TMP		0-4	On February 7 , 2008 
+			N-ARG-A0		6-7	Iowa Telecom 
+			N-ARG-A1		9-25	Lakedale Communications , Sherbtel Comminuations , Conntections - ETC , and SOMA , all located in Minnesota 
+	9	Lakedale
+			name:	ORGANIZATION				9-10	Lakedale Communications 
+	10	Communications
+	11	,
+	12	Sherbtel
+			name:	ORGANIZATION				12-13	Sherbtel Comminuations 
+	13	Comminuations
+	14	,
+	15	Conntections
+	16	-
+	17	ETC
+	18	,
+	19	and
+	20	SOMA
+			name:	ORGANIZATION				20-20	SOMA 
+	21	,
+	22	all
+	23	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		23-23	located 
+			N-ARG-A1		22-22	all 
+			N-ARGM-LOC		24-25	in Minnesota 
+	24	in
+	25	Minnesota
+			coref:	IDENT			2	25-25	Minnesota 
+			name:	STATE_OR_PROVINCE				25-25	Minnesota 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At that time it also acquired Willinet in New York .
+
+
+Treebanked sentence:
+--------------------
+At that time it also acquired Willinet in New York . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (DT that) (NN time)))
+    (NP (PRP it))
+    (ADVP (RB also))
+    (VP (VBD acquired)
+      (NP (NNP Willinet))
+      (PP (IN in)
+        (NP (NNP New) (NNP York))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	that
+	2	time
+			sense:	time.n.01
+	3	it
+			coref:	IDENT			1	3-3	it 
+	4	also
+			sense:	besides.r.02
+	5	acquired
+			sense:	get.v.01
+			prop:	acquire.01
+			V		5-5	acquired 
+			N-ARGM-TMP		0-2	At that time 
+			N-ARG-A0		3-3	it 
+			N-ARGM-DIS		4-4	also 
+			N-ARG-A1		6-6	Willinet 
+			N-ARGM-LOC		7-9	in New York 
+	6	Willinet
+			name:	LOCATION				6-6	Willinet 
+	7	in
+	8	New
+			name:	STATE_OR_PROVINCE				8-9	New York 
+	9	York
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On November 24 , 2009 Iowa Telecom was acquired by Windstream .
+
+
+Treebanked sentence:
+--------------------
+On November 24 , 2009 Iowa Telecom was acquired by Windstream . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NNP November) (CD 24) (, ,) (CD 2009)))
+    (NP (NNP Iowa) (NNP Telecom))
+    (VP (VBD was)
+      (VP (VBN acquired)
+        (PP (IN by)
+          (NP (NNP Windstream)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	November
+			name:	DATE				1-4	November 24 , 2009 
+	2	24
+	3	,
+	4	2009
+	5	Iowa
+			coref:	IDENT			1	5-6	Iowa Telecom 
+			name:	ORGANIZATION				5-6	Iowa Telecom 
+	6	Telecom
+	7	was
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	was 
+	8	acquired
+			sense:	get.v.01
+			prop:	acquire.01
+			V		8-8	acquired 
+			N-ARGM-TMP		0-4	On November 24 , 2009 
+			N-ARG-A1		5-6	Iowa Telecom 
+			N-ARG-A0		9-10	by Windstream 
+	9	by
+	10	Windstream
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Its telephone directories were published by Pinnacle Publishing .
+
+
+Treebanked sentence:
+--------------------
+Its telephone directories were published by Pinnacle Publishing . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ Its) (NN telephone) (NNS directories))
+    (VP (VBD were)
+      (VP (VBN published)
+        (PP (IN by)
+          (NP (NNP Pinnacle) (NNP Publishing)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Its
+			coref:	IDENT			1	0-0	Its 
+	1	telephone
+			sense:	telephone.n.02
+	2	directories
+			sense:	directory.n.01
+	3	were
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	were 
+	4	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		4-4	published 
+			N-ARG-A1		0-2	Its telephone directories 
+			N-ARG-A0		5-7	by Pinnacle Publishing 
+	5	by
+	6	Pinnacle
+			name:	ORGANIZATION				6-7	Pinnacle Publishing 
+	7	Publishing
+	8	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.18-18	GTE 
+				2.17-17	GTE 
+	Chain 1 (IDENT)
+				0.9-10	Iowa Telecom 
+				1.0-1	Iowa Telecom 
+				2.0-0	It 
+				3.0-0	It 
+				4.2-3	Iowa Telecom 
+				5.6-7	Iowa Telecom 
+				6.3-3	it 
+				7.5-6	Iowa Telecom 
+				8.0-0	Its 
+	Chain 2 (IDENT)
+				0.32-32	Minnesota 
+				5.25-25	Minnesota 
+

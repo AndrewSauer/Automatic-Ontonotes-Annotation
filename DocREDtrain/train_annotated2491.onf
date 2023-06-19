@@ -1,0 +1,642 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Luxembourg Palace ( , ) is located at 15 rue de Vaugirard in the 6th arrondissement of Paris .
+
+
+Treebanked sentence:
+--------------------
+The Luxembourg Palace ( , ) is located at 15 rue de Vaugirard in the 6th arrondissement of Paris . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Luxembourg) (NNP Palace))
+      (-LRB- -LRB-)
+      (NP (, ,))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN at)
+          (NP (CD 15)))
+        (PP
+          (NP (FW rue) (FW de) (NNP Vaugirard))
+          (IN in)
+          (NP
+            (NP (DT the) (JJ 6th) (NN arrondissement))
+            (PP (IN of)
+              (NP (NNP Paris)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Luxembourg
+			name:	ORGANIZATION				1-2	Luxembourg Palace 
+	2	Palace
+	3	(
+	4	,
+	5	)
+	6	is
+			sense:	be.v.03
+			prop:	be.03
+			V		6-6	is 
+	7	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		7-7	located 
+			N-ARG-A1		0-2	The Luxembourg Palace 
+			N-ARGM-LOC		8-12	at 15 rue de Vaugirard 
+			N-ARGM-LOC		13-18	in the 6th arrondissement of Paris 
+	8	at
+	9	15
+			name:	NUMBER				9-9	15 
+	10	rue
+			coref:	IDENT			1	10-12	rue de Vaugirard 
+			name:	LOCATION				10-12	rue de Vaugirard 
+	11	de
+	12	Vaugirard
+	13	in
+	14	the
+	15	6th
+			name:	ORDINAL				15-15	6th 
+			sense:	sixth.s.01
+	16	arrondissement
+	17	of
+	18	Paris
+			name:	CITY				18-18	Paris 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was originally built ( 1615 – 1645 ) to the designs of the French architect Salomon de Brosse to be the royal residence of the regent Marie de ' Medici , mother of Louis XIII of France .
+
+
+Treebanked sentence:
+--------------------
+It was originally built ( 1615 – 1645 ) to the designs of the French architect Salomon de Brosse to be the royal residence of the regent Marie de ' Medici , mother of Louis XIII of France . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (ADVP (RB originally))
+      (VP (VBN built)
+        (NP
+          (NP (-LRB- -LRB-)
+            (QP (CD 1615) (SYM –) (CD 1645))
+            (-RRB- -RRB-))
+          (PP (IN to)
+            (NP
+              (NP (DT the) (NNS designs))
+              (PP (IN of)
+                (NP (DT the)
+                  (NML (JJ French) (NN architect))
+                  (NNP Salomon) (NNP de) (NNP Brosse))))))
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (NP
+                (NP (DT the) (JJ royal) (NN residence))
+                (PP (IN of)
+                  (NP
+                    (NP
+                      (NP (DT the) (NN regent))
+                      (NP
+                        (NP (NNP Marie) (NNP de) (POS '))
+                        (NNP Medici)))
+                    (, ,)
+                    (NP
+                      (NP (NN mother))
+                      (PP (IN of)
+                        (NP (NNP Louis) (CD XIII))))))
+                (PP (IN of)
+                  (NP (NNP France)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	originally
+			sense:	primitively.r.01
+	3	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		3-3	built 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		2-2	originally 
+			N-ARGM-TMP		4-8	( 1615 – 1645 ) 
+			N-ARGM-PRP		19-37	to be the royal residence of the regent Marie de ' Medici , mother of Louis XIII of France 
+	4	(
+	5	1615
+			name:	DATE				5-5	1615 
+	6	–
+	7	1645
+			name:	DATE				7-7	1645 
+	8	)
+	9	to
+	10	the
+	11	designs
+			sense:	blueprint.n.01
+	12	of
+	13	the
+			coref:	IDENT			0	13-18	the French architect Salomon de Brosse 
+	14	French
+			name:	NATIONALITY				14-14	French 
+	15	architect
+			name:	TITLE				15-15	architect 
+			sense:	architect.n.01
+	16	Salomon
+			name:	PERSON				16-18	Salomon de Brosse 
+	17	de
+	18	Brosse
+	19	to
+	20	be
+			sense:	be.v.02
+			prop:	be.01
+			V		20-20	be 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		21-37	the royal residence of the regent Marie de ' Medici , mother of Louis XIII of France 
+	21	the
+	22	royal
+			sense:	royal.a.01
+	23	residence
+			sense:	residence.n.02
+	24	of
+	25	the
+	26	regent
+			sense:	regent.n.02
+	27	Marie
+			coref:	IDENT			0	27-30	Marie de ' Medici 
+	28	de
+	29	'
+	30	Medici
+	31	,
+	32	mother
+			sense:	mother.n.01
+	33	of
+	34	Louis
+			name:	PERSON				34-35	Louis XIII 
+	35	XIII
+	36	of
+	37	France
+			name:	COUNTRY				37-37	France 
+	38	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After the Revolution it was refashioned ( 1799 – 1805 ) by Jean Chalgrin into a legislative building and subsequently greatly enlarged and remodeled ( 1835 – 1856 ) by Alphonse de Gisors .
+
+
+Treebanked sentence:
+--------------------
+After the Revolution it was refashioned ( 1799 – 1805 ) by Jean Chalgrin into a legislative building and subsequently greatly enlarged and remodeled ( 1835 – 1856 ) by Alphonse de Gisors . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP (DT the) (NNP Revolution)))
+    (NP (PRP it))
+    (VP (VBD was)
+      (VP
+        (VP (VBN refashioned)
+          (NP
+            (NP (-LRB- -LRB-)
+              (QP (CD 1799) (SYM –) (CD 1805))
+              (-RRB- -RRB-))
+            (PP (IN by)
+              (NP (NNP Jean) (NNP Chalgrin))))
+          (PP (IN into)
+            (NP (DT a) (JJ legislative) (NN building))))
+        (CC and)
+        (ADVP (RB subsequently))
+        (VP
+          (ADVP (RB greatly))
+          (VBN enlarged))
+        (CC and)
+        (VP (VBN remodeled)
+          (PRN (-LRB- -LRB-)
+            (NP (NNP 1835) (SYM –) (CD 1856))
+            (-RRB- -RRB-))
+          (PP (IN by)
+            (NP (NNP Alphonse) (NNP de) (NNP Gisors))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	the
+	2	Revolution
+	3	it
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	refashioned
+			sense:	remake.v.01
+			prop:	refashion.01
+			V		5-5	refashioned 
+			N-ARGM-TMP		0-2	After the Revolution 
+			N-ARG-A1		3-3	it 
+			N-ARGM-TMP		6-10	( 1799 – 1805 ) 
+			N-ARG-A0		11-13	by Jean Chalgrin 
+	6	(
+	7	1799
+			name:	DATE				7-7	1799 
+	8	–
+	9	1805
+			name:	DATE				9-9	1805 
+	10	)
+	11	by
+	12	Jean
+			name:	PERSON				12-13	Jean Chalgrin 
+	13	Chalgrin
+	14	into
+	15	a
+	16	legislative
+			sense:	legislative.a.01
+	17	building
+			sense:	building.n.01
+	18	and
+	19	subsequently
+			sense:	subsequently.r.01
+	20	greatly
+			sense:	greatly.r.01
+	21	enlarged
+			sense:	enlarge.v.01
+			prop:	enlarge.01
+			V		21-21	enlarged 
+			N-ARGM-TMP		0-2	After the Revolution 
+			N-ARG-A1		3-3	it 
+			N-ARGM-TMP		19-19	subsequently 
+			N-ARG-A2		20-20	greatly 
+			N-ARGM-TMP		24-27	( 1835 – 1856 
+			N-ARG-A0		29-32	by Alphonse de Gisors 
+	22	and
+	23	remodeled
+			sense:	remodel.v.01
+			prop:	remodel.01
+			V		23-23	remodeled 
+			N-ARGM-TMP		0-2	After the Revolution 
+			N-ARG-A1		3-3	it 
+			N-ARGM-TMP		19-19	subsequently 
+			N-ARGM-EXT		20-20	greatly 
+			N-ARGM-TMP		24-28	( 1835 – 1856 ) 
+			N-ARG-A0		29-32	by Alphonse de Gisors 
+	24	(
+	25	1835
+			name:	DATE				25-25	1835 
+	26	–
+	27	1856
+			name:	DATE				27-27	1856 
+	28	)
+	29	by
+	30	Alphonse
+			name:	PERSON				30-32	Alphonse de Gisors 
+	31	de
+	32	Gisors
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Since 1958 it has been the seat of the French Senate of the Fifth Republic .
+
+
+Treebanked sentence:
+--------------------
+Since 1958 it has been the seat of the French Senate of the Fifth Republic . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Since)
+      (NP (CD 1958)))
+    (NP (PRP it))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (NP
+          (NP (DT the) (NN seat))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (JJ French) (NNP Senate))
+              (PP (IN of)
+                (NP (DT the) (NNP Fifth) (NNP Republic))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Since
+	1	1958
+			name:	DATE				1-1	1958 
+	2	it
+	3	has
+			sense:	have.v.01
+			prop:	have.01
+			V		3-3	has 
+	4	been
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	been 
+			N-ARGM-TMP		0-1	Since 1958 
+			N-ARG-A1		2-2	it 
+			N-ARG-A2		5-14	the seat of the French Senate of the Fifth Republic 
+	5	the
+	6	seat
+			sense:	seat.n.05
+	7	of
+	8	the
+			coref:	IDENT			2	8-14	the French Senate of the Fifth Republic 
+	9	French
+			name:	NATIONALITY				9-9	French 
+	10	Senate
+			name:	ORGANIZATION				10-10	Senate 
+	11	of
+	12	the
+	13	Fifth
+			name:	LOCATION				13-14	Fifth Republic 
+	14	Republic
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Immediately west of the palace on the rue de Vaugirard is the Petit Luxembourg , now the residence of the Senate President ; and slightly further west , the Musée du Luxembourg , in the former orangery .
+
+
+Treebanked sentence:
+--------------------
+Immediately west of the palace on the rue de Vaugirard is the Petit Luxembourg , now the residence of the Senate President ; and slightly further west , the Musée du Luxembourg , in the former orangery . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Immediately))
+    (ADVP (RB west)
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NN palace))
+          (PP (IN on)
+            (NP (DT the) (FW rue) (FW de))))))
+    (NP (NNP Vaugirard))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NNP Petit) (NNP Luxembourg))
+        (, ,)
+        (RRC
+          (RRC
+            (ADVP (RB now))
+            (NP
+              (NP (DT the) (NN residence))
+              (PP (IN of)
+                (NP (DT the) (NNP Senate) (NNP President) (: ;)))))
+          (CC and)
+          (RRC
+            (ADVP (RB slightly))
+            (NP
+              (NP (JJ further) (NN west))
+              (, ,)
+              (NP (DT the)
+                (NML (NNP Musée) (NNP du))
+                (NNP Luxembourg))
+              (, ,)
+              (PP (IN in)
+                (NP (DT the) (JJ former) (NN orangery))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Immediately
+			sense:	immediately.r.02
+	1	west
+			sense:	west.r.01
+	2	of
+	3	the
+	4	palace
+			sense:	palace.n.01
+	5	on
+	6	the
+	7	rue
+			coref:	IDENT			1	7-9	rue de Vaugirard 
+			name:	LOCATION				7-9	rue de Vaugirard 
+	8	de
+	9	Vaugirard
+	10	is
+			sense:	be.v.03
+			prop:	be.02
+			V		10-10	is 
+			N-ARG-A1		11-21	the Petit Luxembourg , now the residence of the Senate President 
+	11	the
+	12	Petit
+			name:	LOCATION				12-12	Petit 
+	13	Luxembourg
+			name:	COUNTRY				13-13	Luxembourg 
+	14	,
+	15	now
+			name:	DATE				15-15	now 
+			sense:	nowadays.r.01
+	16	the
+	17	residence
+			sense:	residence.n.02
+	18	of
+	19	the
+	20	Senate
+			coref:	IDENT			2	20-20	Senate 
+			name:	ORGANIZATION				20-20	Senate 
+	21	President
+			name:	TITLE				21-21	President 
+	22	;
+	23	and
+	24	slightly
+			sense:	slightly.r.01
+	25	further
+			sense:	further.s.01
+	26	west
+			sense:	west.n.02
+	27	,
+	28	the
+	29	Musée
+	30	du
+	31	Luxembourg
+			name:	COUNTRY				31-31	Luxembourg 
+	32	,
+	33	in
+	34	the
+	35	former
+			sense:	erstwhile.s.01
+	36	orangery
+			sense:	orangery.n.01
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On the south side of the palace , the formal Luxembourg Garden presents a 25-hectare green parterre of gravel and lawn populated with statues and large basins of water where children sail model boats .
+
+
+Treebanked sentence:
+--------------------
+On the south side of the palace , the formal Luxembourg Garden presents a 25 - hectare green parterre of gravel and lawn populated with statues and large basins of water where children sail model boats . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP
+        (NP (DT the) (JJ south) (NN side))
+        (PP (IN of)
+          (NP (DT the) (NN palace)))))
+    (, ,)
+    (NP (DT the) (JJ formal) (NNP Luxembourg) (NNP Garden))
+    (VP (VBZ presents)
+      (NP
+        (NP (DT a)
+          (ADJP
+            (NP (CD 25) (HYPH -) (NN hectare))
+            (JJ green))
+          (NN parterre))
+        (PP (IN of)
+          (NP (NN gravel)
+            (CC and)
+            (NN lawn)))
+        (VP (VBN populated)
+          (PP (IN with)
+            (NP
+              (NP (NNS statues))
+              (CC and)
+              (NP (JJ large) (NNS basins)))))
+        (PP (IN of)
+          (NP
+            (NP (NN water))
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (NNS children))
+                (VP (VBP sail)
+                  (NP (NN model) (NNS boats)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	the
+	2	south
+			sense:	south.a.01
+	3	side
+			sense:	side.n.01
+	4	of
+	5	the
+	6	palace
+			sense:	palace.n.01
+	7	,
+	8	the
+	9	formal
+			sense:	courtly.s.01
+	10	Luxembourg
+			name:	COUNTRY				10-10	Luxembourg 
+	11	Garden
+			name:	LOCATION				11-11	Garden 
+	12	presents
+			sense:	show.v.01
+			prop:	present.01
+			V		12-12	presents 
+			N-ARGM-LOC		0-6	On the south side of the palace 
+			N-ARG-A0		8-11	the formal Luxembourg Garden 
+			N-ARG-A1		13-35	a 25 - hectare green parterre of gravel and lawn populated with statues and large basins of water where children sail model boats 
+	13	a
+	14	25
+			name:	NUMBER				14-16	25 - hectare 
+	15	-
+	16	hectare
+			sense:	hectare.n.01
+	17	green
+			sense:	green.s.01
+	18	parterre
+			sense:	parterre.n.01
+	19	of
+	20	gravel
+			sense:	gravel.n.01
+	21	and
+	22	lawn
+			sense:	lawn.n.01
+	23	populated
+			sense:	populate.v.01
+			prop:	populate.01
+			V		23-23	populated 
+			N-ARG-A1		13-22	a 25 - hectare green parterre of gravel and lawn 
+			N-ARG-A2		24-35	with statues and large basins of water where children sail model boats 
+	24	with
+	25	statues
+			sense:	statue.n.01
+	26	and
+	27	large
+			sense:	large.a.01
+	28	basins
+			sense:	basin.n.03
+	29	of
+	30	water
+			sense:	water.n.01
+	31	where
+	32	children
+			sense:	child.n.01
+	33	sail
+			sense:	sail.v.01
+			prop:	sail.01
+			V		33-33	sail 
+			N-ARGM-LOC		31-31	where 
+			N-ARG-A0		32-32	children 
+			N-ARG-A1		34-35	model boats 
+	34	model
+			name:	TITLE				34-34	model 
+			sense:	model.n.04
+	35	boats
+			sense:	boat.n.01
+	36	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.13-18	the French architect Salomon de Brosse 
+				1.27-30	Marie de ' Medici 
+	Chain 1 (IDENT)
+				0.10-12	rue de Vaugirard 
+				4.7-9	rue de Vaugirard 
+	Chain 2 (IDENT)
+				3.8-14	the French Senate of the Fifth Republic 
+				4.20-20	Senate 
+

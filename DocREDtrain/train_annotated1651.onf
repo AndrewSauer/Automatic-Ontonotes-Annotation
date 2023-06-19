@@ -1,0 +1,574 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+John Stanistreet ( 7 April 1913 – 30 October 1971 ) was an Australian politician .
+
+
+Treebanked sentence:
+--------------------
+John Stanistreet ( 7 April 1913 – 30 October 1971 ) was an Australian politician . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP John) (NNP Stanistreet))
+      (-LRB- -LRB-)
+      (NP
+        (NP
+          (NP (CD 7))
+          (NP-TMP (NNP April) (CD 1913))
+          (PP (SYM –)
+            (NP (CD 30))))
+        (NP-TMP (NNP October) (CD 1971)))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT an) (JJ Australian) (NN politician)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	John
+			name:	PERSON				0-1	John Stanistreet 
+	1	Stanistreet
+	2	(
+	3	7
+			name:	DATE				3-5	7 April 1913 
+	4	April
+	5	1913
+	6	–
+	7	30
+			name:	DATE				7-9	30 October 1971 
+	8	October
+	9	1971
+	10	)
+	11	was
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	was 
+			N-ARG-A1		0-10	John Stanistreet ( 7 April 1913 – 30 October 1971 ) 
+			N-ARG-A2		12-14	an Australian politician 
+	12	an
+	13	Australian
+			name:	NATIONALITY				13-13	Australian 
+	14	politician
+			name:	TITLE				14-14	politician 
+			sense:	politician.n.02
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was born in Bendigo to legal manager John Jepson Stanistreet and Maud McIlroy .
+
+
+Treebanked sentence:
+--------------------
+He was born in Bendigo to legal manager John Jepson Stanistreet and Maud McIlroy . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Bendigo)))
+        (PP (IN to)
+          (NP
+            (NP
+              (NML (JJ legal) (NN manager))
+              (NNP John) (NNP Jepson) (NNP Stanistreet))
+            (CC and)
+            (NP (NNP Maud) (NNP McIlroy))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-4	in Bendigo 
+			N-ARG-A0		5-13	to legal manager John Jepson Stanistreet and Maud McIlroy 
+	3	in
+	4	Bendigo
+			coref:	IDENT			0	4-4	Bendigo 
+			name:	CITY				4-4	Bendigo 
+	5	to
+	6	legal
+			sense:	legal.a.04
+	7	manager
+			name:	TITLE				7-7	manager 
+			sense:	director.n.01
+	8	John
+			name:	PERSON				8-10	John Jepson Stanistreet 
+	9	Jepson
+	10	Stanistreet
+	11	and
+	12	Maud
+			name:	PERSON				12-13	Maud McIlroy 
+	13	McIlroy
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He attended Bendigo High School and Dookie Agricultural College , and in 1929 began working for his father 's accountancy firm .
+
+
+Treebanked sentence:
+--------------------
+He attended Bendigo High School and Dookie Agricultural College , and in 1929 began working for his father 's accountancy firm . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD attended)
+        (NP
+          (NP (NNP Bendigo) (NNP High) (NNP School))
+          (CC and)
+          (NP (NNP Dookie) (NNP Agricultural) (NNP College))))
+      (, ,)
+      (CC and)
+      (PP (IN in)
+        (NP (CD 1929)))
+      (VP (VBD began)
+        (S
+          (VP (VBG working)
+            (PP (IN for)
+              (NP
+                (NP (PRP$ his) (NN father) (POS 's))
+                (NN accountancy) (NN firm)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	attended
+			sense:	attend.v.01
+			prop:	attend.01
+			V		1-1	attended 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-8	Bendigo High School and Dookie Agricultural College 
+	2	Bendigo
+			name:	ORGANIZATION				2-4	Bendigo High School 
+	3	High
+	4	School
+	5	and
+	6	Dookie
+			name:	ORGANIZATION				6-8	Dookie Agricultural College 
+	7	Agricultural
+	8	College
+	9	,
+	10	and
+	11	in
+	12	1929
+			name:	DATE				12-12	1929 
+	13	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		13-13	began 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		11-12	in 1929 
+			N-ARG-A1		14-20	working for his father 's accountancy firm 
+	14	working
+			sense:	work.v.02
+			prop:	work.01
+			V		14-14	working 
+			N-ARG-A0		0-0	He 
+			N-ARG-A2		15-20	for his father 's accountancy firm 
+	15	for
+	16	his
+	17	father
+			sense:	father.n.01
+	18	's
+	19	accountancy
+			sense:	accountancy.n.01
+	20	firm
+			sense:	firm.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He eventually became principal accountant .
+
+
+Treebanked sentence:
+--------------------
+He eventually became principal accountant . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB eventually))
+    (VP (VBD became)
+      (NP (JJ principal) (NN accountant)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	eventually
+			sense:	finally.r.01
+	2	became
+			sense:	become.v.02
+			prop:	become.01
+			V		2-2	became 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		1-1	eventually 
+			N-ARG-A2		3-4	principal accountant 
+	3	principal
+			name:	TITLE				3-4	principal accountant 
+			sense:	chief.s.01
+	4	accountant
+			sense:	accountant.n.01
+	5	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On 9 January 1937 he married Glenice Boswell Leed ; they had one son .
+
+
+Treebanked sentence:
+--------------------
+On 9 January 1937 he married Glenice Boswell Leed ; they had one son . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN On)
+        (NP
+          (NP (CD 9))
+          (NP-TMP (NNP January) (CD 1937))))
+      (NP (PRP he))
+      (VP (VBD married)
+        (NP
+          (NML (NNP Glenice) (NNP Boswell))
+          (NN Leed))))
+    (: ;)
+    (S
+      (NP (PRP they))
+      (VP (VBD had)
+        (NP (CD one) (NN son))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	9
+			name:	DATE				1-3	9 January 1937 
+	2	January
+	3	1937
+	4	he
+	5	married
+			sense:	marry.v.01
+			prop:	marry.01
+			V		5-5	married 
+			N-ARGM-TMP		0-3	On 9 January 1937 
+			N-ARG-A1		4-4	he 
+			N-ARG-A2		6-8	Glenice Boswell Leed 
+	6	Glenice
+			name:	PERSON				6-8	Glenice Boswell Leed 
+	7	Boswell
+	8	Leed
+	9	;
+	10	they
+	11	had
+			sense:	have.v.01
+			prop:	have.03
+			V		11-11	had 
+			N-ARG-A0		10-10	they 
+			N-ARG-A1		12-13	one son 
+	12	one
+			name:	NUMBER				12-12	one 
+	13	son
+			sense:	son.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+During World War I he served in the Royal Australian Air Force , but was wounded in 1942 and invalided back to Australia in 1943 .
+
+
+Treebanked sentence:
+--------------------
+During World War I he served in the Royal Australian Air Force , but was wounded in 1942 and invalided back to Australia in 1943 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN During)
+      (NP (NNP World) (NNP War) (NNP I)))
+    (NP (PRP he))
+    (VP
+      (VP (VBD served)
+        (PP (IN in)
+          (NP (DT the) (NNP Royal)
+            (NML (NNP Australian) (NNP Air))
+            (NNP Force))))
+      (, ,)
+      (CC but)
+      (VP
+        (VP (VBD was)
+          (VP (VBN wounded)
+            (PP (IN in)
+              (NP (CD 1942)))))
+        (CC and)
+        (VP (VBD invalided)
+          (ADVP (RB back)
+            (PP (IN to)
+              (NP (NNP Australia))))
+          (PP (IN in)
+            (NP (CD 1943))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	During
+	1	World
+			name:	MISC				1-1	World 
+	2	War
+			name:	CAUSE_OF_DEATH				2-2	War 
+	3	I
+	4	he
+	5	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		5-5	served 
+			N-ARGM-TMP		0-3	During World War I 
+			N-ARG-A0		4-4	he 
+			N-ARG-A1		6-11	in the Royal Australian Air Force 
+	6	in
+	7	the
+	8	Royal
+	9	Australian
+			name:	NATIONALITY				9-9	Australian 
+	10	Air
+			name:	ORGANIZATION				10-11	Air Force 
+	11	Force
+	12	,
+	13	but
+	14	was
+			sense:	be.v.01
+			prop:	be.03
+			V		14-14	was 
+	15	wounded
+			sense:	injure.v.01
+			prop:	wound.01
+			V		15-15	wounded 
+			N-ARGM-TMP		0-3	During World War I 
+			N-ARG-A1		4-4	he 
+			N-ARGM-TMP		16-17	in 1942 
+	16	in
+	17	1942
+			name:	DATE				17-17	1942 
+	18	and
+	19	invalided
+			prop:	inhabit.01
+			V		19-19	invalided 
+			N-ARGM-TMP		0-3	During World War I 
+			N-ARG-A1		20-22	back to Australia 
+			N-ARGM-TMP		23-24	in 1943 
+	20	back
+			sense:	back.r.01
+	21	to
+	22	Australia
+			name:	COUNTRY				22-22	Australia 
+	23	in
+	24	1943
+			name:	DATE				24-24	1943 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1955 he was elected to the Victorian Legislative Assembly as the Liberal and Country Party member for Bendigo , but he was defeated in 1958 .
+
+
+Treebanked sentence:
+--------------------
+In 1955 he was elected to the Victorian Legislative Assembly as the Liberal and Country Party member for Bendigo , but he was defeated in 1958 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN In)
+        (NP (CD 1955)))
+      (NP (PRP he))
+      (VP (VBD was)
+        (VP (VBN elected)
+          (PP (IN to)
+            (NP
+              (NP (DT the) (JJ Victorian) (JJ Legislative) (NNP Assembly))
+              (PP (IN as)
+                (NP (DT the)
+                  (NML
+                    (NML (NNP Liberal))
+                    (CC and)
+                    (NML (NNP Country) (NNP Party)))
+                  (NN member)))))
+          (PP (IN for)
+            (NP (NNP Bendigo))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP he))
+      (VP (VBD was)
+        (VP (VBN defeated)
+          (PP (IN in)
+            (NP (CD 1958))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1955
+			name:	DATE				1-1	1955 
+	2	he
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		4-4	elected 
+			N-ARGM-TMP		0-1	In 1955 
+			N-ARG-A1		2-2	he 
+			N-ARG-A2		5-9	to the Victorian Legislative Assembly 
+			N-ARGM-PRD		10-18	as the Liberal and Country Party member for Bendigo 
+	5	to
+	6	the
+	7	Victorian
+			name:	ORGANIZATION				7-9	Victorian Legislative Assembly 
+	8	Legislative
+			sense:	legislative.a.01
+	9	Assembly
+	10	as
+	11	the
+	12	Liberal
+			name:	ORGANIZATION				12-15	Liberal and Country Party 
+	13	and
+	14	Country
+	15	Party
+	16	member
+			sense:	member.n.01
+	17	for
+	18	Bendigo
+			coref:	IDENT			0	18-18	Bendigo 
+			name:	ORGANIZATION				18-18	Bendigo 
+	19	,
+	20	but
+	21	he
+	22	was
+			sense:	be.v.01
+			prop:	be.03
+			V		22-22	was 
+	23	defeated
+			sense:	kill.v.02
+			prop:	defeat.01
+			V		23-23	defeated 
+			N-ARG-A1		21-21	he 
+			N-ARGM-TMP		24-25	in 1958 
+	24	in
+	25	1958
+			name:	DATE				25-25	1958 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Stanistreet died in Bendigo in 1971 .
+
+
+Treebanked sentence:
+--------------------
+Stanistreet died in Bendigo in 1971 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Stanistreet))
+    (VP (VBD died)
+      (PP (IN in)
+        (NP (NNP Bendigo)))
+      (PP (IN in)
+        (NP (CD 1971))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Stanistreet
+			name:	PERSON				0-0	Stanistreet 
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	Stanistreet 
+			N-ARGM-LOC		2-3	in Bendigo 
+			N-ARGM-TMP		4-5	in 1971 
+	2	in
+	3	Bendigo
+			coref:	IDENT			0	3-3	Bendigo 
+			name:	CITY				3-3	Bendigo 
+	4	in
+	5	1971
+			name:	DATE				5-5	1971 
+	6	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.4-4	Bendigo 
+				6.18-18	Bendigo 
+				7.3-3	Bendigo 
+

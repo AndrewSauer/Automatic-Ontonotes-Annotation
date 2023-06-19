@@ -1,0 +1,650 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Eclipse Aviation Corporation was the Albuquerque , New Mexico - based manufacturer of the Eclipse 500 very light jet ( VLJ ) and also at one time proposed developing the Eclipse 400 single - engined jet .
+
+
+Treebanked sentence:
+--------------------
+Eclipse Aviation Corporation was the Albuquerque , New Mexico - based manufacturer of the Eclipse 500 very light jet ( VLJ ) and also at one time proposed developing the Eclipse 400 single - engined jet . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NML (NNP Eclipse) (NNP Aviation))
+      (NNP Corporation))
+    (VP
+      (VP (VBD was)
+        (NP
+          (NP (DT the)
+            (ADJP
+              (NP
+                (NP (NNP Albuquerque))
+                (, ,)
+                (NP (NNP New) (NNP Mexico)))
+              (HYPH -) (VBN based))
+            (NN manufacturer))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN Eclipse))
+              (NP (CD 500)
+                (ADJP (RB very) (JJ light))
+                (NN jet)))))
+        (PRN (-LRB- -LRB-)
+          (NP (NN VLJ))
+          (-RRB- -RRB-)))
+      (CC and)
+      (ADVP (RB also))
+      (ADVP (IN at)
+        (NP (CD one) (NN time)))
+      (VP (VBN proposed)
+        (S
+          (VP (VBG developing)
+            (NP
+              (NP (DT the) (NN Eclipse))
+              (NP (CD 400)
+                (ADJP (JJ single) (HYPH -) (JJ engined))
+                (NN jet)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Eclipse
+			name:	ORGANIZATION				0-2	Eclipse Aviation Corporation 
+	1	Aviation
+	2	Corporation
+	3	was
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	was 
+			N-ARG-A1		0-2	Eclipse Aviation Corporation 
+			N-ARG-A2		4-21	the Albuquerque , New Mexico - based manufacturer of the Eclipse 500 very light jet ( VLJ ) 
+	4	the
+	5	Albuquerque
+			name:	CITY				5-5	Albuquerque 
+	6	,
+	7	New
+			name:	STATE_OR_PROVINCE				7-8	New Mexico 
+	8	Mexico
+	9	-
+	10	based
+			sense:	base.v.02
+			prop:	base.01
+			V		10-10	based 
+			N-ARGM-LOC		5-8	Albuquerque , New Mexico 
+			N-ARG-A1		11-11	manufacturer 
+	11	manufacturer
+			name:	TITLE				11-11	manufacturer 
+			sense:	manufacturer.n.01
+	12	of
+	13	the
+	14	Eclipse
+			sense:	eclipse.n.01
+	15	500
+			name:	NUMBER				15-15	500 
+	16	very
+			sense:	very.r.01
+	17	light
+			sense:	light.a.01
+	18	jet
+			sense:	jet.n.01
+	19	(
+	20	VLJ
+	21	)
+	22	and
+	23	also
+			sense:	besides.r.02
+	24	at
+	25	one
+			name:	NUMBER				25-25	one 
+	26	time
+			sense:	time.n.01
+	27	proposed
+			sense:	project.v.08
+			prop:	propose.01
+			V		27-27	proposed 
+			N-ARG-A0		0-2	Eclipse Aviation Corporation 
+			N-ARGM-ADV		23-23	also 
+			N-ARGM-TMP		24-26	at one time 
+			N-ARG-A1		28-35	developing the Eclipse 400 single - engined jet 
+	28	developing
+			sense:	develop.v.01
+			prop:	develop.02
+			V		28-28	developing 
+			N-ARG-A0		0-2	Eclipse Aviation Corporation 
+			N-ARG-A1		29-35	the Eclipse 400 single - engined jet 
+	29	the
+	30	Eclipse
+			name:	MISC				30-30	Eclipse 
+			sense:	eclipse.n.01
+	31	400
+			name:	NUMBER				31-31	400 
+	32	single
+			sense:	individual.a.01
+	33	-
+	34	engined
+	35	jet
+			sense:	jet.n.01
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The company was founded in 1998 by early Microsoft employee and former Symantec CEO , Vern Raburn .
+
+
+Treebanked sentence:
+--------------------
+The company was founded in 1998 by early Microsoft employee and former Symantec CEO , Vern Raburn . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN company))
+    (VP (VBD was)
+      (VP (VBN founded)
+        (PP (IN in)
+          (NP (CD 1998)))
+        (PP (IN by)
+          (NP
+            (NP (JJ early) (NNP Microsoft)
+              (NML
+                (NML (NN employee))
+                (CC and)
+                (NML (JJ former) (NNP Symantec)))
+              (NNP CEO))
+            (, ,)
+            (NP (NNP Vern) (NNP Raburn))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	company
+			sense:	company.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		3-3	founded 
+			N-ARG-A1		0-1	The company 
+			N-ARGM-TMP		4-5	in 1998 
+			N-ARG-A0		6-16	by early Microsoft employee and former Symantec CEO , Vern Raburn 
+	4	in
+	5	1998
+			name:	DATE				5-5	1998 
+	6	by
+	7	early
+			sense:	early.a.01
+	8	Microsoft
+			coref:	IDENT			1	8-8	Microsoft 
+			name:	ORGANIZATION				8-8	Microsoft 
+	9	employee
+			sense:	employee.n.01
+	10	and
+	11	former
+			sense:	erstwhile.s.01
+	12	Symantec
+			name:	ORGANIZATION				12-12	Symantec 
+	13	CEO
+			name:	TITLE				13-13	CEO 
+	14	,
+	15	Vern
+			coref:	IDENT			0	15-16	Vern Raburn 
+			name:	PERSON				15-16	Vern Raburn 
+	16	Raburn
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Due to Raburn 's relationship with Microsoft , Bill Gates was a major stake - holder in the Eclipse project .
+
+
+Treebanked sentence:
+--------------------
+Due to Raburn 's relationship with Microsoft , Bill Gates was a major stake - holder in the Eclipse project . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Due)
+      (PP (IN to)
+        (NP
+          (NP
+            (NP (NNP Raburn) (POS 's))
+            (NN relationship))
+          (PP (IN with)
+            (NP (NNP Microsoft))))))
+    (, ,)
+    (NP (NNP Bill) (NNP Gates))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ major) (NN stake) (HYPH -) (NN holder))
+        (PP (IN in)
+          (NP (DT the) (NN Eclipse) (NN project)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Due
+	1	to
+	2	Raburn
+			coref:	IDENT			0	2-3	Raburn 's 
+			name:	PERSON				2-2	Raburn 
+	3	's
+	4	relationship
+			sense:	relationship.n.03
+	5	with
+	6	Microsoft
+			coref:	IDENT			1	6-6	Microsoft 
+			name:	ORGANIZATION				6-6	Microsoft 
+	7	,
+	8	Bill
+			name:	PERSON				8-9	Bill Gates 
+	9	Gates
+	10	was
+			sense:	be.v.01
+			prop:	be.01
+			V		10-10	was 
+			N-ARGM-CAU		0-6	Due to Raburn 's relationship with Microsoft 
+			N-ARG-A1		8-9	Bill Gates 
+			N-ARG-A2		11-19	a major stake - holder in the Eclipse project 
+	11	a
+	12	major
+			sense:	major.a.01
+	13	stake
+			sense:	interest.n.05
+	14	-
+	15	holder
+			sense:	holder.n.03
+	16	in
+	17	the
+	18	Eclipse
+			sense:	eclipse.n.01
+	19	project
+			sense:	undertaking.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Production of the Eclipse 500 was halted in October 2008 due to lack of funding .
+
+
+Treebanked sentence:
+--------------------
+Production of the Eclipse 500 was halted in October 2008 due to lack of funding . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NN Production))
+      (PP (IN of)
+        (NP (DT the) (NN Eclipse) (CD 500))))
+    (VP (VBD was)
+      (VP (VBN halted)
+        (PP (IN in)
+          (NP (NNP October) (CD 2008)))
+        (PP (IN due)
+          (PP (IN to)
+            (NP
+              (NP (NN lack))
+              (PP (IN of)
+                (NP (NN funding))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Production
+			sense:	production.n.01
+	1	of
+	2	the
+	3	Eclipse
+			name:	MISC				3-3	Eclipse 
+			sense:	eclipse.n.01
+	4	500
+			name:	NUMBER				4-4	500 
+	5	was
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	was 
+	6	halted
+			sense:	stop.v.03
+			prop:	halt.01
+			V		6-6	halted 
+			N-ARG-A1		0-4	Production of the Eclipse 500 
+			N-ARGM-TMP		7-9	in October 2008 
+			N-ARGM-CAU		10-14	due to lack of funding 
+	7	in
+	8	October
+			name:	DATE				8-9	October 2008 
+	9	2008
+	10	due
+	11	to
+	12	lack
+			sense:	lack.n.01
+	13	of
+	14	funding
+			sense:	support.n.11
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The company entered an unsuccessful Chapter 11 bankruptcy in November 2008 , which was converted into a Chapter 7 bankruptcy liquidation procedure in February 2009 .
+
+
+Treebanked sentence:
+--------------------
+The company entered an unsuccessful Chapter 11 bankruptcy in November 2008 , which was converted into a Chapter 7 bankruptcy liquidation procedure in February 2009 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN company))
+    (VP (VBD entered)
+      (NP (DT an) (JJ unsuccessful)
+        (NML (NN Chapter) (CD 11))
+        (NN bankruptcy))
+      (PP (IN in)
+        (NP
+          (NP (NNP November) (CD 2008))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBD was)
+                (VP (VBN converted)
+                  (PP (IN into)
+                    (NP
+                      (NP (DT a)
+                        (NML (NN Chapter) (CD 7))
+                        (NML (NN bankruptcy) (NN liquidation))
+                        (NN procedure))
+                      (PP (IN in)
+                        (NP (NNP February) (CD 2009))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	company
+			sense:	company.n.01
+	2	entered
+			sense:	enter.v.01
+			prop:	enter.01
+			V		2-2	entered 
+			N-ARG-A0		0-1	The company 
+			N-ARG-A1		3-7	an unsuccessful Chapter 11 bankruptcy 
+			N-ARGM-TMP		8-10	in November 2008 
+			C-ARG-A1		12-24	which was converted into a Chapter 7 bankruptcy liquidation procedure in February 2009 
+	3	an
+	4	unsuccessful
+			sense:	unsuccessful.a.01
+	5	Chapter
+			name:	MISC				5-5	Chapter 
+			sense:	chapter.n.01
+	6	11
+			name:	NUMBER				6-6	11 
+	7	bankruptcy
+			sense:	bankruptcy.n.03
+	8	in
+	9	November
+			name:	DATE				9-10	November 2008 
+	10	2008
+	11	,
+	12	which
+	13	was
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	was 
+	14	converted
+			sense:	convert.v.01
+			prop:	convert.01
+			V		14-14	converted 
+			N-ARG-A1		3-7	an unsuccessful Chapter 11 bankruptcy 
+			R-ARG-A1		12-12	which 
+			N-ARG-A2		15-21	into a Chapter 7 bankruptcy liquidation procedure 
+			N-ARGM-TMP		22-24	in February 2009 
+	15	into
+	16	a
+	17	Chapter
+			sense:	chapter.n.01
+	18	7
+			name:	NUMBER				18-18	7 
+	19	bankruptcy
+			sense:	bankruptcy.n.03
+	20	liquidation
+			sense:	liquidation.n.01
+	21	procedure
+			sense:	procedure.n.01
+	22	in
+	23	February
+			name:	DATE				23-24	February 2009 
+	24	2009
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the final Chapter 7 procedure , completed on August 20 , 2009 , there was only one bidder , a new company formed to acquire the assets , Eclipse Aerospace .
+
+
+Treebanked sentence:
+--------------------
+In the final Chapter 7 procedure , completed on August 20 , 2009 , there was only one bidder , a new company formed to acquire the assets , Eclipse Aerospace . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN In)
+        (NP
+          (NP (DT the) (JJ final)
+            (NML (NN Chapter) (CD 7))
+            (NN procedure))
+          (, ,)
+          (VP (VBN completed)
+            (PP (IN on)
+              (NP (NNP August) (CD 20) (, ,) (CD 2009))))))
+      (, ,)
+      (NP (EX there))
+      (VP (VBD was)
+        (NP (RB only) (CD one) (NN bidder))))
+    (, ,)
+    (NP (DT a) (JJ new) (NN company))
+    (VP (VBD formed)
+      (S
+        (VP (TO to)
+          (VP (VB acquire)
+            (NP
+              (NP (DT the) (NNS assets))
+              (, ,)
+              (NP (NNP Eclipse) (NNP Aerospace)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+	2	final
+			sense:	concluding.s.01
+	3	Chapter
+			sense:	chapter.n.01
+	4	7
+			name:	NUMBER				4-4	7 
+	5	procedure
+			sense:	procedure.n.01
+	6	,
+	7	completed
+			sense:	complete.v.01
+			prop:	complete.01
+			V		7-7	completed 
+			N-ARG-A1		1-5	the final Chapter 7 procedure 
+			N-ARGM-TMP		8-12	on August 20 , 2009 
+	8	on
+	9	August
+			name:	DATE				9-12	August 20 , 2009 
+	10	20
+	11	,
+	12	2009
+	13	,
+	14	there
+	15	was
+			sense:	exist.v.01
+			prop:	be.02
+			V		15-15	was 
+			N-ARGM-LOC		0-12	In the final Chapter 7 procedure , completed on August 20 , 2009 
+			N-ARG-A1		16-30	only one bidder , a new company formed to acquire the assets , Eclipse Aerospace 
+	16	only
+			sense:	entirely.r.02
+	17	one
+			name:	NUMBER				17-17	one 
+	18	bidder
+			sense:	bidder.n.01
+	19	,
+	20	a
+	21	new
+			sense:	new.a.01
+	22	company
+			sense:	company.n.01
+	23	formed
+			sense:	form.v.01
+			prop:	form.01
+			V		23-23	formed 
+			N-ARG-A1		20-22	a new company 
+			N-ARGM-PRP		24-27	to acquire the assets 
+	24	to
+	25	acquire
+			sense:	get.v.01
+			prop:	acquire.01
+			V		25-25	acquire 
+			N-ARG-A1		26-27	the assets 
+	26	the
+	27	assets
+			sense:	asset.n.01
+	28	,
+	29	Eclipse
+			name:	ORGANIZATION				29-30	Eclipse Aerospace 
+	30	Aerospace
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Eclipse operated service centers at Albuquerque International Sunport , Gainesville Regional Airport in Florida , and Albany International Airport in New York .
+
+
+Treebanked sentence:
+--------------------
+Eclipse operated service centers at Albuquerque International Sunport , Gainesville Regional Airport in Florida , and Albany International Airport in New York . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN Eclipse))
+    (VP (VBD operated)
+      (NP
+        (NP
+          (NP (NN service) (NNS centers))
+          (PP (IN at)
+            (NP (NNP Albuquerque) (NNP International) (NNP Sunport))))
+        (, ,)
+        (NP
+          (NP (NNP Gainesville) (NNP Regional) (NNP Airport))
+          (PP (IN in)
+            (NP (NNP Florida))))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (NNP Albany) (NNP International) (NNP Airport))
+          (PP (IN in)
+            (NP (NNP New) (NNP York))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Eclipse
+			sense:	eclipse.n.01
+	1	operated
+			sense:	operate.v.01
+			prop:	operate.01
+			V		1-1	operated 
+			N-ARG-A0		0-0	Eclipse 
+			N-ARG-A1		2-3	service centers 
+	2	service
+			sense:	service.n.01
+	3	centers
+			sense:	center.n.03
+	4	at
+	5	Albuquerque
+			name:	CITY				5-5	Albuquerque 
+	6	International
+			name:	LOCATION				6-7	International Sunport 
+	7	Sunport
+	8	,
+	9	Gainesville
+			name:	CITY				9-9	Gainesville 
+	10	Regional
+	11	Airport
+	12	in
+	13	Florida
+			name:	STATE_OR_PROVINCE				13-13	Florida 
+	14	,
+	15	and
+	16	Albany
+			name:	CITY				16-16	Albany 
+	17	International
+			name:	LOCATION				17-18	International Airport 
+	18	Airport
+	19	in
+	20	New
+			name:	STATE_OR_PROVINCE				20-21	New York 
+	21	York
+	22	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.15-16	Vern Raburn 
+				2.2-3	Raburn 's 
+	Chain 1 (IDENT)
+				1.8-8	Microsoft 
+				2.6-6	Microsoft 
+

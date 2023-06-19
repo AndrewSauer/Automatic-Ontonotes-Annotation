@@ -1,0 +1,572 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Bartlesville Boosters were a minor league baseball team that existed on - and - off from 1907 to 1924 .
+
+
+Treebanked sentence:
+--------------------
+The Bartlesville Boosters were a minor league baseball team that existed on - and - off from 1907 to 1924 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Bartlesville) (NNPS Boosters))
+    (VP (VBD were)
+      (NP
+        (NP (DT a)
+          (NML (JJ minor) (NN league))
+          (NN baseball) (NN team))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD existed)
+              (VP (IN on) (HYPH -)
+                (CC and)
+                (HYPH -)
+                (ADVP (RP off)
+                  (PP (IN from)
+                    (NP
+                      (QP (CD 1907) (IN to) (CD 1924)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Bartlesville
+			name:	ORGANIZATION				1-2	Bartlesville Boosters 
+	2	Boosters
+	3	were
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	were 
+			N-ARG-A1		0-2	The Bartlesville Boosters 
+			N-ARG-A2		4-19	a minor league baseball team that existed on - and - off from 1907 to 1924 
+	4	a
+	5	minor
+			sense:	minor.a.01
+	6	league
+			sense:	league.n.01
+	7	baseball
+			sense:	baseball.n.01
+	8	team
+			sense:	team.n.01
+	9	that
+	10	existed
+			sense:	exist.v.01
+			prop:	exist.01
+			V		10-10	existed 
+			N-ARG-A1		4-8	a minor league baseball team 
+			R-ARG-A1		9-9	that 
+			N-ARGM-MNR		11-12	on - 
+			N-ARGM-TMP		16-19	from 1907 to 1924 
+	11	on
+	12	-
+	13	and
+	14	-
+	15	off
+	16	from
+	17	1907
+			name:	DATE				17-19	1907 to 1924 
+	18	to
+	19	1924
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The team , based in Bartlesville , Oklahoma , USA , played in the Oklahoma – Arkansas – Kansas League ( 1907 ) , Oklahoma – Kansas League ( 1908 ) and Western Association ( 1909 – 1910 , 1924 ) .
+
+
+Treebanked sentence:
+--------------------
+The team , based in Bartlesville , Oklahoma , USA , played in the Oklahoma – Arkansas – Kansas League ( 1907 ) , Oklahoma – Kansas League ( 1908 ) and Western Association ( 1909 – 1910 , 1924 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN team))
+      (, ,)
+      (VP (VBN based)
+        (PP (IN in)
+          (NP
+            (NML (NNP Bartlesville) (, ,) (NNP Oklahoma) (, ,))
+            (NNP USA))))
+      (, ,))
+    (VP (VBN played)
+      (PP (IN in)
+        (NP (DT the)
+          (NML
+            (NML
+              (NML
+                (NML (NNP Oklahoma))
+                (PP (SYM –)
+                  (NP (NNP Arkansas))))
+              (PP (SYM –)
+                (NP (NNP Kansas) (NNP League)))
+              (PRN (-LRB- -LRB-)
+                (NP (CD 1907))
+                (-RRB- -RRB-)))
+            (, ,)
+            (NML
+              (NML (NNP Oklahoma))
+              (PP (SYM –)
+                (NP (NNP Kansas) (NNP League)))
+              (PRN (-LRB- -LRB-)
+                (NP (CD 1908))
+                (-RRB- -RRB-)))
+            (CC and)
+            (NML (NNP Western)))
+          (NNP Association)))
+      (PRN (-LRB- -LRB-)
+        (NP (CD 1909) (SYM –) (CD 1910))
+        (, ,)
+        (NP (CD 1924))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			8	0-9	The team , based in Bartlesville , Oklahoma , USA 
+	1	team
+			sense:	team.n.01
+	2	,
+	3	based
+			sense:	base.v.02
+			prop:	base.01
+			V		3-3	based 
+			N-ARG-A1		0-1	The team 
+			N-ARGM-LOC		4-9	in Bartlesville , Oklahoma , USA 
+	4	in
+	5	Bartlesville
+			name:	CITY				5-5	Bartlesville 
+	6	,
+	7	Oklahoma
+			coref:	IDENT			4	7-7	Oklahoma 
+			name:	STATE_OR_PROVINCE				7-7	Oklahoma 
+	8	,
+	9	USA
+			name:	COUNTRY				9-9	USA 
+	10	,
+	11	played
+			sense:	play.v.01
+			prop:	play.01
+			V		11-11	played 
+			N-ARG-A0		0-9	The team , based in Bartlesville , Oklahoma , USA 
+			N-ARGM-LOC		12-40	in the Oklahoma – Arkansas – Kansas League ( 1907 ) , Oklahoma – Kansas League ( 1908 ) and Western Association ( 1909 – 1910 , 1924 ) 
+	12	in
+	13	the
+	14	Oklahoma
+			coref:	IDENT			4	14-14	Oklahoma 
+			name:	STATE_OR_PROVINCE				14-14	Oklahoma 
+	15	–
+	16	Arkansas
+			name:	STATE_OR_PROVINCE				16-16	Arkansas 
+	17	–
+	18	Kansas
+			coref:	IDENT			7	18-19	Kansas League 
+			name:	STATE_OR_PROVINCE				18-18	Kansas 
+	19	League
+			name:	MISC				19-19	League 
+	20	(
+	21	1907
+			coref:	IDENT			1	21-21	1907 
+			name:	DATE				21-21	1907 
+	22	)
+	23	,
+	24	Oklahoma
+			coref:	IDENT			4	24-24	Oklahoma 
+			name:	STATE_OR_PROVINCE				24-24	Oklahoma 
+	25	–
+	26	Kansas
+			coref:	IDENT			7	26-27	Kansas League 
+			name:	ORGANIZATION				26-27	Kansas League 
+	27	League
+	28	(
+	29	1908
+			coref:	IDENT			5	29-29	1908 
+			name:	DATE				29-29	1908 
+	30	)
+	31	and
+	32	Western
+			name:	ORGANIZATION				32-33	Western Association 
+	33	Association
+	34	(
+	35	1909
+			coref:	IDENT			0	35-35	1909 
+			name:	DATE				35-35	1909 
+	36	–
+	37	1910
+			coref:	IDENT			3	37-37	1910 
+			name:	DATE				37-37	1910 
+	38	,
+	39	1924
+			name:	DATE				39-39	1924 
+	40	)
+	41	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Major leaguers Larry Cheney and Art Thomason played for the team in 1907 .
+
+
+Treebanked sentence:
+--------------------
+Major leaguers Larry Cheney and Art Thomason played for the team in 1907 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (JJ Major) (NNS leaguers))
+      (NP
+        (NP (NNP Larry) (NNP Cheney))
+        (CC and)
+        (NP (NNP Art) (NNP Thomason))))
+    (VP (VBD played)
+      (PP (IN for)
+        (NP
+          (NP (DT the) (NN team))
+          (PP (IN in)
+            (NP (CD 1907))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Major
+			name:	TITLE				0-0	Major 
+			sense:	major.a.01
+	1	leaguers
+	2	Larry
+			name:	PERSON				2-3	Larry Cheney 
+	3	Cheney
+	4	and
+	5	Art
+			name:	PERSON				5-6	Art Thomason 
+	6	Thomason
+	7	played
+			sense:	play.v.01
+			prop:	play.01
+			V		7-7	played 
+			N-ARG-A0		0-6	Major leaguers Larry Cheney and Art Thomason 
+			N-ARGM-TMP		11-12	in 1907 
+	8	for
+	9	the
+	10	team
+			sense:	team.n.01
+	11	in
+	12	1907
+			coref:	IDENT			1	12-12	1907 
+			name:	DATE				12-12	1907 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Cheney returned in 1908 and was joined by Ray Powell and manager Gus Alberts , both of whom also played in the big leagues .
+
+
+Treebanked sentence:
+--------------------
+Cheney returned in 1908 and was joined by Ray Powell and manager Gus Alberts , both of whom also played in the big leagues . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Cheney))
+    (VP
+      (VP (VBD returned)
+        (PP (IN in)
+          (NP (CD 1908))))
+      (CC and)
+      (VP (VBD was)
+        (VP (VBN joined)
+          (PP (IN by)
+            (NP
+              (NP
+                (NP (NNP Ray) (NNP Powell))
+                (CC and)
+                (NP (NN manager) (NNP Gus) (NNP Alberts)))
+              (, ,)
+              (SBAR
+                (WHNP
+                  (NP (DT both))
+                  (WHPP (IN of)
+                    (WHNP (WP whom))))
+                (S
+                  (ADVP (RB also))
+                  (VP (VBD played)
+                    (PP (IN in)
+                      (NP (DT the) (JJ big) (NNS leagues)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Cheney
+			name:	PERSON				0-0	Cheney 
+	1	returned
+			sense:	return.v.01
+			prop:	return.01
+			V		1-1	returned 
+			N-ARG-A1		0-0	Cheney 
+			N-ARGM-TMP		2-3	in 1908 
+	2	in
+	3	1908
+			coref:	IDENT			5	3-3	1908 
+			name:	DATE				3-3	1908 
+	4	and
+	5	was
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	was 
+	6	joined
+			sense:	join.v.01
+			prop:	join.01
+			V		6-6	joined 
+			N-ARG-A1		0-0	Cheney 
+			N-ARG-A0		7-23	by Ray Powell and manager Gus Alberts , both of whom also played in the big leagues 
+	7	by
+	8	Ray
+			name:	PERSON				8-9	Ray Powell 
+	9	Powell
+	10	and
+	11	manager
+			name:	TITLE				11-11	manager 
+			sense:	coach.n.01
+	12	Gus
+			name:	PERSON				12-13	Gus Alberts 
+	13	Alberts
+	14	,
+	15	both
+	16	of
+	17	whom
+	18	also
+			sense:	besides.r.02
+	19	played
+			sense:	play.v.01
+			prop:	play.01
+			V		19-19	played 
+			N-ARG-A0		8-13	Ray Powell and manager Gus Alberts 
+			R-ARG-A0		15-17	both of whom 
+			N-ARGM-DIS		18-18	also 
+			N-ARGM-LOC		20-23	in the big leagues 
+	20	in
+	21	the
+	22	big
+			sense:	large.a.01
+	23	leagues
+			sense:	league.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+George Cochran , Bert Graham , Powell , Claude Thomas and John Vann played for them in 1909 .
+
+
+Treebanked sentence:
+--------------------
+George Cochran , Bert Graham , Powell , Claude Thomas and John Vann played for them in 1909 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP George) (NNP Cochran))
+      (, ,)
+      (NP (NNP Bert) (NNP Graham))
+      (, ,)
+      (NP (NNP Powell))
+      (, ,)
+      (NP (NNP Claude) (NNP Thomas))
+      (CC and)
+      (NP (NNP John) (NNP Vann)))
+    (VP (VBD played)
+      (PP (IN for)
+        (NP (PRP them)))
+      (PP (IN in)
+        (NP (CD 1909))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	George
+			coref:	IDENT			2	0-12	George Cochran , Bert Graham , Powell , Claude Thomas and John Vann 
+			name:	PERSON				0-1	George Cochran 
+	1	Cochran
+	2	,
+	3	Bert
+			name:	PERSON				3-4	Bert Graham 
+	4	Graham
+	5	,
+	6	Powell
+			name:	PERSON				6-6	Powell 
+	7	,
+	8	Claude
+			coref:	IDENT			6	8-9	Claude Thomas 
+			name:	PERSON				8-9	Claude Thomas 
+	9	Thomas
+	10	and
+	11	John
+			name:	PERSON				11-12	John Vann 
+	12	Vann
+	13	played
+			sense:	play.v.01
+			prop:	play.01
+			V		13-13	played 
+			N-ARG-A0		0-12	George Cochran , Bert Graham , Powell , Claude Thomas and John Vann 
+			N-ARGM-ADV		14-15	for them 
+			N-ARGM-TMP		16-17	in 1909 
+	14	for
+	15	them
+			coref:	IDENT			2	15-15	them 
+	16	in
+	17	1909
+			coref:	IDENT			0	17-17	1909 
+			name:	DATE				17-17	1909 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Future Hall of Famer Jake Beckley joined the team as a player - manager in 1910 , alongside Verne Clemons , Cochran , Thomas and Lon Ury .
+
+
+Treebanked sentence:
+--------------------
+Future Hall of Famer Jake Beckley joined the team as a player - manager in 1910 , alongside Verne Clemons , Cochran , Thomas and Lon Ury . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Future) (NNP Hall))
+      (PP (IN of)
+        (NP (NNP Famer) (NNP Jake) (NNP Beckley))))
+    (VP (VBD joined)
+      (NP (DT the) (NN team))
+      (PP (IN as)
+        (NP
+          (NP (DT a) (NN player) (HYPH -) (NN manager))
+          (PP (IN in)
+            (NP (CD 1910)))))
+      (, ,)
+      (PP (IN alongside)
+        (NP (NNP Verne) (NNP Clemons) (, ,) (NNP Cochran) (, ,) (NNP Thomas)
+          (CC and)
+          (NNP Lon) (NNP Ury))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Future
+			name:	DATE				0-0	Future 
+	1	Hall
+	2	of
+	3	Famer
+	4	Jake
+			name:	PERSON				4-5	Jake Beckley 
+	5	Beckley
+	6	joined
+			sense:	join.v.01
+			prop:	join.01
+			V		6-6	joined 
+			N-ARG-A0		0-5	Future Hall of Famer Jake Beckley 
+			N-ARG-A1		7-8	the team 
+			N-ARGM-PRD		9-13	as a player - manager 
+			N-ARGM-TMP		14-15	in 1910 
+			N-ARGM-LOC		17-26	alongside Verne Clemons , Cochran , Thomas and Lon Ury 
+	7	the
+			coref:	IDENT			8	7-8	the team 
+	8	team
+			sense:	team.n.01
+	9	as
+	10	a
+	11	player
+			sense:	player.n.01
+	12	-
+	13	manager
+			name:	TITLE				13-13	manager 
+			sense:	coach.n.01
+	14	in
+	15	1910
+			coref:	IDENT			3	15-15	1910 
+			name:	DATE				15-15	1910 
+	16	,
+	17	alongside
+	18	Verne
+			name:	PERSON				18-19	Verne Clemons 
+	19	Clemons
+	20	,
+	21	Cochran
+			name:	PERSON				21-21	Cochran 
+	22	,
+	23	Thomas
+			coref:	IDENT			6	23-23	Thomas 
+			name:	PERSON				23-23	Thomas 
+	24	and
+	25	Lon
+			name:	PERSON				25-26	Lon Ury 
+	26	Ury
+	27	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.35-35	1909 
+				4.17-17	1909 
+	Chain 1 (IDENT)
+				1.21-21	1907 
+				2.12-12	1907 
+	Chain 2 (IDENT)
+				4.0-12	George Cochran , Bert Graham , Powell , Claude Thomas and John Vann 
+				4.15-15	them 
+	Chain 3 (IDENT)
+				1.37-37	1910 
+				5.15-15	1910 
+	Chain 4 (IDENT)
+				1.7-7	Oklahoma 
+				1.14-14	Oklahoma 
+				1.24-24	Oklahoma 
+	Chain 5 (IDENT)
+				1.29-29	1908 
+				3.3-3	1908 
+	Chain 6 (IDENT)
+				4.8-9	Claude Thomas 
+				5.23-23	Thomas 
+	Chain 7 (IDENT)
+				1.18-19	Kansas League 
+				1.26-27	Kansas League 
+	Chain 8 (IDENT)
+				1.0-9	The team , based in Bartlesville , Oklahoma , USA 
+				5.7-8	the team 
+

@@ -1,0 +1,811 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Estimates of casualties of the Vietnam War vary widely .
+
+
+Treebanked sentence:
+--------------------
+Estimates of casualties of the Vietnam War vary widely . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNS Estimates))
+      (PP (IN of)
+        (NP
+          (NP (NNS casualties))
+          (PP (IN of)
+            (NP (DT the) (NNP Vietnam) (NNP War))))))
+    (VP (VBP vary)
+      (ADVP (RB widely)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Estimates
+			sense:	estimate.n.01
+	1	of
+	2	casualties
+			sense:	casualty.n.01
+	3	of
+	4	the
+			coref:	IDENT			2	4-6	the Vietnam War 
+	5	Vietnam
+			name:	COUNTRY				5-5	Vietnam 
+	6	War
+			name:	CAUSE_OF_DEATH				6-6	War 
+	7	vary
+			sense:	deviate.v.02
+			prop:	vary.01
+			V		7-7	vary 
+			N-ARG-A1		0-6	Estimates of casualties of the Vietnam War 
+			N-ARG-A2		8-8	widely 
+	8	widely
+			sense:	widely.r.01
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Estimates include both civilian and military deaths in North and South Vietnam , Laos , and Cambodia .
+
+
+Treebanked sentence:
+--------------------
+Estimates include both civilian and military deaths in North and South Vietnam , Laos , and Cambodia . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNS Estimates))
+    (VP (VBP include)
+      (NP
+        (NP (DT both)
+          (UCP (JJ civilian)
+            (CC and)
+            (JJ military))
+          (NNS deaths))
+        (PP (IN in)
+          (NP (NNP North)
+            (CC and)
+            (NNP South))))
+      (S
+        (NP (NNP Vietnam) (, ,) (NNP Laos) (, ,)
+          (CC and)
+          (NNP Cambodia))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Estimates
+			sense:	estimate.n.01
+	1	include
+			sense:	include.v.01
+			prop:	include.01
+			V		1-1	include 
+			N-ARG-A2		0-0	Estimates 
+			N-ARG-A1		2-16	both civilian and military deaths in North and South Vietnam , Laos , and Cambodia 
+	2	both
+	3	civilian
+			sense:	civilian.a.01
+	4	and
+	5	military
+			sense:	military.a.02
+	6	deaths
+			sense:	death.n.01
+	7	in
+	8	North
+			name:	LOCATION				8-8	North 
+	9	and
+	10	South
+			coref:	IDENT			1	10-11	South Vietnam 
+			name:	COUNTRY				10-11	South Vietnam 
+	11	Vietnam
+	12	,
+	13	Laos
+			coref:	IDENT			0	13-13	Laos 
+			name:	LOCATION				13-13	Laos 
+	14	,
+	15	and
+	16	Cambodia
+			name:	COUNTRY				16-16	Cambodia 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The conflict persisted from 1955 to 1975 and most of the fighting took place in South Vietnam ; accordingly it suffered the most casualties .
+
+
+Treebanked sentence:
+--------------------
+The conflict persisted from 1955 to 1975 and most of the fighting took place in South Vietnam ; accordingly it suffered the most casualties . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (S
+        (NP (DT The) (NN conflict))
+        (VP (VBD persisted)
+          (PP (IN from)
+            (NP (CD 1955)))
+          (PP (IN to)
+            (NP (CD 1975)))))
+      (CC and)
+      (S
+        (NP
+          (NP (JJS most))
+          (PP (IN of)
+            (NP (DT the) (NN fighting))))
+        (VP (VBD took)
+          (NP (NN place))
+          (PP (IN in)
+            (NP (NNP South) (NNP Vietnam))))))
+    (: ;)
+    (S
+      (ADVP (RB accordingly))
+      (NP (PRP it))
+      (VP (VBD suffered)
+        (NP (DT the) (RBS most))
+        (S
+          (NP (NNS casualties)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-1	The conflict 
+	1	conflict
+			sense:	conflict.n.01
+	2	persisted
+			sense:	prevail.v.03
+			prop:	persist.01
+			V		2-2	persisted 
+			N-ARG-A1		0-1	The conflict 
+			N-ARGM-TMP		3-6	from 1955 to 1975 
+	3	from
+	4	1955
+			name:	DATE				4-6	1955 to 1975 
+	5	to
+	6	1975
+	7	and
+	8	most
+			sense:	most.a.02
+	9	of
+	10	the
+	11	fighting
+			sense:	fight.n.02
+	12	took
+			sense:	take.v.15
+			prop:	take.14
+			V		12-12	took 
+			N-ARG-A1		8-11	most of the fighting 
+			N-ARG-A2		13-13	place 
+			N-ARGM-LOC		14-16	in South Vietnam 
+	13	place
+			sense:	topographic_point.n.01
+	14	in
+	15	South
+			coref:	IDENT			1	15-16	South Vietnam 
+			name:	COUNTRY				15-16	South Vietnam 
+	16	Vietnam
+	17	;
+	18	accordingly
+			sense:	consequently.r.01
+	19	it
+			coref:	IDENT			3	19-19	it 
+	20	suffered
+			sense:	suffer.v.01
+			prop:	suffer.01
+			V		20-20	suffered 
+			N-ARGM-DIS		18-18	accordingly 
+			N-ARG-A0		19-19	it 
+			N-ARG-A1		21-23	the most casualties 
+	21	the
+	22	most
+			sense:	most.r.01
+	23	casualties
+			sense:	casualty.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The war also spilled over into the neighboring countries of Cambodia and Laos which also endured casualties from aerial and ground fighting .
+
+
+Treebanked sentence:
+--------------------
+The war also spilled over into the neighboring countries of Cambodia and Laos which also endured casualties from aerial and ground fighting . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN war))
+    (ADVP (RB also))
+    (VP (VBD spilled)
+      (PRT (RP over))
+      (PP (IN into)
+        (NP
+          (NP
+            (NP (DT the) (NN neighboring) (NNS countries))
+            (PP (IN of)
+              (NP (NNP Cambodia)
+                (CC and)
+                (NNP Laos))))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (ADVP (RB also))
+              (VP (VBD endured)
+                (NP (NNS casualties))
+                (PP (IN from)
+                  (NP
+                    (NP (JJ aerial))
+                    (CC and)
+                    (NP (NN ground) (NN fighting))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-1	The war 
+	1	war
+			name:	CAUSE_OF_DEATH				1-1	war 
+			sense:	war.n.01
+	2	also
+			sense:	besides.r.02
+	3	spilled
+			sense:	spill.v.02
+			prop:	spill.02
+			V		3-3	spilled 
+			N-ARG-A1		0-1	The war 
+			N-ARGM-DIS		2-2	also 
+			N-ARGM-DIR		4-4	over 
+			N-ARG-A2		5-21	into the neighboring countries of Cambodia and Laos which also endured casualties from aerial and ground fighting 
+	4	over
+	5	into
+	6	the
+	7	neighboring
+	8	countries
+			sense:	state.n.04
+	9	of
+	10	Cambodia
+			name:	COUNTRY				10-10	Cambodia 
+	11	and
+	12	Laos
+			coref:	IDENT			0	12-12	Laos 
+			name:	LOCATION				12-12	Laos 
+	13	which
+	14	also
+			sense:	besides.r.02
+	15	endured
+			sense:	suffer.v.01
+			prop:	endure.01
+			V		15-15	endured 
+			N-ARG-A1		6-12	the neighboring countries of Cambodia and Laos 
+			R-ARG-A1		13-13	which 
+			N-ARGM-ADV		14-14	also 
+			N-ARG-A2		16-21	casualties from aerial and ground fighting 
+	16	casualties
+			sense:	casualty.n.01
+	17	from
+	18	aerial
+			sense:	aerial.a.01
+	19	and
+	20	ground
+			sense:	land.n.04
+	21	fighting
+			sense:	fight.n.02
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Civilian deaths caused by both sides amounted to a significant percentage of total deaths .
+
+
+Treebanked sentence:
+--------------------
+Civilian deaths caused by both sides amounted to a significant percentage of total deaths . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (JJ Civilian) (NNS deaths))
+      (VP (VBN caused)
+        (PP (IN by)
+          (NP (DT both) (NNS sides)))))
+    (VP (VBD amounted)
+      (PP (IN to)
+        (NP
+          (NP (DT a) (JJ significant) (NN percentage))
+          (PP (IN of)
+            (NP (JJ total) (NNS deaths))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Civilian
+			sense:	civilian.a.01
+	1	deaths
+			sense:	death.n.01
+	2	caused
+			sense:	cause.v.01
+			prop:	cause.01
+			V		2-2	caused 
+			N-ARG-A1		0-1	Civilian deaths 
+			N-ARG-A0		3-5	by both sides 
+	3	by
+	4	both
+	5	sides
+			sense:	side.n.02
+	6	amounted
+			sense:	total.v.01
+			prop:	amount.01
+			V		6-6	amounted 
+			N-ARG-A1		0-5	Civilian deaths caused by both sides 
+			N-ARG-A2		7-13	to a significant percentage of total deaths 
+	7	to
+	8	a
+	9	significant
+			sense:	significant.s.02
+	10	percentage
+			sense:	percentage.n.01
+	11	of
+	12	total
+			sense:	entire.s.01
+	13	deaths
+			sense:	death.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Civilian deaths were partly caused by assassinations , massacres and terror tactics .
+
+
+Treebanked sentence:
+--------------------
+Civilian deaths were partly caused by assassinations , massacres and terror tactics . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (JJ Civilian) (NNS deaths))
+    (VP (VBD were)
+      (ADVP (RB partly))
+      (VP (VBN caused)
+        (PP (IN by)
+          (NP (NNS assassinations) (, ,) (NNS massacres)
+            (CC and)
+            (NN terror) (NNS tactics)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Civilian
+			sense:	civilian.a.01
+	1	deaths
+			sense:	death.n.01
+	2	were
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	were 
+	3	partly
+			sense:	partially.r.01
+	4	caused
+			sense:	cause.v.01
+			prop:	cause.01
+			V		4-4	caused 
+			N-ARG-A1		0-1	Civilian deaths 
+			N-ARGM-ADV		3-3	partly 
+			N-ARG-A0		5-11	by assassinations , massacres and terror tactics 
+	5	by
+	6	assassinations
+			name:	CAUSE_OF_DEATH				6-6	assassinations 
+			sense:	assassination.n.02
+	7	,
+	8	massacres
+			sense:	slaughter.n.03
+	9	and
+	10	terror
+			sense:	terror.n.04
+	11	tactics
+			sense:	tactic.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Civilian deaths were also caused by mortar and artillery , extensive aerial bombing and the use of firepower in military operations conducted in heavily populated areas .
+
+
+Treebanked sentence:
+--------------------
+Civilian deaths were also caused by mortar and artillery , extensive aerial bombing and the use of firepower in military operations conducted in heavily populated areas . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (JJ Civilian) (NNS deaths))
+    (VP (VBD were)
+      (ADVP (RB also))
+      (VP (VBN caused)
+        (PP (IN by)
+          (NP
+            (NP (NN mortar)
+              (CC and)
+              (NN artillery))
+            (, ,)
+            (NP (JJ extensive) (JJ aerial) (NN bombing))
+            (CC and)
+            (NP
+              (NP (DT the) (NN use))
+              (PP (IN of)
+                (NP (NN firepower))))))
+        (PP (IN in)
+          (NP
+            (NP (JJ military) (NNS operations))
+            (VP (VBN conducted)
+              (PP (IN in)
+                (NP
+                  (ADJP (RB heavily) (VBN populated))
+                  (NNS areas))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Civilian
+			sense:	civilian.a.01
+	1	deaths
+			sense:	death.n.01
+	2	were
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	were 
+	3	also
+			sense:	besides.r.02
+	4	caused
+			sense:	cause.v.01
+			prop:	cause.01
+			V		4-4	caused 
+			N-ARG-A1		0-1	Civilian deaths 
+			N-ARGM-DIS		3-3	also 
+			N-ARG-A0		5-25	by mortar and artillery , extensive aerial bombing and the use of firepower in military operations conducted in heavily populated areas 
+	5	by
+	6	mortar
+			sense:	mortar.n.01
+	7	and
+	8	artillery
+			sense:	artillery.n.01
+	9	,
+	10	extensive
+			sense:	extensive.s.01
+	11	aerial
+			sense:	aerial.a.01
+	12	bombing
+			name:	CRIMINAL_CHARGE				12-12	bombing 
+			sense:	bombing.n.01
+	13	and
+	14	the
+	15	use
+			sense:	use.n.01
+	16	of
+	17	firepower
+			sense:	firepower.n.01
+	18	in
+	19	military
+			sense:	military.a.02
+	20	operations
+			sense:	operation.n.05
+	21	conducted
+			sense:	conduct.v.01
+			prop:	conduct.01
+			V		21-21	conducted 
+			N-ARG-A1		19-20	military operations 
+			N-ARGM-LOC		22-25	in heavily populated areas 
+	22	in
+	23	heavily
+			sense:	heavily.r.01
+	24	populated
+			sense:	populate.v.01
+			prop:	populate.01
+			V		24-24	populated 
+			N-ARGM-EXT		23-23	heavily 
+			N-ARG-A1		25-25	areas 
+	25	areas
+			sense:	area.n.01
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Some 365,000 Vietnamese civilians are estimated by one source to have died as a result of the war during the period of American involvement .
+
+
+Treebanked sentence:
+--------------------
+Some 365,000 Vietnamese civilians are estimated by one source to have died as a result of the war during the period of American involvement . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT Some) (CD 365,000) (JJ Vietnamese) (NNS civilians))
+    (VP (VBP are)
+      (VP (VBN estimated)
+        (PP (IN by)
+          (NP (CD one) (NN source)))
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (VP (VBN died)
+                (PP (IN as)
+                  (NP
+                    (NP (DT a) (NN result))
+                    (PP (IN of)
+                      (NP (DT the) (NN war)))))
+                (PP (IN during)
+                  (NP
+                    (NP (DT the) (NN period))
+                    (PP (IN of)
+                      (NP (JJ American) (NN involvement)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Some
+	1	365,000
+			name:	NUMBER				1-1	365,000 
+	2	Vietnamese
+			name:	NATIONALITY				2-2	Vietnamese 
+	3	civilians
+			sense:	civilian.n.01
+	4	are
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	are 
+	5	estimated
+			sense:	estimate.v.01
+			prop:	estimate.01
+			V		5-5	estimated 
+			N-ARG-A1		0-3	Some 365,000 Vietnamese civilians 
+			N-ARG-A0		6-8	by one source 
+			N-ARG-A2		9-23	to have died as a result of the war during the period of American involvement 
+	6	by
+	7	one
+			name:	NUMBER				7-7	one 
+	8	source
+			sense:	source.n.02
+	9	to
+	10	have
+			sense:	have.v.01
+			prop:	have.01
+			V		10-10	have 
+	11	died
+			sense:	die.v.01
+			prop:	die.01
+			V		11-11	died 
+			N-ARG-A1		0-3	Some 365,000 Vietnamese civilians 
+			N-ARGM-CAU		12-17	as a result of the war 
+			N-ARGM-TMP		18-23	during the period of American involvement 
+	12	as
+	13	a
+	14	result
+			sense:	consequence.n.01
+	15	of
+	16	the
+			coref:	IDENT			2	16-17	the war 
+	17	war
+			name:	CAUSE_OF_DEATH				17-17	war 
+			sense:	war.n.01
+	18	during
+	19	the
+	20	period
+			sense:	time_period.n.01
+	21	of
+	22	American
+			name:	NATIONALITY				22-22	American 
+	23	involvement
+			sense:	engagement.n.07
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A number of incidents occurred during the war in which civilians were deliberately targeted or killed .
+
+
+Treebanked sentence:
+--------------------
+A number of incidents occurred during the war in which civilians were deliberately targeted or killed . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN number))
+      (PP (IN of)
+        (NP (NNS incidents))))
+    (VP (VBD occurred)
+      (PP (IN during)
+        (NP
+          (NP (DT the) (NN war))
+          (SBAR
+            (WHPP (IN in)
+              (WHNP (WDT which)))
+            (S
+              (NP (NNS civilians))
+              (VP (VBD were)
+                (ADVP (RB deliberately))
+                (VP (VBN targeted)
+                  (CC or)
+                  (VBN killed))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	number
+			sense:	number.n.01
+	2	of
+	3	incidents
+			sense:	incident.n.01
+	4	occurred
+			sense:	happen.v.01
+			prop:	occur.01
+			V		4-4	occurred 
+			N-ARG-A1		0-3	A number of incidents 
+			N-ARGM-TMP		5-7	during the war 
+			C-ARG-A1		8-15	in which civilians were deliberately targeted or killed 
+	5	during
+	6	the
+	7	war
+			name:	CAUSE_OF_DEATH				7-7	war 
+			sense:	war.n.01
+	8	in
+	9	which
+	10	civilians
+			sense:	civilian.n.01
+	11	were
+			sense:	be.v.01
+			prop:	be.03
+			V		11-11	were 
+	12	deliberately
+			sense:	intentionally.r.01
+	13	targeted
+			sense:	target.v.01
+			prop:	target.01
+			V		13-13	targeted 
+			N-ARGM-LOC		8-9	in which 
+			N-ARG-A1		10-10	civilians 
+			N-ARGM-MNR		12-12	deliberately 
+	14	or
+	15	killed
+			sense:	kill.v.01
+			prop:	kill.01
+			V		15-15	killed 
+			N-ARGM-LOC		8-9	in which 
+			N-ARG-A1		10-10	civilians 
+			N-ARGM-MNR		12-12	deliberately 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The best - known are the Massacre at Huế and the My Lai massacre .
+
+
+Treebanked sentence:
+--------------------
+The best - known are the Massacre at Huế and the My Lai massacre . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The)
+      (NML (RBS best) (HYPH -) (VBN known)))
+    (VP (VBP are)
+      (NP
+        (NP (DT the) (NN Massacre))
+        (PP (IN at)
+          (NP
+            (NP (NNP Huế))
+            (CC and)
+            (NP (DT the)
+              (NML (NNP My) (NNP Lai))
+              (NN massacre))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	best
+			sense:	well.r.02
+	2	-
+	3	known
+			sense:	know.v.07
+			prop:	know.01
+			V		3-3	known 
+			N-ARGM-ADV		1-1	best 
+	4	are
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	are 
+			N-ARG-A1		0-3	The best - known 
+			N-ARG-A2		5-13	the Massacre at Huế and the My Lai massacre 
+	5	the
+	6	Massacre
+			sense:	slaughter.n.03
+	7	at
+	8	Huế
+	9	and
+	10	the
+	11	My
+	12	Lai
+	13	massacre
+			sense:	slaughter.n.03
+	14	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.13-13	Laos 
+				3.12-12	Laos 
+	Chain 1 (IDENT)
+				1.10-11	South Vietnam 
+				2.15-16	South Vietnam 
+	Chain 2 (IDENT)
+				0.4-6	the Vietnam War 
+				3.0-1	The war 
+				7.16-17	the war 
+	Chain 3 (IDENT)
+				2.0-1	The conflict 
+				2.19-19	it 
+

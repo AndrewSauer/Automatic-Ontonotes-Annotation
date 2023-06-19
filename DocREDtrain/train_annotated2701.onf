@@ -1,0 +1,669 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Sheffield School of Architecture is an architecture school in Sheffield , England , and part of the University of Sheffield .
+
+
+Treebanked sentence:
+--------------------
+The Sheffield School of Architecture is an architecture school in Sheffield , England , and part of the University of Sheffield . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Sheffield) (NNP School))
+      (PP (IN of)
+        (NP (NNP Architecture))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN architecture) (NN school))
+        (PP (IN in)
+          (NP (NNP Sheffield) (, ,) (NNP England) (, ,)
+            (CC and)
+            (NN part)))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Sheffield)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-4	The Sheffield School of Architecture 
+	1	Sheffield
+			name:	ORGANIZATION				1-4	Sheffield School of Architecture 
+	2	School
+	3	of
+	4	Architecture
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	The Sheffield School of Architecture 
+			N-ARG-A2		6-20	an architecture school in Sheffield , England , and part of the University of Sheffield 
+	6	an
+	7	architecture
+			sense:	architecture.n.02
+	8	school
+			sense:	school.n.01
+	9	in
+	10	Sheffield
+			name:	CITY				10-10	Sheffield 
+	11	,
+	12	England
+			name:	COUNTRY				12-12	England 
+	13	,
+	14	and
+	15	part
+			sense:	part.n.01
+	16	of
+	17	the
+	18	University
+			name:	ORGANIZATION				18-20	University of Sheffield 
+	19	of
+	20	Sheffield
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is located on the top six floors of the Arts Tower .
+
+
+Treebanked sentence:
+--------------------
+It is located on the top six floors of the Arts Tower . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (JJ top) (CD six) (NNS floors))
+            (PP (IN of)
+              (NP (DT the) (NNPS Arts) (NNP Tower)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	is
+			sense:	be.v.03
+			prop:	be.03
+			V		1-1	is 
+	2	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		2-2	located 
+			N-ARG-A1		0-0	It 
+			N-ARGM-LOC		3-11	on the top six floors of the Arts Tower 
+	3	on
+	4	the
+	5	top
+			sense:	top.a.01
+	6	six
+			name:	NUMBER				6-6	six 
+	7	floors
+			sense:	floor.n.02
+	8	of
+	9	the
+	10	Arts
+			name:	LOCATION				10-10	Arts 
+	11	Tower
+			name:	CITY				11-11	Tower 
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Times and Sunday Times Good University Guide 2015 placed SSoA among the top two schools of architecture in the UK ( up from 3rd in the Times 2014 Guide ) .
+
+
+Treebanked sentence:
+--------------------
+The Times and Sunday Times Good University Guide 2015 placed SSoA among the top two schools of architecture in the UK ( up from 3rd in the Times 2014 Guide ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NML
+        (NML (DT The) (NNP Times))
+        (CC and)
+        (NML (NNP Sunday) (NNP Times)))
+      (NNP Good) (NNP University) (NNP Guide) (CD 2015))
+    (VP (VBN placed)
+      (NP (NN SSoA))
+      (PP (IN among)
+        (NP
+          (NP (DT the) (JJ top) (CD two) (NNS schools))
+          (PP (IN of)
+            (NP (NN architecture)))))
+      (PP (IN in)
+        (NP (DT the) (NNP UK)))
+      (PRN (-LRB- -LRB-)
+        (ADVP (RB up)
+          (PP (IN from)
+            (ADJP (JJ 3rd))))
+        (PP (IN in)
+          (NP (DT the) (NNP Times) (CD 2014) (NNP Guide)))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Times
+			name:	ORGANIZATION				1-1	Times 
+	2	and
+	3	Sunday
+			name:	DATE				3-3	Sunday 
+	4	Times
+	5	Good
+	6	University
+	7	Guide
+			name:	TITLE				7-7	Guide 
+	8	2015
+			name:	DATE				8-8	2015 
+	9	placed
+			sense:	rate.v.01
+			prop:	place.01
+			V		9-9	placed 
+			N-ARG-A0		0-8	The Times and Sunday Times Good University Guide 2015 
+			N-ARG-A1		10-10	SSoA 
+			N-ARG-A2		11-30	among the top two schools of architecture in the UK ( up from 3rd in the Times 2014 Guide ) 
+	10	SSoA
+			coref:	IDENT			0	10-10	SSoA 
+	11	among
+	12	the
+	13	top
+			sense:	top.a.01
+	14	two
+			name:	NUMBER				14-14	two 
+	15	schools
+			sense:	school.n.01
+	16	of
+	17	architecture
+			sense:	architecture.n.02
+	18	in
+	19	the
+			coref:	IDENT			1	19-20	the UK 
+	20	UK
+			name:	COUNTRY				20-20	UK 
+	21	(
+	22	up
+			sense:	up.r.01
+	23	from
+	24	3rd
+			name:	ORDINAL				24-24	3rd 
+			sense:	third.s.01
+	25	in
+	26	the
+	27	Times
+	28	2014
+			name:	DATE				28-28	2014 
+	29	Guide
+			name:	TITLE				29-29	Guide 
+	30	)
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The school was rated 2nd by architectural practices in the Architects Journal , AJ100 2014 list of the best schools of architecture in the UK .
+
+
+Treebanked sentence:
+--------------------
+The school was rated 2nd by architectural practices in the Architects Journal , AJ100 2014 list of the best schools of architecture in the UK . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN school))
+    (VP (VBD was)
+      (VP (VBN rated)
+        (NP (JJ 2nd))
+        (PP (IN by)
+          (NP
+            (NP (JJ architectural) (NNS practices))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NNPS Architects) (NNP Journal))
+                (, ,)
+                (NP
+                  (NP (NN AJ100) (CD 2014) (NN list))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT the) (JJS best) (NNS schools))
+                      (PP (IN of)
+                        (NP (NN architecture))))))))))
+        (PP (IN in)
+          (NP (DT the) (NNP UK)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-1	The school 
+	1	school
+			sense:	school.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	rated
+			sense:	rate.v.01
+			prop:	rate.01
+			V		3-3	rated 
+			N-ARG-A1		0-1	The school 
+			N-ARG-A2		4-4	2nd 
+			N-ARG-A0		5-7	by architectural practices 
+			N-ARGM-LOC		8-24	in the Architects Journal , AJ100 2014 list of the best schools of architecture in the UK 
+	4	2nd
+			name:	ORDINAL				4-4	2nd 
+			sense:	second.s.01
+	5	by
+	6	architectural
+			sense:	architectural.a.01
+	7	practices
+			sense:	practice.n.04
+	8	in
+	9	the
+	10	Architects
+			name:	ORGANIZATION				10-11	Architects Journal 
+	11	Journal
+	12	,
+	13	AJ100
+	14	2014
+			name:	DATE				14-14	2014 
+	15	list
+			sense:	list.n.01
+	16	of
+	17	the
+	18	best
+			sense:	good.a.01
+	19	schools
+			sense:	school.n.01
+	20	of
+	21	architecture
+			sense:	architecture.n.02
+	22	in
+	23	the
+			coref:	IDENT			1	23-24	the UK 
+	24	UK
+			name:	COUNTRY				24-24	UK 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It has a strong social and political agenda .
+
+
+Treebanked sentence:
+--------------------
+It has a strong social and political agenda . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ has)
+      (NP (DT a) (JJ strong)
+        (ADJP (JJ social)
+          (CC and)
+          (JJ political))
+        (NN agenda)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	has
+			sense:	have.v.02
+			prop:	have.03
+			V		1-1	has 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-7	a strong social and political agenda 
+	2	a
+	3	strong
+			sense:	strong.a.01
+	4	social
+			sense:	social.a.01
+	5	and
+	6	political
+			sense:	political.a.01
+	7	agenda
+			sense:	agenda.n.02
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is one of the longest established architecture schools in the UK , having opened in 1908 .
+
+
+Treebanked sentence:
+--------------------
+It is one of the longest established architecture schools in the UK , having opened in 1908 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJS longest))
+            (VP (VBN established)
+              (NP
+                (NP (NN architecture) (NNS schools))
+                (PP (IN in)
+                  (NP (DT the) (NNP UK))))
+              (, ,)
+              (S
+                (VP (VBG having)
+                  (VP (VBN opened)
+                    (PP (IN in)
+                      (NP (CD 1908)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-11	one of the longest established architecture schools in the UK 
+			N-ARGM-ADV		13-16	having opened in 1908 
+	2	one
+			name:	NUMBER				2-2	one 
+	3	of
+	4	the
+	5	longest
+			sense:	long.a.01
+	6	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		6-6	established 
+			N-ARGM-TMP		5-5	longest 
+			N-ARG-A1		7-8	architecture schools 
+	7	architecture
+			sense:	architecture.n.02
+	8	schools
+			sense:	school.n.01
+	9	in
+	10	the
+			coref:	IDENT			1	10-11	the UK 
+	11	UK
+			name:	COUNTRY				11-11	UK 
+	12	,
+	13	having
+			sense:	have.v.01
+			prop:	shaving.01
+			V		13-13	having 
+	14	opened
+			sense:	open.v.02
+			prop:	open.01
+			V		14-14	opened 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		15-16	in 1908 
+	15	in
+	16	1908
+			name:	DATE				16-16	1908 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It has courses accredited by the Architects Registration Board ( ARB ) and the Royal Institute of British Architects ( RIBA ) .
+
+
+Treebanked sentence:
+--------------------
+It has courses accredited by the Architects Registration Board ( ARB ) and the Royal Institute of British Architects ( RIBA ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ has)
+      (NP
+        (NP
+          (NP (NNS courses))
+          (VP (VBN accredited)
+            (PP (IN by)
+              (NP (DT the) (NNPS Architects) (NNP Registration) (NNP Board)))
+            (PRN (-LRB- -LRB-)
+              (NP (NNP ARB))
+              (-RRB- -RRB-))))
+        (CC and)
+        (NP
+          (NP (DT the) (NNP Royal) (NNP Institute))
+          (PP (IN of)
+            (NP (NNP British) (NNPS Architects)))))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP RIBA))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	has
+			sense:	have.v.02
+			prop:	have.03
+			V		1-1	has 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-21	courses accredited by the Architects Registration Board ( ARB ) and the Royal Institute of British Architects ( RIBA ) 
+	2	courses
+			sense:	course.n.01
+	3	accredited
+			sense:	accredit.v.01
+			prop:	accredit.01
+			V		3-3	accredited 
+			N-ARG-A1		2-2	courses 
+			N-ARG-A0		4-21	by the Architects Registration Board ( ARB ) and the Royal Institute of British Architects ( RIBA ) 
+	4	by
+	5	the
+	6	Architects
+			name:	ORGANIZATION				6-8	Architects Registration Board 
+	7	Registration
+	8	Board
+	9	(
+	10	ARB
+	11	)
+	12	and
+	13	the
+	14	Royal
+			name:	ORGANIZATION				14-18	Royal Institute of British Architects 
+	15	Institute
+	16	of
+	17	British
+	18	Architects
+	19	(
+	20	RIBA
+	21	)
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the Research Excellence Framework ( REF ) 2014 SSoA ranked 4th in the UK .
+
+
+Treebanked sentence:
+--------------------
+In the Research Excellence Framework ( REF ) 2014 SSoA ranked 4th in the UK . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (DT the) (NNP Research) (NNP Excellence) (NNP Framework)
+          (PRN (-LRB- -LRB-)
+            (NP (NN REF))
+            (-RRB- -RRB-)))
+        (NP-TMP (CD 2014))))
+    (NP (NNP SSoA))
+    (VP (VBD ranked)
+      (ADJP (JJ 4th))
+      (PP (IN in)
+        (NP (DT the) (NNP UK))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+	2	Research
+	3	Excellence
+	4	Framework
+	5	(
+	6	REF
+			sense:	referee.n.01
+	7	)
+	8	2014
+			name:	DATE				8-8	2014 
+	9	SSoA
+			coref:	IDENT			0	9-9	SSoA 
+	10	ranked
+			sense:	rank.v.01
+			prop:	rank.01
+			V		10-10	ranked 
+			N-ARGM-LOC		0-8	In the Research Excellence Framework ( REF ) 2014 
+			N-ARG-A1		9-9	SSoA 
+			N-ARG-A2		11-11	4th 
+			N-ARGM-LOC		12-14	in the UK 
+	11	4th
+			name:	ORDINAL				11-11	4th 
+			sense:	fourth.s.01
+	12	in
+	13	the
+			coref:	IDENT			1	13-14	the UK 
+	14	UK
+			name:	COUNTRY				14-14	UK 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It also has an active student society ( SUAS ) .
+
+
+Treebanked sentence:
+--------------------
+It also has an active student society ( SUAS ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB also))
+    (VP (VBZ has)
+      (NP
+        (NP (DT an) (JJ active) (NN student) (NN society))
+        (-LRB- -LRB-)
+        (NP (NNP SUAS))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	also
+			sense:	besides.r.02
+	2	has
+			sense:	have.v.02
+			prop:	have.03
+			V		2-2	has 
+			N-ARG-A0		0-0	It 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-9	an active student society ( SUAS ) 
+	3	an
+	4	active
+			sense:	active.a.07
+	5	student
+			name:	TITLE				5-5	student 
+			sense:	student.n.01
+	6	society
+			sense:	club.n.02
+	7	(
+	8	SUAS
+	9	)
+	10	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				7.9-9	SSoA 
+				2.10-10	SSoA 
+	Chain 1 (IDENT)
+				2.19-20	the UK 
+				3.23-24	the UK 
+				5.10-11	the UK 
+				7.13-14	the UK 
+	Chain 2 (IDENT)
+				0.0-4	The Sheffield School of Architecture 
+				1.0-0	It 
+				3.0-1	The school 
+				4.0-0	It 
+				5.0-0	It 
+				6.0-0	It 
+				8.0-0	It 
+

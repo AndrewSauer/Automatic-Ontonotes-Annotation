@@ -1,0 +1,723 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Sean James Spencer ( born May 29 , 1975 ) is a former Major League Baseball relief pitcher for the Seattle Mariners and Montreal Expos .
+
+
+Treebanked sentence:
+--------------------
+Sean James Spencer ( born May 29 , 1975 ) is a former Major League Baseball relief pitcher for the Seattle Mariners and Montreal Expos . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Sean) (NNP James) (NNP Spencer))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP May) (CD 29) (, ,) (CD 1975)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ former)
+          (NML (NNP Major) (NNP League) (NNP Baseball))
+          (NN relief) (NN pitcher))
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NNP Seattle) (NNPS Mariners))
+            (CC and)
+            (NP (NNP Montreal) (NNPS Expos))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Sean
+			coref:	IDENT			2	0-2	Sean James Spencer 
+			name:	PERSON				0-2	Sean James Spencer 
+	1	James
+	2	Spencer
+	3	(
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-2	Sean James Spencer 
+			N-ARGM-TMP		5-8	May 29 , 1975 
+	5	May
+			name:	DATE				5-8	May 29 , 1975 
+	6	29
+	7	,
+	8	1975
+	9	)
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	Sean James Spencer ( born May 29 , 1975 ) 
+			N-ARG-A2		11-24	a former Major League Baseball relief pitcher for the Seattle Mariners and Montreal Expos 
+	11	a
+	12	former
+			sense:	former.s.03
+	13	Major
+			name:	ORGANIZATION				13-15	Major League Baseball 
+	14	League
+	15	Baseball
+	16	relief
+			name:	TITLE				16-17	relief pitcher 
+			sense:	stand-in.n.01
+	17	pitcher
+			sense:	pitcher.n.01
+	18	for
+	19	the
+			coref:	IDENT			3	19-24	the Seattle Mariners and Montreal Expos 
+	20	Seattle
+			name:	ORGANIZATION				20-21	Seattle Mariners 
+	21	Mariners
+	22	and
+	23	Montreal
+			coref:	IDENT			0	23-24	Montreal Expos 
+			name:	ORGANIZATION				23-24	Montreal Expos 
+	24	Expos
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Spencer was drafted out of the University of Washington , where he played college baseball for the Huskies from 1994 – 1995 , by his hometown Seattle Mariners in the 40th round of the 1996 Major League Baseball draft .
+
+
+Treebanked sentence:
+--------------------
+Spencer was drafted out of the University of Washington , where he played college baseball for the Huskies from 1994 – 1995 , by his hometown Seattle Mariners in the 40th round of the 1996 Major League Baseball draft . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Spencer))
+    (VP (VBD was)
+      (VP (VBN drafted)
+        (PRT (IN out))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Washington)))))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP he))
+            (VP (VBD played)
+              (NP (NN college) (NN baseball))
+              (PP (IN for)
+                (NP (DT the) (NNPS Huskies)))
+              (PP (IN from)
+                (NP (CD 1994) (SYM –) (CD 1995)))
+              (, ,)
+              (PP (IN by)
+                (NP
+                  (NP (PRP$ his) (NN hometown))
+                  (NP (NNP Seattle) (NNPS Mariners))))
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (JJ 40th) (NN round))
+                  (PP (IN of)
+                    (NP (DT the) (CD 1996)
+                      (NML (NNP Major) (NNP League) (NNP Baseball))
+                      (NN draft))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Spencer
+			coref:	IDENT			2	0-0	Spencer 
+			name:	PERSON				0-0	Spencer 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	drafted
+			sense:	enlist.v.03
+			prop:	draft.01
+			V		2-2	drafted 
+			N-ARG-A1		0-0	Spencer 
+			N-ARG-A0		23-27	by his hometown Seattle Mariners 
+	3	out
+	4	of
+	5	the
+	6	University
+			name:	ORGANIZATION				6-8	University of Washington 
+	7	of
+	8	Washington
+	9	,
+	10	where
+	11	he
+			coref:	IDENT			2	11-11	he 
+	12	played
+			sense:	play.v.01
+			prop:	play.01
+			V		12-12	played 
+			N-ARGM-LOC		5-8	the University of Washington 
+			R-ARGM-LOC		10-10	where 
+			N-ARG-A0		11-11	he 
+			N-ARG-A1		13-14	college baseball 
+			N-ARGM-TMP		18-21	from 1994 – 1995 
+	13	college
+			sense:	college.n.01
+	14	baseball
+			sense:	baseball.n.01
+	15	for
+	16	the
+	17	Huskies
+			name:	ORGANIZATION				17-17	Huskies 
+	18	from
+	19	1994
+			name:	DATE				19-19	1994 
+	20	–
+	21	1995
+			name:	DATE				21-21	1995 
+	22	,
+	23	by
+	24	his
+			coref:	IDENT			2	24-24	his 
+	25	hometown
+			sense:	hometown.n.01
+	26	Seattle
+			coref:	IDENT			3	26-27	Seattle Mariners 
+			name:	ORGANIZATION				26-27	Seattle Mariners 
+	27	Mariners
+	28	in
+	29	the
+	30	40th
+			name:	ORDINAL				30-30	40th 
+			sense:	fortieth.s.01
+	31	round
+			sense:	cycle.n.01
+	32	of
+	33	the
+	34	1996
+			name:	DATE				34-34	1996 
+	35	Major
+			name:	ORGANIZATION				35-37	Major League Baseball 
+	36	League
+	37	Baseball
+	38	draft
+			sense:	draft.n.01
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He made his major league debut with the Mariners on May 6 , , pitching 1/3 of an inning and giving up 2 earned runs against the Cleveland Indians .
+
+
+Treebanked sentence:
+--------------------
+He made his major league debut with the Mariners on May 6 , , pitching 1/3 of an inning and giving up 2 earned runs against the Cleveland Indians . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD made)
+        (NP (PRP$ his) (JJ major) (NN league) (NN debut))
+        (PP (IN with)
+          (NP (DT the) (NNPS Mariners)))
+        (PP (IN on)
+          (NP (NNP May) (CD 6))))
+      (, ,))
+    (, ,)
+    (S
+      (S
+        (VP
+          (VP (VBG pitching)
+            (NP
+              (NP (CD 1/3))
+              (PP (IN of)
+                (NP (DT an) (NN inning)))))
+          (CC and)
+          (VP (VBG giving)
+            (PRT (RP up))
+            (NP (CD 2)))))
+      (VP (VBD earned)
+        (NP (NNS runs))
+        (PP (IN against)
+          (NP (DT the) (NNP Cleveland) (NNPS Indians)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	made
+			sense:	make.v.01
+			prop:	make.18
+			V		1-1	made 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-5	his major league debut 
+			N-ARGM-MNR		6-8	with the Mariners 
+			N-ARGM-TMP		9-11	on May 6 
+			N-ARGM-ADV		14-28	pitching 1/3 of an inning and giving up 2 earned runs against the Cleveland Indians 
+	2	his
+			coref:	IDENT			2	2-2	his 
+	3	major
+			sense:	major.a.01
+	4	league
+			sense:	league.n.01
+	5	debut
+			sense:	introduction.n.01
+	6	with
+	7	the
+			coref:	IDENT			3	7-8	the Mariners 
+	8	Mariners
+			name:	ORGANIZATION				8-8	Mariners 
+	9	on
+	10	May
+			name:	DATE				10-11	May 6 
+	11	6
+	12	,
+	13	,
+	14	pitching
+			sense:	flip.v.06
+			prop:	pitch.01
+			V		14-14	pitching 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		15-18	1/3 of an inning 
+	15	1/3
+			name:	NUMBER				15-15	1/3 
+	16	of
+	17	an
+	18	inning
+			sense:	inning.n.01
+	19	and
+	20	giving
+			sense:	give.v.09
+			prop:	give.08
+			V		20-20	giving 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		22-24	2 earned runs 
+			N-ARGM-ADV		25-28	against the Cleveland Indians 
+	21	up
+	22	2
+			name:	NUMBER				22-22	2 
+	23	earned
+			sense:	gain.v.08
+			prop:	earn.01
+			V		23-23	earned 
+			N-ARG-A1		24-24	runs 
+	24	runs
+			sense:	run.n.01
+	25	against
+	26	the
+	27	Cleveland
+			name:	ORGANIZATION				27-28	Cleveland Indians 
+	28	Indians
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On August 10 , , Spencer was announced as the first of two PTBNLs traded to the Montreal Expos for Chris Widger .
+
+
+Treebanked sentence:
+--------------------
+On August 10 , , Spencer was announced as the first of two PTBNLs traded to the Montreal Expos for Chris Widger . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP
+        (NP (NNP August))
+        (NP-TMP (CD 10)))
+      (, ,))
+    (, ,)
+    (NP (NNP Spencer))
+    (VP (VBD was)
+      (VP (VBN announced)
+        (PP (IN as)
+          (NP
+            (NP (DT the) (JJ first))
+            (PP (IN of)
+              (NP
+                (NP (CD two) (NNS PTBNLs))
+                (VP (VBN traded)
+                  (PP (IN to)
+                    (NP (DT the) (NNP Montreal) (NNPS Expos)))
+                  (PP (IN for)
+                    (NP (NNP Chris) (NNP Widger))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	August
+			name:	DATE				1-2	August 10 
+	2	10
+	3	,
+	4	,
+	5	Spencer
+			coref:	IDENT			2	5-5	Spencer 
+			name:	PERSON				5-5	Spencer 
+	6	was
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	was 
+	7	announced
+			sense:	announce.v.01
+			prop:	announce.01
+			V		7-7	announced 
+			N-ARGM-TMP		0-2	On August 10 
+			N-ARG-A1		5-5	Spencer 
+			N-ARG-A3		8-21	as the first of two PTBNLs traded to the Montreal Expos for Chris Widger 
+	8	as
+	9	the
+	10	first
+			name:	ORDINAL				10-10	first 
+			sense:	first.s.02
+	11	of
+	12	two
+			name:	NUMBER				12-12	two 
+	13	PTBNLs
+	14	traded
+			sense:	trade.v.04
+			prop:	trade.01
+			V		14-14	traded 
+			N-ARG-A1		12-13	two PTBNLs 
+			N-ARG-A2		15-18	to the Montreal Expos 
+			N-ARG-A3		19-21	for Chris Widger 
+	15	to
+	16	the
+			coref:	IDENT			0	16-18	the Montreal Expos 
+	17	Montreal
+			name:	ORGANIZATION				17-18	Montreal Expos 
+	18	Expos
+	19	for
+	20	Chris
+			name:	PERSON				20-21	Chris Widger 
+	21	Widger
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 8 games for Montreal , he struck out 6 and had an ERA of 5.40 .
+
+
+Treebanked sentence:
+--------------------
+In 8 games for Montreal , he struck out 6 and had an ERA of 5.40 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (CD 8) (NNS games))
+        (PP (IN for)
+          (NP (NNP Montreal)))))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD struck)
+        (PRT (RP out))
+        (NP (CD 6)))
+      (CC and)
+      (VP (VBD had)
+        (NP
+          (NP (DT an) (NN ERA))
+          (PP (IN of)
+            (NP (CD 5.40))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	8
+			name:	NUMBER				1-1	8 
+	2	games
+			sense:	game.n.02
+	3	for
+	4	Montreal
+			name:	CITY				4-4	Montreal 
+	5	,
+	6	he
+			coref:	IDENT			2	6-6	he 
+	7	struck
+			sense:	strike.v.01
+			prop:	strike.06
+			V		7-7	struck 
+			N-ARGM-TMP		0-4	In 8 games for Montreal 
+			N-ARG-A0		6-6	he 
+	8	out
+	9	6
+			name:	NUMBER				9-9	6 
+	10	and
+	11	had
+			sense:	have.v.02
+			prop:	have.03
+			V		11-11	had 
+			N-ARG-A0		6-6	he 
+			N-ARG-A1		12-15	an ERA of 5.40 
+	12	an
+	13	ERA
+			sense:	earned_run_average.n.01
+	14	of
+	15	5.40
+			name:	NUMBER				15-15	5.40 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Expos released him on July 19 , .
+
+
+Treebanked sentence:
+--------------------
+The Expos released him on July 19 , . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNPS Expos))
+    (VP (VBD released)
+      (NP (PRP him))
+      (PP (IN on)
+        (NP (NNP July) (CD 19))
+        (, ,)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Expos
+	2	released
+			sense:	release.v.08
+			prop:	release.01
+			V		2-2	released 
+			N-ARG-A0		0-1	The Expos 
+			N-ARG-A1		3-3	him 
+			N-ARGM-TMP		4-7	on July 19 , 
+	3	him
+			coref:	IDENT			2	3-3	him 
+	4	on
+	5	July
+			name:	DATE				5-6	July 19 
+	6	19
+	7	,
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On July 25 , , Spencer signed a minor league contract with the Baltimore Orioles and pitched in the minors for them until his retirement after the season .
+
+
+Treebanked sentence:
+--------------------
+On July 25 , , Spencer signed a minor league contract with the Baltimore Orioles and pitched in the minors for them until his retirement after the season . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP
+        (NP (NNP July))
+        (NP-TMP (CD 25)))
+      (, ,))
+    (, ,)
+    (NP (NNP Spencer))
+    (VP
+      (VP (VBD signed)
+        (NP (DT a) (JJ minor) (NN league) (NN contract))
+        (PP (IN with)
+          (NP (DT the) (NNP Baltimore) (NNPS Orioles))))
+      (CC and)
+      (VP (VBN pitched)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNS minors))
+            (PP (IN for)
+              (NP (PRP them)))))
+        (PP (IN until)
+          (NP (PRP$ his) (NN retirement)))
+        (PP (IN after)
+          (NP (DT the) (NN season)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	July
+			name:	DATE				1-2	July 25 
+	2	25
+	3	,
+	4	,
+	5	Spencer
+			coref:	IDENT			2	5-5	Spencer 
+			name:	PERSON				5-5	Spencer 
+	6	signed
+			sense:	sign.v.03
+			prop:	sign.02
+			V		6-6	signed 
+			N-ARGM-TMP		0-2	On July 25 
+			N-ARG-A0		5-5	Spencer 
+			N-ARG-A1		7-10	a minor league contract 
+			N-ARG-A2		11-14	with the Baltimore Orioles 
+	7	a
+	8	minor
+			sense:	minor.a.01
+	9	league
+			sense:	league.n.01
+	10	contract
+			sense:	contract.n.01
+	11	with
+	12	the
+			coref:	IDENT			1	12-14	the Baltimore Orioles 
+	13	Baltimore
+			name:	ORGANIZATION				13-14	Baltimore Orioles 
+	14	Orioles
+	15	and
+	16	pitched
+			sense:	flip.v.06
+			prop:	pitch.01
+			V		16-16	pitched 
+			N-ARGM-TMP		0-2	On July 25 
+			N-ARG-A0		5-5	Spencer 
+			N-ARGM-LOC		17-19	in the minors 
+			N-ARGM-ADV		20-21	for them 
+			N-ARGM-TMP		22-27	until his retirement after the season 
+	17	in
+	18	the
+	19	minors
+			sense:	child.n.01
+	20	for
+	21	them
+			coref:	IDENT			1	21-21	them 
+	22	until
+	23	his
+			coref:	IDENT			2	23-23	his 
+	24	retirement
+			sense:	retirement.n.01
+	25	after
+	26	the
+	27	season
+			sense:	season.n.01
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Spencer played for Greece in the 2004 Summer Olympics in Athens , Greece .
+
+
+Treebanked sentence:
+--------------------
+Spencer played for Greece in the 2004 Summer Olympics in Athens , Greece . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Spencer))
+    (VP (VBD played)
+      (PP (IN for)
+        (NP (NNP Greece)))
+      (PP (IN in)
+        (NP (DT the) (CD 2004) (NNP Summer) (NNPS Olympics)))
+      (PP (IN in)
+        (NP (NNP Athens) (, ,) (NNP Greece))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Spencer
+			coref:	IDENT			2	0-0	Spencer 
+			name:	PERSON				0-0	Spencer 
+	1	played
+			sense:	play.v.01
+			prop:	play.01
+			V		1-1	played 
+			N-ARG-A0		0-0	Spencer 
+			N-ARGM-ADV		2-3	for Greece 
+			N-ARGM-LOC		4-12	in the 2004 Summer Olympics in Athens , Greece 
+	2	for
+	3	Greece
+			name:	COUNTRY				3-3	Greece 
+	4	in
+	5	the
+			name:	DATE				5-7	the 2004 Summer 
+	6	2004
+	7	Summer
+	8	Olympics
+			name:	MISC				8-8	Olympics 
+	9	in
+	10	Athens
+			name:	CITY				10-10	Athens 
+	11	,
+	12	Greece
+			name:	COUNTRY				12-12	Greece 
+	13	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.16-18	the Montreal Expos 
+				0.23-24	Montreal Expos 
+	Chain 1 (IDENT)
+				6.12-14	the Baltimore Orioles 
+				6.21-21	them 
+	Chain 2 (IDENT)
+				0.0-2	Sean James Spencer 
+				1.0-0	Spencer 
+				1.11-11	he 
+				1.24-24	his 
+				2.0-0	He 
+				2.2-2	his 
+				3.5-5	Spencer 
+				4.6-6	he 
+				5.3-3	him 
+				6.5-5	Spencer 
+				6.23-23	his 
+				7.0-0	Spencer 
+	Chain 3 (IDENT)
+				1.26-27	Seattle Mariners 
+				0.19-24	the Seattle Mariners and Montreal Expos 
+				2.7-8	the Mariners 
+

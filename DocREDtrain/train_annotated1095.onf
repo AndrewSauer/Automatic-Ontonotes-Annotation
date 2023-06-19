@@ -1,0 +1,542 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Hermann Finck ( 21 March 1527 – 28 December 1558 ) was a German composer .
+
+
+Treebanked sentence:
+--------------------
+Hermann Finck ( 21 March 1527 – 28 December 1558 ) was a German composer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Hermann) (NNP Finck))
+      (-LRB- -LRB-)
+      (NP
+        (NP
+          (NP (CD 21))
+          (NP-TMP (NNP March) (CD 1527))
+          (PP (SYM –)
+            (NP (CD 28))))
+        (NP-TMP (NNP December) (CD 1558)))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT a) (JJ German) (NN composer)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Hermann
+			name:	PERSON				0-1	Hermann Finck 
+	1	Finck
+	2	(
+	3	21
+			name:	DATE				3-5	21 March 1527 
+	4	March
+	5	1527
+	6	–
+	7	28
+			name:	DATE				7-9	28 December 1558 
+	8	December
+	9	1558
+	10	)
+	11	was
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	was 
+			N-ARG-A1		0-10	Hermann Finck ( 21 March 1527 – 28 December 1558 ) 
+			N-ARG-A2		12-14	a German composer 
+	12	a
+	13	German
+			name:	NATIONALITY				13-13	German 
+	14	composer
+			name:	TITLE				14-14	composer 
+			sense:	composer.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The great - nephew of composer Heinrich Finck , Hermann was born in Pirna , and died at Wittenberg .
+
+
+Treebanked sentence:
+--------------------
+The great - nephew of composer Heinrich Finck , Hermann was born in Pirna , and died at Wittenberg . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP-TMP
+      (NP (DT The) (JJ great) (HYPH -) (NN nephew))
+      (PP (IN of)
+        (NP (NN composer) (NNP Heinrich) (NNP Finck))))
+    (, ,)
+    (NP (NNP Hermann))
+    (VP
+      (VP (VBD was)
+        (VP (VBN born)
+          (PP (IN in)
+            (NP (NNP Pirna)))))
+      (, ,)
+      (CC and)
+      (VP (VBD died)
+        (PP (IN at)
+          (NP (NNP Wittenberg)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	great
+			sense:	great.s.01
+	2	-
+	3	nephew
+			sense:	nephew.n.01
+	4	of
+	5	composer
+			name:	TITLE				5-5	composer 
+			sense:	composer.n.01
+	6	Heinrich
+			name:	PERSON				6-7	Heinrich Finck 
+	7	Finck
+	8	,
+	9	Hermann
+			name:	PERSON				9-9	Hermann 
+	10	was
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	was 
+	11	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		11-11	born 
+			N-ARG-A1		0-9	The great - nephew of composer Heinrich Finck , Hermann 
+			N-ARGM-LOC		12-13	in Pirna 
+	12	in
+	13	Pirna
+			name:	CITY				13-13	Pirna 
+	14	,
+	15	and
+	16	died
+			sense:	die.v.01
+			prop:	die.01
+			V		16-16	died 
+			N-ARG-A1		0-9	The great - nephew of composer Heinrich Finck , Hermann 
+			N-ARGM-LOC		17-18	at Wittenberg 
+	17	at
+	18	Wittenberg
+			coref:	IDENT			1	18-18	Wittenberg 
+			name:	LOCATION				18-18	Wittenberg 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After 1553 he lived at Wittenberg , where he was organist , and there , in 1555 , was published his collection of wedding songs .
+
+
+Treebanked sentence:
+--------------------
+After 1553 he lived at Wittenberg , where he was organist , and there , in 1555 , was published his collection of wedding songs . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN After)
+        (NP (CD 1553)))
+      (NP (PRP he))
+      (VP (VBD lived)
+        (PP (IN at)
+          (NP (NNP Wittenberg)))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP he))
+            (VP (VBD was)
+              (ADJP (JJ organist)))))))
+    (, ,)
+    (CC and)
+    (S
+      (ADVP (RB there))
+      (, ,)
+      (PP (IN in)
+        (NP (CD 1555)))
+      (, ,)
+      (VP (VBD was)
+        (VP (VBN published)
+          (NP
+            (NP (PRP$ his) (NN collection))
+            (PP (IN of)
+              (NP (NN wedding) (NNS songs)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	1553
+			name:	DATE				1-1	1553 
+	2	he
+	3	lived
+			sense:	populate.v.01
+			prop:	live.01
+			V		3-3	lived 
+			N-ARGM-TMP		0-1	After 1553 
+			N-ARG-A0		2-2	he 
+			N-ARGM-LOC		4-10	at Wittenberg , where he was organist 
+	4	at
+	5	Wittenberg
+			coref:	IDENT			1	5-5	Wittenberg 
+			name:	LOCATION				5-5	Wittenberg 
+	6	,
+	7	where
+	8	he
+	9	was
+			sense:	be.v.08
+			prop:	be.01
+			V		9-9	was 
+			N-ARGM-LOC		5-5	Wittenberg 
+			R-ARGM-LOC		7-7	where 
+			N-ARG-A1		8-8	he 
+			N-ARG-A2		10-10	organist 
+	10	organist
+	11	,
+	12	and
+	13	there
+			sense:	there.r.01
+	14	,
+	15	in
+	16	1555
+			name:	DATE				16-16	1555 
+	17	,
+	18	was
+			sense:	be.v.01
+			prop:	be.03
+			V		18-18	was 
+	19	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		19-19	published 
+			N-ARGM-LOC		13-13	there 
+			N-ARGM-TMP		15-16	in 1555 
+			N-ARG-A1		20-24	his collection of wedding songs 
+	20	his
+	21	collection
+			sense:	collection.n.02
+	22	of
+	23	wedding
+			sense:	wedding.n.01
+	24	songs
+			sense:	song.n.01
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Few details of his life have been preserved .
+
+
+Treebanked sentence:
+--------------------
+Few details of his life have been preserved . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (JJ Few) (NNS details))
+      (PP (IN of)
+        (NP (PRP$ his) (NN life))))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBN preserved))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Few
+			sense:	few.a.01
+	1	details
+			sense:	detail.n.01
+	2	of
+	3	his
+	4	life
+			sense:	life.n.03
+	5	have
+			sense:	have.v.01
+			prop:	have.01
+			V		5-5	have 
+	6	been
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	been 
+	7	preserved
+			sense:	conserve.v.02
+			prop:	preserve.01
+			V		7-7	preserved 
+			N-ARG-A1		0-4	Few details of his life 
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His theoretical writing was good , particularly his observations on the art of singing and of making ornamentations in song .
+
+
+Treebanked sentence:
+--------------------
+His theoretical writing was good , particularly his observations on the art of singing and of making ornamentations in song . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His) (JJ theoretical) (NN writing))
+    (VP (VBD was)
+      (ADJP (JJ good))
+      (, ,)
+      (PP (RB particularly)
+        (NP
+          (NP (PRP$ his) (NNS observations))
+          (PP
+            (PP (IN on)
+              (NP
+                (NP (DT the) (NN art))
+                (PP (IN of)
+                  (NP (NN singing)))))
+            (CC and)
+            (PP (IN of)
+              (S
+                (VP (VBG making)
+                  (NP (NNS ornamentations))
+                  (PP (IN in)
+                    (NP (NN song))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+	1	theoretical
+			sense:	theoretical.a.02
+	2	writing
+			sense:	writing.n.02
+	3	was
+			sense:	be.v.01
+			prop:	be.01
+			V		3-3	was 
+			N-ARG-A1		0-2	His theoretical writing 
+			N-ARG-A2		4-4	good 
+			C-ARG-A1		6-19	particularly his observations on the art of singing and of making ornamentations in song 
+	4	good
+			sense:	good.a.01
+	5	,
+	6	particularly
+			sense:	particularly.r.01
+	7	his
+	8	observations
+			sense:	observation.n.03
+	9	on
+	10	the
+	11	art
+			sense:	art.n.03
+	12	of
+	13	singing
+			sense:	singing.n.01
+	14	and
+	15	of
+	16	making
+			sense:	make.v.03
+			prop:	make.01
+			V		16-16	making 
+			N-ARG-A1		17-17	ornamentations 
+			N-ARGM-MNR		18-19	in song 
+	17	ornamentations
+			sense:	decoration.n.01
+	18	in
+	19	song
+			sense:	song.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His most celebrated work is entitled Practica musica , exempla variorum signorum , proportionum , et canonum , judicium de tonis ac quaedam de arte suaviter et artificiose cantandi continens ( Wittenberg , 1556 ) .
+
+
+Treebanked sentence:
+--------------------
+His most celebrated work is entitled Practica musica , exempla variorum signorum , proportionum , et canonum , judicium de tonis ac quaedam de arte suaviter et artificiose cantandi continens ( Wittenberg , 1556 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His)
+      (ADJP (RBS most) (JJ celebrated))
+      (NN work))
+    (VP (VBZ is)
+      (VP (VBN entitled)
+        (NP
+          (NP
+            (NP (NNP Practica) (NNP musica))
+            (, ,)
+            (NP (NNP exempla) (NNP variorum) (NNP signorum))
+            (, ,)
+            (NP (NN proportionum))
+            (, ,)
+            (NP (FW et) (FW canonum))
+            (, ,))
+          (PP
+            (NP (FW judicium) (FW de) (FW tonis) (FW ac) (FW quaedam) (FW de) (FW arte) (FW suaviter) (FW et) (FW artificiose) (FW cantandi) (FW continens)))))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP Wittenberg))
+        (, ,)
+        (NP (CD 1556))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-3	His most celebrated work 
+	1	most
+			sense:	most.r.01
+	2	celebrated
+			sense:	celebrated.s.01
+	3	work
+			sense:	work.n.02
+	4	is
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	is 
+	5	entitled
+			sense:	entitle.v.02
+			prop:	entitle.02
+			V		5-5	entitled 
+			N-ARG-A1		0-3	His most celebrated work 
+			N-ARG-A2		6-34	Practica musica , exempla variorum signorum , proportionum , et canonum , judicium de tonis ac quaedam de arte suaviter et artificiose cantandi continens ( Wittenberg , 1556 ) 
+	6	Practica
+	7	musica
+	8	,
+	9	exempla
+	10	variorum
+	11	signorum
+	12	,
+	13	proportionum
+	14	,
+	15	et
+	16	canonum
+	17	,
+	18	judicium
+	19	de
+	20	tonis
+	21	ac
+	22	quaedam
+	23	de
+	24	arte
+	25	suaviter
+	26	et
+	27	artificiose
+	28	cantandi
+	29	continens
+	30	(
+	31	Wittenberg
+			coref:	IDENT			1	31-31	Wittenberg 
+			name:	PERSON				31-31	Wittenberg 
+	32	,
+	33	1556
+			name:	DATE				33-33	1556 
+	34	)
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is of great historic value , but very rare .
+
+
+Treebanked sentence:
+--------------------
+It is of great historic value , but very rare . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ is)
+        (PP (IN of)
+          (NP (JJ great) (JJ historic) (NN value)))))
+    (, ,)
+    (CC but)
+    (S
+      (ADJP (RB very) (JJ rare)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-9	of great historic value , but very rare 
+	2	of
+	3	great
+			sense:	great.s.02
+	4	historic
+			sense:	historic.s.02
+	5	value
+			sense:	value.n.02
+	6	,
+	7	but
+	8	very
+			sense:	very.r.01
+	9	rare
+			sense:	rare.s.01
+	10	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.0-3	His most celebrated work 
+				6.0-0	It 
+	Chain 1 (IDENT)
+				1.18-18	Wittenberg 
+				2.5-5	Wittenberg 
+				5.31-31	Wittenberg 
+

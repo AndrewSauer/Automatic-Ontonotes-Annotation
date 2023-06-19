@@ -1,0 +1,551 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Dante Alighieri Society ( Italian : Società Dante Alighieri ) is a society that promotes Italian culture and language around the world .
+
+
+Treebanked sentence:
+--------------------
+The Dante Alighieri Society ( Italian : Società Dante Alighieri ) is a society that promotes Italian culture and language around the world . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Dante) (NNP Alighieri) (NNP Society))
+      (PRN (-LRB- -LRB-)
+        (FRAG
+          (NP (NNP Italian))
+          (: :)
+          (NP (NNP Società) (NNP Dante) (NNP Alighieri)))
+        (-RRB- -RRB-)))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN society))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ promotes)
+              (NP (JJ Italian) (NN culture)
+                (CC and)
+                (NN language))
+              (PP (IN around)
+                (NP (DT the) (NN world))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-3	The Dante Alighieri Society 
+	1	Dante
+			name:	ORGANIZATION				1-3	Dante Alighieri Society 
+	2	Alighieri
+	3	Society
+	4	(
+	5	Italian
+			name:	NATIONALITY				5-5	Italian 
+	6	:
+	7	Società
+			name:	PERSON				7-9	Società Dante Alighieri 
+	8	Dante
+	9	Alighieri
+	10	)
+	11	is
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	is 
+			N-ARG-A1		0-10	The Dante Alighieri Society ( Italian : Società Dante Alighieri ) 
+			N-ARG-A2		12-22	a society that promotes Italian culture and language around the world 
+	12	a
+	13	society
+			sense:	club.n.02
+	14	that
+	15	promotes
+			sense:	promote.v.01
+			prop:	promote.02
+			V		15-15	promotes 
+			N-ARG-A0		12-13	a society 
+			R-ARG-A0		14-14	that 
+			N-ARG-A1		16-19	Italian culture and language 
+			N-ARGM-LOC		20-22	around the world 
+	16	Italian
+			name:	NATIONALITY				16-16	Italian 
+	17	culture
+			sense:	acculturation.n.02
+	18	and
+	19	language
+			sense:	language.n.01
+	20	around
+	21	the
+	22	world
+			sense:	earth.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Today this society is present in more than 60 countries .
+
+
+Treebanked sentence:
+--------------------
+Today this society is present in more than 60 countries . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP-TMP (NN Today))
+    (NP (DT this) (NN society))
+    (VP (VBZ is)
+      (ADJP (JJ present)
+        (PP (IN in)
+          (NP
+            (QP (JJR more) (IN than) (CD 60))
+            (NNS countries)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Today
+			name:	DATE				0-0	Today 
+			sense:	today.n.01
+	1	this
+			coref:	IDENT			0	1-2	this society 
+	2	society
+			sense:	club.n.02
+	3	is
+			sense:	be.v.01
+			prop:	be.01
+			V		3-3	is 
+			N-ARGM-TMP		0-0	Today 
+			N-ARG-A1		1-2	this society 
+			N-ARG-A2		4-9	present in more than 60 countries 
+	4	present
+			name:	DATE				4-4	present 
+			sense:	present.a.02
+	5	in
+	6	more
+			sense:	more.a.02
+	7	than
+	8	60
+			name:	NUMBER				8-8	60 
+	9	countries
+			sense:	country.n.02
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was formed in Italy in July 1889 .
+
+
+Treebanked sentence:
+--------------------
+It was formed in Italy in July 1889 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN formed)
+        (PP (IN in)
+          (NP (NNP Italy)))
+        (PP (IN in)
+          (NP (NNP July) (CD 1889)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	formed
+			sense:	form.v.01
+			prop:	form.01
+			V		2-2	formed 
+			N-ARG-A1		0-0	It 
+			N-ARGM-LOC		3-4	in Italy 
+			N-ARGM-TMP		5-7	in July 1889 
+	3	in
+	4	Italy
+			name:	COUNTRY				4-4	Italy 
+	5	in
+	6	July
+			name:	DATE				6-7	July 1889 
+	7	1889
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The society was named after Dante Alighieri ( 1265–1321 ) , a pre - Renaissance poet from Florence and the author of The Divine Comedy .
+
+
+Treebanked sentence:
+--------------------
+The society was named after Dante Alighieri ( 1265 – 1321 ) , a pre - Renaissance poet from Florence and the author of The Divine Comedy . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN society))
+    (VP (VBD was)
+      (VP (VBN named)
+        (PP (IN after)
+          (NP
+            (NP
+              (NP (NNP Dante) (NNP Alighieri))
+              (NP (-LRB- -LRB-)
+                (QP (CD 1265) (SYM –) (CD 1321))
+                (-RRB- -RRB-)))
+            (, ,)
+            (NP
+              (NP (DT a)
+                (NML (AFX pre) (HYPH -) (NNP Renaissance))
+                (NN poet))
+              (PP (IN from)
+                (NP (NNP Florence))))
+            (CC and)
+            (NP
+              (NP (DT the) (NN author))
+              (PP (IN of)
+                (NP (DT The) (NNP Divine) (NNP Comedy))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The society 
+	1	society
+			sense:	club.n.02
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	named
+			sense:	name.v.01
+			prop:	name.02
+			V		3-3	named 
+			N-ARG-A1		0-1	The society 
+			N-ARG-A2		4-26	after Dante Alighieri ( 1265 – 1321 ) , a pre - Renaissance poet from Florence and the author of The Divine Comedy 
+	4	after
+	5	Dante
+			name:	PERSON				5-6	Dante Alighieri 
+	6	Alighieri
+	7	(
+	8	1265
+			name:	DATE				8-8	1265 
+	9	–
+	10	1321
+			name:	DATE				10-10	1321 
+	11	)
+	12	,
+	13	a
+	14	pre
+	15	-
+	16	Renaissance
+	17	poet
+			name:	TITLE				17-17	poet 
+			sense:	poet.n.01
+	18	from
+	19	Florence
+			name:	CITY				19-19	Florence 
+	20	and
+	21	the
+	22	author
+			name:	TITLE				22-22	author 
+			sense:	writer.n.01
+	23	of
+	24	The
+	25	Divine
+	26	Comedy
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Dante is considered the father of the Italian language .
+
+
+Treebanked sentence:
+--------------------
+Dante is considered the father of the Italian language . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Dante))
+    (VP (VBZ is)
+      (VP (VBN considered)
+        (NP
+          (NP (DT the) (NN father))
+          (PP (IN of)
+            (NP (DT the) (JJ Italian) (NN language))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Dante
+			name:	PERSON				0-0	Dante 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	considered
+			sense:	see.v.05
+			prop:	consider.01
+			V		2-2	considered 
+			N-ARG-A1		3-8	the father of the Italian language 
+	3	the
+	4	father
+			sense:	founder.n.02
+	5	of
+	6	the
+	7	Italian
+			name:	NATIONALITY				7-7	Italian 
+	8	language
+			sense:	language.n.01
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In October 1948 the society was restructured at a meeting in Venice to give total autonomy to all chapters of the Dante Society so that each could conduct its activities independently , under the direction of its own elected officers , in a manner that best suited local needs , preferences , and capacities while adhering to the Society 's basic principles .
+
+
+Treebanked sentence:
+--------------------
+In October 1948 the society was restructured at a meeting in Venice to give total autonomy to all chapters of the Dante Society so that each could conduct its activities independently , under the direction of its own elected officers , in a manner that best suited local needs , preferences , and capacities while adhering to the Society 's basic principles . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP October) (CD 1948)))
+    (NP (DT the) (NN society))
+    (VP (VBD was)
+      (VP (VBN restructured)
+        (PP (IN at)
+          (NP (DT a) (NN meeting)))
+        (PP (IN in)
+          (NP (NNP Venice)))
+        (S
+          (VP (TO to)
+            (VP (VB give)
+              (NP (JJ total) (NN autonomy))
+              (PP (IN to)
+                (NP
+                  (NP (DT all) (NNS chapters))
+                  (PP (IN of)
+                    (NP (DT the) (NNP Dante) (NNP Society)))))
+              (SBAR (IN so) (IN that)
+                (S
+                  (NP (DT each))
+                  (VP (MD could)
+                    (VP (VB conduct)
+                      (NP (PRP$ its) (NNS activities))
+                      (ADVP (RB independently))
+                      (, ,)
+                      (PP (IN under)
+                        (NP
+                          (NP (DT the) (NN direction))
+                          (PP (IN of)
+                            (NP (PRP$ its) (JJ own) (VBN elected) (NNS officers))))))))))))
+        (, ,)
+        (PP (IN in)
+          (NP
+            (NP (DT a) (NN manner))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (ADJP
+                  (ADJP (JJS best) (JJ suited))
+                  (SBAR
+                    (S
+                      (NP
+                        (NP (JJ local) (NNS needs))
+                        (, ,)
+                        (NP (NNS preferences))
+                        (, ,)
+                        (CC and)
+                        (NP (NNS capacities))))))
+                (PP (IN while)
+                  (S
+                    (VP (VBG adhering)
+                      (PP (IN to)
+                        (NP
+                          (NP (DT the) (NNP Society) (POS 's))
+                          (JJ basic) (NNS principles))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	October
+			name:	DATE				1-2	October 1948 
+	2	1948
+	3	the
+			coref:	IDENT			0	3-4	the society 
+	4	society
+			sense:	club.n.02
+	5	was
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	was 
+	6	restructured
+			sense:	restructure.v.01
+			prop:	restructure.01
+			V		6-6	restructured 
+			N-ARGM-TMP		0-2	In October 1948 
+			N-ARG-A1		3-4	the society 
+			N-ARGM-LOC		7-11	at a meeting in Venice 
+			N-ARGM-PRP		12-61	to give total autonomy to all chapters of the Dante Society so that each could conduct its activities independently , under the direction of its own elected officers , in a manner that best suited local needs , preferences , and capacities while adhering to the Society 's basic principles 
+	7	at
+	8	a
+	9	meeting
+			sense:	meeting.n.01
+	10	in
+	11	Venice
+			name:	CITY				11-11	Venice 
+	12	to
+	13	give
+			sense:	give.v.01
+			prop:	give.01
+			V		13-13	give 
+			N-ARG-A0		3-4	the society 
+			N-ARG-A1		14-15	total autonomy 
+			N-ARG-A2		16-22	to all chapters of the Dante Society 
+			N-ARGM-PRP		23-61	so that each could conduct its activities independently , under the direction of its own elected officers , in a manner that best suited local needs , preferences , and capacities while adhering to the Society 's basic principles 
+	14	total
+			sense:	entire.s.01
+	15	autonomy
+			sense:	autonomy.n.01
+	16	to
+	17	all
+	18	chapters
+			sense:	chapter.n.03
+	19	of
+	20	the
+			coref:	IDENT			0	20-22	the Dante Society 
+	21	Dante
+			name:	ORGANIZATION				21-22	Dante Society 
+	22	Society
+	23	so
+	24	that
+	25	each
+	26	could
+	27	conduct
+			sense:	conduct.v.01
+			prop:	conduct.01
+			V		27-27	conduct 
+			N-ARG-A0		25-25	each 
+			N-ARGM-MOD		26-26	could 
+			N-ARG-A1		28-29	its activities 
+			N-ARGM-MNR		30-30	independently 
+			N-ARGM-MNR		32-39	under the direction of its own elected officers 
+			N-ARGM-MNR		41-61	in a manner that best suited local needs , preferences , and capacities while adhering to the Society 's basic principles 
+	28	its
+			coref:	IDENT			0	28-28	its 
+	29	activities
+			sense:	activity.n.01
+	30	independently
+			sense:	independently.r.01
+	31	,
+	32	under
+	33	the
+	34	direction
+			sense:	management.n.01
+	35	of
+	36	its
+			coref:	IDENT			0	36-36	its 
+	37	own
+			sense:	own.s.01
+	38	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		38-38	elected 
+			N-ARG-A2		39-39	officers 
+	39	officers
+			sense:	officeholder.n.01
+	40	,
+	41	in
+	42	a
+	43	manner
+			sense:	manner.n.01
+	44	that
+	45	best
+			sense:	good.a.01
+	46	suited
+			sense:	suitable.s.01
+	47	local
+			sense:	local.a.01
+	48	needs
+			sense:	need.n.01
+	49	,
+	50	preferences
+			sense:	predilection.n.01
+	51	,
+	52	and
+	53	capacities
+			sense:	capacity.n.01
+	54	while
+	55	adhering
+			sense:	adhere.v.01
+			prop:	adhere.02
+			V		55-55	adhering 
+			N-ARG-A1		56-61	to the Society 's basic principles 
+	56	to
+	57	the
+			coref:	IDENT			0	57-59	the Society 's 
+	58	Society
+			name:	ORGANIZATION				58-58	Society 
+	59	's
+	60	basic
+			sense:	basic.a.01
+	61	principles
+			sense:	principle.n.02
+	62	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-3	The Dante Alighieri Society 
+				1.1-2	this society 
+				2.0-0	It 
+				3.0-1	The society 
+				5.3-4	the society 
+				5.20-22	the Dante Society 
+				5.28-28	its 
+				5.36-36	its 
+				5.57-59	the Society 's 
+

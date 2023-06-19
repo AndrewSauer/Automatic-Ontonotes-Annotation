@@ -1,0 +1,1233 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Michael John " Mike " Padden ( born November 13 , 1946 ) is a lawyer and politician from Spokane Valley , Washington .
+
+
+Treebanked sentence:
+--------------------
+Michael John " Mike " Padden ( born November 13 , 1946 ) is a lawyer and politician from Spokane Valley , Washington . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Michael) (NNP John) ('' ") (NNP Mike))
+    ('' ")
+    (NP
+      (NP (NNP Padden))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP November) (CD 13) (, ,) (CD 1946)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN lawyer)
+          (CC and)
+          (NN politician))
+        (PP (IN from)
+          (NP
+            (NP (NNP Spokane) (NNP Valley))
+            (, ,)
+            (NP (NNP Washington))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Michael
+			coref:	IDENT			5	0-3	Michael John " Mike 
+			name:	PERSON				0-1	Michael John 
+	1	John
+	2	"
+	3	Mike
+			name:	PERSON				3-5	Mike " Padden 
+	4	"
+	5	Padden
+			coref:	IDENT			0	5-11	Padden ( born November 13 , 1946 
+	6	(
+	7	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		7-7	born 
+			N-ARG-A1		0-5	Michael John " Mike " Padden 
+			N-ARGM-TMP		8-11	November 13 , 1946 
+	8	November
+			name:	DATE				8-11	November 13 , 1946 
+	9	13
+	10	,
+	11	1946
+	12	)
+	13	is
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	is 
+			N-ARG-A1		0-12	Michael John " Mike " Padden ( born November 13 , 1946 ) 
+			N-ARG-A2		14-22	a lawyer and politician from Spokane Valley , Washington 
+	14	a
+	15	lawyer
+			name:	TITLE				15-15	lawyer 
+			sense:	lawyer.n.01
+	16	and
+	17	politician
+			name:	TITLE				17-17	politician 
+			sense:	politician.n.02
+	18	from
+	19	Spokane
+			name:	CITY				19-20	Spokane Valley 
+	20	Valley
+	21	,
+	22	Washington
+			coref:	IDENT			3	22-22	Washington 
+			name:	STATE_OR_PROVINCE				22-22	Washington 
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is a member of the Washington State Senate representing Washington 's 4th Legislative District .
+
+
+Treebanked sentence:
+--------------------
+He is a member of the Washington State Senate representing Washington 's 4th Legislative District . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Washington) (NNP State) (NNP Senate))
+            (VP (VBG representing)
+              (NP
+                (NP (NNP Washington) (POS 's))
+                (JJ 4th) (JJ Legislative) (NNP District)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			5	0-0	He 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-14	a member of the Washington State Senate representing Washington 's 4th Legislative District 
+	2	a
+	3	member
+			sense:	member.n.01
+	4	of
+	5	the
+			coref:	IDENT			4	5-14	the Washington State Senate representing Washington 's 4th Legislative District 
+	6	Washington
+			name:	ORGANIZATION				6-8	Washington State Senate 
+	7	State
+	8	Senate
+	9	representing
+			sense:	represent.v.04
+			prop:	represent.01
+			V		9-9	representing 
+			N-ARG-A0		0-0	He 
+			N-ARG-A0		2-3	a member 
+			N-ARG-A1		10-14	Washington 's 4th Legislative District 
+	10	Washington
+			coref:	IDENT			3	10-11	Washington 's 
+			name:	STATE_OR_PROVINCE				10-10	Washington 
+	11	's
+	12	4th
+			name:	ORDINAL				12-12	4th 
+			sense:	fourth.s.01
+	13	Legislative
+			sense:	legislative.a.01
+	14	District
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Padden is well known as a " faithless elector " , a Presidential Elector who casts his vote for someone other than for whom he has pledged to vote .
+
+
+Treebanked sentence:
+--------------------
+Padden is well known as a " faithless elector " , a Presidential Elector who casts his vote for someone other than for whom he has pledged to vote . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Padden))
+    (VP (VBZ is)
+      (ADVP (RB well))
+      (VP (VBN known)
+        (PP
+          (PP (IN as)
+            (NP
+              (NP (DT a) (`` ") (JJ faithless) (NN elector) ('' "))
+              (, ,)
+              (NP
+                (NP (DT a) (NNP Presidential) (NNP Elector))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBZ casts)
+                      (NP (PRP$ his) (NN vote))
+                      (PP (IN for)
+                        (NP (NN someone)))))))))
+          (CONJP (JJ other) (IN than))
+          (PP (IN for)
+            (SBAR
+              (WHNP (WP whom))
+              (S
+                (NP (PRP he))
+                (VP (VBZ has)
+                  (VP (VBN pledged)
+                    (S
+                      (VP (TO to)
+                        (VP (VB vote))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Padden
+			coref:	IDENT			0	0-0	Padden 
+			name:	PERSON				0-0	Padden 
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Padden 
+			N-ARG-A2		2-28	well known as a " faithless elector " , a Presidential Elector who casts his vote for someone other than for whom he has pledged to vote 
+	2	well
+			sense:	well.r.02
+	3	known
+			sense:	know.v.04
+			prop:	know.01
+			V		3-3	known 
+			N-ARG-A1		0-0	Padden 
+			N-ARGM-MNR		2-2	well 
+			N-ARG-A2		4-28	as a " faithless elector " , a Presidential Elector who casts his vote for someone other than for whom he has pledged to vote 
+	4	as
+	5	a
+	6	"
+	7	faithless
+			sense:	faithless.s.01
+	8	elector
+			sense:	voter.n.01
+	9	"
+	10	,
+	11	a
+	12	Presidential
+	13	Elector
+	14	who
+	15	casts
+			sense:	cast.v.02
+			prop:	cast.01
+			V		15-15	casts 
+			N-ARG-A0		11-13	a Presidential Elector 
+			R-ARG-A0		14-14	who 
+			N-ARG-A1		16-17	his vote 
+			N-ARGM-ADV		18-28	for someone other than for whom he has pledged to vote 
+	16	his
+			coref:	IDENT			0	16-16	his 
+			coref:	IDENT			1	16-17	his vote 
+	17	vote
+			sense:	vote.n.01
+	18	for
+	19	someone
+			sense:	person.n.01
+	20	other
+			sense:	other.a.01
+	21	than
+	22	for
+	23	whom
+	24	he
+			coref:	IDENT			0	24-24	he 
+	25	has
+			sense:	have.v.01
+			prop:	have.01
+			V		25-25	has 
+	26	pledged
+			sense:	pledge.v.01
+			prop:	pledge.01
+			V		26-26	pledged 
+			N-ARG-A0		24-24	he 
+			N-ARG-A2		27-28	to vote 
+	27	to
+	28	vote
+			sense:	vote.v.01
+			prop:	vote.01
+			V		28-28	vote 
+			N-ARG-A1		22-23	for whom 
+			N-ARG-A0		24-24	he 
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the 1976 U.S. presidential election , Gerald Ford , the Republican candidate and incumbent , had lost the race to Democrat , and former Georgia Governor Jimmy Carter .
+
+
+Treebanked sentence:
+--------------------
+In the 1976 U.S. presidential election , Gerald Ford , the Republican candidate and incumbent , had lost the race to Democrat , and former Georgia Governor Jimmy Carter . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (DT the) (CD 1976) (NNP U.S.))
+        (NP (JJ presidential) (NN election))))
+    (, ,)
+    (NP
+      (NP (NNP Gerald) (NNP Ford))
+      (, ,)
+      (NP (DT the) (JJ Republican)
+        (NML (NN candidate)
+          (CC and)
+          (NN incumbent)))
+      (, ,))
+    (VP (VBD had)
+      (VP (VBN lost)
+        (NP
+          (NP
+            (NP (DT the) (NN race))
+            (PP (IN to)
+              (NP (NNP Democrat))))
+          (, ,)
+          (CC and)
+          (NP
+            (NML (JJ former) (NNP Georgia) (NNP Governor))
+            (NNP Jimmy) (NNP Carter)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+	2	1976
+			name:	DATE				2-2	1976 
+	3	U.S.
+			name:	COUNTRY				3-3	U.S. 
+	4	presidential
+			sense:	presidential.a.01
+	5	election
+			sense:	election.n.01
+	6	,
+	7	Gerald
+			name:	PERSON				7-8	Gerald Ford 
+	8	Ford
+	9	,
+	10	the
+	11	Republican
+			name:	IDEOLOGY				11-11	Republican 
+	12	candidate
+			name:	TITLE				12-12	candidate 
+			sense:	campaigner.n.01
+	13	and
+	14	incumbent
+			sense:	incumbent.n.01
+	15	,
+	16	had
+			sense:	have.v.11
+			prop:	have.01
+			V		16-16	had 
+	17	lost
+			sense:	lose.v.02
+			prop:	lose.03
+			V		17-17	lost 
+			N-ARGM-LOC		0-5	In the 1976 U.S. presidential election 
+			N-ARG-A0		7-15	Gerald Ford , the Republican candidate and incumbent , 
+			N-ARG-A1		18-19	the race 
+			N-ARG-A2		20-28	to Democrat , and former Georgia Governor Jimmy Carter 
+	18	the
+	19	race
+			sense:	race.n.01
+	20	to
+	21	Democrat
+			name:	MISC				21-21	Democrat 
+	22	,
+	23	and
+	24	former
+			sense:	erstwhile.s.01
+	25	Georgia
+			name:	STATE_OR_PROVINCE				25-25	Georgia 
+	26	Governor
+			name:	TITLE				26-26	Governor 
+	27	Jimmy
+			name:	PERSON				27-28	Jimmy Carter 
+	28	Carter
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Rather than vote as pledged , for President Ford , Padden instead cast his vote for Ronald Reagan , who had lost the Republican nomination to Ford earlier that year .
+
+
+Treebanked sentence:
+--------------------
+Rather than vote as pledged , for President Ford , Padden instead cast his vote for Ronald Reagan , who had lost the Republican nomination to Ford earlier that year . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (RB Rather) (IN than)
+      (S
+        (VP (VB vote)
+          (SBAR (IN as)
+            (S
+              (VP (VBN pledged)))))))
+    (, ,)
+    (PP (IN for)
+      (NP (NNP President) (NNP Ford)))
+    (, ,)
+    (NP (NNP Padden))
+    (ADVP (RB instead))
+    (VP (VBD cast)
+      (NP (PRP$ his) (NN vote))
+      (PP (IN for)
+        (NP
+          (NP (NNP Ronald) (NNP Reagan))
+          (, ,)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD had)
+                (VP (VBN lost)
+                  (NP (DT the) (JJ Republican) (NN nomination))
+                  (PP (IN to)
+                    (NP (NNP Ford)))
+                  (NP-TMP (RBR earlier) (DT that) (NN year)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Rather
+			sense:	rather.r.01
+	1	than
+	2	vote
+			sense:	vote.v.01
+			prop:	vote.01
+			V		2-2	vote 
+			N-ARGM-MNR		3-4	as pledged 
+			N-ARG-A1		6-8	for President Ford 
+			N-ARG-A0		10-10	Padden 
+	3	as
+	4	pledged
+			sense:	pledge.v.01
+			prop:	pledge.01
+			V		4-4	pledged 
+	5	,
+	6	for
+	7	President
+			name:	TITLE				7-7	President 
+	8	Ford
+			name:	PERSON				8-8	Ford 
+	9	,
+	10	Padden
+			coref:	IDENT			0	10-10	Padden 
+			name:	PERSON				10-10	Padden 
+	11	instead
+			sense:	alternatively.r.01
+	12	cast
+			sense:	cast.v.02
+			prop:	cast.01
+			V		12-12	cast 
+			N-ARGM-ADV		0-8	Rather than vote as pledged , for President Ford 
+			N-ARG-A0		10-10	Padden 
+			N-ARGM-DIS		11-11	instead 
+			N-ARG-A1		13-14	his vote 
+			N-ARGM-ADV		15-29	for Ronald Reagan , who had lost the Republican nomination to Ford earlier that year 
+	13	his
+			coref:	IDENT			0	13-13	his 
+			coref:	IDENT			1	13-14	his vote 
+	14	vote
+			sense:	vote.n.01
+	15	for
+	16	Ronald
+			name:	PERSON				16-17	Ronald Reagan 
+	17	Reagan
+	18	,
+	19	who
+	20	had
+			sense:	have.v.11
+			prop:	have.01
+			V		20-20	had 
+	21	lost
+			sense:	lose.v.02
+			prop:	lose.03
+			V		21-21	lost 
+			N-ARG-A0		16-17	Ronald Reagan 
+			R-ARG-A0		19-19	who 
+			N-ARG-A1		22-24	the Republican nomination 
+			N-ARG-A2		25-26	to Ford 
+			N-ARGM-TMP		27-29	earlier that year 
+	22	the
+	23	Republican
+			name:	IDEOLOGY				23-23	Republican 
+	24	nomination
+			sense:	nomination.n.01
+	25	to
+	26	Ford
+			name:	ORGANIZATION				26-26	Ford 
+	27	earlier
+			sense:	early_on.r.01
+	28	that
+	29	year
+			name:	DURATION				29-29	year 
+			sense:	year.n.01
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He entered the Washington House of Representatives in January 1981 and served there until 1995 when he was appointed to serve as a district court judge in the Spokane County District Court .
+
+
+Treebanked sentence:
+--------------------
+He entered the Washington House of Representatives in January 1981 and served there until 1995 when he was appointed to serve as a district court judge in the Spokane County District Court . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD entered)
+        (NP
+          (NP (DT the) (NNP Washington) (NNP House))
+          (PP (IN of)
+            (NP (NNPS Representatives))))
+        (PP (IN in)
+          (NP (NNP January) (CD 1981))))
+      (CC and)
+      (VP (VBD served)
+        (ADVP (RB there))
+        (PP (IN until)
+          (NP (CD 1995)))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP he))
+            (VP (VBD was)
+              (VP (VBN appointed)
+                (S
+                  (VP (TO to)
+                    (VP (VB serve)
+                      (PP (IN as)
+                        (NP
+                          (NP (DT a) (NN district) (NN court) (NN judge))
+                          (PP (IN in)
+                            (NP (DT the)
+                              (NML (NNP Spokane) (NNP County))
+                              (NNP District) (NNP Court))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	entered
+			sense:	accede.v.02
+			prop:	enter.01
+			V		1-1	entered 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-6	the Washington House of Representatives 
+			N-ARGM-TMP		7-9	in January 1981 
+	2	the
+	3	Washington
+			name:	ORGANIZATION				3-6	Washington House of Representatives 
+	4	House
+	5	of
+	6	Representatives
+	7	in
+	8	January
+			name:	DATE				8-9	January 1981 
+	9	1981
+	10	and
+	11	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		11-11	served 
+			N-ARG-A0		0-0	He 
+			N-ARGM-LOC		12-12	there 
+			N-ARGM-TMP		13-31	until 1995 when he was appointed to serve as a district court judge in the Spokane County District Court 
+	12	there
+			sense:	there.r.01
+	13	until
+	14	1995
+			name:	DATE				14-14	1995 
+	15	when
+	16	he
+			coref:	IDENT			0	16-16	he 
+	17	was
+			sense:	be.v.01
+			prop:	be.03
+			V		17-17	was 
+	18	appointed
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		18-18	appointed 
+			N-ARGM-TMP		14-14	1995 
+			R-ARGM-TMP		15-15	when 
+			N-ARG-A1		16-16	he 
+			N-ARG-A2		19-31	to serve as a district court judge in the Spokane County District Court 
+	19	to
+	20	serve
+			sense:	serve.v.02
+			prop:	serve.01
+			V		20-20	serve 
+			N-ARG-A0		16-16	he 
+			N-ARG-A1		21-31	as a district court judge in the Spokane County District Court 
+	21	as
+	22	a
+	23	district
+			sense:	district.n.01
+	24	court
+			sense:	court.n.01
+	25	judge
+			name:	TITLE				25-25	judge 
+			sense:	judge.n.01
+	26	in
+	27	the
+	28	Spokane
+			name:	CITY				28-28	Spokane 
+	29	County
+			name:	LOCATION				29-31	County District Court 
+	30	District
+	31	Court
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On June 13 , 2006 , Padden announced he would not run for re - election as judge .
+
+
+Treebanked sentence:
+--------------------
+On June 13 , 2006 , Padden announced he would not run for re - election as judge . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NNP June) (CD 13) (, ,) (CD 2006)))
+    (, ,)
+    (NP (NNP Padden))
+    (VP (VBD announced)
+      (SBAR
+        (S
+          (NP (PRP he))
+          (VP (MD would) (RB not)
+            (VP (VB run)
+              (PP (IN for)
+                (PP (IN re) (HYPH -)
+                  (NP (NN election))))
+              (PP (IN as)
+                (NP (NN judge))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	June
+			name:	DATE				1-4	June 13 , 2006 
+	2	13
+	3	,
+	4	2006
+	5	,
+	6	Padden
+			coref:	IDENT			0	6-6	Padden 
+			name:	PERSON				6-6	Padden 
+	7	announced
+			sense:	announce.v.01
+			prop:	announce.01
+			V		7-7	announced 
+			N-ARGM-TMP		0-4	On June 13 , 2006 
+			N-ARG-A0		6-6	Padden 
+			N-ARG-A1		8-17	he would not run for re - election as judge 
+	8	he
+			coref:	IDENT			0	8-8	he 
+	9	would
+	10	not
+			sense:	not.r.01
+	11	run
+			sense:	campaign.v.01
+			prop:	run.02
+			V		11-11	run 
+			N-ARG-A0		8-8	he 
+			N-ARGM-MOD		9-9	would 
+			N-ARGM-NEG		10-10	not 
+			N-ARG-A1		12-17	for re - election as judge 
+	12	for
+	13	re
+	14	-
+	15	election
+			sense:	election.n.01
+	16	as
+	17	judge
+			name:	TITLE				17-17	judge 
+			sense:	judge.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2007 , evidence surfaced that Padden used his influence as a judge to help direct more than $ 7.5 million in fees and interest payments to a former employer .
+
+
+Treebanked sentence:
+--------------------
+In 2007 , evidence surfaced that Padden used his influence as a judge to help direct more than $ 7.5 million in fees and interest payments to a former employer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2007)))
+    (, ,)
+    (NP (NN evidence))
+    (VP (VBD surfaced)
+      (SBAR (IN that)
+        (S
+          (NP (NNP Padden))
+          (VP (VBD used)
+            (NP (PRP$ his) (NN influence))
+            (PP (IN as)
+              (NP (DT a) (NN judge)))
+            (S
+              (VP (TO to)
+                (VP (VB help)
+                  (S
+                    (VP (VB direct)
+                      (NP
+                        (QP (JJR more) (IN than) ($ $) (CD 7.5) (CD million)))
+                      (PP (IN in)
+                        (NP
+                          (NML (NNS fees)
+                            (CC and)
+                            (NN interest))
+                          (NNS payments)))
+                      (PP (IN to)
+                        (NP (DT a) (JJ former) (NN employer))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2007
+			name:	DATE				1-1	2007 
+	2	,
+	3	evidence
+			sense:	evidence.n.01
+	4	surfaced
+			sense:	come_on.v.01
+			prop:	surface.01
+			V		4-4	surfaced 
+			N-ARGM-TMP		0-1	In 2007 
+			N-ARG-A1		3-3	evidence 
+			C-ARG-A1		5-29	that Padden used his influence as a judge to help direct more than $ 7.5 million in fees and interest payments to a former employer 
+	5	that
+	6	Padden
+			coref:	IDENT			0	6-6	Padden 
+			name:	PERSON				6-6	Padden 
+	7	used
+			sense:	use.v.01
+			prop:	use.01
+			V		7-7	used 
+			N-ARG-A0		6-6	Padden 
+			N-ARG-A1		8-12	his influence as a judge 
+			N-ARG-A2		13-29	to help direct more than $ 7.5 million in fees and interest payments to a former employer 
+	8	his
+			coref:	IDENT			0	8-8	his 
+	9	influence
+			sense:	influence.n.01
+	10	as
+	11	a
+	12	judge
+			name:	TITLE				12-12	judge 
+			sense:	judge.n.01
+	13	to
+	14	help
+			sense:	help.v.01
+			prop:	help.01
+			V		14-14	help 
+			N-ARG-A0		6-6	Padden 
+			N-ARG-A1		15-29	direct more than $ 7.5 million in fees and interest payments to a former employer 
+	15	direct
+			sense:	send.v.01
+			prop:	direct.01
+			V		15-15	direct 
+			N-ARG-A0		6-6	Padden 
+			N-ARG-A1		16-25	more than $ 7.5 million in fees and interest payments 
+			N-ARG-A2		26-29	to a former employer 
+	16	more
+			sense:	more.a.01
+	17	than
+	18	$
+			name:	MONEY				18-20	$ 7.5 million 
+	19	7.5
+	20	million
+	21	in
+	22	fees
+			sense:	fee.n.01
+	23	and
+	24	interest
+			sense:	interest.n.04
+	25	payments
+			sense:	payment.n.01
+	26	to
+	27	a
+	28	former
+			sense:	erstwhile.s.01
+	29	employer
+			sense:	employer.n.01
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At Padden ’s request , the state Commission on Judicial Conduct has issued a statement confirming that it examined complaints about Padden ’s 1999 selection of a former client as the official collection agency for District Court but found nothing to support an ethics violation .
+
+
+Treebanked sentence:
+--------------------
+At Padden ’s request , the state Commission on Judicial Conduct has issued a statement confirming that it examined complaints about Padden ’s 1999 selection of a former client as the official collection agency for District Court but found nothing to support an ethics violation . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (NNP Padden) (POS ’s))
+        (NN request)))
+    (, ,)
+    (NP
+      (NP (DT the) (NN state) (NN Commission))
+      (PP (IN on)
+        (NP (NNP Judicial) (NNP Conduct))))
+    (VP (VBZ has)
+      (VP (VBN issued)
+        (NP (DT a) (NN statement))
+        (S
+          (VP (VBG confirming)
+            (SBAR (IN that)
+              (S
+                (NP (PRP it))
+                (VP
+                  (VP (VBD examined)
+                    (NP (NNS complaints))
+                    (PP (IN about)
+                      (NP
+                        (NP
+                          (NP (NNP Padden) (POS ’s))
+                          (CD 1999) (NN selection))
+                        (PP (IN of)
+                          (NP
+                            (NP (DT a) (JJ former) (NN client))
+                            (PP (IN as)
+                              (NP
+                                (NP (DT the) (JJ official) (NN collection) (NN agency))
+                                (PP (IN for)
+                                  (NP (NNP District) (NNP Court))))))))))
+                  (CC but)
+                  (VP (VBD found)
+                    (NP (NN nothing))
+                    (S
+                      (VP (TO to)
+                        (VP (VB support)
+                          (NP (DT an) (NNS ethics) (NN violation)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	Padden
+			coref:	IDENT			0	1-2	Padden ’s 
+			name:	PERSON				1-1	Padden 
+	2	’s
+	3	request
+			sense:	request.n.01
+	4	,
+	5	the
+	6	state
+			sense:	state.n.01
+	7	Commission
+			name:	ORGANIZATION				7-10	Commission on Judicial Conduct 
+			sense:	committee.n.01
+	8	on
+	9	Judicial
+	10	Conduct
+	11	has
+			sense:	have.v.01
+			prop:	have.01
+			V		11-11	has 
+	12	issued
+			sense:	publish.v.02
+			prop:	issue.01
+			V		12-12	issued 
+			N-ARGM-ADV		0-3	At Padden ’s request 
+			N-ARG-A0		5-10	the state Commission on Judicial Conduct 
+			N-ARG-A1		13-44	a statement confirming that it examined complaints about Padden ’s 1999 selection of a former client as the official collection agency for District Court but found nothing to support an ethics violation 
+	13	a
+	14	statement
+			sense:	statement.n.01
+	15	confirming
+			sense:	confirm.v.01
+			prop:	confirm.01
+			V		15-15	confirming 
+			N-ARG-A0		13-14	a statement 
+			N-ARG-A1		16-44	that it examined complaints about Padden ’s 1999 selection of a former client as the official collection agency for District Court but found nothing to support an ethics violation 
+	16	that
+	17	it
+	18	examined
+			sense:	analyze.v.01
+			prop:	examine.01
+			V		18-18	examined 
+			N-ARG-A0		17-17	it 
+			N-ARG-A1		19-36	complaints about Padden ’s 1999 selection of a former client as the official collection agency for District Court 
+	19	complaints
+			sense:	charge.n.02
+	20	about
+	21	Padden
+			coref:	IDENT			0	21-22	Padden ’s 
+			name:	PERSON				21-21	Padden 
+	22	’s
+	23	1999
+			name:	DATE				23-23	1999 
+	24	selection
+			sense:	choice.n.02
+	25	of
+	26	a
+	27	former
+			sense:	erstwhile.s.01
+	28	client
+			sense:	client.n.01
+	29	as
+	30	the
+			coref:	IDENT			2	30-36	the official collection agency for District Court 
+	31	official
+			sense:	official.a.01
+	32	collection
+			sense:	collection.n.04
+	33	agency
+			sense:	agency.n.02
+	34	for
+	35	District
+			name:	ORGANIZATION				35-36	District Court 
+	36	Court
+	37	but
+	38	found
+			sense:	determine.v.01
+			prop:	find.01
+			V		38-38	found 
+			N-ARG-A0		17-17	it 
+			N-ARG-A1		39-44	nothing to support an ethics violation 
+	39	nothing
+			sense:	nothing.n.01
+	40	to
+	41	support
+			sense:	corroborate.v.03
+			prop:	support.01
+			V		41-41	support 
+			N-ARG-A0		39-39	nothing 
+			N-ARG-A1		42-44	an ethics violation 
+	42	an
+	43	ethics
+			sense:	ethic.n.02
+	44	violation
+			sense:	misdemeanor.n.01
+	45	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The commission typically acknowledges complaints only if it imposes discipline or sanctions .
+
+
+Treebanked sentence:
+--------------------
+The commission typically acknowledges complaints only if it imposes discipline or sanctions . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN commission))
+    (ADVP (RB typically))
+    (VP (VBZ acknowledges)
+      (NP (NNS complaints))
+      (ADVP (RB only))
+      (SBAR (IN if)
+        (S
+          (NP (PRP it))
+          (VP (VBZ imposes)
+            (NP (NN discipline)
+              (CC or)
+              (NNS sanctions))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	commission
+			sense:	committee.n.01
+	2	typically
+			sense:	typically.r.01
+	3	acknowledges
+			sense:	acknowledge.v.02
+			prop:	acknowledge.01
+			V		3-3	acknowledges 
+			N-ARG-A0		0-1	The commission 
+			N-ARG-A1		4-4	complaints 
+			N-ARGM-ADV		5-11	only if it imposes discipline or sanctions 
+	4	complaints
+			sense:	charge.n.02
+	5	only
+			sense:	entirely.r.02
+	6	if
+	7	it
+	8	imposes
+			sense:	enforce.v.02
+			prop:	impose.01
+			V		8-8	imposes 
+			N-ARG-A0		7-7	it 
+			N-ARG-A1		9-11	discipline or sanctions 
+	9	discipline
+			sense:	discipline.n.05
+	10	or
+	11	sanctions
+			sense:	sanction.n.02
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The agency , however , refused to disclose how it arrived at its conclusion or what the initial examination entailed .
+
+
+Treebanked sentence:
+--------------------
+The agency , however , refused to disclose how it arrived at its conclusion or what the initial examination entailed . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN agency))
+    (, ,)
+    (ADVP (RB however))
+    (, ,)
+    (VP (VBD refused)
+      (S
+        (VP (TO to)
+          (VP (VB disclose)
+            (SBAR
+              (SBAR
+                (WHADVP (WRB how))
+                (S
+                  (NP (PRP it))
+                  (VP (VBD arrived)
+                    (PP (IN at)
+                      (NP (PRP$ its) (NN conclusion))))))
+              (CC or)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (DT the) (JJ initial) (NN examination))
+                  (VP (VBD entailed)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-1	The agency 
+	1	agency
+			sense:	agency.n.01
+	2	,
+	3	however
+			sense:	however.r.01
+	4	,
+	5	refused
+			sense:	refuse.v.01
+			prop:	refuse.01
+			V		5-5	refused 
+			N-ARG-A0		0-1	The agency 
+			N-ARGM-DIS		3-3	however 
+			N-ARG-A1		6-19	to disclose how it arrived at its conclusion or what the initial examination entailed 
+	6	to
+	7	disclose
+			sense:	unwrap.v.02
+			prop:	disclose.01
+			V		7-7	disclose 
+			N-ARG-A0		0-1	The agency 
+			N-ARG-A1		8-19	how it arrived at its conclusion or what the initial examination entailed 
+	8	how
+	9	it
+			coref:	IDENT			2	9-9	it 
+	10	arrived
+			sense:	arrive.v.01
+			prop:	arrive.01
+			V		10-10	arrived 
+			N-ARGM-MNR		8-8	how 
+			N-ARG-A1		9-9	it 
+			N-ARG-A4		11-13	at its conclusion 
+	11	at
+	12	its
+			coref:	IDENT			2	12-12	its 
+	13	conclusion
+			sense:	decision.n.02
+	14	or
+	15	what
+	16	the
+	17	initial
+			sense:	initial.s.01
+	18	examination
+			sense:	examination.n.01
+	19	entailed
+			sense:	entail.v.02
+			prop:	entail.01
+			V		19-19	entailed 
+			N-ARG-A1		15-15	what 
+			N-ARG-A0		16-18	the initial examination 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Padden was elected to the Washington Senate in November 2011 .
+
+
+Treebanked sentence:
+--------------------
+Padden was elected to the Washington Senate in November 2011 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Padden))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (PP (IN to)
+          (NP (DT the) (NNP Washington) (NNP Senate)))
+        (PP (IN in)
+          (NP (NNP November) (CD 2011)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Padden
+			coref:	IDENT			0	0-0	Padden 
+			name:	PERSON				0-0	Padden 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A1		0-0	Padden 
+			N-ARG-A2		3-6	to the Washington Senate 
+			N-ARGM-TMP		7-9	in November 2011 
+	3	to
+	4	the
+			coref:	IDENT			4	4-6	the Washington Senate 
+	5	Washington
+			name:	ORGANIZATION				5-6	Washington Senate 
+	6	Senate
+	7	in
+	8	November
+			name:	DATE				8-9	November 2011 
+	9	2011
+	10	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.5-11	Padden ( born November 13 , 1946 
+				2.0-0	Padden 
+				2.16-16	his 
+				2.24-24	he 
+				4.10-10	Padden 
+				4.13-13	his 
+				5.0-0	He 
+				5.16-16	he 
+				6.6-6	Padden 
+				6.8-8	he 
+				7.6-6	Padden 
+				7.8-8	his 
+				8.1-2	Padden ’s 
+				8.21-22	Padden ’s 
+				11.0-0	Padden 
+	Chain 1 (IDENT)
+				2.16-17	his vote 
+				4.13-14	his vote 
+	Chain 2 (IDENT)
+				8.30-36	the official collection agency for District Court 
+				10.0-1	The agency 
+				10.9-9	it 
+				10.12-12	its 
+	Chain 3 (IDENT)
+				1.10-11	Washington 's 
+				0.22-22	Washington 
+	Chain 4 (IDENT)
+				1.5-14	the Washington State Senate representing Washington 's 4th Legislative District 
+				11.4-6	the Washington Senate 
+	Chain 5 (IDENT)
+				0.0-3	Michael John " Mike 
+				1.0-0	He 
+

@@ -1,0 +1,492 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Belknap Stone House in Newburgh , New York , USA , was built by Abel Belknap in the 1750s .
+
+
+Treebanked sentence:
+--------------------
+The Belknap Stone House in Newburgh , New York , USA , was built by Abel Belknap in the 1750s . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Belknap)
+      (NML
+        (NML
+          (NML (NNP Stone) (NNP House))
+          (PP (IN in)
+            (NP (NNP Newburgh))))
+        (, ,)
+        (NML (NNP New) (NNP York))
+        (, ,))
+      (NNP USA))
+    (, ,)
+    (VP (VBD was)
+      (VP (VBN built)
+        (PP (IN by)
+          (NP
+            (NP (NNP Abel) (NNP Belknap))
+            (PP (IN in)
+              (NP (DT the) (NNS 1750s)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Belknap
+			name:	ORGANIZATION				1-3	Belknap Stone House 
+	2	Stone
+	3	House
+	4	in
+	5	Newburgh
+			coref:	IDENT			1	5-5	Newburgh 
+			name:	CITY				5-5	Newburgh 
+	6	,
+	7	New
+			name:	STATE_OR_PROVINCE				7-8	New York 
+	8	York
+	9	,
+	10	USA
+			name:	COUNTRY				10-10	USA 
+	11	,
+	12	was
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	was 
+	13	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		13-13	built 
+			N-ARG-A1		0-10	The Belknap Stone House in Newburgh , New York , USA 
+			N-ARG-A0		14-16	by Abel Belknap 
+			N-ARGM-TMP		17-19	in the 1750s 
+	14	by
+	15	Abel
+			coref:	IDENT			0	15-16	Abel Belknap 
+			name:	PERSON				15-16	Abel Belknap 
+	16	Belknap
+	17	in
+	18	the
+			name:	DATE				18-19	the 1750s 
+	19	1750s
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Located on Broadway ( New York State Route 17 K ) near the city 's western boundary , it is the second oldest structure in the city after Hasbrouck House , Washington 's headquarters during the last years of the American Revolutionary War .
+
+
+Treebanked sentence:
+--------------------
+Located on Broadway ( New York State Route 17 K ) near the city 's western boundary , it is the second oldest structure in the city after Hasbrouck House , Washington 's headquarters during the last years of the American Revolutionary War . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Located)
+        (PP (IN on)
+          (NP (NNP Broadway)
+            (PRN (-LRB- -LRB-)
+              (NP
+                (NML (NNP New) (NNP York) (NNP State) (NNP Route))
+                (NML (CD 17) (NN K)))
+              (-RRB- -RRB-))))
+        (PP (IN near)
+          (NP
+            (NP (DT the) (NN city) (POS 's))
+            (JJ western) (NN boundary)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ second) (JJS oldest) (NN structure))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN city))
+            (PP (IN after)
+              (NP
+                (NP (NNP Hasbrouck) (NNP House))
+                (, ,)
+                (NP
+                  (NP
+                    (NP (NNP Washington) (POS 's))
+                    (NN headquarters))
+                  (PP (IN during)
+                    (NP
+                      (NP (DT the) (JJ last) (NNS years))
+                      (PP (IN of)
+                        (NP (DT the) (NNP American) (NNP Revolutionary) (NNP War))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		0-0	Located 
+			N-ARGM-LOC		1-10	on Broadway ( New York State Route 17 K ) 
+			N-ARGM-LOC		11-16	near the city 's western boundary 
+			N-ARG-A1		18-18	it 
+	1	on
+	2	Broadway
+			name:	LOCATION				2-2	Broadway 
+	3	(
+	4	New
+			name:	STATE_OR_PROVINCE				4-5	New York 
+	5	York
+	6	State
+			name:	LOCATION				6-9	State Route 17 K 
+	7	Route
+	8	17
+	9	K
+			sense:	k.n.07
+	10	)
+	11	near
+	12	the
+	13	city
+			sense:	city.n.01
+	14	's
+	15	western
+			sense:	western.s.03
+	16	boundary
+			sense:	boundary.n.02
+	17	,
+	18	it
+	19	is
+			sense:	be.v.01
+			prop:	be.01
+			V		19-19	is 
+			R-ARG-A1		0-16	Located on Broadway ( New York State Route 17 K ) near the city 's western boundary 
+			N-ARG-A1		18-18	it 
+			N-ARG-A2		20-42	the second oldest structure in the city after Hasbrouck House , Washington 's headquarters during the last years of the American Revolutionary War 
+	20	the
+	21	second
+			name:	ORDINAL				21-21	second 
+			sense:	second.s.01
+	22	oldest
+			sense:	old.a.02
+	23	structure
+			sense:	structure.n.01
+	24	in
+	25	the
+	26	city
+			sense:	city.n.01
+	27	after
+	28	Hasbrouck
+			coref:	IDENT			2	28-42	Hasbrouck House , Washington 's headquarters during the last years of the American Revolutionary War 
+			name:	ORGANIZATION				28-29	Hasbrouck House 
+	29	House
+	30	,
+	31	Washington
+			name:	STATE_OR_PROVINCE				31-31	Washington 
+	32	's
+	33	headquarters
+			sense:	headquarters.n.02
+	34	during
+	35	the
+			name:	DATE				35-37	the last years 
+	36	last
+			sense:	concluding.s.01
+	37	years
+			sense:	year.n.01
+	38	of
+	39	the
+			coref:	IDENT			3	39-42	the American Revolutionary War 
+	40	American
+			name:	NATIONALITY				40-40	American 
+	41	Revolutionary
+			name:	IDEOLOGY				41-41	Revolutionary 
+	42	War
+			name:	CAUSE_OF_DEATH				42-42	War 
+	43	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Belknap chaired the local Committee of Safety during the war , and when the Continental Army was encamped in the Newburgh area in 1782 - 83 , the house served as James Clinton 's headquarters in the area .
+
+
+Treebanked sentence:
+--------------------
+Belknap chaired the local Committee of Safety during the war , and when the Continental Army was encamped in the Newburgh area in 1782 - 83 , the house served as James Clinton 's headquarters in the area . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NNP Belknap))
+      (VP (VBD chaired)
+        (NP
+          (NP (DT the) (JJ local) (NNP Committee))
+          (PP (IN of)
+            (NP (NNP Safety))))
+        (PP (IN during)
+          (NP (DT the) (NN war)))))
+    (, ,)
+    (CC and)
+    (S
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (DT the) (NNP Continental) (NNP Army))
+          (VP (VBD was)
+            (VP (VBN encamped)
+              (PP (IN in)
+                (NP (DT the) (NNP Newburgh) (NN area)))
+              (PP (IN in)
+                (NP
+                  (QP (CD 1782) (HYPH -) (CD 83))))))))
+      (, ,)
+      (NP (DT the) (NN house))
+      (VP (VBD served)
+        (PP (IN as)
+          (NP
+            (NP (NNP James) (NNP Clinton) (POS 's))
+            (NN headquarters)))
+        (PP (IN in)
+          (NP (DT the) (NN area)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Belknap
+			coref:	IDENT			0	0-0	Belknap 
+			name:	PERSON				0-0	Belknap 
+	1	chaired
+			sense:	chair.v.01
+			prop:	chair.01
+			V		1-1	chaired 
+			N-ARG-A0		0-0	Belknap 
+			N-ARG-A1		2-6	the local Committee of Safety 
+			N-ARGM-TMP		7-9	during the war 
+	2	the
+	3	local
+			sense:	local.a.01
+	4	Committee
+	5	of
+	6	Safety
+	7	during
+	8	the
+			coref:	IDENT			3	8-9	the war 
+	9	war
+			name:	CAUSE_OF_DEATH				9-9	war 
+			sense:	war.n.01
+	10	,
+	11	and
+	12	when
+	13	the
+	14	Continental
+			name:	ORGANIZATION				14-15	Continental Army 
+	15	Army
+	16	was
+			sense:	be.v.01
+			prop:	be.03
+			V		16-16	was 
+	17	encamped
+			sense:	camp.v.01
+			prop:	camp.01
+			V		17-17	encamped 
+			N-ARGM-TMP		12-12	when 
+			N-ARG-A0		13-15	the Continental Army 
+			N-ARGM-LOC		18-21	in the Newburgh area 
+			N-ARGM-TMP		22-25	in 1782 - 83 
+	18	in
+	19	the
+	20	Newburgh
+			coref:	IDENT			1	20-20	Newburgh 
+			name:	CITY				20-20	Newburgh 
+	21	area
+			sense:	area.n.01
+	22	in
+	23	1782
+			name:	DATE				23-23	1782 
+	24	-
+	25	83
+			name:	DATE				25-25	83 
+	26	,
+	27	the
+			coref:	IDENT			2	27-28	the house 
+	28	house
+			sense:	house.n.01
+	29	served
+			sense:	serve.v.01
+			prop:	serve.01
+			V		29-29	served 
+			N-ARGM-TMP		12-25	when the Continental Army was encamped in the Newburgh area in 1782 - 83 
+			N-ARG-A0		27-28	the house 
+			N-ARG-A1		30-37	as James Clinton 's headquarters in the area 
+	30	as
+	31	James
+			name:	PERSON				31-32	James Clinton 
+	32	Clinton
+	33	's
+	34	headquarters
+			sense:	headquarters.n.02
+	35	in
+	36	the
+	37	area
+			sense:	area.n.01
+	38	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Today it has been restored and houses some local law offices and other businesses .
+
+
+Treebanked sentence:
+--------------------
+Today it has been restored and houses some local law offices and other businesses . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP-TMP (NN Today))
+      (NP (PRP it))
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP (VBN restored)))))
+    (CC and)
+    (S
+      (NP (NNS houses))
+      (NP
+        (NP (DT some) (JJ local) (NN law) (NNS offices))
+        (CC and)
+        (NP (JJ other) (NNS businesses))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Today
+			name:	DATE				0-0	Today 
+			sense:	today.n.01
+	1	it
+			coref:	IDENT			2	1-1	it 
+	2	has
+			sense:	have.v.01
+			prop:	have.01
+			V		2-2	has 
+	3	been
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	been 
+	4	restored
+			sense:	restore.v.01
+			prop:	restore.02
+			V		4-4	restored 
+			N-ARGM-TMP		0-0	Today 
+			N-ARG-A1		1-1	it 
+	5	and
+	6	houses
+			sense:	house.n.01
+	7	some
+	8	local
+			sense:	local.a.01
+	9	law
+			sense:	law.n.06
+	10	offices
+			sense:	office.n.01
+	11	and
+	12	other
+			sense:	other.a.01
+	13	businesses
+			sense:	business.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was added to the National Register of Historic Places in 2001 .
+
+
+Treebanked sentence:
+--------------------
+It was added to the National Register of Historic Places in 2001 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN added)
+        (PP (IN to)
+          (NP
+            (NP (DT the) (NNP National) (NNP Register))
+            (PP (IN of)
+              (NP (JJ Historic) (NNS Places)))))
+        (PP (IN in)
+          (NP (CD 2001)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	added
+			sense:	add.v.01
+			prop:	add.02
+			V		2-2	added 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		3-9	to the National Register of Historic Places 
+			N-ARGM-TMP		10-11	in 2001 
+	3	to
+	4	the
+	5	National
+	6	Register
+	7	of
+	8	Historic
+			sense:	historic.s.01
+	9	Places
+			sense:	topographic_point.n.01
+	10	in
+	11	2001
+			name:	DATE				11-11	2001 
+	12	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.15-16	Abel Belknap 
+				2.0-0	Belknap 
+	Chain 1 (IDENT)
+				0.5-5	Newburgh 
+				2.20-20	Newburgh 
+	Chain 2 (IDENT)
+				1.28-42	Hasbrouck House , Washington 's headquarters during the last years of the American Revolutionary War 
+				2.27-28	the house 
+				3.1-1	it 
+				4.0-0	It 
+	Chain 3 (IDENT)
+				1.39-42	the American Revolutionary War 
+				2.8-9	the war 
+

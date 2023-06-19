@@ -1,0 +1,609 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+John Keller Griffith ( October 16 , 1882 – September 25 , 1942 ) was a member of the United States House of Representatives from Louisiana 's 6th congressional district .
+
+
+Treebanked sentence:
+--------------------
+John Keller Griffith ( October 16 , 1882 – September 25 , 1942 ) was a member of the United States House of Representatives from Louisiana 's 6th congressional district . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP John) (NNP Keller) (NNP Griffith))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP October) (CD 16) (, ,) (CD 1882))
+        (PP (SYM –)
+          (NP (NNP September) (CD 25) (, ,) (CD 1942))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP United) (NNP States) (NNP House))
+            (PP (IN of)
+              (NP
+                (NP (NNPS Representatives))
+                (PP (IN from)
+                  (NP
+                    (NP (NNP Louisiana) (POS 's))
+                    (JJ 6th) (JJ congressional) (NN district)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	John
+			coref:	IDENT			1	0-2	John Keller Griffith 
+			name:	PERSON				0-2	John Keller Griffith 
+	1	Keller
+	2	Griffith
+	3	(
+	4	October
+			name:	DATE				4-7	October 16 , 1882 
+	5	16
+	6	,
+	7	1882
+	8	–
+	9	September
+			name:	DATE				9-12	September 25 , 1942 
+	10	25
+	11	,
+	12	1942
+	13	)
+	14	was
+			sense:	be.v.08
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		0-13	John Keller Griffith ( October 16 , 1882 – September 25 , 1942 ) 
+			N-ARG-A2		15-29	a member of the United States House of Representatives from Louisiana 's 6th congressional district 
+	15	a
+	16	member
+			sense:	member.n.01
+	17	of
+	18	the
+	19	United
+			name:	COUNTRY				19-20	United States 
+	20	States
+	21	House
+			name:	ORGANIZATION				21-23	House of Representatives 
+	22	of
+	23	Representatives
+	24	from
+	25	Louisiana
+			coref:	IDENT			3	25-26	Louisiana 's 
+			name:	STATE_OR_PROVINCE				25-25	Louisiana 
+	26	's
+	27	6th
+			name:	ORDINAL				27-27	6th 
+			sense:	sixth.s.01
+	28	congressional
+			sense:	congressional.a.01
+	29	district
+			sense:	district.n.01
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in Baton Rouge , he earned a college degree from Louisiana State University and then his Doctor of Medicine degree from Tulane University in New Orleans .
+
+
+Treebanked sentence:
+--------------------
+Born in Baton Rouge , he earned a college degree from Louisiana State University and then his Doctor of Medicine degree from Tulane University in New Orleans . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP (NNP Baton) (NNP Rouge)))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD earned)
+      (NP (DT a) (NN college) (NN degree))
+      (PP (IN from)
+        (NP
+          (NP (NNP Louisiana) (NNP State) (NNP University))
+          (CC and)
+          (NP
+            (ADVP (RB then))
+            (NP (PRP$ his) (NN Doctor))
+            (PP (IN of)
+              (NP (NNP Medicine) (NN degree))))))
+      (PP (IN from)
+        (NP
+          (NP (NNP Tulane) (NNP University))
+          (PP (IN in)
+            (NP (NNP New) (NNP Orleans))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-3	in Baton Rouge 
+			N-ARG-A1		5-5	he 
+	1	in
+	2	Baton
+			coref:	IDENT			2	2-3	Baton Rouge 
+			name:	CITY				2-3	Baton Rouge 
+	3	Rouge
+	4	,
+	5	he
+			coref:	IDENT			0	5-5	he 
+	6	earned
+			sense:	earn.v.02
+			prop:	earn.01
+			V		6-6	earned 
+			R-ARG-A0		0-3	Born in Baton Rouge 
+			N-ARG-A0		5-5	he 
+			N-ARG-A3		10-13	from Louisiana State University 
+			N-ARG-A1		16-20	his Doctor of Medicine degree 
+	7	a
+	8	college
+			sense:	college.n.01
+	9	degree
+			sense:	academic_degree.n.01
+	10	from
+	11	Louisiana
+			name:	ORGANIZATION				11-13	Louisiana State University 
+	12	State
+	13	University
+	14	and
+	15	then
+			sense:	then.r.01
+	16	his
+			coref:	IDENT			0	16-16	his 
+	17	Doctor
+			name:	TITLE				17-17	Doctor 
+			sense:	doctor.n.01
+	18	of
+	19	Medicine
+	20	degree
+			sense:	academic_degree.n.01
+	21	from
+	22	Tulane
+			name:	ORGANIZATION				22-23	Tulane University 
+	23	University
+	24	in
+	25	New
+			name:	CITY				25-26	New Orleans 
+	26	Orleans
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He served in the United States Army Medical Corps during World War I.
+
+
+Treebanked sentence:
+--------------------
+He served in the United States Army Medical Corps during World War I . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD served)
+      (PP (IN in)
+        (NP (DT the)
+          (NML (NNP United) (NNP States) (NNP Army))
+          (NNP Medical) (NNP Corps)))
+      (PP (IN during)
+        (NP (NNP World) (NNP War) (NNP I))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-8	in the United States Army Medical Corps 
+			N-ARGM-TMP		9-12	during World War I 
+	2	in
+	3	the
+	4	United
+			name:	ORGANIZATION				4-8	United States Army Medical Corps 
+	5	States
+	6	Army
+	7	Medical
+	8	Corps
+	9	during
+	10	World
+			name:	MISC				10-10	World 
+	11	War
+			name:	CAUSE_OF_DEATH				11-11	War 
+	12	I
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He worked for a physician at the insane asylum in Jackson , Louisiana .
+
+
+Treebanked sentence:
+--------------------
+He worked for a physician at the insane asylum in Jackson , Louisiana . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD worked)
+      (PP (IN for)
+        (NP (DT a) (NN physician)))
+      (PP (IN at)
+        (NP
+          (NP (DT the)
+            (ADJP (JJ insane))
+            (NN asylum))
+          (PP (IN in)
+            (NP (NNP Jackson) (, ,) (NNP Louisiana))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		1-1	worked 
+			N-ARG-A0		0-0	He 
+			N-ARG-A2		2-10	for a physician at the insane asylum in Jackson 
+			N-ARGM-LOC		11-12	, Louisiana 
+	2	for
+	3	a
+	4	physician
+			name:	TITLE				4-4	physician 
+			sense:	doctor.n.01
+	5	at
+	6	the
+	7	insane
+			sense:	insane.a.01
+	8	asylum
+			sense:	mental_hospital.n.01
+	9	in
+	10	Jackson
+			coref:	IDENT			3	10-12	Jackson , Louisiana 
+			name:	CITY				10-10	Jackson 
+	11	,
+	12	Louisiana
+			name:	STATE_OR_PROVINCE				12-12	Louisiana 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1936 , Griffith was elected as a Democrat to the first of two terms in Congress , having unseated Jared Y. Sanders , Jr. , of Baton Rouge in the primary .
+
+
+Treebanked sentence:
+--------------------
+In 1936 , Griffith was elected as a Democrat to the first of two terms in Congress , having unseated Jared Y. Sanders , Jr. , of Baton Rouge in the primary . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1936)))
+    (, ,)
+    (NP (NNP Griffith))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (PP (IN as)
+          (NP (DT a) (NNP Democrat)))
+        (PP (IN to)
+          (NP
+            (NP (DT the) (JJ first))
+            (PP (IN of)
+              (NP
+                (NP (CD two) (NNS terms))
+                (PP (IN in)
+                  (NP (NNP Congress)))))))
+        (, ,)
+        (S
+          (VP (VBG having)
+            (VP (VBN unseated)
+              (NP
+                (NP
+                  (NP (NNP Jared) (NNP Y.) (NNP Sanders))
+                  (, ,)
+                  (NP (NNP Jr.))
+                  (, ,))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP Baton) (NNP Rouge))
+                    (PP (IN in)
+                      (NP (DT the) (JJ primary)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1936
+			name:	DATE				1-1	1936 
+	2	,
+	3	Griffith
+			coref:	IDENT			1	3-3	Griffith 
+			name:	PERSON				3-3	Griffith 
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		5-5	elected 
+			N-ARGM-TMP		0-1	In 1936 
+			N-ARG-A1		3-3	Griffith 
+			N-ARGM-PRD		6-8	as a Democrat 
+			N-ARG-A2		9-16	to the first of two terms in Congress 
+			N-ARGM-ADV		18-31	having unseated Jared Y. Sanders , Jr. , of Baton Rouge in the primary 
+	6	as
+	7	a
+	8	Democrat
+			name:	MISC				8-8	Democrat 
+	9	to
+	10	the
+	11	first
+			name:	ORDINAL				11-11	first 
+			sense:	first.a.01
+	12	of
+	13	two
+			name:	NUMBER				13-13	two 
+	14	terms
+			sense:	term.n.02
+	15	in
+	16	Congress
+			name:	ORGANIZATION				16-16	Congress 
+	17	,
+	18	having
+			sense:	have.v.01
+			prop:	shaving.01
+			V		18-18	having 
+			N-ARG-A1		19-31	unseated Jared Y. Sanders , Jr. , of Baton Rouge in the primary 
+	19	unseated
+			sense:	unseat.v.01
+			prop:	unseat.01
+			V		19-19	unseated 
+			N-ARG-A0		3-3	Griffith 
+			N-ARG-A1		20-28	Jared Y. Sanders , Jr. , of Baton Rouge 
+			N-ARGM-LOC		29-31	in the primary 
+	20	Jared
+			name:	PERSON				20-22	Jared Y. Sanders 
+	21	Y.
+	22	Sanders
+	23	,
+	24	Jr.
+	25	,
+	26	of
+	27	Baton
+			coref:	IDENT			2	27-28	Baton Rouge 
+			name:	CITY				27-28	Baton Rouge 
+	28	Rouge
+	29	in
+	30	the
+	31	primary
+			sense:	primary.a.01
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+However , he was defeated by Sanders in 1940 in a renomination bid for a third term .
+
+
+Treebanked sentence:
+--------------------
+However , he was defeated by Sanders in 1940 in a renomination bid for a third term . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN defeated)
+        (PP (IN by)
+          (NP (NNP Sanders)))
+        (PP (IN in)
+          (NP (CD 1940)))
+        (PP (IN in)
+          (NP
+            (NP (DT a) (NN renomination) (NN bid))
+            (PP (IN for)
+              (NP (DT a) (JJ third) (NN term)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	However
+			sense:	however.r.01
+	1	,
+	2	he
+			coref:	IDENT			1	2-2	he 
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	defeated
+			sense:	get_the_better_of.v.01
+			prop:	defeat.01
+			V		4-4	defeated 
+			N-ARGM-DIS		0-0	However 
+			N-ARG-A1		2-2	he 
+			N-ARG-A0		5-6	by Sanders 
+			N-ARGM-TMP		7-8	in 1940 
+			N-ARGM-LOC		9-16	in a renomination bid for a third term 
+	5	by
+	6	Sanders
+			name:	PERSON				6-6	Sanders 
+	7	in
+	8	1940
+			name:	DATE				8-8	1940 
+	9	in
+	10	a
+	11	renomination
+	12	bid
+			sense:	bid.n.02
+	13	for
+	14	a
+	15	third
+			name:	ORDINAL				15-15	third 
+			sense:	third.s.01
+	16	term
+			sense:	term.n.02
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He died shortly after Sanders himself was unseated in District 6 by the long - term Representative James H. Morrison of Hammond , Louisiana .
+
+
+Treebanked sentence:
+--------------------
+He died shortly after Sanders himself was unseated in District 6 by the long - term Representative James H. Morrison of Hammond , Louisiana . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD died)
+        (ADVP (RB shortly))
+        (PP (IN after)
+          (NP (NNP Sanders)))))
+    (NP (PRP himself))
+    (VP (VBD was)
+      (VP (VBN unseated)
+        (PP (IN in)
+          (NP (NNP District) (CD 6)))
+        (PP (IN by)
+          (NP
+            (NP (DT the)
+              (NML (JJ long) (HYPH -) (NN term))
+              (NNP Representative) (NNP James) (NNP H.) (NNP Morrison))
+            (PP (IN of)
+              (NP (NNP Hammond) (, ,) (NNP Louisiana)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		2-23	shortly after Sanders himself was unseated in District 6 by the long - term Representative James H. Morrison of Hammond , Louisiana 
+	2	shortly
+			sense:	shortly.r.01
+	3	after
+	4	Sanders
+			name:	PERSON				4-4	Sanders 
+	5	himself
+			coref:	IDENT			1	5-5	himself 
+	6	was
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	was 
+	7	unseated
+			sense:	unseat.v.01
+			prop:	unseat.01
+			V		7-7	unseated 
+			N-ARG-A1		4-5	Sanders himself 
+			N-ARGM-LOC		8-10	in District 6 
+			N-ARG-A0		11-23	by the long - term Representative James H. Morrison of Hammond , Louisiana 
+	8	in
+	9	District
+	10	6
+			name:	NUMBER				10-10	6 
+	11	by
+	12	the
+	13	long
+			sense:	long.a.01
+	14	-
+	15	term
+			sense:	term.n.02
+	16	Representative
+			name:	TITLE				16-16	Representative 
+	17	James
+			name:	PERSON				17-19	James H. Morrison 
+	18	H.
+	19	Morrison
+	20	of
+	21	Hammond
+			name:	PERSON				21-21	Hammond 
+	22	,
+	23	Louisiana
+			name:	STATE_OR_PROVINCE				23-23	Louisiana 
+	24	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.5-5	he 
+				1.16-16	his 
+				2.0-0	He 
+				3.0-0	He 
+	Chain 1 (IDENT)
+				0.0-2	John Keller Griffith 
+				4.3-3	Griffith 
+				5.2-2	he 
+				6.0-0	He 
+				6.5-5	himself 
+	Chain 2 (IDENT)
+				1.2-3	Baton Rouge 
+				4.27-28	Baton Rouge 
+	Chain 3 (IDENT)
+				3.10-12	Jackson , Louisiana 
+				0.25-26	Louisiana 's 
+

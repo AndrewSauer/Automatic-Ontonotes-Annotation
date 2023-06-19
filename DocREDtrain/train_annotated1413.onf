@@ -1,0 +1,598 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Gerard " Gerry " Brady ( born 1948 ) is an Irish former Fianna Fáil politician and Teachta Dála ( TD ) for the Kildare constituency .
+
+
+Treebanked sentence:
+--------------------
+Gerard " Gerry " Brady ( born 1948 ) is an Irish former Fianna Fáil politician and Teachta Dála ( TD ) for the Kildare constituency . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Gerard) (`` ") (NNP Gerry) ('' ") (NNP Brady))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 1948)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ Irish)
+          (NML (JJ former) (NNP Fianna) (NNP Fáil))
+          (NN politician))
+        (CC and)
+        (NP
+          (NP (NNP Teachta) (NNP Dála) (-LRB- -LRB-) (NNP TD) (-RRB- -RRB-))
+          (PP (IN for)
+            (NP (DT the) (NNP Kildare) (NN constituency))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Gerard
+			name:	PERSON				0-0	Gerard 
+	1	"
+	2	Gerry
+			name:	PERSON				2-4	Gerry " Brady 
+	3	"
+	4	Brady
+	5	(
+	6	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		6-6	born 
+			N-ARG-A1		0-4	Gerard " Gerry " Brady 
+			N-ARGM-TMP		7-7	1948 
+	7	1948
+			name:	DATE				7-7	1948 
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	Gerard " Gerry " Brady ( born 1948 ) 
+			N-ARG-A2		10-25	an Irish former Fianna Fáil politician and Teachta Dála ( TD ) for the Kildare constituency 
+	10	an
+	11	Irish
+			name:	NATIONALITY				11-11	Irish 
+	12	former
+			sense:	erstwhile.s.01
+	13	Fianna
+			name:	MISC				13-14	Fianna Fáil 
+	14	Fáil
+	15	politician
+			name:	TITLE				15-15	politician 
+			sense:	politician.n.02
+	16	and
+	17	Teachta
+			name:	PERSON				17-18	Teachta Dála 
+	18	Dála
+	19	(
+	20	TD
+	21	)
+	22	for
+	23	the
+	24	Kildare
+			coref:	IDENT			1	24-24	Kildare 
+			name:	PERSON				24-24	Kildare 
+	25	constituency
+			sense:	constituency.n.01
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was elected at the February 1982 general election to the 23rd Dáil , but at the November 1982 general election he lost his seat to Fine Gael 's Bernard Durkan .
+
+
+Treebanked sentence:
+--------------------
+He was elected at the February 1982 general election to the 23rd Dáil , but at the November 1982 general election he lost his seat to Fine Gael 's Bernard Durkan . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD was)
+        (VP (VBN elected)
+          (PP (IN at)
+            (NP (DT the) (NNP February) (CD 1982) (JJ general) (NN election)))
+          (PP (IN to)
+            (NP (DT the) (NN 23rd) (NNP Dáil))))))
+    (, ,)
+    (CC but)
+    (S
+      (PP (IN at)
+        (NP (DT the) (NNP November) (CD 1982) (JJ general) (NN election)))
+      (NP (PRP he))
+      (VP (VBD lost)
+        (NP (PRP$ his) (NN seat))
+        (PP (IN to)
+          (NP
+            (NP (JJ Fine) (NNP Gael) (POS 's))
+            (NNP Bernard) (NNP Durkan)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			3	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-12	at the February 1982 general election to the 23rd Dáil 
+	3	at
+	4	the
+	5	February
+			name:	DATE				5-6	February 1982 
+	6	1982
+	7	general
+			name:	TITLE				7-7	general 
+			sense:	general.a.01
+	8	election
+			sense:	election.n.01
+	9	to
+	10	the
+	11	23rd
+			name:	ORDINAL				11-11	23rd 
+	12	Dáil
+	13	,
+	14	but
+	15	at
+	16	the
+	17	November
+			name:	DATE				17-18	November 1982 
+	18	1982
+	19	general
+			name:	TITLE				19-19	general 
+			sense:	general.a.01
+	20	election
+			sense:	election.n.01
+	21	he
+			coref:	IDENT			3	21-21	he 
+	22	lost
+			sense:	lose.v.01
+			prop:	lose.02
+			V		22-22	lost 
+			N-ARGM-TMP		15-20	at the November 1982 general election 
+			N-ARG-A0		21-21	he 
+			N-ARG-A1		23-24	his seat 
+			N-ARG-A2		25-30	to Fine Gael 's Bernard Durkan 
+	23	his
+			coref:	IDENT			3	23-23	his 
+	24	seat
+			sense:	seat.n.07
+	25	to
+	26	Fine
+			name:	PERSON				26-27	Fine Gael 
+			sense:	fine.s.04
+	27	Gael
+	28	's
+	29	Bernard
+			name:	PERSON				29-30	Bernard Durkan 
+	30	Durkan
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was defeated again at the 1987 general election , and did not stand for Dáil Éireann again .
+
+
+Treebanked sentence:
+--------------------
+He was defeated again at the 1987 general election , and did not stand for Dáil Éireann again . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN defeated)
+          (ADVP (RB again))
+          (PP (IN at)
+            (NP (DT the) (CD 1987) (JJ general) (NN election)))))
+      (, ,)
+      (CC and)
+      (VP (VBD did) (RB not)
+        (VP (VB stand)
+          (PP (IN for)
+            (NP (NNP Dáil) (NNP Éireann)))
+          (ADVP (RB again)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			3	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	defeated
+			sense:	get_the_better_of.v.01
+			prop:	defeat.01
+			V		2-2	defeated 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		3-3	again 
+			N-ARGM-LOC		4-8	at the 1987 general election 
+	3	again
+			sense:	again.r.01
+	4	at
+	5	the
+	6	1987
+			name:	DATE				6-6	1987 
+	7	general
+			name:	TITLE				7-7	general 
+			sense:	general.a.01
+	8	election
+			sense:	election.n.01
+	9	,
+	10	and
+	11	did
+			sense:	make.v.01
+			prop:	do.01
+			V		11-11	did 
+	12	not
+			sense:	not.r.01
+	13	stand
+			sense:	stand.v.06
+			prop:	stand.02
+			V		13-13	stand 
+			N-ARG-A1		0-0	He 
+			N-ARGM-NEG		12-12	not 
+			N-ARG-A2		14-16	for Dáil Éireann 
+			N-ARGM-TMP		17-17	again 
+	14	for
+	15	Dáil
+	16	Éireann
+	17	again
+			sense:	again.r.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the 1985 local elections he was elected to Kildare County Council as a councillor for Celbridge , and held his council seat at the 1991 local elections .
+
+
+Treebanked sentence:
+--------------------
+At the 1985 local elections he was elected to Kildare County Council as a councillor for Celbridge , and held his council seat at the 1991 local elections . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (DT the) (CD 1985) (JJ local) (NNS elections)))
+    (NP (PRP he))
+    (VP
+      (VP (VBD was)
+        (VP (VBN elected)
+          (PP (IN to)
+            (NP
+              (NP (NNP Kildare) (NNP County) (NNP Council))
+              (PP (IN as)
+                (NP
+                  (NP (DT a) (NN councillor))
+                  (PP (IN for)
+                    (NP (NNP Celbridge)))))))))
+      (, ,)
+      (CC and)
+      (VP (VBD held)
+        (NP (PRP$ his) (NN council) (NN seat))
+        (PP (IN at)
+          (NP (DT the) (CD 1991) (JJ local) (NNS elections)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+	2	1985
+			name:	DATE				2-2	1985 
+	3	local
+			sense:	local.a.01
+	4	elections
+			sense:	election.n.01
+	5	he
+			coref:	IDENT			3	5-5	he 
+	6	was
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	was 
+	7	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		7-7	elected 
+			N-ARGM-TMP		0-4	At the 1985 local elections 
+			N-ARG-A1		5-5	he 
+			N-ARG-A2		8-11	to Kildare County Council 
+			N-ARGM-PRD		12-16	as a councillor for Celbridge 
+	8	to
+	9	Kildare
+			name:	ORGANIZATION				9-11	Kildare County Council 
+	10	County
+	11	Council
+	12	as
+	13	a
+	14	councillor
+			name:	TITLE				14-14	councillor 
+			sense:	council_member.n.01
+	15	for
+	16	Celbridge
+	17	,
+	18	and
+	19	held
+			sense:	bear.v.11
+			prop:	hold.01
+			V		19-19	held 
+			N-ARGM-LOC		0-4	At the 1985 local elections 
+			N-ARG-A0		5-5	he 
+			N-ARG-A1		20-22	his council seat 
+			N-ARGM-TMP		23-27	at the 1991 local elections 
+	20	his
+			coref:	IDENT			3	20-20	his 
+	21	council
+			sense:	council.n.01
+	22	seat
+			sense:	seat.n.07
+	23	at
+	24	the
+	25	1991
+			name:	DATE				25-25	1991 
+	26	local
+			sense:	local.a.01
+	27	elections
+			sense:	election.n.01
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His wife Áine Brady ( née Kitt ) was a TD for Kildare North between the 2007 general election and the 2011 general election , and served as a Minister of State .
+
+
+Treebanked sentence:
+--------------------
+His wife Áine Brady ( née Kitt ) was a TD for Kildare North between the 2007 general election and the 2011 general election , and served as a Minister of State . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ His) (NN wife))
+      (NP (NNP Áine) (NNP Brady) (-LRB- -LRB-) (NNP née) (NNP Kitt) (-RRB- -RRB-)))
+    (VP
+      (VP (VBD was)
+        (NP
+          (NP (DT a) (NN TD))
+          (PP (IN for)
+            (NP
+              (NP (NNP Kildare) (NNP North))
+              (PP (IN between)
+                (NP
+                  (NP (DT the) (CD 2007) (JJ general) (NN election))
+                  (CC and)
+                  (NP (DT the) (CD 2011) (JJ general) (NN election))))))))
+      (, ,)
+      (CC and)
+      (VP (VBD served)
+        (PP (IN as)
+          (NP
+            (NP (DT a) (NNP Minister))
+            (PP (IN of)
+              (NP (NNP State)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			3	0-0	His 
+	1	wife
+			sense:	wife.n.01
+	2	Áine
+			name:	PERSON				2-3	Áine Brady 
+	3	Brady
+	4	(
+	5	née
+	6	Kitt
+			coref:	IDENT			0	6-6	Kitt 
+			name:	PERSON				6-6	Kitt 
+	7	)
+	8	was
+			sense:	be.v.08
+			prop:	be.01
+			V		8-8	was 
+			N-ARG-A1		0-7	His wife Áine Brady ( née Kitt ) 
+			N-ARG-A2		9-13	a TD for Kildare North 
+			N-ARGM-TMP		14-23	between the 2007 general election and the 2011 general election 
+	9	a
+	10	TD
+	11	for
+	12	Kildare
+			coref:	IDENT			1	12-13	Kildare North 
+			name:	PERSON				12-13	Kildare North 
+	13	North
+	14	between
+	15	the
+	16	2007
+			name:	DATE				16-16	2007 
+	17	general
+			name:	TITLE				17-17	general 
+			sense:	general.a.01
+	18	election
+			sense:	election.n.01
+	19	and
+	20	the
+	21	2011
+			name:	DATE				21-21	2011 
+	22	general
+			name:	TITLE				22-22	general 
+			sense:	general.a.01
+	23	election
+			sense:	election.n.01
+	24	,
+	25	and
+	26	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		26-26	served 
+			N-ARG-A0		0-7	His wife Áine Brady ( née Kitt ) 
+			N-ARG-A1		27-31	as a Minister of State 
+	27	as
+	28	a
+	29	Minister
+			name:	TITLE				29-29	Minister 
+	30	of
+	31	State
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Her brothers Tom Kitt and Michael P. Kitt have both been Fianna Fáil TDs and government ministers , as was her father Michael F. Kitt .
+
+
+Treebanked sentence:
+--------------------
+Her brothers Tom Kitt and Michael P. Kitt have both been Fianna Fáil TDs and government ministers , as was her father Michael F. Kitt . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Her) (NNS brothers))
+      (NP
+        (NP (NNP Tom) (NNP Kitt))
+        (CC and)
+        (NP (NNP Michael) (NNP P.) (NNP Kitt))))
+    (VP (VBP have) (DT both)
+      (VP (VBN been)
+        (NP
+          (NP
+            (NML (NNP Fianna) (NNP Fáil))
+            (NNS TDs))
+          (CC and)
+          (NP (NN government) (NNS ministers)))
+        (, ,)
+        (SBAR (IN as)
+          (SINV
+            (VP (VBD was)
+              (NP (PRP$ her) (NN father)))
+            (NP (NNP Michael) (NNP F.) (NNP Kitt))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Her
+			coref:	IDENT			2	0-0	Her 
+	1	brothers
+			sense:	brother.n.01
+	2	Tom
+			coref:	IDENT			0	2-3	Tom Kitt 
+			name:	PERSON				2-3	Tom Kitt 
+	3	Kitt
+	4	and
+	5	Michael
+			coref:	IDENT			0	5-7	Michael P. Kitt 
+			name:	PERSON				5-7	Michael P. Kitt 
+	6	P.
+	7	Kitt
+	8	have
+			sense:	have.v.01
+			prop:	have.01
+			V		8-8	have 
+	9	both
+	10	been
+			sense:	be.v.08
+			prop:	be.01
+			V		10-10	been 
+			N-ARG-A1		0-7	Her brothers Tom Kitt and Michael P. Kitt 
+			N-ARG-A2		11-16	Fianna Fáil TDs and government ministers 
+			N-ARGM-ADV		18-24	as was her father Michael F. Kitt 
+	11	Fianna
+	12	Fáil
+	13	TDs
+	14	and
+	15	government
+			sense:	government.n.01
+	16	ministers
+			sense:	minister.n.04
+	17	,
+	18	as
+	19	was
+			sense:	be.v.01
+			prop:	be.01
+			V		19-19	was 
+			N-ARG-A2		11-16	Fianna Fáil TDs and government ministers 
+			N-ARG-A1		20-24	her father Michael F. Kitt 
+	20	her
+			coref:	IDENT			2	20-20	her 
+	21	father
+			sense:	father.n.01
+	22	Michael
+			coref:	IDENT			0	22-24	Michael F. Kitt 
+			name:	PERSON				22-24	Michael F. Kitt 
+	23	F.
+	24	Kitt
+	25	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.5-7	Michael P. Kitt 
+				4.6-6	Kitt 
+				5.2-3	Tom Kitt 
+				5.22-24	Michael F. Kitt 
+	Chain 1 (IDENT)
+				4.12-13	Kildare North 
+				0.24-24	Kildare 
+	Chain 2 (IDENT)
+				5.0-0	Her 
+				5.20-20	her 
+	Chain 3 (IDENT)
+				1.0-0	He 
+				1.21-21	he 
+				1.23-23	his 
+				2.0-0	He 
+				3.5-5	he 
+				3.20-20	his 
+				4.0-0	His 
+

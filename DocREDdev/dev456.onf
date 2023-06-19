@@ -1,0 +1,947 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+James Paul Maher ( November 3 , 1865 – July 31 , 1946 ) was a U.S. Representative from New York .
+
+
+Treebanked sentence:
+--------------------
+James Paul Maher ( November 3 , 1865 – July 31 , 1946 ) was a U.S. Representative from New York . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP James) (NNP Paul) (NNP Maher))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP November) (CD 3) (, ,) (CD 1865))
+        (PP (SYM –)
+          (NP (NNP July) (CD 31) (, ,) (CD 1946))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NNP U.S.) (NNP Representative))
+        (PP (IN from)
+          (NP (NNP New) (NNP York)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	James
+			coref:	IDENT			2	0-2	James Paul Maher 
+			name:	PERSON				0-2	James Paul Maher 
+	1	Paul
+	2	Maher
+	3	(
+	4	November
+			name:	DATE				4-7	November 3 , 1865 
+	5	3
+	6	,
+	7	1865
+	8	–
+	9	July
+			coref:	IDENT			1	9-12	July 31 , 1946 
+			name:	DATE				9-12	July 31 , 1946 
+	10	31
+	11	,
+	12	1946
+	13	)
+	14	was
+			sense:	be.v.08
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		0-13	James Paul Maher ( November 3 , 1865 – July 31 , 1946 ) 
+			N-ARG-A2		15-20	a U.S. Representative from New York 
+	15	a
+	16	U.S.
+			name:	COUNTRY				16-16	U.S. 
+	17	Representative
+			name:	TITLE				17-17	Representative 
+	18	from
+	19	New
+			coref:	IDENT			4	19-20	New York 
+			name:	STATE_OR_PROVINCE				19-20	New York 
+	20	York
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in Brooklyn , New York , Maher graduated from St. Patrick 's Academy in Brooklyn .
+
+
+Treebanked sentence:
+--------------------
+Born in Brooklyn , New York , Maher graduated from St. Patrick 's Academy in Brooklyn . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP (NNP Brooklyn)))))
+    (, ,)
+    (NP
+      (NML (NNP New) (NNP York))
+      (, ,) (NNP Maher))
+    (VP (VBD graduated)
+      (PP (IN from)
+        (NP
+          (NP (NNP St.) (NNP Patrick) (POS 's))
+          (NNP Academy)))
+      (PP (IN in)
+        (NP (NNP Brooklyn))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-5	in Brooklyn , New York 
+			N-ARG-A1		7-7	Maher 
+	1	in
+	2	Brooklyn
+			name:	CITY				2-2	Brooklyn 
+	3	,
+	4	New
+			coref:	IDENT			2	4-7	New York , Maher 
+			coref:	IDENT			4	4-5	New York 
+			name:	STATE_OR_PROVINCE				4-5	New York 
+	5	York
+	6	,
+	7	Maher
+			name:	PERSON				7-7	Maher 
+	8	graduated
+			sense:	graduate.v.01
+			prop:	graduate.01
+			V		8-8	graduated 
+			R-ARG-A0		0-5	Born in Brooklyn , New York 
+			N-ARG-A0		7-7	Maher 
+			N-ARG-A1		9-15	from St. Patrick 's Academy in Brooklyn 
+	9	from
+	10	St.
+			name:	ORGANIZATION				10-13	St. Patrick 's Academy 
+	11	Patrick
+	12	's
+	13	Academy
+	14	in
+	15	Brooklyn
+			name:	CITY				15-15	Brooklyn 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Apprenticed to the hatter 's trade , he moved to Danbury , Connecticut in 1887 and was employed as a journeyman hatter .
+
+
+Treebanked sentence:
+--------------------
+Apprenticed to the hatter 's trade , he moved to Danbury , Connecticut in 1887 and was employed as a journeyman hatter . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBD Apprenticed)
+        (PP (IN to)
+          (NP
+            (NP (DT the) (NN hatter) (POS 's))
+            (NN trade)))))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD moved)
+        (PP (IN to)
+          (NP (NNP Danbury) (, ,) (NNP Connecticut)))
+        (PP (IN in)
+          (NP (NNP 1887))))
+      (CC and)
+      (VP (VBD was)
+        (VP (VBN employed)
+          (PP (IN as)
+            (NP (DT a) (NN journeyman) (NN hatter))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Apprenticed
+			sense:	apprentice.v.01
+			prop:	apprentice.01
+			V		0-0	Apprenticed 
+			N-ARG-A1		1-5	to the hatter 's trade 
+			N-ARG-A0		7-7	he 
+	1	to
+	2	the
+	3	hatter
+			name:	TITLE				3-3	hatter 
+			sense:	hatmaker.n.01
+	4	's
+	5	trade
+			sense:	trade.n.02
+	6	,
+	7	he
+			coref:	IDENT			2	7-7	he 
+	8	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		8-8	moved 
+			R-ARG-A0		0-5	Apprenticed to the hatter 's trade 
+			N-ARG-A0		7-7	he 
+			N-ARG-A2		9-12	to Danbury , Connecticut 
+			N-ARGM-TMP		13-14	in 1887 
+	9	to
+	10	Danbury
+			name:	CITY				10-10	Danbury 
+	11	,
+	12	Connecticut
+			name:	STATE_OR_PROVINCE				12-12	Connecticut 
+	13	in
+	14	1887
+			name:	DATE				14-14	1887 
+	15	and
+	16	was
+			sense:	be.v.08
+			prop:	be.03
+			V		16-16	was 
+	17	employed
+			sense:	hire.v.01
+			prop:	employ.01
+			V		17-17	employed 
+			N-ARGM-PRD		0-5	Apprenticed to the hatter 's trade 
+			N-ARG-A1		7-7	he 
+			N-ARG-A2		18-21	as a journeyman hatter 
+	18	as
+	19	a
+	20	journeyman
+			sense:	craftsman.n.03
+	21	hatter
+			name:	TITLE				21-21	hatter 
+			sense:	hatmaker.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He became treasurer of the United Hatters of North America in 1897 .
+
+
+Treebanked sentence:
+--------------------
+He became treasurer of the United Hatters of North America in 1897 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD became)
+      (NP
+        (NP (NN treasurer))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP United) (NNPS Hatters))
+            (PP (IN of)
+              (NP (NNP North) (NNP America))))))
+      (PP (IN in)
+        (NP (CD 1897))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	became
+			sense:	become.v.02
+			prop:	become.01
+			V		1-1	became 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-9	treasurer of the United Hatters of North America 
+			N-ARGM-TMP		10-11	in 1897 
+	2	treasurer
+			name:	TITLE				2-2	treasurer 
+			sense:	treasurer.n.01
+	3	of
+	4	the
+	5	United
+			name:	ORGANIZATION				5-9	United Hatters of North America 
+	6	Hatters
+	7	of
+	8	North
+	9	America
+	10	in
+	11	1897
+			name:	DATE				11-11	1897 
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Maher returned to Brooklyn in 1902 .
+
+
+Treebanked sentence:
+--------------------
+Maher returned to Brooklyn in 1902 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Maher))
+    (VP (VBD returned)
+      (PP (IN to)
+        (NP (NNP Brooklyn)))
+      (PP (IN in)
+        (NP (CD 1902))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Maher
+			coref:	IDENT			2	0-0	Maher 
+			name:	PERSON				0-0	Maher 
+	1	returned
+			sense:	return.v.01
+			prop:	return.01
+			V		1-1	returned 
+			N-ARG-A1		0-0	Maher 
+			N-ARG-A4		2-3	to Brooklyn 
+			N-ARGM-TMP		4-5	in 1902 
+	2	to
+	3	Brooklyn
+			name:	CITY				3-3	Brooklyn 
+	4	in
+	5	1902
+			name:	DATE				5-5	1902 
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was an unsuccessful candidate for election to the Sixty - first Congress in 1908 .
+
+
+Treebanked sentence:
+--------------------
+He was an unsuccessful candidate for election to the Sixty - first Congress in 1908 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (JJ unsuccessful) (NN candidate))
+        (PP (IN for)
+          (NP (NN election))))
+      (PP (IN to)
+        (NP
+          (NP (DT the)
+            (NML (NN Sixty) (HYPH -) (JJ first))
+            (NNP Congress))
+          (PP (IN in)
+            (NP (CD 1908))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-14	an unsuccessful candidate for election to the Sixty - first Congress in 1908 
+	2	an
+	3	unsuccessful
+			sense:	unsuccessful.a.01
+	4	candidate
+			name:	TITLE				4-4	candidate 
+			sense:	campaigner.n.01
+	5	for
+	6	election
+			sense:	election.n.01
+	7	to
+	8	the
+			coref:	IDENT			3	8-14	the Sixty - first Congress in 1908 
+	9	Sixty
+			name:	NUMBER				9-9	Sixty 
+			sense:	sixty.n.01
+	10	-
+	11	first
+			name:	ORDINAL				11-11	first 
+			sense:	first.s.02
+	12	Congress
+			name:	ORGANIZATION				12-12	Congress 
+	13	in
+	14	1908
+			name:	DATE				14-14	1908 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Maher was elected as a Democrat to the Sixty - second and to the four succeeding Congresses ( March 4 , 1911 – March 4 , 1921 ) .
+
+
+Treebanked sentence:
+--------------------
+Maher was elected as a Democrat to the Sixty - second and to the four succeeding Congresses ( March 4 , 1911 – March 4 , 1921 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Maher))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (PP (IN as)
+          (NP (DT a) (NNP Democrat)))
+        (PP
+          (PP (IN to)
+            (NP (DT the)
+              (ADJP
+                (NP (NNP Sixty))
+                (HYPH -) (JJ second))))
+          (CC and)
+          (PP (IN to)
+            (NP
+              (NP (DT the) (CD four))
+              (VP (VBG succeeding)
+                (NP (NNPS Congresses))))))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (NNP March) (CD 4) (, ,) (CD 1911))
+            (PP (SYM –)
+              (NP (NNP March) (CD 4) (, ,) (CD 1921))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Maher
+			coref:	IDENT			2	0-0	Maher 
+			name:	PERSON				0-0	Maher 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A1		0-0	Maher 
+			N-ARGM-PRD		3-5	as a Democrat 
+			N-ARG-A2		12-27	to the four succeeding Congresses ( March 4 , 1911 – March 4 , 1921 ) 
+	3	as
+	4	a
+	5	Democrat
+			name:	MISC				5-5	Democrat 
+	6	to
+	7	the
+	8	Sixty
+			name:	DURATION				8-10	Sixty - second 
+	9	-
+	10	second
+			sense:	second.s.01
+	11	and
+	12	to
+	13	the
+	14	four
+			name:	NUMBER				14-14	four 
+	15	succeeding
+			sense:	succeed.v.02
+			prop:	succeed.03
+			V		15-15	succeeding 
+			N-ARG-A1		16-16	Congresses 
+	16	Congresses
+	17	(
+	18	March
+			name:	DATE				18-21	March 4 , 1911 
+	19	4
+	20	,
+	21	1911
+	22	–
+	23	March
+			name:	DATE				23-26	March 4 , 1921 
+	24	4
+	25	,
+	26	1921
+	27	)
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He served as chairman of the Committee on Expenditures in the Department of Labor ( Sixty - third through Sixty - fifth Congresses ) .
+
+
+Treebanked sentence:
+--------------------
+He served as chairman of the Committee on Expenditures in the Department of Labor ( Sixty - third through Sixty - fifth Congresses ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD served)
+      (PP (IN as)
+        (NP
+          (NP (NN chairman))
+          (PP (IN of)
+            (NP (DT the) (NNP Committee)))))
+      (PP (IN on)
+        (NP (NNPS Expenditures)))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NNP Department))
+          (PP (IN of)
+            (NP
+              (NP (NNP Labor))
+              (-LRB- -LRB-)
+              (NP
+                (NP
+                  (ADJP
+                    (NP (NNP Sixty))
+                    (HYPH -) (JJ third)))
+                (PP (IN through)
+                  (NP
+                    (ADJP
+                      (NP (CD Sixty))
+                      (HYPH -) (JJ fifth))
+                    (NNPS Congresses))))
+              (-RRB- -RRB-))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-23	as chairman of the Committee on Expenditures in the Department of Labor ( Sixty - third through Sixty - fifth Congresses ) 
+	2	as
+	3	chairman
+			name:	TITLE				3-3	chairman 
+			sense:	president.n.04
+	4	of
+	5	the
+	6	Committee
+			name:	ORGANIZATION				6-8	Committee on Expenditures 
+	7	on
+	8	Expenditures
+	9	in
+	10	the
+	11	Department
+			name:	ORGANIZATION				11-13	Department of Labor 
+	12	of
+	13	Labor
+	14	(
+	15	Sixty
+			name:	NUMBER				15-15	Sixty 
+	16	-
+	17	third
+			name:	ORDINAL				17-17	third 
+			sense:	third.s.01
+	18	through
+	19	Sixty
+			name:	ORGANIZATION				19-22	Sixty - fifth Congresses 
+	20	-
+	21	fifth
+			sense:	fifth.s.01
+	22	Congresses
+	23	)
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was an unsuccessful candidate for reelection in 1920 to the Sixty - seventh Congress .
+
+
+Treebanked sentence:
+--------------------
+He was an unsuccessful candidate for reelection in 1920 to the Sixty - seventh Congress . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (JJ unsuccessful) (NN candidate))
+        (PP (IN for)
+          (NP
+            (NP (NN reelection))
+            (PP (IN in)
+              (NP (CD 1920))))))
+      (PP (IN to)
+        (NP (DT the)
+          (ADJP (NN Sixty) (HYPH -) (JJ seventh))
+          (NNP Congress))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-14	an unsuccessful candidate for reelection in 1920 to the Sixty - seventh Congress 
+	2	an
+	3	unsuccessful
+			sense:	unsuccessful.a.01
+	4	candidate
+			name:	TITLE				4-4	candidate 
+			sense:	campaigner.n.01
+	5	for
+	6	reelection
+			sense:	reelection.n.01
+	7	in
+	8	1920
+			name:	DATE				8-8	1920 
+	9	to
+	10	the
+			coref:	IDENT			3	10-14	the Sixty - seventh Congress 
+	11	Sixty
+			name:	NUMBER				11-11	Sixty 
+			sense:	sixty.n.01
+	12	-
+	13	seventh
+			name:	ORDINAL				13-13	seventh 
+			sense:	seventh.s.01
+	14	Congress
+			name:	ORGANIZATION				14-14	Congress 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Maher entered the real estate business in Brooklyn , moved to Keansburg , New Jersey , and continued in real estate .
+
+
+Treebanked sentence:
+--------------------
+Maher entered the real estate business in Brooklyn , moved to Keansburg , New Jersey , and continued in real estate . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Maher))
+    (VP
+      (VP (VBD entered)
+        (NP (DT the)
+          (NML (JJ real) (NN estate))
+          (NN business))
+        (PP (IN in)
+          (NP (NNP Brooklyn))))
+      (, ,)
+      (VP (VBD moved)
+        (PP (IN to)
+          (NP (NNP Keansburg) (, ,) (NNP New) (NNP Jersey))))
+      (, ,)
+      (CC and)
+      (VP (VBD continued)
+        (PP (IN in)
+          (NP (JJ real) (NN estate)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Maher
+			coref:	IDENT			2	0-0	Maher 
+			name:	PERSON				0-0	Maher 
+	1	entered
+			sense:	enter.v.02
+			prop:	enter.01
+			V		1-1	entered 
+			N-ARG-A0		0-0	Maher 
+			N-ARG-A1		2-5	the real estate business 
+			N-ARGM-LOC		6-7	in Brooklyn 
+	2	the
+	3	real
+			sense:	real.s.08
+	4	estate
+			sense:	estate.n.01
+	5	business
+			sense:	occupation.n.01
+	6	in
+	7	Brooklyn
+			name:	CITY				7-7	Brooklyn 
+	8	,
+	9	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		9-9	moved 
+			N-ARG-A0		0-0	Maher 
+			N-ARG-A2		10-14	to Keansburg , New Jersey 
+	10	to
+	11	Keansburg
+			coref:	IDENT			0	11-11	Keansburg 
+			name:	CITY				11-11	Keansburg 
+	12	,
+	13	New
+			name:	STATE_OR_PROVINCE				13-14	New Jersey 
+	14	Jersey
+	15	,
+	16	and
+	17	continued
+			sense:	continue.v.01
+			prop:	continue.01
+			V		17-17	continued 
+			N-ARG-A0		0-0	Maher 
+			N-ARG-A1		18-20	in real estate 
+	18	in
+	19	real
+			sense:	real.a.01
+	20	estate
+			sense:	estate.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was elected mayor of Keansburg in 1926 .
+
+
+Treebanked sentence:
+--------------------
+He was elected mayor of Keansburg in 1926 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN elected)
+        (NP
+          (NP (NN mayor))
+          (PP (IN of)
+            (NP (NNP Keansburg))))
+        (PP (IN in)
+          (NP (CD 1926)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		3-5	mayor of Keansburg 
+			N-ARGM-TMP		6-7	in 1926 
+	3	mayor
+			name:	TITLE				3-3	mayor 
+			sense:	mayor.n.01
+	4	of
+	5	Keansburg
+			coref:	IDENT			0	5-5	Keansburg 
+			name:	CITY				5-5	Keansburg 
+	6	in
+	7	1926
+			name:	DATE				7-7	1926 
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Maher died in Keansburg on July 31 , 1946 .
+
+
+Treebanked sentence:
+--------------------
+Maher died in Keansburg on July 31 , 1946 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Maher))
+    (VP (VBD died)
+      (PP (IN in)
+        (NP (NNP Keansburg)))
+      (PP (IN on)
+        (NP (NNP July) (CD 31) (, ,) (CD 1946))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Maher
+			coref:	IDENT			2	0-0	Maher 
+			name:	PERSON				0-0	Maher 
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	Maher 
+			N-ARGM-LOC		2-3	in Keansburg 
+			N-ARGM-TMP		4-8	on July 31 , 1946 
+	2	in
+	3	Keansburg
+			coref:	IDENT			0	3-3	Keansburg 
+			name:	CITY				3-3	Keansburg 
+	4	on
+	5	July
+			coref:	IDENT			1	5-8	July 31 , 1946 
+			name:	DATE				5-8	July 31 , 1946 
+	6	31
+	7	,
+	8	1946
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is buried in St. Joseph 's Cemetery , Keyport , New Jersey .
+
+
+Treebanked sentence:
+--------------------
+He is buried in St. Joseph 's Cemetery , Keyport , New Jersey . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (VP (VBN buried)
+        (PP (IN in)
+          (NP
+            (NP (NNP St.) (NNP Joseph) (POS 's))
+            (NML
+              (NML
+                (NP (NNP Cemetery))
+                (, ,)
+                (NP (NNP Keyport))
+                (, ,))
+              (NNP New) (NNP Jersey))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	buried
+			sense:	bury.v.02
+			prop:	bury.01
+			V		2-2	buried 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-12	in St. Joseph 's Cemetery , Keyport , New Jersey 
+	3	in
+	4	St.
+			name:	LOCATION				4-7	St. Joseph 's Cemetery 
+	5	Joseph
+	6	's
+	7	Cemetery
+	8	,
+	9	Keyport
+			name:	LOCATION				9-9	Keyport 
+	10	,
+	11	New
+			name:	STATE_OR_PROVINCE				11-12	New Jersey 
+	12	Jersey
+	13	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				9.11-11	Keansburg 
+				10.5-5	Keansburg 
+				11.3-3	Keansburg 
+	Chain 1 (IDENT)
+				0.9-12	July 31 , 1946 
+				11.5-8	July 31 , 1946 
+	Chain 2 (IDENT)
+				1.4-7	New York , Maher 
+				0.0-2	James Paul Maher 
+				2.7-7	he 
+				3.0-0	He 
+				4.0-0	Maher 
+				5.0-0	He 
+				6.0-0	Maher 
+				7.0-0	He 
+				8.0-0	He 
+				9.0-0	Maher 
+				10.0-0	He 
+				11.0-0	Maher 
+				12.0-0	He 
+	Chain 3 (IDENT)
+				5.8-14	the Sixty - first Congress in 1908 
+				8.10-14	the Sixty - seventh Congress 
+	Chain 4 (IDENT)
+				0.19-20	New York 
+				1.4-5	New York 
+

@@ -1,0 +1,558 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Gaetano Cecere , ( November 26 , 1894 – 1985 ) American sculptor , born , educated and worked in New York City .
+
+
+Treebanked sentence:
+--------------------
+Gaetano Cecere , ( November 26 , 1894 – 1985 ) American sculptor , born , educated and worked in New York City . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Gaetano) (NNP Cecere))
+      (, ,)
+      (NP
+        (NP
+          (NP (-LRB- -LRB-)
+            (NP (NNP November) (CD 26) (, ,) (CD 1894))
+            (PP (SYM –)
+              (NP (CD 1985)))
+            (-RRB- -RRB-))
+          (NP (JJ American) (NN sculptor)))
+        (, ,)
+        (VP (VBN born)))
+      (, ,))
+    (VP (VBN educated)
+      (CC and)
+      (VBN worked)
+      (PP (IN in)
+        (NP
+          (NML (NNP New) (NNP York))
+          (NNP City))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Gaetano
+			coref:	IDENT			0	0-14	Gaetano Cecere , ( November 26 , 1894 – 1985 ) American sculptor , born 
+			name:	PERSON				0-1	Gaetano Cecere 
+	1	Cecere
+	2	,
+	3	(
+	4	November
+			name:	DATE				4-7	November 26 , 1894 
+	5	26
+	6	,
+	7	1894
+	8	–
+	9	1985
+			name:	DATE				9-9	1985 
+	10	)
+	11	American
+			name:	NATIONALITY				11-11	American 
+	12	sculptor
+			name:	TITLE				12-12	sculptor 
+			sense:	sculptor.n.01
+	13	,
+	14	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		14-14	born 
+			N-ARG-A1		0-1	Gaetano Cecere 
+			N-ARGM-LOC		19-22	in New York City 
+	15	,
+	16	educated
+			sense:	educate.v.01
+			prop:	educate.01
+			V		16-16	educated 
+			N-ARG-A1		0-12	Gaetano Cecere , ( November 26 , 1894 – 1985 ) American sculptor 
+			N-ARGM-LOC		19-22	in New York City 
+	17	and
+	18	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		18-18	worked 
+			N-ARG-A0		0-12	Gaetano Cecere , ( November 26 , 1894 – 1985 ) American sculptor 
+			N-ARGM-LOC		19-22	in New York City 
+	19	in
+	20	New
+			name:	CITY				20-22	New York City 
+	21	York
+	22	City
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He studied with Hermon A MacNeil , with work in the Museum of Modern Art in New York City , and Gaetano , known as Guy attended the Beaux - Arts Institute of Design and the National Academy of Design .
+
+
+Treebanked sentence:
+--------------------
+He studied with Hermon A MacNeil , with work in the Museum of Modern Art in New York City , and Gaetano , known as Guy attended the Beaux - Arts Institute of Design and the National Academy of Design . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD studied)
+        (PP (IN with)
+          (NP (NNP Hermon) (NNP A) (NNP MacNeil)))
+        (, ,)
+        (PP (IN with)
+          (NP (NN work)))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNP Museum))
+            (PP (IN of)
+              (NP
+                (NP (NNP Modern) (NNP Art))
+                (PP (IN in)
+                  (NP
+                    (NML (NNP New) (NNP York))
+                    (NNP City)))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (NNP Gaetano))
+        (, ,)
+        (VP (VBN known)
+          (PP (IN as)
+            (NP (NNP Guy)))))
+      (VP (VBD attended)
+        (NP
+          (NP
+            (NP (DT the)
+              (NML (NNP Beaux) (HYPH -) (NNP Arts))
+              (NNP Institute))
+            (PP (IN of)
+              (NP (NNP Design))))
+          (CC and)
+          (NP
+            (NP (DT the) (NNP National) (NNP Academy))
+            (PP (IN of)
+              (NP (NNP Design)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	studied
+			sense:	study.v.02
+			prop:	study.01
+			V		1-1	studied 
+			N-ARG-A0		0-0	He 
+			N-ARGM-MNR		7-18	with work in the Museum of Modern Art in New York City 
+	2	with
+	3	Hermon
+			name:	PERSON				3-5	Hermon A MacNeil 
+	4	A
+	5	MacNeil
+	6	,
+	7	with
+	8	work
+			sense:	work.n.02
+	9	in
+	10	the
+	11	Museum
+			name:	ORGANIZATION				11-14	Museum of Modern Art 
+	12	of
+	13	Modern
+	14	Art
+	15	in
+	16	New
+			name:	CITY				16-18	New York City 
+	17	York
+	18	City
+	19	,
+	20	and
+	21	Gaetano
+			name:	PERSON				21-21	Gaetano 
+	22	,
+	23	known
+			sense:	know.v.04
+			prop:	know.01
+			V		23-23	known 
+			N-ARG-A1		21-21	Gaetano 
+			N-ARG-A2		24-25	as Guy 
+	24	as
+	25	Guy
+			name:	PERSON				25-25	Guy 
+	26	attended
+			sense:	attend.v.01
+			prop:	attend.01
+			V		26-26	attended 
+			N-ARG-A0		21-25	Gaetano , known as Guy 
+			N-ARG-A1		27-39	the Beaux - Arts Institute of Design and the National Academy of Design 
+	27	the
+	28	Beaux
+			name:	ORGANIZATION				28-33	Beaux - Arts Institute of Design 
+	29	-
+	30	Arts
+	31	Institute
+	32	of
+	33	Design
+	34	and
+	35	the
+	36	National
+			name:	ORGANIZATION				36-39	National Academy of Design 
+	37	Academy
+	38	of
+	39	Design
+	40	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1920 he won the Prix de Rome and studied at the American Academy in Rome for several years .
+
+
+Treebanked sentence:
+--------------------
+In 1920 he won the Prix de Rome and studied at the American Academy in Rome for several years . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1920)))
+    (NP (PRP he))
+    (VP
+      (VP (VBD won)
+        (NP (DT the)
+          (NML (NNP Prix) (NNP de))
+          (NNP Rome)))
+      (CC and)
+      (VP (VBN studied)
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP American) (NNP Academy))
+            (PP (IN in)
+              (NP (NNP Rome)))))
+        (PP (IN for)
+          (NP (JJ several) (NNS years)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1920
+			name:	DATE				1-1	1920 
+	2	he
+			coref:	IDENT			0	2-2	he 
+	3	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		3-3	won 
+			N-ARGM-TMP		0-1	In 1920 
+			N-ARG-A0		2-2	he 
+			N-ARG-A1		4-7	the Prix de Rome 
+	4	the
+	5	Prix
+	6	de
+	7	Rome
+			name:	CITY				7-7	Rome 
+	8	and
+	9	studied
+			sense:	study.v.02
+			prop:	study.01
+			V		9-9	studied 
+			N-ARGM-TMP		0-1	In 1920 
+			N-ARG-A0		2-2	he 
+			N-ARGM-LOC		10-15	at the American Academy in Rome 
+			N-ARGM-TMP		16-18	for several years 
+	10	at
+	11	the
+	12	American
+			name:	ORGANIZATION				12-13	American Academy 
+	13	Academy
+	14	in
+	15	Rome
+			name:	CITY				15-15	Rome 
+	16	for
+	17	several
+			name:	DURATION				17-18	several years 
+			sense:	several.s.01
+	18	years
+			sense:	year.n.01
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+During this period a " tendency to simplify forms for decorative effects was developed . "
+
+
+Treebanked sentence:
+--------------------
+During this period a " tendency to simplify forms for decorative effects was developed . " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN During)
+      (NP
+        (NP (DT this) (NN period))
+        (NP (DT a) (`` ") (NN tendency)
+          (S
+            (VP (TO to)
+              (VP (VB simplify)))))))
+    (NP
+      (NP (NNS forms))
+      (PP (IN for)
+        (NP (JJ decorative) (NNS effects))))
+    (VP (VBD was)
+      (VP (VBN developed)))
+    (. .) ('' ")))
+
+
+Leaves:
+-------
+	0	During
+	1	this
+	2	period
+			sense:	time_period.n.01
+	3	a
+	4	"
+	5	tendency
+			sense:	inclination.n.01
+	6	to
+	7	simplify
+			sense:	simplify.v.01
+			prop:	simplify.01
+			V		7-7	simplify 
+			N-ARG-A1		8-8	forms 
+			N-ARGM-PRP		9-11	for decorative effects 
+	8	forms
+			sense:	form.n.03
+	9	for
+	10	decorative
+			sense:	cosmetic.s.01
+	11	effects
+			sense:	impression.n.02
+	12	was
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	was 
+	13	developed
+			sense:	develop.v.03
+			prop:	develop.01
+			V		13-13	developed 
+			N-ARGM-TMP		0-2	During this period 
+			N-ARG-A1		3-11	a " tendency to simplify forms for decorative effects 
+	14	.
+	15	"
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+.
+
+
+Treebanked sentence:
+--------------------
+. 
+
+Tree:
+-----
+(ROOT
+  (FRAG (. .)))
+
+
+Leaves:
+-------
+	0	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Cecere has works collected by many major museums , from Classical to Contemporary , including the Smithsonian Institution , the " National Collection of Fine Arts " and the Archives of American Art " .
+
+
+Treebanked sentence:
+--------------------
+Cecere has works collected by many major museums , from Classical to Contemporary , including the Smithsonian Institution , the " National Collection of Fine Arts " and the Archives of American Art " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Cecere))
+    (VP (VBZ has)
+      (NP
+        (NP (NNS works))
+        (VP (VBN collected)
+          (PP (IN by)
+            (NP (JJ many) (JJ major) (NNS museums)))
+          (, ,)
+          (PP (IN from)
+            (NP
+              (NP (JJ Classical))
+              (PP (IN to)
+                (NP (NNP Contemporary)))
+              (, ,)
+              (PP (VBG including)
+                (NP
+                  (NP (DT the) (NNP Smithsonian) (NNP Institution))
+                  (, ,)
+                  (NP (DT the)
+                    (NML (`` ")
+                      (NML (NNP National) (NNP Collection))
+                      (PP (IN of)
+                        (NP (NNP Fine) (NNPS Arts)))
+                      ('' ")))
+                  (CC and)
+                  (NP
+                    (NP (DT the) (NNPS Archives))
+                    (PP (IN of)
+                      (NP (NNP American) (NNP Art)))
+                    ('' ")))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Cecere
+			coref:	IDENT			0	0-0	Cecere 
+			name:	PERSON				0-0	Cecere 
+	1	has
+			sense:	have.v.01
+			prop:	have.03
+			V		1-1	has 
+			N-ARG-A0		0-0	Cecere 
+			N-ARG-A1		2-33	works collected by many major museums , from Classical to Contemporary , including the Smithsonian Institution , the " National Collection of Fine Arts " and the Archives of American Art " 
+	2	works
+			sense:	work.n.02
+	3	collected
+			sense:	roll_up.v.02
+			prop:	collect.01
+			V		3-3	collected 
+			N-ARG-A1		2-2	works 
+			N-ARG-A0		4-33	by many major museums , from Classical to Contemporary , including the Smithsonian Institution , the " National Collection of Fine Arts " and the Archives of American Art " 
+	4	by
+	5	many
+			sense:	many.a.01
+	6	major
+			sense:	major.a.01
+	7	museums
+			sense:	museum.n.01
+	8	,
+	9	from
+	10	Classical
+			name:	MISC				10-10	Classical 
+			sense:	classical.a.01
+	11	to
+	12	Contemporary
+	13	,
+	14	including
+			sense:	include.v.01
+			prop:	include.01
+			V		14-14	including 
+			N-ARG-A2		5-7	many major museums 
+			N-ARG-A1		15-33	the Smithsonian Institution , the " National Collection of Fine Arts " and the Archives of American Art " 
+	15	the
+	16	Smithsonian
+			name:	ORGANIZATION				16-17	Smithsonian Institution 
+	17	Institution
+	18	,
+	19	the
+	20	"
+	21	National
+			name:	MISC				21-25	National Collection of Fine Arts 
+	22	Collection
+	23	of
+	24	Fine
+	25	Arts
+	26	"
+	27	and
+	28	the
+	29	Archives
+	30	of
+	31	American
+			name:	NATIONALITY				31-31	American 
+	32	Art
+	33	"
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was a member of the National Sculpture Society .
+
+
+Treebanked sentence:
+--------------------
+He was a member of the National Sculpture Society . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP (DT the) (NNP National) (NNP Sculpture) (NNP Society)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-8	a member of the National Sculpture Society 
+	2	a
+	3	member
+			sense:	member.n.01
+	4	of
+	5	the
+	6	National
+			name:	ORGANIZATION				6-8	National Sculpture Society 
+	7	Sculpture
+	8	Society
+	9	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-14	Gaetano Cecere , ( November 26 , 1894 – 1985 ) American sculptor , born 
+				1.0-0	He 
+				2.2-2	he 
+				5.0-0	Cecere 
+				6.0-0	He 
+

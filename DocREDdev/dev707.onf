@@ -1,0 +1,905 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Bonnie Kathleen Blair ( born March 18 , 1964 ) is a retired American speed skater .
+
+
+Treebanked sentence:
+--------------------
+Bonnie Kathleen Blair ( born March 18 , 1964 ) is a retired American speed skater . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Bonnie) (NNP Kathleen) (NNP Blair))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP-TMP (NNP March) (CD 18) (, ,) (CD 1964)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (JJ retired) (JJ American) (NN speed) (NN skater)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Bonnie
+			name:	PERSON				0-2	Bonnie Kathleen Blair 
+	1	Kathleen
+	2	Blair
+	3	(
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-2	Bonnie Kathleen Blair 
+			N-ARGM-TMP		5-8	March 18 , 1964 
+	5	March
+			name:	DATE				5-8	March 18 , 1964 
+	6	18
+	7	,
+	8	1964
+	9	)
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	Bonnie Kathleen Blair ( born March 18 , 1964 ) 
+			N-ARG-A2		11-15	a retired American speed skater 
+	11	a
+	12	retired
+			sense:	retired.s.01
+	13	American
+			name:	NATIONALITY				13-13	American 
+	14	speed
+			sense:	speed.n.01
+	15	skater
+			name:	TITLE				15-15	skater 
+			sense:	skater.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She is one of the top skaters of her era , and one of the most decorated athletes in Olympic history .
+
+
+Treebanked sentence:
+--------------------
+She is one of the top skaters of her era , and one of the most decorated athletes in Olympic history . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (JJ top) (NNS skaters))
+              (PP (IN of)
+                (NP (PRP$ her) (NN era))))))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP
+              (NP (DT the)
+                (ADJP (RBS most) (VBN decorated))
+                (NNS athletes))
+              (PP (IN in)
+                (NP (JJ Olympic) (NN history))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-20	one of the top skaters of her era , and one of the most decorated athletes in Olympic history 
+	2	one
+			name:	NUMBER				2-2	one 
+	3	of
+	4	the
+	5	top
+			sense:	top.a.01
+	6	skaters
+			sense:	skater.n.01
+	7	of
+	8	her
+	9	era
+			sense:	era.n.01
+	10	,
+	11	and
+	12	one
+			name:	NUMBER				12-12	one 
+	13	of
+	14	the
+	15	most
+			sense:	most.r.01
+	16	decorated
+			sense:	decorate.v.03
+			prop:	decorate.01
+			V		16-16	decorated 
+			N-ARGM-EXT		15-15	most 
+			N-ARG-A1		17-17	athletes 
+	17	athletes
+			sense:	athlete.n.01
+	18	in
+	19	Olympic
+			name:	MISC				19-19	Olympic 
+	20	history
+			sense:	history.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Blair competed for the United States in four Olympics , winning five gold medals and one bronze medal .
+
+
+Treebanked sentence:
+--------------------
+Blair competed for the United States in four Olympics , winning five gold medals and one bronze medal . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Blair))
+    (VP (VBD competed)
+      (PP (IN for)
+        (NP (DT the) (NNP United) (NNP States)))
+      (PP (IN in)
+        (NP (CD four) (NNPS Olympics)))
+      (, ,)
+      (S
+        (VP (VBG winning)
+          (NP
+            (NP (CD five) (NN gold) (NNS medals))
+            (CC and)
+            (NP (CD one) (NN bronze) (NN medal))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Blair
+			name:	PERSON				0-0	Blair 
+	1	competed
+			sense:	compete.v.01
+			prop:	compete.01
+			V		1-1	competed 
+			N-ARG-A0		0-0	Blair 
+			N-ARGM-LOC		6-8	in four Olympics 
+			N-ARGM-ADV		10-17	winning five gold medals and one bronze medal 
+	2	for
+	3	the
+	4	United
+			name:	COUNTRY				4-5	United States 
+	5	States
+	6	in
+	7	four
+			coref:	IDENT			1	7-8	four Olympics 
+			name:	NUMBER				7-7	four 
+	8	Olympics
+			name:	MISC				8-8	Olympics 
+	9	,
+	10	winning
+			sense:	win.v.01
+			prop:	win.01
+			V		10-10	winning 
+			N-ARG-A0		0-0	Blair 
+			N-ARG-A1		11-17	five gold medals and one bronze medal 
+	11	five
+			name:	NUMBER				11-11	five 
+	12	gold
+			sense:	gold.n.01
+	13	medals
+			sense:	decoration.n.02
+	14	and
+	15	one
+			name:	NUMBER				15-15	one 
+	16	bronze
+			sense:	bronze.n.01
+	17	medal
+			sense:	decoration.n.02
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Blair made her Olympic debut in Sarajevo in 1984 where she finished eighth in the 500 meters .
+
+
+Treebanked sentence:
+--------------------
+Blair made her Olympic debut in Sarajevo in 1984 where she finished eighth in the 500 meters . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Blair))
+    (VP (VBD made)
+      (NP (PRP$ her) (JJ Olympic) (NN debut))
+      (PP (IN in)
+        (NP (NNP Sarajevo)))
+      (PP (IN in)
+        (NP (CD 1984)))
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP she))
+          (VP (VBD finished)
+            (ADJP (JJ eighth))
+            (PP (IN in)
+              (NP (DT the) (CD 500) (NNS meters)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Blair
+			name:	PERSON				0-0	Blair 
+	1	made
+			sense:	make.v.01
+			prop:	make.01
+			V		1-1	made 
+			N-ARG-A0		0-0	Blair 
+			N-ARG-A1		2-4	her Olympic debut 
+			N-ARGM-LOC		5-6	in Sarajevo 
+			N-ARGM-TMP		7-8	in 1984 
+			N-ARGM-LOC		9-16	where she finished eighth in the 500 meters 
+	2	her
+	3	Olympic
+			name:	MISC				3-3	Olympic 
+	4	debut
+			sense:	introduction.n.01
+	5	in
+	6	Sarajevo
+			name:	CITY				6-6	Sarajevo 
+	7	in
+	8	1984
+			name:	DATE				8-8	1984 
+	9	where
+	10	she
+	11	finished
+			sense:	finish_up.v.02
+			prop:	finish.02
+			V		11-11	finished 
+			N-ARGM-LOC		9-9	where 
+			N-ARG-A1		10-10	she 
+			N-ARGM-EXT		12-12	eighth 
+			N-ARGM-ADV		13-16	in the 500 meters 
+	12	eighth
+			name:	ORDINAL				12-12	eighth 
+			sense:	eighth.s.01
+	13	in
+	14	the
+			coref:	IDENT			0	14-16	the 500 meters 
+	15	500
+			name:	NUMBER				15-15	500 
+	16	meters
+			sense:	meter.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the time , Blair trained in both short - track and long - track speed skating .
+
+
+Treebanked sentence:
+--------------------
+At the time , Blair trained in both short - track and long - track speed skating . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (DT the) (NN time)))
+    (, ,)
+    (NP (NNP Blair))
+    (VP (VBN trained)
+      (PP (IN in)
+        (NP
+          (NML (CC both)
+            (NML (JJ short) (HYPH -) (NN track))
+            (CC and)
+            (NML (JJ long) (HYPH -) (NN track)))
+          (NN speed) (NN skating))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+	2	time
+			name:	DATE				2-2	time 
+			sense:	time.n.03
+	3	,
+	4	Blair
+			name:	PERSON				4-4	Blair 
+	5	trained
+			sense:	train.v.02
+			prop:	train.01
+			V		5-5	trained 
+			N-ARGM-TMP		0-2	At the time 
+			N-ARG-A2		4-4	Blair 
+			N-ARG-A1		6-16	in both short - track and long - track speed skating 
+	6	in
+	7	both
+	8	short
+			sense:	short.a.02
+	9	-
+	10	track
+			sense:	racetrack.n.01
+	11	and
+	12	long
+			sense:	long.a.02
+	13	-
+	14	track
+			sense:	racetrack.n.01
+	15	speed
+			sense:	speed.n.01
+	16	skating
+			sense:	skating.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She won the 1986 short - track world championship .
+
+
+Treebanked sentence:
+--------------------
+She won the 1986 short - track world championship . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD won)
+      (NP (DT the) (CD 1986)
+        (NML (JJ short) (HYPH -) (NN track))
+        (NN world) (NN championship)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	won
+			sense:	win.v.01
+			prop:	win.01
+			V		1-1	won 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		2-8	the 1986 short - track world championship 
+	2	the
+	3	1986
+			name:	DATE				3-3	1986 
+	4	short
+			sense:	short.a.02
+	5	-
+	6	track
+			sense:	racetrack.n.01
+	7	world
+			sense:	earth.n.01
+	8	championship
+			sense:	championship.n.02
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Blair returned to the Olympics in 1988 competing in long - track at the 1988 Winter Olympics in Calgary .
+
+
+Treebanked sentence:
+--------------------
+Blair returned to the Olympics in 1988 competing in long - track at the 1988 Winter Olympics in Calgary . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Blair))
+    (VP (VBD returned)
+      (PP (IN to)
+        (NP (DT the) (NNPS Olympics)))
+      (PP (IN in)
+        (NP
+          (NP (CD 1988))
+          (VP (VBG competing)
+            (PP (IN in)
+              (NP (JJ long) (HYPH -) (NN track)))
+            (PP (IN at)
+              (NP
+                (NP (DT the) (CD 1988) (NNP Winter) (NNPS Olympics))
+                (PP (IN in)
+                  (NP (NNP Calgary)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Blair
+			name:	PERSON				0-0	Blair 
+	1	returned
+			sense:	return.v.01
+			prop:	return.01
+			V		1-1	returned 
+			N-ARG-A1		0-0	Blair 
+			N-ARG-A4		2-4	to the Olympics 
+			N-ARGM-TMP		5-6	in 1988 
+			N-ARGM-ADV		7-18	competing in long - track at the 1988 Winter Olympics in Calgary 
+	2	to
+	3	the
+			coref:	IDENT			1	3-4	the Olympics 
+	4	Olympics
+			name:	MISC				4-4	Olympics 
+	5	in
+	6	1988
+			name:	DATE				6-6	1988 
+	7	competing
+			sense:	compete.v.01
+			prop:	compete.01
+			V		7-7	competing 
+			N-ARG-A0		0-0	Blair 
+			N-ARGM-LOC		12-18	at the 1988 Winter Olympics in Calgary 
+	8	in
+	9	long
+			sense:	long.a.02
+	10	-
+	11	track
+			sense:	racetrack.n.01
+	12	at
+	13	the
+			coref:	IDENT			1	13-18	the 1988 Winter Olympics in Calgary 
+			name:	DATE				13-15	the 1988 Winter 
+	14	1988
+	15	Winter
+	16	Olympics
+			name:	MISC				16-16	Olympics 
+	17	in
+	18	Calgary
+			name:	CITY				18-18	Calgary 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+There she won her first Olympic gold medal in the 500 meters and a bronze medal in the 1,000 meter .
+
+
+Treebanked sentence:
+--------------------
+There she won her first Olympic gold medal in the 500 meters and a bronze medal in the 1,000 meter . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB There))
+    (NP (PRP she))
+    (VP (VBD won)
+      (NP (PRP$ her) (JJ first) (JJ Olympic) (NN gold) (NN medal))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (CD 500) (NNS meters))
+          (CC and)
+          (NP (DT a) (NN bronze) (NN medal))))
+      (PP (IN in)
+        (NP (DT the) (CD 1,000) (NN meter))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	There
+			sense:	there.r.01
+	1	she
+	2	won
+			sense:	win.v.01
+			prop:	win.01
+			V		2-2	won 
+			N-ARGM-LOC		0-0	There 
+			N-ARG-A0		1-1	she 
+			N-ARG-A1		3-19	her first Olympic gold medal in the 500 meters and a bronze medal in the 1,000 meter 
+	3	her
+	4	first
+			name:	ORDINAL				4-4	first 
+			sense:	first.a.01
+	5	Olympic
+			name:	MISC				5-5	Olympic 
+	6	gold
+			sense:	gold.n.01
+	7	medal
+			sense:	decoration.n.02
+	8	in
+	9	the
+			coref:	IDENT			0	9-11	the 500 meters 
+	10	500
+			name:	NUMBER				10-10	500 
+	11	meters
+			sense:	meter.n.01
+	12	and
+	13	a
+	14	bronze
+			sense:	bronze.n.01
+	15	medal
+			sense:	decoration.n.02
+	16	in
+	17	the
+	18	1,000
+			name:	NUMBER				18-18	1,000 
+	19	meter
+			sense:	meter.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Blair won two gold medals in the 1992 Winter Olympics in Albertville and her final two Olympic gold medals at the 1994 Lillehammer games .
+
+
+Treebanked sentence:
+--------------------
+Blair won two gold medals in the 1992 Winter Olympics in Albertville and her final two Olympic gold medals at the 1994 Lillehammer games . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Blair))
+    (VP (VBD won)
+      (NP (CD two) (NN gold) (NNS medals))
+      (PP (IN in)
+        (NP
+          (NP
+            (NP (DT the) (CD 1992) (NNP Winter) (NNPS Olympics))
+            (PP (IN in)
+              (NP (NNP Albertville))))
+          (CC and)
+          (NP
+            (NP (PRP$ her) (JJ final) (CD two) (JJ Olympic) (NN gold) (NNS medals))
+            (PP (IN at)
+              (NP (DT the) (CD 1994) (NNP Lillehammer) (NNS games)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Blair
+			name:	PERSON				0-0	Blair 
+	1	won
+			sense:	win.v.01
+			prop:	win.01
+			V		1-1	won 
+			N-ARG-A0		0-0	Blair 
+			N-ARG-A1		2-4	two gold medals 
+			N-ARGM-LOC		5-11	in the 1992 Winter Olympics in Albertville 
+	2	two
+			name:	NUMBER				2-2	two 
+	3	gold
+			sense:	gold.n.01
+	4	medals
+			sense:	decoration.n.02
+	5	in
+	6	the
+			name:	DATE				6-8	the 1992 Winter 
+	7	1992
+	8	Winter
+	9	Olympics
+	10	in
+	11	Albertville
+			name:	CITY				11-11	Albertville 
+	12	and
+	13	her
+	14	final
+			sense:	concluding.s.01
+	15	two
+			name:	NUMBER				15-15	two 
+	16	Olympic
+			name:	MISC				16-16	Olympic 
+	17	gold
+			sense:	gold.n.01
+	18	medals
+			sense:	decoration.n.02
+	19	at
+	20	the
+	21	1994
+			name:	DATE				21-21	1994 
+	22	Lillehammer
+			name:	CITY				22-22	Lillehammer 
+	23	games
+			sense:	game.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Blair continued competing through 1995 when the World Championships were held in Milwaukee , finally retiring in March 1995 .
+
+
+Treebanked sentence:
+--------------------
+Blair continued competing through 1995 when the World Championships were held in Milwaukee , finally retiring in March 1995 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Blair))
+    (VP (VBD continued)
+      (S
+        (VP
+          (VP (VBG competing)
+            (PP (IN through)
+              (NP (CD 1995)))
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (DT the) (NNP World) (NNPS Championships))
+                (VP (VBD were)
+                  (VP (VBN held)
+                    (PP (IN in)
+                      (NP (NNP Milwaukee))))))))
+          (, ,)
+          (ADVP (RB finally))
+          (VP (VBG retiring)
+            (PP (IN in)
+              (NP (NNP March) (CD 1995)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Blair
+			name:	PERSON				0-0	Blair 
+	1	continued
+			sense:	continue.v.01
+			prop:	continue.01
+			V		1-1	continued 
+			N-ARG-A0		0-0	Blair 
+			N-ARG-A1		2-12	competing through 1995 when the World Championships were held in Milwaukee 
+			N-ARGM-PRD		14-18	finally retiring in March 1995 
+	2	competing
+			sense:	compete.v.01
+			prop:	compete.01
+			V		2-2	competing 
+			N-ARG-A0		0-0	Blair 
+			N-ARGM-TMP		3-12	through 1995 when the World Championships were held in Milwaukee 
+	3	through
+	4	1995
+			name:	DATE				4-4	1995 
+	5	when
+	6	the
+	7	World
+			name:	MISC				7-8	World Championships 
+	8	Championships
+	9	were
+			sense:	be.v.05
+			prop:	be.03
+			V		9-9	were 
+	10	held
+			sense:	hold.v.03
+			prop:	hold.04
+			V		10-10	held 
+			N-ARGM-TMP		4-4	1995 
+			R-ARGM-TMP		5-5	when 
+			N-ARG-A1		6-8	the World Championships 
+			N-ARGM-LOC		11-12	in Milwaukee 
+	11	in
+	12	Milwaukee
+			name:	CITY				12-12	Milwaukee 
+	13	,
+	14	finally
+			sense:	ultimately.r.01
+	15	retiring
+			sense:	retire.v.02
+			prop:	retire.01
+			V		15-15	retiring 
+			N-ARG-A0		0-0	Blair 
+			N-ARGM-TMP		14-14	finally 
+			N-ARGM-TMP		16-18	in March 1995 
+	16	in
+	17	March
+			name:	DATE				17-18	March 1995 
+	18	1995
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After retiring from speed skating , Blair became a motivational speaker .
+
+
+Treebanked sentence:
+--------------------
+After retiring from speed skating , Blair became a motivational speaker . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG retiring)
+          (PP (IN from)
+            (NP (NN speed) (NN skating))))))
+    (, ,)
+    (NP (NNP Blair))
+    (VP (VBD became)
+      (NP (DT a) (JJ motivational) (NN speaker)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	retiring
+			sense:	retire.v.02
+			prop:	retire.01
+			V		1-1	retiring 
+			N-ARG-A1		2-4	from speed skating 
+			N-ARG-A0		6-6	Blair 
+	2	from
+	3	speed
+			sense:	speed.n.01
+	4	skating
+			sense:	skating.n.01
+	5	,
+	6	Blair
+			name:	PERSON				6-6	Blair 
+	7	became
+			sense:	become.v.02
+			prop:	become.01
+			V		7-7	became 
+			N-ARGM-TMP		0-4	After retiring from speed skating 
+			N-ARG-A1		6-6	Blair 
+			N-ARG-A2		8-10	a motivational speaker 
+	8	a
+	9	motivational
+			sense:	motivational.a.01
+	10	speaker
+			sense:	speaker.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She has been inducted into the Chicagoland Sports Hall of Fame , the Wisconsin Athletic Hall of Fame , and the United States Olympic Hall of Fame .
+
+
+Treebanked sentence:
+--------------------
+She has been inducted into the Chicagoland Sports Hall of Fame , the Wisconsin Athletic Hall of Fame , and the United States Olympic Hall of Fame . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN inducted)
+          (PP (IN into)
+            (NP
+              (NP
+                (NP (DT the) (NNP Chicagoland) (NNPS Sports) (NNP Hall))
+                (PP (IN of)
+                  (NP (NNP Fame))))
+              (, ,)
+              (NP
+                (NP (DT the) (NNP Wisconsin) (JJ Athletic) (NN Hall))
+                (PP (IN of)
+                  (NP (NNP Fame))))
+              (, ,)
+              (CC and)
+              (NP
+                (NP (DT the) (NNP United) (NNP States) (NNP Olympic) (NNP Hall))
+                (PP (IN of)
+                  (NP (NNP Fame)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	been
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	been 
+	3	inducted
+			sense:	induct.v.03
+			prop:	induct.01
+			V		3-3	inducted 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		4-26	into the Chicagoland Sports Hall of Fame , the Wisconsin Athletic Hall of Fame , and the United States Olympic Hall of Fame 
+	4	into
+	5	the
+	6	Chicagoland
+			name:	ORGANIZATION				6-10	Chicagoland Sports Hall of Fame 
+	7	Sports
+	8	Hall
+	9	of
+	10	Fame
+	11	,
+	12	the
+	13	Wisconsin
+			name:	ORGANIZATION				13-17	Wisconsin Athletic Hall of Fame 
+	14	Athletic
+			sense:	athletic.a.01
+	15	Hall
+			sense:	hall.n.13
+	16	of
+	17	Fame
+	18	,
+	19	and
+	20	the
+	21	United
+			name:	COUNTRY				21-22	United States 
+	22	States
+	23	Olympic
+			name:	ORGANIZATION				23-26	Olympic Hall of Fame 
+	24	Hall
+	25	of
+	26	Fame
+	27	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.14-16	the 500 meters 
+				7.9-11	the 500 meters 
+	Chain 1 (IDENT)
+				6.13-18	the 1988 Winter Olympics in Calgary 
+				2.7-8	four Olympics 
+				6.3-4	the Olympics 
+

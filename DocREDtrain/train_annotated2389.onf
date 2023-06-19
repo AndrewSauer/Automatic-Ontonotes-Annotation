@@ -1,0 +1,795 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" If This Is n't Love " is a song recorded by American recording artist Jennifer Hudson .
+
+
+Treebanked sentence:
+--------------------
+" If This Is n't Love " is a song recorded by American recording artist Jennifer Hudson . 
+
+Tree:
+-----
+(ROOT
+  (S (`` ")
+    (SBAR (IN If)
+      (S
+        (NP (DT This))
+        (VP (VBZ Is) (RB n't))))
+    (VP (VB Love)
+      (SBAR (`` ")
+        (S
+          (VP (VBZ is)
+            (NP
+              (NP (DT a) (NN song))
+              (VP (VBN recorded)
+                (PP (IN by)
+                  (NP (JJ American) (NN recording) (NN artist))))))
+          (NP (NNP Jennifer) (NNP Hudson)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	If
+	2	This
+			coref:	IDENT			0	2-2	This 
+	3	Is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	Is 
+			N-ARG-A1		2-2	This 
+			N-ARGM-NEG		4-4	n't 
+			N-ARG-A2		5-5	Love 
+	4	n't
+			sense:	not.r.01
+	5	Love
+			sense:	love.v.03
+			prop:	love.01
+			V		5-5	Love 
+			N-ARGM-NEG		3-3	Is 
+			N-ARGM-NEG		4-4	n't 
+	6	"
+	7	is
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		0-6	" If This Is n't Love " 
+			N-ARG-A2		8-16	a song recorded by American recording artist Jennifer Hudson 
+	8	a
+	9	song
+			sense:	song.n.01
+	10	recorded
+			sense:	record.v.02
+			prop:	record.01
+			V		10-10	recorded 
+			N-ARG-A1		8-9	a song 
+			N-ARG-A0		11-16	by American recording artist Jennifer Hudson 
+	11	by
+	12	American
+			name:	NATIONALITY				12-12	American 
+	13	recording
+			sense:	recording.n.02
+	14	artist
+			name:	TITLE				14-14	artist 
+			sense:	artist.n.01
+	15	Jennifer
+			name:	PERSON				15-16	Jennifer Hudson 
+	16	Hudson
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was written and composed by Planet VI , brothers Theron and Timothy Thomas , along with Brian Kennedy for her eponymous debut album , released in 2008 .
+
+
+Treebanked sentence:
+--------------------
+It was written and composed by Planet VI , brothers Theron and Timothy Thomas , along with Brian Kennedy for her eponymous debut album , released in 2008 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN written)
+        (CC and)
+        (VBN composed)
+        (PP (IN by)
+          (NP
+            (NP
+              (NP
+                (NML (NNP Planet) (NNP VI))
+                (, ,) (NNS brothers))
+              (NP (NNP Theron)
+                (CC and)
+                (NNP Timothy) (NNP Thomas))
+              (, ,)
+              (ADVP (IN along)
+                (PP (IN with)
+                  (NP
+                    (NP (NNP Brian) (NNP Kennedy))
+                    (PP (IN for)
+                      (NP (PRP$ her) (JJ eponymous) (NN debut) (NN album)))))))
+            (, ,)
+            (VP (VBN released)
+              (PP (IN in)
+                (NP (CD 2008))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	written
+			sense:	compose.v.02
+			prop:	write.01
+			V		2-2	written 
+			N-ARG-A1		0-0	It 
+			N-ARG-A0		5-18	by Planet VI , brothers Theron and Timothy Thomas , along with Brian Kennedy 
+	3	and
+	4	composed
+			sense:	compose.v.02
+			prop:	compose.02
+			V		4-4	composed 
+			N-ARG-A1		0-0	It 
+			N-ARG-A0		5-18	by Planet VI , brothers Theron and Timothy Thomas , along with Brian Kennedy 
+	5	by
+	6	Planet
+	7	VI
+			name:	STATE_OR_PROVINCE				7-7	VI 
+	8	,
+	9	brothers
+			sense:	brother.n.01
+	10	Theron
+	11	and
+	12	Timothy
+			name:	PERSON				12-13	Timothy Thomas 
+	13	Thomas
+	14	,
+	15	along
+	16	with
+	17	Brian
+			coref:	IDENT			1	17-18	Brian Kennedy 
+			name:	PERSON				17-18	Brian Kennedy 
+	18	Kennedy
+	19	for
+	20	her
+			coref:	IDENT			1	20-20	her 
+	21	eponymous
+			sense:	eponymous.a.01
+	22	debut
+			sense:	introduction.n.01
+	23	album
+			sense:	album.n.01
+	24	,
+	25	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		25-25	released 
+			N-ARG-A1		20-23	her eponymous debut album 
+			N-ARGM-TMP		26-27	in 2008 
+	26	in
+	27	2008
+			name:	DATE				27-27	2008 
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Production on the song was handled by the latter and Harvey Mason , Jr .
+
+
+Treebanked sentence:
+--------------------
+Production on the song was handled by the latter and Harvey Mason , Jr . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NN Production))
+      (PP (IN on)
+        (NP (DT the) (NN song))))
+    (VP (VBD was)
+      (VP (VBN handled)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (JJ latter))
+            (CC and)
+            (NP
+              (NP (NNP Harvey) (NNP Mason))
+              (, ,)
+              (NP (NNP Jr)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Production
+			sense:	production.n.01
+	1	on
+	2	the
+	3	song
+			sense:	song.n.01
+	4	was
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	was 
+	5	handled
+			sense:	manage.v.02
+			prop:	handle.01
+			V		5-5	handled 
+			N-ARG-A1		0-3	Production on the song 
+			N-ARG-A0		6-13	by the latter and Harvey Mason , Jr 
+	6	by
+	7	the
+	8	latter
+			sense:	latter.a.01
+	9	and
+	10	Harvey
+			name:	PERSON				10-11	Harvey Mason 
+	11	Mason
+	12	,
+	13	Jr
+			name:	LOCATION				13-13	Jr 
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+.
+
+
+Treebanked sentence:
+--------------------
+. 
+
+Tree:
+-----
+(ROOT
+  (FRAG (. .)))
+
+
+Leaves:
+-------
+	0	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Musically , it is a midtempo contemporary R&B ; ballad with pop elements , built along on a piano and electric guitar sounds .
+
+
+Treebanked sentence:
+--------------------
+Musically , it is a midtempo contemporary R&B ; ballad with pop elements , built along on a piano and electric guitar sounds . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Musically))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ midtempo) (JJ contemporary) (NN R&B))
+        (: ;)
+        (NP
+          (NP
+            (NP (NN ballad))
+            (PP (IN with)
+              (NP (JJ pop) (NNS elements))))
+          (, ,)
+          (VP (VBN built)
+            (PP (IN along)
+              (PP (IN on)
+                (NP
+                  (NP (DT a) (NN piano))
+                  (CC and)
+                  (NP (JJ electric) (NN guitar) (NNS sounds)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Musically
+			sense:	musically.r.01
+	1	,
+	2	it
+	3	is
+			sense:	be.v.01
+			prop:	be.01
+			V		3-3	is 
+			N-ARGM-MNR		0-0	Musically 
+			N-ARG-A1		2-2	it 
+			N-ARG-A2		4-22	a midtempo contemporary R&B ; ballad with pop elements , built along on a piano and electric guitar sounds 
+	4	a
+	5	midtempo
+	6	contemporary
+			sense:	contemporary.s.01
+	7	R&B
+	8	;
+	9	ballad
+			sense:	ballad.n.01
+	10	with
+	11	pop
+			sense:	popular.s.04
+	12	elements
+			sense:	component.n.01
+	13	,
+	14	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		14-14	built 
+			N-ARGM-MNR		15-15	along 
+			N-ARG-A2		16-22	on a piano and electric guitar sounds 
+	15	along
+	16	on
+	17	a
+	18	piano
+			sense:	piano.n.01
+	19	and
+	20	electric
+			sense:	electric.a.01
+	21	guitar
+			sense:	guitar.n.01
+	22	sounds
+			sense:	sound.n.01
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The song was released as the second single from the album following " Spotlight " in 2009 .
+
+
+Treebanked sentence:
+--------------------
+The song was released as the second single from the album following " Spotlight " in 2009 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN song))
+    (VP (VBD was)
+      (VP (VBN released)
+        (PP (IN as)
+          (NP (DT the) (JJ second) (JJ single)))
+        (PP (IN from)
+          (NP
+            (NP (DT the) (NN album))
+            (PP (VBG following)
+              (NP
+                (NP (`` ") (NN Spotlight) ('' "))
+                (PP (IN in)
+                  (NP (CD 2009)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	song
+			sense:	song.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		3-3	released 
+			N-ARG-A1		0-1	The song 
+			N-ARGM-TMP		15-16	in 2009 
+	4	as
+	5	the
+	6	second
+			name:	ORDINAL				6-6	second 
+			sense:	second.s.01
+	7	single
+			sense:	individual.a.01
+	8	from
+	9	the
+	10	album
+			sense:	album.n.01
+	11	following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		11-11	following 
+			N-ARG-A1		9-10	the album 
+			N-ARG-A2		12-14	" Spotlight " 
+	12	"
+	13	Spotlight
+			sense:	limelight.n.01
+	14	"
+	15	in
+	16	2009
+			name:	DATE				16-16	2009 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Upon release , " If This Is n't Love " was met with generally positive reviews from contemporary critics who praised the song 's structure and its modern interpretation for an adult audience .
+
+
+Treebanked sentence:
+--------------------
+Upon release , " If This Is n't Love " was met with generally positive reviews from contemporary critics who praised the song 's structure and its modern interpretation for an adult audience . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN Upon)
+        (NP (NN release)))
+      (, ,) (`` ")
+      (S
+        (SBAR (IN If)
+          (S
+            (NP (DT This))
+            (VP (VBZ Is) (RB n't))))
+        (VP (VB Love))))
+    (`` ")
+    (SQ
+      (VP (VBD was)
+        (VP (VBN met)
+          (PP (IN with)
+            (NP
+              (ADJP (RB generally) (JJ positive))
+              (NNS reviews)))
+          (PP (IN from)
+            (NP
+              (NP (JJ contemporary) (NNS critics))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD praised)
+                    (NP
+                      (NP
+                        (NP (DT the) (NN song) (POS 's))
+                        (NN structure))
+                      (CC and)
+                      (NP
+                        (NP (PRP$ its) (JJ modern) (NN interpretation))
+                        (PP (IN for)
+                          (NP (DT an) (JJ adult) (NN audience)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Upon
+	1	release
+			sense:	release.n.01
+	2	,
+	3	"
+	4	If
+	5	This
+			name:	MISC				5-8	This Is n't Love 
+	6	Is
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	Is 
+			N-ARG-A1		5-5	This 
+			N-ARGM-NEG		7-7	n't 
+			N-ARG-A2		8-8	Love 
+	7	n't
+			sense:	not.r.01
+	8	Love
+			sense:	love.v.03
+			prop:	love.01
+			V		8-8	Love 
+			N-ARGM-NEG		6-6	Is 
+			N-ARGM-NEG		7-7	n't 
+	9	"
+	10	was
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	was 
+	11	met
+			sense:	meet.v.11
+			prop:	meet.01
+			V		11-11	met 
+			N-ARGM-TMP		0-1	Upon release 
+			N-ARG-A1		12-32	with generally positive reviews from contemporary critics who praised the song 's structure and its modern interpretation for an adult audience 
+	12	with
+	13	generally
+			sense:	by_and_large.r.01
+	14	positive
+			sense:	positive.a.01
+	15	reviews
+			sense:	review.n.02
+	16	from
+	17	contemporary
+			sense:	contemporary.s.02
+	18	critics
+			sense:	critic.n.01
+	19	who
+	20	praised
+			sense:	praise.v.01
+			prop:	praise.01
+			V		20-20	praised 
+			N-ARG-A0		17-18	contemporary critics 
+			R-ARG-A0		19-19	who 
+			N-ARG-A1		21-32	the song 's structure and its modern interpretation for an adult audience 
+	21	the
+	22	song
+			sense:	song.n.01
+	23	's
+	24	structure
+			sense:	structure.n.02
+	25	and
+	26	its
+	27	modern
+			sense:	modern.a.01
+	28	interpretation
+			sense:	rendition.n.04
+	29	for
+	30	an
+	31	adult
+			sense:	adult.s.01
+	32	audience
+			sense:	audience.n.02
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On the charts , the track failed to make much impact , though it reached number five of the US Billboard Hot R&B;/Hip - Hop Songs and the top forty of the UK Singles Chart .
+
+
+Treebanked sentence:
+--------------------
+On the charts , the track failed to make much impact , though it reached number five of the US Billboard Hot R&B ; / Hip - Hop Songs and the top forty of the UK Singles Chart . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (DT the) (NNS charts)))
+    (, ,)
+    (NP (DT the) (NN track))
+    (VP (VBD failed)
+      (S
+        (VP (TO to)
+          (VP
+            (VP (VB make)
+              (NP (JJ much) (NN impact))
+              (, ,)
+              (SBAR (IN though)
+                (S
+                  (NP (PRP it))
+                  (VP (VBD reached)
+                    (NP
+                      (NP (NN number) (CD five))
+                      (PP (IN of)
+                        (NP (DT the)
+                          (NML (NNP US) (NNP Billboard) (NNP Hot))
+                          (NN R&B))))))))
+            (: ;)
+            (NP
+              (NP (HYPH /) (NN Hip))
+              (HYPH -)
+              (SBAR
+                (S
+                  (VP (VBP Hop)
+                    (NP
+                      (NP (NNS Songs))
+                      (CC and)
+                      (NP
+                        (NP (DT the) (JJ top) (CD forty))
+                        (PP (IN of)
+                          (NP (DT the) (NNP UK) (NNPS Singles) (NNP Chart)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	the
+	2	charts
+			sense:	chart.n.01
+	3	,
+	4	the
+	5	track
+			sense:	cut.n.08
+	6	failed
+			sense:	fail.v.01
+			prop:	fail.01
+			V		6-6	failed 
+			N-ARGM-LOC		0-2	On the charts 
+			N-ARG-A1		4-5	the track 
+			N-ARG-A2		7-10	to make much impact 
+			N-ARGM-ADV		12-37	though it reached number five of the US Billboard Hot R&B ; / Hip - Hop Songs and the top forty of the UK Singles Chart 
+	7	to
+	8	make
+			sense:	cause.v.01
+			prop:	make.01
+			V		8-8	make 
+			N-ARG-A0		4-5	the track 
+			N-ARG-A1		9-10	much impact 
+	9	much
+			sense:	much.a.01
+	10	impact
+			sense:	impact.n.02
+	11	,
+	12	though
+	13	it
+	14	reached
+			sense:	reach.v.02
+			prop:	reach.01
+			V		14-14	reached 
+			N-ARG-A0		13-13	it 
+			N-ARG-A1		15-37	number five of the US Billboard Hot R&B ; / Hip - Hop Songs and the top forty of the UK Singles Chart 
+	15	number
+			sense:	number.n.02
+	16	five
+			name:	NUMBER				16-16	five 
+	17	of
+	18	the
+	19	US
+			name:	COUNTRY				19-19	US 
+	20	Billboard
+	21	Hot
+	22	R&B
+	23	;
+	24	/
+	25	Hip
+			sense:	hip.n.01
+	26	-
+	27	Hop
+			sense:	hop.v.02
+			prop:	hop.01
+			V		27-27	Hop 
+	28	Songs
+			sense:	song.n.01
+	29	and
+	30	the
+	31	top
+			sense:	top.a.01
+	32	forty
+			name:	NUMBER				32-32	forty 
+	33	of
+	34	the
+	35	UK
+			name:	COUNTRY				35-35	UK 
+	36	Singles
+	37	Chart
+	38	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Hudson promoted the song on The Ellen DeGeneres Show on March 26 , 2009 and on American Idol on Wednesday ’s results show on April 15 , 2009 .
+
+
+Treebanked sentence:
+--------------------
+Hudson promoted the song on The Ellen DeGeneres Show on March 26 , 2009 and on American Idol on Wednesday ’s results show on April 15 , 2009 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Hudson))
+    (VP (VBD promoted)
+      (SBAR
+        (S
+          (NP
+            (NP (DT the) (NN song))
+            (PP
+              (PP (IN on)
+                (NP
+                  (NP (DT The) (NNP Ellen) (NNP DeGeneres) (NNP Show))
+                  (PP (IN on)
+                    (NP (NNP March) (CD 26) (, ,) (CD 2009)))))
+              (CC and)
+              (PP (IN on)
+                (NP (JJ American) (NNP Idol))))
+            (PP (IN on)
+              (NP
+                (NP (NNP Wednesday) (POS ’s))
+                (NNS results))))
+          (VP (VBP show)
+            (PP (IN on)
+              (NP (NNP April) (CD 15) (, ,) (CD 2009)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Hudson
+			name:	PERSON				0-0	Hudson 
+	1	promoted
+			sense:	advertise.v.02
+			prop:	promote.02
+			V		1-1	promoted 
+			N-ARG-A0		0-0	Hudson 
+			N-ARG-A1		2-3	the song 
+			N-ARGM-LOC		4-8	on The Ellen DeGeneres Show 
+			N-ARGM-TMP		9-13	on March 26 , 2009 
+	2	the
+	3	song
+			sense:	song.n.01
+	4	on
+	5	The
+	6	Ellen
+	7	DeGeneres
+	8	Show
+	9	on
+	10	March
+			name:	DATE				10-13	March 26 , 2009 
+	11	26
+	12	,
+	13	2009
+	14	and
+	15	on
+	16	American
+			name:	NATIONALITY				16-16	American 
+	17	Idol
+			name:	MISC				17-17	Idol 
+	18	on
+	19	Wednesday
+			name:	DATE				19-19	Wednesday 
+	20	’s
+	21	results
+			sense:	result.n.03
+	22	show
+			sense:	show.v.01
+			prop:	show.01
+			V		22-22	show 
+			N-ARGM-TMP		19-20	Wednesday ’s 
+			N-ARG-A1		21-21	results 
+			N-ARGM-TMP		23-27	on April 15 , 2009 
+	23	on
+	24	April
+			name:	DATE				24-27	April 15 , 2009 
+	25	15
+	26	,
+	27	2009
+	28	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.2-2	This 
+				1.0-0	It 
+	Chain 1 (IDENT)
+				1.17-18	Brian Kennedy 
+				1.20-20	her 
+

@@ -1,0 +1,639 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Wildlife Warriors ( subtitled It 's Time ) is a compilation album by Australian country music artist John Williamson .
+
+
+Treebanked sentence:
+--------------------
+Wildlife Warriors ( subtitled It 's Time ) is a compilation album by Australian country music artist John Williamson . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Wildlife) (NNS Warriors))
+      (-LRB- -LRB-)
+      (VP (VBN subtitled)
+        (SBAR
+          (S
+            (NP (PRP It))
+            (VP (VBZ 's)
+              (NP (NNP Time))))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN compilation) (NN album))
+        (PP (IN by)
+          (NP
+            (NML
+              (NML (JJ Australian) (NN country) (NN music))
+              (NN artist))
+            (NNP John) (NNP Williamson)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Wildlife
+	1	Warriors
+			sense:	warrior.n.01
+	2	(
+	3	subtitled
+			sense:	subtitle.v.01
+			prop:	subtitle.01
+			V		3-3	subtitled 
+			N-ARG-A1		0-1	Wildlife Warriors 
+			N-ARG-A2		4-6	It 's Time 
+	4	It
+	5	's
+			sense:	be.v.01
+			prop:	be.01
+			V		5-5	's 
+			N-ARG-A1		4-4	It 
+			N-ARG-A2		6-6	Time 
+	6	Time
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	Wildlife Warriors ( subtitled It 's Time ) 
+			N-ARG-A2		9-18	a compilation album by Australian country music artist John Williamson 
+	9	a
+			coref:	IDENT			0	9-18	a compilation album by Australian country music artist John Williamson 
+	10	compilation
+			sense:	compilation.n.01
+	11	album
+			sense:	album.n.01
+	12	by
+	13	Australian
+			coref:	IDENT			1	13-18	Australian country music artist John Williamson 
+			name:	NATIONALITY				13-13	Australian 
+	14	country
+			sense:	country.n.04
+	15	music
+			sense:	music.n.01
+	16	artist
+			name:	TITLE				16-16	artist 
+			sense:	artist.n.01
+	17	John
+			name:	PERSON				17-18	John Williamson 
+	18	Williamson
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The album was released in November 2006 following the death of Steve Irwin and contains important environmental songs ; many of which inspirations to Irwin .
+
+
+Treebanked sentence:
+--------------------
+The album was released in November 2006 following the death of Steve Irwin and contains important environmental songs ; many of which inspirations to Irwin . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN album))
+      (VP
+        (VP (VBD was)
+          (VP (VBN released)
+            (PP (IN in)
+              (NP
+                (NP (NNP November) (CD 2006))
+                (PP (VBG following)
+                  (NP
+                    (NP (DT the) (NN death))
+                    (PP (IN of)
+                      (NP (NNP Steve) (NNP Irwin)))))))))
+        (CC and)
+        (VP (VBZ contains)
+          (NP (JJ important) (JJ environmental) (NNS songs)))))
+    (: ;)
+    (FRAG
+      (WHNP
+        (WHADJP (JJ many)
+          (WHPP (IN of)
+            (WHNP (WDT which))))
+        (NNS inspirations))
+      (PP (IN to)
+        (NP (NNP Irwin))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The album 
+	1	album
+			sense:	album.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		3-3	released 
+			N-ARG-A1		0-1	The album 
+			N-ARGM-TMP		4-6	in November 2006 
+			N-ARGM-TMP		7-12	following the death of Steve Irwin 
+	4	in
+	5	November
+			name:	DATE				5-6	November 2006 
+	6	2006
+	7	following
+			sense:	postdate.v.01
+			prop:	follow.01
+			V		7-7	following 
+			N-ARG-A2		8-12	the death of Steve Irwin 
+	8	the
+	9	death
+			sense:	death.n.01
+	10	of
+	11	Steve
+			name:	PERSON				11-12	Steve Irwin 
+	12	Irwin
+	13	and
+	14	contains
+			sense:	incorporate.v.02
+			prop:	contain.01
+			V		14-14	contains 
+			N-ARG-A0		0-1	The album 
+			N-ARG-A1		15-24	important environmental songs ; many of which inspirations to Irwin 
+	15	important
+			sense:	important.a.01
+	16	environmental
+			sense:	environmental.a.02
+	17	songs
+			sense:	song.n.01
+	18	;
+	19	many
+			sense:	many.a.01
+	20	of
+	21	which
+	22	inspirations
+			sense:	inspiration.n.02
+	23	to
+	24	Irwin
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A$ 1 from each sale was donated to the Wildlife Warriors conservation foundation , a charity founded by Steve and Terri Irwin .
+
+
+Treebanked sentence:
+--------------------
+A$ 1 from each sale was donated to the Wildlife Warriors conservation foundation , a charity founded by Steve and Terri Irwin . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP ($ A$) (CD 1))
+      (PP (IN from)
+        (NP (DT each) (NN sale))))
+    (VP (VBD was)
+      (VP (VBN donated)
+        (PP (IN to)
+          (NP
+            (NP (DT the)
+              (NML (NNP Wildlife) (NNS Warriors) (NN conservation))
+              (NN foundation))
+            (, ,)
+            (NP
+              (NP (DT a) (NN charity))
+              (VP (VBN founded)
+                (PP (IN by)
+                  (NP
+                    (NP (NNP Steve))
+                    (CC and)
+                    (NP (NNP Terri) (NNP Irwin))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A$
+			name:	MONEY				0-1	A$ 1 
+	1	1
+	2	from
+	3	each
+	4	sale
+			sense:	sale.n.01
+	5	was
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	was 
+	6	donated
+			sense:	donate.v.01
+			prop:	donate.01
+			V		6-6	donated 
+			N-ARG-A1		0-4	A$ 1 from each sale 
+			N-ARG-A2		7-21	to the Wildlife Warriors conservation foundation , a charity founded by Steve and Terri Irwin 
+	7	to
+	8	the
+	9	Wildlife
+			name:	MISC				9-10	Wildlife Warriors 
+	10	Warriors
+			sense:	warrior.n.01
+	11	conservation
+			sense:	conservation.n.02
+	12	foundation
+			sense:	foundation.n.02
+	13	,
+	14	a
+	15	charity
+			sense:	charity.n.01
+	16	founded
+			sense:	establish.v.01
+			prop:	found.01
+			V		16-16	founded 
+			N-ARG-A1		14-15	a charity 
+			N-ARG-A0		17-21	by Steve and Terri Irwin 
+	17	by
+	18	Steve
+			name:	PERSON				18-18	Steve 
+	19	and
+	20	Terri
+			name:	PERSON				20-21	Terri Irwin 
+	21	Irwin
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Williamson said " [ Steve ] was a loud , proud Aussie who promoted the wonders of our ancient land with incredible enthusiasm .
+
+
+Treebanked sentence:
+--------------------
+Williamson said " [ Steve  was a loud , proud Aussie who promoted the wonders of our ancient land with incredible enthusiasm . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Williamson))
+    (VP (VBD said)
+      (SBAR (`` ")
+        (S (-LRB- [)
+          (NP (NNP Steve))
+          (-RRB- ])
+          (VP (VBD was)
+            (NP
+              (NP (DT a) (JJ loud) (, ,) (JJ proud) (NNP Aussie))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD promoted)
+                    (NP
+                      (NP (DT the) (NNS wonders))
+                      (PP (IN of)
+                        (NP (PRP$ our) (JJ ancient) (NN land))))
+                    (PP (IN with)
+                      (NP (JJ incredible) (NN enthusiasm)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Williamson
+			coref:	IDENT			1	0-0	Williamson 
+			name:	PERSON				0-0	Williamson 
+	1	said
+			sense:	state.v.01
+			prop:	say.01
+			V		1-1	said 
+			N-ARG-A0		0-0	Williamson 
+			N-ARG-A1		3-22	[ Steve  was a loud , proud Aussie who promoted the wonders of our ancient land with incredible enthusiasm 
+	2	"
+	3	[
+	4	Steve
+			name:	PERSON				4-4	Steve 
+	5	
+			name:					5-5	 
+	6	was
+			sense:	be.v.01
+			prop:	be.01
+			V		6-6	was 
+			N-ARG-A1		3-5	[ Steve  
+			N-ARG-A2		7-22	a loud , proud Aussie who promoted the wonders of our ancient land with incredible enthusiasm 
+	7	a
+	8	loud
+			sense:	loud.a.01
+	9	,
+	10	proud
+			sense:	proud.a.01
+	11	Aussie
+			name:	NATIONALITY				11-11	Aussie 
+	12	who
+	13	promoted
+			sense:	advertise.v.02
+			prop:	promote.02
+			V		13-13	promoted 
+			N-ARG-A0		7-11	a loud , proud Aussie 
+			R-ARG-A0		12-12	who 
+			N-ARG-A1		14-19	the wonders of our ancient land 
+			N-ARGM-MNR		20-22	with incredible enthusiasm 
+	14	the
+	15	wonders
+			sense:	wonder.n.02
+	16	of
+	17	our
+	18	ancient
+			sense:	ancient.s.01
+	19	land
+			sense:	country.n.02
+	20	with
+	21	incredible
+			sense:	incredible.a.01
+	22	enthusiasm
+			sense:	exuberance.n.02
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+So if my new CD helps raise more awareness for the Wildlife Warriors ' cause , that 's great !
+
+
+Treebanked sentence:
+--------------------
+So if my new CD helps raise more awareness for the Wildlife Warriors ' cause , that 's great ! 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR
+      (ADVP (RB So))
+      (IN if)
+      (S
+        (NP (PRP$ my) (JJ new) (NN CD))
+        (VP (VBZ helps)
+          (VP (VB raise)
+            (NP (JJR more) (NN awareness))
+            (PP (IN for)
+              (NP
+                (NP (DT the) (NNP Wildlife) (NNS Warriors) (POS '))
+                (NN cause)))))))
+    (, ,)
+    (NP (DT that))
+    (VP (VBZ 's)
+      (ADJP (JJ great)))
+    (. !)))
+
+
+Leaves:
+-------
+	0	So
+			sense:	so.r.03
+	1	if
+	2	my
+			coref:	IDENT			1	2-2	my 
+	3	new
+			sense:	new.a.01
+	4	CD
+			sense:	compact_disk.n.01
+	5	helps
+			sense:	help.v.01
+			prop:	help.01
+			V		5-5	helps 
+			N-ARG-A0		2-4	my new CD 
+			N-ARG-A1		6-14	raise more awareness for the Wildlife Warriors ' cause 
+	6	raise
+			sense:	raise.v.01
+			prop:	raise.02
+			V		6-6	raise 
+			N-ARG-A0		2-4	my new CD 
+			N-ARG-A1		7-14	more awareness for the Wildlife Warriors ' cause 
+	7	more
+			sense:	more.a.01
+	8	awareness
+			sense:	awareness.n.01
+	9	for
+	10	the
+	11	Wildlife
+			name:	MISC				11-12	Wildlife Warriors 
+	12	Warriors
+			sense:	warrior.n.01
+	13	'
+	14	cause
+			sense:	campaign.n.02
+	15	,
+	16	that
+	17	's
+			sense:	be.v.01
+			prop:	be.01
+			V		17-17	's 
+			N-ARGM-DIS		0-0	So 
+			N-ARGM-ADV		1-14	if my new CD helps raise more awareness for the Wildlife Warriors ' cause 
+			N-ARG-A1		16-16	that 
+			N-ARG-A2		18-18	great 
+	18	great
+			sense:	bang-up.s.01
+	19	!
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" 
+
+
+Treebanked sentence:
+--------------------
+" The album includes two live recording from Irwin 's memorial . 
+
+Tree:
+-----
+(ROOT
+  (S (`` ")
+    (NP (DT The) (NN album))
+    (VP (VBZ includes)
+      (NP
+        (NP (CD two) (JJ live) (NN recording))
+        (PP (IN from)
+          (NP
+            (NP (NNP Irwin) (POS 's))
+            (NN memorial)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	The
+			coref:	IDENT			0	1-2	The album 
+	2	album
+			sense:	album.n.01
+	3	includes
+			sense:	include.v.01
+			prop:	include.01
+			V		3-3	includes 
+			N-ARG-A2		1-2	The album 
+			N-ARG-A1		4-10	two live recording from Irwin 's memorial 
+	4	two
+			name:	NUMBER				4-4	two 
+	5	live
+			sense:	live.a.01
+	6	recording
+			sense:	recording.n.01
+	7	from
+	8	Irwin
+			name:	PERSON				8-8	Irwin 
+	9	's
+	10	memorial
+			sense:	memorial.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The album , peaked at number 78 on the ARIA Charts .
+
+
+Treebanked sentence:
+--------------------
+The album , peaked at number 78 on the ARIA Charts . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN album))
+    (, ,)
+    (VP (VBD peaked)
+      (PP (IN at)
+        (NP (NN number) (CD 78)))
+      (PP (IN on)
+        (NP (DT the) (NN ARIA) (NNS Charts))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The album 
+	1	album
+			sense:	album.n.01
+	2	,
+	3	peaked
+			sense:	top_out.v.03
+			prop:	peak.01
+			V		3-3	peaked 
+			N-ARG-A1		0-1	The album 
+			N-ARG-A2		4-6	at number 78 
+			N-ARGM-LOC		7-10	on the ARIA Charts 
+	4	at
+	5	number
+			sense:	number.n.02
+	6	78
+			name:	NUMBER				6-6	78 
+	7	on
+	8	the
+	9	ARIA
+			sense:	aria.n.01
+	10	Charts
+			sense:	chart.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The album was supported with a " Wildlife Warrior Tour " across Australia in 2007 .
+
+
+Treebanked sentence:
+--------------------
+The album was supported with a " Wildlife Warrior Tour " across Australia in 2007 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN album))
+    (VP (VBD was)
+      (VP (VBN supported)
+        (PP (IN with)
+          (NP (DT a) (`` ")
+            (NML (NNP Wildlife) (NNP Warrior) (NNP Tour))
+            ('' ")))
+        (PP (IN across)
+          (NP (NNP Australia)))
+        (PP (IN in)
+          (NP (CD 2007)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			0	0-1	The album 
+	1	album
+			sense:	album.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	supported
+			sense:	support.v.02
+			prop:	support.01
+			V		3-3	supported 
+			N-ARG-A1		0-1	The album 
+			N-ARGM-MNR		4-12	with a " Wildlife Warrior Tour " across Australia 
+			N-ARG-A0		13-14	in 2007 
+	4	with
+	5	a
+	6	"
+	7	Wildlife
+			name:	MISC				7-9	Wildlife Warrior Tour 
+	8	Warrior
+	9	Tour
+	10	"
+	11	across
+	12	Australia
+			name:	COUNTRY				12-12	Australia 
+	13	in
+	14	2007
+			name:	DATE				14-14	2007 
+	15	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.9-18	a compilation album by Australian country music artist John Williamson 
+				1.0-1	The album 
+				5.1-2	The album 
+				6.0-1	The album 
+				7.0-1	The album 
+	Chain 1 (IDENT)
+				0.13-18	Australian country music artist John Williamson 
+				3.0-0	Williamson 
+				4.2-2	my 
+

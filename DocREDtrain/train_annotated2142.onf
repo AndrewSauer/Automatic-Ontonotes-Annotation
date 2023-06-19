@@ -1,0 +1,745 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Stuttgart Congress of the Social Democratic Party of Germany ( SPD ) was held between October 3–October 8 , 1898 , in Stuttgart , Kingdom of Württemberg ( now Germany ) .
+
+
+Treebanked sentence:
+--------------------
+The Stuttgart Congress of the Social Democratic Party of Germany ( SPD ) was held between October 3 – October 8 , 1898 , in Stuttgart , Kingdom of Württemberg ( now Germany ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Stuttgart) (NNP Congress))
+      (PP (IN of)
+        (NP
+          (NP (DT the)
+            (NML (NNP Social) (NNP Democratic))
+            (NNP Party))
+          (PP (IN of)
+            (NP (NNP Germany)))
+          (PRN (-LRB- -LRB-)
+            (NP (NNP SPD))
+            (-RRB- -RRB-)))))
+    (VP (VBD was)
+      (VP (VBN held)
+        (PP (IN between)
+          (NP
+            (NP (NNP October) (CD 3))
+            (PP (SYM –)
+              (NP (NNP October) (CD 8) (, ,) (CD 1898) (, ,)))))
+        (PP (IN in)
+          (NP
+            (NP (NNP Stuttgart) (, ,) (NNP Kingdom))
+            (PP (IN of)
+              (NP
+                (NP (NNP Württemberg))
+                (RRC (-LRB- -LRB-)
+                  (ADVP (RB now))
+                  (NP (NNP Germany))
+                  (-RRB- -RRB-))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-12	The Stuttgart Congress of the Social Democratic Party of Germany ( SPD ) 
+	1	Stuttgart
+			name:	ORGANIZATION				1-9	Stuttgart Congress of the Social Democratic Party of Germany 
+	2	Congress
+	3	of
+	4	the
+			coref:	IDENT			0	4-12	the Social Democratic Party of Germany ( SPD ) 
+	5	Social
+	6	Democratic
+	7	Party
+	8	of
+	9	Germany
+	10	(
+	11	SPD
+			name:	ORGANIZATION				11-11	SPD 
+	12	)
+	13	was
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	was 
+	14	held
+			sense:	hold.v.03
+			prop:	hold.04
+			V		14-14	held 
+			N-ARG-A1		0-12	The Stuttgart Congress of the Social Democratic Party of Germany ( SPD ) 
+			N-ARGM-TMP		15-22	between October 3 – October 8 , 1898 
+			N-ARGM-LOC		24-33	in Stuttgart , Kingdom of Württemberg ( now Germany ) 
+	15	between
+	16	October
+			name:	DATE				16-17	October 3 
+	17	3
+	18	–
+	19	October
+			name:	DATE				19-22	October 8 , 1898 
+	20	8
+	21	,
+	22	1898
+	23	,
+	24	in
+	25	Stuttgart
+			name:	CITY				25-25	Stuttgart 
+	26	,
+	27	Kingdom
+	28	of
+	29	Württemberg
+			name:	LOCATION				29-29	Württemberg 
+	30	(
+	31	now
+			name:	DATE				31-31	now 
+			sense:	nowadays.r.01
+	32	Germany
+			name:	COUNTRY				32-32	Germany 
+	33	)
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Stuttgart Congress was the first congress to discuss the question of revisionism in the SPD .
+
+
+Treebanked sentence:
+--------------------
+The Stuttgart Congress was the first congress to discuss the question of revisionism in the SPD . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Stuttgart) (NNP Congress))
+    (VP (VBD was)
+      (NP (DT the) (JJ first) (NN congress)
+        (S
+          (VP (TO to)
+            (VP (VB discuss)
+              (NP
+                (NP (DT the) (NN question))
+                (PP (IN of)
+                  (NP (NN revisionism))))
+              (PP (IN in)
+                (NP (DT the) (NNP SPD))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-2	The Stuttgart Congress 
+	1	Stuttgart
+			name:	ORGANIZATION				1-2	Stuttgart Congress 
+	2	Congress
+	3	was
+			sense:	be.v.01
+			prop:	be.01
+			V		3-3	was 
+			N-ARG-A1		0-2	The Stuttgart Congress 
+			N-ARG-A2		4-15	the first congress to discuss the question of revisionism in the SPD 
+	4	the
+	5	first
+			name:	ORDINAL				5-5	first 
+			sense:	first.a.01
+	6	congress
+			sense:	congress.n.02
+	7	to
+	8	discuss
+			sense:	discourse.v.01
+			prop:	discuss.01
+			V		8-8	discuss 
+			N-ARG-A0		4-6	the first congress 
+			N-ARG-A1		9-15	the question of revisionism in the SPD 
+	9	the
+	10	question
+			sense:	question.n.02
+	11	of
+	12	revisionism
+			sense:	revisionism.n.01
+	13	in
+	14	the
+			coref:	IDENT			0	14-15	the SPD 
+	15	SPD
+			name:	ORGANIZATION				15-15	SPD 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A statement sent by Eduard Bernstein , who was exiled , was read to the Congress .
+
+
+Treebanked sentence:
+--------------------
+A statement sent by Eduard Bernstein , who was exiled , was read to the Congress . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT A) (NN statement))
+        (VP (VBN sent)
+          (PP (IN by)
+            (NP (NNP Eduard) (NNP Bernstein)))))
+      (, ,)
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBD was)
+            (VP (VBN exiled)))))
+      (, ,))
+    (VP (VBD was)
+      (VP (VBN read)
+        (PP (IN to)
+          (NP (DT the) (NNP Congress)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+			coref:	IDENT			1	0-9	A statement sent by Eduard Bernstein , who was exiled 
+	1	statement
+			sense:	statement.n.01
+	2	sent
+			sense:	mail.v.02
+			prop:	send.01
+			V		2-2	sent 
+			N-ARG-A1		0-1	A statement 
+			N-ARG-A0		3-10	by Eduard Bernstein , who was exiled , 
+	3	by
+	4	Eduard
+			name:	PERSON				4-5	Eduard Bernstein 
+	5	Bernstein
+	6	,
+	7	who
+	8	was
+			sense:	be.v.01
+			prop:	be.03
+			V		8-8	was 
+	9	exiled
+			sense:	expatriate.v.01
+			prop:	exile.01
+			V		9-9	exiled 
+			N-ARG-A1		4-5	Eduard Bernstein 
+			R-ARG-A1		7-7	who 
+	10	,
+	11	was
+			sense:	be.v.01
+			prop:	be.03
+			V		11-11	was 
+	12	read
+			sense:	read.v.03
+			prop:	read.01
+			V		12-12	read 
+			N-ARG-A1		0-10	A statement sent by Eduard Bernstein , who was exiled , 
+			N-ARG-A2		13-15	to the Congress 
+	13	to
+	14	the
+			coref:	IDENT			3	14-15	the Congress 
+	15	Congress
+			name:	ORGANIZATION				15-15	Congress 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In it he exposed and defended his revisionist views , previously exhibited in the series of articles Problems of Socialism published in the magazine Die Neue Zeit ( " The New Times " ) .
+
+
+Treebanked sentence:
+--------------------
+In it he exposed and defended his revisionist views , previously exhibited in the series of articles Problems of Socialism published in the magazine Die Neue Zeit ( " The New Times " ) . 
+
+Tree:
+-----
+(ROOT
+  (SINV
+    (S
+      (PP (IN In)
+        (NP (PRP it)))
+      (NP (PRP he))
+      (VP (VBD exposed)
+        (CC and)
+        (VBD defended)
+        (NP (PRP$ his) (JJ revisionist) (NNS views))))
+    (, ,)
+    (VP
+      (ADVP (RB previously))
+      (VBD exhibited)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN series))
+          (PP (IN of)
+            (NP
+              (NP (NNS articles) (NNS Problems))
+              (PP (IN of)
+                (NP
+                  (NP (NN Socialism))
+                  (VP (VBN published)
+                    (PP (IN in)
+                      (NP (DT the) (NN magazine)))
+                    (S
+                      (VP (VB Die)))))))))))
+    (NP
+      (NP (NNP Neue) (NNP Zeit))
+      (-LRB- -LRB-) (`` ")
+      (NP (NNP The) (NNP New) (NNP Times))
+      ('' ") (-RRB- -RRB-))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	it
+			coref:	IDENT			1	1-1	it 
+	2	he
+			coref:	IDENT			2	2-2	he 
+	3	exposed
+			sense:	unwrap.v.02
+			prop:	expose.01
+			V		3-3	exposed 
+			N-ARGM-LOC		0-1	In it 
+			N-ARG-A0		2-2	he 
+			N-ARG-A1		6-33	his revisionist views , previously exhibited in the series of articles Problems of Socialism published in the magazine Die Neue Zeit ( " The New Times " ) 
+	4	and
+	5	defended
+			sense:	defend.v.01
+			prop:	defend.01
+			V		5-5	defended 
+			N-ARGM-LOC		0-1	In it 
+			N-ARG-A0		2-2	he 
+			N-ARG-A1		6-33	his revisionist views , previously exhibited in the series of articles Problems of Socialism published in the magazine Die Neue Zeit ( " The New Times " ) 
+	6	his
+			coref:	IDENT			2	6-6	his 
+	7	revisionist
+	8	views
+			sense:	position.n.03
+	9	,
+	10	previously
+			name:	DATE				10-10	previously 
+			sense:	previously.r.01
+	11	exhibited
+			sense:	expose.v.03
+			prop:	exhibit.01
+			V		11-11	exhibited 
+			N-ARG-A1		6-8	his revisionist views 
+			N-ARGM-TMP		10-10	previously 
+			N-ARGM-LOC		12-33	in the series of articles Problems of Socialism published in the magazine Die Neue Zeit ( " The New Times " ) 
+	12	in
+	13	the
+	14	series
+			sense:	series.n.01
+	15	of
+	16	articles
+			sense:	article.n.01
+	17	Problems
+			sense:	problem.n.02
+	18	of
+	19	Socialism
+			name:	IDEOLOGY				19-19	Socialism 
+			sense:	socialism.n.01
+	20	published
+			sense:	print.v.01
+			prop:	publish.01
+			V		20-20	published 
+			N-ARG-A1		13-19	the series of articles Problems of Socialism 
+			N-ARGM-LOC		21-33	in the magazine Die Neue Zeit ( " The New Times " ) 
+	21	in
+	22	the
+	23	magazine
+			sense:	magazine.n.01
+	24	Die
+			name:	ORGANIZATION				24-26	Die Neue Zeit 
+			sense:	die.v.01
+			prop:	die.01
+			V		24-24	Die 
+			N-ARG-A2		25-26	Neue Zeit 
+	25	Neue
+	26	Zeit
+	27	(
+	28	"
+	29	The
+	30	New
+	31	Times
+	32	"
+	33	)
+	34	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the Congress , Karl Kautsky and August Bebel made an initial critique of Bernsteinism .
+
+
+Treebanked sentence:
+--------------------
+In the Congress , Karl Kautsky and August Bebel made an initial critique of Bernsteinism . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NNP Congress)))
+    (, ,)
+    (NP
+      (NP (NNP Karl) (NNP Kautsky))
+      (CC and)
+      (NP (NNP August) (NNP Bebel)))
+    (VP (VBD made)
+      (NP
+        (NP (DT an) (JJ initial) (NN critique))
+        (PP (IN of)
+          (NP (NNP Bernsteinism)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+			coref:	IDENT			3	1-2	the Congress 
+	2	Congress
+			name:	ORGANIZATION				2-2	Congress 
+	3	,
+	4	Karl
+			name:	PERSON				4-5	Karl Kautsky 
+	5	Kautsky
+	6	and
+	7	August
+			name:	DATE				7-7	August 
+	8	Bebel
+			name:	PERSON				8-8	Bebel 
+	9	made
+			sense:	make.v.01
+			prop:	make.01
+			V		9-9	made 
+			N-ARGM-LOC		0-2	In the Congress 
+			N-ARG-A0		4-8	Karl Kautsky and August Bebel 
+			N-ARG-A1		10-14	an initial critique of Bernsteinism 
+	10	an
+	11	initial
+			sense:	initial.s.01
+	12	critique
+			sense:	criticism.n.02
+	13	of
+	14	Bernsteinism
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Rosa Luxemburg maintained a more intransigent position against Bernstein 's revisionism .
+
+
+Treebanked sentence:
+--------------------
+Rosa Luxemburg maintained a more intransigent position against Bernstein 's revisionism . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Rosa) (NNP Luxemburg))
+    (VP (VBD maintained)
+      (NP (DT a)
+        (ADJP (RBR more) (JJ intransigent))
+        (NN position))
+      (PP (IN against)
+        (NP
+          (NP (NNP Bernstein) (POS 's))
+          (NN revisionism))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Rosa
+			name:	PERSON				0-1	Rosa Luxemburg 
+	1	Luxemburg
+	2	maintained
+			sense:	keep.v.01
+			prop:	maintain.01
+			V		2-2	maintained 
+			N-ARG-A0		0-1	Rosa Luxemburg 
+			N-ARG-A1		3-10	a more intransigent position against Bernstein 's revisionism 
+	3	a
+	4	more
+			sense:	more.r.01
+	5	intransigent
+			sense:	adamant.s.01
+	6	position
+			sense:	position.n.03
+	7	against
+	8	Bernstein
+			name:	PERSON				8-8	Bernstein 
+	9	's
+	10	revisionism
+			sense:	revisionism.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Congress did not adopt a resolution on this matter , but , despite the division in how to treat the question of Bernsteinism , the majority of the party showed its opposition to it .
+
+
+Treebanked sentence:
+--------------------
+The Congress did not adopt a resolution on this matter , but , despite the division in how to treat the question of Bernsteinism , the majority of the party showed its opposition to it . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNP Congress))
+      (VP (VBD did) (RB not)
+        (VP (VB adopt)
+          (NP (DT a) (NN resolution))
+          (PP (IN on)
+            (NP (DT this) (NN matter))))))
+    (, ,)
+    (S (CC but)
+      (, ,)
+      (PP (IN despite)
+        (NP
+          (NP (DT the) (NN division))
+          (PP (IN in)
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (VP (TO to)
+                  (VP (VB treat)
+                    (NP
+                      (NP (DT the) (NN question))
+                      (PP (IN of)
+                        (NP (NNP Bernsteinism)))))))))))
+      (, ,)
+      (NP
+        (NP (DT the) (NN majority))
+        (PP (IN of)
+          (NP (DT the) (NN party))))
+      (VP (VBD showed)
+        (NP (PRP$ its) (NN opposition))
+        (PP (IN to)
+          (NP (PRP it)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-1	The Congress 
+	1	Congress
+			name:	ORGANIZATION				1-1	Congress 
+	2	did
+			sense:	make.v.01
+			prop:	do.01
+			V		2-2	did 
+	3	not
+			sense:	not.r.01
+	4	adopt
+			sense:	adopt.v.01
+			prop:	adopt.01
+			V		4-4	adopt 
+			N-ARG-A0		0-1	The Congress 
+			N-ARGM-NEG		3-3	not 
+			N-ARG-A1		5-9	a resolution on this matter 
+	5	a
+	6	resolution
+			sense:	resolution.n.01
+	7	on
+	8	this
+	9	matter
+			sense:	topic.n.02
+	10	,
+	11	but
+	12	,
+	13	despite
+	14	the
+	15	division
+			sense:	division.n.05
+	16	in
+	17	how
+	18	to
+	19	treat
+			sense:	treat.v.01
+			prop:	treat.05
+			V		19-19	treat 
+			N-ARGM-MNR		17-17	how 
+			N-ARG-A1		20-23	the question of Bernsteinism 
+	20	the
+	21	question
+			sense:	question.n.02
+	22	of
+	23	Bernsteinism
+	24	,
+	25	the
+	26	majority
+			sense:	majority.n.01
+	27	of
+	28	the
+			coref:	IDENT			0	28-29	the party 
+	29	party
+			sense:	party.n.01
+	30	showed
+			sense:	express.v.01
+			prop:	show.01
+			V		30-30	showed 
+			N-ARGM-ADV		13-23	despite the division in how to treat the question of Bernsteinism 
+			N-ARG-A0		25-29	the majority of the party 
+			N-ARG-A1		31-34	its opposition to it 
+	31	its
+			coref:	IDENT			0	31-31	its 
+	32	opposition
+			sense:	resistance.n.01
+	33	to
+	34	it
+			coref:	IDENT			0	34-34	it 
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the Hanover Congress of 1899 , the party approved a resolution that formally condemned Bernsteinist attacks on the party 's policy and tactics .
+
+
+Treebanked sentence:
+--------------------
+In the Hanover Congress of 1899 , the party approved a resolution that formally condemned Bernsteinist attacks on the party 's policy and tactics . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (DT the) (NNP Hanover) (NNP Congress))
+        (PP (IN of)
+          (NP (CD 1899)))))
+    (, ,)
+    (NP (DT the) (NN party))
+    (VP (VBD approved)
+      (NP
+        (NP (DT a) (NN resolution))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (ADVP (RB formally))
+            (VP (VBD condemned)
+              (NP (NNP Bernsteinist) (NNS attacks))
+              (PP (IN on)
+                (NP
+                  (NP (DT the) (NN party) (POS 's))
+                  (NN policy)
+                  (CC and)
+                  (NNS tactics))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+	2	Hanover
+			name:	ORGANIZATION				2-3	Hanover Congress 
+	3	Congress
+	4	of
+	5	1899
+			name:	DATE				5-5	1899 
+	6	,
+	7	the
+			coref:	IDENT			0	7-8	the party 
+	8	party
+			sense:	party.n.01
+	9	approved
+			sense:	approve.v.01
+			prop:	approve.01
+			V		9-9	approved 
+			N-ARGM-LOC		0-5	In the Hanover Congress of 1899 
+			N-ARG-A0		7-8	the party 
+			N-ARG-A1		10-23	a resolution that formally condemned Bernsteinist attacks on the party 's policy and tactics 
+	10	a
+	11	resolution
+			sense:	resolution.n.01
+	12	that
+	13	formally
+			sense:	formally.r.01
+	14	condemned
+			sense:	condemn.v.01
+			prop:	condemn.01
+			V		14-14	condemned 
+			N-ARG-A0		10-11	a resolution 
+			R-ARG-A0		12-12	that 
+			N-ARGM-MNR		13-13	formally 
+			N-ARG-A1		15-23	Bernsteinist attacks on the party 's policy and tactics 
+	15	Bernsteinist
+	16	attacks
+			name:	CAUSE_OF_DEATH				16-16	attacks 
+			sense:	fire.n.09
+	17	on
+	18	the
+			coref:	IDENT			0	18-20	the party 's 
+	19	party
+			sense:	party.n.01
+	20	's
+	21	policy
+			sense:	policy.n.02
+	22	and
+	23	tactics
+			sense:	tactic.n.01
+	24	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.4-12	the Social Democratic Party of Germany ( SPD ) 
+				1.14-15	the SPD 
+				6.28-29	the party 
+				6.31-31	its 
+				6.34-34	it 
+				7.7-8	the party 
+				7.18-20	the party 's 
+	Chain 1 (IDENT)
+				2.0-9	A statement sent by Eduard Bernstein , who was exiled 
+				3.1-1	it 
+	Chain 2 (IDENT)
+				3.2-2	he 
+				3.6-6	his 
+	Chain 3 (IDENT)
+				0.0-12	The Stuttgart Congress of the Social Democratic Party of Germany ( SPD ) 
+				1.0-2	The Stuttgart Congress 
+				2.14-15	the Congress 
+				4.1-2	the Congress 
+				6.0-1	The Congress 
+

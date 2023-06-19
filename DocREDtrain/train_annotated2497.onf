@@ -1,0 +1,521 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Gustavo Bolívar Moreno is a Colombian author , screenwriter , journalist , and elected senator for the period 2018 - 2022 .
+
+
+Treebanked sentence:
+--------------------
+Gustavo Bolívar Moreno is a Colombian author , screenwriter , journalist , and elected senator for the period 2018 - 2022 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Gustavo) (NNP Bolívar) (NNP Moreno))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ Colombian) (NN author))
+        (, ,)
+        (NP (NN screenwriter))
+        (, ,)
+        (NP (NN journalist))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (VBN elected) (NN senator))
+          (PP (IN for)
+            (NP (DT the) (NN period) (CD 2018) (HYPH -) (CD 2022))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Gustavo
+			coref:	IDENT			0	0-2	Gustavo Bolívar Moreno 
+			name:	PERSON				0-2	Gustavo Bolívar Moreno 
+	1	Bolívar
+	2	Moreno
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Gustavo Bolívar Moreno 
+			N-ARG-A2		4-20	a Colombian author , screenwriter , journalist , and elected senator for the period 2018 - 2022 
+	4	a
+	5	Colombian
+			name:	NATIONALITY				5-5	Colombian 
+	6	author
+			name:	TITLE				6-6	author 
+			sense:	writer.n.01
+	7	,
+	8	screenwriter
+			name:	TITLE				8-8	screenwriter 
+			sense:	screenwriter.n.01
+	9	,
+	10	journalist
+			name:	TITLE				10-10	journalist 
+			sense:	journalist.n.01
+	11	,
+	12	and
+	13	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		13-13	elected 
+			N-ARG-A1		0-2	Gustavo Bolívar Moreno 
+			N-ARG-A2		14-14	senator 
+	14	senator
+			name:	TITLE				14-14	senator 
+			sense:	senator.n.01
+	15	for
+	16	the
+	17	period
+			sense:	time_period.n.01
+	18	2018
+			name:	DATE				18-18	2018 
+	19	-
+			name:	DURATION				19-19	- 
+	20	2022
+			name:	DATE				20-20	2022 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He published several books before the best - seller Sin Tetas No Hay Paraíso ( Spanish for Without Tits There Is No Paradise ) brought him international fame .
+
+
+Treebanked sentence:
+--------------------
+He published several books before the best - seller Sin Tetas No Hay Paraíso ( Spanish for Without Tits There Is No Paradise ) brought him international fame . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD published)
+      (NP (JJ several) (NNS books))
+      (SBAR (IN before)
+        (S
+          (NP
+            (NP
+              (NP (DT the) (RBS best))
+              (HYPH -)
+              (NP (NN seller) (NN Sin)))
+            (NP
+              (NP (NNP Tetas) (NNP No) (NNP Hay) (NNP Paraíso))
+              (-LRB- -LRB-)
+              (NP
+                (NP (NNP Spanish))
+                (SBAR (IN for)
+                  (S
+                    (PP (IN Without)
+                      (NP (NNP Tits)))
+                    (NP (EX There))
+                    (VP (VBZ Is)
+                      (NP (DT No) (NN Paradise))))))
+              (-RRB- -RRB-)))
+          (VP (VBD brought)
+            (NP (PRP him))
+            (NP (JJ international) (NN fame))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	published
+			sense:	publish.v.03
+			prop:	publish.01
+			V		1-1	published 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-3	several books 
+			N-ARGM-TMP		4-27	before the best - seller Sin Tetas No Hay Paraíso ( Spanish for Without Tits There Is No Paradise ) brought him international fame 
+	2	several
+			sense:	several.s.01
+	3	books
+			sense:	book.n.01
+	4	before
+	5	the
+	6	best
+			sense:	well.r.06
+	7	-
+	8	seller
+			sense:	seller.n.01
+	9	Sin
+			sense:	sin.n.01
+	10	Tetas
+	11	No
+	12	Hay
+	13	Paraíso
+	14	(
+	15	Spanish
+			name:	NATIONALITY				15-15	Spanish 
+	16	for
+	17	Without
+	18	Tits
+	19	There
+	20	Is
+			sense:	exist.v.01
+			prop:	be.02
+			V		20-20	Is 
+			N-ARGM-MNR		17-18	Without Tits 
+			N-ARG-A1		22-22	Paradise 
+	21	No
+	22	Paradise
+			sense:	eden.n.01
+	23	)
+	24	brought
+			sense:	lend.v.01
+			prop:	bring.01
+			V		24-24	brought 
+			N-ARG-A0		5-23	the best - seller Sin Tetas No Hay Paraíso ( Spanish for Without Tits There Is No Paradise ) 
+			N-ARG-A2		25-25	him 
+			N-ARG-A1		26-27	international fame 
+	25	him
+			coref:	IDENT			0	25-25	him 
+	26	international
+			sense:	external.s.03
+	27	fame
+			sense:	fame.n.01
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+There are three adaptations for television : a series produced by the Colombian company Caracol ( 2006 ) , a version by RTI Colombia – Telemundo and a version by Spain 's Telecinco .
+
+
+Treebanked sentence:
+--------------------
+There are three adaptations for television : a series produced by the Colombian company Caracol ( 2006 ) , a version by RTI Colombia – Telemundo and a version by Spain 's Telecinco . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP
+          (NP (CD three) (NNS adaptations))
+          (PP (IN for)
+            (NP (NN television))))
+        (: :)
+        (NP
+          (NP
+            (NP (DT a) (NN series))
+            (VP (VBN produced)
+              (PP (IN by)
+                (NP (DT the)
+                  (NML (JJ Colombian) (NN company))
+                  (NNP Caracol)))
+              (PRN (-LRB- -LRB-)
+                (NP (CD 2006))
+                (-RRB- -RRB-))))
+          (, ,)
+          (NP
+            (NP (DT a) (NN version))
+            (PP (IN by)
+              (NP (NNP RTI) (NNP Colombia) (HYPH –) (NNP Telemundo))))
+          (CC and)
+          (NP
+            (NP (DT a) (NN version))
+            (PP (IN by)
+              (NP
+                (NP (NNP Spain) (POS 's))
+                (NNP Telecinco)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	There
+	1	are
+			sense:	exist.v.01
+			prop:	be.02
+			V		1-1	are 
+			N-ARG-A1		2-32	three adaptations for television : a series produced by the Colombian company Caracol ( 2006 ) , a version by RTI Colombia – Telemundo and a version by Spain 's Telecinco 
+	2	three
+			name:	NUMBER				2-2	three 
+	3	adaptations
+			sense:	adaptation.n.01
+	4	for
+	5	television
+			sense:	television.n.01
+	6	:
+	7	a
+	8	series
+			sense:	serial.n.01
+	9	produced
+			sense:	produce.v.06
+			prop:	produce.01
+			V		9-9	produced 
+			N-ARG-A1		7-8	a series 
+			N-ARG-A0		10-14	by the Colombian company Caracol 
+			N-ARGM-TMP		15-17	( 2006 ) 
+	10	by
+	11	the
+	12	Colombian
+			name:	NATIONALITY				12-12	Colombian 
+	13	company
+			sense:	company.n.01
+	14	Caracol
+			name:	ORGANIZATION				14-14	Caracol 
+	15	(
+	16	2006
+			name:	DATE				16-16	2006 
+	17	)
+	18	,
+	19	a
+	20	version
+			sense:	adaptation.n.01
+	21	by
+	22	RTI
+			name:	ORGANIZATION				22-23	RTI Colombia 
+	23	Colombia
+	24	–
+	25	Telemundo
+	26	and
+	27	a
+	28	version
+			sense:	adaptation.n.01
+	29	by
+	30	Spain
+			name:	COUNTRY				30-30	Spain 
+	31	's
+	32	Telecinco
+			name:	ORGANIZATION				32-32	Telecinco 
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The novel also was adapted to a film directed by Bolívar himself .
+
+
+Treebanked sentence:
+--------------------
+The novel also was adapted to a film directed by Bolívar himself . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN novel))
+    (ADVP (RB also))
+    (VP (VBD was)
+      (VP (VBN adapted)
+        (PP (IN to)
+          (NP
+            (NP (DT a) (NN film))
+            (VP (VBN directed)
+              (PP (IN by)
+                (NP
+                  (NP (NNP Bolívar))
+                  (NP (PRP himself)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	novel
+			sense:	novel.n.01
+	2	also
+			sense:	besides.r.02
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	adapted
+			sense:	adapt.v.01
+			prop:	adapt.01
+			V		4-4	adapted 
+			N-ARG-A1		0-1	The novel 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A2		5-11	to a film directed by Bolívar himself 
+	5	to
+	6	a
+	7	film
+			sense:	movie.n.01
+	8	directed
+			sense:	direct.v.03
+			prop:	direct.01
+			V		8-8	directed 
+			N-ARG-A1		6-7	a film 
+			N-ARG-A0		9-11	by Bolívar himself 
+	9	by
+	10	Bolívar
+			coref:	IDENT			0	10-11	Bolívar himself 
+			name:	PERSON				10-10	Bolívar 
+	11	himself
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is also known for writing the novel El capo and later adapting it to a telenovela .
+
+
+Treebanked sentence:
+--------------------
+He is also known for writing the novel El capo and later adapting it to a telenovela . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (VP (VBN known)
+        (PP (IN for)
+          (S
+            (VP
+              (VP (VBG writing)
+                (NP (DT the) (JJ novel) (NNP El) (NNP capo)))
+              (CC and)
+              (ADVP (RB later))
+              (VP (VBG adapting)
+                (NP (PRP it))
+                (PP (IN to)
+                  (NP (DT a) (NN telenovela)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+			N-ARGM-DIS		2-2	also 
+	2	also
+			sense:	besides.r.02
+	3	known
+			sense:	know.v.01
+			prop:	know.01
+			V		3-3	known 
+			N-ARG-A1		0-0	He 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A2		4-16	for writing the novel El capo and later adapting it to a telenovela 
+	4	for
+	5	writing
+			sense:	write.v.01
+			prop:	write.01
+			V		5-5	writing 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		6-9	the novel El capo 
+	6	the
+			coref:	IDENT			1	6-9	the novel El capo 
+	7	novel
+			name:	MISC				7-8	novel El 
+			sense:	fresh.s.04
+	8	El
+	9	capo
+	10	and
+	11	later
+			sense:	subsequently.r.01
+	12	adapting
+			sense:	adapt.v.01
+			prop:	adapt.01
+			V		12-12	adapting 
+			N-ARG-A0		0-0	He 
+			N-ARGM-TMP		11-11	later 
+			N-ARG-A1		13-13	it 
+			N-ARG-A2		14-16	to a telenovela 
+	13	it
+			coref:	IDENT			1	13-13	it 
+	14	to
+	15	a
+	16	telenovela
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also was the creator of the telenovelas Victorinos , Ojo por ojo and Tres Caínes .
+
+
+Treebanked sentence:
+--------------------
+He also was the creator of the telenovelas Victorinos , Ojo por ojo and Tres Caínes . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (NN creator))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN telenovelas) (NNP Victorinos))
+            (, ,)
+            (NP (NNP Ojo) (NNP por) (NNP ojo))
+            (CC and)
+            (NP (NNP Tres) (NNP Caínes))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+	1	also
+			sense:	besides.r.02
+	2	was
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A2		3-15	the creator of the telenovelas Victorinos , Ojo por ojo and Tres Caínes 
+	3	the
+	4	creator
+			name:	TITLE				4-4	creator 
+			sense:	creator.n.02
+	5	of
+	6	the
+	7	telenovelas
+	8	Victorinos
+	9	,
+	10	Ojo
+	11	por
+	12	ojo
+	13	and
+	14	Tres
+			name:	ORGANIZATION				14-15	Tres Caínes 
+	15	Caínes
+	16	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-2	Gustavo Bolívar Moreno 
+				1.0-0	He 
+				1.25-25	him 
+				3.10-11	Bolívar himself 
+	Chain 1 (IDENT)
+				4.6-9	the novel El capo 
+				4.13-13	it 
+

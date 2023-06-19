@@ -1,0 +1,542 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+José Luis Murature ( 27 January 1876 – 15 September 1929 ) was an Argentine lawyer , journalist , professor and foreign minister of Argentina from 1914 to 1916 .
+
+
+Treebanked sentence:
+--------------------
+José Luis Murature ( 27 January 1876 – 15 September 1929 ) was an Argentine lawyer , journalist , professor and foreign minister of Argentina from 1914 to 1916 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP José) (NNP Luis) (NNP Murature))
+      (-LRB- -LRB-)
+      (NP
+        (NP (CD 27) (NNP January))
+        (NP
+          (NP
+            (QP (CD 1876) (SYM –) (CD 15)))
+          (NP-TMP (NNP September) (CD 1929))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (NNP Argentine)
+          (NML (NN lawyer) (, ,) (NN journalist) (, ,) (NN professor)
+            (CC and)
+            (JJ foreign))
+          (NN minister))
+        (PP (IN of)
+          (NP
+            (NP (NNP Argentina))
+            (PP (IN from)
+              (NP (CD 1914))))))
+      (PP (IN to)
+        (NP (CD 1916))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	José
+			coref:	IDENT			2	0-2	José Luis Murature 
+			name:	PERSON				0-2	José Luis Murature 
+	1	Luis
+	2	Murature
+	3	(
+	4	27
+			name:	DATE				4-6	27 January 1876 
+	5	January
+	6	1876
+	7	–
+	8	15
+			coref:	IDENT			1	8-10	15 September 1929 
+			name:	DATE				8-10	15 September 1929 
+	9	September
+	10	1929
+	11	)
+	12	was
+			sense:	be.v.02
+			prop:	be.01
+			V		12-12	was 
+			N-ARG-A1		0-11	José Luis Murature ( 27 January 1876 – 15 September 1929 ) 
+			N-ARG-A2		13-24	an Argentine lawyer , journalist , professor and foreign minister of Argentina 
+			N-ARGM-TMP		25-28	from 1914 to 1916 
+	13	an
+	14	Argentine
+			name:	NATIONALITY				14-14	Argentine 
+	15	lawyer
+			name:	TITLE				15-15	lawyer 
+			sense:	lawyer.n.01
+	16	,
+	17	journalist
+			name:	TITLE				17-17	journalist 
+			sense:	journalist.n.01
+	18	,
+	19	professor
+			name:	TITLE				19-19	professor 
+			sense:	professor.n.01
+	20	and
+	21	foreign
+			name:	TITLE				21-22	foreign minister 
+			sense:	foreign.a.01
+	22	minister
+			sense:	minister.n.03
+	23	of
+	24	Argentina
+			name:	COUNTRY				24-24	Argentina 
+	25	from
+	26	1914
+			coref:	IDENT			3	26-28	1914 to 1916 
+			name:	DATE				26-28	1914 to 1916 
+	27	to
+	28	1916
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Born in Buenos Aires , the son of José P. Murature and Dolores Legarrete , he was educated at the Colegio Nacional de Buenos Aires and the University of Buenos Aires .
+
+
+Treebanked sentence:
+--------------------
+Born in Buenos Aires , the son of José P. Murature and Dolores Legarrete , he was educated at the Colegio Nacional de Buenos Aires and the University of Buenos Aires . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Born)
+        (PP (IN in)
+          (NP
+            (NP (NNP Buenos) (NNP Aires))
+            (, ,)
+            (NP
+              (NP (DT the) (NN son))
+              (PP (IN of)
+                (NP
+                  (NP (NNP José) (NNP P.) (NNP Murature))
+                  (CC and)
+                  (NP (NNP Dolores) (NNP Legarrete)))))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN educated)
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNP Colegio)
+              (NML (NNP Nacional) (NNP de))
+              (NNP Buenos) (NNP Aires))
+            (CC and)
+            (NP
+              (NP (DT the) (NNP University))
+              (PP (IN of)
+                (NP (NNP Buenos) (NNP Aires))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		0-0	Born 
+			N-ARGM-LOC		1-3	in Buenos Aires 
+			N-ARGM-PRD		5-13	the son of José P. Murature and Dolores Legarrete 
+			N-ARG-A1		15-15	he 
+	1	in
+	2	Buenos
+			coref:	IDENT			0	2-3	Buenos Aires 
+			name:	CITY				2-3	Buenos Aires 
+	3	Aires
+	4	,
+	5	the
+	6	son
+			sense:	son.n.01
+	7	of
+	8	José
+			name:	PERSON				8-10	José P. Murature 
+	9	P.
+	10	Murature
+	11	and
+	12	Dolores
+			name:	PERSON				12-13	Dolores Legarrete 
+	13	Legarrete
+	14	,
+	15	he
+	16	was
+			sense:	be.v.01
+			prop:	be.03
+			V		16-16	was 
+	17	educated
+			sense:	educate.v.01
+			prop:	educate.01
+			V		17-17	educated 
+			N-ARG-A1		15-15	he 
+			N-ARGM-LOC		18-30	at the Colegio Nacional de Buenos Aires and the University of Buenos Aires 
+	18	at
+	19	the
+	20	Colegio
+			name:	ORGANIZATION				20-24	Colegio Nacional de Buenos Aires 
+	21	Nacional
+	22	de
+	23	Buenos
+	24	Aires
+	25	and
+	26	the
+	27	University
+			name:	ORGANIZATION				27-30	University of Buenos Aires 
+	28	of
+	29	Buenos
+	30	Aires
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Murature was awarded the degree of Doctor of Laws in 1898 .
+
+
+Treebanked sentence:
+--------------------
+Murature was awarded the degree of Doctor of Laws in 1898 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN Murature))
+    (VP (VBD was)
+      (VP (VBN awarded)
+        (NP
+          (NP (DT the) (NN degree))
+          (PP (IN of)
+            (NP
+              (NP (NNP Doctor))
+              (PP (IN of)
+                (NP (NNPS Laws))))))
+        (PP (IN in)
+          (NP (CD 1898)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Murature
+			coref:	IDENT			2	0-0	Murature 
+			name:	PERSON				0-0	Murature 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	awarded
+			sense:	award.v.01
+			prop:	award.01
+			V		2-2	awarded 
+			N-ARG-A2		0-0	Murature 
+			N-ARG-A1		3-8	the degree of Doctor of Laws 
+			N-ARGM-TMP		9-10	in 1898 
+	3	the
+	4	degree
+			sense:	academic_degree.n.01
+	5	of
+	6	Doctor
+			name:	TITLE				6-6	Doctor 
+	7	of
+	8	Laws
+	9	in
+	10	1898
+			name:	DATE				10-10	1898 
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was later a member of the staff of La Nación newspaper in Buenos Aires , rising to Managing Editor .
+
+
+Treebanked sentence:
+--------------------
+He was later a member of the staff of La Nación newspaper in Buenos Aires , rising to Managing Editor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (ADVP (RB later))
+      (NP
+        (NP (DT a) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN staff))
+            (PP (IN of)
+              (NP
+                (NP
+                  (NML (NNP La) (NNP Nación))
+                  (NN newspaper))
+                (PP (IN in)
+                  (NP (NNP Buenos) (NNP Aires))))))))
+      (, ,)
+      (VP (VBG rising)
+        (PP (IN to)
+          (NP (VBG Managing) (NN Editor)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		2-2	later 
+			N-ARG-A2		3-14	a member of the staff of La Nación newspaper in Buenos Aires 
+			N-ARGM-ADV		16-19	rising to Managing Editor 
+	2	later
+			sense:	subsequently.r.01
+	3	a
+	4	member
+			sense:	member.n.01
+	5	of
+	6	the
+	7	staff
+			sense:	staff.n.01
+	8	of
+	9	La
+			name:	STATE_OR_PROVINCE				9-9	La 
+	10	Nación
+			name:	LOCATION				10-10	Nación 
+	11	newspaper
+			sense:	newspaper.n.01
+	12	in
+	13	Buenos
+			coref:	IDENT			0	13-14	Buenos Aires 
+			name:	CITY				13-14	Buenos Aires 
+	14	Aires
+	15	,
+	16	rising
+			sense:	rise.v.11
+			prop:	rise.01
+			V		16-16	rising 
+			N-ARG-A1		0-0	He 
+			N-ARG-A4		17-19	to Managing Editor 
+	17	to
+	18	Managing
+			name:	TITLE				18-19	Managing Editor 
+			sense:	oversee.v.01
+			prop:	manage.01
+			V		18-18	Managing 
+			N-ARG-A0		19-19	Editor 
+	19	Editor
+			sense:	editor.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Murature taught in the Military School , where he held the professorship from 1905 to 1914 , and from 1914 to 1916 , he acted as the Foreign Minister of Argentina .
+
+
+Treebanked sentence:
+--------------------
+Murature taught in the Military School , where he held the professorship from 1905 to 1914 , and from 1914 to 1916 , he acted as the Foreign Minister of Argentina . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NN Murature))
+      (VP (VBN taught)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNP Military) (NNP School))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (PRP he))
+                (VP (VBD held)
+                  (NP (DT the) (NN professorship))
+                  (PP (IN from)
+                    (NP (CD 1905)))
+                  (PP (IN to)
+                    (NP (CD 1914))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (PP
+        (PP (IN from)
+          (NP (CD 1914)))
+        (PP (IN to)
+          (NP (CD 1916))))
+      (, ,)
+      (NP (PRP he))
+      (VP (VBD acted)
+        (PP (IN as)
+          (NP
+            (NP (DT the)
+              (NML (NNP Foreign) (NNP Minister)))
+            (PP (IN of)
+              (NP (NNP Argentina)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Murature
+			coref:	IDENT			2	0-0	Murature 
+	1	taught
+			sense:	teach.v.01
+			prop:	teach.01
+			V		1-1	taught 
+			N-ARG-A0		0-0	Murature 
+			N-ARGM-LOC		2-15	in the Military School , where he held the professorship from 1905 to 1914 
+	2	in
+	3	the
+	4	Military
+	5	School
+	6	,
+	7	where
+	8	he
+			coref:	IDENT			2	8-8	he 
+	9	held
+			sense:	bear.v.11
+			prop:	hold.01
+			V		9-9	held 
+			N-ARGM-LOC		3-5	the Military School 
+			R-ARGM-LOC		7-7	where 
+			N-ARG-A0		8-8	he 
+			N-ARG-A1		10-11	the professorship 
+			N-ARGM-TMP		12-15	from 1905 to 1914 
+	10	the
+	11	professorship
+			sense:	professorship.n.01
+	12	from
+	13	1905
+			name:	DATE				13-15	1905 to 1914 
+	14	to
+	15	1914
+	16	,
+	17	and
+	18	from
+	19	1914
+			coref:	IDENT			3	19-21	1914 to 1916 
+			name:	DATE				19-21	1914 to 1916 
+	20	to
+	21	1916
+	22	,
+	23	he
+			coref:	IDENT			2	23-23	he 
+	24	acted
+			sense:	act.v.04
+			prop:	act.01
+			V		24-24	acted 
+			N-ARGM-TMP		18-21	from 1914 to 1916 
+			N-ARG-A0		23-23	he 
+			N-ARG-A1		25-30	as the Foreign Minister of Argentina 
+	25	as
+	26	the
+	27	Foreign
+			name:	TITLE				27-28	Foreign Minister 
+	28	Minister
+	29	of
+	30	Argentina
+			name:	COUNTRY				30-30	Argentina 
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He died in Hamburg , Germany , on 15 September 1929 .
+
+
+Treebanked sentence:
+--------------------
+He died in Hamburg , Germany , on 15 September 1929 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD died)
+      (PP (IN in)
+        (NP
+          (NP (NNP Hamburg) (, ,) (NNP Germany) (, ,))
+          (PP (IN on)
+            (NP (CD 15)))))
+      (NP-TMP (NNP September) (CD 1929)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	died
+			sense:	die.v.01
+			prop:	die.01
+			V		1-1	died 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		2-5	in Hamburg , Germany 
+			N-ARGM-TMP		7-10	on 15 September 1929 
+	2	in
+	3	Hamburg
+			name:	CITY				3-3	Hamburg 
+	4	,
+	5	Germany
+			name:	COUNTRY				5-5	Germany 
+	6	,
+	7	on
+	8	15
+			coref:	IDENT			1	8-10	15 September 1929 
+			name:	DATE				8-10	15 September 1929 
+	9	September
+	10	1929
+	11	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.2-3	Buenos Aires 
+				3.13-14	Buenos Aires 
+	Chain 1 (IDENT)
+				5.8-10	15 September 1929 
+				0.8-10	15 September 1929 
+	Chain 2 (IDENT)
+				0.0-2	José Luis Murature 
+				2.0-0	Murature 
+				3.0-0	He 
+				4.0-0	Murature 
+				4.8-8	he 
+				4.23-23	he 
+				5.0-0	He 
+	Chain 3 (IDENT)
+				0.26-28	1914 to 1916 
+				4.19-21	1914 to 1916 
+

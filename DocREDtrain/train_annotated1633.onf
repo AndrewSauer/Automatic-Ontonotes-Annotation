@@ -1,0 +1,693 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Mayor of Seattle is the head of the executive branch of the city government of Seattle , Washington .
+
+
+Treebanked sentence:
+--------------------
+The Mayor of Seattle is the head of the executive branch of the city government of Seattle , Washington . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Mayor))
+      (PP (IN of)
+        (NP (NNP Seattle))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN head))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJ executive) (NN branch))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN city) (NN government))
+                (PP (IN of)
+                  (NP (NNP Seattle) (, ,) (NNP Washington)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-3	The Mayor of Seattle 
+	1	Mayor
+			name:	TITLE				1-1	Mayor 
+	2	of
+	3	Seattle
+			coref:	IDENT			0	3-3	Seattle 
+			name:	CITY				3-3	Seattle 
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	The Mayor of Seattle 
+			N-ARG-A2		5-18	the head of the executive branch of the city government of Seattle , Washington 
+	5	the
+	6	head
+			sense:	head.n.04
+	7	of
+	8	the
+	9	executive
+			name:	TITLE				9-9	executive 
+			sense:	executive.a.01
+	10	branch
+			sense:	branch.n.01
+	11	of
+	12	the
+	13	city
+			sense:	city.n.02
+	14	government
+			sense:	government.n.01
+	15	of
+	16	Seattle
+			coref:	IDENT			0	16-16	Seattle 
+			name:	CITY				16-16	Seattle 
+	17	,
+	18	Washington
+			name:	STATE_OR_PROVINCE				18-18	Washington 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The mayor is authorized by the city charter to enforce laws enacted by the Seattle City Council , as well as direct subordinate officers in city departments .
+
+
+Treebanked sentence:
+--------------------
+The mayor is authorized by the city charter to enforce laws enacted by the Seattle City Council , as well as direct subordinate officers in city departments . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN mayor))
+    (VP (VBZ is)
+      (VP (VBN authorized)
+        (PP (IN by)
+          (NP (DT the) (NN city) (NN charter)))
+        (S
+          (VP (TO to)
+            (VP (VB enforce)
+              (NP
+                (NP
+                  (NP (NNS laws))
+                  (VP (VBN enacted)
+                    (PP (IN by)
+                      (NP (DT the) (NNP Seattle) (NNP City) (NNP Council)))))
+                (, ,)
+                (CONJP (RB as) (RB well) (IN as))
+                (NP
+                  (NP (JJ direct) (JJ subordinate) (NNS officers))
+                  (PP (IN in)
+                    (NP (NN city) (NNS departments))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The mayor 
+	1	mayor
+			name:	TITLE				1-1	mayor 
+			sense:	mayor.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	authorized
+			sense:	authorize.v.01
+			prop:	authorize.01
+			V		3-3	authorized 
+			N-ARG-A2		0-1	The mayor 
+			N-ARG-A0		4-7	by the city charter 
+			N-ARG-A1		8-26	to enforce laws enacted by the Seattle City Council , as well as direct subordinate officers in city departments 
+	4	by
+	5	the
+	6	city
+			sense:	city.n.02
+	7	charter
+			name:	TITLE				7-7	charter 
+			sense:	charter.n.01
+	8	to
+	9	enforce
+			sense:	enforce.v.01
+			prop:	enforce.01
+			V		9-9	enforce 
+			N-ARG-A0		0-1	The mayor 
+			N-ARG-A1		10-26	laws enacted by the Seattle City Council , as well as direct subordinate officers in city departments 
+	10	laws
+			sense:	law.n.02
+	11	enacted
+			sense:	ordain.v.01
+			prop:	enact.01
+			V		11-11	enacted 
+			N-ARG-A1		10-10	laws 
+			N-ARG-A0		12-16	by the Seattle City Council 
+	12	by
+	13	the
+	14	Seattle
+			name:	ORGANIZATION				14-16	Seattle City Council 
+	15	City
+	16	Council
+	17	,
+	18	as
+			sense:	equally.r.01
+	19	well
+			sense:	well.r.02
+	20	as
+	21	direct
+			sense:	direct.s.02
+	22	subordinate
+			sense:	subordinate.a.01
+	23	officers
+			sense:	officeholder.n.01
+	24	in
+	25	city
+			sense:	city.n.02
+	26	departments
+			sense:	department.n.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The mayor serves a four - year term , without term limits , and is chosen in citywide , two - round elections between nonpartisan candidates .
+
+
+Treebanked sentence:
+--------------------
+The mayor serves a four - year term , without term limits , and is chosen in citywide , two - round elections between nonpartisan candidates . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN mayor))
+    (VP
+      (VP (VBZ serves)
+        (NP
+          (NP (DT a)
+            (NML (CD four) (HYPH -) (NN year))
+            (NN term))
+          (, ,)
+          (PP (IN without)
+            (NP (NN term) (NNS limits)))))
+      (, ,)
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN chosen)
+          (PP (IN in)
+            (NP
+              (NP (JJ citywide) (, ,)
+                (ADJP (CD two) (HYPH -) (JJ round))
+                (NNS elections))
+              (PP (IN between)
+                (NP (JJ nonpartisan) (NNS candidates))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The mayor 
+	1	mayor
+			name:	TITLE				1-1	mayor 
+			sense:	mayor.n.01
+	2	serves
+			sense:	serve.v.02
+			prop:	serve.01
+			V		2-2	serves 
+			N-ARG-A0		0-1	The mayor 
+			N-ARG-A1		3-7	a four - year term 
+			N-ARGM-MNR		9-11	without term limits 
+	3	a
+	4	four
+			name:	DURATION				4-6	four - year 
+	5	-
+	6	year
+			sense:	year.n.01
+	7	term
+			sense:	term.n.02
+	8	,
+	9	without
+	10	term
+			sense:	term.n.02
+	11	limits
+			sense:	limit.n.06
+	12	,
+	13	and
+	14	is
+			sense:	be.v.01
+			prop:	be.03
+			V		14-14	is 
+	15	chosen
+			sense:	choose.v.01
+			prop:	choose.01
+			V		15-15	chosen 
+			N-ARG-A1		0-1	The mayor 
+			N-ARGM-LOC		16-25	in citywide , two - round elections between nonpartisan candidates 
+	16	in
+	17	citywide
+			sense:	citywide.s.01
+	18	,
+	19	two
+			name:	NUMBER				19-19	two 
+	20	-
+	21	round
+			sense:	round.s.03
+	22	elections
+			sense:	election.n.01
+	23	between
+	24	nonpartisan
+			name:	IDEOLOGY				24-24	nonpartisan 
+			sense:	nonpartisan.a.01
+	25	candidates
+			sense:	campaigner.n.01
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Since the appointment of Henry A. Atkins in 1869 , 56 individuals have held the office of mayor .
+
+
+Treebanked sentence:
+--------------------
+Since the appointment of Henry A. Atkins in 1869 , 56 individuals have held the office of mayor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Since)
+      (NP
+        (NP (DT the) (NN appointment))
+        (PP (IN of)
+          (NP
+            (NP (NNP Henry) (NNP A.) (NNP Atkins))
+            (PP (IN in)
+              (NP (CD 1869)))))))
+    (, ,)
+    (NP (CD 56) (NNS individuals))
+    (VP (VBP have)
+      (VP (VBN held)
+        (NP
+          (NP (DT the) (NN office))
+          (PP (IN of)
+            (NP (NN mayor))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Since
+	1	the
+	2	appointment
+			sense:	appointment.n.01
+	3	of
+	4	Henry
+			name:	PERSON				4-6	Henry A. Atkins 
+	5	A.
+	6	Atkins
+	7	in
+	8	1869
+			name:	DATE				8-8	1869 
+	9	,
+	10	56
+			name:	NUMBER				10-10	56 
+	11	individuals
+			sense:	person.n.01
+	12	have
+			sense:	have.v.01
+			prop:	have.01
+			V		12-12	have 
+	13	held
+			sense:	bear.v.11
+			prop:	hold.01
+			V		13-13	held 
+			N-ARGM-TMP		0-8	Since the appointment of Henry A. Atkins in 1869 
+			N-ARG-A0		10-11	56 individuals 
+			N-ARG-A1		14-17	the office of mayor 
+	14	the
+	15	office
+			sense:	function.n.03
+	16	of
+	17	mayor
+			name:	TITLE				17-17	mayor 
+			sense:	mayor.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The city elected Bertha Knight Landes , the first female mayor of a major U.S. city , in 1926 .
+
+
+Treebanked sentence:
+--------------------
+The city elected Bertha Knight Landes , the first female mayor of a major U.S. city , in 1926 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN city))
+    (VP (VBD elected)
+      (NP
+        (NP (NNP Bertha) (NNP Knight) (NNP Landes))
+        (, ,)
+        (NP
+          (NP (DT the) (JJ first) (JJ female) (NN mayor))
+          (PP (IN of)
+            (NP (DT a) (JJ major) (NNP U.S.) (NN city))))
+        (, ,))
+      (PP (IN in)
+        (NP (CD 1926))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	city
+			sense:	city.n.03
+	2	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		2-2	elected 
+			N-ARG-A0		0-1	The city 
+			N-ARG-A1		3-16	Bertha Knight Landes , the first female mayor of a major U.S. city , 
+			N-ARGM-TMP		17-18	in 1926 
+	3	Bertha
+			name:	PERSON				3-5	Bertha Knight Landes 
+	4	Knight
+	5	Landes
+	6	,
+	7	the
+	8	first
+			name:	ORDINAL				8-8	first 
+			sense:	first.a.01
+	9	female
+			sense:	female.a.01
+	10	mayor
+			name:	TITLE				10-10	mayor 
+			sense:	mayor.n.01
+	11	of
+	12	a
+	13	major
+			sense:	major.a.01
+	14	U.S.
+			name:	COUNTRY				14-14	U.S. 
+	15	city
+			sense:	city.n.01
+	16	,
+	17	in
+	18	1926
+			name:	DATE				18-18	1926 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Several mayors have served non - consecutive terms , while others have resigned or faced recall elections .
+
+
+Treebanked sentence:
+--------------------
+Several mayors have served non - consecutive terms , while others have resigned or faced recall elections . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (JJ Several) (NNS mayors))
+    (VP (VBP have)
+      (VP (VBN served)
+        (NP
+          (ADJP (AFX non) (HYPH -) (JJ consecutive))
+          (NNS terms))
+        (, ,)
+        (SBAR (IN while)
+          (S
+            (NP (NNS others))
+            (VP (VBP have)
+              (VP (VBN resigned)
+                (CC or)
+                (VBN faced)
+                (NP (NN recall) (NNS elections))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Several
+			sense:	several.s.01
+	1	mayors
+			sense:	mayor.n.01
+	2	have
+			sense:	have.v.01
+			prop:	have.01
+			V		2-2	have 
+	3	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		3-3	served 
+			N-ARG-A0		0-1	Several mayors 
+			N-ARG-A1		4-7	non - consecutive terms 
+			N-ARGM-ADV		9-16	while others have resigned or faced recall elections 
+	4	non
+	5	-
+	6	consecutive
+			sense:	straight.s.01
+	7	terms
+			sense:	term.n.02
+	8	,
+	9	while
+	10	others
+	11	have
+			sense:	have.v.11
+			prop:	have.01
+			V		11-11	have 
+	12	resigned
+			sense:	vacate.v.01
+			prop:	resign.01
+			V		12-12	resigned 
+			N-ARG-A0		10-10	others 
+	13	or
+	14	faced
+			sense:	confront.v.01
+			prop:	face.01
+			V		14-14	faced 
+			N-ARG-A0		10-10	others 
+			N-ARG-A1		15-16	recall elections 
+	15	recall
+			sense:	recall.n.05
+	16	elections
+			sense:	election.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Charles Royer holds the record for longest mayoral tenure in the city 's history , serving three full terms from 1978 to 1990 .
+
+
+Treebanked sentence:
+--------------------
+Charles Royer holds the record for longest mayoral tenure in the city 's history , serving three full terms from 1978 to 1990 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Charles) (NNP Royer))
+    (VP (VBZ holds)
+      (NP
+        (NP (DT the) (NN record))
+        (PP (IN for)
+          (NP
+            (NP (JJS longest) (JJ mayoral) (NN tenure))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN city) (POS 's))
+                (NN history))))))
+      (, ,)
+      (S
+        (VP (VBG serving)
+          (NP (CD three) (JJ full) (NNS terms))
+          (PP (IN from)
+            (NP (CD 1978)))
+          (PP (IN to)
+            (NP (CD 1990))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Charles
+			name:	PERSON				0-1	Charles Royer 
+	1	Royer
+	2	holds
+			sense:	have.v.01
+			prop:	hold.01
+			V		2-2	holds 
+			N-ARG-A0		0-1	Charles Royer 
+			N-ARG-A1		3-13	the record for longest mayoral tenure in the city 's history 
+			N-ARGM-ADV		15-22	serving three full terms from 1978 to 1990 
+	3	the
+	4	record
+			sense:	record.n.01
+	5	for
+	6	longest
+			sense:	long.a.01
+	7	mayoral
+			sense:	mayoral.a.01
+	8	tenure
+			sense:	tenure.n.01
+	9	in
+	10	the
+	11	city
+			sense:	city.n.02
+	12	's
+	13	history
+			sense:	history.n.01
+	14	,
+	15	serving
+			sense:	serve.v.02
+			prop:	serve.01
+			V		15-15	serving 
+			N-ARG-A0		0-1	Charles Royer 
+			N-ARG-A1		16-18	three full terms 
+			N-ARGM-TMP		19-22	from 1978 to 1990 
+	16	three
+			name:	NUMBER				16-16	three 
+	17	full
+			sense:	entire.s.01
+	18	terms
+			sense:	term.n.02
+	19	from
+	20	1978
+			name:	DATE				20-22	1978 to 1990 
+	21	to
+	22	1990
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jenny Durkan took office as mayor on November 28 , 2017 , becoming the second female mayor and first lesbian mayor .
+
+
+Treebanked sentence:
+--------------------
+Jenny Durkan took office as mayor on November 28 , 2017 , becoming the second female mayor and first lesbian mayor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Jenny) (NNP Durkan))
+    (VP (VBD took)
+      (NP (NN office))
+      (PP (IN as)
+        (NP (NN mayor)))
+      (PP (IN on)
+        (NP (NNP November) (CD 28) (, ,) (CD 2017)))
+      (, ,)
+      (S
+        (VP (VBG becoming)
+          (NP
+            (NP (DT the) (JJ second) (JJ female) (NN mayor))
+            (CC and)
+            (NP (JJ first) (JJ lesbian) (NN mayor))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jenny
+			name:	PERSON				0-1	Jenny Durkan 
+	1	Durkan
+	2	took
+			sense:	fill.v.04
+			prop:	take.01
+			V		2-2	took 
+			N-ARG-A0		0-1	Jenny Durkan 
+			N-ARG-A1		3-3	office 
+			N-ARGM-PRD		4-5	as mayor 
+			N-ARGM-TMP		6-10	on November 28 , 2017 
+			N-ARGM-ADV		12-20	becoming the second female mayor and first lesbian mayor 
+	3	office
+			sense:	office.n.04
+	4	as
+	5	mayor
+			name:	TITLE				5-5	mayor 
+			sense:	mayor.n.01
+	6	on
+	7	November
+			name:	DATE				7-10	November 28 , 2017 
+	8	28
+	9	,
+	10	2017
+	11	,
+	12	becoming
+			sense:	become.v.02
+			prop:	become.01
+			V		12-12	becoming 
+			N-ARG-A1		0-1	Jenny Durkan 
+			N-ARG-A2		13-20	the second female mayor and first lesbian mayor 
+	13	the
+			coref:	IDENT			1	13-16	the second female mayor 
+	14	second
+			name:	ORDINAL				14-14	second 
+			sense:	second.s.01
+	15	female
+			sense:	female.a.01
+	16	mayor
+			name:	TITLE				16-16	mayor 
+			sense:	mayor.n.01
+	17	and
+	18	first
+			name:	ORDINAL				18-18	first 
+			sense:	first.a.01
+	19	lesbian
+			sense:	lesbian.s.01
+	20	mayor
+			name:	TITLE				20-20	mayor 
+			sense:	mayor.n.01
+	21	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.3-3	Seattle 
+				0.16-16	Seattle 
+	Chain 1 (IDENT)
+				0.0-3	The Mayor of Seattle 
+				1.0-1	The mayor 
+				2.0-1	The mayor 
+				7.13-16	the second female mayor 
+

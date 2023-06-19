@@ -1,0 +1,531 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Christina Surer ( born 26 March 1974 in Basel ) is a Swiss race car driver .
+
+
+Treebanked sentence:
+--------------------
+Christina Surer ( born 26 March 1974 in Basel ) is a Swiss race car driver . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Christina) (NNP Surer))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 26))
+        (NP-TMP (NNP March) (CD 1974))
+        (PP (IN in)
+          (NP (NNP Basel))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a)
+        (NML (JJ Swiss) (NN race))
+        (NN car) (NN driver)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Christina
+			coref:	IDENT			0	0-1	Christina Surer 
+			name:	PERSON				0-1	Christina Surer 
+	1	Surer
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Christina Surer 
+			N-ARGM-TMP		4-6	26 March 1974 
+			N-ARGM-LOC		7-8	in Basel 
+	4	26
+			name:	DATE				4-6	26 March 1974 
+	5	March
+	6	1974
+	7	in
+	8	Basel
+			name:	CITY				8-8	Basel 
+	9	)
+	10	is
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	Christina Surer ( born 26 March 1974 in Basel ) 
+			N-ARG-A2		11-15	a Swiss race car driver 
+	11	a
+	12	Swiss
+			name:	NATIONALITY				12-12	Swiss 
+	13	race
+			sense:	race.n.02
+	14	car
+			sense:	car.n.01
+	15	driver
+			name:	TITLE				15-15	driver 
+			sense:	driver.n.01
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She has been racing for more than a decade , having spent several years in go - karts before participating in the Ford Superseries ( 2002 ) , Alfa 147 Cup ( 2002 ) and the Ford Fiesta Cup ( 2003 ) .
+
+
+Treebanked sentence:
+--------------------
+She has been racing for more than a decade , having spent several years in go - karts before participating in the Ford Superseries ( 2002 ) , Alfa 147 Cup ( 2002 ) and the Ford Fiesta Cup ( 2003 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBG racing)
+          (PP (IN for)
+            (NP
+              (QP (JJR more) (IN than) (DT a))
+              (NN decade)))
+          (, ,)
+          (S
+            (VP (VBG having)
+              (VP (VBN spent)
+                (NP
+                  (NP (JJ several) (NNS years))
+                  (PP (IN in)
+                    (NP (NN go) (HYPH -) (NNS karts))))
+                (PP (IN before)
+                  (S
+                    (VP (VBG participating)
+                      (PP (IN in)
+                        (NP
+                          (NP
+                            (NP (DT the) (NNP Ford) (NNPS Superseries))
+                            (-LRB- -LRB-)
+                            (NP (CD 2002))
+                            (-RRB- -RRB-))
+                          (, ,)
+                          (NP
+                            (NP (NNP Alfa) (CD 147))
+                            (NP (NNP Cup))
+                            (PRN (-LRB- -LRB-)
+                              (NP (CD 2002))
+                              (-RRB- -RRB-)))
+                          (CC and)
+                          (NP (DT the) (NNP Ford) (NNP Fiesta) (NNP Cup)
+                            (PRN (-LRB- -LRB-)
+                              (NP (CD 2003))
+                              (-RRB- -RRB-))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	been
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	been 
+	3	racing
+			sense:	race.v.02
+			prop:	race.01
+			V		3-3	racing 
+			N-ARG-A0		0-0	She 
+			N-ARGM-TMP		4-8	for more than a decade 
+			N-ARGM-PRD		10-41	having spent several years in go - karts before participating in the Ford Superseries ( 2002 ) , Alfa 147 Cup ( 2002 ) and the Ford Fiesta Cup ( 2003 ) 
+	4	for
+	5	more
+			name:	DURATION				5-8	more than a decade 
+			sense:	more.a.01
+	6	than
+	7	a
+	8	decade
+			sense:	decade.n.01
+	9	,
+	10	having
+			sense:	have.v.01
+			prop:	shaving.01
+			V		10-10	having 
+	11	spent
+			sense:	spend.v.01
+			prop:	spend.02
+			V		11-11	spent 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		12-13	several years 
+			N-ARGM-TMP		18-41	before participating in the Ford Superseries ( 2002 ) , Alfa 147 Cup ( 2002 ) and the Ford Fiesta Cup ( 2003 ) 
+	12	several
+			name:	DURATION				12-13	several years 
+			sense:	several.s.01
+	13	years
+			sense:	year.n.01
+	14	in
+	15	go
+			sense:	go.n.04
+	16	-
+	17	karts
+	18	before
+	19	participating
+			sense:	enter.v.02
+			prop:	participate.01
+			V		19-19	participating 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		20-41	in the Ford Superseries ( 2002 ) , Alfa 147 Cup ( 2002 ) and the Ford Fiesta Cup ( 2003 ) 
+	20	in
+	21	the
+	22	Ford
+	23	Superseries
+	24	(
+	25	2002
+			name:	DATE				25-25	2002 
+	26	)
+	27	,
+	28	Alfa
+			name:	MISC				28-28	Alfa 
+	29	147
+			name:	NUMBER				29-29	147 
+	30	Cup
+			name:	MISC				30-30	Cup 
+	31	(
+	32	2002
+			name:	DATE				32-32	2002 
+	33	)
+	34	and
+	35	the
+	36	Ford
+			name:	MISC				36-38	Ford Fiesta Cup 
+	37	Fiesta
+	38	Cup
+	39	(
+	40	2003
+			name:	DATE				40-40	2003 
+	41	)
+	42	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She has participated in two 24 Hours Nürburgring races ( 2004 , 2005 ) and since 2004 , has been racing in the Seat Leon Supercopa .
+
+
+Treebanked sentence:
+--------------------
+She has participated in two 24 Hours Nürburgring races ( 2004 , 2005 ) and since 2004 , has been racing in the Seat Leon Supercopa . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP
+      (VP (VBZ has)
+        (VP (VBN participated)
+          (PP (IN in)
+            (NP
+              (QP (CD two) (CD 24))
+              (NNS Hours)))
+          (S
+            (VP (VBG Nürburgring)
+              (NP (NNS races))))
+          (PRN (-LRB- -LRB-)
+            (NP (CD 2004) (, ,) (CD 2005))
+            (-RRB- -RRB-))))
+      (CC and)
+      (PP (IN since)
+        (NP (CD 2004)))
+      (, ,)
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP (VBG racing)
+            (PP (IN in)
+              (NP (DT the) (NNP Seat) (NNP Leon) (NNP Supercopa)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	participated
+			sense:	participate.v.01
+			prop:	participate.01
+			V		2-2	participated 
+			N-ARG-A0		0-0	She 
+			N-ARG-A1		3-13	in two 24 Hours Nürburgring races ( 2004 , 2005 ) 
+	3	in
+	4	two
+			name:	NUMBER				4-4	two 
+	5	24
+			name:	DURATION				5-6	24 Hours 
+	6	Hours
+			sense:	hour.n.01
+	7	Nürburgring
+			prop:	bulging.01
+			V		7-7	Nürburgring 
+			N-ARGM-TMP		5-6	24 Hours 
+	8	races
+			sense:	race.n.02
+	9	(
+	10	2004
+			coref:	IDENT			1	10-10	2004 
+			name:	DATE				10-10	2004 
+	11	,
+	12	2005
+			name:	DATE				12-12	2005 
+	13	)
+	14	and
+	15	since
+	16	2004
+			coref:	IDENT			1	16-16	2004 
+			name:	DATE				16-16	2004 
+	17	,
+	18	has
+			sense:	have.v.01
+			prop:	have.01
+			V		18-18	has 
+	19	been
+			sense:	be.v.01
+			prop:	be.03
+			V		19-19	been 
+	20	racing
+			sense:	race.v.02
+			prop:	race.01
+			V		20-20	racing 
+			N-ARG-A0		0-0	She 
+			N-ARGM-TMP		15-16	since 2004 
+			N-ARGM-LOC		21-25	in the Seat Leon Supercopa 
+	21	in
+	22	the
+	23	Seat
+	24	Leon
+	25	Supercopa
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Surer has modelled for Playboy and was married to Formula One driver Marc Surer from 1997 to 2000 .
+
+
+Treebanked sentence:
+--------------------
+Surer has modelled for Playboy and was married to Formula One driver Marc Surer from 1997 to 2000 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (JJR Surer))
+    (VP
+      (VP (VBZ has)
+        (VP (VBN modelled)
+          (PP (IN for)
+            (NP (NNP Playboy)))))
+      (CC and)
+      (VP (VBD was)
+        (VP (VBN married)
+          (PP (IN to)
+            (NP
+              (NP (NNP Formula)
+                (NML (CD One) (NN driver))
+                (NNP Marc) (NNP Surer))
+              (PP (IN from)
+                (NP (CD 1997)))))
+          (PP (IN to)
+            (NP (CD 2000))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Surer
+			sense:	sure.s.06
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	modelled
+			sense:	model.v.03
+			prop:	model.02
+			V		2-2	modelled 
+			N-ARG-A0		0-0	Surer 
+			N-ARGM-ADV		3-4	for Playboy 
+	3	for
+	4	Playboy
+	5	and
+	6	was
+			sense:	be.v.01
+			prop:	be.01
+			V		6-6	was 
+			N-ARG-A1		0-0	Surer 
+			N-ARG-A2		7-13	married to Formula One driver Marc Surer 
+			N-ARGM-TMP		14-17	from 1997 to 2000 
+	7	married
+			sense:	marry.v.01
+			prop:	arrive.01
+			V		7-7	married 
+			N-ARG-A1		0-0	Surer 
+			N-ARG-A2		8-13	to Formula One driver Marc Surer 
+			N-ARGM-TMP		14-17	from 1997 to 2000 
+	8	to
+	9	Formula
+	10	One
+			name:	NUMBER				10-10	One 
+	11	driver
+			name:	TITLE				11-11	driver 
+			sense:	driver.n.01
+	12	Marc
+			name:	PERSON				12-13	Marc Surer 
+	13	Surer
+	14	from
+	15	1997
+			name:	DATE				15-17	1997 to 2000 
+	16	to
+	17	2000
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2012 , she became engaged to DTM racer Martin Tomczyk .
+
+
+Treebanked sentence:
+--------------------
+In 2012 , she became engaged to DTM racer Martin Tomczyk . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2012)))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBD became)
+      (ADJP (JJ engaged))
+      (PP (IN to)
+        (NP
+          (NML (NNP DTM) (NN racer))
+          (NNP Martin) (NNP Tomczyk))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	2012
+			name:	DATE				1-1	2012 
+	2	,
+	3	she
+			coref:	IDENT			0	3-3	she 
+	4	became
+			sense:	become.v.01
+			prop:	become.01
+			V		4-4	became 
+			N-ARGM-TMP		0-1	In 2012 
+			N-ARG-A1		3-3	she 
+			N-ARG-A2		5-10	engaged to DTM racer Martin Tomczyk 
+	5	engaged
+			sense:	engaged.s.06
+	6	to
+	7	DTM
+			name:	ORGANIZATION				7-7	DTM 
+	8	racer
+			name:	TITLE				8-8	racer 
+			sense:	racer.n.01
+	9	Martin
+			name:	PERSON				9-10	Martin Tomczyk 
+	10	Tomczyk
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Aside from racing and modelling , she hosts television programs .
+
+
+Treebanked sentence:
+--------------------
+Aside from racing and modelling , she hosts television programs . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (RB Aside)
+      (PP (IN from)
+        (NP (NN racing)
+          (CC and)
+          (NN modelling))))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBZ hosts)
+      (NP (NN television) (NNS programs)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Aside
+			sense:	apart.r.02
+	1	from
+	2	racing
+			sense:	racing.n.01
+	3	and
+	4	modelling
+			sense:	model.n.09
+	5	,
+	6	she
+			coref:	IDENT			0	6-6	she 
+	7	hosts
+			sense:	host.v.01
+			prop:	host.01
+			V		7-7	hosts 
+			N-ARGM-ADV		0-4	Aside from racing and modelling 
+			N-ARG-A0		6-6	she 
+			N-ARG-A1		8-9	television programs 
+	8	television
+			sense:	television.n.01
+	9	programs
+			sense:	broadcast.n.02
+	10	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Christina Surer 
+				1.0-0	She 
+				2.0-0	She 
+				4.3-3	she 
+				5.6-6	she 
+	Chain 1 (IDENT)
+				2.10-10	2004 
+				2.16-16	2004 
+

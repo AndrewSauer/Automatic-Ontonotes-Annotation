@@ -1,0 +1,823 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Lake Hiawatha is located just north of Lake Nokomis in Minneapolis , Minnesota .
+
+
+Treebanked sentence:
+--------------------
+Lake Hiawatha is located just north of Lake Nokomis in Minneapolis , Minnesota . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Lake) (NNP Hiawatha))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (ADVP (RB just) (RB north))
+        (PP (IN of)
+          (NP
+            (NP (NNP Lake) (NNP Nokomis))
+            (PP (IN in)
+              (NP (NNP Minneapolis) (, ,) (NNP Minnesota)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Lake
+			coref:	IDENT			2	0-1	Lake Hiawatha 
+			name:	LOCATION				0-1	Lake Hiawatha 
+	1	Hiawatha
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		3-3	located 
+			N-ARG-A1		0-1	Lake Hiawatha 
+			N-ARGM-LOC		4-12	just north of Lake Nokomis in Minneapolis , Minnesota 
+	4	just
+			sense:	precisely.r.01
+	5	north
+			sense:	north.r.01
+	6	of
+	7	Lake
+			coref:	IDENT			0	7-8	Lake Nokomis 
+			name:	LOCATION				7-8	Lake Nokomis 
+	8	Nokomis
+	9	in
+	10	Minneapolis
+			coref:	IDENT			1	10-10	Minneapolis 
+			name:	CITY				10-10	Minneapolis 
+	11	,
+	12	Minnesota
+			name:	STATE_OR_PROVINCE				12-12	Minnesota 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was purchased by the Minneapolis Park and Recreation Board in 1922 for $ 550,000 .
+
+
+Treebanked sentence:
+--------------------
+It was purchased by the Minneapolis Park and Recreation Board in 1922 for $ 550,000 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN purchased)
+        (PP (IN by)
+          (NP (DT the) (NNP Minneapolis)
+            (NML (NNP Park)
+              (CC and)
+              (NNP Recreation))
+            (NNP Board)))
+        (PP (IN in)
+          (NP
+            (NP (CD 1922))
+            (PP (IN for)
+              (NP ($ $) (CD 550,000)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	purchased
+			sense:	buy.v.01
+			prop:	purchase.01
+			V		2-2	purchased 
+			N-ARG-A1		0-0	It 
+			N-ARG-A0		3-9	by the Minneapolis Park and Recreation Board 
+			N-ARGM-TMP		10-11	in 1922 
+			N-ARG-A3		12-14	for $ 550,000 
+	3	by
+	4	the
+	5	Minneapolis
+			coref:	IDENT			1	5-6	Minneapolis Park 
+			name:	CITY				5-5	Minneapolis 
+	6	Park
+			name:	LOCATION				6-6	Park 
+	7	and
+	8	Recreation
+			name:	ORGANIZATION				8-9	Recreation Board 
+	9	Board
+	10	in
+	11	1922
+			name:	DATE				11-11	1922 
+	12	for
+	13	$
+			name:	MONEY				13-14	$ 550,000 
+	14	550,000
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At that time the lake was a marsh known as Rice Lake , but over four years , the park system transformed the wetland into a lake surrounded by a park .
+
+
+Treebanked sentence:
+--------------------
+At that time the lake was a marsh known as Rice Lake , but over four years , the park system transformed the wetland into a lake surrounded by a park . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (PP (IN At)
+        (NP (DT that) (NN time)))
+      (NP (DT the) (NN lake))
+      (VP (VBD was)
+        (NP
+          (NP (DT a) (NN marsh))
+          (VP (VBN known)
+            (PP (IN as)
+              (NP (NNP Rice) (NNP Lake)))))))
+    (, ,)
+    (CC but)
+    (S
+      (PP (IN over)
+        (NP (CD four) (NNS years)))
+      (, ,)
+      (NP (DT the) (NN park) (NN system))
+      (VP (VBD transformed)
+        (NP (DT the) (NN wetland))
+        (PP (IN into)
+          (NP
+            (NP (DT a) (NN lake))
+            (VP (VBN surrounded)
+              (PP (IN by)
+                (NP (DT a) (NN park))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	that
+	2	time
+			sense:	time.n.01
+	3	the
+			coref:	IDENT			3	3-4	the lake 
+	4	lake
+			sense:	lake.n.01
+	5	was
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	was 
+			N-ARGM-TMP		0-2	At that time 
+			N-ARG-A1		3-4	the lake 
+			N-ARG-A2		6-11	a marsh known as Rice Lake 
+	6	a
+	7	marsh
+			sense:	marsh.n.01
+	8	known
+			sense:	know.v.04
+			prop:	know.01
+			V		8-8	known 
+			N-ARG-A1		6-7	a marsh 
+			N-ARG-A2		9-11	as Rice Lake 
+	9	as
+	10	Rice
+			coref:	IDENT			3	10-11	Rice Lake 
+			name:	LOCATION				10-11	Rice Lake 
+	11	Lake
+	12	,
+	13	but
+	14	over
+	15	four
+			name:	DURATION				15-16	four years 
+	16	years
+			sense:	year.n.01
+	17	,
+	18	the
+	19	park
+			sense:	park.n.01
+	20	system
+			sense:	system.n.01
+	21	transformed
+			sense:	transform.v.02
+			prop:	transform.01
+			V		21-21	transformed 
+			N-ARGM-TMP		14-16	over four years 
+			N-ARG-A0		18-20	the park system 
+			N-ARG-A1		22-23	the wetland 
+			N-ARG-A2		24-30	into a lake surrounded by a park 
+	22	the
+	23	wetland
+			sense:	wetland.n.01
+	24	into
+	25	a
+	26	lake
+			sense:	lake.n.01
+	27	surrounded
+			sense:	surround.v.01
+			prop:	surround.01
+			V		27-27	surrounded 
+			N-ARG-A2		25-26	a lake 
+			N-ARG-A1		28-30	by a park 
+	28	by
+	29	a
+	30	park
+			sense:	park.n.01
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The lake and park have a fishing dock , wading pool , tennis courts , and softball diamonds .
+
+
+Treebanked sentence:
+--------------------
+The lake and park have a fishing dock , wading pool , tennis courts , and softball diamonds . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN lake)
+      (CC and)
+      (NN park))
+    (VP (VBP have)
+      (NP (DT a) (NN fishing) (NN dock))
+      (, ,)
+      (S
+        (VP (VBG wading)
+          (NP
+            (NP (NN pool))
+            (, ,)
+            (NP (NN tennis) (NNS courts))
+            (, ,)
+            (CC and)
+            (NP (NN softball) (NNS diamonds))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	lake
+			sense:	lake.n.01
+	2	and
+	3	park
+			sense:	park.n.01
+	4	have
+			sense:	have.v.02
+			prop:	have.03
+			V		4-4	have 
+			N-ARG-A0		0-3	The lake and park 
+			N-ARG-A1		5-17	a fishing dock , wading pool , tennis courts , and softball diamonds 
+	5	a
+	6	fishing
+			sense:	fishing.n.01
+	7	dock
+			sense:	pier.n.01
+	8	,
+	9	wading
+			sense:	wade.v.01
+			prop:	wade.01
+			V		9-9	wading 
+			N-ARG-A0		10-10	pool 
+	10	pool
+			sense:	pool.n.01
+	11	,
+	12	tennis
+			sense:	tennis.n.01
+	13	courts
+			sense:	court.n.04
+	14	,
+	15	and
+	16	softball
+			sense:	softball.n.02
+	17	diamonds
+			sense:	ball_field.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+There is a recreation center that hosts activities .
+
+
+Treebanked sentence:
+--------------------
+There is a recreation center that hosts activities . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN recreation) (NN center))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ hosts)
+              (NP (NNS activities)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	There
+	1	is
+			sense:	exist.v.01
+			prop:	be.02
+			V		1-1	is 
+			N-ARG-A1		2-7	a recreation center that hosts activities 
+	2	a
+	3	recreation
+			sense:	diversion.n.01
+	4	center
+			sense:	center.n.03
+	5	that
+	6	hosts
+			sense:	host.v.01
+			prop:	host.01
+			V		6-6	hosts 
+			N-ARG-A0		2-4	a recreation center 
+			R-ARG-A0		5-5	that 
+			N-ARG-A1		7-7	activities 
+	7	activities
+			sense:	activity.n.01
+	8	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The lake borders a municipal golf course .
+
+
+Treebanked sentence:
+--------------------
+The lake borders a municipal golf course . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN lake))
+    (VP (VBZ borders)
+      (NP (DT a) (JJ municipal) (NN golf) (NN course)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-1	The lake 
+	1	lake
+			sense:	lake.n.01
+	2	borders
+			sense:	border.v.05
+			prop:	border.01
+			V		2-2	borders 
+			N-ARG-A1		0-1	The lake 
+			N-ARG-A2		3-6	a municipal golf course 
+	3	a
+	4	municipal
+			sense:	municipal.a.01
+	5	golf
+			sense:	golf.n.01
+	6	course
+			sense:	course.n.09
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In the winter the park sets up ice and hockey rinks .
+
+
+Treebanked sentence:
+--------------------
+In the winter the park sets up ice and hockey rinks . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NN winter)))
+    (NP (DT the) (NN park))
+    (VP (VBZ sets)
+      (PRT (RP up))
+      (NP
+        (NML (NN ice)
+          (CC and)
+          (NN hockey))
+        (NNS rinks)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	the
+	2	winter
+			name:	DATE				2-2	winter 
+			sense:	winter.n.01
+	3	the
+	4	park
+			sense:	park.n.01
+	5	sets
+			sense:	put.v.01
+			prop:	set.03
+			V		5-5	sets 
+			N-ARGM-TMP		0-2	In the winter 
+			N-ARG-A0		3-4	the park 
+			N-ARG-A1		7-10	ice and hockey rinks 
+	6	up
+	7	ice
+			sense:	ice_rink.n.01
+	8	and
+	9	hockey
+			sense:	ice_hockey.n.01
+	10	rinks
+			sense:	rink.n.01
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+There is a bike and walking path starting at Lake Hiawatha which veers onto Lake Nokomis or winds down the Minnehaha Creek right to the mouth of the Minnehaha Falls .
+
+
+Treebanked sentence:
+--------------------
+There is a bike and walking path starting at Lake Hiawatha which veers onto Lake Nokomis or winds down the Minnehaha Creek right to the mouth of the Minnehaha Falls . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a)
+          (NML (NN bike)
+            (CC and)
+            (VBG walking))
+          (NN path))
+        (VP (VBG starting)
+          (PP (IN at)
+            (NP
+              (NP (NNP Lake) (NNP Hiawatha))
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP
+                    (VP (VBZ veers)
+                      (PP (IN onto)
+                        (NP (NNP Lake) (NNP Nokomis))))
+                    (CC or)
+                    (VP (VBZ winds)
+                      (PRT (RP down))
+                      (NP (DT the) (NNP Minnehaha) (NNP Creek))
+                      (PP
+                        (ADVP (RB right))
+                        (IN to)
+                        (NP
+                          (NP (DT the) (NN mouth))
+                          (PP (IN of)
+                            (NP (DT the) (NNP Minnehaha) (NNP Falls))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	There
+	1	is
+			sense:	exist.v.01
+			prop:	be.02
+			V		1-1	is 
+			N-ARG-A1		2-29	a bike and walking path starting at Lake Hiawatha which veers onto Lake Nokomis or winds down the Minnehaha Creek right to the mouth of the Minnehaha Falls 
+	2	a
+	3	bike
+			sense:	bicycle.n.01
+	4	and
+	5	walking
+			sense:	walk.v.01
+			prop:	walking.01
+			V		5-5	walking 
+	6	path
+			sense:	path.n.02
+	7	starting
+			sense:	begin.v.02
+			prop:	start.01
+			V		7-7	starting 
+			N-ARG-A1		2-6	a bike and walking path 
+			N-ARGM-LOC		8-10	at Lake Hiawatha 
+	8	at
+	9	Lake
+			name:	LOCATION				9-10	Lake Hiawatha 
+	10	Hiawatha
+	11	which
+	12	veers
+			sense:	swerve.v.01
+			prop:	veer.01
+			V		12-12	veers 
+			N-ARG-A0		2-10	a bike and walking path starting at Lake Hiawatha 
+			R-ARG-A0		11-11	which 
+			N-ARG-A1		13-15	onto Lake Nokomis 
+	13	onto
+	14	Lake
+			coref:	IDENT			0	14-15	Lake Nokomis 
+			name:	LOCATION				14-15	Lake Nokomis 
+	15	Nokomis
+	16	or
+	17	winds
+			sense:	weave.v.04
+			prop:	wind.01
+			V		17-17	winds 
+			N-ARG-A0		2-10	a bike and walking path starting at Lake Hiawatha 
+			R-ARG-A0		11-11	which 
+			N-ARGM-DIR		18-21	down the Minnehaha Creek 
+			N-ARGM-GOL		22-29	right to the mouth of the Minnehaha Falls 
+	18	down
+	19	the
+			coref:	IDENT			5	19-21	the Minnehaha Creek 
+	20	Minnehaha
+			name:	CITY				20-20	Minnehaha 
+	21	Creek
+			name:	LOCATION				21-21	Creek 
+	22	right
+			sense:	right.r.01
+	23	to
+	24	the
+	25	mouth
+			sense:	mouth.n.04
+	26	of
+	27	the
+			coref:	IDENT			4	27-29	the Minnehaha Falls 
+	28	Minnehaha
+			name:	CITY				28-28	Minnehaha 
+	29	Falls
+			name:	CAUSE_OF_DEATH				29-29	Falls 
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Lake Hiawatha is one of the few lakes through which Minnehaha Creek flows , and the last one before it reaches Minnehaha Falls and then the Mississippi River .
+
+
+Treebanked sentence:
+--------------------
+Lake Hiawatha is one of the few lakes through which Minnehaha Creek flows , and the last one before it reaches Minnehaha Falls and then the Mississippi River . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Lake) (NNP Hiawatha))
+    (VP (VBZ is)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (DT the) (JJ few) (NNS lakes))
+              (SBAR
+                (WHPP (IN through)
+                  (WHNP (WDT which)))
+                (S
+                  (NP (NNP Minnehaha) (NNP Creek))
+                  (VP (VBZ flows)))))
+            (, ,)
+            (CC and)
+            (NP
+              (NP (DT the) (JJ last) (NN one))
+              (SBAR (IN before)
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ reaches)
+                    (NP
+                      (NP (NNP Minnehaha) (NNP Falls))
+                      (CC and)
+                      (ADVP (RB then))
+                      (NP (DT the) (NNP Mississippi) (NN River)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Lake
+			coref:	IDENT			2	0-1	Lake Hiawatha 
+			name:	LOCATION				0-1	Lake Hiawatha 
+	1	Hiawatha
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Lake Hiawatha 
+			N-ARG-A2		3-27	one of the few lakes through which Minnehaha Creek flows , and the last one before it reaches Minnehaha Falls and then the Mississippi River 
+	3	one
+			name:	NUMBER				3-3	one 
+	4	of
+	5	the
+	6	few
+			sense:	few.a.01
+	7	lakes
+			sense:	lake.n.01
+	8	through
+	9	which
+	10	Minnehaha
+			coref:	IDENT			5	10-11	Minnehaha Creek 
+			name:	CITY				10-10	Minnehaha 
+	11	Creek
+			name:	LOCATION				11-11	Creek 
+	12	flows
+			sense:	run.v.06
+			prop:	flow.01
+			V		12-12	flows 
+			N-ARGM-DIR		8-9	through which 
+			N-ARG-A1		10-11	Minnehaha Creek 
+	13	,
+	14	and
+	15	the
+	16	last
+			sense:	last.a.02
+	17	one
+			name:	NUMBER				17-17	one 
+			sense:	one.n.01
+	18	before
+	19	it
+			coref:	IDENT			5	19-19	it 
+	20	reaches
+			sense:	reach.v.01
+			prop:	reach.01
+			V		20-20	reaches 
+			N-ARG-A0		19-19	it 
+			N-ARG-A1		21-27	Minnehaha Falls and then the Mississippi River 
+	21	Minnehaha
+			coref:	IDENT			4	21-22	Minnehaha Falls 
+			name:	CITY				21-21	Minnehaha 
+	22	Falls
+			name:	CAUSE_OF_DEATH				22-22	Falls 
+	23	and
+	24	then
+			sense:	then.r.01
+	25	the
+	26	Mississippi
+			name:	STATE_OR_PROVINCE				26-26	Mississippi 
+	27	River
+			name:	TITLE				27-27	River 
+			sense:	river.n.01
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Friends of Lake Hiawatha is a community environmental action group that organizes volunteer efforts to clean the lake and park .
+
+
+Treebanked sentence:
+--------------------
+Friends of Lake Hiawatha is a community environmental action group that organizes volunteer efforts to clean the lake and park . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNS Friends))
+      (PP (IN of)
+        (NP (NNP Lake) (NNP Hiawatha))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN community)
+          (NML (JJ environmental) (NN action))
+          (NN group))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ organizes)
+              (NP (NN volunteer) (NNS efforts))
+              (S
+                (VP (TO to)
+                  (VP (VB clean)
+                    (NP (DT the) (NN lake)
+                      (CC and)
+                      (NN park))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Friends
+			sense:	supporter.n.01
+	1	of
+	2	Lake
+			coref:	IDENT			2	2-3	Lake Hiawatha 
+			name:	LOCATION				2-3	Lake Hiawatha 
+	3	Hiawatha
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	Friends of Lake Hiawatha 
+			N-ARG-A2		5-19	a community environmental action group that organizes volunteer efforts to clean the lake and park 
+	5	a
+	6	community
+			sense:	community.n.01
+	7	environmental
+			sense:	environmental.a.02
+	8	action
+			sense:	action.n.01
+	9	group
+			sense:	group.n.01
+	10	that
+	11	organizes
+			sense:	organize.v.05
+			prop:	organize.01
+			V		11-11	organizes 
+			N-ARG-A0		5-9	a community environmental action group 
+			R-ARG-A0		10-10	that 
+			N-ARG-A1		12-19	volunteer efforts to clean the lake and park 
+	12	volunteer
+			sense:	volunteer.n.02
+	13	efforts
+			sense:	attempt.n.01
+	14	to
+	15	clean
+			sense:	clean.v.01
+			prop:	clean.01
+			V		15-15	clean 
+			N-ARG-A1		16-19	the lake and park 
+	16	the
+			coref:	IDENT			3	16-17	the lake 
+	17	lake
+			sense:	lake.n.01
+	18	and
+	19	park
+			sense:	park.n.01
+	20	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.7-8	Lake Nokomis 
+				7.14-15	Lake Nokomis 
+	Chain 1 (IDENT)
+				1.5-6	Minneapolis Park 
+				0.10-10	Minneapolis 
+	Chain 2 (IDENT)
+				0.0-1	Lake Hiawatha 
+				1.0-0	It 
+				8.0-1	Lake Hiawatha 
+				9.2-3	Lake Hiawatha 
+	Chain 3 (IDENT)
+				2.10-11	Rice Lake 
+				2.3-4	the lake 
+				5.0-1	The lake 
+				9.16-17	the lake 
+	Chain 4 (IDENT)
+				7.27-29	the Minnehaha Falls 
+				8.21-22	Minnehaha Falls 
+	Chain 5 (IDENT)
+				7.19-21	the Minnehaha Creek 
+				8.10-11	Minnehaha Creek 
+				8.19-19	it 
+

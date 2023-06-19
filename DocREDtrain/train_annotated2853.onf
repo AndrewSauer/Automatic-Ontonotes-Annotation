@@ -1,0 +1,659 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Melitta Breznik ( born Kapfenberg 1961 ) is a senior doctor , specializing in psychiatry and a writer of novels and short stories .
+
+
+Treebanked sentence:
+--------------------
+Melitta Breznik ( born Kapfenberg 1961 ) is a senior doctor , specializing in psychiatry and a writer of novels and short stories . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Melitta) (NNP Breznik))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (NNP Kapfenberg) (CD 1961)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (JJ senior) (NN doctor))
+      (, ,)
+      (S
+        (VP (VBG specializing)
+          (PP (IN in)
+            (NP
+              (NP (NN psychiatry))
+              (CC and)
+              (NP
+                (NP (DT a) (NN writer))
+                (PP (IN of)
+                  (NP
+                    (NP (NNS novels))
+                    (CC and)
+                    (NP (JJ short) (NNS stories))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Melitta
+			coref:	IDENT			0	0-1	Melitta Breznik 
+			name:	PERSON				0-1	Melitta Breznik 
+	1	Breznik
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Melitta Breznik 
+			N-ARGM-TMP		4-5	Kapfenberg 1961 
+	4	Kapfenberg
+	5	1961
+			name:	DATE				5-5	1961 
+	6	)
+	7	is
+			sense:	be.v.02
+			prop:	be.01
+			V		7-7	is 
+			N-ARG-A1		0-6	Melitta Breznik ( born Kapfenberg 1961 ) 
+			N-ARG-A2		8-10	a senior doctor 
+			N-ARGM-ADV		12-22	specializing in psychiatry and a writer of novels and short stories 
+	8	a
+	9	senior
+			sense:	senior.a.01
+	10	doctor
+			name:	TITLE				10-10	doctor 
+			sense:	doctor.n.01
+	11	,
+	12	specializing
+			sense:	specialize.v.01
+			prop:	specialize.01
+			V		12-12	specializing 
+			N-ARG-A0		8-10	a senior doctor 
+			N-ARG-A1		13-14	in psychiatry 
+	13	in
+	14	psychiatry
+			sense:	psychiatry.n.01
+	15	and
+	16	a
+	17	writer
+			name:	TITLE				17-17	writer 
+			sense:	writer.n.01
+	18	of
+	19	novels
+			sense:	novel.n.01
+	20	and
+	21	short
+			sense:	short.a.02
+	22	stories
+			sense:	story.n.02
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She was born in southern Austria , though most of her professional life has been spent in Switzerland .
+
+
+Treebanked sentence:
+--------------------
+She was born in southern Austria , though most of her professional life has been spent in Switzerland . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (JJ southern) (NNP Austria)))
+        (, ,)
+        (SBAR (IN though)
+          (S
+            (NP
+              (NP (JJS most))
+              (PP (IN of)
+                (NP (PRP$ her) (JJ professional) (NN life))))
+            (VP (VBZ has)
+              (VP (VBN been)
+                (VP (VBN spent)
+                  (PP (IN in)
+                    (NP (NNP Switzerland))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	She 
+			N-ARGM-LOC		3-5	in southern Austria 
+			N-ARGM-ADV		7-17	though most of her professional life has been spent in Switzerland 
+	3	in
+	4	southern
+			sense:	southern.a.03
+	5	Austria
+			name:	COUNTRY				5-5	Austria 
+	6	,
+	7	though
+	8	most
+			sense:	most.a.02
+	9	of
+	10	her
+			coref:	IDENT			0	10-10	her 
+	11	professional
+			sense:	professional.a.01
+	12	life
+			sense:	life.n.05
+	13	has
+			sense:	have.v.01
+			prop:	have.01
+			V		13-13	has 
+	14	been
+			sense:	be.v.01
+			prop:	be.03
+			V		14-14	been 
+	15	spent
+			sense:	spend.v.01
+			prop:	spend.02
+			V		15-15	spent 
+			N-ARG-A1		8-12	most of her professional life 
+			N-ARGM-LOC		16-17	in Switzerland 
+	16	in
+	17	Switzerland
+			name:	COUNTRY				17-17	Switzerland 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Melitta Breznik studied medicine in Graz and Innsbruck which is where she obtained her doctorate .
+
+
+Treebanked sentence:
+--------------------
+Melitta Breznik studied medicine in Graz and Innsbruck which is where she obtained her doctorate . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Melitta) (NNP Breznik))
+    (VP (VBD studied)
+      (NP
+        (NP
+          (NP (NN medicine))
+          (PP (IN in)
+            (NP (NNP Graz)
+              (CC and)
+              (NNP Innsbruck))))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ is)
+              (SBAR
+                (WHADVP (WRB where))
+                (S
+                  (NP (PRP she))
+                  (VP (VBD obtained)
+                    (NP (PRP$ her) (NN doctorate))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Melitta
+			coref:	IDENT			0	0-1	Melitta Breznik 
+			name:	PERSON				0-1	Melitta Breznik 
+	1	Breznik
+	2	studied
+			sense:	study.v.02
+			prop:	study.01
+			V		2-2	studied 
+			N-ARG-A0		0-1	Melitta Breznik 
+			N-ARG-A1		3-3	medicine 
+			N-ARGM-LOC		4-14	in Graz and Innsbruck which is where she obtained her doctorate 
+	3	medicine
+			sense:	medicine.n.03
+	4	in
+	5	Graz
+			name:	CITY				5-5	Graz 
+	6	and
+	7	Innsbruck
+			name:	CITY				7-7	Innsbruck 
+	8	which
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		5-7	Graz and Innsbruck 
+			R-ARG-A1		8-8	which 
+			N-ARG-A2		10-14	where she obtained her doctorate 
+	10	where
+	11	she
+			coref:	IDENT			0	11-11	she 
+	12	obtained
+			sense:	obtain.v.01
+			prop:	obtain.01
+			V		12-12	obtained 
+			N-ARGM-LOC		10-10	where 
+			N-ARG-A0		11-11	she 
+			N-ARG-A1		13-14	her doctorate 
+	13	her
+			coref:	IDENT			0	13-13	her 
+	14	doctorate
+			sense:	doctors_degree.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+She was a senior doctor at the Psychiatric Clinic in Cazis ( south of Chur ) , at the Private Psychiatric Clinic at the Zürichberg and at the Hohenegg Psychiatric Clinic in Meilen .
+
+
+Treebanked sentence:
+--------------------
+She was a senior doctor at the Psychiatric Clinic in Cazis ( south of Chur ) , at the Private Psychiatric Clinic at the Zürichberg and at the Hohenegg Psychiatric Clinic in Meilen . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ senior) (NN doctor))
+        (PP
+          (PP (IN at)
+            (NP
+              (NP (DT the) (NNP Psychiatric) (NNP Clinic))
+              (PP (IN in)
+                (NP (NNP Cazis))))
+            (PRN (-LRB- -LRB-)
+              (ADVP (RB south)
+                (PP (IN of)
+                  (NP (NNP Chur))))
+              (-RRB- -RRB-)))
+          (, ,)
+          (PP (IN at)
+            (NP
+              (NP (DT the) (JJ Private) (NNP Psychiatric) (NNP Clinic))
+              (PP (IN at)
+                (NP (DT the) (NNP Zürichberg)))))
+          (CC and)
+          (PP (IN at)
+            (NP
+              (NP (DT the) (NNP Hohenegg) (NNP Psychiatric) (NNP Clinic))
+              (PP (IN in)
+                (NP (NNP Meilen))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	She
+			coref:	IDENT			0	0-0	She 
+	1	was
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	She 
+			N-ARG-A2		2-32	a senior doctor at the Psychiatric Clinic in Cazis ( south of Chur ) , at the Private Psychiatric Clinic at the Zürichberg and at the Hohenegg Psychiatric Clinic in Meilen 
+	2	a
+	3	senior
+			sense:	senior.a.01
+	4	doctor
+			name:	TITLE				4-4	doctor 
+			sense:	doctor.n.01
+	5	at
+	6	the
+	7	Psychiatric
+			name:	ORGANIZATION				7-8	Psychiatric Clinic 
+	8	Clinic
+	9	in
+	10	Cazis
+	11	(
+	12	south
+			sense:	south.r.01
+	13	of
+	14	Chur
+			name:	CITY				14-14	Chur 
+	15	)
+	16	,
+	17	at
+	18	the
+	19	Private
+			name:	ORGANIZATION				19-21	Private Psychiatric Clinic 
+			sense:	private.a.01
+	20	Psychiatric
+	21	Clinic
+	22	at
+	23	the
+	24	Zürichberg
+			name:	LOCATION				24-24	Zürichberg 
+	25	and
+	26	at
+	27	the
+	28	Hohenegg
+			name:	ORGANIZATION				28-30	Hohenegg Psychiatric Clinic 
+	29	Psychiatric
+	30	Clinic
+	31	in
+	32	Meilen
+			name:	CITY				32-32	Meilen 
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Between 2004 and 2009 she had her own medical business focused on psychiatry and psychotherapy at Chur .
+
+
+Treebanked sentence:
+--------------------
+Between 2004 and 2009 she had her own medical business focused on psychiatry and psychotherapy at Chur . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Between)
+      (NP (CD 2004)
+        (CC and)
+        (CD 2009)))
+    (NP (PRP she))
+    (VP (VBD had)
+      (NP
+        (NP (PRP$ her) (JJ own) (JJ medical) (NN business))
+        (SBAR
+          (S
+            (VP (VBD focused)
+              (PP (IN on)
+                (NP (NN psychiatry)
+                  (CC and)
+                  (NN psychotherapy)))
+              (PP (IN at)
+                (NP (NNP Chur))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Between
+	1	2004
+			name:	DATE				1-1	2004 
+	2	and
+	3	2009
+			name:	DATE				3-3	2009 
+	4	she
+			coref:	IDENT			0	4-4	she 
+	5	had
+			sense:	have.v.01
+			prop:	have.03
+			V		5-5	had 
+			N-ARGM-TMP		0-3	Between 2004 and 2009 
+			N-ARG-A0		4-4	she 
+			N-ARG-A1		6-16	her own medical business focused on psychiatry and psychotherapy at Chur 
+	6	her
+			coref:	IDENT			0	6-6	her 
+	7	own
+			sense:	own.s.01
+	8	medical
+			sense:	medical.a.01
+	9	business
+			sense:	business.n.01
+	10	focused
+			sense:	concentrate.v.02
+			prop:	focus.01
+			V		10-10	focused 
+			N-ARG-A1		6-9	her own medical business 
+			N-ARG-A2		11-16	on psychiatry and psychotherapy at Chur 
+	11	on
+	12	psychiatry
+			sense:	psychiatry.n.01
+	13	and
+	14	psychotherapy
+			sense:	psychotherapy.n.01
+	15	at
+	16	Chur
+			name:	CITY				16-16	Chur 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Most recently she headed up the Anthroposophic Psychosomatic Rehabilitation Clinic at Badenweiler on the south - western tip of Germany .
+
+
+Treebanked sentence:
+--------------------
+Most recently she headed up the Anthroposophic Psychosomatic Rehabilitation Clinic at Badenweiler on the south - western tip of Germany . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RBS Most) (RB recently))
+    (NP (PRP she))
+    (VP (VBD headed)
+      (PRT (RP up))
+      (NP (DT the)
+        (NML (NNP Anthroposophic) (NNP Psychosomatic))
+        (NNP Rehabilitation) (NNP Clinic))
+      (PP (IN at)
+        (NP (NNP Badenweiler)))
+      (PP (IN on)
+        (NP
+          (NP (DT the)
+            (NML (NN south) (HYPH -) (JJ western))
+            (NN tip))
+          (PP (IN of)
+            (NP (NNP Germany))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Most
+			sense:	most.r.02
+	1	recently
+			name:	DATE				1-1	recently 
+			sense:	recently.r.01
+	2	she
+			coref:	IDENT			0	2-2	she 
+	3	headed
+			sense:	head.v.02
+			prop:	head.01
+			V		3-3	headed 
+			N-ARGM-TMP		0-1	Most recently 
+			N-ARG-A0		2-2	she 
+			N-ARG-A1		5-19	the Anthroposophic Psychosomatic Rehabilitation Clinic at Badenweiler on the south - western tip of Germany 
+	4	up
+	5	the
+	6	Anthroposophic
+			name:	ORGANIZATION				6-9	Anthroposophic Psychosomatic Rehabilitation Clinic 
+	7	Psychosomatic
+	8	Rehabilitation
+	9	Clinic
+	10	at
+	11	Badenweiler
+	12	on
+	13	the
+	14	south
+			sense:	south.n.03
+	15	-
+	16	western
+			sense:	western.s.03
+	17	tip
+			sense:	tip.n.01
+	18	of
+	19	Germany
+			name:	COUNTRY				19-19	Germany 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Melitta Breznik in the author of novels and short stories , which are influenced by family and professional experience of psychiatry and which have been critically praised for their precise style .
+
+
+Treebanked sentence:
+--------------------
+Melitta Breznik in the author of novels and short stories , which are influenced by family and professional experience of psychiatry and which have been critically praised for their precise style . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP (NNP Melitta) (NNP Breznik))
+    (PP (IN in)
+      (NP
+        (NP
+          (NP (DT the) (NN author))
+          (PP (IN of)
+            (NP
+              (NP (NNS novels))
+              (CC and)
+              (NP (JJ short) (NNS stories)))))
+        (, ,)
+        (SBAR
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBP are)
+                (VP (VBN influenced)
+                  (PP (IN by)
+                    (NP
+                      (NP
+                        (UCP (NN family)
+                          (CC and)
+                          (JJ professional))
+                        (NN experience))
+                      (PP (IN of)
+                        (NP (NN psychiatry)))))))))
+          (CC and)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBP have)
+                (VP (VBN been)
+                  (ADVP (RB critically))
+                  (VP (VBN praised)
+                    (PP (IN for)
+                      (NP (PRP$ their) (JJ precise) (NN style)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Melitta
+			coref:	IDENT			0	0-1	Melitta Breznik 
+			name:	PERSON				0-1	Melitta Breznik 
+	1	Breznik
+	2	in
+	3	the
+	4	author
+			name:	TITLE				4-4	author 
+			sense:	writer.n.01
+	5	of
+	6	novels
+			sense:	novel.n.01
+	7	and
+	8	short
+			sense:	short.a.01
+	9	stories
+			sense:	story.n.02
+	10	,
+	11	which
+	12	are
+			sense:	be.v.01
+			prop:	be.03
+			V		12-12	are 
+	13	influenced
+			sense:	determine.v.02
+			prop:	influence.01
+			V		13-13	influenced 
+			N-ARG-A1		6-9	novels and short stories 
+			R-ARG-A1		11-11	which 
+			N-ARG-A0		14-20	by family and professional experience of psychiatry 
+	14	by
+	15	family
+			sense:	family.n.02
+	16	and
+	17	professional
+			sense:	professional.a.01
+	18	experience
+			sense:	experience.n.01
+	19	of
+	20	psychiatry
+			sense:	psychiatry.n.01
+	21	and
+	22	which
+	23	have
+			sense:	have.v.01
+			prop:	have.01
+			V		23-23	have 
+	24	been
+			sense:	be.v.01
+			prop:	be.03
+			V		24-24	been 
+	25	critically
+			sense:	critically.r.01
+	26	praised
+			sense:	praise.v.01
+			prop:	praise.01
+			V		26-26	praised 
+			N-ARG-A1		6-9	novels and short stories 
+			R-ARG-A1		22-22	which 
+			N-ARG-A2		27-30	for their precise style 
+	27	for
+	28	their
+	29	precise
+			sense:	accurate.s.02
+	30	style
+			sense:	expressive_style.n.01
+	31	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Melitta Breznik 
+				1.0-0	She 
+				1.10-10	her 
+				2.0-1	Melitta Breznik 
+				2.11-11	she 
+				2.13-13	her 
+				3.0-0	She 
+				4.4-4	she 
+				4.6-6	her 
+				5.2-2	she 
+				6.0-1	Melitta Breznik 
+

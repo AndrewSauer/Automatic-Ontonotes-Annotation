@@ -1,0 +1,691 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" In the Mood " is a popular big band - era # 1 hit recorded by American bandleader Glenn Miller .
+
+
+Treebanked sentence:
+--------------------
+" In the Mood " is a popular big band - era # 1 hit recorded by American bandleader Glenn Miller . 
+
+Tree:
+-----
+(ROOT
+  (S (`` ")
+    (PP (IN In)
+      (NP (DT the) (NNP Mood)))
+    (NP ('' "))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ popular) (JJ big)
+          (NML (NN band) (HYPH -) (NN era))
+          (NML (NN #) (CD 1))
+          (NN hit))
+        (VP (VBN recorded)
+          (PP (IN by)
+            (NP
+              (NML (JJ American) (NN bandleader))
+              (NNP Glenn) (NNP Miller))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	In
+	2	the
+			coref:	IDENT			2	2-3	the Mood 
+	3	Mood
+	4	"
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	" In the Mood " 
+			N-ARG-A2		6-20	a popular big band - era # 1 hit recorded by American bandleader Glenn Miller 
+	6	a
+	7	popular
+			sense:	popular.a.01
+	8	big
+			sense:	large.a.01
+	9	band
+			sense:	dance_band.n.01
+	10	-
+	11	era
+			sense:	era.n.01
+	12	#
+			coref:	IDENT			0	12-13	# 1 
+			name:	MONEY				12-13	# 1 
+	13	1
+	14	hit
+			sense:	hit.n.03
+	15	recorded
+			sense:	record.v.01
+			prop:	record.01
+			V		15-15	recorded 
+			N-ARG-A1		6-14	a popular big band - era # 1 hit 
+			N-ARG-A0		16-20	by American bandleader Glenn Miller 
+	16	by
+	17	American
+			name:	NATIONALITY				17-17	American 
+	18	bandleader
+			sense:	bandleader.n.01
+	19	Glenn
+			name:	PERSON				19-20	Glenn Miller 
+	20	Miller
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It topped the charts for 13 straight weeks in 1940 in the U.S. and one year later was featured in the movie Sun Valley Serenade .
+
+
+Treebanked sentence:
+--------------------
+It topped the charts for 13 straight weeks in 1940 in the U.S. and one year later was featured in the movie Sun Valley Serenade . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBD topped)
+        (NP (DT the) (NNS charts))
+        (PP (IN for)
+          (NP (CD 13)))
+        (PP (RB straight)
+          (NP
+            (NP (NNS weeks))
+            (PP (IN in)
+              (NP
+                (NP (CD 1940))
+                (PP (IN in)
+                  (NP (DT the) (NNP U.S.))))))))
+      (CC and)
+      (ADVP
+        (NP (CD one) (NN year))
+        (RBR later))
+      (VP (VBD was)
+        (VP (VBN featured)
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN movie))
+              (NP (NNP Sun) (NNP Valley) (NNP Serenade)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			0	0-0	It 
+	1	topped
+			sense:	top.v.03
+			prop:	top.02
+			V		1-1	topped 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-3	the charts 
+			N-ARGM-TMP		4-7	for 13 straight weeks 
+			N-ARGM-TMP		8-9	in 1940 
+			N-ARGM-LOC		10-12	in the U.S. 
+	2	the
+	3	charts
+			sense:	chart.n.01
+	4	for
+	5	13
+			name:	NUMBER				5-5	13 
+	6	straight
+			sense:	directly.r.01
+	7	weeks
+			name:	DATE				7-9	weeks in 1940 
+			sense:	week.n.01
+	8	in
+	9	1940
+	10	in
+	11	the
+	12	U.S.
+			name:	COUNTRY				12-12	U.S. 
+	13	and
+	14	one
+			name:	DATE				14-16	one year later 
+	15	year
+			sense:	year.n.01
+	16	later
+			sense:	recently.r.01
+	17	was
+			sense:	be.v.01
+			prop:	be.03
+			V		17-17	was 
+	18	featured
+			sense:	have.v.02
+			prop:	feature.01
+			V		18-18	featured 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		14-16	one year later 
+			N-ARG-A2		19-24	in the movie Sun Valley Serenade 
+	19	in
+	20	the
+	21	movie
+			sense:	movie.n.01
+	22	Sun
+			name:	CITY				22-23	Sun Valley 
+	23	Valley
+	24	Serenade
+			name:	LOCATION				24-24	Serenade 
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" In the Mood " is based on the composition " Tar Paper Stomp " by Wingy Manone .
+
+
+Treebanked sentence:
+--------------------
+" In the Mood " is based on the composition " Tar Paper Stomp " by Wingy Manone . 
+
+Tree:
+-----
+(ROOT
+  (S (`` ")
+    (PP (IN In)
+      (NP (DT the) (NNP Mood)))
+    (NP ('' "))
+    (VP (VBZ is)
+      (VP (VBN based)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN composition))
+            (`` ")
+            (NP (NNP Tar) (NNP Paper) (NNP Stomp))
+            ('' ")))
+        (PP (IN by)
+          (NP (NNP Wingy) (NNP Manone)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	In
+	2	the
+			coref:	IDENT			2	2-3	the Mood 
+	3	Mood
+	4	"
+	5	is
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	is 
+	6	based
+			sense:	establish.v.08
+			prop:	base.02
+			V		6-6	based 
+			N-ARG-A1		0-4	" In the Mood " 
+			N-ARG-A2		7-17	on the composition " Tar Paper Stomp " by Wingy Manone 
+	7	on
+	8	the
+	9	composition
+			sense:	musical_composition.n.01
+	10	"
+	11	Tar
+			name:	MISC				11-13	Tar Paper Stomp 
+	12	Paper
+	13	Stomp
+	14	"
+	15	by
+	16	Wingy
+			name:	PERSON				16-17	Wingy Manone 
+	17	Manone
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The first recording under the name " In the Mood " was released by Edgar Hayes & His Orchestra in 1938 ( see " Origins " below ) .
+
+
+Treebanked sentence:
+--------------------
+The first recording under the name " In the Mood " was released by Edgar Hayes & His Orchestra in 1938 ( see " Origins " below ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ first) (NN recording))
+      (PP (IN under)
+        (NP
+          (NP (DT the) (NN name))
+          (`` ")
+          (PP (IN In)
+            (NP (DT the) (NNP Mood)))
+          ('' "))))
+    (VP (VBD was)
+      (VP (VBN released)
+        (PP (IN by)
+          (NP
+            (NP (NNP Edgar) (NNP Hayes))
+            (CC &)
+            (NP (PRP$ His) (NNP Orchestra))))
+        (PP (IN in)
+          (NP (CD 1938)))
+        (PRN (-LRB- -LRB-)
+          (S
+            (VP (VB see)
+              (S ('' ")
+                (NP (NNPS Origins))
+                ('' "))
+              (ADVP (RB below))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	first
+			name:	ORDINAL				1-1	first 
+			sense:	first.a.01
+	2	recording
+			sense:	recording.n.01
+	3	under
+	4	the
+	5	name
+			sense:	name.n.01
+	6	"
+	7	In
+	8	the
+			coref:	IDENT			2	8-9	the Mood 
+	9	Mood
+	10	"
+	11	was
+			sense:	be.v.01
+			prop:	be.03
+			V		11-11	was 
+	12	released
+			sense:	publish.v.02
+			prop:	release.01
+			V		12-12	released 
+			N-ARG-A1		0-10	The first recording under the name " In the Mood " 
+			N-ARG-A0		13-18	by Edgar Hayes & His Orchestra 
+			N-ARGM-TMP		19-20	in 1938 
+			N-ARGM-ADV		21-27	( see " Origins " below ) 
+	13	by
+	14	Edgar
+			name:	PERSON				14-15	Edgar Hayes 
+	15	Hayes
+	16	&
+	17	His
+	18	Orchestra
+	19	in
+	20	1938
+			name:	DATE				20-20	1938 
+	21	(
+	22	see
+			sense:	see.v.01
+			prop:	see.01
+			V		22-22	see 
+			N-ARG-A1		23-25	" Origins " 
+			N-ARGM-LOC		26-26	below 
+	23	"
+	24	Origins
+			name:	MISC				24-24	Origins 
+	25	"
+	26	below
+			sense:	below.r.03
+	27	)
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1983 , the Glenn Miller recording from 1939 was inducted into the Grammy Hall of Fame .
+
+
+Treebanked sentence:
+--------------------
+In 1983 , the Glenn Miller recording from 1939 was inducted into the Grammy Hall of Fame . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1983)))
+    (, ,)
+    (NP
+      (NP (DT the) (NNP Glenn) (NNP Miller))
+      (VP (VBG recording)
+        (PP (IN from)
+          (NP (CD 1939)))))
+    (VP (VBD was)
+      (VP (VBN inducted)
+        (PP (IN into)
+          (NP
+            (NP (DT the) (NNP Grammy) (NNP Hall))
+            (PP (IN of)
+              (NP (NNP Fame)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1983
+			name:	DATE				1-1	1983 
+	2	,
+	3	the
+	4	Glenn
+			name:	PERSON				4-5	Glenn Miller 
+	5	Miller
+	6	recording
+			sense:	record.v.02
+			prop:	recording.01
+			V		6-6	recording 
+			N-ARG-A0		4-5	Glenn Miller 
+			N-ARGM-TMP		7-8	from 1939 
+	7	from
+	8	1939
+			coref:	IDENT			1	8-8	1939 
+			name:	DATE				8-8	1939 
+	9	was
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	was 
+	10	inducted
+			sense:	induct.v.03
+			prop:	induct.01
+			V		10-10	inducted 
+			N-ARGM-TMP		0-1	In 1983 
+			N-ARG-A1		3-8	the Glenn Miller recording from 1939 
+			N-ARG-A2		11-16	into the Grammy Hall of Fame 
+	11	into
+	12	the
+	13	Grammy
+	14	Hall
+	15	of
+	16	Fame
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1999 , National Public Radio ( NPR ) included the 1939 Glenn Miller recording on RCA Bluebird on the NPR 100 , the list of " The 100 most important American musical works of the 20th century " .
+
+
+Treebanked sentence:
+--------------------
+In 1999 , National Public Radio ( NPR ) included the 1939 Glenn Miller recording on RCA Bluebird on the NPR 100 , the list of " The 100 most important American musical works of the 20th century " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1999)))
+    (, ,)
+    (NP
+      (NP (NNP National) (NNP Public) (NNP Radio))
+      (-LRB- -LRB-)
+      (NP (NNP NPR))
+      (-RRB- -RRB-))
+    (VP (VBD included)
+      (NP (DT the) (CD 1939) (NNP Glenn) (NNP Miller))
+      (S
+        (VP (VBG recording)
+          (PP (IN on)
+            (NP
+              (NP (NNP RCA) (NNP Bluebird))
+              (PP (IN on)
+                (NP
+                  (NP (DT the) (NNP NPR) (CD 100))
+                  (, ,)
+                  (NP
+                    (NP (DT the) (NN list))
+                    (PP (IN of) (`` ")
+                      (NP
+                        (NP (DT The) (CD 100)
+                          (ADJP (RBS most) (JJ important) (JJ American))
+                          (JJ musical) (NNS works))
+                        (PP (IN of)
+                          (NP (DT the) (JJ 20th) (NN century))))
+                      ('' "))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1999
+			name:	DATE				1-1	1999 
+	2	,
+	3	National
+			name:	ORGANIZATION				3-5	National Public Radio 
+	4	Public
+	5	Radio
+	6	(
+	7	NPR
+			name:	ORGANIZATION				7-7	NPR 
+	8	)
+	9	included
+			sense:	include.v.01
+			prop:	include.01
+			V		9-9	included 
+			N-ARGM-TMP		0-1	In 1999 
+			N-ARG-A0		3-8	National Public Radio ( NPR ) 
+			N-ARG-A1		10-17	the 1939 Glenn Miller recording on RCA Bluebird 
+			N-ARG-A2		18-38	on the NPR 100 , the list of " The 100 most important American musical works of the 20th century " 
+	10	the
+	11	1939
+			coref:	IDENT			1	11-11	1939 
+			name:	DATE				11-11	1939 
+	12	Glenn
+			name:	PERSON				12-13	Glenn Miller 
+	13	Miller
+	14	recording
+			sense:	record.v.02
+			prop:	recording.01
+			V		14-14	recording 
+			N-ARGM-TMP		11-11	1939 
+			N-ARG-A0		12-13	Glenn Miller 
+			N-ARGM-LOC		15-17	on RCA Bluebird 
+	15	on
+	16	RCA
+	17	Bluebird
+	18	on
+	19	the
+	20	NPR
+			name:	ORGANIZATION				20-20	NPR 
+	21	100
+			name:	NUMBER				21-21	100 
+	22	,
+	23	the
+	24	list
+			sense:	list.n.01
+	25	of
+	26	"
+	27	The
+	28	100
+			name:	NUMBER				28-28	100 
+	29	most
+			sense:	most.r.01
+	30	important
+			sense:	important.a.01
+	31	American
+			name:	NATIONALITY				31-31	American 
+	32	musical
+			sense:	musical.a.03
+	33	works
+			sense:	work.n.02
+	34	of
+	35	the
+			name:	DATE				35-37	the 20th century 
+	36	20th
+			sense:	twentieth.s.01
+	37	century
+			sense:	century.n.01
+	38	"
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 2004 , the 1939 Glenn Miller recording on RCA Victor was inducted into the Library of Congress National Recording Registry which consists of recordings that are " culturally , historically , or aesthetically significant . "
+
+
+Treebanked sentence:
+--------------------
+In 2004 , the 1939 Glenn Miller recording on RCA Victor was inducted into the Library of Congress National Recording Registry which consists of recordings that are " culturally , historically , or aesthetically significant . " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2004)))
+    (, ,)
+    (NP
+      (NP (DT the) (CD 1939) (NNP Glenn) (NNP Miller))
+      (VP (VBG recording)
+        (PP (IN on)
+          (NP (NNP RCA) (NNP Victor)))))
+    (VP (VBD was)
+      (VP (VBN inducted)
+        (PP (IN into)
+          (NP
+            (NP (DT the) (NNP Library))
+            (PP (IN of)
+              (NP (NNP Congress) (NNP National)
+                (NML (NNP Recording) (NNP Registry))))))
+        (SBAR
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBZ consists)
+                (PP (IN of)
+                  (NP
+                    (NP (NNS recordings))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (VBP are) (`` ")
+                          (ADJP (RB culturally))
+                          (, ,)
+                          (ADVP (RB historically))))))))))
+          (, ,)
+          (CC or)
+          (FRAG
+            (ADJP (RB aesthetically) (JJ significant))))))
+    (. .) ('' ")))
+
+
+Leaves:
+-------
+	0	In
+	1	2004
+			name:	DATE				1-1	2004 
+	2	,
+	3	the
+	4	1939
+			coref:	IDENT			1	4-4	1939 
+			name:	DATE				4-4	1939 
+	5	Glenn
+			name:	PERSON				5-6	Glenn Miller 
+	6	Miller
+	7	recording
+			sense:	record.v.02
+			prop:	recording.01
+			V		7-7	recording 
+			N-ARGM-TMP		4-4	1939 
+			N-ARG-A0		5-6	Glenn Miller 
+			N-ARGM-LOC		8-10	on RCA Victor 
+	8	on
+	9	RCA
+			name:	ORGANIZATION				9-10	RCA Victor 
+	10	Victor
+	11	was
+			sense:	be.v.01
+			prop:	be.03
+			V		11-11	was 
+	12	inducted
+			sense:	induct.v.03
+			prop:	induct.01
+			V		12-12	inducted 
+			N-ARGM-TMP		0-1	In 2004 
+			N-ARG-A1		3-10	the 1939 Glenn Miller recording on RCA Victor 
+			N-ARG-A2		13-34	into the Library of Congress National Recording Registry which consists of recordings that are " culturally , historically , or aesthetically significant 
+	13	into
+	14	the
+	15	Library
+	16	of
+	17	Congress
+			name:	ORGANIZATION				17-20	Congress National Recording Registry 
+	18	National
+	19	Recording
+	20	Registry
+	21	which
+	22	consists
+			sense:	consist.v.04
+			prop:	consist.01
+			V		22-22	consists 
+			N-ARG-A1		14-20	the Library of Congress National Recording Registry 
+			R-ARG-A1		21-21	which 
+			N-ARG-A2		23-34	of recordings that are " culturally , historically , or aesthetically significant 
+	23	of
+	24	recordings
+			sense:	recording.n.03
+	25	that
+	26	are
+			sense:	be.v.01
+			prop:	be.01
+			V		26-26	are 
+			N-ARG-A1		24-24	recordings 
+			R-ARG-A1		25-25	that 
+			N-ARG-A2		28-34	culturally , historically , or aesthetically significant 
+	27	"
+	28	culturally
+			sense:	culturally.r.01
+	29	,
+	30	historically
+			sense:	historically.r.02
+	31	,
+	32	or
+	33	aesthetically
+			sense:	aesthetically.r.01
+	34	significant
+			sense:	significant.a.01
+	35	.
+	36	"
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.12-13	# 1 
+				1.0-0	It 
+	Chain 1 (IDENT)
+				4.8-8	1939 
+				5.11-11	1939 
+				6.4-4	1939 
+	Chain 2 (IDENT)
+				0.2-3	the Mood 
+				2.2-3	the Mood 
+				3.8-9	the Mood 
+

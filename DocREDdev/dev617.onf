@@ -1,0 +1,667 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+John Anderson Moore ( January 12 , 1910 – February 26 , 1944 ) was a United States Navy submarine commander who was killed in action during World War II .
+
+
+Treebanked sentence:
+--------------------
+John Anderson Moore ( January 12 , 1910 – February 26 , 1944 ) was a United States Navy submarine commander who was killed in action during World War II . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP John) (NNP Anderson) (NNP Moore))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP January) (CD 12) (, ,) (CD 1910))
+        (PP (SYM –)
+          (NP (NNP February) (CD 26) (, ,) (CD 1944))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT a)
+          (NML (NNP United) (NNP States) (NNP Navy))
+          (NN submarine) (NN commander))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD was)
+              (VP (VBN killed)
+                (PP (IN in)
+                  (NP (NN action)))
+                (PP (IN during)
+                  (NP (NNP World) (NNP War) (NNP II)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	John
+			coref:	IDENT			0	0-2	John Anderson Moore 
+			name:	PERSON				0-2	John Anderson Moore 
+	1	Anderson
+	2	Moore
+	3	(
+	4	January
+			name:	DATE				4-7	January 12 , 1910 
+	5	12
+	6	,
+	7	1910
+	8	–
+	9	February
+			name:	DATE				9-12	February 26 , 1944 
+	10	26
+	11	,
+	12	1944
+	13	)
+	14	was
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		0-13	John Anderson Moore ( January 12 , 1910 – February 26 , 1944 ) 
+			N-ARG-A2		15-29	a United States Navy submarine commander who was killed in action during World War II 
+	15	a
+	16	United
+			name:	ORGANIZATION				16-18	United States Navy 
+	17	States
+	18	Navy
+	19	submarine
+			sense:	submarine.n.01
+	20	commander
+			name:	TITLE				20-20	commander 
+			sense:	commanding_officer.n.01
+	21	who
+	22	was
+			sense:	be.v.01
+			prop:	be.03
+			V		22-22	was 
+	23	killed
+			name:	CAUSE_OF_DEATH				23-25	killed in action 
+			sense:	kill.v.01
+			prop:	kill.01
+			V		23-23	killed 
+			N-ARG-A1		15-20	a United States Navy submarine commander 
+			R-ARG-A1		21-21	who 
+			N-ARGM-TMP		26-29	during World War II 
+	24	in
+	25	action
+			sense:	military_action.n.01
+	26	during
+	27	World
+			name:	MISC				27-27	World 
+	28	War
+			name:	CAUSE_OF_DEATH				28-28	War 
+	29	II
+			name:	MISC				29-29	II 
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He had been awarded three Navy Crosses and a Purple Heart Medal before his death .
+
+
+Treebanked sentence:
+--------------------
+He had been awarded three Navy Crosses and a Purple Heart Medal before his death . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD had)
+      (VP (VBN been)
+        (VP (VBN awarded)
+          (NP
+            (NP (CD three) (NNP Navy) (NNS Crosses))
+            (CC and)
+            (NP (DT a) (NNP Purple) (NNP Heart) (NNP Medal)))
+          (PP (IN before)
+            (NP (PRP$ his) (NN death))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	had
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	had 
+	2	been
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	been 
+	3	awarded
+			sense:	award.v.01
+			prop:	award.01
+			V		3-3	awarded 
+			N-ARG-A2		0-0	He 
+			N-ARG-A1		4-11	three Navy Crosses and a Purple Heart Medal 
+			N-ARGM-TMP		12-14	before his death 
+	4	three
+			name:	NUMBER				4-4	three 
+	5	Navy
+			name:	ORGANIZATION				5-5	Navy 
+	6	Crosses
+			sense:	cross.n.04
+	7	and
+	8	a
+	9	Purple
+	10	Heart
+	11	Medal
+	12	before
+	13	his
+			coref:	IDENT			0	13-13	his 
+	14	death
+			sense:	death.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The U.S. Navy frigate USS John A. Moore ( FFG-19 ) is named in his honor .
+
+
+Treebanked sentence:
+--------------------
+The U.S. Navy frigate USS John A. Moore ( FFG - 19 ) is named in his honor . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP U.S.) (NNP Navy) (NN frigate))
+      (NP (NNP USS) (NNP John) (NNP A.) (NNP Moore))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP FFG) (HYPH -) (CD 19))
+        (-RRB- -RRB-)))
+    (VP (VBZ is)
+      (VP (VBN named)
+        (PP (IN in)
+          (NP (PRP$ his) (NN honor)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	U.S.
+			name:	ORGANIZATION				1-2	U.S. Navy 
+	2	Navy
+	3	frigate
+			sense:	frigate.n.02
+	4	USS
+			coref:	IDENT			0	4-7	USS John A. Moore 
+	5	John
+			name:	PERSON				5-7	John A. Moore 
+	6	A.
+	7	Moore
+	8	(
+	9	FFG
+	10	-
+	11	19
+	12	)
+	13	is
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	is 
+	14	named
+			sense:	name.v.01
+			prop:	name.01
+			V		14-14	named 
+			N-ARG-A1		0-12	The U.S. Navy frigate USS John A. Moore ( FFG - 19 ) 
+	15	in
+	16	his
+			coref:	IDENT			0	16-16	his 
+	17	honor
+			sense:	award.n.02
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Moore had boxed and played soccer at the United States Naval Academy .
+
+
+Treebanked sentence:
+--------------------
+Moore had boxed and played soccer at the United States Naval Academy . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Moore))
+    (VP (VBD had)
+      (VP (VBN boxed)
+        (CC and)
+        (VBN played)
+        (NP
+          (NP (NN soccer))
+          (PP (IN at)
+            (NP (DT the) (NNP United) (NNP States) (NNP Naval) (NNP Academy))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Moore
+			coref:	IDENT			0	0-0	Moore 
+			name:	PERSON				0-0	Moore 
+	1	had
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	had 
+	2	boxed
+			sense:	box.v.03
+			prop:	box.03
+			V		2-2	boxed 
+			N-ARG-A0		0-0	Moore 
+			N-ARGM-LOC		6-11	at the United States Naval Academy 
+	3	and
+	4	played
+			sense:	play.v.01
+			prop:	play.01
+			V		4-4	played 
+			N-ARG-A0		0-0	Moore 
+			N-ARG-A1		5-5	soccer 
+			N-ARGM-LOC		6-11	at the United States Naval Academy 
+	5	soccer
+			sense:	soccer.n.01
+	6	at
+	7	the
+	8	United
+			name:	COUNTRY				8-9	United States 
+	9	States
+	10	Naval
+			name:	CITY				10-10	Naval 
+	11	Academy
+			name:	LOCATION				11-11	Academy 
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He served on R and S class submarines , before assuming command of the submarine USS Grayback ( SS-208 ) on its last three patrols during 1943 - 1944 .
+
+
+Treebanked sentence:
+--------------------
+He served on R and S class submarines , before assuming command of the submarine USS Grayback ( SS - 208 ) on its last three patrols during 1943 - 1944 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD served)
+      (PP (IN on)
+        (NP
+          (NML (NN R)
+            (CC and)
+            (NN S))
+          (NN class) (NNS submarines)))
+      (, ,)
+      (PP (IN before)
+        (S
+          (VP (VBG assuming)
+            (NP
+              (NP (NN command))
+              (PP (IN of)
+                (NP
+                  (NP
+                    (NP (DT the) (NN submarine))
+                    (NP (NNP USS) (NNP Grayback))
+                    (PRN (-LRB- -LRB-)
+                      (NP (NNP SS) (HYPH -) (CD 208))
+                      (-RRB- -RRB-)))
+                  (PP (IN on)
+                    (NP (PRP$ its) (JJ last) (CD three) (NNS patrols))))))
+            (PP (IN during)
+              (NP (CD 1943) (HYPH -) (CD 1944)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-7	on R and S class submarines 
+			N-ARGM-TMP		9-30	before assuming command of the submarine USS Grayback ( SS - 208 ) on its last three patrols during 1943 - 1944 
+	2	on
+	3	R
+			sense:	r.n.03
+	4	and
+	5	S
+			sense:	s.n.05
+	6	class
+			sense:	class.n.01
+	7	submarines
+			sense:	submarine.n.01
+	8	,
+	9	before
+	10	assuming
+			sense:	assume.v.02
+			prop:	assume.01
+			V		10-10	assuming 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		11-26	command of the submarine USS Grayback ( SS - 208 ) on its last three patrols 
+			N-ARGM-TMP		27-30	during 1943 - 1944 
+	11	command
+			sense:	command.n.03
+	12	of
+	13	the
+	14	submarine
+			sense:	submarine.n.01
+	15	USS
+			coref:	IDENT			1	15-16	USS Grayback 
+	16	Grayback
+	17	(
+	18	SS
+	19	-
+	20	208
+	21	)
+	22	on
+	23	its
+			coref:	IDENT			1	23-23	its 
+			coref:	IDENT			2	23-26	its last three patrols 
+	24	last
+			sense:	concluding.s.01
+	25	three
+			name:	NUMBER				25-25	three 
+	26	patrols
+			sense:	patrol.n.02
+	27	during
+	28	1943
+			name:	DATE				28-28	1943 
+	29	-
+			name:	DURATION				29-29	- 
+	30	1944
+			name:	DATE				30-30	1944 
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Under the overall command of innovator Charles " Swede " Momsen , Grayback , USS Cero ( SS-225 ) and USS Plunger ( SS-179 ) launched the U.S. Navy 's first attack against enemy shipping using " wolfpack " tactics .
+
+
+Treebanked sentence:
+--------------------
+Under the overall command of innovator Charles " Swede " Momsen , Grayback , USS Cero ( SS - 225 ) and USS Plunger ( SS - 179 ) launched the U.S. Navy 's first attack against enemy shipping using " wolfpack " tactics . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Under)
+      (NP
+        (NP (DT the) (JJ overall) (NN command))
+        (PP (IN of)
+          (NP (NN innovator)))))
+    (NP
+      (NP
+        (NP (NNP Charles))
+        (NP ('' ") (NN Swede) ('' "))
+        (NP (NNP Momsen) (, ,) (NNP Grayback) (, ,) (NNP USS) (NNP Cero))
+        (PRN (-LRB- -LRB-)
+          (NP (NNP SS) (HYPH -) (CD 225))
+          (-RRB- -RRB-)))
+      (CC and)
+      (NP (NNP USS) (NNP Plunger)
+        (PRN (-LRB- -LRB-)
+          (NP (NN SS) (HYPH -) (CD 179))
+          (-RRB- -RRB-))))
+    (VP (VBD launched)
+      (NP
+        (NP
+          (NP (DT the) (NNP U.S.) (NNP Navy) (POS 's))
+          (JJ first) (NN attack))
+        (PP (IN against)
+          (NP (NN enemy) (NN shipping))))
+      (S
+        (VP (VBG using)
+          (NP (`` ") (NN wolfpack) ('' ") (NNS tactics)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Under
+	1	the
+	2	overall
+			sense:	overall.s.02
+	3	command
+			sense:	command.n.03
+	4	of
+	5	innovator
+			sense:	pioneer.n.01
+	6	Charles
+			name:	PERSON				6-6	Charles 
+	7	"
+	8	Swede
+			name:	NATIONALITY				8-8	Swede 
+			sense:	swede.n.01
+	9	"
+	10	Momsen
+	11	,
+	12	Grayback
+			coref:	IDENT			1	12-12	Grayback 
+			name:	ORGANIZATION				12-12	Grayback 
+	13	,
+	14	USS
+	15	Cero
+	16	(
+	17	SS
+	18	-
+	19	225
+	20	)
+	21	and
+	22	USS
+	23	Plunger
+	24	(
+	25	SS
+			sense:	united_states_secret_service.n.01
+	26	-
+	27	179
+	28	)
+	29	launched
+			sense:	launch.v.05
+			prop:	launch.01
+			V		29-29	launched 
+			N-ARGM-ADV		0-10	Under the overall command of innovator Charles " Swede " Momsen 
+			N-ARG-A0		12-28	Grayback , USS Cero ( SS - 225 ) and USS Plunger ( SS - 179 ) 
+			N-ARG-A1		30-38	the U.S. Navy 's first attack against enemy shipping 
+			N-ARGM-MNR		39-43	using " wolfpack " tactics 
+	30	the
+	31	U.S.
+			name:	ORGANIZATION				31-32	U.S. Navy 
+	32	Navy
+	33	's
+	34	first
+			name:	ORDINAL				34-34	first 
+			sense:	first.a.01
+	35	attack
+			name:	CAUSE_OF_DEATH				35-35	attack 
+			sense:	attack.n.01
+	36	against
+	37	enemy
+			sense:	enemy.n.01
+	38	shipping
+			sense:	shipping.n.02
+	39	using
+			sense:	use.v.01
+			prop:	use.01
+			V		39-39	using 
+			N-ARG-A1		40-43	" wolfpack " tactics 
+	40	"
+	41	wolfpack
+	42	"
+	43	tactics
+			sense:	tactic.n.01
+	44	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Moore was credited with multiple events of " extraordinary heroism " in repeated forays against Japanese vessels in the East China Sea before being killed during the last of the Grayback 's patrols .
+
+
+Treebanked sentence:
+--------------------
+Moore was credited with multiple events of " extraordinary heroism " in repeated forays against Japanese vessels in the East China Sea before being killed during the last of the Grayback 's patrols . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Moore))
+    (VP (VBD was)
+      (VP (VBN credited)
+        (PP (IN with)
+          (NP
+            (NP (JJ multiple) (NNS events))
+            (PP (IN of)
+              (NP
+                (NP (`` ") (JJ extraordinary) (NN heroism) ('' "))
+                (PP (IN in)
+                  (NP (VBN repeated) (NNS forays)))))))
+        (PP (IN against)
+          (NP (JJ Japanese) (NNS vessels)))
+        (PP (IN in)
+          (NP (DT the) (NNP East) (NNP China) (NNP Sea)))
+        (PP (IN before)
+          (S
+            (VP (VBG being)
+              (VP (VBN killed)
+                (PP (IN during)
+                  (NP
+                    (NP (DT the) (JJ last))
+                    (PP (IN of)
+                      (NP
+                        (NP (DT the) (NNP Grayback) (POS 's))
+                        (NNS patrols)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Moore
+			coref:	IDENT			0	0-0	Moore 
+			name:	PERSON				0-0	Moore 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	credited
+			sense:	accredit.v.03
+			prop:	credit.01
+			V		2-2	credited 
+			N-ARG-A1		0-0	Moore 
+			N-ARG-A2		3-21	with multiple events of " extraordinary heroism " in repeated forays against Japanese vessels in the East China Sea 
+			N-ARGM-TMP		22-32	before being killed during the last of the Grayback 's patrols 
+	3	with
+	4	multiple
+			sense:	multiple.a.01
+	5	events
+			sense:	event.n.01
+	6	of
+	7	"
+	8	extraordinary
+			sense:	extraordinary.a.01
+	9	heroism
+			sense:	heroism.n.01
+	10	"
+	11	in
+	12	repeated
+			sense:	recur.v.01
+			prop:	repeat.01
+			V		12-12	repeated 
+			N-ARG-A1		13-13	forays 
+	13	forays
+			sense:	foray.n.01
+	14	against
+	15	Japanese
+			name:	NATIONALITY				15-15	Japanese 
+	16	vessels
+			sense:	vessel.n.02
+	17	in
+	18	the
+	19	East
+			name:	LOCATION				19-19	East 
+	20	China
+			name:	COUNTRY				20-20	China 
+	21	Sea
+			name:	LOCATION				21-21	Sea 
+	22	before
+	23	being
+			sense:	be.v.01
+			prop:	be.03
+			V		23-23	being 
+	24	killed
+			sense:	kill.v.01
+			prop:	kill.01
+			V		24-24	killed 
+			N-ARG-A1		0-0	Moore 
+			N-ARGM-TMP		25-32	during the last of the Grayback 's patrols 
+	25	during
+	26	the
+	27	last
+			sense:	last.a.02
+	28	of
+	29	the
+			coref:	IDENT			2	29-32	the Grayback 's patrols 
+	30	Grayback
+			name:	ORGANIZATION				30-30	Grayback 
+	31	's
+	32	patrols
+			sense:	patrol.n.02
+	33	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.4-7	USS John A. Moore 
+				0.0-2	John Anderson Moore 
+				1.0-0	He 
+				1.13-13	his 
+				2.16-16	his 
+				3.0-0	Moore 
+				4.0-0	He 
+				6.0-0	Moore 
+	Chain 1 (IDENT)
+				4.15-16	USS Grayback 
+				4.23-23	its 
+				5.12-12	Grayback 
+	Chain 2 (IDENT)
+				4.23-26	its last three patrols 
+				6.29-32	the Grayback 's patrols 
+

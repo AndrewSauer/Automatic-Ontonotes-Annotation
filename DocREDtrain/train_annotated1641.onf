@@ -1,0 +1,590 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Lehigh Coal and Navigation Company ( LCAN ) ( 1988–2010 ) was a modern - day anthracite coal mining company headquartered in Pottsville , Schuylkill County , Pennsylvania , U.S. which acquired many of the ' Old Company ' ( LC&N ; ) properties and re - launched the Lehigh Coal Companies brand in 1988 .
+
+
+Treebanked sentence:
+--------------------
+The Lehigh Coal and Navigation Company ( LCAN ) ( 1988 – 2010 ) was a modern - day anthracite coal mining company headquartered in Pottsville , Schuylkill County , Pennsylvania , U.S. which acquired many of the ' Old Company ' ( LC&N ; ) properties and re - launched the Lehigh Coal Companies brand in 1988 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Lehigh) (NNP Coal))
+      (CC and)
+      (NP (NNP Navigation) (NNP Company) (-LRB- -LRB-) (NNP LCAN) (-RRB- -RRB-))
+      (PRN (-LRB- -LRB-)
+        (NP (CD 1988) (SYM –) (CD 2010))
+        (-RRB- -RRB-)))
+    (VP (VBD was)
+      (NP
+        (NP (DT a)
+          (NML (JJ modern) (HYPH -) (NN day))
+          (NML (NN anthracite) (NN coal) (NN mining))
+          (NN company))
+        (VP (VBN headquartered)
+          (PP (IN in)
+            (NP
+              (NP
+                (NP
+                  (NP (NNP Pottsville))
+                  (, ,)
+                  (NP
+                    (NP (NNP Schuylkill)
+                      (NML (NNP County) (, ,) (NNP Pennsylvania) (, ,))
+                      (NNP U.S.))
+                    (SBAR
+                      (WHNP (WDT which))
+                      (S
+                        (VP (VBD acquired)
+                          (NP
+                            (NP (JJ many))
+                            (PP (IN of)
+                              (NP (DT the) (`` ')
+                                (NML
+                                  (NML (NNP Old) (NNP Company) (POS '))
+                                  (-LRB- -LRB-)
+                                  (NML (NN LC&N))))))))))
+                  (: ;))
+                (-RRB- -RRB-)
+                (VP
+                  (UCP
+                    (NP (NNS properties))
+                    (CC and)
+                    (PP (IN re)))
+                  (HYPH -) (VBN launched)))
+              (NP
+                (NP (DT the) (NNP Lehigh)
+                  (NML (NNP Coal) (NNPS Companies))
+                  (NN brand))
+                (PP (IN in)
+                  (NP (CD 1988)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Lehigh
+			coref:	IDENT			1	1-5	Lehigh Coal and Navigation Company 
+			name:	ORGANIZATION				1-5	Lehigh Coal and Navigation Company 
+	2	Coal
+	3	and
+	4	Navigation
+	5	Company
+	6	(
+	7	LCAN
+	8	)
+	9	(
+	10	1988
+			coref:	IDENT			2	10-10	1988 
+			name:	DATE				10-10	1988 
+	11	–
+	12	2010
+			name:	DATE				12-12	2010 
+	13	)
+	14	was
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		0-13	The Lehigh Coal and Navigation Company ( LCAN ) ( 1988 – 2010 ) 
+			N-ARG-A2		15-57	a modern - day anthracite coal mining company headquartered in Pottsville , Schuylkill County , Pennsylvania , U.S. which acquired many of the ' Old Company ' ( LC&N ; ) properties and re - launched the Lehigh Coal Companies brand in 1988 
+	15	a
+	16	modern
+			sense:	modern.a.01
+	17	-
+	18	day
+			name:	DURATION				18-18	day 
+			sense:	day.n.02
+	19	anthracite
+			sense:	anthracite.n.01
+	20	coal
+			sense:	coal.n.01
+	21	mining
+			sense:	mining.n.01
+	22	company
+			sense:	company.n.01
+	23	headquartered
+			sense:	headquarter.v.01
+			prop:	headquarter.01
+			V		23-23	headquartered 
+			N-ARG-A1		15-22	a modern - day anthracite coal mining company 
+			N-ARGM-LOC		24-32	in Pottsville , Schuylkill County , Pennsylvania , U.S. 
+	24	in
+	25	Pottsville
+			name:	CITY				25-25	Pottsville 
+	26	,
+	27	Schuylkill
+			name:	LOCATION				27-28	Schuylkill County 
+	28	County
+	29	,
+	30	Pennsylvania
+			name:	STATE_OR_PROVINCE				30-30	Pennsylvania 
+	31	,
+	32	U.S.
+			name:	COUNTRY				32-32	U.S. 
+	33	which
+	34	acquired
+			sense:	get.v.01
+			prop:	acquire.01
+			V		34-34	acquired 
+			N-ARG-A0		15-32	a modern - day anthracite coal mining company headquartered in Pottsville , Schuylkill County , Pennsylvania , U.S. 
+			R-ARG-A0		33-33	which 
+			N-ARG-A1		35-46	many of the ' Old Company ' ( LC&N ; ) properties 
+	35	many
+			sense:	many.a.01
+	36	of
+	37	the
+	38	'
+	39	Old
+	40	Company
+	41	'
+	42	(
+	43	LC&N
+	44	;
+	45	)
+	46	properties
+			sense:	property.n.01
+	47	and
+	48	re
+	49	-
+	50	launched
+			sense:	establish.v.01
+			prop:	launch.01
+			V		50-50	launched 
+			N-ARG-A0		15-32	a modern - day anthracite coal mining company headquartered in Pottsville , Schuylkill County , Pennsylvania , U.S. 
+			R-ARG-A0		33-33	which 
+			N-ARGM-ADV		48-48	re 
+			N-ARG-A1		51-55	the Lehigh Coal Companies brand 
+			N-ARGM-TMP		56-57	in 1988 
+	51	the
+	52	Lehigh
+			name:	ORGANIZATION				52-54	Lehigh Coal Companies 
+	53	Coal
+	54	Companies
+	55	brand
+			sense:	trade_name.n.01
+	56	in
+	57	1988
+			coref:	IDENT			2	57-57	1988 
+			name:	DATE				57-57	1988 
+	58	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The LCAN ran strip mining operations in the Panther Creek Valley east of Lansford along U.S. Route 209 ; with vast properties dominating the coal areas of Tamaqua , Coaldale , and Lansford .
+
+
+Treebanked sentence:
+--------------------
+The LCAN ran strip mining operations in the Panther Creek Valley east of Lansford along U.S. Route 209 ; with vast properties dominating the coal areas of Tamaqua , Coaldale , and Lansford . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP LCAN))
+    (VP (VBD ran)
+      (NP
+        (NP
+          (NML (NN strip) (NN mining))
+          (NNS operations))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN Panther)
+              (NML (NNP Creek) (NNP Valley))
+              (NN east))
+            (PP (IN of)
+              (NP (NNP Lansford)))
+            (PP (IN along)
+              (NP
+                (NML (NNP U.S.) (NNP Route))
+                (CD 209)))
+            (: ;))))
+      (PP (IN with)
+        (NP
+          (NP (JJ vast) (NNS properties))
+          (VP (VBG dominating)
+            (NP
+              (NP (DT the) (NN coal) (NNS areas))
+              (PP (IN of)
+                (NP (NNP Tamaqua) (, ,) (NNP Coaldale) (, ,)
+                  (CC and)
+                  (NNP Lansford))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	LCAN
+			name:	ORGANIZATION				1-1	LCAN 
+	2	ran
+			sense:	operate.v.01
+			prop:	run.01
+			V		2-2	ran 
+			N-ARG-A0		0-1	The LCAN 
+			N-ARG-A1		3-17	strip mining operations in the Panther Creek Valley east of Lansford along U.S. Route 209 
+			N-ARGM-MNR		19-32	with vast properties dominating the coal areas of Tamaqua , Coaldale , and Lansford 
+	3	strip
+			sense:	strip.n.01
+	4	mining
+			sense:	mining.n.01
+	5	operations
+			sense:	operation.n.02
+	6	in
+	7	the
+	8	Panther
+			name:	LOCATION				8-9	Panther Creek 
+			sense:	cougar.n.01
+	9	Creek
+	10	Valley
+			name:	CITY				10-10	Valley 
+	11	east
+			sense:	east.n.01
+	12	of
+	13	Lansford
+			name:	LOCATION				13-13	Lansford 
+	14	along
+	15	U.S.
+			name:	COUNTRY				15-15	U.S. 
+	16	Route
+	17	209
+			name:	NUMBER				17-17	209 
+	18	;
+	19	with
+	20	vast
+			coref:	IDENT			0	20-32	vast properties dominating the coal areas of Tamaqua , Coaldale , and Lansford 
+			sense:	huge.s.01
+	21	properties
+			sense:	property.n.01
+	22	dominating
+			sense:	predominate.v.01
+			prop:	dominate.01
+			V		22-22	dominating 
+			N-ARG-A0		20-21	vast properties 
+			N-ARG-A1		23-32	the coal areas of Tamaqua , Coaldale , and Lansford 
+	23	the
+	24	coal
+			sense:	coal.n.01
+	25	areas
+			sense:	area.n.01
+	26	of
+	27	Tamaqua
+			name:	LOCATION				27-27	Tamaqua 
+	28	,
+	29	Coaldale
+			name:	CITY				29-29	Coaldale 
+	30	,
+	31	and
+	32	Lansford
+	33	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+These properties are largely the same real estate assets as were acquired in the Panther Creek Valley by the predecessors : the haphazard Lehigh Coal Mine Company ( 1792 - 1822 ) and the builders of the Lehigh Canal and first American blast furnaces , the Lehigh Coal & Navigation Company ( Old Company , LC&N ; ) , which spearheaded the U.S. Industrial revolution .
+
+
+Treebanked sentence:
+--------------------
+These properties are largely the same real estate assets as were acquired in the Panther Creek Valley by the predecessors : the haphazard Lehigh Coal Mine Company ( 1792 - 1822 ) and the builders of the Lehigh Canal and first American blast furnaces , the Lehigh Coal & Navigation Company ( Old Company , LC&N ; ) , which spearheaded the U.S. Industrial revolution . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT These) (NNS properties))
+    (VP (VBP are)
+      (ADVP (RB largely))
+      (NP
+        (NP
+          (NP
+            (NP (DT the) (JJ same)
+              (NML (JJ real) (NN estate))
+              (NNS assets))
+            (SBAR (IN as)
+              (S
+                (VP (VBD were)
+                  (VP (VBN acquired)
+                    (PP (IN in)
+                      (NP
+                        (NP (DT the) (NN Panther))
+                        (NP (NNP Creek) (NNP Valley))))
+                    (PP (IN by)
+                      (NP (DT the) (NNS predecessors))))))))
+          (: :)
+          (NP
+            (NP (DT the)
+              (ADJP (JJ haphazard))
+              (NNP Lehigh) (NNP Coal) (NNP Mine) (NNP Company)
+              (PRN (-LRB- -LRB-)
+                (NP (CD 1792) (SYM -) (CD 1822))
+                (-RRB- -RRB-)))
+            (CC and)
+            (NP
+              (NP (DT the) (NNS builders))
+              (PP (IN of)
+                (NP (DT the) (NNP Lehigh) (NNP Canal)))))
+          (CC and)
+          (NP
+            (NP (JJ first) (JJ American) (NN blast) (NNS furnaces))
+            (, ,)
+            (NP
+              (NP (DT the) (NNP Lehigh)
+                (NML (NNP Coal)
+                  (CC &)
+                  (NNP Navigation))
+                (NNP Company))
+              (-LRB- -LRB-)
+              (NP
+                (NP (NNP Old) (NNP Company))
+                (, ,)
+                (NP (NNP LC&N))
+                (: ;))
+              (-RRB- -RRB-))))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBD spearheaded)
+              (NP (DT the) (NNP U.S.) (JJ Industrial) (NN revolution)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	These
+			coref:	IDENT			0	0-1	These properties 
+	1	properties
+			sense:	property.n.01
+	2	are
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	are 
+			N-ARG-A1		0-1	These properties 
+			N-ARGM-ADV		3-3	largely 
+			N-ARG-A2		4-64	the same real estate assets as were acquired in the Panther Creek Valley by the predecessors : the haphazard Lehigh Coal Mine Company ( 1792 - 1822 ) and the builders of the Lehigh Canal and first American blast furnaces , the Lehigh Coal & Navigation Company ( Old Company , LC&N ; ) , which spearheaded the U.S. Industrial revolution 
+	3	largely
+			sense:	largely.r.01
+	4	the
+	5	same
+			sense:	same.a.01
+	6	real
+			sense:	real.s.08
+	7	estate
+			sense:	estate.n.01
+	8	assets
+			sense:	asset.n.01
+	9	as
+	10	were
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	were 
+	11	acquired
+			sense:	get.v.01
+			prop:	acquire.01
+			V		11-11	acquired 
+			N-ARGM-LOC		12-16	in the Panther Creek Valley 
+			N-ARG-A0		17-64	by the predecessors : the haphazard Lehigh Coal Mine Company ( 1792 - 1822 ) and the builders of the Lehigh Canal and first American blast furnaces , the Lehigh Coal & Navigation Company ( Old Company , LC&N ; ) , which spearheaded the U.S. Industrial revolution 
+	12	in
+	13	the
+	14	Panther
+			name:	LOCATION				14-15	Panther Creek 
+			sense:	cougar.n.01
+	15	Creek
+	16	Valley
+			name:	CITY				16-16	Valley 
+	17	by
+	18	the
+	19	predecessors
+			sense:	predecessor.n.01
+	20	:
+	21	the
+	22	haphazard
+			sense:	haphazard.s.02
+	23	Lehigh
+			name:	ORGANIZATION				23-26	Lehigh Coal Mine Company 
+	24	Coal
+	25	Mine
+	26	Company
+	27	(
+	28	1792
+			name:	DATE				28-28	1792 
+	29	-
+			name:	DURATION				29-29	- 
+	30	1822
+			name:	DATE				30-30	1822 
+	31	)
+	32	and
+	33	the
+	34	builders
+			sense:	builder.n.03
+	35	of
+	36	the
+	37	Lehigh
+			name:	ORGANIZATION				37-38	Lehigh Canal 
+	38	Canal
+	39	and
+	40	first
+			name:	ORDINAL				40-40	first 
+			sense:	first.a.01
+	41	American
+			name:	NATIONALITY				41-41	American 
+	42	blast
+			sense:	blast.n.04
+	43	furnaces
+			sense:	furnace.n.01
+	44	,
+	45	the
+			coref:	IDENT			1	45-50	the Lehigh Coal & Navigation Company 
+	46	Lehigh
+			name:	ORGANIZATION				46-50	Lehigh Coal & Navigation Company 
+	47	Coal
+	48	&
+	49	Navigation
+	50	Company
+	51	(
+	52	Old
+	53	Company
+	54	,
+	55	LC&N
+	56	;
+	57	)
+	58	,
+	59	which
+	60	spearheaded
+			sense:	spearhead.v.01
+			prop:	spearhead.01
+			V		60-60	spearheaded 
+			N-ARG-A0		45-57	the Lehigh Coal & Navigation Company ( Old Company , LC&N ; ) 
+			R-ARG-A0		59-59	which 
+			N-ARG-A1		61-64	the U.S. Industrial revolution 
+	61	the
+	62	U.S.
+			name:	COUNTRY				62-62	U.S. 
+	63	Industrial
+			sense:	industrial.a.01
+	64	revolution
+			sense:	revolution.n.01
+	65	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The new company was incorporated in 1988 acquiring LC&N ; assets after bankruptcy proceedings , taking the name of the original .
+
+
+Treebanked sentence:
+--------------------
+The new company was incorporated in 1988 acquiring LC&N ; assets after bankruptcy proceedings , taking the name of the original . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJ new) (NN company))
+      (VP (VBD was)
+        (VP (VBN incorporated)
+          (PP (IN in)
+            (NP (CD 1988)))
+          (S
+            (VP (VBG acquiring)
+              (NP (NN LC&N)))))))
+    (: ;)
+    (S
+      (NP
+        (NP (NNS assets))
+        (PP (IN after)
+          (NP (NN bankruptcy) (NNS proceedings))))
+      (, ,)
+      (VP (VBG taking)
+        (NP
+          (NP (DT the) (NN name))
+          (PP (IN of)
+            (NP (DT the) (JJ original))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	new
+			sense:	new.a.01
+	2	company
+			sense:	company.n.01
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	incorporated
+			sense:	incorporate.v.03
+			prop:	incorporate.01
+			V		4-4	incorporated 
+			N-ARG-A1		0-2	The new company 
+			N-ARGM-TMP		5-6	in 1988 
+			N-ARGM-ADV		7-20	acquiring LC&N ; assets after bankruptcy proceedings , taking the name of the original 
+	5	in
+	6	1988
+			coref:	IDENT			2	6-6	1988 
+			name:	DATE				6-6	1988 
+	7	acquiring
+			sense:	get.v.01
+			prop:	acquire.01
+			V		7-7	acquiring 
+			N-ARG-A0		0-2	The new company 
+			N-ARG-A1		8-10	LC&N ; assets 
+			N-ARGM-TMP		11-13	after bankruptcy proceedings 
+	8	LC&N
+	9	;
+	10	assets
+			sense:	asset.n.01
+	11	after
+	12	bankruptcy
+			sense:	bankruptcy.n.03
+	13	proceedings
+			sense:	proceeding.n.01
+	14	,
+	15	taking
+			sense:	assume.v.03
+			prop:	take.01
+			V		15-15	taking 
+			N-ARG-A0		0-2	The new company 
+			N-ARG-A1		16-20	the name of the original 
+	16	the
+	17	name
+			sense:	name.n.01
+	18	of
+	19	the
+	20	original
+			sense:	original.s.01
+	21	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.20-32	vast properties dominating the coal areas of Tamaqua , Coaldale , and Lansford 
+				2.0-1	These properties 
+	Chain 1 (IDENT)
+				2.45-50	the Lehigh Coal & Navigation Company 
+				0.1-5	Lehigh Coal and Navigation Company 
+	Chain 2 (IDENT)
+				0.10-10	1988 
+				0.57-57	1988 
+				3.6-6	1988 
+

@@ -1,0 +1,643 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Charles Morgridge Loring ( November 13 , 1833 – March 18 , 1922 ) was an American businessman , miller and publicist .
+
+
+Treebanked sentence:
+--------------------
+Charles Morgridge Loring ( November 13 , 1833 – March 18 , 1922 ) was an American businessman , miller and publicist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Charles) (NNP Morgridge) (NNP Loring))
+      (-LRB- -LRB-)
+      (NP
+        (NP (NNP November) (CD 13) (, ,) (CD 1833))
+        (PP (SYM –)
+          (NP (NNP March) (CD 18) (, ,) (CD 1922))))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT an) (JJ American)
+        (NML (NN businessman) (, ,) (NN miller)
+          (CC and)
+          (NN publicist))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Charles
+			coref:	IDENT			0	0-2	Charles Morgridge Loring 
+			name:	PERSON				0-2	Charles Morgridge Loring 
+	1	Morgridge
+	2	Loring
+	3	(
+	4	November
+			name:	DATE				4-7	November 13 , 1833 
+	5	13
+	6	,
+	7	1833
+	8	–
+	9	March
+			name:	DATE				9-12	March 18 , 1922 
+	10	18
+	11	,
+	12	1922
+	13	)
+	14	was
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	was 
+			N-ARG-A1		0-13	Charles Morgridge Loring ( November 13 , 1833 – March 18 , 1922 ) 
+			N-ARG-A2		15-21	an American businessman , miller and publicist 
+	15	an
+	16	American
+			name:	NATIONALITY				16-16	American 
+	17	businessman
+			name:	TITLE				17-17	businessman 
+			sense:	businessman.n.01
+	18	,
+	19	miller
+			name:	PERSON				19-19	miller 
+			sense:	miller.n.04
+	20	and
+	21	publicist
+			name:	TITLE				21-21	publicist 
+			sense:	publicist.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Raised in Maine to be a sea captain , Loring instead became a civic leader in Minneapolis , Minnesota where he was a wealthy flour miller and in Riverside , California where he helped to build the first city hall .
+
+
+Treebanked sentence:
+--------------------
+Raised in Maine to be a sea captain , Loring instead became a civic leader in Minneapolis , Minnesota where he was a wealthy flour miller and in Riverside , California where he helped to build the first city hall . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Raised)
+        (PP (IN in)
+          (NP (NNP Maine)))
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (NP (DT a) (NN sea) (NN captain)))))))
+    (, ,)
+    (NP (NNP Loring))
+    (ADVP (RB instead))
+    (VP (VBD became)
+      (NP (DT a) (JJ civic) (NN leader))
+      (PP
+        (PP (IN in)
+          (NP
+            (NP (NNP Minneapolis) (, ,) (NNP Minnesota))
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (PRP he))
+                (VP (VBD was)
+                  (NP (DT a) (JJ wealthy) (NN flour) (NN miller)))))))
+        (CC and)
+        (PP (IN in)
+          (NP
+            (NP (NNP Riverside) (, ,) (NNP California))
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (PRP he))
+                (VP (VBD helped)
+                  (S
+                    (VP (TO to)
+                      (VP (VB build)
+                        (NP (DT the) (JJ first) (NN city) (NN hall))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Raised
+			sense:	rear.v.02
+			prop:	raise.03
+			V		0-0	Raised 
+			N-ARGM-LOC		1-2	in Maine 
+			N-ARGM-PRP		3-7	to be a sea captain 
+			N-ARG-A1		9-9	Loring 
+	1	in
+	2	Maine
+			name:	STATE_OR_PROVINCE				2-2	Maine 
+	3	to
+	4	be
+			sense:	be.v.08
+			prop:	be.01
+			V		4-4	be 
+			N-ARG-A2		5-7	a sea captain 
+			N-ARG-A1		9-9	Loring 
+	5	a
+	6	sea
+			sense:	sea.n.01
+	7	captain
+			name:	TITLE				7-7	captain 
+			sense:	master.n.07
+	8	,
+	9	Loring
+			coref:	IDENT			0	9-9	Loring 
+			name:	PERSON				9-9	Loring 
+	10	instead
+			sense:	alternatively.r.01
+	11	became
+			sense:	become.v.02
+			prop:	become.01
+			V		11-11	became 
+			R-ARG-A1		0-7	Raised in Maine to be a sea captain 
+			N-ARG-A1		9-9	Loring 
+			N-ARGM-DIS		10-10	instead 
+			N-ARG-A2		12-39	a civic leader in Minneapolis , Minnesota where he was a wealthy flour miller and in Riverside , California where he helped to build the first city hall 
+	12	a
+	13	civic
+			sense:	civic.a.01
+	14	leader
+			name:	TITLE				14-14	leader 
+			sense:	leader.n.01
+	15	in
+	16	Minneapolis
+			name:	CITY				16-16	Minneapolis 
+	17	,
+	18	Minnesota
+			name:	STATE_OR_PROVINCE				18-18	Minnesota 
+	19	where
+	20	he
+			coref:	IDENT			0	20-20	he 
+	21	was
+			sense:	be.v.01
+			prop:	be.01
+			V		21-21	was 
+			N-ARGM-LOC		16-18	Minneapolis , Minnesota 
+			R-ARGM-LOC		19-19	where 
+			N-ARG-A1		20-20	he 
+			N-ARG-A2		22-25	a wealthy flour miller 
+	22	a
+	23	wealthy
+			sense:	affluent.s.01
+	24	flour
+			sense:	flour.n.01
+	25	miller
+			name:	TITLE				25-25	miller 
+			sense:	miller.n.04
+	26	and
+	27	in
+	28	Riverside
+			name:	CITY				28-28	Riverside 
+	29	,
+	30	California
+			name:	STATE_OR_PROVINCE				30-30	California 
+	31	where
+	32	he
+			coref:	IDENT			0	32-32	he 
+	33	helped
+			sense:	help.v.01
+			prop:	help.01
+			V		33-33	helped 
+			N-ARGM-LOC		31-31	where 
+			N-ARG-A0		32-32	he 
+			N-ARG-A1		34-39	to build the first city hall 
+	34	to
+	35	build
+			sense:	construct.v.01
+			prop:	build.01
+			V		35-35	build 
+			N-ARG-A0		32-32	he 
+			N-ARG-A1		36-39	the first city hall 
+	36	the
+	37	first
+			name:	ORDINAL				37-37	first 
+			sense:	first.a.01
+	38	city
+			sense:	city.n.02
+	39	hall
+			sense:	hall.n.13
+	40	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was a popular and generous man who enjoyed many friendships and business associations .
+
+
+Treebanked sentence:
+--------------------
+He was a popular and generous man who enjoyed many friendships and business associations . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT a)
+          (ADJP (JJ popular)
+            (CC and)
+            (JJ generous))
+          (NN man))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD enjoyed)
+              (NP
+                (NP (JJ many) (NNS friendships))
+                (CC and)
+                (NP (NN business) (NNS associations))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-13	a popular and generous man who enjoyed many friendships and business associations 
+	2	a
+	3	popular
+			sense:	popular.a.01
+	4	and
+	5	generous
+			sense:	generous.a.01
+	6	man
+			sense:	man.n.01
+	7	who
+	8	enjoyed
+			sense:	enjoy.v.02
+			prop:	enjoy.01
+			V		8-8	enjoyed 
+			N-ARG-A0		2-6	a popular and generous man 
+			R-ARG-A0		7-7	who 
+			N-ARG-A1		9-13	many friendships and business associations 
+	9	many
+			sense:	many.a.01
+	10	friendships
+			sense:	friendship.n.01
+	11	and
+	12	business
+			sense:	occupation.n.01
+	13	associations
+			sense:	affiliation.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Loring is remembered as the influential commissioner and president of the first Minneapolis park board .
+
+
+Treebanked sentence:
+--------------------
+Loring is remembered as the influential commissioner and president of the first Minneapolis park board . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Loring))
+    (VP (VBZ is)
+      (VP (VBN remembered)
+        (PP (IN as)
+          (NP
+            (NP (DT the) (JJ influential) (NN commissioner)
+              (CC and)
+              (NN president))
+            (PP (IN of)
+              (NP (DT the) (JJ first) (NNP Minneapolis) (NN park) (NN board)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Loring
+			coref:	IDENT			0	0-0	Loring 
+			name:	PERSON				0-0	Loring 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	remembered
+			sense:	remember.v.02
+			prop:	remember.01
+			V		2-2	remembered 
+			N-ARG-A1		0-0	Loring 
+			N-ARG-A2		3-14	as the influential commissioner and president of the first Minneapolis park board 
+	3	as
+	4	the
+	5	influential
+			sense:	influential.a.01
+	6	commissioner
+			sense:	commissioner.n.01
+	7	and
+	8	president
+			name:	TITLE				8-8	president 
+			sense:	president.n.04
+	9	of
+	10	the
+	11	first
+			name:	ORDINAL				11-11	first 
+			sense:	first.a.01
+	12	Minneapolis
+			name:	CITY				12-12	Minneapolis 
+	13	park
+			sense:	park.n.01
+	14	board
+			sense:	board.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Considered the " Father of the Park System " in Minneapolis , Loring encouraged the city to work with Horace Cleveland , one of the first landscape architects , and park superintendents William W. Berry and Theodore Wirth .
+
+
+Treebanked sentence:
+--------------------
+Considered the " Father of the Park System " in Minneapolis , Loring encouraged the city to work with Horace Cleveland , one of the first landscape architects , and park superintendents William W. Berry and Theodore Wirth . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Considered)
+        (NP (DT the)
+          (NML (`` ")
+            (NP (NNP Father))
+            (PP (IN of)
+              (NP (DT the) (NNP Park) (NNP System)))
+            ('' ")))
+        (PP (IN in)
+          (NP (NNP Minneapolis)))))
+    (, ,)
+    (NP (NNP Loring))
+    (VP (VBD encouraged)
+      (NP (DT the) (NN city))
+      (S
+        (VP (TO to)
+          (VP (VB work)
+            (PP (IN with)
+              (NP
+                (NP (NNP Horace) (NNP Cleveland))
+                (, ,)
+                (NP
+                  (NP (CD one))
+                  (PP (IN of)
+                    (NP (DT the) (JJ first) (NN landscape) (NNS architects))))
+                (, ,)
+                (CC and)
+                (NP (NN park) (NNS superintendents))))
+            (NP
+              (NP (NNP William) (NNP W.) (NNP Berry))
+              (CC and)
+              (NP (NNP Theodore) (NNP Wirth)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Considered
+			sense:	see.v.05
+			prop:	consider.01
+			V		0-0	Considered 
+			N-ARG-A1		1-10	the " Father of the Park System " in Minneapolis 
+	1	the
+	2	"
+	3	Father
+	4	of
+	5	the
+	6	Park
+			name:	MISC				6-7	Park System 
+	7	System
+	8	"
+	9	in
+	10	Minneapolis
+			name:	CITY				10-10	Minneapolis 
+	11	,
+	12	Loring
+			coref:	IDENT			0	12-12	Loring 
+			name:	PERSON				12-12	Loring 
+	13	encouraged
+			sense:	promote.v.01
+			prop:	encourage.01
+			V		13-13	encouraged 
+			R-ARG-A0		0-10	Considered the " Father of the Park System " in Minneapolis 
+			N-ARG-A0		12-12	Loring 
+			N-ARG-A1		14-15	the city 
+			N-ARG-A2		16-37	to work with Horace Cleveland , one of the first landscape architects , and park superintendents William W. Berry and Theodore Wirth 
+	14	the
+			coref:	IDENT			1	14-15	the city 
+	15	city
+			sense:	city.n.02
+	16	to
+	17	work
+			sense:	work.v.01
+			prop:	work.01
+			V		17-17	work 
+			N-ARG-A0		14-15	the city 
+			N-ARG-A3		18-37	with Horace Cleveland , one of the first landscape architects , and park superintendents William W. Berry and Theodore Wirth 
+	18	with
+	19	Horace
+			name:	PERSON				19-20	Horace Cleveland 
+	20	Cleveland
+	21	,
+	22	one
+			name:	NUMBER				22-22	one 
+	23	of
+	24	the
+	25	first
+			name:	ORDINAL				25-25	first 
+			sense:	first.a.01
+	26	landscape
+			sense:	landscape.n.03
+	27	architects
+			sense:	architect.n.01
+	28	,
+	29	and
+	30	park
+			sense:	park.n.01
+	31	superintendents
+			sense:	overseer.n.01
+	32	William
+			name:	PERSON				32-34	William W. Berry 
+	33	W.
+	34	Berry
+	35	and
+	36	Theodore
+			name:	PERSON				36-37	Theodore Wirth 
+	37	Wirth
+	38	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The city built what has been called , " the best - located , best - financed , best - designed , and best - maintained public open space in America . "
+
+
+Treebanked sentence:
+--------------------
+The city built what has been called , " the best - located , best - financed , best - designed , and best - maintained public open space in America . " 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN city))
+    (VP (VBD built)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (VBZ has)
+            (VP (VBN been)
+              (VP (VBN called)
+                (S (, ,) (`` ")
+                  (NP
+                    (NP
+                      (NP
+                        (NP (DT the) (RBS best))
+                        (HYPH -)
+                        (VP (VBN located)))
+                      (, ,)
+                      (ADJP (RB best) (HYPH -) (VBN financed)))
+                    (, ,)
+                    (NP
+                      (NP
+                        (NP
+                          (ADJP (JJS best) (HYPH -) (VBN designed)))
+                        (, ,)
+                        (CC and)
+                        (NP
+                          (ADJP (RB best) (HYPH -) (VBN maintained)))
+                        (NML (JJ public) (JJ open) (NN space)))
+                      (PP (IN in)
+                        (NP (NNP America))))))))))))
+    (. .) ('' ")))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The city 
+	1	city
+			sense:	city.n.02
+	2	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		2-2	built 
+			N-ARG-A0		0-1	The city 
+			N-ARG-A1		3-30	what has been called , " the best - located , best - financed , best - designed , and best - maintained public open space in America 
+	3	what
+	4	has
+			sense:	have.v.02
+			prop:	have.01
+			V		4-4	has 
+	5	been
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	been 
+	6	called
+			sense:	call.v.02
+			prop:	call.01
+			V		6-6	called 
+			N-ARG-A1		3-3	what 
+			N-ARG-A2		9-30	the best - located , best - financed , best - designed , and best - maintained public open space in America 
+	7	,
+	8	"
+	9	the
+	10	best
+			sense:	well.r.01
+	11	-
+	12	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		12-12	located 
+			N-ARGM-MNR		10-10	best 
+			N-ARG-A1		26-28	public open space 
+	13	,
+	14	best
+			sense:	best.r.01
+	15	-
+	16	financed
+			sense:	finance.v.01
+			prop:	finance.01
+			V		16-16	financed 
+			N-ARGM-ADV		14-14	best 
+			N-ARG-A1		26-28	public open space 
+	17	,
+	18	best
+			sense:	good.a.01
+	19	-
+	20	designed
+			sense:	design.v.04
+			prop:	design.01
+			V		20-20	designed 
+			N-ARGM-ADV		18-18	best 
+			N-ARG-A1		26-28	public open space 
+	21	,
+	22	and
+	23	best
+			sense:	best.r.01
+	24	-
+	25	maintained
+			sense:	conserve.v.02
+			prop:	maintain.01
+			V		25-25	maintained 
+			N-ARGM-MNR		23-23	best 
+			N-ARG-A1		26-28	public open space 
+	26	public
+			sense:	public.a.01
+	27	open
+			sense:	clear.s.03
+	28	space
+			sense:	space.n.03
+	29	in
+	30	America
+			name:	COUNTRY				30-30	America 
+	31	.
+	32	"
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-2	Charles Morgridge Loring 
+				1.9-9	Loring 
+				1.20-20	he 
+				1.32-32	he 
+				2.0-0	He 
+				3.0-0	Loring 
+				4.12-12	Loring 
+	Chain 1 (IDENT)
+				4.14-15	the city 
+				5.0-1	The city 
+

@@ -1,0 +1,617 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+João Paulo de Leiria e Silva ( born 13 November 1964 in Luanda ) is an Angolan sport shooter .
+
+
+Treebanked sentence:
+--------------------
+João Paulo de Leiria e Silva ( born 13 November 1964 in Luanda ) is an Angolan sport shooter . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP João) (NNP Paulo) (NNP de) (NNP Leiria) (NNP e) (NNP Silva))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 13))
+        (NP-TMP (NNP November) (CD 1964))
+        (PP (IN in)
+          (NP (NNP Luanda))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT an) (JJ Angolan) (NN sport) (NN shooter)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	João
+			coref:	IDENT			1	0-12	João Paulo de Leiria e Silva ( born 13 November 1964 in Luanda 
+			name:	PERSON				0-3	João Paulo de Leiria 
+	1	Paulo
+	2	de
+	3	Leiria
+	4	e
+	5	Silva
+			name:	PERSON				5-5	Silva 
+	6	(
+	7	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		7-7	born 
+			N-ARG-A1		0-5	João Paulo de Leiria e Silva 
+			N-ARGM-TMP		8-10	13 November 1964 
+			N-ARGM-LOC		11-12	in Luanda 
+	8	13
+			name:	DATE				8-10	13 November 1964 
+	9	November
+	10	1964
+	11	in
+	12	Luanda
+			name:	CITY				12-12	Luanda 
+	13	)
+	14	is
+			sense:	be.v.02
+			prop:	be.01
+			V		14-14	is 
+			N-ARG-A1		0-13	João Paulo de Leiria e Silva ( born 13 November 1964 in Luanda ) 
+			N-ARG-A2		15-18	an Angolan sport shooter 
+	15	an
+	16	Angolan
+			name:	NATIONALITY				16-16	Angolan 
+	17	sport
+			sense:	sport.n.01
+	18	shooter
+			name:	TITLE				18-18	shooter 
+			sense:	shot.n.05
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He became the only sport shooter to represent Angola at the 2000 Summer Olympics , and the second from his country to do so in Olympic history ( the first being done by Paulo Morais in Atlanta 1996 ) .
+
+
+Treebanked sentence:
+--------------------
+He became the only sport shooter to represent Angola at the 2000 Summer Olympics , and the second from his country to do so in Olympic history ( the first being done by Paulo Morais in Atlanta 1996 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD became)
+      (NP (DT the) (JJ only) (NN sport) (NN shooter))
+      (S
+        (VP (TO to)
+          (VP (VB represent)
+            (NP
+              (NP
+                (NP (NNP Angola))
+                (PP (IN at)
+                  (NP (DT the) (CD 2000) (NNP Summer) (NNPS Olympics))))
+              (, ,)
+              (CC and)
+              (NP
+                (NP (DT the) (JJ second))
+                (PP (IN from)
+                  (NP (PRP$ his) (NN country)))))
+            (S
+              (VP (TO to)
+                (VP (VB do)
+                  (ADVP (RB so))
+                  (PP (IN in)
+                    (NP (JJ Olympic) (NN history)
+                      (PRN (-LRB- -LRB-)
+                        (NP
+                          (NP (DT the) (JJ first) (NN being))
+                          (VP (VBN done)
+                            (PP (IN by)
+                              (NP
+                                (NP (NNP Paulo) (NNP Morais))
+                                (PP (IN in)
+                                  (NP (NNP Atlanta) (CD 1996)))))))
+                        (-RRB- -RRB-)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	became
+			sense:	become.v.02
+			prop:	become.01
+			V		1-1	became 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-38	the only sport shooter to represent Angola at the 2000 Summer Olympics , and the second from his country to do so in Olympic history ( the first being done by Paulo Morais in Atlanta 1996 ) 
+	2	the
+	3	only
+			sense:	lone.s.03
+	4	sport
+			sense:	sport.n.01
+	5	shooter
+			name:	TITLE				5-5	shooter 
+			sense:	shot.n.05
+	6	to
+	7	represent
+			sense:	represent.v.04
+			prop:	represent.01
+			V		7-7	represent 
+			N-ARG-A0		2-5	the only sport shooter 
+			N-ARG-A1		8-8	Angola 
+			N-ARGM-LOC		9-13	at the 2000 Summer Olympics 
+	8	Angola
+			coref:	IDENT			0	8-8	Angola 
+			name:	COUNTRY				8-8	Angola 
+	9	at
+	10	the
+			coref:	IDENT			2	10-13	the 2000 Summer Olympics 
+			name:	DATE				10-12	the 2000 Summer 
+	11	2000
+	12	Summer
+	13	Olympics
+			name:	MISC				13-13	Olympics 
+	14	,
+	15	and
+	16	the
+	17	second
+			name:	ORDINAL				17-17	second 
+			sense:	second.s.01
+	18	from
+	19	his
+			coref:	IDENT			0	19-20	his country 
+			coref:	IDENT			1	19-19	his 
+	20	country
+			sense:	country.n.02
+	21	to
+	22	do
+			sense:	make.v.01
+			prop:	do.02
+			V		22-22	do 
+			N-ARG-A0		16-20	the second from his country 
+			N-ARG-A1		23-23	so 
+			N-ARGM-TMP		24-26	in Olympic history 
+	23	so
+			sense:	so.r.03
+	24	in
+	25	Olympic
+			name:	MISC				25-25	Olympic 
+	26	history
+			sense:	history.n.01
+	27	(
+	28	the
+	29	first
+			name:	ORDINAL				29-29	first 
+			sense:	first.a.01
+	30	being
+			sense:	being.n.01
+	31	done
+			sense:	make.v.01
+			prop:	do.02
+			V		31-31	done 
+			N-ARG-A1		28-29	the first 
+			N-ARG-A0		32-34	by Paulo Morais 
+			N-ARGM-LOC		35-36	in Atlanta 
+			N-ARGM-TMP		37-37	1996 
+	32	by
+	33	Paulo
+			name:	PERSON				33-34	Paulo Morais 
+	34	Morais
+	35	in
+	36	Atlanta
+			name:	CITY				36-36	Atlanta 
+	37	1996
+			name:	DATE				37-37	1996 
+	38	)
+	39	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+De Silva competed for the Angolan squad in the men 's trap at the 2000 Summer Olympics through a Tripartite Commission Invitation .
+
+
+Treebanked sentence:
+--------------------
+De Silva competed for the Angolan squad in the men 's trap at the 2000 Summer Olympics through a Tripartite Commission Invitation . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP De) (NNP Silva))
+    (VP (VBD competed)
+      (PP (IN for)
+        (NP
+          (NP (DT the) (JJ Angolan) (NN squad))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NNS men) (POS 's))
+              (NN trap)))))
+      (PP (IN at)
+        (NP (DT the) (CD 2000) (NNP Summer) (NNPS Olympics)))
+      (PP (IN through)
+        (NP (DT a) (JJ Tripartite) (NN Commission) (NN Invitation))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	De
+			coref:	IDENT			1	0-1	De Silva 
+			name:	PERSON				0-1	De Silva 
+	1	Silva
+	2	competed
+			sense:	compete.v.01
+			prop:	compete.01
+			V		2-2	competed 
+			N-ARG-A0		0-1	De Silva 
+			N-ARG-A2		3-6	for the Angolan squad 
+			N-ARGM-LOC		7-11	in the men 's trap 
+			N-ARGM-LOC		12-16	at the 2000 Summer Olympics 
+			N-ARGM-MNR		17-21	through a Tripartite Commission Invitation 
+	3	for
+	4	the
+	5	Angolan
+			name:	NATIONALITY				5-5	Angolan 
+	6	squad
+			sense:	team.n.01
+	7	in
+	8	the
+	9	men
+			sense:	man.n.01
+	10	's
+	11	trap
+			sense:	trap.n.04
+	12	at
+	13	the
+			coref:	IDENT			2	13-16	the 2000 Summer Olympics 
+			name:	DATE				13-15	the 2000 Summer 
+	14	2000
+	15	Summer
+	16	Olympics
+			name:	MISC				16-16	Olympics 
+	17	through
+	18	a
+	19	Tripartite
+			name:	ORGANIZATION				19-21	Tripartite Commission Invitation 
+			sense:	tripartite.s.01
+	20	Commission
+			sense:	committee.n.01
+	21	Invitation
+			sense:	invitation.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He shuttered the lowest score in the qualifying round with 99 hits out of a possible 125 , placing him in last from a field of forty - one shooters .
+
+
+Treebanked sentence:
+--------------------
+He shuttered the lowest score in the qualifying round with 99 hits out of a possible 125 , placing him in last from a field of forty - one shooters . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD shuttered)
+      (NP
+        (NP (DT the) (JJS lowest) (NN score))
+        (PP (IN in)
+          (NP (DT the) (NN qualifying) (NN round))))
+      (PP (IN with)
+        (NP (CD 99) (NNS hits)))
+      (PP (IN out)
+        (PP (IN of)
+          (NP (DT a) (JJ possible) (CD 125))))
+      (, ,)
+      (S
+        (VP (VBG placing)
+          (NP (PRP him))
+          (PP (IN in)
+            (NP
+              (NP (JJ last))
+              (PP (IN from)
+                (NP
+                  (NP (DT a) (NN field))
+                  (PP (IN of)
+                    (NP
+                      (QP (CD forty) (HYPH -) (CD one))
+                      (NNS shooters))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	shuttered
+			sense:	shutter.v.01
+			prop:	shutter.01
+			V		1-1	shuttered 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-8	the lowest score in the qualifying round 
+			N-ARGM-MNR		9-16	with 99 hits out of a possible 125 
+			N-ARGM-ADV		18-29	placing him in last from a field of forty - one shooters 
+	2	the
+	3	lowest
+			sense:	low.a.01
+	4	score
+			sense:	score.n.03
+	5	in
+	6	the
+	7	qualifying
+			sense:	passing.n.07
+	8	round
+			sense:	cycle.n.01
+	9	with
+	10	99
+			name:	NUMBER				10-10	99 
+	11	hits
+			sense:	hit.n.01
+	12	out
+	13	of
+	14	a
+	15	possible
+			sense:	possible.a.01
+	16	125
+			name:	NUMBER				16-16	125 
+	17	,
+	18	placing
+			sense:	rate.v.01
+			prop:	place.01
+			V		18-18	placing 
+			N-ARG-A1		19-19	him 
+			N-ARG-A2		20-21	in last 
+			N-ARGM-ADV		22-29	from a field of forty - one shooters 
+	19	him
+			coref:	IDENT			1	19-19	him 
+	20	in
+	21	last
+			sense:	last.s.09
+	22	from
+	23	a
+	24	field
+			sense:	field.n.13
+	25	of
+	26	forty
+			name:	NUMBER				26-26	forty 
+	27	-
+	28	one
+			name:	NUMBER				28-28	one 
+	29	shooters
+			sense:	shot.n.05
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the 2016 Summer Olympics in Rio de Janeiro , he competed in the men 's trap competition thanks to another Tripartite Commission invitation .
+
+
+Treebanked sentence:
+--------------------
+At the 2016 Summer Olympics in Rio de Janeiro , he competed in the men 's trap competition thanks to another Tripartite Commission invitation . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (DT the) (CD 2016) (NNP Summer) (NNPS Olympics))
+        (PP (IN in)
+          (NP (NNP Rio) (NNP de) (NNP Janeiro)))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD competed)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NNS men) (POS 's))
+          (NN trap) (NN competition) (NNS thanks)))
+      (PP (IN to)
+        (NP (DT another) (JJ Tripartite) (NN Commission) (NN invitation))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+			name:	DATE				1-3	the 2016 Summer 
+	2	2016
+	3	Summer
+	4	Olympics
+			name:	MISC				4-4	Olympics 
+	5	in
+	6	Rio
+			name:	CITY				6-8	Rio de Janeiro 
+	7	de
+	8	Janeiro
+	9	,
+	10	he
+			coref:	IDENT			1	10-10	he 
+	11	competed
+			sense:	compete.v.01
+			prop:	compete.01
+			V		11-11	competed 
+			N-ARGM-LOC		0-8	At the 2016 Summer Olympics in Rio de Janeiro 
+			N-ARG-A0		10-10	he 
+			N-ARGM-LOC		12-17	in the men 's trap competition 
+			N-ARGM-CAU		18-23	thanks to another Tripartite Commission invitation 
+	12	in
+	13	the
+	14	men
+			sense:	man.n.01
+	15	's
+	16	trap
+			sense:	trap.n.04
+	17	competition
+			sense:	contest.n.01
+	18	thanks
+			sense:	thanks.n.02
+	19	to
+	20	another
+	21	Tripartite
+			name:	ORGANIZATION				21-22	Tripartite Commission 
+			sense:	tripartite.s.01
+	22	Commission
+			sense:	committee.n.01
+	23	invitation
+			sense:	invitation.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He finished 33rd in the qualification round and did not advance .
+
+
+Treebanked sentence:
+--------------------
+He finished 33rd in the qualification round and did not advance . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD finished)
+        (NP (JJ 33rd))
+        (PP (IN in)
+          (NP (DT the) (NN qualification) (NN round))))
+      (CC and)
+      (VP (VBD did)
+        (NP (RB not) (NN advance))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	finished
+			sense:	end.v.01
+			prop:	finish.02
+			V		1-1	finished 
+			N-ARG-A1		0-0	He 
+			N-ARGM-EXT		2-2	33rd 
+			N-ARGM-LOC		3-6	in the qualification round 
+	2	33rd
+			name:	ORDINAL				2-2	33rd 
+			sense:	thirty-third.s.01
+	3	in
+	4	the
+	5	qualification
+			sense:	qualification.n.01
+	6	round
+			sense:	cycle.n.01
+	7	and
+	8	did
+			sense:	make.v.01
+			prop:	do.01
+			V		8-8	did 
+	9	not
+			sense:	not.r.01
+	10	advance
+			sense:	progress.n.02
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was the oldest member of Angola 's 2016 Olympic team .
+
+
+Treebanked sentence:
+--------------------
+He was the oldest member of Angola 's 2016 Olympic team . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (JJS oldest) (NN member))
+        (PP (IN of)
+          (NP
+            (NP (NNP Angola) (POS 's))
+            (CD 2016) (JJ Olympic) (NN team)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			1	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-10	the oldest member of Angola 's 2016 Olympic team 
+	2	the
+	3	oldest
+			sense:	old.a.01
+	4	member
+			sense:	member.n.01
+	5	of
+	6	Angola
+			coref:	IDENT			0	6-7	Angola 's 
+			name:	COUNTRY				6-6	Angola 
+	7	's
+	8	2016
+			name:	DATE				8-8	2016 
+	9	Olympic
+			name:	MISC				9-9	Olympic 
+	10	team
+			sense:	team.n.01
+	11	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				6.6-7	Angola 's 
+				1.8-8	Angola 
+				1.19-20	his country 
+	Chain 1 (IDENT)
+				0.0-12	João Paulo de Leiria e Silva ( born 13 November 1964 in Luanda 
+				1.0-0	He 
+				1.19-19	his 
+				2.0-1	De Silva 
+				3.0-0	He 
+				3.19-19	him 
+				4.10-10	he 
+				5.0-0	He 
+				6.0-0	He 
+	Chain 2 (IDENT)
+				1.10-13	the 2000 Summer Olympics 
+				2.13-16	the 2000 Summer Olympics 
+

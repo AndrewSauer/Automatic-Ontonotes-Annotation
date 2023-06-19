@@ -1,0 +1,627 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Aleksander Lasoń ( born 10 November 1951 ) is a Polish composer and teacher .
+
+
+Treebanked sentence:
+--------------------
+Aleksander Lasoń ( born 10 November 1951 ) is a Polish composer and teacher . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Aleksander) (NNP Lasoń))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 10))
+        (NP-TMP (NNP November) (CD 1951)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (JJ Polish) (NN composer)
+        (CC and)
+        (NN teacher)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Aleksander
+			coref:	IDENT			0	0-1	Aleksander Lasoń 
+			name:	PERSON				0-1	Aleksander Lasoń 
+	1	Lasoń
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Aleksander Lasoń 
+			N-ARGM-TMP		4-6	10 November 1951 
+	4	10
+			name:	DATE				4-6	10 November 1951 
+	5	November
+	6	1951
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	Aleksander Lasoń ( born 10 November 1951 ) 
+			N-ARG-A2		9-13	a Polish composer and teacher 
+	9	a
+	10	Polish
+			name:	NATIONALITY				10-10	Polish 
+	11	composer
+			name:	TITLE				11-11	composer 
+			sense:	composer.n.01
+	12	and
+	13	teacher
+			name:	TITLE				13-13	teacher 
+			sense:	teacher.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was born in Siemianowice Śląskie .
+
+
+Treebanked sentence:
+--------------------
+He was born in Siemianowice Śląskie . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Siemianowice) (NNP Śląskie)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	He 
+			N-ARGM-LOC		3-5	in Siemianowice Śląskie 
+	3	in
+	4	Siemianowice
+			name:	LOCATION				4-5	Siemianowice Śląskie 
+	5	Śląskie
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He studied composition under professor Józef Świder 's at The Karol Szymanowski Academy of Music in Katowice .
+
+
+Treebanked sentence:
+--------------------
+He studied composition under professor Józef Świder 's at The Karol Szymanowski Academy of Music in Katowice . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD studied)
+      (NP (NN composition))
+      (PP (IN under)
+        (NP
+          (NP (NN professor) (NNP Józef) (NNP Świder) (POS 's))
+          (PP (IN at)
+            (NP (DT The)
+              (NML (NNP Karol) (NNP Szymanowski))
+              (NNP Academy)))
+          (PP (IN of)
+            (NP (NNP Music)))))
+      (PP (IN in)
+        (NP (NNP Katowice))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	studied
+			sense:	learn.v.04
+			prop:	study.01
+			V		1-1	studied 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-2	composition 
+			N-ARGM-LOC		3-7	under professor Józef Świder 's 
+			N-ARGM-LOC		8-16	at The Karol Szymanowski Academy of Music in Katowice 
+	2	composition
+			sense:	composing.n.02
+	3	under
+	4	professor
+			name:	TITLE				4-4	professor 
+			sense:	professor.n.01
+	5	Józef
+			name:	PERSON				5-6	Józef Świder 
+	6	Świder
+	7	's
+	8	at
+	9	The
+	10	Karol
+			name:	ORGANIZATION				10-14	Karol Szymanowski Academy of Music 
+	11	Szymanowski
+	12	Academy
+	13	of
+	14	Music
+	15	in
+	16	Katowice
+			coref:	IDENT			2	16-16	Katowice 
+			name:	CITY				16-16	Katowice 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is professor at the University of Silesia and at the Academy of Music in Katowice .
+
+
+Treebanked sentence:
+--------------------
+He is professor at the University of Silesia and at the Academy of Music in Katowice . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP (NN professor))
+        (PP
+          (PP (IN at)
+            (NP
+              (NP (DT the) (NNP University))
+              (PP (IN of)
+                (NP (NNP Silesia)))))
+          (CC and)
+          (PP (IN at)
+            (NP
+              (NP (DT the) (NNP Academy))
+              (PP (IN of)
+                (NP
+                  (NP (NNP Music))
+                  (PP (IN in)
+                    (NP (NNP Katowice))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	is
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-15	professor at the University of Silesia and at the Academy of Music in Katowice 
+	2	professor
+			name:	TITLE				2-2	professor 
+			sense:	professor.n.01
+	3	at
+	4	the
+	5	University
+			name:	ORGANIZATION				5-7	University of Silesia 
+	6	of
+	7	Silesia
+	8	and
+	9	at
+	10	the
+	11	Academy
+			name:	ORGANIZATION				11-13	Academy of Music 
+	12	of
+	13	Music
+	14	in
+	15	Katowice
+			coref:	IDENT			2	15-15	Katowice 
+			name:	CITY				15-15	Katowice 
+	16	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He has received numerous awards and commissions , including The Beethoven Prize of the City of Bonn in 1980 for his Symphony No .
+
+
+Treebanked sentence:
+--------------------
+He has received numerous awards and commissions , including The Beethoven Prize of the City of Bonn in 1980 for his Symphony No . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ has)
+      (VP (VBN received)
+        (NP (JJ numerous) (NNS awards)
+          (CC and)
+          (NNS commissions))
+        (, ,)
+        (PP (VBG including)
+          (NP
+            (NP (DT The) (NNP Beethoven) (NNP Prize))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNP City))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP Bonn))
+                    (PP (IN in)
+                      (NP
+                        (NP (CD 1980))
+                        (PP (IN for)
+                          (NP (PRP$ his) (NNP Symphony) (NNP No)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	received
+			sense:	receive.v.01
+			prop:	receive.01
+			V		2-2	received 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		3-22	numerous awards and commissions , including The Beethoven Prize of the City of Bonn in 1980 for his Symphony No 
+	3	numerous
+			sense:	numerous.s.01
+	4	awards
+			sense:	award.n.02
+	5	and
+	6	commissions
+			sense:	mission.n.03
+	7	,
+	8	including
+			sense:	include.v.01
+			prop:	include.01
+			V		8-8	including 
+			N-ARG-A2		3-6	numerous awards and commissions 
+			N-ARG-A1		9-22	The Beethoven Prize of the City of Bonn in 1980 for his Symphony No 
+	9	The
+	10	Beethoven
+	11	Prize
+	12	of
+	13	the
+	14	City
+	15	of
+	16	Bonn
+			name:	CITY				16-16	Bonn 
+	17	in
+	18	1980
+			coref:	IDENT			3	18-18	1980 
+			name:	DATE				18-18	1980 
+	19	for
+	20	his
+			coref:	IDENT			0	20-20	his 
+			coref:	IDENT			1	20-22	his Symphony No 
+	21	Symphony
+	22	No
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+2 , Concertante for piano and orchestra ; he received three coveted awards at the UNESCO 's International Tribune of Composers in Paris : in 1980 , he was awarded first place for his Symphony No .
+
+
+Treebanked sentence:
+--------------------
+2 , Concertante for piano and orchestra ; he received three coveted awards at the UNESCO 's International Tribune of Composers in Paris : in 1980 , he was awarded first place for his Symphony No . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (CD 2))
+        (, ,)
+        (NP
+          (NP (NNP Concertante))
+          (PP (IN for)
+            (NP (NN piano)
+              (CC and)
+              (NN orchestra)))))
+      (: ;)
+      (NP (PRP he))
+      (VP (VBD received)
+        (NP (CD three) (JJ coveted) (NNS awards))
+        (PP (IN at)
+          (NP
+            (NP
+              (NP (DT the) (NNP UNESCO) (POS 's))
+              (NNP International) (NNP Tribune))
+            (PP (IN of)
+              (NP (NNPS Composers)))))
+        (PP (IN in)
+          (NP (NNP Paris)))))
+    (: :)
+    (S
+      (PP (IN in)
+        (NP (CD 1980)))
+      (, ,)
+      (NP (PRP he))
+      (VP (VBD was)
+        (VP (VBN awarded)
+          (NP (JJ first) (NN place))
+          (PP (IN for)
+            (NP (PRP$ his) (NNP Symphony) (NNP No))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	2
+			name:	NUMBER				0-0	2 
+	1	,
+	2	Concertante
+	3	for
+	4	piano
+			sense:	piano.n.01
+	5	and
+	6	orchestra
+			sense:	orchestra.n.01
+	7	;
+	8	he
+			coref:	IDENT			0	8-8	he 
+	9	received
+			sense:	receive.v.01
+			prop:	receive.01
+			V		9-9	received 
+			N-ARG-A0		8-8	he 
+			N-ARG-A1		10-12	three coveted awards 
+			N-ARGM-LOC		13-22	at the UNESCO 's International Tribune of Composers in Paris 
+	10	three
+			name:	NUMBER				10-10	three 
+	11	coveted
+			sense:	coveted.s.01
+	12	awards
+			sense:	award.n.02
+	13	at
+	14	the
+	15	UNESCO
+			name:	ORGANIZATION				15-15	UNESCO 
+	16	's
+	17	International
+			name:	ORGANIZATION				17-18	International Tribune 
+	18	Tribune
+	19	of
+	20	Composers
+	21	in
+	22	Paris
+			name:	CITY				22-22	Paris 
+	23	:
+	24	in
+	25	1980
+			coref:	IDENT			3	25-25	1980 
+			name:	DATE				25-25	1980 
+	26	,
+	27	he
+			coref:	IDENT			0	27-27	he 
+	28	was
+			sense:	be.v.01
+			prop:	be.03
+			V		28-28	was 
+	29	awarded
+			sense:	award.v.02
+			prop:	award.01
+			V		29-29	awarded 
+			N-ARGM-TMP		24-25	in 1980 
+			N-ARG-A2		27-27	he 
+			N-ARG-A1		30-31	first place 
+			N-ARGM-CAU		32-35	for his Symphony No 
+	30	first
+			name:	ORDINAL				30-30	first 
+			sense:	first.s.05
+	31	place
+			sense:	place.n.15
+	32	for
+	33	his
+			coref:	IDENT			0	33-33	his 
+			coref:	IDENT			1	33-35	his Symphony No 
+	34	Symphony
+	35	No
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+1 for brass instruments , percussion and two pianos , in 1988—his String Quartet No .
+
+
+Treebanked sentence:
+--------------------
+1 for brass instruments , percussion and two pianos , in 1988 — his String Quartet No . 
+
+Tree:
+-----
+(ROOT
+  (FRAG
+    (NP
+      (NP (CD 1))
+      (PP (IN for)
+        (NP
+          (NP (NN brass) (NNS instruments))
+          (, ,)
+          (NP (NN percussion))
+          (CC and)
+          (NP (CD two) (NNS pianos))))
+      (, ,)
+      (PP (IN in)
+        (NP
+          (NP (CD 1988))
+          (HYPH —)
+          (NP (PRP$ his) (NN String) (NN Quartet)))))
+    (INTJ (UH No))
+    (. .)))
+
+
+Leaves:
+-------
+	0	1
+			name:	NUMBER				0-0	1 
+	1	for
+	2	brass
+			sense:	brass_section.n.01
+	3	instruments
+			sense:	musical_instrument.n.01
+	4	,
+	5	percussion
+			sense:	percussion_section.n.01
+	6	and
+	7	two
+			name:	NUMBER				7-7	two 
+	8	pianos
+			sense:	piano.n.01
+	9	,
+	10	in
+	11	1988
+			name:	DATE				11-11	1988 
+	12	—
+	13	his
+			coref:	IDENT			0	13-13	his 
+	14	String
+			sense:	bowed_stringed_instrument.n.01
+	15	Quartet
+			sense:	quartet.n.05
+	16	No
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+2 and in 1997—his Concerto Festivo for violin and orchestra , were distinguished .
+
+
+Treebanked sentence:
+--------------------
+2 and in 1997 — his Concerto Festivo for violin and orchestra , were distinguished . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (CD 2))
+      (CC and)
+      (NP
+        (PP (IN in)
+          (NP
+            (NP (CD 1997))
+            (HYPH —)
+            (NP (PRP$ his) (NNP Concerto) (NNP Festivo))))
+        (PP (IN for)
+          (NP (NN violin)
+            (CC and)
+            (NN orchestra)))))
+    (, ,)
+    (VP (VBD were)
+      (VP (VBN distinguished)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	2
+			name:	NUMBER				0-0	2 
+	1	and
+	2	in
+	3	1997
+			name:	DATE				3-3	1997 
+	4	—
+	5	his
+			coref:	IDENT			0	5-5	his 
+	6	Concerto
+	7	Festivo
+	8	for
+	9	violin
+			sense:	violin.n.01
+	10	and
+	11	orchestra
+			sense:	orchestra.n.01
+	12	,
+	13	were
+			sense:	be.v.01
+			prop:	be.01
+			V		13-13	were 
+			N-ARGM-TMP		2-3	in 1997 
+			N-ARG-A1		5-11	his Concerto Festivo for violin and orchestra 
+			N-ARG-A2		14-14	distinguished 
+	14	distinguished
+			sense:	signalize.v.04
+			prop:	distinguish.01
+			V		14-14	distinguished 
+			N-ARGM-TMP		2-3	in 1997 
+			N-ARG-A1		5-11	his Concerto Festivo for violin and orchestra 
+	15	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Aleksander Lasoń 
+				1.0-0	He 
+				2.0-0	He 
+				3.0-0	He 
+				4.0-0	He 
+				4.20-20	his 
+				5.8-8	he 
+				5.27-27	he 
+				5.33-33	his 
+				6.13-13	his 
+				7.5-5	his 
+	Chain 1 (IDENT)
+				4.20-22	his Symphony No 
+				5.33-35	his Symphony No 
+	Chain 2 (IDENT)
+				2.16-16	Katowice 
+				3.15-15	Katowice 
+	Chain 3 (IDENT)
+				4.18-18	1980 
+				5.25-25	1980 
+

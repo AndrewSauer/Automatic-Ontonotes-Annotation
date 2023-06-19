@@ -1,0 +1,1234 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+John Hancock ( October 8 , 1793 ) was an American merchant , statesman , and prominent Patriot of the American Revolution .
+
+
+Treebanked sentence:
+--------------------
+John Hancock ( October 8 , 1793 ) was an American merchant , statesman , and prominent Patriot of the American Revolution . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP John) (NNP Hancock))
+      (-LRB- -LRB-)
+      (NP-TMP (NNP October) (CD 8) (, ,) (CD 1793))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (JJ American) (NN merchant))
+        (, ,)
+        (NP (NN statesman))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (JJ prominent) (NNP Patriot))
+          (PP (IN of)
+            (NP (DT the) (NNP American) (NNP Revolution))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	John
+			name:	PERSON				0-1	John Hancock 
+	1	Hancock
+	2	(
+	3	October
+			name:	DATE				3-6	October 8 , 1793 
+	4	8
+	5	,
+	6	1793
+	7	)
+	8	was
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	was 
+			N-ARG-A1		0-7	John Hancock ( October 8 , 1793 ) 
+			N-ARG-A2		9-21	an American merchant , statesman , and prominent Patriot of the American Revolution 
+	9	an
+	10	American
+			name:	NATIONALITY				10-10	American 
+	11	merchant
+			name:	TITLE				11-11	merchant 
+			sense:	merchant.n.01
+	12	,
+	13	statesman
+			sense:	statesman.n.01
+	14	,
+	15	and
+	16	prominent
+			sense:	big.s.05
+	17	Patriot
+	18	of
+	19	the
+			coref:	IDENT			5	19-21	the American Revolution 
+	20	American
+			name:	NATIONALITY				20-20	American 
+	21	Revolution
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He served as president of the Second Continental Congress and was the first and third Governor of the Commonwealth of Massachusetts .
+
+
+Treebanked sentence:
+--------------------
+He served as president of the Second Continental Congress and was the first and third Governor of the Commonwealth of Massachusetts . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD served)
+        (PP (IN as)
+          (NP
+            (NP (NN president))
+            (PP (IN of)
+              (NP (DT the) (NNP Second) (NNP Continental) (NNP Congress))))))
+      (CC and)
+      (VP (VBD was)
+        (NP
+          (NP (DT the)
+            (NML (JJ first)
+              (CC and)
+              (JJ third))
+            (NNP Governor))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP Commonwealth))
+              (PP (IN of)
+                (NP (NNP Massachusetts))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-8	as president of the Second Continental Congress 
+	2	as
+	3	president
+			name:	TITLE				3-3	president 
+			sense:	president.n.04
+	4	of
+	5	the
+			coref:	IDENT			6	5-8	the Second Continental Congress 
+			name:	DATE				5-5	the 
+	6	Second
+			name:	ORGANIZATION				6-8	Second Continental Congress 
+	7	Continental
+	8	Congress
+	9	and
+	10	was
+			sense:	be.v.02
+			prop:	be.01
+			V		10-10	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		11-20	the first and third Governor of the Commonwealth of Massachusetts 
+	11	the
+	12	first
+			name:	ORDINAL				12-14	first and third 
+			sense:	first.a.01
+	13	and
+	14	third
+			sense:	third.s.01
+	15	Governor
+			name:	TITLE				15-15	Governor 
+	16	of
+	17	the
+	18	Commonwealth
+	19	of
+	20	Massachusetts
+			coref:	IDENT			0	20-20	Massachusetts 
+			name:	STATE_OR_PROVINCE				20-20	Massachusetts 
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is remembered for his large and stylish signature on the United States Declaration of Independence , so much so that the term John Hancock has become a synonym in the United States for one 's signature .
+
+
+Treebanked sentence:
+--------------------
+He is remembered for his large and stylish signature on the United States Declaration of Independence , so much so that the term John Hancock has become a synonym in the United States for one 's signature . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (VP (VBN remembered)
+        (PP (IN for)
+          (NP (PRP$ his)
+            (ADJP (JJ large)
+              (CC and)
+              (JJ stylish))
+            (NN signature)))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NNP United) (NNP States) (NNP Declaration))
+            (PP (IN of)
+              (NP (NNP Independence)))))
+        (, ,)
+        (SBAR
+          (ADVP (RB so) (RB much))
+          (IN so) (IN that)
+          (S
+            (NP
+              (NP (DT the) (NN term))
+              (NP (NNP John) (NNP Hancock)))
+            (VP (VBZ has)
+              (VP (VBN become)
+                (NP
+                  (NP (DT a) (NN synonym))
+                  (PP (IN in)
+                    (NP (DT the) (NNP United) (NNP States))))
+                (PP (IN for)
+                  (NP
+                    (NP (CD one) (POS 's))
+                    (NN signature)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	remembered
+			sense:	remember.v.02
+			prop:	remember.01
+			V		2-2	remembered 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		3-15	for his large and stylish signature on the United States Declaration of Independence 
+			N-ARGM-EXT		17-36	so much so that the term John Hancock has become a synonym in the United States for one 's signature 
+	3	for
+	4	his
+			coref:	IDENT			2	4-4	his 
+	5	large
+			sense:	large.a.01
+	6	and
+	7	stylish
+			sense:	fashionable.a.01
+	8	signature
+			sense:	signature.n.01
+	9	on
+	10	the
+	11	United
+			coref:	IDENT			3	11-12	United States 
+			name:	COUNTRY				11-12	United States 
+	12	States
+	13	Declaration
+	14	of
+	15	Independence
+	16	,
+	17	so
+			sense:	so.r.01
+	18	much
+			sense:	much.r.01
+	19	so
+	20	that
+	21	the
+	22	term
+			sense:	term.n.01
+	23	John
+			name:	PERSON				23-24	John Hancock 
+	24	Hancock
+	25	has
+			sense:	have.v.01
+			prop:	have.01
+			V		25-25	has 
+	26	become
+			sense:	become.v.02
+			prop:	become.01
+			V		26-26	become 
+			N-ARG-A1		21-24	the term John Hancock 
+			N-ARG-A2		27-36	a synonym in the United States for one 's signature 
+	27	a
+	28	synonym
+			sense:	synonym.n.01
+	29	in
+	30	the
+			coref:	IDENT			3	30-32	the United States 
+	31	United
+			name:	COUNTRY				31-32	United States 
+	32	States
+	33	for
+	34	one
+			name:	NUMBER				34-34	one 
+	35	's
+	36	signature
+			sense:	signature.n.01
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Before the American Revolution , Hancock was one of the wealthiest men in the Thirteen Colonies , having inherited a profitable mercantile business from his uncle .
+
+
+Treebanked sentence:
+--------------------
+Before the American Revolution , Hancock was one of the wealthiest men in the Thirteen Colonies , having inherited a profitable mercantile business from his uncle . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Before)
+      (NP (DT the) (NNP American) (NNP Revolution)))
+    (, ,)
+    (NP (NNP Hancock))
+    (VP (VBD was)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJS wealthiest) (NNS men))
+            (PP (IN in)
+              (NP (DT the) (NNP Thirteen) (NNPS Colonies))))))
+      (, ,)
+      (S
+        (VP (VBG having)
+          (VP (VBN inherited)
+            (NP (DT a)
+              (ADJP (JJ profitable) (JJ mercantile))
+              (NN business))
+            (PP (IN from)
+              (NP (PRP$ his) (NN uncle)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Before
+	1	the
+			coref:	IDENT			5	1-3	the American Revolution 
+	2	American
+			name:	NATIONALITY				2-2	American 
+	3	Revolution
+			name:	MISC				3-3	Revolution 
+	4	,
+	5	Hancock
+			coref:	IDENT			2	5-5	Hancock 
+			name:	PERSON				5-5	Hancock 
+	6	was
+			sense:	be.v.01
+			prop:	be.01
+			V		6-6	was 
+			N-ARGM-TMP		0-3	Before the American Revolution 
+			N-ARG-A1		5-5	Hancock 
+			N-ARG-A2		7-15	one of the wealthiest men in the Thirteen Colonies 
+	7	one
+			name:	NUMBER				7-7	one 
+	8	of
+	9	the
+			coref:	IDENT			4	9-15	the wealthiest men in the Thirteen Colonies 
+	10	wealthiest
+			sense:	affluent.s.01
+	11	men
+			sense:	man.n.01
+	12	in
+	13	the
+	14	Thirteen
+			name:	NUMBER				14-14	Thirteen 
+	15	Colonies
+	16	,
+	17	having
+			sense:	receive.v.01
+			prop:	shaving.01
+			V		17-17	having 
+	18	inherited
+			sense:	inherit.v.01
+			prop:	inherit.01
+			V		18-18	inherited 
+			N-ARG-A0		5-5	Hancock 
+			N-ARG-A1		19-22	a profitable mercantile business 
+			N-ARG-A2		23-25	from his uncle 
+	19	a
+	20	profitable
+			sense:	profitable.a.01
+	21	mercantile
+			sense:	mercantile.s.03
+	22	business
+			sense:	business.n.01
+	23	from
+	24	his
+			coref:	IDENT			2	24-24	his 
+	25	uncle
+			sense:	uncle.n.01
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He began his political career in Boston as a protégé of Samuel Adams , an influential local politician , though the two men later became estranged .
+
+
+Treebanked sentence:
+--------------------
+He began his political career in Boston as a protégé of Samuel Adams , an influential local politician , though the two men later became estranged . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD began)
+      (NP (PRP$ his) (JJ political) (NN career))
+      (PP (IN in)
+        (NP (NNP Boston)))
+      (PP (IN as)
+        (NP
+          (NP (DT a) (NN protégé))
+          (PP (IN of)
+            (NP
+              (NP (NNP Samuel) (NNP Adams))
+              (, ,)
+              (NP (DT an) (JJ influential) (JJ local) (NN politician))))))
+      (, ,)
+      (SBAR (IN though)
+        (S
+          (NP (DT the) (CD two) (NNS men))
+          (ADVP (RB later))
+          (VP (VBD became)
+            (ADJP (JJ estranged))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	began
+			sense:	get_down.v.07
+			prop:	begin.01
+			V		1-1	began 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-4	his political career 
+			N-ARGM-LOC		5-6	in Boston 
+			N-ARGM-PRD		7-17	as a protégé of Samuel Adams , an influential local politician 
+			N-ARGM-ADV		19-25	though the two men later became estranged 
+	2	his
+			coref:	IDENT			2	2-2	his 
+	3	political
+			sense:	political.a.03
+	4	career
+			sense:	career.n.01
+	5	in
+	6	Boston
+			coref:	IDENT			1	6-6	Boston 
+			name:	CITY				6-6	Boston 
+	7	as
+	8	a
+	9	protégé
+	10	of
+	11	Samuel
+			name:	PERSON				11-12	Samuel Adams 
+	12	Adams
+	13	,
+	14	an
+	15	influential
+			sense:	influential.a.01
+	16	local
+			sense:	local.a.01
+	17	politician
+			name:	TITLE				17-17	politician 
+			sense:	politician.n.02
+	18	,
+	19	though
+	20	the
+			coref:	IDENT			4	20-22	the two men 
+	21	two
+			name:	NUMBER				21-21	two 
+	22	men
+			sense:	man.n.01
+	23	later
+			sense:	subsequently.r.01
+	24	became
+			sense:	become.v.01
+			prop:	become.01
+			V		24-24	became 
+			N-ARG-A1		20-22	the two men 
+			N-ARGM-TMP		23-23	later 
+			N-ARG-A2		25-25	estranged 
+	25	estranged
+			sense:	alienated.s.02
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Hancock used his wealth to support the colonial cause as tensions increased between colonists and Great Britain in the 1760s .
+
+
+Treebanked sentence:
+--------------------
+Hancock used his wealth to support the colonial cause as tensions increased between colonists and Great Britain in the 1760s . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Hancock))
+    (VP (VBD used)
+      (NP (PRP$ his) (NN wealth))
+      (S
+        (VP (TO to)
+          (VP (VB support)
+            (NP (DT the) (JJ colonial) (NN cause))
+            (PP (IN as)
+              (NP
+                (NP (NNS tensions))
+                (VP (VBN increased)
+                  (PP (IN between)
+                    (NP
+                      (NP (NNS colonists))
+                      (CC and)
+                      (NP (JJ Great) (NNP Britain))))
+                  (PP (IN in)
+                    (NP (DT the) (NNS 1760s))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Hancock
+			coref:	IDENT			2	0-0	Hancock 
+			name:	PERSON				0-0	Hancock 
+	1	used
+			sense:	use.v.01
+			prop:	use.01
+			V		1-1	used 
+			N-ARG-A0		0-0	Hancock 
+			N-ARG-A1		2-3	his wealth 
+			N-ARG-A2		4-8	to support the colonial cause 
+			N-ARGM-ADV		9-19	as tensions increased between colonists and Great Britain in the 1760s 
+	2	his
+			coref:	IDENT			2	2-2	his 
+	3	wealth
+			sense:	wealth.n.03
+	4	to
+	5	support
+			sense:	support.v.02
+			prop:	support.01
+			V		5-5	support 
+			N-ARG-A0		0-0	Hancock 
+			N-ARG-A1		6-8	the colonial cause 
+			N-ARGM-ADV		9-19	as tensions increased between colonists and Great Britain in the 1760s 
+	6	the
+	7	colonial
+			sense:	colonial.a.01
+	8	cause
+			sense:	campaign.n.02
+	9	as
+	10	tensions
+			sense:	latent_hostility.n.01
+	11	increased
+			sense:	increase.v.01
+			prop:	increase.01
+			V		11-11	increased 
+			N-ARG-A1		10-10	tensions 
+			C-ARG-A1		12-16	between colonists and Great Britain 
+			N-ARGM-TMP		17-19	in the 1760s 
+	12	between
+	13	colonists
+			sense:	settler.n.01
+	14	and
+	15	Great
+			name:	COUNTRY				15-16	Great Britain 
+			sense:	great.s.02
+	16	Britain
+	17	in
+	18	the
+			name:	DATE				18-19	the 1760s 
+	19	1760s
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He became very popular in Massachusetts , especially after British officials seized his sloop Liberty in 1768 and charged him with smuggling .
+
+
+Treebanked sentence:
+--------------------
+He became very popular in Massachusetts , especially after British officials seized his sloop Liberty in 1768 and charged him with smuggling . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD became)
+      (ADJP (RB very) (JJ popular)
+        (PP (IN in)
+          (NP (NNP Massachusetts))))
+      (, ,)
+      (SBAR
+        (ADVP (RB especially))
+        (IN after)
+        (S
+          (NP (JJ British) (NNS officials))
+          (VP
+            (VP (VBD seized)
+              (NP (PRP$ his) (NN sloop) (NNP Liberty))
+              (PP (IN in)
+                (NP (CD 1768))))
+            (CC and)
+            (VP (VBD charged)
+              (NP (PRP him))
+              (PP (IN with)
+                (NP (NN smuggling))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	became
+			sense:	become.v.01
+			prop:	become.01
+			V		1-1	became 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-3	very popular 
+			N-ARGM-LOC		4-5	in Massachusetts 
+			N-ARGM-TMP		7-21	especially after British officials seized his sloop Liberty in 1768 and charged him with smuggling 
+	2	very
+			sense:	very.r.01
+	3	popular
+			sense:	popular.a.01
+	4	in
+	5	Massachusetts
+			coref:	IDENT			0	5-5	Massachusetts 
+			name:	STATE_OR_PROVINCE				5-5	Massachusetts 
+	6	,
+	7	especially
+			sense:	particularly.r.01
+	8	after
+	9	British
+			name:	NATIONALITY				9-9	British 
+	10	officials
+			sense:	official.n.01
+	11	seized
+			sense:	impound.v.01
+			prop:	seize.01
+			V		11-11	seized 
+			N-ARG-A0		9-10	British officials 
+			N-ARG-A1		12-14	his sloop Liberty 
+			N-ARGM-TMP		15-16	in 1768 
+	12	his
+			coref:	IDENT			2	12-12	his 
+	13	sloop
+			sense:	sloop.n.01
+	14	Liberty
+	15	in
+	16	1768
+			name:	DATE				16-16	1768 
+	17	and
+	18	charged
+			sense:	charge.v.06
+			prop:	charge.05
+			V		18-18	charged 
+			N-ARG-A0		9-10	British officials 
+			N-ARG-A1		19-19	him 
+			N-ARG-A2		20-21	with smuggling 
+	19	him
+			coref:	IDENT			2	19-19	him 
+	20	with
+	21	smuggling
+			name:	CRIMINAL_CHARGE				21-21	smuggling 
+			sense:	smuggling.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Those charges were eventually dropped ; he has often been described as a smuggler in historical accounts , but the accuracy of this characterization has been questioned .
+
+
+Treebanked sentence:
+--------------------
+Those charges were eventually dropped ; he has often been described as a smuggler in historical accounts , but the accuracy of this characterization has been questioned . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT Those) (NNS charges))
+      (VP (VBD were)
+        (ADVP (RB eventually))
+        (VP (VBN dropped))))
+    (: ;)
+    (S
+      (S
+        (NP (PRP he))
+        (VP (VBZ has)
+          (ADVP (RB often))
+          (VP (VBN been)
+            (VP (VBN described)
+              (PP (IN as)
+                (NP
+                  (NP (DT a) (NN smuggler))
+                  (PP (IN in)
+                    (NP (JJ historical) (NNS accounts)))))))))
+      (, ,)
+      (CC but)
+      (S
+        (NP
+          (NP (DT the) (NN accuracy))
+          (PP (IN of)
+            (NP (DT this) (NN characterization))))
+        (VP (VBZ has)
+          (VP (VBN been)
+            (VP (VBN questioned))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Those
+	1	charges
+			sense:	charge.n.02
+	2	were
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	were 
+	3	eventually
+			sense:	finally.r.01
+	4	dropped
+			sense:	drop.v.07
+			prop:	drop.05
+			V		4-4	dropped 
+			N-ARG-A1		0-1	Those charges 
+			N-ARGM-TMP		3-3	eventually 
+	5	;
+	6	he
+			coref:	IDENT			2	6-6	he 
+	7	has
+			sense:	have.v.02
+			prop:	have.01
+			V		7-7	has 
+	8	often
+			sense:	frequently.r.01
+	9	been
+			sense:	be.v.01
+			prop:	be.03
+			V		9-9	been 
+	10	described
+			sense:	describe.v.01
+			prop:	describe.01
+			V		10-10	described 
+			N-ARG-A1		6-6	he 
+			N-ARGM-TMP		8-8	often 
+			N-ARG-A2		11-13	as a smuggler 
+			N-ARGM-LOC		14-16	in historical accounts 
+	11	as
+	12	a
+	13	smuggler
+			sense:	smuggler.n.01
+	14	in
+	15	historical
+			sense:	historic.s.01
+	16	accounts
+			sense:	history.n.02
+	17	,
+	18	but
+	19	the
+	20	accuracy
+			sense:	accuracy.n.01
+	21	of
+	22	this
+	23	characterization
+			sense:	characterization.n.02
+	24	has
+			sense:	have.v.11
+			prop:	have.01
+			V		24-24	has 
+	25	been
+			sense:	be.v.01
+			prop:	be.03
+			V		25-25	been 
+	26	questioned
+			sense:	question.v.01
+			prop:	question.01
+			V		26-26	questioned 
+			N-ARG-A1		19-23	the accuracy of this characterization 
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Hancock was one of Boston 's leaders during the crisis that led to the outbreak of the American Revolutionary War in 1775 .
+
+
+Treebanked sentence:
+--------------------
+Hancock was one of Boston 's leaders during the crisis that led to the outbreak of the American Revolutionary War in 1775 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Hancock))
+    (VP (VBD was)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (NNP Boston) (POS 's))
+            (NNS leaders))))
+      (PP (IN during)
+        (NP
+          (NP (DT the) (NN crisis))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBD led)
+                (PP (IN to)
+                  (NP
+                    (NP (DT the) (NN outbreak))
+                    (PP (IN of)
+                      (NP (DT the) (NNP American) (NNP Revolutionary) (NNP War)))))
+                (PP (IN in)
+                  (NP (CD 1775)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Hancock
+			coref:	IDENT			2	0-0	Hancock 
+			name:	PERSON				0-0	Hancock 
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	Hancock 
+			N-ARG-A2		2-6	one of Boston 's leaders 
+			N-ARGM-TMP		7-21	during the crisis that led to the outbreak of the American Revolutionary War in 1775 
+	2	one
+			name:	NUMBER				2-2	one 
+	3	of
+	4	Boston
+			coref:	IDENT			1	4-5	Boston 's 
+			name:	CITY				4-4	Boston 
+	5	's
+	6	leaders
+			sense:	leader.n.01
+	7	during
+	8	the
+	9	crisis
+			sense:	crisis.n.01
+	10	that
+	11	led
+			sense:	leave.v.07
+			prop:	lead.03
+			V		11-11	led 
+			N-ARG-A0		8-9	the crisis 
+			R-ARG-A0		10-10	that 
+			N-ARG-A2		12-21	to the outbreak of the American Revolutionary War in 1775 
+	12	to
+	13	the
+	14	outbreak
+			sense:	outbreak.n.01
+	15	of
+	16	the
+	17	American
+			name:	NATIONALITY				17-17	American 
+	18	Revolutionary
+			name:	IDEOLOGY				18-18	Revolutionary 
+	19	War
+			name:	CAUSE_OF_DEATH				19-19	War 
+	20	in
+	21	1775
+			name:	DATE				21-21	1775 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He served more than two years in the Continental Congress in Philadelphia , and he was the first to sign the Declaration of Independence in his position as president of Congress .
+
+
+Treebanked sentence:
+--------------------
+He served more than two years in the Continental Congress in Philadelphia , and he was the first to sign the Declaration of Independence in his position as president of Congress . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD served)
+        (NP
+          (QP (JJR more) (IN than) (CD two))
+          (NNS years))
+        (PP (IN in)
+          (NP (DT the) (NNP Continental) (NNP Congress)))
+        (PP (IN in)
+          (NP (NNP Philadelphia)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBD was)
+        (NP (DT the) (JJ first)
+          (S
+            (VP (TO to)
+              (VP (VB sign)
+                (NP
+                  (NP (DT the) (NN Declaration))
+                  (PP (IN of)
+                    (NP (NN Independence))))
+                (PP (IN in)
+                  (NP (PRP$ his) (NN position)))
+                (PP (IN as)
+                  (NP
+                    (NP (NN president))
+                    (PP (IN of)
+                      (NP (NNP Congress)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	served
+			sense:	serve.v.02
+			prop:	serve.01
+			V		1-1	served 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-5	more than two years 
+			N-ARG-A1		6-9	in the Continental Congress 
+			N-ARGM-LOC		10-11	in Philadelphia 
+	2	more
+			name:	DURATION				2-5	more than two years 
+			sense:	more.a.02
+	3	than
+	4	two
+	5	years
+			sense:	year.n.01
+	6	in
+	7	the
+			coref:	IDENT			6	7-9	the Continental Congress 
+	8	Continental
+			name:	ORGANIZATION				8-9	Continental Congress 
+	9	Congress
+	10	in
+	11	Philadelphia
+			name:	CITY				11-11	Philadelphia 
+	12	,
+	13	and
+	14	he
+			coref:	IDENT			2	14-14	he 
+	15	was
+			sense:	be.v.01
+			prop:	be.01
+			V		15-15	was 
+			N-ARG-A1		14-14	he 
+			N-ARG-A2		16-30	the first to sign the Declaration of Independence in his position as president of Congress 
+	16	the
+	17	first
+			name:	ORDINAL				17-17	first 
+			sense:	first.a.01
+	18	to
+	19	sign
+			sense:	sign.v.02
+			prop:	sign.01
+			V		19-19	sign 
+			N-ARG-A0		16-17	the first 
+			N-ARG-A1		20-23	the Declaration of Independence 
+			N-ARGM-ADV		24-30	in his position as president of Congress 
+	20	the
+	21	Declaration
+			sense:	announcement.n.01
+	22	of
+	23	Independence
+			sense:	independence.n.01
+	24	in
+	25	his
+			coref:	IDENT			2	25-25	his 
+	26	position
+			sense:	position.n.06
+	27	as
+	28	president
+			name:	TITLE				28-28	president 
+			sense:	president.n.04
+	29	of
+	30	Congress
+			coref:	IDENT			6	30-30	Congress 
+			name:	ORGANIZATION				30-30	Congress 
+	31	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He returned to Massachusetts and was elected governor of the Commonwealth , serving in that role for most of his remaining years .
+
+
+Treebanked sentence:
+--------------------
+He returned to Massachusetts and was elected governor of the Commonwealth , serving in that role for most of his remaining years . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD returned)
+        (PP (IN to)
+          (NP (NNP Massachusetts))))
+      (CC and)
+      (VP (VBD was)
+        (VP (VBN elected)
+          (NP
+            (NP (NN governor))
+            (PP (IN of)
+              (NP (DT the) (NNP Commonwealth))))
+          (, ,)
+          (S
+            (VP (VBG serving)
+              (PP (IN in)
+                (NP
+                  (NP (DT that) (NN role))
+                  (PP (IN for)
+                    (NP
+                      (NP (JJS most))
+                      (PP (IN of)
+                        (NP (PRP$ his) (VBG remaining) (NNS years))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	returned
+			sense:	return.v.01
+			prop:	return.01
+			V		1-1	returned 
+			N-ARG-A1		0-0	He 
+			N-ARG-A4		2-3	to Massachusetts 
+	2	to
+	3	Massachusetts
+			coref:	IDENT			0	3-3	Massachusetts 
+			name:	STATE_OR_PROVINCE				3-3	Massachusetts 
+	4	and
+	5	was
+			sense:	be.v.01
+			prop:	be.03
+			V		5-5	was 
+	6	elected
+			sense:	elect.v.01
+			prop:	elect.01
+			V		6-6	elected 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		7-10	governor of the Commonwealth 
+			N-ARGM-PRD		12-21	serving in that role for most of his remaining years 
+	7	governor
+			name:	TITLE				7-7	governor 
+			sense:	governor.n.01
+	8	of
+	9	the
+	10	Commonwealth
+			name:	LOCATION				10-10	Commonwealth 
+	11	,
+	12	serving
+			sense:	serve.v.02
+			prop:	serve.01
+			V		12-12	serving 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		13-15	in that role 
+			N-ARGM-TMP		16-21	for most of his remaining years 
+	13	in
+	14	that
+	15	role
+			sense:	function.n.03
+	16	for
+	17	most
+			sense:	most.a.01
+	18	of
+	19	his
+			coref:	IDENT			2	19-19	his 
+	20	remaining
+			sense:	remain.v.03
+			prop:	remain.01
+			V		20-20	remaining 
+			N-ARG-A1		21-21	years 
+	21	years
+			name:	DURATION				21-21	years 
+			sense:	year.n.01
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He used his influence to ensure that Massachusetts ratified the United States Constitution in 1788 .
+
+
+Treebanked sentence:
+--------------------
+He used his influence to ensure that Massachusetts ratified the United States Constitution in 1788 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD used)
+      (NP (PRP$ his) (NN influence))
+      (S
+        (VP (TO to)
+          (VP (VB ensure)
+            (SBAR (IN that)
+              (S
+                (NP (NNP Massachusetts))
+                (VP (VBD ratified)
+                  (NP
+                    (NP (DT the) (NNP United) (NNP States) (NNP Constitution))
+                    (PP (IN in)
+                      (NP (CD 1788)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			2	0-0	He 
+	1	used
+			sense:	use.v.01
+			prop:	use.01
+			V		1-1	used 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-3	his influence 
+			N-ARG-A2		4-14	to ensure that Massachusetts ratified the United States Constitution in 1788 
+	2	his
+			coref:	IDENT			2	2-2	his 
+	3	influence
+			sense:	influence.n.01
+	4	to
+	5	ensure
+			sense:	guarantee.v.02
+			prop:	ensure.01
+			V		5-5	ensure 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		6-14	that Massachusetts ratified the United States Constitution in 1788 
+	6	that
+	7	Massachusetts
+			coref:	IDENT			0	7-7	Massachusetts 
+			name:	STATE_OR_PROVINCE				7-7	Massachusetts 
+	8	ratified
+			sense:	sign.v.02
+			prop:	ratify.01
+			V		8-8	ratified 
+			N-ARG-A0		7-7	Massachusetts 
+			N-ARG-A1		9-12	the United States Constitution 
+			N-ARGM-TMP		13-14	in 1788 
+	9	the
+	10	United
+			coref:	IDENT			3	10-11	United States 
+			name:	COUNTRY				10-11	United States 
+	11	States
+	12	Constitution
+	13	in
+	14	1788
+			name:	DATE				14-14	1788 
+	15	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.20-20	Massachusetts 
+				6.5-5	Massachusetts 
+				10.3-3	Massachusetts 
+				11.7-7	Massachusetts 
+	Chain 1 (IDENT)
+				8.4-5	Boston 's 
+				4.6-6	Boston 
+	Chain 2 (IDENT)
+				3.5-5	Hancock 
+				1.0-0	He 
+				2.0-0	He 
+				2.4-4	his 
+				3.24-24	his 
+				4.0-0	He 
+				4.2-2	his 
+				5.0-0	Hancock 
+				5.2-2	his 
+				6.0-0	He 
+				6.12-12	his 
+				6.19-19	him 
+				7.6-6	he 
+				8.0-0	Hancock 
+				9.0-0	He 
+				9.14-14	he 
+				9.25-25	his 
+				10.0-0	He 
+				10.19-19	his 
+				11.0-0	He 
+				11.2-2	his 
+	Chain 3 (IDENT)
+				2.30-32	the United States 
+				2.11-12	United States 
+				11.10-11	United States 
+	Chain 4 (IDENT)
+				3.9-15	the wealthiest men in the Thirteen Colonies 
+				4.20-22	the two men 
+	Chain 5 (IDENT)
+				0.19-21	the American Revolution 
+				3.1-3	the American Revolution 
+	Chain 6 (IDENT)
+				1.5-8	the Second Continental Congress 
+				9.7-9	the Continental Congress 
+				9.30-30	Congress 
+

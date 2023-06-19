@@ -1,0 +1,634 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Q Planes ( known as Clouds Over Europe in the United States ) is a 1939 British comedy spy film starring Ralph Richardson , Laurence Olivier and Valerie Hobson .
+
+
+Treebanked sentence:
+--------------------
+Q Planes ( known as Clouds Over Europe in the United States ) is a 1939 British comedy spy film starring Ralph Richardson , Laurence Olivier and Valerie Hobson . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NN Q) (NNS Planes))
+      (-LRB- -LRB-)
+      (VP (VBN known)
+        (PP (IN as)
+          (NP (NNPS Clouds)))
+        (PP (IN Over)
+          (NP (NNP Europe)))
+        (PP (IN in)
+          (NP (DT the) (NNP United) (NNP States))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT a) (CD 1939) (JJ British) (NN comedy))
+          (NP (NN spy) (NN film)))
+        (VP (VBG starring)
+          (NP
+            (NP (NNP Ralph) (NNP Richardson))
+            (, ,)
+            (NP (NNP Laurence) (NNP Olivier))
+            (CC and)
+            (NP (NNP Valerie) (NNP Hobson))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Q
+			sense:	q.n.01
+	1	Planes
+			sense:	airplane.n.01
+	2	(
+	3	known
+			sense:	acknowledge.v.06
+			prop:	know.01
+			V		3-3	known 
+			N-ARG-A1		0-1	Q Planes 
+			N-ARG-A2		4-7	as Clouds Over Europe 
+			N-ARGM-LOC		8-11	in the United States 
+	4	as
+	5	Clouds
+	6	Over
+	7	Europe
+			name:	LOCATION				7-7	Europe 
+	8	in
+	9	the
+	10	United
+			name:	COUNTRY				10-11	United States 
+	11	States
+	12	)
+	13	is
+			sense:	be.v.02
+			prop:	be.01
+			V		13-13	is 
+			N-ARG-A1		0-12	Q Planes ( known as Clouds Over Europe in the United States ) 
+			N-ARG-A2		14-28	a 1939 British comedy spy film starring Ralph Richardson , Laurence Olivier and Valerie Hobson 
+	14	a
+	15	1939
+			name:	DATE				15-15	1939 
+	16	British
+			name:	NATIONALITY				16-16	British 
+	17	comedy
+			sense:	comedy.n.01
+	18	spy
+			coref:	IDENT			2	18-19	spy film 
+			sense:	spy.n.01
+	19	film
+			sense:	movie.n.01
+	20	starring
+			sense:	star.v.01
+			prop:	star.01
+			V		20-20	starring 
+			N-ARG-A2		14-19	a 1939 British comedy spy film 
+			N-ARG-A1		21-28	Ralph Richardson , Laurence Olivier and Valerie Hobson 
+	21	Ralph
+			coref:	IDENT			0	21-28	Ralph Richardson , Laurence Olivier and Valerie Hobson 
+			name:	PERSON				21-22	Ralph Richardson 
+	22	Richardson
+	23	,
+	24	Laurence
+			name:	PERSON				24-25	Laurence Olivier 
+	25	Olivier
+	26	and
+	27	Valerie
+			name:	PERSON				27-28	Valerie Hobson 
+	28	Hobson
+	29	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Olivier and Richardson were a decade into their 50-year friendship and theatrical collaboration and had just completed Othello , with Richardson in the title role and Olivier as Iago , when this film was made .
+
+
+Treebanked sentence:
+--------------------
+Olivier and Richardson were a decade into their 50 - year friendship and theatrical collaboration and had just completed Othello , with Richardson in the title role and Olivier as Iago , when this film was made . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Olivier)
+      (CC and)
+      (NNP Richardson))
+    (VP
+      (VP (VBD were)
+        (NP (DT a) (NN decade))
+        (PP (IN into)
+          (NP
+            (NP (PRP$ their)
+              (NML (CD 50) (HYPH -) (NN year))
+              (NN friendship))
+            (CC and)
+            (NP (JJ theatrical) (NN collaboration)))))
+      (CC and)
+      (VP (VBD had)
+        (ADVP (RB just))
+        (VP (VBN completed)
+          (NP (NNP Othello))
+          (, ,)
+          (PP (IN with)
+            (NP
+              (NP
+                (NP
+                  (NP (NNP Richardson))
+                  (PP (IN in)
+                    (NP (DT the) (NN title) (NN role))))
+                (CC and)
+                (NP
+                  (NP (NNP Olivier))
+                  (PP (IN as)
+                    (NP (NNP Iago)))))
+              (, ,)
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (DT this) (NN film))
+                  (VP (VBD was)
+                    (VP (VBN made))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Olivier
+			coref:	IDENT			0	0-2	Olivier and Richardson 
+			name:	PERSON				0-0	Olivier 
+	1	and
+	2	Richardson
+			coref:	IDENT			3	2-2	Richardson 
+			name:	PERSON				2-2	Richardson 
+	3	were
+			sense:	be.v.01
+			prop:	be.01
+			V		3-3	were 
+			N-ARG-A1		0-2	Olivier and Richardson 
+			N-ARG-A2		4-14	a decade into their 50 - year friendship and theatrical collaboration 
+	4	a
+			name:	DURATION				4-5	a decade 
+	5	decade
+			sense:	decade.n.01
+	6	into
+	7	their
+			coref:	IDENT			0	7-7	their 
+	8	50
+			name:	DURATION				8-10	50 - year 
+	9	-
+	10	year
+			sense:	year.n.01
+	11	friendship
+			sense:	friendship.n.01
+	12	and
+	13	theatrical
+			sense:	theatrical.a.01
+	14	collaboration
+			sense:	collaboration.n.01
+	15	and
+	16	had
+			sense:	experience.v.03
+			prop:	have.01
+			V		16-16	had 
+	17	just
+			sense:	just.r.03
+	18	completed
+			sense:	complete.v.01
+			prop:	complete.01
+			V		18-18	completed 
+			N-ARG-A0		0-2	Olivier and Richardson 
+			N-ARGM-TMP		17-17	just 
+			N-ARG-A1		19-19	Othello 
+			N-ARGM-TMP		32-36	when this film was made 
+	19	Othello
+			name:	MISC				19-19	Othello 
+	20	,
+	21	with
+	22	Richardson
+			coref:	IDENT			3	22-22	Richardson 
+			name:	PERSON				22-22	Richardson 
+	23	in
+	24	the
+	25	title
+			sense:	title.n.02
+	26	role
+			sense:	character.n.04
+	27	and
+	28	Olivier
+			name:	PERSON				28-28	Olivier 
+	29	as
+	30	Iago
+			name:	MISC				30-30	Iago 
+	31	,
+	32	when
+	33	this
+			coref:	IDENT			2	33-34	this film 
+	34	film
+			sense:	movie.n.01
+	35	was
+			sense:	be.v.01
+			prop:	be.03
+			V		35-35	was 
+	36	made
+			sense:	create.v.05
+			prop:	make.01
+			V		36-36	made 
+			N-ARGM-TMP		32-32	when 
+			N-ARG-A1		33-34	this film 
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The film was produced by Irving Asher , an American , with British film impresario Alexander Korda as executive producer .
+
+
+Treebanked sentence:
+--------------------
+The film was produced by Irving Asher , an American , with British film impresario Alexander Korda as executive producer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN film))
+    (VP (VBD was)
+      (VP (VBN produced)
+        (PP (IN by)
+          (NP
+            (NP (NNP Irving) (NNP Asher))
+            (, ,)
+            (NP (DT an) (JJ American))
+            (, ,)))
+        (PP (IN with)
+          (NP
+            (NP
+              (NML (JJ British) (NN film) (NN impresario))
+              (NNP Alexander) (NNP Korda))
+            (PP (IN as)
+              (NP (JJ executive) (NN producer)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-1	The film 
+	1	film
+			sense:	movie.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	produced
+			sense:	produce.v.06
+			prop:	produce.01
+			V		3-3	produced 
+			N-ARG-A1		0-1	The film 
+			N-ARG-A0		4-10	by Irving Asher , an American , 
+			N-ARGM-ADV		11-19	with British film impresario Alexander Korda as executive producer 
+	4	by
+	5	Irving
+			name:	PERSON				5-6	Irving Asher 
+	6	Asher
+	7	,
+	8	an
+	9	American
+			name:	NATIONALITY				9-9	American 
+	10	,
+	11	with
+	12	British
+			coref:	IDENT			1	12-19	British film impresario Alexander Korda as executive producer 
+			name:	NATIONALITY				12-12	British 
+	13	film
+			sense:	movie.n.01
+	14	impresario
+			sense:	showman.n.02
+	15	Alexander
+			name:	PERSON				15-16	Alexander Korda 
+	16	Korda
+	17	as
+	18	executive
+			name:	TITLE				18-19	executive producer 
+			sense:	executive.a.01
+	19	producer
+			sense:	producer.n.02
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The name Q Planes may have been derived from the British " Q - ships " , armed ships disguised as merchantmen , used in the First World War as decoys to lure German U - boats .
+
+
+Treebanked sentence:
+--------------------
+The name Q Planes may have been derived from the British " Q - ships " , armed ships disguised as merchantmen , used in the First World War as decoys to lure German U - boats . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The)
+      (NML (NN name) (NN Q))
+      (NNS Planes))
+    (VP (MD may)
+      (VP (VB have)
+        (VP (VBN been)
+          (VP (VBN derived)
+            (PP (IN from)
+              (NP
+                (NP (DT the) (JJ British) (`` ")
+                  (NML (NN Q) (HYPH -) (NNS ships))
+                  ('' "))
+                (, ,)
+                (NP
+                  (NP (JJ armed) (NNS ships))
+                  (VP (VBN disguised)
+                    (PP (IN as)
+                      (NP
+                        (NP (NNS merchantmen))
+                        (, ,)
+                        (VP (VBN used)
+                          (PP (IN in)
+                            (NP (DT the) (NNP First) (NNP World) (NNP War)))
+                          (PP (IN as)
+                            (NP (NNS decoys)))
+                          (S
+                            (VP (TO to)
+                              (VP (VB lure)
+                                (NP (JJ German)
+                                  (NML (NN U) (HYPH -) (NNS boats)))))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	name
+			sense:	name.n.01
+	2	Q
+			sense:	q.n.01
+	3	Planes
+			sense:	airplane.n.01
+	4	may
+	5	have
+			sense:	have.v.01
+			prop:	have.01
+			V		5-5	have 
+	6	been
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	been 
+	7	derived
+			sense:	derive.v.03
+			prop:	derive.01
+			V		7-7	derived 
+			N-ARG-A1		0-3	The name Q Planes 
+			N-ARGM-MOD		4-4	may 
+			N-ARG-A2		8-36	from the British " Q - ships " , armed ships disguised as merchantmen , used in the First World War as decoys to lure German U - boats 
+	8	from
+	9	the
+	10	British
+			name:	NATIONALITY				10-10	British 
+	11	"
+	12	Q
+			sense:	q.n.01
+	13	-
+	14	ships
+			sense:	ship.n.01
+	15	"
+	16	,
+	17	armed
+			sense:	armed.a.01
+	18	ships
+			sense:	ship.n.01
+	19	disguised
+			sense:	disguise.v.01
+			prop:	disguise.01
+			V		19-19	disguised 
+			N-ARG-A1		17-18	armed ships 
+			N-ARG-A2		20-21	as merchantmen 
+	20	as
+	21	merchantmen
+			sense:	bottom.n.07
+	22	,
+	23	used
+			sense:	use.v.01
+			prop:	use.01
+			V		23-23	used 
+			N-ARG-A1		17-21	armed ships disguised as merchantmen 
+			N-ARGM-TMP		24-28	in the First World War 
+			N-ARG-A2		29-36	as decoys to lure German U - boats 
+	24	in
+	25	the
+	26	First
+			name:	ORDINAL				26-26	First 
+	27	World
+			name:	MISC				27-27	World 
+	28	War
+			name:	CAUSE_OF_DEATH				28-28	War 
+	29	as
+	30	decoys
+			sense:	bait.n.02
+	31	to
+	32	lure
+			sense:	entice.v.01
+			prop:	lure.01
+			V		32-32	lure 
+			N-ARG-A1		33-36	German U - boats 
+	33	German
+			name:	NATIONALITY				33-33	German 
+	34	U
+			sense:	u.n.03
+	35	-
+	36	boats
+			sense:	boat.n.01
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The film was directed by American director Tim Whelan ( Sidewalks of London and later in 1940 , co - director of The Thief of Bagdad ) , who had been in Britain since 1932 , working for Korda at Denham Studios .
+
+
+Treebanked sentence:
+--------------------
+The film was directed by American director Tim Whelan ( Sidewalks of London and later in 1940 , co - director of The Thief of Bagdad ) , who had been in Britain since 1932 , working for Korda at Denham Studios . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN film))
+    (VP (VBD was)
+      (VP (VBN directed)
+        (PP (IN by)
+          (NP
+            (NP
+              (NP
+                (NML (JJ American) (NN director))
+                (NNP Tim) (NNP Whelan))
+              (-LRB- -LRB-)
+              (NP
+                (NP (NNPS Sidewalks))
+                (PP (IN of)
+                  (NP (NNP London)))))
+            (CC and)
+            (NP
+              (ADVP (RB later)
+                (PP (IN in)
+                  (NP (CD 1940))))
+              (, ,)
+              (NP
+                (NP (NN co) (HYPH -) (NN director))
+                (PP (IN of)
+                  (NP
+                    (NP
+                      (NP (DT The) (NN Thief))
+                      (PP (IN of)
+                        (NP (NNP Bagdad))))
+                    (-RRB- -RRB-) (, ,)
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (VP (VBD had)
+                          (VP (VBN been)
+                            (PP (IN in)
+                              (NP (NNP Britain)))
+                            (PP (IN since)
+                              (NP (CD 1932))))))))))
+              (, ,)
+              (VP (VBG working)
+                (PP (IN for)
+                  (NP (NNP Korda)))
+                (PP (IN at)
+                  (NP (NNP Denham) (NNP Studios)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-1	The film 
+	1	film
+			sense:	movie.n.01
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	directed
+			sense:	direct.v.03
+			prop:	direct.01
+			V		3-3	directed 
+			N-ARG-A1		0-1	The film 
+			N-ARG-A0		4-41	by American director Tim Whelan ( Sidewalks of London and later in 1940 , co - director of The Thief of Bagdad ) , who had been in Britain since 1932 , working for Korda at Denham Studios 
+	4	by
+	5	American
+			name:	NATIONALITY				5-5	American 
+	6	director
+			name:	TITLE				6-6	director 
+			sense:	director.n.03
+	7	Tim
+			name:	PERSON				7-8	Tim Whelan 
+	8	Whelan
+	9	(
+	10	Sidewalks
+	11	of
+	12	London
+			name:	CITY				12-12	London 
+	13	and
+	14	later
+			sense:	subsequently.r.01
+	15	in
+	16	1940
+			name:	DATE				16-16	1940 
+	17	,
+	18	co
+			sense:	conscientious_objector.n.01
+	19	-
+	20	director
+			name:	TITLE				20-20	director 
+			sense:	director.n.03
+	21	of
+	22	The
+	23	Thief
+			sense:	thief.n.01
+	24	of
+	25	Bagdad
+			name:	LOCATION				25-25	Bagdad 
+	26	)
+	27	,
+	28	who
+	29	had
+			sense:	have.v.01
+			prop:	have.01
+			V		29-29	had 
+	30	been
+			sense:	be.v.03
+			prop:	be.01
+			V		30-30	been 
+			N-ARG-A1		5-26	American director Tim Whelan ( Sidewalks of London and later in 1940 , co - director of The Thief of Bagdad ) 
+			R-ARG-A1		28-28	who 
+			N-ARG-A2		31-32	in Britain 
+			N-ARGM-TMP		33-34	since 1932 
+			N-ARGM-PRD		36-41	working for Korda at Denham Studios 
+	31	in
+	32	Britain
+			name:	COUNTRY				32-32	Britain 
+	33	since
+	34	1932
+			name:	DATE				34-34	1932 
+	35	,
+	36	working
+			sense:	work.v.02
+			prop:	work.01
+			V		36-36	working 
+			N-ARG-A0		28-28	who 
+			N-ARG-A2		37-38	for Korda 
+			N-ARGM-LOC		39-41	at Denham Studios 
+	37	for
+	38	Korda
+			coref:	IDENT			1	38-38	Korda 
+			name:	PERSON				38-38	Korda 
+	39	at
+	40	Denham
+			name:	ORGANIZATION				40-41	Denham Studios 
+	41	Studios
+	42	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.21-28	Ralph Richardson , Laurence Olivier and Valerie Hobson 
+				1.0-2	Olivier and Richardson 
+				1.7-7	their 
+	Chain 1 (IDENT)
+				2.12-19	British film impresario Alexander Korda as executive producer 
+				4.38-38	Korda 
+	Chain 2 (IDENT)
+				0.18-19	spy film 
+				1.33-34	this film 
+				2.0-1	The film 
+				4.0-1	The film 
+	Chain 3 (IDENT)
+				1.2-2	Richardson 
+				1.22-22	Richardson 
+

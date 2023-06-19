@@ -1,0 +1,881 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Cheeseburger in Paradise is a casual dining restaurant chain in the United States .
+
+
+Treebanked sentence:
+--------------------
+Cheeseburger in Paradise is a casual dining restaurant chain in the United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Cheeseburger))
+      (PP (IN in)
+        (NP (NNP Paradise))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ casual)
+          (NML (NN dining) (NN restaurant))
+          (NN chain))
+        (PP (IN in)
+          (NP (DT the) (NNP United) (NNP States)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Cheeseburger
+			coref:	IDENT			4	0-2	Cheeseburger in Paradise 
+	1	in
+	2	Paradise
+			coref:	IDENT			1	2-2	Paradise 
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Cheeseburger in Paradise 
+			N-ARG-A2		4-12	a casual dining restaurant chain in the United States 
+	4	a
+			coref:	IDENT			2	4-12	a casual dining restaurant chain in the United States 
+	5	casual
+			sense:	casual.s.03
+	6	dining
+			sense:	dining.n.01
+	7	restaurant
+			sense:	restaurant.n.01
+	8	chain
+			sense:	chain.n.04
+	9	in
+	10	the
+	11	United
+			name:	COUNTRY				11-12	United States 
+	12	States
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The first restaurant opened on August 19 , 2002 , in the Southport area of Indianapolis , Indiana .
+
+
+Treebanked sentence:
+--------------------
+The first restaurant opened on August 19 , 2002 , in the Southport area of Indianapolis , Indiana . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP
+      (NP (DT The) (JJ first) (NN restaurant))
+      (VP (VBN opened)
+        (PP (IN on)
+          (NP (NNP August) (CD 19) (, ,) (CD 2002)))))
+    (, ,)
+    (PP (IN in)
+      (NP (DT the) (NNP Southport) (NN area)))
+    (PP (IN of)
+      (NP (NNP Indianapolis) (, ,) (NNP Indiana)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	first
+			name:	ORDINAL				1-1	first 
+			sense:	first.a.01
+	2	restaurant
+			sense:	restaurant.n.01
+	3	opened
+			sense:	open.v.02
+			prop:	open.01
+			V		3-3	opened 
+			N-ARG-A1		0-2	The first restaurant 
+			N-ARGM-TMP		4-8	on August 19 , 2002 
+			N-ARGM-LOC		10-17	in the Southport area of Indianapolis , Indiana 
+	4	on
+	5	August
+			name:	DATE				5-8	August 19 , 2002 
+	6	19
+	7	,
+	8	2002
+	9	,
+	10	in
+	11	the
+	12	Southport
+			name:	CITY				12-12	Southport 
+	13	area
+			sense:	area.n.01
+	14	of
+	15	Indianapolis
+			coref:	IDENT			6	15-15	Indianapolis 
+			name:	CITY				15-15	Indianapolis 
+	16	,
+	17	Indiana
+			name:	STATE_OR_PROVINCE				17-17	Indiana 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is a theme restaurant named for the song " Cheeseburger in Paradise " by American pop music singer Jimmy Buffett .
+
+
+Treebanked sentence:
+--------------------
+It is a theme restaurant named for the song " Cheeseburger in Paradise " by American pop music singer Jimmy Buffett . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN theme) (NN restaurant))
+        (VP (VBN named)
+          (PP (IN for)
+            (NP (DT the) (NN song) (`` ") (NNP Cheeseburger) (IN in) (NNP Paradise) ('' ")))
+          (PP (IN by)
+            (NP
+              (NML
+                (NML (JJ American) (NN pop) (NN music))
+                (NN singer))
+              (NNP Jimmy) (NNP Buffett))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-20	a theme restaurant named for the song " Cheeseburger in Paradise " by American pop music singer Jimmy Buffett 
+	2	a
+	3	theme
+			sense:	theme.n.02
+	4	restaurant
+			sense:	restaurant.n.01
+	5	named
+			sense:	name.v.01
+			prop:	name.01
+			V		5-5	named 
+			N-ARG-A1		2-4	a theme restaurant 
+	6	for
+	7	the
+			coref:	IDENT			7	7-12	the song " Cheeseburger in Paradise 
+	8	song
+			sense:	song.n.01
+	9	"
+	10	Cheeseburger
+	11	in
+	12	Paradise
+	13	"
+	14	by
+	15	American
+			coref:	IDENT			0	15-20	American pop music singer Jimmy Buffett 
+			name:	NATIONALITY				15-15	American 
+	16	pop
+			sense:	pop_music.n.01
+	17	music
+			sense:	music.n.01
+	18	singer
+			name:	TITLE				18-18	singer 
+			sense:	singer.n.01
+	19	Jimmy
+			name:	PERSON				19-20	Jimmy Buffett 
+	20	Buffett
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The chain was a partnership of Buffett 's company , the Orlando , Florida - based Margaritaville Holdings LLC , and OSI Restaurant Partners , with Buffett licensing the name and Outback Steakhouse operating the franchising of restaurants .
+
+
+Treebanked sentence:
+--------------------
+The chain was a partnership of Buffett 's company , the Orlando , Florida - based Margaritaville Holdings LLC , and OSI Restaurant Partners , with Buffett licensing the name and Outback Steakhouse operating the franchising of restaurants . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN chain))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN partnership))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (NNP Buffett) (POS 's))
+              (NN company))
+            (, ,)
+            (NP (DT the)
+              (ADJP
+                (NP (NNP Orlando) (, ,) (NNP Florida))
+                (HYPH -) (VBN based))
+              (NML (NNP Margaritaville) (NNPS Holdings))
+              (NNP LLC))
+            (, ,)
+            (CC and)
+            (NP
+              (NP (NNP OSI) (NNP Restaurant) (NNPS Partners))
+              (, ,)
+              (PP (IN with)
+                (NP
+                  (NP (NNP Buffett))
+                  (VP (VBG licensing)
+                    (NP
+                      (NP (DT the) (NN name))
+                      (CC and)
+                      (NP (NNP Outback) (NN Steakhouse)))
+                    (S
+                      (VP (VBG operating)
+                        (NP
+                          (NP (DT the) (NN franchising))
+                          (PP (IN of)
+                            (NP (NNS restaurants))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			2	0-1	The chain 
+	1	chain
+			sense:	chain.n.04
+	2	was
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	The chain 
+			N-ARG-A2		3-23	a partnership of Buffett 's company , the Orlando , Florida - based Margaritaville Holdings LLC , and OSI Restaurant Partners 
+			N-ARGM-PRD		25-37	with Buffett licensing the name and Outback Steakhouse operating the franchising of restaurants 
+	3	a
+	4	partnership
+			sense:	partnership.n.01
+	5	of
+	6	Buffett
+			coref:	IDENT			0	6-7	Buffett 's 
+			name:	PERSON				6-6	Buffett 
+	7	's
+	8	company
+			sense:	company.n.01
+	9	,
+	10	the
+			coref:	IDENT			10	10-18	the Orlando , Florida - based Margaritaville Holdings LLC 
+	11	Orlando
+			name:	CITY				11-11	Orlando 
+	12	,
+	13	Florida
+			name:	STATE_OR_PROVINCE				13-13	Florida 
+	14	-
+	15	based
+			sense:	base.v.02
+			prop:	base.01
+			V		15-15	based 
+			N-ARGM-LOC		11-13	Orlando , Florida 
+			N-ARG-A1		16-18	Margaritaville Holdings LLC 
+	16	Margaritaville
+			name:	ORGANIZATION				16-18	Margaritaville Holdings LLC 
+	17	Holdings
+	18	LLC
+	19	,
+	20	and
+	21	OSI
+			name:	ORGANIZATION				21-23	OSI Restaurant Partners 
+	22	Restaurant
+	23	Partners
+	24	,
+	25	with
+	26	Buffett
+			coref:	IDENT			0	26-26	Buffett 
+			name:	PERSON				26-26	Buffett 
+	27	licensing
+			sense:	license.v.01
+			prop:	license.01
+			V		27-27	licensing 
+			N-ARG-A0		26-26	Buffett 
+			N-ARG-A1		28-29	the name 
+	28	the
+	29	name
+			sense:	name.n.01
+	30	and
+	31	Outback
+			name:	ORGANIZATION				31-32	Outback Steakhouse 
+	32	Steakhouse
+			sense:	steakhouse.n.01
+	33	operating
+			sense:	operate.v.01
+			prop:	operate.01
+			V		33-33	operating 
+			N-ARG-A0		31-32	Outback Steakhouse 
+			N-ARG-A1		34-37	the franchising of restaurants 
+	34	the
+	35	franchising
+	36	of
+	37	restaurants
+			coref:	IDENT			5	37-37	restaurants 
+			sense:	restaurant.n.01
+	38	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is currently a subsidiary of Luby 's 
+
+
+Treebanked sentence:
+--------------------
+It is currently a subsidiary of Luby 's In September 2009 , Cheeseburger in Paradise was sold to Paradise Restaurant Group , LLC . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ is)
+        (ADVP (RB currently))
+        (NP
+          (NP (DT a) (NN subsidiary))
+          (PP (IN of)
+            (NP (NNP Luby) (POS 's))))))
+    (S
+      (PP (IN In)
+        (NP (NNP September) (CD 2009)))
+      (, ,)
+      (NP
+        (NP (NNP Cheeseburger))
+        (PP (IN in)
+          (NP (NNP Paradise))))
+      (VP (VBD was)
+        (VP (VBN sold)
+          (PP (IN to)
+            (NP
+              (NP (NNP Paradise) (NNP Restaurant) (NNP Group))
+              (, ,)
+              (NP (NNP LLC)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		2-2	currently 
+			N-ARG-A2		3-7	a subsidiary of Luby 's 
+	2	currently
+			name:	DATE				2-2	currently 
+			sense:	presently.r.02
+	3	a
+	4	subsidiary
+			sense:	subsidiary_company.n.01
+	5	of
+	6	Luby
+			coref:	IDENT			8	6-7	Luby 's 
+			name:	ORGANIZATION				6-6	Luby 
+	7	's
+	8	In
+	9	September
+			name:	DATE				9-10	September 2009 
+	10	2009
+	11	,
+	12	Cheeseburger
+			coref:	IDENT			4	12-14	Cheeseburger in Paradise 
+	13	in
+	14	Paradise
+			coref:	IDENT			1	14-14	Paradise 
+	15	was
+			sense:	be.v.01
+			prop:	be.03
+			V		15-15	was 
+	16	sold
+			sense:	sell.v.01
+			prop:	sell.01
+			V		16-16	sold 
+			N-ARGM-TMP		8-10	In September 2009 
+			N-ARG-A1		12-14	Cheeseburger in Paradise 
+			N-ARG-A2		17-22	to Paradise Restaurant Group , LLC 
+	17	to
+	18	Paradise
+			coref:	IDENT			9	18-22	Paradise Restaurant Group , LLC 
+			name:	ORGANIZATION				18-20	Paradise Restaurant Group 
+	19	Restaurant
+	20	Group
+	21	,
+	22	LLC
+			coref:	IDENT			10	22-22	LLC 
+			name:	ORGANIZATION				22-22	LLC 
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jimmy Buffett was only a Royalty Partner receiving 2 % of profits until selling Paradise Restaurant Group the rights to the song " Cheeseburger in Paradise " .
+
+
+Treebanked sentence:
+--------------------
+Jimmy Buffett was only a Royalty Partner receiving 2 % of profits until selling Paradise Restaurant Group the rights to the song " Cheeseburger in Paradise " . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Jimmy) (NNP Buffett))
+    (VP (VBD was)
+      (ADVP (RB only))
+      (NP
+        (NP (DT a) (NNP Royalty) (NNP Partner))
+        (VP (VBG receiving)
+          (NP
+            (NP (CD 2) (NN %))
+            (PP (IN of)
+              (NP (NNS profits))))
+          (PP (IN until)
+            (S
+              (VP (VBG selling)
+                (NP
+                  (NP (NNP Paradise) (NNP Restaurant) (NNP Group))
+                  (NP (DT the) (NNS rights)))
+                (PP (IN to)
+                  (NP (DT the) (NN song) (`` ") (NNP Cheeseburger) (IN in) (NNP Paradise) ('' ")))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jimmy
+			coref:	IDENT			0	0-1	Jimmy Buffett 
+			name:	PERSON				0-1	Jimmy Buffett 
+	1	Buffett
+	2	was
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	was 
+			N-ARG-A1		0-1	Jimmy Buffett 
+			N-ARG-A2		3-11	only a Royalty Partner receiving 2 % of profits 
+			N-ARGM-TMP		12-26	until selling Paradise Restaurant Group the rights to the song " Cheeseburger in Paradise " 
+	3	only
+			sense:	merely.r.01
+	4	a
+	5	Royalty
+	6	Partner
+	7	receiving
+			sense:	receive.v.01
+			prop:	receive.01
+			V		7-7	receiving 
+			N-ARG-A0		0-1	Jimmy Buffett 
+			N-ARG-A1		8-11	2 % of profits 
+			N-ARGM-TMP		12-26	until selling Paradise Restaurant Group the rights to the song " Cheeseburger in Paradise " 
+	8	2
+			name:	PERCENT				8-9	2 % 
+	9	%
+	10	of
+	11	profits
+			sense:	net_income.n.01
+	12	until
+	13	selling
+			sense:	sell.v.01
+			prop:	sell.01
+			V		13-13	selling 
+			N-ARG-A0		0-1	Jimmy Buffett 
+			N-ARG-A2		14-16	Paradise Restaurant Group 
+			N-ARG-A1		17-26	the rights to the song " Cheeseburger in Paradise " 
+	14	Paradise
+			coref:	IDENT			9	14-16	Paradise Restaurant Group 
+			name:	ORGANIZATION				14-16	Paradise Restaurant Group 
+	15	Restaurant
+	16	Group
+	17	the
+	18	rights
+			sense:	right.n.08
+	19	to
+	20	the
+			coref:	IDENT			7	20-25	the song " Cheeseburger in Paradise 
+	21	song
+			sense:	song.n.01
+	22	"
+	23	Cheeseburger
+	24	in
+	25	Paradise
+	26	"
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In December 2012 , Luby 's purchased Paradise Restaurant Group for $ 11 million , thereby acquiring all of the restaurants and ending Jimmy Buffett 's association with the chain .
+
+
+Treebanked sentence:
+--------------------
+In December 2012 , Luby 's purchased Paradise Restaurant Group for $ 11 million , thereby acquiring all of the restaurants and ending Jimmy Buffett 's association with the chain . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP December) (CD 2012)))
+    (, ,)
+    (NP
+      (NP
+        (NP (NNP Luby) (POS 's))
+        (VP (VBN purchased)
+          (NP
+            (NP (NNP Paradise) (NNP Restaurant) (NNP Group))
+            (PP (IN for)
+              (NP
+                (QP ($ $) (CD 11) (CD million)))))
+          (, ,)
+          (S
+            (ADVP (RB thereby))
+            (VP
+              (VP (VBG acquiring)
+                (NP
+                  (NP (DT all))
+                  (PP (IN of)
+                    (NP (DT the) (NNS restaurants)))))
+              (CC and)
+              (VP (VBG ending)
+                (NP
+                  (NP (NNP Jimmy) (NNP Buffett) (POS 's))
+                  (NN association)))))))
+      (PP (IN with)
+        (NP (DT the) (NN chain))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	December
+			name:	DATE				1-2	December 2012 
+	2	2012
+	3	,
+	4	Luby
+			coref:	IDENT			8	4-5	Luby 's 
+			name:	PERSON				4-4	Luby 
+	5	's
+	6	purchased
+			sense:	buy.v.01
+			prop:	purchase.01
+			V		6-6	purchased 
+			N-ARGM-TMP		0-2	In December 2012 
+			N-ARG-A0		4-5	Luby 's 
+			N-ARG-A1		7-9	Paradise Restaurant Group 
+			N-ARG-A3		10-13	for $ 11 million 
+			N-ARGM-ADV		15-29	thereby acquiring all of the restaurants and ending Jimmy Buffett 's association with the chain 
+	7	Paradise
+			coref:	IDENT			9	7-9	Paradise Restaurant Group 
+			name:	ORGANIZATION				7-9	Paradise Restaurant Group 
+	8	Restaurant
+	9	Group
+	10	for
+	11	$
+			name:	MONEY				11-13	$ 11 million 
+	12	11
+	13	million
+	14	,
+	15	thereby
+			sense:	thereby.r.01
+	16	acquiring
+			sense:	get.v.01
+			prop:	acquire.01
+			V		16-16	acquiring 
+			N-ARG-A0		4-5	Luby 's 
+			N-ARGM-DIS		15-15	thereby 
+			N-ARG-A1		17-20	all of the restaurants 
+	17	all
+	18	of
+	19	the
+			coref:	IDENT			5	19-20	the restaurants 
+	20	restaurants
+			sense:	restaurant.n.01
+	21	and
+	22	ending
+			sense:	end.v.02
+			prop:	end.01
+			V		22-22	ending 
+			N-ARG-A0		4-5	Luby 's 
+			N-ARGM-DIS		15-15	thereby 
+			N-ARG-A1		23-29	Jimmy Buffett 's association with the chain 
+	23	Jimmy
+			coref:	IDENT			0	23-25	Jimmy Buffett 's 
+			name:	PERSON				23-24	Jimmy Buffett 
+	24	Buffett
+	25	's
+	26	association
+			sense:	affiliation.n.01
+	27	with
+	28	the
+			coref:	IDENT			2	28-29	the chain 
+	29	chain
+			sense:	chain.n.04
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In August 2018 , all restaurants except for the Omaha , NE and Secaucus , NJ locations were closed , including the original restaurant in Indianapolis .
+
+
+Treebanked sentence:
+--------------------
+In August 2018 , all restaurants except for the Omaha , NE and Secaucus , NJ locations were closed , including the original restaurant in Indianapolis . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP August) (CD 2018)))
+    (, ,)
+    (NP
+      (NP (DT all) (NNS restaurants))
+      (PP (IN except)
+        (PP (IN for)
+          (NP (DT the)
+            (NML
+              (NML (NNP Omaha) (, ,) (NNP NE)
+                (CC and)
+                (NNP Secaucus))
+              (, ,)
+              (NP (NNP NJ)))
+            (NNS locations)))))
+    (VP (VBD were)
+      (VP (VBN closed) (, ,)
+        (PP (VBG including)
+          (NP
+            (NP (DT the) (JJ original) (NN restaurant))
+            (PP (IN in)
+              (NP (NNP Indianapolis)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	August
+			name:	DATE				1-2	August 2018 
+	2	2018
+	3	,
+	4	all
+	5	restaurants
+			sense:	restaurant.n.01
+	6	except
+	7	for
+	8	the
+	9	Omaha
+			name:	CITY				9-9	Omaha 
+	10	,
+	11	NE
+			name:	STATE_OR_PROVINCE				11-11	NE 
+	12	and
+	13	Secaucus
+			coref:	IDENT			3	13-13	Secaucus 
+			name:	CITY				13-13	Secaucus 
+	14	,
+	15	NJ
+			name:	STATE_OR_PROVINCE				15-15	NJ 
+	16	locations
+			sense:	location.n.01
+	17	were
+			sense:	be.v.01
+			prop:	be.03
+			V		17-17	were 
+	18	closed
+			sense:	close_up.v.01
+			prop:	close.01
+			V		18-18	closed 
+			N-ARGM-TMP		0-2	In August 2018 
+			N-ARG-A1		4-16	all restaurants except for the Omaha , NE and Secaucus , NJ locations 
+			C-ARG-A1		20-25	including the original restaurant in Indianapolis 
+	19	,
+	20	including
+			sense:	include.v.01
+			prop:	include.01
+			V		20-20	including 
+			N-ARG-A2		4-16	all restaurants except for the Omaha , NE and Secaucus , NJ locations 
+			N-ARG-A1		21-25	the original restaurant in Indianapolis 
+	21	the
+	22	original
+			sense:	original.s.01
+	23	restaurant
+			sense:	restaurant.n.01
+	24	in
+	25	Indianapolis
+			coref:	IDENT			6	25-25	Indianapolis 
+			name:	CITY				25-25	Indianapolis 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In September 2018 , the Omaha , NE closed meaning the only Cheeseburger in Paradise left in the U.S. is in Secaucus , NJ
+
+
+Treebanked sentence:
+--------------------
+In September 2018 , the Omaha , NE closed meaning the only Cheeseburger in Paradise left in the U.S. is in Secaucus , NJ 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP September) (CD 2018)))
+    (, ,)
+    (NP (DT the) (NNP Omaha) (, ,) (NNP NE))
+    (VP (VBD closed)
+      (SBAR
+        (S
+          (S
+            (VP (VBG meaning)
+              (NP (DT the) (JJ only) (NNP Cheeseburger))
+              (PP (IN in)
+                (NP (NNP Paradise)))))
+          (VP (VBD left)
+            (SBAR (IN in)
+              (S
+                (NP (DT the) (NNP U.S.))
+                (VP (VBZ is)
+                  (PP (IN in)
+                    (NP (NNP Secaucus) (, ,) (NNP NJ))))))))))))
+
+
+Leaves:
+-------
+	0	In
+	1	September
+			name:	DATE				1-2	September 2018 
+	2	2018
+	3	,
+	4	the
+	5	Omaha
+			name:	CITY				5-5	Omaha 
+	6	,
+	7	NE
+			name:	STATE_OR_PROVINCE				7-7	NE 
+	8	closed
+			sense:	close_up.v.01
+			prop:	close.01
+			V		8-8	closed 
+			N-ARGM-TMP		0-2	In September 2018 
+			N-ARG-A1		4-7	the Omaha , NE 
+			N-ARGM-ADV		9-23	meaning the only Cheeseburger in Paradise left in the U.S. is in Secaucus , NJ 
+	9	meaning
+			sense:	entail.v.01
+			prop:	mean.01
+			V		9-9	meaning 
+			N-ARG-A1		10-23	the only Cheeseburger in Paradise left in the U.S. is in Secaucus , NJ 
+	10	the
+	11	only
+			sense:	lone.s.03
+	12	Cheeseburger
+	13	in
+	14	Paradise
+			coref:	IDENT			1	14-14	Paradise 
+			name:	CITY				14-14	Paradise 
+	15	left
+			sense:	leave.v.03
+			prop:	leave.06
+			V		15-15	left 
+			N-ARG-A1		10-14	the only Cheeseburger in Paradise 
+			N-ARGM-LOC		16-18	in the U.S. 
+	16	in
+	17	the
+	18	U.S.
+			name:	COUNTRY				18-18	U.S. 
+	19	is
+			sense:	be.v.03
+			prop:	be.01
+			V		19-19	is 
+			N-ARG-A1		10-18	the only Cheeseburger in Paradise left in the U.S. 
+			N-ARG-A2		20-23	in Secaucus , NJ 
+	20	in
+	21	Secaucus
+			coref:	IDENT			3	21-21	Secaucus 
+			name:	CITY				21-21	Secaucus 
+	22	,
+	23	NJ
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.15-20	American pop music singer Jimmy Buffett 
+				3.6-7	Buffett 's 
+				3.26-26	Buffett 
+				5.0-1	Jimmy Buffett 
+				6.23-25	Jimmy Buffett 's 
+	Chain 1 (IDENT)
+				0.2-2	Paradise 
+				4.14-14	Paradise 
+				8.14-14	Paradise 
+	Chain 2 (IDENT)
+				0.4-12	a casual dining restaurant chain in the United States 
+				3.0-1	The chain 
+				4.0-0	It 
+				6.28-29	the chain 
+	Chain 3 (IDENT)
+				7.13-13	Secaucus 
+				8.21-21	Secaucus 
+	Chain 4 (IDENT)
+				0.0-2	Cheeseburger in Paradise 
+				4.12-14	Cheeseburger in Paradise 
+	Chain 5 (IDENT)
+				6.19-20	the restaurants 
+				3.37-37	restaurants 
+	Chain 6 (IDENT)
+				1.15-15	Indianapolis 
+				7.25-25	Indianapolis 
+	Chain 7 (IDENT)
+				2.7-12	the song " Cheeseburger in Paradise 
+				5.20-25	the song " Cheeseburger in Paradise 
+	Chain 8 (IDENT)
+				4.6-7	Luby 's 
+				6.4-5	Luby 's 
+	Chain 9 (IDENT)
+				4.18-22	Paradise Restaurant Group , LLC 
+				5.14-16	Paradise Restaurant Group 
+				6.7-9	Paradise Restaurant Group 
+	Chain 10 (IDENT)
+				3.10-18	the Orlando , Florida - based Margaritaville Holdings LLC 
+				4.22-22	LLC 
+

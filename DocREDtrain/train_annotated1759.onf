@@ -1,0 +1,623 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The First Baptist Church of Tarrytown is located on South Broadway ( U.S. Route 9 ) in Tarrytown , New York , United States .
+
+
+Treebanked sentence:
+--------------------
+The First Baptist Church of Tarrytown is located on South Broadway ( U.S. Route 9 ) in Tarrytown , New York , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP First) (NNP Baptist) (NNP Church))
+      (PP (IN of)
+        (NP (NNP Tarrytown))))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN on)
+          (NP
+            (NP (NNP South) (NNP Broadway)
+              (PRN (-LRB- -LRB-)
+                (NP
+                  (NML (NNP U.S.) (NNP Route))
+                  (CD 9))
+                (-RRB- -RRB-)))
+            (PP (IN in)
+              (NP
+                (NML
+                  (NML (NNP Tarrytown))
+                  (, ,)
+                  (NML (NNP New) (NNP York))
+                  (, ,))
+                (NNP United) (NNP States)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	First
+			name:	ORGANIZATION				1-5	First Baptist Church of Tarrytown 
+	2	Baptist
+	3	Church
+	4	of
+	5	Tarrytown
+	6	is
+			sense:	be.v.03
+			prop:	be.03
+			V		6-6	is 
+	7	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		7-7	located 
+			N-ARG-A1		0-5	The First Baptist Church of Tarrytown 
+			N-ARGM-LOC		8-15	on South Broadway ( U.S. Route 9 ) 
+			N-ARGM-LOC		16-23	in Tarrytown , New York , United States 
+	8	on
+	9	South
+			name:	LOCATION				9-10	South Broadway 
+	10	Broadway
+	11	(
+	12	U.S.
+			name:	COUNTRY				12-12	U.S. 
+	13	Route
+	14	9
+			name:	NUMBER				14-14	9 
+	15	)
+	16	in
+	17	Tarrytown
+			coref:	IDENT			0	17-17	Tarrytown 
+			name:	CITY				17-17	Tarrytown 
+	18	,
+	19	New
+			name:	STATE_OR_PROVINCE				19-20	New York 
+	20	York
+	21	,
+	22	United
+			name:	COUNTRY				22-23	United States 
+	23	States
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is a stone building in the Victorian Gothic architectural style dating to the 1870s .
+
+
+Treebanked sentence:
+--------------------
+It is a stone building in the Victorian Gothic architectural style dating to the 1870s . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN stone) (NN building))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (JJ Victorian) (JJ Gothic) (JJ architectural) (NN style) (NN dating))
+            (PP (IN to)
+              (NP (DT the) (CD 1870s)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-14	a stone building in the Victorian Gothic architectural style dating to the 1870s 
+	2	a
+	3	stone
+			sense:	stone.n.02
+	4	building
+			sense:	building.n.01
+	5	in
+	6	the
+	7	Victorian
+			name:	MISC				7-8	Victorian Gothic 
+	8	Gothic
+	9	architectural
+			sense:	architectural.a.01
+	10	style
+			sense:	manner.n.01
+	11	dating
+			sense:	dating.n.01
+	12	to
+	13	the
+			name:	DATE				13-14	the 1870s 
+	14	1870s
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In 1983 it and its rectory were listed on the National Register of Historic Places .
+
+
+Treebanked sentence:
+--------------------
+In 1983 it and its rectory were listed on the National Register of Historic Places . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1983)))
+    (NP
+      (NP (PRP it))
+      (CC and)
+      (NP (PRP$ its) (NN rectory)))
+    (VP (VBD were)
+      (VP (VBN listed)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NNP National) (NNP Register))
+            (PP (IN of)
+              (NP (JJ Historic) (NNS Places)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	1983
+			name:	DATE				1-1	1983 
+	2	it
+	3	and
+	4	its
+	5	rectory
+			sense:	parsonage.n.01
+	6	were
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	were 
+	7	listed
+			sense:	list.v.02
+			prop:	list.01
+			V		7-7	listed 
+			N-ARGM-TMP		0-1	In 1983 
+			N-ARG-A1		2-5	it and its rectory 
+			N-ARG-A2		8-14	on the National Register of Historic Places 
+	8	on
+	9	the
+	10	National
+	11	Register
+	12	of
+	13	Historic
+			sense:	historic.s.01
+	14	Places
+			sense:	place.n.02
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Congregants first met in the 1840s .
+
+
+Treebanked sentence:
+--------------------
+Congregants first met in the 1840s . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNS Congregants))
+    (ADVP (RB first))
+    (VP (VBD met)
+      (PP (IN in)
+        (NP (DT the) (NNS 1840s))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Congregants
+			sense:	congregant.n.01
+	1	first
+			name:	ORDINAL				1-1	first 
+			sense:	first.r.02
+	2	met
+			sense:	meet.v.07
+			prop:	meet.02
+			V		2-2	met 
+			N-ARG-A0		0-0	Congregants 
+			N-ARGM-TMP		1-1	first 
+			N-ARGM-TMP		3-5	in the 1840s 
+	3	in
+	4	the
+			name:	DATE				4-5	the 1840s 
+	5	1840s
+	6	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The first church on the present site was erected in 1847 .
+
+
+Treebanked sentence:
+--------------------
+The first church on the present site was erected in 1847 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ first) (NN church))
+      (PP (IN on)
+        (NP (DT the) (JJ present) (NN site))))
+    (VP (VBD was)
+      (VP (VBN erected)
+        (PP (IN in)
+          (NP (CD 1847)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	first
+			name:	ORDINAL				1-1	first 
+			sense:	first.a.01
+	2	church
+			sense:	church.n.02
+	3	on
+	4	the
+	5	present
+			name:	DATE				5-5	present 
+			sense:	present.a.02
+	6	site
+			sense:	site.n.01
+	7	was
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	was 
+	8	erected
+			sense:	raise.v.09
+			prop:	erect.01
+			V		8-8	erected 
+			N-ARG-A1		0-6	The first church on the present site 
+			N-ARGM-TMP		9-10	in 1847 
+	9	in
+	10	1847
+			name:	DATE				10-10	1847 
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A quarter - century later Russell Sturgis was commissioned to design the present structure , which took five years to complete , including a detailed Gothic interior .
+
+
+Treebanked sentence:
+--------------------
+A quarter - century later Russell Sturgis was commissioned to design the present structure , which took five years to complete , including a detailed Gothic interior . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT A)
+      (NML
+        (NML (NN quarter) (HYPH -) (NN century))
+        (ADVP (RB later)))
+      (NNP Russell) (NNP Sturgis))
+    (VP (VBD was)
+      (VP (VBN commissioned)
+        (S
+          (VP (TO to)
+            (VP (VB design)
+              (NP
+                (NP (DT the) (JJ present) (NN structure))
+                (, ,)
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBD took)
+                      (NP (CD five) (NNS years))
+                      (S
+                        (VP (TO to)
+                          (VP (VB complete)))))))))))
+        (, ,)
+        (PP (VBG including)
+          (NP (DT a) (JJ detailed) (JJ Gothic) (NN interior)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+			name:	DURATION				0-0	A 
+	1	quarter
+			name:	DATE				1-1	quarter 
+			sense:	one-fourth.n.01
+	2	-
+	3	century
+			name:	DATE				3-4	century later 
+			sense:	century.n.01
+	4	later
+			sense:	subsequently.r.01
+	5	Russell
+			name:	PERSON				5-6	Russell Sturgis 
+	6	Sturgis
+	7	was
+			sense:	be.v.01
+			prop:	be.03
+			V		7-7	was 
+	8	commissioned
+			sense:	commission.v.03
+			prop:	commission.01
+			V		8-8	commissioned 
+			N-ARGM-TMP		0-4	A quarter - century later 
+			N-ARG-A2		5-6	Russell Sturgis 
+			N-ARG-A1		9-26	to design the present structure , which took five years to complete , including a detailed Gothic interior 
+	9	to
+	10	design
+			sense:	design.v.03
+			prop:	design.01
+			V		10-10	design 
+			N-ARG-A0		5-6	Russell Sturgis 
+			N-ARG-A1		11-26	the present structure , which took five years to complete , including a detailed Gothic interior 
+	11	the
+	12	present
+			name:	DATE				12-12	present 
+			sense:	present.a.01
+	13	structure
+			sense:	structure.n.01
+	14	,
+	15	which
+	16	took
+			sense:	take.v.02
+			prop:	take.10
+			V		16-16	took 
+			N-ARG-A0		11-13	the present structure 
+			R-ARG-A0		15-15	which 
+			N-ARG-A1		17-18	five years 
+			N-ARG-A0		19-19	to 
+			R-ARG-A0		20-20	complete 
+			N-ARGM-ADV		22-26	including a detailed Gothic interior 
+	17	five
+			name:	DURATION				17-18	five years 
+	18	years
+			sense:	year.n.01
+	19	to
+	20	complete
+			sense:	complete.v.01
+			prop:	complete.01
+			V		20-20	complete 
+			N-ARG-A1		15-15	which 
+	21	,
+	22	including
+			sense:	include.v.01
+			prop:	include.01
+			V		22-22	including 
+			N-ARG-A2		11-13	the present structure 
+			N-ARG-A1		23-26	a detailed Gothic interior 
+	23	a
+	24	detailed
+			sense:	detailed.s.01
+	25	Gothic
+			name:	MISC				25-25	Gothic 
+	26	interior
+			sense:	inside.n.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It signaled Tarrytown 's development as a suburb , especially after John D. Rockefeller and members of his family moved to the village and joined the church .
+
+
+Treebanked sentence:
+--------------------
+It signaled Tarrytown 's development as a suburb , especially after John D. Rockefeller and members of his family moved to the village and joined the church . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD signaled)
+      (NP
+        (NP (NNP Tarrytown) (POS 's))
+        (NN development))
+      (PP (IN as)
+        (NP (DT a) (NN suburb)))
+      (, ,)
+      (SBAR
+        (ADVP (RB especially))
+        (IN after)
+        (S
+          (NP
+            (NP (NNP John) (NNP D.) (NNP Rockefeller))
+            (CC and)
+            (NP
+              (NP (NNS members))
+              (PP (IN of)
+                (NP (PRP$ his) (NN family)))))
+          (VP
+            (VP (VBD moved)
+              (PP (IN to)
+                (NP (DT the) (NN village))))
+            (CC and)
+            (VP (VBD joined)
+              (NP (DT the) (NN church)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	signaled
+			sense:	bespeak.v.01
+			prop:	signal.01
+			V		1-1	signaled 
+			N-ARG-A0		0-0	It 
+			N-ARG-A1		2-7	Tarrytown 's development as a suburb 
+			N-ARGM-TMP		9-26	especially after John D. Rockefeller and members of his family moved to the village and joined the church 
+	2	Tarrytown
+			coref:	IDENT			0	2-3	Tarrytown 's 
+			name:	CITY				2-2	Tarrytown 
+	3	's
+	4	development
+			sense:	development.n.02
+	5	as
+	6	a
+	7	suburb
+			sense:	suburb.n.01
+	8	,
+	9	especially
+			sense:	particularly.r.01
+	10	after
+	11	John
+			coref:	IDENT			1	11-13	John D. Rockefeller 
+			name:	PERSON				11-13	John D. Rockefeller 
+	12	D.
+	13	Rockefeller
+	14	and
+	15	members
+			sense:	member.n.01
+	16	of
+	17	his
+			coref:	IDENT			1	17-17	his 
+	18	family
+			sense:	family.n.01
+	19	moved
+			sense:	move.v.04
+			prop:	move.01
+			V		19-19	moved 
+			N-ARG-A0		11-18	John D. Rockefeller and members of his family 
+			N-ARG-A2		20-22	to the village 
+	20	to
+	21	the
+	22	village
+			sense:	village.n.01
+	23	and
+	24	joined
+			sense:	join.v.01
+			prop:	join.01
+			V		24-24	joined 
+			N-ARG-A0		11-18	John D. Rockefeller and members of his family 
+			N-ARG-A1		25-26	the church 
+	25	the
+	26	church
+			sense:	church.n.01
+	27	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+They made possible some of its later enhancements , such as its landscaping and rectory , both added later .
+
+
+Treebanked sentence:
+--------------------
+They made possible some of its later enhancements , such as its landscaping and rectory , both added later . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP
+      (VP (VBD made)
+        (S
+          (ADJP (JJ possible)))
+        (NP
+          (NP (DT some))
+          (PP (IN of)
+            (NP (PRP$ its) (JJ later) (NNS enhancements)))
+          (, ,)
+          (PP (JJ such) (IN as)
+            (NP (PRP$ its) (NN landscaping)
+              (CC and)
+              (NN rectory)))))
+      (, ,)
+      (CC both)
+      (VP (VBD added)
+        (ADVP (RB later))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	They
+	1	made
+			sense:	make.v.02
+			prop:	make.02
+			V		1-1	made 
+			N-ARG-A0		0-0	They 
+			N-ARG-A1		2-18	possible some of its later enhancements , such as its landscaping and rectory , both added later 
+	2	possible
+			sense:	possible.a.01
+	3	some
+	4	of
+	5	its
+	6	later
+			sense:	later.s.01
+	7	enhancements
+			sense:	enhancement.n.01
+	8	,
+	9	such
+			sense:	such.s.01
+	10	as
+	11	its
+	12	landscaping
+			sense:	landscaping.n.02
+	13	and
+	14	rectory
+			sense:	parsonage.n.01
+	15	,
+	16	both
+	17	added
+			sense:	add.v.01
+			prop:	add.02
+			V		17-17	added 
+			N-ARG-A1		16-16	both 
+			N-ARGM-TMP		18-18	later 
+	18	later
+			sense:	subsequently.r.01
+	19	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				6.2-3	Tarrytown 's 
+				0.17-17	Tarrytown 
+	Chain 1 (IDENT)
+				6.11-13	John D. Rockefeller 
+				6.17-17	his 
+

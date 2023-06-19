@@ -1,0 +1,444 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+McDermott Will & Emery is an international law firm with a diversified business practice .
+
+
+Treebanked sentence:
+--------------------
+McDermott Will & Emery is an international law firm with a diversified business practice . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP McDermott) (NNP Will)
+      (CC &)
+      (NNP Emery))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ international) (NN law) (NN firm))
+        (PP (IN with)
+          (NP (DT a) (JJ diversified) (NN business) (NN practice)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	McDermott
+			coref:	IDENT			0	0-3	McDermott Will & Emery 
+			name:	ORGANIZATION				0-3	McDermott Will & Emery 
+	1	Will
+	2	&
+	3	Emery
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	McDermott Will & Emery 
+			N-ARG-A2		5-13	an international law firm with a diversified business practice 
+	5	an
+	6	international
+			sense:	external.s.03
+	7	law
+			sense:	law.n.06
+	8	firm
+			sense:	firm.n.01
+	9	with
+	10	a
+	11	diversified
+			sense:	diversified.a.01
+	12	business
+			sense:	commercial_enterprise.n.02
+	13	practice
+			sense:	practice.n.04
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The firm is one of the largest grossing law firms globally , and its lawyers represent a wide range of commercial , industrial and financial enterprises , both publicly and privately held .
+
+
+Treebanked sentence:
+--------------------
+The firm is one of the largest grossing law firms globally , and its lawyers represent a wide range of commercial , industrial and financial enterprises , both publicly and privately held . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN firm))
+      (VP (VBZ is)
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP
+              (NP (DT the)
+                (ADJP (JJS largest) (VBG grossing))
+                (NN law) (NNS firms))
+              (ADVP (RB globally)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP$ its) (NNS lawyers))
+      (VP (VBP represent)
+        (NP
+          (NP
+            (NP (DT a) (JJ wide) (NN range))
+            (PP (IN of)
+              (NP
+                (UCP (JJ commercial) (, ,) (JJ industrial)
+                  (CC and)
+                  (JJ financial))
+                (NNS enterprises))))
+          (, ,)
+          (ADJP
+            (ADVP (CC both)
+              (RB publicly)
+              (CC and)
+              (RB privately))
+            (VBN held)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	firm
+			sense:	firm.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The firm 
+			N-ARG-A2		3-10	one of the largest grossing law firms globally 
+	3	one
+			name:	NUMBER				3-3	one 
+	4	of
+	5	the
+	6	largest
+			sense:	large.a.01
+	7	grossing
+			sense:	gross.v.01
+			prop:	crossing.02
+			V		7-7	grossing 
+			N-ARG-A0		8-9	law firms 
+	8	law
+			sense:	law.n.06
+	9	firms
+			sense:	firm.n.01
+	10	globally
+			sense:	globally.r.01
+	11	,
+	12	and
+	13	its
+	14	lawyers
+			sense:	lawyer.n.01
+	15	represent
+			sense:	represent.v.04
+			prop:	represent.01
+			V		15-15	represent 
+			N-ARG-A0		13-14	its lawyers 
+			N-ARG-A1		16-31	a wide range of commercial , industrial and financial enterprises , both publicly and privately held 
+	16	a
+	17	wide
+			sense:	across-the-board.s.01
+	18	range
+			sense:	scope.n.01
+	19	of
+	20	commercial
+			sense:	commercial.a.01
+	21	,
+	22	industrial
+			sense:	industrial.a.01
+	23	and
+	24	financial
+			sense:	fiscal.a.01
+	25	enterprises
+			sense:	enterprise.n.02
+	26	,
+	27	both
+	28	publicly
+			sense:	publicly.r.01
+	29	and
+	30	privately
+			sense:	privately.r.01
+	31	held
+			sense:	have.v.01
+			prop:	hold.01
+			V		31-31	held 
+			N-ARG-A1		20-25	commercial , industrial and financial enterprises 
+			N-ARGM-MNR		27-30	both publicly and privately 
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The firm consists of multiple legal entities that are coordinated through service agreements : McDermott Will & Emery LLP ( based in Illinois with offices throughout the US and a foreign office in South Korea ) , McDermott Will & Emery AARPI ( France ) , McDermott Will & Emery Belgium LLP , McDermott Will & Emery Rechtsanwälte Steuerberater LLP ( both based in Delaware with offices in Belgium or , respectively , Germany ) , 
+
+
+Treebanked sentence:
+--------------------
+The firm consists of multiple legal entities that are coordinated through service agreements : McDermott Will & Emery LLP ( based in Illinois with offices throughout the US and a foreign office in South Korea ) , McDermott Will & Emery AARPI ( France ) , McDermott Will & Emery Belgium LLP , McDermott Will & Emery Rechtsanwälte Steuerberater LLP ( both based in Delaware with offices in Belgium or , respectively , Germany ) , McDermott Will & Emery Studio Legale Associato ( Italy ) and McDermott Will & Emery UK LLP . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN firm))
+    (VP (VBZ consists)
+      (PP (IN of)
+        (NP
+          (NP (JJ multiple) (JJ legal) (NNS entities))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP are)
+                (VP (VBN coordinated)
+                  (PP (IN through)
+                    (NP (NN service) (NNS agreements)))))))
+          (: :)
+          (NP
+            (NP
+              (NP (NNP McDermott) (NNP Will)
+                (CC &)
+                (NNP Emery) (NNP LLP))
+              (-LRB- -LRB-)
+              (VP (VBN based)
+                (PP (IN in)
+                  (NP (NNP Illinois)))
+                (PP (IN with)
+                  (NP
+                    (NP
+                      (NP (NNS offices))
+                      (PP (IN throughout)
+                        (NP (DT the) (NNP US))))
+                    (CC and)
+                    (NP
+                      (NP (DT a) (JJ foreign) (NN office))
+                      (PP (IN in)
+                        (NP (NNP South) (NNP Korea)))))))
+              (-RRB- -RRB-))
+            (, ,)
+            (NP
+              (NP (NNP McDermott) (NNP Will)
+                (CC &)
+                (NNP Emery) (NNP AARPI))
+              (-LRB- -LRB-)
+              (NP (NNP France))
+              (-RRB- -RRB-)))
+          (, ,)
+          (NP (NNP McDermott) (NNP Will)
+            (CC &)
+            (NNP Emery) (NNP Belgium) (NNP LLP))
+          (, ,)
+          (NP
+            (NP (NNP McDermott) (NNP Will)
+              (CC &)
+              (NNP Emery) (NNP Rechtsanwälte) (NNP Steuerberater) (NNP LLP))
+            (-LRB- -LRB-)
+            (NP
+              (NP (DT both))
+              (VP (VBN based)
+                (PP (IN in)
+                  (NP (NNP Delaware)))
+                (PP
+                  (PP (IN with)
+                    (NP
+                      (NP (NNS offices))
+                      (PP (IN in)
+                        (NP (NNP Belgium)))))
+                  (CC or)
+                  (, ,)
+                  (ADVP (RB respectively))
+                  (, ,)
+                  (NP (NNP Germany)))))
+            (-RRB- -RRB-))
+          (, ,)
+          (NP
+            (NP (NNP McDermott) (NNP Will)
+              (CC &)
+              (NNP Emery) (NNP Studio) (NNP Legale) (NNP Associato))
+            (-LRB- -LRB-)
+            (NP (NNP Italy))
+            (-RRB- -RRB-))
+          (CC and)
+          (NP (NNP McDermott) (NNP Will)
+            (CC &)
+            (NNP Emery) (NNP UK) (NNP LLP)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	firm
+			sense:	firm.n.01
+	2	consists
+			sense:	consist.v.04
+			prop:	consist.01
+			V		2-2	consists 
+			N-ARG-A1		0-1	The firm 
+			N-ARG-A2		3-92	of multiple legal entities that are coordinated through service agreements : McDermott Will & Emery LLP ( based in Illinois with offices throughout the US and a foreign office in South Korea ) , McDermott Will & Emery AARPI ( France ) , McDermott Will & Emery Belgium LLP , McDermott Will & Emery Rechtsanwälte Steuerberater LLP ( both based in Delaware with offices in Belgium or , respectively , Germany ) , McDermott Will & Emery Studio Legale Associato ( Italy ) and McDermott Will & Emery UK LLP 
+	3	of
+	4	multiple
+			sense:	multiple.a.01
+	5	legal
+			sense:	legal.a.04
+	6	entities
+			sense:	entity.n.01
+	7	that
+	8	are
+			sense:	be.v.01
+			prop:	be.01
+			V		8-8	are 
+	9	coordinated
+			sense:	coordinate.v.02
+			prop:	coordinate.01
+			V		9-9	coordinated 
+			N-ARG-A1		4-6	multiple legal entities 
+			R-ARG-A1		7-7	that 
+			N-ARGM-MNR		10-12	through service agreements 
+	10	through
+	11	service
+			sense:	service.n.01
+	12	agreements
+			sense:	agreement.n.01
+	13	:
+	14	McDermott
+			name:	ORGANIZATION				14-18	McDermott Will & Emery LLP 
+	15	Will
+	16	&
+	17	Emery
+	18	LLP
+	19	(
+	20	based
+			sense:	base.v.02
+			prop:	base.01
+			V		20-20	based 
+			N-ARG-A1		14-18	McDermott Will & Emery LLP 
+			N-ARGM-LOC		21-22	in Illinois 
+			N-ARGM-ADV		23-34	with offices throughout the US and a foreign office in South Korea 
+	21	in
+	22	Illinois
+			name:	STATE_OR_PROVINCE				22-22	Illinois 
+	23	with
+	24	offices
+			sense:	office.n.01
+	25	throughout
+	26	the
+	27	US
+			name:	COUNTRY				27-27	US 
+	28	and
+	29	a
+	30	foreign
+			sense:	foreign.a.01
+	31	office
+			sense:	office.n.01
+	32	in
+	33	South
+			name:	COUNTRY				33-34	South Korea 
+	34	Korea
+	35	)
+	36	,
+	37	McDermott
+			coref:	IDENT			0	37-41	McDermott Will & Emery AARPI 
+			name:	ORGANIZATION				37-41	McDermott Will & Emery AARPI 
+	38	Will
+	39	&
+	40	Emery
+	41	AARPI
+	42	(
+	43	France
+			name:	COUNTRY				43-43	France 
+	44	)
+	45	,
+	46	McDermott
+			coref:	IDENT			0	46-51	McDermott Will & Emery Belgium LLP 
+			name:	ORGANIZATION				46-51	McDermott Will & Emery Belgium LLP 
+	47	Will
+	48	&
+	49	Emery
+	50	Belgium
+	51	LLP
+	52	,
+	53	McDermott
+			coref:	IDENT			0	53-59	McDermott Will & Emery Rechtsanwälte Steuerberater LLP 
+			name:	ORGANIZATION				53-59	McDermott Will & Emery Rechtsanwälte Steuerberater LLP 
+	54	Will
+	55	&
+	56	Emery
+	57	Rechtsanwälte
+	58	Steuerberater
+	59	LLP
+	60	(
+	61	both
+	62	based
+			sense:	base.v.02
+			prop:	base.01
+			V		62-62	based 
+			N-ARG-A1		61-61	both 
+			N-ARGM-LOC		63-64	in Delaware 
+			N-ARGM-ADV		65-73	with offices in Belgium or , respectively , Germany 
+	63	in
+	64	Delaware
+			name:	STATE_OR_PROVINCE				64-64	Delaware 
+	65	with
+	66	offices
+			sense:	office.n.01
+	67	in
+	68	Belgium
+			name:	COUNTRY				68-68	Belgium 
+	69	or
+	70	,
+	71	respectively
+			sense:	respectively.r.01
+	72	,
+	73	Germany
+			name:	COUNTRY				73-73	Germany 
+	74	)
+	75	,
+	76	McDermott
+			coref:	IDENT			0	76-82	McDermott Will & Emery Studio Legale Associato 
+			name:	ORGANIZATION				76-82	McDermott Will & Emery Studio Legale Associato 
+	77	Will
+	78	&
+	79	Emery
+	80	Studio
+	81	Legale
+	82	Associato
+	83	(
+	84	Italy
+			name:	COUNTRY				84-84	Italy 
+	85	)
+	86	and
+	87	McDermott
+			coref:	IDENT			0	87-92	McDermott Will & Emery UK LLP 
+			name:	ORGANIZATION				87-92	McDermott Will & Emery UK LLP 
+	88	Will
+	89	&
+	90	Emery
+	91	UK
+	92	LLP
+	93	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.53-59	McDermott Will & Emery Rechtsanwälte Steuerberater LLP 
+				0.0-3	McDermott Will & Emery 
+				2.37-41	McDermott Will & Emery AARPI 
+				2.46-51	McDermott Will & Emery Belgium LLP 
+				2.76-82	McDermott Will & Emery Studio Legale Associato 
+				2.87-92	McDermott Will & Emery UK LLP 
+

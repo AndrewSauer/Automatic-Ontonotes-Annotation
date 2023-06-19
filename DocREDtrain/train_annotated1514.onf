@@ -1,0 +1,613 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Medical Center of Louisiana at New Orleans ( MCLNO ) was the name of two teaching hospitals in New Orleans , Louisiana , United States .
+
+
+Treebanked sentence:
+--------------------
+The Medical Center of Louisiana at New Orleans ( MCLNO ) was the name of two teaching hospitals in New Orleans , Louisiana , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Medical) (NNP Center))
+      (PP (IN of)
+        (NP
+          (NP (NNP Louisiana))
+          (PP (IN at)
+            (NP (NNP New) (NNP Orleans) (-LRB- -LRB-) (NNP MCLNO) (-RRB- -RRB-))))))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (NN name))
+        (PP (IN of)
+          (NP
+            (NP (CD two) (NN teaching) (NNS hospitals))
+            (PP (IN in)
+              (NP
+                (NML
+                  (NML (NNP New) (NNP Orleans))
+                  (, ,)
+                  (NP (NNP Louisiana))
+                  (, ,))
+                (NNP United) (NNP States)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Medical
+			name:	ORGANIZATION				1-2	Medical Center 
+	2	Center
+	3	of
+	4	Louisiana
+			coref:	IDENT			3	4-4	Louisiana 
+			name:	STATE_OR_PROVINCE				4-4	Louisiana 
+	5	at
+	6	New
+			name:	CITY				6-7	New Orleans 
+	7	Orleans
+	8	(
+	9	MCLNO
+			name:	ORGANIZATION				9-9	MCLNO 
+	10	)
+	11	was
+			sense:	be.v.02
+			prop:	be.01
+			V		11-11	was 
+			N-ARG-A1		0-10	The Medical Center of Louisiana at New Orleans ( MCLNO ) 
+			N-ARG-A2		12-25	the name of two teaching hospitals in New Orleans , Louisiana , United States 
+	12	the
+	13	name
+			sense:	name.n.01
+	14	of
+	15	two
+			coref:	IDENT			1	15-25	two teaching hospitals in New Orleans , Louisiana , United States 
+			name:	NUMBER				15-15	two 
+	16	teaching
+			sense:	education.n.01
+	17	hospitals
+			sense:	hospital.n.02
+	18	in
+	19	New
+			name:	CITY				19-20	New Orleans 
+	20	Orleans
+	21	,
+	22	Louisiana
+			coref:	IDENT			3	22-22	Louisiana 
+			name:	STATE_OR_PROVINCE				22-22	Louisiana 
+	23	,
+	24	United
+			name:	COUNTRY				24-25	United States 
+	25	States
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Both hospitals were part of the LSU Health Sciences Center in New Orleans commonly referred to as the LSU Medical School in New Orleans .
+
+
+Treebanked sentence:
+--------------------
+Both hospitals were part of the LSU Health Sciences Center in New Orleans commonly referred to as the LSU Medical School in New Orleans . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT Both) (NNS hospitals))
+    (VP (VBD were)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP (DT the) (NNP LSU) (NNP Health) (NNPS Sciences) (NNP Center))))
+      (SBAR (IN in)
+        (S
+          (NP (NNP New) (NNP Orleans))
+          (ADVP (RB commonly))
+          (VP (VBD referred)
+            (PP (IN to)
+              (PP (IN as)
+                (NP (DT the) (NNP LSU) (NNP Medical) (NNP School))))
+            (PP (IN in)
+              (NP (NNP New) (NNP Orleans)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Both
+			coref:	IDENT			1	0-1	Both hospitals 
+	1	hospitals
+			sense:	hospital.n.02
+	2	were
+			sense:	constitute.v.01
+			prop:	be.01
+			V		2-2	were 
+			N-ARG-A1		0-1	Both hospitals 
+			N-ARG-A2		3-23	part of the LSU Health Sciences Center in New Orleans commonly referred to as the LSU Medical School in New Orleans 
+	3	part
+			sense:	part.n.01
+	4	of
+	5	the
+			coref:	IDENT			0	5-9	the LSU Health Sciences Center 
+	6	LSU
+			name:	ORGANIZATION				6-9	LSU Health Sciences Center 
+	7	Health
+	8	Sciences
+	9	Center
+	10	in
+	11	New
+			name:	CITY				11-12	New Orleans 
+	12	Orleans
+	13	commonly
+			sense:	normally.r.01
+	14	referred
+			sense:	mention.v.01
+			prop:	refer.01
+			V		14-14	referred 
+			N-ARGM-MNR		13-13	commonly 
+			N-ARG-A1		15-15	to 
+			N-ARG-A2		16-23	as the LSU Medical School in New Orleans 
+	15	to
+	16	as
+	17	the
+	18	LSU
+			name:	ORGANIZATION				18-20	LSU Medical School 
+	19	Medical
+	20	School
+	21	in
+	22	New
+			name:	CITY				22-23	New Orleans 
+	23	Orleans
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The two hospitals were Charity Hospital and University Hospital which was later renamed Interim LSU Hospital ( ILH ) .
+
+
+Treebanked sentence:
+--------------------
+The two hospitals were Charity Hospital and University Hospital which was later renamed Interim LSU Hospital ( ILH ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (CD two) (NNS hospitals))
+    (VP (VBD were)
+      (NP
+        (NP
+          (NP (NNP Charity) (NNP Hospital))
+          (CC and)
+          (NP (NNP University) (NNP Hospital)))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBD was)
+              (ADVP (RB later))
+              (VP (VBN renamed)
+                (NP (JJ Interim) (NNP LSU) (NNP Hospital)))))))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP ILH))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-2	The two hospitals 
+	1	two
+			name:	NUMBER				1-1	two 
+	2	hospitals
+			sense:	hospital.n.02
+	3	were
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	were 
+			N-ARG-A1		0-2	The two hospitals 
+			N-ARG-A2		4-18	Charity Hospital and University Hospital which was later renamed Interim LSU Hospital ( ILH ) 
+	4	Charity
+			name:	ORGANIZATION				4-5	Charity Hospital 
+	5	Hospital
+	6	and
+	7	University
+			name:	LOCATION				7-8	University Hospital 
+	8	Hospital
+	9	which
+	10	was
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	was 
+	11	later
+			sense:	subsequently.r.01
+	12	renamed
+			sense:	rename.v.01
+			prop:	rename.01
+			V		12-12	renamed 
+			N-ARG-A1		7-8	University Hospital 
+			R-ARG-A1		9-9	which 
+			N-ARGM-TMP		11-11	later 
+			N-ARG-A2		13-18	Interim LSU Hospital ( ILH ) 
+	13	Interim
+			sense:	interim.s.01
+	14	LSU
+			name:	ORGANIZATION				14-15	LSU Hospital 
+	15	Hospital
+	16	(
+	17	ILH
+	18	)
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Charity Hospital was severely damaged by Hurricane Katrina and closed while Interim LSU Hospital ( ILH ) was extensively renovated and reopened November 20 , 2006 .
+
+
+Treebanked sentence:
+--------------------
+Charity Hospital was severely damaged by Hurricane Katrina and closed while Interim LSU Hospital ( ILH ) was extensively renovated and reopened November 20 , 2006 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Charity) (NNP Hospital))
+    (VP
+      (VP (VBD was)
+        (ADVP (RB severely))
+        (VP (VBN damaged)
+          (PP (IN by)
+            (NP (NNP Hurricane) (NNP Katrina)))))
+      (CC and)
+      (VP (VBD closed)
+        (SBAR (IN while)
+          (S
+            (NP
+              (NP (JJ Interim) (NNP LSU) (NNP Hospital))
+              (-LRB- -LRB-)
+              (NP (NNP ILH))
+              (-RRB- -RRB-))
+            (VP (VBD was)
+              (ADVP (RB extensively))
+              (VP (VBN renovated)
+                (CC and)
+                (VBN reopened)
+                (NP-TMP (NNP November) (CD 20) (, ,) (CD 2006))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Charity
+			coref:	IDENT			2	0-1	Charity Hospital 
+			name:	ORGANIZATION				0-1	Charity Hospital 
+	1	Hospital
+	2	was
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	was 
+	3	severely
+			sense:	badly.r.01
+	4	damaged
+			sense:	damage.v.01
+			prop:	damage.01
+			V		4-4	damaged 
+			N-ARG-A1		0-1	Charity Hospital 
+			N-ARGM-MNR		3-3	severely 
+			N-ARG-A0		5-7	by Hurricane Katrina 
+	5	by
+	6	Hurricane
+			name:	CAUSE_OF_DEATH				6-6	Hurricane 
+	7	Katrina
+	8	and
+	9	closed
+			sense:	close_up.v.01
+			prop:	close.01
+			V		9-9	closed 
+			N-ARG-A1		0-1	Charity Hospital 
+			N-ARGM-ADV		10-25	while Interim LSU Hospital ( ILH ) was extensively renovated and reopened November 20 , 2006 
+	10	while
+	11	Interim
+			coref:	IDENT			2	11-13	Interim LSU Hospital 
+			sense:	interim.s.01
+	12	LSU
+			name:	ORGANIZATION				12-13	LSU Hospital 
+	13	Hospital
+	14	(
+	15	ILH
+	16	)
+	17	was
+			sense:	be.v.01
+			prop:	be.03
+			V		17-17	was 
+	18	extensively
+			sense:	extensively.r.01
+	19	renovated
+			sense:	renovate.v.01
+			prop:	renovate.01
+			V		19-19	renovated 
+			N-ARG-A1		11-16	Interim LSU Hospital ( ILH ) 
+			N-ARGM-EXT		18-18	extensively 
+	20	and
+	21	reopened
+			sense:	reopen.v.01
+			prop:	reopen.01
+			V		21-21	reopened 
+			N-ARG-A1		11-16	Interim LSU Hospital ( ILH ) 
+			N-ARGM-TMP		22-25	November 20 , 2006 
+	22	November
+			name:	DATE				22-25	November 20 , 2006 
+	23	20
+	24	,
+	25	2006
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A new facility named University Medical Center New Orleans opened on August 1 , 2015 replacing both facilities .
+
+
+Treebanked sentence:
+--------------------
+A new facility named University Medical Center New Orleans opened on August 1 , 2015 replacing both facilities . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (JJ new) (NN facility))
+      (VP (VBN named)
+        (NP
+          (NML (NNP University) (NNP Medical))
+          (NNP Center) (NNP New) (NNP Orleans))))
+    (VP (VBD opened)
+      (PP (IN on)
+        (NP (NNP August) (CD 1) (, ,) (CD 2015)))
+      (S
+        (VP (VBG replacing)
+          (NP (DT both) (NNS facilities)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	new
+			sense:	new.a.01
+	2	facility
+			sense:	facility.n.01
+	3	named
+			sense:	name.v.01
+			prop:	name.01
+			V		3-3	named 
+			N-ARG-A1		0-2	A new facility 
+			N-ARG-A2		4-8	University Medical Center New Orleans 
+	4	University
+			name:	LOCATION				4-6	University Medical Center 
+	5	Medical
+	6	Center
+	7	New
+			name:	CITY				7-8	New Orleans 
+	8	Orleans
+	9	opened
+			sense:	open.v.02
+			prop:	open.01
+			V		9-9	opened 
+			N-ARG-A1		0-8	A new facility named University Medical Center New Orleans 
+			N-ARGM-TMP		10-14	on August 1 , 2015 
+			N-ARGM-ADV		15-17	replacing both facilities 
+	10	on
+	11	August
+			name:	DATE				11-14	August 1 , 2015 
+	12	1
+	13	,
+	14	2015
+	15	replacing
+			sense:	supplant.v.01
+			prop:	replace.01
+			V		15-15	replacing 
+			N-ARG-A2		0-8	A new facility named University Medical Center New Orleans 
+			N-ARG-A1		16-17	both facilities 
+	16	both
+	17	facilities
+			sense:	facility.n.01
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The original medical school opened in 1931 .
+
+
+Treebanked sentence:
+--------------------
+The original medical school opened in 1931 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (JJ original) (JJ medical) (NN school))
+    (VP (VBN opened)
+      (PP (IN in)
+        (NP (CD 1931))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	original
+			sense:	original.s.01
+	2	medical
+			sense:	medical.a.01
+	3	school
+			sense:	school.n.01
+	4	opened
+			sense:	open.v.02
+			prop:	open.01
+			V		4-4	opened 
+			N-ARG-A1		0-3	The original medical school 
+			N-ARGM-TMP		5-6	in 1931 
+	5	in
+	6	1931
+			name:	DATE				6-6	1931 
+	7	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Among its founders was the physician Edgar Hull , who later contradicted the LSU historian T. Harry Williams ' account of the assassination and subsequent death of Huey Pierce Long , Jr.
+
+
+Treebanked sentence:
+--------------------
+Among its founders was the physician Edgar Hull , who later contradicted the LSU historian T. Harry Williams ' account of the assassination and subsequent death of Huey Pierce Long , Jr. . 
+
+Tree:
+-----
+(ROOT
+  (SINV
+    (PP (IN Among)
+      (NP (PRP$ its) (NNS founders)))
+    (VP (VBD was)
+      (NP (DT the) (NN physician)))
+    (NP
+      (NP (NNP Edgar) (NNP Hull))
+      (, ,)
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (ADVP (RB later))
+          (VP (VBD contradicted)
+            (NP
+              (NP
+                (NP
+                  (NP (DT the) (NNP LSU)
+                    (NML
+                      (NML (NN historian))
+                      (NNP T.) (NNP Harry))
+                    (NNP Williams) (POS '))
+                  (NN account))
+                (PP (IN of)
+                  (NP (DT the) (NN assassination))))
+              (CC and)
+              (NP
+                (NP (JJ subsequent) (NN death))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP Huey) (NNP Pierce) (NNP Long))
+                    (, ,)
+                    (NP (NNP Jr.))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Among
+	1	its
+			coref:	IDENT			2	1-1	its 
+	2	founders
+			sense:	founder.n.02
+	3	was
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	was 
+			N-ARG-A2		0-2	Among its founders 
+			N-ARG-A1		4-31	the physician Edgar Hull , who later contradicted the LSU historian T. Harry Williams ' account of the assassination and subsequent death of Huey Pierce Long , Jr. 
+	4	the
+	5	physician
+			name:	TITLE				5-5	physician 
+			sense:	doctor.n.01
+	6	Edgar
+			name:	PERSON				6-7	Edgar Hull 
+	7	Hull
+	8	,
+	9	who
+	10	later
+			sense:	subsequently.r.01
+	11	contradicted
+			sense:	contradict.v.02
+			prop:	contradict.01
+			V		11-11	contradicted 
+			N-ARG-A0		4-7	the physician Edgar Hull 
+			R-ARG-A0		9-9	who 
+			N-ARGM-TMP		10-10	later 
+			N-ARG-A1		12-31	the LSU historian T. Harry Williams ' account of the assassination and subsequent death of Huey Pierce Long , Jr. 
+	12	the
+	13	LSU
+			coref:	IDENT			0	13-13	LSU 
+			name:	ORGANIZATION				13-13	LSU 
+	14	historian
+			name:	TITLE				14-14	historian 
+			sense:	historian.n.01
+	15	T.
+			name:	PERSON				15-17	T. Harry Williams 
+	16	Harry
+	17	Williams
+	18	'
+	19	account
+			sense:	history.n.02
+	20	of
+	21	the
+	22	assassination
+			name:	CRIMINAL_CHARGE				22-22	assassination 
+			sense:	assassination.n.02
+	23	and
+	24	subsequent
+			sense:	subsequent.a.01
+	25	death
+			sense:	death.n.01
+	26	of
+	27	Huey
+			name:	PERSON				27-29	Huey Pierce Long 
+	28	Pierce
+	29	Long
+	30	,
+	31	Jr.
+	32	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.5-9	the LSU Health Sciences Center 
+				6.13-13	LSU 
+	Chain 1 (IDENT)
+				0.15-25	two teaching hospitals in New Orleans , Louisiana , United States 
+				1.0-1	Both hospitals 
+				2.0-2	The two hospitals 
+	Chain 2 (IDENT)
+				3.11-13	Interim LSU Hospital 
+				3.0-1	Charity Hospital 
+				6.1-1	its 
+	Chain 3 (IDENT)
+				0.4-4	Louisiana 
+				0.22-22	Louisiana 
+

@@ -1,0 +1,514 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Isle of Palms is a city in Charleston County , South Carolina , United States .
+
+
+Treebanked sentence:
+--------------------
+Isle of Palms is a city in Charleston County , South Carolina , United States . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Isle))
+      (PP (IN of)
+        (NP (NNPS Palms))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN city))
+        (PP (IN in)
+          (NP
+            (NP (NNP Charleston) (NNP County))
+            (, ,)
+            (NP (NNP South) (NNP Carolina))
+            (, ,)
+            (NP (NNP United) (NNP States))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Isle
+			coref:	IDENT			2	0-2	Isle of Palms 
+	1	of
+	2	Palms
+			coref:	IDENT			3	2-2	Palms 
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Isle of Palms 
+			N-ARG-A2		4-14	a city in Charleston County , South Carolina , United States 
+	4	a
+	5	city
+			sense:	city.n.01
+	6	in
+	7	Charleston
+			name:	CITY				7-7	Charleston 
+	8	County
+			name:	LOCATION				8-8	County 
+	9	,
+	10	South
+			coref:	IDENT			1	10-11	South Carolina 
+			name:	STATE_OR_PROVINCE				10-11	South Carolina 
+	11	Carolina
+	12	,
+	13	United
+			name:	COUNTRY				13-14	United States 
+	14	States
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+At the 2010 census , the population was 4,133 .
+
+
+Treebanked sentence:
+--------------------
+At the 2010 census , the population was 4,133 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (DT the) (CD 2010) (NN census)))
+    (, ,)
+    (NP (DT the) (NN population))
+    (VP (VBD was)
+      (NP (CD 4,133)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	At
+	1	the
+	2	2010
+			name:	DATE				2-2	2010 
+	3	census
+			sense:	census.n.01
+	4	,
+	5	the
+	6	population
+			sense:	population.n.04
+	7	was
+			sense:	equal.v.01
+			prop:	be.01
+			V		7-7	was 
+			N-ARGM-TMP		0-3	At the 2010 census 
+			N-ARG-A1		5-6	the population 
+			N-ARG-A2		8-8	4,133 
+	8	4,133
+			name:	NUMBER				8-8	4,133 
+	9	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Isle of Palms is a barrier island on the South Carolina coast .
+
+
+Treebanked sentence:
+--------------------
+Isle of Palms is a barrier island on the South Carolina coast . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Isle))
+      (PP (IN of)
+        (NP (NNPS Palms))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN barrier) (NN island))
+        (PP (IN on)
+          (NP (DT the)
+            (NML (NNP South) (NNP Carolina))
+            (NN coast)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Isle
+			coref:	IDENT			2	0-2	Isle of Palms 
+	1	of
+	2	Palms
+			coref:	IDENT			3	2-2	Palms 
+	3	is
+			sense:	be.v.02
+			prop:	be.01
+			V		3-3	is 
+			N-ARG-A1		0-2	Isle of Palms 
+			N-ARG-A2		4-11	a barrier island on the South Carolina coast 
+	4	a
+	5	barrier
+			sense:	barrier.n.03
+	6	island
+			sense:	island.n.01
+	7	on
+	8	the
+	9	South
+			coref:	IDENT			1	9-10	South Carolina 
+			name:	STATE_OR_PROVINCE				9-10	South Carolina 
+	10	Carolina
+	11	coast
+			sense:	seashore.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The city is included within the Charleston - North Charleston - Summerville metropolitan area and the Charleston - North Charleston Urbanized Area .
+
+
+Treebanked sentence:
+--------------------
+The city is included within the Charleston - North Charleston - Summerville metropolitan area and the Charleston - North Charleston Urbanized Area . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN city))
+    (VP (VBZ is)
+      (VP (VBN included)
+        (PP (IN within)
+          (NP
+            (NP
+              (NP (DT the) (NNP Charleston) (HYPH -) (NNP North) (NNP Charleston) (HYPH -) (NNP Summerville))
+              (NP (JJ metropolitan) (NN area)))
+            (CC and)
+            (NP (DT the) (NNP Charleston) (HYPH -) (NNP North) (NNP Charleston) (NNP Urbanized) (NNP Area))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	city
+			sense:	city.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	included
+			sense:	include.v.01
+			prop:	include.01
+			V		3-3	included 
+			N-ARG-A1		0-1	The city 
+			N-ARG-A2		4-21	within the Charleston - North Charleston - Summerville metropolitan area and the Charleston - North Charleston Urbanized Area 
+	4	within
+	5	the
+	6	Charleston
+			coref:	IDENT			0	6-6	Charleston 
+			name:	CITY				6-6	Charleston 
+	7	-
+	8	North
+			name:	CITY				8-9	North Charleston 
+	9	Charleston
+	10	-
+			name:	LOCATION				10-10	- 
+	11	Summerville
+			name:	CITY				11-11	Summerville 
+	12	metropolitan
+			sense:	metropolitan.a.01
+	13	area
+			sense:	area.n.01
+	14	and
+	15	the
+	16	Charleston
+			coref:	IDENT			0	16-16	Charleston 
+			name:	CITY				16-16	Charleston 
+	17	-
+	18	North
+			name:	CITY				18-19	North Charleston 
+	19	Charleston
+	20	Urbanized
+			name:	LOCATION				20-21	Urbanized Area 
+	21	Area
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The town lies along a narrow strip of land , hugging the beach , separated from the mainland by the Intracoastal Waterway .
+
+
+Treebanked sentence:
+--------------------
+The town lies along a narrow strip of land , hugging the beach , separated from the mainland by the Intracoastal Waterway . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN town))
+    (VP (VBZ lies)
+      (PP (IN along)
+        (NP
+          (NP (DT a) (JJ narrow) (NN strip))
+          (PP (IN of)
+            (NP (NN land)))))
+      (, ,)
+      (S
+        (VP (VBG hugging)
+          (NP
+            (NP (DT the) (NN beach))
+            (, ,)
+            (VP (VBN separated)
+              (PP (IN from)
+                (NP (DT the) (NN mainland)))
+              (PP (IN by)
+                (NP (DT the) (NNP Intracoastal) (NNP Waterway))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	town
+			sense:	town.n.01
+	2	lies
+			sense:	lie.v.01
+			prop:	lie.01
+			V		2-2	lies 
+			N-ARG-A1		0-1	The town 
+			N-ARG-A2		3-8	along a narrow strip of land 
+			N-ARGM-PRD		10-12	hugging the beach 
+			N-ARGM-PRD		14-21	separated from the mainland by the Intracoastal Waterway 
+	3	along
+	4	a
+	5	narrow
+			sense:	narrow.a.01
+	6	strip
+			sense:	strip.n.01
+	7	of
+	8	land
+			sense:	land.n.04
+	9	,
+	10	hugging
+			sense:	hug.v.02
+			prop:	hug.01
+			V		10-10	hugging 
+			N-ARG-A0		0-1	The town 
+			N-ARG-A1		11-12	the beach 
+	11	the
+	12	beach
+			sense:	beach.n.01
+	13	,
+	14	separated
+			sense:	separate.v.01
+			prop:	separate.01
+			V		14-14	separated 
+			N-ARG-A1		0-1	The town 
+			N-ARG-A2		15-17	from the mainland 
+			N-ARG-A0		18-21	by the Intracoastal Waterway 
+	15	from
+	16	the
+	17	mainland
+			sense:	mainland.n.01
+	18	by
+	19	the
+	20	Intracoastal
+			name:	LOCATION				20-21	Intracoastal Waterway 
+	21	Waterway
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It is an affluent community of both vacation home owners and year - round residents , with large beachfront homes , resorts , and local restaurants .
+
+
+Treebanked sentence:
+--------------------
+It is an affluent community of both vacation home owners and year - round residents , with large beachfront homes , resorts , and local restaurants . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ affluent) (NN community))
+        (PP (IN of)
+          (NP (DT both) (NN vacation)
+            (NML
+              (NML (NN home) (NNS owners))
+              (CC and)
+              (NML (NN year) (HYPH -) (NN round)))
+            (NNS residents))))
+      (, ,)
+      (PP (IN with)
+        (NP
+          (NP (JJ large) (JJ beachfront) (NNS homes))
+          (, ,)
+          (NP (NNS resorts))
+          (, ,)
+          (CC and)
+          (NP (JJ local) (NNS restaurants)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+	1	is
+			sense:	be.v.01
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		2-25	an affluent community of both vacation home owners and year - round residents , with large beachfront homes , resorts , and local restaurants 
+	2	an
+	3	affluent
+			sense:	affluent.s.01
+	4	community
+			sense:	community.n.01
+	5	of
+	6	both
+	7	vacation
+			sense:	vacation.n.01
+	8	home
+			sense:	dwelling.n.01
+	9	owners
+			sense:	owner.n.02
+	10	and
+	11	year
+			name:	DURATION				11-11	year 
+			sense:	year.n.01
+	12	-
+	13	round
+			sense:	round.n.06
+	14	residents
+			sense:	resident.n.01
+	15	,
+	16	with
+	17	large
+			sense:	large.a.01
+	18	beachfront
+	19	homes
+			sense:	dwelling.n.01
+	20	,
+	21	resorts
+			sense:	resort.n.01
+	22	,
+	23	and
+	24	local
+			sense:	local.a.01
+	25	restaurants
+			sense:	restaurant.n.01
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Beach volleyball is popular in the summer , and the " Windjammer " club hosts several tournaments throughout the year .
+
+
+Treebanked sentence:
+--------------------
+Beach volleyball is popular in the summer , and the " Windjammer " club hosts several tournaments throughout the year . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NNP Beach) (NNP volleyball))
+      (VP (VBZ is)
+        (ADJP (JJ popular)
+          (PP (IN in)
+            (NP (DT the) (NN summer))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT the)
+        (NML (`` ") (NNP Windjammer) ('' ") (NN club))
+        (NNS hosts))
+      (NP
+        (NP (JJ several) (NNS tournaments))
+        (PP (IN throughout)
+          (NP (DT the) (NN year)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Beach
+	1	volleyball
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	Beach volleyball 
+			N-ARG-A2		3-3	popular 
+			N-ARGM-TMP		4-6	in the summer 
+	3	popular
+			sense:	popular.a.01
+	4	in
+	5	the
+	6	summer
+			name:	DATE				6-6	summer 
+			sense:	summer.n.01
+	7	,
+	8	and
+	9	the
+	10	"
+	11	Windjammer
+			name:	MISC				11-11	Windjammer 
+	12	"
+	13	club
+			sense:	club.n.02
+	14	hosts
+			sense:	host.n.06
+	15	several
+			sense:	several.s.01
+	16	tournaments
+			sense:	tournament.n.01
+	17	throughout
+	18	the
+			name:	DATE				18-19	the year 
+	19	year
+			sense:	year.n.01
+	20	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				3.6-6	Charleston 
+				3.16-16	Charleston 
+	Chain 1 (IDENT)
+				0.10-11	South Carolina 
+				2.9-10	South Carolina 
+	Chain 2 (IDENT)
+				0.0-2	Isle of Palms 
+				2.0-2	Isle of Palms 
+	Chain 3 (IDENT)
+				0.2-2	Palms 
+				2.2-2	Palms 
+

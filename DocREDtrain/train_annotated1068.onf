@@ -1,0 +1,1240 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Standard Oil Co.
+
+
+Treebanked sentence:
+--------------------
+Standard Oil Co. . 
+
+Tree:
+-----
+(ROOT
+  (NP (NNP Standard) (NNP Oil) (NNP Co.) (. .)))
+
+
+Leaves:
+-------
+	0	Standard
+			coref:	IDENT			8	0-2	Standard Oil Co. 
+			name:	ORGANIZATION				0-2	Standard Oil Co. 
+	1	Oil
+	2	Co.
+	3	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Inc. was an American oil producing , transporting , refining , and marketing company .
+
+
+Treebanked sentence:
+--------------------
+Inc. was an American oil producing , transporting , refining , and marketing company . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Inc.))
+    (VP (VBD was)
+      (NP (DT an) (JJ American) (NN oil)
+        (S
+          (VP
+            (VP (VBG producing) (, ,) (VBG transporting) (, ,)
+              (NP (NN refining)))
+            (, ,)
+            (CC and)
+            (VP (VBG marketing)
+              (NP (NN company)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Inc.
+			coref:	IDENT			2	0-0	Inc. 
+	1	was
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	was 
+			N-ARG-A1		0-0	Inc. 
+			N-ARG-A2		2-13	an American oil producing , transporting , refining , and marketing company 
+	2	an
+	3	American
+			name:	NATIONALITY				3-3	American 
+	4	oil
+			sense:	oil.n.01
+	5	producing
+			sense:	produce.v.02
+			prop:	producing.01
+			V		5-5	producing 
+			N-ARG-A1		4-4	oil 
+			N-ARG-A0		13-13	company 
+	6	,
+	7	transporting
+			sense:	transport.v.02
+			prop:	transport.01
+			V		7-7	transporting 
+			N-ARG-A1		4-4	oil 
+			N-ARG-A0		13-13	company 
+	8	,
+	9	refining
+			sense:	refining.n.01
+	10	,
+	11	and
+	12	marketing
+			sense:	market.v.01
+			prop:	marketing.01
+			V		12-12	marketing 
+			N-ARG-A0		13-13	company 
+	13	company
+			sense:	company.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Established in 1870 by John D. Rockefeller and Henry Flagler as a corporation in Ohio , it was the largest oil refinery in the world of its time .
+
+
+Treebanked sentence:
+--------------------
+Established in 1870 by John D. Rockefeller and Henry Flagler as a corporation in Ohio , it was the largest oil refinery in the world of its time . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Established)
+        (PP (IN in)
+          (NP (CD 1870)))
+        (PP (IN by)
+          (NP
+            (NP (NNP John) (NNP D.) (NNP Rockefeller))
+            (CC and)
+            (NP (NNP Henry) (NNP Flagler))))
+        (PP (IN as)
+          (NP
+            (NP (DT a) (NN corporation))
+            (PP (IN in)
+              (NP (NNP Ohio)))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (JJS largest) (NN oil) (NN refinery))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN world))
+            (PP (IN of)
+              (NP (PRP$ its) (NN time)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		0-0	Established 
+			N-ARGM-TMP		1-2	in 1870 
+			N-ARG-A0		3-9	by John D. Rockefeller and Henry Flagler 
+			N-ARGM-PRD		10-14	as a corporation in Ohio 
+			N-ARG-A1		16-16	it 
+	1	in
+	2	1870
+			name:	DATE				2-2	1870 
+	3	by
+	4	John
+			name:	PERSON				4-6	John D. Rockefeller 
+	5	D.
+	6	Rockefeller
+	7	and
+	8	Henry
+			coref:	IDENT			7	8-9	Henry Flagler 
+			name:	PERSON				8-9	Henry Flagler 
+	9	Flagler
+	10	as
+	11	a
+	12	corporation
+			sense:	corporation.n.01
+	13	in
+	14	Ohio
+			name:	STATE_OR_PROVINCE				14-14	Ohio 
+	15	,
+	16	it
+			coref:	IDENT			2	16-16	it 
+	17	was
+			sense:	be.v.01
+			prop:	be.01
+			V		17-17	was 
+			R-ARG-A1		0-14	Established in 1870 by John D. Rockefeller and Henry Flagler as a corporation in Ohio 
+			N-ARG-A1		16-16	it 
+			N-ARG-A2		18-27	the largest oil refinery in the world of its time 
+	18	the
+	19	largest
+			sense:	large.a.01
+	20	oil
+			sense:	oil.n.01
+	21	refinery
+			sense:	refinery.n.01
+	22	in
+	23	the
+			coref:	IDENT			0	23-27	the world of its time 
+	24	world
+			sense:	earth.n.01
+	25	of
+	26	its
+			coref:	IDENT			2	26-26	its 
+	27	time
+			sense:	time.n.03
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Its history as one of the world 's first and largest multinational corporations ended in 1911 , when the United States Supreme Court , in a landmark case , ruled that Standard Oil was an illegal monopoly .
+
+
+Treebanked sentence:
+--------------------
+Its history as one of the world 's first and largest multinational corporations ended in 1911 , when the United States Supreme Court , in a landmark case , ruled that Standard Oil was an illegal monopoly . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Its) (NN history))
+      (PP (IN as)
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN world) (POS 's))
+              (ADJP (JJ first)
+                (CC and)
+                (JJS largest))
+              (JJ multinational) (NNS corporations))))))
+    (VP (VBN ended)
+      (PP (IN in)
+        (NP
+          (NP (CD 1911))
+          (, ,)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP
+                (NP (DT the) (NNP United) (NNP States) (NNP Supreme) (NNP Court))
+                (, ,)
+                (PP (IN in)
+                  (NP (DT a) (NN landmark) (NN case)))
+                (, ,))
+              (VP (VBD ruled)
+                (SBAR (IN that)
+                  (S
+                    (NP (NNP Standard) (NNP Oil))
+                    (VP (VBD was)
+                      (NP (DT an) (JJ illegal) (NN monopoly)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Its
+			coref:	IDENT			2	0-0	Its 
+	1	history
+			sense:	history.n.01
+	2	as
+	3	one
+			name:	NUMBER				3-3	one 
+	4	of
+	5	the
+			coref:	IDENT			0	5-7	the world 's 
+	6	world
+			sense:	earth.n.01
+	7	's
+	8	first
+			name:	ORDINAL				8-8	first 
+			sense:	first.a.01
+	9	and
+	10	largest
+			sense:	large.a.01
+	11	multinational
+			sense:	multinational.s.01
+	12	corporations
+			sense:	corporation.n.01
+	13	ended
+			sense:	end.v.01
+			prop:	end.01
+			V		13-13	ended 
+			N-ARG-A1		0-12	Its history as one of the world 's first and largest multinational corporations 
+			N-ARGM-TMP		14-36	in 1911 , when the United States Supreme Court , in a landmark case , ruled that Standard Oil was an illegal monopoly 
+	14	in
+	15	1911
+			coref:	IDENT			5	15-15	1911 
+			name:	DATE				15-15	1911 
+	16	,
+	17	when
+	18	the
+	19	United
+			name:	ORGANIZATION				19-22	United States Supreme Court 
+	20	States
+	21	Supreme
+	22	Court
+	23	,
+	24	in
+	25	a
+	26	landmark
+			sense:	landmark.n.02
+	27	case
+			sense:	lawsuit.n.01
+	28	,
+	29	ruled
+			sense:	rule.v.02
+			prop:	rule.01
+			V		29-29	ruled 
+			N-ARGM-TMP		15-15	1911 
+			R-ARGM-TMP		17-17	when 
+			N-ARG-A0		18-22	the United States Supreme Court 
+			N-ARGM-LOC		24-27	in a landmark case 
+			N-ARG-A1		30-36	that Standard Oil was an illegal monopoly 
+	30	that
+	31	Standard
+			coref:	IDENT			8	31-32	Standard Oil 
+			name:	ORGANIZATION				31-32	Standard Oil 
+	32	Oil
+	33	was
+			sense:	be.v.01
+			prop:	be.01
+			V		33-33	was 
+			N-ARG-A1		31-32	Standard Oil 
+			N-ARG-A2		34-36	an illegal monopoly 
+	34	an
+	35	illegal
+			sense:	illegal.a.01
+	36	monopoly
+			sense:	monopoly.n.01
+	37	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Standard Oil dominated the oil products market initially through horizontal integration in the refining sector , then , in later years vertical integration ; the company was an innovator in the development of the business trust .
+
+
+Treebanked sentence:
+--------------------
+Standard Oil dominated the oil products market initially through horizontal integration in the refining sector , then , in later years vertical integration ; the company was an innovator in the development of the business trust . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (NNP Standard) (NNP Oil))
+      (VP (VBD dominated)
+        (NP (DT the)
+          (NML (NN oil) (NNS products))
+          (NN market))
+        (PP
+          (ADVP (RB initially))
+          (IN through)
+          (NP
+            (NP (JJ horizontal) (NN integration))
+            (PP (IN in)
+              (NP (DT the) (NN refining) (NN sector)))))
+        (, ,)
+        (ADVP (RB then))
+        (, ,)
+        (PP (IN in)
+          (NP
+            (NP (JJ later) (NNS years))
+            (NP (JJ vertical) (NN integration))))))
+    (: ;)
+    (S
+      (NP (DT the) (NN company))
+      (VP (VBD was)
+        (NP
+          (NP (DT an) (NN innovator))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN development))
+              (PP (IN of)
+                (NP (DT the) (NN business) (NN trust))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Standard
+			coref:	IDENT			8	0-1	Standard Oil 
+			name:	ORGANIZATION				0-1	Standard Oil 
+	1	Oil
+	2	dominated
+			sense:	dominate.v.02
+			prop:	dominate.01
+			V		2-2	dominated 
+			N-ARG-A0		0-1	Standard Oil 
+			N-ARG-A1		3-6	the oil products market 
+			N-ARGM-TMP		7-7	initially 
+			N-ARGM-MNR		8-22	through horizontal integration in the refining sector , then , in later years vertical integration 
+	3	the
+	4	oil
+			sense:	oil.n.01
+	5	products
+			sense:	merchandise.n.01
+	6	market
+			sense:	market.n.01
+	7	initially
+			sense:	initially.r.01
+	8	through
+	9	horizontal
+			sense:	horizontal.a.01
+	10	integration
+			sense:	consolidation.n.02
+	11	in
+	12	the
+	13	refining
+			sense:	refining.n.01
+	14	sector
+			sense:	sector.n.02
+	15	,
+	16	then
+			sense:	then.r.01
+	17	,
+	18	in
+	19	later
+			name:	DURATION				19-20	later years 
+			sense:	later.s.01
+	20	years
+			sense:	year.n.01
+	21	vertical
+			sense:	vertical.a.02
+	22	integration
+			sense:	consolidation.n.02
+	23	;
+	24	the
+			coref:	IDENT			8	24-25	the company 
+	25	company
+			sense:	company.n.01
+	26	was
+			sense:	be.v.01
+			prop:	be.01
+			V		26-26	was 
+			N-ARG-A1		24-25	the company 
+			N-ARG-A2		27-35	an innovator in the development of the business trust 
+	27	an
+	28	innovator
+			sense:	pioneer.n.01
+	29	in
+	30	the
+	31	development
+			sense:	development.n.02
+	32	of
+	33	the
+			coref:	IDENT			3	33-35	the business trust 
+	34	business
+			sense:	business.n.01
+	35	trust
+			sense:	trust.n.04
+	36	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Standard Oil trust streamlined production and logistics , lowered costs , and undercut competitors .
+
+
+Treebanked sentence:
+--------------------
+The Standard Oil trust streamlined production and logistics , lowered costs , and undercut competitors . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The)
+      (NML (NNP Standard) (NNP Oil))
+      (NN trust))
+    (VP
+      (VP (VBD streamlined)
+        (NP (NN production)
+          (CC and)
+          (NNS logistics)))
+      (, ,)
+      (VP (VBD lowered)
+        (NP (NNS costs)))
+      (, ,)
+      (CC and)
+      (VP (JJ undercut)
+        (NP (NNS competitors))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			3	0-3	The Standard Oil trust 
+	1	Standard
+			coref:	IDENT			8	1-2	Standard Oil 
+			name:	ORGANIZATION				1-2	Standard Oil 
+	2	Oil
+	3	trust
+			sense:	trust.n.04
+	4	streamlined
+			sense:	streamline.v.01
+			prop:	streamline.01
+			V		4-4	streamlined 
+			N-ARG-A0		0-3	The Standard Oil trust 
+			N-ARG-A1		5-7	production and logistics 
+	5	production
+			sense:	production.n.01
+	6	and
+	7	logistics
+			sense:	logistics.n.01
+	8	,
+	9	lowered
+			sense:	lower.v.01
+			prop:	lower.01
+			V		9-9	lowered 
+			N-ARG-A0		0-3	The Standard Oil trust 
+			N-ARG-A1		10-10	costs 
+	10	costs
+			sense:	cost.n.01
+	11	,
+	12	and
+	13	undercut
+	14	competitors
+			sense:	rival.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+" Trust - busting " critics accused Standard Oil of using aggressive pricing to destroy competitors and form a monopoly that threatened other businesses .
+
+
+Treebanked sentence:
+--------------------
+" Trust - busting " critics accused Standard Oil of using aggressive pricing to destroy competitors and form a monopoly that threatened other businesses . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP (`` ")
+      (ADJP
+        (NP (NNP Trust))
+        (HYPH -) (VBG busting))
+      ('' ") (NNS critics))
+    (VP (VBN accused)
+      (NP
+        (NP (NNP Standard) (NNP Oil))
+        (PP (IN of)
+          (S
+            (VP (VBG using)
+              (NP (JJ aggressive) (NN pricing))
+              (S
+                (VP (TO to)
+                  (VP
+                    (VP (VB destroy)
+                      (NP (NNS competitors)))
+                    (CC and)
+                    (VP (VB form)
+                      (NP
+                        (NP (DT a) (NN monopoly))
+                        (SBAR
+                          (WHNP (WDT that))
+                          (S
+                            (VP (VBD threatened)
+                              (NP (JJ other) (NNS businesses)))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	"
+	1	Trust
+	2	-
+	3	busting
+			sense:	break.v.04
+			prop:	bust.01
+			V		3-3	busting 
+			N-ARG-A1		1-1	Trust 
+			N-ARG-A0		5-5	critics 
+	4	"
+	5	critics
+			sense:	critic.n.03
+	6	accused
+			sense:	accuse.v.01
+			prop:	accuse.01
+			V		6-6	accused 
+			N-ARG-A0		0-5	" Trust - busting " critics 
+			N-ARG-A1		7-8	Standard Oil 
+			N-ARG-A2		9-23	of using aggressive pricing to destroy competitors and form a monopoly that threatened other businesses 
+	7	Standard
+			coref:	IDENT			8	7-23	Standard Oil of using aggressive pricing to destroy competitors and form a monopoly that threatened other businesses 
+			name:	ORGANIZATION				7-8	Standard Oil 
+	8	Oil
+	9	of
+	10	using
+			sense:	use.v.01
+			prop:	use.01
+			V		10-10	using 
+			N-ARG-A0		7-8	Standard Oil 
+			N-ARG-A1		11-12	aggressive pricing 
+			N-ARG-A2		13-23	to destroy competitors and form a monopoly that threatened other businesses 
+	11	aggressive
+			sense:	aggressive.a.01
+	12	pricing
+			sense:	pricing.n.01
+	13	to
+	14	destroy
+			sense:	destroy.v.01
+			prop:	destroy.01
+			V		14-14	destroy 
+			N-ARG-A0		7-8	Standard Oil 
+			N-ARG-A1		15-15	competitors 
+	15	competitors
+			sense:	rival.n.01
+	16	and
+	17	form
+			sense:	form.v.01
+			prop:	form.01
+			V		17-17	form 
+			N-ARG-A0		7-8	Standard Oil 
+			N-ARG-A1		18-23	a monopoly that threatened other businesses 
+	18	a
+	19	monopoly
+			sense:	monopoly.n.01
+	20	that
+	21	threatened
+			sense:	endanger.v.01
+			prop:	threaten.01
+			V		21-21	threatened 
+			N-ARG-A0		18-19	a monopoly 
+			R-ARG-A0		20-20	that 
+			N-ARG-A2		22-23	other businesses 
+	22	other
+			sense:	other.a.01
+	23	businesses
+			sense:	business.n.01
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Rockefeller ran the company as its chairman , until his retirement in 1897 .
+
+
+Treebanked sentence:
+--------------------
+Rockefeller ran the company as its chairman , until his retirement in 1897 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Rockefeller))
+    (VP (VBD ran)
+      (NP (DT the) (NN company))
+      (PP (IN as)
+        (NP (PRP$ its) (NN chairman)))
+      (, ,)
+      (PP (IN until)
+        (NP
+          (NP (PRP$ his) (NN retirement))
+          (PP (IN in)
+            (NP (CD 1897))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Rockefeller
+			coref:	IDENT			6	0-0	Rockefeller 
+			name:	ORGANIZATION				0-0	Rockefeller 
+	1	ran
+			sense:	operate.v.01
+			prop:	run.01
+			V		1-1	ran 
+			N-ARG-A0		0-0	Rockefeller 
+			N-ARG-A1		2-3	the company 
+			N-ARGM-MNR		4-6	as its chairman 
+			N-ARGM-TMP		8-12	until his retirement in 1897 
+	2	the
+			coref:	IDENT			8	2-3	the company 
+	3	company
+			sense:	company.n.01
+	4	as
+	5	its
+			coref:	IDENT			6	5-5	its 
+	6	chairman
+			name:	TITLE				6-6	chairman 
+			sense:	president.n.04
+	7	,
+	8	until
+	9	his
+			coref:	IDENT			9	9-9	his 
+	10	retirement
+			sense:	retirement.n.02
+	11	in
+	12	1897
+			name:	DATE				12-12	1897 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He remained the major shareholder , and in 1911 , with the dissolution of the Standard Oil trust into 34 smaller companies , Rockefeller became the richest man in the world , as the initial income of these individual enterprises proved to be much bigger than that of a single larger company .
+
+
+Treebanked sentence:
+--------------------
+He remained the major shareholder , and in 1911 , with the dissolution of the Standard Oil trust into 34 smaller companies , Rockefeller became the richest man in the world , as the initial income of these individual enterprises proved to be much bigger than that of a single larger company . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD remained)
+        (NP (DT the) (JJ major) (NN shareholder))))
+    (, ,)
+    (CC and)
+    (S
+      (PP (IN in)
+        (NP (CD 1911)))
+      (, ,)
+      (PP (IN with)
+        (NP
+          (NP (DT the) (NN dissolution))
+          (PP (IN of)
+            (NP
+              (NP (DT the)
+                (NML (NNP Standard) (NNP Oil))
+                (NN trust))
+              (PP (IN into)
+                (NP (CD 34) (JJR smaller) (NNS companies)))))))
+      (, ,)
+      (NP (NNP Rockefeller))
+      (VP (VBD became)
+        (NP (DT the) (JJS richest) (NN man))
+        (PP (IN in)
+          (NP (DT the) (NN world)))
+        (, ,)
+        (SBAR (IN as)
+          (S
+            (NP
+              (NP (DT the) (JJ initial) (NN income))
+              (PP (IN of)
+                (NP (DT these) (JJ individual) (NNS enterprises))))
+            (VP (VBD proved)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (ADJP
+                      (ADJP (RB much) (JJR bigger))
+                      (PP (IN than)
+                        (NP
+                          (NP (DT that))
+                          (PP (IN of)
+                            (NP (DT a) (JJ single) (JJR larger) (NN company))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			9	0-0	He 
+	1	remained
+			sense:	stay.v.01
+			prop:	remain.01
+			V		1-1	remained 
+			N-ARG-A1		0-0	He 
+			N-ARG-A3		2-4	the major shareholder 
+	2	the
+	3	major
+			sense:	major.a.01
+	4	shareholder
+			sense:	stockholder.n.01
+	5	,
+	6	and
+	7	in
+	8	1911
+			coref:	IDENT			5	8-8	1911 
+			name:	DATE				8-8	1911 
+	9	,
+	10	with
+	11	the
+	12	dissolution
+			sense:	dissolution.n.01
+	13	of
+	14	the
+	15	Standard
+			coref:	IDENT			8	15-16	Standard Oil 
+			name:	ORGANIZATION				15-16	Standard Oil 
+	16	Oil
+	17	trust
+			sense:	trust.n.04
+	18	into
+	19	34
+			name:	NUMBER				19-19	34 
+	20	smaller
+			sense:	small.a.01
+	21	companies
+			sense:	company.n.01
+	22	,
+	23	Rockefeller
+			coref:	IDENT			6	23-23	Rockefeller 
+			name:	ORGANIZATION				23-23	Rockefeller 
+	24	became
+			sense:	become.v.02
+			prop:	become.01
+			V		24-24	became 
+			N-ARGM-TMP		7-8	in 1911 
+			N-ARGM-ADV		10-21	with the dissolution of the Standard Oil trust into 34 smaller companies 
+			N-ARG-A1		23-23	Rockefeller 
+			N-ARG-A2		25-30	the richest man in the world 
+			N-ARGM-CAU		32-51	as the initial income of these individual enterprises proved to be much bigger than that of a single larger company 
+	25	the
+	26	richest
+			sense:	rich.a.01
+	27	man
+			sense:	man.n.01
+	28	in
+	29	the
+			coref:	IDENT			0	29-30	the world 
+	30	world
+			sense:	earth.n.01
+	31	,
+	32	as
+	33	the
+	34	initial
+			sense:	initial.s.01
+	35	income
+			sense:	income.n.01
+	36	of
+	37	these
+	38	individual
+			sense:	individual.a.01
+	39	enterprises
+			sense:	enterprise.n.02
+	40	proved
+			sense:	prove.v.01
+			prop:	prove.01
+			V		40-40	proved 
+			N-ARG-A1		41-51	to be much bigger than that of a single larger company 
+	41	to
+	42	be
+			sense:	be.v.01
+			prop:	be.01
+			V		42-42	be 
+			N-ARG-A1		33-39	the initial income of these individual enterprises 
+			N-ARG-A2		43-51	much bigger than that of a single larger company 
+	43	much
+			sense:	much.r.01
+	44	bigger
+			sense:	large.a.01
+	45	than
+	46	that
+	47	of
+	48	a
+	49	single
+			sense:	individual.a.01
+	50	larger
+			sense:	large.a.01
+	51	company
+			sense:	company.n.01
+	52	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Its successors such as ExxonMobil or Chevron are still among the companies with the largest income worldwide .
+
+
+Treebanked sentence:
+--------------------
+Its successors such as ExxonMobil or Chevron are still among the companies with the largest income worldwide . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Its) (NNS successors))
+      (PP (JJ such) (IN as)
+        (NP (NNP ExxonMobil)
+          (CC or)
+          (NNP Chevron))))
+    (VP (VBP are)
+      (ADVP (RB still))
+      (PP (IN among)
+        (NP
+          (NP (DT the) (NNS companies))
+          (PP (IN with)
+            (NP (DT the) (JJS largest) (NN income)))))
+      (ADVP (RB worldwide)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Its
+			coref:	IDENT			6	0-0	Its 
+	1	successors
+			sense:	successor.n.02
+	2	such
+			sense:	such.s.01
+	3	as
+	4	ExxonMobil
+			name:	ORGANIZATION				4-4	ExxonMobil 
+	5	or
+	6	Chevron
+			name:	ORGANIZATION				6-6	Chevron 
+	7	are
+			sense:	be.v.01
+			prop:	be.01
+			V		7-7	are 
+			N-ARG-A1		0-6	Its successors such as ExxonMobil or Chevron 
+			N-ARGM-TMP		8-8	still 
+			N-ARG-A2		9-16	among the companies with the largest income worldwide 
+	8	still
+			sense:	still.r.01
+	9	among
+	10	the
+	11	companies
+			sense:	company.n.01
+	12	with
+	13	the
+	14	largest
+			sense:	large.a.01
+	15	income
+			sense:	income.n.01
+	16	worldwide
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+By 1882 , his top aide was John Dustin Archbold .
+
+
+Treebanked sentence:
+--------------------
+By 1882 , his top aide was John Dustin Archbold . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN By)
+      (NP (CD 1882)))
+    (, ,)
+    (NP (PRP$ his) (JJ top) (NN aide))
+    (VP (VBD was)
+      (NP (NNP John) (NNP Dustin) (NNP Archbold)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	By
+	1	1882
+			name:	DATE				1-1	1882 
+	2	,
+	3	his
+			coref:	IDENT			4	3-3	his 
+	4	top
+			sense:	top.a.01
+	5	aide
+			sense:	aide.n.02
+	6	was
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	was 
+			N-ARGM-TMP		0-1	By 1882 
+			N-ARG-A1		3-5	his top aide 
+			N-ARG-A2		7-9	John Dustin Archbold 
+	7	John
+			coref:	IDENT			1	7-9	John Dustin Archbold 
+			name:	PERSON				7-9	John Dustin Archbold 
+	8	Dustin
+	9	Archbold
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After 1896 , Rockefeller disengaged from business to concentrate on his philanthropy , leaving Archbold in control .
+
+
+Treebanked sentence:
+--------------------
+After 1896 , Rockefeller disengaged from business to concentrate on his philanthropy , leaving Archbold in control . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP (CD 1896)))
+    (, ,)
+    (NP (NNP Rockefeller))
+    (VP (VBD disengaged)
+      (PP (IN from)
+        (NP (NN business)))
+      (S
+        (VP (TO to)
+          (VP (VB concentrate)
+            (PP (IN on)
+              (NP (PRP$ his) (NN philanthropy))))))
+      (, ,)
+      (S
+        (VP (VBG leaving)
+          (NP
+            (NP (NNP Archbold))
+            (PP (IN in)
+              (NP (NN control)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	1896
+			name:	DATE				1-1	1896 
+	2	,
+	3	Rockefeller
+			coref:	IDENT			6	3-3	Rockefeller 
+			name:	ORGANIZATION				3-3	Rockefeller 
+	4	disengaged
+			sense:	disengage.v.01
+			prop:	disengage.01
+			V		4-4	disengaged 
+			N-ARGM-TMP		0-1	After 1896 
+			N-ARG-A0		3-3	Rockefeller 
+			N-ARG-A2		5-6	from business 
+			N-ARGM-PRP		7-11	to concentrate on his philanthropy 
+			N-ARGM-ADV		13-16	leaving Archbold in control 
+	5	from
+	6	business
+			sense:	commercial_enterprise.n.02
+	7	to
+	8	concentrate
+			sense:	concentrate.v.02
+			prop:	concentrate.01
+			V		8-8	concentrate 
+			N-ARG-A0		3-3	Rockefeller 
+			N-ARG-A1		9-11	on his philanthropy 
+	9	on
+	10	his
+			coref:	IDENT			4	10-10	his 
+	11	philanthropy
+			sense:	philanthropy.n.01
+	12	,
+	13	leaving
+			sense:	leave.v.03
+			prop:	leave.01
+			V		13-13	leaving 
+			N-ARG-A0		3-3	Rockefeller 
+			N-ARG-A1		14-14	Archbold 
+			N-ARG-A2		15-16	in control 
+	14	Archbold
+			coref:	IDENT			1	14-14	Archbold 
+			name:	PERSON				14-14	Archbold 
+	15	in
+	16	control
+			sense:	control.n.01
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Other notable Standard Oil principals include Henry Flagler , developer of the Florida East Coast Railway and resort cities , and Henry H. Rogers , who built the Virginian Railway .
+
+
+Treebanked sentence:
+--------------------
+Other notable Standard Oil principals include Henry Flagler , developer of the Florida East Coast Railway and resort cities , and Henry H. Rogers , who built the Virginian Railway . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (JJ Other) (JJ notable)
+      (NML (NNP Standard) (NNP Oil))
+      (NNS principals))
+    (VP (VBP include)
+      (NP
+        (NP (NNP Henry) (NNP Flagler))
+        (, ,)
+        (NP
+          (NP (NN developer))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP Florida)
+                (NML (NNP East) (NNP Coast))
+                (NNP Railway))
+              (CC and)
+              (NP
+                (NML
+                  (S
+                    (VP (VB resort))))
+                (NNS cities)))))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (NNP Henry) (NNP H.) (NNP Rogers))
+          (, ,)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD built)
+                (NP (DT the) (NNP Virginian) (NNP Railway))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Other
+			sense:	other.a.01
+	1	notable
+			sense:	celebrated.s.01
+	2	Standard
+			coref:	IDENT			8	2-3	Standard Oil 
+			name:	ORGANIZATION				2-3	Standard Oil 
+	3	Oil
+	4	principals
+			sense:	principal.n.06
+	5	include
+			sense:	include.v.01
+			prop:	include.01
+			V		5-5	include 
+			N-ARG-A2		0-4	Other notable Standard Oil principals 
+			N-ARG-A1		6-29	Henry Flagler , developer of the Florida East Coast Railway and resort cities , and Henry H. Rogers , who built the Virginian Railway 
+	6	Henry
+			coref:	IDENT			7	6-7	Henry Flagler 
+			name:	PERSON				6-7	Henry Flagler 
+	7	Flagler
+	8	,
+	9	developer
+			name:	TITLE				9-9	developer 
+			sense:	developer.n.01
+	10	of
+	11	the
+	12	Florida
+			name:	STATE_OR_PROVINCE				12-12	Florida 
+	13	East
+			name:	LOCATION				13-15	East Coast Railway 
+	14	Coast
+	15	Railway
+	16	and
+	17	resort
+			sense:	repair.v.03
+			prop:	resort.01
+			V		17-17	resort 
+			N-ARG-A0		18-18	cities 
+	18	cities
+			sense:	city.n.01
+	19	,
+	20	and
+	21	Henry
+			name:	PERSON				21-23	Henry H. Rogers 
+	22	H.
+	23	Rogers
+	24	,
+	25	who
+	26	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		26-26	built 
+			N-ARG-A0		21-23	Henry H. Rogers 
+			R-ARG-A0		25-25	who 
+			N-ARG-A1		27-29	the Virginian Railway 
+	27	the
+	28	Virginian
+			name:	LOCATION				28-29	Virginian Railway 
+	29	Railway
+	30	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.23-27	the world of its time 
+				3.5-7	the world 's 
+				8.29-30	the world 
+	Chain 1 (IDENT)
+				10.7-9	John Dustin Archbold 
+				11.14-14	Archbold 
+	Chain 2 (IDENT)
+				1.0-0	Inc. 
+				2.16-16	it 
+				2.26-26	its 
+				3.0-0	Its 
+	Chain 3 (IDENT)
+				5.0-3	The Standard Oil trust 
+				4.33-35	the business trust 
+	Chain 4 (IDENT)
+				10.3-3	his 
+				11.10-10	his 
+	Chain 5 (IDENT)
+				3.15-15	1911 
+				8.8-8	1911 
+	Chain 6 (IDENT)
+				7.0-0	Rockefeller 
+				7.5-5	its 
+				8.23-23	Rockefeller 
+				9.0-0	Its 
+				11.3-3	Rockefeller 
+	Chain 7 (IDENT)
+				2.8-9	Henry Flagler 
+				12.6-7	Henry Flagler 
+	Chain 8 (IDENT)
+				6.7-23	Standard Oil of using aggressive pricing to destroy competitors and form a monopoly that threatened other businesses 
+				0.0-2	Standard Oil Co. 
+				3.31-32	Standard Oil 
+				4.0-1	Standard Oil 
+				4.24-25	the company 
+				5.1-2	Standard Oil 
+				7.2-3	the company 
+				8.15-16	Standard Oil 
+				12.2-3	Standard Oil 
+	Chain 9 (IDENT)
+				7.9-9	his 
+				8.0-0	He 
+

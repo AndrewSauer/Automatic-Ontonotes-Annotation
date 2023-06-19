@@ -1,0 +1,812 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Carlos Moscardini ( born 1959 ) is an Argentine composer and guitarist .
+
+
+Treebanked sentence:
+--------------------
+Carlos Moscardini ( born 1959 ) is an Argentine composer and guitarist . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Carlos) (NNP Moscardini))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 1959)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT an) (JJ Argentine) (NN composer)
+        (CC and)
+        (NN guitarist)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Carlos
+			coref:	IDENT			0	0-1	Carlos Moscardini 
+			name:	PERSON				0-1	Carlos Moscardini 
+	1	Moscardini
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Carlos Moscardini 
+			N-ARGM-TMP		4-4	1959 
+	4	1959
+			name:	DATE				4-4	1959 
+	5	)
+	6	is
+			sense:	be.v.02
+			prop:	be.01
+			V		6-6	is 
+			N-ARG-A1		0-5	Carlos Moscardini ( born 1959 ) 
+			N-ARG-A2		7-11	an Argentine composer and guitarist 
+	7	an
+	8	Argentine
+			name:	NATIONALITY				8-8	Argentine 
+			sense:	argentine.a.01
+	9	composer
+			name:	TITLE				9-9	composer 
+			sense:	composer.n.01
+	10	and
+	11	guitarist
+			name:	TITLE				11-11	guitarist 
+			sense:	guitarist.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He is professor of tango guitar at the Gilardo Gilardi Conservatory of Music and [ Manuel de Falla ] Conservatory of music in Buenos Aires .
+
+
+Treebanked sentence:
+--------------------
+He is professor of tango guitar at the Gilardo Gilardi Conservatory of Music and [ Manuel de Falla  Conservatory of music in Buenos Aires . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP (NN professor))
+        (PP (IN of)
+          (NP
+            (NP (NN tango) (NN guitar))
+            (PP (IN at)
+              (NP
+                (NP
+                  (NP (DT the) (NNP Gilardo) (NNP Gilardi) (NNP Conservatory))
+                  (PP (IN of)
+                    (NP (NNP Music))))
+                (CC and)
+                (NP
+                  (NP (-LRB- [) (NNP Manuel) (NNP de) (NNP Falla) (-RRB- ]) (NNP Conservatory))
+                  (PP (IN of)
+                    (NP
+                      (NP (NN music))
+                      (PP (IN in)
+                        (NP (NNP Buenos) (NNP Aires))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	is
+			sense:	be.v.08
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		2-24	professor of tango guitar at the Gilardo Gilardi Conservatory of Music and [ Manuel de Falla  Conservatory of music in Buenos Aires 
+	2	professor
+			name:	TITLE				2-2	professor 
+			sense:	professor.n.01
+	3	of
+	4	tango
+			sense:	tango.n.02
+	5	guitar
+			sense:	guitar.n.01
+	6	at
+	7	the
+	8	Gilardo
+			name:	ORGANIZATION				8-10	Gilardo Gilardi Conservatory 
+	9	Gilardi
+	10	Conservatory
+	11	of
+	12	Music
+	13	and
+	14	[
+	15	Manuel
+			name:	PERSON				15-17	Manuel de Falla 
+	16	de
+	17	Falla
+	18	
+			name:					18-18	 
+	19	Conservatory
+	20	of
+	21	music
+			sense:	music.n.01
+	22	in
+	23	Buenos
+			name:	CITY				23-24	Buenos Aires 
+	24	Aires
+	25	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Moscardini was born in Lomas de Zamora , in the Gran Buenos Aires metropolitan area .
+
+
+Treebanked sentence:
+--------------------
+Moscardini was born in Lomas de Zamora , in the Gran Buenos Aires metropolitan area . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Moscardini))
+    (VP (VBD was)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Lomas) (NNP de) (NNP Zamora)))
+        (, ,)
+        (PP (IN in)
+          (NP (DT the) (NNP Gran) (NNP Buenos) (NNP Aires) (JJ metropolitan) (NN area)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Moscardini
+			coref:	IDENT			0	0-0	Moscardini 
+			name:	PERSON				0-0	Moscardini 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Moscardini 
+			N-ARGM-LOC		3-14	in Lomas de Zamora , in the Gran Buenos Aires metropolitan area 
+	3	in
+	4	Lomas
+			name:	LOCATION				4-5	Lomas de 
+	5	de
+	6	Zamora
+			name:	CITY				6-6	Zamora 
+	7	,
+	8	in
+	9	the
+	10	Gran
+			name:	LOCATION				10-10	Gran 
+	11	Buenos
+			name:	CITY				11-12	Buenos Aires 
+	12	Aires
+	13	metropolitan
+			sense:	metropolitan.a.01
+	14	area
+			sense:	area.n.01
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After winning the Soloist Prize for guitar at the first New Popular Music Meeting in his province , he recorded his first solo album , El corazon manda , on Epsa records .
+
+
+Treebanked sentence:
+--------------------
+After winning the Soloist Prize for guitar at the first New Popular Music Meeting in his province , he recorded his first solo album , El corazon manda , on Epsa records . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG winning)
+          (NP
+            (NP (DT the) (NNP Soloist) (NNP Prize))
+            (PP (IN for)
+              (NP (NN guitar))))
+          (PP (IN at)
+            (NP
+              (NP (DT the) (JJ first)
+                (NML (NNP New) (NNP Popular) (NNP Music))
+                (NNP Meeting))
+              (PP (IN in)
+                (NP (PRP$ his) (NN province))))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD recorded)
+      (NP
+        (NP (PRP$ his) (JJ first) (NN solo) (NN album))
+        (, ,)
+        (NP
+          (NP (NNP El) (NNP corazon))
+          (NP (FW manda)))
+        (, ,))
+      (PP (IN on)
+        (NP (NNP Epsa) (NNS records))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	winning
+			sense:	win.v.01
+			prop:	win.01
+			V		1-1	winning 
+			N-ARG-A1		2-6	the Soloist Prize for guitar 
+			N-ARGM-LOC		7-16	at the first New Popular Music Meeting in his province 
+	2	the
+	3	Soloist
+			name:	MISC				3-4	Soloist Prize 
+	4	Prize
+	5	for
+	6	guitar
+			sense:	guitar.n.01
+	7	at
+	8	the
+	9	first
+			name:	ORDINAL				9-9	first 
+			sense:	first.a.01
+	10	New
+	11	Popular
+	12	Music
+	13	Meeting
+	14	in
+	15	his
+			coref:	IDENT			0	15-15	his 
+	16	province
+			sense:	state.n.01
+	17	,
+	18	he
+			coref:	IDENT			0	18-18	he 
+	19	recorded
+			sense:	record.v.02
+			prop:	record.01
+			V		19-19	recorded 
+			N-ARGM-TMP		0-16	After winning the Soloist Prize for guitar at the first New Popular Music Meeting in his province 
+			N-ARG-A0		18-18	he 
+			N-ARG-A1		20-27	his first solo album , El corazon manda 
+			N-ARGM-LOC		29-31	on Epsa records 
+	20	his
+			coref:	IDENT			0	20-20	his 
+			coref:	IDENT			1	20-27	his first solo album , El corazon manda 
+	21	first
+			name:	ORDINAL				21-21	first 
+			sense:	first.a.01
+	22	solo
+			sense:	solo.n.02
+	23	album
+			sense:	album.n.01
+	24	,
+	25	El
+	26	corazon
+	27	manda
+	28	,
+	29	on
+	30	Epsa
+			name:	ORGANIZATION				30-30	Epsa 
+	31	records
+			sense:	phonograph_record.n.01
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The album features compositions of his own and arrangements of famous Argentine folk music .
+
+
+Treebanked sentence:
+--------------------
+The album features compositions of his own and arrangements of famous Argentine folk music . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN album))
+    (VP (VBZ features)
+      (NP
+        (NP
+          (NP (NNS compositions))
+          (PP (IN of)
+            (NP (PRP$ his) (JJ own))))
+        (CC and)
+        (NP
+          (NP (NNS arrangements))
+          (PP (IN of)
+            (NP (JJ famous)
+              (NML (JJ Argentine) (NN folk))
+              (NN music))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The album 
+	1	album
+			sense:	album.n.01
+	2	features
+			sense:	have.v.02
+			prop:	feature.01
+			V		2-2	features 
+			N-ARG-A0		0-1	The album 
+			N-ARG-A1		3-13	compositions of his own and arrangements of famous Argentine folk music 
+	3	compositions
+			sense:	musical_composition.n.01
+	4	of
+	5	his
+			coref:	IDENT			0	5-5	his 
+	6	own
+			sense:	own.s.01
+	7	and
+	8	arrangements
+			sense:	musical_arrangement.n.01
+	9	of
+	10	famous
+			sense:	celebrated.s.01
+	11	Argentine
+			name:	NATIONALITY				11-11	Argentine 
+			sense:	argentine.a.01
+	12	folk
+			sense:	folk_music.n.01
+	13	music
+			sense:	music.n.01
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His work won him the public admiration of the guitarist Juan Falù .
+
+
+Treebanked sentence:
+--------------------
+His work won him the public admiration of the guitarist Juan Falù . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His) (NN work))
+    (VP (VBD won)
+      (NP (PRP him))
+      (NP
+        (NP (DT the) (JJ public) (NN admiration))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN guitarist))
+            (NP (NNP Juan) (NNP Falù))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-0	His 
+	1	work
+			sense:	work.n.02
+	2	won
+			sense:	acquire.v.05
+			prop:	win.01
+			V		2-2	won 
+			N-ARG-A0		0-1	His work 
+			N-ARG-A2		3-3	him 
+			N-ARG-A1		4-11	the public admiration of the guitarist Juan Falù 
+	3	him
+			coref:	IDENT			0	3-3	him 
+	4	the
+	5	public
+			sense:	public.a.01
+	6	admiration
+			sense:	admiration.n.01
+	7	of
+	8	the
+	9	guitarist
+			name:	TITLE				9-9	guitarist 
+			sense:	guitarist.n.01
+	10	Juan
+			name:	PERSON				10-11	Juan Falù 
+	11	Falù
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Carlos Moscardini has performed throughout Argentina , Chile , Brazil , Norway , Sweden , Belgium , Denmark and Germany .
+
+
+Treebanked sentence:
+--------------------
+Carlos Moscardini has performed throughout Argentina , Chile , Brazil , Norway , Sweden , Belgium , Denmark and Germany . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Carlos) (NNP Moscardini))
+    (VP (VBZ has)
+      (VP (VBN performed)
+        (PP (IN throughout)
+          (NP (NNP Argentina) (, ,) (NNP Chile) (, ,) (NNP Brazil) (, ,) (NNP Norway) (, ,) (NNP Sweden) (, ,) (NNP Belgium) (, ,) (NNP Denmark)
+            (CC and)
+            (NNP Germany)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Carlos
+			coref:	IDENT			0	0-1	Carlos Moscardini 
+			name:	PERSON				0-1	Carlos Moscardini 
+	1	Moscardini
+	2	has
+			sense:	have.v.01
+			prop:	have.01
+			V		2-2	has 
+	3	performed
+			sense:	perform.v.03
+			prop:	perform.01
+			V		3-3	performed 
+			N-ARG-A0		0-1	Carlos Moscardini 
+			N-ARGM-LOC		4-19	throughout Argentina , Chile , Brazil , Norway , Sweden , Belgium , Denmark and Germany 
+	4	throughout
+	5	Argentina
+			name:	COUNTRY				5-5	Argentina 
+	6	,
+	7	Chile
+			name:	COUNTRY				7-7	Chile 
+	8	,
+	9	Brazil
+			name:	COUNTRY				9-9	Brazil 
+	10	,
+	11	Norway
+			name:	COUNTRY				11-11	Norway 
+	12	,
+	13	Sweden
+			name:	COUNTRY				13-13	Sweden 
+	14	,
+	15	Belgium
+			name:	COUNTRY				15-15	Belgium 
+	16	,
+	17	Denmark
+			name:	COUNTRY				17-17	Denmark 
+	18	and
+	19	Germany
+			name:	COUNTRY				19-19	Germany 
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He has played with the band Nan at the Montreal Jazz Festival .
+
+
+Treebanked sentence:
+--------------------
+He has played with the band Nan at the Montreal Jazz Festival . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ has)
+      (VP (VBN played)
+        (PP (IN with)
+          (NP (DT the) (NN band) (NNP Nan)))
+        (PP (IN at)
+          (NP (DT the) (NNP Montreal) (NNP Jazz) (NNP Festival)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	played
+			sense:	play.v.03
+			prop:	play.01
+			V		2-2	played 
+			N-ARG-A0		0-0	He 
+			N-ARGM-LOC		7-11	at the Montreal Jazz Festival 
+	3	with
+	4	the
+	5	band
+			sense:	band.n.02
+	6	Nan
+	7	at
+	8	the
+	9	Montreal
+			name:	ORGANIZATION				9-11	Montreal Jazz Festival 
+	10	Jazz
+	11	Festival
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+In Japan , he performed over 50 concerts as The History of the Tango .
+
+
+Treebanked sentence:
+--------------------
+In Japan , he performed over 50 concerts as The History of the Tango . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP Japan)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD performed)
+      (PP (IN over)
+        (NP (CD 50) (NNS concerts)))
+      (PP (IN as)
+        (NP
+          (NP (DT The) (NN History))
+          (PP (IN of)
+            (NP (DT the) (NNP Tango))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	In
+	1	Japan
+			name:	COUNTRY				1-1	Japan 
+	2	,
+	3	he
+			coref:	IDENT			0	3-3	he 
+	4	performed
+			sense:	perform.v.03
+			prop:	perform.01
+			V		4-4	performed 
+			N-ARGM-LOC		0-1	In Japan 
+			N-ARG-A0		3-3	he 
+			N-ARG-A1		5-7	over 50 concerts 
+			N-ARGM-PRD		8-13	as The History of the Tango 
+	5	over
+	6	50
+			name:	NUMBER				6-6	50 
+	7	concerts
+			sense:	concert.n.01
+	8	as
+	9	The
+	10	History
+			sense:	history.n.02
+	11	of
+	12	the
+	13	Tango
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Buenos Aires Teatro San Martin appointed him composer and arranger .
+
+
+Treebanked sentence:
+--------------------
+The Buenos Aires Teatro San Martin appointed him composer and arranger . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Buenos) (NNP Aires) (NNP Teatro) (NNP San) (NNP Martin))
+    (VP (VBD appointed)
+      (S
+        (NP (PRP him))
+        (NP (NN composer)
+          (CC and)
+          (NN arranger))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Buenos
+			name:	PERSON				1-5	Buenos Aires Teatro San Martin 
+	2	Aires
+	3	Teatro
+	4	San
+	5	Martin
+	6	appointed
+			sense:	appoint.v.01
+			prop:	appoint.01
+			V		6-6	appointed 
+			N-ARG-A0		0-5	The Buenos Aires Teatro San Martin 
+			N-ARG-A1		7-7	him 
+			N-ARG-A2		8-10	composer and arranger 
+	7	him
+			coref:	IDENT			0	7-7	him 
+	8	composer
+			name:	TITLE				8-8	composer 
+			sense:	composer.n.01
+	9	and
+	10	arranger
+			name:	TITLE				10-10	arranger 
+			sense:	arranger.n.02
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He has lectured on the interpretation of Argentine music at the Norges Musikhögskole in Oslo , at the Royal Danish Academy of Music in Copenhagen , and at the Académie de musique in Ghent .
+
+
+Treebanked sentence:
+--------------------
+He has lectured on the interpretation of Argentine music at the Norges Musikhögskole in Oslo , at the Royal Danish Academy of Music in Copenhagen , and at the Académie de musique in Ghent . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ has)
+      (VP (VBN lectured)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN interpretation))
+            (PP (IN of)
+              (NP (NNP Argentine) (NN music)))))
+        (PP
+          (PP (IN at)
+            (NP
+              (NP (DT the) (NNP Norges) (NNP Musikhögskole))
+              (PP (IN in)
+                (NP (NNP Oslo)))))
+          (, ,)
+          (PP (IN at)
+            (NP
+              (NP (DT the)
+                (ADJP (JJ Royal))
+                (JJ Danish) (NN Academy))
+              (PP (IN of)
+                (NP
+                  (NP (NN Music))
+                  (PP (IN in)
+                    (NP (NNP Copenhagen)))))))
+          (, ,)
+          (CC and)
+          (PP (IN at)
+            (NP
+              (NP (DT the) (NNP Académie) (NNP de) (NNP musique))
+              (PP (IN in)
+                (NP (NNP Ghent))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	has
+			sense:	have.v.01
+			prop:	have.01
+			V		1-1	has 
+	2	lectured
+			sense:	lecture.v.01
+			prop:	lecture.01
+			V		2-2	lectured 
+			N-ARG-A0		0-0	He 
+			N-ARG-A2		3-8	on the interpretation of Argentine music 
+			N-ARGM-LOC		9-33	at the Norges Musikhögskole in Oslo , at the Royal Danish Academy of Music in Copenhagen , and at the Académie de musique in Ghent 
+	3	on
+	4	the
+	5	interpretation
+			sense:	rendition.n.04
+	6	of
+	7	Argentine
+			name:	NATIONALITY				7-7	Argentine 
+	8	music
+			sense:	music.n.01
+	9	at
+	10	the
+	11	Norges
+			name:	ORGANIZATION				11-12	Norges Musikhögskole 
+	12	Musikhögskole
+	13	in
+	14	Oslo
+			name:	CITY				14-14	Oslo 
+	15	,
+	16	at
+	17	the
+	18	Royal
+			name:	ORGANIZATION				18-22	Royal Danish Academy of Music 
+			sense:	royal.a.02
+	19	Danish
+	20	Academy
+			sense:	academy.n.02
+	21	of
+	22	Music
+			sense:	music.n.01
+	23	in
+	24	Copenhagen
+			name:	CITY				24-24	Copenhagen 
+	25	,
+	26	and
+	27	at
+	28	the
+	29	Académie
+			name:	MISC				29-31	Académie de musique 
+	30	de
+	31	musique
+	32	in
+	33	Ghent
+			name:	LOCATION				33-33	Ghent 
+	34	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-1	Carlos Moscardini 
+				1.0-0	He 
+				2.0-0	Moscardini 
+				3.15-15	his 
+				3.18-18	he 
+				3.20-20	his 
+				4.5-5	his 
+				5.0-0	His 
+				5.3-3	him 
+				6.0-1	Carlos Moscardini 
+				7.0-0	He 
+				8.3-3	he 
+				9.7-7	him 
+				10.0-0	He 
+	Chain 1 (IDENT)
+				3.20-27	his first solo album , El corazon manda 
+				4.0-1	The album 
+

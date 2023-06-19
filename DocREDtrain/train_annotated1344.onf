@@ -1,0 +1,666 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Glasscock County Courthouse is an historic courthouse building located in Garden City , Glasscock County , Texas .
+
+
+Treebanked sentence:
+--------------------
+The Glasscock County Courthouse is an historic courthouse building located in Garden City , Glasscock County , Texas . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The)
+      (NML (NNP Glasscock) (NNP County))
+      (NN Courthouse))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ historic) (NN courthouse) (NN building))
+        (VP (VBN located)
+          (PP (IN in)
+            (NP
+              (NML
+                (NML (NNP Garden) (NNP City))
+                (, ,)
+                (NML (NNP Glasscock) (NNP County))
+                (, ,))
+              (NNP Texas))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Glasscock
+			name:	LOCATION				1-3	Glasscock County Courthouse 
+	2	County
+	3	Courthouse
+			sense:	courthouse.n.01
+	4	is
+			sense:	be.v.02
+			prop:	be.01
+			V		4-4	is 
+			N-ARG-A1		0-3	The Glasscock County Courthouse 
+			N-ARG-A2		5-17	an historic courthouse building located in Garden City , Glasscock County , Texas 
+	5	an
+	6	historic
+			sense:	historic.s.01
+	7	courthouse
+			sense:	courthouse.n.01
+	8	building
+			sense:	building.n.01
+	9	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		9-9	located 
+			N-ARG-A1		5-8	an historic courthouse building 
+			N-ARGM-LOC		10-17	in Garden City , Glasscock County , Texas 
+	10	in
+	11	Garden
+			coref:	IDENT			1	11-17	Garden City , Glasscock County , Texas 
+			name:	CITY				11-12	Garden City 
+	12	City
+	13	,
+	14	Glasscock
+			name:	LOCATION				14-15	Glasscock County 
+	15	County
+	16	,
+	17	Texas
+			name:	STATE_OR_PROVINCE				17-17	Texas 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Built in 1909 to 1910 at a cost of $ 28,000 , it was designed by Georgia - born American architect Edward Columbus Hosford , who is noted for the courthouses and other buildings that he designed in Florida , Georgia and Texas .
+
+
+Treebanked sentence:
+--------------------
+Built in 1909 to 1910 at a cost of $ 28,000 , it was designed by Georgia - born American architect Edward Columbus Hosford , who is noted for the courthouses and other buildings that he designed in Florida , Georgia and Texas . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Built)
+        (PP (IN in)
+          (NP (CD 1909)))
+        (PP (IN to)
+          (NP (CD 1910)))
+        (PP (IN at)
+          (NP
+            (NP (DT a) (NN cost))
+            (PP (IN of)
+              (NP ($ $) (CD 28,000)))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (VP (VBN designed)
+        (PP (IN by)
+          (NP
+            (NP
+              (NML
+                (NML (NNP Georgia))
+                (HYPH -)
+                (NML (VBN born) (JJ American) (NN architect)))
+              (NNP Edward) (NNP Columbus) (NNP Hosford))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBZ is)
+                  (VP (VBN noted)
+                    (PP (IN for)
+                      (NP
+                        (NP (DT the) (NNS courthouses))
+                        (CC and)
+                        (NP (JJ other) (NNS buildings))))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (NP (PRP he))
+                        (VP (VBD designed)
+                          (PP (IN in)
+                            (NP (NNP Florida) (, ,) (NNP Georgia)
+                              (CC and)
+                              (NNP Texas))))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Built
+			sense:	construct.v.01
+			prop:	build.01
+			V		0-0	Built 
+			N-ARGM-TMP		1-4	in 1909 to 1910 
+			N-ARG-A1		12-12	it 
+	1	in
+	2	1909
+			name:	DATE				2-4	1909 to 1910 
+	3	to
+	4	1910
+	5	at
+	6	a
+	7	cost
+			sense:	cost.n.01
+	8	of
+	9	$
+			coref:	IDENT			2	9-10	$ 28,000 
+			name:	MONEY				9-10	$ 28,000 
+	10	28,000
+	11	,
+	12	it
+			coref:	IDENT			2	12-12	it 
+	13	was
+			sense:	be.v.01
+			prop:	be.03
+			V		13-13	was 
+	14	designed
+			sense:	design.v.04
+			prop:	design.01
+			V		14-14	designed 
+			N-ARG-A1		12-12	it 
+			N-ARG-A0		15-42	by Georgia - born American architect Edward Columbus Hosford , who is noted for the courthouses and other buildings that he designed in Florida , Georgia and Texas 
+	15	by
+	16	Georgia
+			coref:	IDENT			0	16-16	Georgia 
+			name:	STATE_OR_PROVINCE				16-16	Georgia 
+	17	-
+	18	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		18-18	born 
+			N-ARGM-LOC		16-16	Georgia 
+			N-ARG-A1		19-20	American architect 
+	19	American
+			name:	NATIONALITY				19-19	American 
+	20	architect
+			name:	TITLE				20-20	architect 
+			sense:	architect.n.01
+	21	Edward
+			name:	PERSON				21-23	Edward Columbus Hosford 
+	22	Columbus
+	23	Hosford
+	24	,
+	25	who
+	26	is
+			sense:	be.v.01
+			prop:	be.03
+			V		26-26	is 
+	27	noted
+			sense:	note.v.01
+			prop:	note.02
+			V		27-27	noted 
+			N-ARG-A1		16-23	Georgia - born American architect Edward Columbus Hosford 
+			R-ARG-A1		25-25	who 
+			N-ARG-A2		28-42	for the courthouses and other buildings that he designed in Florida , Georgia and Texas 
+	28	for
+	29	the
+	30	courthouses
+			sense:	courthouse.n.01
+	31	and
+	32	other
+			sense:	other.a.01
+	33	buildings
+			sense:	building.n.01
+	34	that
+	35	he
+	36	designed
+			sense:	design.v.04
+			prop:	design.01
+			V		36-36	designed 
+			N-ARG-A1		29-33	the courthouses and other buildings 
+			R-ARG-A1		34-34	that 
+			N-ARG-A0		35-35	he 
+			N-ARGM-LOC		37-42	in Florida , Georgia and Texas 
+	37	in
+	38	Florida
+			name:	STATE_OR_PROVINCE				38-38	Florida 
+	39	,
+	40	Georgia
+			coref:	IDENT			0	40-40	Georgia 
+			name:	STATE_OR_PROVINCE				40-40	Georgia 
+	41	and
+	42	Texas
+			coref:	IDENT			1	42-42	Texas 
+			name:	STATE_OR_PROVINCE				42-42	Texas 
+	43	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was built of granite and rusticated stone with gable front porticoes on all sides , each of which is supported by four 2-story Doric columns .
+
+
+Treebanked sentence:
+--------------------
+It was built of granite and rusticated stone with gable front porticoes on all sides , each of which is supported by four 2 - story Doric columns . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBD was)
+        (VP (VBN built)
+          (PP (IN of)
+            (NP (NN granite)))))
+      (CC and)
+      (VP (VBD rusticated)
+        (NP (NN stone))
+        (PP (IN with)
+          (NP (JJ gable) (JJ front) (NNS porticoes)))
+        (PP (IN on)
+          (NP
+            (NP (DT all) (NNS sides))
+            (, ,)
+            (SBAR
+              (WHNP
+                (NP (DT each))
+                (WHPP (IN of)
+                  (WHNP (WDT which))))
+              (S
+                (VP (VBZ is)
+                  (VP (VBN supported)
+                    (PP (IN by)
+                      (NP (CD four)
+                        (NML (CD 2) (HYPH -) (NN story))
+                        (JJ Doric) (NNS columns)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		2-2	built 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		3-7	of granite and rusticated stone 
+			N-ARGM-ADV		8-27	with gable front porticoes on all sides , each of which is supported by four 2 - story Doric columns 
+	3	of
+	4	granite
+			sense:	granite.n.01
+	5	and
+	6	rusticated
+			sense:	rusticate.v.04
+			prop:	rusticate.01
+			V		6-6	rusticated 
+			N-ARG-A1		7-7	stone 
+	7	stone
+			sense:	rock.n.02
+	8	with
+	9	gable
+	10	front
+			sense:	front.a.01
+	11	porticoes
+			sense:	portico.n.01
+	12	on
+	13	all
+	14	sides
+			sense:	side.n.01
+	15	,
+	16	each
+	17	of
+	18	which
+	19	is
+			sense:	be.v.01
+			prop:	be.03
+			V		19-19	is 
+	20	supported
+			sense:	hold.v.10
+			prop:	support.01
+			V		20-20	supported 
+			N-ARG-A1		9-11	gable front porticoes 
+			R-ARG-A1		16-18	each of which 
+			N-ARG-A0		21-27	by four 2 - story Doric columns 
+	21	by
+	22	four
+			name:	NUMBER				22-25	four 2 - story 
+	23	2
+	24	-
+	25	story
+			sense:	floor.n.02
+	26	Doric
+			name:	MISC				26-26	Doric 
+	27	columns
+			sense:	column.n.07
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Unlike the Mason County Courthouse also designed by Hosford and built at the same time for $ 39,786 , the Glasscock County Courthouse has no clock tower cupola in the center of its roof and its side porticoes are smaller than the other two .
+
+
+Treebanked sentence:
+--------------------
+Unlike the Mason County Courthouse also designed by Hosford and built at the same time for $ 39,786 , the Glasscock County Courthouse has no clock tower cupola in the center of its roof and its side porticoes are smaller than the other two . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN Unlike)
+      (NP
+        (NP (DT the)
+          (NML (NNP Mason) (NNP County))
+          (NN Courthouse))
+        (VP
+          (VP
+            (ADVP (RB also))
+            (VBN designed)
+            (PP (IN by)
+              (NP (NNP Hosford))))
+          (CC and)
+          (VP (VBN built)
+            (PP (IN at)
+              (NP
+                (NP (DT the) (JJ same) (NN time))
+                (PP (IN for)
+                  (NP ($ $) (CD 39,786)))))))))
+    (, ,)
+    (S
+      (NP (DT the)
+        (NML (NNP Glasscock) (NNP County))
+        (NN Courthouse))
+      (VP (VBZ has)
+        (NP
+          (NP (DT no) (NN clock) (NN tower) (NN cupola))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN center))
+              (PP (IN of)
+                (NP (PRP$ its) (NN roof))))))))
+    (CC and)
+    (S
+      (NP (PRP$ its) (NN side) (NNS porticoes))
+      (VP (VBP are)
+        (ADJP
+          (ADJP (JJR smaller))
+          (PP (IN than)
+            (NP (DT the) (JJ other) (CD two))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Unlike
+	1	the
+	2	Mason
+			name:	ORGANIZATION				2-4	Mason County Courthouse 
+	3	County
+	4	Courthouse
+			sense:	courthouse.n.01
+	5	also
+			sense:	besides.r.02
+	6	designed
+			sense:	design.v.03
+			prop:	design.01
+			V		6-6	designed 
+			N-ARG-A1		1-4	the Mason County Courthouse 
+			N-ARGM-DIS		5-5	also 
+			N-ARG-A0		7-8	by Hosford 
+	7	by
+	8	Hosford
+			name:	PERSON				8-8	Hosford 
+	9	and
+	10	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		10-10	built 
+			N-ARG-A1		1-4	the Mason County Courthouse 
+			N-ARGM-ADV		5-5	also 
+			N-ARGM-TMP		11-14	at the same time 
+			N-ARG-A2		15-17	for $ 39,786 
+	11	at
+	12	the
+	13	same
+			sense:	same.a.01
+	14	time
+			sense:	time.n.01
+	15	for
+	16	$
+			name:	MONEY				16-17	$ 39,786 
+	17	39,786
+	18	,
+	19	the
+	20	Glasscock
+			name:	ORGANIZATION				20-22	Glasscock County Courthouse 
+	21	County
+	22	Courthouse
+			sense:	courthouse.n.01
+	23	has
+			sense:	have.v.02
+			prop:	have.03
+			V		23-23	has 
+			N-ARGM-ADV		0-17	Unlike the Mason County Courthouse also designed by Hosford and built at the same time for $ 39,786 
+			N-ARG-A0		19-22	the Glasscock County Courthouse 
+			N-ARG-A1		24-33	no clock tower cupola in the center of its roof 
+	24	no
+	25	clock
+			sense:	clock.n.01
+	26	tower
+			sense:	tower.n.01
+	27	cupola
+			sense:	cupola.n.02
+	28	in
+	29	the
+	30	center
+			sense:	center.n.01
+	31	of
+	32	its
+	33	roof
+			sense:	roof.n.01
+	34	and
+	35	its
+	36	side
+			sense:	side.n.01
+	37	porticoes
+			sense:	portico.n.01
+	38	are
+			sense:	be.v.01
+			prop:	be.01
+			V		38-38	are 
+			N-ARG-A1		35-37	its side porticoes 
+			N-ARG-A2		39-43	smaller than the other two 
+	39	smaller
+			sense:	small.a.01
+	40	than
+	41	the
+	42	other
+			sense:	other.a.01
+	43	two
+			name:	NUMBER				43-43	two 
+	44	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The prior courthouse , a small 2-story stone building , still stands on the property .
+
+
+Treebanked sentence:
+--------------------
+The prior courthouse , a small 2 - story stone building , still stands on the property . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ prior) (NN courthouse))
+      (, ,)
+      (NP (DT a) (JJ small)
+        (NML (CD 2) (HYPH -) (NN story))
+        (NN stone) (NN building))
+      (, ,))
+    (ADVP (RB still))
+    (VP (VBZ stands)
+      (PP (IN on)
+        (NP (DT the) (NN property))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	prior
+			sense:	anterior.s.02
+	2	courthouse
+			sense:	courthouse.n.01
+	3	,
+	4	a
+	5	small
+			sense:	small.a.01
+	6	2
+			name:	NUMBER				6-8	2 - story 
+	7	-
+	8	story
+			sense:	floor.n.02
+	9	stone
+			sense:	stone.n.02
+	10	building
+			sense:	building.n.01
+	11	,
+	12	still
+			sense:	still.r.01
+	13	stands
+			sense:	stand.v.01
+			prop:	stand.01
+			V		13-13	stands 
+			N-ARG-A1		0-11	The prior courthouse , a small 2 - story stone building , 
+			N-ARGM-TMP		12-12	still 
+			N-ARGM-LOC		14-16	on the property 
+	14	on
+	15	the
+	16	property
+			sense:	place.n.02
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It was used as a jail after the present courthouse was built but is now closed .
+
+
+Treebanked sentence:
+--------------------
+It was used as a jail after the present courthouse was built but is now closed . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN used)
+        (PP (IN as)
+          (NP (DT a) (NN jail)))
+        (SBAR (IN after)
+          (S
+            (NP (DT the) (JJ present) (NN courthouse))
+            (VP
+              (VP (VBD was)
+                (VP (VBN built)))
+              (CC but)
+              (VP (VBZ is)
+                (ADVP (RB now))
+                (VP (VBN closed))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			2	0-0	It 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	used
+			sense:	use.v.01
+			prop:	use.01
+			V		2-2	used 
+			N-ARG-A1		0-0	It 
+			N-ARG-A2		3-5	as a jail 
+			N-ARGM-TMP		6-11	after the present courthouse was built 
+	3	as
+	4	a
+	5	jail
+			sense:	jail.n.01
+	6	after
+	7	the
+	8	present
+			name:	DATE				8-8	present 
+			sense:	present.a.01
+	9	courthouse
+			sense:	courthouse.n.01
+	10	was
+			sense:	be.v.01
+			prop:	be.03
+			V		10-10	was 
+	11	built
+			sense:	construct.v.01
+			prop:	build.01
+			V		11-11	built 
+			N-ARG-A1		7-9	the present courthouse 
+	12	but
+	13	is
+			sense:	be.v.01
+			prop:	be.01
+			V		13-13	is 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		14-14	now 
+			N-ARG-A2		15-15	closed 
+	14	now
+			name:	DATE				14-14	now 
+			sense:	now.r.01
+	15	closed
+			sense:	close_up.v.01
+			prop:	close.01
+			V		15-15	closed 
+			N-ARG-A1		0-0	It 
+			N-ARGM-TMP		14-14	now 
+	16	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.16-16	Georgia 
+				1.40-40	Georgia 
+	Chain 1 (IDENT)
+				0.11-17	Garden City , Glasscock County , Texas 
+				1.42-42	Texas 
+	Chain 2 (IDENT)
+				1.9-10	$ 28,000 
+				1.12-12	it 
+				2.0-0	It 
+				5.0-0	It 
+

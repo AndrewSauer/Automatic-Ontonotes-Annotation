@@ -1,0 +1,518 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ramon Magsaysay Technological University , commonly referred to as RMTU is a state university .
+
+
+Treebanked sentence:
+--------------------
+Ramon Magsaysay Technological University , commonly referred to as RMTU is a state university . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Ramon) (NNP Magsaysay) (NNP Technological) (NNP University))
+      (, ,)
+      (VP
+        (ADVP (RB commonly))
+        (VBN referred)
+        (PP (IN to)
+          (PP (IN as)
+            (NP (NNP RMTU))))))
+    (VP (VBZ is)
+      (NP (DT a) (NN state) (NN university)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ramon
+			coref:	IDENT			1	0-9	Ramon Magsaysay Technological University , commonly referred to as RMTU 
+			name:	ORGANIZATION				0-3	Ramon Magsaysay Technological University 
+	1	Magsaysay
+	2	Technological
+	3	University
+	4	,
+	5	commonly
+			sense:	normally.r.01
+	6	referred
+			sense:	mention.v.01
+			prop:	refer.01
+			V		6-6	referred 
+			N-ARGM-MNR		5-5	commonly 
+			N-ARG-A1		7-7	to 
+			N-ARG-A2		8-9	as RMTU 
+	7	to
+	8	as
+	9	RMTU
+	10	is
+			sense:	be.v.01
+			prop:	be.01
+			V		10-10	is 
+			N-ARG-A1		0-9	Ramon Magsaysay Technological University , commonly referred to as RMTU 
+			N-ARG-A2		11-13	a state university 
+	11	a
+	12	state
+			sense:	state.n.01
+	13	university
+			sense:	university.n.02
+	14	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Ramon Magsaysay Technological University is a government funded higher education institution in Zambales established in 1910 .
+
+
+Treebanked sentence:
+--------------------
+The Ramon Magsaysay Technological University is a government funded higher education institution in Zambales established in 1910 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The)
+      (NML (NNP Ramon) (NNP Magsaysay))
+      (NNP Technological) (NNP University))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a)
+          (ADJP (NN government) (VBN funded))
+          (NML (JJR higher) (NN education))
+          (NN institution))
+        (PP (IN in)
+          (NP
+            (NP (NNP Zambales))
+            (VP (VBN established)
+              (PP (IN in)
+                (NP (CD 1910))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-4	The Ramon Magsaysay Technological University 
+	1	Ramon
+			name:	ORGANIZATION				1-4	Ramon Magsaysay Technological University 
+	2	Magsaysay
+	3	Technological
+	4	University
+	5	is
+			sense:	be.v.02
+			prop:	be.01
+			V		5-5	is 
+			N-ARG-A1		0-4	The Ramon Magsaysay Technological University 
+			N-ARG-A2		6-16	a government funded higher education institution in Zambales established in 1910 
+	6	a
+	7	government
+			sense:	government.n.03
+	8	funded
+			sense:	fund.v.06
+			prop:	fund.01
+			V		8-8	funded 
+			N-ARG-A0		7-7	government 
+			N-ARG-A1		9-11	higher education institution 
+	9	higher
+			sense:	high.a.01
+	10	education
+			sense:	education.n.01
+	11	institution
+			sense:	institution.n.01
+	12	in
+	13	Zambales
+			name:	LOCATION				13-13	Zambales 
+	14	established
+			sense:	establish.v.01
+			prop:	establish.01
+			V		14-14	established 
+			N-ARG-A1		6-13	a government funded higher education institution in Zambales 
+			N-ARGM-TMP		15-16	in 1910 
+	15	in
+	16	1910
+			name:	DATE				16-16	1910 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The main campus of the university is located in the Municipality of Iba , Province of Zambales .
+
+
+Treebanked sentence:
+--------------------
+The main campus of the university is located in the Municipality of Iba , Province of Zambales . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ main) (NN campus))
+      (PP (IN of)
+        (NP (DT the) (NN university))))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN Municipality))
+            (PP (IN of)
+              (NP
+                (NP (NNP Iba) (, ,) (NNP Province))
+                (PP (IN of)
+                  (NP (NNP Zambales)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	main
+			sense:	chief.s.01
+	2	campus
+			sense:	campus.n.01
+	3	of
+	4	the
+			coref:	IDENT			1	4-5	the university 
+	5	university
+			sense:	university.n.02
+	6	is
+			sense:	be.v.01
+			prop:	be.03
+			V		6-6	is 
+	7	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		7-7	located 
+			N-ARG-A1		0-5	The main campus of the university 
+			N-ARGM-LOC		8-16	in the Municipality of Iba , Province of Zambales 
+	8	in
+	9	the
+	10	Municipality
+			sense:	municipality.n.01
+	11	of
+	12	Iba
+			coref:	IDENT			0	12-16	Iba , Province of Zambales 
+			name:	CITY				12-12	Iba 
+	13	,
+	14	Province
+	15	of
+	16	Zambales
+			name:	LOCATION				16-16	Zambales 
+	17	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The university is named after the province 's greatest son and former President of the Republic of the Philippines , President Ramon Magsaysay .
+
+
+Treebanked sentence:
+--------------------
+The university is named after the province 's greatest son and former President of the Republic of the Philippines , President Ramon Magsaysay . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN university))
+    (VP (VBZ is)
+      (VP (VBN named)
+        (PP (IN after)
+          (NP
+            (NP
+              (NP (DT the) (NN province) (POS 's))
+              (JJS greatest) (NN son))
+            (CC and)
+            (NP
+              (NP (JJ former) (NNP President))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NNP Republic))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT the) (NNPS Philippines))
+                      (, ,)
+                      (NP (NNP President) (NNP Ramon) (NNP Magsaysay)))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The university 
+	1	university
+			sense:	university.n.02
+	2	is
+			sense:	be.v.01
+			prop:	be.03
+			V		2-2	is 
+	3	named
+			sense:	name.v.01
+			prop:	name.02
+			V		3-3	named 
+			N-ARG-A1		0-1	The university 
+			N-ARG-A2		4-22	after the province 's greatest son and former President of the Republic of the Philippines , President Ramon Magsaysay 
+	4	after
+	5	the
+			coref:	IDENT			0	5-7	the province 's 
+	6	province
+			sense:	state.n.01
+	7	's
+	8	greatest
+			sense:	great.s.02
+	9	son
+			sense:	son.n.01
+	10	and
+	11	former
+			sense:	erstwhile.s.01
+	12	President
+			name:	TITLE				12-12	President 
+	13	of
+	14	the
+	15	Republic
+			name:	COUNTRY				15-18	Republic of the Philippines 
+	16	of
+	17	the
+	18	Philippines
+	19	,
+	20	President
+			name:	TITLE				20-20	President 
+	21	Ramon
+			name:	PERSON				21-22	Ramon Magsaysay 
+	22	Magsaysay
+	23	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+It has also satellite campuses in the municipalities of Sta .
+
+
+Treebanked sentence:
+--------------------
+It has also satellite campuses in the municipalities of Sta . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ has)
+      (NP
+        (NP
+          (ADVP (RB also))
+          (NN satellite) (NNS campuses))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNS municipalities))
+            (PP (IN of)
+              (NP (NNP Sta)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	It
+			coref:	IDENT			1	0-0	It 
+	1	has
+			sense:	have.v.02
+			prop:	have.03
+			V		1-1	has 
+			N-ARG-A0		0-0	It 
+			N-ARGM-ADV		2-2	also 
+			N-ARG-A1		3-4	satellite campuses 
+			N-ARGM-LOC		5-9	in the municipalities of Sta 
+	2	also
+			sense:	besides.r.02
+	3	satellite
+			sense:	satellite.n.01
+	4	campuses
+			sense:	campus.n.01
+	5	in
+	6	the
+	7	municipalities
+			sense:	municipality.n.01
+	8	of
+	9	Sta
+			name:	LOCATION				9-9	Sta 
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Cruz , Candelaria , Masinloc , Botolan , San Marcelino , Castillejos all in the province of Zambales .
+
+
+Treebanked sentence:
+--------------------
+Cruz , Candelaria , Masinloc , Botolan , San Marcelino , Castillejos all in the province of Zambales . 
+
+Tree:
+-----
+(ROOT
+  (NP
+    (NP (NNP Cruz) (, ,) (NNP Candelaria) (, ,) (NNP Masinloc) (, ,) (NNP Botolan) (, ,) (NNP San) (NNP Marcelino) (, ,) (NNP Castillejos))
+    (NP
+      (NP (DT all))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN province))
+          (PP (IN of)
+            (NP (NNP Zambales))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Cruz
+			name:	PERSON				0-0	Cruz 
+	1	,
+	2	Candelaria
+			name:	CITY				2-2	Candelaria 
+	3	,
+	4	Masinloc
+	5	,
+	6	Botolan
+			name:	CITY				6-6	Botolan 
+	7	,
+	8	San
+			name:	CITY				8-9	San Marcelino 
+	9	Marcelino
+	10	,
+	11	Castillejos
+			name:	ORGANIZATION				11-11	Castillejos 
+	12	all
+	13	in
+	14	the
+			coref:	IDENT			0	14-17	the province of Zambales 
+	15	province
+			sense:	state.n.01
+	16	of
+	17	Zambales
+			name:	LOCATION				17-17	Zambales 
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The university also offers nursing courses at the Mondriaan Aura College in Subic Bay Freeport Zone , Business Administration at the Wesleyan College of Manila under a consortium program .
+
+
+Treebanked sentence:
+--------------------
+The university also offers nursing courses at the Mondriaan Aura College in Subic Bay Freeport Zone , Business Administration at the Wesleyan College of Manila under a consortium program . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN university))
+    (ADVP (RB also))
+    (VP (VBZ offers)
+      (NP (NN nursing) (NNS courses))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NNP Mondriaan) (NNP Aura) (NNP College))
+          (PP (IN in)
+            (NP
+              (NP (NNP Subic) (NNP Bay) (NNP Freeport) (NNP Zone))
+              (, ,)
+              (NP
+                (NP (NNP Business) (NNP Administration))
+                (PP (IN at)
+                  (NP
+                    (NP (DT the) (NNP Wesleyan) (NNP College))
+                    (PP (IN of)
+                      (NP (NNP Manila))))))))))
+      (PP (IN under)
+        (NP (DT a) (NN consortium) (NN program))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+			coref:	IDENT			1	0-1	The university 
+	1	university
+			sense:	university.n.02
+	2	also
+			sense:	besides.r.02
+	3	offers
+			sense:	offer.v.01
+			prop:	offer.01
+			V		3-3	offers 
+			N-ARG-A0		0-1	The university 
+			N-ARGM-DIS		2-2	also 
+			N-ARG-A1		4-5	nursing courses 
+			N-ARGM-LOC		6-15	at the Mondriaan Aura College in Subic Bay Freeport Zone 
+			N-ARGM-MNR		25-28	under a consortium program 
+	4	nursing
+			sense:	nursing.n.02
+	5	courses
+			sense:	course.n.01
+	6	at
+	7	the
+	8	Mondriaan
+			name:	ORGANIZATION				8-10	Mondriaan Aura College 
+	9	Aura
+	10	College
+	11	in
+	12	Subic
+			name:	CITY				12-14	Subic Bay Freeport 
+	13	Bay
+	14	Freeport
+	15	Zone
+			name:	LOCATION				15-15	Zone 
+	16	,
+	17	Business
+			name:	ORGANIZATION				17-18	Business Administration 
+	18	Administration
+	19	at
+	20	the
+	21	Wesleyan
+			name:	ORGANIZATION				21-24	Wesleyan College of Manila 
+	22	College
+	23	of
+	24	Manila
+	25	under
+	26	a
+	27	consortium
+			sense:	consortium.n.01
+	28	program
+			sense:	plan.n.01
+	29	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				2.12-16	Iba , Province of Zambales 
+				3.5-7	the province 's 
+				5.14-17	the province of Zambales 
+	Chain 1 (IDENT)
+				1.0-4	The Ramon Magsaysay Technological University 
+				0.0-9	Ramon Magsaysay Technological University , commonly referred to as RMTU 
+				2.4-5	the university 
+				3.0-1	The university 
+				4.0-0	It 
+				6.0-1	The university 
+

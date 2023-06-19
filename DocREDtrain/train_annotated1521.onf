@@ -1,0 +1,508 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Neil Humphreys ( born 5 December 1974 ) is an author and resident in Singapore .
+
+
+Treebanked sentence:
+--------------------
+Neil Humphreys ( born 5 December 1974 ) is an author and resident in Singapore . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Neil) (NNP Humphreys))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 5))
+        (NP-TMP (NNP December) (CD 1974)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN author)
+          (CC and)
+          (NN resident))
+        (PP (IN in)
+          (NP (NNP Singapore)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Neil
+			coref:	IDENT			0	0-1	Neil Humphreys 
+			name:	PERSON				0-1	Neil Humphreys 
+	1	Humphreys
+	2	(
+	3	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		3-3	born 
+			N-ARG-A1		0-1	Neil Humphreys 
+			N-ARGM-TMP		4-6	5 December 1974 
+	4	5
+			name:	DATE				4-6	5 December 1974 
+	5	December
+	6	1974
+	7	)
+	8	is
+			sense:	be.v.02
+			prop:	be.01
+			V		8-8	is 
+			N-ARG-A1		0-7	Neil Humphreys ( born 5 December 1974 ) 
+			N-ARG-A2		9-14	an author and resident in Singapore 
+	9	an
+	10	author
+			name:	TITLE				10-10	author 
+			sense:	writer.n.01
+	11	and
+	12	resident
+			sense:	resident.n.01
+	13	in
+	14	Singapore
+			coref:	IDENT			1	14-14	Singapore 
+			name:	COUNTRY				14-14	Singapore 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Brought up in Dagenham , London , England , Humphreys migrated to Singapore in 1996 , left for Australia in 2006 and came back to Singapore in 2011 .
+
+
+Treebanked sentence:
+--------------------
+Brought up in Dagenham , London , England , Humphreys migrated to Singapore in 1996 , left for Australia in 2006 and came back to Singapore in 2011 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (VP (VBN Brought)
+        (PRT (RP up))
+        (PP (IN in)
+          (NP (NNP Dagenham)))))
+    (, ,)
+    (NP
+      (NML (NNP London) (, ,) (NNP England) (, ,))
+      (NNP Humphreys))
+    (VP
+      (VP (VBD migrated)
+        (PP (IN to)
+          (NP (NNP Singapore)))
+        (PP (IN in)
+          (NP (CD 1996))))
+      (, ,)
+      (VP (VBD left)
+        (PP (IN for)
+          (NP (NNP Australia)))
+        (PP (IN in)
+          (NP (CD 2006))))
+      (CC and)
+      (VP (VBD came)
+        (ADVP (RB back)
+          (PP (IN to)
+            (NP (NNP Singapore))))
+        (PP (IN in)
+          (NP (CD 2011)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Brought
+			sense:	bring.v.02
+			prop:	bring.02
+			V		0-0	Brought 
+			N-ARGM-LOC		2-7	in Dagenham , London , England 
+			N-ARG-A1		9-9	Humphreys 
+	1	up
+	2	in
+	3	Dagenham
+			name:	LOCATION				3-3	Dagenham 
+	4	,
+	5	London
+			coref:	IDENT			0	5-9	London , England , Humphreys 
+			name:	CITY				5-5	London 
+	6	,
+	7	England
+			name:	COUNTRY				7-7	England 
+	8	,
+	9	Humphreys
+			name:	PERSON				9-9	Humphreys 
+	10	migrated
+			sense:	migrate.v.01
+			prop:	migrate.01
+			V		10-10	migrated 
+			R-ARG-A0		0-7	Brought up in Dagenham , London , England 
+			N-ARG-A0		9-9	Humphreys 
+			N-ARG-A1		11-12	to Singapore 
+			N-ARGM-TMP		13-14	in 1996 
+	11	to
+	12	Singapore
+			coref:	IDENT			1	12-12	Singapore 
+			name:	COUNTRY				12-12	Singapore 
+	13	in
+	14	1996
+			name:	DATE				14-14	1996 
+	15	,
+	16	left
+			sense:	leave.v.01
+			prop:	leave.04
+			V		16-16	left 
+			R-ARG-A0		0-7	Brought up in Dagenham , London , England 
+			N-ARG-A0		9-9	Humphreys 
+			N-ARG-A2		17-18	for Australia 
+			N-ARGM-TMP		19-20	in 2006 
+	17	for
+	18	Australia
+			name:	COUNTRY				18-18	Australia 
+	19	in
+	20	2006
+			name:	DATE				20-20	2006 
+	21	and
+	22	came
+			sense:	arrive.v.01
+			prop:	come.01
+			V		22-22	came 
+			N-ARGM-PRD		0-7	Brought up in Dagenham , London , England 
+			N-ARG-A1		9-9	Humphreys 
+			N-ARG-A4		23-25	back to Singapore 
+			N-ARGM-TMP		26-27	in 2011 
+	23	back
+			sense:	back.r.01
+	24	to
+	25	Singapore
+			coref:	IDENT			1	25-25	Singapore 
+			name:	COUNTRY				25-25	Singapore 
+	26	in
+	27	2011
+			name:	DATE				27-27	2011 
+	28	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He worked as a humour columnist , first at TODAY and then The Straits Times and The New Paper .
+
+
+Treebanked sentence:
+--------------------
+He worked as a humour columnist , first at TODAY and then The Straits Times and The New Paper . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD worked)
+      (PP (IN as)
+        (NP (DT a) (NN humour) (NN columnist)))
+      (, ,)
+      (ADVP (RB first))
+      (PP (IN at)
+        (NP
+          (NP (NNP TODAY))
+          (CC and)
+          (NP
+            (ADVP (RB then))
+            (NP (DT The) (NNPS Straits) (NNP Times))
+            (CC and)
+            (NP (DT The) (NNP New) (NNP Paper))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	worked
+			sense:	work.v.02
+			prop:	work.01
+			V		1-1	worked 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-5	as a humour columnist 
+			N-ARGM-LOC		7-18	first at TODAY and then The Straits Times and The New Paper 
+	2	as
+	3	a
+	4	humour
+			sense:	wit.n.01
+	5	columnist
+			name:	TITLE				5-5	columnist 
+			sense:	columnist.n.01
+	6	,
+	7	first
+			name:	ORDINAL				7-7	first 
+			sense:	first.r.03
+	8	at
+	9	TODAY
+			name:	DATE				9-9	TODAY 
+	10	and
+	11	then
+			sense:	then.r.01
+	12	The
+	13	Straits
+			name:	ORGANIZATION				13-14	Straits Times 
+	14	Times
+	15	and
+	16	The
+	17	New
+	18	Paper
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Humphreys continues to write for newspapers , magazines and websites in Singapore , Malaysia , Japan , Australia , and the UK .
+
+
+Treebanked sentence:
+--------------------
+Humphreys continues to write for newspapers , magazines and websites in Singapore , Malaysia , Japan , Australia , and the UK . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Humphreys))
+    (VP (VBZ continues)
+      (S
+        (VP (TO to)
+          (VP (VB write)
+            (PP (IN for)
+              (NP (NNS newspapers) (, ,) (NNS magazines)
+                (CC and)
+                (NNS websites)))
+            (PP (IN in)
+              (NP
+                (NP (NNP Singapore) (, ,) (NNP Malaysia) (, ,) (NNP Japan) (, ,) (NNP Australia) (, ,))
+                (CC and)
+                (NP (DT the) (NNP UK))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Humphreys
+			coref:	IDENT			0	0-0	Humphreys 
+			name:	PERSON				0-0	Humphreys 
+	1	continues
+			sense:	continue.v.01
+			prop:	continue.01
+			V		1-1	continues 
+			N-ARG-A0		0-0	Humphreys 
+			N-ARG-A1		2-21	to write for newspapers , magazines and websites in Singapore , Malaysia , Japan , Australia , and the UK 
+	2	to
+	3	write
+			sense:	write.v.01
+			prop:	write.01
+			V		3-3	write 
+			N-ARG-A0		0-0	Humphreys 
+			N-ARG-A2		4-21	for newspapers , magazines and websites in Singapore , Malaysia , Japan , Australia , and the UK 
+	4	for
+	5	newspapers
+			sense:	newspaper.n.01
+	6	,
+	7	magazines
+			sense:	magazine.n.01
+	8	and
+	9	websites
+			sense:	web_site.n.01
+	10	in
+	11	Singapore
+			coref:	IDENT			1	11-11	Singapore 
+			name:	COUNTRY				11-11	Singapore 
+	12	,
+	13	Malaysia
+			name:	COUNTRY				13-13	Malaysia 
+	14	,
+	15	Japan
+			name:	COUNTRY				15-15	Japan 
+	16	,
+	17	Australia
+			name:	COUNTRY				17-17	Australia 
+	18	,
+	19	and
+	20	the
+	21	UK
+			name:	COUNTRY				21-21	UK 
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+His humour , football and lifestyle columns have appeared in FourFourTwo , Esquire , The New Paper , The Age , The Straits Times and TODAY .
+
+
+Treebanked sentence:
+--------------------
+His humour , football and lifestyle columns have appeared in FourFourTwo , Esquire , The New Paper , The Age , The Straits Times and TODAY . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP$ His)
+      (NML (NN humour) (, ,) (NN football)
+        (CC and)
+        (NN lifestyle))
+      (NNS columns))
+    (VP (VBP have)
+      (VP (VBN appeared)
+        (PP (IN in)
+          (NP
+            (NP (NNP FourFourTwo))
+            (, ,)
+            (NP (NNP Esquire))
+            (, ,)
+            (NP (DT The) (NNP New) (NNP Paper))
+            (, ,)
+            (NP (DT The) (NNP Age))
+            (, ,)
+            (NP (DT The) (NNPS Straits) (NNP Times))
+            (CC and)
+            (NP (NNP TODAY))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	His
+			coref:	IDENT			0	0-0	His 
+	1	humour
+			sense:	wit.n.01
+	2	,
+	3	football
+			sense:	football.n.01
+	4	and
+	5	lifestyle
+			sense:	life_style.n.01
+	6	columns
+			sense:	column.n.05
+	7	have
+			sense:	have.v.01
+			prop:	have.01
+			V		7-7	have 
+	8	appeared
+			sense:	appear.v.03
+			prop:	appear.01
+			V		8-8	appeared 
+			N-ARG-A1		0-6	His humour , football and lifestyle columns 
+			N-ARGM-LOC		9-25	in FourFourTwo , Esquire , The New Paper , The Age , The Straits Times and TODAY 
+	9	in
+	10	FourFourTwo
+	11	,
+	12	Esquire
+			name:	ORGANIZATION				12-12	Esquire 
+	13	,
+	14	The
+	15	New
+	16	Paper
+	17	,
+	18	The
+	19	Age
+	20	,
+	21	The
+	22	Straits
+			name:	ORGANIZATION				22-23	Straits Times 
+	23	Times
+	24	and
+	25	TODAY
+			name:	DATE				25-25	TODAY 
+	26	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Humphreys is currently working on an Abbie Rose and the Magic Suitcase TV series .
+
+
+Treebanked sentence:
+--------------------
+Humphreys is currently working on an Abbie Rose and the Magic Suitcase TV series . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Humphreys))
+    (VP (VBZ is)
+      (ADVP (RB currently))
+      (VP (VBG working)
+        (PP (IN on)
+          (NP
+            (NP (DT an) (NNP Abbie) (NNP Rose))
+            (CC and)
+            (NP (DT the)
+              (NML (NNP Magic) (NN Suitcase))
+              (NN TV) (NN series))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Humphreys
+			coref:	IDENT			0	0-0	Humphreys 
+			name:	PERSON				0-0	Humphreys 
+	1	is
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	is 
+	2	currently
+			name:	DATE				2-2	currently 
+			sense:	presently.r.02
+	3	working
+			sense:	work.v.01
+			prop:	work.01
+			V		3-3	working 
+			N-ARG-A0		0-0	Humphreys 
+			N-ARGM-TMP		2-2	currently 
+			N-ARG-A1		4-13	on an Abbie Rose and the Magic Suitcase TV series 
+	4	on
+	5	an
+	6	Abbie
+			name:	PERSON				6-7	Abbie Rose 
+	7	Rose
+	8	and
+	9	the
+	10	Magic
+	11	Suitcase
+			sense:	bag.n.06
+	12	TV
+			sense:	television.n.01
+	13	series
+			sense:	serial.n.01
+	14	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.5-9	London , England , Humphreys 
+				0.0-1	Neil Humphreys 
+				2.0-0	He 
+				3.0-0	Humphreys 
+				4.0-0	His 
+				5.0-0	Humphreys 
+	Chain 1 (IDENT)
+				0.14-14	Singapore 
+				1.12-12	Singapore 
+				1.25-25	Singapore 
+				3.11-11	Singapore 
+

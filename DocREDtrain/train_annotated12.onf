@@ -1,0 +1,618 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Thomas Wolff ( July 14 , 1954 , New York City – July 31 , 2000 , Kern County ) was a noted mathematician , working primarily in the fields of harmonic analysis , complex analysis , and partial differential equations .
+
+
+Treebanked sentence:
+--------------------
+Thomas Wolff ( July 14 , 1954 , New York City – July 31 , 2000 , Kern County ) was a noted mathematician , working primarily in the fields of harmonic analysis , complex analysis , and partial differential equations . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Thomas) (NNP Wolff))
+      (-LRB- -LRB-)
+      (NP (NNP July) (CD 14) (, ,) (CD 1954))
+      (, ,)
+      (NP
+        (NP (NNP New) (NNP York) (NNP City))
+        (HYPH –)
+        (NP-TMP (NNP July) (CD 31) (, ,) (CD 2000)))
+      (, ,)
+      (NP (NNP Kern) (NNP County))
+      (-RRB- -RRB-))
+    (VP (VBD was)
+      (NP (DT a) (VBN noted) (NN mathematician))
+      (, ,)
+      (VP (VBG working)
+        (ADVP (RB primarily))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNS fields))
+            (PP (IN of)
+              (NP
+                (NP (JJ harmonic) (NN analysis))
+                (, ,)
+                (NP (JJ complex) (NN analysis))
+                (, ,)
+                (CC and)
+                (NP (JJ partial) (JJ differential) (NNS equations))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Thomas
+			name:	PERSON				0-1	Thomas Wolff 
+	1	Wolff
+	2	(
+	3	July
+			name:	DATE				3-6	July 14 , 1954 
+	4	14
+	5	,
+	6	1954
+	7	,
+	8	New
+			name:	CITY				8-10	New York City 
+	9	York
+	10	City
+	11	–
+	12	July
+			name:	DATE				12-15	July 31 , 2000 
+	13	31
+	14	,
+	15	2000
+	16	,
+	17	Kern
+			name:	LOCATION				17-18	Kern County 
+	18	County
+	19	)
+	20	was
+			sense:	be.v.02
+			prop:	be.01
+			V		20-20	was 
+			N-ARG-A1		0-19	Thomas Wolff ( July 14 , 1954 , New York City – July 31 , 2000 , Kern County ) 
+			N-ARG-A2		21-23	a noted mathematician 
+			N-ARGM-ADV		25-40	working primarily in the fields of harmonic analysis , complex analysis , and partial differential equations 
+	21	a
+	22	noted
+			sense:	note.v.01
+			prop:	note.02
+			V		22-22	noted 
+			N-ARG-A1		23-23	mathematician 
+	23	mathematician
+			name:	TITLE				23-23	mathematician 
+			sense:	mathematician.n.01
+	24	,
+	25	working
+			sense:	work.v.08
+			prop:	work.01
+			V		25-25	working 
+			N-ARG-A0		0-19	Thomas Wolff ( July 14 , 1954 , New York City – July 31 , 2000 , Kern County ) 
+			N-ARGM-ADV		26-26	primarily 
+			N-ARG-A1		27-40	in the fields of harmonic analysis , complex analysis , and partial differential equations 
+	26	primarily
+			sense:	chiefly.r.01
+	27	in
+	28	the
+	29	fields
+			sense:	discipline.n.01
+	30	of
+	31	harmonic
+			sense:	harmonic.a.02
+	32	analysis
+			sense:	analysis.n.05
+	33	,
+	34	complex
+			sense:	complex.a.01
+	35	analysis
+			sense:	analysis.n.05
+	36	,
+	37	and
+	38	partial
+			sense:	partial.s.01
+	39	differential
+			sense:	differential.a.02
+	40	equations
+			sense:	equation.n.01
+	41	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+As an undergraduate at Harvard University he regularly played poker with his classmate Bill Gates .
+
+
+Treebanked sentence:
+--------------------
+As an undergraduate at Harvard University he regularly played poker with his classmate Bill Gates . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN As)
+      (NP
+        (NP (DT an) (NN undergraduate))
+        (PP (IN at)
+          (NP (NNP Harvard) (NNP University)))))
+    (NP (PRP he))
+    (ADVP (RB regularly))
+    (VP (VBD played)
+      (NP (NN poker))
+      (PP (IN with)
+        (NP
+          (NP (PRP$ his) (NN classmate))
+          (NP (NNP Bill) (NNP Gates)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	As
+	1	an
+	2	undergraduate
+			sense:	undergraduate.n.01
+	3	at
+	4	Harvard
+			name:	ORGANIZATION				4-5	Harvard University 
+	5	University
+	6	he
+			coref:	IDENT			0	6-6	he 
+	7	regularly
+			sense:	regularly.r.01
+	8	played
+			sense:	play.v.01
+			prop:	play.01
+			V		8-8	played 
+			N-ARGM-TMP		0-5	As an undergraduate at Harvard University 
+			N-ARG-A0		6-6	he 
+			N-ARGM-MNR		7-7	regularly 
+			N-ARG-A1		9-9	poker 
+			N-ARGM-COM		10-14	with his classmate Bill Gates 
+	9	poker
+			sense:	poker.n.02
+	10	with
+	11	his
+			coref:	IDENT			0	11-11	his 
+	12	classmate
+			sense:	schoolmate.n.01
+	13	Bill
+			name:	PERSON				13-14	Bill Gates 
+	14	Gates
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+While a graduate student at the University of California , Berkeley from 1976 to 1979 , under the direction of Donald Sarason , he obtained a new proof of the corona theorem , a famously difficult theorem in complex analysis .
+
+
+Treebanked sentence:
+--------------------
+While a graduate student at the University of California , Berkeley from 1976 to 1979 , under the direction of Donald Sarason , he obtained a new proof of the corona theorem , a famously difficult theorem in complex analysis . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP
+          (NP
+            (NP (DT a) (NN graduate) (NN student))
+            (PP (IN at)
+              (NP
+                (NP (DT the) (NNP University))
+                (PP (IN of)
+                  (NP (NNP California))))))
+          (, ,)
+          (NP
+            (NP (NNP Berkeley))
+            (PP (IN from)
+              (NP
+                (NP (CD 1976))
+                (PP (IN to)
+                  (NP (CD 1979))))))
+          (, ,))
+        (PP (IN under)
+          (NP
+            (NP (DT the) (NN direction))
+            (PP (IN of)
+              (NP (NNP Donald) (NNP Sarason)))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD obtained)
+      (NP
+        (NP (DT a) (JJ new) (NN proof))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN corona) (NN theorem))
+            (, ,)
+            (NP (DT a)
+              (ADJP
+                (ADVP (RB famously))
+                (JJ difficult))
+              (NN theorem)))))
+      (PP (IN in)
+        (NP (JJ complex) (NN analysis))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	While
+	1	a
+	2	graduate
+			sense:	alumnus.n.01
+	3	student
+			name:	TITLE				3-3	student 
+			sense:	student.n.01
+	4	at
+	5	the
+	6	University
+			name:	ORGANIZATION				6-10	University of California , Berkeley 
+	7	of
+	8	California
+	9	,
+	10	Berkeley
+	11	from
+	12	1976
+			name:	DATE				12-14	1976 to 1979 
+	13	to
+	14	1979
+	15	,
+	16	under
+	17	the
+	18	direction
+			sense:	guidance.n.01
+	19	of
+	20	Donald
+			name:	PERSON				20-21	Donald Sarason 
+	21	Sarason
+	22	,
+	23	he
+			coref:	IDENT			0	23-23	he 
+	24	obtained
+			sense:	obtain.v.01
+			prop:	obtain.01
+			V		24-24	obtained 
+			N-ARGM-TMP		0-14	While a graduate student at the University of California , Berkeley from 1976 to 1979 
+			N-ARGM-MNR		16-21	under the direction of Donald Sarason 
+			N-ARG-A0		23-23	he 
+			N-ARG-A1		25-39	a new proof of the corona theorem , a famously difficult theorem in complex analysis 
+	25	a
+	26	new
+			sense:	new.a.01
+	27	proof
+			sense:	proof.n.02
+	28	of
+	29	the
+	30	corona
+			sense:	corona.n.04
+	31	theorem
+			sense:	theorem.n.01
+	32	,
+	33	a
+	34	famously
+			sense:	famously.r.01
+	35	difficult
+			sense:	difficult.a.01
+	36	theorem
+			sense:	theorem.n.01
+	37	in
+	38	complex
+			sense:	complex.a.01
+	39	analysis
+			sense:	analysis.n.05
+	40	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was made Professor of Mathematics at Caltech in 1986 , and was there from 1988 – 1992 and from 1995 to his death in a car accident in 2000 .
+
+
+Treebanked sentence:
+--------------------
+He was made Professor of Mathematics at Caltech in 1986 , and was there from 1988 – 1992 and from 1995 to his death in a car accident in 2000 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN made)
+          (NP
+            (NP (NNP Professor))
+            (PP (IN of)
+              (NP (NNP Mathematics))))
+          (PP (IN at)
+            (NP (NNP Caltech)))
+          (PP (IN in)
+            (NP (CD 1986)))))
+      (, ,)
+      (CC and)
+      (VP (VBD was)
+        (ADVP (RB there))
+        (PP
+          (PP (IN from)
+            (NP (CD 1988) (SYM –) (CD 1992)))
+          (CC and)
+          (PP (IN from)
+            (NP
+              (NP (CD 1995))
+              (PP (IN to)
+                (NP
+                  (NP (PRP$ his) (NN death))
+                  (PP (IN in)
+                    (NP
+                      (NP (DT a) (NN car) (NN accident))
+                      (PP (IN in)
+                        (NP (CD 2000))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	made
+			sense:	name.v.03
+			prop:	make.02
+			V		2-2	made 
+			N-ARG-A1		3-7	Professor of Mathematics at Caltech 
+			N-ARGM-TMP		8-9	in 1986 
+	3	Professor
+			name:	TITLE				3-3	Professor 
+	4	of
+	5	Mathematics
+	6	at
+	7	Caltech
+			name:	LOCATION				7-7	Caltech 
+	8	in
+	9	1986
+			name:	DATE				9-9	1986 
+	10	,
+	11	and
+	12	was
+			sense:	be.v.03
+			prop:	be.01
+			V		12-12	was 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		13-13	there 
+			N-ARGM-TMP		14-29	from 1988 – 1992 and from 1995 to his death in a car accident in 2000 
+	13	there
+			sense:	there.r.01
+	14	from
+	15	1988
+			name:	DATE				15-15	1988 
+	16	–
+	17	1992
+			name:	DATE				17-17	1992 
+	18	and
+	19	from
+	20	1995
+			name:	DATE				20-20	1995 
+	21	to
+	22	his
+			coref:	IDENT			0	22-22	his 
+	23	death
+			sense:	death.n.01
+	24	in
+	25	a
+	26	car
+			name:	CAUSE_OF_DEATH				26-27	car accident 
+			sense:	car.n.01
+	27	accident
+			sense:	accident.n.01
+	28	in
+	29	2000
+			name:	DATE				29-29	2000 
+	30	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He also held positions at the University of Washington , University of Chicago , New York University , and University of California , Berkeley .
+
+
+Treebanked sentence:
+--------------------
+He also held positions at the University of Washington , University of Chicago , New York University , and University of California , Berkeley . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD held)
+      (NP (NNS positions))
+      (PP (IN at)
+        (NP
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Washington))))
+          (, ,)
+          (NP
+            (NP (NNP University))
+            (PP (IN of)
+              (NP (NNP Chicago))))
+          (, ,)
+          (NP
+            (NML (NNP New) (NNP York))
+            (NNP University))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (NNP University))
+            (PP (IN of)
+              (NP (NNP California) (, ,) (NNP Berkeley)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	also
+			sense:	besides.r.02
+	2	held
+			sense:	bear.v.11
+			prop:	hold.01
+			V		2-2	held 
+			N-ARG-A0		0-0	He 
+			N-ARGM-DIS		1-1	also 
+			N-ARG-A1		3-23	positions at the University of Washington , University of Chicago , New York University , and University of California , Berkeley 
+	3	positions
+			sense:	position.n.06
+	4	at
+	5	the
+	6	University
+			name:	ORGANIZATION				6-12	University of Washington , University of Chicago 
+	7	of
+	8	Washington
+	9	,
+	10	University
+	11	of
+	12	Chicago
+	13	,
+	14	New
+			name:	ORGANIZATION				14-16	New York University 
+	15	York
+	16	University
+	17	,
+	18	and
+	19	University
+			name:	ORGANIZATION				19-21	University of California 
+	20	of
+	21	California
+	22	,
+	23	Berkeley
+			name:	CITY				23-23	Berkeley 
+	24	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He received the Salem Prize in 1985 and the Bôcher Memorial Prize in 1999 , for his contributions to analysis and particularly to the Kakeya conjecture .
+
+
+Treebanked sentence:
+--------------------
+He received the Salem Prize in 1985 and the Bôcher Memorial Prize in 1999 , for his contributions to analysis and particularly to the Kakeya conjecture . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD received)
+        (NP (DT the) (NNP Salem) (NNP Prize))
+        (PP (IN in)
+          (NP (CD 1985))))
+      (CC and)
+      (VP
+        (NP (DT the) (NNP Bôcher) (NNP Memorial) (NNP Prize))
+        (PP (IN in)
+          (NP (CD 1999))))
+      (, ,)
+      (VP
+        (PP (IN for)
+          (NP (PRP$ his) (NNS contributions)))
+        (PP (IN to)
+          (NP (NN analysis))))
+      (CC and)
+      (VP
+        (ADVP (RB particularly))
+        (PP (IN to)
+          (NP (DT the) (NNP Kakeya) (NN conjecture)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	received
+			sense:	receive.v.01
+			prop:	receive.01
+			V		1-1	received 
+			N-ARG-A0		0-0	He 
+			N-ARG-A1		2-4	the Salem Prize 
+			N-ARGM-TMP		5-6	in 1985 
+			N-ARG-A3		15-25	for his contributions to analysis and particularly to the Kakeya conjecture 
+	2	the
+	3	Salem
+			name:	MISC				3-4	Salem Prize 
+	4	Prize
+	5	in
+	6	1985
+			name:	DATE				6-6	1985 
+	7	and
+	8	the
+	9	Bôcher
+			name:	MISC				9-11	Bôcher Memorial Prize 
+	10	Memorial
+	11	Prize
+	12	in
+	13	1999
+			name:	DATE				13-13	1999 
+	14	,
+	15	for
+	16	his
+			coref:	IDENT			0	16-16	his 
+	17	contributions
+			sense:	contribution.n.01
+	18	to
+	19	analysis
+			sense:	analysis.n.01
+	20	and
+	21	particularly
+			sense:	particularly.r.01
+	22	to
+	23	the
+	24	Kakeya
+			name:	LOCATION				24-24	Kakeya 
+	25	conjecture
+			sense:	speculation.n.02
+	26	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				1.6-6	he 
+				1.11-11	his 
+				2.23-23	he 
+				3.0-0	He 
+				3.22-22	his 
+				4.0-0	He 
+				5.0-0	He 
+				5.16-16	his 
+

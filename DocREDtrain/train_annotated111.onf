@@ -1,0 +1,844 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Jon André Røyrane ( born 12 December 1983 ) is a Norwegian footballer .
+
+
+Treebanked sentence:
+--------------------
+Jon André Røyrane ( born 12 December 1983 ) is a Norwegian footballer . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (NNP Jon) (NNP André) (NNP Røyrane))
+      (-LRB- -LRB-)
+      (VP (VBN born)
+        (NP (CD 12))
+        (NP-TMP (NNP December) (CD 1983)))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (NP (DT a) (JJ Norwegian) (NN footballer)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Jon
+			coref:	IDENT			0	0-2	Jon André Røyrane 
+			name:	PERSON				0-2	Jon André Røyrane 
+	1	André
+	2	Røyrane
+	3	(
+	4	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		4-4	born 
+			N-ARG-A1		0-2	Jon André Røyrane 
+			N-ARGM-TMP		5-7	12 December 1983 
+	5	12
+			name:	DATE				5-7	12 December 1983 
+	6	December
+	7	1983
+	8	)
+	9	is
+			sense:	be.v.02
+			prop:	be.01
+			V		9-9	is 
+			N-ARG-A1		0-8	Jon André Røyrane ( born 12 December 1983 ) 
+			N-ARG-A2		10-12	a Norwegian footballer 
+	10	a
+	11	Norwegian
+			name:	NATIONALITY				11-11	Norwegian 
+	12	footballer
+			name:	TITLE				12-12	footballer 
+			sense:	football_player.n.01
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Røyrane was born in Norheimsund and grew up in Kvinnherad and started his senior career for Norheimsund IL .
+
+
+Treebanked sentence:
+--------------------
+Røyrane was born in Norheimsund and grew up in Kvinnherad and started his senior career for Norheimsund IL . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NN Røyrane))
+    (VP
+      (VP (VBD was)
+        (VP (VBN born)
+          (PP (IN in)
+            (NP (NN Norheimsund)))))
+      (CC and)
+      (VP (VBD grew)
+        (PRT (RP up))
+        (PP (IN in)
+          (NP (NNP Kvinnherad))))
+      (CC and)
+      (VP (VBD started)
+        (NP (PRP$ his) (JJ senior) (NN career))
+        (PP (IN for)
+          (NP (NNP Norheimsund) (NNP IL)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Røyrane
+			coref:	IDENT			0	0-0	Røyrane 
+			name:	PERSON				0-0	Røyrane 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	born
+			sense:	give_birth.v.01
+			prop:	bear.02
+			V		2-2	born 
+			N-ARG-A1		0-0	Røyrane 
+			N-ARGM-LOC		3-4	in Norheimsund 
+	3	in
+	4	Norheimsund
+			name:	CITY				4-4	Norheimsund 
+	5	and
+	6	grew
+			sense:	mature.v.01
+			prop:	grow.04
+			V		6-6	grew 
+			N-ARG-A1		0-0	Røyrane 
+			N-ARGM-LOC		8-9	in Kvinnherad 
+	7	up
+	8	in
+	9	Kvinnherad
+			name:	LOCATION				9-9	Kvinnherad 
+	10	and
+	11	started
+			sense:	get_down.v.07
+			prop:	start.01
+			V		11-11	started 
+			N-ARG-A0		0-0	Røyrane 
+			N-ARG-A1		12-14	his senior career 
+			N-ARGM-ADV		15-17	for Norheimsund IL 
+	12	his
+			coref:	IDENT			0	12-12	his 
+	13	senior
+			sense:	senior.s.02
+	14	career
+			sense:	career.n.01
+	15	for
+	16	Norheimsund
+			name:	PERSON				16-17	Norheimsund IL 
+	17	IL
+	18	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After the 2005 season he signed for Sandefjord Fotball together with his younger brother Ørjan .
+
+
+Treebanked sentence:
+--------------------
+After the 2005 season he signed for Sandefjord Fotball together with his younger brother Ørjan . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (NP (DT the) (CD 2005) (NN season)))
+    (NP (PRP he))
+    (VP (VBD signed)
+      (PP (IN for)
+        (NP (NNP Sandefjord) (NNP Fotball)))
+      (PP
+        (ADVP (RB together))
+        (IN with)
+        (NP
+          (NP (PRP$ his) (JJR younger) (NN brother))
+          (NP (NNP Ørjan)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	the
+	2	2005
+			name:	DATE				2-2	2005 
+	3	season
+			sense:	season.n.01
+	4	he
+			coref:	IDENT			0	4-4	he 
+	5	signed
+			sense:	sign.v.03
+			prop:	sign.02
+			V		5-5	signed 
+			N-ARGM-TMP		0-3	After the 2005 season 
+			N-ARG-A0		4-4	he 
+			N-ARG-A1		6-8	for Sandefjord Fotball 
+			N-ARGM-ADV		9-14	together with his younger brother Ørjan 
+	6	for
+	7	Sandefjord
+			name:	ORGANIZATION				7-8	Sandefjord Fotball 
+	8	Fotball
+	9	together
+			sense:	together.r.05
+	10	with
+	11	his
+			coref:	IDENT			0	11-11	his 
+	12	younger
+			sense:	young.a.01
+	13	brother
+			sense:	brother.n.01
+	14	Ørjan
+			name:	PERSON				14-14	Ørjan 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was sold to Løv - Ham Fotball after the 2007 season .
+
+
+Treebanked sentence:
+--------------------
+He was sold to Løv - Ham Fotball after the 2007 season . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN sold)
+        (PP (IN to)
+          (NP
+            (NP (NNP Løv) (HYPH -) (NNP Ham) (NNP Fotball))
+            (PP (IN after)
+              (NP (DT the) (CD 2007) (NN season)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	sold
+			sense:	sell.v.01
+			prop:	sell.01
+			V		2-2	sold 
+			N-ARG-A1		0-0	He 
+			N-ARG-A2		3-7	to Løv - Ham Fotball 
+			N-ARGM-TMP		8-11	after the 2007 season 
+	3	to
+	4	Løv
+			name:	ORGANIZATION				4-7	Løv - Ham Fotball 
+	5	-
+	6	Ham
+	7	Fotball
+	8	after
+	9	the
+			coref:	IDENT			1	9-11	the 2007 season 
+	10	2007
+			name:	DATE				10-10	2007 
+	11	season
+			sense:	season.n.01
+	12	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He was loaned out to Åsane Fotball in parts of 2008 .
+
+
+Treebanked sentence:
+--------------------
+He was loaned out to Åsane Fotball in parts of 2008 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN loaned)
+        (PRT (RP out))
+        (PP (IN to)
+          (NP
+            (NP (NNP Åsane) (NNP Fotball))
+            (PP (IN in)
+              (NP
+                (NP (NNS parts))
+                (PP (IN of)
+                  (NP (CD 2008)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	was
+			sense:	be.v.01
+			prop:	be.03
+			V		1-1	was 
+	2	loaned
+			sense:	lend.v.02
+			prop:	loan.02
+			V		2-2	loaned 
+			N-ARG-A1		0-0	He 
+			N-ARGM-TMP		7-10	in parts of 2008 
+	3	out
+	4	to
+	5	Åsane
+	6	Fotball
+	7	in
+	8	parts
+			sense:	part.n.01
+	9	of
+	10	2008
+			name:	DATE				10-10	2008 
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+After playing for Løv - Ham in Adeccoligaen in 2009 , Røyrane joined Lyn ahead of the 2010 season , but left for Kristiansund when Lyn was bankrupted halfway through the season .
+
+
+Treebanked sentence:
+--------------------
+After playing for Løv - Ham in Adeccoligaen in 2009 , Røyrane joined Lyn ahead of the 2010 season , but left for Kristiansund when Lyn was bankrupted halfway through the season . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG playing)
+          (PP (IN for)
+            (NP
+              (NP (NNP Løv) (HYPH -) (NNP Ham))
+              (PP (IN in)
+                (NP (NNP Adeccoligaen)))))
+          (PP (IN in)
+            (NP (CD 2009))))))
+    (, ,)
+    (NP (NN Røyrane))
+    (VP
+      (VP (VBD joined)
+        (NP
+          (NP (NNP Lyn))
+          (PP (RB ahead) (IN of)
+            (NP (DT the) (CD 2010) (NN season)))))
+      (, ,)
+      (CC but)
+      (VP (VBD left)
+        (PP (IN for)
+          (NP (NNP Kristiansund)))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (NNP Lyn))
+            (VP (VBD was)
+              (VP (VBN bankrupted)
+                (ADVP (RB halfway))
+                (PP (IN through)
+                  (NP (DT the) (NN season)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	After
+	1	playing
+			sense:	play.v.01
+			prop:	play.01
+			V		1-1	playing 
+			N-ARGM-ADV		2-5	for Løv - Ham 
+			N-ARGM-LOC		6-7	in Adeccoligaen 
+			N-ARGM-TMP		8-9	in 2009 
+			N-ARG-A0		11-11	Røyrane 
+	2	for
+	3	Løv
+	4	-
+	5	Ham
+	6	in
+	7	Adeccoligaen
+			name:	LOCATION				7-7	Adeccoligaen 
+	8	in
+	9	2009
+			name:	DATE				9-9	2009 
+	10	,
+	11	Røyrane
+			coref:	IDENT			0	11-11	Røyrane 
+			name:	PERSON				11-11	Røyrane 
+	12	joined
+			sense:	join.v.01
+			prop:	join.01
+			V		12-12	joined 
+			N-ARGM-TMP		0-9	After playing for Løv - Ham in Adeccoligaen in 2009 
+			N-ARG-A0		11-11	Røyrane 
+			N-ARG-A1		13-13	Lyn 
+			N-ARGM-TMP		14-18	ahead of the 2010 season 
+	13	Lyn
+			name:	PERSON				13-13	Lyn 
+	14	ahead
+			sense:	ahead.r.04
+	15	of
+	16	the
+	17	2010
+			name:	DATE				17-17	2010 
+	18	season
+			sense:	season.n.01
+	19	,
+	20	but
+	21	left
+			sense:	leave.v.08
+			prop:	leave.04
+			V		21-21	left 
+			N-ARGM-TMP		0-9	After playing for Løv - Ham in Adeccoligaen in 2009 
+			N-ARG-A0		11-11	Røyrane 
+			N-ARG-A2		22-23	for Kristiansund 
+			N-ARGM-TMP		24-31	when Lyn was bankrupted halfway through the season 
+	22	for
+	23	Kristiansund
+			name:	CITY				23-23	Kristiansund 
+	24	when
+	25	Lyn
+			name:	PERSON				25-25	Lyn 
+	26	was
+			sense:	be.v.01
+			prop:	be.03
+			V		26-26	was 
+	27	bankrupted
+			sense:	bankrupt.v.01
+			prop:	bankrupt.01
+			V		27-27	bankrupted 
+			N-ARGM-TMP		24-24	when 
+			N-ARG-A1		25-25	Lyn 
+			N-ARGM-TMP		28-31	halfway through the season 
+	28	halfway
+			sense:	halfway.r.01
+	29	through
+	30	the
+			coref:	IDENT			1	30-31	the season 
+	31	season
+			sense:	season.n.01
+	32	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Ahead of the 2012 season , Røyrane joined UMF Selfoss , and became the fourth Norwegian in the Icelandic club .
+
+
+Treebanked sentence:
+--------------------
+Ahead of the 2012 season , Røyrane joined UMF Selfoss , and became the fourth Norwegian in the Icelandic club . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Ahead)
+      (PP (IN of)
+        (NP (DT the) (CD 2012) (NN season))))
+    (, ,)
+    (NP (NN Røyrane))
+    (VP
+      (VP (VBD joined)
+        (NP (NNP UMF) (NNP Selfoss)))
+      (, ,)
+      (CC and)
+      (VP (VBD became)
+        (NP (DT the) (JJ fourth) (JJ Norwegian))
+        (PP (IN in)
+          (NP (DT the) (JJ Icelandic) (NN club)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Ahead
+			sense:	ahead.r.04
+	1	of
+	2	the
+			coref:	IDENT			1	2-4	the 2012 season 
+	3	2012
+			name:	DATE				3-3	2012 
+	4	season
+			sense:	season.n.01
+	5	,
+	6	Røyrane
+			coref:	IDENT			0	6-6	Røyrane 
+			name:	PERSON				6-6	Røyrane 
+	7	joined
+			sense:	join.v.01
+			prop:	join.01
+			V		7-7	joined 
+			N-ARGM-TMP		0-4	Ahead of the 2012 season 
+			N-ARG-A0		6-6	Røyrane 
+			N-ARG-A1		8-9	UMF Selfoss 
+	8	UMF
+	9	Selfoss
+	10	,
+	11	and
+	12	became
+			sense:	become.v.02
+			prop:	become.01
+			V		12-12	became 
+			N-ARGM-TMP		0-4	Ahead of the 2012 season 
+			N-ARG-A1		6-6	Røyrane 
+			N-ARG-A2		13-19	the fourth Norwegian in the Icelandic club 
+	13	the
+	14	fourth
+			name:	ORDINAL				14-14	fourth 
+			sense:	fourth.s.01
+	15	Norwegian
+			name:	NATIONALITY				15-15	Norwegian 
+	16	in
+	17	the
+	18	Icelandic
+			name:	NATIONALITY				18-18	Icelandic 
+	19	club
+			sense:	club.n.02
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+On 10 May 2012 , Røyrane scored his first goal for Selfoss against Valur where he showed great technique and skills .
+
+
+Treebanked sentence:
+--------------------
+On 10 May 2012 , Røyrane scored his first goal for Selfoss against Valur where he showed great technique and skills . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (CD 10)))
+    (NP-TMP (NNP May) (CD 2012))
+    (, ,)
+    (NP (NNP Røyrane))
+    (VP (VBD scored)
+      (NP (PRP$ his) (JJ first) (NN goal))
+      (PP (IN for)
+        (NP (NNP Selfoss)))
+      (PP (IN against)
+        (NP (NNP Valur)))
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP he))
+          (VP (VBD showed)
+            (NP (JJ great) (NN technique)
+              (CC and)
+              (NNS skills))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	On
+	1	10
+			name:	DATE				1-3	10 May 2012 
+	2	May
+	3	2012
+	4	,
+	5	Røyrane
+			coref:	IDENT			0	5-5	Røyrane 
+			name:	PERSON				5-5	Røyrane 
+	6	scored
+			sense:	score.v.01
+			prop:	score.01
+			V		6-6	scored 
+			N-ARGM-TMP		0-3	On 10 May 2012 
+			N-ARG-A0		5-5	Røyrane 
+			N-ARG-A1		7-11	his first goal for Selfoss 
+			N-ARG-A2		12-20	against Valur where he showed great technique and skills 
+	7	his
+			coref:	IDENT			0	7-7	his 
+	8	first
+			name:	ORDINAL				8-8	first 
+			sense:	first.a.01
+	9	goal
+			sense:	goal.n.04
+	10	for
+	11	Selfoss
+			name:	MISC				11-11	Selfoss 
+	12	against
+	13	Valur
+	14	where
+	15	he
+			coref:	IDENT			0	15-15	he 
+	16	showed
+			sense:	show.v.01
+			prop:	show.01
+			V		16-16	showed 
+			N-ARGM-LOC		7-13	his first goal for Selfoss against Valur 
+			R-ARGM-LOC		14-14	where 
+			N-ARG-A0		15-15	he 
+			N-ARG-A1		17-20	great technique and skills 
+	17	great
+			sense:	bang-up.s.01
+	18	technique
+			sense:	proficiency.n.02
+	19	and
+	20	skills
+			sense:	skill.n.01
+	21	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Røyrane signed for Fram Reykjavik in the summer of 2013 , but left the club when the season ended .
+
+
+Treebanked sentence:
+--------------------
+Røyrane signed for Fram Reykjavik in the summer of 2013 , but left the club when the season ended . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Røyrane))
+    (VP
+      (VP (VBD signed)
+        (PP (IN for)
+          (NP
+            (NP (NNP Fram) (NNP Reykjavik))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN summer))
+                (PP (IN of)
+                  (NP (CD 2013))))))))
+      (, ,)
+      (CC but)
+      (VP (VBD left)
+        (NP (DT the) (NN club))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (DT the) (NN season))
+            (VP (VBD ended))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Røyrane
+			coref:	IDENT			0	0-0	Røyrane 
+			name:	PERSON				0-0	Røyrane 
+	1	signed
+			sense:	sign.v.03
+			prop:	sign.02
+			V		1-1	signed 
+			N-ARG-A0		0-0	Røyrane 
+			N-ARG-A2		2-4	for Fram Reykjavik 
+			N-ARGM-TMP		5-9	in the summer of 2013 
+	2	for
+	3	Fram
+			name:	ORGANIZATION				3-4	Fram Reykjavik 
+	4	Reykjavik
+	5	in
+	6	the
+			name:	DATE				6-9	the summer of 2013 
+	7	summer
+			sense:	summer.n.01
+	8	of
+	9	2013
+	10	,
+	11	but
+	12	left
+			sense:	leave.v.08
+			prop:	leave.01
+			V		12-12	left 
+			N-ARG-A0		0-0	Røyrane 
+			N-ARG-A1		13-14	the club 
+			N-ARGM-TMP		15-18	when the season ended 
+	13	the
+	14	club
+			sense:	baseball_club.n.01
+	15	when
+	16	the
+			coref:	IDENT			1	16-17	the season 
+	17	season
+			sense:	season.n.01
+	18	ended
+			sense:	end.v.01
+			prop:	end.01
+			V		18-18	ended 
+			N-ARGM-TMP		15-15	when 
+			N-ARG-A1		16-17	the season 
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+He went back to Norway and played for Stord IL .
+
+
+Treebanked sentence:
+--------------------
+He went back to Norway and played for Stord IL . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD went)
+        (ADVP (RB back))
+        (PP (IN to)
+          (NP (NNP Norway))))
+      (CC and)
+      (VP (VBD played)
+        (PP (IN for)
+          (NP (NNP Stord) (NNP IL)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	He
+			coref:	IDENT			0	0-0	He 
+	1	went
+			sense:	travel.v.01
+			prop:	go.02
+			V		1-1	went 
+			N-ARG-A0		0-0	He 
+			N-ARG-A4		2-4	back to Norway 
+	2	back
+			sense:	back.r.01
+	3	to
+	4	Norway
+			name:	COUNTRY				4-4	Norway 
+	5	and
+	6	played
+			sense:	play.v.01
+			prop:	play.01
+			V		6-6	played 
+			N-ARG-A0		0-0	He 
+			N-ARGM-ADV		7-9	for Stord IL 
+	7	for
+	8	Stord
+			name:	PERSON				8-9	Stord IL 
+	9	IL
+	10	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Currently he is assistant coach in Stord .
+
+
+Treebanked sentence:
+--------------------
+Currently he is assistant coach in Stord . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (ADVP (RB Currently))
+    (NP (PRP he))
+    (VP (VBZ is)
+      (NP
+        (NP (JJ assistant) (NN coach))
+        (PP (IN in)
+          (NP (NNP Stord)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Currently
+			name:	DATE				0-0	Currently 
+			sense:	presently.r.02
+	1	he
+			coref:	IDENT			0	1-1	he 
+	2	is
+			sense:	be.v.08
+			prop:	be.01
+			V		2-2	is 
+			N-ARGM-TMP		0-0	Currently 
+			N-ARG-A1		1-1	he 
+			N-ARG-A2		3-6	assistant coach in Stord 
+	3	assistant
+			name:	TITLE				3-4	assistant coach 
+			sense:	adjunct.s.02
+	4	coach
+			sense:	coach.n.01
+	5	in
+	6	Stord
+			name:	LOCATION				6-6	Stord 
+	7	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				0.0-2	Jon André Røyrane 
+				1.0-0	Røyrane 
+				1.12-12	his 
+				2.4-4	he 
+				2.11-11	his 
+				3.0-0	He 
+				4.0-0	He 
+				5.11-11	Røyrane 
+				6.6-6	Røyrane 
+				7.5-5	Røyrane 
+				7.7-7	his 
+				7.15-15	he 
+				8.0-0	Røyrane 
+				9.0-0	He 
+				10.1-1	he 
+	Chain 1 (IDENT)
+				3.9-11	the 2007 season 
+				5.30-31	the season 
+				6.2-4	the 2012 season 
+				8.16-17	the season 
+

@@ -1,0 +1,759 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+Breiavatnet is a small lake in the municipality of Stavanger in Rogaland county , Norway .
+
+
+Treebanked sentence:
+--------------------
+Breiavatnet is a small lake in the municipality of Stavanger in Rogaland county , Norway . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (NNP Breiavatnet))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ small) (NN lake))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN municipality))
+            (PP (IN of)
+              (NP
+                (NP (NNP Stavanger))
+                (PP (IN in)
+                  (NP
+                    (NP (NNP Rogaland) (NN county))
+                    (, ,)
+                    (NP (NNP Norway))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	Breiavatnet
+			coref:	IDENT			1	0-0	Breiavatnet 
+	1	is
+			sense:	be.v.02
+			prop:	be.01
+			V		1-1	is 
+			N-ARG-A1		0-0	Breiavatnet 
+			N-ARG-A2		2-14	a small lake in the municipality of Stavanger in Rogaland county , Norway 
+	2	a
+	3	small
+			sense:	small.a.01
+	4	lake
+			sense:	lake.n.01
+	5	in
+	6	the
+	7	municipality
+			sense:	municipality.n.01
+	8	of
+	9	Stavanger
+			coref:	IDENT			3	9-9	Stavanger 
+			name:	CITY				9-9	Stavanger 
+	10	in
+	11	Rogaland
+			name:	LOCATION				11-12	Rogaland county 
+	12	county
+			sense:	county.n.01
+	13	,
+	14	Norway
+			name:	COUNTRY				14-14	Norway 
+	15	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The lake is very shallow , only a few feet deep .
+
+
+Treebanked sentence:
+--------------------
+The lake is very shallow , only a few feet deep . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN lake))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP (RB very) (JJ shallow))
+        (, ,)
+        (ADJP
+          (NP
+            (QP (RB only) (DT a) (JJ few))
+            (NNS feet))
+          (JJ deep))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	lake
+			sense:	lake.n.01
+	2	is
+			sense:	be.v.01
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The lake 
+			N-ARG-A2		3-10	very shallow , only a few feet deep 
+	3	very
+			sense:	very.r.01
+	4	shallow
+			sense:	shallow.a.01
+	5	,
+	6	only
+			sense:	merely.r.01
+	7	a
+	8	few
+			sense:	few.a.01
+	9	feet
+			sense:	foot.n.02
+	10	deep
+			sense:	deep.a.03
+	11	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The lake gets its water from the Kannikbekken stream , which flows from the lake Mosvatnet and runs through the city ( the stream was put mostly underground in culverts and pipes in 1899 ) .
+
+
+Treebanked sentence:
+--------------------
+The lake gets its water from the Kannikbekken stream , which flows from the lake Mosvatnet and runs through the city ( the stream was put mostly underground in culverts and pipes in 1899 ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN lake))
+    (VP (VBZ gets)
+      (NP (PRP$ its) (NN water))
+      (PP (IN from)
+        (NP
+          (NP (DT the) (NNP Kannikbekken) (NN stream))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP
+                (VP (VBZ flows)
+                  (PP (IN from)
+                    (NP (DT the) (NN lake) (NNP Mosvatnet))))
+                (CC and)
+                (VP (VBZ runs)
+                  (PP (IN through)
+                    (NP (DT the) (NN city)))))))))
+      (PRN (-LRB- -LRB-)
+        (S
+          (NP (DT the) (NN stream))
+          (VP (VBD was)
+            (VP (VBN put)
+              (ADVP (RB mostly))
+              (ADVP (RB underground)
+                (PP (IN in)
+                  (NP (NNS culverts)
+                    (CC and)
+                    (NNS pipes))))
+              (PP (IN in)
+                (NP (CD 1899))))))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	lake
+			sense:	lake.n.01
+	2	gets
+			sense:	get.v.01
+			prop:	get.01
+			V		2-2	gets 
+			N-ARG-A0		0-1	The lake 
+			N-ARG-A1		3-4	its water 
+			N-ARG-A2		5-34	from the Kannikbekken stream , which flows from the lake Mosvatnet and runs through the city ( the stream was put mostly underground in culverts and pipes in 1899 ) 
+	3	its
+			coref:	IDENT			2	3-4	its water 
+	4	water
+			sense:	water.n.01
+	5	from
+	6	the
+	7	Kannikbekken
+			name:	MISC				7-7	Kannikbekken 
+	8	stream
+			sense:	stream.n.01
+	9	,
+	10	which
+	11	flows
+			sense:	run.v.06
+			prop:	flow.01
+			V		11-11	flows 
+			N-ARG-A1		6-8	the Kannikbekken stream 
+			R-ARG-A1		10-10	which 
+			N-ARGM-DIR		12-15	from the lake Mosvatnet 
+	12	from
+	13	the
+	14	lake
+			sense:	lake.n.01
+	15	Mosvatnet
+	16	and
+	17	runs
+			sense:	run.v.06
+			prop:	run.04
+			V		17-17	runs 
+			N-ARG-A1		6-8	the Kannikbekken stream 
+			R-ARG-A1		10-10	which 
+			N-ARGM-DIR		18-20	through the city 
+			N-ARGM-CAU		22-33	the stream was put mostly underground in culverts and pipes in 1899 
+	18	through
+	19	the
+	20	city
+			sense:	city.n.01
+	21	(
+	22	the
+	23	stream
+			sense:	stream.n.01
+	24	was
+			sense:	be.v.01
+			prop:	be.03
+			V		24-24	was 
+	25	put
+			sense:	put.v.01
+			prop:	put.01
+			V		25-25	put 
+			N-ARG-A1		22-23	the stream 
+			N-ARG-A2		26-27	mostly underground 
+			N-ARGM-LOC		28-31	in culverts and pipes 
+			N-ARGM-TMP		32-33	in 1899 
+	26	mostly
+			sense:	largely.r.01
+	27	underground
+			sense:	underground.r.02
+	28	in
+	29	culverts
+			sense:	culvert.n.01
+	30	and
+	31	pipes
+			sense:	pipe.n.02
+	32	in
+	33	1899
+			name:	DATE				33-33	1899 
+	34	)
+	35	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+A decorative fountain was installed in the middle of the lake in 1924 .
+
+
+Treebanked sentence:
+--------------------
+A decorative fountain was installed in the middle of the lake in 1924 . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT A) (JJ decorative) (NN fountain))
+    (VP (VBD was)
+      (VP (VBN installed)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN middle))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN lake))
+                (PP (IN in)
+                  (NP (CD 1924)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	A
+	1	decorative
+			sense:	cosmetic.s.01
+	2	fountain
+			sense:	fountain.n.01
+	3	was
+			sense:	be.v.01
+			prop:	be.03
+			V		3-3	was 
+	4	installed
+			sense:	install.v.01
+			prop:	install.01
+			V		4-4	installed 
+			N-ARG-A1		0-2	A decorative fountain 
+			N-ARG-A2		5-10	in the middle of the lake 
+			N-ARGM-TMP		11-12	in 1924 
+	5	in
+	6	the
+	7	middle
+			sense:	center.n.01
+	8	of
+	9	the
+	10	lake
+			sense:	lake.n.01
+	11	in
+	12	1924
+			name:	DATE				12-12	1924 
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The lake lies in the city centre of Stavanger , on the border of the boroughs of Storhaug and Eiganes og Våland .
+
+
+Treebanked sentence:
+--------------------
+The lake lies in the city centre of Stavanger , on the border of the boroughs of Storhaug and Eiganes og Våland . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN lake))
+    (VP (VBZ lies)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN city) (NN centre))
+          (PP (IN of)
+            (NP (NNP Stavanger)))))
+      (, ,)
+      (PP (IN on)
+        (NP
+          (NP (DT the) (NN border))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNS boroughs))
+              (PP (IN of)
+                (NP
+                  (NP (NNP Storhaug))
+                  (CC and)
+                  (NP (NNP Eiganes) (NNP og) (NNP Våland)))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	lake
+			sense:	lake.n.01
+	2	lies
+			sense:	lie.v.01
+			prop:	lie.01
+			V		2-2	lies 
+			N-ARG-A1		0-1	The lake 
+			N-ARG-A2		3-8	in the city centre of Stavanger 
+	3	in
+	4	the
+	5	city
+			sense:	city.n.01
+	6	centre
+			sense:	center.n.01
+	7	of
+	8	Stavanger
+			coref:	IDENT			3	8-8	Stavanger 
+			name:	CITY				8-8	Stavanger 
+	9	,
+	10	on
+	11	the
+	12	border
+			sense:	margin.n.01
+	13	of
+	14	the
+	15	boroughs
+			sense:	borough.n.01
+	16	of
+	17	Storhaug
+			name:	PERSON				17-17	Storhaug 
+	18	and
+	19	Eiganes
+			name:	LOCATION				19-19	Eiganes 
+	20	og
+	21	Våland
+	22	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Stavanger Cathedral , the City Park , and Stavanger Cathedral School lie on the northern shore of the lake .
+
+
+Treebanked sentence:
+--------------------
+The Stavanger Cathedral , the City Park , and Stavanger Cathedral School lie on the northern shore of the lake . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Stavanger) (NNP Cathedral))
+      (, ,)
+      (NP (DT the) (NNP City) (NNP Park))
+      (, ,)
+      (CC and)
+      (NP (NNP Stavanger) (NNP Cathedral) (NNP School)))
+    (VP (VBP lie)
+      (PP (IN on)
+        (NP
+          (NP (DT the) (JJ northern) (NN shore))
+          (PP (IN of)
+            (NP (DT the) (NN lake))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Stavanger
+	2	Cathedral
+	3	,
+	4	the
+	5	City
+			name:	LOCATION				5-6	City Park 
+	6	Park
+	7	,
+	8	and
+	9	Stavanger
+			coref:	IDENT			0	9-11	Stavanger Cathedral School 
+			name:	ORGANIZATION				9-11	Stavanger Cathedral School 
+	10	Cathedral
+	11	School
+	12	lie
+			sense:	lie.v.01
+			prop:	lie.01
+			V		12-12	lie 
+			N-ARG-A1		0-11	The Stavanger Cathedral , the City Park , and Stavanger Cathedral School 
+			N-ARG-A2		13-19	on the northern shore of the lake 
+	13	on
+	14	the
+	15	northern
+			sense:	northerly.s.01
+	16	shore
+			sense:	shore.n.01
+	17	of
+	18	the
+	19	lake
+			sense:	lake.n.01
+	20	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The Stavanger train station is located on the south shore of the lake .
+
+
+Treebanked sentence:
+--------------------
+The Stavanger train station is located on the south shore of the lake . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NNP Stavanger) (NN train) (NN station))
+    (VP (VBZ is)
+      (VP (VBN located)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (JJ south) (NN shore))
+            (PP (IN of)
+              (NP (DT the) (NN lake)))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	Stavanger
+			coref:	IDENT			3	1-1	Stavanger 
+			name:	CITY				1-1	Stavanger 
+	2	train
+			name:	CRIMINAL_CHARGE				2-2	train 
+			sense:	train.n.01
+	3	station
+			sense:	station.n.01
+	4	is
+			sense:	be.v.01
+			prop:	be.03
+			V		4-4	is 
+	5	located
+			sense:	situate.v.01
+			prop:	locate.01
+			V		5-5	located 
+			N-ARG-A1		0-3	The Stavanger train station 
+			N-ARGM-LOC		6-12	on the south shore of the lake 
+	6	on
+	7	the
+	8	south
+			sense:	south.a.01
+	9	shore
+			sense:	shore.n.01
+	10	of
+	11	the
+	12	lake
+			sense:	lake.n.01
+	13	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+The lake is the home of various birds , such as swans , seagulls , ducks , and sparrows .
+
+
+Treebanked sentence:
+--------------------
+The lake is the home of various birds , such as swans , seagulls , ducks , and sparrows . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (NP (DT The) (NN lake))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN home))
+        (PP (IN of)
+          (NP (JJ various) (NNS birds)))
+        (, ,)
+        (PP (JJ such) (IN as)
+          (NP (NNS swans) (, ,) (NNS seagulls) (, ,) (NNS ducks) (, ,)
+            (CC and)
+            (NNS sparrows)))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	The
+	1	lake
+			sense:	lake.n.01
+	2	is
+			sense:	be.v.02
+			prop:	be.01
+			V		2-2	is 
+			N-ARG-A1		0-1	The lake 
+			N-ARG-A2		3-18	the home of various birds , such as swans , seagulls , ducks , and sparrows 
+	3	the
+	4	home
+			sense:	home.n.01
+	5	of
+	6	various
+			sense:	assorted.s.02
+	7	birds
+			sense:	bird.n.01
+	8	,
+	9	such
+			sense:	such.s.01
+	10	as
+	11	swans
+			sense:	swan.n.01
+	12	,
+	13	seagulls
+			sense:	gull.n.02
+	14	,
+	15	ducks
+			sense:	duck.n.01
+	16	,
+	17	and
+	18	sparrows
+			sense:	hedge_sparrow.n.01
+	19	.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Plain sentence:
+---------------
+There are scarcely any fish in the water , and the old story from the area says that only the principal of Stavanger Cathedral School is the only one with rights to go fishing in Breiavatnet ( although this is only a story ) .
+
+
+Treebanked sentence:
+--------------------
+There are scarcely any fish in the water , and the old story from the area says that only the principal of Stavanger Cathedral School is the only one with rights to go fishing in Breiavatnet ( although this is only a story ) . 
+
+Tree:
+-----
+(ROOT
+  (S
+    (S
+      (NP (EX There))
+      (VP (VBP are)
+        (ADVP (RB scarcely))
+        (NP
+          (NP (DT any) (NN fish))
+          (PP (IN in)
+            (NP (DT the) (NN water))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (DT the) (JJ old) (NN story))
+        (PP (IN from)
+          (NP (DT the) (NN area))))
+      (VP (VBZ says)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (RB only) (DT the) (NN principal))
+              (PP (IN of)
+                (NP (NNP Stavanger) (NNP Cathedral) (NNP School))))
+            (VP (VBZ is)
+              (NP
+                (NP (DT the) (JJ only) (CD one))
+                (PP (IN with)
+                  (NP (NNS rights)
+                    (S
+                      (VP (TO to)
+                        (VP (VB go)
+                          (NP (NN fishing))
+                          (PP (IN in)
+                            (NP (NNP Breiavatnet)))
+                          (SBAR (-LRB- -LRB-) (IN although)
+                            (S
+                              (NP (DT this))
+                              (VP (VBZ is)
+                                (ADVP (RB only))
+                                (NP (DT a) (NN story))))
+                            (-RRB- -RRB-)))))))))))))
+    (. .)))
+
+
+Leaves:
+-------
+	0	There
+	1	are
+			sense:	be.v.05
+			prop:	be.02
+			V		1-1	are 
+			N-ARGM-ADV		2-2	scarcely 
+			N-ARG-A1		3-4	any fish 
+			N-ARGM-LOC		5-7	in the water 
+	2	scarcely
+			sense:	barely.r.01
+	3	any
+	4	fish
+			sense:	fish.n.01
+	5	in
+	6	the
+			coref:	IDENT			2	6-7	the water 
+	7	water
+			sense:	body_of_water.n.01
+	8	,
+	9	and
+	10	the
+	11	old
+			sense:	old.a.02
+	12	story
+			sense:	narrative.n.01
+	13	from
+	14	the
+	15	area
+			sense:	area.n.01
+	16	says
+			sense:	allege.v.01
+			prop:	say.01
+			V		16-16	says 
+			N-ARG-A0		10-15	the old story from the area 
+			N-ARG-A1		17-43	that only the principal of Stavanger Cathedral School is the only one with rights to go fishing in Breiavatnet ( although this is only a story ) 
+	17	that
+	18	only
+			sense:	entirely.r.02
+	19	the
+	20	principal
+			name:	TITLE				20-20	principal 
+			sense:	principal.n.02
+	21	of
+	22	Stavanger
+			coref:	IDENT			0	22-24	Stavanger Cathedral School 
+			name:	ORGANIZATION				22-24	Stavanger Cathedral School 
+	23	Cathedral
+	24	School
+	25	is
+			sense:	be.v.01
+			prop:	be.01
+			V		25-25	is 
+			N-ARG-A1		18-24	only the principal of Stavanger Cathedral School 
+			N-ARG-A2		26-35	the only one with rights to go fishing in Breiavatnet 
+	26	the
+	27	only
+			sense:	alone.s.03
+	28	one
+			name:	NUMBER				28-28	one 
+	29	with
+	30	rights
+			sense:	right.n.01
+	31	to
+	32	go
+			sense:	travel.v.01
+			prop:	go.05
+			V		32-32	go 
+			N-ARG-A1		33-33	fishing 
+			N-ARGM-LOC		34-35	in Breiavatnet 
+	33	fishing
+			sense:	fishing.n.01
+	34	in
+	35	Breiavatnet
+			coref:	IDENT			1	35-35	Breiavatnet 
+			name:	LOCATION				35-35	Breiavatnet 
+	36	(
+	37	although
+	38	this
+	39	is
+			sense:	be.v.01
+			prop:	be.01
+			V		39-39	is 
+			N-ARG-A1		38-38	this 
+			N-ARG-A2		40-42	only a story 
+	40	only
+			sense:	merely.r.01
+	41	a
+	42	story
+			sense:	narrative.n.01
+	43	)
+	44	.
+
+
+========================================================================================================================
+Coreference chains for section 0:
+---------------------------------
+
+	Chain 0 (IDENT)
+				5.9-11	Stavanger Cathedral School 
+				8.22-24	Stavanger Cathedral School 
+	Chain 1 (IDENT)
+				0.0-0	Breiavatnet 
+				8.35-35	Breiavatnet 
+	Chain 2 (IDENT)
+				2.3-4	its water 
+				8.6-7	the water 
+	Chain 3 (IDENT)
+				0.9-9	Stavanger 
+				4.8-8	Stavanger 
+				6.1-1	Stavanger 
+
